@@ -307,14 +307,27 @@ class MainWindow(QMainWindow):
         btn_row.setSpacing(8)
         self.btn_optimize = QPushButton("▶  开始优化")
         self.btn_optimize.setObjectName("btn_primary")
+        self.btn_optimize.setMinimumHeight(36)
         self.btn_optimize.clicked.connect(self._run_optimize)
-        btn_row.addWidget(self.btn_optimize)
+        btn_row.addWidget(self.btn_optimize, 3)
 
-        self.btn_stop = QPushButton("停止")
+        self.btn_stop = QPushButton("⏹  停止")
         self.btn_stop.setObjectName("btn_danger")
+        self.btn_stop.setMinimumHeight(36)
         self.btn_stop.clicked.connect(self._stop_optimize)
         self.btn_stop.setEnabled(False)
-        btn_row.addWidget(self.btn_stop)
+        # 初始禁用时更暗淡，避免误操作
+        self.btn_stop.setStyleSheet("""
+            QPushButton {
+                background: transparent;
+                border: 1px solid #3D2020;
+                color: #5A3030;
+                border-radius: 6px;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        """)
+        btn_row.addWidget(self.btn_stop, 2)
         og.addLayout(btn_row)
 
         # Export area
@@ -500,14 +513,16 @@ class MainWindow(QMainWindow):
         self.input_base_url.setPlaceholderText("https://api.mistral.ai/v1")
         lc.addWidget(self.input_base_url)
 
-        lc.addWidget(_section_lbl("模型"))
+        lc.addWidget(_section_lbl("模型  （可下拉选择或直接输入自定义名称）"))
         self.combo_model = QComboBox()
+        self.combo_model.setEditable(True)
         self.combo_model.addItems([
             "mistral-large-latest",
             "mistral-medium-latest",
             "mistral-small-latest",
             "open-mistral-7b",
         ])
+        self.combo_model.setPlaceholderText("输入或选择模型名称")
         lc.addWidget(self.combo_model)
 
         lc.addWidget(_section_lbl("性能参数"))
@@ -955,8 +970,7 @@ class MainWindow(QMainWindow):
         if not client:
             return
 
-        self.btn_optimize.setEnabled(False)
-        self.btn_stop.setEnabled(True)
+        self._set_running_state(True)
 
         for e in self.entries:
             e.status = "pending"
@@ -1066,8 +1080,7 @@ class MainWindow(QMainWindow):
 
     def _on_pipeline_error(self, msg: str):
         self._log(f"❌ {msg}")
-        self.btn_optimize.setEnabled(True)
-        self.btn_stop.setEnabled(False)
+        self._set_running_state(False)
         self._set_stage(-1)
 
     def _set_stage(self, active: int):
@@ -1101,8 +1114,7 @@ class MainWindow(QMainWindow):
     def _on_optimize_done(self):
         done = sum(1 for e in self.entries if e.status == "done")
         err = sum(1 for e in self.entries if e.status == "error")
-        self.btn_optimize.setEnabled(True)
-        self.btn_stop.setEnabled(False)
+        self._set_running_state(False)
         self._log(f"✅ [阶段3/3] 优化完成：成功 {done} 条，失败 {err} 条")
         self.status_bar.showMessage(f"全部完成：{done} 成功，{err} 失败")
         for lbl in self._stage_labels:
@@ -1113,8 +1125,7 @@ class MainWindow(QMainWindow):
     def _stop_optimize(self):
         if self._clean_worker: self._clean_worker.cancel()
         if self._optimize_worker: self._optimize_worker.cancel()
-        self.btn_optimize.setEnabled(True)
-        self.btn_stop.setEnabled(False)
+        self._set_running_state(False)
         self._set_stage(-1)
         self._log("⏹ 已停止")
 
@@ -1199,6 +1210,63 @@ class MainWindow(QMainWindow):
         self._log(f"💾 已导出：{path}")
         QMessageBox.information(self, "导出完成", f"已导出优化字幕：\n{path}")
 
+    def _set_running_state(self, running: bool):
+        """切换「运行中 / 空闲」两种按钮视觉状态"""
+        if running:
+            # 开始优化按钮：变灰禁用，文字改为"优化中…"
+            self.btn_optimize.setEnabled(False)
+            self.btn_optimize.setText("⏳  优化中…")
+            self.btn_optimize.setStyleSheet("""
+                QPushButton {
+                    background: #21262D;
+                    border: 1px solid #30363D;
+                    color: #484F58;
+                    border-radius: 6px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    min-height: 36px;
+                }
+            """)
+            # 停止按钮：亮红高亮，醒目可点
+            self.btn_stop.setEnabled(True)
+            self.btn_stop.setStyleSheet("""
+                QPushButton {
+                    background: #DA3633;
+                    border: 1px solid #FF7B72;
+                    color: #FFFFFF;
+                    border-radius: 6px;
+                    font-size: 13px;
+                    font-weight: 700;
+                    min-height: 36px;
+                }
+                QPushButton:hover {
+                    background: #FF4A47;
+                    border-color: #FF7B72;
+                }
+                QPushButton:pressed {
+                    background: #B91C1C;
+                }
+            """)
+        else:
+            # 恢复开始优化按钮
+            self.btn_optimize.setEnabled(True)
+            self.btn_optimize.setText("▶  开始优化")
+            self.btn_optimize.setStyleSheet("")          # 恢复 btn_primary QSS
+            self.btn_optimize.setObjectName("btn_primary")
+            # 停止按钮：暗淡禁用
+            self.btn_stop.setEnabled(False)
+            self.btn_stop.setStyleSheet("""
+                QPushButton {
+                    background: transparent;
+                    border: 1px solid #3D2020;
+                    color: #5A3030;
+                    border-radius: 6px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    min-height: 36px;
+                }
+            """)
+
     def _log(self, msg: str):
         ts = time.strftime("%H:%M:%S")
         if msg.startswith("✅") or msg.startswith("💾") or msg.startswith("🎉"):
@@ -1257,8 +1325,13 @@ class MainWindow(QMainWindow):
                 cfg = json.load(f)
             self.input_apikey.setText(cfg.get("api_key", ""))
             self.input_base_url.setText(cfg.get("base_url", ""))
-            idx = self.combo_model.findText(cfg.get("model", ""))
-            if idx >= 0: self.combo_model.setCurrentIndex(idx)
+            saved_model = cfg.get("model", "")
+            if saved_model:
+                idx = self.combo_model.findText(saved_model)
+                if idx >= 0:
+                    self.combo_model.setCurrentIndex(idx)
+                else:
+                    self.combo_model.setCurrentText(saved_model)
             self.input_concurrency.setText(str(cfg.get("concurrency", "6")))
             self.input_batch.setText(str(cfg.get("batch_size", "5")))
             self.combo_chinese_line.setCurrentIndex(0 if cfg.get("chinese_first", True) else 1)
