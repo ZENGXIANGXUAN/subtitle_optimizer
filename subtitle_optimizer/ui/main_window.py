@@ -17,7 +17,7 @@ from PyQt6.QtCore import Qt, QThread, pyqtSlot, QTimer
 from PyQt6.QtGui import QFont, QColor, QPalette
 
 # 导入业务层逻辑和界面辅助
-from core.models import SubtitleEntry, parse_srt
+from core.models import SubtitleEntry, parse_srt, _format_subtitle_snapshot
 from core.client import MistralClient
 from core.workers import AnalysisWorker, OptimizeWorker, SegmentWorker, TranslateWorker, BatchWorker
 from ui.styles import APP_STYLE
@@ -1120,9 +1120,8 @@ class MainWindow(QMainWindow):
             return
         old_count = len(self.entries)
         self.entries = new_entries
-        merged = old_count - len(new_entries)
 
-        logger.info(f"_after_segment: 条目数 {old_count} -> {len(self.entries)}, 合并了 {merged} 条")
+        logger.info(f"_after_segment: 条目数 {old_count} -> {len(self.entries)}")
         blocks = [e.to_srt_block_raw() for e in self.entries]
         self.tab_original.setPlainText("\n".join(blocks))
         self.lbl_stat.setText(f"  {len(self.entries)} 条字幕")
@@ -1131,12 +1130,9 @@ class MainWindow(QMainWindow):
 
         if self._current_file_path:
             write_phase_snapshot(self._current_file_path, "AFTER_SEGMENT", self.entries)
-        if merged > 0:
-            logger.info(f"重组完成：合并了 {merged} 条碎片字幕，剩余 {len(new_entries)} 条")
-            self._log(f"✅ [阶段2/4] 重组完成：合并了 {merged} 条碎片字幕，剩余 {len(new_entries)} 条")
-        else:
-            logger.info(f"重组完成：无需合并，共 {len(new_entries)} 条")
-            self._log(f"✅ [阶段2/4] 重组完成：无需合并，共 {len(new_entries)} 条")
+            logger.info(_format_subtitle_snapshot("AFTER_SEGMENT", self.entries))
+        logger.info(f"重组完成：{old_count} → {len(new_entries)} 条字幕")
+        self._log(f"✅ [阶段2/4] 重组完成：{old_count} → {len(new_entries)} 条字幕")
         QTimer.singleShot(100, lambda: self._start_translate_stage(client, concurrency, batch_size))
 
     def _start_translate_stage(self, client: MistralClient, concurrency: int, batch_size: int):
@@ -1180,6 +1176,7 @@ class MainWindow(QMainWindow):
             return
         if self._current_file_path:
             write_phase_snapshot(self._current_file_path, "AFTER_TRANSLATE", self.entries)
+            logger.info(_format_subtitle_snapshot("AFTER_TRANSLATE", self.entries))
         translated = sum(1 for e in self.entries if e.status == "done")
         skipped = len(self.entries) - translated
         if skipped > 0:
@@ -1255,6 +1252,7 @@ class MainWindow(QMainWindow):
         self._pipeline_active = False
         if self._current_file_path:
             write_phase_snapshot(self._current_file_path, "AFTER_OPTIMIZE", self.entries, use_optimized=True)
+            logger.info(_format_subtitle_snapshot("AFTER_OPTIMIZE", self.entries, use_optimized=True))
         logger.info("字幕优化完成")
         done = sum(1 for e in self.entries if e.status == "done")
         err = sum(1 for e in self.entries if e.status == "error")

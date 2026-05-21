@@ -114,6 +114,16 @@ def _srt_time_to_ms(value: str) -> int:
     return ((hours * 60 + minutes) * 60 + seconds) * 1000 + millis
 
 
+def _ms_to_srt_time(ms: int) -> str:
+    h = ms // 3600000
+    ms %= 3600000
+    m = ms // 60000
+    ms %= 60000
+    s = ms // 1000
+    ms %= 1000
+    return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
+
+
 def _english_word_count(text: str) -> int:
     return len(re.findall(r"[A-Za-z]+(?:['-][A-Za-z]+)?", text or ""))
 

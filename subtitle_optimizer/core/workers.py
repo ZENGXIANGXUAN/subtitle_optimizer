@@ -14,7 +14,11 @@ from core.models import (
     _format_subtitle_snapshot,
     _merge_candidate_is_safe,
     _translation_looks_incomplete,
+    _english_word_count,
+    _srt_time_to_ms,
+    _ms_to_srt_time,
 )
+from core.segmenter import nlp_segment
 from core.client import MistralClient
 
 
@@ -508,8 +512,76 @@ async def _repair_incomplete_segment_translations(
         entry.lines = [zh, en] if en else [zh]
 
 
+def _split_short_long(batch: list[SubtitleEntry], max_words: int = 20):
+    """分离短条目（直通）和长条目（需LLM切分）。"""
+    short_entries = []
+    long_entries = []
+    for e in batch:
+        if _english_word_count(e.english) <= max_words:
+            short_entries.append(e)
+        else:
+            long_entries.append(e)
+    return short_entries, long_entries
+
+
+def _apply_llm_split(long_entries: list[SubtitleEntry], llm_response: list[dict],
+                     log_fn=None) -> list[SubtitleEntry]:
+    """将LLM切分建议应用到长条目，按词数比例分配时间戳。"""
+    results = []
+    by_id = {e.index: e for e in long_entries}
+
+    for item in llm_response:
+        entry_id = item.get("id")
+        segments = item.get("segments", [])
+        if not segments:
+            continue
+
+        orig = by_id.get(entry_id)
+        if not orig:
+            continue
+
+        if len(segments) == 1:
+            results.append(SubtitleEntry(
+                orig.index, orig.start_time, orig.end_time, list(orig.lines)))
+            continue
+
+        if log_fn:
+            log_fn(f"  ✂️ 切分 [{orig.index}] → {len(segments)} 段")
+
+        total_words = sum(_english_word_count(s) for s in segments)
+        total_ms = _srt_time_to_ms(orig.end_time) - _srt_time_to_ms(orig.start_time)
+        if total_ms <= 0:
+            total_ms = 1
+        current_ms = _srt_time_to_ms(orig.start_time)
+
+        for i, seg_en in enumerate(segments):
+            sw = _english_word_count(seg_en)
+            seg_duration = int(total_ms * sw / total_words) if total_words > 0 else int(total_ms / len(segments))
+            if seg_duration < 200:
+                seg_duration = int(total_ms / len(segments))
+
+            seg_start = _ms_to_srt_time(current_ms)
+            seg_end = _ms_to_srt_time(current_ms + seg_duration)
+            current_ms += seg_duration
+
+            lines = [seg_en] if seg_en else []
+            if i == 0 and orig.chinese:
+                lines.insert(0, orig.chinese)
+
+            seg_entry = SubtitleEntry(
+                index=orig.index + i,
+                start_time=seg_start,
+                end_time=seg_end,
+                lines=lines,
+            )
+            seg_entry.original_lines = list(orig.original_lines or orig.lines)
+            results.append(seg_entry)
+
+    return results
+
+
 class SegmentWorker(BaseWorker):
-    """第二阶段：智能重组字幕 — 识别不完整句子并合并，丢弃空条目"""
+    """第二阶段：智能重组字幕 — NLP预断句合并 + LLM语义切分长句"""
     progress = pyqtSignal(int, int)
     all_done = pyqtSignal(object)  # list[SubtitleEntry]
     log = pyqtSignal(str)
@@ -575,105 +647,52 @@ class SegmentWorker(BaseWorker):
 
     async def _segment_batch(self, batch: list[SubtitleEntry],
                               session: aiohttp.ClientSession) -> list[SubtitleEntry]:
+        # NLP 预断句合并
+        batch = nlp_segment(batch, log_fn=self.log.emit)
+        if not batch:
+            return []
+
+        # 分离：短条目直通，长条目（>20词）送LLM语义切分
+        short_entries, long_entries = _split_short_long(batch)
+        if not long_entries:
+            return short_entries
+
         items_json = json.dumps([
             {"id": e.index, "en": e.english,
              "start": e.start_time, "end": e.end_time}
-            for e in batch
+            for e in long_entries
         ], ensure_ascii=False)
 
         sys_content = (
-            f"你是专业字幕处理师。\n"
+            "你是专业字幕切分助手。\n"
             f"【背景与风格】\n{self.context}\n\n"
-            "任务：检查以下连续字幕条目，识别英文不完整的句子碎片，返回合并方案。\n"
-            "注意：你只需要判断哪些条目需要合并，不需要翻译中文。\n\n"
+            "任务：以下英文字幕条目过长（>20词），在语义最自然的断点切分为2-3段，"
+            "每段 ≤20词，成为适合屏幕阅读的独立字幕。\n\n"
             "规则：\n"
-            "1. 仔细判断相邻条目的英文是否属于同一句话被拆分\n"
-            "   （如第N条英文在上一条突然中断，下一条接续，则需合并）\n"
-            "2. 发现碎片句子时必须合并为一条完整字幕\n"
-            "3. 【合并限制】单条字幕的英文如果同时满足以下两点，不得合并：\n"
-            "   a) 语法完整——有主谓结构、首字母大写、以句号/问号/感叹号结尾\n"
-            "   b) 英文词数 ≥ 15 个\n"
-            "4. 合并后：start 取第一条的 start，end 取最后一条的 end\n"
-            "5. 中英文都为空、纯None/null、纯标点符号的条目直接丢弃\n"
-            "6. 完整独立的字幕保持原样返回（merged_from 只含自身id）\n"
-            "7. 【严禁遗漏】输入的所有条目必须在输出中覆盖到（合并或独立保留），不得漏掉任何一条\n"
-            "8. 严格按JSON格式返回，不要加任何解释\n\n"
-        )
-        sys_content += (
-            '格式：[{"id": 序号, "start": "HH:MM:SS,mmm", "end": "HH:MM:SS,mmm"'
-            ', "merged_from": [被合并的id列表]}]\n\n'
-            "merged_from 包含所有被合并条目的id（含自身）。不合并的条目 merged_from 只含自身id。\n"
-            "不需要返回 zh/en 字段，系统将自动从原文拼接。"
+            "1. 每段 ≤20个英文词\n"
+            "2. 切分点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
+            "3. 每段必须是相对完整的语义单元（不可在词组内部切断）\n"
+            "4. 不要修改英文原文，只确定断点位置\n"
+            "5. 严格按JSON格式返回，不要加任何解释\n\n"
+            '格式：[{"id": 原id, "segments": ["段1英文", "段2英文"]}]\n'
+            "segments 长度1=无需切分，2-3=切分结果。"
         )
 
         messages = [
             {"role": "system", "content": sys_content},
-            {"role": "user", "content": f"处理以下字幕：\n{items_json}"}
+            {"role": "user", "content": f"切分以下长字幕条目：\n{items_json}"}
         ]
 
         response = await self.client.chat(messages, session)
         try:
             clean = re.sub(r'```(?:json)?|```', '', response).strip()
             data = json.loads(clean)
-            results = []
-            emitted_source_ids = set()
-            for item in data:
-                merged_from_ids = item.get("merged_from", [])
-                source_ids = merged_from_ids if isinstance(merged_from_ids, list) and merged_from_ids else [item.get("id")]
-                if any(src_id in emitted_source_ids for src_id in source_ids):
-                    continue
-                # en_合并 从原始条目拼接
-                source_ens = []
-                for src_id in source_ids:
-                    src = next((e for e in batch if e.index == src_id), None)
-                    if src and src.english:
-                        source_ens.append(src.english)
-                item["en"] = " ".join(source_ens)
-                if not _merge_candidate_is_safe(batch, item):
-                    logger.warning("Reject unsafe segment merge for id %s from %s", item.get("id"), merged_from_ids)
-                    for src_id in source_ids:
-                        src = next((e for e in batch if e.index == src_id), None)
-                        if src:
-                            fallback = SubtitleEntry(src.index, src.start_time, src.end_time, list(src.lines))
-                            fallback.original_lines = list(src.original_lines or src.lines)
-                            results.append(fallback)
-                            emitted_source_ids.add(src.index)
-                    continue
-                # zh_合并 从原始条目拼接（双语有值，原生为空）
-                source_zhs = []
-                for src_id in source_ids:
-                    src = next((e for e in batch if e.index == src_id), None)
-                    if src and src.chinese:
-                        source_zhs.append(src.chinese)
-                zh = "".join(source_zhs)
-                en = item["en"]
-                lines = []
-                if zh:
-                    lines.append(zh)
-                if en:
-                    lines.append(en)
-                if not lines:
-                    continue
-                if merged_from_ids and len(merged_from_ids) > 1:
-                    self.log.emit(f"  🔗 合并 [{item['id']}] ← {merged_from_ids}")
-                orig = []
-                for src_id in merged_from_ids:
-                    src = next((e for e in batch if e.index == src_id), None)
-                    if src:
-                        orig.extend(src.lines)
-                entry = SubtitleEntry(
-                    index=item["id"],
-                    start_time=item.get("start", batch[0].start_time),
-                    end_time=item.get("end", batch[0].end_time),
-                    lines=lines
-                )
-                entry.original_lines = orig if orig else list(lines)
-                results.append(entry)
-                emitted_source_ids.update(src_id for src_id in source_ids if src_id is not None)
-            return results
+            split_results = _apply_llm_split(long_entries, data, log_fn=self.log.emit)
         except Exception:
-            return [SubtitleEntry(e.index, e.start_time, e.end_time, list(e.lines))
-                    for e in batch]
+            split_results = [SubtitleEntry(e.index, e.start_time, e.end_time, list(e.lines))
+                             for e in long_entries]
+
+        return short_entries + split_results
 
 
 class TranslateWorker(BaseWorker):
@@ -804,6 +823,7 @@ class BatchWorker(BaseWorker):
                 self.log.emit(f"  🔗 [{filename}] 开始智能重组 {len(entries)} 条字幕...")
                 entries = await self._segment(idx, entries, context, self.glossary_prompt)
                 write_phase_snapshot(filename, "AFTER_SEGMENT", entries)
+                logger.info(_format_subtitle_snapshot(f"BATCH_AFTER_SEGMENT_{filename}", entries))
                 self.log.emit(f"  ✅ [{filename}] 重组完成：{len(entries)} 条字幕")
 
                 if self._cancelled:
@@ -812,6 +832,7 @@ class BatchWorker(BaseWorker):
                 self.log.emit(f"  🌐 [{filename}] 开始翻译 {len(entries)} 条字幕...")
                 entries = await self._translate(entries, context, self.glossary_prompt)
                 write_phase_snapshot(filename, "AFTER_TRANSLATE", entries)
+                logger.info(_format_subtitle_snapshot(f"BATCH_AFTER_TRANSLATE_{filename}", entries))
                 self.log.emit(f"  ✅ [{filename}] 翻译完成")
 
                 if self._cancelled:
@@ -820,6 +841,7 @@ class BatchWorker(BaseWorker):
                 self.log.emit(f"  ✨ [{filename}] 开始优化润色 {len(entries)} 条字幕...")
                 entries = await self._optimize(idx, entries, context, self.glossary_prompt)
                 write_phase_snapshot(filename, "AFTER_OPTIMIZE", entries, use_optimized=True)
+                logger.info(_format_subtitle_snapshot(f"BATCH_AFTER_OPTIMIZE_{filename}", entries, use_optimized=True))
 
                 if self._cancelled:
                     break
@@ -884,105 +906,52 @@ class BatchWorker(BaseWorker):
     async def _segment_batch(self, batch: list[SubtitleEntry], context: str, glossary: str,
                                session: aiohttp.ClientSession,
                                is_native: bool = False) -> list[SubtitleEntry]:
+        # NLP 预断句合并
+        batch = nlp_segment(batch, log_fn=self.log.emit)
+        if not batch:
+            return []
+
+        # 分离：短条目直通，长条目（>20词）送LLM语义切分
+        short_entries, long_entries = _split_short_long(batch)
+        if not long_entries:
+            return short_entries
+
         items_json = json.dumps([
             {"id": e.index, "en": e.english,
              "start": e.start_time, "end": e.end_time}
-            for e in batch
+            for e in long_entries
         ], ensure_ascii=False)
 
         sys_content = (
-            f"你是专业字幕处理师。\n"
+            "你是专业字幕切分助手。\n"
             f"【背景与风格】\n{context}\n\n"
-            "任务：检查以下连续字幕条目，识别英文不完整的句子碎片，返回合并方案。\n"
-            "注意：你只需要判断哪些条目需要合并，不需要翻译中文。\n\n"
+            "任务：以下英文字幕条目过长（>20词），在语义最自然的断点切分为2-3段，"
+            "每段 ≤20词，成为适合屏幕阅读的独立字幕。\n\n"
             "规则：\n"
-            "1. 仔细判断相邻条目的英文是否属于同一句话被拆分\n"
-            "   （如第N条英文在上一条突然中断，下一条接续，则需合并）\n"
-            "2. 发现碎片句子时必须合并为一条完整字幕\n"
-            "3. 【合并限制】单条字幕的英文如果同时满足以下两点，不得合并：\n"
-            "   a) 语法完整——有主谓结构、首字母大写、以句号/问号/感叹号结尾\n"
-            "   b) 英文词数 ≥ 15 个\n"
-            "4. 合并后：start 取第一条的 start，end 取最后一条的 end\n"
-            "5. 中英文都为空、纯None/null、纯标点符号的条目直接丢弃\n"
-            "6. 完整独立的字幕保持原样返回（merged_from 只含自身id）\n"
-            "7. 【严禁遗漏】输入的所有条目必须在输出中覆盖到（合并或独立保留），不得漏掉任何一条\n"
-            "8. 严格按JSON格式返回，不要加任何解释\n\n"
-        )
-        sys_content += (
-            '格式：[{"id": 序号, "start": "HH:MM:SS,mmm", "end": "HH:MM:SS,mmm"'
-            ', "merged_from": [被合并的id列表]}]\n\n'
-            "merged_from 包含所有被合并条目的id（含自身）。不合并的条目 merged_from 只含自身id。\n"
-            "不需要返回 zh/en 字段，系统将自动从原文拼接。"
+            "1. 每段 ≤20个英文词\n"
+            "2. 切分点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
+            "3. 每段必须是相对完整的语义单元（不可在词组内部切断）\n"
+            "4. 不要修改英文原文，只确定断点位置\n"
+            "5. 严格按JSON格式返回，不要加任何解释\n\n"
+            '格式：[{"id": 原id, "segments": ["段1英文", "段2英文"]}]\n'
+            "segments 长度1=无需切分，2-3=切分结果。"
         )
 
         messages = [
             {"role": "system", "content": sys_content},
-            {"role": "user", "content": f"处理以下字幕：\n{items_json}"}
+            {"role": "user", "content": f"切分以下长字幕条目：\n{items_json}"}
         ]
 
         response = await self.client.chat(messages, session)
         try:
             clean = re.sub(r'```(?:json)?|```', '', response).strip()
             data = json.loads(clean)
-            results = []
-            emitted_source_ids = set()
-            for item in data:
-                merged_from_ids = item.get("merged_from", [])
-                source_ids = merged_from_ids if isinstance(merged_from_ids, list) and merged_from_ids else [item.get("id")]
-                if any(src_id in emitted_source_ids for src_id in source_ids):
-                    continue
-                # en_合并 从原始条目拼接
-                source_ens = []
-                for src_id in source_ids:
-                    src = next((e for e in batch if e.index == src_id), None)
-                    if src and src.english:
-                        source_ens.append(src.english)
-                item["en"] = " ".join(source_ens)
-                if not _merge_candidate_is_safe(batch, item):
-                    logger.warning("Reject unsafe batch segment merge for id %s from %s", item.get("id"), merged_from_ids)
-                    for src_id in source_ids:
-                        src = next((e for e in batch if e.index == src_id), None)
-                        if src:
-                            fallback = SubtitleEntry(src.index, src.start_time, src.end_time, list(src.lines))
-                            fallback.original_lines = list(src.original_lines or src.lines)
-                            results.append(fallback)
-                            emitted_source_ids.add(src.index)
-                    continue
-                # zh_合并 从原始条目拼接（双语有值，原生为空）
-                source_zhs = []
-                for src_id in source_ids:
-                    src = next((e for e in batch if e.index == src_id), None)
-                    if src and src.chinese:
-                        source_zhs.append(src.chinese)
-                zh = "".join(source_zhs)
-                en = item["en"]
-                lines = []
-                if zh:
-                    lines.append(zh)
-                if en:
-                    lines.append(en)
-                if not lines:
-                    continue
-                if merged_from_ids and len(merged_from_ids) > 1:
-                    self.log.emit(f"    🔗 合并 [{item['id']}] ← {merged_from_ids}")
-                orig = []
-                for src_id in merged_from_ids:
-                    src = next((e for e in batch if e.index == src_id), None)
-                    if src:
-                        orig.extend(src.lines)
-                entry = SubtitleEntry(
-                    index=item["id"],
-                    start_time=item.get("start", batch[0].start_time),
-                    end_time=item.get("end", batch[0].end_time),
-                    lines=lines
-                )
-                entry.original_lines = orig if orig else list(lines)
-                results.append(entry)
-                emitted_source_ids.update(src_id for src_id in source_ids if src_id is not None)
-            return results
+            split_results = _apply_llm_split(long_entries, data, log_fn=self.log.emit)
         except Exception:
-            return [SubtitleEntry(e.index, e.start_time, e.end_time, list(e.lines))
-                    for e in batch]
+            split_results = [SubtitleEntry(e.index, e.start_time, e.end_time, list(e.lines))
+                             for e in long_entries]
+
+        return short_entries + split_results
 
     async def _translate(self, entries: list[SubtitleEntry],
                           context: str, glossary: str) -> list[SubtitleEntry]:
