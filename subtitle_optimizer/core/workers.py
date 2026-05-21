@@ -20,13 +20,13 @@ from core.client import MistralClient
 
 # 尝试相对导入，如果失败则使用绝对导入
 try:
-    from ..utils import logger
+    from ..utils import logger, write_phase_snapshot
 except ImportError:
     import sys
     import os
 
     sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-    from utils import logger
+    from utils import logger, write_phase_snapshot
 
 
 def _run_loop(coro):
@@ -803,6 +803,7 @@ class BatchWorker(BaseWorker):
 
                 self.log.emit(f"  🔗 [{filename}] 开始智能重组 {len(entries)} 条字幕...")
                 entries = await self._segment(idx, entries, context, self.glossary_prompt)
+                write_phase_snapshot(filename, "AFTER_SEGMENT", entries)
                 self.log.emit(f"  ✅ [{filename}] 重组完成：{len(entries)} 条字幕")
 
                 if self._cancelled:
@@ -810,6 +811,7 @@ class BatchWorker(BaseWorker):
 
                 self.log.emit(f"  🌐 [{filename}] 开始翻译 {len(entries)} 条字幕...")
                 entries = await self._translate(entries, context, self.glossary_prompt)
+                write_phase_snapshot(filename, "AFTER_TRANSLATE", entries)
                 self.log.emit(f"  ✅ [{filename}] 翻译完成")
 
                 if self._cancelled:
@@ -817,6 +819,7 @@ class BatchWorker(BaseWorker):
 
                 self.log.emit(f"  ✨ [{filename}] 开始优化润色 {len(entries)} 条字幕...")
                 entries = await self._optimize(idx, entries, context, self.glossary_prompt)
+                write_phase_snapshot(filename, "AFTER_OPTIMIZE", entries, use_optimized=True)
 
                 if self._cancelled:
                     break

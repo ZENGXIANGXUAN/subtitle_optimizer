@@ -24,12 +24,12 @@ from ui.styles import APP_STYLE
 from ui.highlighter import SRTHighlighter
 # 尝试相对导入，如果失败则使用绝对导入
 try:
-    from ..utils import logger
+    from ..utils import logger, write_phase_snapshot
 except ImportError:
     import sys
     import os
     sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-    from utils import logger
+    from utils import logger, write_phase_snapshot
 
 
 class MainWindow(QMainWindow):
@@ -1129,6 +1129,8 @@ class MainWindow(QMainWindow):
         self.progress_bar.setMaximum(len(self.entries))
         self._refresh_compare()
 
+        if self._current_file_path:
+            write_phase_snapshot(self._current_file_path, "AFTER_SEGMENT", self.entries)
         if merged > 0:
             logger.info(f"重组完成：合并了 {merged} 条碎片字幕，剩余 {len(new_entries)} 条")
             self._log(f"✅ [阶段2/4] 重组完成：合并了 {merged} 条碎片字幕，剩余 {len(new_entries)} 条")
@@ -1176,6 +1178,8 @@ class MainWindow(QMainWindow):
     def _after_translate(self, client: MistralClient, concurrency: int, batch_size: int):
         if not self._pipeline_active:
             return
+        if self._current_file_path:
+            write_phase_snapshot(self._current_file_path, "AFTER_TRANSLATE", self.entries)
         translated = sum(1 for e in self.entries if e.status == "done")
         skipped = len(self.entries) - translated
         if skipped > 0:
@@ -1249,6 +1253,8 @@ class MainWindow(QMainWindow):
 
     def _on_optimize_done(self):
         self._pipeline_active = False
+        if self._current_file_path:
+            write_phase_snapshot(self._current_file_path, "AFTER_OPTIMIZE", self.entries, use_optimized=True)
         logger.info("字幕优化完成")
         done = sum(1 for e in self.entries if e.status == "done")
         err = sum(1 for e in self.entries if e.status == "error")
