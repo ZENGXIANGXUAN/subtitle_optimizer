@@ -1173,7 +1173,11 @@ class MainWindow(QMainWindow):
         self.progress_bar.setMaximum(len(self.entries))
         self.lbl_progress_detail.setText(f"智能重组：0/{len(self.entries)}")
 
-        self._segment_worker = SegmentWorker(client, self.entries, result, glossary_prompt, concurrency, seg_batch_size)
+        self._segment_worker = SegmentWorker(
+            client, self.entries, result, glossary_prompt, concurrency, seg_batch_size,
+            input_lang=self.combo_input_lang.currentText(),
+            output_lang=self.combo_output_lang.currentText()
+        )
         self._segment_thread = QThread()
         self._segment_worker.moveToThread(self._segment_thread)
         self._segment_thread.started.connect(self._segment_worker.run)

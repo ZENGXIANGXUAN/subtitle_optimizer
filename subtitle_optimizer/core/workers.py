@@ -628,7 +628,8 @@ class SegmentWorker(BaseWorker):
     log = pyqtSignal(str)
 
     def __init__(self, client: MistralClient, entries: list[SubtitleEntry],
-                 context: str, glossary: str, concurrency: int = 4, batch_size: int = 12):
+                 context: str, glossary: str, concurrency: int = 4, batch_size: int = 12,
+                 input_lang: str = "English", output_lang: str = "中文"):
         super().__init__()
         self.client = client
         self.entries = entries
@@ -636,6 +637,8 @@ class SegmentWorker(BaseWorker):
         self.glossary = glossary
         self.concurrency = concurrency
         self.batch_size = batch_size
+        self.input_lang = input_lang
+        self.output_lang = output_lang
 
     @pyqtSlot()
     def run(self):
