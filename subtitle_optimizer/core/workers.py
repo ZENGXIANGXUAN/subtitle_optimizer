@@ -1045,7 +1045,7 @@ class BatchWorker(BaseWorker):
         """阶段3：原生字幕 en_合并 → zh_译；双语字幕跳过"""
         # 检测是否需要翻译（输入输出语言相同时跳过）
         if self.input_lang == self.output_lang:
-            self.log.emit(f"    ⏭️ 输入输出语言相同，跳过翻译，仅优化")
+            self.log.emit("    ⏭️ 输入输出语言相同，跳过翻译，仅优化")
             return entries
 
         needs_translation = any(not e.chinese for e in entries)
