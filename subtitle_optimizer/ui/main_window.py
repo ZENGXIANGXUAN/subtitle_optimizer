@@ -879,6 +879,8 @@ class MainWindow(QMainWindow):
             chinese_first=self._chinese_first(),
             glossary_prompt=self._get_glossary_prompt(),
             original_line=self._get_original_line_index(),
+            input_lang=self.combo_input_lang.currentText(),
+            output_lang=self.combo_output_lang.currentText(),
         )
         self._batch_thread = QThread()
         self._batch_worker.moveToThread(self._batch_thread)
@@ -1268,7 +1270,9 @@ class MainWindow(QMainWindow):
         self.progress_bar.setMaximum(len(self.entries))
 
         self._optimize_worker = OptimizeWorker(client, self.entries, base_context, glossary_prompt, concurrency,
-                                               batch_size)
+                                               batch_size,
+                                               input_lang=self.combo_input_lang.currentText(),
+                                               output_lang=self.combo_output_lang.currentText())
         self._optimize_thread = QThread()
         self._optimize_worker.moveToThread(self._optimize_thread)
         self._optimize_thread.started.connect(self._optimize_worker.run)

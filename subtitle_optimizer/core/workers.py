@@ -236,9 +236,9 @@ async def _optimize_batch_impl(
         "8. 若en为空，zh也留空\n"
         "9. 严格按JSON格式返回，不加任何解释\n"
         f"10. 【严禁漏译 — 逐词对照】zh必须完整翻译en中的每个语义单元：主语、谓语、宾语、状语、从句、插入语、过渡词（如okay/now/well/so）、强调词（如very/always/important）。不得跳过、省略、或合并任何信息点\n"
-        "11. 【严禁摘要】不得把长英文压缩成一句概括性中文。en有多长，zh就译多长。宁可使用较长中文，也不能遗漏信息点\n"
+        f"11. 【严禁摘要】不得把长英文压缩成一句概括性{output_lang}。en有多长，zh就译多长。宁可使用较长{output_lang}，也不能遗漏信息点\n"
         "12. 【逐句自检 — 强制执行】返回前逐条朗读en，逐词检查zh是否覆盖了：谁（主语）→做了什么（动作）→为什么/怎么（条件/方式）→结果如何。每检查完一条在心里打勾，缺一不可\n\n"
-        '返回格式：[{"id": 1, "zh": "优化后中文", "en": "英文原文原样返回"}]'
+        f'返回格式：[{{"id": 1, "zh": "优化后{output_lang}", "en": "英文原文原样返回"}}]'
     )
 
     glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
@@ -301,9 +301,9 @@ async def _optimize_batch_impl(
                 "2. 严格按JSON格式返回，不要加任何解释\n"
                 "3. 每条必须有zh字段，不得为空\n"
                 "4. 【严禁重复翻译】每条只译自己的en内容，en是半句就译半句，不得让相邻条目的zh相同或重复\n"
-                "5. 【严禁摘要】不得把长英文压缩成一句概括性中文，必须完整覆盖en中的全部信息点\n"
+                f"5. 【严禁摘要】不得把长英文压缩成一句概括性{output_lang}，必须完整覆盖en中的全部信息点\n"
                 "6. 【覆盖自检】返回前逐条检查：zh是否完整覆盖了en的主语、动作、条件、原因、结果和关键术语\n\n"
-                '返回格式：[{"id": 1, "zh": "中文翻译"}]'
+                f'返回格式：[{{"id": 1, "zh": "{output_lang}翻译"}}]'
             )
 
             retry_glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
@@ -333,8 +333,8 @@ async def _optimize_batch_impl(
             en = entry.english
             if en:
                 opt_lines.append(en)
-            has_zh = any('\u4e00' <= c <= '\u9fff' for line in opt_lines for c in line)
-            result[entry.index] = opt_lines if has_zh else entry.lines
+            has_translation = len(opt_lines) > 0 and any(line.strip() for line in opt_lines)
+            result[entry.index] = opt_lines if has_translation else entry.lines
 
         return result
     except Exception:
@@ -385,7 +385,8 @@ class OptimizeWorker(BaseWorker):
     progress = pyqtSignal(int, int)
 
     def __init__(self, client: MistralClient, entries: list[SubtitleEntry],
-                 context: str, glossary: str, concurrency: int = 12, batch_size: int = 5):
+                 context: str, glossary: str, concurrency: int = 12, batch_size: int = 5,
+                 input_lang: str = "English", output_lang: str = "中文"):
         super().__init__()
         self.client = client
         self.entries = entries
@@ -393,6 +394,8 @@ class OptimizeWorker(BaseWorker):
         self.glossary = glossary
         self.concurrency = concurrency
         self.batch_size = batch_size
+        self.input_lang = input_lang
+        self.output_lang = output_lang
         logger.debug(
             f"OptimizeWorker初始化完成，待处理条目数: {len(entries)}, 并发数: {concurrency}, 批次大小: {batch_size}")
 
@@ -464,7 +467,8 @@ class OptimizeWorker(BaseWorker):
     async def _optimize_batch(self, batch: list[SubtitleEntry],
                               session: aiohttp.ClientSession,
                               prev_ctx: list[SubtitleEntry] | None = None) -> dict[int, list[str]]:
-        return await _optimize_batch_impl(batch, self.context, self.glossary, self.client, session, prev_ctx)
+        return await _optimize_batch_impl(batch, self.context, self.glossary, self.client, session,
+                                          self.input_lang, self.output_lang, prev_ctx)
 
 
 async def _translate_batch_impl(
@@ -805,7 +809,8 @@ class BatchWorker(BaseWorker):
     def __init__(self, client: MistralClient, files: list[str],
                  out_dir: Optional[str], concurrency: int, batch_size: int,
                  overwrite: bool = False, chinese_first: bool = True,
-                 glossary_prompt: str = "", original_line: int = 1):
+                 glossary_prompt: str = "", original_line: int = 1,
+                 input_lang: str = "English", output_lang: str = "中文"):
         super().__init__()
         self.client = client
         self.files = files
@@ -816,6 +821,8 @@ class BatchWorker(BaseWorker):
         self.chinese_first = chinese_first
         self.glossary_prompt = glossary_prompt
         self.original_line = original_line  # 原文行号（0-based）
+        self.input_lang = input_lang
+        self.output_lang = output_lang
 
     def _extract_original_line(self, entries: list[SubtitleEntry]) -> list[SubtitleEntry]:
         """根据设置提取原文行，将双语字幕转换为单语言字幕"""
@@ -1099,7 +1106,8 @@ class BatchWorker(BaseWorker):
     async def _optimize_batch(self, batch: list[SubtitleEntry], context: str, glossary: str,
                               session: aiohttp.ClientSession,
                               prev_ctx: list[SubtitleEntry] | None = None) -> dict[int, list[str]]:
-        return await _optimize_batch_impl(batch, context, glossary, self.client, session, prev_ctx)
+        return await _optimize_batch_impl(batch, context, glossary, self.client, session,
+                                          self.input_lang, self.output_lang, prev_ctx)
 
     def _get_out_path(self, filepath: str) -> str:
         p = Path(filepath)
