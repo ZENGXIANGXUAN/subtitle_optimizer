@@ -529,6 +529,8 @@ async def _repair_incomplete_segment_translations(
     glossary: str,
     client: MistralClient,
     session: aiohttp.ClientSession,
+    input_lang: str = "English",
+    output_lang: str = "中文",
 ) -> None:
     incomplete = [
         entry for entry in entries
@@ -644,7 +646,7 @@ class SegmentWorker(BaseWorker):
         # 检测原生字幕：大多数条目的文本行数为 1（只有英文，缺中文）
         self._is_native = sum(1 for e in self.entries if len(e.lines) == 1) > total * 0.5
         if self._is_native:
-            self.log.emit("  📋 检测到原生字幕，将自动翻译为中文")
+            self.log.emit(f"  📋 检测到原生字幕，将自动翻译为{self.output_lang}")
 
         window = max(10, self.batch_size)
         batches = [self.entries[i:i + window]
@@ -940,7 +942,7 @@ class BatchWorker(BaseWorker):
         total = len(entries)
         is_native = sum(1 for e in entries if len(e.lines) == 1) > total * 0.5
         if is_native:
-            self.log.emit(f"    📋 检测到原生字幕，将自动翻译为中文")
+            self.log.emit(f"    📋 检测到原生字幕，将自动翻译为{self.output_lang}")
 
         seg_batch = max(10, min(30, self.batch_size * 2))
         batches = [entries[i:i + seg_batch]

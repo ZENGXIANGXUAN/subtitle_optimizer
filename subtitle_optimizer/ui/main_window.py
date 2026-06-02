@@ -1072,7 +1072,11 @@ class MainWindow(QMainWindow):
         self._log("🔍 开始分析翻译情景...")
         self.text_context.setPlainText("分析中...")
 
-        self._analysis_worker = AnalysisWorker(client, self.entries)
+        self._analysis_worker = AnalysisWorker(
+            client, self.entries,
+            input_lang=self.combo_input_lang.currentText(),
+            output_lang=self.combo_output_lang.currentText()
+        )
         self._analysis_thread = QThread()
         self._analysis_worker.moveToThread(self._analysis_thread)
         self._analysis_thread.started.connect(self._analysis_worker.run)
@@ -1131,7 +1135,11 @@ class MainWindow(QMainWindow):
         self._log("🔍 [阶段1/4] 开始分析翻译情景...")
         self.text_context.setPlainText("分析中...")
 
-        self._analysis_worker = AnalysisWorker(client, self.entries)
+        self._analysis_worker = AnalysisWorker(
+            client, self.entries,
+            input_lang=self.combo_input_lang.currentText(),
+            output_lang=self.combo_output_lang.currentText()
+        )
         self._analysis_thread = QThread()
         self._analysis_worker.moveToThread(self._analysis_thread)
         self._analysis_thread.started.connect(self._analysis_worker.run)
@@ -1215,8 +1223,11 @@ class MainWindow(QMainWindow):
         self.progress_bar.setMaximum(len(self.entries))
         self.lbl_progress_detail.setText(f"AI翻译：0/{len(self.entries)}")
 
-        self._translate_worker = TranslateWorker(client, self.entries, base_context, glossary_prompt, concurrency,
-                                                  batch_size)
+        self._translate_worker = TranslateWorker(
+            client, self.entries, base_context, glossary_prompt, concurrency, batch_size,
+            input_lang=self.combo_input_lang.currentText(),
+            output_lang=self.combo_output_lang.currentText()
+        )
         self._translate_thread = QThread()
         self._translate_worker.moveToThread(self._translate_thread)
         self._translate_thread.started.connect(self._translate_worker.run)
