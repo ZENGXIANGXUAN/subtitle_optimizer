@@ -477,6 +477,8 @@ async def _translate_batch_impl(
     glossary: str,
     client: MistralClient,
     session: aiohttp.ClientSession,
+    input_lang: str = "English",
+    output_lang: str = "中文",
 ) -> dict[int, str]:
     """共享：翻译一批字幕，返回 {index: zh}。失败返回空字典。"""
     items_json = json.dumps([
@@ -485,14 +487,14 @@ async def _translate_batch_impl(
 
     system_content = (
         f"你是专业字幕翻译师。\n【背景与风格】\n{context}\n\n"
-        "任务：将英文字幕翻译成中文，严格遵循上述风格指引（如有）。\n"
+        f"任务：将{input_lang}字幕翻译成{output_lang}，严格遵循上述风格指引（如有）。\n"
         "规则：\n"
         "1. 用词语气与风格指引一致，贴合视频语境\n"
         "2. 严格按JSON格式返回，不要加任何解释\n"
         "3. 每条必须有zh字段，不得为空或返回None\n"
         "4. 【严禁】不得合并条目，输入几条返回几条，id一一对应\n"
         "5. 【严禁重复翻译】每条只译自己的en内容，en是半句就译半句，不得让相邻条目的zh相同或重复\n\n"
-        "返回格式：[{\"id\": 1, \"zh\": \"中文翻译\"}]"
+        '返回格式：[{"id": 1, "zh": "中文翻译"}]'
     )
 
     glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
