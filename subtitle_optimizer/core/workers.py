@@ -346,10 +346,13 @@ class AnalysisWorker(BaseWorker):
     finished = pyqtSignal(str)
     progress = pyqtSignal(str)
 
-    def __init__(self, client: MistralClient, entries: list[SubtitleEntry]):
+    def __init__(self, client: MistralClient, entries: list[SubtitleEntry],
+                 input_lang: str = "English", output_lang: str = "中文"):
         super().__init__()
         self.client = client
         self.entries = entries
+        self.input_lang = input_lang
+        self.output_lang = output_lang
         logger.debug(f"AnalysisWorker初始化完成，待处理条目数: {len(entries)}")
 
     @pyqtSlot()
@@ -364,7 +367,7 @@ class AnalysisWorker(BaseWorker):
         self.progress.emit("正在分析字幕内容，识别翻译情景...")
         logger.info("正在分析字幕内容，识别翻译情景...")
 
-        messages = _build_analysis_messages(self.entries)
+        messages = _build_analysis_messages(self.entries, self.input_lang, self.output_lang)
 
         try:
             async with aiohttp.ClientSession() as session:
@@ -539,7 +542,7 @@ async def _repair_incomplete_segment_translations(
         len(incomplete),
         [entry.index for entry in incomplete],
     )
-    retry_map = await _translate_batch_impl(incomplete, context, glossary, client, session)
+    retry_map = await _translate_batch_impl(incomplete, context, glossary, client, session, input_lang, output_lang)
     for entry in incomplete:
         zh = strip_annotation(str(retry_map.get(entry.index, "")).strip())
         if not zh or zh.lower() in ("none", "null", "无", "—", "-"):
@@ -738,7 +741,8 @@ class TranslateWorker(BaseWorker):
     progress = pyqtSignal(int, int)
 
     def __init__(self, client: MistralClient, entries: list[SubtitleEntry],
-                 context: str, glossary: str, concurrency: int = 12, batch_size: int = 10):
+                 context: str, glossary: str, concurrency: int = 12, batch_size: int = 10,
+                 input_lang: str = "English", output_lang: str = "中文"):
         super().__init__()
         self.client = client
         self.entries = entries
@@ -746,6 +750,8 @@ class TranslateWorker(BaseWorker):
         self.glossary = glossary
         self.concurrency = concurrency
         self.batch_size = batch_size
+        self.input_lang = input_lang
+        self.output_lang = output_lang
 
     @pyqtSlot()
     def run(self):
@@ -775,7 +781,8 @@ class TranslateWorker(BaseWorker):
                 try:
                     async with aiohttp.ClientSession() as session:
                         result_map = await _translate_batch_impl(
-                            batch, self.context, self.glossary, self.client, session)
+                            batch, self.context, self.glossary, self.client, session,
+                            self.input_lang, self.output_lang)
                     for entry in batch:
                         zh = result_map.get(entry.index, "")
                         if zh and entry.english:
@@ -1046,7 +1053,8 @@ class BatchWorker(BaseWorker):
                 try:
                     async with aiohttp.ClientSession() as session:
                         result_map = await _translate_batch_impl(
-                            batch, context, glossary, self.client, session)
+                            batch, context, glossary, self.client, session,
+                            self.input_lang, self.output_lang)
                     for entry in batch:
                         zh = result_map.get(entry.index, "")
                         if zh and entry.english:
@@ -1058,7 +1066,7 @@ class BatchWorker(BaseWorker):
         return entries
 
     async def _analyze(self, entries: list[SubtitleEntry]) -> str:
-        messages = _build_analysis_messages(entries)
+        messages = _build_analysis_messages(entries, self.input_lang, self.output_lang)
         async with aiohttp.ClientSession() as session:
             raw = await self.client.chat(messages, session)
         return _format_analysis_result(raw)
