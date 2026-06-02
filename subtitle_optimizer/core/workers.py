@@ -76,6 +76,13 @@ def _run_loop(coro):
             asyncio.set_event_loop(None)
 
 
+def _get_prompt_lang(language_label: str) -> str:
+    """从显示标签获取 Prompt 中使用的语言名称"""
+    if language_label in LANGUAGE_MAP:
+        return LANGUAGE_MAP[language_label][1]
+    return language_label
+
+
 class BaseWorker(QObject):
     """Worker 基类：提供取消支持与事件循环安全封装"""
     error = pyqtSignal(str)
