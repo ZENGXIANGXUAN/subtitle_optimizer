@@ -102,7 +102,9 @@ class BaseWorker(QObject):
             self.error.emit(f"{type(self).__name__} 异常: {e}")
 
 
-def _build_analysis_messages(entries: list[SubtitleEntry]) -> list[dict]:
+def _build_analysis_messages(entries: list[SubtitleEntry],
+                            input_lang: str = "English",
+                            output_lang: str = "中文") -> list[dict]:
     """构造情景分析提示词，产出可直接约束后续翻译优化的 brief。"""
     sample = entries[:30]
     sample_text = "\n".join(
@@ -117,21 +119,21 @@ def _build_analysis_messages(entries: list[SubtitleEntry]) -> list[dict]:
         "{\n"
         '  "domain": "内容领域，如交易课程/软件教程/访谈/纪录片",\n'
         '  "audience": "目标受众及其知识水平",\n'
-        '  "tone": "中文译文应采用的人称、语气、正式程度和教学节奏",\n'
+        f'  "tone": "{output_lang}译文应采用的人称、语气、正式程度和教学节奏",\n'
         '  "context": "200字以内，说明主题、场景、核心概念、说话者意图和常见理解难点",\n'
         '  "translation_rules": ["3-5条可执行规则，直接指导逐条字幕怎么译"],\n'
         '  "term_rules": [\n'
-        '    {"source": "样本中的英文术语或高频表达", "target": "建议中文译法", "note": "保留/意译/统一用法说明"}\n'
+        '    {"source": "样本中的英文术语或高频表达", "target": "建议译法", "note": "保留/意译/统一用法说明"}\n'
         '  ],\n'
         '  "avoid": ["2-4条需要避免的问题，如直译腔、误译方向、过度解释、术语不统一"],\n'
-        '  "style_guide": "150字以内，写给后续翻译AI的综合指令，必须具体、可执行"\n'
+        f'  "style_guide": "150字以内，写给后续翻译AI的综合指令，必须具体、可执行，目标语言是{output_lang}"\n'
         "}\n\n"
         "要求：\n"
         "1. 优先识别对后续翻译有约束力的信息：领域术语、固定译法、语气、人称、句子长短、保留英文缩写的规则。\n"
         "2. 不要写空泛摘要，例如“语言自然流畅”；必须说明怎样才算自然流畅。\n"
         "3. term_rules 只收录样本中真实出现、且可能影响一致性的词或表达；没有把握时在 note 中说明。\n"
         "4. 如果前30条偏开场白，也要从样本里的术语和表达推断可迁移的翻译规则，不要只总结开场内容。\n"
-        "5. 所有字段必须使用中文填写；source 字段可保留英文原词。"
+        f"5. 所有字段必须使用{output_lang}填写；source 字段可保留{input_lang}原词。"
     )
 
     return [
