@@ -760,6 +760,12 @@ class TranslateWorker(BaseWorker):
         self._execute(self._run())
 
     async def _run(self):
+        # 检测是否需要翻译（输入输出语言相同时跳过）
+        if self.input_lang == self.output_lang:
+            self.log.emit("⏭️ 输入输出语言相同，跳过翻译，仅优化")
+            self.all_done.emit()
+            return
+
         # 检测是否需要翻译（zh_合并 为空的是原生字幕）
         needs_translation = any(not e.chinese for e in self.entries)
         if not needs_translation:
@@ -1037,6 +1043,11 @@ class BatchWorker(BaseWorker):
     async def _translate(self, entries: list[SubtitleEntry],
                           context: str, glossary: str) -> list[SubtitleEntry]:
         """阶段3：原生字幕 en_合并 → zh_译；双语字幕跳过"""
+        # 检测是否需要翻译（输入输出语言相同时跳过）
+        if self.input_lang == self.output_lang:
+            self.log.emit(f"    ⏭️ 输入输出语言相同，跳过翻译，仅优化")
+            return entries
+
         needs_translation = any(not e.chinese for e in entries)
         if not needs_translation:
             return entries
