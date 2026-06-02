@@ -33,6 +33,25 @@ except ImportError:
     from utils import logger, write_phase_snapshot
 
 
+# 语言映射：显示标签 -> (语言代码, Prompt 名称)
+LANGUAGE_MAP = {
+    "中文": ("zh", "中文"),
+    "English": ("en", "English"),
+    "意大利语 (Italiano)": ("it", "Italian"),
+    "日语 (日本語)": ("ja", "Japanese"),
+    "韩语 (한국어)": ("ko", "Korean"),
+    "法语 (Français)": ("fr", "French"),
+    "德语 (Deutsch)": ("de", "German"),
+    "西班牙语 (Español)": ("es", "Spanish"),
+    "葡萄牙语 (Português)": ("pt", "Portuguese"),
+    "俄语 (Русский)": ("ru", "Russian"),
+}
+
+# 语言代码 -> Prompt 名称
+LANG_CODE_TO_PROMPT = {code: prompt for _, (code, prompt) in LANGUAGE_MAP.items()}
+
+# 显示标签列表（用于 UI 下拉框）
+LANGUAGE_LABELS = list(LANGUAGE_MAP.keys())
 def _run_loop(coro):
     """
     在新的事件循环中运行协程，并确保安全关闭。
