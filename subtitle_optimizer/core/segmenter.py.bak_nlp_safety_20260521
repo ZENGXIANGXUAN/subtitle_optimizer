@@ -1,0 +1,141 @@
+import re
+from core.models import SubtitleEntry, _english_word_count, _srt_time_to_ms
+
+_nlp = None
+
+
+def _get_nlp():
+    global _nlp
+    if _nlp is None:
+        import spacy
+        _nlp = spacy.load("en_core_web_sm")
+    return _nlp
+
+
+def nlp_segment(batch: list[SubtitleEntry],
+                log_fn=None) -> list[SubtitleEntry]:
+    """使用 spaCy 对一批字幕做句子边界检测并合并碎片条目。
+
+    返回合并后的条目列表，条目数可能少于输入。
+    """
+    if not batch:
+        return []
+
+    nlp = _get_nlp()
+
+    # 1. 拼接所有英文文本，记录每条条目在拼接文本中的起止位置
+    positions: list[tuple[int, int]] = []
+    parts: list[str] = []
+    offset = 0
+    for entry in batch:
+        en = entry.english.strip()
+        if not en:
+            positions.append((offset, offset))
+            parts.append("")
+            continue
+        parts.append(en)
+        positions.append((offset, offset + len(en)))
+        offset += len(en) + 1  # +1 for space separator
+
+    joined = " ".join(p for p in parts if p)
+    if not joined:
+        return []
+
+    # 2. spaCy 句子边界检测
+    doc = nlp(joined)
+    sentences = list(doc.sents)
+
+    # 3. 将每个 spaCy 句子映射到它覆盖的字幕条目
+    sent_to_entries: list[list[int]] = [[] for _ in sentences]
+    for entry_idx, (entry_start, entry_end) in enumerate(positions):
+        entry = batch[entry_idx]
+        if not entry.english.strip():
+            continue
+        for sent_idx, sent in enumerate(sentences):
+            if entry_start < sent.end_char and entry_end > sent.start_char:
+                sent_to_entries[sent_idx].append(entry_idx)
+
+    # 4. 合并：每个句子生成一条合并后的字幕
+    results: list[SubtitleEntry] = []
+    emitted: set[int] = set()
+
+    for sent_idx, covered_indices in enumerate(sent_to_entries):
+        if not covered_indices:
+            continue
+
+        # 跳过已被上一句覆盖的条目（一个条目只属于一个句子）
+        new_indices = [i for i in covered_indices if i not in emitted]
+        if not new_indices:
+            continue
+        emitted.update(new_indices)
+
+        entries_to_merge = [batch[i] for i in sorted(new_indices)]
+
+        # 安全约束检查
+        if not _nlp_merge_is_safe(entries_to_merge):
+            for e in entries_to_merge:
+                clone = SubtitleEntry(e.index, e.start_time, e.end_time,
+                                      list(e.lines))
+                clone.original_lines = list(e.original_lines or e.lines)
+                results.append(clone)
+            continue
+
+        # 构建合并后的条目
+        first_entry = entries_to_merge[0]
+        last_entry = entries_to_merge[-1]
+
+        merged_en = " ".join(e.english.strip() for e in entries_to_merge
+                             if e.english.strip())
+        merged_zh = "".join(e.chinese.strip() for e in entries_to_merge
+                           if e.chinese.strip())
+
+        lines = []
+        if merged_zh:
+            lines.append(merged_zh)
+        if merged_en:
+            lines.append(merged_en)
+
+        if log_fn and len(entries_to_merge) > 1:
+            ids = [e.index for e in entries_to_merge]
+            log_fn(f"  🔗 NLP合并 [{ids[0]}] ← {ids}")
+
+        merged = SubtitleEntry(
+            index=first_entry.index,
+            start_time=first_entry.start_time,
+            end_time=last_entry.end_time,
+            lines=lines,
+        )
+        orig = []
+        for e in entries_to_merge:
+            orig.extend(e.lines)
+        merged.original_lines = orig if orig else list(lines)
+        results.append(merged)
+
+    results.sort(key=lambda e: e.index)
+    return results
+
+
+def _nlp_merge_is_safe(entries: list[SubtitleEntry]) -> bool:
+    """检查 NLP 合并候选是否安全，与 models._merge_candidate_is_safe 一致。"""
+    if len(entries) <= 1:
+        return True
+
+    start_ms = _srt_time_to_ms(entries[0].start_time)
+    end_ms = _srt_time_to_ms(entries[-1].end_time)
+    if end_ms - start_ms > 8000:
+        return False
+
+    for left, right in zip(entries, entries[1:]):
+        gap = _srt_time_to_ms(right.start_time) - _srt_time_to_ms(left.end_time)
+        if gap > 1200:
+            return False
+
+    merged_en = " ".join(e.english for e in entries if e.english)
+    if _english_word_count(merged_en) > 42:
+        return False
+
+    for e in entries:
+        if _english_word_count(e.english) >= 20:
+            return False
+
+    return True

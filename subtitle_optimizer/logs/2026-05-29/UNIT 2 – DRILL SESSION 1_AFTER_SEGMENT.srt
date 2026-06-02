@@ -1,0 +1,776 @@
+1
+00:00:02,360 --> 00:00:06,720
+欢迎来到本次以练习为主的课程。在进入
+Welcome to this drill-based session. Before we move
+
+3
+00:00:06,720 --> 00:00:10,038
+具体练习和问题集之前我们先简单回顾下我们在Unity中具体处理的内容用工具来总结的话
+into the drills and the sets of questions,
+
+4
+00:00:10,038 --> 00:00:14,601
+let's first briefly have an overview of exactly what it is
+
+5
+00:00:14,601 --> 00:00:19,579
+we dealt with throughout Unity. To summarize in terms of the tool,
+
+7
+00:00:19,740 --> 00:00:23,235
+搭建该工具的两大基础要素我们将使用的工具贯穿本课程始终，第一个是旋转因子
+the two basic elements of setting up the tool
+
+8
+00:00:23,235 --> 00:00:27,118
+that we are going to utilize throughout this course are,
+
+9
+00:00:27,118 --> 00:00:29,059
+number one, the rotation factor.
+
+10
+00:00:29,220 --> 00:00:36,180
+在旋转因子中我们讨论了两种不同的旋转类型。第一种是条形旋转
+Within that rotation factor, we discussed two different types of rotations. The first was bar-type rotation,
+
+13
+00:00:36,620 --> 00:00:45,540
+主要基于时间变化第二种则是点数图旋转（Point-and-Figure）
+which is predominantly time-based, and the second was point-and-figure.
+
+16
+00:00:45,540 --> 00:00:51,420
+介绍完旋转后我们还探讨了不同的数据源和足迹图的创建方式
+Once we covered rotation, the different types of sources and footprints we can create.
+
+19
+00:00:51,540 --> 00:00:55,980
+我们总共讲解了五种足迹图数据源。第一种是Delta
+We had five different footprint sources. The first was delta.
+
+21
+00:00:55,980 --> 00:00:59,340
+第二种是成交量
+The second was volume.
+
+22
+00:00:59,640 --> 00:01:02,840
+第三种是买卖失衡
+The third was imbalance.
+
+23
+00:01:03,140 --> 00:01:07,460
+第四种是分布图
+The fourth was profile.
+
+24
+00:01:08,080 --> 00:01:15,980
+最后，我们重点讨论了买卖盘时间掩码，这是最关键的一个
+Lastly, we discussed the most important one, which was bid-ask times mask.
+
+26
+00:01:16,120 --> 00:01:19,616
+正如本课程中反复提到的并在所有示例中我们将利用两种旋转方式针对不同策略。在数据源方面
+As mentioned throughout this course and in all the examples,
+
+27
+00:01:19,616 --> 00:01:23,112
+we will utilize both sets of rotations for different strategies.
+
+28
+00:01:23,112 --> 00:01:24,860
+In terms of the source,
+
+30
+00:01:25,080 --> 00:01:29,200
+针对不同策略。在数据源方面
+for different strategies. In terms of the source,
+
+31
+00:01:29,360 --> 00:01:35,600
+并制定具体策略利用市场不平衡现象。请注意，之所以
+as well as develop a specific strategy utilizing the imbalance. Now, just to note, the reason
+
+33
+00:01:35,600 --> 00:01:39,433
+我们不使用Delta成交量分布图原因很简单，因为你可以所有这些信息从买卖价源数据中获取。这就是我们处理的内容
+we don’t utilize the delta volume profile is very simply
+
+34
+00:01:39,433 --> 00:01:44,660
+because you can get all of that information within the bid times by ask source.
+
+35
+00:01:44,660 --> 00:01:47,099
+So that’s what we dealt with
+
+37
+00:01:47,100 --> 00:01:50,360
+在第二单元中。现在你应该已经
+in Unit 2. You should now
+
+38
+00:01:50,360 --> 00:01:51,640
+完成了图表的设置
+have your chart set up.
+
+39
+00:01:52,240 --> 00:01:58,180
+操作起来应该相对简单。你应该能够轻松切换不同的市场
+Everything should look relatively easy to utilize. You should be able to move between the different markets
+
+40
+00:01:58,180 --> 00:02:00,420
+很容易。最后但同样重要的是
+quite easily. Last but not least,
+
+41
+00:02:00,560 --> 00:02:05,401
+我特别想确保你不仅能使用这个工具，还能理解工具背后的复杂原理复杂原理。而这次练习
+I really want to ensure that you can not just utilize the tool,
+
+42
+00:02:05,401 --> 00:02:09,125
+but also that you understand the intricacy behind the tool.
+
+43
+00:02:09,125 --> 00:02:11,359
+And that’s what this drill
+
+45
+00:02:11,360 --> 00:02:14,540
+就是为了测试这一点。它将测试你是否真正理解
+is all about. It’s going to test that you actually understand
+
+46
+00:02:14,600 --> 00:02:20,480
+你究竟在在足迹图中看到的具体内容。显然，如果很简单
+what it is you’re exactly seeing in that footprint tool. So obviously, if this is simple,
+
+48
+00:02:20,480 --> 00:02:22,380
+那确实很简单
+it should be simple.
+
+49
+00:02:22,380 --> 00:02:23,440
+如果很简单，太好了
+If it is simple, great.
+
+50
+00:02:23,760 --> 00:02:27,920
+说明你已经掌握了工具的基础知识。很好。太棒了
+That means you understand the basics of the tool. That’s fine. Brilliant.
+
+51
+00:02:28,100 --> 00:02:30,000
+可以进入第三单元。但如果
+Move on to Unit 3. If, however,
+
+52
+00:02:30,180 --> 00:02:34,190
+你仍然有点难以理解这个工具，那么这次练习将是最好的强化训练。所以直接进入第一题
+you’re still struggling a little bit trying to understand the tool,
+
+53
+00:02:34,190 --> 00:02:36,863
+then this will be a perfect drill session.
+
+54
+00:02:36,863 --> 00:02:38,199
+So straight into question
+
+56
+00:02:38,200 --> 00:02:40,220
+第一题。或者，如你所见
+number one. Or, as you can see,
+
+57
+00:02:40,360 --> 00:02:46,080
+左边这里我准备了一个假设的足迹图。这就是左边的
+on the left side here, I’ve got a hypothetical footprint. So this is our footprint
+
+59
+00:02:46,080 --> 00:02:48,040
+足迹图。右边则是
+on the left. And on the right side,
+
+60
+00:02:48,200 --> 00:02:54,300
+对应的价格。现在，我要你回答以下问题。第一题
+we’ve got the prices. Now, I want you to answer the following question. So question number one.
+
+61
+00:02:54,440 --> 00:02:59,120
+每个价格的成交量是多少？也就是，每个价格的总成交量是多少？
+What is the volume traded at each price? So, what is the total
+
+63
+00:02:59,120 --> 00:03:02,980
+第一问
+volume traded at each price? Question number 1.
+
+64
+00:03:03,600 --> 00:03:10,200
+每个价格的差值成交量是多少？是正还是负？第二问
+What is the delta traded at each price? Is it positive or negative? Question number 2.
+
+66
+00:03:11,120 --> 00:03:13,040
+每个价格应该是什么颜色？
+Which color should each price be?
+
+67
+00:03:13,160 --> 00:03:23,980
+如果给这些价格分别上色——应该是红色还是蓝色？第三问
+If you were to color each one of these prices— 40、41、40、41、42、43—— Red or blue? Question number 3.
+
+70
+00:03:24,500 --> 00:03:26,560
+每个价格应该用什么色度？
+Which shade should each price be?
+
+71
+00:03:26,580 --> 00:03:29,294
+记得我们之前提过色度的数量以及它代表各价格的相对成交量给这些价格分别分配
+Remember, we spoke about the number of shades
+
+72
+00:03:29,294 --> 00:03:33,704
+and how that represents the relative amount of volume traded at each price.
+
+73
+00:03:33,704 --> 00:03:35,739
+Assign each one of those prices
+
+74
+00:03:35,740 --> 00:03:40,420
+浅色、中色或深色
+a light shade, a medium shade, or a dark shade.
+
+75
+00:03:40,920 --> 00:03:47,720
+温习一下只有两种颜色：红色和蓝色
+To refresh your memory, there are only two colors: red and blue.
+
+77
+00:03:48,560 --> 00:03:56,960
+每种颜色下又分为浅色、中色和深色。第四问
+From each of those colors, you will have a light, a medium, and a dark shade. Question number 4.
+
+80
+00:03:57,400 --> 00:04:01,380
+这六个价格的累计差值是多少？第五问
+What is the cumulative delta over these six prices? Question number 5.
+
+81
+00:04:02,120 --> 00:04:10,260
+第六问：找出价格之间的失衡点。提示：它是对角线性质的
+Question number 6: Identify the imbalances between prices. Here’s a tip: it’s diagonal in nature.
+
+83
+00:04:10,540 --> 00:04:15,220
+如果这题不会别担心，之后我会带你一步步解析
+If you don’t get this, don’t worry. I will do a guided tuition session with you afterward.
+
+85
+00:04:15,440 --> 00:04:18,980
+附加题：价格 42 上的“0”代表什么？
+Bonus question: What does the zero represent at price 42?
+
+87
+00:04:19,040 --> 00:04:24,760
+答对的话，恭喜你
+If you get this right, congratulations.
+
+88
+00:04:24,940 --> 00:04:28,540
+这个“0”在价格 42 上代表什么？
+What does that zero represent at price 42?
+
+89
+00:04:29,260 --> 00:04:32,640
+现在暂停视频，花点时间
+Pause this video now. Take a moment. Work through those questions.
+
+90
+00:04:32,900 --> 00:04:36,340
+好好思考一下。等你回来继续播放时
+Think about it. When you return and resume playing,
+
+91
+00:04:36,560 --> 00:04:39,360
+我会逐一解析每个答案
+I'm going to go through each answer individually.
+
+92
+00:04:41,680 --> 00:04:43,740
+好，各位，现在继续
+Right, guys. So, back into it now.
+
+93
+00:04:44,240 --> 00:04:45,600
+我们直接进入答案环节
+Let's move straight on to the answers.
+
+94
+00:04:45,760 --> 00:04:48,580
+希望这些内容对你们有帮助。首先
+I hope you found that useful. The first thing is,
+
+95
+00:04:48,600 --> 00:04:50,660
+每个价格的成交量是多少？
+what is the volume traded at each price?
+
+96
+00:04:50,760 --> 00:04:55,910
+很简单，就像我们之前说的总成交量就是该价格的实际成交量也就是价格 45 时卖出的量对比价格 45 时买入的量。我们可以看到，总成交量
+So, very simply, as we spoke about, the total volume is simply what was traded
+
+97
+00:04:55,910 --> 00:05:00,030
+or what was sold at price 45, versus what was bought at price 45.
+
+98
+00:05:00,030 --> 00:05:03,120
+And we can see the sum total of volume
+
+100
+00:05:03,120 --> 00:05:07,000
+就是 1,100 份合约
+is nothing other than 1,100 contracts.
+
+101
+00:05:07,540 --> 00:05:16,580
+在第二个例子中，我们可以看到成交量是 710 份合约。接下来是 367 份
+In the second example, we can see it's very simply 710 contracts. We then have 367 contracts,
+
+103
+00:05:17,000 --> 00:05:25,120
+然后是 650 份，再是 1,030 份，最后是 1,350 份
+then 650, then 1,030, and lastly 1,350.
+
+104
+00:05:25,840 --> 00:05:30,140
+好，这个部分很简单。希望你们都答对了。接下来
+Okay, nice and straightforward. Hopefully you got that right. Now, the next thing is,
+
+105
+00:05:30,140 --> 00:05:32,380
+每个价格的差值是多少？
+what is the delta at each price?
+
+106
+00:05:32,500 --> 00:05:39,460
+计算差值的方法是简单相减两者的差值。在第一个例子中，差值是 300——
+So, to get the delta, you simply subtract the two from each other. So, 300 in the first example—
+
+108
+00:05:40,000 --> 00:05:44,100
+不过现在需要加上正或负的差值
+except you now need to add either a positive or a negative delta.
+
+110
+00:05:44,220 --> 00:05:46,879
+记住，差值仅仅是该价格的交锋结果——或者说，谁赢得了该价格的‘战役’。在第一个例子中
+So, remember, the delta is merely the interaction
+
+111
+00:05:46,879 --> 00:05:49,538
+or who won the battle at that price.
+
+112
+00:05:51,200 --> 00:05:54,840
+我们可以看到，在价格 45 时，买入量大于卖出量
+we can see there was more buying at 45 than there was selling.
+
+113
+00:05:54,840 --> 00:05:58,480
+因此，差值是 +300
+Therefore, it will be a positive 300 delta.
+
+114
+00:05:59,440 --> 00:06:00,440
+接下来的例子同理
+And likewise for the next.
+
+115
+00:06:00,600 --> 00:06:04,820
+买方再次赢得该价格的交锋差值为 +190
+The buyers won this price again and it was positive 190 delta.
+
+117
+00:06:05,440 --> 00:06:10,360
+接下来是 -145 的差值因为卖方赢得了价格 43 的交锋
+We then have –145 delta as the sellers won price 43.
+
+119
+00:06:10,940 --> 00:06:21,160
+然后是 +650 的差值+870 的差值，最后是 -650 的差值
+We then have positive 650 delta, positive 870 delta, and last but not least –650 delta.
+
+121
+00:06:21,160 --> 00:06:29,080
+好，首先你可以直接看到显然每个价位的差值都不同。接下来的问题是
+Okay, so straight away you can see obviously that the delta varies at each price. The next step was
+
+123
+00:06:29,160 --> 00:06:33,080
+每个价位该用什么颜色？红色或蓝色
+which color should each price be? Either red or blue.
+
+124
+00:06:33,200 --> 00:06:41,120
+颜色只是告诉我们这个价位是买家想要的还是卖家想要的
+The color simply shows us whether it was buyers who wanted that price, or sellers who wanted that price.
+
+127
+00:06:41,120 --> 00:06:44,368
+所以，当颜色是红色时说明卖家占优，而当颜色是蓝色时说明买家占优。‘占优’的意思是
+So, when the color is red, the sellers won,
+
+128
+00:06:44,368 --> 00:06:47,616
+and when the color is blue, the buyers won.
+
+129
+00:06:47,616 --> 00:06:49,059
+By 'won,' we mean
+
+130
+00:06:49,060 --> 00:06:51,820
+对差值产生了积极影响
+there was a positive impact on the delta.
+
+131
+00:06:52,260 --> 00:06:54,500
+好，现在非常清晰、非常直观我们看到蓝色、蓝色、红色蓝色、蓝色，再红色
+Okay, so very clearly, very easily,
+
+132
+00:06:54,500 --> 00:07:00,100
+we got a blue, a blue, a red, a blue, a blue, and a red.
+
+134
+00:07:00,940 --> 00:07:08,100
+好，接下来的问题是每个价位的色调深浅该如何确定？这个嘛
+Okay, and then the next question is, what should each shade be at each price? This, again,
+
+136
+00:07:08,120 --> 00:07:10,040
+如果你觉得有点复杂，没关系
+if you found this a little bit tricky, that’s okay.
+
+137
+00:07:10,600 --> 00:07:13,786
+关键在于理解色调是基于相对成交量来设定的。算法会根据
+The important thing to understand is that
+
+138
+00:07:13,786 --> 00:07:18,338
+the shades are based on the relative amount of volume.
+
+139
+00:07:20,160 --> 00:07:24,600
+相对成交量来调整色调深浅
+to add a shade based on the relative volume.
+
+141
+00:07:24,600 --> 00:07:27,740
+也就是说，某一价位的成交量相对于下一个价位的成交量
+So it’s one price’s volume relative to the next.
+
+143
+00:07:27,800 --> 00:07:36,220
+颜色最深的价位意味着成交量最大而颜色越浅的价位则相反
+The price with the darkest color will have the highest amount of volume versus the lighter.
+
+146
+00:07:36,460 --> 00:07:42,140
+简单来说，就是从最小成交量到最大成交量的渐变
+It’s simply the least amount of volume toward the most amount of volume.
+
+148
+00:07:42,280 --> 00:07:44,740
+所以色调越深说明该价位的成交量越高
+So the darker the shade, the higher the volume at that price.
+
+150
+00:07:45,160 --> 00:07:51,240
+反之，成交量越低，色调越浅。如果我们要绘制
+And conversely, the lower the volume, the lighter the shade. If we were to plot
+
+151
+00:07:51,240 --> 00:07:53,400
+将其转化为色阶非常简单
+Turning this into a shade is very simple.
+
+152
+00:07:53,560 --> 00:08:00,140
+我们可以看到成交量以及总成交量，还能清楚看出最高成交量达到了1,350
+We can see the volume traded, the total volume, and we can simply see that the highest volume is 1,350.
+
+155
+00:08:00,680 --> 00:08:03,940
+因此，这里会是一个很深的色阶
+Therefore, that will be a very dark shade.
+
+156
+00:08:04,420 --> 00:08:11,600
+相对来看，我们还能看到1,100的成交量也算是较深的色阶。反过来
+We can also see that, relatively speaking, 1,100 is a relatively dark shade. On the flip side, we can see
+
+158
+00:08:11,600 --> 00:08:16,180
+367的成交量相对较低与其他价格相比
+that 367 is a relatively low volume, relative to all the other prices.
+
+160
+00:08:16,180 --> 00:08:18,420
+因此，它会被标记为浅色色阶
+Therefore, it will get a light shade.
+
+161
+00:08:19,300 --> 00:08:24,180
+中间价位，显然650和710则是中等色阶
+In between, we have, obviously, a medium shade with 650 and 710.
+
+163
+00:08:24,460 --> 00:08:29,411
+而1,030也可以被视为较深的色阶。所以，色阶就是这样显示的
+And, obviously, 1,030 could pretty much be interpreted as a dark shade as well.
+
+164
+00:08:29,411 --> 00:08:32,839
+So, that’s how you would see the shades.
+
+165
+00:08:32,960 --> 00:08:34,680
+它是基于总成交量来划分的
+It’s based on the total volume.
+
+166
+00:08:35,120 --> 00:08:40,280
+显然，某价位成交量越高色阶就越深
+Note that, obviously, the higher the volume traded at a price, the darker the shade.
+
+168
+00:08:40,640 --> 00:08:48,720
+反之成交量较低的价位则会被标记为浅色
+And, likewise, the lighter shade will be allocated to the lower relative volume.
+
+170
+00:08:48,960 --> 00:08:50,220
+那么，什么是累计增量呢？其实很简单
+What, then, is the cumulative delta? It’s very simple.
+
+171
+00:08:50,600 --> 00:08:56,133
+要计算累计增量你只需将所有这些增量相加这样你就会发现在这一轮六个价位的轮动中我们可以非常清楚地看到买方赢下了这一轮动并且对市场产生了净正面影响或者说在这一轮动中形成了净推动力
+To get the cumulative delta, you’re just going to add up all of these deltas together,
+
+172
+00:08:56,133 --> 00:09:01,015
+and you will find out that, over this series of six prices within this rotation,
+
+173
+00:09:01,015 --> 00:09:10,779
+we can very clearly see that the buyers have won this rotation, and they’ve had a net impact, or a net positive impact, on the market in this rotation.
+
+181
+00:09:11,540 --> 00:09:15,740
+最后，识别价格之间的失衡点。
+Lastly, identify the imbalances between prices.
+
+182
+00:09:15,880 --> 00:09:18,100
+现在，不用过于担心这个问题。
+Now, don’t worry too much about this.
+
+183
+00:09:18,200 --> 00:09:22,040
+我们之后会花大量时间讨论这个当我们进入失衡策略部分时。
+We will spend quite a bit of time on this when we move on to imbalance strategy.
+
+185
+00:09:22,040 --> 00:09:27,240
+但简单来说，我们能看到一些失衡现象，而这显然就是其中之一。
+But very simply, we can see there are some imbalances, and this is definitely one of them.
+
+187
+00:09:27,360 --> 00:09:33,140
+记住，失衡总是朝那个方向发展，而不是相反方向。
+Now, remember, imbalances always go in that direction, not in the opposite direction.
+
+189
+00:09:33,140 --> 00:09:35,582
+而这种失衡无非是指当存在非常大的相对差异时，买家以某个价格买入与卖家以某个价格卖出之间的差异。
+And the imbalance is none other than
+
+190
+00:09:35,582 --> 00:09:38,373
+when there’s a really big relative difference
+
+191
+00:09:38,373 --> 00:09:42,559
+between buyers buying at a price versus sellers selling at a price.
+
+192
+00:09:42,680 --> 00:09:49,960
+比如，我们能看到买家以42的价格而卖家仅在41的价格卖出了80手。
+So, we can see buyers bought 650 at 42 versus sellers selling only 80 at 41.
+
+194
+00:09:50,260 --> 00:09:53,126
+因此，存在巨大失衡。在最优买价处卖出的量与在最优卖价处买入的量之间。
+As a result, there’s a really big imbalance
+
+195
+00:09:53,126 --> 00:09:55,992
+between how much was sold at the best bid
+
+196
+00:09:55,992 --> 00:09:58,858
+versus how much was bought at the best offer.
+
+197
+00:09:58,860 --> 00:10:01,200
+好，显然，这是一个失衡。
+Okay. And obviously, an imbalance.
+
+198
+00:10:01,580 --> 00:10:05,100
+显然，一个人的失衡可能对另一个人来说不是失衡。
+Obviously, one person’s imbalance might be another’s non-imbalance.
+
+200
+00:10:05,240 --> 00:10:10,140
+所以，这点很重要，我们之后会再讨论，如何判定失衡的标准。
+So, it’s important, and we will talk about this later on, to distinguish how much constitutes an imbalance.
+
+202
+00:10:10,600 --> 00:10:17,240
+但我们的经验法则是：我们喜欢用数字来衡量——任何5倍以上的差异。
+But as a basic rule of thumb, I like to work with numbers—anything five times.
+
+204
+00:10:17,240 --> 00:10:19,740
+好，所以5倍——任何5倍以上的，
+Okay. So, 5×—anything that’s five times,
+
+205
+00:10:19,820 --> 00:10:21,840
+对我们来说，就构成失衡。
+for me, would constitute an imbalance.
+
+206
+00:10:22,140 --> 00:10:31,460
+所以，我们可以直接看到：这里没有失衡，这里有失衡，那里可能有失衡，没有失衡，没有失衡。
+So, straight away, we can see: no imbalance there, imbalance there, potential imbalance there, no imbalance, and no imbalance.
+
+209
+00:10:31,620 --> 00:10:35,660
+所以，如果你刚才判断正确，那么它就是失衡，恭喜。
+So, if you got the answer right that that was the imbalance, congratulations.
+
+211
+00:10:36,620 --> 00:10:43,880
+然后，来回答附加问题很简单，价格42处的零代表什么？很简单
+Then, to answer the bonus question, Very simply, what does the zero represent at price 42? It's very simple.
+
+213
+00:10:44,340 --> 00:10:45,920
+再次强调，别太担心这个
+Again, don't stress too much about this.
+
+214
+00:10:45,960 --> 00:10:48,140
+我觉得我还没跟你详细讲过这个
+I don't think I went over it with you just yet.
+
+215
+00:10:48,620 --> 00:10:51,580
+零表示没有止损单
+A zero represents a lack of stops.
+
+216
+00:10:52,040 --> 00:10:54,040
+好，大家都知道什么是止损单
+Okay. You all know what stops are.
+
+217
+00:10:54,100 --> 00:10:55,000
+你知道它们长什么样
+You know what they look like.
+
+218
+00:10:55,000 --> 00:10:56,660
+当你被卡住时会感到烦恼
+You get annoyed when you get stuck up.
+
+219
+00:10:56,860 --> 00:11:00,877
+当存在一个零时，实际上它想告诉我们的是当市场开始上涨或下跌时它完全跳过了这个价格
+When there's a zero, effectively, what it's telling us is that,
+
+220
+00:11:00,877 --> 00:11:04,528
+as the market began to move either up or down,
+
+221
+00:11:04,528 --> 00:11:06,719
+it skipped completely over this price.
+
+223
+00:11:06,800 --> 00:11:12,740
+换句话说，没有空头卖出在任何时候进入42这个价位
+In other words, there was no selling going into the 42s at any point.
+
+225
+00:11:13,240 --> 00:11:19,235
+所以，它想表达的是一旦市场开始反弹向上显然，多头非常激进如此有意地被买入结果他们很快跳过了这个价格空头甚至无法卖出一份合约，价格42
+So, what it's saying is that, once the market started to go back up the page,
+
+226
+00:11:19,235 --> 00:11:23,731
+obviously, the buyers were so aggressive, so intentional to get bought, that
+
+227
+00:11:23,731 --> 00:11:28,602
+ultimately, they very quickly skipped over this price, that sellers were not able
+
+228
+00:11:28,602 --> 00:11:31,599
+to even sell a single contract at price 42.
+
+232
+00:11:32,300 --> 00:11:35,260
+好了，感谢大家参加这次基于演练的培训
+All right. Thank you for joining us for this drill-based session.
+
+233
+00:11:35,380 --> 00:11:39,600
+希望你现在对足迹的基本要素有了更好的理解
+I hope you've got a much better understanding of the basic elements of the footprint.
+
+235
+00:11:40,040 --> 00:11:42,120
+现在我们要进入第三单元了
+Again, we're going to move into Unit 3 now.
+
+236
+00:11:42,300 --> 00:11:45,900
+我们要开始讨论足迹的具体原则
+We're going to start talking about specific principles on the footprint.
+
+238
+00:11:46,320 --> 00:11:51,740
+等我们讲完这个你就会开始认识到足迹工具有多么强大
+Again, once we do that, you're going to start to recognize how powerful the footprint tool is.
+
+241
+00:11:51,980 --> 00:11:53,740
+祝你好运，我们第三单元再见！
+Good luck, and I'll see you again in Unit 3.

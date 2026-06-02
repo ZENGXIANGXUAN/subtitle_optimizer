@@ -1,0 +1,2598 @@
+1
+00:00:00,000 --> 00:00:02,760
+足迹交易课程。第14单元。
+The Footprint Course. Unit 14.
+
+2
+00:00:03,240 --> 00:00:04,980
+Delta 头寸解除。
+The Delta Position Unwind.
+
+3
+00:00:05,320 --> 00:00:08,940
+这是30天挑战的第26天。
+This is Challenge Day 26 of 30. In the following slide,
+
+4
+00:00:09,080 --> 00:00:13,599
+在下一张幻灯片中，我们将聚焦几条关键规则，来理解金融市场，包括核心玩家，他们的目标，
+we are going to focus on some of the key rules
+
+5
+00:00:13,599 --> 00:00:17,707
+to understand about the financial markets, including the key participants,
+
+6
+00:00:17,707 --> 00:00:23,458
+the objectives of these participants, the skills required to be successful as a trader,
+
+7
+00:00:23,458 --> 00:00:27,977
+and some of the skills and processes that various traders have.
+
+10
+00:00:53,760 --> 00:00:57,480
+首先，最关键的是：谁是你的对手？
+The first and most important thing to understand is, who are you playing against?
+
+12
+00:00:57,560 --> 00:01:00,741
+交易这场博弈中的玩家都有谁？
+Who are the players in this game or in this game of trading?
+
+13
+00:01:00,741 --> 00:01:04,400
+市场中有多种玩家，我将它们总结为5类。
+Now, there is a number of different players, and I’ve summarized them into five.
+
+15
+00:01:04,540 --> 00:01:09,468
+第一类也是最大的玩家：养老金、对冲基金、机构、银行。我们称它们为影响型玩家。
+So, the first—and the biggest—players being your pension funds, your hedge funds,
+
+16
+00:01:09,468 --> 00:01:13,340
+your institutions, your banks. These are what we call influential players.
+
+18
+00:01:13,420 --> 00:01:17,940
+换句话说，它们的决策能操控价格走势。
+In other words, they can move prices around based on the decisions that they make.
+
+20
+00:01:18,260 --> 00:01:24,960
+但现实是，我们谁都无法影响市场，
+Okay. Now, no one—none of us, not myself included—none of us are influential in the market
+
+22
+00:01:24,960 --> 00:01:28,503
+无法像它们那样操控价格，让价格随心所欲涨跌。
+to the extent that we can actually manipulate or, rather, maneuver prices
+
+23
+00:01:28,503 --> 00:01:31,751
+and actually make prices go up and down. So, straight away,
+
+24
+00:01:31,752 --> 00:01:36,163
+所以，你要先问自己，‘我不是影响型玩家。’ 下一类是投机型玩家。
+you’ve got to say to yourself, 'Well, I’m not an influential player.'
+
+25
+00:01:36,163 --> 00:01:38,999
+The next type of player is a speculative player.
+
+27
+00:01:39,080 --> 00:01:46,407
+这里的投机型玩家，更偏向于有影响力的类型。
+Now, again, a speculative player in this definition, we try to include or more lean toward gain-influential type players.
+
+29
+00:01:46,407 --> 00:01:48,927
+比如对冲基金，对某个市场有方向性判断，要么被止损出局，要么不被。
+In other words, we’re looking at hedge funds
+
+30
+00:01:48,927 --> 00:01:52,288
+that are taking a directional view on whatever market it may be,
+
+31
+00:01:52,288 --> 00:01:55,088
+and they either get stopped out, or they don’t.
+
+33
+00:01:55,090 --> 00:01:59,180
+它们不会持有产品或资产类别，直到到期或类似节点。
+They’re not holding that product or that asset class until maturity or something like that.
+
+36
+00:01:59,180 --> 00:02:04,400
+所以下一类玩家是投机型玩家。
+So, the next type of player is a speculative player.
+
+37
+00:02:04,560 --> 00:02:11,047
+但这不包括我们这些散户、日内交易者或短线交易者。
+Again, that does not include us as a retail market, as day traders, as short-term traders.
+
+38
+00:02:11,047 --> 00:02:13,479
+然后是高频交易者。
+We then have the high-frequency traders.
+
+40
+00:02:13,580 --> 00:02:17,340
+这可能包括部分开发了算法的你。
+Now, again, this might include some of you, some of you that have developed algorithms.
+
+42
+00:02:17,340 --> 00:02:19,740
+这也包括你。 关键在于理解
+This includes you. The important thing to understand
+
+43
+00:02:19,740 --> 00:02:24,398
+关于高频交易者的策略特点,其一，策略极其精确,其二，风险与收益都非常明确。
+with regards to the players that play in high frequency,
+
+44
+00:02:24,398 --> 00:02:28,125
+they develop strategies that, one, are very exact,
+
+45
+00:02:28,125 --> 00:02:32,318
+and, two, have very specific both risk and reward.
+
+48
+00:02:32,320 --> 00:02:36,260
+稍后在策略开发部分会详细展开。
+And we’ll talk a little bit about that later when we go into actual strategy development.
+
+49
+00:02:36,380 --> 00:02:38,772
+包括我、自营交易者、专业交易者,以及你们中的很多人。 你们属于日内交易者。
+That’s myself, your prop traders, your professional traders,
+
+50
+00:02:38,772 --> 00:02:40,366
+as well as many of you.
+
+51
+00:02:42,900 --> 00:02:45,540
+当然，还有波段交易者。
+And then, obviously, swing traders.
+
+52
+00:02:45,540 --> 00:02:48,200
+日内与波段交易者的区别仅在于持仓时间。
+between a day trader and a swing trader is merely the time frame over which we’re holding.
+
+54
+00:02:48,200 --> 00:02:51,060
+日内交易者更短线，波段交易者更中长线。
+Day traders are a little bit more short-term; swing traders are a little bit more long-term.
+
+55
+00:02:51,260 --> 00:02:54,201
+了解这些玩家很重要，因为知道自己是谁，对手是谁,你就能立刻给自己定位。
+Now, it’s important to understand these players
+
+56
+00:02:54,201 --> 00:02:59,348
+because if you know which player you are and who you’re up against,
+
+57
+00:02:59,348 --> 00:03:04,863
+straight away, you’re almost going to put yourself in a division of the players.
+
+58
+00:03:04,865 --> 00:03:09,278
+你会说，‘我属于这类玩家。’
+You’re going to say, *‘Well, I’m one of these players,’*
+
+61
+00:03:09,340 --> 00:03:11,513
+不仅是目标，还有技能和流程,这才是你需要走的方向。
+Not just objective, the skills and the process,
+
+62
+00:03:11,513 --> 00:03:15,589
+but this is ultimately the direction or the path that I need to go down.
+
+63
+00:03:15,590 --> 00:03:19,343
+如果你是日内或波段交易者,我现在先给你概括三点：
+Now, if you are a day trader or a swing trader,
+
+64
+00:03:19,343 --> 00:03:23,438
+I'm going to outline for you now, first, what is your objective?
+
+65
+00:03:23,438 --> 00:03:23,779
+Secondly,
+
+66
+00:03:24,020 --> 00:03:26,700
+第二，你需要哪些技能？ 第三，流程是什么？
+what are the skills you need? And then third, what is the process?
+
+67
+00:03:27,080 --> 00:03:28,880
+这正是今晚课程的核心。
+And that’s where the core of tonight’s entire session is going to be.
+
+69
+00:03:28,880 --> 00:03:36,500
+作为日内/波段交易者，首要目标是培养稳定性。
+So, your objective as a day trader/swing trader, first and foremost, is to develop consistency.
+
+70
+00:03:36,500 --> 00:03:40,350
+复盘策略时，你要问自己,做每日总结、头脑风暴新想法时，要问：第一，‘我是日内还是波段交易者？’
+Now, what you need to ask yourself when you review your strategies,
+
+71
+00:03:40,350 --> 00:03:44,200
+when you do your daily debriefs, when you’re brainstorming new ideas,
+
+72
+00:03:44,200 --> 00:03:50,297
+is this: firstly, ‘I am a day trader or a swing trader.’ Secondly, ‘What I’m doing right now—
+
+75
+00:03:50,380 --> 00:04:00,860
+‘我现在做的这件事，能推动我实现稳定性目标吗？’
+this hour I’m spending on whatever task—is this ultimately moving me toward that objective of consistency?’ Okay.
+
+78
+00:04:00,860 --> 00:04:03,192
+有时有人发给我一张高时间框架的日线图,问，‘持仓3周获利10%，你怎么看？’
+sometimes someone sends me a long higher-timeframe daily chart
+
+79
+00:04:03,192 --> 00:04:05,524
+and asks, ‘What do you think about holding this
+
+80
+00:04:05,524 --> 00:04:07,597
+for the next three weeks for a 10% gain?’
+
+81
+00:04:07,640 --> 00:04:10,800
+我会说，‘先等等。’
+I’ll say, ‘Hold on a second.’
+
+83
+00:04:10,920 --> 00:04:14,540
+你是机构型玩家？还是投机型玩家？
+Are you an institutional player? Are you a speculative player?
+
+84
+00:04:14,540 --> 00:04:24,220
+你能舒服地持有大额头寸数天吗？ 对99%的人，答案是不能。
+Can you comfortably hold a large capital position for multiple days?’ For 99% of us, the answer is no. Okay.
+
+87
+00:04:24,240 --> 00:04:29,102
+要培养稳定性，你需更频繁地交易
+So, to develop consistency, you’ll need to trade more frequently.
+
+88
+00:04:29,102 --> 00:04:36,140
+而要频繁交易，你不能只做一两笔或每月几笔交易
+And to trade more frequently, you cannot be taking One or two or three or monthly-type trades.
+
+92
+00:04:36,180 --> 00:04:39,460
+所以，我们要根据玩家来定目标
+So, you see how we outline the players to the objective.
+
+93
+00:04:39,700 --> 00:04:45,700
+不同玩家的风险管理差异极大
+Then, the risk management of all of these different players varies very differently.
+
+95
+00:04:45,700 --> 00:04:51,120
+影响型玩家或投机型玩家，
+So, an influential player or a speculative player, they can sit with massively wide stops.
+
+96
+00:04:51,120 --> 00:04:53,660
+止损可能设在4%、5%或10%
+We’re talking four, five, 10% stops.
+
+97
+00:04:54,100 --> 00:04:56,060
+他们会对冲大部分策略
+They’ll hedge most of those strategies.
+
+98
+00:04:56,220 --> 00:04:59,341
+他们的风险管理方式与我们日内或波段交易者完全不同甚至与高频交易者也不同
+They have a very, very different risk management approach
+
+99
+00:04:59,341 --> 00:05:02,809
+to what we do as day traders and swing traders,
+
+100
+00:05:02,809 --> 00:05:04,196
+and even high-frequency traders.
+
+101
+00:05:04,440 --> 00:05:07,416
+五类玩家中，高频交易者的风险管理系统最独特他们总是承受很小的损失
+Of all five of the players, high-frequency traders
+
+102
+00:05:07,416 --> 00:05:10,020
+have the most unique risk management system,
+
+103
+00:05:10,020 --> 00:05:13,740
+in that they take very small losers all the time.
+
+104
+00:05:13,740 --> 00:05:18,300
+但赚钱时能赚回更多
+But when they make money, they’re actually making a lot more than what they’re losing.
+
+106
+00:05:18,460 --> 00:05:24,980
+接下来，目标是每天盈利
+Then, our next objective is to print green every single day. Now, that objective differs.
+
+108
+00:05:25,340 --> 00:05:28,473
+如果是波段交易者，周一到周三的回撤可能可以接受只要周四周五能扭亏为盈
+If you’re a swing trader, it might be okay
+
+109
+00:05:28,473 --> 00:05:31,293
+to have a few drawdowns for Monday, Tuesday, Wednesday,
+
+110
+00:05:31,293 --> 00:05:35,366
+so long as Thursday, Friday, when you do go long or make money,
+
+111
+00:05:35,366 --> 00:05:37,559
+it makes back all of those losses.
+
+113
+00:05:37,680 --> 00:05:40,640
+最后一个目标是杠杆
+And then, the last objective is leverage.
+
+114
+00:05:41,220 --> 00:05:44,480
+影响型玩家的杠杆使用远低于我们这些日内和波段交易者
+Influential players don’t tend to use as much leverage as we do as day traders and swing traders.
+
+115
+00:05:44,480 --> 00:05:47,160
+高频交易者的杠杆目标
+High-frequency traders have a very different objective
+
+116
+00:05:47,160 --> 00:05:50,222
+与我们的目标不同
+when it comes to leverage than we do
+
+117
+00:05:52,520 --> 00:06:01,360
+所以，首先得明确：你是哪类玩家？
+So, it’s important to understand, number one, what player are you? Based on that player, what is your objective?
+
+119
+00:06:01,980 --> 00:06:05,350
+明确目标后，
+Once you know what your objective is,
+
+120
+00:06:05,350 --> 00:06:08,720
+就能轻松确定
+then it’s very simple to determine:
+
+121
+00:06:08,720 --> 00:06:14,498
+你需要掌握哪些技能
+What are the skills that you are going to need to learn
+
+123
+00:06:15,960 --> 00:06:22,640
+第一是一致性。这种一致性技能，你若频繁更换策略是无法培养的
+The first is consistency. This consistency skill, you're not going to develop by chopping and changing your strategies,
+
+125
+00:06:22,640 --> 00:06:31,203
+频繁更换策略无法培养稳定性今天交易期货，明天交易权益
+by looking at various different markets, trading futures one day, then trading equities, by following some guy on Twitter
+
+127
+00:06:31,203 --> 00:06:34,358
+然后执行他抛出的所有交易
+and taking whatever trades he spins out.
+
+129
+00:06:34,360 --> 00:06:39,080
+接下来是纪律
+The next is discipline.
+
+130
+00:06:44,740 --> 00:06:47,503
+一致性。第二是纪律
+Consistency. The second is discipline.
+
+131
+00:06:47,503 --> 00:06:53,583
+说到纪律，你如何培养纪律？
+With regard to discipline, how are you going to develop discipline?
+
+132
+00:06:53,583 --> 00:06:55,245
+培养纪律的唯一方法是经历不同的市场情境不同时间段、一天中的不同时间一周中的不同日子。这是唯一学习方式
+The only way to develop discipline
+
+133
+00:06:55,245 --> 00:06:57,739
+is to be in a number of different situations
+
+134
+00:06:57,739 --> 00:07:01,619
+over different periods of time, different times of day, different days of the week.
+
+135
+00:07:01,619 --> 00:07:03,836
+That's the only way you're going to learn
+
+136
+00:07:04,768 --> 00:07:08,480
+如果你每天只做一笔交易能培养出日内或波段交易的纪律吗？可能不行
+If you're sitting in trades and only doing one trade a day,
+
+137
+00:07:08,480 --> 00:07:12,501
+are you going to develop discipline as a day trader or swing trader?
+
+138
+00:07:13,340 --> 00:07:17,240
+你需要培养的下一个技能是耐心
+The next skill you need to develop is patience.
+
+139
+00:07:18,160 --> 00:07:19,806
+如何培养耐心？
+How are you going to develop patience?
+
+140
+00:07:19,806 --> 00:07:21,216
+你不会通过下单后设置止损和止盈就不管了来培养耐心
+You're not going to develop patience
+
+141
+00:07:21,216 --> 00:07:24,977
+by putting in a trade in the market, then putting in a stop and a target,
+
+142
+00:07:25,920 --> 00:07:30,380
+观察市场能让你学到很多信息
+By watching it, you're going to learn and take away a lot of information from the market.
+
+144
+00:07:30,380 --> 00:07:34,765
+你需要培养的最后一个技能是我所谓的传统痛阈真正的决心和韧性。培养这些的唯一方法
+The last skill you're going to need to develop
+
+145
+00:07:34,765 --> 00:07:39,637
+is what I like to call good old-fashioned pain threshold,
+
+146
+00:07:39,637 --> 00:07:41,586
+real determination and grit.
+
+147
+00:07:46,460 --> 00:07:55,718
+唯一度过困难期的方式就是大量交易
+the only way you're going to get through the hard knocks is by ultimately doing a lot of trading.
+
+151
+00:07:55,940 --> 00:08:03,760
+通过这些交易磨练自己
+Going through those trades, really just trying to develop yourself through the hard knocks.
+
+153
+00:08:04,820 --> 00:08:07,361
+所以一旦我们理解了市场玩家然后根据我们的角色和所需技能确定目标为了实现目标，我们进入流程环节
+so once we have developed an understanding of the players in the market,
+
+154
+00:08:07,361 --> 00:08:09,902
+then we determine what our objective is based on the player we are,
+
+155
+00:08:09,902 --> 00:08:12,443
+as well as the skills we need in order to achieve that objective,
+
+156
+00:08:12,443 --> 00:08:13,616
+we then move to the process.
+
+158
+00:08:13,980 --> 00:08:16,003
+流程很简单，我希望你记下来这周好好思考：你作为交易者的优势和劣势是什么？
+Okay, now the process is very simple,
+
+159
+00:08:16,003 --> 00:08:19,472
+and I want you to write this down and think about it
+
+160
+00:08:19,472 --> 00:08:21,206
+over the course of the week.
+
+161
+00:08:21,206 --> 00:08:24,097
+Firstly, what are your strengths and weaknesses as a trader?
+
+162
+00:08:25,158 --> 00:08:28,323
+you should be able to outline, I’m really good at trading volatile markets.
+
+163
+00:08:28,323 --> 00:08:30,358
+I really like it when the markets are fast,
+
+164
+00:08:32,360 --> 00:08:37,680
+有突破、干净的突破，市场激烈波动。我喜欢这种状态
+there are breakouts, there are a lot of clean breaks, the market’s moving aggressively. I really like that.
+
+166
+00:08:37,740 --> 00:08:39,280
+把它写下来，作为你的优势
+And you write it down as a strength.
+
+167
+00:08:39,560 --> 00:08:43,300
+同样，写下你作为交易者的弱点
+You then do the same and write down what your weaknesses are as a trader.
+
+169
+00:08:43,560 --> 00:08:45,852
+好，如果你风险管理很差或无法坚持交易直到目标达成，就记下来
+Okay, if you’re very bad at risk management,
+
+170
+00:08:45,852 --> 00:08:49,163
+or you’re really bad at being disciplined, at sticking through the trade
+
+171
+00:08:49,163 --> 00:08:52,219
+until it’s achieved what it should, then you write that down.
+
+173
+00:08:52,220 --> 00:08:53,920
+好，原因很简单你要基于优势而非弱点来制定策略
+Okay, again, the reason is,
+
+174
+00:08:53,920 --> 00:08:59,360
+you will start to develop a strategy based on your strengths and not your weaknesses, right?
+
+176
+00:08:59,540 --> 00:09:04,715
+如果你不擅长突破交易，就别做突破交易者
+There is zero point in trying to be a breakout trader if you’re bad at breakouts, right?
+
+177
+00:09:04,715 --> 00:09:06,440
+这完全没有意义
+There’s just no point, right?
+
+179
+00:09:06,540 --> 00:09:10,340
+在模式识别部分，我会展示这些如何整合
+Now, when I get to the pattern recognition part, I’m going to show you how this all molds together.
+
+181
+00:09:11,100 --> 00:09:15,780
+或者说，你在整个市场中处于什么位置？
+Then, where do you fit in? In other words, where do you fit in into this whole market?
+
+184
+00:09:16,020 --> 00:09:18,160
+你是剥头皮交易者吗？
+Are you a trader that scalps?
+
+185
+00:09:18,220 --> 00:09:20,900
+还是喜欢持仓几小时？
+Are you a trader that likes to sit for a couple of hours on a trade?
+
+187
+00:09:20,900 --> 00:09:23,120
+你偏好什么类型的交易？
+What kind of trades do you like to do?
+
+188
+00:09:23,440 --> 00:09:25,880
+你在哪种情况下最舒服？
+Where do you feel most comfortable?
+
+189
+00:09:25,940 --> 00:09:28,980
+你喜欢市场主动来找你，被动入场？
+Do you prefer the market coming to you, and you’re getting in passively?
+
+191
+00:09:29,100 --> 00:09:32,580
+还是主动提供流动性？
+Or do you prefer to be aggressive and provide liquidity to the market?
+
+193
+00:09:39,780 --> 00:09:42,961
+希望那次导师课让你真正理解以及为什么要知晓这点如此重要以及谁最终创造了哪种策略
+Hopefully, that mentor session really drove home the understanding
+
+194
+00:09:42,961 --> 00:09:46,495
+behind the different participants and why it’s so important
+
+195
+00:09:46,495 --> 00:09:50,383
+to know who you’re actually interacting with in the market,
+
+196
+00:09:50,383 --> 00:09:52,857
+and who’s ultimately creating which strategy.
+
+198
+00:09:52,860 --> 00:09:56,808
+这显然是我们模板的重要部分也是判断交易策略成功概率高低的重要原则
+It is obviously a very important part of our template,
+
+199
+00:09:56,808 --> 00:10:00,361
+as it is a very important principle for identifying
+
+200
+00:10:00,361 --> 00:10:04,704
+when a trade strategy will have a higher probability of success
+
+201
+00:10:04,704 --> 00:10:06,678
+or lower probability of success.
+
+203
+00:10:07,080 --> 00:10:10,980
+下一个策略，仍是逆势交易策略
+Now, in the next strategy, this is obviously a counter-trading strategy again.
+
+205
+00:10:12,260 --> 00:10:19,480
+是我们上下文与足迹策略的第三个
+In terms of, it’s no longer standalone, this is the third of our context and footprint strategies.
+
+207
+00:10:20,020 --> 00:10:23,720
+它需要非常激进的执行方法
+And obviously, it requires a very aggressive execution methodology.
+
+208
+00:10:27,890 --> 00:10:30,790
+这是适合耐心交易者的策略
+This is a little bit of a patient trader’s strategy.
+
+209
+00:10:31,030 --> 00:10:32,370
+需要极大的耐心
+This does require a lot of patience.
+
+210
+00:10:33,570 --> 00:10:38,190
+这种策略不会总是出现
+It’s one of those strategies that you won't necessarily always see.
+
+212
+00:10:38,370 --> 00:10:40,010
+多数情况下，可能在盘尾才会看到
+A lot of the time, you'll see it maybe at the end of the day.
+
+213
+00:10:40,030 --> 00:10:41,810
+你会想，‘哦，那策略又出现了’
+You'll be like, 'Oh, there was that strategy again.'
+
+214
+00:10:42,470 --> 00:10:47,330
+在这部分，我们要重点讲的原则，都在幻灯片里。
+In terms of that, some of the principles we're going to focus on, you can see within the slide.
+
+217
+00:10:47,330 --> 00:10:49,990
+但这里的核心要点是理解 Delta
+But some of the key focus points here are going to be the understanding of the delta,
+
+219
+00:10:53,410 --> 00:10:56,190
+Delta、累计 Delta
+the delta, the cumulative delta,
+
+220
+00:10:56,270 --> 00:10:58,390
+以及 Delta 周围的色块
+as well as the shading around that delta,
+
+221
+00:10:58,390 --> 00:11:00,790
+还有 Delta 头寸解除
+and the unwind of that delta.
+
+222
+00:11:01,870 --> 00:11:04,963
+我们显然会更深入地讲解Delta 的持仓和口袋持仓，以及流动性
+We're obviously going to move a little bit deeper
+
+223
+00:11:04,963 --> 00:11:07,712
+into positioning and pocket positioning of the delta,
+
+224
+00:11:07,712 --> 00:11:09,086
+as well as liquidity.
+
+225
+00:11:12,311 --> 00:11:14,069
+where we introduce our color lines,
+
+226
+00:11:14,069 --> 00:11:19,050
+so that we make sure that when we have what we call a 'line in the sand,'
+
+227
+00:11:19,050 --> 00:11:22,566
+we can very easily identify it with a nice red color line.
+
+230
+00:11:26,030 --> 00:11:27,150
+好，现在进入实操案例
+All right, let’s move on to the practical example now.
+
+231
+00:11:27,590 --> 00:11:32,730
+希望你会喜欢。这是我通过多次失败学到的策略
+Hopefully, you enjoy this. This is one of the strategies I learned through a number of failures.
+
+233
+00:11:33,190 --> 00:11:37,230
+希望你能从中学到策略，并加以运用
+So, hopefully, you can learn from the strategy and adopt accordingly.
+
+234
+00:11:42,590 --> 00:11:48,430
+好，第14单元，《足迹 Delta 头寸解除策略》
+All right, Unit 14, 'Footprint Delta Position Unwind Strategy.'
+
+236
+00:11:48,430 --> 00:11:54,570
+开始前，我们先聊聊‘规则’这个概念
+Now, before we get started, let’s talk about this idea of rules.
+
+238
+00:11:56,170 --> 00:12:01,970
+我真心认为，规则是用来规范和提供结构的
+My honest belief is that rules are there to govern and provide structure.
+
+240
+00:12:03,950 --> 00:12:06,670
+但话虽如此
+Okay. However, that being said,
+
+241
+00:12:06,870 --> 00:12:15,150
+伟大的发明、思想或突破，都少不了打破规则
+No great inventions, no great thought, no great breakthroughs happened without a little bit of bending of the rules.
+
+243
+00:12:17,310 --> 00:12:25,390
+但大多数交易者不理解的是，他们往往完全忽视规则
+Now, that being said, what most traders fail to understand is they tend to ignore the rules altogether.
+
+246
+00:12:25,790 --> 00:12:32,790
+就像任何游戏——交易就是一场博弈
+Just like any game—which trading is—just like any game, there is a set of governing rules. For example,
+
+249
+00:12:34,410 --> 00:12:41,070
+比如资金充足。资金充足有非常充分的理由
+being capitalized. There’s a very, very good reason why you have got to be capitalized.
+
+251
+00:12:42,190 --> 00:12:43,882
+这个理由源于我之前单元提到的这份工作全靠尝试和错误
+That reason stems from the fact
+
+252
+00:12:43,882 --> 00:12:47,266
+as I’ve mentioned to you over the last couple of units,
+
+253
+00:12:49,523 --> 00:12:52,343
+猜猜看？尝试和错误等同于失败
+Now, guess what? Trial and error is synonymous with failure.
+
+254
+00:12:52,343 --> 00:12:55,728
+而失败在交易中往往意味着亏损
+And all things being equal, failure should imply a loss in trading.
+
+257
+00:12:59,510 --> 00:13:02,208
+所以，如果资金不足，第一你无法遵循规则和尝试错误的过程最终你会失败
+So, if you’re insufficiently capitalized, one,
+
+258
+00:13:02,208 --> 00:13:07,990
+you’re not going to follow the rule and the process of trial and error,
+
+259
+00:13:07,990 --> 00:13:11,073
+which means, ultimately, you’re going to fail.
+
+260
+00:13:11,074 --> 00:13:14,929
+所以，这是规则之一：资金充足
+So, that’s one of the rules: being well capitalized.
+
+261
+00:13:15,230 --> 00:13:17,296
+交易者们，出于某种奇怪原因我认为这是交易本身投机且高收益的特性导致的金融市场里仍有人相信能快速致富
+Now, traders, for some odd reason,
+
+262
+00:13:17,296 --> 00:13:21,084
+and again, I think it’s because of the real speculative,
+
+263
+00:13:21,084 --> 00:13:24,183
+lucrative nature of trading, there’s still this belief
+
+264
+00:13:24,183 --> 00:13:27,626
+in the financial markets that you can get rich quickly.
+
+266
+00:13:27,630 --> 00:13:33,370
+如果你不遵守这些规则
+Unfortunately, you *could*. I firmly believe the game was very different 20 years ago.
+
+268
+00:13:33,850 --> 00:13:36,437
+但20年前的交易环境确实不同比如房地产市场，20年前买房能致富
+But the game was very different 20 years ago
+
+269
+00:13:36,437 --> 00:13:38,701
+in, say, for instance, the property market.
+
+270
+00:13:38,701 --> 00:13:41,288
+You could get rich buying property 20 years ago.
+
+271
+00:13:41,410 --> 00:13:47,310
+同样，今年买比特币也可能发财
+Equally, you could have got rich buying Bitcoin this year.
+
+273
+00:13:48,530 --> 00:13:50,430
+这正是你需要理解的关键
+And that’s the important thing to understand.
+
+274
+00:13:50,570 --> 00:13:59,090
+你必须愿意遵守所参与的交易博弈的规则
+You have to be willing to adopt the rules that govern the game you’re playing.
+
+276
+00:13:59,290 --> 00:14:00,950
+如果不采用这些规则，最终你会被市场淘汰
+If you don’t adopt those rules,
+
+277
+00:14:00,950 --> 00:14:03,321
+you’re ultimately headed for some sort of a run
+
+278
+00:14:03,321 --> 00:14:04,269
+out of the markets.
+
+279
+00:14:07,806 --> 00:14:10,812
+which is what the rules ultimately create,
+
+280
+00:14:10,812 --> 00:14:15,107
+only then do you begin the process of bending them.
+
+281
+00:14:15,190 --> 00:14:22,610
+为什么？因为通过打破规则，你会创造出动态优势，别人无法复制的优势
+Why? Because through bending them, you’re going to create edges. Dynamic edges. Edges that no one else has created.
+
+283
+00:14:22,610 --> 00:14:26,490
+因为猜怎么着？很少有人敢打破规则
+Because guess what? Not many people are willing to bend those rules.
+
+284
+00:14:28,430 --> 00:14:31,414
+接下来，重点关注
+Now, the next thing to pay attention to
+
+285
+00:14:31,414 --> 00:14:35,517
+足迹图中累计 Delta 头寸在Y轴的概念
+is this concept of a footprint cumulative delta position on Y.
+
+286
+00:14:37,430 --> 00:14:38,890
+我来为你们演示
+I’m going to illustrate it for you.
+
+287
+00:14:39,510 --> 00:14:40,530
+你会立刻理解
+And you’ll get it straight away.
+
+288
+00:14:40,550 --> 00:14:45,790
+你会恍然大悟：啊，我之前见过
+You’ll be like, ah, I’ve seen that before.
+
+289
+00:14:45,790 --> 00:14:47,730
+其实很简单：市场上涨或下跌
+So, all it is: a market moves up or a market moves down.
+
+290
+00:14:48,750 --> 00:14:52,670
+上涨会形成偏见
+The up move creates a bias.
+
+291
+00:14:52,870 --> 00:14:58,730
+下跌也会形成偏见。这种偏见
+Or the down move creates a bias. That bias,
+
+292
+00:14:58,990 --> 00:15:11,450
+偏见来自两个因素：技术面和基本面
+the bias can come from two factors: one can be technical, and one can be fundamental.
+
+294
+00:15:11,450 --> 00:15:13,410
+我会讲解这两种因素如何形成偏见
+I’m going to go through some of the biases that can be created with both of these.
+
+295
+00:15:13,590 --> 00:15:17,566
+当市场存在偏见时最关键一点：偏见等于累计 Delta
+Now, when there are biases in the market,
+
+296
+00:15:17,566 --> 00:15:22,536
+the most important thing to note is: a bias equals
+
+297
+00:15:22,536 --> 00:15:24,027
+a cumulative delta.
+
+298
+00:15:26,685 --> 00:15:29,180
+or one of the few trade strategies,
+
+299
+00:15:32,034 --> 00:15:35,632
+本质上，我们依赖累计差值市场中存在自然偏向这种偏向源自技术面或基本面因素
+So, in essence, we lean on the cumulative delta
+
+300
+00:15:35,632 --> 00:15:37,231
+to recognize the fact
+
+301
+00:15:37,231 --> 00:15:40,429
+There is a natural bias in the market
+
+302
+00:15:40,429 --> 00:15:43,228
+As a result of either technical implications
+
+303
+00:15:44,790 --> 00:15:49,710
+接着，市场开始反转
+Now, what happens is the market begins the process of turning back around.
+
+304
+00:15:50,470 --> 00:15:55,090
+我们不关心它如何反转、为何反转等
+We are not too concerned about how it turns around, why it turns around, et cetera.
+
+305
+00:15:55,590 --> 00:16:00,290
+只确认市场在反转。随后到达某个点位
+We just acknowledge the fact that the market turns around. It then reaches a point,
+
+307
+00:16:00,350 --> 00:16:02,910
+我们会为这个点位画一条红线
+which we are going to give a red line to.
+
+308
+00:16:02,970 --> 00:16:05,955
+红线，如第3单元颜色线部分所述是关键观察点或关键价格
+A red line, as we mentioned in the color line section
+
+309
+00:16:05,955 --> 00:16:08,668
+of Unit 3, is a key observation or a key price.
+
+310
+00:16:08,930 --> 00:16:09,930
+我们称之为‘底线’
+We are going to call this a line in the sand.
+
+312
+00:16:09,930 --> 00:16:13,335
+换句话说，这是一个价格市场不应在累计差值存在时突破
+In other words, this is a price
+
+313
+00:16:13,335 --> 00:16:18,199
+at which the market should not really be getting beyond
+
+314
+00:16:26,470 --> 00:16:29,870
+我们希望你在这里看到偏向解除
+where we like you to see an unwind of the bias.
+
+316
+00:16:29,970 --> 00:16:37,710
+这笔交易的形成，源于对这些行情的反向操作
+Now, how this trade actually came about was through failing, through fading these moves.
+
+318
+00:16:38,210 --> 00:16:39,908
+我们来到这条底线
+We get to this line in the sand.
+
+319
+00:16:39,908 --> 00:16:43,728
+通常会看到大量双向交易围绕这条底线
+What typically happens is you will get a lot of two-way trade around that line in the sand.
+
+321
+00:16:43,790 --> 00:16:47,770
+最后防线。一旦突破，就直线崩盘
+A last bit of defense. Once we take it out, you get the straight-line washout.
+
+323
+00:16:48,890 --> 00:16:54,810
+我之前总是在这里买，那里买，那里卖
+Now, I used to be the one buying it there, buying it there, buying it there, selling it there.
+
+325
+00:16:55,990 --> 00:16:58,090
+你能猜到结果如何
+And you can ultimately guess what the result of that was.
+
+327
+00:16:58,950 --> 00:17:05,070
+后来，我意识到市场为何会出现单边行情
+So, through time, I began to recognize a reason why the markets create these one-directional moves.
+
+328
+00:17:05,490 --> 00:17:09,970
+因此，我设置了红线
+As a result, I put the red line in place.
+
+329
+00:17:09,970 --> 00:17:12,470
+红线是一条规则
+The red line is a rule.
+
+330
+00:17:14,410 --> 00:17:20,770
+规则说：此处无交易机会
+That rule says there is no trade opportunity.
+
+331
+00:17:24,130 --> 00:17:27,250
+这就是全部。这是基于规则的方法
+That's all it is. It's a rules-based approach.
+
+332
+00:17:27,290 --> 00:17:30,730
+我创建规则，为自己提供结构
+I've created a rule that gives me structure.
+
+333
+00:17:32,350 --> 00:17:34,570
+猜怎么着？我的一致性、盈利能力
+And guess what? My consistency, my profitability
+
+334
+00:17:34,570 --> 00:17:38,630
+在这个交易信号上大幅提升。我不再亏损
+on this trade setup went through the roof. I stopped losing money.
+
+335
+00:17:38,730 --> 00:17:43,490
+我再也不会在这样的行情中被止损出局
+I stopped blowing out on silly moves like that. The next step then was,
+
+336
+00:17:43,790 --> 00:17:45,890
+接下来，我尝试稍微调整规则
+I went to bend the rule a little bit.
+
+337
+00:17:45,950 --> 00:17:46,870
+我心想，等等，先别急
+I said, okay, well, hang on a second.
+
+338
+00:17:49,110 --> 00:17:52,590
+可能没交易机会，我就不进场
+I might not be taking a trade because there's no trade opportunity.
+
+340
+00:17:53,230 --> 00:17:55,530
+但市场还在直线下跌清洗
+But the market's still doing that straight-line washdown.
+
+341
+00:17:55,930 --> 00:17:57,170
+于是，我破了例
+So, I bent the rule.
+
+342
+00:17:57,270 --> 00:18:02,950
+心想，这波下跌肯定有做空机会
+I said, well, surely there's a tradable opportunity to be a seller for the washdown.
+
+344
+00:18:04,390 --> 00:18:08,851
+所以，我研发了一个方法在别人不愿设规则时获利
+So, I developed an approach, which I'm going to show you,
+
+345
+00:18:08,851 --> 00:18:14,528
+to ultimately profit whilst others are not willing to have a rule in place.
+
+347
+00:18:15,170 --> 00:18:16,910
+这就是规则的意义
+And that's the purpose of rules, guys.
+
+348
+00:18:17,170 --> 00:18:18,955
+规则是为了约束我们提供结构，保护我们让我们能反复试错
+The rules are there to govern us,
+
+349
+00:18:18,955 --> 00:18:20,740
+there to provide structure and protect us
+
+350
+00:18:20,740 --> 00:18:23,290
+so that we can do lots of trial and error.
+
+352
+00:18:23,370 --> 00:18:26,950
+未来还能多失败，但能持续学习
+So, we can fail a lot more in the future, but ultimately keep learning the lessons.
+
+354
+00:18:27,910 --> 00:18:29,330
+现在回到这个例子
+Let's come back to this example now.
+
+355
+00:18:29,910 --> 00:18:31,890
+基本前提：市场有偏向性
+The basic premise: we have a bias in the market.
+
+356
+00:18:33,190 --> 00:18:35,010
+我们要标记这个偏向性
+We note that bias, that line in the sand.
+
+357
+00:18:35,070 --> 00:18:39,010
+通过多种因素来识别这条线
+Now, note, we will know that line in the sand through a number of factors.
+
+359
+00:18:39,330 --> 00:18:41,610
+包括以下几点
+And they can include, let's just write a few of them down.
+
+361
+00:18:42,630 --> 00:18:45,070
+先退一步
+In fact, let's go one step back.
+
+362
+00:18:45,990 --> 00:18:51,510
+先看技术面和基本面的偏向性原因
+Let's go through some of the technical reasons, as well as fundamental reasons for a bias.
+
+364
+00:18:51,510 --> 00:18:56,030
+首先是潜在突破
+Now, the first technical reason includes a potential breakout.
+
+366
+00:18:56,330 --> 00:18:57,930
+关键价位被突破
+We have a key breakout of a level.
+
+367
+00:18:58,730 --> 00:19:00,150
+这自然会引入市场偏向
+Naturally, that introduces a bias in the market.
+
+368
+00:19:00,230 --> 00:19:03,210
+为什么？因为所有参与者意见一致
+Why? Because all participants are in agreement.
+
+369
+00:19:03,990 --> 00:19:07,070
+自然偏向，且Delta很强
+There’s a natural bias, as well as a very strong delta.
+
+371
+00:19:07,630 --> 00:19:09,750
+其次是趋势日
+The next is a trending day.
+
+372
+00:19:09,850 --> 00:19:11,630
+趋势日里常见这种情况
+You see this so often on trending days.
+
+373
+00:19:12,290 --> 00:19:14,750
+明确的趋势日，我们讨论过趋势
+We have a clear trending day. We’ve discussed trends.
+
+374
+00:19:15,090 --> 00:19:20,770
+若识别出趋势，市场中会有很多低成交量区域、很多失衡
+We said that, ultimately, if we identify the trend, there are many low-volume areas, many imbalances in the market.
+
+377
+00:19:22,310 --> 00:19:25,790
+有时会出现直线反转
+And sometimes, we get a straight-line reversal.
+
+378
+00:19:25,990 --> 00:19:28,870
+为什么？因为反转时没人愿意抛售
+Why? Because when it turns, no one is willing to sell it.
+
+380
+00:19:28,890 --> 00:19:30,770
+每个人都愿意在回落时买入。
+Everyone is willing to buy it on the way back down.
+
+382
+00:19:31,650 --> 00:19:37,670
+技术性偏见的下一个原因：潜在低量节点。
+The next reason for technical biases includes potential low-volume areas.
+
+384
+00:19:40,490 --> 00:19:49,230
+如前所述，低量节点或失衡表明市场中的主动性、强势或偏见。
+As we’ve discussed, low-volume areas or imbalances indicate a form of initiative or strength or bias in the market.
+
+388
+00:19:49,230 --> 00:19:51,950
+因此，再次强调，当这些失衡解决后，往往会出现延续走势。
+So, again, when we resolve those, we tend to get follow-through.
+
+390
+00:19:52,810 --> 00:19:55,130
+最后一点是主动性驱动。
+And lastly, we have initiative drives.
+
+391
+00:19:55,870 --> 00:19:58,470
+我们在之前的单元中讲过主动性驱动。
+We spoke about initiative drives in one of the previous units.
+
+393
+00:19:59,230 --> 00:20:02,150
+现金驱动、开盘驱动、回撤驱动和延伸驱动。
+Cash drive, open, pullback, and extension.
+
+394
+00:20:06,620 --> 00:20:13,749
+现在，市场出现偏见的基本原因：可能是某些新闻或市场驱动的基本面，可能与地缘政治相关，或石油市场、OPEC等，或央行关键决策、利率政策转向，或鹰派/鸽派立场转变，以及经济数据，至少是关键经济数据。
+Now, some of the fundamental reasons why we would get a bias in the market:
+
+395
+00:20:13,749 --> 00:20:17,551
+There could be some news, some market-moving fundamentals,
+
+396
+00:20:17,551 --> 00:20:22,779
+maybe something related to geopolitics, maybe the oil market, OPEC, etc.,
+
+397
+00:20:22,779 --> 00:20:28,482
+or we have some key central bank decisions, interest rate policy shifts
+
+398
+00:20:28,482 --> 00:20:35,136
+or hawkish-dovish shifts, as well as economic data, or at least key economic data.
+
+404
+00:20:35,600 --> 00:20:40,800
+这三大基本面最终可能在市场中形成某种偏见。
+These are the three fundamentals that can ultimately create some form of bias in the market.
+
+406
+00:20:40,880 --> 00:20:44,840
+现在，我们需要确定的最重要的事——这些是关键要素——
+Now, the most important thing we need to determine—these are the key elements—
+
+408
+00:20:44,840 --> 00:20:47,540
+你最终必须学会，
+is you have to learn, ultimately,
+
+409
+00:20:48,760 --> 00:20:49,400
+什么是 Delta。
+what *delta* is.
+
+410
+00:20:51,880 --> 00:20:56,660
+整个交易策略都基于累计 Delta，即 Delta 的累计值。
+The entire trade strategy is based on the *cumulative delta*, or the *cumulative* of delta.
+
+413
+00:20:56,760 --> 00:21:01,420
+你需要知道什么是高于平均水平的累计 Delta。
+You need to learn what is above average. So, what is above-average cumulative delta?
+
+414
+00:21:02,180 --> 00:21:04,100
+这在不同市场中会有所不同。
+This is going to vary from market to market.
+
+415
+00:21:04,380 --> 00:21:07,400
+这也会随时间变化。所以我喜欢这样做：
+It’s going to vary from time to time. So, what I like to do,
+
+416
+00:21:07,680 --> 00:21:10,628
+我在每天结束时都有一个电子表格，我只需更新表格，保持一个总计或累计，记录每天结束时的 Delta。每天都要回顾。
+I’ve got a spreadsheet at the end of every day,
+
+417
+00:21:10,628 --> 00:21:13,844
+I simply update the spreadsheet, keep a total, or a running total,
+
+418
+00:21:13,844 --> 00:21:16,256
+of the delta at the end of every day.
+
+419
+00:21:16,256 --> 00:21:17,596
+You review it every day.
+
+421
+00:21:17,760 --> 00:21:20,874
+一周结束时，每月一次，你会迅速发现 Delta 的重大变化。
+At the end of the week, once a month,
+
+422
+00:21:20,874 --> 00:21:25,718
+you're quickly going to learn when there's a really big shift in the delta.
+
+424
+00:21:25,720 --> 00:21:28,000
+另一个需要理解的重要事项是市场环境。
+One of the important things to also understand is market context.
+
+425
+00:21:29,300 --> 00:21:35,180
+我的意思是，传统上，这些偏见在失衡市场中表现得更明显。
+What I mean by that is simply, traditionally, these biases, you will see a lot better in imbalanced markets.
+
+428
+00:21:35,180 --> 00:21:44,760
+为什么？因为失衡市场更可能带来更多技术性偏见。
+Why? Because imbalanced markets are likely to bring in more technical biases.
+
+429
+00:21:45,120 --> 00:21:47,507
+如果我们在当天的极端位置交易，突破后延伸，交易价格达到多日未交易的水平，
+If we're trading at the extreme of a day,
+
+430
+00:21:47,507 --> 00:21:49,894
+we break out, we extend, trade up to prices
+
+431
+00:21:52,281 --> 00:21:55,198
+这往往会引入某种技术性偏见
+it will tend to bring in some form of technical bias.
+
+433
+00:21:55,200 --> 00:22:04,100
+就波动率而言，我们对第一阶段不太感兴趣
+In terms of, obviously, the volatility around this trade, we're not too interested in the first section.
+
+435
+00:22:04,100 --> 00:22:08,060
+我们也不太关心是什么推动价格上涨
+We're not interested too much in what's creating the drive up.
+
+436
+00:22:08,060 --> 00:22:13,100
+我们只关心市场被强势推高这一事实
+We simply are interested in the fact that the market's driven up quite aggressively.
+
+438
+00:22:13,100 --> 00:22:23,200
+通过单印区或单向交易，它向我们展示了主动性
+It's shown us the initiative through the likes of maybe some single prints, maybe some really one-directional trade.
+
+441
+00:22:23,200 --> 00:22:26,940
+但最终，市场会回到关键分界线
+But ultimately, we then get the market returning to the key line in the sand.
+
+442
+00:22:27,020 --> 00:22:28,500
+我们之前提到过这些分界线
+We spoke about those lines in the sand.
+
+443
+00:22:30,060 --> 00:22:32,360
+其实我们还没提过这些分界线
+In fact, we haven't spoken about those lines in the sand.
+
+445
+00:22:32,460 --> 00:22:38,120
+现在来说说这些分界线
+So, let's mention them now. Some lines in the sand that you can expect to see
+
+447
+00:22:38,120 --> 00:22:39,700
+或你将放置这条红线的位置
+or where you're going to place this red line.
+
+448
+00:22:40,000 --> 00:22:42,280
+首先是前一交易日的高点和低点
+First and foremost, the previous day's high and low.
+
+450
+00:22:42,280 --> 00:22:48,460
+假设这个交易策略突破了前一交易日的高低点并延伸
+Let’s say, obviously, this trade strategy broke out To the previous day's high and low. It extended.
+
+453
+00:22:50,500 --> 00:22:57,920
+就成了分界线，为什么？因为所有做多者会持多头直到重新进入该区间
+becomes a line in the sand. Why? Because, ultimately, everyone long will be long until we re-enter that range.
+
+455
+00:22:58,680 --> 00:23:01,113
+下一个重要分界线因素是单印区，这是成交量分布图的术语
+The next big important factor or potential
+
+456
+00:23:01,113 --> 00:23:05,285
+for a line in the sand is a set of single prints.
+
+457
+00:23:05,285 --> 00:23:07,718
+This is very much a profiling term.
+
+458
+00:23:07,800 --> 00:23:09,682
+如果你更擅长成交量分布图分析或想了解更多Axia的市场分布图课程，可以联系我们
+If you are more of a profile guru
+
+459
+00:23:09,682 --> 00:23:12,035
+or if you want more information about Axia’s course
+
+460
+00:23:12,035 --> 00:23:13,917
+on the market profile, you can email us.
+
+462
+00:23:18,860 --> 00:23:21,905
+假设这是一组单印区然后是一个完整的分布区间这组单印区就是分界线，突破后往往会回落
+If I illustrate it, if this is our set of singles,
+
+463
+00:23:21,905 --> 00:23:23,843
+and then we have a whole distribution,
+
+464
+00:23:23,843 --> 00:23:26,888
+that set of singles does represent a line in the sand.
+
+465
+00:23:26,888 --> 00:23:29,656
+If we take that out, we tend to stop down.
+
+468
+00:23:30,720 --> 00:23:32,120
+下一个是
+The next one is
+
+469
+00:23:34,420 --> 00:23:41,440
+主动推动中的吸收
+absorption in the initiative drive.
+
+470
+00:23:43,360 --> 00:23:45,820
+这更多是口袋定位
+This is more pocket positioning.
+
+471
+00:23:46,140 --> 00:23:52,800
+如果市场趋势中出现吸收，口袋定位、趋势、口袋定位
+If we see a market trending and absorbing, pocket positioning, trending, pocket positioning.
+
+473
+00:23:53,480 --> 00:23:57,420
+口袋定位发生的位置，就是最终的定位
+Wherever that pocket positioning occurs, that is, ultimately, the positioning.
+
+475
+00:23:57,560 --> 00:24:03,180
+这就是我们所说的累积和派发，交易在此发生
+That is what we call accumulation and distribution. This is where the positioning took place.
+
+477
+00:24:03,660 --> 00:24:06,301
+这初期会作为支撑但一旦跌破，就有大量头寸需要解除
+While that will initially act as support,
+
+478
+00:24:06,301 --> 00:24:08,565
+once it gets back below it,
+
+479
+00:24:08,565 --> 00:24:12,338
+there is a lot of positions that need to unwind.
+
+480
+00:24:13,600 --> 00:24:17,800
+倒数第二个分界线，是行情启动的价格
+The last one, obviously, or the second-to-last one, will be the starting price of a move.
+
+482
+00:24:18,300 --> 00:24:24,000
+这通常出现在经济数据或新闻等事件中
+And this tends to occur quite a lot with economic data or maybe news, etc.
+
+484
+00:24:24,260 --> 00:24:27,376
+那当价格回到起始价格时假设市场再次激进上涨
+So when we return back to the starting price...
+
+485
+00:24:27,376 --> 00:24:30,492
+Let’s say, again, if I were to illustrate,
+
+486
+00:24:30,492 --> 00:24:31,877
+market moves aggressively higher.
+
+487
+00:24:32,140 --> 00:24:33,420
+这就是我们的起始价格
+That’s our starting price.
+
+488
+00:24:33,840 --> 00:24:35,620
+中间经历各种疯狂波动
+We do all sorts of crazy things in between.
+
+489
+00:24:35,740 --> 00:24:41,140
+一旦回到这个起始价格，它就成了我们的红线
+Once we return to that starting price, that becomes our red line, the line in the sand.
+
+491
+00:24:41,720 --> 00:24:47,980
+最后一个是成交量分布图中的术语：日内50%位置
+And then our last is, again, a little bit of a profiling term, is the 50% of the day.
+
+493
+00:24:48,080 --> 00:24:52,480
+这并非完整清单
+Now, again, like I said in the previous unit, this is not an exhaustive list.
+
+495
+00:24:52,480 --> 00:24:57,360
+不要把它当作识别关键位的唯一方法
+And you should not see this as the only ways of identifying a line in the sand.
+
+497
+00:24:57,920 --> 00:24:59,700
+如何学会这个交易策略？
+How are you going to learn this trade strategy?
+
+498
+00:25:00,580 --> 00:25:02,240
+你得先从第一步开始
+You’ve got to start off with step one.
+
+499
+00:25:02,460 --> 00:25:04,520
+我们再逐步讲解一遍
+So let’s go through this again, step by step.
+
+500
+00:25:04,840 --> 00:25:07,160
+首先确定趋势偏向
+We identify the bias.
+
+501
+00:25:07,920 --> 00:25:12,040
+通过激进的累计买卖差来判断
+We identify the bias with the aggressive cumulative delta.
+
+502
+00:25:12,780 --> 00:25:14,960
+这就是我们的判断依据
+That’s how we identify it.
+
+503
+00:25:15,320 --> 00:25:21,240
+还要通过某种强度来确认这个偏向
+Note, we also want to identify it with some form of strength showing us that bias.
+
+505
+00:25:21,240 --> 00:25:23,480
+比如失衡区
+So that can be imbalances.
+
+506
+00:25:24,660 --> 00:25:26,320
+可能是单印区
+It could be maybe single prints.
+
+507
+00:25:26,920 --> 00:25:28,600
+可能是低成交量区域
+It could be low-volume areas.
+
+508
+00:25:29,980 --> 00:25:32,240
+也可能是浅分布区
+It could be shallow distribution.
+
+509
+00:25:32,420 --> 00:25:34,140
+我们需要看到市场中的某种趋势
+So some form of trend we want to see in the market.
+
+510
+00:25:34,140 --> 00:25:35,980
+来发出并确认这个偏向信号
+That signals and identifies that bias.
+
+511
+00:25:36,560 --> 00:25:41,180
+一旦价格回到我们设定的红线有多种方式可以识别
+Once the market returns to that red line we’ve created,
+
+512
+00:25:41,180 --> 00:25:43,280
+which we’ve now identified,
+
+513
+00:25:43,280 --> 00:25:47,480
+there are a number of ways we can identify it.
+
+514
+00:25:47,980 --> 00:25:50,900
+回到这条线后，可能就进入交易机会
+Once we return to that line, we are then potentially in play.
+
+516
+00:25:50,900 --> 00:25:53,403
+我要放大看看，给你展示策略如何运作
+I’m going to zoom in here, and I’m going to show you how the strategy works.
+
+517
+00:25:53,403 --> 00:25:53,959
+非常简单
+It’s very simple.
+
+518
+00:25:54,660 --> 00:26:00,620
+围绕这条红线会发生什么，这是个精妙的策略
+What will tend to happen around this line in the sand, and this is a wonderfully intricate strategy.
+
+520
+00:26:00,740 --> 00:26:04,220
+给这个交易策略的建议是：永远了解市场持仓，它显示了市场的短期偏向
+The tip I’m going to give you for this trade strategy is:
+
+521
+00:26:04,220 --> 00:26:05,558
+always know the market positioning,
+
+522
+00:26:05,558 --> 00:26:07,699
+as it shows the market’s short-term bias.
+
+523
+00:26:07,920 --> 00:26:11,823
+换句话说，如果你知道某一时点的累计买卖差
+In other words, if you know what this cumulative delta is at any point—
+
+524
+00:26:11,823 --> 00:26:17,399
+你都掌握了一个非常有价值的信息
+whether over the day, the week, or a couple of weeks— you’ve got a very powerful piece of information.
+
+527
+00:26:17,660 --> 00:26:22,310
+多头和空头中谁更积极而非仅凭价格最终方向
+Because you have a good understanding of who’s more aggressive between buyers and sellers,
+
+528
+00:26:22,310 --> 00:26:24,480
+versus which way price is ultimately going.
+
+530
+00:26:26,580 --> 00:26:31,552
+所以最终，当我们回到那个价位时你会看到我们最后的防守线
+So ultimately, when we return to that price point, what you’ll see is our last stand of defense.
+
+532
+00:26:31,552 --> 00:26:35,146
+这笔交易奏效的原因是市场会回到这条红线，并暂停
+The reason this trade works well and why we get a good opportunity to enter
+
+533
+00:26:35,146 --> 00:26:38,500
+is that the market will come back to this red line in the sand,
+
+534
+00:26:39,460 --> 00:26:43,219
+这条线附近总会有些混乱
+You always tend to get a little bit of a mess around this line in the sand.
+
+536
+00:26:43,340 --> 00:26:45,500
+第一次接近时总会有波动
+It always messes around the first time.
+
+537
+00:26:45,560 --> 00:26:48,493
+很多人犯的错是在这里做多
+The mistake a lot of people make is they’re ultimately buyers in this area.
+
+538
+00:26:48,493 --> 00:26:50,253
+因为市场有偏见
+Why? Because there’s a bias in the market.
+
+539
+00:26:50,253 --> 00:26:52,599
+回调后给了他们做多的机会
+It’s pulled back and given them a chance to be long.
+
+540
+00:26:52,660 --> 00:26:59,320
+但当他们买入时
+So people step in and they buy. But what happens is, as they're buying,
+
+541
+00:26:59,660 --> 00:27:03,080
+市场难以维持买盘
+the market is struggling to maintain a bid.
+
+542
+00:27:03,820 --> 00:27:12,520
+实际上，有人在对面被动吸收买单
+And ultimately, what’s happening is someone sitting on the other side and passively absorbing the buy.
+
+544
+00:27:12,860 --> 00:27:15,560
+一旦突破下方支点，就是执行的时机
+Once we then take out that lower pivot, that’s the point at which we want to execute.
+
+545
+00:27:15,680 --> 00:27:21,800
+我们希望在突破前见到横盘分布
+So we want to see some form of sideways distribution just before the break.
+
+547
+00:27:21,960 --> 00:27:27,551
+突破后，或见突破前空头吸收等 Delta 头寸解除
+Once we have the break, or we see a little bit of absorption just before the break
+
+548
+00:27:27,551 --> 00:27:32,155
+from the sellers in this example, we then execute with a relatively tight stop,
+
+549
+00:27:32,155 --> 00:27:34,457
+looking for the unwind of the delta.
+
+551
+00:27:34,460 --> 00:27:36,100
+分布区间顶部上方
+Now, the stop is very, very simple: above the top of the distribution.
+
+552
+00:27:36,640 --> 00:27:37,720
+止盈位置也很简单
+The target is very, very simple.
+
+553
+00:27:38,100 --> 00:27:41,308
+我们希望 Delta 回归中性或按经验法则，可能延伸当日低点
+We want to see that delta return back to neutral,
+
+554
+00:27:41,308 --> 00:27:45,478
+or, as a rule of thumb, potentially extend the low of the day.
+
+555
+00:27:45,900 --> 00:27:49,520
+一旦完成，就会进入衰竭期并休整
+Once it does that, it enters a period of exhaustion and will likely take a break.
+
+557
+00:27:49,720 --> 00:27:52,120
+所以我们等 Delta 解除或低点延伸
+So we either look for an unwind of the delta or an extension of the low.
+
+558
+00:27:52,120 --> 00:27:58,120
+好的，这就是交易策略的基本逻辑
+Okay, and that’s pretty much how the trade strategy works.
+
+559
+00:27:58,180 --> 00:28:06,200
+这就是 Delta 头寸解除策略的核心
+That’s the basic premise of the trade strategy of a position—a delta position unwind.
+
+561
+00:28:06,200 --> 00:28:07,851
+现在看几张图表，你就能更好理解足迹图上的表现
+Now, let’s look at some of the charts,
+
+562
+00:28:11,338 --> 00:28:17,680
+现在，我们再来看5分钟基于时间间隔
+Now, again, what we can see, this is the pound against the dollar, 12th of December, five-minute rotations.
+
+565
+00:28:19,420 --> 00:28:22,080
+你可以选旋转型、时间型或失衡型
+Again, you can use either rotational or time-based or even imbalanced.
+
+566
+00:28:22,080 --> 00:28:25,800
+这三种上都能看得一样清楚
+You will see it equally well on all three.
+
+567
+00:28:26,000 --> 00:28:26,860
+记住，我们最关注的是 Delta
+Remember, the most important thing we’re paying attention to is the delta.
+
+568
+00:28:26,860 --> 00:28:32,660
+好的，你需了解你的市场
+Okay, now, like I said, you need to know your market.
+
+569
+00:28:32,680 --> 00:28:33,960
+需要知道什么是大 Delta
+You need to know what a big delta is.
+
+570
+00:28:34,880 --> 00:28:38,115
+现在，我要说的会有点矛盾这其实不一定是大 Delta
+Now, this is going to go contrary to what I’m going to say,
+
+571
+00:28:38,115 --> 00:28:40,194
+but this isn’t really necessarily a large delta.
+
+572
+00:28:40,195 --> 00:28:41,119
+对英镑来说不是
+Not for the pound.
+
+573
+00:28:41,120 --> 00:28:44,560
+英镑的大 Delta 大概在 1500 到 2000 手合约
+I’d say a large delta for the pound, you’re looking somewhere around one and a half to 2,000 contracts.
+
+575
+00:28:45,680 --> 00:28:50,720
+但这是 Delta 头寸解除的典型例子
+But it is a relatively good example of a delta unwind.
+
+576
+00:28:50,820 --> 00:28:51,980
+我来带大家过一遍
+So I’m just going to go through it with you.
+
+577
+00:28:52,120 --> 00:28:56,786
+但要记住还有累计买卖差更高的例子
+But bear in mind, you do get better examples with much higher cumulative deltas.
+
+579
+00:28:59,120 --> 00:29:03,940
+比如可能有 +400 Delta
+have to go from a high delta. So you could have maybe positive 400 delta,
+
+581
+00:29:04,220 --> 00:29:05,900
+解除时可能跌到 -3000 Delta
+and when it unwinds, it goes to maybe minus 3,000 delta.
+
+582
+00:29:05,900 --> 00:29:10,660
+好的，最终，你想看到的是
+Okay. So ultimately, what you do want to see...
+
+583
+00:29:10,660 --> 00:29:12,340
+记住，Delta 可能有点误导
+Remember, the delta can be slightly misleading.
+
+584
+00:29:12,460 --> 00:29:14,611
+比如，当价格上涨时可能卖盘比买盘还多即使价格在上涨
+In other words, as we’re coming up here,
+
+585
+00:29:14,611 --> 00:29:16,523
+we could be seeing more selling than buying,
+
+586
+00:29:16,523 --> 00:29:17,718
+even though prices are rising.
+
+587
+00:29:18,080 --> 00:29:19,740
+因此累计买卖差没大幅上升
+Hence why we’re not seeing the delta pick up aggressively.
+
+588
+00:29:19,740 --> 00:29:25,460
+好的，所以，累计买卖差很重要
+Okay. So, again, like I said, the cumulative delta is important.
+
+590
+00:29:25,920 --> 00:29:28,420
+但它不是绝对的一切
+But it’s not necessarily the be-all and end-all.
+
+591
+00:29:28,520 --> 00:29:31,420
+如果你反复观察这种模式在你的模板中你会发现哪些更有效
+And again, if you observe this pattern within your templates
+
+592
+00:29:31,420 --> 00:29:35,480
+time and time again, you’re going to see what works better than not.
+
+594
+00:29:37,220 --> 00:29:38,880
+我们能看到单向行情
+We can see the one-directional.
+
+595
+00:29:39,280 --> 00:29:41,240
+注意失衡区，浅色部分
+Note the imbalances. Light colors.
+
+596
+00:29:42,080 --> 00:29:43,580
+还有少量深色响应
+Again, a little bit of dark responsive.
+
+597
+00:29:44,420 --> 00:29:45,140
+深色响应
+Dark responsive.
+
+598
+00:29:45,760 --> 00:29:48,720
+部分被止损推高。
+Some stop-up. Okay. Some really aggressive price response.
+
+599
+00:29:50,080 --> 00:29:51,280
+市场涨至顶部。
+Market gets up to the top.
+
+600
+00:29:51,440 --> 00:29:55,040
+看到一点响应。
+You see a little bit of response. Now, we've got our line in the sand.
+
+601
+00:29:55,040 --> 00:29:56,060
+现在，我们有了底线。
+This is a line in the sand.
+
+602
+00:29:56,260 --> 00:29:58,320
+这就是底线。
+This was over a data point.
+
+603
+00:29:58,320 --> 00:29:59,800
+这是在一个数据点上方。
+This is where the data started.
+
+604
+00:29:59,800 --> 00:30:02,660
+数据从这里开始。
+So, we're looking at drawing a red line.
+
+605
+00:30:02,740 --> 00:30:04,400
+所以，我们要画一条红线。
+This is our line in the sand.
+
+606
+00:30:04,460 --> 00:30:05,980
+这就是我们的底线。
+This is where the data point began.
+
+607
+00:30:07,420 --> 00:30:10,680
+数据点从这里开始。
+Ultimately, this is not where the data positioning began.
+
+608
+00:30:10,800 --> 00:30:12,860
+但这并非数据定位的起点。
+It began on this line.
+
+609
+00:30:12,860 --> 00:30:16,760
+起点在这条线上。
+That's where the data came out. We can see the market moved higher.
+
+610
+00:30:17,220 --> 00:30:18,120
+数据从那里出现。
+A little bit of absorption.
+
+611
+00:30:18,580 --> 00:30:19,380
+市场走高。
+Moved higher again.
+
+612
+00:30:19,840 --> 00:30:21,020
+一点吸收。
+Quite a little bit of absorption.
+
+613
+00:30:21,020 --> 00:30:23,320
+再次走高。
+So, we're not interested in this first part. That's all data-related.
+
+614
+00:30:23,600 --> 00:30:25,420
+相当多吸收。
+We're not really interested. What we are interested in is,
+
+615
+00:30:25,480 --> 00:30:29,515
+我们对第一部分不感兴趣。都是数据相关。
+if the market does move back to this red line, which we've created,
+
+616
+00:30:29,515 --> 00:30:32,618
+we are interested in a potential unwind of the delta.
+
+619
+00:30:32,620 --> 00:30:37,300
+如果市场回到这条红线，
+Now, we can see that delta gets all the way up to 615.
+
+620
+00:30:38,160 --> 00:30:40,020
+我们关注Delta头寸的潜在解除。
+Market comes back. We see a little bit of accumulation.
+
+621
+00:30:40,560 --> 00:30:43,560
+现在，Delta一路涨到615。
+Then, we start to see a little bit of imbalance on the south side.
+
+623
+00:30:44,180 --> 00:30:46,520
+看到一点累积。
+Market comes back to test that line.
+
+624
+00:30:47,000 --> 00:30:51,120
+然后，南侧开始出现失衡。
+It very briefly sits below the line. So, like I said to you previously,
+
+625
+00:30:51,460 --> 00:30:53,252
+市场回测这条线。市场会在红线两侧交易并消化。
+What you will tend to see is,
+
+626
+00:30:53,252 --> 00:30:56,836
+you will tend to see the market sit on both sides of the line
+
+627
+00:30:56,836 --> 00:30:57,860
+and trade it out.
+
+628
+00:30:58,100 --> 00:30:59,500
+你通常会看到，
+It tried to do this.
+
+629
+00:30:59,540 --> 00:31:03,720
+市场会在红线两侧交易并消化。
+So, we can see very briefly, It did try and fill this out.
+
+631
+00:31:04,480 --> 00:31:06,600
+可以看到，它确实尝试过填补。
+But ultimately, it happened so quickly.
+
+632
+00:31:06,600 --> 00:31:10,642
+但最终，发生得太快。
+I think we only traded 920 contracts in that entire rotation
+
+633
+00:31:10,642 --> 00:31:14,280
+在市场开始下跌前。
+before the market began the process of moving lower.
+
+634
+00:31:14,280 --> 00:31:19,720
+理想情况下，这是我们会执行的位置在该区域内外。
+So, ideally, this is where we would have executed in and around that area.
+
+637
+00:31:21,200 --> 00:31:25,320
+显然，我们会在跌破低点时做空，寻求延伸。
+Obviously, we will be selling on the break of that low, looking for an extension.
+
+640
+00:31:25,520 --> 00:31:27,560
+止损设在吸收区上方。
+Stop above the absorption zone.
+
+641
+00:31:27,960 --> 00:31:34,820
+市场最终突破Delta或延伸低点后止盈。
+Profit once the market ultimately takes out the delta or extends upon the low. Okay.
+
+643
+00:31:35,040 --> 00:31:37,140
+这是第一个例子。第二个例子
+That’s our first example. So, our second example
+
+644
+00:31:37,140 --> 00:31:40,200
+我们看的是2017年12月20日的WTI原油。
+we are going to look at is WTI Oil, 20th of December 2017.
+
+646
+00:31:41,160 --> 00:31:44,740
+显然，这里出现了极高的成交量激增。
+What we can see, obviously, is a really, really high volume surge here.
+
+647
+00:31:45,180 --> 00:31:47,704
+市场出现激进下跌，Delta也很激进，技术面偏向明显，关键防线已设。
+The market has an aggressive down move,
+
+648
+00:31:47,704 --> 00:31:51,671
+quite an aggressive delta, a real technical bias in the market,
+
+649
+00:31:51,671 --> 00:31:54,917
+and a real key line in the sand posted.
+
+650
+00:31:54,920 --> 00:31:58,540
+市场开始在关键防线下方竞价。
+Now, note the market obviously begins the process of auctioning below that line in the sand.
+
+651
+00:31:58,820 --> 00:32:00,720
+此时我们暂时不太感兴趣。
+So, we are not too interested, necessarily, at this moment.
+
+652
+00:32:01,060 --> 00:32:05,232
+但价格重新跌破关键枢轴后，市场为我们提供了Delta头寸解除的买入机会。用于Delta头寸解除。
+However, once we get back below those key pivots,
+
+653
+00:32:05,232 --> 00:32:10,331
+we can see the market does provide us with the potential
+
+654
+00:32:10,331 --> 00:32:13,576
+for buy opportunities for the delta unwind.
+
+656
+00:32:13,580 --> 00:32:17,164
+Delta从-1300一路反弹，到+1044，随后进一步上涨至2373。
+And we can see that delta obviously shifts
+
+657
+00:32:17,164 --> 00:32:21,644
+from all the way minus 1,300 all the way to positive 1,044,
+
+658
+00:32:24,332 --> 00:32:27,020
+这是两个静态案例。
+So, those are two static examples.
+
+659
+00:32:27,480 --> 00:32:29,800
+现在我们来看一个视频案例，第一个是EUR/USD。
+Let’s now go and have a look at one of the videos,
+
+660
+00:32:29,800 --> 00:32:32,478
+our first video we are going to take a look at is the EUR/USD.
+
+661
+00:32:33,600 --> 00:32:36,800
+同样是头寸解除的情况。
+And again, this is the positioning unwind.
+
+662
+00:32:37,040 --> 00:32:38,849
+我会快进视频，展示图表上的表现，主动性。K线上是最佳观察点。
+I’m going to fast-forward this for you,
+
+663
+00:32:38,849 --> 00:32:41,337
+show you what it looks like on a chart, the initiative.
+
+664
+00:32:41,337 --> 00:32:44,277
+We can see the market on the candlestick—the best place to look.
+
+666
+00:32:44,340 --> 00:32:45,960
+市场出现小幅抛售。
+We can see a little sell-off coming into the market.
+
+667
+00:32:46,720 --> 00:32:48,380
+市场不断抛售。
+The market sells, sells, sells.
+
+668
+00:32:48,840 --> 00:32:53,680
+小幅洗盘，触发几个止损，形成失衡。
+A little wash-down, a couple of stops, nice imbalance there.
+
+670
+00:32:53,680 --> 00:32:53,680
+市场尝试反弹。
+The market tries to go back.
+
+671
+00:32:53,720 --> 00:32:58,052
+我快进到即将出现头寸解除的时刻出现某种形式的头寸解除。
+I’m just going to move a little further on
+
+672
+00:32:58,052 --> 00:33:04,118
+to the point where we’re about to get some form of an unwind.
+
+673
+00:33:04,119 --> 00:33:08,163
+你可以从头到尾看完这个视频，抱歉。但如果我们暂停一下，
+You can watch this video from start to finish, apologies.
+
+674
+00:33:08,163 --> 00:33:12,207
+But ultimately, if we just pause here for a second,
+
+675
+00:33:12,207 --> 00:33:15,038
+we can see in terms of context,
+
+676
+00:33:15,300 --> 00:33:18,940
+成交量方面——这里成交量明显放大。
+the market in terms of volume—we’ve seen a real pickup in volume here.
+
+677
+00:33:19,000 --> 00:33:21,440
+5分钟足迹图上颜色很深。
+Real dark shades on this five-minute rotation.
+
+678
+00:33:22,040 --> 00:33:23,960
+看累计Delta——非常负。
+Note the cumulative delta—really negative.
+
+679
+00:33:23,960 --> 00:33:26,780
+对欧元很不利：-1000。
+This is quite negative for the euro: minus 1,000.
+
+680
+00:33:28,320 --> 00:33:32,840
+市场下跌后又回撤到这个区域。
+Ultimately, our line in the sand— we can see the market sold off, pulled back to this area.
+
+683
+00:33:32,900 --> 00:33:40,040
+一旦突破这个区域，
+You can see it rejected once, twice, three times. Once we take out this area,
+
+684
+00:33:36,420 --> 00:33:37,660
+我们回看几帧。
+let’s go back a few frames.
+
+686
+00:33:40,160 --> 00:33:44,720
+看看市场反应如何。
+let’s see what the market’s reaction is.
+
+687
+00:33:44,960 --> 00:33:48,540
+这条防线不一定与前一交易日低点重合。
+This line in the sand doesn’t necessarily coincide with the previous day’s low.
+
+689
+00:33:48,540 --> 00:33:50,620
+只是与市场走势吻合。
+It just coincides with the market.
+
+690
+00:33:50,620 --> 00:33:53,580
+所以可能出现真正的技术性抛售。
+That tried to sell off. So, we could see a real technical sell-off there.
+
+691
+00:33:54,060 --> 00:33:56,760
+成交量放大，Delta增大。
+Real bias. One-directional. Higher volume. Higher delta.
+
+692
+00:33:57,460 --> 00:34:02,440
+最终，这些价位被突破，
+But prices couldn't go lower. Ultimately, those prices became or they came underwater
+
+694
+00:34:02,440 --> 00:34:03,860
+一旦涨破38区间。
+as soon as we got above those 38s.
+
+695
+00:34:04,500 --> 00:34:08,400
+回到38、39区间上方后，市场迅速反弹。
+And we can see that as soon as we got back above those 38s, 39s,
+
+696
+00:34:08,400 --> 00:34:10,480
+market went quite aggressively back up a bit.
+
+698
+00:34:11,400 --> 00:34:13,280
+我快进一下。
+I'm just going to fast-forward this a little bit.
+
+699
+00:34:13,420 --> 00:34:16,620
+可以看到明显的激进买盘涌入。
+So, we can see a little bit of, obviously, aggressive buying coming in there.
+
+701
+00:34:17,260 --> 00:34:20,800
+延续走势。显然突破前高，
+Continuation. And, obviously, a break of the high
+
+702
+00:34:20,800 --> 00:34:24,360
+随着Delta头寸解除。
+as we unwind the delta. Remember, with regards to this trade strategy,
+
+703
+00:34:24,540 --> 00:34:30,440
+我们会持仓直到Delta完全解除，或突破当日极值。
+we stay in until either the delta is fully unwound, or we take out the extreme of the day. Okay,
+
+705
+00:34:32,800 --> 00:34:36,560
+这是11月29日原油WTR。
+is the oil WTR on the 29th of November.
+
+706
+00:34:37,560 --> 00:34:44,360
+在这个例子中，我们现在看的是旋转图。
+And in this example, again, we're now looking at a rotational chart. Again, you can see, on a rotation chart,
+
+708
+00:34:44,360 --> 00:34:47,120
+能清楚看到市场动能和资金流向。
+we can really see the momentum and the flow coming into the market.
+
+709
+00:34:47,420 --> 00:34:50,750
+成交量激增，Delta也很大，这是当日一个相当大的Delta。
+Real aggressive volume there, as well as delta and accumulative delta.
+
+710
+00:34:50,750 --> 00:34:53,778
+So, this is a substantially large delta on the day.
+
+711
+00:34:53,980 --> 00:34:58,500
+不仅数值显示，深蓝色也能看出。
+We can see that not just with the number, but also the dark blue.
+
+712
+00:34:58,500 --> 00:35:02,840
+现在，我们要找的是Delta 头寸解除的可能性
+Now, again, what we're looking for here is an unwind of this potential delta.
+
+714
+00:35:02,840 --> 00:35:04,944
+可以看到市场在低点急剧反转并沿该方向持续构建 Delta
+So, we can see that the market reversed very aggressively
+
+715
+00:35:04,944 --> 00:35:06,627
+with the lows and continued in that direction,
+
+716
+00:35:07,600 --> 00:35:12,520
+现在，我们回溯几秒
+Now, what we're going to do is we're just going to go back a few seconds
+
+718
+00:35:12,520 --> 00:35:15,880
+我们来看这条分界线。记得之前提到过
+and we're going to have a look at this line in the sand. Now, bear in mind, we spoke
+
+719
+00:35:15,880 --> 00:35:17,780
+我们之前讲过单印区和低成交量错误
+about things like single prints and low-volume errors.
+
+720
+00:35:18,280 --> 00:35:21,016
+在 08 价位下方就是我们刚才略高于的位置比如下方的失衡和单印区
+We can see, below these 08s,
+
+721
+00:35:21,016 --> 00:35:25,120
+that was the point where we were just above,
+
+722
+00:35:25,120 --> 00:35:29,680
+for instance, imbalances as well as single prints lower down.
+
+723
+00:35:29,680 --> 00:35:32,540
+这些单印区会在足迹图、成交量分布图上显示
+You would see these single prints on a footprint chart, on a market profile chart.
+
+724
+00:35:34,240 --> 00:35:39,340
+但普通图表上也能看到失衡
+But you can also see the imbalances on just a normal chart.
+
+726
+00:35:39,400 --> 00:35:41,840
+市场冲击 08 价位下方并清洗
+We can see the market comes in, gets below those 08s and washes out.
+
+727
+00:35:41,920 --> 00:35:43,080
+清除了 Delta，一次激进的 2000 单位 Delta 头寸解除
+It takes out that delta, a very aggressive 2,000 unwind of the delta.
+
+728
+00:35:43,400 --> 00:36:00,380
+注意，市场回到买价后继续解除 Delta
+Note, the market goes back bid and then we continue the process of unwinding the delta.
+
+731
+00:36:00,560 --> 00:36:05,660
+执行上，我们要在突破前积极入场
+In terms of execution, we want to be aggressive ahead of the break.
+
+733
+00:36:05,660 --> 00:36:07,880
+市场跌破低点时
+We can see that when the market got below that low.
+
+734
+00:36:08,000 --> 00:36:11,512
+注意，我在 K 线图上展示稍微回溯一下
+Note, if I show you on the candlestick, I’m going to go back fractionally.
+
+736
+00:36:14,040 --> 00:36:17,660
+注意，市场延伸了
+note, the market extended.
+
+737
+00:36:18,160 --> 00:36:25,920
+市场确实延伸了，最后一次尝试回到买价
+The market did extend. We can see the market tried to extend, tried to go back bid one last time.
+
+739
+00:36:26,060 --> 00:36:29,988
+这在 K 线图上能看到形成一个小双底
+We can see this on the candlestick formed a little bit of a double bottom.
+
+741
+00:36:31,720 --> 00:36:32,940
+随后出现暴跌
+we then got the flush down.
+
+742
+00:36:33,040 --> 00:36:38,160
+确实如此。看那里的深色阴影，有三层吸收
+It really did. If we see that dark shade there, we were really three dark shades of absorption there.
+
+744
+00:36:38,380 --> 00:36:45,060
+那就是吸收，Delta 头寸解除前的机会
+That was the absorption, the opportunity just before the unwind of the delta.
+
+746
+00:36:45,060 --> 00:36:47,500
+这节课的视频部分到此结束
+That concludes the video section of this trade strategy.
+
+747
+00:36:47,740 --> 00:36:49,680
+现在完成模板要点
+Let’s now complete the templates of the points.

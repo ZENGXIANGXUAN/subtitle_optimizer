@@ -1,0 +1,3180 @@
+1
+00:00:00,000 --> 00:00:07,140
+《足迹图课程》，第15单元，风险事件交易。这是30天挑战的第29天。
+The Footprint Course, Unit 15, Risk Event Trading. This is Challenge Day 29 of 30.
+
+3
+00:00:07,740 --> 00:00:15,120
+在接下来的幻灯片中，我们将重点关注职业交易者使用的最重要工具之一：流动性。
+In the following slide, we're going to focus on one of the most important tools utilized by professional traders: liquidity.
+
+6
+00:00:42,240 --> 00:00:47,440
+今天我们要讨论杠杆。那个大写的L字。
+We're going to talk about leverage today. The big L word.
+
+8
+00:00:47,440 --> 00:00:50,880
+杠杆的奇妙之处在于，这是一个很少有人讨论的话题。
+The wonderful thing about leverage is it's a term that not many people talk about.
+
+9
+00:00:51,000 --> 00:00:56,920
+人们害怕讨论杠杆。为什么？因为看看CNBC、布隆伯格上的每个广告，
+People are afraid to talk about leverage. Why? Because look at every advert you see on CNBC, Bloomberg,
+
+11
+00:00:56,940 --> 00:00:59,365
+还有这些差价投注的广告。
+these spread bets.
+
+12
+00:00:59,365 --> 00:01:13,919
+它们都在说损失风险可能超过你的初始资金，杠杆是坏的。
+All of them talk about risk of loss being more than your initial capital, and leverage is bad.
+
+14
+00:01:05,840 --> 00:01:11,920
+如果你使用杠杆，实际上，你可能在任何一笔交易中冒着账户20%、30%的风险。
+If you use leverage, effectively, you're risking 20, 30% of your account on any given trade.
+
+17
+00:01:14,060 --> 00:01:22,688
+从投资组合管理的基本本质和长期实现真正回报的角度来看，杠杆是一个危险的工具。
+In terms of the basic essence of portfolio management and making real returns over time, leverage is a dangerous product.
+
+19
+00:01:22,688 --> 00:01:26,139
+但前提是你不懂杠杆。
+But only if you don’t understand leverage.
+
+20
+00:01:26,140 --> 00:01:29,108
+杠杆同样是一个非常强大的工具因为杠杆能让你扩大规模或者在胜率对你有利时承担更多风险。
+Leverage is equally a very powerful product
+
+21
+00:01:29,108 --> 00:01:33,348
+in the sense that leverage allows you to scale up
+
+22
+00:01:33,348 --> 00:01:38,436
+or take on more risk when the odds are in your favor.
+
+23
+00:01:38,440 --> 00:01:41,440
+如果今天你能学到一件事，那就是作为交易者，作为职业交易者，我们想做的、我们所做的，就是在胜率对我们有利时加大杠杆。在某个胜率或概率对我们有利的时点。
+If there’s one thing you can learn from today,
+
+24
+00:01:41,440 --> 00:01:43,840
+it’s that as traders, as professional traders,
+
+25
+00:01:43,840 --> 00:01:47,740
+what we want to do and what we do is we leverage up
+
+26
+00:01:47,740 --> 00:01:52,240
+at a point in time where the probability or the odds are in our favor.
+
+27
+00:01:52,240 --> 00:01:54,181
+这就是关键所在。
+That’s what it’s about.
+
+28
+00:01:54,181 --> 00:01:59,359
+每当你看一笔交易时，它并不基于统计分析的概率。
+Whenever you look at a trade, it’s not about the odds based on statistical analysis.
+
+30
+00:01:59,420 --> 00:02:01,060
+人们总是问我，你是怎么计算这些概率的？
+People always ask me, how do you work out those odds?
+
+31
+00:02:01,060 --> 00:02:06,880
+这并不是‘我有10,000个特定交易形态的样本’
+It's not a case of 'I have 10,000 samples of a specific trade setup'
+
+32
+00:02:06,880 --> 00:02:12,700
+然后突然说，‘好的，结果有利的可能性是62.5%’的情况。
+and I suddenly say, 'Well, the likelihood of the outcome being favorable is 62.5%.'
+
+34
+00:02:12,900 --> 00:02:14,659
+结果是基于我们随时间发展的各种模式，基于我们在梯度上看到的各种直觉价格行动，在一段时间内。所有这些加在一起等于一个结果的概率。
+The outcomes are based on various patterns
+
+35
+00:02:14,659 --> 00:02:15,915
+that we develop over time,
+
+36
+00:02:15,915 --> 00:02:17,422
+based on various intuitive price actions
+
+37
+00:02:17,422 --> 00:02:19,936
+we see on the ladder over a period of time.
+
+38
+00:02:25,206 --> 00:02:28,975
+所以，当我用‘概率’这个词时，请先忍着。这不是最技术的意义上的概率。这不是‘我回测了1,000个样本集’的那种概率。它不是这么运作的，对吧？
+all of that together equals a probability of an outcome,
+
+39
+00:02:28,975 --> 00:02:33,121
+So, just bear with me when I use that word *probability*.
+
+40
+00:02:33,121 --> 00:02:35,760
+It's not in the most technical sense.
+
+41
+00:02:35,800 --> 00:02:40,520
+这不是‘我回测了1000组样本’的意思，不是这么回事，对吧？
+It's not in the sense of, 'I back-tested 1,000 sample sets.' It doesn't work like that, okay?
+
+43
+00:02:40,520 --> 00:02:42,671
+这部分交给算法、统计学家们去玩
+That's the game left for the algorithms, the statisticians
+
+44
+00:02:42,671 --> 00:02:45,779
+以及那些选择开发这些算法的大型宏观对冲基金，对吧？
+and the big macro hedge funds that choose to create these algos, okay?
+
+46
+00:02:50,880 --> 00:02:56,620
+现在，关于杠杆，我想讨论什么呢？显然是它的优点，对吧？
+Now, what did I want to talk about in terms of leverage? Obviously, the pros, okay?
+
+48
+00:02:56,840 --> 00:03:00,940
+是的，你可以扩大规模，可以赚更多的钱。
+Yes, you can scale up, you can make a lot more money.
+
+49
+00:03:00,940 --> 00:03:04,699
+是的，长期下来能获得更好的收益，对吧？
+Yes, you can make better returns over the long run, okay?
+
+51
+00:03:04,860 --> 00:03:11,379
+但关于杠杆，重要的不仅是要理解它的优点，还要理解杠杆背后的心理层面——或者说它的弊端，对吧？
+The important thing when it comes to leverage is not just to understand the positives about it,
+
+52
+00:03:11,379 --> 00:03:15,598
+but to understand the psychology behind leverage—or the cons, okay?
+
+53
+00:03:16,140 --> 00:03:20,673
+当我谈到这个话题时，如果你经常和我相处，你会经常听到我自问：如果我遇到从未经历过的情况，那种情况会带来怎样的心理影响？好吧，举个例子。
+When I talk about this, you’ll very often—if you spend a lot of time with me—
+
+54
+00:03:20,673 --> 00:03:23,695
+hear me always ask myself: I put myself in a situation of,
+
+55
+00:03:23,695 --> 00:03:30,497
+if there was something or a situation I hadn’t been in before, what would the psychological implications of that be? Okay, let’s use an example.
+
+59
+00:03:30,640 --> 00:03:37,279
+比如，在期货市场中，我习惯用1手交易，对吧？
+So, let’s say, for instance, in a futures market, I’m used to using a one-lot, okay?
+
+61
+00:03:37,280 --> 00:03:41,687
+经过多次交易设置和策略后，我会习惯风险在某个特定范围内。
+And over a number of trade setups and trade strategies,
+
+62
+00:03:41,687 --> 00:03:47,418
+I'm going to get used to my risk being within a specific range.
+
+64
+00:03:47,420 --> 00:03:54,400
+假设我习惯的风险范围是-100到-200之间，在一段时期内平均如此。
+So, let's say I'm used to my risk being between -100 and, say, -200 on average over a given period of time.
+
+66
+00:03:54,400 --> 00:03:56,641
+现在，突然之间，我决定加杠杆，要用4手交易，对吧？
+Now, all of a sudden, I decide I'm going to leverage up,
+
+67
+00:03:56,641 --> 00:03:58,323
+and I'm going to go to a four-lot, okay?
+
+68
+00:04:00,280 --> 00:04:13,180
+那一瞬间，只要有一笔亏损交易，这个-100到-200的范围就会变成-400到-800，对吧？
+Now, instinctively, the minute you have a bad trade, this parameter of -100 to -200 is going to move from -400 to -800, okay?
+
+71
+00:04:13,180 --> 00:04:18,980
+所以，你立刻能看到习惯了那个风险区间后的心理冲击。
+So, straight away, you can see the psychological impact of being used to being in that sort of risk range.
+
+73
+00:04:18,980 --> 00:04:24,490
+现在，你已经进入了一个几乎完全偏离的风险极端值，让你感到极度不适，对吧？
+And now, you've moved to almost a complete outlier of risk, something that makes you feel completely uncomfortable, right?
+
+75
+00:04:24,490 --> 00:04:26,520
+这必然会带来心理影响。
+There's going to be a psychological impact.
+
+76
+00:04:29,859 --> 00:04:36,953
+因为我在职业生涯早期发现，我真的很难增加仓位，因为我不愿意接受风险的自然上升，对吧？
+because what I found very early in my career was I really struggled with increasing the size,
+
+77
+00:04:36,953 --> 00:04:42,378
+because I wasn't willing to accept that natural progression in my risk, right?
+
+79
+00:04:42,379 --> 00:04:46,577
+所以，如果你能理解并接受：承担更多风险的本质，你的下行风险也必然会看起来不一样，感觉也会不一样，对吧？
+So, if you can understand and accept that by the very nature of taking on more risk,
+
+80
+00:04:46,577 --> 00:04:51,269
+your downside is equally going to have to look a little bit different and feel a bit different, right?
+
+84
+00:04:54,520 --> 00:05:02,540
+对吧？记住，你必须接受下行风险和潜在上行收益并存。
+okay? Remember, you have to take the downside with the potential upside.
+
+85
+00:04:52,034 --> 00:04:54,518
+你才能更容易地学会加杠杆，
+you're going to be able to learn to leverage up a lot easier,
+
+86
+00:05:02,700 --> 00:05:04,534
+这就是它的运作方式。
+That's how it works.
+
+87
+00:05:04,534 --> 00:05:07,744
+归根结底，
+Ultimately, what it comes down to is,
+
+88
+00:05:07,744 --> 00:05:12,330
+无论你用多大的仓位，多高的杠杆，
+regardless of how much size you're using, how much leverage,
+
+89
+00:05:16,000 --> 00:05:18,900
+对吧？不管你是在交易...
+okay? Whether you're taking on... let's get an example here. So, whether you're taking on
+
+91
+00:05:18,920 --> 00:05:20,732
+比如突破交易，对吧？
+Let's say a breakout trade, okay?
+
+92
+00:05:20,732 --> 00:05:25,866
+不管你是用1手还是4手交易，这完全无关紧要，对吧？
+Whether you're taking that on with a one lot or a four lot, is completely irrelevant, right?
+
+94
+00:05:25,866 --> 00:05:27,980
+交易流程一点都没变。
+There is no change to the process.
+
+95
+00:05:33,646 --> 00:05:37,698
+流动性足够，当然还要看你交易的是哪个市场，对吧？
+There's enough liquidity, again, depending on the market you're trading, okay?
+
+97
+00:05:37,700 --> 00:05:42,446
+所以，交易1手还是4手，流程上没有显著差异，对吧？
+So, there's no significant difference in the process of trading a one lot or a four lot, right?
+
+99
+00:05:42,446 --> 00:05:47,600
+关键是要理解，加杠杆背后的心理意义，对吧？现在，这一点很重要。
+It's just understanding the psychology behind what it means to actually leverage up, okay? Now, important.
+
+101
+00:05:47,900 --> 00:05:52,451
+你们很多人会问，好，那什么时候用杠杆才是对的，或者我的账户承受不了杠杆？
+A lot of you are going to say, yes, but when is the right time to use leverage,
+
+102
+00:05:52,451 --> 00:05:54,221
+or my account can't necessarily handle leverage?
+
+104
+00:05:55,760 --> 00:06:00,860
+这是我必须接受的事实。早些年，我交易账户里有
+It's something I had to accept. So, earlier in my career, let's say I had a
+
+106
+00:06:00,920 --> 00:06:02,793
+5000英镑，对吧？
+5,000 pounds in my trading account, okay?
+
+107
+00:06:02,793 --> 00:06:08,099
+我想进步，可能交易5手、6手或者8手。
+And I wanted to now progress to maybe a five or a six or an eight lot.
+
+108
+00:06:08,740 --> 00:06:12,190
+当然，我得接受可能会亏1500英镑，对吧？
+Now, of course, yes, I have to accept that I might lose, say, 1,500 pounds, okay?
+
+110
+00:06:12,190 --> 00:06:14,260
+这笔亏损占我账户的很大一部分，对吧？
+That's a significant amount of my account, all right?
+
+111
+00:06:19,160 --> 00:06:21,442
+再来说今天我想让你们记住的，我希望鼓励你们通过理解杠杆，来学习杠杆，对吧？
+and again, what I want you to take away from today,
+
+112
+00:06:21,442 --> 00:06:25,178
+is I want to encourage you guys to learn a little bit about leverage through understanding it, okay?
+
+115
+00:06:25,180 --> 00:06:31,193
+以前我们经常做的一件事是，当我们难以增加仓位时，我们会对自己说，好，
+Now, one of the things we used to do a lot was when we struggled to get our clip up,
+
+116
+00:06:31,193 --> 00:06:32,998
+we would say to ourselves, okay,
+
+117
+00:06:33,140 --> 00:06:37,246
+如果今天表现好，比如赚了1000欧元，不管怎么着，账户变成6000，那我就增加仓位。
+if I have a good day, so let's say I make 1,000 euros today, whatever,
+
+118
+00:06:37,246 --> 00:06:41,059
+and my account goes to 6,000, then I'm going to move my clip up.
+
+121
+00:06:41,060 --> 00:06:43,676
+或者我会小幅加杠杆。
+Or I'm going to leverage up by a marginal amount.
+
+122
+00:06:43,676 --> 00:06:47,600
+比如，我会从交易5手改成6手。
+So, I'm going to go from trading, say, a five-lot to a six-lot that day.
+
+123
+00:06:47,720 --> 00:06:50,388
+如果第二天又赚钱，账户变成6400，我就会说，‘好，我要加到7手。’
+And then if I had another green day, say, to 6,400,
+
+124
+00:06:50,388 --> 00:06:53,858
+I would then say, 'Okay, I'm going to push it to a seven-lot.'
+
+126
+00:06:54,040 --> 00:07:02,600
+慢慢地，我习惯了心理上承担更大的风险，对吧？
+And slowly but surely, I got used to the fact that, psychologically, I was taking on more risk, okay?
+
+128
+00:07:02,680 --> 00:07:05,480
+但我是在赢的时候加的，注意，是在连胜时加的，对吧？
+But I was doing it—note, I was doing it in a positive run, okay?
+
+129
+00:07:05,480 --> 00:07:08,722
+新手交易者犯的最大错误——我犯过，大多数交易者都犯过——在杠杆问题上，他们倾向于在交易错误时用杠杆，在交易方向反了时，在失去对交易的控制时。
+The biggest mistake new traders make—I made, most traders make—
+
+130
+00:07:08,722 --> 00:07:12,849
+when it comes to leverage is they tend to use leverage when they're wrong,
+
+131
+00:07:12,849 --> 00:07:15,798
+when they're offside, when they've lost control of a trade.
+
+135
+00:07:15,900 --> 00:07:22,524
+这就是为什么这种心理创伤会伴随他们整个交易生涯，因为他们总是把账户爆仓或爆仓时刻与杠杆联系在一起，对吧？
+And that’s why that psychological damage sits with them for the rest of their careers,
+
+136
+00:07:22,524 --> 00:07:29,976
+because they always seem to associate that blowout in their account or that blowout moment with leverage, okay?
+
+139
+00:07:29,980 --> 00:07:31,941
+这和杠杆本身一点关系都没有，对吧？
+It’s got nothing to do with that, all right?
+
+140
+00:07:31,941 --> 00:07:34,099
+是错误使用杠杆导致了那个结果，清楚了吗？
+It was the wrong use of leverage that created that, okay?
+
+141
+00:07:34,100 --> 00:07:38,780
+所以，如果你有过那种时刻，那种经历，试着重新联想。
+So, if you've had that moment, if you've had that experience, try and associate.
+
+143
+00:07:39,100 --> 00:07:44,100
+学会在连胜时使用杠杆，并且要逐步加仓。
+Learn to use leverage when you're on a good run and do it incrementally.
+
+144
+00:07:44,460 --> 00:07:47,900
+你记住这两个建议，就能开始真正理解杠杆的用法。
+You take those two tips of advice, guys, and you're going to finally start understanding the use of leverage.
+
+146
+00:07:47,900 --> 00:07:51,241
+好，我们回到之前的那个老问题，这也是我们关于杠杆的总结部分。
+Okay, so, let’s come back to that old question,
+
+147
+00:07:51,241 --> 00:07:54,918
+and this is where we're going to wrap up on leverage.
+
+148
+00:07:55,140 --> 00:07:57,040
+职业交易者在什么时候使用杠杆？
+Where do professional traders use leverage?
+
+149
+00:07:57,460 --> 00:07:58,830
+好，其实很简单。
+Okay, well, it’s very simple.
+
+150
+00:07:58,830 --> 00:08:03,996
+比如，你们很多人都关注我们的早盘直播，我们来聊两个例子，对吧？
+Let’s say we take, for example, a lot of you guys follow us in the morning streams,
+
+151
+00:08:03,996 --> 00:08:07,440
+And we can talk about We're going to talk two examples, okay?
+
+153
+00:08:09,500 --> 00:08:12,040
+现在，我们来看今天早上的德国国债（Bund）例子，清楚了吗？
+Now, let's take the Bund example For this morning, all right?
+
+155
+00:08:12,100 --> 00:08:14,000
+之前有人问过德国国债（Bund）的问题。
+Someone asked about the Bund; the question was there.
+
+156
+00:08:14,160 --> 00:08:17,628
+是什么让我们判断德国国债（Bund）会继续下跌？对吧？
+What was it that gave us the inclination That the Bund was going to go lower, okay?
+
+158
+00:08:19,400 --> 00:08:23,200
+现在，我要把图调出来，我们一起看看。
+Now, I'm actually going to get that up for you So we can actually just look at it together.
+
+160
+00:08:23,660 --> 00:08:24,680
+好，这就是楔形结构。
+All right, so there's the wedge.
+
+161
+00:08:24,700 --> 00:08:26,935
+你们屏幕上能看到这个清晰的图形。
+You can see it nice and pretty on your screens.
+
+162
+00:08:26,935 --> 00:08:30,958
+过去几天，几乎一整周，我们都困在这个楔形里。
+We've been sort of sitting in this wedge For the last couple of days, almost a week now.
+
+164
+00:08:33,995 --> 00:08:36,759
+今天早上，我们来测试了这个楔形的现金市场开盘外的区域。
+This morning, we came and we tested That wedge outside of the cash house.
+
+166
+00:08:36,760 --> 00:08:41,368
+好，现在我们有了一个交易信号，一个机会。
+Okay, so now we have a trade setup. We have an opportunity.
+
+167
+00:08:41,368 --> 00:08:48,280
+市场给我们展示了一个技术形态，我们想利用这个形态。
+The market is showing us a technical pattern, And we would like to take advantage of this pattern.
+
+169
+00:08:53,294 --> 00:08:56,812
+我几乎要带你们进入我的思维，对吧？
+I want to almost bring you inside my mind, okay?
+
+170
+00:08:56,812 --> 00:09:01,738
+但仅凭这个并不意味着我一定会用杠杆，清楚了吗？
+That in its own does not necessarily imply I'm going to use leverage, okay?
+
+172
+00:09:01,740 --> 00:09:03,369
+在这个情况下发生了什么？
+So, what happened in this situation was
+
+173
+00:09:03,369 --> 00:09:04,765
+市场突破了，然后一路下行，
+The market broke, it filtered down,
+
+174
+00:09:06,860 --> 00:09:10,700
+好，在这个例子中，我们该在哪里使用杠杆？
+Okay, so where would we use leverage In this example, all right? Some traders,
+
+175
+00:09:10,700 --> 00:09:15,004
+现在我需要做的是，我要给你们放大看看。
+and what I'm going to need to do now Is I'm going to need to zoom you in
+
+177
+00:09:17,900 --> 00:09:19,320
+哦，我这里没有这个图。好，我本想调出1分钟图。
+Oh, I don't have it here. Okay. I was hoping to bring up the one-minute chart.
+
+179
+00:09:19,540 --> 00:09:26,440
+但如果你们回去看看，对吧？一旦我们突破了初始平衡低点，
+But if you go back and you look at this, okay? Once we took out that initial balance low,
+
+180
+00:09:26,500 --> 00:09:30,340
+那我在这里画一下。一旦突破初始平衡低点，对吧
+So I'm going to draw it over here. Once we took out the initial balance low, right,
+
+181
+00:09:30,440 --> 00:09:41,820
+现金市场开盘后，市场接着横盘将近20分钟，在一个区间内震荡
+After the cash opened, the market then sat for almost 20 minutes, churning sideways.
+
+183
+00:09:42,120 --> 00:09:47,358
+在这段震荡过程中，在这段横盘交易中一旦我们跌破关键基础趋势线，或者说支撑线——随便怎么叫都行——一旦跌破后开始积累，交易者们就会使用杠杆
+Within that churn, within that sideways trade, once we had broken down below the key base trend line,
+
+184
+00:09:47,358 --> 00:09:53,178
+or support line—or whatever you want to call it— once we’d broken below that and started to accumulate,
+
+185
+00:09:53,178 --> 00:09:55,217
+that is when traders employed their leverage.
+
+186
+00:09:55,220 --> 00:09:58,580
+那就是交易者入场的时机。为什么？这里是关键线索
+That is when traders got involved. Why? And this is the clue.
+
+187
+00:09:59,100 --> 00:10:02,917
+杠杆的艺术，交易的艺术，在于了解风险
+The art to leverage, the art to trading is knowing the risk.
+
+188
+00:10:02,917 --> 00:10:08,660
+只要你了解某笔交易的风险，不管你怎么称呼它
+The minute you know the risk on any trade, it doesn’t matter what you want to call it.
+
+190
+00:10:08,660 --> 00:10:10,220
+只要你了解这笔交易的风险
+The minute you know that risk,
+
+191
+00:10:12,060 --> 00:10:14,420
+所以，这笔交易的风险非常简单
+So, the risk in this trade is very simple.
+
+192
+00:10:15,120 --> 00:10:21,920
+就在初始平衡低点上方，正好和支撑线突破处重合，那就是交易失效的位置
+Right above that initial balance low, which coincided with that break of support, that is where the trade was invalid.
+
+194
+00:10:21,920 --> 00:10:25,660
+那就是交易不再值得持有的位置
+That is where the trade was gone and no longer worth being in.
+
+195
+00:10:25,980 --> 00:10:31,227
+所以，只要价格低于突破点并持续横盘积累交易者就会增加杠杆，在横盘区间内入场
+So, as long as we were below the break and accumulating sideways,
+
+196
+00:10:31,227 --> 00:10:36,038
+traders were then leveraging up, getting in within that sideways range.
+
+198
+00:10:36,420 --> 00:10:43,680
+一旦最终跌破横盘区间的下边缘，我们就看到了激进的10点、15点下跌
+And once it finally took out the bottom end of that downward range, we got the aggressive 10-, 15-tick down move.
+
+200
+00:10:44,360 --> 00:10:48,740
+这就是今天早上的交易逻辑。这就是我们如何运用杠杆的
+That was the play from this morning. That was how we incorporated leverage.
+
+201
+00:10:48,820 --> 00:10:50,769
+现在，假设为了讨论方便假设价格没有像实际那样下跌
+Now, let’s say for all intents and purposes,
+
+202
+00:10:50,769 --> 00:10:53,802
+let’s say it didn’t go down in the manner that it did.
+
+203
+00:10:53,803 --> 00:10:55,319
+假设它是这样走的
+Let’s say it did this instead.
+
+204
+00:11:02,503 --> 00:11:07,819
+那么很可能很少有交易者会使用杠杆。为什么？
+It’s very, very unlikely that many traders would have employed leverage. Why?
+
+205
+00:11:08,000 --> 00:11:11,880
+因为当你使用杠杆时，你承担的风险更大
+Because when you employ leverage, you are taking on more risk.
+
+206
+00:11:11,920 --> 00:11:13,800
+所以，你需要更强的信心
+So, you need more confidence.
+
+207
+00:11:13,940 --> 00:11:18,060
+你需要更深入地理解即将进行的交易
+You need more understanding of the trade you’re going to take on.
+
+208
+00:11:18,120 --> 00:11:23,519
+所以，当可依赖的变量变少时当可依赖的信息变少时当某个结果发生的概率变低时，那就是你不想过度使用杠杆的时候
+So, when there are fewer variables to lean on, when there’s less information to lean on,
+
+209
+00:11:23,519 --> 00:11:26,377
+when there’s less probability of an outcome occurring,
+
+210
+00:11:26,377 --> 00:11:29,554
+that is when you don’t want as much leverage.
+
+211
+00:11:29,555 --> 00:11:31,778
+这又回到了那个核心问题
+It comes back to that whole question.
+
+212
+00:11:34,541 --> 00:11:37,992
+当我们充分理解市场，了解风险时
+When we have a good understanding, we know the risk,
+
+213
+00:11:37,992 --> 00:11:40,408
+我们有信心，相信自己的操作
+we're confident, we trust what we're doing,
+
+214
+00:11:45,242 --> 00:11:47,658
+这就是杠杆的运用，一个具体的例子
+That is leverage, used in an example.
+
+216
+00:11:48,040 --> 00:11:50,500
+好。这就是我们今天上午的德国国债（Bund）案例。
+Okay. Now, that's our bundan example for this morning.
+
+217
+00:11:50,580 --> 00:11:53,528
+希望你不只是理解我们如何入场，
+I hope you understood not just how we got into it,
+
+218
+00:11:53,528 --> 00:11:56,476
+还理解为什么入场，以及如何执行。
+but why we got into it, how we would have executed,
+
+219
+00:11:58,622 --> 00:12:00,498
+好的，这又是一个非常个人化的问题。
+Okay, again, that's a very personal thing.
+
+221
+00:12:00,500 --> 00:12:04,280
+我从不讨论目标位，因为讨论目标位有什么意义呢？
+I never talk about targets because, what is the point of talking about a target?
+
+223
+00:12:04,620 --> 00:12:10,211
+有人可能觉得想拿5个Tick，因为这有90%的概率会发生。
+One person might feel that they want to take five ticks because they know there's a 90% chance of that happening.
+
+224
+00:12:10,211 --> 00:12:14,963
+有些交易者可能更喜欢用小仓位，然后追求更大的目标，对吧？
+Some traders might prefer to have a smaller size and run it for a bigger target, okay?
+
+225
+00:12:14,963 --> 00:12:17,199
+目标位是基于个人偏好的个性化选择。
+Targets are a personal thing based on preference.
+
+228
+00:12:17,660 --> 00:12:22,220
+但入场的原因和风险点位不是个人化的，对吧？风险点位是已知的。
+What isn’t personal is, one, why we enter, and two, where the risk is, okay? The risk is known.
+
+230
+00:12:22,260 --> 00:12:25,037
+一旦你知道交易中的风险点位，你就必须去交易。
+The minute you know the risk in a trade, you’ve got to trade.
+
+231
+00:12:25,037 --> 00:12:27,219
+现在，关于杠杆，我最后要说的是：
+Now, the last thing I’m going to say about leverage:
+
+232
+00:12:30,360 --> 00:12:33,497
+我从不想冒犯散户交易者的背景，好吗？
+I never like to insult a retail background, okay?
+
+233
+00:12:33,497 --> 00:12:37,679
+但我只是想陈述事实，对你坦诚相待。
+But I like to just give the facts, be honest with you.
+
+235
+00:12:37,820 --> 00:12:40,722
+散户交易者的典型操作是这样的：你会看到一根K线——类似这样的——教科书会告诉你突破后做多，然后在下方设置止损。
+A retail background would typically work like this:
+
+236
+00:12:40,722 --> 00:12:45,438
+You’d have a candle—something like that—and the textbook would say
+
+237
+00:12:45,438 --> 00:12:50,156
+you buy through the break there, and you put the stop down there.
+
+239
+00:12:50,240 --> 00:12:54,688
+这种策略——摆动策略，或者说你想怎么叫都行——这种策略在使用杠杆时效果不会好。
+That type of strategy—swing strategy, whatever you want to call it—
+
+240
+00:12:54,688 --> 00:12:59,136
+That sort of a type strategy is not going to work well
+
+241
+00:12:59,136 --> 00:12:59,878
+with leverage.
+
+242
+00:13:00,120 --> 00:13:05,640
+为什么？因为谁能承受40、50、60个Tick的止损，对吧？
+Why? Because who can take a 40, 50, 60-tick stop, all right?
+
+243
+00:13:05,700 --> 00:13:09,220
+很少有人能做到。对冲基金可以，大型宏观基金可以。
+Not many people. Hedge funds, yes. Big macro funds, yes.
+
+244
+00:13:09,240 --> 00:13:10,560
+他们能承受非常大的止损。
+They can take very wide stops.
+
+245
+00:13:10,920 --> 00:13:14,960
+日内交易者、散户交易者，账户规模小的，我们承受不了这种止损。
+Day traders, retail traders with smaller accounts, we cannot take those kinds of stops.
+
+247
+00:13:14,960 --> 00:13:19,000
+更重要的是，我们不应该需要承受这种止损，对吧？
+And more importantly, we shouldn’t need to take those kinds of stops, okay?
+
+248
+00:13:19,000 --> 00:13:24,680
+所以，在开发你的策略时，要基于你的账户实际情况来开发策略。
+So, make sure when you’re developing your strategy, develop your strategy based on, ultimately, what your account is.
+
+250
+00:13:24,920 --> 00:13:26,819
+你想用杠杆吗？
+Do you want to use leverage?
+
+251
+00:13:26,819 --> 00:13:29,351
+你不想用杠杆吗，对吧？
+Do you not want to use leverage, okay?
+
+252
+00:13:31,160 --> 00:13:39,880
+然后突然尝试使用它们，而你可能并不完全理解其全部影响。
+and suddenly trying to employ them, when you don’t necessarily understand the full implications of it.
+
+254
+00:13:45,900 --> 00:13:51,770
+希望现在你真的理解了流动性对职业交易者为何如此关键。
+Hopefully now you really understand why liquidity is so crucial to professional traders.
+
+255
+00:13:51,770 --> 00:13:57,640
+更重要的是，你如何考虑如何利用流动性。
+More importantly, how you can consider how you’re going to utilize liquidity.
+
+257
+00:13:58,280 --> 00:14:01,205
+稍后在策略环节我们会详细讲解关于你想在哪里运用流动性以及流动性使用背后的一些核心原则
+We will touch on this a little bit later
+
+258
+00:14:01,205 --> 00:14:04,780
+in the strategy session on where you want to employ liquidity
+
+259
+00:14:04,780 --> 00:14:08,680
+and some of the real key principles underlying the usage of liquidity.
+
+261
+00:14:08,720 --> 00:14:11,820
+我认为，当你观看完策略环节后你肯定会更倾向于支持流动性的重要性而不是反对流动性
+I think once you watch the strategy session,
+
+262
+00:14:11,820 --> 00:14:16,858
+you’re definitely going to be a lot more in the pro-liquidity camp
+
+263
+00:14:16,858 --> 00:14:18,797
+rather than the anti-liquidity camp.
+
+264
+00:14:21,900 --> 00:14:23,460
+这是策略10
+This is strategy number 10.
+
+265
+00:14:23,940 --> 00:14:26,500
+这是风险事件交易部分
+This is the risk event trading section.
+
+266
+00:14:26,980 --> 00:14:31,560
+需要注意的是，这些本质上是逆趋势策略和动能策略
+Do note, these are counter-trend strategies and momentum strategies in effect.
+
+268
+00:14:33,400 --> 00:14:35,580
+最终，你需要一些背景知识
+And ultimately, you will require a bit of context.
+
+269
+00:14:35,760 --> 00:14:39,820
+我在策略环节会和你分享部分背景
+I’ll share some of that context with you within the strategy session.
+
+270
+00:14:40,300 --> 00:14:46,100
+还要注意的是，你有时需要非常激进的执行方法
+And note, you will sometimes need quite aggressive execution methodologies.
+
+271
+00:14:46,100 --> 00:14:49,420
+但同样，我会在策略部分全部分享给你
+But again, I will share that all with you in the strategy section.
+
+272
+00:14:53,390 --> 00:14:55,007
+所以，你们现在都是专业的模式识别专家了应该会发现每一个原则都被突出强调了
+So, you should notice,
+
+273
+00:14:55,007 --> 00:14:58,646
+as you are all now professional pattern recognition experts,
+
+274
+00:15:02,691 --> 00:15:04,308
+原因很简单
+The reason is simple.
+
+275
+00:15:04,710 --> 00:15:07,410
+对于风险事件交易，显然节奏会加快
+For risk event trading, obviously, things speed up.
+
+276
+00:15:07,530 --> 00:15:16,570
+一切都以更快的速度运行，而波动性本质上意味着机会潜力
+Everything moves at a far greater speed. Now, within that movement, volatility effectively implies potential for opportunity.
+
+278
+00:15:17,950 --> 00:15:20,122
+由于这种机会潜力，你需要对每一个原则都保持高度警觉这些原则我们最早是在第3单元介绍的但之后在6到15单元中反复强调过
+Because of that potential for opportunity,
+
+279
+00:15:20,122 --> 00:15:25,190
+you're going to need to be switched on to every one of these principles
+
+280
+00:15:25,190 --> 00:15:30,620
+we first introduced in Unit 3, but what we have consistently gone over throughout Units 6 to 15.
+
+281
+00:15:30,622 --> 00:15:34,967
+所以，我们这里要讲的都是些非常关键的原则
+So again, we are going to cover some really key principles here.
+
+284
+00:15:34,970 --> 00:15:37,374
+每一个原则，本质上都至关重要它们都会在策略环节中我展示的三种模式里起作用
+Every one of them, in essence, will be key
+
+285
+00:15:37,374 --> 00:15:40,579
+in one of the three patterns I am going to show you
+
+286
+00:15:40,579 --> 00:15:41,648
+in the strategy section.
+
+287
+00:15:45,679 --> 00:15:49,289
+最后这个部分会非常有意思
+This is going to be a lot of fun, this last one.
+
+288
+00:15:49,470 --> 00:15:52,915
+你会真正清楚地理解市场如何在关键事件后移动
+You are really going to get a clear understanding of how markets move off of key events.
+
+289
+00:15:52,915 --> 00:15:58,347
+我们还会观看一个非常精彩的视频记录的是弗林指证特朗普的那一刻以及黄金市场当时的表现
+And we are going to finish off by watching a really great video
+
+290
+00:15:58,347 --> 00:16:02,526
+of the moment that Donald Trump was implicated by Flynn,
+
+291
+00:16:02,526 --> 00:16:06,288
+and what the gold market did in that instance.
+
+294
+00:16:06,290 --> 00:16:09,610
+好，祝你好运，享受策略环节吧
+All right, good luck and enjoy the strategy session.
+
+296
+00:16:12,760 --> 00:16:21,900
+好，欢迎来到最后一个策略，策略10：风险事件交易。现在，显然，正如我在上一张幻灯片中提到的
+So, welcome then to the final strategy, Strategy 10: risk event trading. Now, obviously, as I mentioned in the previous slide,
+
+298
+00:16:22,000 --> 00:16:29,440
+这是一个基于背景和足迹图的策略。但你会觉得它和其他策略有点不同
+this is a contextual and footprint-based strategy. But you are going to feel that it is a little bit different
+
+301
+00:16:29,440 --> 00:16:31,600
+确实如此。
+to some of the other strategies.
+
+302
+00:16:31,600 --> 00:16:33,120
+在很多方面都不同，我会向你们解释原因。
+And it is, in many ways, And I'm going to explain to you why.
+
+304
+00:16:34,260 --> 00:16:37,648
+现在，首先我要指出的一点是，显然你会注意到，每一个交易原则以及每一个足迹图原则，现在都适用于风险事件交易的概念。
+Now, the first thing I want to point out, obviously,
+
+305
+00:16:37,648 --> 00:16:40,698
+you'll note that every one of the trading principles,
+
+306
+00:16:40,698 --> 00:16:47,138
+as well as every one of the footprint principles, is now applicable to the concept of risk event trading.
+
+307
+00:16:48,260 --> 00:16:57,840
+原因在于，风险事件交易的艺术，就体现在‘风险事件’这个词里。
+And the reason is that risk event trading, the art of risk event, is in the word.
+
+309
+00:16:57,840 --> 00:17:00,206
+它体现在一个不太可能发生的风险中或者体现在一个不太可能发生的事件中，此时持仓面临风险。
+It’s in the event that an unlikely risk
+
+310
+00:17:00,206 --> 00:17:03,097
+or it’s in the unlikely event that an event occurs
+
+311
+00:17:03,097 --> 00:17:04,938
+in which positions are now at risk.
+
+312
+00:17:04,940 --> 00:17:14,700
+本质上，这就是风险事件交易。换句话说，风险事件不过是些异常值。
+That’s, in essence, what risk event trading is. In other words, risk event is nothing more than outliers.
+
+313
+00:17:14,700 --> 00:17:17,505
+有些人称之为黑天鹅事件，有些人称之为异常值有些人随便怎么称呼都行但本质上，是市场没有正确定价该风险发生的可能性。
+Some people call them black swans, some people call them outliers,
+
+314
+00:17:17,505 --> 00:17:19,290
+some people call them whatever they want,
+
+315
+00:17:19,290 --> 00:17:24,136
+but in essence, it’s where the markets are not correctly pricing the potential for that risk to occur.
+
+317
+00:17:24,140 --> 00:17:36,600
+现在，我必须再次指出，显然，黑天鹅事件的概念是一种非常罕见的事件。
+Now, again, I must note that, obviously, the concept of a black swan event is a very rare occurrence.
+
+319
+00:17:36,700 --> 00:17:45,100
+所以它几乎是一种极端的异常值。它的运作方式非常简单
+So it’s almost a form of an extreme outlier. How it works, very simply,
+
+320
+00:17:45,160 --> 00:17:48,314
+我会用一个量表来向你解释然后我会进入下一张幻灯片向你展示这个。
+I’m going to explain it to you with a scale,
+
+321
+00:17:48,314 --> 00:17:52,616
+and I’m going to move on to the next slide to show you this.
+
+322
+00:17:52,617 --> 00:17:57,800
+所以，如果我要说明风险事件交易如何有效运作，一切都归结于一个量表。
+So, if I were to illustrate how risk event trading effectively works, it all comes down to a scale.
+
+325
+00:17:59,400 --> 00:18:07,242
+风险水平越高——也就是风险越大机会的范围就越大。
+The higher the level of the risk—so the higher the risk,
+
+326
+00:18:07,242 --> 00:18:13,778
+the higher, or the greater the scope is for opportunity.
+
+328
+00:18:16,120 --> 00:18:17,960
+这基本上是风险事件交易的一个很好的总结。
+And that’s pretty much a great summary of risk event trading.
+
+329
+00:18:17,960 --> 00:18:23,725
+所以，当我们学习这个时，请始终记住这一点：风险越高，或者异常值越大，或者市场对潜在风险的定价越不充分你作为交易者的机会就越大。
+So, as we go through this, just always keep this in the back of your mind:
+
+330
+00:18:23,725 --> 00:18:26,967
+the higher the risk, Or the bigger the outlier,
+
+331
+00:18:26,967 --> 00:18:34,895
+Or the less that a potential risk is priced by the market, The greater the opportunity is for you as a trader.
+
+332
+00:18:34,897 --> 00:18:38,280
+原因很简单，显然，当风险事件进入市场时，市场需要相对激进地重新定价。
+The reason being, obviously, As the risk event enters the market, Markets need to reprice relatively aggressively.
+
+336
+00:18:44,560 --> 00:18:47,465
+关于他在交易池里交易时的一个情况，最终，德国央行发布了一则公告大家花了足足15到20分钟所有人才跑回交易池里在喝了几杯啤酒之后。
+About a situation where he was in the pits trading,
+
+337
+00:18:47,465 --> 00:18:50,370
+And ultimately, a German announcement came out From the Bundesbank,
+
+338
+00:18:50,370 --> 00:18:57,634
+and it took a good 15, 20 minutes For everyone to run back onto the Or run back into the pits after having a couple of pints,
+
+342
+00:19:04,680 --> 00:19:11,360
+这些消息最终传到了市场上。现在，这显然已经改变了，有了系统化的计算机和算法。
+That had ultimately hit the wires. Now, that’s changed, obviously, With systematic computers and algorithms.
+
+344
+00:19:11,580 --> 00:19:19,000
+现在已经改变了。因此，风险事件确实会让市场移动得非常非常快。它们的定价调整速度极快。
+That’s changed. Therefore, risk events do move the markets very, very quickly. They reprice themselves excessively quickly.
+
+346
+00:19:19,440 --> 00:19:21,980
+好的，这就是你首先需要理解的前提。
+Okay, so that’s the first premise to understand.
+
+347
+00:19:21,980 --> 00:19:25,366
+现在，在我们继续讨论一些模式之前，
+Now, before we move on and talk about some of the Patterns
+
+348
+00:19:25,366 --> 00:19:27,059
+是你将要学习的模式，
+that you’re going to learn
+
+349
+00:19:31,902 --> 00:19:36,398
+因为很少有人愿意讨论这个话题——
+Because it’s not something that many people Are willing to talk about—
+
+350
+00:19:36,398 --> 00:19:38,819
+只是因为他们不理解杠杆。
+only because they don’t understand leverage.
+
+351
+00:19:39,140 --> 00:19:41,696
+好的，这就是为什么你很少听到有人讨论这个话题。现在，你可能听说过或读到过关于杠杆的说法，
+Okay, that’s why you don’t hear many people Talking about it.
+
+352
+00:19:41,696 --> 00:19:43,663
+Now, what you might have heard or read about leverage,
+
+353
+00:19:43,664 --> 00:19:46,659
+说它是坏事，会让你账户爆仓，等等等等。
+It’s a bad thing, you blow up your account, etc., etc.
+
+354
+00:19:47,320 --> 00:19:50,554
+好的，我要告诉你，这其实不太符合事实。
+Okay, I’m going to tell you that’s rather unfactual.
+
+355
+00:19:50,554 --> 00:19:54,082
+好的，我要告诉你一个小秘密。
+Okay, I’m going to let you in on a little secret.
+
+356
+00:19:54,082 --> 00:19:58,198
+杠杆是唯一的方式，是唯一能快速建立账户的方式。
+Leverage is the only way, It’s the only way to build an account.
+
+357
+00:20:01,260 --> 00:20:06,187
+好的，现在，你们中很多人会说，‘不，这胡扯,’因为‘我一直很稳定，而且我在建立账户。’”
+Okay, now, a lot of you say, 'No, that’s rubbish,' Because 'I’m consistent and I’m building
+
+359
+00:20:06,966 --> 00:20:10,338
+是的，这也合理。你确实可以慢慢建立账户，没错。
+Yes, that’s fair enough. You can build an account slowly, no doubt.
+
+361
+00:20:12,180 --> 00:20:15,746
+你可以通过长期建立账户来保持盈利。
+You can be profitable over the long run by building an account.
+
+362
+00:20:15,746 --> 00:20:20,798
+我的意思是，你可以用这种方式给自己发工资，从而变得非常成功并提前退休。
+I mean, pay yourself in a manner that allows you to become highly successful and retire earlier.
+
+364
+00:20:27,260 --> 00:20:31,400
+我希望你从风险的角度来思考这个问题。现在问问你自己，
+I want you to think of it in terms of risk. Ask yourself now
+
+365
+00:20:31,400 --> 00:20:39,025
+并且把这个问题写下来：如果我告诉你某个事件发生的可能性是85%，你愿意承担多少风险？
+and write this question down: How much risk would you be willing to take
+
+366
+00:20:39,025 --> 00:20:45,017
+if I told you the likelihood of an event occurring was 85%?
+
+368
+00:20:49,560 --> 00:20:52,120
+你们所有人都应该对自己说，‘如果有85%的概率，我可能会承担稍大一点的风险，因为这很合理。’
+All of you should be saying to yourselves,
+
+369
+00:20:52,120 --> 00:20:56,600
+'If there’s an 85% chance, I’m probably going to take slightly more risk,
+
+370
+00:20:56,600 --> 00:20:57,880
+because it makes sense.'
+
+371
+00:20:57,920 --> 00:21:00,580
+结果发生的概率要高得多。
+There’s a much higher probability for the outcome to occur.
+
+373
+00:21:02,440 --> 00:21:09,625
+这门课程的全部目的，教你客观方法的全部目的，以及如何培养自己的优势的全部目的，最终开始识别出某些A+级策略。
+The whole purpose of this course, the whole purpose of teaching you an objective approach
+
+374
+00:21:09,625 --> 00:21:16,810
+and how to develop your own edge, is to allow you to develop a process
+
+375
+00:21:16,810 --> 00:21:21,122
+where you finally begin to recognize certain A-plus strategies
+
+377
+00:21:21,122 --> 00:21:24,475
+能给你85%的成功概率。
+that give you an 85% probability of success.
+
+379
+00:21:24,660 --> 00:21:32,167
+比如成功突破，比如Delta回撤，比如‘大象’形态，或者失败的‘大象’形态，当你识别出这些时，这就是你需要学会承担更多风险的时候，而这最终等同于使用更高的杠杆。
+i.e., a successful breakout, i.e., a delta unwind, i.e., an 'elephant', a failed 'elephant',
+
+380
+00:21:32,167 --> 00:21:39,232
+when you recognize those, that’s when you need to learn to take on more risk,
+
+381
+00:21:39,232 --> 00:21:43,207
+which is ultimately synonymous with taking on more leverage.
+
+383
+00:21:43,207 --> 00:21:45,415
+杠杆的本质就是这样。
+That’s all leverage is.
+
+386
+00:21:46,080 --> 00:21:50,960
+关于杠杆，第一点，他们不一定真正理解杠杆。
+when it comes to leverage is, one, they don’t necessarily understand leverage.
+
+388
+00:21:52,720 --> 00:21:55,120
+但第二点——我之前犯的致命错误——是执行方法。
+But the second thing—where I went horribly wrong—is the execution methodology.
+
+389
+00:21:55,120 --> 00:22:06,880
+当我们用杠杆执行交易时，显然，这是新领域，陌生领域，让人不适的领域，我们承担的风险比以往更大。
+When we execute with leverage, Obviously, it's new territory, unfamiliar territory, uncomfortable territory, we're risking more than we used to.
+
+392
+00:22:06,880 --> 00:22:12,760
+但最终，你需要以相同的方式执行。
+But ultimately, you need to execute in the same manner.
+
+393
+00:22:13,720 --> 00:22:15,940
+好吧，所以执行流程是一样的。
+Okay, so it's the same execution process.
+
+394
+00:22:18,520 --> 00:22:20,920
+但这里我可以给你一个小建议。
+But here's a little tip I can give you.
+
+395
+00:22:21,060 --> 00:22:23,800
+如果你真的想变得更好，先从熟练开始。
+If you really want to be good, get good at it for a start.
+
+397
+00:22:24,600 --> 00:22:25,580
+先小规模试水。
+Get your feet wet.
+
+398
+00:22:28,400 --> 00:22:32,200
+好吧，只把它应用在你的A级形态上。
+Okay, so apply it only to your A-star setups.
+
+399
+00:22:32,500 --> 00:22:34,614
+一开始，可以先应用到每周一次的机会上，那个你确信，肯定能从市场中获利的形态上。好吧，如果你习惯用——比如——我们假设是5手，
+Start off with applying it to, if it's only once a week,
+
+400
+00:22:34,614 --> 00:22:35,847
+that one setup where you know, guaranteed,
+
+401
+00:22:35,847 --> 00:22:37,258
+you can take three prices from the market.
+
+402
+00:22:37,920 --> 00:22:45,100
+试试看。
+Okay, if you're used to using maybe a— I don’t know, whatever— let’s call it a five-lot.
+
+404
+00:22:46,260 --> 00:22:48,701
+试试10手。试试看。
+Give it a go. Try a ten-lot. Try it.
+
+405
+00:22:48,701 --> 00:22:52,499
+好吧，因为迟早你得尝试。
+Okay, because you're going to have to get your feet wet at some time.
+
+406
+00:22:52,500 --> 00:22:56,194
+杠杆的真正艺术，就是先小规模试水。
+That's the real art to leverage, is you have to start by getting your feet wet.
+
+408
+00:22:57,720 --> 00:23:05,280
+你会发现1手、10手、100手之间没有区别。
+what you're going to recognize is there's no difference between a one-, a ten-, a hundred-lot. There is no difference.
+
+410
+00:23:05,280 --> 00:23:09,060
+市场会在同一个价格接下所有单子。
+The market will take it all at the same price.
+
+411
+00:23:09,500 --> 00:23:13,920
+好吧，显然，有些市场可能流动性稍薄，100手可能在一个价格上难以成交，
+Okay, obviously, some markets are maybe a bit thinner. A hundred lots might struggle at one price,
+
+412
+00:23:13,920 --> 00:23:18,902
+但本质上，你几乎能轻松执行我们讨论过的每一个策略。好吧，
+but in essence, you'll be able to execute almost every strategy we've dealt with with relative ease. Okay,
+
+414
+00:23:20,564 --> 00:23:22,779
+你会发现没有区别。
+you're going to recognize there is no difference.
+
+415
+00:23:22,780 --> 00:23:27,671
+最后一种使用杠杆的方法，好吧，这可能是最重要的一种，而且这也是帮助我的方法，就是学会分配资金。
+The last way in which you can learn to employ leverage, okay,
+
+416
+00:23:27,671 --> 00:23:33,378
+and this is probably the most important one, and the one that helped me,
+
+417
+00:23:33,378 --> 00:23:35,417
+is learn to allocate capital.
+
+419
+00:23:36,940 --> 00:23:38,020
+好吧，为什么？
+Okay, why?
+
+420
+00:23:39,920 --> 00:23:43,376
+因为当我们谈到杠杆时，我们害怕的是未知。我们不知道会发生什么。
+Because what we're afraid of when it comes to leverage, is we're afraid of the unknown.
+
+422
+00:23:43,376 --> 00:23:45,320
+我们不知道自己会赢还是输。
+We don’t know what’s going to happen.
+
+423
+00:23:45,800 --> 00:23:47,880
+这是不一样的东西。是陌生的。所以我们害怕。
+We don’t know whether we’re going to win or lose.
+
+424
+00:23:47,960 --> 00:23:50,380
+这是不一样的东西。是陌生的。所以我们害怕。
+It’s something different. It’s unfamiliar. So, we’re afraid.
+
+425
+00:23:50,480 --> 00:23:54,480
+我们的胸口会因为未知而心跳加速。
+We get that pounding heartbeat in our chest—the unknown.
+
+426
+00:23:54,800 --> 00:23:57,040
+那么，如何消除未知呢？很简单。
+So, how do we eradicate the unknown? Well, it’s very simple.
+
+427
+00:23:58,300 --> 00:23:59,360
+我们消除资金风险。
+We eradicate capital.
+
+428
+00:24:00,780 --> 00:24:05,220
+这是一个非常好的经验法则。这是我坚信的一点，
+And this is a great rule of thumb. This is something I firmly believe in
+
+429
+00:24:05,220 --> 00:24:10,480
+当我想要真正掌握使用杠杆的技能时。所以，你拿出你的账户，
+when it comes to wanting to learn the real skill of employing leverage. So, you take your account,
+
+431
+00:24:10,660 --> 00:24:12,720
+假设是一个10,000美元的账户。
+Let’s say it’s a $10,000 account.
+
+435
+00:24:25,460 --> 00:24:29,380
+你对自己说，日常交易中，我需要给自己至少20天——20个爆仓的日子。
+And you say to yourself, on a day-to-day basis, I need to give myself at least 20 days—20 blowout days.
+
+437
+00:24:29,380 --> 00:24:31,440
+如果你是一个稳定的交易者，你不应该需要超过20个爆仓日。
+If you’re a consistent trader, you shouldn’t need more than 20 blowout days.
+
+438
+00:24:32,820 --> 00:24:35,220
+到今天为止。你要做的是，进入市场，
+to today. What you do is, you come into the market,
+
+439
+00:24:35,720 --> 00:24:39,060
+发现一个胜率85%的交易。
+you recognize a trade that is an 85% probability.
+
+440
+00:24:39,900 --> 00:24:42,000
+你对自己说，‘我的止损是3个Tick。’
+And you say to yourself, 'I’ve got a 3-tick stop.'
+
+441
+00:24:43,480 --> 00:24:45,500
+假设每个Tick是30美元。
+The tick increment—let’s say—is $30.
+
+442
+00:24:46,660 --> 00:24:50,500
+因此，我可以承受5 × 30美元，然后买入15手。
+Therefore, I can take 5 × 30, and I buy 15 lots.
+
+444
+00:24:51,360 --> 00:24:53,100
+结果会怎样，就怎样。
+And what will be, will be.
+
+445
+00:24:53,100 --> 00:25:01,660
+无论我亏500美元还是赚500美元，这不重要。
+Whether I lose $500 or make $500, that’s not important. The single most important lesson
+
+447
+00:25:01,660 --> 00:25:06,693
+你通过采用这个流程将学到的最重要的一课是为什么以及如何杠杆能在你的职业生涯中发挥极大的帮助作用并让你进入学习曲线的下一个层次。好吧，所以请理解，
+you will learn from adopting this process is why and how
+
+448
+00:25:06,693 --> 00:25:10,811
+leveraging can be so immensely helpful in your career
+
+449
+00:25:10,811 --> 00:25:17,676
+and get you onto that next level of your learning curve. Okay, so please understand
+
+451
+00:25:17,680 --> 00:25:21,440
+杠杆并不是交易者每天都会使用的工具。
+that leverage is not something traders use every single day.
+
+453
+00:25:22,120 --> 00:25:28,440
+他们只在结果对自己有利时才会使用。
+They utilize it when and only when the odds of an outcome are stacked in their favor.
+
+456
+00:25:30,520 --> 00:25:31,820
+这才是杠杆的真正艺术所在。
+That’s the real art to leverage.
+
+457
+00:25:31,940 --> 00:25:35,060
+希望你现在理解了。别害怕去使用它。
+Hopefully, you understand that now. Don’t be afraid to employ that.
+
+458
+00:25:35,260 --> 00:25:35,840
+试试看。
+Give it a crack.
+
+459
+00:25:36,640 --> 00:25:38,160
+这在我的交易生涯中确实帮了我很多。
+It definitely helped me a lot in my career.
+
+461
+00:25:41,100 --> 00:25:43,062
+现在，我们来聊聊风险事件交易中的三种模式。这些是你将会看到的三种模式。
+Now, let’s talk a little bit about
+
+462
+00:25:43,062 --> 00:25:46,498
+the three types of patterns you’re going to see in risk event trading.
+
+463
+00:25:50,700 --> 00:25:51,580
+这就是你会看到的三种模式。
+These are the three patterns you’ll see.
+
+465
+00:25:54,620 --> 00:25:56,020
+第一种，显然是我们称之为的趋势-趋势模式。
+The first is, obviously, what we call a trend-trend.
+
+466
+00:25:56,760 --> 00:25:58,040
+风险事件发生了。
+So the risk event occurs.
+
+467
+00:26:00,520 --> 00:26:06,741
+事件可以是央行决策、经济数据，甚至是市场发布的信息，比如财报发布或意外财报——市场未预期到的某些事情。
+Events can be a central bank, economic data,
+
+468
+00:26:06,741 --> 00:26:13,740
+and even a market release, like an earnings release
+
+469
+00:26:13,740 --> 00:26:21,519
+or surprise earnings release—something the market wasn’t expecting.
+
+472
+00:26:23,240 --> 00:26:31,500
+好的，在这种情况下，市场可能会以三种独特方式反应。
+Okay, now in this instance, the market can respond in three unique ways.
+
+473
+00:26:39,320 --> 00:26:46,000
+初始上涨，非常激进，大量单印区、未交易区域、流动性差，
+initial rally, quite aggressive, a lot of single prints, untraded area, illiquid,
+
+475
+00:26:48,560 --> 00:26:53,000
+浅回调——几乎没有反应，只是算法获利了结，并非真正反应——
+shallow pullback—hardly a response, profit-taking from the algorithms, not really a response—
+
+477
+00:26:53,480 --> 00:27:00,160
+然后延伸并形成次级上升趋势。这是我们能观察到的第一种模式。
+before an extension and a secondary trend higher. That’s the first pattern we can observe.
+
+478
+00:27:00,940 --> 00:27:02,900
+我们会在实盘案例中看一个例子。
+We’ll look at an example of that in the live examples.
+
+480
+00:27:04,660 --> 00:27:11,560
+第二种，是所谓的主动-整固模式。我们看到主动推动，
+The second is, again, what’s called an initiative consolidation. We get the initiative. Looks
+
+481
+00:27:12,060 --> 00:27:17,280
+看起来和第一波不同，上涨过程中流动性更充足。
+different to the first leg, more liquidity on the way up.
+
+483
+00:27:20,600 --> 00:27:33,420
+第一种例子：流动性非常低，所以市场出现主动上涨波段。
+The first example: there's very little liquidity, so the market has an initiative leg up.
+
+485
+00:27:34,120 --> 00:27:42,460
+遇到卖方反应。所以卖方反应退缩，只是在分销。
+Runs into response. So, response of sellers backs off, just distributing.
+
+487
+00:27:43,820 --> 00:27:48,400
+但我们有效保持了主动性。市场可以延伸，
+But we hold the initiative effectively. The market can extend,
+
+489
+00:27:50,460 --> 00:27:55,020
+回落，但总体上能维持买盘的时间远长于上涨阶段。
+drop lower, but in general, to hold a bid for a lot longer than the upside.
+
+492
+00:28:03,820 --> 00:28:04,680
+第三种非常简单：主动-反转模式。
+The third is very simple: an initiative initiative.
+
+493
+00:28:07,600 --> 00:28:11,620
+风险事件发生，市场反转整个走势，继续下跌。
+The risk event hits and the market reverses the entire move, continues lower.
+
+495
+00:28:13,580 --> 00:28:16,407
+看一个例子。
+Look at an example of this.
+
+496
+00:28:16,407 --> 00:28:24,419
+现在，我要展示的是：风险事件越大或机会越好，
+Now, what I'm going to show is: the bigger the risk event or the greater the opportunity.
+
+498
+00:28:24,820 --> 00:28:28,628
+你应该立刻认出——在第一种例子中，如果市场的行为表现如此，那就是一个非常独特的机会。
+Straight away, you should recognize—in the first example,
+
+499
+00:28:28,628 --> 00:28:32,013
+if the market’s behavior aligns like this,
+
+500
+00:28:32,013 --> 00:28:34,554
+that’s a very unique opportunity.
+
+501
+00:28:34,556 --> 00:28:35,181
+对吧？为什么？
+Okay, why?
+
+502
+00:28:35,181 --> 00:28:38,619
+因为如果你够激进，市场结构会允许你
+Because if you’re aggressive, the market’s structure allows you
+
+503
+00:28:38,619 --> 00:28:41,119
+能在很短时间内赚很多钱。
+to make a lot of money very quickly.
+
+504
+00:28:44,167 --> 00:28:48,254
+你需要利用杠杆在这种情况下，因为你知道趋势模式一的概率很高：或者说，整固，趋势模式二。
+you need to utilize liquidity, or, sorry, you need to utilize leverage in this situation,
+
+505
+00:28:48,254 --> 00:28:53,159
+because you know there’s a high probability for trend number one: or, sorry, consolidation; trend number two.
+
+509
+00:28:59,920 --> 00:29:06,270
+然而，在这个例子中，你可能一开始要积极进场，获利了结，让市场回调，再尝试一次。
+However, in this example, you might want to be aggressive initially,
+
+510
+00:29:06,270 --> 00:29:13,199
+take some profits, allow the market to come back and try again.
+
+513
+00:29:14,880 --> 00:29:17,140
+所以第二个例子中，机会仍然存在。
+So in the second example, the opportunity is still there.
+
+514
+00:29:17,140 --> 00:29:24,800
+机会依然存在，但比第一个例子稍小一些。同样，获胜的收益也更小。
+An opportunity still exists, but it’s slightly less than the first example. Equally, the winners are smaller.
+
+516
+00:29:27,260 --> 00:29:31,900
+在第三个例子中，你必须非常谨慎。
+In the third example, again, this is one where you have to be very cautious.
+
+517
+00:29:32,160 --> 00:29:36,960
+在这个例子中，市场先朝一个方向延伸并启动，然后又朝反方向启动。
+In this example, the market extends and initiates one way and initiates in the opposite direction.
+
+519
+00:29:36,960 --> 00:29:42,480
+现在，你可能注意到在上一个单元，我们确实提到了关键防线。
+Now, you would have noticed in the previous unit, we did speak about a line in the sand.
+
+522
+00:29:42,680 --> 00:29:45,601
+显然，每一次风险事件——央行、经济数据、市场发布——我们总会设一条关键防线，因为如果价格回落到那条红线下方，在同一个交易时段内，我们总会看到偏向的反转，或者Delta仓位的清仓。
+Obviously, with every single risk event—central bank, economic data, market releases—
+
+523
+00:29:45,601 --> 00:29:51,201
+we always put a line in the sand, because if we do get back below that red line on the same trading session,
+
+524
+00:29:51,201 --> 00:29:55,098
+we will always get an unwind of the bias or a flush-out of the delta positioning.
+
+528
+00:30:00,320 --> 00:30:03,560
+所以在第三个例子中，我们可以看到机会——我不想说机会更小，但机会几乎不存在。
+So in the third example, we can see that opportunity—
+
+529
+00:30:03,560 --> 00:30:08,098
+I don’t want to say it’s smaller, but opportunity is almost non-existent.
+
+531
+00:30:08,240 --> 00:30:09,680
+所以这通常是我们所说的交易者的市场。
+So this is what we would call typically a trader’s market.
+
+532
+00:30:09,680 --> 00:30:13,331
+你必须真正关注你学过的每一个原则，才能最终在这个第三个例子中成功执行。
+You have to really pay attention to every one of the principles
+
+533
+00:30:13,331 --> 00:30:16,678
+you’ve learned to ultimately execute successfully in this third example.
+
+535
+00:30:16,680 --> 00:30:20,508
+这三种交易策略的区别仅仅在于极端事件的程度。这是黑天鹅事件的程度。
+The difference between each of these three trade strategies
+
+536
+00:30:20,508 --> 00:30:26,038
+is simply the degree of outlier. It’s the degree of black swan.
+
+538
+00:30:26,140 --> 00:30:34,580
+这是什么意思呢？换句话说，市场对信息的定价越低，
+So what do you mean by that? In other words, The lower the price the market is for the information,
+
+541
+00:30:34,580 --> 00:30:39,060
+它移动的可能性就越大——就像第一个例子。
+the more likely it’s going to move—like example one.
+
+543
+00:30:40,280 --> 00:30:44,148
+如果它已经被预期并反映在价格中，且市场已经预期到了，它最可能的移动方式就是模式三。
+If it’s already expected and priced in, and the market was anticipating it,
+
+544
+00:30:44,148 --> 00:30:47,188
+it’s going to move most likely like pattern number three.
+
+545
+00:30:47,189 --> 00:30:49,399
+这就是关键核心所在。
+And that’s the key crux to it.
+
+547
+00:30:49,640 --> 00:30:54,701
+关键在于去交易多个数据片段，交易多个央行发布、经济数据发布，
+The crux is to go and trade a number of data pieces,
+
+548
+00:30:54,701 --> 00:30:58,497
+trade a number of central bank releases, economic releases,
+
+549
+00:30:58,497 --> 00:31:03,136
+并学会识别这三种模式何时在起作用。
+and learn to identify when these three patterns are in play.
+
+553
+00:31:03,140 --> 00:31:07,441
+显然，我们想要投入的注意力、精力和专注，应该放在趋势型模式上，因为这是机会最大的模式。
+Obviously, the attention we want to give and the energy and the focus
+
+554
+00:31:07,441 --> 00:31:13,398
+is on the pattern that trends, because that’s the one we’ve got the most opportunity in.
+
+557
+00:31:13,400 --> 00:31:17,540
+不过，话虽如此，我们仍能利用第二种和第三种模式的机会，但需要学会识别交易这些模式的独特方法。这些方法都非常独特。
+However, that being said, we can still take advantage of the opportunity
+
+558
+00:31:17,540 --> 00:31:22,025
+in the second and third patterns, but we need to learn to identify
+
+559
+00:31:22,025 --> 00:31:24,097
+very unique approaches to trading those.
+
+561
+00:31:24,100 --> 00:31:25,988
+现在，我们来看这些方法，我会向你们展示如何在三种交易模式上执行操作。
+So let’s go through those approaches now,
+
+562
+00:31:25,988 --> 00:31:30,238
+and I’m going to show you where we’d execute on all three of the trade patterns.
+
+564
+00:31:31,180 --> 00:31:33,624
+现在，我喜欢这个交易策略的原因是，我在职业生涯早期犯过的一个错误，可能你们也犯过，就是你读了某些东西——无论是加拿大的通胀报告，还是央行报告，你可能读了《金融时报》或《华尔街日报》，然后你意识到：哦，这是个重大数据，这是改变游戏规则的事件。
+Now, the reason I love this trade strategy is because
+
+565
+00:31:33,624 --> 00:31:37,778
+one of the mistakes I made very early in my career and probably most of you make
+
+566
+00:31:37,778 --> 00:31:41,932
+is you read something— whether it’s the inflation report from Canada, maybe a central bank report,
+
+567
+00:31:41,932 --> 00:31:44,864
+You may have read the Financial Times or the Wall Street Journal
+
+568
+00:31:44,864 --> 00:31:48,777
+and what you recognize is: Oh, this is really big data, this is a game changer.
+
+575
+00:31:52,880 --> 00:31:54,524
+但实际上，你这样做时，你只是在强化自己从某些读物中形成的偏见。
+When in fact, what you’re doing there
+
+576
+00:31:54,524 --> 00:31:57,196
+is you’re simply enforcing a bias from something you might have read.
+
+577
+00:31:57,197 --> 00:31:59,458
+你是在根据所读内容强化自己的理解。
+You’re enforcing your understanding based on something you’ve read.
+
+578
+00:32:07,080 --> 00:32:09,795
+现在，在看执行方法前，我们先来回顾一两个其他原则，帮助理解：
+Now, before we look at the execution methodology, let’s go over one or two other principles to understand:
+
+580
+00:32:11,940 --> 00:32:22,320
+首先，当这些事件发生时，市场会出现流动性不足。流动性变得异常宝贵，
+First and foremost, when we have these events, there are illiquid markets. Liquidity becomes a premium,
+
+582
+00:32:23,160 --> 00:32:27,340
+参与者会退出市场。为什么要在未知风险面前承担风险呢？
+participants disappear from the market. Why take on risk when there’s potential for the unknown?
+
+584
+00:32:28,380 --> 00:32:34,849
+波动性上升的第二个原因是，随着价格上下波动——记得我们之前说的——会吸引越来越多的参与者。
+The second reason volatility arises is that as price shifts, as price moves up and down—
+
+585
+00:32:34,849 --> 00:32:39,297
+remember, as we said— it brings in more and more participants.
+
+587
+00:32:39,500 --> 00:32:43,990
+所以，价格波动的动态会吸引更多参与者。
+So, the dynamic of price shifting brings in more participants.
+
+588
+00:32:43,990 --> 00:32:47,133
+话虽如此，我之前也提到过，
+That said, as I’ve mentioned before,
+
+589
+00:32:53,600 --> 00:32:56,580
+波动性会引发更多波动性。
+Volatility leads to more volatility.
+
+590
+00:32:58,680 --> 00:33:03,240
+第三个原因：不确定性——这才是真正的关键——
+Another reason: uncertainty—this is the real key—
+
+591
+00:33:04,880 --> 00:33:10,900
+不确定性意味着人们会变得不那么在意价格。
+uncertainty means people become less price-sensitive.
+
+592
+00:33:10,920 --> 00:33:15,130
+所以，当出现未知事件或市场担忧的事情时，人们不会考虑风险收益，他们不会考虑其他任何东西，只会想，‘我不在乎价格’
+So, when there’s an unknown event or something the market is concerned about,
+
+593
+00:33:15,130 --> 00:33:20,544
+people don’t think in terms of risk-reward, they don’t think in terms of anything other than,
+
+594
+00:33:20,544 --> 00:33:21,748
+'I’m not price-sensitive;
+
+595
+00:33:21,748 --> 00:33:24,756
+我必须立刻平仓，清空我的头寸。
+I need to just get out and clear my book.’
+
+596
+00:33:24,760 --> 00:33:30,040
+这一点很重要，因为这些是风险事件交易背后的核心规则和原则。
+And that’s important to understand because, again, these are the underlying rules and principles that govern risk-event trading.
+
+598
+00:33:30,620 --> 00:33:34,020
+市场会变得流动性不足。
+The markets will be illiquid.
+
+599
+00:33:34,160 --> 00:33:38,100
+不同策略、不同玩家，对吧？
+As prices shift, it’s going to bring in more and more participants. Different strategies, different players,
+
+601
+00:33:38,760 --> 00:33:40,280
+耗尽性高点、耗尽性低点、趋势、趋势。
+exhaustion high, exhaustion low, trend, trend.
+
+602
+00:33:41,400 --> 00:33:43,760
+这会带来更大的波动，因为波动本身会孳生波动。
+It’ll bring more volatility because volatility breeds volatility.
+
+603
+00:33:44,460 --> 00:33:47,460
+显然，不确定性意味着人们对价格不敏感。
+And obviously, uncertainty means people are price-insensitive.
+
+604
+00:33:47,720 --> 00:33:51,460
+所以，你不想逆着某些风险事件操作。
+So you don’t want to be fading certain risk events.
+
+605
+00:33:51,780 --> 00:34:01,926
+现在，显然，我能给你的风险事件交易关键建议之一非常简单。
+Now, obviously, note that one of the key tips I can give you for risk event trading is very simple.
+
+607
+00:34:01,926 --> 00:34:06,999
+流动性不足意味着足迹图会变得更有参考价值。
+A lack of liquidity implies the footprint becomes more relevant.
+
+608
+00:34:07,880 --> 00:34:09,260
+所以，流动性越低，足迹图作为工具就越有价值。
+So less liquidity means the footprint is a far more valuable tool.
+
+610
+00:34:22,570 --> 00:34:29,210
+流动性越低，你就能更清晰地看到某些交互。
+Less liquidity means you’re going to see and spot certain interactions a lot clearer.
+
+611
+00:34:29,470 --> 00:34:32,550
+色块线会更清晰，交互也会更清晰。
+The color lines will be clearer. The interactions will be clearer.
+
+612
+00:34:33,390 --> 00:34:40,830
+比如，数据公布后，市场上涨。
+For example, the data comes out, the market moves up.
+
+613
+00:34:41,230 --> 00:34:44,230
+你能立刻知道高点发生了什么。
+You’re going to know straight away what’s happening at the highs.
+
+615
+00:34:44,990 --> 00:34:46,430
+有人在抛售吗？有人在买入吗？
+Is someone selling it? Is someone buying it?
+
+616
+00:34:46,430 --> 00:34:51,450
+你只需要看简单的吸收、色块线或Delta色块。
+You just need to see a simple bit of absorption, color lines, or color delta.
+
+617
+00:34:51,470 --> 00:34:53,924
+因此，作为一个经验法则——
+And that’s why, as a rule of thumb—
+
+618
+00:34:53,924 --> 00:34:55,833
+也是我这次策略分享的建议——
+and my tip for this strategy session—
+
+619
+00:34:58,430 --> 00:35:04,190
+所以要学会在经济数据、市场公告和央行事件中使用足迹图。
+So learn to utilize the footprint during economic data, market releases, and central bank events.
+
+621
+00:35:04,450 --> 00:35:08,230
+现在，在我们进入实际案例和实时示例之前，
+Now, before we move on to the actual examples as well as the live example,
+
+623
+00:35:12,110 --> 00:35:14,630
+最后一件我想讨论的是背景和准备。
+the last thing I want to discuss is context and preparation.
+
+624
+00:35:15,970 --> 00:35:18,566
+如果你关注我偶尔的实时交易，你会经常看到我在经济数据公布时交易，你会发现我总是准备得非常充分。
+If you follow the live trading I do sometimes,
+
+625
+00:35:18,566 --> 00:35:21,162
+you’ll often see me trade over economic data,
+
+626
+00:35:21,162 --> 00:35:24,047
+you’ll see that I’m always extremely well prepared.
+
+627
+00:35:24,310 --> 00:35:26,610
+我说的准备，是指基本面的准备。
+By preparation, I mean fundamentally.
+
+628
+00:35:27,050 --> 00:35:29,290
+我清楚知道将要公布什么数据。
+I know exactly what data is coming out.
+
+629
+00:35:29,570 --> 00:35:31,170
+我知道市场对什么敏感。
+I know what the market is sensitive to.
+
+630
+00:35:31,210 --> 00:35:32,410
+我知道哪些是极端事件。
+I know what the outliers are.
+
+631
+00:35:33,150 --> 00:35:40,370
+我会基于这些基本面制定某个策略。同时，我也了解技术面的格局。
+And I base a certain... I create a certain strategy based on those fundamentals. Equally, I know the technical landscape.
+
+633
+00:35:40,990 --> 00:35:43,590
+对吧？所以我会去观察他们可能突破的位置,
+Okay? So I go and observe where they keep potential breakouts,
+
+634
+00:35:43,890 --> 00:35:49,290
+他们守住的关键防线——是否有Delta，是否有技术面的机会？
+where they hold levels—is there a delta, is there some opportunity in terms of technical aspects?
+
+636
+00:35:49,410 --> 00:35:51,210
+所以我准备得非常充分。
+So I prepare extremely well.
+
+637
+00:35:51,290 --> 00:35:54,070
+这适用于每一个风险事件交易。
+And that goes for every single risk event.
+
+638
+00:35:54,190 --> 00:35:57,010
+对吧？如果你想精通这些，不能只会识别模式。
+Okay? If you want to become good at them, you can’t just know the patterns.
+
+640
+00:35:57,390 --> 00:36:00,230
+对吧？因为模式最终总会上演。
+Okay? Because the patterns will ultimately play out.
+
+641
+00:36:01,250 --> 00:36:04,670
+但你必须准备好根据出现的模式执行交易。
+But you have to be prepared to execute based on whichever pattern comes.
+
+643
+00:36:04,770 --> 00:36:10,930
+这最终归结为准备工作。其次——也是我强调每一个原则的原因,
+And that boils down to preparation. Second to that—and the reason, ultimately,
+
+644
+00:36:10,930 --> 00:36:17,694
+我突出了我们在这次策略会议开始时讨论的每一个原则,我们在本策略课程开始时提到的——你需要每一个原则来培养上下文理解能力。
+I highlighted every single one of the principles that we spoke about at the beginning of this strategy session—
+
+645
+00:36:17,694 --> 00:36:23,747
+is that you’re going to require every one of those principles to develop a contextual understanding.
+
+649
+00:36:24,370 --> 00:36:27,243
+换句话说，有时市场可能会趋势、趋势持续,你可能看数据想，‘哇，为什么涨这么高？’
+In other words, sometimes the market might go trend, trend,
+
+650
+00:36:27,243 --> 00:36:32,128
+and you might look at the data piece and think, 'Wow, why did that go so high?'
+
+652
+00:36:32,130 --> 00:36:33,290
+这甚至不是重要数据。
+It’s not even a big data piece.
+
+653
+00:36:33,570 --> 00:36:37,970
+对吧？你必须意识到，市场不会按你认为的方式运行。
+Okay? What you have to recognize is that the markets don’t do what you think they should do.
+
+655
+00:36:38,010 --> 00:36:40,330
+市场不会总是按你预期的方式波动。
+The markets don’t always move like you think they should.
+
+656
+00:36:40,590 --> 00:36:43,950
+对吧？并不一定是数据推动市场趋势持续。
+Okay? It’s not always necessarily a data piece that makes the market go trend, trend.
+
+658
+00:36:44,530 --> 00:36:50,870
+有时只是市场的背景或本质使然。同样，有时——
+Sometimes it’s simply the context or the nature of that market. Equally, sometimes—
+
+660
+00:36:50,870 --> 00:36:51,963
+唐纳德·特朗普可能当选总统，全世界都说,‘你知道，这会导致全球股市崩盘。’
+Donald Trump might become president
+
+661
+00:36:51,963 --> 00:36:56,335
+and the whole world says, 'You know, that’s going to create the biggest collapse in the global equity markets.'
+
+662
+00:36:56,335 --> 00:36:57,209
+结果会怎样？
+What ends up happening?
+
+664
+00:36:57,670 --> 00:37:02,510
+这是当年最低点，之后市场从那个点位反弹了16-17%。
+It’s the low of the year, and we rallied what, 16–17% from that point.
+
+665
+00:37:03,010 --> 00:37:09,650
+对吧？所以，整个课程的目的就是让你摆脱主观思维,
+Okay? So, again, the whole purpose of this entire course was to get you away from that subjective thinking,
+
+667
+00:37:09,850 --> 00:37:16,050
+摆脱那种重复报纸记者言论的想法，而是基于事实发展交易方法。
+that idea of regurgitating what newspaper journalists say, and instead develop an approach based on the facts.
+
+669
+00:37:16,310 --> 00:37:17,716
+对吧？
+Okay?
+
+670
+00:37:17,716 --> 00:37:18,921
+这就是三种模式要识别的内容。
+And that’s what the three patterns identify.
+
+671
+00:37:18,921 --> 00:37:21,784
+现在我来展示如何最终在每一种模式上执行交易。
+And now I’m going to show you, effectively, how to ultimately execute on every one of those patterns.
+
+672
+00:37:31,838 --> 00:37:33,129
+价格会剧烈波动。
+price is going to move very aggressively.
+
+674
+00:37:33,550 --> 00:37:34,730
+你会很难在这里入场。
+You’re going to struggle to get in here.
+
+675
+00:37:34,890 --> 00:37:36,230
+清楚了吗？
+Okay?
+
+676
+00:37:36,230 --> 00:37:37,691
+所以，你必须非常激进必须在第一个小幅整固区间执行交易
+So, you’ve got to be extremely aggressive,
+
+677
+00:37:37,691 --> 00:37:40,066
+and you’ve got to execute in this first little bit of consolidation.
+
+678
+00:37:39,620 --> 00:37:41,780
+这就是你应该入场的位置
+This is where you want to be entering,
+
+679
+00:37:45,990 --> 00:37:47,630
+这里可以设非常紧的止损
+You can keep a really tight stop here.
+
+680
+00:37:47,810 --> 00:37:52,962
+我想说的是——如果你有足够时间解读这个极端事件如果这个极端事件很大，你可以承受稍宽的止损
+What I would say—if you have enough time to interpret, obviously, the outlier—
+
+681
+00:37:52,962 --> 00:37:57,010
+if it is massive, you can afford a slightly wider stop.
+
+682
+00:37:57,130 --> 00:38:00,910
+为什么？因为本质上，如果他们给你更好的价格，你其实应该多买一些
+Why? Because, in essence, if they’re offering you a better price, you actually want to be buying more.
+
+684
+00:38:01,090 --> 00:38:02,090
+你不想被止损出局
+You don’t want to be stopping out.
+
+685
+00:38:02,350 --> 00:38:04,590
+清楚了吗？比如趋势交易
+Okay? So, an example of a *trend-trade*,
+
+686
+00:38:05,010 --> 00:38:10,630
+是的，你确实需要止损，但同样可以稍微宽一点
+yes, you do need to stop, but again, you can afford to be a little bit wider.
+
+688
+00:38:10,630 --> 00:38:11,810
+第二个例子——主动交易配合小幅整固
+Second example—*initiative* with a little bit of consolidation.
+
+689
+00:38:12,710 --> 00:38:17,250
+清楚了吗？在这个例子中，我们仍然想在上涨过程中做多
+Okay? In this example, again, We want to be a buyer on the way up,
+
+691
+00:38:17,390 --> 00:38:18,370
+在上涨过程中激进建仓
+aggressively on the way up.
+
+692
+00:38:23,310 --> 00:38:29,670
+尽量在低成交量区域或失衡区前入场，清楚了吗？
+Try and initiate in front of, i.e., the low-volume area or the imbalance. Okay?
+
+693
+00:38:29,730 --> 00:38:35,970
+注意，一旦突破这个初始回撤区域，要非常谨慎。为什么？
+Do note, once we take out this initial pullback zone, be very cautious. Why?
+
+695
+00:38:36,490 --> 00:38:38,375
+因为从其他单元我们知道，一旦市场重新进入低成交量区域或平衡区域，它可能开始填平过程
+Because we know through other units, once the market does re-enter
+
+696
+00:38:38,375 --> 00:38:39,575
+that low-volume area or that balanced area,
+
+697
+00:38:41,670 --> 00:38:51,990
+清楚了吗？同样，非常合理的止损，这在我们讨论失衡策略时已经讲过
+Okay? So again, very logical stops, which we obviously created when we spoke about imbalance strategies.
+
+699
+00:38:52,310 --> 00:38:54,630
+最后一个——反转交易
+The last one—again, reversal one.
+
+700
+00:38:55,350 --> 00:38:56,790
+这是我们需要保护自己的地方
+This is where we protect ourselves.
+
+701
+00:38:57,150 --> 00:39:02,490
+所以一旦做多，我们需要设定一个市场不应跌破的点位
+So once we get long, we do want to have a point where the market should not get below.
+
+704
+00:39:02,630 --> 00:39:06,190
+所以我们总是设止损，这是为了保护自己
+That’s why we always have a stop. It is to protect us
+
+706
+00:39:06,190 --> 00:39:09,624
+以防市场出现主动反转
+in the event that the market does do an initiative reversal.
+
+707
+00:39:09,624 --> 00:39:15,868
+我想说的是——这正是坚持不放弃的整个理念
+What I would say—and this is where the whole concept of, again, being determined and not just giving up.
+
+710
+00:39:16,470 --> 00:39:19,441
+这个交易策略为你提供的是，当我们突破那个起始点时你在这里买入并可能被止损的损失可以通过在红线（即我们的底线）卖出来弥补，快速清洗市场中的基本面偏差
+What this trade strategy does provide you with is
+
+711
+00:39:19,441 --> 00:39:22,081
+when we do take out that starting point,
+
+712
+00:39:22,081 --> 00:39:26,042
+the loss that you incurred buying here and potentially being stopped here,
+
+713
+00:39:26,042 --> 00:39:29,343
+you can make back by selling on the red line,
+
+714
+00:39:29,343 --> 00:39:31,983
+also known as our line in the sand,
+
+715
+00:39:31,983 --> 00:39:35,947
+for a quick little washout of the fundamental bias in the market.
+
+718
+00:39:36,290 --> 00:39:37,795
+这就是我们的三种策略方法
+those are our three strategy approaches.
+
+719
+00:39:37,795 --> 00:39:42,310
+现在，我们来看看这些策略在足迹图上是什么样子
+Now, let’s go and have a look and see what this looks like on the footprint charts.
+
+720
+00:39:42,310 --> 00:39:44,030
+然后来看一些实际案例。
+And then look at some practical examples.
+
+721
+00:39:44,970 --> 00:39:48,410
+在第一个例子中，这是12月的英国CPI数据。
+So, in our first example, This is the UK CPI from December.
+
+723
+00:39:48,770 --> 00:39:52,350
+日期是12月12日，图表是英镑，时间周期是5分钟K线。
+It was on the 12th of December, and it says the pound sterling. It’s a five-minute rotation.
+
+725
+00:39:52,810 --> 00:39:58,270
+注意数据在这里发布。显然，此时我们不知道
+Note the data came out here. Obviously, what we're looking for at this point, we don’t know
+
+727
+00:39:58,270 --> 00:40:00,325
+哪一种策略会被触发，但我们知道如何根据市场展现的模式来执行交易。
+which one of the three strategies is in play,
+
+728
+00:40:00,325 --> 00:40:02,380
+but we do know how we want to execute
+
+729
+00:40:02,380 --> 00:40:04,208
+based on whichever pattern the market shows us.
+
+730
+00:40:04,370 --> 00:40:06,283
+这样我们就能始终保持客观，而不是强加太多主观看法给市场。
+So that allows us to be objective at all times
+
+731
+00:40:06,283 --> 00:40:08,388
+and not enforce too much of an opinion on the market.
+
+732
+00:40:08,390 --> 00:40:13,970
+现在，注意市场突然上涨，然后出现了大量吸收。
+Now, note: market blipped up and we suddenly got quite a lot of absorption.
+
+734
+00:40:14,150 --> 00:40:20,470
+所以，我们本可以在这里做多，假设这是主动与整固的潜在模式。
+So, we could have been a buyer in this, assuming this was a potential for initiative and consolidation.
+
+736
+00:40:21,250 --> 00:40:23,450
+随后市场创新高后回落。
+We then got a new high, market pulled back.
+
+738
+00:40:23,670 --> 00:40:25,270
+这就是我们的小小线索。
+This is our gentle little clue.
+
+739
+00:40:25,270 --> 00:40:27,710
+可以看到，这出现在上涨过程中卖盘的底部。
+So we can see this does occur at the base of the selling that we received on the way up.
+
+741
+00:40:27,710 --> 00:40:35,670
+最终，我们再次看到多头在此承接市场并买入。
+And ultimately, we can see again the buyers sat there just absorbing the market as well as buying.
+
+743
+00:40:35,870 --> 00:40:38,250
+一旦这个位置被突破，市场随即延伸。
+Once that got taken out, the market then did extend.
+
+745
+00:40:38,370 --> 00:40:41,142
+因此，我们很容易识别出这笔交易不会继续趋势性发展，可能更倾向于分销型或反转型的交易模式。
+So, we were very easily able to recognize
+
+746
+00:40:41,142 --> 00:40:45,646
+that this trade wasn’t going to quite continue in a trend-like fashion
+
+747
+00:40:45,646 --> 00:40:52,924
+and potentially we were on for some form of either more of a distribution Type play or even a reversal-type play.
+
+748
+00:40:56,587 --> 00:40:59,151
+and began the process of filling out
+
+749
+00:40:59,151 --> 00:41:03,549
+before then actually even—not just getting below it but ultimately reversing.
+
+754
+00:41:03,670 --> 00:41:06,370
+所以，这是我之前提到的第一个反转案例。
+So, this is the first example like I was saying to you in terms of reversal.
+
+756
+00:41:06,650 --> 00:41:10,838
+在反转交易中，通常会发生什么？是的，你可能一开始在高位做多亏损，这是可以接受的，但别忘了，市场总会给你另一个机会，如果你把握住了，你本可以在这里做空，寻找潜在的趋势延续。
+What will always happen in a reversal play is, yes, you might lose money initially
+
+757
+00:41:10,838 --> 00:41:13,071
+being a buyer higher up, which is fine,
+
+758
+00:41:13,071 --> 00:41:16,701
+but don’t forget that the market will always give you another opportunity,
+
+759
+00:41:16,701 --> 00:41:21,168
+and if you switched on to it, you could have been a seller at this point,
+
+760
+00:41:21,168 --> 00:41:22,287
+looking for potential continuation.
+
+762
+00:41:22,770 --> 00:41:25,742
+好吧，另外，如果你没在这里做空——这里有一个内包K线——市场又给了你一次机会，直到出现非常激进的Delta向下转移。
+Okay, also, if you weren’t a seller at this point—
+
+763
+00:41:25,742 --> 00:41:27,904
+a little bit of an inside candle here—
+
+764
+00:41:27,904 --> 00:41:29,255
+gain gave you another opportunity
+
+765
+00:41:29,255 --> 00:41:32,229
+before we had the very aggressive delta shift to the downside.
+
+766
+00:41:33,190 --> 00:41:37,950
+好吧，这就是我们的第一个交易案例。第二个案例是黄金。
+Okay, so that’s our first trade example. Our second example is gold.
+
+767
+00:41:38,150 --> 00:41:40,610
+这是12月的美联储议息会议。
+Now, this is from the FOMC in December.
+
+768
+00:41:41,150 --> 00:41:45,406
+显然，这是12月13日的图表，这里我没有具体数据。
+Now, note, obviously, this is on the 13th of December, and again, I haven’t really got the numbers here.
+
+770
+00:41:45,406 --> 00:41:47,108
+我更想关注颜色的变化。
+I want to focus more on the colors.
+
+771
+00:41:49,682 --> 00:41:52,582
+利率维持‘将再次加息’的预期。
+rates remained with the idea that they’re going to hike again
+
+772
+00:41:54,010 --> 00:42:00,950
+你能看到极端价位和整个图表上都有很多深色。
+And what we can see is a lot of dark colors at the extremes and all over the show.
+
+774
+00:42:01,010 --> 00:42:09,870
+所以你能看到深粉色、深粉色、深粉色，深蓝色、深蓝色。
+So we can see dark pink, dark pink, dark pink, dark blue, dark blue.
+
+776
+00:42:09,870 --> 00:42:11,746
+现在，有趣的是，显然，如果我们从本质上看市场最终的表现，最终它确实上涨了。
+Now, what’s interesting about this is, obviously,
+
+777
+00:42:11,746 --> 00:42:14,796
+if we look in essence at what the market did at the end,
+
+778
+00:42:14,796 --> 00:42:15,970
+ultimately, it did go higher.
+
+779
+00:42:17,850 --> 00:42:21,570
+所有的抛售都被买家吸收了。
+was that all of the selling was being absorbed by buyers.
+
+780
+00:42:21,650 --> 00:42:27,390
+换句话说，价格下跌时，但最终买家获胜。净结果：出现了高成交量的寻顶。
+In other words, markets came down prices, but ultimately, the buyers won. The net result: we had a high-volume search.
+
+782
+00:42:27,770 --> 00:42:29,150
+好，下一次波动中我们又能看到这个现象。
+Okay, we can see it again in the next rotation.
+
+783
+00:42:29,230 --> 00:42:33,910
+看这些深色。所有的抛售、空头的胜利，
+Look at the dark colors. So, all that selling, all that victory taking place from the sellers,
+
+785
+00:42:34,530 --> 00:42:36,910
+但最终，价格开始上涨。好，我们开始看到买家变得更积极、更积极，
+but ultimately, prices are starting to rise. Okay, we started to see the buyers become more aggressive, more aggressive,
+
+787
+00:42:42,770 --> 00:42:45,790
+在最终推高价格之前。
+before ultimately moving prices higher.
+
+788
+00:42:46,530 --> 00:42:48,150
+好，这是第二个例子。
+Okay, so that’s a secondary example.
+
+789
+00:42:48,430 --> 00:42:52,210
+这更像是一个小幅上涨后的整固。
+Again, this is a little bit more of a blip up, then consolidate.
+
+790
+00:42:52,630 --> 00:42:55,190
+好，所以一开始，没有真正可交易的机会。
+Okay, so straight away, no real tradable opportunity.
+
+791
+00:42:55,290 --> 00:43:02,790
+就像我说的，第一个机会——趋势-趋势——是非常直接的可交易机会。第二个机会稍微差一点。
+And like I said, opportunity number one—trend, trend—is a very straightforward tradable opportunity. Opportunity number two, slightly less.
+
+792
+00:43:03,090 --> 00:43:07,610
+好，更多是交易者的市场。第三种选择，非常典型的交易者市场，
+Okay, more of a trader’s market. Option number three, very much a trader’s market,
+
+793
+00:43:07,610 --> 00:43:11,626
+需要注意的是，关注你学过的所有足迹图原则，并据此执行。好，别忘了，就像我们之前说的，
+which is: pay attention to all the footprint principles you’ve learned,
+
+794
+00:43:11,626 --> 00:43:14,973
+and execute accordingly. Okay, don’t forget, like we said,
+
+795
+00:43:14,973 --> 00:43:18,989
+当价格大幅波动时，会吸引大量参与者。
+when prices move aggressively, it brings in a whole bunch of participants.
+
+796
+00:43:19,170 --> 00:43:22,310
+因此，它会给你带来大量机会。
+Therefore, it’s going to give you a whole bunch of opportunities.
+
+797
+00:43:22,530 --> 00:43:25,805
+好，这就是为什么风险事件交易如此重要，不仅对足迹图交易，对整个交易来说都是。
+Okay, and that’s why risk-event trading is so important,
+
+798
+00:43:25,805 --> 00:43:29,409
+not just for the footprint, but also for trading in general.
+
+799
+00:43:29,410 --> 00:43:33,470
+好，最后一个例子——现在显然是我们要看的视频。
+Okay, the last example—again, this is now obviously the video we’re going to watch.
+
+801
+00:43:33,790 --> 00:43:37,970
+这是弗林说要揭发特朗普的时候。
+This was when Flynn said he was going to expose Trump.
+
+802
+00:43:37,970 --> 00:43:40,150
+这是黄金市场，12月13日。
+This is the gold market, 13th of December.
+
+803
+00:43:40,830 --> 00:43:43,550
+在我们看视频之前，我只想给你们展示一下：看这些浅色阴影。
+Again, all I want to show you before we get to the video: look at the light shading.
+
+805
+00:43:44,030 --> 00:43:47,430
+大量激进的抛售被买走，大量激进的买入。
+It’s very aggressive selling being bought up, very aggressive buying.
+
+807
+00:43:48,310 --> 00:43:50,550
+好，有一点盘整的迹象。
+Okay, a little bit of a holding pattern.
+
+808
+00:43:54,770 --> 00:43:58,330
+好的，这是一次相对强劲的走势，等一下你就能看到。
+Okay, that’s a relatively strong move, like you’ll see in a minute.
+
+809
+00:43:58,750 --> 00:44:01,830
+非常、非常强劲的冲动型行情。所以，我们看到了冲动型行情。
+Really, really strong impulse move. So, we get the impulse move.
+
+810
+00:44:02,470 --> 00:44:06,110
+接着是二次冲动，然后盘整，再来一次冲动。
+A secondary impulse, a consolidation, and another impulse.
+
+811
+00:44:06,530 --> 00:44:11,330
+在这种情况下，执行交易并加杠杆会相对容易。
+Within that, it’s relatively easy to execute and leverage yourself up.
+
+812
+00:44:11,430 --> 00:44:15,110
+在执行层面，正如我所说，我们需要寻找非常激进的执行机会。
+In terms of execution, as I said, we’re looking for a really aggressive execution.
+
+813
+00:44:15,410 --> 00:44:20,690
+大多数交易者会在这里执行，可能还会加仓，并试图让行情继续拉升。
+Most traders would have been executing here, potentially buying more and looking to run it up the page.
+
+815
+00:44:21,050 --> 00:44:25,382
+现在我们来看看这个弗林的例子看看市场中具体是什么样子。
+Let’s now go and have a look at the example of this Flynn
+
+816
+00:44:25,382 --> 00:44:28,168
+and see what it looks like in the markets.
+
+817
+00:44:28,310 --> 00:44:33,070
+这个行情非常激进，所以集中注意力。
+This is quite aggressive, so pay attention.
+
+818
+00:44:34,150 --> 00:44:36,050
+我首先想让你注意的是，
+The first thing I want to bring to your attention is,
+
+819
+00:44:37,350 --> 00:44:42,530
+当这些事件发生时，流动性会消失，市场会失去理智。
+when these events come out, liquidity disappears and the market loses its head.
+
+821
+00:44:42,610 --> 00:44:45,770
+你必须非常激进。你必须展现意图。
+You have to be quite aggressive. You have to show intent.
+
+822
+00:44:45,890 --> 00:44:49,190
+你必须愿意激进行动，并提前加杠杆。
+You have to be willing to be aggressive and leverage yourself up early.
+
+823
+00:44:49,230 --> 00:44:51,590
+我们可以看到，目前还没有消息发布。
+We can see nothing’s hit the wires yet.
+
+824
+00:44:51,810 --> 00:44:53,450
+注意市场的转变。
+Notice the shift in the market.
+
+825
+00:44:55,450 --> 00:45:00,510
+这是12月2日黄金市场的一次数据发布。
+This was a data release on the 2nd of December in the gold market.
+
+826
+00:45:01,330 --> 00:45:05,310
+同样需要注意的是，这正是了解背景如此重要的原因。
+Note also that, again, this is why it’s so important to know the context.
+
+827
+00:45:05,750 --> 00:45:06,310
+注意Delta。
+Note the delta.
+
+828
+00:45:06,510 --> 00:45:09,450
+黄金的Delta是非常大的负值：-3,300。
+Really big negative delta for gold: –3,300.
+
+829
+00:45:10,010 --> 00:45:11,490
+成交量开始出现上升。
+It’s starting to see a pickup in volume.
+
+830
+00:45:12,730 --> 00:45:15,930
+如果我们在数据发布前就意识到这一点，你会发现，如果价格突然开始上涨，我们很可能会看到Delta的反转。
+If we were aware of this before the number,
+
+831
+00:45:15,930 --> 00:45:19,841
+you would have recognized that if prices suddenly start to rise,
+
+832
+00:45:19,841 --> 00:45:22,687
+we could very well see a delta unwind.
+
+833
+00:45:22,750 --> 00:45:26,090
+这基本上就是你接下来几分钟会看到的。
+That’s pretty much what you’re going to see in the next couple of minutes.
+
+834
+00:45:29,830 --> 00:45:31,790
+消息即将发布。
+The news is about to hit the wires.
+
+835
+00:45:32,550 --> 00:45:34,750
+我稍微调整一下这个。
+I’m just going to move this a little bit.
+
+836
+00:45:40,010 --> 00:45:42,010
+消息已经发布了。
+The news has hit the wires.
+
+837
+00:45:42,070 --> 00:45:43,230
+我们可以看到初步的失衡。
+We can see an initial imbalance.
+
+838
+00:45:43,230 --> 00:45:44,110
+成交量并不大。
+Not a great deal of volume.
+
+839
+00:45:44,130 --> 00:45:45,070
+这就是我之前对你说的。
+This is what I was saying to you.
+
+840
+00:45:46,230 --> 00:45:50,770
+流动性消失时，足迹图的价值就凸显出来了，看这些订单多明显。
+Where the footprint is so great, because liquidity disappears, Look how obvious we can see the orders.
+
+842
+00:45:50,870 --> 00:45:52,670
+看这里突出的买单。
+Look at this standout buy here.
+
+843
+00:45:53,050 --> 00:45:55,030
+这都不是大参与者。
+That’s not even a big participant.
+
+844
+00:45:55,030 --> 00:45:59,010
+记住，大型影响力参与者在足迹图上是看不到的。
+Remember, big influential participants don’t have footprints.
+
+845
+00:45:59,230 --> 00:46:02,570
+他们获取消息的时间比大多数人晚很多，这些只是算法。
+They’ll be hearing this news a lot later than most. These are simply algorithms.
+
+846
+00:46:03,090 --> 00:46:04,070
+看这些订单。
+Look at these orders.
+
+847
+00:46:04,170 --> 00:46:05,570
+看这些深蓝色、深蓝色、深蓝色。
+Look at this dark blue, dark blue, dark blue.
+
+848
+00:46:06,150 --> 00:46:09,250
+我们可以清楚看到市场的性质已经发生了变化。
+We can really see something has shifted in the nature of the market.
+
+849
+00:46:09,410 --> 00:46:10,930
+现在，所有人开始跟进了。
+Now, everyone’s starting to pick up.
+
+850
+00:46:11,330 --> 00:46:13,470
+现在，市场开始真正启动了。
+Now, we’re starting to see the market really take off.
+
+851
+00:46:13,570 --> 00:46:20,030
+再次强调，在这一开始的部分，你能清楚看到足迹图给你带来的极大优势。
+Again, in this first bit, you can really clearly see how the footprint gives you an extreme advantage.
+
+853
+00:46:20,430 --> 00:46:23,870
+再次注意，我们在这里看到了什么？看高点，对，我们看到的是卖盘。
+Again, note, what are we seeing here? Look at the higher. Yes, we’re seeing selling.
+
+854
+00:46:24,170 --> 00:46:26,370
+我们看到的是什么？所有卖盘都在被吸收。
+What are we seeing? All that selling being absorbed.
+
+855
+00:46:26,850 --> 00:46:29,250
+同样，卖盘被吸收，还有买盘、买盘。
+Equally, selling being absorbed and buying and buying.
+
+856
+00:46:29,370 --> 00:46:32,470
+我们看到当天极值处的卖盘被吸收，还有更多买盘。
+We’re seeing selling being absorbed at the extreme of the day and more buying.
+
+857
+00:46:32,810 --> 00:46:35,670
+再次强调，如果你有足迹图工具，这非常有用。
+Again, very useful if you’ve got a footprint tool.
+
+858
+00:46:35,870 --> 00:46:39,030
+如果没有，你就很难轻松看到这些。
+If you don’t, you can’t quite see this as easily.
+
+859
+00:46:39,530 --> 00:46:44,152
+显然，如果我们没能在这些深蓝色区域入场，我们肯定想在下方的吸收区入场，寻找延伸，寻找持续。
+Now, obviously, if we didn’t get in on these dark blue colors,
+
+860
+00:46:44,152 --> 00:46:48,063
+we definitely wanted to be in on this absorption lower down,
+
+861
+00:46:48,063 --> 00:46:50,909
+looking for that extension, looking for that continuation.
+
+862
+00:46:52,610 --> 00:46:56,335
+显然，市场确实出现了一点小反弹。
+Again, obviously, we do get a little bit of a blip up in the markets.
+
+863
+00:46:56,335 --> 00:46:58,570
+我们遇到了一点回应性的卖盘。
+We run into a little bit of responsive selling.
+
+864
+00:46:58,670 --> 00:47:03,450
+这就是横盘，你之前看到的那种交易——可能有点获利了结。
+This is that sideways, a bit of trade that you saw—maybe a little bit of profit-taking.
+
+866
+00:47:03,570 --> 00:47:07,590
+注意，当趋势持续时，趋势持续，很不可能会有新的仓位建立。
+Note, when you get trend, trend, it’s very unlikely that there’s new positioning.
+
+868
+00:47:07,590 --> 00:47:10,250
+这只是一点回应性的价格波动。
+It’s simply just a bit of responsive price action.
+
+869
+00:47:10,690 --> 00:47:12,786
+可能有点获利了结，可能有点投机性的空头，只是在衰竭性高点后试图抓几个点。
+Probably a little bit of profit-taking,
+
+870
+00:47:12,786 --> 00:47:15,232
+Maybe a little bit of speculative shorts,
+
+871
+00:47:15,232 --> 00:47:20,126
+Just trying to take a couple of increments after we’ve seen exhaustion highs.
+
+872
+00:47:20,290 --> 00:47:25,210
+好的，市场在衰竭性高点后稍作休整，然后继续上涨。再次注意足迹图。
+Okay, so the market just takes a little break after the exhaustion high before continuing higher. Again, notice the footprint.
+
+874
+00:47:25,450 --> 00:47:28,490
+好的，看极值处的颜色——非常非常大的买盘。
+Okay, look at the colors at the extreme there—really, really large buying.
+
+875
+00:47:28,870 --> 00:47:34,450
+买家非常积极地维持着市场的高位。注意，Delta仍然是-2000。
+Buyers holding the market quite aggressively high. Note, delta still minus 2,000.
+
+876
+00:47:34,690 --> 00:47:39,390
+所以，我们知道价格在上涨。这个Delta仍有回调空间。
+So, we know that price is moving higher. This delta still has room to unwind.
+
+878
+00:47:39,390 --> 00:47:42,970
+这就是我们最终会在这里看到的。我们会看到它继续走高。
+And that’s what we’re going to ultimately see here. We’re going to see this keep moving higher.
+
+880
+00:47:43,630 --> 00:47:46,050
+再次注意下一波上涨中的失衡。
+Again, notice the imbalance on the next leg higher.
+
+881
+00:47:46,190 --> 00:47:48,550
+之后，在高点有非常激进的买盘。
+After that, very aggressive buying at the high.
+
+882
+00:47:48,910 --> 00:47:51,250
+再次注意，在高点有非常激进的买盘。
+Note again, very aggressive buying at the high.
+
+883
+00:47:51,350 --> 00:47:53,730
+所以，这是趋势行为的真实特征。
+So, this is a real characteristic of trend behavior.
+
+884
+00:47:54,010 --> 00:47:55,710
+市场确实倾向于在极端位置持稳。
+The market does tend to hold at the extreme.
+
+885
+00:47:56,070 --> 00:47:58,490
+如果你想参与，它真的会逼你进入极端位置。
+Really forces you into the extreme if you do want to partake.
+
+887
+00:47:58,830 --> 00:48:01,910
+这就是这笔交易背后真正的优势——积极进取。
+And that’s the real edge behind this trade—being aggressive.
+
+888
+00:48:02,430 --> 00:48:03,990
+好的，显然它确实延伸了。
+Okay, obviously it does extend.
+
+889
+00:48:04,790 --> 00:48:06,670
+你显然可以自己在空闲时观察这个。
+You can obviously watch this in your own time.
+
+890
+00:48:07,190 --> 00:48:10,570
+最终市场确实形成了顶部并回落。
+And eventually the market does form a top and settle down.
+
+891
+00:48:10,690 --> 00:48:15,830
+再次注意，顶部在衰竭高点形成，而且在衰竭高点前还有一个失衡。
+Note again, the top formed on an exhaustion high, also with an imbalance just before the exhaustion high.
+
+893
+00:48:16,430 --> 00:48:18,630
+好的，这就是黄金的例子。
+Okay, so that’s the gold example then.
+
+894
+00:48:19,110 --> 00:48:23,250
+我们的第二个例子将是欧元。
+And our second example will be in the euro.
+
+895
+00:48:23,770 --> 00:48:25,690
+这是欧元CPI。
+This is the Euro CPI.
+
+896
+00:48:26,070 --> 00:48:28,130
+这是一个稍微平淡、无聊的风险事件。
+This is a little bit more of a mundane, boring-type risk event.
+
+898
+00:48:28,130 --> 00:48:32,610
+但同样，它说明了存在可交易的机会。
+But again, it goes to show that there are tradable opportunities.
+
+899
+00:48:32,990 --> 00:48:34,310
+所以，我只是给你们展示这个。
+So, I'm just going to show you this.
+
+900
+00:48:34,390 --> 00:48:38,670
+显然，我们已经收到了欧洲CPI数据。
+Obviously, we have received the European CPI data.
+
+901
+00:48:39,190 --> 00:48:42,550
+好的，我们可以看到市场让我快进一点。
+Okay, we can see that the market Let me fast-forward back a little bit.
+
+903
+00:48:42,850 --> 00:48:44,330
+好的，所以我们可以看到数据已经出来了。
+Okay, so we can see the data has come out.
+
+904
+00:48:44,550 --> 00:48:47,110
+市场对这个数据反应相当负面。
+The market is taking this quite negatively.
+
+905
+00:48:47,470 --> 00:48:49,950
+我们可以看到，显然市场急剧下跌。
+And we can see, obviously, the market blips down.
+
+906
+00:48:50,150 --> 00:48:51,730
+大量抛售。好的，注意所有红色。
+Quite a lot of selling. Okay, notice all the red.
+
+907
+00:48:52,030 --> 00:48:54,570
+非常激进的卖盘。一路向下都是非常激进的卖盘。
+Very aggressive selling. Very aggressive selling all the way down.
+
+908
+00:48:54,850 --> 00:48:56,310
+价格朝这个方向移动。
+Price moving in the direction.
+
+909
+00:48:57,570 --> 00:49:02,050
+同样，可能没有真正好的入场机会。速度太快了。
+Again, probably no real great opportunity to get in. It was far too quick.
+
+911
+00:49:02,490 --> 00:49:08,047
+所以，在这种情况下，我们显然在寻找，可能第一次回调的可交易机会。
+So, what we're looking for, obviously, in this instance, maybe the first pullback for a tradable opportunity.
+
+913
+00:49:10,490 --> 00:49:12,670
+注意，回补了第一个失衡。
+Notice, fills in the first of the imbalances.
+
+914
+00:49:13,430 --> 00:49:19,930
+在102处成交并吸收，随后回落至低点
+Trades and absorbs 102 before offering back down to the low.
+
+916
+00:49:16,490 --> 00:49:20,832
+所以，这本应是我们在这个风险事件中的潜在交易机会
+So, that would have been our potential trade opportunity on this risk event.
+
+917
+00:49:26,370 --> 00:49:32,270
+好吧，这是两个例子。显然，在练习部分我们还有两个风险事件的案例
+Okay, those are two examples. Obviously, we will have two more examples of risk events in the drill section.
+
+918
+00:49:23,504 --> 00:49:25,508
+在下界区间内分布
+of distributing within the lower bounds.
+
+919
+00:49:32,810 --> 00:49:35,210
+现在我们来完成最后的模板
+Let's now go and complete our final template.
+
+920
+00:49:35,490 --> 00:49:39,350
+希望你们喜欢这些足迹图的实战环节
+And I really hope you've enjoyed these practical sessions on the board.
+
+922
+00:49:39,930 --> 00:49:42,990
+别忘了，你当然可以重复观看这些视频
+Do remember, obviously, you can go watch every one of these videos again.
+
+924
+00:49:43,330 --> 00:49:47,561
+我刚才只是为你们标注了足迹图中的关键亮点也就是在每种策略中，足迹图极其有用的地方
+I've just tried to highlight for you, the key standouts from the footprint,
+
+925
+00:49:47,561 --> 00:49:51,468
+where the footprint is extremely useful within each one of these strategies.
