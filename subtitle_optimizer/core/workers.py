@@ -494,7 +494,7 @@ async def _translate_batch_impl(
         "3. 每条必须有zh字段，不得为空或返回None\n"
         "4. 【严禁】不得合并条目，输入几条返回几条，id一一对应\n"
         "5. 【严禁重复翻译】每条只译自己的en内容，en是半句就译半句，不得让相邻条目的zh相同或重复\n\n"
-        '返回格式：[{"id": 1, "zh": "中文翻译"}]'
+        f'返回格式：[{{"id": 1, "zh": "{output_lang}翻译"}}]'
     )
 
     glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
