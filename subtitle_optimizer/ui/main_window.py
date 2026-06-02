@@ -19,7 +19,7 @@ from PyQt6.QtGui import QFont, QColor, QPalette
 # 导入业务层逻辑和界面辅助
 from core.models import SubtitleEntry, parse_srt, _format_subtitle_snapshot
 from core.client import MistralClient
-from core.workers import AnalysisWorker, OptimizeWorker, SegmentWorker, TranslateWorker, BatchWorker
+from core.workers import AnalysisWorker, OptimizeWorker, SegmentWorker, TranslateWorker, BatchWorker, LANGUAGE_MAP, LANGUAGE_LABELS
 from ui.styles import APP_STYLE
 from ui.highlighter import SRTHighlighter
 # 尝试相对导入，如果失败则使用绝对导入
@@ -576,6 +576,34 @@ class MainWindow(QMainWindow):
         order_hint.setStyleSheet("color: #8a7b66; font-size: 11px;")
         order_row.addWidget(order_hint)
         lc.addLayout(order_row)
+
+        lc.addWidget(_section_lbl("语言设置"))
+        lang_row = QHBoxLayout()
+        lang_row.setSpacing(12)
+
+        # 输入语言
+        in_lang_wrap = QVBoxLayout()
+        in_lang_lbl = QLabel("输入语言")
+        in_lang_lbl.setStyleSheet("color: #8a7b66; font-size: 11px;")
+        in_lang_wrap.addWidget(in_lang_lbl)
+        self.combo_input_lang = QComboBox()
+        self.combo_input_lang.addItems(LANGUAGE_LABELS)
+        self.combo_input_lang.setCurrentText("English")
+        in_lang_wrap.addWidget(self.combo_input_lang)
+        lang_row.addLayout(in_lang_wrap)
+
+        # 输出语言
+        out_lang_wrap = QVBoxLayout()
+        out_lang_lbl = QLabel("输出语言")
+        out_lang_lbl.setStyleSheet("color: #8a7b66; font-size: 11px;")
+        out_lang_wrap.addWidget(out_lang_lbl)
+        self.combo_output_lang = QComboBox()
+        self.combo_output_lang.addItems(LANGUAGE_LABELS)
+        self.combo_output_lang.setCurrentText("中文")
+        out_lang_wrap.addWidget(self.combo_output_lang)
+        lang_row.addLayout(out_lang_wrap)
+
+        lc.addLayout(lang_row)
 
         lc.addStretch()
         cols.addWidget(left_card, 1)
