@@ -106,6 +106,8 @@ def _build_analysis_messages(entries: list[SubtitleEntry],
                             input_lang: str = "English",
                             output_lang: str = "中文") -> list[dict]:
     """构造情景分析提示词，产出可直接约束后续翻译优化的 brief。"""
+    input_lang = _get_prompt_lang(input_lang)
+    output_lang = _get_prompt_lang(output_lang)
     sample = entries[:30]
     sample_text = "\n".join(
         f"[{e.index}] {e.english}"
@@ -211,6 +213,8 @@ async def _optimize_batch_impl(
     共享：发送一批字幕给 AI 优化，返回 {index: [zh, en]}。
     prev_ctx 为上一批末尾若干条（只作上下文参考，不要求 AI 返回）。
     """
+    input_lang = _get_prompt_lang(input_lang)
+    output_lang = _get_prompt_lang(output_lang)
     items_json = json.dumps([
         {"id": e.index, "zh": e.chinese, "en": e.english}
         for e in batch
@@ -484,6 +488,8 @@ async def _translate_batch_impl(
     output_lang: str = "中文",
 ) -> dict[int, str]:
     """共享：翻译一批字幕，返回 {index: zh}。失败返回空字典。"""
+    input_lang = _get_prompt_lang(input_lang)
+    output_lang = _get_prompt_lang(output_lang)
     items_json = json.dumps([
         {"id": e.index, "en": e.english} for e in batch
     ], ensure_ascii=False)
@@ -532,6 +538,8 @@ async def _repair_incomplete_segment_translations(
     input_lang: str = "English",
     output_lang: str = "中文",
 ) -> None:
+    input_lang = _get_prompt_lang(input_lang)
+    output_lang = _get_prompt_lang(output_lang)
     incomplete = [
         entry for entry in entries
         if _translation_looks_incomplete(entry.chinese, entry.english)
