@@ -52,8 +52,8 @@
 ```
 
 **默认值**:
-- 输入语言: English (en)
-- 输出语言: 中文 (zh)
+- 输入语言: English
+- 输出语言: 中文
 
 ---
 
@@ -70,12 +70,14 @@
   "batch_size": "5",
   "original_line": 1,
   "glossary": "...",
-  "input_language": "en",
-  "output_language": "zh"
+  "input_language": "English",
+  "output_language": "中文"
 }
 ```
 
-**向后兼容**: 如果配置文件中没有这两个字段，使用默认值 (en → zh)。
+**向后兼容**: 如果配置文件中没有这两个字段，使用默认值 (English → 中文)。
+
+**存储格式**: 存储显示标签（如 "English"、"中文"、"意大利语 (Italiano)"），而非语言代码。这样用户在配置文件中也能直观理解。
 
 ---
 
