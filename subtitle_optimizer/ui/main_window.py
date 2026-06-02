@@ -562,17 +562,17 @@ class MainWindow(QMainWindow):
         params_row.addLayout(batch_wrap)
         lc.addLayout(params_row)
 
-        lc.addWidget(_section_lbl("字幕行顺序"))
+        lc.addWidget(_section_lbl("原文行数"))
         order_row = QHBoxLayout()
         order_row.setSpacing(12)
-        order_desc = QLabel("第三行语言：")
+        order_desc = QLabel("原文在第几行：")
         order_desc.setStyleSheet("color: #8a7b66; font-size: 12px;")
         order_row.addWidget(order_desc)
-        self.combo_chinese_line = QComboBox()
-        self.combo_chinese_line.addItems(["中文（默认）", "英文"])
-        self.combo_chinese_line.setToolTip("设置字幕第三行（第一文本行）是中文还是英文")
-        order_row.addWidget(self.combo_chinese_line, 1)
-        order_hint = QLabel("第四行自动为另一语言")
+        self.combo_original_line = QComboBox()
+        self.combo_original_line.addItems(["第1行", "第2行", "第3行"])
+        self.combo_original_line.setToolTip("双语字幕中，原文（如英文）所在的行号")
+        order_row.addWidget(self.combo_original_line, 1)
+        order_hint = QLabel("仅用于输入解析，不影响输出顺序")
         order_hint.setStyleSheet("color: #8a7b66; font-size: 11px;")
         order_row.addWidget(order_hint)
         lc.addLayout(order_row)
@@ -850,6 +850,7 @@ class MainWindow(QMainWindow):
             overwrite=overwrite,
             chinese_first=self._chinese_first(),
             glossary_prompt=self._get_glossary_prompt(),
+            original_line=self._get_original_line_index(),
         )
         self._batch_thread = QThread()
         self._batch_worker.moveToThread(self._batch_thread)
@@ -952,7 +953,37 @@ class MainWindow(QMainWindow):
         return MistralClient(key, self.combo_model.currentText(), base_url)
 
     def _chinese_first(self) -> bool:
-        return self.combo_chinese_line.currentIndex() == 0
+        # 输出顺序：默认中文在前
+        return True
+
+    def _get_original_line_index(self) -> int:
+        """获取原文行号索引（0-based）"""
+        return self.combo_original_line.currentIndex()
+
+    def _extract_original_line(self, entries: list[SubtitleEntry]) -> list[SubtitleEntry]:
+        """根据设置提取原文行，将双语字幕转换为单语言字幕"""
+        line_idx = self._get_original_line_index()
+
+        extracted = []
+        for entry in entries:
+            if len(entry.lines) > 1:
+                # 双语字幕：提取指定行
+                if line_idx < len(entry.lines):
+                    original_text = entry.lines[line_idx]
+                    new_entry = SubtitleEntry(
+                        entry.index, entry.start_time, entry.end_time,
+                        [original_text]
+                    )
+                    new_entry.original_lines = list(entry.original_lines or entry.lines)
+                    extracted.append(new_entry)
+                else:
+                    # 设置的行号超出范围，保留原样
+                    extracted.append(entry)
+            else:
+                # 单语字幕：直接保留
+                extracted.append(entry)
+
+        return extracted
 
     def _open_file(self):
         logger.info("开始打开字幕文件")
@@ -968,6 +999,14 @@ class MainWindow(QMainWindow):
                 content = f.read()
             logger.info(f"文件读取成功，开始解析SRT内容")
             self.entries = parse_srt(content)
+
+            # 自动检测双语字幕并提取原文行
+            if self.entries and len(self.entries[0].lines) > 1:
+                original_count = len(self.entries)
+                self.entries = self._extract_original_line(self.entries)
+                line_num = self._get_original_line_index() + 1
+                self._log(f"📋 检测到双语字幕（{original_count}条），已提取原文行（第{line_num}行）")
+
             self._current_file_path = path
             self.lbl_file.setText(f"📄 {Path(path).name}")
             self.tab_original.setPlainText(content)
@@ -1479,7 +1518,7 @@ class MainWindow(QMainWindow):
             "model": self.combo_model.currentText(),
             "concurrency": self.input_concurrency.text(),
             "batch_size": self.input_batch.text(),
-            "chinese_first": self.combo_chinese_line.currentIndex() == 0,
+            "original_line": self.combo_original_line.currentIndex(),
             "glossary": self.input_glossary.toPlainText().strip(),
         }
         try:
@@ -1504,7 +1543,7 @@ class MainWindow(QMainWindow):
                     self.combo_model.setCurrentText(saved_model)
             self.input_concurrency.setText(str(cfg.get("concurrency", "6")))
             self.input_batch.setText(str(cfg.get("batch_size", "5")))
-            self.combo_chinese_line.setCurrentIndex(0 if cfg.get("chinese_first", True) else 1)
+            self.combo_original_line.setCurrentIndex(cfg.get("original_line", 1))  # 默认第2行
             self.input_glossary.setPlainText(cfg.get("glossary", ""))
         except Exception:
             pass

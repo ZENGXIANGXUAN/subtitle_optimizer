@@ -775,7 +775,7 @@ class BatchWorker(BaseWorker):
     def __init__(self, client: MistralClient, files: list[str],
                  out_dir: Optional[str], concurrency: int, batch_size: int,
                  overwrite: bool = False, chinese_first: bool = True,
-                 glossary_prompt: str = ""):
+                 glossary_prompt: str = "", original_line: int = 1):
         super().__init__()
         self.client = client
         self.files = files
@@ -785,6 +785,32 @@ class BatchWorker(BaseWorker):
         self.overwrite = overwrite
         self.chinese_first = chinese_first
         self.glossary_prompt = glossary_prompt
+        self.original_line = original_line  # 原文行号（0-based）
+
+    def _extract_original_line(self, entries: list[SubtitleEntry]) -> list[SubtitleEntry]:
+        """根据设置提取原文行，将双语字幕转换为单语言字幕"""
+        line_idx = self.original_line
+
+        extracted = []
+        for entry in entries:
+            if len(entry.lines) > 1:
+                # 双语字幕：提取指定行
+                if line_idx < len(entry.lines):
+                    original_text = entry.lines[line_idx]
+                    new_entry = SubtitleEntry(
+                        entry.index, entry.start_time, entry.end_time,
+                        [original_text]
+                    )
+                    new_entry.original_lines = list(entry.original_lines or entry.lines)
+                    extracted.append(new_entry)
+                else:
+                    # 设置的行号超出范围，保留原样
+                    extracted.append(entry)
+            else:
+                # 单语字幕：直接保留
+                extracted.append(entry)
+
+        return extracted
 
     @pyqtSlot()
     def run(self):
@@ -810,6 +836,13 @@ class BatchWorker(BaseWorker):
                 if not entries:
                     self.file_error.emit(idx, filename, "无法解析字幕文件")
                     continue
+
+                # 自动检测双语字幕并提取原文行
+                if entries and len(entries[0].lines) > 1:
+                    original_count = len(entries)
+                    entries = self._extract_original_line(entries)
+                    line_num = self.original_line + 1
+                    self.log.emit(f"  📋 [{filename}] 检测到双语字幕（{original_count}条），已提取原文行（第{line_num}行）")
 
                 self.log.emit(f"  🔍 [{filename}] 分析情景（{len(entries)} 条字幕）...")
 
