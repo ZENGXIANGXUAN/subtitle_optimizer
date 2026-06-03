@@ -1,7 +1,7 @@
 import re
 import subprocess
 import sys
-from core.models import SubtitleEntry, _english_word_count, _srt_time_to_ms
+from core.models import SubtitleEntry, _english_word_count, _srt_time_to_ms, _source_text_length
 
 # 语言代码 -> spaCy 模型名（使用连字符格式，与 pip 包名一致）
 SPACY_MODELS = {
@@ -204,7 +204,8 @@ def _nlp_merge_is_safe(entries: list[SubtitleEntry], lang_code: str = "en") -> b
 
     for e in entries:
         source_text = _get_source_text(e, lang_code)
-        if _english_word_count(source_text) >= 35:
+        # 使用语言感知的长度检查（中文按字符数，英文按单词数）
+        if _source_text_length(source_text, lang_code) >= 35:
             return False
 
     return True
