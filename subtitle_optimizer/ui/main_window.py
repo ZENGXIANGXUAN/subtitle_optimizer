@@ -976,6 +976,8 @@ class MainWindow(QMainWindow):
             1 for i in range(total) if self.batch_list.item(i) and self.batch_list.item(i).text().startswith("✅"))
         self._batch_log_msg(f"🎉 批量处理完成：{done}/{total} 个文件成功")
         self.status_bar.showMessage(f"批量处理完成：{done}/{total} 成功")
+        # 清理 batch worker 和 thread，防止下次启动时闪退
+        self._cleanup_batch_pipeline()
 
     def _get_client(self) -> Optional[MistralClient]:
         key = self.input_apikey.text().strip()
