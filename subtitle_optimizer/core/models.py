@@ -24,30 +24,47 @@ class SubtitleEntry:
 
     @property
     def chinese(self) -> str:
+        """获取中文文本（向后兼容）"""
         for line in self.lines:
-            if any('\u4e00' <= c <= '\u9fff' for c in line):
+            if any('一' <= c <= '鿿' for c in line):
                 return line
         return ""
 
     @property
     def english(self) -> str:
+        """获取英文文本（向后兼容）"""
         for line in self.lines:
             stripped = line.strip()
             # 跳过占位符行
             if stripped.lower() in ("none", "null", "—", "-", ""):
                 continue
-            if not any('\u4e00' <= c <= '\u9fff' for c in stripped):
+            if not any('一' <= c <= '鿿' for c in stripped):
                 return stripped
         return ""
 
-    def to_srt_block(self, use_optimized=False, chinese_first=True) -> str:
+    @property
+    def source(self) -> str:
+        """获取原文文本（语言无关）- 别名，实际调用 _get_source_text()"""
+        # 注意：这个属性需要知道语言代码才能正确判断
+        # 建议直接使用 _get_source_text(entry, lang_code) 函数
+        return self.english
+
+    @property
+    def target(self) -> str:
+        """获取译文文本（语言无关）- 别名，实际调用 _get_target_text()"""
+        # 注意：这个属性需要知道语言代码才能正确判断
+        # 建议直接使用 _get_target_text(entry, lang_code) 函数
+        return self.chinese
+
+    def to_srt_block(self, use_optimized=False, target_first=True) -> str:
         lines = self.optimized_lines if (use_optimized and self.optimized_lines) else self.lines
-        # 如果需要重新排列中英文顺序
+        # 如果需要重新排列译文/原文顺序
         if len(lines) == 2:
-            zh_line = next((l for l in lines if any('\u4e00' <= c <= '\u9fff' for c in l)), None)
-            en_line = next((l for l in lines if not any('\u4e00' <= c <= '\u9fff' for c in l)), None)
-            if zh_line and en_line:
-                lines = [zh_line, en_line] if chinese_first else [en_line, zh_line]
+            # 检测哪一行是译文（包含 CJK 字符），哪一行是原文
+            target_line = next((l for l in lines if any('一' <= c <= '鿿' for c in l)), None)
+            source_line = next((l for l in lines if not any('一' <= c <= '鿿' for c in l)), None)
+            if target_line and source_line:
+                lines = [target_line, source_line] if target_first else [source_line, target_line]
         text = "\n".join(lines)
         return f"{self.index}\n{self.start_time} --> {self.end_time}\n{text}\n"
 
@@ -129,19 +146,19 @@ def _english_word_count(text: str) -> int:
 
 
 def _chinese_char_count(text: str) -> int:
-    return sum(1 for char in text or "" if "\u4e00" <= char <= "\u9fff")
+    return sum(1 for char in text or "" if "一" <= char <= "鿿")
 
 
 def _source_text_length(text: str, lang_code: str = "en") -> int:
-    """\u83b7\u53d6\u539f\u6587\u6587\u672c\u957f\u5ea6\uff08\u6839\u636e\u8bed\u8a00\u4f7f\u7528\u4e0d\u540c\u7684\u8ba1\u7b97\u65b9\u5f0f\uff09
-    - \u82f1\u6587\u7b49\u62c9\u4e01\u8bed\u7cfb\uff1a\u8ba1\u7b97\u5355\u8bcd\u6570
-    - \u4e2d\u6587\u3001\u65e5\u6587\u3001\u97e9\u6587\uff1a\u8ba1\u7b97\u5b57\u7b26\u6570
+    """获取原文文本长度（根据语言使用不同的计算方式）
+    - 英文等拉丁语系：计算单词数
+    - 中文、日文、韩文：计算字符数
     """
     if lang_code in ("zh", "ja", "ko"):
-        # CJK \u8bed\u8a00\uff1a\u8ba1\u7b97\u5b57\u7b26\u6570
+        # CJK 语言：计算字符数
         return len(text or "")
     else:
-        # \u5176\u4ed6\u8bed\u8a00\uff1a\u8ba1\u7b97\u5355\u8bcd\u6570
+        # 其他语言：计算单词数
         return _english_word_count(text)
 
 
