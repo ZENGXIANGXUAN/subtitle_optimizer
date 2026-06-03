@@ -214,25 +214,39 @@ async def _optimize_batch_impl(
     共享：发送一批字幕给 AI 优化，返回 {index: [zh, en]}。
     prev_ctx 为上一批末尾若干条（只作上下文参考，不要求 AI 返回）。
     """
-    input_lang = _get_prompt_lang(input_lang)
-    output_lang = _get_prompt_lang(output_lang)
-    items_json = json.dumps([
-        {"id": e.index, "zh": e.chinese, "en": e.english}
-        for e in batch
-    ], ensure_ascii=False)
+    # 获取语言代码，用于确定字段顺序
+    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
+    # 转换为 prompt 使用的语言名称
+    input_lang_prompt = _get_prompt_lang(input_lang)
+    output_lang_prompt = _get_prompt_lang(output_lang)
+    # 根据输入语言确定字段顺序：zh=译文，en=原文
+    # 如果输入是中文，zh应该是译文（意大利语），en应该是原文（中文）
+    # 如果输入是英文，zh应该是译文（中文），en应该是原文（英文）
+    if input_lang_code == "zh":
+        # 输入是中文：zh=译文（输出语言），en=原文（中文）
+        items_json = json.dumps([
+            {"id": e.index, "zh": e.english, "en": e.chinese}
+            for e in batch
+        ], ensure_ascii=False)
+    else:
+        # 输入不是中文：zh=译文（中文），en=原文（输入语言）
+        items_json = json.dumps([
+            {"id": e.index, "zh": e.chinese, "en": e.english}
+            for e in batch
+        ], ensure_ascii=False)
 
     sys_content = (
         f"你是专业字幕翻译优化师。\n"
         f"【背景与风格】\n{context}\n\n"
-        f"任务：优化双语字幕的{output_lang}翻译，使译文准确、自然、符合背景风格。\n"
+        f"任务：优化双语字幕的{output_lang_prompt}翻译，使译文准确、自然、符合背景风格。\n"
     )
     sys_content += (
         "\n【重要前提】SRT字幕按时间轴逐句切分，一个完整语义常被拆成多条。"
         f"输入的zh字段是初译，可能存在错误。"
         "因此：必须以en为唯一翻译依据，zh仅供用词风格参考，不得直接沿用。\n\n"
         "规则：\n"
-        f"1. 【锚定en】每条zh必须且只能对应该条en的内容——en是完整句就译完整句，en是半句就译对应的半句{output_lang}\n"
-        f"2. 在忠实en的前提下，使{output_lang}自然流畅，符合【背景与风格】的语气和用词\n"
+        f"1. 【锚定en】每条zh必须且只能对应该条en的内容——en是完整句就译完整句，en是半句就译对应的半句{output_lang_prompt}\n"
+        f"2. 在忠实en的前提下，使{output_lang_prompt}自然流畅，符合【背景与风格】的语气和用词\n"
         "3. 专业术语保持批次内一致性\n"
         f"4. 【严禁】zh只允许纯文本，禁止任何Markdown符号（**、*、`、#、>、-列表等）\n"
         "5. 【严禁】zh只含译文正文，不得添加括号注释、标注或说明文字\n"
@@ -241,18 +255,25 @@ async def _optimize_batch_impl(
         "8. 若en为空，zh也留空\n"
         "9. 严格按JSON格式返回，不加任何解释\n"
         f"10. 【严禁漏译 — 逐词对照】zh必须完整翻译en中的每个语义单元：主语、谓语、宾语、状语、从句、插入语、过渡词（如okay/now/well/so）、强调词（如very/always/important）。不得跳过、省略、或合并任何信息点\n"
-        f"11. 【严禁摘要】不得把长英文压缩成一句概括性{output_lang}。en有多长，zh就译多长。宁可使用较长{output_lang}，也不能遗漏信息点\n"
+        f"11. 【严禁摘要】不得把长英文压缩成一句概括性{output_lang_prompt}。en有多长，zh就译多长。宁可使用较长{output_lang_prompt}，也不能遗漏信息点\n"
         "12. 【逐句自检 — 强制执行】返回前逐条朗读en，逐词检查zh是否覆盖了：谁（主语）→做了什么（动作）→为什么/怎么（条件/方式）→结果如何。每检查完一条在心里打勾，缺一不可\n\n"
-        f'返回格式：[{{"id": 1, "zh": "优化后{output_lang}", "en": "英文原文原样返回"}}]'
+        f'返回格式：[{{"id": 1, "zh": "优化后{output_lang_prompt}", "en": "原文原样返回"}}]'
     )
 
     glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
 
     if prev_ctx:
-        ctx_json = json.dumps([
-            {"id": e.index, "zh": e.chinese, "en": e.english}
-            for e in prev_ctx
-        ], ensure_ascii=False)
+        # 上下文也需要使用正确的字段顺序
+        if input_lang_code == "zh":
+            ctx_json = json.dumps([
+                {"id": e.index, "zh": e.english, "en": e.chinese}
+                for e in prev_ctx
+            ], ensure_ascii=False)
+        else:
+            ctx_json = json.dumps([
+                {"id": e.index, "zh": e.chinese, "en": e.english}
+                for e in prev_ctx
+            ], ensure_ascii=False)
         user_content = (
             f"【上文参考（仅供风格/术语对齐，无需返回这些条目）】\n{ctx_json}\n\n"
             f"【待优化字幕】\n{items_json}"
@@ -292,23 +313,30 @@ async def _optimize_batch_impl(
 
         retry_map: dict[int, str] = {}
         if missing_zh_entries:
-            retry_items = json.dumps([
-                {"id": e.index, "en": e.english}
-                for e in missing_zh_entries
-            ], ensure_ascii=False)
+            # 重试时也需要使用正确的字段顺序
+            if input_lang_code == "zh":
+                retry_items = json.dumps([
+                    {"id": e.index, "en": e.chinese}
+                    for e in missing_zh_entries
+                ], ensure_ascii=False)
+            else:
+                retry_items = json.dumps([
+                    {"id": e.index, "en": e.english}
+                    for e in missing_zh_entries
+                ], ensure_ascii=False)
 
             retry_sys = (
                 f"你是专业字幕翻译师。\n【背景与风格】\n{context}\n\n"
-                f"任务：将{input_lang}字幕翻译成{output_lang}，严格遵循上述风格指引（如有）。\n"
+                f"任务：将{input_lang_prompt}字幕翻译成{output_lang_prompt}，严格遵循上述风格指引（如有）。\n"
             )
             retry_sys += (
                 "规则：\n1. 用词语气与风格指引一致\n"
                 "2. 严格按JSON格式返回，不要加任何解释\n"
                 "3. 每条必须有zh字段，不得为空\n"
                 "4. 【严禁重复翻译】每条只译自己的en内容，en是半句就译半句，不得让相邻条目的zh相同或重复\n"
-                f"5. 【严禁摘要】不得把长英文压缩成一句概括性{output_lang}，必须完整覆盖en中的全部信息点\n"
+                f"5. 【严禁摘要】不得把长英文压缩成一句概括性{output_lang_prompt}，必须完整覆盖en中的全部信息点\n"
                 "6. 【覆盖自检】返回前逐条检查：zh是否完整覆盖了en的主语、动作、条件、原因、结果和关键术语\n\n"
-                f'返回格式：[{{"id": 1, "zh": "{output_lang}翻译"}}]'
+                f'返回格式：[{{"id": 1, "zh": "{output_lang_prompt}翻译"}}]'
             )
 
             retry_glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
@@ -332,12 +360,15 @@ async def _optimize_batch_impl(
                 opt_lines.append(zh)
             elif entry.index in retry_map:
                 fallback_zh = strip_annotation(str(retry_map[entry.index]).strip())
-                fallback_incomplete = _translation_looks_incomplete(fallback_zh, entry.english)
+                # 获取原文文本用于完整性检查
+                source_text_for_check = _get_source_text(entry, input_lang_code)
+                fallback_incomplete = _translation_looks_incomplete(fallback_zh, source_text_for_check)
                 if fallback_zh and fallback_zh.lower() not in ("none", "null") and not fallback_incomplete:
                     opt_lines.append(fallback_zh)
-            en = entry.english
-            if en:
-                opt_lines.append(en)
+            # 获取原文文本（支持任意语言）
+            source_text = _get_source_text(entry, input_lang_code)
+            if source_text:
+                opt_lines.append(source_text)
             has_translation = len(opt_lines) > 0 and any(line.strip() for line in opt_lines)
             result[entry.index] = opt_lines if has_translation else entry.lines
 
