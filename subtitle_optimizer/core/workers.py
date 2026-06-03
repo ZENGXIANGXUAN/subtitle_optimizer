@@ -628,11 +628,8 @@ def _apply_llm_split(long_entries: list[SubtitleEntry], llm_response: list[dict]
             seg_end = _ms_to_srt_time(current_ms + seg_duration)
             current_ms += seg_duration
 
+            # 每个分段只包含切分后的文本，不插入原始合并文本
             lines = [seg_text] if seg_text else []
-            # 获取原文文本（支持任意语言）
-            source_text = _get_source_text(orig, lang_code)
-            if i == 0 and source_text:
-                lines.insert(0, source_text)
 
             seg_entry = SubtitleEntry(
                 index=orig.index + i,
