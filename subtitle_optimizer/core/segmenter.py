@@ -37,18 +37,21 @@ def _install_spacy_model(model_name: str) -> bool:
 
 
 def _get_nlp(lang_code: str = "en", auto_install: bool = True):
-    """获取指定语言的 spaCy 模型，支持缓存、自动安装和回退"""
+    """获取指定语言的 spaCy 模型，支持缓存和自动安装，失败则抛出异常"""
     if lang_code not in _nlp_cache:
         import spacy
         model_name = SPACY_MODELS.get(lang_code, "en-core-web-sm")
         # spaCy load() 需要下划线格式（en_core_web_sm），pip 包名使用连字符格式（en-core-web-sm）
         spacy_model_name = model_name.replace("-", "_")
+        print(f"🔍 尝试加载 spaCy 模型: lang_code={lang_code}, model_name={model_name}, spacy_model_name={spacy_model_name}")
 
         try:
             _nlp_cache[lang_code] = spacy.load(spacy_model_name)
-        except OSError:
+            print(f"✅ spaCy 模型 {spacy_model_name} 加载成功")
+        except OSError as e:
+            print(f"❌ spaCy 模型 {spacy_model_name} 加载失败: {e}")
             # 模型未安装，尝试自动安装
-            if auto_install and lang_code != "en":
+            if auto_install:
                 print(f"⚠️ spaCy 模型 {model_name} 未安装，正在自动下载...")
                 if _install_spacy_model(model_name):
                     try:
@@ -56,11 +59,8 @@ def _get_nlp(lang_code: str = "en", auto_install: bool = True):
                         return _nlp_cache[lang_code]
                     except OSError:
                         pass
-
-            # 自动安装失败或不需要安装，回退到英文模型
-            if lang_code != "en":
-                print(f"⚠️ 回退到英文模型")
-            _nlp_cache[lang_code] = spacy.load("en_core_web_sm")
+            # 自动安装失败或不需要安装，抛出异常而不是回退
+            raise RuntimeError(f"spaCy 模型 {model_name} 未安装，请先运行: python -m spacy download {model_name}")
     return _nlp_cache[lang_code]
 
 
