@@ -778,11 +778,8 @@ class TranslateWorker(BaseWorker):
             self.all_done.emit()
             return
 
-        # 检测是否需要翻译（zh_合并 为空的是原生字幕）
-        needs_translation = any(not e.chinese for e in self.entries)
-        if not needs_translation:
-            self.all_done.emit()
-            return
+        # 输入输出语言不同时，始终需要翻译
+        # （旧逻辑：检测是否有中文文本，但现在支持任意语言对，不能仅检测中文）
 
         sem = asyncio.Semaphore(self.concurrency)
         total = len(self.entries)
@@ -1061,9 +1058,8 @@ class BatchWorker(BaseWorker):
             self.log.emit("    ⏭️ 输入输出语言相同，跳过翻译，仅优化")
             return entries
 
-        needs_translation = any(not e.chinese for e in entries)
-        if not needs_translation:
-            return entries
+        # 输入输出语言不同时，始终需要翻译
+        # （旧逻辑：检测是否有中文文本，但现在支持任意语言对，不能仅检测中文）
 
         sem = asyncio.Semaphore(self.concurrency)
         total = len(entries)
