@@ -437,13 +437,14 @@ class OptimizeWorker(BaseWorker):
         logger.info("OptimizeWorker线程关闭")
 
     async def _run(self):
-        logger.debug("开始批量处理字幕优化")
+        logger.info("开始批量处理字幕优化")
         sem = asyncio.Semaphore(self.concurrency)
         total = len(self.entries)
         completed = 0
         CONTEXT_SIZE = 3  # 跨批次携带的上文条数
 
         starts = list(range(0, total, self.batch_size))
+        logger.info(f"starts: {starts}, batch_size: {self.batch_size}, total: {total}")
         # 每批次附带其前 CONTEXT_SIZE 条作为上下文（不要求 AI 返回这些条目）
         batches_with_ctx: list[tuple[list[SubtitleEntry], list[SubtitleEntry]]] = []
         for start in starts:
