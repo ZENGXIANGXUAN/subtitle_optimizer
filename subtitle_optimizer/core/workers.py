@@ -276,8 +276,10 @@ async def _optimize_batch_impl(
 
     try:
         clean = re.sub(r'```(?:json)?|```', '', response).strip()
+        logger.debug(f"API响应: {clean[:500]}...")
         data = json.loads(clean)
         api_map = {item["id"]: item for item in data}
+        logger.debug(f"API返回 {len(data)} 条，批次有 {len(batch)} 条")
 
         first_pass = []
         missing_tgt_entries = []
@@ -289,10 +291,13 @@ async def _optimize_batch_impl(
                 tgt_incomplete = _translation_looks_incomplete(tgt, _get_source_text(entry, input_lang_code))
                 tgt_valid = bool(tgt) and tgt.lower() not in ("none", "null", "无", "—", "-")
                 tgt_valid = tgt_valid and not tgt_incomplete
+                if not tgt_valid:
+                    logger.debug(f"条目 {entry.index} tgt无效: tgt='{tgt}', incomplete={tgt_incomplete}")
                 first_pass.append((entry, tgt, tgt_valid))
                 if not tgt_valid:
                     missing_tgt_entries.append(entry)
             else:
+                logger.debug(f"条目 {entry.index} 不在API响应中")
                 first_pass.append((entry, "", False))
                 missing_tgt_entries.append(entry)
 
