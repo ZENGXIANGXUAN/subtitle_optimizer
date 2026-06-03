@@ -66,11 +66,14 @@ def _get_nlp(lang_code: str = "en", auto_install: bool = True):
 
 def _get_source_text(entry: SubtitleEntry, lang_code: str) -> str:
     """获取字幕条目的原文文本（根据输入语言）"""
-    # 如果是中文输入，返回 target 属性（中文是译文）
-    if lang_code == "zh":
-        return entry.target
-    # 其他语言，返回 source 属性（原文）
-    return entry.source
+    # 翻译后，entry.lines 的结构是 [译文, 原文]
+    # 所以原文总是在第二个位置（索引 1）
+    if len(entry.lines) >= 2:
+        return entry.lines[1]
+    # 如果只有一行，说明是单语字幕，直接返回
+    if len(entry.lines) == 1:
+        return entry.lines[0]
+    return ""
 
 
 def nlp_segment(batch: list[SubtitleEntry],
