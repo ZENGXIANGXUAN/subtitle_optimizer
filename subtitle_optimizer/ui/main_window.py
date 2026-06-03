@@ -13,8 +13,20 @@ from PyQt6.QtWidgets import (
     QCheckBox, QGridLayout, QListWidget, QListWidgetItem,
     QSizePolicy
 )
-from PyQt6.QtCore import Qt, QThread, pyqtSlot, QTimer
-from PyQt6.QtGui import QFont, QColor, QPalette
+from PyQt6.QtCore import Qt, QThread, pyqtSlot, QTimer, QEvent
+from PyQt6.QtGui import QFont, QColor, QPalette, QWheelEvent
+
+
+class NoWheelComboBox(QComboBox):
+    """禁用滚轮事件的 QComboBox，防止意外改变选项"""
+
+    def wheelEvent(self, event: QWheelEvent):
+        # 只有当 ComboBox 获得焦点时才允许滚轮操作
+        if self.hasFocus():
+            super().wheelEvent(event)
+        else:
+            event.ignore()
+
 
 # 导入业务层逻辑和界面辅助
 from core.models import SubtitleEntry, parse_srt, _format_subtitle_snapshot
@@ -526,7 +538,7 @@ class MainWindow(QMainWindow):
         lc.addWidget(self.input_base_url)
 
         lc.addWidget(_section_lbl("模型  （可下拉选择或直接输入自定义名称）"))
-        self.combo_model = QComboBox()
+        self.combo_model = NoWheelComboBox()
         self.combo_model.setEditable(True)
         self.combo_model.addItems([
             "mistral-large-latest",
@@ -568,7 +580,7 @@ class MainWindow(QMainWindow):
         order_desc = QLabel("原文在第几行：")
         order_desc.setStyleSheet("color: #8a7b66; font-size: 12px;")
         order_row.addWidget(order_desc)
-        self.combo_original_line = QComboBox()
+        self.combo_original_line = NoWheelComboBox()
         self.combo_original_line.addItems(["第1行", "第2行", "第3行"])
         self.combo_original_line.setToolTip("双语字幕中，原文（如英文）所在的行号")
         order_row.addWidget(self.combo_original_line, 1)
@@ -586,7 +598,7 @@ class MainWindow(QMainWindow):
         in_lang_lbl = QLabel("输入语言")
         in_lang_lbl.setStyleSheet("color: #8a7b66; font-size: 11px;")
         in_lang_wrap.addWidget(in_lang_lbl)
-        self.combo_input_lang = QComboBox()
+        self.combo_input_lang = NoWheelComboBox()
         self.combo_input_lang.addItems(LANGUAGE_LABELS)
         self.combo_input_lang.setCurrentText("English")
         in_lang_wrap.addWidget(self.combo_input_lang)
@@ -597,7 +609,7 @@ class MainWindow(QMainWindow):
         out_lang_lbl = QLabel("输出语言")
         out_lang_lbl.setStyleSheet("color: #8a7b66; font-size: 11px;")
         out_lang_wrap.addWidget(out_lang_lbl)
-        self.combo_output_lang = QComboBox()
+        self.combo_output_lang = NoWheelComboBox()
         self.combo_output_lang.addItems(LANGUAGE_LABELS)
         self.combo_output_lang.setCurrentText("中文")
         out_lang_wrap.addWidget(self.combo_output_lang)
