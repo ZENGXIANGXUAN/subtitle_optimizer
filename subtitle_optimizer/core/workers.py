@@ -552,11 +552,10 @@ async def _repair_incomplete_segment_translations(
     input_lang: str = "English",
     output_lang: str = "中文",
 ) -> None:
-    input_lang = _get_prompt_lang(input_lang)
-    output_lang = _get_prompt_lang(output_lang)
+    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
     incomplete = [
         entry for entry in entries
-        if _translation_looks_incomplete(entry.chinese, entry.english)
+        if _translation_looks_incomplete(entry.target, _get_source_text(entry, input_lang_code))
     ]
     if not incomplete:
         return
@@ -568,11 +567,11 @@ async def _repair_incomplete_segment_translations(
     )
     retry_map = await _translate_batch_impl(incomplete, context, glossary, client, session, input_lang, output_lang)
     for entry in incomplete:
-        zh = strip_annotation(str(retry_map.get(entry.index, "")).strip())
-        if not zh or zh.lower() in ("none", "null", "无", "—", "-"):
+        tgt = strip_annotation(str(retry_map.get(entry.index, "")).strip())
+        if not tgt or tgt.lower() in ("none", "null", "无", "—", "-"):
             continue
-        en = entry.english
-        entry.lines = [zh, en] if en else [zh]
+        source_text = _get_source_text(entry, input_lang_code)
+        entry.lines = [tgt, source_text] if source_text else [tgt]
 
 
 def _split_short_long(batch: list[SubtitleEntry], max_words: int = 20, lang_code: str = "en"):
