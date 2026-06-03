@@ -76,6 +76,16 @@ def _get_source_text(entry: SubtitleEntry, lang_code: str) -> str:
     return ""
 
 
+def _get_target_text(entry: SubtitleEntry, lang_code: str) -> str:
+    """获取字幕条目的译文文本（根据输出语言）"""
+    # 翻译后，entry.lines 的结构是 [译文, 原文]
+    # 所以译文总是在第一个位置（索引 0）
+    if len(entry.lines) >= 2:
+        return entry.lines[0]
+    # 如果只有一行，说明是单语字幕，没有译文
+    return ""
+
+
 def nlp_segment(batch: list[SubtitleEntry],
                 log_fn=None,
                 lang_code: str = "en") -> list[SubtitleEntry]:

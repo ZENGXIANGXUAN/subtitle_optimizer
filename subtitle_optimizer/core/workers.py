@@ -220,9 +220,9 @@ async def _optimize_batch_impl(
     # 转换为 prompt 使用的语言名称
     input_lang_prompt = _get_prompt_lang(input_lang)
     output_lang_prompt = _get_prompt_lang(output_lang)
-    # 统一使用 _get_source_text() 获取原文，消除语言分支
+    # 统一使用 _get_source_text() 和 _get_target_text() 获取文本，消除语言分支
     items_json = json.dumps([
-        {"id": e.index, "src": _get_source_text(e, input_lang_code), "tgt": e.target}
+        {"id": e.index, "src": _get_source_text(e, input_lang_code), "tgt": _get_target_text(e, input_lang_code)}
         for e in batch
     ], ensure_ascii=False)
 
@@ -256,7 +256,7 @@ async def _optimize_batch_impl(
     if prev_ctx:
         # 上下文也使用统一的字段名
         ctx_json = json.dumps([
-            {"id": e.index, "src": _get_source_text(e, input_lang_code), "tgt": e.target}
+            {"id": e.index, "src": _get_source_text(e, input_lang_code), "tgt": _get_target_text(e, input_lang_code)}
             for e in prev_ctx
         ], ensure_ascii=False)
         user_content = (
