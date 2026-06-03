@@ -1082,6 +1082,8 @@ class MainWindow(QMainWindow):
             logger.info(f"文件读取成功，开始解析SRT内容")
             self.entries = parse_srt(content)
 
+            # 清理旧的 worker/thread，防止闪退
+            self._cleanup_single_pipeline()
             # 重置阶段数据和对比选择状态
             self._stage_data.clear()
             self._pipeline_completed = False
@@ -1428,8 +1430,8 @@ class MainWindow(QMainWindow):
         self._refresh_compare()
         # 启用对比选择功能
         self._enable_compare_selection()
-        # 清理 worker/thread，防止下次打开文件时闪退
-        self._cleanup_single_pipeline()
+        # 注意：不在这里清理 worker/thread，因为 thread 的 finished 信号已经连接了 deleteLater
+        # 清理会在下次 _run_optimize 或 _open_file 时进行
 
     def _stop_optimize(self):
         self._pipeline_active = False
