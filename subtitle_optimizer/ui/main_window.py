@@ -404,76 +404,55 @@ class MainWindow(QMainWindow):
         compare_layout.setSpacing(0)
         compare_layout.setContentsMargins(0, 0, 0, 0)
 
-        # 对比选择器 - 优化布局
+        # 对比选择器 - 左右分离布局
         selector_row = QWidget()
-        selector_row.setFixedHeight(48)
+        selector_row.setFixedHeight(44)
         selector_row.setStyleSheet("""
             background: rgb(247, 243, 223);
             border-bottom: 2px solid #c4b89e;
         """)
         sr = QHBoxLayout(selector_row)
-        sr.setContentsMargins(16, 6, 16, 6)
-        sr.setSpacing(12)
+        sr.setContentsMargins(12, 4, 12, 4)
+        sr.setSpacing(0)
 
-        # 左侧选择
-        left_wrap = QWidget()
-        left_layout = QHBoxLayout(left_wrap)
-        left_layout.setContentsMargins(0, 0, 0, 0)
-        left_layout.setSpacing(6)
-        left_lbl = QLabel("左侧:")
-        left_lbl.setStyleSheet("color: #8a7b66; font-size: 12px; font-weight: 600;")
-        left_layout.addWidget(left_lbl)
+        # 左侧选择器（靠左）
         self._cmp_left_combo = NoWheelComboBox()
         self._cmp_left_combo.setMinimumWidth(120)
+        self._cmp_left_combo.setStyleSheet("""
+            QComboBox {
+                color: #8a7b66; font-size: 12px; font-weight: 700;
+                background: transparent; border: none; padding: 4px 8px;
+            }
+            QComboBox::drop-down { border: none; }
+            QComboBox:hover { color: #794f27; }
+        """)
         self._cmp_left_combo.addItems(["原始字幕", "阶段2 重组", "阶段3 翻译", "阶段4 优化"])
         self._cmp_left_combo.setCurrentIndex(0)
         self._cmp_left_combo.setEnabled(False)
         self._cmp_left_combo.currentIndexChanged.connect(self._on_compare_selection_changed)
-        left_layout.addWidget(self._cmp_left_combo)
-        sr.addWidget(left_wrap)
+        sr.addWidget(self._cmp_left_combo)
 
-        # VS 分隔符
-        vs_lbl = QLabel("VS")
-        vs_lbl.setStyleSheet("color: #19c8b9; font-size: 14px; font-weight: 700; padding: 0 8px;")
-        vs_lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        sr.addWidget(vs_lbl)
+        # 中间弹性空间
+        sr.addStretch()
 
-        # 右侧选择
-        right_wrap = QWidget()
-        right_layout = QHBoxLayout(right_wrap)
-        right_layout.setContentsMargins(0, 0, 0, 0)
-        right_layout.setSpacing(6)
-        right_lbl = QLabel("右侧:")
-        right_lbl.setStyleSheet("color: #8a7b66; font-size: 12px; font-weight: 600;")
-        right_layout.addWidget(right_lbl)
+        # 右侧选择器（靠右）
         self._cmp_right_combo = NoWheelComboBox()
         self._cmp_right_combo.setMinimumWidth(120)
+        self._cmp_right_combo.setStyleSheet("""
+            QComboBox {
+                color: #3FB950; font-size: 12px; font-weight: 700;
+                background: transparent; border: none; padding: 4px 8px;
+            }
+            QComboBox::drop-down { border: none; }
+            QComboBox:hover { color: #2ea043; }
+        """)
         self._cmp_right_combo.addItems(["原始字幕", "阶段2 重组", "阶段3 翻译", "阶段4 优化"])
         self._cmp_right_combo.setCurrentIndex(3)
         self._cmp_right_combo.setEnabled(False)
         self._cmp_right_combo.currentIndexChanged.connect(self._on_compare_selection_changed)
-        right_layout.addWidget(self._cmp_right_combo)
-        sr.addWidget(right_wrap)
+        sr.addWidget(self._cmp_right_combo)
 
-        sr.addStretch()
         compare_layout.addWidget(selector_row)
-
-        # 对比内容区域标题
-        header_row = QWidget()
-        header_row.setFixedHeight(36)
-        header_row.setStyleSheet("""
-            background: rgb(247, 243, 223);
-            border-bottom: 2px solid #c4b89e;
-        """)
-        hl = QHBoxLayout(header_row)
-        hl.setContentsMargins(16, 0, 16, 0)
-        self._lbl_cmp_left = QLabel("原始字幕")
-        self._lbl_cmp_left.setStyleSheet("color:#8a7b66; font-size:11px; font-weight:700; letter-spacing:1px;")
-        self._lbl_cmp_right = QLabel("优化后")
-        self._lbl_cmp_right.setStyleSheet("color:#3FB950; font-size:11px; font-weight:700; letter-spacing:1px;")
-        hl.addWidget(self._lbl_cmp_left)
-        hl.addWidget(self._lbl_cmp_right)
-        compare_layout.addWidget(header_row)
 
         self._cmp_scroll = QScrollArea()
         self._cmp_scroll.setWidgetResizable(True)
@@ -1552,10 +1531,6 @@ class MainWindow(QMainWindow):
         left_entries = self._get_entries_for_stage(left_idx)
         # 获取右侧数据
         right_entries = self._get_entries_for_stage(right_idx)
-
-        # 更新标题
-        self._lbl_cmp_left.setText(self._cmp_left_combo.currentText())
-        self._lbl_cmp_right.setText(self._cmp_right_combo.currentText())
 
         # 清空并重建对比视图
         while self._cmp_grid.count():
