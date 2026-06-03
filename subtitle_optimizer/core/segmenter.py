@@ -1,18 +1,18 @@
 import re
 from core.models import SubtitleEntry, _english_word_count, _srt_time_to_ms
 
-# 语言代码 -> spaCy 模型名
+# 语言代码 -> spaCy 模型名（使用连字符格式，与 pip 包名一致）
 SPACY_MODELS = {
-    "zh": "zh_core_web_sm",      # 中文
-    "en": "en_core_web_sm",      # 英文
-    "it": "it_core_web_sm",      # 意大利语
-    "ja": "ja_core_news_sm",     # 日语
-    "ko": "ko_core_news_sm",     # 韩语
-    "fr": "fr_core_news_sm",     # 法语
-    "de": "de_core_news_sm",     # 德语
-    "es": "es_core_news_sm",     # 西班牙语
-    "pt": "pt_core_news_sm",     # 葡萄牙语
-    "ru": "ru_core_news_sm",     # 俄语
+    "zh": "zh-core-web-sm",      # 中文
+    "en": "en-core-web-sm",      # 英文
+    "it": "it-core-news-sm",     # 意大利语
+    "ja": "ja-core-news-sm",     # 日语
+    "ko": "ko-core-news-sm",     # 韩语
+    "fr": "fr-core-news-sm",     # 法语
+    "de": "de-core-news-sm",     # 德语
+    "es": "es-core-news-sm",     # 西班牙语
+    "pt": "pt-core-news-sm",     # 葡萄牙语
+    "ru": "ru-core-news-sm",     # 俄语
 }
 
 _nlp_cache = {}  # 语言代码 -> spaCy 模型
@@ -22,9 +22,11 @@ def _get_nlp(lang_code: str = "en"):
     """获取指定语言的 spaCy 模型，支持缓存和回退"""
     if lang_code not in _nlp_cache:
         import spacy
-        model_name = SPACY_MODELS.get(lang_code, "en_core_web_sm")
+        model_name = SPACY_MODELS.get(lang_code, "en-core-web-sm")
+        # spaCy load() 需要下划线格式（en_core_web_sm），pip 包名使用连字符格式（en-core-web-sm）
+        spacy_model_name = model_name.replace("-", "_")
         try:
-            _nlp_cache[lang_code] = spacy.load(model_name)
+            _nlp_cache[lang_code] = spacy.load(spacy_model_name)
         except OSError:
             # 模型未安装，回退到英文模型
             if lang_code != "en":
