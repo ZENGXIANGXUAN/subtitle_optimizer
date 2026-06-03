@@ -18,7 +18,7 @@ from core.models import (
     _srt_time_to_ms,
     _ms_to_srt_time,
 )
-from core.segmenter import nlp_segment
+from core.segmenter import nlp_segment, _get_source_text
 from core.client import MistralClient
 
 
@@ -766,6 +766,7 @@ class TranslateWorker(BaseWorker):
         self.batch_size = batch_size
         self.input_lang = input_lang
         self.output_lang = output_lang
+        self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
 
     @pyqtSlot()
     def run(self):
@@ -801,9 +802,11 @@ class TranslateWorker(BaseWorker):
                             batch, self.context, self.glossary, self.client, session,
                             self.input_lang, self.output_lang)
                     for entry in batch:
-                        zh = result_map.get(entry.index, "")
-                        if zh and entry.english:
-                            entry.lines = [zh, entry.english]
+                        translation = result_map.get(entry.index, "")
+                        # 获取原文文本（支持任意语言）
+                        source_text = _get_source_text(entry, self.input_lang_code)
+                        if translation and source_text:
+                            entry.lines = [translation, source_text]
                             entry.status = "done"
                             self.entry_done.emit(entry.index, entry.lines, "done")
                         else:
@@ -1078,9 +1081,11 @@ class BatchWorker(BaseWorker):
                             batch, context, glossary, self.client, session,
                             self.input_lang, self.output_lang)
                     for entry in batch:
-                        zh = result_map.get(entry.index, "")
-                        if zh and entry.english:
-                            entry.lines = [zh, entry.english]
+                        translation = result_map.get(entry.index, "")
+                        # 获取原文文本（支持任意语言）
+                        source_text = _get_source_text(entry, self.input_lang_code)
+                        if translation and source_text:
+                            entry.lines = [translation, source_text]
                 except Exception:
                     pass
 
