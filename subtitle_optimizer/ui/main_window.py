@@ -21,11 +21,8 @@ class NoWheelComboBox(QComboBox):
     """禁用滚轮事件的 QComboBox，防止意外改变选项"""
 
     def wheelEvent(self, event: QWheelEvent):
-        # 只有当 ComboBox 获得焦点时才允许滚轮操作
-        if self.hasFocus():
-            super().wheelEvent(event)
-        else:
-            event.ignore()
+        # 完全忽略滚轮事件，不传递给父类
+        event.ignore()
 
 
 # 导入业务层逻辑和界面辅助
