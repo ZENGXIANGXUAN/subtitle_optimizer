@@ -927,6 +927,9 @@ class MainWindow(QMainWindow):
         self._cleanup_worker_thread(self._segment_worker, self._segment_thread)
         self._segment_worker = None
         self._segment_thread = None
+        self._cleanup_worker_thread(self._translate_worker, self._translate_thread)
+        self._translate_worker = None
+        self._translate_thread = None
         self._cleanup_worker_thread(self._optimize_worker, self._optimize_thread)
         self._optimize_worker = None
         self._optimize_thread = None
