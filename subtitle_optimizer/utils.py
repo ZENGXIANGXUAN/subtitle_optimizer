@@ -44,16 +44,15 @@ def get_log_file_path() -> Path:
 
 
 def write_phase_snapshot(srt_filename: str, phase: str, entries, use_optimized: bool = False):
-    """将字幕内容写入每个文件的阶段日志，方便追踪问题。
+    """将字幕内容写入每个阶段的独立 SRT 文件，方便追踪问题。
 
-    输出路径: logs/YYYY-MM-DD/{srt_filename}.log
+    输出路径: logs/YYYY-MM-DD/{srt_filename}_{phase}.srt
     """
     from core.models import _format_subtitle_snapshot
     stem = Path(srt_filename).stem
-    log_path = _logs_dir() / f"{stem}.log"
+    srt_path = _logs_dir() / f"{stem}_{phase}.srt"
     content = _format_subtitle_snapshot(phase, entries, use_optimized)
-    with open(str(log_path), "a", encoding="utf-8") as f:
-        f.write(f"[{datetime.now().strftime('%H:%M:%S')}]\n")
+    with open(str(srt_path), "w", encoding="utf-8") as f:
         f.write(content + "\n")
 
 
