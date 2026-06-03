@@ -1082,6 +1082,14 @@ class MainWindow(QMainWindow):
             logger.info(f"文件读取成功，开始解析SRT内容")
             self.entries = parse_srt(content)
 
+            # 重置阶段数据和对比选择状态
+            self._stage_data.clear()
+            self._pipeline_completed = False
+            self._cmp_left_combo.setEnabled(False)
+            self._cmp_right_combo.setEnabled(False)
+            self._cmp_left_combo.setCurrentIndex(0)
+            self._cmp_right_combo.setCurrentIndex(3)
+
             # 自动检测双语字幕并提取原文行
             if self.entries and len(self.entries[0].lines) > 1:
                 original_count = len(self.entries)
@@ -1420,6 +1428,8 @@ class MainWindow(QMainWindow):
         self._refresh_compare()
         # 启用对比选择功能
         self._enable_compare_selection()
+        # 清理 worker/thread，防止下次打开文件时闪退
+        self._cleanup_single_pipeline()
 
     def _stop_optimize(self):
         self._pipeline_active = False
