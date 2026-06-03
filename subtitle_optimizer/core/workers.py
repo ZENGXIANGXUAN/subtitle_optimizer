@@ -489,22 +489,25 @@ async def _translate_batch_impl(
     output_lang: str = "中文",
 ) -> dict[int, str]:
     """共享：翻译一批字幕，返回 {index: zh}。失败返回空字典。"""
-    input_lang = _get_prompt_lang(input_lang)
-    output_lang = _get_prompt_lang(output_lang)
+    # 获取输入语言代码，用于获取正确的原文文本
+    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
+    # 转换为 prompt 使用的语言名称
+    input_lang_prompt = _get_prompt_lang(input_lang)
+    output_lang_prompt = _get_prompt_lang(output_lang)
     items_json = json.dumps([
-        {"id": e.index, "en": e.english} for e in batch
+        {"id": e.index, "en": _get_source_text(e, input_lang_code)} for e in batch
     ], ensure_ascii=False)
 
     system_content = (
         f"你是专业字幕翻译师。\n【背景与风格】\n{context}\n\n"
-        f"任务：将{input_lang}字幕翻译成{output_lang}，严格遵循上述风格指引（如有）。\n"
+        f"任务：将{input_lang_prompt}字幕翻译成{output_lang_prompt}，严格遵循上述风格指引（如有）。\n"
         "规则：\n"
         "1. 用词语气与风格指引一致，贴合视频语境\n"
         "2. 严格按JSON格式返回，不要加任何解释\n"
         "3. 每条必须有zh字段，不得为空或返回None\n"
         "4. 【严禁】不得合并条目，输入几条返回几条，id一一对应\n"
         "5. 【严禁重复翻译】每条只译自己的en内容，en是半句就译半句，不得让相邻条目的zh相同或重复\n\n"
-        f'返回格式：[{{"id": 1, "zh": "{output_lang}翻译"}}]'
+        f'返回格式：[{{"id": 1, "zh": "{output_lang_prompt}翻译"}}]'
     )
 
     glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
@@ -807,6 +810,11 @@ class TranslateWorker(BaseWorker):
                         translation = result_map.get(entry.index, "")
                         # 获取原文文本（支持任意语言）
                         source_text = _get_source_text(entry, self.input_lang_code)
+                        # 调试日志
+                        if not translation:
+                            logger.warning(f"翻译结果为空: entry.index={entry.index}")
+                        if not source_text:
+                            logger.warning(f"原文文本为空: entry.index={entry.index}, lang_code={self.input_lang_code}")
                         if translation and source_text:
                             entry.lines = [translation, source_text]
                             entry.status = "done"
@@ -816,7 +824,8 @@ class TranslateWorker(BaseWorker):
                             self.entry_done.emit(entry.index, entry.lines, "error")
                         completed += 1
                         self.progress.emit(completed, total)
-                except Exception:
+                except Exception as e:
+                    logger.error(f"翻译批次失败: {e}")
                     for entry in batch:
                         entry.status = "error"
                         self.entry_done.emit(entry.index, entry.lines, "error")
