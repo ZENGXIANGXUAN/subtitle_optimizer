@@ -647,6 +647,7 @@ class SegmentWorker(BaseWorker):
         self.batch_size = batch_size
         self.input_lang = input_lang
         self.output_lang = output_lang
+        self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
 
     @pyqtSlot()
     def run(self):
@@ -700,7 +701,7 @@ class SegmentWorker(BaseWorker):
     async def _segment_batch(self, batch: list[SubtitleEntry],
                               session: aiohttp.ClientSession) -> list[SubtitleEntry]:
         # NLP 预断句合并
-        batch = nlp_segment(batch, log_fn=self.log.emit)
+        batch = nlp_segment(batch, log_fn=self.log.emit, lang_code=self.input_lang_code)
         if not batch:
             return []
 
@@ -851,6 +852,7 @@ class BatchWorker(BaseWorker):
         self.original_line = original_line  # 原文行号（0-based）
         self.input_lang = input_lang
         self.output_lang = output_lang
+        self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
 
     def _extract_original_line(self, entries: list[SubtitleEntry]) -> list[SubtitleEntry]:
         """根据设置提取原文行，将双语字幕转换为单语言字幕"""
@@ -1005,7 +1007,7 @@ class BatchWorker(BaseWorker):
                                session: aiohttp.ClientSession,
                                is_native: bool = False) -> list[SubtitleEntry]:
         # NLP 预断句合并
-        batch = nlp_segment(batch, log_fn=self.log.emit)
+        batch = nlp_segment(batch, log_fn=self.log.emit, lang_code=self.input_lang_code)
         if not batch:
             return []
 

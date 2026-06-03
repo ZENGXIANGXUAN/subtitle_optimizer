@@ -1,19 +1,50 @@
 import re
 from core.models import SubtitleEntry, _english_word_count, _srt_time_to_ms
 
-_nlp = None
+# 语言代码 -> spaCy 模型名
+SPACY_MODELS = {
+    "zh": "zh_core_web_sm",      # 中文
+    "en": "en_core_web_sm",      # 英文
+    "it": "it_core_web_sm",      # 意大利语
+    "ja": "ja_core_news_sm",     # 日语
+    "ko": "ko_core_news_sm",     # 韩语
+    "fr": "fr_core_news_sm",     # 法语
+    "de": "de_core_news_sm",     # 德语
+    "es": "es_core_news_sm",     # 西班牙语
+    "pt": "pt_core_news_sm",     # 葡萄牙语
+    "ru": "ru_core_news_sm",     # 俄语
+}
+
+_nlp_cache = {}  # 语言代码 -> spaCy 模型
 
 
-def _get_nlp():
-    global _nlp
-    if _nlp is None:
+def _get_nlp(lang_code: str = "en"):
+    """获取指定语言的 spaCy 模型，支持缓存和回退"""
+    if lang_code not in _nlp_cache:
         import spacy
-        _nlp = spacy.load("en_core_web_sm")
-    return _nlp
+        model_name = SPACY_MODELS.get(lang_code, "en_core_web_sm")
+        try:
+            _nlp_cache[lang_code] = spacy.load(model_name)
+        except OSError:
+            # 模型未安装，回退到英文模型
+            if lang_code != "en":
+                print(f"⚠️ spaCy 模型 {model_name} 未安装，回退到英文模型")
+            _nlp_cache[lang_code] = spacy.load("en_core_web_sm")
+    return _nlp_cache[lang_code]
+
+
+def _get_source_text(entry: SubtitleEntry, lang_code: str) -> str:
+    """获取字幕条目的原文文本（根据输入语言）"""
+    # 如果是中文输入，返回 chinese 属性
+    if lang_code == "zh":
+        return entry.chinese
+    # 其他语言，返回 english 属性（非中文文本）
+    return entry.english
 
 
 def nlp_segment(batch: list[SubtitleEntry],
-                log_fn=None) -> list[SubtitleEntry]:
+                log_fn=None,
+                lang_code: str = "en") -> list[SubtitleEntry]:
     """使用 spaCy 对一批字幕做句子边界检测并合并碎片条目。
 
     返回合并后的条目列表，条目数可能少于输入。
@@ -21,28 +52,28 @@ def nlp_segment(batch: list[SubtitleEntry],
     if not batch:
         return []
 
-    nlp = _get_nlp()
+    nlp = _get_nlp(lang_code)
 
-    # 1. 拼接所有英文文本，记录每条条目在拼接文本中的起止位置
+    # 1. 拼接所有原文文本，记录每条条目在拼接文本中的起止位置
     positions: list[tuple[int, int]] = []
     parts: list[str] = []
     offset = 0
     for entry in batch:
-        en = entry.english.strip()
-        if not en:
+        source_text = _get_source_text(entry, lang_code).strip()
+        if not source_text:
             positions.append((offset, offset))
             parts.append("")
             continue
-        parts.append(en)
-        positions.append((offset, offset + len(en)))
-        offset += len(en) + 1  # +1 for space separator
+        parts.append(source_text)
+        positions.append((offset, offset + len(source_text)))
+        offset += len(source_text) + 1  # +1 for space separator
 
     joined = " ".join(p for p in parts if p)
     if not joined:
         if log_fn:
-            empty_count = sum(1 for e in batch if not e.english.strip())
+            empty_count = sum(1 for e in batch if not _get_source_text(e, lang_code).strip())
             if empty_count == len(batch):
-                log_fn(f"  ⚠️ 所有条目的英文文本为空，请检查「原文行数」设置是否正确")
+                log_fn(f"  ⚠️ 所有条目的原文文本为空，请检查「原文行数」设置是否正确")
         return []
 
     # 2. spaCy 句子边界检测
@@ -53,7 +84,7 @@ def nlp_segment(batch: list[SubtitleEntry],
     sent_to_entries: list[list[int]] = [[] for _ in sentences]
     for entry_idx, (entry_start, entry_end) in enumerate(positions):
         entry = batch[entry_idx]
-        if not entry.english.strip():
+        if not _get_source_text(entry, lang_code).strip():
             continue
         for sent_idx, sent in enumerate(sentences):
             if entry_start < sent.end_char and entry_end > sent.start_char:
@@ -76,7 +107,7 @@ def nlp_segment(batch: list[SubtitleEntry],
         entries_to_merge = [batch[i] for i in sorted(new_indices)]
 
         # 安全约束检查
-        if not _nlp_merge_is_safe(entries_to_merge):
+        if not _nlp_merge_is_safe(entries_to_merge, lang_code):
             for e in entries_to_merge:
                 clone = SubtitleEntry(e.index, e.start_time, e.end_time,
                                       list(e.lines))
@@ -88,16 +119,23 @@ def nlp_segment(batch: list[SubtitleEntry],
         first_entry = entries_to_merge[0]
         last_entry = entries_to_merge[-1]
 
-        merged_en = " ".join(e.english.strip() for e in entries_to_merge
-                             if e.english.strip())
+        merged_source = " ".join(_get_source_text(e, lang_code).strip()
+                                 for e in entries_to_merge
+                                 if _get_source_text(e, lang_code).strip())
         merged_zh = "".join(e.chinese.strip() for e in entries_to_merge
                            if e.chinese.strip())
 
         lines = []
-        if merged_zh:
-            lines.append(merged_zh)
-        if merged_en:
-            lines.append(merged_en)
+        if lang_code == "zh":
+            # 中文输入时，中文是原文
+            if merged_source:
+                lines.append(merged_source)
+        else:
+            # 非中文输入时，中文是译文
+            if merged_zh:
+                lines.append(merged_zh)
+            if merged_source:
+                lines.append(merged_source)
 
         if log_fn and len(entries_to_merge) > 1:
             ids = [e.index for e in entries_to_merge]
@@ -119,7 +157,7 @@ def nlp_segment(batch: list[SubtitleEntry],
     return results
 
 
-def _nlp_merge_is_safe(entries: list[SubtitleEntry]) -> bool:
+def _nlp_merge_is_safe(entries: list[SubtitleEntry], lang_code: str = "en") -> bool:
     """检查 NLP 合并候选是否安全。
 
     仅检查语法层面：gap 过大说明是独立句子不该合并，
@@ -134,7 +172,14 @@ def _nlp_merge_is_safe(entries: list[SubtitleEntry]) -> bool:
             return False
 
     for e in entries:
-        if _english_word_count(e.english) >= 35:
+        source_text = _get_source_text(e, lang_code)
+        if _english_word_count(source_text) >= 35:
             return False
 
     return True
+
+
+def get_model_install_command(lang_code: str) -> str:
+    """获取 spaCy 模型安装命令"""
+    model_name = SPACY_MODELS.get(lang_code, "en_core_web_sm")
+    return f"python -m spacy download {model_name}"
