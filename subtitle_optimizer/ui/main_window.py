@@ -945,7 +945,7 @@ class MainWindow(QMainWindow):
         self._batch_thread.start()
 
     def _cleanup_worker_thread(self, worker, thread, timeout_ms: int = 5000):
-        """安全清理 worker 和 thread：取消任务 → 退出线程 → 等待结束 → 删除"""
+        """安全清理 worker 和 thread：取消任务 → 退出线程 → 等待结束"""
         if worker is not None:
             try:
                 worker.cancel()
@@ -956,11 +956,14 @@ class MainWindow(QMainWindow):
                 worker.disconnect()
             except Exception:
                 pass
-        if thread is not None and thread.isRunning():
-            thread.quit()
-            thread.wait(timeout_ms)
         if thread is not None:
-            thread.deleteLater()
+            try:
+                if thread.isRunning():
+                    thread.quit()
+                    thread.wait(timeout_ms)
+            except RuntimeError:
+                # thread 已经被删除，忽略错误
+                pass
 
     def _cleanup_batch_pipeline(self):
         self._cleanup_worker_thread(self._batch_worker, self._batch_thread)
