@@ -132,6 +132,19 @@ def _chinese_char_count(text: str) -> int:
     return sum(1 for char in text or "" if "\u4e00" <= char <= "\u9fff")
 
 
+def _source_text_length(text: str, lang_code: str = "en") -> int:
+    """\u83b7\u53d6\u539f\u6587\u6587\u672c\u957f\u5ea6\uff08\u6839\u636e\u8bed\u8a00\u4f7f\u7528\u4e0d\u540c\u7684\u8ba1\u7b97\u65b9\u5f0f\uff09
+    - \u82f1\u6587\u7b49\u62c9\u4e01\u8bed\u7cfb\uff1a\u8ba1\u7b97\u5355\u8bcd\u6570
+    - \u4e2d\u6587\u3001\u65e5\u6587\u3001\u97e9\u6587\uff1a\u8ba1\u7b97\u5b57\u7b26\u6570
+    """
+    if lang_code in ("zh", "ja", "ko"):
+        # CJK \u8bed\u8a00\uff1a\u8ba1\u7b97\u5b57\u7b26\u6570
+        return len(text or "")
+    else:
+        # \u5176\u4ed6\u8bed\u8a00\uff1a\u8ba1\u7b97\u5355\u8bcd\u6570
+        return _english_word_count(text)
+
+
 def _translation_looks_incomplete(zh: str, en: str) -> bool:
     en_words = _english_word_count(en)
     if en_words < 18:

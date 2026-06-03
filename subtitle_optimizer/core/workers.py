@@ -17,6 +17,7 @@ from core.models import (
     _english_word_count,
     _srt_time_to_ms,
     _ms_to_srt_time,
+    _source_text_length,
 )
 from core.segmenter import nlp_segment, _get_source_text
 from core.client import MistralClient
@@ -561,12 +562,13 @@ async def _repair_incomplete_segment_translations(
         entry.lines = [zh, en] if en else [zh]
 
 
-def _split_short_long(batch: list[SubtitleEntry], max_words: int = 20):
+def _split_short_long(batch: list[SubtitleEntry], max_words: int = 20, lang_code: str = "en"):
     """分离短条目（直通）和长条目（需LLM切分）。"""
     short_entries = []
     long_entries = []
     for e in batch:
-        if _english_word_count(e.english) <= max_words:
+        source_text = _get_source_text(e, lang_code)
+        if _source_text_length(source_text, lang_code) <= max_words:
             short_entries.append(e)
         else:
             long_entries.append(e)
@@ -706,7 +708,7 @@ class SegmentWorker(BaseWorker):
             return []
 
         # 分离：短条目直通，长条目（>20词）送LLM语义切分
-        short_entries, long_entries = _split_short_long(batch)
+        short_entries, long_entries = _split_short_long(batch, lang_code=self.input_lang_code)
         if not long_entries:
             return short_entries
 
@@ -1012,7 +1014,7 @@ class BatchWorker(BaseWorker):
             return []
 
         # 分离：短条目直通，长条目（>20词）送LLM语义切分
-        short_entries, long_entries = _split_short_long(batch)
+        short_entries, long_entries = _split_short_long(batch, lang_code=self.input_lang_code)
         if not long_entries:
             return short_entries
 
