@@ -1578,7 +1578,9 @@ class MainWindow(QMainWindow):
         try:
             with open(self._config_path(), "w") as f:
                 json.dump(cfg, f)
-            self.status_bar.showMessage("配置已保存")
+            from datetime import datetime
+            current_time = datetime.now().strftime("%H:%M:%S")
+            self.status_bar.showMessage(f"✅ 配置已保存 ({current_time})")
         except Exception as e:
             self._log(f"⚠️ 保存配置失败：{e}")
 
