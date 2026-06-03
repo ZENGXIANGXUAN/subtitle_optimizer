@@ -107,11 +107,12 @@ def _build_analysis_messages(entries: list[SubtitleEntry],
                             input_lang: str = "English",
                             output_lang: str = "中文") -> list[dict]:
     """构造情景分析提示词，产出可直接约束后续翻译优化的 brief。"""
+    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
     input_lang = _get_prompt_lang(input_lang)
     output_lang = _get_prompt_lang(output_lang)
     sample = entries[:30]
     sample_text = "\n".join(
-        f"[{e.index}] {e.english}"
+        f"[{e.index}] {_get_source_text(e, input_lang_code)}"
         for e in sample
     )
 
