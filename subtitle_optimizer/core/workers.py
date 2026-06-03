@@ -535,16 +535,22 @@ async def _translate_batch_impl(
     try:
         response = await client.chat(messages, session)
         clean = re.sub(r'```(?:json)?|```', '', response).strip()
+        logger.debug(f"翻译API响应: {clean[:500]}")
         data = json.loads(clean)
         result: dict[int, str] = {}
         for item in data:
             tgt = item.get("tgt", "")
+            # 兼容旧格式：如果 tgt 为空，尝试 zh 字段
+            if not tgt:
+                tgt = item.get("zh", "")
             tgt = strip_annotation(str(tgt).strip()) if tgt else ""
             if tgt.lower() in ("none", "null", "无", "—", "-", ""):
                 tgt = ""
             result[item["id"]] = tgt
+        logger.debug(f"翻译结果: {len(result)} 条，非空: {sum(1 for v in result.values() if v)} 条")
         return result
-    except Exception:
+    except Exception as e:
+        logger.error(f"翻译解析失败: {e}")
         return {}
 
 
