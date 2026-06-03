@@ -1339,9 +1339,9 @@ class MainWindow(QMainWindow):
         # 保存阶段3数据
         self._save_stage_data("阶段3 翻译", self.entries)
         translated = sum(1 for e in self.entries if e.status == "done")
-        skipped = len(self.entries) - translated
-        if skipped > 0:
-            self._log(f"✅ [阶段3/4] 翻译完成：{translated} 条翻译，{skipped} 条跳过（双语）")
+        failed = sum(1 for e in self.entries if e.status == "error")
+        if failed > 0:
+            self._log(f"✅ [阶段3/4] 翻译完成：{translated} 条成功，{failed} 条失败")
         else:
             self._log(f"✅ [阶段3/4] 翻译完成：{translated} 条")
         QTimer.singleShot(100, lambda: self._start_optimize_stage(client, concurrency, batch_size))
