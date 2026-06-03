@@ -19,7 +19,7 @@ from core.models import (
     _ms_to_srt_time,
     _source_text_length,
 )
-from core.segmenter import nlp_segment, _get_source_text
+from core.segmenter import nlp_segment, _get_source_text, _get_target_text
 from core.client import MistralClient
 
 
