@@ -276,8 +276,21 @@ async def _optimize_batch_impl(
 
     try:
         clean = re.sub(r'```(?:json)?|```', '', response).strip()
+        # 移除控制字符（除了换行和制表符）
+        clean = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', clean)
         logger.debug(f"API响应: {clean[:500]}...")
-        data = json.loads(clean)
+        try:
+            data = json.loads(clean)
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON解析失败，尝试修复: {e}")
+            # 尝试修复常见的 JSON 错误
+            clean = re.sub(r',\s*}', '}', clean)
+            clean = re.sub(r',\s*]', ']', clean)
+            try:
+                data = json.loads(clean)
+            except json.JSONDecodeError:
+                logger.error(f"JSON修复失败，原始响应: {response[:200]}")
+                return {e.index: e.lines for e in batch}
         api_map = {item["id"]: item for item in data}
         logger.debug(f"API返回 {len(data)} 条，批次有 {len(batch)} 条")
 
@@ -540,8 +553,23 @@ async def _translate_batch_impl(
     try:
         response = await client.chat(messages, session)
         clean = re.sub(r'```(?:json)?|```', '', response).strip()
+        # 移除控制字符（除了换行和制表符）
+        clean = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', clean)
         logger.debug(f"翻译API响应: {clean[:500]}")
-        data = json.loads(clean)
+        try:
+            data = json.loads(clean)
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON解析失败，尝试修复: {e}")
+            # 尝试修复常见的 JSON 错误
+            # 1. 移除尾部逗号
+            clean = re.sub(r',\s*}', '}', clean)
+            clean = re.sub(r',\s*]', ']', clean)
+            # 2. 尝试再次解析
+            try:
+                data = json.loads(clean)
+            except json.JSONDecodeError:
+                logger.error(f"JSON修复失败，原始响应: {response[:200]}")
+                return {}
         result: dict[int, str] = {}
         for item in data:
             tgt = item.get("tgt", "")
