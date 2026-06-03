@@ -737,8 +737,10 @@ class SegmentWorker(BaseWorker):
     async def _segment_batch(self, batch: list[SubtitleEntry],
                               session: aiohttp.ClientSession) -> list[SubtitleEntry]:
         # NLP 预断句合并
+        original_count = len(batch)
         batch = nlp_segment(batch, log_fn=self.log.emit, lang_code=self.input_lang_code)
         if not batch:
+            logger.warning(f"NLP 分段返回空列表，原始批次大小: {original_count}")
             return []
 
         # 分离：短条目直通，长条目（>20词）送LLM语义切分

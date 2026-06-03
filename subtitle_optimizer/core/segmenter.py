@@ -105,6 +105,8 @@ def nlp_segment(batch: list[SubtitleEntry],
             empty_count = sum(1 for e in batch if not _get_source_text(e, lang_code).strip())
             if empty_count == len(batch):
                 log_fn(f"  ⚠️ 所有条目的原文文本为空，请检查「原文行数」设置是否正确")
+            else:
+                log_fn(f"  ⚠️ 拼接后文本为空，但并非所有条目都为空 ({empty_count}/{len(batch)})")
         return []
 
     # 2. spaCy 句子边界检测
