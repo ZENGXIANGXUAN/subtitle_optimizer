@@ -107,7 +107,7 @@ def _build_analysis_messages(entries: list[SubtitleEntry],
                             input_lang: str = "English",
                             output_lang: str = "中文") -> list[dict]:
     """构造情景分析提示词，产出可直接约束后续翻译优化的 brief。"""
-    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
+    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
     input_lang = _get_prompt_lang(input_lang)
     output_lang = _get_prompt_lang(output_lang)
     sample = entries[:30]
@@ -216,7 +216,7 @@ async def _optimize_batch_impl(
     prev_ctx 为上一批末尾若干条（只作上下文参考，不要求 AI 返回）。
     """
     # 获取语言代码，用于获取正确的原文文本
-    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
+    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
     # 转换为 prompt 使用的语言名称
     input_lang_prompt = _get_prompt_lang(input_lang)
     output_lang_prompt = _get_prompt_lang(output_lang)
@@ -500,7 +500,7 @@ async def _translate_batch_impl(
 ) -> dict[int, str]:
     """共享：翻译一批字幕，返回 {index: tgt}。失败返回空字典。"""
     # 获取输入语言代码，用于获取正确的原文文本
-    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
+    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
     # 转换为 prompt 使用的语言名称
     input_lang_prompt = _get_prompt_lang(input_lang)
     output_lang_prompt = _get_prompt_lang(output_lang)
@@ -552,7 +552,7 @@ async def _repair_incomplete_segment_translations(
     input_lang: str = "English",
     output_lang: str = "中文",
 ) -> None:
-    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
+    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
     incomplete = [
         entry for entry in entries
         if _translation_looks_incomplete(entry.target, _get_source_text(entry, input_lang_code))
@@ -664,7 +664,7 @@ class SegmentWorker(BaseWorker):
         self.batch_size = batch_size
         self.input_lang = input_lang
         self.output_lang = output_lang
-        self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
+        self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
 
     @pyqtSlot()
     def run(self):
@@ -788,7 +788,7 @@ class TranslateWorker(BaseWorker):
         self.batch_size = batch_size
         self.input_lang = input_lang
         self.output_lang = output_lang
-        self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
+        self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
 
     @pyqtSlot()
     def run(self):
@@ -880,7 +880,7 @@ class BatchWorker(BaseWorker):
         self.original_line = original_line  # 原文行号（0-based）
         self.input_lang = input_lang
         self.output_lang = output_lang
-        self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
+        self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
 
     def _extract_original_line(self, entries: list[SubtitleEntry]) -> list[SubtitleEntry]:
         """根据设置提取原文行，将双语字幕转换为单语言字幕"""
