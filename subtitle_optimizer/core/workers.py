@@ -610,7 +610,7 @@ def _split_short_long(batch: list[SubtitleEntry], max_words: int = 20, lang_code
 
 
 def _apply_llm_split(long_entries: list[SubtitleEntry], llm_response: list[dict],
-                     log_fn=None) -> list[SubtitleEntry]:
+                     log_fn=None, lang_code: str = "en") -> list[SubtitleEntry]:
     """将LLM切分建议应用到长条目，按词数比例分配时间戳。"""
     results = []
     by_id = {e.index: e for e in long_entries}
@@ -633,14 +633,15 @@ def _apply_llm_split(long_entries: list[SubtitleEntry], llm_response: list[dict]
         if log_fn:
             log_fn(f"  ✂️ 切分 [{orig.index}] → {len(segments)} 段")
 
-        total_words = sum(_english_word_count(s) for s in segments)
+        # 使用语言感知的长度计算
+        total_words = sum(_source_text_length(s, lang_code) for s in segments)
         total_ms = _srt_time_to_ms(orig.end_time) - _srt_time_to_ms(orig.start_time)
         if total_ms <= 0:
             total_ms = 1
         current_ms = _srt_time_to_ms(orig.start_time)
 
-        for i, seg_en in enumerate(segments):
-            sw = _english_word_count(seg_en)
+        for i, seg_text in enumerate(segments):
+            sw = _source_text_length(seg_text, lang_code)
             seg_duration = int(total_ms * sw / total_words) if total_words > 0 else int(total_ms / len(segments))
             if seg_duration < 200:
                 seg_duration = int(total_ms / len(segments))
@@ -649,9 +650,11 @@ def _apply_llm_split(long_entries: list[SubtitleEntry], llm_response: list[dict]
             seg_end = _ms_to_srt_time(current_ms + seg_duration)
             current_ms += seg_duration
 
-            lines = [seg_en] if seg_en else []
-            if i == 0 and orig.chinese:
-                lines.insert(0, orig.chinese)
+            lines = [seg_text] if seg_text else []
+            # 获取原文文本（支持任意语言）
+            source_text = _get_source_text(orig, lang_code)
+            if i == 0 and source_text:
+                lines.insert(0, source_text)
 
             seg_entry = SubtitleEntry(
                 index=orig.index + i,
@@ -748,24 +751,27 @@ class SegmentWorker(BaseWorker):
         if not long_entries:
             return short_entries
 
+        # 获取原文文本（支持任意语言）
         items_json = json.dumps([
-            {"id": e.index, "en": e.english,
+            {"id": e.index, "en": _get_source_text(e, self.input_lang_code),
              "start": e.start_time, "end": e.end_time}
             for e in long_entries
         ], ensure_ascii=False)
 
+        # 根据语言调整 prompt
+        lang_name = _get_prompt_lang(self.input_lang)
         sys_content = (
             "你是专业字幕切分助手。\n"
             f"【背景与风格】\n{self.context}\n\n"
-            "任务：以下英文字幕条目过长（>20词），在语义最自然的断点切分为2-3段，"
-            "每段 ≤20词，成为适合屏幕阅读的独立字幕。\n\n"
+            f"任务：以下{lang_name}字幕条目过长（>20词），在语义最自然的断点切分为2-3段，"
+            f"每段 ≤20词，成为适合屏幕阅读的独立字幕。\n\n"
             "规则：\n"
-            "1. 每段 ≤20个英文词\n"
+            "1. 每段 ≤20个词\n"
             "2. 切分点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
             "3. 每段必须是相对完整的语义单元（不可在词组内部切断）\n"
-            "4. 不要修改英文原文，只确定断点位置\n"
+            "4. 不要修改原文，只确定断点位置\n"
             "5. 严格按JSON格式返回，不要加任何解释\n\n"
-            '格式：[{"id": 原id, "segments": ["段1英文", "段2英文"]}]\n'
+            '格式：[{"id": 原id, "segments": ["段1", "段2"]}]\n'
             "segments 长度1=无需切分，2-3=切分结果。"
         )
 
@@ -778,7 +784,7 @@ class SegmentWorker(BaseWorker):
         try:
             clean = re.sub(r'```(?:json)?|```', '', response).strip()
             data = json.loads(clean)
-            split_results = _apply_llm_split(long_entries, data, log_fn=self.log.emit)
+            split_results = _apply_llm_split(long_entries, data, log_fn=self.log.emit, lang_code=self.input_lang_code)
         except Exception:
             split_results = [SubtitleEntry(e.index, e.start_time, e.end_time, list(e.lines))
                              for e in long_entries]
@@ -1060,24 +1066,27 @@ class BatchWorker(BaseWorker):
         if not long_entries:
             return short_entries
 
+        # 获取原文文本（支持任意语言）
         items_json = json.dumps([
-            {"id": e.index, "en": e.english,
+            {"id": e.index, "en": _get_source_text(e, self.input_lang_code),
              "start": e.start_time, "end": e.end_time}
             for e in long_entries
         ], ensure_ascii=False)
 
+        # 根据语言调整 prompt
+        lang_name = _get_prompt_lang(self.input_lang)
         sys_content = (
             "你是专业字幕切分助手。\n"
             f"【背景与风格】\n{context}\n\n"
-            "任务：以下英文字幕条目过长（>20词），在语义最自然的断点切分为2-3段，"
-            "每段 ≤20词，成为适合屏幕阅读的独立字幕。\n\n"
+            f"任务：以下{lang_name}字幕条目过长（>20词），在语义最自然的断点切分为2-3段，"
+            f"每段 ≤20词，成为适合屏幕阅读的独立字幕。\n\n"
             "规则：\n"
-            "1. 每段 ≤20个英文词\n"
+            "1. 每段 ≤20个词\n"
             "2. 切分点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
             "3. 每段必须是相对完整的语义单元（不可在词组内部切断）\n"
-            "4. 不要修改英文原文，只确定断点位置\n"
+            "4. 不要修改原文，只确定断点位置\n"
             "5. 严格按JSON格式返回，不要加任何解释\n\n"
-            '格式：[{"id": 原id, "segments": ["段1英文", "段2英文"]}]\n'
+            '格式：[{"id": 原id, "segments": ["段1", "段2"]}]\n'
             "segments 长度1=无需切分，2-3=切分结果。"
         )
 
@@ -1090,7 +1099,7 @@ class BatchWorker(BaseWorker):
         try:
             clean = re.sub(r'```(?:json)?|```', '', response).strip()
             data = json.loads(clean)
-            split_results = _apply_llm_split(long_entries, data, log_fn=self.log.emit)
+            split_results = _apply_llm_split(long_entries, data, log_fn=self.log.emit, lang_code=self.input_lang_code)
         except Exception:
             split_results = [SubtitleEntry(e.index, e.start_time, e.end_time, list(e.lines))
                              for e in long_entries]
