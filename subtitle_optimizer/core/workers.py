@@ -287,6 +287,9 @@ async def _optimize_batch_impl(
             if entry.index in api_map:
                 item = api_map[entry.index]
                 tgt_raw = item.get("tgt", "")
+                # 兼容旧格式：如果 tgt 为空，尝试 zh 字段
+                if not tgt_raw:
+                    tgt_raw = item.get("zh", "")
                 tgt = strip_annotation(str(tgt_raw).strip()) if tgt_raw else ""
                 tgt_incomplete = _translation_looks_incomplete(tgt, _get_source_text(entry, input_lang_code))
                 tgt_valid = bool(tgt) and tgt.lower() not in ("none", "null", "无", "—", "-")
@@ -333,7 +336,8 @@ async def _optimize_batch_impl(
                 retry_response = await client.chat(retry_messages, session)
                 retry_clean = re.sub(r'```(?:json)?|```', '', retry_response).strip()
                 retry_data = json.loads(retry_clean)
-                retry_map = {item["id"]: item.get("tgt", "") for item in retry_data}
+                # 兼容旧格式：优先使用 tgt，如果为空则使用 zh
+                retry_map = {item["id"]: item.get("tgt", "") or item.get("zh", "") for item in retry_data}
             except Exception:
                 pass
 
