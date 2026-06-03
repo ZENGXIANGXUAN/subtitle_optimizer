@@ -404,50 +404,69 @@ class MainWindow(QMainWindow):
         compare_layout.setSpacing(0)
         compare_layout.setContentsMargins(0, 0, 0, 0)
 
-        # 对比选择器
+        # 对比选择器 - 优化布局
         selector_row = QWidget()
-        selector_row.setFixedHeight(40)
+        selector_row.setFixedHeight(48)
         selector_row.setStyleSheet("""
             background: rgb(247, 243, 223);
-            border-bottom: 1px solid #c4b89e;
+            border-bottom: 2px solid #c4b89e;
         """)
         sr = QHBoxLayout(selector_row)
-        sr.setContentsMargins(12, 0, 12, 0)
-        sr.setSpacing(8)
+        sr.setContentsMargins(16, 6, 16, 6)
+        sr.setSpacing(12)
 
         # 左侧选择
-        sr.addWidget(QLabel("左侧:"))
+        left_wrap = QWidget()
+        left_layout = QHBoxLayout(left_wrap)
+        left_layout.setContentsMargins(0, 0, 0, 0)
+        left_layout.setSpacing(6)
+        left_lbl = QLabel("左侧:")
+        left_lbl.setStyleSheet("color: #8a7b66; font-size: 12px; font-weight: 600;")
+        left_layout.addWidget(left_lbl)
         self._cmp_left_combo = NoWheelComboBox()
+        self._cmp_left_combo.setMinimumWidth(120)
         self._cmp_left_combo.addItems(["原始字幕", "阶段2 重组", "阶段3 翻译", "阶段4 优化"])
         self._cmp_left_combo.setCurrentIndex(0)
-        self._cmp_left_combo.setEnabled(False)  # 初始禁用
+        self._cmp_left_combo.setEnabled(False)
         self._cmp_left_combo.currentIndexChanged.connect(self._on_compare_selection_changed)
-        sr.addWidget(self._cmp_left_combo)
+        left_layout.addWidget(self._cmp_left_combo)
+        sr.addWidget(left_wrap)
 
-        sr.addWidget(QLabel("vs"))
+        # VS 分隔符
+        vs_lbl = QLabel("VS")
+        vs_lbl.setStyleSheet("color: #19c8b9; font-size: 14px; font-weight: 700; padding: 0 8px;")
+        vs_lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        sr.addWidget(vs_lbl)
 
         # 右侧选择
-        sr.addWidget(QLabel("右侧:"))
+        right_wrap = QWidget()
+        right_layout = QHBoxLayout(right_wrap)
+        right_layout.setContentsMargins(0, 0, 0, 0)
+        right_layout.setSpacing(6)
+        right_lbl = QLabel("右侧:")
+        right_lbl.setStyleSheet("color: #8a7b66; font-size: 12px; font-weight: 600;")
+        right_layout.addWidget(right_lbl)
         self._cmp_right_combo = NoWheelComboBox()
+        self._cmp_right_combo.setMinimumWidth(120)
         self._cmp_right_combo.addItems(["原始字幕", "阶段2 重组", "阶段3 翻译", "阶段4 优化"])
-        self._cmp_right_combo.setCurrentIndex(3)  # 默认选择阶段4优化
-        self._cmp_right_combo.setEnabled(False)  # 初始禁用
+        self._cmp_right_combo.setCurrentIndex(3)
+        self._cmp_right_combo.setEnabled(False)
         self._cmp_right_combo.currentIndexChanged.connect(self._on_compare_selection_changed)
-        sr.addWidget(self._cmp_right_combo)
+        right_layout.addWidget(self._cmp_right_combo)
+        sr.addWidget(right_wrap)
 
         sr.addStretch()
         compare_layout.addWidget(selector_row)
 
-        # 对比内容区域
+        # 对比内容区域标题
         header_row = QWidget()
         header_row.setFixedHeight(36)
         header_row.setStyleSheet("""
             background: rgb(247, 243, 223);
             border-bottom: 2px solid #c4b89e;
-            border-radius: 6px 6px 0 0;
         """)
         hl = QHBoxLayout(header_row)
-        hl.setContentsMargins(12, 0, 12, 0)
+        hl.setContentsMargins(16, 0, 16, 0)
         self._lbl_cmp_left = QLabel("原始字幕")
         self._lbl_cmp_left.setStyleSheet("color:#8a7b66; font-size:11px; font-weight:700; letter-spacing:1px;")
         self._lbl_cmp_right = QLabel("优化后")
@@ -1585,9 +1604,16 @@ class MainWindow(QMainWindow):
         """格式化条目文本用于显示"""
         if not data:
             return ""
-        lines = data.get('lines', [])
-        if stage_idx == 3 and data.get('optimized_lines'):
-            lines = data['optimized_lines']
+        # 根据阶段选择正确的文本
+        if stage_idx == 0:
+            # 原始字幕：优先使用 original_lines
+            lines = data.get('original_lines') or data.get('lines', [])
+        elif stage_idx == 3:
+            # 阶段4优化：优先使用 optimized_lines
+            lines = data.get('optimized_lines') or data.get('lines', [])
+        else:
+            # 其他阶段：使用 lines
+            lines = data.get('lines', [])
         text = "\n".join(lines)
         return f"{data['index']}\n{data['start_time']} --> {data['end_time']}\n{text}"
 
