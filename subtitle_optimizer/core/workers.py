@@ -212,29 +212,19 @@ async def _optimize_batch_impl(
     prev_ctx: list[SubtitleEntry] | None = None,
 ) -> dict[int, list[str]]:
     """
-    共享：发送一批字幕给 AI 优化，返回 {index: [zh, en]}。
+    共享：发送一批字幕给 AI 优化，返回 {index: [tgt, src]}。
     prev_ctx 为上一批末尾若干条（只作上下文参考，不要求 AI 返回）。
     """
-    # 获取语言代码，用于确定字段顺序
+    # 获取语言代码，用于获取正确的原文文本
     input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
     # 转换为 prompt 使用的语言名称
     input_lang_prompt = _get_prompt_lang(input_lang)
     output_lang_prompt = _get_prompt_lang(output_lang)
-    # 根据输入语言确定字段顺序：zh=译文，en=原文
-    # 如果输入是中文，zh应该是译文（意大利语），en应该是原文（中文）
-    # 如果输入是英文，zh应该是译文（中文），en应该是原文（英文）
-    if input_lang_code == "zh":
-        # 输入是中文：zh=译文（输出语言），en=原文（中文）
-        items_json = json.dumps([
-            {"id": e.index, "zh": e.english, "en": e.chinese}
-            for e in batch
-        ], ensure_ascii=False)
-    else:
-        # 输入不是中文：zh=译文（中文），en=原文（输入语言）
-        items_json = json.dumps([
-            {"id": e.index, "zh": e.chinese, "en": e.english}
-            for e in batch
-        ], ensure_ascii=False)
+    # 统一使用 _get_source_text() 获取原文，消除语言分支
+    items_json = json.dumps([
+        {"id": e.index, "src": _get_source_text(e, input_lang_code), "tgt": e.target}
+        for e in batch
+    ], ensure_ascii=False)
 
     sys_content = (
         f"你是专业字幕翻译优化师。\n"
@@ -243,38 +233,32 @@ async def _optimize_batch_impl(
     )
     sys_content += (
         "\n【重要前提】SRT字幕按时间轴逐句切分，一个完整语义常被拆成多条。"
-        f"输入的zh字段是初译，可能存在错误。"
-        "因此：必须以en为唯一翻译依据，zh仅供用词风格参考，不得直接沿用。\n\n"
+        f"输入的tgt字段是初译，可能存在错误。"
+        "因此：必须以src为唯一翻译依据，tgt仅供用词风格参考，不得直接沿用。\n\n"
         "规则：\n"
-        f"1. 【锚定en】每条zh必须且只能对应该条en的内容——en是完整句就译完整句，en是半句就译对应的半句{output_lang_prompt}\n"
-        f"2. 在忠实en的前提下，使{output_lang_prompt}自然流畅，符合【背景与风格】的语气和用词\n"
+        f"1. 【锚定src】每条tgt必须且只能对应该条src的内容——src是完整句就译完整句，src是半句就译对应的半句{output_lang_prompt}\n"
+        f"2. 在忠实src的前提下，使{output_lang_prompt}自然流畅，符合【背景与风格】的语气和用词\n"
         "3. 专业术语保持批次内一致性\n"
-        f"4. 【严禁】zh只允许纯文本，禁止任何Markdown符号（**、*、`、#、>、-列表等）\n"
-        "5. 【严禁】zh只含译文正文，不得添加括号注释、标注或说明文字\n"
+        f"4. 【严禁】tgt只允许纯文本，禁止任何Markdown符号（**、*、`、#、>、-列表等）\n"
+        "5. 【严禁】tgt只含译文正文，不得添加括号注释、标注或说明文字\n"
         "6. 【严禁】不得合并条目，输入几条返回几条，id严格一一对应\n"
-        "7. 【严禁】en字段原样返回，一字不差，不得修改或截断\n"
-        "8. 若en为空，zh也留空\n"
+        "7. 【严禁】src字段原样返回，一字不差，不得修改或截断\n"
+        "8. 若src为空，tgt也留空\n"
         "9. 严格按JSON格式返回，不加任何解释\n"
-        f"10. 【严禁漏译 — 逐词对照】zh必须完整翻译en中的每个语义单元：主语、谓语、宾语、状语、从句、插入语、过渡词（如okay/now/well/so）、强调词（如very/always/important）。不得跳过、省略、或合并任何信息点\n"
-        f"11. 【严禁摘要】不得把长英文压缩成一句概括性{output_lang_prompt}。en有多长，zh就译多长。宁可使用较长{output_lang_prompt}，也不能遗漏信息点\n"
-        "12. 【逐句自检 — 强制执行】返回前逐条朗读en，逐词检查zh是否覆盖了：谁（主语）→做了什么（动作）→为什么/怎么（条件/方式）→结果如何。每检查完一条在心里打勾，缺一不可\n\n"
-        f'返回格式：[{{"id": 1, "zh": "优化后{output_lang_prompt}", "en": "原文原样返回"}}]'
+        f"10. 【严禁漏译 — 逐词对照】tgt必须完整翻译src中的每个语义单元：主语、谓语、宾语、状语、从句、插入语、过渡词（如okay/now/well/so）、强调词（如very/always/important）。不得跳过、省略、或合并任何信息点\n"
+        f"11. 【严禁摘要】不得把长原文压缩成一句概括性{output_lang_prompt}。src有多长，tgt就译多长。宁可使用较长{output_lang_prompt}，也不能遗漏信息点\n"
+        "12. 【逐句自检 — 强制执行】返回前逐条朗读src，逐词检查tgt是否覆盖了：谁（主语）→做了什么（动作）→为什么/怎么（条件/方式）→结果如何。每检查完一条在心里打勾，缺一不可\n\n"
+        f'返回格式：[{{"id": 1, "tgt": "优化后{output_lang_prompt}", "src": "原文原样返回"}}]'
     )
 
     glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
 
     if prev_ctx:
-        # 上下文也需要使用正确的字段顺序
-        if input_lang_code == "zh":
-            ctx_json = json.dumps([
-                {"id": e.index, "zh": e.english, "en": e.chinese}
-                for e in prev_ctx
-            ], ensure_ascii=False)
-        else:
-            ctx_json = json.dumps([
-                {"id": e.index, "zh": e.chinese, "en": e.english}
-                for e in prev_ctx
-            ], ensure_ascii=False)
+        # 上下文也使用统一的字段名
+        ctx_json = json.dumps([
+            {"id": e.index, "src": _get_source_text(e, input_lang_code), "tgt": e.target}
+            for e in prev_ctx
+        ], ensure_ascii=False)
         user_content = (
             f"【上文参考（仅供风格/术语对齐，无需返回这些条目）】\n{ctx_json}\n\n"
             f"【待优化字幕】\n{items_json}"
@@ -296,35 +280,29 @@ async def _optimize_batch_impl(
         api_map = {item["id"]: item for item in data}
 
         first_pass = []
-        missing_zh_entries = []
+        missing_tgt_entries = []
         for entry in batch:
             if entry.index in api_map:
                 item = api_map[entry.index]
-                zh_raw = item.get("zh", "")
-                zh = strip_annotation(str(zh_raw).strip()) if zh_raw else ""
-                zh_incomplete = _translation_looks_incomplete(zh, entry.english)
-                zh_valid = bool(zh) and zh.lower() not in ("none", "null", "无", "—", "-")
-                zh_valid = zh_valid and not zh_incomplete
-                first_pass.append((entry, zh, zh_valid))
-                if not zh_valid:
-                    missing_zh_entries.append(entry)
+                tgt_raw = item.get("tgt", "")
+                tgt = strip_annotation(str(tgt_raw).strip()) if tgt_raw else ""
+                tgt_incomplete = _translation_looks_incomplete(tgt, _get_source_text(entry, input_lang_code))
+                tgt_valid = bool(tgt) and tgt.lower() not in ("none", "null", "无", "—", "-")
+                tgt_valid = tgt_valid and not tgt_incomplete
+                first_pass.append((entry, tgt, tgt_valid))
+                if not tgt_valid:
+                    missing_tgt_entries.append(entry)
             else:
                 first_pass.append((entry, "", False))
-                missing_zh_entries.append(entry)
+                missing_tgt_entries.append(entry)
 
         retry_map: dict[int, str] = {}
-        if missing_zh_entries:
-            # 重试时也需要使用正确的字段顺序
-            if input_lang_code == "zh":
-                retry_items = json.dumps([
-                    {"id": e.index, "en": e.chinese}
-                    for e in missing_zh_entries
-                ], ensure_ascii=False)
-            else:
-                retry_items = json.dumps([
-                    {"id": e.index, "en": e.english}
-                    for e in missing_zh_entries
-                ], ensure_ascii=False)
+        if missing_tgt_entries:
+            # 重试时使用统一的字段名
+            retry_items = json.dumps([
+                {"id": e.index, "src": _get_source_text(e, input_lang_code)}
+                for e in missing_tgt_entries
+            ], ensure_ascii=False)
 
             retry_sys = (
                 f"你是专业字幕翻译师。\n【背景与风格】\n{context}\n\n"
@@ -333,11 +311,11 @@ async def _optimize_batch_impl(
             retry_sys += (
                 "规则：\n1. 用词语气与风格指引一致\n"
                 "2. 严格按JSON格式返回，不要加任何解释\n"
-                "3. 每条必须有zh字段，不得为空\n"
-                "4. 【严禁重复翻译】每条只译自己的en内容，en是半句就译半句，不得让相邻条目的zh相同或重复\n"
-                f"5. 【严禁摘要】不得把长英文压缩成一句概括性{output_lang_prompt}，必须完整覆盖en中的全部信息点\n"
-                "6. 【覆盖自检】返回前逐条检查：zh是否完整覆盖了en的主语、动作、条件、原因、结果和关键术语\n\n"
-                f'返回格式：[{{"id": 1, "zh": "{output_lang_prompt}翻译"}}]'
+                "3. 每条必须有tgt字段，不得为空\n"
+                "4. 【严禁重复翻译】每条只译自己的src内容，src是半句就译半句，不得让相邻条目的tgt相同或重复\n"
+                f"5. 【严禁摘要】不得把长原文压缩成一句概括性{output_lang_prompt}，必须完整覆盖src中的全部信息点\n"
+                "6. 【覆盖自检】返回前逐条检查：tgt是否完整覆盖了src的主语、动作、条件、原因、结果和关键术语\n\n"
+                f'返回格式：[{{"id": 1, "tgt": "{output_lang_prompt}翻译"}}]'
             )
 
             retry_glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
@@ -350,22 +328,22 @@ async def _optimize_batch_impl(
                 retry_response = await client.chat(retry_messages, session)
                 retry_clean = re.sub(r'```(?:json)?|```', '', retry_response).strip()
                 retry_data = json.loads(retry_clean)
-                retry_map = {item["id"]: item.get("zh", "") for item in retry_data}
+                retry_map = {item["id"]: item.get("tgt", "") for item in retry_data}
             except Exception:
                 pass
 
         result: dict[int, list[str]] = {}
-        for entry, zh, zh_valid in first_pass:
+        for entry, tgt, tgt_valid in first_pass:
             opt_lines = []
-            if zh_valid:
-                opt_lines.append(zh)
+            if tgt_valid:
+                opt_lines.append(tgt)
             elif entry.index in retry_map:
-                fallback_zh = strip_annotation(str(retry_map[entry.index]).strip())
+                fallback_tgt = strip_annotation(str(retry_map[entry.index]).strip())
                 # 获取原文文本用于完整性检查
                 source_text_for_check = _get_source_text(entry, input_lang_code)
-                fallback_incomplete = _translation_looks_incomplete(fallback_zh, source_text_for_check)
-                if fallback_zh and fallback_zh.lower() not in ("none", "null") and not fallback_incomplete:
-                    opt_lines.append(fallback_zh)
+                fallback_incomplete = _translation_looks_incomplete(fallback_tgt, source_text_for_check)
+                if fallback_tgt and fallback_tgt.lower() not in ("none", "null") and not fallback_incomplete:
+                    opt_lines.append(fallback_tgt)
             # 获取原文文本（支持任意语言）
             source_text = _get_source_text(entry, input_lang_code)
             if source_text:
@@ -520,14 +498,14 @@ async def _translate_batch_impl(
     input_lang: str = "English",
     output_lang: str = "中文",
 ) -> dict[int, str]:
-    """共享：翻译一批字幕，返回 {index: zh}。失败返回空字典。"""
+    """共享：翻译一批字幕，返回 {index: tgt}。失败返回空字典。"""
     # 获取输入语言代码，用于获取正确的原文文本
     input_lang_code = LANGUAGE_MAP.get(input_lang, ("en",))[0]
     # 转换为 prompt 使用的语言名称
     input_lang_prompt = _get_prompt_lang(input_lang)
     output_lang_prompt = _get_prompt_lang(output_lang)
     items_json = json.dumps([
-        {"id": e.index, "en": _get_source_text(e, input_lang_code)} for e in batch
+        {"id": e.index, "src": _get_source_text(e, input_lang_code)} for e in batch
     ], ensure_ascii=False)
 
     system_content = (
@@ -536,10 +514,10 @@ async def _translate_batch_impl(
         "规则：\n"
         "1. 用词语气与风格指引一致，贴合视频语境\n"
         "2. 严格按JSON格式返回，不要加任何解释\n"
-        "3. 每条必须有zh字段，不得为空或返回None\n"
+        "3. 每条必须有tgt字段，不得为空或返回None\n"
         "4. 【严禁】不得合并条目，输入几条返回几条，id一一对应\n"
-        "5. 【严禁重复翻译】每条只译自己的en内容，en是半句就译半句，不得让相邻条目的zh相同或重复\n\n"
-        f'返回格式：[{{"id": 1, "zh": "{output_lang_prompt}翻译"}}]'
+        "5. 【严禁重复翻译】每条只译自己的src内容，src是半句就译半句，不得让相邻条目的tgt相同或重复\n\n"
+        f'返回格式：[{{"id": 1, "tgt": "{output_lang_prompt}翻译"}}]'
     )
 
     glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
@@ -555,11 +533,11 @@ async def _translate_batch_impl(
         data = json.loads(clean)
         result: dict[int, str] = {}
         for item in data:
-            zh = item.get("zh", "")
-            zh = strip_annotation(str(zh).strip()) if zh else ""
-            if zh.lower() in ("none", "null", "无", "—", "-", ""):
-                zh = ""
-            result[item["id"]] = zh
+            tgt = item.get("tgt", "")
+            tgt = strip_annotation(str(tgt).strip()) if tgt else ""
+            if tgt.lower() in ("none", "null", "无", "—", "-", ""):
+                tgt = ""
+            result[item["id"]] = tgt
         return result
     except Exception:
         return {}
