@@ -876,7 +876,7 @@ class MainWindow(QMainWindow):
             concurrency=concurrency,
             batch_size=batch_size,
             overwrite=overwrite,
-            chinese_first=self._chinese_first(),
+            target_first=self._target_first(),
             glossary_prompt=self._get_glossary_prompt(),
             original_line=self._get_original_line_index(),
             input_lang=self.combo_input_lang.currentText(),
@@ -982,7 +982,7 @@ class MainWindow(QMainWindow):
         base_url = self.input_base_url.text().strip()
         return MistralClient(key, self.combo_model.currentText(), base_url)
 
-    def _chinese_first(self) -> bool:
+    def _target_first(self) -> bool:
         # 输出顺序：默认中文在前
         return True
 
@@ -1383,8 +1383,8 @@ class MainWindow(QMainWindow):
     def _append_compare_entry(self, entry):
         orig_text = entry.to_srt_block_raw().rstrip("\n")
         opt_text = (
-            entry.to_srt_block(True, self._chinese_first()) if entry.optimized_lines else entry.to_srt_block(False,
-                                                                                                             self._chinese_first())).rstrip(
+            entry.to_srt_block(True, self._target_first()) if entry.optimized_lines else entry.to_srt_block(False,
+                                                                                                             self._target_first())).rstrip(
             "\n")
         changed = entry.optimized_lines is not None and orig_text != opt_text
 
@@ -1457,7 +1457,7 @@ class MainWindow(QMainWindow):
                 return
 
         logger.debug("开始生成SRT块内容")
-        blocks = [entry.to_srt_block(True, self._chinese_first()) for entry in self.entries]
+        blocks = [entry.to_srt_block(True, self._target_first()) for entry in self.entries]
         logger.info(f"写入文件: {path}，共 {len(blocks)} 个字幕块")
         with open(path, "w", encoding="utf-8") as f:
             f.write("\n".join(blocks))

@@ -887,7 +887,7 @@ class BatchWorker(BaseWorker):
 
     def __init__(self, client: MistralClient, files: list[str],
                  out_dir: Optional[str], concurrency: int, batch_size: int,
-                 overwrite: bool = False, chinese_first: bool = True,
+                 overwrite: bool = False, target_first: bool = True,
                  glossary_prompt: str = "", original_line: int = 1,
                  input_lang: str = "English", output_lang: str = "中文"):
         super().__init__()
@@ -897,7 +897,7 @@ class BatchWorker(BaseWorker):
         self.concurrency = concurrency
         self.batch_size = batch_size
         self.overwrite = overwrite
-        self.chinese_first = chinese_first
+        self.target_first = target_first
         self.glossary_prompt = glossary_prompt
         self.original_line = original_line  # 原文行号（0-based）
         self.input_lang = input_lang
@@ -997,7 +997,7 @@ class BatchWorker(BaseWorker):
                     break
 
                 out_path = self._get_out_path(filepath)
-                blocks = [e.to_srt_block(use_optimized=True, chinese_first=self.chinese_first) for e in entries]
+                blocks = [e.to_srt_block(use_optimized=True, target_first=self.target_first) for e in entries]
                 with open(out_path, "w", encoding="utf-8") as f:
                     f.write("\n".join(blocks))
                 self.file_done.emit(idx, filename, out_path)
