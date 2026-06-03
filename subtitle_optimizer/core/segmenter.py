@@ -66,11 +66,11 @@ def _get_nlp(lang_code: str = "en", auto_install: bool = True):
 
 def _get_source_text(entry: SubtitleEntry, lang_code: str) -> str:
     """获取字幕条目的原文文本（根据输入语言）"""
-    # 如果是中文输入，返回 chinese 属性
+    # 如果是中文输入，返回 target 属性（中文是译文）
     if lang_code == "zh":
-        return entry.chinese
-    # 其他语言，返回 english 属性（非中文文本）
-    return entry.english
+        return entry.target
+    # 其他语言，返回 source 属性（原文）
+    return entry.source
 
 
 def nlp_segment(batch: list[SubtitleEntry],
@@ -155,8 +155,8 @@ def nlp_segment(batch: list[SubtitleEntry],
         merged_source = " ".join(_get_source_text(e, lang_code).strip()
                                  for e in entries_to_merge
                                  if _get_source_text(e, lang_code).strip())
-        merged_zh = "".join(e.chinese.strip() for e in entries_to_merge
-                           if e.chinese.strip())
+        merged_zh = "".join(e.target.strip() for e in entries_to_merge
+                           if e.target.strip())
 
         lines = []
         if lang_code == "zh":
