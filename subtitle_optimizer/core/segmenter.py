@@ -39,6 +39,10 @@ def nlp_segment(batch: list[SubtitleEntry],
 
     joined = " ".join(p for p in parts if p)
     if not joined:
+        if log_fn:
+            empty_count = sum(1 for e in batch if not e.english.strip())
+            if empty_count == len(batch):
+                log_fn(f"  ⚠️ 所有条目的英文文本为空，请检查「原文行数」设置是否正确")
         return []
 
     # 2. spaCy 句子边界检测
