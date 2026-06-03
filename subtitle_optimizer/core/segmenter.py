@@ -20,19 +20,43 @@ SPACY_MODELS = {
 _nlp_cache = {}  # 语言代码 -> spaCy 模型
 
 
+def _get_venv_python() -> str:
+    """获取虚拟环境的 Python 路径，如果不存在则返回当前 Python"""
+    import os
+    # 检查是否在虚拟环境中
+    if hasattr(sys, 'prefix') and hasattr(sys, 'base_prefix') and sys.prefix != sys.base_prefix:
+        # 已经在虚拟环境中，直接使用当前 Python
+        return sys.executable
+
+    # 尝试查找虚拟环境
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_dir = os.path.dirname(script_dir)
+    venv_python = os.path.join(project_dir, ".venv", "Scripts", "python.exe")
+
+    if os.path.exists(venv_python):
+        return venv_python
+
+    # 回退到当前 Python
+    return sys.executable
+
+
 def _install_spacy_model(model_name: str) -> bool:
     """自动下载并安装 spaCy 模型"""
     try:
-        print(f"📦 正在下载 spaCy 模型 {model_name}...")
+        python_exe = _get_venv_python()
+        print(f"📦 正在下载 spaCy 模型 {model_name}... (使用 {python_exe})")
         subprocess.check_call(
-            [sys.executable, "-m", "spacy", "download", model_name],
+            [python_exe, "-m", "spacy", "download", model_name],
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL
         )
         print(f"✅ spaCy 模型 {model_name} 安装成功")
         return True
-    except subprocess.CalledProcessError:
-        print(f"❌ spaCy 模型 {model_name} 安装失败")
+    except subprocess.CalledProcessError as e:
+        print(f"❌ spaCy 模型 {model_name} 安装失败: {e}")
+        return False
+    except Exception as e:
+        print(f"❌ spaCy 模型 {model_name} 安装异常: {e}")
         return False
 
 
