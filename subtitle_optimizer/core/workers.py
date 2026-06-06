@@ -12,12 +12,12 @@ from core.models import (
     parse_srt,
     strip_annotation,
     _format_subtitle_snapshot,
-    _merge_candidate_is_safe,
     _translation_looks_incomplete,
     _english_word_count,
     _srt_time_to_ms,
     _ms_to_srt_time,
     _source_text_length,
+    verify_source_integrity,
 )
 from core.segmenter import nlp_segment, _get_source_text, _get_target_text
 from core.client import MistralClient
@@ -633,56 +633,106 @@ def _split_short_long(batch: list[SubtitleEntry], max_words: int = 20, lang_code
 
 def _apply_llm_split(long_entries: list[SubtitleEntry], llm_response: list[dict],
                      log_fn=None, lang_code: str = "en") -> list[SubtitleEntry]:
-    """将LLM切分建议应用到长条目，按词数比例分配时间戳。"""
+    """将LLM切分建议应用到长条目，按词数比例分配时间戳。
+
+    LLM 只返回断点位置（break_after_word），代码用原文 words 切片构建各段文本。
+    这样内容 100% 来自原始字符串，LLM 无法截断或遗漏任何词。
+    """
     results = []
     by_id = {e.index: e for e in long_entries}
+    processed_ids = set()
 
     for item in llm_response:
         entry_id = item.get("id")
-        segments = item.get("segments", [])
-        if not segments:
-            continue
-
         orig = by_id.get(entry_id)
         if not orig:
             continue
 
-        if len(segments) == 1:
-            results.append(SubtitleEntry(
-                orig.index, orig.start_time, orig.end_time, list(orig.lines)))
+        processed_ids.add(entry_id)
+
+        orig_text = _get_source_text(orig, lang_code)
+        words = orig_text.split()
+        total_word_count = len(words)
+
+        # LLM 返回断点列表，例如 [10, 20] 表示在第10词后、第20词后各断一次
+        # 不断点（空列表或缺失）= 无需切分，保留原条目
+        raw_breaks = item.get("break_after_word", [])
+        if not raw_breaks:
+            e = SubtitleEntry(orig.index, orig.start_time, orig.end_time, list(orig.lines))
+            e.source_indexes = list(orig.source_indexes or [orig.index])
+            results.append(e)
+            continue
+
+        # 过滤非法断点：必须在 1 ~ total_word_count-1 范围内，且严格递增
+        breaks = []
+        for bp in sorted(int(b) for b in raw_breaks if isinstance(b, (int, float))):
+            if 1 <= bp < total_word_count:
+                if not breaks or bp > breaks[-1]:
+                    breaks.append(bp)
+
+        if not breaks:
+            # 断点全部非法，退回保留原条目
+            if log_fn:
+                log_fn(f"  ⚠️ [{orig.index}] LLM返回的断点无效 {raw_breaks}，保留原条目")
+            e = SubtitleEntry(orig.index, orig.start_time, orig.end_time, list(orig.lines))
+            e.source_indexes = list(orig.source_indexes or [orig.index])
+            results.append(e)
+            continue
+
+        # 用断点将 words 切成若干段，内容直接来自原文 words 切片
+        boundaries = [0] + breaks + [total_word_count]
+        seg_texts = [
+            " ".join(words[boundaries[i]:boundaries[i + 1]])
+            for i in range(len(boundaries) - 1)
+        ]
+
+        # 完整性校验：切分后文本拼接必须与原文一致
+        rebuilt = " ".join(seg_texts)
+        if rebuilt.strip() != orig_text.strip():
+            if log_fn:
+                log_fn(f"  ⚠️ [{orig.index}] 切分后文本不完整，回退原条目")
+            e = SubtitleEntry(orig.index, orig.start_time, orig.end_time, list(orig.lines))
+            e.source_indexes = list(orig.source_indexes or [orig.index])
+            results.append(e)
             continue
 
         if log_fn:
-            log_fn(f"  ✂️ 切分 [{orig.index}] → {len(segments)} 段")
+            log_fn(f"  ✂️ 切分 [{orig.index}] → {len(seg_texts)} 段")
 
-        # 使用语言感知的长度计算
-        total_words = sum(_source_text_length(s, lang_code) for s in segments)
         total_ms = _srt_time_to_ms(orig.end_time) - _srt_time_to_ms(orig.start_time)
         if total_ms <= 0:
             total_ms = 1
         current_ms = _srt_time_to_ms(orig.start_time)
 
-        for i, seg_text in enumerate(segments):
+        for i, seg_text in enumerate(seg_texts):
             sw = _source_text_length(seg_text, lang_code)
-            seg_duration = int(total_ms * sw / total_words) if total_words > 0 else int(total_ms / len(segments))
+            seg_duration = int(total_ms * sw / total_word_count) if total_word_count > 0 else int(total_ms / len(seg_texts))
             if seg_duration < 200:
-                seg_duration = int(total_ms / len(segments))
+                seg_duration = int(total_ms / len(seg_texts))
 
             seg_start = _ms_to_srt_time(current_ms)
             seg_end = _ms_to_srt_time(current_ms + seg_duration)
             current_ms += seg_duration
 
-            # 每个分段只包含切分后的文本，不插入原始合并文本
-            lines = [seg_text] if seg_text else []
-
+            # 使用 index*1000+i 避免与后续原始条目索引冲突
             seg_entry = SubtitleEntry(
-                index=orig.index + i,
+                index=orig.index * 1000 + i,
                 start_time=seg_start,
                 end_time=seg_end,
-                lines=lines,
+                lines=[seg_text],
             )
             seg_entry.original_lines = list(orig.original_lines or orig.lines)
+            seg_entry.source_indexes = list(orig.source_indexes or [orig.index])
             results.append(seg_entry)
+
+    # 保留 LLM 未处理的条目（防止内容丢失）
+    for entry in long_entries:
+        if entry.index not in processed_ids:
+            if log_fn:
+                log_fn(f"  ⚠️ LLM未返回条目 [{entry.index}]，保留原样")
+            e = SubtitleEntry(entry.index, entry.start_time, entry.end_time, list(entry.lines))
+            e.source_indexes = list(entry.source_indexes or [entry.index])
+            results.append(e)
 
     return results
 
@@ -738,8 +788,10 @@ class SegmentWorker(BaseWorker):
                     all_results.extend(results)
                 except Exception:
                     for e in batch:
-                        all_results.append(SubtitleEntry(
-                            e.index, e.start_time, e.end_time, list(e.lines)))
+                        fallback = SubtitleEntry(
+                            e.index, e.start_time, e.end_time, list(e.lines))
+                        fallback.source_indexes = list(e.source_indexes or [e.index])
+                        all_results.append(fallback)
                 finally:
                     completed += len(batch)
                     self.progress.emit(completed, total)
@@ -748,11 +800,22 @@ class SegmentWorker(BaseWorker):
 
         seen = {}
         deduped = []
+        duplicates = []
         for e in all_results:
-            if e.index not in seen:
-                seen[e.index] = e
-                deduped.append(e)
+            if e.index in seen:
+                duplicates.append(e.index)
+                continue
+            seen[e.index] = e
+            deduped.append(e)
         deduped.sort(key=lambda e: e.index)
+
+        # 来源完整性校验
+        before_words = sum(len(_get_source_text(e, self.input_lang_code).split()) for e in self.entries)
+        after_words = sum(len(_get_source_text(e, self.input_lang_code).split()) for e in deduped)
+        missing = verify_source_integrity(self.entries, deduped)
+        status = "OK" if not missing and before_words == after_words else "FAILED"
+        self.log.emit(f"  📊 重组完整性: {len(self.entries)}条/{before_words}词 → {len(deduped)}条/{after_words}词 | 来源丢失: {sorted(missing) if missing else '无'} | 重复: {duplicates or '无'} | {status}")
+
         logger.info(_format_subtitle_snapshot("AFTER_SEGMENT", deduped))
         self.all_done.emit(deduped)
 
@@ -782,21 +845,25 @@ class SegmentWorker(BaseWorker):
         sys_content = (
             "你是专业字幕切分助手。\n"
             f"【背景与风格】\n{self.context}\n\n"
-            f"任务：以下{lang_name}字幕条目过长（>20词），在语义最自然的断点切分为2-3段，"
-            f"每段 ≤20词，成为适合屏幕阅读的独立字幕。\n\n"
+            f"任务：以下{lang_name}字幕条目过长（>20词），找出最自然的断点位置，"
+            f"将其切分为2-3段，每段 ≤20词。\n\n"
             "规则：\n"
             "1. 每段 ≤20个词\n"
-            "2. 切分点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
+            "2. 断点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
             "3. 每段必须是相对完整的语义单元（不可在词组内部切断）\n"
-            "4. 不要修改原文，只确定断点位置\n"
+            "4. 只返回断点的词序号，不要输出任何正文内容\n"
             "5. 严格按JSON格式返回，不要加任何解释\n\n"
-            '格式：[{"id": 原id, "segments": ["段1", "段2"]}]\n'
-            "segments 长度1=无需切分，2-3=切分结果。"
+            "【重要】返回格式：\n"
+            '[{"id": 原id, "break_after_word": [n1, n2]}]\n'
+            "break_after_word 是断点列表，值为词序号（从1开始计数），表示在第n个词之后断开。\n"
+            "无需切分时返回空列表：[{\"id\": 原id, \"break_after_word\": []}]\n\n"
+            "示例：原文共28词，在第10词后和第20词后各断一次：\n"
+            '[{"id": 6, "break_after_word": [10, 20]}]'
         )
 
         messages = [
             {"role": "system", "content": sys_content},
-            {"role": "user", "content": f"切分以下长字幕条目：\n{items_json}"}
+            {"role": "user", "content": f"确定以下长字幕条目的断点位置：\n{items_json}"}
         ]
 
         response = await self.client.chat(messages, session)
@@ -1053,9 +1120,11 @@ class BatchWorker(BaseWorker):
                 except Exception as e:
                     self.log.emit(f"    ⚠ 重组批次失败: {e}")
                     for e_item in batch:
-                        all_results.append(SubtitleEntry(
+                        fallback = SubtitleEntry(
                             e_item.index, e_item.start_time, e_item.end_time,
-                            list(e_item.lines)))
+                            list(e_item.lines))
+                        fallback.source_indexes = list(e_item.source_indexes or [e_item.index])
+                        all_results.append(fallback)
                 finally:
                     completed += len(batch)
                     self.file_progress.emit(file_idx, completed, total)
@@ -1064,11 +1133,22 @@ class BatchWorker(BaseWorker):
 
         seen = {}
         deduped = []
+        duplicates = []
         for e_item in all_results:
-            if e_item.index not in seen:
-                seen[e_item.index] = e_item
-                deduped.append(e_item)
+            if e_item.index in seen:
+                duplicates.append(e_item.index)
+                continue
+            seen[e_item.index] = e_item
+            deduped.append(e_item)
         deduped.sort(key=lambda e: e.index)
+
+        # 来源完整性校验
+        before_words = sum(len(_get_source_text(e, self.input_lang_code).split()) for e in entries)
+        after_words = sum(len(_get_source_text(e, self.input_lang_code).split()) for e in deduped)
+        missing = verify_source_integrity(entries, deduped)
+        status = "OK" if not missing and before_words == after_words else "FAILED"
+        self.log.emit(f"    📊 重组完整性: {len(entries)}条/{before_words}词 → {len(deduped)}条/{after_words}词 | 来源丢失: {sorted(missing) if missing else '无'} | 重复: {duplicates or '无'} | {status}")
+
         logger.info(_format_subtitle_snapshot("BATCH_AFTER_SEGMENT", deduped))
         return deduped
 
@@ -1097,16 +1177,20 @@ class BatchWorker(BaseWorker):
         sys_content = (
             "你是专业字幕切分助手。\n"
             f"【背景与风格】\n{context}\n\n"
-            f"任务：以下{lang_name}字幕条目过长（>20词），在语义最自然的断点切分为2-3段，"
-            f"每段 ≤20词，成为适合屏幕阅读的独立字幕。\n\n"
+            f"任务：以下{lang_name}字幕条目过长（>20词），找出最自然的断点位置，"
+            f"将其切分为2-3段，每段 ≤20词。\n\n"
             "规则：\n"
             "1. 每段 ≤20个词\n"
-            "2. 切分点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
+            "2. 断点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
             "3. 每段必须是相对完整的语义单元（不可在词组内部切断）\n"
-            "4. 不要修改原文，只确定断点位置\n"
+            "4. 只返回断点的词序号，不要输出任何正文内容\n"
             "5. 严格按JSON格式返回，不要加任何解释\n\n"
-            '格式：[{"id": 原id, "segments": ["段1", "段2"]}]\n'
-            "segments 长度1=无需切分，2-3=切分结果。"
+            "【重要】返回格式：\n"
+            '[{"id": 原id, "break_after_word": [n1, n2]}]\n'
+            "break_after_word 是断点列表，值为词序号（从1开始计数），表示在第n个词之后断开。\n"
+            "无需切分时返回空列表：[{\"id\": 原id, \"break_after_word\": []}]\n\n"
+            "示例：原文共28词，在第10词后和第20词后各断一次：\n"
+            '[{"id": 6, "break_after_word": [10, 20]}]'
         )
 
         messages = [
