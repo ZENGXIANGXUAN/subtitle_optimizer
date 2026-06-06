@@ -3,6 +3,12 @@ import subprocess
 import sys
 from core.models import SubtitleEntry, _english_word_count, _srt_time_to_ms, _source_text_length
 
+try:
+    from ..utils import logger
+except ImportError:
+    import logging
+    logger = logging.getLogger(__name__)
+
 # 语言代码 -> spaCy 模型名（使用连字符格式，与 pip 包名一致）
 SPACY_MODELS = {
     "zh": "zh-core-web-sm",      # 中文
@@ -176,14 +182,26 @@ def nlp_segment(batch: list[SubtitleEntry],
 
         entries_to_merge = [batch[i] for i in sorted(new_indices)]
 
+        # 调试日志：记录合并候选
+        if log_fn and len(entries_to_merge) > 1:
+            ids = [e.index for e in entries_to_merge]
+            texts = [_get_source_text(e, lang_code)[:30] for e in entries_to_merge]
+            log_fn(f"  🔍 NLP合并候选: {ids} texts={texts}")
+
         # 安全约束检查
         if not _nlp_merge_is_safe(entries_to_merge, lang_code):
+            if log_fn and len(entries_to_merge) > 1:
+                log_fn(f"  🔒 NLP合并被安全检查拒绝: {[e.index for e in entries_to_merge]}")
             for e in entries_to_merge:
                 clone = SubtitleEntry(e.index, e.start_time, e.end_time,
                                       list(e.lines))
                 clone.original_lines = list(e.original_lines or e.lines)
+                clone.source_indexes = list(e.source_indexes or [e.index])
                 results.append(clone)
             continue
+
+        if log_fn and len(entries_to_merge) > 1:
+            log_fn(f"  ✅ NLP合并被安全检查允许: {[e.index for e in entries_to_merge]}")
 
         # 构建合并后的条目
         first_entry = entries_to_merge[0]
@@ -221,20 +239,46 @@ def nlp_segment(batch: list[SubtitleEntry],
         for e in entries_to_merge:
             orig.extend(e.lines)
         merged.original_lines = orig if orig else list(lines)
+        # 继承来源链路
+        merged.source_indexes = []
+        for e in entries_to_merge:
+            merged.source_indexes.extend(e.source_indexes or [e.index])
         results.append(merged)
 
     results.sort(key=lambda e: e.index)
+
+    # 诊断日志：NLP 合并前后条目数和词数变化
+    if log_fn and len(batch) != len(results):
+        before_ids = {e.index for e in batch}
+        after_ids = {e.index for e in results}
+        lost_ids = sorted(before_ids - after_ids)
+        if lost_ids:
+            log_fn(f"  ⚠️ NLP合并丢失条目: {lost_ids}")
+
     return results
 
 
 def _nlp_merge_is_safe(entries: list[SubtitleEntry], lang_code: str = "en") -> bool:
     """检查 NLP 合并候选是否安全。
 
-    仅检查语法层面：gap 过大说明是独立句子不该合并，
-    单条过长说明是完整长句不该硬拼。长度约束（词数/时长）由 LLM 切分阶段处理。
+    保护规则：
+    1. gap 过大（>1.2s）说明是独立句子，不该合并
+    2. 单条过长（>=35词）说明是完整长句，不该硬拼
+    3. 短条目（<=8词）或短时长（<=1.5s）禁止被合并，防止丢失
+    4. 残句（逗号结尾）或完整短句（句号结尾且<=15词）禁止合并
     """
     if len(entries) <= 1:
         return True
+
+    # 调试：记录被检查的条目
+    ids = [e.index for e in entries]
+    details = []
+    for e in entries:
+        src = _get_source_text(e, lang_code)
+        wc = _source_text_length(src, lang_code)
+        dur = _srt_time_to_ms(e.end_time) - _srt_time_to_ms(e.start_time)
+        details.append(f"[{e.index}]w={wc}d={dur}ms")
+    logger.info(f"[NLP_SAFE] checking {ids} details={details}")
 
     for left, right in zip(entries, entries[1:]):
         gap = _srt_time_to_ms(right.start_time) - _srt_time_to_ms(left.end_time)
@@ -245,6 +289,21 @@ def _nlp_merge_is_safe(entries: list[SubtitleEntry], lang_code: str = "en") -> b
         source_text = _get_source_text(e, lang_code)
         # 使用语言感知的长度检查（中文按字符数，英文按单词数）
         if _source_text_length(source_text, lang_code) >= 35:
+            return False
+
+    # 保护极短碎片：任何条目 <=3 词或时长 <=500ms，禁止合并
+    for e in entries:
+        source_text = _get_source_text(e, lang_code)
+        word_count = _source_text_length(source_text, lang_code)
+        duration_ms = _srt_time_to_ms(e.end_time) - _srt_time_to_ms(e.start_time)
+        if word_count <= 3 or duration_ms <= 500:
+            logger.debug(f"[NLP] 短条目保护: [{e.index}] words={word_count} dur={duration_ms}ms -> 禁止合并")
+            return False
+
+    # 保护完整短句：以句号结尾且词数<=15，禁止合并
+    for e in entries:
+        source_text = _get_source_text(e, lang_code).strip()
+        if source_text.endswith(".") and _source_text_length(source_text, lang_code) <= 15:
             return False
 
     return True
