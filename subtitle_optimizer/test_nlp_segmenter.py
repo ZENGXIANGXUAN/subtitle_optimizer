@@ -21,15 +21,15 @@ class NlpSegmenterTest(unittest.TestCase):
         """英文半句碎片合并为一条"""
         entries = [
             SubtitleEntry(5, "00:00:10,000", "00:00:11,500",
-                          ["市场结构", "The market structure is"]),
+                          ["市场结构", "The market structure is composed"]),
             SubtitleEntry(6, "00:00:11,500", "00:00:13,000",
-                          ["由三部分组成", "composed of three key elements."]),
+                          ["由三部分组成", "of three key elements in total"]),
         ]
         result = nlp_segment(entries)
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0].index, 5)
-        self.assertIn("The market structure is", result[0].english)
-        self.assertIn("composed of three key elements", result[0].english)
+        self.assertIn("The market structure is composed", result[0].english)
+        self.assertIn("of three key elements in total", result[0].english)
 
     def test_empty_entries_dropped(self):
         """中英文为空的条目被丢弃"""
@@ -52,9 +52,9 @@ class NlpSegmenterTest(unittest.TestCase):
         """合并后时间轴：start 取首条，end 取末条"""
         entries = [
             SubtitleEntry(1, "00:01:00,000", "00:01:01,500",
-                          ["开头", "The beginning of"]),
+                          ["开头", "The beginning of this"]),
             SubtitleEntry(2, "00:01:01,500", "00:01:03,000",
-                          ["结尾", "the sentence."]),
+                          ["结尾", "is the sentence here"]),
         ]
         result = nlp_segment(entries)
         self.assertEqual(len(result), 1)
