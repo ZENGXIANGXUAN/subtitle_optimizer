@@ -1072,6 +1072,7 @@ class MainWindow(QMainWindow):
             self.lbl_stat.setText(f"  {n} 条字幕")
             # 保存原始字幕阶段数据
             self._save_stage_data("原始字幕", self.entries)
+            self._refresh_compare()
             self.lbl_stat.setStyleSheet("""
                 color: #3FB950; font-size: 12px; background: #12261E;
                 border: 1px solid #238636; border-radius: 12px; padding: 3px 12px;
@@ -1143,8 +1144,11 @@ class MainWindow(QMainWindow):
         # ✅ 防止重复点击导致旧 worker 信号触发闪退
         self._cleanup_single_pipeline()
 
-        # 重置阶段数据
+        # 重置阶段数据（保留原始字幕）
+        original = self._stage_data.get("原始字幕")
         self._stage_data.clear()
+        if original:
+            self._stage_data["原始字幕"] = original
 
         logger.debug("设置运行状态")
         self._set_running_state(True)
