@@ -67,7 +67,6 @@ class MainWindow(QMainWindow):
         self._batch_files: list = []
         # 存储各阶段的字幕数据，用于对比查看
         self._stage_data: dict[str, list] = {}  # stage_name -> entries
-        self._pipeline_completed = False  # 标记流程是否全部完成
 
         self.setWindowTitle("字幕优化工具 ✦ Subtitle Optimizer")
         self.resize(1400, 900)
@@ -404,55 +403,26 @@ class MainWindow(QMainWindow):
         compare_layout.setSpacing(0)
         compare_layout.setContentsMargins(0, 0, 0, 0)
 
-        # 对比选择器 - 左右分离布局
-        selector_row = QWidget()
-        selector_row.setFixedHeight(44)
-        selector_row.setStyleSheet("""
+        # 对比标题栏
+        header_row = QWidget()
+        header_row.setFixedHeight(44)
+        header_row.setStyleSheet("""
             background: rgb(247, 243, 223);
             border-bottom: 2px solid #c4b89e;
         """)
-        sr = QHBoxLayout(selector_row)
-        sr.setContentsMargins(12, 4, 12, 4)
-        sr.setSpacing(0)
+        hr = QHBoxLayout(header_row)
+        hr.setContentsMargins(12, 4, 12, 4)
+        hr.setSpacing(0)
 
-        # 左侧选择器（靠左）
-        self._cmp_left_combo = NoWheelComboBox()
-        self._cmp_left_combo.setMinimumWidth(120)
-        self._cmp_left_combo.setStyleSheet("""
-            QComboBox {
-                color: #8a7b66; font-size: 12px; font-weight: 700;
-                background: transparent; border: none; padding: 4px 8px;
-            }
-            QComboBox::drop-down { border: none; }
-            QComboBox:hover { color: #794f27; }
-        """)
-        self._cmp_left_combo.addItems(["原始字幕", "阶段2 重组", "阶段3 翻译", "阶段4 优化"])
-        self._cmp_left_combo.setCurrentIndex(0)
-        self._cmp_left_combo.setEnabled(False)
-        self._cmp_left_combo.currentIndexChanged.connect(self._on_compare_selection_changed)
-        sr.addWidget(self._cmp_left_combo)
+        left_label = QLabel("原始字幕")
+        left_label.setStyleSheet("color: #8a7b66; font-size: 12px; font-weight: 700;")
+        hr.addWidget(left_label)
+        hr.addStretch()
+        right_label = QLabel("当前阶段")
+        right_label.setStyleSheet("color: #3FB950; font-size: 12px; font-weight: 700;")
+        hr.addWidget(right_label)
 
-        # 中间弹性空间
-        sr.addStretch()
-
-        # 右侧选择器（靠右）
-        self._cmp_right_combo = NoWheelComboBox()
-        self._cmp_right_combo.setMinimumWidth(120)
-        self._cmp_right_combo.setStyleSheet("""
-            QComboBox {
-                color: #3FB950; font-size: 12px; font-weight: 700;
-                background: transparent; border: none; padding: 4px 8px;
-            }
-            QComboBox::drop-down { border: none; }
-            QComboBox:hover { color: #2ea043; }
-        """)
-        self._cmp_right_combo.addItems(["原始字幕", "阶段2 重组", "阶段3 翻译", "阶段4 优化"])
-        self._cmp_right_combo.setCurrentIndex(3)
-        self._cmp_right_combo.setEnabled(False)
-        self._cmp_right_combo.currentIndexChanged.connect(self._on_compare_selection_changed)
-        sr.addWidget(self._cmp_right_combo)
-
-        compare_layout.addWidget(selector_row)
+        compare_layout.addWidget(header_row)
 
         self._cmp_scroll = QScrollArea()
         self._cmp_scroll.setWidgetResizable(True)
@@ -1085,13 +1055,8 @@ class MainWindow(QMainWindow):
 
             # 清理旧的 worker/thread，防止闪退
             self._cleanup_single_pipeline()
-            # 重置阶段数据和对比选择状态
+            # 重置阶段数据
             self._stage_data.clear()
-            self._pipeline_completed = False
-            self._cmp_left_combo.setEnabled(False)
-            self._cmp_right_combo.setEnabled(False)
-            self._cmp_left_combo.setCurrentIndex(0)
-            self._cmp_right_combo.setCurrentIndex(3)
 
             # 自动检测双语字幕并提取原文行
             if self.entries and len(self.entries[0].lines) > 1:
@@ -1178,13 +1143,8 @@ class MainWindow(QMainWindow):
         # ✅ 防止重复点击导致旧 worker 信号触发闪退
         self._cleanup_single_pipeline()
 
-        # 重置对比选择状态
+        # 重置阶段数据
         self._stage_data.clear()
-        self._pipeline_completed = False
-        self._cmp_left_combo.setEnabled(False)
-        self._cmp_right_combo.setEnabled(False)
-        self._cmp_left_combo.setCurrentIndex(0)
-        self._cmp_right_combo.setCurrentIndex(3)
 
         logger.debug("设置运行状态")
         self._set_running_state(True)
@@ -1403,7 +1363,6 @@ class MainWindow(QMainWindow):
         if entry:
             entry.optimized_lines = lines
             entry.status = status
-            self._append_compare_entry(entry)
 
     @pyqtSlot(int, int)
     def _on_progress(self, current: int, total: int):
@@ -1429,8 +1388,6 @@ class MainWindow(QMainWindow):
             lbl.setStyleSheet(
                 "color: #5a3a1a; font-size: 11px; font-weight: 700; background: #e6f9f6; border: 2px solid #82d5bb; border-radius: 12px; padding: 3px 8px;")
         self._refresh_compare()
-        # 启用对比选择功能
-        self._enable_compare_selection()
         # 注意：不在这里清理 worker/thread，因为 thread 的 finished 信号已经连接了 deleteLater
         # 清理会在下次 _run_optimize 或 _open_file 时进行
 
@@ -1463,37 +1420,6 @@ class MainWindow(QMainWindow):
         lbl.setStyleSheet(self._cmp_cell_stylesheet(is_opt, changed))
         return lbl
 
-    def _append_compare_entry(self, entry):
-        orig_text = entry.to_srt_block_raw().rstrip("\n")
-        opt_text = (
-            entry.to_srt_block(True, self._target_first()) if entry.optimized_lines else entry.to_srt_block(False,
-                                                                                                             self._target_first())).rstrip(
-            "\n")
-        changed = entry.optimized_lines is not None and orig_text != opt_text
-
-        sb = self._cmp_scroll.verticalScrollBar()
-        at_bottom = (sb.value() >= sb.maximum() - 4) and sb.maximum() > 0
-        scroll_val = sb.value()
-
-        if entry.index in self._cmp_cells:
-            left_lbl, right_lbl = self._cmp_cells[entry.index]
-            left_lbl.setText(orig_text)
-            right_lbl.setText(opt_text)
-            left_lbl.setStyleSheet(self._cmp_cell_stylesheet(False, changed))
-            right_lbl.setStyleSheet(self._cmp_cell_stylesheet(True, changed))
-        else:
-            row = self._cmp_grid.rowCount()
-            left_lbl = self._make_cmp_cell(orig_text, False, changed)
-            right_lbl = self._make_cmp_cell(opt_text, True, changed)
-            self._cmp_grid.addWidget(left_lbl, row, 0)
-            self._cmp_grid.addWidget(right_lbl, row, 1)
-            self._cmp_cells[entry.index] = (left_lbl, right_lbl)
-
-        if at_bottom:
-            QTimer.singleShot(50, lambda: sb.setValue(sb.maximum()))
-        else:
-            sb.setValue(scroll_val)
-
     def _save_stage_data(self, stage_name: str, entries: list):
         """保存阶段数据，用于对比查看"""
         self._stage_data[stage_name] = [
@@ -1504,76 +1430,11 @@ class MainWindow(QMainWindow):
                 'lines': list(e.lines),
                 'original_lines': list(e.original_lines) if e.original_lines else None,
                 'optimized_lines': list(e.optimized_lines) if e.optimized_lines else None,
+                'source_indexes': list(e.source_indexes) if e.source_indexes else None,
             }
             for e in entries
         ]
         logger.info(f"已保存阶段数据: {stage_name}, {len(entries)} 条")
-
-    def _enable_compare_selection(self):
-        """启用对比选择下拉框（流程全部完成后调用）"""
-        self._pipeline_completed = True
-        self._cmp_left_combo.setEnabled(True)
-        self._cmp_right_combo.setEnabled(True)
-        logger.info("对比选择已启用")
-
-    def _on_compare_selection_changed(self):
-        """对比选择改变时更新视图"""
-        if not self._pipeline_completed:
-            return
-        self._refresh_compare_with_selection()
-
-    def _refresh_compare_with_selection(self):
-        """根据选择的阶段刷新对比视图"""
-        left_idx = self._cmp_left_combo.currentIndex()
-        right_idx = self._cmp_right_combo.currentIndex()
-
-        # 获取左侧数据
-        left_entries = self._get_entries_for_stage(left_idx)
-        # 获取右侧数据
-        right_entries = self._get_entries_for_stage(right_idx)
-
-        # 清空并重建对比视图
-        while self._cmp_grid.count():
-            item = self._cmp_grid.takeAt(0)
-            if item.widget():
-                item.widget().deleteLater()
-        self._cmp_cells.clear()
-
-        # 构建对比
-        left_map = {e['index']: e for e in left_entries} if left_entries else {}
-        right_map = {e['index']: e for e in right_entries} if right_entries else {}
-
-        all_indices = sorted(set(list(left_map.keys()) + list(right_map.keys())))
-
-        for idx in all_indices:
-            left_data = left_map.get(idx)
-            right_data = right_map.get(idx)
-
-            left_text = self._format_entry_text(left_data, left_idx) if left_data else ""
-            right_text = self._format_entry_text(right_data, right_idx) if right_data else ""
-
-            changed = left_text != right_text and left_text and right_text
-
-            row = self._cmp_grid.rowCount()
-            left_lbl = self._make_cmp_cell(left_text, False, changed)
-            right_lbl = self._make_cmp_cell(right_text, True, changed)
-            self._cmp_grid.addWidget(left_lbl, row, 0)
-            self._cmp_grid.addWidget(right_lbl, row, 1)
-            self._cmp_cells[idx] = (left_lbl, right_lbl)
-
-    def _get_entries_for_stage(self, stage_idx: int) -> list:
-        """根据阶段索引获取字幕数据"""
-        stage_names = ["原始字幕", "阶段2 重组", "阶段3 翻译", "阶段4 优化"]
-        if stage_idx == 0:
-            # 原始字幕：使用 original_lines 或 lines
-            return self._stage_data.get("原始字幕", [])
-        elif stage_idx == 1:
-            return self._stage_data.get("阶段2 重组", [])
-        elif stage_idx == 2:
-            return self._stage_data.get("阶段3 翻译", [])
-        elif stage_idx == 3:
-            return self._stage_data.get("阶段4 优化", [])
-        return []
 
     def _format_entry_text(self, data: dict, stage_idx: int) -> str:
         """格式化条目文本用于显示"""
@@ -1593,13 +1454,58 @@ class MainWindow(QMainWindow):
         return f"{data['index']}\n{data['start_time']} --> {data['end_time']}\n{text}"
 
     def _refresh_compare(self):
+        """重建对比视图：左侧原始字幕（rowspan），右侧当前阶段"""
         while self._cmp_grid.count():
             item = self._cmp_grid.takeAt(0)
             if item.widget(): item.widget().deleteLater()
         self._cmp_cells.clear()
-        logger.info(f"_refresh_compare: 正在重建 {len(self.entries)} 条字幕的对比视图")
-        for entry in self.entries: self._append_compare_entry(entry)
-        logger.info(f"_refresh_compare: 完成，grid行数={self._cmp_grid.rowCount()}, cells数={len(self._cmp_cells)}")
+
+        original_entries = self._stage_data.get("原始字幕", [])
+        if not original_entries:
+            return
+
+        original_map = {e['index']: e for e in original_entries}
+        all_original_indices = set(original_map.keys())
+
+        # 构建分组：每组包含若干原始条目 + 对应的当前条目
+        groups = []
+        covered = set()
+        for entry in self.entries:
+            source_indexes = entry.source_indexes or [entry.index]
+            valid_sources = [idx for idx in sorted(source_indexes) if idx in original_map]
+            if valid_sources:
+                covered.update(valid_sources)
+                groups.append({'sources': valid_sources, 'entry': entry})
+
+        # 未被覆盖的原始条目单独成组
+        for orig_idx in sorted(all_original_indices - covered):
+            groups.append({'sources': [orig_idx], 'entry': None})
+
+        # 按首个来源 index 排序
+        groups.sort(key=lambda g: g['sources'][0])
+
+        # 构建 grid
+        current_row = 0
+        for group in groups:
+            sources = group['sources']
+            entry = group['entry']
+            rowspan = len(sources)
+
+            # 左侧：每个原始条目一行
+            for i, src_idx in enumerate(sources):
+                src_data = original_map[src_idx]
+                src_text = self._format_entry_text(src_data, 0)
+                left_lbl = self._make_cmp_cell(src_text, False, entry is not None)
+                self._cmp_grid.addWidget(left_lbl, current_row + i, 0)
+
+            # 右侧：当前条目用 rowspan 跨行
+            if entry:
+                right_text = entry.to_srt_block_raw().rstrip("\n")
+                changed = entry.optimized_lines is not None
+                right_lbl = self._make_cmp_cell(right_text, True, changed)
+                self._cmp_grid.addWidget(right_lbl, current_row, 1, rowspan, 1)
+
+            current_row += rowspan
 
     def _export_srt(self):
         logger.info("开始导出优化后的字幕文件")
