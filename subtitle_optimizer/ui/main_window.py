@@ -1504,7 +1504,8 @@ class MainWindow(QMainWindow):
 
             # 右侧：当前条目用 rowspan 跨行
             if entry:
-                right_text = entry.to_srt_block_raw().rstrip("\n")
+                right_lines = entry.optimized_lines or entry.lines
+                right_text = f"{entry.index}\n{entry.start_time} --> {entry.end_time}\n" + "\n".join(right_lines)
                 changed = entry.optimized_lines is not None
                 right_lbl = self._make_cmp_cell(right_text, True, changed)
                 self._cmp_grid.addWidget(right_lbl, current_row, 1, rowspan, 1)
