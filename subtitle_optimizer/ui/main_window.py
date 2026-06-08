@@ -63,7 +63,6 @@ class MainWindow(QMainWindow):
         self._batch_worker: Optional[BatchWorker] = None
         self._pipeline_active = False  # 防止停止后旧信号继续推进流水线
 
-        self._cmp_cells: dict = {}  # entry.index -> (left_label, right_label)
         self._batch_files: list = []
         # 存储各阶段的字幕数据，用于对比查看
         self._stage_data: dict[str, list] = {}  # stage_name -> entries
@@ -397,48 +396,28 @@ class MainWindow(QMainWindow):
         SRTHighlighter(self.tab_original.document())
         tabs.addTab(self.tab_original, "原始字幕")
 
-        # Tab 2: 对比查看
+        # Tab 2: 对比查看 — 左右两个独立 QTextEdit，各自滚动
         compare_widget = QWidget()
-        compare_layout = QVBoxLayout(compare_widget)
-        compare_layout.setSpacing(0)
-        compare_layout.setContentsMargins(0, 0, 0, 0)
+        compare_layout = QHBoxLayout(compare_widget)
+        compare_layout.setSpacing(6)
+        compare_layout.setContentsMargins(6, 6, 6, 6)
 
-        # 对比标题栏
-        header_row = QWidget()
-        header_row.setFixedHeight(44)
-        header_row.setStyleSheet("""
-            background: rgb(247, 243, 223);
-            border-bottom: 2px solid #c4b89e;
-        """)
-        hr = QHBoxLayout(header_row)
-        hr.setContentsMargins(12, 4, 12, 4)
-        hr.setSpacing(0)
+        # 左侧：原始字幕
+        self._cmp_left_text = QTextEdit()
+        self._cmp_left_text.setReadOnly(True)
+        self._cmp_left_text.setFont(QFont("Consolas", 11))
+        SRTHighlighter(self._cmp_left_text.document())
+        self._cmp_left_text.setStyleSheet("QTextEdit { background: #f8f8f0; color: #5a3a1a; border: 1px solid #c4b89e; border-radius: 8px; }")
+        compare_layout.addWidget(self._cmp_left_text, 1)
 
-        left_label = QLabel("原始字幕")
-        left_label.setStyleSheet("color: #8a7b66; font-size: 12px; font-weight: 700;")
-        hr.addWidget(left_label)
-        hr.addStretch()
-        right_label = QLabel("当前阶段")
-        right_label.setStyleSheet("color: #3FB950; font-size: 12px; font-weight: 700;")
-        hr.addWidget(right_label)
+        # 右侧：最终结果
+        self._cmp_right_text = QTextEdit()
+        self._cmp_right_text.setReadOnly(True)
+        self._cmp_right_text.setFont(QFont("Consolas", 11))
+        SRTHighlighter(self._cmp_right_text.document())
+        self._cmp_right_text.setStyleSheet("QTextEdit { background: #f8f8f0; color: #2ea043; border: 1px solid #238636; border-radius: 8px; }")
+        compare_layout.addWidget(self._cmp_right_text, 1)
 
-        compare_layout.addWidget(header_row)
-
-        self._cmp_scroll = QScrollArea()
-        self._cmp_scroll.setWidgetResizable(True)
-        self._cmp_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-        self._cmp_scroll.setStyleSheet("QScrollArea { border: none; background: #f8f8f0; }")
-
-        self._cmp_container = QWidget()
-        self._cmp_container.setStyleSheet("background: #f8f8f0;")
-        self._cmp_grid = QGridLayout(self._cmp_container)
-        self._cmp_grid.setContentsMargins(6, 6, 6, 6)
-        self._cmp_grid.setSpacing(3)
-        self._cmp_grid.setColumnStretch(0, 1)
-        self._cmp_grid.setColumnStretch(1, 1)
-
-        self._cmp_scroll.setWidget(self._cmp_container)
-        compare_layout.addWidget(self._cmp_scroll)
         tabs.addTab(compare_widget, "对比查看")
 
         # Tab 3: 日志
@@ -1158,11 +1137,8 @@ class MainWindow(QMainWindow):
             e.status = "pending"
             e.optimized_lines = None
 
-        while self._cmp_grid.count():
-            item = self._cmp_grid.takeAt(0)
-            if item.widget():
-                item.widget().deleteLater()
-        self._cmp_cells.clear()
+        self._cmp_left_text.setPlainText("")
+        self._cmp_right_text.setPlainText("")
 
         self.progress_bar.setValue(0)
         self.progress_bar.setMaximum(len(self.entries))
@@ -1244,7 +1220,7 @@ class MainWindow(QMainWindow):
         self.tab_original.setPlainText("\n".join(blocks))
         self.lbl_stat.setText(f"  {len(self.entries)} 条字幕")
         self.progress_bar.setMaximum(len(self.entries))
-        self._refresh_compare()
+        # 重组阶段不刷新对比，等全部流程结束后统一对比
 
         if self._current_file_path:
             write_phase_snapshot(self._current_file_path, "AFTER_SEGMENT", self.entries)
@@ -1404,26 +1380,6 @@ class MainWindow(QMainWindow):
         self._set_stage(-1)
         self._log("⏹ 已停止")
 
-    @staticmethod
-    def _cmp_cell_stylesheet(is_opt: bool = False, changed: bool = False) -> str:
-        """纯函数：返回对比单元格的 QSS 样式字符串（不创建 widget）"""
-        if changed:
-            bg, border_color, color = ("#e6f9f6", "#6fba2c", "#5a9e1e") if is_opt else ("#fef0f0", "#e05a5a", "#c94444")
-        else:
-            bg, border_color, color = ("rgb(247, 243, 223)", "#c4b89e", "#725d42")
-        return f"QLabel {{ background: {bg}; border: 2px solid {border_color}; border-radius: 12px; color: {color}; padding: 6px 10px; font-family: monospace; font-size: 12px; line-height: 1.5; }}"
-
-    def _make_cmp_cell(self, text: str, is_opt: bool = False, changed: bool = False) -> QLabel:
-        lbl = QLabel(text)
-        lbl.setFont(QFont("Consolas", 12))
-        lbl.setWordWrap(True)
-        lbl.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
-        lbl.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-        lbl.setAlignment(Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignLeft)
-        lbl.setContentsMargins(6, 4, 6, 4)
-        lbl.setStyleSheet(self._cmp_cell_stylesheet(is_opt, changed))
-        return lbl
-
     def _save_stage_data(self, stage_name: str, entries: list):
         """保存阶段数据，用于对比查看"""
         self._stage_data[stage_name] = [
@@ -1434,87 +1390,37 @@ class MainWindow(QMainWindow):
                 'lines': list(e.lines),
                 'original_lines': list(e.original_lines) if e.original_lines else None,
                 'optimized_lines': list(e.optimized_lines) if e.optimized_lines else None,
-                'source_indexes': list(e.source_indexes) if e.source_indexes else None,
             }
             for e in entries
         ]
         logger.info(f"已保存阶段数据: {stage_name}, {len(entries)} 条")
 
-    def _format_entry_text(self, data: dict, stage_idx: int) -> str:
-        """格式化条目文本用于显示"""
-        if not data:
-            return ""
-        # 根据阶段选择正确的文本
-        if stage_idx == 0:
-            # 原始字幕：优先使用 original_lines
-            lines = data.get('original_lines') or data.get('lines', [])
-        elif stage_idx == 3:
-            # 阶段4优化：优先使用 optimized_lines
-            lines = data.get('optimized_lines') or data.get('lines', [])
-        else:
-            # 其他阶段：使用 lines
-            lines = data.get('lines', [])
-        text = "\n".join(lines)
-        return f"{data['index']}\n{data['start_time']} --> {data['end_time']}\n{text}"
-
     def _refresh_compare(self):
-        """重建对比视图：左侧原始字幕（rowspan），右侧当前阶段"""
-        while self._cmp_grid.count():
-            item = self._cmp_grid.takeAt(0)
-            if item.widget(): item.widget().deleteLater()
-        self._cmp_cells.clear()
+        """对比视图：左侧原始字幕，右侧最终结果，各自独立滚动"""
+        # 左侧：原始字幕
+        original = self._stage_data.get("原始字幕", [])
+        if original:
+            left_blocks = []
+            for d in original:
+                lines = d.get('original_lines') or d.get('lines', [])
+                left_blocks.append(f"{d['index']}\n{d['start_time']} --> {d['end_time']}\n" + "\n".join(lines))
+            self._cmp_left_text.setPlainText("\n\n".join(left_blocks))
+        else:
+            self._cmp_left_text.setPlainText("")
 
-        original_entries = self._stage_data.get("原始字幕", [])
-        if not original_entries:
-            return
-
-        original_map = {e['index']: e for e in original_entries}
-        all_original_indices = set(original_map.keys())
-
-        # 构建分组：每组包含若干原始条目 + 对应的当前条目
-        groups = []
-        covered = set()
-        for entry in self.entries:
-            source_indexes = entry.source_indexes or [entry.index]
-            valid_sources = [idx for idx in sorted(source_indexes) if idx in original_map]
-            if valid_sources:
-                covered.update(valid_sources)
-                groups.append({'sources': valid_sources, 'entry': entry})
-
-        # 未被覆盖的原始条目单独成组
-        for orig_idx in sorted(all_original_indices - covered):
-            groups.append({'sources': [orig_idx], 'entry': None})
-
-        # 按首个来源 index 排序
-        groups.sort(key=lambda g: g['sources'][0])
-
-        # 构建 grid
-        current_row = 0
-        for group in groups:
-            sources = group['sources']
-            entry = group['entry']
-            rowspan = len(sources)
-
-            # 左侧：每个原始条目一行
-            for i, src_idx in enumerate(sources):
-                src_data = original_map[src_idx]
-                src_text = self._format_entry_text(src_data, 0)
-                left_lbl = self._make_cmp_cell(src_text, False, entry is not None)
-                self._cmp_grid.addWidget(left_lbl, current_row + i, 0)
-
-            # 右侧：当前条目用 rowspan 跨行
-            if entry:
-                right_lines = entry.optimized_lines or entry.lines
-                right_text = f"{entry.index}\n{entry.start_time} --> {entry.end_time}\n" + "\n".join(right_lines)
-                changed = entry.optimized_lines is not None
-                right_lbl = self._make_cmp_cell(right_text, True, changed)
-                self._cmp_grid.addWidget(right_lbl, current_row, 1, rowspan, 1)
-
-            current_row += rowspan
+        # 右侧：当前阶段最终结果
+        if self.entries:
+            right_blocks = []
+            for e in self.entries:
+                lines = e.optimized_lines or e.lines
+                right_blocks.append(f"{e.index}\n{e.start_time} --> {e.end_time}\n" + "\n".join(lines))
+            self._cmp_right_text.setPlainText("\n\n".join(right_blocks))
+        else:
+            self._cmp_right_text.setPlainText("")
 
     def _export_srt(self):
         logger.info("开始导出优化后的字幕文件")
-        if not self.entries: 
+        if not self.entries:
             msg = "没有可导出的字幕"
             logger.warning(msg)
             return QMessageBox.warning(self, "提示", msg)
@@ -1544,7 +1450,7 @@ class MainWindow(QMainWindow):
                 p = Path(self._current_file_path)
                 default_name = p.stem + "_optimized" + p.suffix
             path, _ = QFileDialog.getSaveFileName(self, "保存优化字幕", default_name, "SRT 字幕文件 (*.srt)")
-            if not path: 
+            if not path:
                 logger.info("用户取消保存操作")
                 return
 
