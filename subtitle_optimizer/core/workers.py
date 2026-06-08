@@ -19,7 +19,7 @@ from core.models import (
     _source_text_length,
     verify_source_integrity,
 )
-from core.segmenter import nlp_segment, _get_source_text, _get_target_text
+from core.segmenter import _get_source_text, _get_target_text
 from core.client import MistralClient
 
 
@@ -984,14 +984,7 @@ class SegmentWorker(BaseWorker):
 
     async def _segment_batch(self, batch: list[SubtitleEntry],
                               session: aiohttp.ClientSession) -> list[SubtitleEntry]:
-        # NLP 预断句合并
-        original_count = len(batch)
-        batch = nlp_segment(batch, log_fn=self.log.emit, lang_code=self.input_lang_code)
-        if not batch:
-            logger.warning(f"NLP 分段返回空列表，原始批次大小: {original_count}")
-            return []
-
-        # LLM 合并 pass：把语义上不完整的相邻条目合并成完整句
+        # LLM 合并 pass：把语义上不完整的相邻条目合并成完整句（直接用LLM，不经过NLP）
         batch = await self._llm_merge(batch, session)
 
         # 分离：短条目直通，长条目（>20词）送LLM语义切分
@@ -1393,12 +1386,7 @@ class BatchWorker(BaseWorker):
     async def _segment_batch(self, batch: list[SubtitleEntry], context: str, glossary: str,
                                session: aiohttp.ClientSession,
                                is_native: bool = False) -> list[SubtitleEntry]:
-        # NLP 预断句合并
-        batch = nlp_segment(batch, log_fn=self.log.emit, lang_code=self.input_lang_code)
-        if not batch:
-            return []
-
-        # LLM 合并 pass：把语义上不完整的相邻条目合并成完整句
+        # LLM 合并 pass：把语义上不完整的相邻条目合并成完整句（直接用LLM，不经过NLP）
         batch = await self._llm_merge(batch, context, session)
 
         # 分离：短条目直通，长条目（>20词）送LLM语义切分
