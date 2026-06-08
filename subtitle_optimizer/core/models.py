@@ -21,6 +21,7 @@ class SubtitleEntry:
     optimized_lines: Optional[list[str]] = None
     status: str = "pending"  # pending / processing / done / error
     error_msg: str = ""
+    source_indexes: Optional[list[int]] = None  # 来源原始条目ID列表，用于追踪完整性
 
     @property
     def chinese(self) -> str:
@@ -94,6 +95,7 @@ def parse_srt(content: str) -> list[SubtitleEntry]:
             text_lines = [l for l in lines[2:] if l.strip()]
             entry = SubtitleEntry(idx, start, end, text_lines)
             entry.original_lines = list(text_lines)
+            entry.source_indexes = [idx]
             entries.append(entry)
         except (ValueError, IndexError):
             logger.warning(f"解析第 {i+1} 个字幕块时出现错误，跳过该块")
@@ -121,6 +123,15 @@ def _format_subtitle_snapshot(title: str, entries: list[SubtitleEntry], use_opti
         lines.append("")
     lines.append(f"===== END {title} =====")
     return "\n".join(lines)
+
+
+def verify_source_integrity(original_entries: list, result_entries: list) -> set:
+    """校验重组后来源完整性，返回丢失的原始条目ID集合。"""
+    original_ids = {e.index for e in original_entries}
+    all_sources = set()
+    for e in result_entries:
+        all_sources.update(e.source_indexes or [e.index])
+    return original_ids - all_sources
 
 
 def _srt_time_to_ms(value: str) -> int:

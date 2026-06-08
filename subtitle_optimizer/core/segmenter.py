@@ -245,12 +245,13 @@ def nlp_segment(batch: list[SubtitleEntry],
             merged.source_indexes.extend(e.source_indexes or [e.index])
         results.append(merged)
 
-    results.sort(key=lambda e: e.index)
+    results.sort(key=lambda e: _srt_time_to_ms(e.start_time))
 
-    # 诊断日志：NLP 合并前后条目数和词数变化
+    # 诊断日志：NLP 合并前后条目数变化
+    # 用 source_indexes 做对比，避免子条目（大序号）导致的误报
     if log_fn and len(batch) != len(results):
-        before_ids = {e.index for e in batch}
-        after_ids = {e.index for e in results}
+        before_ids = {idx for e in batch for idx in (e.source_indexes or [e.index])}
+        after_ids = {idx for e in results for idx in (e.source_indexes or [e.index])}
         lost_ids = sorted(before_ids - after_ids)
         if lost_ids:
             log_fn(f"  ⚠️ NLP合并丢失条目: {lost_ids}")
@@ -290,6 +291,14 @@ def _nlp_merge_is_safe(entries: list[SubtitleEntry], lang_code: str = "en") -> b
         # 使用语言感知的长度检查（中文按字符数，英文按单词数）
         if _source_text_length(source_text, lang_code) >= 35:
             return False
+
+    # 合并后总词数上限：超过 60 词则拒绝，防止多条短句合成超长块送给 LLM
+    total_words = sum(
+        _source_text_length(_get_source_text(e, lang_code), lang_code)
+        for e in entries
+    )
+    if total_words > 60:
+        return False
 
     # 保护极短碎片：任何条目 <=3 词或时长 <=500ms，禁止合并
     for e in entries:

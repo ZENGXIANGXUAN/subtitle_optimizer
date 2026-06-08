@@ -520,6 +520,7 @@ async def _translate_batch_impl(
     session: aiohttp.ClientSession,
     input_lang: str = "English",
     output_lang: str = "中文",
+    prev_ctx: list[SubtitleEntry] | None = None,
 ) -> dict[int, str]:
     """共享：翻译一批字幕，返回 {index: tgt}。失败返回空字典。"""
     # 获取输入语言代码，用于获取正确的原文文本
@@ -545,9 +546,21 @@ async def _translate_batch_impl(
 
     glossary_note = f"\n\n【术语表 — 翻译时务必使用】\n{glossary}" if glossary else ""
 
+    if prev_ctx:
+        ctx_json = json.dumps([
+            {"id": e.index, "src": _get_source_text(e, input_lang_code)}
+            for e in prev_ctx
+        ], ensure_ascii=False)
+        user_content = (
+            f"【上文参考（仅供语义衔接，无需翻译这些条目）】\n{ctx_json}\n\n"
+            f"【待翻译字幕】\n{items_json}{glossary_note}"
+        )
+    else:
+        user_content = f"翻译以下字幕：\n{items_json}{glossary_note}"
+
     messages = [
         {"role": "system", "content": system_content},
-        {"role": "user", "content": f"翻译以下字幕：\n{items_json}{glossary_note}"}
+        {"role": "user", "content": user_content}
     ]
 
     try:
@@ -555,7 +568,7 @@ async def _translate_batch_impl(
         clean = re.sub(r'```(?:json)?|```', '', response).strip()
         # 移除控制字符（除了换行和制表符）
         clean = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', clean)
-        logger.debug(f"翻译API响应: {clean[:500]}")
+        logger.warning(f"翻译API响应: {clean[:1000]}")
         try:
             data = json.loads(clean)
         except json.JSONDecodeError as e:
@@ -580,7 +593,8 @@ async def _translate_batch_impl(
             if tgt.lower() in ("none", "null", "无", "—", "-", ""):
                 tgt = ""
             result[item["id"]] = tgt
-        logger.debug(f"翻译结果: {len(result)} 条，非空: {sum(1 for v in result.values() if v)} 条")
+        empty_ids = [item["id"] for item in data if not (item.get("tgt") or item.get("zh", "")).strip()]
+        logger.warning(f"翻译结果: {len(result)} 条，非空: {sum(1 for v in result.values() if v)} 条，空译文id: {empty_ids if empty_ids else '无'}")
         return result
     except Exception as e:
         logger.error(f"翻译解析失败: {e}")
@@ -616,6 +630,152 @@ async def _repair_incomplete_segment_translations(
             continue
         source_text = _get_source_text(entry, input_lang_code)
         entry.lines = [tgt, source_text] if source_text else [tgt]
+
+
+def _translation_is_usable(translation: str, source_text: str, output_lang: str = "zh") -> bool:
+    translation = strip_annotation(str(translation or "").strip())
+    if (
+        not translation
+        or translation.lower() in {"none", "null", "nan"}
+        or translation in {"-", "\u2014", "\u65e0"}
+    ):
+        return False
+
+    output_lang_code = LANGUAGE_MAP.get(output_lang, ("zh", output_lang))[0]
+    if output_lang_code == "zh" and _translation_looks_incomplete(translation, source_text):
+        return False
+    return True
+
+
+async def _translate_batch_with_repair(
+    batch: list[SubtitleEntry],
+    context: str,
+    glossary: str,
+    client: MistralClient,
+    session: aiohttp.ClientSession,
+    input_lang: str = "English",
+    output_lang: str = "zh",
+    prev_ctx: list[SubtitleEntry] | None = None,
+) -> tuple[dict[int, str], list[int]]:
+    input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
+    first_map = await _translate_batch_impl(
+        batch, context, glossary, client, session, input_lang, output_lang, prev_ctx
+    )
+
+    missing_entries = []
+    for entry in batch:
+        source_text = _get_source_text(entry, input_lang_code)
+        translation = first_map.get(entry.index, "")
+        if not _translation_is_usable(translation, source_text, output_lang):
+            missing_entries.append(entry)
+
+    retry_map: dict[int, str] = {}
+    if missing_entries:
+        logger.warning(
+            "Translation coverage retry for ids: %s",
+            [entry.index for entry in missing_entries],
+        )
+        retry_map = await _translate_batch_impl(
+            missing_entries, context, glossary, client, session, input_lang, output_lang
+        )
+
+    result: dict[int, str] = {}
+    unresolved: list[int] = []
+    for entry in batch:
+        source_text = _get_source_text(entry, input_lang_code)
+        translation = first_map.get(entry.index, "")
+        if not _translation_is_usable(translation, source_text, output_lang):
+            translation = retry_map.get(entry.index, "")
+
+        translation = strip_annotation(str(translation or "").strip())
+        if _translation_is_usable(translation, source_text, output_lang):
+            result[entry.index] = translation
+        else:
+            unresolved.append(entry.index)
+
+    if unresolved:
+        logger.error("Translation unresolved after retry for ids: %s", unresolved)
+    return result, unresolved
+
+
+def _apply_llm_merge(
+    batch: list[SubtitleEntry],
+    llm_response: list[dict],
+    log_fn=None,
+    lang_code: str = "en",
+) -> list[SubtitleEntry]:
+    """将LLM合并建议应用到条目列表。
+
+    LLM 返回分组列表，每组指定哪些相邻 id 应合并为一条。
+    合并后的文本直接由各条原文拼接而来（LLM不负责输出正文），
+    时间戳取组内第一条 start ~ 最后一条 end。
+
+    返回格式示例：
+        [{"ids": [3, 4]}, {"ids": [5]}, {"ids": [6, 7, 8]}]
+    """
+    by_id = {e.index: e for e in batch}
+    results = []
+    covered_ids = set()
+
+    for group in llm_response:
+        ids = group.get("ids", [])
+        if not ids:
+            continue
+
+        # 过滤掉不存在或已处理的 id
+        valid_ids = [i for i in ids if i in by_id and i not in covered_ids]
+        if not valid_ids:
+            continue
+
+        if len(valid_ids) == 1:
+            # 单条，直接保留
+            e = by_id[valid_ids[0]]
+            result = SubtitleEntry(e.index, e.start_time, e.end_time, list(e.lines))
+            result.source_indexes = list(e.source_indexes or [e.index])
+            result.original_lines = list(e.original_lines or e.lines)
+            results.append(result)
+            covered_ids.add(valid_ids[0])
+            continue
+
+        # 多条合并：按 id 在原 batch 中的顺序排列，保证时间连续
+        entries_in_group = sorted(
+            [by_id[i] for i in valid_ids],
+            key=lambda e: _srt_time_to_ms(e.start_time),
+        )
+        merged_text = " ".join(
+            _get_source_text(e, lang_code).strip() for e in entries_in_group
+        )
+        merged_text = merged_text.strip()
+
+        merged = SubtitleEntry(
+            index=entries_in_group[0].index,
+            start_time=entries_in_group[0].start_time,
+            end_time=entries_in_group[-1].end_time,
+            lines=[merged_text],
+        )
+        merged.source_indexes = []
+        for e in entries_in_group:
+            merged.source_indexes.extend(e.source_indexes or [e.index])
+        merged.original_lines = list(entries_in_group[0].original_lines or entries_in_group[0].lines)
+
+        if log_fn:
+            log_fn(f"  🔗 合并 {valid_ids} → [{entries_in_group[0].index}] \"{merged_text[:60]}{'...' if len(merged_text)>60 else ''}\"")
+
+        results.append(merged)
+        covered_ids.update(valid_ids)
+
+    # 保留 LLM 未提及的条目，防止内容丢失
+    for e in batch:
+        if e.index not in covered_ids:
+            if log_fn:
+                log_fn(f"  ⚠️ LLM未返回条目 [{e.index}]，保留原样")
+            fallback = SubtitleEntry(e.index, e.start_time, e.end_time, list(e.lines))
+            fallback.source_indexes = list(e.source_indexes or [e.index])
+            results.append(fallback)
+
+    # 按时间排序
+    results.sort(key=lambda e: _srt_time_to_ms(e.start_time))
+    return results
 
 
 def _split_short_long(batch: list[SubtitleEntry], max_words: int = 20, lang_code: str = "en"):
@@ -807,7 +967,10 @@ class SegmentWorker(BaseWorker):
                 continue
             seen[e.index] = e
             deduped.append(e)
-        deduped.sort(key=lambda e: e.index)
+        deduped.sort(key=lambda e: _srt_time_to_ms(e.start_time))
+        # 排序后重新编号，确保序号与时间顺序一致
+        for i, entry in enumerate(deduped, start=1):
+            entry.index = i
 
         # 来源完整性校验
         before_words = sum(len(_get_source_text(e, self.input_lang_code).split()) for e in self.entries)
@@ -828,6 +991,9 @@ class SegmentWorker(BaseWorker):
             logger.warning(f"NLP 分段返回空列表，原始批次大小: {original_count}")
             return []
 
+        # LLM 合并 pass：把语义上不完整的相邻条目合并成完整句
+        batch = await self._llm_merge(batch, session)
+
         # 分离：短条目直通，长条目（>20词）送LLM语义切分
         short_entries, long_entries = _split_short_long(batch, lang_code=self.input_lang_code)
         if not long_entries:
@@ -845,20 +1011,20 @@ class SegmentWorker(BaseWorker):
         sys_content = (
             "你是专业字幕切分助手。\n"
             f"【背景与风格】\n{self.context}\n\n"
-            f"任务：以下{lang_name}字幕条目过长（>20词），找出最自然的断点位置，"
-            f"将其切分为2-3段，每段 ≤20词。\n\n"
+            f"任务：以下{lang_name}字幕条目过长（>20词），找出所有自然断点，"
+            f"按需切分，确保每段 ≤20词，不限制段数。\n\n"
             "规则：\n"
-            "1. 每段 ≤20个词\n"
+            "1. 每段 ≤20个词，包括最后一段\n"
             "2. 断点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
             "3. 每段必须是相对完整的语义单元（不可在词组内部切断）\n"
             "4. 只返回断点的词序号，不要输出任何正文内容\n"
             "5. 严格按JSON格式返回，不要加任何解释\n\n"
             "【重要】返回格式：\n"
-            '[{"id": 原id, "break_after_word": [n1, n2]}]\n'
+            '[{"id": 原id, "break_after_word": [n1, n2, ...]}]\n'
             "break_after_word 是断点列表，值为词序号（从1开始计数），表示在第n个词之后断开。\n"
             "无需切分时返回空列表：[{\"id\": 原id, \"break_after_word\": []}]\n\n"
-            "示例：原文共28词，在第10词后和第20词后各断一次：\n"
-            '[{"id": 6, "break_after_word": [10, 20]}]'
+            "示例：原文共50词，在第15词后、第30词后、第45词后各断一次：\n"
+            '[{"id": 6, "break_after_word": [15, 30, 45]}]'
         )
 
         messages = [
@@ -876,6 +1042,58 @@ class SegmentWorker(BaseWorker):
                              for e in long_entries]
 
         return short_entries + split_results
+
+    async def _llm_merge(self, batch: list[SubtitleEntry],
+                         session: aiohttp.ClientSession) -> list[SubtitleEntry]:
+        """LLM合并pass：将语义不完整的相邻条目合并成完整句。"""
+        if not batch:
+            return batch
+
+        lang_name = _get_prompt_lang(self.input_lang)
+        items_json = json.dumps([
+            {"id": e.index, "text": _get_source_text(e, self.input_lang_code)}
+            for e in batch
+        ], ensure_ascii=False)
+
+        sys_content = (
+            f"你是专业字幕合并助手。\n"
+            f"【背景与风格】\n{self.context}\n\n"
+            f"任务：以下{lang_name}字幕条目按时间顺序排列，部分条目是不完整的半句，"
+            f"需要将语义上属于同一句的相邻条目合并为一组。\n\n"
+            "规则：\n"
+            "1. 以逗号、连词、介词、助词等结尾的条目必须与后续条目合并，直到语义完整\n"
+            "2. 每组合并后的词数不超过25词（中文不超过40字）\n"
+            "3. 已经是完整句子的条目单独一组，ids列表只含自身id\n"
+            "4. 必须覆盖所有输入条目，不得遗漏任何id\n"
+            "5. 严格按JSON格式返回，不要加任何解释\n"
+            "6. 【语气词/插话处理】Okay./Sure./Right./Alright./Yeah./Uh-huh./Mm. 等单词短句"
+            "不视为独立完整句，必须并入相邻条目：若前一组语义未完整则并入前一组，"
+            "若前一组已完整则并入后一组\n"
+            "7. 【半句识别】原文以 'the'/'a'/'an'/'of'/'to'/'and'/'but'/'or'/'that'/'which'/"
+            "'with'/'in'/'on'/'at'/'is'/'are'/'was'/'were' 等词结尾，"
+            "必定是半句，强制与下一条合并\n\n"
+            "【重要】返回格式：\n"
+            '[{"ids": [id1, id2, ...]}, ...]\n'
+            "每个对象的ids是需要合并的相邻条目id列表，按原顺序排列。\n\n"
+            "示例1：条目3以逗号结尾，条目4是它的后半句，条目5是完整句：\n"
+            '[{"ids": [3, 4]}, {"ids": [5]}]\n\n'
+            "示例2：条目6是完整句，条目7是\"Okay.\"，条目8是新句的开头：\n"
+            '[{"ids": [6]}, {"ids": [7, 8]}]'
+        )
+
+        messages = [
+            {"role": "system", "content": sys_content},
+            {"role": "user", "content": f"分析并合并以下字幕条目：\n{items_json}"}
+        ]
+
+        try:
+            response = await self.client.chat(messages, session)
+            clean = re.sub(r'```(?:json)?|```', '', response).strip()
+            data = json.loads(clean)
+            return _apply_llm_merge(batch, data, log_fn=self.log.emit, lang_code=self.input_lang_code)
+        except Exception as e:
+            logger.warning(f"LLM合并pass失败，保留原批次: {e}")
+            return batch
 
 
 class TranslateWorker(BaseWorker):
@@ -915,11 +1133,16 @@ class TranslateWorker(BaseWorker):
         sem = asyncio.Semaphore(self.concurrency)
         total = len(self.entries)
         completed = 0
+        CONTEXT_SIZE = 3  # 跨批次携带的上文条数
 
-        batches = [self.entries[i:i + self.batch_size]
-                   for i in range(0, total, self.batch_size)]
+        starts = list(range(0, total, self.batch_size))
+        batches_with_ctx = []
+        for start in starts:
+            batch = self.entries[start:start + self.batch_size]
+            prev = self.entries[max(0, start - CONTEXT_SIZE):start]
+            batches_with_ctx.append((batch, prev))
 
-        async def process_batch(batch):
+        async def process_batch(batch, prev_ctx):
             nonlocal completed
             if self._cancelled:
                 return
@@ -928,9 +1151,9 @@ class TranslateWorker(BaseWorker):
                     return
                 try:
                     async with aiohttp.ClientSession() as session:
-                        result_map = await _translate_batch_impl(
+                        result_map, unresolved = await _translate_batch_with_repair(
                             batch, self.context, self.glossary, self.client, session,
-                            self.input_lang, self.output_lang)
+                            self.input_lang, self.output_lang, prev_ctx)
                     for entry in batch:
                         translation = result_map.get(entry.index, "")
                         # 获取原文文本（支持任意语言）
@@ -946,6 +1169,8 @@ class TranslateWorker(BaseWorker):
                             self.entry_done.emit(entry.index, entry.lines, "done")
                         else:
                             entry.status = "error"
+                            if entry.index in unresolved:
+                                entry.error_msg = "translation missing after retry"
                             self.entry_done.emit(entry.index, entry.lines, "error")
                         completed += 1
                         self.progress.emit(completed, total)
@@ -957,7 +1182,7 @@ class TranslateWorker(BaseWorker):
                         completed += 1
                         self.progress.emit(completed, total)
 
-        await asyncio.gather(*[process_batch(b) for b in batches])
+        await asyncio.gather(*[process_batch(b, ctx) for b, ctx in batches_with_ctx])
         self.all_done.emit()
 
 
@@ -1074,6 +1299,16 @@ class BatchWorker(BaseWorker):
                 if self._cancelled:
                     break
 
+                self.log.emit(f"  🔧 [{filename}] 检查并修复漏译条目...")
+                async with aiohttp.ClientSession() as session:
+                    await _repair_incomplete_segment_translations(
+                        entries, context, self.glossary_prompt, self.client, session,
+                        self.input_lang, self.output_lang)
+                self.log.emit(f"  ✅ [{filename}] 漏译修复完成")
+
+                if self._cancelled:
+                    break
+
                 self.log.emit(f"  ✨ [{filename}] 开始优化润色 {len(entries)} 条字幕...")
                 entries = await self._optimize(idx, entries, context, self.glossary_prompt)
                 write_phase_snapshot(filename, "AFTER_OPTIMIZE", entries, use_optimized=True)
@@ -1140,7 +1375,10 @@ class BatchWorker(BaseWorker):
                 continue
             seen[e_item.index] = e_item
             deduped.append(e_item)
-        deduped.sort(key=lambda e: e.index)
+        deduped.sort(key=lambda e: _srt_time_to_ms(e.start_time))
+        # 排序后重新编号，确保序号与时间顺序一致
+        for i, entry in enumerate(deduped, start=1):
+            entry.index = i
 
         # 来源完整性校验
         before_words = sum(len(_get_source_text(e, self.input_lang_code).split()) for e in entries)
@@ -1160,6 +1398,9 @@ class BatchWorker(BaseWorker):
         if not batch:
             return []
 
+        # LLM 合并 pass：把语义上不完整的相邻条目合并成完整句
+        batch = await self._llm_merge(batch, context, session)
+
         # 分离：短条目直通，长条目（>20词）送LLM语义切分
         short_entries, long_entries = _split_short_long(batch, lang_code=self.input_lang_code)
         if not long_entries:
@@ -1177,20 +1418,20 @@ class BatchWorker(BaseWorker):
         sys_content = (
             "你是专业字幕切分助手。\n"
             f"【背景与风格】\n{context}\n\n"
-            f"任务：以下{lang_name}字幕条目过长（>20词），找出最自然的断点位置，"
-            f"将其切分为2-3段，每段 ≤20词。\n\n"
+            f"任务：以下{lang_name}字幕条目过长（>20词），找出所有自然断点，"
+            f"按需切分，确保每段 ≤20词，不限制段数。\n\n"
             "规则：\n"
-            "1. 每段 ≤20个词\n"
+            "1. 每段 ≤20个词，包括最后一段\n"
             "2. 断点选在最自然的语义边界：从句结束、意群转折、自然停顿处\n"
             "3. 每段必须是相对完整的语义单元（不可在词组内部切断）\n"
             "4. 只返回断点的词序号，不要输出任何正文内容\n"
             "5. 严格按JSON格式返回，不要加任何解释\n\n"
             "【重要】返回格式：\n"
-            '[{"id": 原id, "break_after_word": [n1, n2]}]\n'
+            '[{"id": 原id, "break_after_word": [n1, n2, ...]}]\n'
             "break_after_word 是断点列表，值为词序号（从1开始计数），表示在第n个词之后断开。\n"
             "无需切分时返回空列表：[{\"id\": 原id, \"break_after_word\": []}]\n\n"
-            "示例：原文共28词，在第10词后和第20词后各断一次：\n"
-            '[{"id": 6, "break_after_word": [10, 20]}]'
+            "示例：原文共50词，在第15词后、第30词后、第45词后各断一次：\n"
+            '[{"id": 6, "break_after_word": [15, 30, 45]}]'
         )
 
         messages = [
@@ -1209,6 +1450,58 @@ class BatchWorker(BaseWorker):
 
         return short_entries + split_results
 
+    async def _llm_merge(self, batch: list[SubtitleEntry], context: str,
+                         session: aiohttp.ClientSession) -> list[SubtitleEntry]:
+        """LLM合并pass：将语义不完整的相邻条目合并成完整句。"""
+        if not batch:
+            return batch
+
+        lang_name = _get_prompt_lang(self.input_lang)
+        items_json = json.dumps([
+            {"id": e.index, "text": _get_source_text(e, self.input_lang_code)}
+            for e in batch
+        ], ensure_ascii=False)
+
+        sys_content = (
+            f"你是专业字幕合并助手。\n"
+            f"【背景与风格】\n{context}\n\n"
+            f"任务：以下{lang_name}字幕条目按时间顺序排列，部分条目是不完整的半句，"
+            f"需要将语义上属于同一句的相邻条目合并为一组。\n\n"
+            "规则：\n"
+            "1. 以逗号、连词、介词、助词等结尾的条目必须与后续条目合并，直到语义完整\n"
+            "2. 每组合并后的词数不超过25词（中文不超过40字）\n"
+            "3. 已经是完整句子的条目单独一组，ids列表只含自身id\n"
+            "4. 必须覆盖所有输入条目，不得遗漏任何id\n"
+            "5. 严格按JSON格式返回，不要加任何解释\n"
+            "6. 【语气词/插话处理】Okay./Sure./Right./Alright./Yeah./Uh-huh./Mm. 等单词短句"
+            "不视为独立完整句，必须并入相邻条目：若前一组语义未完整则并入前一组，"
+            "若前一组已完整则并入后一组\n"
+            "7. 【半句识别】原文以 'the'/'a'/'an'/'of'/'to'/'and'/'but'/'or'/'that'/'which'/"
+            "'with'/'in'/'on'/'at'/'is'/'are'/'was'/'were' 等词结尾，"
+            "必定是半句，强制与下一条合并\n\n"
+            "【重要】返回格式：\n"
+            '[{"ids": [id1, id2, ...]}, ...]\n'
+            "每个对象的ids是需要合并的相邻条目id列表，按原顺序排列。\n\n"
+            "示例1：条目3以逗号结尾，条目4是它的后半句，条目5是完整句：\n"
+            '[{"ids": [3, 4]}, {"ids": [5]}]\n\n'
+            "示例2：条目6是完整句，条目7是\"Okay.\"，条目8是新句的开头：\n"
+            '[{"ids": [6]}, {"ids": [7, 8]}]'
+        )
+
+        messages = [
+            {"role": "system", "content": sys_content},
+            {"role": "user", "content": f"分析并合并以下字幕条目：\n{items_json}"}
+        ]
+
+        try:
+            response = await self.client.chat(messages, session)
+            clean = re.sub(r'```(?:json)?|```', '', response).strip()
+            data = json.loads(clean)
+            return _apply_llm_merge(batch, data, log_fn=self.log.emit, lang_code=self.input_lang_code)
+        except Exception as e:
+            logger.warning(f"LLM合并pass失败，保留原批次: {e}")
+            return batch
+
     async def _translate(self, entries: list[SubtitleEntry],
                           context: str, glossary: str) -> list[SubtitleEntry]:
         """阶段3：原生字幕 en_合并 → zh_译；双语字幕跳过"""
@@ -1222,10 +1515,16 @@ class BatchWorker(BaseWorker):
 
         sem = asyncio.Semaphore(self.concurrency)
         total = len(entries)
-        batches = [entries[i:i + self.batch_size]
-                   for i in range(0, total, self.batch_size)]
+        CONTEXT_SIZE = 3  # 跨批次携带的上文条数
 
-        async def process_batch(batch):
+        starts = list(range(0, total, self.batch_size))
+        batches_with_ctx = []
+        for start in starts:
+            batch = entries[start:start + self.batch_size]
+            prev = entries[max(0, start - CONTEXT_SIZE):start]
+            batches_with_ctx.append((batch, prev))
+
+        async def process_batch(batch, prev_ctx):
             if self._cancelled:
                 return
             async with sem:
@@ -1233,19 +1532,34 @@ class BatchWorker(BaseWorker):
                     return
                 try:
                     async with aiohttp.ClientSession() as session:
-                        result_map = await _translate_batch_impl(
+                        result_map, unresolved = await _translate_batch_with_repair(
                             batch, context, glossary, self.client, session,
-                            self.input_lang, self.output_lang)
+                            self.input_lang, self.output_lang, prev_ctx)
                     for entry in batch:
                         translation = result_map.get(entry.index, "")
                         # 获取原文文本（支持任意语言）
                         source_text = _get_source_text(entry, self.input_lang_code)
                         if translation and source_text:
                             entry.lines = [translation, source_text]
+                            entry.status = "done"
+                            entry.error_msg = ""
+                        else:
+                            entry.status = "error"
+                            if entry.index in unresolved:
+                                entry.error_msg = "translation missing after retry"
                 except Exception:
-                    pass
+                    logger.exception("Batch translation failed")
+                    for entry in batch:
+                        entry.status = "error"
+                        entry.error_msg = "translation batch failed"
 
-        await asyncio.gather(*[process_batch(b) for b in batches])
+        await asyncio.gather(*[process_batch(b, ctx) for b, ctx in batches_with_ctx])
+        unresolved_ids = [
+            entry.index for entry in entries
+            if entry.status == "error" and entry.error_msg.startswith("translation")
+        ]
+        if unresolved_ids:
+            raise RuntimeError(f"Translation incomplete after retry for ids: {unresolved_ids}")
         return entries
 
     async def _analyze(self, entries: list[SubtitleEntry]) -> str:
