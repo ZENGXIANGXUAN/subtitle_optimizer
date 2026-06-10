@@ -434,9 +434,6 @@ class OptimizeWorker(BaseWorker):
         self.input_lang = input_lang
         self.output_lang = output_lang
 
-    def cancel(self):
-        super().cancel()
-
     @pyqtSlot()
     def run(self):
         self._execute(self._run())
@@ -454,6 +451,8 @@ class OptimizeWorker(BaseWorker):
                 is_cancelled=lambda: self._cancelled,
             )
             logger.info(_format_subtitle_snapshot("AFTER_OPTIMIZE", result, use_optimized=True))
+            for entry in result:
+                self.entry_done.emit(entry.index, entry.lines, entry.status or "done")
             self.all_done.emit()
         except asyncio.CancelledError:
             pass
