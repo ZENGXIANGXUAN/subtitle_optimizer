@@ -158,9 +158,53 @@ TranslateWorker、OptimizeWorker、AnalysisWorker 同理。
 
 共用函数保留在 workers.py：`_translate_batch_impl`、`_optimize_batch_impl`、`_build_analysis_messages`、`_format_analysis_result`、`_apply_llm_merge`、`_apply_llm_split` 等。Pipeline import 它们。
 
-## 并发说明
+## 并发策略说明（重要）
 
-当前系统使用 `entry.index` 作为唯一键写回翻译/优化结果，不存在线程竞争问题。并发风险来自 LLM 上下文污染，与并发无关，顺序执行同样存在。本次重构不关闭并发。
+本次统一单文件与批量模式时：
+
+**不要因为担心上下文污染而取消翻译阶段和优化阶段的并发。**
+
+原因：
+
+当前系统的结果写回是基于字幕唯一 ID（`entry.index`）进行映射。
+
+```python
+result_map[entry.index] = translated_text
+```
+
+最终写回：
+
+```python
+entry.translation = result_map[entry.index]
+```
+
+因此即使批次A（1,2,3）和批次B（4,5,6）同时执行，也不会发生 3 写到 4、4 写到 3 的线程竞争（Race Condition）。
+
+### 需要区分两类问题
+
+**1. 线程竞争（Race Condition）**
+
+线程A修改字幕3、线程B同时修改字幕3 → 可能覆盖。当前实现不存在这种情况，因为每个批次只负责自己的字幕 ID。
+
+**2. LLM 上下文污染（Context Leakage）**
+
+字幕3引用了字幕4内容、字幕4又引用了字幕3内容。这是 Prompt 和模型输出问题，与并发无关，即使改成顺序执行也可能发生。
+
+### 各阶段并发策略
+
+- **Segment（重组）**：保持当前策略。跨批次断句（3+4 无法合并）是批次边界问题，不是并发问题。
+- **Translate（翻译）**：允许并发，保持现有 Semaphore 配置。
+- **Optimize（优化）**：允许并发，保持现有 Semaphore 配置。
+
+### 验收要求
+
+统一后单文件模式与 BatchWorker 模式使用完全相同的并发策略，不要出现"单文件=并发、批量=顺序"的情况。
+
+并发安全检查点：
+- 是否有共享 dict 被多个协程同时修改
+- 是否有批次结果合并时用位置索引而不是字幕 ID
+
+如果结果合并是按 `entry.index` 做的，并发本身基本是安全的。
 
 ## 暂不实施
 
