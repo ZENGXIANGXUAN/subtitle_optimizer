@@ -238,6 +238,16 @@ class SubtitlePipeline:
             if on_log:
                 on_log(f"    ⚠️ {len(unresolved_ids)} 条字幕翻译失败，已保留原文（ID: {unresolved_ids}）")
 
+        # 漏译修复
+        if on_log:
+            on_log("  🔧 检查并修复漏译条目...")
+        async with aiohttp.ClientSession() as session:
+            await _repair_incomplete_segment_translations(
+                entries, context, glossary, self.client, session,
+                self.input_lang, self.output_lang)
+        if on_log:
+            on_log("  ✅ 漏译修复完成")
+
         logger.info(_format_subtitle_snapshot("AFTER_TRANSLATE", entries))
         return entries
 
