@@ -65,7 +65,7 @@ class SubtitlePipeline:
         is_cancelled: Optional[Callable[[], bool]] = None,
     ) -> str:
         if is_cancelled and is_cancelled():
-            return ""
+            raise asyncio.CancelledError()
 
         if on_progress:
             on_progress("正在分析字幕内容，识别翻译情景...")
@@ -293,7 +293,8 @@ class SubtitlePipeline:
                             entry.status = "done"
                         else:
                             entry.status = "error"
-                except Exception:
+                except Exception as exc:
+                    logger.error(f"Optimize batch failed: {exc}")
                     for entry in batch:
                         entry.status = "error"
                 finally:
