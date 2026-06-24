@@ -628,7 +628,7 @@ class MainWindow(QMainWindow):
         gloss_title_row.addStretch()
         rc.addLayout(gloss_title_row)
 
-        gloss_hint = QLabel("每行一条，格式：英文->中文　例：Algorithm->算法")
+        gloss_hint = QLabel("在表格中填写英文和对应的中文翻译，点击「添加行」新增术语")
         gloss_hint.setStyleSheet("color: #8a7b66; font-size: 11px;")
         rc.addWidget(gloss_hint)
 
