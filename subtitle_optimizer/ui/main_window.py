@@ -632,24 +632,64 @@ class MainWindow(QMainWindow):
         gloss_hint.setStyleSheet("color: #8a7b66; font-size: 11px;")
         rc.addWidget(gloss_hint)
 
-        self.input_glossary = QTextEdit()
-        self.input_glossary.setPlaceholderText(
-            "Algorithm->算法\nCSID->交付状态变化\nDeployment->部署\nPipeline->流水线\n..."
-        )
-        self.input_glossary.setStyleSheet("""
-            QTextEdit {
+        # 术语表表格
+        self.table_glossary = QTableWidget()
+        self.table_glossary.setColumnCount(2)
+        self.table_glossary.setHorizontalHeaderLabels(["英文 (Source)", "中文 (Target)"])
+        self.table_glossary.horizontalHeader().setStretchLastSection(True)
+        self.table_glossary.setStyleSheet("""
+            QTableWidget {
                 background: #f8f8f0;
                 border: 2px solid #c4b89e;
                 border-radius: 6px;
                 color: #725d42;
                 font-size: 12px;
                 font-family: 'JetBrains Mono', 'Cascadia Code', 'Consolas', monospace;
-                padding: 8px;
-                line-height: 1.7;
+                gridline-color: #c4b89e;
             }
-            QTextEdit:focus { border-color: #19c8b9; }
+            QTableWidget:focus { border-color: #19c8b9; }
+            QHeaderView::section {
+                background: #f0e8d8;
+                color: #8a7b66;
+                font-weight: 600;
+                border: 1px solid #c4b89e;
+                padding: 6px;
+            }
         """)
-        rc.addWidget(self.input_glossary, 1)
+        rc.addWidget(self.table_glossary, 1)
+
+        # 按钮行
+        btn_row = QHBoxLayout()
+        btn_add = QPushButton("+ 添加行")
+        btn_del = QPushButton("- 删除行")
+        btn_add.setStyleSheet("""
+            QPushButton {
+                background: #19c8b9;
+                color: #5a3a1a;
+                border: none;
+                border-radius: 4px;
+                padding: 6px 12px;
+                font-weight: 600;
+            }
+            QPushButton:hover { background: #15b0a3; }
+        """)
+        btn_del.setStyleSheet("""
+            QPushButton {
+                background: #e8a87c;
+                color: #5a3a1a;
+                border: none;
+                border-radius: 4px;
+                padding: 6px 12px;
+                font-weight: 600;
+            }
+            QPushButton:hover { background: #d4956b; }
+        """)
+        btn_add.clicked.connect(self._glossary_add_row)
+        btn_del.clicked.connect(self._glossary_del_row)
+        btn_row.addWidget(btn_add)
+        btn_row.addWidget(btn_del)
+        btn_row.addStretch()
+        rc.addLayout(btn_row)
 
         gloss_note = QLabel("翻译时 AI 将强制使用上述术语，适用于单文件和批量处理。")
         gloss_note.setStyleSheet("color: #8a7b66; font-size: 11px;")
@@ -1539,6 +1579,25 @@ class MainWindow(QMainWindow):
         else:
             color = "#8a7b66"
         self.text_log.append(f'<span style="color:#9f927d">[{ts}]</span> <span style="color:{color}">{msg}</span>')
+
+    def _glossary_add_row(self):
+        """在术语表表格末尾添加一行"""
+        row = self.table_glossary.rowCount()
+        self.table_glossary.insertRow(row)
+        self.table_glossary.setItem(row, 0, QTableWidgetItem(""))
+        self.table_glossary.setItem(row, 1, QTableWidgetItem(""))
+
+    def _glossary_del_row(self):
+        """删除术语表表格中当前选中的行"""
+        rows = set(idx.row() for idx in self.table_glossary.selectedIndexes())
+        if not rows:
+            # 如果没有选中行，删除最后一行
+            last = self.table_glossary.rowCount() - 1
+            if last >= 0:
+                self.table_glossary.removeRow(last)
+        else:
+            for row in sorted(rows, reverse=True):
+                self.table_glossary.removeRow(row)
 
     def _get_glossary_prompt(self, entries=None) -> str:
         """解析术语表输入框，返回一个措辞强硬的独立规则字符串（空则返回空串）。
