@@ -1581,23 +1581,45 @@ class MainWindow(QMainWindow):
         self.text_log.append(f'<span style="color:#9f927d">[{ts}]</span> <span style="color:{color}">{msg}</span>')
 
     def _glossary_add_row(self):
-        """在术语表表格末尾添加一行"""
+        """在术语表末尾添加空行"""
         row = self.table_glossary.rowCount()
         self.table_glossary.insertRow(row)
         self.table_glossary.setItem(row, 0, QTableWidgetItem(""))
         self.table_glossary.setItem(row, 1, QTableWidgetItem(""))
+        self.table_glossary.editItem(self.table_glossary.item(row, 0))
 
     def _glossary_del_row(self):
-        """删除术语表表格中当前选中的行"""
-        rows = set(idx.row() for idx in self.table_glossary.selectedIndexes())
-        if not rows:
-            # 如果没有选中行，删除最后一行
-            last = self.table_glossary.rowCount() - 1
-            if last >= 0:
-                self.table_glossary.removeRow(last)
-        else:
-            for row in sorted(rows, reverse=True):
-                self.table_glossary.removeRow(row)
+        """删除选中的术语表行"""
+        row = self.table_glossary.currentRow()
+        if row >= 0:
+            self.table_glossary.removeRow(row)
+
+    def _glossary_to_text(self) -> str:
+        """将表格内容转换为 English->中文 格式文本"""
+        lines = []
+        for row in range(self.table_glossary.rowCount()):
+            en = self.table_glossary.item(row, 0)
+            zh = self.table_glossary.item(row, 1)
+            if en and zh and en.text().strip() and zh.text().strip():
+                lines.append(f"{en.text().strip()}->{zh.text().strip()}")
+        return "\n".join(lines)
+
+    def _glossary_from_text(self, text: str):
+        """将 English->中文 格式文本加载到表格"""
+        self.table_glossary.setRowCount(0)
+        for line in text.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            for sep in ("->", "→"):
+                if sep in line:
+                    parts = line.split(sep, 1)
+                    if parts[0].strip() and parts[1].strip():
+                        row = self.table_glossary.rowCount()
+                        self.table_glossary.insertRow(row)
+                        self.table_glossary.setItem(row, 0, QTableWidgetItem(parts[0].strip()))
+                        self.table_glossary.setItem(row, 1, QTableWidgetItem(parts[1].strip()))
+                    break
 
     def _get_glossary_prompt(self, entries=None) -> str:
         """解析术语表输入框，返回一个措辞强硬的独立规则字符串（空则返回空串）。
