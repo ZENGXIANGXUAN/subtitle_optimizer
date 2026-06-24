@@ -11,7 +11,7 @@ from PyQt6.QtWidgets import (
     QSplitter, QFrame, QScrollArea, QComboBox,
     QGroupBox, QLineEdit, QStatusBar, QTabWidget, QMessageBox,
     QCheckBox, QGridLayout, QListWidget, QListWidgetItem,
-    QSizePolicy
+    QSizePolicy, QTableWidget, QTableWidgetItem
 )
 from PyQt6.QtCore import Qt, QThread, pyqtSlot, QTimer, QEvent
 from PyQt6.QtGui import QFont, QColor, QPalette, QWheelEvent
@@ -39,6 +39,9 @@ except ImportError:
     import os
     sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
     from utils import logger, write_phase_snapshot
+
+
+from core.workers import _format_glossary_prompt
 
 
 class MainWindow(QMainWindow):
@@ -536,12 +539,12 @@ class MainWindow(QMainWindow):
         params_row.setSpacing(12)
 
         conc_wrap = QVBoxLayout()
-        conc_lbl = QLabel("并发数  (1 – 12)")
+        conc_lbl = QLabel("并发数  (1 – 100)")
         conc_lbl.setStyleSheet("color: #8a7b66; font-size: 11px;")
         conc_wrap.addWidget(conc_lbl)
         self.input_concurrency = QLineEdit("6")
         self.input_concurrency.setPlaceholderText("1-12")
-        self.input_concurrency.setValidator(__import__('PyQt6.QtGui', fromlist=['QIntValidator']).QIntValidator(1, 12))
+        self.input_concurrency.setValidator(__import__('PyQt6.QtGui', fromlist=['QIntValidator']).QIntValidator(1, 100))
         conc_wrap.addWidget(self.input_concurrency)
         params_row.addLayout(conc_wrap)
 
@@ -860,9 +863,10 @@ class MainWindow(QMainWindow):
         if not self.chk_same_dir.isChecked():
             out_dir = self.batch_out_dir.text().strip() or None
         overwrite = self.chk_overwrite_batch.isChecked()
-        concurrency = max(1, min(12, int(self.input_concurrency.text() or "6")))
+        concurrency = max(1, min(100, int(self.input_concurrency.text() or "6")))
         batch_size = max(1, min(50, int(self.input_batch.text() or "5")))
 
+        raw_glossary = self.input_glossary.toPlainText().strip()
         self._batch_worker = BatchWorker(
             client=client,
             files=list(self._batch_files),
@@ -872,6 +876,7 @@ class MainWindow(QMainWindow):
             overwrite=overwrite,
             target_first=self._target_first(),
             glossary_prompt=self._get_glossary_prompt(),
+            raw_glossary=raw_glossary,
             original_line=self._get_original_line_index(),
             input_lang=self.combo_input_lang.currentText(),
             output_lang=self.combo_output_lang.currentText(),
@@ -1173,11 +1178,11 @@ class MainWindow(QMainWindow):
         self.text_context.setPlainText(result)
         self._log("✅ [阶段1/4] 情景分析完成")
 
-        concurrency = max(1, min(12, int(self.input_concurrency.text() or "6")))
+        concurrency = max(1, min(100, int(self.input_concurrency.text() or "6")))
         batch_size = max(1, min(50, int(self.input_batch.text() or "5")))
 
         seg_batch_size = max(10, min(30, int(self.input_batch.text() or "15")))
-        glossary_prompt = self._get_glossary_prompt()
+        glossary_prompt = self._get_glossary_prompt(entries=self.entries)
 
         logger.info(f"开始智能重组 {len(self.entries)} 条字幕")
         self._log(f"🔗 [阶段2/4] 开始智能重组 {len(self.entries)} 条字幕...")
@@ -1535,23 +1540,17 @@ class MainWindow(QMainWindow):
             color = "#8a7b66"
         self.text_log.append(f'<span style="color:#9f927d">[{ts}]</span> <span style="color:{color}">{msg}</span>')
 
-    def _get_glossary_prompt(self) -> str:
-        """解析术语表输入框，返回一个措辞强硬的独立规则字符串（空则返回空串）"""
+    def _get_glossary_prompt(self, entries=None) -> str:
+        """解析术语表输入框，返回一个措辞强硬的独立规则字符串（空则返回空串）。
+        entries 非空时，先过滤掉字幕中未出现的术语以节省 token。
+        """
         raw = self.input_glossary.toPlainText().strip()
-        if not raw: return ""
-        pairs = []
-        for line in raw.splitlines():
-            line = line.strip()
-            for sep in ("->", "→"):
-                if sep in line:
-                    parts = line.split(sep, 1)
-                    if parts[0].strip() and parts[1].strip():
-                        pairs.append(f'"{parts[0].strip()}" 必须译为 "{parts[1].strip()}"')
-                    break
-        if not pairs: return ""
-        # 改成强硬的指令块
-        return "★ 【强制术语表】遇到以下英文专业词汇，必须严格统一翻译为对应中文，绝不允许替换为同义词或意译：\n" + "\n".join(
-            f"  - {p}" for p in pairs) + "\n"
+        if not raw:
+            return ""
+        if entries:
+            from core.workers import filter_glossary_by_entries
+            raw = filter_glossary_by_entries(raw, entries)
+        return _format_glossary_prompt(raw)
 
     def _config_path(self) -> Path:
         return Path.home() / ".subtitle_optimizer_config.json"
