@@ -906,7 +906,7 @@ class MainWindow(QMainWindow):
         concurrency = max(1, min(100, int(self.input_concurrency.text() or "6")))
         batch_size = max(1, min(50, int(self.input_batch.text() or "5")))
 
-        raw_glossary = self.input_glossary.toPlainText().strip()
+        raw_glossary = self._glossary_to_text()
         self._batch_worker = BatchWorker(
             client=client,
             files=list(self._batch_files),
@@ -1625,7 +1625,7 @@ class MainWindow(QMainWindow):
         """解析术语表输入框，返回一个措辞强硬的独立规则字符串（空则返回空串）。
         entries 非空时，先过滤掉字幕中未出现的术语以节省 token。
         """
-        raw = self.input_glossary.toPlainText().strip()
+        raw = self._glossary_to_text()
         if not raw:
             return ""
         if entries:
