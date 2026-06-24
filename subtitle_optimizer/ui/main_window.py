@@ -1644,7 +1644,7 @@ class MainWindow(QMainWindow):
             "concurrency": self.input_concurrency.text(),
             "batch_size": self.input_batch.text(),
             "original_line": self.combo_original_line.currentIndex(),
-            "glossary": self.input_glossary.toPlainText().strip(),
+            "glossary": self._glossary_to_text(),
             "input_language": self.combo_input_lang.currentText(),
             "output_language": self.combo_output_lang.currentText(),
         }
@@ -1673,7 +1673,7 @@ class MainWindow(QMainWindow):
             self.input_concurrency.setText(str(cfg.get("concurrency", "6")))
             self.input_batch.setText(str(cfg.get("batch_size", "5")))
             self.combo_original_line.setCurrentIndex(cfg.get("original_line", 1))  # 默认第2行
-            self.input_glossary.setPlainText(cfg.get("glossary", ""))
+            self._glossary_from_text(cfg.get("glossary", ""))
             # 加载语言设置（向后兼容）
             input_lang = cfg.get("input_language", "English")
             output_lang = cfg.get("output_language", "中文")
