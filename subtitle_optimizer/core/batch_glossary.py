@@ -75,11 +75,12 @@ def merge_batch_glossary_candidates(
                 next_source_index += 1
 
             source_targets.setdefault(source_key, set()).add(target)
-            pair_key = (source_key, target)
+            pair_key = (source, target)
             if pair_key not in merged:
                 merged[pair_key] = {
                     "source": source,
                     "target": target,
+                    "source_key": source_key,
                     "files": [],
                     "index": len(merged),
                 }
@@ -99,13 +100,13 @@ def merge_batch_glossary_candidates(
             source=str(row["source"]),
             target=str(row["target"]),
             files=tuple(row["files"]) if isinstance(row["files"], list) else (),
-            status="译法冲突" if pair_key[0] in conflict_keys else "新词",
+            status="译法冲突" if row["source_key"] in conflict_keys else "新词",
         )
-        for pair_key, row in sorted(
+        for _pair_key, row in sorted(
             merged.items(),
             key=lambda item: (
-                0 if item[0][0] in conflict_keys else 1,
-                source_order[item[0][0]],
+                0 if item[1]["source_key"] in conflict_keys else 1,
+                source_order[str(item[1]["source_key"])],
                 int(item[1]["index"]),
             ),
         )
