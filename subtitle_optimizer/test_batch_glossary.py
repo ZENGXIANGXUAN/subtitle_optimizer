@@ -1,4 +1,5 @@
 from core.batch_glossary import (
+    GlossaryFileFailure,
     GlossaryCandidate,
     approved_candidates_to_text,
     merge_batch_glossary_candidates,
@@ -113,6 +114,18 @@ def test_merge_candidates_parses_unicode_arrow_separator():
             status="新词",
         )
     ]
+
+
+def test_merge_candidates_preserves_file_failures():
+    failure = GlossaryFileFailure("bad.srt", "无法解析字幕文件")
+
+    result = merge_batch_glossary_candidates(
+        [("file_a.srt", "gamma->伽马")],
+        fixed_glossary="",
+        failures=[failure],
+    )
+
+    assert result.failures == [failure]
 
 
 def test_unresolved_conflict_sources_detects_remaining_multi_target_sources():

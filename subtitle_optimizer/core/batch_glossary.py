@@ -15,7 +15,7 @@ class GlossaryCandidate:
 @dataclass(frozen=True)
 class GlossaryFileFailure:
     filename: str
-    message: str
+    reason: str
 
 
 @dataclass(frozen=True)
@@ -55,6 +55,7 @@ def merge_batch_glossary_candidates(
     file_glossaries: Iterable[tuple[str, str]],
     *,
     fixed_glossary: str,
+    failures: Iterable[GlossaryFileFailure] | None = None,
 ) -> BatchGlossarySummary:
     fixed_keys = fixed_source_keys(fixed_glossary)
     skipped_by_key: dict[str, str] = {}
@@ -115,7 +116,7 @@ def merge_batch_glossary_candidates(
     return BatchGlossarySummary(
         candidates=candidates,
         skipped_existing=list(skipped_by_key.values()),
-        failures=[],
+        failures=list(failures or []),
     )
 
 
