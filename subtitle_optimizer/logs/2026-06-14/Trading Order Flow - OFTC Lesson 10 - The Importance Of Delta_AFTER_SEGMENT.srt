@@ -1,0 +1,2554 @@
+===== AFTER_SEGMENT (638 entries) =====
+1
+00:00:00,850 --> 00:00:05,110
+Okay, OrderFlow Trading Course Lesson 10, The Importance of Delta and Volume.
+
+2
+00:00:05,670 --> 00:00:08,930
+My name is Michael Valtos. I'm the founder of OrderFlows.com.
+
+3
+00:00:09,430 --> 00:00:12,030
+Before we get started, let me read through a brief disclaimer.
+
+4
+00:00:12,390 --> 00:00:15,473
+This presentation is for educational and informational purposes only and
+
+5
+00:00:15,473 --> 00:00:18,556
+should not be considered a solicitation to buy or sell
+
+6
+00:00:18,556 --> 00:00:21,948
+a futures contract or make any other type of investment decision.
+
+7
+00:00:22,530 --> 00:00:26,330
+Futures trading contains substantial risk and is not for every investor.
+
+8
+00:00:26,330 --> 00:00:30,230
+An investor could potentially lose all or more than the initial investment.
+
+9
+00:00:30,410 --> 00:00:36,090
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+10
+00:00:36,770 --> 00:00:42,150
+Only risk capital should be used for trading and only those with sufficient risk capital should consider trading.
+
+11
+00:00:42,730 --> 00:00:45,510
+Past performance is not necessarily indicative of future results.
+
+12
+00:00:46,230 --> 00:00:48,250
+CFTC Rules 4.41
+
+13
+00:00:48,250 --> 00:00:51,750
+Hypothetical or simulated performance results have certain limitations.
+
+14
+00:00:51,750 --> 00:00:56,770
+Unlike an actual performance record, simulated results do not represent actual trading.
+
+15
+00:00:57,370 --> 00:01:00,787
+Also, since the trades have not been executed, the results may have
+
+16
+00:01:00,787 --> 00:01:03,065
+under or overcompensated for the impact, if any,
+
+17
+00:01:03,065 --> 00:01:05,628
+of certain market factors, such as lack of liquidity.
+
+18
+00:01:06,290 --> 00:01:12,370
+Simulated trading programs, in general, are also subject to the fact that it is designed with the benefit of hindsight.
+
+19
+00:01:13,310 --> 00:01:16,557
+No representation is being made that any account will or
+
+20
+00:01:16,557 --> 00:01:20,129
+is likely to achieve profit or losses similar to those shown.
+
+21
+00:01:20,130 --> 00:01:26,410
+So, in this lesson, I'm going to explain the importance of delta and volume.
+
+22
+00:01:26,870 --> 00:01:28,070
+First, we'll start with volume.
+
+23
+00:01:28,310 --> 00:01:30,290
+Why is volume more important than price?
+
+24
+00:01:30,810 --> 00:01:33,676
+When institutional traders are moving size in the market, they
+
+25
+00:01:33,676 --> 00:01:36,829
+try to hide their size, their volume, and not the price.
+
+26
+00:01:37,210 --> 00:01:40,410
+When you see price trade, you form an opinion of the market.
+
+27
+00:01:40,530 --> 00:01:43,190
+But when you see the volume, you see the facts of the market.
+
+28
+00:01:44,490 --> 00:01:46,630
+So, let's think about that for a second.
+
+29
+00:01:46,970 --> 00:01:48,950
+Why is volume more important than price?
+
+30
+00:01:48,950 --> 00:01:52,890
+Price is often viewed as an advertising mechanism.
+
+31
+00:01:53,550 --> 00:01:57,862
+So, you know, imagine you're in the fruit
+
+32
+00:01:57,862 --> 00:02:02,174
+market and you see apples on sale for,
+
+33
+00:02:02,174 --> 00:02:05,408
+you know, two for a dollar.
+
+34
+00:02:05,670 --> 00:02:10,009
+And you think, hey, that's a good price. You know, you want to buy it.
+
+35
+00:02:10,130 --> 00:02:13,390
+You're not concerned with what the volume is.
+
+36
+00:02:13,390 --> 00:02:15,615
+But if you know that, you know, there's
+
+37
+00:02:15,615 --> 00:02:17,840
+going to be a big harvest and, you
+
+38
+00:02:17,840 --> 00:02:20,065
+know, you like apples and you want to
+
+39
+00:02:20,065 --> 00:02:22,290
+buy some extra to take home, you're going
+
+40
+00:02:22,290 --> 00:02:24,515
+to think, well, I know that tomorrow there's
+
+41
+00:02:24,515 --> 00:02:26,740
+going to be a lot of supply in
+
+42
+00:02:26,740 --> 00:02:28,965
+the market. And, you know, tomorrow the price
+
+43
+00:02:28,965 --> 00:02:31,190
+might be three for a dollar. So, you
+
+44
+00:02:31,190 --> 00:02:46,489
+know, you might buy one, you know, one pair today. But, you know, you can come back tomorrow and buy, you know, if you want to buy five dollars worth, you know, you could buy ten today. But if you wait till tomorrow, you could buy 15 because it's going to be three for a dollar.
+
+45
+00:02:47,990 --> 00:02:50,214
+Trading in the markets is similar in that
+
+46
+00:02:50,214 --> 00:02:52,716
+sense where, say, the S&Ps are offered at
+
+47
+00:02:52,716 --> 00:02:54,384
+1910 and you just see 50 on the
+
+48
+00:02:54,384 --> 00:03:07,733
+offer. You kind of think the market is going to go higher. And you're looking at the volume on the offer and you only see 50 lots. And you're thinking, well, if you get through that 50 lots, you know, the market can start to tick a little bit higher.
+
+49
+00:03:08,950 --> 00:03:12,044
+But if you know that the market is 1910 offered
+
+50
+00:03:12,044 --> 00:03:14,106
+but you see a size there
+
+51
+00:03:14,106 --> 00:03:22,357
+of 1,000, are you going to have the same view of the market? No, because, you know, there's a lot of supply there offered at 1910.
+
+52
+00:03:26,760 --> 00:03:30,600
+You know, let's take a look at a chart here real quick. So, you know, this is an E-minis chart.
+
+53
+00:03:31,440 --> 00:03:33,684
+And, you know, this is just
+
+54
+00:03:33,684 --> 00:03:35,928
+measuring the volume. You're seeing the
+
+55
+00:03:35,928 --> 00:03:41,912
+market, you know, trading between 1911 and 1913. And, you know, the volumes are going back and forth.
+
+56
+00:03:42,760 --> 00:03:46,235
+It's this third line here, volume on the
+
+57
+00:03:46,235 --> 00:03:49,710
+bottom. You know, at this bar here at
+
+58
+00:03:49,710 --> 00:03:51,013
+1230, it's 4,500, 8,000 at 1236, 4,000 at
+
+59
+00:03:51,013 --> 00:03:53,185
+1237, 6,000 at 1240. And then all of
+
+60
+00:03:53,185 --> 00:03:56,660
+a sudden you see a big surge in
+
+61
+00:03:56,660 --> 00:04:03,610
+the volume. It almost doubles. You know, it goes to 13,000, back to 6,000, 8,000. It jumps to 16,000 again, 7,000.
+
+62
+00:04:09,580 --> 00:04:12,312
+What you're seeing is a lot of supply
+
+63
+00:04:12,312 --> 00:04:15,044
+coming into the market and the price selling
+
+64
+00:04:15,044 --> 00:04:23,240
+off. So, obviously, there's more inventory for sale. And, you know, for people to move the inventory, they have to move the price down.
+
+65
+00:04:23,240 --> 00:04:26,648
+So, you know, volume has often been relegated
+
+66
+00:04:26,648 --> 00:04:30,056
+to a secondary position by most traders since
+
+67
+00:04:30,056 --> 00:04:38,578
+they are focused on price. You know, most indicators are designed around price. They don't necessarily take into account volume.
+
+68
+00:04:39,240 --> 00:04:43,540
+Volume is useful for identifying turning points in the markets.
+
+69
+00:04:43,540 --> 00:04:48,500
+So, in a downtrending market, sellers are usually in control.
+
+70
+00:04:48,700 --> 00:04:51,260
+And for the market to turn, buyers need to take control.
+
+71
+00:04:51,840 --> 00:04:56,120
+What that means is that buyers need to come in and overwhelm the sellers with demand.
+
+72
+00:04:56,480 --> 00:04:59,340
+There has to be more demand than supply.
+
+73
+00:04:59,720 --> 00:05:02,180
+You know, that's the basic rules of economics.
+
+74
+00:05:02,180 --> 00:05:05,860
+So, here's an example in the crude oil.
+
+75
+00:05:06,340 --> 00:05:15,340
+You know, the volume, you know, again, it's this third line here. You know, starting at 952, you see volume of 400, 1,400, 700, 800.
+
+76
+00:05:16,780 --> 00:05:18,840
+Now, the market is just sort of trading sideways.
+
+77
+00:05:19,200 --> 00:05:21,470
+Then you're starting to see the volume
+
+78
+00:05:21,470 --> 00:05:23,415
+really pick up again. 1,400, which is,
+
+79
+00:05:23,415 --> 00:05:27,955
+you know, the highest for the most recent, you know, the most recent bars.
+
+80
+00:05:28,700 --> 00:05:32,120
+2,000, 1,200, as you see the market start to move away.
+
+81
+00:05:32,580 --> 00:05:34,817
+You're seeing, you know, additional
+
+82
+00:05:34,817 --> 00:05:37,948
+buyers come in. And you're seeing buyers
+
+83
+00:05:37,948 --> 00:05:44,659
+willing to, you know, buy the inventory that the sellers are offering to the market.
+
+84
+00:05:47,030 --> 00:05:49,530
+So, in an uptrending market, buyers are usually in control.
+
+85
+00:05:49,650 --> 00:05:52,490
+And for the market to turn, sellers need to take control.
+
+86
+00:05:52,490 --> 00:05:55,990
+What that means is that sellers need to come in and overwhelm the buyers with supply.
+
+87
+00:05:57,930 --> 00:05:59,620
+You know, which is, you
+
+88
+00:05:59,620 --> 00:06:01,310
+know, the statement is the
+
+89
+00:06:01,310 --> 00:06:04,690
+opposite of a downtrending market. You know, but in an
+
+90
+00:06:04,690 --> 00:06:08,070
+uptrending market, you need to have, you know, either new
+
+91
+00:06:08,070 --> 00:06:18,210
+supply come into the market or new sellers come into the market and offer inventory to the buyers that, you know, is going to overrun the buying in the market.
+
+92
+00:06:18,210 --> 00:06:23,850
+For the market to start to sell off, you're going to need more sellers than buyers.
+
+93
+00:06:24,110 --> 00:06:25,510
+Now, that's in an uptrending market.
+
+94
+00:06:25,610 --> 00:06:28,770
+There's going to be times where there's just no more buyers.
+
+95
+00:06:29,110 --> 00:06:34,650
+But, you know, we're talking about how, you know, how to read increasing and decreasing volume.
+
+96
+00:06:34,650 --> 00:06:40,780
+So, you know, let's get into delta.
+
+97
+00:06:40,980 --> 00:06:44,580
+How can a trader measure volume in a way to trade in the short term?
+
+98
+00:06:45,100 --> 00:06:49,360
+Well, there's this thing called delta that you're going to see on volume footprint charts.
+
+99
+00:06:50,000 --> 00:06:51,754
+When prices start to move, the reason it
+
+100
+00:06:51,754 --> 00:06:53,289
+moves is because of a series of
+
+101
+00:06:53,289 --> 00:06:56,359
+aggressive buying or selling which will show up in the delta of a bar.
+
+102
+00:06:57,700 --> 00:07:00,700
+Delta measures the strength of the market's auction process.
+
+103
+00:07:01,320 --> 00:07:07,300
+It's the most important component of delta is volume. Volume must be understood in context of the market.
+
+104
+00:07:07,520 --> 00:07:10,847
+When volume is expanding positively or negatively, a trader must
+
+105
+00:07:10,847 --> 00:07:12,843
+watch its strength to fully comprehend
+
+106
+00:07:12,843 --> 00:07:14,839
+the shift in supply and demand.
+
+107
+00:07:15,440 --> 00:07:18,800
+It is important to note that delta does not take into account price.
+
+108
+00:07:26,340 --> 00:07:28,924
+So, delta, you know, I explained
+
+109
+00:07:28,924 --> 00:07:31,508
+briefly in the terms section what
+
+110
+00:07:31,508 --> 00:07:34,092
+delta is and what the ask
+
+111
+00:07:34,092 --> 00:07:37,538
+delta is and what the bid delta is.
+
+112
+00:07:38,160 --> 00:07:39,800
+So, now let's look at it on a chart.
+
+113
+00:07:39,800 --> 00:07:42,355
+So, you have down here at the bottom,
+
+114
+00:07:42,355 --> 00:07:44,271
+you have the ask, the bid,
+
+115
+00:07:44,271 --> 00:07:46,187
+and the delta. This is actually
+
+116
+00:07:46,187 --> 00:07:50,339
+the ask delta, the bid delta, and the net delta for the bar.
+
+117
+00:07:50,700 --> 00:07:56,260
+So, when you have an ask delta, that's the volume that's traded on the offer.
+
+118
+00:07:56,760 --> 00:07:58,760
+The bid delta is what's traded on the bid.
+
+119
+00:07:58,880 --> 00:08:01,980
+So, we'll take a look at this bar right here at 812.
+
+120
+00:08:01,980 --> 00:08:09,080
+So, you see 374. That's if you take all the volume traded on the offer, add it together, you get 374.
+
+121
+00:08:09,700 --> 00:08:15,680
+On the bid side, you get 1432. So, if you take all the numbers traded on the bid side, you get 1432.
+
+122
+00:08:15,680 --> 00:08:25,280
+When you subtract the 374 from 1432, you get negative 1058. So, you have a negative delta in the bar.
+
+123
+00:08:26,480 --> 00:08:32,419
+And what that's telling you is that there was more sold into the bid than bought on the offer.
+
+124
+00:08:32,419 --> 00:08:49,100
+However, now, within most footprint charts, you can choose to have the bid and the ask deltas in there.
+
+125
+00:08:49,260 --> 00:08:55,560
+Or you can just, like on this chart, not have it in there and just concentrate on the net deltas.
+
+126
+00:08:57,160 --> 00:09:00,200
+It's personal preference whether you want to have it or not.
+
+127
+00:09:00,200 --> 00:09:04,475
+So, if, you know, once you start looking at deltas
+
+128
+00:09:04,475 --> 00:09:07,895
+fairly regularly, you're going to get used to
+
+129
+00:09:07,895 --> 00:09:15,590
+understanding the numbers. And you might just want to go with where you just have the net delta.
+
+130
+00:09:18,060 --> 00:09:20,040
+Delta is overlooked by most traders.
+
+131
+00:09:20,360 --> 00:09:23,260
+The only traders who follow delta are mainly order flow traders.
+
+132
+00:09:23,760 --> 00:09:25,963
+Delta is not used by most traders because
+
+133
+00:09:25,963 --> 00:09:27,615
+most people, they don't even know
+
+134
+00:09:27,615 --> 00:09:29,267
+it exists, you know, let alone
+
+135
+00:09:29,267 --> 00:09:32,297
+how to read it and understand it and trade with it.
+
+136
+00:09:32,300 --> 00:09:35,880
+Now, delta can alert you to areas in
+
+137
+00:09:35,880 --> 00:09:38,565
+the market when buyers are drying
+
+138
+00:09:38,565 --> 00:09:43,488
+up, in and up move, and where sellers are getting stronger.
+
+139
+00:09:45,210 --> 00:09:49,570
+Delta alerts you to areas where sellers are getting less in a down move and buyers are starting to dominate.
+
+140
+00:09:50,030 --> 00:09:52,290
+This is what causes changes in trends.
+
+141
+00:09:54,900 --> 00:09:57,660
+Okay, so, I'll show you a nice example here.
+
+142
+00:09:59,940 --> 00:10:09,460
+If you're watching the delta, which is the top line here, you're seeing, you know, minus deltas here, minus 7.23, minus 9.12.
+
+143
+00:10:09,920 --> 00:10:17,640
+Now, you've got a positive delta of 7.58, then a positive delta of 2,000, and then again a positive delta of 2,600.
+
+144
+00:10:18,320 --> 00:10:20,379
+What you're seeing is, you know,
+
+145
+00:10:20,379 --> 00:10:22,438
+this market is going sideways for
+
+146
+00:10:22,438 --> 00:10:26,899
+the most part, but you're seeing the deltas really starting to turn positive.
+
+147
+00:10:27,300 --> 00:10:29,080
+You know, buyers are starting to take control.
+
+148
+00:10:29,460 --> 00:10:33,900
+You've got three bars here with positive delta, fairly strong positive deltas.
+
+149
+00:10:33,900 --> 00:10:40,480
+What that's telling you, there's, buying has come in. Buyers are starting to overwhelm the sellers.
+
+150
+00:10:40,640 --> 00:10:44,940
+They're willing to pay the offer price to take the, try and take the market higher.
+
+151
+00:10:45,260 --> 00:10:50,480
+And you see, oh, we're starting to string together more positive deltas as the markets are moving higher.
+
+152
+00:10:50,480 --> 00:10:51,873
+You know, if these
+
+153
+00:10:51,873 --> 00:10:53,962
+deltas and these bars were just
+
+154
+00:10:53,962 --> 00:10:56,051
+sort of average numbers, you know,
+
+155
+00:10:56,051 --> 00:10:59,882
+maybe, you know, 700, 900, then the market may continue to go sideways.
+
+156
+00:11:00,740 --> 00:11:02,796
+But what you're seeing here
+
+157
+00:11:02,796 --> 00:11:05,674
+is very strong positive deltas. You're seeing
+
+158
+00:11:05,674 --> 00:11:08,141
+2,000, 2,600, when earlier you're just seeing deltas
+
+159
+00:11:08,141 --> 00:11:09,374
+in the 700, 900 levels.
+
+160
+00:11:11,920 --> 00:11:15,580
+You know, buyers are really starting to overwhelm the sellers here.
+
+161
+00:11:15,580 --> 00:11:22,020
+Or, here's an example of a market that's selling off.
+
+162
+00:11:22,240 --> 00:11:32,020
+We've got some positive deltas here, you know, 2,000, 1,800. Here you have 1,900 in this third bar, then 2,000 again.
+
+163
+00:11:32,860 --> 00:11:33,911
+You know, so
+
+164
+00:11:33,911 --> 00:11:35,662
+it's, these deltas, you know,
+
+165
+00:11:35,662 --> 00:11:37,764
+they sort of mirror the other,
+
+166
+00:11:37,764 --> 00:11:39,515
+you know, previous deltas, you
+
+167
+00:11:39,515 --> 00:11:42,317
+know, more or less as you're going sideways.
+
+168
+00:11:42,320 --> 00:11:43,647
+But as you start
+
+169
+00:11:43,647 --> 00:11:45,638
+to break out, you know, of
+
+170
+00:11:45,638 --> 00:11:47,629
+this lower area of this green
+
+171
+00:11:47,629 --> 00:11:48,956
+bar, 1907, you know, you
+
+172
+00:11:48,956 --> 00:11:51,942
+hit it in this red bar, 1048, where you got 2,000.
+
+173
+00:11:53,220 --> 00:12:02,500
+You're seeing the deltas still remaining very strong, you know, 3,000, 2,000, 3,000, as the market sells off.
+
+174
+00:12:03,520 --> 00:12:08,000
+You're seeing, in this case, this is where the sellers are taking control of the market.
+
+175
+00:12:08,000 --> 00:12:08,884
+You know, the
+
+176
+00:12:08,884 --> 00:12:10,063
+deltas, oftentimes, well, so,
+
+177
+00:12:10,063 --> 00:12:11,537
+you know, they'll go positive,
+
+178
+00:12:11,537 --> 00:12:13,011
+you know, you'll get one
+
+179
+00:12:13,011 --> 00:12:15,959
+or two positive, one or two negative, back and forth.
+
+180
+00:12:16,080 --> 00:12:18,868
+But when you're starting to string together a
+
+181
+00:12:18,868 --> 00:12:20,959
+series of negative deltas, look for
+
+182
+00:12:20,959 --> 00:12:23,399
+the market to start to sell off.
+
+183
+00:12:23,480 --> 00:12:25,043
+If you're stringing it
+
+184
+00:12:25,043 --> 00:12:27,388
+together a series of positive deltas,
+
+185
+00:12:27,388 --> 00:12:29,342
+you know, look for the
+
+186
+00:12:29,342 --> 00:12:32,859
+market to start to, you know, start to rally.
+
+187
+00:12:35,160 --> 00:12:38,040
+So what drives price movements in the market?
+
+188
+00:12:38,040 --> 00:12:40,020
+Well, it's the differences of opinion.
+
+189
+00:12:40,300 --> 00:12:43,030
+When a market is trading as per normal, that equilibrium,
+
+190
+00:12:43,030 --> 00:12:44,395
+so to speak, the deltas
+
+191
+00:12:44,395 --> 00:12:46,579
+should be relatively low or not changing much.
+
+192
+00:12:46,700 --> 00:12:49,780
+Supply and demand at that point is about equal.
+
+193
+00:12:50,920 --> 00:12:56,420
+The problem is no one knows where this level of equilibrium is. It constantly changes.
+
+194
+00:12:57,280 --> 00:13:00,480
+Delta attracts a difference of opinion and, more importantly, how it's changing.
+
+195
+00:13:00,640 --> 00:13:03,380
+Delta shows you exactly how strong buyers or sellers are.
+
+196
+00:13:03,920 --> 00:13:10,400
+Delta shows you when the market is calm and the market is facilitating trade, which is its main purpose.
+
+197
+00:13:10,400 --> 00:13:20,920
+So, for example, this is a chart of the E-minis.
+
+198
+00:13:23,960 --> 00:13:32,460
+And so in this chart of the E-S, you'll see the market has been rallying, going up, up, up.
+
+199
+00:13:32,900 --> 00:13:35,200
+We hit a high up here in this bar at 1043.
+
+200
+00:13:35,400 --> 00:13:39,760
+It's got a small negative delta following a bar with a big positive delta.
+
+201
+00:13:39,760 --> 00:13:45,380
+And then it sort of goes sideways. The market goes sideways over the next few bars.
+
+202
+00:13:45,920 --> 00:13:50,620
+We have this bar at the high with a delta of minus 92.
+
+203
+00:13:50,980 --> 00:13:53,500
+The bar follows it with a delta of minus 49.
+
+204
+00:13:54,100 --> 00:13:56,680
+Then the next bar is minus 275.
+
+205
+00:13:56,820 --> 00:14:00,360
+The next bar is positive 174 and a positive 187.
+
+206
+00:14:01,540 --> 00:14:06,280
+And over here at 1051, you've got a delta of minus 612.
+
+207
+00:14:06,280 --> 00:14:09,640
+So, you've got to take into account what's happening.
+
+208
+00:14:09,820 --> 00:14:10,900
+Think about what just happened.
+
+209
+00:14:11,120 --> 00:14:12,140
+The market is going up.
+
+210
+00:14:13,160 --> 00:14:14,820
+And then it goes sideways.
+
+211
+00:14:15,080 --> 00:14:25,120
+And as it's going sideways, the deltas are fairly small. You know, minus 90, minus 50, minus 200, plus 170, plus 187.
+
+212
+00:14:26,300 --> 00:14:29,500
+And why is it? The market's not going anywhere. It's going sideways.
+
+213
+00:14:29,720 --> 00:14:34,840
+What this is telling you, these small deltas, is that the buying and selling is evenly distributed.
+
+214
+00:14:35,020 --> 00:14:35,840
+And why is that important?
+
+215
+00:14:35,840 --> 00:14:37,860
+Well, we're at a high.
+
+216
+00:14:38,180 --> 00:14:42,364
+If the market's going to continue going high, you want to see
+
+217
+00:14:42,364 --> 00:14:45,153
+strong, positive deltas, not evenly distributed deltas where
+
+218
+00:14:45,153 --> 00:14:48,639
+the buying and selling is matched for the most part.
+
+219
+00:14:49,100 --> 00:14:53,802
+When you start moving out of this range, this area, you see
+
+220
+00:14:53,802 --> 00:14:56,545
+the deltas start getting bigger, minus 600. Then,
+
+221
+00:14:56,545 --> 00:15:00,463
+you know, at 1052, it's minus 2336. You've got a selling imbalance.
+
+222
+00:15:02,240 --> 00:15:05,790
+You can see now that the sellers have
+
+223
+00:15:05,790 --> 00:15:11,559
+taken over. They've overrun the buyers. And the market just sold right off.
+
+224
+00:15:11,960 --> 00:15:14,790
+You know, this area up here where it's just going
+
+225
+00:15:14,790 --> 00:15:17,620
+sideways, you know, is, you know, some people can call
+
+226
+00:15:17,620 --> 00:15:23,280
+that, like to call that absorption, where buying and selling is evenly matched. And the market is basically going sideways.
+
+227
+00:15:28,050 --> 00:15:31,055
+So one of the main reasons so many traders lose money or fail at
+
+228
+00:15:31,055 --> 00:15:35,349
+trading is because they come into the market thinking all you have to do is buy low and sell high.
+
+229
+00:15:35,350 --> 00:15:39,937
+Oftentimes, they are buying only to have the market keep dropping after
+
+230
+00:15:39,937 --> 00:15:45,289
+they have bought or sold and the market keeps on going higher against them.
+
+231
+00:15:45,730 --> 00:15:50,090
+I mean, you know, in theory, it's simple. I'll just buy low and sell high.
+
+232
+00:15:50,190 --> 00:15:53,990
+But how often have you bought and then the market just keeps dropping?
+
+233
+00:15:53,990 --> 00:15:56,888
+Or how often times have you sold thinking this is the high
+
+234
+00:15:56,888 --> 00:16:00,269
+or the end of a move and the market just keeps going against you?
+
+235
+00:16:01,270 --> 00:16:04,495
+What successful traders do is buy when the market is showing strength
+
+236
+00:16:04,495 --> 00:16:06,645
+and sell when the market is weak. The
+
+237
+00:16:06,645 --> 00:16:10,408
+successful traders buy high and sell higher or they sell low and buy lower.
+
+238
+00:16:10,410 --> 00:16:12,430
+You have to think like a mercenary.
+
+239
+00:16:12,770 --> 00:16:14,530
+Yeah, I know that sounds cliche, but, you
+
+240
+00:16:14,530 --> 00:16:16,290
+know, you want to fight on the side
+
+241
+00:16:16,290 --> 00:16:18,050
+that is winning. You don't want to waste
+
+242
+00:16:18,050 --> 00:16:22,230
+your time trying to fight a losing battle, trying to pick highs and lows, trying to gain some glory.
+
+243
+00:16:22,610 --> 00:16:26,310
+You know, if you can see by the order flow
+
+244
+00:16:26,310 --> 00:16:30,010
+that, you know, the market is starting to show some
+
+245
+00:16:30,010 --> 00:16:39,630
+strength in the form of buying or show weakness in the fact that buying has dried up, you know, that's the way you want to go.
+
+246
+00:16:40,410 --> 00:16:42,532
+You know, you don't want to sell it just because we made
+
+247
+00:16:42,532 --> 00:16:44,654
+a new high or you don't want to buy just because you
+
+248
+00:16:44,654 --> 00:16:47,129
+made a new low, thinking, you know, this is going to be the bottom.
+
+249
+00:16:47,590 --> 00:16:48,921
+You just wait, you know, wait
+
+250
+00:16:48,921 --> 00:16:50,252
+for the opportunity, wait for the
+
+251
+00:16:50,252 --> 00:16:52,249
+market to tell you what it's going to do.
+
+252
+00:16:52,590 --> 00:16:56,470
+You know, most of the time, the market isn't going to be telling you anything.
+
+253
+00:16:56,630 --> 00:16:59,884
+It's just going to be doing what it does and
+
+254
+00:16:59,884 --> 00:17:02,487
+trading, you know, facilitating the buying and selling
+
+255
+00:17:02,487 --> 00:17:07,368
+of market and, you know, the transfer of goods from one hand to the other.
+
+256
+00:17:07,369 --> 00:17:10,796
+But there's going to be times when it's very, very obvious and
+
+257
+00:17:10,796 --> 00:17:14,509
+you can see that in the order flow and especially in the delta.
+
+258
+00:17:17,290 --> 00:17:19,970
+So, you know, here's a chart of crude oil, right?
+
+259
+00:17:20,069 --> 00:17:28,130
+And as you're going down, you know, you're seeing the delta's strongly negative, you know, minus 190, minus 299, minus 495.
+
+260
+00:17:28,470 --> 00:17:32,590
+That's what you want to see when the market is showing strength on a move to the downside.
+
+261
+00:17:32,590 --> 00:17:34,916
+The market sort of goes sideways. You can
+
+262
+00:17:34,916 --> 00:17:36,951
+see the delta's, you know, minus 100, plus
+
+263
+00:17:36,951 --> 00:17:38,986
+40, minus 49, minus 53 as the market goes sideways.
+
+264
+00:17:40,750 --> 00:17:43,690
+You know, think about what just happened.
+
+265
+00:17:43,770 --> 00:17:45,122
+We sold off, so, you know,
+
+266
+00:17:45,122 --> 00:17:46,924
+there could be some profit taking coming in
+
+267
+00:17:46,924 --> 00:17:48,276
+there, you know, to sort of
+
+268
+00:17:48,276 --> 00:17:50,529
+meet with the selling, you know, people covering their shorts.
+
+269
+00:17:51,090 --> 00:17:54,970
+Then, you know, once those buyers are done, you know, the market continues down.
+
+270
+00:17:54,970 --> 00:18:02,570
+And you can see, again, the delta's picking up strength, minus 226, minus 303, minus 287 as the market moves down.
+
+271
+00:18:06,400 --> 00:18:10,560
+Okay, this is an E-mini chart. And for the most part, the market's going sideways.
+
+272
+00:18:10,820 --> 00:18:17,000
+And what do you have? You've got relatively small deltas, 168, 200, 60, 95.
+
+273
+00:18:17,000 --> 00:18:21,245
+I mean, you're going to get, you know, you get a few
+
+274
+00:18:21,245 --> 00:18:23,367
+in here with some, you know,
+
+275
+00:18:23,367 --> 00:18:26,197
+decent numbers, 411, 693, 400. The market is just going sideways.
+
+276
+00:18:27,880 --> 00:18:32,520
+You know, just when it goes sideways, it's not always just going to be, you know, small numbers.
+
+277
+00:18:33,300 --> 00:18:36,138
+You know, you're going to get some where people try
+
+278
+00:18:36,138 --> 00:18:40,679
+to push it down or push it up. But there's no follow-through in the next bar.
+
+279
+00:18:41,280 --> 00:18:44,420
+It's, you know, the market is telling you that it's going sideways.
+
+280
+00:18:44,420 --> 00:18:49,124
+It's when you start breaking out and start stringing together strong deltas
+
+281
+00:18:49,124 --> 00:18:53,044
+in one direction. Like here, you've got minus 400, minus 500, minus 1,400.
+
+282
+00:18:54,700 --> 00:18:57,500
+And right as the market starts to sell off, that's,
+
+283
+00:18:57,500 --> 00:19:02,540
+you know, this is the sign in the market that you're looking to see on a regular basis.
+
+284
+00:19:02,540 --> 00:19:05,060
+And it does appear every day in almost every market.
+
+285
+00:19:06,020 --> 00:19:08,461
+You know, here, you know, earlier, you've got
+
+286
+00:19:08,461 --> 00:19:09,987
+minus 411 delta. But then immediately
+
+287
+00:19:09,987 --> 00:19:12,733
+in the next bar, you've got a positive delta.
+
+288
+00:19:13,040 --> 00:19:15,425
+Well, you know, if this selling is going
+
+289
+00:19:15,425 --> 00:19:17,214
+to continue, you're going to be
+
+290
+00:19:17,214 --> 00:19:19,599
+looking for, you know, a strong negative delta.
+
+291
+00:19:19,760 --> 00:19:24,160
+Then again, you know, minus 693, you're thinking, hey, this could be the start of it.
+
+292
+00:19:24,420 --> 00:19:25,840
+But what happens in the next bar?
+
+293
+00:19:26,440 --> 00:19:31,140
+You know, you get a small positive delta. Then it starts to reappear shortly thereafter.
+
+294
+00:19:31,140 --> 00:19:32,670
+But, you know, at this time,
+
+295
+00:19:32,670 --> 00:19:34,200
+you know, as you get it
+
+296
+00:19:34,200 --> 00:19:35,730
+short, you know, depending on how
+
+297
+00:19:35,730 --> 00:19:37,260
+tight your stop is, maybe you
+
+298
+00:19:37,260 --> 00:19:38,280
+get stopped out or,
+
+299
+00:19:38,280 --> 00:19:43,637
+you know, take a small, you know, a small loss or, you know, scratch it and think you've got to reassess.
+
+300
+00:19:44,080 --> 00:19:45,721
+But then, you know, the next
+
+301
+00:19:45,721 --> 00:19:47,362
+couple bars, it's really clear to
+
+302
+00:19:47,362 --> 00:19:50,918
+you that, hey, the sell off, you want to get in on it.
+
+303
+00:19:50,920 --> 00:19:59,260
+Okay, and again, this is the bond chart. And what do you have here?
+
+304
+00:20:00,060 --> 00:20:04,320
+You've got, you know, a market going sideways. It's not showing the deltas here.
+
+305
+00:20:04,380 --> 00:20:09,580
+But, you know, you've got minus 200, minus 400, minus 500. The market's not going down.
+
+306
+00:20:10,020 --> 00:20:11,981
+You know, you've got three strong,
+
+307
+00:20:11,981 --> 00:20:13,288
+fairly strong negative deltas.
+
+308
+00:20:13,288 --> 00:20:14,922
+You know, they're increasing in
+
+309
+00:20:14,922 --> 00:20:17,537
+size. But why isn't the market going down?
+
+310
+00:20:18,420 --> 00:20:22,700
+In this bar at 824, you've got a positive delta of 85, okay?
+
+311
+00:20:22,740 --> 00:20:25,260
+It's not the biggest positive delta,
+
+312
+00:20:25,260 --> 00:20:27,780
+thinking that the, you know, supply
+
+313
+00:20:27,780 --> 00:20:30,300
+and demand has shifted. But, you
+
+314
+00:20:30,300 --> 00:20:35,340
+know, it's a sign. It's telling you, hey, there's buying in here.
+
+315
+00:20:35,500 --> 00:20:37,277
+You know, it's kind of disguised
+
+316
+00:20:37,277 --> 00:20:39,054
+with the small delta, you know,
+
+317
+00:20:39,054 --> 00:20:40,831
+but you can see it in
+
+318
+00:20:40,831 --> 00:20:42,016
+there. You know, the
+
+319
+00:20:42,016 --> 00:20:44,978
+sellers were met with, you know, met with good buyers.
+
+320
+00:20:44,980 --> 00:20:46,738
+Then the next bar, you know,
+
+321
+00:20:46,738 --> 00:20:48,496
+again, it's a positive delta. It's
+
+322
+00:20:48,496 --> 00:20:51,719
+starting to build on this positive delta from the bar earlier.
+
+323
+00:20:52,480 --> 00:20:54,433
+You know, again, you see you
+
+324
+00:20:54,433 --> 00:20:56,386
+have these three bars here with,
+
+325
+00:20:56,386 --> 00:20:58,014
+you know, negative delta that's
+
+326
+00:20:58,014 --> 00:21:00,618
+growing. But why isn't the market going down?
+
+327
+00:21:00,720 --> 00:21:06,240
+This is what you have to be asking yourself and noticing it when the market is trading.
+
+328
+00:21:06,760 --> 00:21:12,400
+You know, you can see here, this is really the shift, the change in demand.
+
+329
+00:21:12,400 --> 00:21:15,620
+You know, before there's a lot of supply. You know, it's being sold in there.
+
+330
+00:21:16,500 --> 00:21:17,940
+You know, it's met with buyers.
+
+331
+00:21:19,040 --> 00:21:21,980
+And here now you're starting to see the buyers take over from the sellers.
+
+332
+00:21:22,740 --> 00:21:24,837
+And, you know, you see 85, 149, 426, 1900 as
+
+333
+00:21:24,837 --> 00:21:30,081
+the market is pulling away from this area. I mean, that's what you're looking for.
+
+334
+00:21:31,560 --> 00:21:37,220
+You're looking for signs that the buying is, you know, the buyers have taken over from the sellers.
+
+335
+00:21:38,000 --> 00:21:42,100
+You know, here it was dominated by sellers. The market necessarily wasn't moving anywhere.
+
+336
+00:21:42,240 --> 00:21:45,980
+It wasn't going down when you're seeing these deltas. It's just hanging around.
+
+337
+00:21:46,060 --> 00:21:47,268
+You've got a small delta.
+
+338
+00:21:47,268 --> 00:21:48,476
+You know, a delta of
+
+339
+00:21:48,476 --> 00:21:51,858
+85 is fairly small. You know, it could be a difference of one trade, actually.
+
+340
+00:21:53,440 --> 00:21:55,420
+You know, for me, I tend to find
+
+341
+00:21:55,420 --> 00:21:57,400
+it kind of neutral when I see a
+
+342
+00:21:57,400 --> 00:22:03,340
+smaller delta number. It could easily have gone the other way had there been a little bit more volume in that bar to trade.
+
+343
+00:22:03,340 --> 00:22:09,340
+But nevertheless, you know, it's positive and it's starting to build on it in the next couple of bars.
+
+344
+00:22:09,940 --> 00:22:13,108
+And, you know, you see the big positive delta come
+
+345
+00:22:13,108 --> 00:22:17,543
+in here at 841, you know, as the market is really moving in that direction.
+
+346
+00:22:21,670 --> 00:22:25,610
+So when looking at delta, there are basically five scenarios when it comes to delta in a bar.
+
+347
+00:22:25,810 --> 00:22:27,700
+It could be extremely positive number
+
+348
+00:22:27,700 --> 00:22:30,220
+indicates aggressive buyers have dominated the bar. Buyers
+
+349
+00:22:30,220 --> 00:22:34,630
+are buying all the available supply offered by sellers and moving the market higher.
+
+350
+00:22:34,630 --> 00:22:41,590
+What I mean by extremely positive delta, usually it's something, you know, over 1,000 or more.
+
+351
+00:22:43,110 --> 00:22:45,839
+Average positive delta number would indicate aggressive buyers
+
+352
+00:22:45,839 --> 00:22:48,568
+outnumber the sellers, but not overwhelmingly. This can
+
+353
+00:22:48,568 --> 00:22:54,368
+be a sign of accumulation when a series of average positive delta bars are being put together.
+
+354
+00:22:55,690 --> 00:22:57,662
+You know, for example, it depends
+
+355
+00:22:57,662 --> 00:22:59,634
+on. You should know what sort
+
+356
+00:22:59,634 --> 00:23:03,908
+of deltas you'll see in your normal market, depending on what you trade.
+
+357
+00:23:04,630 --> 00:23:16,570
+You know, for the E-minis, usually when you see deltas over 5,000 or 6,000, you know, that's an extremely positive delta number.
+
+358
+00:23:17,070 --> 00:23:19,688
+When you see things, you know, delta is
+
+359
+00:23:19,688 --> 00:23:21,324
+around 1,000, you know, 900, 1,000, anywhere between
+
+360
+00:23:21,324 --> 00:23:28,852
+500 and 1,500. It's kind of an average positive delta number. It's just telling you there was slightly more buying than selling in the bar.
+
+361
+00:23:31,390 --> 00:23:33,955
+A small or negative delta number that's close
+
+362
+00:23:33,955 --> 00:23:35,878
+to zero indicates aggressive buyers and
+
+363
+00:23:35,878 --> 00:23:41,649
+sellers are pretty much evenly matched. Prices at equilibrium, both buyers and sellers are happy to trade at.
+
+364
+00:23:41,650 --> 00:23:44,320
+You know, what I consider that is,
+
+365
+00:23:44,320 --> 00:23:46,609
+you know, a number less than 100,
+
+366
+00:23:46,609 --> 00:23:51,187
+either positive or negative, because, you know, as I said, it's rare.
+
+367
+00:23:51,770 --> 00:23:54,672
+You do get zero deltas in a bar
+
+368
+00:23:54,672 --> 00:23:57,212
+where it's perfectly matched, but, you know,
+
+369
+00:23:57,212 --> 00:24:00,840
+sometimes you're going to get a delta of 6 or 30 or 87.
+
+370
+00:24:01,930 --> 00:24:04,137
+You know, especially when the bar has,
+
+371
+00:24:04,137 --> 00:24:06,344
+you know, a total volume of, say, 8,000
+
+372
+00:24:06,344 --> 00:24:09,497
+lots that trade in and the delta is, you know, 70.
+
+373
+00:24:10,770 --> 00:24:15,750
+You know, it's telling you that, you know, the buying and selling is evenly matched.
+
+374
+00:24:16,510 --> 00:24:18,780
+You know, I tend to take it, whether
+
+375
+00:24:18,780 --> 00:24:20,766
+it's positive or negative, in the same
+
+376
+00:24:20,766 --> 00:24:23,888
+light, you know, sort of treat it as a neutral delta.
+
+377
+00:24:23,890 --> 00:24:31,170
+So, an average negative delta number indicates aggressive sellers outnumber the aggressive buyers.
+
+378
+00:24:31,570 --> 00:24:36,310
+Not overwhelmingly, you know, it can be a sign of steady reduction of position or shorts building up.
+
+379
+00:24:36,710 --> 00:24:39,162
+An average negative delta number would be
+
+380
+00:24:39,162 --> 00:24:41,614
+something, you know, minus 500 to, you know,
+
+381
+00:24:41,614 --> 00:24:45,467
+minus 1,500, just as an average positive delta would be around 500 to 1,500.
+
+382
+00:24:47,790 --> 00:24:51,136
+An extremely negative delta number indicates aggressive sellers have dominated
+
+383
+00:24:51,136 --> 00:24:53,813
+the bar. Our sellers are basically hitting every
+
+384
+00:24:53,813 --> 00:24:57,829
+bid as they dump their excess supply in expectation of lower prices.
+
+385
+00:24:58,530 --> 00:25:00,992
+An extremely negative delta, to me, would be,
+
+386
+00:25:00,992 --> 00:25:03,146
+you know, something along the lines of,
+
+387
+00:25:03,146 --> 00:25:04,992
+you know, minus 4,000, minus 5,000 and above.
+
+388
+00:25:06,230 --> 00:25:08,410
+You know, that's fairly obvious.
+
+389
+00:25:08,550 --> 00:25:14,470
+You know, everyone's rushing in to sell as much as they can in expectation that the market is going lower.
+
+390
+00:25:15,570 --> 00:25:18,770
+You know, just a quick couple points, three points.
+
+391
+00:25:18,910 --> 00:25:20,890
+Actually, delta does not take into account price.
+
+392
+00:25:20,890 --> 00:25:23,078
+It doesn't, you know, you don't even,
+
+393
+00:25:23,078 --> 00:25:25,579
+when you're looking at delta, you're not really
+
+394
+00:25:25,579 --> 00:25:28,080
+concerned about the price of the market where
+
+395
+00:25:28,080 --> 00:25:33,708
+it's trading at. Really, all you're concerned about is the net difference between the buyers and the sellers.
+
+396
+00:25:34,590 --> 00:25:38,010
+When the delta is negative and price is going up, be careful.
+
+397
+00:25:38,870 --> 00:25:43,270
+Why is price going up while the delta is negative?
+
+398
+00:25:43,270 --> 00:25:45,790
+Well, it could be a couple of things.
+
+399
+00:25:46,630 --> 00:25:48,915
+The main one is it could be support
+
+400
+00:25:48,915 --> 00:25:50,915
+in the market and, you know, people
+
+401
+00:25:50,915 --> 00:25:54,629
+are trying to push the market down and they're basically hitting the bids.
+
+402
+00:25:54,630 --> 00:25:57,535
+But there could be somebody in there with
+
+403
+00:25:57,535 --> 00:26:00,077
+a lot of, you know, a lot
+
+404
+00:26:00,077 --> 00:26:02,619
+of demand, a big passive buyer that,
+
+405
+00:26:02,619 --> 00:26:08,067
+you know, they're basically willing to buy as much as people are willing to sell.
+
+406
+00:26:08,070 --> 00:26:10,211
+And then when those sellers are done,
+
+407
+00:26:10,211 --> 00:26:12,658
+you know, they've got no more bullets left,
+
+408
+00:26:12,658 --> 00:26:16,329
+so to speak, you know, the market will pop up a bit.
+
+409
+00:26:17,390 --> 00:26:19,010
+And, you know, the opposite is true.
+
+410
+00:26:19,070 --> 00:26:23,170
+When delta is positive and price is going down, again, be careful.
+
+411
+00:26:23,690 --> 00:26:25,901
+You know, when delta is positive, you have
+
+412
+00:26:25,901 --> 00:26:27,836
+more buying than selling. So if price
+
+413
+00:26:27,836 --> 00:26:31,429
+is going down, you know, it shouldn't be. It should be going up.
+
+414
+00:26:31,430 --> 00:26:34,408
+You know, and just to, you know,
+
+415
+00:26:34,408 --> 00:26:37,812
+further example, now this is the chart we
+
+416
+00:26:37,812 --> 00:26:43,769
+had earlier, it looks like. And actually, no, this is a slightly different one.
+
+417
+00:26:43,810 --> 00:26:44,550
+This is crude oil.
+
+418
+00:26:44,890 --> 00:26:46,570
+And what's happening?
+
+419
+00:26:46,710 --> 00:26:50,250
+We're going up, up, up, and you've got negative deltas all on the way up.
+
+420
+00:26:51,710 --> 00:26:52,690
+Well, why?
+
+421
+00:26:52,690 --> 00:26:55,330
+You know, if you're going up, you should have positive deltas.
+
+422
+00:26:55,890 --> 00:26:58,330
+One, it's usually a function that, you know,
+
+423
+00:26:58,330 --> 00:27:00,465
+there's offers on the way up that
+
+424
+00:27:00,465 --> 00:27:03,210
+people are buying in expectation of the move higher.
+
+425
+00:27:03,790 --> 00:27:09,190
+Well, what they're doing, basically, they're buying the available supply.
+
+426
+00:27:09,530 --> 00:27:15,570
+At some point when, you know, those buyers have bought all that they need, what's going to happen?
+
+427
+00:27:15,570 --> 00:27:19,730
+You know, it's not like the market is just going to keep going up and up and up, you know.
+
+428
+00:27:19,730 --> 00:27:21,674
+Now, if, you know, the sellers
+
+429
+00:27:21,674 --> 00:27:24,266
+are going to come in and start hitting
+
+430
+00:27:24,266 --> 00:27:26,210
+the bids on the way up,
+
+431
+00:27:26,210 --> 00:27:30,422
+you know, as people are bidding, you know, here you have, you know, 392, 323.
+
+432
+00:27:31,290 --> 00:27:36,770
+You're seeing, you know, on the bid side, big, strong bids, you know, 369, 420.
+
+433
+00:27:36,870 --> 00:27:37,970
+Someone is supporting the market.
+
+434
+00:27:38,190 --> 00:27:40,130
+People are trying to sell it to move it lower.
+
+435
+00:27:40,670 --> 00:27:45,370
+But, you know, whoever's bidding, it just keeps moving, you know, going slightly higher, higher, higher.
+
+436
+00:27:45,370 --> 00:27:47,755
+And, you know, eventually, you know,
+
+437
+00:27:47,755 --> 00:27:50,140
+these buyers, once they buy their,
+
+438
+00:27:50,140 --> 00:27:52,525
+you know, buy what they need
+
+439
+00:27:52,525 --> 00:27:58,090
+to buy, what happens? You know, they're no longer there to support the market.
+
+440
+00:27:58,230 --> 00:28:02,170
+And then the sellers are going to come in and really start to move the market lower.
+
+441
+00:28:04,340 --> 00:28:12,560
+You know, you see here on the way up, right, you got bid sides of, you know, 286, 390, 320, 369, 420.
+
+442
+00:28:12,560 --> 00:28:17,240
+On the way down, you know, where are these buyers that were here earlier?
+
+443
+00:28:17,860 --> 00:28:22,240
+You know, there's nothing more than, you know, here's 277, 229.
+
+444
+00:28:22,480 --> 00:28:25,312
+But as it moves down, it moves down on much
+
+445
+00:28:25,312 --> 00:28:27,011
+lesser volume than what you were
+
+446
+00:28:27,011 --> 00:28:29,559
+seeing, you know, bidding it on the way up.
+
+447
+00:28:30,480 --> 00:28:34,260
+You can see the deltas are, as I said, you're going higher and you're getting negative deltas.
+
+448
+00:28:34,680 --> 00:28:38,860
+So, obviously, there's, you know, there's people that are selling it and people that are buying it.
+
+449
+00:28:39,160 --> 00:28:41,520
+You know, they're working the bids and people are selling into the bids.
+
+450
+00:28:41,520 --> 00:28:44,020
+But what's going to happen as you're up near the high?
+
+451
+00:28:44,140 --> 00:28:47,140
+Eventually, you know, these people that are buying
+
+452
+00:28:47,140 --> 00:28:49,765
+it, that are supporting the market that
+
+453
+00:28:49,765 --> 00:28:51,640
+people are selling into, you
+
+454
+00:28:51,640 --> 00:28:56,140
+got to watch, you know, when, you know, they're building their position.
+
+455
+00:28:56,260 --> 00:28:58,213
+Once their position is built, you
+
+456
+00:28:58,213 --> 00:29:00,166
+know, and they've got enough for
+
+457
+00:29:00,166 --> 00:29:02,119
+their portfolio, you know, they're not
+
+458
+00:29:02,119 --> 00:29:04,398
+necessarily going to be buying it anymore.
+
+459
+00:29:04,400 --> 00:29:05,896
+And then the market, you
+
+460
+00:29:05,896 --> 00:29:07,990
+know, you'll see a shift where, as
+
+461
+00:29:07,990 --> 00:29:09,785
+you start to move lower, you
+
+462
+00:29:09,785 --> 00:29:11,879
+know, people are selling into the bid.
+
+463
+00:29:11,980 --> 00:29:13,000
+Sellers are taking over.
+
+464
+00:29:14,180 --> 00:29:15,870
+But there's not much left in the bid
+
+465
+00:29:15,870 --> 00:29:17,137
+side to really support the market
+
+466
+00:29:17,137 --> 00:29:19,038
+as you are getting it on the way up.
+
+467
+00:29:24,340 --> 00:29:30,160
+So, you know, understanding delta in relationship to where the market is trading can clue you into the possible reversals.
+
+468
+00:29:30,160 --> 00:29:34,940
+When a market is hanging around the high, delta should be mostly positive.
+
+469
+00:29:35,320 --> 00:29:38,600
+When a market is hanging around the low, delta should be mostly negative.
+
+470
+00:29:39,120 --> 00:29:42,460
+When a market starts to move away from a higher low, delta can tip you off.
+
+471
+00:29:42,460 --> 00:29:47,220
+Okay, for example, this is a Eurostox chart.
+
+472
+00:29:47,400 --> 00:29:49,040
+You know, we're coming down into a low.
+
+473
+00:29:49,720 --> 00:29:52,320
+You know, here you have a divergence, as this little arrow is.
+
+474
+00:29:52,840 --> 00:29:55,320
+But, you know, on the way down, you've got the negative deltas.
+
+475
+00:29:55,860 --> 00:29:59,100
+And you hit the low, and what happens? You see a positive delta.
+
+476
+00:29:59,620 --> 00:30:03,800
+You know, that's what's telling you you've got a divergence, is a new low and a positive delta.
+
+477
+00:30:04,960 --> 00:30:06,700
+You know, at a low, you should have a negative delta.
+
+478
+00:30:06,700 --> 00:30:09,115
+But then you start building up some more positive deltas
+
+479
+00:30:09,115 --> 00:30:10,805
+over the next two or three bars,
+
+480
+00:30:10,805 --> 00:30:12,978
+and the market starts moving away from the low.
+
+481
+00:30:13,260 --> 00:30:16,240
+This is what you're looking for as far as a reversal.
+
+482
+00:30:16,740 --> 00:30:18,179
+You know, you're looking for,
+
+483
+00:30:18,179 --> 00:30:20,193
+you know, the low to be set,
+
+484
+00:30:20,193 --> 00:30:23,359
+and you're looking for it to move away with positive deltas.
+
+485
+00:30:23,460 --> 00:30:27,740
+You don't want to see more negative deltas coming in, more selling coming into the market.
+
+486
+00:30:30,310 --> 00:30:34,090
+You know, and the reverse is true if you're going, you know, on your way up, right?
+
+487
+00:30:34,130 --> 00:30:36,210
+You've got positive deltas on the way up.
+
+488
+00:30:36,330 --> 00:30:37,656
+You hit the high, you've
+
+489
+00:30:37,656 --> 00:30:39,512
+got a divergence, you've got a negative
+
+490
+00:30:39,512 --> 00:30:41,633
+delta, and you've got the next bar after
+
+491
+00:30:41,633 --> 00:30:43,489
+the high is negative delta, and the
+
+492
+00:30:43,489 --> 00:30:47,467
+next bar after that is also negative delta, and you're moving away from the high.
+
+493
+00:30:48,230 --> 00:30:49,789
+You know, when you come up to
+
+494
+00:30:49,789 --> 00:30:53,129
+a high and you start putting in negative deltas, expect the market to sell off.
+
+495
+00:30:53,190 --> 00:30:58,550
+People are taking this as the high, and, you know, they're reacting, and they're starting to sell at this level.
+
+496
+00:30:59,230 --> 00:31:02,070
+You know, they feel that this high is a good level to sell.
+
+497
+00:31:02,070 --> 00:31:06,738
+Now, another way to interpret deltas is when you have
+
+498
+00:31:06,738 --> 00:31:09,072
+massive delta numbers that are
+
+499
+00:31:09,072 --> 00:31:13,740
+either positive or negative, they're just so big, you know,
+
+500
+00:31:13,800 --> 00:31:19,700
+you find yourself saying, wow, you know, it could tip you off to a short-term trend in that direction.
+
+501
+00:31:20,660 --> 00:31:21,989
+You know, for example,
+
+502
+00:31:21,989 --> 00:31:23,650
+you know, in a market
+
+503
+00:31:23,650 --> 00:31:25,311
+that's trading, you know, relatively
+
+504
+00:31:25,311 --> 00:31:26,972
+small deltas, you know, a
+
+505
+00:31:26,972 --> 00:31:30,959
+couple hundred a side, like this is a crude oil chart, right?
+
+506
+00:31:30,960 --> 00:31:38,640
+Most of the deltas, you see, you know, 200, 100, 189, 297, 267, you know, 500, 400 is pushing it.
+
+507
+00:31:38,820 --> 00:31:40,920
+Here you've got a big negative delta minus 1,000.
+
+508
+00:31:41,460 --> 00:31:42,403
+You've got, you
+
+509
+00:31:42,403 --> 00:31:43,975
+know, selling and balance right
+
+510
+00:31:43,975 --> 00:31:45,547
+at that level. In that
+
+511
+00:31:45,547 --> 00:31:46,805
+bar, you know, 1,000 is
+
+512
+00:31:46,805 --> 00:31:48,377
+considered, you know, like a
+
+513
+00:31:48,377 --> 00:31:53,723
+wow level in the sense that, hey, wow, that's a lot. You know, don't miss this trade.
+
+514
+00:31:54,160 --> 00:31:54,944
+You know, there's
+
+515
+00:31:54,944 --> 00:31:56,252
+people looking to get short,
+
+516
+00:31:56,252 --> 00:31:57,560
+especially, you know, after the
+
+517
+00:31:57,560 --> 00:31:58,868
+high has been made, and
+
+518
+00:31:58,868 --> 00:32:03,838
+all of a sudden you've got bing, you know, a big negative delta, a lot of selling came in.
+
+519
+00:32:03,920 --> 00:32:05,063
+You know, you
+
+520
+00:32:05,063 --> 00:32:06,206
+see, you know, 454, 538,
+
+521
+00:32:06,206 --> 00:32:08,112
+you know, here, even in
+
+522
+00:32:08,112 --> 00:32:09,637
+the imbalance, you've got 165,
+
+523
+00:32:09,637 --> 00:32:14,212
+243. There's obviously a lot of selling coming in, reacting to this high.
+
+524
+00:32:16,100 --> 00:32:20,300
+You know, and the market sold off. You know, this is an E-mini chart.
+
+525
+00:32:20,880 --> 00:32:25,380
+You know, we're trading around, you know, this level, going a little bit sideways here.
+
+526
+00:32:25,380 --> 00:32:27,107
+Then all of a
+
+527
+00:32:27,107 --> 00:32:29,266
+sudden, you know, seeing what
+
+528
+00:32:29,266 --> 00:32:31,425
+I consider average delta numbers,
+
+529
+00:32:31,425 --> 00:32:32,288
+minus 1,300, minus 854,
+
+530
+00:32:32,288 --> 00:32:35,742
+then wham, you get hit with minus 5,000 delta.
+
+531
+00:32:37,500 --> 00:32:40,580
+You know, even to the next bar, it came in as minus 3,800.
+
+532
+00:32:40,800 --> 00:32:41,641
+But, you know,
+
+533
+00:32:41,641 --> 00:32:43,043
+when you see a bar
+
+534
+00:32:43,043 --> 00:32:44,445
+with very strong negative delta,
+
+535
+00:32:44,445 --> 00:32:45,847
+you know, it's markets tipping
+
+536
+00:32:45,847 --> 00:32:47,249
+you off that, hey, you
+
+537
+00:32:47,249 --> 00:32:53,979
+know, there's a lot of sellers, you know, that overwhelm these buyers that were sitting down here on the bid side in the bar.
+
+538
+00:32:55,340 --> 00:32:58,480
+And, you know, and the market, you know, had a little change.
+
+539
+00:32:58,600 --> 00:33:02,540
+You know, in this case, it was a continuation of the trend.
+
+540
+00:33:02,680 --> 00:33:04,550
+Oftentimes, you know, it's going to
+
+541
+00:33:04,550 --> 00:33:06,420
+be, you know, just like after
+
+542
+00:33:06,420 --> 00:33:08,290
+a bar with a negative delta,
+
+543
+00:33:08,290 --> 00:33:10,160
+you know, it's an average number.
+
+544
+00:33:10,260 --> 00:33:14,020
+And when you get the wow number, you know, a very big number in that direction.
+
+545
+00:33:14,020 --> 00:33:16,187
+There will be times where you
+
+546
+00:33:16,187 --> 00:33:18,354
+have, you know, say a bar,
+
+547
+00:33:18,354 --> 00:33:20,521
+you know, like, you know, you
+
+548
+00:33:20,521 --> 00:33:22,688
+get a negative delta, then a
+
+549
+00:33:22,688 --> 00:33:24,855
+big positive delta, you know, look
+
+550
+00:33:24,855 --> 00:33:31,357
+for a little bit of follow-through, you know, or in the direction that the delta is telling you.
+
+551
+00:33:31,400 --> 00:33:33,053
+In this case, it's telling you there's a
+
+552
+00:33:33,053 --> 00:33:34,293
+lot of selling coming in, you
+
+553
+00:33:34,293 --> 00:33:36,359
+know, that your direction should be looking to go lower.
+
+554
+00:33:37,600 --> 00:33:40,337
+You know, when you're coming to this bar
+
+555
+00:33:40,337 --> 00:33:42,732
+right here with positive delta of 1,600, on
+
+556
+00:33:42,732 --> 00:33:44,785
+the back of minus 5,000, minus 3,800, you
+
+557
+00:33:44,785 --> 00:33:46,496
+know, this is almost 10,000 negative
+
+558
+00:33:46,496 --> 00:33:54,367
+delta, and you've got this bar here with 1,600, you know, it's going to take a lot to really move the market back up,
+
+559
+00:33:56,460 --> 00:33:57,930
+you know, so it's one of
+
+560
+00:33:57,930 --> 00:33:59,400
+those things where, you know, you
+
+561
+00:33:59,400 --> 00:34:00,870
+have these two bars with big,
+
+562
+00:34:00,870 --> 00:34:02,340
+strong negative delta, and you see,
+
+563
+00:34:02,340 --> 00:34:03,810
+you know, a bar come in
+
+564
+00:34:03,810 --> 00:34:07,240
+that looks like, hey, you know, maybe we're going to start to move away.
+
+565
+00:34:07,340 --> 00:34:08,260
+Well, not necessarily.
+
+566
+00:34:08,260 --> 00:34:13,420
+Really, you've got these big negative bars, you know, the big negative delta bars here.
+
+567
+00:34:14,040 --> 00:34:15,885
+You know, if anything, I'd expect
+
+568
+00:34:15,885 --> 00:34:17,730
+the market to go sideways first,
+
+569
+00:34:17,730 --> 00:34:19,575
+you know, to a little bit
+
+570
+00:34:19,575 --> 00:34:22,958
+lower, then necessarily start to move higher immediately after the selling.
+
+571
+00:34:23,300 --> 00:34:28,600
+Because, you know, these people that we're selling here, they may very well reappear slightly later,
+
+572
+00:34:28,600 --> 00:34:32,040
+even though you have this one bar with a positive delta.
+
+573
+00:34:32,760 --> 00:34:36,360
+You know, so, you know, like I said, take everything into context with what's happening in the market.
+
+574
+00:34:36,360 --> 00:34:44,170
+So, small delta numbers, both positive and negative, indicate the market is balanced.
+
+575
+00:34:44,370 --> 00:34:47,909
+It's trading at a level where both buyers and sellers are happy
+
+576
+00:34:47,909 --> 00:34:50,268
+with the price that is being traded, and
+
+577
+00:34:50,268 --> 00:34:51,447
+trade is being facilitated.
+
+578
+00:34:51,690 --> 00:34:54,489
+The market is doing what, you know, the market is supposed to do.
+
+579
+00:34:54,969 --> 00:34:58,169
+Small delta numbers, when strung together, are often a sign
+
+580
+00:34:58,169 --> 00:35:00,729
+of absorption. More importantly, for me, it's a
+
+581
+00:35:00,729 --> 00:35:02,649
+sign of sideways trading or congestion.
+
+582
+00:35:02,650 --> 00:35:05,426
+What you want to do is you want to look
+
+583
+00:35:05,426 --> 00:35:07,646
+when you have a series of small delta
+
+584
+00:35:07,646 --> 00:35:09,589
+numbers, then the market starts to move.
+
+585
+00:35:10,070 --> 00:35:12,270
+Watch the direction of the deltas.
+
+586
+00:35:13,250 --> 00:35:16,670
+You know, so here's a case where, you know, you're going up, up, up, up.
+
+587
+00:35:16,730 --> 00:35:17,690
+This is the E-minis.
+
+588
+00:35:18,190 --> 00:35:21,730
+You know, positive delta, 2,000. Positive delta, 1,700.
+
+589
+00:35:22,030 --> 00:35:22,790
+Then you hit the high.
+
+590
+00:35:23,410 --> 00:35:24,707
+You got, you know,
+
+591
+00:35:24,707 --> 00:35:26,329
+2. Then the next, you know,
+
+592
+00:35:26,329 --> 00:35:28,600
+which is, you know, traded 17,000 contracts for
+
+593
+00:35:28,600 --> 00:35:31,195
+this bar, and it's got a delta of 2.
+
+594
+00:35:33,070 --> 00:35:36,050
+You know, what's that telling you the buying and selling is evenly matched?
+
+595
+00:35:36,450 --> 00:35:38,156
+To a lesser extent, the next
+
+596
+00:35:38,156 --> 00:35:39,862
+bar, you got a positive delta
+
+597
+00:35:39,862 --> 00:35:42,705
+of 228, which is, you know, kind of a small number.
+
+598
+00:35:43,190 --> 00:35:50,530
+You know, in the S&Ps, 200 lots, like I said, is one trade, maybe two trades very easily.
+
+599
+00:35:50,830 --> 00:35:53,470
+You know, that's a market that can trade 200, 300 in a clip.
+
+600
+00:35:54,470 --> 00:35:59,650
+Then the next bar, you got a delta of negative 18, which, again, is very small.
+
+601
+00:35:59,650 --> 00:36:02,897
+So, you know, see, what's happened is you
+
+602
+00:36:02,897 --> 00:36:06,144
+have these three bars with relatively flat delta.
+
+603
+00:36:06,144 --> 00:36:09,391
+I mean, you know, it is positive 228, but,
+
+604
+00:36:09,391 --> 00:36:13,450
+you know, you net all these together. You know, it's
+
+605
+00:36:13,450 --> 00:36:19,945
+over 17,000, 14,000, 6,000. You're talking close to 40,000 lots traded, you know, in this time period between 9.57 and 10 o'clock.
+
+606
+00:36:23,510 --> 00:36:28,130
+And, you know, your delta is only 200. You know, it's telling you the market is going sideways.
+
+607
+00:36:28,130 --> 00:36:30,450
+This is a level where, you know, people are happy to transact.
+
+608
+00:36:31,150 --> 00:36:32,516
+So what you want to do is
+
+609
+00:36:32,516 --> 00:36:35,249
+you want to watch as the market starts to move out of this area.
+
+610
+00:36:35,730 --> 00:36:38,430
+And what's happening? Is it going to go up or is it going to go down?
+
+611
+00:36:39,730 --> 00:36:42,930
+It starts coming out with strong negative delta, minus 1,800.
+
+612
+00:36:43,630 --> 00:36:45,155
+Then, again, you know, if you're
+
+613
+00:36:45,155 --> 00:36:47,442
+not yet convinced that this is the move, minus
+
+614
+00:36:47,442 --> 00:36:49,729
+2,000. And, okay, you know, so if you're not short
+
+615
+00:36:49,729 --> 00:36:55,574
+based on this bar, by this bar, you should really be looking to get short, you know, and then the market sells off.
+
+616
+00:36:56,470 --> 00:36:58,765
+So, you know, what's important is taking
+
+617
+00:36:58,765 --> 00:37:01,060
+the delta in context with how the
+
+618
+00:37:01,060 --> 00:37:05,650
+market's moving. You know, the delta should coincide with the direction of the market.
+
+619
+00:37:05,650 --> 00:37:08,004
+When it's not coinciding with the direction
+
+620
+00:37:08,004 --> 00:37:10,695
+of the market, that's when you should, you
+
+621
+00:37:10,695 --> 00:37:13,049
+know, question it. Well, not question it,
+
+622
+00:37:13,049 --> 00:37:18,767
+but rather, you know, take a closer look and try to understand why the market's not moving.
+
+623
+00:37:19,350 --> 00:37:22,825
+When a market is going sideways or delta is relatively
+
+624
+00:37:22,825 --> 00:37:25,605
+flat, look for the delta as a sign
+
+625
+00:37:25,605 --> 00:37:29,428
+to go in that direction when the market starts to move.
+
+626
+00:37:29,430 --> 00:37:34,310
+So, that's the end of lesson 10, delta in volume.
+
+627
+00:37:34,710 --> 00:37:37,688
+In the next lesson, I'll show you how
+
+628
+00:37:37,688 --> 00:37:40,666
+to see in-order flow price rejection, you know,
+
+629
+00:37:40,666 --> 00:37:47,368
+which is something you're not going to see in a normal candlestick chart or a normal bar chart.
+
+630
+00:37:47,730 --> 00:37:50,751
+That's the beauty of order flows is it
+
+631
+00:37:50,751 --> 00:37:53,772
+really gives you a new perspective on looking
+
+632
+00:37:53,772 --> 00:38:00,948
+at the markets rather than just looking at a bar and not understanding what's going on inside the bar.
+
+633
+00:38:01,050 --> 00:38:02,374
+You want to know, you
+
+634
+00:38:02,374 --> 00:38:04,227
+know, what's going on inside the bar
+
+635
+00:38:04,227 --> 00:38:06,345
+just like, you know, anything in life. You
+
+636
+00:38:06,345 --> 00:38:08,463
+know, if you like to cook, right, you
+
+637
+00:38:08,463 --> 00:38:16,407
+want to know when you see a dish, you want to know what goes into it. You know, you want to know the ingredients in the markets the same way.
+
+638
+00:38:16,410 --> 00:38:22,210
+So, thank you. That's the end of lesson 10 and lesson 11 will begin shortly.
+
+===== END AFTER_SEGMENT =====

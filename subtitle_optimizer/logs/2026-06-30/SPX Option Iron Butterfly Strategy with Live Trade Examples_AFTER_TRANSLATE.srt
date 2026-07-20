@@ -1,0 +1,4186 @@
+===== AFTER_TRANSLATE (837 entries) =====
+1
+00:00:00,100 --> 00:00:01,400
+大家好，我是Brian。
+What's going on guys, Brian here.
+
+2
+00:00:01,400 --> 00:00:05,900
+今天是2023年3月10日，星期五，市场已经收盘。
+Today is Friday, March 10th, 2023 and the market has closed.
+
+3
+00:00:06,000 --> 00:00:08,839
+如果你看过我最近关于为什么卖出波动率
+Now if you saw my most recent video on why selling volatility
+
+4
+00:00:08,839 --> 00:00:11,678
+可能帮你更好地交易期权的视频，
+might help you trade options better, I gave you guys a little
+
+5
+00:00:11,678 --> 00:00:15,699
+我给你们预览了一个我在标普500指数期权（SPX）上运行的铁蝶式策略。
+bit of a preview as to an iron butterfly in which I was running on the SPX.
+
+6
+00:00:16,000 --> 00:00:19,400
+今天我做了一个调整，稍后在视频中会详细讲解。
+I've made an adjustment here today and we'll get into that later in this video.
+
+7
+00:00:19,600 --> 00:00:22,227
+现在我们来看一下我当前的风险收益曲线，
+So we're taking a look at my current risk profile,
+
+8
+00:00:22,227 --> 00:00:24,854
+还有我最初开仓时的风险收益曲线，
+the profile when I first opened the spread, as well
+
+9
+00:00:24,854 --> 00:00:26,956
+以及开仓背后的一些逻辑，
+as some of the logic behind why it
+
+10
+00:00:26,956 --> 00:00:28,532
+为什么开仓、何时开仓，
+was opened, when it was opened,
+
+11
+00:00:28,532 --> 00:00:30,897
+还有这笔交易的整个生命周期。
+and then kind of the lifespan of the trade.
+
+12
+00:00:31,000 --> 00:00:34,000
+所以我们可以把这看作是这个头寸的一个案例研究。
+So we can think of this as a case study for this particular position.
+
+13
+00:00:35,100 --> 00:00:38,715
+铁蝶式策略属于所谓的收益型策略，
+Iron butterflies fall under the category of quote unquote income
+
+14
+00:00:38,715 --> 00:00:44,499
+或者收益价差策略，或者任何带有‘收益’字样的策略。
+based generating strategies or income spreads or anything of that sort with income in the title.
+
+15
+00:00:44,600 --> 00:00:47,750
+它被归类为‘收益型’的原因是，
+The reason it falls under this quote unquote income generating title is
+
+16
+00:00:47,750 --> 00:00:49,850
+因为它被认为更稳定，
+because it's a little bit more consistent or
+
+17
+00:00:49,850 --> 00:00:55,100
+或者看起来更稳定、更可靠，能为你持续创造收益，
+it's perceived to be a little bit more consistent, a little bit more reliable to actually generate income for yourself
+
+18
+00:00:55,500 --> 00:00:57,800
+而如果你采用自由交易的方式，
+versus taking a discretionary approach to trading where you just
+
+19
+00:00:57,800 --> 00:01:02,400
+比如直接买入看涨期权或看跌期权来押注市场方向，
+buy a call option or you buy a put option if you're trying to pick a direction for the market.
+
+20
+00:01:02,700 --> 00:01:04,772
+这些策略通常属于非方向性交易，
+These tend to fall under the category of
+
+21
+00:01:04,772 --> 00:01:08,399
+也就是说，你并不需要押注市场方向。
+non-directional trades, in which, again, it means you're not trying to pick a direction.
+
+22
+00:01:08,400 --> 00:01:11,581
+你基本上是在说，如果你交易的是标普500指数期权（SPX），
+You're essentially saying that the SPX, if you're trading the
+
+23
+00:01:11,581 --> 00:01:14,126
+这套策略可以应用到任何有期权的标的上。
+SPX, this can be applied to any underlying
+
+24
+00:01:14,126 --> 00:01:15,398
+且有对应的期权可交易。
+that has options available.
+
+25
+00:01:15,700 --> 00:01:18,700
+但如果你交易的是标普500指数期权（SPX），这是大多数人
+But if you're trading the SPX, which is what most people use
+
+26
+00:01:18,700 --> 00:01:21,700
+在交易这类策略时用来创造收益的工具，
+for generating income whenever they're trading these types of strategies, because it's
+
+27
+00:01:21,700 --> 00:01:24,200
+因为它的流动性很好，而且你可以交易很大的仓位。
+very liquid and you can get a lot of size.
+
+28
+00:01:24,200 --> 00:01:26,678
+所以不管你的账户规模如何，
+So regardless of your account size, if you're trading with
+
+29
+00:01:26,678 --> 00:01:29,404
+是3000美元的账户，还是300万美元的账户，
+a $3,000 account, if you're trading with a $3 million account, there's a
+
+30
+00:01:30,100 --> 00:01:34,300
+标普500指数期权（SPX）的流动性都足够满足你所需的头寸规模。
+liquidity within the SPX to get the size you need for the type of positions.
+
+31
+00:01:34,500 --> 00:01:38,800
+更重要的是，流动性足够让你进行必要的调整。
+And even more importantly, there's enough liquidity to actually make the adjustments required.
+
+32
+00:01:39,100 --> 00:01:41,000
+那人们为什么要交易铁蝶式策略呢？
+So why do people trade iron butterflies?
+
+33
+00:01:41,200 --> 00:01:44,400
+这恰好是我最喜欢的收益型策略之一。
+It happens to be one of my favorite income generating strategies.
+
+34
+00:01:45,100 --> 00:01:47,546
+甚至比铁鹰策略还要喜欢，这是因为
+Even more so than the iron condor and that's just
+
+35
+00:01:47,546 --> 00:01:49,992
+它的容错性更强一些，我认为
+because it's a little bit more forgiven i think it's
+
+36
+00:01:49,992 --> 00:01:51,949
+这是一个很好的过渡，如果你是从
+a good bridge between if you're coming from
+
+37
+00:01:51,949 --> 00:01:53,906
+自由交易策略转换过来的，你之前习惯
+taking the discretionary approach where you're used to
+
+38
+00:01:53,906 --> 00:01:56,597
+只是单纯选择方向然后买入看涨期权
+just you know picking a direction and buying that long call
+
+39
+00:01:57,200 --> 00:02:00,161
+如果你从这种交易方式转向期权交易
+if you take the leap from trading options that way
+
+40
+00:02:00,161 --> 00:02:02,530
+你基本上习惯了，我们可以这么说，
+where you're essentially used to we'll say risking
+
+41
+00:02:02,530 --> 00:02:04,899
+冒1美元去赚3美元
+you know one dollar to make three dollars
+
+42
+00:02:05,400 --> 00:02:11,600
+然后你开始交易铁鹰策略，可能会发现自己冒3美元去赚1美元。
+And then you enter trading iron condors where you might find yourself risking $3 to make $1.
+
+43
+00:02:11,700 --> 00:02:13,900
+有时候在心理上很难接受这种转变。
+Sometimes it's hard psychologically to make that leap.
+
+44
+00:02:14,100 --> 00:02:16,766
+至少我之前在
+Or at least that's what happened to me when I
+
+45
+00:02:16,766 --> 00:02:21,299
+从这种交易方式转向使用价差策略交易期权时，主要是信用价差策略，就遇到了这种情况。
+made the leap over from trading options this way to trading options using spreads, mostly credit spreads.
+
+46
+00:02:21,600 --> 00:02:24,500
+而铁蝶式策略呢，可以说处于这两者之间，
+The iron butterfly, however, you can say falls kind of
+
+47
+00:02:24,500 --> 00:02:27,400
+是一个心理上比较舒适的过渡，
+in between these two in which it's a comfortable psychological
+
+48
+00:02:27,400 --> 00:02:30,300
+因为你使用的保证金会更少。
+jump in which you're going to be using less margin.
+
+49
+00:02:30,500 --> 00:02:32,900
+所以你不会是用3美元去赚1美元。
+So you're not going to be using $3 to make one.
+
+50
+00:02:33,000 --> 00:02:34,600
+在某种情况下，可能确实会这样。
+In some cases, you might be.
+
+51
+00:02:34,900 --> 00:02:42,000
+比如，用2美元，或者用1美元去赚9美元，但你不会等到赚满9美元。
+You know, using $2 to, or you might be using $1 to make $9, but you're not holding for the $9.
+
+52
+00:02:42,100 --> 00:02:45,300
+可能在已经赚到2美元时就离场了。
+You might be out the trade once you're already up $2.
+
+53
+00:02:45,300 --> 00:02:47,258
+所以看起来可能是1:1，但其实
+So it might appear as if it's a
+
+54
+00:02:47,258 --> 00:02:49,461
+取决于
+one-to-one, but you, it depends on, you know,
+
+55
+00:02:49,461 --> 00:02:52,643
+你自己的风险参数、你运行交易的策略。
+your own risk parameters, your own strategies for however you're running the trade.
+
+56
+00:02:52,800 --> 00:02:56,390
+现在我们来看一个案例研究，
+Now let's jump in and review the case study of
+
+57
+00:02:56,390 --> 00:03:00,340
+这是2023年2月22日开立的铁蝶式策略，就在这里。
+the Iron Butterfly that was opened on February 22nd, 2023. right here.
+
+58
+00:03:01,000 --> 00:03:03,100
+我们可以滚动到量化交易应用（QTA）的Discord频道。
+We can scroll over to the Quant Trading App Discord.
+
+59
+00:03:03,300 --> 00:03:05,200
+Discord链接在描述里。
+Link is in the description to the Discord.
+
+60
+00:03:05,200 --> 00:03:07,000
+这是我最活跃的地方。
+This is where I am most active.
+
+61
+00:03:07,200 --> 00:03:09,314
+它只是量化交易应用（QTA）的一个延伸，
+It's just an extension to the Quant Trading App application,
+
+62
+00:03:09,314 --> 00:03:11,428
+这是一个包含大量信息
+which is a website that has a lot of information
+
+63
+00:03:11,428 --> 00:03:14,599
+和数据的网站，帮助我做出很多交易决策。
+and data to help base a lot of the decisions which I make from trading.
+
+64
+00:03:14,900 --> 00:03:17,600
+完全透明地说，我是量化交易应用（QTA）的全职开发者。
+Full disclosure, I am the full developer at Quant Trading App.
+
+65
+00:03:17,800 --> 00:03:22,100
+现在我们拉出这个图表，这里给大家看的是8点30分的情况。
+So as we pull up this chart right here, it's just showing you guys this was on a 8.30.
+
+66
+00:03:22,200 --> 00:03:25,200
+所以这应该是市场开盘后两小时，因为我现在用的是太平洋时间。
+So this would be two hours after the market opened because I'm on Pacific time right now.
+
+67
+00:03:25,300 --> 00:03:29,700
+可以看到我开仓了一个4月14日到期、51天到期剩余天数的标普500指数期权（SPX）铁蝶式策略。
+And we can see that I opened up a 51 DTE SPX April 14th iron butterfly.
+
+68
+00:03:29,800 --> 00:03:32,500
+成交价格是82.25美元。
+So I was filled for $82.25.
+
+69
+00:03:32,800 --> 00:03:34,900
+这是一个权利金策略，也就是我收到的权利金收入。
+It is a credit spread. So that's how much credit was received.
+
+70
+00:03:34,900 --> 00:03:39,900
+每次开铁蝶式策略时，你实际上是在卖出两个平值期权。
+So what I'm doing whenever you're initiating an iron butterfly is you're selling two at the money options.
+
+71
+00:03:40,000 --> 00:03:41,520
+我卖出的是平值看跌期权，
+So I'm selling the at the money put
+
+72
+00:03:41,520 --> 00:03:42,660
+还有平值看涨期权。
+and the at the money call.
+
+73
+00:03:42,660 --> 00:03:43,800
+然后你基本上会买入
+And then you're essentially buying an
+
+74
+00:03:43,800 --> 00:03:45,700
+一个虚值看涨期权和一个虚值看跌期权。
+out the money call and an out the money puts.
+
+75
+00:03:45,700 --> 00:03:49,700
+这些可以看作是你卖出期权的对冲。
+You can consider these hedges for the options that you are short on.
+
+76
+00:03:49,800 --> 00:03:54,500
+这样能大幅降低开这种仓位所需的保证金。
+And that significantly reduces the margin requirements to actually open a trade like this.
+
+77
+00:03:54,500 --> 00:03:55,700
+这就是我们在这里看到的。
+And that's what we can see right here.
+
+78
+00:03:55,900 --> 00:03:59,900
+最大亏损就是我开这个仓位所需的成本。
+The max loss is how much this position costs for me to open the trade.
+
+79
+00:04:00,200 --> 00:04:02,200
+如果我们拉出那个截图，
+So if we pull up that exact screenshot
+
+80
+00:04:02,200 --> 00:04:04,200
+这就是，那个截图就是这个，
+here, this is, well, that was the screenshot,
+
+81
+00:04:04,200 --> 00:04:06,700
+但这是OptionStrat（期权策略分析工具）上现在的实时风险收益曲线。
+but this is the live profile right now on OptionStrat.
+
+82
+00:04:06,900 --> 00:04:10,300
+我经常用OptionStrat（期权策略分析工具），尤其是在制作这样的演示视频时。
+I use OptionStrat a lot, especially for demonstrating videos like this.
+
+83
+00:04:10,300 --> 00:04:12,166
+如果你是差价策略的新手，它会让操作
+If you're new to trading spreads, it makes
+
+84
+00:04:12,166 --> 00:04:14,032
+变得简单一些，因为界面
+it a little bit easier because the UI,
+
+85
+00:04:14,032 --> 00:04:15,898
+我觉得更加用户友好。
+I think it's a little bit more user-friendly.
+
+86
+00:04:16,100 --> 00:04:20,100
+更具体地说，你可以快速看到最大亏损是多少，最大权利金收入是多少。
+More specifically, you can very quickly see what the max loss is, how much the max credit is.
+
+87
+00:04:20,100 --> 00:04:23,500
+在这个例子中，净权利金收入就是最大盈利。
+In this case, it would be the net credit is the max profit.
+
+88
+00:04:23,700 --> 00:04:25,800
+你还能看到一些关于这个交易的统计数据。
+You can see a little bit of stats around the trade there.
+
+89
+00:04:25,900 --> 00:04:28,600
+我会把这些笔记手动输入到这里。
+And I take these, these notes are entered in manually up here.
+
+90
+00:04:28,800 --> 00:04:31,192
+而且我倾向于跟踪每个交易的整个生命周期，
+And I tend to keep track of the lifespan of
+
+91
+00:04:31,192 --> 00:04:33,106
+这些交易，特别是那些重要的交易，或者
+the trades, especially when they're important ones or
+
+92
+00:04:33,106 --> 00:04:35,498
+我知道自己会持有较长时间的交易。
+ones I know I will be holding for a while.
+
+93
+00:04:35,800 --> 00:04:37,500
+然后我会把这些记录到我的交易日志和笔记里。
+And then I put it in my journal and my notes.
+
+94
+00:04:37,600 --> 00:04:39,933
+我认为，当你持有较长期的交易时，
+Something I think that's pretty important whenever you're holding longer
+
+95
+00:04:39,933 --> 00:04:42,266
+有一点非常重要，就是要标记
+dated trade is to just mark anything that's really big
+
+96
+00:04:42,266 --> 00:04:43,199
+经济日历上所有重要的事件。
+on the economic calendar.
+
+97
+00:04:43,300 --> 00:04:49,000
+最近，CPI报告（消费者物价指数报告）和美联储公开市场委员会（FOMC）的公告特别能推动市场走势。
+So most importantly, the CPI reports and the FOMC announcements have been really moving the market as of late.
+
+98
+00:04:49,100 --> 00:04:51,221
+因为我正在运行一个4月14日的交易，
+And because I'm running a trade for April
+
+99
+00:04:51,221 --> 00:04:53,077
+所以我想了解一下
+14th, I just wanted to be aware
+
+100
+00:04:53,077 --> 00:04:55,198
+最近一次CPI报告的发布时间。
+of where was the closest next CPI report.
+
+101
+00:04:55,300 --> 00:04:58,900
+下周会有一个CPI报告发布，日期是3月14日，
+Now there's a CPI report coming out next week, which is March
+
+102
+00:04:58,900 --> 00:05:03,700
+但这个报告发布时，我是打算持有这个铁蝶式策略的。
+14th, but that one I will be intending to hold this iron fly through that report.
+
+103
+00:05:04,000 --> 00:05:06,037
+我最初开仓时，有几份合约，
+When I first initially opened the trade, I had a
+
+104
+00:05:06,037 --> 00:05:09,499
+但现在已经减仓了，所以现在只剩一份。
+few contracts or a few lots of it. I've already scaled down, so I'm only in one.
+
+105
+00:05:09,500 --> 00:05:11,800
+这样我的风险就大幅降低了。
+So I don't have anywhere near as much risk.
+
+106
+00:05:12,100 --> 00:05:14,418
+我在某一天获利了结，当时
+I took profit around this day here when it was
+
+107
+00:05:14,418 --> 00:05:16,968
+收益接近我所用资金的20%。
+close to 20% return on the capital in which I was using.
+
+108
+00:05:17,500 --> 00:05:20,611
+等我回到量化交易应用（QTA）的Discord群里，
+As you guys will see again, when I go back to the
+
+109
+00:05:20,611 --> 00:05:24,499
+你们会看到我当时平仓的逻辑和原因。
+Quant Trading app Discord, the logic or the reasoning behind why I closed that day.
+
+110
+00:05:24,700 --> 00:05:27,500
+而且你们也能看到，现在盈利已经开始减少了。
+And as you guys can see, it's already starting to decrease in profit.
+
+111
+00:05:27,500 --> 00:05:32,300
+之前最多赚了340美元，现在收盘时只赚了290美元。
+At one point, it was up $340, and now it's only up $290 at the close here today.
+
+112
+00:05:32,700 --> 00:05:35,800
+这是因为市场出现了大幅回调。
+The reason being is because the market has significantly pulled back.
+
+113
+00:05:35,800 --> 00:05:40,600
+你们也能看到，标普500指数期权（SPX）的价格现在已经不在盈利区间内了。
+As you guys can see, the price of the SPX is now not within the profitability zone.
+
+114
+00:05:40,900 --> 00:05:48,100
+不过，这个价差组合仍然是盈利的。这就是我喜欢铁蝶式策略的地方，它们非常宽容。
+However, this spread is still green. That is something that I really like about iron flies. They're very forgiving.
+
+115
+00:05:48,400 --> 00:05:53,500
+我在这一天开仓的另一个原因是市场出现了回调。
+The other reason why I opened the trade, particularly on this day, was because the market pulled back.
+
+116
+00:05:53,500 --> 00:05:57,500
+每当市场回调时，我们知道隐含波动率会上升。
+Whenever the market pulls back, we know implied volatility increases.
+
+117
+00:05:57,500 --> 00:05:58,871
+现在我拉远看一下。
+So as I zoom out here.
+
+118
+00:05:58,871 --> 00:06:02,299
+VIX指数之前一直在低位附近徘徊了一段时间。
+This was the VIX. was kind of just hovering around the lows for a bit.
+
+119
+00:06:02,300 --> 00:06:06,300
+它低于20，然后在这里出现了一个很大的跳空上涨。
+It was below 20. And then it gapped up pretty big right here.
+
+120
+00:06:06,400 --> 00:06:08,733
+当我看到一些迹象后，
+And it ended up the moment I saw signs of
+
+121
+00:06:08,733 --> 00:06:12,699
+至少出现了一点疲软迹象，结果形成了一个小双顶。
+it, at least showing a little bit of weakness, it ended up double topping a little bit.
+
+122
+00:06:12,700 --> 00:06:16,400
+就在这时我意识到，隐含波动率可能会下降。
+And that's when I realized, okay, implied volatility might be likely to decrease.
+
+123
+00:06:16,700 --> 00:06:19,940
+当然，谁也无法确定，但我只是在努力
+Now, there's no way to know for sure, but I'm just trying
+
+124
+00:06:19,940 --> 00:06:22,100
+提高胜算，因为归根结底，
+to increase the edge because at the end
+
+125
+00:06:22,100 --> 00:06:27,500
+铁蝶式策略（Iron Butterfly）可以这样运行，而不必特别关注隐含波动率。
+of the day, an iron butterfly, you can run this and not really pay too much attention to implied volatility.
+
+126
+00:06:27,500 --> 00:06:28,700
+只是我还得
+It's just I have to also
+
+127
+00:06:28,700 --> 00:06:29,900
+做日内交易。所以我
+be a day trader. So I'm
+
+128
+00:06:29,900 --> 00:06:32,700
+每天都在关注市场动向，每天都会检查市场。
+aware of what's going on during the day. I'm checking the markets every day.
+
+129
+00:06:32,800 --> 00:06:35,058
+但即使你不频繁查看市场，
+But even if you're not checking the markets, you know,
+
+130
+00:06:35,058 --> 00:06:36,412
+一天查10次、50次，
+10 times throughout the day, 50 times throughout
+
+131
+00:06:36,412 --> 00:06:39,347
+也不用从早九点盯到晚五点，
+the day, you're not in front of the screen from nine to five.
+
+132
+00:06:40,100 --> 00:06:42,148
+你仍然可以通过看VIX指数，
+You can still be aware of at least
+
+133
+00:06:42,148 --> 00:06:43,940
+大致了解隐含波动率是低还是
+that implied volatility is low or it's
+
+134
+00:06:43,940 --> 00:06:46,500
+相对较高。
+relatively high just by taking a look at the VIX.
+
+135
+00:06:46,500 --> 00:06:48,958
+所以当隐含波动率有所上升时，你就可以运行这样的策略，
+So you want to run strategies like this whenever implied
+
+136
+00:06:48,958 --> 00:06:52,399
+因为铁蝶式策略是做空Vega值。
+volatility has some sort of an increase because an iron butterfly is short vega.
+
+137
+00:06:52,500 --> 00:06:54,400
+也就是说，你是在做空隐含波动率。
+That means you are shorting implied volatility.
+
+138
+00:06:54,500 --> 00:06:57,600
+而我们也看到，隐含波动率确实下降了。
+And as we can see, implied volatility did end up decreasing.
+
+139
+00:06:57,900 --> 00:07:00,614
+是的，现在它又升高了，但这没关系，因为
+Yes, it is higher now, but that's fine because as
+
+140
+00:07:00,614 --> 00:07:03,328
+你们也看到，这个组合仍然是盈利的，
+you guys saw that the spread is still actually green,
+
+141
+00:07:03,328 --> 00:07:07,399
+尽管隐含波动率上升了，但这是因为时间已经过去了。
+even though implied volatility has gone up, what has happened is time has passed by.
+
+142
+00:07:07,700 --> 00:07:11,046
+铁蝶式策略是做多Theta值（时间衰减），这意味着
+So the iron butterfly is long theta, which means time
+
+143
+00:07:11,046 --> 00:07:16,399
+时间其实站在你这边，尤其是当价格保持在蝶式策略的触发区间内时。
+is actually on your side, especially if price is remaining within the tenths of the butterfly.
+
+144
+00:07:16,500 --> 00:07:18,348
+稍后在这个视频中我们会再详细分解
+So we'll break it down a little bit again later
+
+145
+00:07:18,348 --> 00:07:20,196
+一下，而且很快
+in this video and as we'll see in a little
+
+146
+00:07:20,196 --> 00:07:22,599
+我们会更详细地展示。但我想先让你们看看这个。
+bit more detail here. But I just wanted you guys to see this.
+
+147
+00:07:22,900 --> 00:07:26,700
+第一步至少是市场在下跌。
+What was step one, at least, was the fact that the market was down.
+
+148
+00:07:26,700 --> 00:07:30,000
+所以当市场下跌一段幅度后，
+So whenever the market is down, you know, a decent amount, you could have run some sort of iron.
+
+149
+00:07:30,100 --> 00:07:31,543
+你其实可以在这一天运行某种铁蝶式策略，
+fly on this this day also
+
+150
+00:07:31,543 --> 00:07:32,986
+但VIX指数并不一定
+but the vix wasn't necessarily that
+
+151
+00:07:32,986 --> 00:07:34,429
+但VIX并没有特别高，不过我大概
+high but i'm pretty sure i
+
+152
+00:07:34,429 --> 00:07:37,797
+当时已经持有其他一些价差策略了，但如你们所见
+was already in some other spreads at that time but as we see here
+
+153
+00:07:38,500 --> 00:07:40,334
+这是一次相当大的，或者说
+this was a significant or or pretty pretty
+
+154
+00:07:40,334 --> 00:07:42,168
+相当明显的标普500指数期权（SPX）下跌，
+you know decent drop in the spx and
+
+155
+00:07:42,168 --> 00:07:44,002
+然后问题转化为如何避开技术分析，
+then it came down to trying to stay
+
+156
+00:07:44,002 --> 00:07:45,836
+因为这期视频不想深入技术面，但这里
+away from technicals for this video but this
+
+157
+00:07:45,836 --> 00:07:47,670
+是50日均线，这边是
+is the 50-day moving average and this is
+
+158
+00:07:47,670 --> 00:07:49,504
+200日均线，同样是在
+the 200-day moving average again on on the
+
+159
+00:07:49,504 --> 00:07:51,797
+日线图上。我不在日内或更小周期使用
+daily time frame i don't use these types of uh
+
+160
+00:07:52,500 --> 00:07:58,500
+这类移动平均线，50日和200日是需要关注的重要位
+moving averages intraday or on smaller time frames these are big levels to be aware of the 50 and the 200
+
+161
+00:07:59,000 --> 00:08:00,873
+我只能说，这些基本就够用了
+i will say that is just about all you need
+
+162
+00:08:00,873 --> 00:08:02,746
+如果你是短线交易者，可能还想看看
+if you're a little bit more of a shorter time
+
+163
+00:08:02,746 --> 00:08:04,193
+100日和200日均线，但
+frame trader you might want to take a
+
+164
+00:08:04,193 --> 00:08:05,278
+大多数情况下，你不想
+look at the 100 and the 200 but
+
+165
+00:08:05,278 --> 00:08:06,725
+在图表上堆砌太多EMA、SMA之类的指标
+for the most part you want to you
+
+166
+00:08:06,725 --> 00:08:08,896
+想避开太多EMA和SMA这些指标
+want to stay away from too many emas and smas and stuff
+
+167
+00:08:08,896 --> 00:08:10,343
+所以我只是
+like that on your chart so i just
+
+168
+00:08:10,343 --> 00:08:13,057
+在日线图上使用这两条简单移动平均线，只是为了关注
+use those two simple moving averages again just on a daily just to be aware
+
+169
+00:08:14,400 --> 00:08:19,500
+市场跌破50日均线，这是一个相当强势的
+market falling off into the 50-day moving average so this is already a pretty powerful uh
+
+170
+00:08:19,900 --> 00:08:22,084
+日线级别的移动平均线
+older type of moving average on the daily
+
+171
+00:08:22,084 --> 00:08:26,999
+所以逻辑上可能没问题，它可能会在这个位置附近反弹一段时间
+so the logic might be okay it's probably going to bounce around this level for a little bit
+
+172
+00:08:27,300 --> 00:08:29,435
+如果我们再进一步分析，
+if we take it a little bit step further so
+
+173
+00:08:29,435 --> 00:08:31,570
+这是一个简单的方法。我之前发过一个截图，
+that's a simple approach i posted a little bit of
+
+174
+00:08:31,570 --> 00:08:33,278
+展示了Gamma敞口的情况，
+a screenshot as to what the gamma exposure
+
+175
+00:08:33,278 --> 00:08:34,986
+我不会解释什么是Gamma敞口，但这些截图
+looked like i'm not going to explain what
+
+176
+00:08:34,986 --> 00:08:36,267
+Gamma敞口 但这些截图
+gamma exposure is but these screenshots
+
+177
+00:08:36,267 --> 00:08:39,896
+是从量化交易应用（QTA）网站上截取的，如果我滚动到这边
+are taken from the quant trading app website so if i just scroll over to right here
+
+178
+00:08:40,300 --> 00:08:42,490
+我们可以大致了解一下
+we can get a little bit of an overview to
+
+179
+00:08:42,490 --> 00:08:44,680
+Gamma敞口的情况，有多少未平仓合约
+what the gamma exposure is how much open interest there
+
+180
+00:08:44,680 --> 00:08:46,870
+你还可以按到期日细分
+is and you can break down which expiration you want
+
+181
+00:08:46,870 --> 00:08:48,622
+来分析，或者查看所有到期日
+to analyze or just all the expirations leading
+
+182
+00:08:48,622 --> 00:08:50,374
+直到你计划持有交易的到期日，
+up to the expiration for how long you're
+
+183
+00:08:50,374 --> 00:08:54,097
+比如你打算持仓到3月23日，
+planning on swinging the trade so if you're going to swing the trade say for example until
+
+184
+00:08:54,400 --> 00:09:00,000
+那可能就不用理会其他到期日，
+you know the 23rd of march then maybe you disregard all those expirations and you just want to
+
+185
+00:09:00,000 --> 00:09:02,400
+只分析你关心的到期日。
+to analyze the expirations in which you're interested in.
+
+186
+00:09:02,700 --> 00:09:04,133
+点击提交后，
+You can press submit and then you'll get
+
+187
+00:09:04,133 --> 00:09:06,999
+就会生成一份报告，详细展示Gamma分布。
+a report, you know, breaking it down and it'll show you what the gamma profile is.
+
+188
+00:09:07,200 --> 00:09:11,000
+这里显示的是所有到期日的Gamma分布。
+So what this is showing is the gamma profile for all of the expirations down here.
+
+189
+00:09:11,200 --> 00:09:13,381
+这样我们就能大致了解
+And then we have a little bit of an idea
+
+190
+00:09:13,381 --> 00:09:15,050
+绝对Gamma的分布情况。
+for where there's absolute gamma. So I already
+
+191
+00:09:15,050 --> 00:09:17,971
+当时我就知道400点附近有大量绝对Gamma。
+was aware at the time that there was a ton of absolute gamma around 400.
+
+192
+00:09:18,700 --> 00:09:20,588
+这就是我入场的另一个原因，
+So that was the other reason we can
+
+193
+00:09:20,588 --> 00:09:24,600
+我喜欢有尽可能多的汇聚位来支持交易决策。
+say it's just I like to have as much confluence and enough reasons to enter the trade.
+
+194
+00:09:24,800 --> 00:09:28,300
+这样在价格波动剧烈时，更容易持仓。
+It just makes it easier to hold whenever the price is acting very volatile.
+
+195
+00:09:28,400 --> 00:09:30,188
+我想我们都同意，
+And I think we can all agree that
+
+196
+00:09:30,188 --> 00:09:31,976
+过去几个月市场的波动性
+the market has been. Unprecedentedly more volatile for
+
+197
+00:09:31,976 --> 00:09:35,999
+前所未有地高，因为我们处于熊市。
+the past few months than it has been because we are in more of a bear market here.
+
+198
+00:09:36,400 --> 00:09:39,311
+这是当时的截图，当时
+So this was the screenshot and then sharing we were
+
+199
+00:09:39,311 --> 00:09:41,931
+标普500指数ETF（SPY）在400点附近，
+currently right around 400 on the SPY which is interchangeably
+
+200
+00:09:41,931 --> 00:09:45,425
+相当于标普500指数期权（SPX）4000点，尤其是在交易51天到期剩余天数的价差策略时。
+just about 4,000 on the SPX especially when you're trading a 51 DTE spread.
+
+201
+00:09:46,500 --> 00:09:49,500
+SPY和SPX之间的一点差异其实不重要。
+It doesn't really matter if there's a little bit of a difference between the SPY and the SPX.
+
+202
+00:09:49,900 --> 00:09:55,100
+我只是想强调，大部分Gamma集中在410到390之间。
+All I was trying to highlight is that majority of the gamma was between 410 and 390.
+
+203
+00:09:55,100 --> 00:09:58,600
+所以我基本想要一个能覆盖
+So I essentially wanted a spread that can cover a
+
+204
+00:09:58,600 --> 00:10:02,100
+这个区域的盈利区的策略，
+profitability zone around here because the logic is the SPX
+
+205
+00:10:02,100 --> 00:10:05,600
+因为逻辑是SPX至少会在这个区间内停留两周。
+will stay within this region for at least two weeks.
+
+206
+00:10:05,900 --> 00:10:07,445
+我开仓时，你们可以看到，
+Because as I open it, you guys
+
+207
+00:10:07,445 --> 00:10:09,211
+我当时说计划持有到3月第二周。
+can see I ended up saying that I'm
+
+208
+00:10:09,211 --> 00:10:11,198
+不打算持有到3月第二周。
+planning on holding until the second week of March.
+
+209
+00:10:11,500 --> 00:10:15,500
+如果SPX收盘价高于4080，我会加仓多头蝶式策略来对冲Delta。
+If the SPX closes above 4080, I will add a long call butterfly to reduce delta.
+
+210
+00:10:15,800 --> 00:10:16,700
+这就是我的应对方案。
+So that's something that.
+
+211
+00:10:17,000 --> 00:10:18,567
+期权交易者交易这类策略时,
+Options traders and trades these type
+
+212
+00:10:18,567 --> 00:10:20,656
+我们会预测某个事件的走向，然后
+of spreads that something will do we're looking
+
+213
+00:10:20,656 --> 00:10:22,745
+降低Delta敞口，因为我们并不
+to reduce our delta exposure because we're not
+
+214
+00:10:22,745 --> 00:10:24,834
+试图押注方向，我们希望
+trying to pick a direction we want to
+
+215
+00:10:24,834 --> 00:10:29,797
+尽可能接近Delta中性。我们不是机器，不是算法，也不会不断进场
+be as close to delta neutral as possible we're not machines we're not algorithms we're not constantly entering positions
+
+216
+00:10:30,200 --> 00:10:31,000
+成千上万次交易。
+a million times.
+
+217
+00:10:31,200 --> 00:10:35,900
+就像我刚才说的，今天是我首次调整这个仓位的第一天。
+As I just stated, today's only the first day in which I made the first adjustment to the trade.
+
+218
+00:10:35,900 --> 00:10:39,000
+那我们现在来看看日内时间框架。
+So let's actually jump into the intraday timeframe here.
+
+219
+00:10:39,000 --> 00:10:40,700
+这是标普500指数期权（SPX）的30分钟图。
+So this is a 30 minute chart of the SPX.
+
+220
+00:10:40,700 --> 00:10:42,100
+这就是开仓的时刻。
+This was when the position was opened.
+
+221
+00:10:42,400 --> 00:10:43,786
+我做空了4000行权价的看涨期权
+So I was short the 400 call
+
+222
+00:10:43,786 --> 00:10:45,172
+和看跌期权。这部分
+and the 400 put. So that would
+
+223
+00:10:45,172 --> 00:10:48,637
+就是铁蝶式策略的实体，然后这里是翅膀。
+be called the body of the butterfly. And then these are the wings right here.
+
+224
+00:10:49,100 --> 00:10:56,600
+翅膀的行权价分别是3900和4090。
+So the wings were actually Um, let's take a look. The wings are 3,900 and 4090.
+
+225
+00:10:57,100 --> 00:10:59,568
+我喜欢在图表上标出盈亏平衡点，
+And I like to draw the break evens on the
+
+226
+00:10:59,568 --> 00:11:01,049
+这样看起来
+chart to make it a little
+
+227
+00:11:01,049 --> 00:11:04,999
+更直观，或者如果没有风险收益曲线时更方便。
+bit more visually appealing or just easier if I don't have access to the risk profile.
+
+228
+00:11:05,100 --> 00:11:06,741
+如果我在手机上查看，
+If I'm checking it on my phone, this
+
+229
+00:11:06,741 --> 00:11:08,382
+这是一个不错的小技巧，
+is something that you can, you know, it's
+
+230
+00:11:08,382 --> 00:11:09,817
+因为这样
+a good little tip in which I
+
+231
+00:11:09,817 --> 00:11:11,252
+即使价格对你不利，
+like to have because it also makes
+
+232
+00:11:11,252 --> 00:11:13,097
+也能让你更舒服一些。
+it comfortable if price is really moving against you.
+
+233
+00:11:13,200 --> 00:11:16,200
+你可以想想，不用急着调整，因为还有时间。
+You can say like, well, I don't have to do anything because there's still plenty of time.
+
+234
+00:11:16,500 --> 00:11:18,021
+这是一个裸K图，
+And this is just a bare naked
+
+235
+00:11:18,021 --> 00:11:19,325
+我没有添加任何技术指标。
+chart. I'm not applying any studies.
+
+236
+00:11:19,325 --> 00:11:21,498
+我也没有应用量化交易应用（QTA）的标注。
+I'm not applying, you know, the quant trading app levels.
+
+237
+00:11:21,600 --> 00:11:23,760
+如果你看过我之前的视频，
+If you've seen any of my other previous videos, you
+
+238
+00:11:23,760 --> 00:11:25,272
+就会知道我通常会在图表上添加其他内容。
+will know that there are other things
+
+239
+00:11:25,272 --> 00:11:27,000
+比如，
+in which I would have on my charts.
+
+240
+00:11:27,100 --> 00:11:28,700
+其他原因。
+Say, for example, the other reason.
+
+241
+00:11:28,700 --> 00:11:30,833
+为什么那天会开这个仓
+Why this position was open on that day
+
+242
+00:11:30,833 --> 00:11:32,699
+因为那天正好是周三
+because this was the Wednesday right here.
+
+243
+00:11:32,900 --> 00:11:35,300
+VIX指数触及了2σ阻力位
+The VIX was hitting a two sigma resistance level.
+
+244
+00:11:35,300 --> 00:11:38,140
+这让我知道隐含波动率
+So that was letting me know that implied volatility was
+
+245
+00:11:38,140 --> 00:11:40,412
+在我的交易时间框架内
+already statistically at a very high level given
+
+246
+00:11:40,412 --> 00:11:42,400
+已经统计上处于非常高的水平
+the timeframe in which I was trading.
+
+247
+00:11:42,400 --> 00:11:44,250
+所以，当VIX指数
+So that made, whenever this, whenever the VIX
+
+248
+00:11:44,250 --> 00:11:46,100
+触及2σ阻力位时，我立刻
+hits the two sigma resistance level, I immediately
+
+249
+00:11:46,100 --> 00:11:47,487
+开始思考，我是否想
+start thinking about, do I want
+
+250
+00:11:47,487 --> 00:11:49,799
+做铁鹰策略（Iron Condor）
+to run, do I want to run an iron condor?
+
+251
+00:11:49,800 --> 00:11:51,300
+还是想做铁蝶式策略（Iron Butterfly）
+Do I want to run an iron butterfly?
+
+252
+00:11:51,600 --> 00:11:53,580
+因为逻辑是VIX指数
+Because the logic is that the VIX will
+
+253
+00:11:53,580 --> 00:11:56,799
+最终会回落并回归均值
+ultimately sell off and come back down as it reverts to its mean.
+
+254
+00:11:56,800 --> 00:11:58,600
+而结果确实如此
+And that's exactly what ended up happening.
+
+255
+00:11:58,700 --> 00:12:00,500
+所以，我们再回到VIX指数
+So again, if we just jump back to to the VIX.
+
+256
+00:12:00,800 --> 00:12:01,400
+就是那天的情况
+That was this day.
+
+257
+00:12:01,400 --> 00:12:03,600
+可以看到它之后一路回落
+We can see it ended up selling all the way back down.
+
+258
+00:12:03,600 --> 00:12:07,100
+上周五时它触及了2σ支撑位
+And then it last week, Friday is when it hit two Sigma support.
+
+259
+00:12:07,500 --> 00:12:08,783
+这只是如果你们
+And that was just if you guys
+
+260
+00:12:08,783 --> 00:12:09,699
+想看的话，我就
+want to see, I'll just
+
+261
+00:12:09,699 --> 00:12:11,899
+跳到这边来看，这是接下来的一周
+jump over to this right here. And that was the week after.
+
+262
+00:12:11,900 --> 00:12:14,500
+结果它一路回落到2σ支撑位
+So it ended up selling all the way right back down to two Sigma support.
+
+263
+00:12:14,600 --> 00:12:18,400
+于是我把这当作信号，开始寻找一些做多Vega值的机会
+And that's essentially when I took that as a sign to start looking for some long Vega plays.
+
+264
+00:12:18,800 --> 00:12:22,500
+这也是我认为我之前告诉大家的
+And that's what I believe I just let everybody know.
+
+265
+00:12:22,500 --> 00:12:26,700
+所以现在或周一就是开始寻找做多Vega值仓位摆动的时机
+So either now or Monday was the time to start looking at some long Vega positions to swing.
+
+266
+00:12:26,800 --> 00:12:31,300
+你可以直接买入看跌期权，或者做看跌对角价差、日历价差策略
+So you can just buy long put options, you know, put diagonals, calendar spreads.
+
+267
+00:12:31,900 --> 00:12:33,182
+这些策略会在另一个
+Those will be spreads for another
+
+268
+00:12:33,182 --> 00:12:34,464
+视频中讲解，但我们先
+video, but let's just get back
+
+269
+00:12:34,464 --> 00:12:35,746
+回到收益策略这边
+to the income spreads here and
+
+270
+00:12:35,746 --> 00:12:38,097
+然后往上滚动一下，回到我们之前的位置
+then scroll up for a second right where we left off.
+
+271
+00:12:38,200 --> 00:12:41,700
+希望大家已经理解了，因为第一部分讲的就是逻辑。
+So hopefully that already makes sense because the first part is, again, the logic.
+
+272
+00:12:41,700 --> 00:12:42,500
+为什么要进入这笔交易？
+Why enter the trade?
+
+273
+00:12:43,000 --> 00:12:44,200
+为什么选这个铁蝶式策略？
+Why this iron fly?
+
+274
+00:12:44,200 --> 00:12:47,200
+行权价是4000，是平值，因为我没有选方向。
+It's 4000. It's at the money because I'm not picking a direction.
+
+275
+00:12:47,500 --> 00:12:48,200
+我只是把看涨期权这边往里调了调。
+I'm just pulling in.
+
+276
+00:12:48,200 --> 00:12:51,000
+这期视频里我就不详细解释了，为了保持简单。
+I'm not going to explain also for this video just to keep it simple.
+
+277
+00:12:51,100 --> 00:12:56,000
+之后我可能会专门拆解一下铁蝶式策略是什么。
+I'll probably do some sort of a breakdown exactly of what is an iron fly.
+
+278
+00:12:56,000 --> 00:12:58,200
+YouTube上可能已经有很多很不错的视频了。
+There's a couple of really good videos probably on YouTube already.
+
+279
+00:12:58,200 --> 00:13:00,600
+也有一些很好的书已经解释过这些内容了。
+There's some great books already explaining some of this.
+
+280
+00:13:00,700 --> 00:13:03,500
+但我只是把看涨期权这边往里调了大约10点。
+But I just pulled in the call side by about 10 points.
+
+281
+00:13:03,500 --> 00:13:05,800
+所以这不是严格的向下100点、向上100点。
+So it's not exactly 100 points down and 100 points up.
+
+282
+00:13:05,800 --> 00:13:08,300
+我喜欢这么做，因为这样能降低Delta。
+This is something I like to do because it just softens the delta.
+
+283
+00:13:08,700 --> 00:13:10,110
+如果你看见，假如我
+If you see, if I
+
+284
+00:13:10,110 --> 00:13:12,084
+现在到这里
+were to come right here and actually
+
+285
+00:13:12,084 --> 00:13:14,058
+从头开始构建一个铁蝶式策略，
+open up a iron butterfly from scratch
+
+286
+00:13:14,058 --> 00:13:19,699
+假设我们模拟一个，然后说要把它延伸到这里。
+right now, and we mocked one up and we said, I'm going to run one all the way out here.
+
+287
+00:13:19,700 --> 00:13:25,700
+为了简单起见，假设我们要做向上100点、向下100点这样的结构。
+And let's just say to make it easy, we want to go something like this, 100 points up, 100 points down.
+
+288
+00:13:26,000 --> 00:13:26,940
+如果你仔细看
+If you take a look
+
+289
+00:13:26,940 --> 00:13:28,256
+风险收益曲线的话，你的Delta会
+at this, your delta is going to
+
+290
+00:13:28,256 --> 00:13:30,700
+比较负，尤其是如果你选的是平值的话。
+be pretty negative, especially if you let's say actually go at the money.
+
+291
+00:13:30,700 --> 00:13:36,100
+所以在这里，我们选平值，都是平值。这是一个平衡的铁蝶式策略。
+So right here, we go at the money, we go at the money. So it's a balanced butterfly.
+
+292
+00:13:36,100 --> 00:13:37,786
+但这个Delta可能还是有点
+It's even this delta might be a little
+
+293
+00:13:37,786 --> 00:13:39,472
+高，因为如果你看
+bit high because if you take a look
+
+294
+00:13:39,472 --> 00:13:41,158
+风险收益曲线的话，你会发现如果
+at your risk profile, you can see if
+
+295
+00:13:41,158 --> 00:13:42,422
+市场上涨，隐含波动率很可能会下降。
+the market goes up and apply
+
+296
+00:13:42,422 --> 00:13:43,897
+隐含波动率可能会下降。
+volatility will be likely to come down.
+
+297
+00:13:43,900 --> 00:13:46,800
+不过，Delta还是挺激进的，我觉得。
+However, the delta is pretty aggressive, I would say.
+
+298
+00:13:46,900 --> 00:13:48,786
+所以你可以
+So you can you can kind of
+
+299
+00:13:48,786 --> 00:13:53,099
+通过把看涨期权这边往里调一点来降低Delta敞口。
+reduce your delta exposure just by pulling in the call side a little bit in that.
+
+300
+00:13:53,200 --> 00:13:55,723
+这种情况下，你可能不想跑这种
+In this case, you might not want to run something
+
+301
+00:13:55,723 --> 00:13:58,499
+这样的话，下行风险就没有保护了。
+like this because then you have no protection to the downside.
+
+302
+00:13:58,800 --> 00:14:00,500
+所以可能需要把这个调高一点。
+So you probably push this up a little bit.
+
+303
+00:14:00,500 --> 00:14:02,547
+通常来说，你会希望这些
+Just you generally will want to have these
+
+304
+00:14:02,547 --> 00:14:04,594
+价差组合的Delta
+spreads have a little bit of a negative
+
+305
+00:14:04,594 --> 00:14:09,199
+略微为负，这样可以抵消一点波动率敞口。
+delta just to account to just to offset a little bit of your volatility exposure that you'll have.
+
+306
+00:14:09,200 --> 00:14:10,795
+因为，再说一次，如果市场
+Because, again, if the market
+
+307
+00:14:10,795 --> 00:14:13,028
+下跌，或者不是‘再’，如果市场
+goes down. Or not again, if the
+
+308
+00:14:13,028 --> 00:14:15,899
+下跌，隐含波动率很可能会上升。
+market goes down, implied volatility is likely to increase.
+
+309
+00:14:16,000 --> 00:14:22,400
+所以你要保护自己免受这个敞口的影响；而如果市场上涨，隐含波动率会下降。
+So you're trying to protect yourself from that exposure there versus if the market goes up, implied volatility comes down.
+
+310
+00:14:22,500 --> 00:14:27,600
+这对这些价差组合是有利的，因为我在之前的视频里解释过，这些头寸是做空Vega值的。
+That's good for these spreads, because as I explained in the previous videos, these positions are short Vegas.
+
+311
+00:14:27,600 --> 00:14:29,100
+所以你看到这里的负号了。
+So you see this little negative sign right here.
+
+312
+00:14:29,100 --> 00:14:31,422
+这意味着我们在做空波动率，
+It means we are shorting volatility versus
+
+313
+00:14:31,422 --> 00:14:33,744
+所以我们不希望
+so we don't we don't want implied
+
+314
+00:14:33,744 --> 00:14:36,398
+在运行这些交易时，隐含波动率上升。
+volatility to increase when we're running these trades.
+
+315
+00:14:36,500 --> 00:14:42,700
+不过，即使隐含波动率上升，但如果时间过了足够久，你仍然可能盈利。
+However, even if implied volatility increases, but then enough time passes by, you'll still be in the green.
+
+316
+00:14:42,900 --> 00:14:44,641
+如果这是你第一次查看
+If this is your first time looking at
+
+317
+00:14:44,641 --> 00:14:46,382
+风险收益曲线的话，
+a risk profile, by the way, I do
+
+318
+00:14:46,382 --> 00:14:50,299
+我确实有个视频讲如何分析风险和如何解读风险收益曲线之类的内容。
+have a video on analyzing your risk and how to read a risk profile and things like that.
+
+319
+00:14:50,300 --> 00:14:52,000
+链接会在下方描述里。
+Links will be in the description below.
+
+320
+00:14:52,700 --> 00:14:57,300
+好，我觉得事后分析说得够多了。来看看当前的情况吧。
+Okay, I think enough of the retroactively talking. Let's take a look at what's going on currently.
+
+321
+00:14:57,300 --> 00:15:00,000
+如你们所见，这是当前头寸的盈亏...
+As you guys can see, this is the current profit and loss in the...
+
+322
+00:15:00,000 --> 00:15:01,217
+情况，头寸的表现是这样的，但我把
+position and this is how
+
+323
+00:15:01,217 --> 00:15:02,921
+今天实际调整的部分去掉，
+it's going but i let's take off
+
+324
+00:15:02,921 --> 00:15:05,599
+我只是在这里模拟了几个平仓订单，
+the actual adjustment in which i made today so i'm just
+
+325
+00:15:06,000 --> 00:15:08,380
+这样我们就能看到
+i just mocked up a couple closing orders right here
+
+326
+00:15:08,380 --> 00:15:10,760
+实际开仓的头寸了。
+so just so we can see what the actual position
+
+327
+00:15:10,760 --> 00:15:12,188
+所有这些
+that's open so all this is
+
+328
+00:15:12,188 --> 00:15:13,616
+做的只是说，如果我
+doing is saying if i were
+
+329
+00:15:13,616 --> 00:15:15,044
+平掉今天开的铁蝶式策略（Iron Butterfly），
+to close the butterfly that i
+
+330
+00:15:15,044 --> 00:15:17,900
+这就是在ThinkorSwim（交易平台）里实际的铁蝶式策略。
+opened today this is the actual iron fly if you're in thinkorswim
+
+331
+00:15:18,300 --> 00:15:20,560
+它会标记为铁鹰策略 但其实
+it will label it as an iron condor but this
+
+332
+00:15:20,560 --> 00:15:22,820
+如果我要检查的话 这只是为了
+is if i were to check this is just to
+
+333
+00:15:22,820 --> 00:15:24,402
+方便我给你们演示
+make it easy for me to demonstrate
+
+334
+00:15:24,402 --> 00:15:25,984
+我可以给你们展示
+for you guys uh i can show
+
+335
+00:15:25,984 --> 00:15:27,114
+这就是
+you guys this is the
+
+336
+00:15:27,114 --> 00:15:29,600
+今天开的新头寸 而这是
+new position that was open today versus this is the um
+
+337
+00:15:30,400 --> 00:15:32,707
+我们现在讨论的这个头寸 所以
+position in which we're talking about right here so it's
+
+338
+00:15:32,707 --> 00:15:35,014
+一开始开铁蝶式策略的时候
+the same thing when you initially open the iron butterfly
+
+339
+00:15:35,014 --> 00:15:36,398
+这是权利金收入
+it is a credit and this
+
+340
+00:15:36,398 --> 00:15:37,782
+这里是平仓订单的模拟
+right here is a mock-up of
+
+341
+00:15:37,782 --> 00:15:39,166
+平仓订单会是
+the closing order which would be
+
+342
+00:15:39,166 --> 00:15:42,396
+支出 也就是说
+a debit so it's pretty much saying i'm going to buy it back for
+
+343
+00:15:42,800 --> 00:15:45,678
+我要以更低的价格回购 因为我一开始卖出时
+a cheaper price because when i sold it initially i
+
+344
+00:15:45,678 --> 00:15:48,268
+收到了82.25美元的权利金
+received 82.25 in credit and now if i were to
+
+345
+00:15:48,268 --> 00:15:54,024
+现在如果回购的话 价格是79.35美元 对我有利 所以这个头寸目前是盈利的
+buy it back it'd be going for 79.35 which is good for me and that's why the position is currently profitable
+
+346
+00:15:55,200 --> 00:15:56,483
+此外 我们还可以看到
+on top of that we can see
+
+347
+00:15:56,483 --> 00:15:57,399
+为了确保
+that just to make sure
+
+348
+00:15:57,399 --> 00:15:59,599
+这里是同一个头寸 你们可以看到
+it's the same thing right here you can see that i am
+
+349
+00:16:00,800 --> 00:16:05,500
+平仓订单是回购4000点看涨期权 然后回购4000点看跌期权
+The closing order would be to buy back the 4,000 call and then buy back the 4,000 put.
+
+350
+00:16:05,800 --> 00:16:07,984
+然后我们会平掉
+And then we would be closing out
+
+351
+00:16:07,984 --> 00:16:09,856
+4090点看涨期权 然后平掉
+the 4090 call and then closing out
+
+352
+00:16:09,856 --> 00:16:12,976
+3900点看跌期权 这里看到的就是这个
+the 3,900 put. And that's exactly what we see right here.
+
+353
+00:16:13,600 --> 00:16:14,700
+所以数字都对得上
+So the numbers all match up.
+
+354
+00:16:14,700 --> 00:16:15,600
+是同一笔交易
+It's the same trade.
+
+355
+00:16:16,200 --> 00:16:20,700
+通常我在ThinkorSwim上提交订单后
+Whenever usually I submit my orders on TOS, thinkorswim, I'll then go over to option strat.
+
+356
+00:16:20,700 --> 00:16:22,409
+会去OptionStrat（期权策略分析工具）
+I will save the trade and then I
+
+357
+00:16:22,409 --> 00:16:23,690
+保存交易 然后
+will manually just make sure that
+
+358
+00:16:23,690 --> 00:16:25,399
+手动确认成本价是否匹配
+the numbers for the cost basis matched up.
+
+359
+00:16:25,600 --> 00:16:27,834
+这样在iPad或手机上也能轻松跟踪
+And then this makes it easy to track on my iPad or
+
+360
+00:16:27,834 --> 00:16:30,999
+外出时无法查看ThinkorSwim的风险收益曲线时也能用
+on my phone when I'm on the go and I can't view the TOS. OS risk profile.
+
+361
+00:16:31,300 --> 00:16:33,500
+另外，这也是跟踪交易的一个好方法，
+Also, just another good way to keep track of your
+
+362
+00:16:33,500 --> 00:16:36,800
+同时也能把交易分享给你们，进一步解释。
+trades as well as be able to present them to you guys to further explain.
+
+363
+00:16:36,800 --> 00:16:39,800
+因为你们在量化交易应用（QTA）的Discord里也看到了，我就是这么分享的。
+Because as you guys saw within the Quant Trading Up Discord, this is how I shared.
+
+364
+00:16:39,800 --> 00:16:42,700
+这样别人看起来或跟进起来都更方便。
+It makes it easy for people to read or follow along.
+
+365
+00:16:43,300 --> 00:16:45,444
+现在我只剩一手仓位。所以
+I only have one lot left. So that
+
+366
+00:16:45,444 --> 00:16:50,000
+现在风险管理起来就简单多了，因为我已经减仓大部分头寸。
+makes it very easy to manage the risk now because I've scaled out most of the position.
+
+367
+00:16:50,300 --> 00:16:53,300
+我在这里获利了结大部分仓位的原因是
+And the reason I took most of my profit here is because
+
+368
+00:16:53,300 --> 00:16:55,300
+隐含波动率已经下降了足够多。所以
+implied volatility had already decreased enough. So I
+
+369
+00:16:55,300 --> 00:16:58,300
+我得到了我一直寻找的所谓‘波动率暴跌’效应。
+got the quote unquote volatility crush in which I was looking for.
+
+370
+00:16:58,600 --> 00:17:02,300
+这是几天后的情况。保证金收益率已经达到了10%。
+So this is a few days later. It had already hit a 10% return on margin.
+
+371
+00:17:02,400 --> 00:17:04,075
+然后这时候是
+And then this now was the
+
+372
+00:17:04,075 --> 00:17:05,750
+7号。所以我认为这里
+seventh. So I believe right here
+
+373
+00:17:05,750 --> 00:17:09,100
+应该就是7号。对，就是在这里，7号。
+would have been the seventh. So yes, right here on the seventh.
+
+374
+00:17:09,900 --> 00:17:16,700
+这时候我开始获利了结部分仓位，因为保证金收益率达到了20%左右。
+This is essentially when I started taking some profit as it had hit the 20% return, just about 20% return on margin.
+
+375
+00:17:16,700 --> 00:17:19,857
+这是当时盈亏的截图，
+And this was a screenshot of what the P&L had looked like
+
+376
+00:17:19,857 --> 00:17:23,742
+当时只剩两手。所以我又平掉了一手。
+at the time with there was just two left. So I had closed out another one.
+
+377
+00:17:23,500 --> 00:17:25,760
+现在我只持有最后一手，
+And now I'm just holding the final one,
+
+378
+00:17:25,760 --> 00:17:27,455
+想尽可能多挤出一点收益。这是我会做的事。
+looking to squeeze out as much
+
+379
+00:17:27,455 --> 00:17:29,998
+尽我所能。这是我会做的事。
+as I can. That's something that I would do.
+
+380
+00:17:30,000 --> 00:17:31,800
+但如果是刚开始交易这些策略，我不建议你们这么做。
+It's not something I would encourage if you're now starting
+
+381
+00:17:31,800 --> 00:17:34,500
+你们需要给自己设定一套规则。
+out to trade these. You want to have some sort of a system for yourself.
+
+382
+00:17:34,600 --> 00:17:38,200
+一旦保证金收益率达到15%，就获利了结。
+Once you hit 15% return on your capital, take the profit.
+
+383
+00:17:38,500 --> 00:17:39,957
+或者达到20%、25%，对于这种交易来说
+Or once you hit 20%, 25% would really
+
+384
+00:17:39,957 --> 00:17:44,814
+25%可能有点太贪了，因为你得持有更久。
+be pushing it for these types of trades because you will have to stay in them a little bit longer.
+
+385
+00:17:45,300 --> 00:17:47,564
+这意味着你得能承受
+It means you'll have to be able to eat a
+
+386
+00:17:47,564 --> 00:17:49,375
+更多的宏观时段新闻，
+little bit more of the macro news and
+
+387
+00:17:49,375 --> 00:17:52,998
+还得有经验来调整或管理仓位。
+then you'd want to have the experience with how to come in and adjust or manage.
+
+388
+00:17:53,000 --> 00:17:56,300
+而且，你还得有额外的资金来做调整。
+And then not to mention, you'd want to have capital on the side to make the adjustment.
+
+389
+00:17:56,500 --> 00:17:59,600
+初始交易每手大概是1800美元，
+The initial trade was $1,800, rounded up.
+
+390
+00:18:00,100 --> 00:18:01,723
+四舍五入后的数字，所以每个头寸每手
+per lot so per position per
+
+391
+00:18:01,723 --> 00:18:03,075
+我开仓的这个差价组合成本是1700美元
+spread in which i opened 1700
+
+392
+00:18:03,075 --> 00:18:05,239
+今天调仓时又花了
+bucks when i made the adjustment here today
+
+393
+00:18:05,239 --> 00:18:06,504
+另外1700美元
+i had to add another 17
+
+394
+00:18:06,504 --> 00:18:07,769
+所以现在我持有的是
+1800 bucks so now i'm in
+
+395
+00:18:07,769 --> 00:18:09,287
+可以称之为
+what's called uh you can call
+
+396
+00:18:09,287 --> 00:18:12,577
+蝙蝠差价组合之类的，就是把两个
+it the batman spread or something like that that's when you combine two
+
+397
+00:18:14,700 --> 00:18:18,100
+不同的蝶式策略组合在一起
+to a different butterfly so what we have right here is the original
+
+398
+00:18:19,100 --> 00:18:20,451
+这里原来的
+Iron fly and then you
+
+399
+00:18:20,451 --> 00:18:22,342
+各位可以看到，今天我又加了
+guys can see right here I added
+
+400
+00:18:22,342 --> 00:18:24,503
+一个看跌蝶式策略
+this long put butterfly here today and then
+
+401
+00:18:24,503 --> 00:18:27,204
+把这两个组合起来
+the combination of those two is what gives us a
+
+402
+00:18:27,204 --> 00:18:28,825
+就形成了这样的风险收益曲线
+risk profile that looks like that
+
+403
+00:18:28,825 --> 00:18:31,797
+但这是最初的交易，我们现在看的是
+But this is the initial trade again as we're looking right
+
+404
+00:18:32,300 --> 00:18:35,500
+为什么今天我要做这个调整呢？
+if I were to show you guys Why did I make the adjustment here today?
+
+405
+00:18:35,500 --> 00:18:38,500
+我们来看看这个仓位本身
+Let's take a look at the position is itself.
+
+406
+00:18:38,900 --> 00:18:45,700
+价格先上涨，然后又大幅回落
+So we have a Price has rallied and it ended up selling off pretty aggressively.
+
+407
+00:18:45,800 --> 00:18:47,200
+昨天是周四，今天是周五
+Yesterday was Thursday and today's Friday.
+
+408
+00:18:47,500 --> 00:18:50,100
+结果突破了这个价位
+And we ended up breaching this level.
+
+409
+00:18:50,300 --> 00:18:52,877
+这时候，按照惯例，
+At this point, again, traditionally, I would have
+
+410
+00:18:52,877 --> 00:18:55,454
+我本应该在盈利达到20%时
+closed out the entire trade once I was
+
+411
+00:18:55,454 --> 00:18:58,676
+平掉整个仓位，因为这基本上触发了稳定的获利目标
+up to 20% because it essentially hits the consistent price target.
+
+412
+00:18:59,100 --> 00:19:01,500
+如果目标是15%，那获利会很稳定
+15%, you're definitely going to be pretty consistent.
+
+413
+00:19:01,700 --> 00:19:03,800
+如果目标是20%，获利也会很稳定
+If you're aiming for 20%, you'll be pretty consistent.
+
+414
+00:19:03,800 --> 00:19:06,200
+25%同样相对稳定
+25% is also fairly consistent.
+
+415
+00:19:06,200 --> 00:19:08,496
+但如果在这些交易中追求50%的收益
+When you start aiming for about 50% return on these
+
+416
+00:19:08,496 --> 00:19:10,537
+难度就大了
+types of trades, that's where it gets difficult.
+
+417
+00:19:10,537 --> 00:19:13,088
+而且我指的是相对于使用的资金50%的收益
+And I'm also talking about 50% return on your capital used.
+
+418
+00:19:13,900 --> 00:19:15,744
+当然，这里也有赚大钱的机会
+Obviously, there's opportunity to make a
+
+419
+00:19:15,744 --> 00:19:18,203
+因为如果我们看到期日
+ton of money here because if we were
+
+420
+00:19:18,203 --> 00:19:21,891
+到期时最大盈利是8000美元
+to take a look at expiration, this $8,000 max profit is at expiration.
+
+421
+00:19:22,200 --> 00:19:27,300
+所以如果我一直持有到期，再过35天到期剩余天数，这就是能拿到的最大收益。
+So if I was to hold it all the way, another 35 more DTE, that's exactly how much profit there is.
+
+422
+00:19:27,600 --> 00:19:30,000
+如果我持有这个头寸，比如再持有两周，
+If I was to hold this position for, say, for example, another two.
+
+423
+00:19:30,100 --> 00:19:35,300
+而价格在这个附近波动，那还能再赚800美元，
+more weeks and the price was hovering around here that's another 800 bucks so 800 is
+
+424
+00:19:35,700 --> 00:19:37,205
+这800美元差不多是
+it's almost it's about 45 or 40 something
+
+425
+00:19:37,205 --> 00:19:39,211
+使用资金的40%到45%左右的回报率。
+percent return on how much capital being used
+
+426
+00:19:39,211 --> 00:19:41,217
+这收益潜力确实很不错，
+and that's that's that's a great you know
+
+427
+00:19:41,217 --> 00:19:43,223
+但前提是我还得继续持有这个交易至少两周，
+profit potential however i'd still have to remain
+
+428
+00:19:43,223 --> 00:19:45,731
+除非
+in this trade for at least another two weeks unless
+
+429
+00:19:45,731 --> 00:19:47,235
+隐含波动率在这里下降，
+of course implied volatility did come
+
+430
+00:19:47,235 --> 00:19:49,993
+那样你们会发现，我们可能会在
+down here then you see we'll probably hit the target within
+
+431
+00:19:50,800 --> 00:19:54,300
+几天内就达到目标，如果市场反弹的话。
+you know a couple more days here that's if the the market bounces but
+
+432
+00:19:54,700 --> 00:19:56,950
+我想让你们从这段视频中记住的一点是交易的简易性，
+One thing I want you guys to take away from
+
+433
+00:19:56,950 --> 00:20:00,100
+或者说交易的舒适度。
+this video is the ease of trading it or the comfortability of trading it.
+
+434
+00:20:00,200 --> 00:20:04,200
+让交易舒适的原因之一，是我选择了51天到期剩余天数。
+What makes this comfortable is A, I went 51 DTE.
+
+435
+00:20:04,500 --> 00:20:11,100
+我是在隐含波动率已经大幅上升后入场，之前它维持在较低水平一段时间。
+I went with the trade as implied volatility had already spiked after it was pretty low for a bit.
+
+436
+00:20:11,400 --> 00:20:14,500
+所以我已经有几个因素在帮我这个交易了。
+So I already had a couple things working with the trade.
+
+437
+00:20:14,800 --> 00:20:19,800
+选择足够长的到期剩余天数，可以让你的Gamma敞口降到很低。
+Going far enough with your DTE allows you to not have much gamma exposure.
+
+438
+00:20:20,000 --> 00:20:23,200
+通常来说，这也意味着你的Delta会比较小。
+And then it also means you have a lower delta, generally speaking.
+
+439
+00:20:23,400 --> 00:20:24,346
+所以，尤其是当你做
+So whenever, especially if
+
+440
+00:20:24,346 --> 00:20:26,239
+平值策略的时候，这意味着
+you're going at the money. So it means
+
+441
+00:20:26,239 --> 00:20:30,499
+短期内的波动不会让我特别担心。
+the volatility that's happening in the short term is not something that's going to bother me so much.
+
+442
+00:20:30,500 --> 00:20:34,200
+所以即使价格这里波动很大，而且本周早些时候还有大涨，
+So even though the price is pretty volatile here and then we had this big rally earlier in the week.
+
+443
+00:20:34,700 --> 00:20:36,328
+到这时候，我已经
+At this point, I was already
+
+444
+00:20:36,328 --> 00:20:38,499
+赚得盆满钵满了，更不用说
+well profitable, not to mention the fact that
+
+445
+00:20:38,499 --> 00:20:40,399
+这次上涨中隐含波动率还下降了。
+implied volatility had decreased on this rally.
+
+446
+00:20:40,700 --> 00:20:43,900
+这意味着这些价格波动对我影响不大。
+It means all this price action here is not really of much concern.
+
+447
+00:20:44,000 --> 00:20:48,145
+就算标普500指数期权（SPX）出现大跌，
+And even after the scary drop within the SPX, we're talking about
+
+448
+00:20:48,145 --> 00:20:51,254
+从这里到这里，这是整整200点，
+from here to here, this is a full 200 and...
+
+449
+00:20:51,900 --> 00:20:54,140
+或者225点左右，平均下来
+225 points or so will just average around
+
+450
+00:20:54,140 --> 00:20:56,380
+大约230点或225点的跌幅，
+it around 230 points 225 point drop and then
+
+451
+00:20:56,380 --> 00:20:58,940
+这一周这里是周一
+in this this week this is monday here
+
+452
+00:21:00,100 --> 00:21:02,000
+到周五，这波动幅度太大了
+to Friday, that's insane.
+
+453
+00:21:02,000 --> 00:21:04,900
+对标普500指数期权（SPX）来说，这样的区间波动简直疯狂
+That's crazy from a range perspective for the SPX.
+
+454
+00:21:05,200 --> 00:21:09,500
+不过，我自己挺淡定的，也不是特别担心
+However, I'm calm or it's not of much worry.
+
+455
+00:21:09,800 --> 00:21:12,800
+现在看当前现价，这些图表上的分割线
+Now that the current spot price, so these slices that you see
+
+456
+00:21:12,800 --> 00:21:14,800
+你在这里看到的这些分割线
+on the chart right here is what's referred
+
+457
+00:21:14,800 --> 00:21:17,800
+这些线就称为分割线
+to as the, these lines are what's referred to as the slices.
+
+458
+00:21:17,800 --> 00:21:20,600
+这是标普500指数期权（SPX）当前的收盘价
+So this is the current closing price of the SPX.
+
+459
+00:21:20,600 --> 00:21:26,300
+如果市场开盘，这条线会跟着市场价格实时移动
+If the market was open, this line would be moving around and it's following the current price of the market.
+
+460
+00:21:26,700 --> 00:21:29,123
+然后我在前面设置一个分割线
+And then I just enter in a slice up front
+
+461
+00:21:29,123 --> 00:21:32,999
+再在下面设置一个分割线，因为我想大概了解一下
+here and then a slice back down below here because I want to have an idea.
+
+462
+00:21:33,000 --> 00:21:36,200
+这个红色小标记显示的是这个组合大概什么时候会开始亏损
+This little red is showing where this spread will essentially go red.
+
+463
+00:21:36,300 --> 00:21:37,000
+现在市场已经收盘了
+Now, the market is closed.
+
+464
+00:21:37,000 --> 00:21:38,700
+我们直接快进到
+Let's actually just jump forward to.
+
+465
+00:21:39,500 --> 00:21:41,833
+周三，因为基本上
+Wednesday because that's essentially I mean to next week Monday
+
+466
+00:21:41,833 --> 00:21:44,166
+那是下周一市场再次开盘的时间
+because that's the next time the market would be open
+
+467
+00:21:44,166 --> 00:21:46,499
+我想知道如果
+I want to have some sort of an idea if
+
+468
+00:21:46,499 --> 00:21:48,599
+市场下跌约1.5%，这个组合就会开始接近盈亏平衡，
+the market was to drop about 1.5% That's exactly where
+
+469
+00:21:48,599 --> 00:21:53,265
+到这里你可以看到我的利润基本上会消失
+this spread will start going break-even and then we can see right here My profit would essentially kind of disappear
+
+470
+00:21:54,100 --> 00:21:57,075
+而目前这个头寸在周一理论上
+and right now this position on Monday Theoretically would be
+
+471
+00:21:57,075 --> 00:22:00,050
+如果市场反弹约3%，会上涨约323美元
+up about three hundred and twenty three dollars if the
+
+472
+00:22:00,050 --> 00:22:06,000
+如果市场在周一前反弹3%，这个头寸会上涨6.3%
+market did bounce back up about three percent by Monday This position would be up a six point three percent.
+
+473
+00:22:06,200 --> 00:22:07,845
+这些数字只是我随便设的
+These numbers are arbitrary I just put these
+
+474
+00:22:07,845 --> 00:22:09,490
+我只是自己在这里随便试试
+in here for myself just because again the
+
+475
+00:22:09,490 --> 00:22:13,192
+因为市场之前跌得挺厉害的，如果反弹的话，我预期可能会有3%左右的反弹
+market has sold off pretty aggressively So if we did bounce I would expect something like a 3% bounce
+
+476
+00:22:13,800 --> 00:22:16,205
+通常我都会设成1%上涨
+Usually I just keep it one to one 1% up
+
+477
+00:22:16,205 --> 00:22:18,076
+1%下跌，或者调整为2%上涨
+1% down or I'll change it put 2% up 2%
+
+478
+00:22:18,076 --> 00:22:19,679
+2%下跌
+down It's just you can put
+
+479
+00:22:19,679 --> 00:22:21,282
+你可以在这里输入任何你想要的数字
+in whatever numbers you want here
+
+480
+00:22:21,282 --> 00:22:26,627
+中间的这个会自动移动，如果我快进到下周
+the middle one again moves on its own and automatically now if I was to jump forward to next week
+
+481
+00:22:29,000 --> 00:22:30,000
+到下周五，我们会得到...
+A Friday, we get a...
+
+482
+00:22:30,900 --> 00:22:33,900
+另一个想法或更好的想法，你们可以看到
+another idea or a better idea, you guys can see
+
+483
+00:22:33,900 --> 00:22:36,900
+盈亏平衡点现在开始收窄，因为
+that the break-even is now starting to shrink because as
+
+484
+00:22:36,900 --> 00:22:41,700
+随着时间流逝，这个盈亏平衡点会逐渐上升到这里的盈亏平衡点。
+time passes by, this break-even is going to start rising up to the break-even right here.
+
+485
+00:22:41,700 --> 00:22:45,100
+这是到期时的盈亏平衡点。这条白线就是在显示这个。
+This is the break-even at expiration. That's what this white line is showing us.
+
+486
+00:22:45,100 --> 00:22:47,200
+这是到期时的盈亏曲线。
+This is the P&L at expiration.
+
+487
+00:22:47,500 --> 00:22:52,500
+所以我需要标普500指数期权（SPX）的价格在到期时处于这两个价格之间。
+So I need the price of the SPX to be between these two prices at expiration.
+
+488
+00:22:52,700 --> 00:22:56,100
+这也就是我在图表上标出的行权价。
+And that's the strikes that I put that I outline on my chart here.
+
+489
+00:22:56,100 --> 00:22:58,900
+所以我知道只要价格在这个范围内，一切都没问题。
+So I know as long as the price is within here, everything is okay.
+
+490
+00:22:58,900 --> 00:23:02,600
+但现在可以看到价格不在这个范围内了，它已经超出了我的区间。
+But now we can see that the price is not with, it's no longer within my range.
+
+491
+00:23:02,800 --> 00:23:05,440
+我确实还有30多天的到期剩余天数，但我不想
+I do still have 30 something days till expiration, but I don't
+
+492
+00:23:05,440 --> 00:23:07,360
+只是坐等它回到区间内，
+want to just sit around and hope it
+
+493
+00:23:07,360 --> 00:23:11,920
+因为如果市场真的跌到3800点会怎样？
+goes back within range because now what would happen if the market does go all the way down to 3,800?
+
+494
+00:23:12,500 --> 00:23:14,021
+3800点是另一个Gamma敞口的
+3,800 is another level of high
+
+495
+00:23:14,021 --> 00:23:18,890
+汇聚位。这里有很多汇聚因素。有足够的理由让我们相信可能会跌到3800点。
+gamma. There's a lot of confluences. There's enough reasons to believe that we might go to 3,800.
+
+496
+00:23:19,800 --> 00:23:22,200
+所以我们不需要只是坐以待毙，无所作为。
+So that's why we don't have to just sit on our hands and do nothing.
+
+497
+00:23:22,300 --> 00:23:25,300
+我们可以告诉自己，好，再开一个铁蝶式策略。
+We can tell ourselves, okay, let's open up another butterfly.
+
+498
+00:23:25,600 --> 00:23:27,980
+在这种情况下，这个铁蝶式策略的Delta是负的，
+In this case, this butterfly has a negative delta and
+
+499
+00:23:27,980 --> 00:23:30,599
+而你们可以看到这个铁蝶式策略的Delta是正的。
+you guys can see that this butterfly has a positive delta.
+
+500
+00:23:30,700 --> 00:23:32,300
+所以我做的只是在降低Delta。
+So all I'm doing is just cutting down the delta.
+
+501
+00:23:32,300 --> 00:23:34,953
+如果这个价差策略的Delta大约是4，
+If my delta is about four on this spread, and
+
+502
+00:23:34,953 --> 00:23:36,810
+然后我加入这个头寸，
+then I'm adding this position, this is
+
+503
+00:23:36,810 --> 00:23:38,933
+这个头寸的Delta是负的，我们算它-1.5。
+a delta of, it's short delta, we'll say 1.5.
+
+504
+00:23:39,600 --> 00:23:41,300
+就是4减1.5。
+That's four minus 1.5.
+
+505
+00:23:41,600 --> 00:23:46,200
+所以如果我回到这里，现在来看看两个头寸都开着的情况。
+So if I were to come back here and now let's take a look at the both positions open.
+
+506
+00:23:47,000 --> 00:23:49,200
+你们可以看到我的Delta大约是3.68。
+You guys can see that my delta is about 3.68.
+
+507
+00:23:49,200 --> 00:23:53,600
+哦，其实不对，我们看当前时间。我现在的Delta是2.84。
+Well, actually, no, let's go to current time. My delta right now is currently 2.84.
+
+508
+00:23:53,700 --> 00:23:55,100
+所以其实没那么高。
+So it's not really that much.
+
+509
+00:23:55,100 --> 00:23:57,341
+这只是说标普500指数期权（SPX）每变动1点，
+This is just saying for every one point the SPX
+
+510
+00:23:57,341 --> 00:23:59,134
+我的盈亏基本上就会变动这么多。
+moves, that's how much essentially my P&L
+
+511
+00:23:59,134 --> 00:24:01,823
+会随着Delta的变化而变动。这是基于我持有的Delta值。
+is going to move. It's based on the delta that I have.
+
+512
+00:24:01,700 --> 00:24:03,600
+所以Delta敞口是方向性的。
+So delta exposure is directional.
+
+513
+00:24:04,000 --> 00:24:06,633
+Theta值则代表这个组合
+Theta is how much this spread is essentially
+
+514
+00:24:06,633 --> 00:24:08,937
+理论上每天能赚多少钱，大概每天
+kind of making every day, theoretically, $25 a
+
+515
+00:24:08,937 --> 00:24:11,570
+仅通过持有这个头寸就能赚25美元。
+day just to continue to hold this position.
+
+516
+00:24:12,100 --> 00:24:17,800
+而Vega值则表示隐含波动率每变动1%，这个组合的盈亏会受到多大影响。
+And then the vega is how much the spread is going to be affected by a 1% move in implied volatility.
+
+517
+00:24:17,900 --> 00:24:21,300
+那我们假设一下。如果市场稍微上涨一点，
+So if I were to come here. We know if the market was to go up a little bit.
+
+518
+00:24:22,000 --> 00:24:23,236
+假设市场真的上涨了，
+So let's just say the market did go
+
+519
+00:24:23,236 --> 00:24:25,245
+而且不是一点点，假设它回涨3%。
+up, not even a little bit. Let's just say it goes back up 3%.
+
+520
+00:24:25,500 --> 00:24:28,000
+隐含波动率很可能会下跌。
+Implied volatility is very likely to drop.
+
+521
+00:24:28,000 --> 00:24:32,000
+理论上假设隐含波动率下跌约3%。
+Let's just say theoretically implied volatility was to drop about 3%.
+
+522
+00:24:32,400 --> 00:24:37,100
+而且随着这个涨幅，隐含波动率可能会跌得更多。
+Also, with that move, it's more likely that implied volatility would probably drop even more than that.
+
+523
+00:24:37,100 --> 00:24:40,500
+如果市场涨幅这么大，那这时候就是波动率崩盘了。
+If the market was to go up that much, it would be a volatility crush at that point.
+
+524
+00:24:40,800 --> 00:24:43,000
+你们可以看到盈亏曲线的变化。
+You guys can see what happens to the P&L curve.
+
+525
+00:24:43,300 --> 00:24:50,000
+现在图表显示，如果隐含波动率下跌，盈利潜力会好很多。
+The graph now is showing a much better profit potential if implied volatility was to drop.
+
+526
+00:24:50,100 --> 00:24:53,700
+某种程度上，如果我简化一下这些
+And that's because in a sense, if I was to simplify how
+
+527
+00:24:53,700 --> 00:24:56,100
+希腊字母（期权敏感性指标）对这个组合的影响，
+a lot of these Greeks are impacting this
+
+528
+00:24:56,100 --> 00:24:57,600
+那就是：
+spread, it would be this
+
+529
+00:24:57,600 --> 00:24:59,100
+这个组合每下跌1%的隐含波动率，
+spread would be making one
+
+530
+00:24:59,100 --> 00:25:02,700
+就能赚150美元。
+hundred and fifty dollars per one percent that implied volatility goes down.
+
+531
+00:25:02,700 --> 00:25:07,200
+反过来，我们把数值调回零。
+And then the same thing if we go in reverse, let's drop this back to zero.
+
+532
+00:25:07,900 --> 00:25:09,414
+你们可以看到，310美元，
+You guys can see, so $310,
+
+533
+00:25:09,414 --> 00:25:11,837
+如果我把隐含波动率增加1%，
+if I was to increase this by the
+
+534
+00:25:11,837 --> 00:25:17,289
+你们可以看到盈亏下降了将近100美元，这和Vega值很接近。
+1%, you guys can see that this dropped by almost $100, which is pretty close to what the Vega is.
+
+535
+00:25:18,200 --> 00:25:20,131
+如果我把这个数值增加2美元，
+If I was to increase this by $2,
+
+536
+00:25:20,131 --> 00:25:22,337
+抱歉，如果我把它降低1%，
+I mean, sorry, if I was to decrease
+
+537
+00:25:22,337 --> 00:25:25,371
+你们可以看到现在盈亏上涨了400美元。
+this by 1%, you guys can see that now this is up $400.
+
+538
+00:25:26,600 --> 00:25:30,000
+而20美元和回到零时的310美元相比，
+And $20 versus if I go back to zero, you see it's about 310.
+
+539
+00:25:30,200 --> 00:25:35,100
+所以Vega值会受到这个组合波动率变化的影响。
+So the vega is affected by how much the volatility is changing for this spread.
+
+540
+00:25:35,300 --> 00:25:38,300
+所以我们希望隐含波动率下降，这意味着如果市场
+So we want implied volatility to decrease, which means if the market
+
+541
+00:25:38,300 --> 00:25:40,300
+上涨，隐含波动率可能会
+goes up, implied volatility is likely to go
+
+542
+00:25:40,300 --> 00:25:42,300
+下降。这对这个价差组合来说非常好。
+down. And that's really good for this spread.
+
+543
+00:25:42,500 --> 00:25:46,481
+但如果隐含波动率今天没有继续下降，
+However, if implied volatility did not continue to go down today, it
+
+544
+00:25:46,481 --> 00:25:49,799
+反而继续上升，这会对这个价差组合造成不利影响。
+actually continued to go up, which is hurting this spread.
+
+545
+00:25:49,800 --> 00:25:52,700
+不过，Theta值（时间衰减）仍在持续流逝。
+However, theta is time decay is still passing by.
+
+546
+00:25:53,000 --> 00:25:58,600
+通过开启另一个铁蝶式策略，我现在的盈亏平衡点已经延伸了些。
+By opening up this other butterfly, I've extended my break evens now a little bit further.
+
+547
+00:25:58,700 --> 00:26:03,100
+同时，到期时的盈利区间也扩大了。
+And then I've also increased the range for profit at expiration.
+
+548
+00:26:03,200 --> 00:26:05,700
+而且我的Delta风险也降低了。
+And I've also reduced my risk to delta.
+
+549
+00:26:06,000 --> 00:26:10,400
+所以，如果我们讨论的是单笔交易的话，
+So this is, you know, if we're talking about. We're talking about a single trade.
+
+550
+00:26:10,500 --> 00:26:14,294
+对于这种头寸，假设你的账户规模
+And for positions like this, let's just say you have
+
+551
+00:26:14,294 --> 00:26:17,329
+大约在3万到5万美元左右，
+about a $30,000 to $50,000 account size or something like
+
+552
+00:26:17,329 --> 00:26:22,640
+这是运行这类策略的理想账户规模。
+that, which is the preferred account size for someone running these types of strategies.
+
+553
+00:26:23,800 --> 00:26:26,366
+如果你有10万美元，或者使用组合保证金，
+If you have about $100,000 or if you're in portfolio margin, then
+
+554
+00:26:26,366 --> 00:26:29,166
+那就更棒了，你可以做很多这类交易。
+that's amazing. You can do a lot with this type of stuff.
+
+555
+00:26:29,400 --> 00:26:32,500
+但假设你只能同时持有5个这样的头寸。
+But let's just say you were to be in about five of these.
+
+556
+00:26:32,500 --> 00:26:35,550
+我通常对遵守模式日交易者规则（PDT）或账户规模在3万美元的人建议，
+Because I say with anyone around PDT or with a $30,000 account
+
+557
+00:26:35,550 --> 00:26:38,322
+假设你持有的不是5个，
+size, let's just say you're in, we'll say, not five.
+
+558
+00:26:38,800 --> 00:26:43,700
+我们刷新一下页面，假设是4个。
+Let's just refresh this page and we'll say four of these.
+
+559
+00:26:45,000 --> 00:26:49,300
+好，这样持有4个大约需要7000美元。
+All right, there we go. All right, so you're in four of these is about $7,000.
+
+560
+00:26:49,300 --> 00:26:52,615
+在资金分配方面，你需要把这个数字乘以2，
+The reason you always need to multiply this by two in terms
+
+561
+00:26:52,615 --> 00:26:54,825
+因为如果需要调整头寸，
+of capital allocation is because if you need
+
+562
+00:26:54,825 --> 00:26:59,798
+要调整头寸的话，成本可能和开仓时差不多。
+to make an adjustment, it's probably going to cost the same amount in which you open the trade.
+
+563
+00:27:00,100 --> 00:27:02,275
+所以7000美元，再预留7000美元，
+So $7,000, keep $7,000 on the side, which means if
+
+564
+00:27:02,275 --> 00:27:04,721
+也就是说，如果你的账户有3万美元，
+you have a $30,000 account, you need to allocate about
+
+565
+00:27:04,721 --> 00:27:07,711
+你需要分配大约50%的资金来运行这4个头寸。
+50% of your account to be able to run four of these.
+
+566
+00:27:08,800 --> 00:27:12,300
+如果不想持有这么多，那就减少头寸规模。
+If you don't want to be running that much of these, then reduce the size.
+
+567
+00:27:12,300 --> 00:27:20,100
+所以这是衡量你可以开多少个或最大开仓量的一个好方法。
+So that's a good measure for how many of these or the maximum you're going to allow yourself to open.
+
+568
+00:27:20,100 --> 00:27:21,845
+想象一下，如果你有个上司，
+Imagine as if you had a boss and
+
+569
+00:27:21,845 --> 00:27:24,899
+你得去向上司汇报。
+you have to go to your boss. In this case, the boss is yourself.
+
+570
+00:27:25,000 --> 00:27:28,422
+这种情况下，上司就是你自己。
+But imagine if you had to go to a boss and file
+
+571
+00:27:28,422 --> 00:27:32,699
+提交一份报告，说‘我需要这么多资金投资这件事’
+a report saying, hey, I need this much capital to invest in this particular thing.
+
+572
+00:27:33,000 --> 00:27:37,800
+然后他们预期这笔投资的回报率是15%，基于所投入的资金量
+And they expect the return on the investment is 15% return on how much we're using.
+
+573
+00:27:37,800 --> 00:27:40,800
+但这不是我们想关注的，因为显然这个很吸引人
+It's not this. We don't want to pay attention to this because obviously this is very appealing.
+
+574
+00:27:41,100 --> 00:27:42,200
+真正要看的是这个
+But it's really this right here.
+
+575
+00:27:42,300 --> 00:27:46,500
+如果我们能拿到20%的回报，保持这个数字的话
+If we can get a 20% return, if we were to keep the numbers.
+
+576
+00:27:47,200 --> 00:27:48,000
+抱歉，又重复了
+Sorry about that again.
+
+577
+00:27:48,000 --> 00:27:51,644
+我讨厌有时候这些数值太容易调来调去
+I hate that it's so easy sometimes to slide these things around,
+
+578
+00:27:51,644 --> 00:27:53,466
+那我们把它调高一点
+but let's just jump this up
+
+579
+00:27:53,466 --> 00:27:56,199
+方便演示就好
+to make it nice and easy for demonstration purposes.
+
+580
+00:27:56,200 --> 00:28:03,300
+我们保持在5，或者直接调到6，这样我们差不多有1万美元，对吧？
+We'll keep it at five and let's actually let's go to six and We have close to $10,000, right?
+
+581
+00:28:03,800 --> 00:28:05,977
+20%的回报大概是2000多美元
+So 20% return on this is a little over two
+
+582
+00:28:05,977 --> 00:28:07,186
+不过我们就算
+grand, but let's just say
+
+583
+00:28:07,186 --> 00:28:10,815
+2000美元。这种情况下持仓13天，也就是两周
+two grand. And this in this case is a 13 day hold. So that's two weeks.
+
+584
+00:28:11,900 --> 00:28:17,860
+所以，4万美元的账户可以同时做6个这样的策略
+So with, we'll say a $40,000 account can afford to be in six of these
+
+585
+00:28:17,860 --> 00:28:20,840
+因为理论上你需要至少
+because theoretically you're going to need at
+
+586
+00:28:20,840 --> 00:28:25,522
+2.2万美元的购买力（BP）作为4万美元账户的预留资金
+least $22,000 in BP that you want to reserve out of your 40.
+
+587
+00:28:27,100 --> 00:28:30,000
+这可以成为你的主要收益策略
+And this can be your main, you know, income generating.
+
+588
+00:28:30,200 --> 00:28:35,900
+只要VIX指数上涨5%或10%就能用
+play or strategy whenever the VIX increases by 5% or 10%.
+
+589
+00:28:36,000 --> 00:28:38,900
+你要能设定自己的参数，做回测之类的
+You want to be able to set your own parameters, do your own back tests and stuff like this.
+
+590
+00:28:38,900 --> 00:28:41,715
+我只是和你们分享一个案例研究
+I'm just sharing with you one case study of a trade in
+
+591
+00:28:41,715 --> 00:28:44,999
+这是我跑过的一个交易，选择和量化交易应用（QTA）的成员分享
+which I ran that I chose to share with the Quant Trading App members.
+
+592
+00:28:45,300 --> 00:28:46,700
+但这是一个案例，2000美元
+But this is a case here where 2K
+
+593
+00:28:47,700 --> 00:28:50,359
+两周内，假设你能
+within two weeks and assuming you have you're
+
+594
+00:28:50,359 --> 00:28:53,018
+每个月运行一次这样的策略
+able to run a strategy like this once
+
+595
+00:28:53,018 --> 00:28:55,012
+即使持仓两周
+a month or so even though
+
+596
+00:28:55,012 --> 00:28:57,006
+你的条件可能一个月只满足一次
+you're in it for two weeks
+
+597
+00:28:57,006 --> 00:28:59,997
+就那么一次，一年可能有12次机会
+your conditions maybe only are matched once a month
+
+598
+00:29:00,700 --> 00:29:02,542
+每次2000美元
+that right there and you know 12 opportunities
+
+599
+00:29:02,542 --> 00:29:04,120
+一年就是2.4万美元，如果你的账户规模
+within the year with 2k that's 24
+
+600
+00:29:04,120 --> 00:29:05,435
+grand if your account size
+
+601
+00:29:05,435 --> 00:29:09,908
+当然，这假设的是100%的胜率，但实际胜率可能不会每次都这样
+and this is assuming obviously with 100 win rate but not every time the win rate would probably
+
+602
+00:29:11,000 --> 00:29:13,651
+胜率总是会根据市场情况不同而变化，但
+it's always different depending on the market but
+
+603
+00:29:13,651 --> 00:29:15,639
+当然，51天到期剩余天数的话，
+of course obviously with 51 dte you
+
+604
+00:29:15,639 --> 00:29:22,267
+你有充足的时间来对冲、保护、增加一个新仓位、或者扩大盈利区间。
+have plenty of time to come in to hedge, to protect, to add another tent, to extend your profitability zone.
+
+605
+00:29:22,900 --> 00:29:26,900
+但理论上，假设你能完全实现100%的收益，
+But theoretically, let's just say you're able to squeeze out the full 100%.
+
+606
+00:29:27,300 --> 00:29:31,985
+如果你再用1万美元开一个新仓位，你的购买力（BP）就是2万美元，
+And if you add another 10K onto another tent, you're using $20,000
+
+607
+00:29:31,985 --> 00:29:37,096
+2.2万美元，但你不会再以2万美元为目标去追求20%的回报。
+in BP, $22,000, but you're not going to aim for 20% return now on $20,000.
+
+608
+00:29:38,900 --> 00:29:40,100
+这回报会超过4000美元。
+It's going to be over four grand.
+
+609
+00:29:40,100 --> 00:29:44,400
+你仍然会以最初的2000美元作为目标收益。
+You're still going to aim for your initial $2,000 return.
+
+610
+00:29:45,500 --> 00:29:48,300
+这相当于你所用资金的10%回报。
+Which is now 10% return on how much capital you're using.
+
+611
+00:29:48,700 --> 00:29:51,431
+但假设在一个月内，或者一年中你能进行12次这样的交易，
+But let's just say within a given month or you run this
+
+612
+00:29:51,431 --> 00:29:55,072
+包括调整后，你能成功退出，
+trade 12 times out of the year and including with your adjustments, you're able to walk away.
+
+613
+00:29:55,400 --> 00:29:58,000
+当然，这是一个理想化的场景。
+Again, this is an idealized scenario here.
+
+614
+00:29:58,000 --> 00:29:59,200
+那就是2.4万美元的收益。
+That's $24,000 return.
+
+615
+00:30:00,500 --> 00:30:05,800
+在4万美元的账户规模下，年底收益率略高于50%，
+at the end of the year on a $40,000 account size, that's a little bit over a 50%
+
+616
+00:30:06,800 --> 00:30:09,636
+整个账户一年增长50%多，
+growth within an entire account, which is pretty decent for
+
+617
+00:30:09,636 --> 00:30:12,472
+对大多数自己管理投资组合的人来说，这已经很不错了，
+most people trying to manage their own portfolios, especially if
+
+618
+00:30:12,472 --> 00:30:14,173
+尤其是如果你是波段交易者，
+you're swing trading and you have
+
+619
+00:30:14,173 --> 00:30:15,874
+同时还有其他副业，
+other businesses on the side or
+
+620
+00:30:15,874 --> 00:30:17,575
+或者有一份全职工作，
+you have a full-time job and
+
+621
+00:30:17,575 --> 00:30:20,695
+还想通过交易获取额外收入的话。
+you want some sort of income to generate on the side.
+
+622
+00:30:20,800 --> 00:30:25,700
+正因为如此，大家更青睐这样的策略，因为你可以用相当规模的资金。
+Again, this is why strategies like this are preferred because you can use a decent amount of size.
+
+623
+00:30:25,900 --> 00:30:29,500
+现在这个Delta敞口只有24，
+The delta exposure, even with this many right now is only 24.
+
+624
+00:30:29,800 --> 00:30:32,140
+这意味着如果市场波动10点，
+That means if the market makes a 10 point move,
+
+625
+00:30:32,140 --> 00:30:36,040
+你的盈亏只会上下波动几百美元。
+it's only going to be up or down a few hundred dollars here and there.
+
+626
+00:30:36,600 --> 00:30:39,417
+不会让你特别紧张，
+It's not going to be something that's going to stress you out
+
+627
+00:30:39,417 --> 00:30:41,764
+不像你直接用1万美元买一个看涨期权。
+versus if you just bought one call option for 10 grand.
+
+628
+00:30:42,300 --> 00:30:44,800
+那样的话，你得每5秒钟就盯一次市场。
+Obviously, you need to be checking the market every five seconds.
+
+629
+00:30:45,500 --> 00:30:48,200
+你应该避免使用这样的策略。
+You want to avoid running strategies like this.
+
+630
+00:30:48,600 --> 00:30:52,509
+如果我们切换到这个时间框架的话，
+If we were to jump to this time frame right
+
+631
+00:30:52,509 --> 00:30:57,199
+好，假设我们拉出来看，市场就在这里。
+here, if we pull out and we see the markets right here.
+
+632
+00:30:57,200 --> 00:31:01,727
+想象一下这种情况，隐含波动率已经
+So imagine an instance like this where the implied volatility has already
+
+633
+00:31:01,727 --> 00:31:05,499
+因为标普500指数期权（SPX）已经大涨而下跌了。
+dropped because the SPX already made this big up move.
+
+634
+00:31:05,800 --> 00:31:08,000
+这意味着这里的隐含波动率已经很低了。
+That means implied volatility is pretty low here.
+
+635
+00:31:08,300 --> 00:31:10,800
+所以不仅你的权利金收入会减少，而且
+So not only are you getting less credit received, but
+
+636
+00:31:10,800 --> 00:31:12,800
+如果市场开始进入某种上升趋势，
+then if the market does start in some
+
+637
+00:31:12,800 --> 00:31:14,800
+它仍然可能有效。
+sort of an uptrend, it would still work.
+
+638
+00:31:14,900 --> 00:31:17,450
+对，因为如果你在这里运行这样的策略，
+Yes, because if you were to run something like this right here,
+
+639
+00:31:17,450 --> 00:31:19,787
+你选择平值的话，这里大概是4000点。
+you went with an at the money, this would be about 4000.
+
+640
+00:31:20,400 --> 00:31:23,700
+你的触手可能在这里，或者更像这样。
+You'd have your tents, you know, somewhere it would be more like this.
+
+641
+00:31:23,700 --> 00:31:25,500
+然后另一个触手会在这里。
+And then you'd have the other one down here.
+
+642
+00:31:25,800 --> 00:31:26,800
+这就是你的铁蝶式策略。
+This would be your butterfly.
+
+643
+00:31:26,800 --> 00:31:28,500
+然后市场突破了这里的位置。
+And then the market breaks on this level right here.
+
+644
+00:31:28,600 --> 00:31:29,600
+然后你再加一个。
+And then you add another one.
+
+645
+00:31:30,400 --> 00:31:33,447
+这样你的区间可能会变成这样，
+chances are now your range might look something like this
+
+646
+00:31:33,447 --> 00:31:36,799
+到期日可能会在这里，
+and your expiration would be somewhere all the way over here
+
+647
+00:31:37,400 --> 00:31:39,800
+或者在这里，你仍然没问题，只是
+or over here you're still okay it's just
+
+648
+00:31:39,800 --> 00:31:42,200
+有点烦，因为在这个时间段里，
+annoying because during this time frame here you
+
+649
+00:31:42,200 --> 00:31:45,500
+你的盈亏可能会下跌10%
+you will be looking at uh your pnl being down maybe 10
+
+650
+00:31:46,200 --> 00:31:48,658
+相对于你使用的资金，但这就是为什么
+of how much capital you're using but that's why we
+
+651
+00:31:48,658 --> 00:31:50,378
+我们选择51天或者40多天到期剩余天数，
+go 51 or or 40 something over 40 dte it
+
+652
+00:31:50,378 --> 00:31:52,590
+不一定非要51天，我之前用的是45天到期剩余天数，
+doesn't have to be 51 in this case it was
+
+653
+00:31:52,590 --> 00:31:56,523
+但总之，大于
+51 for me i used to run a lot of 45 dte but let's just say greater than
+
+654
+00:31:58,700 --> 00:32:00,000
+40天到期剩余天数，对吧？
+40 DTE, right?
+
+655
+00:32:00,200 --> 00:32:03,326
+所以，大于40天到期剩余天数就足够了，
+So let me just put greater than 40 DTE is adequate enough
+
+656
+00:32:03,326 --> 00:32:05,599
+因为假设是下一个月的OPEX（期权行权日），
+to give you enough time because the assumption
+
+657
+00:32:05,599 --> 00:32:10,714
+很可能价格会回到你的区间内。
+would be by the next monthly OPEX, more than likely, the price will come back within your range.
+
+658
+00:32:11,000 --> 00:32:16,000
+这样，加上这样的调整后，你的区间可能会像这样。
+And this, your range in this case with an adjustment like that might look something like this.
+
+659
+00:32:16,100 --> 00:32:20,500
+只要价格在截止日期前保持在这个区间内，你就没问题。
+So as long as price is within this range by given date, you'll be okay.
+
+660
+00:32:20,500 --> 00:32:23,700
+当然，还要设定一些参数，决定什么时候直接止损。
+And then obviously have some sort of parameters for when you just cut the trade.
+
+661
+00:32:23,800 --> 00:32:31,600
+可能当你的亏损达到最大资金分配的15%时，就该止损，承认亏损。
+Maybe if you're down 15% of your maximum capital allocation, that's when you cut it and you take the loss.
+
+662
+00:32:31,800 --> 00:32:37,100
+胜率在70%左右就可以了，这种交易的胜率是能达到的。
+It's fine if your win rate is around 70%. Which it can be for these types of trades.
+
+663
+00:32:37,100 --> 00:32:39,300
+再次强调，这些策略都是40天到期剩余天数的。
+Again, these are over 40 DTE.
+
+664
+00:32:39,500 --> 00:32:42,200
+不是那种11天到期的铁蝶式策略。
+These are not 11 day butterflies.
+
+665
+00:32:42,200 --> 00:32:44,200
+也不是0天到期的铁蝶式策略。
+These are not zero DTE butterflies.
+
+666
+00:32:44,200 --> 00:32:48,000
+那些策略有完全不同的风险参数，是完全不同的策略。
+Those have their own different risk parameters. They're completely different strategies.
+
+667
+00:32:48,400 --> 00:32:51,520
+我们讨论的是给下一次月度OPEX（期权行权日）
+We're talking about a decent amount of time here to give the
+
+668
+00:32:51,520 --> 00:32:53,600
+足够的时间让其发挥作用，
+next monthly option OPEX the time to kind
+
+669
+00:32:53,600 --> 00:32:57,500
+让价格真正回到你设定的区间内。
+of go to work for you and actually have price come back within the range.
+
+670
+00:32:57,500 --> 00:33:00,211
+所以在这种情况下，你可能不想在这里开仓，
+So yes, in this case, you would not want to run it
+
+671
+00:33:00,211 --> 00:33:03,599
+因为如果你是平衡操作，市场已经有一波不错的上涨了。
+here because market has already made a nice decent rally if you're running it balanced.
+
+672
+00:33:03,600 --> 00:33:07,050
+当然，你仍然可以开仓，把它调成多Delta，
+Now you can obviously still run it and make it long delta
+
+673
+00:33:07,050 --> 00:33:10,500
+以应对可能的继续上涨，毕竟
+to account for potential rally because at the end of the day,
+
+674
+00:33:10,500 --> 00:33:11,362
+关键在于，
+the thing is
+
+675
+00:33:11,362 --> 00:33:13,374
+不管市场是上涨还是
+regardless of, you know, if the market's
+
+676
+00:33:13,374 --> 00:33:15,386
+上涨，没人知道它
+going up, no one knows when it's,
+
+677
+00:33:15,386 --> 00:33:17,398
+什么时候会回落。
+you know, going to come back down.
+
+678
+00:33:17,500 --> 00:33:21,192
+但当市场下跌时，你可以放心，
+But when the market's going down, you can be, you know, rest
+
+679
+00:33:21,192 --> 00:33:25,499
+历史数据表明它总会寻求反弹。
+assured that history has always shown it's going to look to come back up.
+
+680
+00:33:25,900 --> 00:33:31,600
+标普500指数期权（SPX）的历史上，从未出现过无法恢复的情况。
+And there's no time in the history of the SPX in which it did not recover.
+
+681
+00:33:31,900 --> 00:33:35,200
+所以，标普500指数期权（SPX）的自然趋势是上涨的。
+So with that being said, the natural flow of the SPX would be up.
+
+682
+00:33:35,600 --> 00:33:38,950
+但如果你在市场上涨时开这种策略，
+It's different for when you are waiting for, if you're in these
+
+683
+00:33:38,950 --> 00:33:42,300
+并且还持有这些头寸，
+types of trades, and you're opening them as the market's going up,
+
+684
+00:33:42,700 --> 00:33:43,600
+而市场继续上涨，
+And then you're still in them.
+
+685
+00:33:43,700 --> 00:33:44,700
+你不知道它是否会回到历史新高，
+The market keeps going up.
+
+686
+00:33:44,700 --> 00:33:50,000
+而如果市场在下跌，
+You don't know if it's going back to all-time highs versus if the market is going down.
+
+687
+00:33:50,400 --> 00:33:53,927
+我们有信心，在下一次季度OPEX（期权行权日）前，
+We have faith that by the next quarterly OPEX, it's going to
+
+688
+00:33:53,927 --> 00:33:56,278
+它会出现某种反弹或修复，
+have some sort of bounce or recovery, just
+
+689
+00:33:56,278 --> 00:34:00,099
+刚好能让大量看跌期权的价值归零。
+enough time to kill the value of a ton of these put options.
+
+690
+00:34:00,100 --> 00:34:02,536
+所以当它完成这波大幅下跌后，所有人都认为
+So after it makes this big leg down and everyone thinks the
+
+691
+00:34:02,536 --> 00:34:03,145
+世界即将
+world's going to
+
+692
+00:34:03,145 --> 00:34:04,160
+结束，然后它反弹，
+end, you know, it comes
+
+693
+00:34:04,160 --> 00:34:05,378
+大幅削弱了这些看跌期权的价值，
+back up, it kills a lot
+
+694
+00:34:05,378 --> 00:34:06,799
+这些看跌期权的价值。
+of the value of those put options.
+
+695
+00:34:06,800 --> 00:34:11,100
+然后市场继续下一轮下跌，给你时间退出这些交易。
+And then the market continues this next leg down that gives you time to actually get out of these trades.
+
+696
+00:34:11,100 --> 00:34:13,265
+所以即使你开仓后，市场下跌，你
+So even if you open it, market comes down here and you
+
+697
+00:34:13,265 --> 00:34:14,708
+开一个铁蝶式策略（Iron Butterfly）看起来是这样的，
+open up a butterfly looks like this, and
+
+698
+00:34:14,708 --> 00:34:15,429
+然后你在这里慌了，
+then you're freaking out
+
+699
+00:34:15,429 --> 00:34:16,511
+然后市场，你
+here. And then the market, you
+
+700
+00:34:16,511 --> 00:34:17,593
+又重新燃起信心，认为市场
+have faith again, that the market
+
+701
+00:34:17,593 --> 00:34:18,495
+会反弹，同样的情况。
+will bounce the same thing.
+
+702
+00:34:18,800 --> 00:34:20,200
+市场再次下跌，然后出现反弹。
+Market comes back down, puts in a bounce.
+
+703
+00:34:20,200 --> 00:34:21,600
+市场下跌，然后出现反弹。
+The market comes down, puts in a bounce.
+
+704
+00:34:21,600 --> 00:34:23,100
+市场下跌后，会出现反弹。
+The market comes down, it puts in a bounce.
+
+705
+00:34:23,500 --> 00:34:25,000
+市场下跌，然后出现反弹。
+Market comes down, it puts in a bounce.
+
+706
+00:34:25,000 --> 00:34:28,000
+市场正在下跌，这是一次非常剧烈的下跌。
+The market is coming down. This is a very nasty drop.
+
+707
+00:34:28,000 --> 00:34:29,382
+假设市场继续下跌。
+Let's just say the market continues.
+
+708
+00:34:29,382 --> 00:34:30,764
+很可能会出现
+It's likely to put in a
+
+709
+00:34:30,764 --> 00:34:33,298
+反弹，并回到这些Gamma密集行权价附近。
+bounce and come back to around these high key gamma strikes.
+
+710
+00:34:33,600 --> 00:34:35,700
+成交量分布图有很多不同的分析方式。
+The volume profile strikes is so many different ways.
+
+711
+00:34:35,700 --> 00:34:37,414
+外面有很多工具可以用来分析，
+There's so many different tools to use out
+
+712
+00:34:37,414 --> 00:34:40,199
+找到合适的行权价。
+there to analyze, you know, where a good strike price is to use.
+
+713
+00:34:40,500 --> 00:34:43,750
+有时候可能很简单，
+Sometimes it could be as simple as just looking at the options
+
+714
+00:34:43,750 --> 00:34:46,729
+只需看看期权链，找到标普500指数期权（SPX）上未平仓合约超过4万的行权价。
+chain and seeing where there's over 40,000 open interest on the SPX.
+
+715
+00:34:47,300 --> 00:34:49,900
+如果你能找到月度的...
+If you can find the monthly...
+
+716
+00:34:50,200 --> 00:34:55,200
+月度OPEX（期权行权日）通常会有未平仓合约超过4万的期权。
+The monthly OPEX will usually have options that have over 40,000 open interest.
+
+717
+00:34:55,200 --> 00:34:57,600
+这只是因为一些机构的原因。
+And that's just because of some institutions.
+
+718
+00:34:57,800 --> 00:35:00,800
+摩根大通（JPM）使用一种期权策略，你可以去了解。
+JPM uses an option strategy that you can read about.
+
+719
+00:35:00,900 --> 00:35:02,446
+随着你深入研究，
+And you'll find a little bit more as
+
+720
+00:35:02,446 --> 00:35:03,799
+你会发现更多信息。
+you dive a little bit deeper into,
+
+721
+00:35:03,799 --> 00:35:06,699
+可能还有其他内容。如果这是你第一次接触这类东西的话。
+you know, other things. If this is your first introduction to this type of stuff.
+
+722
+00:35:07,500 --> 00:35:08,500
+我们往回滚动一下。看看这里。
+We scroll back here. Let's see.
+
+723
+00:35:08,500 --> 00:35:10,100
+现在我们快要得出结论了。
+We're coming around to the conclusion of this.
+
+724
+00:35:10,200 --> 00:35:16,300
+我想让你们理解背后的思考过程，为什么这个头寸会开仓。
+I wanted you guys to understand the thought process, the logic behind why this is open.
+
+725
+00:35:16,700 --> 00:35:20,600
+昨天市场下跌时，我又开了一个。这次我选了42天到期剩余天数。
+Yesterday, as the market was selling off, I opened another one. This time I went 42 DTE.
+
+726
+00:35:20,600 --> 00:35:21,400
+情况和之前一样。
+It was the same deal.
+
+727
+00:35:21,500 --> 00:35:22,630
+这里有点
+It's a little bit at
+
+728
+00:35:22,630 --> 00:35:24,212
+平值。那个交易现在
+the money here. And that trade is,
+
+729
+00:35:24,212 --> 00:35:26,698
+某种程度上，已经盈利了。
+in a sense, already. I think it's already in the green.
+
+730
+00:35:26,800 --> 00:35:30,300
+然后今天这里显示我又开了一个铁蝶式策略。
+And then this was showing here today that I opened up another butterfly.
+
+731
+00:35:30,300 --> 00:35:31,888
+可能ThinkorSwim（交易平台）
+I think a swim is actually not
+
+732
+00:35:31,888 --> 00:35:33,476
+没有给我打开桌面端。所以
+opening up the desktop for me. So
+
+733
+00:35:33,476 --> 00:35:36,199
+我只能用在线版的量化交易应用（QTA）来提交订单。
+I had to use the online application to actually submit the order.
+
+734
+00:35:36,200 --> 00:35:37,800
+只是展示一下操作有多方便。
+Again, just showing the ease of use.
+
+735
+00:35:38,100 --> 00:35:41,400
+我知道我们已经触发了。这里突破了我的位。
+I knew we had already triggered. We broke my level here.
+
+736
+00:35:41,400 --> 00:35:43,200
+这是我这个铁蝶式策略的盈亏平衡点。
+This is my break even for this butterfly.
+
+737
+00:35:43,300 --> 00:35:44,600
+所以我知道必须采取行动了。
+So I already knew I had to do something.
+
+738
+00:35:44,900 --> 00:35:48,700
+昨天我想过开仓，但当时价格在下方。我们处于
+I thought about opening it yesterday, but we were below. We were at on.
+
+739
+00:35:49,200 --> 00:35:50,760
+量化交易应用（QTA）上的2σ阻力位。
+Two sigma level on quantum trading app
+
+740
+00:35:50,760 --> 00:35:52,320
+于是我想，再给它
+so i was like i'll give it
+
+741
+00:35:52,320 --> 00:35:53,657
+一点信任，
+a little bit of faith and
+
+742
+00:35:53,657 --> 00:35:54,771
+可能就持仓过夜。
+you know hold it overnight
+
+743
+00:35:54,771 --> 00:35:56,331
+一般来说，一旦突破这个位，
+without the adjustment generally speaking once this
+
+744
+00:35:56,331 --> 00:35:57,668
+你可能就想调整了，
+is breached you'd probably want to
+
+745
+00:35:57,668 --> 00:35:59,896
+但这次隐含波动率
+add the adjustment but in this case implied volatility had
+
+746
+00:36:00,000 --> 00:36:02,102
+已经大幅飙升，
+spikes so much at this point once supply
+
+747
+00:36:02,102 --> 00:36:04,204
+当供给
+volatility comes back down to this range even
+
+748
+00:36:04,204 --> 00:36:09,198
+如果需要两周才能实现 这些头寸的盈利会高到
+if it takes two weeks for it to happen these positions are going to be up so much that
+
+749
+00:36:09,400 --> 00:36:10,983
+即使需要两周时间，这些头寸也会大幅上涨，
+i'll be able to navigate
+
+750
+00:36:10,983 --> 00:36:13,199
+这样我就能管理这个头寸了，仍然有很多
+the position there's still plenty you know
+
+751
+00:36:13,199 --> 00:36:16,999
+到期剩余天数 所以我的盈亏平衡点现在如果我们来看一下
+dte so my break even again now if we were to check
+
+752
+00:36:18,200 --> 00:36:24,600
+这里的盈亏平衡点 一直到下面这里是37.86
+uh where right here break even we have all the way down here which is 37.86
+
+753
+00:36:25,400 --> 00:36:26,842
+然后我们跳到这个位置
+and let's jump to this
+
+754
+00:36:26,842 --> 00:36:28,862
+这是今天的情况 但我们跳到
+is for today but let's jump to
+
+755
+00:36:28,862 --> 00:36:31,170
+比如 CPI报告（消费者物价指数报告）发布在
+say for example the cpr report is on
+
+756
+00:36:31,170 --> 00:36:35,210
+周三 所以假设市场因某种原因跌到37.80
+wednesday so let's just say the markets did for a reason drop down to 37.80
+
+757
+00:36:36,100 --> 00:36:42,000
+图表上37.80在这里 所以大概在这个技术位置
+37.80 on the chart is all the way down here so we'll say roughly at this
+
+758
+00:36:42,500 --> 00:36:45,105
+那我可能会想 如果跌破这个位置
+technical level so i might say okay if we're breaking
+
+759
+00:36:45,105 --> 00:36:47,189
+我该怎么做
+down this level what will i want to
+
+760
+00:36:47,189 --> 00:36:52,399
+我可以选择在这个点平掉最初的铁蝶式策略
+do i can close out the initial iron fly at that point it will probably be at a loss if
+
+761
+00:36:53,000 --> 00:36:55,984
+这时候可能会有亏损
+the loss would be very small at that point especially since i've
+
+762
+00:36:55,984 --> 00:36:57,973
+但亏损会非常小
+already realized the gains on some of the
+
+763
+00:36:57,973 --> 00:37:02,698
+特别是我已经在之前的部分头寸上实现了收益
+initial positions that i had again i'm only in one now but i didn't start off with just one
+
+764
+00:37:03,000 --> 00:37:05,370
+虽然现在只剩一个头寸 但一开始我不是只开一个
+and then i might add another butterfly for something down
+
+765
+00:37:05,370 --> 00:37:07,266
+然后我可能会在下面这个位置再加一个蝴蝶式策略
+here and probably extend the range to give
+
+766
+00:37:07,266 --> 00:37:09,162
+并且可能扩大区间
+me some sort of new profit zone or
+
+767
+00:37:09,162 --> 00:37:10,584
+给我一个新的盈利区间
+something like this and then again
+
+768
+00:37:10,584 --> 00:37:12,006
+或者类似的操作
+eventually the market will do something
+
+769
+00:37:12,006 --> 00:37:13,428
+然后最终市场会有某种走势
+like this it will do something
+
+770
+00:37:13,428 --> 00:37:17,695
+像这样 我记得保罗·都铎·琼斯以前说
+like this i believe the number back in the days from paul to the jones used to say
+
+771
+00:37:18,500 --> 00:37:20,904
+我记得以前保罗·都铎·琼斯好像是说过
+uh if i'm remembering who said it first is that
+
+772
+00:37:20,904 --> 00:37:22,586
+如果我没记错是谁先说的 那就是
+the market trends more than 70 60 70 percent of
+
+773
+00:37:22,586 --> 00:37:24,366
+市场在70%到60%到70%的时间里
+the time on average is how much the
+
+774
+00:37:24,366 --> 00:37:25,924
+平均来看市场实际趋势
+market actually trend sorry i said that
+
+775
+00:37:25,924 --> 00:37:28,149
+抱歉 我刚才说错了 实际上市场只有大约30%的时间在趋势中
+wrong it actually trends around 30 percent of the time so 70
+
+776
+00:37:30,200 --> 00:37:33,100
+70%的时间 我们可以说市场是震荡的
+70% of the time, we can just say the market is choppier.
+
+777
+00:37:33,200 --> 00:37:34,000
+不是趋势性的
+It's not trending.
+
+778
+00:37:34,000 --> 00:37:37,700
+所以标普500指数期权（SPX）更可能是这样的走势 而不是这样
+So this is more likely what the SPX does versus this.
+
+779
+00:37:37,800 --> 00:37:40,700
+是的 这种大趋势偶尔会发生
+Yes, this happens occasionally. We get this massive trend.
+
+780
+00:37:40,900 --> 00:37:44,400
+但大部分情况下 我们会遇到这种震荡的周线
+But for the most part, we get these types of choppy weeks here.
+
+781
+00:37:44,400 --> 00:37:47,468
+当波动区间有150点的上涨
+And when you have a range of 150 points up
+
+782
+00:37:47,468 --> 00:37:51,558
+或下跌时，基本能覆盖大多数情况和概率。
+or down, you kind of account for most instances and most probabilities.
+
+783
+00:37:51,900 --> 00:37:53,329
+而这，正是你想要的交易方式
+And again, that's the type of trading
+
+784
+00:37:53,329 --> 00:37:56,799
+当你试图为自己制定一个交易计划时。
+that you want when you're trying to put together some sort of a business plan for yourself.
+
+785
+00:37:57,000 --> 00:37:59,776
+如果你的账户资金是10万美元，想要有
+If your account size is 100 grand and you want to have
+
+786
+00:37:59,776 --> 00:38:01,795
+某种策略可以说，嘿，
+some sort of strategy to say like, hey,
+
+787
+00:38:01,795 --> 00:38:06,842
+今年，在未来12个月里，我的10万美元账户预计每月能赚3000美元。
+this year, you know, over the next 12 months, I'm projected to make about three grand a month with my $100,000 account.
+
+788
+00:38:07,700 --> 00:38:09,300
+也就是每月3%的收益率。
+So that's a 3% every month.
+
+789
+00:38:09,500 --> 00:38:12,416
+随着复利效应，第二年你的账户资金
+And as that compounds the second year, your account size
+
+790
+00:38:12,416 --> 00:38:15,624
+可能会达到15万美元，然后你能从15万美元中赚取3%。
+is at 150,000, whatever it ends up being, and you're making 3% on 150,000.
+
+791
+00:38:16,800 --> 00:38:18,880
+这就是为什么资金规模大的人，
+These are why people with large account sizes,
+
+792
+00:38:18,880 --> 00:38:23,300
+那些更负责任、更成熟的交易者会这样交易。
+people that are a little bit more responsible, definitely a lot more mature traders trade this way.
+
+793
+00:38:23,400 --> 00:38:25,336
+如果你正在看这个视频，而且是交易新手，
+If you're watching this video and you're new to trading,
+
+794
+00:38:25,336 --> 00:38:27,272
+可能才交易一两年，或者
+you know, it's your first couple of years or if
+
+795
+00:38:27,272 --> 00:38:28,239
+你才20出头，
+you're in your early 20s
+
+796
+00:38:28,239 --> 00:38:29,594
+正在发现这样的视频，
+or something like that, and you're discovering
+
+797
+00:38:29,594 --> 00:38:32,497
+我真希望自己几年前就能发现这种交易方式。
+a video like this, I wish I discovered this years ago, this type of trading.
+
+798
+00:38:32,500 --> 00:38:37,500
+我等太久才真正接触并付诸实践。
+I waited too long to essentially expose myself or actually put this into play.
+
+799
+00:38:37,700 --> 00:38:40,000
+但这就是最初的仓位。
+But this right here is the initial position.
+
+800
+00:38:40,600 --> 00:38:42,400
+我最后给大家看一下。
+And I'll leave you guys with.
+
+801
+00:38:43,300 --> 00:38:49,800
+这就是初始仓位，这是今天开的这个，现在已经涨了25美元，
+This here so this would be the initial position this was the one opened here today so this one's up 25
+
+802
+00:38:50,600 --> 00:38:53,418
+我们把这两个合并，
+already and we combine the two of them and we
+
+803
+00:38:53,418 --> 00:38:55,672
+就得到这个仓位。
+get this position so now if i was
+
+804
+00:38:55,672 --> 00:38:59,899
+如果快进到比如3月底，假设我
+to flash forward to say for example the end of march let's just say i
+
+805
+00:39:00,000 --> 00:39:03,309
+会持有到3月的最后一天，因为
+I'm going to hold this until the last day of March because
+
+806
+00:39:03,309 --> 00:39:08,548
+我认为标普500指数期权（SPX）会在这个区间内波动，从接近4750一直到大约4100。
+I think the SPX will be between this range here of almost 4750 and all the way up to about 4100.
+
+807
+00:39:09,400 --> 00:39:13,400
+如果它还在这个区间横盘，隐含波动率可能会下降。
+Again, implied volatility would be likely to come down if it's still chopping around this zone.
+
+808
+00:39:13,700 --> 00:39:16,500
+这几乎能带来2000美元的收益。
+This is almost two grand return.
+
+809
+00:39:16,600 --> 00:39:17,817
+当然，这只是理论上的
+And again, this is theoretical
+
+810
+00:39:17,817 --> 00:39:19,277
+如果最终在3900点附近的话。
+if we end up being around 3900.
+
+811
+00:39:19,277 --> 00:39:21,955
+假设隐含波动率再高一点。
+Let's just say implied volatility came out a little bit more.
+
+812
+00:39:22,300 --> 00:39:25,700
+根据经验，18%可能更有可能稍微高一点。
+I think 18% is from experience, probably a little bit more likely.
+
+813
+00:39:26,100 --> 00:39:30,700
+我们说的是在3500美元的仓位上赚1800美元。
+We're talking about $1,800 on a $3,500 position size.
+
+814
+00:39:30,800 --> 00:39:35,100
+这收益率很棒，毕竟到头来这策略算是被动的。
+And that's an excellent return because it's kind of passive at the end of the day.
+
+815
+00:39:35,100 --> 00:39:37,000
+我已经做过一次调整了。
+I've already did one adjustment.
+
+816
+00:39:37,300 --> 00:39:40,200
+唯一花时间的是把笔记加到交易日志里。
+The only other thing that takes that long is just adding my notes to my journals.
+
+817
+00:39:40,200 --> 00:39:42,700
+但我想大概知道什么策略奏效。
+But I just want to have some sort of an idea of what worked.
+
+818
+00:39:43,100 --> 00:39:45,427
+最好的情况，以及是什么导致它
+Best as well as what caused it to
+
+819
+00:39:45,427 --> 00:39:47,754
+效果很好，最佳平仓时机是什么时候
+work pretty well when was the ultimate time
+
+820
+00:39:47,754 --> 00:39:50,081
+我把这看作一个
+to to close as i see this a
+
+821
+00:39:50,081 --> 00:39:55,026
+两周持有期，这符合预期，所以下次我做51天到期的铁蝶式策略，
+two-week hold 20 that's expected so the next time i run a 51 dte butterfly and implied volatility is 20
+
+822
+00:39:56,400 --> 00:39:58,068
+如果隐含波动率是20%，
+and trading view has the implied volatility of
+
+823
+00:39:58,068 --> 00:39:59,528
+而TradingView上显示隐含波动率是22.6，我会查一下我的笔记，
+22.6 i'll pull it up in my notes
+
+824
+00:39:59,528 --> 00:40:01,196
+然后说，好吧，上次
+and i'll say okay yeah the last time
+
+825
+00:40:01,196 --> 00:40:03,440
+我持有了13天，还会有截图
+i held it for 13 days and i'll also have a screenshot
+
+826
+00:40:03,440 --> 00:40:05,888
+显示当时的价格走势，我就会想，好吧，
+for what the price action looked like so i'll be like okay
+
+827
+00:40:05,888 --> 00:40:07,112
+这就是区间，我
+that was the range and i
+
+828
+00:40:07,112 --> 00:40:08,336
+知道这就是预期的情况，
+knew this is what was expected
+
+829
+00:40:08,336 --> 00:40:10,376
+在高点时盈亏是多少
+when we were at the highs what was the pnl
+
+830
+00:40:11,500 --> 00:40:14,600
+希望这个视频能让大家对铁蝶式策略有点启发。
+So hopefully this video provided a little bit of light to iron butterflies.
+
+831
+00:40:14,800 --> 00:40:18,300
+它处于中间地带，不算特别适合新手。
+It's not, it's kind of in the middle. It's not exactly very beginner friendly.
+
+832
+00:40:18,400 --> 00:40:20,900
+可能不是你看的第一个相关视频。
+It might not be your first video in which you've watched in it.
+
+833
+00:40:21,200 --> 00:40:22,717
+如果这是你第一次看
+If it is the first video in which you've watched
+
+834
+00:40:22,717 --> 00:40:25,599
+铁蝶式策略的视频，想多了解一点，可以在下方留言。
+an iron butterfly and you want to learn a little bit more about it, leave a comment down below.
+
+835
+00:40:25,600 --> 00:40:27,700
+或者如果你刚学到点什么，也可以在下方留言。
+Or if you just learned something, leave a comment down below.
+
+836
+00:40:28,000 --> 00:40:29,900
+谢谢观看，大家点赞、分享。
+Thanks for watching guys. Like the video, share.
+
+837
+00:40:30,000 --> 00:40:33,000
+更多信息链接在下方描述里，下期见。
+Links to more information is in the description down below, and I'll catch you in the next one.
+
+===== END AFTER_TRANSLATE =====

@@ -1,0 +1,3357 @@
+===== AFTER_TRANSLATE (671 entries) =====
+1
+00:00:00,200 --> 00:00:01,300
+大家好，我是Brian。
+What's going on guys, Brian's here.
+
+2
+00:00:01,300 --> 00:00:04,700
+今天是2022年8月1日，周一，市场休市。
+Today is Monday, August 1st, 2022, and the market is closed.
+
+3
+00:00:05,000 --> 00:00:08,100
+想和大家分享一些思考，并呈现一些信息。
+Just want to share a few thoughts as well as present some information to you guys.
+
+4
+00:00:08,300 --> 00:00:10,218
+我们正在查看的是
+So what we're looking at is the
+
+5
+00:00:10,218 --> 00:00:12,136
+SPY（标普500 ETF），这是Quant Trading App上的高级GEX（Gamma暴露）
+SPY, and this is the advanced GEX
+
+6
+00:00:12,136 --> 00:00:15,698
+页面，也称为高级Gamma暴露页面。
+page on Quant Trading App, also known as the advanced gamma exposure page.
+
+7
+00:00:16,000 --> 00:00:18,945
+这个页面展示了一份报告，
+This is showing us a report that's generated based on every single
+
+8
+00:00:18,945 --> 00:00:20,908
+基于SPY（标普500 ETF）的每一个到期日
+expiration in the SPY and every single strike
+
+9
+00:00:20,908 --> 00:00:22,871
+和每一个行权价中存在Gamma暴露的价格生成，
+price that has some sort of gamma exposure,
+
+10
+00:00:22,871 --> 00:00:24,834
+然后以这种
+and then it's presenting the information in this
+
+11
+00:00:24,834 --> 00:00:26,552
+表格的形式呈现信息，
+table right here, as well as a
+
+12
+00:00:26,552 --> 00:00:29,497
+底部还有一个图表，我们稍后再详细介绍。
+graph in the bottom that we'll get to in a few minutes.
+
+13
+00:00:29,800 --> 00:00:31,500
+现在，我想指出一些关键水平。
+Now, I want to point out some key levels.
+
+14
+00:00:31,600 --> 00:00:33,619
+如果你对Gamma暴露一无所知，
+If you don't know anything about gamma exposure,
+
+15
+00:00:33,619 --> 00:00:36,899
+不用担心，重点在于这些水平。
+don't necessarily worry about that. It's more so about the levels right here.
+
+16
+00:00:36,900 --> 00:00:38,711
+我之前做过关于Gamma暴露的视频，
+I've done other videos on gamma exposure,
+
+17
+00:00:38,711 --> 00:00:41,040
+之后还会做更多，
+and I will be doing plenty more, as well
+
+18
+00:00:41,040 --> 00:00:45,698
+也会有一些基础入门内容，向新手交易者介绍这类信息。
+as some basic and introductory levels to kind of expose this type of information to some newer traders.
+
+19
+00:00:46,100 --> 00:00:48,117
+但当我们向上滚动时，首先要注意的是，
+But as we scroll up, the first thing
+
+20
+00:00:48,117 --> 00:00:51,899
+市场目前处于正Gamma暴露状态。
+to take away right now is the market is currently in a positive gamma state.
+
+21
+00:00:52,000 --> 00:00:53,828
+如果我们向下滚动，
+So if we were to scroll down, this
+
+22
+00:00:53,828 --> 00:00:55,656
+这里的这个小旋钮，这个小按钮，
+little knob right here, this little button, it's
+
+23
+00:00:55,656 --> 00:00:59,998
+只是在告诉我们，这被称为Gamma翻转点或零Gamma暴露水平。
+just letting us know that this is what's referred to as the gamma flip or the zero GEX level.
+
+24
+00:01:00,600 --> 00:01:04,500
+这个水平只是表示，如果市场跌破这里，
+This level is just saying if the market was to drop below this area right here.
+
+25
+00:01:05,200 --> 00:01:08,900
+跌破这个区域后，Gamma暴露，即净GEX（Gamma暴露）会变为负值。
+Below this area, the gamma exposure, the net GEX will actually turn negative.
+
+26
+00:01:09,000 --> 00:01:13,700
+而只要我们保持在这个水平之上，净GEX（Gamma暴露）就会保持正值。
+And then as long as we remain above this level, the net GEX is going to be positive.
+
+27
+00:01:13,900 --> 00:01:16,400
+如果你对GEX（Gamma暴露）一无所知，可以这样理解。
+If you don't know anything about GEX, just think of it this way.
+
+28
+00:01:16,500 --> 00:01:20,200
+如果这个数值是正的，波动性可能会降低。
+If this number is positive, then volatility is likely to be reduced.
+
+29
+00:01:20,600 --> 00:01:25,600
+如果这个数值变为负的，波动性可能会上升。
+And if this number turns negative, then volatility is likely to be increased.
+
+30
+00:01:25,900 --> 00:01:30,000
+这是因为做市商，也就是交易商背后的动态机制，
+That's just because of the dynamics behind what market makers, also known as the dealers,
+
+31
+00:01:30,200 --> 00:01:35,000
+这是他们在基于Gamma暴露进行Delta对冲时的操作。
+what they're doing when they're delta hedging their positions based on their gamma exposure.
+
+32
+00:01:35,500 --> 00:01:37,373
+所以向下滚动时，可以这样理解，
+So as we scroll down, think of it
+
+33
+00:01:37,373 --> 00:01:39,246
+对于本视频的其余部分，
+also this way, as for the rest of
+
+34
+00:01:39,246 --> 00:01:40,182
+可以这样理解，
+this video, think of
+
+35
+00:01:40,182 --> 00:01:41,587
+这基本上是支撑位和阻力位，
+this largely as support and resistance,
+
+36
+00:01:41,587 --> 00:01:44,397
+这样可能对你们更容易理解。
+as that might make it a little bit easier for you guys.
+
+37
+00:01:45,200 --> 00:01:49,400
+生成此页面时，SPY（标普500 ETF）的最新成交价为410.83美元。
+The last traded price of the SPY was $410.83 when this page was generated.
+
+38
+00:01:49,400 --> 00:01:51,000
+在这里我们可以看到，
+And as we can see right here,
+
+39
+00:01:51,000 --> 00:01:54,200
+这是最接近的行权价。所以这里被标记为黄色。
+this is the closest strike price. So that's why this is highlighted as yellow.
+
+40
+00:01:54,600 --> 00:02:00,100
+可以将这些突出的价格水平视为可能的强阻力位。
+Think of each of these levels that are protruding out as likely to be very strong resistance levels.
+
+41
+00:02:00,500 --> 00:02:01,800
+但我想向大家指出一点。
+But I want to point something out to you guys.
+
+42
+00:02:01,900 --> 00:02:03,600
+这里是410美元的行权价。
+What we have right here is the $410 strike.
+
+43
+00:02:03,700 --> 00:02:05,506
+而410美元，这个绿色按钮
+And the $410, the reason this green button
+
+44
+00:02:05,506 --> 00:02:07,570
+在这里的原因，只是在告诉我们
+is right here, is just letting us know
+
+45
+00:02:07,570 --> 00:02:11,440
+这是所有到期日合并后正Gamma最高的行权价。
+that this is the strike price with the highest positive gamma across all expirations combined.
+
+46
+00:02:12,000 --> 00:02:16,200
+更重要的是，这也是看涨期权未平仓合约最多的行权价。
+More importantly, it's also the strike price that has the most amount of call open interest.
+
+47
+00:02:16,300 --> 00:02:18,484
+然后整体来看，这个行权价
+And then collectively, this is the strike price
+
+48
+00:02:18,484 --> 00:02:23,399
+在合并看涨和看跌期权后，未平仓合约总量也相当可观。
+combined that has a decent amount of total open interest as we combine both the calls and puts.
+
+49
+00:02:23,700 --> 00:02:29,000
+然而，当我向上滚动时，大家可以看到，超过420后，情况会逐渐减弱。
+However, as I scroll up, you guys can see that things tend to taper off as we get past 420.
+
+50
+00:02:29,300 --> 00:02:31,900
+在这里确实有相当多的Gamma暴露。
+And we do see that there is a decent amount of gamma exposure here.
+
+51
+00:02:31,900 --> 00:02:37,300
+然后425价位稍微突出一点，但远不如420价位这里明显。
+And then the 425 level, it pokes out a little bit, but nothing in comparison to the 420 level right here.
+
+52
+00:02:37,900 --> 00:02:42,900
+下一个高Gamma暴露的行权价是430价位，
+Next high gamma exposure strike price makes sense is the 430 level all the way up here
+
+53
+00:02:43,200 --> 00:02:44,800
+但大家可以看到，
+but then you guys can see that the
+
+54
+00:02:44,800 --> 00:02:46,400
+其未平仓合约远不如
+open interest is nowhere near as high as
+
+55
+00:02:46,400 --> 00:02:48,000
+这里的多，更重要的是，如果我
+it is right here more importantly if i
+
+56
+00:02:48,000 --> 00:02:49,000
+向下滚动，大家可以看到
+were to scroll down you
+
+57
+00:02:49,000 --> 00:02:50,400
+有一个小热力图，
+guys can see that there's a little
+
+58
+00:02:50,400 --> 00:02:51,600
+所以
+bit of a heat map so
+
+59
+00:02:51,600 --> 00:02:55,200
+深蓝色、这种蓝色以及浅蓝色的价位
+the levels that are dark blue and then uh this color blue and then the really light blue
+
+60
+00:02:55,600 --> 00:03:00,000
+只是突出显示未平仓合约总量最高的价位，所以如果我
+it's just highlighting the levels that have the highest amount of total open interest so if i actually were to
+
+61
+00:03:00,000 --> 00:03:02,880
+要排序这个表格，大家可以看到
+to sort this table you guys can see that the
+
+62
+00:03:02,880 --> 00:03:05,472
+目前未平仓合约最多的行权价是370
+highest open interest strike price right now is the 370
+
+63
+00:03:05,472 --> 00:03:07,776
+跨所有到期日，这主要是因为
+across all expirations and that's really because it's
+
+64
+00:03:07,776 --> 00:03:13,536
+看跌期权占主导，但如果市场回落到370，实际需要下跌近10%
+so dominated by puts however if the market was to pull back to 370 it would actually have to drop almost 10
+
+65
+00:03:15,200 --> 00:03:16,508
+具体是9.94%，如果
+so 9.94 to be exact if
+
+66
+00:03:16,508 --> 00:03:18,602
+我们重新按
+we were to sort this back by the
+
+67
+00:03:18,602 --> 00:03:23,837
+实际行权价排序，就像我之前给大家指出的，大家可以看到，如果我们向下滚动
+actual strike prices as i pointed that out to you guys you guys can see now if we scroll down
+
+68
+00:03:24,900 --> 00:03:27,804
+在这个行权价420以上，实际上
+There isn't really much open interest as there's nothing really
+
+69
+00:03:27,804 --> 00:03:30,418
+几乎没有未平仓合约，因为这里没有蓝色高亮
+highlighted blue past this strike price of 420 right here,
+
+70
+00:03:30,418 --> 00:03:32,358
+因为如果有高亮显示的内容
+because if there was something that's highlighted
+
+71
+00:03:32,358 --> 00:03:34,298
+蓝色，意味着它属于
+blue, it means it would be in
+
+72
+00:03:34,298 --> 00:03:36,238
+未平仓合约前10高的行权价。
+the top 10 high open interest strike prices.
+
+73
+00:03:37,200 --> 00:03:38,576
+这是最高的两个。
+So this is the highest two.
+
+74
+00:03:38,576 --> 00:03:39,952
+接下来是第二高的
+Then this is the next highest
+
+75
+00:03:39,952 --> 00:03:41,328
+四个，然后是下一个最高的
+four and then the next highest
+
+76
+00:03:41,328 --> 00:03:44,769
+四个。所以合起来，这些是目前市场上未平仓合约前10高的行权价。
+four. So combined, these are the top 10 highest strike prices on the market right now.
+
+77
+00:03:45,000 --> 00:03:50,100
+大家可以看到，其中大部分都是负Gamma暴露。这很合理。
+And we can see that most of them are dominated by a negative gamma exposure. That makes sense.
+
+78
+00:03:50,100 --> 00:03:52,639
+通常，看跌期权的未平仓合约
+Now, there's also generally always more open interest
+
+79
+00:03:52,639 --> 00:03:57,399
+总是比看涨期权多。这基本是市场参与者的习惯。
+inputs than there are in calls. It's just kind of the way market participants are.
+
+80
+00:03:57,800 --> 00:03:59,714
+大型机构、大型基金，
+Huge institutions, huge funds, they will
+
+81
+00:03:59,714 --> 00:04:04,499
+通常会做多权益，同时买入看跌期权，因为看跌期权被视为保险。
+generally be long equity as well as buying puts because puts are seen as insurance.
+
+82
+00:04:04,800 --> 00:04:11,500
+所以人们更倾向于为长期投资组合购买保护或买入看跌期权。
+So people are more interested in buying protection or buying puts on their long-term portfolios.
+
+83
+00:04:11,800 --> 00:04:13,713
+不过，当其中一方
+However, there is a little bit of a
+
+84
+00:04:13,713 --> 00:04:15,147
+比另一方占主导地位时，
+skew between these two numbers whenever
+
+85
+00:04:15,147 --> 00:04:17,299
+这两个数字之间会有一些偏差。
+one side gets really more dominant than the other.
+
+86
+00:04:17,700 --> 00:04:21,800
+这被称为看跌期权-看涨期权比率，但这不是本视频的主题。
+And that's referred to as the put-call ratio, but that's not necessarily the subject matter of this video.
+
+87
+00:04:21,800 --> 00:04:23,707
+现在，我继续向右移动，
+So as I move right along, let's just
+
+88
+00:04:23,707 --> 00:04:25,137
+再次按
+sort this back again by the
+
+89
+00:04:25,137 --> 00:04:27,998
+行权价排序。然后来到当前现货价格这里。
+strike prices. And let's go to the current spot price right here.
+
+90
+00:04:28,100 --> 00:04:30,000
+所以，理解这些信息的一种方式是...
+So one way to interpret this information is...
+
+91
+00:04:30,000 --> 00:04:32,084
+如果市场收盘低于
+is if the market was to close below
+
+92
+00:04:32,084 --> 00:04:33,647
+410，在409这个价位，我们可以看到
+410 on this 409 level, we can see
+
+93
+00:04:33,647 --> 00:04:37,816
+在到达400价位前，市场确实没有太多支撑。
+that there really isn't much support in the market until we get down to this 400 level.
+
+94
+00:04:38,900 --> 00:04:40,963
+价格可能会在405价位附近停留一段时间，
+Price will be likely to stick around this 405 level
+
+95
+00:04:40,963 --> 00:04:43,256
+因为这里有相当多的
+for a little bit just because there's a decent amount
+
+96
+00:04:43,256 --> 00:04:45,090
+Gamma暴露，
+of gamma exposure here to allow price to
+
+97
+00:04:45,090 --> 00:04:45,976
+让价格能够
+kind of digest the
+
+98
+00:04:45,976 --> 00:04:47,749
+消化这波行情，看看是会
+move to see if we're either going to
+
+99
+00:04:47,749 --> 00:04:49,079
+反弹回这个价位
+bounce back up to this level
+
+100
+00:04:49,079 --> 00:04:51,517
+还是继续下跌至400。
+or if we were going to continue to sell off to 400.
+
+101
+00:04:52,500 --> 00:04:54,066
+另一个需要注意的重要点是
+Another important thing to take note of is
+
+102
+00:04:54,066 --> 00:04:55,241
+这里的这个小标记
+this little knob right here is
+
+103
+00:04:55,241 --> 00:04:57,199
+只是在告诉我们这是绝对Gamma暴露的行权价。
+just letting us know this is the absolute gamma strike.
+
+104
+00:04:57,200 --> 00:05:00,123
+所以这是当前
+So this is the strike price that has the most
+
+105
+00:05:00,123 --> 00:05:02,461
+市场上所有到期日、所有行权价中
+amount of gamma exposure in the market collectively
+
+106
+00:05:02,461 --> 00:05:04,799
+Gamma暴露总量最大的行权价。
+across all expirations, all strike prices right now.
+
+107
+00:05:04,800 --> 00:05:07,800
+这是一个非常重要的价位，需要牢记。
+So this is a very significant level to keep in mind.
+
+108
+00:05:08,200 --> 00:05:09,917
+绝对Gamma暴露的行权价通常
+The absolute gamma strike is going to perceive
+
+109
+00:05:09,917 --> 00:05:11,634
+会是一个流动性很高的价位。
+there's a level that's going to have a
+
+110
+00:05:11,634 --> 00:05:15,498
+我们不期望SPY（标普500 ETF）的价格会直接穿过这个价位。
+lot of liquidity. We wouldn't expect the price of the SPY to just slice right through the level.
+
+111
+00:05:15,600 --> 00:05:17,796
+如果价格真的跌到这个价位，
+If it did come down to this level, it's likely
+
+112
+00:05:17,796 --> 00:05:19,992
+可能会在这个价位附近震荡一段时间，
+to chop around it for a bit as the dealers
+
+113
+00:05:19,992 --> 00:05:21,749
+因为做市商会对冲头寸，
+will be hedging their positions and it might
+
+114
+00:05:21,749 --> 00:05:23,067
+可能需要几天时间
+take a few days or so
+
+115
+00:05:23,067 --> 00:05:24,385
+来巩固，并决定
+to kind of consolidate to decide
+
+116
+00:05:24,385 --> 00:05:25,703
+趋势会如何
+which way things are going to
+
+117
+00:05:25,703 --> 00:05:28,998
+继续，是反转还是继续下跌。
+continue, if it's going to reverse or if it's going to continue to sell off.
+
+118
+00:05:29,000 --> 00:05:34,100
+现在，如果跌到400价位，隐含波动率可能会成为一个重要影响因素。
+Now, implied volatility will be likely a big factor in what will happen if we got down to the 400 level.
+
+119
+00:05:34,400 --> 00:05:36,084
+基本上，如果跌到
+Pretty much if we get down to
+
+120
+00:05:36,084 --> 00:05:37,527
+400，而你看到隐含波动率
+400 and you see implied volatility, something
+
+121
+00:05:37,527 --> 00:05:41,858
+比如VIX上涨，可以把它作为一个指标，预计可能会继续抛售。
+like the VIX increasing, you can use that as a gauge as we're likely to continue selling off.
+
+122
+00:05:42,100 --> 00:05:44,258
+但如果我们真的跌到
+However, if we did get down to this
+
+123
+00:05:44,258 --> 00:05:46,146
+400这个价位，而VIX并未继续上升，
+400 level and the VIX was not continuing
+
+124
+00:05:46,146 --> 00:05:48,304
+我们可能会看到这个价位
+to rise, we can actually see this level
+
+125
+00:05:48,304 --> 00:05:50,462
+成为市场的一个强力阻力，因为
+as a massive repellent to the market as
+
+126
+00:05:50,462 --> 00:05:52,080
+Vanna与Charm效应会开始
+Vanna and Charm will actually start
+
+127
+00:05:52,080 --> 00:05:56,126
+影响SPY（标普500 ETF）的现货价格，可能会出现某种反转。
+influencing the spot price of the SPY and we can expect some sort of reversal.
+
+128
+00:05:56,800 --> 00:05:59,900
+不过，如果这些内容让你有点困惑，不用担心。
+But as we take a look at this, again, if some of this is going over your head, don't worry.
+
+129
+00:06:00,000 --> 00:06:00,827
+可以简单
+about it just take
+
+130
+00:06:00,827 --> 00:06:02,068
+这样理解：
+it just think of it this
+
+131
+00:06:02,068 --> 00:06:03,723
+在这些价位我们有强支撑，
+way we have strong support at these levels
+
+132
+00:06:03,723 --> 00:06:04,964
+这里整个区域
+right here this whole area is
+
+133
+00:06:04,964 --> 00:06:06,205
+可能会非常震荡，因为
+likely to be very choppy as
+
+134
+00:06:06,205 --> 00:06:08,895
+市场正在试图确定方向。
+the market is trying to figure out which way it's going to go
+
+135
+00:06:09,200 --> 00:06:10,674
+低于这个价位支撑很少，所以可能会抛售，
+below this level we don't have
+
+136
+00:06:10,674 --> 00:06:12,639
+尤其是如果收盘低于408，
+much support so we can sell off especially
+
+137
+00:06:12,639 --> 00:06:14,359
+直接跳空下跌到405也并不奇怪。
+if we were to close below 408 it
+
+138
+00:06:14,359 --> 00:06:17,307
+如果市场在405挣扎，
+would not be a surprise if we actually just gap down to 405
+
+139
+00:06:18,300 --> 00:06:20,265
+可能会直接下跌到400，
+if the market struggled at 405 we would
+
+140
+00:06:20,265 --> 00:06:22,230
+可能在403附近震荡一两小时，
+likely just slice straight down to 400 maybe
+
+141
+00:06:22,230 --> 00:06:24,756
+这取决于催化剂，
+chop around here for an hour or two at 403
+
+142
+00:06:26,000 --> 00:06:27,271
+取决于市场情绪，
+again it depends on the
+
+143
+00:06:27,271 --> 00:06:28,542
+取决于其他一些小因素。
+catalyst it depends on sentiments
+
+144
+00:06:28,542 --> 00:06:30,576
+我只是在强调一些要点，
+it depends on other little factors i'm just
+
+145
+00:06:30,576 --> 00:06:32,101
+并指出
+highlighting things and pointing out the
+
+146
+00:06:32,101 --> 00:06:34,898
+解读Gamma暴露水平的方法，所以我会
+uh way to decipher the gamma exposure levels so i would
+
+147
+00:06:35,300 --> 00:06:36,554
+建议在你的图表上标出一些价位。
+i would put some levels on your chart
+
+148
+00:06:36,554 --> 00:06:37,808
+现在如果你不是Quant Trading App的会员，
+right now if you're not a quant trading
+
+149
+00:06:37,808 --> 00:06:38,748
+Quant Trading App的
+app member the quant trading app
+
+150
+00:06:38,748 --> 00:06:41,099
+会员，我们实际上有工具，可以拉出这些数据供分析。
+members we actually have tools and we can kind of pull this up when our
+
+151
+00:06:41,600 --> 00:06:43,081
+我们自己也能
+on our own as well as we have
+
+152
+00:06:43,081 --> 00:06:44,562
+有一个Think or Swim脚本
+a think of swim script that actually plots
+
+153
+00:06:44,562 --> 00:06:46,599
+实际会在图表上标出这些周度水平
+some of these levels on our charts for the weekly levels
+
+154
+00:06:46,900 --> 00:06:49,313
+现在我们继续往下看
+now let's move right along and actually take a look
+
+155
+00:06:49,313 --> 00:06:51,726
+同样是这份报告
+at the same report but this time it's generating based
+
+156
+00:06:51,726 --> 00:06:53,656
+但这次是基于8月到期日生成的
+on just the august expiration so if i
+
+157
+00:06:53,656 --> 00:06:57,999
+比如想包含11月，我只需点击这里，可能还有12月
+wanted to include say for example something like november i would just press this and maybe the december
+
+158
+00:06:58,300 --> 00:07:00,012
+可能还有12月的月度合约
+monthlies and i would just press submit and
+
+159
+00:07:00,012 --> 00:07:01,724
+我只需点击提交
+that way it would generate a completely new
+
+160
+00:07:01,724 --> 00:07:03,436
+这样就会生成一份全新的报告
+report but we want to focus on just
+
+161
+00:07:03,436 --> 00:07:05,148
+但我们只想关注8月
+august because it's august 1st it's a fresh
+
+162
+00:07:05,148 --> 00:07:09,000
+在这里选择月份，来看看数据大概是什么样
+month right here and let's take a look to see what type of information this looks like so
+
+163
+00:07:09,300 --> 00:07:11,071
+是新的一个月
+you guys can notice first and foremost there's
+
+164
+00:07:11,071 --> 00:07:12,399
+我们来看看这份报告是什么样的
+actually no blue as i continue
+
+165
+00:07:12,399 --> 00:07:15,499
+所以大家首先会注意到
+to scroll all of the blue for august is all the way down here
+
+166
+00:07:15,900 --> 00:07:18,185
+实际上没有蓝色
+so that's pretty alarming if you're looking to
+
+167
+00:07:18,185 --> 00:07:20,470
+我继续向下滚动时
+be bullish or you're expecting the market to
+
+168
+00:07:20,470 --> 00:07:22,755
+8月的所有蓝色部分都在这里
+continue rallying now it doesn't mean we won't
+
+169
+00:07:22,755 --> 00:07:25,040
+这对看多的人来说
+rally but i wouldn't expect the gains to
+
+170
+00:07:25,040 --> 00:07:29,897
+或预期市场继续上涨的人来说
+hold unless we started seeing more open interest opening up up here that's just generally the way
+
+171
+00:07:30,500 --> 00:07:32,929
+这相当警示
+rallies are sustained because with each passing year
+
+172
+00:07:32,929 --> 00:07:38,699
+这并不意味着我们不会上涨
+the options market actually starts to play a major role on the equities market because there's more and more
+
+173
+00:07:39,200 --> 00:07:44,900
+现在交易期权的参与者比三年前、四年前、五年前、六年前多
+participants trading options these days than there were three years ago four years ago five years ago six years ago
+
+174
+00:07:45,300 --> 00:07:47,357
+除非我们开始看到
+and again the dynamics between what the market
+
+175
+00:07:47,357 --> 00:07:49,414
+在高位有更多未平仓合约建立
+makers have to do when you buy or
+
+176
+00:07:49,414 --> 00:07:54,299
+通常上涨行情是这样持续的
+sell your calls or your puts the same way institutions and hedge funds as they're buying and selling their
+
+177
+00:07:54,800 --> 00:07:56,468
+因为随着每一年的过去
+calls and puts the market makers on the
+
+178
+00:07:56,468 --> 00:07:58,136
+期权市场实际上开始
+opposite end of their trade so all of
+
+179
+00:07:58,136 --> 00:08:02,098
+所有这些幕后发生的事都会影响股价
+the all of those things that are happening behind the scenes are going to be affecting the stock price
+
+180
+00:08:02,600 --> 00:08:03,902
+因为现在交易期权的人
+now i'm highlighting 420 so let's
+
+181
+00:08:03,902 --> 00:08:05,985
+看一下图表，以及
+take a look at the chart and what
+
+182
+00:08:05,985 --> 00:08:08,068
+我在这里标记的两个
+i have are two uh gray boxes on
+
+183
+00:08:08,068 --> 00:08:09,109
+灰色方框，
+the chart these are
+
+184
+00:08:09,109 --> 00:08:10,671
+有些交易者称其为阴影方框，
+sometimes referred to as shadow boxes
+
+185
+00:08:10,671 --> 00:08:13,535
+其他交易者则称其为测量移动。
+by some traders or other traders call it the measured move
+
+186
+00:08:14,200 --> 00:08:16,579
+我只是把市场上次大涨的
+so i just took the last big rally that we
+
+187
+00:08:16,579 --> 00:08:18,958
+价格区间用矩形框标出来，
+had in the market i put a rectangle over those
+
+188
+00:08:18,958 --> 00:08:20,861
+从低点开始，
+prices so starting from the low and starting
+
+189
+00:08:20,861 --> 00:08:22,050
+一直到
+and and where it ended
+
+190
+00:08:22,050 --> 00:08:23,715
+回调前的高点。
+at the high before we pulled back
+
+191
+00:08:23,715 --> 00:08:25,142
+然后我把这个
+and then i just duplicated the
+
+192
+00:08:25,142 --> 00:08:27,996
+完全相同的矩形复制到
+exact same rectangle over this area here because this was our last
+
+193
+00:08:28,600 --> 00:08:31,300
+这里的区域，因为这是我们上次的主要低点，一直到这里。
+major low all the way up until the right here.
+
+194
+00:08:31,300 --> 00:08:34,100
+所以这两个方框的宽度和高度完全相同。
+So these boxes are exactly the same in width and height.
+
+195
+00:08:34,400 --> 00:08:36,022
+如果我们从宽度角度看，
+So if we take a look at
+
+196
+00:08:36,022 --> 00:08:39,499
+可以发现这代表的是时间。
+this from a width perspective, we can see that this is a representation of time.
+
+197
+00:08:39,800 --> 00:08:42,530
+如果把它看作市场涨势
+And if we were to think of this as when
+
+198
+00:08:42,530 --> 00:08:45,260
+在时间框架内何时停止，
+will the markets rally stop in terms of a time
+
+199
+00:08:45,260 --> 00:08:47,444
+如果你使用测量移动概念，
+frame, if you use the measured move concept,
+
+200
+00:08:47,444 --> 00:08:49,355
+我们可能会在这里遇到
+we're likely to start meeting some sort
+
+201
+00:08:49,355 --> 00:08:51,266
+某种阻力，
+of resistance right here because the same
+
+202
+00:08:51,266 --> 00:08:53,996
+因为上次涨势经历了相同的时间长度。
+amount of time has passed by for the last rally.
+
+203
+00:08:54,400 --> 00:08:56,123
+现在，如果我们看一下这个，
+Now, if we take a look at this
+
+204
+00:08:56,123 --> 00:08:59,999
+还可以发现，5月份时市场经历了大量的盘整。
+also, we can see that there was a massive amount of consolidation that took place back in May.
+
+205
+00:09:00,200 --> 00:09:01,000
+这很合理。
+And it made sense.
+
+206
+00:09:01,000 --> 00:09:03,016
+CPI数据就在这里发布，
+The CPI numbers came out right here and
+
+207
+00:09:03,016 --> 00:09:07,300
+实际数据远超预期，震惊了很多市场参与者。
+actually shocked a lot of market participants as the numbers came in a lot higher than expected.
+
+208
+00:09:07,600 --> 00:09:10,800
+市场在这里下跌了10%到11%左右。
+And the market dropped over 10, 11%, I believe, right here.
+
+209
+00:09:11,000 --> 00:09:12,777
+而过去几周我们经历的是
+And what we just experienced over the past
+
+210
+00:09:12,777 --> 00:09:14,332
+一轮超过10%的反弹
+couple of weeks was an over 10% rally
+
+211
+00:09:14,332 --> 00:09:16,776
+从这个低点到我们刚收盘的位置。
+from this low to where we actually just closed that here.
+
+212
+00:09:17,400 --> 00:09:18,900
+但我们又回到了这个区域。
+But we are back in this area.
+
+213
+00:09:18,900 --> 00:09:20,708
+可以这样理解：
+So one way to think of this
+
+214
+00:09:20,708 --> 00:09:22,774
+很多参与者在这段时间内买入股票，
+is a lot of the participants that bought
+
+215
+00:09:22,774 --> 00:09:27,940
+他们实际上不得不在跌幅超过10%的情况下持有亏损头寸。
+stock back in this time frame right here, they actually had to hold their positions in the red down over 10%.
+
+216
+00:09:28,400 --> 00:09:31,600
+现在我们又回到了他们最初入场的价位。
+And now we're back at where they initially entered their positions.
+
+217
+00:09:31,900 --> 00:09:33,500
+所以他们要做几个决定。
+So they have a couple of decisions to make.
+
+218
+00:09:33,900 --> 00:09:35,436
+要么现在平仓，
+Either they close the trades out
+
+219
+00:09:35,436 --> 00:09:37,740
+接受持平，这可能会被视为赢了，
+now and just take a break even, which could
+
+220
+00:09:37,740 --> 00:09:40,044
+如果你之前的头寸亏损过10%，
+be considered a win if you held the position
+
+221
+00:09:40,044 --> 00:09:43,885
+现在有机会以0%亏损平仓。
+down minus 10% and now you have a chance to close it out for a 0% loss.
+
+222
+00:09:44,400 --> 00:09:45,550
+对有些交易者来说，
+For some traders, I mean,
+
+223
+00:09:45,550 --> 00:09:47,851
+如果你像我一样，持有头寸
+if you're anything like me and you've held the position
+
+224
+00:09:47,851 --> 00:09:50,152
+从亏损回到持平点，
+down and it comes back to your break-even spot, if
+
+225
+00:09:50,152 --> 00:09:52,453
+如果你已经亏损了一段时间，
+you've been down for a while, this is all the
+
+226
+00:09:52,453 --> 00:09:56,596
+这是5月的情况，现在是8月1日，你通常会想平仓。
+way back in May, we're now in August 1st, you're generally going to want to close the position.
+
+227
+00:09:56,600 --> 00:09:58,000
+当然，时间框架不同。
+Again, different time frames.
+
+228
+00:09:58,000 --> 00:09:59,575
+如果你是为未来5到10年投资，
+If you're investing for the next five
+
+229
+00:09:59,575 --> 00:10:01,150
+这可能对你没影响，
+to 10 years, then it might not necessarily
+
+230
+00:10:01,150 --> 00:10:03,400
+因为你只是认为这是短期回调，
+matter for you because you're just expecting this to be
+
+231
+00:10:03,400 --> 00:10:04,822
+你觉得市场会一路涨到
+some sort of a short-term pullback and
+
+232
+00:10:04,822 --> 00:10:06,244
+比如550，
+you're thinking the market's going all the
+
+233
+00:10:06,244 --> 00:10:07,260
+600，甚至700左右，
+way up to, you know, 550,
+
+234
+00:10:07,260 --> 00:10:09,089
+这取决于你的时间框架。
+600, maybe even 700 or so, depending on your time frame.
+
+235
+00:10:11,100 --> 00:10:14,700
+但对短期交易者来说，这可能是平仓的时机。
+But for short-term traders, this might be seen as a place to close out the position.
+
+236
+00:10:14,700 --> 00:10:16,163
+这可能会在该区域
+So this is going to create some
+
+237
+00:10:16,163 --> 00:10:19,299
+制造一些抛压或向下压力。
+sort of supply or some sort of downward pressure on the market in this area.
+
+238
+00:10:19,700 --> 00:10:21,716
+现在，在这个阴影框的顶部，
+Now, at the top of this shadow box,
+
+239
+00:10:21,716 --> 00:10:23,480
+在这个测量移动的顶部，
+at the top of this measured move,
+
+240
+00:10:23,480 --> 00:10:25,748
+我们看到这个水平，就是417。
+we have this level right here, which is a 417.
+
+241
+00:10:26,900 --> 00:10:32,100
+420点位在这里。我图表上的灰色线是200日均线。
+And the 420 level is right here. Gray level on my chart is a 200-day moving average.
+
+242
+00:10:32,100 --> 00:10:34,300
+所以这也是一个需要关注的关键点位。
+So this is also a key level to keep in mind.
+
+243
+00:10:34,300 --> 00:10:39,200
+它可能会继续下跌，至少会到430点位。
+That's likely to continue to start dropping down to get to at least the 430 level.
+
+244
+00:10:39,200 --> 00:10:41,300
+如果市场继续当前的下跌趋势，
+And possibly if we continue in the downtrend
+
+245
+00:10:41,300 --> 00:10:43,137
+这个点位
+that the market's been in, this level
+
+246
+00:10:43,137 --> 00:10:45,237
+可能会进一步下跌到约420点。
+is likely to then drop down to about 420.
+
+247
+00:10:45,700 --> 00:10:48,100
+所以可以理解，
+So it would make sense that there aren't
+
+248
+00:10:48,100 --> 00:10:51,100
+现在可能没有太多参与者
+necessarily a lot of participants right now that are expecting
+
+249
+00:10:51,100 --> 00:10:57,100
+预期市场会在8月突破420点，尤其是在7月大幅上涨后。
+the markets to go past 420, especially for the month of August after we just had this massive rally during July.
+
+250
+00:10:57,800 --> 00:11:01,100
+但这并不意味着市场一定不会进一步上涨。
+However, again, it doesn't mean that the market won't necessarily go higher.
+
+251
+00:11:01,300 --> 00:11:03,225
+只是上涨可能不会持续，
+It just is not likely to be
+
+252
+00:11:03,225 --> 00:11:05,150
+也就是说回调时
+a sustained rally, meaning the pullback will
+
+253
+00:11:05,150 --> 00:11:09,000
+会非常剧烈，或者回调时支撑不足。
+be very harsh or there won't be a lot of support on the pullback.
+
+254
+00:11:09,300 --> 00:11:10,954
+稍后在视频中，我会向大家展示
+Later on in this video, I'll show
+
+255
+00:11:10,954 --> 00:11:12,135
+如何利用这些信息
+you guys different ways you
+
+256
+00:11:12,135 --> 00:11:14,498
+通过价差策略进行交易。
+can take trades using spreads with this type of information.
+
+257
+00:11:14,600 --> 00:11:15,675
+接下来，
+But as we move right along,
+
+258
+00:11:15,675 --> 00:11:17,109
+我想让大家了解一下
+I wanted you guys to have some sort
+
+259
+00:11:17,109 --> 00:11:19,798
+当前图表和市场状况的背景信息。
+of context in terms of the chart and what the market is looking like currently.
+
+260
+00:11:20,100 --> 00:11:24,500
+这里是400点位。400点位显然是一个重要的心理关口。
+Right here, we have the 400 level. So the 400 level, obviously, it's a very whole psychological level.
+
+261
+00:11:24,800 --> 00:11:27,700
+这是今年以来一直起作用的重要点位。
+It's been an important level in play from since this year.
+
+262
+00:11:27,800 --> 00:11:29,784
+我们可以看到价格多次
+We can see how many times price has
+
+263
+00:11:29,784 --> 00:11:31,768
+围绕这个点位波动，
+spent around this level and how it's interacted
+
+264
+00:11:31,768 --> 00:11:33,752
+每次触及400点位时的互动情况。
+with it every time it's touched the 400 level.
+
+265
+00:11:34,300 --> 00:11:36,009
+如果我们来看一下
+If we were to take a look and
+
+266
+00:11:36,009 --> 00:11:37,504
+最近一次摆动的50%回撤位，
+the 50% retracement from the most recent swing
+
+267
+00:11:37,504 --> 00:11:39,213
+从最低点一直到这个摆动高点，
+low, which would be right there all the
+
+268
+00:11:39,213 --> 00:11:43,485
+可以看到这个区域有一些汇聚。
+way up to this swing high, we can see there's a little bit of confluence in this area right here.
+
+269
+00:11:43,700 --> 00:11:48,900
+这意味着这是从上一次上涨的50%回撤位，市场通常以波浪形式运行。
+This would just mean it's the 50% pullback from the last rally and the market tends to move in waves.
+
+270
+00:11:49,300 --> 00:11:51,091
+所以回调到一半，
+So a halfway back, as it's sometimes
+
+271
+00:11:51,091 --> 00:11:52,882
+通常被称为50%回撤，是一个
+referred to as a 50% retracement, is a
+
+272
+00:11:52,882 --> 00:11:55,184
+略显重要的水平，因为可能会有
+little bit of significance because there's likely to be
+
+273
+00:11:55,184 --> 00:11:57,742
+多头在该回撤水平附近入场。
+some sort of buyers on that retracement level right there.
+
+274
+00:11:58,300 --> 00:12:03,100
+正如股价从高点回撤50%时，可能会有空头出现一样。
+Just like there's likely to be sellers. whenever a stock price puts in a 50% retracement from the high.
+
+275
+00:12:03,100 --> 00:12:04,545
+换句话说，如果我们看
+So in other words, if we take
+
+276
+00:12:04,545 --> 00:12:05,990
+看这里，当它反弹回升时，
+a look at this, you know, sell
+
+277
+00:12:05,990 --> 00:12:09,293
+这大约是一个50%回撤的下跌。
+off here, when it bounced back up, this is about a 50% retracement as it sold off.
+
+278
+00:12:09,500 --> 00:12:10,800
+它跌到这里然后反弹。
+It came down to here and it bounced back.
+
+279
+00:12:10,800 --> 00:12:13,500
+这大约是50%回撤，下跌后反弹。
+This was around a 50% retracement, sold off, it bounced.
+
+280
+00:12:13,500 --> 00:12:14,900
+这大约也是50%回撤。
+This is about a 50% retracement.
+
+281
+00:12:14,900 --> 00:12:15,738
+所以我不会
+So I'm not going to
+
+282
+00:12:15,738 --> 00:12:16,912
+逐一标出每一个，但只是
+draw out every single one, but just
+
+283
+00:12:16,912 --> 00:12:20,099
+想让大家注意到这一点，万一你们之前没注意到。
+wanted to bring you guys, bring that to your attention in case you guys were not aware of that.
+
+284
+00:12:20,100 --> 00:12:21,300
+你们看，这是我们的
+So you see, here's our
+
+285
+00:12:21,300 --> 00:12:22,980
+高点，市场一路下跌，
+high market sells all the way off
+
+286
+00:12:22,980 --> 00:12:24,420
+反弹时，我们回到50%回撤
+and when we bounce, we came
+
+287
+00:12:24,420 --> 00:12:27,060
+然后再次下跌，如此循环。
+back to 50% retracement before we sold off again and so forth.
+
+288
+00:12:27,300 --> 00:12:28,700
+你们可以自己操作。
+You guys can do that on your own.
+
+289
+00:12:29,100 --> 00:12:34,100
+只需使用带有50%回撤的斐波那契工具，然后标记出来即可。
+Just use any type of tool that has the 50% retracement on your Fibonacci and then just plot that out.
+
+290
+00:12:34,100 --> 00:12:39,400
+通常寻找一个主要的摆动低点到摆动高点。这里有摆动低点、摆动高点。
+You're generally looking for a major swing low to a swing high. There's a swing low, swing high.
+
+291
+00:12:39,400 --> 00:12:41,000
+这是一个摆动低点、摆动高点。
+Here's a swing low, swing high.
+
+292
+00:12:41,200 --> 00:12:43,100
+这次回撤不是50%回调。
+This retracement was not a 50% pullback.
+
+293
+00:12:43,100 --> 00:12:44,400
+它实际上在
+It actually stopped at the
+
+294
+00:12:44,400 --> 00:12:46,220
+50日均线处停住，然后
+50-day moving average before it pushed, continued
+
+295
+00:12:46,220 --> 00:12:49,600
+随着过去几周趋势强劲，继续上涨。
+higher as the trend was pretty strong over the past couple of weeks.
+
+296
+00:12:49,800 --> 00:12:51,041
+现在，回到
+Now, as we jump back to
+
+297
+00:12:51,041 --> 00:12:52,282
+Gamma暴露页面，我们
+the gamma exposure page and we're
+
+298
+00:12:52,282 --> 00:12:55,799
+查看8月的数据。这里可以看到类似的信息。
+looking at it for the month of August. We can see the same type of information here.
+
+299
+00:12:55,800 --> 00:12:58,900
+410点位可能作为支撑位。
+The 410 level likely to hold as some sort of support.
+
+300
+00:12:58,900 --> 00:13:00,681
+但如果市场收盘低于410，
+However, if the market closes below 410
+
+301
+00:13:00,681 --> 00:13:03,056
+在任意交易日，我们可以做出
+on any given day, we can make the
+
+302
+00:13:03,056 --> 00:13:08,102
+假设：如果未能收复这个水平，可能会进一步下跌。
+assumption we're probably going to go a little bit lower if it fails to reclaim this level.
+
+303
+00:13:08,600 --> 00:13:10,220
+这非常重要，因为第一，
+It's very significant because, one,
+
+304
+00:13:10,220 --> 00:13:12,164
+411行权价，你可以把它
+the 411 strike, and again, you think
+
+305
+00:13:12,164 --> 00:13:16,376
+看作零Gamma暴露水平或Gamma翻转点所在的区域。
+of the zero GEX level or the gamma flip level as an area.
+
+306
+00:13:16,700 --> 00:13:18,470
+可以这样理解：
+So think of it as
+
+307
+00:13:18,470 --> 00:13:20,240
+410到412之间的任何位置
+anywhere between 410 to 412 as it's
+
+308
+00:13:20,240 --> 00:13:24,490
+可能会随每一天的未平仓合约等因素变化而变化。
+likely to change every passing day as open interest and things change.
+
+309
+00:13:25,500 --> 00:13:28,400
+但如果把它看作一个区域，你可以在图表上看到。
+But if you think of it as an area, you can see it right here on the chart.
+
+310
+00:13:28,400 --> 00:13:30,100
+这个区域下方几乎没有正Gamma。
+There really isn't much positive gamma.
+
+311
+00:13:30,000 --> 00:13:31,227
+此行权价下方的Gamma
+gamma below this strikes and
+
+312
+00:13:31,227 --> 00:13:32,454
+然后我们在这里看到8月的汇聚点，
+then we have the confluence
+
+313
+00:13:32,454 --> 00:13:34,417
+因为这份报告生成时，
+right here with for the month of august
+
+314
+00:13:34,417 --> 00:13:38,098
+现货价格变化会导致Gamma暴露变化，
+as this report was generated again this is likely to change because as the spot
+
+315
+00:13:38,600 --> 00:13:39,880
+所以这很重要，
+price changes the gamma exposure
+
+316
+00:13:39,880 --> 00:13:41,672
+要查看这类信息。
+will change so that's why it's important
+
+317
+00:13:41,672 --> 00:13:43,208
+你需要每天查看几次，
+to check this type of information
+
+318
+00:13:43,208 --> 00:13:44,744
+盘前、盘后、
+you know a couple times a
+
+319
+00:13:44,744 --> 00:13:49,097
+午间，如果你在汇总多个行权价或多个到期日，
+day pre-market after hours in the middle of the day during the lunchtime if you're aggregating multiple
+
+320
+00:13:49,500 --> 00:13:50,950
+通常需要每天查看几次。
+strike prices or multiple expirations you
+
+321
+00:13:50,950 --> 00:13:52,400
+如果你是日内交易，
+generally want to check this a
+
+322
+00:13:52,400 --> 00:13:53,850
+只需查看你关注的到期日。
+couple times a day if you're
+
+323
+00:13:53,850 --> 00:13:55,541
+即这里的这个。
+day trading then you only need to
+
+324
+00:13:55,541 --> 00:13:57,158
+所以本周五到期日的绝对Gamma暴露行权价是410。
+check the expiration in which you're interested
+
+325
+00:13:57,158 --> 00:13:58,775
+如果你查看的是单个到期日，
+in which is this one right here
+
+326
+00:13:58,775 --> 00:14:00,624
+就不需要查看其他。
+so we have the absolute gamma strike is 410
+
+327
+00:14:01,800 --> 00:14:04,600
+但需要更频繁地查看，
+for this Friday's expiration right here.
+
+328
+00:14:04,600 --> 00:14:08,300
+因为随着股票
+So if you're checking an individual expiration, then you don't need to check.
+
+329
+00:14:08,500 --> 00:14:09,940
+你会更频繁地检查这个
+You would be checking this a
+
+330
+00:14:09,940 --> 00:14:11,860
+因为随着股票
+little bit more frequently because as the stock
+
+331
+00:14:11,860 --> 00:14:15,700
+股价每波动几个点，这些数据大部分都会变化。
+price is changing every few points or so, a lot of this is going to change.
+
+332
+00:14:15,800 --> 00:14:17,307
+但大多数情况下，如果
+But for the most part, if
+
+333
+00:14:17,307 --> 00:14:19,316
+你是聚合多个到期日的数据，
+you're aggregating multiple expirations together, then you don't
+
+334
+00:14:19,316 --> 00:14:20,823
+就不需要像检查
+need to be checking this every
+
+335
+00:14:20,823 --> 00:14:22,330
+其他页面或其他工具那样
+single minute as you would maybe
+
+336
+00:14:22,330 --> 00:14:23,837
+每分钟都检查一次
+the other page or any other
+
+337
+00:14:23,837 --> 00:14:26,097
+Gamma暴露的计算工具。
+tool in which you use to calculate gamma exposure.
+
+338
+00:14:26,500 --> 00:14:27,900
+我采用自上而下的方法。
+I start with the top-down approach.
+
+339
+00:14:27,900 --> 00:14:29,150
+所以周末时，
+So over the weekend, just
+
+340
+00:14:29,150 --> 00:14:30,900
+我只需关注这里的关键价位，
+be aware of the key levels right
+
+341
+00:14:30,900 --> 00:14:33,400
+在为一周交易布局时。
+here as I'm structuring out my trades for the week.
+
+342
+00:14:33,800 --> 00:14:37,100
+我不预期市场一定能守住415。
+I'm not expecting the markets to necessarily hold over 415.
+
+343
+00:14:37,100 --> 00:14:39,000
+所以我已经开始构建某些交易。
+So I've already started building out certain trades.
+
+344
+00:14:39,200 --> 00:14:41,900
+意识到410是这里的一个关键价位。
+Aware of 410 being such a key level right here.
+
+345
+00:14:42,000 --> 00:14:44,880
+如果我们来看一下我上周发布的这笔交易，
+If we were to take a look at this trade
+
+346
+00:14:44,880 --> 00:14:46,896
+这是SPY（标普500 ETF）的410行权价日历价差策略。
+in which I posted last week. This
+
+347
+00:14:46,896 --> 00:14:48,912
+是SPY（标普500 ETF）的410行权价看涨期权日历策略。
+was the 410 call calendar for the SPY.
+
+348
+00:14:49,200 --> 00:14:52,800
+只是预期市场在这个价位附近会有些震荡。
+So just expecting the markets to be a little bit choppy in that vicinity.
+
+349
+00:14:53,100 --> 00:14:56,800
+如果现在检查这个价差的表现，实际上上涨了11%。
+If we were to check how the spread is doing right now, it's actually up 11%.
+
+350
+00:14:57,200 --> 00:15:00,000
+我持有几个这样的头寸，
+So I'm in a few of these and I have a myriad of other.
+
+351
+00:15:00,100 --> 00:15:02,144
+还有很多其他价差策略
+spreads running right now on the SPX as
+
+352
+00:15:02,144 --> 00:15:04,188
+在SPX（标普500指数）和SPY（标普500 ETF）上运行，
+well as the SPY, but I'm just essentially
+
+353
+00:15:04,188 --> 00:15:06,999
+但基本上我只是在寻找这个价位附近的小幅整固。
+looking for a little bit of consolidation around this price level.
+
+354
+00:15:07,000 --> 00:15:09,950
+所以如果市场一路震荡到周五，
+So if it ends up being choppy around this level all the
+
+355
+00:15:09,950 --> 00:15:11,916
+从百分比来看，
+way until Friday from a percentual basis, that's
+
+356
+00:15:11,916 --> 00:15:12,653
+大约能带来30%的回报。
+about a 30% return.
+
+357
+00:15:13,100 --> 00:15:14,900
+我期望大约25%到30%的回报。
+I'm looking for about a 25, 30% return.
+
+358
+00:15:15,000 --> 00:15:16,525
+一旦上涨约25%，
+Once I'm up about 25%, I'm probably
+
+359
+00:15:16,525 --> 00:15:18,050
+我可能会开始减仓，
+20 to 25%. I actually started scaling out
+
+360
+00:15:18,050 --> 00:15:20,337
+并开始获利了结，同时继续持有剩余头寸。
+and taking some profit as I continue to hold.
+
+361
+00:15:21,100 --> 00:15:23,700
+你不想持有这种头寸到期，因为显然
+You don't want to hold something like this till expiration because obviously
+
+362
+00:15:24,500 --> 00:15:27,308
+市场可能在任何一天出现大幅波动，
+The market can make any type of big move on any given
+
+363
+00:15:27,308 --> 00:15:29,180
+而你离到期日越近，
+day, and the closer and closer you hold
+
+364
+00:15:29,180 --> 00:15:31,052
+对Gamma的敏感度就会越高，
+it to expiration, the more sensitive it starts
+
+365
+00:15:31,052 --> 00:15:32,456
+这
+to become into gamma, and that's
+
+366
+00:15:32,456 --> 00:15:33,860
+并不是你在非方向性价差策略中想要的，
+not necessarily something you want in
+
+367
+00:15:33,860 --> 00:15:36,200
+比如像这样的日历价差策略。
+a non-directional spread, such as a calendar like this one.
+
+368
+00:15:36,600 --> 00:15:38,804
+不过，如果我们回到Gamma暴露的话，
+If we jump back now to the gamma exposure, however,
+
+369
+00:15:38,804 --> 00:15:40,567
+我清楚地知道，如果我们跌破这个水平，
+I am fully aware that if we did
+
+370
+00:15:40,567 --> 00:15:42,110
+我肯定想
+get below this level, I definitely want
+
+371
+00:15:42,110 --> 00:15:46,078
+持有一些能从回调至400点水平中获益的价差策略。
+to be in some spreads that are going to benefit from if we pull back to the 400 level.
+
+372
+00:15:46,400 --> 00:15:47,800
+所以我开始建立其他价差策略。
+So I started opening up other spreads.
+
+373
+00:15:47,800 --> 00:15:50,800
+我不打算展示我开立的所有头寸。
+I'm not going to highlight everything in which I've opened.
+
+374
+00:15:51,000 --> 00:15:52,520
+因为这段视频并不是为了
+As this video is not an intention behind
+
+375
+00:15:52,520 --> 00:15:53,850
+让你们了解我的交易或
+you know my my trades or what
+
+376
+00:15:53,850 --> 00:15:56,700
+我开立了哪些价差策略，
+spreads i've opened but just to show you guys certain trades in which i started
+
+377
+00:15:57,100 --> 00:16:02,300
+只是为了向大家展示我目前开始建立的一些交易，
+opening up right now here's a 4 000 put calendar that expires at the end of the month uh high
+
+378
+00:16:02,700 --> 00:16:04,933
+这是一个本月底到期的4000行权价看跌期权日历策略，
+low risk high reward in terms of why
+
+379
+00:16:04,933 --> 00:16:07,166
+风险低、收益高，
+i'm expecting a pullback uh it's understanding that
+
+380
+00:16:07,166 --> 00:16:09,399
+之所以预期回调，是因为
+the there's not much open interest past the
+
+381
+00:16:09,399 --> 00:16:09,910
+420点以上未平仓合约不多，
+420 level so
+
+382
+00:16:09,910 --> 00:16:11,701
+所以我预计，如果我们突破420，
+i would expect if we did get
+
+383
+00:16:11,701 --> 00:16:15,027
+而本月未平仓合约没有开始增加，
+over 420 and we didn't see the open interest start increasing for this month
+
+384
+00:16:16,500 --> 00:16:18,586
+顺便说一下，这是个好技巧，
+that's a good little tip by the way
+
+385
+00:16:18,586 --> 00:16:20,672
+如果你不知道的话，
+if you didn't know so in terms of
+
+386
+00:16:20,672 --> 00:16:22,758
+作为当前最高看涨期权未平仓合约水平，
+this being the highest call open interest level
+
+387
+00:16:22,758 --> 00:16:24,322
+如果我们没看到未平仓合约
+if we don't see open interest
+
+388
+00:16:24,322 --> 00:16:25,625
+在突破这个水平后开始增加，
+start increasing past this level
+
+389
+00:16:25,625 --> 00:16:26,928
+这就是一个明显的信号。
+that's that's an easy tell
+
+390
+00:16:26,928 --> 00:16:27,971
+如果我们这样理解
+if we think of
+
+391
+00:16:27,971 --> 00:16:29,796
+可以这样理解，大家对8月份
+it this way people are not that
+
+392
+00:16:30,000 --> 00:16:33,900
+420以上的市场兴趣不大。
+interested in the market past 420 for the month of August.
+
+393
+00:16:33,900 --> 00:16:39,800
+如果大家对420以上兴趣不大，那为什么会维持在420以上？
+So if people aren't that interested in it past 420, then why is it going to stay above 420?
+
+394
+00:16:39,800 --> 00:16:42,517
+换句话说，如果我们突破420，我并没有
+So in other words, if we got over 420 and I don't
+
+395
+00:16:42,517 --> 00:16:44,493
+看到该价位以上有太多未平仓合约，正如
+see much open interest past that level, as
+
+396
+00:16:44,493 --> 00:16:47,951
+大家所见，这里没有蓝色高亮显示，而当我
+we can see, there's no blue right here being highlighted relative to as I
+
+397
+00:16:49,600 --> 00:16:51,800
+向下滚动时，大家可以看到有很多蓝色。
+I scroll down here, you guys can see that there's a lot more blue.
+
+398
+00:16:51,900 --> 00:16:55,300
+但这并不意味着我们这个月就会下跌。
+And again, it does not mean that we're going to just drop this month.
+
+399
+00:16:55,500 --> 00:16:57,700
+交易本就是风险收益的权衡。
+So it's just a risk reward as what trading is.
+
+400
+00:16:57,700 --> 00:17:00,741
+继续持有多头头寸的收益是多少，
+It's just what's the reward of continuing to hold positions
+
+401
+00:17:00,741 --> 00:17:04,999
+相对于如果回调我预期的收益？
+long up here relative to what I would expect if we did pull back.
+
+402
+00:17:05,000 --> 00:17:07,200
+信息和数据又在告诉我们什么？
+And then what is the information and what is the data showing us?
+
+403
+00:17:07,500 --> 00:17:11,600
+当我们向下滚动时，大家可以看到看跌期权分布更广。
+So we scroll down here, you guys can see that there's a lot more puts spread out across the board.
+
+404
+00:17:11,900 --> 00:17:17,200
+几周前，上个月进入8月时情况完全相反。
+A couple of weeks ago, this was completely the opposite for last month coming into the month of August.
+
+405
+00:17:17,200 --> 00:17:20,500
+但现在可以看到，该价位以上确实兴趣不大。
+But now we can see there really isn't much interest past this level.
+
+406
+00:17:20,800 --> 00:17:25,000
+这里是415行权价，415显示为高正Gamma。
+Here would be the 415 strike. So the 415 sticks out as high positive gamma.
+
+407
+00:17:25,000 --> 00:17:26,900
+然后是420价位。
+And then we have the 420 level.
+
+408
+00:17:27,200 --> 00:17:29,170
+如果我隐藏GEX（Gamma暴露），我们来看
+If I were to hide the GEX and we take
+
+409
+00:17:29,170 --> 00:17:31,140
+绝对Gamma暴露水平，
+a look at this as the absolute gamma exposure levels,
+
+410
+00:17:31,140 --> 00:17:33,701
+大家可以看到，当前绝对Gamma行权价是410。
+you guys can see that the absolute gamma strike right now is the 410.
+
+411
+00:17:34,200 --> 00:17:37,800
+然后是400价位，接着是415价位。
+And then we have the 400 level and then comes the 415 level.
+
+412
+00:17:38,800 --> 00:17:42,929
+我预期市场会在这一区间内，或有
+I would expect the markets to be within this vicinity or have
+
+413
+00:17:42,929 --> 00:17:45,681
+更高的概率停留在这个区域，
+a higher probability of being in this area
+
+414
+00:17:45,681 --> 00:17:50,498
+直到月度期权到期日，除非信息发生变化。
+towards the monthly OPEX versus being in this area, again, unless the information changes.
+
+415
+00:17:50,500 --> 00:17:52,100
+我们仍处于财报季中。
+We're still in the midst of earnings season.
+
+416
+00:17:52,500 --> 00:17:55,021
+上周大型公司已发布财报，所以
+Last week, we had the bigger companies reported earnings, so
+
+417
+00:17:55,021 --> 00:17:57,038
+仍有很多财报待发布，
+there's still a lot more earnings to be
+
+418
+00:17:57,038 --> 00:17:58,298
+但没有特别重要的。
+reported, but nothing of significance.
+
+419
+00:17:58,600 --> 00:17:59,900
+看跌期权仍然更多，
+There's a lot more put still.
+
+420
+00:18:00,300 --> 00:18:02,300
+相对于看涨期权，似乎大家
+relative to calls so it seems that people
+
+421
+00:18:02,300 --> 00:18:04,300
+大家仍更倾向于持有看跌期权
+are still more interested in holding their puts
+
+422
+00:18:04,300 --> 00:18:06,300
+目前只要
+right now and we have as long as
+
+423
+00:18:06,600 --> 00:18:09,171
+价格在这个区间内，可能会非常震荡
+prices within this vicinity we're likely to be very choppy
+
+424
+00:18:09,171 --> 00:18:11,742
+如果我们突破了，但没看到
+if we did break out and we don't see more
+
+425
+00:18:11,742 --> 00:18:14,313
+更多看涨期权被购买，或者
+calls being purchased or we don't see a lot of
+
+426
+00:18:14,313 --> 00:18:15,855
+没看到大量成交量流入看涨期权
+volume flying into the calls so
+
+427
+00:18:15,855 --> 00:18:17,397
+那我们切换一下页面
+let's actually switch this out right
+
+428
+00:18:17,397 --> 00:18:20,996
+在这里可以看到，大家仍在交易大量看涨期权
+here and we can see that still people are trading a lot of calls
+
+429
+00:18:21,200 --> 00:18:23,929
+这是本月相当可观的看涨期权成交量
+so this is a decent amount of call volume for
+
+430
+00:18:23,929 --> 00:18:25,839
+今天行权价413的看涨期权成交量达315,000张
+the month 315 000 calls were traded for the 413
+
+431
+00:18:25,839 --> 00:18:30,479
+如果我们回到图表，切换到日内图表
+strike today but if we come to the chart and we actually go to the intraday chart
+
+432
+00:18:31,900 --> 00:18:35,100
+这些水平是我图表上周五到期的Gamma暴露水平
+These levels are the gamma exposure levels for Friday expiration on my chart.
+
+433
+00:18:35,100 --> 00:18:37,200
+这里是410，这是绝对Gamma暴露的行权价
+So this is the 410. This is the absolute gamma strike.
+
+434
+00:18:37,600 --> 00:18:40,000
+400是我图表上负Gamma暴露最高的行权价
+400 is the highest negative gamma strike on my chart.
+
+435
+00:18:40,000 --> 00:18:41,000
+这是最大痛点
+This is max pain.
+
+436
+00:18:41,000 --> 00:18:46,000
+这些都来自Quant Trading App平台的脚本，我不是手动画的
+And this is all from a script from the Quant Trading App platform. So I'm not drawing these in manually.
+
+437
+00:18:46,300 --> 00:18:48,594
+现在可以看到，Quant Trading App的算法
+And then we can see that the Quant Trading App algo right
+
+438
+00:18:48,594 --> 00:18:50,123
+正在生成这个水平
+now is generating this level as it was
+
+439
+00:18:50,123 --> 00:18:52,799
+预计这会是今天的一个阻力位
+expecting us to be a level of some sort of resistance for the day.
+
+440
+00:18:52,800 --> 00:18:53,400
+而且它确实守住了
+And it held.
+
+441
+00:18:53,800 --> 00:18:56,267
+这并不奇怪，因为415在这里
+Now, this is not surprising because 415 right here, as
+
+442
+00:18:56,267 --> 00:18:58,460
+我们都知道，整个区域
+we know, this entire area is likely to
+
+443
+00:18:58,460 --> 00:19:02,024
+可能会非常震荡，因为这里有大量Gamma暴露
+be pretty choppy as there's a lot of gamma exposure in this level.
+
+444
+00:19:02,600 --> 00:19:07,700
+此外，这里是Gamma翻转点，这里是绝对Gamma暴露水平
+And on top of that, this is the gamma flip level right here, and this is the absolute gamma level.
+
+445
+00:19:07,700 --> 00:19:11,454
+所以这些因素在附近的汇聚
+So the culmination of all these things in this vicinity after the
+
+446
+00:19:11,454 --> 00:19:13,957
+在市场刚经历一波大涨后
+market just had this huge rally, we would
+
+447
+00:19:13,957 --> 00:19:16,773
+我们预计价格在415到408之间会非常震荡
+expect price action to be very choppy between 415 and 408.
+
+448
+00:19:17,600 --> 00:19:20,748
+但当我们查看408以下的Gamma暴露页面时
+But as we were looking at the gamma exposure page below 408,
+
+449
+00:19:20,748 --> 00:19:23,037
+如果市场跌至405并不奇怪
+it's not a surprising, it would not be
+
+450
+00:19:23,037 --> 00:19:25,326
+这并不意外
+surprising if the market was to drop to 405.
+
+451
+00:19:26,200 --> 00:19:30,000
+然后在405下方，可能会轻松跌至400。
+And then again, below 405, it would be an easy shot down to 400.
+
+452
+00:19:30,300 --> 00:19:32,734
+可能会在该水平附近暂停，
+possibly taking a pause around this level as we have
+
+453
+00:19:32,734 --> 00:19:35,168
+因为这里有最大痛点
+max pain and a few other key things in the
+
+454
+00:19:35,168 --> 00:19:37,115
+以及该区域的其他关键因素，
+area such as points of controls if you
+
+455
+00:19:37,115 --> 00:19:39,062
+比如如果你使用成交量分布图的控制点等，
+use the volume profile and so forth but
+
+456
+00:19:39,062 --> 00:19:41,496
+但这个视频主要关注的是Gamma暴露。
+this video is more so focused on just gamma exposure
+
+457
+00:19:41,900 --> 00:19:43,585
+所以我们现在回到，
+so we jump back now let's
+
+458
+00:19:43,585 --> 00:19:45,270
+我们实际调整一下，
+actually dial it down and now
+
+459
+00:19:45,270 --> 00:19:47,798
+现在我们来看SPY（标普500 ETF）的Gamma暴露，
+we're looking at the gamma exposure just for the
+
+460
+00:19:48,300 --> 00:19:50,334
+仅针对月度到期日。
+monthly expiration for the spy and
+
+461
+00:19:50,334 --> 00:19:52,368
+我排除了这个，
+then we have i excluded this
+
+462
+00:19:52,368 --> 00:19:56,098
+因为市场已收盘，所以不一定需要
+one because the market is closed so we don't necessarily need
+
+463
+00:19:56,500 --> 00:19:57,880
+零天数据，
+uh the zero days this is
+
+464
+00:19:57,880 --> 00:19:59,720
+因为它已经到期了，
+as it's as it has expired so we're
+
+465
+00:19:59,720 --> 00:20:02,020
+所以我们只看周三到期和周五到期，
+taking a look at just the wednesday expiration and the
+
+466
+00:20:02,020 --> 00:20:04,320
+我还包含了月度，因为大家可以看到，
+friday expiration and i'm including the monthly because as you
+
+467
+00:20:04,320 --> 00:20:05,010
+大家可以看到
+guys can see
+
+468
+00:20:05,010 --> 00:20:06,620
+月度到期日有大量Gamma暴露，
+there's a lot of gamma exposure for
+
+469
+00:20:06,620 --> 00:20:10,300
+这很合理，月度合约通常有大量Gamma暴露。
+the monthly expiration which makes sense the monthlies tend to have a lot of gamma exposure
+
+470
+00:20:10,700 --> 00:20:12,913
+如果我们来看这个，
+and if we take a look at this and we
+
+471
+00:20:12,913 --> 00:20:14,683
+从不同视角来看，
+get a different view or different perspective on
+
+472
+00:20:14,683 --> 00:20:16,674
+我们可以再次看到410这个水平非常重要，
+things we can see again that 410 level is very
+
+473
+00:20:16,674 --> 00:20:17,478
+而在它下方，
+important and then below
+
+474
+00:20:17,478 --> 00:20:19,087
+在该区域有少量Gamma暴露，
+it we have a little bit of gamma
+
+475
+00:20:19,087 --> 00:20:20,294
+比如在407、408附近，
+exposure in this vicinity here the
+
+476
+00:20:20,294 --> 00:20:22,708
+但在它下方，可能会直接跌至400。
+407 408 but then below it it should be a clean shot down to 400
+
+477
+00:20:25,600 --> 00:20:27,286
+为什么这个月度水平也很重要，
+why this monthly level is also of
+
+478
+00:20:27,286 --> 00:20:30,899
+因为在这里，
+significance because as we take a look at this right here this is the premium
+
+479
+00:20:31,300 --> 00:20:33,231
+我们来看SPY（标普500 ETF）的到期日，
+so if we take a look at the expirations for
+
+480
+00:20:33,231 --> 00:20:34,389
+我们来看
+the spy and we take a
+
+481
+00:20:34,389 --> 00:20:36,899
+看看这里，我们可以看到
+look at this right here we can see that the highest amount of
+
+482
+00:20:37,300 --> 00:20:39,462
+短期时间框架内权利金最高的是
+premium in the short term time frame is for the
+
+483
+00:20:39,462 --> 00:20:41,192
+目前的8月月度期权。如果我们向下滚动
+august monthlies right now and if we scroll
+
+484
+00:20:41,192 --> 00:20:42,922
+可以看到9月月度期权也有大量
+down we can see that there's a lot
+
+485
+00:20:42,922 --> 00:20:46,382
+权利金，但离到期日还有45天，比较遥远
+of premium in the september monthlies but that's pretty far away as that's 45 days till expiration
+
+486
+00:20:47,000 --> 00:20:49,600
+所以如果只关注8月的交易思路
+so for just focus on trade ideas for the month
+
+487
+00:20:49,600 --> 00:20:52,200
+我们需要重点关注月度期权
+of august we want to keep eyes on the monthly
+
+488
+00:20:52,200 --> 00:20:53,760
+并且在分析Gamma暴露时
+and we want to include that
+
+489
+00:20:53,760 --> 00:20:55,840
+必须包含这些，因为
+whenever we're doing our gamma exposure analysis because
+
+490
+00:20:55,840 --> 00:21:00,000
+目前看涨和看跌期权的未平仓合约都集中在这里
+that's where there's a lot of open interest right now in both the calls and puts
+
+491
+00:21:00,100 --> 00:21:01,600
+这些未平仓合约集中在该行权价。
+They're there for that strike price.
+
+492
+00:21:01,900 --> 00:21:03,300
+所以包含这些非常重要。
+So including that is pretty important.
+
+493
+00:21:03,500 --> 00:21:05,241
+如果我们只聚焦于这个，
+And as we isolate it just to this,
+
+494
+00:21:05,241 --> 00:21:06,546
+可以看到，同样情况。
+we can see, again, the same
+
+495
+00:21:06,546 --> 00:21:10,898
+我们上方看涨期权的未平仓合约并不多。大部分未平仓合约在下方。
+story. There isn't really much call open interest above us. Now, most of the open interest is to the downside.
+
+496
+00:21:11,300 --> 00:21:16,400
+回到这个页面，实际看一下，这是整个8月。
+And as we come back to this page and actually take a look, this is the complete month of August.
+
+497
+00:21:16,500 --> 00:21:17,500
+我们可以向上滚动
+We can scroll up right here.
+
+498
+00:21:17,800 --> 00:21:21,500
+可以看到420行权价的未平仓合约是114,000。
+We can see that for the 420 strike, it's 114,000 open interest.
+
+499
+00:21:21,500 --> 00:21:27,200
+如果看整个期权链，未平仓合约总数是394,000。
+If we take a look at the entire options chain, we can see that there's 394,000.
+
+500
+00:21:27,300 --> 00:21:34,000
+所以大约四分之一或接近三分之一集中在8月到期。
+So almost a third or almost about a quarter of that is just in the August expiration.
+
+501
+00:21:34,300 --> 00:21:37,800
+但并不是说有一半集中在这个到期日。
+But that's not necessarily it's not like it's half of it that's in this expiration.
+
+502
+00:21:37,900 --> 00:21:39,592
+如果有一半集中在这里，
+If it was about half of it and
+
+503
+00:21:39,592 --> 00:21:40,861
+并且大家都在大量买入短期看涨期权，
+everyone was piling into these short
+
+504
+00:21:40,861 --> 00:21:43,399
+我们会预期价格继续上涨。
+term calls, we would expect the price to continue to go higher.
+
+505
+00:21:43,600 --> 00:21:45,563
+如果价格真的上涨，但我们
+And if it did get higher and we
+
+506
+00:21:45,563 --> 00:21:47,526
+没有看到看涨期权未平仓合约增加，也没有
+don't see call open interest increasing, we don't
+
+507
+00:21:47,526 --> 00:21:51,698
+看到更多参与者买入深度实值看涨期权，我们会预期市场回调。
+see more participants buying out the money calls and we would expect the markets to pull back.
+
+508
+00:21:52,000 --> 00:21:55,000
+所以执行某种看跌看涨价差策略可能是个好主意。
+So running some sort of bear call spread would be a good idea.
+
+509
+00:21:55,200 --> 00:21:56,956
+看跌看涨价差策略的操作是，
+A bear call spread would be you would
+
+510
+00:21:56,956 --> 00:21:58,492
+卖出420行权价的看涨期权，然后可能买入
+short the 420 call and then possibly buy
+
+511
+00:21:58,492 --> 00:22:00,028
+比如买入425行权价的看涨期权，
+something like the 425 call and expect it,
+
+512
+00:22:00,028 --> 00:22:00,656
+然后等待大概30天
+you know, go 30
+
+513
+00:22:00,656 --> 00:22:01,913
+到期前后，
+days till expiration or so and
+
+514
+00:22:01,913 --> 00:22:04,427
+预期市场会回调并低于行权价。
+expect the markets to pull back and be below the strike price.
+
+515
+00:22:05,500 --> 00:22:08,900
+市场通常会在月度到期日附近出现反转。
+The market tends to reverse around these monthly expirations.
+
+516
+00:22:09,100 --> 00:22:10,509
+所以对我来说，我会这样构建交易，
+So that's why for me, I'm structuring a
+
+517
+00:22:10,509 --> 00:22:12,799
+并且让持仓期限稍长一些。
+lot of my trades and I'm going a little further out with them.
+
+518
+00:22:13,000 --> 00:22:15,320
+我会瞄准月底到期的价差策略，
+I'm targeting spreads that expire at the end
+
+519
+00:22:15,320 --> 00:22:18,220
+或者瞄准月度到期日，因为随着
+of the month or targeting the monthly expiration because as
+
+520
+00:22:18,220 --> 00:22:21,120
+市场上涨，假设我们继续上涨，
+the market rallies, let's just say we continue to rally,
+
+521
+00:22:21,120 --> 00:22:23,150
+在进入月度到期日时，
+as we go into this monthly expiration,
+
+522
+00:22:23,150 --> 00:22:24,890
+市场可能在到期前回调，
+we'll either pull back going into
+
+523
+00:22:24,890 --> 00:22:27,500
+或者在到期后几天回调。
+the expiration or a few days after the expiration.
+
+524
+00:22:27,500 --> 00:22:30,000
+所以我想确保给我的头寸足够的时间，
+So I want to make sure I'm giving my positions a decent amount of.
+
+525
+00:22:30,000 --> 00:22:31,888
+如果市场确实回调到
+time and if we do pull back to
+
+526
+00:22:31,888 --> 00:22:33,776
+我理想中希望回调的水平，
+the level in which i would ideally want
+
+527
+00:22:33,776 --> 00:22:35,664
+也就是400点，
+us to pull back to which would be 400
+
+528
+00:22:36,300 --> 00:22:38,192
+基于我构建交易的方式，这会很理想，
+things would be great based on the way
+
+529
+00:22:38,192 --> 00:22:40,320
+但405点对应SPX（标普500指数）的450点，
+in which i'm structuring my trades but 405 which would
+
+530
+00:22:40,320 --> 00:22:42,448
+这是我主要交易的标的，
+be 450 on the spx which is what i mostly
+
+531
+00:22:42,448 --> 00:22:43,394
+我通常在分析时使用
+trade i use the
+
+532
+00:22:43,394 --> 00:22:44,813
+SPY（标普500 ETF），
+spy usually when i'm doing most
+
+533
+00:22:44,813 --> 00:22:46,232
+但我实际交易的工具
+of my analysis but my instrument
+
+534
+00:22:46,232 --> 00:22:48,124
+是SPX（标普500指数）。
+of choice to trade is actually the spx
+
+535
+00:22:49,100 --> 00:22:51,238
+总结一下，我们指出
+so to recap things we point out we
+
+536
+00:22:51,238 --> 00:22:53,109
+8月在420行权价有较高的绝对Gamma暴露，
+have a high absolute gamma at 420 at
+
+537
+00:22:53,109 --> 00:22:54,980
+抱歉，是在410行权价，
+410 sorry for for august and if we
+
+538
+00:22:54,980 --> 00:22:56,455
+如果我们从绝对GEX（Gamma暴露）行权价开始看，
+were to start this by the
+
+539
+00:22:56,455 --> 00:22:57,930
+可以看到下一个最高的Gamma暴露行权价是400，
+absolute gex strikes we can see
+
+540
+00:22:57,930 --> 00:23:00,635
+所以我们有410
+that the next highest gamma exposure strike is 400 so we have 410
+
+541
+00:23:02,800 --> 00:23:04,580
+然后是400，接着
+and then we have 400 and then we
+
+542
+00:23:04,580 --> 00:23:06,360
+还有415，所以这个区间内波动很剧烈
+have 415 so pretty choppy within this vicinity
+
+543
+00:23:06,360 --> 00:23:08,903
+今天早些时候我和一个交易者聊天时
+i was talking to a trader earlier today as i
+
+544
+00:23:08,903 --> 00:23:11,446
+我在和他视频通话时他提到
+was doing a zoom with him and he mentioned something
+
+545
+00:23:11,446 --> 00:23:12,209
+关于Gamma
+about the gamma
+
+546
+00:23:12,209 --> 00:23:13,480
+绝对Gamma暴露的变化
+the absolute gex changing and
+
+547
+00:23:13,480 --> 00:23:15,006
+是的，它可能会随着
+yes it's likely to change as
+
+548
+00:23:15,006 --> 00:23:16,786
+现货价格的移动而变化
+you know as the spot price moves
+
+549
+00:23:17,700 --> 00:23:19,680
+但需要注意的是
+however something to take in mind that
+
+550
+00:23:19,680 --> 00:23:22,226
+我喜欢查看的是下一个
+i like to check out is what's the next
+
+551
+00:23:22,226 --> 00:23:25,055
+最高绝对Gamma暴露的行权价
+highest gamma exposure strike price so if we think the
+
+552
+00:23:25,055 --> 00:23:27,035
+如果我们认为市场会上涨
+market is going to rally and the
+
+553
+00:23:27,035 --> 00:23:29,015
+而实际上这周五到期的
+fact that both of the high gamma
+
+554
+00:23:29,015 --> 00:23:30,995
+两个高绝对Gamma暴露的行权价
+exposure strike prices for this friday's expiration
+
+555
+00:23:31,300 --> 00:23:33,004
+这两个行权价
+the fact that both of them
+
+556
+00:23:33,004 --> 00:23:35,560
+目前都低于当前现货价格
+are below the current spot price right now is
+
+557
+00:23:35,560 --> 00:23:38,400
+这并不是你期望上涨时想看到的
+not necessarily something you'd want to see if you're expecting
+
+558
+00:23:38,400 --> 00:23:39,354
+所以如果
+a rally so if
+
+559
+00:23:39,354 --> 00:23:40,785
+我们来看，这里有
+we take a look we have
+
+560
+00:23:40,785 --> 00:23:41,977
+5000万的绝对Gamma暴露
+50 million uh absolute gamma exposure
+
+561
+00:23:41,977 --> 00:23:43,408
+415行权价大约是2000万到2300万
+here the 415 strike is about 20 23 million
+
+562
+00:23:46,500 --> 00:23:48,830
+为了让它成为新的
+in order for this to become the new
+
+563
+00:23:48,830 --> 00:23:51,743
+绝对Gamma暴露行权价，显然市场必须
+absolute gamma strike obviously the the market would have to
+
+564
+00:23:51,743 --> 00:23:54,364
+涨到接近415
+rally closer to 415 but it's such a big it's
+
+565
+00:23:54,364 --> 00:23:59,607
+但它的规模是这里的一半，所以这并不一定是
+about half of the value of this one right here so this is not necessarily a data point
+
+566
+00:24:00,100 --> 00:24:05,100
+一个支持多头论点的数据点，如果你期望市场上涨的话。
+or it's not necessarily something that would support the bull thesis if you're expecting the market to rally.
+
+567
+00:24:05,400 --> 00:24:12,300
+你可能希望看到415行权价至少有3000多万或4000多万的绝对Gamma暴露。
+You'd want to see at least the 415 strike maybe have 30 something million, 40 something million in absolute gamma exposure.
+
+568
+00:24:12,700 --> 00:24:15,600
+我们在这里也能看到这一点，这只是另一种表现形式。
+And we can see that again down here. So this is just another representation.
+
+569
+00:24:15,600 --> 00:24:17,500
+现在我们只看周五到期的期权。
+Now we're looking at just the Friday expirations.
+
+570
+00:24:17,500 --> 00:24:18,700
+我们能看到420。
+We can see 420.
+
+571
+00:24:19,200 --> 00:24:20,600
+可能会起到某种
+Likely to act as some sort
+
+572
+00:24:20,600 --> 00:24:22,700
+阻力作用，如果我们到达那里的话
+of resistance if we did get up there however
+
+573
+00:24:22,700 --> 00:24:24,800
+但同样并不意味着
+it does not mean again we can't go past
+
+574
+00:24:24,800 --> 00:24:25,733
+我们无法突破它
+it if we did
+
+575
+00:24:25,733 --> 00:24:27,133
+如果我们突破它
+go past it we can expect
+
+576
+00:24:27,133 --> 00:24:29,699
+可能会出现某种Gamma挤压，这很可能发生
+some sort of gamma squeeze as that's likely to happen also
+
+577
+00:24:29,900 --> 00:24:32,233
+但要清楚，如果我们
+but do know that if we did have some sort
+
+578
+00:24:32,233 --> 00:24:34,099
+在突破该水平后出现Gamma挤压
+of gamma squeeze past this level i would
+
+579
+00:24:34,099 --> 00:24:36,199
+我不预期价格会长期维持在该水平之上
+not expect the prices to stay above that level
+
+580
+00:24:36,500 --> 00:24:39,060
+除非我们看到更高行权价的
+unless we saw the gamma starting to increase at higher
+
+581
+00:24:39,060 --> 00:24:41,620
+Gamma开始增加，这里的这个行权价
+strike prices out here this strike price right here which
+
+582
+00:24:41,620 --> 00:24:43,924
+即405行权价，可能会起到支撑作用
+is the 405 strike is likely to act as support
+
+583
+00:24:43,924 --> 00:24:49,044
+正如我们所见，这是所有这些负Gamma
+as we can see it's the only positive gamma strike price of significance within this c of all these negative
+
+584
+00:24:49,600 --> 00:24:51,357
+行权价中唯一一个显著的正Gamma行权价
+gamma strike prices so i call this a
+
+585
+00:24:51,357 --> 00:24:53,553
+所以可以把它想象成一大堆负Gamma
+c so think of it as a ton of negative
+
+586
+00:24:53,553 --> 00:24:55,749
+行权价，然后有一个正Gamma行权价
+gamma strike prices and then you have one positive gamma
+
+587
+00:24:55,749 --> 00:24:57,067
+可能会起到
+strike that's likely to act as
+
+588
+00:24:57,067 --> 00:24:58,824
+支撑作用，如果市场回调的话
+support if the market was to pull back
+
+589
+00:24:58,824 --> 00:25:00,142
+相反的情况也适用
+and it works in the opposite
+
+590
+00:25:00,142 --> 00:25:02,997
+如果这里有大量正Gamma暴露的行权价
+also if we had a ton of positive gamma exposure strike prices here
+
+591
+00:25:03,300 --> 00:25:06,172
+然后假设这里有一个负Gamma
+and then let's just say we had one negative gamma
+
+592
+00:25:06,172 --> 00:25:09,044
+行权价，如果市场上涨
+strike price right here if the market was to rally
+
+593
+00:25:09,044 --> 00:25:10,767
+可能会在该行权价遇到某种
+it would likely meet some sort
+
+594
+00:25:10,767 --> 00:25:13,064
+阻力，因为它
+of resistance at that strike price as it
+
+595
+00:25:13,064 --> 00:25:16,797
+必须消化该Gamma暴露后才能继续上涨
+would have to dissect that gamma exposure before it continues to go up
+
+596
+00:25:17,200 --> 00:25:19,057
+希望这个视频能帮助
+hopefully this video helps some of
+
+597
+00:25:19,057 --> 00:25:20,914
+你们中的一些人
+you guys expose you to some
+
+598
+00:25:20,914 --> 00:25:23,699
+接触到一些
+new information here and if we lastly conclude with
+
+599
+00:25:24,600 --> 00:25:26,457
+新信息，最后如果我们
+any of the videos in which you might have seen
+
+600
+00:25:26,457 --> 00:25:28,499
+回顾今年早些时候我做的关于期权权利金的视频
+early in the year in which I've done on option premium.
+
+601
+00:25:28,900 --> 00:25:30,000
+这点有重要意义的原因是
+The reason this is
+
+602
+00:25:30,100 --> 00:25:32,166
+这个失衡
+little bit of significance also is this imbalance
+
+603
+00:25:32,166 --> 00:25:34,749
+在这里可以看到
+right here we can see that there's a lot more
+
+604
+00:25:34,749 --> 00:25:37,332
+月度到期的看涨期权权利金
+call premium for the expiry for the monthly expiration relative
+
+605
+00:25:37,332 --> 00:25:39,398
+相对于看跌期权权利金 这个数字
+to the put premium this number is nowhere
+
+606
+00:25:39,800 --> 00:25:42,360
+远没有我们之前看到的那么夸张
+by means as astronomical as we've seen we've
+
+607
+00:25:42,360 --> 00:25:45,560
+之前市场通常在月度到期日
+seen when the market usually rally or bounce around the
+
+608
+00:25:45,560 --> 00:25:48,760
+附近反弹或波动时
+uh monthly opexes so the bounce that happened here in
+
+609
+00:25:48,760 --> 00:25:52,600
+比如1月24日和2月24日 这些大幅反弹
+uh january 24th and february 24th these big rallies that happen here
+
+610
+00:25:52,900 --> 00:25:55,352
+在这里 在这里 还有这里
+and here and here and here that all
+
+611
+00:25:55,352 --> 00:25:58,110
+都发生在月度到期日附近
+happened around the monthly opexes we were seeing over 30
+
+612
+00:25:58,110 --> 00:26:00,868
+我们看到看跌期权权利金超过3000万
+something million even as high as 40 something million in
+
+613
+00:26:00,868 --> 00:26:06,385
+甚至高达4000多万 而看涨期权权利金只有200万到300万 所以这个比率大得多
+put premium and the call premium was about two or three million so that ratio was much larger
+
+614
+00:26:07,300 --> 00:26:09,055
+但我们很少看到
+but we haven't seen much of the call
+
+615
+00:26:09,055 --> 00:26:11,249
+看涨期权权利金
+premium being more dominant than the put premium in a
+
+616
+00:26:11,249 --> 00:26:15,199
+比看跌期权权利金占主导地位一段时间
+while and which again would make sense because we're in a beer we've been in a beer market
+
+617
+00:26:15,700 --> 00:26:18,292
+这也合理 因为我们处于熊市
+but now we're seeing a little bit more of the
+
+618
+00:26:18,292 --> 00:26:20,884
+但现在看涨期权权利金
+call premium lopsided relative to the put premium so the
+
+619
+00:26:20,884 --> 00:26:23,476
+相对于看跌期权权利金 稍显失衡
+ratio here is there's over four times as much call
+
+620
+00:26:23,476 --> 00:26:24,513
+这里的比率是
+premium as they are
+
+621
+00:26:24,513 --> 00:26:26,068
+看涨期权权利金
+put premium so just you can
+
+622
+00:26:26,068 --> 00:26:27,623
+可以理解为市场
+interpret it as the market is
+
+623
+00:26:27,623 --> 00:26:29,697
+在某种程度上走得有点太远
+in a sense kind of gone too far
+
+624
+00:26:30,200 --> 00:26:32,375
+可能会难以继续上涨
+and it's going to struggle to go a
+
+625
+00:26:32,375 --> 00:26:34,550
+进入这次到期日
+little bit higher and going into this expiration
+
+626
+00:26:34,550 --> 00:26:38,900
+可以说 如果到期前继续上涨
+as we should say so it's going to be if we go higher by this expiration
+
+627
+00:26:39,400 --> 00:26:41,451
+可能会遇到某种阻力
+it will meet some sort of resistance if
+
+628
+00:26:41,451 --> 00:26:43,758
+如果我们超过420行权价
+we were higher than the 420 strike price after this
+
+629
+00:26:43,758 --> 00:26:46,322
+在到期后 反转也就不奇怪了
+expiration it wouldn't be surprised if we reversed it's just
+
+630
+00:26:46,322 --> 00:26:49,142
+这只是期权市场影响权益市场的方式
+the way the options market kind of influences the equities market
+
+631
+00:26:49,800 --> 00:26:51,770
+如果我们来看一下
+and if we were to take a look
+
+632
+00:26:51,770 --> 00:26:54,233
+这就是为什么我预期回调会
+at this is why i would expect the pullback to
+
+633
+00:26:54,233 --> 00:26:55,218
+在这里附近发生
+happen right around here
+
+634
+00:26:55,218 --> 00:26:56,695
+前后可能相差几天
+again give or take a few
+
+635
+00:26:56,695 --> 00:26:58,172
+可能提前三天
+days so maybe minus three days
+
+636
+00:26:58,172 --> 00:26:59,896
+或推迟三天
+plus three days either way not necessarily
+
+637
+00:27:00,000 --> 00:27:02,019
+不一定精确到天
+looking to be exactly perfect which is why
+
+638
+00:27:02,019 --> 00:27:04,290
+所以我喜欢做价差策略
+i like to run spreads and i give them 30
+
+639
+00:27:04,290 --> 00:27:06,813
+给它们30天到期时间
+days till expiration plenty of time to play out and
+
+640
+00:27:06,813 --> 00:27:10,346
+足够时间来发挥
+just focus on consistency here so as we jump back to the monthly expirations
+
+641
+00:27:10,900 --> 00:27:12,707
+专注于稳定性
+what we're seeing right here is the combination
+
+642
+00:27:12,707 --> 00:27:14,966
+回到月度到期日
+of the premium but just for august and now we
+
+643
+00:27:14,966 --> 00:27:16,321
+我们在这里看到的是
+can get a little bit of
+
+644
+00:27:16,321 --> 00:27:18,128
+8月权利金的组合
+a bigger perspective right here we can see
+
+645
+00:27:18,128 --> 00:27:19,483
+在这里我们可以
+that it's about four times a
+
+646
+00:27:19,483 --> 00:27:23,097
+获得更广阔的视角
+little bit over four times more uh call premium than there is put premium so that's
+
+647
+00:27:23,400 --> 00:27:25,766
+看跌期权权利金约为看涨期权的四分之一
+one indication that we've probably gone a little bit too
+
+648
+00:27:25,766 --> 00:27:27,422
+看涨期权权利金约为看跌期权的四倍多
+far so we have this key level 410
+
+649
+00:27:27,422 --> 00:27:30,262
+这是一个迹象
+which would make sense why the market was so choppy here today
+
+650
+00:27:30,900 --> 00:27:32,362
+表明我们可能已经走得有点远
+but below that you guys want to keep
+
+651
+00:27:32,362 --> 00:27:33,824
+我们有一个关键水平410
+it in mind as well as we look
+
+652
+00:27:33,824 --> 00:27:37,298
+这可以解释为什么今天市场如此震荡
+at certain points of controls where can we pull back to you guys can see we have this uh
+
+653
+00:27:37,600 --> 00:27:39,415
+但低于这个水平
+v poc right here and we can have
+
+654
+00:27:39,415 --> 00:27:41,684
+大家也要记住
+a lot of and we have a lot of high
+
+655
+00:27:41,684 --> 00:27:43,953
+当我们看某些控制点时
+volume nodes so this is likely to be a choppy
+
+656
+00:27:43,953 --> 00:27:45,159
+我们可能会回调到哪里
+area which is in confluence with
+
+657
+00:27:45,159 --> 00:27:46,365
+大家可以看到
+the 405 level but below 405 we don't
+
+658
+00:27:46,365 --> 00:27:47,571
+我们在这里有一个VPOC
+have a ton of support until
+
+659
+00:27:47,571 --> 00:27:50,184
+还有很多高成交量节点
+we get down to maybe the 400 level below 400 from a volume profile perspective
+
+660
+00:27:52,300 --> 00:27:53,904
+这可能是一个震荡区域
+we have the 396 which which we can
+
+661
+00:27:53,904 --> 00:27:55,279
+在Gamma暴露页面也能看到
+also see on the gamma exposure
+
+662
+00:27:55,279 --> 00:27:57,570
+这为这一观点增加了一些佐证
+page which adds a little bit of confluence for this
+
+663
+00:27:58,200 --> 00:27:59,000
+所以我要
+so i'm going to
+
+664
+00:27:59,000 --> 00:28:00,200
+在这里结束了大家
+wrap up here guys and if
+
+665
+00:28:00,200 --> 00:28:01,400
+如果有问题
+you have any questions leave them
+
+666
+00:28:01,400 --> 00:28:02,600
+可以留在
+in the the com leave them
+
+667
+00:28:02,600 --> 00:28:03,800
+下方评论区
+in the comment section down below
+
+668
+00:28:03,800 --> 00:28:04,800
+如果你学到了什么
+if you learned something like
+
+669
+00:28:04,800 --> 00:28:05,800
+就分享这个视频
+the video share the video
+
+670
+00:28:05,800 --> 00:28:06,800
+未来会有更多
+and expect to see a
+
+671
+00:28:06,800 --> 00:28:09,200
+类似的视频 谢谢观看
+little bit more videos like this and and uh thanks for watching
+
+===== END AFTER_TRANSLATE =====

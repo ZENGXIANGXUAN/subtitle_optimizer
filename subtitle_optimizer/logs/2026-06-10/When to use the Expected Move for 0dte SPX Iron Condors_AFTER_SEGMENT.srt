@@ -1,0 +1,762 @@
+===== AFTER_SEGMENT (190 entries) =====
+1
+00:00:00,000 --> 00:00:04,140
+What's going on guys? Brian's here. It's Wednesday. This is almost the end of the morning session.
+
+2
+00:00:04,300 --> 00:00:06,097
+The S&P 500 has been choppy and I'm
+
+3
+00:00:06,097 --> 00:00:07,894
+going to be closing out some trades here,
+
+4
+00:00:07,894 --> 00:00:09,691
+but I figured I might as well hop
+
+5
+00:00:09,691 --> 00:00:17,779
+on pretty quickly and just show you guys why I opened something like the Zero DTE Iron Condor as well as a swing trade in which I opened. So this is the Zero DTE Iron Condor.
+
+6
+00:00:17,940 --> 00:00:19,427
+Like I said, I'm going to be
+
+7
+00:00:19,427 --> 00:00:20,914
+closing this out now. And then this
+
+8
+00:00:20,914 --> 00:00:25,799
+is a swing trade in which I opened up yesterday here. It's a double calendar for next week expiration. It's doing pretty well.
+
+9
+00:00:25,800 --> 00:00:28,684
+And then a Zero DTE out of the
+
+10
+00:00:28,684 --> 00:00:31,568
+money broken wing XSP butterfly, mostly because of
+
+11
+00:00:31,568 --> 00:00:39,499
+the profile that I saw here once the market opened regarding the expected move, as well as some of the gamma exposure
+
+12
+00:00:39,500 --> 00:00:42,259
+and just understanding some technical analysis and the expectation I've
+
+13
+00:00:42,259 --> 00:00:44,466
+come to learn whenever the market is hovering
+
+14
+00:00:44,466 --> 00:00:53,019
+around these quant trading app zones here. Link is in the description of quant trading app. That's where these levels are from. That is where the gamma exposure profile is from,
+
+15
+00:00:53,020 --> 00:00:57,500
+as well as this SPX trade engine, which we'll be getting to in a few minutes and some other data
+
+16
+00:00:57,500 --> 00:00:59,621
+points. Once the markets closed yesterday, I came
+
+17
+00:00:59,621 --> 00:01:01,742
+in today already knowing I was going to
+
+18
+00:01:01,742 --> 00:01:06,779
+run some sort of non-directional trade. The only thing that sucks is that implied volatility is not really high
+
+19
+00:01:06,780 --> 00:01:09,446
+relative to how it's been over the past few weeks.
+
+20
+00:01:09,446 --> 00:01:11,579
+So that means the Iron Condor, I didn't
+
+21
+00:01:11,579 --> 00:01:17,179
+really get that much premium. So I made it much more narrow than you would normally see how someone would sell
+
+22
+00:01:17,180 --> 00:01:19,980
+an Iron Condor, which is why I knew I wanted
+
+23
+00:01:19,980 --> 00:01:22,220
+to open this trade really early. I generally
+
+24
+00:01:22,220 --> 00:01:24,460
+don't like to open up non-directional trades this
+
+25
+00:01:24,460 --> 00:01:32,860
+early in the morning. This is only eight minutes after the market opened today. I decided to open up this Iron Condor. I used 6.120 as the short strike for the
+
+26
+00:01:33,140 --> 00:01:38,040
+call side and 60.85 as the short strike for the put side. Because a few minutes after the market opened,
+
+27
+00:01:38,200 --> 00:01:40,863
+I let the SPX trade engine and quant trading app
+
+28
+00:01:40,863 --> 00:01:42,993
+just generate this right here. And this is
+
+29
+00:01:42,993 --> 00:01:45,123
+at a glance an overview to essentially most
+
+30
+00:01:45,123 --> 00:01:54,178
+of the quintessential information that a zero DT SPX trader would need to know. And what I see right here is this was the expected move for the day from the open. And this
+
+31
+00:01:54,180 --> 00:01:57,026
+was the expected move from the open to
+
+32
+00:01:57,026 --> 00:01:59,160
+the downside. So 60.85 and 61.23. This is
+
+33
+00:01:59,160 --> 00:02:08,054
+the Iron Condor here. So 60.85 and 61.23. So you guys can see the break even right here. It's around the range of what is to be
+
+34
+00:02:09,479 --> 00:02:11,599
+the expected move from the open. This was
+
+35
+00:02:11,599 --> 00:02:13,189
+generated five minutes after the market
+
+36
+00:02:13,189 --> 00:02:19,814
+opened. This is a very narrow range. As we can see, the expected move is only about 20 points up or down. And on days like
+
+37
+00:02:20,080 --> 00:02:24,760
+this, you're not going to get that much premium relative to if we scroll back to a previous day.
+
+38
+00:02:24,820 --> 00:02:26,886
+Say, for example, yesterday wasn't really that volatile
+
+39
+00:02:26,886 --> 00:02:28,436
+either. It was 21, about 22 points. If
+
+40
+00:02:28,436 --> 00:02:33,602
+it's going to be a day in which it's expected to be very volatile, the system will print out something
+
+41
+00:02:34,120 --> 00:02:37,217
+that says AA after this. This is also not a
+
+42
+00:02:37,217 --> 00:02:40,314
+day that is above average, but AA just stands for
+
+43
+00:02:40,314 --> 00:02:44,960
+above average. And it just means it is an above average expected move from the
+
+44
+00:02:44,960 --> 00:02:49,606
+open. So since today was not an above average, you know, expected day, this is
+
+45
+00:02:49,606 --> 00:03:08,499
+a very small expected move. I like whenever the expected move drops significantly. So over the past few days, it has been hovering around maybe 20, 20 something points or so. And the first day that it is a low expected move, that's when I'm generally going to be interested in running some sort of Iron Condor relatively early in the trading session.
+
+46
+00:03:09,260 --> 00:03:13,129
+Because that usually happens after the market has already made
+
+47
+00:03:13,129 --> 00:03:16,998
+a couple decent big moves. On that third day, I
+
+48
+00:03:16,998 --> 00:03:28,992
+tend to be more biased regarding consolidation. You generally don't want to be aggressive as a directional trader after the market has made a large move. On top of that, 15 minutes
+
+49
+00:03:29,380 --> 00:03:31,468
+after the market opens, this is what the gamma exposure
+
+50
+00:03:31,468 --> 00:03:33,348
+profile looked like. So 6100, as we know, is a
+
+51
+00:03:33,348 --> 00:03:36,690
+dominant strike. I actually went over that, I believe, in the video I published last night.
+
+52
+00:03:36,900 --> 00:03:38,900
+But I see this right here. And this is where
+
+53
+00:03:38,900 --> 00:03:40,500
+the absolute gex was at the start of
+
+54
+00:03:40,500 --> 00:03:44,700
+the day. There's a lot of call volume happenings. That's what the blue is showing. There's a lot of volume here.
+
+55
+00:03:44,960 --> 00:03:47,545
+There's a lot of interest in this 6120 strike. But
+
+56
+00:03:47,545 --> 00:03:50,417
+because this is a speculative out of the money type
+
+57
+00:03:50,417 --> 00:03:53,289
+of play, I decided to run with the XSP, not
+
+58
+00:03:53,289 --> 00:04:01,044
+putting that much risk on the trade. The target on that trade is essentially this right here, which is 6120. But this is where, as I mentioned yesterday,
+
+59
+00:04:01,620 --> 00:04:05,031
+context is important. I'm targeting up here, but I'm expecting
+
+60
+00:04:05,031 --> 00:04:08,442
+the markets to be relatively choppy around this range. Now,
+
+61
+00:04:08,442 --> 00:04:13,218
+what's working against me in terms of price getting up to 6120 that I'm aware
+
+62
+00:04:13,560 --> 00:04:17,918
+of from this point in time is the fact that from the volume profile, we
+
+63
+00:04:17,918 --> 00:04:22,276
+are at the top of the ES's volume profile for the week. So this is
+
+64
+00:04:22,276 --> 00:04:26,634
+what's referred to as the value area high. It's going to be difficult for the
+
+65
+00:04:26,634 --> 00:04:30,992
+markets to climb higher after it just made this large move. There's a lot of
+
+66
+00:04:30,992 --> 00:04:53,947
+price action and activity happening around here. The market is spending a lot of time around here and it is building up a massive zone here. So this could end up becoming a supply zone that will cause the market to drop all the way back down here. At this point in time, we don't know. It's likely that the market also wants to come back down to 605. That's something to be aware of. There wasn't a lot of
+
+67
+00:04:54,240 --> 00:05:01,240
+positive gamma above 610 at the start of the week. On top of that, 608 is an important gamma exposure
+
+68
+00:05:01,240 --> 00:05:04,811
+strike. Let me actually just close out my SPX position
+
+69
+00:05:04,811 --> 00:05:13,739
+before I forget, as I have a habit of actually forgetting while I'm in the middle of doing these videos. Okay, the position just closed.
+
+70
+00:05:14,000 --> 00:05:16,466
+This is the new profile. Let's just uncheck everything. As
+
+71
+00:05:16,466 --> 00:05:18,932
+you guys can see, I'm in zero lots here. So
+
+72
+00:05:18,932 --> 00:05:23,618
+the position for next week, I don't have to worry so much about. Obviously, this is for next week,
+
+73
+00:05:23,620 --> 00:05:24,951
+Friday. This is the double
+
+74
+00:05:24,951 --> 00:05:26,814
+calendar that I will get into in
+
+75
+00:05:26,814 --> 00:05:30,274
+a second. But why is 608 an important level for the SPY? It's because
+
+76
+00:05:30,274 --> 00:05:33,468
+at the start of the week, as you guys know, I like
+
+77
+00:05:33,468 --> 00:05:42,785
+to run this gamma exposure profile, combining the Monday, Tuesday, Wednesday, Thursday, Friday expirations for the week, and then coming up with a game plan for myself. This right here is 608. Now, I didn't mark
+
+78
+00:05:43,320 --> 00:05:45,421
+it out on my charts. There's a reason within QTA,
+
+79
+00:05:45,421 --> 00:05:47,522
+as you guys know here in my notes, I share
+
+80
+00:05:47,522 --> 00:05:50,043
+the profile. So not only do I share the levels at the
+
+81
+00:05:50,043 --> 00:06:00,759
+start of the week with essentially a loose game plan for how I'm going to approach the week or how a trader might consider approaching the week. But then I also make sure to share this profile here so you guys can save it for your notes in your own journal.
+
+82
+00:06:01,360 --> 00:06:03,842
+And this you guys can see right here is 608
+
+83
+00:06:03,842 --> 00:06:06,600
+at the start of the week. So this is a
+
+84
+00:06:06,600 --> 00:06:09,358
+timestamp or a snapshot here of exactly when this profile
+
+85
+00:06:09,358 --> 00:06:21,770
+was generated. But that information is also accessible here. So this is about an hour after the market opened this week. We can see that 608 was an important strike. I just put 610 because I didn't want too many levels on my charts. But earlier on
+
+86
+00:06:22,600 --> 00:06:25,205
+Monday, when the market was around 597, 608 was a
+
+87
+00:06:25,205 --> 00:06:28,461
+level to be aware of. Now that we are at
+
+88
+00:06:28,461 --> 00:06:31,392
+608, it's not going to be surprising that the market
+
+89
+00:06:31,392 --> 00:06:48,001
+is going to struggle at this level. On top of that, we have the quant trading app weekly sell zone, as well as the weekly resistance. We have the value area high. We have a lot of things going against price right now at this area. But I'm not quick to
+
+90
+00:06:48,980 --> 00:06:52,239
+flip the script and just become overtly bearish as the
+
+91
+00:06:52,239 --> 00:06:55,498
+expectation is consolidation. Bulls might make a slight attempt for
+
+92
+00:06:55,498 --> 00:07:06,579
+price to go higher. And that's why I'm going to use something like the XSP, which has much less risk associated with it. But my main conviction will be with the SPX. Now yesterday,
+
+93
+00:07:06,580 --> 00:07:09,893
+just before noon, I decided to run this double calendar
+
+94
+00:07:09,893 --> 00:07:13,206
+for next week. I wanted something that was long volatility
+
+95
+00:07:13,206 --> 00:07:16,519
+in case IV did increase. I wanted something that was
+
+96
+00:07:16,519 --> 00:07:35,736
+positive data as I'm expecting the markets to be choppy in this region. And I wanted something with a little bit positive delta because this trade was open right around here at that 6085 level that I discussed in yesterday's video. So let me just actually pop this up here. This is that 608085 area right here in which we
+
+97
+00:07:36,400 --> 00:07:39,616
+were expecting some sort of resistance. But you guys know
+
+98
+00:07:39,616 --> 00:07:42,510
+my main target was 6100. So the thought process was
+
+99
+00:07:42,510 --> 00:07:45,726
+the market would go higher and then we would consolidate
+
+100
+00:07:45,726 --> 00:07:59,555
+around 6100. I wanted a nice large range to cover price action. And I was just expecting it to go there for today, possibly into Thursday. I'll decide if I'm going to hold that trade into tomorrow or not, as it's doing pretty well
+
+101
+00:08:00,200 --> 00:08:09,200
+right now. As you guys can see, I'm not using a massive amount of capital. I'm not exposing myself to too much risk. If I hold this trade until Friday, there's an opportunity to make a lot more. And then
+
+102
+00:08:09,200 --> 00:08:11,615
+obviously, if you hold it into next week, there's an
+
+103
+00:08:11,615 --> 00:08:14,030
+opportunity to make a lot more. But I don't know
+
+104
+00:08:14,030 --> 00:08:16,445
+if I want that type of risk. As long as
+
+105
+00:08:16,445 --> 00:08:18,860
+you hold these types of double calendars, this is not
+
+106
+00:08:18,860 --> 00:08:29,003
+exactly what the P&L is going to look like. The IV for next week, Friday is going to increase and that's actually going to decrease the profits for this trade. So these are just ways to bring in P&L relatively
+
+107
+00:08:28,520 --> 00:08:31,230
+stress-free as they're not massive sizes. On top
+
+108
+00:08:31,230 --> 00:08:34,618
+of that, we have this right here. This is the
+
+109
+00:08:34,618 --> 00:08:38,006
+SPY's previous day's option volume range. So during yesterday's trading
+
+110
+00:08:38,006 --> 00:08:51,898
+session, this is essentially what the range is that the majority of SPY options were traded around. The market generally does not trade outside of this range, especially on a day after it broke out of that range. So this is
+
+111
+00:08:51,900 --> 00:08:54,997
+yesterday's range. We can see the market gapped up and
+
+112
+00:08:54,997 --> 00:08:58,094
+then it trended up all day. So now that it
+
+113
+00:08:58,094 --> 00:09:03,359
+is today, the expectation is that it's less likely to continue going higher outside of this range.
+
+114
+00:09:03,700 --> 00:09:06,796
+So this area is where I would expect it to struggle, which
+
+115
+00:09:06,796 --> 00:09:09,118
+is also that 608 strike as we can see right
+
+116
+00:09:09,118 --> 00:09:18,665
+here. That is the previous day's volume range. So that's why I'm not going to hold my breath for expecting it to go much higher. Today's volume range, as we can see, is now at 609 down to 607.
+
+117
+00:09:19,560 --> 00:09:24,620
+So today's range is currently right here. So there is a possibility that it goes higher.
+
+118
+00:09:24,620 --> 00:09:27,125
+This area is, this area would be expected to be
+
+119
+00:09:27,125 --> 00:09:29,630
+support. It refreshes automatically every few minutes. Every time you
+
+120
+00:09:29,630 --> 00:09:32,135
+refresh the page, obviously it will completely reanalyze this data
+
+121
+00:09:32,135 --> 00:09:42,157
+and plot it on the chart. But right now it's on an auto timer. So every five minutes, it's going to refresh itself during the new five minute candle, as well as update any of these levels in real time.
+
+122
+00:09:42,620 --> 00:09:44,848
+Now that I'm out of the zero DT iron condor,
+
+123
+00:09:44,848 --> 00:09:47,076
+I'm going to take, I'm going to wait to see
+
+124
+00:09:47,076 --> 00:09:56,658
+if there's any other confluence. If we get back down to this key area from yesterday here to see if I'm going to take a long trade back up to here, I am considering running some sort of put diagonal spread for this
+
+125
+00:09:56,660 --> 00:10:00,421
+week. Since I don't have a lot of exposure out right now,
+
+126
+00:10:00,421 --> 00:10:04,182
+my profile is relatively light considering the type of trades I would
+
+127
+00:10:04,182 --> 00:10:07,943
+normally run. In other words, I don't have that much risk out.
+
+128
+00:10:07,943 --> 00:10:20,793
+So I'm considering something like this. I don't want too much risk to the downside, something for this week here just to pull in a little bit extra P&L. It'll actually be more like this to close out the week.
+
+129
+00:10:20,800 --> 00:10:23,123
+In other words, a structure like this is relatively nice.
+
+130
+00:10:23,123 --> 00:10:25,446
+If the market does have some sort of major, you
+
+131
+00:10:25,446 --> 00:10:29,627
+know, 1% down day or so and implied volatility spikes, I do want some sort of exposure to that.
+
+132
+00:10:30,220 --> 00:10:35,000
+However, if we go higher, I don't want to be burned too much using 6,100 as my level to risk off of.
+
+133
+00:10:35,000 --> 00:10:37,974
+And then obviously if we just consolidate for another day or so,
+
+134
+00:10:37,974 --> 00:10:40,700
+I would love the opportunity to bring in more P&L.
+
+135
+00:10:40,700 --> 00:10:44,666
+For hedging my portfolio overall right now, I have a put ratio back spread running for
+
+136
+00:10:44,420 --> 00:10:45,915
+next week that was opened up
+
+137
+00:10:45,915 --> 00:10:48,158
+yesterday. This just allows me to pretty much just,
+
+138
+00:10:48,158 --> 00:10:50,151
+you know, sleep well at night as I
+
+139
+00:10:50,151 --> 00:10:54,138
+leave some of these bigger overnight swings running here. So if the market did have some
+
+140
+00:10:54,140 --> 00:10:55,715
+sort of massive, you know, 3%
+
+141
+00:10:55,715 --> 00:10:58,235
+down day, I have protection to the downside.
+
+142
+00:10:58,235 --> 00:11:00,125
+If the market just consolidates for
+
+143
+00:11:00,125 --> 00:11:06,740
+a bit, it's just going to be a slow decline in P&L on a spread like this. This is just
+
+144
+00:11:06,740 --> 00:11:08,117
+protection for this week. So
+
+145
+00:11:08,117 --> 00:11:10,045
+it allows me to run these swing
+
+146
+00:11:10,045 --> 00:11:12,249
+trades overnight without fear of the markets completely
+
+147
+00:11:12,249 --> 00:11:16,657
+crashing. And this is just being smart at the fact that we are at all time
+
+148
+00:11:16,660 --> 00:11:18,223
+highs. There's tensions in the Middle
+
+149
+00:11:18,223 --> 00:11:20,307
+East. The market is generally a lot more
+
+150
+00:11:20,307 --> 00:11:21,870
+volatile once Trump is the president.
+
+151
+00:11:21,870 --> 00:11:25,778
+And obviously anything can happen at any given point. So these type of ratio spreads
+
+152
+00:11:25,780 --> 00:11:27,404
+can ease a lot of anxiety.
+
+153
+00:11:27,404 --> 00:11:29,570
+But for the most part, this video is
+
+154
+00:11:29,570 --> 00:11:31,194
+just around the context of why
+
+155
+00:11:31,194 --> 00:11:36,338
+a trader would consider, you know, running a non-directional trade relatively early in the session. What type of days
+
+156
+00:11:36,340 --> 00:11:38,836
+is it expected for the markets to be
+
+157
+00:11:38,836 --> 00:11:41,332
+choppy? Using a gamma exposure profile like this,
+
+158
+00:11:41,332 --> 00:11:46,948
+that looks relatively split. We see that there's a high gamma node here at 6,100. We see that there
+
+159
+00:11:47,260 --> 00:11:48,345
+is some interest down here. We
+
+160
+00:11:48,345 --> 00:11:49,430
+see some interest right here. It's
+
+161
+00:11:49,430 --> 00:11:50,515
+kind of like a tug of
+
+162
+00:11:50,515 --> 00:11:54,677
+war. Both of these sides could be pulling on price at the same time. It might just want to stay within this range,
+
+163
+00:11:54,680 --> 00:11:59,920
+but not passing up on the opportunity for a lotto later in the day. If we do go up to there,
+
+164
+00:12:00,060 --> 00:12:02,830
+the power strike for Quant Training App is letting us
+
+165
+00:12:02,830 --> 00:12:04,769
+know that 6,100 is where it's currently expecting
+
+166
+00:12:04,769 --> 00:12:09,201
+the markets to be during power hour. This is dynamic. So we'll move depending on what's
+
+167
+00:12:09,480 --> 00:12:11,928
+going on throughout the day. But for the now, there
+
+168
+00:12:11,928 --> 00:12:13,886
+isn't much of a reason to think the
+
+169
+00:12:13,886 --> 00:12:18,293
+market is going to close relatively far from 6,100. We're almost coming down to the expected move from the
+
+170
+00:12:18,540 --> 00:12:20,234
+open. So 6086, if the market gets down
+
+171
+00:12:20,234 --> 00:12:22,170
+here, I'm going to look to see what's
+
+172
+00:12:22,170 --> 00:12:27,737
+going to happen with price action. If a hammer candle is going to form, this could be a sign that aggressive buyers are
+
+173
+00:12:27,980 --> 00:12:29,762
+present and I might want to join them
+
+174
+00:12:29,762 --> 00:12:31,544
+in the speculation that the market is going
+
+175
+00:12:31,544 --> 00:12:36,892
+to bounce back up to 6,100. That can be a 15 point scalper. So for that trade, I might just buy the MES, which is the
+
+176
+00:12:37,340 --> 00:12:39,371
+futures, or I might just buy some out
+
+177
+00:12:39,371 --> 00:12:41,402
+of the money calls, or I might trade
+
+178
+00:12:41,402 --> 00:12:43,433
+some sort of a out the money broken
+
+179
+00:12:43,433 --> 00:12:48,258
+wing long call butterfly like the XSP, but we'll run it on the SPX to have a little bit
+
+180
+00:12:48,260 --> 00:12:49,673
+to be a little bit more
+
+181
+00:12:49,673 --> 00:12:51,321
+aggressive to bring in more P&L
+
+182
+00:12:51,321 --> 00:12:52,734
+for the day. Guys, if you
+
+183
+00:12:52,734 --> 00:12:57,915
+enjoyed this video, thanks for watching. Link is in the description to previous videos. It's rare. It's rare that I do a
+
+184
+00:12:57,680 --> 00:12:59,724
+video this early in the day as I actively have
+
+185
+00:12:59,724 --> 00:13:01,768
+positions open that I need to be focused on, but
+
+186
+00:13:01,768 --> 00:13:09,538
+because my profile was so light today, I don't have that much risk out. I'm not really too concerned with what the market's going to do. I figured I might as well come on here and share a
+
+187
+00:13:09,540 --> 00:13:12,451
+quick video. Thanks
+
+188
+00:13:12,451 --> 00:13:15,362
+for watching, guys.
+
+189
+00:13:15,362 --> 00:13:21,184
+Subscribe, like the video, leave a
+
+190
+00:13:21,184 --> 00:13:36,709
+comment. I don't know if you learned something, and I'll catch you in the next one.
+
+===== END AFTER_SEGMENT =====

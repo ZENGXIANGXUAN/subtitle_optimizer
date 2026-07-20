@@ -1,0 +1,5334 @@
+===== AFTER_SEGMENT (1333 entries) =====
+1
+00:00:01,400 --> 00:00:04,700
+Welcome back and congratulations on finishing module 1.
+
+2
+00:00:05,200 --> 00:00:08,400
+We're now going to begin module 2, the proficiency.
+
+3
+00:00:08,800 --> 00:00:11,809
+In module 2 we're going to focus on some core
+
+4
+00:00:11,809 --> 00:00:14,484
+principles and a lot of practical examples and
+
+5
+00:00:14,484 --> 00:00:19,165
+then most importantly we're going to finally start developing some key volume profiling strategies.
+
+6
+00:00:19,900 --> 00:00:21,700
+Good luck and I hope you enjoy module 2.
+
+7
+00:00:23,600 --> 00:00:25,100
+Welcome to Module 2 guys.
+
+8
+00:00:25,400 --> 00:00:32,200
+Very briefly, the structure of the module is broken down again into theoretical principles. There'll be 20 of those.
+
+9
+00:00:32,500 --> 00:00:35,900
+We will then have a lot more learning videos this time around.
+
+10
+00:00:36,300 --> 00:00:39,558
+We're going to spend quite a bit of time on
+
+11
+00:00:39,558 --> 00:00:42,164
+the blackboard going over a lot of principle
+
+12
+00:00:42,164 --> 00:00:46,399
+understanding as well as obviously starting to develop some of the key strategies.
+
+13
+00:00:46,700 --> 00:00:53,588
+We will not have any profile replay in Module 2, but there will be quite a lot of profile replay done in Module 3.
+
+14
+00:00:55,200 --> 00:01:02,897
+Then we'll have four concept checkers again, just to ensure you understand the principles dealt with in each one of the four parts.
+
+15
+00:01:03,000 --> 00:01:06,062
+And then we'll finish, or each part will
+
+16
+00:01:06,062 --> 00:01:09,124
+finish with the playbook entries, and there will
+
+17
+00:01:09,124 --> 00:01:13,717
+be 17 playbook entries for you to insert into your very own playbook.
+
+18
+00:01:14,200 --> 00:01:15,100
+Enjoy the module!
+
+19
+00:01:17,100 --> 00:01:19,000
+So what will module 2's index look like?
+
+20
+00:01:19,300 --> 00:01:24,600
+Well in part 5 we're going to start off talking about time, price and volume as key identifier.
+
+21
+00:01:25,100 --> 00:01:28,500
+We'll then move on to initiative and responsive price pattern behaviour.
+
+22
+00:01:29,200 --> 00:01:30,000
+Then symmetric.
+
+23
+00:01:30,200 --> 00:01:32,500
+versus non-symmetrical profiles, the initial
+
+24
+00:01:32,500 --> 00:01:35,720
+balance, volume profiling day types being trend
+
+25
+00:01:35,720 --> 00:01:41,240
+and non-trend, and finish part 5 with the trading process with volume profiles.
+
+26
+00:01:42,100 --> 00:01:50,000
+In part 6 we'll talk about bracketing versus trending, volume and volatility, the markets opening in and out of balance,
+
+27
+00:01:50,400 --> 00:01:53,500
+pre-open routine of a trader and trade location.
+
+28
+00:01:54,100 --> 00:01:58,500
+Then in part 7 we're going to move on to daytime auctions,
+
+29
+00:01:58,500 --> 00:02:00,100
+market auction access, volume
+
+30
+00:02:00,100 --> 00:02:06,100
+pointer controls, auction control variables and finish with high volume areas and low volume areas.
+
+31
+00:02:07,000 --> 00:02:17,400
+In part 8 we'll finish with key control identifiers, distinct profile pattern strategies, volume profile templating and deliberate practice.
+
+32
+00:02:19,872 --> 00:02:22,772
+So what can you expect to have achieved by the end of the module?
+
+33
+00:02:23,472 --> 00:02:26,872
+Firstly, you should understand advanced profiling principles.
+
+34
+00:02:27,572 --> 00:02:30,872
+You should be able to recognize six day types that occur in profiling.
+
+35
+00:02:31,772 --> 00:02:35,372
+You should be able to determine when a market is in balance or out of balance.
+
+36
+00:02:35,972 --> 00:02:39,472
+Determine who is in control at different points in the auction process.
+
+37
+00:02:40,172 --> 00:02:46,572
+Identify and use key profile metrics like the high volume node, low volume node, tails and gaps.
+
+38
+00:02:47,472 --> 00:02:48,772
+Master the value area.
+
+39
+00:02:49,472 --> 00:02:53,872
+Develop your own unique strategies with advanced understanding of profiling techniques.
+
+40
+00:02:54,572 --> 00:02:57,472
+Identify the four different types of open patterns.
+
+41
+00:02:58,272 --> 00:03:02,472
+Interpret trade location and variation of price within the value area.
+
+42
+00:03:03,372 --> 00:03:07,772
+Trade location within the value area and range including three different variations.
+
+43
+00:03:08,172 --> 00:03:13,072
+And lastly, the open trade and the four types of patterns that occur within the open.
+
+44
+00:03:14,272 --> 00:03:17,772
+Area and range and the three types of variations.
+
+45
+00:03:23,060 --> 00:03:28,160
+So the suggested timeline for you to complete module 2 looks a little bit like this.
+
+46
+00:03:28,860 --> 00:03:33,160
+Part 5 will take you roughly 3 hours and 15 minutes.
+
+47
+00:03:33,560 --> 00:03:36,160
+Part 6 will take 3 and a half hours.
+
+48
+00:03:36,760 --> 00:03:39,360
+Part 7, 3 hours and 15 minutes.
+
+49
+00:03:39,560 --> 00:03:42,060
+And part 8, 4 hours.
+
+50
+00:03:42,260 --> 00:03:50,160
+Now again, notice how I've broken it down into principle learning, summary and concept checking, and then playbook entry.
+
+51
+00:03:50,560 --> 00:03:57,415
+As you will notice, the big difference between module 1 and 2 is we're going to be spending a lot more time inside our playbooks.
+
+52
+00:03:58,960 --> 00:04:04,697
+It's time for me to make sure not only that you understand the principles we're dealing with, but
+
+53
+00:04:04,697 --> 00:04:09,159
+that you can now start finding strategies that you can implement from the markets
+
+54
+00:04:09,460 --> 00:04:14,560
+into your playbook, ensuring that you're developing these strategies as we go along.
+
+55
+00:04:14,960 --> 00:04:20,960
+The total time expected to complete module 2 will be roughly 14 hours.
+
+56
+00:04:21,260 --> 00:04:24,260
+Do not worry if you finish this sooner or longer.
+
+57
+00:04:24,460 --> 00:04:32,160
+The important thing is that you understand all the principles, concepts, practical examples and strategies.
+
+58
+00:04:32,460 --> 00:04:37,060
+If you do that, once you've completed it, you can then move on to module 3.
+
+59
+00:04:39,988 --> 00:04:40,688
+Part 5.
+
+60
+00:04:41,288 --> 00:04:49,088
+Volume profiling principles including symmetry, day types, price behavior and the trading process.
+
+61
+00:04:50,488 --> 00:04:58,988
+Paul Tudor Jones once said, The most important rule of trading is to play great defense, not great offense.
+
+62
+00:04:59,888 --> 00:05:02,788
+Every day I assume every position I have is wrong.
+
+63
+00:05:03,388 --> 00:05:05,888
+I know where my stop risk points are going to be.
+
+64
+00:05:06,388 --> 00:05:10,388
+I do that so I can define my maximum possible drawdown.
+
+65
+00:05:11,188 --> 00:05:16,388
+Hopefully, I spend the rest of the day enjoying positions that are going in my direction.
+
+66
+00:05:16,988 --> 00:05:21,088
+If they are going against me, then I have a game plan for getting out.
+
+67
+00:05:24,084 --> 00:05:30,484
+It's really great to welcome you all back now and I hope you really enjoy Module 2. It's going to become a lot more practical.
+
+68
+00:05:30,484 --> 00:05:32,484
+You're going to start to see strategies develop.
+
+69
+00:05:32,684 --> 00:05:34,295
+And more importantly, in your
+
+70
+00:05:34,295 --> 00:05:37,195
+head, you're going to start developing various ideas about
+
+71
+00:05:37,195 --> 00:05:39,128
+how you can develop your own
+
+72
+00:05:39,128 --> 00:05:43,961
+strategies just using some of the basic principles I'm going to show you throughout Module 2.
+
+73
+00:05:44,784 --> 00:05:49,984
+So straight into it, part five, time, price and volume as a key identifier.
+
+74
+00:05:50,284 --> 00:05:56,684
+Now we've been through a lot of this in module one and we've spoken a lot about the three elements that make up the auction.
+
+75
+00:05:56,884 --> 00:05:58,784
+So let's just briefly go over it again.
+
+76
+00:05:59,084 --> 00:06:02,584
+Just refresh your mind and make sure you understand the three key elements.
+
+77
+00:06:02,584 --> 00:06:07,884
+So firstly, a volume profile is an entirely objective organizational
+
+78
+00:06:08,384 --> 00:06:11,737
+tool that incorporates all information in a context
+
+79
+00:06:11,737 --> 00:06:15,090
+that is free from bias and free from
+
+80
+00:06:15,090 --> 00:06:19,282
+the conflicting indicators generated by an overwhelming number of facts.
+
+81
+00:06:19,284 --> 00:06:21,884
+Now remember what I said to you right in the beginning of module one.
+
+82
+00:06:22,184 --> 00:06:29,284
+We spoke about how important objectivity was and trying to remove our bias as much as possible.
+
+83
+00:06:29,384 --> 00:06:32,584
+So remember we also spoke and said that
+
+84
+00:06:32,584 --> 00:06:35,784
+the advantages of the volume profile, one of
+
+85
+00:06:35,784 --> 00:06:40,984
+the major advantages is it allows us to remain objective all the time.
+
+86
+00:06:41,084 --> 00:06:43,884
+And that's why volume profiling is so powerful.
+
+87
+00:06:44,784 --> 00:06:51,384
+Then, the volume profile captures the market's fundamental building blocks, which are, as we've mentioned,
+
+88
+00:06:51,684 --> 00:06:53,484
+price, time and volume.
+
+89
+00:06:53,684 --> 00:06:57,284
+And it does this all in one graphic depiction.
+
+90
+00:06:57,284 --> 00:07:00,924
+So we can see all three of these elements in one chart
+
+91
+00:07:00,924 --> 00:07:02,744
+and this allows us to start
+
+92
+00:07:02,744 --> 00:07:06,384
+developing an understanding of the structure and the nature of the market.
+
+93
+00:07:06,784 --> 00:07:10,384
+Now remember, price advertises the opportunity.
+
+94
+00:07:10,884 --> 00:07:14,184
+Time will regulate each one of these opportunities.
+
+95
+00:07:14,684 --> 00:07:18,784
+Volume measures the degree of success of each auction.
+
+96
+00:07:19,084 --> 00:07:26,684
+The skew of the volume over a number of prices shows the willingness of participants to transact at various prices.
+
+97
+00:07:26,684 --> 00:07:33,084
+Now, over the course of this module 2, you're going to start understanding the auction process a lot more.
+
+98
+00:07:34,384 --> 00:07:39,584
+We're going to throw in a few more elements now into the concept of time, price and volume.
+
+99
+00:07:39,684 --> 00:07:46,681
+And we're going to start off and I'm going to say something that's important to understand is that price alone is misleading.
+
+100
+00:07:46,684 --> 00:07:48,779
+And I know a lot of sort of,
+
+101
+00:07:48,779 --> 00:07:52,183
+you know, the old fashioned way of teaching trading and learning about trading.
+
+102
+00:07:52,384 --> 00:07:54,709
+They teach you to almost solely, you know,
+
+103
+00:07:54,709 --> 00:07:57,034
+focus on what price is done, where price
+
+104
+00:07:57,034 --> 00:08:01,684
+has come from and then make decisions about to where price might go in the future.
+
+105
+00:08:01,684 --> 00:08:07,084
+And focusing on just price on its own, it almost feels like you're missing half of the information.
+
+106
+00:08:07,084 --> 00:08:14,284
+So the first thing to understand is, was a change in price a result of new business or old business?
+
+107
+00:08:14,284 --> 00:08:16,284
+It's so important to try and understand this.
+
+108
+00:08:16,284 --> 00:08:23,983
+I think there's so few people who actually stop to try and think and interpret. Why did prices actually go up?
+
+109
+00:08:24,084 --> 00:08:28,784
+Was there new buyers coming into the market with the continuation of the trend?
+
+110
+00:08:28,984 --> 00:08:33,984
+Or was this merely shorts being forced out of their short positions and having to buy out of them?
+
+111
+00:08:34,584 --> 00:08:41,482
+Understanding and answering just something as simple as that is going to give you some form of an edge over time.
+
+112
+00:08:42,184 --> 00:08:44,884
+Then, which time frame is in control?
+
+113
+00:08:45,684 --> 00:08:53,181
+A lot of the time, when we just look at prices going up and down, we can't necessarily determine who is in control at which point.
+
+114
+00:08:54,784 --> 00:08:57,384
+Which direction was the market attempting to move in?
+
+115
+00:08:57,784 --> 00:09:00,488
+Again, a lot of the time we could see, you
+
+116
+00:09:00,488 --> 00:09:03,192
+could sit there the whole day trading the market and
+
+117
+00:09:03,192 --> 00:09:06,437
+it could feel like it's been trying to go up the entire
+
+118
+00:09:06,437 --> 00:09:09,682
+day long, yet at the end of the day, it finishes lower.
+
+119
+00:09:09,784 --> 00:09:14,884
+So who was, you know, which way was the market trying to go, but who actually won the battle?
+
+120
+00:09:16,384 --> 00:09:20,484
+Okay, again then, the speed of the auction, so important. What do we mean by the speed?
+
+121
+00:09:20,484 --> 00:09:24,802
+In other words, the speed at which the market rotates
+
+122
+00:09:24,802 --> 00:09:29,983
+higher and lower is crucial in interpreting potential future moves for prices.
+
+123
+00:09:30,484 --> 00:09:36,980
+So volatility, and we're going to talk a lot about volume and volatility later in module two. But what is volatility?
+
+124
+00:09:37,084 --> 00:09:43,884
+Well, in essence, volatility is just a pickup or a wider variation around the mean.
+
+125
+00:09:43,884 --> 00:09:50,384
+In other words, prices move a lot more in relative terms than they have been over a period of time.
+
+126
+00:09:50,384 --> 00:09:56,184
+So volatility is merely just... a pickup in the way or in the speed at which prices are changing.
+
+127
+00:09:56,284 --> 00:10:00,084
+Now note, volatility does not imply a pickup in volume.
+
+128
+00:10:00,184 --> 00:10:06,984
+Important to understand, a pickup in volume or a lack of liquidity does not imply volatility.
+
+129
+00:10:07,284 --> 00:10:08,784
+Very important you understand that.
+
+130
+00:10:09,784 --> 00:10:14,284
+Then, which way is the auction going? Is it a one-way auction or is it a two-way auction?
+
+131
+00:10:14,484 --> 00:10:21,284
+And now note, we're going to talk a lot about auctions quite extensively over the rest of Module 2.
+
+132
+00:10:22,584 --> 00:10:25,684
+Then volume, one of our key pillars and one of our key identifiers.
+
+133
+00:10:25,784 --> 00:10:30,684
+Note, volume determines whether or not divergences from value can be sustained.
+
+134
+00:10:30,684 --> 00:10:36,784
+What do we mean by that? Take for example a market that has been accepting fair value for some time.
+
+135
+00:10:37,984 --> 00:10:41,150
+The market or the mere fact that the market is
+
+136
+00:10:41,150 --> 00:10:44,316
+accepting value suggests that there is not much inclination from
+
+137
+00:10:44,316 --> 00:10:47,482
+either buyers or sellers to take prices higher or lower.
+
+138
+00:10:48,084 --> 00:10:54,984
+So by that token, some days buyers and sellers can be discouraged from moving away from fair value.
+
+139
+00:10:54,984 --> 00:11:02,784
+Why? Because there's very little information, data, fundamentals that justifies them taking on the additional risk.
+
+140
+00:11:03,884 --> 00:11:07,684
+But on other days, we see price move away from
+
+141
+00:11:07,684 --> 00:11:13,384
+value and this attracts a high interest in the form of higher volume and volatility.
+
+142
+00:11:13,384 --> 00:11:20,581
+So in other words, some days the market might try and make a move away from fair value and get rejected as there's very little volume and interest.
+
+143
+00:11:20,784 --> 00:11:26,781
+But then other days... we see it move away from fair value and the volume and the activity and the interest picks up.
+
+144
+00:11:28,784 --> 00:11:31,784
+Now what you have in front of you is something that's actually quite exciting to see.
+
+145
+00:11:32,384 --> 00:11:36,184
+It's merely price, volume and time being depicted.
+
+146
+00:11:36,384 --> 00:11:42,284
+Again, this time not necessarily on a volume profile, but on what we call a price ladder.
+
+147
+00:11:42,284 --> 00:11:50,181
+Now, the reason I like to show people this is just to bring you back to the basic elements of what markets are. It's merely just an auction.
+
+148
+00:11:50,184 --> 00:11:52,928
+Now, a lot of you would have watched maybe a
+
+149
+00:11:52,928 --> 00:11:55,123
+YouTube上的老视频， few YouTube videos of the old days when
+
+150
+00:11:55,123 --> 00:11:57,043
+the pit guys used to stand opposite
+
+151
+00:11:57,043 --> 00:12:01,982
+each other and spit and shout and yell at each other and point all sorts of finger signs.
+
+152
+00:12:02,084 --> 00:12:05,784
+And what we have today is nothing more than a pit auction.
+
+153
+00:12:06,284 --> 00:12:12,684
+It's just being represented a little bit more differently on what we like to call a price ladder.
+
+154
+00:12:13,084 --> 00:12:15,384
+So what you have in front of you is that price ladder.
+
+155
+00:12:15,684 --> 00:12:18,784
+As you can see, on the left side, we have a blue column.
+
+156
+00:12:19,084 --> 00:12:23,884
+That blue column depicts all the bids or all the buyers at various prices.
+
+157
+00:12:23,884 --> 00:12:26,084
+So you can see the prices in the middle.
+
+158
+00:12:26,584 --> 00:12:31,284
+Now, at every one of those prices, there is a buyer representing
+
+159
+00:12:31,284 --> 00:12:35,984
+a number of contracts he wishes to buy at the various prices.
+
+160
+00:12:36,384 --> 00:12:43,082
+We then have on the red side the offers, so the sellers, so the prices at which sellers are willing to interact.
+
+161
+00:12:44,484 --> 00:12:49,084
+We then have the high of the day, which you can see is the highest traded price on the day.
+
+162
+00:12:49,784 --> 00:12:51,584
+We then have the volume profile.
+
+163
+00:12:51,684 --> 00:12:56,184
+So again, we spoke about how volume is one of the crucial three pillars with price and time.
+
+164
+00:12:56,384 --> 00:13:02,784
+So what we can see is how volume is being distributed over all the prices traded on the day.
+
+165
+00:13:03,284 --> 00:13:05,006
+And again, note, we will
+
+166
+00:13:05,006 --> 00:13:08,106
+talk about this volume dispersion and what it all
+
+167
+00:13:08,106 --> 00:13:12,583
+means, not just in terms of interpretation, but in terms of trade strategy.
+
+168
+00:13:14,084 --> 00:13:21,484
+Now note, as you can see, just an example, 1,607 lots are on the offer in this example.
+
+169
+00:13:21,484 --> 00:13:29,184
+In other words, there is a seller at the price $30.79 that is willing to sell 1,607 contracts.
+
+170
+00:13:29,384 --> 00:13:31,905
+Now again, as prices move up and down
+
+171
+00:13:31,905 --> 00:13:34,426
+and the volatility picks up and down and
+
+172
+00:13:34,426 --> 00:13:36,316
+the volume picks up and down,
+
+173
+00:13:36,316 --> 00:13:39,782
+this amount of contracts being offered might vary and might change.
+
+174
+00:13:41,484 --> 00:13:44,884
+We then have obviously what is physically traded through the market.
+
+175
+00:13:44,984 --> 00:13:46,284
+So important to understand.
+
+176
+00:13:46,484 --> 00:13:49,580
+A lot of the time buyers and sellers might represent
+
+177
+00:13:49,580 --> 00:13:52,057
+or show the market one thing, but when
+
+178
+00:13:52,057 --> 00:13:56,082
+it actually comes to transacting and executing, they may do something very different.
+
+179
+00:13:56,084 --> 00:14:00,684
+So as you can see, that six represents the actual last trade.
+
+180
+00:14:00,684 --> 00:14:06,284
+In other words, the last traded amount of contracts that has gone through this market at any given point.
+
+181
+00:14:07,484 --> 00:14:14,384
+We then have the low of the day and then note the bid of 3003 lots at the price 3069.
+
+182
+00:14:14,484 --> 00:14:18,034
+Again, this is the price at which the buyer is willing or
+
+183
+00:14:18,034 --> 00:14:21,584
+this is the amount of contracts at which the buyer is willing.
+
+184
+00:14:21,584 --> 00:14:24,184
+willing to buy at price 3069.
+
+185
+00:14:24,484 --> 00:14:31,484
+So that's what a representation of price, time and volume looks like just on a price ladder.
+
+186
+00:14:31,484 --> 00:14:34,502
+Now note, we will be talking a little
+
+187
+00:14:34,502 --> 00:14:39,783
+bit more about developing or the basics of developing strategies with the price ladder
+
+188
+00:14:40,384 --> 00:14:44,050
+because it's so important and it's crucial to understand that
+
+189
+00:14:44,050 --> 00:14:47,716
+whilst volume profiling will give us an edge, it'll give
+
+190
+00:14:47,716 --> 00:14:52,482
+us understanding and objectivity, we still have to execute at best price possible.
+
+191
+00:14:52,684 --> 00:14:59,884
+And that is why we use a price ladder because it allows us to take advantage of that exact concept of best price possible.
+
+192
+00:15:01,584 --> 00:15:05,684
+This is by far one of my favorite topics when it comes to volume profiling.
+
+193
+00:15:06,284 --> 00:15:10,584
+But more importantly, this isn't actually just a volume profile principle.
+
+194
+00:15:10,784 --> 00:15:16,084
+This is a market-based principle and there's not enough people that understand this principle.
+
+195
+00:15:16,084 --> 00:15:19,684
+So I'm going to go very slowly through it because
+
+196
+00:15:19,684 --> 00:15:23,284
+a lot of my strategies personally are developed based on
+
+197
+00:15:23,284 --> 00:15:26,884
+the basic concept of initiative and responsive price pattern behavior.
+
+198
+00:15:27,384 --> 00:15:30,384
+So what is initiative and responsive price pattern behavior?
+
+199
+00:15:30,484 --> 00:15:33,484
+Well, firstly, let's talk about initiative price action.
+
+200
+00:15:33,984 --> 00:15:37,942
+So as the word suggests, initiative is when a buyer
+
+201
+00:15:37,942 --> 00:15:43,483
+or seller or an influential buyer or seller takes the initiative to move prices.
+
+202
+00:15:43,484 --> 00:15:48,584
+So note, influential, big boy, commercial, paper, you know, hedge fund.
+
+203
+00:15:48,684 --> 00:15:51,584
+We spoke about these big, large time frame participants.
+
+204
+00:15:51,984 --> 00:15:52,884
+back in module 1.
+
+205
+00:15:52,984 --> 00:15:59,284
+So someone comes in, they're influential and they are going to initiate a move in the market.
+
+206
+00:16:00,484 --> 00:16:08,384
+Then market participants make the play or the influential participants, they make this play by initiating an order.
+
+207
+00:16:08,984 --> 00:16:12,704
+Now the important thing to understand is that when the
+
+208
+00:16:12,704 --> 00:16:18,284
+participant steps into the market to initiate this order, he utilizes all the liquidity available.
+
+209
+00:16:18,584 --> 00:16:19,284
+What does that mean?
+
+210
+00:16:19,284 --> 00:16:26,384
+In other words, he's not going to necessarily be passive, he's going to initially start off very aggressively.
+
+211
+00:16:27,184 --> 00:16:34,204
+Okay, so important you understand that initiative price action is a very aggressive order type where the market
+
+212
+00:16:34,204 --> 00:16:38,884
+participant looks to lift either the bids or sell into the offer.
+
+213
+00:16:39,584 --> 00:16:42,739
+Okay, then if there is a lack of liquidity, in
+
+214
+00:16:42,739 --> 00:16:45,894
+other words, if a buyer comes in and no one
+
+215
+00:16:45,894 --> 00:16:48,418
+is willing to sell it to him, he
+
+216
+00:16:48,418 --> 00:16:50,942
+will then look very aggressive on the charts
+
+217
+00:16:50,942 --> 00:16:53,781
+and it will appear as though the market's trending.
+
+218
+00:16:53,884 --> 00:16:55,884
+It's so crucial to understand this, guys.
+
+219
+00:16:56,084 --> 00:16:59,041
+In other words, if you look at a chart and
+
+220
+00:16:59,041 --> 00:17:01,998
+you see a very aggressive move, a lot of the
+
+221
+00:17:01,998 --> 00:17:04,363
+time it could be because a buyer or
+
+222
+00:17:04,363 --> 00:17:06,728
+seller has stepped in, but there hasn't been
+
+223
+00:17:06,728 --> 00:17:09,981
+enough liquidity for him to execute the order at best price.
+
+224
+00:17:10,084 --> 00:17:14,353
+Now, if, however, as the price moves up, this long-term
+
+225
+00:17:14,353 --> 00:17:21,183
+participant who's initiating finds responsive sellers or runs into a passive seller sitting on the chart,
+
+226
+00:17:21,584 --> 00:17:28,484
+on the offer, we will then likely see two-way trade and a more bracketed price response on the charts.
+
+227
+00:17:28,884 --> 00:17:30,184
+So very simply, what does it mean?
+
+228
+00:17:31,384 --> 00:17:35,484
+The cash open opens and a big buyer from Goldman Sachs steps into the market.
+
+229
+00:17:35,684 --> 00:17:40,684
+He's received the order to lift 20,000 buns at best price for his client.
+
+230
+00:17:41,084 --> 00:17:44,684
+Now, this Goldman Sachs trader is going to be buying up the offer.
+
+231
+00:17:45,384 --> 00:17:46,684
+Now one of two things can happen.
+
+232
+00:17:46,984 --> 00:17:48,550
+He can go to the market and
+
+233
+00:17:48,550 --> 00:17:49,669
+start buying up this offer
+
+234
+00:17:49,669 --> 00:17:51,683
+and someone is willing to sell it to him.
+
+235
+00:17:51,684 --> 00:17:58,084
+In which case the order flow will look like a slow sort of progressive drift grind higher.
+
+236
+00:17:59,084 --> 00:18:01,015
+If however there isn't an offer, if
+
+237
+00:18:01,015 --> 00:18:03,221
+no one wants to sell to him, what's
+
+238
+00:18:03,221 --> 00:18:07,284
+going to happen is that the market is going to move quite aggressively higher.Why?
+
+239
+00:18:07,284 --> 00:18:10,384
+Because this Goldman Sachs trader has to execute the order.
+
+240
+00:18:10,984 --> 00:18:19,484
+Now, that aggressive price action will only stop once the Goldman Sachs finds liquidity necessary to fill his order.
+
+241
+00:18:20,084 --> 00:18:22,784
+At that point, we'll start to get two-way trade.
+
+242
+00:18:23,184 --> 00:18:29,540
+And again, note, when initiative starts... What will likely happen once that response of
+
+243
+00:18:29,540 --> 00:18:32,096
+seller steps in, once he's completed his sell
+
+244
+00:18:32,096 --> 00:18:34,971
+order, if the buyer still needs to keep initiating
+
+245
+00:18:34,971 --> 00:18:40,083
+and buying, the market will then continue with the trend from earlier on in the morning.
+
+246
+00:18:41,184 --> 00:18:45,784
+Now note, initiative is an aggressive order type that trades at market price.
+
+247
+00:18:45,984 --> 00:18:51,084
+There is rarely passive order entering unless there is a response from the other long-term time frame.
+
+248
+00:18:51,684 --> 00:18:58,484
+crucial you understand this guys because when you see initiative being taken from longer term participants
+
+249
+00:18:58,884 --> 00:19:00,581
+a you don't want to stand
+
+250
+00:19:00,581 --> 00:19:02,278
+against it but b you want
+
+251
+00:19:02,278 --> 00:19:03,975
+to go with the momentum and
+
+252
+00:19:03,975 --> 00:19:08,783
+you need to be aggressive in other words your strategies and we'll talk about this a lot
+
+253
+00:19:08,984 --> 00:19:10,645
+your strategies will need to
+
+254
+00:19:10,645 --> 00:19:12,970
+be aggressive strategies you can't afford to
+
+255
+00:19:12,970 --> 00:19:15,295
+sit waiting for a pullback why because
+
+256
+00:19:15,295 --> 00:19:19,282
+ding ding ding this influential player is not going to wait either
+
+257
+00:19:20,684 --> 00:19:29,084
+Then, initiative auctions can last a long period of time, sometimes over a period of hours, days and weeks.
+
+258
+00:19:29,084 --> 00:19:31,384
+A crucial, crucial element to understand.
+
+259
+00:19:31,584 --> 00:19:39,283
+When there is initiative, it's going to take a long, long time for the market to turn itself around, if it turns itself around.
+
+260
+00:19:39,584 --> 00:19:41,369
+And that's crucial to understand because
+
+261
+00:19:41,369 --> 00:19:43,749
+when you see these initiative order flow, you
+
+262
+00:19:43,749 --> 00:19:46,129
+know fine well that there's a natural bias
+
+263
+00:19:46,129 --> 00:19:52,081
+in the market, not just for a couple of hours or minutes, but potentially a couple of days and weeks.
+
+264
+00:19:53,784 --> 00:19:59,684
+Initiative is taken by buyers and sellers at different price locations depending on their respective strategies.
+
+265
+00:20:00,084 --> 00:20:04,584
+Initiative is taken until the other side participants provide the required liquidity.
+
+266
+00:20:04,684 --> 00:20:08,784
+Again, we've spoken a lot about this in the example I just used.
+
+267
+00:20:09,184 --> 00:20:14,184
+Now let's turn our attention and have a look at responsive price pattern behavior.
+
+268
+00:20:15,584 --> 00:20:21,384
+So responsive price action is not as aggressive as initiative price action.
+
+269
+00:20:21,684 --> 00:20:28,884
+In fact, responsive is where the buyers and sellers respond to higher or lower prices being advertised.
+
+270
+00:20:29,084 --> 00:20:32,084
+Now, a good example to look at is the one in the chart provided.
+
+271
+00:20:32,384 --> 00:20:34,753
+As you can see, at the high
+
+272
+00:20:34,753 --> 00:20:37,460
+where we have resistance, when the market gets
+
+273
+00:20:37,460 --> 00:20:41,183
+to those prices being advertised, we see a response from sellers.
+
+274
+00:20:41,184 --> 00:20:46,484
+In other words, sellers get brought into the game or they respond to the higher prices.
+
+275
+00:20:46,584 --> 00:20:55,184
+Equally, when the price is advertised toward the support area, we again see buyers responding to lower prices being advertised.
+
+276
+00:20:56,184 --> 00:20:59,784
+Now on the flip side, remember, we said initiative is very aggressive.
+
+277
+00:20:59,784 --> 00:21:03,984
+The order type is very aggressive at the market, you know, not as passive.
+
+278
+00:21:04,384 --> 00:21:09,984
+So what we can see now is that responsive type price action is a passive order type.
+
+279
+00:21:10,184 --> 00:21:14,035
+So in a downward pricing initiative taken by sellers, there
+
+280
+00:21:14,035 --> 00:21:17,116
+are buyers resting on the bid at lower
+
+281
+00:21:17,116 --> 00:21:20,582
+prices, passively waiting to be brought into the game.
+
+282
+00:21:20,584 --> 00:21:24,802
+So as prices start to move lower because sellers are
+
+283
+00:21:24,802 --> 00:21:28,177
+initiating sell side orders, there will be buyers
+
+284
+00:21:28,177 --> 00:21:30,708
+sitting on the bid waiting or
+
+285
+00:21:30,708 --> 00:21:34,083
+happily getting filled at lower prices being advertised.
+
+286
+00:21:34,284 --> 00:21:37,384
+So they're passively waiting for their order fill.
+
+287
+00:21:39,984 --> 00:21:47,580
+Typically when we see response of buying or selling, two-way trade occurs and the market moves sideways finding some accepted fair value.
+
+288
+00:21:47,584 --> 00:21:51,584
+So what you will come to notice and you should have already noticed is that
+
+289
+00:21:51,584 --> 00:21:53,952
+that most of the time in the markets
+
+290
+00:21:53,952 --> 00:21:58,984
+over a period of a day, most of the time is spent with responsive type price action.
+
+291
+00:21:59,184 --> 00:22:05,081
+It's very, very rare. You know, the most days you'll find that there's one or two initiative moves in the market.
+
+292
+00:22:05,184 --> 00:22:09,812
+And then the rest of the day we spend kind of just filling out and we
+
+293
+00:22:09,812 --> 00:22:13,283
+see buyers and sellers passively responding as prices move up and down.
+
+294
+00:22:14,484 --> 00:22:21,584
+Now, initiative and responsive price action are two types of auction process that occur over a multitude of time frames.
+
+295
+00:22:21,984 --> 00:22:27,684
+In order to fully grasp the concept, you should also apply it to your preferred time frame.
+
+296
+00:22:27,784 --> 00:22:35,684
+So note guys, this isn't just a 1 minute or a 2 minute or a 10 minute, a half hour, hourly, daily.
+
+297
+00:22:35,984 --> 00:22:43,584
+You can utilize the concept of initiative versus responsive on any given time frame.
+
+298
+00:22:43,984 --> 00:22:46,124
+The important thing to do is
+
+299
+00:22:46,124 --> 00:22:48,264
+start taking this principle, this very
+
+300
+00:22:48,264 --> 00:22:50,404
+important principle, and start applying it
+
+301
+00:22:50,404 --> 00:22:54,684
+to some of your thinking when you are looking at the markets.
+
+302
+00:22:54,884 --> 00:23:01,584
+You do that and suddenly you're just going to suddenly start looking at the markets very, very differently.
+
+303
+00:23:03,484 --> 00:23:08,684
+So what would a typical example look like of initiative versus responsive price action?
+
+304
+00:23:08,984 --> 00:23:12,184
+What you can see in the profile provided is two days.
+
+305
+00:23:12,484 --> 00:23:15,517
+And as you'll notice, we can see with
+
+306
+00:23:15,517 --> 00:23:17,792
+the TPOs, we opened within the
+
+307
+00:23:17,792 --> 00:23:21,583
+previous day's range and straight away off the first hour.
+
+308
+00:23:21,584 --> 00:23:23,753
+power of trade the market just
+
+309
+00:23:23,753 --> 00:23:25,922
+showed initiative it showed aggressiveness we
+
+310
+00:23:25,922 --> 00:23:28,091
+took out the previous days high
+
+311
+00:23:28,091 --> 00:23:30,260
+and we just continued in a
+
+312
+00:23:30,260 --> 00:23:32,429
+very aggressive trend like manner in
+
+313
+00:23:32,429 --> 00:23:35,682
+other words there was initiative from the very beginning
+
+314
+00:23:36,284 --> 00:23:41,684
+of this you know of this day type and that sort of initiative when we see it so
+
+315
+00:23:41,684 --> 00:23:46,484
+early remember what I said it one it takes a long long time to turn around
+
+316
+00:23:47,184 --> 00:23:50,012
+but more importantly it only stops once it
+
+317
+00:23:50,012 --> 00:23:52,840
+runs into responsive sellers and we can see
+
+318
+00:23:52,840 --> 00:23:59,504
+that once it finally found those responsive sellers the market then settled accepting range you know for the
+
+319
+00:23:59,504 --> 00:24:01,424
+rest of the day now straight
+
+320
+00:24:01,424 --> 00:24:05,584
+away you'd be just looking at this example you'll say to yourself well
+
+321
+00:24:05,984 --> 00:24:08,418
+very clearly when there's that sort of initiative
+
+322
+00:24:08,418 --> 00:24:10,244
+in the market we know that
+
+323
+00:24:10,244 --> 00:24:12,983
+we can play the market or we can strategize
+
+324
+00:24:13,484 --> 00:24:16,384
+from sort of the one side only so long as
+
+325
+00:24:16,384 --> 00:24:18,704
+that initiative remains in the market and had
+
+326
+00:24:18,704 --> 00:24:21,024
+you done that on this example had you
+
+327
+00:24:21,024 --> 00:24:23,054
+you know constantly been looking for sort
+
+328
+00:24:23,054 --> 00:24:25,084
+of buy side opportunities with the initiative
+
+329
+00:24:25,084 --> 00:24:27,984
+not just early on but later on in the day
+
+330
+00:24:28,284 --> 00:24:31,450
+you know it would have provided some very
+
+331
+00:24:31,450 --> 00:24:34,616
+very successful opportunities in the market so that's
+
+332
+00:24:34,616 --> 00:24:37,782
+our first example of an initiative price action
+
+333
+00:24:39,184 --> 00:24:45,837
+Now the example I like to use for sort of more responsive type price action, whilst you do see it on a daily time
+
+334
+00:24:45,837 --> 00:24:47,500
+frame, in order for me to
+
+335
+00:24:47,500 --> 00:24:51,381
+get you to really fully grasp what I'm trying to get across to you,
+
+336
+00:24:51,684 --> 00:24:54,484
+I like to incorporate quite a number of profiles.
+
+337
+00:24:54,484 --> 00:25:00,184
+Now, again, this is probably maybe three or four weeks of data, but the concept is the same.
+
+338
+00:25:00,284 --> 00:25:03,284
+And that's why I want to show it to you on a little bit of a longer term time frame.
+
+339
+00:25:03,284 --> 00:25:06,784
+So what you can see in the chart is a number of profiles.
+
+340
+00:25:06,784 --> 00:25:11,384
+And what's occurred in terms of context is we've had a relatively aggressive sell-off.
+
+341
+00:25:11,684 --> 00:25:17,484
+And then the market has just started moving sideways in a sideways consolidating holding pattern.
+
+342
+00:25:17,584 --> 00:25:22,984
+So it's bracketing between a low point or support and a high point resistance.
+
+343
+00:25:22,984 --> 00:25:28,284
+Now, the point at which the buyers start to buy, they've been brought into that game.
+
+344
+00:25:28,884 --> 00:25:35,884
+The prices have been advertised at such a discount that suddenly buyers are responding to lower prices being advertised.
+
+345
+00:25:37,084 --> 00:25:41,484
+They will keep buying those prices so long as they feel there is a discount at hand.
+
+346
+00:25:41,884 --> 00:25:49,084
+Once they then run into responsive sellers, they will then back off. They will then sort of move out of the market.
+
+347
+00:25:49,084 --> 00:25:52,941
+They will stop responding and buying the market as the
+
+348
+00:25:52,941 --> 00:25:55,255
+responsive sellers start taking advantage of
+
+349
+00:25:55,255 --> 00:25:57,183
+sort of premium type prices.
+
+350
+00:25:57,284 --> 00:25:59,500
+And so forth and so forth, the
+
+351
+00:25:59,500 --> 00:26:02,666
+market continues to sort of ping almost between what we
+
+352
+00:26:02,666 --> 00:26:06,782
+like to think of an initial support zone and an initial resistance zone.
+
+353
+00:26:07,084 --> 00:26:10,394
+The important thing to understand just looking at this chart
+
+354
+00:26:10,394 --> 00:26:12,711
+is how prices, we can see that
+
+355
+00:26:12,711 --> 00:26:16,683
+the price isn't necessarily aggressively moving off support or moving off resistance.
+
+356
+00:26:16,884 --> 00:26:18,884
+And there's a very good reason for that.
+
+357
+00:26:18,884 --> 00:26:21,384
+It's because price being advertised.
+
+358
+00:26:21,784 --> 00:26:24,052
+at various points, you know, it's not
+
+359
+00:26:24,052 --> 00:26:26,968
+necessarily always a discount in the sense that there's
+
+360
+00:26:26,968 --> 00:26:29,884
+strong risk reward to suddenly start fading the trend.
+
+361
+00:26:30,184 --> 00:26:32,517
+Equally, maybe the market, you know, pulls
+
+362
+00:26:32,517 --> 00:26:35,183
+back a little bit, but it's not necessarily
+
+363
+00:26:35,183 --> 00:26:39,183
+pulling back enough for us to see aggressive initiative short side action.
+
+364
+00:26:39,384 --> 00:26:41,784
+And that's why we tend to see a
+
+365
+00:26:41,784 --> 00:26:43,884
+little bit more responsive type, you know,
+
+366
+00:26:43,884 --> 00:26:45,384
+price action after seeing very,
+
+367
+00:26:45,384 --> 00:26:48,084
+very aggressive, you know, sell-offs or very aggressive rallies.
+
+368
+00:26:48,184 --> 00:26:55,582
+So what you can clearly see here is how buyers respond to low prices and the sellers respond to the higher prices.
+
+369
+00:26:56,384 --> 00:26:58,941
+What is interesting to point out is,
+
+370
+00:26:58,941 --> 00:27:01,864
+as you can see in that last profile,
+
+371
+00:27:01,864 --> 00:27:05,883
+eventually we again see the initiation or the initiative price action
+
+372
+00:27:06,484 --> 00:27:12,684
+or the initiative response occurring as we then see a little bit of a continuation of the existing trend.
+
+373
+00:27:12,684 --> 00:27:16,084
+So note, we do move, and that's why this example is good.
+
+374
+00:27:16,084 --> 00:27:23,184
+We don't necessarily always remain in responsive. We see responsive and initiative price action sort of mingling together.
+
+375
+00:27:23,284 --> 00:27:26,384
+It occurs all the time over the period of the day.
+
+376
+00:27:26,684 --> 00:27:29,784
+Sometimes it's responsive and sometimes it's initiative.
+
+377
+00:27:31,384 --> 00:27:36,284
+Now again, one last example of an initiative sort of price action response.
+
+378
+00:27:36,584 --> 00:27:39,784
+And the example we've used here is like a breakout.
+
+379
+00:27:39,784 --> 00:27:41,684
+It's a breakout or an inside day break.
+
+380
+00:27:41,984 --> 00:27:45,584
+It's a very popular sort of trade setup.
+
+381
+00:27:45,884 --> 00:27:48,259
+But the important thing I'm going to show you, not
+
+382
+00:27:48,259 --> 00:27:50,159
+just in this example, but over time and
+
+383
+00:27:50,159 --> 00:27:51,584
+over the rest of the module,
+
+384
+00:27:51,684 --> 00:27:52,907
+2 and 3 is I'm going
+
+385
+00:27:52,907 --> 00:27:55,354
+to show you how to develop the strategy
+
+386
+00:27:55,354 --> 00:28:01,471
+first by understanding the principle, in other words, understanding the logic behind why a market is moving up or down.
+
+387
+00:28:02,384 --> 00:28:06,634
+Then we're going to start developing a strategy so that
+
+388
+00:28:06,634 --> 00:28:10,034
+you can take advantage of understanding these very
+
+389
+00:28:10,034 --> 00:28:12,584
+basic but powerful and profitable strategies.
+
+390
+00:28:12,984 --> 00:28:20,884
+So what you can see are very basic inside daybreak. We can see a little bit of momentum, a little bit of one time framing coming into this market.
+
+391
+00:28:21,284 --> 00:28:24,617
+But the key is that once we see the initiation,
+
+392
+00:28:24,617 --> 00:28:27,283
+once we see that buy flow come into
+
+393
+00:28:27,283 --> 00:28:30,283
+the market, note how it lasts the entire session.
+
+394
+00:28:30,284 --> 00:28:34,484
+Now, the reason I want to use this example is because one, as we can see.
+
+395
+00:28:35,184 --> 00:28:40,784
+Had you stayed a buyer for predominantly this entire session, imagine how easy it would have felt.
+
+396
+00:28:40,784 --> 00:28:42,884
+Now, I'm not saying you buy at the start of the day.
+
+397
+00:28:42,984 --> 00:28:48,884
+What I'm saying is you're initiating or looking for long side trade opportunities only.
+
+398
+00:28:49,084 --> 00:28:54,684
+And that's the purpose of distinguishing between, you know, sort of initiative and responsive price behavior.
+
+399
+00:28:54,984 --> 00:29:02,250
+When we see very aggressive initiative price behavior, we don't want to be entertaining fade trades
+
+400
+00:29:02,250 --> 00:29:05,883
+until we see that responsive type price behavior.
+
+401
+00:29:05,884 --> 00:29:12,015
+If we don't see that, the market is likely to keep trending or moving in a very aggressive
+
+402
+00:29:12,015 --> 00:29:16,783
+way as we see the initiation occur over the period of the entire session.
+
+403
+00:29:16,984 --> 00:29:21,284
+Now, so important is that as a trader, we always want to...
+
+404
+00:29:21,584 --> 00:29:25,984
+develop our edges or our strategies in line with the prevailing trend.
+
+405
+00:29:26,184 --> 00:29:35,084
+And that is why it's crucial to distinguish between initiative price response behavior and responsive price action.
+
+406
+00:29:37,284 --> 00:29:39,484
+So it's time to bring those statistics textbooks out.
+
+407
+00:29:39,684 --> 00:29:45,984
+We're going to start talking a little bit about symmetry now. So symmetrical and non-symmetrical profiles.
+
+408
+00:29:46,184 --> 00:29:48,869
+Again, whilst we go through, you know, particularly
+
+409
+00:29:48,869 --> 00:29:51,554
+module two, we're going to talk a lot
+
+410
+00:29:51,554 --> 00:29:52,896
+about structure and how
+
+411
+00:29:52,896 --> 00:29:55,581
+profiles develop and the shape of the profiles.
+
+412
+00:29:55,684 --> 00:29:59,132
+Now, it's this shape and this structure that is going
+
+413
+00:29:59,132 --> 00:30:01,200
+to help us develop context and
+
+414
+00:30:01,200 --> 00:30:05,682
+understanding, but later on develop our strategies based on the context and understanding.
+
+415
+00:30:06,084 --> 00:30:07,184
+So crucial, guys.
+
+416
+00:30:07,184 --> 00:30:10,984
+We don't just do volume profiling to develop strategies.
+
+417
+00:30:11,384 --> 00:30:18,984
+We utilize it because it gives us an objective understanding and approach to executing within the markets.
+
+418
+00:30:19,484 --> 00:30:25,084
+So, symmetrical profiles, again also known as balanced profiles.
+
+419
+00:30:25,684 --> 00:30:32,284
+So they represent equal opportunities on both long and short positions, for example a normal distribution.
+
+420
+00:30:32,284 --> 00:30:36,484
+Now what I mean by that is when a market is normally distributing.
+
+421
+00:30:37,384 --> 00:30:44,284
+The opportunities in terms of strategies are more or less equal whether you're buying it or whether you're selling it.
+
+422
+00:30:44,384 --> 00:30:48,984
+And you'll understand what I mean by this as we go through various examples.
+
+423
+00:30:50,084 --> 00:30:56,684
+Then the market is in. balance awaiting further information before making a directional move.
+
+424
+00:30:56,684 --> 00:30:59,593
+So this is the reason why there's an
+
+425
+00:30:59,593 --> 00:31:02,138
+equal opportunity because the market is accepting
+
+426
+00:31:02,138 --> 00:31:04,683
+fair value, buyers and sellers are agreeing
+
+427
+00:31:05,284 --> 00:31:09,376
+to a price and by that token neither buyers want to buy
+
+428
+00:31:09,376 --> 00:31:13,468
+premium nor do the sellers want to sell discount prices and for
+
+429
+00:31:13,468 --> 00:31:18,583
+that reason there's an equal opportunity for the market to go up or go down.
+
+430
+00:31:19,684 --> 00:31:24,484
+Then, the opposite of that is non-symmetrical profiles or not balanced.
+
+431
+00:31:24,484 --> 00:31:30,583
+Now, as you can see in the pictures, our first blue little picture there, that's what a typical normal distribution looks like.
+
+432
+00:31:30,884 --> 00:31:36,641
+What you'll notice is that, you know, majority of the trade is executed within sort of 70 to
+
+433
+00:31:36,641 --> 00:31:40,705
+90% of the mean, you know, it's the average price on the day.
+
+434
+00:31:41,984 --> 00:31:49,384
+Now, non-symmetrical profiles, as you can see by the pictures, have somewhat of a skew. It could be a positive skew or a negative skew.
+
+435
+00:31:49,584 --> 00:31:56,384
+Now, non-symmetrical profiles, by that very definition, mean non-equal opportunities.
+
+436
+00:31:56,584 --> 00:32:00,574
+Now, it's important you understand the idea of non-symmetry because it's non-symmetry
+
+437
+00:32:00,574 --> 00:32:03,234
+that starts to give us a little bit
+
+438
+00:32:03,234 --> 00:32:09,884
+of a lean, not necessarily a bias, but a little bit of a lean in one direction or the other.
+
+439
+00:32:10,184 --> 00:32:12,984
+In other words, imagine I said to you, you walked
+
+440
+00:32:12,984 --> 00:32:15,784
+into a casino, and I said to you, there's roughly
+
+441
+00:32:15,784 --> 00:32:19,704
+a 60% chance that we could land on the color red on the roulette table.
+
+442
+00:32:20,384 --> 00:32:24,784
+I think most of you would agree. you would look to take that opportunity as you have an edge.
+
+443
+00:32:25,084 --> 00:32:32,081
+It's similar in this sense. When there is non-symmetry in a market, it gives us a little bit of a lean in one direction or the other.
+
+444
+00:32:32,284 --> 00:32:34,684
+And that's why this principle is crucial to understand.
+
+445
+00:32:35,584 --> 00:32:44,084
+So, it's advantageous and poor odds opportunities to go against when there is this natural tendency in the market.
+
+446
+00:32:44,484 --> 00:32:47,108
+So, examples of non-symmetry would be a trending
+
+447
+00:32:47,108 --> 00:32:49,732
+market or a B shape or a P
+
+448
+00:32:49,732 --> 00:32:52,684
+shape, sorry, a B or a P shape distribution.
+
+449
+00:32:52,784 --> 00:32:59,084
+Now, we will talk a little bit about the B shape and the P shape distributions as we go further along.
+
+450
+00:33:00,484 --> 00:33:06,184
+Now, in a non-symmetrical skew, there is an initiative that has been taken by either buyers or sellers.
+
+451
+00:33:06,184 --> 00:33:11,984
+So note, it starts off with an initiative or initiative taken by influential players.
+
+452
+00:33:12,484 --> 00:33:16,359
+The change in the price that has occurred, it forces
+
+453
+00:33:16,359 --> 00:33:21,784
+other time frame participants to respond and hop onto the trend or counter it.
+
+454
+00:33:22,584 --> 00:33:32,084
+This countering eventually causes an imbalance in positions and prices and it eventually results in a seemingly aggressive price response.
+
+455
+00:33:32,084 --> 00:33:35,343
+So note, when we have this imbalance, we
+
+456
+00:33:35,343 --> 00:33:38,602
+get the initiative, that change in price, that
+
+457
+00:33:38,602 --> 00:33:43,083
+aggressive change in price brings other time frame participants into play.
+
+458
+00:33:43,584 --> 00:33:47,884
+And that is what creates the volume and volatility and the opportunity for us.
+
+459
+00:33:50,168 --> 00:33:55,168
+Let's continue our discussion now of non-symmetrical and symmetrical profiles.
+
+460
+00:33:55,568 --> 00:33:59,868
+As you can see in the example provided, we have a very balanced distribution.
+
+461
+00:34:00,368 --> 00:34:04,305
+Now remember what we said, a normal distribution is where
+
+462
+00:34:04,305 --> 00:34:08,242
+buyers initiate and are responsive at lows of the range
+
+463
+00:34:08,242 --> 00:34:12,967
+and sellers initiate and are responsive at the high of the range.
+
+464
+00:34:13,468 --> 00:34:17,110
+So by this very token, when the market is distributing,
+
+465
+00:34:17,110 --> 00:34:19,660
+we can see that the odds are
+
+466
+00:34:19,660 --> 00:34:23,667
+very evenly split as to whether we go up or down.
+
+467
+00:34:24,068 --> 00:34:26,389
+Now note, one of the key things
+
+468
+00:34:26,389 --> 00:34:29,704
+to point out when a market is very heavily balanced
+
+469
+00:34:29,704 --> 00:34:32,356
+is that playing for momentum and being a
+
+470
+00:34:32,356 --> 00:34:36,666
+very aggressive looking for momentum breakouts to the upside and to the downside
+
+471
+00:34:36,968 --> 00:34:41,168
+can be quite a risky play when the markets are in balance.
+
+472
+00:34:42,468 --> 00:34:49,268
+We then have out of balance type profiles. These will be profiles or markets that are trending.
+
+473
+00:34:49,268 --> 00:34:52,145
+Now note, trending is when all five
+
+474
+00:34:52,145 --> 00:34:55,433
+time frames or all five time frame participants
+
+475
+00:34:55,433 --> 00:35:00,366
+are trading in the same direction as you'll remember from module one.
+
+476
+00:35:01,068 --> 00:35:03,868
+There's very little responsive type trading.
+
+477
+00:35:04,268 --> 00:35:08,468
+Therefore, all timeframes are in agreement of direction,
+
+478
+00:35:08,468 --> 00:35:12,668
+and hence any responsive action taken is likely
+
+479
+00:35:12,668 --> 00:35:16,868
+to eventually be overwhelmed as the initiative continues.
+
+480
+00:35:17,168 --> 00:35:21,668
+We will talk a lot more. more about trending markets as we move further along.
+
+481
+00:35:22,968 --> 00:35:30,866
+Note then, another type of out of balance type shape is what we call a P shape, also known as short covering.
+
+482
+00:35:31,268 --> 00:35:36,668
+Short covering is where the shorts cover their positions by buying out of those positions.
+
+483
+00:35:36,668 --> 00:35:43,968
+Now note, initiative selling, so shorts, they run into strong responsive long time frame buyers.
+
+484
+00:35:44,668 --> 00:35:48,868
+These buyers are responding to lower prices being advertised.
+
+485
+00:35:49,468 --> 00:35:52,641
+The buyers then force prices higher and the
+
+486
+00:35:52,641 --> 00:35:55,814
+shorts that are still holding their short positions
+
+487
+00:35:55,814 --> 00:36:01,367
+will then buy out of those shorts and prices will continue to move higher.
+
+488
+00:36:01,968 --> 00:36:08,468
+Those prices will continue to move up until we run into fresh, responsive shorts.
+
+489
+00:36:08,768 --> 00:36:12,568
+When that occurs, the market will then start to move sideways.
+
+490
+00:36:13,568 --> 00:36:20,668
+The other type of out of balance type profile is a B shape or a long liquidation profile.
+
+491
+00:36:21,068 --> 00:36:26,868
+In the B distribution, buyers this time, they run into aggressive initiative sellers.
+
+492
+00:36:26,968 --> 00:36:34,268
+So we have longs in the market, they keep buying higher prices until they run into very strong responsive sellers.
+
+493
+00:36:34,968 --> 00:36:37,768
+Those responsive sellers keep selling and eventually
+
+494
+00:36:37,768 --> 00:36:40,568
+the buyers are forced to liquidate their
+
+495
+00:36:40,568 --> 00:36:43,368
+longs by selling out of their position.
+
+496
+00:36:43,768 --> 00:36:47,768
+This takes prices further lower until such a point that
+
+497
+00:36:48,368 --> 00:36:55,168
+the longer time time frame buyers respond to relatively cheaper prices.
+
+498
+00:36:55,568 --> 00:36:59,768
+This then stabilizes the market and we see further two-way trade.
+
+499
+00:37:00,268 --> 00:37:07,864
+Those are just some of the examples and some of the shapes you can expect to see when talking about symmetry and non-symmetry.
+
+500
+00:37:09,268 --> 00:37:15,368
+Let's take a look at some of the typical profiling examples you would see when talking about non-symmetrical profiles.
+
+501
+00:37:15,968 --> 00:37:19,868
+As you can see, the first example is a non-symmetrical trend day.
+
+502
+00:37:19,868 --> 00:37:23,138
+Now, what's important here is not too much
+
+503
+00:37:23,138 --> 00:37:26,408
+about talking about trend or it's just understanding
+
+504
+00:37:26,408 --> 00:37:29,678
+the basic shape of non-symmetry and why non-symmetry
+
+505
+00:37:29,678 --> 00:37:33,766
+is a particularly important principle for developing a very strong
+
+506
+00:37:34,168 --> 00:37:34,968
+trade strategy.
+
+507
+00:37:34,968 --> 00:37:40,590
+So what you can see with regards to the trend is how for the entire day we've
+
+508
+00:37:40,590 --> 00:37:43,566
+seen initiative being taken by sellers in this example.
+
+509
+00:37:43,768 --> 00:37:49,868
+And they keep selling and selling and selling and eventually they run into sort of stronger response of buying.
+
+510
+00:37:49,868 --> 00:37:52,353
+And that stronger response of buying is what
+
+511
+00:37:52,353 --> 00:37:54,528
+allows the market to almost just bounce
+
+512
+00:37:54,528 --> 00:37:58,567
+a little bit and distribute and trade a little bit of two-way trade.
+
+513
+00:37:58,568 --> 00:38:05,866
+Now, the important thing to note is that this non-symmetry or this lack of symmetry creates very good opportunity for us.
+
+514
+00:38:06,068 --> 00:38:12,868
+So by that very token, non-symmetrical trend days are fantastic opportunities and you should be capitalizing on them.
+
+515
+00:38:13,268 --> 00:38:18,368
+Not to worry though, we will spend a lot of time talking about trend and how you can develop strategy.
+
+516
+00:38:18,668 --> 00:38:21,868
+based purely on just simple non-symmetrical profiles.
+
+517
+00:38:22,868 --> 00:38:26,668
+The second profile then is a very good example of short covering.
+
+518
+00:38:27,068 --> 00:38:30,327
+As you can see with that K print, we can
+
+519
+00:38:30,327 --> 00:38:32,608
+see initially the market opened a lot
+
+520
+00:38:32,608 --> 00:38:35,867
+lower and ran into some very, very aggressive responsive buying.
+
+521
+00:38:36,268 --> 00:38:43,268
+That buying drove prices up to such a point that the sellers were forced to liquidate their short positions.
+
+522
+00:38:43,868 --> 00:38:47,968
+Eventually, the market ran into fresh responsive selling.
+
+523
+00:38:48,468 --> 00:38:55,368
+That fresh response of selling managed to stop the flow of buying and we saw two-way trade ensue.
+
+524
+00:38:55,968 --> 00:38:59,197
+Interestingly, what we saw was the sellers eventually
+
+525
+00:38:59,197 --> 00:39:02,426
+overwhelmed those buyers and took the market all
+
+526
+00:39:02,426 --> 00:39:06,866
+the way back to the low and closed quite aggressively lower.
+
+527
+00:39:07,868 --> 00:39:11,968
+The third example is a B shape or long liquidation.
+
+528
+00:39:12,468 --> 00:39:15,011
+Again, what we can see here is
+
+529
+00:39:15,011 --> 00:39:17,917
+that the market opens, it tries to move
+
+530
+00:39:17,917 --> 00:39:23,367
+higher, the buyers try to initiate higher prices before running into very aggressive responsive sellers.
+
+531
+00:39:23,868 --> 00:39:31,568
+Those responsive sellers keep selling those prices and buyers are forced to liquidate their long positions by selling out.
+
+532
+00:39:31,868 --> 00:39:37,868
+This takes prices down up to such a point that we run into new fresh responsive buyers.
+
+533
+00:39:38,368 --> 00:39:42,868
+When that occurs, we then start to distribute and form two-way trade.
+
+534
+00:39:43,368 --> 00:39:48,268
+It's so important you focus and understand these three basic non-symmetric
+
+535
+00:39:49,268 --> 00:39:51,395
+shapes because we're going to talk
+
+536
+00:39:51,395 --> 00:39:57,067
+a lot about these shapes as well as develop unique strategies around these shapes going forward.
+
+537
+00:39:59,168 --> 00:40:01,568
+Let's now talk about the initial balance.
+
+538
+00:40:02,468 --> 00:40:05,289
+Before we get started with talking about the initial
+
+539
+00:40:05,289 --> 00:40:08,110
+balance, I think I need to paint a little
+
+540
+00:40:08,110 --> 00:40:14,066
+bit of a picture of maybe what the markets used to be like as they sort of became electronic.
+
+541
+00:40:14,068 --> 00:40:19,468
+Now, the important thing to understand is that the markets never used to be almost 24 hours.
+
+542
+00:40:19,468 --> 00:40:24,268
+Nowadays, you can pretty much trade around the clock in most markets.
+
+543
+00:40:24,368 --> 00:40:30,568
+Now, when the initial balance or the concept of the initial balance was first developed back
+
+544
+00:40:31,268 --> 00:40:33,318
+in the pit days, it used to
+
+545
+00:40:33,318 --> 00:40:35,368
+include the first hour of trade when
+
+546
+00:40:35,368 --> 00:40:39,468
+there were only, for instance, eight or nine hours of trade in a day.
+
+547
+00:40:39,468 --> 00:40:45,568
+So it did play a far more important role back in the day.
+
+548
+00:40:45,868 --> 00:40:49,019
+However, it still offers very early opportunity and
+
+549
+00:40:49,019 --> 00:40:52,170
+information for us and that's why we need
+
+550
+00:40:52,170 --> 00:40:58,866
+to understand the initial balance and some of the patterns we can recognize from the initial balance.
+
+551
+00:40:59,668 --> 00:41:01,068
+So what is the initial balance?
+
+552
+00:41:01,668 --> 00:41:04,268
+It's simply the pre-cash session.
+
+553
+00:41:04,668 --> 00:41:08,010
+Now, we will go through our four markets that we
+
+554
+00:41:08,010 --> 00:41:10,684
+trade or that we speak about throughout the
+
+555
+00:41:10,684 --> 00:41:16,366
+course, which are the E-mini S&P 500, the German Bunds, the WTI oil, and the Eurodollar FX.
+
+556
+00:41:16,468 --> 00:41:20,468
+So I will show you four charts. of what the initial balance will look like.
+
+557
+00:41:20,668 --> 00:41:23,563
+But it's important you understand this principle
+
+558
+00:41:23,563 --> 00:41:26,458
+and don't sort of try and take
+
+559
+00:41:26,458 --> 00:41:29,767
+what I say as the most important thing.
+
+560
+00:41:29,768 --> 00:41:35,268
+What's important is understanding the logic and the principle behind why we look at the initial balance.
+
+561
+00:41:35,268 --> 00:41:39,868
+So the initial balance is the pre-cash session.
+
+562
+00:41:40,468 --> 00:41:44,668
+The session before the cash market opens is known as the initial balance.
+
+563
+00:41:45,068 --> 00:41:48,090
+This will be the first hour of the
+
+564
+00:41:48,090 --> 00:41:50,734
+European session, the entire overnight session for
+
+565
+00:41:50,734 --> 00:41:55,267
+US products and the overnight session of the FX and commodities markets.
+
+566
+00:41:55,668 --> 00:41:56,770
+Now remember, obviously
+
+567
+00:41:56,770 --> 00:42:00,077
+European markets do shut, the futures do shut, so
+
+568
+00:42:00,077 --> 00:42:03,752
+when they open the very next morning, that first hour
+
+569
+00:42:03,752 --> 00:42:10,367
+of trade before, or the trade before the cash markets come in, that period is the initial balance.
+
+570
+00:42:10,768 --> 00:42:14,268
+With regards to US products, they trade overnight.
+
+571
+00:42:15,668 --> 00:42:17,376
+Obviously, the cash markets are
+
+572
+00:42:17,376 --> 00:42:20,792
+shut at that point, so that period from where the
+
+573
+00:42:20,792 --> 00:42:24,208
+futures trade up until the point that the cash begins
+
+574
+00:42:24,208 --> 00:42:27,966
+to trade, that period is known as the initial balance period.
+
+575
+00:42:28,368 --> 00:42:36,768
+And then obviously with regards to the FX or commodity markets, the same is because they're 24 hours predominantly, the session
+
+576
+00:42:37,468 --> 00:42:43,868
+from the overnight all the way up until the beginning of the European session, that will be the cash session.
+
+577
+00:42:44,968 --> 00:42:52,368
+So, any future session that does not include the cash markets will be the initial balance or the overnight session.
+
+578
+00:42:52,368 --> 00:42:57,868
+So a lot of the time you'll hear professionals talking about the overnight session or the overnight market.
+
+579
+00:42:57,868 --> 00:43:00,868
+So that is the period when the cash is shut.
+
+580
+00:43:01,168 --> 00:43:04,768
+So another name for the initial balance is the overnight session.
+
+581
+00:43:05,368 --> 00:43:11,168
+The initial balance represents the earliest reference points on the day and that is why it's closely watched.
+
+582
+00:43:11,368 --> 00:43:14,568
+They create important early pivots for us.
+
+583
+00:43:15,968 --> 00:43:23,465
+The initial balance is the first opportunity for traders to liquidate, hedge and initiate trade after the market has been shut.
+
+584
+00:43:23,568 --> 00:43:29,168
+So again, this is more relevant to the European markets because they tend to shut for a lot longer.
+
+585
+00:43:29,168 --> 00:43:33,360
+So if they're shutting from 9pm at night till 7am
+
+586
+00:43:33,360 --> 00:43:35,875
+the next morning, there's a good 10
+
+587
+00:43:35,875 --> 00:43:39,648
+hour period in which very little can be done
+
+588
+00:43:40,568 --> 00:43:42,940
+to hedge or to take on
+
+589
+00:43:42,940 --> 00:43:45,312
+or to cut positions and there's
+
+590
+00:43:45,312 --> 00:43:49,266
+a lot of time to strategize and make early decisions.
+
+591
+00:43:49,268 --> 00:43:55,368
+And again, that's why we tend to focus a lot more on initial balance strategies in the European session.
+
+592
+00:43:56,668 --> 00:44:04,665
+But you do get some very important strategies in the US session too and the commodities and equities and the FX.
+
+593
+00:44:04,768 --> 00:44:08,468
+And that is why we are actually teaching you about the initial balance.
+
+594
+00:44:09,668 --> 00:44:14,068
+Then, initial balance, they do traditionally imply low volume.
+
+595
+00:44:14,568 --> 00:44:21,068
+So what you would typically find is low volume, lack of liquidity. in the overnight or initial balance.
+
+596
+00:44:21,068 --> 00:44:22,396
+Now, this is a crucial
+
+597
+00:44:22,396 --> 00:44:24,255
+element to understand because if this is
+
+598
+00:44:24,255 --> 00:44:25,848
+the norm, if this is the
+
+599
+00:44:25,848 --> 00:44:29,832
+tradition, if this is what we usually see, when we see something else, i.e.
+
+600
+00:44:30,068 --> 00:44:33,302
+Volatility or volume, then you need to be
+
+601
+00:44:33,302 --> 00:44:36,536
+switched on because it's giving you very early
+
+602
+00:44:36,536 --> 00:44:39,366
+identifiers or clues as to directional plays.
+
+603
+00:44:41,168 --> 00:44:45,568
+Again, the initial balance, relative strategies are highly effective.
+
+604
+00:44:45,568 --> 00:44:49,402
+What we mean by that is if you're used to the initial
+
+605
+00:44:49,402 --> 00:44:52,916
+balance trading, say, 10,000 contracts on average every single morning, that morning
+
+606
+00:44:52,916 --> 00:44:57,708
+that you see 30,000 or 40,000 contracts, you need to be switched on because something has changed.
+
+607
+00:44:58,668 --> 00:45:04,668
+Their relative indicators are telling us that something has changed. There's early action in the market.
+
+608
+00:45:04,968 --> 00:45:06,668
+The same can be said for the range.
+
+609
+00:45:06,968 --> 00:45:13,468
+So important, as you can see by this chart, we've got in the top there, we've got the volume and we note the average volume.
+
+610
+00:45:13,468 --> 00:45:18,368
+So when it spikes above the average volume, we know there's potential for opportunity.
+
+611
+00:45:18,568 --> 00:45:20,268
+And it's the same to be said for the range.
+
+612
+00:45:20,268 --> 00:45:27,431
+If you're used to a 10 price range every single morning or in the overnight session, the minute it does 20 or 30 prices,
+
+613
+00:45:27,431 --> 00:45:30,842
+again, that represents opportunity that you can take advantage of.
+
+614
+00:45:33,568 --> 00:45:40,068
+And then the initial balance represents an early identifier. That is the reason we pay attention to it.
+
+615
+00:45:40,268 --> 00:45:47,565
+It gives us early bit of information that we can then plot and set our path for the rest of the day.
+
+616
+00:45:49,068 --> 00:45:55,866
+So now that you understand what the initial balance is, let's take a look at the four examples across the four markets that we speak about in this course.
+
+617
+00:45:56,368 --> 00:45:58,968
+The first example is the German Tenier Bund.
+
+618
+00:45:59,368 --> 00:46:06,368
+Now note what I said, Europe tends to close around 9pm for most of the European products.
+
+619
+00:46:06,368 --> 00:46:09,968
+Obviously it differs per product, so it's important that whichever product you're
+
+620
+00:46:09,968 --> 00:46:13,568
+trading, if they are outside the four we discuss in this course,
+
+621
+00:46:13,568 --> 00:46:15,968
+make sure you know the time frame parameters
+
+622
+00:46:15,968 --> 00:46:18,068
+so that you can then adjust accordingly
+
+623
+00:46:18,068 --> 00:46:20,468
+and determine what the initial balance would be.
+
+624
+00:46:20,868 --> 00:46:28,365
+So in the German Bund Tenier for instance, the initial balance will be the period from 7am to 8am when the cash comes in.
+
+625
+00:46:29,268 --> 00:46:36,968
+For the E-Money S&P 500 index, we can see that the market is shut and opens again at 11pm.
+
+626
+00:46:37,268 --> 00:46:41,193
+Now note, from 11pm till 2.30pm the next day, that
+
+627
+00:46:41,193 --> 00:46:47,867
+is known as the overnight session or the initial balance, so the period outside of cash trading.
+
+628
+00:46:51,736 --> 00:46:58,536
+We then have the WTI NYMEX oil. Again, it also shuts. The cash market shuts at 7.30.
+
+629
+00:46:58,836 --> 00:47:02,796
+So from the period of 7.30 till when the European cash markets
+
+630
+00:47:02,796 --> 00:47:06,396
+open the next day, that would be regarded as the
+
+631
+00:47:06,396 --> 00:47:11,076
+overnight session or the session where there is very little cash being traded.
+
+632
+00:47:11,736 --> 00:47:17,636
+Now note guys, the initial balance session is not a hard fast rule.
+
+633
+00:47:17,836 --> 00:47:23,143
+What's important to understand with the initial balance, it's the period in
+
+634
+00:47:23,143 --> 00:47:29,335
+which it's very unlikely to see bigger time frame participants or cash participants enter.
+
+635
+00:47:29,736 --> 00:47:34,136
+That period is known as the initial balance or the overnight session.
+
+636
+00:47:34,536 --> 00:47:41,934
+So with the oil, typically the overnight session would be from 10pm till 8am the next morning when Europe comes online.
+
+637
+00:47:42,636 --> 00:47:47,043
+The Eurodollar FX is, again, it opens at 10pm at
+
+638
+00:47:47,043 --> 00:47:51,450
+night and again it will trade the overnight session all
+
+639
+00:47:51,450 --> 00:47:54,535
+the way until 8am the next morning.
+
+640
+00:47:54,836 --> 00:48:04,236
+Now note, predominantly with the foreign exchange markets, there is a dollar settlement around 4 o'clock GMT every afternoon.
+
+641
+00:48:04,336 --> 00:48:11,469
+So we could typically see the cash session being all the way from 8am to about 4pm and then the
+
+642
+00:48:11,469 --> 00:48:15,035
+rest would be the overnight session or the initial balance.
+
+643
+00:48:15,136 --> 00:48:18,236
+Now again, remember what I said to you, the concept...
+
+644
+00:48:18,436 --> 00:48:24,236
+of the initial balance is not that it creates hard, fast rules.
+
+645
+00:48:24,436 --> 00:48:32,936
+It's an understanding of when is there a time frame in which big participants, influential participants, initiative,
+
+646
+00:48:33,436 --> 00:48:36,476
+when is that time frame and when is
+
+647
+00:48:36,476 --> 00:48:39,516
+the other time frame where there's low volume,
+
+648
+00:48:39,516 --> 00:48:42,936
+low liquidity and less likely opportunities to make money.
+
+649
+00:48:43,236 --> 00:48:47,963
+That is why we try and differentiate between the two time frames,
+
+650
+00:48:47,963 --> 00:48:51,114
+but also because the initial balance can give
+
+651
+00:48:51,114 --> 00:48:56,235
+us some very, very early identifiers and opportunity heading into the cash sessions.
+
+652
+00:48:58,336 --> 00:49:01,974
+Now that we've spent a little bit of time discussing what the
+
+653
+00:49:01,974 --> 00:49:03,793
+initial balance is, let's take a
+
+654
+00:49:03,793 --> 00:49:07,734
+look at three unique trading strategies you could execute using the initial balance.
+
+655
+00:49:08,036 --> 00:49:15,734
+So the first time we would look to use the initial balance is when there's key structure or identifiable structure in the market.
+
+656
+00:49:15,936 --> 00:49:17,736
+So what would this structure look like?
+
+657
+00:49:18,036 --> 00:49:22,236
+Let's look at a basic example. Take for instance the previous day's profile.
+
+658
+00:49:23,136 --> 00:49:27,936
+Let's say over the last two sessions the market had become somewhat
+
+659
+00:49:27,936 --> 00:49:31,136
+contained and we had started trading in a
+
+660
+00:49:31,136 --> 00:49:37,136
+bracket time or a bracket type trade formation and the market formed an inside day.
+
+661
+00:49:37,836 --> 00:49:41,377
+Now what you can see is very clear structure in
+
+662
+00:49:41,377 --> 00:49:46,335
+the market where the market is consolidating and waiting for a move or response.
+
+663
+00:49:46,536 --> 00:49:48,336
+Now typically on this day we want
+
+664
+00:49:48,436 --> 00:49:52,081
+to pay attention in the initial balance open or in
+
+665
+00:49:52,081 --> 00:49:54,997
+the period in the first hour of trade
+
+666
+00:49:54,997 --> 00:49:59,735
+looking for a potential extension either to the downside or to the upside.
+
+667
+00:50:00,036 --> 00:50:06,836
+Now note the key with this strategy is not to preempt. We don't want to preempt that it's going to break in the initial balance.
+
+668
+00:50:07,036 --> 00:50:10,401
+What we want to do is wait for the flow, wait for
+
+669
+00:50:10,401 --> 00:50:12,644
+the market to give us the information and
+
+670
+00:50:12,644 --> 00:50:14,326
+then look to execute buy orders
+
+671
+00:50:14,326 --> 00:50:16,008
+on the break to the upside
+
+672
+00:50:16,008 --> 00:50:18,532
+and sell orders to the break to the downside.
+
+673
+00:50:18,936 --> 00:50:23,736
+Now a few things to pay attention to when looking at the setup. It's very simple.
+
+674
+00:50:24,136 --> 00:50:29,036
+Make sure you look at the context going into it. What do I mean by that?
+
+675
+00:50:29,436 --> 00:50:34,002
+In essence, if the market is aggressively selling off before this consolidation
+
+676
+00:50:34,002 --> 00:50:37,046
+day type, there's a much higher probability that
+
+677
+00:50:37,046 --> 00:50:43,736
+we're going to get an easier extension once we break the inside day toward the downside.Why?
+
+678
+00:50:43,736 --> 00:50:46,736
+Because the short-term trend is in that direction.
+
+679
+00:50:47,036 --> 00:50:49,536
+So that is what we mean by context.
+
+680
+00:50:50,236 --> 00:50:58,136
+Now important to note as well is that what you want to pay attention to is also the failed extension of the initial balance breakout.
+
+681
+00:50:58,136 --> 00:51:01,650
+So if we cannot hold that break, if we cannot
+
+682
+00:51:01,650 --> 00:51:04,461
+hold above the previous day's high or low
+
+683
+00:51:04,461 --> 00:51:10,435
+on the break, we could very likely then see a very strong reversal in the opposite direction.
+
+684
+00:51:11,236 --> 00:51:16,436
+So that's the first type of trade strategy we would look at when using the initial balance.
+
+685
+00:51:16,836 --> 00:51:22,936
+A second very key trading strategy would be looking for tails in the initial period.
+
+686
+00:51:22,936 --> 00:51:26,236
+So what do we mean by tails? Let's refresh your mind.
+
+687
+00:51:26,736 --> 00:51:34,436
+Now a tail is nothing more than when a market leaves a relatively untraded area of prices.
+
+688
+00:51:34,736 --> 00:51:40,436
+So what you have here is what I would call the first 30 minute TPOs of the day.
+
+689
+00:51:40,836 --> 00:51:46,136
+Now let's say for instance the market opened at the low. We very aggressively drove higher.
+
+690
+00:51:46,436 --> 00:51:53,436
+We then had the L print come in and the L prints failed to actually get into lower prices.
+
+691
+00:51:54,036 --> 00:51:59,336
+Now, what we would typically call this is our tail, our buying tail.
+
+692
+00:51:59,536 --> 00:52:03,536
+Now, what we're looking to lean on the initial balance here for
+
+693
+00:52:03,536 --> 00:52:06,202
+is a cash open or the next TPO
+
+694
+00:52:06,202 --> 00:52:09,535
+open to look to continue and extend in the direction.
+
+695
+00:52:09,936 --> 00:52:17,436
+Remember guys, a tail implies initiative and that is what we pay attention to.
+
+696
+00:52:17,836 --> 00:52:23,136
+So that's the second kind of key strategy we'd be looking for in using the initial balance.
+
+697
+00:52:23,536 --> 00:52:31,434
+The third and final strategy we would be looking at would be a failed weekly extension. So what do we mean by that?
+
+698
+00:52:31,736 --> 00:52:37,536
+Well, as traders, we don't just look at daily profiles, we actually also look at weekly profiles.
+
+699
+00:52:37,736 --> 00:52:42,122
+Now these weekly metrics being the high and the low, the value
+
+700
+00:52:42,122 --> 00:52:45,046
+area low or the volume value area low
+
+701
+00:52:45,046 --> 00:52:48,335
+and the volume value area high, these are relatively
+
+702
+00:52:48,436 --> 00:52:50,136
+key metrics in the market.
+
+703
+00:52:50,536 --> 00:52:53,126
+Now what we want to look to do is if
+
+704
+00:52:53,126 --> 00:52:54,680
+the market comes early on a
+
+705
+00:52:54,680 --> 00:52:56,234
+Monday morning and we open up
+
+706
+00:52:57,036 --> 00:53:01,470
+within the previous area of trade from the previous week and the
+
+707
+00:53:01,470 --> 00:53:04,426
+market tries to extend very early on on
+
+708
+00:53:04,426 --> 00:53:05,534
+the previous week's
+
+709
+00:53:06,336 --> 00:53:13,136
+lowest traded price, we want to be very very cautious going with that within the initial balance.
+
+710
+00:53:13,436 --> 00:53:17,324
+What we do tend to find is a high probability
+
+711
+00:53:17,324 --> 00:53:21,212
+that markets tend to initially fail to extend on these
+
+712
+00:53:21,212 --> 00:53:27,434
+larger time frame, you know, sort of type of highs and lows that we point out.
+
+713
+00:53:27,636 --> 00:53:31,236
+So that would be our third point of using an initial balance.
+
+714
+00:53:31,436 --> 00:53:35,876
+We want to see how the initial balance responds on a previous
+
+715
+00:53:35,876 --> 00:53:42,536
+week's low or previous week's high and look for the potential failure and reversal into the opposite direction.
+
+716
+00:53:43,036 --> 00:53:48,436
+So those are three unique trading strategies we would develop using the initial balance.
+
+717
+00:53:48,436 --> 00:53:52,336
+Now, the purpose of me showing you these patterns on the board
+
+718
+00:53:52,336 --> 00:53:54,936
+is not to show you the only patterns
+
+719
+00:53:54,936 --> 00:53:57,536
+that can be utilized with the initial balance.
+
+720
+00:53:57,536 --> 00:54:04,534
+The key is to show you that there are very specific strategies that we would employ when using the initial balance.
+
+721
+00:54:04,736 --> 00:54:09,936
+Now, it's up to you first and foremost to understand what exactly is the initial balance.
+
+722
+00:54:10,436 --> 00:54:18,334
+Then, once you understand that, to begin to identify what are the key patterns that you can develop using the initial balance.
+
+723
+00:54:19,636 --> 00:54:21,936
+Good luck and we'll see you again in the next part.
+
+724
+00:54:24,236 --> 00:54:27,036
+So you guys are halfway through part five now.
+
+725
+00:54:27,236 --> 00:54:30,450
+Let's have a quick little summary and just make sure
+
+726
+00:54:30,450 --> 00:54:33,021
+that you fully understand the principles I've dealt
+
+727
+00:54:33,021 --> 00:54:36,235
+with so far in the beginning part of part five.
+
+728
+00:54:36,236 --> 00:54:40,583
+So straight away, remember we spoke a profile or a
+
+729
+00:54:40,583 --> 00:54:43,191
+distribution is nothing more than a
+
+730
+00:54:43,191 --> 00:54:46,234
+representation of time, which would effectively be
+
+731
+00:54:46,536 --> 00:54:55,936
+on this axis, of price, which would be on this axis, and volume, which would be depicted on this axis.
+
+732
+00:54:55,936 --> 00:54:59,236
+Now, remember, price is an advertisement.
+
+733
+00:54:59,636 --> 00:55:03,758
+Time will regulate that advertisement, and volume will tell
+
+734
+00:55:03,758 --> 00:55:07,880
+us how good is the market advertising at various
+
+735
+00:55:07,880 --> 00:55:13,834
+prices and how are participants accepting or rejecting based on what's being advertised.
+
+736
+00:55:13,836 --> 00:55:19,836
+So that's where we began with just a brief summary of what volume profiling is all about.
+
+737
+00:55:19,936 --> 00:55:24,536
+Then we spoke about the price ladder and I showed you the different elements of the price ladder.
+
+738
+00:55:24,836 --> 00:55:27,036
+On the left side, we had all our buyers.
+
+739
+00:55:27,336 --> 00:55:33,136
+On the right side, we had our sellers or offers. And in the middle, we had all our prices.
+
+740
+00:55:33,336 --> 00:55:40,249
+Now, the reason I showed you this is because I wanted to show you that whilst we talk about distributions
+
+741
+00:55:40,249 --> 00:55:45,736
+being an auction process, equally when we execute, we're executing based on an auction process.Why?
+
+742
+00:55:45,736 --> 00:55:50,536
+Because in the middle here, we have various prices. call it one, two, three, and four.
+
+743
+00:55:50,836 --> 00:55:57,536
+And at every one of these prices, we have got buyers and sellers wanting to transact with one another.
+
+744
+00:55:57,736 --> 00:56:04,336
+Now, how they transact with one another is a skill in order to learn to watch.
+
+745
+00:56:05,336 --> 00:56:12,258
+Back in the day, if you were to have seen the people in the pits or people talking about reading
+
+746
+00:56:12,258 --> 00:56:18,834
+the tape, reading the tape is nothing more than just interpreting and understanding how buyers and sellers are interacting.
+
+747
+00:56:19,136 --> 00:56:20,136
+Are they aggressive?
+
+748
+00:56:20,436 --> 00:56:21,436
+Are they passive?
+
+749
+00:56:21,736 --> 00:56:26,136
+Are they buying some and then selling some, trying to just manage the position?
+
+750
+00:56:26,336 --> 00:56:27,936
+How are they executing?
+
+751
+00:56:28,136 --> 00:56:32,436
+And that is why we spoke very briefly about the price ladder.
+
+752
+00:56:32,936 --> 00:56:37,488
+We then moved on to quite possibly one of the most important
+
+753
+00:56:37,488 --> 00:56:40,523
+principles that you have in volume profiling and
+
+754
+00:56:40,523 --> 00:56:45,834
+also in the markets in general, and that is initiative versus responsive price action.
+
+755
+00:56:45,836 --> 00:56:50,736
+Now, I'm going to go through that again with you and show you how the two fit with one another.
+
+756
+00:56:50,736 --> 00:56:53,636
+So, initiative is where we see aggression.
+
+757
+00:56:53,636 --> 00:57:01,536
+We see a large institution, a large time frame player, someone who can influence price executing a position.
+
+758
+00:57:01,636 --> 00:57:04,636
+They take a directional position on the market.
+
+759
+00:57:04,636 --> 00:57:12,633
+Now, depending on how much liquidity is in the market is how the market will move in this example from A to B.
+
+760
+00:57:12,636 --> 00:57:18,336
+So, if this is our initiative move and there is very low liquidity, this buyer...
+
+761
+00:57:18,336 --> 00:57:21,069
+is going to have to look very aggressive,
+
+762
+00:57:21,069 --> 00:57:23,802
+not just on the profile, but also on
+
+763
+00:57:23,802 --> 00:57:26,535
+the price ladder, like we spoke about previously.
+
+764
+00:57:26,736 --> 00:57:33,834
+Now, if, however, this buyer can find liquidity, it may look a little bit more jagged, a little something like this.
+
+765
+00:57:35,236 --> 00:57:41,315
+Effectively we are still seeing the same thing which is initiative now there's a few key characteristics
+
+766
+00:57:41,315 --> 00:57:44,534
+to identify initiative but the most important is that
+
+767
+00:57:44,936 --> 00:57:51,636
+it's a momentum directional play now that means straight away any strategies we ever execute
+
+768
+00:57:52,736 --> 00:57:58,694
+in this type of price action we don't want to be going against it and that's the key
+
+769
+00:57:58,694 --> 00:58:02,335
+is that when you develop your strategies you need to interpret
+
+770
+00:58:02,636 --> 00:58:08,736
+is that strategy going to work well in initiative type price response or in responsive type price response so
+
+771
+00:58:09,036 --> 00:58:10,919
+that was the initiative we spoke
+
+772
+00:58:10,919 --> 00:58:12,802
+about then what we spoke about
+
+773
+00:58:12,802 --> 00:58:15,313
+was responsive now responsive is nothing more than
+
+774
+00:58:15,313 --> 00:58:17,824
+players being brought into the game so what
+
+775
+00:58:17,824 --> 00:58:22,533
+do we mean by that let's take the second example that we've been looking at
+
+776
+00:58:23,036 --> 00:58:28,090
+as these prices move higher up what then happens is as prices
+
+777
+00:58:28,090 --> 00:58:32,302
+advertised higher at this point we see a responsive seller
+
+778
+00:58:32,302 --> 00:58:36,935
+step into the market and sell it to the initiative buyer
+
+779
+00:58:37,936 --> 00:58:41,820
+However, once that responsive buyer stops responding to higher prices,
+
+780
+00:58:41,820 --> 00:58:44,927
+the initiative buyer will then continue to buy
+
+781
+00:58:44,927 --> 00:58:48,034
+the market up until he finds a gain.
+
+782
+00:58:48,836 --> 00:58:55,436
+responsive sellers and so forth and so forth initiative buying until we run into
+
+783
+00:58:55,736 --> 00:58:57,124
+responsive sellers now the
+
+784
+00:58:57,124 --> 00:58:59,901
+degree of response of selling is going to
+
+785
+00:58:59,901 --> 00:59:02,678
+dictate how we move up little response of
+
+786
+00:59:02,678 --> 00:59:08,233
+selling and it will look aggressive a lot of response of selling and it will look
+
+787
+00:59:09,036 --> 00:59:15,536
+a lot less aggressive and more grindy so that's effectively what we were trying to point out now
+
+788
+00:59:16,436 --> 00:59:19,156
+In another example, if we were to just
+
+789
+00:59:19,156 --> 00:59:21,876
+illustrate response of an initiative, is let's say
+
+790
+00:59:21,876 --> 00:59:24,936
+the market was moving in a sideways type formation.
+
+791
+00:59:24,936 --> 00:59:31,036
+So the market was moving up and then it ran into effectively responsive selling.
+
+792
+00:59:31,636 --> 00:59:34,236
+We then saw sellers respond to higher prices.
+
+793
+00:59:34,336 --> 00:59:40,336
+Anyone who was buying the market then turns and also sells the market until we run into
+
+794
+00:59:41,436 --> 00:59:42,636
+responsive buying.
+
+795
+00:59:43,036 --> 00:59:45,484
+Once you run into responsive buying, anyone that
+
+796
+00:59:45,484 --> 00:59:48,544
+was short on the way down will then take profits
+
+797
+00:59:48,544 --> 00:59:53,134
+and the market will look to continue to rotate until it runs into responsive selling.
+
+798
+00:59:53,536 --> 00:59:56,251
+Now I know this is a very basic
+
+799
+00:59:56,251 --> 00:59:58,966
+illustration, but the important thing to interpret and
+
+800
+00:59:58,966 --> 01:00:04,735
+differentiate when you look at the market, when you look at a volume profile, are we seeing
+
+801
+01:00:05,336 --> 01:00:08,636
+initiative or are we seeing responsive?
+
+802
+01:00:09,036 --> 01:00:14,890
+Identify this and you will be able to develop very very strong trade strategies
+
+803
+01:00:14,890 --> 01:00:19,536
+just trading within the context of the current market conditions.
+
+804
+01:00:19,936 --> 01:00:26,836
+We then moved on and we started to talk about symmetry and we had two basic types of symmetry.
+
+805
+01:00:27,636 --> 01:00:31,936
+Symmetrical and non-symmetrical.
+
+806
+01:00:34,236 --> 01:00:42,936
+And the key difference was that we have in symmetry, we have just nice balanced type markets, balanced distributions.
+
+807
+01:00:43,236 --> 01:00:49,736
+Whereas in non-symmetry, we had three types of non-balanced type markets, which were trending markets.
+
+808
+01:00:51,636 --> 01:01:03,836
+Which were P profiles and which were B profiles, both long liquidation and short profit taking.
+
+809
+01:01:03,836 --> 01:01:09,436
+So those are the key sort of symmetrical versus non-symmetrical type pattern plays.
+
+810
+01:01:09,436 --> 01:01:13,022
+Now, the reason we discuss that again is
+
+811
+01:01:13,022 --> 01:01:16,608
+that, remember, symmetrical markets or symmetrical profiles will
+
+812
+01:01:16,608 --> 01:01:22,435
+give us one set of trade strategies that we can develop, whereas non-symmetrical
+
+813
+01:01:22,736 --> 01:01:28,236
+will give us completely different trade opportunities and strategies to use.
+
+814
+01:01:28,636 --> 01:01:33,436
+So that's what we spoke about when we spoke with regard to symmetry and non-symmetry.
+
+815
+01:01:33,736 --> 01:01:36,727
+We then finished off and spoke about the
+
+816
+01:01:36,727 --> 01:01:42,335
+initial balance, which is the initial period of trade before the cash market steps in.
+
+817
+01:01:42,536 --> 01:01:48,136
+And I showed you the various examples of the Bund, the E-mini S&P,
+
+818
+01:01:48,336 --> 01:01:56,336
+the oil market and the euro dollar FX and what time those initial balances would be.
+
+819
+01:01:56,636 --> 01:01:59,797
+We then also spoke about the few examples
+
+820
+01:01:59,797 --> 01:02:02,563
+of how we would use the initial
+
+821
+01:02:02,563 --> 01:02:04,934
+balance to develop various trade strategies.
+
+822
+01:02:05,336 --> 01:02:07,636
+So that's a wrap up of part 5.
+
+823
+01:02:07,736 --> 01:02:10,436
+I hope you've enjoyed the first half of this part 5.
+
+824
+01:02:10,636 --> 01:02:14,936
+Let's now move on and get on with the rest of our part 5.
+
+825
+01:02:18,336 --> 01:02:22,736
+We're going to move now a little bit further into the concept of symmetry and non-symmetry.
+
+826
+01:02:22,736 --> 01:02:28,536
+And we're going to start to talk about the non-trending market versus trending market.
+
+827
+01:02:28,636 --> 01:02:32,836
+And the reason is, remember what I said to you when we spoke about initiative and responsive.
+
+828
+01:02:33,136 --> 01:02:41,236
+We need to be able to very early differentiate when a market is trending and when there's no trend.
+
+829
+01:02:41,336 --> 01:02:45,193
+If you can identify this very early on, you can
+
+830
+01:02:45,193 --> 01:02:52,135
+then apply various strategies with a high degree of confidence over the course of any given time frame.
+
+831
+01:02:52,136 --> 01:02:55,536
+So let's talk about firstly non-trending markets.
+
+832
+01:02:55,636 --> 01:03:06,136
+Now, non-trending markets, by definition, there's minimal market participation and little or no confidence in direction.
+
+833
+01:03:06,136 --> 01:03:08,702
+In other words, people are waiting or
+
+834
+01:03:08,702 --> 01:03:12,002
+on a larger term time frame participants, they're waiting
+
+835
+01:03:12,002 --> 01:03:18,235
+for big news, for data, for something fundamental that can then shift their, you know, how they.
+
+836
+01:03:18,436 --> 01:03:20,436
+perceive or value various prices.
+
+837
+01:03:20,436 --> 01:03:27,236
+So that's why markets can spend a long, long time not trending because they're just awaiting further information.
+
+838
+01:03:28,536 --> 01:03:34,636
+Non-trend, there's very little reason to take any risk as the market positioning is locked up.
+
+839
+01:03:34,736 --> 01:03:38,698
+So again, it's this concept of you need to wait
+
+840
+01:03:38,698 --> 01:03:41,868
+for further information, say, from a crucial central
+
+841
+01:03:41,868 --> 01:03:45,434
+bank before then allocating and taking on further risk.
+
+842
+01:03:46,136 --> 01:03:53,636
+In non-trends, we do tend to see very narrow initial balance ranges and very, very low volatility.
+
+843
+01:03:55,136 --> 01:03:56,969
+Now, trend days, on the
+
+844
+01:03:56,969 --> 01:03:59,535
+flip side, we tend to see a
+
+845
+01:03:59,535 --> 01:04:03,935
+high level of directional confidence and it's evident over the entire session.
+
+846
+01:04:04,336 --> 01:04:10,036
+Very crucial to understand, when a market's not trending, it's likely to stay that way for the entire day.
+
+847
+01:04:10,436 --> 01:04:14,636
+When it's trending, it will likely hold the trend for the entire session.
+
+848
+01:04:14,936 --> 01:04:17,636
+Remember what we said when we spoke about non-symmetry.
+
+849
+01:04:18,036 --> 01:04:20,436
+That non-symmetry tends to hold for the entire
+
+850
+01:04:20,436 --> 01:04:22,536
+session and it gives us a little
+
+851
+01:04:22,536 --> 01:04:25,536
+bit of a lean in one direction or the other.
+
+852
+01:04:27,036 --> 01:04:30,042
+Trend A draws in responsive players, so therefore
+
+853
+01:04:30,042 --> 01:04:33,424
+by that token, if we've got a lot of
+
+854
+01:04:33,424 --> 01:04:37,934
+participants being drawn in as prices very quickly moving higher or lower,
+
+855
+01:04:38,336 --> 01:04:44,236
+that means a lot of new businesses being drawn in as well, and that implies higher volume.
+
+856
+01:04:46,036 --> 01:04:50,836
+Trend days, we tend to see something called one time framing we will talk about this
+
+857
+01:04:50,836 --> 01:04:53,536
+and I will show you some very nice examples
+
+858
+01:04:54,236 --> 01:04:58,322
+but the important thing to understand about one time framing is merely
+
+859
+01:04:58,322 --> 01:05:01,046
+that it shows that either the buyers or
+
+860
+01:05:01,046 --> 01:05:03,429
+the sellers are in control the entire
+
+861
+01:05:03,429 --> 01:05:06,834
+day they're controlling the auction process for the entire session
+
+862
+01:05:08,436 --> 01:05:12,342
+There is a high tendency when we trend for the market to
+
+863
+01:05:12,342 --> 01:05:16,248
+open at the low or the high and for the rest of
+
+864
+01:05:16,248 --> 01:05:22,434
+the day continue in that direction and usually close within the top or bottom quartile of that trend day.
+
+865
+01:05:24,436 --> 01:05:29,936
+Note, it's very profitable if you can identify trend early and go with it.
+
+866
+01:05:30,536 --> 01:05:35,566
+More importantly, if you miss the trend and you're taking counter strategies
+
+867
+01:05:35,566 --> 01:05:38,081
+all day long, it will feel
+
+868
+01:05:38,081 --> 01:05:41,434
+very painful, very, very frustrating and very difficult.
+
+869
+01:05:41,536 --> 01:05:46,209
+So it's important that you do identify trend days very early and
+
+870
+01:05:46,209 --> 01:05:50,882
+I will show you very early characteristics that trend days exhibit so
+
+871
+01:05:50,882 --> 01:05:56,334
+that you make sure you don't miss out on these trend day type opportunities.
+
+872
+01:05:57,036 --> 01:06:00,600
+Again, we will talk about some of those early identifiers, but it
+
+873
+01:06:00,600 --> 01:06:02,976
+is crucial that you pick up on them
+
+874
+01:06:02,976 --> 01:06:07,134
+early so that you don't end up fading the market for the entire session.
+
+875
+01:06:08,236 --> 01:06:12,591
+What we have here now is a very nice graphic depiction of
+
+876
+01:06:12,591 --> 01:06:15,494
+the non-trend examples, day types that you can
+
+877
+01:06:15,494 --> 01:06:18,034
+expect, and then the trending day types.
+
+878
+01:06:18,436 --> 01:06:20,107
+types you can expect and it's
+
+879
+01:06:20,107 --> 01:06:22,335
+important now that you try and memorize these
+
+880
+01:06:22,335 --> 01:06:26,234
+five day types as we're going to go through each one of them individually
+
+881
+01:06:26,536 --> 01:06:28,745
+I'm going to show you the characteristics of each one
+
+882
+01:06:28,745 --> 01:06:30,512
+of the day types I'm going to show
+
+883
+01:06:30,512 --> 01:06:31,837
+you a chart of each one
+
+884
+01:06:31,837 --> 01:06:36,034
+of the day types and then we're going to summarize each one of these day types in a nice
+
+885
+01:06:36,636 --> 01:06:41,486
+table that you can then keep with you and just make sure
+
+886
+01:06:41,486 --> 01:06:46,336
+you're constantly evaluating each day within one of these five day types
+
+887
+01:06:46,736 --> 01:06:54,136
+So as you can see under non-trending day types we have a normal day, we have a neutral day and we have a normal variation.
+
+888
+01:06:54,536 --> 01:06:59,107
+In a trending market we have a standard trend or
+
+889
+01:06:59,107 --> 01:07:04,135
+a traditional trend day and then we have a double distribution.
+
+890
+01:07:05,036 --> 01:07:12,934
+Let's go now through each one of these day types and have a look at the characteristics and what they would look like on the volume profiles.
+
+891
+01:07:14,336 --> 01:07:18,836
+The first day type in a non-trending market is the normal day.
+
+892
+01:07:19,136 --> 01:07:21,736
+Now note, these are very, very rare to see.
+
+893
+01:07:22,636 --> 01:07:27,236
+So there's one key characteristic that defines a market as a normal day.
+
+894
+01:07:28,636 --> 01:07:31,336
+We have an extremely wide initial balance.
+
+895
+01:07:31,336 --> 01:07:36,936
+So that initial hour of trade is substantially bigger range than normal.
+
+896
+01:07:36,936 --> 01:07:39,036
+So well above the average range.
+
+897
+01:07:39,036 --> 01:07:46,334
+Now the easy way to identify this is to make sure that you track the range of the initial balance every single day.
+
+898
+01:07:46,836 --> 01:07:54,236
+If on average you find that it's roughly 10 to 15 prices the day you have a 30 or 40 or more price range
+
+899
+01:07:54,536 --> 01:07:57,764
+you know there's a high probability we are going to
+
+900
+01:07:57,764 --> 01:08:00,992
+get a normal day type now the important thing to
+
+901
+01:08:00,992 --> 01:08:05,834
+understand about a normal day type is that we tend to spend the entire session
+
+902
+01:08:06,136 --> 01:08:12,336
+filling out the initial balance so straight away if you know there's a high probability that the market's going to
+
+903
+01:08:12,636 --> 01:08:17,474
+spend almost the entire session within the early established range straight away
+
+904
+01:08:17,474 --> 01:08:25,135
+you can develop some fantastic trade opportunities with very good conviction knowing that it is a normal day type
+
+905
+01:08:26,336 --> 01:08:30,936
+Now note, as we can see, long time frame participants have a
+
+906
+01:08:30,936 --> 01:08:34,002
+strong reason to react early on and this
+
+907
+01:08:34,002 --> 01:08:37,835
+early reaction is what creates the very wide initial balance.
+
+908
+01:08:39,856 --> 01:08:43,683
+The important clue and the important understanding is that on a normal
+
+909
+01:08:43,683 --> 01:08:46,234
+day, there's no extension of the initial range
+
+910
+01:08:46,234 --> 01:08:51,655
+and it's a higher probability outcome that it's going to stay that way for the entire session.
+
+911
+01:08:54,156 --> 01:09:00,853
+As you can see in the chart, what we have is the blue line is the, or the dark blue line, that is our initial range.
+
+912
+01:09:01,056 --> 01:09:05,356
+Now, in this market, you can see it's a particularly big example.
+
+913
+01:09:05,856 --> 01:09:09,956
+What's important to note then with the light blue bar is that's the value area.
+
+914
+01:09:09,956 --> 01:09:16,856
+So we can see that the value of the day, of the entire session, was accepted within the initial balance.
+
+915
+01:09:17,356 --> 01:09:22,956
+Also important to note is the very strong opening tail that the market exhibited in this market.
+
+916
+01:09:22,956 --> 01:09:27,356
+So it's quite often that you do see tails on these normal day types.
+
+917
+01:09:27,656 --> 01:09:29,901
+So again, remember, if you see
+
+918
+01:09:29,901 --> 01:09:33,642
+an extremely wide initial balance period, that could be an
+
+919
+01:09:33,642 --> 01:09:39,254
+early clue or an identifier that we are likely to have a normal day type.
+
+920
+01:09:40,256 --> 01:09:42,856
+Let's now turn our attention to the next day type.
+
+921
+01:09:44,656 --> 01:09:51,756
+The neutral day so the neutral day is where a buyer and a seller agree on fair value
+
+922
+01:09:52,956 --> 01:10:00,156
+quite easily and quite often now both time frames are very active
+
+923
+01:10:00,756 --> 01:10:08,256
+within this day type and they tend to initiate until they run into responsive and then they tend to reverse
+
+924
+01:10:08,656 --> 01:10:13,956
+and where the market goes in the other direction and it keeps pinging and reversing the entire session.
+
+925
+01:10:16,256 --> 01:10:18,884
+Initial balance range for the neutral day will
+
+926
+01:10:18,884 --> 01:10:21,512
+be between a normal day, so very, very
+
+927
+01:10:21,512 --> 01:10:25,454
+wide, and between a trend day, which can be small or medium.
+
+928
+01:10:25,456 --> 01:10:30,356
+So the initial balance size of a neutral day can be relatively average.
+
+929
+01:10:30,656 --> 01:10:35,556
+As you can see in the example, the market trades on both sides of the initial balance.
+
+930
+01:10:35,556 --> 01:10:38,944
+So whilst we had in the first example, we had
+
+931
+01:10:38,944 --> 01:10:42,332
+the market trading the entire session within the initial balance,
+
+932
+01:10:42,332 --> 01:10:47,754
+in a neutral day type, the market tends to trade both sides of the initial balance.
+
+933
+01:10:48,256 --> 01:10:52,656
+More importantly, it tends to reject both sides of the initial balance.
+
+934
+01:10:53,056 --> 01:10:54,717
+This rejection, or once we
+
+935
+01:10:54,717 --> 01:10:57,707
+re-enter the initial balance, this gives us sort of
+
+936
+01:10:57,707 --> 01:11:03,355
+an early identifier that we are likely to take out the other side of the initial balance.
+
+937
+01:11:03,456 --> 01:11:07,269
+So a very important strategy that a lot of traders look for
+
+938
+01:11:07,269 --> 01:11:11,082
+is once we've taken out one side of the initial balance and
+
+939
+01:11:11,082 --> 01:11:13,306
+shown some sort of reversal type indications,
+
+940
+01:11:13,306 --> 01:11:17,754
+we then look to target the other side of the initial balance being broken.
+
+941
+01:11:18,256 --> 01:11:22,856
+Again, this is another important non-trending type day type.
+
+942
+01:11:23,856 --> 01:11:27,056
+Note we do extend the initial balance on both sides.
+
+943
+01:11:27,356 --> 01:11:31,056
+We then have two types of closes and this is important to pay attention.
+
+944
+01:11:31,256 --> 01:11:32,456
+We have a neutral close.
+
+945
+01:11:32,456 --> 01:11:37,956
+Now a neutral close is where the close of the market occurs within value area.
+
+946
+01:11:38,456 --> 01:11:44,956
+A pretty ordinary close where neither buyer nor seller kind of victoriously wins the day.
+
+947
+01:11:45,456 --> 01:11:52,554
+However, when we get a neutral extreme close, this is where the market shuts at either the high or the low.
+
+948
+01:11:52,756 --> 01:11:56,165
+When we do have one of these extreme closes, this
+
+949
+01:11:56,165 --> 01:11:57,869
+is giving us quite an
+
+950
+01:11:57,869 --> 01:12:00,596
+early signal for the next day's trade.Why?
+
+951
+01:12:00,256 --> 01:12:05,756
+Because an extreme close is a hypothetical victory for a buyer and seller.
+
+952
+01:12:06,356 --> 01:12:11,306
+As you can see in the two examples provided, the first one we have a relatively neutral close
+
+953
+01:12:11,306 --> 01:12:14,056
+where the market traded both sides of the initial balance.
+
+954
+01:12:14,456 --> 01:12:20,756
+The second example is where we traded both sides of the initial balance but we had an extreme close.
+
+955
+01:12:21,056 --> 01:12:27,856
+In an extreme close situation, we would be looking for early buy side opportunities in the next day.
+
+956
+01:12:28,256 --> 01:12:31,456
+We will discuss these sorts of strategies as we move along further.
+
+957
+01:12:31,956 --> 01:12:33,756
+Let's now take a look at the next day.
+
+958
+01:12:35,256 --> 01:12:40,256
+Normal variation is the third non-trend day type that you can expect to see.
+
+959
+01:12:41,656 --> 01:12:47,456
+The normal variation of a normal day is less dynamic and less specific.
+
+960
+01:12:48,456 --> 01:12:56,356
+We tend to see an extension of the initial balance just like we saw in the neutral day type where we extended on both sides.
+
+961
+01:12:57,856 --> 01:13:01,528
+As you can see, long term players wait for the opportune moment
+
+962
+01:13:01,528 --> 01:13:03,976
+to enter and they don't necessarily do this
+
+963
+01:13:03,976 --> 01:13:07,954
+at the opening of the market that we saw in the normal day.
+
+964
+01:13:09,156 --> 01:13:12,289
+Now the reason it's slightly less dynamic is because what
+
+965
+01:13:12,289 --> 01:13:16,049
+we saw with the first two day types, when we have a
+
+966
+01:13:16,049 --> 01:13:18,242
+normal day type, we know that there's
+
+967
+01:13:18,242 --> 01:13:20,435
+a high probability that the market is
+
+968
+01:13:20,435 --> 01:13:23,254
+going to spend the day within the initial range.
+
+969
+01:13:23,556 --> 01:13:30,656
+When we have a neutral day, we know there's a high probability that the market's likely to extend on both sides of the initial range.
+
+970
+01:13:31,056 --> 01:13:38,154
+Whereas with a normal variation day, we know there's a high probability for extension, but we're not sure in which direction.
+
+971
+01:13:38,556 --> 01:13:46,554
+So it's important that we wait for these bigger time frames to make their move before then placing our trade strategies.
+
+972
+01:13:48,156 --> 01:13:52,406
+We note that the accepted value of the distribution or where fair
+
+973
+01:13:52,406 --> 01:13:56,656
+value is accepted tends to look like a B or P shape.
+
+974
+01:13:56,956 --> 01:14:06,156
+Remember we spoke about these being both shorts taking profit and longs liquidating their positions.
+
+975
+01:14:08,156 --> 01:14:14,756
+The P shape is indicative of short covering and the B shape is indicative of long liquidation.
+
+976
+01:14:15,556 --> 01:14:19,856
+We'll now talk about our next day type which will be a trend day type.
+
+977
+01:14:21,356 --> 01:14:24,156
+The first of the trend days is a traditional trend day.
+
+978
+01:14:25,056 --> 01:14:28,056
+Now it looks a lot like as you can see
+
+979
+01:14:28,056 --> 01:14:31,056
+in the profile in the picture, it's a day type
+
+980
+01:14:31,056 --> 01:14:36,156
+where we have lots of little profiles or areas being accepted over a period of a day.
+
+981
+01:14:36,456 --> 01:14:38,256
+Remember what we said in a traditional
+
+982
+01:14:38,456 --> 01:14:45,556
+trend day, there's a high level of directional confidence and it tends to be evident over the entire session.
+
+983
+01:14:46,456 --> 01:14:52,256
+As the market trends, it tends to draw in new business and thus higher and higher volume.
+
+984
+01:14:53,156 --> 01:15:00,236
+We also tend to see a lot of one time framing as the initiative tends to occur over the entire
+
+985
+01:15:00,236 --> 01:15:06,254
+day and we have either the buyer or the seller being in control over the entire session.
+
+986
+01:15:07,156 --> 01:15:11,165
+Again, also note there is a tendency to open and close within
+
+987
+01:15:11,165 --> 01:15:15,174
+the first or the lowest or the highest quartile and we then
+
+988
+01:15:15,174 --> 01:15:20,854
+also close with the trend in either the highest quartile in an uptrend or the lowest quartile
+
+989
+01:15:21,456 --> 01:15:22,456
+in a downtrend.
+
+990
+01:15:23,456 --> 01:15:30,756
+Now, what's important to note about a trend day, a traditional trend day, is what are the early characteristics.
+
+991
+01:15:30,956 --> 01:15:34,770
+Just like we spoke about some of the early characteristics with the
+
+992
+01:15:34,770 --> 01:15:37,312
+normal day, the neutral day and the normal
+
+993
+01:15:37,312 --> 01:15:39,854
+variation, we have characteristics for the trend day.
+
+994
+01:15:40,056 --> 01:15:46,256
+Now, some of the characteristics is volume dispersion. This is how volume is dispersed over various prices.
+
+995
+01:15:46,556 --> 01:15:51,456
+As you can see in the example, it tends to be dispersed over a varying number of prices.
+
+996
+01:15:51,656 --> 01:15:55,056
+And this is very, very characteristic of a trend day.
+
+997
+01:15:55,156 --> 01:15:59,556
+The market tends to show initiative until it finds responsive other time frames.
+
+998
+01:15:59,756 --> 01:16:02,656
+We then have a little bit of distribution and then initiative.
+
+999
+01:16:02,756 --> 01:16:07,356
+And then it runs again into responsive time frame and then again initiative.
+
+1000
+01:16:07,356 --> 01:16:11,656
+So we tend to... form lots of little value areas over the period of the session.
+
+1001
+01:16:13,156 --> 01:16:16,556
+Another key characteristic is the low volume areas.
+
+1002
+01:16:16,556 --> 01:16:20,456
+Remember we spoke about this earlier in the module.
+
+1003
+01:16:20,856 --> 01:16:25,423
+And what you will see is that when a market is trending,
+
+1004
+01:16:25,423 --> 01:16:28,468
+it tends to leave lots of low volume
+
+1005
+01:16:28,468 --> 01:16:32,655
+areas as the market quickly moves away from prices being advertised.
+
+1006
+01:16:33,556 --> 01:16:36,356
+There is a natural tendency for directional bias.
+
+1007
+01:16:36,356 --> 01:16:42,754
+So over the period of the day, it'll feel as though a market constantly wants to go in one direction or another.
+
+1008
+01:16:44,356 --> 01:16:46,656
+We have very short consolidation periods.
+
+1009
+01:16:46,756 --> 01:16:52,856
+So again, we see initiative with a little bit of two-way trade. And that two-way trade doesn't last very long.
+
+1010
+01:16:53,456 --> 01:16:58,056
+And the last one, we tend to break through a lot of key reference points.
+
+1011
+01:16:58,356 --> 01:17:04,593
+If ever you felt as though a market wasn't respecting any kind of technicals or wasn't paying attention to any
+
+1012
+01:17:04,593 --> 01:17:11,453
+kind of key pivots that you had noted, this is a very, very early characteristic that a market is trying to trend.
+
+1013
+01:17:11,756 --> 01:17:16,856
+And the reason this is an early characteristic is because of the nature of initiative price action.
+
+1014
+01:17:17,256 --> 01:17:26,056
+Initiative by its very nature is when large time frame participants who are influential are looking to execute quite aggressively.
+
+1015
+01:17:26,356 --> 01:17:30,156
+When they're executing, they're not too concerned about price.
+
+1016
+01:17:30,456 --> 01:17:34,200
+The fact that they're not concerned about price is very suggestive that
+
+1017
+01:17:34,200 --> 01:17:38,256
+not only is the initiative price action in the market, but it's like...
+
+1018
+01:17:38,356 --> 01:17:41,056
+to be of a trending characteristic.
+
+1019
+01:17:41,356 --> 01:17:45,756
+So those are some of the key characteristics with regards to a trend day.
+
+1020
+01:17:46,056 --> 01:17:50,456
+Let's now turn to the other type of trend day which is a double distribution.
+
+1021
+01:17:52,356 --> 01:17:56,256
+The double distribution is the second trend type that you can typically find.
+
+1022
+01:17:56,556 --> 01:18:00,756
+It gets its name from exactly what the name is.
+
+1023
+01:18:00,856 --> 01:18:05,506
+It has two distributions and this is formed by initially seeing a
+
+1024
+01:18:05,506 --> 01:18:08,606
+little bit of two-way trade, a lot of
+
+1025
+01:18:08,606 --> 01:18:13,256
+acceptance with a little bit of initiative and then further two-way trade.
+
+1026
+01:18:13,456 --> 01:18:17,756
+But let's look at some of the characteristics of what creates a double distribution day.
+
+1027
+01:18:17,756 --> 01:18:23,256
+So initially the market is quite inactive as there's a low level of conviction.
+
+1028
+01:18:23,256 --> 01:18:26,856
+In other words, there's very little conviction to either move up or down.
+
+1029
+01:18:28,556 --> 01:18:31,070
+Note then, we also do have a relatively
+
+1030
+01:18:31,070 --> 01:18:33,584
+small initial balance and this is again an
+
+1031
+01:18:33,584 --> 01:18:37,355
+early identifier of a lack of conviction and interest in the market.
+
+1032
+01:18:38,156 --> 01:18:42,176
+But a change in events, whether it may be fundamental, whether it
+
+1033
+01:18:42,176 --> 01:18:44,856
+may be technical or maybe a large order
+
+1034
+01:18:44,856 --> 01:18:51,556
+comes into the market, this suddenly creates initiative and it's this initiative that breaks us out of the initial range.
+
+1035
+01:18:51,556 --> 01:18:57,656
+Now note, it does tend to leave a low volume area or an untraded area of prices.
+
+1036
+01:18:58,056 --> 01:19:02,186
+This untraded area is crucial in a double distribution day
+
+1037
+01:19:02,186 --> 01:19:09,156
+as again it gives a little bit of a lean towards one direction. or the other.
+
+1038
+01:19:10,856 --> 01:19:13,598
+And note, you tend to get, well, in
+
+1039
+01:19:13,598 --> 01:19:16,340
+the double distribution is that these single prints
+
+1040
+01:19:16,340 --> 01:19:18,054
+or this low volume area
+
+1041
+01:19:18,656 --> 01:19:21,204
+will tend to hold and so long as
+
+1042
+01:19:21,204 --> 01:19:23,752
+it holds, the market will continue to trend
+
+1043
+01:19:23,752 --> 01:19:27,255
+or hold the directional trend for the rest of the day.
+
+1044
+01:19:27,556 --> 01:19:30,184
+Now the reason that this low volume area
+
+1045
+01:19:30,184 --> 01:19:32,155
+or single prints is crucial is
+
+1046
+01:19:32,155 --> 01:19:34,454
+because it gives us the directional bias.
+
+1047
+01:19:34,656 --> 01:19:40,356
+So the question, you know, ultimately we have to say is that if the low volume area is filled,
+
+1048
+01:19:41,556 --> 01:19:43,572
+effectively the impetus is now gone
+
+1049
+01:19:43,572 --> 01:19:49,956
+and the low volume area will likely be filled in and we'll no longer have a double distribution day.
+
+1050
+01:19:50,256 --> 01:19:52,055
+So the question you have to ask
+
+1051
+01:19:52,055 --> 01:19:53,340
+yourself when it comes to
+
+1052
+01:19:53,340 --> 01:19:55,653
+a double distribution to fill or not to fill.
+
+1053
+01:19:56,156 --> 01:19:58,956
+So long as we don't fill we'll hold the trend.
+
+1054
+01:19:58,956 --> 01:20:01,276
+Now in the example as you can see
+
+1055
+01:20:01,276 --> 01:20:03,886
+the market opened and spent the first sort of
+
+1056
+01:20:03,886 --> 01:20:07,656
+hour and a half just moving sideways in a relatively small initial balance.
+
+1057
+01:20:08,056 --> 01:20:10,946
+We then got a little bit of buying
+
+1058
+01:20:10,946 --> 01:20:13,836
+interest but the market couldn't really aggressively move
+
+1059
+01:20:13,836 --> 01:20:19,255
+up and we got a real lack of conviction trade for some period of time.
+
+1060
+01:20:19,856 --> 01:20:24,456
+However, at some point, all of a sudden, initiative was taken by the buyers.
+
+1061
+01:20:24,756 --> 01:20:31,356
+We quickly, aggressively moved higher until we ran into responsive sell-side action.
+
+1062
+01:20:31,656 --> 01:20:36,456
+And once those responsive sellers entered the market, we then started to see two-way trade.
+
+1063
+01:20:36,756 --> 01:20:38,256
+Now, the crucial thing to understand...
+
+1064
+01:20:38,256 --> 01:20:41,122
+is that we only want to be looking
+
+1065
+01:20:41,122 --> 01:20:43,988
+for buy side opportunities so long as the
+
+1066
+01:20:43,988 --> 01:20:46,854
+low volume area or the single prints remain.
+
+1067
+01:20:47,456 --> 01:20:55,656
+Once those single prints get traded, it's very likely that we then look to trade out between the two distributions.
+
+1068
+01:20:56,756 --> 01:21:00,456
+This now concludes our five different day types.
+
+1069
+01:21:00,656 --> 01:21:03,737
+Let's now look at a chart where we can graphically
+
+1070
+01:21:03,737 --> 01:21:06,818
+show you the level of conviction of each one of
+
+1071
+01:21:06,818 --> 01:21:12,055
+these day types and then move on to a very nice summary of the five day types.
+
+1072
+01:21:14,096 --> 01:21:21,094
+The chart you have in front of you is extremely simple, but it's extremely important to understand this chart, and I'll tell you why.
+
+1073
+01:21:21,496 --> 01:21:24,547
+What you have here effectively is on the
+
+1074
+01:21:24,547 --> 01:21:27,598
+x-axis, you've got basically the six different day
+
+1075
+01:21:27,598 --> 01:21:31,794
+types that you can expect to see on any given day.
+
+1076
+01:21:31,896 --> 01:21:36,296
+Now, you will see these across various markets at any given time.
+
+1077
+01:21:36,896 --> 01:21:39,696
+On the y-axis, we've got directional conviction.
+
+1078
+01:21:39,696 --> 01:21:42,684
+In other words, the amount of bias that,
+
+1079
+01:21:42,684 --> 01:21:46,045
+or not necessarily bias, but how confident you can
+
+1080
+01:21:46,045 --> 01:21:52,395
+be in the market holding the initial move, whether it's to the upside or to the downside.
+
+1081
+01:21:52,696 --> 01:21:53,896
+Remember what I said to you earlier.
+
+1082
+01:21:54,196 --> 01:21:57,121
+If you knew that there was a 60 or 70 or 80%
+
+1083
+01:21:57,121 --> 01:21:59,721
+chance that a market was likely to keep
+
+1084
+01:21:59,721 --> 01:22:06,221
+going higher all day or keep going lower, these odds greatly impact the types of strategies you're going to take.
+
+1085
+01:22:07,396 --> 01:22:14,396
+And that's why we want to know where the market has the lowest amount of conviction and where it has the highest amount of conviction.
+
+1086
+01:22:14,696 --> 01:22:21,896
+Now, it's important for me to, I'm going to start on the highest amount of conviction and talk about the two trend day types.
+
+1087
+01:22:22,096 --> 01:22:25,996
+As you can see, the traditional trend has got the most amount of conviction.
+
+1088
+01:22:26,296 --> 01:22:28,849
+And this is obvious because we see, you
+
+1089
+01:22:28,849 --> 01:22:34,594
+know, the one time frame controlling the entire session, whether that's to the upside or to the downside.
+
+1090
+01:22:34,796 --> 01:22:42,496
+So we know that momentum strategies or flow strategies or breakout strategies will work particularly well when there's a high.
+
+1091
+01:22:42,496 --> 01:22:43,896
+high level of conviction.
+
+1092
+01:22:44,996 --> 01:22:48,196
+Next to that we have the double distribution trend day.
+
+1093
+01:22:48,496 --> 01:22:55,896
+Remember the double distribution only holds so long as the low volume area or single prints remain intact.
+
+1094
+01:22:56,496 --> 01:22:58,896
+We then have the neutral extreme day.
+
+1095
+01:22:59,196 --> 01:23:03,018
+Remember this is the day type where the market trades on both
+
+1096
+01:23:03,018 --> 01:23:05,247
+sides of the initial balance but closes
+
+1097
+01:23:05,247 --> 01:23:07,795
+relatively aggressive on the high or the low.
+
+1098
+01:23:08,096 --> 01:23:12,396
+That close gives us an early indicator for activity the next morning.
+
+1099
+01:23:13,296 --> 01:23:19,896
+We then have the normal variation day. This is the day type where we have a very, very wide initial balance.
+
+1100
+01:23:19,896 --> 01:23:23,083
+Now, the reason we have a high level of conviction,
+
+1101
+01:23:23,083 --> 01:23:24,995
+yeah, is because we know there's
+
+1102
+01:23:24,995 --> 01:23:26,907
+a high probability we're likely to
+
+1103
+01:23:26,907 --> 01:23:30,094
+spend the day filling out that initial overnight trading session.
+
+1104
+01:23:31,496 --> 01:23:35,196
+We then have the neutral day type.
+
+1105
+01:23:35,596 --> 01:23:41,396
+Again, this is a less convicted day type and there's far less conviction in this day.
+
+1106
+01:23:42,096 --> 01:23:49,296
+Then we have the normal day, again even less conviction and then we have the non-trend day.
+
+1107
+01:23:49,896 --> 01:23:53,671
+So as you can see, it's important to understand the level of
+
+1108
+01:23:53,671 --> 01:23:56,188
+conviction in the market move as this will
+
+1109
+01:23:56,188 --> 01:23:58,705
+sort of effectively give you a lot of
+
+1110
+01:23:58,705 --> 01:24:02,795
+confidence when you're taking on various strategies over the period of a day.
+
+1111
+01:24:03,296 --> 01:24:05,670
+Let's now turn our attention to a very,
+
+1112
+01:24:05,670 --> 01:24:07,450
+very nice summary of the five
+
+1113
+01:24:07,450 --> 01:24:09,230
+day types, the characteristics, you know,
+
+1114
+01:24:09,230 --> 01:24:12,494
+what the initial trade or the overnight session might look like.
+
+1115
+01:24:12,496 --> 01:24:14,296
+look like and some drawings.
+
+1116
+01:24:18,596 --> 01:24:23,436
+So what you have in front of you is a very nice
+
+1117
+01:24:23,436 --> 01:24:30,696
+graphic chart and summary of the various day types you can expect to see in the volume profiles.
+
+1118
+01:24:30,996 --> 01:24:33,596
+Make a copy of this, print it off,
+
+1119
+01:24:33,596 --> 01:24:35,546
+keep it close to your desk,
+
+1120
+01:24:35,546 --> 01:24:37,496
+learn these day types off by
+
+1121
+01:24:37,496 --> 01:24:40,096
+heart because if you can identify a day
+
+1122
+01:24:40,096 --> 01:24:45,296
+type very, very early on, it's going to make trading the day ahead far, far simpler.
+
+1123
+01:24:45,796 --> 01:24:47,596
+So what are the five day types?
+
+1124
+01:24:47,596 --> 01:24:56,296
+Remember we had non-trend days which include normal days, neutral days with a central or a relatively normal close.
+
+1125
+01:24:56,596 --> 01:24:58,896
+We then have the neutral day with an extreme close.
+
+1126
+01:24:59,496 --> 01:25:05,495
+We then have the normal variation of a normal day and then the two trend days being traditional and double distribution.
+
+1127
+01:25:06,096 --> 01:25:12,396
+As you can see, they are the various characteristics you will find within each one of those day types.
+
+1128
+01:25:13,496 --> 01:25:17,162
+Now, the important thing and what I've tried to show
+
+1129
+01:25:17,162 --> 01:25:24,495
+you here is what a basic example of the initial balance or what the overnight session ranges might look like.
+
+1130
+01:25:24,596 --> 01:25:27,279
+Again, this is just a very simple example
+
+1131
+01:25:27,279 --> 01:25:29,962
+so that I can try and help you
+
+1132
+01:25:29,962 --> 01:25:31,974
+to understand what the initial trade
+
+1133
+01:25:31,974 --> 01:25:34,993
+would look like because of the level of conviction.
+
+1134
+01:25:35,496 --> 01:25:42,496
+As you can see, in a non-trend normal day, we have a very wide range and we tend to remain
+
+1135
+01:25:42,696 --> 01:25:43,596
+within that range.
+
+1136
+01:25:44,096 --> 01:25:47,441
+In a neutral day we have not necessarily
+
+1137
+01:25:47,441 --> 01:25:49,950
+small but a relatively small initial
+
+1138
+01:25:49,950 --> 01:25:53,295
+range and the market extends on both sides.
+
+1139
+01:25:54,196 --> 01:26:01,096
+In a neutral day extreme close remember we close on one of the extremes giving us an early bias for the next day.
+
+1140
+01:26:02,096 --> 01:26:04,950
+A normal variation of a normal day, again,
+
+1141
+01:26:04,950 --> 01:26:07,804
+we have a relatively small initial range, but
+
+1142
+01:26:07,804 --> 01:26:15,295
+we get the extension on one side or the other once that initiative comes from either the buyers or the sellers.
+
+1143
+01:26:16,096 --> 01:26:19,682
+And then with a trend day and a double distribution
+
+1144
+01:26:19,682 --> 01:26:26,494
+day, we tend to have average type ranges in the initial trade of the day or the initial balance.
+
+1145
+01:26:26,996 --> 01:26:34,494
+As you can see then, those are some of the examples of graphic depictions of what the day types might look like.
+
+1146
+01:26:34,796 --> 01:26:37,903
+As you can see with the bars on the left,
+
+1147
+01:26:37,903 --> 01:26:40,388
+those represent the initial trade and then how
+
+1148
+01:26:40,388 --> 01:26:43,495
+the profile might look over the period of the day.
+
+1149
+01:26:44,396 --> 01:26:48,615
+Remember, take a picture of this, photocopy this, you're going to get
+
+1150
+01:26:48,615 --> 01:26:51,427
+tested on this in not just the concept
+
+1151
+01:26:51,427 --> 01:26:55,294
+checker, but I'm going to ensure that you understand these five
+
+1152
+01:26:55,996 --> 01:27:00,896
+or six day types and can apply them across many different examples.
+
+1153
+01:27:01,096 --> 01:27:07,846
+This is one of the more important sort of sections we're going to deal with in module two,
+
+1154
+01:27:07,846 --> 01:27:11,596
+so don't rush through learning this table and memorizing it.
+
+1155
+01:27:14,048 --> 01:27:21,272
+We're now going to finish off part 5 of module 2 and just talk a little bit about the trading process with volume profiling.
+
+1156
+01:27:23,548 --> 01:27:30,380
+We've spoken about this a little bit earlier in module 1 and we spoke about how you'd go about utilizing volume profiling.
+
+1157
+01:27:31,348 --> 01:27:37,748
+Now I'm going to give you almost just an understanding of the purpose as to why we use volume profiling.
+
+1158
+01:27:38,048 --> 01:27:41,813
+So the first thing to understand is that you need to have
+
+1159
+01:27:41,813 --> 01:27:43,695
+an edge or a little bit
+
+1160
+01:27:43,695 --> 01:27:47,146
+of trading logic and a little bit of understanding or instinct.
+
+1161
+01:27:47,448 --> 01:27:52,152
+Now this instinct or you can almost call it subjective understanding, it's
+
+1162
+01:27:52,152 --> 01:27:57,248
+important to have but it's not enough in order to execute a trade.
+
+1163
+01:27:57,448 --> 01:28:02,466
+You have to then have some form of structure or objective understanding
+
+1164
+01:28:02,466 --> 01:28:06,647
+and this is where the volume profile is absolutely crucial.
+
+1165
+01:28:06,948 --> 01:28:13,348
+We use the volume profile to confirm and bolster our confidence about our understanding.
+
+1166
+01:28:13,748 --> 01:28:16,348
+So let's take for example that we
+
+1167
+01:28:17,548 --> 01:28:26,848
+have a trend day and we can see that the market's trying to move up quite aggressively, we need to,
+
+1168
+01:28:27,348 --> 01:28:31,621
+before we can just execute and hit the market and be aggressive,
+
+1169
+01:28:31,621 --> 01:28:34,469
+we need to see some form of understanding,
+
+1170
+01:28:34,469 --> 01:28:36,605
+whether it's maybe a low volume
+
+1171
+01:28:36,605 --> 01:28:38,741
+area or a very aggressive initiative
+
+1172
+01:28:38,741 --> 01:28:41,945
+being taken, or maybe the market's not respecting any
+
+1173
+01:28:42,448 --> 01:28:46,217
+pivots from the previous day, we need to see this
+
+1174
+01:28:46,217 --> 01:28:52,247
+objectivity before we can take on our trading logic or our subjective understanding of the market.
+
+1175
+01:28:53,148 --> 01:29:00,348
+Once we have that structure, time is then very crucial and we're going to talk about the element of time
+
+1176
+01:29:00,348 --> 01:29:05,748
+in some detail but the basic essence of time is that time regulates an opportunity.
+
+1177
+01:29:05,748 --> 01:29:10,948
+Now I've never really gone beyond telling you it regulates the opportunity. So what do I mean?
+
+1178
+01:29:11,348 --> 01:29:18,148
+Well for instance, let's say that we identify a day type as being a trending day type.
+
+1179
+01:29:18,148 --> 01:29:22,605
+Now note, in a trending day type we know that a market
+
+1180
+01:29:22,605 --> 01:29:25,576
+should see constant initiative all day long and
+
+1181
+01:29:25,576 --> 01:29:31,147
+we should form lots of little distributions as prices move higher and higher and higher.
+
+1182
+01:29:31,748 --> 01:29:37,448
+However, if we know by logic that we should move higher and higher over the period of the day,
+
+1183
+01:29:38,048 --> 01:29:43,248
+when we start spending too much time within one little distribution, all
+
+1184
+01:29:43,248 --> 01:29:46,714
+of a sudden time is telling us that
+
+1185
+01:29:46,714 --> 01:29:51,047
+the likelihood of a normal traditional trend day is diminishing.
+
+1186
+01:29:51,248 --> 01:29:56,448
+And that is how time regulates each one of the opportunities we take.
+
+1187
+01:29:57,048 --> 01:29:59,748
+Another very good example of where time is crucial.
+
+1188
+01:30:00,048 --> 01:30:03,837
+If we are looking for an inside day break as we've spoken
+
+1189
+01:30:03,837 --> 01:30:05,731
+about in previous examples, we know
+
+1190
+01:30:05,731 --> 01:30:08,257
+that we expect to see quite a bit
+
+1191
+01:30:08,257 --> 01:30:12,046
+of initiative and follow through once we take out the previous day.
+
+1192
+01:30:13,648 --> 01:30:20,548
+So, by that very token, if the market breaks the previous day's high and spends a long, long time
+
+1193
+01:30:20,848 --> 01:30:24,526
+distributing right above the previous day's high, this is telling
+
+1194
+01:30:24,526 --> 01:30:31,147
+us that the market or the breakout of the market is not as strong as we had expected.
+
+1195
+01:30:31,448 --> 01:30:35,848
+Again, as we can see, time regulates this opportunity.
+
+1196
+01:30:36,348 --> 01:30:41,268
+That is why time is crucial because it allows us to not
+
+1197
+01:30:41,268 --> 01:30:48,648
+just manage our positioning but it allows us almost a benchmark in which we can measure our expectations.
+
+1198
+01:30:49,748 --> 01:30:55,448
+Note, one last thing, markets tend to give various amounts of information.
+
+1199
+01:30:55,848 --> 01:30:59,368
+I have a little bit of a saying, if something is very
+
+1200
+01:30:59,368 --> 01:31:04,648
+obvious to the naked eye and everyone can see it, the probability of success is a lot lower.
+
+1201
+01:31:04,648 --> 01:31:08,648
+And that's what we are trying to say here, the
+
+1202
+01:31:08,648 --> 01:31:12,648
+more obvious or the more information that the market is
+
+1203
+01:31:12,648 --> 01:31:19,048
+showing you, the higher or the less likelihood there is of success and thus diminishing returns.
+
+1204
+01:31:19,048 --> 01:31:25,048
+In other words, if you are seeing a lot of information, if it is becoming more and more obvious, the
+
+1205
+01:31:25,048 --> 01:31:28,948
+probability or the likelihood of continuation to profit is becoming less and less.
+
+1206
+01:31:29,248 --> 01:31:31,545
+Important you understand that because what volume
+
+1207
+01:31:31,545 --> 01:31:35,155
+profiling will teach you to do is almost be slightly ahead
+
+1208
+01:31:35,155 --> 01:31:38,437
+of the curve, almost be at the front end of
+
+1209
+01:31:38,437 --> 01:31:42,047
+receiving information so that you can take advantage of the opportunity.
+
+1210
+01:31:42,948 --> 01:31:45,548
+before it starts to show too much information.
+
+1211
+01:31:46,848 --> 01:31:51,634
+So to summarise and to end off part 5, logic
+
+1212
+01:31:51,634 --> 01:31:55,356
+creates the impetus, time generates the signal
+
+1213
+01:31:55,356 --> 01:31:58,015
+and structure provides the confirmation.
+
+1214
+01:31:59,548 --> 01:32:01,048
+Good luck with your concept checkers.
+
+1215
+01:32:01,448 --> 01:32:06,448
+Make sure you spend a lot of time filling in that playbook and we'll see you again in part six.
+
+1216
+01:32:07,548 --> 01:32:09,648
+We're now at the end of part five.
+
+1217
+01:32:09,848 --> 01:32:14,648
+Let's just quickly do a summary of what we've dealt with in part five B.
+
+1218
+01:32:14,848 --> 01:32:19,292
+So the first thing we spoke about was trend versus non-trend and
+
+1219
+01:32:19,292 --> 01:32:23,736
+we went through the characteristics of what trend looks like and what
+
+1220
+01:32:23,736 --> 01:32:24,847
+non-trend looks like.
+
+1221
+01:32:24,948 --> 01:32:31,576
+Now what I want to just point out and the crux of why we talk about trend and non-trend is
+
+1222
+01:32:31,576 --> 01:32:36,547
+that the most important thing is when a market is moving sideways it's okay to
+
+1223
+01:32:37,248 --> 01:32:41,109
+employ various strategies that are you know maybe not momentum
+
+1224
+01:32:41,109 --> 01:32:44,970
+strategies maybe sort of more distribution type strategies looking for
+
+1225
+01:32:44,970 --> 01:32:48,831
+those tails at tops and bottoms you know looking for
+
+1226
+01:32:48,831 --> 01:32:51,147
+you know the the market to
+
+1227
+01:32:51,848 --> 01:32:54,761
+not leave a lot of the you know low volume
+
+1228
+01:32:54,761 --> 01:32:57,091
+areas and single prints and things we've discussed
+
+1229
+01:32:57,091 --> 01:32:58,547
+or the anomalies we've discussed
+
+1230
+01:32:59,048 --> 01:33:02,987
+previously however when we are in trending markets what we
+
+1231
+01:33:02,987 --> 01:33:06,926
+don't want to do then is expect to employ the
+
+1232
+01:33:06,926 --> 01:33:12,047
+same types of strategies that we've utilized in non-trending markets so that was
+
+1233
+01:33:12,148 --> 01:33:16,877
+the key and that's why we talk a lot about trend versus
+
+1234
+01:33:16,877 --> 01:33:21,606
+non-trend because it's that context of trend versus non-trend that will determine
+
+1235
+01:33:21,606 --> 01:33:25,547
+whether or not our strategies will be effective or not.
+
+1236
+01:33:25,748 --> 01:33:29,748
+Now we then went on and we spoke about a few of the
+
+1237
+01:33:30,948 --> 01:33:33,596
+you know the types of profile you can
+
+1238
+01:33:33,596 --> 01:33:36,244
+you know volume profile day types you can
+
+1239
+01:33:36,244 --> 01:33:38,892
+expect let's briefly go through them so our
+
+1240
+01:33:38,892 --> 01:33:41,209
+first one is the normal day type
+
+1241
+01:33:41,209 --> 01:33:45,843
+now the most important thing to understand about the normal day type is that
+
+1242
+01:33:46,348 --> 01:33:51,194
+we have a very large opening move in the market so a
+
+1243
+01:33:51,194 --> 01:33:56,847
+very large range in the initial balance period or in that initial pre cash
+
+1244
+01:33:57,448 --> 01:34:00,469
+session whether it's in the eminies or the commodities or
+
+1245
+01:34:00,469 --> 01:34:03,490
+the FX market so we get a very wide initial
+
+1246
+01:34:03,490 --> 01:34:04,094
+period the
+
+1247
+01:34:04,094 --> 01:34:06,511
+market then spends the rest of the day
+
+1248
+01:34:06,511 --> 01:34:08,626
+within that initial period just filling out
+
+1249
+01:34:08,626 --> 01:34:11,345
+the market up and down and up and down
+
+1250
+01:34:11,648 --> 01:34:15,381
+and effectively just forming a nice normal day now these
+
+1251
+01:34:15,381 --> 01:34:18,367
+are relatively rare but the nice thing about
+
+1252
+01:34:18,367 --> 01:34:22,847
+them is we get that identifier or that clue very early on
+
+1253
+01:34:23,348 --> 01:34:26,514
+in the session so that was our first day type
+
+1254
+01:34:26,514 --> 01:34:30,947
+our next day type was the neutral day type now the neutral day type
+
+1255
+01:34:31,548 --> 01:34:35,892
+effectively is very similar except we have an opening trade where the
+
+1256
+01:34:35,892 --> 01:34:38,788
+market sort of has a much smaller initial
+
+1257
+01:34:38,788 --> 01:34:42,046
+range but we then extend on both sides of
+
+1258
+01:34:42,048 --> 01:34:49,648
+that range but equally end up just distributing on both sides of the initial period.
+
+1259
+01:34:49,648 --> 01:34:53,148
+Now the important thing to understand with this day type is the close.
+
+1260
+01:34:54,148 --> 01:34:57,614
+Do we have a normal close in value or do
+
+1261
+01:34:57,614 --> 01:35:00,387
+we have an extreme close to which we
+
+1262
+01:35:00,387 --> 01:35:04,547
+need to pay attention for an early identifier for the next day?
+
+1263
+01:35:04,848 --> 01:35:10,048
+Now our third example we spoke about was the normal variance.
+
+1264
+01:35:10,348 --> 01:35:18,147
+Now, a normal variance, as the word variance suggests, is where we have a little bit of non-symmetry in the market.
+
+1265
+01:35:18,248 --> 01:35:20,548
+So the P-shape and the B-shape.
+
+1266
+01:35:20,948 --> 01:35:24,148
+Where the P-shape is effectively, we get initiative
+
+1267
+01:35:24,148 --> 01:35:27,348
+early on in the morning, the market rejects,
+
+1268
+01:35:27,348 --> 01:35:30,148
+and we then start accepting prices higher.
+
+1269
+01:35:30,448 --> 01:35:33,986
+Equally, the B-shape, which is the long liquidation,
+
+1270
+01:35:33,986 --> 01:35:37,524
+buyers initiate, they run into very strong selling,
+
+1271
+01:35:37,524 --> 01:35:41,947
+and they force lower, and the market then distributes lower.
+
+1272
+01:35:42,248 --> 01:35:44,448
+So that was our normal variance day type.
+
+1273
+01:35:44,748 --> 01:35:49,448
+Those three day types were our non-trending day types.
+
+1274
+01:35:49,548 --> 01:35:57,648
+We then had our two trending day types, which firstly was the double distribution, and then the traditional trend.
+
+1275
+01:35:58,048 --> 01:36:00,248
+Now the double distribution, very simple.
+
+1276
+01:36:00,448 --> 01:36:08,048
+We have two distributions with the trend being a trending market with loads of different types of distributions.
+
+1277
+01:36:08,248 --> 01:36:12,048
+Again, these were very aggressive, strong type initials.
+
+1278
+01:36:13,548 --> 01:36:21,748
+profile trading types and they have various strategies which we will begin to develop later on in module 2 and 3.
+
+1279
+01:36:22,148 --> 01:36:25,765
+So we then moved on and we had a very
+
+1280
+01:36:25,765 --> 01:36:29,382
+nice table, a very important table where we identified what
+
+1281
+01:36:29,382 --> 01:36:34,446
+these five day types are, what they look like, what the key characteristics are.
+
+1282
+01:36:34,848 --> 01:36:35,548
+Remember,
+
+1283
+01:36:36,148 --> 01:36:40,877
+If you can identify a day type very early on, you can
+
+1284
+01:36:40,877 --> 01:36:44,029
+employ the right kind of strategy and take
+
+1285
+01:36:44,029 --> 01:36:49,546
+advantage of that before other people start to receive information of what is occurring.
+
+1286
+01:36:49,848 --> 01:36:56,448
+Don't forget, the more information is in the market, the more likely prices are going to be priced correctly.
+
+1287
+01:36:57,448 --> 01:37:05,247
+We then moved on and we finished with the confidence table or the level of bias and confidence in the market.
+
+1288
+01:37:05,448 --> 01:37:12,548
+And we said we move from our least confident day type all the way to our most confident day type.
+
+1289
+01:37:13,648 --> 01:37:22,148
+We then finished part five and we spoke about how the trading process would occur.
+
+1290
+01:37:22,348 --> 01:37:29,148
+And it's very simple. We always start off with that intuitive slash edge feeling slash idea.
+
+1291
+01:37:29,248 --> 01:37:32,454
+In other words, we have an idea in mind, we
+
+1292
+01:37:32,454 --> 01:37:38,546
+see something, it makes sense to us, and that gives us the initial sort of we want to respond.
+
+1293
+01:37:38,748 --> 01:37:40,948
+But that's not enough to respond, guys.
+
+1294
+01:37:41,048 --> 01:37:45,248
+You have to... have to have to have something objective.
+
+1295
+01:37:45,348 --> 01:37:50,248
+And we spoke a lot about objectivity versus subjectivity in Module 1.
+
+1296
+01:37:50,448 --> 01:37:55,648
+Now, that objectiveness will come from the volume profile.
+
+1297
+01:37:55,848 --> 01:38:01,208
+And that volume profile can be any number of factors, but it's
+
+1298
+01:38:01,208 --> 01:38:04,781
+important we have that objective identifier to give
+
+1299
+01:38:04,781 --> 01:38:09,247
+us the action on the idea or the edge or
+
+1300
+01:38:09,848 --> 01:38:11,348
+intuition that we may have.
+
+1301
+01:38:11,648 --> 01:38:15,048
+And then last but not least, time will
+
+1302
+01:38:15,048 --> 01:38:18,448
+regulate this opportunity and tell us, it gives
+
+1303
+01:38:18,448 --> 01:38:23,548
+us very important information as to how the opportunity is playing out.
+
+1304
+01:38:24,248 --> 01:38:26,548
+That is the end of part five.
+
+1305
+01:38:26,548 --> 01:38:29,414
+I hope you've enjoyed some of these principles
+
+1306
+01:38:29,414 --> 01:38:32,997
+and I hope you've enjoyed more importantly that we've started
+
+1307
+01:38:32,997 --> 01:38:39,447
+to develop a few basic strategies and pattern plays on what you're learning throughout the module so far.
+
+1308
+01:38:39,848 --> 01:38:42,648
+Good luck and we'll catch you again in part six.
+
+1309
+01:38:45,088 --> 01:38:51,588
+It's that time again that we ensure that you've understood the principles we've been through throughout part 5.
+
+1310
+01:38:52,588 --> 01:38:57,988
+So firstly, define and interpret initiative versus responsive price behavior.
+
+1311
+01:38:58,488 --> 01:38:59,488
+Take your time here.
+
+1312
+01:38:59,788 --> 01:39:08,488
+Remember those examples I showed you when talking about initiative, aggressive versus sort of more passive responsive type price behavior.
+
+1313
+01:39:09,188 --> 01:39:14,388
+Then, what does symmetry and non-symmetry represent in terms of risk-reward?
+
+1314
+01:39:16,188 --> 01:39:20,588
+List the various day types for both trend and non-trend days.
+
+1315
+01:39:21,088 --> 01:39:22,088
+Take your time here.
+
+1316
+01:39:22,588 --> 01:39:30,584
+Spend a lot of time not just listing them, but understanding the various characteristics and shapes of each one of those day types.
+
+1317
+01:39:31,188 --> 01:39:38,488
+And lastly, what is the initial balance? And at which time does this occur in the markets you trade?
+
+1318
+01:39:38,988 --> 01:39:39,488
+Good luck.
+
+1319
+01:39:41,588 --> 01:39:47,388
+It's time for another playbook entry, so let's look what's expected of you in part 5's playbook.
+
+1320
+01:39:48,188 --> 01:39:57,488
+Firstly, in your playbook, in the charts provided, differentiate in the blocks provided if it's initiative or responsive price response.
+
+1321
+01:39:58,288 --> 01:40:02,088
+Then, what time is the initial balance in the following markets?
+
+1322
+01:40:02,688 --> 01:40:11,088
+The German Tenure Bund, the Eurodollar FX, the E-mini S&P 500 index and the WTI oil.
+
+1323
+01:40:11,388 --> 01:40:16,088
+Remember, the initial balance is the pre-cash cash session.
+
+1324
+01:40:17,488 --> 01:40:20,588
+3. Draw the following in the spaces provided.
+
+1325
+01:40:21,388 --> 01:40:23,288
+A balanced normal distribution.
+
+1326
+01:40:23,988 --> 01:40:30,888
+A skewed P distribution, a skewed B distribution and a trending distribution.
+
+1327
+01:40:32,288 --> 01:40:37,288
+Question 4. Complete the summary table of characteristics for the various day types.
+
+1328
+01:40:37,688 --> 01:40:39,788
+Again, take your time here.
+
+1329
+01:40:40,288 --> 01:40:49,888
+Understand each one of the characteristics and the principles about what makes each one of these day types significant.
+
+1330
+01:40:51,288 --> 01:40:55,788
+5. Fill in the blanks for the levels of conviction chart provided.
+
+1331
+01:40:56,488 --> 01:40:58,688
+Make sure you take some time on this playbook entry.
+
+1332
+01:40:58,988 --> 01:40:59,988
+Don't rush through it.
+
+1333
+01:41:00,188 --> 01:41:07,388
+And remember, this playbook will stand you in good stead when you move on throughout the rest of Module 2 and 3.
+
+===== END AFTER_SEGMENT =====

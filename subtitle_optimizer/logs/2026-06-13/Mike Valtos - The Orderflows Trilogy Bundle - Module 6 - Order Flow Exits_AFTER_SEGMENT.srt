@@ -1,0 +1,2806 @@
+===== AFTER_SEGMENT (701 entries) =====
+1
+00:00:00,240 --> 00:00:04,560
+Hey everybody, it's Mike from Order Flows and welcome back to the Order Flow Blueprint.
+
+2
+00:00:04,720 --> 00:00:07,440
+This is Module 6 on Order Flow Exits.
+
+3
+00:00:08,760 --> 00:00:12,033
+Now, before I get into talking about exiting
+
+4
+00:00:12,033 --> 00:00:14,897
+trades and all that, just spend a
+
+5
+00:00:14,897 --> 00:00:18,579
+little time on how not to trade, avoid mistakes.
+
+6
+00:00:19,260 --> 00:00:23,600
+And avoiding mistakes is the beginning and the end of successful trading.
+
+7
+00:00:24,680 --> 00:00:27,854
+What I mean by beginning and end is if you
+
+8
+00:00:27,854 --> 00:00:30,076
+make no mistakes, your chances of success
+
+9
+00:00:30,076 --> 00:00:32,298
+are much higher, but it's very difficult.
+
+10
+00:00:32,460 --> 00:00:35,240
+I mean, how many losing trades have been made because of mistakes?
+
+11
+00:00:35,600 --> 00:00:38,180
+And, you know, a trader is not a machine.
+
+12
+00:00:38,520 --> 00:00:40,244
+And in the heat of trading and
+
+13
+00:00:40,244 --> 00:00:41,968
+under the pressure of a fast-moving market,
+
+14
+00:00:41,968 --> 00:00:43,938
+even the best traders may make a mistake.
+
+15
+00:00:44,060 --> 00:00:45,240
+Try to limit your mistakes.
+
+16
+00:00:45,420 --> 00:00:48,640
+You know, sometimes you buy when you should sell.
+
+17
+00:00:48,980 --> 00:00:52,980
+You know, I don't want to call it a rookie mistake, but it happens to the best of us.
+
+18
+00:00:52,980 --> 00:00:57,440
+You know, we click the wrong thing or you forget to enter, you know, your ATM.
+
+19
+00:00:58,540 --> 00:01:01,140
+You know, those little mistakes, sometimes they add up.
+
+20
+00:01:01,280 --> 00:01:03,740
+And the best thing you can do is minimize them, right?
+
+21
+00:01:03,780 --> 00:01:05,376
+If you buy versus sell, don't
+
+22
+00:01:05,376 --> 00:01:07,238
+all of a sudden take on the
+
+23
+00:01:07,238 --> 00:01:09,898
+position, you know, you were bullish and you accidentally sold.
+
+24
+00:01:10,280 --> 00:01:11,700
+Don't sit there and try to micromanage.
+
+25
+00:01:11,800 --> 00:01:13,660
+Okay, well, you know what? I don't know, maybe the market's coming down.
+
+26
+00:01:13,720 --> 00:01:14,977
+Just get out of the trade
+
+27
+00:01:14,977 --> 00:01:16,234
+and take a step back, catch
+
+28
+00:01:16,234 --> 00:01:18,539
+your breath, and then just look for the next trade setup.
+
+29
+00:01:18,720 --> 00:01:20,040
+So try to avoid those mistakes.
+
+30
+00:01:20,780 --> 00:01:25,600
+And, you know, when I was putting together this module, you know, it's called order flow exits.
+
+31
+00:01:25,940 --> 00:01:27,780
+It's not called order flow stop placements.
+
+32
+00:01:27,860 --> 00:01:29,636
+I'm not going to say, well,
+
+33
+00:01:29,636 --> 00:01:31,708
+you know, you get into this trade
+
+34
+00:01:31,708 --> 00:01:34,964
+at 67, you know, you should have used exactly a five-point stop.
+
+35
+00:01:35,360 --> 00:01:39,660
+No, you know, when you're trading with the order flow, it's about reading what the market is doing.
+
+36
+00:01:39,660 --> 00:01:44,760
+So with that in mind, do not rush to decisions about what the market may do.
+
+37
+00:01:44,880 --> 00:01:50,900
+Get a clear view on what you want to do, okay? And be clear in your mind.
+
+38
+00:01:52,040 --> 00:01:54,440
+Then you can make a good decision, okay?
+
+39
+00:01:54,920 --> 00:01:59,640
+So when a market moves in your favor, you should just continuously monitor the order flow volume
+
+40
+00:01:59,640 --> 00:02:03,820
+to see if the move is in jeopardy of stopping and reversing, okay?
+
+41
+00:02:04,020 --> 00:02:06,700
+So here's a nice move down, right?
+
+42
+00:02:06,700 --> 00:02:10,039
+You got bearish momentum, you know, all the way down.
+
+43
+00:02:11,080 --> 00:02:12,960
+Then you get a green candle, right?
+
+44
+00:02:13,000 --> 00:02:17,060
+You got some positive delta coming in here, you know, 200, 176.
+
+45
+00:02:17,120 --> 00:02:21,360
+People say, oh, I got to get out because the market's going to reverse here. Well, why?
+
+46
+00:02:21,620 --> 00:02:25,540
+Do you have any bullish momentum coming in here? No, you don't, right?
+
+47
+00:02:25,620 --> 00:02:30,780
+And in the end, you see, you know, this is a squeeze taking place right here, right?
+
+48
+00:02:30,800 --> 00:02:34,100
+You're seeing the momentum coming in. You're seeing the point of control on the bottom.
+
+49
+00:02:34,100 --> 00:02:38,000
+I mean, you could take it for more, right, as the market keeps going down.
+
+50
+00:02:38,500 --> 00:02:39,377
+You know, sometimes
+
+51
+00:02:39,377 --> 00:02:42,009
+people get a little bit into profit on a
+
+52
+00:02:42,009 --> 00:02:45,519
+trade. Then the first thing they want to do is take profits.
+
+53
+00:02:45,780 --> 00:02:48,640
+Well, you're limiting yourself in that respect, right?
+
+54
+00:02:48,700 --> 00:02:53,280
+Read what's happening, you know, in the order flow. Watch what's happening in the deltas.
+
+55
+00:02:53,400 --> 00:02:58,980
+Watch what's happening with points of control, right? Which way are imbalances setting up, okay?
+
+56
+00:02:58,980 --> 00:03:00,375
+So just because you got,
+
+57
+00:03:00,375 --> 00:03:01,770
+you know, a positive delta,
+
+58
+00:03:01,770 --> 00:03:03,724
+you know, two bars with positive delta
+
+59
+00:03:03,724 --> 00:03:05,678
+doesn't mean it's time to get out.
+
+60
+00:03:06,100 --> 00:03:06,920
+Monitor it.
+
+61
+00:03:07,220 --> 00:03:07,868
+You know, maybe
+
+62
+00:03:07,868 --> 00:03:09,165
+pay a little bit more closer
+
+63
+00:03:09,165 --> 00:03:10,029
+attention to it rather
+
+64
+00:03:10,029 --> 00:03:11,758
+than get out at the first sign, right?
+
+65
+00:03:11,800 --> 00:03:12,692
+Because then the next thing
+
+66
+00:03:12,692 --> 00:03:13,941
+you're going to do if you get
+
+67
+00:03:13,941 --> 00:03:15,011
+out here is you're going to
+
+68
+00:03:15,011 --> 00:03:16,438
+kick yourself when the market keeps going down.
+
+69
+00:03:17,860 --> 00:03:21,880
+Remember, trading should be an enjoyable experience, not frustrating.
+
+70
+00:03:22,320 --> 00:03:23,480
+Don't focus on the money.
+
+71
+00:03:23,720 --> 00:03:24,740
+Focus on the order flow.
+
+72
+00:03:24,740 --> 00:03:25,587
+So losing is
+
+73
+00:03:25,587 --> 00:03:26,717
+part of trading, unfortunately,
+
+74
+00:03:26,717 --> 00:03:28,130
+you know, I wish I
+
+75
+00:03:28,130 --> 00:03:29,543
+could say it doesn't, you
+
+76
+00:03:29,543 --> 00:03:31,238
+know, but everybody has losses, right?
+
+77
+00:03:31,320 --> 00:03:32,897
+And it kills me
+
+78
+00:03:32,897 --> 00:03:34,868
+sometimes is, you know, people
+
+79
+00:03:34,868 --> 00:03:37,233
+say, well, you know, give me
+
+80
+00:03:37,233 --> 00:03:39,204
+a trade setup that's got
+
+81
+00:03:39,204 --> 00:03:40,781
+an 80% winning percentage and,
+
+82
+00:03:40,781 --> 00:03:44,723
+you know, risk to reward of three to one. Okay.
+
+83
+00:03:45,160 --> 00:03:45,840
+Well, honestly, if
+
+84
+00:03:45,840 --> 00:03:47,201
+you're at 80% winning percentage, you don't
+
+85
+00:03:47,201 --> 00:03:48,335
+need a three to one
+
+86
+00:03:48,335 --> 00:03:50,831
+risk to reward. You know, one to one would be fine.
+
+87
+00:03:51,440 --> 00:03:54,120
+Okay. They don't really grasp that concept.
+
+88
+00:03:55,480 --> 00:03:58,180
+And as a result, trading is not fun, right?
+
+89
+00:03:58,680 --> 00:03:59,880
+Go with the flow.
+
+90
+00:04:00,300 --> 00:04:01,660
+Go with the order flow.
+
+91
+00:04:02,000 --> 00:04:03,600
+Okay. Market is moving down.
+
+92
+00:04:03,680 --> 00:04:05,660
+You got a nice taper here, right?
+
+93
+00:04:05,700 --> 00:04:06,540
+Then it goes sideways.
+
+94
+00:04:06,860 --> 00:04:08,720
+Is there anything bullish coming in here?
+
+95
+00:04:08,820 --> 00:04:09,700
+Not really.
+
+96
+00:04:10,440 --> 00:04:12,900
+You know, it's got one positive delta. Okay.
+
+97
+00:04:12,960 --> 00:04:14,140
+Points of controls. Yeah.
+
+98
+00:04:14,220 --> 00:04:18,700
+I mean, you could say they're going up a little bit, but mostly same price level here.
+
+99
+00:04:18,700 --> 00:04:21,240
+If you average these three out, you know, you got two here.
+
+100
+00:04:21,779 --> 00:04:25,240
+Do you have any bullish momentum coming in? No, you don't.
+
+101
+00:04:26,060 --> 00:04:28,920
+Okay. So what's the sign that you should get out?
+
+102
+00:04:29,420 --> 00:04:32,060
+Instead, you should stay short, right?
+
+103
+00:04:32,120 --> 00:04:39,100
+Then more bearish momentum comes in on the way down, right? The negative deltas, the imbalances.
+
+104
+00:04:39,680 --> 00:04:42,620
+Okay. And here you got another squeeze coming in down here.
+
+105
+00:04:43,320 --> 00:04:46,140
+Okay. So, you know, you start putting that together.
+
+106
+00:04:46,260 --> 00:04:50,820
+It's going to help you ride the trade out longer because you're going with the flow.
+
+107
+00:04:51,740 --> 00:04:54,480
+There's no need to exit as soon as possible.
+
+108
+00:04:55,700 --> 00:04:59,180
+Go with the flow, right? Go with the flow, right?
+
+109
+00:04:59,400 --> 00:05:03,320
+The market is trending, right? Go with the flow is to say the trend is your friend.
+
+110
+00:05:03,440 --> 00:05:07,640
+Basically, you want to ride it for as long as you possibly can.
+
+111
+00:05:07,640 --> 00:05:12,580
+Remember, you should be aiming to maximize the chance of allowing yourself to win.
+
+112
+00:05:13,020 --> 00:05:17,360
+Don't trade more than is necessary to win the same amount, i.e. averaging down.
+
+113
+00:05:17,540 --> 00:05:18,546
+You know, I
+
+114
+00:05:18,546 --> 00:05:20,223
+see a lot of people,
+
+115
+00:05:20,223 --> 00:05:21,564
+you know, that trade
+
+116
+00:05:21,564 --> 00:05:24,918
+Bitcoin. You know, they love to DCA, dollar cost average.
+
+117
+00:05:25,760 --> 00:05:31,600
+Okay. Well, that's good on a market that perpetually goes up, but not all markets perpetually go up.
+
+118
+00:05:32,380 --> 00:05:34,900
+Just follow the flow, right?
+
+119
+00:05:35,040 --> 00:05:35,890
+If you think, you
+
+120
+00:05:35,890 --> 00:05:37,166
+know, this market is going sideways,
+
+121
+00:05:37,166 --> 00:05:38,442
+I'm going to buy some here.
+
+122
+00:05:38,442 --> 00:05:41,419
+I'm thinking the market is going up, then I'm going to buy some more.
+
+123
+00:05:41,580 --> 00:05:43,533
+What's going to happen is you're going
+
+124
+00:05:43,533 --> 00:05:44,928
+to get that flush right
+
+125
+00:05:44,928 --> 00:05:47,718
+here, and the market is going to continue down, right?
+
+126
+00:05:47,800 --> 00:05:49,354
+I mean, you don't want to be
+
+127
+00:05:49,354 --> 00:05:50,908
+long here, recognize you're wrong, but say,
+
+128
+00:05:50,908 --> 00:05:52,685
+no, I'm going to DCA. I'm going to
+
+129
+00:05:52,685 --> 00:05:58,238
+dollar cost average. I'm going to get long some more down here so that when it goes up, I got a better average entry price.
+
+130
+00:05:58,240 --> 00:06:00,250
+Well, you do that, and the market
+
+131
+00:06:00,250 --> 00:06:02,260
+doesn't go up, instead it keeps going
+
+132
+00:06:02,260 --> 00:06:05,419
+down, you're going to be caught with your pants down here.
+
+133
+00:06:08,380 --> 00:06:10,806
+Remember, hope and desperation are the holes
+
+134
+00:06:10,806 --> 00:06:13,232
+traders descend into right before blowing up
+
+135
+00:06:13,232 --> 00:06:16,698
+the account. I hope this trade works, or I'm desperate.
+
+136
+00:06:17,160 --> 00:06:19,896
+What you often do is you cancel your
+
+137
+00:06:19,896 --> 00:06:22,632
+protective stop, and all of a sudden the
+
+138
+00:06:22,632 --> 00:06:27,420
+account balance is left undefended at a time when it's the most vulnerable, right?
+
+139
+00:06:27,420 --> 00:06:30,300
+If you got short here, but no stop,
+
+140
+00:06:30,300 --> 00:06:33,180
+you're going to have a bigger loss than
+
+141
+00:06:33,180 --> 00:06:37,500
+necessary if you don't recognize that the bullish momentum is coming in.
+
+142
+00:06:38,320 --> 00:06:40,186
+If you're saying, well, yeah, I
+
+143
+00:06:40,186 --> 00:06:42,052
+see bearish momentum coming in here
+
+144
+00:06:42,052 --> 00:06:44,541
+or even here, I'm short. Okay, well, you
+
+145
+00:06:44,541 --> 00:06:47,030
+still have a stop, but if you're like,
+
+146
+00:06:47,030 --> 00:06:57,297
+you just had a bunch of losers, I want to take out my stop. I'm going to let this one go, YOLO. Well, see you later, right, as the market goes against you.
+
+147
+00:06:58,000 --> 00:06:59,480
+Always have a stop in the market.
+
+148
+00:07:01,470 --> 00:07:03,753
+When you get out of a trade because you follow
+
+149
+00:07:03,753 --> 00:07:05,351
+your rules and then it continues to
+
+150
+00:07:05,351 --> 00:07:06,949
+keep moving, yes, you feel some regret.
+
+151
+00:07:07,530 --> 00:07:09,878
+But at the end of the day, you have to
+
+152
+00:07:09,878 --> 00:07:11,756
+stick to your rules to keep those losses
+
+153
+00:07:11,756 --> 00:07:15,748
+small, or else one day the losses will not be small and you're going to blow up.
+
+154
+00:07:16,090 --> 00:07:20,350
+So whether the last trade was good or bad, you have to just move on to your next trade.
+
+155
+00:07:20,350 --> 00:07:22,860
+A common mistake, like I just mentioned,
+
+156
+00:07:22,860 --> 00:07:25,370
+many traders make is getting caught up
+
+157
+00:07:25,370 --> 00:07:31,468
+with and having an unrealistic R to R, right? Risk to reward and an unrealistic win rate.
+
+158
+00:07:31,890 --> 00:07:33,223
+You know, they want an 80%
+
+159
+00:07:33,223 --> 00:07:34,823
+win rate and, you know, a
+
+160
+00:07:34,823 --> 00:07:37,489
+risk reward like 5 to 1, right? That's just not understanding risk.
+
+161
+00:07:39,310 --> 00:07:45,710
+Say you have a 1 to 3 risk to reward, you'd only need a 30% win rate to be successful, right?
+
+162
+00:07:45,710 --> 00:07:53,690
+You can do the math. 3 times 3 equals 9. 7 times 1 equals 7. It's going to give you a net profit of 2, okay?
+
+163
+00:07:53,750 --> 00:07:55,246
+But again, if you have 80%
+
+164
+00:07:55,246 --> 00:07:56,742
+win rate, you don't need 5
+
+165
+00:07:56,742 --> 00:07:57,939
+to 1. You don't need 3
+
+166
+00:07:57,939 --> 00:08:00,932
+to 1. You just need 1 to 1, maybe even below that even.
+
+167
+00:08:04,970 --> 00:08:09,130
+Now, profit level exits are determined by the goal of the trader, right?
+
+168
+00:08:09,170 --> 00:08:12,390
+The risk level of the trader and the time frame being used, right?
+
+169
+00:08:12,390 --> 00:08:14,685
+If you're using a 1-minute chart, your time frame is
+
+170
+00:08:14,685 --> 00:08:16,062
+going to be much different than
+
+171
+00:08:16,062 --> 00:08:17,209
+you're using a 30-minute chart.
+
+172
+00:08:17,810 --> 00:08:21,930
+Stops and targets on a 5-minute chart are going to be different than an hourly chart, right?
+
+173
+00:08:21,990 --> 00:08:22,953
+As intermediate swings are
+
+174
+00:08:22,953 --> 00:08:24,879
+going to differ. There may be a swing
+
+175
+00:08:24,879 --> 00:08:27,528
+on a 5-minute chart that is contained in an hourly chart.
+
+176
+00:08:27,530 --> 00:08:31,310
+Again, if you're trading a 1-minute chart, all your
+
+177
+00:08:31,310 --> 00:08:34,250
+activity can be done and dusted before
+
+178
+00:08:34,250 --> 00:08:36,350
+the 30-minute chart even completes.
+
+179
+00:08:36,350 --> 00:08:42,309
+So, on exits, the best place to get off the momentum move is when it reaches a stopping point.
+
+180
+00:08:42,809 --> 00:08:44,830
+Momentum is the acceleration of price movement.
+
+181
+00:08:45,370 --> 00:08:52,170
+Deceleration is when price slows down. So, you want to be looking at areas where price is slowing down, right?
+
+182
+00:08:52,170 --> 00:08:54,930
+You got your momentum up here. My market's moving down.
+
+183
+00:08:55,470 --> 00:08:59,390
+What's stopping this momentum is volume, right?
+
+184
+00:08:59,390 --> 00:09:06,030
+You're seeing the points of control is being lined up right in here. 1, 2, 3, 4, right?
+
+185
+00:09:06,150 --> 00:09:06,815
+People say, what
+
+186
+00:09:06,815 --> 00:09:07,923
+about here? Okay, well, you
+
+187
+00:09:07,923 --> 00:09:09,253
+just got short in here. I
+
+188
+00:09:09,253 --> 00:09:11,469
+don't know if you want to take profits so soon.
+
+189
+00:09:12,630 --> 00:09:17,190
+You know, you got to give the trade a little time to develop, right?
+
+190
+00:09:17,810 --> 00:09:19,370
+This is where you're going to get out in here.
+
+191
+00:09:19,510 --> 00:09:27,040
+Then you could recognize that this bullish momentum is coming in and ride it back up, okay?
+
+192
+00:09:27,220 --> 00:09:30,660
+Here, the bearish momentum in here, where does it stop?
+
+193
+00:09:30,660 --> 00:09:35,620
+It stops down here, where you have the volume. Then it picks up, coming up in here.
+
+194
+00:09:36,360 --> 00:09:40,500
+Where does it stop? It stops up here, where you have the volume sticking out up here, right?
+
+195
+00:09:40,560 --> 00:09:47,840
+The 517, the 495, the 372, the 457. Then it drops back down, okay?
+
+196
+00:09:48,600 --> 00:09:54,880
+Momentum here. Where does momentum stop on this move up?
+
+197
+00:09:54,960 --> 00:09:59,300
+Well, it stops right here, where it's rotating. It's putting in this volume pocket up in here.
+
+198
+00:09:59,660 --> 00:10:06,520
+Again, it doesn't necessarily have to be one price. It could be several prices here, here, here, okay?
+
+199
+00:10:06,620 --> 00:10:12,940
+And what's more important is they're coming in slightly lower, slightly lower, okay?
+
+200
+00:10:12,980 --> 00:10:17,620
+And your momentum is appearing here, right? It's appearing here. Bullish momentum.
+
+201
+00:10:17,800 --> 00:10:23,580
+But it stops up here. Then you start seeing bearish momentum come in here on the way back down.
+
+202
+00:10:26,400 --> 00:10:30,220
+So exiting into expansion is a way to exit when the market is going in your favor.
+
+203
+00:10:31,360 --> 00:10:36,740
+Expansion bars are generally twice the size as regular bars that just printed, okay?
+
+204
+00:10:36,880 --> 00:10:40,320
+Remember, expansion, right? Markets expanding and looking for liquidity.
+
+205
+00:10:40,320 --> 00:10:46,740
+Expansion bars generally have more volume than recent bars.
+
+206
+00:10:47,220 --> 00:10:50,320
+You can exit as soon as the bar closes or in the next bar.
+
+207
+00:10:50,420 --> 00:10:52,646
+Because remember, if the market has
+
+208
+00:10:52,646 --> 00:10:54,872
+a big move very quick, it's
+
+209
+00:10:54,872 --> 00:10:57,840
+going to take time to adjust, right? It's
+
+210
+00:10:57,840 --> 00:11:07,117
+going to take time for other traders to come into the market to either keep the move going or to potentially reverse the move, okay?
+
+211
+00:11:07,360 --> 00:11:08,700
+There's your expansion bar here.
+
+212
+00:11:09,000 --> 00:11:14,980
+Potential expansion bar here. And it's just going sideways. That's a sign for you to exit, right?
+
+213
+00:11:15,040 --> 00:11:17,956
+If you get that big bar movement here
+
+214
+00:11:17,956 --> 00:11:19,414
+and here between these
+
+215
+00:11:19,414 --> 00:11:23,059
+two bars, the interest starts going sideways. Get out, right?
+
+216
+00:11:23,100 --> 00:11:29,180
+The market doesn't have direction anymore, right?
+
+217
+00:11:29,340 --> 00:11:30,180
+Exit into expansion.
+
+218
+00:11:30,400 --> 00:11:31,100
+Expansion here.
+
+219
+00:11:31,360 --> 00:11:34,540
+Expansion here. Even to a smaller extent here.
+
+220
+00:11:34,580 --> 00:11:37,400
+Because a lot of these bars, three price levels, four price levels.
+
+221
+00:11:38,380 --> 00:11:45,440
+This one's, what, seven. This one's four or five. This one's four. This one's five.
+
+222
+00:11:45,440 --> 00:11:49,840
+And you're getting bars 12, you know, 10, 11, 12 price levels.
+
+223
+00:11:50,040 --> 00:11:51,560
+That's your sign to potentially get out.
+
+224
+00:11:51,600 --> 00:11:54,587
+Because most of these price levels, understanding the
+
+225
+00:11:54,587 --> 00:11:57,201
+market and how it should move on
+
+226
+00:11:57,201 --> 00:12:03,549
+a one-minute chart, is going to be paramount to understanding whether you have expansion or not, okay?
+
+227
+00:12:03,590 --> 00:12:07,390
+So when the market starts elongating, that's a potential sign to get out.
+
+228
+00:12:09,170 --> 00:12:10,510
+Here's your expansion bar.
+
+229
+00:12:10,930 --> 00:12:12,030
+Okay, maybe I should get out here.
+
+230
+00:12:14,880 --> 00:12:18,700
+Some people love to trade the expansion bar, thinking the market's going to continue in that direction.
+
+231
+00:12:19,300 --> 00:12:22,980
+But if you're already long, that's your sign to potentially be getting out.
+
+232
+00:12:23,040 --> 00:12:24,840
+Remember, you're already in the position.
+
+233
+00:12:26,320 --> 00:12:27,860
+The expansion bar is your gift.
+
+234
+00:12:27,860 --> 00:12:33,980
+So if you get that expansion bar, you know, take it as a cue. Thank you, God. And get out.
+
+235
+00:12:34,920 --> 00:12:36,620
+All right. Your expansion bar.
+
+236
+00:12:36,840 --> 00:12:38,260
+Where is it? It's right here.
+
+237
+00:12:40,360 --> 00:12:42,740
+Okay. Again, you're already in the position.
+
+238
+00:12:43,180 --> 00:12:47,760
+You're not looking at the expansion bar for momentum. You should already be in the trade.
+
+239
+00:12:48,360 --> 00:12:52,820
+Then when you see an expansion bar, that's your sign. Maybe I should get out.
+
+240
+00:12:53,500 --> 00:12:55,300
+All right. Exit into expansion.
+
+241
+00:12:55,300 --> 00:13:02,000
+Evolving into a professional trader mindset will depend on how you view your trading results.
+
+242
+00:13:02,360 --> 00:13:04,980
+You know, how do you change? How do you change your mindset?
+
+243
+00:13:05,140 --> 00:13:07,627
+Well, manage your expectations, your results
+
+244
+00:13:07,627 --> 00:13:10,114
+of trading by moving beyond a
+
+245
+00:13:10,114 --> 00:13:13,015
+simple trade-by-trade approach in favor of
+
+246
+00:13:13,015 --> 00:13:14,673
+a series of trades.
+
+247
+00:13:14,260 --> 00:13:15,415
+And, you know,
+
+248
+00:13:15,415 --> 00:13:17,341
+this is more on risk
+
+249
+00:13:17,341 --> 00:13:19,652
+management. And it comes down to,
+
+250
+00:13:19,652 --> 00:13:23,118
+you know, how you look at your results. Okay.
+
+251
+00:13:23,420 --> 00:13:27,720
+So trade-by-trade or a series of trades. Okay.
+
+252
+00:13:28,780 --> 00:13:30,651
+Don't look at it on a
+
+253
+00:13:30,651 --> 00:13:32,833
+trade-by-trade perspective because if you do
+
+254
+00:13:32,833 --> 00:13:34,704
+that, your losing streaks are going
+
+255
+00:13:34,704 --> 00:13:37,510
+to cause you to go into a negative mindset.
+
+256
+00:13:37,200 --> 00:13:40,520
+And you don't want to go into a negative mindset because it's going to drive you nuts.
+
+257
+00:13:40,520 --> 00:13:45,400
+It's because you're going to think, you know, question everything you're doing in trading.
+
+258
+00:13:45,660 --> 00:13:49,800
+Don't take every trade when there is a signal and giving them an edge, right?
+
+259
+00:13:49,900 --> 00:13:50,896
+Thinking, oh, you know,
+
+260
+00:13:50,896 --> 00:13:52,390
+I just had two losers. And
+
+261
+00:13:52,390 --> 00:13:53,884
+then you're not going to take
+
+262
+00:13:53,884 --> 00:13:58,118
+the next signal thinking that you're going to get an edge because you're on a losing streak.
+
+263
+00:13:58,260 --> 00:14:02,860
+Well, no. Basically, what you're doing is you're overriding your method.
+
+264
+00:14:03,560 --> 00:14:04,830
+So if you're looking at
+
+265
+00:14:04,830 --> 00:14:06,608
+a trade-by-trade perspective, you go, oh,
+
+266
+00:14:06,608 --> 00:14:08,132
+okay, I just had three losses.
+
+267
+00:14:08,132 --> 00:14:13,213
+Oh, I got a signal. Well, I'm going to pass. That's the trade that's going to be the winner, unfortunately.
+
+268
+00:14:14,680 --> 00:14:19,780
+And when you're on a trade-by-trade perspective, anything you do for any reason could result in a winning trade.
+
+269
+00:14:20,200 --> 00:14:22,850
+And the problem is many of the
+
+270
+00:14:22,850 --> 00:14:25,500
+things you could do that result in
+
+271
+00:14:25,500 --> 00:14:27,771
+a winning trade could also reinforce
+
+272
+00:14:27,771 --> 00:14:31,178
+trading behaviors, which would be catastrophic for your trading.
+
+273
+00:14:31,180 --> 00:14:33,185
+And what I mean by
+
+274
+00:14:33,185 --> 00:14:35,992
+that is, you know, sometimes your results,
+
+275
+00:14:35,992 --> 00:14:38,799
+I don't want to say results are
+
+276
+00:14:38,799 --> 00:14:46,819
+random, okay? But you get into a trade, what happens after you get in is out of your control, okay?
+
+277
+00:14:46,820 --> 00:14:48,797
+And sometimes, you know,
+
+278
+00:14:48,797 --> 00:14:51,762
+people get into trades for whatever
+
+279
+00:14:51,762 --> 00:14:57,199
+reason, right? Sometimes it's not the best reason and they win.
+
+280
+00:14:57,200 --> 00:14:58,270
+And all of a
+
+281
+00:14:58,270 --> 00:15:00,411
+sudden they think, well, I got in because,
+
+282
+00:15:00,411 --> 00:15:02,552
+you know, I'm wearing a, you know, for
+
+283
+00:15:02,552 --> 00:15:09,778
+example, a stupid example, you know, I'm wearing a green shirt. So they think, oh, every time I wear a green shirt, the trade's going to win.
+
+284
+00:15:09,780 --> 00:15:13,100
+I mean, that's not a perfect example, but it's like that, right?
+
+285
+00:15:13,260 --> 00:15:16,261
+Where it reinforces the trading behavior that's not
+
+286
+00:15:16,261 --> 00:15:22,639
+necessarily part of your trading method that's going to eventually cause you to have a bad loss.
+
+287
+00:15:22,780 --> 00:15:24,747
+But worst of all, right, is
+
+288
+00:15:24,747 --> 00:15:27,042
+when you're on a trade-by-trade perspective
+
+289
+00:15:27,042 --> 00:15:32,287
+and you have a loser, you start to have all those thoughts go through your head.
+
+290
+00:15:32,000 --> 00:15:33,340
+I just lost this trade.
+
+291
+00:15:33,800 --> 00:15:34,920
+Oh, I don't know what I'm doing.
+
+292
+00:15:35,240 --> 00:15:36,440
+I'm the worst trader ever.
+
+293
+00:15:36,820 --> 00:15:38,240
+Why am I trading, right?
+
+294
+00:15:38,240 --> 00:15:40,120
+That's not the way to approach it.
+
+295
+00:15:41,540 --> 00:15:43,423
+So after every trade, win or lose, it's
+
+296
+00:15:43,423 --> 00:15:46,719
+going to set you up for a mental mistake on the next trade, right?
+
+297
+00:15:46,740 --> 00:15:49,607
+If the trade was a winning trade, and
+
+298
+00:15:49,607 --> 00:15:52,116
+again, you're just on a trade-by-trade
+
+299
+00:15:52,116 --> 00:15:56,776
+basis, okay? And I'm going to talk about the difference between trade-by-trade.
+
+300
+00:15:56,460 --> 00:16:01,080
+Sometimes if you have a winning trade, you will have a mistake on the next trade, right?
+
+301
+00:16:01,300 --> 00:16:02,956
+You may get in too early because you
+
+302
+00:16:02,956 --> 00:16:04,612
+just had a winning trade and you think,
+
+303
+00:16:04,612 --> 00:16:08,959
+well, I could just get in a little tick or two early. Maybe, and I'll have, you know, a better result.
+
+304
+00:16:09,180 --> 00:16:11,220
+Or maybe you take on too much leverage.
+
+305
+00:16:12,340 --> 00:16:18,020
+Or you're not taking your predefined profits, right?
+
+306
+00:16:18,060 --> 00:16:23,320
+Or maybe you're moving your stop, right? You don't let it get triggered because, oh, the market's ticking here.
+
+307
+00:16:23,400 --> 00:16:24,424
+No, I know what I'm doing
+
+308
+00:16:24,424 --> 00:16:27,839
+here. I just had this winning trade. I got a little bit of a buffer. I'm going to move it.
+
+309
+00:16:28,040 --> 00:16:29,700
+Well, you're just giving money back.
+
+310
+00:16:29,700 --> 00:16:33,860
+Basically, we feel as if we know everything about trading is what happens, right?
+
+311
+00:16:33,860 --> 00:16:37,920
+When you're on a trade-by-trade basis, okay?
+
+312
+00:16:38,180 --> 00:16:42,020
+And again, it comes back to the mindset, all right?
+
+313
+00:16:42,020 --> 00:16:48,560
+Don't think about this trade and let it affect your next trade. Don't think in that way.
+
+314
+00:16:50,690 --> 00:16:52,273
+Now, if the trade that you just took
+
+315
+00:16:52,273 --> 00:16:53,658
+was a losing trade, what's going to
+
+316
+00:16:53,658 --> 00:16:56,429
+happen on the next trade is maybe you're going to get in too late.
+
+317
+00:16:56,490 --> 00:16:57,270
+You're going to start to hesitate.
+
+318
+00:16:57,390 --> 00:16:59,750
+Ah, I just lost on this trade, right?
+
+319
+00:16:59,950 --> 00:17:01,130
+Maybe I shouldn't take this trade.
+
+320
+00:17:01,190 --> 00:17:01,790
+Oh, it starts ticking.
+
+321
+00:17:01,910 --> 00:17:02,570
+I better get in.
+
+322
+00:17:02,650 --> 00:17:03,410
+And you got in late.
+
+323
+00:17:03,650 --> 00:17:05,470
+You give it up some profits, right?
+
+324
+00:17:05,490 --> 00:17:08,530
+Or maybe you don't get into the trade at all. You're passing on the trade.
+
+325
+00:17:08,530 --> 00:17:12,150
+And then, heaven forbid, that trade become a winner.
+
+326
+00:17:12,270 --> 00:17:14,990
+And you're like, ah, gosh, why did I pass?
+
+327
+00:17:15,010 --> 00:17:17,130
+Then you're killing yourself. You're beating yourself up.
+
+328
+00:17:17,410 --> 00:17:19,150
+Or maybe you get out too early, right?
+
+329
+00:17:19,150 --> 00:17:21,050
+Just trying to book any profit that you see.
+
+330
+00:17:21,530 --> 00:17:24,970
+Oh, you know, the trade's a little bit in profit.
+
+331
+00:17:25,329 --> 00:17:27,670
+Maybe you start to move your stock back to break even.
+
+332
+00:17:28,010 --> 00:17:31,530
+And what happens? You do that too early, okay?
+
+333
+00:17:31,530 --> 00:17:36,530
+Or maybe if you just had a losing trade, you know, you start to over-leverage or revenge trade.
+
+334
+00:17:36,770 --> 00:17:37,710
+Ah, I just had this loss.
+
+335
+00:17:37,770 --> 00:17:38,350
+I'm going to get back.
+
+336
+00:17:38,350 --> 00:17:39,530
+I'm going to teach this market a lesson.
+
+337
+00:17:39,930 --> 00:17:41,930
+It doesn't work that way, right?
+
+338
+00:17:41,990 --> 00:17:46,650
+Or maybe you move your stock, you know, wider than normal, right?
+
+339
+00:17:46,690 --> 00:17:47,710
+I mean, one of
+
+340
+00:17:47,710 --> 00:17:49,751
+the problems you can make is either get
+
+341
+00:17:49,751 --> 00:17:53,068
+out of the trade too early or move your stock up too quickly.
+
+342
+00:17:53,370 --> 00:17:59,430
+Or maybe the opposite. You move your stock level further away.
+
+343
+00:17:59,430 --> 00:18:01,410
+I want to give you a little bit more breathing room.
+
+344
+00:18:02,510 --> 00:18:05,330
+Well, no. Again, you're just going to give up potential.
+
+345
+00:18:06,870 --> 00:18:11,150
+You're not going to give up potential profit. You're going to give up potential profit that you've already booked.
+
+346
+00:18:11,210 --> 00:18:13,890
+You're going to lose more than you should.
+
+347
+00:18:15,790 --> 00:18:20,950
+Now, the different way to look at trading is opposed on a trade-by-trade basis.
+
+348
+00:18:20,950 --> 00:18:26,670
+There's a series of trade perspective, okay? Meaning 10 trades.
+
+349
+00:18:26,670 --> 00:18:35,290
+Instead of analyzing this one trade, you're analyzing it in the context of 10 trades or 20 trades, okay?
+
+350
+00:18:35,290 --> 00:18:36,430
+I use 20 trades.
+
+351
+00:18:36,430 --> 00:18:39,550
+I don't like to really consider 100 trades.
+
+352
+00:18:39,550 --> 00:18:46,990
+But, you know, 20 trades, it gives you better feedback much quicker, okay?
+
+353
+00:18:47,630 --> 00:18:52,990
+And in that sense, no one trade has any more significance than any other trade.
+
+354
+00:18:52,990 --> 00:18:54,784
+You're not living or dying on
+
+355
+00:18:54,784 --> 00:18:56,578
+each trade results so that you
+
+356
+00:18:56,578 --> 00:18:59,568
+have a more sense of freedom in your trading, right?
+
+357
+00:18:59,630 --> 00:19:06,150
+You can stick to your plan better because you're not handicapping each individual trade.
+
+358
+00:19:06,230 --> 00:19:07,730
+I mean, you're going to handicap it in the whole.
+
+359
+00:19:07,830 --> 00:19:10,970
+You're going to say, okay, on this 20 trade run, how was my results?
+
+360
+00:19:11,330 --> 00:19:13,010
+Okay, I had 10 winners, 10 losers.
+
+361
+00:19:13,490 --> 00:19:15,570
+Maybe I had 12 winners, 8 losers.
+
+362
+00:19:15,790 --> 00:19:19,850
+Maybe I had 8 winners, 12 losers. Okay, what am I doing wrong, right?
+
+363
+00:19:19,910 --> 00:19:22,990
+As opposed to, I took this trade, I lost. What am I doing wrong?
+
+364
+00:19:23,090 --> 00:19:26,830
+Because, again, you don't have any control of what happens in the market after you put the trade on.
+
+365
+00:19:28,330 --> 00:19:30,277
+So, you're going to learn better what works
+
+366
+00:19:30,277 --> 00:19:31,981
+and what doesn't work because you won't
+
+367
+00:19:31,981 --> 00:19:33,928
+be changing how you trade on the fly.
+
+368
+00:19:34,430 --> 00:19:36,765
+Again, you're over a 10 trade sample,
+
+369
+00:19:36,765 --> 00:19:39,100
+a 20 trade sample, not a one
+
+370
+00:19:39,100 --> 00:19:43,770
+trade sample trying to, you know, tinker around with your trade setup.
+
+371
+00:19:45,310 --> 00:19:48,490
+Now, institutional traders, just bear this in mind. I just want to get that out there.
+
+372
+00:19:49,230 --> 00:19:55,110
+Institutional traders don't use stops the way retail traders do, the way you and I do.
+
+373
+00:19:55,410 --> 00:19:56,508
+Okay, institutional traders are
+
+374
+00:19:56,508 --> 00:19:58,704
+not leveraged the same way retail is, so
+
+375
+00:19:58,704 --> 00:20:01,449
+they're not as vulnerable to manipulative activities in the market.
+
+376
+00:20:02,210 --> 00:20:03,328
+You know, those quick adverse
+
+377
+00:20:03,328 --> 00:20:04,893
+price movements don't force them out of
+
+378
+00:20:04,893 --> 00:20:07,129
+the market the way it will retail traders like me.
+
+379
+00:20:08,410 --> 00:20:13,690
+Okay, if I get in the market and there's a quick move against me, I'm out. I'm stopped out.
+
+380
+00:20:13,690 --> 00:20:19,750
+Whereas if I'm an institutional trader and there's a quick move against me, I'm not getting out.
+
+381
+00:20:20,170 --> 00:20:21,090
+Okay, and why is that?
+
+382
+00:20:21,150 --> 00:20:22,819
+It's because they're not, you
+
+383
+00:20:22,819 --> 00:20:25,156
+know, the big banks and all those
+
+384
+00:20:25,156 --> 00:20:26,491
+traders, they're not leveraged,
+
+385
+00:20:26,491 --> 00:20:28,494
+right? They're not trading on $500 margins.
+
+386
+00:20:28,830 --> 00:20:34,230
+They're fully margined with more margin behind them, right?
+
+387
+00:20:34,410 --> 00:20:35,320
+You know, I mean,
+
+388
+00:20:35,320 --> 00:20:36,686
+you can make the argument that
+
+389
+00:20:36,686 --> 00:20:37,824
+it's all make-believe, you know,
+
+390
+00:20:37,824 --> 00:20:40,328
+the bank's got a big balance sheet that they put up.
+
+391
+00:20:40,750 --> 00:20:41,892
+But, you know, they're
+
+392
+00:20:41,892 --> 00:20:44,177
+not going to get spooked out by a
+
+393
+00:20:44,177 --> 00:20:45,891
+quick move against them. So, they're
+
+394
+00:20:45,891 --> 00:20:48,748
+not using leverage the same way you and I do.
+
+395
+00:20:49,050 --> 00:20:53,050
+And they often hedge with options that don't require them to use stops, okay?
+
+396
+00:20:54,090 --> 00:20:57,970
+They have safety net provided by slightly out-of-the-money hedges against their futures positions.
+
+397
+00:20:58,050 --> 00:20:59,190
+But I won't get into that.
+
+398
+00:20:59,270 --> 00:21:00,302
+But just remember,
+
+399
+00:21:00,302 --> 00:21:02,712
+you know, I just wanted to put
+
+400
+00:21:02,712 --> 00:21:05,122
+it out there that institutional traders don't
+
+401
+00:21:05,122 --> 00:21:08,909
+use stops the way you and I do in that sense.
+
+402
+00:21:08,910 --> 00:21:10,102
+So, again, you
+
+403
+00:21:10,102 --> 00:21:12,487
+know, on a bar-by-bar, a
+
+404
+00:21:12,487 --> 00:21:16,064
+trade-by-trade basis, you're going to be susceptible to
+
+405
+00:21:16,064 --> 00:21:19,641
+ups and downs, swings, both emotionally and, you know,
+
+406
+00:21:19,641 --> 00:21:24,013
+I don't want to say on your P&L, but when
+
+407
+00:21:24,013 --> 00:21:35,540
+you're going to look at your trade results, it's much better to take them over a sample period because then you're not stressing out over each individual trade, okay?
+
+408
+00:21:34,350 --> 00:21:38,250
+This trade that I take, okay, that's just part of this sample.
+
+409
+00:21:38,910 --> 00:21:44,350
+I'll take some more trades based off of how my trading method is, okay?
+
+410
+00:21:45,210 --> 00:21:51,130
+Now, adding to a loser causes traders to over-leverage, okay?
+
+411
+00:21:51,510 --> 00:21:57,010
+Traders end up with more contracts than they can handle in a disguise that they are averaging their position, right?
+
+412
+00:21:57,030 --> 00:22:00,850
+If you're going to average into a position, you want to average up, not down.
+
+413
+00:22:01,170 --> 00:22:05,930
+Add more contracts as the market's moving in your favor, not when moving against you.
+
+414
+00:22:06,330 --> 00:22:08,450
+Add to your winners, not to your losers.
+
+415
+00:22:08,910 --> 00:22:10,790
+Okay, people don't understand that, right?
+
+416
+00:22:10,870 --> 00:22:12,593
+I see a lot of
+
+417
+00:22:12,593 --> 00:22:15,005
+people, they like to add to their
+
+418
+00:22:15,005 --> 00:22:17,762
+losers, thinking I'm going to get a better
+
+419
+00:22:17,762 --> 00:22:25,688
+average price on my trades rather than when the trade is going in your favor. That's the time you should be adding, right?
+
+420
+00:22:26,150 --> 00:22:27,780
+Imagine, if you're trying to buy
+
+421
+00:22:27,780 --> 00:22:29,410
+here and the market keeps dipping,
+
+422
+00:22:29,410 --> 00:22:32,128
+you buy another one, keeps dipping, you buy another one.
+
+423
+00:22:32,130 --> 00:22:34,249
+Next thing you know, trading 41.26
+
+424
+00:22:34,249 --> 00:22:37,639
+and a half, and instead of being stopped
+
+425
+00:22:37,639 --> 00:22:40,182
+out to take your loss, your
+
+426
+00:22:40,182 --> 00:22:43,996
+average long is 41.36 and a quarter. You're 10 points underwater.
+
+427
+00:22:45,830 --> 00:22:47,176
+Now, instead of, you
+
+428
+00:22:47,176 --> 00:22:49,196
+know, either on one contract or
+
+429
+00:22:49,196 --> 00:22:51,216
+being stopped out, you're along three
+
+430
+00:22:51,216 --> 00:22:53,572
+contracts with the market 10 points against you.
+
+431
+00:22:53,910 --> 00:22:55,736
+And if you're getting
+
+432
+00:22:55,736 --> 00:22:58,475
+short, you know, you're getting short
+
+433
+00:22:58,475 --> 00:23:00,301
+down here at 36, maybe 34,
+
+434
+00:23:00,301 --> 00:23:02,583
+maybe 32, and the market's trading
+
+435
+00:23:02,583 --> 00:23:04,409
+28, even 30, your average is 34.
+
+436
+00:23:10,190 --> 00:23:11,410
+Add to your winners, right?
+
+437
+00:23:11,490 --> 00:23:16,710
+If the market is going up in your favor, that's when you want to be adding to the position.
+
+438
+00:23:16,710 --> 00:23:21,714
+You can always take off a trade if it starts
+
+439
+00:23:21,714 --> 00:23:27,719
+moving down a little bit, but don't be adding to more losers.
+
+440
+00:23:30,230 --> 00:23:33,068
+Scaling into a position is one of the instances where
+
+441
+00:23:33,068 --> 00:23:36,189
+you can add positions as the market's moving against you, okay?
+
+442
+00:23:36,230 --> 00:23:39,730
+But that should already be part of your defined trading plan.
+
+443
+00:23:40,250 --> 00:23:42,833
+Don't just say, well, I'm getting long
+
+444
+00:23:42,833 --> 00:23:45,785
+and I'm going to scale in to infinity
+
+445
+00:23:45,785 --> 00:23:48,368
+because you could be doing this, right?
+
+446
+00:23:48,370 --> 00:23:51,750
+You still got to, you know, take into account your risk management.
+
+447
+00:23:51,910 --> 00:23:57,770
+You know, if you're getting long up here at 76, I'm sorry, at 66, I'm sorry, 107.60, right?
+
+448
+00:23:57,930 --> 00:24:00,330
+Then it starts trading against you, right?
+
+449
+00:24:00,370 --> 00:24:02,930
+You think, okay, I'm going to add more at 55, okay?
+
+450
+00:24:03,330 --> 00:24:09,030
+Then don't start adding it every five ticks lower at 50, at 45, at 40, at 35.
+
+451
+00:24:09,310 --> 00:24:10,930
+Next thing you know, you're going to be hemorrhaging.
+
+452
+00:24:11,170 --> 00:24:15,350
+If it's not part of your trading plan, don't do it, okay?
+
+453
+00:24:15,650 --> 00:24:18,350
+But again, if it is part of your trading plan, then you're also defunding.
+
+454
+00:24:18,370 --> 00:24:19,710
+Where are you going to get out?
+
+455
+00:24:19,790 --> 00:24:22,568
+How much you're willing to lose so that
+
+456
+00:24:22,568 --> 00:24:25,346
+even though you are scaling in and the
+
+457
+00:24:25,346 --> 00:24:28,472
+market's selling off, you know that, okay, I'm getting
+
+458
+00:24:28,472 --> 00:24:31,945
+long at 60, getting long again at 55, getting long at 50, okay?
+
+459
+00:24:32,990 --> 00:24:36,470
+But my line in the stand is 40, okay?
+
+460
+00:24:36,490 --> 00:24:41,210
+So my average buy is, you know, 55, but I'm out at 40.
+
+461
+00:24:41,210 --> 00:24:44,010
+I'm not like, I got to keep buying. I got to keep buying.
+
+462
+00:24:44,010 --> 00:24:47,050
+I've seen people do that, and as a result, they've blown up.
+
+463
+00:24:47,790 --> 00:24:50,003
+Now, there's nothing wrong with scaling into a
+
+464
+00:24:50,003 --> 00:24:54,429
+position, but again, it should be part of your trading plan, part of your risk management.
+
+465
+00:24:55,590 --> 00:25:00,550
+So getting back to the trade by trade versus series of trade, right?
+
+466
+00:25:00,630 --> 00:25:03,450
+Successful traders make thousands of trades over their career.
+
+467
+00:25:03,450 --> 00:25:09,250
+And while there are standout trades, there's not usually one trade that is more important than another.
+
+468
+00:25:09,530 --> 00:25:14,090
+You know, they will have some big winners that'd be like, you know, that was great. That made my year.
+
+469
+00:25:14,890 --> 00:25:19,750
+But at the same time, a trading career can be wiped out with one catastrophic loss.
+
+470
+00:25:20,250 --> 00:25:21,350
+Keep your losses small.
+
+471
+00:25:21,430 --> 00:25:23,243
+And when you're on a trade
+
+472
+00:25:23,243 --> 00:25:25,660
+by trade, you're sort of dismissing, you know,
+
+473
+00:25:25,660 --> 00:25:28,681
+the whole concept of keeping your losses small because you're
+
+474
+00:25:28,681 --> 00:25:35,328
+living and dying by one trade, whereas if it's a series of trade, you know, you're fine to take the small losses.
+
+475
+00:25:35,670 --> 00:25:37,670
+Okay. Yeah. I had a loss. Move on.
+
+476
+00:25:38,190 --> 00:25:39,090
+Okay. Take the next trade.
+
+477
+00:25:39,970 --> 00:25:42,110
+Okay. It's a winner. Take the next trade.
+
+478
+00:25:42,270 --> 00:25:44,110
+Okay. It's a small loss. Fine. Keep going.
+
+479
+00:25:45,330 --> 00:25:48,930
+Right. Training is a game of intellect. It involves some thinking on your part.
+
+480
+00:25:49,210 --> 00:25:51,143
+Anger, fear, and overconfidence are common
+
+481
+00:25:51,143 --> 00:25:53,721
+emotions that may help you recoup a loss,
+
+482
+00:25:53,721 --> 00:25:57,588
+but they ultimately lead to defeat because they cloud the intellectual process.
+
+483
+00:25:57,830 --> 00:26:01,970
+If you suffer a loss, don't let anger make you start trading too aggressively.
+
+484
+00:26:02,670 --> 00:26:02,790
+Okay.
+
+485
+00:26:03,050 --> 00:26:03,599
+You know, people
+
+486
+00:26:03,599 --> 00:26:04,515
+get angry at the market.
+
+487
+00:26:04,515 --> 00:26:05,797
+They think this is it. I'm going
+
+488
+00:26:05,797 --> 00:26:07,629
+to show the market that I know better than him.
+
+489
+00:26:07,990 --> 00:26:09,010
+No, don't. Right.
+
+490
+00:26:09,070 --> 00:26:11,990
+That makes you get too aggressive in the market.
+
+491
+00:26:13,750 --> 00:26:16,070
+Laziness is another problem traders face.
+
+492
+00:26:16,170 --> 00:26:16,250
+Right.
+
+493
+00:26:16,290 --> 00:26:18,750
+It's cornerstone of most mistakes that traders make.
+
+494
+00:26:18,790 --> 00:26:25,610
+They get lazy. Oh, I forgot to set my stop or, you know, I forgot to. Um, do something.
+
+495
+00:26:25,950 --> 00:26:27,230
+All right. They forgot to set their ATM.
+
+496
+00:26:28,070 --> 00:26:28,470
+Right.
+
+497
+00:26:28,790 --> 00:26:35,270
+I've even seen people forget on Ninja Trader, forget to go out of SIM mode, right?
+
+498
+00:26:35,290 --> 00:26:36,167
+Because, you know,
+
+499
+00:26:36,167 --> 00:26:38,214
+the problem with things with Ninja Traders,
+
+500
+00:26:38,214 --> 00:26:40,554
+if you don't change it, it'll automatically load
+
+501
+00:26:40,554 --> 00:26:44,649
+your charts and all that stuff in SIM as opposed to in real time.
+
+502
+00:26:44,650 --> 00:26:46,354
+And I've seen people trade.
+
+503
+00:26:46,354 --> 00:26:48,740
+They think they're trading and they enter
+
+504
+00:26:48,740 --> 00:26:52,149
+a trade in SIM as opposed to the real market.
+
+505
+00:26:52,150 --> 00:26:53,450
+They're just being lazy, right?
+
+506
+00:26:54,470 --> 00:26:57,770
+Remember, when there's money involved, be serious. Take it seriously.
+
+507
+00:26:59,130 --> 00:27:01,030
+Now, remember, we're all emotional beings.
+
+508
+00:27:01,310 --> 00:27:03,318
+But when emotion tells you to get into
+
+509
+00:27:03,318 --> 00:27:04,824
+a trade, instead of your trading
+
+510
+00:27:04,824 --> 00:27:08,088
+plan, you need to take a step back and have a reality check.
+
+511
+00:27:09,070 --> 00:27:12,590
+Okay. Fear is a self-fulfilling prophecy.
+
+512
+00:27:13,050 --> 00:27:17,950
+Fear of losing will surely cause you to lose. If you're afraid of losing, you're going to lose. Period.
+
+513
+00:27:18,690 --> 00:27:24,480
+Okay. So don't let emotions run your trading plan.
+
+514
+00:27:25,020 --> 00:27:26,060
+Have your trading plan.
+
+515
+00:27:26,380 --> 00:27:30,400
+The reason you have a trading plan is so you don't get emotional.
+
+516
+00:27:30,960 --> 00:27:32,840
+Okay. Remember that.
+
+517
+00:27:33,640 --> 00:27:36,860
+Right. I mean, read that again and try to understand that.
+
+518
+00:27:36,900 --> 00:27:38,140
+Right. We're all emotional beings.
+
+519
+00:27:38,220 --> 00:27:42,480
+But when emotion tells you to get into a trade, instead of your trading plan, don't.
+
+520
+00:27:42,820 --> 00:27:45,940
+It's not that don't get in because of your trading plan.
+
+521
+00:27:46,060 --> 00:27:46,880
+No. But when
+
+522
+00:27:46,880 --> 00:27:49,340
+your emotions are telling you to get into a
+
+523
+00:27:49,340 --> 00:27:51,526
+trade and your trading plan doesn't tell you
+
+524
+00:27:51,526 --> 00:27:54,259
+to get into a trade, don't get into a trade.
+
+525
+00:27:54,440 --> 00:27:57,480
+And that happens when people deviate from their trading plan.
+
+526
+00:27:58,560 --> 00:28:03,360
+Overconfidence is another problem because it leads you away from the realities of trading to the world of wishful thinking.
+
+527
+00:28:03,640 --> 00:28:06,060
+I know everything. It's like sowing seeds of defeat.
+
+528
+00:28:06,940 --> 00:28:11,220
+Fear germinates it. And eventually it's going to harvest a loss for you.
+
+529
+00:28:11,600 --> 00:28:13,340
+Okay. Don't be too overconfident.
+
+530
+00:28:13,480 --> 00:28:14,767
+And I see people
+
+531
+00:28:14,767 --> 00:28:17,341
+that are overconfident. You know, they have a
+
+532
+00:28:17,341 --> 00:28:20,559
+couple of good trades and they think they master trading.
+
+533
+00:28:20,800 --> 00:28:29,200
+No. Be humble in your mental capabilities, I guess.
+
+534
+00:28:29,860 --> 00:28:31,900
+You know, a stop, remember, is your safety net.
+
+535
+00:28:32,160 --> 00:28:34,940
+Right. Trapeze artists, they do their tricks with the safety net below.
+
+536
+00:28:35,060 --> 00:28:35,200
+Why?
+
+537
+00:28:35,300 --> 00:28:38,880
+Because they know that one mistake is all it takes to end everything in a bad way.
+
+538
+00:28:39,260 --> 00:28:42,180
+And it's the same thing when you get to the markets.
+
+539
+00:28:42,380 --> 00:28:49,060
+Right. If you're trading without a safety net, right, without a stop, bad things happen.
+
+540
+00:28:49,340 --> 00:28:49,720
+Period.
+
+541
+00:28:49,720 --> 00:28:56,500
+So I can't mention it enough, but once the stop level is violated, you have to liquidate the position immediately.
+
+542
+00:28:56,880 --> 00:29:01,200
+There's no point holding any more as price has proven your reading of the market is wrong.
+
+543
+00:29:01,920 --> 00:29:02,420
+All right.
+
+544
+00:29:02,420 --> 00:29:03,670
+Your trade is wrong, even
+
+545
+00:29:03,670 --> 00:29:04,920
+if it's temporary or not.
+
+546
+00:29:04,920 --> 00:29:07,420
+Like, you know, maybe it's a tick or two through.
+
+547
+00:29:07,800 --> 00:29:08,680
+Take your loss.
+
+548
+00:29:09,020 --> 00:29:10,280
+All right. Your analysis was wrong.
+
+549
+00:29:10,360 --> 00:29:13,620
+You can always get back into the market if the order flow becomes strong again.
+
+550
+00:29:15,280 --> 00:29:16,416
+But if you fail
+
+551
+00:29:16,416 --> 00:29:18,120
+to get out, you have broken
+
+552
+00:29:18,120 --> 00:29:22,380
+your risk management system and you leave the position open for a potentially bigger loss.
+
+553
+00:29:22,380 --> 00:29:26,740
+So remember, the stop is part of the trade setup.
+
+554
+00:29:27,380 --> 00:29:30,420
+Okay. It's not just entries. Right. Getting into the trade.
+
+555
+00:29:30,580 --> 00:29:32,760
+You should already understand where your stop is.
+
+556
+00:29:32,840 --> 00:29:37,640
+Right. You should always have at least a minimum at a bare minimum. Worst case scenario stop.
+
+557
+00:29:38,280 --> 00:29:42,100
+Right. No matter what. At this level, I'm out.
+
+558
+00:29:42,560 --> 00:29:46,040
+Okay. That should be minimum part of your trade setup.
+
+559
+00:29:46,640 --> 00:29:51,080
+It essentially exists to tell you that conditions of the trade are violated.
+
+560
+00:29:51,640 --> 00:29:54,680
+Okay. So, for example, you're getting long here.
+
+561
+00:29:54,740 --> 00:29:56,520
+Oh, okay. Maybe I got you recognize.
+
+562
+00:29:56,700 --> 00:29:58,280
+Hey, there's momentum here.
+
+563
+00:29:58,560 --> 00:29:59,280
+Okay. We hit the low.
+
+564
+00:29:59,360 --> 00:30:00,066
+We got the green
+
+565
+00:30:00,066 --> 00:30:00,772
+candle. We got some
+
+566
+00:30:00,772 --> 00:30:03,419
+buying and balances. Some thin volume in here. Point of control up near the top.
+
+567
+00:30:03,500 --> 00:30:04,020
+I get long.
+
+568
+00:30:04,500 --> 00:30:06,420
+Right. You have a stop just below this low.
+
+569
+00:30:06,740 --> 00:30:08,640
+Fine. Stick to it.
+
+570
+00:30:09,520 --> 00:30:10,820
+Right. Get out.
+
+571
+00:30:10,880 --> 00:30:13,560
+If it comes down here, trades below 26, you're out.
+
+572
+00:30:13,840 --> 00:30:15,739
+Even though if the market sort
+
+573
+00:30:15,739 --> 00:30:17,638
+of comes down here and starts
+
+574
+00:30:17,638 --> 00:30:19,537
+coming back up because often what
+
+575
+00:30:19,537 --> 00:30:23,019
+happens is the market will bounce up and then go lower.
+
+576
+00:30:23,180 --> 00:30:25,880
+And you're thinking, well, I'm just going to give it a little more time. Just take the stop.
+
+577
+00:30:26,640 --> 00:30:27,100
+Get out.
+
+578
+00:30:27,520 --> 00:30:30,140
+Okay. Because the markets can go lower and they do.
+
+579
+00:30:30,720 --> 00:30:34,020
+Right. Yes. The markets can go higher, but you can always get back in.
+
+580
+00:30:34,120 --> 00:30:36,940
+If you're stopped out here and say, okay, I see some momentum coming in here.
+
+581
+00:30:37,200 --> 00:30:40,940
+Imbalances the thin volume here. The one you get back long again.
+
+582
+00:30:41,300 --> 00:30:42,780
+Okay. There's nothing wrong with that.
+
+583
+00:30:42,860 --> 00:30:45,240
+Just take your loss and reassess.
+
+584
+00:30:45,800 --> 00:30:47,540
+Right. Markets can go lower.
+
+585
+00:30:47,820 --> 00:30:52,260
+Right. You're getting long in here. For whatever reason.
+
+586
+00:30:52,340 --> 00:30:53,840
+They say, oh, there's momentum here. You get long.
+
+587
+00:30:53,920 --> 00:30:57,540
+Then it comes down here. Take your, take your exit. Take your stop here.
+
+588
+00:30:58,340 --> 00:30:59,320
+Don't sit here and wait.
+
+589
+00:30:59,440 --> 00:31:03,220
+Okay. Well, it's going to go back up and then it comes down, makes a new low.
+
+590
+00:31:03,720 --> 00:31:04,860
+Right. Starts going back.
+
+591
+00:31:05,000 --> 00:31:09,340
+You could always get back in if you see bullish order flow.
+
+592
+00:31:09,580 --> 00:31:10,331
+Right. If you're
+
+593
+00:31:10,331 --> 00:31:11,583
+trying, if you were long
+
+594
+00:31:11,583 --> 00:31:15,339
+earlier, right. If you see more bullish order flow, you can get back in again.
+
+595
+00:31:16,160 --> 00:31:17,907
+Yeah. It sucks taking
+
+596
+00:31:17,907 --> 00:31:20,527
+the loss, but you just have
+
+597
+00:31:20,527 --> 00:31:27,079
+to do it because what's going to happen is you don't take this loss here.
+
+598
+00:31:27,700 --> 00:31:30,720
+Market makes another low, then starts rallying up.
+
+599
+00:31:30,720 --> 00:31:31,932
+You think I know
+
+600
+00:31:31,932 --> 00:31:34,357
+better than what's going to happen is the
+
+601
+00:31:34,357 --> 00:31:36,175
+next time it shapes up like
+
+602
+00:31:36,175 --> 00:31:40,418
+this, instead of rallying, the market sells off again and goes lower and lower.
+
+603
+00:31:41,380 --> 00:31:44,800
+So let's spend some time talking about profit targets.
+
+604
+00:31:44,920 --> 00:31:49,240
+Now I use an ATM for take profits and stop losses after I get into a trade, right?
+
+605
+00:31:49,280 --> 00:31:55,220
+Always use the ATM to automatically enter your take profit and your stop.
+
+606
+00:31:55,280 --> 00:31:58,360
+So at least you have something in there in case the market starts moving for whatever reason.
+
+607
+00:31:58,360 --> 00:32:00,635
+So when you have a fixed take
+
+608
+00:32:00,635 --> 00:32:03,235
+profit level, you're basically taking the stance that
+
+609
+00:32:03,235 --> 00:32:07,460
+you know how buyers and sellers are going to react in the future.
+
+610
+00:32:07,900 --> 00:32:10,540
+You still have to watch and confirm what's happening in the market.
+
+611
+00:32:11,140 --> 00:32:12,580
+You still have to manage the trade.
+
+612
+00:32:13,120 --> 00:32:16,720
+That is how you hold on to trades longer and cut your losses shorter.
+
+613
+00:32:17,380 --> 00:32:20,120
+You know, you use an ATM. You can always adjust it.
+
+614
+00:32:20,220 --> 00:32:21,720
+I do that a lot.
+
+615
+00:32:22,260 --> 00:32:26,760
+Watch how the market is responding as it goes up or down to your target or stop.
+
+616
+00:32:26,760 --> 00:32:27,972
+You know, if I start
+
+617
+00:32:27,972 --> 00:32:29,668
+seeing it moving very quickly to my
+
+618
+00:32:29,668 --> 00:32:32,819
+stop and I see bearish order flow, I don't move my stop away.
+
+619
+00:32:32,900 --> 00:32:33,580
+I don't widen it.
+
+620
+00:32:33,640 --> 00:32:38,020
+I move it closer because I've recognized that, you know, there's bearish order flow.
+
+621
+00:32:38,140 --> 00:32:42,760
+Even though I'm long, if there's bearish order flow coming in, that's a sign to me.
+
+622
+00:32:42,860 --> 00:32:45,040
+Maybe I want to get out a little bit sooner than later.
+
+623
+00:32:45,040 --> 00:32:47,109
+Or if I'm in the trade and
+
+624
+00:32:47,109 --> 00:32:49,178
+it's going in my favor and I'm
+
+625
+00:32:49,178 --> 00:32:50,952
+seeing more, you know, if I'm
+
+626
+00:32:50,952 --> 00:32:55,978
+long, I see more bullish order flow come in, I'm going to try and ride it longer.
+
+627
+00:32:56,040 --> 00:32:59,180
+I'm going to let the trade try and go further.
+
+628
+00:32:59,400 --> 00:33:05,100
+If it doesn't, then I'll just move back, you know, to my original level where I just get out.
+
+629
+00:33:06,100 --> 00:33:08,980
+Right? Let order flow tell you when to get out.
+
+630
+00:33:09,040 --> 00:33:09,180
+Right?
+
+631
+00:33:09,200 --> 00:33:11,460
+If you're long here, right? Momentum, right?
+
+632
+00:33:11,500 --> 00:33:12,900
+You're long and you get all the
+
+633
+00:33:12,900 --> 00:33:14,300
+way up here and you're saying, oh,
+
+634
+00:33:14,300 --> 00:33:16,700
+you know, there's bullish order flow here. I'm going to stay long.
+
+635
+00:33:16,840 --> 00:33:21,720
+Okay. You back up, you take profit above, you know, 107, 05.
+
+636
+00:33:22,640 --> 00:33:27,080
+And then you start seeing the bearish order flow coming in, the bearish momentum here, right?
+
+637
+00:33:27,100 --> 00:33:29,047
+The imbalances, the two, the zero, the
+
+638
+00:33:29,047 --> 00:33:30,994
+one, you come back down to your
+
+639
+00:33:30,994 --> 00:33:36,279
+take profit, right? Or maybe you just get out of the trade. Let the order flow tell you. Okay?
+
+640
+00:33:37,040 --> 00:33:38,608
+Because, you know, you had
+
+641
+00:33:38,608 --> 00:33:40,804
+that bullish order flow. Well, you're looking
+
+642
+00:33:40,804 --> 00:33:46,138
+for that move to continue, but if it doesn't continue, that's your sign to get out, right?
+
+643
+00:33:46,160 --> 00:33:47,564
+If you're coming up to new
+
+644
+00:33:47,564 --> 00:33:49,436
+highs, all right, you're making these new highs,
+
+645
+00:33:49,436 --> 00:33:53,180
+and then all of a sudden you see supply coming into the market, get out, right?
+
+646
+00:33:53,240 --> 00:33:56,000
+I mean, there's nice momentum here. Nice momentum here.
+
+647
+00:33:56,340 --> 00:33:58,921
+Maybe you're going to say, well, you know,
+
+648
+00:33:58,921 --> 00:34:01,179
+maybe my take profit was at 47. I
+
+649
+00:34:01,179 --> 00:34:03,437
+could back it up to 48. You back
+
+650
+00:34:03,437 --> 00:34:11,827
+up to 48, then it doesn't quite get there. It gets up to 47 and three quarters, then starts trading down. Then you see the supply coming in.
+
+651
+00:34:13,239 --> 00:34:14,002
+Ah, shit. You
+
+652
+00:34:14,002 --> 00:34:15,274
+know what? I shouldn't have
+
+653
+00:34:15,274 --> 00:34:18,838
+moved it. But you took that chance to get more out of that trade.
+
+654
+00:34:18,940 --> 00:34:21,785
+There's going to be a lot of times where it
+
+655
+00:34:21,785 --> 00:34:23,492
+keeps chugging along and trades 48, trades 49,
+
+656
+00:34:23,492 --> 00:34:28,045
+trades 50. It's times like this where it gets within one tick of your new take profit.
+
+657
+00:34:28,900 --> 00:34:32,780
+You just got to get out, okay?
+
+658
+00:34:32,900 --> 00:34:37,260
+So the market can't hurt you beyond your predefined risks.
+
+659
+00:34:37,980 --> 00:34:42,920
+So why do you start to panic when the market starts to move against you, right?
+
+660
+00:34:42,920 --> 00:34:47,620
+You have a stop in there. Don't panic if it starts moving against you. It hasn't stopped you out yet.
+
+661
+00:34:48,280 --> 00:34:51,719
+Believe in yourself. Believe in your process. Believe in your analysis.
+
+662
+00:34:52,280 --> 00:34:56,600
+We all have different beliefs about the market. That's what makes the market, right?
+
+663
+00:34:56,600 --> 00:34:59,080
+You have to start thinking, I believe in my trade.
+
+664
+00:34:59,840 --> 00:35:03,832
+Either the market trades according to my analysis and I make a
+
+665
+00:35:03,832 --> 00:35:06,493
+profit, which I will gladly take, or it
+
+666
+00:35:06,493 --> 00:35:09,819
+will create a controlled loss, which I will also take.
+
+667
+00:35:09,900 --> 00:35:15,680
+My controlled loss means it goes to your stop, right? That's the loss that you're willing to accept.
+
+668
+00:35:19,200 --> 00:35:22,160
+Do not blame others for your trade not working out.
+
+669
+00:35:24,700 --> 00:35:29,840
+These are sort of my tenets on risk management, right? Or trading in general, honestly.
+
+670
+00:35:30,440 --> 00:35:33,480
+Don't blame others for your trade not working out. It's nobody's fault.
+
+671
+00:35:34,500 --> 00:35:39,160
+Do not complain about the market for your trade not working out. It's not the market's fault.
+
+672
+00:35:39,640 --> 00:35:42,200
+Be accountable for your trading decisions, right?
+
+673
+00:35:42,360 --> 00:35:46,780
+Trust yourself not only in your decision making, but also your ability to execute your trades.
+
+674
+00:35:47,200 --> 00:35:49,720
+You know, if you don't trust yourself, you shouldn't be trading, right?
+
+675
+00:35:49,900 --> 00:35:51,880
+Would you trust yourself to go drive
+
+676
+00:35:51,880 --> 00:35:54,142
+in a snowstorm? If you don't trust yourself
+
+677
+00:35:54,142 --> 00:35:57,819
+to drive in a snowstorm, you're not going to drive in a snowstorm.
+
+678
+00:35:57,880 --> 00:35:59,359
+You're going to stay in
+
+679
+00:35:59,359 --> 00:36:01,429
+the house. Just as, you know, if
+
+680
+00:36:01,429 --> 00:36:04,979
+you don't trust yourself in your trading decisions, why are you trading?
+
+681
+00:36:05,220 --> 00:36:05,840
+Don't trade.
+
+682
+00:36:05,940 --> 00:36:10,440
+Find something else to do with your time than risk money, okay?
+
+683
+00:36:10,900 --> 00:36:12,391
+I mean, at the end of the
+
+684
+00:36:12,391 --> 00:36:13,882
+day, if you don't trust yourself and
+
+685
+00:36:13,882 --> 00:36:16,438
+you have money at risk, you're going to lose that money, right?
+
+686
+00:36:16,480 --> 00:36:17,520
+That's not what you want to do.
+
+687
+00:36:17,520 --> 00:36:21,690
+So this concludes Module 6.
+
+688
+00:36:22,770 --> 00:36:25,730
+I'm going to see you guys on the next module. Bye-bye.
+
+689
+00:36:25,730 --> 00:36:31,290
+I'm going to see you guys on the next module.
+
+690
+00:36:31,290 --> 00:36:33,350
+I'm going to see you guys on the next module.
+
+691
+00:36:33,350 --> 00:36:35,290
+I'm going to see you guys on the next module.
+
+692
+00:36:35,290 --> 00:36:37,290
+I'm going to see you guys on the next module.
+
+693
+00:36:37,290 --> 00:36:39,290
+I'm going to see you guys on the next module.
+
+694
+00:36:39,290 --> 00:36:41,290
+I'm going to see you guys on the next module.
+
+695
+00:36:41,290 --> 00:36:43,290
+I'm going to see you guys on the next module.
+
+696
+00:36:43,290 --> 00:36:45,290
+I'm going to see you guys on the next module.
+
+697
+00:36:45,290 --> 00:36:47,290
+I'm going to see you guys on the next module.
+
+698
+00:36:47,290 --> 00:36:49,290
+I'm going to see you guys on the next module.
+
+699
+00:36:49,290 --> 00:36:51,290
+I'm going to see you guys on the next module.
+
+700
+00:36:51,290 --> 00:36:53,290
+I'm going to see you guys on the next module.
+
+701
+00:36:53,290 --> 00:36:55,290
+I'm going to see you guys on the next module.
+
+===== END AFTER_SEGMENT =====

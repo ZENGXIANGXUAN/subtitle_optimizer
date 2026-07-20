@@ -1,0 +1,2165 @@
+===== AFTER_TRANSLATE (439 entries) =====
+1
+00:00:00,210 --> 00:00:05,490
+好，这是OrderFlow交易课程第9课，控制点（POC）为何重要。
+Okay, this is OrderFlow Trading Course Lesson Number 9, Why the Point of Control is Significant.
+
+2
+00:00:05,990 --> 00:00:09,370
+我是Michael Valtos。我是OrderFlows.com的创始人。
+My name is Michael Valtos. I'm the founder of OrderFlows.com.
+
+3
+00:00:10,230 --> 00:00:12,350
+我先快速说明一下免责声明。
+Briefly, I'll go through a quick disclaimer.
+
+4
+00:00:12,750 --> 00:00:15,737
+本演示仅用于教育和信息目的，
+This presentation is for educational and informational purposes only and
+
+5
+00:00:15,737 --> 00:00:18,724
+不应被视为购买或出售
+should not be considered a solicitation to buy or sell
+
+6
+00:00:18,724 --> 00:00:22,009
+期货合约或做出任何其他类型投资决策的劝诱。
+a futures contract or make any other type of investment decision.
+
+7
+00:00:22,730 --> 00:00:26,450
+期货交易包含重大风险，并不适合所有投资者。
+Futures trading contains substantial risk and is not for every investor.
+
+8
+00:00:26,450 --> 00:00:30,170
+投资者可能损失全部甚至超过初始投资。
+An investor could potentially lose all or more than the initial investment.
+
+9
+00:00:30,770 --> 00:00:35,290
+风险资本是指可以承受损失而不危及个人财务安全或生活方式的资金。
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+10
+00:00:36,110 --> 00:00:41,270
+只有风险资本应用于交易，且只有拥有充足风险资本的人才应考虑交易。
+Only risk capital should be used for trading and only those with sufficient risk capital should consider trading.
+
+11
+00:00:41,990 --> 00:00:45,250
+过往表现并不必然预示未来结果。
+Past performance is not necessarily indicative of future results.
+
+12
+00:00:45,910 --> 00:00:48,390
+参见FTC 4.41条规则。
+See FTC Rules 4.41.
+
+13
+00:00:48,570 --> 00:00:56,670
+模拟交易结果有一定局限性。与实际交易记录不同，模拟结果并不代表真实交易。
+Hypothetical or simulated performance results have certain limitations. Unlike an actual performance record, simulated results do not represent actual trading.
+
+14
+00:00:56,670 --> 00:01:00,493
+此外，由于交易未实际执行，结果可能
+Also, since the trades have not been executed, the results may have
+
+15
+00:01:00,493 --> 00:01:03,041
+低估或高估了某些市场因素的影响（如有），
+under or overcompensated for the impact, if any,
+
+16
+00:01:03,041 --> 00:01:05,908
+例如流动性不足。
+of certain market factors such as lack of liquidity.
+
+17
+00:01:06,550 --> 00:01:11,870
+模拟交易程序通常还受到一个事实的限制：它们是基于事后分析设计的。
+Simulated trading programs in general are also subject to the fact that they are designed with the benefit of hindsight.
+
+18
+00:01:11,870 --> 00:01:15,422
+没有任何声明表明任何账户会
+No representation is being made that any account will or
+
+19
+00:01:15,422 --> 00:01:19,329
+或可能取得与展示的盈利或亏损相似的结果。
+is likely to achieve profit or losses similar to those shown.
+
+20
+00:01:21,670 --> 00:01:27,530
+好，现在开始第9课，理解POC，即控制点（POC）。
+Okay, so let's get started on lesson number nine, understanding the POC, the point of control.
+
+21
+00:01:27,670 --> 00:01:32,030
+K线中的控制点（POC）常被误称为COT（交易者承诺）。
+Point of control POC in a bar is often referred to as COT, commitment of traders.
+
+22
+00:01:32,030 --> 00:01:35,414
+它的定义是：在一根
+And what it is, it's the price level in a
+
+23
+00:01:35,414 --> 00:01:38,121
+K线中成交量最大的价格水平，
+bar where the most volume traded and most
+
+24
+00:01:38,121 --> 00:01:40,828
+大多数订单流软件会在该价格周围画一个方框。
+workflow software will put a box around it.
+
+25
+00:01:40,910 --> 00:01:44,135
+如你在图表中看到的，箭头所指处有一个方框，
+So, as you can see in this chart here where
+
+26
+00:01:44,135 --> 00:01:46,715
+那就是方框。
+the arrows are pointing, there's a box around.
+
+27
+00:01:46,715 --> 00:01:50,908
+这是该K线中成交量最大的价格水平。
+That's the price level in the bar where the most volume had occurred.
+
+28
+00:01:53,460 --> 00:01:55,820
+那么，POC为何重要？
+So, why is the POC important?
+
+29
+00:01:55,820 --> 00:01:58,693
+它能准确显示K线中
+Well, it shows you the exact price in the bar
+
+30
+00:01:58,693 --> 00:02:00,991
+成交量最集中的价格，这很重要，因为
+where volume was heaviest, which is important because
+
+31
+00:02:00,991 --> 00:02:04,439
+该价位可能在下一根K线中充当支撑或阻力。
+this level can act as support or resistance in the next bar.
+
+32
+00:02:05,220 --> 00:02:08,948
+想象一下，能提前知道下一根K线的支撑或阻力位置
+You know, imagine knowing where support or resistance will be
+
+33
+00:02:08,948 --> 00:02:11,930
+——这信息相当有价值。
+in the next bar before the next bar
+
+34
+00:02:11,930 --> 00:02:14,539
+只有订单流图表能为你提供这类信息。
+starts. You know, that's quite valuable information.
+
+35
+00:02:15,200 --> 00:02:18,860
+只有订单流图表会给你这些信息。
+You know, only an order flows chart will give that information to you.
+
+36
+00:02:18,860 --> 00:02:22,296
+若你只看普通K线图，
+If you're looking at a normal bar chart, you're not
+
+37
+00:02:22,296 --> 00:02:25,045
+你无法看到任何信息，
+going to see any information as to, you
+
+38
+00:02:25,045 --> 00:02:30,199
+比如下一根K线中价格可能回落并反应的位置。
+know, where in the next bar, you know, price may come down to and react.
+
+39
+00:02:32,600 --> 00:02:35,809
+因此，POC很重要，因为它能显示
+So, in the POC, it matters because it can show
+
+40
+00:02:35,809 --> 00:02:37,734
+需求压倒供给或反之的区域。
+you, you know, areas where demand
+
+41
+00:02:37,734 --> 00:02:39,659
+买盘压倒卖盘，或反之亦然。
+has overwhelmed supply or vice versa.
+
+42
+00:02:40,300 --> 00:02:42,963
+通常这是成交量最大的区域，
+You know, it's going to be the area where, you
+
+43
+00:02:42,963 --> 00:02:46,159
+在大多数K线中都会出现。
+know, the heavy volume was in the bar more often than not.
+
+44
+00:02:46,160 --> 00:02:49,285
+但当POC出现在K线中间时，
+But, when POC occurs in the middle of the bar,
+
+45
+00:02:49,285 --> 00:02:53,660
+可视为中性，因为这通常是其应出现的位置。
+it can be viewed as neutral, as that is where it should normally appear.
+
+46
+00:02:54,160 --> 00:02:57,080
+在大多数K线中，它会出现在K线的中央。
+You know, in most bars, it's going to appear in the center of the bar.
+
+47
+00:02:57,880 --> 00:03:02,120
+当POC出现在高点或低点附近时，往往预示着反转。
+When POC occurs near the high or the low, it can often signal a reversal.
+
+48
+00:03:03,220 --> 00:03:04,329
+它
+You know, it's
+
+49
+00:03:04,329 --> 00:03:06,917
+这是K线中成交量最大的区域。
+an area where the heavy volume was
+
+50
+00:03:06,917 --> 00:03:09,505
+为什么市场会在那里反转？
+in the bar. And, you know, why
+
+51
+00:03:09,505 --> 00:03:12,463
+市场在那里反转了吗？
+did the market turn around there? You know,
+
+52
+00:03:12,463 --> 00:03:18,379
+分析市场时，这些是你应提出的问题。
+those are questions you should be, you know, asking of the market when you're analyzing it.
+
+53
+00:03:19,280 --> 00:03:21,472
+因此，K线底部附近的POC
+So, POC near the bottom of the bar
+
+54
+00:03:21,472 --> 00:03:23,664
+通常表明存在强劲的被动买盘，
+indicates that there's usually strong passive buying, which
+
+55
+00:03:23,664 --> 00:03:26,678
+这往往足以推动市场反转，至少是暂时性的。
+is often strong enough to turn the market, at least temporarily.
+
+56
+00:03:26,880 --> 00:03:28,540
+可将其视为阻挡成交量。
+Think of it as stopping volume.
+
+57
+00:03:29,900 --> 00:03:31,254
+你可以看到
+So, you can see down
+
+58
+00:03:31,254 --> 00:03:33,150
+在这里，在这个
+here in this, you know, at the
+
+59
+00:03:33,150 --> 00:03:35,046
+比如这里，底部的第一根K线在737，
+bottom, this first bar here at 737, you
+
+60
+00:03:35,046 --> 00:03:37,213
+POC就位于底部。
+have POC right at the bottom. That's where
+
+61
+00:03:37,213 --> 00:03:39,380
+成交量最大的位置。市场
+the heaviest volume was. You know, the market
+
+62
+00:03:39,380 --> 00:03:41,818
+无法突破该价位。市场上涨后
+couldn't get past it. You know, the market rallied
+
+63
+00:03:41,818 --> 00:03:43,985
+又回落，接近该价位后再次上涨。
+and, you know, came back down, you know,
+
+64
+00:03:43,985 --> 00:03:53,466
+但它出现在下方，这表明该价位有大量成交量支撑市场。
+came near it and, you know, rallied back up. But, you know, it's appearing down here at the bottom, and that's a sign that there was heavy volume down there transacting to support the market.
+
+65
+00:03:54,340 --> 00:03:55,293
+POC
+You know, POC
+
+66
+00:03:55,293 --> 00:03:58,153
+出现在K线顶部时通常表示
+near the top of a bar indicates that there's
+
+67
+00:03:58,153 --> 00:04:00,695
+市场中存在大量被动卖盘，
+usually strong passive selling in the form of
+
+68
+00:04:00,695 --> 00:04:05,779
+以卖价形式挂单。这种卖压通常足以使市场至少暂时反转。
+offers working in the market. It's often strong enough to turn the market, at least temporarily.
+
+69
+00:04:05,980 --> 00:04:07,880
+可以将其理解为阻挡成交量。
+Think of it, again, as stopping volume.
+
+70
+00:04:07,880 --> 00:04:09,759
+所以在这里，你看到这根K线
+So, here, you see this bar
+
+71
+00:04:09,759 --> 00:04:11,325
+在719价位，POC
+at 719, you have the POC
+
+72
+00:04:11,325 --> 00:04:16,964
+就在顶部。这种情况下，你有一个比率，但它仍表示阻挡成交量。
+right at the top. In this case, you have a ratio, but it's, you know, indicating stopping volume.
+
+73
+00:04:17,980 --> 00:04:19,318
+但要思考
+But, you know, think
+
+74
+00:04:19,318 --> 00:04:21,325
+正在发生什么。好的，市场
+about what's happening. Okay, the market
+
+75
+00:04:21,325 --> 00:04:24,002
+早些时候，高点
+earlier, you know, the high was at the
+
+76
+00:04:24,002 --> 00:04:26,679
+在同一价位。POC就在高点下方。
+same level. POC was just off that high.
+
+77
+00:04:26,679 --> 00:04:29,356
+好的，我们再次冲击高点，
+Okay, you know, we made a run back
+
+78
+00:04:29,356 --> 00:04:32,033
+那里有大量成交量。
+up at the high, and there's heavy volume
+
+79
+00:04:32,033 --> 00:04:40,398
+市场无法突破该价位，并且它起到阻力作用。随后，市场下跌。
+up there. The market couldn't get past that level, and, you know, it's acting as resistance. And, you know, and subsequently, the market sold off.
+
+80
+00:04:46,370 --> 00:04:48,006
+好的，那么，
+Okay, so, you know, let's look
+
+81
+00:04:48,006 --> 00:04:49,642
+从更宏观的角度来看。
+at it more in a broader
+
+82
+00:04:49,642 --> 00:04:51,278
+市场
+picture here. So, the market is
+
+83
+00:04:51,278 --> 00:04:55,915
+一路下跌，并触及下方这个价位，这个低点。我们称之为29.32。
+working its way down, and it hits this level down here, this low here. We'll call it 29.32.
+
+84
+00:04:56,650 --> 00:04:57,905
+你希望POC
+You want to control right
+
+85
+00:04:57,905 --> 00:04:59,663
+接近K线底部。
+near the bottom of the bar. You
+
+86
+00:04:59,663 --> 00:05:01,672
+它不在最底部。
+know, it's not on the bottom. It's just
+
+87
+00:05:01,672 --> 00:05:03,681
+而是一个略高于低点的价位，
+a level right off the low, you know,
+
+88
+00:05:03,681 --> 00:05:05,690
+这没问题。
+which is fine. You're not always going to
+
+89
+00:05:05,690 --> 00:05:13,727
+你不一定总能在最低点找到它。当它离低点只差一个Tick，且成交量很小，这里成交单也很小，
+get it right on the bottom. When you get it, you know, right off the low by a tick, you know, and you've got very small volume and a small print here,
+
+90
+00:05:13,730 --> 00:05:18,630
+它仍然非常有价值，仍然是一个重要价位。
+it's, you know, it's still quite valuable, and it's still a significant level.
+
+91
+00:05:18,630 --> 00:05:23,010
+于是，你判断，好，这就是低点。
+And, you know, you decide, okay, this is going to be the low.
+
+92
+00:05:23,390 --> 00:05:25,530
+然后价格开始上涨，接下来会发生什么？
+You start moving higher, you know, and what happens?
+
+93
+00:05:25,610 --> 00:05:31,650
+之前我提到过，可将控制点（POC）用作下一根K线的支撑或阻力。
+You know, I talked earlier about using point of control as, you know, support or resistance in the next bar.
+
+94
+00:05:32,910 --> 00:05:33,584
+但你必须
+And you have
+
+95
+00:05:33,584 --> 00:05:34,483
+结合上下文来看，
+to take it in
+
+96
+00:05:34,483 --> 00:05:35,607
+如果你认为市场会
+context, you know, if you
+
+97
+00:05:35,607 --> 00:05:38,529
+呈趋势运行。
+think the market is going to be moving, you know, in a trend.
+
+98
+00:05:39,590 --> 00:05:40,257
+所以，如果你
+So, if you're
+
+99
+00:05:40,257 --> 00:05:41,146
+假设这是低点，
+assuming this is the
+
+100
+00:05:41,146 --> 00:05:42,258
+愿意冒险断言这是低点，
+low, you're willing to, you
+
+101
+00:05:42,258 --> 00:05:45,149
+那会发生什么？
+know, stick your neck out and say this is the low, what happens?
+
+102
+00:05:45,150 --> 00:05:45,560
+，
+You know,
+
+103
+00:05:45,560 --> 00:05:46,790
+你的控制点（POC）
+your point of control is going
+
+104
+00:05:46,790 --> 00:05:48,020
+在这种情况下会成为支撑，
+to be your support in this
+
+105
+00:05:48,020 --> 00:05:50,070
+如果你认为市场会反弹。
+case if you think the market is going to rally.
+
+106
+00:05:50,650 --> 00:05:54,450
+你看市场回落到这个价位，正好是控制点（POC）所在的位置。
+You see the market came down to this level, right where the point of control was.
+
+107
+00:05:56,050 --> 00:05:57,236
+好，接下来，
+Okay, you have this next,
+
+108
+00:05:57,236 --> 00:05:58,897
+现在控制点（POC）
+you have point of control now at
+
+109
+00:05:58,897 --> 00:06:01,508
+在这个价位。下一根K线接近它1个Tick。
+this level. The next bar came within a tick of it.
+
+110
+00:06:03,410 --> 00:06:06,210
+然后，它在中间区域再次形成控制点（POC）。
+And, you know, it formed this point of control in the middle area again.
+
+111
+00:06:06,210 --> 00:06:09,330
+我们又回落到离它1个Tick的位置。
+And we came down within a tick of it again.
+
+112
+00:06:10,110 --> 00:06:10,820
+好，现在我们
+Okay, now we're
+
+113
+00:06:10,820 --> 00:06:12,003
+开始移动，
+starting, you know, we're moving
+
+114
+00:06:12,003 --> 00:06:13,423
+控制点（POC）
+and it's acting as, the point
+
+115
+00:06:13,423 --> 00:06:15,789
+在上涨过程中起到支撑作用。
+of controls are acting as support on the move up.
+
+116
+00:06:16,390 --> 00:06:21,350
+这里控制点（POC）正好在29.42这个价位。市场刚好到达29.42。
+And here you have the point of control right at this level of 29.42. The market came right to that level, 29.42.
+
+117
+00:06:22,010 --> 00:06:23,590
+然后继续上涨。
+And then continue to move it up.
+
+118
+00:06:23,710 --> 00:06:26,470
+同样，这里有一根下跌K线。
+Again, you know, we got this down bar in there. You know, that's fine.
+
+119
+00:06:26,550 --> 00:06:28,650
+上涨趋势中出现下跌K线是正常的。
+You know, you're going to have down bars in an up move.
+
+120
+00:06:28,650 --> 00:06:34,210
+但你仍要把控制点（POC）视为支撑。
+You know, but you're still looking at the point of control as your support.
+
+121
+00:06:34,610 --> 00:06:35,632
+在这个例子中，
+You know, in
+
+122
+00:06:35,632 --> 00:06:37,335
+你会看到
+this case, you have the
+
+123
+00:06:37,335 --> 00:06:39,038
+控制点（POC）位于29.43。
+point of control here at 29.43.
+
+124
+00:06:39,038 --> 00:06:42,786
+但它其实与29.42紧密相连。
+You know, but it's sort of on the back of this 29.42.
+
+125
+00:06:43,850 --> 00:06:50,130
+支撑/阻力通常不是某个特定价格，而是一个区域，或者说是一个价位带。
+You know, support resistance is usually not one particular price. It's more of a level, a zone, so to speak.
+
+126
+00:06:50,530 --> 00:06:56,190
+我们回落到这个控制点，也就是29.43、29.42附近，然后继续上涨。
+You know, we came back down to this point of control, you know, 29.43, 29.42 right here and continued up.
+
+127
+00:06:56,190 --> 00:06:57,087
+So, you know,
+
+128
+00:06:57,087 --> 00:06:58,583
+如果有人拉你到一边说，
+if someone were to pull
+
+129
+00:06:58,583 --> 00:07:00,677
+you aside and say, hey, you know,
+
+130
+00:07:00,677 --> 00:07:03,370
+‘我可以教你
+I could teach you how to find support or
+
+131
+00:07:03,370 --> 00:07:12,347
+根据当前K线预测下一根K线的支撑或阻力’，你会觉得这个人像《杰克与魔豆》里卖魔豆的骗子。
+resistance in the next bar based on the bar we're in, you know, you'll think the guy is trying to sell you magic beans like in Jack and the Beanstalk.
+
+132
+00:07:12,550 --> 00:07:18,810
+没错，你的想法是对的。但控制点（POC）确实能做到这一点。
+You know, you're correct. But, you know, that's what point of control can do for you.
+
+133
+00:07:18,810 --> 00:07:24,590
+在趋势市场中，它可以充当支撑或阻力。
+It can act as support or resistance in a market that's trending.
+
+134
+00:07:24,590 --> 00:07:25,723
+Okay, you know,
+
+135
+00:07:25,723 --> 00:07:27,611
+那我们快速讨论一下这个例子。
+so let's just talk real
+
+136
+00:07:27,611 --> 00:07:30,255
+quick about this. You know, in this
+
+137
+00:07:30,255 --> 00:07:34,788
+这里有很多不同的情况。
+case, you've sort of got a bunch of different things going on.
+
+138
+00:07:35,350 --> 00:07:35,963
+You know, you've
+
+139
+00:07:35,963 --> 00:07:36,780
+你会看到控制点（POC）
+got point of control
+
+140
+00:07:36,780 --> 00:07:37,801
+就位于
+here, you know, right at
+
+141
+00:07:37,801 --> 00:07:40,048
+高点处，这表明存在某种阻挡成交量。
+the high. It's indicating, you know, some sort of stopping volume.
+
+142
+00:07:40,450 --> 00:07:46,370
+同样，在低点处也有控制点（POC），同样起到阻挡成交量的作用。
+Again, you know, you have it here at the low. Again, it's acting as stopping volume.
+
+143
+00:07:46,890 --> 00:07:47,490
+You know, I'm
+
+144
+00:07:47,490 --> 00:07:48,890
+我倾向于在最后
+willing to take it in the last,
+
+145
+00:07:48,890 --> 00:07:50,490
+两根K线中考虑它，
+you know, either at the top two or
+
+146
+00:07:50,490 --> 00:07:54,090
+无论是顶部的两根还是底部的两根。如果底部是绿色K线，那它可能靠近顶部的两根。
+the bottom two. If it's a green bar at the bottom two, it's right by the top two.
+
+147
+00:07:54,090 --> 00:07:54,779
+So, you know,
+
+148
+00:07:54,779 --> 00:07:56,616
+我发现当它出现在
+I find it's a little bit more powerful
+
+149
+00:07:56,616 --> 00:07:57,994
+顶部时，
+when it appears right on the
+
+150
+00:07:57,994 --> 00:08:01,209
+作用会更强一些。但有时候很难在顶部找到它。
+top. But, you know, sometimes it's really difficult to get them on the top.
+
+151
+00:08:02,550 --> 00:08:03,208
+And, you know,
+
+152
+00:08:03,208 --> 00:08:04,743
+如果我认为市场会像这样下跌,
+if I'm assuming the market is going
+
+153
+00:08:04,743 --> 00:08:06,278
+to be selling off as this, you
+
+154
+00:08:06,278 --> 00:08:09,348
+我会把它当作阻力位，而不是支撑位。
+know, I'm going to use this as my support, or sorry, my resistance level.
+
+155
+00:08:10,130 --> 00:08:11,068
+You know, here,
+
+156
+00:08:11,068 --> 00:08:12,319
+you know, I expect
+
+157
+00:08:12,319 --> 00:08:14,196
+预计市场会保持在它下方。
+the market to stay below it.
+
+158
+00:08:14,196 --> 00:08:18,888
+下一根K线，阻力位在这里。市场保持在它下方。
+You know, then the next bar, the resistance will be here. We're staying below it.
+
+159
+00:08:18,890 --> 00:08:19,581
+You know, if
+
+160
+00:08:19,581 --> 00:08:21,193
+如果我认为市场在这里反转,
+I think the market is turning here,
+
+161
+00:08:21,193 --> 00:08:24,649
+这将成为我的新支撑位。我的支撑位在这里。
+this is going to be my new support level. You know, my support level here.
+
+162
+00:08:25,710 --> 00:08:30,290
+现在，这将成为我的新阻力位。结合上下文来理解。
+Now, this will be my new resistance level. You know, take it in context like that.
+
+163
+00:08:30,470 --> 00:08:34,990
+你可以看到它在市场中经常出现。
+You know, and you can see how it occurs in the market on a regular basis.
+
+164
+00:08:36,750 --> 00:08:38,676
+当控制点（POC）位于K线中间时,
+Now, when the point of control is around
+
+165
+00:08:38,676 --> 00:08:40,120
+the middle of the bar, it
+
+166
+00:08:40,120 --> 00:08:43,009
+应视为正常。因为它本就该在那里。
+should be treated as normal. That's because that's where it should be.
+
+167
+00:08:43,090 --> 00:08:44,610
+别把正态分布当特殊情况。
+Don't give a normal distribution.
+
+168
+00:08:44,610 --> 00:08:45,430
+请注意，
+Please note, I
+
+169
+00:08:45,430 --> 00:08:47,890
+我基于区间图表进行交易，
+trade based on range charts, where the bar is
+
+170
+00:08:47,890 --> 00:08:50,076
+其中K线是在市场从一个价格
+formed as the market moves from price to
+
+171
+00:08:50,076 --> 00:08:54,449
+移动到另一个价格时形成的,
+price, as opposed to forming a new bar when the clock takes five minutes or whatever.
+
+172
+00:08:55,030 --> 00:08:59,030
+而不是每5分钟或其他固定时间形成新K线。
+I prefer range charts over minute charts. It's a personal choice.
+
+173
+00:08:59,530 --> 00:09:02,130
+我知道有些交易者使用分钟图表，并且相当成功。
+I know traders that use minute charts and are quite successful.
+
+174
+00:09:03,030 --> 00:09:04,411
+但我个人更喜欢区间图表。
+I prefer range charts personally
+
+175
+00:09:04,411 --> 00:09:06,898
+因为我想看清市场如何从
+because I like to see how market moves from
+
+176
+00:09:06,898 --> 00:09:09,108
+一个价格水平移动到下一个价格水平。
+one price level to the next price level.
+
+177
+00:09:09,110 --> 00:09:20,790
+在横盘市场中，你常会看到控制点（POC）在连续几根K线中围绕相同水平。
+Now, in a sideways market, you'll often see point of control around the same levels for several consecutive bars.
+
+178
+00:09:21,010 --> 00:09:21,696
+I mean, it
+
+179
+00:09:21,696 --> 00:09:23,297
+不一定非得是一个特定的
+doesn't necessarily have to be one particular
+
+180
+00:09:23,297 --> 00:09:25,127
+价格水平。这里你有两个
+level. You know, here you have two at
+
+181
+00:09:25,127 --> 00:09:28,329
+处于同一价格水平，然后下方还有一个。
+the same level, and then you have two, you know, just right below it.
+
+182
+00:09:28,750 --> 00:09:29,314
+You know,
+
+183
+00:09:29,314 --> 00:09:30,724
+在我看来，这往往
+it's, to me, it's often
+
+184
+00:09:30,724 --> 00:09:32,980
+是一个信号，当你把它
+a sign, you know, when you throw it
+
+185
+00:09:32,980 --> 00:09:35,800
+与那些方向相反的K线
+in with, you know, bars that are opposing in the
+
+186
+00:09:35,800 --> 00:09:37,774
+结合来看，比如，
+sense of, you know, you've got green,
+
+187
+00:09:37,774 --> 00:09:42,850
+绿柱、红柱、绿柱、红柱、绿柱、红柱，而控制点（POC）排成一列。
+then red, then green, then red, then green, then red, and you're getting point of controls lining up.
+
+188
+00:09:42,910 --> 00:09:44,530
+这只是在告诉我，市场正在横盘。
+It's just telling me the market's going sideways.
+
+189
+00:09:44,970 --> 00:09:48,370
+这是一个非常直观且快速能看出的现象。
+You know, it's a very visual and quick thing to see.
+
+190
+00:09:50,150 --> 00:09:54,970
+在趋势市场中，控制点（POC）会成为下一根K线的支撑或阻力。
+In a trending market, point of control becomes the support or resistance of the next bar.
+
+191
+00:09:55,930 --> 00:09:56,452
+You know,
+
+192
+00:09:56,452 --> 00:09:57,758
+你可以在这里看到，
+you can see here, right,
+
+193
+00:09:57,758 --> 00:09:59,326
+市场开始上涨，
+the market's starting to move up,
+
+194
+00:09:59,326 --> 00:10:03,768
+你会把这些控制点作为上涨过程中的支撑位。
+and, you know, you're going to take the point of controls as your support on the move.
+
+195
+00:10:04,130 --> 00:10:04,717
+You know,
+
+196
+00:10:04,717 --> 00:10:06,185
+如果你说这是
+if you're saying this is
+
+197
+00:10:06,185 --> 00:10:08,241
+低点，然后观察
+the low, and, you know, watch where
+
+198
+00:10:08,241 --> 00:10:13,528
+价格回撤的位置。它回撤到那个控制点，然后继续上涨。
+price retraces right back. It retraces right back to that point of control and makes its move higher.
+
+199
+00:10:16,380 --> 00:10:16,846
+You know,
+
+200
+00:10:16,846 --> 00:10:17,546
+我是说，如果
+I mean, if,
+
+201
+00:10:17,546 --> 00:10:18,946
+你看1892这个价位，
+you know, here you start looking
+
+202
+00:10:18,946 --> 00:10:20,112
+这根K线，
+at 1892, you know, this bar,
+
+203
+00:10:20,112 --> 00:10:24,545
+控制点就在这里，下一根K线直接回到了这个位置。
+this is where the point of control, you know, we pulled right back into that in the following bar.
+
+204
+00:10:25,060 --> 00:10:25,919
+然后你有
+Then you have the
+
+205
+00:10:25,919 --> 00:10:26,992
+1894的控制点。我们
+point of control at 1894. We
+
+206
+00:10:26,992 --> 00:10:29,784
+回撤到那里，然后突破了几个点。
+pulled back into it, you know, got through it by a couple points.
+
+207
+00:10:30,000 --> 00:10:31,420
+这没问题，不是世界末日。
+That's fine. It's not the end of the world.
+
+208
+00:10:32,320 --> 00:10:34,000
+市场继续上涨。
+You know, the market's continuing higher.
+
+209
+00:10:34,220 --> 00:10:39,800
+这根1896的K线，它回落到94，但仍然作为支撑位有效。
+You know, this bar at 1896, it came down to 94. But, you know, it's still holding as support.
+
+210
+00:10:40,860 --> 00:10:46,340
+现在，控制点在1896。是的，我们回落到那个价位，然后继续上涨。
+Now, you know, now we have it at 1896. Yeah, we pulled right down to that level and continued back up.
+
+211
+00:10:47,380 --> 00:10:47,893
+You know,
+
+212
+00:10:47,893 --> 00:10:49,175
+我之前提到过,
+I had talked earlier about
+
+213
+00:10:49,175 --> 00:10:50,457
+saying, you know, if point
+
+214
+00:10:50,457 --> 00:10:53,278
+如果控制点（POC）位于K线中间，则为中性。
+of control is in the middle of the bar, that's neutral.
+
+215
+00:10:53,280 --> 00:11:00,260
+我的意思是，控制点通常会在K线中间形成。
+Well, what I mean by that is point of control generally will form in the middle of the bar.
+
+216
+00:11:01,840 --> 00:11:02,330
+You know,
+
+217
+00:11:02,330 --> 00:11:03,311
+但这没问题。如果
+but that's fine. If
+
+218
+00:11:03,311 --> 00:11:04,783
+it does, you know, and we're
+
+219
+00:11:04,783 --> 00:11:08,218
+在趋势行情中，这就是你的支撑或阻力所在的位置。
+in a move, that's where your support or your resistance is going to be.
+
+220
+00:11:08,980 --> 00:11:10,132
+当我提到
+When I talk about
+
+221
+00:11:10,132 --> 00:11:11,860
+控制点出现在K线边缘时,
+appearing on the edges of the
+
+222
+00:11:11,860 --> 00:11:13,300
+K线/柱状线，它，重要
+bar, it's, you know, important
+
+223
+00:11:13,300 --> 00:11:16,180
+这很重要，因为市场可能在此反转。
+in the sense that that's where the market can turn.
+
+224
+00:11:20,900 --> 00:11:21,597
+好，那你
+Okay, so, you
+
+225
+00:11:21,597 --> 00:11:23,223
+看，我们来看这里
+know, let's take a look here at
+
+226
+00:11:23,223 --> 00:11:25,779
+我们来看看这个市场的情况。这是五年周期图。
+what's going on in this market. This is the five years.
+
+227
+00:11:26,200 --> 00:11:29,960
+控制点就位于底部。这根6点钟方向的K线。
+So you have the point of control right at the bottom. This bar at 6 o'clock.
+
+228
+00:11:30,040 --> 00:11:32,000
+底部出现了巨大的卖盘失衡。
+You've got the big selling imbalance right on the bottom.
+
+229
+00:11:32,120 --> 00:11:36,520
+你有一个喜欢的比率。你会说，好的，这是这波行情的低点。
+You've got a ratio that you like. You're going to say, okay, this is my low for the move.
+
+230
+00:11:36,620 --> 00:11:39,520
+你预期价格会上涨。在哪里可以买入？
+You know, you're expecting a move higher. Where can you buy?
+
+231
+00:11:39,520 --> 00:11:45,020
+你想寻找一个支撑区域，如果可能的话，可以在此附近买入。
+Well, you want to look at, you know, some area of support to buy around, you know, if possible.
+
+232
+00:11:45,820 --> 00:11:46,522
+好，在这个例子中
+Okay, well, in
+
+233
+00:11:46,522 --> 00:11:47,692
+this case, you know, the
+
+234
+00:11:47,692 --> 00:11:49,330
+下一根是跌势K线。
+next bar, it's a down candle. So,
+
+235
+00:11:49,330 --> 00:11:52,138
+你可以在这根K线的任何位置买入，都会很满意。
+you know, you can buy anywhere in that bar and be happy.
+
+236
+00:11:52,720 --> 00:11:58,060
+假设你特别保守。你想尝试在控制点附近入场。
+Say, you know, say you're ultra conservative. You want to try and get in around the point of control.
+
+237
+00:11:58,180 --> 00:12:01,200
+可以。价格确实回到了这个控制点。
+You can. You know, it came right down to that point of control.
+
+238
+00:12:01,320 --> 00:12:01,760
+通常，我
+Usually, I
+
+239
+00:12:01,760 --> 00:12:03,523
+喜欢在
+like to get in around, you know, maybe
+
+240
+00:12:03,523 --> 00:12:05,507
+比控制点高1-2个Tick的位置入场。
+a tick or two higher than the point of
+
+241
+00:12:05,507 --> 00:12:10,357
+通常会在控制点（POC）上方1-2个Tick进场，因为市场有时不会完全回测到POC。
+control. You know, just because I know that sometimes the market doesn't come back all the way to the point of control.
+
+242
+00:12:10,360 --> 00:12:10,795
+You know,
+
+243
+00:12:10,795 --> 00:12:12,535
+即使在POC上方1个Tick进场，
+so even if you get a tick up
+
+244
+00:12:12,535 --> 00:12:13,622
+从这个
+off of this point of
+
+245
+00:12:13,622 --> 00:12:15,579
+你依然能参与行情。
+control or two, you know, you're still in it.
+
+246
+00:12:16,080 --> 00:12:20,760
+这根K线的控制点在这里。价格下跌到距离POC仅1个Tick的位置。
+Now, this bar, your point of control is here. We came down within a tick of it.
+
+247
+00:12:21,240 --> 00:12:25,880
+控制点现在在18。价格下跌到距离POC仅1个Tick的位置。
+Point of control is now here at 18. We came down within a tick of it.
+
+248
+00:12:26,380 --> 00:12:29,040
+控制点在这里，在19。价格刚好跌到19。
+Point of control is here at 19. We came down exactly to 19.
+
+249
+00:12:29,160 --> 00:12:32,320
+现在控制点是19.5。价格跌到20。
+Now, your point of control is 19 and a half. Yeah, we came down to 20.
+
+250
+00:12:32,740 --> 00:12:35,960
+这里控制点在20又3/4。价格跌到21。
+You know, here it's at 20 and three quarters. We came down to 21.
+
+251
+00:12:35,960 --> 00:12:43,280
+21——价格一步步上涨，但你在用控制点作为支撑。
+21, you know, it's just, you know, stair-stepping up, you know, but you're using your point of controls as support.
+
+252
+00:12:43,660 --> 00:12:44,354
+如果
+You know, if
+
+253
+00:12:44,354 --> 00:12:45,973
+你可以选择
+you want, you know, you can trail
+
+254
+00:12:45,973 --> 00:12:47,592
+将止损设在这些控制点，
+your stops to those point of controls
+
+255
+00:12:47,592 --> 00:12:50,599
+或者在这些控制点周边区域设置止损价。
+or, you know, areas around those point of controls as your stop price.
+
+256
+00:12:53,310 --> 00:12:53,766
+好的，
+Okay, so,
+
+257
+00:12:53,766 --> 00:12:54,906
+这里是另一个5年期图表，这次是下跌。
+you know, here's, again, here's
+
+258
+00:12:54,906 --> 00:12:56,502
+五年，但这次
+a five-year, but this time it's going
+
+259
+00:12:56,502 --> 00:12:57,870
+可能是在上涨。
+down. I suppose it's going up.
+
+260
+00:12:57,870 --> 00:13:00,150
+之前的例子是上涨行情。
+You know, earlier was an example of it going up.
+
+261
+00:13:00,970 --> 00:13:03,170
+现在发生了什么？好的，价格触及高点。
+And, you know, what's happened? Okay, you hit the high.
+
+262
+00:13:03,450 --> 00:13:04,050
+你放大看。
+You zoom in.
+
+263
+00:13:05,370 --> 00:13:06,208
+如果你在想，
+If you're thinking,
+
+264
+00:13:06,208 --> 00:13:08,164
+供需关系出现转变，
+you know, there's a shift in supply
+
+265
+00:13:08,164 --> 00:13:10,400
+市场可能开始下跌，
+and demand and the market's going to start
+
+266
+00:13:10,400 --> 00:13:12,356
+你可能在这里没想到。
+selling, you know, you may not think
+
+267
+00:13:12,356 --> 00:13:17,947
+但在这根K线，你肯定会改变主意。
+it right here. But, you know, definitely in this bar, you really change your idea by this bar for sure.
+
+268
+00:13:19,010 --> 00:13:19,502
+You know,
+
+269
+00:13:19,502 --> 00:13:20,979
+阻力位在哪里？好的，
+and where's your resistance levels? Okay,
+
+270
+00:13:20,979 --> 00:13:22,702
+阻力位会在这里，
+it's going to be here at this
+
+271
+00:13:22,702 --> 00:13:24,179
+控制点（POC）在0.1和
+point of control at 0.1 and a
+
+272
+00:13:24,179 --> 00:13:28,856
+0.5。我们上涨到——抱歉，0.1和0.75。然后涨到1.5。
+half. You know, we came up to, sorry, 0.1 and three quarters. We came up to one and a half.
+
+273
+00:13:30,010 --> 00:13:30,582
+You know,
+
+274
+00:13:30,582 --> 00:13:31,727
+now it's, you know,
+
+275
+00:13:31,727 --> 00:13:33,444
+现在是1.25。我们上涨到
+one and a quarter. We came
+
+276
+00:13:33,444 --> 00:13:35,161
+双0.5。
+up to, you know, double-O half.
+
+277
+00:13:35,161 --> 00:13:39,168
+新的阻力位在这里——双0.25。
+You know, here's your new resistance level at, you know, double-O and a quarter.
+
+278
+00:13:39,290 --> 00:13:41,215
+我们直接回涨到
+We came right back up to
+
+279
+00:13:41,215 --> 00:13:43,140
+双0。
+it at double-O. You know, and
+
+280
+00:13:43,140 --> 00:13:46,349
+在下跌过程中充当阻力。
+it's just acting as your resistance on the way down.
+
+281
+00:13:51,270 --> 00:13:55,310
+原油是一个活跃的市场。相较于5年期，它波动非常快。
+Okay, now, you know, crude is a market. It moves very fast, you know, relative to the five years.
+
+282
+00:13:55,390 --> 00:13:56,917
+5年期可能是一个
+Five years can be a
+
+283
+00:13:56,917 --> 00:13:58,750
+非常平静的交易市场。
+very quiet market to trade. And
+
+284
+00:13:58,750 --> 00:14:00,583
+有时市场
+it's, you know, sometimes quiet markets,
+
+285
+00:14:00,583 --> 00:14:02,416
+就是不吸引
+you know, just don't appeal to
+
+286
+00:14:02,416 --> 00:14:08,527
+人们通常不喜欢平静的市场。人们倾向于喜欢快速波动的活跃市场。这取决于个人偏好。
+people. You know, people tend to like active markets that are moving fast. You know, it's your own personal taste.
+
+287
+00:14:08,650 --> 00:14:10,490
+但同样的概念依然适用。
+But, you know, the same concepts are applying.
+
+288
+00:14:11,510 --> 00:14:12,166
+现在，我们来讨论
+Now, we'll talk
+
+289
+00:14:12,166 --> 00:14:13,260
+这波上涨，
+about this move up, you
+
+290
+00:14:13,260 --> 00:14:14,572
+会发生什么？
+know, but, you know, what happens?
+
+291
+00:14:14,572 --> 00:14:18,948
+你有这波上涨，然后横盘，市场开始下跌。
+You know, you have this move up, and we sort of go sideways, and the market starts to head down.
+
+292
+00:14:19,030 --> 00:14:20,470
+出现了买卖失衡，
+You've got this sound and balance,
+
+293
+00:14:20,470 --> 00:14:21,910
+这告诉你，
+so it's telling you, you know,
+
+294
+00:14:21,910 --> 00:14:24,550
+市场无法继续上涨。现在开始抛售。
+the market couldn't continue up. Now, it's starting to sell off.
+
+295
+00:14:24,710 --> 00:14:26,150
+你应该考虑做空。
+You know, you should be thinking about getting short.
+
+296
+00:14:27,190 --> 00:14:30,370
+而且，你已经看到买卖失衡。
+And, you know, where's your, you have the sound and balance already.
+
+297
+00:14:30,870 --> 00:14:32,570
+所以，这里有一个控制点（POC）。
+Okay, so you've got the point of control right here.
+
+298
+00:14:33,070 --> 00:14:37,210
+我们上涨到距离它几个Tick的位置，然后转头向下。
+You know, we came up within a few ticks of it, and turned around and headed south.
+
+299
+00:14:37,370 --> 00:14:39,290
+你的控制点（POC）在这里，33.50。
+You know, your point of control is here at 33.50.
+
+300
+00:14:39,370 --> 00:14:42,410
+我们涨到47，然后转头下跌。
+We got up to, you know, 47, and turned down.
+
+301
+00:14:42,530 --> 00:14:45,570
+这里，你的控制点（POC）在 43 这个价位。
+You know, here, your point of control is at, wherever this is, 43.
+
+302
+00:14:46,030 --> 00:14:48,810
+是的，我们稍微突破了一下，然后继续下跌。
+Yeah, we got up through it a little bit, and then we continued down.
+
+303
+00:14:48,810 --> 00:14:52,790
+它在下跌过程中起到了阻力作用。
+You know, it's acting as your resistance on the move down.
+
+304
+00:14:54,990 --> 00:14:59,550
+这是原油的一个例子，市场波动比五年期更快。
+You know, that's an example in crude, you know, which is a much faster move in market than five years.
+
+305
+00:14:59,950 --> 00:15:01,730
+再来看一个原油图表。
+Again, here's a crude chart again.
+
+306
+00:15:01,850 --> 00:15:06,390
+我们在上涨，控制点（POC）在上涨过程中起到了支撑作用。
+You know, we're moving up, and point of control is acting as your support on the move up.
+
+307
+00:15:07,270 --> 00:15:08,378
+你
+You know, you
+
+308
+00:15:08,378 --> 00:15:10,965
+在这里看到了供给和
+have this change here in supply and
+
+309
+00:15:10,965 --> 00:15:16,509
+需求的变化，现在下跌时，控制点（POC）起到了阻力作用。
+demand, and now on the way down, your point of control is acting as resistance.
+
+310
+00:15:16,510 --> 00:15:21,130
+它突破了 2 个 Tick、3 个 Tick，这很正常。
+It's, you know, getting through it by, you know, two ticks, three ticks, which is fine.
+
+311
+00:15:21,870 --> 00:15:23,040
+当你
+You know, when you're
+
+312
+00:15:23,040 --> 00:15:24,795
+试图在回调时做空，
+trying to, you know, get short
+
+313
+00:15:24,795 --> 00:15:26,258
+或者在回调时做多，
+on a pullback or get
+
+314
+00:15:26,258 --> 00:15:27,721
+有时
+long on a pullback, sometimes
+
+315
+00:15:27,721 --> 00:15:32,988
+市场会超越它 2 个 Tick、3 个 Tick，有时甚至 4 个 Tick。
+the market overshoots it by, you know, a couple of ticks, you know, three ticks, sometimes four ticks.
+
+316
+00:15:33,110 --> 00:15:35,530
+这只是市场的本质。
+I mean, that's just the nature of the market.
+
+317
+00:15:35,690 --> 00:15:38,850
+它不会总在你期望的价位反转。
+You know, it doesn't always turn right at the level that you want it to.
+
+318
+00:15:38,910 --> 00:15:40,124
+在
+I mean, in the
+
+319
+00:15:40,124 --> 00:15:41,945
+最理想的情况下，是的，但
+best of all worlds, yes, but
+
+320
+00:15:41,945 --> 00:15:43,766
+问题是，有时它
+the problem, you know, sometimes it
+
+321
+00:15:43,766 --> 00:15:45,587
+不会给你这个机会，然后，
+doesn't give you that chance, and,
+
+322
+00:15:45,587 --> 00:15:52,568
+你错过了入场，市场就朝它应该去的方向继续运行。
+you know, you miss your entry, and then the market just continues in, you know, in a direction that it should be headed.
+
+323
+00:15:54,390 --> 00:15:57,070
+好，现在来看 E-mini 图表。
+Okay, now let's look at an E-mini chart.
+
+324
+00:15:57,990 --> 00:15:58,930
+情况是一样的。
+Now, it's the same thing.
+
+325
+00:15:58,990 --> 00:15:59,950
+这是你的控制点（POC）。
+Here's your point of control.
+
+326
+00:16:00,110 --> 00:16:01,810
+你假设市场会下跌。
+You know, you're assuming the market's going to move down.
+
+327
+00:16:02,090 --> 00:16:03,490
+你的控制点（POC）就在这里。
+You know, you've got your point of control right here.
+
+328
+00:16:03,990 --> 00:16:04,830
+我们一直低于它。
+We're staying below it.
+
+329
+00:16:04,910 --> 00:16:08,190
+下一根 K线回到控制点（POC）后又开始下跌。
+You know, you come right back up to the point of control on the next bar and sell off.
+
+330
+00:16:08,190 --> 00:16:11,670
+现在，控制点（POC）处出现了单印区。
+You know, now you've got the single print right at that point of control.
+
+331
+00:16:11,810 --> 00:16:14,730
+它在告诉你，没有后续跟进了。
+It's telling you, hey, you know, there's no more follow-through.
+
+332
+00:16:15,450 --> 00:16:16,069
+现在，
+You know, now
+
+333
+00:16:16,069 --> 00:16:17,101
+你的控制点（POC）在这根
+your point of control on
+
+334
+00:16:17,101 --> 00:16:18,339
+K线上，上涨到
+this bar, you know, get up
+
+335
+00:16:18,339 --> 00:16:22,468
+距离它仅1个Tick，或者说刚好超过1个Tick，然后回落。
+within a tick of it. You know, you just get passed of it by a tick, rather, and sell off.
+
+336
+00:16:22,790 --> 00:16:27,830
+控制点（POC）就在这里。上涨到距离1个Tick的位置，然后回落。
+You know, the point of control's right here. Get up to within, you know, one tick and sell off.
+
+337
+00:16:27,830 --> 00:16:31,190
+这里同样，上涨到距离1个Tick的位置，然后继续下跌。
+You know, here again, you get up to within one tick and are going lower.
+
+338
+00:16:32,590 --> 00:16:33,731
+这是
+You know, it's
+
+339
+00:16:33,731 --> 00:16:35,632
+你可以
+something you can, you know,
+
+340
+00:16:35,632 --> 00:16:37,914
+围绕它交易，或者
+trade around or, you know, place
+
+341
+00:16:37,914 --> 00:16:42,858
+在附近设置止损。如果你想移动止损的话。
+your stop around. You know, if you'd like to trail your stop. Okay.
+
+342
+00:16:43,040 --> 00:16:43,932
+另外，
+You know, again,
+
+343
+00:16:43,932 --> 00:16:44,824
+这是一个
+this is a
+
+344
+00:16:44,824 --> 00:16:46,014
+欧股指数。是一个股票指数。
+Eurostock. You know, it's
+
+345
+00:16:46,014 --> 00:16:50,179
+你上涨到这个价位。
+a stock index. And, you know, you're taking, you get up to this level.
+
+346
+00:16:50,420 --> 00:16:51,196
+你有
+You know, you've
+
+347
+00:16:51,196 --> 00:16:52,490
+单印区，
+got a single print, single
+
+348
+00:16:52,490 --> 00:16:54,301
+单印区。
+print. The ratio bounds low here with
+
+349
+00:16:54,301 --> 00:16:59,218
+比率下限在这里，伴随一些阻挡成交量。这是一个弱信号，但确实是阻挡成交量。不过，它给出了一个比率。
+some stopping volume. It's a weak one, but, you know, it's stopping volume. Nevertheless, it's giving you a ratio.
+
+350
+00:16:59,920 --> 00:17:00,780
+但
+You know, but
+
+351
+00:17:00,780 --> 00:17:02,214
+你有三个，
+you've got three, you know,
+
+352
+00:17:02,214 --> 00:17:04,222
+三个比率。
+three ratios. And, you know, it's telling
+
+353
+00:17:04,222 --> 00:17:06,230
+它在告诉你，市场没有得到
+you, hey, the market isn't getting the
+
+354
+00:17:06,230 --> 00:17:09,959
+你期望的后续跟进。所以，考虑做空。
+follow-through that, you know, you're expecting. So, you know, look to get short.
+
+355
+00:17:11,079 --> 00:17:12,052
+而且，
+And, you know,
+
+356
+00:17:12,052 --> 00:17:14,324
+如果你想做空，
+if you're looking to get short, you're
+
+357
+00:17:14,324 --> 00:17:18,219
+你会用控制点（POC）作为阻力位。
+using the point of controls as going to be your resistance levels.
+
+358
+00:17:18,400 --> 00:17:19,160
+所以，
+You know, so,
+
+359
+00:17:19,160 --> 00:17:20,427
+如果你在
+you know, if you're not
+
+360
+00:17:20,427 --> 00:17:22,201
+这根K线上还没做空，
+short in this bar, you know, looking
+
+361
+00:17:22,201 --> 00:17:23,975
+要在这根K线做空，它
+to get short in this bar, it
+
+362
+00:17:23,975 --> 00:17:25,495
+会在1个Tick内回升。这里，
+comes up within a tick. Here,
+
+363
+00:17:25,495 --> 00:17:33,858
+它又在1个Tick内回升。这里，也是1个Tick内回升。这里，直接回到1个Tick。所以你有机会在这些位置做空。
+it comes up back within a tick. Here, it comes up within a tick. Here, it comes right back to a tick. You know, so you have chances to get short in there.
+
+364
+00:17:37,940 --> 00:17:39,960
+好，快速看一下。这是债券图表。
+Okay, you know, just real quick. Here's the bond chart.
+
+365
+00:17:40,120 --> 00:17:40,751
+同样的情况，
+You know, same
+
+366
+00:17:40,751 --> 00:17:41,804
+thing, you know, on the
+
+367
+00:17:41,804 --> 00:17:43,067
+上涨和下跌时都一样。
+way up and on the way
+
+368
+00:17:43,067 --> 00:17:46,858
+逐步上涨，逐步上涨。你能看到买卖失衡。
+down. You know, working our way up, working our way up. You know, you've got the buying imbalances.
+
+369
+00:17:47,420 --> 00:17:49,040
+并没有遇到太多阻力。
+It's not really getting much resistance.
+
+370
+00:17:49,180 --> 00:17:49,924
+然后来到
+And you get
+
+371
+00:17:49,924 --> 00:17:51,164
+这里。然后，
+up here. And, you know,
+
+372
+00:17:51,164 --> 00:17:52,156
+发生了什么？
+what happens? You get
+
+373
+00:17:52,156 --> 00:17:54,637
+这里出现买卖失衡，那里出现卖盘失衡，那里出现卖盘失衡。
+a buying imbalance here, a selling imbalance, a selling imbalance.
+
+374
+00:17:54,740 --> 00:17:59,180
+就在K线处，你能看到供需在高点处发生转变。
+And right at the bar, you're seeing a shift in supply and demand happen right up here at the high.
+
+375
+00:17:59,960 --> 00:18:00,597
+You know, you
+
+376
+00:18:00,597 --> 00:18:01,659
+先出现早盘买盘失衡。
+get the early buying imbalance.
+
+377
+00:18:01,659 --> 00:18:02,721
+然后，
+Then, you know, late in
+
+378
+00:18:02,721 --> 00:18:03,783
+the bar, you get, you
+
+379
+00:18:03,783 --> 00:18:06,758
+K线尾盘出现卖盘。高点处出现大额负Delta。
+know, selling in there. You get a big negative delta right at the high.
+
+380
+00:18:06,880 --> 00:18:10,300
+这在告诉你，市场准备开始下跌。
+It's telling you, hey, the market's, you know, primed to start to sell off.
+
+381
+00:18:10,380 --> 00:18:11,048
+好，那么，
+Okay, so, you
+
+382
+00:18:11,048 --> 00:18:12,161
+你想入场。
+know, you want to get
+
+383
+00:18:12,161 --> 00:18:13,274
+那么，
+in. And, you know, where
+
+384
+00:18:13,274 --> 00:18:14,387
+你会在哪里
+are you going to be
+
+385
+00:18:14,387 --> 00:18:15,500
+设置止损？
+looking to place your stop?
+
+386
+00:18:15,500 --> 00:18:21,736
+如果你在下一根K线早盘入场，你会在控制点（POC）设置止损。
+You know, if you're getting in, you know, early in the next bar, you know, you're going to have a stop up here at the point of control.
+
+387
+00:18:22,300 --> 00:18:22,968
+You know, and,
+
+388
+00:18:22,968 --> 00:18:24,081
+you know, you're going to
+
+389
+00:18:24,081 --> 00:18:24,971
+你会把
+be looking at the
+
+390
+00:18:24,971 --> 00:18:27,198
+控制点（POC）视为下跌过程中的阻力位。
+point of control as your resistance on the move down.
+
+391
+00:18:27,200 --> 00:18:27,867
+如果
+You know, if
+
+392
+00:18:27,867 --> 00:18:28,979
+你想移动你的
+you want to trail your
+
+393
+00:18:28,979 --> 00:18:30,091
+止损，
+stop, you know, you can
+
+394
+00:18:30,091 --> 00:18:31,203
+可以在控制点（POC）附近
+trail your stop around the
+
+395
+00:18:31,203 --> 00:18:32,538
+移动止损。
+point of controls. You know, and
+
+396
+00:18:32,538 --> 00:18:33,650
+市场持续低于
+the market is staying below
+
+397
+00:18:33,650 --> 00:18:41,216
+控制点（POC）。这种情况下，市场下跌很快，几乎没有回撤到控制点（POC）。
+the point of controls. You know, it doesn't really, you know, in this case, the market dropped pretty quick. And, you know, there really wasn't any much retracement back into the point of controls.
+
+398
+00:18:45,130 --> 00:18:47,730
+最后，这仍是债券图表。
+And, you know, lastly, this is, again, this is a bond chart.
+
+399
+00:18:50,300 --> 00:18:51,135
+早期
+You know, early
+
+400
+00:18:51,135 --> 00:18:52,527
+看起来
+on, it really looked like
+
+401
+00:18:52,527 --> 00:18:53,919
+是在横盘。
+we're going sideways. You know,
+
+402
+00:18:53,919 --> 00:18:55,311
+出现红色K线，
+you get a red bar,
+
+403
+00:18:55,311 --> 00:19:01,438
+绿色K线，红色K线，绿色K线。控制点（POC）在相近价位形成。
+a green bar, a red bar, a green bar. And you're getting the point of controls, you know, around the same levels.
+
+404
+00:19:01,520 --> 00:19:02,169
+所以
+You know, so
+
+405
+00:19:02,169 --> 00:19:03,251
+这里连续三个
+you've got three in a
+
+406
+00:19:03,251 --> 00:19:04,333
+控制点（POC）。
+row here. You know, even
+
+407
+00:19:04,333 --> 00:19:05,415
+甚至
+to a lesser extent, you
+
+408
+00:19:05,415 --> 00:19:06,497
+标出来
+know, you draw it out
+
+409
+00:19:06,497 --> 00:19:11,477
+这里。控制点（POC）、控制点（POC）在同一价位，这里稍高一些。
+here. You've got, you know, point of control, point of control at the same level. You know, here it's a little bit higher.
+
+410
+00:19:13,220 --> 00:19:14,960
+这种情况比较棘手。
+You know, it's tricky when it's like this.
+
+411
+00:19:15,100 --> 00:19:16,510
+因为处于区间，
+It's in a range because,
+
+412
+00:19:16,510 --> 00:19:18,485
+你想把它
+you know, you want to take it
+
+413
+00:19:18,485 --> 00:19:22,999
+当作支撑，尤其是市场长时间在其上方运行时。
+as support, especially when you're seeing you're all just spending a lot of time above it.
+
+414
+00:19:23,000 --> 00:19:24,780
+但市场可能快速跌破它。
+But, you know, you can go below it pretty quick.
+
+415
+00:19:25,780 --> 00:19:30,280
+这种情况下，支撑也可能变成阻力，
+You know, this is a case where your support can, you know, also become your resistance
+
+416
+00:19:30,280 --> 00:19:33,100
+如果跌破支撑位。
+if you break the, you know, you break the support level.
+
+417
+00:19:33,700 --> 00:19:41,440
+当控制点（POC）这样排列时，我发现通常在反向突破时，
+When it's strung out like this, I find that oftentimes, you know, when it breaks through in the opposite direction.
+
+418
+00:19:41,560 --> 00:19:42,652
+比如这里，
+Like here, I'm
+
+419
+00:19:42,652 --> 00:19:44,473
+我倾向于认为它
+inclined to think it's, you
+
+420
+00:19:44,473 --> 00:19:47,023
+是支撑位，因为
+know, a support level because, you know,
+
+421
+00:19:47,023 --> 00:19:51,758
+这里早些时候有买卖失衡，后来价格大致守住了。
+you have the imbalances here early and we're sort of holding it later.
+
+422
+00:19:52,900 --> 00:19:57,140
+我不记得这张图后面是什么样了。是上涨还是下跌。
+I don't remember what the rest of this chart looked like. We rallied or sold off.
+
+423
+00:19:57,200 --> 00:19:58,495
+但我通常发现，
+But I tend to
+
+424
+00:19:58,495 --> 00:20:00,437
+当我们在支撑位上方
+find when we're spending, you know,
+
+425
+00:20:00,437 --> 00:20:02,703
+花费更多时间时，
+this time, more time above the support
+
+426
+00:20:02,703 --> 00:20:09,178
+如果开始跌破并下跌，它会很快变成阻力位。
+level that if we start to come out of it and sell off, it's going to become resistance very fast.
+
+427
+00:20:09,700 --> 00:20:13,140
+而且我经常发现，一旦开始下跌，可能会迅速下跌。
+And oftentimes I find once it starts to sell off, it can sell off pretty quick.
+
+428
+00:20:13,140 --> 00:20:18,800
+好的，这是第9课‘控制点’的结束。
+Okay, so that's the end of Lesson 9, Pointing Controls.
+
+429
+00:20:18,800 --> 00:20:22,860
+下一课中，我将解释Delta的重要性及其解读方法。
+In the next lesson, I will explain the importance of delta and how to interpret it.
+
+430
+00:20:23,320 --> 00:20:25,535
+Delta是订单流中非常独特的东西，
+Delta is something that's extremely unique
+
+431
+00:20:25,535 --> 00:20:27,750
+在普通图表、普通柱状线或普通K线图中找不到。
+to order flows that you're not
+
+432
+00:20:27,750 --> 00:20:32,180
+在普通图表、普通柱状线、普通K线图中能找到。
+going to find on normal charts, normal bar charts, normal candlestick charts.
+
+433
+00:20:32,940 --> 00:20:33,786
+而你
+And, you
+
+434
+00:20:33,786 --> 00:20:35,902
+它非常强大，尤其
+know, it's very powerful, especially
+
+435
+00:20:35,902 --> 00:20:38,865
+如果能将其
+if you can sort of mesh it
+
+436
+00:20:38,865 --> 00:20:41,405
+与其他几种分析结合，
+in with a couple other analysis,
+
+437
+00:20:41,405 --> 00:20:53,258
+比如控制点，一旦理解Delta，它将大幅提升你的交易水平和效果。
+you know, like Pointing Controls, and, you know, it's something that is, once you understand delta, it's going to really make your trading much better and more powerful.
+
+438
+00:20:54,240 --> 00:20:55,640
+这就是第9课的结束。
+So that's the end of Lesson 9.
+
+439
+00:20:55,740 --> 00:21:14,400
+谢谢，第10课见。第10课见。谢谢。
+Thank you, and I'll see you in Lesson 10. I'll see you in Lesson 10. Thank you.
+
+===== END AFTER_TRANSLATE =====

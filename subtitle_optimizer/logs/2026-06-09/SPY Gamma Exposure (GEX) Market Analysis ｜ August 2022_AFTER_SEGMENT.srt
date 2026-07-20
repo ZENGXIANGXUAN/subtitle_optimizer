@@ -1,0 +1,2334 @@
+===== AFTER_SEGMENT (583 entries) =====
+1
+00:00:00,000 --> 00:00:01,335
+What's going on, guys? Brian's here.
+
+2
+00:00:01,335 --> 00:00:04,680
+Today is Monday, August 1st, 2022, and the market is closed.
+
+3
+00:00:04,680 --> 00:00:08,200
+Just want to share a few thoughts as well as present some information to you guys.
+
+4
+00:00:08,200 --> 00:00:10,432
+So what we're looking at is the SPY,
+
+5
+00:00:10,432 --> 00:00:12,385
+and this is the Advanced Gex page
+
+6
+00:00:12,385 --> 00:00:15,733
+on Quant Trading App, also known as the Advanced Gamma Exposure page.
+
+7
+00:00:15,735 --> 00:00:18,749
+This is showing us a report that's generated based on
+
+8
+00:00:18,749 --> 00:00:20,859
+every single expiration in the SPY and
+
+9
+00:00:20,859 --> 00:00:24,174
+every single strike price that has some sort of gamma exposure.
+
+10
+00:00:24,175 --> 00:00:25,775
+And then it's presenting the information in this
+
+11
+00:00:25,775 --> 00:00:26,975
+table right here, as well as
+
+12
+00:00:26,975 --> 00:00:29,575
+a graph in the bottom that we'll get to in a few minutes.
+
+13
+00:00:29,575 --> 00:00:31,515
+Now, I want to point out some key levels.
+
+14
+00:00:31,515 --> 00:00:34,750
+If you don't know anything about gamma exposure, don't necessarily worry about that.
+
+15
+00:00:34,750 --> 00:00:36,825
+It's more so about the levels right here.
+
+16
+00:00:36,825 --> 00:00:38,398
+I've done other videos on gamma
+
+17
+00:00:38,398 --> 00:00:39,971
+exposure, and I will be doing
+
+18
+00:00:39,971 --> 00:00:42,068
+plenty more, as well as some basic and
+
+19
+00:00:42,068 --> 00:00:45,738
+introductory levels to kind of expose this type of information to some newer traders.
+
+20
+00:00:45,740 --> 00:00:47,598
+But as we scroll up, the first
+
+21
+00:00:47,598 --> 00:00:51,844
+thing to take away right now is the market is currently in a positive gamma state.
+
+22
+00:00:51,845 --> 00:00:54,305
+So if we were to scroll down, this little knob right here,
+
+23
+00:00:54,305 --> 00:00:56,093
+this little button is just letting us
+
+24
+00:00:56,093 --> 00:00:57,370
+know that this is what's
+
+25
+00:00:57,370 --> 00:01:00,179
+referred to as the gamma flip. Or the zero gex level.
+
+26
+00:01:00,180 --> 00:01:02,596
+This level is just saying if the market
+
+27
+00:01:02,596 --> 00:01:04,710
+was to drop below this area right
+
+28
+00:01:04,710 --> 00:01:08,938
+here, below this area, the gamma exposure, the net gex will actually turn negative.
+
+29
+00:01:08,940 --> 00:01:13,675
+And then as long as we remain above this level, the net gex is going to be positive.
+
+30
+00:01:13,675 --> 00:01:16,435
+If you don't know anything about gex, just think of it this way.
+
+31
+00:01:16,435 --> 00:01:20,190
+If this number is positive, then volatility is likely to be reduced.
+
+32
+00:01:20,190 --> 00:01:25,560
+And if this number turns negative, then volatility is likely to be increased.
+
+33
+00:01:25,560 --> 00:01:28,280
+That's just because of the dynamics behind what
+
+34
+00:01:28,280 --> 00:01:30,660
+market makers, also known as the dealers,
+
+35
+00:01:30,660 --> 00:01:35,420
+what they're doing when they're delta hedging their positions based on their gamma exposure.
+
+36
+00:01:35,420 --> 00:01:36,902
+So as we scroll down, think
+
+37
+00:01:36,902 --> 00:01:38,384
+of it also this way as
+
+38
+00:01:38,384 --> 00:01:44,808
+for the rest of this video, think of this largely as support and resistance as that might make it a little bit easier for you guys.
+
+39
+00:01:44,810 --> 00:01:49,330
+The last traded price of the SPY was $4,1083 when this page was generated.
+
+40
+00:01:49,330 --> 00:01:50,727
+And as we can see right
+
+41
+00:01:50,727 --> 00:01:54,219
+here, this is the closest strike price. So that's why this is highlighted as yellow.
+
+42
+00:01:54,220 --> 00:02:00,150
+Think of each of these levels that are protruding out as likely to be very strong resistance levels.
+
+43
+00:02:00,150 --> 00:02:01,835
+But I want to point something out to you guys.
+
+44
+00:02:01,835 --> 00:02:03,085
+What we have right here
+
+45
+00:02:03,085 --> 00:02:04,335
+is the 410 strike. And the 410,
+
+46
+00:02:04,335 --> 00:02:06,335
+the reason this green button is right here
+
+47
+00:02:06,335 --> 00:02:11,335
+is just letting us know that this is the strike price with the highest positive gamma across all expirations combined.
+
+48
+00:02:11,835 --> 00:02:16,255
+More importantly, it's also the strike price that has the most amount of call open interest.
+
+49
+00:02:16,255 --> 00:02:17,120
+And then collectively,
+
+50
+00:02:17,120 --> 00:02:19,885
+this is the strike price combined that has a decent
+
+51
+00:02:19,885 --> 00:02:21,820
+amount of total open interest as we
+
+52
+00:02:21,820 --> 00:02:23,479
+combine both the calls and puts.
+
+53
+00:02:23,480 --> 00:02:28,990
+However, as I scroll up, you guys can see that things tend to taper off as we get past 420.
+
+54
+00:02:28,990 --> 00:02:31,905
+And we do see that there is a decent amount of gamma exposure here.
+
+55
+00:02:31,905 --> 00:02:37,575
+And then the 425 level, it pokes out a little bit, but nothing in comparison to the 420 level right here.
+
+56
+00:02:37,575 --> 00:02:42,955
+Next high gamma exposure strike price makes sense is the 430 level all the way up here.
+
+57
+00:02:42,955 --> 00:02:47,130
+But then you guys can see that the open interest is nowhere near as high as it is right here.
+
+58
+00:02:47,130 --> 00:02:47,675
+More importantly, if
+
+59
+00:02:47,675 --> 00:02:48,765
+I were to scroll down, you
+
+60
+00:02:48,765 --> 00:02:50,945
+guys can see that there's a little bit of a heat map.
+
+61
+00:02:50,945 --> 00:02:52,520
+So the levels that are dark
+
+62
+00:02:52,520 --> 00:02:54,095
+blue, and then this color blue,
+
+63
+00:02:54,095 --> 00:02:55,932
+and then the really light blue, it's
+
+64
+00:02:55,932 --> 00:02:59,344
+just highlighting the levels that have the highest amount of total open interest.
+
+65
+00:02:59,345 --> 00:03:00,773
+So if I actually were
+
+66
+00:03:00,773 --> 00:03:02,773
+to sort this table, you guys can
+
+67
+00:03:02,773 --> 00:03:04,773
+see that the highest open interest strike
+
+68
+00:03:04,773 --> 00:03:07,058
+price right now is the 370 across all expirations.
+
+69
+00:03:07,345 --> 00:03:10,405
+And that's really because it's so dominated by puts.
+
+70
+00:03:10,405 --> 00:03:18,245
+However, if the market was to pull back to 370, it would actually have to drop almost 10%. So 9.94% to be exact.
+
+71
+00:03:18,245 --> 00:03:22,700
+If we were to sort this back by the actual strike prices, as I pointed that out to you guys,
+
+72
+00:03:22,700 --> 00:03:23,560
+you guys can
+
+73
+00:03:23,560 --> 00:03:25,567
+see now if we scroll down, there
+
+74
+00:03:25,567 --> 00:03:27,574
+isn't really much open interest as there's
+
+75
+00:03:27,574 --> 00:03:29,007
+nothing really highlighted blue past
+
+76
+00:03:29,007 --> 00:03:30,727
+this strike price of 420 right here.
+
+77
+00:03:31,015 --> 00:03:33,615
+Because if there was something that's highlighted blue,
+
+78
+00:03:33,615 --> 00:03:37,155
+it means it would be in the top 10 high open interest strike prices.
+
+79
+00:03:37,155 --> 00:03:40,850
+Because this is the highest two, then this is the next highest four, and then the next highest four.
+
+80
+00:03:40,850 --> 00:03:42,973
+So combined, these are the top
+
+81
+00:03:42,973 --> 00:03:45,450
+10 highest strike prices We can see that
+
+82
+00:03:45,450 --> 00:03:48,989
+most of them are dominated by a negative gamma exposure.
+
+83
+00:03:49,345 --> 00:03:50,140
+That makes sense.
+
+84
+00:03:50,140 --> 00:03:52,616
+Now, there's also generally always more open interest
+
+85
+00:03:52,616 --> 00:03:54,473
+in puts than there are in
+
+86
+00:03:54,473 --> 00:03:57,568
+calls. It's just kind of the way market participants are.
+
+87
+00:03:57,570 --> 00:03:58,941
+Huge institutions, huge funds,
+
+88
+00:03:58,941 --> 00:04:00,998
+they will generally be long equity
+
+89
+00:04:00,998 --> 00:04:03,055
+as well as buying puts because
+
+90
+00:04:03,055 --> 00:04:04,769
+puts are seen as insurance.
+
+91
+00:04:04,770 --> 00:04:11,495
+So people are more interested in buying protection or buying puts on their long-term portfolios.
+
+92
+00:04:11,495 --> 00:04:13,062
+However, there is a little bit
+
+93
+00:04:13,062 --> 00:04:15,152
+of a skew between these two numbers whenever
+
+94
+00:04:15,152 --> 00:04:17,503
+one side gets really more dominant than the other.
+
+95
+00:04:17,505 --> 00:04:21,800
+And that's referred to as the put-call ratio, but that's not necessarily the subject matter of this video.
+
+96
+00:04:21,800 --> 00:04:25,725
+So as I move right along, let's just sort this back again by the strike prices.
+
+97
+00:04:25,725 --> 00:04:28,055
+And let's go to the current spot price right here.
+
+98
+00:04:28,055 --> 00:04:30,713
+So one way to interpret this information is if the
+
+99
+00:04:30,713 --> 00:04:32,574
+market was to close below 410 on this
+
+100
+00:04:32,574 --> 00:04:34,435
+409 level, we can see that there really
+
+101
+00:04:34,435 --> 00:04:37,891
+isn't much support in the market until we get down to this 400 level.
+
+102
+00:04:38,690 --> 00:04:40,571
+Price will be likely to stick around this
+
+103
+00:04:40,571 --> 00:04:42,217
+405 level for a little bit just because
+
+104
+00:04:42,217 --> 00:04:44,098
+there's a decent amount of gamma exposure here
+
+105
+00:04:44,098 --> 00:04:45,979
+to allow price to kind of digest the
+
+106
+00:04:45,979 --> 00:04:51,858
+move to see if we're either going to bounce back up to this level or if we were going to continue to sell off to 400.
+
+107
+00:04:52,330 --> 00:04:53,550
+Another important thing to take note
+
+108
+00:04:53,550 --> 00:04:54,770
+of is this little knob right
+
+109
+00:04:54,770 --> 00:04:57,210
+here is just letting us know this is the absolute gamma strike.
+
+110
+00:04:57,210 --> 00:05:00,140
+So this is the strike price that has the most
+
+111
+00:05:00,140 --> 00:05:01,605
+amount of gamma exposure in
+
+112
+00:05:01,605 --> 00:05:04,828
+the market collectively across all expirations, all strike prices right now.
+
+113
+00:05:04,830 --> 00:05:07,995
+So this is a very significant level to keep in mind.
+
+114
+00:05:07,995 --> 00:05:12,065
+The absolute gamma strike is going to perceive There's a level that's going to have a lot of liquidity.
+
+115
+00:05:12,065 --> 00:05:15,545
+We wouldn't expect the price of the SPY to just slice right through the level.
+
+116
+00:05:15,545 --> 00:05:17,233
+If it did come down to this level,
+
+117
+00:05:17,233 --> 00:05:20,820
+it's likely to chop around it for a bit as the dealers will be hedging their positions.
+
+118
+00:05:20,820 --> 00:05:22,641
+And it might take a few days or
+
+119
+00:05:22,641 --> 00:05:24,462
+so to kind of consolidate to decide which
+
+120
+00:05:24,462 --> 00:05:29,014
+way things are going to continue, if it's going to reverse or if it's going to continue to sell off.
+
+121
+00:05:29,015 --> 00:05:34,195
+Now, implied volatility will be likely a big factor in what will happen if we got down to the 400 level.
+
+122
+00:05:34,195 --> 00:05:35,919
+Pretty much if we get down to 400
+
+123
+00:05:35,919 --> 00:05:37,397
+and you see implied volatility, something
+
+124
+00:05:37,397 --> 00:05:41,832
+like the VIX increasing, you can use that as a gauge as we're likely to continue selling off.
+
+125
+00:05:42,080 --> 00:05:44,566
+However, if we did get down to this 400 level
+
+126
+00:05:44,566 --> 00:05:46,775
+and the VIX was not continuing to rise,
+
+127
+00:05:46,775 --> 00:05:48,984
+we can actually see this level as a
+
+128
+00:05:48,984 --> 00:05:56,442
+massive repellent to the markets as Vanna and Charm will actually start influencing the spot price of the SPY and we can expect some sort of reversal.
+
+129
+00:05:56,720 --> 00:05:58,045
+But as we take a look at this
+
+130
+00:05:58,045 --> 00:06:00,364
+again, if some of this is going over your head, don't worry about it.
+
+131
+00:06:00,365 --> 00:06:01,685
+Just think of it this way.
+
+132
+00:06:01,685 --> 00:06:03,720
+We have strong support at these levels right here.
+
+133
+00:06:03,720 --> 00:06:05,331
+This whole area is likely to be
+
+134
+00:06:05,331 --> 00:06:09,014
+very choppy as the market is trying to figure out which way it's going to go.
+
+135
+00:06:09,015 --> 00:06:14,795
+Below this level, we don't have much support so we can sell off, especially if we were to close below 408.
+
+136
+00:06:14,795 --> 00:06:18,000
+It would not be a surprise if we actually just gapped down to 405.
+
+137
+00:06:18,000 --> 00:06:20,114
+If the market struggled at 405, we would
+
+138
+00:06:20,114 --> 00:06:21,926
+likely just slice straight down to
+
+139
+00:06:21,926 --> 00:06:24,947
+400, maybe chop around here for an hour or two at 403.
+
+140
+00:06:25,855 --> 00:06:29,785
+Again, it depends on the catalyst. It depends on sentiments. It depends on other little factors.
+
+141
+00:06:29,785 --> 00:06:34,400
+I'm just highlighting things and pointing out the way to decipher the gamma exposure levels.
+
+142
+00:06:34,400 --> 00:06:36,745
+So I would put some levels on your chart right now.
+
+143
+00:06:36,745 --> 00:06:38,201
+If you're not a QuantTrading app member,
+
+144
+00:06:38,201 --> 00:06:39,657
+the QuantTrading app members, we actually have
+
+145
+00:06:39,657 --> 00:06:42,153
+tools and we can kind of pull this up on our own,
+
+146
+00:06:42,155 --> 00:06:43,106
+as well as we have
+
+147
+00:06:43,106 --> 00:06:46,719
+a Think of Swim script that actually plots some of these levels on our charts for the weekly levels.
+
+148
+00:06:46,720 --> 00:06:48,331
+Now let's move right along and
+
+149
+00:06:48,331 --> 00:06:49,942
+actually take a look at the
+
+150
+00:06:49,942 --> 00:06:53,433
+same report, but this time it's generating based on just the August expiration.
+
+151
+00:06:53,435 --> 00:06:55,051
+So if I wanted to include, say,
+
+152
+00:06:55,051 --> 00:06:56,667
+for example, something like November, I would
+
+153
+00:06:56,667 --> 00:06:59,899
+just press this and maybe the December monthlies, and I would just press submit.
+
+154
+00:06:59,900 --> 00:07:01,414
+And that way it would generate a
+
+155
+00:07:01,414 --> 00:07:02,928
+completely new report. But we want to
+
+156
+00:07:02,928 --> 00:07:04,658
+focus on just August because it's August 1st.
+
+157
+00:07:04,660 --> 00:07:05,660
+It's a fresh month right here.
+
+158
+00:07:05,660 --> 00:07:08,855
+And let's take a look to see what type of information this looks like.
+
+159
+00:07:08,855 --> 00:07:13,185
+So you guys can notice, first and foremost, there's actually no blue as I continue to scroll.
+
+160
+00:07:13,185 --> 00:07:15,570
+All of the blue for August is all the way down here.
+
+161
+00:07:15,570 --> 00:07:20,595
+So that's pretty alarming if you're looking to be bullish or you're expecting the market to continue rallying.
+
+162
+00:07:20,595 --> 00:07:22,450
+Now, it doesn't mean we won't rally,
+
+163
+00:07:22,450 --> 00:07:28,370
+but I wouldn't expect the gains to hold unless we started seeing more open interest opening up up here.
+
+164
+00:07:28,370 --> 00:07:32,258
+That's just generally the way rallies are sustained because with each passing
+
+165
+00:07:32,258 --> 00:07:36,146
+year, the options market actually starts to play a major role on
+
+166
+00:07:36,146 --> 00:07:40,034
+the equities market because there's more and more participants trading options these
+
+167
+00:07:40,034 --> 00:07:45,218
+days than there were three years ago, four years ago, five years ago, six years ago.
+
+168
+00:07:45,220 --> 00:07:48,421
+And again, the dynamics between what the market makers have to do
+
+169
+00:07:48,421 --> 00:07:50,555
+when you buy or sell your calls or
+
+170
+00:07:50,555 --> 00:07:52,689
+your puts, the same way institutions and hedge
+
+171
+00:07:52,689 --> 00:07:58,024
+funds as they're buying and selling their calls and puts, the market makers on the opposite end of their trade.
+
+172
+00:07:58,025 --> 00:08:02,265
+So all of those things that are happening behind the scenes are going to be affecting the stock price.
+
+173
+00:08:02,265 --> 00:08:03,960
+Now I'm highlighting 420.
+
+174
+00:08:03,960 --> 00:08:05,195
+So let's take a look at the chart.
+
+175
+00:08:05,195 --> 00:08:09,070
+And what I have are two gray boxes on the chart.
+
+176
+00:08:09,070 --> 00:08:13,890
+These are sometimes referred to as shadow boxes by some traders or other traders call it the measured move.
+
+177
+00:08:13,890 --> 00:08:18,540
+So I just took the last big rally that we had in the market. I put a rectangle over those prices.
+
+178
+00:08:18,540 --> 00:08:22,950
+So starting from the low and starting and where it ended at the high before we pulled back.
+
+179
+00:08:22,950 --> 00:08:26,541
+And then I just duplicated the exact same rectangle over this area
+
+180
+00:08:26,541 --> 00:08:31,329
+here, because this was our last major low all the way up until the right here.
+
+181
+00:08:31,330 --> 00:08:34,100
+So these boxes are exactly the same in width and height.
+
+182
+00:08:34,100 --> 00:08:39,555
+So if we take a look at this from a width perspective, we can see that this is a representation of time.
+
+183
+00:08:39,555 --> 00:08:43,550
+And if we were to think of this as when will the markets rally
+
+184
+00:08:43,550 --> 00:08:46,403
+stop in terms of a timeframe, if you use the
+
+185
+00:08:46,403 --> 00:08:51,539
+measured move concept, we're likely to start meeting some sort of resistance right here because the same amount
+
+186
+00:08:51,540 --> 00:08:54,125
+of time has passed by for the last rally.
+
+187
+00:08:54,125 --> 00:08:56,901
+Now, if we take a look at this also, we can see
+
+188
+00:08:56,901 --> 00:09:01,065
+that there was a massive amount of consolidation that took place back in May and it made sense.
+
+189
+00:09:01,065 --> 00:09:03,122
+The CPI numbers came out right here and
+
+190
+00:09:03,122 --> 00:09:07,494
+actually shocked a lot of market participants as the numbers came in a lot higher than expected.
+
+191
+00:09:07,495 --> 00:09:10,815
+And the market dropped over 10, 11% I believe right here.
+
+192
+00:09:10,815 --> 00:09:13,597
+And what we just experienced over the past couple of weeks was
+
+193
+00:09:13,597 --> 00:09:15,220
+an over a 10% rally from this low
+
+194
+00:09:15,220 --> 00:09:18,697
+to where we actually just closed that here. But we are back in this area.
+
+195
+00:09:18,930 --> 00:09:22,046
+So one way to think of this is a lot of the
+
+196
+00:09:22,046 --> 00:09:27,759
+participants that bought stock back in this timeframe right here. They actually had to hold their positions in the red down over 10%.
+
+197
+00:09:28,020 --> 00:09:33,645
+And now we're back at where they initially entered their positions. So they have a couple of decisions to make.
+
+198
+00:09:33,645 --> 00:09:35,631
+Either they close the trades out now and
+
+199
+00:09:35,631 --> 00:09:38,113
+just take a break even. So which could be considered
+
+200
+00:09:38,113 --> 00:09:44,567
+a win if you held the position down minus a 10% and now you have a chance to close it out for a 0% loss for some traders.
+
+201
+00:09:45,065 --> 00:09:47,787
+I mean, if you're anything like me and you've held the position
+
+202
+00:09:47,787 --> 00:09:50,509
+down and it comes back to your break even spot, if you've
+
+203
+00:09:50,509 --> 00:09:56,634
+been down for a while, this is all the way back in May. We're now in August 1st. You're generally going to want to close the position.
+
+204
+00:09:56,635 --> 00:09:58,962
+Again, different timeframes. If you're investing for the next five
+
+205
+00:09:58,962 --> 00:10:04,316
+to 10 years, then it might not necessarily matter for you because you're just expecting this to be some sort of a short-term pullback.
+
+206
+00:10:04,550 --> 00:10:07,435
+And you're thinking the market's going all the way up to 550,
+
+207
+00:10:07,435 --> 00:10:10,795
+600, maybe even 700 or so, depending on your timeframe.
+
+208
+00:10:10,795 --> 00:10:14,540
+But for short-term traders, this might be seen as a place to close out the position.
+
+209
+00:10:14,540 --> 00:10:16,292
+So this is going to create some sort
+
+210
+00:10:16,292 --> 00:10:17,606
+of supply or some sort of
+
+211
+00:10:17,606 --> 00:10:19,358
+downward pressure on the market in this area.
+
+212
+00:10:19,360 --> 00:10:21,408
+Now, at the top of this shadow box,
+
+213
+00:10:21,408 --> 00:10:22,944
+at the top of this measured
+
+214
+00:10:22,944 --> 00:10:25,504
+move, we have this level right here, which is a 417.
+
+215
+00:10:26,800 --> 00:10:29,710
+And the 420 level is right here.
+
+216
+00:10:29,710 --> 00:10:31,176
+This gray level on my chart is
+
+217
+00:10:31,176 --> 00:10:34,319
+a 200-day moving average. So this is also a key level to keep in mind.
+
+218
+00:10:34,320 --> 00:10:39,215
+That's likely to continue to start dropping down to get to at least the 430 level.
+
+219
+00:10:39,215 --> 00:10:41,285
+And possibly if we continue in the downtrend
+
+220
+00:10:41,285 --> 00:10:42,837
+that the market's been in, this
+
+221
+00:10:42,837 --> 00:10:45,165
+level is likely to then drop down to about 420.
+
+222
+00:10:45,425 --> 00:10:47,916
+So it would make sense that there aren't
+
+223
+00:10:47,916 --> 00:10:50,407
+necessarily a lot of participants right now that
+
+224
+00:10:50,407 --> 00:10:52,586
+are expecting the markets to go past 420,
+
+225
+00:10:52,586 --> 00:10:57,257
+especially for the month of August after we just had this massive rally during July.
+
+226
+00:10:57,570 --> 00:10:59,291
+However, again, it doesn't mean that
+
+227
+00:10:59,291 --> 00:11:01,012
+the market won't necessarily go higher.
+
+228
+00:11:01,012 --> 00:11:03,307
+It just is not likely to be a
+
+229
+00:11:03,307 --> 00:11:09,044
+sustained rally, meaning the pullback will be very harsh, or there won't be a lot of support on the pullback.
+
+230
+00:11:09,045 --> 00:11:10,368
+Later on in this video, I'll
+
+231
+00:11:10,368 --> 00:11:11,691
+show you guys different ways. You
+
+232
+00:11:11,691 --> 00:11:14,338
+know, you can take trades using spreads with this type of information.
+
+233
+00:11:14,340 --> 00:11:15,464
+But as we move right along,
+
+234
+00:11:15,464 --> 00:11:16,588
+I wanted you guys to have
+
+235
+00:11:16,588 --> 00:11:17,525
+some sort of context in
+
+236
+00:11:17,525 --> 00:11:19,773
+terms of the chart and what the market is looking like currently.
+
+237
+00:11:19,775 --> 00:11:21,535
+Right here, we have the 400 level.
+
+238
+00:11:21,535 --> 00:11:24,500
+So the 400 level, obviously, it's a very whole psychological level.
+
+239
+00:11:24,500 --> 00:11:27,725
+It's been an important level in play from since this year.
+
+240
+00:11:27,725 --> 00:11:30,822
+We can see how many times prices spent around this level and
+
+241
+00:11:30,822 --> 00:11:33,661
+how it's interacted with it every time it's touched the 400 level.
+
+242
+00:11:33,920 --> 00:11:36,304
+So if we were to take a look and the 50% retracement
+
+243
+00:11:36,304 --> 00:11:38,038
+from the most recent swing low, which would
+
+244
+00:11:38,038 --> 00:11:43,457
+be right there all the way up to this swing high, we can see there's a little bit of confluence in this area right here.
+
+245
+00:11:43,675 --> 00:11:49,220
+This would just mean it's the 50% pullback from the last rally and the market tends to move in waves.
+
+246
+00:11:49,220 --> 00:11:51,890
+So halfway back, as is sometimes referred to as a
+
+247
+00:11:51,890 --> 00:11:53,759
+50% retracement is a little bit of significance
+
+248
+00:11:53,759 --> 00:11:57,231
+because there's likely to be some sort of buyers on that retracement level
+
+249
+00:11:57,500 --> 00:12:03,140
+right there, just like there's likely to be sellers whenever a stock price puts in a 50% retracement from the high.
+
+250
+00:12:03,140 --> 00:12:05,446
+So in other words, if we take a look at
+
+251
+00:12:05,446 --> 00:12:08,444
+this sell-off here, when it bounced back up, this is about a 50% retracement.
+
+252
+00:12:08,675 --> 00:12:12,490
+As it sold off, it came down to here and it bounced back. This was around a 50% retracement.
+
+253
+00:12:12,490 --> 00:12:14,900
+Sold off. It bounced. This was about a 50% retracement.
+
+254
+00:12:14,900 --> 00:12:16,771
+So I'm not going to draw out every single one,
+
+255
+00:12:16,771 --> 00:12:17,706
+but just wanted to bring
+
+256
+00:12:17,706 --> 00:12:20,138
+that to your attention in case you guys were not aware of that.
+
+257
+00:12:20,140 --> 00:12:21,061
+So you see, here's
+
+258
+00:12:21,061 --> 00:12:22,442
+our high. Market sells all the
+
+259
+00:12:22,442 --> 00:12:27,048
+way off. And when we bounced, we came back to the 50% retracement before we sold off again and so forth.
+
+260
+00:12:27,280 --> 00:12:28,840
+You guys can do that on your own.
+
+261
+00:12:28,840 --> 00:12:33,260
+Just use any type of tool that has the 50% retracement on your Fibonacci and then just,
+
+262
+00:12:33,260 --> 00:12:34,100
+you know, plot that out.
+
+263
+00:12:34,100 --> 00:12:37,710
+You're generally looking for a major, a swing low to a swing high.
+
+264
+00:12:37,710 --> 00:12:39,415
+There's a swing low, swing high.
+
+265
+00:12:39,415 --> 00:12:41,035
+Here's a swing low, swing high.
+
+266
+00:12:41,035 --> 00:12:43,095
+This retracement was not a 50% pullback.
+
+267
+00:12:43,095 --> 00:12:44,908
+It actually stopped at the 50-day moving
+
+268
+00:12:44,908 --> 00:12:46,721
+average before it pushed, continued higher as
+
+269
+00:12:46,721 --> 00:12:49,570
+the trend was pretty strong over the past couple of weeks.
+
+270
+00:12:49,570 --> 00:12:51,266
+Now, as we jump back to the gamma
+
+271
+00:12:51,266 --> 00:12:52,750
+exposure page, and we're looking at it
+
+272
+00:12:52,750 --> 00:12:55,718
+for the month of August, we can see the same type of information here.
+
+273
+00:12:55,720 --> 00:12:58,910
+The 410 level likely to hold as some sort of support.
+
+274
+00:12:58,910 --> 00:13:01,007
+However, if the market closes below 410 on
+
+275
+00:13:01,007 --> 00:13:03,404
+any given day, we can make the assumption
+
+276
+00:13:03,404 --> 00:13:08,199
+we're probably going to go a little bit lower if it fails to reclaim this level.
+
+277
+00:13:08,500 --> 00:13:10,148
+It's very significant because, one,
+
+278
+00:13:10,148 --> 00:13:12,125
+the 411 strike, and again, you think
+
+279
+00:13:12,125 --> 00:13:16,409
+of the zero gex level or the gamma flip level as an area.
+
+280
+00:13:16,740 --> 00:13:19,146
+So think of it as anywhere between 410
+
+281
+00:13:19,146 --> 00:13:21,208
+to 412 as it's likely to change
+
+282
+00:13:21,208 --> 00:13:24,301
+every passing day as open interest and things change.
+
+283
+00:13:24,990 --> 00:13:28,435
+But if you think of it as an area, you can see it right here on the chart.
+
+284
+00:13:28,435 --> 00:13:31,230
+There really isn't much positive gamma below the strikes.
+
+285
+00:13:31,230 --> 00:13:33,865
+And then we have the confluence right here with for the month of August.
+
+286
+00:13:33,865 --> 00:13:36,190
+As this report was generated, again, this
+
+287
+00:13:36,190 --> 00:13:38,515
+is likely to change because as the
+
+288
+00:13:38,515 --> 00:13:41,173
+spot price changes, the gamma exposure will change.
+
+289
+00:13:41,175 --> 00:13:43,263
+So that's why it's important to check this type of
+
+290
+00:13:43,263 --> 00:13:44,098
+information, you know, a
+
+291
+00:13:44,098 --> 00:13:45,559
+couple times a day, pre-market, after hours,
+
+292
+00:13:45,560 --> 00:13:47,255
+in the middle of the day, during the lunchtime.
+
+293
+00:13:47,255 --> 00:13:53,685
+If you're aggregating multiple strike prices or multiple expirations, you generally want to check this a couple times a day.
+
+294
+00:13:53,685 --> 00:13:55,426
+If you're day trading, then you only need
+
+295
+00:13:55,426 --> 00:13:56,950
+to check the expiration which you're interested
+
+296
+00:13:56,950 --> 00:13:58,474
+in, which is this one right here.
+
+297
+00:13:58,475 --> 00:14:04,615
+So we have the absolute gamma strike is 410 for this Friday's expiration right here.
+
+298
+00:14:04,615 --> 00:14:08,350
+So if you're, you know, checking an individual expiration, then you don't need to check.
+
+299
+00:14:08,350 --> 00:14:10,322
+You would be checking this a little bit
+
+300
+00:14:10,322 --> 00:14:12,540
+more frequently because as the stock price is changing
+
+301
+00:14:12,540 --> 00:14:15,744
+every few points or so, a lot of this is going to change.
+
+302
+00:14:15,745 --> 00:14:17,522
+But for the most part, if you're
+
+303
+00:14:17,522 --> 00:14:19,807
+aggregating multiple expirations together, then you don't need to
+
+304
+00:14:19,807 --> 00:14:22,092
+be checking this every single minute as you would
+
+305
+00:14:22,092 --> 00:14:26,154
+maybe the other page or any other tool in which you use to calculate gamma exposure.
+
+306
+00:14:26,155 --> 00:14:27,960
+I start with the top down approach.
+
+307
+00:14:27,960 --> 00:14:29,461
+So over the weekend, just be
+
+308
+00:14:29,461 --> 00:14:31,212
+aware of the key levels right here
+
+309
+00:14:31,212 --> 00:14:33,464
+as I'm structuring out my trades for the week.
+
+310
+00:14:33,465 --> 00:14:36,860
+I'm not expecting the markets to necessarily hold over 415.
+
+311
+00:14:36,860 --> 00:14:41,890
+So I've already started building out certain trades aware of 410 being such a key level right here.
+
+312
+00:14:41,890 --> 00:14:44,248
+If we were to take a look at
+
+313
+00:14:44,248 --> 00:14:46,311
+this trade in which I posted last
+
+314
+00:14:46,311 --> 00:14:48,964
+week, this was the 410 call calendar for the SPY.
+
+315
+00:14:49,260 --> 00:14:52,745
+So just expecting the markets to be a little bit choppy in that vicinity.
+
+316
+00:14:52,745 --> 00:14:56,560
+If we were to check the how the spread is doing right now, it's actually up 11%.
+
+317
+00:14:56,560 --> 00:14:57,821
+So I'm in a few
+
+318
+00:14:57,821 --> 00:14:59,587
+of these and I have a myriad
+
+319
+00:14:59,587 --> 00:15:01,858
+of other spreads running right now on the SPX
+
+320
+00:15:01,860 --> 00:15:07,000
+as well as the SPY. But I'm just essentially looking for a little bit of consolidation around this price level.
+
+321
+00:15:07,000 --> 00:15:08,980
+So if it ends up being choppy around
+
+322
+00:15:08,980 --> 00:15:10,712
+this level all the way until Friday
+
+323
+00:15:10,712 --> 00:15:12,692
+from a percentual basis, that's about a 30% return.
+
+324
+00:15:12,940 --> 00:15:14,975
+I'm looking for about a 25, 30% return.
+
+325
+00:15:14,975 --> 00:15:16,511
+Once I'm up about 25%, I'm probably 20
+
+326
+00:15:16,511 --> 00:15:17,791
+to 25%. I actually started scaling
+
+327
+00:15:17,791 --> 00:15:20,351
+out and taking some profit as I continue to hold.
+
+328
+00:15:21,120 --> 00:15:23,065
+You don't want to hold something like this
+
+329
+00:15:23,065 --> 00:15:24,524
+till expiration because obviously the market
+
+330
+00:15:24,524 --> 00:15:27,199
+can make any type of big move on any given day.
+
+331
+00:15:27,200 --> 00:15:31,555
+And the closer and closer you hold it to expiration, the more sensitive it starts becoming to gamma.
+
+332
+00:15:31,555 --> 00:15:36,365
+And that's not necessarily something you want in a non-directional spread such as a calendar like this one.
+
+333
+00:15:36,365 --> 00:15:38,730
+If we jump back now to the gamma exposure,
+
+334
+00:15:38,730 --> 00:15:39,819
+however, I am fully aware
+
+335
+00:15:39,819 --> 00:15:41,344
+that if we did get below this
+
+336
+00:15:41,344 --> 00:15:43,086
+level, I definitely want to be in some
+
+337
+00:15:43,086 --> 00:15:46,136
+spreads that are going to benefit from if we pull back to the 400 level.
+
+338
+00:15:46,355 --> 00:15:47,775
+So I started opening up other spreads.
+
+339
+00:15:47,775 --> 00:15:49,981
+I'm not going to highlight everything in which
+
+340
+00:15:49,981 --> 00:15:51,635
+I've opened as this video is
+
+341
+00:15:51,635 --> 00:15:54,668
+not an intention behind my trades or what spreads I've opened.
+
+342
+00:15:54,670 --> 00:15:56,623
+But just to show you guys certain
+
+343
+00:15:56,623 --> 00:15:58,576
+trades in which I started opening up
+
+344
+00:15:58,576 --> 00:15:59,971
+right now, here's a 4,000 put
+
+345
+00:15:59,971 --> 00:16:03,599
+calendar that expires at the end of the month, low risk, high reward.
+
+346
+00:16:03,880 --> 00:16:11,355
+In terms of why I'm expecting a pullback, it's understanding that there's not much open interest past the 420 level.
+
+347
+00:16:11,355 --> 00:16:13,107
+So I would expect if we did get
+
+348
+00:16:13,107 --> 00:16:14,202
+over 420 and we didn't see
+
+349
+00:16:14,202 --> 00:16:15,954
+the open interest start increasing for this month.
+
+350
+00:16:16,175 --> 00:16:18,035
+That's a good little tip, by the way, if you didn't know.
+
+351
+00:16:18,035 --> 00:16:22,339
+So in terms of this being the highest call open interest level,
+
+352
+00:16:22,339 --> 00:16:25,208
+if we don't see open interest start increasing
+
+353
+00:16:25,208 --> 00:16:27,718
+past this level, that's an easy tell.
+
+354
+00:16:27,720 --> 00:16:30,515
+If we think of it this way, people are not
+
+355
+00:16:30,515 --> 00:16:33,590
+that interested in the market past 420 for the month of August.
+
+356
+00:16:33,870 --> 00:16:39,760
+So if people aren't that interested in it past 420, then why is it going to stay above 420?
+
+357
+00:16:39,760 --> 00:16:42,076
+So in other words, if we got over 420 and
+
+358
+00:16:42,076 --> 00:16:44,392
+I don't see much open interest past that level,
+
+359
+00:16:44,392 --> 00:16:46,708
+as we can see, there's no blue right here
+
+360
+00:16:46,708 --> 00:16:51,597
+being highlighted relative to, as I scroll down here, you guys can see that there's a lot more blue.
+
+361
+00:16:51,855 --> 00:16:55,265
+And again, it does not mean that we're going to just drop this month.
+
+362
+00:16:55,265 --> 00:16:57,705
+So it's just the risk reward as what trading is.
+
+363
+00:16:57,705 --> 00:17:01,367
+It's just what's the reward of continuing to hold positions long up
+
+364
+00:17:01,367 --> 00:17:05,029
+here relative to what I would expect if we did pull back.
+
+365
+00:17:05,030 --> 00:17:07,320
+And then what is the information and what is the data showing us?
+
+366
+00:17:07,320 --> 00:17:11,700
+As we scroll down here, you guys can see that there's a lot more puts spread out across the board.
+
+367
+00:17:11,700 --> 00:17:17,230
+A couple of weeks ago, this was completely the opposite for last month coming into the month of August.
+
+368
+00:17:17,230 --> 00:17:20,610
+But now we can see there really isn't much interest past this level.
+
+369
+00:17:20,610 --> 00:17:24,890
+Here would be the 415 strike. So the 415 sticks out as high positive gamma.
+
+370
+00:17:24,890 --> 00:17:26,940
+And then we have the 420 level.
+
+371
+00:17:26,940 --> 00:17:29,428
+If I were to hide the Gex and we take a look
+
+372
+00:17:29,428 --> 00:17:31,086
+at this as the absolute gamma exposure levels,
+
+373
+00:17:31,086 --> 00:17:33,781
+you guys can see that the absolute gamma strike right now is the 410.
+
+374
+00:17:33,990 --> 00:17:37,810
+And then we have the 400 level and then comes the 415 level.
+
+375
+00:17:37,810 --> 00:17:43,860
+So I would expect the markets to be within this vicinity or have a higher probability of
+
+376
+00:17:43,860 --> 00:17:50,525
+being in this area towards the monthly OPEX versus being in this area, again, unless the information changes.
+
+377
+00:17:50,525 --> 00:17:52,275
+We're still in the midst of earnings season.
+
+378
+00:17:52,275 --> 00:17:55,075
+Last week, we had the bigger companies reported earnings.
+
+379
+00:17:55,075 --> 00:17:58,295
+So there's still a lot more earnings to be reported, but nothing of significance.
+
+380
+00:17:58,295 --> 00:18:01,115
+There's a lot more puts still relative to calls.
+
+381
+00:18:01,115 --> 00:18:04,465
+So it seems that people are still more interested in holding their puts right now.
+
+382
+00:18:04,465 --> 00:18:09,575
+And we have as long as prices within this vicinity, we're likely to be very choppy.
+
+383
+00:18:09,575 --> 00:18:11,378
+If we did break out and
+
+384
+00:18:11,378 --> 00:18:13,181
+we don't see more calls being
+
+385
+00:18:13,181 --> 00:18:17,088
+purchased, or we don't see a lot of volume flying into the calls.
+
+386
+00:18:17,090 --> 00:18:18,815
+So let's actually switch this out right here.
+
+387
+00:18:18,815 --> 00:18:21,080
+And we can see that still people are trading a lot of calls.
+
+388
+00:18:21,080 --> 00:18:23,705
+So this is a decent amount of a call volume for the month.
+
+389
+00:18:23,705 --> 00:18:28,050
+315,000 calls were traded for the 413 strike today.
+
+390
+00:18:28,050 --> 00:18:31,580
+But if we come to the chart and we actually go to the intraday chart,
+
+391
+00:18:31,580 --> 00:18:35,100
+these levels are the gamma exposure levels for Friday expiration on my chart.
+
+392
+00:18:35,100 --> 00:18:35,915
+So this is the 410.
+
+393
+00:18:35,915 --> 00:18:37,395
+This is the absolute gamma strike.
+
+394
+00:18:37,395 --> 00:18:39,970
+400 is the highest negative gamma strike on my chart.
+
+395
+00:18:39,970 --> 00:18:41,256
+This is Max Payne, and
+
+396
+00:18:41,256 --> 00:18:43,057
+this is all from a script from
+
+397
+00:18:43,057 --> 00:18:46,144
+the Quant Trading App platform. So I'm not drawing these in manually.
+
+398
+00:18:46,145 --> 00:18:46,885
+And then we can
+
+399
+00:18:46,885 --> 00:18:47,995
+see You can see that the
+
+400
+00:18:47,995 --> 00:18:49,476
+quantitating app Algo right now is generating this
+
+401
+00:18:49,476 --> 00:18:52,808
+level as it was expecting us to be a level of some sort of resistance for the day.
+
+402
+00:18:52,810 --> 00:18:53,500
+And it held.
+
+403
+00:18:53,500 --> 00:18:54,655
+Now, this is not
+
+404
+00:18:54,655 --> 00:18:56,099
+surprising because 415 right here, as
+
+405
+00:18:56,099 --> 00:18:58,409
+we know, this entire area is likely to
+
+406
+00:18:58,409 --> 00:19:02,164
+be pretty choppy as there's a lot of gamma exposure in this level.
+
+407
+00:19:02,455 --> 00:19:06,075
+And on top of that, this is the gamma flip level right here.
+
+408
+00:19:06,075 --> 00:19:07,655
+And this is the absolute gamma level.
+
+409
+00:19:07,655 --> 00:19:11,239
+So the culmination of all these things in this vicinity after the
+
+410
+00:19:11,239 --> 00:19:13,628
+market just had this huge rally, we would
+
+411
+00:19:13,628 --> 00:19:16,316
+expect price action to be very choppy between 415 and 415.
+
+412
+00:19:16,915 --> 00:19:22,730
+But as we were looking at the gamma exposure page below 408, it's not surprising.
+
+413
+00:19:22,730 --> 00:19:25,945
+It would not be surprising if the market was to drop to 405.
+
+414
+00:19:25,945 --> 00:19:28,386
+And then again, below 405, it would be an easy
+
+415
+00:19:28,386 --> 00:19:30,827
+shot down to 400, possibly taking a pause around this
+
+416
+00:19:30,827 --> 00:19:38,692
+level as we have max pain and a few other key things in the area, such as points of controls, if you use the volume profile and so forth.
+
+417
+00:19:39,235 --> 00:19:41,420
+But this video is more so focused on just gamma exposure.
+
+418
+00:19:41,420 --> 00:19:43,695
+So we jump back now, let's actually dial it down.
+
+419
+00:19:43,695 --> 00:19:51,675
+And now we're looking at the gamma exposure just for the monthly expiration for the SPY.
+
+420
+00:19:51,675 --> 00:19:54,049
+And then we have I excluded this one
+
+421
+00:19:54,049 --> 00:19:56,423
+because the market is closed. So we don't
+
+422
+00:19:56,423 --> 00:19:59,688
+necessarily need the zero days as it's as it has expired.
+
+423
+00:19:59,690 --> 00:20:02,620
+So we're taking a look at just the Wednesday expiration and the Friday expiration.
+
+424
+00:20:02,620 --> 00:20:04,754
+And then I'm including the monthly because as you guys
+
+425
+00:20:04,754 --> 00:20:07,955
+can see, there's a lot of gamma exposure for the monthly expiration, which makes sense.
+
+426
+00:20:07,955 --> 00:20:10,395
+The monthlies tend to have a lot of gamma exposure.
+
+427
+00:20:10,395 --> 00:20:12,505
+And if we take a look at this and we
+
+428
+00:20:12,505 --> 00:20:14,193
+get a different view or different perspective on
+
+429
+00:20:14,193 --> 00:20:16,303
+things, we can see again that 410 level is very important.
+
+430
+00:20:16,515 --> 00:20:21,300
+And then below it, we have a little bit of gamma exposure in this vicinity here, the 407, 408.
+
+431
+00:20:21,300 --> 00:20:24,100
+But then below it, it should be a clean shot down to 400.
+
+432
+00:20:25,400 --> 00:20:27,463
+Why this monthly level is also of significance,
+
+433
+00:20:27,463 --> 00:20:29,526
+because as we take a look at this
+
+434
+00:20:29,526 --> 00:20:31,073
+right here, this is the premium.
+
+435
+00:20:31,075 --> 00:20:33,034
+So if we take a look at the expirations for
+
+436
+00:20:33,034 --> 00:20:35,189
+the SPY and we take a look at this right here,
+
+437
+00:20:35,190 --> 00:20:38,293
+we can see that the highest amount of premium in the short
+
+438
+00:20:38,293 --> 00:20:40,879
+term time frame is for the August monthlies right now.
+
+439
+00:20:40,880 --> 00:20:43,155
+And if we scroll down, we can see that there's a lot
+
+440
+00:20:43,155 --> 00:20:46,189
+of premium in the September monthlies, but that's pretty far away as that's 45 days to expiration.
+
+441
+00:20:46,380 --> 00:20:49,177
+So for just focus on trade ideas for the month
+
+442
+00:20:49,177 --> 00:20:51,974
+of August, we want to keep eyes on the monthly.
+
+443
+00:20:51,974 --> 00:21:01,764
+And we want to include that whenever we're doing our gamma exposure analysis, because that's where there's a lot of open interest right now in both the calls and puts there for that strike price.
+
+444
+00:21:01,765 --> 00:21:03,380
+So including that is pretty important.
+
+445
+00:21:03,380 --> 00:21:05,293
+And as we isolate it just to this,
+
+446
+00:21:05,293 --> 00:21:09,119
+we can see again, same story. There isn't really much call open interest above us now.
+
+447
+00:21:09,120 --> 00:21:11,050
+Most of the open interest is to the downside.
+
+448
+00:21:11,050 --> 00:21:16,355
+And as we come back to this page and actually take a look, this is the complete month of August.
+
+449
+00:21:16,355 --> 00:21:21,455
+We can scroll up right here and we can see that for the 420 strike, it's 114,000 open interest.
+
+450
+00:21:21,455 --> 00:21:27,280
+If we take a look at the entire options chain, we can see that there's 394,000.
+
+451
+00:21:27,280 --> 00:21:33,985
+So almost a third or I mean, almost about a quarter of that is just in the August expiration.
+
+452
+00:21:33,985 --> 00:21:37,800
+But that's not necessarily... it's not like it's half of it that's in this expiration.
+
+453
+00:21:37,800 --> 00:21:39,884
+If it was about half of it and everyone was
+
+454
+00:21:39,884 --> 00:21:43,219
+piling into the short term calls, we would expect the price to continue to go higher.
+
+455
+00:21:43,220 --> 00:21:45,874
+And if it did get higher and we don't see
+
+456
+00:21:45,874 --> 00:21:47,997
+call open interest increasing, we don't see more
+
+457
+00:21:47,997 --> 00:21:51,978
+participants buying out the money calls and we would expect the markets to pull back.
+
+458
+00:21:51,980 --> 00:21:55,060
+So running some sort of bear call spread would be a good idea.
+
+459
+00:21:55,060 --> 00:21:56,377
+A bear call spread would be
+
+460
+00:21:56,377 --> 00:21:57,474
+you would short the 420 call
+
+461
+00:21:57,474 --> 00:21:59,010
+and then possibly buy something like the 425
+
+462
+00:21:59,010 --> 00:22:00,546
+call and expect it, you know, go 30
+
+463
+00:22:00,546 --> 00:22:04,498
+days till expiration or so and expect the markets to pull back and be below the strike price.
+
+464
+00:22:05,160 --> 00:22:08,915
+Because the market tends to reverse around these monthly expirations.
+
+465
+00:22:08,915 --> 00:22:10,211
+So that's why for me, I'm structuring
+
+466
+00:22:10,211 --> 00:22:12,804
+a lot of my trades and I'm going a little further out with them.
+
+467
+00:22:12,805 --> 00:22:17,240
+I'm targeting spreads that expire the end of the month or targeting the monthly expiration
+
+468
+00:22:17,240 --> 00:22:19,022
+because as the markets rallies, let's
+
+469
+00:22:19,022 --> 00:22:21,398
+just say we continue to rally as we
+
+470
+00:22:21,398 --> 00:22:23,180
+go into this monthly expiration, we'll
+
+471
+00:22:23,180 --> 00:22:27,338
+either pull back going into the expiration or a few days after the expiration.
+
+472
+00:22:27,340 --> 00:22:30,550
+So I want to make sure I'm giving my positions a decent amount of time.
+
+473
+00:22:30,550 --> 00:22:32,784
+And if we do pull back to the level in
+
+474
+00:22:32,784 --> 00:22:34,571
+which I would ideally want us to pull
+
+475
+00:22:34,571 --> 00:22:35,911
+back to, which would be 400, things
+
+476
+00:22:35,911 --> 00:22:38,815
+would be great based on the way in which I'm structuring my trades.
+
+477
+00:22:39,040 --> 00:22:42,540
+But 405, which would be 450 on the SPX, which is what I mostly trade.
+
+478
+00:22:42,540 --> 00:22:44,661
+I use the SPY usually when I'm doing
+
+479
+00:22:44,661 --> 00:22:48,639
+most of my analysis, but my instrument of choice to trade is actually the SPX.
+
+480
+00:22:48,640 --> 00:22:56,580
+So to recap things, we point out we have a high absolute gamma at 410 for August.
+
+481
+00:22:56,580 --> 00:22:58,200
+And if we were to sort this by
+
+482
+00:22:58,200 --> 00:23:01,237
+the absolute GX strikes, we can see that the next highest gamma exposure strike is 400.
+
+483
+00:23:01,440 --> 00:23:06,620
+So we have 410 and then we have 400 and then we have 415. So pretty choppy within this vicinity.
+
+484
+00:23:06,620 --> 00:23:09,032
+I was talking to a trader earlier today
+
+485
+00:23:09,032 --> 00:23:11,444
+as I was doing a Zoom with him
+
+486
+00:23:11,444 --> 00:23:14,158
+and he mentioned something about the absolute GX changing.
+
+487
+00:23:14,160 --> 00:23:17,605
+And yes, it's likely to change as, you know, as the spot price moves.
+
+488
+00:23:17,605 --> 00:23:19,225
+However, something to take in mind
+
+489
+00:23:19,225 --> 00:23:20,845
+that I like to check out
+
+490
+00:23:20,845 --> 00:23:23,275
+is what's the next highest gamma exposure strike price.
+
+491
+00:23:23,275 --> 00:23:26,606
+So if we think the market is going to rally and the
+
+492
+00:23:26,606 --> 00:23:29,937
+fact that both of the high gamma exposure strike prices for this
+
+493
+00:23:29,937 --> 00:23:33,268
+Friday's expiration, the fact that both of them are below the current
+
+494
+00:23:33,268 --> 00:23:37,987
+spot price right now is not necessarily something you'd want to see if you're expecting a rally.
+
+495
+00:23:37,990 --> 00:23:41,880
+So if we take a look, we have 50 million absolute gamma exposure here.
+
+496
+00:23:41,880 --> 00:23:49,515
+The 415 strike is about 20, 23 million in order for this to become the new absolute gamma strike.
+
+497
+00:23:49,515 --> 00:23:51,956
+Obviously, the market would have to rally closer
+
+498
+00:23:51,956 --> 00:23:54,092
+to 415, but it's such a big it's
+
+499
+00:23:54,092 --> 00:23:57,143
+about half of the value of this one right here.
+
+500
+00:23:57,450 --> 00:24:03,260
+So this is not necessarily a data point or it's not necessarily something that would support the bull thesis.
+
+501
+00:24:03,260 --> 00:24:06,510
+If you're expecting the market to rally, you'd want to
+
+502
+00:24:06,510 --> 00:24:09,110
+see at least the 415 strike maybe have 30 something
+
+503
+00:24:09,110 --> 00:24:11,385
+million, 40 something million in absolute gamma exposure.
+
+504
+00:24:12,360 --> 00:24:15,575
+And we can see that again down here. So this is just another representation.
+
+505
+00:24:15,575 --> 00:24:17,480
+Now we're looking at just the Friday expirations.
+
+506
+00:24:17,480 --> 00:24:21,820
+We can see 420 likely to act as some sort of resistance if we did get up there.
+
+507
+00:24:21,820 --> 00:24:24,980
+However, it does not mean again, we can't go past it.
+
+508
+00:24:24,980 --> 00:24:29,690
+If we did go past it, we can expect some sort of gamma squeeze as that's likely to happen also.
+
+509
+00:24:29,690 --> 00:24:32,282
+But do know that if we did have some sort
+
+510
+00:24:32,282 --> 00:24:34,874
+of gamma squeeze past this level, I would not expect
+
+511
+00:24:34,874 --> 00:24:37,466
+the prices to stay above that level unless we saw
+
+512
+00:24:37,466 --> 00:24:40,317
+the gamma starting to increase at higher strike prices out here.
+
+513
+00:24:40,320 --> 00:24:43,905
+This strike price right here, which is the 405 strike, is likely to act as support.
+
+514
+00:24:43,905 --> 00:24:48,220
+As we can see, it's the only positive gamma strike price of significance within this C of
+
+515
+00:24:48,220 --> 00:24:51,150
+all these negative gamma strike prices. So I call this a C.
+
+516
+00:24:51,150 --> 00:24:53,611
+So think of it as a ton of negative gamma strike prices
+
+517
+00:24:53,611 --> 00:24:55,252
+and then you have one positive gamma strike
+
+518
+00:24:55,252 --> 00:24:57,918
+that's likely to act as support if the market was to pull back.
+
+519
+00:24:57,920 --> 00:24:59,520
+And it works in the opposite also.
+
+520
+00:24:59,520 --> 00:25:02,396
+If we had a ton of positive gamma exposure strike
+
+521
+00:25:02,396 --> 00:25:04,122
+prices here and then let's just
+
+522
+00:25:04,122 --> 00:25:06,998
+say we had one negative gamma strike price right here.
+
+523
+00:25:07,000 --> 00:25:10,000
+If the market was to rally, it would likely meet
+
+524
+00:25:10,000 --> 00:25:12,400
+some sort of resistance at that strike price
+
+525
+00:25:12,400 --> 00:25:16,900
+as it would have to dissect that gamma exposure before it continues to go up.
+
+526
+00:25:16,900 --> 00:25:21,395
+Hopefully, this video helps some of you guys expose you to some new information here.
+
+527
+00:25:21,395 --> 00:25:24,093
+And if we lastly conclude with any of the videos
+
+528
+00:25:24,093 --> 00:25:25,711
+in which you might have seen
+
+529
+00:25:25,711 --> 00:25:28,678
+earlier in the year and which I've done on option premium,
+
+530
+00:25:28,680 --> 00:25:32,680
+the reason this is a little bit of significance also is this imbalance right here.
+
+531
+00:25:32,680 --> 00:25:38,305
+We can see that there's a lot more call premium for the monthly expiration relative to the put premium.
+
+532
+00:25:38,305 --> 00:25:42,055
+This number is nowhere by means as astronomical as we've seen.
+
+533
+00:25:42,055 --> 00:25:46,355
+We've seen when the market usually rally or bounced around the monthly OPEXs.
+
+534
+00:25:46,355 --> 00:25:49,060
+So the bounce that happened here in January
+
+535
+00:25:49,060 --> 00:25:51,089
+24th and February 24th, these big
+
+536
+00:25:51,089 --> 00:25:53,118
+rallies that happened here and here
+
+537
+00:25:53,118 --> 00:25:56,838
+and here and here that all happened around the monthly OPEXs.
+
+538
+00:25:56,840 --> 00:25:59,440
+We were seeing over 30-something million, even as
+
+539
+00:25:59,440 --> 00:26:02,040
+high as 40-something million in put premium. And
+
+540
+00:26:02,040 --> 00:26:06,265
+the call premium was about 2 or 3 million. So that ratio was much larger.
+
+541
+00:26:06,915 --> 00:26:10,158
+But we haven't seen much of the call premium being more dominant
+
+542
+00:26:10,158 --> 00:26:12,320
+than the put premium in a while, which
+
+543
+00:26:12,320 --> 00:26:15,293
+again would make sense because we've been in a bear market.
+
+544
+00:26:15,295 --> 00:26:18,285
+But now we're seeing a little bit more of the
+
+545
+00:26:18,285 --> 00:26:20,677
+call premium lopsided relative to the put premium.
+
+546
+00:26:20,677 --> 00:26:26,059
+So the ratio here is there's over four times as much call premium as they are put premium.
+
+547
+00:26:26,060 --> 00:26:30,010
+So just you can interpret it as the market is, in a sense, kind of gone too far.
+
+548
+00:26:30,010 --> 00:26:35,685
+And it's going to struggle to go a little bit higher and going into this expiration, as we should say.
+
+549
+00:26:35,685 --> 00:26:40,680
+So it's going to be if we go higher by this expiration, it will meet some sort of resistance.
+
+550
+00:26:40,680 --> 00:26:45,725
+If we were higher than the 420 strike price after this expiration, it wouldn't be surprised if we reversed.
+
+551
+00:26:45,725 --> 00:26:49,260
+It's just the way the options market kind of influences the equities market.
+
+552
+00:26:49,260 --> 00:26:51,183
+And if we were to take a look
+
+553
+00:26:51,183 --> 00:26:54,789
+at this, this is why I would expect the pullback to happen right around here.
+
+554
+00:26:54,790 --> 00:26:56,275
+Again, give or take a few days.
+
+555
+00:26:56,275 --> 00:26:57,826
+So maybe minus three days, plus
+
+556
+00:26:57,826 --> 00:26:59,377
+three days. Either way, not necessarily
+
+557
+00:26:59,377 --> 00:27:02,738
+looking to be exactly perfect, which is why I like to run spreads.
+
+558
+00:27:02,740 --> 00:27:07,865
+And I give them 30 days till expiration. Plenty of time to play out and just focus on consistency here.
+
+559
+00:27:07,865 --> 00:27:09,887
+So as we jump back to the
+
+560
+00:27:09,887 --> 00:27:11,331
+monthly expirations, what we're seeing
+
+561
+00:27:11,331 --> 00:27:14,798
+right here is the combination of the premium, but just for August.
+
+562
+00:27:14,800 --> 00:27:17,480
+And now we can get a little bit of a bigger perspective right here.
+
+563
+00:27:17,480 --> 00:27:18,661
+We can see that it's
+
+564
+00:27:18,661 --> 00:27:19,842
+about four times, a little
+
+565
+00:27:19,842 --> 00:27:22,678
+bit over four times more call premium than there is put premium.
+
+566
+00:27:22,680 --> 00:27:26,180
+So that's one indication that we've probably gone a little bit too far.
+
+567
+00:27:26,180 --> 00:27:30,785
+So we have this key level 410, which would make sense why the market was so choppy here today.
+
+568
+00:27:30,785 --> 00:27:31,769
+But below that, you guys
+
+569
+00:27:31,769 --> 00:27:33,146
+want to keep it in mind, as
+
+570
+00:27:33,146 --> 00:27:36,098
+well as we look at certain points of controls. Where can we pull back to?
+
+571
+00:27:36,100 --> 00:27:38,480
+You guys can see we have this VPAC right here.
+
+572
+00:27:38,480 --> 00:27:41,305
+And we can have a lot of... and we have a lot of high volume nodes.
+
+573
+00:27:41,305 --> 00:27:45,460
+So this is likely to be a choppy area, which is in confluence with the 405 level.
+
+574
+00:27:45,460 --> 00:27:49,730
+But below 405, we don't have a ton of support until we get down to maybe the 400 level.
+
+575
+00:27:49,730 --> 00:27:51,659
+Below 400, from a volume profile perspective, we
+
+576
+00:27:51,659 --> 00:27:53,037
+have the 396, which we can
+
+577
+00:27:53,037 --> 00:27:57,447
+also see on the gamma exposure page, which adds a little bit of confluence for this.
+
+578
+00:27:58,000 --> 00:27:59,305
+So I'm going to wrap up here, guys.
+
+579
+00:27:59,305 --> 00:28:02,980
+And if you have any questions, leave them in the comment section down below.
+
+580
+00:28:02,980 --> 00:28:04,207
+If you learned something like the
+
+581
+00:28:04,207 --> 00:28:05,434
+video, share the video and expect
+
+582
+00:28:05,434 --> 00:28:07,274
+to see a little bit more videos like this.
+
+583
+00:28:07,275 --> 00:28:09,100
+And thanks for watching.
+
+===== END AFTER_SEGMENT =====

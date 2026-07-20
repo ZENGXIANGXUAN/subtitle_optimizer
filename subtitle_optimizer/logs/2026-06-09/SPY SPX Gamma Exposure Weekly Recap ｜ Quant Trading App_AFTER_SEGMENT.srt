@@ -1,0 +1,4638 @@
+===== AFTER_SEGMENT (1159 entries) =====
+1
+00:00:00,000 --> 00:00:01,235
+What's going on, guys? Brian's here.
+
+2
+00:00:01,235 --> 00:00:03,535
+Today is Monday, September 4th, 2023.
+
+3
+00:00:03,535 --> 00:00:06,460
+The market is closed as it is a holiday.
+
+4
+00:00:06,460 --> 00:00:10,615
+I'm finally getting the time to go back and recap some of last week's price action.
+
+5
+00:00:10,615 --> 00:00:15,550
+Now, if I were to go over every single detail from last week, this video would be way too long.
+
+6
+00:00:15,550 --> 00:00:20,795
+So I'm going to focus, most importantly, on the gamma exposure and the price action.
+
+7
+00:00:20,795 --> 00:00:23,490
+So what we're looking at is the spot in the five minute time frame.
+
+8
+00:00:23,490 --> 00:00:26,180
+These are the Quant Trading App scripts loaded on this chart.
+
+9
+00:00:26,180 --> 00:00:28,115
+So if I were to turn off all the studies, there we go.
+
+10
+00:00:28,115 --> 00:00:29,200
+We can see all the levels.
+
+11
+00:00:29,200 --> 00:00:32,905
+As we can see, the SPY closed just at the two sigma level.
+
+12
+00:00:32,905 --> 00:00:35,202
+Our first clue or indication, if
+
+13
+00:00:35,202 --> 00:00:38,648
+you missed majority of this move here on the
+
+14
+00:00:38,648 --> 00:00:42,477
+Monday into Tuesday rally is whenever the SPY or the
+
+15
+00:00:42,477 --> 00:00:49,369
+SPX closes above the weekly sell zone, the probability of us going to two sigma becomes exponentially high.
+
+16
+00:00:49,370 --> 00:00:53,755
+There's something we can pull up in the Quant Trading App open high, low, close table database.
+
+17
+00:00:53,755 --> 00:00:55,790
+But for now, I just wanted to point that out.
+
+18
+00:00:55,790 --> 00:00:57,178
+So if you guys ever
+
+19
+00:00:57,178 --> 00:00:59,122
+see me mention something like that, you
+
+20
+00:00:59,122 --> 00:01:01,344
+guys know I took a stop loss on
+
+21
+00:01:01,344 --> 00:01:03,288
+a non-directional 14 DTE iron butterfly that was
+
+22
+00:01:03,288 --> 00:01:08,565
+opened here on Monday's close as I was expecting consolidation in this region here for a couple of days.
+
+23
+00:01:08,845 --> 00:01:14,380
+But by the next day, the SPY ended up rallying and then this iron fly was in trouble.
+
+24
+00:01:14,380 --> 00:01:16,915
+I believe it was down about $3 or so at this point.
+
+25
+00:01:16,915 --> 00:01:18,490
+And then by around this period,
+
+26
+00:01:18,490 --> 00:01:21,160
+it was down about $4 per iron fly sold.
+
+27
+00:01:21,160 --> 00:01:22,905
+So I took it as the stop loss here.
+
+28
+00:01:22,905 --> 00:01:24,729
+My main reason being normally you would
+
+29
+00:01:24,729 --> 00:01:26,553
+try to adjust an iron fly, try
+
+30
+00:01:26,553 --> 00:01:28,116
+to push out your break evens,
+
+31
+00:01:28,116 --> 00:01:31,764
+try to extend it, try to stay in the trade a little bit longer.
+
+32
+00:01:31,765 --> 00:01:33,917
+But understanding that this is likely to happen
+
+33
+00:01:33,917 --> 00:01:37,684
+because we broke this level here and it was very early in the week.
+
+34
+00:01:37,685 --> 00:01:40,485
+This was only Tuesday and it was Tuesday morning.
+
+35
+00:01:40,485 --> 00:01:44,160
+The probability of us going to two sigma becomes way too high.
+
+36
+00:01:44,160 --> 00:01:45,620
+So that's why I took my stop loss.
+
+37
+00:01:45,620 --> 00:01:47,170
+And so starting with the gamma exposure,
+
+38
+00:01:47,170 --> 00:01:49,779
+what I have here is the archived gamma exposure loaded
+
+39
+00:01:49,779 --> 00:01:51,605
+up for each day of the week.
+
+40
+00:01:51,605 --> 00:01:54,214
+And we're just focusing on the SPY and the SPX.
+
+41
+00:01:54,215 --> 00:02:00,000
+So this is Monday, Tuesday, Wednesday, Thursday, Friday, preloaded up right here.
+
+42
+00:02:00,000 --> 00:02:02,805
+And we'll just take a look at this together as I'm recording this video.
+
+43
+00:02:02,805 --> 00:02:05,400
+So at the start of the week, this is pre-market here.
+
+44
+00:02:05,400 --> 00:02:09,165
+So 915 Eastern time as the market opens 930 Eastern time.
+
+45
+00:02:09,165 --> 00:02:11,220
+This is what the gamma profile looked like.
+
+46
+00:02:11,220 --> 00:02:13,235
+And let's just jump to the next.
+
+47
+00:02:13,235 --> 00:02:14,435
+So this right here is pre-market.
+
+48
+00:02:14,435 --> 00:02:16,710
+And now this would be as the market opens.
+
+49
+00:02:16,710 --> 00:02:19,955
+So right here at 930 Eastern time, this is the current spot price.
+
+50
+00:02:19,955 --> 00:02:23,965
+So as the market opened, this was the last traded price on the SPY.
+
+51
+00:02:23,965 --> 00:02:26,113
+And our first indication we can see is
+
+52
+00:02:26,113 --> 00:02:29,604
+that we have this wireless cell phone signal, as I like to say.
+
+53
+00:02:29,605 --> 00:02:32,755
+If you see bars that are increasing like this, that's
+
+54
+00:02:32,755 --> 00:02:34,960
+usually a good sign saying that price
+
+55
+00:02:34,960 --> 00:02:36,850
+can likely head in that direction.
+
+56
+00:02:36,850 --> 00:02:39,700
+However, if we take a look at the put side, we can see the same thing.
+
+57
+00:02:39,700 --> 00:02:44,775
+If this is the SPY price, we can see prices incrementally increasing towards the downside here.
+
+58
+00:02:44,775 --> 00:02:46,860
+And this is where we have the first sign of a fall off.
+
+59
+00:02:46,860 --> 00:02:48,115
+And then it bounces back here.
+
+60
+00:02:48,115 --> 00:02:49,613
+But there's an increase towards both
+
+61
+00:02:49,613 --> 00:02:53,609
+directions. So there isn't really that much of an edge at the start of the week.
+
+62
+00:02:53,610 --> 00:02:55,883
+However, if we take it a step back,
+
+63
+00:02:55,883 --> 00:02:57,872
+you guys do know that a couple
+
+64
+00:02:57,872 --> 00:03:00,998
+of weeks back, the SPY did close at two sigma support.
+
+65
+00:03:01,000 --> 00:03:04,245
+So this is the Monday levels for the quantity app scripts.
+
+66
+00:03:04,245 --> 00:03:05,140
+But let's just close this out.
+
+67
+00:03:05,140 --> 00:03:07,540
+Let's just jump to the open, high, low, close table.
+
+68
+00:03:07,540 --> 00:03:10,410
+And then let's just show the week in which I'm referencing.
+
+69
+00:03:10,410 --> 00:03:14,700
+So this table right here is showing us the archived data for this year.
+
+70
+00:03:14,700 --> 00:03:16,530
+So we're just viewing 2023 in isolation.
+
+71
+00:03:16,530 --> 00:03:20,655
+And these are all of the support resistance levels that the quantity app script had generated.
+
+72
+00:03:20,655 --> 00:03:23,420
+And then letting us know where the SPY actually ended up closing.
+
+73
+00:03:23,420 --> 00:03:27,095
+If it's green, it means it closed within the support and resistance level.
+
+74
+00:03:27,095 --> 00:03:31,090
+So as we can see so far for this year, it's happened 52. We'll say 53% of the time,
+
+75
+00:03:31,090 --> 00:03:32,970
+which is actually relatively low.
+
+76
+00:03:32,970 --> 00:03:35,730
+This number should be closer to about 64% of the time.
+
+77
+00:03:35,730 --> 00:03:38,540
+And what's actually strange here is over the summer,
+
+78
+00:03:38,540 --> 00:03:43,810
+the market has actually been closing outside of the outside of the weekly resistance and weekly support levels.
+
+79
+00:03:43,810 --> 00:03:46,995
+More than usual during the summer, that doesn't usually happen.
+
+80
+00:03:46,995 --> 00:03:50,140
+We can jump to previous years. I'll leave that for any of you quantity app members to go back.
+
+81
+00:03:50,140 --> 00:03:53,790
+If we were to just take a look at one example, now, 2022 was the bear market.
+
+82
+00:03:53,790 --> 00:03:55,330
+So things are really chaotic last year.
+
+83
+00:03:55,330 --> 00:03:58,405
+As we can see, this is a really low probability here.
+
+84
+00:03:58,405 --> 00:04:04,870
+2021, we had the strong uptrend for the SPY here. So this was also a relatively low number.
+
+85
+00:04:04,870 --> 00:04:09,805
+And we can see that the volatility started happening around October, but things were pretty calm.
+
+86
+00:04:09,805 --> 00:04:15,685
+And then this was summertime. Also, we had a little bit of a strong rally during this time.
+
+87
+00:04:15,685 --> 00:04:17,686
+As we can see, the market went
+
+88
+00:04:17,686 --> 00:04:19,687
+from 412 at the start of the summer.
+
+89
+00:04:19,687 --> 00:04:22,832
+And then by the end of June, we were already at 433.
+
+90
+00:04:23,405 --> 00:04:27,935
+So that was a rally that came off of a two-sigma support sell-off.
+
+91
+00:04:27,935 --> 00:04:32,005
+So the market sold off twice to the two-sigma level. And then we ended up just getting a rally.
+
+92
+00:04:32,005 --> 00:04:33,480
+And that's something that's pretty common.
+
+93
+00:04:33,480 --> 00:04:36,445
+So the past few years have been pretty unprecedented.
+
+94
+00:04:36,445 --> 00:04:39,760
+Again, the market has changed since 2020 has occurred.
+
+95
+00:04:39,760 --> 00:04:41,686
+But if we just jump back to 2023
+
+96
+00:04:41,686 --> 00:04:43,612
+in isolation, and we take a look
+
+97
+00:04:43,612 --> 00:04:46,088
+at this two-sigma sell-off in which I'm referring to,
+
+98
+00:04:46,365 --> 00:04:50,080
+generally, whenever we get a two-sigma sell-off, the market will recover.
+
+99
+00:04:50,080 --> 00:04:54,320
+And we can just take a look at the last time in which that occurred was during the end of
+
+100
+00:04:54,320 --> 00:04:56,480
+April, beginning of May, as we see right here.
+
+101
+00:04:56,480 --> 00:04:59,673
+And this was letting us know that the QTA was
+
+102
+00:04:59,673 --> 00:05:01,588
+saying the two-sigma sell-off level would
+
+103
+00:05:01,588 --> 00:05:03,184
+have been 404 for that week.
+
+104
+00:05:03,505 --> 00:05:06,880
+The market actually ended up selling off to 403.
+
+105
+00:05:06,880 --> 00:05:08,325
+So that's why this is highlighting
+
+106
+00:05:08,325 --> 00:05:09,770
+purple, because it's just letting us
+
+107
+00:05:09,770 --> 00:05:11,938
+know that it went further than the support level.
+
+108
+00:05:11,940 --> 00:05:14,980
+However, it actually ended up closing at 412.
+
+109
+00:05:14,980 --> 00:05:18,120
+So I can actually just pull this up, and we can see what that week looked like.
+
+110
+00:05:20,100 --> 00:05:21,100
+And here we have it.
+
+111
+00:05:21,100 --> 00:05:22,020
+So this is a week.
+
+112
+00:05:22,020 --> 00:05:23,430
+Again, market sold off.
+
+113
+00:05:23,430 --> 00:05:25,540
+As you guys can see, it hit the two-sigma level.
+
+114
+00:05:25,540 --> 00:05:29,835
+We had a nice double bottom, and then it recovered, and then it continued to bounce.
+
+115
+00:05:29,835 --> 00:05:31,949
+If we were to jump to the following
+
+116
+00:05:31,949 --> 00:05:35,384
+week, we can see that there was a little bit of a consolidation.
+
+117
+00:05:35,385 --> 00:05:39,360
+We consolidated during that week, ended up closing the week around 411.
+
+118
+00:05:39,360 --> 00:05:41,960
+And then let's just jump to the week right after.
+
+119
+00:05:43,120 --> 00:05:47,440
+We can see we ended up rallying all the way up to 420 at one point, and then closed at 419.
+
+120
+00:05:47,440 --> 00:05:50,335
+So about a two-week long rally, and that's usually what will happen.
+
+121
+00:05:50,335 --> 00:05:51,771
+If that's normal, what we'll
+
+122
+00:05:51,771 --> 00:05:53,781
+see during the middle of the year,
+
+123
+00:05:53,781 --> 00:05:56,079
+especially towards the end of the summer, beginning
+
+124
+00:05:56,079 --> 00:05:57,802
+of fall, and then around the
+
+125
+00:05:57,802 --> 00:06:02,398
+November, December period, things tend to be depending on what the catalysts are for that year.
+
+126
+00:06:02,400 --> 00:06:05,780
+So in this case, we have during this November, it's going to be election season.
+
+127
+00:06:05,780 --> 00:06:07,766
+So we'll probably want to go back and
+
+128
+00:06:07,766 --> 00:06:09,504
+look at the last election and see
+
+129
+00:06:09,504 --> 00:06:11,739
+what happened during that timeframe or the previous election.
+
+130
+00:06:11,740 --> 00:06:13,572
+And if we were to just jump
+
+131
+00:06:13,572 --> 00:06:14,880
+to before 2020 and look at 2019,
+
+132
+00:06:14,880 --> 00:06:18,805
+and we scroll down, we can actually see a lot of this holds up here.
+
+133
+00:06:19,330 --> 00:06:22,000
+Here is a Two Sigma sell-off at 287.
+
+134
+00:06:22,000 --> 00:06:24,635
+And then by the following week, we were at 296.
+
+135
+00:06:24,635 --> 00:06:26,155
+Here's another Two Sigma sell-off.
+
+136
+00:06:26,155 --> 00:06:29,555
+We were at 307. And then the following week, the market was at 317.
+
+137
+00:06:29,555 --> 00:06:31,180
+The week after, it was at 320.
+
+138
+00:06:31,180 --> 00:06:35,155
+So I'm just scrolling through different years here, and I'm just picking out anything that's highlighting.
+
+139
+00:06:35,155 --> 00:06:40,480
+I didn't microanalyze each of these times in which this happened here.
+
+140
+00:06:40,480 --> 00:06:41,413
+I'm doing this, again, as
+
+141
+00:06:41,413 --> 00:06:42,720
+I'm just recording this video, if this
+
+142
+00:06:42,720 --> 00:06:44,027
+is your first time seeing this, just
+
+143
+00:06:44,027 --> 00:06:45,708
+to show how quick it is to see that.
+
+144
+00:06:45,710 --> 00:06:47,165
+I'm just looking at wherever it's purple.
+
+145
+00:06:47,165 --> 00:06:49,920
+Here was a Two Sigma sell-off, 404.
+
+146
+00:06:49,920 --> 00:06:52,065
+But by the following week, the market was at 411.
+
+147
+00:06:52,065 --> 00:06:55,570
+And then two weeks after, the market was at 418.
+
+148
+00:06:55,570 --> 00:06:59,760
+So we have, in this case here, this was a couple weeks back in which the market sold off.
+
+149
+00:06:59,760 --> 00:07:02,100
+If we take a look at the chart, let's just zoom out.
+
+150
+00:07:04,160 --> 00:07:08,545
+And let's go to a 20-day, 15-minute chart so we can actually see.
+
+151
+00:07:08,545 --> 00:07:09,820
+This was our sell-off here.
+
+152
+00:07:09,820 --> 00:07:11,620
+So the market had a Two Sigma sell-off.
+
+153
+00:07:11,620 --> 00:07:13,460
+This was the Two Sigma level.
+
+154
+00:07:13,460 --> 00:07:15,055
+I don't remember exactly where it was, but
+
+155
+00:07:15,055 --> 00:07:16,251
+we can pull it up and
+
+156
+00:07:16,251 --> 00:07:18,444
+take a look at, for example, this was on the 18th.
+
+157
+00:07:18,445 --> 00:07:21,910
+So if we come back to our chart, let's pull up right here.
+
+158
+00:07:21,910 --> 00:07:25,520
+And then all we have to do is let's make this full screen.
+
+159
+00:07:25,520 --> 00:07:29,180
+And then let's just go back to the 18th, which was this Friday right here.
+
+160
+00:07:30,400 --> 00:07:35,720
+And it will load up what the levels look like. And we'll see.
+
+161
+00:07:35,720 --> 00:07:36,215
+So here we go.
+
+162
+00:07:36,215 --> 00:07:40,310
+So this was our Two Sigma level, 434.42.
+
+163
+00:07:40,310 --> 00:07:44,915
+And that would be 434.42.
+
+164
+00:07:44,915 --> 00:07:46,015
+So right around here.
+
+165
+00:07:46,015 --> 00:07:48,860
+So what did it say? 434.42.
+
+166
+00:07:49,860 --> 00:07:52,680
+So let's just put that on our chart.
+
+167
+00:07:52,680 --> 00:07:54,540
+And there's no need to do this again.
+
+168
+00:07:54,540 --> 00:07:55,990
+And I'm just doing this to
+
+169
+00:07:55,990 --> 00:07:57,440
+demonstrate for this video. So you
+
+170
+00:07:57,440 --> 00:08:00,099
+guys can see if you're new to seeing anything like this.
+
+171
+00:08:00,100 --> 00:08:01,075
+So here it goes.
+
+172
+00:08:01,075 --> 00:08:03,180
+So this was the Two Sigma sell-off market.
+
+173
+00:08:03,180 --> 00:08:03,990
+This was the Monday.
+
+174
+00:08:03,990 --> 00:08:07,630
+We went up and then we just sold right down to this Two Sigma level.
+
+175
+00:08:07,630 --> 00:08:09,548
+And usually within the week after,
+
+176
+00:08:09,548 --> 00:08:11,466
+if not the week after, then
+
+177
+00:08:11,466 --> 00:08:14,343
+usually within two weeks, we get a sharp bounce.
+
+178
+00:08:14,345 --> 00:08:16,685
+Now the bounce came the following week here.
+
+179
+00:08:16,685 --> 00:08:20,320
+So I actually thought that was the bounce that came from this Two Sigma level.
+
+180
+00:08:20,320 --> 00:08:21,797
+So coming into this week,
+
+181
+00:08:21,797 --> 00:08:23,865
+this caught me off guard as I
+
+182
+00:08:23,865 --> 00:08:27,114
+was not looking for the SPY to rally to Two Sigma.
+
+183
+00:08:27,115 --> 00:08:29,306
+In the Quant Trading App Discord, I shared
+
+184
+00:08:29,306 --> 00:08:31,223
+the butterfly that I had run and
+
+185
+00:08:31,223 --> 00:08:32,592
+not the non-directional one, but
+
+186
+00:08:32,592 --> 00:08:35,057
+I swung long from that Friday into the Monday.
+
+187
+00:08:35,060 --> 00:08:36,720
+Let me see if I can find that for you guys in the chat.
+
+188
+00:08:39,340 --> 00:08:41,325
+But we have... Here it goes. This right here.
+
+189
+00:08:41,325 --> 00:08:43,715
+So here's one of my reasons.
+
+190
+00:08:43,715 --> 00:08:45,640
+I won't get into this. This is for QTA members.
+
+191
+00:08:45,640 --> 00:08:46,885
+You guys are aware of these levels.
+
+192
+00:08:46,885 --> 00:08:52,625
+But I just mentioned there was a nice gap up to 445 from the options volume chart.
+
+193
+00:08:52,625 --> 00:08:55,805
+And I said, you know, things are oddly open on the OVAL.
+
+194
+00:08:55,805 --> 00:08:57,935
+So this is the option volume chart up to 445.
+
+195
+00:08:57,935 --> 00:09:03,595
+There are levels from yesterday, but considering today's price action, looking like we're closing over 440 today.
+
+196
+00:09:03,595 --> 00:09:04,420
+So I'm giving it a shot.
+
+197
+00:09:04,420 --> 00:09:06,790
+This was last week, Friday during Power Hour.
+
+198
+00:09:06,790 --> 00:09:11,370
+The market had a nice little rally after lunchtime.
+
+199
+00:09:11,370 --> 00:09:13,443
+And then I grabbed some long-call
+
+200
+00:09:13,443 --> 00:09:15,516
+butterflies targeting this region here as
+
+201
+00:09:15,516 --> 00:09:17,589
+I was expecting 445 or about 4460 on
+
+202
+00:09:17,589 --> 00:09:23,117
+the SPX to be the main level that I thought the market would have gone to.
+
+203
+00:09:23,810 --> 00:09:26,680
+Kind of lined up with a little bit of this potential supply zone here.
+
+204
+00:09:26,680 --> 00:09:30,625
+So this was the region in which I was targeting, which would have been right around here.
+
+205
+00:09:30,625 --> 00:09:31,940
+So I ended up getting that.
+
+206
+00:09:31,940 --> 00:09:35,045
+So around here is when I opened my swing trade targeting this level.
+
+207
+00:09:35,045 --> 00:09:39,030
+I didn't make it a broken wing butterfly, which means I had some upside risk.
+
+208
+00:09:39,030 --> 00:09:44,760
+So once the SPY actually broke past this level, I actually, my trade started turning, started becoming in jeopardy.
+
+209
+00:09:44,760 --> 00:09:48,220
+And I went from having a trade be green and it started turning red.
+
+210
+00:09:48,220 --> 00:09:50,940
+So I had to make an adjustment for myself and I added another butterfly.
+
+211
+00:09:50,940 --> 00:09:59,730
+Just to showcase that for this video, I'll find it in the discord. Here we have it right here.
+
+212
+00:09:59,730 --> 00:10:01,485
+So this is when I closed it out on Friday.
+
+213
+00:10:01,485 --> 00:10:03,800
+So just showing you guys, this was my first butterfly.
+
+214
+00:10:03,800 --> 00:10:05,220
+It looks like this.
+
+215
+00:10:05,220 --> 00:10:08,615
+So this was targeting the 445 region.
+
+216
+00:10:08,615 --> 00:10:11,820
+So expecting the SPX to be around this area.
+
+217
+00:10:11,820 --> 00:10:16,135
+But as you guys can see, once price started rallying, I ended up opening up another butterfly,
+
+218
+00:10:16,135 --> 00:10:18,420
+turning this into what's called the Batman spread.
+
+219
+00:10:18,420 --> 00:10:20,870
+Just extending my profitability zone,
+
+220
+00:10:20,870 --> 00:10:23,156
+I ended up walking away with a very small win
+
+221
+00:10:23,156 --> 00:10:24,299
+relative to how much risk
+
+222
+00:10:24,299 --> 00:10:25,899
+I was actually taking on the trade.
+
+223
+00:10:25,900 --> 00:10:28,510
+Now, the SPX ended up closing exactly at this spot.
+
+224
+00:10:28,510 --> 00:10:31,255
+So yes, if I held it until expiration, I would have made a lot more money.
+
+225
+00:10:31,255 --> 00:10:33,580
+But the risk was very uncomfortable on that Friday.
+
+226
+00:10:33,580 --> 00:10:35,375
+This is what it looked like at the close.
+
+227
+00:10:35,375 --> 00:10:37,122
+We can see that the SPX ended up
+
+228
+00:10:37,122 --> 00:10:40,834
+closing right at the short strikes right here. So it would have been a very big win.
+
+229
+00:10:40,835 --> 00:10:43,315
+However, the SPX was around here at the open.
+
+230
+00:10:43,315 --> 00:10:46,004
+I was very uncomfortable knowing how much risk I had
+
+231
+00:10:46,004 --> 00:10:48,155
+to the upside if we ended up rallying
+
+232
+00:10:48,155 --> 00:10:50,844
+to $4.450, which things were looking like they would go towards.
+
+233
+00:10:51,115 --> 00:10:53,160
+So enough about the trades in which I took.
+
+234
+00:10:53,160 --> 00:10:55,185
+The main reason why I just wanted to share some
+
+235
+00:10:55,185 --> 00:10:56,805
+of that is because I wanted to show
+
+236
+00:10:56,805 --> 00:11:00,450
+even though I was right on the direction, I still ended up being in trouble during this week.
+
+237
+00:11:00,450 --> 00:11:06,350
+I still ended up losing money, especially towards the middle of the week on my non-directional iron butterflies.
+
+238
+00:11:06,350 --> 00:11:09,090
+And this Two Sigma rally caught me off guard.
+
+239
+00:11:09,090 --> 00:11:11,265
+So full disclosure, I did not expect this.
+
+240
+00:11:11,265 --> 00:11:13,030
+I'm recording this video in hindsight.
+
+241
+00:11:13,030 --> 00:11:17,475
+And the purpose of this is how can we get better? How can we be better prepared the next time?
+
+242
+00:11:17,475 --> 00:11:23,185
+What can we do to potentially realize that this can happen sooner, protect ourselves a little bit sooner?
+
+243
+00:11:23,185 --> 00:11:25,350
+So I thought it was important to share a little bit of that.
+
+244
+00:11:25,350 --> 00:11:29,065
+So you guys are aware moving forward as we're looking at things in hindsight.
+
+245
+00:11:29,065 --> 00:11:33,285
+This is generally how I'll approach my analysis to see if I can do better the next time.
+
+246
+00:11:33,285 --> 00:11:36,175
+So now we're taking a look at the gamma exposure chart.
+
+247
+00:11:36,175 --> 00:11:37,925
+And what we have here is at the start of the week,
+
+248
+00:11:37,925 --> 00:11:41,750
+we already identified that as the market opened, things look pretty mixed to both sides.
+
+249
+00:11:41,750 --> 00:11:44,120
+It could have been a toss up regarding which way it was going to go.
+
+250
+00:11:44,120 --> 00:11:50,530
+However, as we stated, the market started a couple weeks back having this two sigma sell-off.
+
+251
+00:11:50,530 --> 00:11:54,788
+So whenever we have these two sigma sell-offs, the likelihood of the
+
+252
+00:11:54,788 --> 00:11:57,626
+SPY going up is much higher once we've
+
+253
+00:11:57,626 --> 00:12:01,884
+had these two sigma sell-offs, especially, especially when the VIX is decreasing.
+
+254
+00:12:01,885 --> 00:12:05,590
+And we didn't have a week here where the VIX ever showed any signs of life.
+
+255
+00:12:05,590 --> 00:12:08,905
+Even on the Monday, we can see it was just consolidating, consolidating.
+
+256
+00:12:08,905 --> 00:12:10,280
+Then the next day was just selling off.
+
+257
+00:12:10,280 --> 00:12:14,185
+It never really shown any real reason to go up.
+
+258
+00:12:14,185 --> 00:12:16,833
+So whenever we see a lot of negative
+
+259
+00:12:16,833 --> 00:12:18,819
+gamma, you guys remember, this ends
+
+260
+00:12:18,819 --> 00:12:22,129
+up being, you can consider it fuel to the fire.
+
+261
+00:12:22,130 --> 00:12:23,794
+And the fire in this case is,
+
+262
+00:12:23,794 --> 00:12:25,695
+think of it as a rocket ship. And
+
+263
+00:12:25,695 --> 00:12:29,498
+price is going to blast off to the upside when there's a lot of negative gamma.
+
+264
+00:12:29,500 --> 00:12:31,799
+For simplicity, just understand, when you see
+
+265
+00:12:31,799 --> 00:12:34,755
+a lot of red here in big bars, that
+
+266
+00:12:34,755 --> 00:12:40,339
+does not mean the market is going to go down after it has already gone down previously.
+
+267
+00:12:40,340 --> 00:12:43,287
+In this case, it already had the week in which
+
+268
+00:12:43,287 --> 00:12:46,529
+it sold off pretty aggressively, as we took a look at.
+
+269
+00:12:46,530 --> 00:12:47,240
+That was here.
+
+270
+00:12:47,240 --> 00:12:49,906
+That's what made all that gamma become very
+
+271
+00:12:49,906 --> 00:12:52,239
+negative, as the market sold way past
+
+272
+00:12:52,239 --> 00:12:54,239
+where it was expecting to go.
+
+273
+00:12:54,240 --> 00:12:56,790
+And then in the subsequent weeks,
+
+274
+00:12:56,790 --> 00:12:59,190
+those puts start losing their value.
+
+275
+00:12:59,190 --> 00:13:06,620
+As they start losing their value, if implied volatility is not increasing, that will contribute to the market going up.
+
+276
+00:13:06,620 --> 00:13:10,805
+So our first clue is, again, two sigma sell-off a couple of weeks back.
+
+277
+00:13:10,805 --> 00:13:14,305
+The second clue is the market could not go lower.
+
+278
+00:13:14,305 --> 00:13:17,220
+In this case here, we can see we had the sell-off on Friday.
+
+279
+00:13:17,220 --> 00:13:22,600
+But Friday, I've done videos on how implied volatility generally gets crushed from Fridays into Mondays.
+
+280
+00:13:22,600 --> 00:13:27,870
+Volatility picks up from a Wednesday going into a Thursday and Friday morning or so.
+
+281
+00:13:27,870 --> 00:13:31,044
+And then it just repeats this cycle, except for when
+
+282
+00:13:31,044 --> 00:13:34,218
+we're around the VIX expiration or whenever we're around these
+
+283
+00:13:34,218 --> 00:13:37,392
+large quarterly OPEXs, whenever there's an FOMC announcement, whenever there's
+
+284
+00:13:37,392 --> 00:13:43,741
+a CPI report right now, that seems to be the rhetoric for the past 18 months or so in the market.
+
+285
+00:13:44,060 --> 00:13:50,225
+These tend to be the catalysts that will affect how the VIX and implied volatility is going to react.
+
+286
+00:13:50,225 --> 00:13:52,476
+But after these events take place, then the VIX will
+
+287
+00:13:52,476 --> 00:13:54,727
+have what I call some sort of a soft reset
+
+288
+00:13:54,727 --> 00:13:58,554
+and then we'll have some sort of weird price action or at least it will seem weird.
+
+289
+00:13:58,555 --> 00:14:01,810
+But that's what's happening whenever we see a lot of these puts.
+
+290
+00:14:01,810 --> 00:14:04,915
+Again, a lot of these puts does not mean the market is going to go down.
+
+291
+00:14:04,915 --> 00:14:07,363
+However, when you see a lot of positive gamma exposure,
+
+292
+00:14:07,363 --> 00:14:11,524
+it's a little bit of a different story as the natural flow for the market is up.
+
+293
+00:14:11,525 --> 00:14:16,060
+Natural flow for the S&P 500, I should say, is up. It was created to go up.
+
+294
+00:14:16,060 --> 00:14:20,380
+So in other words, whenever it's red, this is when it's a little sick looking,
+
+295
+00:14:20,380 --> 00:14:24,675
+but there's nothing special about when the market's going up because that's what it's supposed to do.
+
+296
+00:14:24,675 --> 00:14:27,705
+So this is just a warning that, hey, things don't really look that good.
+
+297
+00:14:27,705 --> 00:14:29,865
+So what do we have if we were to just jump through this?
+
+298
+00:14:29,865 --> 00:14:31,238
+I want to try to speed up some
+
+299
+00:14:31,238 --> 00:14:32,439
+of the video now as I realize
+
+300
+00:14:32,439 --> 00:14:33,640
+I'm looking at time and I realize
+
+301
+00:14:33,640 --> 00:14:36,043
+I've already been going for a little bit longer than I wanted to cover.
+
+302
+00:14:36,045 --> 00:14:37,245
+Let's just jump through some of this.
+
+303
+00:14:37,245 --> 00:14:38,330
+So this is the start of the week.
+
+304
+00:14:38,330 --> 00:14:39,485
+Again, this is the spot price.
+
+305
+00:14:39,485 --> 00:14:41,660
+Now I'm just going to click through this as we see what's going on here.
+
+306
+00:14:41,660 --> 00:14:42,875
+So the market bounces now.
+
+307
+00:14:42,875 --> 00:14:47,260
+So it's at 442. And then we can see here's our spot.
+
+308
+00:14:47,260 --> 00:14:50,365
+Here's the strike price that's sticking out, 450.
+
+309
+00:14:50,365 --> 00:14:56,675
+Again, this right here, 445 is where I was targeting for myself and the trades I was in.
+
+310
+00:14:56,675 --> 00:14:59,675
+I neglected this 450 level.
+
+311
+00:14:59,675 --> 00:15:03,280
+At least I know what I'm taking note of in my journal, even the reason which I'm doing this video.
+
+312
+00:15:03,280 --> 00:15:11,040
+I did not put any significance on 450 early in the week as I thought we would struggle at 445 first.
+
+313
+00:15:11,040 --> 00:15:13,259
+I thought if we stalled here, I
+
+314
+00:15:13,259 --> 00:15:15,478
+would get some sort of an opportunity
+
+315
+00:15:15,478 --> 00:15:18,014
+to readjust my portfolio to target this strike.
+
+316
+00:15:18,015 --> 00:15:20,765
+But now let's just continue to take note what's going on here.
+
+317
+00:15:20,765 --> 00:15:22,006
+As you guys can see,
+
+318
+00:15:22,006 --> 00:15:23,743
+as time is passing by, so as
+
+319
+00:15:23,743 --> 00:15:25,232
+price is just consolidating, because we
+
+320
+00:15:25,232 --> 00:15:26,473
+haven't really moved that far.
+
+321
+00:15:26,475 --> 00:15:27,515
+If we take a look at Monday,
+
+322
+00:15:27,515 --> 00:15:28,735
+the market really didn't go anywhere.
+
+323
+00:15:28,735 --> 00:15:32,115
+It was just chopping around between 443 and 441.
+
+324
+00:15:32,115 --> 00:15:34,285
+There were no catalysts on the calendar for Monday.
+
+325
+00:15:34,285 --> 00:15:36,114
+So on Friday is something in which I
+
+326
+00:15:36,114 --> 00:15:37,714
+had mentioned or Monday morning or so
+
+327
+00:15:37,714 --> 00:15:40,458
+whenever I had mentioned that there weren't any catalysts for this day.
+
+328
+00:15:40,460 --> 00:15:42,640
+So usually whenever there's no catalyst, the market
+
+329
+00:15:42,640 --> 00:15:44,275
+will have more of a choppy
+
+330
+00:15:44,275 --> 00:15:47,273
+price action or it will generally be above the previous day.
+
+331
+00:15:47,275 --> 00:15:49,880
+Because again, the market will generally go up.
+
+332
+00:15:49,880 --> 00:15:52,159
+So we're usually going to close around
+
+333
+00:15:52,159 --> 00:15:54,438
+the opening price, a little bit above
+
+334
+00:15:54,438 --> 00:15:57,368
+the opening price or above the previous day's close.
+
+335
+00:15:57,370 --> 00:15:58,800
+That's just natural for the market.
+
+336
+00:15:58,800 --> 00:16:03,400
+If there's no catalysts, if it's left uninterrupted, the natural flow will be up.
+
+337
+00:16:03,400 --> 00:16:06,990
+So in this case here, this is normal price action for a Monday like this.
+
+338
+00:16:06,990 --> 00:16:10,465
+There were some catalysts this week here on the Tuesday and Wednesday.
+
+339
+00:16:10,465 --> 00:16:12,985
+And I think the jobs report and all these other stuff that happened.
+
+340
+00:16:12,985 --> 00:16:16,010
+But at this point, in my opinion, it was a little too late later in the week.
+
+341
+00:16:16,010 --> 00:16:19,310
+So we're trying to take a look at what could we have spot early in the week.
+
+342
+00:16:19,310 --> 00:16:22,415
+If we continue right along now, this is at 11am Eastern time.
+
+343
+00:16:22,415 --> 00:16:23,465
+So let's just keep moving.
+
+344
+00:16:23,465 --> 00:16:25,715
+We can see again, price is still just chopping.
+
+345
+00:16:25,715 --> 00:16:28,400
+We have the absolute gamma strike and we have the max pain strike.
+
+346
+00:16:28,400 --> 00:16:33,995
+If price is above it, this strike price is most likely to act as some sort of a support.
+
+347
+00:16:33,995 --> 00:16:36,620
+So in other words, if price was to come down to 440,
+
+348
+00:16:36,620 --> 00:16:38,505
+this level should act as a support.
+
+349
+00:16:38,505 --> 00:16:40,520
+And then we should end up bouncing above this.
+
+350
+00:16:40,520 --> 00:16:41,925
+If we get below 440, then
+
+351
+00:16:41,925 --> 00:16:43,611
+we enter very significant bearish territory
+
+352
+00:16:43,611 --> 00:16:48,108
+and then price can end up selling off pretty aggressively down to a level like this.
+
+353
+00:16:48,390 --> 00:16:52,320
+When I take a look at a profile like this, that's what takes me two seconds to understand.
+
+354
+00:16:52,320 --> 00:16:56,640
+It's just like the same way when you first open up the options chain, it probably seems overwhelming.
+
+355
+00:16:56,640 --> 00:16:59,013
+And then after a while, you just know your calls on the
+
+356
+00:16:59,013 --> 00:17:00,595
+left, your puts on the right, you understand
+
+357
+00:17:00,595 --> 00:17:05,934
+the at the money, the out the money, all that stuff just becomes second nature. Once you've been looking at it and using it for a while.
+
+358
+00:17:05,935 --> 00:17:10,405
+The same thing when I look at this, I see the spot price, I see this significant level right here at 440.
+
+359
+00:17:10,405 --> 00:17:12,429
+So I know, hey, as long as we're
+
+360
+00:17:12,429 --> 00:17:14,453
+above this level, then if it holds all
+
+361
+00:17:14,453 --> 00:17:16,477
+this negative gamma is going to add to
+
+362
+00:17:16,477 --> 00:17:24,826
+fuel for price to bounce, where we're probably going to bounce to what we see a lot of volume right here at this 445 strike because the blue in the background is the volume.
+
+363
+00:17:26,640 --> 00:17:27,339
+People are pretty
+
+364
+00:17:27,339 --> 00:17:32,701
+interested in. However, we can see that there's interest that's growing all the way up to 450. So that's something to take note of.
+
+365
+00:17:32,935 --> 00:17:34,653
+If we get below 440, expect
+
+366
+00:17:34,653 --> 00:17:36,371
+the sell off to 435, especially
+
+367
+00:17:36,371 --> 00:17:40,152
+if we break down below 440 and then we retest this level.
+
+368
+00:17:41,185 --> 00:17:45,480
+That will usually be my entry to get short and then expect the sell off down to this level.
+
+369
+00:17:45,480 --> 00:17:48,570
+So if we take a look at that on the chart, here is our 440 level.
+
+370
+00:17:48,570 --> 00:17:49,880
+We'll just mark it right here.
+
+371
+00:17:49,880 --> 00:17:53,208
+If the SPY sold off and we got below this level and
+
+372
+00:17:53,208 --> 00:17:56,536
+then it retraced to this level, I will then look for some
+
+373
+00:17:56,536 --> 00:18:05,135
+sort of a short entry down to 435, which is right in alignment down here in alignment with the QTA buy zone for the week, right next to this weekly support level.
+
+374
+00:18:05,415 --> 00:18:07,586
+So I can remove this off my chart now because,
+
+375
+00:18:07,586 --> 00:18:11,059
+again, all these levels that you see on the chart are populated from the QTA script.
+
+376
+00:18:11,060 --> 00:18:13,680
+So I don't need to draw in any of the technical analysis levels.
+
+377
+00:18:13,680 --> 00:18:16,888
+They're right there for me to just be able to pay attention
+
+378
+00:18:16,888 --> 00:18:20,096
+to the gamma exposure as well as the risk profile or what
+
+379
+00:18:20,096 --> 00:18:25,710
+type of spread I want to run and really focus on risk management as opposed to just focusing on technical analysis.
+
+380
+00:18:25,710 --> 00:18:28,475
+As we continue right along, let's get into the afternoon session.
+
+381
+00:18:28,475 --> 00:18:30,990
+So now we're right here midday. So this is noon.
+
+382
+00:18:30,990 --> 00:18:32,885
+Still SPY is just chopping around.
+
+383
+00:18:32,885 --> 00:18:34,960
+And let's just continue to see what happened for this day.
+
+384
+00:18:34,960 --> 00:18:38,280
+It was pretty anticlimactic as the price was just bouncing around.
+
+385
+00:18:38,280 --> 00:18:41,867
+Now, as this price is bouncing around, this is hurting a lot
+
+386
+00:18:41,867 --> 00:18:48,144
+of these puts here because, again, these puts are starting to lose some of their value as time is passing by.
+
+387
+00:18:48,145 --> 00:18:52,930
+And that's just the nature of how options options go through what's called time decay.
+
+388
+00:18:52,930 --> 00:18:56,515
+As that time is decaying, volatility is decreasing.
+
+389
+00:18:56,515 --> 00:18:59,825
+And again, these puts are losing some of their delta.
+
+390
+00:18:59,825 --> 00:19:05,980
+As we continue right along, let's just jump to the close because I don't think there's anything significant happening here.
+
+391
+00:19:05,980 --> 00:19:10,065
+As we can see, the SPY just ended up bouncing around here as we saw on the chart.
+
+392
+00:19:10,065 --> 00:19:12,890
+But what we can still see is these levels continue to hold.
+
+393
+00:19:12,890 --> 00:19:14,475
+And then so did these levels hold.
+
+394
+00:19:14,475 --> 00:19:18,355
+But we are above this level, which is likely to act as support right now.
+
+395
+00:19:18,355 --> 00:19:22,030
+And if we've been trading, we know the significance of 440 over the past couple of weeks here.
+
+396
+00:19:22,030 --> 00:19:23,550
+We know how significant it has been.
+
+397
+00:19:23,550 --> 00:19:25,981
+So it's just simple as previous
+
+398
+00:19:25,981 --> 00:19:28,412
+support becomes future resistance. So in
+
+399
+00:19:28,412 --> 00:19:30,843
+this case here, or previous resistance
+
+400
+00:19:30,843 --> 00:19:32,058
+becomes future support.
+
+401
+00:19:32,060 --> 00:19:34,230
+In this case here, here's our 440 level.
+
+402
+00:19:34,230 --> 00:19:37,955
+We can see this used to be support. Market lost that level and then it sold off.
+
+403
+00:19:37,955 --> 00:19:40,975
+Then it tried to get back above. It failed.
+
+404
+00:19:40,975 --> 00:19:43,355
+Then it tried to get back above. It ended up rallying.
+
+405
+00:19:43,355 --> 00:19:44,730
+Then it failed again.
+
+406
+00:19:44,730 --> 00:19:46,915
+So it's a fight around this region.
+
+407
+00:19:46,915 --> 00:19:48,835
+But you guys can see how significant it is.
+
+408
+00:19:48,835 --> 00:19:53,190
+Then the next day, now we're holding above it. So right here, we're holding above this level.
+
+409
+00:19:53,190 --> 00:19:55,960
+So this is our dominant level.
+
+410
+00:19:55,960 --> 00:19:59,580
+And even still moving forward, the 440 level is still a pretty powerful strike price.
+
+411
+00:19:59,580 --> 00:20:02,720
+So once we're above it, bulls are looking for reasons to get long.
+
+412
+00:20:02,720 --> 00:20:04,370
+However, on a day like this,
+
+413
+00:20:04,370 --> 00:20:06,020
+which is pretty choppy, there still
+
+414
+00:20:06,020 --> 00:20:07,670
+wasn't really any clear indication, in
+
+415
+00:20:07,670 --> 00:20:09,320
+my opinion, to get long or
+
+416
+00:20:09,320 --> 00:20:12,621
+be aggressive and think we had reasons to go to 450 just as
+
+417
+00:20:12,900 --> 00:20:14,502
+yet. As the likely expectation, in
+
+418
+00:20:14,502 --> 00:20:16,104
+my opinion, was that we would
+
+419
+00:20:16,104 --> 00:20:19,308
+get to 445 and then consolidate, at least for a day or two.
+
+420
+00:20:19,575 --> 00:20:21,331
+So that's why it was a little bit
+
+421
+00:20:21,331 --> 00:20:23,087
+of a shock or a little bit of
+
+422
+00:20:23,087 --> 00:20:26,379
+a disbelief that we continue to push higher here later into that afternoon on Tuesday.
+
+423
+00:20:26,380 --> 00:20:28,615
+And it definitely caught me off guard.
+
+424
+00:20:28,615 --> 00:20:29,889
+If we jump to now
+
+425
+00:20:29,889 --> 00:20:31,672
+the Tuesday, actually, let's take a look
+
+426
+00:20:31,672 --> 00:20:33,455
+at the SPX on the Monday just
+
+427
+00:20:33,455 --> 00:20:36,003
+to see if there's anything as we glance through this.
+
+428
+00:20:36,005 --> 00:20:37,155
+So this is pre-market.
+
+429
+00:20:37,155 --> 00:20:40,145
+Let's just jump to as the market opens right here.
+
+430
+00:20:40,145 --> 00:20:41,720
+So this is market open.
+
+431
+00:20:41,720 --> 00:20:42,820
+The SPX is right here.
+
+432
+00:20:42,820 --> 00:20:49,220
+So this is another reason which I was expecting 445 to prove as some sort of potential resistance level.
+
+433
+00:20:49,220 --> 00:20:51,495
+Usually whenever we have a negative GEX strike
+
+434
+00:20:51,495 --> 00:20:53,770
+surrounded by some positive gamma exposure such as
+
+435
+00:20:53,770 --> 00:20:59,743
+this, this level will act as some sort of resistance or it is at least going to be a significant level.
+
+436
+00:20:59,745 --> 00:21:01,204
+Meaning price will break it, it
+
+437
+00:21:01,204 --> 00:21:02,663
+will retest it, and then it
+
+438
+00:21:02,663 --> 00:21:06,554
+might continue to go higher. It's less likely that it will just blast right through it.
+
+439
+00:21:06,555 --> 00:21:08,125
+And the same thing works on the opposite end.
+
+440
+00:21:08,125 --> 00:21:13,240
+Let's just say this was a positive gamma strike right here and all this negative is around it.
+
+441
+00:21:13,240 --> 00:21:14,514
+If price was to sell off
+
+442
+00:21:14,514 --> 00:21:15,788
+to this level, this is likely
+
+443
+00:21:15,788 --> 00:21:17,062
+to be our support for a
+
+444
+00:21:17,062 --> 00:21:20,459
+while and then it has to chop around this level and then it will sell off.
+
+445
+00:21:20,460 --> 00:21:23,075
+That's what's normal and that's what happens usually.
+
+446
+00:21:23,075 --> 00:21:27,590
+So this was a case here in which what I usually look for did not work because this is 445.
+
+447
+00:21:27,590 --> 00:21:29,740
+If we were to take a look at
+
+448
+00:21:29,740 --> 00:21:31,352
+that level on a chart, let's
+
+449
+00:21:31,352 --> 00:21:34,308
+pull up the SPX and let's make it a full screen.
+
+450
+00:21:34,310 --> 00:21:35,675
+And we have 445.
+
+451
+00:21:35,675 --> 00:21:37,880
+So I'm just going to draw this on the chart here.
+
+452
+00:21:37,880 --> 00:21:39,960
+So let's see how price interacted with this.
+
+453
+00:21:39,960 --> 00:21:43,820
+So 445, let's just, yeah, it's off by a penny, but it's close enough.
+
+454
+00:21:43,820 --> 00:21:47,755
+You see this price action, how it just sliced right through it and it never retraced back to it.
+
+455
+00:21:47,755 --> 00:21:48,955
+That caught me off guard.
+
+456
+00:21:48,955 --> 00:21:51,100
+That's just pure momentum right there.
+
+457
+00:21:51,100 --> 00:21:55,920
+And that is not something that I generally know how to handle well as long as I've been trading.
+
+458
+00:21:55,920 --> 00:21:57,410
+I still don't know what to do when that happens.
+
+459
+00:21:57,410 --> 00:21:59,208
+Momentum traders will just take calls on the
+
+460
+00:21:59,208 --> 00:22:00,556
+break of this or they will
+
+461
+00:22:00,556 --> 00:22:02,803
+get long futures or do whatever they have to do.
+
+462
+00:22:02,805 --> 00:22:05,950
+For me, I tend to lock up and I like to wait to see what's going to happen.
+
+463
+00:22:05,950 --> 00:22:08,680
+Like to give it maybe an hour or two, see if it will retrace.
+
+464
+00:22:08,680 --> 00:22:14,395
+However, at this point here, once we were not going back down, that's when things became very alarming for me.
+
+465
+00:22:14,395 --> 00:22:17,245
+So that's when we were discussing it within the Discord in itself.
+
+466
+00:22:17,245 --> 00:22:20,620
+And this is where discussion was happening and the option spreads here.
+
+467
+00:22:20,620 --> 00:22:26,825
+So as we can see, one of the traders, you guys already took note of the 4,500 level.
+
+468
+00:22:26,825 --> 00:22:29,285
+You guys can see absolute gamma had shifted to up there.
+
+469
+00:22:29,285 --> 00:22:31,425
+It was pretty dominant. It's standing out.
+
+470
+00:22:31,425 --> 00:22:32,720
+It's sticking out like a sore thumb.
+
+471
+00:22:32,720 --> 00:22:36,720
+All the clues in which we normally look for, we were now above the 445 strike.
+
+472
+00:22:36,720 --> 00:22:38,155
+A ton of absolute gamma here.
+
+473
+00:22:38,155 --> 00:22:41,000
+We can see this level now is likely to act as support.
+
+474
+00:22:41,000 --> 00:22:42,875
+We can see that the SPX is now above it.
+
+475
+00:22:42,875 --> 00:22:44,040
+A lot of the signs are here.
+
+476
+00:22:44,040 --> 00:22:48,125
+So you guys are just asking, you know, what am I doing with that Ironfly?
+
+477
+00:22:48,125 --> 00:22:52,910
+I put on this 0DTE trade thinking this is where the SPX is going to stall out for that day.
+
+478
+00:22:52,910 --> 00:22:54,720
+We still ended up going higher.
+
+479
+00:22:54,720 --> 00:22:55,860
+And this trade ended up, I
+
+480
+00:22:55,860 --> 00:22:57,000
+had to take a break even
+
+481
+00:22:57,000 --> 00:22:59,280
+on it because it still didn't really mitigate much of the risk
+
+482
+00:22:59,280 --> 00:23:00,900
+as the SPX continued to rally.
+
+483
+00:23:00,900 --> 00:23:04,895
+But just sharing and showcasing you guys what the thought process is,
+
+484
+00:23:04,895 --> 00:23:07,695
+what the logic is, is again, that's what's pretty important, I think.
+
+485
+00:23:07,695 --> 00:23:08,550
+So in this case here,
+
+486
+00:23:08,550 --> 00:23:13,145
+I was expecting the SPX to stall out around here as I took a look at the gamma exposure.
+
+487
+00:23:13,145 --> 00:23:17,100
+And then you guys can see it ended up going to pretty much 4500 within a day.
+
+488
+00:23:17,100 --> 00:23:20,270
+And that was very unexpected, at least for me.
+
+489
+00:23:20,270 --> 00:23:22,915
+If we take a look from the previous
+
+490
+00:23:22,915 --> 00:23:27,214
+day's close to that rally here, this is a point and a half.
+
+491
+00:23:27,215 --> 00:23:30,340
+I'm generally never really aiming for a point and a half on the SPX.
+
+492
+00:23:30,340 --> 00:23:33,400
+1% is more realistic because you'll generally hit that.
+
+493
+00:23:33,400 --> 00:23:34,650
+And as we can see right
+
+494
+00:23:34,650 --> 00:23:35,900
+here, this is where the market
+
+495
+00:23:35,900 --> 00:23:37,150
+started reaching some sort of troubles
+
+496
+00:23:37,150 --> 00:23:37,983
+right at the 1% rally.
+
+497
+00:23:38,195 --> 00:23:40,170
+And our first rejection came right here.
+
+498
+00:23:40,170 --> 00:23:44,400
+It's the fact that we were stalling out here was making me very uncomfortable as we never retraced.
+
+499
+00:23:44,400 --> 00:23:48,170
+And this is usually going to be another one of our clues or signs.
+
+500
+00:23:48,170 --> 00:23:50,565
+We should come back down, but we did not.
+
+501
+00:23:50,565 --> 00:23:53,195
+That means something is happening that is not normal.
+
+502
+00:23:53,195 --> 00:23:59,250
+And whenever something's happening that's not normal, it means we're probably going to go very aggressive in the other direction.
+
+503
+00:23:59,250 --> 00:24:01,010
+And on top of that, the main
+
+504
+00:24:01,010 --> 00:24:03,524
+clue, again, starting from the previous two sigma sell-off a
+
+505
+00:24:03,524 --> 00:24:08,049
+couple weeks ago, we're also looking at a break of the weekly sell zone early in the week.
+
+506
+00:24:08,050 --> 00:24:10,700
+That's something that we can pull up right within.
+
+507
+00:24:10,700 --> 00:24:13,630
+And if we come to the open, high, low, close table,
+
+508
+00:24:13,630 --> 00:24:16,190
+minimize this again, make this large.
+
+509
+00:24:16,190 --> 00:24:19,945
+You guys can do your own testing around with this.
+
+510
+00:24:19,945 --> 00:24:21,655
+If we were to take a look, here's the SPY.
+
+511
+00:24:21,655 --> 00:24:23,395
+Let's just try to toggle on the weekly data.
+
+512
+00:24:23,395 --> 00:24:26,925
+Let's just see how many times on a Tuesday has that happened so far for this year.
+
+513
+00:24:26,925 --> 00:24:29,585
+One, two, three, four, five.
+
+514
+00:24:29,585 --> 00:24:33,215
+So it says it right here. Only five breakouts have occurred on a Tuesday.
+
+515
+00:24:33,215 --> 00:24:35,615
+And then we can see what ended up happening later in the week.
+
+516
+00:24:35,615 --> 00:24:37,445
+And this week here, it stayed above it all week.
+
+517
+00:24:37,445 --> 00:24:41,895
+That's why it's letting us know it was still above it. It was still above it.
+
+518
+00:24:41,895 --> 00:24:44,560
+Here, it stayed above it almost the entire time.
+
+519
+00:24:44,560 --> 00:24:46,575
+By Friday, we were back below it.
+
+520
+00:24:46,575 --> 00:24:47,605
+And that's what that's letting us know.
+
+521
+00:24:47,605 --> 00:24:49,275
+And here, we broke above it on Tuesday.
+
+522
+00:24:49,275 --> 00:24:50,355
+We were above it by Wednesday.
+
+523
+00:24:50,355 --> 00:24:52,730
+But then by the end of the week, we were back below it.
+
+524
+00:24:52,730 --> 00:24:54,595
+And then that's that.
+
+525
+00:24:54,595 --> 00:24:57,765
+So these two instances right here, we can investigate.
+
+526
+00:24:57,765 --> 00:25:00,925
+Let's just say we were to click this week here and see what did it look like?
+
+527
+00:25:00,925 --> 00:25:03,320
+Why did it retrace back below that level?
+
+528
+00:25:04,740 --> 00:25:07,065
+And obviously, there would have been some sort of a catalyst here.
+
+529
+00:25:07,065 --> 00:25:09,360
+Maybe this was an FOMC announcement.
+
+530
+00:25:09,360 --> 00:25:14,375
+Some sort of event took place that caused this sort of a sell-off, as this is not a normal reaction.
+
+531
+00:25:14,375 --> 00:25:18,520
+I think this was an FOMC announcement, as it looks like this is 2 p.m. in the afternoon.
+
+532
+00:25:18,520 --> 00:25:20,045
+Yep, this is 2 p.m. right here.
+
+533
+00:25:20,045 --> 00:25:21,545
+Markets had tried to go higher,
+
+534
+00:25:21,545 --> 00:25:23,045
+rejected, had a little bit of
+
+535
+00:25:23,045 --> 00:25:26,545
+a fake-out, probably trapped a lot of long traders, and then we sold off.
+
+536
+00:25:26,545 --> 00:25:30,420
+If this was not an FOMC announcement, we were probably just going to go right towards 2 Sigma.
+
+537
+00:25:30,420 --> 00:25:31,565
+As you guys can see,
+
+538
+00:25:31,565 --> 00:25:33,168
+this is an instance in which the
+
+539
+00:25:33,168 --> 00:25:36,604
+SPY broke the weekly level on a Tuesday, and then we actually closed above it.
+
+540
+00:25:36,605 --> 00:25:40,880
+And we did make an attempt for 2 Sigma later in the week, by the next day.
+
+541
+00:25:40,880 --> 00:25:43,620
+So this is something that you can jump to previous years.
+
+542
+00:25:43,620 --> 00:25:47,515
+You can toggle the data and see exactly what percentage of the time has that happened on a Tuesday.
+
+543
+00:25:47,515 --> 00:25:51,620
+And out of those times, whenever it happens, how many times did it end up going to 2 Sigma?
+
+544
+00:25:51,620 --> 00:25:55,069
+I know from experience and just looking at this for a couple
+
+545
+00:25:55,069 --> 00:25:57,368
+years now that I know whenever this has
+
+546
+00:25:57,368 --> 00:25:59,667
+happened, we're going to make an attempt for
+
+547
+00:25:59,667 --> 00:26:03,691
+2 Sigma as the rally is not done, unless we close back below this level.
+
+548
+00:26:03,980 --> 00:26:06,773
+Now, if the SPY had gotten back below, even the
+
+549
+00:26:06,773 --> 00:26:09,007
+SPX has got back below this level, then
+
+550
+00:26:09,007 --> 00:26:12,079
+the probability of us going to 2 Sigma would have dropped exponentially.
+
+551
+00:26:12,360 --> 00:26:14,812
+However, as long as we remained above this level and
+
+552
+00:26:14,812 --> 00:26:16,773
+definitely outside of the zone, the attempt at
+
+553
+00:26:16,773 --> 00:26:17,753
+2 Sigma is very likely.
+
+554
+00:26:18,000 --> 00:26:20,160
+And this is still, from here to here,
+
+555
+00:26:20,160 --> 00:26:22,050
+this is still a 40-50 point rally once
+
+556
+00:26:22,050 --> 00:26:23,670
+we were consolidating above this level.
+
+557
+00:26:23,940 --> 00:26:27,064
+So for a directional trader just grabbing an at-the-money call
+
+558
+00:26:27,064 --> 00:26:29,336
+or a long-call butterfly, there's still a lot
+
+559
+00:26:29,336 --> 00:26:31,892
+of room to take on a trade like this.
+
+560
+00:26:31,610 --> 00:26:34,777
+It's just very difficult when it already had such of a big
+
+561
+00:26:34,777 --> 00:26:36,888
+rally because it's hard to shake our reversion
+
+562
+00:26:36,888 --> 00:26:37,943
+to the mean principles.
+
+563
+00:26:37,945 --> 00:26:40,551
+And thinking it has to revert back to the mean
+
+564
+00:26:40,551 --> 00:26:42,636
+before it continues on its rally does not
+
+565
+00:26:42,636 --> 00:26:44,199
+always happen when there's enough momentum.
+
+566
+00:26:44,200 --> 00:26:47,224
+Now, if we jump back to the gamma
+
+567
+00:26:47,224 --> 00:26:50,248
+exposure, let's just... I've already veered onto multiple
+
+568
+00:26:50,248 --> 00:26:53,272
+different tangents already, and I wanted to keep
+
+569
+00:26:53,272 --> 00:26:55,162
+it just to gamma exposure.
+
+570
+00:26:55,165 --> 00:26:59,480
+But again, I feel like there's just so much to go over that's all equally important.
+
+571
+00:26:59,480 --> 00:27:02,322
+By the way, I failed to mention that this is
+
+572
+00:27:02,322 --> 00:27:04,596
+analyzing the Friday expiration. So this is the
+
+573
+00:27:04,596 --> 00:27:07,438
+weekly options expiration on these options that we're looking at.
+
+574
+00:27:07,440 --> 00:27:12,745
+So if we're looking at this here, this is... we're analyzing what the Friday expiration looked like on Monday.
+
+575
+00:27:12,745 --> 00:27:14,845
+And then this is on the Tuesday.
+
+576
+00:27:14,845 --> 00:27:16,300
+What did the Friday expiration look like?
+
+577
+00:27:16,300 --> 00:27:20,205
+I didn't load the zero DTE because we're taking a look at the overall week.
+
+578
+00:27:20,205 --> 00:27:24,030
+If I loaded up all the zero DTEs, again, the videos would just be way too long.
+
+579
+00:27:24,030 --> 00:27:25,721
+But you can analyze each individual day, and
+
+580
+00:27:25,721 --> 00:27:28,469
+I'm pretty sure there were a lot of other clues along the way.
+
+581
+00:27:28,470 --> 00:27:30,190
+But as we're looking at now, here's a Tuesday.
+
+582
+00:27:30,190 --> 00:27:32,160
+Market opens up here, and then we end up rallying.
+
+583
+00:27:32,160 --> 00:27:34,225
+So let's see what we have pre-market.
+
+584
+00:27:34,225 --> 00:27:37,545
+Pre-market now, you guys notice this is no longer red.
+
+585
+00:27:37,545 --> 00:27:40,046
+So now all of a sudden, all that
+
+586
+00:27:40,046 --> 00:27:41,922
+massive negative gamma in the SPY
+
+587
+00:27:41,922 --> 00:27:45,049
+weekly options for Friday, which would be the September 1st.
+
+588
+00:27:45,050 --> 00:27:47,345
+Again, I'm recording this video on the Monday.
+
+589
+00:27:47,345 --> 00:27:49,190
+It's in retrospective last week.
+
+590
+00:27:49,190 --> 00:27:52,140
+But that's one of the benefits of having this archived information.
+
+591
+00:27:52,140 --> 00:27:54,292
+We can go back and analyze multiple dates in the
+
+592
+00:27:54,292 --> 00:27:56,014
+past and see what happened on those weeks
+
+593
+00:27:56,014 --> 00:27:59,458
+in which there were big sell-offs and big rallies, and then we can learn from this.
+
+594
+00:27:59,460 --> 00:28:04,005
+I love doing this, especially on holidays, because it's a day in which we would normally be trading.
+
+595
+00:28:04,005 --> 00:28:05,205
+It gives a great opportunity,
+
+596
+00:28:05,205 --> 00:28:06,885
+if you're not celebrating anything with your
+
+597
+00:28:06,885 --> 00:28:08,806
+family, to actually be able to go back
+
+598
+00:28:08,806 --> 00:28:13,368
+and journal and spend a little bit more time reviewing your trades and analyzing what happened in the market.
+
+599
+00:28:13,370 --> 00:28:16,125
+But as we can see right here, the next day, all that negative gamma,
+
+600
+00:28:16,125 --> 00:28:17,290
+again, it's no longer red.
+
+601
+00:28:17,290 --> 00:28:20,395
+So this is letting us know that the net GEX has now turned positive.
+
+602
+00:28:20,395 --> 00:28:24,625
+And that's one indication right there that a lot of shorts were in trouble.
+
+603
+00:28:24,625 --> 00:28:26,376
+A lot of people that bought puts
+
+604
+00:28:26,376 --> 00:28:28,378
+were in trouble. And now they need to
+
+605
+00:28:28,378 --> 00:28:30,129
+do something about they're losing short positions.
+
+606
+00:28:30,129 --> 00:28:34,133
+And they're losing short positions could be they're just going to close out their put positions.
+
+607
+00:28:34,135 --> 00:28:35,967
+And if they're closing out all their puts
+
+608
+00:28:35,967 --> 00:28:37,570
+positions, and a lot of people are
+
+609
+00:28:37,570 --> 00:28:40,089
+doing it pretty quickly, that's going to aid in a rally.
+
+610
+00:28:40,090 --> 00:28:44,685
+So if we come out here and we look at what happened also, this is now the Tuesday.
+
+611
+00:28:44,685 --> 00:28:49,260
+So we're using the VIX as a proxy for implied volatility for the SPX options.
+
+612
+00:28:49,260 --> 00:28:51,710
+We can see on the Monday, it was here.
+
+613
+00:28:51,710 --> 00:28:54,615
+And then at the open on the Tuesday, it was here.
+
+614
+00:28:54,615 --> 00:28:57,906
+So we're talking about not that I measure exactly what
+
+615
+00:28:57,906 --> 00:29:01,197
+the changes are in the VIX from a potential basis,
+
+616
+00:29:01,197 --> 00:29:05,475
+but almost a 5% drop in the VIX from Monday's open to Tuesday's open.
+
+617
+00:29:05,805 --> 00:29:07,396
+And that's pretty significant because we can
+
+618
+00:29:07,396 --> 00:29:09,214
+see what that impact in which it had
+
+619
+00:29:09,214 --> 00:29:11,259
+right here, all that GEX is no longer negative.
+
+620
+00:29:11,260 --> 00:29:15,330
+Remember, if we take a look at the previous day, as the market opened, all this GEX was negative.
+
+621
+00:29:15,330 --> 00:29:17,955
+And now by the next day, it's suddenly all positive.
+
+622
+00:29:17,955 --> 00:29:18,660
+Where did it go?
+
+623
+00:29:18,660 --> 00:29:22,990
+And we're still above 440. So this is a clear support level.
+
+624
+00:29:22,990 --> 00:29:26,985
+Now we can see, look at how big this 446 level is.
+
+625
+00:29:26,985 --> 00:29:30,555
+And look at how strong the 445 level still is.
+
+626
+00:29:30,555 --> 00:29:33,000
+But now we have interest past 445.
+
+627
+00:29:33,000 --> 00:29:34,960
+So 445 was the target before.
+
+628
+00:29:34,960 --> 00:29:38,790
+Now look at what the new target is. It's actually above the original target.
+
+629
+00:29:38,790 --> 00:29:40,881
+So that's a sign that we're probably
+
+630
+00:29:40,881 --> 00:29:43,271
+going to make an attempt at this for
+
+631
+00:29:43,271 --> 00:29:45,959
+sure, because now we see interest past that level.
+
+632
+00:29:45,960 --> 00:29:49,430
+If we continue and just pay attention to what happens to the gamma exposure.
+
+633
+00:29:49,430 --> 00:29:51,890
+So now the price is at 443.
+
+634
+00:29:51,890 --> 00:29:57,320
+If we just jump back, we were at 442. Market goes to 443. And let's just take a look what's going on.
+
+635
+00:29:57,320 --> 00:29:59,780
+I'm just going to swipe through. So this is at 10 a.m. now, Eastern time.
+
+636
+00:29:59,780 --> 00:30:01,205
+So 30 minutes after the market opens,
+
+637
+00:30:01,205 --> 00:30:01,900
+just clicking.
+
+638
+00:30:01,900 --> 00:30:03,670
+There we go. We get out 445.
+
+639
+00:30:03,670 --> 00:30:06,210
+We can see 446 is still pretty strong.
+
+640
+00:30:06,210 --> 00:30:08,515
+Let's just see. There we go. Now we're at 446.
+
+641
+00:30:08,515 --> 00:30:11,880
+And look, there's a lot of interest that's starting to pop up at 450.
+
+642
+00:30:11,880 --> 00:30:14,035
+If we jump back, look at the volume.
+
+643
+00:30:14,035 --> 00:30:16,000
+So right now, there wasn't really any volume.
+
+644
+00:30:16,000 --> 00:30:19,430
+Suddenly, all of a sudden, if we jump here, boom, massive volume.
+
+645
+00:30:19,430 --> 00:30:25,635
+Now we have 30,000 volume that happens between 415 and 430 Eastern time right here.
+
+646
+00:30:25,635 --> 00:30:28,735
+There's a ton of volume growing at this 450 level.
+
+647
+00:30:28,735 --> 00:30:32,465
+The gex now is now increasing, also going out towards that level.
+
+648
+00:30:32,465 --> 00:30:34,730
+So let's just continue to see what's occurring.
+
+649
+00:30:34,730 --> 00:30:39,190
+We're consolidating around this level, which is to be expected if it's a huge gamma strike.
+
+650
+00:30:39,190 --> 00:30:42,485
+And then let's see. We continue. I just skipped twice.
+
+651
+00:30:42,485 --> 00:30:44,495
+This is now an absolute gamma strike.
+
+652
+00:30:44,495 --> 00:30:48,630
+So now this is an even more dominant level as it's still growing.
+
+653
+00:30:48,630 --> 00:30:51,770
+The price is consolidated around 448 to be expected.
+
+654
+00:30:51,770 --> 00:30:54,565
+It's a little bit of a spike in between these two levels right here.
+
+655
+00:30:54,565 --> 00:30:55,960
+Let's just see.
+
+656
+00:30:55,960 --> 00:30:59,985
+As we're consolidating, look how strong that 450 level is now growing.
+
+657
+00:30:59,985 --> 00:31:02,255
+Again, this is 3DT options.
+
+658
+00:31:02,255 --> 00:31:06,215
+Now, this is on Tuesday we're looking at, but this is the Friday expiration.
+
+659
+00:31:06,215 --> 00:31:10,145
+So 70,000 volume being traded at that strike price.
+
+660
+00:31:10,145 --> 00:31:14,630
+As we continue, we can see what's going on by the close.
+
+661
+00:31:14,630 --> 00:31:17,175
+So this is now the power hour here.
+
+662
+00:31:17,175 --> 00:31:20,830
+We can see price is now at 448, almost at 449.
+
+663
+00:31:20,830 --> 00:31:23,215
+And there we have it, 449.
+
+664
+00:31:23,215 --> 00:31:26,520
+And this gamma strike has still... it has grown.
+
+665
+00:31:26,520 --> 00:31:30,390
+As the day has progressed, it has just continued to get higher and higher.
+
+666
+00:31:30,390 --> 00:31:34,575
+446 is still pretty dominant, but this just means now this is likely to be our support level.
+
+667
+00:31:34,575 --> 00:31:38,290
+If the market pulled back, 446 is where we would expect support.
+
+668
+00:31:38,290 --> 00:31:40,400
+And then we would look for the bounce up to 450.
+
+669
+00:31:40,400 --> 00:31:44,090
+If we're just looking at the gamma profile, obviously we would be looking for confluences.
+
+670
+00:31:44,090 --> 00:31:46,430
+We would be looking at our chart to see what
+
+671
+00:31:46,430 --> 00:31:48,068
+the candlesticks are looking like, or maybe
+
+672
+00:31:48,068 --> 00:31:49,940
+using some sort of a depth of market.
+
+673
+00:31:49,940 --> 00:31:52,197
+If you're reading the tape, if you're using
+
+674
+00:31:52,197 --> 00:31:54,454
+a footprint chart, whatever you're using as your
+
+675
+00:31:54,454 --> 00:31:57,839
+confluences, your edge, right now we're just looking at the gamma exposure.
+
+676
+00:31:57,840 --> 00:31:59,360
+And this is letting us
+
+677
+00:31:59,360 --> 00:32:01,489
+know this is likely to If we
+
+678
+00:32:01,489 --> 00:32:03,922
+pull back to this level because it's so
+
+679
+00:32:03,922 --> 00:32:09,093
+strong and we have so much positive gamma that's still pulling price towards this absolute gamma strike.
+
+680
+00:32:09,095 --> 00:32:10,594
+Now, if 446 was to break,
+
+681
+00:32:10,594 --> 00:32:12,392
+if price got below it, then
+
+682
+00:32:12,392 --> 00:32:14,190
+price retraced to it and then
+
+683
+00:32:14,190 --> 00:32:16,588
+it failed and then it continues selling off.
+
+684
+00:32:16,890 --> 00:32:18,220
+This level will act as resistance.
+
+685
+00:32:18,220 --> 00:32:22,375
+That's what we would look for, especially if all this gamma started turning negative again.
+
+686
+00:32:22,375 --> 00:32:24,095
+But that's not what we're seeing here.
+
+687
+00:32:24,095 --> 00:32:25,322
+As we continue now, that was
+
+688
+00:32:25,322 --> 00:32:26,549
+the last print of the day.
+
+689
+00:32:26,549 --> 00:32:29,413
+So 15 minutes before the market closed. And we can see that's what we had.
+
+690
+00:32:29,620 --> 00:32:34,140
+This massive rally here. And the market closed right below 450.
+
+691
+00:32:34,140 --> 00:32:40,340
+If we jump back to our chart, let's go back to the Tuesday here.
+
+692
+00:32:40,340 --> 00:32:41,730
+That's our close right here.
+
+693
+00:32:41,730 --> 00:32:44,145
+So now the question is, well, what
+
+694
+00:32:44,145 --> 00:32:45,870
+do you do with this
+
+695
+00:32:45,870 --> 00:32:48,975
+if you're out of the trade on this day?
+
+696
+00:32:48,975 --> 00:32:50,961
+The implication now, the expectation
+
+697
+00:32:50,961 --> 00:32:53,741
+would be, I don't know the percentage
+
+698
+00:32:53,741 --> 00:32:56,124
+wise, but let's just say we're 85%
+
+699
+00:32:56,124 --> 00:33:01,685
+probability we're going to hit this strike. This level before this week is done.
+
+700
+00:33:02,085 --> 00:33:03,813
+So you can choose to swing
+
+701
+00:33:03,813 --> 00:33:06,117
+a long option, but the risk reward looks
+
+702
+00:33:06,117 --> 00:33:07,845
+horrible there because the SPY easily
+
+703
+00:33:07,845 --> 00:33:12,165
+could have just got back down to that 446 level as we saw was pretty dominant.
+
+704
+00:33:12,455 --> 00:33:17,090
+And then you're probably going to close out those calls and then we end up rallying later in the week.
+
+705
+00:33:17,090 --> 00:33:18,840
+So you can wait for some sort of retracement.
+
+706
+00:33:18,840 --> 00:33:20,518
+I just released a video on Tesla
+
+707
+00:33:20,518 --> 00:33:22,196
+and you guys saw that on the
+
+708
+00:33:22,196 --> 00:33:23,634
+Wednesday, we had a little bit
+
+709
+00:33:23,634 --> 00:33:27,229
+of a retracement and that was the opportunity to get long as we had confluence.
+
+710
+00:33:27,230 --> 00:33:28,670
+We had the two day anchor
+
+711
+00:33:28,670 --> 00:33:30,110
+VWAP. We had, I think it
+
+712
+00:33:30,110 --> 00:33:31,310
+was the 250 gamma strike right
+
+713
+00:33:31,310 --> 00:33:34,672
+below it. And then we had a lot of positive gamma at the strike 260.
+
+714
+00:33:35,155 --> 00:33:36,078
+So Tesla had some sort
+
+715
+00:33:36,078 --> 00:33:37,370
+of an A plus setup on the
+
+716
+00:33:37,370 --> 00:33:38,293
+Wednesday, but for the SPY
+
+717
+00:33:38,293 --> 00:33:40,878
+here, we just ended up gapping up and then we just had a rally.
+
+718
+00:33:40,880 --> 00:33:44,020
+So for a momentum trader, this is just a gap and go.
+
+719
+00:33:44,020 --> 00:33:51,410
+We gapped over the previous day's close and then there wasn't really much resistance here for the week.
+
+720
+00:33:51,410 --> 00:33:54,885
+It was a little bit of, you know, we had a technical level up here.
+
+721
+00:33:54,885 --> 00:33:58,720
+If we were to just draw a level here, it coincide with two sigma.
+
+722
+00:33:58,720 --> 00:33:59,955
+So if you're willing to take the
+
+723
+00:33:59,955 --> 00:34:00,837
+risk at the open here,
+
+724
+00:34:00,837 --> 00:34:02,424
+there's an opportunity and then we'll buy 10 a.m.
+
+725
+00:34:02,425 --> 00:34:07,440
+So 30 minutes after the market opens, it's usually most momentum traders will be closing out a lot of their trades.
+
+726
+00:34:07,440 --> 00:34:09,074
+So we get a little bit of
+
+727
+00:34:09,074 --> 00:34:12,809
+a reversal and then we'll just get some sort of a mean reversion type of day.
+
+728
+00:34:12,810 --> 00:34:14,628
+So these end up being great days
+
+729
+00:34:14,628 --> 00:34:16,446
+to run non-directional trades, which is something
+
+730
+00:34:16,446 --> 00:34:19,303
+that I've expressed in some of these weekly recap videos before.
+
+731
+00:34:19,305 --> 00:34:21,641
+I've mentioned after large rallies, the likelihood is
+
+732
+00:34:21,641 --> 00:34:23,977
+usually there will be some sort of consolidation
+
+733
+00:34:23,977 --> 00:34:26,898
+for that day or some sort of a slight retracement.
+
+734
+00:34:26,900 --> 00:34:29,714
+But usually we'll see that volatility will suppress itself and
+
+735
+00:34:29,714 --> 00:34:31,965
+we will have some sort of a smaller
+
+736
+00:34:31,965 --> 00:34:34,498
+range day. And that's what we end up getting.
+
+737
+00:34:34,500 --> 00:34:35,549
+So an at the money,
+
+738
+00:34:35,549 --> 00:34:36,807
+so about 15 minutes after the market
+
+739
+00:34:36,807 --> 00:34:39,744
+opened, let's just say you ran some sort of at the money iron fly.
+
+740
+00:34:39,955 --> 00:34:42,941
+You're generally going to cover this much of
+
+741
+00:34:42,941 --> 00:34:45,180
+the range here and the SPX
+
+742
+00:34:45,180 --> 00:34:48,539
+or the SPY will likely close within the zone.
+
+743
+00:34:48,540 --> 00:34:51,575
+Just pulling up the SPX again. So how big of a range that is.
+
+744
+00:34:51,575 --> 00:34:52,407
+So from 4,500 to 4,520.
+
+745
+00:34:52,407 --> 00:34:54,072
+So we're talking about just a 20
+
+746
+00:34:54,072 --> 00:34:59,067
+point, you know, well, the exact low to high if we were to use this here to here.
+
+747
+00:34:59,900 --> 00:35:04,855
+We're talking about 20, 27 points, about 28 points or so was the range for that day.
+
+748
+00:35:04,855 --> 00:35:06,669
+And then the same thing is likely to
+
+749
+00:35:06,669 --> 00:35:08,256
+happen as we're around two sigma after
+
+750
+00:35:08,256 --> 00:35:10,524
+such a rally because momentum was really to the upside.
+
+751
+00:35:10,525 --> 00:35:16,350
+So now from this day's high to this day's low, we also ended up getting a 24, 24 point rally.
+
+752
+00:35:16,350 --> 00:35:18,955
+So an also very suppressed volatility day.
+
+753
+00:35:18,955 --> 00:35:22,300
+And that's what's likely to happen as we hit two sigma here.
+
+754
+00:35:22,300 --> 00:35:26,220
+Both sides need to see what's going on as momentum was to the upside.
+
+755
+00:35:26,220 --> 00:35:29,175
+There isn't really much of a bearish catalyst.
+
+756
+00:35:29,175 --> 00:35:33,490
+Price action is still showing that bulls are stepping up and they're still being aggressive.
+
+757
+00:35:33,490 --> 00:35:36,267
+However, bears now have the favor of a better risk reward because
+
+758
+00:35:36,267 --> 00:35:37,887
+their stop loss can be maybe 30 points
+
+759
+00:35:37,887 --> 00:35:41,358
+and they can say maybe we're going to come all the way back down here.
+
+760
+00:35:41,590 --> 00:35:43,825
+So if you're shorting right here and your stop loss
+
+761
+00:35:43,825 --> 00:35:45,613
+is above here, so you're giving it a
+
+762
+00:35:45,613 --> 00:35:48,519
+25 point stop loss and then you're targeting all the way back down here.
+
+763
+00:35:48,745 --> 00:35:50,180
+That's almost 75 points.
+
+764
+00:35:50,180 --> 00:35:54,540
+So now you're looking for this to be your reward and this is your risk.
+
+765
+00:35:54,540 --> 00:35:57,280
+So bulls don't have the same risk reward.
+
+766
+00:35:57,280 --> 00:36:01,535
+So, yes, the favor regarding risk reward is for bears.
+
+767
+00:36:01,535 --> 00:36:04,595
+However, there isn't much of a bearish setup yet.
+
+768
+00:36:04,595 --> 00:36:07,341
+If we come back to the chart, let's
+
+769
+00:36:07,341 --> 00:36:09,743
+take a look very quickly at the
+
+770
+00:36:09,743 --> 00:36:13,518
+SPX now on the Tuesday here as we see this rally.
+
+771
+00:36:13,520 --> 00:36:15,740
+And this is what one of you guys share within the discord.
+
+772
+00:36:15,740 --> 00:36:17,765
+So, again, we have over 4, 450.
+
+773
+00:36:17,765 --> 00:36:21,140
+Let's just jump and then we see now prices at 4, 450.
+
+774
+00:36:21,140 --> 00:36:24,080
+Once it gets over 4, 450, now we are above it.
+
+775
+00:36:24,080 --> 00:36:25,505
+So we cleared this level.
+
+776
+00:36:25,505 --> 00:36:26,905
+This level should act as support.
+
+777
+00:36:26,905 --> 00:36:28,333
+However, we did not retrace back to
+
+778
+00:36:28,333 --> 00:36:29,761
+this level, but we did end up
+
+779
+00:36:29,761 --> 00:36:31,393
+having is a little bit of a resistance.
+
+780
+00:36:31,395 --> 00:36:32,635
+If I remember correctly here,
+
+781
+00:36:32,635 --> 00:36:34,280
+price is rejected right there.
+
+782
+00:36:34,280 --> 00:36:39,305
+And we have 4, 470. And this would be our 4, 470 right here.
+
+783
+00:36:39,305 --> 00:36:41,300
+So this is our next big little spike.
+
+784
+00:36:41,300 --> 00:36:44,220
+It consolidated here for about 45 minutes or so.
+
+785
+00:36:45,280 --> 00:36:48,665
+Here goes 15 minutes, 30 minutes, 45 minutes.
+
+786
+00:36:48,665 --> 00:36:51,230
+And then we ended up breaking out at the top of the hour.
+
+787
+00:36:51,230 --> 00:36:55,020
+So once we cleared 4, 475, let's just continue right along.
+
+788
+00:36:56,020 --> 00:36:57,925
+Rejected, consolidated, consolidating.
+
+789
+00:36:57,925 --> 00:37:00,180
+Now we're above that 4, 475.
+
+790
+00:37:01,240 --> 00:37:03,400
+Gamma exposure is a little bit muted here.
+
+791
+00:37:03,400 --> 00:37:06,600
+And then we have this massive gamma strike at 4,500.
+
+792
+00:37:06,600 --> 00:37:13,215
+Price is now going to naturally want to gravitate towards it as momentum will carry it towards that strike.
+
+793
+00:37:13,215 --> 00:37:14,545
+And then there we go.
+
+794
+00:37:14,545 --> 00:37:16,335
+And especially since there's no other
+
+795
+00:37:16,335 --> 00:37:18,722
+major levels on our chart in terms of
+
+796
+00:37:18,722 --> 00:37:22,004
+technical levels, the natural flow and momentum is to the upside.
+
+797
+00:37:22,005 --> 00:37:23,360
+So this is just before the close.
+
+798
+00:37:23,360 --> 00:37:26,240
+So nine minutes before the close here, this is what the gamma profile looked like.
+
+799
+00:37:26,240 --> 00:37:28,408
+So now let's just jump to the
+
+800
+00:37:28,408 --> 00:37:31,196
+next day and kind of speed this up as
+
+801
+00:37:31,196 --> 00:37:36,463
+I don't think there is much significance on the Wednesday here as prices, again, just very choppy.
+
+802
+00:37:36,465 --> 00:37:39,700
+This is now, as soon as the market opens, this is pre-market.
+
+803
+00:37:39,700 --> 00:37:41,680
+So we can kind of get some sort of an idea.
+
+804
+00:37:41,680 --> 00:37:46,605
+Pre-market, we can see here's our massive gamma strike at 453.
+
+805
+00:37:46,605 --> 00:37:50,905
+So this is our P1 strike. P1 is the strike price that has the highest amount of positive gamma.
+
+806
+00:37:50,905 --> 00:37:51,779
+We're just below
+
+807
+00:37:51,779 --> 00:37:53,527
+4,500. Or sorry, I trade the SPX.
+
+808
+00:37:53,527 --> 00:37:55,567
+I look at the SPX, so I
+
+809
+00:37:55,567 --> 00:37:57,607
+sometimes I mix the numbers up interchangeably.
+
+810
+00:38:00,400 --> 00:38:09,675
+4,500 on the SPX is the equivalent or close to about 4,510 or so, or 4,512 or something like that on the SPX.
+
+811
+00:38:09,675 --> 00:38:12,975
+So it's just a little bit off between the SPX and the SPX.
+
+812
+00:38:12,975 --> 00:38:15,300
+But for the most part, they're around the same.
+
+813
+00:38:15,300 --> 00:38:20,860
+Now, the thing I want to point out here is this is our massive positive gamma strike, 453.
+
+814
+00:38:20,860 --> 00:38:25,250
+Where do you guys think ended up being the resistance later in that week?
+
+815
+00:38:25,250 --> 00:38:25,935
+So here we go.
+
+816
+00:38:25,935 --> 00:38:29,950
+This is our Wednesday. This is our Thursday. And this is our Friday.
+
+817
+00:38:29,950 --> 00:38:33,435
+So this little gap here is just letting me know this is the start of the next session.
+
+818
+00:38:33,435 --> 00:38:39,310
+And look at where the market ended up rejecting right at that 453 level.
+
+819
+00:38:39,310 --> 00:38:42,260
+We already know where 2 Sigma was. So 2 Sigma was right here.
+
+820
+00:38:42,260 --> 00:38:44,110
+Let's take a look at just the SPY.
+
+821
+00:38:44,110 --> 00:38:45,380
+So here's our 2 Sigma level.
+
+822
+00:38:45,380 --> 00:38:46,487
+But now we have
+
+823
+00:38:46,487 --> 00:38:48,701
+this P1 strike. So that's this green level
+
+824
+00:38:48,701 --> 00:38:50,638
+right here. P1, again, the highest positive
+
+825
+00:38:50,638 --> 00:38:53,406
+gamma strike right there on our chart is pointing at 453.
+
+826
+00:38:53,685 --> 00:38:55,438
+So if we're looking to
+
+827
+00:38:55,438 --> 00:38:57,892
+take a trade here, the assumption should
+
+828
+00:38:57,892 --> 00:39:01,748
+be the market shouldn't really get much higher than 453 unless we
+
+829
+00:39:02,100 --> 00:39:04,040
+see something changing within the gamma profile.
+
+830
+00:39:04,040 --> 00:39:07,085
+So let's take a look at this here and let's see what we have.
+
+831
+00:39:07,085 --> 00:39:08,440
+So again, market just opens.
+
+832
+00:39:08,440 --> 00:39:10,935
+We see there's some volume coming in, but this is the start of the day.
+
+833
+00:39:10,935 --> 00:39:12,120
+So it's not really a lot of volume.
+
+834
+00:39:12,120 --> 00:39:16,595
+Again, this is the first few seconds QTA is archiving this information.
+
+835
+00:39:16,595 --> 00:39:17,870
+Let's jump here.
+
+836
+00:39:17,870 --> 00:39:22,155
+The way we would read this is now we have support likely to be right here.
+
+837
+00:39:22,155 --> 00:39:24,785
+So this is right when the gamma goes from positive to negative
+
+838
+00:39:24,785 --> 00:39:28,949
+and you see a little switch like this, this is likely to be a level that should be support.
+
+839
+00:39:28,950 --> 00:39:31,695
+So 447 area should be our support.
+
+840
+00:39:31,695 --> 00:39:35,405
+As long as we stay above that, the market is probably going to chop around this area.
+
+841
+00:39:35,405 --> 00:39:38,080
+We know 450 is a very strong strike price.
+
+842
+00:39:38,080 --> 00:39:42,650
+And then we're looking for reasons for the SPY or momentum to carry it to 453.
+
+843
+00:39:42,650 --> 00:39:45,915
+And let's just jump through this day and just pay attention to this.
+
+844
+00:39:45,915 --> 00:39:48,260
+So if we come back here, here's 451.
+
+845
+00:39:48,260 --> 00:39:50,960
+And then we had a little bit of a pullback here.
+
+846
+00:39:50,960 --> 00:39:53,435
+So now we're chopping around 450.
+
+847
+00:39:53,435 --> 00:39:54,340
+There we go.
+
+848
+00:39:54,340 --> 00:39:56,890
+So you see a little bit back above it. So we're just chopping around it.
+
+849
+00:39:56,890 --> 00:39:59,640
+It took 30 minutes. Back above it, just holding around here.
+
+850
+00:39:59,640 --> 00:40:02,765
+There isn't really anything exciting happening relative to the previous days.
+
+851
+00:40:02,765 --> 00:40:04,900
+You guys see there isn't really much. We're back at the start of the day.
+
+852
+00:40:04,900 --> 00:40:06,200
+I already cycled through the whole thing.
+
+853
+00:40:06,200 --> 00:40:09,960
+But as you guys can see, there isn't really much, you know, popping.
+
+854
+00:40:09,960 --> 00:40:14,540
+There wasn't really much change throughout the day as I just looped through that twice
+
+855
+00:40:14,540 --> 00:40:16,840
+because we're getting a little bit of a choppy day.
+
+856
+00:40:16,840 --> 00:40:18,611
+Volatility should be suppressed after such
+
+857
+00:40:18,611 --> 00:40:20,382
+a large move up. And the
+
+858
+00:40:20,382 --> 00:40:23,334
+market is going to take some time to consolidate that.
+
+859
+00:40:23,335 --> 00:40:24,881
+However, what we do now
+
+860
+00:40:24,881 --> 00:40:27,046
+know is we have a potential resistance
+
+861
+00:40:27,046 --> 00:40:30,139
+level forming at 453. And that's what you want to mark.
+
+862
+00:40:30,450 --> 00:40:33,300
+So now the next day, well, actually, let's just take a look at the SPX.
+
+863
+00:40:33,300 --> 00:40:37,825
+Here goes the Wednesday or sorry. This is the Wednesday here.
+
+864
+00:40:37,825 --> 00:40:39,065
+Let's just jump through this.
+
+865
+00:40:39,065 --> 00:40:41,870
+We have our... Oh, no, that's the SPY.
+
+866
+00:40:41,870 --> 00:40:44,945
+Let's go to the... Oh, I have the SPY loaded.
+
+867
+00:40:44,945 --> 00:40:46,070
+So let's just
+
+868
+00:40:46,070 --> 00:40:47,195
+switch over to
+
+869
+00:40:47,195 --> 00:40:48,695
+the SPX. Submit. Okay.
+
+870
+00:40:48,695 --> 00:40:52,820
+And then this is now the Wednesday expiration for the SPX.
+
+871
+00:40:52,820 --> 00:40:54,245
+Oh, this is now Wednesday.
+
+872
+00:40:54,245 --> 00:40:57,155
+And this is the same Friday expiration. So let's just pull that up.
+
+873
+00:40:57,155 --> 00:40:58,365
+Again, we can take a
+
+874
+00:40:58,365 --> 00:41:00,059
+look at pre-market. It doesn't really matter
+
+875
+00:41:00,059 --> 00:41:02,479
+because there isn't any pre-market trading activity on the SPX.
+
+876
+00:41:02,480 --> 00:41:05,205
+So let's just jump straight to what we get at the open here.
+
+877
+00:41:05,205 --> 00:41:11,680
+So we have $4,500 spot prices above it. Again, $4,510 is about the equivalent of $4,50
+
+878
+00:41:11,680 --> 00:41:15,050
+on the SPY. So this is pretty much it opening around the same point.
+
+879
+00:41:15,050 --> 00:41:21,145
+We can see that there is a decent amount of call gamma right here in this region.
+
+880
+00:41:21,145 --> 00:41:26,490
+And then we have a little bit of a hump right here. So this is our potential resistance area.
+
+881
+00:41:26,490 --> 00:41:29,095
+And then we have another potential resistance area here.
+
+882
+00:41:29,095 --> 00:41:33,775
+And now we're just asking ourselves, is there enough momentum to carry the SPX up towards that direction?
+
+883
+00:41:33,775 --> 00:41:37,010
+But we can already see this isn't really that much of a big move here.
+
+884
+00:41:37,010 --> 00:41:39,235
+We're talking about just 15, 10 points or so.
+
+885
+00:41:39,235 --> 00:41:41,220
+There isn't really that much meat left on the bone.
+
+886
+00:41:41,220 --> 00:41:43,430
+As we continue, we can see how things are going.
+
+887
+00:41:43,430 --> 00:41:45,780
+We're just chopping around for 45, 11.
+
+888
+00:41:45,780 --> 00:41:59,840
+I jump back to 45, 11, 45, 11, 45, 16, 45, 19, 20, 19, 16, 18, right here, 14, 12, 12, 9, 15.
+
+889
+00:41:59,840 --> 00:42:01,700
+Markets closing in an hour now.
+
+890
+00:42:01,700 --> 00:42:05,195
+So here's 17, 16, 14, 14.
+
+891
+00:42:05,195 --> 00:42:07,600
+And there we have it back to pre-market.
+
+892
+00:42:07,600 --> 00:42:13,420
+So it never really manifested much as there wasn't really that much interest as we were going.
+
+893
+00:42:13,420 --> 00:42:16,410
+So if we jump back to as the market closed, look at the volume here.
+
+894
+00:42:16,410 --> 00:42:19,640
+So 5,000 volume here, 5,000 volume here.
+
+895
+00:42:19,640 --> 00:42:23,000
+The gamma exposure is around 15 million.
+
+896
+00:42:23,000 --> 00:42:28,735
+So nothing really that crazy relative to the previous days that we were just looking at.
+
+897
+00:42:28,735 --> 00:42:30,415
+So now let's just jump to the Thursday.
+
+898
+00:42:30,415 --> 00:42:34,040
+Similar situation. Again, consolidation is likely to be expected.
+
+899
+00:42:34,040 --> 00:42:38,760
+But now we gap up and we are above two sigma. So this is always obviously a little bit scary.
+
+900
+00:42:38,760 --> 00:42:44,445
+I know it's scary for myself because I showed you guys some of my double butterflies that I had earlier.
+
+901
+00:42:44,445 --> 00:42:46,500
+So my butterflies look something like this.
+
+902
+00:42:46,500 --> 00:42:47,781
+And I needed, you know,
+
+903
+00:42:47,781 --> 00:42:49,574
+I needed the SPX to be below
+
+904
+00:42:49,574 --> 00:42:52,649
+two sigma as my break even was right around somewhere up here.
+
+905
+00:42:52,650 --> 00:42:56,590
+I was using this understanding that my break even was around here.
+
+906
+00:42:56,590 --> 00:43:01,940
+So anything above here made me incredibly nervous, which is why Friday morning, I was incredibly nervous.
+
+907
+00:43:01,940 --> 00:43:06,265
+But I had some faith and we would have some sort of a retracement and a pullback.
+
+908
+00:43:06,265 --> 00:43:07,408
+However, I didn't have enough
+
+909
+00:43:07,408 --> 00:43:09,009
+faith to hold until power hour as
+
+910
+00:43:09,009 --> 00:43:11,754
+I was very happy to close out that trade on Friday morning.
+
+911
+00:43:11,755 --> 00:43:13,490
+But here's our Thursday expiration.
+
+912
+00:43:13,490 --> 00:43:14,750
+Things look pretty chaotic.
+
+913
+00:43:14,750 --> 00:43:17,040
+So this is now 15 minutes after the market opened.
+
+914
+00:43:17,040 --> 00:43:24,320
+We can see here there's a decent amount of positive gamma right here. This is actually pretty large.
+
+915
+00:43:24,320 --> 00:43:27,440
+We can see that gamma is increasing towards that level.
+
+916
+00:43:27,440 --> 00:43:29,420
+What do we have? Which strike price is this right here?
+
+917
+00:43:29,420 --> 00:43:34,020
+We have this right here at 4, 5, 3. But now there's interest that has grown past 4,
+
+918
+00:43:34,020 --> 00:43:34,650
+55.
+
+919
+00:43:34,650 --> 00:43:36,561
+So this would be reasons if you came
+
+920
+00:43:36,561 --> 00:43:38,233
+in and you saw this and you
+
+921
+00:43:38,233 --> 00:43:41,817
+were thinking, hey, I think the market is going to go to 4, 5, 5 potentially this week.
+
+922
+00:43:42,535 --> 00:43:48,580
+You wouldn't be wrong in thinking that if the market's at 4, 52, if we get over 4, 53.
+
+923
+00:43:48,580 --> 00:43:51,247
+The problem is if you're just looking
+
+924
+00:43:51,247 --> 00:43:53,152
+at this in isolation, that's
+
+925
+00:43:53,152 --> 00:43:56,963
+not enough context because this now is a 2DTE strike.
+
+926
+00:43:56,965 --> 00:44:03,165
+We're now looking at this is Thursday. So we're looking at expirations that expire the next day.
+
+927
+00:44:03,165 --> 00:44:09,795
+It's Thursday and we know we're above 2 Sigma. So above 2 Sigma, it's harder for the market to continue going up.
+
+928
+00:44:09,795 --> 00:44:12,276
+In the Discord, I believe we were
+
+929
+00:44:12,276 --> 00:44:14,757
+discussing this or I ended up sharing
+
+930
+00:44:14,757 --> 00:44:17,238
+previous examples of last occurrences right here.
+
+931
+00:44:17,240 --> 00:44:18,015
+So here we have it.
+
+932
+00:44:18,015 --> 00:44:20,002
+So these are just the last times in which the
+
+933
+00:44:20,002 --> 00:44:21,393
+SPY broke 2 Sigma early in the week
+
+934
+00:44:21,393 --> 00:44:25,963
+or in the middle of the week and just showing how we ended up closing right at 2 Sigma, a little bit below 2 Sigma.
+
+935
+00:44:26,560 --> 00:44:28,246
+This was an instance in which I
+
+936
+00:44:28,246 --> 00:44:29,932
+believe this was a... Yes, this was
+
+937
+00:44:29,932 --> 00:44:34,268
+some sort of quarterly or monthly... This was a monthly OPEX or quarterly OPEX or something like that.
+
+938
+00:44:34,270 --> 00:44:36,380
+And we had a little bit of a rally there at the end.
+
+939
+00:44:36,380 --> 00:44:37,480
+And then we had a little bit of a rally.
+
+940
+00:44:37,480 --> 00:44:40,805
+Also some sort of catalyst to something that happened here.
+
+941
+00:44:40,805 --> 00:44:42,471
+And I was letting you guys know, this
+
+942
+00:44:42,471 --> 00:44:44,137
+is what I was most afraid of as
+
+943
+00:44:44,137 --> 00:44:47,470
+it is possible for it to happen, but it probably happens maybe two in every 100 weeks.
+
+944
+00:44:47,680 --> 00:44:48,809
+We'll probably get something like
+
+945
+00:44:48,809 --> 00:44:53,099
+this. So it's very rare, but all you need is for something like this to happen to you once.
+
+946
+00:44:53,100 --> 00:44:57,300
+And if you don't have proper risk management, you can lose a significant chunk of your account.
+
+947
+00:44:57,300 --> 00:44:59,660
+So that's why risk management is very important.
+
+948
+00:44:59,660 --> 00:45:03,640
+But at the same time, being able to go back and see what these previous weeks look like.
+
+949
+00:45:03,640 --> 00:45:07,340
+So I can obviously just click one of these and it will repopulate it in Quant Trading app.
+
+950
+00:45:07,340 --> 00:45:10,020
+And then we can go back to what the gamma exposure looked like on those weeks.
+
+951
+00:45:10,020 --> 00:45:12,429
+And that's how we can build a framework for ourselves
+
+952
+00:45:12,429 --> 00:45:13,874
+and not be so nervous and
+
+953
+00:45:13,874 --> 00:45:17,729
+tell ourselves, what are we going to do if we ever see something like this again?
+
+954
+00:45:17,730 --> 00:45:19,357
+What I do know is that this was
+
+955
+00:45:19,357 --> 00:45:20,577
+the level I had faith in
+
+956
+00:45:20,577 --> 00:45:22,204
+as acting as some sort of the resistance.
+
+957
+00:45:22,205 --> 00:45:27,930
+And as we're taking a look at this, so in context, understanding that, hey, we are above two sigma.
+
+958
+00:45:27,930 --> 00:45:32,620
+Yes, now things became pretty scary because we have this new interest that's growing here.
+
+959
+00:45:32,620 --> 00:45:34,732
+It was not good to see that there
+
+960
+00:45:34,732 --> 00:45:36,844
+was more positive gex above the level that
+
+961
+00:45:36,844 --> 00:45:39,220
+I was expecting to be resistance for this week.
+
+962
+00:45:39,220 --> 00:45:44,345
+But we also know that now the absolute gamma strike is back below the current spot price.
+
+963
+00:45:44,345 --> 00:45:49,255
+It's also max pain is all the way back down here. We are now above two sigma.
+
+964
+00:45:49,255 --> 00:45:50,577
+All those reasons there are giving
+
+965
+00:45:50,577 --> 00:45:52,340
+me a little bit of faith that it's
+
+966
+00:45:52,340 --> 00:45:53,883
+probably going to struggle to go higher.
+
+967
+00:45:53,885 --> 00:45:58,280
+And as we continue, we can see I want to wrap up this video here.
+
+968
+00:45:58,280 --> 00:45:58,845
+It's pretty soon.
+
+969
+00:45:58,845 --> 00:46:00,515
+So I'm just going to fly through some of this.
+
+970
+00:46:00,515 --> 00:46:04,080
+As you guys can see here, we're now let's just jump back to noon.
+
+971
+00:46:04,080 --> 00:46:08,210
+So this is now middle of the day. There isn't really there hasn't really been much happening.
+
+972
+00:46:08,210 --> 00:46:09,175
+We don't see any volume.
+
+973
+00:46:09,175 --> 00:46:10,985
+There isn't a lot of volume also being traded.
+
+974
+00:46:10,985 --> 00:46:15,545
+So we had over 50,000 volume being traded at this strike price on the call side right here.
+
+975
+00:46:15,545 --> 00:46:17,265
+So, again, this is our 453.
+
+976
+00:46:17,265 --> 00:46:21,065
+No one's really bidding up that 455 level yet.
+
+977
+00:46:21,065 --> 00:46:22,275
+We're not seeing a ton of volume.
+
+978
+00:46:22,275 --> 00:46:23,330
+So let's just continue.
+
+979
+00:46:23,330 --> 00:46:29,500
+Again, it is pretty alarming still, though, that there it is pretty alarming still that this level is so high.
+
+980
+00:46:29,500 --> 00:46:34,570
+But we can see that that 450 strike price is still acting as a magnet as it should.
+
+981
+00:46:34,570 --> 00:46:36,720
+And then we can just fly through this.
+
+982
+00:46:36,720 --> 00:46:41,015
+And then right here, the market has closed. So this is 15 minutes before the close.
+
+983
+00:46:41,015 --> 00:46:43,270
+Again, spot price didn't really go anywhere.
+
+984
+00:46:43,270 --> 00:46:45,315
+Let's take a look very quickly at the SPX.
+
+985
+00:46:45,315 --> 00:46:49,135
+This would be the Thursday. And we have pre-market.
+
+986
+00:46:49,135 --> 00:46:52,805
+What is our level? 455 right here.
+
+987
+00:46:52,805 --> 00:46:55,855
+And that's in coincide almost with the SPY levels.
+
+988
+00:46:55,855 --> 00:46:57,240
+This is our significant level.
+
+989
+00:46:57,240 --> 00:47:00,910
+If we get above this level and it's holding, yes, it is possible for us to go here.
+
+990
+00:47:00,910 --> 00:47:04,410
+However, we have the absolute get strike here that's going to act as some sort of a magnet.
+
+991
+00:47:04,410 --> 00:47:08,485
+It's going to be helping to pull it back unless we see this switch to up here and then hold.
+
+992
+00:47:08,485 --> 00:47:12,430
+And our chart shows some sort of bullish pattern or something like that.
+
+993
+00:47:12,430 --> 00:47:15,400
+But as we continue, also, if price is holding over VWAP,
+
+994
+00:47:15,400 --> 00:47:17,540
+these are things in which our chart will help us.
+
+995
+00:47:17,540 --> 00:47:20,350
+We can see here now SPY is below VWAP.
+
+996
+00:47:20,350 --> 00:47:23,020
+How is it in relation to the two-day anchored VWAP?
+
+997
+00:47:23,020 --> 00:47:25,080
+I'm using the chart as separate.
+
+998
+00:47:25,080 --> 00:47:29,385
+But if we're just looking at the gamma profile, there's also other things that we would use as context.
+
+999
+00:47:29,385 --> 00:47:31,160
+But this is pretty interesting to see.
+
+1000
+00:47:31,160 --> 00:47:32,785
+We can see that it is increasing.
+
+1001
+00:47:32,785 --> 00:47:37,645
+And that's why we should not just be looking at gamma exposure. It should be the overall context.
+
+1002
+00:47:37,645 --> 00:47:40,130
+Again, we are now above two sigma.
+
+1003
+00:47:40,130 --> 00:47:44,185
+We are also below VWAP after the morning session.
+
+1004
+00:47:44,185 --> 00:47:48,565
+These are the things that you also want to combine with some of our other tools.
+
+1005
+00:47:48,565 --> 00:47:49,760
+So here we have it right here.
+
+1006
+00:47:49,760 --> 00:47:50,555
+Let's just continue.
+
+1007
+00:47:50,555 --> 00:47:51,420
+This is now midday.
+
+1008
+00:47:51,420 --> 00:47:56,965
+So this is 12.17 Eastern time. And let's just continue.
+
+1009
+00:47:56,965 --> 00:48:02,625
+We can see just top, top, top, top, top, top, top, top, top, top. Nothing, again, really significant happening.
+
+1010
+00:48:02,625 --> 00:48:05,895
+So this is now right before nine minutes before the markets close.
+
+1011
+00:48:05,895 --> 00:48:07,570
+Nothing really significant happens.
+
+1012
+00:48:07,570 --> 00:48:09,855
+No real major changes in the profile, right?
+
+1013
+00:48:09,855 --> 00:48:13,220
+So now let's just jump to the final day of the week, which was just the Friday.
+
+1014
+00:48:13,220 --> 00:48:16,685
+Okay, and let's see what we have pre-market.
+
+1015
+00:48:16,685 --> 00:48:18,165
+Similar situation.
+
+1016
+00:48:18,165 --> 00:48:20,705
+Let's start with the SPY.
+
+1017
+00:48:20,705 --> 00:48:26,775
+So market opens here. It makes that attempt at 453. Gets rejected. And then we sell off.
+
+1018
+00:48:26,775 --> 00:48:27,700
+So let's take a look.
+
+1019
+00:48:27,700 --> 00:48:31,340
+Pre-market, what do we have? We are now at 453.
+
+1020
+00:48:31,340 --> 00:48:33,435
+This is why I was very nervous.
+
+1021
+00:48:33,435 --> 00:48:35,830
+Because this is not what I want to
+
+1022
+00:48:35,830 --> 00:48:41,518
+see before the market opens. With this strike price right here that was growing interest from the day before.
+
+1023
+00:48:41,520 --> 00:48:47,490
+So the objective or the hard part is to wait out the first 5 to 15 minutes to see what happens.
+
+1024
+00:48:47,490 --> 00:48:50,730
+So I don't make any type of premature adjustment to the trade.
+
+1025
+00:48:50,730 --> 00:48:54,810
+Because at the end of the day, I do know we were still above 2 Sigma.
+
+1026
+00:48:54,810 --> 00:49:02,870
+Absolute gamma strike was below 2 Sigma. Max Payne strike was below 2 Sigma. And this was still the P1 strike.
+
+1027
+00:49:02,870 --> 00:49:04,780
+So there is a lot of implications or
+
+1028
+00:49:04,780 --> 00:49:08,840
+a lot of faith for me that we are going to want to retrace back to 2 Sigma.
+
+1029
+00:49:09,080 --> 00:49:11,604
+Because majority of the time, this is where
+
+1030
+00:49:11,604 --> 00:49:14,128
+we should land either at or below it
+
+1031
+00:49:14,128 --> 00:49:17,914
+by Friday or just within the region, which we ended up doing.
+
+1032
+00:49:17,915 --> 00:49:20,470
+Again, early in the morning, didn't know that was going to happen,
+
+1033
+00:49:20,470 --> 00:49:24,705
+especially when I'm looking at my P&L and I'm down 1,500 or so collectively.
+
+1034
+00:49:24,705 --> 00:49:28,295
+And then I'm waiting to see what's going to happen here. It's very nerve-wracking.
+
+1035
+00:49:28,295 --> 00:49:30,900
+And fortunately, I think, again, things ended up working out.
+
+1036
+00:49:30,900 --> 00:49:32,495
+But it was not a comfortable hold.
+
+1037
+00:49:32,495 --> 00:49:35,580
+As we continue right along, the market now opens.
+
+1038
+00:49:35,580 --> 00:49:36,515
+We're still here.
+
+1039
+00:49:36,515 --> 00:49:37,820
+And then what do we have?
+
+1040
+00:49:37,820 --> 00:49:42,565
+The market before that 15 minutes... By that 15-minute candle close, we are now below that level.
+
+1041
+00:49:42,565 --> 00:49:44,330
+Once we are below that level, 15 minutes
+
+1042
+00:49:44,330 --> 00:49:46,095
+after the market is open, I'm now
+
+1043
+00:49:46,095 --> 00:49:49,372
+feeling a lot better because now I know where my risk level is.
+
+1044
+00:49:49,625 --> 00:49:52,915
+If we get back above that level, then I have to stop out.
+
+1045
+00:49:52,915 --> 00:49:56,200
+However, now that we are below it, this level should act as some sort of resistance.
+
+1046
+00:49:56,200 --> 00:50:00,590
+And this is where the market really wants to be, around here or closer to 2 Sigma.
+
+1047
+00:50:00,590 --> 00:50:05,670
+So as we continue, we can see now we are... Again, we are below the 53 level.
+
+1048
+00:50:05,670 --> 00:50:06,765
+We continue.
+
+1049
+00:50:06,765 --> 00:50:08,200
+We're going back up to 53.
+
+1050
+00:50:10,280 --> 00:50:12,600
+Trying 51. We'll call that 52.
+
+1051
+00:50:13,860 --> 00:50:18,455
+And this is now Friday. Again, this is a weekly option. So these are zero DTE now.
+
+1052
+00:50:18,455 --> 00:50:19,859
+So the gamma profile is going to
+
+1053
+00:50:19,859 --> 00:50:23,069
+be jumping around a lot because these options don't have that much time left in them.
+
+1054
+00:50:23,070 --> 00:50:25,155
+So they're very sensitive to gamma.
+
+1055
+00:50:25,155 --> 00:50:29,305
+And as we continue, we can see the gamma turned negative as we hit 450.
+
+1056
+00:50:29,305 --> 00:50:35,345
+So this is essentially if we got below 450, price could end up selling off a lot more aggressive.
+
+1057
+00:50:35,345 --> 00:50:36,921
+If we close and stay below it, but
+
+1058
+00:50:36,921 --> 00:50:38,497
+you guys can see every time we dip
+
+1059
+00:50:38,497 --> 00:50:41,058
+below 450, there were buyers here and we ended up chopping around this region.
+
+1060
+00:50:41,255 --> 00:50:44,875
+So there wasn't really much to learn, I think, from the gamma exposure from here.
+
+1061
+00:50:44,875 --> 00:50:47,740
+Because again, it's just going to be bouncing around this 450 level here.
+
+1062
+00:50:47,740 --> 00:50:49,771
+We can just see that it's just chopping
+
+1063
+00:50:49,771 --> 00:50:51,548
+right around here and end up closing
+
+1064
+00:50:51,548 --> 00:50:55,103
+right within the vicinity in which it would have been expected to close at.
+
+1065
+00:50:55,105 --> 00:50:58,895
+If we take a look at the Friday now on the SPX, what do we have?
+
+1066
+00:50:58,895 --> 00:51:01,620
+Similar situation as the day before. This looked almost the same.
+
+1067
+00:51:01,620 --> 00:51:02,640
+So let's just jump to the open.
+
+1068
+00:51:02,640 --> 00:51:06,760
+And then we can see it looked pretty strong here.
+
+1069
+00:51:06,760 --> 00:51:08,880
+If we jump back, a lot of positive gamma.
+
+1070
+00:51:08,880 --> 00:51:12,322
+But there just wasn't enough momentum on this Friday to
+
+1071
+00:51:12,322 --> 00:51:15,076
+allow it to actually rally up to the
+
+1072
+00:51:15,076 --> 00:51:17,830
+455 level, which is what I was nervous about.
+
+1073
+00:51:18,175 --> 00:51:19,338
+But again, some faith in
+
+1074
+00:51:19,338 --> 00:51:20,967
+that. We had the absolute gex to
+
+1075
+00:51:20,967 --> 00:51:23,294
+pull it back. Absolute gex to help weigh it down.
+
+1076
+00:51:23,295 --> 00:51:24,489
+We also had the two
+
+1077
+00:51:24,489 --> 00:51:26,161
+sigma. So we had a little bit
+
+1078
+00:51:26,161 --> 00:51:28,549
+more of a probability on our side, on our edge.
+
+1079
+00:51:28,550 --> 00:51:29,925
+And then we can see this is now noon.
+
+1080
+00:51:29,925 --> 00:51:33,805
+Look at how this gamma is all just decreased. It's now low.
+
+1081
+00:51:33,805 --> 00:51:35,615
+It's losing a lot of its gamma
+
+1082
+00:51:35,615 --> 00:51:37,425
+exposure because these options are losing a
+
+1083
+00:51:37,425 --> 00:51:40,269
+lot of value. Again, they're going to be expiring pretty soon.
+
+1084
+00:51:40,270 --> 00:51:42,660
+So as we just fly through here again,
+
+1085
+00:51:42,660 --> 00:51:45,050
+not much to learn from the gamma profile
+
+1086
+00:51:45,050 --> 00:51:49,233
+during the last couple hours of the 0DTE right there, which is the weekly.
+
+1087
+00:51:49,235 --> 00:51:52,125
+There isn't really much because the gamma is just going to be bouncing all over the place.
+
+1088
+00:51:52,125 --> 00:51:57,135
+If we take a look at the SPX, we can see we closed at 4.14.
+
+1089
+00:51:57,135 --> 00:51:58,398
+So if the SPX is
+
+1090
+00:51:58,398 --> 00:51:59,914
+about 4.51.12 or so. So you guys
+
+1091
+00:51:59,914 --> 00:52:02,441
+can see it's a little bit off between the two.
+
+1092
+00:52:02,695 --> 00:52:05,079
+But the important thing to take note of is we
+
+1093
+00:52:05,079 --> 00:52:07,939
+closed just at and below two sigma. And that's what really helped.
+
+1094
+00:52:07,940 --> 00:52:11,420
+And this is what is expected given a week like this.
+
+1095
+00:52:11,420 --> 00:52:14,815
+So our clues, pay attention when we break these levels early in the week.
+
+1096
+00:52:14,815 --> 00:52:16,120
+Be aware of the levels.
+
+1097
+00:52:16,120 --> 00:52:18,118
+If we're not retracing back to them, we
+
+1098
+00:52:18,118 --> 00:52:20,116
+can start looking at there were still some
+
+1099
+00:52:20,116 --> 00:52:23,113
+long call butterflies that were really cheap still early in the week.
+
+1100
+00:52:23,115 --> 00:52:31,680
+For a 1DTE, a 2DTE, these things were up at least 600%, 500% the butterflies if they're pretty narrow.
+
+1101
+00:52:31,680 --> 00:52:34,692
+And even if we were to take a look at
+
+1102
+00:52:34,692 --> 00:52:36,800
+just some call options here, this would
+
+1103
+00:52:36,800 --> 00:52:39,511
+have been the $4.50 call on the Monday. So around $0.41.
+
+1104
+00:52:40,115 --> 00:52:43,720
+And on the identification here on Tuesday, we're still below $1.
+
+1105
+00:52:43,720 --> 00:52:47,000
+This is when the SPY had broke the weekly level.
+
+1106
+00:52:47,000 --> 00:52:53,030
+So about $1. And this thing still ended up going up to over $3. This would be for the following Friday.
+
+1107
+00:52:53,030 --> 00:52:55,000
+So this is September 8th right here.
+
+1108
+00:52:55,000 --> 00:52:59,940
+So still not the same weeklies, but the following week out, going for around $1 here on the Monday.
+
+1109
+00:52:59,940 --> 00:53:04,255
+By the Tuesday, as we broke that level, we're going for around $1.80, $2.
+
+1110
+00:53:04,255 --> 00:53:08,015
+And ended up going to over $4, so over 100% here.
+
+1111
+00:53:08,015 --> 00:53:12,215
+And for those of you that trade SPX options instead, this is on the Monday.
+
+1112
+00:53:12,215 --> 00:53:14,835
+But again, there wasn't enough clues on the Monday.
+
+1113
+00:53:14,835 --> 00:53:22,120
+This is now as we're breaking that key level, that $45.50 level on the SPX here on the Tuesday.
+
+1114
+00:53:22,120 --> 00:53:26,065
+Wednesday, it's going for $10 and ended up going all the way up to $30.
+
+1115
+00:53:26,065 --> 00:53:30,000
+So great risk-reward if you know how to manage these type of trades.
+
+1116
+00:53:30,000 --> 00:53:33,815
+And then here would be the following week expiration. So this is the Monday.
+
+1117
+00:53:33,815 --> 00:53:35,950
+Again, not enough clues on the Monday, in my opinion.
+
+1118
+00:53:35,950 --> 00:53:38,660
+But then the following day, now it's going for about $18, $20.
+
+1119
+00:53:38,660 --> 00:53:44,985
+And it went all the way up to almost $50 here on the Wednesday as it's had the opening drive push.
+
+1120
+00:53:44,985 --> 00:53:47,330
+And just wanted to share some of those with you guys.
+
+1121
+00:53:47,330 --> 00:53:50,480
+Hopefully this helped if you're in QTA and this answers some of your questions.
+
+1122
+00:53:50,480 --> 00:53:53,830
+And hopefully focusing on the gamma profile can help.
+
+1123
+00:53:53,830 --> 00:53:58,590
+I will try to do more gamma profile analysis for these weekly recaps.
+
+1124
+00:53:58,590 --> 00:54:03,080
+I do them on one-on-one sessions. And I do them whenever I get invited to talk in other groups.
+
+1125
+00:54:03,080 --> 00:54:06,040
+If they're having some sort of session just on gamma profile.
+
+1126
+00:54:06,040 --> 00:54:08,440
+Because gamma exposure, I think, is a significant edge.
+
+1127
+00:54:08,440 --> 00:54:12,080
+And knowing how to simplify it and just understand your levels.
+
+1128
+00:54:12,080 --> 00:54:17,960
+And then look for things that are growing above your level. Growing below your level. Using those as an edge.
+
+1129
+00:54:17,960 --> 00:54:20,165
+Which I think can lead to some great trades.
+
+1130
+00:54:20,165 --> 00:54:23,135
+But more importantly, in this case, it can help mitigate a lot of risk.
+
+1131
+00:54:23,135 --> 00:54:25,750
+Because had I not closed out the non-directional
+
+1132
+00:54:25,750 --> 00:54:29,999
+butterflies earlier in the week here. I would have been in serious trouble.
+
+1133
+00:54:30,000 --> 00:54:31,711
+And then by Friday, no matter how
+
+1134
+00:54:31,711 --> 00:54:33,177
+much I would have adjusted. Unless
+
+1135
+00:54:33,177 --> 00:54:36,599
+I just bought calls and held them, of course. That would have been great.
+
+1136
+00:54:36,600 --> 00:54:38,675
+But that's not something I would generally do.
+
+1137
+00:54:38,675 --> 00:54:40,380
+Let me know if you enjoyed this video, guys.
+
+1138
+00:54:40,380 --> 00:54:41,795
+And I look forward to hearing from you.
+
+1139
+00:54:41,795 --> 00:54:42,470
+Take care.
+
+1140
+00:54:42,470 --> 00:54:44,980
+Links to Quant Trading App is in the Discord if you're interested.
+
+1141
+00:54:44,980 --> 00:54:46,310
+And I'll catch you in the next one.
+
+1142
+00:54:46,310 --> 00:54:49,535
+I'm recording this after I just wrapped up recording the main video.
+
+1143
+00:54:49,535 --> 00:54:52,780
+And I wanted to include this little section here. Because I forgot to mention this.
+
+1144
+00:54:52,780 --> 00:54:54,880
+Since it was so focused on the gamma exposure.
+
+1145
+00:54:54,880 --> 00:54:58,565
+But this is the options volume chart on Friday at the close.
+
+1146
+00:54:58,565 --> 00:55:00,887
+So something that I was also aware of was
+
+1147
+00:55:00,887 --> 00:55:03,984
+the options volume range. Which is highlighted here in the blue levels.
+
+1148
+00:55:03,985 --> 00:55:06,185
+And we can see that this was our volume range.
+
+1149
+00:55:06,185 --> 00:55:09,200
+And our previous day's volume range was also 453.
+
+1150
+00:55:09,200 --> 00:55:14,190
+So that gave me a little bit of extra conviction to hold during that first 5-minute period.
+
+1151
+00:55:14,190 --> 00:55:16,855
+This is a 5-minute chart as we can see right here.
+
+1152
+00:55:16,855 --> 00:55:19,100
+So the first 5 or 15 minutes I wanted to hold.
+
+1153
+00:55:19,100 --> 00:55:21,760
+Even though my gut was telling me to just close as soon as the open.
+
+1154
+00:55:21,760 --> 00:55:26,845
+Because I would have been in a lot of trouble if we did end up rallying to 455.
+
+1155
+00:55:26,845 --> 00:55:30,805
+But having all of these additional levels did provide some security.
+
+1156
+00:55:30,805 --> 00:55:34,200
+Again, here's our absolute geck strike that was updating throughout the day.
+
+1157
+00:55:34,200 --> 00:55:35,895
+We also had the max pain strike.
+
+1158
+00:55:35,895 --> 00:55:37,940
+And then we had the volume range.
+
+1159
+00:55:37,940 --> 00:55:44,960
+So knowing this in conjunction with the absolute gamma helped allow me to hold my butterflies a little bit longer.
+
+===== END AFTER_SEGMENT =====

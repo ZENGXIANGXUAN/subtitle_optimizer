@@ -1,0 +1,2082 @@
+===== AFTER_TRANSLATE (417 entries) =====
+1
+00:00:01,010 --> 00:00:05,890
+订单流交易课程 第2课 订单流软件和数据源
+Order Flow Trading Course Lesson 2, Order Flow Software and Data Feeds
+
+2
+00:00:05,890 --> 00:00:11,150
+由OrderFlows.com创始人 Michael Waltos呈现
+Presented by Michael Waltos, founder of OrderFlows.com
+
+3
+00:00:11,150 --> 00:00:13,390
+首先，免责声明。
+First, the disclaimer.
+
+4
+00:00:14,030 --> 00:00:17,591
+本演示仅用于教育和信息目的，
+This presentation is for educational and informational purposes only and
+
+5
+00:00:17,591 --> 00:00:21,152
+不应被视为购买或出售
+should not be considered a solicitation to buy or sell
+
+6
+00:00:21,152 --> 00:00:25,069
+期货合约或做出其他投资决策的邀约。
+a futures contract or make any other type of investment decision.
+
+7
+00:00:25,250 --> 00:00:29,470
+期货交易存在重大风险，并不适合所有投资者。
+Futures trading contains substantial risk, and it's not for every investor.
+
+8
+00:00:29,470 --> 00:00:33,210
+投资者可能全部亏损或亏损超过初始投资。
+An investor could potentially lose all or more than the initial investment.
+
+9
+00:00:33,390 --> 00:00:37,730
+风险资本是指损失后不会危及个人财务安全或生活方式的资金。
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+10
+00:00:38,450 --> 00:00:44,410
+只有风险资本应用于交易，且只有拥有充足风险资本的人才应考虑交易。
+Only risk capital should be used for trading, and only those with sufficient risk capital should consider trading.
+
+11
+00:00:45,070 --> 00:00:48,150
+过往表现并不必然预示未来结果。
+Past performance is not necessarily indicative of future results.
+
+12
+00:00:49,070 --> 00:00:51,470
+CFTC 4.41规则
+CFTC Rules 4.41
+
+13
+00:00:51,470 --> 00:00:55,710
+假设或模拟交易结果具有一定局限性。
+Hypothetical or simulated performance results have certain limitations.
+
+14
+00:00:55,710 --> 00:01:00,610
+与实际表现记录不同，模拟结果并不代表实际交易。
+Unlike an actual performance record, simulated results do not represent actual trading.
+
+15
+00:01:00,730 --> 00:01:04,301
+此外，由于交易未实际执行，结果可能
+Also, since trades have not been executed, the results may
+
+16
+00:01:04,301 --> 00:01:07,158
+低估或高估了某些市场因素的影响，
+have under or overcompensated for the impact, if
+
+17
+00:01:07,158 --> 00:01:10,729
+例如流动性不足（如果存在的话）。
+any, of certain market factors, such as lack of liquidity.
+
+18
+00:01:11,030 --> 00:01:15,950
+一般来说，模拟交易程序的设计缺乏事后诸葛亮的优势。
+Simulated trading programs, in general, are also subject to the fact that they are designed without the benefit of hindsight.
+
+19
+00:01:16,510 --> 00:01:18,864
+我们并未声明任何账户
+No representation is being made that any account
+
+20
+00:01:18,864 --> 00:01:20,924
+将会或可能会实现
+will or is likely to achieve profit
+
+21
+00:01:20,924 --> 00:01:22,689
+与展示的盈利或亏损类似的结果。
+or losses similar to those shown.
+
+22
+00:01:22,690 --> 00:01:27,160
+好的，那我们开始。
+So, okay, so, let's get started.
+
+23
+00:01:27,280 --> 00:01:28,460
+订单流软件和数据源。
+Software and data feeds.
+
+24
+00:01:28,860 --> 00:01:32,720
+目前市场上有多种不同的订单流软件。
+Now, there are many different order flow software packages on the market.
+
+25
+00:01:33,100 --> 00:01:40,840
+它们的价格范围很广，从$100到$4,500不等，甚至更高。
+They have a wide range of prices. They're priced anywhere from $100 to $4,500 and more even.
+
+26
+00:01:41,120 --> 00:01:49,040
+我见过一些软件起价$4,500，甚至高达$10,000。这价格确实很离谱。
+I think I've seen some, you know, starting at $4,500 and then, you know, going up to $10,000. It's quite crazy.
+
+27
+00:01:49,680 --> 00:01:51,120
+目前有多种类型的数据源。
+Now, there are many types of data feeds.
+
+28
+00:01:51,120 --> 00:01:54,240
+对于订单流足迹图，Level 1数据就足够了。
+Level 1 is all that is needed with order flow footprint charts.
+
+29
+00:01:54,240 --> 00:01:57,760
+如果要查看市场深度，则需要Level 2数据。
+Level 2 is needed if you're looking at the depth of a market.
+
+30
+00:01:57,940 --> 00:01:59,890
+比如你有一个DOM，然后你
+Say you have a dome and you
+
+31
+00:01:59,890 --> 00:02:01,840
+想要交易，比如查看
+want to trade. You know, looking at
+
+32
+00:02:01,840 --> 00:02:05,461
+市场深度，比如五档行情，就需要Level 2。
+the depth of the market, you know, five levels deep, you'll need level 2.
+
+33
+00:02:08,610 --> 00:02:12,028
+数据源方面，我推荐Kinetic或
+For data feeds, I recommend Kinetic or
+
+34
+00:02:12,028 --> 00:02:15,935
+CQG。当然，还有其它选项，比如
+CQG. There are others out there. I mean,
+
+35
+00:02:15,935 --> 00:02:19,842
+IQ Feed、Continuum Data、e-signal。
+you could use IQ feed, continuum data, e-signal.
+
+36
+00:02:19,842 --> 00:02:23,749
+其实有很多不同的数据源。
+There's really, you know, many different data feeds.
+
+37
+00:02:24,550 --> 00:02:32,430
+我用NinjaTrader，Kinetic可能和它配合最好。
+I use NinjaTrader. So, you know, Kinetic is probably, you know, works best with NinjaTrader.
+
+38
+00:02:32,430 --> 00:02:40,970
+如果用其它软件，可以连接不同的数据源。
+Or if you're using, you know, some other softwares, you can connect it to different data feeds.
+
+39
+00:02:42,370 --> 00:02:47,687
+需要注意的是，Interactive Brokers的
+Just be noted that interactive brokers, their data feed for
+
+40
+00:02:47,687 --> 00:02:53,004
+数据源用于足迹图时要特别小心，
+their footprint charts is, you've got to be careful. The
+
+41
+00:02:53,004 --> 00:02:58,321
+它们的数据接收和分发方式
+way they are taking in the data and disseminating it
+
+42
+00:02:58,321 --> 00:03:04,169
+对足迹图来说非常差，
+out, it's horrible for, as far as footprint charts, five-per-bar
+
+43
+00:03:04,169 --> 00:03:20,120
+尤其是每K线五次的足迹图。可能勉强可用，但它们是聚合数据，按特定时间采集的，所以并非市场真实的订单流。
+charts. It's probably acceptable, but they're aggregating the data and taking it by, you know, certain times. So, it's not an actual flow of what's being traded in the markets.
+
+44
+00:03:22,140 --> 00:03:25,385
+因此，理想情况下，
+So, you know, ideally, you'll want
+
+45
+00:03:25,385 --> 00:03:28,630
+你应该准备两个
+to have, you know, two data
+
+46
+00:03:28,630 --> 00:03:34,579
+数据源。我用Kinetic，还备了Continuum。
+feeds. You know, I use Kinetic, then I also have Continuum.
+
+47
+00:03:35,080 --> 00:03:40,700
+不要仅依赖期货经纪商提供的数据源。
+Now, you know, don't solely rely on the data feed provided from your futures broker.
+
+48
+00:03:40,700 --> 00:03:44,015
+不过，有时你可能会
+However, you know, there's times where you could
+
+49
+00:03:44,015 --> 00:03:46,501
+断开连接，然后
+lose your connection and, you know,
+
+50
+00:03:46,501 --> 00:03:52,718
+数据就会丢失。所以，一定要准备备用数据源。
+you'll lose your data. So, you know, always try and have a backup data feed.
+
+51
+00:03:52,820 --> 00:03:54,290
+我知道这会产生成本，
+I mean, you know, I know
+
+52
+00:03:54,290 --> 00:03:55,760
+但如果交易是你的事业，
+it's the cost involved, but, you
+
+53
+00:03:55,760 --> 00:03:57,230
+你应该
+know, I mean, if trading is
+
+54
+00:03:57,230 --> 00:04:00,417
+把这部分成本考虑进去。
+going to be your business, you should, you know, take that into account.
+
+55
+00:04:01,760 --> 00:04:03,732
+数据源有不同类型，
+Now, there are different types of data
+
+56
+00:04:03,732 --> 00:04:07,959
+有报价数据源，也有订单路由数据源。
+feeds. You know, there's a quote data feed and there's an order routing data feed.
+
+57
+00:04:07,960 --> 00:04:11,688
+如果你要通过NinjaTrader交易，
+And so, you know, if you're going to
+
+58
+00:04:11,688 --> 00:04:15,416
+Kinetic不是订单路由数据源。
+be trading through, say, NinjaTrader, Kinetic is not
+
+59
+00:04:15,416 --> 00:04:18,678
+你应该使用
+an order routing data feed. You'll, you
+
+60
+00:04:18,678 --> 00:04:26,600
+Continuum或NinjaTrader的专用数据源。
+know, want to use something like, you know, their Continuum or the one that's provided for NinjaTrader.
+
+61
+00:04:27,780 --> 00:04:33,280
+所以，你可以咨询你的经纪商，看他们能提供哪些数据源。
+So, you know, you just talk to your broker on what data feeds they have available for you.
+
+62
+00:04:33,280 --> 00:04:36,030
+所以，你不一定需要
+So, you know, you don't necessarily need
+
+63
+00:04:36,030 --> 00:04:38,780
+在订单路由系统上查看足迹图。
+to look at a footprint chart on
+
+64
+00:04:38,780 --> 00:04:41,923
+你可以运行，比如，
+an order routing system. You can run, you
+
+65
+00:04:41,923 --> 00:04:52,138
+NinjaTrader。你可以用Kinetic的数据运行NinjaTrader，但如果不想，不必通过它路由订单。
+know, NinjaTrader. You know, you can run NinjaTrader with Kinetic data, but you don't have to route your orders through it if you don't want to.
+
+66
+00:04:52,240 --> 00:04:55,200
+比如，你有另一家经纪商，他们有不同的前端。
+Say, you know, you have another broker and they have the different front end.
+
+67
+00:04:55,540 --> 00:04:56,520
+这完全没问题。
+That's perfectly fine.
+
+68
+00:04:56,700 --> 00:04:58,140
+很多交易者都这么做。
+A lot of traders have to do that.
+
+69
+00:04:58,140 --> 00:05:01,980
+他们只是把NinjaTrader当作绘图软件使用。
+You know, they use the NinjaTrader just as their charting software.
+
+70
+00:05:02,140 --> 00:05:04,020
+他们不一定通过它路由订单。
+They're not necessarily routing their orders through it.
+
+71
+00:05:08,040 --> 00:05:12,040
+好的，那我简单介绍一下自己。
+So, you know, just a brief background about me.
+
+72
+00:05:12,120 --> 00:05:15,460
+过去，我用过很多种订单流软件进行交易。
+You know, in the past, I have used many different order flow softwares to trade.
+
+73
+00:05:16,280 --> 00:05:20,880
+说到底，它们基本都和成交量足迹图差不多。
+And, you know, in the end, they're all basically the same as the volume footprint chart.
+
+74
+00:05:20,880 --> 00:05:22,735
+问题是，我得说，
+The problem is, I'll say
+
+75
+00:05:22,735 --> 00:05:25,332
+问题是，但分析数据、分析订单流的方式
+the problem, but, you know, there's only
+
+76
+00:05:25,332 --> 00:05:27,558
+其实并没有那么多种。
+so many ways you can disseminate,
+
+77
+00:05:27,558 --> 00:05:30,898
+当你查看足迹图时，足迹图
+you know, analyze the data, analyze the order flow.
+
+78
+00:05:31,640 --> 00:05:32,742
+只是告诉你在买盘和卖盘上成交的情况，
+When you're looking at a
+
+79
+00:05:32,742 --> 00:05:34,286
+足迹图，足迹图
+footprint chart, you know, a footprint chart
+
+80
+00:05:34,286 --> 00:05:35,609
+失衡在哪里，以及其他一些信息。
+just tells you what's traded on
+
+81
+00:05:35,609 --> 00:05:39,138
+买价和卖价，买卖失衡的位置，以及其他几个要素
+the bid and the offer, where the imbalances are, you know, and a few other things.
+
+82
+00:05:39,480 --> 00:05:41,240
+它们不一定分析订单流。
+They don't necessarily analyze the order flow.
+
+83
+00:05:42,080 --> 00:05:45,740
+所以人们才会认为订单流交易是一个系统。
+You know, that's why people think order flow trading is a system.
+
+84
+00:05:45,740 --> 00:05:47,555
+但它不是一个系统，
+It's not a system,
+
+85
+00:05:47,555 --> 00:05:50,278
+它获取数据
+you know, it takes the data
+
+86
+00:05:50,278 --> 00:05:53,001
+然后以不同于普通方式的方式
+and, you know, presents it to
+
+87
+00:05:53,001 --> 00:05:56,178
+呈现给你。
+you in a different way than normal.
+
+88
+00:05:56,740 --> 00:06:01,340
+它比普通K线图提供更多信息。
+You know, it gives you a lot more information than a normal bar chart.
+
+89
+00:06:01,820 --> 00:06:04,940
+所以，当你选择软件时，你要先确定你的需求。
+So, when you're choosing your software, you have to decide what your needs are.
+
+90
+00:06:06,620 --> 00:06:10,200
+你擅长软件吗？你喜欢摆弄代码吗？
+You know, are you good with software? You like to tinker around with code?
+
+91
+00:06:10,200 --> 00:06:11,078
+如果是这样,
+If so, you
+
+92
+00:06:11,078 --> 00:06:12,542
+那可能,
+know, then maybe, you know,
+
+93
+00:06:12,542 --> 00:06:14,592
+低端订单流软件会是个不错的选择,
+the bottom end software is a good
+
+94
+00:06:14,592 --> 00:06:18,399
+因为它文档很少，而且有很多版本。
+few since it has very little documentation and there are lots of builds.
+
+95
+00:06:19,040 --> 00:06:20,270
+所以，
+So, you know,
+
+96
+00:06:20,270 --> 00:06:22,731
+如果你是那种喜欢
+if you're the type that likes
+
+97
+00:06:22,731 --> 00:06:25,192
+自己摸索、
+to play around with, you know,
+
+98
+00:06:25,192 --> 00:06:26,833
+设置各种东西的人,
+setting things up, you
+
+99
+00:06:26,833 --> 00:06:32,577
+你可以从Big Mike's Trading获取Gomi足迹图的版本。
+know, you could get a version of the Gomi footprint from Big Mike's Trading.
+
+100
+00:06:32,800 --> 00:06:34,240
+现在应该改名为futures.io了。
+I think it's now futures.io.
+
+101
+00:06:34,240 --> 00:06:35,320
+所以，
+So, you know,
+
+102
+00:06:35,320 --> 00:06:37,840
+它是免费的，但需要
+it's free, but you've got to join
+
+103
+00:06:37,840 --> 00:06:40,000
+加入网站并支付大约
+the website and pay like a
+
+104
+00:06:40,000 --> 00:06:44,680
+$100。我认为加入这个网站值这个价。
+hundred bucks. I mean, it's worth it, you know, to join the website.
+
+105
+00:06:45,040 --> 00:06:51,040
+但即使你不使用网站上提供的软件,
+But, you know, even if you don't take out the, you know, the available software that's there.
+
+106
+00:06:51,040 --> 00:06:52,209
+但，
+But, you know,
+
+107
+00:06:52,209 --> 00:06:54,937
+如果你和我一样,
+if you're a bit like me and
+
+108
+00:06:54,937 --> 00:06:58,055
+没有耐心或兴趣
+you don't have the patience or the inclination
+
+109
+00:06:58,055 --> 00:07:00,783
+真正坐下来写代码,
+to really sit down and write code
+
+110
+00:07:00,783 --> 00:07:03,511
+并尝试排除所有故障,
+and, you know, try and troubleshoot everything,
+
+111
+00:07:03,511 --> 00:07:14,816
+你会想要一个软件，只需导入系统就能开始查看市场。
+you're going to want a software that, you know, all you've got to do is just import it into your system and you can start looking at the market.
+
+112
+00:07:14,820 --> 00:07:19,530
+现在，你的选择有哪些？
+Now, you know, what are your choices?
+
+113
+00:07:20,070 --> 00:07:23,550
+好的，我快速浏览一下这些软件。
+So, you know, just real quickly, I'll go through a bunch of them real quick.
+
+114
+00:07:25,230 --> 00:07:30,870
+有orderflows.com，终身许可证$750。
+There's, you know, there's orderflows.com. It's $750 for a lifetime license.
+
+115
+00:07:31,630 --> 00:07:33,530
+Orderflows其实是我的公司。
+Orderflows is my company, actually.
+
+116
+00:07:33,790 --> 00:07:39,490
+所以，你在这里看到的很多图表都基于我的软件。
+So, you know, a lot of the charts you're going to see here are based on my software.
+
+117
+00:07:40,210 --> 00:07:46,130
+还有Noft Traders，最近终身许可证涨价到$4,500。
+Now, there's Noft Traders. They recently raised the price to $4,500 for a lifetime license.
+
+118
+00:07:47,430 --> 00:07:56,730
+还有orderflowanalytics.com，价格不一，从$2,500到接近$5,000的终身许可证。
+There's orderflowanalytics.com. You know, they've got different prices, $2,500, you know, almost $5,000 for a lifetime license.
+
+119
+00:07:57,250 --> 00:08:06,610
+还有finalg.com，可以每月$59租用，或$750购买终身许可证。
+There's finalg.com. It's $59 a month you could lease it for, or $750 for a lifetime license.
+
+120
+00:08:08,150 --> 00:08:14,510
+还有orderflowtrading.net，每月$74，或基本等同于$2,000的终身许可证。
+There's orderflowtrading.net. It's $74 a month, or basically $2,000 for a lifetime license.
+
+121
+00:08:14,510 --> 00:08:17,145
+还有MarketDelta，我们会运行
+There's MarketDelta, which is, we'll run
+
+122
+00:08:17,145 --> 00:08:19,780
+CQG数据。MarketDelta是其中
+CQG data. MarketDelta is one of
+
+123
+00:08:19,780 --> 00:08:23,293
+最早的订单流软件之一。其实它非常稳定，
+the originals out there. Actually, it's very stable,
+
+124
+00:08:23,293 --> 00:08:26,806
+是款很好的软件。只是价格有点贵。
+very good software. It's a little pricey, though.
+
+125
+00:08:26,806 --> 00:08:29,441
+月费是$129，或$175，
+It's $129 a month, or $175 a month,
+
+126
+00:08:29,441 --> 00:08:35,150
+取决于你选择的套餐。季度订阅有折扣。
+depending on what you're getting with it. There's a discount for quarterly subscription.
+
+127
+00:08:36,030 --> 00:08:38,540
+还有auctiondashboard.com，
+There's auctiondashboard.com. It's
+
+128
+00:08:38,540 --> 00:08:40,422
+终身许可证费用是$180，
+$180 for a lifetime
+
+129
+00:08:40,422 --> 00:08:44,815
+仅软件本身。他们涵盖
+license. It's just in software. They cover,
+
+130
+00:08:44,815 --> 00:08:54,228
+的功能包括软件自带的穹顶图，这是个不错的小功能。
+you know, they include a dome in their software, which is a nice little feature.
+
+131
+00:08:54,230 --> 00:08:55,510
+所以还有
+So, there's the
+
+132
+00:08:55,510 --> 00:08:58,070
+futures.io，也就是
+futures.io, which is, you know,
+
+133
+00:08:58,070 --> 00:09:03,616
+之前的Big Mike's Trading。上面有个Gomi Ladder。
+formerly Big Mike's Trading. You could, it's called the Gomi Ladder on there.
+
+134
+00:09:03,270 --> 00:09:05,278
+你要做的是
+What you do is you
+
+135
+00:09:05,278 --> 00:09:08,089
+注册Big Mike's，也就是
+sign up for Big Mike's, you know,
+
+136
+00:09:08,089 --> 00:09:11,704
+futures.io，如果你想成为
+futures.io, and if you want to become an
+
+137
+00:09:11,704 --> 00:09:14,515
+精英会员，需要$100。但一旦成为会员，
+elite member, it costs $100. But once you're
+
+138
+00:09:14,515 --> 00:09:22,548
+你就能访问所有用户提交的软件，里面有Gomi足迹图梯度。
+a member, you get access to all their, you know, user-submitted software, and there's a Gomi footprint ladder in there.
+
+139
+00:09:23,810 --> 00:09:31,690
+后来Gomi去NOFT工作了。所以，这是个好软件。
+Gomi, later, I believe, went to do some work for NOFT. So, you know, it's a good software.
+
+140
+00:09:31,950 --> 00:09:33,433
+我的意思是，如果你只是
+I mean, if you just
+
+141
+00:09:33,433 --> 00:09:35,509
+想入门，但你得
+want to get started, but you have
+
+142
+00:09:35,509 --> 00:09:40,849
+知道如何编程，我认为你得懂点编程。
+to, you know, know how to, I think you've got to know a little bit of, of programming.
+
+143
+00:09:41,810 --> 00:09:47,270
+所以，很多人可能没有时间或兴趣去做这件事。
+So, there's a lot of people that don't necessarily, I said, have the time or the inclination to do it.
+
+144
+00:09:47,450 --> 00:09:48,680
+但如果
+So, but if, you
+
+145
+00:09:48,680 --> 00:09:50,526
+你是个喜欢
+know, you're someone that likes to
+
+146
+00:09:50,526 --> 00:09:52,372
+摆弄代码，
+tinker around with coding and, you
+
+147
+00:09:52,372 --> 00:09:55,448
+排查问题的人，那这绝对值得。
+know, troubleshooting stuff, then, you know, it's definitely worth it.
+
+148
+00:09:55,830 --> 00:10:01,450
+我认为，这个网站本身就很值，即使没有软件，仅免费软件也很值。
+I think, I mean, the website itself is worth it, even without the software, the free software that's available.
+
+149
+00:10:03,570 --> 00:10:13,430
+还有tradeorderflow.com，价格荒谬，终身许可证要$4,500,000、$6,500,000，甚至接近$13,000,000。
+Now, there's also tradeorderflow.com, which is ridiculously priced, $4,500,000. $6,500,000, or even close to $13,000,000 for a lifetime license.
+
+150
+00:10:13,630 --> 00:10:16,250
+在我看来，这价格确实很离谱。
+It's just ridiculous, in my opinion.
+
+151
+00:10:17,410 --> 00:10:22,570
+这款软件基本上就是足迹图。
+You know, this software is basically a footprint chart.
+
+152
+00:10:22,570 --> 00:10:27,630
+Jigsaw交易软件，它不是足迹图，而是一个圆顶图。
+Jigsaw trading, now, it's not a footprint chart, rather, it's a dome.
+
+153
+00:10:28,170 --> 00:10:30,871
+不过，我在这里提到它，是因为
+But, you know, I mention it here because
+
+154
+00:10:30,871 --> 00:10:33,234
+如果你用它交易的话，这是个好软件，
+it's a good piece of software if
+
+155
+00:10:33,234 --> 00:10:36,611
+它能帮你管理交易。
+you're, you know, trading. It can help you manage, you
+
+156
+00:10:36,611 --> 00:10:39,988
+进入和退出交易时，
+know, your trading. Once you get, you know, getting in
+
+157
+00:10:39,988 --> 00:10:53,158
+只需点击一下。如果你不一定想用足迹图交易，它也是个很好的补充，配合足迹图使用。
+and out, you know, it's one click. If you don't necessarily want to, you know, trade off a footprint chart, per se, you know, it's, I think it's good to, it's a good addition to having a footprint chart.
+
+158
+00:10:54,040 --> 00:10:57,866
+还有indicatormall.com，终身许可证基本要$200，
+Now, there's indicatormall.com, which is basically $200 for
+
+159
+00:10:57,866 --> 00:11:04,562
+Peter还有每月$20到$25的租赁选项。
+a lifetime license. I think Peter also has a lease for about $20, $25 a month.
+
+160
+00:11:05,520 --> 00:11:07,813
+这是个好软件，
+It's, it's good, it's good software,
+
+161
+00:11:07,813 --> 00:11:11,253
+开发者是个好人，我认识他，
+you know, the creator's a good guy, I know
+
+162
+00:11:11,253 --> 00:11:15,075
+所以，这是个好用的足迹图。
+him, so, you know, it's, it's, it's a good footprint
+
+163
+00:11:15,075 --> 00:11:18,897
+它和futures.io的那个有点不同，
+chart to, to use. You know, it's a little bit
+
+164
+00:11:18,897 --> 00:11:40,302
+因为它开箱即用。futures.io的Gomi阶梯图，你得调试一下才能用。而indicatormall的那个，你可以直接安装到NinjaTrader上。
+different than the one from futures.io in the sense that it's really ready to go. Futures.io on the Gomi ladder, you really gotta, I think you gotta play around with a little bit to get it working. Um, whereas the one from indicatormall, you could just install directly onto your, uh, onto your NinjaTrader.
+
+165
+00:11:40,400 --> 00:11:46,640
+Rancho De Niro有几个选择。
+Now, Rancho De Niro, they have a couple choices.
+
+166
+00:11:47,160 --> 00:11:56,540
+有一个要价$1,200，另一个是$1,800，终身许可证。租赁的话价格更低。
+There's one for basically $1,200, and there's one for $1,800. For a lifetime license, you cost a lease on for, for less.
+
+167
+00:11:56,540 --> 00:11:59,236
+他们其实和市场概况图结合得很多，
+Um, they actually integrate a lot with, uh,
+
+168
+00:11:59,236 --> 00:12:01,595
+所以，如果你喜欢市场概况图，
+a market profile. So, I mean, you
+
+169
+00:12:01,595 --> 00:12:10,020
+如果你对市场轮廓感兴趣，我认为 Rancho De Niro 可能值得你关注。
+know, if market profile is something that floats your boat, you know, I think the Rancho De Niro is probably something you should look at.
+
+170
+00:12:10,500 --> 00:12:13,605
+不过，他们也有足迹图，
+But, it's, I mean, they have, you know,
+
+171
+00:12:13,605 --> 00:12:16,322
+他们的数据处理方式，
+they have footprint charts, which, the way
+
+172
+00:12:16,322 --> 00:12:23,698
+是基于买价和卖价的Tick，网站上有说明。
+they, they take, to me, the data is on the bid up-down ticks, which is explained on the website.
+
+173
+00:12:23,700 --> 00:12:25,629
+如果你想查看历史数据，
+Um, you know, it's gonna help you if
+
+174
+00:12:25,629 --> 00:12:27,317
+它会对你有帮助。
+you, if you, if you want to
+
+175
+00:12:27,317 --> 00:12:32,139
+它是少数能让你看到历史数据的软件之一。
+look at historical data. Um, so it's one of the few softwares that can allow you to see historical data.
+
+176
+00:12:32,940 --> 00:12:34,753
+不过，我觉得他们的数据，
+But, you know, I think the data is,
+
+177
+00:12:34,753 --> 00:12:37,699
+和你通常看到的有点不同。
+is a little bit different than, you know, normally what you're gonna see.
+
+178
+00:12:38,360 --> 00:12:40,783
+他们在教学中并没有特别多讲足迹图，
+Um, but they don't really necessarily talk very
+
+179
+00:12:40,783 --> 00:12:42,903
+所以，
+much about the footprint charts in their
+
+180
+00:12:42,903 --> 00:12:50,779
+虽然可以下载一些模板，但上手起来有点棘手。
+education. So, you know, there are some templates you can download, but it's a little bit, uh, it's a little bit tricky to get used to.
+
+181
+00:12:50,780 --> 00:12:54,117
+然后是OrderFlow Dash Pro，
+So, then there's OrderFlow Dash Pro, which is
+
+182
+00:12:54,117 --> 00:13:02,044
+它本质上也是一种足迹图。月费$89，还有一次性许可证约$1,200。
+basically also a footprint chart. That's $89 a month, and they also have a lifetime license for about $1,200 as well.
+
+183
+00:13:04,020 --> 00:13:06,348
+你是否想要软件
+So, you know, do you want software that
+
+184
+00:13:06,348 --> 00:13:08,385
+包含很多你不会用的功能
+has a lot of features you won't
+
+185
+00:13:08,385 --> 00:13:17,699
+或与订单流无关的指标？这些在昂贵软件中很常见，因为它们需要找个理由涨价。
+use or indicators that don't even apply to OrderFlow? You have to, you find those in more expensive software because they're looking for a reason to, you know, to raise the price.
+
+186
+00:13:17,700 --> 00:13:19,296
+所以，你会
+You know, so, you're
+
+187
+00:13:19,296 --> 00:13:22,489
+在某些昂贵软件中看到很多
+gonna see a lot of things in some
+
+188
+00:13:22,489 --> 00:13:26,879
+并非真正用于订单流交易的功能。
+of these expensive softwares that, you know, isn't really OrderFlow trading.
+
+189
+00:13:27,160 --> 00:13:28,570
+它们会加入
+You know, they'll add
+
+190
+00:13:28,570 --> 00:13:30,685
+一些，
+in, you know, some, you know,
+
+191
+00:13:30,685 --> 00:13:32,800
+比如VWAP之类的，
+VWAP or something, which, you know,
+
+192
+00:13:32,800 --> 00:13:36,678
+被它们歪曲成其他东西。
+they, they sort of bastardize it into something that it's not.
+
+193
+00:13:36,840 --> 00:13:39,000
+基本上被它们变成了移动平均线。
+You know, they basically turn it into a moving average.
+
+194
+00:13:39,000 --> 00:13:45,440
+然后它们就开始收你高价。
+Um, you know, but, you know, but then they start charging you a lot for it.
+
+195
+00:13:46,240 --> 00:13:47,225
+如果你
+You know, if you
+
+196
+00:13:47,225 --> 00:13:48,703
+想用订单流交易，
+want to trade with OrderFlow, you
+
+197
+00:13:48,703 --> 00:13:50,674
+就应专注于订单流，
+want to concentrate on OrderFlow, you don't want
+
+198
+00:13:50,674 --> 00:13:54,617
+不应依赖与订单流无关的其他指标来做决策。
+to necessarily start using other indicators that are unrelated to OrderFlow to base your decisions on.
+
+199
+00:13:54,620 --> 00:13:56,222
+当然，
+I mean, that said,
+
+200
+00:13:56,222 --> 00:13:58,625
+你可以将订单流与其他指标结合使用。
+you can use OrderFlow with, you
+
+201
+00:13:58,625 --> 00:14:01,829
+但当你开始学习订单流时，
+know, other indicators. But, you know, when you're
+
+202
+00:14:01,829 --> 00:14:05,033
+应先理解订单流，
+starting to understand OrderFlow, you should understand OrderFlow
+
+203
+00:14:05,033 --> 00:14:09,038
+再考虑与其他指标结合。
+before you start mixing it into, you know, other indicators.
+
+204
+00:14:11,720 --> 00:14:13,110
+现在，
+Now, you know, I
+
+205
+00:14:13,110 --> 00:14:15,890
+我开发了自己的软件OrderFlow's Trader，
+created my own software called OrderFlow's Trader because,
+
+206
+00:14:15,890 --> 00:14:19,018
+因为我用订单流交易多年了。
+you know, I've traded with OrderFlow's for many years.
+
+207
+00:14:19,020 --> 00:14:20,591
+而，
+And, you know, one
+
+208
+00:14:20,591 --> 00:14:23,734
+我开发这个软件的原因之一
+of the reasons that I created the software
+
+209
+00:14:23,734 --> 00:14:27,663
+是因为我是交易者，
+is because, you know, I'm a trader and I'm not
+
+210
+00:14:27,663 --> 00:14:32,377
+不是程序员。我没时间花几天编程或设置
+a programmer. I don't have time to spend days programming or setting
+
+211
+00:14:32,377 --> 00:14:37,091
+我不想在软件上花费数千美元，
+up software. And, you know, I don't want to spend thousands of
+
+212
+00:14:37,091 --> 00:14:55,557
+尤其是那些带有黑箱指标的软件，它们不告诉我背后的逻辑，或者在图表上画出我并不关注的其他线条。
+dollars on software that, you know, has indicators that make no sense to me because they're black box indicators. And they don't tell you what the logic is behind it, you know, or they're drawing, you know, other lines on there that I'm not necessarily looking at.
+
+213
+00:14:55,660 --> 00:14:57,204
+我不
+You know, I don't
+
+214
+00:14:57,204 --> 00:15:00,293
+真的想在我的订单流上应用移动平均线
+really care to apply moving averages or anything
+
+215
+00:15:00,293 --> 00:15:03,382
+或者其他类似的东西，我的
+like that to my OrderFlow, you know, my
+
+216
+00:15:03,382 --> 00:15:11,878
+订单流分析。我想分析的是订单流，而不是市场上其他无关的事情。
+OrderFlow analysis. I want to analyze the OrderFlow, not, you know, a bunch of other unrelated things going on in the market.
+
+217
+00:15:11,880 --> 00:15:13,186
+所以，
+So, you know, one
+
+218
+00:15:13,186 --> 00:15:15,798
+订单流交易者软件
+of the main things that makes OrderFlow's Trader
+
+219
+00:15:15,798 --> 00:15:19,716
+与其他软件不同的地方在于，
+different than the rest of the software out there is that it
+
+220
+00:15:19,716 --> 00:15:27,879
+它能让你通过突出显示买盘或卖盘枯竭的区域，或大量多头或空头参与的区域来解读订单流。
+allows you to interpret the OrderFlow by highlighting areas where buying or selling is drying up or where there are large buyers or sellers participating.
+
+221
+00:15:30,630 --> 00:15:31,442
+就像我之前说的，
+You know, it's, like
+
+222
+00:15:31,442 --> 00:15:32,660
+拥有订单流图表是一回事，
+I said, you know, it's one
+
+223
+00:15:32,660 --> 00:15:35,909
+但你仍需要知道如何解读它。
+thing to have an OrderFlow chart, but you still need to know how to interpret it.
+
+224
+00:15:35,910 --> 00:15:37,107
+这就是我
+And that's why I
+
+225
+00:15:37,107 --> 00:15:40,100
+开发订单流交易者软件的原因，因为我之前
+created the OrderFlow's Trader because, you know, I used to
+
+226
+00:15:40,100 --> 00:15:43,093
+能够查看图表，获取一些想法，
+be able to look at the chart, get an idea,
+
+227
+00:15:43,093 --> 00:15:45,487
+然后在脑海中做些计算来判断，
+do some calculations in my head to determine,
+
+228
+00:15:45,487 --> 00:15:54,167
+买盘或卖盘是否在枯竭，或者市场上是否有大量多头或空头活跃。
+you know, if there was buying or selling was drying up or, you know, what I considered a large buyer or a large seller being active in the market.
+
+229
+00:15:54,170 --> 00:15:55,573
+但当我构想订单流交易者软件时，
+But when I envisioned
+
+230
+00:15:55,573 --> 00:15:58,379
+我想要一个能够
+the OrderFlow's Trader, I wanted something that would
+
+231
+00:15:58,379 --> 00:16:01,887
+让我一眼就能看懂的工具，
+just tell me at a glance, you know, that way
+
+232
+00:16:01,887 --> 00:16:04,693
+这样我就能关注更多市场，
+I could look at a few more markets
+
+233
+00:16:04,693 --> 00:16:18,727
+而不仅仅是一两个。我可以扩展到同时关注四五个甚至六个市场。这能帮助我分散风险，并在一天中发现更多交易机会。
+rather than just one or two. I could, you know, expand it to four or five or six markets at once. You know, it would just help me diversify, but, you know, give me other trading opportunities during the day.
+
+234
+00:16:18,730 --> 00:16:20,179
+所以，
+So, you know, really
+
+235
+00:16:20,179 --> 00:16:22,353
+非常快速，
+quick, you know, this is an
+
+236
+00:16:22,353 --> 00:16:25,252
+这是一个订单流交易者图表，它会显示成交比例，
+OrderFlow's Trader chart, so it'll print ratio, it'll
+
+237
+00:16:25,252 --> 00:16:28,875
+会显示数字，你可以看到
+print numbers, and you can see, you know, areas in
+
+238
+00:16:28,875 --> 00:16:44,457
+成交量枯竭的区域，或者有大量空头活跃的区域，以及各种在常规订单流图表上看不到的信息，尤其是在K线图上看不到。
+there where, you know, the volume is drying up or where there is, you know, considered heavy sellers, you know, all sorts of things, you know, that you're not going to see on a regular OrderFlow's chart, especially not on a bar chart.
+
+239
+00:16:44,460 --> 00:16:50,880
+所以，你可以看到市场在特定区域的反应情况。
+So, you know, you can see how, you know, these, how the market is reacting around, you know, certain areas.
+
+240
+00:16:51,540 --> 00:16:52,647
+这
+It's, you know, all
+
+241
+00:16:52,647 --> 00:16:54,307
+这将在课程中进一步解释,
+this will be explained further in
+
+242
+00:16:54,307 --> 00:16:56,521
+但主要的一点是,
+the course, but, you know, the main thing
+
+243
+00:16:56,521 --> 00:16:58,735
+它帮助你分析
+is, you know, it's helping you analyze the
+
+244
+00:16:58,735 --> 00:17:05,378
+订单流，而不仅仅是看到一堆数字，却不知道如何从中理出头绪。
+OrderFlow rather than just looking at a bunch of numbers and not knowing how to make, you know, heads or tails out of them.
+
+245
+00:17:08,890 --> 00:17:12,950
+如果不知道如何使用订单流图，那要它有什么用呢？
+You know, what's the point of having an OrderFlow chart if you don't know how to use it?
+
+246
+00:17:12,950 --> 00:17:14,023
+如果你
+You know, if you're
+
+247
+00:17:14,023 --> 00:17:16,170
+在订单流图上花了数千美元，
+spending thousands of dollars on an OrderFlow chart,
+
+248
+00:17:16,170 --> 00:17:21,269
+却不知道发生了什么，这不是浪费钱吗？
+you don't know what the, you know, what's going on. I mean, it's kind of a waste of money.
+
+249
+00:17:22,050 --> 00:17:23,179
+所以，你
+You know, so, you
+
+250
+00:17:23,179 --> 00:17:24,308
+知道，话虽如此，你
+know, that said, you
+
+251
+00:17:24,308 --> 00:17:26,002
+知道，这门课程中的所有内容都
+know, everything in this course is
+
+252
+00:17:26,002 --> 00:17:29,108
+基于我使用我的软件，即订单流交易者软件。
+based on my using, on using my software, the OrderFlow's Trader.
+
+253
+00:17:31,110 --> 00:17:32,307
+但话虽如此，你
+But, that said, you
+
+254
+00:17:32,307 --> 00:17:34,701
+知道，我在本课程中教你的内容
+know, what I teach you in this course
+
+255
+00:17:34,701 --> 00:17:40,089
+但话虽如此，我在本课程中教你的内容
+can be applied to any other similar OrderFlow footprint chart. You don't necessarily have to use my software.
+
+256
+00:17:40,730 --> 00:17:42,141
+可以应用到其他任何类似的
+I mean, it helps,
+
+257
+00:17:42,141 --> 00:17:44,257
+订单流足迹图上。
+but, you know, the other software
+
+258
+00:17:44,257 --> 00:17:49,549
+你不一定非要用我的软件。
+isn't going to show you the setups the way the OrderFlow's Trader will show you.
+
+259
+00:17:50,650 --> 00:17:57,190
+我设计我的软件时，让交易信号会更加突出。
+You know, I have my software created in such a way that the setups will stand out more.
+
+260
+00:17:57,190 --> 00:17:59,317
+但其他软件
+If you're looking at a normal
+
+261
+00:17:59,317 --> 00:18:01,444
+不会像OrderFlow's Trader那样
+OrderFlow's footprint chart, then, you know,
+
+262
+00:18:01,444 --> 00:18:03,571
+清晰地展示交易设置。
+you have to look more closely
+
+263
+00:18:03,571 --> 00:18:10,308
+观察它，可能做一些计算，然后做出交易决策。
+at it and, you know, maybe do a little bit of calculation from it and make your trading decisions.
+
+264
+00:18:10,830 --> 00:18:14,710
+让交易设置更加突出。
+You know, I've been in the futures industry for 20 years.
+
+265
+00:18:15,210 --> 00:18:21,410
+如果你查看普通的
+So, you know, a lot of my experience over that 20 years has been put into the software.
+
+266
+00:18:21,410 --> 00:18:22,440
+订单流足迹图，
+You know, and
+
+267
+00:18:22,440 --> 00:18:24,501
+你需要更仔细地观察它，
+it's not like I've been trading
+
+268
+00:18:24,501 --> 00:18:26,219
+可能还要从中做一些计算，
+on myself. You know, I've
+
+269
+00:18:26,219 --> 00:18:28,280
+再做出交易决策。
+been trading for J.P. Morgan
+
+270
+00:18:28,280 --> 00:18:29,654
+我在期货行业已经20年了。
+for 8 years, Cargill for
+
+271
+00:18:29,654 --> 00:18:35,495
+在德意志银行工作3年，在EDF Mann工作2年。
+4 years, Comers Bank, you know, the big German bank for 3 years, you know, EDF Mann for 2 years.
+
+272
+00:18:36,990 --> 00:18:39,850
+这些都是机构公司，对吧？
+You know, they're all institutional firms, right?
+
+273
+00:18:40,050 --> 00:18:40,911
+And, you know,
+
+274
+00:18:40,911 --> 00:18:42,921
+我接触过一些
+I've had exposure to some of the
+
+275
+00:18:42,921 --> 00:18:44,357
+世界上最大的交易员。
+biggest traders in the world.
+
+276
+00:18:44,357 --> 00:18:47,229
+我每天都和他们交流。
+You know, I've talked to them on a daily basis.
+
+277
+00:18:47,230 --> 00:18:51,210
+我知道他们的思维方式、交易逻辑和执行订单的方式。
+You know, I know what they think and how they think and how they execute orders.
+
+278
+00:18:51,650 --> 00:18:55,578
+多年来学到的所有这些东西，
+All that stuff that I've learned over the years, in
+
+279
+00:18:55,578 --> 00:18:58,327
+加上我自己学会的交易方法，
+addition to how I've learned to trade
+
+280
+00:18:58,327 --> 00:19:01,469
+都整合到了我的软件里。
+myself, all that stuff goes into my software.
+
+281
+00:19:04,680 --> 00:19:05,786
+所以，
+So, you know, one
+
+282
+00:19:05,786 --> 00:19:07,722
+让我特别困扰的一点是，
+of the things that really bothers me
+
+283
+00:19:07,722 --> 00:19:09,381
+很多交易者的软件，
+about a lot of traders is
+
+284
+00:19:09,381 --> 00:19:14,359
+屏幕上有太多线条，简直让人头疼。
+their software is, you know, their screen has got so many lines. You know, it's like a headache.
+
+285
+00:19:14,360 --> 00:19:15,457
+你看到这些图表，
+You look at it
+
+286
+00:19:15,457 --> 00:19:17,102
+会想，
+and you're like, how do you
+
+287
+00:19:17,102 --> 00:19:18,747
+怎么理清思路，
+make heads, you know, how do
+
+288
+00:19:18,747 --> 00:19:23,958
+怎么决定买入或卖出？线条太多，颜色也太多。
+you decide to go to buy or sell? You know, there's so many lines and so many different colors.
+
+289
+00:19:26,740 --> 00:19:27,721
+You know, I
+
+290
+00:19:27,721 --> 00:19:29,356
+我的意思是，
+mean, when people, you know,
+
+291
+00:19:29,356 --> 00:19:31,645
+当你为银行交易时，
+when you're trading for a bank, you
+
+292
+00:19:31,645 --> 00:19:33,934
+你不会坐在那里说，
+don't sit there and say, you know,
+
+293
+00:19:33,934 --> 00:19:41,457
+我从没听过有人会说，MACD穿过零轴，该卖了，
+I've never heard anyone say, well, it's the MACD is crossing the zero line, it's time to sell, you know, think like that.
+
+294
+00:19:41,580 --> 00:19:46,980
+他们也不会因为MACD到某个位置或某个振荡指标而卖出。
+And they don't sell because MACD is at this level or this oscillator across there.
+
+295
+00:19:47,120 --> 00:19:48,182
+You know, they've
+
+296
+00:19:48,182 --> 00:19:50,307
+他们对市场有完全不同的看法，
+got much different, you know, different
+
+297
+00:19:50,307 --> 00:19:52,077
+views of the market. They're
+
+298
+00:19:52,077 --> 00:19:55,618
+不会盯着满是曲线的图表看。
+not looking at charts with all sorts of squiggly lines.
+
+299
+00:19:55,620 --> 00:19:56,707
+You know, traders
+
+300
+00:19:56,707 --> 00:19:58,520
+交易员看的图表
+are looking at charts that
+
+301
+00:19:58,520 --> 00:20:00,333
+是干净的，
+are clean, you know, that
+
+302
+00:20:00,333 --> 00:20:02,508
+关注的是价格本身，
+are interested in what price is,
+
+303
+00:20:02,508 --> 00:20:03,958
+比如，
+you know, where it's
+
+304
+00:20:03,958 --> 00:20:09,397
+相对于近期高点或年度高点的交易价位，诸如此类。
+trading relative to, you know, recent highs or, you know, yearly highs, things like that.
+
+305
+00:20:10,060 --> 00:20:10,824
+而且，
+You know, and,
+
+306
+00:20:10,824 --> 00:20:11,843
+订单流，
+you know, order flow,
+
+307
+00:20:11,843 --> 00:20:13,372
+你的图表应该保持干净。
+you should keep your charts clean.
+
+308
+00:20:13,372 --> 00:20:17,959
+不需要各种各样的线，那只会让你混乱。
+You don't need all sorts of different lines in there that's just confusing the heck out of you.
+
+309
+00:20:17,960 --> 00:20:26,420
+但我想说，你不需要用我的软件来理解订单流。
+But, you know, I said, you don't need to use my software to understand order flows.
+
+310
+00:20:26,940 --> 00:20:28,158
+我的意思是，你可以
+I mean, you could go
+
+311
+00:20:28,158 --> 00:20:29,863
+完成这门课程，
+through this course and, you know, trust
+
+312
+00:20:29,863 --> 00:20:32,299
+相信我，完成后你会学到很多。
+me, after this course, you should learn a lot already.
+
+313
+00:20:32,740 --> 00:20:41,300
+但如果你对我的软件感兴趣，可以折价购买。
+But, you know, if you're interested in my software, you can purchase it at, you know, at a reduced price.
+
+314
+00:20:41,780 --> 00:20:42,686
+所以，
+You know, so,
+
+315
+00:20:42,686 --> 00:20:43,894
+我是说，
+I said, you know,
+
+316
+00:20:43,894 --> 00:20:46,009
+我不是来敲你竹杠的。
+I'm not here to try and gouge
+
+317
+00:20:46,009 --> 00:20:47,822
+订单流是每个人都应该能用上的交易工具。
+money out of you. You know,
+
+318
+00:20:47,822 --> 00:20:52,657
+订单流是每个交易者都应该能获取的
+the order flow is something that, you know, everybody should be available to have to trade.
+
+319
+00:20:53,360 --> 00:20:56,080
+我本可以轻松收费5000美元。
+You know, I could easily charge $5,000 for the software.
+
+320
+00:20:56,780 --> 00:20:59,740
+但老实说，没必要。
+But, you know, honestly, there's no need to, you know.
+
+321
+00:21:00,080 --> 00:21:05,420
+我只收合理的价格，支付编程费用和背后的工作。
+You know, I just charge a reasonable price, pay for the programming, you know, pay for the work behind it.
+
+322
+00:21:06,920 --> 00:21:09,780
+但很多交易软件的一个主要
+But, you know, one of the major
+
+323
+00:21:09,780 --> 00:21:11,823
+缺点是它们的教育部分，没有教育。
+drawbacks that a lot of
+
+324
+00:21:11,823 --> 00:21:15,909
+交易软件的问题在于缺乏教育，完全没有教育
+trading software has is their education. There is no education.
+
+325
+00:21:15,910 --> 00:21:17,750
+你可以买指标。
+You know, you can buy indicators.
+
+326
+00:21:18,330 --> 00:21:26,110
+似乎他们花在写销售页面上的时间比写说明书还多。
+You know, it seems they spend more time writing the sales page than writing the instruction manual.
+
+327
+00:21:27,370 --> 00:21:29,675
+你买过多少指标，
+You know, how many indicators have you
+
+328
+00:21:29,675 --> 00:21:31,980
+结果你只得到
+bought, you know, where all you get
+
+329
+00:21:31,980 --> 00:21:36,590
+一份两三页的PDF说明参数设置，如果有的话。
+with it is maybe a two- to three-page PDF on the settings, if that.
+
+330
+00:21:36,870 --> 00:21:39,367
+你可能只是下载了这个东西
+You know, you may just download the thing
+
+331
+00:21:39,367 --> 00:21:41,552
+然后他们会给你一个
+and then they give you, like, a
+
+332
+00:21:41,552 --> 00:21:48,108
+一页纸说明设置的含义。但他们不会教你指标背后的逻辑，或为什么有效。
+one-pager on what the settings mean. And they don't teach you the logic behind the indicator or why it should work.
+
+333
+00:21:50,580 --> 00:21:55,820
+基本上，这就是这个指标。给你看几个它奏效的示例图表。
+You know, basically, here's this indicator. You know, here's a few sample charts on where it worked.
+
+334
+00:21:56,020 --> 00:21:57,691
+他们不一定会
+You know, they don't necessarily,
+
+335
+00:21:57,691 --> 00:21:59,362
+告诉你它为什么
+you don't know why it's,
+
+336
+00:21:59,362 --> 00:22:01,033
+会这样，不知道
+you know, what's going on
+
+337
+00:22:01,033 --> 00:22:05,378
+背后的原理。可能只是个完全随机的东西，通常不是。
+with it. You know, it could just be something completely random. Usually not.
+
+338
+00:22:05,540 --> 00:22:07,297
+我是说，有些人
+I mean, some people, you know,
+
+339
+00:22:07,297 --> 00:22:09,347
+基本上就是从
+basically just take indicators out of a
+
+340
+00:22:09,347 --> 00:22:13,447
+30年前的书里拿指标，然后尝试改编到现在用。
+book that's 30 years old and, you know, try and rework it for the present.
+
+341
+00:22:14,600 --> 00:22:17,560
+但，我是说，这就是这种事。
+But, you know, I mean, it's just one of those things, you know.
+
+342
+00:22:17,560 --> 00:22:19,596
+你会觉得，
+It's like you would think that,
+
+343
+00:22:19,596 --> 00:22:21,632
+卖指标或
+you know, people selling, you know,
+
+344
+00:22:21,632 --> 00:22:23,328
+交易工具的人
+indicators or, you know, trading
+
+345
+00:22:23,328 --> 00:22:27,739
+会想花时间好好给你解释清楚。
+things would want to take the time to really explain it to you.
+
+346
+00:22:27,900 --> 00:22:31,000
+因为如果你赚钱了，大家都赢。
+So, you know, because if you make money, then everybody wins.
+
+347
+00:22:31,660 --> 00:22:33,706
+但外面很多人
+But, you know, there's a lot of people
+
+348
+00:22:33,706 --> 00:22:35,496
+只是卖完
+out there that they think just sell
+
+349
+00:22:35,496 --> 00:22:36,775
+拿到钱
+it and get the money
+
+350
+00:22:36,775 --> 00:22:42,658
+然后转向下一个指标，再找些人卖，然后继续下去。
+and move on to the next indicator and, you know, find some more people to sell it to. And just keep on going.
+
+351
+00:22:45,140 --> 00:22:50,360
+现在，这也是我之前用订单流交易软件时遇到的问题之一。
+Now, you know, once again, that was one of the things, you know, with my order flows traders.
+
+352
+00:22:50,780 --> 00:22:52,822
+所以，其中一个问题是，
+So, one of the problems, and
+
+353
+00:22:52,822 --> 00:22:55,545
+我在创建这个软件前，用过其他软件。
+I said I've used other software before, I
+
+354
+00:22:55,545 --> 00:22:57,587
+在我开发这款软件之前的意思。
+mean, before I created this software.
+
+355
+00:22:57,587 --> 00:23:07,799
+要把所有东西设置好，让它像网站上展示的那样，真的很麻烦。
+And it's really a pain in the butt trying to get it all set up and make it, you know, how you just see it in there on their websites.
+
+356
+00:23:08,020 --> 00:23:10,260
+只有一两个地方提供模板。
+You know, one or two places offer templates.
+
+357
+00:23:10,260 --> 00:23:12,080
+但，我是说，对于订单流交易者，
+But, you know, I mean, with the order
+
+358
+00:23:12,080 --> 00:23:13,445
+我会给你
+flows trader, I give you the
+
+359
+00:23:13,445 --> 00:23:16,858
+我用的模板。就是你在这些图表里看到的模板。
+template that I use. You know, it's the template that you see in these charts.
+
+360
+00:23:17,360 --> 00:23:19,521
+所以，安装订单流
+So, you know, once you install order
+
+361
+00:23:19,521 --> 00:23:21,682
+作为订单流交易者，你可以加载这个模板
+flows trader, you can load the template
+
+362
+00:23:21,682 --> 00:23:25,078
+你的图表就会和我的看起来一样。
+and your charts will look, you know, look just like mine.
+
+363
+00:23:25,860 --> 00:23:27,588
+另外，随书还附带一本指南。
+But also, you know, what comes
+
+364
+00:23:27,588 --> 00:23:29,316
+随书附送一份指南。
+with the book is a guide.
+
+365
+00:23:29,316 --> 00:23:30,756
+我写了一本
+You know, I wrote a
+
+366
+00:23:30,756 --> 00:23:32,772
+关于订单流交易的书，有150页。
+book on trading order flow. It's 150 pages.
+
+367
+00:23:33,460 --> 00:23:42,140
+书名叫《订单流交易》，非常有参考价值。
+It's called Trading Order Flow. You know, which, you know, which is, you know, very informative.
+
+368
+00:23:42,360 --> 00:23:45,340
+有些人来找我，只想买这本书。
+I mean, so if some people come to me, they just want to buy the book.
+
+369
+00:23:46,000 --> 00:23:52,960
+这说明目前市场上关于订单流学习的教材很少。
+That tells me that, you know, there isn't much education out there for people learning order flow.
+
+370
+00:23:52,960 --> 00:23:55,131
+这确实是个遗憾，
+So, you know, it's a shame
+
+371
+00:23:55,131 --> 00:23:57,302
+因为，正如我所说，
+because, as I said, you know,
+
+372
+00:23:57,302 --> 00:24:00,559
+订单流是一种非常好的交易方法。
+order flow is such a great way to trade.
+
+373
+00:24:00,620 --> 00:24:02,343
+但能真正学到订单流的地方
+But there's, you know, there's very
+
+374
+00:24:02,343 --> 00:24:04,066
+确实寥寥无几。
+few places to really learn it.
+
+375
+00:24:04,066 --> 00:24:06,938
+这也是我创建这门课程的原因之一。
+That's one of the reasons why I created this course.
+
+376
+00:24:08,560 --> 00:24:12,660
+所以，你可以选择自己喜欢的订单流分析软件。
+So, I mean, it's up to you as to which software you want to use for your order flow analysis.
+
+377
+00:24:12,820 --> 00:24:16,960
+正如我所说，市面上有很多好用的软件。
+Like I said, I mean, there's a lot that's good. That's good. That's out there.
+
+378
+00:24:17,080 --> 00:24:18,900
+你不一定非要用我的。
+I mean, you don't necessarily have to use mine.
+
+379
+00:24:18,900 --> 00:24:24,220
+我认为如果你用我的软件，会更容易理解。
+You know, I think if you use mine, you'll understand it better.
+
+380
+00:24:26,020 --> 00:24:30,760
+但你要记住，价格高并不意味着效果就好。
+But you just remember, you know, just because something is priced high doesn't mean that it works better.
+
+381
+00:24:31,080 --> 00:24:38,440
+很多人认为，花4000、5000美元买个软件就能赚钱。
+You know, a lot of people think, I could buy this software for $4,000, $5,000, and I'll start making money.
+
+382
+00:24:38,980 --> 00:24:40,304
+其实不是这样，
+No, you know, I
+
+383
+00:24:40,304 --> 00:24:42,953
+我认识很多人花4000、5000美元
+know a lot of people that have bought
+
+384
+00:24:42,953 --> 00:24:46,596
+买了软件，但却没能用它赚到钱。
+the software for $4,000, $5,000, and they couldn't make any money with it.
+
+385
+00:24:47,260 --> 00:24:52,280
+最终，他们至少损失了4000美元。
+And in the end, they're all $4,000 at a minimum.
+
+386
+00:24:52,600 --> 00:24:59,260
+这还不包括他们交易中的亏损，而亏损远超软件成本。
+You know, that's not even counting what they lost trading, you know, which is much more than the software cost.
+
+387
+00:24:59,940 --> 00:25:05,380
+所以，选择一个你舒服且能理解的软件。
+So, you know, choose a software that you're comfortable with and can understand.
+
+388
+00:25:05,840 --> 00:25:07,115
+与其选择
+And, you know, rather
+
+389
+00:25:07,115 --> 00:25:09,027
+看起来好看且昂贵的软件，
+than something that looks good and
+
+390
+00:25:09,027 --> 00:25:10,939
+价格昂贵，而且，你也知道，它们
+is expensive and, you know, they
+
+391
+00:25:10,939 --> 00:25:12,851
+他们发视频说，
+put up videos saying, you know,
+
+392
+00:25:12,851 --> 00:25:14,445
+今天我赚了1200美元，
+today I made $1,200, you know,
+
+393
+00:25:14,445 --> 00:25:21,458
+似乎这些系统，这些视频里的人，他们从不亏损，这确实很神奇。
+apparently, you know, the systems, you know, these, some of these videos, people, they never lose, you know, which is quite amazing.
+
+394
+00:25:22,540 --> 00:25:25,860
+如果真是这样，那干脆自己开对冲基金得了。
+Um, you know, if that's the case, guys, might as well just open up a hedge fund.
+
+395
+00:25:27,820 --> 00:25:29,237
+但是，大家
+But, you know, people
+
+396
+00:25:29,237 --> 00:25:31,362
+会问，这
+ask, you know, this is really
+
+397
+00:25:31,362 --> 00:25:35,259
+正是很多软件该去的地方，垃圾堆。
+what, where a lot of software belongs, in the garbage dump.
+
+398
+00:25:35,260 --> 00:25:36,976
+那个，我
+Um, you know, I
+
+399
+00:25:36,976 --> 00:25:38,692
+得承认，
+gotta admit, you know,
+
+400
+00:25:38,692 --> 00:25:41,267
+老实说，我之前买过一些指标，
+honestly, I bought indicators here and
+
+401
+00:25:41,267 --> 00:25:46,417
+只是因为好奇，那个，想试试。
+there, you know, just because I'm curious, um, you know, with them.
+
+402
+00:25:46,540 --> 00:25:53,680
+有些时候，它们在广告或网站上看起来确实很棒。
+I mean, sometimes they really look so good in, you know, in their advertisements or, you know, on their websites.
+
+403
+00:25:53,680 --> 00:26:02,840
+有时候，我确实希望有些能用，但大部分都不行。
+And, you know, sometimes, you know, I do want some of them to work, but, you know, most don't.
+
+404
+00:26:03,080 --> 00:26:07,560
+就像我之前说的，你会发现很多都是精选的案例。
+You know, as I said, you know, you find that things are cherry-picked more often than not.
+
+405
+00:26:08,080 --> 00:26:15,960
+不过，我也是说，确实有一些不错的软件，不是订单流的。
+Um, you know, but, I mean, there are some good softwares out there that's not order flows.
+
+406
+00:26:16,080 --> 00:26:23,260
+有些好指标，但真的取决于开发者是谁。
+I mean, some good indicators, but, you know, it really depends on who's developing them, you know.
+
+407
+00:26:23,260 --> 00:26:25,370
+以及开发者的思维方式，老实说，
+And how the person thinks, honestly, you
+
+408
+00:26:25,370 --> 00:26:27,480
+我买过一些，比如，
+know, I've bought some, like, Elliott Wave
+
+409
+00:26:27,480 --> 00:26:31,399
+艾略特波浪的东西，只是想看看它和订单流怎么结合。
+stuff, just because I wanted to see how it works with order flow.
+
+410
+00:26:31,920 --> 00:26:34,138
+他们说有一些好的
+Um, they said there are some good
+
+411
+00:26:34,138 --> 00:26:36,356
+供应商，
+vendors out there, but, you know, the
+
+412
+00:26:36,356 --> 00:26:40,159
+但大部分，该去垃圾堆。
+majority of them just, you know, belongs here on the garbage dump.
+
+413
+00:26:41,640 --> 00:26:47,980
+好，这就是第二课的结束，讲了订单流、交易软件和数据。
+So, you know, this is the end of lesson two, covering order flow, trading software, and data.
+
+414
+00:26:47,980 --> 00:26:50,517
+下一课，我会解释如何
+In the next lesson, I'll explain how to
+
+415
+00:26:50,517 --> 00:26:52,737
+阅读订单流图表，
+read an order flow chart, which, you
+
+416
+00:26:52,737 --> 00:26:56,859
+这对于大多数人来说是看待市场的新方式。
+know, for most people is a new way of looking at the market.
+
+417
+00:26:57,480 --> 00:27:02,660
+所以，这课就到这里，下一课再继续。
+So, you know, end this lesson now and, you know, pick it up in the next lesson.
+
+===== END AFTER_TRANSLATE =====

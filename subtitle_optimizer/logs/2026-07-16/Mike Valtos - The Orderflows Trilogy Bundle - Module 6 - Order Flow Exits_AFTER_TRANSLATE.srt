@@ -1,0 +1,3322 @@
+===== AFTER_TRANSLATE (664 entries) =====
+1
+00:00:00,600 --> 00:00:04,700
+大家好，我是订单流的Mike，欢迎回到《订单流蓝图》
+Hey everybody, it's Mike from OrderFlows and welcome back to the OrderFlow Blueprint.
+
+2
+00:00:04,700 --> 00:00:07,600
+这是第6模块：订单流出场策略
+This is Module 6 on OrderFlow Exits.
+
+3
+00:00:09,100 --> 00:00:12,045
+在讲出场策略之前
+Now, before I get into talking about exiting
+
+4
+00:00:12,045 --> 00:00:14,622
+先花点时间
+trades and all that, just spend a
+
+5
+00:00:14,622 --> 00:00:17,199
+聊聊如何避免交易错误
+little time on how not to trade.
+
+6
+00:00:17,500 --> 00:00:18,700
+避免错误
+Avoid mistakes.
+
+7
+00:00:19,200 --> 00:00:23,700
+而避免错误是成功交易的始终
+And avoiding mistakes is the beginning and the end of successful trading.
+
+8
+00:00:25,200 --> 00:00:30,600
+我所说的‘始终’是指，如果你不犯错，成功的概率会大很多
+What I mean by beginning and end is if you make no mistakes, your chances of success are much higher.
+
+9
+00:00:31,600 --> 00:00:32,400
+这确实很难
+It's very difficult.
+
+10
+00:00:32,400 --> 00:00:35,400
+我是说，有多少亏损交易是因为错误造成的？
+I mean, how many losing trades have been made because of mistakes?
+
+11
+00:00:35,500 --> 00:00:38,300
+而且，交易者毕竟不是机器
+And, you know, a trader is not a machine.
+
+12
+00:00:38,400 --> 00:00:40,436
+在交易的紧张时刻
+And in the heat of trading and under
+
+13
+00:00:40,436 --> 00:00:41,963
+或快速波动的市场压力下
+the pressure of a fast-moving market,
+
+14
+00:00:41,963 --> 00:00:43,999
+即使最优秀的交易者也可能犯错
+even the best traders may make a mistake.
+
+15
+00:00:44,100 --> 00:00:45,300
+尽量减少错误
+Try to limit your mistakes.
+
+16
+00:00:45,300 --> 00:00:48,700
+比如，有时候你… 该买的时候却卖了
+You know, sometimes you... You buy when you should sell.
+
+17
+00:00:50,400 --> 00:00:53,000
+我不想叫它‘新手错误’，但这确实会发生在每个人身上
+I don't want to call it a rookie mistake, but it happens to the best of us.
+
+18
+00:00:53,200 --> 00:00:57,700
+我们点错按钮，或者忘了设ATM
+We click the wrong thing or you forget to enter your ATM.
+
+19
+00:00:58,900 --> 00:01:01,200
+这些小错误，有时会累积成大问题
+Those little mistakes, sometimes they add up.
+
+20
+00:01:01,200 --> 00:01:03,600
+而你能做的最好事，就是把它们减到最少
+And the best thing you can do is minimize them.
+
+21
+00:01:04,000 --> 00:01:05,304
+如果你本该买却卖了
+If you buy versus sell,
+
+22
+00:01:05,304 --> 00:01:07,130
+别突然… 接下这个仓位
+don't all of a sudden... Take on
+
+23
+00:01:07,130 --> 00:01:09,999
+比如，你本看多，结果误卖了
+the position, you know, you were bullish and you accidentally sold.
+
+24
+00:01:10,300 --> 00:01:11,700
+别坐在那里微操
+Don't sit there and try to micromanage.
+
+25
+00:01:11,800 --> 00:01:12,758
+好，那这样
+Okay, well, you know what?
+
+26
+00:01:12,758 --> 00:01:14,099
+我也不知道，可能市场要跌了
+I don't know, maybe the market's coming
+
+27
+00:01:14,099 --> 00:01:15,249
+直接离场
+down. Just get out of the
+
+28
+00:01:15,249 --> 00:01:18,699
+退一步，喘口气，然后寻找下一个交易机会
+trade and take a step back, catch your breath, and then just look for the next trade setup.
+
+29
+00:01:18,700 --> 00:01:20,200
+所以尽量避免这些错误
+So try to avoid those mistakes.
+
+30
+00:01:20,700 --> 00:01:25,900
+而且，我在准备这个模块时，它叫‘订单流出场策略’
+And, you know, when I was putting together this module, you know, it's called order flow exits.
+
+31
+00:01:26,000 --> 00:01:27,800
+它不叫订单流止损单设置。
+It's not called order flow stop placements.
+
+32
+00:01:27,900 --> 00:01:29,892
+我不会说，好，你
+I'm not going to say, well, you
+
+33
+00:01:29,892 --> 00:01:31,884
+进场，进入这笔交易
+know, you get in. into this trade
+
+34
+00:01:31,884 --> 00:01:35,014
+在67点位，你应该用5个点的止损单。
+at 67, you know, you should use exactly a five point stop.
+
+35
+00:01:35,300 --> 00:01:39,800
+不，用订单流交易时，是要读懂市场在做什么。
+No, you know, when you're trading with the order flow, it's about reading what the market is doing.
+
+36
+00:01:39,800 --> 00:01:44,800
+所以记住，别急着判断市场会怎么走。
+So that in mind, do not rush to decisions about what the market may do.
+
+37
+00:01:44,900 --> 00:01:48,300
+先明确自己想怎么做。
+Get a clear view on what you want to do.
+
+38
+00:01:49,000 --> 00:01:51,000
+好，心里要清楚。
+Okay, and be clear in your mind.
+
+39
+00:01:52,300 --> 00:01:53,700
+这样才能做出好决定。
+Then you can make a good decision.
+
+40
+00:01:54,200 --> 00:01:56,573
+好，当市场朝有利于你的方向走时，
+Okay, so when a market moves in your
+
+41
+00:01:56,573 --> 00:01:58,946
+你要持续监控订单流成交量，
+favor, you should just continuously monitor the order
+
+42
+00:01:58,946 --> 00:02:03,099
+看这波行情是否有停止并反转的风险。
+flow volume to see if the move is in jeopardy of stopping and reversing.
+
+43
+00:02:03,600 --> 00:02:05,600
+好，这是一波漂亮的下跌。
+Okay, so here's a nice move down.
+
+44
+00:02:06,600 --> 00:02:10,100
+对，空头动能一路向下。
+Right, you got bearish momentum, you know, all the way down.
+
+45
+00:02:11,300 --> 00:02:13,000
+然后出现一根绿K线，对吧？
+Then you get a green candle, right?
+
+46
+00:02:13,000 --> 00:02:17,100
+这里有正买卖差进来，比如200、176。
+You got some positive delta coming in here, you know, 200, 176.
+
+47
+00:02:17,100 --> 00:02:20,200
+有人会说，哦，我得出场了，市场要反转了。
+People say, oh, I got to get out because the market's going to reverse here.
+
+48
+00:02:20,500 --> 00:02:21,500
+那为什么？
+Well, why?
+
+49
+00:02:21,800 --> 00:02:23,700
+这里有多头动能进来吗？
+Do you have any bullish momentum coming in here?
+
+50
+00:02:23,700 --> 00:02:25,600
+没有，对吧？
+No, you don't, right?
+
+51
+00:02:25,700 --> 00:02:30,800
+最后你会发现… 这里正在发生挤压，对吧？
+And in the end, you see... You know, this is a squeeze taking place right here, right?
+
+52
+00:02:30,800 --> 00:02:32,310
+你能看到动能进来了。
+You're seeing the momentum coming in.
+
+53
+00:02:32,310 --> 00:02:33,820
+你能看到底部的控制点
+You're seeing the point of control
+
+54
+00:02:33,820 --> 00:02:38,099
+可以继续做空，对吧，随着市场继续下跌。
+on the bottom. And you could take it for more, right, as the market keeps going down.
+
+55
+00:02:38,400 --> 00:02:42,400
+有时候人们交易刚有点盈利，
+You know, sometimes people get a little bit into profit on a trade.
+
+56
+00:02:43,400 --> 00:02:45,700
+第一件事就是止盈。
+Then the first thing I want to do is take profits.
+
+57
+00:02:46,000 --> 00:02:48,700
+这样你就限制了自己的收益，对吧？
+Well, you're limiting yourself in that respect, right?
+
+58
+00:02:48,700 --> 00:02:51,300
+读懂订单流的变化。
+Read what's happening in the order flow.
+
+59
+00:02:51,600 --> 00:02:53,300
+观察Delta的变化。
+Watch what's happening in the deltas.
+
+60
+00:02:53,300 --> 00:02:56,300
+观察控制点的变化，对吧？
+Watch what's happening with points of control, right?
+
+61
+00:02:56,600 --> 00:02:58,400
+买卖失衡在往哪个方向发展？
+Which way are imbalances setting up?
+
+62
+00:02:58,700 --> 00:02:59,820
+好，只是因为
+Okay. So just because
+
+63
+00:02:59,820 --> 00:03:01,500
+你有，比如，正买卖差
+you got. you know, a positive
+
+64
+00:03:01,500 --> 00:03:03,180
+正买卖差出现了两根K线
+delta, you know, two bars with
+
+65
+00:03:03,180 --> 00:03:05,700
+并不意味着该出场了。
+positive delta doesn't mean it's time to get out.
+
+66
+00:03:06,200 --> 00:03:06,686
+继续监控。
+Monitor it.
+
+67
+00:03:06,686 --> 00:03:08,633
+你可以多关注一下
+You know, maybe pay a little bit more
+
+68
+00:03:08,633 --> 00:03:11,798
+而不是一有信号就出场，对吧？
+closer attention to it rather than get out at the first sign, right?
+
+69
+00:03:11,800 --> 00:03:13,246
+因为如果你在这里出场，
+Because then the next thing you're going to
+
+70
+00:03:13,246 --> 00:03:14,511
+接下来你会
+do if you get out here is
+
+71
+00:03:14,511 --> 00:03:16,499
+后悔不已，当市场继续下跌时。
+you're going to kick yourself when the market keeps going down.
+
+72
+00:03:18,000 --> 00:03:22,100
+记住，交易应该是享受的过程，不是挫败。
+Remember, Trading should be an enjoyable experience, not frustrating.
+
+73
+00:03:22,400 --> 00:03:23,600
+别盯着钱。
+Don't focus on the money.
+
+74
+00:03:23,700 --> 00:03:24,800
+专注订单流。
+Focus on the order flow.
+
+75
+00:03:25,100 --> 00:03:27,100
+亏损是交易的一部分，不幸的是。
+Losing is part of trading, unfortunately.
+
+76
+00:03:27,400 --> 00:03:34,300
+我真希望能说不是，但每个人都会有亏损，对吧？有时让我很难受。
+I wish I could say it doesn't, but everybody has losses, right? And it kills me sometimes.
+
+77
+00:03:35,000 --> 00:03:39,200
+有人会说，给我一个胜率80%的交易设置...
+People say, well, give me a trade setup that's got an 80%...
+
+78
+00:03:40,000 --> 00:03:41,543
+还有风险收益比3:1的
+Winning percentage and you know
+
+79
+00:03:41,543 --> 00:03:43,703
+风险收益比3:1
+risk to reward of three to one
+
+80
+00:03:43,703 --> 00:03:45,863
+好，老实说，如果你胜率80%，
+okay well honestly if you're at 80 winning
+
+81
+00:03:45,863 --> 00:03:48,332
+不需要风险收益比3:1，
+percentage you don't need a three to one
+
+82
+00:03:48,332 --> 00:03:53,888
+1:1就足够了，他们不太理解这个概念，
+risk to reward you know one to one would be fine okay they don't really grasp that concept
+
+83
+00:03:55,700 --> 00:03:58,200
+结果交易就不有趣了，对吧？
+and as a result trading is not fun right
+
+84
+00:03:58,900 --> 00:04:00,000
+顺势而为。
+Go with the flow.
+
+85
+00:04:00,300 --> 00:04:01,700
+顺订单流而为。
+Go with the order flow.
+
+86
+00:04:01,900 --> 00:04:03,600
+好，市场在下跌。
+Okay. Market is moving down.
+
+87
+00:04:03,600 --> 00:04:05,000
+这里有一个漂亮的收窄形态。
+You got a nice taper here.
+
+88
+00:04:05,500 --> 00:04:06,800
+对。然后开始横盘。
+Right. Then it goes sideways.
+
+89
+00:04:06,900 --> 00:04:08,800
+有没有看涨的信号进来？
+Is there anything bullish coming in here?
+
+90
+00:04:08,900 --> 00:04:09,800
+没有。
+Not really.
+
+91
+00:04:10,500 --> 00:04:12,200
+它有一个正买卖差。
+You know, it's got one positive delta.
+
+92
+00:04:12,700 --> 00:04:13,800
+好，控制点。
+Okay. Points of controls.
+
+93
+00:04:13,800 --> 00:04:18,800
+可以说价格在小幅上涨，但基本还是在这个价位横盘。
+Yeah. I mean, you could say they're going up a little bit, but mostly same price level here.
+
+94
+00:04:18,800 --> 00:04:21,300
+把这三个平均一下，你这里有两个。
+If you average these three out, you know, you got two here.
+
+95
+00:04:22,600 --> 00:04:24,100
+有没有看涨的动能进来？
+Do you have any bullish momentum coming in?
+
+96
+00:04:24,300 --> 00:04:25,300
+没有。
+No, you don't.
+
+97
+00:04:26,000 --> 00:04:29,900
+那什么信号提示你应该出场？
+Okay, so what's the sign that you should get out instead?
+
+98
+00:04:30,000 --> 00:04:32,100
+你应该继续做空，对吧？
+You should stay short, right?
+
+99
+00:04:32,100 --> 00:04:35,100
+然后下跌过程中又有更多看跌动能进来，对吧？
+Then more bearish momentum comes in on the way down, right?
+
+100
+00:04:35,100 --> 00:04:40,200
+负Delta、买卖失衡，对吧？
+The negative deltas, the imbalances, okay?
+
+101
+00:04:40,400 --> 00:04:43,800
+然后这里又有一个向下的挤压，对吧？
+And here you got another squeeze coming in down here, okay?
+
+102
+00:04:43,900 --> 00:04:46,200
+所以你要把这些信息串起来。
+So you start putting that together.
+
+103
+00:04:46,200 --> 00:04:50,900
+这能帮你更久地持有交易，因为你在顺势而为。
+It's going to help you ride the trade out longer because you're going with the flow.
+
+104
+00:04:52,000 --> 00:04:54,600
+没必要急着出场。
+There's no need to exit as soon as possible.
+
+105
+00:04:56,000 --> 00:04:58,300
+顺势而为，顺势而为。
+Go with the flow. Go with the flow.
+
+106
+00:04:59,600 --> 00:05:04,000
+市场在趋势中，顺势而为就是趋势是你的朋友。
+The market is trending. Go with the flow is to say the trend is your friend, basically.
+
+107
+00:05:04,700 --> 00:05:07,700
+你要尽可能长时间地持有。
+You want to ride it for as long as you possibly can.
+
+108
+00:05:09,200 --> 00:05:12,700
+记住，你要尽量给自己创造获胜的机会。
+Remember, you should be aiming to maximize the chance of allowing yourself to win.
+
+109
+00:05:13,100 --> 00:05:17,400
+别为了赢同样多的钱而交易过多，比如分批建仓。
+Don't trade more than is necessary to win the same amount, i.e. Averaging down.
+
+110
+00:05:17,900 --> 00:05:25,000
+我看很多人交易比特币，他们喜欢定投。
+I see a lot of people that trade Bitcoin. They love DCA, dollar cost average.
+
+111
+00:05:25,800 --> 00:05:31,600
+好，在持续上涨的市场里这没问题，但不是所有市场都会持续上涨。
+Okay, well that's good on a market that perpetually goes up, but not all markets perpetually go up.
+
+112
+00:05:32,500 --> 00:05:35,000
+跟随订单流就行，对吧？
+Just follow the flow. Right?
+
+113
+00:05:35,100 --> 00:05:36,166
+如果你觉得，
+If you think, you know,
+
+114
+00:05:36,166 --> 00:05:37,659
+这个市场在横盘，我要在这里买一些，
+this market is going sideways, I'm going
+
+115
+00:05:37,659 --> 00:05:39,365
+觉得市场要涨，就再买一些。
+to buy some here. I'm thinking the market
+
+116
+00:05:39,365 --> 00:05:41,498
+价格上涨，我就再买一些。
+is going up, then I'm going to buy some more.
+
+117
+00:05:41,600 --> 00:05:43,900
+结果就会在这里被洗盘。
+What's going to happen is you're going to get that flush right here.
+
+118
+00:05:44,400 --> 00:05:46,100
+然后市场继续下跌。
+And the market is going to continue down.
+
+119
+00:05:47,500 --> 00:05:47,800
+对吧？
+Right?
+
+120
+00:05:47,800 --> 00:05:49,000
+我是说，你不想...
+I mean, you don't want to...
+
+121
+00:05:49,800 --> 00:05:53,800
+在这里做多，意识到自己错了，但还想，不行，我要定投，每股成本降1美元
+Be long here, recognize you're wrong, but say, no, I'm going to DCA, $1 cost average.
+
+122
+00:05:53,800 --> 00:05:55,400
+我要在下跌时继续加仓
+I'm going to get long some more down
+
+123
+00:05:55,400 --> 00:05:56,800
+这样等它上涨时，
+here so that when it goes up,
+
+124
+00:05:56,800 --> 00:05:58,200
+我就能拿到更好的平均入场价格。
+I got a better average entry price.
+
+125
+00:05:58,300 --> 00:05:59,500
+好，你这么做了，
+Well, you do that.
+
+126
+00:06:01,100 --> 00:06:02,700
+但市场没涨，反而
+and the market doesn't go up and said
+
+127
+00:06:02,700 --> 00:06:04,100
+继续下跌，那你就会
+it keeps going down, you're going to
+
+128
+00:06:04,100 --> 00:06:05,500
+被套得措手不及。
+be caught with your pants down here.
+
+129
+00:06:08,500 --> 00:06:13,900
+记住，希望和绝望是交易者爆仓前陷入的陷阱。
+Remember, hope and desperation are the holes traders descend into right before blowing up the account.
+
+130
+00:06:14,400 --> 00:06:16,900
+‘希望这笔交易能赚’，或者‘我快绝望了’。
+I hope this trade works, or I'm desperate.
+
+131
+00:06:17,200 --> 00:06:18,710
+你常会干的事就是
+What you often do is you
+
+132
+00:06:18,710 --> 00:06:20,220
+取消保护性止损，
+cancel your protective stop, and all
+
+133
+00:06:20,220 --> 00:06:24,499
+突然账户平衡状态就失去防守，而这时候风险最大。
+of a sudden the account balance is left undefended at a time when it's the most vulnerable.
+
+134
+00:06:27,200 --> 00:06:29,407
+对，如果你在这里做空
+Right if you got short here
+
+135
+00:06:29,407 --> 00:06:31,614
+但没设止损，你会亏得比必要的更多，
+but no stop you're gonna have
+
+136
+00:06:31,614 --> 00:06:37,499
+如果没意识到多头动能正在涌入。
+a bigger loss than necessary if you don't recognize that the bullish momentum is coming in
+
+137
+00:06:38,200 --> 00:06:40,275
+好，如果你说‘对，我看到了’
+okay if you're saying well yeah
+
+138
+00:06:40,275 --> 00:06:42,350
+空头动能正在涌入
+I see bearish momentum coming in
+
+139
+00:06:42,350 --> 00:06:44,425
+这里，或者甚至在这里，我做空了
+here or even here I'm short
+
+140
+00:06:44,425 --> 00:06:46,500
+好，我们仍然有止损。
+okay we still have a stop
+
+141
+00:06:48,000 --> 00:06:52,000
+但如果你刚连亏几笔，想撤掉止损。
+But if you're like, you just had a bunch of losers, I want to take out my stop.
+
+142
+00:06:52,400 --> 00:06:53,800
+这笔我要放任不管，Yolo。
+I'm going to let this one go, YOLO.
+
+143
+00:06:54,200 --> 00:06:57,300
+那好，再见吧，市场一反向你就完了。
+Well, see you later, right, as the market goes against you.
+
+144
+00:06:58,100 --> 00:06:59,600
+永远要在市场中设好止损。
+Always have a stop in the market.
+
+145
+00:07:01,700 --> 00:07:03,820
+当你按规则出场后，
+When you get out of a trade because you followed
+
+146
+00:07:03,820 --> 00:07:05,092
+市场继续朝同一方向走，
+your rules and then it continues
+
+147
+00:07:05,092 --> 00:07:07,000
+是的，你会有些后悔。
+to keep moving, yes, you would feel some regret.
+
+148
+00:07:08,400 --> 00:07:10,514
+但说到底，你必须
+But at the end of the day, you have to
+
+149
+00:07:10,514 --> 00:07:12,205
+坚持规则，把亏损控制小，
+stick to your rules to keep those losses
+
+150
+00:07:12,205 --> 00:07:15,799
+否则总有一天亏损会失控，你会爆仓。
+small, or else one day the losses will not be small and you're going to blow up.
+
+151
+00:07:16,200 --> 00:07:20,400
+所以不管上一笔交易好坏，你都要继续下一笔。
+So whether the last trade was good or bad, you have to just move on to your next trade.
+
+152
+00:07:21,700 --> 00:07:24,161
+常见的错误，就像我刚说的，
+A common mistake, like I just mentioned, many
+
+153
+00:07:24,161 --> 00:07:26,007
+很多交易者会陷入
+traders make is getting caught up
+
+154
+00:07:26,007 --> 00:07:29,699
+不切实际的风险收益比，对吧？
+with and having an unrealistic R to R, right? Risk to reward.
+
+155
+00:07:30,100 --> 00:07:36,100
+不切实际的胜率。他们想要80%的胜率，还有5比1的风险收益比。
+unrealistic win rate. You know, they want an 80% win rate and, you know, a risk-reward like 5 to 1.
+
+156
+00:07:36,900 --> 00:07:38,300
+这完全不懂风险管理。
+That's just not understanding risk.
+
+157
+00:07:39,600 --> 00:07:44,600
+比如风险收益比是1比3，你只需要30%的胜率就能盈利。
+Say you have a 1 to 3 risk to reward, you'd only need a 30% win rate to be successful.
+
+158
+00:07:45,700 --> 00:07:51,700
+你可以算一下：3乘3等于9，7乘1等于7，净盈利是2。
+You can do the math. 3 times 3 equals 9. 7 times 1 equals 7. It's going to give you a net profit of 2.
+
+159
+00:07:53,800 --> 00:07:58,400
+但如果胜率是80%，你不需要5比1。
+But again, if you have 80% win rate, you don't need 5 to 1.
+
+160
+00:07:58,600 --> 00:07:59,800
+也不需要3比1。
+You don't need 3 to 1.
+
+161
+00:08:00,100 --> 00:08:03,100
+1比1就够，甚至可能更低。
+You just need one-to-one, maybe even below that even.
+
+162
+00:08:05,200 --> 00:08:06,784
+止盈点的选择取决于
+Now, profit level exits are determined
+
+163
+00:08:06,784 --> 00:08:08,368
+交易者的目标，
+by the goal of the trader,
+
+164
+00:08:08,368 --> 00:08:11,800
+他的风险承受能力，以及使用的时间框架。
+right, the risk level of the trader, and the time frame being used.
+
+165
+00:08:13,000 --> 00:08:14,638
+如果你用1分钟图，
+If you're using a one-minute chart, your time
+
+166
+00:08:14,638 --> 00:08:17,299
+你的时间框架会和用30分钟图时完全不同。
+frame is going to be much different than you're using a 30-minute chart.
+
+167
+00:08:17,800 --> 00:08:21,400
+5分钟图上的止损和止盈点，和1小时图上也会不同。
+Stops and targets on a five-minute chart are going to be different than an hourly chart.
+
+168
+00:08:22,000 --> 00:08:23,217
+因为中间的波动差异很大。
+As intermediate swings are going
+
+169
+00:08:23,217 --> 00:08:27,599
+5分钟图上的一个波动，可能在1小时图里只是一个小区间。
+to differ. There may be a swing on a five-minute chart that is contained in an hourly chart.
+
+170
+00:08:28,000 --> 00:08:30,200
+再比如，如果你交易1分钟图，
+Again, if you're trading a one-minute chart,
+
+171
+00:08:30,900 --> 00:08:36,500
+所有操作可能在30分钟图完成前就结束了。
+All your activity can be done and dusted before the 30-minute chart even completes.
+
+172
+00:08:37,500 --> 00:08:42,400
+所以出场时，最佳时机是动能到达停滞点时。
+So on exits, the best place to get off the momentum move is when it reaches a stopping point.
+
+173
+00:08:42,800 --> 00:08:44,900
+动能是价格运动的加速。
+Momentum is the acceleration of price movement.
+
+174
+00:08:45,100 --> 00:08:47,700
+减速是价格放缓。
+Deceleration is when price slows down.
+
+175
+00:08:49,500 --> 00:08:52,200
+所以你要找价格放缓的区域，对吧？
+So you want to be looking at areas where price is slowing down, right?
+
+176
+00:08:52,200 --> 00:08:53,400
+这里动能很强。
+You got your momentum up here.
+
+177
+00:08:53,500 --> 00:08:55,000
+我的市场在下跌。
+My market's moving down.
+
+178
+00:08:55,500 --> 00:08:59,400
+阻止这个动能的是成交量，对吧？
+What's stopping this momentum is volume, right?
+
+179
+00:09:01,100 --> 00:09:06,100
+控制点在这里排列整齐。1、2、3、4，好。
+The points of control is being lined up right in here. One, two, three, four. All right.
+
+180
+00:09:06,200 --> 00:09:09,500
+你会问，那这里呢？好，你刚在这里做空。
+You'll say, what about here? Okay. Well, you just got short in here.
+
+181
+00:09:09,800 --> 00:09:11,900
+我不确定你是否想
+I don't know if you want to
+
+182
+00:09:11,900 --> 00:09:14,000
+这么快就止盈。好，你
+take profits so soon. You know, you
+
+183
+00:09:14,000 --> 00:09:17,300
+得给交易一点时间发展，对吧？
+got to give the trade a little time to develop, right?
+
+184
+00:09:18,000 --> 00:09:19,400
+这就是你要出场的位置。
+This is where you're going to get out in here.
+
+185
+00:09:19,500 --> 00:09:23,500
+然后你能发现看涨动能正在形成，顺势做多回升。
+Then you could recognize that this bullish momentum is coming in and ride it back up.
+
+186
+00:09:26,800 --> 00:09:29,800
+好，这里。看跌动能在这里。
+Okay, here. The bearish momentum in here.
+
+187
+00:09:30,000 --> 00:09:32,700
+它会在哪里停下来？在成交量聚集的地方停下来。
+Where does it stop? It stops down here where you have the volume.
+
+188
+00:09:33,200 --> 00:09:34,884
+然后开始反弹上涨
+Then it picks up coming up
+
+189
+00:09:34,884 --> 00:09:36,568
+到这里。它会在哪里停下来？
+in here. Where does it stop?
+
+190
+00:09:36,568 --> 00:09:40,498
+在上面成交量突出的地方停下来。对吧？
+It stops up here where you have the volume sticking out up here. Right?
+
+191
+00:09:40,600 --> 00:09:44,300
+517、495、372、457 这些点位
+The 517, the 495, the 372, the 457.
+
+192
+00:09:46,000 --> 00:09:47,000
+然后又回落下来。
+Then it drops back down.
+
+193
+00:09:47,600 --> 00:09:49,300
+好？这里的动能。
+Okay? Momentum here.
+
+194
+00:09:53,180 --> 00:09:54,880
+这波上涨的动能会在哪里停下来？
+Where does momentum stop on this move up?
+
+195
+00:09:54,980 --> 00:09:59,380
+好，就在这里停下来，这里正在形成成交量口袋。
+Well, it stops right here where it's rotating and putting in this volume pocket up in here.
+
+196
+00:09:59,680 --> 00:10:05,880
+再次强调，不一定是一个价格，可能是这里、这里、这里几个价位。
+Again, it doesn't necessarily have to be one price. It could be several prices here, here, here.
+
+197
+00:10:06,280 --> 00:10:06,580
+好。
+Okay.
+
+198
+00:10:06,880 --> 00:10:11,080
+更重要的是，它们逐渐降低，再降低。
+And what's more important is they're coming in slightly lower, slightly lower.
+
+199
+00:10:12,980 --> 00:10:14,580
+你的动能在这里出现。
+And your momentum is appearing here.
+
+200
+00:10:15,480 --> 00:10:17,780
+对吧？在这里出现。看涨动能。
+Right? It's appearing here. Bullish momentum.
+
+201
+00:10:17,780 --> 00:10:18,880
+但在这里停下来。
+But it stops up here.
+
+202
+00:10:20,780 --> 00:10:23,680
+然后你开始看到回落时的看跌动能。
+Then you start seeing bearish momentum come in here on the way back down.
+
+203
+00:10:26,380 --> 00:10:30,380
+所以在扩张K线处出场，是市场朝有利方向运行时的一种出场方式。
+So exiting into expansion is a way to exit when the market is going in your favor.
+
+204
+00:10:31,380 --> 00:10:36,380
+扩张K线通常是刚出现的普通K线的两倍大小。
+Expansion bars are generally twice the size as regular bars that just printed.
+
+205
+00:10:37,180 --> 00:10:40,480
+记住，扩展，对吧？市场在扩展并寻找流动性。
+Remember, expansion, right? Markets expanding and looking for liquidity.
+
+206
+00:10:43,680 --> 00:10:46,780
+而且扩张K线的成交量通常比最近的K线更大。
+And expansion bars generally have more volume than recent bars.
+
+207
+00:10:47,180 --> 00:10:50,280
+你可以在K线收盘时或下一根K线时出场。
+You can exit as soon as the bar closes or in the next bar.
+
+208
+00:10:50,280 --> 00:10:55,480
+因为记住，如果市场快速大幅波动，需要时间调整。
+Because remember, if the market has a big move very quick, it's going to take time to adjust.
+
+209
+00:10:55,880 --> 00:10:58,360
+其他交易者进入市场需要时间，
+It's going to take time for other traders to come
+
+210
+00:10:58,360 --> 00:11:00,096
+要么推动行情继续
+into the market to either keep the
+
+211
+00:11:00,096 --> 00:11:02,080
+推动行情继续或可能反转行情。
+move going or to potentially reverse the move.
+
+212
+00:11:06,812 --> 00:11:09,071
+好，这就是你的扩张K线，
+Okay, there's your expansion bar here, potential
+
+213
+00:11:09,071 --> 00:11:11,330
+这里有个扩张K线，然后开始
+expansion bar here, and it's just going
+
+214
+00:11:11,330 --> 00:11:13,911
+横盘/震荡。这是让你出场的信号。
+sideways. That's a sign for you to exit.
+
+215
+00:11:14,712 --> 00:11:16,821
+行，如果你在这两根K线之间
+All right, if you get that big bar
+
+216
+00:11:16,821 --> 00:11:18,666
+看到大幅波动，
+movement here and here between these two
+
+217
+00:11:18,666 --> 00:11:20,511
+然后开始横盘/震荡，
+bars, then it just starts going sideways.
+
+218
+00:11:20,912 --> 00:11:21,312
+就出场。
+Get out.
+
+219
+00:11:23,112 --> 00:11:24,412
+市场已经没有方向了。
+Market doesn't have direction anymore.
+
+220
+00:11:29,012 --> 00:11:29,992
+对，在扩展时出场，
+Right, exit into
+
+221
+00:11:29,992 --> 00:11:30,972
+这里有扩展，
+expansion, expansion here,
+
+222
+00:11:30,972 --> 00:11:32,933
+这里有扩展，
+expansion here, even to a smaller
+
+223
+00:11:32,933 --> 00:11:37,509
+甚至这里也有小幅扩展，
+extent here, because a lot of these bars, three price levels, four price levels.
+
+224
+00:11:38,612 --> 00:11:40,112
+因为很多K线有三四个价格层级，
+This one's what, seven?
+
+225
+00:11:41,312 --> 00:11:42,812
+这个有四五个，
+This one's four, five.
+
+226
+00:11:44,112 --> 00:11:49,337
+这个四个，这个五个。而你看到的K线有12个价格层级，这就是信号，
+This one's four, this one's five. And you're getting bars 12. You know 10 11 12 price levels that's your sign
+
+227
+00:11:49,337 --> 00:11:50,987
+可能要离场，因为大部分价格层级
+potentially get up because most of
+
+228
+00:11:50,987 --> 00:11:55,387
+理解市场在1分钟图上的走势
+these price levels understanding the market and how it should move on a one minute chart
+
+229
+00:11:58,624 --> 00:12:03,024
+对判断是否有扩展至关重要。
+is going to be paramount to understanding whether you have expansion or not.
+
+230
+00:12:03,324 --> 00:12:07,424
+好，当市场开始拉伸时，这就是可能的离场信号。
+Okay, so when the market starts elongating, that's a potential sign to get out.
+
+231
+00:12:09,424 --> 00:12:10,524
+这就是你的扩张K线。
+Here's your expansion bar.
+
+232
+00:12:10,924 --> 00:12:12,124
+好，可能我该在这里出场。
+Okay, maybe I should get out here.
+
+233
+00:12:15,024 --> 00:12:18,824
+有些人喜欢交易扩张K线，认为市场会继续沿这个方向走。
+Some people love to trade the expansion bar, thinking this market is going to continue in that direction.
+
+234
+00:12:19,524 --> 00:12:23,024
+但如果你已经做多，这就是提示你可能要出场的信号。
+But if you're already long, that's your sign to potentially be getting out.
+
+235
+00:12:23,024 --> 00:12:25,024
+记住，你已经有持仓了。
+Remember, you're already in the position.
+
+236
+00:12:26,324 --> 00:12:28,024
+扩张K线是你的礼物。
+The expansion bar is your gift.
+
+237
+00:12:29,424 --> 00:12:31,138
+所以如果出现扩张K线，
+So if you get that expansion
+
+238
+00:12:31,138 --> 00:12:32,280
+把它当作提示，
+bar, you know, take
+
+239
+00:12:32,280 --> 00:12:35,422
+感谢老天，然后出场。对吧？
+it as a cue. Thank you, God. And get out. Right?
+
+240
+00:12:35,624 --> 00:12:36,724
+你的扩张K线。
+Your expansion bar.
+
+241
+00:12:37,024 --> 00:12:38,324
+在哪里？就在这里。
+Where is it? It's right here.
+
+242
+00:12:40,468 --> 00:12:42,868
+好，再强调一次，你已经持仓了。
+Okay, again, you're already in the position.
+
+243
+00:12:43,268 --> 00:12:45,668
+你不是在看扩张K线来判断动能。
+You're not looking at the expansion bar for momentum.
+
+244
+00:12:45,768 --> 00:12:47,868
+你应该已经入场交易了。
+You should already be in the trade.
+
+245
+00:12:48,568 --> 00:12:51,268
+然后看到扩张K线时，这就是信号。
+Then when you see an expansion bar, that's your sign.
+
+246
+00:12:51,968 --> 00:12:53,868
+可能该出场了，对吧？
+Maybe I should get out, right?
+
+247
+00:12:54,368 --> 00:12:55,468
+在扩张时出场。
+Exit into expansion.
+
+248
+00:12:56,968 --> 00:13:02,168
+培养专业交易者的心态，取决于你如何看待交易结果。
+Evolving into a professional trader mindset will depend on how you view your trading results.
+
+249
+00:13:02,568 --> 00:13:03,468
+怎么改变？
+How do you change?
+
+250
+00:13:04,068 --> 00:13:05,068
+怎么改变你的心态？
+How do you change your mindset?
+
+251
+00:13:05,068 --> 00:13:08,449
+好，管理你的交易预期和结果
+Well, manage your expectations, your results of trading
+
+252
+00:13:08,449 --> 00:13:11,830
+超越逐笔交易的简单思路
+by moving beyond a simple trade-by-trade approach
+
+253
+00:13:11,830 --> 00:13:14,789
+转而关注一系列交易。
+in favor of a series of trades.
+
+254
+00:13:16,268 --> 00:13:17,448
+这更多是
+You know, this is
+
+255
+00:13:17,448 --> 00:13:19,219
+关于风险管理，
+more on risk management and it
+
+256
+00:13:19,219 --> 00:13:22,466
+归根结底，取决于你如何看待结果。
+comes down to, you know, how you look at your results.
+
+257
+00:13:22,868 --> 00:13:27,268
+好，逐笔交易还是一系列交易。
+OK, so trade by trade or a series of trades.
+
+258
+00:13:27,468 --> 00:13:28,788
+好，别用
+OK, don't look at
+
+259
+00:13:28,788 --> 00:13:31,428
+逐笔交易的视角，因为
+it on a trade by trade perspective, because
+
+260
+00:13:31,428 --> 00:13:33,408
+如果这样，你会输掉
+if you do that, you're losing
+
+261
+00:13:33,408 --> 00:13:37,368
+连续的亏损会让你陷入负面心态。
+streaks are going to cause you to go into a negative mindset.
+
+262
+00:13:37,368 --> 00:13:40,568
+你可不想陷入负面心态，因为那会让你发疯。
+And you don't want to go into a negative mindset because it's going to drive you nuts.
+
+263
+00:13:41,368 --> 00:13:45,468
+因为你会开始怀疑自己在交易中的每一个决定。
+Because you're going to think, you're going to question everything you're doing in trading.
+
+264
+00:13:45,568 --> 00:13:49,868
+别在每个信号出现时都交易，给它们优势，对吧？
+Don't take every trade when there is a signal and giving them an edge, right?
+
+265
+00:13:49,868 --> 00:13:52,885
+想着，啊，我刚连输两笔，然后你
+Thinking, oh, you know, I just had two losers and then you're
+
+266
+00:13:52,885 --> 00:13:54,897
+不敢接下一个信号，因为你认为
+not going to take the next signal thinking
+
+267
+00:13:54,897 --> 00:13:58,166
+自己处于连输中，不会有优势。
+that you're going to get an edge because you're on a losing streak.
+
+268
+00:13:58,268 --> 00:13:59,068
+不对。
+Well, no.
+
+269
+00:13:59,568 --> 00:14:02,968
+其实你是在推翻自己的方法。
+Basically what you're doing is you're overriding your method.
+
+270
+00:14:03,568 --> 00:14:08,768
+所以如果你用逐笔交易的视角，你会想，好，我刚连输三笔。
+So if you're looking at it on a trade-by-trade perspective, you go, oh, okay, I just had three losses.
+
+271
+00:14:09,068 --> 00:14:09,768
+哦，我收到信号了。
+Oh, I got a signal.
+
+272
+00:14:09,868 --> 00:14:10,668
+我要跳过这笔交易。
+I'm going to pass.
+
+273
+00:14:10,768 --> 00:14:13,168
+结果这笔交易反而赢了，这真讽刺。
+That's the trade that's going to be the winner, unfortunately.
+
+274
+00:14:14,868 --> 00:14:19,868
+如果你用逐笔交易的视角看，任何动作都可能带来赢面。
+And when you're on a trade-by-trade perspective, anything you do for any reason could result in a winning trade.
+
+275
+00:14:20,268 --> 00:14:22,883
+问题在于，很多能带来赢面的动作
+And the problem is many of the things
+
+276
+00:14:22,883 --> 00:14:25,171
+可能会强化
+you could do that result in a
+
+277
+00:14:25,171 --> 00:14:28,767
+一些交易习惯，而这些习惯可能会毁掉你。
+winning trade could also reinforce trading behaviors, which would be catastrophic.
+
+278
+00:14:30,568 --> 00:14:32,677
+对你的交易和
+For your trading and and and
+
+279
+00:14:32,677 --> 00:14:34,786
+我的意思是
+what i mean by that is
+
+280
+00:14:34,786 --> 00:14:36,895
+有时候你的结果
+you know sometimes your results i
+
+281
+00:14:36,895 --> 00:14:41,465
+虽然结果不是随机的，但你进入一笔交易后
+don't say results are are random okay but you get into a trade
+
+282
+00:14:43,368 --> 00:14:46,168
+之后发生的事就不在你的控制里了。
+What happens after you get in is out of your control.
+
+283
+00:14:46,568 --> 00:14:46,868
+好。
+Okay.
+
+284
+00:14:47,168 --> 00:14:47,768
+而且
+And.
+
+285
+00:14:49,768 --> 00:14:54,568
+有时候，人们因为各种原因进入交易，对吧？
+Sometimes, you know, people get into trades for whatever reason, right?
+
+286
+00:14:54,568 --> 00:14:57,268
+有时候理由并不好，但他们赢了。
+Sometimes it's not the best reason and they win.
+
+287
+00:14:58,268 --> 00:14:59,551
+突然之间
+And all of a sudden
+
+288
+00:14:59,551 --> 00:15:01,347
+他们会想，我进场是因为，
+they think, well, I got in because,
+
+289
+00:15:01,347 --> 00:15:02,887
+比如，我穿了
+you know, I'm wearing a, you
+
+290
+00:15:02,887 --> 00:15:05,967
+一件绿衬衫，这个例子很傻，对吧？
+know, for example, stupid example, you know, I'm wearing a green shirt.
+
+291
+00:15:06,468 --> 00:15:09,768
+他们会觉得每次穿绿衬衫，交易就能赢。
+So they think every time I wear a green shirt, the trade is going to win.
+
+292
+00:15:09,768 --> 00:15:13,168
+这个例子不完美，但大概就是这个意思，对吧？
+I mean, that's not a perfect example, but it's like that, right?
+
+293
+00:15:13,468 --> 00:15:16,412
+这会强化那些
+Where it reinforces the trading behavior that's not
+
+294
+00:15:16,412 --> 00:15:18,988
+并不属于你交易方法的习惯，
+necessarily part of your trading method that's
+
+295
+00:15:18,988 --> 00:15:22,668
+最终会导致你遭受重大亏损。
+going to eventually cause you to have a bad loss.
+
+296
+00:15:22,968 --> 00:15:25,868
+更糟糕的是，
+But worst of all, right, is...
+
+297
+00:15:26,168 --> 00:15:28,540
+当你用逐笔交易的视角，
+When you're on a trade-by-trade perspective and you
+
+298
+00:15:28,540 --> 00:15:32,230
+输了一笔，你脑子里就会冒出一堆想法。
+have a loser, you start to have all those thoughts go through your head.
+
+299
+00:15:32,068 --> 00:15:33,368
+我刚刚输了这笔交易。
+I just lost this trade.
+
+300
+00:15:33,968 --> 00:15:34,968
+我根本不知道自己在干什么。
+I don't know what I'm doing.
+
+301
+00:15:35,268 --> 00:15:36,568
+我是史上最差的交易者。
+I'm the worst trader ever.
+
+302
+00:15:36,868 --> 00:15:37,968
+我为什么还在交易？
+Why am I trading?
+
+303
+00:15:38,468 --> 00:15:38,768
+这不是...
+That's not...
+
+304
+00:15:38,768 --> 00:15:40,168
+对待交易的正确态度。
+not the way to approach it.
+
+305
+00:15:41,668 --> 00:15:43,522
+所以每次交易后，不管赢还是输，
+So after every trade, win or lose, it's
+
+306
+00:15:43,522 --> 00:15:46,767
+都会让你在下一次交易中犯心理错误，对吧？
+going to set you up for a mental mistake on the next trade, right?
+
+307
+00:15:46,768 --> 00:15:47,868
+如果这次交易是盈利的，
+If the trade was a winning trade,
+
+308
+00:15:49,968 --> 00:15:52,968
+而且，你只是在一笔笔交易中循环。
+And again, you're just on a trade-by-trade basis.
+
+309
+00:15:53,368 --> 00:15:56,168
+好，我会讲讲逐笔交易和...
+Okay, and I'm going to talk about the difference between trade by trade.
+
+310
+00:15:56,568 --> 00:16:00,168
+有时候，如果你赢了一笔交易，下一笔可能会犯错。
+Sometimes if you have a winning trade, you will have a mistake on the next trade.
+
+311
+00:16:00,868 --> 00:16:01,168
+对。
+Right.
+
+312
+00:16:01,368 --> 00:16:04,085
+你可能因为刚赢了一笔，就过早入场，
+You may get in too early because you just had a winning
+
+313
+00:16:04,085 --> 00:16:05,896
+心想，早进一两个Tick，
+trade and you think, well, I could just
+
+314
+00:16:05,896 --> 00:16:09,066
+结果会更好。
+get in a little tick or two early and I'll have a better result.
+
+315
+00:16:09,368 --> 00:16:11,368
+或者你可能加杠杆过度。
+Or maybe you take on too much leverage.
+
+316
+00:16:12,368 --> 00:16:18,068
+或者不按预设止盈操作，对吧？
+Or you're not taking your predefined profits, right?
+
+317
+00:16:18,068 --> 00:16:23,368
+或者你可能移动止损单，对吧？不让它触发，因为‘哦，行情在这动了一下。’
+Or maybe you're moving your stop, right? You don't let it get triggered because, oh, the market's ticking here.
+
+318
+00:16:23,368 --> 00:16:24,579
+不，我知道自己在干什么。
+No, I know what I'm doing here.
+
+319
+00:16:24,579 --> 00:16:25,790
+我刚赢了一笔，
+I just had this winning trade. I
+
+320
+00:16:25,790 --> 00:16:27,866
+有点缓冲空间，我要移一下止损。
+got a little bit of a buffer. I'm going to move it.
+
+321
+00:16:28,068 --> 00:16:29,768
+这样你只是在吐回利润。
+Well, you're just giving money back.
+
+322
+00:16:30,368 --> 00:16:32,608
+基本上，我们会觉得自己什么都懂，
+Basically, we feel as if we know everything
+
+323
+00:16:32,608 --> 00:16:34,848
+这就是逐笔交易时的心态，对吧？
+about trading is what happens, right? When you're
+
+324
+00:16:34,848 --> 00:16:36,248
+逐笔交易来评估。
+on a trade-by-trade basis.
+
+325
+00:16:37,668 --> 00:16:41,368
+好，这又回到心态问题。
+Okay. And again, it comes back to the mindset.
+
+326
+00:16:41,768 --> 00:16:41,968
+行。
+All right.
+
+327
+00:16:42,068 --> 00:16:44,068
+别想这笔交易。
+Don't think about this trade.
+
+328
+00:16:45,768 --> 00:16:47,268
+也别让它影响你的下一笔。
+And let it affect your next trade.
+
+329
+00:16:47,568 --> 00:16:48,568
+别这么想。
+Don't think in that way.
+
+330
+00:16:50,868 --> 00:16:52,779
+现在，如果你刚做的这笔交易是
+Now, if the trade that you just took was a
+
+331
+00:16:52,779 --> 00:16:54,308
+如果上一笔是亏损交易，
+losing trade, what's going to happen on the
+
+332
+00:16:54,308 --> 00:16:57,366
+下一笔你可能会开始犹豫。
+next trade is maybe you're going to get into it. You're going to start to hesitate.
+
+333
+00:16:57,568 --> 00:17:01,168
+‘刚才亏了，这笔是不是别做了？’
+I just lost on this trade. Maybe I shouldn't take this trade.
+
+334
+00:17:01,168 --> 00:17:02,568
+‘哦，开始涨了，得赶紧进!’
+Oh, it starts ticking. I better get in.
+
+335
+00:17:02,668 --> 00:17:04,768
+结果进场晚了，错过了部分利润。
+You got in late. You're giving up some profits.
+
+336
+00:17:05,468 --> 00:17:08,568
+或者干脆放弃这笔交易，直接跳过。
+Or maybe you don't get into the trade at all. You're passing on the trade.
+
+337
+00:17:09,468 --> 00:17:15,068
+天知道，这笔要是赚了，你就会后悔：‘啊，为什么没做!’
+And then, heaven forbid, that trade become a winner, and you're like, oh, gosh, why did I pay?
+
+338
+00:17:15,068 --> 00:17:17,168
+然后你就开始自责，折磨自己。
+Then you're killing yourself. You're beating yourself up.
+
+339
+00:17:17,468 --> 00:17:21,068
+或者过早出场，只要看到一点利润就落袋为安。
+Or maybe you get out too early, right, just trying to book any profit that you see.
+
+340
+00:17:21,568 --> 00:17:25,168
+‘哦，这笔稍微赚了点…’
+Oh, you know, the... The trade's a little bit in profit.
+
+341
+00:17:25,368 --> 00:17:27,768
+可能还会把止损单往盈亏平衡点挪。
+Maybe you start to move your stop back to break even.
+
+342
+00:17:27,968 --> 00:17:30,068
+结果？你动作太早了。
+And what happens? You do that too early.
+
+343
+00:17:31,268 --> 00:17:36,568
+好，或者刚亏了一笔，你可能会加杠杆或者报复性交易。
+Okay, or maybe if you just had a losing trade, you know, you start to over leverage or revenge trade.
+
+344
+00:17:36,968 --> 00:17:38,218
+‘刚才亏了，
+I just had this loss. I'm
+
+345
+00:17:38,218 --> 00:17:39,051
+我要赚回来。’
+going to get back.
+
+346
+00:17:39,051 --> 00:17:41,967
+‘我要教训教训市场!’ 这行不通，对吧。
+I'm going to teach this market a lesson. It doesn't work that way. Right.
+
+347
+00:17:41,968 --> 00:17:43,568
+或者你把止损单调远。
+Or maybe you move your stop.
+
+348
+00:17:44,968 --> 00:17:46,668
+比平时宽很多，对吧？
+You know, wider than normal, right?
+
+349
+00:17:46,668 --> 00:17:48,743
+我是说，常见的错误就是
+I mean, one of the problems you
+
+350
+00:17:48,743 --> 00:17:50,818
+要么过早出场，
+can make is either get out of
+
+351
+00:17:50,818 --> 00:17:55,266
+要么止损单上移太快，或者反过来，
+the trade too early or move your stop up too quickly, or maybe the opposite.
+
+352
+00:17:55,668 --> 00:18:01,468
+把止损单设得特别远。‘给它点呼吸空间。’
+You move your stop level further away. I want to give you a little bit more breathing room.
+
+353
+00:18:02,668 --> 00:18:08,168
+不行。这样你只是在放弃潜在利润。
+Well, no. Again, you're just going to give up potential profit.
+
+354
+00:18:08,268 --> 00:18:11,168
+你会放弃已经到手的潜在利润。
+You're going to give up potential profit that you've already booked.
+
+355
+00:18:11,168 --> 00:18:13,968
+你会亏得比应该的更多。
+You're going to lose more than you should.
+
+356
+00:18:15,968 --> 00:18:21,068
+现在，看待交易的另一种方式，
+Now, the different way to look at trading is opposed on a trade by trade basis.
+
+357
+00:18:21,768 --> 00:18:23,568
+不是逐笔分析，
+It's a series of trade perspective.
+
+358
+00:18:24,168 --> 00:18:34,668
+好，也就是说，别只分析这一笔交易，而是放在10笔或20笔交易的大背景下去看。
+OK, meaning 10 trades instead of analyzing this one trade, you're analyzing it in context of 10 trades or 20 trades.
+
+359
+00:18:35,468 --> 00:18:36,468
+我用20笔交易来评估。
+I use 20 trades.
+
+360
+00:18:36,468 --> 00:18:38,568
+我不喜欢只看单笔交易。
+I don't like to really consider.
+
+361
+00:18:38,868 --> 00:18:46,368
+100笔交易也好，20笔交易也罢，能更快给你反馈。
+100 trades, but 20 trades, it gives you better feedback much quicker.
+
+362
+00:18:47,768 --> 00:18:53,068
+这样看来，每一笔交易的重要性都一样，没有特别。
+And in that sense, no one trade has any more significance than any other trade.
+
+363
+00:18:53,368 --> 00:18:58,968
+你不会因为每一笔交易的结果而生死攸关，交易时会更从容。
+You're not living or dying on each trade result so that you have more sense of freedom in your trading.
+
+364
+00:18:59,768 --> 00:19:01,468
+你能更好地坚持自己的计划。
+You can stick to your plan better.
+
+365
+00:19:02,468 --> 00:19:07,668
+因为你不会对每一笔交易过度纠结，而是把它放在整体中评估。
+Because you're not handicapping each individual trade. I mean, you're going to handicap it in the whole.
+
+366
+00:19:07,668 --> 00:19:11,068
+你会问，好，在这20笔交易中，我的结果如何？
+You're going to say, okay, on this 20-trade run, how was my results?
+
+367
+00:19:11,368 --> 00:19:13,168
+好，我赢了10笔，输了10笔。
+Okay, I had 10 winners, 10 losers.
+
+368
+00:19:13,568 --> 00:19:15,668
+可能赢了12笔，输了8笔。
+Maybe I had 12 winners, 8 losers.
+
+369
+00:19:15,868 --> 00:19:18,068
+可能赢了8笔，输了12笔。
+Maybe I had 8 winners, 12 losers.
+
+370
+00:19:18,168 --> 00:19:19,568
+好，我哪里做错了？
+Okay, what am I doing wrong?
+
+371
+00:19:19,868 --> 00:19:22,968
+而不是，我做了这笔交易，亏了，我哪里做错了？
+As opposed to, I took this trade, I lost, what am I doing wrong?
+
+372
+00:19:23,068 --> 00:19:26,868
+因为，再说一遍，入场后市场怎么走，你控制不了。
+Because, again, you don't have any control of what happens in the market after you put the trade on.
+
+373
+00:19:28,568 --> 00:19:30,915
+所以你能更好地学习什么有效，
+So you're going to learn better what works and what
+
+374
+00:19:30,915 --> 00:19:32,088
+什么无效，
+doesn't work because you won't
+
+375
+00:19:32,088 --> 00:19:33,966
+因为你不会临时改变交易方式。
+be changing how you trade on the fly.
+
+376
+00:19:34,468 --> 00:19:38,353
+再强调一次，你是在分析10笔或20笔交易的样本，
+Again, you're over a 10-trade sample, a 20-trade
+
+377
+00:19:38,353 --> 00:19:41,753
+而不是只看一笔交易，
+sample, not a one-trade sample, trying to
+
+378
+00:19:41,753 --> 00:19:44,667
+就随意调整交易设置。
+tinker around with your trade setup.
+
+379
+00:19:45,268 --> 00:19:48,468
+现在，说到机构交易者，记住这一点。我先把这个观点摆出来。
+Now, institutional traders, just bear this in mind. I just want to get that out there.
+
+380
+00:19:49,068 --> 00:19:55,168
+机构交易者……使用止损单的方式和散户不同，和你我不同。
+Institutional traders... Don't use stops the way retail traders do, the way you and I do.
+
+381
+00:19:55,568 --> 00:19:57,568
+机构交易者的加杠杆方式
+Institutional traders are not leveraged the same
+
+382
+00:19:57,568 --> 00:19:59,568
+和散户不同，所以他们
+way retail is, so they're not as
+
+383
+00:19:59,568 --> 00:20:01,568
+对市场操纵行为的抵抗力更强。
+vulnerable to manipulative activities in the market.
+
+384
+00:20:02,668 --> 00:20:07,168
+那些快速的逆向价格波动，不会像对散户那样，把他们逼出市场。
+Those quick adverse price movements don't force them out of the market the way it will retail traders like me.
+
+385
+00:20:09,268 --> 00:20:13,668
+如果我入场后价格快速逆我而行，我就出局了，被止损单触发。
+If I get in the market and there's a quick move against me, I'm out. I'm stopped out.
+
+386
+00:20:14,068 --> 00:20:19,868
+而如果我是机构交易者，价格快速逆我而行，我不会出局。
+Whereas if I'm an institutional trader, there's a quick move against me, I'm not getting out.
+
+387
+00:20:20,468 --> 00:20:21,068
+为什么？
+And why is that?
+
+388
+00:20:21,068 --> 00:20:26,468
+因为大银行和那些交易者，他们没有加杠杆。
+It's because the big banks and all those traders, they're not leveraged.
+
+389
+00:20:26,668 --> 00:20:33,468
+他们不是用500美元的保证金交易，他们是足额保证金，后面还有更多保证金。
+They're not trading on $500 margins. They're fully margined with more margin behind them.
+
+390
+00:20:34,868 --> 00:20:37,668
+我是说，你可以说这都是虚构的。
+I mean, you can make the argument that this is all make-believe.
+
+391
+00:20:37,768 --> 00:20:40,368
+银行有庞大的资产负债表作为后盾
+You know, the bank's got a big balance sheet that they put up.
+
+392
+00:20:40,868 --> 00:20:45,268
+但他们不会被短期的逆向波动吓到
+But, you know, they're not going to get spooked out by a quick move against them.
+
+393
+00:20:46,768 --> 00:20:48,560
+所以他们不会像
+So they're not using leverage the same way
+
+394
+00:20:48,560 --> 00:20:50,128
+你我这样使用加杠杆
+you and I do, and they often
+
+395
+00:20:50,128 --> 00:20:52,368
+他们常用期权对冲，不用设止损单
+hedge with options that don't require them to use stops.
+
+396
+00:20:52,768 --> 00:20:53,068
+好
+Okay.
+
+397
+00:20:54,368 --> 00:20:59,168
+他们通过略微虚值的期权对冲期货持仓来设置安全网，不过这我就不展开了
+They have safety net provided by slightly out-of-the-money hedges against their futures positions, but I won't get into that.
+
+398
+00:20:59,268 --> 00:21:02,268
+但记住，我只是想提醒大家
+But just remember, I just wanted to put it out there that
+
+399
+00:21:03,968 --> 00:21:08,968
+机构交易者设置止损单的方式和你我不同
+Institutional traders don't use stops the way you and I do in that sense.
+
+400
+00:21:09,268 --> 00:21:13,623
+所以，再强调一次，在逐根K线、逐笔交易的基础上
+So, again, on a bar-by-bar, trade-by-trade
+
+401
+00:21:13,623 --> 00:21:16,889
+你会很容易受到
+basis, you're going to be susceptible
+
+402
+00:21:16,889 --> 00:21:20,155
+波动的影响，无论是
+to ups and downs, swings, both
+
+403
+00:21:20,155 --> 00:21:25,055
+情绪上还是，怎么说呢...
+emotionally and, you know, I don't want to say...
+
+404
+00:21:24,368 --> 00:21:26,877
+还有你的盈亏，但当你回顾交易结果时
+And your P&L, but when you're going to
+
+405
+00:21:26,877 --> 00:21:29,107
+最好用一段样本周期来统计
+look at your trade results, it's much better
+
+406
+00:21:29,107 --> 00:21:33,846
+这样你就不会为每一笔交易而焦虑
+to take them over a sample period because then you're not stressing out over each individual trade.
+
+407
+00:21:34,168 --> 00:21:38,368
+好，我做的这笔交易，只是这个样本的一部分
+Okay, this trade that I take, okay, that's just part of this sample.
+
+408
+00:21:38,968 --> 00:21:43,468
+我会根据交易方法继续做更多交易
+I'll take some more trades based off of how my trading method is.
+
+409
+00:21:45,368 --> 00:21:50,368
+给亏损的持仓加仓会导致交易者过度加杠杆
+Now, adding to a loser causes traders to over leverage.
+
+410
+00:21:51,468 --> 00:21:56,668
+交易者最终持有的合约数超出了自己的承受能力，还自欺欺人地说是在平均成本
+Traders end up with more contracts than they can handle in a disguise that they are averaging their position.
+
+411
+00:21:56,768 --> 00:22:00,968
+如果要分批建仓，应该在上涨时加仓，而不是下跌时
+If you're going to average into a position, you want to average up, not down.
+
+412
+00:22:01,468 --> 00:22:05,968
+在市场朝有利方向运行时增加合约，而不是逆向时
+Add more contracts as the market's moving in your favor, not when moving against you.
+
+413
+00:22:06,268 --> 00:22:10,168
+给赢家加仓，而不是给输家加仓，很多人不懂这个道理
+Add to your winners, not to your losers. People don't understand that.
+
+414
+00:22:10,968 --> 00:22:14,056
+我看到很多人喜欢给
+I see a lot of people like to add to
+
+415
+00:22:14,056 --> 00:22:16,526
+亏损的持仓加仓，心想
+their losers thinking I'm going to get a
+
+416
+00:22:16,526 --> 00:22:21,467
+能拿到更好的平均成本，而不是在交易顺利时加仓
+better average price on my trades rather than when the trade is going in your favor.
+
+417
+00:22:21,768 --> 00:22:23,568
+那才是应该加仓的时候
+That's the time you should be adding.
+
+418
+00:22:25,568 --> 00:22:25,768
+对吧
+Right?
+
+419
+00:22:26,168 --> 00:22:27,804
+想象一下，你想在这里买入
+Imagine if you're trying to buy
+
+420
+00:22:27,804 --> 00:22:29,440
+但市场却不断下跌
+here and the market keeps dipping,
+
+421
+00:22:29,440 --> 00:22:32,167
+你又买一手，还在跌，你再买一手。
+you buy another one, keeps dipping, you buy another one.
+
+422
+00:22:33,668 --> 00:22:36,168
+转眼价格跌到41.265了。
+Next thing you know, it's trading 41.26 and a half.
+
+423
+00:22:36,768 --> 00:22:43,868
+你没被止损出局止损，反而持仓均价变成41.3625。
+And instead of being stopped out to take your loss, your average long is 41.36 and a quarter.
+
+424
+00:22:44,268 --> 00:22:45,368
+现在亏损10个点。
+You're 10 points underwater.
+
+425
+00:22:45,768 --> 00:22:47,818
+现在不是
+Now, instead of, you know, either
+
+426
+00:22:47,818 --> 00:22:49,868
+持1手被止损出局，
+on one contract or being stopped
+
+427
+00:22:49,868 --> 00:22:53,626
+而是持3手，价格还逆你10个点。
+out, you're along three contracts with the market 10 points against you.
+
+428
+00:22:55,968 --> 00:23:01,868
+如果你做空，可能在36、34、32做空，
+If you're getting short, you know, you're getting short down here at 36, maybe 34, maybe 32.
+
+429
+00:23:02,868 --> 00:23:05,568
+结果价格涨到28，甚至30。
+And the market's trading 28, even 30.
+
+430
+00:23:06,068 --> 00:23:07,268
+你的持仓均价是34。
+Your average is 34.
+
+431
+00:23:10,296 --> 00:23:11,096
+要加仓盈利的单子。
+Add to your winners.
+
+432
+00:23:11,696 --> 00:23:16,896
+价格朝有利方向走时，才是加仓的时机。
+If the market is going up in your favor, that's when you want to be adding to the position.
+
+433
+00:23:19,596 --> 00:23:24,123
+价格稍微回落时，你可以减仓，
+You can always take off a trade if it starts moving down
+
+434
+00:23:24,123 --> 00:23:27,895
+但别再加亏损的仓位。
+a little bit, but don't be adding to more losers.
+
+435
+00:23:30,396 --> 00:23:35,796
+分批建仓时，价格逆你时也能加仓。
+Scaling into a position is one of the instances where you can add positions as the market's moving against you.
+
+436
+00:23:36,196 --> 00:23:39,896
+但这必须是你交易计划的一部分。
+But that should already be part of your defined trading plan.
+
+437
+00:23:40,496 --> 00:23:44,162
+别说‘我要做多，
+Don't just say, well, I'm getting long and I'm going
+
+438
+00:23:44,162 --> 00:23:48,195
+然后无限分批建仓’，这样会出事的。
+to scale in to infinity because you could be doing this.
+
+439
+00:23:48,396 --> 00:23:48,996
+你还是得
+You still got to.
+
+440
+00:23:50,196 --> 00:23:51,796
+考虑风险管理。
+Take into account your risk management.
+
+441
+00:23:52,096 --> 00:23:59,696
+如果你在107.60做多，结果价格逆你而行，
+If you're getting long up here at 107.60, then it starts trading against you.
+
+442
+00:24:00,296 --> 00:24:02,196
+你想‘好，我要在55加仓’。
+You think, okay, I'm going to add more at 55.
+
+443
+00:24:03,496 --> 00:24:09,196
+那别每跌5个Tick就加仓，50、45、40、35都加。
+Then don't start adding it every five ticks lower at 50, at 45, at 40, at 35.
+
+444
+00:24:09,496 --> 00:24:10,996
+转眼你就要爆仓了。
+Next thing you know, you're going to be hemorrhaging.
+
+445
+00:24:11,396 --> 00:24:14,496
+如果这不是你计划的一部分，就别做。
+If it's not part of your trading plan, don't do it.
+
+446
+00:24:15,896 --> 00:24:19,126
+但如果是计划的一部分，
+But again, if it is part of your training plan, then you're
+
+447
+00:24:19,126 --> 00:24:21,279
+那你也得定好出场点，
+also defining where you're going to get out,
+
+448
+00:24:21,279 --> 00:24:26,394
+你得先设好能承受的亏损上限，这样即使你在分批建仓，市场还在下跌，
+how much you're willing to lose, so that even though you are scaling in and the market's selling off,
+
+449
+00:24:27,396 --> 00:24:32,596
+这样即使分批建仓，价格还在下跌，
+you know that, okay, I'm getting long at 60, getting long again at 55, getting long at 50.
+
+450
+00:24:32,996 --> 00:24:35,396
+你也知道‘我107.60做多，55加仓，50再加仓，
+But my line in the stand is 40.
+
+451
+00:24:37,796 --> 00:24:41,296
+比如在55分批建仓，但40就止损出局
+is, you know, 55, but I'm out at 40.
+
+452
+00:24:41,496 --> 00:24:43,996
+我不会像‘我得一直买，一直买’那样
+I'm not like, I got to keep buying. I got to keep buying.
+
+453
+00:24:43,996 --> 00:24:47,096
+我见过有人这么干，结果爆仓了
+I've seen people do that. And as a result, they've blown up.
+
+454
+00:24:47,796 --> 00:24:50,629
+分批建仓本身没问题，但
+Now, there's nothing wrong with scaling into a position, but
+
+455
+00:24:50,629 --> 00:24:54,595
+这必须是你交易计划的一部分，风险管理的一部分
+again, it should be part of your trading plan, part of your risk management.
+
+456
+00:24:55,996 --> 00:25:00,596
+那回到‘逐笔交易’和‘一系列交易’的区别，对吧？
+So getting back to the trade by trade versus series of trade, right?
+
+457
+00:25:00,596 --> 00:25:03,496
+成功的交易者职业生涯中会做成千上万笔交易
+Successful traders make thousands of trades over their career.
+
+458
+00:25:04,096 --> 00:25:09,396
+虽然有标志性的大赢，但通常没有哪一笔交易比另一笔更重要
+And while there are standout trades, there's not usually one trade that is more important than another.
+
+459
+00:25:09,396 --> 00:25:14,196
+他们会有几笔大赢，比如‘这笔太棒了，这笔赚了一年的’
+You know, they will have some big winners that be like, you know, that was great. That made my year.
+
+460
+00:25:14,996 --> 00:25:19,796
+但同时，一个灾难性的亏损就能毁掉整个交易生涯
+But at the same time, a trading career can be wiped out with one catastrophic loss.
+
+461
+00:25:20,196 --> 00:25:21,396
+控制亏损在小范围
+Keep your losses small.
+
+462
+00:25:21,396 --> 00:25:25,203
+如果你只盯着逐笔交易，
+And when you're on a trade-by-trade, you're sort of dismissing
+
+463
+00:25:25,203 --> 00:25:30,741
+就会忽视‘控制亏损’的概念，因为你在一笔交易上生死做关
+the whole concept of keeping your losses small because you're living and dying by one trade.
+
+464
+00:25:30,796 --> 00:25:35,496
+而如果是一系列交易，你可以接受小亏损
+Whereas if it's a series of trade... You know, you're fine to take the small losses.
+
+465
+00:25:35,796 --> 00:25:39,096
+好，亏了就算了，下一笔
+Okay, yeah, I had a loss. Move on. Okay, take the next trade.
+
+466
+00:25:40,196 --> 00:25:42,096
+好，赢了，下一笔
+Okay, it's a winner. Take the next trade.
+
+467
+00:25:42,196 --> 00:25:44,196
+好，小亏，继续
+Okay, it's a small loss. Fine, keep going.
+
+468
+00:25:45,596 --> 00:25:48,996
+对，交易是智力游戏，需要你动脑思考
+Right, training is a game of intellect. It involves some thinking on your part.
+
+469
+00:25:49,096 --> 00:25:51,411
+愤怒、恐惧和过度自信是常见的情绪
+Anger, fear, and overconfidence are common emotions
+
+470
+00:25:51,411 --> 00:25:54,057
+它们可能帮你挽回亏损，但
+that may help you recoup a loss, but
+
+471
+00:25:54,057 --> 00:25:57,695
+最终会导致失败，因为它们干扰了理性思考
+they ultimately lead to defeat because they cloud the intellectual process.
+
+472
+00:25:57,696 --> 00:26:02,196
+如果亏损了，别让愤怒让你交易变得过于激进
+If you suffer a loss, don't let anger make you start trading too aggressively.
+
+473
+00:26:02,496 --> 00:26:03,616
+好，有人会
+Okay, you know, people get
+
+474
+00:26:03,616 --> 00:26:05,184
+对市场生气，他们觉得
+angry at the market. They think this
+
+475
+00:26:05,184 --> 00:26:08,994
+‘就是它，我要证明我比市场懂行’——别这样，对吧？
+is it. I'm going to show the market that I know better than them. No, don't, right?
+
+476
+00:26:09,096 --> 00:26:12,096
+这会让你在市场里变得过于激进
+That makes you get too aggressive in the market.
+
+477
+00:26:13,696 --> 00:26:18,696
+懒惰是交易者面临的另一个问题，是大多数交易错误的根源
+Laziness is another problem traders face. It's a cornerstone of most mistakes that traders make.
+
+478
+00:26:18,796 --> 00:26:19,396
+他们变得懒惰
+They get lazy.
+
+479
+00:26:19,496 --> 00:26:25,696
+‘啊，我忘了设止损单’或者‘我忘了做某件事’
+Oh, I forgot to set my stop or I forgot to do something.
+
+480
+00:26:26,096 --> 00:26:27,396
+他们忘了设自动交易管理
+They forgot to set their ATM.
+
+481
+00:26:28,796 --> 00:26:35,196
+我在NinjaTrader（交易平台）上甚至见过有人忘了... 切换出模拟交易模式，对吧？
+I've even seen people forget on NinjaTrader, forget to... Go out of sim mode, right?
+
+482
+00:26:35,296 --> 00:26:36,846
+因为，你知道的，这个平台的设置
+Because, you know, the things
+
+483
+00:26:36,846 --> 00:26:39,016
+如果你不改的话
+with Ninja Traders, if you don't change
+
+484
+00:26:39,016 --> 00:26:40,876
+它会自动用模拟交易的图表
+it, it'll automatically load your charts
+
+485
+00:26:40,876 --> 00:26:44,596
+和所有这些东西，而不是实时交易
+and all that stuff in sim as opposed to in real time.
+
+486
+00:26:44,696 --> 00:26:45,696
+我还见过有人...
+And I've seen people...
+
+487
+00:26:47,796 --> 00:26:52,196
+他们以为自己在交易，然后在模拟交易里下单，以为这是真实市场
+They think they're trading, and they enter a trade in SIM, and so it's the real market.
+
+488
+00:26:52,196 --> 00:26:53,496
+这纯粹是懒惰，对吧？
+It's just being lazy, right?
+
+489
+00:26:54,596 --> 00:26:57,896
+记住，一旦涉及真金白银，就要认真对待，好好当回事
+Remember, when there's money involved, be serious. Take it seriously.
+
+490
+00:26:59,396 --> 00:27:00,462
+现在记住，我们都是
+Now remember, we're all
+
+491
+00:27:00,462 --> 00:27:02,595
+感性的生物，但当情绪让你想
+emotional beings, but when emotion tells you to
+
+492
+00:27:02,595 --> 00:27:04,195
+进场交易时，
+get into a trade, instead of
+
+493
+00:27:04,195 --> 00:27:08,195
+而不是你的交易计划，你得退一步，好好反省现实
+your trading plan, you need to take a step back and have a reality check.
+
+494
+00:27:11,196 --> 00:27:12,796
+恐惧是自我实现的预言
+Fear is a self-fulfilling prophecy.
+
+495
+00:27:13,096 --> 00:27:15,496
+害怕亏损必定会导致你亏损
+Fear of losing will surely cause you to lose.
+
+496
+00:27:15,596 --> 00:27:18,996
+如果你害怕亏损，你就会亏损，没商量，好吗？
+If you're afraid of losing, you're going to lose, period. Okay?
+
+497
+00:27:21,540 --> 00:27:24,540
+所以别让情绪主导你的交易计划
+So don't let emotions run your trading plan.
+
+498
+00:27:25,140 --> 00:27:26,140
+要有你的交易计划
+Have your trading plan.
+
+499
+00:27:26,640 --> 00:27:31,540
+你制定交易计划的原因，就是为了不被情绪左右，对吧？
+The reason you have a trading plan is so you don't get emotional. Okay?
+
+500
+00:27:32,240 --> 00:27:34,040
+记住这一点
+Remember that. Right?
+
+501
+00:27:34,340 --> 00:27:37,040
+我是说，再读一遍，好好理解，好吗？
+I mean, read that again and try to understand that, right?
+
+502
+00:27:37,040 --> 00:27:42,540
+我们都是感性的生物，但当情绪让你进场，而你的交易计划没让你进场时，别进
+We're all emotional beings, but when emotion tells you to get into a trade instead of your trading plan, don't.
+
+503
+00:27:42,840 --> 00:27:46,040
+不是说... 别因为交易计划而进场
+It's not that... Don't get in because of your trading plan.
+
+504
+00:27:46,040 --> 00:27:48,840
+不，当你的情绪让你想进场时
+No, when your emotions are telling you to get into a trade.
+
+505
+00:27:50,540 --> 00:27:53,340
+而你的交易计划没让你进场
+And your trading plan doesn't tell you to get into a trade.
+
+506
+00:27:53,440 --> 00:27:54,340
+就别进场
+Don't get into a trade.
+
+507
+00:27:54,440 --> 00:27:57,540
+这种情况发生在人们偏离交易计划的时候
+And that happens when people deviate from their trading plan.
+
+508
+00:27:58,340 --> 00:28:03,440
+过度自信是另一个问题，因为它会让你远离交易现实，陷入一厢情愿的幻想
+Overconfidence is another problem because it leads you away from the realities of trading to the world of wishful thinking.
+
+509
+00:28:03,640 --> 00:28:06,140
+我什么都懂，这就像在播下失败的种子
+I know everything. It's like sowing seeds of defeat.
+
+510
+00:28:06,940 --> 00:28:10,040
+恐惧让它发芽，最终会收获失败
+Fear germinates it and eventually it's going to harvest.
+
+511
+00:28:10,440 --> 00:28:12,412
+对你来说是亏损，对吧
+A loss for you okay
+
+512
+00:28:12,412 --> 00:28:15,173
+别太自信，我看到
+don't be too overconfident and I see
+
+513
+00:28:15,173 --> 00:28:18,328
+很多人过度自信，对吧，他们
+people are overconfident you know they have a
+
+514
+00:28:18,328 --> 00:28:24,639
+赚了几笔就以为自己掌握了交易，别这样，保持谦逊
+couple of good trades and they think they master trading no be be humble in your
+
+515
+00:28:26,240 --> 00:28:29,240
+在心理能力上也要谦虚
+in your mental capabilities, I guess.
+
+516
+00:28:29,740 --> 00:28:32,240
+记住，止损单是你的安全网，对吧
+You know, a stop, remember, is your safety net, right?
+
+517
+00:28:32,340 --> 00:28:35,040
+空中飞人表演时，下面都有安全网
+Trapeze artists, they do their tricks with a safety net below.
+
+518
+00:28:35,040 --> 00:28:38,940
+为什么？因为他们知道一个错误就能毁掉一切
+Why? Because they know that one mistake is all it takes to end everything in a bad way.
+
+519
+00:28:39,240 --> 00:28:42,640
+在市场里也是一样，对吧
+And it's the same thing when you get to the markets, right?
+
+520
+00:28:42,640 --> 00:28:49,940
+如果你交易时没有安全网，没有止损单，坏事就会发生，没商量
+If you're trading... Without a safety net, right, without a stop, bad things happen. Period.
+
+521
+00:28:51,640 --> 00:28:56,640
+所以我得反复强调，止损位一旦被触发，必须立即平仓
+So I can't mention it enough, but once a stop level is violated, you have to liquidate the position immediately.
+
+522
+00:28:57,040 --> 00:29:01,240
+价格已经证明你的判断错了，继续持有毫无意义
+There's no point holding any more as price has proven your reading of the market is wrong.
+
+523
+00:29:02,140 --> 00:29:04,940
+你的交易错了，不管是暂时还是永久
+Your trade is wrong, even if it's temporary or not.
+
+524
+00:29:05,640 --> 00:29:07,540
+可能只是穿了1-2个Tick
+Like, you know, maybe it's a tick or two through.
+
+525
+00:29:07,740 --> 00:29:08,740
+认亏出局
+Take your loss.
+
+526
+00:29:09,140 --> 00:29:10,340
+你的分析错了
+Your analysis was wrong.
+
+527
+00:29:10,340 --> 00:29:13,640
+如果订单流再次转强，你随时可以再进场
+You can always get back into the market if the order flow becomes strong again.
+
+528
+00:29:15,540 --> 00:29:17,840
+但如果没及时出局，你就
+But if you fail to get out, you've
+
+529
+00:29:17,840 --> 00:29:19,852
+破坏了风险管理系统，还
+broken your risk management system and you
+
+530
+00:29:19,852 --> 00:29:22,439
+让仓位面临更大的亏损风险
+leave the position open for a potentially bigger loss.
+
+531
+00:29:23,940 --> 00:29:30,440
+记住，止损单是交易设置的一部分，不是只有入场
+So remember, the stop is part of the trade setup. It's not just entries, getting into the trade.
+
+532
+00:29:30,740 --> 00:29:32,740
+你应该提前明确止损位
+You should already understand where your stop is.
+
+533
+00:29:32,840 --> 00:29:35,640
+至少要有一个最低限度的止损
+You should always have at least a minimum, a bare minimum.
+
+534
+00:29:36,340 --> 00:29:37,640
+最坏情况的止损位
+Worst case scenario, stop.
+
+535
+00:29:38,740 --> 00:29:42,240
+无论如何，到这个位置就出局
+No matter what, at this level, I'm out.
+
+536
+00:29:43,440 --> 00:29:46,140
+这应该是你交易设置的基本部分
+That should be minimum part of your trade setup.
+
+537
+00:29:46,640 --> 00:29:51,340
+它本质上是告诉你，交易条件已被破坏
+It essentially exists to tell you that conditions of the trade are violated.
+
+538
+00:29:53,440 --> 00:29:54,640
+比如，你在这里做多
+So for example, you're getting long here.
+
+539
+00:29:54,740 --> 00:29:58,340
+好，可能你发现，嘿，这里有动能
+Oh, okay, maybe I got, you recognize, hey, there's momentum here.
+
+540
+00:29:58,540 --> 00:29:59,508
+好，我们触及低点了
+Okay, we hit the low,
+
+541
+00:29:59,508 --> 00:30:00,476
+出现一根绿色K线，
+we got the green candle,
+
+542
+00:30:00,476 --> 00:30:01,444
+有买盘进场，
+we got some buying and
+
+543
+00:30:01,444 --> 00:30:04,737
+还有些平衡状态，成交量有点薄，控制点在上方，我做多，对吧？
+balances, some thin volume in here, point of control up near the top, I get long, right?
+
+544
+00:30:04,840 --> 00:30:06,440
+止损单就设在这个低点下方。
+You have a stop just below this low.
+
+545
+00:30:06,740 --> 00:30:09,740
+好，坚持这个设置，对吧？
+Fine. Stick to it, right?
+
+546
+00:30:10,440 --> 00:30:13,640
+如果跌破26，就触发止损出局。
+Get out if it comes down here, trades below 26, you're out.
+
+547
+00:30:14,040 --> 00:30:17,440
+即使市场跌下来又反弹，
+Even though if the market sort of comes down here and starts coming back up because
+
+548
+00:30:19,440 --> 00:30:23,140
+因为常见的情况是，市场会反弹后再创新低。
+Often what happens is the market will bounce up and then go lower.
+
+549
+00:30:23,140 --> 00:30:27,140
+你可能会想，再等等看。别犹豫，直接止损出局。
+And you're thinking, well, I'm just going to give it a little more time. Just take the stop. Get out.
+
+550
+00:30:27,640 --> 00:30:30,240
+因为市场还能继续下跌，而且确实会跌。
+Because the markets can go lower, and they do.
+
+551
+00:30:31,140 --> 00:30:32,340
+对，市场也能继续上涨。
+Yes, the markets can go higher.
+
+552
+00:30:32,840 --> 00:30:34,040
+但你随时可以再进场。
+But you can always get back in.
+
+553
+00:30:34,040 --> 00:30:35,540
+如果在这里被止损出局，
+If you're stopped out here and
+
+554
+00:30:35,540 --> 00:30:37,040
+好，你发现有动能
+say, okay, I see some momentum
+
+555
+00:30:37,040 --> 00:30:41,040
+进来了，打破了这里的薄成交量失衡，你再做多。
+coming in here. It imbalances the thin volume here, the one. You get back long again.
+
+556
+00:30:41,640 --> 00:30:42,840
+这完全没问题。
+There's nothing wrong with that.
+
+557
+00:30:42,840 --> 00:30:46,240
+接受亏损，重新评估，对吧？
+Just take your loss and reassess. Right?
+
+558
+00:30:46,440 --> 00:30:48,240
+市场能继续下跌，对吧？
+Markets can go lower. Right?
+
+559
+00:30:48,340 --> 00:30:53,840
+你在这里做多。好，不管什么原因，你觉得有动能，就做多。
+You're getting long in here. Okay. For whatever reason, they say, oh, there's momentum here. You get long.
+
+560
+00:30:53,840 --> 00:30:54,640
+然后跌下来了。
+Then it comes down here.
+
+561
+00:30:55,140 --> 00:30:56,540
+执行出场。
+Take your exit.
+
+562
+00:30:56,640 --> 00:30:57,540
+在这里触发止损。
+Take your stop here.
+
+563
+00:30:58,540 --> 00:30:59,340
+别坐等。
+Don't sit here and wait.
+
+564
+00:30:59,440 --> 00:31:04,140
+好，可能会反弹，结果又跌破前低，对吧？
+Okay, well, it's going to go back up. Then it comes down, makes a new low. Right?
+
+565
+00:31:04,240 --> 00:31:04,940
+所以它又回落了。
+So it's going back.
+
+566
+00:31:05,040 --> 00:31:06,440
+你随时可以再进场。
+You could always get back in.
+
+567
+00:31:06,940 --> 00:31:09,840
+如果看到多头订单流，对吧？
+If you see bullish order flow, right?
+
+568
+00:31:10,940 --> 00:31:12,640
+如果你之前做多了，对吧？
+If you were long earlier, right?
+
+569
+00:31:12,640 --> 00:31:15,440
+如果看到更多多头订单流，可以再进场。
+If you see more bullish order flow, you can get back in again.
+
+570
+00:31:16,440 --> 00:31:20,840
+对，止损很难受，但必须这么做。
+Yeah, it sucks taking the loss, but you just have to do it.
+
+571
+00:31:22,640 --> 00:31:29,140
+因为如果你不在这里止损，市场会再创新低。
+Because what's going to happen is you don't take this loss here. Market makes another low.
+
+572
+00:31:29,440 --> 00:31:30,740
+然后开始反弹上涨。
+Then it starts rallying up.
+
+573
+00:31:30,840 --> 00:31:32,140
+你会想，我比市场更懂。
+You think, I know better.
+
+574
+00:31:32,940 --> 00:31:35,754
+那下次当它
+Then what's going to happen is the next time it
+
+575
+00:31:35,754 --> 00:31:37,724
+形成类似走势时，
+shapes up like this, instead of rallying,
+
+576
+00:31:37,724 --> 00:31:40,538
+市场不会反弹，反而继续下跌，越跌越低。
+the market sells off again and goes lower and lower.
+
+577
+00:31:42,540 --> 00:31:44,840
+现在我们来聊聊止盈目标。
+Let's spend some time talking about profit targets.
+
+578
+00:31:44,840 --> 00:31:49,240
+我进场后，会用ATM自动设置止盈和止损单，对吧？
+Now, I use an ATM for take profits and stop losses after I get into a trade, right?
+
+579
+00:31:49,440 --> 00:31:55,240
+一定要用ATM自动设好止盈和止损单。
+always use the ATM to automatically enter your take profit and your stop.
+
+580
+00:31:55,240 --> 00:31:58,440
+这样至少有个保护，万一市场突然大幅波动。
+So at least you have something in there in case the market starts moving for whatever reason.
+
+581
+00:32:00,640 --> 00:32:03,104
+设固定止盈位时，
+So when you have a fixed take profit level, you're
+
+582
+00:32:03,104 --> 00:32:04,829
+你基本上是在赌
+basically taking the stance that you know
+
+583
+00:32:04,829 --> 00:32:07,539
+多头和空头未来会怎么反应。
+how buyers and sellers are going to react in the future.
+
+584
+00:32:07,940 --> 00:32:10,740
+但你仍然要观察市场，确认实际走势。
+You still have to watch and confirm what's happening in the market.
+
+585
+00:32:11,140 --> 00:32:12,640
+仍然要管理好这笔交易。
+You still have to manage the trade.
+
+586
+00:32:13,140 --> 00:32:16,840
+这样才能让盈利交易跑得更久，亏损交易止损更快。
+That is how you hold on to trades longer and cut your losses shorter.
+
+587
+00:32:17,340 --> 00:32:21,840
+用ATM的话，你随时可以调整，我经常这么做。
+You know, you use an ATM, you can always adjust it. I do that a lot.
+
+588
+00:32:22,240 --> 00:32:26,840
+观察市场在接近你的止盈或止损位时的反应。
+Watch how the market is responding as it goes up or down to your target or stop.
+
+589
+00:32:26,840 --> 00:32:28,280
+如果我发现价格
+You know, if I start seeing
+
+590
+00:32:28,280 --> 00:32:29,720
+快速触及我的
+it moving very quickly to my
+
+591
+00:32:29,720 --> 00:32:30,920
+止损单，而且看到了空头
+stop and I see bearish
+
+592
+00:32:30,920 --> 00:32:32,840
+订单流，我不会把止损单往外移。
+order flow, I don't move my stop away.
+
+593
+00:32:32,840 --> 00:32:33,540
+不会放宽止损。
+I don't widen it.
+
+594
+00:32:33,640 --> 00:32:36,640
+反而会往前移，因为我已经意识到了。
+I move it closer because I've recognized that.
+
+595
+00:32:36,940 --> 00:32:38,040
+有空头订单流进来。
+You know, there's bearish order flow.
+
+596
+00:32:38,040 --> 00:32:42,740
+即使我做多，如果出现空头订单流，这对我来说是个信号。
+Even though I'm long, if there's bearish order flow coming in, that's a sign to me.
+
+597
+00:32:42,840 --> 00:32:45,140
+可能得早点出场，别等太久。
+Maybe I want to get out a little bit sooner than later.
+
+598
+00:32:45,640 --> 00:32:46,446
+好。或者如果
+Okay. Or if
+
+599
+00:32:46,446 --> 00:32:48,328
+我持仓中，交易
+I'm in the trade and it's going
+
+600
+00:32:48,328 --> 00:32:50,210
+朝有利方向发展，我看到更多
+in my favor, I'm seeing more, you
+
+601
+00:32:50,210 --> 00:32:53,437
+对吧，如果我做多，看到更多看涨的订单流进来
+know, if I'm long, I see more bullish order flow come in.
+
+602
+00:32:54,640 --> 00:32:55,940
+我就会尝试多持有一会
+I'm going to try and ride it longer.
+
+603
+00:32:56,040 --> 00:32:59,340
+我会让交易继续，看能不能走得更远
+I'm going to let the... Trade, try and go further.
+
+604
+00:32:59,440 --> 00:33:05,140
+如果不行，我就回到最初的出场点平仓
+If it doesn't, then I'll just move back to my original level where I just get out.
+
+605
+00:33:06,740 --> 00:33:08,940
+让订单流告诉你何时出场
+Let order flow tell you when to get out.
+
+606
+00:33:09,240 --> 00:33:10,490
+如果你在这里做多，动能
+If you're long here, momentum,
+
+607
+00:33:10,490 --> 00:33:11,740
+你做多，然后
+you're long, and then you
+
+608
+00:33:11,740 --> 00:33:16,740
+价格一路涨到这，你想，哦，这里有看涨订单流，我要继续持多
+get all the way up here and you think, oh, there's bullish order flow here. I'm going to stay long.
+
+609
+00:33:16,940 --> 00:33:21,740
+好，你回撤止盈，比如在107.05上方
+Okay, you back up. You take profit. and above, you know, 107.05.
+
+610
+00:33:22,940 --> 00:33:26,240
+然后你开始看到看跌订单流进来
+And then you start seeing the bearish order flow coming in, the
+
+611
+00:33:26,240 --> 00:33:28,715
+这里动能转跌，对吧，出现买卖失衡，2、0、1
+bearish momentum here, right, the imbalances, the 2, the 0, the 1.
+
+612
+00:33:29,840 --> 00:33:32,340
+价格回落到你的止盈位，对吧？
+You come back down to your take profit, right?
+
+613
+00:33:32,340 --> 00:33:34,040
+或者直接平仓
+Or maybe you just get out of the trade.
+
+614
+00:33:34,440 --> 00:33:36,340
+让订单流告诉你，好吗？
+Let the order flow tell you, okay?
+
+615
+00:33:37,140 --> 00:33:41,140
+因为，你之前看到看涨订单流，期待趋势延续
+Because, you know, you had that bullish order flow. You're looking for that move to continue.
+
+616
+00:33:41,440 --> 00:33:46,140
+但如果没延续，这就是出场信号。对吧
+But if it doesn't continue, that's your sign to get out. Right.
+
+617
+00:33:46,140 --> 00:33:47,432
+如果你在创新高
+If you're coming up to new
+
+618
+00:33:47,432 --> 00:33:48,724
+好，你在不断创新高
+highs, all right, you're making these
+
+619
+00:33:48,724 --> 00:33:51,739
+突然看到市场出现抛压
+new highs. Then all of a sudden you see supply coming into the market.
+
+620
+00:33:52,440 --> 00:33:53,140
+出场。对吧
+Get out. Right.
+
+621
+00:33:53,240 --> 00:33:56,040
+这里动能不错，这里也不错
+I mean, there's nice momentum here. Nice momentum here.
+
+622
+00:33:56,340 --> 00:34:00,440
+可能你会想，嗯，可能我的止盈设在47
+Maybe you're going to say, well, you know. Maybe my take profit was at 47.
+
+623
+00:34:00,840 --> 00:34:03,840
+我可以调到48，你就调到48
+I could back it up to 48. You back up to 48.
+
+624
+00:34:05,940 --> 00:34:11,640
+结果没到48，只涨到47又四分之三，然后开始回落
+Then it doesn't quite get there. It gets up to 47 and three quarters. Then starts trading down.
+
+625
+00:34:11,740 --> 00:34:13,140
+然后你看到抛压进来
+Then you see the supply coming in.
+
+626
+00:34:13,240 --> 00:34:15,040
+啊，完了，知道吗？我不该调的
+Ah, shit, you know what? I shouldn't have moved it.
+
+627
+00:34:15,440 --> 00:34:18,840
+但你冒了这个险，想多赚一点
+But you took that chance to get more out of that trade.
+
+628
+00:34:18,840 --> 00:34:24,840
+很多时候它会继续上涨，到48、49、50
+There's going to be a lot of times where it keeps chugging along and trades 48, trades 49, trades 50.
+
+629
+00:34:25,040 --> 00:34:27,173
+但有时候它只差一个Tick就到新止盈位
+There's times like this where it gets within
+
+630
+00:34:27,173 --> 00:34:30,639
+这时候你只能出场
+one tick of your new take profit. You just got to get out.
+
+631
+00:34:32,840 --> 00:34:37,340
+所以市场伤害不到你预设风险之外。
+So the market can't hurt you beyond your predefined risks.
+
+632
+00:34:37,840 --> 00:34:42,640
+那市场一逆你方向，你为何开始慌？
+So why do you start to panic when the market starts to move against you?
+
+633
+00:34:42,940 --> 00:34:43,840
+你已经设了止损单。
+You have a stop in there.
+
+634
+00:34:43,840 --> 00:34:47,640
+别慌，价格逆你时，还没触发止损呢。
+Don't panic if it starts moving against you. It hasn't stopped you out yet.
+
+635
+00:34:48,140 --> 00:34:51,940
+相信自己，相信你的流程，相信你的分析。
+Believe in yourself. in your process, believe in your analysis.
+
+636
+00:34:52,240 --> 00:34:54,240
+我们对市场都有不同看法。
+We all have different beliefs about the market.
+
+637
+00:34:55,140 --> 00:34:56,640
+这正是市场存在的原因，对吧？
+That's what makes the market, right?
+
+638
+00:34:56,940 --> 00:34:59,140
+你得开始想：我相信我的这笔交易。
+You have to start thinking, I believe in my trade.
+
+639
+00:34:59,940 --> 00:35:06,640
+要么市场按我的分析走，我赚钱，我会乐意获利了结，要么...
+Either the market trades according to my analysis and I make a profit, which I will gladly take, or...
+
+640
+00:35:07,040 --> 00:35:09,840
+它会制造一个可控的亏损，我也会接受。
+It will create a controlled loss, which I will also take.
+
+641
+00:35:09,940 --> 00:35:13,540
+可控亏损就是触发你的止损单，对吧？
+My controlled loss means it goes to your stop, right?
+
+642
+00:35:13,640 --> 00:35:15,840
+这就是你愿意承受的亏损。
+That's the loss that you're willing to accept.
+
+643
+00:35:19,240 --> 00:35:22,240
+交易不成功，别怪别人。
+Do not blame others for your trade not working out.
+
+644
+00:35:24,772 --> 00:35:29,972
+这些算是我风险管理的信条，对吧？或者说是交易的普遍原则。
+These are sort of my tenets on risk management, right? Or trading in general, honestly.
+
+645
+00:35:30,372 --> 00:35:32,272
+交易不成功，别怪别人。
+Don't blame others for your trade not working out.
+
+646
+00:35:32,672 --> 00:35:33,572
+谁的错都不是。
+It's nobody's fault.
+
+647
+00:35:34,772 --> 00:35:37,872
+别抱怨市场让你交易失败。
+Do not complain about the market for your trade not working out.
+
+648
+00:35:38,072 --> 00:35:39,272
+不是市场的错。
+It's not the market's fault.
+
+649
+00:35:39,572 --> 00:35:41,472
+为你的交易决策负责。
+Be accountable for your trading decisions.
+
+650
+00:35:42,372 --> 00:35:46,872
+相信自己，不仅是决策，还有执行交易的能力。
+Trust yourself not only in your decision making, but also your ability to execute your trades.
+
+651
+00:35:47,272 --> 00:35:49,172
+如果你不相信自己，就别交易。
+If you don't trust yourself, you shouldn't be trading.
+
+652
+00:35:49,972 --> 00:35:53,372
+你会相信自己在暴风雪里开车吗？
+Would you trust yourself to go drive in a snowstorm?
+
+653
+00:35:53,872 --> 00:35:57,772
+如果不相信自己能在暴风雪里开车，你就不会开。
+If you don't trust yourself to drive in a snowstorm, you're not going to drive in a snowstorm.
+
+654
+00:35:57,772 --> 00:35:58,872
+你会待在家里。
+You're going to stay in the house.
+
+655
+00:35:59,972 --> 00:36:05,172
+同样，如果不相信自己的交易决策，为什么还要交易？
+Just as if you don't trust yourself in your trading decisions, why are you trading?
+
+656
+00:36:05,272 --> 00:36:05,872
+别交易。
+Don't trade.
+
+657
+00:36:05,872 --> 00:36:09,872
+找点别的事做，别拿钱冒险。
+Find something else to do with your time than risk money.
+
+658
+00:36:11,372 --> 00:36:12,572
+说到底，
+At the end of the day,
+
+659
+00:36:12,572 --> 00:36:13,772
+如果你不相信自己，
+if you don't trust yourself and
+
+660
+00:36:13,772 --> 00:36:15,972
+还把钱放在风险里，你会输光的。
+you have money at risk, you're going to lose that money.
+
+661
+00:36:16,472 --> 00:36:17,572
+这可不是你想要的结果。
+That's not what you want to do.
+
+662
+00:36:20,068 --> 00:36:21,868
+所以第6模块就到这里。
+So this concludes Module 6.
+
+663
+00:36:22,868 --> 00:36:24,868
+下个模块见，大家。
+I'm going to see you guys on the next module.
+
+664
+00:36:25,468 --> 00:36:25,768
+拜拜。
+Bye-bye.
+
+===== END AFTER_TRANSLATE =====

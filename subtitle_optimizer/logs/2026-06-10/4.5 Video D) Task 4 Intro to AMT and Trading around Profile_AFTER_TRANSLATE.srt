@@ -1,0 +1,3413 @@
+===== AFTER_TRANSLATE (682 entries) =====
+1
+00:00:00,040 --> 00:00:03,602
+好，交易者们，这个部分真的让人超级兴奋，因为
+okay traders really really excited about this section because this
+
+2
+00:00:03,602 --> 00:00:07,164
+这是把你们过去两三个月的
+is where you bring all your hard work you've been
+
+3
+00:00:07,164 --> 00:00:10,726
+所有辛苦练习都串联起来的时刻，
+doing over the last two three months together and things
+
+4
+00:00:10,726 --> 00:00:14,288
+一切都会豁然开朗，像‘哇，原来如此’
+should just really make sense to you like oh wow
+
+5
+00:00:14,288 --> 00:00:17,850
+现在我理解Envy为什么让我们这么做了
+um i now understand why envy's got us doing this
+
+6
+00:00:17,850 --> 00:00:30,676
+我知道之前让你们单独练习那些可能枯燥又费劲的内容，但很快就会见效——你们会真正理解
+hard graft on individual things which may have been boring and taken a lot of effort um but it's really going to start paying off very quickly in the sense that you're really going to understand
+
+7
+00:00:30,680 --> 00:00:34,982
+机构在看什么，特别是成交量分布图
+what institutions are looking at in terms of the profile
+
+8
+00:00:34,982 --> 00:00:37,133
+所以，为了做到这点，我
+so to do that i
+
+9
+00:00:37,133 --> 00:00:45,738
+要给你们介绍拍卖市场理论（AMT），就是我这里写的，因为本质上
+need to introduce you to auction market theory which is what i've written here amt auction market theory because essentially
+
+10
+00:00:45,740 --> 00:00:53,160
+我们要做的是，在模拟器上进行一笔交易，把
+what we're going to be doing is i'm going to take a trade on the simulator bringing all the things
+
+11
+00:00:53,160 --> 00:00:57,093
+我们之前一起学的内容都整合起来。到目前为止，你们
+that we've been learning together so so far you've done
+
+12
+00:00:57,093 --> 00:01:01,026
+做得非常棒，大家在单个模块里
+a great job guys in on an individual basis looking
+
+13
+00:01:01,026 --> 00:01:04,959
+已经理解了市价单，以及买卖的需求端
+at what so you've understood market orders the demand side
+
+14
+00:01:04,959 --> 00:01:13,219
+也理解了挂单是被动放在买卖盘上的，无论买方还是卖方
+of buying and selling you've understood supply sitting passively on the bid and offer again on the buy and sell side
+
+15
+00:01:13,220 --> 00:01:16,303
+这里的挂单是指被动流动性，可能现在
+that's in terms of supply i mean it seems like
+
+16
+00:01:16,303 --> 00:01:19,386
+感觉像很久之前的事了，第一个模块，你们还记得吗？
+an age ago now module one do you remember where
+
+17
+00:01:19,386 --> 00:01:22,469
+我们讲过价格，
+we spoke about price uh in terms of the bid
+
+18
+00:01:22,469 --> 00:01:25,552
+买价和卖价，我当时跟你们说
+and the offer and i believe i said to you
+
+19
+00:01:25,552 --> 00:01:37,577
+‘大家，六个信息里你们漏了四个’。现在你们应该是这方面的专家了，其实成交量分布图也看到了，但重点是
+guys you're missing you know out of the six pieces of information you're missing an additional four now you guys should be experts in that and actually you don't see the volume profile as well but the point is
+
+20
+00:01:37,580 --> 00:01:41,211
+你们现在应该理解，
+you should understand by now not necessarily shape of profile
+
+21
+00:01:41,211 --> 00:01:44,842
+不一定是分布图的形状和含义，因为我们马上要讲这个，
+and what that means because we're going to discuss that
+
+22
+00:01:44,842 --> 00:01:48,473
+但分布图是怎么形成的。如果你们
+now but how a profile is formed and if you
+
+23
+00:01:48,473 --> 00:01:52,104
+还没回去复习相关模块，
+don't go back guys and redo some of the modules
+
+24
+00:01:52,104 --> 00:02:05,539
+那一定要去补一下，因为分布图里的数字是怎么出现的，这个基础逻辑必须清清楚楚。回顾一下，你们应该已经知道了，
+where we discuss it because it should be abundantly clear to you what is causing just on a very basic level these numbers in the profile to appear so as a recap you should already know but
+
+25
+00:02:05,540 --> 00:02:09,952
+当市价单发生的时候，
+it's whenever what whenever market orders are taking place right
+
+26
+00:02:09,952 --> 00:02:12,158
+不是挂单那一列，
+not the supply columns purely
+
+27
+00:02:12,158 --> 00:02:19,659
+是需求——当我们看到买卖发生，数字出现在这里，就会出现在分布图里
+demand whenever we see buying and selling taking place here and numbers appearing here it's appearing there
+
+28
+00:02:19,660 --> 00:02:23,787
+对，所以重点是，你们看
+right so the point is that as you can see
+
+29
+00:02:23,787 --> 00:02:27,914
+现在，这就是我之前让你们
+now um this was the reason why i got you
+
+30
+00:02:27,914 --> 00:02:32,041
+单独练习的原因，因为我真的需要
+doing things on an individual basis because i really needed
+
+31
+00:02:32,041 --> 00:02:43,598
+这里是买卖双方的需求，在推动成交量分布图的形成——记得香蕉市场的例子吗
+you to understand that it's demand taking place on the buying sell side here that's causing the profile to build in this area do you remember the banana
+
+32
+00:02:43,600 --> 00:02:46,769
+那个例子里，我们大概在10到12美元之间交易
+market example where we were roughly trading between honestly i've
+
+33
+00:02:46,769 --> 00:02:49,304
+抱歉我可能记错了，可能不是这个价位
+completely forgotten maybe 10 and 12 dollars don't forgive me
+
+34
+00:02:49,304 --> 00:02:52,473
+但大概是在10、11、12美元左右
+if i'm wrong but i think it was something around
+
+35
+00:02:52,473 --> 00:03:05,152
+我们说这是一箱香蕉的典型价格——然后价格出去又回来，大家要理解，这正是在发生的事
+10 11 12 where we said oh it's a typical box of bananas and then we went out and then we came back in or we went out and we came back in guys you've got to understand that essentially this is happening
+
+36
+00:03:06,740 --> 00:03:11,042
+我把这些都删了，
+in i'm just going to delete all of this this
+
+37
+00:03:11,042 --> 00:03:13,193
+这种事在生活中无处不在
+is happening everywhere in life
+
+38
+00:03:13,193 --> 00:03:24,379
+等会儿我会用一盒牛奶举例，但像我一直说的，你可以套用到任何事物上
+i'm going to talk in a minute about a carton of milk but we could apply this as i keep saying to any thing you want
+
+39
+00:03:24,380 --> 00:03:26,442
+甚至在
+it's even happening um in
+
+40
+00:03:26,442 --> 00:03:29,330
+一些无形的东西上，比如
+non-tangible elements you know in terms of
+
+41
+00:03:29,330 --> 00:03:32,630
+你一天中经历的
+um things going on throughout your day for
+
+42
+00:03:32,630 --> 00:03:35,105
+那些无法用金钱衡量的事
+example um that are not measured
+
+43
+00:03:35,105 --> 00:03:38,818
+你也能给它们画个成交量分布图
+in monetary terms you could draw a profile around
+
+44
+00:03:38,820 --> 00:03:41,070
+但最终
+but look at the end of the
+
+45
+00:03:41,070 --> 00:03:43,320
+我不是生活专家，我是交易员
+day i'm not a life specialist i'm
+
+46
+00:03:43,320 --> 00:03:45,249
+所以我只会讲
+a trader so i'm going to
+
+47
+00:03:45,249 --> 00:03:51,679
+金融市场和产品——但重点是，大家要理解，这并不是指标
+just talk about um financial markets and products but the point is you've got to understand guys this is not
+
+48
+00:03:51,680 --> 00:03:58,420
+它只是在测量当下发生的交易，你们同意吗
+an indicator all this is is it's measuring transactions taking place now would you agree
+
+49
+00:03:58,420 --> 00:03:59,970
+交易无处不在
+transactions are taking place
+
+50
+00:03:59,970 --> 00:04:02,683
+全世界，所有东西上都在发生
+um everywhere in the world on everything
+
+51
+00:04:02,683 --> 00:04:06,172
+那我们想一盒牛奶
+right so if you think about a carton of
+
+52
+00:04:06,172 --> 00:04:08,885
+假设它卖1.5美元
+milk let's just say it's one dollar
+
+53
+00:04:08,885 --> 00:04:13,537
+不知道你们那里多少钱，但
+fifty i don't know how much it is where you live but
+
+54
+00:04:13,540 --> 00:04:14,848
+我们就假设
+you know let's just
+
+55
+00:04:14,848 --> 00:04:17,137
+大概1.5美元吧，听起来合理
+say it's approximately 150 which sounds about right
+
+56
+00:04:17,137 --> 00:04:19,753
+你可以想象你们国家的任何价格
+to me um you can think of whatever
+
+57
+00:04:19,753 --> 00:04:21,715
+但大家同意吗，1月、2月、3月
+price you want in your country
+
+58
+00:04:21,715 --> 00:04:25,312
+4月、5月、6月
+but would you agree guys january february march april may june
+
+59
+00:04:25,640 --> 00:04:28,073
+7月、8月
+july august all the way to
+
+60
+00:04:28,073 --> 00:04:31,722
+一直到12月，它的价格通常就是
+december generally that's going to be the price of
+
+61
+00:04:31,722 --> 00:04:34,560
+一盒牛奶的价格 对吧？可能
+a carton of milk yeah it might
+
+62
+00:04:34,560 --> 00:04:41,048
+有些店是160，有些是140，但基本
+go up to 160 in some shops it may be 140 in other shops but essentially that's approximately
+
+63
+00:04:41,860 --> 00:04:45,475
+就是一盒牛奶的大致价格
+going to be the price of a carton
+
+64
+00:04:45,475 --> 00:04:49,993
+现在重点是，他们
+of milk right now the point here is that they
+
+65
+00:04:49,993 --> 00:04:53,156
+可能没用成交量分布图来记录
+may not be recording this data in
+
+66
+00:04:53,156 --> 00:04:58,578
+大家，我说成交量分布图
+terms of a volume profile but guys when i say volume profile
+
+67
+00:04:58,580 --> 00:05:00,712
+不是指标时，你要理解的是
+is not an indicator what
+
+68
+00:05:00,712 --> 00:05:03,697
+即使
+you need to understand is that even
+
+69
+00:05:03,697 --> 00:05:07,108
+日常商品的价格
+the price of everyday um goods product services
+
+70
+00:05:07,108 --> 00:05:09,666
+也有成交量分布图 想想看
+have a volume profile think about
+
+71
+00:05:09,666 --> 00:05:14,357
+这到底是什么？你认同这是当前价格 对吧
+it what exactly is this would you agree that's the price
+
+72
+00:05:14,360 --> 00:05:15,773
+现在我们来看
+now let's look at do
+
+73
+00:05:15,773 --> 00:05:17,752
+你们还记得吗？回去看看
+you remember go back and look at
+
+74
+00:05:17,752 --> 00:05:20,013
+我之前做的新冠病毒相关的Instagram视频
+the coronavirus um instagram video i did or
+
+75
+00:05:20,013 --> 00:05:21,992
+或者
+um any of the other videos i
+
+76
+00:05:21,992 --> 00:05:26,798
+其他视频，不确定的话发消息给我，我指引你
+did um and if you're not sure send me a message i'll point you in the right
+
+77
+00:05:26,800 --> 00:05:29,418
+我之前有个视频里展示了
+direction where i had the frequency distribution of
+
+78
+00:05:29,418 --> 00:05:32,691
+波动范围的频率分布
+the range you know every time we had a certain
+
+79
+00:05:32,691 --> 00:05:34,982
+每次出现某个波动范围
+range i recorded it and then each
+
+80
+00:05:34,982 --> 00:05:39,237
+我就记录下来，然后
+record would just go on top of each other and that's what caused
+
+81
+00:05:39,240 --> 00:05:42,156
+每条记录叠加起来，就形成了我展示的分布形状
+the shape of the distribution that i showed
+
+82
+00:05:42,156 --> 00:05:45,801
+大家想想，这套方法
+well guys think about it you can apply this to
+
+83
+00:05:45,801 --> 00:05:48,717
+也能用在一盒牛奶的价格上
+the price of a carton of milk if
+
+84
+00:05:48,717 --> 00:05:54,549
+假设你是个工人，企业一直在做这件事
+let's say you were a worker firms are doing this all the time you probably just
+
+85
+00:05:54,550 --> 00:06:02,190
+你可能意识到了，也可能没意识到，只是换种方式展示
+you may realize it or you may not but instead of plotting it this way they're plotting it this way
+
+86
+00:06:02,190 --> 00:06:04,334
+所以想想看
+so think about it
+
+87
+00:06:04,334 --> 00:06:05,942
+150、140、160
+that's 150 that's 140 that's 160
+
+88
+00:06:05,942 --> 00:06:09,158
+好，大家，我在想
+okay guys now i'm thinking of
+
+89
+00:06:09,158 --> 00:06:12,910
+怎么最好解释这个
+the best way to explain this okay
+
+90
+00:06:12,910 --> 00:06:22,559
+假设你站在一排超市和商店的路尽头 好吧
+let's say you stood at the end of a road of a row of supermarkets and shops right
+
+91
+00:06:24,170 --> 00:06:26,506
+在繁华的商业街上
+in a busy high street would
+
+92
+00:06:26,506 --> 00:06:29,621
+你会同意，他们通常在多家店
+you agree they sell milk generally in several
+
+93
+00:06:29,621 --> 00:06:32,736
+卖牛奶，可能是小店、大店
+shops it could be small shops big shops
+
+94
+00:06:32,736 --> 00:06:37,408
+批发商、超市等等
+wholesalers uh supermarkets whatever every time someone bought a carton of milk
+
+95
+00:06:37,410 --> 00:06:39,414
+每次有人买一盒牛奶
+you stood outside and you did
+
+96
+00:06:39,414 --> 00:06:42,086
+你站在外面做个调查，大家
+a survey guys and you said to them
+
+97
+00:06:42,086 --> 00:06:44,758
+你问他们
+um how much did you pay for a
+
+98
+00:06:44,758 --> 00:06:46,762
+‘你买这盒牛奶花了多少钱’
+carton of milk every time someone
+
+99
+00:06:46,762 --> 00:06:52,107
+每次有人走出商店，你就记录下来
+walked out of a shop and you recorded it okay this is done all the time
+
+100
+00:06:52,110 --> 00:06:53,624
+对吧，这些调查就是这么做的
+this is how surveys are
+
+101
+00:06:53,624 --> 00:06:55,744
+大家，你们觉得经济数据
+done guys how do you think economic
+
+102
+00:06:55,744 --> 00:06:58,166
+是怎么发布的？
+data is released it's all done in a
+
+103
+00:06:58,166 --> 00:06:59,983
+都是用类似的方法
+similar manner to this but obviously
+
+104
+00:06:59,983 --> 00:07:02,708
+但规模更大，是机构在询问
+on a bigger scale where people are asking companies
+
+105
+00:07:02,710 --> 00:07:06,650
+公司提供调查数据
+to give surveys that's how you get all these manufacturing indexes and whatever you see
+
+106
+00:07:06,650 --> 00:07:07,631
+这样才会有制造业指数等
+released there's a
+
+107
+00:07:07,631 --> 00:07:09,594
+数据发布，大家
+profile guys you this is what
+
+108
+00:07:09,594 --> 00:07:12,212
+这里会形成一个分布图
+you need to understand it's nothing to do
+
+109
+00:07:12,212 --> 00:07:15,157
+这才是你需要理解的
+with indicators this is where you're learning to be
+
+110
+00:07:15,157 --> 00:07:17,120
+和指标无关
+a professional trader this is exactly
+
+111
+00:07:17,120 --> 00:07:23,666
+这是你成为专业交易者的关键
+what um the institutions are looking at for the reason i'm about to show you so anyway you're asked you're
+
+112
+00:07:23,670 --> 00:07:25,392
+机构就是这么看的
+doing a survey about milk
+
+113
+00:07:25,392 --> 00:07:27,803
+我等下会给大家解释原因
+right um and stick with me because
+
+114
+00:07:27,803 --> 00:07:30,559
+跟着我，因为
+this is very relevant to the way i'm
+
+115
+00:07:30,559 --> 00:07:32,970
+这和我接下来的交易方式
+going to be taking trades the trade
+
+116
+00:07:32,970 --> 00:07:37,448
+在模拟器里的交易
+on the simulator um shortly would you agree guys if the carton of
+
+117
+00:07:37,450 --> 00:07:39,650
+有直接关系，大家
+milk is about 150 where you live
+
+118
+00:07:39,650 --> 00:07:42,950
+假设你那里一盒牛奶卖150
+every single person that walks down and tells you
+
+119
+00:07:42,950 --> 00:07:45,150
+每个路过的人告诉你
+how much they paid is approximately
+
+120
+00:07:45,150 --> 00:07:49,550
+他们付的价格大概都是150或140
+going to be about 150 140 once it's going to be around that price
+
+121
+00:07:50,650 --> 00:07:53,416
+想象你站在那里，每次
+so imagine you were standing there every time
+
+122
+00:07:53,416 --> 00:07:56,182
+有人告诉你价格，你在价格旁边
+someone told you the price next to the
+
+123
+00:07:56,182 --> 00:07:58,948
+做个记号，比如
+price you just made a tally like you
+
+124
+00:07:58,948 --> 00:08:03,789
+画一条线代表一个单位，这是第一个单位
+just did a a bar to represent one unit so this is units one
+
+125
+00:08:03,790 --> 00:08:05,830
+第二个，第三个，依此类推
+two three and so on and
+
+126
+00:08:05,830 --> 00:08:08,890
+你同意吗？你会
+so forth would you agree you're going to go
+
+127
+00:08:08,890 --> 00:08:11,950
+先记下150，下一个人来了你问他
+one the next person comes out and you'll say
+
+128
+00:08:11,950 --> 00:08:14,330
+‘我付了150’‘我付了155’
+yeah i paid 150 two oh yeah i
+
+129
+00:08:14,330 --> 00:08:18,410
+然后你再记一个，这样会一直持续
+paid 155 so you just do one now this will go on like
+
+130
+00:08:19,090 --> 00:08:21,496
+每天有成千上万人买牛奶
+thousands of people are buying milk every
+
+131
+00:08:21,496 --> 00:08:24,590
+你就站在那里，每次有人出来
+day you literally stood there and every time someone
+
+132
+00:08:24,590 --> 00:08:27,684
+你问他‘你付了多少’
+came out you asked them how much it was
+
+133
+00:08:27,684 --> 00:08:31,809
+你同意吗？几乎所有人
+would you agree pretty much everyone is going to be in this
+
+134
+00:08:31,810 --> 00:08:34,507
+都会在这个区间里
+range so maybe eight or nine
+
+135
+00:08:34,507 --> 00:08:37,653
+可能有800或900人以150买的
+hundred people will have bought at 150 so
+
+136
+00:08:37,653 --> 00:08:41,249
+所以你会一直记，每次
+this will keep you keep putting a unit
+
+137
+00:08:41,249 --> 00:08:44,395
+涨到140，有人买
+every time it goes up 140 yeah few
+
+138
+00:08:44,395 --> 00:08:48,890
+再少一点人在这里，再少一点人
+people and then few people here and then very few
+
+139
+00:08:49,790 --> 00:08:51,832
+在这个区域买
+people buying in this area
+
+140
+00:08:51,832 --> 00:08:54,690
+大家，你们在干什么？
+look guys what are you doing you're
+
+141
+00:08:54,690 --> 00:08:57,957
+你们在构建一个分布图
+building a profile okay that is exactly what
+
+142
+00:08:57,957 --> 00:09:00,815
+对，这就是成交量分布图
+this is it's a profile of transactions
+
+143
+00:09:00,815 --> 00:09:05,307
+这正是我让你们理解
+this is why i got you guys to understand the difference
+
+144
+00:09:05,310 --> 00:09:08,180
+市价单和挂单区别的原因
+between market orders and supply because
+
+145
+00:09:08,180 --> 00:09:12,007
+好好想想
+excuse me if you think about it right
+
+146
+00:09:12,007 --> 00:09:15,834
+每次这都可以轻松地
+every time this could just as easily how
+
+147
+00:09:15,834 --> 00:09:19,183
+这里是150，你只需要
+this is 150 here this all you do
+
+148
+00:09:19,183 --> 00:09:23,489
+把它侧过来，别管这些价格
+is just flip it sideways forget about these prices
+
+149
+00:09:23,970 --> 00:09:27,235
+想象这里的价格是1.5美元
+imagine this price was $1.50 here every
+
+150
+00:09:27,235 --> 00:09:31,588
+每次有人买一盒牛奶
+time someone bought a carton of milk what
+
+151
+00:09:31,588 --> 00:09:35,941
+他们在干嘛 你们说他们在干嘛
+are they doing what are they doing guys
+
+152
+00:09:35,941 --> 00:09:39,750
+他们在下市价单 对吧
+they're placing a market order right whenever
+
+153
+00:09:39,750 --> 00:09:43,015
+每次有人买国债时
+someone buys the treasury as you
+
+154
+00:09:43,560 --> 00:09:45,612
+你点进去 就是主动买
+know you click there you aggressively
+
+155
+00:09:45,612 --> 00:09:48,348
+大家 他们在干嘛
+want to buy guys what are they doing
+
+156
+00:09:48,348 --> 00:09:51,084
+超市在挂单这边坐着
+supermarket is on the supply side sitting here
+
+157
+00:09:51,084 --> 00:09:53,820
+在卖盘上说 我的牛奶1.5美元
+on the offer saying there's my carton of
+
+158
+00:09:53,820 --> 00:09:56,556
+要就买 不要拉倒
+milk 150 take it or leave it they're the
+
+159
+00:09:56,900 --> 00:09:59,823
+他们是这笔交易里的被动方
+passive person in this transaction you're the
+
+160
+00:09:59,823 --> 00:10:03,163
+你是主动方 你刚走进超市
+aggressor you've just walked into the supermarket and
+
+161
+00:10:03,163 --> 00:10:06,503
+做了主动决定 接受这个价格
+made the aggressive decision to take that price
+
+162
+00:10:06,503 --> 00:10:09,426
+对 你没坐在买价上
+right you haven't sat there on the
+
+163
+00:10:09,426 --> 00:10:10,678
+你实际上
+bid you've actually
+
+164
+00:10:10,680 --> 00:10:13,270
+主动吃了卖单 记得吗
+gone and lifted the offer do you
+
+165
+00:10:13,270 --> 00:10:16,230
+那个空白区 然后导致
+remember the blanket blank area which then causes
+
+166
+00:10:16,230 --> 00:10:18,820
+这个变化 我希望你现在能
+this to change i hope you can
+
+167
+00:10:18,820 --> 00:10:20,828
+理解为什么会这样
+now see why this is going
+
+168
+00:10:20,828 --> 00:10:22,836
+买块巧克力时
+on when you buy a chocolate
+
+169
+00:10:22,836 --> 00:10:24,844
+理发时
+bar when you buy a haircut
+
+170
+00:10:24,844 --> 00:10:26,517
+买任何东西时 大家
+when you buy anything guys
+
+171
+00:10:26,520 --> 00:10:27,840
+所以我们要 我不想
+so we're gonna i don't
+
+172
+00:10:27,840 --> 00:10:29,688
+我的意思是 看起来像
+want to i mean it seems like
+
+173
+00:10:29,688 --> 00:10:31,800
+其实我可能在AMT（拍卖市场理论）
+actually i've probably gotten into a lot of
+
+174
+00:10:31,800 --> 00:10:33,912
+高阶课里讲了很多细节
+the details i wanted to in the pro
+
+175
+00:10:33,912 --> 00:10:37,080
+但你们知道吗 我在想可能
+course about auction market theory but you know what i'm thinking might
+
+176
+00:10:37,080 --> 00:10:38,977
+让你们大家
+as well just get you guys
+
+177
+00:10:38,977 --> 00:10:41,822
+先开始上手
+started so you can because what it is i
+
+178
+00:10:41,822 --> 00:10:44,984
+这样基础课结束时你会想
+want you to come away from the foundation course thinking
+
+179
+00:10:44,984 --> 00:10:48,146
+哦 原来如此
+yeah oh it's making sense now why envy made us
+
+180
+00:10:48,146 --> 00:10:55,418
+但这就是原因 因为你们现在要成为专家了
+spend so long watching this thing being being built it's so boring guys this is why because you're now going to be experts
+
+181
+00:10:55,420 --> 00:10:58,361
+理解这个东西到底在构建什么
+in understanding what this thing is being built
+
+182
+00:10:58,361 --> 00:11:01,302
+我可以确定，当我在
+i can assure you when i was in
+
+183
+00:11:01,302 --> 00:11:04,610
+专业机构时，周围很多人都在走捷径
+professional um firm many people around me took shortcuts
+
+184
+00:11:04,610 --> 00:11:07,183
+只是把成交量分布图当成某种指标
+and just used this as some sort
+
+185
+00:11:07,183 --> 00:11:15,638
+哦，市场到这个区域我就进场——大家，这就是书本和捷径的问题，你根本不理解
+of indicator that oh when the market reaches this area i'm gonna guys that's the problem with books and taking shortcuts you don't
+
+186
+00:11:15,640 --> 00:11:16,912
+这个东西
+understand um this was
+
+187
+00:11:16,912 --> 00:11:19,456
+这是我职业生涯的一个重大转折点
+a big turning point in my career uh
+
+188
+00:11:19,456 --> 00:11:22,000
+对我来说，抱歉让你们
+for me and i'm sorry to um you
+
+189
+00:11:22,000 --> 00:11:28,679
+听我唠叨这些，但这真的很重要，我知道我喜欢和你们分享这些
+know waffle on about this stuff but it's so important um and you know i love sharing this with you guys
+
+190
+00:11:28,680 --> 00:11:31,386
+因为我看到外面有太多关于技术指标的垃圾
+because i see the amount of crap out
+
+191
+00:11:31,386 --> 00:11:33,754
+真的，我职业生涯早期的转折点
+there being sold about technical indicators and
+
+192
+00:11:33,754 --> 00:11:40,519
+就是理解到成交量分布图不是指标
+really the turning point for me early on in my career was understanding that the profile is not an indicator
+
+193
+00:11:40,520 --> 00:11:42,716
+它其实只是在记录数据，我是说
+it's actually just recording i mean
+
+194
+00:11:42,716 --> 00:11:45,645
+现在想想我还会笑
+i still sit here and laugh about it
+
+195
+00:11:45,645 --> 00:11:48,574
+它只是在记录数据，就像全世界发生的一切
+it's just recording data just like is what
+
+196
+00:11:48,574 --> 00:11:54,798
+比如你上公交车，公交公司
+is happening around the world you know even when you get on a bus the bus company
+
+197
+00:11:54,800 --> 00:11:58,138
+也在记录这些数据，他们只是
+is recording this data all they're doing is they've got
+
+198
+00:11:58,138 --> 00:12:01,476
+有个时间和明细系统，你想想看，他们
+a time and sales if you think about it they've
+
+199
+00:12:01,476 --> 00:12:04,814
+有台电脑，每次有人花1美元买车票
+got a computer every time someone pays a dollar for
+
+200
+00:12:04,814 --> 00:12:15,497
+就记录一笔交易，一个人或一家人买4张票，这就是分时明细，大家现在应该懂我为什么给你们看分时明细了吧
+a bus ticket it records one transaction one one or family get on four that's the time and sale guys hope you can see now why i showed you time and sales
+
+201
+00:12:15,500 --> 00:12:18,366
+那分时明细又是怎么
+where does the time and sales then get
+
+202
+00:12:18,366 --> 00:12:21,232
+在这里记录交易的呢
+recorded here as the transactions are taking place
+
+203
+00:12:21,232 --> 00:12:28,039
+这里的分时明细就是需求栏，数据就记录在那里，大家应该看到了吧
+here the time and sales is the demand column it's getting recorded there hope you can see that guy
+
+204
+00:12:28,040 --> 00:12:31,688
+所以不是金融市场里的交易
+so instead of it being a financial market where transactions
+
+205
+00:12:31,688 --> 00:12:34,606
+市价单在发生
+are being ordered market orders are taking place
+
+206
+00:12:34,606 --> 00:12:40,078
+需求端，而是公交车票
+the demand side it's a bus ticket so what would you see around one dollar
+
+207
+00:12:40,080 --> 00:12:42,604
+那你会在1美元附近看到什么
+instead of it being a profile this way
+
+208
+00:12:42,604 --> 00:12:45,128
+不是这种分布图
+it'll be a profile the other way and
+
+209
+00:12:45,128 --> 00:12:53,018
+而是另一种分布图，你会发现1美元附近有很多交易
+you'll just see around one dollar lots of transactions it's a lot of volume so you'll have a you know quite a bit of volume
+
+210
+00:12:53,020 --> 00:12:56,207
+成交量很大，所以1美元附近会有大量成交
+around one dollar this is the carton of
+
+211
+00:12:56,207 --> 00:12:59,792
+牛奶1.50元，你们站在那儿做调查
+milk 150 you know you as i said you're standing
+
+212
+00:12:59,792 --> 00:13:03,776
+我相信你们也同意，大家
+there doing the survey and i'm sure you'll agree people
+
+213
+00:13:03,776 --> 00:13:07,760
+不会有很多人说
+aren't going to you're not going to have a lot
+
+214
+00:13:07,760 --> 00:13:22,900
+‘哦，我花5元买一盒’‘我没花钱’——不可能，大家，每天成千上万人在当地买牛奶，价格都差不多
+of people saying oh i paid five dollars for a carton i paid nothing just don't happen guys thousands of people are buying milk every day in your local area and they're all approximately paying the same price
+
+215
+00:13:23,300 --> 00:13:27,280
+现在，还有另一个点，我一直觉得
+now here's the other bit that i also i mean
+
+216
+00:13:27,280 --> 00:13:31,260
+特别神奇，到今天都这么着迷
+i still to this day i find it so fascinating
+
+217
+00:13:31,260 --> 00:13:35,240
+牛奶这类东西
+and how amazing it is that things like milk are
+
+218
+00:13:35,240 --> 00:13:47,580
+和金融市场一样，我们之前讲过1.50是价格，但仔细想，价格不会总是恰好1.50，对吧？
+the same as financial markets is you know we talked about 150 being the price and then if you think about it it's not always 150 on the dot is it and this
+
+219
+00:13:48,380 --> 00:13:51,715
+所以有时候，我有点犹豫推荐书给别人
+is why sometimes i'm a bit hesitant about recommending books
+
+220
+00:13:51,715 --> 00:13:55,050
+因为他们总喜欢精确
+to people because they like to be so precise and
+
+221
+00:13:55,050 --> 00:13:59,719
+人类就是喜欢精确，但成交量分布图的美妙之处在于
+human beings like to be precise and this is the beauty of profile is
+
+222
+00:13:59,720 --> 00:14:02,574
+它不是不精确，而是
+it's slightly it's not imprecise but it's more
+
+223
+00:14:02,574 --> 00:14:06,141
+更真实地反映现实——对，大多数人会在1.50买
+a reflection of reality in the sense that yeah most
+
+224
+00:14:06,141 --> 00:14:10,065
+但总会有例外
+people are going to buy at 150 but there'll be some that
+
+225
+00:14:10,065 --> 00:14:13,632
+可能多10美分、5美分
+you know obviously one shot might be 10 cents 5 cents more
+
+226
+00:14:13,632 --> 00:14:16,486
+贵一点或便宜一点，但大部分
+expensive or cheaper but so the majority would
+
+227
+00:14:16,486 --> 00:14:31,827
+你们也同意，高价和低价位成交会很少，对吧？我的意思是，价格会在一个小区间内波动，大家看发生了什么
+you agree there's going to be very little transactions up here at the high prices and low prices would be like that my point is it's going to be approximately between a range of a small range of prices guys look what's happened
+
+228
+00:14:32,900 --> 00:14:36,165
+本质上，市场在给我们
+what's essentially happening is the market is giving
+
+229
+00:14:36,165 --> 00:14:39,430
+大量反馈
+us a huge amount of feedback here it's
+
+230
+00:14:39,430 --> 00:14:42,695
+这不是指标，我刚才展示的是
+not an indicator i've just shown you it's
+
+231
+00:14:42,695 --> 00:14:52,899
+真实发生的交易，哪里有预测成分？没有，这是事实，大家在1.50买牛奶
+just transactions taking place where's where's the indic where's the predictive element in that there isn't it's a fact you know people are buying milk
+
+232
+00:14:52,900 --> 00:14:54,808
+在交易市场里成交
+for 150 they're trading a market
+
+233
+00:14:54,808 --> 00:14:57,098
+这是交易事实，大家
+transaction guys where's the argument i
+
+234
+00:14:57,098 --> 00:14:59,388
+你无法和别人争论
+can't argue with someone and say
+
+235
+00:14:59,388 --> 00:15:04,732
+‘不，你没付1.5元’——他会说‘兄弟，我付了1.5元，收据在这’
+no you didn't pay $1.50 he's gonna be like mate i paid $1.50 here's the receipt
+
+236
+00:15:05,880 --> 00:15:10,986
+所以我特别不理解，为什么还有人用技术指标
+this is why i find it madness that people even use technical
+
+237
+00:15:10,986 --> 00:15:16,092
+真的搞不懂这些东西怎么还在用
+indicators i really can't understand how that stuff is even used because
+
+238
+00:15:16,092 --> 00:15:21,198
+因为你用技术指标，本质上
+what you're basically doing with a technical indicator is you this is
+
+239
+00:15:21,198 --> 00:15:26,304
+就是在处理数据时，把数据给遮住了
+what you're doing to all this data you're covering it up i'm
+
+240
+00:15:26,304 --> 00:15:44,177
+抱歉这么说，但你确实是在遮数据——数据就在你面前，你却说‘我不想要这个’，这简直疯了，为什么大家不用交易数据
+sorry to do this but literally this is what you're doing you've got the data in front of you and you're basically saying now i don't want that it just seems to me completely crazy that people are not using transactional data
+
+241
+00:15:44,180 --> 00:15:46,957
+所以最后一点，我要说的是
+so the final point i make is and
+
+242
+00:15:46,957 --> 00:15:50,428
+为什么我这么说，我们继续往下讲
+why i say this and we will move on and
+
+243
+00:15:50,428 --> 00:15:54,594
+在AMT（拍卖市场理论）模块里会详细展开
+talk about this much more in ultra market theory section in profile
+
+244
+00:15:54,594 --> 00:15:58,760
+本质上，我想表达的是
+is because essentially i guess what i'm getting at you'll hear me
+
+245
+00:15:58,760 --> 00:16:11,258
+你们会在Discord里听我提到，用这些工具的目的是——找到公允价格
+talk about this sometimes in the discord is what you're trying to do with this stuff is you're trying to figure out what's the fair price now again what amazes me is if you ask someone
+
+246
+00:16:11,260 --> 00:16:13,584
+问别人牛奶的公允价格是多少
+what's the fair price of milk they're gonna
+
+247
+00:16:13,584 --> 00:16:16,489
+他们肯定知道，对吧？
+know aren't they because they're buying milk every day they're
+
+248
+00:16:16,489 --> 00:16:19,103
+因为他们天天买牛奶
+probably in if you pay $1.50 in your local area
+
+249
+00:16:19,103 --> 00:16:22,008
+可能当地卖1.5美元
+whatever it is i don't it doesn't matter to me
+
+250
+00:16:22,008 --> 00:16:33,047
+不管价格是多少，重点是——公允价格对你们来说很直观，你们会说‘哦，大概1.5美元’ 那你们怎么知道的？因为你们之前付过1.5美元！ 我们现在要找的是——
+the point is the fair price is going to be obvious to you you're going to say oh it's about it's about $1.50 well guys how do you know that because you've paid $1.50 guys we're trying to find out
+
+251
+00:16:33,940 --> 00:16:40,480
+今天国债市场的公允价格是多少？这同样适用于英镑美元、欧元美元、标普500
+what's the fair price of the treasury market today this applies to pound dollar euro dollar s&p 500
+
+252
+00:16:40,480 --> 00:16:43,822
+大家，这就是我每天在看的
+guys this is what i am looking at
+
+253
+00:16:43,822 --> 00:16:47,164
+每天醒来，我
+every single day when i wake up i'm
+
+254
+00:16:47,164 --> 00:16:55,938
+就在想——今天的公允价格是多少？市场会在哪里成交？市场乐意在哪里成交？
+looking oh what's the fair price where does the market um transact today where is the market happy to transact so
+
+255
+00:16:55,940 --> 00:16:58,663
+我的观点是
+if we would so my point is this
+
+256
+00:16:58,663 --> 00:17:01,386
+之前说技术指标时，如果
+when i said about technical indicators if we
+
+257
+00:17:01,386 --> 00:17:04,109
+牛奶价格是1.5美元，对吧？
+look at the price of milk it's at
+
+258
+00:17:04,109 --> 00:17:09,556
+我们刚才说，大部分交易都在这个区间
+$1.50 right so we just said that you know majority of transactions take place in this range
+
+259
+00:17:09,900 --> 00:17:12,659
+如果你是店主，那么
+if you're if you're a shop right the
+
+260
+00:17:12,659 --> 00:17:15,418
+你做这个分析的原因是
+reason you might want to do this analysis
+
+261
+00:17:15,418 --> 00:17:18,177
+到年底的时候
+is because at the end of the year
+
+262
+00:17:18,177 --> 00:17:25,076
+你得算出——明年能以什么价格卖东西
+right you're trying to work out um you know what's the likely price you can sell stuff at next year
+
+263
+00:17:25,079 --> 00:17:30,480
+显然，公司一直在做这个，卖牛奶的也一直在做
+obviously companies are doing this all the time and sellers of milk are going to do this all the time
+
+264
+00:17:30,480 --> 00:17:36,660
+对吧？他们会坐在那里想——明年我们该定什么价？
+right they're going to be sitting there thinking all right what price um should we sell at next year
+
+265
+00:17:36,660 --> 00:17:41,580
+大家，他们会看时间和销量——我之前说的，这就是他们的交易账本
+guys they're going to look at their time and sales which i already said is their book of transactions
+
+266
+00:17:41,580 --> 00:17:44,423
+本质上，这就是他们在看的
+and essentially this is what they're looking at
+
+267
+00:17:44,423 --> 00:17:47,266
+他们可能不会画成交量分布图，实际上
+they may not draw a profile and actually
+
+268
+00:17:47,266 --> 00:17:50,109
+我可以告诉你们，他们确实在画，但
+i can tell you they do but they
+
+269
+00:17:50,109 --> 00:17:52,952
+只是用这种方式画——正态分布
+just draw it this way it's a normal
+
+270
+00:17:52,952 --> 00:18:00,416
+或者其他形状的分布，我们之后会讲正态分布和一点概率
+distribution or whatever shape the distribution comes out we will get into normal distributions and a little bit of probability and
+
+271
+00:18:00,420 --> 00:18:05,820
+高阶课程会讲统计，但别担心——很简单
+statistics in the pro course but don't worry it's not too complicated it's fairly basic stuff
+
+272
+00:18:05,820 --> 00:18:07,995
+他们到底想干嘛
+but what are they trying to
+
+273
+00:18:07,995 --> 00:18:10,895
+他们想找出公允价格
+do they're trying to figure out what's the
+
+274
+00:18:10,895 --> 00:18:13,070
+卖家愿卖的价格，买家愿买的价格
+fair price where are sellers willing
+
+275
+00:18:13,070 --> 00:18:20,320
+大家，要确定这个，他们在干这个
+to sell and where are buyers willing to buy um now to do that this is what they're doing guys
+
+276
+00:18:20,320 --> 00:18:22,698
+他们看的是——我们成交过的价位
+they're just looking at where have
+
+277
+00:18:22,698 --> 00:18:25,869
+大家，他们可没画趋势线
+we transacted guys they are not drawing a
+
+278
+00:18:25,869 --> 00:18:28,247
+在140到150之间，也没看均线
+trend line between 140 150 they're not looking
+
+279
+00:18:28,247 --> 00:18:30,625
+没看什么背离
+at some moving average they're not
+
+280
+00:18:30,625 --> 00:18:39,345
+这些都是垃圾，他们真正看的是——我们成交过的价格
+looking at some divergence and guys complete garbage what they are looking at would you agree is where have we sold milk
+
+281
+00:18:40,140 --> 00:18:42,011
+就这么简单
+simple as that guys to
+
+282
+00:18:42,011 --> 00:18:43,882
+找公允价格
+get the fair price this
+
+283
+00:18:43,882 --> 00:18:47,999
+这就是拍卖市场理论（AMT）
+is auction market theory go on youtube you'll see a lot
+
+284
+00:18:48,000 --> 00:18:49,865
+上YouTube搜，一大堆相关内容
+of stuff about this um
+
+285
+00:18:49,865 --> 00:18:51,730
+我觉得他们把理论讲复杂了
+i think they make it
+
+286
+00:18:51,730 --> 00:18:56,579
+这些年下来，你只需要知道这些
+too complicated you know over years this is all you need to know
+
+287
+00:18:56,580 --> 00:18:58,334
+书里300页都在讲这个
+300 pages they'll talk about this
+
+288
+00:18:58,334 --> 00:19:01,141
+但其实你只需理解
+stuff in a book this is basically what
+
+289
+00:19:01,141 --> 00:19:03,948
+这就是全部
+you need to understand and this is the
+
+290
+00:19:03,948 --> 00:19:06,053
+你可以把这个理论应用在这里
+extent of it is that you
+
+291
+00:19:06,053 --> 00:19:10,966
+这不是理论，因为最终
+can apply this same theory here and it's not theory because at the end
+
+292
+00:19:11,320 --> 00:19:20,040
+这就是现实，什么意思呢？在137.15有成交吗？有的
+of the day it's reality what do i mean by that have transactions taken place at 137 15 yes they have
+
+293
+00:19:20,040 --> 00:19:23,080
+137.15成交过吗？成交过
+you cannot argue with that this is and
+
+294
+00:19:23,080 --> 00:19:26,120
+这个无法争辩
+i know i keep going on about this
+
+295
+00:19:26,120 --> 00:19:28,400
+我知道我老重复这个
+but what it is i want
+
+296
+00:19:28,400 --> 00:19:35,620
+但我想让你们远离技术分析
+you to move away from technical analysis is very much about trying to predict the future and you know
+
+297
+00:19:35,620 --> 00:19:38,980
+技术分析太爱预测未来
+based on a very false perception of the
+
+298
+00:19:38,980 --> 00:19:42,340
+基于对过去的错误理解
+past here what you're doing is you're looking
+
+299
+00:19:42,340 --> 00:19:44,860
+而你们现在看的是事实
+at the facts and you're letting
+
+300
+00:19:44,860 --> 00:19:51,580
+让市场自己告诉你——公允价值在哪
+the market tell you um where the fair value is because we know for a fact
+
+301
+00:19:51,580 --> 00:19:53,620
+重点是——
+and this is the point is
+
+302
+00:19:53,620 --> 00:19:56,340
+事实摆在眼前，不需要指标来告诉我们
+facts we don't need an indicator to tell
+
+303
+00:19:56,340 --> 00:19:58,380
+今天市场一直在这个区间成交
+us that today the market has
+
+304
+00:19:58,380 --> 00:20:05,520
+大家，这就是拍卖市场理论（AMT），我之前讲过很多次
+been transacting around this area so guys anyway this is ultra market theory i know i talked a lot about it
+
+305
+00:20:05,520 --> 00:20:13,280
+但它真的非常非常重要，因为本质上
+but it's really really really important because um essentially this is what i'm doing um all the time
+
+306
+00:20:13,280 --> 00:20:15,940
+在高级课程里会更清晰
+and become more clear in the the pro
+
+307
+00:20:15,940 --> 00:20:18,600
+还有这个交易案例里也会更明确
+course and also in this trading example um
+
+308
+00:20:18,600 --> 00:20:21,260
+为什么我要这么做
+why i'm doing this and that's why it
+
+309
+00:20:21,260 --> 00:20:27,578
+所以我才花这么多时间讲这个
+was so important i spent such a long period of time going over this because i want you to
+
+310
+00:20:27,580 --> 00:20:35,840
+我们做的一切都基于事实——我才不想用
+understand all we are doing is basing stuff on facts i'm not interested in um you know using some
+
+311
+00:20:35,840 --> 00:20:40,034
+我们做的一切都基于事实
+indicator to predict something based on just information
+
+312
+00:20:40,034 --> 00:20:44,228
+指标本质上是
+what what essentially indicators are doing is they're
+
+313
+00:20:44,228 --> 00:20:47,373
+把这些事实信息拿来
+taking this information facts and they're
+
+314
+00:20:47,373 --> 00:20:50,518
+然后给它们裹上一层华丽的外衣
+creating a fluff around it essentially
+
+315
+00:20:50,520 --> 00:20:57,100
+他们在扭曲，这就是我用的词——扭曲你眼前的一切
+they are distorting it was the word i'm using they're distorting what is in front of you and
+
+316
+00:20:57,100 --> 00:21:01,900
+这简直是罪恶，所以你们看得出我不是特别喜欢这些东西
+it's just criminal really so you can tell i'm obviously not the biggest fan of that stuff but
+
+317
+00:21:01,900 --> 00:21:03,601
+我想让你们理解的是
+what is i'm trying
+
+318
+00:21:03,601 --> 00:21:06,152
+为什么
+to make you understand why um
+
+319
+00:21:06,152 --> 00:21:09,554
+拍卖市场理论本质上
+so that's ultra market theory is um essentially
+
+320
+00:21:09,554 --> 00:21:12,956
+就是
+to do with the fact that um you
+
+321
+00:21:12,956 --> 00:21:24,438
+市场上人们在交易商品，从而决定公允价格，这个逻辑可以应用到任何东西上
+know there's people transacting at prices in the market for goods which essentially determine what their fair price is okay so we can apply that to anything
+
+322
+00:21:24,440 --> 00:21:26,640
+最后我想对你们说的是
+now the last thing i want
+
+323
+00:21:26,640 --> 00:21:29,574
+我们显然能看到
+to say to you guys is um we
+
+324
+00:21:29,574 --> 00:21:32,508
+公允价格
+can obviously see here that the fair price
+
+325
+00:21:32,508 --> 00:21:34,708
+我在这里标个FP
+i'm going to put fp here
+
+326
+00:21:34,708 --> 00:21:47,178
+之前在这里，然后下移，成交量在这里堆积，可能会变成新的公允价格，我们还不知道，但我的意思是
+was here then we saw shift downwards and we saw volume building here so potentially this could become fair price we don't know that but my point is that so i want to come
+
+327
+00:21:47,180 --> 00:21:49,814
+我想回到牛奶的例子
+back to the milk example just
+
+328
+00:21:49,814 --> 00:21:53,326
+简单说一下
+very briefly i want to show you what
+
+329
+00:21:53,326 --> 00:21:56,838
+给你们看看这里发生了什么
+is going on here so we've already said
+
+330
+00:21:56,838 --> 00:21:59,472
+我们之前已经说了
+that approximately in this area is
+
+331
+00:21:59,472 --> 00:22:14,399
+这是全年牛奶市场的走势图，如果把它当成一张图表，
+the milk market for the whole year right so if we think of this as a chart of milk over time it's just doing this and you'll see this the market here is just
+
+332
+00:22:14,400 --> 00:22:16,638
+市场在国债里也会这样持续一段时间，
+doing this in treasuries for a
+
+333
+00:22:16,638 --> 00:22:18,876
+然后突然——
+little while what happened then it
+
+334
+00:22:18,876 --> 00:22:21,114
+价格急跌，接着开始
+popped down then it started doing
+
+335
+00:22:21,114 --> 00:22:23,352
+这样，你们看这里几乎
+this can you see hardly any
+
+336
+00:22:23,352 --> 00:22:34,917
+没有成交，这波行情很快，大家。这相当于牛奶市场里的什么？比如，有时会有供需侧的冲击，
+transactions took place here so this move was fast guys what's that the equivalent of in the milk market so would you agree sometimes you get uh supply side demand side
+
+337
+00:22:34,920 --> 00:22:43,500
+市场基本面变化，导致价格明显波动。
+shocks you get fundamental changes in markets um that cause prices to obviously move now in the milk
+
+338
+00:22:43,500 --> 00:22:46,219
+大家，牛奶市场里其实就是，
+market guys simply all that's happening
+
+339
+00:22:46,219 --> 00:22:48,938
+比如，奶牛
+is let's say um obviously cows
+
+340
+00:22:48,938 --> 00:22:51,657
+产奶，然后假设
+produce milk and now let's say
+
+341
+00:22:51,657 --> 00:22:54,376
+一大部分奶牛
+um that a huge portion proportion
+
+342
+00:22:54,376 --> 00:23:07,519
+患上某种疾病，这显然取决于公众的感知，
+of cows um started to develop some sort of disease um now obviously it'll be down to perception in terms of how the public perceives that to be but
+
+343
+00:23:07,520 --> 00:23:09,863
+假设公众认为
+let's say the public perceived that to be
+
+344
+00:23:09,863 --> 00:23:12,206
+这是坏事，
+a bad thing in the sense that they
+
+345
+00:23:12,206 --> 00:23:14,549
+他们开始担心喝牛奶，
+were now worried about drinking milk because they
+
+346
+00:23:14,549 --> 00:23:16,306
+因为害怕感染这种疾病，
+were worried about contracting this disease
+
+347
+00:23:16,306 --> 00:23:23,337
+假设大部分奶牛都染病了，那你们同意吗？如果人们担心，
+um that obviously the majority of the population of cows have got so would you agree then if people are worried about it and
+
+348
+00:23:23,340 --> 00:23:25,532
+他们不再认为
+they no longer see um the
+
+349
+00:23:25,532 --> 00:23:27,724
+牛奶的基本价值
+fundamental value in milk as being
+
+350
+00:23:27,724 --> 00:23:29,551
+还是150，为什么？
+at 150 why because they just
+
+351
+00:23:29,551 --> 00:23:36,493
+因为他们暂时不想要了，直到问题解决，价格就会跌，大家，比如跌到1美元。
+don't want it anymore until this situation is sorted price gonna drop guys right to let's say one dollar
+
+352
+00:23:36,860 --> 00:23:43,380
+然后市场会在那里交易一阵子，仅此而已。
+then what you'll see is market will transact there for a little bit longer and that's all that's happening
+
+353
+00:23:43,380 --> 00:23:45,462
+下方的成交量分布图会逐渐形成，
+you're getting more profile being built
+
+354
+00:23:45,462 --> 00:23:47,544
+这里也是，
+down here same thing here there
+
+355
+00:23:47,544 --> 00:23:49,626
+基本面发生了转变，某些事发生了，
+was a fundamental shift something happened
+
+356
+00:23:49,626 --> 00:23:56,219
+我不知道是什么，但价格下跌了，我之后在进阶课程里会解释，
+i don't know what it was and it moved down and i'll show you later in the pro course
+
+357
+00:23:56,220 --> 00:23:58,336
+为什么。我其实
+why um i don't really i
+
+358
+00:23:58,336 --> 00:24:00,452
+不太关注基本面，但更多是
+look at fundamentals but more just
+
+359
+00:24:00,452 --> 00:24:02,568
+出于兴趣，
+from a um interest i have
+
+360
+00:24:02,568 --> 00:24:04,684
+我想知道
+a keen interest in knowing what's
+
+361
+00:24:04,684 --> 00:24:10,679
+我会关注经济和金融工具的基本面——
+going on in the economy and in financial instruments but i don't really use it to trade
+
+362
+00:24:10,680 --> 00:24:12,717
+但不会用它来交易，
+and i'll show you why that
+
+363
+00:24:12,717 --> 00:24:15,433
+我会在高阶课程里解释原因，
+is um in particular in the pro course
+
+364
+00:24:15,433 --> 00:24:18,149
+不过为了这个例子，
+but just for the purpose of this example
+
+365
+00:24:18,149 --> 00:24:20,186
+现实情况是，
+the reality is there probably is
+
+366
+00:24:20,186 --> 00:24:28,676
+尤其是长期来看，基本面确实会推动价格变化，
+some um especially in the longer term there's some fundamental factors that are driving shifts in prices but the point is that those shifts cause
+
+367
+00:24:28,680 --> 00:24:30,815
+但关键是这些变化会形成成交量分布图的形态，
+um shapes of profiles right
+
+368
+00:24:30,815 --> 00:24:33,804
+从需求角度来看，
+in terms of the demand which we
+
+369
+00:24:33,804 --> 00:24:36,793
+我们之前已经讲过了，
+already said so we drop down to
+
+370
+00:24:36,793 --> 00:24:44,479
+价格跌到1美元，这里发生了同样的事，大家看——这是本视频最关键的部分，
+one dollar same thing happened here here is the most crucial part of this video okay guys so
+
+371
+00:24:44,480 --> 00:24:48,244
+假设所有牛都康复了，
+let's say that all the cows get healthy
+
+372
+00:24:48,244 --> 00:24:52,008
+之前那个病毒的问题
+again this um you know issue with this
+
+373
+00:24:52,008 --> 00:25:02,359
+现在解决了，大家都安全了，那你们说，大家是不是又想买牛奶了？
+virus that's um has spread is now cleared and we're giving the all clear would you agree everyone now wants milk again
+
+374
+00:25:02,360 --> 00:25:05,172
+大家，成交量分布图
+guys this is where profile to
+
+375
+00:25:05,172 --> 00:25:08,922
+在我看来是世界上最强大的工具，
+me is the most powerful tool in the
+
+376
+00:25:08,922 --> 00:25:12,672
+不仅在金融市场，
+world not only to do with financial markets
+
+377
+00:25:12,672 --> 00:25:29,079
+在任何定价、需求和供给分析中，公司、企业、交易者等等都能用，
+but in terms of any sort of um pricing demand and supply side analysis that any company corporation um trader whatever you want to call it can do in the world why is that because
+
+378
+00:25:29,080 --> 00:25:33,013
+如果所有牛都康复了，
+if all the cows get healthy what is the most
+
+379
+00:25:33,013 --> 00:25:37,339
+牛奶价格最可能回到哪个价位？
+obvious price that the price of milk is likely to gravitate
+
+380
+00:25:37,340 --> 00:25:44,420
+仔细想想，可以暂停视频，好，显然大家应该知道，
+to think about it pause the video if you have to okay well clearly guys is here isn't it
+
+381
+00:25:44,420 --> 00:25:47,700
+就是这个基准价，
+that's the benchmark back in the zone of
+
+382
+00:25:47,700 --> 00:25:50,570
+回到公允价值区域，
+fair value fair price we've been trading
+
+383
+00:25:50,570 --> 00:25:59,590
+我们之前在这里150交易了多久？去年整年，1月、2月、3月，反正病毒来之前，
+here 150 for how long the whole of last year as we said january february march blah blah blah before all this happened
+
+384
+00:26:00,000 --> 00:26:05,060
+大家，价格肯定会回到这里，这就是会发生的事，你们要理解的是，
+guys it's just going to come back here that's what's going to happen and what you need to realize
+
+385
+00:26:05,060 --> 00:26:07,202
+这正是——
+is this is exactly forget about
+
+386
+00:26:07,202 --> 00:26:10,059
+不，我是说，有时候我
+it no i mean really just sometimes i
+
+387
+00:26:10,059 --> 00:26:12,201
+真不知道该笑还是该哭，
+i don't know whether to laugh
+
+388
+00:26:12,201 --> 00:26:25,058
+看到这些指标说什么背离、趋势线，这才是真正的胡说八道，
+or cry when i see these indicators saying oh there's divergence there's the trend line and that's what's causing this complete and utter crap guys what's causing the price to move up is that the market
+
+389
+00:26:25,060 --> 00:26:29,207
+真正推动价格上涨的是，市场
+something has changed and they want to go and test
+
+390
+00:26:29,207 --> 00:26:32,524
+有什么变化了，他们想去测试
+the next fair price and see if transactions
+
+391
+00:26:32,524 --> 00:26:40,818
+成交就会发生——金融市场正是如此运作
+take place there that's exactly what happens in financial markets you'll see it as we get more into the pro
+
+392
+00:26:40,820 --> 00:26:43,885
+进入高阶课程后，我们看例子时
+course and we look at examples all the market is
+
+393
+00:26:43,885 --> 00:26:46,337
+你会发现市场不断在做一件事
+constantly doing is it's moving from one area
+
+394
+00:26:46,337 --> 00:26:53,080
+从一个公允价格区域，移动到另一个公允价格区域
+of fair price to another area of fair price think about it at the end of the day guys we're not magicians
+
+395
+00:26:53,080 --> 00:26:56,124
+大家想想，我们又不是魔术师
+right we don't know um if you're a milk manufacturer
+
+396
+00:26:56,124 --> 00:26:59,168
+假设你是牛奶生产商
+and you need to sell milk or you're a supermarket
+
+397
+00:26:59,168 --> 00:27:10,738
+然后你决定要卖牛奶，价格跌到1美元后恢复正常，你会把价格定在哪里？大家会不会
+and you decide you want to sell milk after this you know little issue happened where prices went down to one dollar everything's back to normal where are you going to put your price guys are you just
+
+398
+00:27:10,740 --> 00:27:12,848
+价格跌到1美元后恢复正常
+going to stick your finger in the air
+
+399
+00:27:12,848 --> 00:27:14,692
+你会把价格定在哪里？
+are you going to go and get
+
+400
+00:27:14,692 --> 00:27:21,279
+用移动平均线？或者用零售平台上那些乱七八糟的指标？不会的，你已经掌握了这些
+a moving average are you going to use half all the nonsense on you know your retail platform indicators no you're not you've got this
+
+401
+00:27:21,280 --> 00:27:24,831
+或者看移动平均线？
+data you're going to go back to your historical prices
+
+402
+00:27:24,831 --> 00:27:27,672
+或者用零售平台上的那些无用指标？
+that you've been selling milk at where there
+
+403
+00:27:27,672 --> 00:27:34,419
+当然不会，你会回看历史价格
+was huge demand here and you're going to use that aren't you of course you are it's obvious you're
+
+404
+00:27:34,420 --> 00:27:36,223
+找到之前需求最大的价位
+going to go back and you're going to
+
+405
+00:27:36,223 --> 00:27:39,379
+然后以这个价格卖出
+sell it to where you sold it before when things were in the same
+
+406
+00:27:39,380 --> 00:27:42,921
+因为基本面状态和之前一样
+fundamental state guys this is exactly what institutions
+
+407
+00:27:42,921 --> 00:27:46,462
+大家，机构正是这么做的
+are doing um i can tell you for
+
+408
+00:27:46,462 --> 00:27:50,003
+我可以确定地告诉你们
+a fact because obviously i've worked with algorithms
+
+409
+00:27:50,003 --> 00:28:01,957
+因为我之前和算法打过交道
+in the past guys algorithms as you've seen on the supply side are the market and i can assure you every institution every single algorithm is programmed
+
+410
+00:28:01,960 --> 00:28:06,402
+算法在供给端就是市场本身
+to read this i can assure you this is what they're reading
+
+411
+00:28:06,402 --> 00:28:10,473
+我可以保证，每个机构、每个算法
+they couldn't give a monkeys about you know a 21 day moving
+
+412
+00:28:10,473 --> 00:28:14,915
+都被编程为读取这些数据
+average or it's just garbage it doesn't mean anything if someone wants
+
+413
+00:28:14,915 --> 00:28:19,357
+他们才不会在乎21天移动平均线
+to tell me what it actually means in terms of where price
+
+414
+00:28:19,357 --> 00:28:23,428
+这些东西都是垃圾，毫无意义
+should be in terms of fundamental value please let me know
+
+415
+00:28:23,800 --> 00:28:26,912
+如果有人能告诉我
+buy my as far as i can tell
+
+416
+00:28:26,912 --> 00:28:32,359
+它和价格的基本价值有什么关系
+um it's logical that you know value is clearly where the market has been
+
+417
+00:28:32,360 --> 00:28:34,422
+请务必告诉我
+happy to trade so in the
+
+418
+00:28:34,422 --> 00:28:37,171
+就我所知，价值显然在市场乐意交易的地方
+treasury market that was here in the milk
+
+419
+00:28:37,171 --> 00:28:40,608
+国债市场如此，牛奶市场也是如此
+market that was here okay we had a fundamental shift
+
+420
+00:28:40,608 --> 00:28:43,357
+我们经历了基本面转变，然后回到了原来的位置
+then we came back we came back now
+
+421
+00:28:43,357 --> 00:28:47,137
+是啊，我同意——要是市场真这么简单就好了
+yeah i agree you know i wish markets were this simple
+
+422
+00:28:47,140 --> 00:28:51,274
+通常来说，简单的市场里
+that we always come back um generally in a simplistic
+
+423
+00:28:51,274 --> 00:28:55,408
+我们一般会回到150附近交易
+market like milk we will generally go back and trade
+
+424
+00:28:55,408 --> 00:28:59,128
+或者继续围绕150波动——因为
+or continue to trade around 150 again um because as
+
+425
+00:28:59,128 --> 00:29:03,262
+你也知道，影响因素很多
+you know there's only several factors small factors large factors
+
+426
+00:29:03,262 --> 00:29:14,424
+小因素、大因素都有，金融市场显然会变得非常复杂，公允价值也会永久性转移
+but individual factors things like financial markets can obviously become very complicated and there's so many factors that we do see shifts permanent shifts in fair value
+
+427
+00:29:14,840 --> 00:29:19,700
+所以等价的情况比如——
+so the equivalent of that would be um you know for example
+
+428
+00:29:19,700 --> 00:29:24,560
+假设市场在这里交易，突然
+if market was trading here and i don't for whatever reason obviously
+
+429
+00:29:24,560 --> 00:29:29,420
+现在挤奶都是机械化操作
+nowadays um it's all done mechanically where we extract the milk from
+
+430
+00:29:29,420 --> 00:29:34,280
+以前是手工的，但假设
+cows before it was done manually but let's say for whatever reason
+
+431
+00:29:34,280 --> 00:29:42,380
+生产挤奶机的原材料突然稀缺了，再也买不到了
+the materials required to create the machines that extract milk manually from cows became scarce you couldn't get them anymore
+
+432
+00:29:42,380 --> 00:29:46,700
+只能回到手工挤奶
+and you had to go back to doing this process manually obviously
+
+433
+00:29:46,700 --> 00:29:51,020
+生产成本肯定大幅上升
+to produce milk is going to become very expensive so would you
+
+434
+00:29:51,020 --> 00:29:55,340
+那你同意价格会涨到2美元吗？
+agree the price going to shoot up to let's say two dollars
+
+435
+00:29:55,340 --> 00:30:03,980
+成交量分布图上会显示——价值区域会在这里形成，稀缺后你们同意吗？
+again you'll see this on the profile where the profile will build you know value here would you agree guys once it's become scarce
+
+436
+00:30:03,980 --> 00:30:06,991
+而且这种原材料再也回不来了
+and you can never get that material back that's it
+
+437
+00:30:06,991 --> 00:30:09,099
+价格就不会回到150了
+the price isn't coming back to 150 that's
+
+438
+00:30:09,099 --> 00:30:13,917
+这会成为新常态——金融市场一直在发生这样的事
+going to become the new normal that's all that's happening in financial markets all the time
+
+439
+00:30:14,220 --> 00:30:17,065
+价格会转移
+um is prices will shift so
+
+440
+00:30:17,065 --> 00:30:24,179
+这就是拍卖市场理论（AMT），我知道我解释得有点长
+that's basically auction market theory i know i took a long time to explain it
+
+441
+00:30:24,180 --> 00:30:26,405
+但这真的非常重要
+but it's very very important that's why i
+
+442
+00:30:26,405 --> 00:30:28,074
+所以我想让你们理解
+want you to understand it um
+
+443
+00:30:28,074 --> 00:30:30,299
+那我该怎么用它来交易？
+now how do i use to trade it
+
+444
+00:30:30,300 --> 00:30:34,183
+这就是我必须花时间让你们理解的原因
+that was really why i needed to spend time for you to
+
+445
+00:30:34,183 --> 00:30:38,066
+因为我不希望你们认为
+understand because what it is is i didn't want you to think
+
+446
+00:30:38,066 --> 00:30:41,949
+‘哦，讲师说市场到这个区域
+of this as oh envy's told us when the market gets to
+
+447
+00:30:41,949 --> 00:30:51,658
+我就得做点什么’——到那里我就得操作，大家，这就是很多人失败的原因
+this area i've got to do something when it gets to this area i've got to do guys that's how you know where people fail is just being sold all
+
+448
+00:30:51,660 --> 00:30:56,920
+被灌输了一堆垃圾，什么系统让你做这个做那个，忘掉这些！我要你们独立思考
+this crap like systems do this do that forget that i want you to critically think for yourself
+
+449
+00:30:56,920 --> 00:31:00,668
+好，这是个好交易点
+that okay this is a great place to trade because
+
+450
+00:31:00,668 --> 00:31:04,416
+因为这是公允价值——或者因为这不是公允价值
+it's fair value because it isn't fair value or because
+
+451
+00:31:04,416 --> 00:31:11,538
+哦，我懂了——这就是市场想要达到的，而且清楚地展示给我了
+ah i get it this is what the market is trying to achieve and it's clearly shown me that
+
+452
+00:31:11,540 --> 00:31:16,422
+那我来给你们看看我的意思，基本上
+so let me show you what i mean so basically
+
+453
+00:31:16,422 --> 00:31:20,327
+现在我们知道，你们同意吗，这
+now we know would you agree that that's
+
+454
+00:31:20,327 --> 00:31:28,138
+是公允价值——这里还在积累价值，所以如果我们有个图表
+fair value there's also some value being built down here so if we had a chart
+
+455
+00:31:28,140 --> 00:31:33,060
+图表会这样走，然后下来，再这样走
+chart is going to go like that and you're going to come down and it's going to go like that
+
+456
+00:31:33,060 --> 00:31:34,862
+你们能理解为什么机构在
+can you see why in institutions in
+
+457
+00:31:34,862 --> 00:31:36,664
+第一年甚至不让
+the first year they don't even want
+
+458
+00:31:36,664 --> 00:31:38,209
+你们看图表吗？
+you to look at a chart
+
+459
+00:31:38,209 --> 00:31:43,617
+因为大家，你们需要的信息都在这里，不需要图表，别误会，我
+because well guys all the information you need is here you don't need a chart now don't get me wrong i've
+
+460
+00:31:43,620 --> 00:31:45,090
+当然已经不再只用这个了
+obviously moved away from this
+
+461
+00:31:45,090 --> 00:31:47,148
+对，我也不希望你们
+and yep i don't want you to
+
+462
+00:31:47,148 --> 00:31:49,206
+基于这个交易，这里面有原因
+trade on this um and there's reasons
+
+463
+00:31:49,206 --> 00:31:55,380
+我们还是要看图表，因为不吓你们的话，这是成交量分布图，将来大家
+why we do want to chart because without trying to scare you this is profile on what one day guys you
+
+464
+00:31:55,380 --> 00:31:57,548
+可以构建一周的分布图
+can build profiles for a week you
+
+465
+00:31:57,548 --> 00:31:59,716
+可以构建数天的分布图
+can build profiles for several days you
+
+466
+00:31:59,716 --> 00:32:01,574
+可以构建一个月的分布图
+can build profile for a month
+
+467
+00:32:01,574 --> 00:32:06,839
+一个季度，一年，我也在做，我学会了在多个时间框架上分析分布图
+uh a quarter one year i'm doing that i've learned to bring profile analysis over many many
+
+468
+00:32:06,840 --> 00:32:09,057
+同时还要看，抱歉
+time frame also looking at excuse me
+
+469
+00:32:09,057 --> 00:32:11,274
+成交量加权平均价，本质上
+the vwap the vwap is essentially the
+
+470
+00:32:11,274 --> 00:32:13,175
+成交量加权平均价就是日内动态的成交量分布图
+profile but on a dynamic intraday
+
+471
+00:32:13,175 --> 00:32:18,878
+这会让你们很困惑，先别深入这个
+basis so look this is going to confuse you so a lot so let's not get into that
+
+472
+00:32:18,880 --> 00:32:21,110
+现在假设这
+now let's just imagine this was the
+
+473
+00:32:21,110 --> 00:32:23,658
+是目前唯一存在的分布图，那你们
+only profile that existed for now so you
+
+474
+00:32:23,658 --> 00:32:25,250
+能看出仅通过分布图
+can see why just by
+
+475
+00:32:25,250 --> 00:32:32,258
+就能感受到图表的位置了，那怎么交易呢？
+looking at profile you get a feel for where the chart is um now how do you trade this so the reason
+
+476
+00:32:32,260 --> 00:32:34,772
+我必须反复强调这个点
+i had to hammer home the point
+
+477
+00:32:34,772 --> 00:32:37,284
+我知道听我讲这个
+and i know it's probably incredibly boring
+
+478
+00:32:37,284 --> 00:32:39,437
+可能特别无聊
+listening to me talk at you
+
+479
+00:32:39,437 --> 00:32:46,257
+但大家，重点在这里——你们同意公允价值吗？
+um about fair value is because guys the point is here would you agree fair value there's no edge
+
+480
+00:32:46,260 --> 00:32:48,457
+如果牛奶的价格是1.5美元
+if the price of milk is $1.50
+
+481
+00:32:48,457 --> 00:32:51,020
+这价格公平，你同意吗？如果
+and that's fair would you agree if
+
+482
+00:32:51,020 --> 00:32:53,217
+你想从牛奶上赚钱，
+you're trying to make profit on
+
+483
+00:32:53,217 --> 00:33:00,540
+你会走进商店花1.5美元买牛奶吗？然后你要卖多少钱？1.5美元？大家
+milk you're going to walk into a shop and pay $1.50 because what are you going to sell it for $1.50 guys
+
+484
+00:33:01,640 --> 00:33:05,019
+这就是市场的公允价值，
+that's the market is fair value there's
+
+485
+00:33:05,019 --> 00:33:08,398
+这里面没有利润空间，所以我
+no edge there so i when i
+
+486
+00:33:08,398 --> 00:33:11,294
+之前在盘口交易时，
+was trading historically on the depth
+
+487
+00:33:11,294 --> 00:33:19,018
+并不特别想在这个区域交易
+of market i would not be interested in um necessarily you know trading in this area
+
+488
+00:33:19,020 --> 00:33:22,103
+因为我不知道
+because i don't know um in which
+
+489
+00:33:22,103 --> 00:33:25,627
+价格显然会往哪个方向走，我
+direction obviously the price could go what i
+
+490
+00:33:25,627 --> 00:33:27,829
+更感兴趣的是
+would be more interested in
+
+491
+00:33:27,829 --> 00:33:34,877
+在远离公允价值的地方交易——因为这样我才有
+trading at is either if prices away from fair value right because then i have a
+
+492
+00:33:34,880 --> 00:33:37,944
+获利机会，想想看，如果
+profit opportunity think about it if the
+
+493
+00:33:37,944 --> 00:33:41,008
+市场开始下跌，我知道
+market starts to go down i know
+
+494
+00:33:41,008 --> 00:33:43,634
+它可能会跌到1美元，
+what well it might be heading
+
+495
+00:33:43,634 --> 00:33:51,951
+这里的情况一样，这叫做价值区域，
+to $1 so same way here now this is called a value area the value area the reason it's called
+
+496
+00:33:52,390 --> 00:33:54,220
+之所以叫这个名字，
+that is because it's one standard deviation
+
+497
+00:33:54,220 --> 00:33:56,050
+是因为它在正态分布中是一个标准差，
+on a normal distribution but we're going
+
+498
+00:33:56,050 --> 00:33:57,619
+但我们会在进阶课程里详细讲，
+to talk about that in the
+
+499
+00:33:57,619 --> 00:34:02,588
+现在你们只需记住，记得我之前说的吗，
+pro course but all you need to remember is do you remember how i said and you know this
+
+500
+00:34:02,590 --> 00:34:04,400
+大家，别光听我的，
+guys don't take my word for it
+
+501
+00:34:04,400 --> 00:34:06,210
+自己去城里看看牛奶的价格，
+go walk into town and see what
+
+502
+00:34:06,210 --> 00:34:07,762
+它不会完全一样，
+the price of milk is it's
+
+503
+00:34:07,762 --> 00:34:13,711
+会上下浮动5到10美分，对吧？所以这是一个近似区域
+not going to be identical it's going to vary by 5 10 cents isn't it up or down so this is a very approximate area
+
+504
+00:34:14,230 --> 00:34:17,049
+仅此而已，它只是告诉我们
+that's all this is it's just telling
+
+505
+00:34:17,049 --> 00:34:19,868
+市场对价格达成了共识，
+us yes the market agrees on price
+
+506
+00:34:19,868 --> 00:34:22,284
+但大家，不幸的是，生活没那么简单，
+but guys unfortunately you life isn't
+
+507
+00:34:22,284 --> 00:34:28,728
+不是所有人都同意，我们是人，不会对单一价格达成一致，你也能看到
+that simple not everyone we're humans we don't agree on an individual price and you see
+
+508
+00:34:28,730 --> 00:34:31,240
+这个，比如在英镑/美元上，
+this you know in pound dollar for
+
+509
+00:34:31,240 --> 00:34:33,750
+你可能看到市场
+example you might see the the market
+
+510
+00:34:33,750 --> 00:34:35,901
+在上下波动
+just ranging up and down up
+
+511
+00:34:35,901 --> 00:34:42,355
+然后跌到130、131、130，大家——这可有100个点呢，一天下来波动挺大的
+and down like 130 131 130 guys that's 100 pips you know end of the day that's quite a wide range and
+
+512
+00:34:43,790 --> 00:34:45,982
+这就是市场在做的事，
+that's what the market is doing is
+
+513
+00:34:45,982 --> 00:34:48,174
+它在寻找一个让它舒服的价格区间，
+it is kind of finding a range
+
+514
+00:34:48,174 --> 00:34:55,689
+但关键是，它不在这里，也不在那里，就在这里，
+of prices where it's happy but the point is it's not this area and it's not this area it's this area same as here
+
+515
+00:34:55,690 --> 00:34:57,072
+大概140到160之间，对吧？
+kind of 140 to 160 right
+
+516
+00:34:57,072 --> 00:34:59,145
+这是市场觉得舒服的区间，
+that's where the market's happy with
+
+517
+00:34:59,145 --> 00:35:01,909
+所以重点来了，
+milk so here's the key this is what
+
+518
+00:35:01,909 --> 00:35:07,437
+我现在分析的是这些成交稀少的区域，
+i'm doing so these areas where there's very little transactions taking place which you see here
+
+519
+00:35:08,130 --> 00:35:13,230
+大家看，价格下跌时这里没人买，
+no one bought milk as it was coming down they just started transacting again in this area
+
+520
+00:35:13,230 --> 00:35:21,690
+那里就是疯狂抛售，价格直接暴跌，你们看，涨跌特别快
+here was just you know crazy selling going on there just shot down so you can see it moved fast
+
+521
+00:35:21,690 --> 00:35:24,219
+因为这些区域没人接盘，
+in this area because no one was there
+
+522
+00:35:24,219 --> 00:35:26,748
+买盘上没有流动性，
+to stop it there were no one on
+
+523
+00:35:26,748 --> 00:35:29,277
+虽然有，但非常薄，
+the bids there was but it was very
+
+524
+00:35:29,277 --> 00:35:34,968
+流动性很薄，就是激进抛售，发生得太快了，你们看——
+thin so it was just aggressive selling and it happened so quickly that do you see there wasn't
+
+525
+00:35:34,970 --> 00:35:36,713
+大家看，这里没有双向交易，
+two-way transaction guys going on
+
+526
+00:35:36,713 --> 00:35:39,154
+而在这里有双向交易，
+whereas here there's two-way transaction and that's
+
+527
+00:35:39,154 --> 00:35:41,944
+这就是为什么这里会形成成交量分布图，
+why you're building the profile here and then
+
+528
+00:35:41,944 --> 00:35:46,129
+然后这里还有一个高峰，
+obviously here you had the bulge which you see here as well
+
+529
+00:35:46,130 --> 00:35:48,542
+抱歉，
+so my point is sorry
+
+530
+00:35:48,542 --> 00:35:51,919
+我的意思是，
+about that the point my point is
+
+531
+00:35:51,919 --> 00:35:55,779
+我的交易机会不在公允价值区，
+that um the profiting opportunity is for me
+
+532
+00:35:55,779 --> 00:36:05,429
+而是在远离公允价值的两侧，
+is not where fair value is but it's moving away from fair value either side okay so i'm looking for
+
+533
+00:36:05,430 --> 00:36:08,615
+我寻找的是突破这个区域的交易，
+trades that are breaking out of this
+
+534
+00:36:08,615 --> 00:36:11,800
+或者突破那个区域的交易，
+zone or out of this zone why
+
+535
+00:36:11,800 --> 00:36:14,530
+目标很清晰，大家，
+clear target area right guys to
+
+536
+00:36:14,530 --> 00:36:23,630
+指向市场曾显示过的下一个公允价格区域，
+the next area where the market has shown me that that is fair price guys no indicator doing some ridiculous
+
+537
+00:36:23,630 --> 00:36:26,195
+不用指标做些莫名其妙的预测，
+prediction um you know based on
+
+538
+00:36:26,195 --> 00:36:29,616
+比如基于一些随机的百分比或数字，
+some random percentages or numbers i mean come
+
+539
+00:36:29,616 --> 00:36:31,754
+比如21天均线，
+on 21 day you know average
+
+540
+00:36:31,754 --> 00:36:37,313
+21是什么？难道是有人掷骰子决定的？
+or whatever what's 21 guys if someone just literally you know rolled a dice
+
+541
+00:36:38,170 --> 00:36:40,462
+然后决定掷三次或四次骰子
+and decided that three rolls or four rolls
+
+542
+00:36:40,462 --> 00:36:42,467
+总和等于21
+of the dice adds up to 21 so
+
+543
+00:36:42,467 --> 00:36:44,759
+大家，这简直太荒谬了
+let me that is literally how ridiculous that
+
+544
+00:36:44,759 --> 00:36:50,202
+这就是市场告诉我的，别光听我讲
+stuff is this is what the market has told me and look guys don't take my word for it
+
+545
+00:36:50,490 --> 00:36:53,512
+打开你的市场深度图看看
+it's there on your depth of market open
+
+546
+00:36:53,512 --> 00:36:56,534
+打开市场深度，看看交易发生在哪
+up your depth of market and look where
+
+547
+00:36:56,534 --> 00:36:59,556
+成交都集中在这个区域
+has transactions taken place is taken place in
+
+548
+00:36:59,556 --> 00:37:04,089
+抱歉，这里有点乱，所以这成了我的目标
+this area sorry it's getting incredibly messy here so that becomes my
+
+549
+00:37:04,090 --> 00:37:11,970
+我想知道市场之前在哪里交易过大量成交
+target right i want to know where's the market previously traded um you know decent volume at
+
+550
+00:37:11,970 --> 00:37:14,816
+所以我做的还是
+so what i'm doing is again
+
+551
+00:37:14,816 --> 00:37:18,611
+两件事，第一
+to so two things one is i'm looking
+
+552
+00:37:18,611 --> 00:37:21,457
+我寻找价格脱离价值区的突破
+for a break away from value
+
+553
+00:37:21,457 --> 00:37:32,368
+好的，我们现在往这个方向走，我会尝试把目标定在这个区域
+okay so we're going this way and i'm going to try and target this area or guys this is much more of a
+
+554
+00:37:32,370 --> 00:37:34,672
+大家，这更像是
+how do i say a nimble trade these
+
+555
+00:37:34,672 --> 00:37:36,974
+一种灵活的交易
+are more like trend trades right and not
+
+556
+00:37:36,974 --> 00:37:39,276
+这些更像趋势交易
+i hate to use the word trend trading
+
+557
+00:37:39,276 --> 00:37:44,168
+我不喜欢‘趋势交易’这个词
+i mean it really gets under my skin a little bit because it's just complete garbage what
+
+558
+00:37:44,170 --> 00:37:46,327
+我是说，我每次听到这个词
+you see about you know i keep saying
+
+559
+00:37:46,327 --> 00:37:48,484
+就觉得特别烦
+it but you see all this stuff that
+
+560
+00:37:48,484 --> 00:37:50,641
+因为大家讨论的趋势交易根本不是趋势交易
+people talk about trend trade it isn't trend
+
+561
+00:37:50,641 --> 00:37:54,687
+大家，市场的运作和牛奶市场、巧克力市场一样
+trading guys what the market is doing is exactly what the milk market is doing
+
+562
+00:37:54,690 --> 00:37:58,253
+当基本面发生转变时
+or the chocolate bar market is doing when
+
+563
+00:37:58,253 --> 00:38:01,816
+它会寻找下一个公平价值区域
+there's a fundamental shift it's looking for the
+
+564
+00:38:01,816 --> 00:38:05,379
+市场是拍卖机器
+next area of fair value the market is
+
+565
+00:38:05,379 --> 00:38:11,169
+它总在寻找人们达成供需共识的区域
+an auction machine guys it's always looking for an area where people agree
+
+566
+00:38:11,170 --> 00:38:14,632
+这完全就是基础经济学
+on supply and demand it's literally basic economics
+
+567
+00:38:14,632 --> 00:38:17,661
+大家，经济学101
+guys 101 you know where you've got the
+
+568
+00:38:17,661 --> 00:38:19,392
+供给和需求曲线
+supply and demand curves
+
+569
+00:38:19,392 --> 00:38:27,615
+等等等等，我好像在价格方面做过一个小视频，还有
+etc etc and i think i did a little video on this in terms of price and then obviously
+
+570
+00:38:28,050 --> 00:38:34,870
+我之前可能做过一个关于价格和数量的小视频
+quantity so that's your demand curve and that's your supply curve it's just where it meets and don't if
+
+571
+00:38:34,870 --> 00:38:36,790
+这看起来没意思，你不用
+this doesn't make sense you don't
+
+572
+00:38:36,790 --> 00:38:39,030
+担心，不过有些人学过
+worry but obviously some of you've done
+
+573
+00:38:39,030 --> 00:38:41,270
+经济学，会理解市场其实
+economics you'll understand that this is all
+
+574
+00:38:41,270 --> 00:38:42,870
+在寻找供需区域
+the market's really doing is
+
+575
+00:38:42,870 --> 00:38:46,070
+再强调一次，大家
+it's looking for areas of supply and demand and again
+
+576
+00:38:46,070 --> 00:38:47,715
+我刚画的图不用在意
+i want to reiterate guys
+
+577
+00:38:47,715 --> 00:38:50,018
+我突然发现可能
+whatever i just drew there don't worry
+
+578
+00:38:50,018 --> 00:38:52,650
+刚才我突然意识到，可能
+about it um i've just realized i've probably
+
+579
+00:38:52,650 --> 00:38:55,282
+画在我脑袋后面了，因为
+drawn it behind my head because on the
+
+580
+00:38:55,282 --> 00:38:57,585
+我看不到自己在屏幕上
+uh i can't actually see myself on
+
+581
+00:38:57,585 --> 00:38:59,888
+但我觉得我在这小方框里
+this screen but i think i'm in
+
+582
+00:38:59,888 --> 00:39:02,520
+所以我会用手画
+this little quarter here so i'll probably draw
+
+583
+00:39:02,520 --> 00:39:04,823
+忽略那个吧
+it by my hand so ignore that
+
+584
+00:39:04,823 --> 00:39:07,455
+只是给学过经济学的人看的
+anyway it was just for those that might
+
+585
+00:39:07,455 --> 00:39:18,644
+你可能熟悉经济学，但其实一点都不重要——只要你理解这个简单的概念：市场已经告诉我们，价格在这个区域交易过
+be familiar with economics but essentially um it's not important at all as long as you understand this um very basic concept that the market has shown us that it's traded in this area
+
+586
+00:39:18,650 --> 00:39:20,729
+这个简单概念：市场在这里交易过
+and i'm looking for it
+
+587
+00:39:20,729 --> 00:39:23,640
+我等它往下走
+to move down um or in this
+
+588
+00:39:23,640 --> 00:39:26,967
+或者像这次，灵活交易
+instance the nimble trade which is go back
+
+589
+00:39:26,967 --> 00:39:34,869
+回到公允价值，只要偏离就行
+to fair value whenever it moves a little bit out okay so once i've identified this area the value
+
+590
+00:39:34,870 --> 00:39:36,327
+一旦确定价值区域
+area i'm either looking as
+
+591
+00:39:36,327 --> 00:39:38,367
+我就等它离开
+soon as we get out of it
+
+592
+00:39:38,367 --> 00:39:40,698
+想，哦，价格跳出去了
+i'm thinking oh the market's just popped out
+
+593
+00:39:40,698 --> 00:39:42,446
+比如奶粉现在140、135
+milk is at 140 135 it should be
+
+594
+00:39:42,446 --> 00:39:44,486
+应该在150，我要拉回去
+at 150 let me take it back take
+
+595
+00:39:44,486 --> 00:39:46,817
+如果它涨到刚好
+it back and if it goes just above
+
+596
+00:39:46,817 --> 00:39:48,565
+比如165、110，哇，奶粉
+so if it goes 165 110 oh milk's
+
+597
+00:39:48,565 --> 00:39:50,896
+有点高，这不对
+a bit high there that doesn't make sense
+
+598
+00:39:50,896 --> 00:39:59,056
+应该在150，我要把它拉回价值区域，怎么知道？我在这里寻找成交，寻找成交
+it should be at 150 so i'll take it back into the value area how do i know this well i'm looking for action here i'm looking for action
+
+599
+00:40:00,810 --> 00:40:06,390
+怎么判断？我要看这里的动作
+here market orders absorption that's what i'm going to show you in this example to help me decide
+
+600
+00:40:06,390 --> 00:40:08,001
+看市价单吸收，这个例子会展示
+obviously if i don't see
+
+601
+00:40:08,001 --> 00:40:10,257
+如果没有多头试图阻止
+any um buyers trying to stop the
+
+602
+00:40:10,257 --> 00:40:12,835
+价格下跌的走势
+market as it pops down then i know
+
+603
+00:40:12,835 --> 00:40:15,413
+那我就知道——得往下打
+okay i need to be taking it down
+
+604
+00:40:15,413 --> 00:40:17,991
+要是看到大量支撑出现
+if i see a lot of support coming
+
+605
+00:40:17,991 --> 00:40:20,569
+不是那种支撑线之类的
+in not support like lines and all that
+
+606
+00:40:20,569 --> 00:40:33,785
+我指的是吸收或市价单买盘的支撑，大家，那我就有机会把它拉回公允价值，记住这两点
+stuff i mean support in terms of absorption or market orders buying then i know guys i've got a good chance to play this back in to fair value so those are the two things make a note of them okay
+
+607
+00:40:33,790 --> 00:40:36,364
+要么
+we either um i'm just
+
+608
+00:40:36,364 --> 00:40:39,968
+我就把它拉回价值区
+going to write it down back to
+
+609
+00:40:39,968 --> 00:40:44,087
+要么远离价值区
+value or away from value what the industry
+
+610
+00:40:44,087 --> 00:40:48,206
+行业里居然把这第二种情况
+has somehow managed to do is call this
+
+611
+00:40:48,206 --> 00:40:52,325
+叫做趋势交易
+second bit trend trading when it isn't complete
+
+612
+00:40:52,325 --> 00:40:56,444
+我们把这个词从词汇里删了吧
+let's try and delete that from the vocabulary
+
+613
+00:40:56,444 --> 00:41:00,563
+因为我们现在知道
+because we've just learned now that it's actually
+
+614
+00:41:00,563 --> 00:41:04,682
+其实只是在向下一个公允价值移动
+just moving to the next level of fair
+
+615
+00:41:04,682 --> 00:41:08,801
+行业里把这叫做区间交易
+value all this is the industry has decided
+
+616
+00:41:08,801 --> 00:41:21,158
+其实也不对，它只是在公允价值的边缘操作
+to call this a range trading well actually isn't all it's actually doing is playing the edges of fair value okay so once we've
+
+617
+00:41:21,160 --> 00:41:22,684
+一旦确定了公允价值
+established fair value we're either
+
+618
+00:41:22,684 --> 00:41:24,818
+我们要么在边缘反弹
+playing the edges back or if we
+
+619
+00:41:24,818 --> 00:41:27,257
+要么如果认为会突破价值区
+want if we think it's going to break
+
+620
+00:41:27,257 --> 00:41:33,659
+就去下一个价值区，大家，我知道刚才讲得有点长
+out of value we're going to the next value all right guys i know that was very very long and i
+
+621
+00:41:33,660 --> 00:41:35,103
+抱歉
+apologize but i hope that
+
+622
+00:41:35,103 --> 00:41:37,124
+但希望
+um that's added some value to you
+
+623
+00:41:37,124 --> 00:41:39,434
+没白费口舌
+no pun intended um so i'm going to
+
+624
+00:41:39,434 --> 00:41:45,498
+现在我要放例子了，可能会单独做个视频
+play the example now i'll probably do it on a separate video just to give you a bit of a break
+
+625
+00:41:45,500 --> 00:41:47,034
+让你们消化一下
+and let this digest um
+
+626
+00:41:47,034 --> 00:41:49,181
+先给你们打个预防针
+just to give you a heads up
+
+627
+00:41:49,181 --> 00:41:51,635
+我在交易例子里实际在做什么
+what i'm actually doing in the trading example
+
+628
+00:41:51,635 --> 00:41:57,158
+我会边操作边给你们解释——
+基本上就是在入场做一笔交易
+um and i will explain it as i'm doing it as well is we're basically taking a trade
+
+629
+00:41:57,160 --> 00:41:59,237
+我在模拟器里做的是
+so what i did on
+
+630
+00:41:59,237 --> 00:42:02,145
+我正在
+the simulator is um i'm taking so
+
+631
+00:42:02,145 --> 00:42:06,299
+显然大家都在日内高低点做突破交易
+i didn't what it is is at the obviously people
+
+632
+00:42:06,300 --> 00:42:09,695
+对吧
+are playing breakouts right at the highs and lows of days so
+
+633
+00:42:09,695 --> 00:42:13,090
+比如我记得的那个例子里，附近有个成交量分布图
+on the example if i remember correctly there's a profile near the
+
+634
+00:42:13,090 --> 00:42:16,485
+其实就在这一天的高点附近
+and it's actually near the high of the day but let's say
+
+635
+00:42:16,485 --> 00:42:19,880
+但假设是低点吧，我知道那里大概是公允价格
+it was the low of the day so i know approximately that's
+
+636
+00:42:19,880 --> 00:42:29,499
+如果价格跌到日内低点，你们同意吗？我之前跟你们说，我只做两件事
+fair price there so if the price is say it comes down to the low of the day would you agree as i said to you before i'm playing doing two things that's all
+
+637
+00:42:29,500 --> 00:42:32,842
+要么回归价值区
+i'm ever doing i'm taking it back to value right
+
+638
+00:42:32,842 --> 00:42:36,184
+回到这个区域，要么远离价值区
+back to this area or what away from value but
+
+639
+00:42:36,184 --> 00:42:39,526
+但重点是，你们有没有发现
+the point is here do you see we don't see
+
+640
+00:42:39,526 --> 00:42:49,218
+看不到其他价值区了？大家，这就是图表的作用，我现在用图表的原因
+any other value well guys this is where charts and this why i've evolved into using charts now is there'll be a profile for the previous day previous month
+
+641
+00:42:49,220 --> 00:42:52,672
+因为前一天、前一个月都会有成交量分布图
+so i use those areas to trade into okay now
+
+642
+00:42:52,672 --> 00:42:56,124
+我用这些区域来交易，对吧
+the point is for the example i show you i
+
+643
+00:42:56,124 --> 00:42:59,576
+但举的例子里，我其实不会做价值区的突破
+don't actually take a breakout of value because the alternative
+
+644
+00:42:59,576 --> 00:43:03,028
+因为另一种情况是价格回到下一个价值区
+is prices here i go back into the next value
+
+645
+00:43:03,028 --> 00:43:08,897
+对，和这个例子很像
+right it's very similar to this example here but what i'm actually doing is i'm playing them
+
+646
+00:43:08,900 --> 00:43:12,319
+但我其实是在做均值回归交易
+a mean reversion trade essentially is the word for it
+
+647
+00:43:12,319 --> 00:43:15,738
+不过是在高位做
+um but i'm doing it on the top but essentially
+
+648
+00:43:15,738 --> 00:43:19,157
+本质是一样的
+it's the same thing so what i'll be doing is
+
+649
+00:43:19,157 --> 00:43:22,576
+价值区在那里，市场缓慢下跌
+values there the market's creeping down and i see um
+
+650
+00:43:22,576 --> 00:43:36,937
+我看到盘口动向，让我相信有人想反向操作，明显目标是回到价值区
+you know action on the depth of market that leads me to believe that people want to fade it where's the obvious target for it to go back to back to value so that's the trade i'm taking but from the top
+
+651
+00:43:36,940 --> 00:43:39,902
+所以我就是从高位回价值区做这笔交易
+back into value all right guys hope that was uh
+
+652
+00:43:39,902 --> 00:43:42,864
+好，大家希望这部分
+good and um yeah i'll see you shortly on the
+
+653
+00:43:42,864 --> 00:43:45,826
+下个视频见，我会演示操作，拜拜大家
+next video where i'm playing this out cheers guys guys
+
+654
+00:43:45,826 --> 00:43:48,788
+抱歉，得补上这一段
+sorry you just needed to add this bit on as
+
+655
+00:43:48,788 --> 00:43:51,750
+要是还没听够我的声音的话
+if you hadn't heard enough of my voice but the
+
+656
+00:43:51,750 --> 00:44:02,118
+我之前跟你们说的，这些都能在图表上看到，价格下来后就在这里
+point was where i said to you before you've got you can see this on a chart like this then it comes down and you've got it there right guys i completely forgot to tell
+
+657
+00:44:02,120 --> 00:44:05,662
+我完全忘了告诉你们，下一张幻灯片有这个
+you that i've actually got this on the next slide
+
+658
+00:44:05,662 --> 00:44:09,204
+看到了吗？本质就是这样
+so can you see it that's essentially what it is
+
+659
+00:44:09,204 --> 00:44:12,746
+市场刚从这里跌下来
+it's the market's just come down this bit is that
+
+660
+00:44:12,746 --> 00:44:21,957
+这是公允价值，和牛奶例子里说的一样，然后又跌回来，这个区域又在积累价值
+fair value right like we said with the milk example then it comes back down and you've got more value being built here in this region
+
+661
+00:44:21,960 --> 00:44:26,724
+本质上这就是市场和算法在做的事——
+and essentially that is all that i'm doing markets doing algorithms are doing is they're
+
+662
+00:44:26,724 --> 00:44:31,488
+它们在寻找线索：我们会突破这个价值区域吗？
+looking for any clues are we going to you know bust out of this value
+
+663
+00:44:31,488 --> 00:44:36,252
+还是会掉头？如果刚冲出来，
+where are we going to go there are we going to turn around if we've
+
+664
+00:44:36,252 --> 00:44:48,639
+会回到哪里？大家，整个市场每天都在问：突破还是回归？
+just popped out where are we going to go back here so all the market is doing all day long guys are we going to bust out of here or are we going to return here so that's returning
+
+665
+00:44:48,640 --> 00:44:52,667
+回归价值区，这就是突破价值区，
+to value and this is breaking out of value we're going to go into this
+
+666
+00:44:52,667 --> 00:44:56,694
+高阶课程里会深入讲，
+in the pro course a lot more because obviously i'll be doing this on charts
+
+667
+00:44:56,694 --> 00:45:04,479
+会给这些情况命名，但本质就是两种：回归或突破价值区
+um and we'll give these things names but essentially it's just one or the other you're either going back into value or you're looking for a move out of
+
+668
+00:45:04,480 --> 00:45:07,006
+然后在这里，我会寻找
+value and then obviously down here i'll be looking for
+
+669
+00:45:07,006 --> 00:45:09,532
+前一天的价值区，
+a previous day if i could find any sort of
+
+670
+00:45:09,532 --> 00:45:14,838
+只是想给你们看看图表上的样子，
+value so i just wanted to show you how it looks on a chart um you know you can do this
+
+671
+00:45:14,840 --> 00:45:17,359
+你们自己也能操作，但你能理解
+yourself but you can probably see why in
+
+672
+00:45:17,359 --> 00:45:19,878
+为什么专业机构会对新手说：
+professional firms they just say to new traders
+
+673
+00:45:19,878 --> 00:45:22,712
+‘第一年，大家，你不需要看图表，
+for the first year look guys you don't need
+
+674
+00:45:22,712 --> 00:45:25,231
+只交易成交量分布图就行’
+a chart just trade the profile that's all
+
+675
+00:45:25,231 --> 00:45:32,159
+这就是专业机构的做法：看分布图，突破后
+they're doing this is exactly what they're doing in professional firms is they're just saying look there's the profile if it breaks
+
+676
+00:45:32,160 --> 00:45:34,080
+要么回踩交易，
+out you either trade it back or
+
+677
+00:45:34,080 --> 00:45:36,000
+要么进入下一个区域
+you go to the next area if
+
+678
+00:45:36,000 --> 00:45:37,646
+突破后，要么回踩交易，
+it breaks out you either trade
+
+679
+00:45:37,646 --> 00:45:43,957
+要么进入下一个区域，大家，关键区域就是公允价值区，
+it back or you go to the next area all right guys so those are the crucial areas is fair value and then
+
+680
+00:45:43,960 --> 00:45:45,995
+然后这些薄弱区域，
+obviously these thin areas are the ones where
+
+681
+00:45:45,995 --> 00:45:47,776
+就是你们要突破的地方，
+you're looking to break through and then
+
+682
+00:45:47,776 --> 00:45:53,119
+然后进入下一个区域，今天就讲到这里，大家，下个视频见，拜拜
+go into the next area but that was the chart all right guys uh see you on the next video cheers
+
+===== END AFTER_TRANSLATE =====

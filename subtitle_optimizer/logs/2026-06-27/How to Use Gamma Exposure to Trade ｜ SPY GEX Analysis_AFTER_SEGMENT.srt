@@ -1,0 +1,2274 @@
+===== AFTER_SEGMENT (568 entries) =====
+1
+00:00:00,000 --> 00:00:01,300
+What's going on guys, Brian's here.
+
+2
+00:00:01,400 --> 00:00:07,900
+Today is Thursday, June 23rd, 2022, and the market has not opened yet as I'm recording this during the pre-market session.
+
+3
+00:00:08,300 --> 00:00:14,900
+Now, gamma exposure or GEX as it's often referred to is a tremendous edge to have whenever you're trading.
+
+4
+00:00:14,900 --> 00:00:16,675
+So I'm going to show you guys how
+
+5
+00:00:16,675 --> 00:00:18,450
+I'm using it as well as how you
+
+6
+00:00:18,450 --> 00:00:22,000
+can use it for confluence for your day trading, for your scalping, for your swing trading.
+
+7
+00:00:22,000 --> 00:00:24,500
+What we have right here is the SPY.
+
+8
+00:00:24,600 --> 00:00:26,569
+And the reason I'm recording this pre-market is
+
+9
+00:00:26,569 --> 00:00:28,538
+because I want to show you guys certain
+
+10
+00:00:28,538 --> 00:00:30,999
+levels as gamma exposure changes as the stock price changes.
+
+11
+00:00:31,400 --> 00:00:32,500
+And as the market opens and,
+
+12
+00:00:32,500 --> 00:00:33,966
+you know, today, I can't wait until the
+
+13
+00:00:33,966 --> 00:00:36,899
+end of day to record this video because the information would be a little bit different.
+
+14
+00:00:37,100 --> 00:00:39,400
+But what we have right here is yesterday's price action.
+
+15
+00:00:39,400 --> 00:00:41,451
+I have this yellow line, gold line on
+
+16
+00:00:41,451 --> 00:00:43,502
+my chart is just a volume, a virgin
+
+17
+00:00:43,502 --> 00:00:44,527
+point of control, which
+
+18
+00:00:44,527 --> 00:00:46,065
+if you've seen any of my
+
+19
+00:00:46,065 --> 00:00:49,398
+previous videos, you would be aware of that straight from the volume profile.
+
+20
+00:00:49,700 --> 00:00:52,300
+Some of you refer to it as a naked point of control, virgin point of control.
+
+21
+00:00:52,400 --> 00:00:53,600
+It pretty much means the same thing.
+
+22
+00:00:53,600 --> 00:00:56,700
+It's just a point of control from a previous session, which has not been touched yet.
+
+23
+00:00:56,900 --> 00:00:58,800
+As we can see, yesterday it was touched.
+
+24
+00:00:58,800 --> 00:01:02,200
+So the 378 level was a key area of interest.
+
+25
+00:01:02,500 --> 00:01:04,887
+And if we were to jump back to this chart
+
+26
+00:01:04,887 --> 00:01:06,319
+right here, this is the 15-minute,
+
+27
+00:01:06,319 --> 00:01:09,899
+10-day chart. But we're just looking at the past couple weeks worth of price action.
+
+28
+00:01:10,300 --> 00:01:14,100
+The market was closed on Monday, so we started this week on a Tuesday right here.
+
+29
+00:01:14,400 --> 00:01:15,786
+And then this blue line or all the
+
+30
+00:01:15,786 --> 00:01:16,826
+levels in which you see on
+
+31
+00:01:16,826 --> 00:01:19,599
+my line on my chart, except for this yellow line, is from the Quant Trading app.
+
+32
+00:01:19,600 --> 00:01:23,200
+Algo details on Quant Trading app is in the description down below, but I will be talking about that.
+
+33
+00:01:23,200 --> 00:01:25,800
+Full disclosure, I am the lead developer at Quant Trading app.
+
+34
+00:01:25,900 --> 00:01:27,992
+But that aside, this blue level that you
+
+35
+00:01:27,992 --> 00:01:29,561
+see on the line right here,
+
+36
+00:01:29,561 --> 00:01:32,437
+378, is what's referred to. as max pain for this upcoming OPEX.
+
+37
+00:01:32,800 --> 00:01:37,500
+OPEX just means options expiration, which means tomorrow's expiration, which would be Friday.
+
+38
+00:01:37,800 --> 00:01:41,200
+This is the strike price in which option sellers would pocket the most amount of premium.
+
+39
+00:01:41,300 --> 00:01:43,620
+So there's kind of an incentive for market makers to
+
+40
+00:01:43,620 --> 00:01:45,940
+have price pin around this level because that's where the
+
+41
+00:01:45,940 --> 00:01:47,564
+most amount of options premium would be
+
+42
+00:01:47,564 --> 00:01:49,188
+sucked out of the market, which means
+
+43
+00:01:49,188 --> 00:01:52,900
+if you're a buyer of an option, you're going to experience the most amount of pain.
+
+44
+00:01:53,400 --> 00:01:54,773
+In other words, if you bought the 385
+
+45
+00:01:54,773 --> 00:01:55,949
+call, if the market was to
+
+46
+00:01:55,949 --> 00:01:58,302
+close here, you're pretty much going to lose all of your money.
+
+47
+00:01:58,600 --> 00:01:59,912
+And if you bought something like the 370
+
+48
+00:01:59,912 --> 00:02:01,037
+put and the market closes around
+
+49
+00:02:01,037 --> 00:02:02,912
+here, you're pretty much going to lose all your money.
+
+50
+00:02:03,200 --> 00:02:05,541
+So having the market close in between strike prices that
+
+51
+00:02:05,541 --> 00:02:07,882
+have a lot of premium or extrinsic value in them,
+
+52
+00:02:07,882 --> 00:02:09,286
+meaning they're not worth anything unless
+
+53
+00:02:09,286 --> 00:02:10,690
+they go in the money, it
+
+54
+00:02:10,690 --> 00:02:12,797
+is a strong incentive for the market makers, right?
+
+55
+00:02:13,000 --> 00:02:13,800
+So we have a couple of levels.
+
+56
+00:02:13,800 --> 00:02:17,100
+We have a version point of control, and then we have this max pain right here.
+
+57
+00:02:17,100 --> 00:02:18,283
+So yesterday, as the markets
+
+58
+00:02:18,283 --> 00:02:19,939
+was rallying into this level, we can
+
+59
+00:02:19,939 --> 00:02:24,199
+see that there was rejection as we had these levels from yesterday for the Quant Trading App members.
+
+60
+00:02:24,400 --> 00:02:26,164
+If we were to come to the Quant
+
+61
+00:02:26,164 --> 00:02:27,487
+Trading App website and actually looked
+
+62
+00:02:27,487 --> 00:02:28,589
+at the gamma exposure tab
+
+63
+00:02:28,589 --> 00:02:31,897
+right here, this right here, this chart is showing the, this is up to date.
+
+64
+00:02:31,900 --> 00:02:33,454
+So this is as of this
+
+65
+00:02:33,454 --> 00:02:35,008
+morning right here, as this page
+
+66
+00:02:35,008 --> 00:02:37,598
+was refreshed, but it's using the information from yesterday's close.
+
+67
+00:02:37,800 --> 00:02:40,700
+The spot price is the last traded price for the SPY currently.
+
+68
+00:02:40,900 --> 00:02:45,300
+And then max pain, as you can see, has changed overnight. It has now dropped to 376.
+
+69
+00:02:45,500 --> 00:02:48,700
+So the market is kind of already pinning around its max pain.
+
+70
+00:02:49,100 --> 00:02:51,146
+Right here, we have what's referred to
+
+71
+00:02:51,146 --> 00:02:53,192
+as P1. This is a term in
+
+72
+00:02:53,192 --> 00:02:56,699
+quant trading app. It just means the highest positive gamma exposure level.
+
+73
+00:02:56,700 --> 00:03:00,000
+And then N1 is the highest negative gamma exposure level, as you can see.
+
+74
+00:03:00,100 --> 00:03:01,665
+see right here the gex for
+
+75
+00:03:01,665 --> 00:03:02,969
+this level is negative 36 million
+
+76
+00:03:02,969 --> 00:03:05,577
+and then the gex for this level is plus uh 30
+
+77
+00:03:06,600 --> 00:03:07,624
+29 million we can see the
+
+78
+00:03:07,624 --> 00:03:08,853
+open interest in the volume on
+
+79
+00:03:08,853 --> 00:03:10,492
+the chart again the market is not yet
+
+80
+00:03:10,492 --> 00:03:11,311
+open so we don't
+
+81
+00:03:11,311 --> 00:03:12,540
+have the volume yet as you
+
+82
+00:03:12,540 --> 00:03:14,793
+can't trade options pre-market on an instrument such as the spot
+
+83
+00:03:15,300 --> 00:03:17,157
+we look at this right here we see
+
+84
+00:03:17,157 --> 00:03:18,549
+that the purple is highlighting what's
+
+85
+00:03:18,549 --> 00:03:21,799
+the absolute gex so this is the highest strike price that has the highest
+
+86
+00:03:22,200 --> 00:03:23,189
+absolute gex so that's
+
+87
+00:03:23,189 --> 00:03:25,167
+just combining the negative and positive and then
+
+88
+00:03:25,167 --> 00:03:27,145
+turning the uh the negative into an absolute
+
+89
+00:03:27,145 --> 00:03:28,628
+integer an absolute number is a
+
+90
+00:03:28,628 --> 00:03:30,606
+number that must be positive so after it
+
+91
+00:03:30,606 --> 00:03:32,089
+does all the math it's just
+
+92
+00:03:32,089 --> 00:03:33,572
+saying this is the highest absolute
+
+93
+00:03:33,572 --> 00:03:35,797
+gex strike so that's something that's important to know
+
+94
+00:03:36,200 --> 00:03:37,654
+so to close this right here
+
+95
+00:03:37,654 --> 00:03:39,592
+we can scroll down here and see the
+
+96
+00:03:39,592 --> 00:03:41,046
+same information on this graph so
+
+97
+00:03:41,046 --> 00:03:42,133
+this is showing us the 380
+
+98
+00:03:42,133 --> 00:03:43,655
+strike and this is showing us the 370
+
+99
+00:03:43,655 --> 00:03:44,960
+strike and then again that's what's
+
+100
+00:03:44,960 --> 00:03:48,657
+showing right here here's 370 and here's 380 so the market is currently in between those two strikes right
+
+101
+00:03:50,900 --> 00:03:52,138
+as we come down here let's
+
+102
+00:03:52,138 --> 00:03:53,376
+turn on the open interest and
+
+103
+00:03:53,376 --> 00:03:55,027
+actually see what does this look like on
+
+104
+00:03:55,027 --> 00:03:56,173
+a chart so this is the
+
+105
+00:03:56,173 --> 00:03:57,319
+open interest for calls at this
+
+106
+00:03:57,319 --> 00:03:59,802
+strike price and we can see that there's 28 000 open interest in the calls
+
+107
+00:04:00,900 --> 00:04:01,830
+and only 7 000 or about
+
+108
+00:04:01,830 --> 00:04:02,760
+8 000 in the put side
+
+109
+00:04:02,760 --> 00:04:04,620
+and let's actually turn on the puts and
+
+110
+00:04:04,620 --> 00:04:09,270
+see the highest open interest put that's relative to strike price the the current price so this is the spot
+
+111
+00:04:10,500 --> 00:04:12,144
+this would be the closest highest
+
+112
+00:04:12,144 --> 00:04:13,788
+uh peak in open interest for
+
+113
+00:04:13,788 --> 00:04:15,432
+puts and this is the highest
+
+114
+00:04:15,432 --> 00:04:17,898
+open interest peak uh in in on the calls
+
+115
+00:04:18,300 --> 00:04:19,881
+as we scroll to the top
+
+116
+00:04:19,881 --> 00:04:21,462
+right here the market is in
+
+117
+00:04:21,462 --> 00:04:23,571
+collectively a negative gamma environment or gamma negative
+
+118
+00:04:23,571 --> 00:04:24,625
+gamma state this is
+
+119
+00:04:24,625 --> 00:04:26,206
+the negative gamma for this current
+
+120
+00:04:26,206 --> 00:04:29,896
+strike price uh expiration which is tomorrow's expiration we can see that the total
+
+121
+00:04:30,200 --> 00:04:33,000
+of this expiration right now is roughly 18%.
+
+122
+00:04:33,400 --> 00:04:35,715
+We can see that the incomplete options chain
+
+123
+00:04:35,715 --> 00:04:38,030
+where the most amount of gamma exposure is
+
+124
+00:04:38,030 --> 00:04:39,766
+right now, it is actually for
+
+125
+00:04:39,766 --> 00:04:44,397
+the July monthlies, as well as we have next week expiration, which is the quarterly options.
+
+126
+00:04:44,700 --> 00:04:46,757
+So a bulk of the options
+
+127
+00:04:46,757 --> 00:04:49,499
+gamma exposure is for these two expirations, but
+
+128
+00:04:49,499 --> 00:04:51,556
+there's always going to be a
+
+129
+00:04:51,556 --> 00:04:54,298
+lot of weight for the upcoming expiration because
+
+130
+00:04:54,298 --> 00:04:59,097
+gamma is most sensitive at the money strike, as well as the closest expiration.
+
+131
+00:04:59,100 --> 00:05:00,800
+And that's just the way gamma works.
+
+132
+00:05:00,900 --> 00:05:02,125
+Now, this video is not an
+
+133
+00:05:02,125 --> 00:05:03,350
+introduction to gamma, so I'm going
+
+134
+00:05:03,350 --> 00:05:05,800
+to operate under the assumption that you do know what gamma is.
+
+135
+00:05:05,800 --> 00:05:08,709
+But to briefly explain, gamma is the rate
+
+136
+00:05:08,709 --> 00:05:13,799
+and change for delta on an option for every point that the underlying moves.
+
+137
+00:05:13,800 --> 00:05:14,900
+So if I pull this over here.
+
+138
+00:05:15,600 --> 00:05:21,600
+We can see that, say, for example, this call option, this 377 call, it has a delta of 0.47.
+
+139
+00:05:21,600 --> 00:05:25,800
+Let's just say the gamma is 0.03 right now.
+
+140
+00:05:25,900 --> 00:05:27,550
+It means if the SPY was
+
+141
+00:05:27,550 --> 00:05:29,200
+to go up, the delta for
+
+142
+00:05:29,200 --> 00:05:32,500
+this would go up by the amount that the gamma is showing.
+
+143
+00:05:32,600 --> 00:05:34,200
+So that's the brief introduction.
+
+144
+00:05:34,300 --> 00:05:37,800
+I would highly encourage you guys to check out some videos on just gamma to begin with.
+
+145
+00:05:37,900 --> 00:05:39,331
+But if you understand what a radio
+
+146
+00:05:39,331 --> 00:05:40,762
+gamma is, the gamma exposure is just
+
+147
+00:05:40,762 --> 00:05:42,398
+saying you can think of it this way.
+
+148
+00:05:42,500 --> 00:05:45,023
+It's essentially how much the market makers or
+
+149
+00:05:45,023 --> 00:05:47,546
+the option sellers are going to need to
+
+150
+00:05:47,546 --> 00:05:50,699
+offset their delta for every point that the underlying moves.
+
+151
+00:05:51,100 --> 00:05:53,900
+So as we continue right along, again, I'm trying to make this video pretty brief.
+
+152
+00:05:53,900 --> 00:05:55,425
+So I'm not going as in depth in
+
+153
+00:05:55,425 --> 00:05:56,950
+a lot of my videos that I really
+
+154
+00:05:56,950 --> 00:06:00,000
+explain a lot of the nuanced things. I will be coming out with a lot more.
+
+155
+00:06:00,000 --> 00:06:01,250
+videos pertaining to gamma exposure
+
+156
+00:06:01,250 --> 00:06:03,000
+but i will be doing some introductory
+
+157
+00:06:03,000 --> 00:06:05,000
+videos on gamma so if you are interested
+
+158
+00:06:05,000 --> 00:06:08,000
+in content like that in the future make sure to subscribe and
+
+159
+00:06:08,400 --> 00:06:10,012
+turn on the notifications for this video and
+
+160
+00:06:10,012 --> 00:06:11,624
+then let me know in the comment section
+
+161
+00:06:11,624 --> 00:06:13,236
+down below if you would like to see
+
+162
+00:06:13,236 --> 00:06:14,848
+more content on this i'm going to show
+
+163
+00:06:14,848 --> 00:06:16,460
+you guys how i'm using the information so
+
+164
+00:06:16,460 --> 00:06:18,072
+as we come to the current expiration right
+
+165
+00:06:18,072 --> 00:06:19,684
+let's actually go to the absolute gex panel
+
+166
+00:06:19,684 --> 00:06:21,095
+here this is telling us that the
+
+167
+00:06:21,500 --> 00:06:23,548
+the uh absolute gamma strike which
+
+168
+00:06:23,548 --> 00:06:25,937
+is 370 is currently below the spot price
+
+169
+00:06:25,937 --> 00:06:31,057
+and price is generally going to want to gravitate towards these high gamma exposure strikes.
+
+170
+00:06:31,600 --> 00:06:33,733
+Now, when we are stuck in between two
+
+171
+00:06:33,733 --> 00:06:35,866
+of the high gamma exposure strikes, we can
+
+172
+00:06:35,866 --> 00:06:39,599
+see that the absolute gamma exposure between these two is not that far off.
+
+173
+00:06:39,600 --> 00:06:42,600
+It's only about 10 million or so, 12, 13 million or so.
+
+174
+00:06:43,000 --> 00:06:44,331
+And price being in between the
+
+175
+00:06:44,331 --> 00:06:46,106
+two is essentially, you can think of it
+
+176
+00:06:46,106 --> 00:06:50,099
+like a tug of war where price is just going to be kind of bouncing between the two.
+
+177
+00:06:50,400 --> 00:06:52,325
+And we can look at these two levels
+
+178
+00:06:52,325 --> 00:06:54,250
+as a strong resistance or a strong support,
+
+179
+00:06:54,250 --> 00:06:56,898
+but understanding that price wants to go towards one of them.
+
+180
+00:06:57,200 --> 00:06:59,073
+If both of these are pointing in the
+
+181
+00:06:59,073 --> 00:07:00,946
+same direction, which is what it's saying right
+
+182
+00:07:00,946 --> 00:07:02,819
+here, if number one and two is pointing
+
+183
+00:07:02,819 --> 00:07:06,097
+in the same direction, it's stronger for the trend to go in that direction.
+
+184
+00:07:06,100 --> 00:07:10,200
+So if they were both green, we'd be more than likely going to gravitate up.
+
+185
+00:07:10,800 --> 00:07:14,100
+If they were both red, we'd more than likely kind of gravitate down.
+
+186
+00:07:14,300 --> 00:07:18,300
+So using the absolute gamma exposure, we can kind of form a trade idea.
+
+187
+00:07:18,400 --> 00:07:23,600
+But what do you do when price is just stuck in between and we have two high absolute gamma strikes?
+
+188
+00:07:23,600 --> 00:07:27,800
+This is how I essentially trade as I love taking non-directional income based trades.
+
+189
+00:07:27,800 --> 00:07:29,900
+But I'll show you guys my trade structure in a second.
+
+190
+00:07:30,300 --> 00:07:31,734
+As I scroll down here, and
+
+191
+00:07:31,734 --> 00:07:33,168
+let's actually just turn off the
+
+192
+00:07:33,168 --> 00:07:35,798
+absolute, the gamma exposure, just take a look at this chart.
+
+193
+00:07:35,900 --> 00:07:38,400
+So we can kind of see it on from an open interest perspective.
+
+194
+00:07:38,800 --> 00:07:42,100
+Towards the beginning of the week, if we just look at the...
+
+195
+00:07:42,500 --> 00:07:48,800
+The uh call open interest this number was significantly higher so it's only 28 000 now let's actually scroll over to the
+
+196
+00:07:49,100 --> 00:07:50,273
+as we scroll over to the
+
+197
+00:07:50,273 --> 00:07:51,446
+quant trading app discord let's take
+
+198
+00:07:51,446 --> 00:07:52,619
+a look so this is early
+
+199
+00:07:52,619 --> 00:07:53,748
+in the week right here as
+
+200
+00:07:53,748 --> 00:07:54,689
+i mentioned that the 380 should
+
+201
+00:07:54,689 --> 00:07:57,513
+act as a magnet for this week this was just after the market had um
+
+202
+00:07:58,400 --> 00:07:59,755
+uh opened up here and we
+
+203
+00:07:59,755 --> 00:08:01,110
+started rallying uh at the start
+
+204
+00:08:01,110 --> 00:08:02,917
+of this week look at the open interest
+
+205
+00:08:02,917 --> 00:08:04,272
+it was about 53 000 and it was
+
+206
+00:08:04,272 --> 00:08:05,575
+in max pain at that time
+
+207
+00:08:05,575 --> 00:08:06,661
+was at 379 so it was
+
+208
+00:08:06,661 --> 00:08:09,702
+very apparent that the market was going to make some sort of a rally
+
+209
+00:08:10,900 --> 00:08:12,916
+going into that level on top of that
+
+210
+00:08:12,916 --> 00:08:14,932
+if i believe in the uh discord here
+
+211
+00:08:14,932 --> 00:08:16,948
+i highlighted this the gamma exposure for this
+
+212
+00:08:16,948 --> 00:08:18,208
+week had turned positive so
+
+213
+00:08:18,208 --> 00:08:19,972
+this is what's referred to as for
+
+214
+00:08:19,972 --> 00:08:21,484
+this week we should not really
+
+215
+00:08:21,484 --> 00:08:23,500
+get much volatility in which we've been happening
+
+216
+00:08:23,800 --> 00:08:26,200
+even though the entire options chain or the
+
+217
+00:08:26,200 --> 00:08:28,600
+the next three months worth of options gamma
+
+218
+00:08:28,600 --> 00:08:32,800
+exposure was negative we are still in a very volatile environment now using gex
+
+219
+00:08:33,100 --> 00:08:34,397
+necessarily for direction is not the
+
+220
+00:08:34,397 --> 00:08:36,126
+way you want to go i'm showing you
+
+221
+00:08:36,126 --> 00:08:37,855
+guys how you can use it as a
+
+222
+00:08:37,855 --> 00:08:41,098
+directionality when you're looking at the absolute gamma strike prices but for the most part
+
+223
+00:08:41,500 --> 00:08:44,729
+gex is used as a measure for volatility so when everything is
+
+224
+00:08:44,729 --> 00:08:47,958
+in a negative gamma state so you can expect long-term volatility and
+
+225
+00:08:47,958 --> 00:08:49,572
+that's just the dynamic that the
+
+226
+00:08:49,572 --> 00:08:51,186
+dynamics for how the option sellers
+
+227
+00:08:51,186 --> 00:08:52,800
+referred to as the dealers or
+
+228
+00:08:52,800 --> 00:08:56,297
+the market makers are going to have to offset their on their books
+
+229
+00:08:56,700 --> 00:09:00,000
+a little bit more of a complicated subject matter but again i will go into more detailed explanation
+
+230
+00:09:00,300 --> 00:09:02,200
+If you are interested right now, you can't wait.
+
+231
+00:09:02,400 --> 00:09:06,000
+I did do a video previously, the one that was uploaded on
+
+232
+00:09:06,000 --> 00:09:08,400
+a webinar in which I recorded over the
+
+233
+00:09:08,400 --> 00:09:13,500
+weekend for the upcoming week, kind of highlighting things in which was identified in the gamma exposure.
+
+234
+00:09:13,500 --> 00:09:15,200
+So that's a two hour long video, but it was a webinar.
+
+235
+00:09:15,200 --> 00:09:17,658
+So I'm going over a lot and it explains a
+
+236
+00:09:17,658 --> 00:09:21,099
+little bit more in a little in more nuance and a more nuanced manner.
+
+237
+00:09:21,400 --> 00:09:22,090
+But this one, again,
+
+238
+00:09:22,090 --> 00:09:23,126
+is a very brief one as
+
+239
+00:09:23,126 --> 00:09:24,162
+I'm trying to get myself prepared
+
+240
+00:09:24,162 --> 00:09:25,198
+for the trading day right here.
+
+241
+00:09:25,200 --> 00:09:26,800
+And it's now 9 a.m. Eastern time.
+
+242
+00:09:27,200 --> 00:09:30,080
+So if we look at this here, this is earlier in the
+
+243
+00:09:30,080 --> 00:09:32,000
+week, understanding that we were likely going to
+
+244
+00:09:32,000 --> 00:09:35,600
+chop around this week, meaning if the market went up, we'd probably come back down.
+
+245
+00:09:35,600 --> 00:09:37,200
+If the market went down, we'd probably go back up.
+
+246
+00:09:37,300 --> 00:09:39,481
+It's going to be more of a reversion to the
+
+247
+00:09:39,481 --> 00:09:42,099
+mean type of environment because these two are conflicting with each other.
+
+248
+00:09:42,100 --> 00:09:45,600
+But we know for this short term, this was that on.
+
+249
+00:09:46,100 --> 00:09:49,638
+That expiration on Tuesday, so the day of the zero
+
+250
+00:09:49,638 --> 00:09:55,299
+days, we were expecting a little bit more of a passive trading to the upside here.
+
+251
+00:09:55,500 --> 00:09:57,500
+And we can see it on the on the GEX.
+
+252
+00:09:57,700 --> 00:10:01,000
+Now, as you continue to scroll right along, this is where I had also highlighted. So that was Tesla.
+
+253
+00:10:01,100 --> 00:10:02,800
+So let's just keep this moving right here.
+
+254
+00:10:03,100 --> 00:10:05,900
+And we have this is the open interest. We can see twenty six thousand.
+
+255
+00:10:05,900 --> 00:10:07,827
+So it actually dropped about half. So it's
+
+256
+00:10:07,827 --> 00:10:11,199
+just highlighting that the open interest kind of came down early in the week.
+
+257
+00:10:11,200 --> 00:10:14,016
+But at the same time, we can see 370 was still the
+
+258
+00:10:14,016 --> 00:10:17,088
+highest negative gamma strike and 380 was still the highest positive gamma strike.
+
+259
+00:10:17,800 --> 00:10:22,700
+So knowing that information, if we come to the chart here and let's take a look at different trade ideas.
+
+260
+00:10:22,700 --> 00:10:25,300
+This is what's referred to as an iron condor for this week.
+
+261
+00:10:25,300 --> 00:10:30,000
+So if you know that 380 is a strike price that the market might gravitate towards to, but it might struggle.
+
+262
+00:10:30,100 --> 00:10:32,088
+to go higher and you know 370 is
+
+263
+00:10:32,088 --> 00:10:36,916
+a strike price that the market might gravitate to but it was likely to not go lower
+
+264
+00:10:37,500 --> 00:10:40,272
+you can run something that's referred to as an iron condo which
+
+265
+00:10:40,272 --> 00:10:44,199
+means you short those two options and then you can buy two options further out as protection
+
+266
+00:10:44,500 --> 00:10:47,405
+and then essentially you profit as the market just hovers in between
+
+267
+00:10:47,405 --> 00:10:49,341
+there capitalize on what's referred to as time
+
+268
+00:10:49,341 --> 00:10:53,456
+decay so this is data so this is essentially how much this spread is making per day 78
+
+269
+00:10:54,500 --> 00:10:56,500
+now if we were to review and we come back
+
+270
+00:10:56,500 --> 00:10:59,700
+to the historical chart we can see on the 21st right here so this is about
+
+271
+00:11:00,200 --> 00:11:01,300
+30 minutes after the market opened
+
+272
+00:11:01,300 --> 00:11:02,620
+if you sold this iron condor
+
+273
+00:11:02,620 --> 00:11:04,380
+because when you open up an iron condor
+
+274
+00:11:04,380 --> 00:11:06,140
+you're actually selling it and then you're looking
+
+275
+00:11:06,140 --> 00:11:07,680
+to buy it back at a lower
+
+276
+00:11:07,680 --> 00:11:09,220
+price which is why it has a
+
+277
+00:11:09,220 --> 00:11:13,180
+credit received you're not paying to open this trade you're actually receiving a credit to open the trade
+
+278
+00:11:13,700 --> 00:11:14,902
+if we look at this right here
+
+279
+00:11:14,902 --> 00:11:16,276
+you would have received about two dollars and
+
+280
+00:11:16,276 --> 00:11:17,220
+70 cents in credit and at yesterday's
+
+281
+00:11:17,220 --> 00:11:18,322
+close it was going for about two
+
+282
+00:11:18,322 --> 00:11:19,739
+dollars so in other words you would have made 70
+
+283
+00:11:20,900 --> 00:11:22,333
+with one lot of this which
+
+284
+00:11:22,333 --> 00:11:24,244
+means if we're just looking at one if
+
+285
+00:11:24,244 --> 00:11:26,394
+you did 10 of these obviously you would have made
+
+286
+00:11:26,394 --> 00:11:27,254
+about 700 bucks because again
+
+287
+00:11:27,254 --> 00:11:29,189
+if we come back to the historical chart from
+
+288
+00:11:29,189 --> 00:11:30,264
+270 down to a dollar that
+
+289
+00:11:30,264 --> 00:11:32,199
+means the value of this iron condor dropped by 70
+
+290
+00:11:34,400 --> 00:11:35,929
+dollars which is good for you
+
+291
+00:11:35,929 --> 00:11:37,967
+because you're looking to buy it back at
+
+292
+00:11:37,967 --> 00:11:42,044
+a cheaper price so assuming you bought it back at yesterday's close you would have profited 70
+
+293
+00:11:42,700 --> 00:11:44,036
+if you sold 10 of those
+
+294
+00:11:44,036 --> 00:11:45,907
+that means you would have profited 700 just
+
+295
+00:11:45,907 --> 00:11:48,045
+using the gamma exposure levels and essentially letting
+
+296
+00:11:48,045 --> 00:11:49,035
+time decay do its
+
+297
+00:11:49,035 --> 00:11:51,015
+work identifying that the market is likely just
+
+298
+00:11:51,015 --> 00:11:54,232
+going to bounce around 370 and 380 and just kind of chop in this area.
+
+299
+00:11:56,100 --> 00:11:58,000
+If we continue right along, here's another trade idea.
+
+300
+00:11:58,000 --> 00:12:00,000
+This is what's referred to as a double diagonal.
+
+301
+00:12:00,500 --> 00:12:02,214
+It's the same thing, but you're
+
+302
+00:12:02,214 --> 00:12:03,928
+shorting the two-strike price in which
+
+303
+00:12:03,928 --> 00:12:08,499
+you understand have high gamma exposure, and then you're just buying these further out wings here.
+
+304
+00:12:08,800 --> 00:12:10,600
+And then essentially you're profiting the same way.
+
+305
+00:12:10,700 --> 00:12:12,952
+The difference between these two is a
+
+306
+00:12:12,952 --> 00:12:18,099
+double diagonal is positive vega, which means you're not going to be hurt if volatility increases.
+
+307
+00:12:18,400 --> 00:12:22,700
+An iron condor is negative vega, which means you want volatility to decrease.
+
+308
+00:12:22,800 --> 00:12:26,300
+So that's the difference between these two spreads, which is why I'm just highlighting two options.
+
+309
+00:12:26,400 --> 00:12:31,400
+It all depends on what you're expecting maybe for volatility as well as your account size.
+
+310
+00:12:31,500 --> 00:12:32,838
+But if we looked at this
+
+311
+00:12:32,838 --> 00:12:34,176
+right here, we can see earlier
+
+312
+00:12:34,176 --> 00:12:37,076
+in this week, it was going for $1.60 or so, the same time frame.
+
+313
+00:12:37,400 --> 00:12:44,400
+So right down here at 10 a.m., it was going for $1.60, we'll say, and then it closed yesterday at $0.94.
+
+314
+00:12:44,500 --> 00:12:45,300
+So roughly about the same.
+
+315
+00:12:45,400 --> 00:12:46,800
+We'll just estimate and round things off.
+
+316
+00:12:46,800 --> 00:12:48,100
+We'll say about $0.70.
+
+317
+00:12:48,100 --> 00:12:49,300
+This would have...
+
+318
+00:12:49,800 --> 00:12:51,200
+Changed if we were to look
+
+319
+00:12:51,200 --> 00:12:53,066
+at the max loss so this is how
+
+320
+00:12:53,066 --> 00:12:54,465
+much it would require you but
+
+321
+00:12:54,465 --> 00:12:55,864
+at that time it would have
+
+322
+00:12:55,864 --> 00:12:58,197
+required you less because you would have received more credit
+
+323
+00:12:58,600 --> 00:13:00,015
+so let's just say we're opening
+
+324
+00:13:00,015 --> 00:13:01,902
+this up now we can see that the
+
+325
+00:13:01,902 --> 00:13:03,789
+difference between the max loss the um the
+
+326
+00:13:03,789 --> 00:13:07,799
+iron condor requires a little bit less capital than something like a diagonal of the same strikes
+
+327
+00:13:08,200 --> 00:13:09,823
+now if we were to i'm
+
+328
+00:13:09,823 --> 00:13:11,987
+i'm not um i'm just using this week's
+
+329
+00:13:11,987 --> 00:13:14,151
+expirations i'm not adjusting term structure and bouncing
+
+330
+00:13:14,151 --> 00:13:17,398
+around because obviously you can customize these types of spreads i'm just
+
+331
+00:13:17,800 --> 00:13:19,345
+keeping it very simple for this
+
+332
+00:13:19,345 --> 00:13:21,405
+video as we move right along if you
+
+333
+00:13:21,405 --> 00:13:23,465
+trade the spx this is an example of
+
+334
+00:13:23,465 --> 00:13:26,040
+the iron condor on the spy so right here so 370
+
+335
+00:13:27,100 --> 00:13:31,900
+uh using 3700 on the spx the spx is just the spx is just 10 times the size of the SPY.
+
+336
+00:13:31,900 --> 00:13:35,100
+And whenever I run iron condors, I mostly run them on the SBX.
+
+337
+00:13:35,400 --> 00:13:39,200
+As it's cash settled, you don't have to worry about the assignment risk. It's much cleaner.
+
+338
+00:13:39,400 --> 00:13:41,500
+Taxes are much better when you trade indexes.
+
+339
+00:13:41,600 --> 00:13:43,727
+And as we pull this up
+
+340
+00:13:43,727 --> 00:13:49,399
+right here, we can see if we go to the 21st right here at 10 a.m.
+
+341
+00:13:49,500 --> 00:13:51,100
+Would have been right about here.
+
+342
+00:13:51,100 --> 00:13:55,600
+So about $27 you would have received in credit and it's now going for $20.
+
+343
+00:13:55,700 --> 00:13:58,600
+So the same here goes to $700 just running one of these.
+
+344
+00:13:58,900 --> 00:14:00,815
+Now, if you ran two of
+
+345
+00:14:00,815 --> 00:14:02,730
+these, you get the point that's
+
+346
+00:14:02,730 --> 00:14:06,880
+essentially $1,400 just identifying high gamma levels and then letting time do its work.
+
+347
+00:14:07,400 --> 00:14:09,500
+You can use this information to structure your trades.
+
+348
+00:14:09,500 --> 00:14:11,812
+Now, if you're a day trader and
+
+349
+00:14:11,812 --> 00:14:14,124
+you're a scalper, as price got up
+
+350
+00:14:14,124 --> 00:14:20,399
+to this level yesterday, this was a high gamma strike live because this page gamma is going to change.
+
+351
+00:14:20,400 --> 00:14:22,000
+So you can refresh this page and kind
+
+352
+00:14:22,000 --> 00:14:23,200
+of check it as the market
+
+353
+00:14:23,200 --> 00:14:25,600
+is trading. And these levels will adjust on the chart right here.
+
+354
+00:14:25,600 --> 00:14:28,600
+So if you're someone that's a little bit more visual, we have the reference right here.
+
+355
+00:14:28,600 --> 00:14:30,066
+And we can see as this
+
+356
+00:14:30,066 --> 00:14:31,532
+market, as the market progresses today,
+
+357
+00:14:31,532 --> 00:14:32,998
+these levels will most likely get
+
+358
+00:14:32,998 --> 00:14:35,198
+closer and closer and they would shrink for Friday.
+
+359
+00:14:35,400 --> 00:14:36,696
+There's still a little bit of
+
+360
+00:14:36,696 --> 00:14:37,992
+time left in these, but for
+
+361
+00:14:37,992 --> 00:14:40,800
+the most part, these absolute GEC strikes should not really move that much.
+
+362
+00:14:41,000 --> 00:14:44,400
+And then tomorrow around the same time, it would have looked differently.
+
+363
+00:14:44,400 --> 00:14:46,036
+And maybe by midday tomorrow, the
+
+364
+00:14:46,036 --> 00:14:47,672
+gamma exposure is going to start
+
+365
+00:14:47,672 --> 00:14:50,399
+clumping around a certain level, whatever the spot price is.
+
+366
+00:14:50,400 --> 00:14:55,900
+So you'll generally see as we close out the open interest, all this is going to contract.
+
+367
+00:14:55,900 --> 00:14:58,300
+So these are going to kind of come here and these are going to kind of come here.
+
+368
+00:14:58,300 --> 00:14:59,900
+And then the curve is going to look something like.
+
+369
+00:15:00,200 --> 00:15:04,000
+There's going to be high levels all around here, and that's just the way gamma works.
+
+370
+00:15:04,000 --> 00:15:05,714
+So again, total market right now
+
+371
+00:15:05,714 --> 00:15:09,999
+is in a negative gamma state, but we have negative gamma also for this week.
+
+372
+00:15:10,000 --> 00:15:13,000
+It was not this way earlier in the week. That kind of changed.
+
+373
+00:15:13,400 --> 00:15:14,400
+And hopefully, if this
+
+374
+00:15:14,400 --> 00:15:15,900
+is your introduction to GEX, I
+
+375
+00:15:15,900 --> 00:15:17,400
+would highly encourage you guys to
+
+376
+00:15:17,400 --> 00:15:22,400
+get very familiar with it, especially on this channel, as I'm going to be talking a lot more about it.
+
+377
+00:15:22,500 --> 00:15:25,400
+The levels in which you see here is straight from the Quant Trading App algorithm.
+
+378
+00:15:25,400 --> 00:15:30,600
+So if I were to switch over to the, say, for example, let's look at the queues.
+
+379
+00:15:32,400 --> 00:15:37,700
+These levels are generated from the algo from a Sunday as it's aggregating a lot of information and data.
+
+380
+00:15:37,900 --> 00:15:41,900
+GEX levels will be included on the TOS script to show it on our charts also.
+
+381
+00:15:42,100 --> 00:15:44,200
+That is coming pretty soon, but we can see right here.
+
+382
+00:15:44,400 --> 00:15:50,400
+This level from Sunday, the QTA algo is saying that the Qs should struggle to pass 285 this week.
+
+383
+00:15:50,400 --> 00:15:53,300
+We got up to 285. We were rejected right there.
+
+384
+00:15:53,600 --> 00:15:55,095
+If we were to come to look
+
+385
+00:15:55,095 --> 00:15:58,085
+at the GEX for the Qs, we can see 285 was a high gamma strike.
+
+386
+00:15:58,400 --> 00:16:01,800
+As we come down right here, we can see 285 right here on the chart.
+
+387
+00:16:01,900 --> 00:16:05,540
+So the gamma is showing how strong that level is of resistance
+
+388
+00:16:05,540 --> 00:16:07,360
+because inherently that's the way the
+
+389
+00:16:07,360 --> 00:16:11,000
+GEX is going to work as well as in conjunction with the.
+
+390
+00:16:11,700 --> 00:16:14,002
+High open interest levels as we turn this
+
+391
+00:16:14,002 --> 00:16:16,304
+on right here we can see that there's
+
+392
+00:16:16,304 --> 00:16:18,606
+a strong uh level here by using open
+
+393
+00:16:18,606 --> 00:16:20,907
+interest as a measure for the strength in
+
+394
+00:16:20,907 --> 00:16:23,208
+conjunction with how strong is the level with
+
+395
+00:16:23,208 --> 00:16:25,797
+gamma exposure and now adds an extra element to
+
+396
+00:16:26,100 --> 00:16:30,000
+to the chart and i i explain this whenever i do one-on-one sessions with traders
+
+397
+00:16:30,100 --> 00:16:34,000
+You can think of GAX gamma exposure in the options market as kind of like an x-ray vision.
+
+398
+00:16:34,000 --> 00:16:36,360
+So if you're a doctor and you're looking at this
+
+399
+00:16:36,360 --> 00:16:39,900
+right here, or let's go back to the spy and you're telling yourself, hey, the...
+
+400
+00:16:40,400 --> 00:16:44,700
+The SPY looks, it doesn't really look that good if you want to use the analogy of health.
+
+401
+00:16:44,700 --> 00:16:47,129
+And we say like it doesn't necessarily look
+
+402
+00:16:47,129 --> 00:16:48,951
+pretty healthy up here because of
+
+403
+00:16:48,951 --> 00:16:52,899
+the VPAC, because of the max pain and because of the sharp rejections.
+
+404
+00:16:53,000 --> 00:16:57,400
+And maybe you're looking at the tape, maybe you're using bookmap or any other tool of that kind.
+
+405
+00:16:57,600 --> 00:17:00,500
+You can see that it's pretty weak, but then you can take an x-ray vision.
+
+406
+00:17:00,600 --> 00:17:06,000
+The x-ray would be looking at the options chain and seeing what is it saying here?
+
+407
+00:17:06,000 --> 00:17:07,400
+What is the sentiments behind?
+
+408
+00:17:07,400 --> 00:17:11,900
+Is there higher open interest past that strike price in which the market is trying to go higher?
+
+409
+00:17:11,900 --> 00:17:14,786
+If there's not a lot of open interest or volume, the market's
+
+410
+00:17:14,786 --> 00:17:16,710
+not necessarily going to go much higher because
+
+411
+00:17:16,710 --> 00:17:20,799
+it's showing there's not a lot of participants that are interested in thinking that it goes higher.
+
+412
+00:17:20,900 --> 00:17:23,375
+And then from the market maker's perspective, which is showing
+
+413
+00:17:23,375 --> 00:17:25,355
+us when we look at the GACs, it's
+
+414
+00:17:25,355 --> 00:17:27,087
+letting us know that the market makers,
+
+415
+00:17:27,087 --> 00:17:28,819
+they don't really need to, they're incentivized
+
+416
+00:17:28,819 --> 00:17:30,799
+to keep price below a certain level also.
+
+417
+00:17:31,100 --> 00:17:32,716
+Now, inherently, of course, you know, you have
+
+418
+00:17:32,716 --> 00:17:34,332
+to take everything with a grain of salt
+
+419
+00:17:34,332 --> 00:17:35,948
+because if breaking news came out or if
+
+420
+00:17:35,948 --> 00:17:37,499
+we enter in a gamma squeeze or price
+
+421
+00:17:37,499 --> 00:17:39,050
+was to just break past a certain level,
+
+422
+00:17:39,050 --> 00:17:40,601
+let's just say we gapped up over 380 today,
+
+423
+00:17:41,300 --> 00:17:43,362
+the market would have been very likely to enter some
+
+424
+00:17:43,362 --> 00:17:45,012
+sort of gamma squeeze and we would probably
+
+425
+00:17:45,012 --> 00:17:47,899
+come up to at least this level or the two sigma level up here.
+
+426
+00:17:48,200 --> 00:17:52,000
+If we come to the chart, that's where we would just look at where's the next highest gamma exposure level.
+
+427
+00:17:52,000 --> 00:17:55,800
+And we can see that it is a there's a big spike at 385 on the SPY.
+
+428
+00:17:55,800 --> 00:18:00,000
+So one can make the assumption that we might head up to there if we were to gap up over.
+
+429
+00:18:00,100 --> 00:18:01,616
+380 but we can see within this area
+
+430
+00:18:01,616 --> 00:18:05,082
+there's a lot of gamma exposure so the market would probably be a little bit choppy
+
+431
+00:18:05,600 --> 00:18:08,111
+it's not like whenever we see let's just say the market gapped
+
+432
+00:18:08,111 --> 00:18:09,785
+up over this level and the next big
+
+433
+00:18:09,785 --> 00:18:11,459
+spike was here and you see there's a
+
+434
+00:18:11,459 --> 00:18:14,598
+lot of low gamma exposure the market will probably move through that level very quickly
+
+435
+00:18:14,900 --> 00:18:17,926
+because there isn't much that the option sellers or the dealers need
+
+436
+00:18:17,926 --> 00:18:19,943
+to do to adjust their positions also when
+
+437
+00:18:19,943 --> 00:18:21,960
+it comes to confluence if we were to
+
+438
+00:18:21,960 --> 00:18:26,499
+uh scroll back for a second here and look at the um es to start off the week
+
+439
+00:18:26,800 --> 00:18:29,420
+another reason why that area was of key interest we can see
+
+440
+00:18:29,420 --> 00:18:31,166
+here was the week to date volume profile
+
+441
+00:18:31,166 --> 00:18:32,912
+from last week this was the uh a
+
+442
+00:18:32,912 --> 00:18:34,222
+lot of high volume notes as
+
+443
+00:18:34,222 --> 00:18:35,968
+i was highlighting this was the qta algo
+
+444
+00:18:35,968 --> 00:18:37,496
+was just saying that we have a
+
+445
+00:18:37,700 --> 00:18:40,026
+um resist we should likely meet resistance up here but
+
+446
+00:18:40,026 --> 00:18:41,887
+we can see a lot of supply in
+
+447
+00:18:41,887 --> 00:18:43,748
+this area when the with the market gapping
+
+448
+00:18:43,748 --> 00:18:45,376
+up and as bullish as it was
+
+449
+00:18:45,376 --> 00:18:47,237
+looking it only made sense for us to
+
+450
+00:18:47,237 --> 00:18:49,098
+gravitate towards this high liquidity zone right here
+
+451
+00:18:49,300 --> 00:18:52,021
+the es ended up tapping 3800 so we did go to exactly
+
+452
+00:18:52,021 --> 00:18:53,999
+where the spy naturally so there's a little
+
+453
+00:18:53,999 --> 00:18:58,204
+bit of a point difference about maybe 10 points or so between the es and the uh spy
+
+454
+00:18:59,200 --> 00:19:01,439
+but the es actually hit its 3800 and then to
+
+455
+00:19:01,439 --> 00:19:03,429
+conclude this video actually let's jump over to
+
+456
+00:19:03,429 --> 00:19:05,419
+the es because i want to show you
+
+457
+00:19:05,419 --> 00:19:09,150
+guys this is how one of the the trades in which i'm actually one of
+
+458
+00:19:10,800 --> 00:19:11,800
+We jump over to the ES.
+
+459
+00:19:11,800 --> 00:19:15,800
+Let's actually just clean up this chart for you guys right here. And then let's zoom in.
+
+460
+00:19:16,100 --> 00:19:20,800
+And then I want to turn on the same thing just so you guys can see it live.
+
+461
+00:19:20,900 --> 00:19:23,400
+And then I'm going to show you guys a trade in which I'm actually in.
+
+462
+00:19:23,800 --> 00:19:25,866
+If you're using the TOS scripts that I
+
+463
+00:19:25,866 --> 00:19:27,674
+provided on the volume profile, you guys
+
+464
+00:19:27,674 --> 00:19:29,999
+should know that there's an update now where you're
+
+465
+00:19:30,000 --> 00:19:33,000
+You can change it to show the weekly volume profile.
+
+466
+00:19:33,000 --> 00:19:34,600
+But we can see these are all the high volume nodes.
+
+467
+00:19:34,900 --> 00:19:36,086
+That screenshot was taken when the market,
+
+468
+00:19:36,086 --> 00:19:36,933
+I believe, was somewhere down
+
+469
+00:19:36,933 --> 00:19:38,798
+here. And we can see we've come up to this level.
+
+470
+00:19:38,800 --> 00:19:39,709
+And then we can
+
+471
+00:19:39,709 --> 00:19:41,072
+see right. That's where this week's
+
+472
+00:19:41,072 --> 00:19:43,799
+point of control has formed right in this high volume nodes here.
+
+473
+00:19:44,100 --> 00:19:47,200
+We can see that we tapped 3,800, which was to be expected.
+
+474
+00:19:47,300 --> 00:19:48,875
+So I've been still holding longs
+
+475
+00:19:48,875 --> 00:19:50,450
+from since over all the way
+
+476
+00:19:50,450 --> 00:19:51,762
+down here from since last
+
+477
+00:19:51,762 --> 00:19:53,599
+week because I'm in some call diagonals.
+
+478
+00:19:53,600 --> 00:19:55,700
+I still have four weeks till expiration or so.
+
+479
+00:19:55,700 --> 00:19:57,160
+I still have plenty of time
+
+480
+00:19:57,160 --> 00:19:58,620
+on them, expecting the markets to
+
+481
+00:19:58,620 --> 00:20:01,298
+be at this level and then letting theta do its thing.
+
+482
+00:20:01,900 --> 00:20:05,100
+This is the trade in which I'm currently now in for the ES.
+
+483
+00:20:05,100 --> 00:20:06,208
+As you guys can see,
+
+484
+00:20:06,208 --> 00:20:07,316
+I'm in two butterflies. So
+
+485
+00:20:07,316 --> 00:20:10,198
+I'm in an iron butterfly and then a long call butterfly right here.
+
+486
+00:20:10,400 --> 00:20:11,400
+I have these slice
+
+487
+00:20:11,400 --> 00:20:12,650
+prices right here. So this
+
+488
+00:20:12,650 --> 00:20:13,650
+is $3,800 and then this
+
+489
+00:20:13,650 --> 00:20:16,400
+is $3,700. So this is the current spot price of the ES.
+
+490
+00:20:17,200 --> 00:20:18,300
+This is my current P&L.
+
+491
+00:20:18,400 --> 00:20:21,100
+So as we can see, the market is starting to push higher and higher.
+
+492
+00:20:21,500 --> 00:20:22,804
+If we were to close,
+
+493
+00:20:22,804 --> 00:20:24,108
+the green is my current
+
+494
+00:20:24,108 --> 00:20:27,760
+P&L. This line right here is what's referred to as the zero line.
+
+495
+00:20:27,800 --> 00:20:29,030
+So we can see if the
+
+496
+00:20:29,030 --> 00:20:32,105
+market was to pull back to this area, my P&L will actually turn green.
+
+497
+00:20:32,900 --> 00:20:34,055
+The uh scion level
+
+498
+00:20:34,055 --> 00:20:35,788
+right here is my pnl at
+
+499
+00:20:35,788 --> 00:20:37,521
+close tomorrow so if the market
+
+500
+00:20:37,521 --> 00:20:39,254
+was to close to say for
+
+501
+00:20:39,254 --> 00:20:42,720
+example 3750 my pnl would be this right here which would be 500 bucks
+
+502
+00:20:43,700 --> 00:20:44,950
+if it was to close
+
+503
+00:20:44,950 --> 00:20:46,450
+at exactly 3700 this would be my
+
+504
+00:20:46,450 --> 00:20:48,450
+pnl around a thousand and if we close
+
+505
+00:20:48,450 --> 00:20:50,200
+around uh 3800 or so right within here
+
+506
+00:20:50,200 --> 00:20:51,700
+anywhere from a thousand to 1500 is
+
+507
+00:20:51,700 --> 00:20:56,700
+what i stand to gain now i'm giving a trade like this if i make no adjustments about 500 in risk
+
+508
+00:20:58,000 --> 00:20:59,800
+so i'm essentially looking to make either 500
+
+509
+00:21:00,200 --> 00:21:05,500
+a thousand dollars or fifteen hundred dollars and my my range is all the way from down here from 3690
+
+510
+00:21:06,100 --> 00:21:07,933
+all the way up to
+
+511
+00:21:07,933 --> 00:21:09,399
+3830 and that's that's accounting
+
+512
+00:21:09,399 --> 00:21:14,165
+for you know looking at the gamma strikes now if we break past 3800
+
+513
+00:21:15,200 --> 00:21:16,355
+i'll probably get long the futures
+
+514
+00:21:16,355 --> 00:21:17,510
+and just try to scalp it
+
+515
+00:21:17,510 --> 00:21:20,398
+up a little bit and try to bring in some cash flow from day trading
+
+516
+00:21:20,700 --> 00:21:22,068
+but in terms of the trade
+
+517
+00:21:22,068 --> 00:21:23,893
+you can as i showed you guys earlier
+
+518
+00:21:23,893 --> 00:21:25,718
+the double calent the double diagonal there was
+
+519
+00:21:25,718 --> 00:21:27,543
+the iron condor you can also run butterflies
+
+520
+00:21:27,543 --> 00:21:29,368
+and i'm trading it on the futures just
+
+521
+00:21:29,368 --> 00:21:31,192
+so i can make an adjustments overnight if
+
+522
+00:21:31,192 --> 00:21:32,560
+i need to or pre-market and
+
+523
+00:21:32,560 --> 00:21:35,297
+things like that there's a huge benefit to being able to trade
+
+524
+00:21:35,700 --> 00:21:36,600
+spreads on the futures
+
+525
+00:21:37,300 --> 00:21:39,344
+The trade initially started off like this
+
+526
+00:21:39,344 --> 00:21:41,388
+and the markets pushed much higher as
+
+527
+00:21:41,388 --> 00:21:44,600
+I was expecting us to consolidate a little bit down here.
+
+528
+00:21:44,600 --> 00:21:46,418
+And once we pushed higher, I
+
+529
+00:21:46,418 --> 00:21:48,842
+just went in and added this call long
+
+530
+00:21:48,842 --> 00:21:50,660
+call butterfly right here with the
+
+531
+00:21:50,660 --> 00:21:54,599
+assumption that then the market is going to hover within this area now.
+
+532
+00:21:54,600 --> 00:21:58,100
+And if we were to turn these off, it creates this structure, which you see right here.
+
+533
+00:21:58,400 --> 00:21:59,787
+Now, if we go really high,
+
+534
+00:21:59,787 --> 00:22:01,637
+I will probably just close out this one
+
+535
+00:22:01,637 --> 00:22:05,799
+and then let price consolidate in the upper tent here or add another one if I need to.
+
+536
+00:22:05,800 --> 00:22:07,511
+Now, these expire tomorrow, so I'm
+
+537
+00:22:07,511 --> 00:22:09,222
+kind of playing a little bit
+
+538
+00:22:09,222 --> 00:22:13,499
+with fire as I am sensitive to gamma, which is why my slope is pretty.
+
+539
+00:22:13,700 --> 00:22:14,762
+Pretty slopey as we would
+
+540
+00:22:14,762 --> 00:22:16,249
+say there's a there's a wide slope
+
+541
+00:22:16,249 --> 00:22:17,949
+to the upside and downside i'm just looking
+
+542
+00:22:17,949 --> 00:22:19,436
+for a little bit more time decay
+
+543
+00:22:19,436 --> 00:22:21,136
+and if we jump to tomorrow's expiration as
+
+544
+00:22:21,136 --> 00:22:22,623
+you can see my pnl will then
+
+545
+00:22:22,623 --> 00:22:23,685
+jump up a little bit
+
+546
+00:22:23,685 --> 00:22:24,535
+more and then the
+
+547
+00:22:24,535 --> 00:22:27,297
+closer and closer we get to expiration i'll decide how much you know
+
+548
+00:22:27,600 --> 00:22:30,000
+it's a risk reward game if it how am i risking
+
+549
+00:22:30,000 --> 00:22:31,324
+too much to make a little
+
+550
+00:22:31,324 --> 00:22:33,090
+bit more or so but if i hit
+
+551
+00:22:33,090 --> 00:22:34,635
+500 i'd more than likely probably be happy
+
+552
+00:22:34,635 --> 00:22:36,180
+with the trade and again this is
+
+553
+00:22:36,180 --> 00:22:37,725
+a trade in which i entered and
+
+554
+00:22:37,725 --> 00:22:41,477
+i haven't really done anything with so far um as we jump back to the chart here
+
+555
+00:22:42,500 --> 00:22:43,410
+actually i think that's good
+
+556
+00:22:43,410 --> 00:22:44,684
+enough i need to prepare the market
+
+557
+00:22:44,684 --> 00:22:45,958
+opens in 15 minutes so if this uh
+
+558
+00:22:45,958 --> 00:22:46,868
+was a great introduction for
+
+559
+00:22:46,868 --> 00:22:48,142
+you guys let me know in the
+
+560
+00:22:48,142 --> 00:22:51,418
+comment down below in the comment section down below if you'd like to know a little bit more
+
+561
+00:22:52,000 --> 00:22:52,865
+uh also leave a
+
+562
+00:22:52,865 --> 00:22:54,163
+comment and make sure to like
+
+563
+00:22:54,163 --> 00:22:55,894
+this video share it if you learned something
+
+564
+00:22:55,894 --> 00:22:57,625
+and link to the quant trading app discord
+
+565
+00:22:57,625 --> 00:22:58,923
+is in the link below as
+
+566
+00:22:58,923 --> 00:23:00,653
+well as how you can become a member
+
+567
+00:23:00,653 --> 00:23:01,951
+of quant trading app and actually
+
+568
+00:23:01,951 --> 00:23:05,196
+start using some of these tools and information take care guys and good luck trading
+
+===== END AFTER_SEGMENT =====

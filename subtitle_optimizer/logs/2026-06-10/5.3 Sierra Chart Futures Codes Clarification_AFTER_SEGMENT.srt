@@ -1,0 +1,1642 @@
+===== AFTER_SEGMENT (410 entries) =====
+1
+00:00:00,560 --> 00:00:02,301
+hello traders so i just wanted
+
+2
+00:00:02,301 --> 00:00:04,042
+to do a quick supplementary video
+
+3
+00:00:04,042 --> 00:00:05,783
+because i had a gentleman contact
+
+4
+00:00:05,783 --> 00:00:10,717
+me saying look envy tried everything i can't get my data feed to work the depth of
+
+5
+00:00:10,720 --> 00:00:12,659
+market is blank so what i did
+
+6
+00:00:12,659 --> 00:00:14,875
+was i contacted sierra chart i asked them
+
+7
+00:00:14,875 --> 00:00:16,814
+to give me a free trial with
+
+8
+00:00:16,814 --> 00:00:22,078
+delayed data so i could have the same data feed you guys do and i ended up getting to
+
+9
+00:00:22,080 --> 00:00:24,311
+the bottom of it and it made me
+
+10
+00:00:24,311 --> 00:00:26,542
+realize that most people who use the free
+
+11
+00:00:26,542 --> 00:00:28,494
+trial with the delayed data feed are
+
+12
+00:00:28,494 --> 00:00:32,957
+probably going to get the same thing i'm looking at here or we're all looking at
+
+13
+00:00:32,960 --> 00:00:35,215
+which is a depth of market with no
+
+14
+00:00:35,215 --> 00:00:36,906
+data so why is that happening
+
+15
+00:00:36,906 --> 00:00:38,879
+so basically guys what you need to
+
+16
+00:00:38,880 --> 00:00:41,157
+understand is that do you
+
+17
+00:00:41,157 --> 00:00:44,345
+remember how and it's not really that
+
+18
+00:00:44,345 --> 00:00:47,989
+complicated remember how i said that the data
+
+19
+00:00:47,989 --> 00:00:50,722
+can be split out from the
+
+20
+00:00:50,722 --> 00:00:55,277
+platform providers from the order routing providers and your brokerage
+
+21
+00:00:55,280 --> 00:00:57,453
+and obviously the exchange you've also
+
+22
+00:00:57,453 --> 00:00:59,626
+got data free providers now what
+
+23
+00:00:59,626 --> 00:01:01,799
+it is is depending on what
+
+24
+00:01:01,799 --> 00:01:03,972
+data feed provider you use they've
+
+25
+00:01:03,972 --> 00:01:08,318
+all got slightly different codes futures codes that they use um it's
+
+26
+00:01:08,320 --> 00:01:14,560
+not a major problem but as you know with programming even one digit can cause something not to read it
+
+27
+00:01:14,560 --> 00:01:16,388
+correctly and that's what's happening
+
+28
+00:01:16,388 --> 00:01:18,948
+is i didn't realize it at the
+
+29
+00:01:18,948 --> 00:01:21,873
+time but obviously the template that i've asked
+
+30
+00:01:21,873 --> 00:01:27,724
+you guys to load the chart template um the g7fx foundation dome chart book template
+
+31
+00:01:28,320 --> 00:01:31,216
+that was built using my own data feed
+
+32
+00:01:31,216 --> 00:01:33,750
+so i've got real-time data and therefore
+
+33
+00:01:33,750 --> 00:01:36,284
+it's using the code that i use
+
+34
+00:01:36,284 --> 00:01:42,077
+but obviously if you're doing a sierra chart trial with delayed data the code is going
+
+35
+00:01:42,080 --> 00:01:47,920
+to be slightly different so there's two things i could have done first thing is i could have fixed it
+
+36
+00:01:47,920 --> 00:01:50,092
+and sent you and reloaded uh
+
+37
+00:01:50,092 --> 00:01:52,264
+a correct template with the right
+
+38
+00:01:52,264 --> 00:01:54,436
+codes on it but i thought
+
+39
+00:01:54,436 --> 00:01:56,608
+you know what let me use
+
+40
+00:01:56,608 --> 00:02:01,677
+this as an opportunity for everyone to really um understand why this is happening
+
+41
+00:02:01,680 --> 00:02:03,562
+understand a little bit more about
+
+42
+00:02:03,562 --> 00:02:05,444
+the futures market and how the
+
+43
+00:02:05,444 --> 00:02:07,326
+codes can vary from provider to
+
+44
+00:02:07,326 --> 00:02:09,208
+provider so i thought this is
+
+45
+00:02:09,208 --> 00:02:13,599
+a great opportunity for people to fix this issue themselves um of course if
+
+46
+00:02:13,600 --> 00:02:19,360
+you continue to have issues um i'm more than happy to help you um but you shouldn't have a problem
+
+47
+00:02:19,360 --> 00:02:21,875
+once you follow this video and the steps
+
+48
+00:02:21,875 --> 00:02:24,075
+in this video so there's one really
+
+49
+00:02:24,075 --> 00:02:26,275
+easy fix to this a sierra chart
+
+50
+00:02:26,275 --> 00:02:32,877
+has a great function where you just click a button and it will change all the codes for you from my
+
+51
+00:02:32,880 --> 00:02:34,843
+own real data um feed futures
+
+52
+00:02:34,843 --> 00:02:36,806
+codes to the correct feed data
+
+53
+00:02:36,806 --> 00:02:39,096
+uh i.e the delayed data codes
+
+54
+00:02:39,096 --> 00:02:41,059
+there's another way to do it
+
+55
+00:02:41,059 --> 00:02:47,604
+and you can do it manually and that's what i want you just to have a quick look at so
+
+56
+00:02:47,280 --> 00:02:50,320
+you can get familiar with if you remember
+
+57
+00:02:50,320 --> 00:02:52,600
+the the diagram on 5.1 module 5.1 where
+
+58
+00:02:52,600 --> 00:02:54,880
+i had the exchanges right at
+
+59
+00:02:54,880 --> 00:03:00,200
+the top and i said you know there's different exchanges that manage different futures
+
+60
+00:03:00,960 --> 00:03:03,243
+contracts so this is a great opportunity for
+
+61
+00:03:03,243 --> 00:03:04,955
+you guys to have a look
+
+62
+00:03:04,955 --> 00:03:06,667
+at that so what you want
+
+63
+00:03:06,667 --> 00:03:13,517
+to do is um you get this quote board which i've just brought over so you you you basically load up the just open
+
+64
+00:03:13,520 --> 00:03:15,120
+up the this main console
+
+65
+00:03:15,120 --> 00:03:17,360
+um i'll just put that to the
+
+66
+00:03:17,360 --> 00:03:19,920
+side for now okay so you see this
+
+67
+00:03:19,920 --> 00:03:26,960
+so you may have this issue here where there's no volume on your quote board and obviously on the depth of market
+
+68
+00:03:26,960 --> 00:03:30,053
+you've got no activity so what you need
+
+69
+00:03:30,053 --> 00:03:33,146
+to do is guys there's various ways you
+
+70
+00:03:33,146 --> 00:03:36,239
+can so firstly what it is you need
+
+71
+00:03:36,239 --> 00:03:39,332
+to understand is that these codes on the
+
+72
+00:03:39,332 --> 00:03:42,425
+quote board are independent of the quotes on
+
+73
+00:03:42,425 --> 00:03:57,118
+the depth of market they're independent to the quotes on the time and sales they're independent to so each element of sierra chart for example the time and sales a chart a depth of market a quote board
+
+74
+00:03:58,160 --> 00:04:00,780
+you need to tell each element individually what
+
+75
+00:04:00,780 --> 00:04:05,039
+you want it to load so let's just go one by one okay
+
+76
+00:04:05,680 --> 00:04:08,456
+so first thing is the quote board we want the
+
+77
+00:04:08,456 --> 00:04:10,677
+quote board to give us the correct information
+
+78
+00:04:10,677 --> 00:04:15,119
+namely volume so the reason i do this as you know from the previous video is
+
+79
+00:04:16,160 --> 00:04:18,704
+the installation video is i want to know
+
+80
+00:04:18,704 --> 00:04:21,248
+which is the most liquid contract futures contract
+
+81
+00:04:21,248 --> 00:04:23,792
+so i can load the correct contract so
+
+82
+00:04:23,792 --> 00:04:29,517
+as you can see we got a problem here we got zero so what do we need to
+
+83
+00:04:29,520 --> 00:04:32,204
+do to fix this issue well there's certain
+
+84
+00:04:32,204 --> 00:04:34,888
+different ways we can do it we can
+
+85
+00:04:34,888 --> 00:04:37,572
+go to settings set symbols and we can
+
+86
+00:04:37,572 --> 00:04:43,277
+change the symbols that way what i like to do personally is double click on name okay
+
+87
+00:04:43,280 --> 00:04:45,806
+it'll bring up this little box click on
+
+88
+00:04:45,806 --> 00:04:48,332
+find okay and there you see this box
+
+89
+00:04:48,332 --> 00:04:54,963
+which i already spoke a little bit about in the previous module 5.2 now do you remember guys i said there's different
+
+90
+00:04:55,280 --> 00:04:58,247
+exchanges i said this in i believe in
+
+91
+00:04:58,247 --> 00:05:00,843
+5.1 where we're doing the platform comparison and
+
+92
+00:05:00,843 --> 00:05:03,810
+we've done a little introduction into the back-end
+
+93
+00:05:03,810 --> 00:05:07,148
+infrastructure and i said look guys there's different exchanges
+
+94
+00:05:07,520 --> 00:05:13,520
+that look after different futures contracts so what i'll do is firstly let me just say as a side note
+
+95
+00:05:13,520 --> 00:05:15,969
+you'll notice this thing called forex so if
+
+96
+00:05:15,969 --> 00:05:18,418
+you want a chart like your retail platform
+
+97
+00:05:18,418 --> 00:05:20,867
+mt4 has a forex chart they do give
+
+98
+00:05:20,867 --> 00:05:23,316
+you and i didn't mention this in the
+
+99
+00:05:23,316 --> 00:05:31,277
+previous module um because i completely forgot to be honest but they do give you real-time forex data for free um so that will become more
+
+100
+00:05:31,280 --> 00:05:33,535
+important later in the pro course but just
+
+101
+00:05:33,535 --> 00:05:35,790
+be aware of it you can load up
+
+102
+00:05:35,790 --> 00:05:43,119
+charts with uh they use fxcm data i believe it's pretty good but we're only interested in futures for now so can you see you get
+
+103
+00:05:43,120 --> 00:05:45,844
+a whole list of futures so what they
+
+104
+00:05:45,844 --> 00:05:48,568
+do here guys doesn't matter what data feed
+
+105
+00:05:48,568 --> 00:05:51,292
+provider you have it's going to be the
+
+106
+00:05:51,292 --> 00:05:56,399
+same when you load up this box you're going to see futures futures futures futures
+
+107
+00:05:56,400 --> 00:05:59,340
+it keeps saying futures the what they've done
+
+108
+00:05:59,340 --> 00:06:02,280
+is they've split this by exchange so what
+
+109
+00:06:02,280 --> 00:06:05,220
+you'll see is you'll see all these different
+
+110
+00:06:05,220 --> 00:06:09,998
+exchanges now the ones we're interested in is cbot and cme those are
+
+111
+00:06:10,000 --> 00:06:13,221
+the american exchanges and nimex which does commodities
+
+112
+00:06:13,221 --> 00:06:16,442
+but guys if you're trading the burned if
+
+113
+00:06:16,442 --> 00:06:19,663
+you're trading a different instrument it's a different
+
+114
+00:06:19,663 --> 00:06:22,079
+um exchange and i will talk
+
+115
+00:06:22,080 --> 00:06:26,000
+about that in a moment because the other thing the gentleman asked me and it's a great question is he
+
+116
+00:06:26,000 --> 00:06:27,972
+said look can i load any instrument
+
+117
+00:06:27,972 --> 00:06:30,226
+i want yeah you can load any instrument
+
+118
+00:06:30,226 --> 00:06:33,044
+you want guys that is on this list but for
+
+119
+00:06:33,044 --> 00:06:38,398
+now let's just focus on the five that i give you as default and we'll come back to that
+
+120
+00:06:38,400 --> 00:06:40,878
+issue about how do i load something
+
+121
+00:06:40,878 --> 00:06:44,064
+else a different instrument so for now uh the
+
+122
+00:06:44,064 --> 00:06:52,560
+first instrument on the quote board is the 10-year treasury so we can either search for it but what i would prefer you to
+
+123
+00:06:52,560 --> 00:06:55,338
+do is just learn the exchanges so the
+
+124
+00:06:55,338 --> 00:06:58,811
+exchange that looks after um the treasury notes and the
+
+125
+00:06:58,811 --> 00:07:01,936
+us bonds essentially is the cbot chicago board of
+
+126
+00:07:01,936 --> 00:07:06,798
+trade so you see i clicked on futures cbot and it opens up a
+
+127
+00:07:06,800 --> 00:07:11,920
+whole new menu of instruments these are all the futures contracts that the cbot look after
+
+128
+00:07:12,560 --> 00:07:14,480
+and there you if you scroll
+
+129
+00:07:14,480 --> 00:07:17,360
+down you can see 10-year treasury notes right zn
+
+130
+00:07:17,360 --> 00:07:19,920
+so we open that up and there you
+
+131
+00:07:19,920 --> 00:07:25,360
+can see the futures contracts we kind of went through this in the previous uh 5.2 but obviously
+
+132
+00:07:25,680 --> 00:07:29,096
+the codes were more for my data feed provider which
+
+133
+00:07:29,096 --> 00:07:32,512
+happens to be sierra chart as well but they do
+
+134
+00:07:32,512 --> 00:07:35,244
+have different codes because it's real time for
+
+135
+00:07:35,244 --> 00:07:38,318
+delayed data they've got slightly different codes as you'll
+
+136
+00:07:38,320 --> 00:07:41,216
+see here so as we can see what i do
+
+137
+00:07:41,216 --> 00:07:43,532
+is i like to just grab a piece
+
+138
+00:07:43,532 --> 00:07:45,559
+of pen and a paper okay guys
+
+139
+00:07:45,559 --> 00:07:52,799
+so i got my pen i got my piece of paper here um and then i like to just note down the next three contracts
+
+140
+00:07:52,800 --> 00:07:55,641
+that are coming into expiry so here
+
+141
+00:07:55,641 --> 00:08:02,541
+you can see z and h 20 z and m 20 and z and u 20. so i like to
+
+142
+00:08:03,760 --> 00:08:07,323
+just write these down so zed n as i explained
+
+143
+00:08:07,323 --> 00:08:10,886
+in the last uh module is the uh instrument so
+
+144
+00:08:10,886 --> 00:08:13,380
+it's the 10 year treasury note then you've
+
+145
+00:08:13,380 --> 00:08:19,081
+got the month so they always use the same letters so for example you can see
+
+146
+00:08:19,440 --> 00:08:22,133
+h is march m is june u
+
+147
+00:08:22,133 --> 00:08:24,826
+is september z is december it doesn't
+
+148
+00:08:24,826 --> 00:08:27,519
+matter what data feed provider you use
+
+149
+00:08:27,520 --> 00:08:30,432
+cqg rhythmic uh continuum etc etc dt
+
+150
+00:08:30,432 --> 00:08:33,760
+and iq feed there's all these big data
+
+151
+00:08:33,760 --> 00:08:37,088
+providers they're all going to use the same
+
+152
+00:08:37,088 --> 00:08:42,080
+uh terminology the only thing is they might have something different afterwards
+
+153
+00:08:42,080 --> 00:08:44,094
+so um with sierra chart live data
+
+154
+00:08:44,094 --> 00:08:46,683
+feed you can see they do underscore then they
+
+155
+00:08:46,683 --> 00:08:49,272
+do the exchange and they've got this this stuff
+
+156
+00:08:49,272 --> 00:08:58,479
+that they put afterwards um with rhythmic or some of the other data providers my point is they're going to be very similar the code but it's just going to be slightly
+
+157
+00:08:58,480 --> 00:09:01,305
+different and unfortunately that means you need to
+
+158
+00:09:01,305 --> 00:09:04,836
+change it so over here i've written down the next
+
+159
+00:09:04,836 --> 00:09:07,308
+three contracts right so then what i
+
+160
+00:09:07,308 --> 00:09:12,958
+do is i just come out of this cancel or you can just copy it if
+
+161
+00:09:12,960 --> 00:09:15,961
+you want so let's just go back into
+
+162
+00:09:15,961 --> 00:09:19,337
+this c bot uh zn and then you see
+
+163
+00:09:19,337 --> 00:09:22,713
+how it just shows up here on the selected
+
+164
+00:09:22,713 --> 00:09:30,217
+symbol you can either control c or copy and then cancel cancel then what i like to do is and
+
+165
+00:09:30,220 --> 00:09:32,651
+i do this regularly guys i do
+
+166
+00:09:32,651 --> 00:09:35,429
+this every three months for um the currency
+
+167
+00:09:35,429 --> 00:09:38,554
+futures and the stock futures and then oil um
+
+168
+00:09:38,554 --> 00:09:44,458
+it rolls over every month so for oil i'm doing this i'm following this process every month
+
+169
+00:09:44,460 --> 00:09:46,825
+so it's good actually i'm showing you this
+
+170
+00:09:46,825 --> 00:09:49,190
+so you get into the habit of it
+
+171
+00:09:49,190 --> 00:09:51,850
+um so then i double click here the symbol
+
+172
+00:09:51,850 --> 00:09:58,058
+okay can you see it lets me change it i wipe it and then i just paste that in so znh20
+
+173
+00:09:58,060 --> 00:10:00,256
+so do you remember what was there
+
+174
+00:10:00,256 --> 00:10:02,452
+before can you see it's znh underscore
+
+175
+00:10:02,452 --> 00:10:05,276
+and then it has some stuff after it that's
+
+176
+00:10:05,276 --> 00:10:07,472
+because my real time data feed that's
+
+177
+00:10:07,472 --> 00:10:10,610
+the code but you're using a different data feed to
+
+178
+00:10:10,610 --> 00:10:22,536
+me you're using a delayed data feed you could even be using a different provider and they'll have a slightly different code so you'd have to do this anyway so if we change that to znh20 and click
+
+179
+00:10:22,540 --> 00:10:24,674
+okay can you see some volumes
+
+180
+00:10:24,674 --> 00:10:26,452
+now showed up 48 contracts it's
+
+181
+00:10:26,452 --> 00:10:29,298
+a very low amount of contracts because the
+
+182
+00:10:29,298 --> 00:10:35,702
+contract is about to expire we just happen to be at that stage excuse me now remember i've
+
+183
+00:10:36,060 --> 00:10:39,260
+written it down on a piece of paper
+
+184
+00:10:39,260 --> 00:10:42,060
+i already know the next contract is
+
+185
+00:10:42,060 --> 00:10:44,860
+what znm20 right so i'm gonna manually
+
+186
+00:10:44,860 --> 00:10:47,260
+type that in znm20 and press
+
+187
+00:10:47,260 --> 00:10:51,660
+enter there you go 1.62 million contracts okay then i know the
+
+188
+00:10:52,060 --> 00:10:54,636
+next one guys the next one
+
+189
+00:10:54,636 --> 00:10:57,212
+is znu20 right there you go
+
+190
+00:10:57,212 --> 00:11:00,647
+so nothing's traded on that contract yet it's
+
+191
+00:11:00,647 --> 00:11:08,377
+not become active so we can see straight away the most active contract in the 10-year treasury note
+
+192
+00:11:08,380 --> 00:11:11,217
+right now is the june expiry so what
+
+193
+00:11:11,217 --> 00:11:14,054
+i want to do so i've got two
+
+194
+00:11:14,054 --> 00:11:16,891
+options here guys i can go into all
+
+195
+00:11:16,891 --> 00:11:19,728
+my charts depth of market time and sales
+
+196
+00:11:19,728 --> 00:11:22,565
+and now i know the correct code i
+
+197
+00:11:22,565 --> 00:11:32,139
+need which is znm20 i can update it chart chart settings on the dome and i want here znm20 so i just delete that bit you can
+
+198
+00:11:32,140 --> 00:11:34,310
+see znm20 if i click ok
+
+199
+00:11:34,310 --> 00:11:36,480
+it should now work okay so
+
+200
+00:11:36,480 --> 00:11:40,459
+you can see it's now working i'm just going to clear
+
+201
+00:11:40,460 --> 00:11:42,730
+that and center it all right
+
+202
+00:11:42,730 --> 00:11:45,000
+guys so can you see it's
+
+203
+00:11:45,000 --> 00:11:48,027
+now working fine it's populating it's going up
+
+204
+00:11:48,027 --> 00:11:54,081
+and down and it's basically this contract that's got 1.62 million so we're looking at the right
+
+205
+00:11:54,460 --> 00:11:57,054
+contract that everyone's trading right now and we're
+
+206
+00:11:57,054 --> 00:11:59,648
+we're satisfied with that the only thing is
+
+207
+00:11:59,648 --> 00:12:02,242
+obviously the time and sales um you would
+
+208
+00:12:02,242 --> 00:12:06,458
+need to well actually lo and behold it's done it for you so
+
+209
+00:12:06,460 --> 00:12:08,366
+i take that back you don't need to
+
+210
+00:12:08,366 --> 00:12:10,272
+do it for the time and sales and
+
+211
+00:12:10,272 --> 00:12:12,178
+it looks like it's done it for the
+
+212
+00:12:12,178 --> 00:12:17,419
+chart so actually i was wrong it's done it for um everything that you needed it to do so if we just
+
+213
+00:12:17,420 --> 00:12:20,230
+double check that oh i beg your pardon
+
+214
+00:12:20,230 --> 00:12:23,040
+actually i was right um so there you
+
+215
+00:12:23,040 --> 00:12:25,850
+go you can see that so what it
+
+216
+00:12:25,850 --> 00:12:28,660
+is is i've just realized what uh the
+
+217
+00:12:28,660 --> 00:12:31,470
+error i made there is the time and
+
+218
+00:12:31,470 --> 00:12:45,520
+sales because i'd loaded it from the depth of market it's shown up as um the correct symbol but obviously the chart is completely independent of the depth of market so it's still showing the wrong symbol so we'll need
+
+219
+00:12:45,520 --> 00:12:48,156
+to do that for the chart right so
+
+220
+00:12:48,156 --> 00:12:50,792
+i've got rid of that okay can you
+
+221
+00:12:50,792 --> 00:12:53,428
+see now it's loaded the chart and the
+
+222
+00:12:53,428 --> 00:13:00,348
+chart is now live so that's one way of doing this guys okay the other way to do this is you
+
+223
+00:13:00,350 --> 00:13:03,688
+literally go to your main console right so
+
+224
+00:13:03,688 --> 00:13:07,026
+you've got that here you click on edit
+
+225
+00:13:07,026 --> 00:13:15,789
+i believe and can you see there's this option here translate symbols to current service so that's another way of doing
+
+226
+00:13:15,790 --> 00:13:18,578
+this now i just simply click
+
+227
+00:13:18,578 --> 00:13:21,366
+on that okay move this out
+
+228
+00:13:21,366 --> 00:13:25,548
+of the way can you see everything has now
+
+229
+00:13:25,550 --> 00:13:31,710
+changed now notice this symbol needs to roll over so i can either just click this manually
+
+230
+00:13:31,710 --> 00:13:34,398
+because crude oil where's the
+
+231
+00:13:34,398 --> 00:13:38,162
+most liquid contract look guys it's may
+
+232
+00:13:38,162 --> 00:13:39,775
+2020 871 000 contracts 62 000 on the
+
+233
+00:13:39,775 --> 00:13:43,539
+april contract so the one that everyone
+
+234
+00:13:43,539 --> 00:13:48,379
+has now rolled over to is the may contract
+
+235
+00:13:51,710 --> 00:13:53,357
+so can you see the the
+
+236
+00:13:53,357 --> 00:13:55,278
+most front month contract which would have
+
+237
+00:13:55,278 --> 00:13:57,199
+been march has now expired it's got
+
+238
+00:13:57,199 --> 00:13:58,571
+no volume in it so
+
+239
+00:13:58,571 --> 00:14:03,787
+this is what i do every month is i just update the next three i want to know what
+
+240
+00:14:03,790 --> 00:14:05,268
+the next three are
+
+241
+00:14:05,268 --> 00:14:07,485
+um so let's just do this
+
+242
+00:14:07,485 --> 00:14:08,963
+let's do this together
+
+243
+00:14:08,963 --> 00:14:11,549
+so i'll go through that same process
+
+244
+00:14:11,550 --> 00:14:13,046
+again i'll go to
+
+245
+00:14:13,046 --> 00:14:15,290
+futures now this time can you
+
+246
+00:14:15,290 --> 00:14:18,282
+see it's the nimix okay so before the
+
+247
+00:14:18,282 --> 00:14:20,900
+10-year treasury and i'm just going to
+
+248
+00:14:20,900 --> 00:14:26,510
+show you this where each one belongs but the 10-year treasury note was cbot there
+
+249
+00:14:27,470 --> 00:14:34,110
+um all the rest of them are cme the currency futures and the s p but commodities and nimix so
+
+250
+00:14:34,110 --> 00:14:35,842
+you need to scroll down futures
+
+251
+00:14:35,842 --> 00:14:38,152
+and do you remember i said this is
+
+252
+00:14:38,152 --> 00:14:39,884
+done by exchange so it's the
+
+253
+00:14:39,884 --> 00:14:41,616
+nimix and then look what are
+
+254
+00:14:41,616 --> 00:14:45,947
+the next three well i know march has expired because it just said zero volume
+
+255
+00:14:45,950 --> 00:14:47,951
+so i want the next three
+
+256
+00:14:47,951 --> 00:14:50,620
+april may june note how crude oil expires
+
+257
+00:14:50,620 --> 00:14:52,621
+monthly whereas the others expire every
+
+258
+00:14:52,621 --> 00:14:54,956
+three months so i want april may
+
+259
+00:14:54,956 --> 00:14:59,627
+and june so i make a note of this on my piece of paper
+
+260
+00:14:59,630 --> 00:15:01,763
+so cl j 20 cl
+
+261
+00:15:01,763 --> 00:15:03,896
+k 20 and cl m
+
+262
+00:15:03,896 --> 00:15:06,029
+20 right so i come
+
+263
+00:15:06,029 --> 00:15:12,429
+out of this cancel that cancel that and then i just do
+
+264
+00:15:14,030 --> 00:15:16,739
+the same thing here guys so
+
+265
+00:15:16,739 --> 00:15:19,448
+cl i've written it down i
+
+266
+00:15:19,448 --> 00:15:22,157
+want that one to be uh
+
+267
+00:15:22,157 --> 00:15:25,318
+j okay i want that one to
+
+268
+00:15:25,318 --> 00:15:36,608
+be k and i want that one to be m all right guys so the next three expiries from today are april may and june
+
+269
+00:15:37,170 --> 00:15:39,210
+can you see how april is
+
+270
+00:15:39,210 --> 00:15:41,930
+people are rolling out of it they're rolling
+
+271
+00:15:41,930 --> 00:15:43,970
+into may expiry so that's clearly
+
+272
+00:15:43,970 --> 00:15:46,350
+the correct one i want because out
+
+273
+00:15:46,350 --> 00:15:50,770
+of the three april may june may's got the most amount of volume
+
+274
+00:15:50,770 --> 00:15:59,090
+876 000 so that's the one that everyone is looking at right now and trading excuse me so when i do the
+
+275
+00:15:59,090 --> 00:16:00,107
+rollover um here
+
+276
+00:16:00,107 --> 00:16:02,481
+you can see it's very sparse in
+
+277
+00:16:02,481 --> 00:16:04,516
+terms of volume so it's it's
+
+278
+00:16:04,516 --> 00:16:06,551
+pretty obvious that it needs rolling
+
+279
+00:16:06,551 --> 00:16:12,317
+over but you saw the button there where it said click here to roll over obviously i
+
+280
+00:16:12,320 --> 00:16:13,915
+didn't do that straight away and
+
+281
+00:16:13,915 --> 00:16:16,042
+then the button went away all you need
+
+282
+00:16:16,042 --> 00:16:17,637
+to do is go chart perform
+
+283
+00:16:17,637 --> 00:16:22,158
+futures symbol rollover and it will tell you what the current symbol is and the next one
+
+284
+00:16:22,160 --> 00:16:23,711
+now we already know here because
+
+285
+00:16:23,711 --> 00:16:25,779
+we said we want to go from j
+
+286
+00:16:25,779 --> 00:16:27,330
+to k is so we just
+
+287
+00:16:27,330 --> 00:16:33,277
+want to double check that what is suggesting we do is correct it's suggesting we go from j to k great that's correct
+
+288
+00:16:33,280 --> 00:16:34,501
+so click ok there
+
+289
+00:16:34,501 --> 00:16:36,028
+you go can you see
+
+290
+00:16:36,028 --> 00:16:39,998
+how the volume profile is now much more fuller because this is what
+
+291
+00:16:40,000 --> 00:16:42,053
+everyone's trading so that's the correct
+
+292
+00:16:42,053 --> 00:16:44,790
+contract um and that's it guys so you
+
+293
+00:16:44,790 --> 00:16:46,843
+should have just double check obviously
+
+294
+00:16:46,843 --> 00:16:52,318
+make sure that so here in the british pound futures we've got june it says at
+
+295
+00:16:52,320 --> 00:16:54,547
+the top uh b6 m20 so
+
+296
+00:16:54,547 --> 00:16:56,774
+i come down to my quote
+
+297
+00:16:56,774 --> 00:16:59,001
+board and i check b6 m20
+
+298
+00:16:59,001 --> 00:17:00,857
+yep 148 000 that's the most liquid
+
+299
+00:17:01,600 --> 00:17:03,541
+one at the moment in terms
+
+300
+00:17:03,541 --> 00:17:06,129
+of euro future euro dollar it's e6 m20
+
+301
+00:17:06,129 --> 00:17:08,070
+is that what i've got loaded
+
+302
+00:17:08,070 --> 00:17:10,334
+on my depth of market yes i
+
+303
+00:17:10,334 --> 00:17:16,158
+do so i know it's correct okay guys so that should get you going um if you've got
+
+304
+00:17:16,160 --> 00:17:17,611
+any issues obviously just let me
+
+305
+00:17:17,611 --> 00:17:19,545
+know or you can contact sierra chart as
+
+306
+00:17:19,545 --> 00:17:21,479
+well but i'm more than happy to help
+
+307
+00:17:21,479 --> 00:17:23,413
+you so what i want to do now
+
+308
+00:17:23,413 --> 00:17:26,557
+is two things i just want to quickly show you which exchange all
+
+309
+00:17:26,560 --> 00:17:29,603
+of these belong to in case you do want to
+
+310
+00:17:29,603 --> 00:17:32,038
+go through the longer process just remember you'll
+
+311
+00:17:32,038 --> 00:17:34,473
+have to find the symbol load it up
+
+312
+00:17:34,473 --> 00:17:39,038
+on your quote board you'll also have to load up the depth of market but
+
+313
+00:17:39,040 --> 00:17:41,744
+remember the time and sales as we've just
+
+314
+00:17:41,744 --> 00:17:44,448
+gone through together actually loads it up itself
+
+315
+00:17:44,448 --> 00:17:47,152
+automatically but charts and everything else you'll have
+
+316
+00:17:47,152 --> 00:17:49,518
+to do manually or you can do
+
+317
+00:17:51,120 --> 00:17:54,520
+that feature which was edit on if i just bring
+
+318
+00:17:54,520 --> 00:17:57,240
+it over again edit and then translate symbols
+
+319
+00:17:57,240 --> 00:17:59,960
+corrupt current service so you've got various options
+
+320
+00:17:59,960 --> 00:18:04,720
+but in case you do want to go do it manually i just want
+
+321
+00:18:04,720 --> 00:18:07,763
+to show you where each one you'll find them so
+
+322
+00:18:07,763 --> 00:18:10,197
+if we start over to the left the
+
+323
+00:18:10,197 --> 00:18:12,631
+10-year treasury is under cbot real time and
+
+324
+00:18:12,631 --> 00:18:18,717
+it's the zn okay so you've got all so you go down to zn and it will just show you
+
+325
+00:18:18,720 --> 00:18:21,939
+so you can see december's expired march has got no
+
+326
+00:18:21,939 --> 00:18:24,514
+volume it's pretty much expired june september whatever
+
+327
+00:18:24,514 --> 00:18:27,089
+so these are the codes you need just
+
+328
+00:18:27,089 --> 00:18:31,918
+make sure you've got the most liquid one loaded um next is the es which
+
+329
+00:18:31,920 --> 00:18:35,005
+is the e mini s p so for that you
+
+330
+00:18:35,005 --> 00:18:40,250
+need to go down to futures cme guys and look for the s e mini s p 500
+
+331
+00:18:40,560 --> 00:18:44,350
+index es that one okay there's your codes okay guys
+
+332
+00:18:44,350 --> 00:18:47,382
+and then the next one is what crude
+
+333
+00:18:47,382 --> 00:18:50,414
+oil future which we just did anyway but
+
+334
+00:18:50,414 --> 00:18:56,478
+we'll do it again so you find futures nimex is the exchange there you go nimex
+
+335
+00:18:57,200 --> 00:18:59,940
+so you click on that and can you see cl
+
+336
+00:18:59,940 --> 00:19:02,132
+crude oil wti and there's all your expires
+
+337
+00:19:02,132 --> 00:19:04,324
+there's loads here because they expire every month
+
+338
+00:19:04,324 --> 00:19:08,160
+so just find the next three make sure you've got the one with the
+
+339
+00:19:08,160 --> 00:19:11,212
+highest volume then finally what have we got
+
+340
+00:19:11,212 --> 00:19:14,264
+we've got pound futures british pound against the
+
+341
+00:19:14,264 --> 00:19:17,316
+dollar that's also on the cme so you
+
+342
+00:19:17,316 --> 00:19:23,039
+go back to cme yeah and you british pound is b6 right there's all your
+
+343
+00:19:23,040 --> 00:19:26,316
+expires okay guys and then finally it's the
+
+344
+00:19:26,316 --> 00:19:29,592
+euro future so you go to e6 euro
+
+345
+00:19:29,592 --> 00:19:32,868
+fx okay and that's all your expires there
+
+346
+00:19:32,868 --> 00:19:40,239
+so i hope that helps that's all the contracts you need um and then finally guys as i
+
+347
+00:19:40,240 --> 00:19:43,874
+said the gentleman said to me look envy
+
+348
+00:19:43,874 --> 00:19:47,508
+um what if i want to uh for
+
+349
+00:19:47,508 --> 00:19:52,959
+example load up the depth of market but for a different market
+
+350
+00:19:54,400 --> 00:19:56,402
+now the issue is i've custom built these
+
+351
+00:19:56,402 --> 00:19:58,404
+guys as i said um you can purchase
+
+352
+00:19:58,404 --> 00:20:00,406
+this obviously cost you an arm and leg
+
+353
+00:20:00,406 --> 00:20:04,159
+i've given it to you free i'm happy to have done that it's custom built
+
+354
+00:20:04,160 --> 00:20:07,632
+the problem is if you load up a depth of
+
+355
+00:20:07,632 --> 00:20:10,410
+market via sierra chart so let me just
+
+356
+00:20:10,410 --> 00:20:13,188
+show you how to do that so there's
+
+357
+00:20:13,188 --> 00:20:19,438
+various ways guys that you can load up a dome a depth of market and you'll see just
+
+358
+00:20:19,440 --> 00:20:22,754
+how much i've customized this thing especially for you guys
+
+359
+00:20:22,754 --> 00:20:25,405
+so what you do is you go file
+
+360
+00:20:25,405 --> 00:20:28,056
+on the main console this is the main
+
+361
+00:20:28,056 --> 00:20:33,358
+way to do it and you go to open trading dom okay you click on it
+
+362
+00:20:33,360 --> 00:20:37,920
+and you come back to what you're familiar with this little box which will so show you all the
+
+363
+00:20:37,920 --> 00:20:43,840
+futures exchanges you pick what you want guys so let's assume you want to load something different
+
+364
+00:20:43,840 --> 00:20:45,563
+i don't know um the
+
+365
+00:20:45,563 --> 00:20:47,976
+australian dollar for example you can load
+
+366
+00:20:47,976 --> 00:20:50,734
+whatever you want um but so we go
+
+367
+00:20:50,734 --> 00:20:58,318
+to aussie dollar right now um let's say we load the most liquid contract it's going to be june you can check
+
+368
+00:20:58,320 --> 00:21:00,007
+this through your own quote board i'm not
+
+369
+00:21:00,007 --> 00:21:01,483
+going to do this here but i
+
+370
+00:21:01,483 --> 00:21:02,959
+know for a fact that it's june
+
+371
+00:21:02,960 --> 00:21:04,957
+and then so we double click
+
+372
+00:21:04,957 --> 00:21:07,620
+it you see how it's just shown up
+
+373
+00:21:07,620 --> 00:21:09,617
+here a6m20 that's the june 2020
+
+374
+00:21:09,617 --> 00:21:15,277
+contract and we click on open trading dome click on that guys and then we close this
+
+375
+00:21:16,480 --> 00:21:19,136
+and this look at what the standard
+
+376
+00:21:19,136 --> 00:21:22,171
+dome looks like okay so you can see
+
+377
+00:21:22,171 --> 00:21:24,068
+what i've essentially done for
+
+378
+00:21:24,068 --> 00:21:29,759
+you guys i've converted that into you know this beautiful thing that you see here
+
+379
+00:21:30,480 --> 00:21:32,930
+essentially so what you need to do if
+
+380
+00:21:32,930 --> 00:21:35,380
+you wanted to load this same contract but
+
+381
+00:21:35,380 --> 00:21:36,605
+you obviously wanted the
+
+382
+00:21:36,605 --> 00:21:43,038
+nice customized dome uh depth of market all you need to do guys is go to any of the depth of
+
+383
+00:21:43,040 --> 00:21:52,080
+markets click on chart duplicate chart okay so can you see now you've got a spare depth of market here
+
+384
+00:21:52,080 --> 00:21:53,888
+okay so you've got your standard five and
+
+385
+00:21:53,888 --> 00:21:57,053
+you've got six one you can load 50 if you want load as many as
+
+386
+00:21:57,280 --> 00:21:58,850
+you want but you've now got
+
+387
+00:21:58,850 --> 00:22:00,420
+a spare one that you can
+
+388
+00:22:00,420 --> 00:22:03,038
+change so in here you go through the same process
+
+389
+00:22:03,040 --> 00:22:05,548
+now you click on chart chart
+
+390
+00:22:05,548 --> 00:22:08,056
+settings and find and now we
+
+391
+00:22:08,056 --> 00:22:10,564
+go to futures cme australian dollar
+
+392
+00:22:10,564 --> 00:22:19,760
+the june contract right double click on that click okay then click okay there you go guys okay now you've got the
+
+393
+00:22:19,760 --> 00:22:21,497
+um aussie dollar futures on a
+
+394
+00:22:21,497 --> 00:22:23,234
+depth of market in the same
+
+395
+00:22:23,234 --> 00:22:24,971
+format as all the other ones
+
+396
+00:22:24,971 --> 00:22:31,919
+and you can you know you can minimize one of these and you can put it or you can do whatever you want really
+
+397
+00:22:31,920 --> 00:22:35,440
+and there you go aussie dollar you know if you don't trade crude oil and you're more interested in
+
+398
+00:22:35,440 --> 00:22:37,645
+following this so anyway guys
+
+399
+00:22:37,645 --> 00:22:40,732
+i hope that video helped and um
+
+400
+00:22:40,732 --> 00:22:43,378
+you're now more familiar with futures
+
+401
+00:22:43,378 --> 00:22:52,639
+codes and how to get everything running yourself um and again this is probably not going to be that relevant in
+
+402
+00:22:52,640 --> 00:22:55,166
+terms of you changing this code now once
+
+403
+00:22:55,166 --> 00:22:57,692
+you set your delayed data feed code i
+
+404
+00:22:57,692 --> 00:22:58,955
+don't really want you
+
+405
+00:22:58,955 --> 00:23:04,639
+going to a real-time data feed for several months because i want you to practice getting profitable on
+
+406
+00:23:04,640 --> 00:23:06,459
+simulation using delayed data feed and
+
+407
+00:23:06,459 --> 00:23:08,278
+then when the time comes then
+
+408
+00:23:08,278 --> 00:23:10,097
+we can look at that getting
+
+409
+00:23:10,097 --> 00:23:17,678
+you on to real data feed in a few months so i hope that helps um yeah have a great day and if you've got
+
+410
+00:23:17,680 --> 00:23:23,680
+any questions let me know guys cheers
+
+===== END AFTER_SEGMENT =====

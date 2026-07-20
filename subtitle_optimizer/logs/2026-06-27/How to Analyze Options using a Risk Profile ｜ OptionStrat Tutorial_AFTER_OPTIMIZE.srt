@@ -1,0 +1,2836 @@
+===== AFTER_OPTIMIZE (567 entries) =====
+1
+00:00:00,300 --> 00:00:01,800
+大家好，我是Brian。
+What's going on guys, Brian's here.
+
+2
+00:00:02,000 --> 00:00:06,000
+现在，期权策略工具（OptionStrat）绝对是我作为期权交易者最喜欢的工具。
+Now, OptionStrat is hands down my favorite tool to use as an options trader.
+
+3
+00:00:06,200 --> 00:00:10,400
+我们来看的是期权策略工具（OptionStrat）的首页，我强烈推荐它。
+What we're looking at is the landing page for OptionStrat.com and I highly recommend it.
+
+4
+00:00:10,600 --> 00:00:12,284
+如果你是期权交易新手，
+If you're new to trading options and
+
+5
+00:00:12,284 --> 00:00:14,209
+并且希望真正快速启动你的交易生涯，
+you're looking to really jumpstart your career and
+
+6
+00:00:14,209 --> 00:00:18,299
+想要变得更专业更成熟，你会想要使用这样的工具。
+get a lot more polished and professional, you're going to want to use a tool like this.
+
+7
+00:00:18,500 --> 00:00:19,866
+通常来说，如果你使用
+Now, traditionally, if you use
+
+8
+00:00:19,866 --> 00:00:21,779
+思考者剑（Thinkorswim），大多数期权交易者或大多数有经验的
+Thinkorswim, most options traders or most experienced
+
+9
+00:00:21,779 --> 00:00:23,419
+或高级期权交易者会使用
+or advanced options traders will use
+
+10
+00:00:23,419 --> 00:00:26,699
+这里的分析标签，然后进入风险收益图。
+an analyze tab right here and you come to the risk profile.
+
+11
+00:00:27,000 --> 00:00:30,600
+我们现在看到的是我在QQQ（纳斯达克100ETF）上正在运行的一个实际交易。
+This what we're looking at right here is an actual trade that I have running on the QQQ.
+
+12
+00:00:30,600 --> 00:00:31,100
+这是一次波段交易。
+It's a swing.
+
+13
+00:00:31,100 --> 00:00:33,015
+最近我大部分时间都在进行期权的波段交易，
+I usually spend most of my time swing
+
+14
+00:00:33,015 --> 00:00:34,691
+我通过构建
+trading options these days and I structure
+
+15
+00:00:34,691 --> 00:00:36,127
+期权组合来安排我的交易，
+my trades by way of spreads
+
+16
+00:00:36,127 --> 00:00:37,563
+并且我尽力
+and I try to mitigate my
+
+17
+00:00:37,563 --> 00:00:40,196
+降低风险，同时尽可能最大化我的利润。
+risk as well as maximize my profit as best as possible.
+
+18
+00:00:40,400 --> 00:00:43,500
+我们现在看到的是日历差价的实际盈亏曲线。
+What we're looking at is the actual P&L curve for a calendar spread.
+
+19
+00:00:43,700 --> 00:00:46,000
+这个视频不会详细解释期权组合。
+This video is not going to be an explanation in spreads.
+
+20
+00:00:46,000 --> 00:00:48,400
+我只是给大家展示一个我使用它的例子。
+I'm just showing you guys one example of how I'm using it.
+
+21
+00:00:48,700 --> 00:00:50,420
+这可能看起来
+Now this can look a little bit
+
+22
+00:00:50,420 --> 00:00:51,649
+有点让人困惑
+jarring or a little bit
+
+23
+00:00:51,649 --> 00:00:54,599
+或者当你第一次开始使用某种风险收益图时，会感觉有点应接不暇。
+overwhelming when you're first starting to use some sort of risk profile.
+
+24
+00:00:54,600 --> 00:00:56,600
+所以让我简单为大家分解一下。
+So allow me to just break this down very briefly.
+
+25
+00:00:56,800 --> 00:01:02,100
+我们现在看到的，这条青蓝色的线是我的到期日盈亏。
+What we're looking at right here, this cyan bluish line is my P&L at expiration.
+
+26
+00:01:02,300 --> 00:01:03,943
+所以我持有的合约
+So the contracts in which I'm in
+
+27
+00:01:03,943 --> 00:01:07,699
+是3月11日到3月14日的。这就是构建日历差价的方式。
+are the March 11th to March 14th. This is the way you structure a calendar spread.
+
+28
+00:01:07,700 --> 00:01:12,200
+你做空某些合约，然后实际上对相同数量的合约做多，但到期日不同。
+You're short contracts and then you're actually long the same amount of contracts for different expirations.
+
+29
+00:01:12,300 --> 00:01:14,668
+在这个例子中，今天是周三，
+So in this case, today's Wednesday as I'm
+
+30
+00:01:14,668 --> 00:01:16,740
+就在我录制这个视频的时候，这些合约
+actually recording this video and these contracts
+
+31
+00:01:16,740 --> 00:01:19,700
+这些合约周五到期，而另一些合约周一到期。
+expire on Friday and then these contracts expire on Monday.
+
+32
+00:01:20,000 --> 00:01:24,600
+现在构建这个交易后，我们可以看到这条品红色线。
+Now by structuring this trade right here, I can see the magenta pinkish line right here.
+
+33
+00:01:24,900 --> 00:01:27,700
+这就是所谓的T+0线。
+It's called the T plus zero line.
+
+34
+00:01:27,900 --> 00:01:30,000
+这就是当前的盈亏。
+And this is the P&L, my current P&L.
+
+35
+00:01:30,300 --> 00:01:30,900
+就在这里。
+right here.
+
+36
+00:01:31,000 --> 00:01:32,625
+大家看，这个水平位置
+So as you can see, this level right
+
+37
+00:01:32,625 --> 00:01:34,047
+就是QQQ（纳斯达克100ETF）的当前价格。
+here is where the Q's are current.
+
+38
+00:01:34,047 --> 00:01:37,298
+这里显示的就是QQQ（纳斯达克100ETF）的最新成交价。
+This is the last traded price for the Q's right here. And that's what we're seeing.
+
+39
+00:01:37,600 --> 00:01:42,100
+所以当前盈亏显示为-24美元，因此用括号标注。
+So it's saying that my P&L right now is minus $24. And that's why it's in these parentheses.
+
+40
+00:01:42,300 --> 00:01:43,500
+但如果我将
+However, if I were to drag
+
+41
+00:01:43,500 --> 00:01:46,500
+这个向上调整，就能看到盈亏会变成这样。
+this up right here, we can see this is what my P&L would be.
+
+42
+00:01:46,300 --> 00:01:47,762
+假设一下，如果
+So let's just say hypothetically, if
+
+43
+00:01:47,762 --> 00:01:49,224
+QQQ（纳斯达克100ETF）上涨
+the Q's were to move up
+
+44
+00:01:49,224 --> 00:01:50,442
+到340，现在市场
+to 340, now the market is
+
+45
+00:01:50,442 --> 00:01:53,610
+已收盘，但假设QQQ（纳斯达克100ETF）真的涨到340。
+closed right now, but let's just say the Q's actually moved up to 340.
+
+46
+00:01:54,400 --> 00:01:57,200
+这就是在当前价格下的盈亏。
+This is what my P&L would be at this current price.
+
+47
+00:01:57,400 --> 00:01:59,966
+但如果我想知道，如果QQQ（纳斯达克100ETF）在到期日处于
+However, if I wanted to know what would my P&L
+
+48
+00:01:59,966 --> 00:02:01,832
+340时，我的盈亏会是多少，
+be at expiration if the Q's was at
+
+49
+00:02:01,832 --> 00:02:03,698
+这就是对应的这个水平位置。
+340, this is what this level is right here.
+
+50
+00:02:03,700 --> 00:02:06,657
+我们可以一直看到最左边，
+And we can look all the way to the left and this
+
+51
+00:02:06,657 --> 00:02:10,353
+这正是盈亏所在的位置，大约在1,000美元到1,500美元之间。
+is exactly where the P&L would be. So it would be somewhere between $1,000 and $1,500.
+
+52
+00:02:10,600 --> 00:02:13,000
+要获得精确金额，我们只需
+And if to get the exact amount, all we have to do
+
+53
+00:02:13,000 --> 00:02:15,400
+往下看鼠标所在的位置。
+is just look down right here as I'm moving my mouse around.
+
+54
+00:02:15,600 --> 00:02:21,100
+大家可以看到，盈亏显示为1,400美元，精确值是1,416.14美元。
+So you see that it's saying $1,400 would be the P&L, $1,416.14 to be exact.
+
+55
+00:02:21,200 --> 00:02:23,888
+但我只是想避免重复
+But I'm just trying to save myself from having to repeat too
+
+56
+00:02:23,888 --> 00:02:25,680
+太多次数字，因为录制视频时
+many numbers over and over because it gets
+
+57
+00:02:25,680 --> 00:02:26,800
+会非常耗费精力。
+pretty exhausting recording these videos.
+
+58
+00:02:27,200 --> 00:02:29,475
+大家可以看到，在这之上是这条品红色线
+As you can see on top of that is this magenta level
+
+59
+00:02:29,475 --> 00:02:30,612
+就在这里，大家可以看到
+right here and you can see
+
+60
+00:02:30,612 --> 00:02:32,887
+我的盈亏与这里显示的完全一致。
+that my P&L is it matches what it says right here.
+
+61
+00:02:32,900 --> 00:02:34,690
+现在，如果我们向前推进时间,
+Now as we walk forward in time this
+
+62
+00:02:34,690 --> 00:02:36,480
+这是今天的情况，但如果
+is for today but if we were to
+
+63
+00:02:36,480 --> 00:02:38,270
+其实这是明天的情况，但如果
+this is for tomorrow actually but if we
+
+64
+00:02:38,270 --> 00:02:42,298
+推进到周五，可以看到盈亏会上升到334美元。
+were to walk forward in time to Friday you can see that the P&L jumps up to $334.
+
+65
+00:02:42,500 --> 00:02:45,166
+同样，如果我继续持有,
+Again the same deal as if I continue to hold
+
+66
+00:02:45,166 --> 00:02:47,299
+随着时间越来越接近
+as it got closer and closer to power
+
+67
+00:02:47,299 --> 00:02:51,565
+周五的收盘前交易时段，盈亏会逐渐接近上方这条线。
+hour on Friday P&L would start getting closer and closer to this level up here.
+
+68
+00:02:51,500 --> 00:02:53,045
+希腊字母就显示在这里，
+The Greeks are represented right here so this
+
+69
+00:02:53,045 --> 00:02:54,590
+这是头寸的Delta，
+is the delts on the position this is
+
+70
+00:02:54,590 --> 00:02:56,135
+这是Gamma，这是Theta，
+my gamma this is my theta and this
+
+71
+00:02:56,135 --> 00:02:59,998
+这是Vega。如果点击这里的日历差价，我们可以切换回今天，
+is my vega if i were to click this calendar right here we can jump back to today and you
+
+72
+00:03:00,000 --> 00:03:01,300
+就能看到当前的盈亏。
+can see what the current P&L is.
+
+73
+00:03:01,400 --> 00:03:02,525
+所以大家应该差不多
+So you guys pretty much should
+
+74
+00:03:02,525 --> 00:03:05,900
+理解了。你可以在时间轴上前后移动来查看变化。
+get the gist of it. You can kind of walk forward in time and move back and forth.
+
+75
+00:03:06,200 --> 00:03:08,672
+现在，正如我之前提到的，这可能看起来有点复杂，但
+Now, as I mentioned, this can seem a little bit overwhelming, but
+
+76
+00:03:08,672 --> 00:03:10,320
+当你开始熟悉它后,
+as you start getting really familiar with it,
+
+77
+00:03:10,320 --> 00:03:12,998
+就会变得得心应手，使用起来非常简单。
+it just becomes kind of second nature and it's very easy to use.
+
+78
+00:03:13,000 --> 00:03:17,000
+这就是传统风险收益图的一个快速入门。
+So that's a little bit of a crash course or an introduction to the traditional risk profile.
+
+79
+00:03:17,300 --> 00:03:19,665
+现在，我们切换回期权策略工具（OptionStrat），让我
+Now, as we swipe back over to option strat and let me
+
+80
+00:03:19,665 --> 00:03:21,242
+直接跳转到这个页面，因为
+actually just jump over to this page because
+
+81
+00:03:21,242 --> 00:03:24,199
+这是我实际登录的页面，我有一个付费账户。
+this is where I'm actually logged in as I have a paid account with them.
+
+82
+00:03:24,200 --> 00:03:26,687
+如果我想构建相同的交易，或者在构建交易前,
+If I were to structure the same trade or actually before I
+
+83
+00:03:26,687 --> 00:03:28,345
+让我们先跳转到
+structure the trade, let's just jump over to
+
+84
+00:03:28,345 --> 00:03:29,588
+看涨期权，因为这是
+a long call because that's what
+
+85
+00:03:29,588 --> 00:03:30,831
+大多数人熟悉的交易方式,
+most of us are familiar trading,
+
+86
+00:03:30,831 --> 00:03:32,696
+特别是如果你现在才开始交易期权。
+especially if you're now starting out with trading options.
+
+87
+00:03:33,000 --> 00:03:35,200
+你习惯了购买所谓的裸期权。
+You're used to just buying what's referred to as a naked option.
+
+88
+00:03:35,300 --> 00:03:36,936
+所以，如果你只是买入看涨期权，
+So if you just buy a call because
+
+89
+00:03:36,936 --> 00:03:39,799
+因为你认为价格会上涨，那就是在购买裸看涨期权。
+you think price is going to go up, you're buying a naked call option.
+
+90
+00:03:40,100 --> 00:03:41,700
+现在，这里是期权策略工具（OptionStrat）。
+Now, Option strap right here.
+
+91
+00:03:41,700 --> 00:03:44,400
+这些是到期日。这里显示距离到期还有30天。
+These are the expiration. So this is 30 days till expiration.
+
+92
+00:03:44,500 --> 00:03:46,566
+假设我想买下周五到期的看涨期权，
+But let's just say I wanted to buy a call for next
+
+93
+00:03:46,566 --> 00:03:47,082
+那么
+week, Friday. So
+
+94
+00:03:47,082 --> 00:03:48,115
+我只需要
+all I had to do was
+
+95
+00:03:48,115 --> 00:03:50,698
+点击这里，就会显示距离到期还有9天。
+just click this right here. And this is telling me it's nine days till expiration.
+
+96
+00:03:51,000 --> 00:03:53,200
+这里是SPY（标普500ETF）的当前价格。
+This up here is the current price for the SPY.
+
+97
+00:03:53,200 --> 00:03:54,800
+这是实时报价。
+You can see this is real time quotes.
+
+98
+00:03:56,000 --> 00:03:58,280
+如果不想刷新页面，
+If you don't want to refresh the page, you can always just
+
+99
+00:03:58,280 --> 00:04:01,700
+点击这里，期权策略工具（OptionStrat）就会刷新所有内容。但前提是你有付费账户。
+press this and option strap will refresh anything. But again, that's only if you have a paid account.
+
+100
+00:04:01,900 --> 00:04:03,900
+现在我们有SPY（标普500ETF）的当前价格。
+So we have the current price of the SPY.
+
+101
+00:04:04,000 --> 00:04:07,300
+这里是到期日，这里是我选择的执行价。
+We have expiration right here and we have the strike price in which I'm choosing.
+
+102
+00:04:07,500 --> 00:04:10,800
+如果我想买430美元的看涨期权，只需将执行价拖动到430。
+So if I was to drag this, let's just say I wanted to buy the 430 call.
+
+103
+00:04:11,000 --> 00:04:14,900
+下方显示的是该合约的风险收益图。
+What we're looking at down here is the risk profile for that contract.
+
+104
+00:04:15,200 --> 00:04:16,573
+这里
+This right here is
+
+105
+00:04:16,573 --> 00:04:19,320
+显示的是：
+showing that. As long as the SPY remains
+
+106
+00:04:19,320 --> 00:04:23,098
+只要SPY（标普500ETF）在到期时低于这个价格，我就会亏损。
+below this price at expiration, I'll actually be at a loss.
+
+107
+00:04:23,300 --> 00:04:26,200
+如果我想知道能赚多少，只需拖动鼠标。
+If I wanted to know how much I'll be up, all I have to do is just drag my mouse.
+
+108
+00:04:26,200 --> 00:04:27,961
+假设SPY（标普500ETF）
+So let's just say the SPY went
+
+109
+00:04:27,961 --> 00:04:29,470
+在到期时涨到440美元，
+all the way up to 440 by
+
+110
+00:04:29,470 --> 00:04:33,747
+假设其他希腊字母不变，这就是我的盈利金额。
+expiration. Assuming that none of the other Greeks change, this is how much I would be up.
+
+111
+00:04:34,000 --> 00:04:36,600
+大约是360美元。
+So it'd be about $360 right here.
+
+112
+00:04:36,700 --> 00:04:39,500
+如果我想知道收益率，只需点击这里。
+Now, if I wanted to know the percentage on that, all I had to do was just click this.
+
+113
+00:04:39,500 --> 00:04:45,800
+拖动鼠标到这里，可以看到约为支出金额的58%到59%。
+And as I drag my mouse over right here, we're seeing that that's about 59, 58% of the debit paid.
+
+114
+00:04:46,100 --> 00:04:49,100
+如果我买这个裸看涨期权，需要支付634美元。
+Now, if I was to buy this naked call, it's going to cost $634.
+
+115
+00:04:49,200 --> 00:04:52,700
+也就是说，每股6.34美元。
+So in other sense, it's going to cost $6 and $34.
+
+116
+00:04:53,100 --> 00:04:56,300
+这个期权执行价的好处在于，它会自动计算期权乘数。
+What I like that option strike does is it actually does the options multiplier.
+
+117
+00:04:56,300 --> 00:04:59,000
+它会把所有金额乘以100。
+So it multiplies everything by 100 for us.
+
+118
+00:04:59,300 --> 00:05:00,700
+所以我们不需要自己计算。
+So we actually don't have to do the math.
+
+119
+00:05:00,700 --> 00:05:04,500
+这相当于该合约的报价是6.34美元。
+And this is the equivalent of this contract going for $6.34.
+
+120
+00:05:04,800 --> 00:05:06,500
+如果我们切换到思考者剑（Thinkorswim）的话，
+So if we actually jumped over to Thinkorswim.
+
+121
+00:05:09,424 --> 00:05:14,524
+现在来看期权链，选择SPY（标普500ETF）。
+And let's go to the options chain and let's go to the spy right here.
+
+122
+00:05:14,924 --> 00:05:17,624
+关闭这个界面，切换到相同的到期日。
+And then let's close this and go to the same expiration.
+
+123
+00:05:17,624 --> 00:05:20,324
+也就是3月18日，
+So March 18th, we were just looking at the.
+
+124
+00:05:22,224 --> 00:05:24,124
+我们之前看的是430美元行权价的看涨期权。
+We were just looking at the 430 call.
+
+125
+00:05:24,124 --> 00:05:28,924
+向下滚动时，大家可以看到430美元行权价的看涨期权，买价是6.32美元。
+As I scroll down, the 430 call, you guys can see right here, it's going for the bid is 632.
+
+126
+00:05:29,124 --> 00:05:30,824
+卖价是6.34美元。
+The ask is 634.
+
+127
+00:05:31,124 --> 00:05:34,824
+买价和卖价之间的中间价是6.34美元。
+Between the bid and the ask is actually 634.
+
+128
+00:05:34,824 --> 00:05:40,424
+期权策略工具（OptionStrat）采用的是买卖价的中间值。
+So option strat is taking the midpoints, which is referred to as the price between the bid and the ask.
+
+129
+00:05:40,524 --> 00:05:43,824
+如果大家有疑惑，这里显示的就是买价和卖价。
+If you're ever confused, that's what's right up here, the bid and the ask.
+
+130
+00:05:44,124 --> 00:05:48,324
+6.34美元，切换回去后，可以看到价格是6.34美元。
+So 634, we jump back over, we can see 634 or $634.
+
+131
+00:05:48,524 --> 00:05:49,285
+因为这是净支出交易，
+Because it's a debit,
+
+132
+00:05:49,285 --> 00:05:50,427
+因为我们需要支付费用来购买
+because we're paying to actually buy
+
+133
+00:05:50,427 --> 00:05:52,522
+这份合约，所以称为净支出。
+in this contract, that's why it's referred to as a debit.
+
+134
+00:05:52,724 --> 00:05:55,724
+等会我会给大家快速介绍价差策略。
+We'll jump into spreads in a quick second as I introduce those to you guys.
+
+135
+00:05:55,724 --> 00:05:58,424
+如果是净收入价差，这里会显示净收入。
+But if it's a credit spread, it'll say net credit right here.
+
+136
+00:05:58,724 --> 00:06:03,024
+在净支出交易中，最大亏损就是你支付的金额。
+A max loss whenever you have a net debit trade is going to be exactly whatever you paid for it.
+
+137
+00:06:03,224 --> 00:06:06,036
+买入裸看涨期权时，理论上的最大收益
+Now, whenever you buy a naked call, your max profit in theory
+
+138
+00:06:06,036 --> 00:06:07,911
+是无限的，因为没有上限限制
+is infinite because there's nothing to say that
+
+139
+00:06:07,911 --> 00:06:10,723
+SPY（标普500ETF）在到期日前持续上涨。
+the SPY won't go all the way up to infinity by expiration.
+
+140
+00:06:10,724 --> 00:06:12,532
+但这只是理论上的，因为
+But obviously, this is in theory because as
+
+141
+00:06:12,532 --> 00:06:15,923
+现实中总会有上限或阻力。
+we know, there will be some sort of a cap or some sort of resistance.
+
+142
+00:06:16,424 --> 00:06:21,324
+而且数万亿美元不可能在9天内无限涌入市场。
+And trillions and trillions of dollars cannot fly into the market infinitely in nine days.
+
+143
+00:06:21,324 --> 00:06:22,924
+这根本不可能。
+That's just not going to happen.
+
+144
+00:06:23,224 --> 00:06:26,824
+所以大家通常不需要关注最大收益。
+So that's why you don't generally pay attention to the max profit.
+
+145
+00:06:26,824 --> 00:06:29,260
+需要制定交易计划，
+You come up with some sort of a trading game plan in
+
+146
+00:06:29,260 --> 00:06:30,884
+比如亏损时何时止损，
+terms of when are you going to cut
+
+147
+00:06:30,884 --> 00:06:33,523
+盈利时何时止盈。
+the trade if you're losing or when are you going to take profit.
+
+148
+00:06:33,624 --> 00:06:37,024
+就像在思考者剑（Thinkorswim）的风险收益图上，可以调整日期。
+Just like with the risk profile on Thinkorswim, we can actually adjust the dates.
+
+149
+00:06:37,024 --> 00:06:39,024
+假设我们想把它向下调整，
+So let's just say we wanted to pull this down
+
+150
+00:06:39,024 --> 00:06:40,624
+假设这是一个看涨期权，
+and let's just say it's a call that
+
+151
+00:06:40,624 --> 00:06:43,424
+我们只想持有到周五，就设为周五早上这个点。
+we only wanted to hold until Friday. We'll say like Friday morning right here.
+
+152
+00:06:43,824 --> 00:06:45,724
+如果QQQ（纳斯达克100ETF）真的大涨，
+If the QQ key was to actually jump.
+
+153
+00:06:46,224 --> 00:06:48,486
+如果SPY（标普500ETF）真的涨到435，
+If the SPY was to actually jump up to 435,
+
+154
+00:06:48,486 --> 00:06:50,497
+我们可以看到会盈利
+we can see that we'll actually be up
+
+155
+00:06:50,497 --> 00:06:54,519
+56%，或者可以在这里重新打开，看具体金额是多少。
+56% or we can turn this back on right here and see how much would that be.
+
+156
+00:06:55,224 --> 00:06:57,524
+会是352美元。
+It would be $352.
+
+157
+00:06:57,624 --> 00:07:00,499
+但如果SPY（标普500ETF）真的回落到
+However, if the SPY was to actually pull back to
+
+158
+00:07:00,499 --> 00:07:01,936
+周五时跌到425，
+425 by Friday, how much would
+
+159
+00:07:01,936 --> 00:07:03,948
+我们会亏150美元。
+we be down? We'll be down 150 bucks.
+
+160
+00:07:04,724 --> 00:07:07,264
+所以大家已经能看到，
+So you guys can already see how much you'll be
+
+161
+00:07:07,264 --> 00:07:09,804
+无论交易的是股票、ETF还是指数，
+down if whatever stock you're trading or ETF or index,
+
+162
+00:07:09,804 --> 00:07:11,836
+都能看到价格回落时的亏损，
+whatever you're trading, you can see what you'll
+
+163
+00:07:11,836 --> 00:07:13,868
+be down if the price was to pull
+
+164
+00:07:13,868 --> 00:07:17,424
+以及价格上涨时的盈利。
+back as well as how much will you be up if price went up.
+
+165
+00:07:17,624 --> 00:07:19,884
+另外，还可以按时间调整，
+And then you can also adjust it by time because
+
+166
+00:07:19,884 --> 00:07:22,823
+因为期权是一种贬值资产。
+if there's anything you know about options is that they are depreciating assets.
+
+167
+00:07:22,924 --> 00:07:26,224
+所以当我们在这里向上滑动时，
+So as we just slide this up here, we can see that our.
+
+168
+00:07:26,524 --> 00:07:29,248
+会发现盈亏平衡点被不断推高，
+Break even price is actually getting pushed higher and higher
+
+169
+00:07:29,248 --> 00:07:31,427
+因为持有期权时，
+because as we're continuing to hold that option
+
+170
+00:07:31,427 --> 00:07:34,423
+时间在侵蚀其价值，这就是Theta。
+time is eating away at it and that's what theta is
+
+171
+00:07:34,624 --> 00:07:36,660
+所以如果想查看希腊字母，
+so if you wanted to know where the greeks were
+
+172
+00:07:36,660 --> 00:07:38,696
+只需点击这里，
+all you had to do is just click this and
+
+173
+00:07:38,696 --> 00:07:40,121
+滑动后就能看到
+swipe over and we can see our
+
+174
+00:07:40,121 --> 00:07:41,750
+Delta、Theta、Gamma和Vega。
+delta theta gamma and vega so as we
+
+175
+00:07:41,750 --> 00:07:45,822
+回到期权链界面，这些指标都放在了顶部，
+jump back to the options chain i have this up here at the top so we have delta theta vega
+
+176
+00:07:46,124 --> 00:07:48,516
+是期权交易初期最重要的希腊字母。
+which are the key most important greeks when you're first
+
+177
+00:07:48,516 --> 00:07:52,823
+所以给不了解的朋友简单介绍：
+starting out to trade options so as a brief refresher or introduction to anyone that doesn't know this
+
+178
+00:07:53,224 --> 00:07:56,410
+Delta本质上是你的方向性风险或方向性敞口，
+delta is essentially your directional risk or your directional exposure
+
+179
+00:07:56,410 --> 00:07:59,596
+换句话说，
+or in other words a way to say if a
+
+180
+00:07:59,596 --> 00:08:01,188
+是判断一个人是看涨还是
+person is actually bullish or
+
+181
+00:08:01,188 --> 00:08:03,417
+如果 Delta 为正，
+bearish if you have a positive delta
+
+182
+00:08:03,417 --> 00:08:06,921
+说明你在对标的资产做看涨押注
+that means you're you're taking on a bullish bet for that
+
+183
+00:08:07,024 --> 00:08:09,794
+这里的 Theta 代表时间
+Underlying theta right here is a representation of how time
+
+184
+00:08:09,794 --> 00:08:12,564
+会如何影响期权
+is going to affect the option and then vega is
+
+185
+00:08:12,564 --> 00:08:14,503
+Vega 则是
+how volatility is going to affect the
+
+186
+00:08:14,503 --> 00:08:16,719
+波动率如何影响期权
+option so one way i like to introduce
+
+187
+00:08:16,719 --> 00:08:20,320
+我向新手介绍希腊字母的一个方法是
+this to new traders is just think of it as d as direction
+
+188
+00:08:20,824 --> 00:08:23,042
+把它们想象成：D 代表方向
+t as time and then v as volatility
+
+189
+00:08:23,042 --> 00:08:26,923
+T 代表时间，V 代表波动率
+and that's how they tie right into the option right here so so direction
+
+190
+00:08:27,324 --> 00:08:29,917
+它们就是如此直接与期权挂钩
+time and volatility gamma is something that you can kind
+
+191
+00:08:29,917 --> 00:08:31,992
+Gamma 是新手刚开始可以暂时忽略的
+of disregard when you're first starting out only
+
+192
+00:08:31,992 --> 00:08:35,623
+因为理解起来可能有点复杂
+because it could be a little bit complicated to get wrap your head around
+
+193
+00:08:35,924 --> 00:08:38,436
+但为了这个视频的解释
+but to explain it for this video gamma is just
+
+194
+00:08:38,436 --> 00:08:40,446
+Gamma 只是 Delta 的变化率
+the rate and change in delta for every
+
+195
+00:08:40,446 --> 00:08:41,953
+标的资产每变动 1 美元
+dollar that the underlying moves what's
+
+196
+00:08:41,953 --> 00:08:43,460
+这里要记住的重点是
+important to take away right here
+
+197
+00:08:43,460 --> 00:08:45,721
+我们持有的是负 Theta 头寸
+is that we can see we have a negative
+
+198
+00:08:45,924 --> 00:08:49,271
+这意味着每过一天
+theta position and that's saying that for every dollar for
+
+199
+00:08:49,271 --> 00:08:53,288
+持有合约就会损失 42.70 美元
+every day that we actually hold this contract we're going to lose 42.70
+
+200
+00:08:54,024 --> 00:08:57,061
+因为时间在侵蚀合约价值
+just for holding it because time is eating away at
+
+201
+00:08:57,061 --> 00:09:00,098
+但如果 SPY（标普500ETF）每上涨 1 美元
+the contract however for every one dollar that the spy
+
+202
+00:09:00,098 --> 00:09:01,920
+我们将赚取 45.50 美元
+goes up we're going to make 45.50
+
+203
+00:09:03,024 --> 00:09:04,890
+大家可以看到
+so you guys can see that this right
+
+204
+00:09:04,890 --> 00:09:06,756
+这里的收益风险比并不理想
+here the ratio is not necessarily that good
+
+205
+00:09:06,756 --> 00:09:09,322
+但这是裸期权交易固有的特性
+but that's just what happens inherently whenever you're trading naked options
+
+206
+00:09:09,724 --> 00:09:11,847
+在图表上查看的另一种方式是
+another way to actually view this on the chart is
+
+207
+00:09:11,847 --> 00:09:13,970
+如果我们选择这个表格
+if we were to click this table such a before
+
+208
+00:09:13,970 --> 00:09:16,093
+在期权策略工具（OptionStrat）出现之前
+option strat came along there were a lot of old
+
+209
+00:09:16,093 --> 00:09:17,791
+过去有很多旧服务会展示这类
+services that used to show this type of
+
+210
+00:09:17,791 --> 00:09:19,277
+表格
+table right here and this is pretty
+
+211
+00:09:19,277 --> 00:09:20,763
+展示的信息几乎相同，如果我们
+much representing the same information if we
+
+212
+00:09:20,763 --> 00:09:23,522
+把范围扩大，就能获取更多
+just increase this out so we can actually get a little bit more
+
+213
+00:09:24,924 --> 00:09:26,257
+信息。如果我
+information right here if I
+
+214
+00:09:26,257 --> 00:09:28,123
+滚动这里，其实是在调整这个
+scroll this this is just adjusting this
+
+215
+00:09:28,123 --> 00:09:29,989
+参数，这样就能看到 429，
+right here so we can see like 429
+
+216
+00:09:29,989 --> 00:09:31,322
+31、33、34，这样能更精细地展示
+31 33 34 this is really getting it
+
+217
+00:09:31,322 --> 00:09:34,255
+信息，比如 29、30、31、33、34、35。
+to be a little bit more nuanced so here we go 29 30 31 33 34 35
+
+218
+00:09:37,024 --> 00:09:39,336
+所以，这正是我们想看的每一个行权价，
+So just exactly every strike price in which we'd want
+
+219
+00:09:39,336 --> 00:09:41,648
+理论上，从这里到无限远，如果我们
+to see between here and infinity in theory, if we
+
+220
+00:09:41,648 --> 00:09:43,498
+把滑块一直向上滑，
+were to just slide this all the way
+
+221
+00:09:43,498 --> 00:09:47,891
+你会看到，能显示到 533，但我们不需要这么多信息。
+up, you see, we're seeing all the way up to 533, but we don't need to see that much information.
+
+222
+00:09:48,124 --> 00:09:51,824
+所以我把它向下滑。这里显示的是顶部的日期。
+So I'm just sliding it down. What this is saying here is these are our dates at the top.
+
+223
+00:09:52,024 --> 00:09:57,524
+假设到 3 月 14 日周一，如果 SPY（标普500ETF）在上午 9:30
+So let's just say by Monday, March 14th, if the SPY at 9.30 a.m.
+
+224
+00:09:57,624 --> 00:10:01,224
+以 434 美元开盘，我们就会盈利。
+Was to open up at 4.34, we'll be up.
+
+225
+00:10:02,224 --> 00:10:08,524
+鼠标悬停在这里，这个 121 表示，在 9:30 时，这个行权价能让我们盈利 121 美元
+As we hover our mouse this right here 121 so at 9 30 this is the strike price will be up 121
+
+226
+00:10:09,124 --> 00:10:11,448
+如果我们持有到
+if we were to hold this for the until the
+
+227
+00:10:11,448 --> 00:10:13,307
+一天结束，实际盈利只有 104 美元，
+end of the day will actually only be
+
+228
+00:10:13,307 --> 00:10:17,258
+因为时间在流逝，第二天盈利则只有 51 美元。
+up 104 because time is passing by and then again the next day now will only be up 51
+
+229
+00:10:18,124 --> 00:10:20,193
+所以，如你所见，如果继续持有
+so as you can see as we continue to hold
+
+230
+00:10:20,193 --> 00:10:21,848
+这个期权，我们需要标的价格
+this option we actually need the spot to
+
+231
+00:10:21,848 --> 00:10:23,089
+不断上涨，越来越高。
+go further and further and further
+
+232
+00:10:23,089 --> 00:10:24,330
+回到图表时，
+as we jump back if we
+
+233
+00:10:24,330 --> 00:10:27,020
+这就是它在这里向我们展示这个的原因
+jump back to the graph that's why it's showing us this right here
+
+234
+00:10:28,124 --> 00:10:39,624
+我们需要 SPY（标普500ETF）价格实际超过 436.34 美元，因为行权价是 430 美元，而我们为合约支付了 6.34 美元。
+We need the SPY actually higher than $436.34 because our strike price is $430 and we paid $6.34 for the contract.
+
+235
+00:10:39,624 --> 00:10:41,427
+所以这里的 6.34 美元是
+So that's $6.34 right here is added to
+
+236
+00:10:41,427 --> 00:10:46,065
+加在行权价上的，这就是我们需要价格超过这个值才能盈利的原因。
+our strike price and that's what we need the price to be over in order to be profitable.
+
+237
+00:10:46,524 --> 00:10:50,124
+现在大多数人，包括我们，交易期权时，通常不会持有到期日。
+Now most people, most of us, whenever we're trading options, we're not holding till expiration.
+
+238
+00:10:50,124 --> 00:10:51,964
+我们只是买入期权，然后
+We're just buying the option and then
+
+239
+00:10:51,964 --> 00:10:53,804
+寻找机会以更高的价格
+looking to flip the premium for a
+
+240
+00:10:53,804 --> 00:10:57,222
+转手权利金，有时当天，有时只持有几天。
+higher price, sometimes in the same day, sometimes just for a couple days.
+
+241
+00:10:57,424 --> 00:10:59,490
+我还喜欢的是，我们可以点击
+What I like that's also neat is we can click
+
+242
+00:10:59,490 --> 00:11:01,143
+这里的合约价值，
+this right here, the contract value, and you
+
+243
+00:11:01,143 --> 00:11:03,623
+就能看到到期时合约的价值。
+can actually see how much the contract would be going on expiration.
+
+244
+00:11:03,624 --> 00:11:07,024
+就像我们刚才提到的，如果 SPY（标普500ETF）未能站上 430，我们实际上会
+So as we just mentioned, if the SPY is not above 430, we'll actually...
+
+245
+00:11:07,024 --> 00:11:08,301
+亏损。但如果
+actually lose money but if the
+
+246
+00:11:08,301 --> 00:11:09,578
+SPY（标普500ETF）涨到 430 到 434，我们会看到
+spy was at 40 to 34 we'll see
+
+247
+00:11:09,578 --> 00:11:13,197
+合约价值为 5 美元，这意味着我们仍会亏损
+that the contract will be going for five bucks which means we would still be losing money
+
+248
+00:11:14,024 --> 00:11:16,001
+我们需要合约价值
+if we we would need the contract to be going
+
+249
+00:11:16,001 --> 00:11:17,385
+超过 6.34 美元，
+for over six dollars and 34 cents in
+
+250
+00:11:17,385 --> 00:11:18,373
+才能
+order for us to actually
+
+251
+00:11:18,373 --> 00:11:19,757
+实现盈利，因此我们需要
+be profitable so we would need the
+
+252
+00:11:19,757 --> 00:11:22,723
+SPY（标普500ETF）涨到我们刚才提到的价位
+spy to go all the way up to the price in which we just mentioned
+
+253
+00:11:23,124 --> 00:11:25,264
+但假设 SPY（标普500ETF）直接飙升到
+but let's just say the spy jumped all the way
+
+254
+00:11:25,264 --> 00:11:26,976
+450，这份合约的价值将是 19 美元，
+up to 450 this contract will be going for 19
+
+255
+00:11:26,976 --> 00:11:29,116
+这是一个非常实用的视图，
+bucks so this is also a unique view that i
+
+256
+00:11:29,116 --> 00:11:33,396
+如果我们回到当前的盈亏曲线，
+really like right here if we just jump back to the traditional pnl curve that we're looking at right here
+
+257
+00:11:34,824 --> 00:11:36,445
+只需选择该标签页，
+We just have to click that tab. And
+
+258
+00:11:36,445 --> 00:11:38,066
+同样，我们可以向下拉动，
+again, we can pull this down and this
+
+259
+00:11:38,066 --> 00:11:39,484
+这样就能看到
+is how we can see what it
+
+260
+00:11:39,484 --> 00:11:42,522
+在计划退出交易的当天会是什么样子。
+would look like at the actual day in which we're thinking about exiting the trade.
+
+261
+00:11:42,624 --> 00:11:48,524
+交易期权时，隐含波动率非常重要，因此 Vega 也很关键。
+Now, when you're trading options, implied volatility is very important and that's why your vega is pretty important also.
+
+262
+00:11:48,824 --> 00:11:50,796
+如果你买入看涨或看跌期权，
+If you buy a call or a put, which means
+
+263
+00:11:50,796 --> 00:11:51,979
+也就是说你在买入裸期权，
+you're just buying a naked option,
+
+264
+00:11:51,979 --> 00:11:53,162
+你的 Vega 总是
+your vega is always going to
+
+265
+00:11:53,162 --> 00:11:55,922
+为正数，而隐含波动率对你有利。
+be positive and implied volatility is going to be a good thing for you.
+
+266
+00:11:55,924 --> 00:11:59,424
+因此，隐含波动率上升时，期权价值也会随之上涨。
+So as implied volatility increases, so will the value of your option.
+
+267
+00:11:59,624 --> 00:12:01,927
+如果我们向下拉动，假设
+So if we were to pull this down, let's just
+
+268
+00:12:01,927 --> 00:12:03,769
+我们持有到下周一，
+say we were to hold this until next
+
+269
+00:12:03,769 --> 00:12:06,762
+如果 SPY（标普500ETF）涨到 440，我们将盈利 540 美元。
+week, Monday, if the SPY was to go to 440, we'll actually be up $540.
+
+270
+00:12:07,224 --> 00:12:14,024
+但如果隐含波动率飙升且 SPY（标普500ETF）涨到 540，我们将盈利 780 美元。
+However, if implied volatility was to spike and the SPY went to 540, you see we'll be actually be up $780.
+
+271
+00:12:14,324 --> 00:12:15,324
+所以收益会略高一些。
+So a little bit more.
+
+272
+00:12:15,824 --> 00:12:18,737
+但随着 SPY（标普500ETF）持续上涨，
+However, as the SPY continues to go up, usually implied
+
+273
+00:12:18,737 --> 00:12:22,523
+隐含波动率通常会小幅下降，收益也会随之减少。
+volatility comes down a little bit. So we won't be up as much.
+
+274
+00:12:22,824 --> 00:12:24,961
+我们可以切换视图，
+We can always switch this over to see what would
+
+275
+00:12:24,961 --> 00:12:26,671
+看看如果我们实际持有
+happen if we were to actually have a
+
+276
+00:12:26,671 --> 00:12:29,022
+一个看跌期权，且预期 SPY（标普500ETF）会回调。
+put and we thought the SPY was going to pull back.
+
+277
+00:12:29,224 --> 00:12:31,048
+如果重置隐含波动率，
+If we reset the implied volatility,
+
+278
+00:12:31,048 --> 00:12:33,480
+且 SPY（标普500ETF）下周回落到
+if the SPY was to come back to,
+
+279
+00:12:33,480 --> 00:12:36,520
+假设回落到 400 点，这个看跌期权的收益会是…
+we'll say, 400 by next week, this put would be going...
+
+280
+00:12:37,124 --> 00:12:39,224
+看跌期权的收益将达到 1,900 美元。
+put would have a profit of $1,900.
+
+281
+00:12:39,524 --> 00:12:43,224
+但 SPY（标普500ETF）回落时，隐含波动率通常会上升。
+However, implied volatility usually increases as the SPY is coming back.
+
+282
+00:12:43,224 --> 00:12:47,324
+现在，我故意夸大隐含波动率的上升幅度，只是为了演示。
+Now, I'm exaggerating how much implied volatility would increase here just to demonstrate.
+
+283
+00:12:47,424 --> 00:12:54,524
+如果 SPY（标普500ETF）回落到 400 点，收益会达到 2,034 美元，而非之前的 1,900 美元和这里的 80 美元。
+But if we came to 400, you see now we'll actually be up $2,034 versus the $1,900 and 80 bucks right here.
+
+284
+00:12:56,124 --> 00:12:57,063
+这个工具的另一个亮点是，
+Other things that are neat about
+
+285
+00:12:57,063 --> 00:12:58,002
+大家可能已经注意到，
+this is if we, as you
+
+286
+00:12:58,002 --> 00:12:59,723
+我刚刚把它切换成了看跌期权。
+guys noticed, I actually just switched this over to a put.
+
+287
+00:12:59,824 --> 00:13:02,124
+我可以点击这里，将它切换回看涨期权。
+So I can switch it to a call just by clicking this right here.
+
+288
+00:13:02,124 --> 00:13:05,324
+你们可以在这里查看该期权的更多详细信息。
+You can get a little bit of a breakdown for more information for this option.
+
+289
+00:13:05,324 --> 00:13:07,019
+比如可以看到成交量，
+So you can see the volume,
+
+290
+00:13:07,019 --> 00:13:08,714
+未平仓合约、当前买价，
+the open interest, the current bid
+
+291
+00:13:08,714 --> 00:13:10,409
+卖价，
+in the ass, the IV, the
+
+292
+00:13:10,409 --> 00:13:11,822
+隐含波动率，以及希腊字母。
+other, the Greeks right here.
+
+293
+00:13:12,024 --> 00:13:14,924
+但我们还可以添加其他期权，对吧？可以再添加一个期权。
+But we can also add this, right? We can add another option.
+
+294
+00:13:15,024 --> 00:13:16,985
+假设我们想卖出
+So let's just say we wanted to sell
+
+295
+00:13:16,985 --> 00:13:18,946
+一个看涨期权，然后将它拖动到这里。
+a call and then drag this right here.
+
+296
+00:13:18,946 --> 00:13:22,623
+这样就构建了一个看涨价差策略，这是主要的垂直价差策略之一。
+We're turning this into what's called a bull call spread, one of the key verticals.
+
+297
+00:13:22,824 --> 00:13:26,154
+我非常喜欢期权策略工具（OptionStrat），尤其是对期权交易新手，
+So why I really like option strap for new traders or people
+
+298
+00:13:26,154 --> 00:13:28,374
+或者那些想深入学习期权策略的人，
+that are now looking to be option spread
+
+299
+00:13:28,374 --> 00:13:33,924
+你们可以点击这里，它会列出所有流行的期权策略。
+enthusiasts, you can actually click this right here and it has a list of all of the popular option strategies.
+
+300
+00:13:34,024 --> 00:13:36,482
+其中四个最主要的策略，是大家通常会学习的，
+And the four main ones that people mostly learn in
+
+301
+00:13:36,482 --> 00:13:38,448
+初学者通常会先接触这四个策略，
+the beginning are these four right here, which
+
+302
+00:13:38,448 --> 00:13:39,923
+它们被称为垂直价差。
+are referred to as vertical spreads.
+
+303
+00:13:40,224 --> 00:13:43,224
+垂直价差可以分为信用价差或借记价差。
+Vertical spreads are either classified as credit spreads or debit spreads.
+
+304
+00:13:43,224 --> 00:13:45,090
+我非常喜欢开发者
+So I really like how the developer was
+
+305
+00:13:45,090 --> 00:13:46,490
+将这些内容进行分类
+able to break this down and
+
+306
+00:13:46,490 --> 00:13:48,123
+让界面变得非常易用。
+make it very easy or user friendly.
+
+307
+00:13:48,324 --> 00:13:49,892
+他用绿色标注这些
+He made it green to show that these
+
+308
+00:13:49,892 --> 00:13:51,460
+通常是看涨交易。然后他用
+are usually bullish trades. And then he made
+
+309
+00:13:51,460 --> 00:13:53,224
+红色标注这些，表示它们是看跌交易。
+these red to show that these are bearish trades.
+
+310
+00:13:53,424 --> 00:13:55,624
+你可以看到中性交易被分类在这里。
+You can see the neutral trades are classified right here.
+
+311
+00:13:55,824 --> 00:13:59,024
+如果你想直接买入看涨期权，这意味着你做多看涨期权。
+If you're looking to just buy a call, that means you're long a call.
+
+312
+00:13:59,124 --> 00:14:01,324
+如果你想直接买入看跌期权，这意味着你做多看跌期权。
+If you're looking to buy a put, that means you're long put.
+
+313
+00:14:01,524 --> 00:14:05,024
+如果你持有某只股票的股份并想卖出看涨期权，这被称为备兑看涨期权。
+If you own shares in a stock and you wanted to sell a call, that's called a covered call.
+
+314
+00:14:05,124 --> 00:14:07,024
+这在这里被列出，因为这是一个
+And that's what's listed as here because it's an income.
+
+315
+00:14:07,124 --> 00:14:08,704
+基于收益的策略，因为你持有股份
+based strategy because you own shares
+
+316
+00:14:08,704 --> 00:14:10,810
+并且只是想通过卖出
+and you're just looking to create a little
+
+317
+00:14:10,810 --> 00:14:12,390
+你所持股份的看涨期权
+bit more extra profit on the
+
+318
+00:14:12,390 --> 00:14:15,023
+来创造一些额外的收益。
+side by selling calls on the shares that you own.
+
+319
+00:14:15,324 --> 00:14:16,024
+这是一个不同的策略。
+That's something different.
+
+320
+00:14:16,024 --> 00:14:19,724
+而且，我并不打算深入讲解所有这些不同的策略或价差。
+And again, I'm not trying to get into all of these different strategies or different spreads.
+
+321
+00:14:20,024 --> 00:14:21,344
+这只是为了
+This is sort of to be
+
+322
+00:14:21,344 --> 00:14:23,104
+作为一个引导，让你
+an introduction or a gateway for you to
+
+323
+00:14:23,104 --> 00:14:25,524
+能够自己进一步研究这些策略。
+actually go in and research some of these on your own.
+
+324
+00:14:25,724 --> 00:14:27,978
+你肯定想要的一本书是
+The book in which you're definitely going to
+
+325
+00:14:27,978 --> 00:14:29,668
+《期权波动性与定价》，
+want to get is called the
+
+326
+00:14:29,668 --> 00:14:31,922
+作者是Sheldon Natenberg。
+Option Volatility and Pricing Book by Sheldon Natenberg.
+
+327
+00:14:32,124 --> 00:14:35,917
+它常被称作期权交易者的圣经，
+It's often referred to as the Bible for options traders, and it
+
+328
+00:14:35,917 --> 00:14:39,710
+它会涵盖你需要知道的关于希腊字母的所有内容，以及
+will go over everything you need to know regarding the Greeks, different
+
+329
+00:14:39,710 --> 00:14:41,922
+在不同市场环境下使用的不同策略。
+strategies to use for different market environments.
+
+330
+00:14:42,124 --> 00:14:44,874
+这本书绝对不是轻松的读物，但它确实
+It's by no means an easy read, but it is
+
+331
+00:14:44,874 --> 00:14:48,724
+这是必须掌握的基础，尤其是如果你想认真对待自己的交易生涯。
+a staple to have, especially if you're looking to take your trading career seriously.
+
+332
+00:14:48,924 --> 00:14:52,424
+如果你想全职从事交易，特别是期权交易，这是你必须要做的。
+And this is something you want to do for full time, especially if you're trading options.
+
+333
+00:14:52,624 --> 00:14:55,195
+现在我们来看一下我之前给大家展示的那个差价组合，
+Now let's take a look at the spread that I showed you
+
+334
+00:14:55,195 --> 00:14:56,695
+就是日历差价
+guys earlier, which was the Cal and
+
+335
+00:14:56,695 --> 00:14:58,623
+我正在用QQQ（纳斯达克100ETF）操作这个日历差价。
+Nicole spread in which I'm running on the QQQ.
+
+336
+00:14:58,924 --> 00:15:01,924
+我先输入标的代码，然后调整到期日。
+So I'm just going to type the ticker in. I'm going to adjust my expiration.
+
+337
+00:15:01,924 --> 00:15:07,424
+正如我之前提到的，我做空了14日的行权价，然后做多了16日的行权价。
+So as I mentioned, I'm short the 14th strikes and then I'm long the 16th.
+
+338
+00:15:07,424 --> 00:15:09,481
+现在我们点击这里，
+So as we press those right here, let's
+
+339
+00:15:09,481 --> 00:15:12,823
+回到界面，输入QQQ再确认一下。
+just jump back and let's type in QQQ and just double check that.
+
+340
+00:15:14,324 --> 00:15:16,324
+我会切换到分析标签，这样我们就能看到，
+I'm going to go to the analyze tab and we
+
+341
+00:15:16,324 --> 00:15:18,924
+我做空了11日的行权价，实际上做多了14日的行权价。
+can see. So I'm short the 11th and I'm actually long the 14th.
+
+342
+00:15:19,624 --> 00:15:22,024
+所以是做空11日，做多14日。
+So short the 11th and long the 14th.
+
+343
+00:15:22,124 --> 00:15:23,664
+现在市场已经收盘了。我开仓时，
+So the market is closed. When I opened
+
+344
+00:15:23,664 --> 00:15:25,204
+有一个到期日，
+the trade, there was an expiration, which was
+
+345
+00:15:25,204 --> 00:15:27,322
+就是今天，因为今天这个视频是在周三录制的。
+today because today this video is being recorded on a Wednesday.
+
+346
+00:15:27,424 --> 00:15:28,924
+这让我刚才有点困惑。
+So that just threw me off for a second.
+
+347
+00:15:29,324 --> 00:15:34,424
+但我的行权价是340美元，因为我对QQQ（纳斯达克100ETF）看涨，而且我现在持有5手。
+But my strike price is $340 as I'm bullish on the Qs. And I'm actually in five of these.
+
+348
+00:15:34,424 --> 00:15:36,100
+如果我们点击这里，
+So if we just click this, I can
+
+349
+00:15:36,100 --> 00:15:38,823
+我可以把数量调整到5手，这就是我当前的持仓。
+actually bump this up to five. And this is currently what I'm in.
+
+350
+00:15:39,224 --> 00:15:41,024
+通常我会操作10手这样的规模。
+Usually I'll run something like this of 10.
+
+351
+00:15:41,024 --> 00:15:43,124
+所以明天如果行情合适，我会逐步加仓。
+So I'll just kind of scale in tomorrow if I like.
+
+352
+00:15:43,124 --> 00:15:45,124
+如果我得到确认信号或者喜欢价格走势，
+If I get confirmation or I like the price action,
+
+353
+00:15:45,124 --> 00:15:47,924
+我就会再加5手，逐步把持仓增加到10手。
+I'll just add the extra five, scale my way all the way up to 10.
+
+354
+00:15:48,324 --> 00:15:52,224
+现在很cool的一点是，默认情况下这些参数是关联的，但你可以随时取消关联。
+Now what's cool is by default, these things are linked, but you can always unlink this.
+
+355
+00:15:52,224 --> 00:15:54,147
+假设你想多买几手，
+So let's just say you wanted to buy a couple
+
+356
+00:15:54,147 --> 00:15:57,223
+比如我持有7手，然后做空5手。
+extra of these. So I'm in seven of these and then I'm shorting five of these.
+
+357
+00:15:57,224 --> 00:15:59,924
+这是一个稍微不同的交易，但我想展示给大家看看。
+It's a little bit of a different trade, but I just wanted to show you guys that.
+
+358
+00:16:00,424 --> 00:16:03,438
+对于大多数观看这个视频的朋友来说，
+By default, for most of you guys, especially if you're watching this
+
+359
+00:16:03,438 --> 00:16:06,452
+默认情况下你可能会保持关联状态，
+video, you're probably going to just keep this as linked as you're
+
+360
+00:16:06,452 --> 00:16:10,722
+因为你可能不会操作非平衡蝶式差价、反向比率差价或其他更高级的差价组合。
+not going to be running unbalanced butterflies or back ratios and different types of more advanced spreads.
+
+361
+00:16:10,924 --> 00:16:12,224
+我只是想给大家演示一下。
+But I just wanted to show you guys that.
+
+362
+00:16:12,424 --> 00:16:14,514
+大家也可以点击这里，
+You can also, if we were to click this, let's
+
+363
+00:16:14,514 --> 00:16:16,186
+假设我不想买
+just say I wanted to, instead of buying
+
+364
+00:16:16,186 --> 00:16:19,322
+3月14日的合约，而是想把到期日往后延一点。
+the March 14th contracts, I just wanted to push that out a little bit further.
+
+365
+00:16:19,624 --> 00:16:22,924
+只需点击‘更改到期日’，就能直接跳转到后续日期。
+All I'd have to do is just press change expiration and I can jump forward like that.
+
+366
+00:16:23,124 --> 00:16:24,924
+大家可以看到，到期日已经往后延了。
+And you can see it just pushed it a little bit further.
+
+367
+00:16:25,224 --> 00:16:26,424
+或者直接点击这里，
+Or I can just click this
+
+368
+00:16:26,424 --> 00:16:27,624
+再往后延一点，
+and then push it a little
+
+369
+00:16:27,624 --> 00:16:30,024
+就能查看对差价的影响。
+bit further to see how this is going to affect the spread.
+
+370
+00:16:30,224 --> 00:16:32,924
+对于熟悉日历差价的交易者，
+Now, anyone that's used to running calendar spreads, you guys would already
+
+371
+00:16:32,924 --> 00:16:34,724
+你们应该知道调整到期日
+know what pushing and changing the expiration dates,
+
+372
+00:16:34,724 --> 00:16:36,524
+会如何影响相关的希腊字母。
+how that's going to affect the certain Greeks.
+
+373
+00:16:36,624 --> 00:16:38,385
+同样地，我可以在这里滑动，
+But the same way, I can just scroll this over
+
+374
+00:16:38,385 --> 00:16:40,323
+查看这个仓位的希腊字母。
+right here and we can see the Greeks on this position.
+
+375
+00:16:40,324 --> 00:16:42,624
+我的Delta为正，说明我对这笔交易看涨。
+So my delta is positive, which means I'm bullish on the trade.
+
+376
+00:16:42,924 --> 00:16:46,324
+我的Theta为正，说明时间流逝对我有利。
+My theta is positive, which means I'm benefiting on an increase in time.
+
+377
+00:16:46,524 --> 00:16:50,924
+我的Vega为正，说明隐含波动率上升对我有利。
+And then my vega is positive, which means I benefit if there's an increase in implied volatility.
+
+378
+00:16:51,124 --> 00:16:53,790
+大家可以看到，如果我调整隐含波动率，
+So as we see, if I drag the implied volatility, you guys
+
+379
+00:16:53,790 --> 00:16:57,123
+就能看到它对我的日历差价的影响。
+see what it's doing to my tent, as is referred to as a calendar spread.
+
+380
+00:16:57,324 --> 00:17:03,024
+这说明在到期时，如果QQQ（纳斯达克100ETF）价格处于这两个价位之间，我就会盈利。
+All this is saying is at expiration, if the Q's is between these two prices, I'll be profitable.
+
+381
+00:17:03,124 --> 00:17:04,324
+能盈利多少呢？
+How much will I be profitable?
+
+382
+00:17:04,524 --> 00:17:07,024
+这时候就需要用这样的工具来滑动查看。
+That's where we use a tool like this to be able to slide it.
+
+383
+00:17:07,124 --> 00:17:08,249
+左右滑动查看
+left and right to see
+
+384
+00:17:08,249 --> 00:17:09,824
+现在先把隐含波动率重置，
+how much now let's just reset implied
+
+385
+00:17:09,824 --> 00:17:11,624
+因为我知道自己不会涨这么多，
+volatility before i get too excited because i
+
+386
+00:17:11,624 --> 00:17:15,899
+这笔交易我预期能赚约500美元。
+definitely know i won't be up that much i'm looking to make about 500 bucks or so on this trade
+
+387
+00:17:16,424 --> 00:17:18,638
+但我也清楚这是一份非常短期的合约，
+but i also know this is a very short-term contract
+
+388
+00:17:18,638 --> 00:17:20,409
+因为大家可以看到，它只剩
+because as you can see it only expires
+
+389
+00:17:20,409 --> 00:17:22,623
+大约一天半就到期了，
+in a day and a half essentially because the uh
+
+390
+00:17:22,924 --> 00:17:25,313
+因为我在录制视频时，市场已经收盘了，
+as i'm recording this video the market is closed so
+
+391
+00:17:25,313 --> 00:17:27,702
+明天是周四，周五就是一个完整交易日
+tomorrow will be thursday and then friday would be a
+
+392
+00:17:27,702 --> 00:17:30,091
+所以这个头寸还有两个完整交易日
+full day right there so two full days left for
+
+393
+00:17:30,091 --> 00:17:32,480
+那我们来看，假设明天下午
+this so i can see let's just say tomorrow afternoon
+
+394
+00:17:32,480 --> 00:17:36,781
+如果QQQ（纳斯达克100ETF）价格不变，这个头寸能盈利250美元
+how will this position be performing if the cues was not to move by tomorrow i'll be up 250
+
+395
+00:17:37,524 --> 00:17:38,735
+或者接近
+or that's almost or
+
+396
+00:17:38,735 --> 00:17:40,249
+20%，我们来调整一下
+20 so let's just swipe this
+
+397
+00:17:40,249 --> 00:17:42,066
+再调回去
+over let's just turn this back
+
+398
+00:17:42,066 --> 00:17:47,518
+把它滑回去，我先刷新一下页面
+on swipe this over let me just refresh the page for a second as i was just oh
+
+399
+00:17:48,624 --> 00:17:50,624
+因为我刷新了页面，心想这肯定不对
+i refreshed the page because i was like this is
+
+400
+00:17:50,624 --> 00:17:52,624
+这不是我这个差价的成本价
+definitely not how much i've got this spread for i
+
+401
+00:17:52,624 --> 00:17:54,624
+我忘了我们刚改了日期，所以对
+forgot we just changed the date so yeah this is
+
+402
+00:17:54,624 --> 00:17:55,824
+这样更合理，差不多了
+more like it almost got it
+
+403
+00:17:55,824 --> 00:17:57,024
+挺激动的，那我再
+pretty excited so let me just
+
+404
+00:17:57,024 --> 00:17:58,224
+再刷新一次页面
+refresh this page one more time
+
+405
+00:17:58,224 --> 00:18:00,824
+然后调整图表时间范围
+and then let's actually just uh change the chart range and then let's
+
+406
+00:18:01,524 --> 00:18:03,224
+再回到明天的情况
+go back to tomorrow.
+
+407
+00:18:03,224 --> 00:18:09,824
+假设QQQ（纳斯达克100ETF）价格不变，我将盈利约171美元，收益率约30%
+So let's just say the Q's did not move. I'll be up about $171 or roughly 30%.
+
+408
+00:18:10,024 --> 00:18:12,607
+但如果我继续持有到周五
+However, if I continue to hold into Friday, we can
+
+409
+00:18:12,607 --> 00:18:15,190
+大家看这里，即使QQQ（纳斯达克100ETF）没有下跌
+see right here, even if the Q's did not sell
+
+410
+00:18:15,190 --> 00:18:19,065
+其实不需要价格大幅波动，就能达到超过70%的收益率
+off, don't really need the price to really go anywhere to actually hit over 70% return.
+
+411
+00:18:19,624 --> 00:18:22,324
+只要它不大幅下跌，我就能获利不少
+As long as it doesn't sell off too much, I'll be pretty profitable.
+
+412
+00:18:22,524 --> 00:18:25,266
+但根据经验，如果QQQ（纳斯达克100ETF）波动不大
+However, as I know with experience, if the Q's are not necessarily
+
+413
+00:18:25,266 --> 00:18:28,923
+隐含波动率可能会下降一点
+moving around that much, it means implied volatility is probably going to drop a little bit.
+
+414
+00:18:29,224 --> 00:18:30,624
+这实际上会影响我的盈亏
+So that would actually affect my P&L.
+
+415
+00:18:30,724 --> 00:18:35,124
+所以这个头寸的合理预期收益率在30%到100%之间
+So a good expectation return on this could be anywhere from 30 to 100%.
+
+416
+00:18:35,424 --> 00:18:37,024
+你永远不会真正持有到行权日
+You never really look to hold until X.
+
+417
+00:18:37,024 --> 00:18:38,824
+所以不能用同样的方式来看待
+expiration so this is kind of not something
+
+418
+00:18:38,824 --> 00:18:41,074
+就像我们一开始拍视频时说的
+you look at the same way like how we started
+
+419
+00:18:41,074 --> 00:18:45,124
+买入看涨期权的理论最大收益是无限的
+this video when we said the the max profit on a naked call option is in theory infinite
+
+420
+00:18:45,324 --> 00:18:47,873
+你买入看涨期权时，不会说你会
+you never really buy a call saying you're going to
+
+421
+00:18:47,873 --> 00:18:50,422
+到期日前赚无限多钱？其实你通常只是
+make infinite amount of money by expiration you're just usually
+
+422
+00:18:50,422 --> 00:18:51,951
+在寻找一个目标盈利
+looking for some sort of target
+
+423
+00:18:51,951 --> 00:18:53,480
+心中有个盈利目标 而在我看来
+profit in mind now to me
+
+424
+00:18:53,480 --> 00:18:55,009
+除了所有酷炫功能
+what really really stands out with
+
+425
+00:18:55,009 --> 00:18:58,322
+期权的执行价之外 这些信息都
+option strike aside from all the cool features again all this information is
+
+426
+00:18:58,924 --> 00:19:01,342
+清晰呈现 但我最喜欢的是
+is presented here but what i really like about it
+
+427
+00:19:01,342 --> 00:19:03,760
+它速度很快 界面也很友好
+is it's very quick the ui is very user friendly
+
+428
+00:19:03,760 --> 00:19:05,210
+对新手也很适合 我
+and it's good for beginners i
+
+429
+00:19:05,210 --> 00:19:06,660
+两个工具都用 因为我都能理解
+use both because i understand both
+
+430
+00:19:06,660 --> 00:19:09,320
+但如果只是想快速模拟交易
+but whenever i'm just trying to mock something up pretty quickly
+
+431
+00:19:09,624 --> 00:19:11,757
+我会先用期权策略工具（OptionStrat） 然后再
+i run to option strat first and then i'll go
+
+432
+00:19:11,757 --> 00:19:13,890
+切换到思考者剑（Thinkorswim） 其实你可以
+over to think of swim and actually you can do
+
+433
+00:19:13,890 --> 00:19:15,169
+在思考者剑（Thinkorswim）里做同样操作 你可以
+the same thing you can add
+
+434
+00:19:15,169 --> 00:19:16,448
+添加模拟交易
+a simulated trade here you can
+
+435
+00:19:16,448 --> 00:19:17,727
+选择并添加要测试的执行价
+click and add the strike prices
+
+436
+00:19:17,727 --> 00:19:19,220
+如果你想构建
+that you want to test out and
+
+437
+00:19:19,220 --> 00:19:20,926
+更大的交易 比如我操作
+it's definitely something if you're trying to build
+
+438
+00:19:20,926 --> 00:19:22,419
+大规模铁鹰策略并需要对冲时
+out larger trades like when i'm running
+
+439
+00:19:22,724 --> 00:19:24,983
+我需要在上面加垂直价差 或者在日历差价上再叠加日历差价
+larger iron condors and i need to hedge them i
+
+440
+00:19:24,983 --> 00:19:28,823
+这时我会用思考者剑（Thinkorswim）的风险收益图 但如果
+need to add a vertical on top or some sort of calendar on top of another calendar
+
+441
+00:19:29,124 --> 00:19:31,588
+我想开一个全新交易
+i use the risk profile on thinkorswim but whenever i'm
+
+442
+00:19:31,588 --> 00:19:34,052
+我会先从期权策略工具（OptionStrat）开始 快速操作 因为之前
+just opening up a fresh trade i'll just start with
+
+443
+00:19:34,052 --> 00:19:36,516
+思考者剑（Thinkorswim）在白天运行时
+option strat very quickly because before thinkorswim used to run
+
+444
+00:19:36,516 --> 00:19:37,994
+速度非常慢
+really slowly for me during the
+
+445
+00:19:37,994 --> 00:19:39,472
+每次我想分析交易时
+day and whenever i was trying
+
+446
+00:19:39,472 --> 00:19:42,921
+我不喜欢它加载时间太长
+to analyze these trades i didn't like that it was taking forever to load
+
+447
+00:19:43,224 --> 00:19:44,562
+现在这情况改变了 因为我
+that has since changed because i
+
+448
+00:19:44,562 --> 00:19:45,900
+调整了设置
+actually came up to my settings
+
+449
+00:19:45,900 --> 00:19:47,684
+如果你不知道这个功能 可以
+if you don't know this you can come
+
+450
+00:19:47,684 --> 00:19:51,922
+进入应用设置 向下找到‘系统’ 然后可以调整行情更新速度
+to your application settings go down to system right here and then you can actually change your quote speed
+
+451
+00:19:52,224 --> 00:19:53,793
+我其实不是刷单交易者
+now i'm not a scalper and i
+
+452
+00:19:53,793 --> 00:19:55,586
+也不用这个账户做刷单
+don't use this account for scalping i have
+
+453
+00:19:55,586 --> 00:19:57,604
+另一台电脑是实时行情
+another computer that i have on real time no
+
+454
+00:19:57,604 --> 00:19:59,397
+没有延迟
+delay but for the most part my main
+
+455
+00:19:59,397 --> 00:20:00,702
+但大部分情况下，我的主屏幕
+monitors are actually set to delay
+
+456
+00:20:00,702 --> 00:20:02,007
+其实设置了延迟
+i used to even have this
+
+457
+00:20:02,007 --> 00:20:03,312
+我之前甚至
+at one time have a delay
+
+458
+00:20:03,312 --> 00:20:06,576
+把延迟调到15秒，就为了展示我对刷单有多不在意
+of up to 15 seconds just to show how much i care about scalping to me
+
+459
+00:20:07,324 --> 00:20:12,024
+每个Tick都盯着的人，只会让自己发疯，尤其是在交易差价的时候
+Everyone that's looking at every single tick is just going to drive you crazy, especially when you're trading spreads.
+
+460
+00:20:12,024 --> 00:20:14,124
+其实不需要看实时报价
+You don't really need to see the live quotes.
+
+461
+00:20:14,424 --> 00:20:16,624
+5秒延迟不会影响交易
+A five second delay is not really going to hurt you.
+
+462
+00:20:16,824 --> 00:20:20,324
+所以我开了延迟功能，还让思考者剑（Thinkorswim）运行更流畅
+So I just turned this delay on and actually let's think a swim run much smoother.
+
+463
+00:20:20,324 --> 00:20:22,124
+这是个小技巧，如果大家不知道的话
+So that's just a little bit of a tip if you didn't know.
+
+464
+00:20:22,224 --> 00:20:24,408
+就像我们之前在这里拖动一样
+The same way as we were dragging this
+
+465
+00:20:24,408 --> 00:20:26,046
+可以
+around here, we were able to
+
+466
+00:20:26,046 --> 00:20:29,596
+可视化特定节点的盈亏，比如直接跳到到期日
+visualize the P&L at certain, such as just jump forward to expiration.
+
+467
+00:20:29,324 --> 00:20:32,524
+拖动盈亏图时，就能看到具体的盈亏数据
+We can see here as we were dragging the P&L, we can see what it would be.
+
+468
+00:20:32,824 --> 00:20:35,224
+期权策略工具（OptionStrat）里也是一样的
+Same thing that's going on on option strategy.
+
+469
+00:20:35,224 --> 00:20:36,640
+只需把这个向下滑动
+We just slide this down and
+
+470
+00:20:36,640 --> 00:20:38,056
+然后在这里选择周五早上
+we say Friday morning right here.
+
+471
+00:20:38,056 --> 00:20:41,360
+拖动时，就能看到盈亏会是多少
+As we drag this around, we can see what the P&L would be.
+
+472
+00:20:41,224 --> 00:20:44,624
+但我最喜欢的功能是这里的历史图表
+But what I really liked is this feature right here, the historical chart.
+
+473
+00:20:44,624 --> 00:20:46,397
+点击这个
+We can click this and actually
+
+474
+00:20:46,397 --> 00:20:48,170
+就能获得一个参考框架
+get a frame of reference for
+
+475
+00:20:48,170 --> 00:20:51,422
+了解这个策略或差价组合当时的实际交易价格
+what this strategy or what this spread was actually going for.
+
+476
+00:20:51,424 --> 00:20:59,124
+比如昨天QQQ（纳斯达克100ETF）实际交易价格是320美元，这个价格是多少呢？321.50美元
+So say, for example, yesterday when the QQQ was actually trading at 320, what price is that? So 321.50.
+
+477
+00:20:59,524 --> 00:21:03,924
+这就是当时这个差价组合的交易价格：30美分，现在涨到1美元
+This is how much this spread was going for. So for 30 cents and it's currently going for a dollar.
+
+478
+00:21:04,124 --> 00:21:09,824
+昨天买入的人现在已经赚了约66美分，回报率很不错
+So whoever bought it yesterday is already up about 66 cents, which is already a great return on investment.
+
+479
+00:21:09,824 --> 00:21:16,224
+但获取这类信息的便利性，正是期权策略工具（OptionStrat）吸引我的地方
+But in terms of accessing this type of information that conveniently is what really makes option stretch shine for me.
+
+480
+00:21:16,424 --> 00:21:17,744
+所以每当我评估策略时
+So whenever I'm evaluating if I
+
+481
+00:21:17,744 --> 00:21:19,284
+通常想构建差价策略时
+want to get in a spread, usually
+
+482
+00:21:19,284 --> 00:21:23,024
+如果想买裸期权，可以直接在思考者剑（Thinkorswim）的图表里查看。
+if you're trying to buy a naked option, you can always pull it up on Thinkorswim's chart.
+
+483
+00:21:23,224 --> 00:21:24,484
+就能非常方便地看到
+And then you can very conveniently see
+
+484
+00:21:24,484 --> 00:21:25,744
+之前的价格大概是多少
+how much the price might have been
+
+485
+00:21:25,744 --> 00:21:27,724
+比如前一天或几天前的行情。
+going for the day before or a couple of days ago.
+
+486
+00:21:27,824 --> 00:21:31,724
+这样就能判断：如果买入的是高估期权，是否付了过高的价格。
+So, you know, if you're getting an inflated option and you're paying more than you should be.
+
+487
+00:21:31,924 --> 00:21:33,287
+现在，在思考者剑（Thinkorswim）里也能做到，
+Now, you can do that in
+
+488
+00:21:33,287 --> 00:21:34,650
+但操作绝对
+Thinkorswim also, but it's by no
+
+489
+00:21:34,650 --> 00:21:36,922
+没有期权策略工具（OptionStrat）这里点一下标签这么方便。
+means as convenient as just clicking this tab right here.
+
+490
+00:21:37,024 --> 00:21:38,693
+我大半时间用期权策略工具（OptionStrat），
+Half the time whenever I come to OptionStrat,
+
+491
+00:21:38,693 --> 00:21:39,945
+只是为了
+it's just because I want to
+
+492
+00:21:39,945 --> 00:21:41,823
+查看昨天的差价价格。
+see how much was the spread going for yesterday.
+
+493
+00:21:42,124 --> 00:21:43,824
+现在入场时机是否还好？
+Is it still at a good place to get it?
+
+494
+00:21:44,024 --> 00:21:47,224
+或者是否要等它回调到比如80美分？
+Or maybe perhaps do I want to wait for it to pull back to maybe 80 cents?
+
+495
+00:21:47,424 --> 00:21:49,824
+这些背景信息很实用，我特别喜欢。
+It just gives some sort of context and I really like that.
+
+496
+00:21:50,024 --> 00:21:51,136
+最后，你还可以
+Lastly, something you can also do
+
+497
+00:21:51,136 --> 00:21:52,618
+保存交易，我觉得
+is just save the trade and I think
+
+498
+00:21:52,618 --> 00:21:53,730
+这个功能很实用。
+that's pretty neat. So if we
+
+499
+00:21:53,730 --> 00:21:54,471
+点击这里的保存，
+just press this save
+
+500
+00:21:54,471 --> 00:21:55,583
+默认情况下，
+right here, by default, it's just
+
+501
+00:21:55,583 --> 00:21:57,621
+会自动用差价策略的名称命名。
+going to call it whatever the name of the spread is.
+
+502
+00:21:57,824 --> 00:21:58,966
+但我们也可以手动输入，比如我
+But let's just type in, I'm
+
+503
+00:21:58,966 --> 00:22:00,108
+输入‘delete’，
+just going to type in delete
+
+504
+00:22:00,108 --> 00:22:01,822
+这样自己就知道别保留这个策略。
+for myself so I know not to keep this.
+
+505
+00:22:01,824 --> 00:22:04,924
+因为点击保存后，可以给自己留备注。
+Because again, if I press save, we can leave notes for ourselves.
+
+506
+00:22:05,124 --> 00:22:09,124
+如果进入‘保存的交易’，这里会按标的符号分类。
+But if I come to my save trades, it's classified by the symbols right here.
+
+507
+00:22:09,224 --> 00:22:10,699
+可以看到这个标记为
+And we can see this is
+
+508
+00:22:10,699 --> 00:22:12,174
+‘delete’的策略，因为这只是
+delete because this is by no
+
+509
+00:22:12,174 --> 00:22:15,124
+演示用的，不是真实开仓的日历差价。
+means real. This is the calendar spread in which I actually opened.
+
+510
+00:22:15,424 --> 00:22:16,292
+而这些是一些
+And these are some
+
+511
+00:22:16,292 --> 00:22:18,029
+这些是差价组合。思考者剑（Thinkorswim）中显示的是我当前持有的差价组合
+spreads. TOS is the current spreads in which
+
+512
+00:22:18,029 --> 00:22:19,332
+或者是
+I currently have open or ones
+
+513
+00:22:19,332 --> 00:22:21,721
+我本周早些时候开仓并仍在跟踪的差价组合。
+that I'm still tracking that I opened earlier in the week.
+
+514
+00:22:21,724 --> 00:22:24,824
+但我想看看如果我继续持有这些差价组合，它们的表现会如何。
+But I want to see how they would have performed if I continue to hold them.
+
+515
+00:22:24,924 --> 00:22:26,869
+如果我回到这个界面
+If I were to come back to this
+
+516
+00:22:26,869 --> 00:22:28,814
+假设你运行了一个差价组合,
+and let's just say you ran a spread,
+
+517
+00:22:28,814 --> 00:22:30,273
+但期权策略工具（OptionStrat）这里显示的价格
+but the price in which OptionShad
+
+518
+00:22:30,273 --> 00:22:33,921
+和你在思考者剑（Thinkorswim）上成交的价格并不完全一致。
+is showing right here is not the exact same price you got filled on Thinkorswim.
+
+519
+00:22:34,124 --> 00:22:38,224
+你可以点击这里，然后输入你实际成交的价格。
+You can actually click this and type in the price in which you got filled at.
+
+520
+00:22:38,224 --> 00:22:44,124
+比如，假设我买入看涨期权的实际成交价是2.68美元。
+So let's just say I actually got filled at $2.68 on the long call.
+
+521
+00:22:44,324 --> 00:22:48,924
+再假设卖出看涨期权时，我实际成交价是1.70美元。
+And let's just say the short call was actually, I was able to get this short for $1.70.
+
+522
+00:22:49,224 --> 00:22:50,942
+这个小小的调整
+That little adjustment right there is
+
+523
+00:22:50,942 --> 00:22:52,660
+能够帮助你
+something that can help you. Have
+
+524
+00:22:52,660 --> 00:22:55,523
+让这里的价格与你实际成交的价格完全一致。
+this match exactly the price in which you got filled.
+
+525
+00:22:55,824 --> 00:23:00,324
+这样当你保存交易时，它将与你实际账户中的交易完全同步。
+So then when you save the trade, it's going to synchronize exactly with what you have in your real account.
+
+526
+00:23:00,624 --> 00:23:03,224
+并非所有平台都像思考者剑（Thinkorswim）这样有风险收益图。
+Not every platform has a risk profile like Thinkorswim.
+
+527
+00:23:03,224 --> 00:23:04,366
+所以如果你在
+So if you trade on, I
+
+528
+00:23:04,366 --> 00:23:05,508
+Tastyworks交易，我认为它的风险收益图很好，
+think a Tastyworks has a really
+
+529
+00:23:05,508 --> 00:23:07,222
+E-Trade的也很好。
+good one and E-Trade has a really good one.
+
+530
+00:23:07,524 --> 00:23:09,188
+但如果你使用的是
+But if maybe if you're using something like
+
+531
+00:23:09,188 --> 00:23:10,852
+Robinhood或者其他经纪商，
+Robinhood or some sort of other broker, or
+
+532
+00:23:10,852 --> 00:23:11,892
+或者只是更喜欢这个界面，
+let's just say you just
+
+533
+00:23:11,892 --> 00:23:13,348
+那么
+really like the UI, this is where
+
+534
+00:23:13,348 --> 00:23:15,220
+期权策略工具（OptionStrat）对你来说会非常有用。
+OptionStrat is going to be really beneficial for you.
+
+535
+00:23:15,224 --> 00:23:17,024
+所以我很乐意向大家介绍它。
+So I'm happy to introduce it to you guys.
+
+536
+00:23:17,024 --> 00:23:18,864
+到现在为止，大家应该已经在我的其他很多视频中见过它了,
+At this point, you guys would have seen
+
+537
+00:23:18,864 --> 00:23:20,704
+因为我通常会更多展示这个工具,
+it on a ton of my other videos
+
+538
+00:23:20,704 --> 00:23:23,924
+而不是思考者剑（Thinkorswim）上的风险收益图。
+because I usually show this more than I show the risk profile on Thinkorswim.
+
+539
+00:23:24,024 --> 00:23:28,024
+同样，只是因为我认为，除非有人向你解释过，否则这可能会有点复杂。
+Again, just because I think unless it's been explained to you, this can be a little bit confusing.
+
+540
+00:23:28,124 --> 00:23:29,828
+我会再专门做几个视频来讲解
+I'll do a couple more videos dedicated to
+
+541
+00:23:29,828 --> 00:23:31,106
+因为这里有很多功能
+just this because there's a lot
+
+542
+00:23:31,106 --> 00:23:33,023
+可以实现很多很棒的操作。
+of neat features you can actually do with this.
+
+543
+00:23:33,124 --> 00:23:36,524
+你还可以添加更多切片，比如在这里新建一个。
+You can add more slices. So let's just say I want to create one right here.
+
+544
+00:23:36,724 --> 00:23:38,785
+可以查看盈亏
+I can say how much would the P&L
+
+545
+00:23:38,785 --> 00:23:40,617
+如果QQQ（纳斯达克100ETF）在到期日涨到
+be if the queues came all the way
+
+546
+00:23:40,617 --> 00:23:44,052
+这个价位，或者跌到这个价位。
+up to here at expiration and the same time if the price came down here.
+
+547
+00:23:43,824 --> 00:23:45,561
+如果我想了解某个区间内
+So if I wanted to know, maybe I
+
+548
+00:23:45,561 --> 00:23:47,298
+盈亏会是多少，
+wanted some sort of a range to see
+
+549
+00:23:47,298 --> 00:23:50,339
+思考者剑（Thinkorswim）上可以做的远不止这些。
+where my P&L would be, you can do a lot more on Thinkorswim.
+
+550
+00:23:50,224 --> 00:23:54,824
+还可以在这里添加更多合约来调整策略。
+You can also add a ton more different contracts down here to adjust it.
+
+551
+00:23:54,924 --> 00:23:56,908
+甚至可以
+You can add more spreads on top of
+
+552
+00:23:56,908 --> 00:23:58,396
+轻松叠加多个差价组合。
+each other very conveniently and easy.
+
+553
+00:23:58,396 --> 00:24:01,124
+所以它显然比期权策略工具（OptionStrat）更强大。
+So this is why this is obviously going to outshine OptionStrat.
+
+554
+00:24:01,324 --> 00:24:03,182
+但如果只是入门，点击这里
+But for just getting started and clicking here
+
+555
+00:24:03,182 --> 00:24:05,040
+分析不同的差价组合，
+and analyzing different spreads, if you want to
+
+556
+00:24:05,040 --> 00:24:06,434
+比如想了解蝶式差价，
+learn about butterfly spreads, there's a
+
+557
+00:24:06,434 --> 00:24:09,222
+下方有简要说明，很实用。
+little bit of an explanation at the bottom, which is pretty neat.
+
+558
+00:24:09,224 --> 00:24:11,224
+这些功能对新手非常友好。
+So again, this is all great for beginners.
+
+559
+00:24:11,324 --> 00:24:13,787
+即使你不是新手，
+And even if you aren't a beginner, but you just
+
+560
+00:24:13,787 --> 00:24:16,250
+只想要更直观的界面，
+want something that's a little bit more visually appealing, or
+
+561
+00:24:16,250 --> 00:24:18,713
+或者在进入思考者剑（Thinkorswim）
+you just want something that's a little bit quicker on
+
+562
+00:24:18,713 --> 00:24:21,422
+这样的复杂工具前，想快速验证策略，
+the go before you get into something more intricate like thinkorswim
+
+563
+00:24:21,724 --> 00:24:22,579
+大家如果喜欢这个视频，
+guys if you enjoyed
+
+564
+00:24:22,579 --> 00:24:23,434
+留个评论，
+this video leave a
+
+565
+00:24:23,434 --> 00:24:24,289
+别忘了订阅、点赞，
+comment don't forget to
+
+566
+00:24:24,289 --> 00:24:25,357
+下期见，
+subscribe like the video and
+
+567
+00:24:25,357 --> 00:24:27,922
+谢谢观看。
+i'll catch you guys in the next one so thanks for watching
+
+===== END AFTER_OPTIMIZE =====

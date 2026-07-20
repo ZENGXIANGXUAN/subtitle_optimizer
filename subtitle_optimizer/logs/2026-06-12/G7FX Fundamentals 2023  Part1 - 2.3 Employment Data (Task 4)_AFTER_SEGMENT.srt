@@ -1,0 +1,3394 @@
+===== AFTER_SEGMENT (848 entries) =====
+1
+00:00:00,050 --> 00:00:01,400
+Okay ladies and
+
+2
+00:00:01,400 --> 00:00:04,550
+gentlemen, we're back. Hopefully you were able
+
+3
+00:00:04,550 --> 00:00:08,150
+to do all of that with the manufacturing
+
+4
+00:00:08,150 --> 00:00:11,300
+services. It follows a nice easy order
+
+5
+00:00:11,300 --> 00:00:17,150
+for you, nothing too crazy. We're going from manufacturing to services to payrolls.
+
+6
+00:00:17,150 --> 00:00:19,985
+Like I said, the big change for
+
+7
+00:00:19,985 --> 00:00:22,820
+me came in terms of understanding fundamentals
+
+8
+00:00:22,820 --> 00:00:26,870
+when I started to realise there's an order to everything.
+
+9
+00:00:27,610 --> 00:00:33,370
+I realised manufacturing services and payrolls always happens in week one. Why am I overcomplicating myself?
+
+10
+00:00:33,370 --> 00:00:39,890
+I realised the market really wasn't focused on many other things apart from those three items.
+
+11
+00:00:39,890 --> 00:00:46,890
+I realised that all the time manufacturing comes first, then services, then payrolls.
+
+12
+00:00:47,790 --> 00:00:53,310
+Do you see there's order to the madness where most people are just all over the place.
+
+13
+00:00:53,610 --> 00:01:02,070
+We're creating some order to allow ourselves a framework, the opportunity to make some sense of all of this stuff.
+
+14
+00:01:02,070 --> 00:01:08,450
+So my point is, that's the order. Manufacturing, right? So we've got that here.
+
+15
+00:01:08,450 --> 00:01:16,270
+Services, nice. Next. And next on the list is the all-important payrolls.
+
+16
+00:01:16,850 --> 00:01:17,377
+So you know,
+
+17
+00:01:17,377 --> 00:01:18,256
+that's how I look, that's
+
+18
+00:01:18,256 --> 00:01:19,135
+how I look at it.
+
+19
+00:01:19,135 --> 00:01:21,069
+I've been looking at it for a long time like that.
+
+20
+00:01:21,250 --> 00:01:25,070
+I've got it here. I'm going to help you create this from scratch, okay?
+
+21
+00:01:25,650 --> 00:01:31,090
+I do like to split out, as you just briefly saw there, payrolls and the unemployment rate.
+
+22
+00:01:31,090 --> 00:01:32,821
+And that's because, so
+
+23
+00:01:32,821 --> 00:01:35,418
+what it is, if you've got
+
+24
+00:01:35,418 --> 00:01:37,582
+data where they're quite correlated.
+
+25
+00:01:37,582 --> 00:01:43,209
+So obviously with things like retail sales, the core and the headline number.
+
+26
+00:01:43,350 --> 00:01:46,870
+So don't worry if that doesn't make sense right now, because eventually it will.
+
+27
+00:01:47,130 --> 00:01:51,050
+But you can see we're going to be building this together, so don't worry.
+
+28
+00:01:51,050 --> 00:01:51,652
+The core, and
+
+29
+00:01:51,652 --> 00:01:52,655
+I know it's a little
+
+30
+00:01:52,655 --> 00:01:53,658
+bit tiny. I've zoomed in.
+
+31
+00:01:53,658 --> 00:01:56,268
+But when we build it, I'll zoom a little bit out. Don't worry.
+
+32
+00:01:56,350 --> 00:02:04,540
+Core, and headline, okay?
+
+33
+00:02:04,940 --> 00:02:07,820
+It's the same data, but with things taken out of it.
+
+34
+00:02:08,020 --> 00:02:09,079
+So can you see
+
+35
+00:02:09,079 --> 00:02:10,138
+they're very correlated? They're
+
+36
+00:02:10,138 --> 00:02:14,639
+so close together. That it makes sense for me to have them on the same graph, right?
+
+37
+00:02:14,640 --> 00:02:17,184
+Even though I'm trying to look at two
+
+38
+00:02:17,184 --> 00:02:19,092
+pieces of data on the same
+
+39
+00:02:19,092 --> 00:02:21,318
+tab, have them on the same graph.
+
+40
+00:02:21,320 --> 00:02:28,280
+Same with a lot of the housing data. I'm looking at housing data. It's very similar, right?
+
+41
+00:02:28,360 --> 00:02:31,540
+So it's going to be correlated, and it makes sense for me to have it on one graph.
+
+42
+00:02:31,680 --> 00:02:38,860
+But with payrolls and the unemployment rate, you can see the way that they're represented.
+
+43
+00:02:39,360 --> 00:02:44,640
+Payrolls is in thousands, right? This is in percent.
+
+44
+00:02:45,840 --> 00:02:50,420
+It makes no sense for me to have both of these on the same kind of graph.
+
+45
+00:02:50,420 --> 00:02:52,237
+Yeah, there is obviously some correlation
+
+46
+00:02:52,237 --> 00:02:54,054
+between them, and from that perspective,
+
+47
+00:02:54,054 --> 00:02:58,899
+I could. But I've never found it quite useful to have them on the same graph.
+
+48
+00:02:58,940 --> 00:03:00,740
+Because obviously, payrolls can be very volatile.
+
+49
+00:03:01,460 --> 00:03:03,080
+Unemployment rate is a little bit more steady.
+
+50
+00:03:03,280 --> 00:03:05,720
+And we'll talk about this when we actually
+
+51
+00:03:05,720 --> 00:03:07,550
+go into more detail about the
+
+52
+00:03:07,550 --> 00:03:13,040
+unemployment. What is it telling us? How is it formulated? All of that will make much more sense.
+
+53
+00:03:13,100 --> 00:03:18,080
+For now, let's make our lives easier and just split them apart into two graphs.
+
+54
+00:03:18,080 --> 00:03:20,900
+So, again, two ways to do this.
+
+55
+00:03:21,100 --> 00:03:22,180
+You can either start with
+
+56
+00:03:22,180 --> 00:03:23,260
+a blank sheet. And if
+
+57
+00:03:23,260 --> 00:03:24,340
+you want, I highly encourage
+
+58
+00:03:24,340 --> 00:03:26,717
+you to do that. And you can build it from scratch.
+
+59
+00:03:26,920 --> 00:03:30,600
+Or, I've got to take the shortcut method, which I'm using.
+
+60
+00:03:31,060 --> 00:03:32,280
+So, again, same thing.
+
+61
+00:03:33,600 --> 00:03:38,460
+Click on either of these, services or manufacturing. It takes manufacturing.
+
+62
+00:03:38,460 --> 00:03:44,620
+Drag it across so it just goes there. And then it gets copied as an identical tab.
+
+63
+00:03:45,280 --> 00:03:47,238
+Change the name to,
+
+64
+00:03:47,238 --> 00:03:49,196
+I like to call
+
+65
+00:03:49,196 --> 00:03:51,154
+it payrolls. You can
+
+66
+00:03:51,154 --> 00:03:53,112
+call it whatever you
+
+67
+00:03:53,112 --> 00:04:00,457
+want. Unemployment situation. Whatever you want to call it. I like to call it payrolls.
+
+68
+00:04:00,460 --> 00:04:02,532
+And look, don't forget,
+
+69
+00:04:02,532 --> 00:04:04,604
+it's in red. So,
+
+70
+00:04:04,604 --> 00:04:06,676
+I like to make
+
+71
+00:04:06,676 --> 00:04:11,338
+this tab red. So, right click, tab color, red.
+
+72
+00:04:11,600 --> 00:04:16,180
+Hopefully, you'll be able to see that because I block some of this, don't I? Tab color.
+
+73
+00:04:16,560 --> 00:04:17,779
+Yeah, you can see that.
+
+74
+00:04:17,880 --> 00:04:22,300
+Tab color and then red. Again, your colors might be different to mine.
+
+75
+00:04:22,400 --> 00:04:25,200
+It doesn't have to be exactly the same. It really doesn't matter.
+
+76
+00:04:25,200 --> 00:04:26,948
+But do what works for you
+
+77
+00:04:26,948 --> 00:04:28,696
+in terms of making it obvious
+
+78
+00:04:28,696 --> 00:04:30,444
+that. So, do you see, when
+
+79
+00:04:30,444 --> 00:04:33,940
+I've got my sheet now, I know payrolls is the big one.
+
+80
+00:04:34,260 --> 00:04:35,240
+It's the really big one.
+
+81
+00:04:35,740 --> 00:04:36,700
+Okay. When is it?
+
+82
+00:04:36,980 --> 00:04:39,120
+Week one, week two, week three. You should know this now.
+
+83
+00:04:39,380 --> 00:04:45,160
+Week one. So, I like to just put here week one.
+
+84
+00:04:45,600 --> 00:04:46,980
+Okay. So, that's week one.
+
+85
+00:04:46,980 --> 00:04:49,300
+And then we can go about just changing some of these things.
+
+86
+00:04:49,580 --> 00:04:56,960
+So, it's not manufacturing, is it? It's rolls.
+
+87
+00:04:57,300 --> 00:05:01,240
+Okay. Is it released monthly on the first business day?
+
+88
+00:05:01,340 --> 00:05:01,820
+No, it's not.
+
+89
+00:05:02,280 --> 00:05:05,540
+So, again, go and find the latest payrolls release.
+
+90
+00:05:05,740 --> 00:05:11,320
+You know, if I go too far forward, there is no release. Find out where there is no release.
+
+91
+00:05:11,380 --> 00:05:13,720
+So, there's no release. For me, that'd be January.
+
+92
+00:05:13,800 --> 00:05:18,700
+I've said this many times. Go back one to the last release.
+
+93
+00:05:19,820 --> 00:05:20,260
+Okay.
+
+94
+00:05:20,440 --> 00:05:23,280
+It's here. There.
+
+95
+00:05:23,400 --> 00:05:23,860
+Can you see it?
+
+96
+00:05:24,920 --> 00:05:27,360
+Non-farm employment change. That's the payrolls.
+
+97
+00:05:27,360 --> 00:05:28,220
+Open it up.
+
+98
+00:05:29,460 --> 00:05:31,420
+Released monthly. Usually on the first Friday.
+
+99
+00:05:31,460 --> 00:05:33,360
+You've got it here anyway when you build the calendar.
+
+100
+00:05:33,680 --> 00:05:38,000
+Released monthly on the first Friday after month ends.
+
+101
+00:05:38,000 --> 00:05:40,780
+But we can just copy it from here.
+
+102
+00:05:40,860 --> 00:05:44,660
+Copy it there. Replace what we had there for manufacturing.
+
+103
+00:05:45,560 --> 00:05:46,460
+Okay. So, you've got that.
+
+104
+00:05:47,180 --> 00:05:49,700
+Okay. What else do we want to do?
+
+105
+00:05:49,840 --> 00:05:50,740
+Just maximize it.
+
+106
+00:05:50,800 --> 00:05:54,000
+We can change this headline. We know we don't want manufacturing there.
+
+107
+00:05:54,080 --> 00:05:59,100
+We want to put the payrolls in there. But we're going to replace this data with payrolls.
+
+108
+00:05:59,300 --> 00:06:00,280
+So, we've got payrolls.
+
+109
+00:06:00,280 --> 00:06:06,100
+I just want to make sure there's nothing else I'm missing.
+
+110
+00:06:07,240 --> 00:06:07,720
+Great.
+
+111
+00:06:08,160 --> 00:06:08,660
+That's it.
+
+112
+00:06:09,360 --> 00:06:15,140
+So, now this is manufacturing data, right? Because we copied the manufacturing data across.
+
+113
+00:06:15,220 --> 00:06:15,580
+Can you see?
+
+114
+00:06:16,140 --> 00:06:16,540
+Same.
+
+115
+00:06:16,540 --> 00:06:18,920
+There's data here. Can you see?
+
+116
+00:06:19,000 --> 00:06:22,440
+It's not changed. Because I've currently got manufacturing data.
+
+117
+00:06:22,800 --> 00:06:23,780
+I'm going to replace this.
+
+118
+00:06:23,840 --> 00:06:25,360
+Like I said, you can either
+
+119
+00:06:25,360 --> 00:06:26,880
+build it from scratch. Or you
+
+120
+00:06:26,880 --> 00:06:28,400
+can drag the manufacturing data across.
+
+121
+00:06:28,400 --> 00:06:32,200
+And replace the data. And save us having to build it all from scratch again.
+
+122
+00:06:33,180 --> 00:06:36,560
+So, that's why I'm doing it. Obviously, for the purposes of time. To save a bit of time.
+
+123
+00:06:36,640 --> 00:06:38,762
+But if you want to really get
+
+124
+00:06:38,762 --> 00:06:40,278
+your teeth stuck in. Nothing
+
+125
+00:06:40,278 --> 00:06:44,219
+wrong with doing it the longer way. In fact, I highly encourage it.
+
+126
+00:06:44,220 --> 00:06:47,340
+So, how are we going to end up with some payrolls data?
+
+127
+00:06:48,040 --> 00:06:49,004
+The other thing I was
+
+128
+00:06:49,004 --> 00:06:49,968
+going to say. Because if
+
+129
+00:06:49,968 --> 00:06:51,125
+you do it. You only have
+
+130
+00:06:51,125 --> 00:06:51,896
+to do it once.
+
+131
+00:06:51,896 --> 00:06:55,176
+And obviously, you do learn a lot. But this way is fine as well. Make no difference.
+
+132
+00:06:56,780 --> 00:07:00,520
+Get the latest number. Check the date. When was it?
+
+133
+00:07:00,660 --> 00:07:05,080
+For me, Friday. December the 3rd, 2021.
+
+134
+00:07:05,840 --> 00:07:06,320
+So, can you see?
+
+135
+00:07:06,380 --> 00:07:08,220
+I've got 1st of December. I need to change that.
+
+136
+00:07:10,280 --> 00:07:13,100
+Friday. Right? It's the first Friday after the month.
+
+137
+00:07:13,400 --> 00:07:17,380
+Friday. That's another reason I said to you. I like to have these days in.
+
+138
+00:07:17,660 --> 00:07:22,180
+Just make sure. I'm being given the right days. By this calendar. And I am.
+
+139
+00:07:22,340 --> 00:07:24,940
+Friday. Right? I'm expecting on a Friday.
+
+140
+00:07:25,120 --> 00:07:28,360
+It is a Friday the 3rd of December. Which I have here.
+
+141
+00:07:28,900 --> 00:07:30,340
+Now, copy the date across.
+
+142
+00:07:30,460 --> 00:07:35,820
+Again, you should be used to doing this. Copy. Put it in there.
+
+143
+00:07:35,960 --> 00:07:36,800
+Actual forecast.
+
+144
+00:07:36,960 --> 00:07:38,724
+Do you see why I use
+
+145
+00:07:38,724 --> 00:07:40,488
+this? And I don't go to
+
+146
+00:07:40,488 --> 00:07:45,780
+the BLS website. Because the BLS website might have in a different format to the ISM for manufacturing.
+
+147
+00:07:45,960 --> 00:07:47,400
+Then I have to. It's all over the place.
+
+148
+00:07:47,460 --> 00:07:49,380
+Here. Everything's in the same format.
+
+149
+00:07:50,040 --> 00:07:51,835
+As I was saying to you
+
+150
+00:07:51,835 --> 00:07:53,331
+guys earlier. And I can
+
+151
+00:07:53,331 --> 00:07:58,119
+just copy that. Those three numbers in the same order I need them for my graph.
+
+152
+00:07:59,120 --> 00:08:01,420
+Actual forecast. Previous. Right?
+
+153
+00:08:01,420 --> 00:08:05,760
+Paste special. Match destination. Right?
+
+154
+00:08:05,900 --> 00:08:09,200
+Match destination. We don't want to keep source formatting. Because that happens.
+
+155
+00:08:10,400 --> 00:08:15,460
+Control Z. Okay. Match destination formatting.
+
+156
+00:08:16,100 --> 00:08:23,400
+This cutoff. I don't need it. Because there's no such thing. Like when we had manufacturing. Do you see?
+
+157
+00:08:23,920 --> 00:08:26,740
+Above 50 indicates this. Below 50.
+
+158
+00:08:26,740 --> 00:08:32,240
+This is a different type of report. This isn't like an index or a diffusion index. Right?
+
+159
+00:08:32,360 --> 00:08:34,240
+See this? Diffusion index.
+
+160
+00:08:34,419 --> 00:08:39,620
+It's a survey. That's put into a diffusion index format.
+
+161
+00:08:40,200 --> 00:08:41,823
+This is the raw
+
+162
+00:08:41,823 --> 00:08:43,446
+data. This is the
+
+163
+00:08:43,446 --> 00:08:45,069
+actual number. The change.
+
+164
+00:08:45,069 --> 00:08:49,939
+The actual change in the number of people employed during the month.
+
+165
+00:08:50,020 --> 00:08:50,600
+You can see that here.
+
+166
+00:08:50,740 --> 00:08:51,800
+It's the physical change.
+
+167
+00:08:51,860 --> 00:08:53,800
+So I don't have a cutoff point.
+
+168
+00:08:53,940 --> 00:08:54,960
+So I don't need this.
+
+169
+00:08:55,140 --> 00:08:57,880
+So what I do. Highlight that. Delete.
+
+170
+00:09:00,400 --> 00:09:02,340
+Okay. So don't worry about this.
+
+171
+00:09:02,480 --> 00:09:07,660
+You may get this. It's just because we've got a hashtag value there.
+
+172
+00:09:07,720 --> 00:09:08,640
+So don't worry about it.
+
+173
+00:09:08,700 --> 00:09:09,620
+Okay. Just click okay.
+
+174
+00:09:10,380 --> 00:09:11,880
+There's nothing wrong with the formulas.
+
+175
+00:09:12,000 --> 00:09:14,400
+We're going to sort that out. We're going to change that.
+
+176
+00:09:15,120 --> 00:09:16,620
+The forecast versus forecast.
+
+177
+00:09:16,740 --> 00:09:21,640
+It's because Excel is not recognizing this as a number. It's viewing this as text.
+
+178
+00:09:22,620 --> 00:09:26,540
+Right? It's thinking what's 210K? That's not a number. K.
+
+179
+00:09:26,680 --> 00:09:27,300
+You see that K?
+
+180
+00:09:27,300 --> 00:09:28,820
+We're going to clean that up.
+
+181
+00:09:28,980 --> 00:09:30,220
+Don't worry about it right now.
+
+182
+00:09:31,240 --> 00:09:34,040
+Let's get the data in and then we can do the cleansing afterwards.
+
+183
+00:09:34,200 --> 00:09:35,420
+You'll only need to do this once.
+
+184
+00:09:35,500 --> 00:09:36,580
+As I've said to you before.
+
+185
+00:09:37,040 --> 00:09:41,440
+After that, every single month, 10 seconds. You just put the new data in and you'll be fine.
+
+186
+00:09:41,440 --> 00:09:45,360
+But obviously for the history, you need to do this process once.
+
+187
+00:09:45,580 --> 00:09:47,280
+Okay. So same sort of thing.
+
+188
+00:09:47,360 --> 00:09:49,140
+We've now put the latest number in December.
+
+189
+00:09:49,280 --> 00:09:53,060
+We're now going to take all the history. Take just a whole bunch of them.
+
+190
+00:09:53,200 --> 00:09:56,300
+Okay. Yeah. We want to go back 24 months and have a couple of years.
+
+191
+00:09:57,140 --> 00:09:59,280
+But we'll figure that out as we come along.
+
+192
+00:09:59,340 --> 00:10:01,500
+So don't forget. Don't touch that top one.
+
+193
+00:10:01,660 --> 00:10:03,080
+Okay. That one's been done now.
+
+194
+00:10:04,520 --> 00:10:07,120
+Paste. Special match destination formatting.
+
+195
+00:10:07,420 --> 00:10:09,420
+Okay. And in fact, put it in the wrong one, didn't I?
+
+196
+00:10:09,480 --> 00:10:10,360
+It's that cell there.
+
+197
+00:10:10,760 --> 00:10:13,480
+Okay. Match destination formatting.
+
+198
+00:10:13,680 --> 00:10:15,340
+Click OK. As in click on it.
+
+199
+00:10:17,700 --> 00:10:18,680
+Don't worry about that.
+
+200
+00:10:18,760 --> 00:10:21,320
+Do you see that's coming up? Because all of these have come up with values.
+
+201
+00:10:22,200 --> 00:10:23,760
+Don't worry. We're going to clean that up.
+
+202
+00:10:24,340 --> 00:10:28,640
+That has happened because Excel is wondering. It's all these K's here.
+
+203
+00:10:29,260 --> 00:10:33,760
+You see, that is not a number. It's not, for example, this one. 531.
+
+204
+00:10:34,100 --> 00:10:36,220
+It's not 531.
+
+205
+00:10:36,520 --> 00:10:40,580
+Excel is thinking, what's 531 K? It's text.
+
+206
+00:10:40,700 --> 00:10:41,620
+It thinks it's text.
+
+207
+00:10:41,700 --> 00:10:44,080
+And you can't subtract text from text.
+
+208
+00:10:44,160 --> 00:10:44,960
+And it's getting confused.
+
+209
+00:10:45,120 --> 00:10:46,980
+So we're going to clean that up.
+
+210
+00:10:47,060 --> 00:10:48,740
+So don't worry. We're about to do that.
+
+211
+00:10:51,360 --> 00:10:53,840
+So in fact, what you'll need to do.
+
+212
+00:10:53,920 --> 00:10:57,540
+And it is a little bit annoying. But you'll only ever need to do this once. And then it's done.
+
+213
+00:10:57,700 --> 00:10:58,227
+Okay. Is
+
+214
+00:10:58,227 --> 00:11:00,337
+what I need you to do is, again,
+
+215
+00:11:00,337 --> 00:11:01,656
+we're going to go through
+
+216
+00:11:01,656 --> 00:11:03,238
+the process of cleansing these dates.
+
+217
+00:11:03,780 --> 00:11:07,780
+Okay. Again, you'll only ever need to do this once. You won't need to do this again.
+
+218
+00:11:08,200 --> 00:11:09,820
+So we've got the right dates, right?
+
+219
+00:11:09,920 --> 00:11:13,540
+5th of November. But because, again, it's text, don't forget.
+
+220
+00:11:14,020 --> 00:11:17,400
+Released in November for payrolls of October.
+
+221
+00:11:17,760 --> 00:11:18,640
+So we've got it all right.
+
+222
+00:11:19,560 --> 00:11:24,520
+Instead of 5th of November, you need to type it in, right? So it recognizes it as a date.
+
+223
+00:11:24,900 --> 00:11:26,654
+So, again, if you're in a
+
+224
+00:11:26,654 --> 00:11:28,408
+different country with different formatting, just
+
+225
+00:11:28,408 --> 00:11:31,039
+do it in that way that's relevant to you.
+
+226
+00:11:31,100 --> 00:11:35,360
+For me, obviously, UK format. 5th November 21.
+
+227
+00:11:35,540 --> 00:11:36,000
+Hit enter.
+
+228
+00:11:36,600 --> 00:11:37,080
+There we go.
+
+229
+00:11:37,080 --> 00:11:38,020
+You see this on a Friday?
+
+230
+00:11:38,640 --> 00:11:40,200
+I know I'm on the right path.
+
+231
+00:11:40,360 --> 00:11:44,360
+8th of October. 8th of October 21. Friday.
+
+232
+00:11:44,660 --> 00:11:44,980
+Perfect.
+
+233
+00:11:45,720 --> 00:11:47,240
+3rd of September 21.
+
+234
+00:11:47,960 --> 00:11:49,140
+Okay. Perfect.
+
+235
+00:11:49,800 --> 00:11:52,466
+Now, for these actuals, because I
+
+236
+00:11:52,466 --> 00:11:55,132
+don't want the K there. I
+
+237
+00:11:55,132 --> 00:11:57,354
+want Excel to realize that's 210.
+
+238
+00:11:57,354 --> 00:12:00,909
+I don't want it to think it's 210 K.
+
+239
+00:12:01,980 --> 00:12:03,220
+What is that? It's just text.
+
+240
+00:12:04,320 --> 00:12:05,860
+It's thousands. We know that.
+
+241
+00:12:05,940 --> 00:12:07,734
+So either you can replace that
+
+242
+00:12:07,734 --> 00:12:09,229
+with 210,000. What I like to
+
+243
+00:12:09,229 --> 00:12:12,519
+do is I just like to get rid of the K.
+
+244
+00:12:13,080 --> 00:12:18,940
+Okay. So if you press F2, it'll allow you to edit it and then delete the K.
+
+245
+00:12:19,880 --> 00:12:20,520
+Can you see?
+
+246
+00:12:20,680 --> 00:12:26,120
+And don't worry. That will, once we get rid of all of these, that error message will go away.
+
+247
+00:12:26,840 --> 00:12:28,040
+It's now 210.
+
+248
+00:12:28,600 --> 00:12:28,880
+Okay.
+
+249
+00:12:28,880 --> 00:12:34,040
+This is 553,000. Get rid of the K. 553.
+
+250
+00:12:34,960 --> 00:12:36,480
+And do you see? It's now populated.
+
+251
+00:12:36,620 --> 00:12:42,340
+Because it recognizes, oh, I need to subtract 210 from 553.
+
+252
+00:12:43,440 --> 00:12:44,720
+Previous, get rid of the K.
+
+253
+00:12:45,000 --> 00:12:48,005
+So what that's telling us is that the
+
+254
+00:12:48,005 --> 00:12:50,634
+actual number of jobs or the change
+
+255
+00:12:50,634 --> 00:12:53,263
+in the number of people employed was 210,000.
+
+256
+00:12:54,220 --> 00:12:56,840
+The forecast was what? 553.
+
+257
+00:12:57,000 --> 00:12:58,560
+So we were under forecast.
+
+258
+00:12:58,560 --> 00:12:59,380
+Can you see it's red?
+
+259
+00:13:00,360 --> 00:13:02,940
+By how much? 343,000.
+
+260
+00:13:03,260 --> 00:13:08,000
+Straight away, I can see it was, I guess you could say bad.
+
+261
+00:13:08,260 --> 00:13:12,120
+Okay. You've got to be careful because in theory, it wasn't that bad.
+
+262
+00:13:12,220 --> 00:13:13,220
+We still added jobs.
+
+263
+00:13:13,300 --> 00:13:13,520
+Do you see?
+
+264
+00:13:13,580 --> 00:13:14,260
+It's context.
+
+265
+00:13:14,260 --> 00:13:18,360
+But versus forecast, we were off quite a bit.
+
+266
+00:13:18,880 --> 00:13:21,400
+We missed the number by 343.
+
+267
+00:13:21,480 --> 00:13:22,720
+So that's why I like to have that there.
+
+268
+00:13:22,720 --> 00:13:25,438
+So what I also like to do,
+
+269
+00:13:25,438 --> 00:13:26,991
+because that's not 210, it's
+
+270
+00:13:26,991 --> 00:13:28,544
+210,000. I like to just
+
+271
+00:13:28,544 --> 00:13:31,262
+put the K in the brackets there.
+
+272
+00:13:32,040 --> 00:13:33,260
+Okay. So I've got it.
+
+273
+00:13:33,700 --> 00:13:35,350
+I know it's thousands and I
+
+274
+00:13:35,350 --> 00:13:37,000
+know it is anyway, but I
+
+275
+00:13:37,000 --> 00:13:40,300
+just like to be very particular about being clean about these things.
+
+276
+00:13:40,300 --> 00:13:43,318
+We can expand that just a little
+
+277
+00:13:43,318 --> 00:13:45,474
+bit so it doesn't cut
+
+278
+00:13:45,474 --> 00:13:47,630
+off that previous thousands, of
+
+279
+00:13:47,630 --> 00:13:51,079
+course, again. Just expand that a little bit.
+
+280
+00:13:51,440 --> 00:13:52,140
+Sorry about that.
+
+281
+00:13:52,920 --> 00:13:54,680
+And we will get, those errors will go.
+
+282
+00:13:55,820 --> 00:14:00,480
+A bit frustrating, but. So now, we want to do the same thing here.
+
+283
+00:14:00,760 --> 00:14:02,820
+So get rid of that K, F2.
+
+284
+00:14:03,800 --> 00:14:05,580
+Okay. And F2.
+
+285
+00:14:08,300 --> 00:14:11,490
+And this. F2.
+
+286
+00:14:12,530 --> 00:14:15,030
+So you're only going to get the errors when you do it this one time.
+
+287
+00:14:15,670 --> 00:14:18,070
+Get rid of the K there. Just hit OK.
+
+288
+00:14:19,490 --> 00:14:22,790
+Okay. So I need you to get rid of all the Ks.
+
+289
+00:14:23,090 --> 00:14:25,490
+Okay. Sorry about that bleeping noise.
+
+290
+00:14:25,770 --> 00:14:26,530
+But get rid
+
+291
+00:14:26,530 --> 00:14:27,796
+of. So what you need
+
+292
+00:14:27,796 --> 00:14:31,089
+to do, get rid of all of these Ks that you see here.
+
+293
+00:14:31,610 --> 00:14:33,370
+So that Excel sees these as numbers.
+
+294
+00:14:34,290 --> 00:14:35,350
+Change all the dates.
+
+295
+00:14:35,470 --> 00:14:38,050
+As I said, this whole thing will take you about two minutes.
+
+296
+00:14:38,050 --> 00:14:40,270
+And then once it's done, you'll never need to do it again.
+
+297
+00:14:40,710 --> 00:14:42,550
+But you can see it's well worth the effort.
+
+298
+00:14:43,470 --> 00:14:45,010
+So I'm going to pause the recording there.
+
+299
+00:14:45,110 --> 00:14:47,110
+Clean it up. You can do it as well when you pause it.
+
+300
+00:14:47,170 --> 00:14:48,630
+Just clean it up and I'll see you in a sec.
+
+301
+00:14:49,110 --> 00:14:51,270
+Okay. That was pretty straightforward, right?
+
+302
+00:14:51,410 --> 00:14:53,070
+So just clean those up.
+
+303
+00:14:54,410 --> 00:14:56,190
+Can change some of these.
+
+304
+00:14:57,710 --> 00:14:58,870
+Still having this error.
+
+305
+00:14:59,450 --> 00:15:00,650
+I think I know what this is.
+
+306
+00:15:00,690 --> 00:15:03,362
+If you have this error, right, it's
+
+307
+00:15:03,362 --> 00:15:06,034
+because we're using the same chart from
+
+308
+00:15:06,034 --> 00:15:09,469
+here. And we haven't changed the source data yet.
+
+309
+00:15:09,870 --> 00:15:11,350
+So we go select data.
+
+310
+00:15:12,430 --> 00:15:16,530
+So what you can do. In fact, we'll just wait.
+
+311
+00:15:16,810 --> 00:15:22,110
+Okay. We'll wait until we've cleaned up the chart.
+
+312
+00:15:22,350 --> 00:15:24,450
+Because what you'll find is otherwise every
+
+313
+00:15:24,450 --> 00:15:26,850
+time you might find this, you have this
+
+314
+00:15:26,850 --> 00:15:29,250
+error. Every time you're trying to change something.
+
+315
+00:15:30,110 --> 00:15:31,744
+So what we're going to
+
+316
+00:15:31,744 --> 00:15:34,032
+do. And I probably should have done
+
+317
+00:15:34,032 --> 00:15:36,647
+this before. So you avoided having an error
+
+318
+00:15:36,647 --> 00:15:38,608
+every time you were changing something.
+
+319
+00:15:39,250 --> 00:15:44,470
+The alternative is you can just click on select data. And you see these.
+
+320
+00:15:44,590 --> 00:15:47,290
+You can remove them. Remove that.
+
+321
+00:15:47,950 --> 00:15:51,070
+Okay. Remove that. And then click okay.
+
+322
+00:15:51,470 --> 00:15:52,490
+So it's just a blank chart.
+
+323
+00:15:52,750 --> 00:15:54,010
+Can you see now? Hopefully.
+
+324
+00:15:54,570 --> 00:15:56,850
+Yeah, there you go. You can now change stuff.
+
+325
+00:15:56,910 --> 00:15:58,403
+I probably should have got you to
+
+326
+00:15:58,403 --> 00:16:00,109
+do that before removing all the case. And
+
+327
+00:16:00,109 --> 00:16:02,029
+then you might have had an error every time.
+
+328
+00:16:02,110 --> 00:16:02,950
+So apologies for that.
+
+329
+00:16:03,170 --> 00:16:04,610
+But there you go. Got to the bottom of that.
+
+330
+00:16:05,790 --> 00:16:07,110
+Just move that a little bit.
+
+331
+00:16:08,050 --> 00:16:10,210
+Okay. So we've got all the data.
+
+332
+00:16:10,450 --> 00:16:11,930
+Really nice. Beautiful format.
+
+333
+00:16:11,930 --> 00:16:19,790
+We know now 210,000. 916,000. Minus 140. Forecast again is all in thousands.
+
+334
+00:16:19,790 --> 00:16:21,790
+Everything is nice and neat.
+
+335
+00:16:22,370 --> 00:16:24,810
+Let's now. We don't need this for the time being.
+
+336
+00:16:25,010 --> 00:16:28,070
+We'll get the unemployment rate. I like to look at that as well.
+
+337
+00:16:28,590 --> 00:16:36,850
+For now, we can just maximize this and get this in basically graphical format.
+
+338
+00:16:37,050 --> 00:16:40,290
+Right. So we want to know how's the payrolls number changed over time.
+
+339
+00:16:40,450 --> 00:16:45,530
+You know, I talked about at the start of this whole course about getting an edge over other people.
+
+340
+00:16:47,850 --> 00:16:49,410
+Basically, that's what we want to know.
+
+341
+00:16:49,410 --> 00:16:51,510
+I just want to make sure I'm not blocking anything.
+
+342
+00:16:51,830 --> 00:16:52,610
+No. That's great.
+
+343
+00:16:53,570 --> 00:16:54,670
+So how can we do that?
+
+344
+00:16:54,990 --> 00:16:58,190
+Basically. Select data. Very straightforward.
+
+345
+00:16:59,810 --> 00:17:01,210
+Add an entry in here.
+
+346
+00:17:01,610 --> 00:17:01,810
+Okay.
+
+347
+00:17:01,850 --> 00:17:04,089
+We want to add payrolls.
+
+348
+00:17:04,089 --> 00:17:06,050
+So what's the series name?
+
+349
+00:17:06,210 --> 00:17:07,130
+Well, it's payrolls.
+
+350
+00:17:07,329 --> 00:17:12,230
+So either I can type in payrolls there or I can select that cell. Payrolls.
+
+351
+00:17:12,349 --> 00:17:14,109
+Okay. Series values.
+
+352
+00:17:14,270 --> 00:17:14,990
+Where's the values?
+
+353
+00:17:15,109 --> 00:17:16,890
+Well, they're here. Actuals.
+
+354
+00:17:16,990 --> 00:17:17,770
+Right. So I highlight.
+
+355
+00:17:17,890 --> 00:17:19,810
+You see that? Highlight all of those.
+
+356
+00:17:19,810 --> 00:17:23,950
+Okay. So we're starting to get some data coming through now.
+
+357
+00:17:24,050 --> 00:17:24,569
+Click OK.
+
+358
+00:17:25,290 --> 00:17:26,510
+Okay. Thank you very much.
+
+359
+00:17:27,230 --> 00:17:30,130
+Edit the horizontal axis label. So we're going to edit that.
+
+360
+00:17:31,450 --> 00:17:32,970
+The labels, I want these.
+
+361
+00:17:33,670 --> 00:17:37,450
+Right. December, January. I don't want it to be one, two, three, four, five, and so on and so forth.
+
+362
+00:17:38,810 --> 00:17:40,110
+Okay. Click OK.
+
+363
+00:17:41,010 --> 00:17:42,950
+And then click OK again.
+
+364
+00:17:43,810 --> 00:17:48,590
+Now part of the problem is we've got the same settings that we had on manufacturing services. Right?
+
+365
+00:17:48,670 --> 00:17:53,390
+This 40 to 70. Problem is payrolls doesn't follow that format.
+
+366
+00:17:53,610 --> 00:17:57,050
+Payrolls isn't 40 to 70. It's huge numbers.
+
+367
+00:17:57,470 --> 00:18:01,810
+So we need to change the axis so it's more relevant to payrolls.
+
+368
+00:18:01,810 --> 00:18:06,050
+Okay. So what you do, double click, and you can see the axis options.
+
+369
+00:18:06,530 --> 00:18:11,530
+These bounds, we've got 40 and 70. Just reset them. Reset. Reset.
+
+370
+00:18:11,730 --> 00:18:14,370
+Okay. It's now starting to look more sensible.
+
+371
+00:18:14,890 --> 00:18:17,170
+So we can actually make a little bit of sense of the data now.
+
+372
+00:18:17,930 --> 00:18:25,210
+Because I'm doing this very close to when COVID happened back in March, April time. Can you see that there?
+
+373
+00:18:25,950 --> 00:18:28,391
+Payrolls completely tanked and went completely
+
+374
+00:18:28,391 --> 00:18:30,832
+through the floor, but then smashed
+
+375
+00:18:30,832 --> 00:18:34,087
+back up again. As we know, in line
+
+376
+00:18:34,087 --> 00:18:38,969
+with the kind of very short recession, the shortest recession in history.
+
+377
+00:18:38,970 --> 00:18:44,030
+So what we're actually going to do is I'm going to change is up to you.
+
+378
+00:18:44,030 --> 00:18:48,930
+Okay. Like I said in the Pro Foundation course, there is no such thing as black and white.
+
+379
+00:18:49,030 --> 00:18:52,750
+There's no indicator. People are always looking for the easy way out.
+
+380
+00:18:52,810 --> 00:18:54,330
+And that's why they don't do well in this business.
+
+381
+00:18:54,450 --> 00:19:02,350
+You do need to use a little bit of thinking, lateral thinking, critical thinking. And you're all capable of it.
+
+382
+00:19:02,470 --> 00:19:03,470
+Okay. Think about it.
+
+383
+00:19:04,670 --> 00:19:06,550
+If, in this instance,
+
+384
+00:19:06,550 --> 00:19:10,310
+payrolls only has, and I'm just trying to
+
+385
+00:19:10,310 --> 00:19:12,660
+find my pen here. If 90%
+
+386
+00:19:12,660 --> 00:19:17,360
+of the time payrolls is here, in this region, right?
+
+387
+00:19:18,750 --> 00:19:21,230
+And one time in history, it's over here.
+
+388
+00:19:21,370 --> 00:19:23,956
+Does it make any sense for me to
+
+389
+00:19:23,956 --> 00:19:26,219
+have my axis that wide? Because then
+
+390
+00:19:26,219 --> 00:19:29,129
+I can barely see any changes going on here.
+
+391
+00:19:29,230 --> 00:19:30,330
+And all I see is this.
+
+392
+00:19:30,970 --> 00:19:34,250
+Why not actually change my axis so it's like this?
+
+393
+00:19:34,250 --> 00:19:36,810
+I already know I've got a crazy
+
+394
+00:19:36,810 --> 00:19:38,639
+outlier here, an outlier. I
+
+395
+00:19:38,639 --> 00:19:43,029
+don't need to have it there in my face all the time.
+
+396
+00:19:43,430 --> 00:19:48,210
+And I know as time goes on, these are going to go into history. So it makes no sense.
+
+397
+00:19:48,330 --> 00:19:54,910
+So make an executive decision to just tighten things up a little bit. And that's what I do.
+
+398
+00:19:55,170 --> 00:19:56,002
+Okay. So
+
+399
+00:19:56,002 --> 00:19:57,250
+I actually think,
+
+400
+00:19:57,250 --> 00:19:59,331
+you know, typically on average,
+
+401
+00:19:59,331 --> 00:20:01,412
+you know, in a normal
+
+402
+00:20:01,412 --> 00:20:03,493
+month, you're looking at somewhere
+
+403
+00:20:03,493 --> 00:20:10,568
+between one and, you know, maybe a hundred, five hundred, a thousand, maybe two thousand maximum, right?
+
+404
+00:20:10,630 --> 00:20:12,009
+So what I'm going to
+
+405
+00:20:12,009 --> 00:20:13,939
+do, or what I like to do,
+
+406
+00:20:13,939 --> 00:20:17,249
+is have that as maximum two thousand in terms of payrolls changes.
+
+407
+00:20:17,910 --> 00:20:19,650
+Can you see? Up to two thousand.
+
+408
+00:20:20,430 --> 00:20:25,970
+Sorry, that's minimum, isn't it? What did I do there? Control Z. Okay, there we go.
+
+409
+00:20:26,470 --> 00:20:30,230
+So I like to have the maximum, sorry, maximum as two thousand.
+
+410
+00:20:30,510 --> 00:20:30,930
+Hit enter.
+
+411
+00:20:32,130 --> 00:20:35,150
+Okay. And my minimum, what have I got it as?
+
+412
+00:20:36,290 --> 00:20:44,530
+You show me, when has payrolls ever been under about a thousand, apart from the one sort of COVID related?
+
+413
+00:20:45,130 --> 00:20:48,450
+It doesn't. Typically it's more like minus 100, minus 200.
+
+414
+00:20:48,850 --> 00:20:51,670
+I don't really need to have all this 3,000, 8,000.
+
+415
+00:20:51,790 --> 00:20:52,390
+It's just crazy.
+
+416
+00:20:52,470 --> 00:20:53,330
+It makes no sense.
+
+417
+00:20:53,730 --> 00:20:55,490
+Okay. I had one data point in history.
+
+418
+00:20:56,450 --> 00:20:59,670
+I already know about that in the back of my mind, that I had that data point.
+
+419
+00:20:59,670 --> 00:21:02,690
+So for me, minimum 1,000, do you see?
+
+420
+00:21:03,050 --> 00:21:04,590
+It starts to become much more sensible.
+
+421
+00:21:04,590 --> 00:21:09,310
+I'm basically ignoring these outliers.
+
+422
+00:21:09,310 --> 00:21:16,550
+I know there's a number up there and I know there's a number down there. I don't need it.
+
+423
+00:21:16,550 --> 00:21:19,090
+This now becomes much more readable.
+
+424
+00:21:19,410 --> 00:21:20,730
+I can actually see the changes.
+
+425
+00:21:20,890 --> 00:21:23,990
+Look. From there to there. Here, here.
+
+426
+00:21:24,090 --> 00:21:26,810
+I can see a little, nice little trend above zero.
+
+427
+00:21:27,050 --> 00:21:32,550
+Okay. You know, we're kind of between zero and a thousand the last few months, the entire year.
+
+428
+00:21:33,150 --> 00:21:35,476
+We're positive generally, apart from
+
+429
+00:21:35,476 --> 00:21:38,732
+this one slight negative, but we're holding
+
+430
+00:21:38,732 --> 00:21:43,849
+this area in terms of, and it's not support or resistance.
+
+431
+00:21:44,130 --> 00:21:46,310
+Okay. So let's not even go there.
+
+432
+00:21:46,370 --> 00:21:48,110
+Okay. It's not, it's nothing to do with that.
+
+433
+00:21:48,570 --> 00:21:53,390
+You know, when companies are hiring, they're not thinking about, oh, let me not hire someone because I'm at resistance.
+
+434
+00:21:53,390 --> 00:21:54,513
+It's complete nonsense, all
+
+435
+00:21:54,513 --> 00:21:56,198
+of that stuff, and I've said
+
+436
+00:21:56,198 --> 00:21:59,568
+it a million times and people are deluded if they think otherwise.
+
+437
+00:22:00,050 --> 00:22:01,228
+Clearly, it's more
+
+438
+00:22:01,228 --> 00:22:03,978
+just kind of the, the recent kind
+
+439
+00:22:03,978 --> 00:22:06,728
+of levels or trends that we've been
+
+440
+00:22:06,728 --> 00:22:12,228
+at when it comes to payrolls in terms of appetite for businesses to hire.
+
+441
+00:22:12,690 --> 00:22:22,810
+Okay. So we can see the appetite is fairly strong, sort of in the 500,000 to 1 million this year,
+
+442
+00:22:22,810 --> 00:22:25,530
+when you come to do this exercise, it might be slightly different.
+
+443
+00:22:25,890 --> 00:22:28,450
+Can you see I'm already starting to have a good picture?
+
+444
+00:22:28,570 --> 00:22:31,253
+I can analyze when I come to do my institutional
+
+445
+00:22:31,253 --> 00:22:33,399
+Sunday or when I come to set up
+
+446
+00:22:33,399 --> 00:22:38,229
+my week for trading and I know I've got payrolls coming up, I'm thinking, do you know what?
+
+447
+00:22:38,270 --> 00:22:40,470
+We've had a lot of positive numbers recently.
+
+448
+00:22:40,470 --> 00:22:44,334
+We've been slightly under forecast the last three
+
+449
+00:22:44,334 --> 00:22:47,715
+out of four times, but we've generally
+
+450
+00:22:47,715 --> 00:22:52,062
+tended to be in the kind of 200 to 700 region.
+
+451
+00:22:54,690 --> 00:22:59,490
+You know, as long as we hit another number in this region, that should be pretty good for us.
+
+452
+00:22:59,910 --> 00:23:01,930
+If we get a number down here, I should be worried.
+
+453
+00:23:02,010 --> 00:23:03,550
+If we get a number up there, it's good.
+
+454
+00:23:03,630 --> 00:23:04,170
+Do you see what I mean?
+
+455
+00:23:04,170 --> 00:23:07,670
+I'm starting to do some analysis based on that graph.
+
+456
+00:23:07,970 --> 00:23:11,350
+Okay. You can't do that with a data calendar.
+
+457
+00:23:11,650 --> 00:23:13,690
+Okay. You can see why people are all over the place.
+
+458
+00:23:13,750 --> 00:23:14,730
+Yeah. You've got a whole bunch of numbers.
+
+459
+00:23:14,730 --> 00:23:16,310
+Keep saying you've got a whole bunch of numbers here.
+
+460
+00:23:16,430 --> 00:23:19,030
+How are you going to do this type of analysis using a data calendar?
+
+461
+00:23:19,150 --> 00:23:19,710
+You can't.
+
+462
+00:23:20,430 --> 00:23:22,250
+You need to really take it to the next level.
+
+463
+00:23:22,830 --> 00:23:23,830
+Get the data over.
+
+464
+00:23:24,090 --> 00:23:29,970
+Obviously, the data calendar is helpful just to tell you what the number was, but that's where it's. Utility ends.
+
+465
+00:23:29,970 --> 00:23:31,550
+You then need to have it over here.
+
+466
+00:23:32,530 --> 00:23:33,230
+You can see.
+
+467
+00:23:33,450 --> 00:23:38,150
+Can you see I've got the same payrolls graph identical, right, to that?
+
+468
+00:23:38,250 --> 00:23:40,350
+So you're now looking at the same data I am.
+
+469
+00:23:40,790 --> 00:23:42,010
+So I'm very happy with that.
+
+470
+00:23:42,110 --> 00:23:45,970
+Just make sure a little cleansing of the data. Make sure everything's on a Friday.
+
+471
+00:23:46,210 --> 00:23:46,710
+It is.
+
+472
+00:23:47,270 --> 00:23:53,130
+Just spot check some of these. When was January data released? A few days later in February.
+
+473
+00:23:53,210 --> 00:23:53,330
+Yep.
+
+474
+00:23:53,330 --> 00:23:53,930
+That makes sense.
+
+475
+00:23:54,010 --> 00:23:55,170
+October, November. Yep.
+
+476
+00:23:55,250 --> 00:23:56,990
+September, October. Yep.
+
+477
+00:23:57,030 --> 00:23:59,030
+Just do a little spot check, like I said.
+
+478
+00:23:59,030 --> 00:24:04,250
+And then the all-important check here. Just close that down there.
+
+479
+00:24:06,010 --> 00:24:11,290
+Let's just get the graph and make sure that it matches the graph.
+
+480
+00:24:11,630 --> 00:24:12,430
+Where are we?
+
+481
+00:24:12,590 --> 00:24:15,890
+So I selected the wrong one. Non-farm employment change.
+
+482
+00:24:16,970 --> 00:24:18,310
+Okay. And there's the graph.
+
+483
+00:24:18,790 --> 00:24:22,150
+In fact, it's pretty, very difficult to look at that graph, isn't it?
+
+484
+00:24:22,150 --> 00:24:23,191
+We've got, I'm
+
+485
+00:24:23,191 --> 00:24:24,579
+looking at it, my
+
+486
+00:24:24,579 --> 00:24:26,315
+last, going back as far
+
+487
+00:24:26,315 --> 00:24:30,481
+as December, 19. Obviously, you will be going back slightly later than that.
+
+488
+00:24:31,810 --> 00:24:32,670
+Get your last month.
+
+489
+00:24:32,790 --> 00:24:33,410
+There you go.
+
+490
+00:24:33,610 --> 00:24:35,910
+I'm not really sure if you can remove those.
+
+491
+00:24:35,970 --> 00:24:36,370
+You can't.
+
+492
+00:24:36,370 --> 00:24:37,890
+But can you see the pattern?
+
+493
+00:24:38,150 --> 00:24:43,310
+Goes down, shoots up, goes down, shoots up. And then generally positive.
+
+494
+00:24:45,510 --> 00:24:48,050
+I'm just going to move that over.
+
+495
+00:24:48,490 --> 00:24:49,470
+Generally positive.
+
+496
+00:24:50,330 --> 00:24:51,370
+Generally positive.
+
+497
+00:24:51,730 --> 00:24:53,450
+One negative reading there.
+
+498
+00:24:54,170 --> 00:24:55,930
+One negative reading there.
+
+499
+00:24:56,270 --> 00:24:58,490
+So, yeah. Very happy that I've got the right data.
+
+500
+00:24:58,490 --> 00:25:00,990
+And that's it.
+
+501
+00:25:01,270 --> 00:25:08,530
+Okay. So you've now got, ladies and gentlemen, payrolls, services, manufacturing, a calendar.
+
+502
+00:25:08,710 --> 00:25:15,090
+Can you see you're starting to really motor ahead of anyone else who looks at fundamentals?
+
+503
+00:25:15,770 --> 00:25:18,370
+Don't even need to pay for this data. I've got it all free.
+
+504
+00:25:18,850 --> 00:25:22,210
+A lot of people think I'm paying thousands of pounds for all of this. I'm not.
+
+505
+00:25:22,830 --> 00:25:26,130
+You know, I'm using a little bit of intuition. And obviously, I've been taught a lot as well.
+
+506
+00:25:26,190 --> 00:25:29,030
+I've been very lucky. And I'm passing that knowledge on to you.
+
+507
+00:25:29,150 --> 00:25:31,930
+It's free. It costs you nothing to build all of this stuff.
+
+508
+00:25:32,730 --> 00:25:34,670
+Which is why I get so excited by it.
+
+509
+00:25:34,710 --> 00:25:37,426
+Because I think it's fantastic that people
+
+510
+00:25:37,426 --> 00:25:40,530
+can get, I was going to say every
+
+511
+00:25:40,530 --> 00:25:46,350
+day, you know, people who are outside of the financial industry have access to it.
+
+512
+00:25:46,370 --> 00:25:47,949
+But I just mean people who,
+
+513
+00:25:47,949 --> 00:25:49,528
+you know, want to have access
+
+514
+00:25:49,528 --> 00:25:52,949
+to it can and don't need to pay through the news for it.
+
+515
+00:25:52,950 --> 00:25:56,870
+The one I'm going to do now is unemployment rate and then we're done.
+
+516
+00:25:58,110 --> 00:26:00,624
+I'm going to actually just pause
+
+517
+00:26:00,624 --> 00:26:03,138
+this for one moment because my,
+
+518
+00:26:03,138 --> 00:26:06,909
+it's quite funny, my missus has just popped home.
+
+519
+00:26:06,970 --> 00:26:07,750
+I'm going to have some dinner.
+
+520
+00:26:08,130 --> 00:26:09,730
+I'll pause it. I'll be back in two seconds.
+
+521
+00:26:10,330 --> 00:26:11,990
+So you won't even notice that I've had dinner.
+
+522
+00:26:12,210 --> 00:26:13,919
+I'm going to then do the unemployment
+
+523
+00:26:13,919 --> 00:26:15,139
+rate and then we're going
+
+524
+00:26:15,139 --> 00:26:18,069
+to do that. And then we'll move on to the next one.
+
+525
+00:26:18,590 --> 00:26:20,410
+Okay, ladies and gentlemen, so I'm back.
+
+526
+00:26:20,730 --> 00:26:22,197
+Had a bit of
+
+527
+00:26:22,197 --> 00:26:25,132
+dinner, which is good because it's always good
+
+528
+00:26:25,132 --> 00:26:29,168
+to have, be full of energy when you're doing these things.
+
+529
+00:26:29,650 --> 00:26:32,370
+So, but anyway, yeah, I'm back now.
+
+530
+00:26:32,410 --> 00:26:36,550
+So we're just going to finish off basically with the unemployment rate.
+
+531
+00:26:36,550 --> 00:26:41,370
+As I said, you know, I do want to have that on here because I like to follow it.
+
+532
+00:26:41,410 --> 00:26:42,350
+We can see it here.
+
+533
+00:26:43,150 --> 00:26:45,490
+Payrolls and the unemployment rate.
+
+534
+00:26:45,750 --> 00:26:49,550
+Now, in terms of what is the unemployment rate, most of you will already know that.
+
+535
+00:26:50,010 --> 00:26:54,690
+You may not know the exact ins and outs, how it's calculated and all that type of stuff.
+
+536
+00:26:54,750 --> 00:26:56,330
+But don't worry, we're going to cover all of that.
+
+537
+00:26:56,330 --> 00:27:03,750
+But like I said, in a particular sort of analysis or module when we look at payrolls and employment data.
+
+538
+00:27:03,890 --> 00:27:06,430
+So for now, don't concern yourself too much with that.
+
+539
+00:27:06,790 --> 00:27:09,450
+But for us to be able to do that analysis, we need the data.
+
+540
+00:27:09,850 --> 00:27:17,730
+This is all about getting, keep going on about it, the data in a format that's easily understandable to us.
+
+541
+00:27:17,730 --> 00:27:21,570
+And obviously, when you have it in this format, it's completely meaningless, right?
+
+542
+00:27:22,010 --> 00:27:23,112
+I mean, it's fine.
+
+543
+00:27:23,112 --> 00:27:25,040
+We know the rate was 4.2%, but what
+
+544
+00:27:25,040 --> 00:27:29,173
+it's been doing for the last year, two years, really doesn't tell us much, right?
+
+545
+00:27:29,510 --> 00:27:30,670
+Apart from the number.
+
+546
+00:27:31,250 --> 00:27:40,090
+So let's actually give ourselves a fighting chance against, you know, some of the more professional traders out there.
+
+547
+00:27:40,190 --> 00:27:42,250
+And let's try and put ourselves at least
+
+548
+00:27:42,250 --> 00:27:44,310
+in line with them by looking at what
+
+549
+00:27:44,310 --> 00:27:48,688
+they're going to be looking at, which is a lot more in terms of a fuller picture.
+
+550
+00:27:48,690 --> 00:27:50,668
+So to do that, what I
+
+551
+00:27:50,668 --> 00:27:53,305
+do, right, rather than having, I don't want
+
+552
+00:27:53,305 --> 00:27:55,283
+hundreds of tabs because then kind
+
+553
+00:27:55,283 --> 00:27:58,909
+of defeats the purpose of trying to be succinct with information.
+
+554
+00:27:59,450 --> 00:28:04,750
+When it comes to unemployment, as you can see here, I like to put it on one page.
+
+555
+00:28:05,250 --> 00:28:08,650
+Okay, that's why I like to zoom in a little bit so I can have it both on one page.
+
+556
+00:28:08,650 --> 00:28:11,050
+We won't zoom for now.
+
+557
+00:28:11,230 --> 00:28:12,390
+Let's just build it.
+
+558
+00:28:13,570 --> 00:28:15,010
+You know, don't need
+
+559
+00:28:15,010 --> 00:28:17,170
+to have, if you want, you
+
+560
+00:28:17,170 --> 00:28:18,970
+can have a second tab,
+
+561
+00:28:18,970 --> 00:28:20,770
+okay, payrolls and unemployment. They're
+
+562
+00:28:20,770 --> 00:28:25,450
+both released at the same time, okay, by the same organization, the BLS.
+
+563
+00:28:25,550 --> 00:28:30,310
+So you can see here, the Bureau, BLS, Bureau for Labor Statistics.
+
+564
+00:28:30,310 --> 00:28:37,470
+They released the unemployment rate at exactly the same time as non-farm, the employment change.
+
+565
+00:28:37,690 --> 00:28:40,990
+They also released a couple of other bits and bobs, average hourly earnings and stuff.
+
+566
+00:28:41,150 --> 00:28:43,021
+But so rather than me having the unemployment
+
+567
+00:28:43,021 --> 00:28:43,956
+rate on a different
+
+568
+00:28:43,956 --> 00:28:46,529
+tab, it makes no sense. They released at the same time.
+
+569
+00:28:46,630 --> 00:28:47,834
+I might as well have
+
+570
+00:28:47,834 --> 00:28:49,038
+them. It's the employment picture
+
+571
+00:28:49,038 --> 00:28:51,928
+in one go. Might as well have it on the same tab.
+
+572
+00:28:52,330 --> 00:28:54,210
+So to do that, here's what I do.
+
+573
+00:28:54,590 --> 00:28:56,090
+You can do it a different way to me.
+
+574
+00:28:56,250 --> 00:28:58,183
+I just copy this.
+
+575
+00:28:58,183 --> 00:29:00,116
+I just, okay, bring
+
+576
+00:29:00,116 --> 00:29:03,016
+it over here, okay, and then,
+
+577
+00:29:03,016 --> 00:29:05,916
+so copy as in, highlight it,
+
+578
+00:29:05,916 --> 00:29:08,333
+and then control C or
+
+579
+00:29:08,333 --> 00:29:16,067
+copy, and then over here, and then paste, okay, literally just paste it exactly the same.
+
+580
+00:29:16,170 --> 00:29:16,890
+That's what I do.
+
+581
+00:29:18,290 --> 00:29:22,910
+Probably just make these a little bit, bring these in a little bit because we haven't got much space.
+
+582
+00:29:22,910 --> 00:29:28,710
+And what I might do is I might just make this graph a little bit smaller.
+
+583
+00:29:29,030 --> 00:29:30,398
+Obviously, you can not do that
+
+584
+00:29:30,398 --> 00:29:31,766
+if you don't want to, but
+
+585
+00:29:31,766 --> 00:29:33,134
+just to give myself a little
+
+586
+00:29:33,134 --> 00:29:35,870
+bit of room because I'm going to need another graph over there.
+
+587
+00:29:37,310 --> 00:29:40,010
+And I'm going to remove a couple of these.
+
+588
+00:29:40,070 --> 00:29:41,550
+So let me just make this a little bit smaller.
+
+589
+00:29:41,730 --> 00:29:45,470
+Again, you don't have to do this, but this is what I like to do.
+
+590
+00:29:45,570 --> 00:29:46,830
+Just make it a little bit smaller.
+
+591
+00:29:46,830 --> 00:29:51,370
+Maybe remove some of this. Delete.
+
+592
+00:29:52,450 --> 00:29:54,410
+All right. Let's just make this as small as possible.
+
+593
+00:29:55,610 --> 00:29:57,290
+And what we want is we
+
+594
+00:29:57,290 --> 00:29:58,970
+want another graph so we can
+
+595
+00:29:58,970 --> 00:30:01,490
+see payrolls and the unemployment rate side by side.
+
+596
+00:30:02,370 --> 00:30:03,406
+You know, as I
+
+597
+00:30:03,406 --> 00:30:04,960
+said, there will be certain times,
+
+598
+00:30:04,960 --> 00:30:06,255
+and I already explained this
+
+599
+00:30:06,255 --> 00:30:08,328
+way, it's okay to have both of one.
+
+600
+00:30:08,430 --> 00:30:14,230
+We talked about it where they're very similar in terms of their units and how they're correlated.
+
+601
+00:30:14,230 --> 00:30:15,183
+Unemployment rate, even
+
+602
+00:30:15,183 --> 00:30:16,772
+though it is correlated, it's
+
+603
+00:30:16,772 --> 00:30:18,361
+slightly different, the pattern, and
+
+604
+00:30:18,361 --> 00:30:19,950
+it's not as volatile, and
+
+605
+00:30:19,950 --> 00:30:21,539
+it's got different units as
+
+606
+00:30:21,539 --> 00:30:25,988
+well, percentages, and just makes it easier, in my opinion, to have it separate.
+
+607
+00:30:26,130 --> 00:30:30,210
+So what I do is copy that, go over here, paste.
+
+608
+00:30:32,070 --> 00:30:33,410
+Okay. So I have that.
+
+609
+00:30:33,550 --> 00:30:37,690
+So I want to be able somehow, I'm going to make some changes here.
+
+610
+00:30:37,810 --> 00:30:44,990
+Okay. Can you see I'm trimming that side? Just so I can somehow squeeze all of this in, basically.
+
+611
+00:30:45,530 --> 00:30:47,090
+Let me see if I can make some more.
+
+612
+00:30:47,930 --> 00:30:51,930
+So like I said, eventually what I would like to do is choose the zoom.
+
+613
+00:30:52,070 --> 00:30:55,490
+Can you see now I can easily get it in to both?
+
+614
+00:30:55,570 --> 00:31:00,190
+That's why I like to have the view zoom as 85%, as I said.
+
+615
+00:31:00,830 --> 00:31:04,390
+Leave it at 100% for now so you can actually see what I'm doing.
+
+616
+00:31:04,390 --> 00:31:05,076
+And then we'll
+
+617
+00:31:05,076 --> 00:31:06,220
+just, I will zoom in,
+
+618
+00:31:06,220 --> 00:31:07,135
+it's up to you
+
+619
+00:31:07,135 --> 00:31:10,109
+if you want to do the same, just so I can see it.
+
+620
+00:31:10,690 --> 00:31:12,272
+What you might
+
+621
+00:31:12,272 --> 00:31:14,910
+want to do, obviously I'm
+
+622
+00:31:14,910 --> 00:31:17,020
+over here. You can
+
+623
+00:31:17,020 --> 00:31:21,768
+see good old me over here. Right here, basically.
+
+624
+00:31:22,570 --> 00:31:23,966
+When I'm, when it's your,
+
+625
+00:31:23,966 --> 00:31:25,920
+because I'm not on your spreadsheet, what
+
+626
+00:31:25,920 --> 00:31:29,549
+you could in theory do is you can actually move this down here.
+
+627
+00:31:29,730 --> 00:31:30,390
+Do you see what I mean?
+
+628
+00:31:30,430 --> 00:31:31,530
+You can play around with it.
+
+629
+00:31:31,530 --> 00:31:32,572
+So, you know, just
+
+630
+00:31:32,572 --> 00:31:34,657
+like in the Pro and Foundation where you
+
+631
+00:31:34,657 --> 00:31:39,349
+have things set up in your own way, you don't have to have it set up like this.
+
+632
+00:31:39,410 --> 00:31:43,630
+For now, obviously this is how I'll do it, but you can set it up in your own way.
+
+633
+00:31:44,350 --> 00:31:53,530
+Now we know this is going to be unemployment, spell this properly, unemployment rate percent.
+
+634
+00:31:53,530 --> 00:31:59,930
+Right, so I'm changing that to unemployment rate. Just see how I've got it here.
+
+635
+00:32:01,410 --> 00:32:02,348
+The month, it's easy
+
+636
+00:32:02,348 --> 00:32:03,755
+this one, because the month and
+
+637
+00:32:03,755 --> 00:32:07,508
+the release dates are all the same. So you don't need to change any of this.
+
+638
+00:32:08,470 --> 00:32:09,970
+So, pretty straightforward.
+
+639
+00:32:09,970 --> 00:32:16,270
+The actuals, you will need to, let's go over here. Let's just move this along.
+
+640
+00:32:16,690 --> 00:32:20,550
+So we've just got the unemployment rate. That is no longer payrolls.
+
+641
+00:32:20,550 --> 00:32:30,380
+We're going to change that. Copy that if you want. Copy. Copy. Okay. And then change that. Paste.
+
+642
+00:32:30,940 --> 00:32:38,200
+I don't know if it'll work actually. That doesn't seem to. Might work with control V. Yes, it does.
+
+643
+00:32:38,200 --> 00:32:42,660
+So just put unemployment rate there.
+
+644
+00:32:43,800 --> 00:32:45,660
+Okay, now we need the unemployment rate.
+
+645
+00:32:45,720 --> 00:32:47,600
+At the moment, we've still got the payrolls data, right?
+
+646
+00:32:47,640 --> 00:32:49,360
+Because we just copied it across from there.
+
+647
+00:32:49,960 --> 00:32:52,660
+We need this to give us the unemployment rate data.
+
+648
+00:32:52,740 --> 00:32:56,520
+So again, open it up. Same thing that we've been doing so far.
+
+649
+00:32:56,900 --> 00:33:02,040
+Put the latest data in. 4.2, 4.5, 4.6%. That's the unemployment rate.
+
+650
+00:33:02,040 --> 00:33:05,545
+The percent of the working population willing
+
+651
+00:33:05,545 --> 00:33:09,050
+and prepared to go to work as
+
+652
+00:33:09,050 --> 00:33:12,055
+a percentage. Unemployment. Basically, the number
+
+653
+00:33:12,055 --> 00:33:14,559
+of unemployed people as a
+
+654
+00:33:14,559 --> 00:33:17,063
+proportion of people willing to
+
+655
+00:33:17,063 --> 00:33:26,078
+go to work. So the workforce. That is as a percentage. That is what the unemployment rate is.
+
+656
+00:33:26,760 --> 00:33:31,360
+So the first three we've got. 4.2, right? So copy that. Copy.
+
+657
+00:33:32,040 --> 00:33:34,540
+And then we're going to go in here. Okay, in that area.
+
+658
+00:33:34,920 --> 00:33:38,200
+And we're going to paste match destination formatting.
+
+659
+00:33:38,360 --> 00:33:40,420
+Okay, so can you see I've got the percentages in there now?
+
+660
+00:33:41,400 --> 00:33:43,860
+These are not thousands anymore. They're percentages.
+
+661
+00:33:44,140 --> 00:33:45,448
+So I'm going to change
+
+662
+00:33:45,448 --> 00:33:46,756
+that to... In fact, I'm
+
+663
+00:33:46,756 --> 00:33:50,158
+not going to put anything because we can already see it's a percent.
+
+664
+00:33:50,780 --> 00:33:54,600
+So I'm going to take that off by F2 to get in there.
+
+665
+00:33:55,400 --> 00:33:56,220
+Scroll back.
+
+666
+00:33:56,640 --> 00:33:59,360
+You can even do it with this control Z. You can do it up here.
+
+667
+00:33:59,360 --> 00:34:04,140
+And just remove that K. Okay. Versus forecast.
+
+668
+00:34:04,260 --> 00:34:07,640
+We want to change this because it's a percentage.
+
+669
+00:34:08,159 --> 00:34:11,860
+So if you go to home, can you see that little percentage? Click on that.
+
+670
+00:34:11,860 --> 00:34:14,460
+And then expand the number of decimal places.
+
+671
+00:34:17,540 --> 00:34:23,100
+Let's make it... Let's change these to one decimal place. All of these.
+
+672
+00:34:23,639 --> 00:34:30,199
+So if you highlight all of these and then right-click, format cells.
+
+673
+00:34:30,860 --> 00:34:33,960
+Can you see decimal places? Change that to one.
+
+674
+00:34:34,340 --> 00:34:37,500
+Okay. Because can you see it's always reported as one decimal place?
+
+675
+00:34:37,500 --> 00:34:41,280
+It will never be 4.21, 4.23. You don't need to worry about that.
+
+676
+00:34:41,699 --> 00:34:49,080
+Different way of doing it is you can use these little buttons. Can you see that? Changes the decimal places.
+
+677
+00:34:50,040 --> 00:34:55,400
+What we want to do now is we want to copy the rest of the data down.
+
+678
+00:34:55,400 --> 00:35:04,580
+So as always, okay. So what you cannot do is you can't just select these percentages.
+
+679
+00:35:04,580 --> 00:35:07,620
+It's going to select the dates, I believe. Can you see that?
+
+680
+00:35:08,660 --> 00:35:10,740
+We've already got the dates in a nice format.
+
+681
+00:35:11,280 --> 00:35:12,560
+So there is a way around it.
+
+682
+00:35:12,620 --> 00:35:14,354
+So what you do, obviously
+
+683
+00:35:14,354 --> 00:35:16,782
+we want all the data from November.
+
+684
+00:35:16,782 --> 00:35:21,638
+Don't forget, this is December data for November. I've explained this many times, right?
+
+685
+00:35:21,640 --> 00:35:22,900
+So for you, it might be different.
+
+686
+00:35:23,360 --> 00:35:25,900
+Get the latest data for yourself, okay?
+
+687
+00:35:26,280 --> 00:35:28,720
+The unemployment rate. Put that in there.
+
+688
+00:35:29,300 --> 00:35:35,620
+Then get the rest of the history, whatever is there. And take a whole bunch of data. Copy it across.
+
+689
+00:35:36,020 --> 00:35:37,033
+Go in there.
+
+690
+00:35:37,033 --> 00:35:39,397
+The first data point, be careful not
+
+691
+00:35:39,397 --> 00:35:41,423
+to paste it in here because
+
+692
+00:35:41,423 --> 00:35:45,138
+we already have it. We've already taken it from up there.
+
+693
+00:35:45,140 --> 00:35:51,500
+That's the, for me, released in December 4, November. Released in December 4, November.
+
+694
+00:35:52,240 --> 00:35:53,920
+Yours is going to be whatever it's going to be.
+
+695
+00:35:54,000 --> 00:35:55,847
+So just make sure not
+
+696
+00:35:55,847 --> 00:35:57,694
+to fill in, copy into
+
+697
+00:35:57,694 --> 00:35:59,541
+that cell. Copy this data.
+
+698
+00:35:59,541 --> 00:36:02,497
+Go into the next cell below there. Paste.
+
+699
+00:36:02,760 --> 00:36:07,700
+Remember, match destination formatting. Okay. Get rid of all of this.
+
+700
+00:36:07,760 --> 00:36:11,120
+We don't need it because we only want 24. Okay.
+
+701
+00:36:11,120 --> 00:36:17,040
+Now, can you see, this has reverted back to that kind of text. It's not the actual dates.
+
+702
+00:36:17,160 --> 00:36:21,260
+You don't need to, okay, type it all in again because we have it over here. Do you remember?
+
+703
+00:36:21,800 --> 00:36:22,660
+For payrolls.
+
+704
+00:36:23,060 --> 00:36:32,620
+So all you need to do is copy this. Copy across here and paste it in. Okay.
+
+705
+00:36:33,860 --> 00:36:35,500
+Paste it in. All right. Can you see?
+
+706
+00:36:35,580 --> 00:36:36,340
+So you've already got it.
+
+707
+00:36:36,340 --> 00:36:42,060
+Because they're all released on the same day, basically.
+
+708
+00:36:42,940 --> 00:36:43,860
+So let me just check.
+
+709
+00:36:43,960 --> 00:36:50,400
+One thing I just noticed. We've got a Thursday over here. The 2nd of July 2020.
+
+710
+00:36:50,880 --> 00:36:52,400
+Let me just double check that.
+
+711
+00:36:52,980 --> 00:36:58,900
+If you click on that, 2nd of July. Let's have a look what happened there.
+
+712
+00:36:59,020 --> 00:37:03,860
+Because that is showing as a Thursday, isn't it? Thursday, 2nd of July.
+
+713
+00:37:04,520 --> 00:37:05,640
+Maybe it was a bank holiday.
+
+714
+00:37:06,500 --> 00:37:07,485
+Yeah. So just
+
+715
+00:37:07,485 --> 00:37:09,783
+on that one particular day, payrolls were
+
+716
+00:37:09,783 --> 00:37:11,753
+released on a Thursday because the
+
+717
+00:37:11,753 --> 00:37:14,379
+next day was a bank holiday. Independence Day.
+
+718
+00:37:14,640 --> 00:37:16,560
+Okay. So that's fine.
+
+719
+00:37:16,980 --> 00:37:18,220
+That's why it's good to check these things.
+
+720
+00:37:18,300 --> 00:37:20,380
+Just make sure an error wasn't made. It wasn't.
+
+721
+00:37:21,080 --> 00:37:22,460
+It's because we had Good Friday.
+
+722
+00:37:22,620 --> 00:37:24,260
+Oh, sorry. The Independence Day.
+
+723
+00:37:24,260 --> 00:37:28,600
+I believe it's Labor Day it's called, isn't it? But I think that's what it's called.
+
+724
+00:37:28,680 --> 00:37:29,280
+Anyway. So, yeah.
+
+725
+00:37:29,320 --> 00:37:29,920
+That's all good.
+
+726
+00:37:30,000 --> 00:37:35,820
+So you can see here. You've got all the right dates. You've got all your data now in percentages.
+
+727
+00:37:36,420 --> 00:37:40,480
+Can you see these are not the same format as that?
+
+728
+00:37:40,960 --> 00:37:42,365
+So, again, all you need to
+
+729
+00:37:42,365 --> 00:37:43,770
+do, we're going to use the
+
+730
+00:37:43,770 --> 00:37:46,580
+Format Painter, is click on that cell, Format Painter, drag it down.
+
+731
+00:37:47,360 --> 00:37:51,620
+Okay. So you can see they've all now changed, basically.
+
+732
+00:37:51,880 --> 00:37:54,240
+Now, there is something you need to think about, right?
+
+733
+00:37:54,820 --> 00:37:57,151
+In terms of this colouring, can you
+
+734
+00:37:57,151 --> 00:37:59,482
+see that even though we've got a
+
+735
+00:37:59,482 --> 00:38:02,479
+lower unemployment rate, it's come out red versus forecast.
+
+736
+00:38:03,560 --> 00:38:07,480
+Think about it. A lower unemployment rate is actually a good thing, isn't it?
+
+737
+00:38:07,560 --> 00:38:09,787
+Whereas a lower payroll number is
+
+738
+00:38:09,787 --> 00:38:12,385
+a bad thing. If we have a
+
+739
+00:38:12,385 --> 00:38:16,839
+lower payroll number, it means there were less jobs versus the forecast.
+
+740
+00:38:17,360 --> 00:38:18,794
+So it's correct that we
+
+741
+00:38:18,794 --> 00:38:20,228
+want it to be negative.
+
+742
+00:38:20,228 --> 00:38:21,662
+But if the unemployment rate
+
+743
+00:38:21,662 --> 00:38:24,818
+is lower, that's not a bad thing. That's a good thing.
+
+744
+00:38:24,880 --> 00:38:29,100
+So can you see we need to inverse the colours when we're comparing to forecast?
+
+745
+00:38:29,340 --> 00:38:31,820
+So to do that, very
+
+746
+00:38:31,820 --> 00:38:35,293
+straightforward here. What we're going to tell
+
+747
+00:38:35,293 --> 00:38:38,269
+it, conditional formatting, if it's less
+
+748
+00:38:38,269 --> 00:38:42,238
+than zero, zero, it's a good thing, right?
+
+749
+00:38:42,320 --> 00:38:44,220
+So we want it to be green. Can you see that?
+
+750
+00:38:44,880 --> 00:38:53,480
+If it's greater than zero, it's a bad thing. So we want it to be red, okay? Right?
+
+751
+00:38:53,600 --> 00:38:55,020
+Just think that through again.
+
+752
+00:38:55,460 --> 00:38:58,500
+If you have... Right, can you see now?
+
+753
+00:38:58,740 --> 00:39:06,180
+If the unemployment rate was forecast to be 4.5% and it's actually 4.2%, that's great. The unemployment rate was lower.
+
+754
+00:39:07,040 --> 00:39:10,280
+So surely this has to be green compared to when it was red before.
+
+755
+00:39:10,780 --> 00:39:12,060
+So now, that's what we're saying.
+
+756
+00:39:12,060 --> 00:39:17,104
+So can you see the unemployment rate has been extremely strong recently,
+
+757
+00:39:17,104 --> 00:39:22,148
+as in good, and even much better than forecast, virtually all of
+
+758
+00:39:22,148 --> 00:39:31,396
+the last five, you know, out of the 10 last, I don't know how many releases this is, 20 releases, 18 times is beaten forecast.
+
+759
+00:39:32,660 --> 00:39:34,220
+So you can see the unemployment rate.
+
+760
+00:39:34,300 --> 00:39:40,220
+We can already stop to think that it's highly likely to beat the forecast according to recent times.
+
+761
+00:39:40,740 --> 00:39:44,900
+Obviously, when you're doing this, it may be different, but that's how it is at the moment.
+
+762
+00:39:45,520 --> 00:39:47,480
+And so we have all the data we need, right?
+
+763
+00:39:47,480 --> 00:39:49,230
+We just need to change the graph,
+
+764
+00:39:49,230 --> 00:39:52,980
+because the graph, can you see it? It still has the payroll data in it.
+
+765
+00:39:53,000 --> 00:39:54,940
+I want to see the unemployment rate.
+
+766
+00:39:55,480 --> 00:39:57,960
+So to do that, select data.
+
+767
+00:39:59,000 --> 00:40:06,380
+Okay, we need to change this. Edit. I don't want payroll data. I'm going to change that to unemployment rate.
+
+768
+00:40:07,920 --> 00:40:09,720
+Okay. See these values.
+
+769
+00:40:09,820 --> 00:40:11,126
+Do you see it's highlighted that area
+
+770
+00:40:11,126 --> 00:40:12,619
+there? I don't want it to highlight that.
+
+771
+00:40:12,619 --> 00:40:14,859
+I want it to give me the unemployment rate, which is that.
+
+772
+00:40:14,860 --> 00:40:18,020
+Okay, click OK.
+
+773
+00:40:18,460 --> 00:40:20,368
+And then just edit this.
+
+774
+00:40:20,368 --> 00:40:24,185
+You can, in theory, use these because they're aligned with
+
+775
+00:40:24,185 --> 00:40:26,857
+that, but just to be correct, you
+
+776
+00:40:26,857 --> 00:40:31,438
+know, be accurate or be precise for completion's sake. Let's use that.
+
+777
+00:40:31,600 --> 00:40:33,420
+Okay, so now we have the data we want.
+
+778
+00:40:35,340 --> 00:40:37,671
+And can you see why it's just showing as a
+
+779
+00:40:37,671 --> 00:40:39,535
+flat line and why it's so important now,
+
+780
+00:40:39,535 --> 00:40:42,099
+as I said, to have the right scaling on the axis?
+
+781
+00:40:42,100 --> 00:40:50,000
+Because right now it's using minus 1,000 to plus 2,000 because it's using the payroll scaling.
+
+782
+00:40:50,780 --> 00:40:53,637
+So if you double click on this, we're
+
+783
+00:40:53,637 --> 00:40:55,779
+going to reset the bounds and
+
+784
+00:40:55,779 --> 00:40:58,279
+reset the max bounds. Can you see?
+
+785
+00:40:58,460 --> 00:41:01,620
+It's now suddenly starting to take shape.
+
+786
+00:41:02,440 --> 00:41:04,366
+And let's just make sure that we
+
+787
+00:41:04,366 --> 00:41:05,742
+can't do a better job
+
+788
+00:41:05,742 --> 00:41:08,219
+of the... I think that's okay, to be honest.
+
+789
+00:41:08,880 --> 00:41:10,492
+And if you want, you can
+
+790
+00:41:10,492 --> 00:41:12,104
+do a similar thing here where
+
+791
+00:41:12,104 --> 00:41:13,448
+you can, you know, like
+
+792
+00:41:13,448 --> 00:41:15,598
+I said, tighten things up a little bit.
+
+793
+00:41:15,600 --> 00:41:18,020
+Just give me one second.
+
+794
+00:41:18,160 --> 00:41:20,500
+I might have moved the camera by mistake there. There we go.
+
+795
+00:41:22,220 --> 00:41:23,420
+You can if you want.
+
+796
+00:41:23,820 --> 00:41:28,040
+You see how we've just said, all right, you know, we know there's an outlier here and an outlier here.
+
+797
+00:41:28,140 --> 00:41:29,378
+We can just, if
+
+798
+00:41:29,378 --> 00:41:30,926
+you want, you can just
+
+799
+00:41:30,926 --> 00:41:32,474
+look at the data kind
+
+800
+00:41:32,474 --> 00:41:35,879
+of in that region because we know there's an outlier there.
+
+801
+00:41:35,880 --> 00:41:37,543
+But I'm not going to bother
+
+802
+00:41:37,543 --> 00:41:39,206
+because here it's quite volatile and
+
+803
+00:41:39,206 --> 00:41:40,869
+I want to zoom in a
+
+804
+00:41:40,869 --> 00:41:42,255
+little bit and see these
+
+805
+00:41:42,255 --> 00:41:46,137
+volatile moves so I can make comparisons and kind of see where we are.
+
+806
+00:41:46,680 --> 00:41:48,157
+It's not, can you
+
+807
+00:41:48,157 --> 00:41:50,003
+see, it's very smooth, the
+
+808
+00:41:50,003 --> 00:41:52,219
+unemployment rate by its very nature
+
+809
+00:41:52,219 --> 00:41:54,065
+because of how it's presented,
+
+810
+00:41:54,065 --> 00:41:58,497
+you know, as a percentage. It removes a lot of the volatility.
+
+811
+00:41:58,900 --> 00:42:04,040
+If this was just a number of the number unemployed, it would be very volatile, right?
+
+812
+00:42:04,040 --> 00:42:06,400
+It's not, it's smooth because it's a percentage.
+
+813
+00:42:06,720 --> 00:42:08,462
+So the fact that it's calculated
+
+814
+00:42:08,462 --> 00:42:10,204
+mathematically as a percentage, it does
+
+815
+00:42:10,204 --> 00:42:12,818
+smooth it out and I can see the picture.
+
+816
+00:42:13,140 --> 00:42:20,420
+What's been happening recently, the unemployment rate is going back to previous trend post the COVID spike.
+
+817
+00:42:21,840 --> 00:42:26,480
+Okay, you can see it's correlated to payrolls because we had the payroll spike and then we did come down.
+
+818
+00:42:26,480 --> 00:42:33,560
+But because this isn't shown as a percentage, it's not a percentage. It doesn't have that smoothness to it.
+
+819
+00:42:33,560 --> 00:42:35,360
+Okay, so I do like to look at them separately.
+
+820
+00:42:35,560 --> 00:42:41,200
+Okay, I don't know what I did there. Sorry about that. I just blanked out the screen by mistake. Apologies.
+
+821
+00:42:42,760 --> 00:42:44,240
+And that's it, ladies and gentlemen.
+
+822
+00:42:44,440 --> 00:42:46,108
+You now have a better,
+
+823
+00:42:46,108 --> 00:42:48,444
+one of the most important data pieces
+
+824
+00:42:48,444 --> 00:42:54,118
+in the world. You now have a better view of it than almost anyone else out there.
+
+825
+00:42:54,120 --> 00:42:58,740
+Okay, so hopefully you're looking forward to using that.
+
+826
+00:42:58,740 --> 00:43:00,281
+And if you want,
+
+827
+00:43:00,281 --> 00:43:02,208
+you can do what I
+
+828
+00:43:02,208 --> 00:43:04,135
+do, where I do the
+
+829
+00:43:04,135 --> 00:43:06,833
+view and I change the zoom to 85%.
+
+830
+00:43:07,220 --> 00:43:12,380
+You see, I now have it all there ready for me every month.
+
+831
+00:43:12,420 --> 00:43:14,757
+And I'm going to show you,
+
+832
+00:43:14,757 --> 00:43:17,094
+don't worry, how you can come
+
+833
+00:43:17,094 --> 00:43:21,379
+in, insert, and actually put the data in to that line.
+
+834
+00:43:22,000 --> 00:43:23,680
+Once a month, it will take you 10 seconds.
+
+835
+00:43:23,680 --> 00:43:26,540
+Okay, and you can just get the graph to include that data.
+
+836
+00:43:26,640 --> 00:43:28,860
+So I'll show you how to do that afterwards.
+
+837
+00:43:29,000 --> 00:43:31,340
+For now, I just want you to have the data here.
+
+838
+00:43:31,420 --> 00:43:33,500
+Okay, so that's pretty much it for now.
+
+839
+00:43:33,580 --> 00:43:38,800
+You've got payrolls. You've got ISM services. You've got manufacturing. You should have all of it. And obviously that.
+
+840
+00:43:38,900 --> 00:43:40,380
+If you want it to be bigger, you can.
+
+841
+00:43:41,020 --> 00:43:42,220
+What have we got left to do?
+
+842
+00:43:42,300 --> 00:43:44,620
+We're now going to do CPI.
+
+843
+00:43:44,820 --> 00:43:45,620
+So let's move on.
+
+844
+00:43:45,880 --> 00:43:47,060
+I'm going to do it as a separate module.
+
+845
+00:43:47,160 --> 00:43:47,720
+Take a break.
+
+846
+00:43:47,800 --> 00:43:49,200
+We can go and come back.
+
+847
+00:43:49,260 --> 00:43:53,200
+And then we're going to do CPI, retail sales, FOMC, and GDP.
+
+848
+00:43:53,540 --> 00:43:54,320
+See you on the other side.
+
+===== END AFTER_SEGMENT =====

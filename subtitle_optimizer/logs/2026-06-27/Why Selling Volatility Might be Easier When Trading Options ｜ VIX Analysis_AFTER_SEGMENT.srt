@@ -1,0 +1,2118 @@
+===== AFTER_SEGMENT (529 entries) =====
+1
+00:00:00,000 --> 00:00:05,300
+Hey guys, Brian's here and I'm recording this video during the second week of March 2023.
+
+2
+00:00:05,700 --> 00:00:11,700
+What we're looking at is a daily chart of the SPX, which is the S&P 500 index.
+
+3
+00:00:12,000 --> 00:00:16,900
+This is the past few years of trading, so we have dating all the way back to 2018 over here.
+
+4
+00:00:17,200 --> 00:00:24,700
+This is the crash of 2020 and then we have the bear markets of 2022 and we're currently at 2023 right here.
+
+5
+00:00:25,100 --> 00:00:26,736
+Now, if you're new to trading
+
+6
+00:00:26,736 --> 00:00:29,190
+options, you probably are familiar already with buying a
+
+7
+00:00:29,190 --> 00:00:31,917
+call option when you think the prices of the underlying
+
+8
+00:00:31,917 --> 00:00:33,553
+is going to go up or
+
+9
+00:00:33,553 --> 00:00:35,189
+buying a put option if you
+
+10
+00:00:35,189 --> 00:00:36,825
+think the price of the underlying
+
+11
+00:00:36,825 --> 00:00:40,097
+is going to go down and profiting on picking the right direction.
+
+12
+00:00:40,500 --> 00:00:44,020
+With this video, I want to introduce you the concept
+
+13
+00:00:44,020 --> 00:00:49,300
+of what can be called selling volatility, and it's just another approach to trading options.
+
+14
+00:00:49,700 --> 00:00:53,000
+One can argue it's how quote unquote professionals trade options.
+
+15
+00:00:53,000 --> 00:00:58,000
+I'll leave that up to anyone to discuss as there's many ways to make money in the market.
+
+16
+00:00:58,300 --> 00:01:02,200
+But I tend to be someone that falls under the line of actually selling volatility.
+
+17
+00:01:02,600 --> 00:01:05,700
+And when I first started out trading options, I did not start this way.
+
+18
+00:01:05,800 --> 00:01:07,929
+I believe the first book in which I read on
+
+19
+00:01:07,929 --> 00:01:09,632
+options or the first chapter in which I
+
+20
+00:01:09,632 --> 00:01:12,399
+read on options was from Alexander Elder, I believe was the author's name.
+
+21
+00:01:12,400 --> 00:01:14,900
+And it was a new trading for the living.
+
+22
+00:01:14,900 --> 00:01:16,300
+And towards the end of the book,
+
+23
+00:01:16,300 --> 00:01:17,700
+the book was not a book on
+
+24
+00:01:17,700 --> 00:01:20,300
+options. It was just about trading in general, psychology, that type of stuff.
+
+25
+00:01:20,700 --> 00:01:22,710
+And then towards the end of the book,
+
+26
+00:01:22,710 --> 00:01:24,720
+he had a chapter on options and he
+
+27
+00:01:24,720 --> 00:01:26,730
+was talking about how he doesn't trade options
+
+28
+00:01:26,730 --> 00:01:29,997
+and he's spoken with options quote unquote traders and traders that trade options.
+
+29
+00:01:30,100 --> 00:01:31,640
+Professionally, they sell options and he
+
+30
+00:01:31,640 --> 00:01:33,693
+was saying they essentially just sell to people
+
+31
+00:01:33,693 --> 00:01:37,799
+that don't know what they're doing and they think they're constantly trying to pick a direction.
+
+32
+00:01:38,200 --> 00:01:41,100
+And the statistics and the odds show that they're losing a ton of money.
+
+33
+00:01:41,100 --> 00:01:43,900
+So the people that actually make money are option sellers.
+
+34
+00:01:44,300 --> 00:01:45,800
+And why is that? Right.
+
+35
+00:01:45,800 --> 00:01:50,200
+So we're going to take a look at some data behind the VIX here as we have on this chart.
+
+36
+00:01:50,700 --> 00:01:52,235
+If there's one thing to take note
+
+37
+00:01:52,235 --> 00:01:53,770
+of, if we just take a look
+
+38
+00:01:53,770 --> 00:01:57,499
+at this, wait, let's compare the two. So we have the S&P 500. All right, the index.
+
+39
+00:01:57,700 --> 00:01:59,439
+If we take a look at this from
+
+40
+00:01:59,439 --> 00:02:02,482
+the start here back in 2018 and where it is right now, it's higher, right?
+
+41
+00:02:03,200 --> 00:02:07,600
+And we can see, except for this crash right here, which was crazy, this is the pandemic.
+
+42
+00:02:07,600 --> 00:02:12,200
+So let's disregard this, right? This insane panic crash.
+
+43
+00:02:12,500 --> 00:02:14,900
+And we have, this is more so a bear market.
+
+44
+00:02:14,900 --> 00:02:16,017
+You know, it's crazy,
+
+45
+00:02:16,017 --> 00:02:18,252
+whereas this was just, I'm going to label
+
+46
+00:02:18,252 --> 00:02:20,487
+it a flash crash, even though it was
+
+47
+00:02:20,487 --> 00:02:24,398
+not a flash crash, especially the state of the world during this time here.
+
+48
+00:02:24,700 --> 00:02:27,100
+But we have this crash and we have this V-shaped recovery.
+
+49
+00:02:27,900 --> 00:02:30,900
+That occurred, we can see that generally it's gone up.
+
+50
+00:02:31,100 --> 00:02:34,357
+If we come to the VIX, which
+
+51
+00:02:34,357 --> 00:02:37,614
+is the CBOE Markets Volatility Index, it
+
+52
+00:02:37,614 --> 00:02:43,198
+is an index that tracks the quote-unquote implied volatility of the SPX.
+
+53
+00:02:43,500 --> 00:02:48,200
+So to simplify that, it's how big of the expected move is given a certain time frame.
+
+54
+00:02:48,200 --> 00:02:51,900
+I believe it's about 30 days, the implied move for the SPX.
+
+55
+00:02:51,900 --> 00:02:56,700
+Implied move is just saying how big does it think the SPX of a move is it going to make?
+
+56
+00:02:56,700 --> 00:03:00,000
+Is it going to be up 100, 200 points in the next 30?
+
+57
+00:03:00,300 --> 00:03:04,100
+or is it going to be down 100 or 200 points in the next 30 days?
+
+58
+00:03:04,200 --> 00:03:09,400
+And it's constantly changing based on some of the options activity that's happening for the SPX.
+
+59
+00:03:09,400 --> 00:03:10,529
+And don't quote me on that.
+
+60
+00:03:10,529 --> 00:03:11,658
+I might be wrong. I read
+
+61
+00:03:11,658 --> 00:03:13,163
+it a few years ago, and then it
+
+62
+00:03:13,163 --> 00:03:15,798
+just stuck with me in case their definition of change every now and then.
+
+63
+00:03:15,800 --> 00:03:19,100
+I'll check back on the CBO website to see if they updated anything.
+
+64
+00:03:19,100 --> 00:03:23,600
+But to my knowledge, the formula for how this is calculated has not changed, nor is that necessarily relevant.
+
+65
+00:03:24,000 --> 00:03:25,933
+Just know that the CBO is doing the hard
+
+66
+00:03:25,933 --> 00:03:27,436
+work, and then they're giving us a
+
+67
+00:03:27,436 --> 00:03:29,798
+number right here to let us know how volatile things are.
+
+68
+00:03:30,300 --> 00:03:31,392
+During 2020, we had this crash,
+
+69
+00:03:31,392 --> 00:03:33,140
+and we can see the spike that went
+
+70
+00:03:33,140 --> 00:03:35,762
+all the way up to 85, which is ridiculous, which is insane volatility.
+
+71
+00:03:36,300 --> 00:03:38,975
+That means that the SPX is expected to
+
+72
+00:03:38,975 --> 00:03:41,650
+make huge moves up or down for the
+
+73
+00:03:41,650 --> 00:03:46,665
+next day and the day after and the day after within 30 days and so forth.
+
+74
+00:03:47,500 --> 00:03:50,700
+But if we take a look at this, we can see the VIX is relatively flat.
+
+75
+00:03:50,800 --> 00:03:54,600
+I mean, if we were to just draw a line here across.
+
+76
+00:03:55,600 --> 00:03:56,878
+It's kind of just hovering around,
+
+77
+00:03:56,878 --> 00:03:58,583
+you know, this this point to be if
+
+78
+00:03:58,583 --> 00:03:59,861
+we're if we're to be anal
+
+79
+00:03:59,861 --> 00:04:03,484
+about it and actually draw a line, we can see that's about 17 and a half or so.
+
+80
+00:04:03,700 --> 00:04:05,625
+Right. And I'm just loosely plotting these numbers
+
+81
+00:04:05,625 --> 00:04:07,550
+on the chart as this video is more
+
+82
+00:04:07,550 --> 00:04:10,198
+so about the concept behind what I'm trying to share here.
+
+83
+00:04:10,500 --> 00:04:12,600
+If we were to draw a regressional channel
+
+84
+00:04:12,600 --> 00:04:14,175
+out across this, we can see
+
+85
+00:04:14,175 --> 00:04:16,800
+that the VIX is what's known to be mean reverting.
+
+86
+00:04:17,000 --> 00:04:18,800
+And that's something that we can
+
+87
+00:04:18,800 --> 00:04:21,200
+say is we can say the VIX is
+
+88
+00:04:21,200 --> 00:04:24,800
+a proxy as a whole for implied volatility across almost all options.
+
+89
+00:04:25,000 --> 00:04:30,000
+Granted, implied volatility will be different for an individual stock around earnings.
+
+90
+00:04:30,000 --> 00:04:33,300
+There will be IV spikes, IV crushes, those types of things.
+
+91
+00:04:33,300 --> 00:04:37,700
+But for the most part, trying to keep it simple here, this is implied volatility.
+
+92
+00:04:37,700 --> 00:04:42,000
+It's mean reverting. That means when it spikes, it wants to come right back to wherever the mean is.
+
+93
+00:04:42,300 --> 00:04:45,600
+If it drops too low, it wants to come right back to wherever the mean is.
+
+94
+00:04:45,600 --> 00:04:48,700
+And I'm just using a regression channel to plot this out on the chart.
+
+95
+00:04:48,700 --> 00:04:52,100
+And then this would be our mean right here on the regression line.
+
+96
+00:04:52,600 --> 00:04:56,200
+And if we were to jump to the SPX. Do the same thing.
+
+97
+00:04:56,300 --> 00:04:58,236
+So just plot it out from here and
+
+98
+00:04:58,236 --> 00:05:00,172
+then just let the system draw it out
+
+99
+00:05:00,172 --> 00:05:02,108
+for us here We have a regression Channel
+
+100
+00:05:02,108 --> 00:05:03,560
+and then we can see this
+
+101
+00:05:03,560 --> 00:05:05,254
+is when the SPX is below the
+
+102
+00:05:05,254 --> 00:05:06,948
+regression channel and wants to get back
+
+103
+00:05:06,948 --> 00:05:10,094
+to the mean Which is this way we can see that the mean
+
+104
+00:05:10,800 --> 00:05:12,688
+or the channel itself is in an uptrend
+
+105
+00:05:12,688 --> 00:05:14,104
+and as we jump back to
+
+106
+00:05:14,104 --> 00:05:16,700
+the VIX It's relatively flat. Yes, it is in an uptrend.
+
+107
+00:05:16,800 --> 00:05:22,500
+So in volatility has been increasing but for the most part it's it's pretty much gone back to
+
+108
+00:05:22,900 --> 00:05:24,815
+where it was x amount of years ago
+
+109
+00:05:24,815 --> 00:05:26,730
+and even when it has these insane moves
+
+110
+00:05:26,730 --> 00:05:28,406
+during 2020 it kind of came right back
+
+111
+00:05:28,406 --> 00:05:31,758
+down to the level in which it's one can argue it's supposed to be
+
+112
+00:05:32,500 --> 00:05:38,100
+the market trades completely different if it's below 20 if it's or if it's above 30 so above 30
+
+113
+00:05:39,100 --> 00:05:41,700
+You can almost expect it to come back to be below 30.
+
+114
+00:05:41,700 --> 00:05:47,000
+And if it's below 20, who knows how long it might stay below 20. That might be considered normal.
+
+115
+00:05:47,900 --> 00:05:50,152
+Traders that have been in the market since
+
+116
+00:05:50,152 --> 00:05:52,404
+this has been around will probably have different
+
+117
+00:05:52,404 --> 00:05:54,656
+perspectives on it for the new age or
+
+118
+00:05:54,656 --> 00:05:58,316
+the new era of traders that came about because of the crash of 2020.
+
+119
+00:05:59,500 --> 00:06:03,200
+We'll have a different. an opinion on volatility versus the traders that traded back here.
+
+120
+00:06:03,500 --> 00:06:05,356
+There was not a lot of SPX options
+
+121
+00:06:05,356 --> 00:06:06,748
+activity relative to how much there
+
+122
+00:06:06,748 --> 00:06:09,300
+is here because we have the zero DTE Monday through Friday.
+
+123
+00:06:09,500 --> 00:06:13,500
+We have a lot more retail traders. We have a lot more smaller accounts that are trading.
+
+124
+00:06:13,700 --> 00:06:16,900
+It's easier. There's more accessibility to options than there was back here.
+
+125
+00:06:17,200 --> 00:06:19,800
+Anyone that was trading back here knew we had to pay a lot more commissions.
+
+126
+00:06:19,800 --> 00:06:24,200
+We also had to pay commissions on equity stocks as much as
+
+127
+00:06:24,600 --> 00:06:28,000
+As well as options, there was not necessarily Robinhood was not as popular.
+
+128
+00:06:28,100 --> 00:06:31,300
+It wasn't it wasn't as big back then. So we had to pay a lot more.
+
+129
+00:06:31,300 --> 00:06:34,900
+And that kind of had a bigger gate, we can say, for newer retail traders.
+
+130
+00:06:35,200 --> 00:06:39,200
+So with this, those two things, as I'm pointing out, we have implied volatility. Take note of that.
+
+131
+00:06:39,200 --> 00:06:40,100
+It's mean reverting, right?
+
+132
+00:06:40,500 --> 00:06:45,400
+We can see that it almost is hard for the VIX to hold its quote unquote gains.
+
+133
+00:06:45,400 --> 00:06:47,700
+If it increases, it's just a matter of time before it comes back.
+
+134
+00:06:48,100 --> 00:06:50,800
+That concept is something that a lot of option traders know.
+
+135
+00:06:51,200 --> 00:06:54,200
+And implied volatility isn't very important for option traders.
+
+136
+00:06:54,300 --> 00:06:58,400
+So one thing they know is statistically the VIX is going to come back within a certain range.
+
+137
+00:06:58,600 --> 00:07:02,300
+So there's also some strategies that in a sense trade based on that.
+
+138
+00:07:02,600 --> 00:07:04,168
+If we take a look at some
+
+139
+00:07:04,168 --> 00:07:05,736
+data on the VIX right here, this
+
+140
+00:07:05,736 --> 00:07:08,200
+information that you're seeing is from the Quant Trading app website.
+
+141
+00:07:08,300 --> 00:07:09,603
+So this is just the data
+
+142
+00:07:09,603 --> 00:07:10,906
+page in which we're looking at.
+
+143
+00:07:10,906 --> 00:07:11,992
+And we're just taking a
+
+144
+00:07:11,992 --> 00:07:14,381
+look at the VIX. And this is for the past 365 days.
+
+145
+00:07:14,700 --> 00:07:16,800
+This is how the candles have in a sense traded.
+
+146
+00:07:17,100 --> 00:07:18,116
+We can see only 31%
+
+147
+00:07:18,116 --> 00:07:19,895
+of the time, or we'll round it
+
+148
+00:07:19,895 --> 00:07:22,690
+up, we'll say 32% of the time, the VIX actually closed green.
+
+149
+00:07:23,200 --> 00:07:24,900
+And this is based on the daily candles.
+
+150
+00:07:25,400 --> 00:07:28,100
+Whereas 68% of the time it has closed red.
+
+151
+00:07:28,200 --> 00:07:30,000
+It's very red on Wednesday.
+
+152
+00:07:30,200 --> 00:07:31,171
+and Fridays and
+
+153
+00:07:31,171 --> 00:07:33,437
+then we can see that on not
+
+154
+00:07:33,437 --> 00:07:35,056
+very red it just closes
+
+155
+00:07:35,056 --> 00:07:36,998
+red mostly on Wednesdays and Thursdays
+
+156
+00:07:37,400 --> 00:07:38,347
+over the past 365 days
+
+157
+00:07:38,347 --> 00:07:40,004
+and we can kind of break this
+
+158
+00:07:40,004 --> 00:07:41,661
+down a little bit more down there
+
+159
+00:07:41,661 --> 00:07:43,082
+but we don't need to get
+
+160
+00:07:43,082 --> 00:07:46,160
+too nuanced with this let's just actually change this now to this is
+
+161
+00:07:47,400 --> 00:07:48,900
+the past 365 days.
+
+162
+00:07:48,900 --> 00:07:52,600
+But let's just take a look in isolation of the start of 2021.
+
+163
+00:07:53,100 --> 00:07:53,771
+And we have,
+
+164
+00:07:53,771 --> 00:07:55,337
+we'll say the year started on the
+
+165
+00:07:55,337 --> 00:07:57,798
+third year, because that was the start of the trading year.
+
+166
+00:07:57,800 --> 00:07:59,700
+And then let's just jump to the December.
+
+167
+00:08:00,100 --> 00:08:01,500
+And then let's just run this report.
+
+168
+00:08:03,400 --> 00:08:06,300
+And we have similar stats here.
+
+169
+00:08:06,400 --> 00:08:12,100
+So 66.8% of the time it's red, 33.2% of the time it's green.
+
+170
+00:08:12,300 --> 00:08:15,200
+This is just plotting the actual net changes right here.
+
+171
+00:08:15,200 --> 00:08:16,608
+So the green is the days in which
+
+172
+00:08:16,608 --> 00:08:17,840
+the VIX actually closed up and then
+
+173
+00:08:17,840 --> 00:08:19,600
+the red is the days in which it's closed down.
+
+174
+00:08:19,800 --> 00:08:22,459
+What we can see right here on this
+
+175
+00:08:22,459 --> 00:08:24,786
+graph is every time the VIX has
+
+176
+00:08:24,786 --> 00:08:27,113
+closed outside of a one standard deviation
+
+177
+00:08:27,113 --> 00:08:32,099
+move, it's had really, really large net changes right here relative to the red side.
+
+178
+00:08:32,200 --> 00:08:33,300
+So relative to the
+
+179
+00:08:33,300 --> 00:08:35,500
+red days. So in other words, whenever the
+
+180
+00:08:35,500 --> 00:08:37,150
+VIX closes green, it closes really
+
+181
+00:08:37,150 --> 00:08:38,800
+green, which means implied volatility spikes.
+
+182
+00:08:38,800 --> 00:08:40,900
+And that's in a sense what we can see here.
+
+183
+00:08:40,900 --> 00:08:42,500
+We can see these days in which
+
+184
+00:08:42,500 --> 00:08:43,642
+the VIX really just jumps
+
+185
+00:08:43,642 --> 00:08:45,699
+up and just rallies. It has these huge spikes.
+
+186
+00:08:46,300 --> 00:08:48,340
+Something that I like to tell new traders to this
+
+187
+00:08:48,340 --> 00:08:49,564
+is think of the VIX almost
+
+188
+00:08:49,564 --> 00:08:51,400
+as like a child that just throws a tantrum.
+
+189
+00:08:51,400 --> 00:08:52,270
+It likes to cause a
+
+190
+00:08:52,270 --> 00:08:53,488
+fit, but then, you know, you just
+
+191
+00:08:53,488 --> 00:08:54,532
+leave it alone for a little
+
+192
+00:08:54,532 --> 00:08:56,098
+bit and then it just calms down by itself.
+
+193
+00:08:56,200 --> 00:08:56,872
+Like it acts
+
+194
+00:08:56,872 --> 00:08:57,992
+crazy. It makes it seem
+
+195
+00:08:57,992 --> 00:08:58,888
+like everything's a big
+
+196
+00:08:58,888 --> 00:09:00,008
+deal. And then it just
+
+197
+00:09:00,008 --> 00:09:02,697
+calms down. And then naturally over time, it just keeps calming down.
+
+198
+00:09:03,100 --> 00:09:05,300
+And that's exactly what we're in a sense experiencing now.
+
+199
+00:09:05,400 --> 00:09:07,317
+After all the craziness that happened last
+
+200
+00:09:07,317 --> 00:09:09,234
+year, the VIX is still below, you
+
+201
+00:09:09,234 --> 00:09:11,699
+know, even most of last year's lows, currently speaking.
+
+202
+00:09:11,700 --> 00:09:14,292
+Now, people use this as a measure to think that
+
+203
+00:09:14,292 --> 00:09:15,847
+another crash or pullback is going
+
+204
+00:09:15,847 --> 00:09:18,698
+to happen in the market because the VIX is so low.
+
+205
+00:09:18,800 --> 00:09:23,700
+So whenever the VIX is low, it's generally a good idea to look into hedging principles and things like that.
+
+206
+00:09:24,200 --> 00:09:26,300
+All right. So we have this analysis. Let's just jump.
+
+207
+00:09:26,300 --> 00:09:29,000
+So to save time, I have some tabs already pre-opened here.
+
+208
+00:09:29,000 --> 00:09:30,900
+So now we're looking at just 2021.
+
+209
+00:09:31,600 --> 00:09:32,600
+So this is 2022.
+
+210
+00:09:32,900 --> 00:09:34,400
+We can see 66% of the time.
+
+211
+00:09:34,500 --> 00:09:37,200
+Now we have 61% of the time red.
+
+212
+00:09:37,500 --> 00:09:39,500
+This now is 2020.
+
+213
+00:09:39,500 --> 00:09:42,015
+So the big, crazy pandemic crash
+
+214
+00:09:42,015 --> 00:09:44,111
+with the V-shaped recovery, 63% of
+
+215
+00:09:44,111 --> 00:09:46,626
+the time, we can still see
+
+216
+00:09:46,626 --> 00:09:49,979
+the red VIX days really came on Fridays.
+
+217
+00:09:51,100 --> 00:09:52,702
+Which is to be expected
+
+218
+00:09:52,702 --> 00:09:54,946
+and Mondays usually there's a lot of
+
+219
+00:09:54,946 --> 00:09:57,510
+implied volatility crushes that happens on Mondays as
+
+220
+00:09:57,510 --> 00:09:59,433
+well as Fridays and then we
+
+221
+00:09:59,433 --> 00:10:01,997
+have however on Fridays if it does close
+
+222
+00:10:03,100 --> 00:10:07,600
+green I think from memory it ends up being really really really really
+
+223
+00:10:08,700 --> 00:10:09,642
+Green, let's see if I
+
+224
+00:10:09,642 --> 00:10:10,961
+type in here just Fridays and we
+
+225
+00:10:10,961 --> 00:10:13,599
+pull that down in isolation and we take a look at the net changes.
+
+226
+00:10:13,600 --> 00:10:17,600
+We can see that the days in which it has closed green were pretty big.
+
+227
+00:10:17,600 --> 00:10:22,700
+However, the red days for the VIX were big volatility crushes.
+
+228
+00:10:22,700 --> 00:10:27,200
+And that's what caused a lot of rallies on Fridays in the SPX.
+
+229
+00:10:27,200 --> 00:10:30,000
+And that's if you've ever traded zero DT options on the SPX.
+
+230
+00:10:30,100 --> 00:10:31,708
+and you catch one of
+
+231
+00:10:31,708 --> 00:10:33,960
+these Fridays, those are the days in
+
+232
+00:10:33,960 --> 00:10:35,246
+which you get 1,000 to 3,000
+
+233
+00:10:35,246 --> 00:10:36,854
+returns on zero DTE options.
+
+234
+00:10:37,900 --> 00:10:38,862
+Moving right along,
+
+235
+00:10:38,862 --> 00:10:41,106
+we have, this is now before the
+
+236
+00:10:41,106 --> 00:10:43,350
+pandemic, so 2019, a little bit more of
+
+237
+00:10:43,350 --> 00:10:46,556
+a quote unquote, you know, normal market, 62% of the time.
+
+238
+00:10:48,100 --> 00:10:52,900
+And then we have this is since 2007.
+
+239
+00:10:52,900 --> 00:10:58,300
+So we have the financial crash in here as well as the pandemic we have last year.
+
+240
+00:10:58,400 --> 00:10:59,890
+Everything in there we still see is
+
+241
+00:10:59,890 --> 00:11:01,380
+we'll just round this up to 60 percent
+
+242
+00:11:01,380 --> 00:11:04,786
+of the time. Some of these days in which it had a net change of zero.
+
+243
+00:11:05,000 --> 00:11:10,000
+So, boom, six out of 10 times on a daily time frame, the VIX is going to close red.
+
+244
+00:11:10,700 --> 00:11:14,400
+I think that's pretty fascinating, pretty interesting something to know.
+
+245
+00:11:14,400 --> 00:11:16,100
+So let's just reset this for a second here.
+
+246
+00:11:16,300 --> 00:11:17,436
+And then let's just switch
+
+247
+00:11:17,436 --> 00:11:18,572
+it over to the weekly
+
+248
+00:11:18,572 --> 00:11:21,299
+and then generate this. And then we'll stop with the VIX analysis.
+
+249
+00:11:21,400 --> 00:11:23,500
+And now we have, look how much red that is.
+
+250
+00:11:23,500 --> 00:11:27,200
+So almost eight out of 10 weekly candles over the past year.
+
+251
+00:11:27,200 --> 00:11:32,000
+And again, this is in covering most of 2022.
+
+252
+00:11:32,900 --> 00:11:34,600
+Which was a very volatile year.
+
+253
+00:11:34,600 --> 00:11:38,700
+Let's take the start because the market did pull back pretty aggressively at the start of the year.
+
+254
+00:11:39,000 --> 00:11:43,500
+So just to be in all fairness to the VIX, now we're including that January and February.
+
+255
+00:11:43,500 --> 00:11:44,500
+These are the weekly candles.
+
+256
+00:11:44,500 --> 00:11:46,416
+And look at that, almost eight
+
+257
+00:11:46,416 --> 00:11:48,651
+out of 10 weeks for the VIX during
+
+258
+00:11:48,651 --> 00:11:54,080
+the bear market season that we've been in has been crushed, volatile crush one after the next.
+
+259
+00:11:54,800 --> 00:11:57,300
+And let's just take a look at the SPY.
+
+260
+00:11:57,400 --> 00:12:01,200
+And this is the SPY during since 2007.
+
+261
+00:12:01,600 --> 00:12:05,200
+So this right here is the financial crash of 2008.
+
+262
+00:12:05,200 --> 00:12:06,314
+If I hover over
+
+263
+00:12:06,314 --> 00:12:08,542
+these, so we can see that November and
+
+264
+00:12:08,542 --> 00:12:10,770
+March, these are some of the biggest returns
+
+265
+00:12:10,770 --> 00:12:12,365
+the SPX has had, at least
+
+266
+00:12:12,365 --> 00:12:13,960
+of the modern lifetime of the
+
+267
+00:12:13,960 --> 00:12:16,353
+SP500, you know, within the past 20 years or so.
+
+268
+00:12:17,200 --> 00:12:20,400
+And then we have this right here would be the crash of 2020.
+
+269
+00:12:21,200 --> 00:12:22,141
+On this chart so that's
+
+270
+00:12:22,141 --> 00:12:23,458
+what these are covering so if i
+
+271
+00:12:23,458 --> 00:12:24,775
+hover over this we can see 2020 and
+
+272
+00:12:24,775 --> 00:12:26,280
+these are some of the older dates here
+
+273
+00:12:26,280 --> 00:12:27,032
+so we can start
+
+274
+00:12:27,032 --> 00:12:28,161
+we can get a lot of
+
+275
+00:12:28,161 --> 00:12:30,607
+information just by glancing at this and we can see that the spy
+
+276
+00:12:31,500 --> 00:12:36,500
+the closes green more times than it closes uh red and
+
+277
+00:12:37,000 --> 00:12:38,176
+we can see right here
+
+278
+00:12:38,176 --> 00:12:39,823
+as we take a look at this
+
+279
+00:12:39,823 --> 00:12:41,705
+that tuesdays at least you know if we
+
+280
+00:12:41,705 --> 00:12:43,116
+take a look at each year
+
+281
+00:12:43,116 --> 00:12:44,527
+in isolation i know tuesdays used
+
+282
+00:12:44,527 --> 00:12:45,938
+to be pretty bad days for
+
+283
+00:12:45,938 --> 00:12:48,996
+the spy because that's usually when a lot of financial news would uh
+
+284
+00:12:49,500 --> 00:12:50,912
+that's when a lot of macro
+
+285
+00:12:50,912 --> 00:12:52,795
+news would come out i think the feds
+
+286
+00:12:52,795 --> 00:12:56,798
+usually used to talk on tuesdays and certain reports and stuff used to affect those days there
+
+287
+00:12:57,700 --> 00:13:00,100
+So that's why we have these, the red spike there.
+
+288
+00:13:00,100 --> 00:13:01,100
+And again, that's just from memory.
+
+289
+00:13:01,900 --> 00:13:04,038
+And so I wanted to point that
+
+290
+00:13:04,038 --> 00:13:06,176
+out because if you know this, and
+
+291
+00:13:06,176 --> 00:13:08,009
+this is just data here, and
+
+292
+00:13:08,009 --> 00:13:12,897
+we can take a look at this and we can see on the chart this information.
+
+293
+00:13:13,400 --> 00:13:15,378
+If we take a look at options,
+
+294
+00:13:15,378 --> 00:13:17,356
+we can see around key events, there
+
+295
+00:13:17,356 --> 00:13:19,899
+are days in which the implied volatility is higher.
+
+296
+00:13:19,900 --> 00:13:22,500
+So next week, this is the 14th right here.
+
+297
+00:13:22,600 --> 00:13:25,400
+This would be the day that the CPI report comes out.
+
+298
+00:13:25,400 --> 00:13:28,300
+And we can see that's why this implied volatility is higher.
+
+299
+00:13:28,700 --> 00:13:31,400
+So the 14th, we have. of this spike right here.
+
+300
+00:13:31,800 --> 00:13:34,177
+I forget when the next FOMC report is
+
+301
+00:13:34,177 --> 00:13:36,554
+out, but if I had to guess, I
+
+302
+00:13:36,554 --> 00:13:38,634
+would say it's one of these days
+
+303
+00:13:38,634 --> 00:13:42,199
+here because we can see the implied volatility is pretty high also.
+
+304
+00:13:42,400 --> 00:13:45,125
+So whenever you see pretty high implied volatility
+
+305
+00:13:45,125 --> 00:13:47,509
+in a short less than 30 DTE timeframe,
+
+306
+00:13:47,509 --> 00:13:52,959
+it's probably because there's some sort of macro event scheduled to take place around that time.
+
+307
+00:13:53,700 --> 00:13:56,388
+Now, people that know this, that are more
+
+308
+00:13:56,388 --> 00:13:58,740
+experienced, more seasoned, or just different personality,
+
+309
+00:13:58,740 --> 00:14:01,092
+we would say, because you can be
+
+310
+00:14:01,092 --> 00:14:05,125
+trading options for 10, 20 years and still choose to trade long call options.
+
+311
+00:14:05,800 --> 00:14:07,200
+So let's just jump straight into that.
+
+312
+00:14:07,300 --> 00:14:12,400
+So this is a long put option. And this is just meaning you just bought a put option.
+
+313
+00:14:12,400 --> 00:14:13,900
+You think the SPX is going to go down.
+
+314
+00:14:14,000 --> 00:14:17,000
+You want to buy a put option 44 DTE.
+
+315
+00:14:17,500 --> 00:14:19,466
+When you buy an option, you are
+
+316
+00:14:19,466 --> 00:14:23,399
+what's called long vega. That means you benefit from an increase in implied volatility.
+
+317
+00:14:23,600 --> 00:14:26,500
+However, we just took a look at the VIX. We know.
+
+318
+00:14:27,500 --> 00:14:32,400
+On a weekly time frame, which tab did I have that open here?
+
+319
+00:14:32,600 --> 00:14:35,200
+Daily, daily, daily, daily.
+
+320
+00:14:35,200 --> 00:14:36,200
+Did I close the weekly?
+
+321
+00:14:36,200 --> 00:14:37,700
+Okay, it was the first one we started.
+
+322
+00:14:38,000 --> 00:14:39,716
+All right, so eight out of
+
+323
+00:14:39,716 --> 00:14:41,718
+10 times on a weekly time frame, at
+
+324
+00:14:41,718 --> 00:14:43,434
+least this is relative, this can
+
+325
+00:14:43,434 --> 00:14:44,802
+change over time, obviously, but
+
+326
+00:14:44,802 --> 00:14:46,717
+at least during a bear market, we
+
+327
+00:14:46,717 --> 00:14:49,453
+have eight out of 10 weeks, the VIX has closed red.
+
+328
+00:14:51,500 --> 00:14:52,200
+I'll repeat that again.
+
+329
+00:14:53,500 --> 00:14:59,900
+Rounding this up, 8 out of 10 times in the past, how many weeks has this been?
+
+330
+00:15:00,200 --> 00:15:05,500
+60 weeks, 61 weeks, the VIX has closed red on a weekly time frame.
+
+331
+00:15:07,400 --> 00:15:10,300
+If you buy a put option and you
+
+332
+00:15:10,300 --> 00:15:12,112
+struggle or you buy a
+
+333
+00:15:12,112 --> 00:15:16,099
+call option, let's just say you're just in a long call
+
+334
+00:15:17,300 --> 00:15:24,800
+and you are long vega, meaning you generally want a big move, up or down, you want implied volatility increase.
+
+335
+00:15:24,800 --> 00:15:26,230
+Obviously, if you're buying a call,
+
+336
+00:15:26,230 --> 00:15:28,137
+you want the market to go up and
+
+337
+00:15:28,137 --> 00:15:29,567
+you want it to go up
+
+338
+00:15:29,567 --> 00:15:34,336
+big because if you buy that call option and let's pull this down here, this is your P&L curve.
+
+339
+00:15:34,100 --> 00:15:34,900
+This is a risk profile.
+
+340
+00:15:35,000 --> 00:15:35,800
+This is option strat.
+
+341
+00:15:35,800 --> 00:15:37,648
+I think this is an amazing site
+
+342
+00:15:37,648 --> 00:15:38,968
+to use whenever you're analyzing
+
+343
+00:15:38,968 --> 00:15:42,400
+your positions, your options positions, if you're not familiar with thinkorswim's risk profile.
+
+344
+00:15:42,800 --> 00:15:44,000
+All right, so as I increase
+
+345
+00:15:44,000 --> 00:15:44,800
+the supply volatility, just
+
+346
+00:15:44,800 --> 00:15:47,400
+jack this all the way up, this would never really happen like this.
+
+347
+00:15:47,400 --> 00:15:51,100
+You can see there's so much more money to be made just because your implied volatility has gone up.
+
+348
+00:15:51,400 --> 00:15:55,700
+Versus if implied volatility shrinks, you're down a lot of money, that's because you're long vega.
+
+349
+00:15:55,700 --> 00:16:01,100
+That means you are long implied volatility, meaning you want implied volatility to go up.
+
+350
+00:16:01,200 --> 00:16:06,000
+However, we have the data, we know implied volatility is more likely to go down.
+
+351
+00:16:06,200 --> 00:16:11,200
+If we jump to another long vega type of strategy, it is a calendar spread.
+
+352
+00:16:11,500 --> 00:16:12,700
+Calendar spread is also
+
+353
+00:16:12,700 --> 00:16:15,100
+long vega, but you know, things are, this
+
+354
+00:16:15,100 --> 00:16:17,200
+is an oversimplification for how this works
+
+355
+00:16:17,200 --> 00:16:22,300
+because you can actually use the calendar spread when you think implied volatility is going to decrease.
+
+356
+00:16:22,600 --> 00:16:25,900
+That's whenever you're taking advantage of something called the volatility skew.
+
+357
+00:16:27,300 --> 00:16:34,000
+So let's just say you were too short. You see this implies Volatility is 26%, whereas this implied volatility is 19%.
+
+358
+00:16:34,300 --> 00:16:38,600
+It means this is pretty jacked up more than the average.
+
+359
+00:16:38,700 --> 00:16:40,950
+So let's just say we were to come
+
+360
+00:16:40,950 --> 00:16:42,637
+down here and the normal implied
+
+361
+00:16:42,637 --> 00:16:47,137
+volatility, let's just say it's 18.14% for the SPX over the past 52 weeks or something like that.
+
+362
+00:16:47,700 --> 00:16:52,100
+I don't remember how this is calculated down here on SPX. TOS.
+
+363
+00:16:52,800 --> 00:16:54,245
+But as we come back up
+
+364
+00:16:54,245 --> 00:16:55,208
+here, we can say
+
+365
+00:16:55,208 --> 00:16:58,098
+that this day is really, it's way above what it normally is.
+
+366
+00:16:58,200 --> 00:17:00,000
+So you're going to use this as your front month.
+
+367
+00:17:00,000 --> 00:17:01,725
+You're going to short that expiration
+
+368
+00:17:01,725 --> 00:17:03,450
+and you're going to buy a
+
+369
+00:17:03,450 --> 00:17:05,175
+longer DTE option that has less
+
+370
+00:17:05,175 --> 00:17:09,200
+implied volatility, thus taking advantage of a potential IV drop in the front month.
+
+371
+00:17:09,600 --> 00:17:11,500
+If you don't know what I just said, don't worry about it.
+
+372
+00:17:11,500 --> 00:17:13,019
+I'm just showing you guys
+
+373
+00:17:13,019 --> 00:17:15,145
+a different type of spreads that you
+
+374
+00:17:15,145 --> 00:17:19,398
+can take advantage of implied volatility, even if it is a long vega trade.
+
+375
+00:17:19,800 --> 00:17:26,800
+That means if we were to do the same thing, let's just shrink this curve here.
+
+376
+00:17:27,400 --> 00:17:28,712
+And this, just for those
+
+377
+00:17:28,712 --> 00:17:30,024
+of you that are new
+
+378
+00:17:30,024 --> 00:17:34,224
+to this, this is just showing the P&L or the theoretical P&L at expiration.
+
+379
+00:17:34,200 --> 00:17:42,600
+And as I pull this down, this is showing the theoretical P&L at a given date.
+
+380
+00:17:43,000 --> 00:17:48,100
+It's also referred to as the T plus, let's put that in caps, T plus zero line.
+
+381
+00:17:48,600 --> 00:17:50,300
+And that's what we're looking at right here.
+
+382
+00:17:50,600 --> 00:17:54,500
+If I were to increase implied volatility, you see how it mushrooms.
+
+383
+00:17:54,700 --> 00:17:58,400
+It just blossoms beautifully and you have a larger P&L curve.
+
+384
+00:18:00,500 --> 00:18:02,600
+larger profitability zone, same deal.
+
+385
+00:18:02,600 --> 00:18:05,700
+Let's just zoom this out a little bit and jack this all the way up to 100.
+
+386
+00:18:05,700 --> 00:18:09,500
+You can see so much more money can be made. Again, theoretical.
+
+387
+00:18:09,600 --> 00:18:11,500
+It's not really going to work out that way.
+
+388
+00:18:11,700 --> 00:18:13,000
+And then we just brought this back down.
+
+389
+00:18:13,300 --> 00:18:16,700
+Versus if implied volatility was to decrease, you'd pretty much lose all of your money.
+
+390
+00:18:16,700 --> 00:18:21,400
+That's because we're long vega here and we don't want that to happen with a calendar.
+
+391
+00:18:21,900 --> 00:18:27,700
+The spreads now that are known as short vega trades, I'm just showing a couple examples here.
+
+392
+00:18:27,800 --> 00:18:29,800
+This is what's called an iron butterfly.
+
+393
+00:18:30,500 --> 00:18:32,500
+And this type of spread.
+
+394
+00:18:33,400 --> 00:18:35,210
+Is constructed by selling two at the
+
+395
+00:18:35,210 --> 00:18:37,020
+money options, a call and a put,
+
+396
+00:18:37,020 --> 00:18:40,899
+and then buying an out the money put and buying an out the money call.
+
+397
+00:18:41,200 --> 00:18:42,727
+You can say that these are
+
+398
+00:18:42,727 --> 00:18:43,745
+your hedges, these are
+
+399
+00:18:43,745 --> 00:18:46,799
+your protections, whatever, X, Y, Z, not explaining every single spread here.
+
+400
+00:18:46,800 --> 00:18:48,900
+I'm just trying to introduce and show you
+
+401
+00:18:48,900 --> 00:18:50,475
+guys a different concept of trading
+
+402
+00:18:50,475 --> 00:18:53,100
+options where you're short vega and how to do that.
+
+403
+00:18:53,100 --> 00:18:55,900
+You would look up, you would want to research what an iron butterfly is.
+
+404
+00:18:56,300 --> 00:18:58,233
+This case now, if we were
+
+405
+00:18:58,233 --> 00:19:00,166
+to pull this down here, we
+
+406
+00:19:00,166 --> 00:19:02,099
+can see if we were to
+
+407
+00:19:02,099 --> 00:19:04,999
+decrease the implied volatility, this trade is actually benefiting.
+
+408
+00:19:05,100 --> 00:19:08,000
+It's actually going to profit from a drop in implied volatility.
+
+409
+00:19:08,300 --> 00:19:14,300
+However, if implied volatility increases, it's going to be losing some of its profit potential.
+
+410
+00:19:14,900 --> 00:19:17,218
+However, by expiration with a spread
+
+411
+00:19:17,218 --> 00:19:19,536
+like this, it doesn't really matter
+
+412
+00:19:19,536 --> 00:19:23,399
+if implied volatility goes through the roof because at expiration,
+
+413
+00:19:24,300 --> 00:19:30,000
+This is the this will be the realized gains if the price of the market was to close right at
+
+414
+00:19:30,000 --> 00:19:31,900
+Your strike price doesn't really matter.
+
+415
+00:19:33,400 --> 00:19:34,103
+What happens with
+
+416
+00:19:34,103 --> 00:19:35,745
+implied volatility. Implied volatility is just as
+
+417
+00:19:35,745 --> 00:19:39,498
+you're actually holding the trade, what your T plus zero line is going to look like.
+
+418
+00:19:39,800 --> 00:19:42,663
+And now the king or the
+
+419
+00:19:42,663 --> 00:19:45,526
+queen, the leader known as the,
+
+420
+00:19:45,526 --> 00:19:50,298
+we'll call it the daddy of all income based strategies.
+
+421
+00:19:50,400 --> 00:19:51,500
+These are consistent.
+
+422
+00:19:51,500 --> 00:19:56,400
+These are known to be quote unquote consistent, or, you know, you're looking for income.
+
+423
+00:19:56,400 --> 00:19:57,900
+You want to be non-directional.
+
+424
+00:19:57,900 --> 00:20:01,500
+You want to pick which direction the market's going is the iron condor.
+
+425
+00:20:01,900 --> 00:20:09,800
+And the iron condor is also a short vega trade. That means it benefits from a decrease in implied volatility.
+
+426
+00:20:09,800 --> 00:20:11,420
+So if we were to jump
+
+427
+00:20:11,420 --> 00:20:13,040
+ahead and say in the next
+
+428
+00:20:13,040 --> 00:20:14,930
+14 days, if the SPX was to stay
+
+429
+00:20:14,930 --> 00:20:20,330
+within a certain vicinity, if implied volatility was to decrease, we can see how much profit this spread can make
+
+430
+00:20:21,100 --> 00:20:23,011
+versus if we reset this and we
+
+431
+00:20:23,011 --> 00:20:24,922
+say that implied volatility was to increase,
+
+432
+00:20:24,922 --> 00:20:28,198
+we can see that this spread would be hurting really, really badly.
+
+433
+00:20:28,700 --> 00:20:30,300
+Right. So let's just reset that.
+
+434
+00:20:30,500 --> 00:20:32,188
+And the same thing at expiration.
+
+435
+00:20:32,188 --> 00:20:33,876
+It doesn't really matter. This will
+
+436
+00:20:33,876 --> 00:20:38,098
+be your profit as long as it stays within these strikes here that you set.
+
+437
+00:20:38,500 --> 00:20:40,904
+And that is the introduction or something
+
+438
+00:20:40,904 --> 00:20:43,308
+that I really wanted to introduce. The
+
+439
+00:20:43,308 --> 00:20:46,399
+concept of being short vega versus being long vega.
+
+440
+00:20:46,800 --> 00:20:48,963
+Most retail traders, when you first start
+
+441
+00:20:48,963 --> 00:20:50,817
+trading options, you just learn to
+
+442
+00:20:50,817 --> 00:20:53,598
+buy a call option or buy a put option.
+
+443
+00:20:54,000 --> 00:20:59,900
+And what you have is not only a delta risk of delta risk, meaning if you choose a call,
+
+444
+00:21:00,200 --> 00:21:05,000
+and the market goes against you, which means the market goes back, you're going to lose some sort of money.
+
+445
+00:21:05,500 --> 00:21:08,300
+You also have theta risk, which means you have risk of time decay.
+
+446
+00:21:08,300 --> 00:21:09,740
+And then you also have a
+
+447
+00:21:09,740 --> 00:21:11,180
+little bit of vega risk, because
+
+448
+00:21:11,180 --> 00:21:14,300
+if the implied volatility comes down, we took a look at that already.
+
+449
+00:21:14,300 --> 00:21:17,700
+It means you will be losing money just because of implied volatility.
+
+450
+00:21:18,100 --> 00:21:19,500
+And what did we learn from this video?
+
+451
+00:21:19,600 --> 00:21:25,800
+Implied volatility statistically is more likely to decrease versus increase.
+
+452
+00:21:25,900 --> 00:21:29,500
+So the intent was to expose you to this if you didn't already know this.
+
+453
+00:21:29,600 --> 00:21:32,104
+And if you're new in your options trading
+
+454
+00:21:32,104 --> 00:21:34,608
+journey, please research as much as you can
+
+455
+00:21:34,608 --> 00:21:36,799
+about implied volatility and also trading spreads.
+
+456
+00:21:37,000 --> 00:21:42,000
+The iron butterfly is a favorite amongst a lot of traders.
+
+457
+00:21:42,200 --> 00:21:47,900
+You can trade them zero DTE. You can trade them three DTE. You can go all the way out 44 DTEs.
+
+458
+00:21:48,100 --> 00:21:49,475
+I'll show you guys some spreads
+
+459
+00:21:49,475 --> 00:21:50,850
+if I get around to it
+
+460
+00:21:50,850 --> 00:21:52,225
+over the weekend for a current
+
+461
+00:21:52,225 --> 00:21:53,600
+position in which I had running.
+
+462
+00:21:53,900 --> 00:21:55,700
+I've been holding it for about 15 days or so.
+
+463
+00:21:55,700 --> 00:21:58,900
+I already took some profits and it's just been going really well.
+
+464
+00:21:58,900 --> 00:22:01,700
+It's an iron butterfly that I had to open around the 4,000 level.
+
+465
+00:22:01,900 --> 00:22:08,400
+It was a 51 DTE when I had initially opened it and it's hitting around 18, 19% return on margin use.
+
+466
+00:22:08,500 --> 00:22:10,584
+And that's the way I like to trade
+
+467
+00:22:10,584 --> 00:22:12,668
+these types of positions because they have such
+
+468
+00:22:12,668 --> 00:22:17,098
+a wide room for profit and you're generally only in them for about two to three weeks.
+
+469
+00:22:17,100 --> 00:22:17,767
+If you're trading 51
+
+470
+00:22:17,767 --> 00:22:19,102
+DTE, if you're trading something that's
+
+471
+00:22:19,102 --> 00:22:20,214
+like an 11 DTE, you might
+
+472
+00:22:20,214 --> 00:22:23,552
+only be in it for five days or you can just trade a zero DTE.
+
+473
+00:22:24,100 --> 00:22:26,300
+There are some guys that run this as soon as the market opens.
+
+474
+00:22:26,600 --> 00:22:28,400
+I might do that one day out of the week or so.
+
+475
+00:22:28,400 --> 00:22:29,700
+So say for example, the
+
+476
+00:22:29,700 --> 00:22:31,520
+market opens to tomorrow and we just
+
+477
+00:22:31,520 --> 00:22:33,600
+want to run and at the money spread
+
+478
+00:22:33,600 --> 00:22:36,200
+because we think the market is not going to move.
+
+479
+00:22:36,500 --> 00:22:39,700
+That would have been a perfect trade for something like today.
+
+480
+00:22:40,200 --> 00:22:46,800
+If we zoom in right here and we see the market essentially formed almost a doji right here.
+
+481
+00:22:46,900 --> 00:22:49,200
+This is just choppy, disgusting price action.
+
+482
+00:22:49,400 --> 00:22:50,712
+This happens to be great for
+
+483
+00:22:50,712 --> 00:22:52,462
+people that trade these types of trades because
+
+484
+00:22:52,462 --> 00:22:53,555
+if we take a look
+
+485
+00:22:53,555 --> 00:22:56,398
+at this, we can see that the market would have opened here today.
+
+486
+00:22:58,000 --> 00:23:01,700
+Around this price, this type of spread would have been going for around here.
+
+487
+00:23:01,800 --> 00:23:04,800
+So around 29 bucks and now it's going for 26 bucks.
+
+488
+00:23:04,900 --> 00:23:06,200
+So that's something to wrap your head around.
+
+489
+00:23:06,200 --> 00:23:08,800
+You're actually selling something and then you're buying it back cheaper.
+
+490
+00:23:09,100 --> 00:23:10,526
+That concept is something that keeps people
+
+491
+00:23:10,526 --> 00:23:11,749
+away from trading these types of
+
+492
+00:23:11,749 --> 00:23:14,399
+things because it's a credit. And then that kind of makes you nervous.
+
+493
+00:23:14,400 --> 00:23:18,100
+You don't understand what a credit is, but please take the time to really understand this and learn.
+
+494
+00:23:18,500 --> 00:23:20,468
+Because you're putting the statistics at
+
+495
+00:23:20,468 --> 00:23:22,436
+your back and you're capitalizing off
+
+496
+00:23:22,436 --> 00:23:24,076
+of something that actually tilts
+
+497
+00:23:24,076 --> 00:23:26,700
+odds in your favor a little bit more.
+
+498
+00:23:26,800 --> 00:23:30,100
+Now, this is not easy to learn when you first start. It's not.
+
+499
+00:23:30,200 --> 00:23:34,200
+I don't want to paint this picture or perception that these are set it and forget it type of trades.
+
+500
+00:23:34,200 --> 00:23:35,800
+You still need to monitor them.
+
+501
+00:23:35,800 --> 00:23:41,000
+You still need to be aware of what you're doing because, yes, implied volatility does revert to the mean.
+
+502
+00:23:41,100 --> 00:23:45,100
+Yes, you know, seven out of 10 times it's going to close red on the week.
+
+503
+00:23:45,400 --> 00:23:46,828
+All these types of statistics are
+
+504
+00:23:46,828 --> 00:23:48,256
+in favor of you, but it
+
+505
+00:23:48,256 --> 00:23:50,398
+doesn't mean it's going to be easy doing them.
+
+506
+00:23:50,700 --> 00:23:54,700
+Okay, guys, thanks for watching. If you enjoyed this video, like it, leave a comment down below.
+
+507
+00:23:54,700 --> 00:23:58,800
+If you're interested in Quant Trading app, the links will be in the description.
+
+508
+00:23:58,800 --> 00:24:02,800
+This is an example of the iron fly in which I was talking about a little bit earlier.
+
+509
+00:24:03,200 --> 00:24:07,600
+This was it that as it was opened here, it was 51 DTE when I first opened it.
+
+510
+00:24:08,000 --> 00:24:10,666
+And then we can see that now the
+
+511
+00:24:10,666 --> 00:24:12,666
+SPX has been just chopping around
+
+512
+00:24:12,666 --> 00:24:15,666
+the 4,000 level, even though things have been pretty volatile.
+
+513
+00:24:16,700 --> 00:24:17,981
+Yesterday it was up when I
+
+514
+00:24:17,981 --> 00:24:19,262
+recorded, I'm recording this video, I
+
+515
+00:24:19,262 --> 00:24:21,398
+believe, yeah, I'm recording this video on a Wednesday here.
+
+516
+00:24:21,400 --> 00:24:23,417
+So yesterday when I shared this, it
+
+517
+00:24:23,417 --> 00:24:25,434
+was already up a 4% return on credits,
+
+518
+00:24:25,434 --> 00:24:30,334
+which was roughly about a 19 to 20% return on how much capital I was using for the trade.
+
+519
+00:24:31,200 --> 00:24:34,000
+And it's 51 DT, so pretty harmless. Still had a couple left.
+
+520
+00:24:34,000 --> 00:24:37,300
+So this is about $680 return using just two of these.
+
+521
+00:24:37,300 --> 00:24:41,700
+At the time, I took profit on one more, as I mentioned earlier in this video.
+
+522
+00:24:42,000 --> 00:24:46,400
+And the link to the Quant Trading App Discord is in the description down below. There is a public section.
+
+523
+00:24:46,500 --> 00:24:47,700
+I'm not active in there.
+
+524
+00:24:47,700 --> 00:24:49,280
+There is a gold membership, and then
+
+525
+00:24:49,280 --> 00:24:50,860
+that gives you access to all the
+
+526
+00:24:50,860 --> 00:24:52,665
+data in which you see that I was
+
+527
+00:24:52,665 --> 00:24:54,019
+sharing a little bit earlier, as
+
+528
+00:24:54,019 --> 00:24:55,599
+well as a ton of other features.
+
+529
+00:24:56,100 --> 00:24:57,800
+Thanks for watching, guys. Catch you in the next one.
+
+===== END AFTER_SEGMENT =====

@@ -1,0 +1,3162 @@
+===== AFTER_OPTIMIZE (632 entries) =====
+1
+00:00:00,900 --> 00:00:04,900
+欢迎来到《订单流交易课程》第4节：订单流术语。
+Welcome to the Order Flows Trading Course Lesson 4, Order Flow Terms.
+
+2
+00:00:04,900 --> 00:00:06,100
+我是Michael Valtos。
+My name is Michael Valtos.
+
+3
+00:00:06,100 --> 00:00:07,900
+我是orderflows.com的创始人。
+I'm the founder of OrderFlows.com.
+
+4
+00:00:08,700 --> 00:00:09,900
+首先，免责声明。
+First, a disclaimer.
+
+5
+00:00:10,100 --> 00:00:13,500
+本演示仅用于教育和信息分享。
+This presentation is for educational and information purposes only.
+
+6
+00:00:13,900 --> 00:00:16,535
+切勿将其视为
+It should not be considered a solicitation to buy or
+
+7
+00:00:16,535 --> 00:00:17,852
+购买或
+sell a futures contract or
+
+8
+00:00:17,852 --> 00:00:19,697
+出售期货合约的邀约，或作为其他投资决策的依据。
+make any other type of investment decision.
+
+9
+00:00:20,200 --> 00:00:23,300
+期货交易存在重大风险，并非适合所有投资者。
+Futures trading contains substantial risk and is not for every investor.
+
+10
+00:00:23,700 --> 00:00:27,200
+投资者可能损失全部甚至超过初始投资金额。
+An investor could potentially lose all or more than the initial investment.
+
+11
+00:00:27,600 --> 00:00:32,200
+风险资本是指即使全部亏损，也不会影响个人财务安全或生活方式的资金。
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+12
+00:00:32,900 --> 00:00:38,200
+交易只应使用风险资本，且只有拥有充足风险资本的人才应考虑交易。
+Only risk capital should be used for trading, and only those with sufficient risk capital should consider trading.
+
+13
+00:00:38,500 --> 00:00:41,500
+过往表现并不必然预示未来结果。
+Past performance is not necessarily indicative of future results.
+
+14
+00:00:42,100 --> 00:00:44,000
+CFTC（美国商品期货交易委员会）规则 4.41
+CFTC Rules 4.41
+
+15
+00:00:44,900 --> 00:00:50,100
+模拟或假设的交易结果存在一定局限性，与实际交易记录不同。
+Hypothetical or simulated performance results have certain limitations unlike an actual performance record.
+
+16
+00:00:50,600 --> 00:00:53,400
+模拟结果并不代表实际交易。
+Simulated results do not represent actual trading.
+
+17
+00:00:54,800 --> 00:00:57,034
+此外，由于这些交易并未实际执行，
+Also, since the trades have not been executed,
+
+18
+00:00:57,034 --> 00:00:58,989
+结果可能低估或高估
+the results may have under- or overcompensated
+
+19
+00:00:58,989 --> 00:01:00,944
+某些市场因素的影响，
+for the impact, if any, of certain
+
+20
+00:01:00,944 --> 00:01:02,899
+比如流动性不足。
+market factors such as lack of liquidity.
+
+21
+00:01:03,200 --> 00:01:08,900
+一般来说，模拟交易项目的设计还受益于事后诸葛的优势。
+Simulated trading programs in general are also subject to the fact that they are designed with the benefit of hindsight.
+
+22
+00:01:08,900 --> 00:01:11,375
+我们并未声明任何账户
+No representation is being made that any account
+
+23
+00:01:11,375 --> 00:01:13,541
+会或可能实现展示的盈利，
+will or is likely to achieve profit
+
+24
+00:01:13,541 --> 00:01:15,397
+或出现类似的亏损。
+or losses similar to those shown.
+
+25
+00:01:19,624 --> 00:01:21,724
+现在开始讲订单流术语。
+So let's start. Order flow terms.
+
+26
+00:01:21,724 --> 00:01:24,405
+订单流交易中有很多专有术语，
+Now there are a lot of terms specific to order
+
+27
+00:01:24,405 --> 00:01:25,745
+这些术语在其他技术分析中是看不到的。
+flow trading that you don't
+
+28
+00:01:25,745 --> 00:01:27,621
+在其他技术分析形式中也能看到。
+see in other forms of technical analysis.
+
+29
+00:01:27,924 --> 00:01:31,124
+我把它们列在这里，方便你阅读和查看。
+I've decided to list them here so that you can read them and see them.
+
+30
+00:01:31,424 --> 00:01:34,924
+现在看不懂也没关系，随着课程深入，很快就会理解。
+Don't worry if they don't make sense now. They will shortly as you go through this course.
+
+31
+00:01:37,924 --> 00:01:40,224
+这些幻灯片是按字母顺序排列的。
+These slides are in alphabetical order.
+
+32
+00:01:40,424 --> 00:01:46,424
+你可以下载这些术语的词汇表PDF版本，方便打印
+You can download the glossary of the terms in a PDF form to print out
+
+33
+00:01:46,424 --> 00:01:48,824
+访问 orderflows.com 这个网页
+by visiting this page, orderflows.com
+
+34
+00:01:48,824 --> 00:01:49,624
+后面加 /glossary
+backslash glossary.
+
+35
+00:01:49,824 --> 00:01:54,224
+现在，所有这些术语都是按字母顺序排列的，方便查找。
+Now, all these terms, like I said, they're in alphabetical order, so they're easy to find.
+
+36
+00:01:54,624 --> 00:02:01,224
+有些术语名称不同，但意思相同。后面会详细解释。
+Some terms have different names, but they have the same meaning. But you'll see that as we go through.
+
+37
+00:02:03,648 --> 00:02:07,848
+好，先看主动买家。主动买家是指从卖盘买入的人。
+Okay, aggressive buyers. Aggressive buyers are buyers who buy from the offer.
+
+38
+00:02:08,148 --> 00:02:11,348
+市场总是有买盘与卖盘。
+The market will be bid and offered all the time.
+
+39
+00:02:12,548 --> 00:02:17,248
+主动买家就是从卖盘买入的人。比如…
+An aggressive buyer is someone that buys the offer. So, for example...
+
+40
+00:02:19,448 --> 00:02:25,248
+在这个价位1908，市场买盘是1908，卖盘是1908又1/4。
+At this price, 1908, the market is 1908 bid offered at 1908 and a quarter.
+
+41
+00:02:27,348 --> 00:02:28,848
+所以市场在这里来回震荡。
+So the market is trading back and forth.
+
+42
+00:02:29,048 --> 00:02:35,148
+谁在1908又1/4买入，这些人就是主动买家。
+Whoever is buying the 1908s in the quarter, those are considered the aggressive buyers.
+
+43
+00:02:36,048 --> 00:02:40,148
+如果有人在1908买盘卖出，这就算主动卖家。
+If someone was selling into the 1908 bid, you'd consider that aggressive sellers.
+
+44
+00:02:43,720 --> 00:02:48,320
+接下来是主动卖家，也就是向买盘卖出的人。
+So the next one is aggressive sellers. The sellers who sell into the bid.
+
+45
+00:02:48,620 --> 00:02:50,520
+就像我之前说的
+So as I was saying
+
+46
+00:02:50,520 --> 00:02:53,180
+向买盘卖出的人
+before, people that are selling into this
+
+47
+00:02:53,180 --> 00:02:57,360
+在1908买盘，这里成交的49手，这些就是主动卖家。
+1908 bid, these 49 lots that traded here, those are the aggressive sellers.
+
+48
+00:03:02,720 --> 00:03:04,120
+Delta，卖价差值。
+Delta, ask Delta.
+
+49
+00:03:04,420 --> 00:03:11,320
+在一根K线中，卖盘成交的总成交量，也就是主动买家买入的量。
+The total amount of volume traded on the offer in a bar, the amount bought by aggressive buyers.
+
+50
+00:03:11,620 --> 00:03:13,256
+这里是下跌
+So you have down
+
+51
+00:03:13,256 --> 00:03:15,710
+在某些图表上，某些软件里
+here, you can see on some
+
+52
+00:03:15,710 --> 00:03:20,619
+会显示卖价差值是多少。
+charts, on some software, they'll show you what the ask delta is.
+
+53
+00:03:21,020 --> 00:03:25,820
+还有买价差值、Delta、最大买卖强弱差。Delta有很多种类。
+And what the bid delta is, the delta, the max delta. There's a lot of different types of deltas.
+
+54
+00:03:26,120 --> 00:03:27,620
+其中一种是卖价差值。
+One of them is the ask delta.
+
+55
+00:03:28,120 --> 00:03:35,120
+它指的是在卖盘成交的成交量，也就是从卖盘买入的量。
+And what it is, it's the volume that's traded on the offer, what was bought from the offer.
+
+56
+00:03:35,220 --> 00:03:39,520
+当市场在1915又1/4时，
+When the market was 1915 at 1915 and a quarter,
+
+57
+00:03:40,320 --> 00:03:44,120
+在卖盘成交了1,666手。
+1,666 lots traded on the offer.
+
+58
+00:03:45,420 --> 00:03:51,820
+所以你要对比卖盘成交量和买盘成交量。
+So you take the volume that's traded on the ask side versus what's traded on the bid side.
+
+59
+00:03:53,220 --> 00:04:00,320
+这样就能得到Delta，但所有在卖盘成交的量，就是卖价差值。
+you'll get the delta, but all the volume that's traded on the ask side, that is the ask delta.
+
+60
+00:04:01,520 --> 00:04:05,320
+如果把这里的数字加起来，你会得到17,831。
+If you were to add up all these numbers here, you'd get 17,831.
+
+61
+00:04:06,920 --> 00:04:10,420
+中间Delta是
+Mid-delta is opposite of
+
+62
+00:04:12,120 --> 00:04:13,198
+卖价差值的反面
+the ask delta again
+
+63
+00:04:13,198 --> 00:04:14,545
+会显示在这里下方
+it'll show up down here
+
+64
+00:04:14,545 --> 00:04:18,318
+Delta数值代表的是所有在买价成交的成交量
+with your delta numbers it's all the volume that's traded on the bid side
+
+65
+00:04:24,920 --> 00:04:28,520
+好的，这是一个平均比率，也就是正常比率
+Okay, an average ratio number, aka a normal ratio number.
+
+66
+00:04:29,820 --> 00:04:36,120
+目前，OrderFlows Trader是唯一带比率功能的软件
+Now, OrderFlows Trader is the only software that has ratios.
+
+67
+00:04:36,220 --> 00:04:40,120
+所以如果你不用OrderFlows Trader，这些内容对你来说可能没什么意义
+So if you're not using OrderFlows Trader, this really won't make much sense to you.
+
+68
+00:04:40,720 --> 00:04:43,100
+而黑色的比率数值
+But a ratio number that is black color as opposed
+
+69
+00:04:43,100 --> 00:04:45,718
+相对于蓝色数值，表示比率是正常的
+to a blue number indicates that the ratio is just normal.
+
+70
+00:04:46,920 --> 00:04:49,320
+是一个没有价格拒绝或订单吸收的常规比率
+A regular ratio without price rejection or absorption.
+
+71
+00:04:50,520 --> 00:04:55,220
+你会在K线的顶部或底部看到两种数值
+You're going to see two types of numbers on the top of a bar or below a bar.
+
+72
+00:04:55,320 --> 00:04:56,920
+如果是阴线，数值会在顶部
+If it's a red bar, it'll be on top.
+
+73
+00:04:57,420 --> 00:04:59,920
+如果是阳线，数值会在底部
+If it's a green bar, it'll be on the bottom.
+
+74
+00:05:00,120 --> 00:05:02,336
+所以在这里，你有一个
+So in this case, you have a
+
+75
+00:05:02,336 --> 00:05:04,552
+这里是黑色数值，还有一个蓝色数值
+black number here. You have a blue
+
+76
+00:05:04,552 --> 00:05:07,717
+黑色数值是平均比率
+number here. The black number is an average ratio number.
+
+77
+00:05:07,920 --> 00:05:12,720
+它不符合
+It's one that doesn't meet the requirements of indicating that there is
+
+78
+00:05:15,120 --> 00:05:18,820
+显示行情缺乏延续或价格拒绝的条件
+a lack of follow through on a move or price rejection.
+
+79
+00:05:20,120 --> 00:05:24,320
+这里是90.5，这里是2.067
+Here you have a 90.5, here you have 2.067.
+
+80
+00:05:24,620 --> 00:05:30,520
+比率的具体含义我稍后再讲，现在先说颜色
+I'll get into it later what the ratios mean, but for now we'll just talk about the colors.
+
+81
+00:05:30,720 --> 00:05:32,520
+平均比率数值会是黑色的
+An average ratio number is going to be black.
+
+82
+00:05:33,720 --> 00:05:40,620
+蓝色的比率则表示某种情况，比如强卖盘
+A ratio that's in blue will indicate something, like either strong offers,
+
+83
+00:05:40,920 --> 00:05:45,320
+强买盘，或者买单或卖单不足
+strong bids or lack of buying or lack of selling.
+
+84
+00:05:48,320 --> 00:05:49,720
+接下来是买盘失衡
+Next one is a buying imbalance.
+
+85
+00:05:49,720 --> 00:05:51,277
+买盘失衡发生在
+A buying imbalance occurs when
+
+86
+00:05:51,277 --> 00:05:57,506
+多头在卖盘积极买入，相对于买盘的成交量，比率达到400%或以上
+buyers are aggressively buying from the offer at a ratio of 400% or greater relative to what's sold on the bid.
+
+87
+00:05:58,220 --> 00:06:01,620
+比如这里就有买盘失衡
+So down here you have this buying imbalance.
+
+88
+00:06:02,320 --> 00:06:04,420
+这里是49对263
+You have 49 against 263.
+
+89
+00:06:05,820 --> 00:06:10,420
+263是蓝色的，表示买盘失衡
+The 263 is in blue indicating a buying imbalance.
+
+90
+00:06:10,720 --> 00:06:15,220
+49对263的比率超过400%
+You take in the ratio of 49 against 263, it's over 400%.
+
+91
+00:06:15,620 --> 00:06:19,020
+所以显示为买盘失衡。
+That's why it's showing up as a buying imbalance.
+
+92
+00:06:20,020 --> 00:06:22,720
+这里是134对358。
+Here you have 134 against 358.
+
+93
+00:06:22,820 --> 00:06:29,720
+但这不是买盘失衡，因为134对358的比率不到400%。
+It's not a buying imbalance because 134 into 358 is less than 400%.
+
+94
+00:06:34,224 --> 00:06:40,524
+在订单流语境中，控制点指的是K线中成交量最大的价格位置。
+The commitment of traders in order flows context, it is the price in a bar where the most volume occurs.
+
+95
+00:06:41,624 --> 00:06:48,324
+大多数订单流软件会在控制点价位上画一个方框。
+So on most order flow software, they'll put a box around the commitment of traders.
+
+96
+00:06:48,524 --> 00:06:50,824
+这也叫控制点（POC）。
+It's also called point of control.
+
+97
+00:06:50,824 --> 00:06:55,724
+你会听到POC、控制点、COT这些术语。
+You hear the term POC, COT, point of control, commitment of traders.
+
+98
+00:06:56,324 --> 00:06:59,424
+在订单流语境中，在足迹图上，它们意思都一样。
+In order flow context, on a footprint chart, they all have the same meaning.
+
+99
+00:07:00,424 --> 00:07:04,924
+有人喜欢叫它COT，有人喜欢叫它控制点。
+Some people like to refer to it as COT, others like to refer to it as point of control.
+
+100
+00:07:06,024 --> 00:07:10,824
+它告诉你的是，这根K线中成交量最大的价格位置在哪里。
+And what it's telling you is where in the bar the most volume appeared.
+
+101
+00:07:11,224 --> 00:07:17,424
+比如这里，你看到4614和4414，它只是取这个价格水平。
+So you see here, you got 4614 and 4414. It just takes the price level.
+
+102
+00:07:17,524 --> 00:07:21,724
+它不是对角线测量，不是测买盘与卖盘的成交情况。
+It's not measuring it diagonally, what traded against the bid, what's traded on the offer.
+
+103
+00:07:21,824 --> 00:07:24,924
+它只是找成交量最大的那个价格位置。
+It's taking the price level where the most volume occurred.
+
+104
+00:07:27,328 --> 00:07:31,728
+累积Delta是整个交易时段内Delta的累积值。
+Cumulative delta is the accumulation of delta over the entire trading session.
+
+105
+00:07:32,228 --> 00:07:34,028
+你可以在这里看到累积Delta。
+You'll see down here, cumulative delta.
+
+106
+00:07:35,428 --> 00:07:44,028
+每根K线的Delta要么是0（很少见），要么是正数或负数。
+So each bar will have a delta of either 0, which is rare, or a positive or negative number.
+
+107
+00:07:44,228 --> 00:07:48,128
+它是从时段开始到现在的累积数值。
+And it's taking the cumulative number since the beginning of the session.
+
+108
+00:07:48,428 --> 00:07:54,328
+比如时段一直在上涨，通常累积Delta会是正的。
+So say it's a session that's been rallying. Generally, you'll have a positive cumulative delta.
+
+109
+00:07:54,428 --> 00:07:59,285
+如果时段一直在抛售，
+If you're in a session that's been selling off all day long,
+
+110
+00:07:59,285 --> 00:08:02,927
+通常累积Delta会是负的。
+most often you should have a negative cumulative delta.
+
+111
+00:08:05,344 --> 00:08:09,344
+累积成交量是整个交易时段内成交量的累积值。
+Cumulative volume is the accumulation of volume over the entire trading session.
+
+112
+00:08:09,844 --> 00:08:11,444
+它会显示在这里下面。
+It's going to be on the bottom here.
+
+113
+00:08:11,944 --> 00:08:15,220
+在NinjaTrader（软件名）里，他们把版权标志直接放在
+With NinjaTrader, they put their copyright logo right
+
+114
+00:08:15,220 --> 00:08:20,543
+上面，所以你可能看不到标签，至少看不到文字。
+over that, so you can't really see it, or at least the label.
+
+115
+00:08:20,644 --> 00:08:24,744
+你能看到数字，但看不到‘累积成交量’的字样。
+You can see the numbers, but you can't see that it says cumulative volume.
+
+116
+00:08:24,944 --> 00:08:26,644
+它表示的是当天的成交量。
+And what that is, it's the day's volume.
+
+117
+00:08:27,244 --> 00:08:28,144
+为什么这很重要？
+Why is that important?
+
+118
+00:08:29,544 --> 00:08:35,744
+你可以通过累积成交量来判断市场是活跃还是清淡。
+You can judge if the market is fast or slow, I mean busy or not, by the cumulative delta.
+
+119
+00:08:36,044 --> 00:08:39,944
+比如，在一天中的特定时间，成交量应该达到一定数量。
+You know, by certain times of day, you should have reached a certain amount of volume.
+
+120
+00:08:40,944 --> 00:08:45,144
+在成交清淡的日子或假期，你会发现成交量明显较轻。
+On slow days or holidays, you'll notice that the volume is much lighter.
+
+121
+00:08:46,644 --> 00:08:48,644
+这在累积成交量里也能看出来。
+And you can see that in the cumulative volume.
+
+122
+00:08:48,644 --> 00:08:55,444
+比如，到9点半的时候，迷你合约的成交量应该已经达到50万手了。
+Like you say, by 9.30, you should already have half a million contracts in the E-minis have traded.
+
+123
+00:08:55,844 --> 00:08:58,344
+如果远低于这个数，成交量就偏轻。
+If it's much less, then the volume is light.
+
+124
+00:09:00,800 --> 00:09:01,391
+那Delta呢？
+The delta.
+
+125
+00:09:01,391 --> 00:09:04,348
+Delta是指一根K线中，
+The delta is the difference in a bar between the
+
+126
+00:09:04,348 --> 00:09:07,897
+卖盘成交量减去买盘成交量的差值。
+volume traded on the offer minus the volume traded on the bid.
+
+127
+00:09:08,800 --> 00:09:13,500
+后面你还会看到正Delta和负Delta的定义。
+Now, you see also later positive delta and negative delta in the definitions.
+
+128
+00:09:14,100 --> 00:09:16,300
+Delta非常重要。
+And delta is very important.
+
+129
+00:09:16,600 --> 00:09:18,600
+但很多人…
+It's something that not a lot of people...
+
+130
+00:09:19,600 --> 00:09:20,700
+压根不看它。
+Look at at all.
+
+131
+00:09:21,900 --> 00:09:26,000
+基本上只有订单流交易者才会花时间研究Delta。
+Basically only order flow traders really spend any time with delta.
+
+132
+00:09:26,600 --> 00:09:28,400
+你知道它为什么重要吗？
+And you know why is it important?
+
+133
+00:09:28,500 --> 00:09:35,500
+在上涨的K线里，也就是开盘后收盘更高的K线，
+On bars that are up, you know bars that open and then close higher.
+
+134
+00:09:36,000 --> 00:09:37,595
+比如一根K线开盘在
+You know if a bar opens
+
+135
+00:09:37,595 --> 00:09:38,924
+这里1915点附近，
+down here at 1915 and a
+
+136
+00:09:38,924 --> 00:09:41,583
+收盘在1917又1/4，这就是阳线。
+quarter, closes at 1917 and a quarter, it's an up bar.
+
+137
+00:09:42,800 --> 00:09:44,700
+它应该有正Delta。
+It should have positive delta.
+
+138
+00:09:47,596 --> 00:09:56,096
+所以你要计算这根K线里的成交量，卖价差值减去买价差值，得到这根K线的总Delta。
+So you're taking what's traded, the ask delta minus the bid delta to get the total delta for the bar.
+
+139
+00:09:56,796 --> 00:10:02,896
+所以在上涨行情中，市场在拉升时，每根K线应该都串联起正Delta。
+So in an up move, you know, when a market's rallying, you should string together positive deltas in each bar.
+
+140
+00:10:03,296 --> 00:10:08,496
+当然也会有阴线，也就是负的K线，但Delta是正的。
+There will be bars that are, you know, red bars, negative bars that do have a positive delta.
+
+141
+00:10:08,896 --> 00:10:12,996
+也会有阳线，但Delta是负的。
+And there will be green bars that do have... Negative delta.
+
+142
+00:10:13,896 --> 00:10:16,696
+Delta是K线内成交量的函数。
+Delta is a function of the volume that's traded inside the bar.
+
+143
+00:10:17,896 --> 00:10:19,010
+它很重要，
+It's important, you
+
+144
+00:10:19,010 --> 00:10:25,695
+后面我会详细解释，我专门有一章、一整节课讲Delta及其重要性。
+know, I'll explain later, I have a whole chapter, a whole lesson developed around delta and its importance.
+
+145
+00:10:26,296 --> 00:10:31,296
+但总的来说，上涨时应该出现正Delta，
+But in general, on a move up, you should be having positive deltas.
+
+146
+00:10:32,096 --> 00:10:34,796
+下跌时应该出现负Delta。
+And on a move down, you should be having negative deltas.
+
+147
+00:10:37,116 --> 00:10:38,681
+在订单流里，背离是指
+Divergence, in order flow terms,
+
+148
+00:10:38,681 --> 00:10:40,873
+市场创出新高或平新高，但对应的K线
+is when a market makes a new
+
+149
+00:10:40,873 --> 00:10:43,378
+却是负Delta，
+or equal high and the bar has a
+
+150
+00:10:43,378 --> 00:10:49,014
+或者市场创出新低或平新低，但对应的K线却是正Delta。
+negative delta, or when a market makes a new or equal low and the bar has positive delta.
+
+151
+00:10:49,116 --> 00:10:55,316
+其实，价格走势和指标不一致。这里的指标就是Delta。
+Basically, price is acting different than an indicator. In this case, the indicator is the delta.
+
+152
+00:10:55,616 --> 00:11:00,616
+比如，创新高时Delta是负的，技术上这就是背离。
+So if you're making a high and you have negative delta, technically that's a divergence.
+
+153
+00:11:05,416 --> 00:11:08,316
+人们也把它叫做Delta背离。
+People also refer to it as delta divergence.
+
+154
+00:11:08,616 --> 00:11:10,494
+通常会在图表上用三角形标记，
+It's usually marked with a triangle
+
+155
+00:11:10,494 --> 00:11:12,372
+我是说大部分图表都会标，
+on a chart. I mean, most
+
+156
+00:11:12,372 --> 00:11:15,815
+不过也看具体图表，有些图表甚至不会显示。
+are, depending on some charts. Some charts don't even show it.
+
+157
+00:11:16,216 --> 00:11:17,016
+为什么这很重要呢？
+Why is that important?
+
+158
+00:11:17,116 --> 00:11:19,116
+因为你碰到了高点。
+Well, you hit the high.
+
+159
+00:11:20,716 --> 00:11:24,816
+而这里有大量抛售导致负Delta，这点必须知道。
+And there's a lot of selling in there causing a negative delta, that's important to know.
+
+160
+00:11:25,016 --> 00:11:27,516
+普通K线图上你不一定能看出来。
+You're not going to necessarily see that on just a normal bar chart.
+
+161
+00:11:28,016 --> 00:11:29,067
+所以如果你能
+So if you can
+
+162
+00:11:29,067 --> 00:11:30,380
+看到市场在上涨，
+see, you know, markets rallying,
+
+163
+00:11:30,380 --> 00:11:31,956
+涨啊涨，然后碰到高点，
+rallying, rallying, then you hit the
+
+164
+00:11:31,956 --> 00:11:33,795
+创新高后，突然空头
+high, and all of a sudden sellers
+
+165
+00:11:33,795 --> 00:11:35,371
+涌入压制多头，
+come in and overwhelm the buyers,
+
+166
+00:11:35,371 --> 00:11:39,311
+出现像这里这样大的负Delta，市场应该会有反应。
+and you've got a big negative delta like you have here, the market should react.
+
+167
+00:11:40,316 --> 00:11:45,351
+不过，如果市场整天都在上涨，你会看到越来越多Delta，
+Now, in a market that keeps rallying all day, you will get more and more deltas, you
+
+168
+00:11:45,351 --> 00:11:50,816
+比如市场开始回落的时候。一切要结合上下文来看。
+know, just as maybe the market starts to pull back. You should take everything into context.
+
+169
+00:11:51,516 --> 00:11:56,816
+后面课程里我会详细讲反转信号。
+I get into a little bit more with reversal signals later in the course.
+
+170
+00:11:58,716 --> 00:12:01,616
+足迹图，这是OrderFlows Trader用的图表。
+Footprint chart, this is a chart used by Order Flows Trader.
+
+171
+00:12:02,316 --> 00:12:05,016
+足迹图是个通用术语，
+Footprint chart is the generic term that's
+
+172
+00:12:06,116 --> 00:12:11,516
+大部分订单流软件都用它来分解买盘与卖盘的成交量。
+most order flow software uses to break down the volume traded on the bid and the offer.
+
+173
+00:12:15,716 --> 00:12:19,616
+它同时展示了价格、买盘成交量和卖盘成交量。
+It provides the price, the bid traded volume, and the offer traded volume together.
+
+174
+00:12:20,016 --> 00:12:22,448
+这样你就能看到
+So you can see what traded on
+
+175
+00:12:22,448 --> 00:12:24,880
+在买盘成交了多少，在卖盘成交了多少，
+the bid, what traded on the offer,
+
+176
+00:12:24,880 --> 00:12:27,312
+以及两者之间的对比。
+and how it compares with each other.
+
+177
+00:12:27,316 --> 00:12:35,016
+随着市场移动，它被称为足迹图，因为想象一下动物走过
+And as the market's moving, it's called a footprint chart because imagine an animal walking through.
+
+178
+00:12:35,716 --> 00:12:36,316
+泥地，对吧？
+The mud, right?
+
+179
+00:12:36,316 --> 00:12:39,416
+会留下足迹，就像交易者在市场中交易时
+It leaves a footprint just as traders are trading through the market.
+
+180
+00:12:39,416 --> 00:12:43,816
+也会通过成交量在市场中留下他们的足迹。
+They're leaving their footprint in the market as measured by volume.
+
+181
+00:12:45,516 --> 00:12:46,244
+那高点成交量失衡
+So imbalance on
+
+182
+00:12:46,244 --> 00:12:47,943
+高点成交量失衡出现在
+a high. Imbalance on a high occurs
+
+183
+00:12:47,943 --> 00:12:50,613
+阴线顶部出现买盘失衡时
+when there's a buy and imbalance on top of red bar.
+
+184
+00:12:51,616 --> 00:12:56,116
+这意味着是卖出信号，你要反向交易
+What this means is it's a sell signal. You want to trade in the opposite direction.
+
+185
+00:12:56,516 --> 00:12:58,916
+有人会称之为‘套牢交易者’
+Some people will call it trap traders.
+
+186
+00:12:59,716 --> 00:13:02,016
+我不太喜欢用‘被套的交易者’这个说法
+I don't particularly like to use that term, trap traders.
+
+187
+00:13:02,916 --> 00:13:07,716
+因为大多数市场流动性都很充足，这些被套的人
+Just because most markets are pretty liquid that, you know, these guys, they're trapped.
+
+188
+00:13:08,216 --> 00:13:09,716
+其实很容易就能脱身
+They can get out pretty easily.
+
+189
+00:13:10,916 --> 00:13:13,816
+但高点成交量失衡为什么重要呢
+But why is it important is imbalance on a high.
+
+190
+00:13:14,516 --> 00:13:17,716
+这里蓝色数字显示的是买盘失衡
+Here you have the blue number, which is indicating a buying imbalance.
+
+191
+00:13:17,716 --> 00:13:19,916
+买盘221手，卖盘1045手
+So you got 221 against 1045.
+
+192
+00:13:20,216 --> 00:13:24,516
+比率是400%，也就是说在卖盘上成交的量是买盘的4倍
+So it's a ratio of, you know, 400% more that's traded on the offer.
+
+193
+00:13:24,916 --> 00:13:27,216
+但为什么涨势没能继续呢？
+But why didn't the market rally keep going?
+
+194
+00:13:27,216 --> 00:13:29,064
+有很多激进的
+You have a lot of aggressive
+
+195
+00:13:29,064 --> 00:13:34,916
+主动买家，他们试图买入突破，但就是推不动，涨势就此止步
+buyers, people trying to buy the breakout. But they can't push it any further. It just stops right there.
+
+196
+00:13:36,916 --> 00:13:40,316
+你要结合市场所处的位置来看
+You want to take it in context with where the market is.
+
+197
+00:13:40,816 --> 00:13:45,916
+如果只是阴线顶部的成交量失衡，而市场在横盘，这重要吗？
+If it's just an imbalance on the top of a red bar and the market going sideways, is it important?
+
+198
+00:13:46,316 --> 00:13:51,216
+是的，可能重要，但它在波段终点时更有效
+Yes, probably, but it's more powerful when it's at the end of a move.
+
+199
+00:13:51,916 --> 00:13:55,316
+而不是在趋势中途，市场原地踏步的时候
+Rather than just sort of stuck in the middle of a move on a market that's going nowhere.
+
+200
+00:13:56,316 --> 00:14:00,472
+我总说，你可以拥有世界上最好的指标
+I always say you can have the greatest indicator in the world,
+
+201
+00:14:00,472 --> 00:14:03,242
+但如果它在盘整区间中
+but if it shoots off a perfect signal
+
+202
+00:14:03,242 --> 00:14:06,012
+发出完美信号
+right in the middle of a trading range
+
+203
+00:14:06,012 --> 00:14:10,514
+而市场又没趋势，交易起来也不会很赚钱
+where the market's going nowhere, it's not going to be very lucrative trading.
+
+204
+00:14:14,036 --> 00:14:19,036
+接下来是低点的成交量失衡，和高点失衡相反
+So the next one would be an imbalance on the low, which is opposite to the imbalance on a high.
+
+205
+00:14:19,136 --> 00:14:21,936
+它出现在阳线底部出现卖盘失衡时
+It occurs when there's a selling imbalance at the bottom of a green bar.
+
+206
+00:14:22,736 --> 00:14:24,112
+这时候你要做的就是
+And what you want to do is you
+
+207
+00:14:24,112 --> 00:14:25,316
+反向交易
+want to trade in the opposite direction.
+
+208
+00:14:25,316 --> 00:14:27,036
+所以这种情况下，就是买入信号
+So in this case, it would be a buy signal.
+
+209
+00:14:28,336 --> 00:14:32,436
+比如这里，低点处有1068手，是卖盘成交量失衡
+So you see here, you've got 1068 right on the low. It's a selling imbalance.
+
+210
+00:14:34,036 --> 00:14:36,336
+交易者很激进，他们在往买单里抛
+People are being aggressive. They're selling it into the bid.
+
+211
+00:14:36,736 --> 00:14:39,036
+为什么市场没继续抛售？
+Why isn't the market selling off more?
+
+212
+00:14:40,036 --> 00:14:41,213
+显然，当时
+Obviously, there was
+
+213
+00:14:41,213 --> 00:14:43,175
+有人在里面挂了一个
+somebody in there with a
+
+214
+00:14:43,175 --> 00:14:45,923
+强有力的被动买单，
+strong bid, a strong passive bid to
+
+215
+00:14:45,923 --> 00:14:50,634
+来支撑市场，基本上他们在说：你们的单我全接了。
+support the market that basically they're saying, I'll take all you got.
+
+216
+00:14:51,636 --> 00:14:55,336
+他们不会让市场跌破这个价位，可能是在守这个位。
+They're not going to let the market go through that level. They may be defending the level.
+
+217
+00:14:56,136 --> 00:14:58,436
+接下来讲高点和低点的成交量失衡。
+Now, imbalances on highs and lows.
+
+218
+00:15:00,236 --> 00:15:06,636
+并不一定就是波段终点/趋势终点，或者日内高点或低点。
+Are not going to be the end of trend or the high or the low of the day.
+
+219
+00:15:07,136 --> 00:15:08,536
+这些失衡是在交易过程中出现的。
+They happen in the course of trading.
+
+220
+00:15:08,936 --> 00:15:14,136
+之后市场可能会回到这些价位，测试并突破。
+The market may come back to those levels later and test it and get through those levels.
+
+221
+00:15:14,236 --> 00:15:18,936
+但你不知道，当市场再次回到这些价位时，那些参与者是否还在。
+You don't necessarily know if those participants are still there when the market circles around back to those levels.
+
+222
+00:15:19,036 --> 00:15:26,436
+但短期内，这是一个可以加入你工具箱的好指标，
+But for the short term, it's a nice little indicator to add to your cap, especially
+
+223
+00:15:27,136 --> 00:15:30,136
+尤其是当你在分析市场动向的时候。
+when you're, you know, you've got to think about what's happening to the market.
+
+224
+00:15:30,136 --> 00:15:34,836
+比如这里，市场在下跌，在低点有非常激进的空头。
+So you have the market coming down. You have some very aggressive sellers right at the low.
+
+225
+00:15:34,936 --> 00:15:40,336
+然后市场反转，K线的价格走势显示里面有多头在买。
+The market turns around. Market price action in the bar shows that there's buyers in there.
+
+226
+00:15:40,836 --> 00:15:44,536
+在这个例子中，在K线的上端出现了买盘失衡。
+In this case, in this example, you've got a buying imbalance at the top end of the bar.
+
+227
+00:15:45,236 --> 00:15:49,336
+那些之前卖出的人，现在被套了。
+So, you know, these people that sold earlier, you know, they're stuck.
+
+228
+00:15:49,336 --> 00:15:50,236
+他们得出来。
+They got to get out.
+
+229
+00:15:50,336 --> 00:15:53,736
+如果他们想出来，只能加入买盘。
+You know, if they want to get out, they're going to add to the buying.
+
+230
+00:15:54,036 --> 00:15:59,736
+但关键是买盘没能继续推高，然后市场就反转了。
+But what's important is the buying couldn't follow through and... And that's where it turned.
+
+231
+00:16:00,036 --> 00:16:05,436
+反转是因为市场里有足够的阻挡成交量，吸收了所有激进的卖单。
+It turned because there was some decent stopping volume there in the market to absorb all the aggressive sellers.
+
+232
+00:16:11,036 --> 00:16:17,436
+好，失衡触发百分比。这是用来判断是否存在二元卖盘失衡的百分比。
+Okay, imbalance trigger in percent. It's the percentage used in determining if there is a binary selling imbalance.
+
+233
+00:16:17,436 --> 00:16:19,736
+普遍认可的最低阈值是400%。
+The common accepted level is 400 as a minimum.
+
+234
+00:16:20,536 --> 00:16:23,536
+我认识的人里，有些用350%。
+Um, Some people I know use 350.
+
+235
+00:16:23,836 --> 00:16:25,436
+也有些用1000%。
+Some people I know use 1,000.
+
+236
+00:16:27,336 --> 00:16:29,036
+400%是一个不错的起始点。
+400% is a good starting point.
+
+237
+00:16:29,236 --> 00:16:37,836
+你想更严格还是更宽松，让更多失衡出现，这由你决定。
+Whether you want to be more selective or let a few more imbalances in, it's up to you.
+
+238
+00:16:39,036 --> 00:16:43,336
+但大多数软件都允许你调整失衡触发百分比。
+But most softwares will allow you to adjust the imbalance trigger percent.
+
+239
+00:16:47,792 --> 00:16:49,592
+失衡成交量阈值。
+Imbalance volume threshold.
+
+240
+00:16:49,792 --> 00:16:51,587
+好，这个是独一无二的
+Okay, now this is one that's unique
+
+241
+00:16:51,587 --> 00:16:53,382
+对OrderFlows交易者来说，
+to the order flows trader. You're only
+
+242
+00:16:53,382 --> 00:16:55,689
+这个功能只有OrderFlows交易者软件里才有。
+going to get it with the order flows trader.
+
+243
+00:16:55,792 --> 00:17:00,492
+它指的是，当出现买卖失衡时，买盘或卖盘的最小成交量。
+And what it is, it's the minimum traded volume on the bid or offer when there's an imbalance.
+
+244
+00:17:00,992 --> 00:17:03,143
+如果你不想看到
+It's important if you don't want to see
+
+245
+00:17:03,143 --> 00:17:05,294
+成交量小于一定数值的成交量失衡情况，
+imbalances where volume involved is less than a
+
+246
+00:17:05,294 --> 00:17:06,638
+比如固定数量是10手。
+certain amount, for example, 10 lots.
+
+247
+00:17:07,692 --> 00:17:09,692
+把阈值设大一点，就能显示成交量更大的成交量失衡。
+Setting it to a bigger number will show imbalances.
+
+248
+00:17:11,592 --> 00:17:15,092
+也就是成交量失衡中成交量更多的时候。
+When more volume is in the imbalance.
+
+249
+00:17:17,668 --> 00:17:22,168
+当需要更多成交量才能推动市场时。
+when it's taking more volume to move the market.
+
+250
+00:17:22,368 --> 00:17:23,668
+我设的是50手。
+I have it set at 50.
+
+251
+00:17:25,568 --> 00:17:28,468
+基本上所有市场我都用这个最低阈值。
+And I use that pretty much for all markets as the minimum.
+
+252
+00:17:28,468 --> 00:17:35,168
+我不想看到1比6或2比8这样的成交量失衡。
+I don't want to see an imbalance of 1 against 6 or 2 against 8.
+
+253
+00:17:35,568 --> 00:17:39,968
+对我来说，这些技术上也算成交量失衡，因为比率超过了400%。
+To me, technically those are imbalances because the ratio is greater than 400%.
+
+254
+00:17:40,368 --> 00:17:44,368
+但如果你交易流动性较薄的市场，
+But if you're trading thinner markets that...
+
+255
+00:17:45,168 --> 00:17:47,168
+有时候你会
+Sometimes you're going to
+
+256
+00:17:47,168 --> 00:17:50,168
+遇到这样的市场，比如有些
+get these markets, for example, some
+
+257
+00:17:50,168 --> 00:17:57,668
+绿色市场，甚至流动性稍差的，比如纳斯达克100指数期货、E-迷你道指、德国DAX指数期货。
+of the green markets, even to a lesser extent, like NQ, NASDAQ, mini-DAO, DAX even.
+
+258
+00:17:57,668 --> 00:18:02,868
+你会看到K线快速波动，出现1比5这样的比率。
+You're going to get these bars that are moving around very fast, and you're getting ratios of 1 against 5.
+
+259
+00:18:03,168 --> 00:18:09,468
+技术上这确实是成交量失衡，但可能成交量并不大。
+Technically, that is an imbalance, but it's an imbalance that's not necessarily occurring on very much volume.
+
+260
+00:18:10,368 --> 00:18:16,968
+我喜欢在有意义的时候看到它，而有意义的时候就是成交量相当可观的时候。
+I like to see it when it matters, and when it matters is when there's decent volume that's traded.
+
+261
+00:18:20,460 --> 00:18:23,060
+好，接下来是底部大单成交。
+Okay, a large print on the bottom.Now,
+
+262
+00:18:25,160 --> 00:18:26,902
+它和高位或
+It's similar in the sense to
+
+263
+00:18:26,902 --> 00:18:28,644
+低位的成交量失衡类似，
+an imbalance on the higher, the
+
+264
+00:18:28,644 --> 00:18:31,258
+只是这里是顶部大单成交或底部大单成交。
+lower, only in this case it's a large print.
+
+265
+00:18:31,360 --> 00:18:32,360
+它不是
+It's not a...
+
+266
+00:18:34,460 --> 00:18:37,360
+成交量失衡。
+It's not an imbalance.
+
+267
+00:18:37,760 --> 00:18:40,760
+只是那里有一笔非常大的阻挡成交量。
+It's just a very big stopping volume there.
+
+268
+00:18:41,260 --> 00:18:47,160
+它表示K线底部有大量成交。
+And what it indicates is there's heavy volume at the bottom of the bar.
+
+269
+00:18:47,660 --> 00:18:49,960
+所以我称之为阻挡成交量。
+So I refer to it as stopping volume.
+
+270
+00:18:50,360 --> 00:18:52,360
+它出现在阳线的底部。
+It occurs at the bottom of a green candlestick.
+
+271
+00:18:52,960 --> 00:18:56,860
+当K线底部极端位置出现大量成交时，就在这里。
+When there's heavy volume traded at the extreme bottom of the bar, right here.
+
+272
+00:18:57,860 --> 00:18:59,896
+它在摆动低点或
+Now it's most effective at swing lows or
+
+273
+00:18:59,896 --> 00:19:01,677
+日内低点时最有效，但也可能
+lows of the day, but it can
+
+274
+00:19:01,677 --> 00:19:03,458
+出现在趋势中途。
+occur in the middle of a move.
+
+275
+00:19:04,660 --> 00:19:06,430
+如果出现这种情况，你可以
+And if it does, you could
+
+276
+00:19:06,430 --> 00:19:08,200
+把它当作一个支撑/阻力位
+use it as as a level
+
+277
+00:19:08,200 --> 00:19:10,856
+如果你已经在趋势中，可以围绕它交易。
+to trade around if you're already in the move.
+
+278
+00:19:10,960 --> 00:19:11,579
+比如你
+You know, you
+
+279
+00:19:11,579 --> 00:19:12,610
+可以，如果你愿意的话
+could, if you like to
+
+280
+00:19:12,610 --> 00:19:13,848
+可以尝试设止损单，比如
+try your stop, you know, you
+
+281
+00:19:13,848 --> 00:19:14,879
+这里有这笔成交量，你
+have this volume here, you
+
+282
+00:19:14,879 --> 00:19:17,355
+可以在市场上涨时藏在后面。
+can sort of hide behind, you know, as the market goes up.
+
+283
+00:19:17,360 --> 00:19:20,312
+如果要回落，你可以看它在附近的反应
+You know, if it's going to pull back, you can look to see how it reacts
+
+284
+00:19:20,312 --> 00:19:22,158
+来决定是否要出场。
+around there to decide if you're going to get out.
+
+285
+00:19:23,360 --> 00:19:24,959
+但，像我说的，它
+But, like I said, it's most
+
+286
+00:19:24,959 --> 00:19:26,558
+最有效，我觉得，是在
+effective, I feel, when it's at
+
+287
+00:19:26,558 --> 00:19:29,757
+日内低点或波段终点时。
+the lows of the day or at a low of a move.
+
+288
+00:19:31,160 --> 00:19:33,360
+基本上是有人进场支撑市场。
+It's basically someone coming in and supporting the market.
+
+289
+00:19:37,708 --> 00:19:39,108
+好，顶部大单成交。
+Okay, a large print on the top.
+
+290
+00:19:40,608 --> 00:19:42,008
+它也被称为阻挡成交量。
+It's referred to as stopping volume.
+
+291
+00:19:42,008 --> 00:19:47,308
+基本上是底部大单成交的镜像，只是这次在顶部。
+It's basically the mirror image of large print on the bottom, only this time it's at the top.
+
+292
+00:19:48,308 --> 00:19:49,983
+它会出现在阴线的顶部,
+It'll occur at the top of a red
+
+293
+00:19:49,983 --> 00:19:52,706
+K线顶部极端位置有大量成交。
+candlestick where there's heavy volume traded at the extreme top of the bar.
+
+294
+00:19:53,308 --> 00:19:57,108
+在日内摆动高点时最有效，但也可能出现在趋势中。
+Most effective at swing lows of the day, but can occur in a move.
+
+295
+00:20:00,208 --> 00:20:03,008
+OrderFlows交易者软件会给出一个比率。
+The order flows trader software will give a ratio.
+
+296
+00:20:03,408 --> 00:20:05,698
+这就是你在这里看到蓝色数字的原因,
+That's why you see a blue number
+
+297
+00:20:05,698 --> 00:20:07,988
+它表示K线顶部有成交量。
+here, which is indicating that there is
+
+298
+00:20:07,988 --> 00:20:10,605
+K线顶部的成交量。
+the volume at the top of the candlestick.
+
+299
+00:20:11,408 --> 00:20:15,008
+如果是在底部，它会出现在底部。
+If it was on a bottom, it would appear at the bottom.
+
+300
+00:20:15,308 --> 00:20:17,146
+我稍后会讲比率,
+I'll get into the ratios a
+
+301
+00:20:17,146 --> 00:20:19,597
+稍后会详细讲，但你要记住的重点是
+little bit later, but what's important to know
+
+302
+00:20:19,597 --> 00:20:21,435
+要关注的是顶部大单成交
+is the large print on the
+
+303
+00:20:21,435 --> 00:20:24,805
+顶部大单成交往往意味着波段终点要到了。
+top is oftentimes the beginning of the end of a move.
+
+304
+00:20:28,532 --> 00:20:35,432
+最大买卖强弱差，指的是K线内任意时点出现的最大Delta值。
+The max delta, it indicates that the maximum delta exhibited in a bar at any point.
+
+305
+00:20:35,432 --> 00:20:39,932
+比如这里，你看这根K线，
+So when you have a max delta, so you can see this candlestick here.
+
+306
+00:20:40,432 --> 00:20:44,132
+这根K线的Delta最终收在1,630。
+The delta for the bar, it ended up at 1,630.
+
+307
+00:20:44,732 --> 00:20:52,732
+而最大买卖强弱差，也就是K线内最正的Delta，是2,630手。
+The max delta, which was the most positive delta, in the bar was 2,630.
+
+308
+00:20:53,332 --> 00:20:59,132
+所以中间某个时点，Delta掉了1,000手。
+So somewhere in there, it lost 1,000 lots of delta.
+
+309
+00:20:59,432 --> 00:21:01,032
+显然中间有抛售。
+So obviously there was some selling in there.
+
+310
+00:21:01,032 --> 00:21:11,532
+虽然之前很强，Delta最高到2,630，但中间有抛售，最终只收在1,630手。
+I mean, it was very strong, got up to 2,630, but there was some selling, and it ended up just at 1,630.
+
+311
+00:21:14,348 --> 00:21:20,248
+再看下一根K线，11:41这根，最大买卖强弱差是1,778手。
+In this next bar, this one here at 1141, you can see the max delta is 1778.
+
+312
+00:21:22,148 --> 00:21:29,148
+这根K线的Delta收在1,773手，最小买卖强弱差是-1,644手。
+The delta for the bar closed at 1773. The minimum delta was minus 1,644.
+
+313
+00:21:29,148 --> 00:21:35,148
+也就是说，这根K线内某个时点，Delta曾跌到-1,644手。
+So at one point in the bar, it had a delta of minus 1,644.
+
+314
+00:21:36,148 --> 00:21:42,448
+显然有买单进场，Delta最高拉到正1,778手。
+Obviously, buying came in and you had a positive delta of 1,778.
+
+315
+00:21:42,448 --> 00:21:47,848
+K线最终收盘时，净Delta是1,733手。
+The bar closed with a... Net delta of 1,733.
+
+316
+00:21:50,448 --> 00:21:53,848
+最大买卖强弱差和最小买卖强弱差都挺重要。
+Max delta, min deltas are kind of important.
+
+317
+00:21:54,048 --> 00:21:57,204
+我觉得当数值为0时，不管是最大
+I think when the numbers are zero, either the max
+
+318
+00:21:57,204 --> 00:22:00,044
+还是最小，或者你看到Delta大幅波动时，
+or the min, or when you see big shifts
+
+319
+00:22:00,044 --> 00:22:04,147
+比如某根K线极度负Delta，然后转为极度正Delta。
+in delta when a bar was extremely negative, then it turns extremely positive.
+
+320
+00:22:08,060 --> 00:22:12,360
+最小买卖强弱差的作用和最大买卖强弱差相反。
+So the min delta sort of works the opposite way as maximum delta.
+
+321
+00:22:13,260 --> 00:22:18,960
+它是这根K线内出现的最负Delta值。
+It's the most negative delta in the bar during that bar.
+
+322
+00:22:19,260 --> 00:22:23,960
+比如11:25这根K线，最小买卖强弱差是0。
+So this bar at 1125, it has a min delta of minus 0.
+
+323
+00:22:25,460 --> 00:22:29,560
+这根K线从一开始到结束，从没出现过净负Delta。
+There was never a net negative delta since the bar started.
+
+324
+00:22:29,660 --> 00:22:35,760
+Delta一直为正，尽管确实有成交量在买盘成交，
+It was always positive, even though, I mean, there is obviously volume traded into the bid side.
+
+325
+00:22:36,160 --> 00:22:46,660
+但不足以让Delta，也就是这个1,630手的数值，在任何时点变成-100手之类的。
+But it wasn't enough to turn the delta, this number here, 1630, at any point to minus 100 or anything like that.
+
+326
+00:22:47,060 --> 00:22:49,360
+整根K线内Delta始终为正。
+It was always on the positive side in the bar.
+
+327
+00:22:49,860 --> 00:22:54,860
+再看下一根K线，最小买卖强弱差是-1,644手。
+So you see in this next bar, it has a min delta of minus 1644.
+
+328
+00:22:55,260 --> 00:23:01,060
+最大买卖强弱差是1,778手，Delta收在1,733手。
+It has a maximum delta of 1778. And the delta closed at 1733.
+
+329
+00:23:01,460 --> 00:23:09,423
+所以这根K线内某个时点，
+So at one point in the bar, it did have a negative
+
+330
+00:23:09,423 --> 00:23:15,395
+确实出现过-1,644手的负Delta，这是它的最大负值。
+delta of minus 1644 as its total highest negative delta.
+
+331
+00:23:17,460 --> 00:23:21,460
+显然，后面K线内买盘又卷土重来，
+Obviously, buying came back later in the bar and turned
+
+332
+00:23:21,460 --> 00:23:24,660
+把Delta从负值拉回正值，从-
+the delta positive and it went from minus
+
+333
+00:23:24,660 --> 00:23:27,060
+1,644回到0，再转正，
+1644 to zero to positive and it
+
+334
+00:23:28,260 --> 00:23:33,960
+一路上涨，最大买卖强弱差达到1,778手，最终收于1,733手。
+traded all the way up to having a positive delta of 1778 and it ended at 1733.
+
+335
+00:23:39,116 --> 00:23:45,316
+负Delta表示成交量更多是主动卖家吃掉买单，也就是说主动卖家比买家更强。
+Negative delta indicates that more volume was sold into the bid. In other words, aggressive sellers were stronger than buyers.
+
+336
+00:23:45,416 --> 00:23:50,616
+所以，你要看K线上的Delta数值。
+So, you know, the delta, you're going to look at the delta number on a bar.
+
+337
+00:23:50,816 --> 00:23:57,616
+如果是正的，就是正Delta；如果是负的，就是负Delta。
+And if it's positive, then it's positive delta. If it's negative, then it's considered negative delta.
+
+338
+00:23:58,216 --> 00:23:59,216
+为什么这很重要？
+Why is it important?
+
+339
+00:23:59,216 --> 00:24:04,124
+当市场上涨或下跌时，如果连续出现负Delta，
+It's important when the market is moving up or down and you're stringing together negative
+
+340
+00:24:04,124 --> 00:24:06,414
+市场应该继续下跌。
+deltas, the market should be moving lower.
+
+341
+00:24:06,916 --> 00:24:10,554
+如果在接近高点时开始连续出现负Delta，
+If you're up near the highs and you're starting to string together
+
+342
+00:24:10,554 --> 00:24:12,676
+而市场又没怎么动，
+negative deltas and the market's not going
+
+343
+00:24:12,676 --> 00:24:16,314
+那要么之后会抛售，
+anywhere, either the market has a propensity to later sell off or...
+
+344
+00:24:16,716 --> 00:24:21,516
+要么先横盘一段时间，直到卖压减弱。
+You know, go sideways for a while until selling sort of subsided.
+
+345
+00:24:22,016 --> 00:24:26,216
+不过，Delta的分析我们后面再详细讲。
+But, I mean, we'll get into the analysis of delta, you know, later.
+
+346
+00:24:26,716 --> 00:24:28,541
+但现在，你只需理解，
+But what's, you know, just understand
+
+347
+00:24:28,541 --> 00:24:30,366
+当一根K线的Delta数值是负的，
+when a bar has a delta
+
+348
+00:24:30,366 --> 00:24:31,886
+那就是负Delta；
+number that's negative, that's negative
+
+349
+00:24:31,886 --> 00:24:34,015
+如果是正的，那就是正Delta。
+delta. If it's positive, that's positive delta.
+
+350
+00:24:35,516 --> 00:24:40,716
+好的，正常比率数值，也就是平均比率数值。
+So... A normal ratio number, aka average ratio number.
+
+351
+00:24:41,716 --> 00:24:44,257
+之前讲平均比率时提到过，
+I discussed it in under average ratio number earlier, but
+
+352
+00:24:44,257 --> 00:24:46,036
+它是黑色的比率数值，
+it's a ratio number that is black
+
+353
+00:24:46,036 --> 00:24:47,815
+而不是蓝色的。
+color as opposed to a blue color.
+
+354
+00:24:48,216 --> 00:24:49,816
+不管怎样，这种比率就是正常的。
+In any case, that's ratio is just normal.
+
+355
+00:24:52,016 --> 00:24:54,416
+是没有价格拒绝或订单吸收的常规比率。
+It's regular ratio without price rejection or absorption.
+
+356
+00:24:54,416 --> 00:24:59,216
+就是你在市场中预期会看到的数值，对吧？
+It's just a number that you know, you expect to see in the market, right?
+
+357
+00:24:59,416 --> 00:25:05,516
+市场存在的目的就是促成交易，这就是它的作用。
+The markets, you know, exist to facilitate trade. And, you know, that's... That's what they're there for.
+
+358
+00:25:05,516 --> 00:25:10,716
+所以大部分时候，你会看到平均或正常的比率数值。
+So most of the times you're going to have average or normal ratio numbers.
+
+359
+00:25:10,816 --> 00:25:16,316
+只有当比率数值变成蓝色时，市场才有异动。
+It's when you're going to get ratio numbers that are blue that something's happening in the market.
+
+360
+00:25:16,916 --> 00:25:20,169
+比如这里的情况，虽然
+So like in this case here, even though
+
+361
+00:25:20,169 --> 00:25:23,422
+顶部出现买盘失衡，
+you have a buying imbalance on the top,
+
+362
+00:25:23,422 --> 00:25:29,115
+但这里的成交量数据都是平均水平。
+the numbers, the volumes that are involved around this top, they're just average numbers.
+
+363
+00:25:29,616 --> 00:25:32,916
+但最显眼的一点，就是顶部有买盘失衡。
+The one thing that stands out, though, is you have the buying imbalance at the top.
+
+364
+00:25:33,216 --> 00:25:34,449
+我是说，如果成交量
+I mean, it would be
+
+365
+00:25:34,449 --> 00:25:35,682
+也能触发比率就更完美了，
+nice if it was also...
+
+366
+00:25:35,682 --> 00:25:36,915
+你懂的，相关的成交量
+You know, the volume involved
+
+367
+00:25:36,915 --> 00:25:38,148
+会触发比率，
+would kick off a ratio,
+
+368
+00:25:38,148 --> 00:25:40,614
+不过，有时候会，有时候不会。
+but, you know, it does sometimes and sometimes it doesn't.
+
+369
+00:25:41,116 --> 00:25:45,116
+比如这里，有一个单印区，但不一定有比率。
+Just like here, you have a single print, but you don't necessarily have the ratio.
+
+370
+00:25:48,420 --> 00:25:52,720
+不过，我稍后会详细解释比率的问题。
+But, you know, I'll get into an explanation of the ratios a bit later.
+
+371
+00:25:54,720 --> 00:25:55,900
+那反向K线，
+So opposing bars, this
+
+372
+00:25:55,900 --> 00:25:58,260
+这是我在交易室里经常用的一个术语，
+is a term that I use often in
+
+373
+00:25:58,260 --> 00:26:00,916
+指的是两根并排的K线
+the trading room, it's when two side-by-side bars
+
+374
+00:26:00,916 --> 00:26:02,391
+方向相反，
+are opposite in direction, a
+
+375
+00:26:02,391 --> 00:26:03,866
+比如一根阳线后面跟着
+green candle followed by a
+
+376
+00:26:03,866 --> 00:26:06,919
+一根阴线，或者一根阴线后面跟着一根阳线。
+red candle, or a red candle followed by a green candle.
+
+377
+00:26:06,920 --> 00:26:09,920
+通常控制点（POC）会在相同的价位。
+Usually you've got the point of controls at the same levels.
+
+378
+00:26:11,220 --> 00:26:12,620
+比如这里，
+Like here, you've got...
+
+379
+00:26:13,320 --> 00:26:15,336
+你有一根阴线，
+You know, you got a red bar,
+
+380
+00:26:15,336 --> 00:26:17,352
+后面跟着一根阳线，
+you got a green bar following it,
+
+381
+00:26:17,352 --> 00:26:20,520
+而且控制点都在同一个价位。
+and you got point of controls right at the same level.
+
+382
+00:26:21,120 --> 00:26:24,920
+我们可以看到，是阳线、阴线、阳线、阴线、阳线。
+And we can tell that you got green, red, green, red, green.
+
+383
+00:26:26,120 --> 00:26:28,657
+当你开始连续出现这样的K线时，
+Once you start stringing together bars like that,
+
+384
+00:26:28,657 --> 00:26:31,194
+尤其是控制点
+especially when the point of controls are kind
+
+385
+00:26:31,194 --> 00:26:33,731
+基本在同一水平，
+of, you know, the same level, Oftentimes, it's
+
+386
+00:26:33,731 --> 00:26:37,219
+往往说明市场没方向，处于横盘/震荡。
+an indication of a market that's going nowhere, is trading sideways.
+
+387
+00:26:39,520 --> 00:26:41,128
+我是说，
+I mean, you know, people can
+
+388
+00:26:41,128 --> 00:26:42,736
+人们可以进一步解读
+read into it a little bit
+
+389
+00:26:42,736 --> 00:26:46,220
+控制点作为支撑/阻力位。
+more with the point of controls as being the support or resistance levels.
+
+390
+00:26:46,620 --> 00:26:48,615
+但对我来说，
+But for me, I just find that
+
+391
+00:26:48,615 --> 00:26:50,610
+当我开始看到连续排列的反向K线时，
+when I start seeing opposing bars lined
+
+392
+00:26:50,610 --> 00:26:54,316
+通常市场会进入横盘/震荡。
+up in a row, it's usually a market that's going to go sideways.
+
+393
+00:26:57,300 --> 00:27:03,200
+被动买家是指在挂买单时成交的买家。
+Passive buyers are buyers who get filled while working a bid.
+
+394
+00:27:03,800 --> 00:27:08,500
+所以买家分为两种：主动买家和被动买家。
+So there's two types of buyers. There's aggressive buyers and there's passive buyers.
+
+395
+00:27:09,100 --> 00:27:12,118
+被动买家是指
+So passive buyer is somebody that is working
+
+396
+00:27:12,118 --> 00:27:15,136
+挂限价单的人，而主动买家是
+a limit order, whereas an aggressive buyer is
+
+397
+00:27:15,136 --> 00:27:17,399
+直接以市价买入的买家。
+someone who buys at the market.
+
+398
+00:27:18,000 --> 00:27:23,900
+想象一下你要买车或者买房子。
+Imagine that you are trying to buy a car or trying to buy a house.
+
+399
+00:27:24,200 --> 00:27:27,400
+你有个心理价位，不愿意超出这个价格。
+You have a price you want to pay and you don't want to budge from that.
+
+400
+00:27:27,400 --> 00:27:28,800
+这时候你就是被动买家。
+You're considered a passive buyer.
+
+401
+00:27:29,100 --> 00:27:34,500
+你在等对方降价来配合你，等主动卖家出现。
+You're waiting for that person to come down and meet you at your price. You're waiting for the aggressive seller.
+
+402
+00:27:36,000 --> 00:27:38,900
+被动买家……在每个价位都有。
+Passive buyers... Are at every price level.
+
+403
+00:27:39,900 --> 00:27:43,800
+当你在市场中看到大量被动买单时，要特别关注。
+When you see big passive buying in the market, you should pay attention to it.
+
+404
+00:27:45,000 --> 00:27:50,600
+有些数字会特别突出，有时候非常明显。
+Numbers that really stick out quite strongly. Sometimes they're more obvious than not.
+
+405
+00:27:51,000 --> 00:27:54,900
+但在一根K线里，你会看到被动买家，也会看到被动卖家。
+But in a bar, you're going to get passive buyers, you're going to get passive sellers.
+
+406
+00:27:57,400 --> 00:28:02,126
+在分析订单流时，你要关注K线边缘的动态。
+When you're reading the order flow, you want to read what's sort of happening around the edges of the bars.
+
+407
+00:28:02,126 --> 00:28:05,198
+通常这些会给你市场正在发生什么的线索。
+Oftentimes, we'll give you clues as to what's going on in the market.
+
+408
+00:28:06,900 --> 00:28:08,400
+被动卖家呢，和被动买家相反。
+So passive sellers, again, it's
+
+409
+00:28:08,400 --> 00:28:10,500
+这些是
+opposite of what passive buyers are. These
+
+410
+00:28:10,500 --> 00:28:13,200
+在挂卖单时成交的空头。
+are sellers who get filled while working an offer.
+
+411
+00:28:13,600 --> 00:28:21,500
+比如，假设市场买盘与卖盘价是18.88又3/4对18.89。
+So, you know, say the market's $18.88 and three-quarters bid offered at $18.89.
+
+412
+00:28:22,100 --> 00:28:24,800
+那些试图以18.89卖出的人，
+The people that are trying to sell it at $18.89,
+
+413
+00:28:24,900 --> 00:28:26,000
+就是被动卖家。
+are the passive sellers.
+
+414
+00:28:26,000 --> 00:28:29,900
+他们愿意等在那里，等别人以他们的价格买入。
+They're happy to sit there and wait for people to buy it at their price.
+
+415
+00:28:35,800 --> 00:28:43,300
+控制点，通常也被称作控制点（POC）或COT。
+So the point of control, again, it's oftentimes referred to as commitment of traders or COT.
+
+416
+00:28:44,400 --> 00:28:46,179
+为了更好理解，它是
+In order for context, it is the
+
+417
+00:28:46,179 --> 00:28:47,958
+成交量最大的那个价格所在的K线。
+price of the bar where the most
+
+418
+00:28:47,958 --> 00:28:50,499
+它会被标记出来。
+volume occurs. It's going to have the box around it.
+
+419
+00:28:55,400 --> 00:28:57,200
+正Delta表示更多成交量
+Positive delta indicates that more volume
+
+420
+00:28:57,200 --> 00:28:59,600
+是在卖盘/卖价成交的。换句话说，
+was bought from the offer. In other words,
+
+421
+00:28:59,600 --> 00:29:01,700
+说明主动买家比主动卖家更强。
+aggressive buyers were stronger than aggressive sellers.
+
+422
+00:29:02,000 --> 00:29:04,773
+比如，如果有一根K线是正Delta，
+So if you have a bar with positive
+
+423
+00:29:04,773 --> 00:29:08,239
+净来看，
+delta, it means net-net there was more volume traded on
+
+424
+00:29:08,239 --> 00:29:12,399
+是在卖盘成交的量更多，是多头主动吃掉卖盘的量，比空头砸买盘的量更多。
+the offer, people buying the offer than people selling into the bid.
+
+425
+00:29:13,400 --> 00:29:17,900
+再比如，市场上涨时，通常会看到正Delta。
+Again, When the market's moving up, you expect to see positive delta.
+
+426
+00:29:18,600 --> 00:29:21,800
+市场下跌时，通常会看到负Delta。
+On a market that's moving down, you expect to see negative delta.
+
+427
+00:29:23,200 --> 00:29:24,500
+但也不总是如此。
+No, that's not always the case.
+
+428
+00:29:24,900 --> 00:29:33,600
+有时候市场横盘/震荡，会出现正Delta和负Delta交替。
+There's times where you have a market that's sort of going sideways and you have positive deltas and negative deltas.
+
+429
+00:29:34,100 --> 00:29:42,800
+谁都没占上风，但Delta真的很有意思。
+And nobody's really in control, but Delta is really very fascinating, I think.
+
+430
+00:29:43,900 --> 00:29:46,557
+我认为，就分析来说，
+I think it's really, as far
+
+431
+00:29:46,557 --> 00:29:53,199
+它能真实反映市场中发生的很多情况。
+as analysis goes, can really tell you a lot about what's happening in the market.
+
+432
+00:29:55,700 --> 00:29:56,700
+比率上限。
+Ratio bounds high.
+
+433
+00:29:57,200 --> 00:30:04,100
+好的，这又是OrderFlows交易者软件特有的功能。
+Okay, again, this is something that only order flows trader software has.
+
+434
+00:30:04,400 --> 00:30:09,800
+我用它来判断K线中是否出现了小单成交。
+And it's the ratio I use to determine if there's a small print occurring in a bar.
+
+435
+00:30:10,000 --> 00:30:11,946
+我把比率上限设为28，因为
+I set my ratio bounds high at 28 because I
+
+436
+00:30:11,946 --> 00:30:13,676
+我想在比率超过28时收到提醒，
+want to be notified when there's a ratio
+
+437
+00:30:13,676 --> 00:30:16,704
+这表示在K线边缘出现了小单成交。
+above 28, which will indicate there's a small print at the edge of the bar.
+
+438
+00:30:18,700 --> 00:30:20,500
+我把这称为小单成交或单印区。
+I refer to this as small print or single print.
+
+439
+00:30:20,600 --> 00:30:24,000
+单印区的成交量是1到9手。
+Single print is a volume between 1 and 9.
+
+440
+00:30:24,600 --> 00:30:27,000
+小单成交的成交量超过10手。
+A small print volume is more than 10.
+
+441
+00:30:28,900 --> 00:30:30,900
+关键是这个比率数值。
+What is important is the ratio number.
+
+442
+00:30:31,300 --> 00:30:33,300
+它表示跟进不足，
+It indicates a lack of follow-through or
+
+443
+00:30:36,272 --> 00:30:39,272
+或者说买盘或卖盘不足。
+you know, a lack of buying or a lack of selling.
+
+444
+00:30:39,972 --> 00:30:43,172
+这通常是一个反转信号。
+It's a reversal indicator in general.
+
+445
+00:30:43,872 --> 00:30:48,772
+就是这个，它叫比率上限。这是设置。
+It's this one. It's called racial balance high. And this is the setting.
+
+446
+00:30:49,572 --> 00:30:51,872
+等我讲到小单成交时，会再详细说说。
+I'll talk about it a bit more when I get to small prints.
+
+447
+00:30:54,272 --> 00:30:56,390
+我提到的比率上限，
+When I say ratio balance high, it's
+
+448
+00:30:56,390 --> 00:30:58,811
+是我用来判断
+a level that I use to determine if
+
+449
+00:30:58,811 --> 00:31:00,929
+上涨时是否缺乏买盘跟进，
+there's going to be a lack of
+
+450
+00:31:00,929 --> 00:31:05,469
+或下跌时是否缺乏卖盘跟进。
+buying follow-through on a move up or a lack of selling on a move down.
+
+451
+00:31:07,472 --> 00:31:14,372
+我用比率下限来判断K线中是否出现大单成交。
+A ratio bounds low is what I use to determine if there's a large print occurring in a bar.
+
+452
+00:31:14,872 --> 00:31:17,735
+我的比率下限设为0.699，
+I have my ratio bounds low set at 0.699 because
+
+453
+00:31:17,735 --> 00:31:20,280
+我想在出现
+I want to be notified when there's a
+
+454
+00:31:20,280 --> 00:31:24,734
+低于0.6999的比率时收到提醒，这表示K线边缘出现大单成交。
+ratio below 0.6999, which indicates there's a large print at the edge of a bar.
+
+455
+00:31:25,672 --> 00:31:28,372
+比如在K线底部，
+So if it's at the bottom of a bar,
+
+456
+00:31:29,572 --> 00:31:34,972
+如果是阳线，就说明底部有强劲买盘。
+that green, it'll be an indication of strong buying at the bottom of the bar.
+
+457
+00:31:34,972 --> 00:31:41,542
+如果它出现在阴线的顶部，表示在K线顶部有强劲的卖盘
+If it appears at the top of a red bar, it indicates strong offers up at the top of the
+
+458
+00:31:41,542 --> 00:31:42,142
+说明在顶部有大量卖盘。
+bar.
+
+459
+00:31:42,872 --> 00:31:49,272
+再来说一下……其实之前已经讲过大单成交的比率了。
+Again, I'll talk about the... Well, I did talk about the ratios of the large print earlier.
+
+460
+00:31:49,972 --> 00:31:52,472
+这就是设置，比率下限。
+And this is what the setting is. It's the ratio bounds low.
+
+461
+00:31:52,572 --> 00:31:57,972
+这个功能只有OrderFlows交易者软件才有。
+Again, it's something that's only available in the OrderFlows trader software.
+
+462
+00:32:02,552 --> 00:32:05,700
+卖盘失衡是指空头在买盘价位激进抛售，
+Selling imbalance occurs when sellers are aggressively selling into the
+
+463
+00:32:05,700 --> 00:32:07,904
+相对于买盘成交量的比率达到400%或更高，
+bid at a ratio of 400% or greater
+
+464
+00:32:07,904 --> 00:32:10,108
+也就是在买盘价位的成交量。
+relative to what's sold at the bid.
+
+465
+00:32:11,152 --> 00:32:13,552
+比如这里769手对112手，
+So here you've got 769 against 112.
+
+466
+00:32:14,152 --> 00:32:16,862
+当市场买盘价1929.5，卖盘价1929.75时，
+The ratio of, you know, when
+
+467
+00:32:16,862 --> 00:32:19,572
+有769手在买盘价位成交，而卖盘价位只有112手成交。
+the market was 1929.5 bid offered at 1929.75,
+
+468
+00:32:19,572 --> 00:32:25,443
+有769手是主动卖给买单，而只有112手是主动买入卖盘
+769 lots were sold into the bid versus only 112 were bought on the offer.
+
+469
+00:32:27,552 --> 00:32:35,052
+112比769的比率超过400%，所以这里出现卖盘失衡。
+So that ratio of 112 into 769 is greater than 400. That's why you have a selling imbalance there.
+
+470
+00:32:38,672 --> 00:32:44,872
+这能帮你判断空头在市场中是否真的很激进。
+It can help you determine when sellers are really being aggressive in the market.
+
+471
+00:32:45,772 --> 00:32:46,872
+当然，有时候
+Obviously, there's going to be time.
+
+472
+00:32:47,372 --> 00:32:50,038
+所有在买盘价位的成交都是空头主动抛售，
+Everything that's sold into the bid is by
+
+473
+00:32:50,038 --> 00:32:52,704
+但你想看到的是
+aggressive sellers, but what you want to see
+
+474
+00:32:52,704 --> 00:32:54,704
+空头真的很激进，
+is when the sellers are really
+
+475
+00:32:54,704 --> 00:32:59,370
+并且连续出现多个卖盘失衡区，一个接一个。
+being aggressive and you're stringing together, stacking up selling imbalances right in a row.
+
+476
+00:33:06,672 --> 00:33:11,872
+连续控制点是指控制点在两根相邻K线中出现在同一价位。
+side-by-side point of control is when the point of control occurs at the same level in two consecutive bars.
+
+477
+00:33:13,272 --> 00:33:16,972
+这里1、2号K线的控制点都在1895价位。
+Here you have 1, 2, we're at the same level, 1895.
+
+478
+00:33:17,872 --> 00:33:25,672
+为什么重要？因为每根K线的成交量都集中在这个价位。
+And why is it important? Well, the volume is in each bar is at the same point.
+
+479
+00:33:28,672 --> 00:33:29,672
+这为什么重要？
+Why is that important?
+
+480
+00:33:29,872 --> 00:33:37,972
+重要是因为这是K线中大部分交易发生的价格。
+Well, it's important because that's a price where most of the transactions in the bars were occurring.
+
+481
+00:33:39,172 --> 00:33:43,072
+你可以看看，很多人会把它当作支撑/阻力位。
+You can look at it, a lot of people take it to be support or resistance levels.
+
+482
+00:33:44,172 --> 00:33:45,272
+如果回涨，
+If the market trades back up,
+
+483
+00:33:46,472 --> 00:33:51,172
+这里原来这根K线是阳线，后来反转变成了阴线。
+In this case, originally this bar was green, and then the bar turned around, it's red.
+
+484
+00:33:51,472 --> 00:33:52,272
+然后稍微抛售了一点。
+It sold off a bit.
+
+485
+00:33:52,272 --> 00:33:53,814
+接着回涨，接近
+We came back up, around to
+
+486
+00:33:53,814 --> 00:33:55,356
+控制点（POC），突破了一点，
+the point of control, got through
+
+487
+00:33:55,356 --> 00:33:56,898
+但随后
+it a little bit, but then
+
+488
+00:33:56,898 --> 00:33:59,468
+开始稳定在下方，市场就开始抛售/大跌了。
+we started staying below it, and the market sold off.
+
+489
+00:34:00,572 --> 00:34:07,972
+控制点（POC）很重要，用来判断市场中的支撑/阻力位。
+Point of control is important to determine the... support or resistance levels in a market.
+
+490
+00:34:10,472 --> 00:34:11,572
+好，单印区。
+Okay, a single print.
+
+491
+00:34:11,772 --> 00:34:13,172
+现在…
+Now...
+
+492
+00:34:14,072 --> 00:34:20,472
+单印区，其实在任何订单流图上都能看到，但
+Single print is, again, it's something, well, you can see it on any order flow chart, but
+
+493
+00:34:21,972 --> 00:34:23,205
+我的软件，OrderFlows交易者软件，
+my software, the order
+
+494
+00:34:23,205 --> 00:34:24,438
+会在单印区周围加一个框，
+flows trader software, will
+
+495
+00:34:24,438 --> 00:34:26,288
+让它更醒目。
+put a box around a single
+
+496
+00:34:26,288 --> 00:34:29,371
+因为，你知道，有时候你盯着一堆数字，
+print just to sort of make it stand out more.
+
+497
+00:34:29,472 --> 00:34:30,919
+容易忽略一些细节，
+Because, you know, sometimes you're looking
+
+498
+00:34:30,919 --> 00:34:32,366
+在很多数值上
+at a lot of numbers and
+
+499
+00:34:32,366 --> 00:34:33,813
+如果有框标出来，
+you tend to overlook things, whereas
+
+500
+00:34:33,813 --> 00:34:35,260
+就会更显眼。
+when you see it, you know,
+
+501
+00:34:35,260 --> 00:34:37,671
+用方框标出来，这样会更醒目。
+with a box around it, it just stands out more.
+
+502
+00:34:38,772 --> 00:34:40,772
+单印区是指在阳线底部或
+A single print is when there's a volume.
+
+503
+00:34:41,272 --> 00:34:43,880
+阴线顶部出现1手到9手的成交量。
+Between one lot and nine lots at the
+
+504
+00:34:43,880 --> 00:34:45,836
+比如阳线的下影线底部
+bottom of a green candlestick or
+
+505
+00:34:45,836 --> 00:34:48,770
+或者阴线的上影线顶部，比如这里和这里。
+the top of a red candlestick here and here.
+
+506
+00:34:49,972 --> 00:34:53,072
+这个设置是比率上限，我之前解释过。
+The setting is ratio bounds high, which I explained before.
+
+507
+00:34:57,952 --> 00:35:04,452
+小单成交是指比率上限显示的比率数值超过28。
+Small print is when the ratio bounds high prints a ratio number above 28.
+
+508
+00:35:08,952 --> 00:35:11,157
+所以K线边缘的小单成交
+So a small print at the edge of a bar
+
+509
+00:35:11,157 --> 00:35:13,362
+表示阴线顶部缺乏多头，
+indicates a lack of buyers at the top of a
+
+510
+00:35:13,362 --> 00:35:16,449
+或者阳线底部缺乏空头。
+red candlestick or a lack of sellers at the bottom of a green candlestick.
+
+511
+00:35:16,852 --> 00:35:18,652
+另外，比如比率上限。
+Also see, you know, ratio balance high.
+
+512
+00:35:18,852 --> 00:35:20,634
+这里其实是一个
+This one here is actually a
+
+513
+00:35:20,634 --> 00:35:22,416
+比率上限，说明
+ratio balance high, indicating that, you
+
+514
+00:35:22,416 --> 00:35:24,793
+根据上面顶部的成交量数值，
+know, based on the volume numbers up here
+
+515
+00:35:24,793 --> 00:35:29,250
+顶部成交的量稍微大一点。
+at the top, there's just a little bit heavier volume that traded on the top.
+
+516
+00:35:31,052 --> 00:35:37,752
+下面这个比率是45.06，表示是小单成交。
+This one down here has a ratio of 45.06, which indicates a small print.
+
+517
+00:35:38,752 --> 00:35:40,452
+那里成交了18手。
+It's 18 lots traded there.
+
+518
+00:35:40,952 --> 00:35:42,652
+这是相关数值的比率。
+It's a ratio of the numbers involved.
+
+519
+00:35:43,252 --> 00:35:45,396
+这也是相关数值的比率，
+This is also a ratio of the numbers
+
+520
+00:35:45,396 --> 00:35:47,004
+但这是
+involved, but this is a ratio
+
+521
+00:35:47,004 --> 00:35:49,148
+比率下限，表示是阻挡成交量。
+of bounds low. This is indicating stopping volume.
+
+522
+00:35:49,852 --> 00:35:54,952
+同样，这是OrderFlows交易者软件才能看到的比率。
+Again, it's a ratio that you're only going to see with the order flows trader.
+
+523
+00:35:56,152 --> 00:36:00,389
+如果你只是用普通软件看，你不会知道
+If you're just looking at this on regular software, you're not going to know that
+
+524
+00:36:00,389 --> 00:36:01,801
+虽然它
+there's some, even though it's
+
+525
+00:36:01,801 --> 00:36:06,603
+有点隐藏在里面，很难发现，这些数字看起来也不大：1962、245、29，
+kind of hidden in there, it's really hard to see, and these numbers don't look that great, 1962, 245, 29,
+
+526
+00:36:07,952 --> 00:36:11,752
+但它表示有阻挡成交量，而且市场确实对它有反应。
+but it's indicating that there's some stopping volume, and the market did react off of it.
+
+527
+00:36:12,852 --> 00:36:14,919
+这里有小单成交。
+Here you have the small print. At
+
+528
+00:36:14,919 --> 00:36:16,396
+在这根阳线的底部，
+the bottom of this green
+
+529
+00:36:16,396 --> 00:36:19,350
+市场对它有反应。
+candlestick, you know, and the market reacted off of it.
+
+530
+00:36:20,552 --> 00:36:23,552
+当你看到小单成交时，说明
+When you see a small print, it's indicating that there was
+
+531
+00:36:23,552 --> 00:36:27,852
+在K线底部缺乏抛压。
+Just lack of selling when you're at the bottom of this bar.
+
+532
+00:36:28,752 --> 00:36:31,052
+然后市场转头收于更高位。
+And the market turned around and closed higher.
+
+533
+00:36:34,652 --> 00:36:41,652
+堆叠失衡区是指有三个或更多买卖失衡区叠加在一起。
+Stacked imbalance occurs when there are three or more bind and balances stacked on top of each other.
+
+534
+00:36:42,352 --> 00:36:44,052
+所以才叫堆叠。
+That's, you know, hence the term stacked.
+
+535
+00:36:44,752 --> 00:36:48,452
+这里是一个堆叠买盘失衡区。
+So here is a green stack buying imbalance.
+
+536
+00:36:49,452 --> 00:36:52,152
+我们把多头区域标出来了。
+We have the green zone drawn out.
+
+537
+00:36:52,152 --> 00:36:54,652
+所以这里有买盘失衡区、买盘失衡区、买盘失衡区。
+So you've got buying imbalance, buying imbalance, buying imbalance.
+
+538
+00:36:56,352 --> 00:37:02,852
+这是由市场活动形成的支撑/阻力位。
+It's... Form of support or resistance that's generated by market activity.
+
+539
+00:37:03,752 --> 00:37:05,372
+所以当你有多头
+So when you have a buying
+
+540
+00:37:05,372 --> 00:37:06,992
+失衡区，一个堆叠的多头失衡区，
+imbalance, a stacked buying imbalance, and
+
+541
+00:37:06,992 --> 00:37:08,612
+市场回调时，
+the market trades back in, you're
+
+542
+00:37:08,612 --> 00:37:10,502
+你要看这些多头是否会回补，
+looking for these buyers to come back
+
+543
+00:37:10,502 --> 00:37:12,392
+重新确立支撑，
+in and reassert themselves and support the
+
+544
+00:37:12,392 --> 00:37:14,552
+推动市场继续上涨。
+market and for the market to go higher.
+
+545
+00:37:16,452 --> 00:37:20,952
+堆叠卖盘失衡区是指三个或以上卖盘失衡区连续堆叠。
+A stacked selling imbalance occurs when there are three or more selling imbalances stacked on top of each other.
+
+546
+00:37:21,652 --> 00:37:27,052
+比如这里，有四个，看这红色区域标出来的部分。
+So in this case, you have four. You know, you got this, the red zone drawn out here.
+
+547
+00:37:27,552 --> 00:37:29,508
+同样，对于卖盘失衡区，
+And again, for selling imbalance,
+
+548
+00:37:29,508 --> 00:37:32,247
+堆叠卖盘失衡区，
+stack selling imbalance, you're going to use
+
+549
+00:37:32,247 --> 00:37:36,551
+你会把它当作阻力位，而堆叠买盘失衡区则是支撑位。
+it as resistance, whereas a stack buying imbalance would be support.
+
+550
+00:37:36,852 --> 00:37:39,114
+因为你期待市场回涨到之前这些空头出现的位置，
+Because you're looking for the market to trade
+
+551
+00:37:39,114 --> 00:37:41,376
+看这些空头是否会再次出现，
+back up towards where these sellers were earlier
+
+552
+00:37:41,376 --> 00:37:45,051
+从而把市场重新压下去。
+for these sellers to reappear and sort of push the market back down.
+
+553
+00:37:45,552 --> 00:37:46,952
+不过，这些位置并不总是有效。
+Now, they don't always hold.
+
+554
+00:37:47,052 --> 00:37:47,692
+有时候，
+Sometimes, you know,
+
+555
+00:37:47,692 --> 00:37:48,972
+这些空头可能只是
+these sellers may just be a
+
+556
+00:37:48,972 --> 00:37:50,252
+一个大单在市场中逐步成交。
+big order working its way through
+
+557
+00:37:50,252 --> 00:37:51,318
+而且，
+the market. And, you know,
+
+558
+00:37:51,318 --> 00:37:53,451
+一旦成交完毕，市场可能就会回调。
+once they get done, you know, the market comes back.
+
+559
+00:37:54,252 --> 00:37:59,052
+所以你要结合市场整体情况来判断。
+It's something that you should take it with context of what's going on in the market.
+
+560
+00:37:59,552 --> 00:38:08,052
+仅仅因为存在堆叠失衡区，并不意味着市场一定会得到支撑或遇到阻力。
+Just because there's a stack imbalance doesn't necessarily mean that the market will be supported or meet resistance.
+
+561
+00:38:10,252 --> 00:38:14,052
+还是那句话，要结合市场当前的动态来理解。
+Again, you should read it all into the context of what the market is doing.
+
+562
+00:38:14,152 --> 00:38:17,476
+如果在区间中部出现堆叠失衡区，不管是买盘失衡还是卖盘失衡，
+If you get a stacked imbalance, either buying or selling,
+
+563
+00:38:17,476 --> 00:38:19,803
+它的重要性
+in the middle of a range, it's
+
+564
+00:38:19,803 --> 00:38:26,451
+远不如日内高点或低点的堆叠失衡区。
+not as important as, say, a stacked imbalance at the high of the day or the low of the day.
+
+565
+00:38:30,132 --> 00:38:34,032
+阻挡成交量。阻挡成交量和大单成交非常相似。
+Stopping volume. Stopping volume is very similar to a large print.
+
+566
+00:38:34,732 --> 00:38:39,532
+它出现在K线边缘有大量成交量，且市场在该点发生反转时。
+It occurs when there's heavy volume at the edge of a candle that turned at that point.
+
+567
+00:38:40,132 --> 00:38:42,932
+设置在总交易者订单的比率下限处。
+Setting is under ratio balance low in the order of the total trader.
+
+568
+00:38:43,632 --> 00:38:48,632
+可以看到这里涨到1900，
+And so you can see here is you got up to 1900 and
+
+569
+00:38:49,432 --> 00:38:54,232
+接近1899.75，此时比率是0.53。
+just about 18, 99, 3 quarters, and there's a ratio of 0.53.
+
+570
+00:38:54,232 --> 00:38:56,165
+这说明该点位成交量很大。
+So it's indicating that there's heavy volume
+
+571
+00:38:56,165 --> 00:38:58,098
+在上面这根K线的顶部，
+up here at the top of this
+
+572
+00:38:58,098 --> 00:39:00,031
+市场就是突破不了。
+bar that the market couldn't get past.
+
+573
+00:39:00,132 --> 00:39:03,632
+显然，市场在这根K线里出现抛售，然后延续到下一根。
+And obviously the market sold off in this bar and then continued into the next bar.
+
+574
+00:39:03,632 --> 00:39:05,532
+你会看到一个大的负Delta出现。
+You see a big negative delta appearing.
+
+575
+00:39:06,432 --> 00:39:09,458
+但这是一个早期信号，
+But this was a sign early that,
+
+576
+00:39:09,458 --> 00:39:12,484
+嘿，这里有成交量，有空头
+hey, there's some volume, there's some sellers
+
+577
+00:39:12,484 --> 00:39:15,510
+在这些价位上，
+up here at these levels to really
+
+578
+00:39:15,510 --> 00:39:21,130
+真正压制市场，让它跌下去。
+put their foot on the head of the market and keep it down.
+
+579
+00:39:24,488 --> 00:39:27,897
+未完成测试是指在K线的顶部或底部，
+Unfinished business is when there's volume on both the bid
+
+580
+00:39:27,897 --> 00:39:31,987
+买盘与卖盘都有成交量。
+and the offer at the top or the bottom of the candle.
+
+581
+00:39:31,988 --> 00:39:37,588
+之所以叫未完成测试，是因为市场之后常会回到这个价位来完成测试。
+It's referred to as unfinished business as the market often comes back to that level to finish that business later.
+
+582
+00:39:39,888 --> 00:39:42,054
+基本上，这是一个未完成拍卖，
+Basically, it's an unfinished auction,
+
+583
+00:39:42,054 --> 00:39:45,087
+背后的逻辑是，
+and the thinking behind it is that
+
+584
+00:39:45,087 --> 00:39:48,987
+市场会回头完成这个测试。
+the market will come back and finish that business.
+
+585
+00:39:49,288 --> 00:39:52,621
+阳线右边应该有一个0，
+You should have a zero on the right side of
+
+586
+00:39:52,621 --> 00:39:54,287
+阴线左边也应该有一个0，
+a green candle, on the
+
+587
+00:39:54,287 --> 00:39:58,287
+当没有的时候，当你有…
+left side of a red candle, when it's not, when you have...
+
+588
+00:39:59,088 --> 00:40:01,688
+买盘与卖盘都有成交量，这就被视为未完成测试。
+Volume on both sides, that's what's considered unfinished business.
+
+589
+00:40:01,688 --> 00:40:05,588
+你要等市场回头来完成这个测试。
+And you're looking for the market to come back and finish that business.
+
+590
+00:40:05,888 --> 00:40:07,673
+比如这里，
+Like in this case, the
+
+591
+00:40:07,673 --> 00:40:09,458
+市场在下面开盘，
+market opened up down here,
+
+592
+00:40:09,458 --> 00:40:13,386
+先跌后回涨，然后收在这个价位。
+traded lower, but then came back and closed that level off.
+
+593
+00:40:13,688 --> 00:40:17,188
+这里还有一个例子，市场直接回涨，以此类推。
+Here you have another one, the market came right back up, and so on.
+
+594
+00:40:22,552 --> 00:40:28,352
+成交量，大家应该知道是什么，就是一根K线里的期货合约交易量。
+Volume is, everybody should know what volume is, it's the amount of contracts traded in a bar.
+
+595
+00:40:29,352 --> 00:40:33,752
+有累积成交量，也有单根K线的成交量。这里我讲的是单根K线的成交量。
+There's cumulative volume and there's just volume for the bar. In this case I'm talking about volume for the bar.
+
+596
+00:40:34,252 --> 00:40:38,152
+你能看到34,000手、37,000手、26,000手。
+And you can see 34,000, 37,000, 26,000.
+
+597
+00:40:39,352 --> 00:40:46,452
+这很重要，因为有时候K线的成交量会非常小，
+It's important because there's going to be times where bars have very light volume and you want to
+
+598
+00:40:48,452 --> 00:40:54,152
+你要理解这一点，并结合市场动态来综合判断。
+You want to understand that and take it all into context with what's happening in the market.
+
+599
+00:40:58,076 --> 00:41:02,676
+成交量失衡是指卖盘成交量与买盘成交量的差异。
+The volume imbalance is the difference between the volume traded on the offer and the volume traded on the bid.
+
+600
+00:41:03,076 --> 00:41:08,476
+当买盘的成交量失衡超过400%时，这就称为买盘失衡。
+When the volume imbalance is over 400% on the offer side, it is called a buying imbalance.
+
+601
+00:41:08,976 --> 00:41:13,976
+当买盘的成交量失衡超过400%时，称为卖盘失衡。
+When there is volume imbalance over 400% on the bid side, it is called a selling imbalance.
+
+602
+00:41:14,376 --> 00:41:18,776
+之前我讲过买盘失衡和卖盘失衡的概念。
+I had talked about these earlier with a buying imbalance or a selling imbalance.
+
+603
+00:41:20,576 --> 00:41:21,776
+这里只是一个通用的术语。
+Here's just the general term.
+
+604
+00:41:21,776 --> 00:41:25,776
+你可以看到K线内蓝色数字和黑色数字的区别。
+So you can see all the blue numbers as opposed to the black numbers inside a bar.
+
+605
+00:41:26,276 --> 00:41:31,576
+如果是K线上方或下方的蓝色数字，那就是比率，是OrderFlows Trader软件的比率。
+If it's a blue number above or below, that's the ratio. That's the order flows trader ratio.
+
+606
+00:41:32,276 --> 00:41:39,176
+但大多数软件会在足迹图中标出成交量失衡的位置。
+But most software will indicate to you in the footprint where there's a volume imbalance.
+
+607
+00:41:42,100 --> 00:41:44,952
+当你开始在一根K线内看到多个成交量失衡时，
+When you're starting to see multiple volume imbalances
+
+608
+00:41:44,952 --> 00:41:47,447
+它表示买盘或卖盘是否
+inside a bar, it's indicating whether or
+
+609
+00:41:47,447 --> 00:41:50,299
+被接纳。
+not the buying or selling is picked up.
+
+610
+00:41:57,200 --> 00:42:03,700
+成交量分布图显示在整个交易时段中每个价格水平的成交量。
+The volume profile shows how much volume is incurred at each price level throughout the trade session.
+
+611
+00:42:03,700 --> 00:42:05,800
+它绘制在图表的垂直轴上。
+It's plotted on the vertical axis of the chart.
+
+612
+00:42:06,400 --> 00:42:08,785
+高成交量节点代表关键的
+High volume nodes represent key areas of
+
+613
+00:42:08,785 --> 00:42:11,170
+支撑/阻力位，而低成交量区域
+support and resistance as well as low
+
+614
+00:42:11,170 --> 00:42:15,599
+也是交易者观察市场回调的区域。
+volume also is areas that people look at the markets to go back.
+
+615
+00:42:15,700 --> 00:42:18,300
+这门课程里我不会深入讲成交量分布图。
+I'm not going to get into volume profile very much in this course.
+
+616
+00:42:19,100 --> 00:42:23,100
+它在OrderFlows Trader软件中可用。
+It's available on the OrderFlows Trader software.
+
+617
+00:42:26,100 --> 00:42:31,700
+成交量分布图交易已经存在很久了，比如30年。
+Profile trading has been around for a long time, also a long time, you know, 30 years.
+
+618
+00:42:32,200 --> 00:42:37,700
+但外面已经有很多关于它的好资料了。
+But, you know, there's a lot of good information out there on it already.
+
+619
+00:42:38,500 --> 00:42:41,200
+大多数人其实已经有了基础知识。
+Most people actually already have a basic knowledge of it.
+
+620
+00:42:42,100 --> 00:42:48,900
+这是人们用来判断市场中支撑/阻力位的工具。
+You know, it's something that people look at that helps them determine where there's support or resistance in the market.
+
+621
+00:42:52,328 --> 00:42:55,528
+这就是第4节课的结尾，订单流术语部分。
+So that's the end of lesson four, the order flow terms.
+
+622
+00:42:55,528 --> 00:42:57,096
+下一节课我会讨论市场参与者是谁，
+In the next lesson, I'll discuss who
+
+623
+00:42:57,096 --> 00:42:58,664
+为什么他们重要，
+are the market participants and why they
+
+624
+00:42:58,664 --> 00:43:01,128
+以及他们如何判断自己在市场中活跃的时机。
+matter and how they determine when they're active in the market.
+
+625
+00:43:01,628 --> 00:43:05,228
+你需要知道大交易者什么时候在市场里。
+You want to know when the big traders are in the market.
+
+626
+00:43:05,228 --> 00:43:09,028
+你不一定要关注小交易者推动市场的时候。
+You don't necessarily care when the market's moving on small traders.
+
+627
+00:43:11,428 --> 00:43:14,816
+当真实资金进入市场，
+When there's real money hitting the market, real
+
+628
+00:43:14,816 --> 00:43:18,204
+真实资金账户进场并累积持仓或
+money accounts coming in and accumulating position or
+
+629
+00:43:18,204 --> 00:43:21,592
+分散持仓、离场时，
+distributing their position, getting out, it's important to
+
+630
+00:43:21,592 --> 00:43:25,827
+这很重要，因为这些往往是趋势的起点或终点。
+know because those are often beginnings or ends of trends.
+
+631
+00:43:28,020 --> 00:43:28,920
+好，谢谢。
+So thank you.
+
+632
+00:43:29,120 --> 00:43:33,820
+第四节课到此结束，第五节课再见。
+This lesson four is over, and we'll start in lesson five.
+
+===== END AFTER_OPTIMIZE =====

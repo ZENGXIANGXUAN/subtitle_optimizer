@@ -1,0 +1,3040 @@
+===== AFTER_OPTIMIZE (608 entries) =====
+1
+00:00:00,000 --> 00:00:01,597
+大家好，我是Bryant
+what's going on guys bryant here
+
+2
+00:00:01,597 --> 00:00:02,928
+今天是2022年7月15日，星期五
+today is friday july 15th 2022
+
+3
+00:00:02,928 --> 00:00:04,525
+市场又开盘了
+and the market is open another
+
+4
+00:00:04,525 --> 00:00:09,051
+今天录制的视频，希望能在未来几天内发布
+video being recorded today and i'm hoping to get this one out within the next couple days
+
+5
+00:00:09,320 --> 00:00:12,066
+各位，股票市场里
+guys there's a lot of money to be
+
+6
+00:00:12,066 --> 00:00:14,812
+用对信息可以轻松赚钱
+made in the stock market doing very little
+
+7
+00:00:14,812 --> 00:00:16,185
+利用正确的信息
+using the right information
+
+8
+00:00:16,185 --> 00:00:21,678
+你可以构建稳健的交易思路，无需过度交易
+you can build solid trade ideas that don't require you to over trade you can train
+
+9
+00:00:21,680 --> 00:00:23,708
+可以训练自己更系统地思考
+yourself to think a little bit more methodically
+
+10
+00:00:23,708 --> 00:00:25,736
+制定更稳健的交易计划
+and think about solid trading plans it doesn't
+
+11
+00:00:25,736 --> 00:00:30,299
+并不意味着必须放弃超短线交易
+mean you necessarily have to cut out scalping or cut out your day trades if you're very successful
+
+12
+00:00:30,300 --> 00:00:32,153
+如果你已经很擅长，完全可以继续
+at it if you are this is this
+
+13
+00:00:32,153 --> 00:00:34,006
+这个视频能帮你
+video will be a way for you to
+
+14
+00:00:34,006 --> 00:00:40,259
+拓展交易知识，我们先来看特斯拉，切换到日内图表
+expand your trading knowledge so let's start by looking at tesla right here and let's jump to the intraday time frame so i will be talking a
+
+15
+00:00:40,260 --> 00:00:42,033
+我会详细讲解Quant Trading App提供的关键价位
+lot about levels that are provided by quant
+
+16
+00:00:42,033 --> 00:00:43,806
+我是Quant Trading App的首席开发者
+trading app right here i am the lead
+
+17
+00:00:43,806 --> 00:00:48,461
+先声明一下，这是一个平台，访问quanttradingapp.com即可使用
+developer on quant trading app so full disclosure there it's a platform which you can access at quanttradingapp.com and i
+
+18
+00:00:48,240 --> 00:00:50,212
+后面我会再详细介绍
+will be talking a little bit more about that later
+
+19
+00:00:50,212 --> 00:00:51,790
+图表上看到的每一个价位
+every single level in which you see on
+
+20
+00:00:51,790 --> 00:00:55,538
+我图表上的这些彩色水平来自Quant Trading App，就是gamma水平
+my chart is generated from quant trading app so these levels right here these colored levels are from gamma
+
+21
+00:00:55,540 --> 00:00:57,503
+这些就是gamma水平
+so these are the gamma levels so this
+
+22
+00:00:57,503 --> 00:00:59,466
+这是绝对gamma水平
+is an absolute gamma level this is the
+
+23
+00:00:59,466 --> 00:01:03,638
+这是盘前最高正gamma行权价
+highest positive gamma strike from pre-market and then there's a highest positive negative gamma strike from pre-market
+
+24
+00:01:03,640 --> 00:01:05,655
+现在没显示，因为和另一个价位重叠了
+it's not showing right now because it overlaps
+
+25
+00:01:05,655 --> 00:01:07,670
+这个蓝色价位
+with another level this blue level right here
+
+26
+00:01:07,670 --> 00:01:12,959
+is referred to as max pain max pain is the strike price at expiration so in this case today in which
+
+27
+00:01:12,960 --> 00:01:14,856
+即到期时期权链中
+there would be the least amount of combined
+
+28
+00:01:14,856 --> 00:01:16,752
+净内在价值最低的行权价
+net intrinsic value in the options chain so
+
+29
+00:01:16,752 --> 00:01:22,678
+简单说，就是买入看涨或看跌期权的交易者损失最大的价位
+think of it this way it's the strike price in which anyone that's a buyer of a call or a put would lose the most
+
+30
+00:01:22,680 --> 00:01:24,863
+最大痛点理论认为
+amount of money max pain theory says towards
+
+31
+00:01:24,863 --> 00:01:27,046
+到期日收盘价通常会向这个价位靠拢
+the end of expiration price will generally gravitate
+
+32
+00:01:27,046 --> 00:01:31,958
+但这并非绝对，只是图表上一个很好的参考
+towards that stock price now that's not necessarily always going to happen but it's just a good measure
+
+33
+00:01:31,960 --> 00:01:33,652
+在图表上它会作为
+to have on your chart as it acts
+
+34
+00:01:33,652 --> 00:01:35,344
+全周的关键支撑和阻力位
+as key support and resistance throughout the week
+
+35
+00:01:35,344 --> 00:01:39,998
+大家看到的这个买入区是Quant Trading App算法生成的
+this buy zone right here that you see is from the quant trading app algorithm and then these intraday levels are also
+
+36
+00:01:40,000 --> 00:01:41,862
+这些日内水平也是买卖区间
+like intraday buy and sell zones as well
+
+37
+00:01:41,862 --> 00:01:43,724
+如果价格突破后回踩
+as levels to take if price was to
+
+38
+00:01:43,724 --> 00:01:49,078
+你可以顺势做多，我之前做过突破回测策略的视频
+break past it come back and retrace and then you can continue for the upside momentum i've done videos before on the break
+
+39
+00:01:49,080 --> 00:01:50,634
+这其实是我最喜欢的动能交易方式
+and retest strategy actually my favorite momentum way
+
+40
+00:01:50,634 --> 00:01:52,188
+我习惯等价格回踩支撑位
+of trading i like to wait for a
+
+41
+00:01:52,188 --> 00:01:56,658
+再继续上涨，这就是突破回测
+pull back into a level before i continue to the upside so that right there is the break and retest so that's what
+
+42
+00:01:56,660 --> 00:01:58,069
+所以这些日内水平的作用是
+this intraday level is kind of here for
+
+43
+00:01:58,069 --> 00:01:59,478
+或者说我使用它们的方式是
+or at least the way in which i
+
+44
+00:01:59,478 --> 00:02:04,058
+如果你是动能交易者，可以在到达目标位后获利了结
+use it if you're a momentum based trader guys tend to scalp it up to that level and then take profit there if you're a version
+
+45
+00:02:04,060 --> 00:02:05,696
+如果你是回归均值交易者
+to the mean trader you can trade it
+
+46
+00:02:05,696 --> 00:02:07,332
+可以交易价格回落至成交量加权平均价
+coming back down to the back to vwap
+
+47
+00:02:07,332 --> 00:02:12,038
+和传统支撑阻力位一样，图表上已自动标出
+again just like any other traditional support resistance level so it's kind of outlined right here on the chart all of this is
+
+48
+00:02:12,040 --> 00:02:13,993
+这些都是自动绘制的，这条是2日
+drawn in automatically and this right here is a two-day
+
+49
+00:02:13,993 --> 00:02:15,946
+锚定的成交量加权平均价，刚才我已经讲完图表上所有水平
+anchor vwap so as i've gone over all the levels
+
+50
+00:02:15,946 --> 00:02:17,899
+图表上的这些都不是我手动画的
+on my chart again nothing of which i've drawn in
+
+51
+00:02:17,899 --> 00:02:19,852
+如果关闭所有指标
+if we were to just turn this off right if
+
+52
+00:02:19,852 --> 00:02:27,859
+大家能看到这是一张干净的图表，所有内容都由QTA自动生成，QTA就是Quant Trading App，现在说回gamma水平
+we were just turn off all the studies you guys can see it's a clean chart and this is all populated straight from qta qta just stands for quant trading app as we move right along right now gamma levels are
+
+53
+00:02:27,860 --> 00:02:30,015
+交易时gamma水平非常重要，我稍微解释一下
+very important whenever you're trading and i'll explain a little
+
+54
+00:02:30,015 --> 00:02:31,739
+这是特斯拉的当前价格
+bit why but this is test's current price
+
+55
+00:02:31,739 --> 00:02:36,480
+我想回放到周一，因为周一下跌时
+i want to rewind in time and take a look at monday because on monday as it sold off it came down
+
+56
+00:02:36,480 --> 00:02:38,293
+价格触及了最大痛点
+to max pain max pain i believe was
+
+57
+00:02:38,293 --> 00:02:39,879
+当时最大痛点大约在720美元
+about 720 at that point let's just say
+
+58
+00:02:39,879 --> 00:02:45,092
+如果不用生成水平的算法，另一种选择是成交量分布图
+you don't use an algorithm that generates levels like this for you an alternative could be something like the volume profile so let's
+
+59
+00:02:45,320 --> 00:02:47,659
+假设我们来到这张图表
+just say we were to come to this chart right here and
+
+60
+00:02:47,659 --> 00:02:49,998
+画出控制点，我之前做过相关视频
+draw out this point of control i've done previous videos on this
+
+61
+00:02:49,998 --> 00:02:52,337
+这只是为了增加一点共振
+but this is just to add a little bit more confluence and
+
+62
+00:02:52,337 --> 00:03:01,499
+为没有我这些工具的各位，或不用我这些方法的各位，补充些背景信息。那我们来画个需求区
+a little bit more context of things for those of you that don't have access to the same levels in which i have or you just don't use the same things in which i use so we have that and then let's draw out a demand zone
+
+63
+00:03:01,500 --> 00:03:03,709
+就在这里，先标出来
+right here so let's show that out i've done previous
+
+64
+00:03:03,709 --> 00:03:05,918
+之前也做过相关视频，所以
+videos on this subject matter also so i won't bother
+
+65
+00:03:05,918 --> 00:03:08,127
+颜色先不调了，直接回到
+changing the color for now so let's just jump back
+
+66
+00:03:08,127 --> 00:03:14,756
+15分钟图看看。这里有个区域，有个控制点，最大痛点也能查到
+to the 15 minute time frame so here we go we have a zone we have a point of control max pain is something that is available i believe there's a
+
+67
+00:03:14,980 --> 00:03:16,874
+好像有个‘最大痛点计算器’之类的应用
+there's an app called the max pain calculator something like
+
+68
+00:03:16,874 --> 00:03:21,419
+大家可以搜一下本周的最大痛点在哪，有很多方式可以找到
+that so you can always google maybe what's the upcoming max pain for the week so there's different ways to at least find out
+
+69
+00:03:21,420 --> 00:03:24,210
+找到最大痛点的位置，另外你也可以
+where the max pain is as well as uh you can use
+
+70
+00:03:24,210 --> 00:03:26,535
+用自己的眼睛或者经验
+your own eyeballs or you use your own experience to
+
+71
+00:03:26,535 --> 00:03:30,720
+来画供需区。这个视频的核心思路是最重要的
+draw out your supply and demand zones so the thinking behind this video which is what's most important
+
+72
+00:03:30,720 --> 00:03:33,724
+不是单个交易信号
+here it's not necessarily about the individual setups and everything like that
+
+73
+00:03:33,724 --> 00:03:36,228
+而是更宏观的思维方式，拓展你的交易思路
+it's about the broader thinking trying to expand your approach
+
+74
+00:03:36,228 --> 00:03:43,239
+或者至少改变你看待市场的方式，可能为你创造被动收入，或者每月为账户添砖加瓦
+or at least how you think about the market to potentially create some sort of passive income for what you do or just to add to your balance
+
+75
+00:03:43,240 --> 00:03:45,706
+特斯拉这周大跌
+sheet at the end of every month tesla sells off
+
+76
+00:03:45,706 --> 00:03:47,679
+周一大跌
+this is a huge drop on monday this
+
+77
+00:03:47,679 --> 00:03:54,339
+特斯拉又来一次大跌。我们看看特斯拉的ATR，去Finviz搜特斯拉
+is a huge drop again for tesla if we were to take a look at tesla's atr let's just go to finviz type in tesla and then
+
+78
+00:03:54,340 --> 00:03:56,786
+现在ATR大约40点
+take a look at its atr right now it's about 40 points
+
+79
+00:03:56,786 --> 00:03:59,009
+看看这波下跌
+so let's see what this move was right here so
+
+80
+00:03:59,009 --> 00:04:03,234
+从我注意到它的这个点位开始，已经跌了40点
+from this level at the point in which it caught my attention was here it's already down 40 points so
+
+81
+00:04:03,680 --> 00:04:06,254
+整整一个ATR，这周差不多跌了两个ATR
+full atr it did about two atrs this week right
+
+82
+00:04:06,254 --> 00:04:08,313
+两天内
+here across two days so that's that's kind
+
+83
+00:04:08,313 --> 00:04:13,719
+这对特斯拉这种股来说，可能接近底部了
+of generally going to be close to you know probably the bottom for a tesla for a stock such as tesla
+
+84
+00:04:13,720 --> 00:04:16,114
+再往下就会极度超卖，ATR只是
+anything past that it's getting extremely oversold atr just means
+
+85
+00:04:16,114 --> 00:04:18,508
+平均真实波动幅度，可以查
+the average true range you can look that up in
+
+86
+00:04:18,508 --> 00:04:22,578
+其他视频，或者上网搜，或者看Investopedia了解更多
+other videos or maybe search on google or check out investopedia to learn a little bit more
+
+87
+00:04:22,580 --> 00:04:24,995
+特斯拉一开周就跌40点
+about that so a 40 point drop on tesla with to start
+
+88
+00:04:24,995 --> 00:04:27,629
+有点不寻常
+the week off is kind of uncalled for on top of that
+
+89
+00:04:27,629 --> 00:04:32,019
+而且直接跌到最大痛点位，立刻引起了我的注意
+it sold off right into the max pain level so it immediately caught my attention and as we pull this
+
+90
+00:04:32,240 --> 00:04:33,962
+拉上来看，720就是最大痛点
+up right here so 720 was max pain this is
+
+91
+00:04:33,962 --> 00:04:35,875
+这就是Quant Trading App的Discord群
+the quant trading app discord right here and this is
+
+92
+00:04:35,875 --> 00:04:40,467
+日期是7月11日，我确认一下是不是同一天
+on the 11th so let me just make sure that's the same day so this right here at the 11th on july 11th right
+
+93
+00:04:40,660 --> 00:04:43,646
+周一早上特斯拉大跌，自然会引起我的注意
+here monday morning tesla sells off i'm obviously going to catch my
+
+94
+00:04:43,646 --> 00:04:46,632
+这会吸引所有交易者的目光
+attention it's going to catch any trader's attention because tesla is one
+
+95
+00:04:46,632 --> 00:04:49,618
+因为特斯拉是波动性最高的股票之一
+of the highest beta stocks it's one of the most traded options
+
+96
+00:04:49,620 --> 00:04:51,886
+也是市场上期权交易最活跃的品种之一，大家看这里
+chains on the market so take a look at this
+
+97
+00:04:51,886 --> 00:04:53,926
+看这里，700是特斯拉的绝对GEX水平
+right here 700 is absolute gex for tesla so we'll
+
+98
+00:04:53,926 --> 00:04:59,366
+等下再详细讲，这里显示700是特斯拉的绝对GEX水平
+talk about that in a second but this is just saying this is absolute gex for tesla right here at 700 and we can see
+
+99
+00:04:59,820 --> 00:05:02,599
+最大痛点在720，就标记在这里
+that the max pain was at 720 and that's what's labeled right
+
+100
+00:05:02,599 --> 00:05:05,631
+蓝色标记的就是当前价格
+here as this blue level spot price was this right here it
+
+101
+00:05:05,631 --> 00:05:09,926
+价格刚好跌到最大痛点，立刻引起了我的注意
+had just come down to the max pain so it caught my attention as soon as that
+
+102
+00:05:10,180 --> 00:05:13,176
+我开始思考可能的交易策略
+happened i was thinking about potential trades to potentially run for it
+
+103
+00:05:13,176 --> 00:05:16,172
+因为思路是：如果它已经回调了一个完整的ATR
+because the thinking would be if it's already sold off a full
+
+104
+00:05:16,172 --> 00:05:19,918
+并且接近最大痛点，下方还有需求区
+atr it's coming into max pain we have a demand zone below it we have
+
+105
+00:05:19,920 --> 00:05:22,780
+下方有控制点，还有潜在的买入区
+a point of control below it we have a potential buy zone
+
+106
+00:05:22,780 --> 00:05:25,640
+那它还会跌多深呢？
+right here how much low is it necessarily going to go and
+
+107
+00:05:25,640 --> 00:05:28,500
+即使继续下跌，之后很可能会回测这个价位
+if it does go lower chances are it's going to come back
+
+108
+00:05:28,500 --> 00:05:34,220
+至少会回到这个价位进行回测，这就是基本思路
+to at least this level to retest it at a later point that's generally the thinking price does not just touch a price once
+
+109
+00:05:34,220 --> 00:05:37,260
+价格不会只触及某个价位一次就结束
+in its lifetime it's generally going to touch it again even if
+
+110
+00:05:37,260 --> 00:05:40,300
+可能几分钟后，或者更可能的是
+it's just a few minutes later or more than likely it's going
+
+111
+00:05:40,300 --> 00:05:44,100
+几天后，也可能一周后，甚至一个月后
+to be a couple days later or maybe a week later sometimes even a month
+
+112
+00:05:44,100 --> 00:05:46,863
+这取决于价格当时处于什么状态
+later it all depends on obviously when if something is in price
+
+113
+00:05:46,863 --> 00:05:49,626
+价格发现模式是指处于历史新高时
+discovery mode price discovery is when it's at all-time highs it can
+
+114
+00:05:49,626 --> 00:05:52,619
+它可能会继续上涨，因为在探索新高
+keep going up because it's trying to figure out where's the all-time high
+
+115
+00:05:52,620 --> 00:05:55,321
+如果处于激进下跌趋势
+or if something is in a very aggressive downtrend then it means
+
+116
+00:05:55,321 --> 00:05:58,022
+它可能会触及之前的支撑位并突破
+it's already touching previous support levels and it's just breaking them on
+
+117
+00:05:58,022 --> 00:06:00,498
+一路向下
+its way down but the key takeaway is to know that
+
+118
+00:06:00,500 --> 00:06:03,883
+但关键点是，价格通常会重新回访之前到过的价位
+generally price will revisit a level in which it's been to before
+
+119
+00:06:03,883 --> 00:06:07,266
+所以这里的多重信号汇聚在于
+so if this is confluence of things would be that this is
+
+120
+00:06:07,266 --> 00:06:11,777
+最大痛点是720，这个区域，再来看特斯拉的gamma敞口
+max pain 720 the zone right here if we take a look at gamma exposure on tesla
+
+121
+00:06:12,060 --> 00:06:14,226
+那我们直接跳到这里，这就是特斯拉的
+so if we jump to this right here this would be tesla's
+
+122
+00:06:14,226 --> 00:06:15,670
+gamma敞口分布，假设我们看
+gamma exposure and let's just jump to say
+
+123
+00:06:15,670 --> 00:06:19,280
+比如下周，如果要制定交易计划，这些就是
+for example something like next week if we were to come up with some sort of trading plan so these
+
+124
+00:06:19,280 --> 00:06:21,428
+特斯拉今日到期的gamma水平，但这是
+are the gamma levels for tesla for today's expiration but it's a
+
+125
+00:06:21,428 --> 00:06:23,576
+0日到期，所以这些水平会非常紧凑
+zero day so the levels are going to be really tight and
+
+126
+00:06:23,576 --> 00:06:26,798
+而且目前波动很剧烈。看这张图，我们能看到
+wonky right now if we take a look at this chart right here we can see we have
+
+127
+00:06:26,800 --> 00:06:29,148
+gamma水平在750、765、800附近，
+some gamma levels up at 750 765 800 appears to have 1.1
+
+128
+00:06:29,148 --> 00:06:32,670
+800处的gamma敞口高达110万，
+million gamma exposure right here so this would be the highest positive
+
+129
+00:06:32,670 --> 00:06:36,485
+这是目前下周最高的正gamma敞口，
+gamma exposure right now for next week and this would be the second
+
+130
+00:06:37,660 --> 00:06:42,100
+这是第二高。下方还有660的绝对gex，这段视频不会详细解释
+highest and on the lower side we have absolute gex down here at 660 this video is not an explanation
+
+131
+00:06:42,100 --> 00:06:44,304
+gamma敞口，因为这需要
+on gamma exposure as that will require a little bit
+
+132
+00:06:44,304 --> 00:06:46,067
+更多的讲解。我之前做过几期
+more of an explanation i've done a couple
+
+133
+00:06:46,067 --> 00:06:51,138
+相关视频，之后也会出专门教程。现在滚动到这，先指出
+videos on it before and i will do a dedicated guide on it but as we scroll down right here just pointing out
+
+134
+00:06:51,140 --> 00:06:54,020
+大家现在可以先把它当作超强支撑阻力位
+you guys can think of it right now as supercharged support resistance
+
+135
+00:06:54,020 --> 00:06:55,940
+而绝对gamma敞口的水平
+levels but the absolute gamma exposure levels would
+
+136
+00:06:55,940 --> 00:06:59,780
+更倾向于作为‘磁铁’价位，因为这些是
+be the levels that tend to act a little bit more as magnets because there are
+
+137
+00:06:59,780 --> 00:07:02,113
+高流动性区域，价格喜欢流向
+levels of high liquidity and price likes to move to
+
+138
+00:07:02,113 --> 00:07:03,979
+高流动性区域。这部分
+areas of high liquidity that will be explained
+
+139
+00:07:03,979 --> 00:07:08,879
+会在我的gamma敞口详解视频中讲解。看下周的情况，我们可以说
+in my general breakdown video of gamma exposure so as we're looking at next week we can say okay so we
+
+140
+00:07:08,880 --> 00:07:11,379
+我们知道绝对gex一路下探到
+we know that the absolute gamma exposure is all the way down
+
+141
+00:07:11,379 --> 00:07:12,837
+660附近，我们能看到
+here at 660 we can see that on
+
+142
+00:07:12,837 --> 00:07:17,002
+高位在750，这可能成为潜在阻力位，而这
+the higher end we have 750 so this is likely to act as some sort of potential resistance and this could
+
+143
+00:07:17,420 --> 00:07:19,451
+可能成为中间的某个支撑位，
+potentially act as some sort of support in between we
+
+144
+00:07:19,451 --> 00:07:21,076
+还有这个水平也会起到
+have this level which will also act as
+
+145
+00:07:21,076 --> 00:07:24,936
+一定支撑作用。目前下周的最大痛点是700，如果特斯拉
+some sort of support this is max paying right now for seven which is 700 for next week if tesla
+
+146
+00:07:25,140 --> 00:07:28,038
+跌破这个价位，可以说可能会
+got below this level one can say that maybe it will sell
+
+147
+00:07:28,038 --> 00:07:29,970
+继续下跌，然后可能在某个点位遇到
+off to this level it would meet some
+
+148
+00:07:29,970 --> 00:07:34,317
+支撑，然后可能进一步跌向660，取决于
+sort of support right here and then it potentially will sell off to uh 660 depending on how much
+
+149
+00:07:34,560 --> 00:07:38,140
+下行压力有多大。下周还有财报，所以行情会比较疯狂
+downward pressure there is earnings is also next week so things are going to be a little bit crazy
+
+150
+00:07:38,140 --> 00:07:39,850
+如果从绝对gex反弹，或许我们
+if we return off the absolute gex and maybe let's
+
+151
+00:07:39,850 --> 00:07:41,218
+先来看一下未平仓合约
+just take a look at the open interest
+
+152
+00:07:41,218 --> 00:07:44,980
+来感受一下当前的市场情绪 现在看涨方向
+to get a little bit of a feel for the sentiment we can see right now there's a decent amount of open
+
+153
+00:07:44,980 --> 00:07:47,147
+有相当数量的未平仓合约
+interest to the upside and lastly let's just take a
+
+154
+00:07:47,147 --> 00:07:48,881
+最后来看一下今天的成交量
+look at maybe the volume coming in for
+
+155
+00:07:48,881 --> 00:07:52,999
+可以看到短期合约中看涨期权的成交量更多
+today we can see that there's a little bit more call volume going into the short-term contracts so for
+
+156
+00:07:53,000 --> 00:07:54,920
+未来三个月看涨期权的成交量
+the next three months there's a little bit more volume
+
+157
+00:07:54,920 --> 00:07:56,456
+确实比看跌期权更多
+going into calls for tesla versus uh puts
+
+158
+00:07:56,456 --> 00:08:00,680
+从图表上也能看出 700点位有大量对冲
+and we can kind of see that on the chart right here there's a lot of uh hedging going on a lot
+
+159
+00:08:00,680 --> 00:08:03,028
+很多看跌期权在700点位被买入
+of puts being purchased for the 700 level because below 700 it
+
+160
+00:08:03,028 --> 00:08:04,906
+因为低于700就会有点可怕
+tends to get a little bit scary above
+
+161
+00:08:04,906 --> 00:08:09,133
+高于700就没那么可怕 这就是下周五特斯拉的gamma风险分析
+700 it's not as scary so that's just a little bit of analysis for gamma exposure for next week
+
+162
+00:08:09,840 --> 00:08:12,230
+回到Quant Trading App的Discord
+friday for tesla if we come back to the quant
+
+163
+00:08:12,230 --> 00:08:14,142
+然后我们来看一下这个截图
+trading app discord and then let's actually take
+
+164
+00:08:14,142 --> 00:08:19,400
+我拉一下 这是我本周早些时候解释过的
+a look at the gold shot let me pull up there's something i explained a little bit earlier this week and then
+
+165
+00:08:19,400 --> 00:08:22,014
+我们来看一下这个
+let's view this right here so this would be on
+
+166
+00:08:22,014 --> 00:08:24,105
+这是11号的情况
+the 11th right here so this is when
+
+167
+00:08:24,105 --> 00:08:30,379
+这是第11张图 显示特斯拉的现货价格
+this was generated this is the 11th this is the spot price for tesla so this is the the current price in which the
+
+168
+00:08:30,380 --> 00:08:33,142
+顺便说一下 这些都是Quant Trading App自动完成的
+screenshot was taken and the by the way this is
+
+169
+00:08:33,142 --> 00:08:35,351
+然后这些截图被整合成视频
+all done automatically within quant trading app and
+
+170
+00:08:35,351 --> 00:08:40,599
+这些截图被制作成视频 用来演示工具功能
+then these videos the these screenshots are just comprised into a video which i did here to demonstrate this
+
+171
+00:08:40,600 --> 00:08:43,195
+来展示价格接近特定gamma水平时的走势
+how we can see how price moves as it as
+
+172
+00:08:43,195 --> 00:08:45,271
+我们可以看到价格如何移动
+it gets towards certain gamma exposure levels so
+
+173
+00:08:45,271 --> 00:08:51,240
+这里可以看到715美元 下方是最大痛点
+this right here we can see is 715 right down here we can see max pain so as tesla is moving up let's take
+
+174
+00:08:51,500 --> 00:08:53,069
+大家可以看到
+a look at this you guys can see
+
+175
+00:08:53,069 --> 00:08:55,619
+价格跳涨 触及该水平 盘整后被打压
+it jumps up it hits the level hovers around gets rejected it gets
+
+176
+00:08:55,620 --> 00:08:57,727
+被打压后一路回落到这个水平
+rejected and then it comes all the way back down to this
+
+177
+00:08:57,727 --> 00:08:59,658
+而700点位是绝对gamma水平
+level right here and then the 700 level is the absolute gamma
+
+178
+00:08:59,658 --> 00:09:01,765
+流动性充足 很可能形成支撑
+level so it has a lot of liquidity and it's likely to
+
+179
+00:09:01,765 --> 00:09:06,682
+价格会在此区间盘整一段时间 大家看我再放一遍
+be a little bit of support as well as price is going to hover around this level for a bit as you guys can see we'll play that
+
+180
+00:09:06,860 --> 00:09:09,189
+再给大家看一遍
+one more time for a second for you guys we
+
+181
+00:09:09,189 --> 00:09:11,518
+可以看到价格在上涨 价格持续上涨 它触及了
+can see price is rallying price is rallying it hits
+
+182
+00:09:11,518 --> 00:09:13,847
+这个价位 然后如果我暂停视频
+this level and then if i pause that pause the
+
+183
+00:09:13,847 --> 00:09:21,299
+就暂停在这里 我们回到这一刻 价格在这里突然跳涨 这就是gamma敞口转正的时刻
+video right there let's just jump back to this point and and as we see it jumps right here so this is just when gap when when the gamma exposure turned positive
+
+184
+00:09:21,300 --> 00:09:23,988
+特斯拉的gamma转正 这意味着
+for tesla right here the gamma turned positive which means
+
+185
+00:09:23,988 --> 00:09:26,676
+波动性应该会下降 所以这个价位
+volatility should be reduced so this level right here is
+
+186
+00:09:26,676 --> 00:09:30,709
+就是所谓的gamma翻转点 715美元 是个很重要的关键位
+what's referred to as the gamma flip which is 715 so it's a pretty important level
+
+187
+00:09:30,980 --> 00:09:33,515
+大家需要关注特斯拉的这个点 现在我做这个视频的原因是
+to be aware of for tesla now the reason i'm making this
+
+188
+00:09:33,515 --> 00:09:35,839
+此时我们有一个700美元的价位 之前
+video is because at this point we have 700 level we had
+
+189
+00:09:35,839 --> 00:09:38,163
+700美元是绝对gamma水平
+the 700 level which was the which was the absolute gamma level
+
+190
+00:09:38,163 --> 00:09:43,656
+现在截图里没显示 但之前它是绝对gamma水平 这个价位有大量流动性
+it's not on this screenshot right now but it was the absolute gamma level we have a lot of liquidity a lot of open interest at
+
+191
+00:09:44,080 --> 00:09:46,995
+大量未平仓合约 还有大量负gamma 但另一边
+this level a lot of negative gamma but on the other end
+
+192
+00:09:46,995 --> 00:09:49,910
+我们有最大痛点 它在拉扯特斯拉的价格
+we have max pain right here which is tugging on tesla we
+
+193
+00:09:49,910 --> 00:09:52,582
+750美元这里也有大量未平仓合约
+have a decent amount of open interest at this level at 750
+
+194
+00:09:52,582 --> 00:10:03,029
+某种程度上价格被困在700到750之间 可能会在这个区间内震荡 这正是我们看到的 特斯拉在这一天里来回波动
+so in a sense it's stuck between 700 and 750 price is likely to just be choppy within this area right here and that's essentially what we're seeing as tesla is bouncing around uh this day this particular day we can see it chopping around
+
+195
+00:10:03,760 --> 00:10:06,405
+如果我们看图表 如何
+if we look at our if we look at our chart how
+
+196
+00:10:06,405 --> 00:10:08,168
+利用这一点交易
+can we use that to take a trade
+
+197
+00:10:08,168 --> 00:10:13,678
+如果我们认为特斯拉会在某些关键价位附近震荡一段时间 这是750美元
+if we say tesla if we think tesla is just going to be chopping around certain key levels for for a while this is 750 up
+
+198
+00:10:13,900 --> 00:10:16,397
+这是700美元的价位
+here this is the 700 level right here which is now still
+
+199
+00:10:16,397 --> 00:10:18,213
+这个700仍然是盘前的绝对gamma水平
+absolute the absolute gamma level from pre-market today
+
+200
+00:10:18,213 --> 00:10:22,072
+如果价格只是在这个区间震荡 你可以在这里入场做一个策略
+if it's just going to chop around this level this is where you can enter in something
+
+201
+00:10:22,300 --> 00:10:25,213
+比如可以做一个价差组合 我们来看这个
+like a spread so if we take a look at this right
+
+202
+00:10:25,213 --> 00:10:28,126
+这是一个日历差价组合 本周五到期
+here this would be a calendar spread that expired this week friday
+
+203
+00:10:28,126 --> 00:10:30,796
+你本质上是在卖出本周的720美元看涨期权
+all you're essentially doing is selling the call option the 720 call
+
+204
+00:10:30,796 --> 00:10:41,234
+然后买入下周的720美元看涨期权 让时间衰减侵蚀这个期权的价值 这个期权当时处于平值
+for this week and then you're buying the 720 call for next week and then you're letting time decay just eat away at this at the this uh this option right here which would have been at the money as you guys can see
+
+205
+00:10:41,720 --> 00:10:43,920
+这个截图是10点35分保存的 就是我
+this i was saved at 10 35 so that was just a
+
+206
+00:10:43,920 --> 00:10:45,680
+在Discord发帖后的几分钟
+few minutes after i posted in the discord
+
+207
+00:10:45,680 --> 00:10:50,520
+我没真正执行这笔交易 这只是测试 因为我不喜欢做非方向性交易
+i did not run this trade this is just a test for me because i generally don't like to run non-directional trades
+
+208
+00:10:50,960 --> 00:10:56,220
+在财报前或财报周 而特斯拉下周就要发财报 所以我决定不做
+the week before or the week of earnings and since tesla's earnings is next week i decided not to run it
+
+209
+00:10:56,220 --> 00:10:59,118
+显然我有点遗憾 这本可以是一个不错的收益
+obviously i'm very sad this would have been a nice little p&l
+
+210
+00:10:59,118 --> 00:11:01,793
+本周的一个小收益提升 因为最近我的交易不太理想
+right here boost for the week since i'm not having the best
+
+211
+00:11:01,793 --> 00:11:05,582
+这周交易表现不佳，因为我让一些好仓位溜走了，就像之前微软那次
+trading week because i let some really good uh winners go as i talked about in the
+
+212
+00:11:05,360 --> 00:11:10,200
+但现在看这个，目前收益很不错
+microsoft video previously but as we take a look at this right here this is a great return right now
+
+213
+00:11:10,200 --> 00:11:14,460
+现在是54点…刷新一下，目前是52点，这份合约
+so 54 let me just refresh just to see where it's at right now it's 52 and this contract expires at
+
+214
+00:11:14,460 --> 00:11:16,758
+今日到期，还有时间操作
+the end of the day so it still has time
+
+215
+00:11:16,758 --> 00:11:19,056
+市场还有大约2小时
+to make the next the market closes in about two
+
+216
+00:11:19,056 --> 00:11:21,124
+10分钟收盘，所以还有机会
+two hours and 10 minutes or so so it has
+
+217
+00:11:21,124 --> 00:11:23,192
+如果特斯拉在这附近盘整，还能再赚50点
+chance to make another 50 if tesla kind of hovers
+
+218
+00:11:23,192 --> 00:11:28,708
+也就是再进账800美元，这收益简直太棒了，什么都不用做
+around here which would be another 800 right now which which would be an amazing return having done nothing if we take a look at
+
+219
+00:11:29,400 --> 00:11:33,280
+看看这个方案，这是另一种选择，平值蝶式策略，原理一样
+this right here this is an alternative this is just an at the money iron butterfly same thing
+
+220
+00:11:33,280 --> 00:11:35,316
+但这次风险更低，只是
+but this time going a little bit safer just using
+
+221
+00:11:35,316 --> 00:11:37,352
+用下周的合约，收益也不错
+the next week we can see a decent return so
+
+222
+00:11:37,352 --> 00:11:39,388
+如果最大亏损或仓位规模
+if if the max loss or the position size because
+
+223
+00:11:39,388 --> 00:11:46,517
+这里的仓位规模就是最大亏损，和买裸看涨期权一样
+this is just the position size max loss is the position size same thing like when you buy a naked call your max loss is the cost of the call if you were to hold
+
+224
+00:11:46,520 --> 00:11:48,666
+持有到期且判断错误时，最大亏损就是成本
+it all the way till expiration and you were wrong
+
+225
+00:11:48,666 --> 00:11:50,812
+同样，如果特斯拉突破这些
+same thing in this case if tesla was beyond these
+
+226
+00:11:50,812 --> 00:11:52,958
+盈亏平衡点，那就是你的最大亏损
+break-evens that would be your your max loss would it
+
+227
+00:11:52,958 --> 00:11:55,104
+假设你判断完全错误，比如特斯拉
+be if tesla was if you were way wrong let's
+
+228
+00:11:55,104 --> 00:12:03,906
+要是一直跌的话，可能得跌到650左右，才会和你预期的价格相差100点
+just say tesla was all the way down you know it'd have to be all the way down and maybe like 650 or something that you'd have to be 100 points off where you thought it was going to be so you have
+
+229
+00:12:04,340 --> 00:12:06,603
+所以最大亏损的容忍空间很大
+a very wide range in this case for the max
+
+230
+00:12:06,603 --> 00:12:08,866
+但假设你设定止损
+loss but let's just say you were to say you
+
+231
+00:12:08,866 --> 00:12:13,166
+这样算的话，你冒险300块赚900块，风险收益比就是1:3
+would cut it you're risking 300 bucks to make 900 then it's a three to one risk reward ratio and you're
+
+232
+00:12:13,620 --> 00:12:16,898
+然后让时间衰减逐步侵蚀合约价值
+essentially just letting time decay chip away at the contract
+
+233
+00:12:16,898 --> 00:12:20,176
+但更重要的是，你还能基于
+but more importantly you're using your your judgment based on
+
+234
+00:12:20,176 --> 00:12:24,438
+其他因素做判断，比如大家都熟悉的最大痛点
+factors that are not calculated by yourself like everyone's aware of max pain
+
+235
+00:12:24,440 --> 00:12:27,111
+或者说，所有人，我指的是市场
+everyone's aware or by everyone i mean the the market
+
+236
+00:12:27,111 --> 00:12:29,782
+做市商，任何关注期权链的人
+makers anyone that's in tune with an options chain is
+
+237
+00:12:29,782 --> 00:12:34,858
+都会留意这些关键价位，不用自己主观画线
+going to be aware of these kind of key levels so it's not left up to discretion to draw
+
+238
+00:12:34,860 --> 00:12:37,410
+比如‘这里可能有趋势线’或者
+okay i think there's a trend line here or i
+
+239
+00:12:37,410 --> 00:12:39,960
+‘这是上轨’或者‘突破趋势了’
+think this is a channel upper channel or i think
+
+240
+00:12:39,960 --> 00:12:46,080
+不，这是特斯拉今日的绝对GEX，所以
+it broke trend or i think this is that no this is absolute gex for today for tesla at this time so that means
+
+241
+00:12:46,080 --> 00:12:49,421
+所有人都在关注这个水平 任何做市商
+everyone is aware of this any type of market maker as price comes down to
+
+242
+00:12:49,421 --> 00:12:52,762
+当价格跌至这个位置 他们的算法会激进对冲gamma
+this level their machines their algorithms are going to be gamma hedging aggressively which means
+
+243
+00:12:52,762 --> 00:12:56,103
+这会导致价格在这些水平附近剧烈震荡
+it's going to be very choppy around this levels as they're buying and selling adjusting
+
+244
+00:12:56,103 --> 00:13:02,339
+因为他们要根据gamma变化调整delta对冲 所有这些因素都相互关联
+their book based on how much they have to delta hedge based on how much the gamma is moving so all this is comprised and they all go
+
+245
+00:13:02,340 --> 00:13:04,678
+但对于交易者来说
+hand in hand with each other but for a trader
+
+246
+00:13:04,678 --> 00:13:07,016
+你可以选择等待
+you can just say like okay well i'll just let
+
+247
+00:13:07,016 --> 00:13:11,459
+让时间衰减消耗这些合约的价值 同时特斯拉自己寻找方向
+some time decay eat away at these contracts while tesla figures itself out and i don't necessarily need to
+
+248
+00:13:11,460 --> 00:13:13,547
+不需要整周都频繁操作
+do much for the whole week here this is one
+
+249
+00:13:13,547 --> 00:13:15,634
+这是其中一个交易案例 我们来看一下
+particular trade if we take a look at the uh
+
+250
+00:13:15,634 --> 00:13:17,721
+蝶式价差策略 假设我们在这周运行
+the iron butterfly let's just say we were to run
+
+251
+00:13:17,721 --> 00:13:24,818
+比如11号当天上午 这是当时能收取的权利金
+it for this week right here at the same time which would have been the 11th this was in the morning at 11th this is how much premium would have been collected so about
+
+252
+00:13:24,820 --> 00:13:27,281
+大约32美元的信用金
+32 in credit would have been received this is now
+
+253
+00:13:27,281 --> 00:13:29,742
+现在这个合约价值500美元
+going for 500 bucks so in other words this contract
+
+254
+00:13:29,742 --> 00:13:34,665
+也就是说 这笔交易目前盈利约2600美元
+this means you'd be up about 2 600 right now on this trade having done nothing your pnl never really
+
+255
+00:13:35,760 --> 00:13:38,816
+而且你的盈亏从来没出现过亏损
+went red here just was a nice steady uh uphill this right
+
+256
+00:13:38,816 --> 00:13:41,872
+一直稳步上升
+here doesn't really matter this is just whenever the market first opens
+
+257
+00:13:41,872 --> 00:13:44,928
+开盘时的这个点位不重要
+generally these spreads have a weird um print just because it's still
+
+258
+00:13:44,928 --> 00:13:53,843
+因为开盘时价差通常会有奇怪的成交 只是系统重新校准
+recalibrating so that's not necessarily an accurate read but for the most part even if it was you're talking about being down maybe 100 bucks or so with the chance to make about two thousand dollars
+
+259
+00:13:54,100 --> 00:13:57,070
+所以这不一定准确 但大部分情况下
+and again you're not guessing you're not estimating you're using you're using
+
+260
+00:13:57,070 --> 00:14:00,040
+你不是在猜测 也不是在估算
+an advanced awareness or knowledge of the stock markets to to come
+
+261
+00:14:00,040 --> 00:14:03,010
+而是基于对股票市场的深入理解来制定策略
+up with this idea the max loss at this point would not
+
+262
+00:14:03,010 --> 00:14:05,485
+此时最大损失不会这么高
+been this much it would be uh 4 000 and change minus
+
+263
+00:14:05,485 --> 00:14:17,118
+可能是4000多美元 减去这个价差已经赚的3000美元 所以这个价差当时可能价值900美元左右 你风险900到1000美元
+the 3 000 this kind of this uh spread has already made so this probably would have been going for about 900 bucks or so so you're risking 900 bucks or a thousand dollars to potentially make uh four grand or 3 800 or however the max profit would have been at that
+
+264
+00:14:19,100 --> 00:14:21,141
+潜在收益可能是4000或3800美元 或者是当时的最大盈利
+time on top of that let's take a look at
+
+265
+00:14:21,141 --> 00:14:23,182
+再来看另一个例子 来看看期权价差
+another example if we come to the option spreads here
+
+266
+00:14:23,182 --> 00:14:25,223
+我们来看一下 我记得是
+and let's um take a look at i believe it
+
+267
+00:14:25,223 --> 00:14:35,838
+几天后是微软 我之前提到过 看这里 我当时在微软上用小仓位做两天到期的日历价差 当时只想逐步建仓
+was microsoft a couple days later i mentioned so this right here so here we go so i was swinging a small size on microsoft a two day till expiration calendar just two for me at the time at this point i was just going to look to build into the position
+
+268
+00:14:35,840 --> 00:14:38,788
+我们来看一下微软的图表
+so let's take a look at microsoft on our chart and again
+
+269
+00:14:38,788 --> 00:14:46,159
+我之前刚做过微软的视频 但现在换个角度看 这是当周的情况 第二天微软出现了大跌
+just did a video on microsoft but now let's take a look at different perspective of this here this is this week so the day a day later microsoft does
+
+270
+00:14:46,160 --> 00:14:48,405
+当股票出现大幅波动时
+this huge drop whenever a stock makes a big move it's it's
+
+271
+00:14:48,405 --> 00:14:50,650
+肯定会吸引很多交易者的注意力
+going to catch a lot of traders attention however the way this
+
+272
+00:14:50,650 --> 00:14:56,638
+但股价下跌后形成了这个看跌旗形，引起了我的注意，因为它进入了Quant Trading App的买入区，系统就发出了通知
+dropped and it started forming this beer flag but caught my attention it was in the quant trading at buy zone so there was a notification i was immediately that went out
+
+273
+00:14:56,640 --> 00:14:59,027
+比如就在这里，微软刚刚触及支撑位
+as soon as so like say for example right here just hit
+
+274
+00:14:59,027 --> 00:15:01,414
+一旦通知发出，显示微软
+microsoft just hit support so once that notification went out that microsoft
+
+275
+00:15:01,414 --> 00:15:08,378
+进入买入区，我就注意到了，然后开始研究，看看能不能找到一些共振信号
+hit the buy zone it caught my attention i was just took take a look at it and then i started doing my research start trying to see if i could find confluences is this
+
+276
+00:15:08,380 --> 00:15:11,376
+判断这是不是一个可能反弹回到这里的交易
+a trade that i think will potentially bounce back up to here
+
+277
+00:15:11,376 --> 00:15:14,372
+或者会不会继续下跌？显然从技术分析的角度来看
+do i think it's going to continue selling obviously the pattern was
+
+278
+00:15:14,372 --> 00:15:17,368
+这个形态非常清晰
+very clear to see from a technical analysis perspective this was a
+
+279
+00:15:17,368 --> 00:15:27,857
+这是一个标准的看跌旗形，下行压力很大，卖出的方式也非常难看
+clear beer flag and a lot of downward pressure and the way it was selling off was was likely to sell off was very ugly however at this point i'm looking at this and i and i'm i'm taking a look at
+
+280
+00:15:27,860 --> 00:15:32,140
+但就在这时，我仔细观察，决定进一步调查
+it and i wanted to take a look i'm taking a look at it and decided to investigate a little bit further
+
+281
+00:15:32,140 --> 00:15:34,688
+这时候我想到去看看期权链
+and this is where i think of looking at the options chain
+
+282
+00:15:34,688 --> 00:15:37,236
+这就像用X光透视股市
+is kind of looking at the stock market with an x-ray vision
+
+283
+00:15:37,236 --> 00:15:39,784
+如果你只看价格走势，那只是表面
+if you're looking at price action that's just the top layer it's
+
+284
+00:15:39,784 --> 00:15:49,978
+只是看到了皮毛，但如果能打开X光视野，看看幕后发生了什么，你就能更好地分析
+just looking at the skin but if you can turn on an x-ray vision and see what's really going on under the hood you can kind of see or you get a little bit of a feel for for analyzing this and i've been doing this for a
+
+285
+00:15:49,980 --> 00:15:52,317
+我之前做过一些特斯拉的视频
+while if you checked out some of my previous tesla videos on
+
+286
+00:15:52,317 --> 00:15:54,654
+讲gamma挤压之类的，我解释过如何
+gamma squeezes and things like that i've kind of explained how you
+
+287
+00:15:54,654 --> 00:15:56,991
+通过期权链来读取市场情绪
+can read the options chain to see where the sentiment is as
+
+288
+00:15:56,991 --> 00:15:59,328
+以及何时可能出现gamma挤压
+well as when there's going to be a potential gamma squeeze that's
+
+289
+00:15:59,328 --> 00:16:04,977
+那是我最喜欢的视频之一，强烈推荐大家去看看
+one of my favorite videos in which i've done in this channel so i highly recommend you check that one out but aside from gamma squeezes if you can
+
+290
+00:16:04,980 --> 00:16:07,751
+但除了gamma挤压，你还可以
+assess which side of the trade everyone is on or as well
+
+291
+00:16:07,751 --> 00:16:09,598
+评估交易者都站在哪一边
+as get a feel for where the market
+
+292
+00:16:09,598 --> 00:16:14,678
+或者感受做市商希望价格在周末收于哪个位置，这其中蕴含巨大优势
+makers want price to go to be pinned towards the end of the week there's tremendous edge in that so this right
+
+293
+00:16:14,680 --> 00:16:19,840
+现在是13号，也就是第二天，我确认一下，13号是对的
+here this is the 13th now so this is the next day let me just confirm that so the 13th would be right
+
+294
+00:16:19,840 --> 00:16:21,775
+哦，对，结果这里它没什么动静
+oh so yeah so then it decided not
+
+295
+00:16:21,775 --> 00:16:24,919
+但到了13号，微软跌到了
+to do anything here but then on the 13th microsoft comes down to
+
+296
+00:16:24,920 --> 00:16:27,390
+这就是所谓的Quant Trading App二西格马支撑位
+this is referred to as the quantum trading app two sigma level
+
+297
+00:16:27,390 --> 00:16:29,860
+如果你看过之前的视频，这基本是
+so if you've seen any of the previous videos this is essentially
+
+298
+00:16:29,860 --> 00:16:32,330
+一个非常强的支撑位，价格有80%的概率
+a very strong support level and prices eight depending on the ticker
+
+299
+00:16:32,330 --> 00:16:40,977
+会在周五收于这个位置之上，像SPY这样的标的，概率甚至高达90%
+eight out of ten times it's going to close above this level on a friday on certain tickers like the spy nine out of ten times it's going to close above it on a friday so it has a very high probability
+
+300
+00:16:40,980 --> 00:16:44,275
+所以到期日收于这个位置之上的概率非常高
+of closing at expiration above this level so whenever that level hits
+
+301
+00:16:44,275 --> 00:16:46,471
+我们会收到通知：大家看，微软
+we get a notification hey you know microsoft
+
+302
+00:16:46,471 --> 00:16:51,139
+触及2标准差支撑位，可以关注一下
+is at the two sigma support level maybe take a look at it so as this happened
+
+303
+00:16:51,140 --> 00:16:52,687
+我就去看看，我
+take a look take a look and i'm
+
+304
+00:16:52,687 --> 00:16:54,234
+发现有一些买盘压力
+seeing okay a little bit of buying pressure
+
+305
+00:16:54,234 --> 00:16:59,264
+开始转强，于是我决定目标位设在255
+coming in and it's starting to look good so i decide that 255 would be the level in which i would like to swing this up to
+
+306
+00:16:59,460 --> 00:17:01,846
+但我不想直接买裸看涨期权
+however i didn't want to trade a naked call as i had
+
+307
+00:17:01,846 --> 00:17:04,232
+如果你看过我之前的视频，我已经用裸看涨期权
+if you've seen the previous video i already swung naked calls on
+
+308
+00:17:04,232 --> 00:17:10,597
+交易过微软了，现在离财报越来越近，期权合约开始溢价
+microsoft and at this point it's getting closer and closer to earnings and i didn't want to go far out because the contracts were already starting to get a little bit inflated
+
+309
+00:17:10,599 --> 00:17:13,394
+我不想持仓太久
+and i didn't want to be in the trade for too long
+
+310
+00:17:13,394 --> 00:17:15,956
+所以在这里，我目标位设为255，大家看
+so just saying right here targeting 255 as you guys can see
+
+311
+00:17:15,956 --> 00:17:18,751
+当时图表是这样的，交易的原因是
+this is what the chart was looking like the reasons for the
+
+312
+00:17:18,751 --> 00:17:24,341
+目标255，因为微软的缺口，255是周五的绝对gamma水平
+trade targeting 255 because it is uh because of the gaps on microsoft so 255 was the absolute gamma exposure for friday so two days till
+
+313
+00:17:25,040 --> 00:17:27,809
+距离到期还有两天
+expiration right here and then this is taking a look at the
+
+314
+00:17:27,809 --> 00:17:30,578
+这是同一张图，流动性密集区
+same chart a lot of liquidity level wherever there's going to be
+
+315
+00:17:30,578 --> 00:17:33,347
+流动性充足的价位，价格会自然向该价位靠拢
+a lot of liquidity price will naturally gravitate toward that level if
+
+316
+00:17:33,347 --> 00:17:42,117
+如果没有催化剂，没有即将到来的消息，没有预期事件
+there's no catalyst if there's no impending news if there's nothing expected if it's just going to be left alone and do whatever it wants to do it will just naturally drift towards this level most of the
+
+317
+00:17:42,120 --> 00:17:48,020
+大部分时间价格都会自然漂移到这个区域
+time right so this is the spot price targeting 255 just about a four point you know bounce top of that
+
+318
+00:17:48,020 --> 00:17:51,151
+最大痛点在上方，根据最大痛点理论
+max pain is above it so max pain theory if i believe
+
+319
+00:17:51,151 --> 00:17:53,238
+如果我预期微软本周会上涨
+microsoft is going to rally this week it
+
+320
+00:17:53,238 --> 00:17:58,717
+它必须先突破255才能到达最大痛点，所以目标255是个保守目标
+has to cross at least 255 before it gets to max pain so targeting 255 is very conservative target however just being a
+
+321
+00:17:59,240 --> 00:18:04,700
+但作为聪明的交易者，你不能逆势盲目交易
+smart trader you can't just necessarily trade counter trend blindly because the trend is very
+
+322
+00:18:04,700 --> 00:18:06,604
+因为微软过去一周趋势向下
+down right now for at least for the
+
+323
+00:18:06,604 --> 00:18:08,508
+而且整体市场
+past week in microsoft on top of that
+
+324
+00:18:08,508 --> 00:18:10,412
+处于熊市
+the overall market is in a beer trend
+
+325
+00:18:10,412 --> 00:18:14,458
+大部分品种都在下跌
+is is in a beer market which means everything is down trending right now for the most
+
+326
+00:18:14,460 --> 00:18:16,336
+所以你得更谨慎
+part so you have to be a little
+
+327
+00:18:16,336 --> 00:18:19,619
+不能在这类交易上承担太多风险
+bit more safe and you can't put much risk on these types of trades
+
+328
+00:18:19,620 --> 00:18:25,460
+所以我不想太激进，比如目标260，我就选255
+so that's why i didn't want to be too aggressive maybe targeting 260 so i target 255 the next day however
+
+329
+00:18:25,460 --> 00:18:27,953
+但第二天微软因CPI数据公布而低开
+microsoft gaps down as the cpi numbers came
+
+330
+00:18:27,953 --> 00:18:30,446
+PPI数据也是一样
+out this week and the ppi numbers also
+
+331
+00:18:30,446 --> 00:18:32,939
+周三周四的盘前都发布了
+came out on uh wednesday thursday pre-market so
+
+332
+00:18:32,939 --> 00:18:36,679
+这些催化因素打乱了很多
+all these catalysts are kind of breaking up a lot of really
+
+333
+00:18:36,680 --> 00:18:40,800
+好的交易机会 市场开始下跌 价格跌破两个标准差 我通常会
+good trades right here so the market sells off and it getting below two sigma generally i'm going to
+
+334
+00:18:40,800 --> 00:18:42,492
+在下方设置止损 但不幸的是
+take the stop below here so unfortunately for
+
+335
+00:18:42,492 --> 00:18:44,184
+我在这笔交易上确实被止损了
+me i did take a stop loss on
+
+336
+00:18:44,184 --> 00:18:49,260
+有点沮丧 因为大家现在看行情其实很清晰 如果我
+this trade so it was a little bit upsetting because you guys can see it actually worked out pretty clearly now if i was
+
+337
+00:18:49,260 --> 00:18:50,986
+这周操作得更好一点
+trading a little bit better this week i
+
+338
+00:18:50,986 --> 00:18:52,712
+本可以在跌破两个标准差后加仓 但
+actually look to add below two sigma but
+
+339
+00:18:52,712 --> 00:18:57,459
+最近催化因素太多 这几周确实有点精疲力尽 通常第一周
+again there's so much catalyst it's just been a little bit exhausting for the past few weeks i usually the first week
+
+340
+00:18:57,460 --> 00:18:59,467
+也就是所有报告
+that first that week when all the reports
+
+341
+00:18:59,467 --> 00:19:01,474
+同时发布的那一周 或者
+come out at the same time or that
+
+342
+00:19:01,474 --> 00:19:08,249
+财报周总是有点吵 作为交易者 我会尽量忽略这些噪音
+the week of f1c's it always gets a little bit uh noisy and as a trader such as myself i try to disregard the noise and
+
+343
+00:19:08,000 --> 00:19:11,120
+但最近我有点烦 因为我太关注
+lately these days i've been a little bit upset because i've been paying a little too much attention
+
+344
+00:19:11,120 --> 00:19:12,524
+宏观消息和各种噪音
+to all the macro news and all the
+
+345
+00:19:12,524 --> 00:19:13,928
+但实际上
+noise and at the end of the day
+
+346
+00:19:13,928 --> 00:19:19,019
+对于我未来几天要做的交易来说 这些影响并不大 可能只是
+for a trade that i'm looking to take over the next few days none of that is going to matter as much like yeah it's going to affect a
+
+347
+00:19:19,020 --> 00:19:22,960
+导致小幅低开 但只要我好好控制风险 这是个很好的
+little bit of a gap down but if i'm managing my risk accordingly this is a great opportunity to start
+
+348
+00:19:22,960 --> 00:19:27,300
+做多机会 至少等价格重新站上成交量加权平均价
+getting long here at least wait for the next break over vwap once it got back over vwap or back over
+
+349
+00:19:27,300 --> 00:19:29,020
+或者回到两个标准差上方 这里有理由重新入场
+two sigma there's reasons here to re-enter this
+
+350
+00:19:29,020 --> 00:19:30,740
+因为现在你有了新的止损位
+trade because now you have a new stop
+
+351
+00:19:30,740 --> 00:19:35,040
+如果价格再次跌破那里 这波行情可能就废了 但你要
+loss and obviously if it goes back down below there then the play will probably be dead but you position
+
+352
+00:19:35,040 --> 00:19:39,440
+合理控制仓位 因为大家也看到了 它最终拉出一波漂亮的反弹 一直涨到
+size accordingly because you guys can see it ended up putting an amazing rally all the way back up to
+
+353
+00:19:39,440 --> 00:19:44,320
+255 如果我们再回到当天 我确实这么做了 这是12号的情况
+255 if we also just jump back to this day i did so this was on the uh the 12th right here and to
+
+354
+00:19:44,320 --> 00:19:46,178
+来看看这个价差 这是
+take a look at this spread so this
+
+355
+00:19:46,178 --> 00:19:48,036
+一个蝶式差价组合 我的思考过程是
+is a butterfly spread and the thought process
+
+356
+00:19:48,036 --> 00:19:53,379
+这是12号保存的 也就是前一天 给大家展示价格移动时我的思路
+this was saved on the 12th so the day before again just showing you guys the thinking as price is moving what i'm
+
+357
+00:19:53,380 --> 00:19:57,020
+今天我一般会怎么想 我只是在权衡风险收益 看看这笔交易
+generally thinking throughout today i'm just trying to weigh the risk reward trying to see if it's
+
+358
+00:19:57,020 --> 00:20:00,960
+值不值得做 因为我可能同时持有五六个仓位 如果我做摆动交易
+worth the trade because i could be in about five six trades at any given moment and if i'm swinging
+
+359
+00:20:00,960 --> 00:20:02,589
+这么多不同的交易 我不希望我的
+all these different trades i don't want my
+
+360
+00:20:02,589 --> 00:20:04,218
+持仓开始
+uh my open positions to start getting a
+
+361
+00:20:04,218 --> 00:20:08,699
+持仓太多会有点混乱，所以如果我想开新仓
+little bit too cluttered so if i'm going to open up something like this then generally i want to take some profit
+
+362
+00:20:08,700 --> 00:20:10,204
+通常会先在其他交易中获利了结
+on another trade and then i have to
+
+363
+00:20:10,204 --> 00:20:11,708
+然后再判断是否值得开这个新仓
+see if it's worth it to open up
+
+364
+00:20:11,708 --> 00:20:16,598
+但我没真正入场，这只是测试，是一个3天到期的摆动交易
+this one in xyz but i didn't take this trade also so that's why it's just a test it's a three-day till expiration swing right here
+
+365
+00:20:16,600 --> 00:20:19,096
+看看它会如何演变，因为现在我们看的是周五
+and how it would have played out because now we're
+
+366
+00:20:19,096 --> 00:20:21,093
+微软当时的思路是
+looking at friday the thought processes microsoft being
+
+367
+00:20:21,093 --> 00:20:24,838
+最大痛点在这一带，绝对gamma水平也在这附近
+right here max pain was around here and we had the absolute gamma around here
+
+368
+00:20:24,840 --> 00:20:30,660
+所以当时认为价格会在这个区间内震荡
+so just thinking it's just going to stay within this region and this is right here at this moment
+
+369
+00:20:30,660 --> 00:20:32,956
+但你可以看到它一路下跌
+so you see it goes all the way down here
+
+370
+00:20:32,956 --> 00:20:34,793
+中间经历了一些疯狂波动
+it does all this craziness but at the
+
+371
+00:20:34,793 --> 00:20:37,089
+但到周五收盘时，又回到了原点
+end of the day by friday it comes right back
+
+372
+00:20:37,089 --> 00:20:43,978
+从这里到这里，这段时间几乎没动，所以仓位大小要控制好
+to where it's supposed to be again from here to here doing nothing during this time frame a position sizing accordingly so if you're trading spreads and you're just swing
+
+373
+00:20:43,980 --> 00:20:46,210
+如果你在做价差交易或摆动交易
+trading right here it's a great opportunity to
+
+374
+00:20:46,210 --> 00:20:48,440
+这是个很好的机会
+run something like this if you're a momentum-based
+
+375
+00:20:48,440 --> 00:20:53,179
+不管你是动能交易者、逆向交易者还是回归均值交易者
+trader or a contrarian or reversion to the mean trader yeah you don't necessarily need to swing
+
+376
+00:20:53,180 --> 00:20:55,448
+你不一定要做非方向性价差
+you know a non-directional spread thinking it's going to come back to
+
+377
+00:20:55,448 --> 00:20:57,716
+认为价格会回到这个价位
+this price you can just get naked calls at these levels because
+
+378
+00:20:57,716 --> 00:21:04,520
+思路很简单：如果它本周目标在上方，现在却跌到下方，那我就可以做多回目标位
+the thought process is hey if this is supposed to be up here by the end of the week and it's all the way down here maybe i'll just take the trade back up to that
+
+379
+00:21:04,520 --> 00:21:08,460
+你不一定要交易，可以用同样的信息
+direction you don't have to be you know trading you can use the same information which i'm sharing
+
+380
+00:21:08,460 --> 00:21:11,732
+如果你在看这段视频，并且想扩展gamma敞口的知识
+right now if you're watching this video in the future and you're just looking
+
+381
+00:21:11,732 --> 00:21:14,536
+或者其他更高级的工具
+to expand your trading knowledge on gamma exposure some of the other
+
+382
+00:21:14,536 --> 00:21:16,873
+因为你已经过了
+more advanced tools because you're you're you're past the point
+
+383
+00:21:16,873 --> 00:21:24,585
+只画支撑阻力线和趋势线的阶段，现在想更深入学习
+in your career where you're just drawing out you know support resistance and trend lines and things like that and you're looking to get a little bit more in depth i spend maybe 10
+
+384
+00:21:24,820 --> 00:21:27,181
+画支撑阻力线现在只花我每周10分钟
+minutes a week at this point drawing support resistance levels
+
+385
+00:21:27,181 --> 00:21:29,069
+这不是我交易的核心部分
+it's not part of the core part of
+
+386
+00:21:29,069 --> 00:21:33,319
+交易在成长，思路和逻辑更重要
+my trading it's trying to grow and it's the thought process and the thinking which is why i'm
+
+387
+00:21:33,320 --> 00:21:36,204
+所以我现在分享更多这类内容
+sharing this type of stuff more on the content right now because
+
+388
+00:21:36,204 --> 00:21:38,607
+因为大家很容易就能学会画支撑阻力位
+you guys can find out where to draw support resistance
+
+389
+00:21:38,607 --> 00:21:41,010
+找到这些位置相对简单
+levels a little bit easy you guys can find you
+
+390
+00:21:41,010 --> 00:21:46,778
+很容易就能学会画趋势线，因为这些都是最基础的入门内容
+know uh very easy ways to draw trend lines there's a ton of that because it plays into the very easy elementary basic starting
+
+391
+00:21:46,780 --> 00:21:49,428
+这是交易的基础模块，很容易让大家
+blocks of trading and it's very easy to get people to be
+
+392
+00:21:49,428 --> 00:21:52,076
+觉得‘哦，只要在这里画线，在那里画线’
+like oh if you just draw this here and you draw this
+
+393
+00:21:52,076 --> 00:21:59,138
+这样做，所有人都在画，但仅靠技术分析想持续盈利并以交易为生，非常困难
+here and you do this and everyone's doing that but it's very difficult for people to be consistently profitable and make a career out of trading just solely relying on their technical
+
+394
+00:21:59,140 --> 00:22:02,224
+因为在某些节点上，判断会变得非常主观
+analysis skills because it's very discretionary at certain points and
+
+395
+00:22:02,224 --> 00:22:04,691
+很难对自己的支撑阻力位有足够信心
+it's hard to have conviction or really believe
+
+396
+00:22:04,691 --> 00:22:09,318
+尤其是在交易低迷、信心不足的时候
+in your own levels when especially if you're experiencing a little bit of a slump
+
+397
+00:22:09,320 --> 00:22:12,609
+作为交易者，当你信心下降时，如果你有
+as a trader and you're losing confidence now if you have something
+
+398
+00:22:12,609 --> 00:22:14,801
+可量化的工具，或者有
+that is quantifiable or you have something or
+
+399
+00:22:14,801 --> 00:22:18,638
+非主观生成的数据，比如来自期权链的数据
+you have something that's not generated from yourself this is generated from the options
+
+400
+00:22:18,640 --> 00:22:20,991
+各位现在可以看到，正进入关键时段
+chain you guys can see now it's coming into power
+
+401
+00:22:20,991 --> 00:22:22,871
+今天是周五，市场将在两小时后收盘
+hour here on friday so the market closes
+
+402
+00:22:22,871 --> 00:22:28,043
+现在看微软，价格正回落至255美元这一水平
+in two hours now and we can see look at where microsoft is coming right back down to that 255 level that's not
+
+403
+00:22:28,280 --> 00:22:30,549
+这不是水晶球，也不是在预测
+it's not a crystal ball it's not making
+
+404
+00:22:30,549 --> 00:22:32,818
+这不是预测，这是事实
+predictions about something no this is this is
+
+405
+00:22:32,818 --> 00:22:35,087
+这是本周到期的
+a matter of a fact this is the
+
+406
+00:22:35,087 --> 00:22:37,356
+微软的绝对gamma行权价
+absolute gamma strike for this week's expiration for
+
+407
+00:22:37,356 --> 00:22:45,016
+不管收盘价是否在这里，无人知晓，但我们知道这一价位流动性极高
+microsoft whether it closes there or not it's no one will know all we do know is there's a very high liquidity at this level on top
+
+408
+00:22:45,020 --> 00:22:46,394
+此外，我们来看这里的
+of that if we just come here to
+
+409
+00:22:46,394 --> 00:22:47,768
+黄金公告，我找一下
+gold announcements let me just see if i
+
+410
+00:22:47,768 --> 00:22:49,142
+这有点早
+could find so this is a little bit
+
+411
+00:22:49,142 --> 00:22:50,516
+这是本周早些时候的数据
+early in the week so just um pointing
+
+412
+00:22:50,516 --> 00:22:56,699
+这是12号的数据，当时大量看涨期权成交量涌入微软
+out this right here so this is showing this is early in the week so this is on the 12th we can see right now a lot of call volume at this point was going into
+
+413
+00:22:56,700 --> 00:22:58,284
+尽管当时股价在下跌
+microsoft early in the week even as it
+
+414
+00:22:58,284 --> 00:22:59,868
+但看涨期权成交量仍然较多
+was selling off there was a little bit
+
+415
+00:22:59,868 --> 00:23:01,452
+我们可以看到
+more a call volume we can see so
+
+416
+00:23:01,452 --> 00:23:03,036
+滚动查看未平仓合约
+as i just scroll this is the open
+
+417
+00:23:03,036 --> 00:23:09,176
+看涨方向的未平仓合约更多，但过去一周涨幅较大
+interest there's a lot more open interest to the upside but it went pretty high over the past week so it made sense that the market makers that it made sense
+
+418
+00:23:09,180 --> 00:23:11,055
+所以做市商需求在这里耗尽也合理
+that uh demand dried dried up up here
+
+419
+00:23:11,055 --> 00:23:12,930
+之后微软就开始回调
+and then microsoft ended up pulling back but
+
+420
+00:23:12,930 --> 00:23:14,805
+各位可以看到，这就是绝对gamma水平
+you guys can see this was absolute gamma
+
+421
+00:23:14,805 --> 00:23:16,680
+即使微软在12日时还在该水平上方
+even when microsoft was above this level on
+
+422
+00:23:16,680 --> 00:23:23,478
+所以回调很合理，这些看涨期权损失惨重，大家都在疯狂买入看涨期权
+the 12th so it made sense that it pulled back all these calls lost a ton of their value we can see everyone was buying a ton of calls
+
+423
+00:23:23,480 --> 00:23:25,437
+这些情况都能很直观地在图表上看到
+it's very easily easy to visualize this and
+
+424
+00:23:25,437 --> 00:23:27,394
+我目前正在开发模型
+then i'm currently working on models that will
+
+425
+00:23:27,394 --> 00:23:29,351
+来汇总这些数据
+aggregate a lot of this data and kind
+
+426
+00:23:29,351 --> 00:23:35,958
+构建某种模型，基于历史数据预测大行情的可能性，所以这些信息
+of build some sort of model that would anticipate whenever large moves are likely to happen based on what's been happening before so all this information is
+
+427
+00:23:35,960 --> 00:23:37,494
+都由‘Quant Trading App’在追踪
+data is being tracked by quant trading app
+
+428
+00:23:37,494 --> 00:23:39,028
+我在开发这些模型的过程中
+as i'm working on these uh these models
+
+429
+00:23:39,028 --> 00:23:40,562
+但大部分情况下我们能
+here but for the most part we can
+
+430
+00:23:40,562 --> 00:23:42,096
+通过滚动图表直观地看到这些变化
+see it visually happening as i just scroll
+
+431
+00:23:42,096 --> 00:23:47,276
+你能看到未平仓合约的转变，看到资金重新流入微软，看到支撑
+you can see when there's a shift in open interest you can see when all the volume started coming back into microsoft you can see the support
+
+432
+00:23:47,280 --> 00:23:49,282
+正在这里形成，当大家开始大量买入
+building right here as everyone started loading into
+
+433
+00:23:49,282 --> 00:23:51,284
+这些看跌期权时，价格就在
+these puts and then it's just bouncing at
+
+434
+00:23:51,284 --> 00:23:53,035
+250美元处反弹，这是2个标准差下跌
+250 this was it at two sigma down
+
+435
+00:23:53,035 --> 00:23:54,786
+在248美元这里，大家都在买入看跌期权
+here at 248 you can see everyone's loading
+
+436
+00:23:54,786 --> 00:24:04,797
+然后这些看跌期权会以零价值到期，因为价格回弹到这个水平，之前买看涨期权的人损失惨重，现在价格就在绝对gamma水平附近波动
+into these puts and then these puts will expire worthless as they just bounce back into this level where everybody that was in calls lost a ton of their money and now we're hovering right around this absolute uh gamma
+
+437
+00:24:05,300 --> 00:24:07,194
+就在这个行权价附近，继续往下
+strike right there so as we continue to
+
+438
+00:24:07,194 --> 00:24:09,088
+滚动，我们能看到
+scroll uh down we can see uh the
+
+439
+00:24:09,088 --> 00:24:10,982
+当前的gamma敞口，这些期权现在到期
+gamma exposure right now again these expire now
+
+440
+00:24:10,982 --> 00:24:18,797
+所以临近收盘时，行情会高度收敛，因为gamma敞口都集中在现货价格附近，但可以看到它开始
+so things start getting really really contracted towards the end of the day because the gamma exposure is all close to wherever the spot price is but we can see it's starting to
+
+441
+00:24:18,800 --> 00:24:21,136
+被钉在最大痛点之间，也就是
+get pinned right between max pain so there's
+
+442
+00:24:21,136 --> 00:24:23,180
+257.50美元和绝对gamma水平之间
+that 257.50 level and the absolute gamma level
+
+443
+00:24:23,180 --> 00:24:28,730
+几天前这个区间是257、250和265美元，所以预计会在这个区间附近
+and on a couple days ago that was the 257 level 250 and 265 so thinking it would be right around here
+
+444
+00:24:29,900 --> 00:24:31,777
+这不是水晶球，也不是魔法
+it's not a crystal ball it's not magic
+
+445
+00:24:31,777 --> 00:24:33,654
+我不是世界上最牛的
+it's not it's not i'm not the greatest
+
+446
+00:24:33,654 --> 00:24:35,531
+预测者或交易者，只是
+predictor or trader in the world it's just
+
+447
+00:24:35,531 --> 00:24:37,408
+在看数据，在看
+looking at the data and looking at the
+
+448
+00:24:37,408 --> 00:24:43,276
+提供给我们的信息，然后找到不同的交易入场方式 如果你不知道如何
+information that's being provided to us and then just coming up with the different ways to take trades now if you don't know how to
+
+449
+00:24:43,280 --> 00:24:44,922
+交易价差策略，那你肯定错失了
+trade spreads obviously you're missing out
+
+450
+00:24:44,922 --> 00:24:47,111
+一个大好机会
+on a huge opportunity to to capitalize on
+
+451
+00:24:47,111 --> 00:24:48,753
+用小风险就能获取巨额收益
+huge gains using small risk if
+
+452
+00:24:48,753 --> 00:24:52,585
+如果你懂行情，特斯拉的价差策略
+you know what you're doing if tesla's too large putting 900 on the tesla spread
+
+453
+00:24:52,860 --> 00:24:54,348
+如果你投入的是
+you know if you're if you're putting
+
+454
+00:24:54,348 --> 00:24:55,836
+900美元做价差交易
+900 in the spread you're you're probably only
+
+455
+00:24:55,836 --> 00:24:56,686
+可能只承担
+risking maybe 300 on the
+
+456
+00:24:56,686 --> 00:25:00,300
+300美元风险，就能赚近900，这是1:3的风险收益比
+trade again to make maybe close to 900 that's a three to one you're taking a trade like
+
+457
+00:25:00,940 --> 00:25:02,130
+做这种交易时，你承担的风险
+this and you're risking you
+
+458
+00:25:02,130 --> 00:25:03,796
+你的最大损失
+know this is your max loss per
+
+459
+00:25:03,796 --> 00:25:05,700
+是每手的
+per lot so if you just do one
+
+460
+00:25:05,700 --> 00:25:09,746
+如果只做一手，最大损失大概90美元，风险90赚300
+your max loss you're probably taking a loss if you're down 90 bucks you're risking 90 to make about 300
+
+461
+00:25:10,460 --> 00:25:14,700
+现在看价格，266开始远离这个位置
+and let's see where it's at right now so 266 is starting to pull away from this level right here
+
+462
+00:25:14,700 --> 00:25:16,882
+但这种价差的风险收益比依然完美
+but again still risk reward is immaculate on
+
+463
+00:25:16,882 --> 00:25:19,064
+而且你不需要
+these types of spreads and you don't have
+
+464
+00:25:19,064 --> 00:25:20,155
+在中途做任何操作
+to do anything in
+
+465
+00:25:20,155 --> 00:25:24,519
+除非出了大问题，否则不用管
+the meantime unless something is going terribly wrong you don't even have to when i when
+
+466
+00:25:24,520 --> 00:25:26,452
+我交易同周到期的合约时
+i'm trading the same week expirations i generally
+
+467
+00:25:26,452 --> 00:25:28,384
+通常不会频繁管理
+don't manage them as much i would just
+
+468
+00:25:28,384 --> 00:25:33,698
+直接止损离场，因为时间太短
+cut it at a stop loss just because there's so much such little time it gets more annoying you know trying to
+
+469
+00:25:33,700 --> 00:25:35,479
+频繁调整反而麻烦
+micromanage it maybe you know you extend out
+
+470
+00:25:35,479 --> 00:25:37,258
+比如延长看涨期权
+the call or you add another uh butterfly
+
+471
+00:25:37,258 --> 00:25:38,147
+或者再加一个蝶式差价
+or it just gets
+
+472
+00:25:38,147 --> 00:25:43,039
+会稍微混乱一些 或稍微麻烦一点 这会让我分心
+a little bit more chaotic or a little bit more of a headache and it takes away some from some of my
+
+473
+00:25:43,040 --> 00:25:45,295
+分散我做标普非方向性交易的精力
+bigger non-directional trades on the spx which is what i
+
+474
+00:25:45,295 --> 00:25:47,099
+而这些才是我该专注的
+should be focused on so with these it's
+
+475
+00:25:47,099 --> 00:25:51,159
+所以这里我只会小仓位操作
+just small maybe two or three contracts right here with two or three contracts who wouldn't like an
+
+476
+00:25:51,160 --> 00:25:57,680
+两三手合约，谁不想周五前轻松赚500-700美元
+extra five six seven hundred dollars coming in by friday uh just for letting passive uh trade work
+
+477
+00:25:57,680 --> 00:25:59,525
+让交易被动运行或分批获利了结
+itself out or you know scaling out accordingly
+
+478
+00:25:59,525 --> 00:26:01,370
+这是周初的行情
+this right here would be early in the
+
+479
+00:26:01,370 --> 00:26:06,446
+比如这笔交易能赚500，实际12号这天赚了512
+week so this you would have collected you know the 500 was this 512 on the 12 so as we look at this right here
+
+480
+00:26:07,140 --> 00:26:08,824
+看这里的512，因为每次看到这种形态
+here's the 512 because whenever i see this type of
+
+481
+00:26:08,824 --> 00:26:10,321
+看到这种情况，我首先想问的问题是
+stuff the first question i want to think
+
+482
+00:26:10,321 --> 00:26:14,251
+最大回撤是多少？你得承受多少损失？就算到这一步
+is you know what was the max drawdown how much pain would you have experienced so even at this point right
+
+483
+00:26:14,440 --> 00:26:16,175
+这里最大回撤大约是
+here the max drawdown was about a about
+
+484
+00:26:16,175 --> 00:26:17,910
+100美元，也就是每合约约1美元
+a hundred dollars so about one dollar this
+
+485
+00:26:17,910 --> 00:26:22,682
+这种蝶式策略的损失会扩大，对你不利，然后这里可以看到涨到240
+contract uh this um butterfly increase which is bad for you and then you can see right here it's going for 240 so
+
+486
+00:26:22,900 --> 00:26:24,616
+你的最大痛点就是100美元
+your max pain would have been a hundred
+
+487
+00:26:24,616 --> 00:26:26,332
+如果你做了两手
+bucks so if you're in two of these
+
+488
+00:26:26,332 --> 00:26:30,838
+你就亏200美元，但这只是极端情况下微软导致的
+you're down you know two hundred dollars and you're only down that because this is an extreme scenario in which microsoft
+
+489
+00:26:30,840 --> 00:26:35,180
+股价跌破2个标准差，这种情况
+went all the way down below two sigma this is not something that's going to be common for the
+
+490
+00:26:35,180 --> 00:26:36,808
+对正在看这个视频的Quant会员来说并不常见
+quantity members that are already watching this video
+
+491
+00:26:36,808 --> 00:26:38,436
+如果你是高级会员
+if you're already a premium member then you
+
+492
+00:26:38,436 --> 00:26:42,099
+应该已经理解我在这里展示的信息了，但我还没来得及
+already should understand a lot of this information which i'm showing right here but i haven't got a
+
+493
+00:26:42,100 --> 00:26:43,691
+跟大家详细聊
+chance to talk to you guys specifically about
+
+494
+00:26:43,691 --> 00:26:45,282
+我本周开的那些价差策略
+some of the spreads that i opened up
+
+495
+00:26:45,282 --> 00:26:49,858
+因为各位也知道，这周我一直忙着开发新功能
+this week because you guys know i've been very busy this week working on the new features that have been rolling out so
+
+496
+00:26:49,860 --> 00:26:53,400
+所以没时间详细解释我发的每个交易
+i haven't had much time to explain necessarily all the trades in which i've been posting on why i'm
+
+497
+00:26:53,400 --> 00:26:55,331
+为什么开这些仓位
+opening up certain trades why i'm opening up
+
+498
+00:26:55,331 --> 00:26:57,262
+为什么开这些仓位，希望这次能帮到大家
+certain trades so i'm hoping this helps it's
+
+499
+00:26:57,262 --> 00:26:59,193
+这是最大痛点、绝对gamma行权价
+a combination of max pain the combination of
+
+500
+00:26:59,193 --> 00:27:06,437
+以及N1和P1行权价的组合，大家看看这些策略是如何运作的
+the absolute gamma strike the absolute combination of the what was referred to as the n1 and p1 strikes and you guys can see how these are all playing out
+
+501
+00:27:06,440 --> 00:27:09,260
+完美适配不同类型的交易者！
+beautifully for all different variations or types of traders great
+
+502
+00:27:09,260 --> 00:27:12,080
+今天做空的好机会，预期价格
+opportunity to potentially go short here today thinking it would
+
+503
+00:27:12,080 --> 00:27:14,336
+会回到绝对gamma水平止盈
+revert back to the absolute gamma taking profit
+
+504
+00:27:14,336 --> 00:27:20,540
+就在买入区的数量位，再次回补下方，如果你是激进的日内或超短线交易者
+right here at the quantity at buy zone adding back below here again if you're an aggressive day trader or scalper there's
+
+505
+00:27:20,540 --> 00:27:23,340
+这里有很多机会，比如
+so many opportunities here as well as if you're just
+
+506
+00:27:23,340 --> 00:27:26,140
+从这里到这里的theta衰减波段交易
+trading theta decay swing trading from here to here or
+
+507
+00:27:26,140 --> 00:27:31,460
+或者从这里开始的动能反弹交易
+trading from down here the momentum trade back up if we were to take a look at those contracts
+
+508
+00:27:31,460 --> 00:27:34,241
+昨天255看涨期权裸卖
+this would be the 255 call naked yesterday can you imagine these
+
+509
+00:27:34,241 --> 00:27:37,275
+收益不可思议，光看这些信息
+types of returns just looking at this type of information so here
+
+510
+00:27:37,275 --> 00:27:39,298
+看这里，大约50美分，16
+it is right here we'll say about 50 cents 16
+
+511
+00:27:39,298 --> 00:27:45,367
+19美分不太现实，除非你完美无缺且运气爆棚，但我更喜欢用平均值
+19 cents is not a realistic feel unless you're perfect and you just happen to get lucky but i like to just use an average
+
+512
+00:27:46,380 --> 00:27:48,729
+因为大概率我会在50美分附近拿到几单
+because chances are i would get 50 cents get a couple here
+
+513
+00:27:48,729 --> 00:27:51,291
+最后一单可能在VWAP处成交
+and then get the last one at vwap and then kind of
+
+514
+00:27:51,291 --> 00:27:53,426
+然后逐步建仓
+hold you work you build your way into the position
+
+515
+00:27:53,426 --> 00:27:58,978
+可能拿几手合约，最大亏损设在250美元，止损50点
+you're talking about maybe get you know a few contracts and your max loss is 250 right here give it a 50 stop loss so you're maybe only
+
+516
+00:27:59,620 --> 00:28:06,040
+冒险125点，看微软会不会回到绝对gamma水平
+risking 125 to figure out if microsoft will return back to its absolute gamma or revert back to its
+
+517
+00:28:06,040 --> 00:28:08,486
+或者回归均值，看看这笔交易的不对称收益
+mean and look at the look at the uh asymmetrical
+
+518
+00:28:08,486 --> 00:28:10,932
+这样的交易收益
+returns on a trade such as this so from here
+
+519
+00:28:10,932 --> 00:28:15,335
+开盘时这笔交易已经涨了300%多
+at the open this trade was already up 300 something percent and as it actually started to hit the
+
+520
+00:28:15,580 --> 00:28:17,617
+当价格触及255美元时
+the um the 255 level these calls went in the
+
+521
+00:28:17,617 --> 00:28:19,880
+这些看涨期权开始盈利
+money as it went all the way up to how
+
+522
+00:28:19,880 --> 00:28:25,086
+今天最高涨到260，比行权价高5点
+high did it go today all the way up to 260 so it went about five points in the money so these contracts went
+
+523
+00:28:25,540 --> 00:28:28,424
+合约有5美元内在价值，各位可以看到
+had five dollars of intrinsic value and you guys can see again
+
+524
+00:28:28,424 --> 00:28:31,308
+这样的交易最大收益
+max return on something like this all the way up here is
+
+525
+00:28:31,308 --> 00:28:39,239
+从最低点算涨幅超1000%，简直疯狂，但我不常看这个
+over a thousand percent from the exact lows it's going to be ridiculous but i don't like looking at this too often it's over two to three thousand percent right here if you're
+
+526
+00:28:39,240 --> 00:28:42,113
+如果完美入场，甚至能到2000%到3000%，但这不现实
+perfect and if you time everything perfect again which is not realistic
+
+527
+00:28:42,113 --> 00:28:47,619
+但更关键的是，各位看现在期权到期日前的动向
+but more importantly you guys can see what they're doing right now going into the opex going into this expiration right here when
+
+528
+00:28:47,620 --> 00:28:50,180
+这些合约到期时
+these contracts expire they're probably just going to have a little bit
+
+529
+00:28:50,180 --> 00:28:54,660
+可能只剩一点内在价值，因为现在追高买看涨期权的人都被套牢了
+of intrinsic value in because now they're suckering everyone that was buying these calls all the way up here all this
+
+530
+00:28:54,660 --> 00:28:57,826
+大量成交后，现在空头在高位做空这些合约
+volume coming in there are shorts that are now shorting these contracts
+
+531
+00:28:57,826 --> 00:29:00,464
+期待价格回落后到期
+up here expecting it to revert back and then expire
+
+532
+00:29:00,464 --> 00:29:04,158
+可能平值，但不会深度价内
+either at the money but not too deep in the money because that's what
+
+533
+00:29:04,160 --> 00:29:07,153
+所有信息汇总显示
+the confluence of all this information is showing us the combination of
+
+534
+00:29:07,153 --> 00:29:09,647
+最大痛点可能让收盘价低于这个行权价
+max pain it wants to close probably below this strike
+
+535
+00:29:09,647 --> 00:29:13,139
+如果价格远高于行权价，且大家都持有看涨期权
+if it's this high above it if everyone's in calls above it it's going
+
+536
+00:29:13,140 --> 00:29:15,229
+价格会被拉回这个水平
+to want to pull back to this level if absolute
+
+537
+00:29:15,229 --> 00:29:17,318
+绝对gamma水平在这里
+gamma is down here it's also another level that's going
+
+538
+00:29:17,318 --> 00:29:19,407
+也会像磁铁一样把价格拉回均值
+to be a magnet pulling it back down the mean
+
+539
+00:29:19,407 --> 00:29:25,258
+现在两天锚定视图都压在这，可能会回测这个位置，很多因素汇聚
+right now the two-day anchor view app is all way down here so maybe it's going to come back to this level there's so much confluence of things
+
+540
+00:29:25,260 --> 00:29:27,316
+目前两天锚点视图显示价格可能回到这个位置
+right here just on two scripts generated by the way
+
+541
+00:29:27,316 --> 00:29:28,961
+这只是两个被复制的指标
+these are just two things that are copy
+
+542
+00:29:28,961 --> 00:29:33,279
+然后粘贴到图表上 关掉其他工具后
+and pasted onto the chart again as i turn off all the studies um without it it gets a little bit
+
+543
+00:29:33,280 --> 00:29:34,967
+可能会有点难去评估
+harder i guess to to to assess the
+
+544
+00:29:34,967 --> 00:29:37,076
+整体市场环境 你可以看看
+context of things you can take a look at the
+
+545
+00:29:37,076 --> 00:29:42,138
+期权链 判断大家是否都站在交易的同一边
+options chain and you can try to decipher if you see a lot of people are all on the same side of the trade
+
+546
+00:29:42,140 --> 00:29:44,727
+通常会在到期时
+maybe it will it will usually uh expire right where
+
+547
+00:29:44,727 --> 00:29:47,314
+收于这个钟形曲线附近 你可以看到
+this uh bell curve right here you can see there's
+
+548
+00:29:47,314 --> 00:29:49,901
+这里成交量非常集中
+a lot of um volume right there and if we
+
+549
+00:29:49,901 --> 00:29:58,439
+看这里 成交量也很密集 通常这些重叠区就是收盘价所在的位置
+take a look there's a lot of volume right here so generally where these overlap is usually going to be where a price is going to close and we can see that again
+
+550
+00:29:58,440 --> 00:30:01,379
+从图上直观就能看到
+visually right here if we uh you see how the
+
+551
+00:30:01,379 --> 00:30:04,318
+成交量都集中在这里
+volume is pretty clumped together same thing if we go
+
+552
+00:30:04,318 --> 00:30:07,257
+再看SPY 好奇它会怎么走
+to the spy and we're curious to see uh where's
+
+553
+00:30:07,257 --> 00:30:16,957
+SPY会怎么走 看14号的图 也就是昨天 举个例子 这就是成交量
+the spy going to go uh this would be let's go to the 14th this would be uh yesterday actually we'll go to yeah let's take an example yesterday this is the volume
+
+554
+00:30:16,960 --> 00:30:19,470
+看到这些密集区了吗 这是一个标准差
+so you see all this clump this is this is one standard
+
+555
+00:30:19,470 --> 00:30:21,562
+内的全部成交量 这是当前价格
+deviation of all the volume this is the spot price
+
+556
+00:30:21,562 --> 00:30:25,118
+所以价格很难再往上走 因为成交量都集中在这里
+so then price is going to struggle to go higher because all the volume is right here
+
+557
+00:30:25,120 --> 00:30:27,942
+往下拉看图表 价格被卡住了
+and as we just scroll scroll down it's getting stuck
+
+558
+00:30:27,942 --> 00:30:30,482
+还是在375 向上突破的成交量不够
+it's still at 375 there's not really much volume to
+
+559
+00:30:30,482 --> 00:30:34,716
+一个标准差内的大部分成交量都在这个区间
+the upside the one standard deviation again which is the majority of all the volume
+
+560
+00:30:35,000 --> 00:30:37,219
+在这个区间内 可以看到
+is in this range and then we can see this
+
+561
+00:30:37,219 --> 00:30:39,438
+价格会挣扎后回落 今天我们
+price would struggle and would pull back now today we
+
+562
+00:30:39,438 --> 00:30:44,098
+跳空上涨 这是15号 突破了前一天的区间 这是盘前的走势图
+gapped up this is the 15th so we broke out from that this is at the pre-market what it looked like
+
+563
+00:30:44,100 --> 00:30:46,735
+这是开盘后 开盘后开始显示成交量
+this is after the market opened after the market opened it starts
+
+564
+00:30:46,735 --> 00:30:48,931
+因为盘前没有成交量
+showing the volume because pre-market there is no volume so
+
+565
+00:30:48,931 --> 00:30:51,127
+盘前显示的是未平仓合约 但可以看到
+pre-market is showing the open interest but we can see
+
+566
+00:30:51,127 --> 00:30:56,838
+同样的情况 这是今天成交量集中的区域 价格突破所有看跌期权的成交量后
+the same thing this is where all the volume is a sense going right now for the day as it's getting past all the put volume
+
+567
+00:30:56,840 --> 00:30:59,057
+这里会挣扎着再往上走一点
+right here it's going to struggle to go a little
+
+568
+00:30:59,057 --> 00:31:01,274
+这里有一个gamma水平
+bit higher we have a gamma strike right here which
+
+569
+00:31:01,274 --> 00:31:06,595
+在386 但385可能是SPY今天的阻力位 所以大家看SPY的时候
+is 386 but 385 was likely to be resistance for the spy today so as we take a look at the spy you guys can see
+
+570
+00:31:07,040 --> 00:31:09,720
+可以看到价格被卡在385这个位置
+that right here 385 it's getting stuck at that level
+
+571
+00:31:09,720 --> 00:31:12,698
+因为期权链上成交量不足以
+because there's not much volume on the options chain at
+
+572
+00:31:12,698 --> 00:31:17,761
+支持价格轻松上涨——这在期权链上一目了然
+least to support it going higher easily seen on the options chain but if you're using a
+
+573
+00:31:18,060 --> 00:31:20,958
+但如果你用‘Quant Trading App’
+tool such as quant trading app i'm just trying to make it
+
+574
+00:31:20,958 --> 00:31:23,373
+我只是想让交易者更轻松地
+a little bit easier for traders to decipher this on
+
+575
+00:31:23,373 --> 00:31:27,720
+自行解读这些信息，并在日内交易中获得线索
+their own as well as have clues throughout the day and make it very easy and visually represent
+
+576
+00:31:27,720 --> 00:31:30,550
+而且能直观地展示
+and make it very easy to visualize because this is
+
+577
+00:31:30,550 --> 00:31:32,814
+如果特斯拉下周突破7750
+ready if tesla was to break over 7 750 next
+
+578
+00:31:32,814 --> 00:31:38,474
+那么周一开盘时，这些价位就是关键参考
+week and these are exactly what the same levels would be come monday morning then it's very likely to be
+
+579
+00:31:39,040 --> 00:31:41,085
+765是个好做超短线的目标位
+a good scalp candidate up to 765 because there's not
+
+580
+00:31:41,085 --> 00:31:43,357
+因为这两个价位之间gamma水平很低
+much gamma exposure between those levels if we're curious to
+
+581
+00:31:43,357 --> 00:31:46,992
+如果想知道这两个价位之间的gamma暴露量
+know how much the gamma is between those levels that's where this comes into play we
+
+582
+00:31:47,220 --> 00:31:49,771
+这就是工具发挥作用的地方
+can actually see this the same way the same thing if we
+
+583
+00:31:49,771 --> 00:31:52,322
+我们可以直接看到这些数据
+turn off all of the volume and we just take a look
+
+584
+00:31:52,322 --> 00:31:56,362
+如果特斯拉站稳730，预期会有超短线机会到740
+at the gamma if tesla's over 7 30 i would expect a scalp up to 7 40 a break over 7 40 and we have
+
+585
+00:31:57,640 --> 00:32:00,283
+突破740后，750就是下一个清晰的超短线目标
+a clear scalp up to 750 because there's not much
+
+586
+00:32:00,283 --> 00:32:02,632
+因为中间gamma水平很低
+gamma in between those levels you guys can
+
+587
+00:32:02,632 --> 00:32:08,505
+大家看，这些价位能带来不错的超短线收益
+see this right here a nice decent scalp off of those levels so the levels are provided on the think
+
+588
+00:32:08,800 --> 00:32:11,106
+这些价位在ThinkorSwim图表上有标注
+or swim charts but if you don't have access to think or
+
+589
+00:32:11,106 --> 00:32:13,027
+但如果你用不了ThinkorSwim
+swim this is where the website comes into play and
+
+590
+00:32:13,027 --> 00:32:16,678
+网站上也会把这些价位标在图表上
+they're drawn out on the chart for you so you can just keep this open and then refresh the
+
+591
+00:32:16,680 --> 00:32:19,375
+你可以保持页面打开
+page to see how it calculates and then at the bottom here
+
+592
+00:32:19,375 --> 00:32:21,172
+这里是更深入的分析
+this is for a little bit more of
+
+593
+00:32:21,172 --> 00:32:26,338
+随着更多数据加载，这里还会有更深入的分析以及高级视角
+a deeper analysis as more is coming to this page right here as well as a little bit more of an advanced look
+
+594
+00:32:26,340 --> 00:32:29,620
+我一直在不断开发和完善这些功能
+into a lot of this i'm constantly developing and working around the clock on
+
+595
+00:32:29,620 --> 00:32:31,025
+把这些特性集成进来
+getting these types of features integrated
+
+596
+00:32:31,025 --> 00:32:34,539
+如果你是新关注这个频道的
+because if you don't know if you're new to this channel the goal right now
+
+597
+00:32:34,540 --> 00:32:41,220
+我目前的目标是每月做10到20笔高质量交易
+for me is to have at least 10 no more than 20 solid trades a month and just keep the same risk on each
+
+598
+00:32:41,220 --> 00:32:46,372
+每笔交易根据形态控制风险
+trade depending on the setup and just get asymmetrical returns only if the data
+
+599
+00:32:46,372 --> 00:32:48,580
+只在数据支持交易信号时
+supports the confluence or supports the
+
+600
+00:32:48,580 --> 00:32:54,100
+追求不对称收益，并逐渐减少主观判断
+trade idea in which i see and relying less and less on discretionary playing the
+
+601
+00:32:54,100 --> 00:32:57,940
+基于概率交易，这才是专业期权交易者的真正方式
+probability which is really how professionals trade options it's based on the
+
+602
+00:32:57,940 --> 00:33:00,500
+他们看重的是成功概率，而不仅仅是主观判断
+probability of success it's not necessarily just based
+
+603
+00:33:00,500 --> 00:33:04,020
+而不是仅凭猜测希望这期视频
+on what they think is going to happen hopefully this video
+
+604
+00:33:04,020 --> 00:33:08,820
+能让你对不同交易方法有更开阔的思路
+opened up your mind a little bit more to different approaches to trading if you enjoyed the video like
+
+605
+00:33:08,820 --> 00:33:10,999
+如果喜欢这期内容，记得点赞
+it down below leave a comment share it with your
+
+606
+00:33:10,999 --> 00:33:13,178
+留言分享你的想法，和朋友们一起讨论
+friends i look forward to hearing you guys link to
+
+607
+00:33:13,178 --> 00:33:17,319
+the quantity app discord is in the description down below link to quantity app itself is also in the
+
+608
+00:33:17,320 --> 00:33:20,200
+都在简介里，下期再见，大家保重
+description down below catch you guys in the next one take care
+
+===== END AFTER_OPTIMIZE =====

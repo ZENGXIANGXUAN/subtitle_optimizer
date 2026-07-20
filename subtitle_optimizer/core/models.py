@@ -1,5 +1,5 @@
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Optional
 
 # 尝试相对导入，如果失败则使用绝对导入
@@ -10,6 +10,23 @@ except ImportError:
     import os
     sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
     from utils import logger
+
+@dataclass(frozen=True)
+class SourceCueSnapshot:
+    """Immutable source cue retained while semantic units are translated.
+
+    A semantic sentence can span several timestamp cues. Keeping the original
+    cue text and timing here lets the final target text flow back to the source
+    timeline without reconstructing metadata from mutable ``lines`` fields.
+    """
+
+    index: int
+    start_time: str
+    end_time: str
+    source_text: str
+    original_lines: tuple[str, ...] = ()
+    source_indexes: tuple[int, ...] = ()
+
 
 @dataclass
 class SubtitleEntry:
@@ -22,6 +39,11 @@ class SubtitleEntry:
     status: str = "pending"  # pending / processing / done / error
     error_msg: str = ""
     source_indexes: Optional[list[int]] = None  # 来源原始条目ID列表，用于追踪完整性
+    # 细粒度阶段状态；保留 status 字段兼容现有 UI。
+    # translated / fidelity_checked / optimized / consistency_checked / *_fallback
+    stage_status: str = "pending"
+    quality_flags: list[str] = field(default_factory=list)
+    source_cues: list[SourceCueSnapshot] = field(default_factory=list)
 
     @property
     def chinese(self) -> str:
@@ -58,14 +80,13 @@ class SubtitleEntry:
         return self.chinese
 
     def to_srt_block(self, use_optimized=False, target_first=True) -> str:
-        lines = self.optimized_lines if (use_optimized and self.optimized_lines) else self.lines
-        # 如果需要重新排列译文/原文顺序
-        if len(lines) == 2:
-            # 检测哪一行是译文（包含 CJK 字符），哪一行是原文
-            target_line = next((l for l in lines if any('一' <= c <= '鿿' for c in l)), None)
-            source_line = next((l for l in lines if not any('一' <= c <= '鿿' for c in l)), None)
-            if target_line and source_line:
-                lines = [target_line, source_line] if target_first else [source_line, target_line]
+        selected = self.optimized_lines if (use_optimized and self.optimized_lines) else self.lines
+        lines = list(selected)
+        # The pipeline's language-independent canonical layout is always
+        # [target, source]. Script detection breaks Chinese -> English and any
+        # same-script language pair, so output ordering must use positions.
+        if len(lines) >= 2 and not target_first:
+            lines = lines[1:] + [lines[0]]
         text = "\n".join(lines)
         return f"{self.index}\n{self.start_time} --> {self.end_time}\n{text}\n"
 
@@ -104,11 +125,22 @@ def parse_srt(content: str) -> list[SubtitleEntry]:
     return entries
 
 def strip_annotation(text: str) -> str:
-    """清除 AI 在 zh 字段中留下的注释标记"""
+    """清除 AI 在译文字段中留下的说明性注释。
+
+    旧逻辑会删除所有被括号包住的内容，容易误删合法字幕，例如“（笑）”
+    或角色台词。这里仅删除明确像 AI 注释/说明/无法翻译占位的整句。
+    """
     s = text.strip()
-    bracket_pairs = [('（', '）'), ('(', ')'), ('【', '】'), ('[', ']')]
-    for open_b, close_b in bracket_pairs:
-        if s.startswith(open_b) and s.endswith(close_b):
+    if not s:
+        return s
+
+    annotation_patterns = [
+        r"^[（(【\[]\s*(?:注|注释|说明|备注|提示|译注|校注)\s*[:：].*?[）)】\]]?$",
+        r"^[（(【\[]?\s*(?:无法翻译|未翻译|无译文|空字幕|无内容|原文缺失|内容缺失).*?[）)】\]]?$",
+        r"^[（(【\[]?\s*(?:translation|translator|note|comment|annotation)\s*[:：].*?[）)】\]]?$",
+    ]
+    for pattern in annotation_patterns:
+        if re.match(pattern, s, flags=re.IGNORECASE):
             return ""
     return s
 
@@ -173,12 +205,54 @@ def _source_text_length(text: str, lang_code: str = "en") -> int:
         return _english_word_count(text)
 
 
+def _contains_chinese(text: str) -> bool:
+    """Return True when text contains at least one CJK unified ideograph."""
+    return any("一" <= char <= "鿿" for char in text or "")
+
+
+def _latin_word_count(text: str) -> int:
+    return len(re.findall(r"[A-Za-z]+(?:['-][A-Za-z]+)?", text or ""))
+
+
 def _translation_looks_incomplete(zh: str, en: str) -> bool:
-    en_words = _english_word_count(en)
-    if en_words < 18:
+    """Conservative Chinese-target coverage check for English source subtitles.
+
+    The old rule ignored every source shorter than 18 English words, which let
+    short untranslated cues such as ``Hi guys, part one...`` pass through as
+    completed.  For a Chinese target, a non-empty English source must produce a
+    target line containing Chinese characters, no matter how short the cue is.
+    The length-ratio check then catches obvious long-form shrinkage.
+    """
+    source = (en or "").strip()
+    target = (zh or "").strip()
+    if not source:
         return False
-    zh_chars = _chinese_char_count(zh)
-    min_chars = max(12, int(en_words * 0.45))
+    if not target:
+        return True
+
+    en_words = _english_word_count(source)
+    zh_chars = _chinese_char_count(target)
+
+    # Hard gate: English source translated into Chinese cannot remain
+    # English-only, even when the source cue is very short.
+    if en_words > 0 and zh_chars == 0:
+        return True
+
+    # If the target is mostly copied Latin text with barely any Chinese, treat
+    # it as suspicious. This catches source leakage such as ``Okay.`` or full
+    # English lines being used as fallback.
+    latin_words_in_target = _latin_word_count(target)
+    if en_words >= 3 and zh_chars <= 1 and latin_words_in_target >= max(2, en_words // 2):
+        return True
+
+    # Short cues still need a small amount of Chinese. Keep this deliberately
+    # lenient so single-word terms or fillers are not over-rejected.
+    if en_words <= 3:
+        min_chars = 1
+    elif en_words < 18:
+        min_chars = max(2, int(en_words * 0.35))
+    else:
+        min_chars = max(12, int(en_words * 0.45))
     return zh_chars < min_chars
 
 

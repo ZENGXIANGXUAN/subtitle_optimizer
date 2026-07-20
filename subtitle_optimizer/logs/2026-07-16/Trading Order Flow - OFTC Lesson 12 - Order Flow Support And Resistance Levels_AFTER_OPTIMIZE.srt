@@ -1,0 +1,3113 @@
+===== AFTER_OPTIMIZE (622 entries) =====
+1
+00:00:01,100 --> 00:00:05,800
+这是《订单流交易》课程第12课，主题是订单流支撑与阻力位。
+This is Order Flow Trading Course Lesson 12, Order Flow Support and Resistance Levels.
+
+2
+00:00:06,000 --> 00:00:07,200
+我是Michael Valtos。
+My name is Michael Valtos.
+
+3
+00:00:07,200 --> 00:00:09,400
+我是OrderFlows.com的创始人。
+I'm the founder of OrderFlows.com.
+
+4
+00:00:10,000 --> 00:00:12,700
+开始之前，我需要先读一段免责声明。
+Before we get started, I need to read through a brief disclaimer.
+
+5
+00:00:12,700 --> 00:00:15,151
+本次演示仅用于教育和信息分享，
+This presentation is for educational and informational purposes
+
+6
+00:00:15,151 --> 00:00:17,602
+不应被视为购买或出售期货合约的邀约，
+only and should not be considered a solicitation
+
+7
+00:00:17,602 --> 00:00:20,053
+也不应作为
+to buy or sell a futures contract or
+
+8
+00:00:20,053 --> 00:00:22,198
+其他任何投资决策的依据。
+make any other type of investment decision.
+
+9
+00:00:22,800 --> 00:00:26,000
+期货交易存在重大风险，并非适合所有投资者。
+Futures trading contains substantial risk and is not for every investor.
+
+10
+00:00:26,400 --> 00:00:30,300
+投资者可能损失全部甚至超过初始投资。
+An investor could potentially lose all or more than the initial investment.
+
+11
+00:00:30,400 --> 00:00:35,200
+风险资本是指即使全部亏损，也不会危及个人财务安全或生活方式的资金。
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+12
+00:00:35,800 --> 00:00:41,100
+交易只应使用风险资本，且只有拥有充足风险资本的人才应考虑交易。
+Only risk capital should be used for trading, and only those with sufficient risk capital should consider trading.
+
+13
+00:00:41,500 --> 00:00:44,800
+过往表现并不必然预示未来结果。
+Past performance is not necessarily indicative of future results.
+
+14
+00:00:45,300 --> 00:00:51,200
+CFTC（美国商品期货交易委员会）4.41条规则：假设或模拟交易结果具有一定局限性。
+CFTC Rules 4.41 Hypothetical or simulated performance results have certain limitations.
+
+15
+00:00:51,500 --> 00:00:55,900
+与实际交易记录不同，模拟结果并不代表真实交易。
+Unlike an actual performance record, simulated results do not represent actual trading.
+
+16
+00:00:56,300 --> 00:00:59,300
+此外，由于交易未实际执行，
+Also, since the trades have not been executed, the results
+
+17
+00:00:59,300 --> 00:01:01,700
+结果可能对流动性不足等市场因素的影响估计不足或过高，
+may have under or overcompensated for the impact,
+
+18
+00:01:01,700 --> 00:01:05,000
+比如流动性不足等市场因素
+if any, of certain market factors such as lack of liquidity,
+
+19
+00:01:05,700 --> 00:01:12,400
+模拟交易程序通常还受限于其设计时已知的后见之明。
+Simulated trading programs in general are also subject to the fact that they are designed with the benefit of hindsight.
+
+20
+00:01:12,900 --> 00:01:15,300
+我们并未声明任何账户
+No representation is being made that any account
+
+21
+00:01:15,300 --> 00:01:17,100
+会或可能取得
+will or is likely to achieve
+
+22
+00:01:17,100 --> 00:01:19,200
+与展示结果类似的盈利或亏损。
+profit or losses similar to those shown.
+
+23
+00:01:21,100 --> 00:01:24,000
+好的，现在开始讲订单流支撑与阻力位。
+Okay, let's get started. Order flow support and resistance levels.
+
+24
+00:01:24,100 --> 00:01:27,200
+大多数交易者不知道如何确定支撑位和阻力位。
+Most traders do not know how to determine support and resistance levels.
+
+25
+00:01:28,000 --> 00:01:30,095
+他们会找一个被触及过几次的高点或低点，
+They use a high or low that has
+
+26
+00:01:30,095 --> 00:01:31,666
+已被触及过几次
+been... touched a couple of times
+
+27
+00:01:31,666 --> 00:01:33,499
+然后认为那就是支撑位或阻力位。
+and think that is support and resistance.
+
+28
+00:01:33,600 --> 00:01:35,600
+如果真是这样，市场就永远不会形成趋势。
+If that's the case, the market will never trend.
+
+29
+00:01:36,000 --> 00:01:37,900
+它只会在高点和低点之间来回波动，
+It'll just trade from highs to lows.
+
+30
+00:01:40,500 --> 00:01:41,900
+并被困在一个区间内。
+And stuck in a range.
+
+31
+00:01:41,900 --> 00:01:44,500
+看这张图，这是5分钟迷你合约图表。
+So, you know, here's a chart. Here's a five-minute mini chart.
+
+32
+00:01:44,700 --> 00:01:46,143
+首先，
+And, you know, the first thing
+
+33
+00:01:46,143 --> 00:01:48,068
+大家会先看
+people are going to look at is they're
+
+34
+00:01:48,068 --> 00:01:49,511
+更关注
+going to look more towards the
+
+35
+00:01:49,511 --> 00:01:52,398
+左侧的价格走势，判断右侧的支撑位和阻力位。
+left and determine where support and resistance level is towards the right.
+
+36
+00:01:53,000 --> 00:01:54,683
+所以，他们会先看
+So, you know, they'll see the
+
+37
+00:01:54,683 --> 00:01:56,366
+首先关注的是
+first thing they'll look at is,
+
+38
+00:01:56,366 --> 00:01:58,049
+高点和低点
+you know, the highs and lows
+
+39
+00:01:58,049 --> 00:01:59,732
+然后判断，比如，
+and sort of determine, say, okay,
+
+40
+00:01:59,732 --> 00:02:02,818
+这里的1884高点就是我的阻力位。
+this high here at 1884 is going to be my resistance level.
+
+41
+00:02:04,000 --> 00:02:07,000
+这里的低点就是我的支撑位。
+This low here is going to be my... Support level.
+
+42
+00:02:07,500 --> 00:02:09,700
+好的，价格再也没回到这个低点，所以他们会看这里。
+Okay, we never came back down here. So they're going to look here.
+
+43
+00:02:09,900 --> 00:02:14,000
+好的，我们多次触及1878，这就是我的新支撑位。
+Okay, well we touched this level a few times, 1878, that's going to be my new support level.
+
+44
+00:02:14,600 --> 00:02:18,000
+他们仍会把上面这个位置当作阻力位。
+You know, they'll still take this as the resistance level up here.
+
+45
+00:02:18,400 --> 00:02:21,900
+价格上涨到这里并盘旋一段时间，他们会想，哦，这里是阻力位。
+When we start coming up here, spending some time here, they'll think, oh, you see this is resistance.
+
+46
+00:02:22,000 --> 00:02:25,100
+但其实，我们只是短暂冲高到那里，这真的是有效阻力位吗？
+Well, you know, we just spiked up there. You know, is that really a level or not?
+
+47
+00:02:26,700 --> 00:02:27,459
+其实，
+You know, it's,
+
+48
+00:02:27,459 --> 00:02:28,724
+大家只是
+you know, people, they just
+
+49
+00:02:28,724 --> 00:02:30,495
+凭肉眼估计，
+sort of eyeball it and, you know,
+
+50
+00:02:30,495 --> 00:02:32,266
+他们自以为
+they think they know what they're, they
+
+51
+00:02:32,266 --> 00:02:34,797
+找到了可靠的支撑位和阻力位。
+think they have, you know, solid support and resistance levels.
+
+52
+00:02:34,800 --> 00:02:36,015
+但其实，如果
+But, you know, if
+
+53
+00:02:36,015 --> 00:02:37,838
+在这里成交了两手，
+we traded two lots up here,
+
+54
+00:02:37,838 --> 00:02:42,699
+价格回到这个位置时，这真能成为阻力位吗？
+you know, is that really going to be resistance if we come back up to it?
+
+55
+00:02:44,000 --> 00:02:47,800
+我们只是短暂冲高到这里，这还会再次成为阻力位吗？
+You know, we spike up here, you know, is this going to be resistance again?
+
+56
+00:02:48,100 --> 00:02:53,300
+你需要的不仅仅是单纯的高点或低点。
+You know, you need something more than, you know, just printing a high or a low.
+
+57
+00:02:56,712 --> 00:03:01,912
+所以，正确理解订单流后，你就能识别出市场自发形成的支撑位和阻力位。
+So when properly understood, order flow will show you market generated support and resistance levels.
+
+58
+00:03:02,312 --> 00:03:06,812
+这些位置在交易日内很重要，尤其是市场回测时。
+These levels are important during the trading day, especially when the market circles back to those levels.
+
+59
+00:03:07,412 --> 00:03:09,281
+需要知道多头在哪里支撑市场，
+Knowing where buyers are supporting the
+
+60
+00:03:09,281 --> 00:03:11,150
+需要知道空头在哪里提供抛压
+market, knowing where sellers have supply
+
+61
+00:03:11,150 --> 00:03:15,511
+空头集中的关键区间，市场回测时可能在此转向。
+to sell, key areas where the market can turn when the area is retested.
+
+62
+00:03:16,112 --> 00:03:21,612
+不一定是市场买卖失衡的区间，也可能是平衡状态的区间。
+Not always areas where market is out of balance. It could be an area where market is in balance.
+
+63
+00:03:21,912 --> 00:03:27,212
+往往是市场无法推动价格突破的区间。
+Oftentimes in an... Is an area where the market can't move prices past.
+
+64
+00:03:27,812 --> 00:03:33,712
+如果市场无法推动价格突破某个水平，比如无法突破1940，
+If the market can't move the price past a certain level, if the market can't move the price above 1940,
+
+65
+00:03:35,512 --> 00:03:37,612
+那这里就是你的阻力位。
+That's going to be your resistance level.
+
+66
+00:03:38,212 --> 00:03:41,712
+支撑位和阻力位能指导你的入场和离场。
+Support and resistance helps guide you in your entries and exits.
+
+67
+00:03:41,812 --> 00:03:44,289
+支撑位可以理解为多头主导、
+Support levels can be interpreted as levels where
+
+68
+00:03:44,289 --> 00:03:47,385
+需求强劲的区间，而阻力位
+there is strong demand dominated by buyers, and resistance levels
+
+69
+00:03:47,385 --> 00:03:51,410
+可以理解为空头主导、供给强劲的区间。
+can be interpreted as levels where there is strong supply dominated by sellers.
+
+70
+00:03:52,312 --> 00:03:55,112
+现在看一个快速的例子。
+Now let's take a look at a quick example here.
+
+71
+00:03:55,412 --> 00:04:00,712
+当时市场处于小幅下跌趋势，一路下探至1045低点。
+Now the market was in a little bit of a downtrend here, coming down, going down into the low at 1045.
+
+72
+00:04:01,012 --> 00:04:03,112
+突然，你会看到转变。
+Then all of a sudden you see a shift.
+
+73
+00:04:04,712 --> 00:04:08,212
+从Delta能看出，一路都是负Delta。
+You can see it in the deltas, negative deltas all the way down.
+
+74
+00:04:08,212 --> 00:04:11,612
+然后出现正Delta，形成买单失衡堆叠。
+Then you get a positive delta. You get a stacked buying imbalance.
+
+75
+00:04:11,612 --> 00:04:13,212
+这里有大量激进的多头。
+So there's aggressive buyers here.
+
+76
+00:04:13,912 --> 00:04:18,712
+市场上涨后又回落到这片激进多头活跃的区间。
+The market works its way up, starts to come back down into this area where the aggressive buyers were.
+
+77
+00:04:19,312 --> 00:04:23,712
+现在这个区间，
+And now it's acting this area, this zone of aggressive buyers.
+
+78
+00:04:23,912 --> 00:04:25,712
+正在发挥支撑位的作用。
+is acting as your support level.
+
+79
+00:04:26,112 --> 00:04:27,412
+它在支撑市场。
+It's supporting the market.
+
+80
+00:04:28,312 --> 00:04:29,538
+每次市场回落到这个水平，
+Every time it sort of comes
+
+81
+00:04:29,538 --> 00:04:30,764
+第二次、第三次，
+back down to this level the
+
+82
+00:04:30,764 --> 00:04:33,011
+都会在此反弹并走高。
+second time, again, it bounces off of it and goes higher.
+
+83
+00:04:33,612 --> 00:04:36,912
+这些信息都是市场自发产生的。
+This is information that's generated from the market.
+
+84
+00:04:37,412 --> 00:04:38,651
+如果你只是凭肉眼判断，说‘哦，
+If you're just using, you
+
+85
+00:04:38,651 --> 00:04:40,385
+这个低点就是我的支撑位’，
+know, eyeballing and saying, oh, this low
+
+86
+00:04:40,385 --> 00:04:43,111
+那等市场回测时，它可能根本不会回到那里。
+here is the low that's going to be my support level,
+
+87
+00:04:44,212 --> 00:04:48,112
+如果你等市场回到这个位置，结果它根本没回来。
+Well, if you're waiting for the market to come back to it, it never came back to it.
+
+88
+00:04:48,312 --> 00:04:49,675
+而如果你有市场自发形成的支撑位，
+Whereas if you have a
+
+89
+00:04:49,675 --> 00:04:51,038
+比如这里的3046，
+market-generated level, you know, right
+
+90
+00:04:51,038 --> 00:04:52,128
+比如在3046这里，
+here at 3046, you know,
+
+91
+00:04:52,128 --> 00:04:54,037
+市场又回落到这一区间。
+the market came back down to it.
+
+92
+00:04:54,512 --> 00:04:58,912
+这比单纯凭肉眼在图表上找支撑位和阻力位更准确。
+It's more accurate than necessarily just eyeballing certain levels on a chart.
+
+93
+00:05:00,412 --> 00:05:05,812
+所以支撑位和阻力位会变化，而且确实会变。
+So we support and resistance levels can do can change. They can and do change.
+
+94
+00:05:05,812 --> 00:05:08,212
+这些区间是多头和空头潜伏的地方。
+They are levels where buyers and sellers lurk in the shadows.
+
+95
+00:05:08,512 --> 00:05:09,297
+其实
+You know, they're
+
+96
+00:05:09,297 --> 00:05:11,130
+他们不一定会立刻出现。
+not always going to appear there. You
+
+97
+00:05:11,130 --> 00:05:14,010
+市场得先交易，才能引他们出来。
+know, the market has to start trading to lure people out.
+
+98
+00:05:14,112 --> 00:05:18,912
+有人会说，价格是一种广告机制。
+Like, you know, people say the, you know, price is an advertising mechanism.
+
+99
+00:05:18,912 --> 00:05:22,512
+当价格开始在某个区间交易时，
+So once price starts trading at a certain level, people come out to, to
+
+100
+00:05:24,112 --> 00:05:27,112
+人们就会出来，去守或者不守这个区间。
+you know, defend that area or not defend that area.
+
+101
+00:05:27,712 --> 00:05:29,920
+当市场趋势运行并到达
+So when a market is trending and gets to a
+
+102
+00:05:29,920 --> 00:05:31,245
+支撑位或阻力位时，
+support or resistance level, it'll work
+
+103
+00:05:31,245 --> 00:05:33,011
+它会继续向下一个支撑位和阻力位推进。
+its way to the next support resistance level.
+
+104
+00:05:34,312 --> 00:05:37,912
+关于支撑位，现在有两种主流观点。
+Now, there are two schools of thought in regards to support levels.
+
+105
+00:05:38,512 --> 00:05:39,398
+一种是多头介入并积极买入的区间，
+You know, areas
+
+106
+00:05:39,398 --> 00:05:42,058
+另一种是多头已经等在那里，
+where buyers step in and become aggressive or an
+
+107
+00:05:42,058 --> 00:05:45,310
+吸收所有抛售的区间。
+area where buyers are already waiting and absorb all the selling.
+
+108
+00:05:46,112 --> 00:05:47,012
+这两种说法都对。
+Both are correct.
+
+109
+00:05:47,712 --> 00:05:52,512
+选支撑位和阻力位并没有唯一正确的方法。
+There's no one exact way of picking a support and resistance levels.
+
+110
+00:05:52,812 --> 00:05:58,112
+支撑位和阻力位的形成有很多影响因素。
+There's a lot of different... factors that go into support and resistance levels.
+
+111
+00:05:59,712 --> 00:06:02,812
+而阻力位是空头介入并积极卖出的区间，
+And as far as resistance levels goes, it's an area
+
+112
+00:06:02,812 --> 00:06:05,292
+或者是空头已经等在那里，
+where sellers step in and become aggressive or
+
+113
+00:06:05,292 --> 00:06:09,012
+吸收所有买入的区间。
+an area where sellers are already waiting to absorb all the buying.
+
+114
+00:06:09,512 --> 00:06:10,612
+同样，这两种说法都对。
+Again, both are correct.
+
+115
+00:06:11,612 --> 00:06:12,812
+这些区间是
+These are areas where
+
+116
+00:06:14,212 --> 00:06:15,497
+人们
+People are, you
+
+117
+00:06:15,497 --> 00:06:18,497
+手里有货要卖，
+know, they have supply to sell and
+
+118
+00:06:18,497 --> 00:06:23,211
+会用供给压制任何上涨行情。
+they're going to cap any market that's rallying with their supply.
+
+119
+00:06:24,012 --> 00:06:25,140
+其实
+So, you know,
+
+120
+00:06:25,140 --> 00:06:27,020
+比如这张图里的例子，
+here's an example of the
+
+121
+00:06:27,020 --> 00:06:29,277
+第一种情况，支撑位
+first case where, you know, support
+
+122
+00:06:29,277 --> 00:06:31,910
+多头在此积极入场。
+levels where buyers step in, become aggressive.
+
+123
+00:06:33,212 --> 00:06:37,012
+正如我所说，我们现在在低点附近徘徊，你能看到多头积极买入。
+And, you know, as I said, we're hanging around here near our low, and you're seeing aggressive buying.
+
+124
+00:06:37,012 --> 00:06:37,912
+市场再次回落。
+Market comes back in.
+
+125
+00:06:38,012 --> 00:06:40,212
+你会看到更多积极买盘。
+You see more aggressive buying, more aggressive buying.
+
+126
+00:06:40,812 --> 00:06:42,812
+这就是市场自发形成的支撑位。
+This is your market-generated support level.
+
+127
+00:06:43,312 --> 00:06:44,950
+其实很容易，
+I mean, it's easy
+
+128
+00:06:44,950 --> 00:06:48,226
+如果你有软件能自动绘制区间，
+when you have software that will draw zones
+
+129
+00:06:48,226 --> 00:06:51,911
+就能根据订单流识别这些区域。
+out based on what's happening in the order flow.
+
+130
+00:06:52,012 --> 00:06:57,312
+比如这张图里，堆叠失衡区形成了支撑。
+So, like, in this case, you're seeing the stacked imbalances is causing the support.
+
+131
+00:07:00,720 --> 00:07:06,520
+关键一点要记住，这叫支撑位和阻力位，
+Now, a key thing to remember, it's called support and resistance level, not support and resistance price.
+
+132
+00:07:07,120 --> 00:07:10,620
+市场可能突破上方阻力位几个最小价格单位后抛售。
+So the market can break through an upside level by a few ticks and then sell off.
+
+133
+00:07:10,820 --> 00:07:15,720
+反之，也可能突破下方支撑位几个最小价格单位后反弹。
+Conversely, the market can break through a downside level by a few ticks and rally.
+
+134
+00:07:16,020 --> 00:07:19,720
+要把它当作区间，而不是精确价位。
+Think of it more as a zone as opposed to an exact level.
+
+135
+00:07:20,120 --> 00:07:21,420
+回顾图表时，
+You know, looking back on the chart.
+
+136
+00:07:22,220 --> 00:07:23,020
+别把它当成
+Don't think of
+
+137
+00:07:23,020 --> 00:07:24,353
+而是
+it as, you know, well,
+
+138
+00:07:24,353 --> 00:07:25,953
+这种情况下，堆叠失衡区
+in this case, you know, stacked
+
+139
+00:07:25,953 --> 00:07:28,619
+会覆盖多个价格水平。
+imbalance, so you're going to have a few price levels.
+
+140
+00:07:29,020 --> 00:07:33,220
+但有时市场会突破几个最小价格单位后反弹。
+But, you know, there's times where the market can break through by a couple ticks and then rally.
+
+141
+00:07:33,620 --> 00:07:36,020
+不会只停在某个精确价位。
+You know, it's not just going to be one exact price.
+
+142
+00:07:36,420 --> 00:07:39,820
+市场很少会精确回到某个价位后反转。
+You know, the market rarely comes back exactly to a price and then turns.
+
+143
+00:07:40,420 --> 00:07:43,820
+更常见的是回到那个区间后反转。
+You know, more often it sort of comes back to that area and then turns.
+
+144
+00:07:46,072 --> 00:07:49,572
+所以要记住，支撑位和阻力位是市场驱动的。
+So remember that support and resistance levels are market-driven levels.
+
+145
+00:07:49,572 --> 00:07:52,072
+它们是市场的一部分，由市场生成。
+They are part of the market. They're generated by the market.
+
+146
+00:07:52,872 --> 00:07:57,472
+至少应该由市场的供需关系生成。
+At least they should be generated by the market, by the supply and demand of what's happening in the market.
+
+147
+00:07:57,472 --> 00:07:58,386
+我说过，如果你
+I said if you're
+
+148
+00:07:58,386 --> 00:07:59,757
+只是随便看看一张
+just sort of looking at a
+
+149
+00:07:59,757 --> 00:08:01,128
+图表，凭感觉判断，
+chart and eyeballing it, you know,
+
+150
+00:08:01,128 --> 00:08:03,870
+比如近期高点、近期低点，或者价格盘旋的区域，
+off recent highs, recent lows, or maybe where we spent some time,
+
+151
+00:08:04,672 --> 00:08:10,872
+这并不是市场自发形成的精确区间。
+you know, that's not an exact market generated level.
+
+152
+00:08:11,172 --> 00:08:12,153
+你只是
+You're just sort of
+
+153
+00:08:12,153 --> 00:08:13,625
+大概看看，然后
+looking at it and yeah, the
+
+154
+00:08:13,625 --> 00:08:15,097
+市场确实在该区间反弹过，但
+market bounced off this level, but
+
+155
+00:08:15,097 --> 00:08:16,569
+你不知道背后的原因。
+you don't know factors behind it.
+
+156
+00:08:17,172 --> 00:08:19,372
+我们来看一组例子。
+So, you know, let's look at a bunch of examples here.
+
+157
+00:08:19,472 --> 00:08:21,172
+这是原油图表，
+So this is crude oil and
+
+158
+00:08:23,748 --> 00:08:26,548
+首先，我想告诉你，支撑位和阻力位并非总是有效。
+First, I just want to show you, it doesn't always work.
+
+159
+00:08:26,548 --> 00:08:30,148
+判断支撑位和阻力位时，必须结合上下文。
+You have to take things in context as support and resistance.
+
+160
+00:08:30,248 --> 00:08:34,748
+这里有一个买卖失衡，但下一根K线却在它下方开盘。
+You have this fine imbalance up here, but the next bar we opened up below it.
+
+161
+00:08:35,248 --> 00:08:36,819
+他们说，如果要成为支撑位，
+They said if it's going to be a
+
+162
+00:08:36,819 --> 00:08:38,390
+价格应该在它上方交易，
+support level, we should be trading above it
+
+163
+00:08:38,390 --> 00:08:40,747
+并回踩该区间，而不是在下方交易后再回踩。
+and come into it, not trade below it and come into it.
+
+164
+00:08:41,948 --> 00:08:45,948
+再看，这里又有一个买单失衡，正常应作为支撑位。
+Again, we have another buying imbalance up here, which would normally act as support.
+
+165
+00:08:45,948 --> 00:08:51,148
+但开盘后收盘时，大部分时间都在它下方徘徊。
+But when we open and close, we're spending all this time in it, most of the time below it.
+
+166
+00:08:52,648 --> 00:08:54,538
+如果你想让它成为支撑位，
+If you're looking for it to be a
+
+167
+00:08:54,538 --> 00:08:57,847
+应该从市场上方开始，而不是下方。
+support level, we should start out above the market rather than below the market.
+
+168
+00:08:57,948 --> 00:09:02,048
+因为如果在市场下方，它就不是支撑位，而是阻力位。
+Because if you're below the market, instead of being support, you're looking at resistance.
+
+169
+00:09:04,812 --> 00:09:09,312
+这是原油的另一个失败案例。
+Okay, here's an example of a crude, again, where it failed.
+
+170
+00:09:09,812 --> 00:09:15,112
+支撑位和阻力位并非总是100%有效，
+You know, I said it's not, support and resistance don't always work 100% of the time.
+
+171
+00:09:15,612 --> 00:09:17,252
+大部分时候有效，
+I mean, they work the majority of
+
+172
+00:09:17,252 --> 00:09:18,892
+但总会有失效的时候，
+the time, but there's going to be
+
+173
+00:09:18,892 --> 00:09:23,110
+还有些时候会失败，所以先得看看失败的例子。
+times where they fail, you know, and then, you know, got to go through examples of failures first.
+
+174
+00:09:23,512 --> 00:09:28,012
+这样你至少能理解，并结合上下文判断。
+So you can at least understand it and, you know, and take things into context.
+
+175
+00:09:28,512 --> 00:09:29,312
+那这里有什么？
+So what do you have?
+
+176
+00:09:29,312 --> 00:09:30,712
+市场在下跌，
+Okay, you have the market coming down.
+
+177
+00:09:32,112 --> 00:09:36,412
+这里出现卖单失衡，然后在它下方开盘，这正是你想看到的。
+You get a selling imbalance here and we open up below it, which is what you like to see.
+
+178
+00:09:36,712 --> 00:09:37,912
+所以这里就是你的区间。
+So you have your level here.
+
+179
+00:09:37,912 --> 00:09:41,012
+我们在它下方停留了一段时间，然后开始回到这个区间。
+We're spending some time below it, but then we start trading back into this level.
+
+180
+00:09:41,412 --> 00:09:43,566
+我们突破了它，但
+We go through it, but what
+
+181
+00:09:43,566 --> 00:09:45,720
+你会看到单印区
+you're seeing, you're seeing single prints
+
+182
+00:09:45,720 --> 00:09:49,310
+在这里，在这里，在这里，价格向上突破这个区间时
+here, here, here, as we're trading up through the level.
+
+183
+00:09:49,712 --> 00:09:54,312
+所以之前的阻力位现在看起来变成了支撑位
+So what was resistance before is now appearing to become support.
+
+184
+00:09:55,412 --> 00:10:00,712
+其实这正是我们之前讲过的价格拒绝的情况
+I mean, this is something we sort of talked about earlier about price rejection.
+
+185
+00:10:02,712 --> 00:10:04,312
+别对一笔交易太执着
+Don't marry yourself to a trade.
+
+186
+00:10:04,312 --> 00:10:08,412
+别想‘我有这个阻力位，我必须做空，市场必须下跌’
+Don't think, oh, I have this level. I have to be short. The market has to go down.
+
+187
+00:10:08,812 --> 00:10:12,212
+一旦它开始出现反转迹象
+Once it starts showing signs of reversing,
+
+188
+00:10:13,212 --> 00:10:14,587
+你的支撑位、阻力位
+your support level, your resistance
+
+189
+00:10:14,587 --> 00:10:16,512
+也会变成你的
+level is also going to become your
+
+190
+00:10:16,512 --> 00:10:19,812
+支撑位，当订单流确认这一点时
+support level when you're getting, you know, the order flow confirming it.
+
+191
+00:10:19,912 --> 00:10:26,612
+所以你能看到，一开始这里是阻力位，但后来市场情绪变了
+So you can see, you know, initially this was acting as resistance, but, you know, the mood changed in here.
+
+192
+00:10:26,612 --> 00:10:28,398
+你能看到Delta的变化
+You can see how the delta changed
+
+193
+00:10:28,398 --> 00:10:30,184
+从负Delta、负Delta、负Delta
+from, you know, negative, negative, negative. Now
+
+194
+00:10:30,184 --> 00:10:31,715
+现在开始连续出现正Delta
+you're starting to string together positives,
+
+195
+00:10:31,715 --> 00:10:34,011
+并且这里出现了小单成交、单印区
+and you're getting small... prints, single prints in here.
+
+196
+00:10:34,412 --> 00:10:40,312
+所以你知道市场要反弹，这个之前的阻力位现在成了支撑位
+So you know the market's looking to rally, and this level, which was your resistance, is now your support.
+
+197
+00:10:45,912 --> 00:10:52,212
+原油是个波动很大的市场，但也提供了很多交易机会
+Again, crude is a very volatile market, but it provides a lot of trading opportunities.
+
+198
+00:10:53,612 --> 00:10:54,559
+我们大概处于
+We're sort of going
+
+199
+00:10:54,559 --> 00:10:56,453
+横盘，然后突然
+sideways, and then all of a sudden you
+
+200
+00:10:56,453 --> 00:10:58,347
+在这里出现了卖单失衡
+get the selling imbalance right here, sort of
+
+201
+00:10:58,347 --> 00:11:02,610
+在横盘边缘，你会想‘我们要开始突破了’
+at the edge of the sideways move, and you're thinking, hey, we're going to start to break out.
+
+202
+00:11:02,612 --> 00:11:08,512
+但实际是……我们仍在区间内，下一根K线开在区间里面
+But what happens is... We're still inside, you know, we open the next bar inside the zone.
+
+203
+00:11:10,212 --> 00:11:14,112
+如果这是阻力位，价格应该在下方交易
+If it's going to be a resistance level, we should be trading below it.
+
+204
+00:11:14,112 --> 00:11:20,212
+如果在区间内或上方交易，那它就不再是阻力位了
+If we're trading inside of it or above it, it's not a resistance level anymore.
+
+205
+00:11:21,512 --> 00:11:23,312
+你要结合上下文来判断
+You have to take things into context.
+
+206
+00:11:25,512 --> 00:11:27,421
+如果有什么变化，一旦你开始
+If anything, once you start
+
+207
+00:11:27,421 --> 00:11:30,093
+在上方停留，并且
+spending time above it and you're getting
+
+208
+00:11:30,093 --> 00:11:33,911
+市场显示要上涨的迹象
+indications that the market's going higher, it's no longer resistance.
+
+209
+00:11:33,912 --> 00:11:35,412
+它更像是支撑位
+It's more of support.
+
+210
+00:11:40,092 --> 00:11:41,892
+好的，这是一张5年图表
+Okay, so this is a five-year chart.
+
+211
+00:11:41,992 --> 00:11:48,392
+现在，我们来讲更高级的支撑位和阻力位。
+Now, I'm going to get into a little bit more advanced support and resistance.
+
+212
+00:11:48,992 --> 00:11:51,492
+接下来要讲的是控制点。
+Now, what I'm going to talk about is point of control.
+
+213
+00:11:51,992 --> 00:11:55,992
+控制点，之前的课程里提到过，
+Point of control, I talked earlier in lessons about how it's...
+
+214
+00:11:56,692 --> 00:11:58,517
+它是K线中成交量最大的区间，
+Area in a bar with the most
+
+215
+00:11:58,517 --> 00:12:00,342
+一旦你确定处于
+volume and once you decide you're in
+
+216
+00:12:00,342 --> 00:12:03,992
+下跌或上涨趋势，它就会成为你的支撑位和阻力位。
+a downtrend or an uptrend it's going to be your support and resistance levels.
+
+217
+00:12:04,392 --> 00:12:06,649
+所以，如果处于下跌趋势，
+So if you're in a downtrend your point
+
+218
+00:12:06,649 --> 00:12:08,624
+你的控制点
+of control is going to be your
+
+219
+00:12:08,624 --> 00:12:12,291
+就是阻力位；如果处于上涨趋势，它就是支撑位。
+resistance and if you're in an uptrend it's going to be your support.
+
+220
+00:12:13,392 --> 00:12:16,592
+那这里发生了什么？价格在逐步下跌。
+So what do you have here? You have You're working your way down.
+
+221
+00:12:16,992 --> 00:12:18,092
+控制点就在这里。
+Point of control is right here.
+
+222
+00:12:18,192 --> 00:12:19,892
+价格回涨接近它，然后又回落。
+We traded back up towards it, came off.
+
+223
+00:12:20,192 --> 00:12:22,192
+控制点在这里，价格涨到它附近，然后又回落。
+Point of control right here, traded up to it, came off.
+
+224
+00:12:22,592 --> 00:12:25,892
+现在这里出现了变化，这很明显。
+Now here is where you have the change. I think it's fairly obvious.
+
+225
+00:12:25,892 --> 00:12:29,292
+你可以从价格拒绝和单印区看出来。
+You can sort of see it with the price rejections here, the small prints.
+
+226
+00:12:29,792 --> 00:12:34,592
+所以，当价格涨到这个区域，你还没确信这是低点。
+And so you say you're not yet convinced that this is a low once you start getting up in here.
+
+227
+00:12:35,992 --> 00:12:37,078
+我认为这更明显，
+I think it's more obvious,
+
+228
+00:12:37,078 --> 00:12:38,164
+但首先，控制点
+but first off, the point
+
+229
+00:12:38,164 --> 00:12:40,990
+就在这里，价格下跌到离它1个最小价格单位的位置。
+of control is right here. We came down within a tick of it.
+
+230
+00:12:41,492 --> 00:12:43,592
+控制点在这里，价格直接跌到这个最小价格单位。
+Point of control is right here. We came right down to the tick.
+
+231
+00:12:43,592 --> 00:12:45,992
+控制点在这里，价格下跌到离它2个最小价格单位的位置。
+Point of control is here. We came down within two ticks.
+
+232
+00:12:46,392 --> 00:12:50,492
+控制点在这里，价格下跌到离它1个最小价格单位的位置，然后市场收盘。
+Point of control is here. We came down within a tick. And then the market closed for the day.
+
+233
+00:12:52,592 --> 00:12:58,192
+这是市场自发生成的信息，只有成交量足迹图才能提供这些信息。
+This is market generated information and it's information you can only get with a volume footprint chart.
+
+234
+00:12:58,192 --> 00:12:59,592
+在K线图上看不到。
+You're not going to get it on a bar chart.
+
+235
+00:12:59,692 --> 00:13:02,892
+在K线图上也看不到。
+You're not going to get it in a candlestick chart.
+
+236
+00:13:03,692 --> 00:13:05,792
+其实你经常只是看一下
+You know, oftentimes you just look.
+
+237
+00:13:05,792 --> 00:13:07,942
+拿到一张图表，你可能会疑惑
+get a chart and you wonder
+
+238
+00:13:07,942 --> 00:13:10,092
+为什么价格会回踩到
+why the price retrace is back
+
+239
+00:13:10,092 --> 00:13:11,883
+前一根K线的某个区间，
+down to a certain area
+
+240
+00:13:11,883 --> 00:13:14,391
+然后出现反应。
+in the previous bar and then reacts.
+
+241
+00:13:16,792 --> 00:13:19,392
+你能看出这里为什么是控制点。
+You can see why here it's the point of control.
+
+242
+00:13:22,292 --> 00:13:26,792
+同样，在下跌趋势中，它充当阻力位。
+Again, on a downtrend, it's acting as your resistance.
+
+243
+00:13:27,192 --> 00:13:31,392
+价格上涨时，相差2个最小价格单位、1个、1个、再1个。
+It came up within two ticks, came up with one tick, within one tick, within one tick.
+
+244
+00:13:36,092 --> 00:13:38,192
+同样，在上升趋势中，这是豆粕。
+Again, in an uptrend, this is soy meal.
+
+245
+00:13:38,492 --> 00:13:45,592
+有人问，我能交易什么？有人会说，我交易流动性不足的市场。
+People ask, what can I trade? People say, hey, I trade this kind of illiquid market.
+
+246
+00:13:46,092 --> 00:13:49,292
+豆粕并不是很多人交易的品种。
+Soy meal isn't something that a lot of people trade.
+
+247
+00:13:50,692 --> 00:13:54,092
+大家更倾向于交易原油或标普500指数期货。
+People are more interested in trading crude oil or mini S&Ps.
+
+248
+00:13:54,092 --> 00:14:00,192
+但豆油是大豆的副产品。
+But soybean oil, it's a product of the soybeans.
+
+249
+00:14:00,192 --> 00:14:03,192
+榨大豆能得到豆油和豆粕。
+You crush the soybeans, you get soybean oil, soybean meal.
+
+250
+00:14:04,292 --> 00:14:05,492
+这就是豆粕。
+And this is soybean meal.
+
+251
+00:14:05,892 --> 00:14:06,992
+这是一个非常好的期货合约。
+It's a very nice contract.
+
+252
+00:14:06,992 --> 00:14:07,769
+其实
+And, you know,
+
+253
+00:14:07,769 --> 00:14:09,582
+很多商品都基于
+a lot of commodities are based on
+
+254
+00:14:09,582 --> 00:14:12,691
+供需关系，订单流理论也同样适用。
+supply and demand and hold the order flow theories the same way.
+
+255
+00:14:13,292 --> 00:14:17,992
+所以，你假设这是底部，价格会开始上涨。
+So, you know, you're assuming this is your bottom that you're going to start moving away.
+
+256
+00:14:17,992 --> 00:14:22,292
+所以，把控制点看作支撑位。
+So, you know, look at the point of controls as being your support.
+
+257
+00:14:22,392 --> 00:14:24,692
+这里有个控制点，价格下跌时相差2个最小价格单位。
+You know, so you got point of control here. It came down within two ticks.
+
+258
+00:14:24,692 --> 00:14:25,796
+它再次下跌
+It came down again
+
+259
+00:14:25,796 --> 00:14:26,900
+相差2个最小价格单位，
+within two ticks, within
+
+260
+00:14:26,900 --> 00:14:28,004
+2个最小价格单位，相差
+two ticks, within one
+
+261
+00:14:28,004 --> 00:14:30,489
+1个最小价格单位，相差2个最小价格单位，随着市场远离。
+tick, within two ticks as the market's moving away.
+
+262
+00:14:32,828 --> 00:14:35,328
+同样，豆粕也是一样。
+Again, soy meal, same thing.
+
+263
+00:14:35,728 --> 00:14:37,170
+如果你把这看作
+If you're taking this as
+
+264
+00:14:37,170 --> 00:14:38,612
+下跌趋势的起点，
+the beginning of your downtrend,
+
+265
+00:14:38,612 --> 00:14:40,054
+你有背离，
+you have your divergence, you've
+
+266
+00:14:40,054 --> 00:14:43,227
+这里有控制点，还有比率。
+got your point of control right here, you have your ratio.
+
+267
+00:14:44,028 --> 00:14:47,728
+如果你还没确认行情在这里启动，那你在这里确认。
+So if you're not yet convinced that the move is happening here, you're convinced here.
+
+268
+00:14:48,028 --> 00:14:51,028
+所以控制点就在这里，旁边还有两个。
+So the point of control is right here, you've got two side by side.
+
+269
+00:14:51,628 --> 00:14:53,728
+好，突破它2个最小价格单位也可以，没问题。
+Yeah, you break through it by a couple of ticks. That's fine.
+
+270
+00:14:54,028 --> 00:14:57,328
+有时候不一定精确，有时会超出一点。
+It's not exact level sometimes. Sometimes it does overshoot it.
+
+271
+00:14:58,628 --> 00:15:01,728
+现在新支撑位在这里，价格上涨了3个最小价格单位。
+Now here's your new level. It came up within three ticks.
+
+272
+00:15:01,728 --> 00:15:03,828
+新支撑位在这里，价格上涨了1个最小价格单位。
+Here's your new level. It came up within a tick.
+
+273
+00:15:04,228 --> 00:15:05,528
+这里价格上涨了1个最小价格单位。
+Here it came within one tick.
+
+274
+00:15:05,928 --> 00:15:07,528
+然后你会看到它在这里再次移动。
+Then you see it shift again here.
+
+275
+00:15:07,628 --> 00:15:10,928
+你有并排的K线，现在这里成了支撑位。
+You got the side-by-sides, and now this is becoming your support level.
+
+276
+00:15:12,028 --> 00:15:15,328
+我们在控制点附近波动了一阵，然后开始上涨。
+We sort of trade around this PLC here before going up.
+
+277
+00:15:18,632 --> 00:15:20,732
+好，这是债券图表，同样适用。
+Okay, this is a bond chart. Again, same thing.
+
+278
+00:15:21,032 --> 00:15:23,632
+这些都是市场自发生成的信息。
+This is, you know, it's market-generated information.
+
+279
+00:15:24,732 --> 00:15:28,132
+你处于上升趋势，然后回落到控制点这里。
+You're having your uptrend, and you're coming down exactly to the point of control here.
+
+280
+00:15:28,332 --> 00:15:29,332
+控制点，1个最小价格单位。
+Point of control, one tick.
+
+281
+00:15:29,532 --> 00:15:30,832
+控制点，几个最小价格单位。
+Point of control, a couple ticks.
+
+282
+00:15:31,432 --> 00:15:39,032
+如果你认为市场开始启动，那一旦确认自己掌握了
+You know, if you're assuming that the market is starting to move, then once you're convinced that you have the...
+
+283
+00:15:39,432 --> 00:15:43,632
+这里从上升趋势转向下跌趋势。
+Shift here, you know, from the uptrend and now you're going to start a downtrend.
+
+284
+00:15:43,932 --> 00:15:45,229
+你会看到单印区，
+You're seeing the single prints
+
+285
+00:15:45,229 --> 00:15:47,045
+这表明
+here, you know, it's indicating that price
+
+286
+00:15:47,045 --> 00:15:48,861
+高位的价格正在被拒绝，
+up here is being rejected and, you
+
+287
+00:15:48,861 --> 00:15:53,531
+你会考虑在控制点附近做空。
+know, you're looking to get short, you know, looking to get short somewhere around the point of controls.
+
+288
+00:15:54,432 --> 00:15:55,684
+我通常会
+You know, I would
+
+289
+00:15:55,684 --> 00:15:57,562
+预留几个最小价格单位，
+usually like to give it a
+
+290
+00:15:57,562 --> 00:16:01,631
+因为它通常会在2个最小价格单位内回升。
+couple ticks because, you know, it can... Come up within two ticks usually.
+
+291
+00:16:02,132 --> 00:16:04,565
+但这能给你一个入场点位，
+But it gives you an entry level and
+
+292
+00:16:04,565 --> 00:16:09,431
+如果你确信这是行情的起点，止损可以设得比较近。
+if you're convinced that that's the beginning of the move, your stop can be fairly close.
+
+293
+00:16:09,932 --> 00:16:12,432
+所以你的控制点就在这里。
+So you've got your point of control right here.
+
+294
+00:16:13,232 --> 00:16:17,432
+假设你还没确认这里就是顶部，
+Say you're not yet convinced that this is the top once you see it here.
+
+295
+00:16:17,932 --> 00:16:22,032
+你可以在这根K线内做空，然后获得一段漂亮的下跌行情。
+You're getting short somewhere in this bar and you get the nice little move down.
+
+296
+00:16:23,132 --> 00:16:24,332
+我本该标注，我的意思是，
+I should have put, I mean,
+
+297
+00:16:24,332 --> 00:16:25,532
+这是收盘前的时段，
+this is right before the close,
+
+298
+00:16:25,532 --> 00:16:27,732
+所以我不确定这时候开仓是否明智。
+so I don't know if it's prudent to start trading there.
+
+299
+00:16:27,732 --> 00:16:29,288
+但你要做的是，
+But, you know, what you're
+
+300
+00:16:29,288 --> 00:16:31,467
+你会
+going to do is you're going to
+
+301
+00:16:31,467 --> 00:16:33,957
+会考虑在控制点附近做空,
+be looking, you know, to get short around
+
+302
+00:16:33,957 --> 00:16:35,513
+在控制点上方,
+the point of control and,
+
+303
+00:16:35,513 --> 00:16:41,428
+最多在K线顶部上方设一个紧凑的止损单。
+you know, a tight stop just above, just above, you know, the top of the bar at worst case.
+
+304
+00:16:42,032 --> 00:16:42,698
+其实你
+But, you know, you're
+
+305
+00:16:42,698 --> 00:16:43,698
+真正要找的是
+really going to be looking, you
+
+306
+00:16:43,698 --> 00:16:45,531
+控制点另一侧的位置
+know, just on the other side of the point of control.
+
+307
+00:16:46,832 --> 00:16:47,832
+作为止损位。
+as your stop level.
+
+308
+00:16:49,832 --> 00:16:51,332
+好的，再来说国债。
+Okay, again, you know, this is the bonds.
+
+309
+00:16:51,332 --> 00:16:53,732
+现在价格开始上涨，然后横盘。
+So, you know, you're starting to work your way up. Sort of go sideways.
+
+310
+00:16:53,732 --> 00:16:57,532
+这里有三个控制点排成一列。
+You've got these three-pointed controls, you know, lined up here.
+
+311
+00:16:58,232 --> 00:17:01,032
+但整体多头气势更强。
+You know, but it's more bullish than bearish.
+
+312
+00:17:01,032 --> 00:17:03,132
+这里还有几个比率。
+You know, you've got a couple of ratios here.
+
+313
+00:17:03,232 --> 00:17:07,332
+不过这个点有点特殊，打乱了节奏。
+You do have this one, which sort of... You know, sort of throws a spanner in the works.
+
+314
+00:17:07,332 --> 00:17:11,732
+但总体来看，Delta是正的，市场开始上涨。
+But, you know, overall, the deltas are positive, and the market is starting to move up.
+
+315
+00:17:12,132 --> 00:17:12,760
+所以
+So, you know,
+
+316
+00:17:12,760 --> 00:17:13,807
+这个位置,
+this level right here, you
+
+317
+00:17:13,807 --> 00:17:14,645
+价格直接
+know, we come right
+
+318
+00:17:14,645 --> 00:17:16,530
+跌到这儿，然后突破一个最小价格单位。
+down to it, get through it by a tick.
+
+319
+00:17:16,532 --> 00:17:20,232
+看这里有个单印区，价格在这一带被价格拒绝。
+You see you've got this single print here. Price is being rejected down here.
+
+320
+00:17:23,132 --> 00:17:25,154
+我觉得这交易很简单，
+I say it's a no-brainer, but
+
+321
+00:17:25,154 --> 00:17:27,176
+而且
+it's a trade that you're going
+
+322
+00:17:27,176 --> 00:17:29,198
+风险极低,
+to have very low risk on
+
+323
+00:17:29,198 --> 00:17:31,557
+如果你在28、29点做多。
+if you're getting long in here at 28, 29.
+
+324
+00:17:32,832 --> 00:17:36,932
+止损单设在26点附近，市场随即上涨。
+Your stop is just down here around the 26 level, and the market goes up.
+
+325
+00:17:37,532 --> 00:17:42,932
+可以看到它把控制点当作上涨途中的支撑位。
+You can see it's using the point of controls as the support levels on the way up.
+
+326
+00:17:47,144 --> 00:17:50,744
+好的，回到原油。原油有时候交易起来有点棘手。
+Okay, back to crude. You know, crude is kind of a beast sometimes to trade.
+
+327
+00:17:52,444 --> 00:17:55,144
+我们快速聊一下。
+You know, let's talk about this real quick.
+
+328
+00:17:55,144 --> 00:17:56,244
+现在处于横盘。
+You know, we're sideways here.
+
+329
+00:17:56,244 --> 00:17:58,144
+我更倾向于做空。
+You know, I'm more inclined to look to get short.
+
+330
+00:17:58,544 --> 00:18:00,144
+之前上涨后被止损出局。
+You know, we did come up, get stopped out.
+
+331
+00:18:00,244 --> 00:18:00,982
+如果
+You know, if
+
+332
+00:18:00,982 --> 00:18:02,212
+你想做空
+you're looking to get short
+
+333
+00:18:02,212 --> 00:18:03,688
+我通常会把
+here, you know, usually I put
+
+334
+00:18:03,688 --> 00:18:05,164
+止损单设在
+my stop up, you know, just
+
+335
+00:18:05,164 --> 00:18:09,840
+控制点上方几个最小价格单位，或某根K线的高点。
+above a few ticks above the point of control or even at the high of one of the bars.
+
+336
+00:18:10,944 --> 00:18:16,744
+看起来像顶部，但实际情况呢？
+You know, and again, you know, it looks toppy, you know, but what do you have?
+
+337
+00:18:16,744 --> 00:18:18,844
+这里有这些控制点。
+You know, you got these point of controls here.
+
+338
+00:18:19,344 --> 00:18:21,244
+其实这还是横盘行情。
+You know, if anything, this is a sideways market.
+
+339
+00:18:21,544 --> 00:18:24,744
+说实话，很难判断，但我更倾向于做空。
+It's hard, really, to, like I said, if anything, I'm more inclined to get short.
+
+340
+00:18:25,344 --> 00:18:30,644
+但后来我发现，价格开始走出更高的低点。
+But then, you know, I noticed that what's happening is we're starting to, you know, make higher lows.
+
+341
+00:18:32,244 --> 00:18:33,972
+上涨过程中，
+On the way up and it's
+
+342
+00:18:33,972 --> 00:18:35,700
+而且每次
+acting as, and each time as
+
+343
+00:18:35,700 --> 00:18:37,140
+形成更高低点时，
+we're making that higher low,
+
+344
+00:18:37,140 --> 00:18:39,444
+它就起到支撑位的作用。
+you know, it's acting as a support level.
+
+345
+00:18:40,044 --> 00:18:43,944
+而之前只是横盘震荡，走平。
+Whereas here you're just sort of going flat line, you know, going sideways.
+
+346
+00:18:44,644 --> 00:18:45,800
+一旦你开始看到
+Once you start seeing the
+
+347
+00:18:45,800 --> 00:18:46,956
+控制点上涨，我会
+point of controls rallying, I'll
+
+348
+00:18:46,956 --> 00:18:48,343
+说它在上涨，但
+say rallying, but you know, the
+
+349
+00:18:48,343 --> 00:18:49,268
+控制点
+point of controls are
+
+350
+00:18:49,268 --> 00:18:52,043
+越来越高，我总会观察
+going higher and higher, you know, I'm always looking to see where
+
+351
+00:18:53,344 --> 00:18:57,644
+K线相对于前一个控制点的收盘位置。
+where the bar ends relative to the point of control before it.
+
+352
+00:18:57,944 --> 00:19:01,544
+进场后，我发现价格开始拒绝这些价位。
+And when we're getting in here, I can see, hey, we're starting to reject these prices.
+
+353
+00:19:01,544 --> 00:19:04,244
+这里有一个单印区，比率
+I got a single print here with the ratio.
+
+354
+00:19:05,944 --> 00:19:06,772
+相当
+You know, fairly
+
+355
+00:19:06,772 --> 00:19:08,705
+有信心做多
+confident in looking to take a long
+
+356
+00:19:08,705 --> 00:19:11,743
+回调。我们开始突破这个区间上沿。
+dip. We're starting to break out of this area up here.
+
+357
+00:19:11,944 --> 00:19:16,844
+之前我把它看作阻力位，现在变成支撑位了。
+You know, what I was looking for before. As this being resistance is now going to be my support.
+
+358
+00:19:16,944 --> 00:19:20,144
+可以看到，我们直接突破，成交量很薄。
+And you can see we just jump right through it here with very thin volume.
+
+359
+00:19:21,744 --> 00:19:24,744
+所以之前的阻力位现在变成支撑位。
+So what was resistance before is now becoming support.
+
+360
+00:19:25,044 --> 00:19:31,444
+可以看到，新的控制点已在之前的阻力位上方形成。
+And you can see we're forming the new point of controls well above this earlier level of resistance.
+
+361
+00:19:34,344 --> 00:19:35,744
+好的，这还是原油期货合约。
+Okay, so this is the crude again.
+
+362
+00:19:37,144 --> 00:19:40,944
+看这里，正中间。
+You know, look here, right in the middle.
+
+363
+00:19:41,444 --> 00:19:47,144
+每个层级的控制点都在逐步抬高。
+You have, you know, this sort of, you know, point controls are a little bit higher each level.
+
+364
+00:19:47,144 --> 00:19:49,344
+现在开始回落，出现了单印区。
+We're starting to come down here. You get that single print.
+
+365
+00:19:50,144 --> 00:19:52,744
+这个区间在告诉你，
+So, you know, it's telling you this area, you know,
+
+366
+00:19:54,544 --> 00:19:55,861
+第一眼看过去，你可能会想，
+When you're first looking at
+
+367
+00:19:55,861 --> 00:19:57,705
+这可能是支撑位，
+it, you're thinking, well, you know, maybe
+
+368
+00:19:57,705 --> 00:19:59,812
+但接着你看到这些阴线，
+this is support, but then you're seeing these
+
+369
+00:19:59,812 --> 00:20:01,919
+还有这里的单印区，
+red candles and you see this single print
+
+370
+00:20:01,919 --> 00:20:02,709
+所以，
+here, so, you
+
+371
+00:20:02,709 --> 00:20:04,026
+如果能稳住在下方，
+know, you're thinking if we
+
+372
+00:20:04,026 --> 00:20:05,606
+那下跌空间就会更大。
+can stay below it, then, you
+
+373
+00:20:05,606 --> 00:20:08,240
+其实，我们还有更大的下行空间。
+know, we've got more of a capacity to move lower.
+
+374
+00:20:08,344 --> 00:20:15,244
+然后这里出现单印区，抱歉，是这个比率，而且我们一直压在下方。
+And then you get this single print, sorry, this ratio here, and, you know, we're staying below this.
+
+375
+00:20:16,144 --> 00:20:21,151
+这个区域，所有控制点排成一列的地方。其实，
+This sort of, whatchamacallit, this sort of area here where all the point of controls are lined up.You know,
+
+376
+00:20:21,151 --> 00:20:22,168
+我们又回涨测试这个位置，
+we came back up to
+
+377
+00:20:22,168 --> 00:20:23,185
+在这里测试它，然后
+test it here, and, you
+
+378
+00:20:23,185 --> 00:20:26,442
+但离它还有几个最小价格单位时就开始抛售。
+know, we couldn't, you know, got within a few ticks of it, and then sold off.
+
+379
+00:20:30,532 --> 00:20:31,832
+好的，这是E-迷你。
+Okay, so this is the E-minis.
+
+380
+00:20:33,132 --> 00:20:33,944
+这里的情况是，
+And what you have
+
+381
+00:20:33,944 --> 00:20:35,162
+好的，先是一波上涨，
+here is, okay, you've got the
+
+382
+00:20:35,162 --> 00:20:36,380
+但涨到顶部时，
+rally up here, but then you've
+
+383
+00:20:36,380 --> 00:20:39,831
+你会看到控制点，还有大成交量。
+got right up at the top, you've got the point of control, you've got the heavy volume.
+
+384
+00:20:40,332 --> 00:20:43,674
+大成交量往往会形成阻力位。
+You know, heavy volume can act as resistance.
+You know,
+
+385
+00:20:43,674 --> 00:20:45,045
+如果只看K线图，
+if you're looking at a bar chart, you're
+
+386
+00:20:45,045 --> 00:20:46,930
+你不一定能发现顶部有大成交量。
+not necessarily going to know that there's heavy volume up here.
+
+387
+00:20:47,332 --> 00:20:49,832
+但在成交量足迹图里，你能看得很清楚。
+When you're looking at a volume footprint chart, you can see that.
+
+388
+00:20:52,432 --> 00:20:58,032
+可以比较有信心判断市场会抛售，尤其是后面又出现单印区。
+Be fairly confident that the market is going to sell off, especially after your follow-up with a single print here.
+
+389
+00:21:02,412 --> 00:21:08,012
+同样是迷你合约，这里控制点连续排列。
+Again, E-minis. And what do you have? You've got point of control side by side, side by side.
+
+390
+00:21:08,612 --> 00:21:09,657
+你真正要开始寻找的是
+Really what you're starting to
+
+391
+00:21:09,657 --> 00:21:11,120
+你要观察的是
+look for is you want to look
+
+392
+00:21:11,120 --> 00:21:12,583
+市场何时会开始远离
+for when the market is going to
+
+393
+00:21:12,583 --> 00:21:15,510
+开始远离。虽然控制点连续排列，但仍有负Delta。
+start moving away. Even though it's side by side, it still has negative deltas.
+
+394
+00:21:15,612 --> 00:21:16,726
+你要看到
+You want to see the
+
+395
+00:21:16,726 --> 00:21:18,286
+正Delta开始累积。
+positive deltas start to build up. Like
+
+396
+00:21:18,286 --> 00:21:19,622
+像我之前说的，
+I said, if you're going to
+
+397
+00:21:19,622 --> 00:21:20,958
+如果要从低点
+start to move away from a
+
+398
+00:21:20,958 --> 00:21:23,409
+开始上涨，需要正Delta确认。
+low, you're going to need to have positive deltas confirm it.
+
+399
+00:21:23,812 --> 00:21:28,112
+看这里，这里、这里都有正Delta。
+And you're seeing here, you got the positive delta here, here, here.
+
+400
+00:21:28,212 --> 00:21:29,041
+所以
+So, you know,
+
+401
+00:21:29,041 --> 00:21:30,977
+一旦从这根K线开始，
+once you're starting in this bar and
+
+402
+00:21:30,977 --> 00:21:32,913
+突破这些区域后，
+you get through these areas here, you're
+
+403
+00:21:32,913 --> 00:21:34,849
+你要关注的是
+going to be looking at, you know,
+
+404
+00:21:34,849 --> 00:21:36,231
+这个区域
+this area here where you
+
+405
+00:21:36,231 --> 00:21:38,166
+如果你还没做多，
+want to be, you know, if you're
+
+406
+00:21:38,166 --> 00:21:41,208
+就该考虑做多了。
+not already long, you know, you should be considering getting long.
+
+407
+00:21:41,612 --> 00:21:42,308
+而且
+And, you know,
+
+408
+00:21:42,308 --> 00:21:43,932
+从控制点可以看出，
+you can tell by the point of
+
+409
+00:21:43,932 --> 00:21:47,412
+上涨过程中这些价位已经开始起到支撑作用。
+controls, we're coming down to the levels acting as support already on your move up.
+
+410
+00:21:48,612 --> 00:21:53,412
+最新的行情可能在这里或这里。
+You know, the latest to be in the move is sort of, you know, in here or in here.
+
+411
+00:21:53,612 --> 00:21:56,512
+你可以从中获利几个点。
+You know, you can get, you know, get a few points out of it.
+
+412
+00:21:58,012 --> 00:22:02,012
+好的，同样是E-迷你图表，这里成交量很大。
+Okay, again, this is the E-mini chart, and we have a heavy volume up here.
+
+413
+00:22:02,312 --> 00:22:04,712
+第一次冲高时，出现了背离。
+Now, the first time we came up to the high, you have a divergence.
+
+414
+00:22:04,712 --> 00:22:07,712
+突破高点后，又有大量成交量阻挡。
+You got through the high, but then there's heavy volume stopping it.
+
+415
+00:22:08,012 --> 00:22:11,612
+这就是你的阻力位。
+You know, this is going to be your... Area of resistance.
+
+416
+00:22:12,012 --> 00:22:15,112
+第一根K线出现背离时，控制点就在这里。
+You got the point of control in this first bar where you have the divergence.
+
+417
+00:22:16,412 --> 00:22:20,412
+突破高点后，控制点出现在下一个价位。
+When you took out the high, you got the point of control right at the next level, next price level.
+
+418
+00:22:20,912 --> 00:22:23,212
+这里成交量很大。
+And you have this heavy volume up here.
+
+419
+00:22:23,312 --> 00:22:28,412
+所以，支撑位和阻力位其实是一个价格区间。
+So you could be, like I say, you know, support and resistance, you know, it's an area.
+
+420
+00:22:28,512 --> 00:22:31,512
+这是一个价格区间，不一定是某个特定价格。
+That's a price area, not necessarily one particular price.
+
+421
+00:22:32,012 --> 00:22:32,666
+You know,
+
+422
+00:22:32,666 --> 00:22:34,629
+如果你愿意，
+you can, if you want to,
+
+423
+00:22:34,629 --> 00:22:39,210
+可以尝试精确到某个具体价格。
+you can go down and try and finesse it to an exact price level.
+
+424
+00:22:39,212 --> 00:22:39,870
+但其实，
+But, you
+
+425
+00:22:39,870 --> 00:22:41,515
+大多数情况下，
+know, most often or not,
+
+426
+00:22:41,515 --> 00:22:43,819
+它是一个区间，
+it's going to be an area, you
+
+427
+00:22:43,819 --> 00:22:47,110
+一个价格区间，不一定是单一价格。
+know, a price area, not necessarily an individual price level.
+
+428
+00:22:48,612 --> 00:22:51,812
+然后呢？市场开始抛售。
+And what happens? We just start selling off.
+
+429
+00:22:52,112 --> 00:22:57,712
+就像我刚才说的，把这里当作阻力位，市场再也没回到这个区间。
+Like I said, using this area here as your resistance level, the market never came back up.
+
+430
+00:22:57,912 --> 00:22:58,512
+我们试过了。
+We tried.
+
+431
+00:22:59,012 --> 00:23:03,912
+但没有延续，现在只看到更多抛售。
+You see, there's no follow-through, and all you're seeing now is more selling.
+
+432
+00:23:03,912 --> 00:23:05,312
+你会看到买卖失衡。
+You're seeing selling imbalances.
+
+433
+00:23:06,112 --> 00:23:07,685
+这里有几个，
+Here you've got a couple,
+
+434
+00:23:07,685 --> 00:23:09,887
+三个买单失衡，但我们仍然无法
+three buying imbalances, but we still can't
+
+435
+00:23:09,887 --> 00:23:12,404
+突破，价格又回到
+get past, it comes right back up to
+
+436
+00:23:12,404 --> 00:23:16,809
+这个控制点，这个单印区，然后继续下跌。
+this point of control, this single print here, and then it just continues lower.
+
+437
+00:23:18,812 --> 00:23:24,512
+就像我刚才说的，支撑位和阻力位有时要看作区间，而非单一价格。
+Like I said, think of support and resistance sometimes as levels, not individual prices.
+
+438
+00:23:24,812 --> 00:23:25,921
+我觉得很多人会
+I think people sort
+
+439
+00:23:25,921 --> 00:23:27,584
+误入歧途，
+of get sidetracked and think of
+
+440
+00:23:27,584 --> 00:23:30,911
+认为它是单一价格，一旦突破就失效。
+it as an individual price, and if it violates it, it fails.
+
+441
+00:23:31,212 --> 00:23:31,912
+其实未必。
+Not necessarily.
+
+442
+00:23:32,012 --> 00:23:36,512
+你要把它看作一个价格区间。
+You have to think of it as a price area.
+
+443
+00:23:38,012 --> 00:23:39,987
+好的，这是个完美的例子。
+Okay, that's a perfect example.
+You know,
+
+444
+00:23:39,987 --> 00:23:41,176
+我们之前涨到这儿，
+we had come up here,
+
+445
+00:23:41,176 --> 00:23:42,840
+在这里创了高点，
+we hit our high here, you know,
+
+446
+00:23:42,840 --> 00:23:44,267
+出现比率，还有
+we got a ratio, got a
+
+447
+00:23:44,267 --> 00:23:48,310
+小单成交，然后在K线底部，出现了卖单失衡。
+small print, and then, you know, at the bottom of the bar, you've got the selling imbalance.
+
+448
+00:23:48,512 --> 00:23:52,512
+在卖单失衡区下方开盘，回测后突破到另一侧。
+We open up below the selling imbalance, trade back into it, get through to it on the other side.
+
+449
+00:23:52,812 --> 00:23:55,112
+其实我们仍处于控制点下方。
+You know, we're still below this point of control.
+
+450
+00:23:56,412 --> 00:23:58,512
+所以这里就是你的
+So this is your...
+
+451
+00:23:58,912 --> 00:24:00,875
+阻力区间，只要你
+resistance area, as long as you
+
+452
+00:24:00,875 --> 00:24:02,838
+能大致留在这个
+can sort of stay in this
+
+453
+00:24:02,838 --> 00:24:06,110
+区间内，最好在下方，跌势就会持续。
+area, preferably below it, then the move will continue lower.
+
+454
+00:24:07,612 --> 00:24:09,709
+但如果你试图精确选一个
+But if you're trying to really pick an
+
+455
+00:24:09,709 --> 00:24:11,806
+具体价位，然后说，好，这个卖单失衡区的中间
+individual level and say, okay, the middle of
+
+456
+00:24:11,806 --> 00:24:13,903
+就是我的阻力位，如果我们突破它
+this selling imbalance is going to be my
+
+457
+00:24:13,903 --> 00:24:15,476
+1-2个最小价格单位，然后离场，
+level, and if we get on
+
+458
+00:24:15,476 --> 00:24:17,049
+另一侧则
+the other side of it by
+
+459
+00:24:17,049 --> 00:24:19,408
+高出1-2个最小价格单位就离场，
+a tick or two and we get out, well,
+
+460
+00:24:20,412 --> 00:24:23,812
+要知道上面还有这个控制点可以作为掩护。
+you know that you have this level up here, this point of control to hide behind.
+
+461
+00:24:25,012 --> 00:24:26,212
+而且，其实我们
+And, you know, we
+
+462
+00:24:26,212 --> 00:24:28,012
+直接交易到区间中间，
+traded, you know, literally into the
+
+463
+00:24:28,012 --> 00:24:31,612
+又测试了一次才开始抛售。
+middle of the zone and we tested it again before selling off.
+
+464
+00:24:35,148 --> 00:24:38,448
+这是分时图，你看到的情况一样，对吧？
+This is a mini chart, and you're seeing the same thing, right?
+
+465
+00:24:38,548 --> 00:24:42,148
+这里有个买单失衡区，就在摆动低点附近。
+You've got the buying imbalance here, just off sort of the swing low.
+
+466
+00:24:42,948 --> 00:24:45,014
+我们在区间外开盘的这根K线回测后，
+The bar we opened up outside of the
+
+467
+00:24:45,014 --> 00:24:46,564
+区间交易回到这个位置，我们
+zone trade back into it, we
+
+468
+00:24:46,564 --> 00:24:49,147
+突破到另一侧1个最小价格单位。
+get on the other side of it by a tick.
+
+469
+00:24:49,548 --> 00:24:51,648
+然后支撑位就形成了。
+Then the support is there.
+
+470
+00:24:51,648 --> 00:24:56,948
+你已经看到买盘在这里回流，市场随之反弹。
+You've seen the buying come back in that occurred here. And the market works its way back up.
+
+471
+00:25:03,248 --> 00:25:05,048
+好的，这是E-迷你。
+Okay, this is the E-mini.
+
+472
+00:25:05,048 --> 00:25:10,448
+这个图稍微复杂一点，但你一眼能看出什么？
+This one is a little bit more trickier, but just at a glance, what are you seeing?
+
+473
+00:25:10,648 --> 00:25:11,348
+什么最显眼？
+What stands out?
+
+474
+00:25:12,648 --> 00:25:15,748
+从左边这根K线开始看。
+Look at it from this bar to the left.
+
+475
+00:25:16,948 --> 00:25:19,048
+结果是…
+The result is...
+
+476
+00:25:19,548 --> 00:25:20,748
+在图表的右侧。
+On the right side of the chart.
+
+477
+00:25:20,848 --> 00:25:24,548
+但当这些控制点处于同一价位时，上面会形成一个比率。
+But when you have these point of controls at the same level, you have a ratio up here.
+
+478
+00:25:25,048 --> 00:25:26,704
+同样，控制点
+Again, the point of control is
+
+479
+00:25:26,704 --> 00:25:28,912
+价格回涨至比率区间
+you came back up towards the ratio and
+
+480
+00:25:28,912 --> 00:25:31,948
+但始终无法达到或突破该价位。
+you couldn't get up to that level or get past it.
+
+481
+00:25:32,948 --> 00:25:34,148
+随后市场开始抛售。
+And then the market sells off.
+
+482
+00:25:34,148 --> 00:25:39,648
+但你的第一个阻力位起点，就是这些控制点所在的位置。
+But your first starting point as the resistance level is where all these point of controls are.
+
+483
+00:25:41,048 --> 00:25:44,348
+第二个区域在上方，也就是比率所在的位置。
+Your second part is up here at the top where you have the ratio.
+
+484
+00:25:44,348 --> 00:25:51,648
+所以，从这个高点到这些控制点之间的任何区域，都是你的阻力区间。
+So anywhere between this high and these point of controls is going to be your area of resistance.
+
+485
+00:25:51,648 --> 00:25:53,348
+我之前说这是阻力区间。
+I said it's a resistance area.
+
+486
+00:25:53,448 --> 00:25:55,409
+很多人会被误导，认为
+People get blinded and think it's
+
+487
+00:25:55,409 --> 00:25:58,024
+阻力位是一个单一价格，
+going to be a single price like you
+
+488
+00:25:58,024 --> 00:26:01,947
+比如觉得‘这就是阻力位，我们已经突破到另一边了’
+think, oh, this is your resistance, and we're on the other side.
+
+489
+00:26:02,348 --> 00:26:05,148
+只差几个最小价格单位就守不住了。
+by a few ticks that it's not going to hold well.
+
+490
+00:26:06,848 --> 00:26:10,748
+我认为这种想法、这种分析方式很差。
+I think it's poor thinking, poor analysis in that respect.
+
+491
+00:26:11,348 --> 00:26:12,495
+我强调过这是一个
+I said it's an
+
+492
+00:26:12,495 --> 00:26:14,216
+区间，而我们确实回到了
+area, and we came back into
+
+493
+00:26:14,216 --> 00:26:15,937
+这个区间，并且
+the area, and we rejected the
+
+494
+00:26:15,937 --> 00:26:17,945
+出现价格拒绝，然后抛售。
+prices up here, and we sold off.
+
+495
+00:26:21,448 --> 00:26:24,748
+同样，这里出现了买卖失衡。
+Again, you've got the selling imbalance.
+
+496
+00:26:24,848 --> 00:26:26,185
+我们在下方花了很多时间，
+We spend a lot of time
+
+497
+00:26:26,185 --> 00:26:27,522
+然后回涨到这个区间，
+below it. We do come back
+
+498
+00:26:27,522 --> 00:26:29,304
+仅在控制点另一侧
+up into it. We trade just on the
+
+499
+00:26:29,304 --> 00:26:32,646
+交易了一下，就继续下跌。
+other side, just on the other side of the point of control and continue lower.
+
+500
+00:26:33,248 --> 00:26:35,057
+对我来说，我更倾向于
+Now, for me, I prefer
+
+501
+00:26:35,057 --> 00:26:37,590
+利用这个买卖失衡，
+to use this selling imbalance, have this
+
+502
+00:26:37,590 --> 00:26:40,847
+把这个区域标出来。我会标出5根K线的范围。
+zone drawn out. I draw it out five spaces.
+
+503
+00:26:41,248 --> 00:26:44,548
+我不指望它能持续整天有效。
+I'm not looking for it to hold the rest of the day.
+
+504
+00:26:45,748 --> 00:26:52,848
+而是把它当作即时支撑位或阻力位，取决于你有什么类型的堆叠失衡区。
+Using it as an immediate support or resistance level, depending on what type of stacked imbalance you have it.
+
+505
+00:26:52,848 --> 00:27:00,648
+但如果超过5根K线，我真的觉得它会失去效力。
+But if after five bars, I really feel it loses its effectiveness.
+
+506
+00:27:00,848 --> 00:27:04,748
+这次的情况是，第8根K线回测后又守住了。
+In this case, it did come back in the eighth bar and tested it and held again.
+
+507
+00:27:04,748 --> 00:27:08,348
+但大多数情况下，我更期望它在接下来的5根K线内有效。
+But for the most part, I'm really looking forward to hold over the next five bars.
+
+508
+00:27:08,948 --> 00:27:14,948
+我更倾向于行情快速形成，而不是等待
+For me, I like the move to happen fairly quick rather than wait out to...
+
+509
+00:27:15,448 --> 00:27:18,848
+等上5、6、7、8、9、10根K线
+You know, wait out 5, 6, 7, 8, 9, 10 bars.
+
+510
+00:27:19,548 --> 00:27:20,529
+其实
+But you see, I
+
+511
+00:27:20,529 --> 00:27:22,001
+同样的分析逻辑
+mean, the same analysis, you know,
+
+512
+00:27:22,001 --> 00:27:23,473
+这是你的初始区间
+this is your initial zone, you
+
+513
+00:27:23,473 --> 00:27:27,645
+然后你会关注控制点，最差的情况可能在这里
+know, then you'll be looking at the point of control, you know, in worst case up here.
+
+514
+00:27:27,648 --> 00:27:32,048
+所以，这根K线会成为你的阻力位
+So, you know, this bar is going to be your resistance, you know, you can't
+
+515
+00:27:32,048 --> 00:27:36,348
+价格回到阻力位附近，稍微突破后又抛售
+came back up into resistance, got back through it a little bit, and then sold off.
+
+516
+00:27:36,548 --> 00:27:37,483
+其实
+You know, I mean,
+
+517
+00:27:37,483 --> 00:27:39,354
+一旦你开始在区间另一侧交易
+once you start trading on the other side
+
+518
+00:27:39,354 --> 00:27:41,225
+你可以开始
+of this zone, okay, you could start to,
+
+519
+00:27:41,225 --> 00:27:43,096
+我不想说担心，但
+I don't want to say worry, but, you
+
+520
+00:27:43,096 --> 00:27:43,797
+你会开始
+know, you start
+
+521
+00:27:43,797 --> 00:27:45,434
+真正关注
+to really pay attention and, you know,
+
+522
+00:27:45,434 --> 00:27:49,644
+看看价格在接近控制点或高点时的表现
+see how price is acting as you get to the point of control or up near the high.
+
+523
+00:27:54,048 --> 00:27:57,748
+这里的控制点基本排成一列
+Again, this is the point of controls all sort of lined up here.
+
+524
+00:27:59,048 --> 00:28:01,948
+一开始就有两个控制点并排
+And you got the two right off the bat, side by side.
+
+525
+00:28:03,148 --> 00:28:07,248
+然后这里出现第三个，只隔了一根K线
+And then you get this third one here, just one bar removed.
+
+526
+00:28:07,348 --> 00:28:13,248
+但关键是市场尝试回涨至控制点上方
+But what's important is the market tried to rally back up above this point of control.
+
+527
+00:28:14,348 --> 00:28:18,048
+也就是那两根K线的位置，但没能触及高点，随后继续下跌
+Where the two bars are, but we couldn't get up to the high, and then we continue lower.
+
+528
+00:28:18,048 --> 00:28:23,948
+所以，这说明这个区间内会形成阻力位
+So, I mean, it's telling you that this area in here is going to be your resistance.
+
+529
+00:28:24,048 --> 00:28:29,348
+只要价格保持在下方，短期内就可能出现抛售
+As long as you can stay below it, then, you know, look for that sell-off in the short term.
+
+530
+00:28:34,608 --> 00:28:40,208
+反过来，你先看到这两个控制点
+Again, in sort of the opposite direction, you've got, first you're seeing these two pointed controls here.
+
+531
+00:28:41,708 --> 00:28:42,908
+价格逐步上涨
+Mark is working his way up,
+
+532
+00:28:42,908 --> 00:28:44,508
+然后出现一根阴线，接着是
+then you get a red, followed by a
+
+533
+00:28:44,508 --> 00:28:45,708
+阳线，再一根阳线
+green, followed by another green, but
+
+534
+00:28:45,708 --> 00:28:48,108
+但仍在这个区间内，接着是阴线和阳线
+still sort of in that area, then a red and a green.
+
+535
+00:28:48,508 --> 00:28:54,208
+但关键是，一开始你看到这两个控制点在同一水平
+But what's important is you're seeing, well initially you're seeing these two pointed controls at the same level.
+
+536
+00:28:54,508 --> 00:28:57,508
+这里也有两个，大致在同一水平
+You do have two here, roughly the same level.
+
+537
+00:28:58,008 --> 00:28:59,726
+但后来形成了这根K线
+But then when you form this other bar
+
+538
+00:28:59,726 --> 00:29:03,806
+这里连续出现三根K线，接着四根，然后你会发现...
+here where you've got three in a row, then four in a row, then what you have here is...
+
+539
+00:29:05,908 --> 00:29:10,008
+一个比率，小单成交比率，表明下方价格正在被价格拒绝。
+A ratio, a small print ratio, is telling you prices below are being rejected.
+
+540
+00:29:10,308 --> 00:29:16,708
+一开始你可能会想，市场在反弹，所以倾向于认为这是支撑位。
+At first you may think, well, I'm inclined to think it's going to be support because the market is rallying.
+
+541
+00:29:17,208 --> 00:29:21,908
+但老实说，市场横盘时，你无法确定它会是支撑位还是阻力位。
+But honestly, when you're going sideways, you don't know for sure if it's going to be support or resistance.
+
+542
+00:29:22,608 --> 00:29:24,508
+市场逐步上涨。
+The market worked its way up.
+
+543
+00:29:24,608 --> 00:29:28,708
+你可能希望它会暂停并形成支撑位，但不确定。
+You like to think it's going to be pausing and then be a support level, but you don't know.
+
+544
+00:29:29,008 --> 00:29:32,808
+如果市场开始抛售，它很可能变成阻力位。
+It could very well turn into a resistance level if the market starts to sell off.
+
+545
+00:29:32,908 --> 00:29:34,708
+这里确实有几根阴线。
+I mean, you do have a couple of red bars here.
+
+546
+00:29:35,808 --> 00:29:36,608
+其实
+You know, honestly.
+
+547
+00:29:37,508 --> 00:29:43,408
+从846这根K线往左看，很难判断它会是支撑位还是阻力位。
+Looking from this bar at 846 to the left, it's hard to tell if it's going to be support or resistance.
+
+548
+00:29:43,508 --> 00:29:45,258
+你想看到市场的信号，
+You want to see the sign as
+
+549
+00:29:45,258 --> 00:29:46,508
+看它会朝哪个方向移动。
+the market, if it's going
+
+550
+00:29:46,508 --> 00:29:49,508
+而你在这里看到了第一个信号。
+to move in which direction. And you see the first sign here.
+
+551
+00:29:49,508 --> 00:29:51,508
+你会看到小单成交比率
+You see the small print ratio
+
+552
+00:29:51,508 --> 00:29:53,174
+为59，这表示
+of 59, which is indicating prices
+
+553
+00:29:53,174 --> 00:29:57,174
+下方价格正在被价格拒绝，市场开始上涨。
+down here are being rejected and the market starts to move up.
+
+554
+00:30:00,008 --> 00:30:02,243
+所以即使你不打算在这根K线做多，
+So even if you're not looking to get
+
+555
+00:30:02,243 --> 00:30:04,198
+当你看到这根K线时，
+long in this bar, when you have
+
+556
+00:30:04,198 --> 00:30:05,595
+下一根K线
+this bar, the next bar
+
+557
+00:30:05,595 --> 00:30:09,227
+在850位置，我们已经突破了这个区间，控制点明显更高。
+at 850, we've broken out of this area, point of control is much higher.
+
+558
+00:30:09,808 --> 00:30:16,008
+但现在你会把1903这个控制点视为支撑区间。
+But you're going to be looking now as this point of control here at 1903 as your support area.
+
+559
+00:30:16,108 --> 00:30:18,204
+如果你能在其中某处做多，
+And if you could be getting along somewhere
+
+560
+00:30:18,204 --> 00:30:20,038
+它并没有像你期望的那样回踩。
+in there, it didn't pull back as
+
+561
+00:30:20,038 --> 00:30:23,444
+它只回落到1904，然后继续上涨。
+much as you'd like. It only got down to 1904, but it continued higher.
+
+562
+00:30:28,408 --> 00:30:31,308
+好的，这是一张15分钟图，
+Okay, you know, this is a 15-minute chart, and...
+
+563
+00:30:34,208 --> 00:30:37,308
+15分钟图是时间周期图。
+15-minute charts are time-based charts.
+
+564
+00:30:38,708 --> 00:30:40,780
+我通常看区间图，
+Usually I look at range charts,
+
+565
+00:30:40,780 --> 00:30:42,852
+但我把这个图放在这里，
+but I threw this up here
+
+566
+00:30:42,852 --> 00:30:46,306
+因为这是需要注意的重要点之一。
+because it's one of those things that's important to note.
+
+567
+00:30:48,508 --> 00:30:53,608
+不管你交易的是时间周期图还是区间图，分析的要点都是一样的。
+Whether you trade a time-based chart or a range-based chart, you still want to analyze the same things.
+
+568
+00:30:54,008 --> 00:30:55,408
+所以市场正在
+So the market is working its
+
+569
+00:30:55,408 --> 00:30:56,808
+逐步下行，持续走低,
+way down, working its way down,
+
+570
+00:30:56,808 --> 00:30:58,908
+然后突然出现这种情况。
+and then all of a sudden you get this.
+
+571
+00:30:59,408 --> 00:31:02,708
+看这张15分钟图，同一价位连续出现四个控制点。
+15 minute chart, right? So you get four point of controls right at the same level.
+
+572
+00:31:03,608 --> 00:31:05,293
+好的，其实
+Okay, and you know, that's an hour
+
+573
+00:31:05,293 --> 00:31:06,497
+这是一个小时的交易，
+of trading and you know,
+
+574
+00:31:06,497 --> 00:31:08,906
+控制点都集中在同一价位。
+the point of control is right at the same level.
+
+575
+00:31:09,408 --> 00:31:16,208
+所以此时我倾向于看空，把这里当作阻力位。
+So I'm inclined to be bearish the market at this point, you know, use this as my resistance level.
+
+576
+00:31:16,208 --> 00:31:17,854
+接下来的
+And what happens in the next
+
+577
+00:31:17,854 --> 00:31:19,225
+两根K线，在接下来的30分钟里，
+two bars over the next 30
+
+578
+00:31:19,225 --> 00:31:20,871
+价格上涨到这附近，
+minutes, we trade up here and
+
+579
+00:31:20,871 --> 00:31:22,517
+然后回落，
+come off, you know, and you're
+
+580
+00:31:22,517 --> 00:31:23,340
+比如
+talking, you know, 1893
+
+581
+00:31:23,340 --> 00:31:26,083
+从1893到1888，这波下跌有5个点。
+to, you know, 1888, you know, that's a five point move.
+
+582
+00:31:27,308 --> 00:31:28,108
+这给你
+That's giving you
+
+583
+00:31:29,408 --> 00:31:32,908
+某些 提供了不错的交易机会。
+some solid trading opportunities there.
+
+584
+00:31:33,508 --> 00:31:41,308
+接下来的45分钟里，基本又在同一价位出现三个控制点。
+Now, what happens over the next 45 minutes, you get basically three point of controls around the same levels.
+
+585
+00:31:41,308 --> 00:31:43,608
+每个价位相差1个最小价格单位。
+I mean, they're different by a tick at each level.
+
+586
+00:31:43,608 --> 00:31:48,308
+如果取平均值，就是这个价位，不过我不太喜欢精确计算，更倾向于目测平均。
+If you average it, it'll be this level, and I don't necessarily like to average, more of a visual average.
+
+587
+00:31:50,508 --> 00:31:56,708
+结果价格一直维持在这个区间上方，这说明这里成了新的支撑位。
+What happens is we're staying above this area. So, you know, it's telling you this is your new support area.
+
+588
+00:31:57,408 --> 00:31:57,921
+或者说
+I mean,
+
+589
+00:31:57,921 --> 00:31:58,947
+如果是在下方交易，
+it would be resistance,
+
+590
+00:31:58,947 --> 00:31:59,973
+我觉得，如果我们
+I think, if we
+
+591
+00:31:59,973 --> 00:32:03,051
+比如在1888以下交易，那这里就是阻力位。
+were trading, you know, below it, you know, trading below 1888 or something.
+
+592
+00:32:03,308 --> 00:32:05,608
+但现在这根K线转向了。
+But now the fact is this bar turned around.
+
+593
+00:32:05,908 --> 00:32:07,908
+现在这里将成为我的下一个支撑位。
+Now this is going to be my next support level.
+
+594
+00:32:07,908 --> 00:32:12,008
+之前的阻力位现在变成了支撑位。
+And what was resistance before turns into your support level.
+
+595
+00:32:12,408 --> 00:32:15,508
+比如在1893这里，发生了什么？出现了这些K线。
+You know, here at 1893, what happens? You get these bars.
+
+596
+00:32:15,608 --> 00:32:21,108
+价格回落到1893、1892，甚至1893.5。
+We trade down to, you know, 1893, 1892. You know, even here, 1893 and a half.
+
+597
+00:32:21,708 --> 00:32:29,608
+这正是阻力位转化为支撑位的完美例子。
+So this is a perfect example of what was initially resistance later becomes support.
+
+598
+00:32:30,408 --> 00:32:36,608
+关键在于突破这些阻力位后，它如何转化为支撑位。
+And what's important is when you break in these resistance levels, how it turns into support.
+
+599
+00:32:38,208 --> 00:32:42,908
+看看突破阻力位时成交量的表现。
+Look at what's happening with the volume when you break through this resistance level.
+
+600
+00:32:42,908 --> 00:32:44,421
+你会看到买单失衡出现在
+You're seeing buying imbalances just on
+
+601
+00:32:44,421 --> 00:32:45,934
+另一侧，
+the other side of it, and
+
+602
+00:32:45,934 --> 00:32:48,707
+而买单侧的成交量非常稀薄。
+you're seeing very thin volumes traded on the bid side here.
+
+603
+00:32:49,008 --> 00:32:50,908
+显然，多头正在积极入场。
+So obviously, people are being aggressive.
+
+604
+00:32:51,608 --> 00:32:55,408
+他们正在放弃这个阻力位。
+So they're saying goodbye to this level as a resistance level.
+
+605
+00:32:55,608 --> 00:32:56,944
+想要将价格推高，
+They want to start moving it
+
+606
+00:32:56,944 --> 00:32:58,280
+所以这个阻力位
+up higher, and so this resistance
+
+607
+00:32:58,280 --> 00:33:00,507
+将成为你的新支撑位。
+level is going to be your new support. support level.
+
+608
+00:33:02,908 --> 00:33:09,308
+所以93到90之间都可能成为新的支撑区间。
+So anywhere between 93 and 90 would be your new support level.
+
+609
+00:33:09,408 --> 00:33:12,408
+我会把这里当作区间的底部。
+I would look for this to sort of be the bottom of the range.
+
+610
+00:33:13,608 --> 00:33:15,708
+但真正的信号是这根
+But really this bar at
+
+611
+00:33:17,208 --> 00:33:24,608
+245的K线，它表明原来的阻力位现在成了支撑位。
+245 is really the sign that what was your resistance is now your support level.
+
+612
+00:33:25,908 --> 00:33:29,908
+你可以看到价格回落到该区间后反弹上涨。
+And you can see it just sort of trades back down into that area and just bounces back up.
+
+613
+00:33:30,008 --> 00:33:31,708
+再次测试后，又反弹上涨。
+Again, test it, bounces back up.
+
+614
+00:33:32,608 --> 00:33:36,808
+这就是第12课，订单流支撑与阻力位的全部内容。
+So that's the end of Lesson 12, Order Flow, Support and Resistance Levels.
+
+615
+00:33:36,808 --> 00:33:42,908
+下一课我将讲解：订单流、公平价格和订单吸收，以及如何在交易中应用。
+In the next lesson, I'll explain... Order flow, fair price, and absorption, and how to use them in your trading.
+
+616
+00:33:43,208 --> 00:33:50,708
+人们经常说，市场会从失衡状态转向平衡状态。
+You know, people often talk about, you know, market will move from out of balance to a place in balance.
+
+617
+00:33:51,008 --> 00:33:51,819
+所以，
+So, you
+
+618
+00:33:51,819 --> 00:33:54,253
+知道市场的公平价格在哪里，
+know, knowing where the fair price
+
+619
+00:33:54,253 --> 00:33:56,687
+价格应该在哪里交易，
+for the market is, where things
+
+620
+00:33:56,687 --> 00:33:59,121
+以及如何判断市场处于平衡状态，
+should be trading, and how to
+
+621
+00:33:59,121 --> 00:34:05,206
+这对交易至关重要。
+tell when the market is in balance is important to know how to trade around.
+
+622
+00:34:06,108 --> 00:34:07,908
+好，谢谢。第12课到此结束。
+So thank you. That's the end of Lesson 12.
+
+===== END AFTER_OPTIMIZE =====

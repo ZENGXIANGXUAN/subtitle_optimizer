@@ -1,0 +1,637 @@
+===== AFTER_TRANSLATE (127 entries) =====
+1
+00:00:00,250 --> 00:00:01,965
+大家好，交易者们。
+Hello, traders.
+
+2
+00:00:01,965 --> 00:00:05,210
+欢迎来到第六模块，专讲足迹图（Footprint）。
+Welcome to module six, which is all about the footprint.
+
+3
+00:00:06,330 --> 00:00:08,510
+我将先
+So what I'm going to start by doing
+
+4
+00:00:08,510 --> 00:00:10,417
+给你做个快速介绍，
+is just give you a quick introduction
+
+5
+00:00:10,417 --> 00:00:12,869
+让你知道本模块的内容。
+as to what you can expect in this module.
+
+6
+00:00:12,870 --> 00:00:15,217
+然后我会把内容
+And then obviously I'll split it
+
+7
+00:00:15,217 --> 00:00:17,564
+拆分成几部分，
+out so it's easily digestible for
+
+8
+00:00:17,564 --> 00:00:22,259
+方便你理解，就像基础课那样。
+you, as I've been doing in the foundation course into separate parts.
+
+9
+00:00:22,260 --> 00:00:24,770
+现在，你看到的是足迹图。
+Now, so you see the footprint here.
+
+10
+00:00:26,390 --> 00:00:32,425
+显然，先从‘什么是足迹图’讲起比较合理。
+Essentially, it kind of makes sense, obviously, to start off with going through what is the footprint.
+
+11
+00:00:32,425 --> 00:00:39,400
+我之前多次提到，它本质上就是市价单，对吧？
+And to do that, as I've said many times throughout the foundation course, it is essentially the market orders, right?
+
+12
+00:00:39,400 --> 00:00:43,597
+你在这里看到的每根柱上的数字，
+These numbers you see here in each bar,
+
+13
+00:00:43,597 --> 00:00:47,794
+这些柱子和普通图表上的K线类似，
+these bars are no different to basically bars
+
+14
+00:00:47,794 --> 00:00:55,139
+只是不是基于分钟的K线图。
+on a normal chart, a candlestick chart, except that they're not minute based charts.
+
+15
+00:00:55,140 --> 00:00:56,560
+我稍后会详细解释。
+But I'm going to come to that in a second.
+
+16
+00:00:56,560 --> 00:01:03,075
+但首先，我们要解决的问题是：什么是足迹图？
+But the main point first and what we're going to cover first is what is the footprint?
+
+17
+00:01:03,075 --> 00:01:06,880
+正如我所说，它本质上就是市价单。
+So as I said, it's basically market orders.
+
+18
+00:01:06,880 --> 00:01:10,545
+如果你做过练习，
+So for those of you who've done the exercises and
+
+19
+00:01:10,545 --> 00:01:13,477
+并理解了市价单和挂单的区别，
+understood what market orders are versus pending orders,
+
+20
+00:01:13,477 --> 00:01:16,409
+那么你在这部分会得心应手。
+really going to be strong in this section,
+
+21
+00:01:16,410 --> 00:01:20,780
+你会比跳过练习的人理解得更透彻。
+you're going to understand this stuff a lot better than those of you who just skip forward.
+
+22
+00:01:20,780 --> 00:01:25,590
+所以如果你还没做练习，我强烈建议你去做，
+So if you haven't done all the exercises, I would highly recommend you do them,
+
+23
+00:01:25,590 --> 00:01:27,379
+因为当我开始讲解市价单时，
+because when I start explaining market orders in
+
+24
+00:01:27,379 --> 00:01:28,720
+你可能会跟不上。
+the section, you know, it's going
+
+25
+00:01:28,720 --> 00:01:30,509
+你可能会跟不上。
+to be difficult for you to follow along.
+
+26
+00:01:31,690 --> 00:01:33,980
+不过，我们先从这里开始。
+But anyway, so we'll start with that.
+
+27
+00:01:33,980 --> 00:01:40,170
+我会结合深度图和足迹图，给你举个例子。
+And I'll run you through an example with a depth of market side by side with the footprint.
+
+28
+00:01:40,170 --> 00:01:42,410
+这样你就能看出，它确实是市价单。
+So you can see it is the market orders.
+
+29
+00:01:43,770 --> 00:01:49,125
+其实，我想对你们说，我总是对用指标的人说这句。
+And in fact, what I would say to you guys, you know, I always say this to people with indicators.
+
+30
+00:01:49,125 --> 00:01:51,299
+关于指标，
+You've got to, you know, people
+
+31
+00:01:51,299 --> 00:01:53,473
+总是用这些指标
+use these indicators all the time
+
+32
+00:01:53,473 --> 00:01:55,647
+你在零售平台上看到的那些
+that you see on retail platforms,
+
+33
+00:01:55,647 --> 00:01:58,908
+老实说，我对这些没兴趣
+which, you know, I have no time for those.
+
+34
+00:01:58,910 --> 00:02:04,365
+我之前花了几小时内容证明它们没用
+I've already shown you through hours of content that they're useless.
+
+35
+00:02:04,365 --> 00:02:07,030
+但说到底，你可以自己验证
+But at the end of the day, you can prove things to yourself.
+
+36
+00:02:07,030 --> 00:02:08,731
+我说这些的意思是
+And my point by saying all of
+
+37
+00:02:08,731 --> 00:02:10,432
+别只听我的
+this is don't just take my word
+
+38
+00:02:10,432 --> 00:02:12,133
+这些就是市价单
+for it that these are market orders.
+
+39
+00:02:12,135 --> 00:02:13,250
+自己证明吧
+Prove it to yourself.
+
+40
+00:02:13,250 --> 00:02:15,125
+我们等会会一起验证
+We're going to do that together anyway.
+
+41
+00:02:15,125 --> 00:02:16,648
+我之所以这么做
+But that's why I'm doing
+
+42
+00:02:16,648 --> 00:02:18,781
+是因为我想让你们
+it is because I want you guys
+
+43
+00:02:18,781 --> 00:02:21,828
+养成自己验证的习惯
+to get into the habit of proving things to yourself.
+
+44
+00:02:21,830 --> 00:02:24,990
+当我通过深度图
+When I show you that these are market orders by
+
+45
+00:02:24,990 --> 00:02:26,570
+给你看市价单
+showing you the depth of
+
+46
+00:02:26,570 --> 00:02:29,098
+与足迹图移动同步时
+market market orders moving with a footprint moving,
+
+47
+00:02:29,100 --> 00:02:33,445
+这会证明我讲的是对的
+and it will prove it to you that what I'm saying is that that's what they are.
+
+48
+00:02:33,445 --> 00:02:35,520
+你自己也去验证一下
+Go away and do it for yourself as well.
+
+49
+00:02:35,520 --> 00:02:37,650
+我等会在相关部分再详细讲
+I'll talk a little bit about that anyway in that section.
+
+50
+00:02:38,750 --> 00:02:39,450
+K线类型
+Bar types.
+
+51
+00:02:40,690 --> 00:02:42,502
+老实说，我能
+Honestly, I could write an
+
+52
+00:02:42,502 --> 00:02:45,039
+就这个话题开一整门课
+entire course on this. It can become
+
+53
+00:02:45,039 --> 00:02:48,664
+它可以变得非常复杂，但没必要
+an incredibly complicated topic, but it doesn't need to be.
+
+54
+00:02:48,665 --> 00:02:54,390
+你真正需要知道的，我讲图表时会详细说
+All you really need to know, and I'll talk much more about it when we get onto charts,
+
+55
+00:02:54,390 --> 00:02:55,784
+再次强调
+is that again,
+
+56
+00:02:55,784 --> 00:02:59,967
+伙计们，尤其是如果你没接触过
+guys, unfortunately, especially if you haven't had exposure to
+
+57
+00:02:59,967 --> 00:03:03,685
+世界上最一致的职业交易者
+some of the most consistent professional traders in
+
+58
+00:03:03,685 --> 00:03:12,517
+你显然不可能知道，但很遗憾，我得告诉你个坏消息
+the world, you're obviously not expected to know, but unfortunately, I have to be the bearer of bad news.
+
+59
+00:03:12,520 --> 00:03:20,050
+大多数机构和职业交易者，伙计们，我们不用分钟K线图
+And that is that the majority of institutions and professional traders, guys, we're not using minute-based charts.
+
+60
+00:03:20,050 --> 00:03:23,240
+这自有原因，我会简单讲讲
+There's a reason for that, so I'm going to talk a little bit about that.
+
+61
+00:03:23,240 --> 00:03:28,125
+但你可能注意到，这不是分钟级K线图
+But you may notice here, this, guys, is not a minute-based chart.
+
+62
+00:03:28,125 --> 00:03:33,297
+在外汇现货市场，我倒不介意用分钟级
+I don't mind so much in the FX spot market using minute-based
+
+63
+00:03:33,297 --> 00:03:38,469
+因为成交量数据不可用。如你所知
+charts because volume isn't available. As you know, it's only available transparently
+
+64
+00:03:38,469 --> 00:03:40,624
+期货市场里才能公开获取
+anyway in a futures market.
+
+65
+00:03:40,625 --> 00:03:47,345
+所以在零售外汇平台上，我看分钟级K线图没问题
+So when I'm looking at my retail FX platform, I've got no problems with looking at the minute-based charts, etc.
+
+66
+00:03:47,345 --> 00:03:52,745
+我也不是说要放弃分钟级K线图
+And I'm not saying dump minutes-based charts. Use them by all means.
+
+67
+00:03:52,745 --> 00:03:58,550
+但你也该从非分钟级图表中提取信息
+But you should be extracting a lot of your information as well from non-minute-based charts.
+
+68
+00:03:58,550 --> 00:04:05,610
+如果你不熟悉我的意思，可能会有点...
+And if you're not familiar with what I'm talking about, it's going to be a little bit of a...
+
+69
+00:04:05,610 --> 00:04:08,830
+会有点不知所措，因为你习惯了
+It can be a bit overwhelming because you're so used
+
+70
+00:04:08,830 --> 00:04:10,440
+看1分钟、5分钟
+to looking at 1 minute, 5 minute, 10
+
+71
+00:04:10,440 --> 00:04:13,660
+10分钟、15分钟或1小时这些时间框架
+minute or 15 minute and then hourly for all those timeframes.
+
+72
+00:04:14,950 --> 00:04:18,277
+但你需要理解的是
+But what you need to understand is
+
+73
+00:04:18,277 --> 00:04:22,555
+专业交易者大部分时间，尤其是
+that the professionals, the majority of the time, especially
+
+74
+00:04:22,555 --> 00:04:27,308
+交易期货时，几乎不会看这些
+if they're trading futures, not looking at that at all.
+
+75
+00:04:27,310 --> 00:04:31,850
+实际上，这是砖形图，Fortick砖形图
+In fact, this is a Renko chart, a Fortick Renko.
+
+76
+00:04:31,850 --> 00:04:43,930
+本质上，它更偏向波动性表现而非时间
+All it's doing essentially is your... It's moving more towards a volatility-based representation of price rather than time-based.
+
+77
+00:04:43,930 --> 00:04:44,730
+或者说
+So...
+
+78
+00:04:44,730 --> 00:04:49,530
+成交量表现，取决于你用的类型，因为类型不同
+or volume-based, you could say, depending on the type that you use, because you have different types.
+
+79
+00:04:49,530 --> 00:04:54,330
+有区间图、成交量柱状图，当然还有分钟级K线
+You have range, you have volume bars, and obviously you've got the minute bars as well.
+
+80
+00:04:54,330 --> 00:05:00,190
+我稍后会详细讲解这些，课程后面也会深入
+So I'll talk a little bit about that and get more into that later in the course.
+
+81
+00:05:00,190 --> 00:05:05,490
+但这里必须提一下，因为在足迹图中，不用分钟级K线
+But it's important I mention that because on the footprint, you're not using minute-based charts.
+
+82
+00:05:05,490 --> 00:05:07,300
+那样做完全没有意义
+It would make no sense to do that.
+
+83
+00:05:07,300 --> 00:05:09,040
+我会告诉你为什么
+So I'll show you why that is.
+
+84
+00:05:09,040 --> 00:05:11,230
+然后我们将专注于...
+Then we're going to concentrate on...
+
+85
+00:05:11,230 --> 00:05:12,770
+一开始，我们不会...
+So at first, we're not going to actually...
+
+86
+00:05:12,770 --> 00:05:15,900
+如你所知，我设计了这个表格，你会明白原因
+As you know, I've developed this table and you'll see why.
+
+87
+00:05:15,900 --> 00:05:19,029
+它让我几乎能一眼
+It allows me, almost at a glance,
+
+88
+00:05:19,029 --> 00:05:21,264
+看出深度图上发生了什么
+to see what's going on,
+
+89
+00:05:21,264 --> 00:05:26,629
+尤其是市价单的情况，一目了然
+on a depth of market, with market orders, really nice and neatly.
+
+90
+00:05:26,630 --> 00:05:29,585
+并且能快速获取我需要的信息
+And quickly at a glance gives me the information I need.
+
+91
+00:05:29,585 --> 00:05:33,170
+所以我显然是为自己开发的
+So I've developed that, obviously, for myself.
+
+92
+00:05:33,170 --> 00:05:35,530
+如你所见，这是自定义足迹图
+As you can see, it's a custom footprint.
+
+93
+00:05:35,530 --> 00:05:38,770
+显然，我已把它放到模板里了
+Obviously, I've given that to you in the template.
+
+94
+00:05:38,770 --> 00:05:41,550
+我可能会在最后
+And I may do a template section, I
+
+95
+00:05:41,550 --> 00:05:43,635
+做个模板专题
+think, maybe towards the end of
+
+96
+00:05:43,635 --> 00:05:49,195
+到时我会教你如何加载这些内容
+this. I'll do a template section where I'll just show you how to load this stuff.
+
+97
+00:05:49,195 --> 00:05:53,210
+加载后，Pro课程的学员都能用
+But once you've loaded it, you'll all have access to this, obviously, with the Pro course.
+
+98
+00:05:54,290 --> 00:05:57,010
+市场上你哪里都买不到这个
+You won't be able to buy this anywhere in the market.
+
+99
+00:05:57,010 --> 00:05:58,670
+普通足迹图你当然能买到
+You can obviously buy a standard footprint.
+
+100
+00:05:58,670 --> 00:06:02,365
+你知道，那得花1000美元起步
+As you know, you're looking at $1,000 plus.
+
+101
+00:06:02,365 --> 00:06:04,190
+所以，你现在免费得到它了
+So, you know, you're getting that free.
+
+102
+00:06:04,190 --> 00:06:06,070
+希望你能看出它的价值
+So I hope you can see the value in that.
+
+103
+00:06:06,070 --> 00:06:12,015
+另外，我还给了你这张自定义表格
+And also, I'm giving you this customized table as well, which I've built myself.
+
+104
+00:06:12,015 --> 00:06:14,900
+不过，重点不在这里
+But look, that's not the point.
+
+105
+00:06:14,900 --> 00:06:20,110
+我不是想炫耀我做了这个
+You know, I'm not here to inflate my ego because I've built this.
+
+106
+00:06:20,110 --> 00:06:22,978
+我提这个其实是因为
+Actually, the reason I'm mentioning it to you is because
+
+107
+00:06:22,978 --> 00:06:25,273
+这是我们课程大纲的一部分
+it's part of the syllabus that we're going
+
+108
+00:06:25,273 --> 00:06:26,994
+我们会逐一讲解
+to be covering one by one.
+
+109
+00:06:26,995 --> 00:06:29,063
+我提这个的第二个原因是
+And also the second reason I mention it
+
+110
+00:06:29,063 --> 00:06:31,131
+我不希望你现在关注这个
+to you is because I don't want you
+
+111
+00:06:31,131 --> 00:06:34,233
+直到我们完成前两个模块
+to pay attention to this until we finish the first two sections.
+
+112
+00:06:34,235 --> 00:06:37,605
+放心，之后我们会讲到它
+Then don't worry, we're going to come on to it.
+
+113
+00:06:37,605 --> 00:06:40,710
+我们会逐一讲解Delta
+So one by one, we're going to go through the delta.
+
+114
+00:06:40,710 --> 00:06:51,315
+接下来讲解Delta变化、最大买卖强弱差、最小买卖强弱差和Delta百分比。
+We're going to go through the delta change, the max delta here, minimum delta here, and delta percentage.
+
+115
+00:06:51,315 --> 00:06:53,251
+好，我提这个表的唯一原因
+All right. So that's the only
+
+116
+00:06:53,251 --> 00:06:55,832
+是让你知道我为什么列了这些要点
+reason I mentioned this table is so you
+
+117
+00:06:55,832 --> 00:06:58,413
+你就能理解我为什么列这些要点了。
+can see why I've put these bullet points.
+
+118
+00:06:58,415 --> 00:07:01,020
+这些内容我们会逐一覆盖
+We're going to cover all these things one by one.
+
+119
+00:07:01,020 --> 00:07:02,719
+最后，当然
+And then finally, of course, I'm
+
+120
+00:07:02,719 --> 00:07:04,984
+我会展示一些使用示例
+going to show you some examples of using
+
+121
+00:07:04,984 --> 00:07:07,249
+最后会讲到足迹图的示例
+the footprint, which come right at the end.
+
+122
+00:07:08,270 --> 00:07:10,270
+我会分部分讲解这些章节
+Again, I'm going to split all these sections out.
+
+123
+00:07:10,270 --> 00:07:12,616
+本节我们先从足迹图的定义开始
+So in this section, we're going to start
+
+124
+00:07:12,616 --> 00:07:14,962
+并向你证明它与市价单的关系
+off with what is the footprint and prove
+
+125
+00:07:14,962 --> 00:07:17,308
+然后进入下一节内容
+it to you that it is market orders.
+
+126
+00:07:17,310 --> 00:07:20,340
+大家好好学习吧
+And then we'll move on to the next sections.
+
+127
+00:07:20,340 --> 00:07:21,370
+好，大家。好好享受。
+All right, guys. Enjoy.
+
+===== END AFTER_TRANSLATE =====

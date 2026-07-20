@@ -1,0 +1,2202 @@
+===== AFTER_SEGMENT (550 entries) =====
+1
+00:00:00,180 --> 00:00:01,666
+okay traders so this section
+
+2
+00:00:01,666 --> 00:00:03,746
+is a bit more of a practical
+
+3
+00:00:03,746 --> 00:00:06,123
+section so hopefully you enjoy this a bit
+
+4
+00:00:06,123 --> 00:00:10,878
+more than you know some of the theory I've obviously been throwing at you quite relentlessly
+
+5
+00:00:10,880 --> 00:00:13,433
+and as discussed this is essentially
+
+6
+00:00:13,433 --> 00:00:16,838
+me on the simulator bringing together everything so
+
+7
+00:00:16,838 --> 00:00:19,391
+what I would say is you
+
+8
+00:00:19,391 --> 00:00:24,498
+know now you've been practicing all the individual things as I said
+
+9
+00:00:24,500 --> 00:00:27,641
+for the last two three months I'm happy
+
+10
+00:00:27,641 --> 00:00:30,782
+for you now to start going on the
+
+11
+00:00:30,782 --> 00:00:33,530
+simulator just playing around which you were
+
+12
+00:00:33,530 --> 00:00:39,419
+doing anyway before but now maybe trying to take some profits not with a view
+
+13
+00:00:39,420 --> 00:00:43,569
+to making P&L that's not the point all
+
+14
+00:00:43,569 --> 00:00:47,257
+it is is I want you to understand
+
+15
+00:00:47,257 --> 00:00:50,945
+how trading happens around value and fair price
+
+16
+00:00:50,945 --> 00:00:57,399
+so if you haven't seen all these videos I've done the exercises guys and
+
+17
+00:00:56,940 --> 00:00:59,468
+you just come straight to this section go
+
+18
+00:00:59,468 --> 00:01:01,996
+back do them all individually it's going to
+
+19
+00:01:01,996 --> 00:01:04,524
+make absolutely no sense to you if you've
+
+20
+00:01:04,524 --> 00:01:08,000
+done all the exercises individually and in particular also watched the
+
+21
+00:01:08,000 --> 00:01:13,840
+last video about auction market theory then this is going to make a lot more sense to you so let's
+
+22
+00:01:13,840 --> 00:01:16,144
+just recap what's going on so
+
+23
+00:01:16,144 --> 00:01:19,216
+what have we learned so far not necessarily
+
+24
+00:01:19,216 --> 00:01:21,520
+in the whole course but just
+
+25
+00:01:21,520 --> 00:01:29,200
+in in terms of what's going on on a depth of market in particular on the financial side so financial
+
+26
+00:01:29,200 --> 00:01:31,563
+market side is would you agree we've looked
+
+27
+00:01:31,563 --> 00:01:33,926
+at supply side games which I asked you
+
+28
+00:01:33,926 --> 00:01:36,289
+to go away and have a look at
+
+29
+00:01:36,289 --> 00:01:40,719
+which was not necessarily the spoofing element because like I said regulators don't allow it
+
+30
+00:01:40,720 --> 00:01:43,982
+anymore but what is quite useful is the
+
+31
+00:01:43,982 --> 00:01:47,244
+second part of the spoofing element which is
+
+32
+00:01:47,244 --> 00:01:50,506
+as you're approaching offers and bids they're changing
+
+33
+00:01:50,506 --> 00:01:55,399
+so for example here let me just zoom in here guys it's
+
+34
+00:01:55,400 --> 00:01:58,496
+going to be a lot easier for you
+
+35
+00:01:58,496 --> 00:02:04,689
+to see it okay so for example as I said we can see some unusual sizes
+
+36
+00:02:04,690 --> 00:02:07,066
+we see 615 here we see 636 as
+
+37
+00:02:07,066 --> 00:02:09,838
+the market's approaching if that's 636 someone just
+
+38
+00:02:09,838 --> 00:02:13,006
+cuts it and it drops back down to
+
+39
+00:02:13,006 --> 00:02:17,363
+300 that's giving me information isn't it it's telling me that maybe
+
+40
+00:02:18,950 --> 00:02:21,182
+that seller isn't real so that's all I
+
+41
+00:02:21,182 --> 00:02:23,414
+mean by supply side games and changing orders
+
+42
+00:02:23,414 --> 00:02:30,669
+so we're going to label that one and what I want you to do when you're doing this stuff as I said is and I've got
+
+43
+00:02:30,670 --> 00:02:35,990
+it here my own one even after all these years pen and paper just make a note of this stuff as you
+
+44
+00:02:35,990 --> 00:02:38,756
+notice it within these categories two is absorption
+
+45
+00:02:38,756 --> 00:02:41,522
+so just a reminder obviously that's more to
+
+46
+00:02:41,522 --> 00:02:48,783
+do with normal size so we might see 400 here which is about the average and as we approach it we're seeing
+
+47
+00:02:49,130 --> 00:02:52,137
+you know many more hundreds if not thousands
+
+48
+00:02:52,137 --> 00:02:55,144
+of contracts trading into the seller and he's
+
+49
+00:02:55,144 --> 00:02:58,151
+just sitting there absorbing it go back to
+
+50
+00:02:58,151 --> 00:03:01,909
+the absorption video if that doesn't make sense and then
+
+51
+00:03:01,910 --> 00:03:05,335
+uh three is market orders versus pending orders
+
+52
+00:03:05,335 --> 00:03:08,760
+so really just interested in aggression the demand
+
+53
+00:03:08,760 --> 00:03:15,610
+side right as we said people physically in this blank space you're trading these blank spaces
+
+54
+00:03:15,610 --> 00:03:23,030
+because why you're not sitting passively as you are here or here you're actually getting aggressive
+
+55
+00:03:23,030 --> 00:03:25,865
+right and you're either going to these sellers and saying
+
+56
+00:03:25,865 --> 00:03:28,700
+right I'll have some of that and then therefore your
+
+57
+00:03:28,700 --> 00:03:31,535
+buyers come here or you're going to these buyers and
+
+58
+00:03:31,535 --> 00:03:38,907
+saying I'll have some of that and your sales go there so again if that doesn't make sense go back and remind yourself on the market
+
+59
+00:03:38,910 --> 00:03:47,170
+orders videos and do exercises just doing that then finally we came to the auction market theory right
+
+60
+00:03:47,170 --> 00:03:50,886
+where we said market orders these market orders cause what
+
+61
+00:03:50,886 --> 00:03:54,602
+transactions to appear we talked about milk cartons but it
+
+62
+00:03:54,602 --> 00:03:58,318
+can apply to anything every time someone buys and sells
+
+63
+00:03:58,318 --> 00:04:06,867
+something aggressively it appears as a transaction happens in any business etc etc so we're not going to go over that again I
+
+64
+00:04:06,870 --> 00:04:12,470
+just wanted to kind of summarize the four things that we're going to bring together now
+
+65
+00:04:12,470 --> 00:04:15,121
+and if you don't haven't done this is why I
+
+66
+00:04:15,121 --> 00:04:17,772
+want you to see why I made you do exercises
+
+67
+00:04:17,772 --> 00:04:22,809
+individually on the four things because now we're going to bring them together so what I've actually done is
+
+68
+00:04:22,810 --> 00:04:26,463
+I'm now on the simulator I'm going to take a
+
+69
+00:04:26,463 --> 00:04:30,116
+trade which I've pre-recorded and I'm going to put some
+
+70
+00:04:30,116 --> 00:04:37,788
+commentary on it now on this video so let's just hit play but before we do that let's just have a
+
+71
+00:04:37,790 --> 00:04:45,370
+look at the profile and remind ourselves of this bit why this bit is so crucial don't worry the depth
+
+72
+00:04:45,370 --> 00:04:48,121
+of market we're not necessarily going to bin it but
+
+73
+00:04:48,121 --> 00:04:49,496
+we're just not going to
+
+74
+00:04:49,496 --> 00:04:56,649
+look at it very rarely we're going to look at it very rarely once we go on to actually building some edge in the pro section
+
+75
+00:04:56,650 --> 00:05:02,690
+what we are going to do however is use the volume profile as you know extensively on a chart
+
+76
+00:05:02,690 --> 00:05:08,630
+so what I talked about in the ultra market theory section is absolutely crucial guys the value areas
+
+77
+00:05:08,630 --> 00:05:12,266
+so let's just remind ourselves and if you if this
+
+78
+00:05:12,266 --> 00:05:15,902
+doesn't ring any bells go back to the section and
+
+79
+00:05:15,902 --> 00:05:22,448
+watch it again what are the only two things I'm interested in value right what's the fair price
+
+80
+00:05:22,450 --> 00:05:30,610
+so what you can see here is the treasury market's got quite a wide fair price but what this happens
+
+81
+00:05:30,610 --> 00:05:33,907
+guys you know we're in the middle of the coronavirus
+
+82
+00:05:33,907 --> 00:05:37,204
+at the moment and it's markets finding it very difficult
+
+83
+00:05:37,204 --> 00:05:42,809
+to find any fair price however when it does find fair price which is clearly done here
+
+84
+00:05:42,810 --> 00:05:45,905
+because you can see the profile is very thin here
+
+85
+00:05:45,905 --> 00:05:49,000
+the market's not if you think of this on a
+
+86
+00:05:49,000 --> 00:05:55,809
+chart what's it basically done this area has had a lot of trading this area is just shot up no one's really
+
+87
+00:05:55,810 --> 00:05:58,871
+transacted here and you can see that in the profile
+
+88
+00:05:58,871 --> 00:06:01,932
+here a lot of people have transacted however rather than
+
+89
+00:06:01,932 --> 00:06:07,748
+it being a thin profile of value the fair price is a little bit wide big deal doesn't matter
+
+90
+00:06:07,750 --> 00:06:12,916
+same concept and exactly the same sort of thought process
+
+91
+00:06:12,916 --> 00:06:18,082
+applies which is that our first identifying fair price right
+
+92
+00:06:18,082 --> 00:06:26,348
+which I talked about in the previous video so we've established what fair price is and
+
+93
+00:06:26,350 --> 00:06:30,119
+that's the value area so I've kind of got a
+
+94
+00:06:30,119 --> 00:06:33,888
+rough idea and there's tools which I'll show you can
+
+95
+00:06:33,888 --> 00:06:42,558
+use to identify the exact value area in the pro course but guys the way I do it I just eyeball it markets
+
+96
+00:06:42,560 --> 00:06:43,903
+aren't perfect you know
+
+97
+00:06:43,903 --> 00:06:46,590
+we don't want to fall into that trap
+
+98
+00:06:46,590 --> 00:06:49,277
+of looking for perfection because it doesn't exist
+
+99
+00:06:49,277 --> 00:06:53,979
+anyone who tells you is living in dreamland human beings aren't perfect they're never
+
+100
+00:06:53,980 --> 00:06:57,725
+going to agree exactly on perfect price and value we've got
+
+101
+00:06:57,725 --> 00:07:00,789
+to give it some leeway so that's why I
+
+102
+00:07:00,789 --> 00:07:07,258
+love to do these things in an approximate manner although like I said there are tools which will identify
+
+103
+00:07:07,260 --> 00:07:09,557
+the value area for you but we'll get into that
+
+104
+00:07:09,557 --> 00:07:11,395
+in the pro course for now all you've
+
+105
+00:07:11,395 --> 00:07:17,139
+got to know is that to me is the fair price right now right and you can see it that's where the most volumes traded
+
+106
+00:07:17,140 --> 00:07:20,483
+we've built a nice little profile here yes
+
+107
+00:07:20,483 --> 00:07:23,826
+ideally I would want it to be a
+
+108
+00:07:23,826 --> 00:07:33,019
+thinner area but like I said no big deal remember an auction market theory section what's the two sort of trading methodologies
+
+109
+00:07:33,020 --> 00:07:35,932
+or trading edge that I'm always looking at where am
+
+110
+00:07:35,932 --> 00:07:38,844
+I looking for profit where where do I see opportunity
+
+111
+00:07:38,844 --> 00:07:44,378
+I guess is what I'm trying to say well when the market's here do you remember what we said
+
+112
+00:07:44,380 --> 00:07:47,360
+right in slap bang at fair price the milk carton
+
+113
+00:07:47,360 --> 00:07:50,042
+selling at I think it was 150 you won't go
+
+114
+00:07:50,042 --> 00:07:52,724
+and buy it for 150 wanting to sell it you
+
+115
+00:07:52,724 --> 00:08:07,626
+might buy it to consume it you're not looking to make money at 150 why because that's where the market is really you're not going to get anyone wanting to pay you more than 150 anyway so we don't want to trade there right where's opportunity guys it's when we start to
+
+116
+00:08:08,820 --> 00:08:12,395
+move to the edges right so do you
+
+117
+00:08:12,395 --> 00:08:15,970
+remember a was return to value so it
+
+118
+00:08:15,970 --> 00:08:28,038
+was mean reversion whatever you want to call it I'm just going to put return to fair price yeah so if we're here or we're trading here
+
+119
+00:08:28,040 --> 00:08:31,510
+what am I looking at to return back into fair
+
+120
+00:08:31,510 --> 00:08:34,286
+price the alternative is what guys I'm looking
+
+121
+00:08:34,286 --> 00:08:40,879
+now I don't have the next because it's chopped off there'll be a bit of value that was maybe
+
+122
+00:08:40,880 --> 00:08:45,013
+produced throughout the day further down here so obviously if
+
+123
+00:08:45,013 --> 00:08:48,319
+we broke out of here what am I
+
+124
+00:08:48,319 --> 00:08:56,999
+looking to do do you remember we said it's not trend trading it's move to um move to next fair price
+
+125
+00:08:57,000 --> 00:09:00,542
+right do you remember what we said if the carton of milk
+
+126
+00:09:00,542 --> 00:09:02,903
+collapses to one dollar and then things get
+
+127
+00:09:02,903 --> 00:09:13,824
+better where's the market logically going to go back to where it was before 150 fair price so I'm looking for where was the next level of fair price if we break out of the previous fair price
+
+128
+00:09:14,120 --> 00:09:17,166
+we're going down to the next one if we break
+
+129
+00:09:17,166 --> 00:09:25,999
+out here and we go out the top I'll probably look for something the previous day that's why I haven't done the breakout I'm looking for next fair price
+
+130
+00:09:26,000 --> 00:09:28,413
+we'll do that in the pro course what I've actually
+
+131
+00:09:28,413 --> 00:09:30,343
+done in this example if I just clear
+
+132
+00:09:30,343 --> 00:09:36,618
+this up I'm telling you all of this because it's going to be a lot easier as you can imagine for me to tell you now
+
+133
+00:09:36,620 --> 00:09:39,530
+before I hit play when the market's actually moving and you're trying
+
+134
+00:09:39,530 --> 00:09:41,470
+to figure out what on earth I'm doing
+
+135
+00:09:41,470 --> 00:09:46,078
+it's easier for me to tell you right now of course so what happens is you'll see the market
+
+136
+00:09:46,080 --> 00:09:54,220
+starts to go outside of fair value then I'm looking for things here one two three a combination of
+
+137
+00:09:54,220 --> 00:09:57,684
+factors here that occur here on supply and
+
+138
+00:09:57,684 --> 00:10:01,148
+demand okay mainly demand because like I said
+
+139
+00:10:01,148 --> 00:10:04,612
+eventually we're going to drop supply we're going
+
+140
+00:10:04,612 --> 00:10:11,108
+to look at demand um but um it's a depth of market and I used
+
+141
+00:10:11,110 --> 00:10:12,643
+to use supply a lot so I might
+
+142
+00:10:12,643 --> 00:10:15,709
+as well show you how I use it um that's why I said don't worry about
+
+143
+00:10:15,710 --> 00:10:17,772
+making money on this guys you're not going
+
+144
+00:10:17,772 --> 00:10:19,834
+to make money you can drive yourself crazy
+
+145
+00:10:19,834 --> 00:10:21,896
+trying to make money on this like I
+
+146
+00:10:21,896 --> 00:10:24,989
+said algorithms are there they're very fast I've been watching this thing
+
+147
+00:10:24,990 --> 00:10:30,610
+for many many years so for me I guess it's ingrained in me it's almost like driving a car
+
+148
+00:10:30,610 --> 00:10:33,392
+I've watched this thing for maybe you know
+
+149
+00:10:33,392 --> 00:10:36,174
+multiple years guys I'm almost embarrassed to say
+
+150
+00:10:36,174 --> 00:10:38,956
+how many years I've spent watching this thing
+
+151
+00:10:38,956 --> 00:10:43,129
+um obviously before I migrated to charts um which is which has
+
+152
+00:10:43,130 --> 00:10:45,976
+done me good I don't regret it obviously
+
+153
+00:10:45,976 --> 00:10:48,822
+I understand profile and value and these concepts
+
+154
+00:10:48,822 --> 00:10:51,668
+probably better than most because I spent um
+
+155
+00:10:51,668 --> 00:10:56,649
+you know a decade watching this thing um so for me okay I'm taking
+
+156
+00:10:56,650 --> 00:10:58,490
+ticks out the market but guys
+
+157
+00:10:58,490 --> 00:11:03,090
+don't do that um that's not how I want you to develop as a trader
+
+158
+00:11:03,090 --> 00:11:05,106
+uh this you know you're just going to
+
+159
+00:11:05,106 --> 00:11:07,122
+get bored sitting here watching this thing all
+
+160
+00:11:07,122 --> 00:11:09,138
+the time as you've noticed the last three
+
+161
+00:11:09,138 --> 00:11:13,170
+four weeks all I want you to do is I want you to understand how the
+
+162
+00:11:13,170 --> 00:11:14,799
+market is coming out of value coming back
+
+163
+00:11:14,799 --> 00:11:17,649
+in all I'm going to show you is how you can use these things
+
+164
+00:11:17,650 --> 00:11:20,845
+to clue you in but we're going to
+
+165
+00:11:20,845 --> 00:11:24,040
+revisit this stuff in the pro course using
+
+166
+00:11:24,040 --> 00:11:32,428
+volume analysis tools like footprint and other things on a chart so yeah it's important you understand all of this stuff
+
+167
+00:11:32,430 --> 00:11:36,370
+absorption do you remember I said cumulative delta analysis we're going to do on a chart
+
+168
+00:11:36,370 --> 00:11:38,682
+market orders obviously you see that on a
+
+169
+00:11:38,682 --> 00:11:40,994
+footprint you'll also see that in volume profile
+
+170
+00:11:40,994 --> 00:11:47,930
+vwap all of these things are going to become really important on a chart I'm just going to show you on a depth of
+
+171
+00:11:47,930 --> 00:11:53,310
+market for a sense of completion and so you can now go away maybe for a week or two
+
+172
+00:11:53,310 --> 00:11:55,647
+I want you to do the same thing
+
+173
+00:11:55,647 --> 00:11:57,984
+here that I'm doing which is not necessarily
+
+174
+00:11:57,984 --> 00:12:03,828
+trying to make money but just observe watch it what's happening when we go out of the most recent value
+
+175
+00:12:03,830 --> 00:12:06,542
+oh we're going to the next area of
+
+176
+00:12:06,542 --> 00:12:09,254
+value oh if we don't go to the
+
+177
+00:12:09,254 --> 00:12:17,729
+next area value the market will quickly shoot back and come into the last area value all right guys those are the sort of things
+
+178
+00:12:17,730 --> 00:12:25,770
+I want you to observe over the next two three weeks is how is the market responding around fair value
+
+179
+00:12:25,770 --> 00:12:28,611
+so even here for example same thing I
+
+180
+00:12:28,611 --> 00:12:31,452
+know I keep repeating myself but hopefully you
+
+181
+00:12:31,452 --> 00:12:34,293
+can see I'm doing it for your own
+
+182
+00:12:34,293 --> 00:12:40,687
+good so the concept is just well ingrained in you is if we come out remember what's the
+
+183
+00:12:40,690 --> 00:12:43,630
+two things you can do return to fair
+
+184
+00:12:43,630 --> 00:12:46,570
+price or go to the next area fair
+
+185
+00:12:46,570 --> 00:12:55,390
+price what it very rarely will do is come down and start to trade around these blank areas because that's not where people are
+
+186
+00:12:55,390 --> 00:13:00,910
+happy to transact simple as that typically what you're going to see is we move to the next area of
+
+187
+00:13:00,910 --> 00:13:06,690
+fair value so watch out for those subtle things over the next one two weeks when you're consolidating
+
+188
+00:13:06,690 --> 00:13:08,543
+your knowledge now I'm going
+
+189
+00:13:08,543 --> 00:13:11,137
+to hit play here finally I'm sure
+
+190
+00:13:11,137 --> 00:13:14,102
+you're thinking and we're going to bring everything
+
+191
+00:13:14,102 --> 00:13:17,067
+together let me just clear this up zoom
+
+192
+00:13:17,067 --> 00:13:20,032
+in take this out okay so I'm going
+
+193
+00:13:20,032 --> 00:13:28,557
+to hit play zoom in hit play and then we're going to pick up the action and if there's anything I'll pause it
+
+194
+00:13:28,560 --> 00:13:30,388
+for you okay so
+
+195
+00:13:30,388 --> 00:13:33,130
+here we are in the Treasury
+
+196
+00:13:33,130 --> 00:13:35,872
+market now remember this is the
+
+197
+00:13:35,872 --> 00:13:46,840
+edge of that value which extends a bit further down actually so what you're seeing here is you're seeing some absorbing can you see
+
+198
+00:13:46,840 --> 00:13:56,870
+it guys you can see the absorption here 1600 have traded at 22 this seller is absorbing there's interest
+
+199
+00:13:56,870 --> 00:13:58,415
+to sell this market but
+
+200
+00:13:58,415 --> 00:14:00,578
+I'm actually waiting for us to see
+
+201
+00:14:00,578 --> 00:14:03,050
+if we move out of remember what I
+
+202
+00:14:03,050 --> 00:14:09,230
+said approximately this will extend a bit further down because I've zoomed it in I want us to move out
+
+203
+00:14:09,230 --> 00:14:10,839
+right to the edge of this
+
+204
+00:14:10,839 --> 00:14:12,984
+area then I'm going to see what's happening
+
+205
+00:14:12,984 --> 00:14:15,129
+but already can you see at the edge
+
+206
+00:14:15,129 --> 00:14:19,688
+of value we're seeing interest to sell absorption number two so I'll be making a note of
+
+207
+00:14:19,690 --> 00:14:21,788
+this absorption at 22 okay
+
+208
+00:14:21,788 --> 00:14:25,460
+so on its own absorption is not
+
+209
+00:14:25,460 --> 00:14:29,656
+enough I want to see absorption then I
+
+210
+00:14:29,656 --> 00:14:39,623
+want to see aggression aggression aggressive sellers coming in which gives me a clue that we're going to move
+
+211
+00:14:40,150 --> 00:14:41,639
+back down but the key
+
+212
+00:14:41,639 --> 00:14:43,724
+is the context guys where are we
+
+213
+00:14:43,724 --> 00:14:46,107
+if I saw this action happening where in
+
+214
+00:14:46,107 --> 00:14:51,768
+the middle of fair value I don't care doesn't mean anything it's because we're right at the edge of
+
+215
+00:14:51,770 --> 00:14:54,166
+value there we go
+
+216
+00:14:54,166 --> 00:14:58,359
+more absorption guys so we saw about 2000
+
+217
+00:14:58,359 --> 00:15:01,953
+now we're seeing 3000 4000 contracts being absorbed
+
+218
+00:15:01,953 --> 00:15:06,146
+at 22 so clearly a seller is in
+
+219
+00:15:06,146 --> 00:15:12,735
+this market right absorbing at 22 so I'm still pretty relaxed I
+
+220
+00:15:15,730 --> 00:15:17,630
+haven't seen any aggression come
+
+221
+00:15:17,630 --> 00:15:20,290
+in I'm thinking to myself let it
+
+222
+00:15:20,290 --> 00:15:23,330
+let it pop out a little bit let's
+
+223
+00:15:23,330 --> 00:15:26,370
+see what this seller is doing does he
+
+224
+00:15:26,370 --> 00:15:31,310
+come back in around here okay so we've gone bid now we broke
+
+225
+00:15:31,310 --> 00:15:33,224
+through 22 which is it's no big deal
+
+226
+00:15:33,224 --> 00:15:35,411
+it's only one tick it doesn't mean that
+
+227
+00:15:35,411 --> 00:15:37,598
+this seller has given up at all he
+
+228
+00:15:37,598 --> 00:15:39,785
+probably himself is thinking all right there's quite
+
+229
+00:15:39,785 --> 00:15:46,894
+a lot of aggression buyers are still willing to buy he's probably backed off a little bit and he's just waiting now to see what's happening
+
+230
+00:15:47,170 --> 00:15:49,162
+as we approach the edge of
+
+231
+00:15:49,162 --> 00:15:51,818
+value so this could go out remember if
+
+232
+00:15:51,818 --> 00:15:54,474
+I didn't see the absorption and I saw
+
+233
+00:15:54,474 --> 00:16:00,118
+aggressive buying happening then I might be looking to trade it out but I saw this absorption
+
+234
+00:16:00,120 --> 00:16:03,063
+so already I'm thinking to myself
+
+235
+00:16:03,063 --> 00:16:06,987
+maybe this could be a mean reversion trade
+
+236
+00:16:06,987 --> 00:16:09,930
+back in to value so nothing
+
+237
+00:16:09,930 --> 00:16:18,269
+to shout about yet we're not seeing aggressive selling coming in guys that's what I'm looking for
+
+238
+00:16:18,270 --> 00:16:21,240
+at this moment in time I pre-recorded this
+
+239
+00:16:21,240 --> 00:16:24,210
+video so I could have been thinking anything
+
+240
+00:16:24,210 --> 00:16:27,180
+at the time but I know for sure
+
+241
+00:16:27,180 --> 00:16:32,749
+that that's what I was looking for all right that's where the first sellers were
+
+242
+00:16:32,750 --> 00:16:35,218
+seeing some aggression coming in but
+
+243
+00:16:35,218 --> 00:16:38,509
+what am I noticing guys supply side games
+
+244
+00:16:38,509 --> 00:16:41,800
+these remember I said the buyers are sticking
+
+245
+00:16:41,800 --> 00:16:46,737
+1288 traded into here they didn't budge so those buyers are very real
+
+246
+00:16:47,150 --> 00:16:49,151
+so for me okay we saw the
+
+247
+00:16:49,151 --> 00:16:51,152
+absorption earlier around 22 but when we see
+
+248
+00:16:51,152 --> 00:16:52,581
+the aggression coming in at
+
+249
+00:16:52,581 --> 00:16:57,156
+21 it wasn't easier for these sellers to break through so now I'm thinking all right we're
+
+250
+00:16:57,730 --> 00:17:00,228
+kind of like a one all
+
+251
+00:17:00,228 --> 00:17:02,726
+I'm waiting so I've cleared the
+
+252
+00:17:02,726 --> 00:17:06,056
+depth of market right so we saw absorption
+
+253
+00:17:06,056 --> 00:17:15,216
+at 22 we saw buyers holding firm at 21 so it's kind of one all at the moment again I'm just trying to let
+
+254
+00:17:16,050 --> 00:17:19,136
+you think what my thought process is I've
+
+255
+00:17:19,136 --> 00:17:22,222
+also got an eye on this number there
+
+256
+00:17:22,222 --> 00:17:23,765
+and I'm thinking all
+
+257
+00:17:23,765 --> 00:17:30,709
+right that's unusual let's see how we react around there time is also really important look four minutes
+
+258
+00:17:30,710 --> 00:17:33,859
+have gone by and we've pretty much been
+
+259
+00:17:33,859 --> 00:17:37,008
+trading around the same area so I'm still
+
+260
+00:17:37,008 --> 00:17:44,488
+thinking this could be mean reversion potentially if we see some sellers stepping in around here so I'm waiting
+
+261
+00:17:44,490 --> 00:17:47,166
+right not much action from either
+
+262
+00:17:47,166 --> 00:17:49,842
+side buyers aren't keen to buy
+
+263
+00:17:49,842 --> 00:17:52,072
+we're only seeing 27 lift 200 lift 65
+
+264
+00:17:52,072 --> 00:18:00,100
+lift they're all very you know below 100 contracts or 200 contracts lifting and now we're at this key area
+
+265
+00:18:02,330 --> 00:18:05,735
+remember I said I want to see what does the
+
+266
+00:18:05,735 --> 00:18:07,778
+market do there well the sellers
+
+267
+00:18:07,778 --> 00:18:13,908
+ain't shifting that's 6 670 contracts are still showing now we're seeing some aggressive selling coming in which I like
+
+268
+00:18:14,590 --> 00:18:16,067
+1000 sellers now 120 251 these
+
+269
+00:18:16,067 --> 00:18:19,021
+sellers so these are this is
+
+270
+00:18:19,021 --> 00:18:21,975
+the red army right the sellers
+
+271
+00:18:21,975 --> 00:18:41,180
+the offers and the aggression the demand side of selling and the supply both on the red side wanting this thing to go down and getting aggressive now this seller's sticking there and this seller has now got aggressive
+
+272
+00:18:42,660 --> 00:18:45,610
+so I think now I'm starting to get
+
+273
+00:18:45,610 --> 00:18:48,560
+interested in taking a position why because I'm
+
+274
+00:18:48,560 --> 00:18:55,198
+seeing not necessarily I've seen some absorption but I'm seeing that there's a seller here who's just sitting
+
+275
+00:18:55,200 --> 00:19:03,120
+a and b guys has anyone bought into 24 one contract nothing
+
+276
+00:19:03,120 --> 00:19:06,041
+very little interest in selling sorry in buying
+
+277
+00:19:06,041 --> 00:19:08,962
+here at the top of the market and
+
+278
+00:19:08,962 --> 00:19:17,359
+remember on a footprint you'd see one three two six and once a big imbalance as well so I know I'm getting very
+
+279
+00:19:17,360 --> 00:19:19,991
+interested now in selling because I'm thinking well
+
+280
+00:19:19,991 --> 00:19:22,622
+no one's buying the market no one wants
+
+281
+00:19:22,622 --> 00:19:23,937
+to test this guy
+
+282
+00:19:23,937 --> 00:19:29,199
+he's standing firm we've seen aggressive selling coming in so almost one two three all things
+
+283
+00:19:29,200 --> 00:19:32,635
+are happening at the edge of value this
+
+284
+00:19:32,635 --> 00:19:36,070
+area the edge of the whole fair price
+
+285
+00:19:36,070 --> 00:19:45,518
+so I'm surprised I haven't actually taken a position here yet but let's see if I do because again this was pre-recorded
+
+286
+00:19:45,520 --> 00:19:50,980
+I think I want to just get filled on the offer potentially and not get too aggressive
+
+287
+00:19:50,980 --> 00:19:56,971
+but let's see what happens anyway so again
+
+288
+00:19:56,971 --> 00:20:02,962
+guys look just one individual buyer has come
+
+289
+00:20:02,962 --> 00:20:16,442
+into 24 and we've seen only aggression and this guy look he's still there 600 there we finally seeing a
+
+290
+00:20:17,940 --> 00:20:20,980
+little bit of a test of some buying
+
+291
+00:20:20,980 --> 00:20:23,640
+but again no one trades into 24 but
+
+292
+00:20:23,640 --> 00:20:25,160
+we are seeing a
+
+293
+00:20:25,160 --> 00:20:32,380
+little bit of buying absorption guys absorption happening at 23 and a half there was not a thousand contracts on
+
+294
+00:20:33,140 --> 00:20:38,440
+the offer at 23 and a half there you go that's that's what made me get in I've got short now
+
+295
+00:20:38,440 --> 00:20:39,868
+I saw the absorption
+
+296
+00:20:39,868 --> 00:20:42,011
+can you see that more absorption
+
+297
+00:20:42,011 --> 00:20:44,154
+guys we saw aggression sellers hitting
+
+298
+00:20:44,154 --> 00:20:50,941
+the bids at 23 and a half and now we're seeing absorption here and we're right at the edge of
+
+299
+00:20:51,300 --> 00:20:58,260
+the market third thing is this guy's staying uh still so the supply side game no changing of orders
+
+300
+00:20:58,260 --> 00:21:06,600
+all three things are pointing to this market coming down so I actually um took some more trade a contract
+
+301
+00:21:06,600 --> 00:21:09,548
+there I think um I got filled
+
+302
+00:21:09,548 --> 00:21:12,496
+at 23 and a half so I hit
+
+303
+00:21:12,496 --> 00:21:15,023
+the market aggressively at 23 I put
+
+304
+00:21:15,023 --> 00:21:25,133
+a market order in at 23 and a half and I got filled on that so let's just see what happens now time is crucial
+
+305
+00:21:26,400 --> 00:21:27,553
+you know the longer
+
+306
+00:21:27,553 --> 00:21:29,859
+this now takes to move down the sellers
+
+307
+00:21:29,859 --> 00:21:31,877
+will get a little bit nervous and
+
+308
+00:21:31,877 --> 00:21:38,219
+they'll allow this to push against them a little bit so what I'm doing is as you see I've got the mouse
+
+309
+00:21:38,220 --> 00:21:40,435
+holding in these squares that's
+
+310
+00:21:40,435 --> 00:21:43,536
+my stop loss guys I'm just getting
+
+311
+00:21:43,536 --> 00:21:46,637
+ready to stop out in case it
+
+312
+00:21:46,637 --> 00:21:55,940
+goes against me can you see what I've done here these are my take profits I'm taking I've put some bids
+
+313
+00:21:55,940 --> 00:21:57,745
+in the market why is that
+
+314
+00:21:57,745 --> 00:21:59,550
+well this is a level of
+
+315
+00:21:59,550 --> 00:22:01,656
+support isn't it if this buyer is
+
+316
+00:22:01,656 --> 00:22:08,878
+real it's going to be difficult I know I want to ideally go right into value but there's a decent amount of trading that
+
+317
+00:22:08,880 --> 00:22:11,966
+took place there at 20 see
+
+318
+00:22:11,966 --> 00:22:16,904
+that little high volume node it's called so
+
+319
+00:22:16,904 --> 00:22:20,608
+I like what I've seen so
+
+320
+00:22:20,608 --> 00:22:31,720
+much I think I took another position there so that's my three positions basically around here look guys
+
+321
+00:22:32,340 --> 00:22:34,078
+still there 600 and only
+
+322
+00:22:34,078 --> 00:22:36,250
+one traded I've got my
+
+323
+00:22:36,250 --> 00:22:41,464
+finger on the stop there um and I'm actually to be fair
+
+324
+00:22:41,900 --> 00:22:47,540
+I'm happy for them to test this 654 because the market obviously we're in corona and you saw that
+
+325
+00:22:47,540 --> 00:22:48,977
+the um fair
+
+326
+00:22:48,977 --> 00:22:51,852
+price is a little bit wider
+
+327
+00:22:51,852 --> 00:22:55,686
+than usual um I think I'm going to
+
+328
+00:22:55,686 --> 00:23:07,188
+allow myself a little bit more room on this trade than I normally would when I'm trading treasuries that's what I always say to
+
+329
+00:23:07,190 --> 00:23:13,470
+people market's dynamic guys even when you see me trading on discord I'm always looking for clues as to
+
+330
+00:23:13,470 --> 00:23:24,120
+okay so the market's moving down nicely now towards my targets do you see guys that guy never got
+
+331
+00:23:24,120 --> 00:23:42,570
+tested then we saw absorption and sellers coming in at 23 and a half so quite a bit trade there okay
+
+332
+00:23:42,570 --> 00:23:44,642
+so I've taken that out and
+
+333
+00:23:44,642 --> 00:23:46,369
+I'm trying to get my
+
+334
+00:23:46,369 --> 00:23:50,169
+first feel here there you go so I just got filled
+
+335
+00:23:50,170 --> 00:23:56,830
+I shorted and I got filled I moved it up a little bit just because it was taking time
+
+336
+00:23:56,830 --> 00:23:59,055
+so again remind yourself
+
+337
+00:23:59,055 --> 00:24:02,393
+what we've seen we've seen absorption
+
+338
+00:24:02,393 --> 00:24:05,731
+we've seen aggression come on this
+
+339
+00:24:05,731 --> 00:24:15,189
+side we've seen supply side games in the sense that we've seen sellers be real when we
+
+340
+00:24:15,190 --> 00:24:26,820
+tested 646 he didn't budge and on top of that we only traded one contract into it so what's happening
+
+341
+00:24:26,820 --> 00:24:29,084
+here is I've got my finger there
+
+342
+00:24:29,084 --> 00:24:31,348
+because it's on the stop I'm going
+
+343
+00:24:31,348 --> 00:24:33,289
+to stop out um if it
+
+344
+00:24:33,289 --> 00:24:39,759
+goes above there but actually to be honest the action I'm seeing here is is basically pathetic on the buy
+
+345
+00:24:39,760 --> 00:24:46,980
+side I'm seeing very little interest for us to move to the next level of value uh fair price or value
+
+346
+00:24:46,980 --> 00:24:53,620
+you see how I'm circling that area it's got me concerned because this guy if you notice you rewind
+
+347
+00:24:53,620 --> 00:25:08,040
+it it's been sticking around this you know seven to eight hundred bids for some time now look at that
+
+348
+00:25:08,040 --> 00:25:21,370
+guys 600 100 300 and look at the buyers much more selling on the aggressive side right got my finger
+
+349
+00:25:21,370 --> 00:25:24,138
+there just ready to stop out if it
+
+350
+00:25:24,138 --> 00:25:26,906
+does go against us so don't forget I've
+
+351
+00:25:26,906 --> 00:25:29,674
+taken profit um on two positions and I've
+
+352
+00:25:29,674 --> 00:25:35,902
+got this one position where I just want to us to go and test this 21 what I'll do
+
+353
+00:25:36,250 --> 00:25:38,326
+is I'll wait for it to go down
+
+354
+00:25:38,326 --> 00:25:40,142
+to 21 and as we start testing this
+
+355
+00:25:40,142 --> 00:25:42,218
+area it's unlikely I'm going to get filled
+
+356
+00:25:42,218 --> 00:25:46,629
+here do you see what happened here we tested it didn't really get the full allocation of
+
+357
+00:25:46,890 --> 00:25:50,173
+contracts trading there so if you wanted to get filled
+
+358
+00:25:50,173 --> 00:25:53,456
+for example on the offer side here it's unlikely and
+
+359
+00:25:53,456 --> 00:25:58,709
+similarly here I think it's unlikely what I've done is I'm circling that and what I'm
+
+360
+00:25:58,710 --> 00:26:02,376
+trying to point out is that look we've only traded
+
+361
+00:26:02,376 --> 00:26:06,042
+one contract seven peanuts on the buy side but look
+
+362
+00:26:06,042 --> 00:26:12,642
+how many we're trading on the sell side 500 guys we're trading huge size on the sell side aggressively
+
+363
+00:26:13,010 --> 00:26:16,728
+on the buy side we're just not trading
+
+364
+00:26:16,728 --> 00:26:20,446
+that's not to say it can't snap back
+
+365
+00:26:20,446 --> 00:26:28,348
+up because don't forget sometimes what's happening is these sellers so they're aggressively selling right we've seen
+
+366
+00:26:28,350 --> 00:26:35,910
+several thousand contracts selling uh aggressively but they're not really getting much movement are they
+
+367
+00:26:35,910 --> 00:26:37,910
+where are they selling they've been selling at
+
+368
+00:26:37,910 --> 00:26:39,160
+23 and a half 23 22 and a
+
+369
+00:26:39,160 --> 00:26:45,160
+half so you've got people short here guys if this thing doesn't move down and test this area very quickly so they can get
+
+370
+00:26:45,910 --> 00:26:48,944
+their one or two ticks you will see this pop
+
+371
+00:26:48,944 --> 00:26:51,978
+because some of them will bail won't they what do
+
+372
+00:26:51,978 --> 00:26:59,868
+you have to do if you're short to get out buy so that may cause them to buy so my one position here I know what
+
+373
+00:26:59,870 --> 00:27:02,884
+I'm thinking right now I'm thinking are they
+
+374
+00:27:02,884 --> 00:27:05,898
+going to test this because these sellers that
+
+375
+00:27:05,898 --> 00:27:13,809
+have stepped in here they're not getting paid still are they you see I'm getting nervous about it I'm thinking of
+
+376
+00:27:13,810 --> 00:27:20,130
+cancelling this I have cancelled it I'm thinking of moving it up just to get out of this position
+
+377
+00:27:20,130 --> 00:27:23,750
+because I can see these sellers some of them are bailing now you can see it here
+
+378
+00:27:23,750 --> 00:27:27,163
+do you remember before we were trading single digits here
+
+379
+00:27:27,163 --> 00:27:30,235
+on the buy side now we're suddenly trading 400 this
+
+380
+00:27:30,235 --> 00:27:36,037
+is what I say to people guys even when you're trading not on a depth of market
+
+381
+00:27:36,380 --> 00:27:40,030
+on a chart people who just think you can um
+
+382
+00:27:40,030 --> 00:27:43,680
+enter leave a stop loss and a take profit crazy
+
+383
+00:27:43,680 --> 00:27:50,980
+you see you're getting information all the time even after you've entered the trade you won't need to watch this
+
+384
+00:27:50,980 --> 00:27:53,273
+the way I am but anyway coming back
+
+385
+00:27:53,273 --> 00:27:56,999
+to this so what is I'm thinking of exiting my last position here
+
+386
+00:27:57,000 --> 00:28:00,415
+and hopefully I don't and the reason I say that
+
+387
+00:28:00,415 --> 00:28:03,830
+is because look these are very real can you see
+
+388
+00:28:03,830 --> 00:28:09,295
+someone's absorbing at 24 the guy do you remember he had about 600 contracts there well we've just
+
+389
+00:28:09,980 --> 00:28:12,735
+traded 500 and he's still showing 300 500 and 300
+
+390
+00:28:12,735 --> 00:28:16,868
+is 800 so I know this seller is very real
+
+391
+00:28:16,868 --> 00:28:26,053
+and still interested in they go 800 he absorbed 800 so yeah we've tested the edge of value again he's gone two
+
+392
+00:28:29,270 --> 00:28:32,473
+ticks against me I think if it goes
+
+393
+00:28:32,473 --> 00:28:35,676
+another one or two ticks I'm going to
+
+394
+00:28:35,676 --> 00:28:39,280
+be out this market but I like the fact
+
+395
+00:28:39,280 --> 00:28:43,284
+that we traded and he was real he was happy
+
+396
+00:28:43,284 --> 00:28:54,097
+to stand there and we've traded pretty much peanuts on the edge of value so let's see what I think what I'm doing is I'm literally just
+
+397
+00:28:54,100 --> 00:28:57,517
+waiting to see what's happening in this area see what
+
+398
+00:28:57,517 --> 00:29:00,934
+you've got to remember guys is you might be wondering
+
+399
+00:29:00,934 --> 00:29:04,351
+why haven't I bailed now it's now gone four ticks
+
+400
+00:29:04,351 --> 00:29:07,768
+against me the reason is because I'm taking into account
+
+401
+00:29:07,768 --> 00:29:18,363
+what it's not only about what's happening at that very single moment it's also the what I've been observing for the last 15 minutes what have I observed for the last 15 minutes
+
+402
+00:29:19,050 --> 00:29:21,474
+we've seen absorption happening at all
+
+403
+00:29:21,474 --> 00:29:23,898
+of these levels we've seen absorption
+
+404
+00:29:23,898 --> 00:29:26,322
+happening in this area we've seen
+
+405
+00:29:26,322 --> 00:29:31,170
+absorption happening in this area we've seen absorption happening in this area
+
+406
+00:29:31,170 --> 00:29:34,307
+we've seen sellers getting aggressive have we seen
+
+407
+00:29:34,307 --> 00:29:37,444
+any absorbing happening here no so in my
+
+408
+00:29:37,444 --> 00:29:40,973
+mind I know what's happening we got down we
+
+409
+00:29:40,973 --> 00:29:44,502
+saw a lot of selling coming at 23 and a
+
+410
+00:29:44,502 --> 00:29:54,305
+half 24 we saw a lot of selling coming in right and I knew people were just going to be bailing because they weren't getting paid
+
+411
+00:29:55,090 --> 00:30:01,511
+but I was watching how many people bailed but we
+
+412
+00:30:01,511 --> 00:30:07,932
+saw how many got short several thousand I only saw
+
+413
+00:30:07,932 --> 00:30:21,418
+a few hundred bailing so I was thinking people are still short so I'm still in the trade I'm not sure
+
+414
+00:30:21,420 --> 00:30:24,054
+if I actually add there you go I added some
+
+415
+00:30:24,054 --> 00:30:26,688
+more into this trade there you go and I got
+
+416
+00:30:26,688 --> 00:30:33,536
+filled at 23 and a half so I've got my three positions back on guys so don't forget I took three shorts I got out of two
+
+417
+00:30:33,800 --> 00:30:36,721
+market went against me I only had one position and
+
+418
+00:30:36,721 --> 00:30:39,642
+I was ready to get out at a small loss
+
+419
+00:30:39,642 --> 00:30:45,778
+but I liked what I saw in the sense that yep the buyers were stepping in but there were very few
+
+420
+00:30:45,780 --> 00:30:49,341
+buyers stepping in so again you're only seeing
+
+421
+00:30:49,341 --> 00:30:52,902
+five two hundred two hundred it's peanuts but
+
+422
+00:30:52,902 --> 00:31:01,359
+when you're seeing selling we're seeing um a lot of selling coming in and absorbing there you go look
+
+423
+00:31:01,360 --> 00:31:04,797
+500 excuse me very very aggressive selling here
+
+424
+00:31:04,797 --> 00:31:08,725
+I'm even more confident now that we're going
+
+425
+00:31:08,725 --> 00:31:19,528
+to move down I've got my finger there because I'm thinking if it goes against me too much I'm happy to bail
+
+426
+00:31:20,020 --> 00:31:23,495
+that's all I'm doing that's why I got
+
+427
+00:31:23,495 --> 00:31:26,970
+my finger in this spot there you go
+
+428
+00:31:26,970 --> 00:31:30,445
+look at that guy 700 how many seeing on
+
+429
+00:31:30,445 --> 00:31:36,092
+the buy side 50 29 200 nothing that's you see what I'm circling there that's what
+
+430
+00:31:37,830 --> 00:31:46,047
+I'm circling I think now my fingers you can see
+
+431
+00:31:46,047 --> 00:31:54,264
+I'm relaxed I'm much more relaxed because I've seen the
+
+432
+00:31:54,264 --> 00:32:09,878
+buyers give it their best shot and they just weren't able to really do very much I didn't see
+
+433
+00:32:09,880 --> 00:32:12,152
+absorption here I didn't see aggressive buying coming
+
+434
+00:32:12,152 --> 00:32:14,424
+in yeah the market moved up but the
+
+435
+00:32:14,424 --> 00:32:21,240
+manner in which it did it see I'm even thinking should I add some more here I'm so confident that this is going to
+
+436
+00:32:21,240 --> 00:32:23,356
+pop down now but I thought better of
+
+437
+00:32:23,356 --> 00:32:25,472
+it because I had three positions already I
+
+438
+00:32:25,472 --> 00:32:27,852
+thought don't get greedy I'm hoping I thought better
+
+439
+00:32:27,852 --> 00:32:31,819
+of it yeah I did and there you go look we just finally the sellers
+
+440
+00:32:31,820 --> 00:32:35,121
+finally slammed this and they move it moving
+
+441
+00:32:35,121 --> 00:32:38,009
+it down now towards fair price so
+
+442
+00:32:38,009 --> 00:32:48,738
+we've seen this bid increase a little bit but I got out there so my first position just got taken out you see I went from
+
+443
+00:32:48,740 --> 00:32:51,329
+minus 18 to minus 12 right got another position here
+
+444
+00:32:51,329 --> 00:32:53,918
+so what I did is I moved it
+
+445
+00:32:53,918 --> 00:33:01,687
+up guys so I'm happy to get out all my position here at 20 and a half because I don't really want to test this
+
+446
+00:33:02,660 --> 00:33:07,949
+that's why I moved my bid up and I may even move
+
+447
+00:33:07,949 --> 00:33:11,475
+it up a bit more just because we
+
+448
+00:33:11,475 --> 00:33:20,290
+only sold three contracts into this and I'm starting to see a bit of a two-way battle basically going on
+
+449
+00:33:20,290 --> 00:33:27,230
+in this area which is what I'm circling here I can see a two-way battle starting
+
+450
+00:33:27,230 --> 00:33:30,490
+although saying that to be fair look the
+
+451
+00:33:30,490 --> 00:33:32,935
+buying is still very very weak
+
+452
+00:33:32,935 --> 00:33:44,348
+so there you go I'm out of my position now I'm just going to let it play out for five minutes but just basically to let you know
+
+453
+00:33:44,350 --> 00:33:47,565
+that my main concern at this stage was this 780
+
+454
+00:33:47,565 --> 00:33:50,422
+here and that's what sellers that's why I'm
+
+455
+00:33:50,422 --> 00:33:56,852
+circling that that's what sellers are all looking at guys they're not looking at technical analysis mumbo jumbo
+
+456
+00:33:57,210 --> 00:34:06,840
+rubbish did you see how the sellers backed off as soon as we got here okay so that's just showing you
+
+457
+00:34:06,840 --> 00:34:11,603
+all the ticks that I made which was a lot
+
+458
+00:34:11,603 --> 00:34:14,937
+actually it was one plus 132 so basically
+
+459
+00:34:14,937 --> 00:34:27,797
+um that's 33 ticks I took out of the market which is quite a lot I'm done I thought I'd just let it play out do you see
+
+460
+00:34:28,750 --> 00:34:32,552
+how the market moved away from there just want you
+
+461
+00:34:32,552 --> 00:34:35,593
+to see guys algorithms I was trading with
+
+462
+00:34:35,593 --> 00:34:43,197
+algorithms there was coming in they're all programmed to see this they all saw that and they all backed off
+
+463
+00:34:43,199 --> 00:34:46,688
+they don't see it from a distance and say oh there's a
+
+464
+00:34:46,688 --> 00:34:49,014
+buyer there let's just not go there what
+
+465
+00:34:49,014 --> 00:34:54,539
+they're doing is they're happy to go and test so you saw the market came right down into here
+
+466
+00:34:54,540 --> 00:34:58,402
+and it traded by hardly traded you know maybe 50
+
+467
+00:34:58,402 --> 00:35:01,406
+100 contracts and then as soon as algorithms
+
+468
+00:35:01,406 --> 00:35:02,264
+saw and
+
+469
+00:35:02,264 --> 00:35:09,560
+a few big individual players that okay we weren't making inroads into this area they all backed
+
+470
+00:35:10,420 --> 00:35:14,356
+off and that's why the market is now starting to
+
+471
+00:35:14,356 --> 00:35:17,505
+settle in this range and that's why I
+
+472
+00:35:17,505 --> 00:35:25,378
+pulled my positions as well so there's still three minutes left it's a perfect time for us to remind ourselves
+
+473
+00:35:25,380 --> 00:35:28,177
+what did I see guys what clues was
+
+474
+00:35:28,177 --> 00:35:30,275
+it do you remember I saw
+
+475
+00:35:30,275 --> 00:35:38,318
+absorption so I saw supply side games right um at many levels so I knew sellers were interested in selling and taking positions
+
+476
+00:35:38,320 --> 00:35:42,186
+we saw what other supply side games in the sense of whenever
+
+477
+00:35:42,186 --> 00:35:44,763
+do you remember I think around here there
+
+478
+00:35:44,763 --> 00:35:49,918
+was about six or seven hundred contracts whenever we were testing it the guy wasn't flinching
+
+479
+00:35:49,920 --> 00:35:53,707
+even though he wasn't absorbing whenever we tested it it
+
+480
+00:35:53,707 --> 00:35:56,737
+was an unusual amount he just wasn't flinching
+
+481
+00:35:56,737 --> 00:36:02,418
+so we saw that we saw absorption and then we saw market orders as well
+
+482
+00:36:02,420 --> 00:36:06,655
+well we saw aggression coming in guys so I saw
+
+483
+00:36:06,655 --> 00:36:10,043
+three things in my favor that suggested to
+
+484
+00:36:10,043 --> 00:36:19,360
+me oh we're out of value rather than moving to the next profile value right fair price what we're going to do
+
+485
+00:36:19,360 --> 00:36:22,105
+actually we're likely to move back in
+
+486
+00:36:22,105 --> 00:36:25,243
+why is that well I saw sellers getting
+
+487
+00:36:25,243 --> 00:36:28,773
+aggressive on the supply side I saw seller standing
+
+488
+00:36:28,773 --> 00:36:33,088
+firm and I saw sellers placing market orders that's it guys
+
+489
+00:36:33,088 --> 00:36:38,187
+had I seen what absorption on the bid side had I seen um
+
+490
+00:36:38,187 --> 00:36:58,977
+buyers standing firm and I'd seen buyers do what hit into offers and what contextually we were at the edge of value then I would have gone to the next I would look for the breakout and look for the next fair price to be tested so I really hope that makes sense
+
+491
+00:36:58,980 --> 00:37:00,763
+you know it's not a punt
+
+492
+00:37:00,763 --> 00:37:03,437
+you're not just thinking oh I woke up on
+
+493
+00:37:03,437 --> 00:37:11,758
+the left side of bed today so I'm going to take it from value to the next value rather than doing the reversion trade return to fair price
+
+494
+00:37:11,760 --> 00:37:14,213
+let the market tell you in terms
+
+495
+00:37:14,213 --> 00:37:16,666
+of what it's doing you know are
+
+496
+00:37:16,666 --> 00:37:18,769
+their sellers active is their absorption
+
+497
+00:37:18,769 --> 00:37:24,377
+what side is it on is their market orders mainly is to do with market orders
+
+498
+00:37:24,380 --> 00:37:30,564
+because don't forget guys we'll be able to
+
+499
+00:37:30,564 --> 00:37:36,748
+read absorption on a chart anyway using cumulative
+
+500
+00:37:36,748 --> 00:37:42,932
+delta as I said to you so you
+
+501
+00:37:42,932 --> 00:37:54,528
+can see the market like the banana market we went up we came back down
+
+502
+00:37:54,530 --> 00:37:59,815
+mark is kind of happy around
+
+503
+00:37:59,815 --> 00:38:05,100
+this area now just one minute
+
+504
+00:38:05,100 --> 00:38:13,028
+of the video left and it's pretty much over
+
+505
+00:38:13,030 --> 00:38:15,557
+guys okay so that's
+
+506
+00:38:15,557 --> 00:38:19,347
+the example done um what I
+
+507
+00:38:19,347 --> 00:38:23,137
+might potentially do in fact yeah
+
+508
+00:38:23,137 --> 00:38:26,927
+um let me do that what
+
+509
+00:38:26,927 --> 00:38:37,667
+I'm going to do now is um I'm going to step away from the screen and um
+
+510
+00:38:37,670 --> 00:38:40,956
+for those of you who are interested in watching this again without
+
+511
+00:38:40,956 --> 00:38:43,146
+me talking over it and marking it and
+
+512
+00:38:43,146 --> 00:38:44,789
+just learning from it if you
+
+513
+00:38:44,789 --> 00:38:48,349
+want um because you know the alternative is you're going to have to
+
+514
+00:38:48,350 --> 00:38:50,656
+go out and I want you to do this as
+
+515
+00:38:50,656 --> 00:38:52,501
+well because I want you to spend two
+
+516
+00:38:52,501 --> 00:38:54,115
+weeks doing this go out there do
+
+517
+00:38:54,115 --> 00:38:58,267
+a screen recording like I've done here now you see with me like I said I've been looking
+
+518
+00:38:58,270 --> 00:39:00,880
+at this for years even here I could spot the
+
+519
+00:39:00,880 --> 00:39:02,968
+things without having to press pause I could
+
+520
+00:39:02,968 --> 00:39:04,795
+I knew what I was looking for
+
+521
+00:39:04,795 --> 00:39:08,449
+obviously your eye isn't trained like that so what I would suggest you do
+
+522
+00:39:08,450 --> 00:39:11,701
+is use uh whatever screen recording software you have watch
+
+523
+00:39:11,701 --> 00:39:14,302
+it try to do it in real time
+
+524
+00:39:14,302 --> 00:39:17,553
+but then play it back to yourself you know in
+
+525
+00:39:17,553 --> 00:39:20,804
+the evening after work or whenever around family time or
+
+526
+00:39:20,804 --> 00:39:26,006
+whatever replay it back to yourself but for those that maybe don't have the time necessarily
+
+527
+00:39:26,010 --> 00:39:28,105
+immediately to do that I'm going to press
+
+528
+00:39:28,105 --> 00:39:29,676
+play now I'm going to step
+
+529
+00:39:29,676 --> 00:39:31,247
+away I'm going to press play
+
+530
+00:39:31,247 --> 00:39:36,747
+and I'm just going to let the whole 25 minutes play out so you can mark it as you wish and just
+
+531
+00:39:37,010 --> 00:39:39,467
+replay it back to yourself but otherwise have
+
+532
+00:39:39,467 --> 00:39:41,924
+fun with it guys um yeah if you've
+
+533
+00:39:41,924 --> 00:39:44,381
+got any questions let me know but otherwise
+
+534
+00:39:44,381 --> 00:39:46,838
+enjoy spend the next two weeks on this
+
+535
+00:39:46,838 --> 00:39:48,988
+then on the next section I'm going
+
+536
+00:39:48,990 --> 00:39:51,729
+to do the discord where um I've already
+
+537
+00:39:51,729 --> 00:39:54,468
+done it you're going to see me trade
+
+538
+00:39:54,468 --> 00:39:57,207
+the depth of market side by side with
+
+539
+00:39:57,207 --> 00:40:03,028
+my retail platform um using some of the discord levels I don't really want you to do
+
+540
+00:40:03,030 --> 00:40:08,370
+that stuff until you've been able to do this play some trades take doesn't even have to be profits I
+
+541
+00:40:08,370 --> 00:40:13,490
+really don't care just try and understand value to value going back to value going out of value
+
+542
+00:40:13,490 --> 00:40:15,343
+um trading around the volume
+
+543
+00:40:15,343 --> 00:40:17,938
+profile contextually etc um so do that
+
+544
+00:40:17,938 --> 00:40:20,904
+for two weeks then we're going to have
+
+545
+00:40:20,904 --> 00:40:27,948
+the last bit which is obviously the discord stuff and then we'll move on to the pro uh course
+
+546
+00:40:27,950 --> 00:40:29,642
+where we'll um probably be doing
+
+547
+00:40:29,642 --> 00:40:31,334
+some introduce you slowly to some
+
+548
+00:40:31,334 --> 00:40:33,590
+of the more advanced concepts I'm going to
+
+549
+00:40:33,590 --> 00:40:38,948
+let this play for 25 minutes and then I'm just going to end this video all right guys enjoy it
+
+550
+00:40:39,230 --> 00:40:41,230
+you
+
+===== END AFTER_SEGMENT =====

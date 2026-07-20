@@ -1,0 +1,1784 @@
+===== AFTER_OPTIMIZE (355 entries) =====
+1
+00:00:00,000 --> 00:00:04,680
+大家好，我是Brian。今天是2024年5月16日，周四，
+What's going on, guys? Brian's here. Today is Thursday, May 16th, 2024, and the market is open
+
+2
+00:00:04,680 --> 00:00:06,983
+录制视频时市场正在交易。
+as I'm recording this video. Broken
+
+3
+00:00:06,983 --> 00:00:10,054
+破损蝶式（Broken Wing Butterfly）已成为我最爱的
+wing butterflies have become my favorite out of
+
+4
+00:00:10,054 --> 00:00:12,357
+获利动能期权投机策略之一。
+the money momentum speculative options trading
+
+5
+00:00:12,357 --> 00:00:14,276
+过去一年多来，
+strategies over the past year
+
+6
+00:00:14,276 --> 00:00:22,338
+我喜欢它，因为风险收益比极其出色。
+or so. I love them because the risk to reward is amazing. They're great for speculation because you're not going to
+
+7
+00:00:22,340 --> 00:00:23,665
+投机时，即使方向判断错误，
+be punished if you are
+
+8
+00:00:23,665 --> 00:00:25,520
+也不会受到严重惩罚。
+wrong. In this case, this is a
+
+9
+00:00:25,520 --> 00:00:27,110
+这次是看涨期权的破损蝶式。
+long call broken wing butterfly. The
+
+10
+00:00:27,110 --> 00:00:32,940
+这笔交易是在本周初开仓的。
+trade was opened at the start of this week. We'll get into the charts in a little bit, but this is a
+
+11
+00:00:32,940 --> 00:00:34,140
+稍后我们会看图表，
+general video, so it's
+
+12
+00:00:34,140 --> 00:00:36,540
+但这是一个通用教程，
+not specifically about this particular trade. I just
+
+13
+00:00:36,540 --> 00:00:38,940
+并非专门讲这笔交易。
+want to highlight or showcase this strategy that
+
+14
+00:00:38,940 --> 00:00:41,340
+我只是想介绍这个被低估的策略。
+I don't think gets a lot of attention.
+
+15
+00:00:41,340 --> 00:00:49,440
+很多人可能不了解它。我们会分析它的优缺点，
+Therefore, I don't think a lot of people know about it. We will weigh its pros and cons, and we will also compare it to just buying
+
+16
+00:00:49,440 --> 00:00:51,018
+并与直接买入看涨期权对比。
+a call option. You can trade
+
+17
+00:00:51,018 --> 00:00:53,122
+你也可以用看跌期权操作这个策略。
+this also with puts. If you're speculating that
+
+18
+00:00:53,122 --> 00:00:54,437
+如果你预测某只股票
+a stock or in this
+
+19
+00:00:54,437 --> 00:00:59,698
+或像本例中的SPX（标普500指数）会下跌。
+case here, the SPX is going to go down. This trade, since it was opened up on Monday morning Eastern
+
+20
+00:00:59,700 --> 00:01:05,900
+这笔交易周一早上开仓，目前涨幅约850%，
+time, it is currently up about 850% based on the debit it was paid for. So if you don't like credit
+
+21
+00:01:05,900 --> 00:01:07,598
+基于支付的权利金计算。
+spreads, the first thing to take note
+
+22
+00:01:07,598 --> 00:01:09,781
+首先要注意的是，这是一个权利金支付策略，
+of is this is a debit, which for a
+
+23
+00:01:09,781 --> 00:01:15,118
+对新手来说可能更容易理解。
+beginning trader might be a little bit easier to conceptualize. A butterfly spread, in case you do not know, is comprised of
+
+24
+00:01:15,120 --> 00:01:17,550
+蝶式差价由三个不同行权价组成。
+three different strikes. You sell two options
+
+25
+00:01:17,550 --> 00:01:20,327
+你卖出两份同一行权价的期权，
+of the same strike, and then you buy
+
+26
+00:01:20,327 --> 00:01:22,062
+然后在两侧分别买入期权。
+options that are on each
+
+27
+00:01:22,062 --> 00:01:28,658
+两侧的期权称为‘翼’，中间称为‘身’
+side of that strike. These are referred to as the wings, and this is referred to as the body,
+
+28
+00:01:29,260 --> 00:01:31,566
+这些订单是同时下达的，
+and this order is submitted at the same
+
+29
+00:01:31,566 --> 00:01:34,449
+因此称为差价策略。
+time. Therefore, it is called a spread. Your broker or
+
+30
+00:01:34,449 --> 00:01:36,467
+你的经纪商或交易平台会简化操作流程
+your platform makes it very simple to
+
+31
+00:01:36,467 --> 00:01:44,539
+实际下单操作很简单，但解释起来会显得复杂。现在，破损蝶式的特点在于
+actually submit this order, whereas explaining it can make it seem as if it's more complicated than what it actually is. Now, what makes this a broken wing
+
+32
+00:01:44,540 --> 00:01:47,428
+两侧翼的距离不对称。
+butterfly is the fact that the distance between
+
+33
+00:01:47,428 --> 00:01:49,955
+所以
+the wings are not the same. So
+
+34
+00:01:49,955 --> 00:01:51,760
+比如，如果我在这里新建
+if I was to open
+
+35
+00:01:51,760 --> 00:01:58,980
+另一个蝶式差价，比如在这里，输入SPX（标普500指数），默认情况下，
+up another butterfly, for example, right here, and we typed in the SPX, and by default, you see this is
+
+36
+00:01:58,980 --> 00:02:04,160
+两侧翼是等距的，这只是普通的看涨蝶式差价，不是破损蝶式。
+going to have even wings. So this is just going to be called a long call butterfly. It is not broken
+
+37
+00:02:04,160 --> 00:02:05,980
+如果调整其中一侧翼的位置，
+wing. If we were to move one
+
+38
+00:02:05,980 --> 00:02:08,060
+就变成了破损蝶式。
+of the wings, that will make it broken.
+
+39
+00:02:08,060 --> 00:02:15,080
+这是普通蝶式差价，但如果我拉长其中一侧翼，
+So this is a butterfly, but if I were to pull this one out, we're now making this wing broken, and that's what's going to create a
+
+40
+00:02:15,080 --> 00:02:16,706
+就变成了破损蝶式。现在关闭这个，
+broken wing butterfly. So let's close
+
+41
+00:02:16,706 --> 00:02:18,874
+回到之前的交易示例，
+this out and jump back to this trade
+
+42
+00:02:18,874 --> 00:02:20,500
+仅用于展示潜在收益。
+again, which is just an example
+
+43
+00:02:20,500 --> 00:02:25,378
+顺便一提，这是OptionStrat平台，迄今为止，这是我最喜欢的期权交易平台。
+to show you guys the potential. This is OptionStrat, by the way. It is by far my favorite
+
+44
+00:02:25,380 --> 00:02:27,214
+如果你
+platform for trading options. If you're
+
+45
+00:02:27,214 --> 00:02:29,048
+需要对差价策略进行风险评估，
+doing any type of risk assessments
+
+46
+00:02:29,048 --> 00:02:30,882
+我强烈推荐OptionStrat。
+on your spreads, I highly recommend
+
+47
+00:02:30,882 --> 00:02:36,079
+我用它多年了，期权交易的大部分成功和理解
+OptionStrat. I've been using them for years, and I can accredit most of my success as well
+
+48
+00:02:36,080 --> 00:02:38,272
+都源自这个平台。
+as understanding of options has come from using
+
+49
+00:02:38,272 --> 00:02:40,464
+它的用户界面非常友好，
+this platform. Because of the user interface, and
+
+50
+00:02:40,464 --> 00:02:42,382
+界面设计也很美观，
+because of how aesthetically pleasing it is
+
+51
+00:02:42,382 --> 00:02:46,218
+让我能轻松理解策略。如果你只是盯着期权链
+to me, it makes it very easy to be able to understand this. If
+
+52
+00:02:46,220 --> 00:02:48,749
+评估风险，会非常困难，
+you're just looking at an options chain and you're trying to assess
+
+53
+00:02:48,749 --> 00:02:51,489
+而通过点击拖动行权价，
+your risk, it becomes very difficult versus being able to just click and
+
+54
+00:02:51,489 --> 00:02:54,229
+直接在图表上看到策略表现，
+drag the strikes and being able to see the representation on the chart,
+
+55
+00:02:54,229 --> 00:02:56,758
+以及交易所需保证金、
+as well as exactly how much margin the trade is going to
+
+56
+00:02:56,758 --> 00:02:58,866
+是权利金支付还是收入，
+cost you. If it's going to be a credit or
+
+57
+00:02:58,866 --> 00:03:07,298
+最大收益是多少，就变得非常简单。你还能在这里看到希腊值，稍后我们会详细讲解。现在切换到图表，
+a debit, and also what your max profit is, it makes it very simple. You can also see the Greeks right here, which we'll get into a little bit later. Let's jump over to the chart and take a look
+
+58
+00:03:07,300 --> 00:03:08,900
+看看这周的情况。
+at what's been going on this
+
+59
+00:03:08,900 --> 00:03:10,500
+周三公布了CPI数据，
+week here. Wednesday was the CPI
+
+60
+00:03:10,500 --> 00:03:16,100
+盘前发布，市场因此高开。但这笔交易是在周初
+report. It came out pre-market, so the market has gapped up. This trade, however, was opened at the start of the
+
+61
+00:03:16,100 --> 00:03:19,548
+本周就可以交易。你可以交易场外蝶式差价，也可以交易
+week. You can trade out-of-the-money butterflies, and you can trade
+
+62
+00:03:19,548 --> 00:03:22,996
+场外破损蝶式（Broken Wing Butterfly），如果要对行情方向进行投机，
+out-of-the-money broken-wing butterflies if you're going to speculate on a
+
+63
+00:03:22,996 --> 00:03:26,758
+但如果是对大趋势方向投机，
+direction. However, if you're going to speculate on a major direction, you
+
+64
+00:03:26,758 --> 00:03:29,266
+通常你会希望在
+generally want to trade it whenever you know
+
+65
+00:03:29,266 --> 00:03:37,104
+SPX（标普500指数）有重大催化剂时操作。我主要关注SPX进行这类交易，因为它是现金结算，
+there's some sort of major catalyst for the SPX. I focus mostly on the SPX for these types of trades. As they are cash settled,
+
+66
+00:03:36,600 --> 00:03:38,857
+无需担心行权分配风险。
+you don't have to worry about any type of assignment
+
+67
+00:03:38,857 --> 00:03:41,114
+还有其他几个优势。
+risk. And there are a couple other perks involved. The
+
+68
+00:03:41,114 --> 00:03:42,920
+流动性充足，
+liquidity is there, and you don't really have
+
+69
+00:03:42,920 --> 00:03:48,338
+开仓平仓时也不必过于担心成交问题，
+to stress out that much about getting filled for an open and close on these types of trades, especially if you're trading them within
+
+70
+00:03:48,340 --> 00:03:50,516
+尤其是在交易周到期的合约时。周一时，左边这里
+the weekly expiration. So on Monday, on the left-hand side
+
+71
+00:03:50,516 --> 00:03:52,692
+是SPX，但我大部分分析用的是SPI。
+here, I have the SPX, but I use the SPI
+
+72
+00:03:52,692 --> 00:03:54,868
+我的图表上标了一些关键位。
+for most of my analysis. I just have some levels
+
+73
+00:03:54,868 --> 00:04:01,179
+这些位直接来自Gamma敞口。这是我每周初分析的最大优势之一。我会做一期
+on my charts. These are coming straight from the gamma exposure. That is one of my biggest edges at the start of the week. I like to do an
+
+74
+00:04:01,180 --> 00:04:03,700
+Gamma敞口的分析，这个主题
+analysis of the gamma exposure for the week. That is a subject
+
+75
+00:04:03,700 --> 00:04:06,430
+会在另一个视频里详细讲解，所以本期视频不会展开。
+for a separate video, so I won't get into that in this video,
+
+76
+00:04:06,430 --> 00:04:08,530
+但简介里有我的
+but I do have links in the description to my
+
+77
+00:04:08,530 --> 00:04:13,360
+Gamma敞口分析合集链接，你可以点进去了解更多。周初时，SPI守在一个关键位上方，
+gamma exposure playlist, and you can learn more about that below. At the start of the week, the SPI was holding above a
+
+78
+00:04:13,360 --> 00:04:16,083
+就是520点位。可能有人不知道，
+key level, which is 520. Now, if you don't know, there's a
+
+79
+00:04:16,083 --> 00:04:19,301
+SPI和SPX之间有些差异。
+little bit of a difference between the SPI and the SPX. They both
+
+80
+00:04:19,301 --> 00:04:23,014
+它们都代表标普500，或者说我把它们都视为同一标的的衍生品。
+represent the S&P 500, or I like to consider that they're both a derivative of
+
+81
+00:04:23,014 --> 00:04:26,727
+这可能会让行权价的选择有点混乱，
+the same thing. That can make it a little bit confusing regarding your strike prices,
+
+82
+00:04:26,727 --> 00:04:30,440
+但我认为，为了保持一致性，做每周关键位分析时，
+but in my opinion, for consistency, when you're doing a weekly assessment of your levels,
+
+83
+00:04:30,440 --> 00:04:36,629
+我建议用SPI，然后需要时再转换为SPX的点位。这里有一个网站，
+I would recommend using the SPI, and then you can always convert the levels to the SPX if you need to. There is a site
+
+84
+00:04:36,880 --> 00:04:39,320
+是社区成员分享的，我之前也不知道这个网站，
+right here that was shared. I was not aware of this site,
+
+85
+00:04:39,320 --> 00:04:41,964
+但Quant Trading App Discord里的成员提到过，我认为
+but members within the Quant Trading App Discord have mentioned it, and I
+
+86
+00:04:41,964 --> 00:04:45,015
+它也是一个很棒的工具。比如，如果你有这个520的SPI点位，
+think it's also an excellent tool. In this case here, if you have this level
+
+87
+00:04:45,015 --> 00:04:47,862
+想知道对应SPX的点位，
+of 520 and you want to know what level is that on the SPX, you
+
+88
+00:04:47,862 --> 00:04:56,811
+只需在这里输入520，比如，然后点击转换。这个网站是SPI转换器。点击转换后，就能得到对应点位，然后就可以直接在图表上标出来。
+can just type in 520 right here, for example, and then you just press convert. The site is SPI converting. You press convert, and then there you go. You get the level, and then you can just plot that level right on the chart here.
+
+89
+00:04:57,400 --> 00:04:59,004
+我画了这条关联线，只是为了
+I just drew this correlation just so
+
+90
+00:04:59,004 --> 00:05:00,608
+让大家能看清楚。这个紫色的行权价
+you guys can see. This purple strike
+
+91
+00:05:00,608 --> 00:05:01,983
+就是这里的同一个行权价。这个
+is the same one here. This
+
+92
+00:05:01,983 --> 00:05:06,109
+是SPI的P1，也就是521点，只是在这里进行了转换。所以在一周开始时
+is the SPI P1, so this is 521. It's just a conversion right over here. So at the start
+
+93
+00:05:06,340 --> 00:05:08,497
+当SPI
+of the week, as the SPI was holding
+
+94
+00:05:08,497 --> 00:05:10,654
+在这个区域内运行，而当时
+within this region here, which at that time,
+
+95
+00:05:10,654 --> 00:05:16,318
+我推测它会在CPI报告前作为支撑，我的预期是SPI会
+I was speculating to act as support leading into this CPI report, my expectation would be that the SPI would actually
+
+96
+00:05:16,320 --> 00:05:18,412
+出现向上的爆发性行情。这
+have an explosive move to the upside. This
+
+97
+00:05:18,412 --> 00:05:20,504
+是之前的历史新高，所以
+was the previous all-time high, so this is
+
+98
+00:05:20,504 --> 00:05:25,998
+这是盘前交易时段。历史新高是在盘前时段创下的，所以我在这里给自己留了个备注，提醒自己
+the extended hours. The all-time high was put in an overnight session, so I left this note for myself letting me
+
+99
+00:05:26,000 --> 00:05:29,650
+这并非发生在常规交易时段，因此
+know that it didn't occur during the regular trading hours, therefore having
+
+100
+00:05:29,650 --> 00:05:33,300
+我理解如果SPI出现跳空上涨，并且
+the understanding that if the SPI did gap up and we were
+
+101
+00:05:33,300 --> 00:05:36,950
+在常规交易时段中能守住这个位，因为我
+holding above this level during the regular trading session, because I have
+
+102
+00:05:36,950 --> 00:05:40,600
+关闭了盘前交易时段，但如果在常规交易时段
+the extended hours turned off here, but if during the regular trading
+
+103
+00:05:40,600 --> 00:05:47,597
+中SPI能守住这个位，就意味着SPI，也就是整个市场，守住了关键位，而
+session, if the SPI was holding above this, it means the SPI, aka the broader market, is holding above a key level, which
+
+104
+00:05:47,600 --> 00:05:50,376
+这个关键位是常规交易时段的历史新高。
+is the all-time high level during the regular trading session.
+
+105
+00:05:50,376 --> 00:05:57,039
+技术面先不讨论，因为这段视频不关注价格行为分析，我只是想解释一下
+Technicals aside, because this video is not a focus on understanding price action or any of that, I'm just trying to paint the picture
+
+106
+00:05:57,040 --> 00:06:00,070
+为什么我会推测SPX（标普500指数）可能出现
+behind why I would speculate that the SPX would make some sort
+
+107
+00:06:00,070 --> 00:06:02,090
+某种反弹。此外，我知道
+of a rally. On top of that, I
+
+108
+00:06:02,090 --> 00:06:07,140
+如果我分享破损蝶式（Broken Wing Butterfly），你们可能会问行权价选择的原因
+know if I just shared the broken wing butterfly, some of you might be asking or questioning why the strike
+
+109
+00:06:07,140 --> 00:06:10,378
+530对SPI是个重要点位，所以对应
+selection. 530 is a significant level for the SPI, so that equates
+
+110
+00:06:10,378 --> 00:06:19,210
+SPX（标普500指数）约53.11点。这是我预测的，如果市场动能增强，价格会到达的位置。
+to about 53.11 on the SPX. So this was the level that I imagined if the market was to pick up on some momentum, that's where it would want to go.
+
+111
+00:06:20,120 --> 00:06:23,200
+所以一周初在SPX（标普500指数）上
+So at the start of the week here on the SPX, I
+
+112
+00:06:23,200 --> 00:06:26,280
+我想要一个能瞄准这个区域的策略。通常我会选
+wanted something that targeted this region. Normally, I would go with the
+
+113
+00:06:26,280 --> 00:06:34,238
+周五到期，但这次我选了当天到期，因为周五已经有其他仓位，不想同一天叠加不同的差价策略。
+Friday expiration, but I went with today's expiration just because I had another position already open for the Friday, so I didn't want to overlap different spreads on the same day.
+
+114
+00:06:34,640 --> 00:06:39,320
+周四或周五，这个交易都能成功。现在回到
+Thursday or Friday, both of these days, the trade would have worked out well. Now, if we jump back to
+
+115
+00:06:39,320 --> 00:06:42,217
+实际交易，我想让大家
+the actual trade here, I want you guys to pay
+
+116
+00:06:42,217 --> 00:06:44,535
+关注风险收益图，我们可以
+attention to the risk profile, and we can
+
+117
+00:06:44,535 --> 00:06:51,199
+看到它有个很棒的曲线。这种曲线就是我喜欢的不对称曲线。所以如果
+see how it has this nice curve. Now, this type of curve right here is the asymmetrical curve that I love. So if
+
+118
+00:06:51,200 --> 00:06:53,982
+你在这里开仓，意味着如果你判断错误，
+you're opening the trade down here, it means if you're wrong, you're
+
+119
+00:06:53,982 --> 00:06:59,779
+相对于价格向你预期方向发展时的收益，你几乎不会亏损多少。例如，
+not really losing much relative to how much you can gain if the price was to go in your direction. So let's say, for example,
+
+120
+00:06:59,780 --> 00:07:03,373
+我们想推测下周的行情，并且认为
+we wanted to speculate on next week, and we think that the
+
+121
+00:07:03,373 --> 00:07:11,159
+假设SPX（标普500指数）会继续上涨。
+我们选择下周周三到期，且认为SPX会
+SPX is going to continue rallying. And let's just say we're going to choose the Wednesday expiration for next week, and we think the SPX is
+
+122
+00:07:11,160 --> 00:07:18,440
+保守估计可能涨至约53.75点。
+这是普通的蝶式差价。
+going to conservatively maybe rally up to about, we'll call it 53.75. This is our regular butterfly.
+
+123
+00:07:18,720 --> 00:07:20,744
+这是一个对称的蝶式差价。
+So this is a nice balanced butterfly. It's
+
+124
+00:07:20,744 --> 00:07:22,768
+还不是破损蝶式。大家能看到，
+not broken wing yet. As you guys can
+
+125
+00:07:22,768 --> 00:07:29,599
+策略两侧的风险是均衡的。
+但假设我们想降低这边的风险，
+see, there's the same risk on each side of the trade. But now let's just say we want to reduce our risk on this side because we
+
+126
+00:07:29,600 --> 00:07:31,260
+因为想少付点权利金。
+我们认为这笔权利金
+want to pay less. We think this debit
+
+127
+00:07:31,260 --> 00:07:33,959
+有点太高，太贵了，想降低
+is a little too high, it's too expensive, and we want to reduce
+
+128
+00:07:33,960 --> 00:07:35,116
+成本。大家看
+the price. You guys see
+
+129
+00:07:35,116 --> 00:07:36,734
+我是怎么做的。我把
+where I did. I just pushed in
+
+130
+00:07:36,734 --> 00:07:38,583
+左侧的翼向做空的行权价靠近，
+the left wing closer to the strike that
+
+131
+00:07:38,583 --> 00:07:43,438
+也就是靠近策略主体，这样成本就降下来了。
+如果再往里调，
+I'm actually shorting, so closer to the body, and then that just cut the cost down. If we push it again,
+
+132
+00:07:43,520 --> 00:07:44,703
+成本会进一步降低。
+we're going to cut the cost
+
+133
+00:07:44,703 --> 00:07:45,886
+现在开仓
+down even more. So now this
+
+134
+00:07:45,886 --> 00:07:47,661
+只需35美分，大家能看到非常便宜。
+is going to cost us 35 cents to actually open
+
+135
+00:07:47,860 --> 00:07:53,260
+这笔交易看起来非常便宜，但价格太低也会有权衡
+this trade, which you guys can see is really cheap. But there is a trade-off whenever you go too cheap
+
+136
+00:07:53,260 --> 00:07:55,208
+会影响
+with the trade, and that's going to affect
+
+137
+00:07:55,208 --> 00:07:56,669
+希腊值。在这里，如果
+the Greeks. So right here, if
+
+138
+00:07:56,669 --> 00:07:58,130
+大家注意到，希腊值
+you guys notice, the Greek is
+
+139
+00:07:58,130 --> 00:08:02,758
+现在是负的。如果我调整这里，
+大家能看到Delta是正的。
+now negative. If I were to pull this here, we guys, we can see that our delta is positive.
+
+140
+00:08:03,040 --> 00:08:07,580
+如果你不懂希腊值，那怎么影响交易呢？
+理解希腊值当然很好，
+So how does that affect us if you don't understand the Greeks? The Greeks are great to understand,
+
+141
+00:08:07,680 --> 00:08:12,020
+但即使你不懂希腊值，这正是我喜欢OptionStrat平台的原因，
+你能在这里直接看到
+but even if you don't understand the Greeks, this is why I love OptionStrat. You can see it right here
+
+142
+00:08:12,020 --> 00:08:13,141
+从这张图和
+on this picture and this
+
+143
+00:08:13,141 --> 00:08:14,710
+图表中。交易时间越长，
+graph. And the longer and longer that
+
+144
+00:08:14,710 --> 00:08:16,503
+我越来越不
+I've been trading, the less and less I've
+
+145
+00:08:16,503 --> 00:08:20,538
+关注希腊值，更喜欢直接看图表。
+actually been paying attention to the Greeks, and I like to just look at things on this graph.
+
+146
+00:08:20,540 --> 00:08:22,364
+除了交易，我还是摄影师，
+If I'm a cinematographer outside of trading,
+
+147
+00:08:22,364 --> 00:08:24,188
+也是摄影师。所以，任何
+I'm also a photographer. So anything that
+
+148
+00:08:24,188 --> 00:08:25,751
+能让我直观看到的
+can allow me to look at
+
+149
+00:08:25,751 --> 00:08:28,878
+美观或赏心悦目的东西，我更倾向于
+something aesthetically pleasing or anything that's pleasant on the eyes, I prefer
+
+150
+00:08:28,880 --> 00:08:30,329
+去观察。我
+to look at. I have a
+
+151
+00:08:30,329 --> 00:08:31,778
+我有轻微的阅读障碍。因此，
+slight number of dyslexia. So the
+
+152
+00:08:31,778 --> 00:08:33,710
+我需要关注的数字和分数越少，
+less and less I have to pay attention
+
+153
+00:08:33,710 --> 00:08:38,298
+我的大脑就越轻松。所以看这张图，
+to small numbers and fractions actually helps my brain. It puts it at ease. So just looking at this
+
+154
+00:08:38,299 --> 00:08:43,900
+看看差异。这是SPX（标普500指数）的当前现货价格。如果SPX继续
+picture here, look at the difference. This is the current spot price of the SPX. If the SPX was to
+
+155
+00:08:43,900 --> 00:08:48,980
+上涨，大家可以看到，这里已经进入盈利区间。这是我们的盈利区间。
+continue to go up, you guys can see that this is within profit right here. This is our profit
+
+156
+00:08:48,980 --> 00:08:51,325
+如果我们让这个蝶式
+zone. If we were to make this broken
+
+157
+00:08:51,325 --> 00:08:53,377
+更‘破损’，并向内调整，
+wing too broken and we push this
+
+158
+00:08:53,377 --> 00:09:00,999
+可以看到成本确实降低了，但看看盈利区间的变化。现在盈利区间更靠近行权价，也就是说，
+in, we can see that yes, it is cheaper, but then look what happens to our profit zone. It now is closer to the money. Meaning
+
+159
+00:09:01,000 --> 00:09:02,748
+如果SPX继续
+if the SPX was to keep
+
+160
+00:09:02,748 --> 00:09:04,496
+上涨，我们实际上可以
+going up, we can actually put
+
+161
+00:09:04,496 --> 00:09:06,827
+把盈利区间设在这里。这是当前的情况。
+this right here. This is the current. This
+
+162
+00:09:06,827 --> 00:09:13,238
+如果SPX继续上涨，我们反而在当前T+0线上亏损。
+is right now. If the SPX was to keep going up, we'll actually be losing money on the current T plus zero
+
+163
+00:09:13,240 --> 00:09:18,740
+这条线就是当前的盈亏曲线。当我们滑动这里时，
+line. So this is the profit and loss currently. As we slide this here, this is the profit and loss
+
+164
+00:09:18,740 --> 00:09:20,916
+这就是未来的盈亏变化。
+into the future. So we know by next
+
+165
+00:09:20,916 --> 00:09:22,820
+在这个例子中，到下周
+week, in this case here, by next
+
+166
+00:09:22,820 --> 00:09:29,078
+二（美国东部时间），这笔交易会盈利。但过程会有些
+week, Tuesday, this is Eastern time. This trade will be profitable. However, the journey to get there will be a little bit of
+
+167
+00:09:29,080 --> 00:09:33,820
+波折。如果你持有这个头寸，可以看到交易目前是亏损的，
+pain. If you are holding this, as you guys can see right here, the trade will actually be losing
+
+168
+00:09:33,820 --> 00:09:35,964
+过程会有些痛苦。这直接源于
+money. That is coming straight from the fact
+
+169
+00:09:35,964 --> 00:09:37,840
+它有一个负的Delta。因此，
+that it has a negative Delta. So
+
+170
+00:09:37,840 --> 00:09:44,540
+如果我们预期价格会上涨，可能需要Delta为正。因此，保持
+if we are speculating that the price is actually going to go up, we might want to have our Delta be positive. So by keeping
+
+171
+00:09:44,540 --> 00:09:46,704
+在这个区间内，大家可以
+it within this range here, you guys can
+
+172
+00:09:46,704 --> 00:09:48,597
+看到我们的Delta是正的。因此，
+see our Delta is positive. So that
+
+173
+00:09:48,597 --> 00:09:49,949
+这意味着价格上涨时，
+means as the price goes
+
+174
+00:09:49,949 --> 00:09:54,818
+大家可以看到这笔交易会盈利。但盈利幅度不大，
+up, you guys can see this trade will actually be profitable. Now it won't be profitable by much
+
+175
+00:09:54,820 --> 00:09:59,920
+因为这是破损蝶式而非对称蝶式。大家可以看到，
+because it's still a broken wing butterfly versus a balanced butterfly. You guys can see right here
+
+176
+00:09:59,920 --> 00:10:05,240
+价格上涨时，我们完全不必担心，直到价格涨到很远很远。
+as the price went up, we don't really have to worry at all until price got really, really far.
+
+177
+00:10:05,360 --> 00:10:07,360
+但在这种情况下，
+But at that case here, you can take
+
+178
+00:10:07,360 --> 00:10:09,360
+你可以在到达另一侧前获利了结。
+profit well before it reaches the other side
+
+179
+00:10:09,360 --> 00:10:13,860
+这是破损蝶式的权衡之处。大家可以看到，如果我们判断错误，
+of your butterfly. The trade-off with this butterfly is, as you guys can see, if we are wrong,
+
+180
+00:10:13,980 --> 00:10:15,950
+看看会发生什么。你可以
+look what happens this way. You can
+
+181
+00:10:15,950 --> 00:10:18,765
+可能会亏损很多，且几乎是1:1的亏损比例
+lose a lot and it's almost a one-to-one ratio
+
+182
+00:10:18,765 --> 00:10:21,017
+在这里可以提高胜算，如果你
+here to improve those odds for if you
+
+183
+00:10:21,017 --> 00:10:25,521
+判断错误。这就是我偏爱破损蝶式的原因。大家注意这里，
+are wrong. That's why I like to make it broken wing. As we pay attention here,
+
+184
+00:10:25,300 --> 00:10:27,737
+假设我们判断错误，你其实
+let's just say we are wrong. You're not really
+
+185
+00:10:27,737 --> 00:10:30,716
+不会亏那么多。比如，如果SPX（标普500指数）
+losing that much. So if the SPX was to drop back
+
+186
+00:10:30,716 --> 00:10:33,695
+回落到5300点，这里交易会亏损
+to 5,300, which would be right here, this trade will be down
+
+187
+00:10:33,695 --> 00:10:40,736
+约50美元。如果是对称蝶式，SPX回落到5300点，交易会亏约130美元，几乎是3倍
+about 50 bucks. If it was a balance and the SPX dropped back down to 5,300, this trade will be down about $130. So almost three times as much
+
+188
+00:10:41,820 --> 00:10:46,620
+在下行风险方面，这就是我评估的方式。现在，
+in terms of risk to the downside, or that's at least the way I like to assess that. Now,
+
+189
+00:10:46,640 --> 00:10:49,288
+回到这个蝶式差价，上行方向也有风险
+if we go back to this butterfly, there is risk
+
+190
+00:10:49,288 --> 00:10:51,671
+如果价格涨幅过大。所以你会看到
+all the way to the upside if price was
+
+191
+00:10:51,671 --> 00:10:57,498
+最大亏损远高于你实际支付的
+to go way too far. So that's why you'll see your max loss is much higher than what you're actually paying for
+
+192
+00:10:57,500 --> 00:10:59,845
+权利金。关键在于价格必须
+the trade. The thing is price has
+
+193
+00:10:59,845 --> 00:11:02,525
+突破你投机的行权价
+to pass the strike in which you're speculating
+
+194
+00:11:02,525 --> 00:11:10,900
+随着价格上涨，时间也在流逝。因此，
+on. So as price is moving up, time is also going to be passing by. So in this case here, you have an opportunity to
+
+195
+00:11:10,900 --> 00:11:14,324
+你有机会止盈。如果你发现价格
+take profit. If you see that price action is moving
+
+196
+00:11:14,324 --> 00:11:17,748
+涨势过快，且对交易不放心，
+way too fast and you are uncomfortable with the trade,
+
+197
+00:11:17,748 --> 00:11:20,145
+可以随时提前获利了结
+you can always take your profit earlier
+
+198
+00:11:20,145 --> 00:11:27,678
+而不是等到进入亏损区。经验丰富的交易者
+versus waiting for it to actually enter the red zone. Really advanced or experienced traders like to run these broken wing butterflies
+
+199
+00:11:27,680 --> 00:11:33,680
+喜欢用破损蝶式获得权利金收入。也就是说，如果调整翼的不对称程度，
+for a credit. Meaning if you were to make this wing so broken, you can actually get a credit for it.
+
+200
+00:11:33,680 --> 00:11:36,201
+甚至能收到权利金。
+And this is great if you really know what you're
+
+201
+00:11:36,201 --> 00:11:38,722
+如果你真正精通这个策略，
+doing as your transfer profit is going to be really
+
+202
+00:11:38,722 --> 00:11:40,486
+你的获利潜力会非常高，因为你可以看到
+high because as you guys can see
+
+203
+00:11:40,486 --> 00:11:43,259
+到期时，这个策略几乎不可能亏损
+this at expiration, there's no way to lose money on this
+
+204
+00:11:43,260 --> 00:11:46,557
+除非SPX突破某个行权价
+trade unless the SPX is past a certain strike price
+
+205
+00:11:46,557 --> 00:11:49,854
+而如果是普通蝶式，你可以看到
+versus if we were to come here, you guys can
+
+206
+00:11:49,854 --> 00:11:52,491
+到期时必须在
+see it has to be within this region
+
+207
+00:11:52,491 --> 00:11:56,118
+这个区间内才能盈利。但如果你不打算
+at expiration to be profitable. However, if you're not planning to
+
+208
+00:11:56,120 --> 00:11:58,116
+持有到期，那么实际上
+hold until expiration, you actually have a much
+
+209
+00:11:58,116 --> 00:12:01,359
+盈利区间会更宽。我把它看作一个网，
+wider profit zone. So I like to think of this as a net.
+
+210
+00:12:01,360 --> 00:12:03,938
+在你预测的价格区间
+You're casting a net around where you think price
+
+211
+00:12:03,938 --> 00:12:06,516
+可能会落在该价位。如果判断错误，你
+will likely fall. And if you are wrong, you
+
+212
+00:12:06,516 --> 00:12:08,521
+也不希望损失过大。
+don't want to be punished too much
+
+213
+00:12:08,521 --> 00:12:11,958
+因此你无需过度担心上涨方向的价格波动，
+for it. And you're not so concerned with price action to the
+
+214
+00:12:11,960 --> 00:12:16,760
+只要远离行权价，这边的风险就可控。
+upside. As long as you go far out of money, you won't really have to be too concerned with this
+
+215
+00:12:16,760 --> 00:12:19,373
+比如，假设你认为
+side right here. In this case, let's just say you
+
+216
+00:12:19,373 --> 00:12:21,986
+当前行权价离平值太近，
+think this is too close to the money and you
+
+217
+00:12:21,986 --> 00:12:24,338
+并且有理由相信SPX（标普500指数）会涨到5400点，
+have reasons to think that the SPX is going
+
+218
+00:12:24,338 --> 00:12:31,656
+虽然听起来疯狂，但我们可以延伸策略，构建一个不同的破损蝶式。比如这样。
+to go to 5,400. As crazy as that might be, let's actually extend this out and you can create a different butterfly here. And let's probably open one like
+
+219
+00:12:31,920 --> 00:12:34,683
+现在你可以看到盈亏平衡点，
+this. And now you can see your break even or
+
+220
+00:12:34,683 --> 00:12:37,446
+或者真正需要担心的行权价，
+the strike price in which you really need to be
+
+221
+00:12:37,446 --> 00:12:39,380
+大约是5425点。我们先四舍五入，
+worried about becomes 5425. We'll say I'm just
+
+222
+00:12:39,380 --> 00:12:42,143
+这里取个整数。现在上涨空间很充足，
+rounding. I'm just rounding that number. You have plenty room
+
+223
+00:12:42,420 --> 00:12:47,080
+而且到达目标的过程并不痛苦。假设SPX最终停在5380点附近，
+to the upside now. And at the same time, the journey to get there is not painful because let's
+
+224
+00:12:47,080 --> 00:12:52,320
+大家可以看到5380点附近的收益情况。
+just say the SPX ends up getting stuck around 380. You guys can see what happens here around 380.
+
+225
+00:12:52,320 --> 00:12:55,815
+相对于下行风险，这是一笔收益极高的交易。
+This is a very profitable trade relative to how much you are
+
+226
+00:12:55,815 --> 00:12:59,601
+你可能有信心认为5400点会成为阻力位。
+risking to the downside. And you might have some sort of security or
+
+227
+00:12:59,601 --> 00:13:08,047
+如果该行权价真成阻力，价格在这附近徘徊，
+faith that 5,400 might act as resistance. So if that strike ends up acting as resistance and price is hovering around here, you can end up having a huge return
+
+228
+00:13:08,340 --> 00:13:10,750
+相对于你支付的权利金，回报会非常可观。
+relative to how much you actually paid for the trade.
+
+229
+00:13:10,750 --> 00:13:13,160
+这就是面向未来的思考过程示例。
+So this is an example of the thought process behind
+
+230
+00:13:13,160 --> 00:13:17,498
+如果你在推测未来走势，可以这样思考。这种策略在一周初的样子大概如此。
+what you can be thinking if you're speculating into the future. And that's kind of what this trade
+
+231
+00:13:17,500 --> 00:13:20,341
+一周初，我的预测是
+would have looked like at the start of the week. At the
+
+232
+00:13:20,341 --> 00:13:22,708
+SPY会落在530点附近。
+start of the week, the speculation for myself was the
+
+233
+00:13:22,708 --> 00:13:26,022
+我认为不需要精确命中，
+SPY will land somewhere around 530. And in my opinion, there's no need to be
+
+234
+00:13:26,260 --> 00:13:28,265
+530是一个关键心理价位，
+perfect or exact. 530 is a key psychological
+
+235
+00:13:28,265 --> 00:13:30,843
+对应SPX大约是5311点左右。
+level that ends up translating to around 5311 or so.
+
+236
+00:13:30,843 --> 00:13:36,859
+即使你没做换算，也可以直接用5300点，
+So even if you didn't do the conversion, you can even use 5300 and then just push it up a little bit
+
+237
+00:13:37,720 --> 00:13:40,133
+然后稍微往上调整一点。这是我的小技巧。
+higher. That's my tip or something that I like to
+
+238
+00:13:40,133 --> 00:13:42,546
+如果我认为价格会落在SPX的关键行权价附近，
+do. If I think we're going to land around a
+
+239
+00:13:42,546 --> 00:13:45,924
+通常会把行权价上调25点，
+key strike on the SPX, I'll generally sometimes like to go 25 points higher just
+
+240
+00:13:45,924 --> 00:13:51,716
+给自己留点余地。即使用5300点行权价，这笔交易依然能盈利，
+to give myself a little bit of room. This trade would have still been profitable even if you use the 5300 strikes. However, it would
+
+241
+00:13:52,200 --> 00:13:55,799
+会让人更紧张，因为昨天SPX（标普500指数）触及5300点时，
+have been a little bit more nerve wracking because as the SPX hit 5300 yesterday,
+
+242
+00:13:55,799 --> 00:13:59,655
+在盘中或收盘前的这段时间，
+right in this area here during power hour or the afternoon session, you're more than
+
+243
+00:13:59,655 --> 00:14:03,511
+你很可能会想平仓，
+likely going to want to close the trade because of that fear of if price
+
+244
+00:14:03,511 --> 00:14:07,367
+因为担心价格如果继续上涨，
+was to gap up and keep going, there is the risk that eventually the trade
+
+245
+00:14:07,367 --> 00:14:11,480
+持仓过久可能导致策略转为亏损。因此，
+will start going negative on you if you hold too long. So in this case here,
+
+246
+00:14:11,800 --> 00:14:15,384
+如果你把行权价设得比预期高一点，
+by going a little bit higher than where you think price might go, that makes
+
+247
+00:14:15,384 --> 00:14:18,968
+持仓会更舒服，也能留出更多上涨空间。
+it a little bit more comfortable to hold and it also buys you more room
+
+248
+00:14:18,968 --> 00:14:25,659
+这样你通常不必担心亏损。最大亏损能很好地反映保证金的需求。
+to the upside and therefore most times you don't have to be concerned with the loss here. This max loss is a good gauge for how much the
+
+249
+00:14:25,660 --> 00:14:28,662
+所以开仓时，是的，
+margin is going to be. So to open the trade, yes, it
+
+250
+00:14:28,662 --> 00:14:30,914
+这是支付权利金，在这个例子中只需$1.90。
+is a debit and yes, it only costs $1.90 in
+
+251
+00:14:30,914 --> 00:14:35,168
+我通常会把这类交易的权利金控制在$1.50到$2.50之间。
+this case here. I generally like to keep these trades around $1.50 to $2.50. So anything within that range
+
+252
+00:14:35,920 --> 00:14:39,530
+做破损蝶式（Broken Wing Butterfly）时，
+whenever I'm making these types of broken wing butterflies, I would try to fish for
+
+253
+00:14:39,530 --> 00:14:43,140
+我会尽量在这个价位附近入场，并逐步加仓。比如，
+prices within this region as I can scale up into multiple of these. So if
+
+254
+00:14:43,140 --> 00:14:49,157
+如果每笔交易支付$2权利金，我做3手，总成本只有$600。是的，保证金可能会很高，
+I'm paying $2 for the trade and I get three, I know it's only costing me $600. Yes, the margin will be pretty expensive, but the margin
+
+255
+00:14:49,640 --> 00:14:53,762
+可能达到$6000。对于我这种习惯做权利金收入策略的交易者来说，
+will probably be $6K for a trade. For a trader such as myself that usually
+
+256
+00:14:53,762 --> 00:14:57,884
+动用$6000保证金并不难，
+runs credit spreads, using $6K in margin is not really that hard or that difficult
+
+257
+00:14:57,884 --> 00:15:05,029
+因为通常我可能承担$6000风险，只为赚取$600。而这样的交易，
+to do because usually I might have $6K in risk and I'm only looking to make $600. So a trade like this that has for $600, you have
+
+258
+00:15:05,580 --> 00:15:09,248
+有机会赚到超过$6000，
+the opportunity to make well over $6,000 is a blessing for most traders that trade
+
+259
+00:15:09,248 --> 00:15:11,868
+对只做权利金收入策略的交易者来说，这简直是福利。当然，
+credit spreads that are not aware of this. Again, yes,
+
+260
+00:15:11,868 --> 00:15:15,536
+你需要有某种方向判断或边缘优势，
+you have to have some sort of edge or you have to have some
+
+261
+00:15:15,800 --> 00:15:17,014
+但
+sort of gauge for direction, but
+
+262
+00:15:17,014 --> 00:15:18,835
+即使判断错误，你也不会受到严重惩罚。
+again, you're not punished that much if you're wrong.
+
+263
+00:15:18,835 --> 00:15:20,858
+所以即使你多做几次这类交易，
+So even if you take this trade a couple of
+
+264
+00:15:20,858 --> 00:15:27,738
+多次交易后可能会亏损几次，假设你只交易1手，亏了几次，且没持有到期，
+times and you end up losing a couple of times, and let's just say you trade it with just one lot and you take a couple of losses and you're not holding until expiration.
+
+265
+00:15:27,900 --> 00:15:29,464
+假设你每次亏$100，
+So let's just say you take $100 loss
+
+266
+00:15:29,464 --> 00:15:31,251
+亏了两次。
+a couple of times. So you get it
+
+267
+00:15:31,251 --> 00:15:32,815
+你支付$2权利金，亏损50%，
+for $2, you're taking a 50% loss on your
+
+268
+00:15:32,815 --> 00:15:40,637
+总共亏$200。第一次亏$100，第二次亏$100，第三次交易赚了，
+debit paid, you're losing $200 in total. So you lose $100, you lose $100. That's if you run the trade twice. And all of a sudden you run the trade the third time you end up getting right.
+
+269
+00:15:42,100 --> 00:15:44,561
+可能收益率达到800%
+And let's just say you end up with an 800 something percent
+
+270
+00:15:44,561 --> 00:15:49,931
+甚至500%，对这样的策略来说是非常好的回报。这个收益率是基于你支付的权利金计算的，
+return or even a 500 something percent return is a great return on a trade like this. This percent return is based on your debits,
+
+271
+00:15:50,420 --> 00:15:52,369
+不是基于你的最大亏损，顺便说一句
+not on your max loss, by the way.
+
+272
+00:15:52,369 --> 00:15:54,806
+所以并非完全基于你使用的保证金
+So not exactly on the margin you're being used. You
+
+273
+00:15:54,806 --> 00:15:57,243
+你可以随时点击这里查看
+can always just click this right here and say, see
+
+274
+00:15:57,243 --> 00:16:04,554
+最大风险的百分比。在这里，它会显示实际是74%的回报率，基于使用的资金。但大多数情况下
+your percentage of max risk. And that will tell you at this case here, it's actually a 74% return on how much capital is being used. But for the most part,
+
+275
+00:16:04,800 --> 00:16:07,869
+你也可以基于权利金来计算，因为
+you can also base it on your debit because again, this is
+
+276
+00:16:07,869 --> 00:16:09,915
+这本身也是保证金的一个良好参考
+just a good gauge for your margin and
+
+277
+00:16:09,915 --> 00:16:14,519
+而非你真正可能面临的最大亏损。快要结束这个视频时
+not necessarily a max loss that you should actually ever be in. Coming around to the conclusion of
+
+278
+00:16:14,520 --> 00:16:17,350
+你可能会想，为什么不直接买入
+this video, you might be thinking, well, why don't you just buy
+
+279
+00:16:17,350 --> 00:16:23,719
+看涨期权呢？首先，theta会让你很头疼。如果你买入看涨期权，theta会不断侵蚀你的
+a call option? First of all, theta, that's always going to be terrifying. If you buy that call, theta is going to be eating away at your
+
+280
+00:16:23,720 --> 00:16:26,882
+期权价值。而在开仓时构建这种差价策略
+option. When you open a spread like this at the inception, the
+
+281
+00:16:26,882 --> 00:16:29,517
+theta为负，说明你持有短theta头寸
+theta is going to be negative, meaning your short theta,
+
+282
+00:16:29,517 --> 00:16:37,159
+时间仍对你不利。但theta的影响不会那么严重。优势在于降低了交易成本
+which you do still have time working against you. However, the theta is not going to be as bad. And the advantage of this is you're reducing the cost
+
+283
+00:16:37,160 --> 00:16:40,282
+这只52.95的看涨期权开仓时价格是
+of the trade. This 52.95 call, when this was open, was going
+
+284
+00:16:40,282 --> 00:16:41,985
+5.30美元。而整个策略的成本只有1.90美元。所以
+for $5.30. This whole trade cost $1.90. So
+
+285
+00:16:41,985 --> 00:16:47,946
+你可以看到，成本还不到直接买入该看涨期权的一半
+you guys can see it's already less than half the cost of what it was to buy this one call option.
+
+286
+00:16:48,960 --> 00:16:52,953
+如前所述，蝶式差价的构建方式是
+As I mentioned earlier in the video, the way a butterfly is
+
+287
+00:16:52,953 --> 00:16:56,280
+卖出两份同一行权价的期权
+constructed is you're shorting two strikes and you're using that
+
+288
+00:16:56,280 --> 00:17:05,597
+并用这两份行权价的权利金收入来抵扣你买入其他期权的成本。我们卖出两份
+strike or using the premium or the credit received from shorting these two strike prices to help finance the strikes you're purchasing. So we shorted two of these
+
+289
+00:17:05,599 --> 00:17:07,146
+以1.90美元的价格，几乎获得4美元的权利金收入
+for $1.90. So it's almost $4 in credit
+
+290
+00:17:07,146 --> 00:17:09,208
+然后用其中一部分
+being received. And then we're spending some of
+
+291
+00:17:09,208 --> 00:17:11,013
+来买入这份期权。这份期权成本是5.30美元
+that on this. So this is $5.30. That's
+
+292
+00:17:11,013 --> 00:17:14,107
+这样就降低了整体成本。然后这份期权以0.40美元买入
+going to drop that cost down. And then this is purchased for $0.40.
+
+293
+00:17:15,780 --> 00:17:18,033
+OptionStrat平台会自动计算
+Option strata is doing all the math and your trading
+
+294
+00:17:18,033 --> 00:17:20,286
+你的交易平台也会处理所有计算
+platform will do all the math. So you don't have
+
+295
+00:17:20,286 --> 00:17:22,539
+你不需要自己计算。所以成本降到了
+to calculate this yourself. So that's what's bringing us down
+
+296
+00:17:22,539 --> 00:17:27,947
+1.50美元。这远比直接买入看涨期权便宜。目前该看涨期权价格接近30美元
+to this cost of $1.50. It makes it much cheaper than actually just buying the call. Yes, the call is now currently going for almost $30.
+
+297
+00:17:28,400 --> 00:17:31,270
+所以这里能获得非常高的回报
+So there is a huge return here that was made.
+
+298
+00:17:31,270 --> 00:17:34,140
+但如果我们看交易开仓时
+But if we take a look when the trade was
+
+299
+00:17:34,140 --> 00:17:39,593
+这里是周一开盘时的情况，当时价格在5美元多一点。有一阵子
+open here, so this would have been the Monday, as it was going for $5 and change. At one point,
+
+300
+00:17:39,920 --> 00:17:42,136
+这个策略的成本降到了3美元
+this trade dropped down to $3. This could
+
+301
+00:17:42,136 --> 00:17:44,668
+心理上可能很难坚持住
+have psychologically been difficult to hold as that
+
+302
+00:17:44,668 --> 00:17:50,999
+因为这是一个更大的潜在跌幅，盈亏账户回撤也更大。假设
+is a much larger potential drop, as well as a much larger drawdown on your P&L. Let's just say
+
+303
+00:17:51,000 --> 00:17:53,081
+你持有几个这样的头寸
+you're in a couple of these, you're
+
+304
+00:17:53,081 --> 00:17:55,459
+投入约1000美元。然后价格跌到
+using about $1,000. And then the price drops down
+
+305
+00:17:55,459 --> 00:18:01,107
+接近3美元左右。现在亏损超过400美元，可能不想继续持有了
+to almost to about $3. You're now down over 400 bucks, you might not want to continue to hold the trade.
+
+306
+00:18:02,560 --> 00:18:06,000
+这次确实成功了。但关键是如何降低风险
+So yes, in this case here, it worked out. But the whole point is how do you reduce your risk
+
+307
+00:18:06,000 --> 00:18:08,141
+通过开立这样的交易
+by open up a trade like this, you are
+
+308
+00:18:08,141 --> 00:18:09,806
+你降低了交易成本
+cutting down the cost of the trade,
+
+309
+00:18:09,806 --> 00:18:15,278
+还消除了theta风险。这是主要优势，意味着你能持有更久
+you're also eliminating your theta risk. And that is the major advantage, which means you can continue to hold a little bit longer
+
+310
+00:18:15,280 --> 00:18:17,979
+看你的投机是否能
+to see if your speculation is going to
+
+311
+00:18:17,979 --> 00:18:20,678
+如愿实现。我评估关键位的方法
+play out correctly. The assessment that I use
+
+312
+00:18:20,678 --> 00:18:23,377
+是在每周开始时
+for the levels comes at the start of
+
+313
+00:18:23,377 --> 00:18:33,838
+如前所述，关注gamma敞口。关注未平仓合约高位和高gamma水平，必然能在市场中获得优势
+the week, as mentioned previously on the gamma exposure. And being aware of high open interest levels, being aware of high gamma levels will inevitably lead to an edge in the
+
+314
+00:18:33,840 --> 00:18:39,200
+一旦你理解未平仓合约高位、高gamma水平，期权的关键位
+markets. Once you understand high open interest levels, high gamma levels, the options levels are
+
+315
+00:18:39,200 --> 00:18:41,766
+就非常重要。所以如果你在确定
+very significant. So if you're struggling to established
+
+316
+00:18:41,766 --> 00:18:44,332
+关键位和潜在的支撑阻力位时遇到困难
+key levels and understanding where there might be
+
+317
+00:18:44,332 --> 00:18:54,278
+我建议你多了解gamma敞口。它能帮你识别市场关键区域，尤其是在你
+potential support and resistance, I recommend you guys check out learning a little bit more about gamma exposure. It can help you identify key areas in the markets, especially after you've
+
+318
+00:18:54,280 --> 00:19:00,020
+学会支撑阻力、趋势线等基础后。并非所有交易都能完美实现
+learned the foundations on support resistance, trend lines, things don't always work out perfectly
+
+319
+00:19:00,020 --> 00:19:01,869
+像这次这样
+like this one did here in this case
+
+320
+00:19:01,869 --> 00:19:03,718
+这里SPY的绝对gamma水平
+here, the spy, this was the absolute gamma
+
+321
+00:19:03,718 --> 00:19:09,498
+是周度聚合的绝对gamma值。结果完全吻合，最高正gamma行权价也在这里
+level for the weekly aggregate. And we can see that it ended up working out to the T, as well as the highest positive gamma
+
+322
+00:19:09,500 --> 00:19:14,100
+但每周的gamma水平，我研究了好几年
+strike right here. But the gamma levels every week, I've been studying this for a couple years now.
+
+323
+00:19:14,100 --> 00:19:19,780
+在我看来，这是识别价格行动关键位最清晰的方式
+And in my opinion, it is one of the clearest ways to identify key levels for price action in the
+
+324
+00:19:19,780 --> 00:19:24,740
+虽然这是一笔很棒的交易和本周的胜利，但这不是我唯一的交易
+market. While this was a great trade and a great win for the week, this is not my only trade. I
+
+325
+00:19:24,740 --> 00:19:26,798
+我其实在录制视频前就平仓了
+actually closed this trade out before I started doing this
+
+326
+00:19:26,798 --> 00:19:28,445
+所以这部分额外利润
+video. So this extra profit that's coming in,
+
+327
+00:19:28,445 --> 00:19:31,739
+我其实并没有获益。这并不是我唯一的交易
+it's not something that I'm actually benefiting from. This is not the only trade in which
+
+328
+00:19:31,740 --> 00:19:34,018
+我有一笔个人交易或大亏损
+I had a personal trade or a big loss that
+
+329
+00:19:34,018 --> 00:19:35,840
+其实就是这个。我
+I actually had was this right here. I
+
+330
+00:19:35,840 --> 00:19:41,079
+持有它度过了CPI报告发布，结果很糟糕。我在这笔上仓位不小
+actually held this through the CPI reports and it did not work out pretty well. I had a decent size in this here.
+
+331
+00:19:41,080 --> 00:19:43,087
+比如给大家展示一个
+As if we just show you guys for
+
+332
+00:19:43,087 --> 00:19:46,599
+例子。今天早些时候我确实遭遇了很大亏损
+an example. So I did take a really large loss earlier in the day
+
+333
+00:19:46,600 --> 00:19:48,681
+我意识到了这一点
+here today, I realized this. So then I just decided
+
+334
+00:19:48,681 --> 00:19:50,762
+于是决定上麦做早间分享
+to hop on the mic for the morning because I
+
+335
+00:19:50,762 --> 00:19:52,843
+因为今天原本不打算再做交易了
+wasn't planning on taking another trade here for today. And
+
+336
+00:19:52,843 --> 00:19:59,297
+这样我就有时间把这个策略展示给大家，也减少了这笔交易的部分亏损
+it allowed me to have the time to actually showcase this for you guys here. So I was able to cut down on some of my losses on this trade here.
+
+337
+00:19:59,380 --> 00:20:00,767
+不过我只持有1份
+However, I only had one of
+
+338
+00:20:00,767 --> 00:20:02,154
+我只想在这个交易上
+these. I only wanted to put
+
+339
+00:20:02,154 --> 00:20:04,235
+承担190美元的风险
+a dollar 90 in risk, 190 bucks in risk on this
+
+340
+00:20:04,700 --> 00:20:09,160
+trade. In hindsight, obviously, I would have wished I had maybe my usual size of around three of
+
+341
+00:20:09,160 --> 00:20:11,944
+像往常一样持有3份
+these as that meant I would have had a green week and
+
+342
+00:20:11,944 --> 00:20:14,264
+这样本周就能盈利
+then I could have continued to hold these into tomorrow
+
+343
+00:20:14,264 --> 00:20:18,440
+还能继续持仓到明天，说不定能中大奖。这笔交易风险太大，我不该在CPI期间持有
+for maybe a lotto. This trade was too risky. I should have never held it through the CPI,
+
+344
+00:20:18,660 --> 00:20:20,881
+不过当时我对风险是能接受的
+but I was comfortable with the risk. I was looking
+
+345
+00:20:20,881 --> 00:20:23,102
+我寻找的是一个大赢的机会，前提是SPX（标普500指数）
+for a really large win for if the SPX ended
+
+346
+00:20:23,102 --> 00:20:27,099
+在某个区间内收盘。这次没成功
+up staying within a certain range. It didn't work out this time, but this video was not necessarily
+
+347
+00:20:27,100 --> 00:20:30,009
+但这个视频并不专门讲这笔交易
+about this trade as well as as well as most
+
+348
+00:20:30,009 --> 00:20:32,918
+大部分视频也不是讲我的具体交易
+of my videos are not about my specific trades. I'm
+
+349
+00:20:32,918 --> 00:20:35,827
+我只是想分享不同策略
+just trying to share, bring awareness to different strategies, different
+
+350
+00:20:35,827 --> 00:20:38,736
+以及交易者在价格走势下的思考方式
+thought processes behind what one trader might be thinking when
+
+351
+00:20:38,736 --> 00:20:42,518
+当价格出现某种走势时，如何降低风险
+price action is doing one thing, different ways to reduce your risk even
+
+352
+00:20:42,520 --> 00:20:45,325
+即使在投机时，如何最大化风险收益比
+if you are speculating and how to maximize your risk
+
+353
+00:20:45,325 --> 00:20:48,130
+如果你喜欢这个视频，请在下方
+reward. If you enjoyed this video, let me know in
+
+354
+00:20:48,130 --> 00:20:53,740
+留言告诉我。如果想看更多破损蝶式（Broken Wing Butterfly）的内容，也告诉我
+the comments down below. If you'd like to see more on broken wing butterflies, let me know. Like the video
+
+355
+00:20:53,740 --> 00:20:56,220
+如果你学到了东西，分享出去，下期见
+if you learned something, share it and I'll catch you guys in the next one.
+
+===== END AFTER_OPTIMIZE =====

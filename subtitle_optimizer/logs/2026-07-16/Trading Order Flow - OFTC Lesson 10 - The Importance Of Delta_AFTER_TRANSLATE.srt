@@ -1,0 +1,3014 @@
+===== AFTER_TRANSLATE (603 entries) =====
+1
+00:00:01,500 --> 00:00:06,800
+订单流交易课程 第10课 Delta和成交量的重要性 我是Michael Valtos。
+Order Flow Trading Course Lesson 10 The Importance of Delta and Volume My name is Michael Valtos.
+
+2
+00:00:06,900 --> 00:00:08,900
+我是OrderFlows.com的创始人。
+I'm the founder of OrderFlows.com.
+
+3
+00:00:09,700 --> 00:00:12,200
+开始之前，先读一段免责声明。
+Before we get started, let me read through a brief disclaimer.
+
+4
+00:00:12,400 --> 00:00:15,529
+本演示仅用于教育和信息传递，
+This presentation is for educational and informational purposes only and
+
+5
+00:00:15,529 --> 00:00:18,658
+不应视为购买或出售
+should not be considered a solicitation to buy or sell
+
+6
+00:00:18,658 --> 00:00:22,099
+期货合约或做出其他投资决策的建议。
+a futures contract or make any other type of investment decision.
+
+7
+00:00:22,500 --> 00:00:26,500
+期货交易存在重大风险，并非适合所有投资者。
+Futures trading contains substantial risk and is not for every investor.
+
+8
+00:00:26,900 --> 00:00:30,300
+投资者可能损失全部甚至超过初始投资金额。
+An investor could potentially lose all or more than the initial investment.
+
+9
+00:00:30,400 --> 00:00:36,200
+风险资本是指即使亏损，也不会危及个人财务安全或生活方式的资金。
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+10
+00:00:36,800 --> 00:00:42,200
+交易只应使用风险资本，且只有拥有充足风险资本的人才应考虑交易。
+Only risk capital should be used for trading, and only those with sufficient risk capital should consider trading.
+
+11
+00:00:42,700 --> 00:00:45,600
+过往表现并不必然预示未来结果。
+Past performance is not necessarily indicative of future results.
+
+12
+00:00:46,300 --> 00:00:52,000
+CFTC（美国商品期货交易委员会）规则4.41 模拟或假设的业绩结果具有一定局限性。
+CFTC Rules 4.41 Hypothetical or simulated performance results have certain limitations.
+
+13
+00:00:52,600 --> 00:00:56,800
+与实际业绩记录不同，模拟结果并不代表真实交易。
+Unlike an actual performance record, simulated results do not represent actual trading.
+
+14
+00:00:57,400 --> 00:01:00,296
+此外，由于交易未实际执行，
+Also, since the trades have not been executed, the results
+
+15
+00:01:00,296 --> 00:01:03,192
+结果可能低估或高估了某些市场因素的影响，
+may have under- or overcompensated for the impact, if any,
+
+16
+00:01:03,192 --> 00:01:05,798
+比如流动性不足。
+of certain market factors such as lack of liquidity.
+
+17
+00:01:06,300 --> 00:01:12,500
+一般来说，模拟交易程序还受限于其设计时已知后视镜效应的事实。
+Simulated trading programs in general are also subject to the fact that it is designed with the benefit of hindsight.
+
+18
+00:01:13,400 --> 00:01:16,685
+我们并未声明任何账户会
+No representation is being made that any account will or
+
+19
+00:01:16,685 --> 00:01:20,299
+或可能取得与展示结果类似的盈利或亏损。
+is likely to achieve profit or losses similar to those shown.
+
+20
+00:01:21,700 --> 00:01:26,500
+在这一课中，我将讲解Delta和成交量的重要性。
+So in this lesson, I'm going to explain the importance of delta and volume.
+
+21
+00:01:27,100 --> 00:01:28,100
+首先，我们从成交量开始。
+First, we'll start with volume.
+
+22
+00:01:28,300 --> 00:01:30,400
+为什么成交量比价格更重要？
+Why is volume more important than... price.
+
+23
+00:01:30,900 --> 00:01:33,757
+当机构交易者在市场中移动大单时，
+When institutional traders are moving size in the market, they
+
+24
+00:01:33,757 --> 00:01:36,899
+他们会试图隐藏自己的成交量，而不是价格。
+try to hide their size, their volume, and not the price.
+
+25
+00:01:37,200 --> 00:01:39,640
+当你看到价格交易时，你会对市场形成看法，
+When you see price trade, you form an opinion of
+
+26
+00:01:39,640 --> 00:01:43,300
+但当你看到成交量时，你看到的是市场的事实。
+the market, but when you see the volume, you see the facts of the market.
+
+27
+00:01:44,700 --> 00:01:46,700
+我们先思考一下这个问题。
+So let's think about that for a second.
+
+28
+00:01:47,000 --> 00:01:49,000
+为什么成交量比价格更重要？
+Why is volume more important than price?
+
+29
+00:01:49,100 --> 00:01:53,000
+价格常被视为一种广告机制。
+Price is often viewed as an advertising mechanism.
+
+30
+00:01:53,400 --> 00:02:02,300
+想象一下，你在水果市场，看到苹果促销，
+So, you know, imagine you're in the fruit market and you see apples on sale for,
+
+31
+00:02:04,100 --> 00:02:05,504
+比如2个苹果
+you know, two for a
+
+32
+00:02:05,504 --> 00:02:06,908
+1美元，你会想，
+dollar and you think, hey,
+
+33
+00:02:06,908 --> 00:02:09,998
+这个价格不错，想买些。
+that's a good price, you know, you want to buy it.
+
+34
+00:02:10,300 --> 00:02:13,400
+但你不会在意供应量是多少。
+You're not... Concerned with what the volume is.
+
+35
+00:02:13,800 --> 00:02:16,973
+但如果你知道明天会有大丰收，
+But if you know that there's going to be a
+
+36
+00:02:16,973 --> 00:02:20,146
+你喜欢苹果，想多买些带回家，
+big harvest and you like apples and you want to
+
+37
+00:02:20,146 --> 00:02:22,050
+多买一些带回家,
+buy some extra to take home,
+
+38
+00:02:22,050 --> 00:02:28,397
+你就会想，明天市场供应量会很大。
+you're going to think, well, I know that tomorrow there's going to be a lot of supply in the market.
+
+39
+00:02:29,100 --> 00:02:31,400
+明天可能1美元能买3个苹果。
+Tomorrow the price might be $3 for a dollar.
+
+40
+00:02:31,600 --> 00:02:38,200
+所以今天你可能只买一对，
+So you might buy one pair today, but you can come back tomorrow and buy,
+
+41
+00:02:39,600 --> 00:02:41,012
+但如果你想花5美元买苹果，
+if you want to buy $5 worth,
+
+42
+00:02:41,012 --> 00:02:42,424
+今天可以买10个，
+you could buy 10 today, but if
+
+43
+00:02:42,424 --> 00:02:45,956
+但如果等到明天，1美元能买3个，你就能买15个。
+you wait until tomorrow, you could buy 15 because it's going to be $3 for a dollar.
+
+44
+00:02:48,100 --> 00:02:51,125
+交易市场也类似，
+Trading in the markets is similar in that sense, where
+
+45
+00:02:51,125 --> 00:02:53,545
+假设标普500指数期货的卖价是1910，
+say the S&Ps are offered at 1910 and
+
+46
+00:02:53,545 --> 00:02:59,596
+你在卖盘上看到50手，就会觉得市场要涨，然后你关注的是
+you just see 50 on the offer, you kind of think the market's going to go higher and you're looking at
+
+47
+00:03:00,100 --> 00:03:01,712
+你可能会认为市场要涨，
+volume on the offer, you only
+
+48
+00:03:01,712 --> 00:03:03,593
+然后看卖价的成交量，
+see 50 lots, and you're thinking, well, if
+
+49
+00:03:03,593 --> 00:03:08,161
+只有50手，你会想，如果吃掉这50手，市场可能会小涨一下。
+you get through that 50 lots, you know, the market can start to tick a little bit higher.
+
+50
+00:03:09,100 --> 00:03:12,203
+但如果你知道市场卖价是1910，
+But if you know that the market is 1910 offered,
+
+51
+00:03:12,203 --> 00:03:14,616
+但看到那里的挂单量是1000手，
+but you see a size there of 1,000,
+
+52
+00:03:14,616 --> 00:03:18,409
+你还会对市场保持同样的看法吗？
+are you going to have the same view of the market?
+
+53
+00:03:19,200 --> 00:03:23,500
+不会，因为你知道1910卖价上供应量很大。
+No, because you know there's a lot of supply there offered at 1910.
+
+54
+00:03:27,300 --> 00:03:29,100
+我们快速看一下这个图表。
+Let's take a look at a chart here real quick.
+
+55
+00:03:29,100 --> 00:03:34,000
+这是E-迷你合约的图表，仅测量成交量。
+So this is an E-mini chart. And this is just measuring the volume.
+
+56
+00:03:35,400 --> 00:03:42,700
+你会看到市场在1911到1913之间交易，成交量来回波动。
+You've seen the market trading between 1911 and 1913. And the volumes are going back and forth.
+
+57
+00:03:42,700 --> 00:03:45,500
+就是下方的第三条线，成交量。
+It's this third line here, volume on the bottom.
+
+58
+00:03:46,500 --> 00:03:56,900
+比如12:30这根K线是4500手，12:36是8000手，12:37是4000手，12:40是6000手。
+You know, at this bar here at 1230, it's 4,500, 8,000 at 1236, 4,000 at 1237, 6,000 at 1240.
+
+59
+00:03:57,500 --> 00:04:00,800
+然后突然成交量激增，
+And then all of a sudden you see a big surge in the volume.
+
+60
+00:04:00,900 --> 00:04:02,100
+几乎翻了一倍。
+It almost doubles.
+
+61
+00:04:02,300 --> 00:04:04,700
+直接涨到13,000。
+It goes to 13,000.
+
+62
+00:04:05,200 --> 00:04:09,300
+又回到6,000、8,000，然后跳到16,000，再到7,000。
+Back to 6,000, 8,000, jumps to 16,000 again, 7,000.
+
+63
+00:04:09,800 --> 00:04:14,400
+你看到的是大量供给进入市场，价格随之抛售。
+What you're seeing is a lot of supply coming into the market and the price selling off.
+
+64
+00:04:15,000 --> 00:04:17,766
+显然市场上可售的库存更多，
+So obviously there's more inventory for sale
+
+65
+00:04:17,766 --> 00:04:20,532
+要清掉这些库存，
+and for people to move the inventory,
+
+66
+00:04:20,532 --> 00:04:23,298
+就得把价格压下来。
+they have to move the price down.
+
+67
+00:04:25,300 --> 00:04:31,900
+成交量常被大多数交易者忽视，因为他们只盯着价格。
+You know, volume has often been relegated to a secondary position by most traders. since they are focused on price.
+
+68
+00:04:33,200 --> 00:04:36,600
+大部分指标都是围绕价格设计的。
+Most indicators are designed around price.
+
+69
+00:04:36,700 --> 00:04:38,700
+并不一定会考虑成交量。
+They don't necessarily take into account volume.
+
+70
+00:04:39,400 --> 00:04:43,700
+成交量有助于识别市场转折点。
+Volume is useful for identifying turning points in the markets.
+
+71
+00:04:45,300 --> 00:04:47,333
+在下跌趋势中，
+So in a downtrending market, sellers are
+
+72
+00:04:47,333 --> 00:04:51,399
+空头通常控制市场，要反转就需要多头接管。
+usually in control, and for the market to turn, buyers need to take control.
+
+73
+00:04:51,900 --> 00:04:56,200
+也就是说，多头需要入场，用需求压倒空头。
+What that means is that buyers need to come in and overwhelm the sellers with demand.
+
+74
+00:04:56,500 --> 00:04:59,400
+需求必须超过供给。
+There has to be more demand than supply.
+
+75
+00:04:59,900 --> 00:05:02,300
+这是经济学的基本规律。
+That's the basic rules of economics.
+
+76
+00:05:03,000 --> 00:05:05,900
+这里看原油的例子。
+So here's an example in the crude oil.
+
+77
+00:05:06,500 --> 00:05:09,200
+成交量… 这是第三条线。
+The volume... Again, this is the third line here.
+
+78
+00:05:09,800 --> 00:05:15,600
+从952开始，成交量是400、1400、700、800。
+Starting at 952, you see volume of 400, 1400, 700, 800.
+
+79
+00:05:17,200 --> 00:05:19,100
+市场只是横盘震荡。
+The market is just sort of trading sideways.
+
+80
+00:05:19,300 --> 00:05:21,400
+然后你会看到成交量再次明显放大。
+Then you're starting to see the volume really pick up again.
+
+81
+00:05:21,400 --> 00:05:25,400
+1400，这是近期最高的…
+1400, which is the highest for...
+
+82
+00:05:25,600 --> 00:05:32,200
+最近几根K线是2,000、1,200，随着市场开始拉升。
+The most recent bars, 2,000, 1,200, as you see the market start to move away.
+
+83
+00:05:32,500 --> 00:05:35,708
+你会看到更多多头入场，
+You're seeing additional buyers come in,
+
+84
+00:05:35,708 --> 00:05:38,916
+看到多头愿意
+and you're seeing buyers willing to
+
+85
+00:05:38,916 --> 00:05:44,798
+接下空头抛向市场的库存。
+buy the inventory that the sellers are offering to the market.
+
+86
+00:05:47,100 --> 00:05:49,500
+在上涨趋势中，多头通常控制市场。
+So in an uptrending market, buyers are usually in control.
+
+87
+00:05:49,600 --> 00:05:52,500
+要反转，就需要空头接管。
+And for the market to turn, sellers need to take control.
+
+88
+00:05:52,600 --> 00:05:56,000
+也就是说，空头需要入场，用供给压倒多头。
+What that means is that sellers need to come in and overwhelm the buyers with supply.
+
+89
+00:05:58,100 --> 00:06:03,000
+这和下跌趋势中的情况正好相反。
+Which is, you know, the statement is the opposite of a downtrending market.
+
+90
+00:06:04,000 --> 00:06:06,941
+但在上涨趋势中，你需要
+But in an uptrending market, you need to
+
+91
+00:06:06,941 --> 00:06:09,882
+要么有新的供给进入市场
+have either new supply come into the market
+
+92
+00:06:09,882 --> 00:06:16,499
+要么有新的空头进入市场，向多头提供库存并压制市场
+or new sellers come into the market and offer inventory to the buyers that is going to overrun.
+
+93
+00:06:17,100 --> 00:06:18,954
+市场中的买盘
+The buying in the market for
+
+94
+00:06:18,954 --> 00:06:20,808
+要让市场开始下跌
+the market to start to sell
+
+95
+00:06:20,808 --> 00:06:22,662
+你需要更多
+off you're going to need more
+
+96
+00:06:22,662 --> 00:06:24,516
+更多的空头而非多头 这
+more sellers than buyers now that's
+
+97
+00:06:24,516 --> 00:06:30,697
+在上涨趋势中，会有买盘耗尽的时候 但我们现在讨论的是
+in an uptrending market there's going to be times where there's just no more buyers but we're talking about how
+
+98
+00:06:31,800 --> 00:06:34,700
+如何解读成交量的扩大和缩小
+you know how to read increasing and decreasing volume
+
+99
+00:06:38,184 --> 00:06:40,884
+那我们来看看Delta
+So, you know, let's get into Delta.
+
+100
+00:06:40,984 --> 00:06:44,684
+交易者如何用Delta短期交易？
+How can a trader measure volume in a way to trade in the short term?
+
+101
+00:06:45,184 --> 00:06:49,484
+在成交量足迹图上，你会看到一个叫做Delta的指标
+Well, there's this thing called delta that you're going to see on volume footprint charts.
+
+102
+00:06:50,084 --> 00:06:51,408
+当价格开始移动时
+When prices start to move, the
+
+103
+00:06:51,408 --> 00:06:52,732
+移动的原因是
+reason it moves is because of
+
+104
+00:06:52,732 --> 00:06:56,483
+一系列主动买卖，这会在K线的Delta上显示出来
+a series of aggressive buying or selling which will show up in the delta of a bar.
+
+105
+00:06:57,684 --> 00:07:00,784
+Delta衡量的是市场拍卖过程的强度
+Delta measures the strength of the market's auction process.
+
+106
+00:07:02,384 --> 00:07:04,584
+Delta最重要的组成部分是成交量
+The most important component of delta is volume.
+
+107
+00:07:05,384 --> 00:07:07,384
+成交量必须结合市场背景来理解
+Volume must be understood in context of the market.
+
+108
+00:07:07,484 --> 00:07:09,529
+当成交量正向或负向扩大时
+When volume is expanding positively or
+
+109
+00:07:09,529 --> 00:07:11,574
+交易者必须观察其强度
+negatively, a trader must watch its
+
+110
+00:07:11,574 --> 00:07:14,983
+才能完全理解供需的转变
+strength to fully comprehend the shift in supply and demand.
+
+111
+00:07:15,484 --> 00:07:18,884
+需要注意的是，Delta并不考虑价格
+It is important to note that delta does not take into account price.
+
+112
+00:07:26,244 --> 00:07:27,136
+所以Delta
+So delta,
+
+113
+00:07:27,136 --> 00:07:29,812
+我在术语部分简要解释过
+you know, I explained briefly in
+
+114
+00:07:29,812 --> 00:07:32,488
+Delta是什么
+the terms section what delta is
+
+115
+00:07:32,488 --> 00:07:37,841
+卖价差值是什么，买价差值是什么
+and what the ask delta is and what the bid delta is.
+
+116
+00:07:38,444 --> 00:07:39,844
+现在我们来看图表
+So now let's look at it on a chart.
+
+117
+00:07:40,844 --> 00:07:45,344
+下方这里有卖价、买单和Delta
+So you have down here at the bottom, you have the ask, the bid, and the delta.
+
+118
+00:07:45,344 --> 00:07:50,444
+这其实是卖价差值、买价差值和该K线的净Delta
+This is actually the ask delta. The bid delta and the net delta for the bar.
+
+119
+00:07:50,844 --> 00:07:56,444
+卖价差值是成交量在卖盘上的交易量
+So when you have an ask delta, that's the volume that's traded on the offer.
+
+120
+00:07:56,744 --> 00:07:58,844
+买价差值是成交量在买单上的交易量
+The bid delta is what's traded on the bid.
+
+121
+00:07:58,844 --> 00:08:02,144
+那我们来看这根812的K线。
+So we'll take a look at this bar right here at 812.
+
+122
+00:08:03,044 --> 00:08:09,144
+你会看到374，这是把所有在卖价成交的成交量加起来，得到374。
+So you see 374. That's if you take all the volume traded on the offer, add it together, you get 374.
+
+123
+00:08:09,844 --> 00:08:15,944
+在买单这边，你得到1432。把所有在买单成交的数值加起来，就是1432。
+On the bid side, you get 1432. If you take all the numbers traded on the bid side, you get 1432.
+
+124
+00:08:16,244 --> 00:08:23,444
+用1432减去374，得到-1058。
+When you subtract the 374 from 1432, you get negative 1058.
+
+125
+00:08:23,544 --> 00:08:25,344
+所以这根K线的Delta是负值。
+So you have a negative delta in the bar.
+
+126
+00:08:26,744 --> 00:08:32,544
+这说明在买单上卖出的量，比在卖价上买入的量更多。
+And what that's telling you is that there was more sold into the bid than bought on the offer.
+
+127
+00:08:39,776 --> 00:08:46,976
+在大多数足迹图中，你可以选择显示买价差值和卖价差值，
+Now, with most footprint charts, you can choose to have the bid and the ask
+
+128
+00:08:47,976 --> 00:08:49,649
+或者
+deltas in there, or you
+
+129
+00:08:49,649 --> 00:08:51,992
+像这张图一样，
+can just, like on this chart, not
+
+130
+00:08:51,992 --> 00:08:55,674
+不显示它们，只关注净Delta。
+have it in there and just concentrate on the net deltas.
+
+131
+00:08:57,276 --> 00:09:00,176
+是否显示这些，完全看个人偏好。
+It's personal preference whether you want to have it or not.
+
+132
+00:09:04,976 --> 00:09:07,651
+一旦你开始经常观察Delta，
+Once you start looking at deltas fairly regularly,
+
+133
+00:09:07,651 --> 00:09:10,326
+你就会逐渐理解这些数字，
+you're going to get used to understanding the
+
+134
+00:09:10,326 --> 00:09:15,676
+可能只想直接看净Delta。
+numbers, and you might just want to go with where you just have the net delta.
+
+135
+00:09:18,176 --> 00:09:20,276
+大多数交易者都忽略了Delta。
+Delta is overlooked by most traders.
+
+136
+00:09:20,376 --> 00:09:23,376
+关注Delta的交易者，主要是订单流交易者。
+The only traders who follow Delta are mainly order flow traders.
+
+137
+00:09:23,676 --> 00:09:25,476
+大多数交易者不使用Delta，
+Delta is not used by most
+
+138
+00:09:25,476 --> 00:09:27,276
+因为很多人
+traders because most people, they don't
+
+139
+00:09:27,276 --> 00:09:29,076
+甚至不知道它的存在，
+even know it exists, let alone
+
+140
+00:09:29,076 --> 00:09:32,376
+更不用说如何解读、理解并用它交易了。
+how to read it and understand it and trade with it.
+
+141
+00:09:35,376 --> 00:09:37,344
+Delta可以提醒你市场中
+Now, Delta can alert you to
+
+142
+00:09:37,344 --> 00:09:39,968
+上涨时多头动能减弱的区域，
+areas in the market when buyers are drying
+
+143
+00:09:39,968 --> 00:09:43,576
+以及空头开始变强的区域。
+up in an up move and where sellers are getting stronger.
+
+144
+00:09:45,376 --> 00:09:49,676
+下跌时空头动能减弱的区域，以及多头开始主导的区域。
+Delta alerts you to areas where sellers are getting less in a down move and buyers are starting to dominate.
+
+145
+00:09:49,976 --> 00:09:52,376
+这就是趋势转变的原因。
+This is what causes changes in trends.
+
+146
+00:09:54,848 --> 00:09:57,748
+好，我来给你展示一个很好的例子。
+Okay, so I'll show you a nice example here.
+
+147
+00:09:58,348 --> 00:09:58,648
+Um,
+
+148
+00:10:00,248 --> 00:10:09,548
+如果你在观察Delta，也就是图中的这条上线，你会看到负Delta，-723、-912。
+If you're watching the delta, which is the top line here, you're seeing minus deltas here, minus 723, minus 912.
+
+149
+00:10:09,948 --> 00:10:17,948
+现在出现了+758的正Delta，接着是+2000，然后又是+2600。
+Now you've got a positive delta of 758. Then a positive delta of 2,000, and then again a positive delta of 2,600.
+
+150
+00:10:18,448 --> 00:10:21,095
+你会发现这个市场
+What you're seeing is this market is
+
+151
+00:10:21,095 --> 00:10:23,742
+大部分时间在横盘，但
+going sideways for the most part, but
+
+152
+00:10:23,742 --> 00:10:27,146
+你会看到Delta开始转为正Delta。
+you're seeing the deltas really starting to turn positive.
+
+153
+00:10:27,448 --> 00:10:29,148
+多头开始掌控市场。
+Buyers are starting to take control.
+
+154
+00:10:29,548 --> 00:10:33,948
+这里有三根K线的Delta都是正Delta，而且是相当强的正Delta。
+You've got three bars here with positive delta, fairly strong positive deltas.
+
+155
+00:10:35,148 --> 00:10:37,948
+这说明买盘进场了。
+What that's telling you, buying has come in.
+
+156
+00:10:37,948 --> 00:10:39,638
+多头开始压制
+Buyers are starting to overwhelm
+
+157
+00:10:39,638 --> 00:10:45,047
+空头。他们愿意吃卖价来推高市场。
+the sellers. They're willing to pay the offer price to try and take the market higher.
+
+158
+00:10:45,448 --> 00:10:50,548
+你会看到，随着市场上涨，正Delta开始连续出现。
+And you see, we're starting to string together more positive deltas as the markets are moving higher.
+
+159
+00:10:51,748 --> 00:11:00,648
+如果这些Delta和K线只是普通数值，比如700、900，市场可能继续横盘。
+If these deltas and these bars were just sort of average numbers, maybe 700, 900, the market may continue to go sideways.
+
+160
+00:11:00,648 --> 00:11:04,148
+但你在这里看到的是非常强的正Delta。
+But what you're seeing here is very strong positive deltas.
+
+161
+00:11:04,248 --> 00:11:11,148
+你看到的是2,000、2,600，而之前只是700、900的水平。
+You're seeing 2,000, 2,600, when earlier you're just seeing deltas in the 700, 900 levels.
+
+162
+00:11:12,948 --> 00:11:15,648
+多头在这里真正压制了空头。
+Buyers are really starting to overwhelm the sellers here.
+
+163
+00:11:20,112 --> 00:11:22,012
+这是一个市场抛售的例子。
+Here's an example of a market that's selling off.
+
+164
+00:11:22,112 --> 00:11:26,512
+这里有些正Delta，比如2,000、1,800。
+We've got some positive deltas here, you know, 2,000, 1,800.
+
+165
+00:11:27,312 --> 00:11:32,112
+第三根K线这里是1,900，然后又是2,000。
+Here you have 1,900 in this third bar, then 2,000 again.
+
+166
+00:11:32,712 --> 00:11:33,800
+所以
+You know, so
+
+167
+00:11:33,800 --> 00:11:35,614
+就是这些Delta,
+it's these deltas, you know,
+
+168
+00:11:35,614 --> 00:11:37,428
+这些Delta
+they sort of mirror the
+
+169
+00:11:37,428 --> 00:11:39,242
+大致和之前的Delta
+other, you know, previous deltas,
+
+170
+00:11:39,242 --> 00:11:42,508
+在横盘时差不多。
+you know, more or less as you're going sideways.
+
+171
+00:11:42,912 --> 00:11:44,312
+但当你开始突破时，
+But as you start to break out,
+
+172
+00:11:45,112 --> 00:11:46,062
+突破
+you know, of
+
+173
+00:11:46,062 --> 00:11:48,278
+从这根绿色K线的低点1907
+this lower area of this green bar
+
+174
+00:11:48,278 --> 00:11:50,178
+突破后进入这根红色K线1048，
+at 1907, and you hit it in
+
+175
+00:11:50,178 --> 00:11:53,661
+这里Delta是2,000，你会看到Delta
+this red bar at 1048 where you got 2,000, you're seeing the deltas
+
+176
+00:11:55,112 --> 00:12:02,612
+仍然保持非常强劲，比如3,000、2,000、3,000，随着市场抛售。
+still remaining very strong, you know, 3,000, 2,000, 3,000, as the market sells off.
+
+177
+00:12:03,712 --> 00:12:08,112
+这种情况下，是空头掌控了市场。
+You're seeing in this case, this is where the sellers are taking control of the market.
+
+178
+00:12:08,312 --> 00:12:09,236
+You know, the
+
+179
+00:12:09,236 --> 00:12:10,776
+Delta 通常
+deltas oftentimes, you know, they'll
+
+180
+00:12:10,776 --> 00:12:12,932
+会转正。你会看到一次
+go positive. You know, you'll get one
+
+181
+00:12:12,932 --> 00:12:16,012
+或正Delta一两次，负Delta一两次，来回波动。
+or two positive, one or two negative, back and forth.
+
+182
+00:12:16,012 --> 00:12:19,242
+但当你开始连续出现一系列
+But when you're starting to string together a series of
+
+183
+00:12:19,242 --> 00:12:21,503
+负Delta时，市场可能会
+negative deltas, look for the market to
+
+184
+00:12:21,503 --> 00:12:24,410
+开始抛售，如果连续出现的话。
+start to sell off if you string it together.
+
+185
+00:12:25,212 --> 00:12:33,012
+一系列正Delta，市场可能开始上涨。
+Series of positive deltas, you know, look for the market to start to, you know, start to rally.
+
+186
+00:12:35,424 --> 00:12:38,124
+那是什么在推动市场价格变动？
+So what drives price movements in the market?
+
+187
+00:12:38,224 --> 00:12:40,124
+是交易者之间的分歧。
+Well, it's the differences of opinion.
+
+188
+00:12:40,224 --> 00:12:42,171
+当市场处于正常交易状态，
+When a market is trading as per
+
+189
+00:12:42,171 --> 00:12:43,562
+或者说平衡状态时，
+normal, at equilibrium, so to
+
+190
+00:12:43,562 --> 00:12:46,622
+Delta应该相对较低或变化不大。
+speak, the delta should be relatively low or not changing much.
+
+191
+00:12:46,624 --> 00:12:49,924
+此时供需大致相等。
+Supply and demand at that point is about equal.
+
+192
+00:12:51,024 --> 00:12:56,524
+问题是没人知道这个平衡点在哪里，它不断变化。
+The problem is no one knows where this level of equilibrium is. It constantly changes.
+
+193
+00:12:57,224 --> 00:13:00,524
+Delta追踪的是分歧，更重要的是分歧如何变化。
+Delta tracks a difference of opinion and more importantly how it's changing.
+
+194
+00:13:00,624 --> 00:13:03,424
+Delta准确显示多头或空头的强弱。
+Delta shows you exactly how strong buyers or sellers are.
+
+195
+00:13:03,824 --> 00:13:10,524
+Delta显示市场何时平静，以及市场在促成交易——这是它的主要目的。
+Delta shows you when the market is calm and the market is facilitating trade, which is its main purpose.
+
+196
+00:13:12,424 --> 00:13:15,624
+比如，这是
+So for example, this is
+
+197
+00:13:17,824 --> 00:13:21,024
+迷你合约的图表。
+a chart of the E-minis.
+
+198
+00:13:26,524 --> 00:13:32,524
+在这张ES图中，你会看到市场一直在上涨，涨涨涨。
+So in this chart of the ES, you'll see the market has been rallying, going up, up, up.
+
+199
+00:13:32,924 --> 00:13:35,724
+在这根K线上我们触及了1043的高点，
+We hit a high up here in this bar at
+
+200
+00:13:35,724 --> 00:13:39,644
+它有一个小负Delta，前一根K线是大正Delta。
+1043. It's got a small negative delta following a bar with a big positive delta.
+
+201
+00:13:40,524 --> 00:13:45,624
+然后市场开始横盘，接下来几根K线都在震荡。
+Then it sort of goes sideways. The market goes sideways over the next few bars.
+
+202
+00:13:45,924 --> 00:13:50,824
+在高点这根K线的Delta是-92。
+We have this bar at the high with a delta of minus 92.
+
+203
+00:13:51,224 --> 00:13:53,824
+后一根K线的Delta是-49。
+The bar follows it with a delta of minus 49.
+
+204
+00:13:54,324 --> 00:13:56,724
+再下一根是-275。
+Then the next bar is minus 275.
+
+205
+00:13:56,824 --> 00:14:00,424
+接下来是+174和+187。
+The next bar is positive 174 and a positive 187.
+
+206
+00:14:01,524 --> 00:14:06,424
+而在1051这里，Delta是-612。
+And over here at 1051, you got a delta of minus 612.
+
+207
+00:14:07,824 --> 00:14:09,724
+所以你要综合考虑正在发生的情况。
+So you got to take into account what's happening.
+
+208
+00:14:09,824 --> 00:14:11,024
+想想刚才发生了什么。
+Think about what just happened.
+
+209
+00:14:11,024 --> 00:14:15,024
+市场在上涨，然后开始横盘。
+The market is going up, and then it goes sideways.
+
+210
+00:14:15,024 --> 00:14:18,024
+在横盘过程中，Delta是...
+And as it's going sideways, the deltas are...
+
+211
+00:14:18,624 --> 00:14:25,224
+数值很小，比如-90、-50、-200、+170、+187。
+Fairly small, you know, minus 90, minus 50, minus 200, plus 170, plus 187.
+
+212
+00:14:26,224 --> 00:14:28,724
+那为什么市场没动呢？
+And why isn't the market not going anywhere?
+
+213
+00:14:28,724 --> 00:14:29,624
+它在横盘。
+It's going sideways.
+
+214
+00:14:29,624 --> 00:14:34,924
+这些小Delta告诉你的是，买卖盘分布均衡。
+What this is telling you, these small deltas, is that the buying and selling is evenly distributed.
+
+215
+00:14:35,024 --> 00:14:35,924
+这为什么重要？
+And why is that important?
+
+216
+00:14:36,024 --> 00:14:36,324
+那
+Well,
+
+217
+00:14:37,124 --> 00:14:37,924
+现在处于高点。
+We're at a high.
+
+218
+00:14:38,224 --> 00:14:42,288
+如果市场要继续上涨，你得看到
+If the market is going to continue going high, you want to
+
+219
+00:14:42,288 --> 00:14:44,997
+强正Delta，而不是买卖盘均衡的Delta，
+see strong positive deltas, not evenly distributed deltas
+
+220
+00:14:44,997 --> 00:14:48,722
+大部分情况下买卖盘是匹配的。
+where the buying and selling is matched for the most part.
+
+221
+00:14:49,224 --> 00:14:56,524
+当价格突破这个区间时，你会看到Delta开始变大，比如-600。
+When you start moving out of this range, this area, you see the delta start getting bigger, minus 600.
+
+222
+00:14:57,024 --> 00:15:00,624
+然后在1052点位，Delta是-2336。
+Then at 1052, it's minus 2336.
+
+223
+00:15:00,624 --> 00:15:01,824
+出现了卖盘失衡。
+You got a selling imbalance.
+
+224
+00:15:02,324 --> 00:15:04,524
+现在你能看到空头已经掌控了市场。
+You could see now that the sellers have taken over.
+
+225
+00:15:04,624 --> 00:15:06,924
+他们压制了多头。
+They've overrun the buyers.
+
+226
+00:15:10,024 --> 00:15:11,624
+市场随即大跌。
+And the market just sold right off.
+
+227
+00:15:12,124 --> 00:15:15,957
+上面这个横盘区间，有些人
+This area up here where it's just going sideways, some
+
+228
+00:15:15,957 --> 00:15:19,023
+喜欢称之为吸收，
+people like to call that absorption, where buying
+
+229
+00:15:19,023 --> 00:15:23,623
+买卖盘匹配，市场基本横盘。
+and selling is evenly matched, and the market is basically going sideways.
+
+230
+00:15:28,316 --> 00:15:31,239
+所以很多交易者亏损或失败的
+So one of the main reasons so many traders lose money or fail at
+
+231
+00:15:31,239 --> 00:15:32,491
+主要原因之一是，他们进入市场时认为
+trading is because they come into
+
+232
+00:15:32,491 --> 00:15:35,414
+只需要低买高卖就行。
+the market thinking all they have to do is buy low and sell high.
+
+233
+00:15:35,916 --> 00:15:40,254
+但往往他们买入后，市场继续下跌，
+Oftentimes they are buying only to have the market keep dropping after
+
+234
+00:15:40,254 --> 00:15:45,315
+或者卖出后，市场继续对他们不利地上涨。
+they have bought or sold and the market keeps on going higher against them.
+
+235
+00:15:47,316 --> 00:15:48,316
+理论上很简单。
+In theory, it's simple.
+
+236
+00:15:48,416 --> 00:15:50,116
+我只要低买高卖。
+I'll just buy low and sell high.
+
+237
+00:15:50,116 --> 00:15:54,116
+但你买入后，市场有多少次继续下跌？
+But how often have you bought and then the market just keeps dropping?
+
+238
+00:15:54,216 --> 00:15:55,924
+或者你卖出时认为
+Or how often have you sold thinking
+
+239
+00:15:55,924 --> 00:15:57,632
+这是波段终点，
+this is the high or the end
+
+240
+00:15:57,632 --> 00:16:00,316
+结果市场继续对你不利？
+of a move and the market just keeps going against you?
+
+241
+00:16:01,416 --> 00:16:05,916
+成功的交易者会在市场显示强势时买入，在市场转弱时卖出。
+What successful traders do is buy when the market is showing strength and sell when the market is weak.
+
+242
+00:16:06,416 --> 00:16:10,516
+他们会高买更高卖，或者低卖更低买。
+The successful traders buy high and sell higher, or they sell low and buy lower.
+
+243
+00:16:11,116 --> 00:16:12,516
+你得像雇佣兵一样思考。
+You have to think like a mercenary.
+
+244
+00:16:12,716 --> 00:16:16,616
+好，我知道这听起来像老生常谈，但你要站在获胜的那一边。
+Yeah, I know that sounds cliche, but you want to fight on the side that is winning.
+
+245
+00:16:17,016 --> 00:16:18,561
+别浪费时间
+You don't want to waste your time
+
+246
+00:16:18,561 --> 00:16:19,665
+去对抗一场注定失败的战斗，
+trying to fight a losing
+
+247
+00:16:19,665 --> 00:16:22,315
+去抄顶捞底，去追求什么虚荣。
+battle, trying to pick highs and lows, trying to gain some glory.
+
+248
+00:16:23,316 --> 00:16:27,588
+如果通过订单流你能看到市场
+If you can see by the order flow that the market is
+
+249
+00:16:27,588 --> 00:16:32,216
+开始显示买盘强势或卖盘转弱，
+starting to show some strength in the form of buying or show weakness,
+
+250
+00:16:34,116 --> 00:16:39,716
+或者流动性枯竭，那就是你要跟进的方向。
+in the fact that vine has dried up, that's the way you want to go.
+
+251
+00:16:40,516 --> 00:16:42,092
+别仅仅因为创了新高就卖出，
+You don't want to sell it just because
+
+252
+00:16:42,092 --> 00:16:43,471
+也别
+we made a new high or you
+
+253
+00:16:43,471 --> 00:16:47,215
+仅仅因为创了新低就买入，觉得这就是底部。
+don't want to buy just because you made a new low, thinking this is going to be the bottom.
+
+254
+00:16:47,616 --> 00:16:52,316
+你只管等。等机会。等市场告诉你它要怎么走。
+You just wait. Wait for the opportunity. Wait for the market to tell you what it's going to do.
+
+255
+00:16:53,016 --> 00:16:56,516
+大部分时间，市场不会给你任何信号。
+Most of the time, The market isn't going to be telling you anything.
+
+256
+00:16:56,616 --> 00:16:59,222
+它只是在做交易该做的事，
+It's just going to be doing what
+
+257
+00:16:59,222 --> 00:17:01,828
+促成买卖，
+it does in trading, facilitating the buying
+
+258
+00:17:01,828 --> 00:17:07,414
+把筹码从这一手转到那一手。
+and selling of market and the transfer of goods from one hand to the other.
+
+259
+00:17:07,416 --> 00:17:09,460
+但总会有那么一些时刻，
+But there's going to be times when
+
+260
+00:17:09,460 --> 00:17:11,504
+信号非常非常明显，
+it's very, very obvious, and you can
+
+261
+00:17:11,504 --> 00:17:14,716
+你能从订单流里看到，尤其是在Delta里。
+see that in the order flow and especially in the delta.
+
+262
+00:17:17,416 --> 00:17:20,016
+这是原油的图表，对吧？
+So here's a chart of crude oil, right?
+
+263
+00:17:20,116 --> 00:17:28,416
+下跌过程中，你会看到Delta强烈为负，比如-190、-299、-495。
+And as you're going down, you're seeing the deltas strongly negative, you know, minus 190, minus 299, minus 495.
+
+264
+00:17:28,616 --> 00:17:32,716
+这就是市场在下跌趋势中显示强势时你想看到的。
+That's what you want to see when the market is showing strength on a move to the downside.
+
+265
+00:17:33,016 --> 00:17:34,316
+然后市场开始横盘。
+The market sort of goes sideways.
+
+266
+00:17:34,316 --> 00:17:40,216
+你会看到Delta在-100、+40、-49、-53之间波动，市场横盘时就是这样。
+You can see the deltas, you know, minus 100, plus 40, minus 49, minus 53 as the market goes sideways.
+
+267
+00:17:42,816 --> 00:17:43,716
+想想刚才发生了什么。
+Think about what just happened.
+
+268
+00:17:43,716 --> 00:17:45,441
+我们抛售了，所以可能会有
+We sold off, so there could
+
+269
+00:17:45,441 --> 00:17:47,166
+获利了结的单子进场，
+be some profit taking coming in
+
+270
+00:17:47,166 --> 00:17:50,616
+和卖盘对冲，有人回补空头。
+there to sort of meet with the selling, people covering their shorts.
+
+271
+00:17:51,216 --> 00:17:55,016
+一旦多头退出，市场就继续下跌。
+Then once those buyers are done, the market continues down.
+
+272
+00:17:55,016 --> 00:18:02,616
+你会看到Delta再次增强，-226、-303、-287，随着市场下跌。
+You can see again the delta is picking up strength, minus 226, minus 303, minus 287 as the market moves down.
+
+273
+00:18:06,488 --> 00:18:10,788
+好，这是E-迷你图。大部分时间市场都在横盘。
+Okay, this is an E-mini chart. And for the most part, the market's going sideways.
+
+274
+00:18:10,788 --> 00:18:17,388
+这时候Delta相对较小，168、200、60、95。
+And what do you have? You've got relatively small deltas, 168, 200, 60, 95.
+
+275
+00:18:17,788 --> 00:18:25,188
+当然，中间也会出现一些数值较大的，比如411、693、400。
+I mean, you're going to get a few in here with some, you know, Decent numbers, 411, 693, 400.
+
+276
+00:18:25,688 --> 00:18:27,388
+但市场整体还是横盘。
+The market is just going sideways.
+
+277
+00:18:27,788 --> 00:18:32,588
+横盘时，并不总是只有小数值。
+You know, just when it goes sideways, it's not always just going to be, you know, small numbers.
+
+278
+00:18:33,488 --> 00:18:37,288
+总会有人尝试压低或推高价格。
+You know, you're not going to get somewhere where people try to push it down or push it up.
+
+279
+00:18:37,688 --> 00:18:40,688
+但下一根K线没有延续性。
+But there's no follow-through in the next bar.
+
+280
+00:18:41,188 --> 00:18:44,488
+市场在告诉你，它还在横盘。
+It's, you know, the market is telling you that it's going sideways.
+
+281
+00:18:44,488 --> 00:18:47,270
+只有当开始突破，
+It's when you start breaking out and start
+
+282
+00:18:47,270 --> 00:18:49,704
+并且在一个方向上持续出现强Delta时，
+stringing together strong deltas in one direction,
+
+283
+00:18:49,704 --> 00:18:51,790
+比如这里-400、-500，
+like here you've got minus 400, minus 500.
+
+284
+00:18:53,488 --> 00:18:54,902
+-1400，就在市场开始抛售时，
+Minus 1400 and right as the
+
+285
+00:18:54,902 --> 00:18:57,165
+这就是市场中
+market starts to sell off that's you know
+
+286
+00:18:57,165 --> 00:18:59,428
+你需要经常关注的信号，
+this is the sign in the market that
+
+287
+00:18:59,428 --> 00:19:04,803
+它几乎每天在每个市场中都会出现。
+you're looking to to see on a regular basis and it does appear every day in almost every market
+
+288
+00:19:06,288 --> 00:19:07,472
+比如这里，
+you know here you
+
+289
+00:19:07,472 --> 00:19:08,952
+之前出现过-411的Delta，
+know earlier you got minus 411
+
+290
+00:19:08,952 --> 00:19:10,728
+但下一根K线
+delta but then immediately the next
+
+291
+00:19:10,728 --> 00:19:13,096
+立刻变成正Delta，
+bar you got a positive delta oh you
+
+292
+00:19:13,096 --> 00:19:14,872
+如果抛售要继续，
+know if the selling is going
+
+293
+00:19:14,872 --> 00:19:20,496
+要延续的话，你得寻找强负Delta，比如-600
+to continue you're going to be looking for you know a strong negative delta then again you know minus 600
+
+294
+00:19:21,888 --> 00:19:23,001
+你会想，这可能是个开始，
+93 you're thinking hey this
+
+295
+00:19:23,001 --> 00:19:24,948
+但接下来的K线
+could be the start of it but
+
+296
+00:19:24,948 --> 00:19:28,008
+却出现小正Delta，
+what happens the next bar you get a small positive delta
+
+297
+00:19:29,288 --> 00:19:31,288
+然后很快又重新出现。
+Then it starts to reappear shortly thereafter.
+
+298
+00:19:31,288 --> 00:19:33,088
+但当时，我必须进场
+But, you know, at this time, you know, I had to get it.
+
+299
+00:19:33,188 --> 00:19:33,755
+我必须做空，
+short, you
+
+300
+00:19:33,755 --> 00:19:34,890
+这取决于你的止损单有多紧，
+know, depending on how
+
+301
+00:19:34,890 --> 00:19:36,025
+止损设得越紧,
+tight your stop is,
+
+302
+00:19:36,025 --> 00:19:37,160
+可能就会被止损出局,
+maybe you get stopped
+
+303
+00:19:37,160 --> 00:19:38,295
+或者,
+out or, you know,
+
+304
+00:19:38,295 --> 00:19:43,686
+承担一点小亏损，或者平仓出局，然后重新评估。
+take a small, you know, a small loss or, you know, scratch it and think you got to reassess.
+
+305
+00:19:44,088 --> 00:19:45,221
+但接着,
+But then, you know,
+
+306
+00:19:45,221 --> 00:19:46,921
+接下来的几根K线，你会清楚地发现,
+the next couple bars, it's really
+
+307
+00:19:46,921 --> 00:19:48,337
+你应该很清楚，
+clear to you that, hey,
+
+308
+00:19:48,337 --> 00:19:50,887
+这波抛售，你得跟进。
+the sell-off, you want to get in on it.
+
+309
+00:19:55,388 --> 00:19:57,788
+好的，这还是债券图。
+Okay, and again, this is the bond chart.
+
+310
+00:19:58,488 --> 00:19:59,388
+这里有什么？
+What do you have here?
+
+311
+00:20:00,088 --> 00:20:08,088
+市场在横盘。这里没显示Delta，但你有-200、-400、-500。
+You've got a market going sideways. It's not showing the deltas here, but you've got minus 200, minus 400, minus 500.
+
+312
+00:20:08,388 --> 00:20:09,688
+市场没跌。
+The market's not going down.
+
+313
+00:20:10,188 --> 00:20:17,588
+你有三根K线的负Delta，而且幅度还在扩大，但为什么市场没跌？
+You've got three fairly strong negative deltas. They're increasing in size, but why isn't the market going down?
+
+314
+00:20:18,488 --> 00:20:22,488
+在824这根K线，Delta是+85。
+In this bar at 824, you got a positive delta of 85.
+
+315
+00:20:22,488 --> 00:20:29,388
+好的，这不是最大的正Delta，但供需可能已经转变。
+Okay, it's not the biggest positive delta, thinking that the supply and demand has shifted.
+
+316
+00:20:30,188 --> 00:20:35,388
+这是个信号。它在告诉你：嘿，这里有买盘。
+But it's a sign. It's telling you. hey, there's buying in here.
+
+317
+00:20:35,688 --> 00:20:40,488
+虽然Delta不大，但能看出来。
+It's kind of disguised with the small delta, but you can see it in there.
+
+318
+00:20:41,388 --> 00:20:45,088
+空头遇到了强有力的多头。
+The sellers were met with good buyers.
+
+319
+00:20:45,388 --> 00:20:47,688
+接下来一根K线，Delta又是正的。
+Then the next bar, again, it's a positive delta.
+
+320
+00:20:47,688 --> 00:20:51,788
+开始累积之前那根K线的正Delta。
+It's starting to build on this positive delta from the bar earlier.
+
+321
+00:20:52,688 --> 00:21:00,588
+同样，这三根K线的负Delta在扩大，但为什么市场没跌？
+Again, you have these three bars here with negative delta that's growing, but why isn't the market going down?
+
+322
+00:21:00,588 --> 00:21:06,488
+这就是你要问自己的问题，并且在交易时注意到这一点。
+This is what you have to be asking yourself. and noticing it when the market is trading.
+
+323
+00:21:07,188 --> 00:21:12,588
+你能看到，这里真的是转折点，需求的变化。
+You can see here, this is really the shift, the change in demand.
+
+324
+00:21:12,988 --> 00:21:15,688
+之前供给很多，被抛售了。
+Before, there's a lot of supply. It's being sold in there.
+
+325
+00:21:16,988 --> 00:21:18,188
+但遇到了买盘。
+It's met with buyers.
+
+326
+00:21:18,888 --> 00:21:22,188
+现在，你开始看到多头从空头手中接过控制权。
+And here, now you're starting to see the buyers take over from the sellers.
+
+327
+00:21:22,888 --> 00:21:29,988
+你会看到Delta从85、149、426，到1900，市场正远离这个区域。
+And you see 85, 149, 426, 1900 as the market is pulling away from this area.
+
+328
+00:21:30,488 --> 00:21:31,488
+这就是你要找的。
+That's what you're looking for.
+
+329
+00:21:31,488 --> 00:21:37,388
+你要找多头从空头手中接过控制权的信号。
+You're looking for signs that the buyers have taken over from the sellers.
+
+330
+00:21:38,488 --> 00:21:40,188
+之前这里是空头主导。
+Here it was dominated by sellers.
+
+331
+00:21:40,288 --> 00:21:42,088
+市场必然没怎么动。
+The market necessarily wasn't moving anywhere.
+
+332
+00:21:42,188 --> 00:21:44,188
+当你看到这些Delta时，价格并没有下跌。
+It wasn't going down when you're seeing these deltas.
+
+333
+00:21:45,188 --> 00:21:45,988
+只是在原地徘徊。
+It's just hanging around.
+
+334
+00:21:45,988 --> 00:21:49,988
+你得到的是一个小Delta。比如85的Delta算是比较小的。
+You've got a small delta. You know, a delta of 85 is fairly small.
+
+335
+00:21:50,088 --> 00:21:52,188
+其实可能只是一笔交易的差异。
+You know, it could be a difference of one trade, actually.
+
+336
+00:21:53,688 --> 00:21:58,588
+对我来说，看到较小的Delta数值时，通常会觉得市场比较中性。
+You know, for me, I tend to find it kind of neutral when I see a smaller delta number.
+
+337
+00:21:58,788 --> 00:22:00,321
+如果那根K线的成交量再大一点，
+It could easily have gone the other
+
+338
+00:22:00,321 --> 00:22:01,854
+走势很可能会反过来。
+way had there been a little bit
+
+339
+00:22:01,854 --> 00:22:03,387
+但不管怎样，它是正Delta，
+more volume in that bar to trade.
+
+340
+00:22:03,888 --> 00:22:09,588
+并且在接下来的几根K线中开始累积。
+But nevertheless, you know, it's positive, and it's starting to build on it in the next couple of bars.
+
+341
+00:22:09,788 --> 00:22:11,428
+然后，你会看到
+And, you know, you see
+
+342
+00:22:11,428 --> 00:22:13,724
+这里出现一个大的正Delta，
+the big positive delta come in here
+
+343
+00:22:13,724 --> 00:22:17,660
+在841价位，市场真正朝那个方向移动时。
+at 841, you know, as the market is really moving in that direction.
+
+344
+00:22:21,848 --> 00:22:25,648
+所以分析Delta时，K线中的Delta基本有五种情况。
+So when looking at delta, there are basically five scenarios when it comes to delta in a bar.
+
+345
+00:22:25,748 --> 00:22:29,748
+可能是一个极高的正数，表示多头主导了这根K线。
+It could be an extremely positive number, indicates aggressive buyers have dominated the bar.
+
+346
+00:22:30,548 --> 00:22:34,748
+多头在买入空头挂出的所有卖盘，推动市场上涨。
+Buyers are buying all the available supply offered by sellers and moving the market higher.
+
+347
+00:22:34,848 --> 00:22:41,648
+我所说的极高正Delta，通常是指1,000或以上。
+What I mean by extremely positive delta, usually it's something, you know, over 1,000 or more.
+
+348
+00:22:43,248 --> 00:22:48,548
+平均正Delta表示多头数量超过空头，但并非压倒性优势。
+Average positive delta number would indicate aggressive buyers outnumber sellers, but not overwhelmingly.
+
+349
+00:22:48,948 --> 00:22:54,448
+如果连续出现多个平均正Delta的K线，可能是一个累积信号。
+This can be a sign of accumulation when a series of average positive delta bars are being put together.
+
+350
+00:22:55,948 --> 00:23:03,948
+比如，你要了解自己交易的市场中，通常会出现什么样的Delta。
+For example, you should know what sort of deltas you'll see in your normal market, depending on what you trade.
+
+351
+00:23:05,248 --> 00:23:06,448
+对于迷你合约，
+For the E-minis,
+
+352
+00:23:08,348 --> 00:23:16,648
+通常Delta超过5,000或6,000，才算是极高的正Delta。
+Usually when you see deltas over 5,000 or 6,000, that's an extremely positive delta number.
+
+353
+00:23:17,048 --> 00:23:26,348
+当Delta在1,000、900、1,000左右，或者在500到1,500之间，属于平均正Delta。
+When you see deltas around 1,000, 900, 1,000, anywhere between 500 and 1,500, it's kind of an average positive delta number.
+
+354
+00:23:27,148 --> 00:23:30,548
+这只是告诉你这根K线中买盘略多于卖盘。
+It's just telling you there was slightly more buying than selling in the bar.
+
+355
+00:23:31,748 --> 00:23:37,748
+接近零的小Delta或负Delta表示多头和空头实力相当。
+A small or negative delta number that's close to zero indicates aggressive buyers and sellers are pretty much evenly matched.
+
+356
+00:23:37,748 --> 00:23:41,648
+价格处于平衡状态，多空双方都愿意在这个价位交易。
+Prices at equilibrium, both buyers and sellers are happy to trade at.
+
+357
+00:23:42,448 --> 00:23:48,048
+我认为这类数值是指小于100的正数或负数。
+What I consider that is a number less than 100, either positive or negative.
+
+358
+00:23:48,448 --> 00:23:51,648
+因为，这种情况比较少见。
+because, you know, I said it's rare.
+
+359
+00:23:51,748 --> 00:23:54,719
+确实会出现Delta为零的K线，
+You do get zero deltas in a bar
+
+360
+00:23:54,719 --> 00:23:57,690
+买卖完全匹配，但这种情况有时
+where it's perfectly matched, but, you know, sometimes
+
+361
+00:23:57,690 --> 00:24:01,032
+你会看到Delta是6、30或87，
+you're going to get a delta of 6 or 30 or 87,
+
+362
+00:24:03,148 --> 00:24:04,568
+尤其是当
+you know, especially when the
+
+363
+00:24:04,568 --> 00:24:06,556
+K线的总成交量
+bar has, you know, a total volume
+
+364
+00:24:06,556 --> 00:24:07,976
+比如某根K线成交量是8,000手，
+of, say, 8,000 lots that traded
+
+365
+00:24:07,976 --> 00:24:09,680
+而Delta是70，
+and the delta is, you know, 70.
+
+366
+00:24:10,848 --> 00:24:12,048
+这其实在告诉你…
+You know, it's telling you...
+
+367
+00:24:12,448 --> 00:24:15,848
+买卖双方的力量非常均衡。
+That the buying and selling is evenly matched.
+
+368
+00:24:17,048 --> 00:24:19,178
+不管Delta是正还是负，
+I tend to take it, whether it's
+
+369
+00:24:19,178 --> 00:24:21,308
+我都会用同样的方式来看。
+positive or negative, in the same light.
+
+370
+00:24:21,308 --> 00:24:24,047
+我基本把它当作中性Delta。
+I sort of treat it as a neutral delta.
+
+371
+00:24:25,548 --> 00:24:32,548
+平均负Delta表示主动卖单略多于主动买单，但并不压倒性。
+So an average negative delta number indicates aggressive sellers outnumber the aggressive buyers, not overwhelmingly.
+
+372
+00:24:32,848 --> 00:24:36,348
+这可能是持仓逐步减少，或空头在增仓。
+It can be a sign of steady reduction of position or shorts building up.
+
+373
+00:24:36,648 --> 00:24:38,441
+平均负Delta的数值
+An average negative delta number
+
+374
+00:24:38,441 --> 00:24:40,234
+会是某种情况，
+would be something, you know,
+
+375
+00:24:40,234 --> 00:24:42,027
+大概在-500到-1,500之间，
+minus 500 to, you know, minus 1500,
+
+376
+00:24:42,027 --> 00:24:45,613
+就和平均正Delta在500到1,500之间类似。
+just as an average positive delta would be around 500 to 1500.
+
+377
+00:24:47,848 --> 00:24:52,148
+极端负Delta则表明空头完全控制了这根K线。
+An extremely negative delta number indicates aggressive sellers have dominated the bar.
+
+378
+00:24:52,248 --> 00:24:57,948
+空头基本在主动砸买单，抛出多余供给，预期价格会下跌。
+Sellers are basically hitting every bid as they dump their excess supply in expectation of lower prices.
+
+379
+00:24:58,448 --> 00:25:05,648
+对我来说，极端负Delta可能是-4,000、-5,000甚至更低。
+An extremely negative delta to me would be something along the lines of minus 4,000, minus 5,000 and above.
+
+380
+00:25:06,748 --> 00:25:08,448
+这点非常明显。
+That's fairly obvious.
+
+381
+00:25:08,648 --> 00:25:14,548
+所有人都在抢着卖出，认为市场还会继续下跌。
+Everyone's rushing in to sell as much as they can in expectation that the market is going lower.
+
+382
+00:25:16,048 --> 00:25:18,748
+再补充几点。
+Just a quick couple points. points.
+
+383
+00:25:18,848 --> 00:25:20,948
+其实，Delta并不考虑价格。
+Actually, delta does not take into account price.
+
+384
+00:25:20,948 --> 00:25:22,224
+它并不
+It doesn't, you know,
+
+385
+00:25:22,224 --> 00:25:24,139
+你甚至不需要，当你查看Delta时
+you don't even, when you're looking
+
+386
+00:25:24,139 --> 00:25:26,054
+你其实不太关心
+at delta, you're not really concerned
+
+387
+00:25:26,054 --> 00:25:29,246
+看Delta时，你不需要关注市场当前的交易价格。
+about the price of the market where it's trading at.
+
+388
+00:25:30,148 --> 00:25:33,848
+你真正关心的只是买卖双方的净差额。
+Really, all you're concerned about is the net difference between the buyers and the sellers.
+
+389
+00:25:34,748 --> 00:25:38,148
+当Delta为负而价格却上涨时，要小心。
+When the delta is negative and price is going up, be careful.
+
+390
+00:25:38,948 --> 00:25:43,348
+为什么价格在上涨，而Delta却是负的？
+Why is price going up while the delta is negative?
+
+391
+00:25:43,648 --> 00:25:49,420
+可能有几种情况，主要是市场存在支撑
+Well, it could be a couple of things. The main one is it could be support
+
+392
+00:25:49,420 --> 00:25:51,992
+空头试图
+in the market and people are trying to
+
+393
+00:25:51,992 --> 00:25:53,921
+压低市场，他们
+push the market down and they're
+
+394
+00:25:53,921 --> 00:25:55,850
+基本是在主动砸买单，但可能
+basically hitting the bids, but there
+
+395
+00:25:55,850 --> 00:25:58,744
+有人在大量
+could be somebody in there with a lot of...
+
+396
+00:25:59,048 --> 00:26:00,448
+很多
+You know, a lot
+
+397
+00:26:00,448 --> 00:26:03,248
+买入，是个大型被动买家，
+of demand, a big passive buyer that, you
+
+398
+00:26:03,248 --> 00:26:08,148
+基本愿意以任何价格买入空头愿意卖出的量
+know, they're basically willing to buy as much as people are willing to sell.
+
+399
+00:26:08,448 --> 00:26:10,203
+当这些空头
+And then when those sellers are
+
+400
+00:26:10,203 --> 00:26:12,543
+卖完了，可以说他们
+done, you know, they've got no more bullets
+
+401
+00:26:12,543 --> 00:26:16,346
+子弹打光了，市场就会小幅反弹
+left, so to speak, you know, the market will pop up a bit.
+
+402
+00:26:17,348 --> 00:26:23,248
+反之亦然。当Delta为正，而价格下跌时，也要小心
+And, you know, the opposite is true. When delta is positive, and price is going down, again, be careful.
+
+403
+00:26:23,648 --> 00:26:25,319
+当Delta为正时，
+You know, when delta is positive,
+
+404
+00:26:25,319 --> 00:26:26,990
+买盘比卖盘多
+you have more buying than selling.
+
+405
+00:26:26,990 --> 00:26:31,447
+所以如果价格下跌，这不合理，应该上涨才对
+So if price is going down, you know, it shouldn't be. It should be going up.
+
+406
+00:26:32,948 --> 00:26:37,248
+再举个例子
+You know, and just to, you know, further example.
+
+407
+00:26:38,348 --> 00:26:43,748
+现在看起来这是之前的图表，其实不是，这是另一个稍微不同的
+Now this is the chart we had earlier it looks like and actually no, this is a slightly different one.
+
+408
+00:26:43,748 --> 00:26:46,648
+这是原油，发生了什么？
+This is crude oil and what's happening?
+
+409
+00:26:46,748 --> 00:26:50,248
+价格一路上涨，但整个过程Delta都是负的
+We're going up, up, up and you got negative deltas all on the way up.
+
+410
+00:26:51,848 --> 00:26:55,348
+为什么？上涨时理应Delta为正
+Well, why? You know, if you're going up, you should have positive deltas.
+
+411
+00:26:55,948 --> 00:26:57,773
+通常这是因为，
+One, it's usually a function that,
+
+412
+00:26:57,773 --> 00:27:00,206
+上涨过程中有卖盘
+you know, there's offers on the way up
+
+413
+00:27:00,206 --> 00:27:03,247
+多头预期进一步上涨而买入
+that people are buying in expectation of the move higher.
+
+414
+00:27:03,748 --> 00:27:04,048
+Well,
+
+415
+00:27:06,848 --> 00:27:09,248
+他们基本是在吸收可用的卖单
+What they're doing, basically, they're buying the available supply.
+
+416
+00:27:09,548 --> 00:27:15,648
+当这些买家买完所有需要的量后，会怎样？
+At some point when those buyers have bought all that they need, what's going to happen?
+
+417
+00:27:16,848 --> 00:27:19,348
+市场不会无限上涨
+It's not like the market is just going to keep going up and up and up.
+
+418
+00:27:20,248 --> 00:27:23,067
+如果空头开始
+If the sellers are going to come in
+
+419
+00:27:23,067 --> 00:27:27,647
+在上涨过程中主动砸买单，当多头在出价时
+and start hitting the bids on the way up, as people are bidding,
+
+420
+00:27:28,548 --> 00:27:31,148
+这里成交量是392、323
+Here you have 392, 323.
+
+421
+00:27:31,448 --> 00:27:36,848
+你会看到买单这边出现大量强劲买单，369、420手。
+You're seeing on the bid side, big strong bids, 369, 420.
+
+422
+00:27:36,848 --> 00:27:38,048
+有人在支撑市场。
+Someone is supporting the market.
+
+423
+00:27:38,348 --> 00:27:40,929
+多头试图抛售推动价格下跌，
+People are trying to sell it to move
+
+424
+00:27:40,929 --> 00:27:42,865
+但无论谁在出价，
+it lower, but whoever is bidding
+
+425
+00:27:42,865 --> 00:27:45,446
+价格依然持续小幅上涨，再上涨，继续上涨。
+just keeps moving, going slightly higher, higher, higher.
+
+426
+00:27:46,748 --> 00:27:48,293
+最终，
+And, you know, eventually,
+
+427
+00:27:48,293 --> 00:27:50,611
+这些多头一旦
+you know, these buyers, once they
+
+428
+00:27:50,611 --> 00:27:52,929
+买够他们需要的仓位，会怎样？
+buy their, you know, buy what
+
+429
+00:27:52,929 --> 00:27:55,247
+他们需要买入，会发生什么？
+they need to buy, what happens?
+
+430
+00:27:56,248 --> 00:27:58,148
+他们就不再支撑市场了。
+You know, they're no longer there to support the market.
+
+431
+00:27:58,148 --> 00:28:02,248
+然后空头就会介入，真正开始推动市场下跌。
+And then the sellers are going to come in and really start to move the market lower.
+
+432
+00:28:04,772 --> 00:28:12,672
+你看上涨过程中，买单这边有286、390、320、369、420手。
+You see here on the way up, you've got bid sides of 286, 390, 320, 369, 420.
+
+433
+00:28:12,972 --> 00:28:17,372
+下跌时，之前的多头都去哪了？
+On the way down, where are these buyers that were here earlier?
+
+434
+00:28:18,272 --> 00:28:20,155
+现在只有277手，
+There's nothing more than, here's 277,
+
+435
+00:28:20,155 --> 00:28:22,038
+229手，但随着价格下跌，
+229, but as it moves down,
+
+436
+00:28:22,038 --> 00:28:28,818
+成交量远低于上涨时的买单量。
+it moves down on much lesser volume than what you were seeing bidding it on the way up.
+
+437
+00:28:30,472 --> 00:28:34,372
+你会看到Delta是负的，价格却在上涨。
+You can see the deltas are, I said, you're going higher and you're getting negative deltas.
+
+438
+00:28:34,672 --> 00:28:38,872
+显然有人在抛售，也有人在买入。
+So obviously there's people that are selling it and people that are buying it.
+
+439
+00:28:39,472 --> 00:28:41,572
+他们在消化买单，有人在向买单抛售。
+They're working the bids and people are selling into the bids.
+
+440
+00:28:41,572 --> 00:28:44,072
+但接近高点时会怎样？
+But what's going to happen as you're up near the high?
+
+441
+00:28:44,072 --> 00:28:50,572
+最终，这些买入支撑市场、让空头抛售的多头，
+Eventually, these people that are buying it, that are supporting the market that people are selling into,
+
+442
+00:28:51,572 --> 00:28:52,372
+你得密切关注。
+You've got to watch.
+
+443
+00:28:55,072 --> 00:28:56,172
+他们在建仓。
+They're building their position.
+
+444
+00:28:56,272 --> 00:28:59,005
+一旦仓位建好，
+Once their position is built and they've
+
+445
+00:28:59,005 --> 00:29:04,471
+组合里的仓位够多了，他们就不一定会继续买入了。
+got enough for their portfolio, they're not necessarily going to be buying it anymore.
+
+446
+00:29:04,472 --> 00:29:06,192
+然后市场就会出现转变，
+And then the market, you'll
+
+447
+00:29:06,192 --> 00:29:08,600
+当你开始下跌时，
+see a shift where as you start
+
+448
+00:29:08,600 --> 00:29:13,072
+空头在向买单抛售，空头开始掌控市场。
+to move lower, people are selling into the bid, sellers are taking over.
+
+449
+00:29:14,372 --> 00:29:16,006
+但买单这边
+But there's not much left in the bid
+
+450
+00:29:16,006 --> 00:29:19,071
+已经没多少支撑力量了，不像上涨时那样。
+side to really support the market as you were getting it on the way up.
+
+451
+00:29:24,340 --> 00:29:30,240
+所以理解Delta与市场交易位置的关系，能帮你预判可能的反转。
+So understanding delta in relationship to where the market is trading can clue you into the possible reversals.
+
+452
+00:29:30,740 --> 00:29:35,140
+当市场在高点附近盘整时，Delta应多为正Delta。
+When a market is hanging around the high, delta should be mostly positive.
+
+453
+00:29:35,340 --> 00:29:38,740
+当市场在低点附近盘整时，Delta应多为负Delta。
+When a market is hanging around a low, delta should be mostly negative.
+
+454
+00:29:39,240 --> 00:29:42,540
+当市场开始从高点低点离开时，Delta能给你提示。
+When a market starts to move away from a higher low, delta can tip you off.
+
+455
+00:29:44,440 --> 00:29:49,140
+比如，这是欧股图。我们正向低点下行。
+Okay, for example, this is a Eurostock chart. You know, we're coming down into a low.
+
+456
+00:29:49,840 --> 00:29:51,367
+这里出现背离，
+Here you have a divergence as
+
+457
+00:29:51,367 --> 00:29:52,385
+就像这个小箭头所示。
+this little arrow is.
+
+458
+00:29:52,385 --> 00:29:55,439
+但在下跌过程中，你看到的是负Delta。
+But, you know, on the way down, you got the negative deltas.
+
+459
+00:29:55,940 --> 00:29:57,625
+触及低点后，
+And you hit the low, and
+
+460
+00:29:57,625 --> 00:29:58,748
+发生了什么？你会看到
+what happens? You see
+
+461
+00:29:58,748 --> 00:30:01,838
+一个正Delta。这就是在告诉你出现了背离。
+a positive delta. That's what's telling you you've got a divergence.
+
+462
+00:30:01,840 --> 00:30:03,940
+这是新低，但Delta是正的。
+He's a new low and a positive delta.
+
+463
+00:30:05,240 --> 00:30:06,740
+在低点，本应是负Delta。
+At a low, you should have a negative delta.
+
+464
+00:30:06,840 --> 00:30:08,747
+但接下来的两三根K线，
+But then you start building up some more
+
+465
+00:30:08,747 --> 00:30:13,038
+你开始累积更多正Delta，市场也开始从低点离开。
+positive deltas over the next two or three bars, and the market starts moving away from the low.
+
+466
+00:30:13,440 --> 00:30:16,440
+这就是你寻找反转的信号。
+This is what you're looking for as far as a reversal.
+
+467
+00:30:16,640 --> 00:30:23,440
+你要确认低点已形成，并看到它在正Delta推动下离开。
+You're looking for the low to be set, and you're looking for it to move away with positive deltas.
+
+468
+00:30:23,440 --> 00:30:27,840
+你不希望看到更多负Delta涌入，即更多抛售进入市场。
+You don't want to see more negative deltas coming in, more selling coming into the market.
+
+469
+00:30:30,640 --> 00:30:36,240
+上涨过程中也是同样的逻辑。上涨时Delta是正的。
+And the reverse is true if you're going on your way up. You've got positive deltas on the way up.
+
+470
+00:30:36,540 --> 00:30:39,240
+触及高点后，出现背离，Delta变为负。
+You hit the high, you got a divergence, you got a negative delta.
+
+471
+00:30:40,840 --> 00:30:43,640
+高点之后的下一根K线Delta也是负的。
+And you've got the next bar after the high is negative delta.
+
+472
+00:30:43,640 --> 00:30:46,040
+再下一根同样是负Delta。
+The next bar after that is also negative delta.
+
+473
+00:30:46,140 --> 00:30:47,540
+并且市场开始从高点回落。
+And you're moving away from the high.
+
+474
+00:30:48,440 --> 00:30:53,140
+当你接近高点并出现负Delta时，预期市场会抛售。
+When you come up to a high and you start putting in negative deltas, expect the market to sell off.
+
+475
+00:30:53,140 --> 00:30:58,640
+交易者把这个高点当作阻力，开始反应，并在这个价位抛售。
+People are taking this as the high, and they're reacting, and they're starting to sell at this level.
+
+476
+00:30:59,440 --> 00:31:02,140
+他们觉得这个高点是个好的抛售价位。
+They feel this high is a good level to sell.
+
+477
+00:31:04,676 --> 00:31:12,376
+另外，解读Delta的方式还包括观察巨量Delta，无论正负。
+Now, another way to interpret deltas is when you have massive delta numbers, they're either positive or negative.
+
+478
+00:31:12,376 --> 00:31:14,490
+数值大到让你不禁感叹，
+They're just so big, you find
+
+479
+00:31:14,490 --> 00:31:16,604
+它们可能会
+yourself saying, wow, they could tip
+
+480
+00:31:16,604 --> 00:31:19,775
+提示你短期趋势会朝这个方向发展。
+you off to a short-term trend in that direction.
+
+481
+00:31:21,076 --> 00:31:28,976
+比如，在Delta波动较小的市场里，
+For example, in a market that's trading relatively small, deltas, you know, a couple hundred aside.
+
+482
+00:31:29,376 --> 00:31:30,976
+比如这是原油的图表，对吧？
+Like this is a crude oil chart, right?
+
+483
+00:31:31,176 --> 00:31:38,576
+大部分Delta你会看到200、100、189、297、267，或者500、400就算很大了。
+Most of the deltas, you see, you know, 200, 100, 189, 297, 267, you know, 500, 400 is pushing it.
+
+484
+00:31:38,876 --> 00:31:41,076
+但这里出现一个大负Delta，-1,000。
+Here you got a big negative delta, minus 1,000.
+
+485
+00:31:41,676 --> 00:31:44,076
+那个价位直接出现了卖盘失衡。
+You've got, you know, selling imbalance right at that level.
+
+486
+00:31:45,376 --> 00:31:46,076
+就在这根K线里。
+In that bar.
+
+487
+00:31:47,076 --> 00:31:47,826
+1,000这个数值
+You know, a
+
+488
+00:31:47,826 --> 00:31:49,576
+在交易者看来，
+thousand is considered, you know, like a
+
+489
+00:31:49,576 --> 00:31:51,326
+简直就是‘哇’的级别，因为
+wow level in the sense that, hey,
+
+490
+00:31:51,326 --> 00:31:53,076
+‘哇，数量真大，
+wow, that's a lot, you know, don't
+
+491
+00:31:53,076 --> 00:31:54,576
+千万别错过这笔交易，’
+miss this trade, you know, there's
+
+492
+00:31:54,576 --> 00:31:56,076
+有人准备做空，尤其是
+people looking to get short, especially,
+
+493
+00:31:56,076 --> 00:31:57,576
+在创出高点之后，
+you know, after the high has
+
+494
+00:31:57,576 --> 00:32:00,076
+突然出现大额
+been made, and all of a sudden you got big,
+
+495
+00:32:01,576 --> 00:32:02,896
+一个大
+you know, a big
+
+496
+00:32:02,896 --> 00:32:04,216
+大量抛单涌入，
+negative delta, a lot
+
+497
+00:32:04,216 --> 00:32:05,536
+市场在对这个高点做出反应，
+of selling came in,
+
+498
+00:32:05,536 --> 00:32:06,856
+你会看到
+you know, you see,
+
+499
+00:32:06,856 --> 00:32:10,486
+454、538这样的数值，甚至在失衡中，这里还有165、243，
+you know, 454, 538, you know, here, even in the imbalance, you got 165,
+
+500
+00:32:11,976 --> 00:32:17,376
+显然有大量抛单涌入，市场随即大跌。
+243, there's obviously a lot of selling coming in, reacting to this high, you know, and the market sold off.
+
+501
+00:32:18,876 --> 00:32:19,854
+这是E-迷你的图表，
+You know, this
+
+502
+00:32:19,854 --> 00:32:21,158
+我们当时在
+is an E-mini chart,
+
+503
+00:32:21,158 --> 00:32:22,788
+这个价位附近交易，
+you know, we're trading around,
+
+504
+00:32:22,788 --> 00:32:24,745
+横盘了一小会儿，
+you know, this level, going a
+
+505
+00:32:24,745 --> 00:32:26,702
+然后突然，
+little bit sideways here, then all
+
+506
+00:32:26,702 --> 00:32:31,921
+我看到Delta数值还算正常，-1300、-854，
+of a sudden, you know, seeing what I consider average delta numbers, minus 1300, minus 854, then wham!
+
+507
+00:32:33,276 --> 00:32:37,176
+接着‘砰’的一下，出现-5,000的Delta。
+you get hit with minus 5,000 delta.
+
+508
+00:32:38,076 --> 00:32:40,776
+下一根K线甚至达到-3,800。
+Even to the next bar, it came in as minus 3,800.
+
+509
+00:32:40,776 --> 00:32:43,504
+但当你看到一根K线出现极强的负Delta时，
+But when you see a bar with very
+
+510
+00:32:43,504 --> 00:32:46,232
+市场是在向你发出信号
+strong negative delta, it's markets tipping you off
+
+511
+00:32:46,232 --> 00:32:47,937
+这说明，
+that, hey, there's a lot
+
+512
+00:32:47,937 --> 00:32:50,324
+有大量空头压制了
+of sellers that overwhelm these buyers that
+
+513
+00:32:50,324 --> 00:32:54,075
+在K线买单侧等待的多头。
+were sitting down here on the bid side in the bar.
+
+514
+00:32:55,376 --> 00:33:02,576
+市场随之出现小幅变化。在这种情况下，是趋势的延续。
+And the market had a little change. In this case, it was a continuation of the trend.
+
+515
+00:33:02,576 --> 00:33:04,059
+很多时候，
+Oftentimes, it's going to
+
+516
+00:33:04,059 --> 00:33:06,284
+会像这样：在出现负Delta的K线后，
+be just like after a bar
+
+517
+00:33:06,284 --> 00:33:08,509
+Delta值处于平均水平，
+with a negative delta, an average
+
+518
+00:33:08,509 --> 00:33:14,073
+然后你会看到一个惊人的数值，那个方向上出现一个非常大的数字。
+number, and when you get the wow number, a very big number in that direction.
+
+519
+00:33:16,176 --> 00:33:19,076
+有时你会遇到这种情况，
+There will be times where you have,
+
+520
+00:33:19,076 --> 00:33:21,976
+比如，先有一根K线，
+say, a bar, like you get a
+
+521
+00:33:21,976 --> 00:33:24,876
+出现负Delta，然后是一个大的正Delta。
+negative delta, then a big positive delta.
+
+522
+00:33:25,176 --> 00:33:31,376
+关注Delta指引方向上的延续性。
+Look for a little bit of follow-through in the direction that the delta is telling you.
+
+523
+00:33:31,376 --> 00:33:34,076
+在这种情况下，它告诉你有大量抛售涌入。
+In this case, it's telling you there's a lot of selling coming in.
+
+524
+00:33:34,576 --> 00:33:36,476
+你的方向应是看跌。
+Your direction should be looking to go lower.
+
+525
+00:33:37,876 --> 00:33:41,286
+当你来到这根K线时，
+You know, when you're coming to this bar right here
+
+526
+00:33:41,286 --> 00:33:44,355
+正Delta为1600，而之前是
+with positive delta of 1600, on the back of minus
+
+527
+00:33:44,355 --> 00:33:46,401
+5000、-3800，这几乎
+5000, minus 3800, you know, this is almost
+
+528
+00:33:46,401 --> 00:33:49,470
+几乎累计-10,000的负Delta，然后这根K线出现1600。
+10,000 negative delta and you got this bar here with 1600.
+
+529
+00:33:52,576 --> 00:33:57,476
+要让市场真正反弹，需要很大的力量，
+You know, it's going to take a lot to really move the market back up, you know, so it's
+
+530
+00:33:58,076 --> 00:34:02,576
+所以这是其中一种情况：先有两根强负Delta的K线，
+one of those things where you have these two bars with big strong negative
+
+531
+00:34:02,776 --> 00:34:07,276
+然后你看到一根K线，似乎暗示可能开始转向。
+Delta and you see a bar come in that looks like, hey, maybe we're going to start to move away.
+
+532
+00:34:07,276 --> 00:34:08,476
+但未必如此。
+Well, not necessarily.
+
+533
+00:34:08,776 --> 00:34:13,476
+你面对的是这些大负Delta的K线。
+You've got these big negative bars, the big negative delta bars here.
+
+534
+00:34:14,576 --> 00:34:17,296
+如果有什么预期的话，我会认为市场
+If anything, I'd expect the market to go
+
+535
+00:34:17,296 --> 00:34:19,676
+先横盘或小幅下跌，
+sideways first to a little bit lower,
+
+536
+00:34:19,676 --> 00:34:23,076
+然后在抛售后立即上涨。
+then necessarily start to move higher immediately after the selling.
+
+537
+00:34:23,276 --> 00:34:26,836
+因为在这里抛售的人，
+Because these people that were selling here, they may very
+
+538
+00:34:26,836 --> 00:34:29,684
+很可能稍后再次出现，
+well reappear slightly later, even though you have
+
+539
+00:34:29,684 --> 00:34:32,176
+即使你有一根正Delta的K线。
+this one bar with a positive delta.
+
+540
+00:34:32,876 --> 00:34:36,476
+所以，像我之前说的，结合市场整体情况来理解一切。
+So like I said, take everything into context with what's happening in the market.
+
+541
+00:34:39,612 --> 00:34:44,212
+所以Delta数值小，不管正负，都说明市场处于平衡状态。
+So small delta numbers, both positive and negative, indicate the market is balanced.
+
+542
+00:34:44,212 --> 00:34:47,253
+价格处于一个多头和空头
+It's trading at a level where both buyers and sellers
+
+543
+00:34:47,253 --> 00:34:49,078
+都对当前成交价格满意的水平，
+are happy with the price that
+
+544
+00:34:49,078 --> 00:34:51,511
+交易正在顺利进行。
+is being traded, and trade is being facilitated.
+
+545
+00:34:51,512 --> 00:34:54,512
+市场正在做它该做的事。
+The market is doing what the market is supposed to do.
+
+546
+00:34:55,012 --> 00:34:58,112
+连续出现小Delta数值，往往是订单吸收的信号。
+Small delta numbers, when strung together, are often a sign of absorption.
+
+547
+00:34:58,512 --> 00:35:02,812
+对我来说更重要的，是这预示着横盘或拥堵。
+More importantly, for me, it's a sign of sideways trading or congestion.
+
+548
+00:35:03,912 --> 00:35:05,736
+你要做的是，
+What you want to do is you want
+
+549
+00:35:05,736 --> 00:35:07,332
+当你看到一系列小Delta数值后，
+to look when you have a series
+
+550
+00:35:07,332 --> 00:35:09,612
+市场开始移动时，
+of small delta numbers, then the market starts to move.
+
+551
+00:35:10,012 --> 00:35:12,312
+关注Delta的方向。
+Watch the direction of the deltas.
+
+552
+00:35:13,412 --> 00:35:17,712
+这是一个例子，价格一路上涨，这是迷你合约。
+So here's a case where you're going up, up, up, up. This is the E-minis.
+
+553
+00:35:18,412 --> 00:35:22,012
+正Delta 2,000，正Delta 1,700。
+Positive delta 2,000, positive delta 1,700.
+
+554
+00:35:22,012 --> 00:35:24,912
+然后触及高点，出现Delta 2。
+Then you hit the high, you got 2.
+
+555
+00:35:25,612 --> 00:35:32,212
+接下来这根K线成交量17,000手，Delta只有2。
+Then the next, you know, which is traded 17,000 contracts for this bar and it's got a delta of 2.
+
+556
+00:35:33,112 --> 00:35:34,312
+这说明了什么？
+You know, what's that telling you?
+
+557
+00:35:34,312 --> 00:35:36,112
+买卖双方势均力敌。
+The buying and selling is evenly matched.
+
+558
+00:35:36,412 --> 00:35:38,159
+接下来这根K线，
+To a lesser extent, the next
+
+559
+00:35:38,159 --> 00:35:39,906
+Delta为正228，
+bar, you got a positive delta
+
+560
+00:35:39,906 --> 00:35:42,819
+这个数值也很小。
+of 228, which is, you know, kind of a small number.
+
+561
+00:35:43,112 --> 00:35:50,712
+在标普500指数期货中，200手很可能只是一两笔交易。
+You know, in the S&Ps, 200 lots, like I said, is one trade, maybe two trades very easily.
+
+562
+00:35:50,712 --> 00:35:53,512
+这个市场轻松就能成交200、300手大单。
+You know, that's a market that can trade 200, 300 in a clip.
+
+563
+00:35:54,512 --> 00:35:59,712
+再下一根K线，Delta为-18，同样很小。
+Then the next bar, you got a delta of negative 18, which again is very small.
+
+564
+00:36:00,212 --> 00:36:06,512
+你会发现，这三根K线的Delta都相对平坦。
+You'll see what's happened is you have these three bars with relatively flat delta.
+
+565
+00:36:07,212 --> 00:36:08,912
+虽然是正228，
+It is positive, 228.
+
+566
+00:36:09,512 --> 00:36:15,312
+但把这些加起来，成交量分别是17,000、14,000、6,000手。
+But you net all these together, it's over 17,000, 14,000, 6,000.
+
+567
+00:36:15,812 --> 00:36:21,012
+在这段时间内，从9点57分到10点，
+You're talking close to 40,000 lots traded in this time period between 9.50.
+
+568
+00:36:21,812 --> 00:36:28,212
+总成交量接近40,000手，而Delta只有200，这说明市场在横盘。
+7 and 10 o'clock and your delta is only 200, it's telling you the market is going sideways.
+
+569
+00:36:28,212 --> 00:36:30,712
+这是一个交易者愿意成交的价格区间。
+This is a level where people are happy to transact.
+
+570
+00:36:31,112 --> 00:36:32,756
+所以你要做的是，
+So what you want to do is you
+
+571
+00:36:32,756 --> 00:36:34,194
+你要观察市场开始
+want to watch as the market starts
+
+572
+00:36:34,194 --> 00:36:35,221
+脱离这个
+to move out of this
+
+573
+00:36:35,221 --> 00:36:36,248
+区间时发生了什么。它会
+area and what's happening. Is
+
+574
+00:36:36,248 --> 00:36:38,508
+上涨还是下跌？
+it going to go up? Is it going to go down?
+
+575
+00:36:39,912 --> 00:36:43,312
+然后出现强负Delta，-1800。
+It starts coming out with strong negative delta, minus 1800.
+
+576
+00:36:43,712 --> 00:36:48,212
+如果你还不确信这是趋势，那看-2000。
+Then again, if you're not yet convinced that this is the move, minus 2000.
+
+577
+00:36:49,612 --> 00:36:52,035
+所以如果你还没在这根K线做空，
+So if you're not short based on this bar, by
+
+578
+00:36:52,035 --> 00:36:53,246
+到这根K线时你真的
+this bar you should really
+
+579
+00:36:53,246 --> 00:36:55,911
+该考虑做空了，然后市场就抛售。
+be looking to get short, and then the market sells off.
+
+580
+00:36:57,712 --> 00:37:02,612
+重要的是结合市场走势来看Delta。
+You know, what's important is taking the delta in context with how the market's moving.
+
+581
+00:37:02,912 --> 00:37:05,812
+Delta应该与市场方向一致。
+You know, the delta should coincide with the direction of the market.
+
+582
+00:37:06,112 --> 00:37:12,712
+当它与市场方向不一致时，你就该质疑了。
+When it's not coinciding with the direction of the market, that's when you should, you know, question it.
+
+583
+00:37:12,812 --> 00:37:14,912
+或者说，
+Well, not question it, but rather, you know,
+
+584
+00:37:15,612 --> 00:37:18,812
+仔细看看，试着理解市场为何没动。
+take a closer look and try to understand why the market's not moving.
+
+585
+00:37:19,412 --> 00:37:22,894
+当市场横盘或Delta相对
+When the market is going sideways or delta is relatively
+
+586
+00:37:22,894 --> 00:37:25,680
+平稳时，把Delta作为市场启动的信号
+flat, look for the delta as a sign
+
+587
+00:37:25,680 --> 00:37:29,511
+来判断方向。
+to go in that direction when the market starts to move.
+
+588
+00:37:31,012 --> 00:37:34,412
+这就是第10课，Delta和成交量的全部内容。
+So that's the end of lesson 10, delta and volume.
+
+589
+00:37:34,812 --> 00:37:36,912
+下一课我会给大家讲解…
+In the next lesson, I'll show you...
+
+590
+00:37:37,712 --> 00:37:39,264
+订单流的探索之旅，
+Odyssey in order flow
+
+591
+00:37:39,264 --> 00:37:41,592
+价格拒绝，这是
+price rejection, you know, which is
+
+592
+00:37:41,592 --> 00:37:47,412
+普通K线图或柱状图里看不到的。
+something you're not going to see in a normal candlestick chart or normal bar chart.
+
+593
+00:37:47,712 --> 00:37:50,125
+订单流的魅力在于
+That's the beauty of order flows is
+
+594
+00:37:50,125 --> 00:37:52,883
+它能为你提供一个全新的视角，
+it really gives you a new perspective on
+
+595
+00:37:52,883 --> 00:37:57,710
+去看待市场，而不仅仅是看K线
+looking at the markets rather than just looking at a bar and not understanding.
+
+596
+00:37:59,512 --> 00:38:01,012
+却不了解K线内部的情况。
+what's going on inside the bar.
+
+597
+00:38:01,012 --> 00:38:07,112
+你想知道K线内部发生了什么，就像生活中的任何事一样。
+You want to know what's going on inside the bar, just like anything in life.
+
+598
+00:38:08,512 --> 00:38:09,987
+如果你喜欢烹饪，你会想
+If you like to cook, you want
+
+599
+00:38:09,987 --> 00:38:11,462
+看到一道菜时，
+to know when you see a dish,
+
+600
+00:38:11,462 --> 00:38:14,412
+知道它的原料是什么。你想知道配料。
+you want to know what goes into it. You want to know the ingredients.
+
+601
+00:38:15,212 --> 00:38:16,412
+在市场中，道理是一样的。
+In the market, it's the same way.
+
+602
+00:38:16,812 --> 00:38:17,412
+好的，谢谢。
+So thank you.
+
+603
+00:38:17,512 --> 00:38:22,312
+第10课到此结束，第11课很快开始。
+That's the end of Lesson 10, and Lesson 11 will begin shortly.
+
+===== END AFTER_TRANSLATE =====

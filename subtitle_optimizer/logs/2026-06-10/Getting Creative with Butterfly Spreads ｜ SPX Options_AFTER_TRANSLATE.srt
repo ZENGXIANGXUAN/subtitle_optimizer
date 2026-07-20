@@ -1,0 +1,1734 @@
+===== AFTER_TRANSLATE (347 entries) =====
+1
+00:00:00,000 --> 00:00:01,433
+大家好，我是Brian
+what's going on guys brian's here
+
+2
+00:00:01,433 --> 00:00:02,627
+今天是2023年8月16日，星期三
+today is wednesday august 16th 2023
+
+3
+00:00:02,627 --> 00:00:04,060
+市场正在交易中
+and the market is open i
+
+4
+00:00:04,060 --> 00:00:08,599
+今天我想分享一个不一样的视频
+wanted to do a video that's a little bit different from a lot of the other videos in which
+
+5
+00:00:08,840 --> 00:00:11,258
+与以往很多视频不同
+i've done and this one is just going
+
+6
+00:00:11,258 --> 00:00:13,676
+展示如何灵活运用
+to showcase how you can get pretty creative
+
+7
+00:00:13,676 --> 00:00:19,419
+不同类型的蝶式价差策略，会涉及一些高级话题
+using different types of butterfly spreads and i will be covering some advanced topics if you're completely new to
+
+8
+00:00:19,420 --> 00:00:21,547
+如果你完全不了解期权
+options or you've never traded a butterfly spread
+
+9
+00:00:21,547 --> 00:00:23,408
+或从未交易过蝶式价差
+before i'll try to explain a little
+
+10
+00:00:23,408 --> 00:00:24,737
+我会在过程中尽量解释
+bit along the way we'll
+
+11
+00:00:24,737 --> 00:00:29,258
+先从我决定入场这两笔交易的初衷开始
+start off by showing the inception or the idea behind why i decided to enter these two
+
+12
+00:00:29,260 --> 00:00:31,460
+这是当前头寸的盈亏情况
+trades this is the current pnl on the
+
+13
+00:00:31,460 --> 00:00:33,385
+大家可以看到
+position right now so as we can
+
+14
+00:00:33,385 --> 00:00:39,710
+目前盈利约380到420美元，市场仍在交易中
+see i'm currently up about 380 to 420 bucks again the market is open this is where the spx is currently it's the combination of
+
+15
+00:00:40,260 --> 00:00:43,356
+这是两种蝶式价差的组合
+two different types of butterfly spread so a call spread
+
+16
+00:00:43,356 --> 00:00:45,833
+一个看涨蝶式
+and a put spread here they're just using
+
+17
+00:00:45,833 --> 00:00:50,478
+和一个看跌蝶式，使用了两个不同的到期日
+two different expirations and i wanted to showcase something like this because this isn't something
+
+18
+00:00:50,480 --> 00:00:52,543
+我想分享这个策略，因为它并非传统教材里的内容
+which i've read or learned conventionally it just
+
+19
+00:00:52,543 --> 00:00:54,606
+而是我通过交易经验逐渐领悟的
+came from having the experience in trading after
+
+20
+00:00:54,606 --> 00:01:00,538
+希望能展示如何突破常规思维
+a while and then picking up on things as i go along so i'm hoping to share and show how you can think
+
+21
+00:01:00,540 --> 00:01:02,725
+构建头寸时
+outside of the box at times and structure
+
+22
+00:01:02,725 --> 00:01:04,910
+不承担太多风险
+positions in which you're not really taking on
+
+23
+00:01:04,910 --> 00:01:10,099
+风险较低，且你不是在二元思维下交易
+much risk and you're not approaching trading very binary you're creating a scenario in which you have a lot
+
+24
+00:01:10,100 --> 00:01:12,367
+创造多种盈利可能的场景
+of possible scenarios to actually be profitable so
+
+25
+00:01:12,367 --> 00:01:14,351
+如果我们仔细看一下
+if we actually take a look at
+
+26
+00:01:14,351 --> 00:01:20,019
+各个行权价，我喜欢用期权策略分析工具，因为它便于解释
+the individual strike prices here for beginners i like to use option strat because it's pretty easy to explain so
+
+27
+00:01:20,020 --> 00:01:23,354
+我持有一个看跌蝶式价差
+what i have is one put butterfly and it was
+
+28
+00:01:23,354 --> 00:01:25,354
+于2023年8月11日东部时间12:53开仓
+open on august 11th here at 12 53
+
+29
+00:01:25,354 --> 00:01:34,024
+还有两个看涨蝶式价差，我调整一下让它们匹配
+p.m eastern time and then i have two of these call butterflies so i'll adjust it so it matches right so there we go this
+
+30
+00:01:34,360 --> 00:01:37,018
+这个头寸开仓成本约为2000美元
+position costs about two thousand dollars to open and this
+
+31
+00:01:37,018 --> 00:01:39,144
+这就是到期日
+is the expiration right here this was also
+
+32
+00:01:39,144 --> 00:01:45,258
+8月11日开仓，大家可以看到我这里只有一个头寸，所以比例是1:
+opened on august 11th and then we can see i only have one of these here so the ratio is for every one
+
+33
+00:01:45,260 --> 00:01:47,625
+这里我只有一个看跌蝶式
+of these i had two of these right now i
+
+34
+00:01:47,625 --> 00:01:49,517
+所以比例是1:2
+only have two left of these and only
+
+35
+00:01:49,517 --> 00:01:54,958
+我决定在东部时间14:00前录制视频
+one of these and then i decided let me record this video before 2 p.m eastern time just because there's the fomc minutes
+
+36
+00:01:54,960 --> 00:01:56,556
+因为日历上有美联储会议纪要
+and there's a catalyst on the calendar so
+
+37
+00:01:56,556 --> 00:01:58,152
+这是一个市场催化剂
+i would like to close out some of
+
+38
+00:01:58,152 --> 00:02:02,940
+这就是为什么我决定现在录制，而不是等市场收盘，因为我还持有部分
+these positions and that's why i figured i'll record this now versus waiting for the markets to close while i still have some of
+
+39
+00:02:02,940 --> 00:02:05,479
+因此我现在录制而不是等收盘
+the positions uh live here and open now with one
+
+40
+00:02:05,479 --> 00:02:07,510
+目前还有一个看跌蝶式和两个看涨蝶式
+of these and two of these the first
+
+41
+00:02:07,510 --> 00:02:13,858
+首先我想强调的是资金使用情况
+thing i want to call out is pay attention to how much capital i'm using i'm using about two grand here and then i'm only
+
+42
+00:02:13,860 --> 00:02:16,677
+这里用了约2000美元，那里用了375美元
+using 375 dollars here both of these positions are debits
+
+43
+00:02:16,677 --> 00:02:19,181
+这两个头寸都是权利金支出
+so we're not talking about credit spread so
+
+44
+00:02:19,181 --> 00:02:25,754
+也就是说我支付了2000美元和375美元
+in other words i paid two grand and then i paid 375 dollars let's take a look at the chart and you
+
+45
+00:02:26,380 --> 00:02:28,666
+大家可以看到图表是这样的
+guys can see this is what it looks like here
+
+46
+00:02:28,666 --> 00:02:30,495
+这是8月11日
+so this was the 11th which was last
+
+47
+00:02:30,495 --> 00:02:36,898
+现在是周三，上周五开的看跌蝶式，这是开看涨蝶式的时间
+week friday it is now a wednesday right here this is when i open up the put fly and this is when i open up the call fly
+
+48
+00:02:36,900 --> 00:02:40,231
+这是开看跌蝶式的时间
+now the put fly was targeting 44 25 for thursday's
+
+49
+00:02:40,231 --> 00:02:43,145
+这是开看涨蝶式的时间
+expiration which is tomorrow and then the
+
+50
+00:02:43,145 --> 00:02:46,059
+看跌蝶式目标是4425点
+call fly is targeting for august 24th
+
+51
+00:02:46,059 --> 00:02:51,888
+到期日是明天，看涨蝶式目标是4500点
+which is next week 4500 so this is just showing the exact levels on our
+
+52
+00:02:53,140 --> 00:02:55,258
+到期日是8月24日
+chart i originally told myself i wasn't going to talk
+
+53
+00:02:55,258 --> 00:02:57,376
+图表显示了具体的价位
+about why i decided to enter these trades but i
+
+54
+00:02:57,376 --> 00:02:59,070
+我原本不想解释为何入场
+figured that's a little bit of importance too
+
+55
+00:02:59,070 --> 00:03:05,637
+我不想花太多时间，只是想展示思考过程，部分是基于gamma敞口分析
+so i don't want to spend too much time so just to showcase a lot of the thought process came from just taking a look at the gamma exposure as well
+
+56
+00:03:05,640 --> 00:03:08,076
+我不想花太多时间
+as also understanding the significance of the 4500 level for
+
+57
+00:03:08,076 --> 00:03:10,242
+想展示一下思考过程
+the past couple weeks of trading on the
+
+58
+00:03:10,242 --> 00:03:15,928
+标普500和对应的SPY，大家可以看到，这是gamma敞口
+spx and the spy equivalent so if we take a look at this right here this is just the gamma exposure
+
+59
+00:03:16,200 --> 00:03:18,490
+这是8月11日的Gamma敞口
+this was on at august 11th so again last week
+
+60
+00:03:18,490 --> 00:03:20,780
+也就是上周五中午
+friday this is in the middle of the day generally
+
+61
+00:03:20,780 --> 00:03:22,612
+我喜欢查看这些数据
+i like to take a look at this
+
+62
+00:03:22,612 --> 00:03:24,215
+在决定下一周或两周的
+when i'm deciding what type of swing
+
+63
+00:03:24,215 --> 00:03:32,001
+波段交易类型时，大家可以看到SPY在45.53美元，
+trades i want to put on for the next week or the next two weeks we can see that the spy was at 45 53 if we take a look at the spx this is the
+
+64
+00:03:32,460 --> 00:03:36,254
+再看SPX的对应数据，我们拉到8月11日
+equivalence here let's scroll up to the 11th right here
+
+65
+00:03:36,254 --> 00:03:38,910
+相同时间框架下，我注意到4500
+same time frame so i noticed that 4500
+
+66
+00:03:38,910 --> 00:03:46,499
+是一个非常关键的行权价，但SPX上4500也很突出
+was a pretty dominant strike price however 4500 was pretty dominant on the spx this is a big opex this friday
+
+67
+00:03:47,260 --> 00:03:49,796
+本周五是期权到期日
+which is opex just stands for options expiration
+
+68
+00:03:49,796 --> 00:03:52,332
+这是月度到期日，且有大量
+it is a monthly expiration and there's a
+
+69
+00:03:52,332 --> 00:03:54,868
+期权将在本周五到期
+lot of options that are expiring this friday
+
+70
+00:03:54,868 --> 00:03:56,770
+SPX在上午时段
+during the am session on the
+
+71
+00:03:56,770 --> 00:04:04,697
+到期，周五上午，还有常规的周度合约
+spx so friday morning and then there's also the usual weekly contracts that expire at the end of the day and this weekly contracts happens
+
+72
+00:04:04,700 --> 00:04:08,065
+在当天结束时到期，而这周的周度合约
+to also be a weekly a monthly expiration so i
+
+73
+00:04:08,065 --> 00:04:10,757
+同时也是月度到期日，因此我
+also like to pay attention to the spy
+
+74
+00:04:10,757 --> 00:04:18,498
+尤其是在这样的周里，我们回到上面看，上周中午12点
+especially on weeks like this so let's scroll back up here and we have this right here so 12 p.m again last week
+
+75
+00:04:18,500 --> 00:04:20,711
+尤其是这种周的情况，我们回到上面
+friday what this is showing by the way this is
+
+76
+00:04:20,711 --> 00:04:22,479
+这些截图来自Quant Trading应用
+just screenshots here from the quant trading app
+
+77
+00:04:22,479 --> 00:04:26,459
+应用下载链接在简介中，继续往下看
+discord links to information for quant trading app is in the description down below but moving right along
+
+78
+00:04:26,460 --> 00:04:28,853
+这张图展示的是未来一周的
+this right here is just aggregating the gamma profile for
+
+79
+00:04:28,853 --> 00:04:30,767
+Gamma分布的汇总数据
+the upcoming week so it's kind of giving
+
+80
+00:04:30,767 --> 00:04:32,681
+某种程度上为我提供了
+me an insight in terms of we can
+
+81
+00:04:32,681 --> 00:04:40,818
+可以把这看作是在查看下周的预测，然后我注意到SPY在下周
+think of this as i'm looking at the forecast for the upcoming week and then i noticed for the s for the spy this upcoming week here so from the 14th to the 18th
+
+82
+00:04:40,820 --> 00:04:43,250
+在接下来一周，即8月14日至18日
+and again right now it's currently the 16th of august
+
+83
+00:04:43,250 --> 00:04:45,194
+我查看时是8月
+when i looked at this this was august
+
+84
+00:04:45,194 --> 00:04:50,298
+11日时，我发现有大量负Gamma，之前很少见到这么多负Gamma
+11th i noticed that there was a lot of negative gamma we hadn't been seeing this much negative gamma for a
+
+85
+00:04:50,300 --> 00:04:52,550
+我们很久没见过这么多负Gamma了
+while and even though the spy was at 445 i
+
+86
+00:04:52,550 --> 00:04:54,300
+尽管SPY在445美元，
+was thinking if 445 did not hold we
+
+87
+00:04:54,300 --> 00:04:56,050
+但我想如果445不保住，
+were more than likely going to sell
+
+88
+00:04:56,050 --> 00:05:00,550
+然后是这个4400的行权价区域，以及这边的行权价
+off to this area here which is for which is 4400 and then this strike price here which is
+
+89
+00:05:01,300 --> 00:05:03,262
+4400这个区域，以及这个行权价
+442 so on the spx that's about we'll say 44
+
+90
+00:05:03,262 --> 00:05:04,979
+442美元，SPX上大约是4420美元
+20 we'll just average it out or so
+
+91
+00:05:04,979 --> 00:05:11,603
+只是给它一个大致范围 我并不追求精确
+and just kind of give it a range i'm not really looking to be perfect i just want this general area so i'm aware of but at
+
+92
+00:05:12,340 --> 00:05:15,479
+只是想关注这个区间
+the same time not ignoring what i noticed on the
+
+93
+00:05:15,479 --> 00:05:17,990
+同时也不能忽视标普500
+spx for the upcoming week also there's a
+
+94
+00:05:17,990 --> 00:05:19,873
+下周的走势 另外在4500点附近
+lot of gamma around 4500 so i
+
+95
+00:05:19,873 --> 00:05:25,210
+有大量Gamma 所以我想占位
+wanted to put myself in a position where if we did sell off below 4500 we see this
+
+96
+00:05:25,840 --> 00:05:28,237
+如果跌破4500 就会看到
+strike price right here below this there was a lot
+
+97
+00:05:28,237 --> 00:05:30,634
+这个行权价 这里有很大概率
+of potential for the spx to sell off to this
+
+98
+00:05:30,634 --> 00:05:33,031
+标普500会跌至这个行权价
+strike price right here and we can see this little
+
+99
+00:05:33,031 --> 00:05:34,949
+大家可以看到这个小高点是4425
+spike which is 44 25 and then if we did
+
+100
+00:05:34,949 --> 00:05:44,779
+如果市场继续上涨，或从当前小回调中恢复，可能会在4500点附近遇阻，大家可以看到
+continue to go up or if the market continued you know to recover from this little bit of a pullback that we're having it would probably stall out around 4500 so if we look at this we can see now it is
+
+101
+00:05:45,500 --> 00:05:48,216
+可能在4500附近停滞 现在看
+three days later and the market ended up breaking where's
+
+102
+00:05:48,216 --> 00:05:50,389
+三天后市场突破了 这是4450点位
+the uh here's the 44 50 level and we can
+
+103
+00:05:50,389 --> 00:05:53,105
+昨天在这里有大量盘整
+see how yesterday there was a decent amount of consolidation
+
+104
+00:05:53,105 --> 00:05:59,354
+价格反弹后形成下降三角形
+on the off this on this level as it continued to bounce it formed a descending triangle here and then we eventually cracked
+
+105
+00:05:59,900 --> 00:06:04,280
+最终在收盘时跌破 今天回踩后
+at the end of the day market sold off today was the retracement to that level and then it continued
+
+106
+00:06:04,280 --> 00:06:06,469
+继续下跌 直达目标位
+to sell off right down to this target now i
+
+107
+00:06:06,469 --> 00:06:08,658
+我原本想用周三到期的合约
+was originally thinking to use the wednesday expiration but i
+
+108
+00:06:08,658 --> 00:06:10,847
+但为了更稳妥
+wanted to go with something a little bit safer so
+
+109
+00:06:10,847 --> 00:06:13,036
+我选择了周四到期
+that's why i chose the thursday expiration just to give
+
+110
+00:06:13,036 --> 00:06:21,357
+我多留了一天，以防时机判断有误，这种策略不可能次次准确，关键是长期保持盈利
+it an extra day just in case i was off with the timing because you're not always going to be perfect with this type of stuff and the idea is to just maintain profitability over the long term
+
+111
+00:06:21,360 --> 00:06:23,784
+因为这类策略不可能次次精准
+so while we're hitting the strike price here the implication
+
+112
+00:06:23,784 --> 00:06:26,208
+目标是长期保持盈利
+or the idea in which i would have is that
+
+113
+00:06:26,208 --> 00:06:31,056
+现在触及行权价 我的想法是
+we're going to stall around this strike price now again at 2 p.m here so in about 55 minutes or so
+
+114
+00:06:31,300 --> 00:06:35,000
+可能会有某个催化因素，所以我想清理一下我的投资组合
+there's going to be some sort of a catalyst so i would like to be cleaning up some of my portfolio
+
+115
+00:06:35,000 --> 00:06:37,494
+现在是下午2点 还有55分钟左右
+these positions here are just i just organized these into
+
+116
+00:06:37,494 --> 00:06:39,988
+会有催化剂 所以我想清理部分仓位
+a group here just so i can showcase this for
+
+117
+00:06:39,988 --> 00:06:43,979
+这些头寸我分组展示
+this video i have a few other positions open but they're not relevant for this video
+
+118
+00:06:43,980 --> 00:06:46,632
+仅为视频演示
+so as we scroll this so as we take a
+
+119
+00:06:46,632 --> 00:06:49,284
+我还有其他头寸
+look at this here if you have if this is
+
+120
+00:06:49,284 --> 00:06:51,936
+但和本视频无关
+your first time looking at a risk profile on tos
+
+121
+00:06:51,936 --> 00:07:00,158
+我在期权策略分析工具或TOS中做过几期视频，
+or on option strata i've done a couple videos in the past showcasing how to read this this is just letting us know this is our profitability zone this is what's
+
+122
+00:07:00,160 --> 00:07:03,457
+展示如何读取盈亏区间 这代表盈亏平衡点
+referred to as our break even so if price passes
+
+123
+00:07:03,457 --> 00:07:06,754
+如果价格突破这个行权价
+this strike price here this position will be in the
+
+124
+00:07:06,754 --> 00:07:13,678
+头寸就会亏损 这是到期日的盈亏
+red this is the pnl at expiration so in other words tomorrow as the market closes this would be my pnl
+
+125
+00:07:13,680 --> 00:07:16,600
+换句话说 明天收盘时的盈亏
+and regardless depending on where the strike price is so
+
+126
+00:07:16,600 --> 00:07:19,228
+无论行权价如何
+if the spx is at 4400 i'll make a thousand
+
+127
+00:07:19,228 --> 00:07:24,776
+这笔交易只投入375美元，如果我们关闭
+dollars on this trade only using 375 dollars if we come to this here and we actually turn off the
+
+128
+00:07:25,360 --> 00:07:28,334
+只投入375美元 如果关闭看涨行权价
+call strike we'll take with call butterfly this is the
+
+129
+00:07:28,334 --> 00:07:31,308
+这就是看涨蝶式价差的相同头寸
+same position here so we're taking a look at the
+
+130
+00:07:31,308 --> 00:07:36,661
+白色线是到期日盈亏 目前我已赚490美元
+white is the pnl at expiration and then you guys can see currently i'm up 490 bucks and that
+
+131
+00:07:36,960 --> 00:07:42,560
+这与实时更新一致 现在是460到495美元
+will coincide with as this is updating here this is up 460 495 it's going to be bouncing around
+
+132
+00:07:42,560 --> 00:07:45,646
+因为市场是实时的
+because again the market is live and this is all
+
+133
+00:07:45,646 --> 00:07:48,732
+这些都是实时信息
+real-time information and we can see this is where the
+
+134
+00:07:48,732 --> 00:07:53,361
+大家可以看到 蝶式价差的最大盈利是2500美元
+butterfly reaches its maximum profitability which is 2 500 the max amount of loss i can have
+
+135
+00:07:53,980 --> 00:07:56,025
+这个交易的最大亏损
+on this trade as we can see right here is
+
+136
+00:07:56,025 --> 00:07:58,479
+如白色高亮部分所示
+what's highlighted in the white so as i as i scroll around
+
+137
+00:07:58,480 --> 00:08:01,315
+滚动查看时 最大亏损是365美元
+here you see the most i can lose would be 365 and
+
+138
+00:08:01,315 --> 00:08:03,892
+最大盈利是2500美元
+the most i can make would be the 2 500 bucks so
+
+139
+00:08:03,892 --> 00:08:09,046
+希望这能帮助大家理解如何分析
+hopefully that clarifies you know how to read or analyze this the green is what's referred to as the t
+
+140
+00:08:09,820 --> 00:08:13,570
+绿色线是T+0线
+the t plus zero line and this is the current pnl so
+
+141
+00:08:13,570 --> 00:08:16,070
+当前盈亏线
+this is the strike price where the spx
+
+142
+00:08:16,070 --> 00:08:23,258
+这是标普500当前价格对应的行权价
+is and this is what's bouncing around this is the pnl right now so in other words if the spx was to rally
+
+143
+00:08:23,260 --> 00:08:25,855
+如果标普500涨到4500点
+all the way up to 4 500 this position this green will
+
+144
+00:08:25,855 --> 00:08:28,969
+这个头寸的绿色线
+now be below what's referred to as the zero line so as
+
+145
+00:08:28,969 --> 00:08:34,419
+大家可以看到这条零线，如果标普上涨
+we see this right here this is our zero line if the spx rallied here this green will be down here
+
+146
+00:08:34,940 --> 00:08:38,434
+大家可以看到 这就是零线
+which would be about negative right if we hover it's letting us
+
+147
+00:08:38,434 --> 00:08:40,763
+如果标普500涨到这里
+know right here if you pay attention to
+
+148
+00:08:40,763 --> 00:08:46,004
+绿色区域会下移，鼠标移动时显示-234美元，如果市场触及4500行权价
+the green as i move my mouse around minus 234 if the market was to reach the 4 500 strike that's
+
+149
+00:08:46,880 --> 00:08:49,832
+悬停显示约-234美元
+the same thing which we're seeing here if i were to just
+
+150
+00:08:49,832 --> 00:08:51,800
+如果市场触及4500点行权价 结果相同
+drag this down to the current expiration and
+
+151
+00:08:51,800 --> 00:08:56,474
+大家可以看到，拖动到这里大约是250美元
+let's just swipe this here you guys will see it's about 250 bucks as you guys can see the numbers
+
+152
+00:08:56,720 --> 00:08:59,446
+数字不会完全精确，因为市场在实时波动
+are not going to be exactly because again things are moving around
+
+153
+00:08:59,446 --> 00:09:01,263
+我现在正在录制，这是实时数据
+and this is real time as i'm recording
+
+154
+00:09:01,263 --> 00:09:05,579
+所以会有5到10美分左右的轻微差异
+this so there's going to be slight variations and differences by about five or ten cents or so in
+
+155
+00:09:05,580 --> 00:09:08,152
+期权价格上我也在快速讲解
+the option also i'm talking i'm talking a little bit fast just
+
+156
+00:09:08,152 --> 00:09:09,867
+因为我还在关注另一个屏幕
+because again i'm paying attention on another monitor
+
+157
+00:09:09,867 --> 00:09:12,439
+市场正在突破关键位，我需要决定
+as the market is cracking some key levels i need to make
+
+158
+00:09:12,439 --> 00:09:17,798
+是否调整其他头寸，但我会尽量专注完成这个视频
+a decision if i need to go adjust some other things but i'll try to focus as i try to steamroll through this video here
+
+159
+00:09:17,800 --> 00:09:21,538
+现在继续回到到期日设置
+let's just continue now to swipe back to the expiration something i
+
+160
+00:09:21,538 --> 00:09:24,030
+我想强调的是这个策略的创意
+want to highlight or the creativity behind this
+
+161
+00:09:24,030 --> 00:09:29,638
+混合使用不同到期日，短期我选择了看跌蝶式
+is mixing the expirations if you guys notice in the short term i went with a put butterfly
+
+162
+00:09:29,640 --> 00:09:32,966
+蝶式价差的特点是
+and because it's in the short term the way butterflies work is
+
+163
+00:09:32,966 --> 00:09:35,183
+越接近到期日
+the closer and closer they get to expiration
+
+164
+00:09:35,183 --> 00:09:39,618
+价格越接近行权价，利润就越高
+the closer you are to your strike price the more profit you're going to make because
+
+165
+00:09:39,620 --> 00:09:43,093
+大家可以看到，这个头寸已盈利450美元
+as you guys can see here this position is up 450 however
+
+166
+00:09:43,093 --> 00:09:45,619
+如果我切换到当前盈亏
+if i were to come to this and
+
+167
+00:09:45,619 --> 00:09:52,251
+这个投入2000美元的头寸仅亏损120美元
+we go to the current pnl this position with having two grand is only down 120 bucks so while this is down 120
+
+168
+00:09:53,200 --> 00:09:56,519
+而另一个盈利450美元，整体盈亏为正
+this one is up 450 and that's what's giving me the overall
+
+169
+00:09:56,519 --> 00:09:58,933
+所以如果我查看
+positive uh pnl so if i were to
+
+170
+00:09:58,933 --> 00:10:06,175
+当前总盈亏是345美元，如果价格继续下跌
+take a look at this you guys can see i'm up 345 now if price continues to sell off here you guys can see that
+
+171
+00:10:06,780 --> 00:10:09,379
+盈利会降至34美元，我需要做决定
+i'll only be up 34 so i need to make a decision
+
+172
+00:10:09,379 --> 00:10:11,269
+因为行权价已被突破
+as this strike price just ended up cracking
+
+173
+00:10:11,269 --> 00:10:16,703
+或者我可以持有到明天，但先完成视频录制
+or i can continue to hold for tomorrow but again i just want to get through this video and then i'll make my
+
+174
+00:10:16,940 --> 00:10:21,580
+录制结束后再决定是否加仓看跌期权
+decision as soon as i'm done recording if i need to uh add some puts to my portfolio or so
+
+175
+00:10:21,580 --> 00:10:24,865
+另一个关键点是
+but the uh the other key thing i wanted to take away
+
+176
+00:10:24,865 --> 00:10:27,055
+假设市场反弹
+is let's just say the market was to
+
+177
+00:10:27,055 --> 00:10:33,625
+假设价格涨到4500行权价，大家可以看到
+rally so let's just say we we rallied all the way up to that strike price of 4500 you guys can see i'll only be
+
+178
+00:10:33,900 --> 00:10:37,110
+我只会亏损33美元
+down 33 bucks so that's if we rallied all the way up
+
+179
+00:10:37,110 --> 00:10:39,152
+这表示在4500点时
+here this is telling us at 4500 what
+
+180
+00:10:39,152 --> 00:10:45,572
+我的盈亏会是多少，大家可以看到在-30美元到+23美元波动
+will my pnl be and you guys can see it's bouncing around minus 30 bucks up 23 dollars or so again markets open so
+
+181
+00:10:46,740 --> 00:10:48,764
+这些数值在同一时间段内
+these are fluctuating at the same at the
+
+182
+00:10:48,764 --> 00:10:51,294
+同样波动 如果我们看这里
+same end if we look at this here if the
+
+183
+00:10:51,294 --> 00:10:54,077
+市场如果涨到4405 大家可以看到
+market was to sell up to 4405 you guys can see i'll
+
+184
+00:10:54,077 --> 00:11:02,426
+我几乎只能勉强盈利 就在这里附近 但同时只要市场在当前区间盘整
+pretty much be just barely up that's right around here but at the same time as long as the market is hovering around this region right now the pnl looks pretty good on
+
+185
+00:11:02,680 --> 00:11:06,034
+收益看起来就很不错 此外 如果我们跳到明天的
+top of that if we were to jump to tomorrow's
+
+186
+00:11:06,034 --> 00:11:09,388
+到期日 因为看跌蝶式到期日就是明天
+expiration now because that's when the put butterfly actually expires
+
+187
+00:11:09,388 --> 00:11:12,742
+大家会发现收益会开始上升
+you guys will notice that the pnl will start increasing
+
+188
+00:11:12,742 --> 00:11:19,786
+离到期日越近收益越高 明天如果标普500在4430附近
+the closer and closer against the expiration so tomorrow if the spx is around 44 30 let's just say midday this green line
+
+189
+00:11:20,460 --> 00:11:23,136
+假设是午间时段 这条绿线
+might rise so it's actually this green line right here
+
+190
+00:11:23,136 --> 00:11:25,812
+可能会上涨到大约这个位置
+might push up to about maybe here and that's going
+
+191
+00:11:25,812 --> 00:11:30,898
+这意味着我可能盈利约1000美元
+to mean i'll be up about a thousand dollars and then let's just say another hour or two passes
+
+192
+00:11:30,900 --> 00:11:33,705
+再过一两小时 这条绿线可能上涨到
+by the green line might rise up to here and
+
+193
+00:11:33,705 --> 00:11:36,510
+这里 我就能盈利1500美元
+i'll be up fifteen hundred dollars because this again is
+
+194
+00:11:36,510 --> 00:11:42,120
+因为这是到期日的收益 所以我要考虑是否持有到明天
+our pnl at expiration so it's something for me to consider if i want to continue to hold into tomorrow
+
+195
+00:11:42,120 --> 00:11:44,888
+上周我构建这个头寸并开仓时
+last week when i structured this position and i open
+
+196
+00:11:44,888 --> 00:11:47,656
+我并不确定市场会怎么走
+it i did not know for sure which way the
+
+197
+00:11:47,656 --> 00:11:50,424
+我也不在乎
+market was going to go neither did i really care
+
+198
+00:11:50,424 --> 00:11:58,177
+我只关注这两个重要的行权价
+i was just paying attention to the fact that these are two really important strike prices as i'm analyzing gamma exposure and if you're using any other type
+
+199
+00:11:58,180 --> 00:12:00,636
+在分析Gamma敞口时 如果你使用其他工具
+of tool or if you're just looking at maybe this
+
+200
+00:12:00,636 --> 00:12:03,092
+或者只是看之前的阻力位
+is previous resistance and then maybe on your chart you
+
+201
+00:12:03,092 --> 00:12:05,302
+可能在图表上看到之前的支撑位
+have previous support maybe down at the 4400 or so
+
+202
+00:12:05,302 --> 00:12:11,933
+比如在4400附近 你可以用任何方法
+you can use whatever type of approach you're looking for when trying to you know pick out your key strikes or your key levels maybe it's strike
+
+203
+00:12:12,180 --> 00:12:14,791
+来选择关键行权价或关键价位
+prices that have a lot of open interest on the
+
+204
+00:12:14,791 --> 00:12:17,402
+可能是期权链中成交量大的行权价
+options chain or maybe it's your own discretionary approach i'm
+
+205
+00:12:17,402 --> 00:12:21,058
+或者你自己的主观判断 我只是想展示
+just trying to showcase that you can actually open two different types of butterflies
+
+206
+00:12:21,060 --> 00:12:23,937
+你可以同时开两个不同到期日的蝶式价差
+with different expirations and still end up being profitable because
+
+207
+00:12:23,937 --> 00:12:26,814
+仍然能盈利 因为在这个例子中
+in this case let's just say the markets did go
+
+208
+00:12:26,814 --> 00:12:29,691
+假设市场真的上涨
+up and if we were to come back to this
+
+209
+00:12:29,691 --> 00:12:38,037
+我们回到这里 并跳到明天 还是17号
+here and let's jump to tomorrow so we're still on the 17th again i'm recording this video on the 16th but we just adjusted this to pay attention to
+
+210
+00:12:38,040 --> 00:12:41,545
+我录这个视频是16号 但我们调整到关注明天
+tomorrow and let's just say the markets did go to
+
+211
+00:12:41,545 --> 00:12:44,699
+到4500点，看跌期权到期无价值
+4500 and the put actually expired worthless so now the
+
+212
+00:12:44,699 --> 00:12:48,204
+看跌期权行权价到期无价值
+put strike would expire worthless but the call butterfly will
+
+213
+00:12:48,204 --> 00:12:58,018
+实际上能涨256美元，足够覆盖或基本持平我之前的亏损
+actually be up 256 so that's how it'll it'll more than it'll cover or it'll be just about a break even for how much i would have lost on
+
+214
+00:12:58,720 --> 00:13:01,760
+足以覆盖看跌价差的损失
+the put spread now if i continue to hold the
+
+215
+00:13:01,760 --> 00:13:04,800
+如果继续持有整个交易
+entire trade so let's just say friday and the market
+
+216
+00:13:04,800 --> 00:13:11,490
+标普500在1500点附近时，大家可以看到我的盈亏开始上升，现在盈利400美元
+is still around 1500 you guys can see my pnl starts increasing now i'm up 400 if the spx is hovering around here now
+
+217
+00:13:12,100 --> 00:13:14,751
+大家可以看到我的盈亏开始上升
+because this is originally where i was thinking we might
+
+218
+00:13:14,751 --> 00:13:17,402
+现在盈利400美元
+end up going if we continue to hold a position
+
+219
+00:13:17,402 --> 00:13:21,379
+如果继续持仓到下周
+like this into next week you guys will notice again the pnl starts increasing exponentially
+
+220
+00:13:21,380 --> 00:13:23,941
+盈亏会指数级增长
+because now this call butterfly is getting closer and closer
+
+221
+00:13:23,941 --> 00:13:26,502
+因为看涨蝶式价差
+to its expiration which is the 24th so we're now
+
+222
+00:13:26,502 --> 00:13:32,138
+看21日的情况，如果跳到22日，大家可以看到类似的走势
+looking at the 21st if i were to jump now to the 22nd you guys can see and so forth so now
+
+223
+00:13:32,140 --> 00:13:33,427
+到期日是8月24日
+this is up 1400 let's go
+
+224
+00:13:33,427 --> 00:13:34,972
+现在看8月21日
+to the day before expiration this
+
+225
+00:13:34,972 --> 00:13:37,032
+盈利达1400美元
+is the 23rd so now this is up
+
+226
+00:13:37,032 --> 00:13:42,440
+如果标普500维持在这个区间，即使回调到另一个关键行权价，也能盈利2000美元
+two thousand dollars if the spx is around here even if it ends up pulling back to another significant strike price
+
+227
+00:13:42,700 --> 00:13:49,780
+在4470点附近，大家可以看到下周三盈利能达1500美元
+of 44 70 you guys can still see this would be up 1500 by next week uh thursday i mean uh wednesday
+
+228
+00:13:49,780 --> 00:13:56,040
+先看这里，然后直接跳到周五，再回到今天的情况
+here but let's just jump to friday and let's actually go to the uh present today and then let's
+
+229
+00:13:56,040 --> 00:13:57,542
+到下周四盈利仍能达到1500美元
+turn back on the put side
+
+230
+00:13:57,542 --> 00:13:59,044
+现在跳到周五
+so i just have these open
+
+231
+00:13:59,044 --> 00:14:00,546
+回到看跌期权这边
+here this is the strike prices
+
+232
+00:14:00,546 --> 00:14:06,306
+我大致成交的价位，这是各行权价的当前价值，最初开仓时花了约375美元
+in which i loosely got filled and these are the current worth of the strike so initially when i open it for around 375
+
+233
+00:14:06,560 --> 00:14:12,420
+现在这个组合值830美元，所以仓位盈利约400美元
+it's currently going for 830 so that's how i'm up 400 and change on the position and at the same time
+
+234
+00:14:12,420 --> 00:14:14,364
+这是各行权价的当前价值
+this one was originally open for about ten
+
+235
+00:14:14,364 --> 00:14:16,308
+最初开仓时支付约375美元
+dollars and now we can see that it's
+
+236
+00:14:16,308 --> 00:14:17,280
+现在价值830美元
+currently going for nine
+
+237
+00:14:17,280 --> 00:14:22,140
+美元，我持有两份这种和一份那种，只是调整比例的问题
+dollars and again i have two of these and one of these and it's just about mixing the ratios and
+
+238
+00:14:22,140 --> 00:14:27,800
+这个头寸最初开仓成本约10美元
+finding a good balance between my pnl curve and then thinking about where the experience comes into
+
+239
+00:14:27,800 --> 00:14:30,162
+现在价值9美元
+play here because you end up realizing that
+
+240
+00:14:30,162 --> 00:14:32,524
+我持有两个这类头寸
+you can mix these expirations you can mix
+
+241
+00:14:32,524 --> 00:14:37,839
+可以混合不同类型的价差策略
+different types of spreads you're also mixing how much capital is going into each one it's really about
+
+242
+00:14:37,840 --> 00:14:39,457
+还要考虑每个策略的资金分配
+your t plus zero line and
+
+243
+00:14:39,457 --> 00:14:41,074
+核心是你的T+0盈亏线
+what's it like going to be
+
+244
+00:14:41,074 --> 00:14:42,691
+以及它在交易期间的变化
+and how is this going to
+
+245
+00:14:42,691 --> 00:14:48,620
+换句话说，开仓时我能分析到
+be moving during the duration of the trade in other words when i initially opened the trade i was able to analyze
+
+246
+00:14:48,620 --> 00:14:50,665
+如果市场回调，
+if the market pulled back i wouldn't really
+
+247
+00:14:50,665 --> 00:14:52,198
+这个策略的亏损也不会太大
+be down that much on this
+
+248
+00:14:52,198 --> 00:14:54,498
+而如果上涨，
+and i knew i would be up a whole
+
+249
+00:14:54,500 --> 00:14:58,900
+这个交易还有很多细节，这种策略不仅适用于蝶式价差
+lot more on this trade and this is something that you can do with spreads not just butterfly spreads but
+
+250
+00:14:58,900 --> 00:15:00,530
+这适用于所有价差策略
+any spread in general so if
+
+251
+00:15:00,530 --> 00:15:02,160
+不仅仅是蝶式价差
+i were to open up let's
+
+252
+00:15:02,160 --> 00:15:03,790
+比如我开一个看涨蝶式
+just say a long call butterfly
+
+253
+00:15:03,790 --> 00:15:10,857
+因为我认为月底前市场会反弹
+because i think the market is going to bounce you know towards the end by the end of the month and let's go to the spx
+
+254
+00:15:10,860 --> 00:15:13,759
+假设标普会重返4550点
+and say i think we're going back up
+
+255
+00:15:13,759 --> 00:15:15,208
+我想构建一个均衡的蝶式组合
+to 45 50 hypothetically and i
+
+256
+00:15:15,208 --> 00:15:17,382
+到期日盈亏图大概如此
+wanted to open up some sort
+
+257
+00:15:17,382 --> 00:15:25,354
+但如果想看交易期间的盈亏变化
+of a balanced butterfly here and this is what it looks like the pnl at expiration however if i want to see
+
+258
+00:15:26,080 --> 00:15:28,242
+可以这样操作
+what's it like during the duration of the
+
+259
+00:15:28,242 --> 00:15:30,404
+假设今天市场直接上涨
+trade i will do this and say okay
+
+260
+00:15:30,404 --> 00:15:36,079
+for today if the market went straight up this position will make 600 700 however if the market was to continue selling off
+
+261
+00:15:36,620 --> 00:15:38,090
+但若市场继续下跌
+i'm going to lose about 300 to 400
+
+262
+00:15:38,090 --> 00:15:42,010
+我会亏损300到400美元
+if i wanted to use this as my stop loss on the other end let's just
+
+263
+00:15:42,500 --> 00:15:44,794
+如果把这个亏损额设为止损
+say i decided this is definitely going to
+
+264
+00:15:44,794 --> 00:15:47,088
+假设我决定这是一个波段交易
+be a swing trade how will the pnl
+
+265
+00:15:47,088 --> 00:15:48,235
+那盈亏会如何变化呢
+be we'll say by
+
+266
+00:15:48,235 --> 00:15:55,118
+next week monday let's come right here so next week monday which would be five six days from now we can see if the
+
+267
+00:15:55,120 --> 00:15:56,998
+5-6天后
+market just continue to hover around here i'll
+
+268
+00:15:56,998 --> 00:15:58,642
+如果市场在这附近震荡
+only be down 180 bucks but if the
+
+269
+00:15:58,642 --> 00:15:59,581
+我只会亏180美元
+market was to rally
+
+270
+00:15:59,581 --> 00:16:04,043
+但如果市场反弹并在这里震荡
+and then hover around here this trade will be up about a thousand dollars so it becomes in my
+
+271
+00:16:04,280 --> 00:16:08,160
+我更倾向于继续持有这个头寸
+incentive to want to stay in the trade a little bit longer because let's just say things are working
+
+272
+00:16:08,160 --> 00:16:14,380
+因为有很多方式可以调整
+out there's all sorts of different ways in which you can adjust and get comfortable experimenting with
+
+273
+00:16:14,380 --> 00:16:18,580
+你可以模拟交易 我交易蝶式价差已有一段时间
+these types of trades you can paper trade them i've been trading butterflies for a while now so i'm
+
+274
+00:16:18,580 --> 00:16:21,758
+对不同到期日和价差组合很熟悉
+pretty comfortable mixing you know different types of expirations and spreads and
+
+275
+00:16:21,758 --> 00:16:24,936
+可以做成断翼蝶式 或非对称蝶式
+then you can make them broken wing you can make them unbalanced
+
+276
+00:16:24,936 --> 00:16:28,114
+蝶式价差组合有很多变化方式
+you can do a lot of different types of things with butterfly
+
+277
+00:16:28,114 --> 00:16:37,119
+今天我想分享的是价差策略，后续视频会展示更有创意的交易思路
+spreads but the highlight for this video and i'll showcase in other videos how to have a little bit more of a creative approach to your trading is mostly the mixture of the different
+
+278
+00:16:37,120 --> 00:16:40,275
+不同到期日的比例组合 比如两个这个
+expirations using different ratios so two of these one of
+
+279
+00:16:40,275 --> 00:16:43,430
+一个那个 短期到期的
+these the shorter dte one inherently has a little bit
+
+280
+00:16:43,430 --> 00:16:49,740
+风险本就更高 所以我会减少资金投入
+more risk involved so i'm going to use less capital in this because let's just say yes if i ran
+
+281
+00:16:49,740 --> 00:16:53,027
+假设我在这个头寸投入2000美元
+with the same amount of capital so two grand in this trade
+
+282
+00:16:53,027 --> 00:16:56,314
+那么我需要6个这样的组合
+i would have needed six of these and yes i'll be up
+
+283
+00:16:56,314 --> 00:17:00,971
+收益会更高 但如果市场涨到4500点
+a lot more but if the market was to rally to 4500 i'll be down 1500 in this position
+
+284
+00:17:01,520 --> 00:17:06,265
+这个头寸会亏损1500美元
+and if the market rallied again with just this two grand here
+
+285
+00:17:06,265 --> 00:17:10,219
+而如果市场涨到4500点
+to this level here 4500 i'll only be up 286 bucks so
+
+286
+00:17:10,219 --> 00:17:15,360
+这个2000美元的头寸只能赚286美元
+that's means overall i'll be down 1200 overall 12 1300 and that's what's important so it's
+
+287
+00:17:17,339 --> 00:17:20,804
+整体亏损约1200-1300美元
+about finding a good balance so in this case here opening a
+
+288
+00:17:20,804 --> 00:17:24,269
+所以关键是要找到平衡
+trade like this if i'm in say for example you're in two
+
+289
+00:17:24,269 --> 00:17:36,398
+比如需要2:1的比例，若持有3手，就要调整到2:2以保持平衡
+of these or three of these that means you need to be in two two of these for every one of these so if i'm in three of these we have to increase this to have a nice balanced ratio and now
+
+290
+00:17:36,400 --> 00:17:39,322
+那么每持有1个这个 就需要2个那个
+now if the market rallied to 4500 i'll be up 850 bucks
+
+291
+00:17:39,322 --> 00:17:41,660
+如果持有3个这样的
+on this and if the market rallied to
+
+292
+00:17:41,660 --> 00:17:48,382
+就需要相应增加那个的数量 保持比例平衡
+4500 i'll be down about the same so it will be break even which would allow me now to remain into in this trade
+
+293
+00:17:49,260 --> 00:17:52,649
+现在如果市场涨到4500点
+and potentially hold it a little bit longer past expiration because the
+
+294
+00:17:52,649 --> 00:17:55,756
+这个头寸能赚850美元
+implication would be the spx would be hovering around 4500 and if
+
+295
+00:17:55,756 --> 00:17:59,145
+而那个头寸亏损大致相当
+new data presented itself and i thought that the market would go
+
+296
+00:17:59,145 --> 00:18:09,596
+行情再涨可再开蝶式价差，若预期回调则换另一种蝶式，灵活组合
+a little bit higher then i can always open up another butterfly spread or if i thought then the market would pull back maybe then i'd open up another type of butterfly spread the mixing and matching
+
+297
+00:18:09,880 --> 00:18:13,215
+甚至可以持有到到期日之后
+again takes a little bit of experience and it just
+
+298
+00:18:13,215 --> 00:18:16,550
+因为这意味着标普500可能在4500点附近盘整
+comes down to getting comfortable with analyzing your risk profile
+
+299
+00:18:16,550 --> 00:18:20,219
+如果有新数据显示市场可能继续上涨
+understanding the key strike prices and then combining the information together
+
+300
+00:18:20,220 --> 00:18:23,247
+我可以再开一个蝶式价差头寸
+and then more importantly having a plan not only for a plan
+
+301
+00:18:23,247 --> 00:18:25,265
+不仅是风险管理计划
+for risk management but also a plan for
+
+302
+00:18:25,265 --> 00:18:30,058
+还要规划行权价突破时的应对措施
+what you're going to do when certain strike prices break or when your break even strike prices break so
+
+303
+00:18:30,060 --> 00:18:33,444
+盈亏平衡行权价指的是
+in other words by break even strike price i'm talking about if
+
+304
+00:18:33,444 --> 00:18:36,828
+如果在这里平仓
+we close these all right here what will i do if the
+
+305
+00:18:36,828 --> 00:18:46,136
+XPX跌破这个行权价，比如4400，到期日就无法盈利了
+xpx got below this strike price because this is letting me know once we crack this level so we'll just call it 4400 i'm no longer in the profitability zone at expiration for this
+
+306
+00:18:46,420 --> 00:18:49,381
+所以蝶式价差可能需要调整
+butterfly so i might want to do something or i might want
+
+307
+00:18:49,381 --> 00:18:51,355
+或者再加一个蝶式
+to add another butterfly here or maybe just
+
+308
+00:18:51,355 --> 00:18:56,538
+或者买入看跌期权，必须采取行动
+get some puts or i just need to do something so that takes a little bit of experience hopefully this video
+
+309
+00:18:56,540 --> 00:18:59,473
+这需要一些经验，希望这个视频
+wasn't too confusing i know it's it's kind of arbitrary or strange
+
+310
+00:18:59,473 --> 00:19:02,406
+没让你们太困惑
+to see a video and just mixing and matching different types of
+
+311
+00:19:02,406 --> 00:19:05,339
+我知道这种混合搭配不同价差的策略
+spreads like this together i haven't done any type of research on
+
+312
+00:19:05,340 --> 00:19:07,598
+在YouTube或其他平台上很少见
+youtube or you know regarding these types of positioning and
+
+313
+00:19:07,598 --> 00:19:09,856
+这种操作方式你在书里也找不到
+these types of plays it's not something that you read
+
+314
+00:19:09,856 --> 00:19:12,114
+至少我没见过
+or at least to my knowledge you read in a
+
+315
+00:19:12,114 --> 00:19:18,438
+大家可以边操作边学习，我只是想展示这个策略
+book again you pick it up along the way so i'm just trying to showcase this and you guys can get a little bit more experimental with how
+
+316
+00:19:18,440 --> 00:19:21,222
+我只是想展示一下
+you're positioning your your trades and you don't have to
+
+317
+00:19:21,222 --> 00:19:24,004
+不必把交易看得那么非黑即白
+think of things as so binary the objective is to
+
+318
+00:19:24,004 --> 00:19:26,786
+目标是创造一个既能盈利
+create a scenario not only to make money and be
+
+319
+00:19:26,786 --> 00:19:34,577
+又能将风险降到最低的场景
+profitable but also create a scenario in which i'm taking on the least amount of risk as possible within means or within what i can control and we
+
+320
+00:19:34,580 --> 00:19:37,460
+我们无法控制市场走势
+can't control what the market is going to do but i have
+
+321
+00:19:37,460 --> 00:19:40,100
+但如果市场涨到4500
+some sort of faith that if the market did get to 4500
+
+322
+00:19:40,100 --> 00:19:42,980
+我相信它会在此区间盘整一段时间
+it's going to stroll around here for a bit or at least
+
+323
+00:19:42,980 --> 00:19:55,460
+give me half a day or a few hours to decide what i want to do next the same way as the market comes down to this level i have some sort of faith that between here 42 and 44 within this region here there's going to be a time for me to react
+
+324
+00:19:56,180 --> 00:19:59,780
+同样，市场跌到某个位置时
+and do something and then i'll decide based on my risk profile
+
+325
+00:19:59,780 --> 00:20:03,380
+我也会有时间反应并采取行动
+and some of the other positions i have open also i forgot
+
+326
+00:20:03,380 --> 00:20:05,780
+然后根据我的风险偏好
+to mention if the price bounces from here
+
+327
+00:20:05,780 --> 00:20:13,280
+比如在44.50附近盘整时，这就是该价格下的盈亏情况
+and it's just hovering around say for example 44 50 this is the pnl at that price also so the reason a person might want to open
+
+328
+00:20:13,880 --> 00:20:17,447
+如果价格从这里反弹
+butterflies like this as opposed to just buying calls or buying puts
+
+329
+00:20:17,447 --> 00:20:24,879
+只要价格保持在一定区间内，时间流逝就会带来收益
+is because it is long theta so it's generating profit as time is passing by as long as price is staying within a certain range
+
+330
+00:20:24,880 --> 00:20:28,355
+这就是此时的盈亏情况
+so that's one of the added advantages of running butterfly spreads i
+
+331
+00:20:28,355 --> 00:20:31,830
+我也可以选择做铁鹰策略
+could have also chosen to run some sort of iron condor but
+
+332
+00:20:31,830 --> 00:20:41,098
+但铁鹰的问题是，价格接近行权价时
+the problem with the iron condor is that as price is getting closer to the strike prices it won't be generating profits like a butterfly would the closer and closer it gets
+
+333
+00:20:41,100 --> 00:20:44,656
+不会像蝶式价差那样
+to expiration so the closer and closer again we get to tomorrow
+
+334
+00:20:44,656 --> 00:20:48,212
+越接近到期日收益越高
+this put butterfly is going to generate a lot of profit if
+
+335
+00:20:48,212 --> 00:20:51,472
+如果我决定用300美元
+i decide to hold a couple thousand dollars for only using 300
+
+336
+00:20:51,472 --> 00:20:58,881
+持仓几千美元，且价格在这附近波动
+and then if price hovers around here and then it decides to bounce the day after as you guys notice if we do go to
+
+337
+00:20:59,180 --> 00:21:02,379
+次日反弹至4500，看涨蝶式就会大幅盈利
+4500 then the call butterfly will be generating a lot of profits
+
+338
+00:21:02,379 --> 00:21:05,868
+这是一个我能用有限资金
+so it's a situation in in which i can generate a lot
+
+339
+00:21:05,868 --> 00:21:09,357
+或有限保证金从两边获利的局面
+of profits from both sides using limited capital or limited margin at
+
+340
+00:21:09,357 --> 00:21:16,627
+同时，如果价格在中间区域停滞几日
+risk and then at the same time if price was just to stall around in the middle for at least a couple days i will
+
+341
+00:21:16,920 --> 00:21:20,320
+我也能获利
+also generate profit the only way a combination of positions like this
+
+342
+00:21:20,320 --> 00:21:23,720
+这种组合策略唯一亏损的情况
+would actually be losing would be if we were to break past
+
+343
+00:21:23,720 --> 00:21:27,120
+是突破图表上的盈亏平衡点
+these break even points right here and that's what these red dashes
+
+344
+00:21:27,120 --> 00:21:38,171
+图表显示给我们，绿线低于零线时我就要警惕了，也就是4500和4400区间，这两个区域之间
+are showing to us on the chart so whenever the green dips below the zero line that's where i have to worry about so the 4500 and then the 4400 area so those are the two ranges anything in between is
+
+345
+00:21:38,740 --> 00:21:39,997
+区间内价格在到期日前都会盈利
+profit up until expiration thanks for
+
+346
+00:21:39,997 --> 00:21:41,254
+感谢观看
+watching guys let me know what
+
+347
+00:21:41,254 --> 00:21:44,398
+大家在评论区留言分享看法，下期见
+you thought in the comments down below and i'll catch you on the next one
+
+===== END AFTER_TRANSLATE =====

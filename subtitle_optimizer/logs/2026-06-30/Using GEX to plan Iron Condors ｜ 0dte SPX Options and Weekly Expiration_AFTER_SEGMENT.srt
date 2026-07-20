@@ -1,0 +1,1354 @@
+===== AFTER_SEGMENT (338 entries) =====
+1
+00:00:00,000 --> 00:00:00,800
+Hey guys, Brian here.
+
+2
+00:00:00,800 --> 00:00:07,000
+Today is Tuesday, January 2nd, 2024, and it's the first year of a new trading calendar.
+
+3
+00:00:07,300 --> 00:00:10,140
+Jumping right into it, on the left-hand side of my chart, this
+
+4
+00:00:10,140 --> 00:00:14,400
+is the SPY 15-minute time frame, and on the right-hand side, we have the SPX 15-minute time frame.
+
+5
+00:00:14,400 --> 00:00:16,245
+For those of you that are new
+
+6
+00:00:16,245 --> 00:00:17,563
+here, I do most of
+
+7
+00:00:17,563 --> 00:00:20,199
+my analysis on the SPY, but I trade SPX options.
+
+8
+00:00:20,500 --> 00:00:24,300
+The levels that you see plotted on my chart are taken from the gamma exposure profile.
+
+9
+00:00:24,300 --> 00:00:27,380
+If I were to clear this chart, you guys will see there
+
+10
+00:00:27,380 --> 00:00:28,920
+are no studies on this chart
+
+11
+00:00:28,920 --> 00:00:32,000
+except for the standard VWAP that ships right with any trading platform.
+
+12
+00:00:32,500 --> 00:00:35,431
+If you've been following any of the videos I released in December of 2023,
+
+13
+00:00:35,431 --> 00:00:37,685
+so last month, you guys would have known I've been
+
+14
+00:00:37,685 --> 00:00:39,488
+sharing these videos at the start of the
+
+15
+00:00:39,488 --> 00:00:43,772
+week and then at the end of the week showing how price action traded around the gamma exposure levels.
+
+16
+00:00:44,200 --> 00:00:46,800
+In this case here, you guys can see the levels in this video.
+
+17
+00:00:46,900 --> 00:00:49,600
+I'm not going to do a dedicated video on them this week.
+
+18
+00:00:50,000 --> 00:00:52,600
+And these are the videos that I'm referring to.
+
+19
+00:00:52,800 --> 00:00:56,700
+If you are completely new to this, I would highly recommend you check out this video right here.
+
+20
+00:00:56,700 --> 00:01:01,000
+I will leave the link in the description how I prep for the week using gamma exposure levels.
+
+21
+00:01:01,200 --> 00:01:05,100
+These gamma exposure levels pay in dividends almost every day of the week.
+
+22
+00:01:05,300 --> 00:01:10,500
+I love doing this at the start of the week and then I don't need to do much additional analysis.
+
+23
+00:01:10,500 --> 00:01:13,656
+I can then base most of my trading decisions around 15 to
+
+24
+00:01:13,656 --> 00:01:16,525
+20 minutes worth of work at the start of the week.
+
+25
+00:01:17,300 --> 00:01:19,740
+And then I use additional confluences like some of the quant trading
+
+26
+00:01:19,740 --> 00:01:20,960
+app scripts and some of the
+
+27
+00:01:20,960 --> 00:01:23,400
+other stuff in which you guys might have seen on my videos.
+
+28
+00:01:23,900 --> 00:01:26,611
+On the SPX on this right hand side, these levels are taken
+
+29
+00:01:26,611 --> 00:01:29,999
+straight from the quant trading app script. So I didn't draw anything in here manually.
+
+30
+00:01:30,600 --> 00:01:33,400
+Only on the SPY side, I've plotted these levels manually.
+
+31
+00:01:33,700 --> 00:01:37,000
+On a day like this, I would start the day expecting to run an iron condor.
+
+32
+00:01:37,100 --> 00:01:40,400
+The purpose of this video is I just want to demonstrate the reasoning behind why.
+
+33
+00:01:40,700 --> 00:01:42,511
+I trade iron condors, but I'm not one
+
+34
+00:01:42,511 --> 00:01:44,322
+of those guys that like to trade iron
+
+35
+00:01:44,322 --> 00:01:48,398
+condors every single day and then roll or adjust and try to have a 90-something percent win rate.
+
+36
+00:01:48,700 --> 00:01:51,100
+I will close an iron condor if it is giving me a problem.
+
+37
+00:01:51,300 --> 00:01:53,081
+I would rather just try to spot
+
+38
+00:01:53,081 --> 00:01:54,862
+days in which I have high conviction
+
+39
+00:01:54,862 --> 00:01:56,898
+that price action is going to be choppy.
+
+40
+00:01:57,100 --> 00:02:00,400
+Today is one of those days in which I expected price to be choppy.
+
+41
+00:02:00,700 --> 00:02:02,790
+If we take a look at the Quant Trading App
+
+42
+00:02:02,790 --> 00:02:05,299
+Discord here. This is in a sense how I started the day.
+
+43
+00:02:05,400 --> 00:02:06,900
+This is the iron condor.
+
+44
+00:02:07,000 --> 00:02:10,196
+I opened this here at 948 Eastern Time and I went with
+
+45
+00:02:10,196 --> 00:02:11,939
+a 3DTE iron condor and then
+
+46
+00:02:11,939 --> 00:02:16,007
+I'm going to show you guys a 0DTE iron condor also in a second.
+
+47
+00:02:16,700 --> 00:02:21,100
+But the logic or the thought process being is that price will be choppy.
+
+48
+00:02:21,200 --> 00:02:22,700
+Why do I think price will be choppy?
+
+49
+00:02:22,800 --> 00:02:27,200
+It starts off for me as a person that is generally looking to sell volatility.
+
+50
+00:02:27,600 --> 00:02:29,600
+If we take a look at the VIX,
+
+51
+00:02:29,600 --> 00:02:31,100
+which we use as a proxy
+
+52
+00:02:31,100 --> 00:02:33,600
+for implied volatility, it spiked and it jumped this morning.
+
+53
+00:02:33,700 --> 00:02:35,900
+This is something that we have not seen in a while.
+
+54
+00:02:36,000 --> 00:02:38,200
+I'm actually going to turn on
+
+55
+00:02:38,200 --> 00:02:40,400
+the QTA weekly study just so
+
+56
+00:02:40,400 --> 00:02:43,700
+you guys can see something for a second here.
+
+57
+00:02:44,000 --> 00:02:50,200
+So we popped up and I'm going to turn on also the pre-market information and you guys can see here.
+
+58
+00:02:50,200 --> 00:02:52,180
+So we popped up to what Quant Trading
+
+59
+00:02:52,180 --> 00:02:53,913
+App is saying should be a good
+
+60
+00:02:53,913 --> 00:02:55,398
+level of resistance for the VIX.
+
+61
+00:02:55,400 --> 00:02:56,400
+So that caught my attention.
+
+62
+00:02:56,500 --> 00:03:00,000
+But even if you're not using something like this, just know that it ended up.
+
+63
+00:03:00,100 --> 00:03:01,600
+spiking and that's not something
+
+64
+00:03:01,600 --> 00:03:03,700
+that we've seen in a while for
+
+65
+00:03:03,700 --> 00:03:05,800
+the VIX so it immediately caught my
+
+66
+00:03:05,800 --> 00:03:11,200
+attention and I smiled for a person that likes to sell put credit spreads or likes to run
+
+67
+00:03:11,800 --> 00:03:13,240
+zero DTE iron condors or
+
+68
+00:03:13,240 --> 00:03:15,256
+zero DTE iron butterflies this always gets
+
+69
+00:03:15,256 --> 00:03:16,984
+me a little bit excited because
+
+70
+00:03:16,984 --> 00:03:19,000
+the next thought process is going to
+
+71
+00:03:19,400 --> 00:03:21,494
+cross my mind before the market opens is
+
+72
+00:03:21,494 --> 00:03:23,588
+where's the SPY gapping down into because if
+
+73
+00:03:23,588 --> 00:03:25,158
+the VIX is gapped up then
+
+74
+00:03:25,158 --> 00:03:28,299
+it probably means that the SPY or the SPX is gapped down.
+
+75
+00:03:28,700 --> 00:03:30,100
+This is the magic right here for me.
+
+76
+00:03:30,200 --> 00:03:31,972
+It's the fact that we gap
+
+77
+00:03:31,972 --> 00:03:36,699
+down into the gamma flip strike. Which was also the highest negative gamma strike from pre-markets.
+
+78
+00:03:37,100 --> 00:03:42,200
+These acronyms or abbreviations that you see here are manually put in. AG just stands for absolute gamma strikes.
+
+79
+00:03:42,200 --> 00:03:44,100
+So these are the high absolute gamma strikes.
+
+80
+00:03:44,300 --> 00:03:45,950
+N just stands for negative one,
+
+81
+00:03:45,950 --> 00:03:48,150
+negative two. So these are the strike prices
+
+82
+00:03:48,150 --> 00:03:52,000
+that had the highest negative gamma, the second highest negative gamma, and so forth.
+
+83
+00:03:52,100 --> 00:03:55,500
+This is where the negative GEX, in a sense, falls off for this week.
+
+84
+00:03:55,500 --> 00:03:56,362
+So I plot
+
+85
+00:03:56,362 --> 00:03:58,374
+these again. This has been demonstrated in
+
+86
+00:03:58,374 --> 00:04:02,399
+multiple videos. I highly recommend you guys check those out for a firmer understanding.
+
+87
+00:04:02,800 --> 00:04:06,400
+This is a screenshot here from Quant Trading App four minutes before the market opened.
+
+88
+00:04:06,700 --> 00:04:09,300
+This is an aggregate of every expiration for this week.
+
+89
+00:04:09,300 --> 00:04:12,100
+So I'm just plotting the levels that I see right on this graph here.
+
+90
+00:04:12,100 --> 00:04:14,600
+So this is letting me know this is the gamma flip strike.
+
+91
+00:04:14,900 --> 00:04:17,800
+This is letting me know right here. This is the second highest absolute gamma strike.
+
+92
+00:04:17,800 --> 00:04:20,500
+This is where there's a ton of negative gamma and all and so forth.
+
+93
+00:04:20,500 --> 00:04:22,794
+So all these little bubbles that you see on the
+
+94
+00:04:22,794 --> 00:04:23,941
+chart right here, I just
+
+95
+00:04:23,941 --> 00:04:28,299
+plot those on my chart to be able to. Not have to glance back at the data so much.
+
+96
+00:04:28,600 --> 00:04:31,500
+And that's where I got this foreshadowing. 72 strike right here.
+
+97
+00:04:31,600 --> 00:04:32,800
+So just to make that clear.
+
+98
+00:04:33,300 --> 00:04:34,821
+And two, it is the second highest
+
+99
+00:04:34,821 --> 00:04:35,907
+negative gamma strike. This is
+
+100
+00:04:35,907 --> 00:04:38,298
+the highest negative gamma strike. This is the second highest one.
+
+101
+00:04:38,300 --> 00:04:42,200
+And then this little gray bubble right here is letting me know it is the gamma flip strike.
+
+102
+00:04:42,400 --> 00:04:44,533
+If you've never heard of any of this, or it
+
+103
+00:04:44,533 --> 00:04:46,239
+sounds like some sort of weird alien language,
+
+104
+00:04:46,239 --> 00:04:48,799
+just know the expectation around here is for price to be choppy.
+
+105
+00:04:49,100 --> 00:04:52,138
+This strike is where the overall net GEX for the
+
+106
+00:04:52,138 --> 00:04:53,961
+SPX is expected to turn negative
+
+107
+00:04:53,961 --> 00:04:56,999
+if price is below it or about the general area.
+
+108
+00:04:57,000 --> 00:04:59,285
+So around this area here, if the SPX
+
+109
+00:04:59,285 --> 00:05:00,999
+is below it, then the overall
+
+110
+00:05:00,999 --> 00:05:02,999
+gamma exposure is going to turn negative.
+
+111
+00:05:03,100 --> 00:05:05,700
+Above it, then the overall gamma exposure is positive.
+
+112
+00:05:06,000 --> 00:05:06,900
+It is natural.
+
+113
+00:05:07,200 --> 00:05:13,100
+Or it is normal for the SPY to be in a positive GEX environment versus in a negative gamma environment.
+
+114
+00:05:13,400 --> 00:05:17,500
+So inherently, what that causes is choppy price action around this strike price.
+
+115
+00:05:17,700 --> 00:05:21,143
+Now, if we gap down into that strike price and imply volatility
+
+116
+00:05:21,143 --> 00:05:23,438
+is pretty high, a lot of experienced volatility
+
+117
+00:05:23,438 --> 00:05:25,733
+sellers will use that as a reason to
+
+118
+00:05:25,733 --> 00:05:27,454
+sell out the money puts because
+
+119
+00:05:27,454 --> 00:05:30,897
+retail traders will see a gap down and they will, you know,
+
+120
+00:05:31,500 --> 00:05:34,084
+get super excited everyone thinks the market's going
+
+121
+00:05:34,084 --> 00:05:36,668
+to crash everyone loves to jump on being
+
+122
+00:05:36,668 --> 00:05:39,898
+extremely bearish without understanding there isn't a firm reason yet
+
+123
+00:05:40,200 --> 00:05:42,855
+if we take a look at the economic calendar there
+
+124
+00:05:42,855 --> 00:05:44,979
+was nothing really on the calendar for today
+
+125
+00:05:44,979 --> 00:05:47,899
+i pay attention to anything that is a major market moving
+
+126
+00:05:48,100 --> 00:05:50,369
+catalyst here so anything with a bubble that's red we
+
+127
+00:05:50,369 --> 00:05:52,638
+can see tomorrow's the fomc minutes and then we have
+
+128
+00:05:52,638 --> 00:05:53,999
+some manufacturing index report out at 11
+
+129
+00:05:53,999 --> 00:05:55,814
+a.m eastern time but for today there
+
+130
+00:05:55,814 --> 00:05:57,175
+was nothing i don't pay attention
+
+131
+00:05:57,175 --> 00:05:59,897
+to anything that does not show up as red it could be
+
+132
+00:06:00,300 --> 00:06:01,668
+I could improve on that. I
+
+133
+00:06:01,668 --> 00:06:03,036
+could pay attention to more reports.
+
+134
+00:06:03,036 --> 00:06:06,000
+But honestly, I would rather not pay attention to any of these things.
+
+135
+00:06:06,000 --> 00:06:07,886
+If it wasn't for the FOMC and
+
+136
+00:06:07,886 --> 00:06:09,772
+the CPI, I probably wouldn't even be
+
+137
+00:06:09,772 --> 00:06:12,198
+paying attention to the economic calendar as a whole.
+
+138
+00:06:12,500 --> 00:06:14,100
+So this is the iron condor that I ran.
+
+139
+00:06:14,100 --> 00:06:15,900
+I went with a 3DTE here.
+
+140
+00:06:16,100 --> 00:06:18,909
+And in this case, I used a strike price to
+
+141
+00:06:18,909 --> 00:06:21,999
+short some calls that are above another high gamma strike price.
+
+142
+00:06:22,000 --> 00:06:26,500
+And then I showed us some puts below a high negative gamma strike price for Friday.
+
+143
+00:06:26,900 --> 00:06:29,559
+If you are new to trading spreads, if
+
+144
+00:06:29,559 --> 00:06:32,218
+you are new on margin trading, but still
+
+145
+00:06:32,218 --> 00:06:34,877
+would like to be able to participate in
+
+146
+00:06:34,877 --> 00:06:36,871
+shorter DTE trades, a good sweet
+
+147
+00:06:36,871 --> 00:06:39,198
+spot is three to four DTE spreads.
+
+148
+00:06:39,200 --> 00:06:42,200
+So if you're trading iron condors or iron butterflies, they
+
+149
+00:06:42,200 --> 00:06:43,700
+are a little bit less
+
+150
+00:06:43,700 --> 00:06:45,500
+risky than trading the zero DTEs.
+
+151
+00:06:45,500 --> 00:06:48,300
+I will showcase a zero DTE iron condor in a second.
+
+152
+00:06:48,400 --> 00:06:49,900
+So that one worked out amazing.
+
+153
+00:06:50,100 --> 00:06:52,500
+But for starters, this is the first trade that I ran.
+
+154
+00:06:52,600 --> 00:06:56,164
+I ran this one pretty early because I didn't really need much
+
+155
+00:06:56,164 --> 00:06:58,540
+conviction or much confirmation in price as I
+
+156
+00:06:58,540 --> 00:07:00,916
+already made it safer by trading options that
+
+157
+00:07:00,916 --> 00:07:02,698
+expired further out in the week.
+
+158
+00:07:03,100 --> 00:07:05,700
+Let me just head back to the SPX.
+
+159
+00:07:06,200 --> 00:07:10,500
+And we can see right here, this little green level is letting me know straight from the QTA study.
+
+160
+00:07:10,600 --> 00:07:13,276
+So if I were to just turn this on or off, that
+
+161
+00:07:13,276 --> 00:07:14,614
+script actually plots these gamma exposure
+
+162
+00:07:14,614 --> 00:07:16,398
+levels on my chart for the weekly expiration.
+
+163
+00:07:16,800 --> 00:07:19,450
+So it's letting me know the strike price up here is the
+
+164
+00:07:19,450 --> 00:07:20,775
+absolute gamma strike at the start
+
+165
+00:07:20,775 --> 00:07:22,100
+of the week for Friday's expiration.
+
+166
+00:07:22,100 --> 00:07:24,342
+So selling a call above this strike inherently made me
+
+167
+00:07:24,342 --> 00:07:26,135
+feel a little bit safe. And then I'm
+
+168
+00:07:26,135 --> 00:07:29,498
+selling a put all the way down here. So it has a nice wide range.
+
+169
+00:07:29,600 --> 00:07:30,000
+I'm using.
+
+170
+00:07:30,000 --> 00:07:31,173
+some other tools again i'm leaving
+
+171
+00:07:31,173 --> 00:07:32,737
+them out of this video because i don't
+
+172
+00:07:32,737 --> 00:07:34,301
+want to mention all the confidences you guys
+
+173
+00:07:34,301 --> 00:07:35,865
+know i like to look for a million
+
+174
+00:07:35,865 --> 00:07:38,798
+different reasons usually before entering some sort of a trade but every now and then
+
+175
+00:07:39,100 --> 00:07:42,060
+it can come down to just paying attention to what
+
+176
+00:07:42,060 --> 00:07:44,428
+you're expecting with price action around these gamma
+
+177
+00:07:44,428 --> 00:07:47,388
+exposure levels if price in the spy was to rally
+
+178
+00:07:47,388 --> 00:07:50,348
+it would have to break past all of these significant
+
+179
+00:07:50,348 --> 00:07:53,900
+strike prices so by selling a call all the way up here
+
+180
+00:07:54,900 --> 00:07:58,750
+I inherently have more conviction because there are levels between the strike
+
+181
+00:07:58,750 --> 00:08:02,600
+price in which I'm selling and the same thing to the downside.
+
+182
+00:08:02,600 --> 00:08:05,500
+This is where negative gamma exposure in a sense kind of rolls off.
+
+183
+00:08:05,700 --> 00:08:08,400
+This area down here had some other levels on the SPX.
+
+184
+00:08:08,400 --> 00:08:11,100
+If we were to zoom out, we have last week's levels here.
+
+185
+00:08:11,300 --> 00:08:14,600
+We also have this is the max pain strike for the weekly expiration.
+
+186
+00:08:14,600 --> 00:08:17,600
+So this usually acts as a key support resistance level.
+
+187
+00:08:17,800 --> 00:08:20,041
+I also had the QTA intraday level right here. So
+
+188
+00:08:20,041 --> 00:08:24,299
+there was a bunch of other little levels below and then there are a bunch of levels on top.
+
+189
+00:08:24,600 --> 00:08:26,748
+That's usually what I'm going to look for when I'm
+
+190
+00:08:26,748 --> 00:08:28,467
+running iron condors again I like to apply
+
+191
+00:08:28,467 --> 00:08:30,186
+some sort of technicals I can't just trade
+
+192
+00:08:30,186 --> 00:08:34,483
+an iron condor just based on the deltas even if I'm selling an iron condor that has a delta of 0.5
+
+193
+00:08:35,100 --> 00:08:37,132
+I'm usually going to be a little bit of a
+
+194
+00:08:37,132 --> 00:08:39,164
+wimp and if price just makes one little move I'm
+
+195
+00:08:39,164 --> 00:08:41,196
+going to probably freak out and close it as much
+
+196
+00:08:41,196 --> 00:08:42,822
+as as long as I've been trading iron
+
+197
+00:08:42,822 --> 00:08:43,405
+condors it still
+
+198
+00:08:43,405 --> 00:08:44,766
+makes me a little bit uncomfortable considering
+
+199
+00:08:44,766 --> 00:08:45,932
+how much risk you might use
+
+200
+00:08:45,932 --> 00:08:47,098
+you might be using something like $20,000
+
+201
+00:08:48,000 --> 00:08:54,500
+in credit to maybe get $10,000 $2,000 in premium and these numbers regardless of how long I've been trading still you know
+
+202
+00:08:55,500 --> 00:08:57,454
+still can cause a little bit of that an easy
+
+203
+00:08:57,454 --> 00:08:59,799
+feeling in your stomach because especially if you're trading a zero dte
+
+204
+00:09:00,300 --> 00:09:01,600
+You know what you have out at risk.
+
+205
+00:09:01,600 --> 00:09:03,100
+You know how much margin is being used.
+
+206
+00:09:03,200 --> 00:09:05,762
+And yes, you're not going to lose all of that,
+
+207
+00:09:05,762 --> 00:09:07,812
+but it's still unsettling, especially when you come
+
+208
+00:09:07,812 --> 00:09:11,143
+from a background where you used to try to use 2K to make $20,000.
+
+209
+00:09:11,400 --> 00:09:14,100
+Have I ever had a trade that turned $2,000 into $20,000?
+
+210
+00:09:14,200 --> 00:09:16,400
+No, but there was the possibility for that.
+
+211
+00:09:16,400 --> 00:09:19,800
+And just knowing that possibility makes it easier to trade that way.
+
+212
+00:09:20,100 --> 00:09:23,700
+However, at this point in my career, I'm no longer taking those trades that often.
+
+213
+00:09:23,700 --> 00:09:26,400
+It might only be a handful of times every quarter where I'm
+
+214
+00:09:26,400 --> 00:09:29,100
+taking a shot at some sort of a 10x type of return.
+
+215
+00:09:29,200 --> 00:09:31,800
+But for the most part, I prefer to run these iron condors.
+
+216
+00:09:32,000 --> 00:09:35,702
+So paying attention to where these high gamma exposure level strikes are,
+
+217
+00:09:35,702 --> 00:09:39,404
+knowing where the gamma flip level is, understanding whenever implied volatility spikes,
+
+218
+00:09:39,404 --> 00:09:43,106
+it means you can sell an iron condor and you will have
+
+219
+00:09:43,106 --> 00:09:46,499
+a wider range for that iron condor because that's the dynamics.
+
+220
+00:09:46,800 --> 00:09:49,000
+Let's move on to the 0DT Iron Condor.
+
+221
+00:09:49,200 --> 00:09:52,300
+This right here, as you guys can see, so this is after 10 a.m. Eastern time.
+
+222
+00:09:52,600 --> 00:09:54,100
+Iron Condors should have a good week.
+
+223
+00:09:54,100 --> 00:09:57,300
+IV started off relatively much higher than what we've been seeing, meaning
+
+224
+00:09:57,300 --> 00:09:59,700
+you can sell options and collect a higher premium.
+
+225
+00:10:00,100 --> 00:10:02,700
+Iron Condors can be wider, unlike the past few weeks.
+
+226
+00:10:03,000 --> 00:10:05,380
+Spies at the G flip strike to start the week
+
+227
+00:10:05,380 --> 00:10:07,284
+is a big deal, as price will not
+
+228
+00:10:07,284 --> 00:10:08,712
+want to close below it, which
+
+229
+00:10:08,712 --> 00:10:10,140
+means it's likely to act as
+
+230
+00:10:10,140 --> 00:10:12,997
+an area of support, but price should also be choppy around it.
+
+231
+00:10:13,100 --> 00:10:17,500
+Both cases make for nice theta decay on iron flies or iron condors.
+
+232
+00:10:17,700 --> 00:10:19,500
+So this is 10 a.m. Eastern time here today.
+
+233
+00:10:19,600 --> 00:10:24,100
+Shortly, just a few minutes after, 30 minutes after the opening range has been established.
+
+234
+00:10:24,800 --> 00:10:26,400
+This is our end one. This is our G flip.
+
+235
+00:10:26,500 --> 00:10:30,000
+So you guys are seeing right from here at the start of the day, the thought.
+
+236
+00:10:30,000 --> 00:10:36,100
+process so with that being said after opening the swing trade or the trade that has a longer dte
+
+237
+00:10:36,700 --> 00:10:40,000
+price action has proven that it has established a safe range for
+
+238
+00:10:40,000 --> 00:10:42,200
+the zero dte and that's where my interest
+
+239
+00:10:42,200 --> 00:10:44,400
+becomes peaked on what type of zero dte
+
+240
+00:10:44,800 --> 00:10:46,945
+iron condor would i like to run something that it
+
+241
+00:10:46,945 --> 00:10:49,090
+can add extra pnl this is an opening range iron
+
+242
+00:10:49,090 --> 00:10:51,235
+condor so it just means i'm just shorting the put
+
+243
+00:10:51,235 --> 00:10:55,097
+and the call based on the spx opening range so if i were to zoom in right here
+
+244
+00:10:55,500 --> 00:10:57,970
+let's just plot these levels on my chart so we'll
+
+245
+00:10:57,970 --> 00:10:59,946
+call that 45 and then this will be 35 so
+
+246
+00:10:59,946 --> 00:11:02,416
+47 35 so i'm just rounding the numbers so we have 35 and 45
+
+247
+00:11:04,500 --> 00:11:06,948
+that is 35 and 45 so i'm collecting a really
+
+248
+00:11:06,948 --> 00:11:10,008
+nice high credit high premium you know options at this
+
+249
+00:11:10,008 --> 00:11:13,986
+point here because they're very close to the money they're not like selling
+
+250
+00:11:15,000 --> 00:11:17,508
+a 0.05 delta or you know a 0.10 delta these
+
+251
+00:11:17,508 --> 00:11:20,329
+are going to be around a 0.30 delta sometimes even
+
+252
+00:11:20,329 --> 00:11:25,031
+a 0.35 maybe even a 0.40 delta so they're very close to the at the money strike
+
+253
+00:11:27,200 --> 00:11:29,720
+but they're still out the money and then going with
+
+254
+00:11:29,720 --> 00:11:33,500
+a little bit wider with the wings so this is a zero dt iron condor
+
+255
+00:11:34,100 --> 00:11:37,600
+These are not the type of iron condors you will want to hold for the whole day.
+
+256
+00:11:37,800 --> 00:11:41,434
+However, in this case here today, by the close at expiration, this
+
+257
+00:11:41,434 --> 00:11:44,765
+iron condor ended up having a 100% return on the credits because
+
+258
+00:11:44,765 --> 00:11:48,096
+the market ended up closing right within the opening range here.
+
+259
+00:11:48,600 --> 00:11:50,400
+So this is a strategy that can be used.
+
+260
+00:11:50,400 --> 00:11:52,400
+Again, it's not a strategy I would hold for the full day.
+
+261
+00:11:52,400 --> 00:11:57,100
+I would generally look to receive about a $2. Time decay or $3 time decay.
+
+262
+00:11:57,200 --> 00:12:00,000
+So if I'm selling three or four of these, once I'm up two bucks,
+
+263
+00:12:00,100 --> 00:12:01,600
+per lot i'll probably look to
+
+264
+00:12:01,600 --> 00:12:03,100
+close this trade out this is
+
+265
+00:12:03,100 --> 00:12:05,100
+the pnl from the this is the pnl
+
+266
+00:12:05,100 --> 00:12:06,770
+for the lifespan of the trade in
+
+267
+00:12:06,770 --> 00:12:07,963
+case you're curious so around 10
+
+268
+00:12:07,963 --> 00:12:10,110
+a.m around here so it's going for about 13
+
+269
+00:12:10,900 --> 00:12:12,700
+bucks and then you guys can see within
+
+270
+00:12:12,700 --> 00:12:14,500
+about an hour's time or so the trade
+
+271
+00:12:14,500 --> 00:12:17,200
+was ready up well over three dollars or three dollars in decay
+
+272
+00:12:17,700 --> 00:12:19,808
+if you hold until the close the screenshot was taking
+
+273
+00:12:19,808 --> 00:12:21,916
+five minutes before the close just so i can showcase
+
+274
+00:12:21,916 --> 00:12:23,602
+to you guys what happens at the last
+
+275
+00:12:23,602 --> 00:12:27,186
+few minutes of the day the decay went from eight bucks all the way down to 8,050 cents
+
+276
+00:12:27,800 --> 00:12:29,706
+because that's what you want with an iron
+
+277
+00:12:29,706 --> 00:12:31,612
+condor and that's what you're looking for you're
+
+278
+00:12:31,612 --> 00:12:33,518
+looking for a massive you're looking for a
+
+279
+00:12:33,518 --> 00:12:34,947
+juicy decay in premium when you
+
+280
+00:12:34,947 --> 00:12:36,376
+sell these options to people that
+
+281
+00:12:36,376 --> 00:12:38,996
+think that the spx is going to make a large move
+
+282
+00:12:39,300 --> 00:12:41,421
+however we have conviction we have an edge
+
+283
+00:12:41,421 --> 00:12:45,399
+we have some sort of an understanding of what's going to happen and by we
+
+284
+00:12:45,800 --> 00:12:48,766
+i mean any type of trader that is using any
+
+285
+00:12:48,766 --> 00:12:51,732
+type of advanced tools such as gamma exposure maybe you're
+
+286
+00:12:51,732 --> 00:12:54,698
+paying attention to open interest levels on the options chain
+
+287
+00:12:55,000 --> 00:12:57,358
+maybe you're just relying on technicals the more and more
+
+288
+00:12:57,358 --> 00:12:59,716
+confluences and the more and more things you can understand
+
+289
+00:12:59,716 --> 00:13:04,198
+it's in this case here to recap it was the idea that the vix had popped up this morning
+
+290
+00:13:04,500 --> 00:13:07,125
+we had gapped down to the g flip strike which
+
+291
+00:13:07,125 --> 00:13:09,750
+is also a high negative gamma strike so there's a
+
+292
+00:13:09,750 --> 00:13:12,900
+confluence of these high gamma exposure levels the expectation would be priced
+
+293
+00:13:13,400 --> 00:13:16,053
+the expectation would be price would be choppy on top
+
+294
+00:13:16,053 --> 00:13:18,706
+of that understanding that a lot of experienced options traders
+
+295
+00:13:18,706 --> 00:13:20,562
+love to sell out the money puts
+
+296
+00:13:20,562 --> 00:13:22,418
+so even though the markets may be
+
+297
+00:13:22,418 --> 00:13:26,397
+a little bit on edge right now it is the start of a new year
+
+298
+00:13:26,900 --> 00:13:30,000
+the expectation would be an increase in volatility it's not going
+
+299
+00:13:30,000 --> 00:13:31,931
+going to drop in one straight shot so even though
+
+300
+00:13:31,931 --> 00:13:35,599
+we had a little bit of a gap down it's going to want to consolidate for a little bit
+
+301
+00:13:36,000 --> 00:13:38,086
+it's going to want to be choppy around certain areas
+
+302
+00:13:38,086 --> 00:13:40,172
+and it's and it just makes sense for it to
+
+303
+00:13:40,172 --> 00:13:41,632
+be choppy around the strike prices that
+
+304
+00:13:41,632 --> 00:13:43,092
+have a lot of gamma exposure on
+
+305
+00:13:43,092 --> 00:13:45,596
+the other end you want to have some sort of a plan
+
+306
+00:13:46,200 --> 00:13:47,800
+and an idea for where you're going
+
+307
+00:13:47,800 --> 00:13:49,400
+to close the trade if it goes
+
+308
+00:13:49,400 --> 00:13:51,000
+wrong maybe if you're going to roll
+
+309
+00:13:51,800 --> 00:13:56,700
+Maybe if you're going to close out the untested side, everybody's adjustment strategies are different.
+
+310
+00:13:56,900 --> 00:13:59,900
+Sometimes the best adjustment in my case is also just closing the trade.
+
+311
+00:13:59,900 --> 00:14:02,194
+I try to open up iron condors in days in
+
+312
+00:14:02,194 --> 00:14:04,488
+which I don't think I'm going to need any type
+
+313
+00:14:04,488 --> 00:14:07,699
+of adjustments because I am using more of an advanced analysis for the markets.
+
+314
+00:14:07,700 --> 00:14:09,700
+And I'm also paying attention to technicals.
+
+315
+00:14:09,900 --> 00:14:14,200
+And then I'm paying attention to the structural levels around my iron condor.
+
+316
+00:14:14,600 --> 00:14:17,072
+And the reason for doing that is just
+
+317
+00:14:17,072 --> 00:14:21,399
+to help add conviction, to help allow me to stay in the trade longer.
+
+318
+00:14:21,500 --> 00:14:24,785
+Because without these levels, I will have very weak conviction
+
+319
+00:14:24,785 --> 00:14:28,399
+and I will probably close my trades out much more prematurely.
+
+320
+00:14:28,600 --> 00:14:31,138
+A large reason why I studied a lot of this and built
+
+321
+00:14:31,138 --> 00:14:34,099
+the tools to even be able to discover this was to increase my conviction.
+
+322
+00:14:34,500 --> 00:14:36,706
+Earlier on when I started trading iron condors, I used
+
+323
+00:14:36,706 --> 00:14:38,912
+to be very nervous, especially when I was trading weekly
+
+324
+00:14:38,912 --> 00:14:40,898
+iron condors and I would close them out prematurely.
+
+325
+00:14:41,300 --> 00:14:43,376
+Nine out of ten times they would always end up
+
+326
+00:14:43,376 --> 00:14:45,452
+working out but it was difficult to hold them throughout
+
+327
+00:14:45,452 --> 00:14:47,528
+the day every little tick makes you nervous and now
+
+328
+00:14:47,528 --> 00:14:49,189
+you get to the point when you're in
+
+329
+00:14:49,189 --> 00:14:50,850
+your training career where it's no longer as
+
+330
+00:14:50,850 --> 00:14:52,096
+nerve-wracking but that's just because it's
+
+331
+00:14:52,096 --> 00:14:54,795
+on the back of all the research and analysis in which i've done
+
+332
+00:14:55,400 --> 00:14:57,400
+and it makes it comfortable to open up an iron
+
+333
+00:14:57,400 --> 00:15:00,000
+condor and then move on with the day by just setting certain alerts
+
+334
+00:15:00,200 --> 00:15:05,400
+and being able to analyze other instruments, adjusting long-term portfolios, and so forth.
+
+335
+00:15:05,700 --> 00:15:10,100
+Hopefully this video helps provide some sort of insights on zero DT iron condors.
+
+336
+00:15:10,100 --> 00:15:11,200
+Thanks for watching, guys.
+
+337
+00:15:11,300 --> 00:15:12,900
+Leave a comment down below if you learned something.
+
+338
+00:15:12,900 --> 00:15:14,500
+Share the video, and I'll catch you in the next one.
+
+===== END AFTER_SEGMENT =====

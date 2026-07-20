@@ -1,0 +1,6677 @@
+===== AFTER_TRANSLATE (1335 entries) =====
+1
+00:00:01,400 --> 00:00:04,700
+欢迎回来，恭喜完成模块1
+Welcome back and congratulations on finishing module 1.
+
+2
+00:00:05,200 --> 00:00:08,400
+现在开始模块2，精通篇
+We're now going to begin module 2, the proficiency.
+
+3
+00:00:08,800 --> 00:00:11,809
+在模块2中，我们将重点讲解
+In module 2 we're going to focus on some core
+
+4
+00:00:11,809 --> 00:00:14,484
+核心原理和大量实战案例
+principles and a lot of practical examples and
+
+5
+00:00:14,484 --> 00:00:19,165
+最重要的是，我们将开始制定关键的成交量分布策略
+then most importantly we're going to finally start developing some key volume profiling strategies.
+
+6
+00:00:19,900 --> 00:00:21,700
+祝你好运，希望你喜欢模块2
+Good luck and I hope you enjoy module 2.
+
+7
+00:00:23,600 --> 00:00:25,100
+大家好，欢迎来到模块2
+Welcome to Module 2 guys.
+
+8
+00:00:25,400 --> 00:00:32,200
+简单介绍模块结构：仍分为理论原理部分，共20个
+Very briefly, the structure of the module is broken down again into theoretical principles. There'll be 20 of those.
+
+9
+00:00:32,500 --> 00:00:35,900
+这次我们会有更多学习视频
+We will then have a lot more learning videos this time around.
+
+10
+00:00:36,300 --> 00:00:39,558
+会花大量时间在黑板上
+We're going to spend quite a bit of time on
+
+11
+00:00:39,558 --> 00:00:42,164
+讲解大量核心原理
+the blackboard going over a lot of principle
+
+12
+00:00:42,164 --> 00:00:46,399
+当然还会开始开发关键策略
+understanding as well as obviously starting to develop some of the key strategies.
+
+13
+00:00:46,700 --> 00:00:53,588
+模块2不会有成交量分布图回放，但模块3会有很多
+We will not have any profile replay in Module 2, but there will be quite a lot of profile replay done in Module 3.
+
+14
+00:00:55,200 --> 00:01:02,897
+然后还是会有4个概念检查点
+Then we'll have four concept checkers again, just to ensure you understand the principles dealt with in each one of the four parts.
+
+15
+00:01:03,000 --> 00:01:06,062
+每个部分最后
+And then we'll finish, or each part will
+
+16
+00:01:06,062 --> 00:01:09,124
+会有交易策略库条目
+finish with the playbook entries, and there will
+
+17
+00:01:09,124 --> 00:01:13,717
+共有17条交易策略库条目供你添加到自己的策略库中。
+be 17 playbook entries for you to insert into your very own playbook.
+
+18
+00:01:14,200 --> 00:01:15,100
+祝你学习愉快！
+Enjoy the module!
+
+19
+00:01:17,100 --> 00:01:19,000
+那么模块2的目录会是什么样子呢？
+So what will module 2's index look like?
+
+20
+00:01:19,300 --> 00:01:24,600
+在第5部分，我们先从时间、价格和成交量作为关键识别指标讲起。
+Well in part 5 we're going to start off talking about time, price and volume as key identifier.
+
+21
+00:01:25,100 --> 00:01:28,500
+然后讲解主动价格行为和被动价格行为。
+We'll then move on to initiative and responsive price pattern behaviour.
+
+22
+00:01:29,200 --> 00:01:30,000
+接着是对称性结构
+Then symmetric.
+
+23
+00:01:30,200 --> 00:01:32,500
+与非对称性结构、初始平衡区间、
+versus non-symmetrical profiles, the initial
+
+24
+00:01:32,500 --> 00:01:35,720
+成交量分布图的日内类型，包括趋势日
+balance, volume profiling day types being trend
+
+25
+00:01:35,720 --> 00:01:41,240
+以及非趋势日，并用成交量分布图结束模块5的交易流程
+and non-trend, and finish part 5 with the trading process with volume profiles.
+
+26
+00:01:42,100 --> 00:01:50,000
+模块6我们讲区间锁定与趋势市场、成交量与波动性、
+In part 6 we'll talk about bracketing versus trending, volume and volatility, the markets opening in and out of balance,
+
+27
+00:01:50,400 --> 00:01:53,500
+平衡状态与失衡开盘、交易者开盘前准备流程和交易位置
+pre-open routine of a trader and trade location.
+
+28
+00:01:54,100 --> 00:01:58,500
+模块7我们将进入日内拍卖，
+Then in part 7 we're going to move on to daytime auctions,
+
+29
+00:01:58,500 --> 00:02:00,100
+市场拍卖接入、成交量
+market auction access, volume
+
+30
+00:02:00,100 --> 00:02:06,100
+指向性控制、拍卖控制变量，最后是高成交量区域和低成交量区域
+pointer controls, auction control variables and finish with high volume areas and low volume areas.
+
+31
+00:02:07,000 --> 00:02:17,400
+模块8我们将以关键控制识别符、独特的成交量分布图模式策略、
+In part 8 we'll finish with key control identifiers, distinct profile pattern strategies, volume profile templating and deliberate practice.
+
+32
+00:02:19,872 --> 00:02:22,772
+成交量分布图模板化和刻意练习来收尾
+So what can you expect to have achieved by the end of the module?
+
+33
+00:02:23,472 --> 00:02:26,872
+首先，你要掌握高级成交量分布原理
+Firstly, you should understand advanced profiling principles.
+
+34
+00:02:27,572 --> 00:02:30,872
+能识别成交量分布中的6种日内类型
+You should be able to recognize six day types that occur in profiling.
+
+35
+00:02:31,772 --> 00:02:35,372
+能判断市场处于平衡状态还是失衡
+You should be able to determine when a market is in balance or out of balance.
+
+36
+00:02:35,972 --> 00:02:39,472
+能判断拍卖过程不同阶段的控制方
+Determine who is in control at different points in the auction process.
+
+37
+00:02:40,172 --> 00:02:46,572
+能识别并使用关键分布指标，如高成交量区域、低成交量区域、尾部和缺口
+Identify and use key profile metrics like the high volume node, low volume node, tails and gaps.
+
+38
+00:02:47,472 --> 00:02:48,772
+掌握价值区间
+Master the value area.
+
+39
+00:02:49,472 --> 00:02:53,872
+基于高级成交量分布技巧开发独特交易策略
+Develop your own unique strategies with advanced understanding of profiling techniques.
+
+40
+00:02:54,572 --> 00:02:57,472
+识别4种不同的开盘模式
+Identify the four different types of open patterns.
+
+41
+00:02:58,272 --> 00:03:02,472
+解读价值区间内的交易位置和价格变化
+Interpret trade location and variation of price within the value area.
+
+42
+00:03:03,372 --> 00:03:07,772
+价值区间和区间内的交易位置，包含3种变化形式
+Trade location within the value area and range including three different variations.
+
+43
+00:03:08,172 --> 00:03:13,072
+最后是开盘交易及开盘内的4种模式
+And lastly, the open trade and the four types of patterns that occur within the open.
+
+44
+00:03:14,272 --> 00:03:17,772
+区间和范围及3种变化形式
+Area and range and the three types of variations.
+
+45
+00:03:23,060 --> 00:03:28,160
+所以模块2的建议完成时间大致如下
+So the suggested timeline for you to complete module 2 looks a little bit like this.
+
+46
+00:03:28,860 --> 00:03:33,160
+第5部分需3小时15分钟
+Part 5 will take you roughly 3 hours and 15 minutes.
+
+47
+00:03:33,560 --> 00:03:36,160
+第6部分需3个半小时
+Part 6 will take 3 and a half hours.
+
+48
+00:03:36,760 --> 00:03:39,360
+第7部分需3小时15分钟
+Part 7, 3 hours and 15 minutes.
+
+49
+00:03:39,560 --> 00:03:42,060
+第8部分需4小时
+And part 8, 4 hours.
+
+50
+00:03:42,260 --> 00:03:50,160
+注意，我把它分成了原理学习、总结与概念检查、交易策略库录入
+Now again, notice how I've broken it down into principle learning, summary and concept checking, and then playbook entry.
+
+51
+00:03:50,560 --> 00:03:57,415
+你会发现，模块1和模块2的最大不同是，我们会花更多时间在交易策略库上
+As you will notice, the big difference between module 1 and 2 is we're going to be spending a lot more time inside our playbooks.
+
+52
+00:03:58,960 --> 00:04:04,697
+现在我要确保你不仅理解我们讨论的原则
+It's time for me to make sure not only that you understand the principles we're dealing with, but
+
+53
+00:04:04,697 --> 00:04:09,159
+我们讨论的这些原理
+that you can now start finding strategies that you can implement from the markets
+
+54
+00:04:09,460 --> 00:04:14,560
+还要能从市场中找到可执行的策略并加入你的交易策略库，边学边完善这些策略
+into your playbook, ensuring that you're developing these strategies as we go along.
+
+55
+00:04:14,960 --> 00:04:20,960
+完成模块2预计总耗时约14小时
+The total time expected to complete module 2 will be roughly 14 hours.
+
+56
+00:04:21,260 --> 00:04:24,260
+提前或延后完成都没关系
+Do not worry if you finish this sooner or longer.
+
+57
+00:04:24,460 --> 00:04:32,160
+关键是要理解所有原理、概念、实战案例和策略
+The important thing is that you understand all the principles, concepts, practical examples and strategies.
+
+58
+00:04:32,460 --> 00:04:37,060
+做到这一点后，完成模块2就可以进入模块3了
+If you do that, once you've completed it, you can then move on to module 3.
+
+59
+00:04:39,988 --> 00:04:40,688
+第5部分
+Part 5.
+
+60
+00:04:41,288 --> 00:04:49,088
+成交量分布原理，包括对称性结构、日内类型、价格行为和交易过程
+Volume profiling principles including symmetry, day types, price behavior and the trading process.
+
+61
+00:04:50,488 --> 00:04:58,988
+保罗·都铎·琼斯曾说：交易最重要的规则是防守，而非进攻
+Paul Tudor Jones once said, The most important rule of trading is to play great defense, not great offense.
+
+62
+00:04:59,888 --> 00:05:02,788
+每天我都假设自己所有持仓都是错的
+Every day I assume every position I have is wrong.
+
+63
+00:05:03,388 --> 00:05:05,888
+我知道止损点在哪里
+I know where my stop risk points are going to be.
+
+64
+00:05:06,388 --> 00:05:10,388
+这样我就能确定最大可能回撤
+I do that so I can define my maximum possible drawdown.
+
+65
+00:05:11,188 --> 00:05:16,388
+希望我能在剩余时间享受持仓向我期望的方向发展
+Hopefully, I spend the rest of the day enjoying positions that are going in my direction.
+
+66
+00:05:16,988 --> 00:05:21,088
+如果持仓向我不利，我也有应对的退出计划
+If they are going against me, then I have a game plan for getting out.
+
+67
+00:05:24,084 --> 00:05:30,484
+非常欢迎大家回到模块2，希望你们能喜欢
+It's really great to welcome you all back now and I hope you really enjoy Module 2. It's going to become a lot more practical.
+
+68
+00:05:30,484 --> 00:05:32,484
+你们会开始看到交易策略的形成
+You're going to start to see strategies develop.
+
+69
+00:05:32,684 --> 00:05:34,295
+更重要的是，在你的
+And more importantly, in your
+
+70
+00:05:34,295 --> 00:05:37,195
+脑海中，你会开始产生各种想法
+head, you're going to start developing various ideas about
+
+71
+00:05:37,195 --> 00:05:39,128
+关于如何基于模块2中的基础原则
+how you can develop your own
+
+72
+00:05:39,128 --> 00:05:43,961
+开发出你自己的交易策略
+strategies just using some of the basic principles I'm going to show you throughout Module 2.
+
+73
+00:05:44,784 --> 00:05:49,984
+直接进入正题，第五部分：时间、价格和成交量作为关键识别标志
+So straight into it, part five, time, price and volume as a key identifier.
+
+74
+00:05:50,284 --> 00:05:56,684
+在模块1中我们已经讲过很多，也多次提到构成拍卖的三大要素
+Now we've been through a lot of this in module one and we've spoken a lot about the three elements that make up the auction.
+
+75
+00:05:56,884 --> 00:06:02,584
+现在再快速回顾一下，巩固记忆，确保你理解这三个关键要素
+So let's just briefly go over it again. Just refresh your mind and make sure you understand the three key elements.
+
+76
+00:06:02,584 --> 00:06:07,884
+首先，成交量分布图是一个完全客观的组织工具
+So firstly, a volume profile is an entirely objective organizational
+
+77
+00:06:08,384 --> 00:06:11,737
+它在一个上下文中整合了所有信息
+tool that incorporates all information in a context
+
+78
+00:06:11,737 --> 00:06:15,090
+它不受偏见影响
+that is free from bias and free from
+
+79
+00:06:15,090 --> 00:06:19,282
+也不受大量事实导致的指标冲突干扰
+the conflicting indicators generated by an overwhelming number of facts.
+
+80
+00:06:19,284 --> 00:06:21,884
+还记得我在模块1一开始对你们说的话吗
+Now remember what I said to you right in the beginning of module one.
+
+81
+00:06:22,184 --> 00:06:29,284
+我们强调过客观性的重要性，要尽可能消除主观偏见
+We spoke about how important objectivity was and trying to remove our bias as much as possible.
+
+82
+00:06:29,384 --> 00:06:32,584
+还记得我们之前也提到过
+So remember we also spoke and said that
+
+83
+00:06:32,584 --> 00:06:35,784
+成交量分布图的优势之一
+the advantages of the volume profile, one of
+
+84
+00:06:35,784 --> 00:06:40,984
+就是能让我们始终保持客观
+the major advantages is it allows us to remain objective all the time.
+
+85
+00:06:41,084 --> 00:06:43,884
+所以成交量分布才如此强大
+And that's why volume profiling is so powerful.
+
+86
+00:06:44,784 --> 00:06:51,384
+成交量分布图捕捉了市场的基础构成要素
+Then, the volume profile captures the market's fundamental building blocks, which are, as we've mentioned,
+
+87
+00:06:51,684 --> 00:06:53,484
+即价格、时间和成交量
+price, time and volume.
+
+88
+00:06:53,684 --> 00:06:57,284
+并且在一个图形中全部展现
+And it does this all in one graphic depiction.
+
+89
+00:06:57,284 --> 00:07:00,924
+所以我们可以在一张图中看到这三个要素
+So we can see all three of these elements in one chart
+
+90
+00:07:00,924 --> 00:07:02,744
+这让我们可以开始
+and this allows us to start
+
+91
+00:07:02,744 --> 00:07:06,384
+理解市场的价格结构和本质
+developing an understanding of the structure and the nature of the market.
+
+92
+00:07:06,784 --> 00:07:10,384
+注意，价格展示交易机会
+Now remember, price advertises the opportunity.
+
+93
+00:07:10,884 --> 00:07:14,184
+时间会调控每一个机会
+Time will regulate each one of these opportunities.
+
+94
+00:07:14,684 --> 00:07:18,784
+成交量衡量每次拍卖的成功程度
+Volume measures the degree of success of each auction.
+
+95
+00:07:19,084 --> 00:07:26,684
+成交量在不同价格上的分布偏向，显示参与者在各价位的交易意愿
+The skew of the volume over a number of prices shows the willingness of participants to transact at various prices.
+
+96
+00:07:26,684 --> 00:07:33,084
+在模块 2 中，你将逐渐更深入地理解拍卖过程
+Now, over the course of this module 2, you're going to start understanding the auction process a lot more.
+
+97
+00:07:34,384 --> 00:07:39,584
+现在我们要在时间、价格和成交量的概念中
+We're going to throw in a few more elements now into the concept of time, price and volume.
+
+98
+00:07:39,684 --> 00:07:46,681
+加入更多元素。首先，我要强调一点：
+And we're going to start off and I'm going to say something that's important to understand is that price alone is misleading.
+
+99
+00:07:46,684 --> 00:07:48,779
+单看价格是具有误导性的。
+And I know a lot of sort of,
+
+100
+00:07:48,779 --> 00:07:52,183
+我知道很多传统的交易教学方式
+you know, the old fashioned way of teaching trading and learning about trading.
+
+101
+00:07:52,384 --> 00:07:54,709
+几乎只让你关注价格的走势
+They teach you to almost solely, you know,
+
+102
+00:07:54,709 --> 00:07:57,034
+价格从哪里来，
+focus on what price is done, where price
+
+103
+00:07:57,034 --> 00:08:01,684
+然后据此预测未来价格可能去向。
+has come from and then make decisions about to where price might go in the future.
+
+104
+00:08:01,684 --> 00:08:07,084
+但只关注价格本身，会让你觉得缺失了一半信息。
+And focusing on just price on its own, it almost feels like you're missing half of the information.
+
+105
+00:08:07,084 --> 00:08:14,284
+首先要理解，价格变动是新交易还是旧交易导致的？
+So the first thing to understand is, was a change in price a result of new business or old business?
+
+106
+00:08:14,284 --> 00:08:16,284
+这一点非常重要，必须理解清楚
+It's so important to try and understand this.
+
+107
+00:08:16,284 --> 00:08:23,983
+很少有人会停下来思考：价格为什么会上涨？
+I think there's so few people who actually stop to try and think and interpret. Why did prices actually go up?
+
+108
+00:08:24,084 --> 00:08:28,784
+是新多头入场推动趋势延续？
+Was there new buyers coming into the market with the continuation of the trend?
+
+109
+00:08:28,984 --> 00:08:33,984
+还是空头被迫平仓回补导致的？
+Or was this merely shorts being forced out of their short positions and having to buy out of them?
+
+110
+00:08:34,584 --> 00:08:41,482
+理解并回答这个简单问题，会为你带来长期交易优势
+Understanding and answering just something as simple as that is going to give you some form of an edge over time.
+
+111
+00:08:42,184 --> 00:08:44,884
+其次，哪个时间框架/周期在主导？
+Then, which time frame is in control?
+
+112
+00:08:45,684 --> 00:08:53,181
+通常只看价格涨跌，很难判断谁在主导市场
+A lot of the time, when we just look at prices going up and down, we can't necessarily determine who is in control at which point.
+
+113
+00:08:54,784 --> 00:08:57,384
+市场尝试往哪个方向移动？
+Which direction was the market attempting to move in?
+
+114
+00:08:57,784 --> 00:09:00,488
+再强调一次，很多时候我们会看到
+Again, a lot of the time we could see, you
+
+115
+00:09:00,488 --> 00:09:03,192
+你可能整天交易
+could sit there the whole day trading the market and
+
+116
+00:09:03,192 --> 00:09:06,437
+感觉市场整天都在试图上涨
+it could feel like it's been trying to go up the entire
+
+117
+00:09:06,437 --> 00:09:09,682
+但收盘时却收在更低的位置
+day long, yet at the end of the day, it finishes lower.
+
+118
+00:09:09,784 --> 00:09:14,884
+所以市场想往哪走，谁又赢得了这场战斗？
+So who was, you know, which way was the market trying to go, but who actually won the battle?
+
+119
+00:09:16,384 --> 00:09:20,484
+好的，再强调一次，拍卖的速度很关键
+Okay, again then, the speed of the auction, so important. What do we mean by the speed?
+
+120
+00:09:20,484 --> 00:09:24,802
+也就是说，市场轮动的速度
+In other words, the speed at which the market rotates
+
+121
+00:09:24,802 --> 00:09:29,983
+价格在高点和低点间的波动 对预测未来走势至关重要
+higher and lower is crucial in interpreting potential future moves for prices.
+
+122
+00:09:30,484 --> 00:09:36,980
+所以是波动性，我们会在模块2后面详细讲成交量和波动性。那波动性是什么？
+So volatility, and we're going to talk a lot about volume and volatility later in module two. But what is volatility?
+
+123
+00:09:37,084 --> 00:09:43,884
+本质上，波动性只是相对于均值的更大幅度波动
+Well, in essence, volatility is just a pickup or a wider variation around the mean.
+
+124
+00:09:43,884 --> 00:09:50,384
+换句话说，价格在一段时间内相对波动更剧烈
+In other words, prices move a lot more in relative terms than they have been over a period of time.
+
+125
+00:09:50,384 --> 00:09:56,184
+所以波动性仅仅是… 价格变化的速度或方式加快了
+So volatility is merely just... a pickup in the way or in the speed at which prices are changing.
+
+126
+00:09:56,284 --> 00:10:00,084
+注意，波动性并不意味着成交量增加
+Now note, volatility does not imply a pickup in volume.
+
+127
+00:10:00,184 --> 00:10:06,984
+关键是要理解，成交量增加或流动性不足 并不等于波动性
+Important to understand, a pickup in volume or a lack of liquidity does not imply volatility.
+
+128
+00:10:07,284 --> 00:10:08,784
+这一点非常重要，你必须理解
+Very important you understand that.
+
+129
+00:10:09,784 --> 00:10:14,284
+那拍卖方向如何？是单向拍卖还是双向拍卖？
+Then, which way is the auction going? Is it a one-way auction or is it a two-way auction?
+
+130
+00:10:14,484 --> 00:10:21,284
+注意，我们在模块 2 的后续内容中会深入讲解拍卖
+And now note, we're going to talk a lot about auctions quite extensively over the rest of Module 2.
+
+131
+00:10:22,584 --> 00:10:25,684
+还有成交量，这是我们的关键支柱和识别指标
+Then volume, one of our key pillars and one of our key identifiers.
+
+132
+00:10:25,784 --> 00:10:30,684
+注意，成交量决定背离公允价值能否持续
+Note, volume determines whether or not divergences from value can be sustained.
+
+133
+00:10:30,684 --> 00:10:36,784
+这是什么意思？比如一个市场长期接受公允价值
+What do we mean by that? Take for example a market that has been accepting fair value for some time.
+
+134
+00:10:37,984 --> 00:10:41,150
+市场接受公允价值这一事实
+The market or the mere fact that the market is
+
+135
+00:10:41,150 --> 00:10:44,316
+表明多头或空头
+accepting value suggests that there is not much inclination from
+
+136
+00:10:44,316 --> 00:10:47,482
+都没有推高或压低价格的强烈意愿
+either buyers or sellers to take prices higher or lower.
+
+137
+00:10:48,084 --> 00:10:54,984
+所以在这种情况下，多头和空头可能会
+So by that token, some days buyers and sellers can be discouraged from moving away from fair value.
+
+138
+00:10:54,984 --> 00:11:02,784
+不愿意远离公允价值，因为缺乏足够的信息
+Why? Because there's very little information, data, fundamentals that justifies them taking on the additional risk.
+
+139
+00:11:03,884 --> 00:11:07,684
+但有些日子里，价格会偏离
+But on other days, we see price move away from
+
+140
+00:11:07,684 --> 00:11:13,384
+公允价值，并吸引高成交量和波动性
+value and this attracts a high interest in the form of higher volume and volatility.
+
+141
+00:11:13,384 --> 00:11:20,581
+也就是说，有些日子市场尝试偏离公允价值
+So in other words, some days the market might try and make a move away from fair value and get rejected as there's very little volume and interest.
+
+142
+00:11:20,784 --> 00:11:26,781
+但因成交量和兴趣不足而被拒绝，而有些日子则会
+But then other days... we see it move away from fair value and the volume and the activity and the interest picks up.
+
+143
+00:11:28,784 --> 00:11:31,784
+注意，你现在看到的是一个非常值得关注的画面
+Now what you have in front of you is something that's actually quite exciting to see.
+
+144
+00:11:32,384 --> 00:11:36,184
+它仅展示了价格、成交量和时间
+It's merely price, volume and time being depicted.
+
+145
+00:11:36,384 --> 00:11:42,284
+再强调一次，这次不是成交量分布图，而是价格阶梯
+Again, this time not necessarily on a volume profile, but on what we call a price ladder.
+
+146
+00:11:42,284 --> 00:11:50,181
+现在，我喜欢展示这个，是为了让你回到市场的基本要素
+Now, the reason I like to show people this is just to bring you back to the basic elements of what markets are. It's merely just an auction.
+
+147
+00:11:50,184 --> 00:11:52,928
+现在，你们很多人可能看过
+Now, a lot of you would have watched maybe a
+
+148
+00:11:52,928 --> 00:11:55,123
+YouTube上的一些老视频，
+YouTube上的老视频， few YouTube videos of the old days when
+
+149
+00:11:55,123 --> 00:11:57,043
+场内交易员站在对面
+the pit guys used to stand opposite
+
+150
+00:11:57,043 --> 00:12:01,982
+相互争吵、大喊大叫、指手画脚
+each other and spit and shout and yell at each other and point all sorts of finger signs.
+
+151
+00:12:02,084 --> 00:12:05,784
+而今天的市场，本质上还是场内拍卖
+And what we have today is nothing more than a pit auction.
+
+152
+00:12:06,284 --> 00:12:12,684
+只是以价格阶梯的形式呈现
+It's just being represented a little bit more differently on what we like to call a price ladder.
+
+153
+00:12:13,084 --> 00:12:15,384
+所以你面前的就是价格阶梯
+So what you have in front of you is that price ladder.
+
+154
+00:12:15,684 --> 00:12:18,784
+可以看到左边是一列蓝色柱
+As you can see, on the left side, we have a blue column.
+
+155
+00:12:19,084 --> 00:12:23,884
+蓝色柱显示各价位的买单或多头
+That blue column depicts all the bids or all the buyers at various prices.
+
+156
+00:12:23,884 --> 00:12:26,084
+中间是价格
+So you can see the prices in the middle.
+
+157
+00:12:26,584 --> 00:12:31,284
+注意，每个价位都有买家
+Now, at every one of those prices, there is a buyer representing
+
+158
+00:12:31,284 --> 00:12:35,984
+代表他们愿在各价位买入的手数
+a number of contracts he wishes to buy at the various prices.
+
+159
+00:12:36,384 --> 00:12:43,082
+右边红色是卖盘，即空头愿交易的价位
+We then have on the red side the offers, so the sellers, so the prices at which sellers are willing to interact.
+
+160
+00:12:44,484 --> 00:12:49,084
+还有日内高点，即当天最高成交价
+We then have the high of the day, which you can see is the highest traded price on the day.
+
+161
+00:12:49,784 --> 00:12:51,584
+还有成交量分布图。
+We then have the volume profile.
+
+162
+00:12:51,684 --> 00:12:56,184
+再强调一次，成交量是价格和时间的三大支柱之一。
+So again, we spoke about how volume is one of the crucial three pillars with price and time.
+
+163
+00:12:56,384 --> 00:13:02,784
+我们可以看到成交量在日内各价格上的分布情况。
+So what we can see is how volume is being distributed over all the prices traded on the day.
+
+164
+00:13:03,284 --> 00:13:05,006
+注意，
+And again, note, we will
+
+165
+00:13:05,006 --> 00:13:08,106
+我们会详细讲解这种成交量分布
+talk about this volume dispersion and what it all
+
+166
+00:13:08,106 --> 00:13:12,583
+及其含义，不仅是解读，还有交易策略层面的应用。
+means, not just in terms of interpretation, but in terms of trade strategy.
+
+167
+00:13:14,084 --> 00:13:21,484
+注意，比如这个例子中，卖盘有1,607手。
+Now note, as you can see, just an example, 1,607 lots are on the offer in this example.
+
+168
+00:13:21,484 --> 00:13:29,184
+也就是说，在30.79美元价位，有卖家愿意卖出1,607手合约。
+In other words, there is a seller at the price $30.79 that is willing to sell 1,607 contracts.
+
+169
+00:13:29,384 --> 00:13:31,905
+注意，当价格上下波动时
+Now again, as prices move up and down
+
+170
+00:13:31,905 --> 00:13:34,426
+波动性起伏不定
+and the volatility picks up and down and
+
+171
+00:13:34,426 --> 00:13:36,316
+成交量也起伏不定
+the volume picks up and down,
+
+172
+00:13:36,316 --> 00:13:39,782
+卖盘的手数可能会变化
+this amount of contracts being offered might vary and might change.
+
+173
+00:13:41,484 --> 00:13:44,884
+当然还有实际成交的手数
+We then have obviously what is physically traded through the market.
+
+174
+00:13:44,984 --> 00:13:46,284
+所以关键是要理解
+So important to understand.
+
+175
+00:13:46,484 --> 00:13:49,580
+很多时候，多头和空头
+A lot of the time buyers and sellers might represent
+
+176
+00:13:49,580 --> 00:13:52,057
+可能向市场展示一种状态
+or show the market one thing, but when
+
+177
+00:13:52,057 --> 00:13:56,082
+但真正执行交易时，他们可能会做完全不同的事。
+it actually comes to transacting and executing, they may do something very different.
+
+178
+00:13:56,084 --> 00:14:00,684
+所以可以看到，数字6代表最新成交。
+So as you can see, that six represents the actual last trade.
+
+179
+00:14:00,684 --> 00:14:06,284
+也就是说，任意时点市场上最新成交的手数。
+In other words, the last traded amount of contracts that has gone through this market at any given point.
+
+180
+00:14:07,484 --> 00:14:14,384
+然后是日内低点，注意在3069价位有3003手买单。
+We then have the low of the day and then note the bid of 3003 lots at the price 3069.
+
+181
+00:14:14,484 --> 00:14:18,034
+再强调一次，这是买家愿意
+Again, this is the price at which the buyer is willing or
+
+182
+00:14:18,034 --> 00:14:21,584
+以这个价格买入的手数。
+this is the amount of contracts at which the buyer is willing.
+
+183
+00:14:21,584 --> 00:14:24,184
+愿意在3069价位买入。
+willing to buy at price 3069.
+
+184
+00:14:24,484 --> 00:14:31,484
+这就是价格、时间和成交量在价格阶梯上的直观体现。
+So that's what a representation of price, time and volume looks like just on a price ladder.
+
+185
+00:14:31,484 --> 00:14:34,502
+注意，我们会进一步
+Now note, we will be talking a little
+
+186
+00:14:34,502 --> 00:14:39,783
+讲解如何用价格阶梯开发策略的基础
+bit more about developing or the basics of developing strategies with the price ladder
+
+187
+00:14:40,384 --> 00:14:44,050
+因为这非常重要，关键是要理解
+because it's so important and it's crucial to understand that
+
+188
+00:14:44,050 --> 00:14:47,716
+成交量分布能给我们交易优势
+whilst volume profiling will give us an edge, it'll give
+
+189
+00:14:47,716 --> 00:14:52,482
+提供客观理解，但我们仍需
+us understanding and objectivity, we still have to execute at best price possible.
+
+190
+00:14:52,684 --> 00:14:59,884
+在最佳价格执行交易，所以用价格阶梯
+And that is why we use a price ladder because it allows us to take advantage of that exact concept of best price possible.
+
+191
+00:15:01,584 --> 00:15:05,684
+这是我最喜欢的成交量分布话题
+This is by far one of my favorite topics when it comes to volume profiling.
+
+192
+00:15:06,284 --> 00:15:10,584
+但更重要的是，这不只是成交量分布的原理
+But more importantly, this isn't actually just a volume profile principle.
+
+193
+00:15:10,784 --> 00:15:16,084
+这是市场机制的核心原则，但很多人不理解
+This is a market-based principle and there's not enough people that understand this principle.
+
+194
+00:15:16,084 --> 00:15:19,684
+所以我会慢慢讲解，因为
+So I'm going to go very slowly through it because
+
+195
+00:15:19,684 --> 00:15:23,284
+我很多个人策略都基于
+a lot of my strategies personally are developed based on
+
+196
+00:15:23,284 --> 00:15:26,884
+主动性和被动价格行为的基本概念
+the basic concept of initiative and responsive price pattern behavior.
+
+197
+00:15:27,384 --> 00:15:30,384
+那什么是主动性和被动价格行为呢？
+So what is initiative and responsive price pattern behavior?
+
+198
+00:15:30,484 --> 00:15:33,484
+首先，我们来谈主动价格行为
+Well, firstly, let's talk about initiative price action.
+
+199
+00:15:33,984 --> 00:15:37,942
+顾名思义，主动性是指
+So as the word suggests, initiative is when a buyer
+
+200
+00:15:37,942 --> 00:15:43,483
+多头或空头主动推动价格变化
+or seller or an influential buyer or seller takes the initiative to move prices.
+
+201
+00:15:43,484 --> 00:15:48,584
+注意，这里的“有影响力的”指的是大机构、商业交易者、对冲基金等
+So note, influential, big boy, commercial, paper, you know, hedge fund.
+
+202
+00:15:48,684 --> 00:15:51,584
+我们在模块 1 里讲过这些大周期参与者
+We spoke about these big, large time frame participants.
+
+203
+00:15:51,984 --> 00:15:52,884
+在模块 1 中讲过
+back in module 1.
+
+204
+00:15:52,984 --> 00:15:59,284
+所以某个有影响力的参与者进入市场，发起价格的主动性移动
+So someone comes in, they're influential and they are going to initiate a move in the market.
+
+205
+00:16:00,484 --> 00:16:08,384
+然后市场参与者或有影响力的参与者通过发起订单来执行交易策略
+Then market participants make the play or the influential participants, they make this play by initiating an order.
+
+206
+00:16:08,984 --> 00:16:12,704
+现在关键的是要理解
+Now the important thing to understand is that when the
+
+207
+00:16:12,704 --> 00:16:18,284
+当参与者进入市场发起订单时，他会利用所有可用的流动性
+participant steps into the market to initiate this order, he utilizes all the liquidity available.
+
+208
+00:16:18,584 --> 00:16:19,284
+这是什么意思呢？
+What does that mean?
+
+209
+00:16:19,284 --> 00:16:26,384
+换句话说，他不会被动等待，而是会一开始就非常激进
+In other words, he's not going to necessarily be passive, he's going to initially start off very aggressively.
+
+210
+00:16:27,184 --> 00:16:34,204
+好，所以关键是要理解，主动价格行为
+Okay, so important you understand that initiative price action is a very aggressive order type where the market
+
+211
+00:16:34,204 --> 00:16:38,884
+是一种非常激进的订单类型，交易者会主动吃买单或砸卖盘
+participant looks to lift either the bids or sell into the offer.
+
+212
+00:16:39,584 --> 00:16:42,739
+好，如果出现流动性不足
+Okay, then if there is a lack of liquidity, in
+
+213
+00:16:42,739 --> 00:16:45,894
+比如多头入场，但没有人愿意卖给他
+other words, if a buyer comes in and no one
+
+214
+00:16:45,894 --> 00:16:48,418
+那么
+is willing to sell it to him, he
+
+215
+00:16:48,418 --> 00:16:50,942
+图表上就会显示非常激进的走势
+will then look very aggressive on the charts
+
+216
+00:16:50,942 --> 00:16:53,781
+看起来就像市场在趋势中
+and it will appear as though the market's trending.
+
+217
+00:16:53,884 --> 00:16:55,884
+大家一定要理解这一点
+It's so crucial to understand this, guys.
+
+218
+00:16:56,084 --> 00:16:59,041
+换句话说，如果你看到图表上
+In other words, if you look at a chart and
+
+219
+00:16:59,041 --> 00:17:01,998
+出现非常激进的走势，很多时候
+you see a very aggressive move, a lot of the
+
+220
+00:17:01,998 --> 00:17:04,363
+是因为多头或空头
+time it could be because a buyer or
+
+221
+00:17:04,363 --> 00:17:06,728
+入场了，但流动性不足
+seller has stepped in, but there hasn't been
+
+222
+00:17:06,728 --> 00:17:09,981
+无法以最优价格完成订单
+enough liquidity for him to execute the order at best price.
+
+223
+00:17:10,084 --> 00:17:14,353
+现在，如果价格上涨时
+Now, if, however, as the price moves up, this long-term
+
+224
+00:17:14,353 --> 00:17:21,183
+发起交易的参与者遇到响应性卖家或图表上的被动卖单
+participant who's initiating finds responsive sellers or runs into a passive seller sitting on the chart,
+
+225
+00:17:21,584 --> 00:17:28,484
+在卖盘处，我们可能会看到双向交易，图表上价格会呈现区间锁定的响应。
+on the offer, we will then likely see two-way trade and a more bracketed price response on the charts.
+
+226
+00:17:28,884 --> 00:17:30,184
+所以很简单，这意味着什么？
+So very simply, what does it mean?
+
+227
+00:17:31,384 --> 00:17:35,484
+常规交易时段开盘后，高盛的一位大买家进入市场。
+The cash open opens and a big buyer from Goldman Sachs steps into the market.
+
+228
+00:17:35,684 --> 00:17:40,684
+他接到指令，以最优价格为客户买入20,000手。
+He's received the order to lift 20,000 buns at best price for his client.
+
+229
+00:17:41,084 --> 00:17:44,684
+现在，这位高盛交易员会开始吃进卖盘。
+Now, this Goldman Sachs trader is going to be buying up the offer.
+
+230
+00:17:45,384 --> 00:17:46,684
+现在有两种情况可能发生。
+Now one of two things can happen.
+
+231
+00:17:46,984 --> 00:17:48,550
+他可以进入市场，
+He can go to the market and
+
+232
+00:17:48,550 --> 00:17:49,669
+开始吃进这些卖盘
+start buying up this offer
+
+233
+00:17:49,669 --> 00:17:51,683
+有人愿意卖给他。
+and someone is willing to sell it to him.
+
+234
+00:17:51,684 --> 00:17:58,084
+此时订单流会呈现缓慢的逐步上涨。
+In which case the order flow will look like a slow sort of progressive drift grind higher.
+
+235
+00:17:59,084 --> 00:18:01,015
+但如果没有卖盘，
+If however there isn't an offer, if
+
+236
+00:18:01,015 --> 00:18:03,221
+没人愿意卖给他，
+no one wants to sell to him, what's
+
+237
+00:18:03,221 --> 00:18:07,284
+市场就会快速大幅上涨。为什么？
+going to happen is that the market is going to move quite aggressively higher.Why?
+
+238
+00:18:07,284 --> 00:18:10,384
+因为高盛交易员必须执行订单。
+Because this Goldman Sachs trader has to execute the order.
+
+239
+00:18:10,984 --> 00:18:19,484
+这种激进的价格行为只有在找到足够流动性后才会停止。
+Now, that aggressive price action will only stop once the Goldman Sachs finds liquidity necessary to fill his order.
+
+240
+00:18:20,084 --> 00:18:22,784
+到那时，我们会开始看到双向交易。
+At that point, we'll start to get two-way trade.
+
+241
+00:18:23,184 --> 00:18:29,540
+再强调一次，注意，当主动性开始时…
+And again, note, when initiative starts... What will likely happen once that response of
+
+242
+00:18:29,540 --> 00:18:32,096
+卖方完成卖单后介入
+seller steps in, once he's completed his sell
+
+243
+00:18:32,096 --> 00:18:34,971
+如果买方仍需继续主动买入
+order, if the buyer still needs to keep initiating
+
+244
+00:18:34,971 --> 00:18:40,083
+市场将延续早盘趋势
+and buying, the market will then continue with the trend from earlier on in the morning.
+
+245
+00:18:41,184 --> 00:18:45,784
+注意，主动性是一种以市价交易的激进订单类型
+Now note, initiative is an aggressive order type that trades at market price.
+
+246
+00:18:45,984 --> 00:18:51,084
+除非有其他长期时间框架的响应，否则很少有被动订单进入
+There is rarely passive order entering unless there is a response from the other long-term time frame.
+
+247
+00:18:51,684 --> 00:18:58,484
+关键是要理解这一点，因为当你看到长期参与者
+crucial you understand this guys because when you see initiative being taken from longer term participants
+
+248
+00:18:58,884 --> 00:19:00,581
+展现主动性时
+a you don't want to stand
+
+249
+00:19:00,581 --> 00:19:02,278
+不能逆势而为，而要
+against it but b you want
+
+250
+00:19:02,278 --> 00:19:03,975
+顺应动能
+to go with the momentum and
+
+251
+00:19:03,975 --> 00:19:08,783
+你的策略必须积极主动
+you need to be aggressive in other words your strategies and we'll talk about this a lot
+
+252
+00:19:08,984 --> 00:19:10,645
+策略必须是主动型
+your strategies will need to
+
+253
+00:19:10,645 --> 00:19:12,970
+不能等回撤再入场
+be aggressive strategies you can't afford to
+
+254
+00:19:12,970 --> 00:19:15,295
+为什么？
+sit waiting for a pullback why because
+
+255
+00:19:15,295 --> 00:19:19,282
+因为这位有影响力的交易者也不会等
+ding ding ding this influential player is not going to wait either
+
+256
+00:19:20,684 --> 00:19:29,084
+主动性拍卖可能持续很久，有时长达数小时、数天甚至数周
+Then, initiative auctions can last a long period of time, sometimes over a period of hours, days and weeks.
+
+257
+00:19:29,084 --> 00:19:31,384
+这是一个非常非常关键的要点。
+A crucial, crucial element to understand.
+
+258
+00:19:31,584 --> 00:19:39,283
+当出现主动性时，市场要反转需要很长很长时间，如果会反转的话。
+When there is initiative, it's going to take a long, long time for the market to turn itself around, if it turns itself around.
+
+259
+00:19:39,584 --> 00:19:41,369
+这一点非常关键，因为
+And that's crucial to understand because
+
+260
+00:19:41,369 --> 00:19:43,749
+当你看到这种主动性订单流时，
+when you see these initiative order flow, you
+
+261
+00:19:43,749 --> 00:19:46,129
+你清楚地知道市场存在自然偏向，
+know fine well that there's a natural bias
+
+262
+00:19:46,129 --> 00:19:52,081
+不仅是几小时或几分钟，可能是几天甚至几周。
+in the market, not just for a couple of hours or minutes, but potentially a couple of days and weeks.
+
+263
+00:19:53,784 --> 00:19:59,684
+多头和空头会在不同价格位置发起主动性，取决于各自的交易策略。
+Initiative is taken by buyers and sellers at different price locations depending on their respective strategies.
+
+264
+00:20:00,084 --> 00:20:04,584
+主动性会持续，直到对手方提供所需的流动性。
+Initiative is taken until the other side participants provide the required liquidity.
+
+265
+00:20:04,684 --> 00:20:08,784
+再强调一次，我刚才的例子里已经详细讲过。
+Again, we've spoken a lot about this in the example I just used.
+
+266
+00:20:09,184 --> 00:20:14,184
+现在我们来看被动价格行为的表现。
+Now let's turn our attention and have a look at responsive price pattern behavior.
+
+267
+00:20:15,584 --> 00:20:21,384
+所以被动价格行为不如主动价格行为激进。
+So responsive price action is not as aggressive as initiative price action.
+
+268
+00:20:21,684 --> 00:20:28,884
+实际上，被动价格行为是多头和空头对高价或低价的响应。
+In fact, responsive is where the buyers and sellers respond to higher or lower prices being advertised.
+
+269
+00:20:29,084 --> 00:20:32,084
+现在看图表里的例子。
+Now, a good example to look at is the one in the chart provided.
+
+270
+00:20:32,384 --> 00:20:34,753
+可以看到，在高点
+As you can see, at the high
+
+271
+00:20:34,753 --> 00:20:37,460
+也就是阻力位附近，
+where we have resistance, when the market gets
+
+272
+00:20:37,460 --> 00:20:41,183
+当市场触及这些价格时，空头会做出响应。
+to those prices being advertised, we see a response from sellers.
+
+273
+00:20:41,184 --> 00:20:46,484
+换句话说，空头会被吸引入场，或对高价做出响应
+In other words, sellers get brought into the game or they respond to the higher prices.
+
+274
+00:20:46,584 --> 00:20:55,184
+同样，当价格接近支撑位时，我们又会看到多头对低价做出响应
+Equally, when the price is advertised toward the support area, we again see buyers responding to lower prices being advertised.
+
+275
+00:20:56,184 --> 00:20:59,784
+再强调一次，我们之前说主动性非常激进
+Now on the flip side, remember, we said initiative is very aggressive.
+
+276
+00:20:59,784 --> 00:21:03,984
+其订单类型非常激进，是市价单，不是被动等待
+The order type is very aggressive at the market, you know, not as passive.
+
+277
+00:21:04,384 --> 00:21:09,984
+所以现在可以看到，被动价格行为属于被动订单类型
+So what we can see now is that responsive type price action is a passive order type.
+
+278
+00:21:10,184 --> 00:21:14,035
+所以在空头发起的下跌行情中
+So in a downward pricing initiative taken by sellers, there
+
+279
+00:21:14,035 --> 00:21:17,116
+会有多头在低价位挂买单
+are buyers resting on the bid at lower
+
+280
+00:21:17,116 --> 00:21:20,582
+被动等待入场
+prices, passively waiting to be brought into the game.
+
+281
+00:21:20,584 --> 00:21:24,802
+所以当价格因空头
+So as prices start to move lower because sellers are
+
+282
+00:21:24,802 --> 00:21:28,177
+发起卖单而开始下跌时
+initiating sell side orders, there will be buyers
+
+283
+00:21:28,177 --> 00:21:30,708
+会有多头
+sitting on the bid waiting or
+
+284
+00:21:30,708 --> 00:21:34,083
+在买单上等待或乐于在低价成交
+happily getting filled at lower prices being advertised.
+
+285
+00:21:34,284 --> 00:21:37,384
+他们被动等待订单成交
+So they're passively waiting for their order fill.
+
+286
+00:21:39,984 --> 00:21:47,580
+通常买卖响应出现时，会出现双向交易
+Typically when we see response of buying or selling, two-way trade occurs and the market moves sideways finding some accepted fair value.
+
+287
+00:21:47,584 --> 00:21:51,584
+所以你会注意到，也应该已经注意到
+So what you will come to notice and you should have already noticed is that
+
+288
+00:21:51,584 --> 00:21:53,952
+市场大部分时间
+that most of the time in the markets
+
+289
+00:21:53,952 --> 00:21:58,984
+在一天中，大部分时间都处于被动价格行为
+over a period of a day, most of the time is spent with responsive type price action.
+
+290
+00:21:59,184 --> 00:22:05,081
+非常罕见，大多数日子里市场只会有1-2次主动性行情
+It's very, very rare. You know, the most days you'll find that there's one or two initiative moves in the market.
+
+291
+00:22:05,184 --> 00:22:09,812
+剩下的时间我们只是在填充
+And then the rest of the day we spend kind of just filling out and we
+
+292
+00:22:09,812 --> 00:22:13,283
+看到多头和空头被动响应价格的上下波动
+see buyers and sellers passively responding as prices move up and down.
+
+293
+00:22:14,484 --> 00:22:21,584
+注意，主动性和被动价格行为是拍卖过程中
+Now, initiative and responsive price action are two types of auction process that occur over a multitude of time frames.
+
+294
+00:22:21,984 --> 00:22:27,684
+要完全理解这个概念，你要应用到你偏好的时间框架
+In order to fully grasp the concept, you should also apply it to your preferred time frame.
+
+295
+00:22:27,784 --> 00:22:35,684
+所以注意，这不只是1分钟、2分钟、10分钟
+So note guys, this isn't just a 1 minute or a 2 minute or a 10 minute, a half hour, hourly, daily.
+
+296
+00:22:35,984 --> 00:22:43,584
+你可以在任何时间框架上使用主动性与被动性的概念
+You can utilize the concept of initiative versus responsive on any given time frame.
+
+297
+00:22:43,984 --> 00:22:46,124
+关键是要
+The important thing to do is
+
+298
+00:22:46,124 --> 00:22:48,264
+开始应用这个原则，这个非常
+start taking this principle, this very
+
+299
+00:22:48,264 --> 00:22:50,404
+重要的原则，并开始实践
+important principle, and start applying it
+
+300
+00:22:50,404 --> 00:22:54,684
+在观察市场时融入你的思维
+to some of your thinking when you are looking at the markets.
+
+301
+00:22:54,884 --> 00:23:01,584
+这样做后，你会突然发现看市场的方式完全不同
+You do that and suddenly you're just going to suddenly start looking at the markets very, very differently.
+
+302
+00:23:03,484 --> 00:23:08,684
+那么主动性与被动价格行为的典型例子是什么样的？
+So what would a typical example look like of initiative versus responsive price action?
+
+303
+00:23:08,984 --> 00:23:12,184
+在提供的成交量分布图中可以看到两个交易日
+What you can see in the profile provided is two days.
+
+304
+00:23:12,484 --> 00:23:15,517
+注意，我们可以看到
+And as you'll notice, we can see with
+
+305
+00:23:15,517 --> 00:23:17,792
+从TPO图可以看到，我们在
+the TPOs, we opened within the
+
+306
+00:23:17,792 --> 00:23:21,583
+前一交易日的区间内开盘，第一小时
+previous day's range and straight away off the first hour.
+
+307
+00:23:21,584 --> 00:23:23,753
+交易动能驱动下，市场立即表现出
+power of trade the market just
+
+308
+00:23:23,753 --> 00:23:25,922
+主动性，表现出进取性，我们
+showed initiative it showed aggressiveness we
+
+309
+00:23:25,922 --> 00:23:28,091
+突破了前一交易日的高点
+took out the previous days high
+
+310
+00:23:28,091 --> 00:23:30,260
+并持续以非常强劲的趋势方式
+and we just continued in a
+
+311
+00:23:30,260 --> 00:23:32,429
+推进，换句话说
+very aggressive trend like manner in
+
+312
+00:23:32,429 --> 00:23:35,682
+从一开始就体现了主动性
+other words there was initiative from the very beginning
+
+313
+00:23:36,284 --> 00:23:41,684
+这种日内类型的主动性行为，当我们
+of this you know of this day type and that sort of initiative when we see it so
+
+314
+00:23:41,684 --> 00:23:43,484
+早早看到时，记得我之前说的
+early remember what I said it
+
+315
+00:23:43,484 --> 00:23:46,484
+第一，它需要很长时间才会反转
+one it takes a long long time to turn around
+
+316
+00:23:47,184 --> 00:23:50,012
+但更重要的是，它只会在
+but more importantly it only stops once it
+
+317
+00:23:50,012 --> 00:23:52,840
+遇到被动性卖家时才会停止，我们可以看到
+runs into responsive sellers and we can see
+
+318
+00:23:52,840 --> 00:23:59,504
+一旦找到这些被动性卖家，市场就进入
+that once it finally found those responsive sellers the market then settled accepting range you know for the
+
+319
+00:23:59,504 --> 00:24:01,424
+接受区间并横盘至全天剩余时间
+rest of the day now straight
+
+320
+00:24:01,424 --> 00:24:05,584
+现在你立刻就会发现
+away you'd be just looking at this example you'll say to yourself well
+
+321
+00:24:05,984 --> 00:24:08,418
+当市场出现这种主动性时
+very clearly when there's that sort of initiative
+
+322
+00:24:08,418 --> 00:24:10,244
+我们清楚地知道
+in the market we know that
+
+323
+00:24:10,244 --> 00:24:12,983
+可以顺势交易或制定策略
+we can play the market or we can strategize
+
+324
+00:24:13,484 --> 00:24:16,384
+只要主动性仍在市场中
+from sort of the one side only so long as
+
+325
+00:24:16,384 --> 00:24:18,704
+就能一直持有
+that initiative remains in the market and had
+
+326
+00:24:18,704 --> 00:24:21,024
+在这个例子中
+you done that on this example had you
+
+327
+00:24:21,024 --> 00:24:23,054
+如果你一直寻找
+you know constantly been looking for sort
+
+328
+00:24:23,054 --> 00:24:25,084
+买方主动性带来的机会
+of buy side opportunities with the initiative
+
+329
+00:24:25,084 --> 00:24:27,984
+不仅在早盘 还在日内后期
+not just early on but later on in the day
+
+330
+00:24:28,284 --> 00:24:31,450
+你会发现它提供了
+you know it would have provided some very
+
+331
+00:24:31,450 --> 00:24:34,616
+非常成功的交易机会
+very successful opportunities in the market so that's
+
+332
+00:24:34,616 --> 00:24:37,782
+这就是主动价格行为的第一个例子
+our first example of an initiative price action
+
+333
+00:24:39,184 --> 00:24:41,956
+现在 我用来讲解
+Now the example I like to use for sort of
+
+334
+00:24:41,956 --> 00:24:44,174
+更多被动价格行为的例子
+more responsive type price action, whilst you do
+
+335
+00:24:44,174 --> 00:24:45,837
+虽然你能在日线图上看到
+see it on a daily time
+
+336
+00:24:45,837 --> 00:24:47,500
+但为了让我
+frame, in order for me to
+
+337
+00:24:47,500 --> 00:24:51,381
+让你真正理解我想传达的内容,
+get you to really fully grasp what I'm trying to get across to you,
+
+338
+00:24:51,684 --> 00:24:54,484
+我会加入很多成交量分布图。
+I like to incorporate quite a number of profiles.
+
+339
+00:24:54,484 --> 00:25:00,184
+注意，这可能是3-4周的数据，但概念相同。
+Now, again, this is probably maybe three or four weeks of data, but the concept is the same.
+
+340
+00:25:00,284 --> 00:25:03,284
+所以我想用较长周期给你展示。
+And that's why I want to show it to you on a little bit of a longer term time frame.
+
+341
+00:25:03,284 --> 00:25:06,784
+图中可以看到多个成交量分布图。
+So what you can see in the chart is a number of profiles.
+
+342
+00:25:06,784 --> 00:25:11,384
+背景是市场经历了较大抛售，
+And what's occurred in terms of context is we've had a relatively aggressive sell-off.
+
+343
+00:25:11,684 --> 00:25:17,484
+然后开始横盘/震荡，进入盘整/压缩区间。
+And then the market has just started moving sideways in a sideways consolidating holding pattern.
+
+344
+00:25:17,584 --> 00:25:22,984
+所以是在低点支撑和高点阻力位之间区间锁定。
+So it's bracketing between a low point or support and a high point resistance.
+
+345
+00:25:22,984 --> 00:25:28,284
+注意，多头开始买入时，他们已进入这个游戏
+Now, the point at which the buyers start to buy, they've been brought into that game.
+
+346
+00:25:28,884 --> 00:25:35,884
+价格被标到折价区，多头开始响应低价
+The prices have been advertised at such a discount that suddenly buyers are responding to lower prices being advertised.
+
+347
+00:25:37,084 --> 00:25:41,484
+只要他们认为有折价，就会继续买入
+They will keep buying those prices so long as they feel there is a discount at hand.
+
+348
+00:25:41,884 --> 00:25:49,084
+一旦遇到响应性卖家，就会退出市场
+Once they then run into responsive sellers, they will then back off. They will then sort of move out of the market.
+
+349
+00:25:49,084 --> 00:25:52,941
+他们会停止买入，因为
+They will stop responding and buying the market as the
+
+350
+00:25:52,941 --> 00:25:55,255
+响应性卖家开始利用
+responsive sellers start taking advantage of
+
+351
+00:25:55,255 --> 00:25:57,183
+溢价区的价格
+sort of premium type prices.
+
+352
+00:25:57,284 --> 00:25:59,500
+如此循环往复
+And so forth and so forth, the
+
+353
+00:25:59,500 --> 00:26:02,666
+市场几乎在我们所谓的
+market continues to sort of ping almost between what we
+
+354
+00:26:02,666 --> 00:26:06,782
+初始支撑区间和初始阻力位之间来回振荡
+like to think of an initial support zone and an initial resistance zone.
+
+355
+00:26:07,084 --> 00:26:10,394
+观察这张图时，关键要理解的是
+The important thing to understand just looking at this chart
+
+356
+00:26:10,394 --> 00:26:12,711
+价格的走势
+is how prices, we can see that
+
+357
+00:26:12,711 --> 00:26:16,683
+并非一定会从支撑位或阻力位强势突破
+the price isn't necessarily aggressively moving off support or moving off resistance.
+
+358
+00:26:16,884 --> 00:26:18,884
+这背后自有原因
+And there's a very good reason for that.
+
+359
+00:26:18,884 --> 00:26:21,384
+因为价格正在被报出
+It's because price being advertised.
+
+360
+00:26:21,784 --> 00:26:24,052
+在不同价位上，它并没有
+at various points, you know, it's not
+
+361
+00:26:24,052 --> 00:26:26,968
+并不总是处于折价区
+necessarily always a discount in the sense that there's
+
+362
+00:26:26,968 --> 00:26:29,884
+因为风险收益比不足以支撑逆势操作
+strong risk reward to suddenly start fading the trend.
+
+363
+00:26:30,184 --> 00:26:32,517
+同样，市场可能
+Equally, maybe the market, you know, pulls
+
+364
+00:26:32,517 --> 00:26:35,183
+略有回撤
+back a little bit, but it's not necessarily
+
+365
+00:26:35,183 --> 00:26:39,183
+但回撤幅度不足以触发主动性空头行动
+pulling back enough for us to see aggressive initiative short side action.
+
+366
+00:26:39,384 --> 00:26:41,784
+所以我们常会看到
+And that's why we tend to see a
+
+367
+00:26:41,784 --> 00:26:43,884
+更多被动价格行为
+little bit more responsive type, you know,
+
+368
+00:26:43,884 --> 00:26:45,384
+在极端行情后
+price action after seeing very,
+
+369
+00:26:45,384 --> 00:26:48,084
+非常激进的抛售或非常激进的上涨。
+very aggressive, you know, sell-offs or very aggressive rallies.
+
+370
+00:26:48,184 --> 00:26:55,582
+所以你可以清楚看到，多头如何响应低价，空头如何响应高价。
+So what you can clearly see here is how buyers respond to low prices and the sellers respond to the higher prices.
+
+371
+00:26:56,384 --> 00:26:58,941
+有趣的是，
+What is interesting to point out is,
+
+372
+00:26:58,941 --> 00:27:01,864
+如你在最后一个成交量分布图中看到的，
+as you can see in that last profile,
+
+373
+00:27:01,864 --> 00:27:05,883
+最终我们再次看到主动价格行为的启动，
+eventually we again see the initiation or the initiative price action
+
+374
+00:27:06,484 --> 00:27:12,684
+或主动响应的发生，随着现有趋势的小幅延续。
+or the initiative response occurring as we then see a little bit of a continuation of the existing trend.
+
+375
+00:27:12,684 --> 00:27:16,084
+注意，我们确实在移动，这正是这个例子的好处。
+So note, we do move, and that's why this example is good.
+
+376
+00:27:16,084 --> 00:27:23,184
+我们并非总是停留在被动价格行为中，被动和主动价格行为是交织在一起的。
+We don't necessarily always remain in responsive. We see responsive and initiative price action sort of mingling together.
+
+377
+00:27:23,284 --> 00:27:26,384
+这种情况在全天会反复出现
+It occurs all the time over the period of the day.
+
+378
+00:27:26,684 --> 00:27:29,784
+有时是被动价格行为，有时是主动价格行为
+Sometimes it's responsive and sometimes it's initiative.
+
+379
+00:27:31,384 --> 00:27:36,284
+再强调一次，这是主动价格行为的最后一个例子
+Now again, one last example of an initiative sort of price action response.
+
+380
+00:27:36,584 --> 00:27:39,784
+这里用的是突破的例子
+And the example we've used here is like a breakout.
+
+381
+00:27:39,784 --> 00:27:41,684
+是突破或盘内突破
+It's a breakout or an inside day break.
+
+382
+00:27:41,984 --> 00:27:45,584
+这是非常流行的交易策略设置
+It's a very popular sort of trade setup.
+
+383
+00:27:45,884 --> 00:27:48,259
+但关键的是，我要展示给你的
+But the important thing I'm going to show you, not
+
+384
+00:27:48,259 --> 00:27:50,159
+不只是这个例子，而是长期来看
+just in this example, but over time and
+
+385
+00:27:50,159 --> 00:27:51,584
+在后续的模块 2 和 3 中,
+over the rest of the module,
+
+386
+00:27:51,684 --> 00:27:52,907
+我会
+2 and 3 is I'm going
+
+387
+00:27:52,907 --> 00:27:55,354
+向你展示如何构建策略
+to show you how to develop the strategy
+
+388
+00:27:55,354 --> 00:28:01,471
+首先要理解原理，也就是理解市场上涨或下跌背后的逻辑
+first by understanding the principle, in other words, understanding the logic behind why a market is moving up or down.
+
+389
+00:28:02,384 --> 00:28:06,634
+然后我们开始构建策略，这样
+Then we're going to start developing a strategy so that
+
+390
+00:28:06,634 --> 00:28:10,034
+你就能利用这些
+you can take advantage of understanding these very
+
+391
+00:28:10,034 --> 00:28:12,584
+基础但强大且盈利的策略
+basic but powerful and profitable strategies.
+
+392
+00:28:12,984 --> 00:28:20,884
+所以你可以看到的是非常基础的盘内突破，可以看到一些动能，一些时间框架进入这个市场
+So what you can see are very basic inside daybreak. We can see a little bit of momentum, a little bit of one time framing coming into this market.
+
+393
+00:28:21,284 --> 00:28:24,617
+但关键是，一旦看到主动性价格行为
+But the key is that once we see the initiation,
+
+394
+00:28:24,617 --> 00:28:27,283
+一旦看到买盘流入市场
+once we see that buy flow come into
+
+395
+00:28:27,283 --> 00:28:30,283
+注意它会贯穿整个交易时段
+the market, note how it lasts the entire session.
+
+396
+00:28:30,284 --> 00:28:34,484
+现在，我选这个例子的原因是，一、
+Now, the reason I want to use this example is because one, as we can see.
+
+397
+00:28:35,184 --> 00:28:40,784
+如果你整个时段都做多，想象有多轻松
+Had you stayed a buyer for predominantly this entire session, imagine how easy it would have felt.
+
+398
+00:28:40,784 --> 00:28:42,884
+现在，我不是说让你开盘就买入
+Now, I'm not saying you buy at the start of the day.
+
+399
+00:28:42,984 --> 00:28:48,884
+我的意思是，你只寻找做多机会
+What I'm saying is you're initiating or looking for long side trade opportunities only.
+
+400
+00:28:49,084 --> 00:28:54,684
+这正是区分主动价格行为和被动价格行为的目的
+And that's the purpose of distinguishing between, you know, sort of initiative and responsive price behavior.
+
+401
+00:28:54,984 --> 00:29:02,250
+看到非常激进的主动价格行为时
+When we see very aggressive initiative price behavior, we don't want to be entertaining fade trades
+
+402
+00:29:02,250 --> 00:29:05,883
+在出现被动价格行为前，别考虑逆势交易
+until we see that responsive type price behavior.
+
+403
+00:29:05,884 --> 00:29:12,015
+如果没看到这一点，市场可能会继续趋势或激烈波动
+If we don't see that, the market is likely to keep trending or moving in a very aggressive
+
+404
+00:29:12,015 --> 00:29:16,783
+市场可能会持续趋势或激进运行
+way as we see the initiation occur over the period of the entire session.
+
+405
+00:29:16,984 --> 00:29:21,284
+注意，作为交易者
+Now, so important is that as a trader, we always want to...
+
+406
+00:29:21,584 --> 00:29:25,984
+我们要始终让交易优势与主导趋势保持一致
+develop our edges or our strategies in line with the prevailing trend.
+
+407
+00:29:26,184 --> 00:29:35,084
+所以关键是要区分主动价格行为和被动价格行为
+And that is why it's crucial to distinguish between initiative price response behavior and responsive price action.
+
+408
+00:29:37,284 --> 00:29:39,484
+现在该把统计学教科书拿出来了
+So it's time to bring those statistics textbooks out.
+
+409
+00:29:39,684 --> 00:29:45,984
+现在我们来聊聊对称性结构，即对称和非对称的成交量分布图。
+We're going to start talking a little bit about symmetry now. So symmetrical and non-symmetrical profiles.
+
+410
+00:29:46,184 --> 00:29:48,869
+再强调一次，
+Again, whilst we go through, you know, particularly
+
+411
+00:29:48,869 --> 00:29:51,554
+在模块2中，
+module two, we're going to talk a lot
+
+412
+00:29:51,554 --> 00:29:52,896
+我们会大量讲解价格结构，
+about structure and how
+
+413
+00:29:52,896 --> 00:29:55,581
+以及成交量分布图的形成和形态。
+profiles develop and the shape of the profiles.
+
+414
+00:29:55,684 --> 00:29:59,132
+注意，正是这种形态和结构，
+Now, it's this shape and this structure that is going
+
+415
+00:29:59,132 --> 00:30:01,200
+会帮我们建立市场背景和理解，
+to help us develop context and
+
+416
+00:30:01,200 --> 00:30:05,682
+之后再基于这些背景和理解来制定交易策略。
+understanding, but later on develop our strategies based on the context and understanding.
+
+417
+00:30:06,084 --> 00:30:07,184
+所以关键是，大家
+So crucial, guys.
+
+418
+00:30:07,184 --> 00:30:10,984
+我们做成交量分布不仅仅是为了开发交易策略
+We don't just do volume profiling to develop strategies.
+
+419
+00:30:11,384 --> 00:30:18,984
+而是利用它来客观理解市场并执行交易
+We utilize it because it gives us an objective understanding and approach to executing within the markets.
+
+420
+00:30:19,484 --> 00:30:25,084
+再强调一次，对称性结构的成交量分布图
+So, symmetrical profiles, again also known as balanced profiles.
+
+421
+00:30:25,684 --> 00:30:32,284
+也叫平衡状态分布，多空机会均等
+So they represent equal opportunities on both long and short positions, for example a normal distribution.
+
+422
+00:30:32,284 --> 00:30:36,484
+比如正态分布
+Now what I mean by that is when a market is normally distributing.
+
+423
+00:30:37,384 --> 00:30:44,284
+无论做多还是做空，策略机会基本均等
+The opportunities in terms of strategies are more or less equal whether you're buying it or whether you're selling it.
+
+424
+00:30:44,384 --> 00:30:48,984
+无论做多还是做空，策略机会大致相等
+And you'll understand what I mean by this as we go through various examples.
+
+425
+00:30:50,084 --> 00:30:56,684
+此时市场处于平衡状态
+Then the market is in. balance awaiting further information before making a directional move.
+
+426
+00:30:56,684 --> 00:30:59,593
+所以这正是机会均等的原因
+So this is the reason why there's an
+
+427
+00:30:59,593 --> 00:31:02,138
+因为市场接受了公允价值
+equal opportunity because the market is accepting
+
+428
+00:31:02,138 --> 00:31:04,683
+多头和空头达成价格共识
+fair value, buyers and sellers are agreeing
+
+429
+00:31:05,284 --> 00:31:09,376
+因此多头不愿以溢价买入
+to a price and by that token neither buyers want to buy
+
+430
+00:31:09,376 --> 00:31:13,468
+空头也不愿以折价卖出
+premium nor do the sellers want to sell discount prices and for
+
+431
+00:31:13,468 --> 00:31:18,583
+所以市场上涨或下跌的机会均等
+that reason there's an equal opportunity for the market to go up or go down.
+
+432
+00:31:19,684 --> 00:31:24,484
+而相反情况是非对称性结构
+Then, the opposite of that is non-symmetrical profiles or not balanced.
+
+433
+00:31:24,484 --> 00:31:30,583
+注意看图片，第一张蓝色小图，这就是典型的正态分布区间。
+Now, as you can see in the pictures, our first blue little picture there, that's what a typical normal distribution looks like.
+
+434
+00:31:30,884 --> 00:31:33,593
+你会发现，大部分交易
+What you'll notice is that, you know, majority
+
+435
+00:31:33,593 --> 00:31:36,641
+都在均价的70%到
+of the trade is executed within sort of 70 to
+
+436
+00:31:36,641 --> 00:31:40,705
+90%区间内完成，也就是当天的平均价格。
+90% of the mean, you know, it's the average price on the day.
+
+437
+00:31:41,984 --> 00:31:49,384
+再看非对称性结构，图中可以看到有偏度，可能是正偏或负偏。
+Now, non-symmetrical profiles, as you can see by the pictures, have somewhat of a skew. It could be a positive skew or a negative skew.
+
+438
+00:31:49,584 --> 00:31:56,384
+非对称性结构，顾名思义，意味着机会不均等。
+Now, non-symmetrical profiles, by that very definition, mean non-equal opportunities.
+
+439
+00:31:56,584 --> 00:32:00,574
+关键是要理解非对称性，因为非对称性
+Now, it's important you understand the idea of non-symmetry because it's non-symmetry
+
+440
+00:32:00,574 --> 00:32:03,234
+开始为我们提供一点
+that starts to give us a little bit
+
+441
+00:32:03,234 --> 00:32:09,884
+是一种倾向，不一定是偏见，而是向某一方向的轻微倾斜
+of a lean, not necessarily a bias, but a little bit of a lean in one direction or the other.
+
+442
+00:32:10,184 --> 00:32:12,984
+换句话说，假设我对你说，你走进赌场
+In other words, imagine I said to you, you walked
+
+443
+00:32:12,984 --> 00:32:15,784
+我跟你说，轮盘上出现红色的概率大约是60%
+into a casino, and I said to you, there's roughly
+
+444
+00:32:15,784 --> 00:32:19,704
+有60%的概率落在轮盘的红色区域
+a 60% chance that we could land on the color red on the roulette table.
+
+445
+00:32:20,384 --> 00:32:24,784
+我想大多数人都会同意，你会抓住这个机会，因为你有交易优势
+I think most of you would agree. you would look to take that opportunity as you have an edge.
+
+446
+00:32:25,084 --> 00:32:32,081
+市场中出现非对称性结构时，情况类似，会向某一方向轻微倾斜
+It's similar in this sense. When there is non-symmetry in a market, it gives us a little bit of a lean in one direction or the other.
+
+447
+00:32:32,284 --> 00:32:34,684
+所以关键的是要理解这个原理
+And that's why this principle is crucial to understand.
+
+448
+00:32:35,584 --> 00:32:44,084
+因此，顺应这种市场自然倾向是有利的，逆势而为则风险更大
+So, it's advantageous and poor odds opportunities to go against when there is this natural tendency in the market.
+
+449
+00:32:44,484 --> 00:32:47,108
+所以，非对称性结构的例子比如
+So, examples of non-symmetry would be a trending
+
+450
+00:32:47,108 --> 00:32:49,732
+趋势市场或B型剖面图
+market or a B shape or a P
+
+451
+00:32:49,732 --> 00:32:52,684
+或P型剖面图分布
+shape, sorry, a B or a P shape distribution.
+
+452
+00:32:52,784 --> 00:32:59,084
+我们后面会详细讲B型和P型分布
+Now, we will talk a little bit about the B shape and the P shape distributions as we go further along.
+
+453
+00:33:00,484 --> 00:33:06,184
+在非对称性偏态中，多头或空头已采取主动性
+Now, in a non-symmetrical skew, there is an initiative that has been taken by either buyers or sellers.
+
+454
+00:33:06,184 --> 00:33:11,984
+注意，这是由有影响力的交易者发起的主动性
+So note, it starts off with an initiative or initiative taken by influential players.
+
+455
+00:33:12,484 --> 00:33:16,359
+价格变化会迫使
+The change in the price that has occurred, it forces
+
+456
+00:33:16,359 --> 00:33:21,784
+其他时间框架的参与者响应并跟进趋势或反向操作
+other time frame participants to respond and hop onto the trend or counter it.
+
+457
+00:33:22,584 --> 00:33:32,084
+这种反向操作最终导致持仓和价格失衡，并引发激进的价格响应。
+This countering eventually causes an imbalance in positions and prices and it eventually results in a seemingly aggressive price response.
+
+458
+00:33:32,084 --> 00:33:35,343
+注意，当出现这种失衡时，
+So note, when we have this imbalance, we
+
+459
+00:33:35,343 --> 00:33:38,602
+我们会看到主动性，即价格变化，
+get the initiative, that change in price, that
+
+460
+00:33:38,602 --> 00:33:43,083
+这种激进的价格变化会吸引其他时间框架的参与者加入。
+aggressive change in price brings other time frame participants into play.
+
+461
+00:33:43,584 --> 00:33:47,884
+这正是成交量、波动性和交易机会的来源。
+And that is what creates the volume and volatility and the opportunity for us.
+
+462
+00:33:50,168 --> 00:33:55,168
+现在我们继续讨论非对称和对称的分布区间。
+Let's continue our discussion now of non-symmetrical and symmetrical profiles.
+
+463
+00:33:55,568 --> 00:33:59,868
+如图所示，这是一个非常平衡的分布区间。
+As you can see in the example provided, we have a very balanced distribution.
+
+464
+00:34:00,368 --> 00:34:04,305
+再强调一次，正态分布是指
+Now remember what we said, a normal distribution is where
+
+465
+00:34:04,305 --> 00:34:08,242
+多头在区间低点发起主动性并做出响应
+buyers initiate and are responsive at lows of the range
+
+466
+00:34:08,242 --> 00:34:12,967
+空头在区间高点发起主动性并做出响应
+and sellers initiate and are responsive at the high of the range.
+
+467
+00:34:13,468 --> 00:34:17,110
+所以，当市场处于派发时
+So by this very token, when the market is distributing,
+
+468
+00:34:17,110 --> 00:34:19,660
+我们可以看到
+we can see that the odds are
+
+469
+00:34:19,660 --> 00:34:23,667
+上涨或下跌的概率非常均等
+very evenly split as to whether we go up or down.
+
+470
+00:34:24,068 --> 00:34:26,389
+注意，市场处于高度平衡状态时
+Now note, one of the key things
+
+471
+00:34:26,389 --> 00:34:29,704
+的一个关键点是
+to point out when a market is very heavily balanced
+
+472
+00:34:29,704 --> 00:34:32,356
+追求动能的交易
+is that playing for momentum and being a
+
+473
+00:34:32,356 --> 00:34:36,666
+会积极寻找向上或向下的动能突破
+very aggressive looking for momentum breakouts to the upside and to the downside
+
+474
+00:34:36,968 --> 00:34:41,168
+但在平衡状态市场中风险很高
+can be quite a risky play when the markets are in balance.
+
+475
+00:34:42,468 --> 00:34:49,268
+接下来是失衡型成交量分布图
+We then have out of balance type profiles. These will be profiles or markets that are trending.
+
+476
+00:34:49,268 --> 00:34:52,145
+注意，趋势市场是指
+Now note, trending is when all five
+
+477
+00:34:52,145 --> 00:34:55,433
+所有5个时间框架
+time frames or all five time frame participants
+
+478
+00:34:55,433 --> 00:35:00,366
+或所有5个周期参与者
+are trading in the same direction as you'll remember from module one.
+
+479
+00:35:01,068 --> 00:35:03,868
+被动价格行为很少
+There's very little responsive type trading.
+
+480
+00:35:04,268 --> 00:35:08,468
+因此所有周期方向一致
+Therefore, all timeframes are in agreement of direction,
+
+481
+00:35:08,468 --> 00:35:12,668
+因此任何被动价格行为
+and hence any responsive action taken is likely
+
+482
+00:35:12,668 --> 00:35:16,868
+最终都会被主动性行为压制
+to eventually be overwhelmed as the initiative continues.
+
+483
+00:35:17,168 --> 00:35:21,668
+后续我们会深入讲解趋势市场
+We will talk a lot more. more about trending markets as we move further along.
+
+484
+00:35:22,968 --> 00:35:30,866
+注意，另一种失衡剖面图是P型，也叫空头回补
+Note then, another type of out of balance type shape is what we call a P shape, also known as short covering.
+
+485
+00:35:31,268 --> 00:35:36,668
+空头回补是指空头通过买入平仓
+Short covering is where the shorts cover their positions by buying out of those positions.
+
+486
+00:35:36,668 --> 00:35:43,968
+注意，主动性卖盘，即空头
+Now note, initiative selling, so shorts, they run into strong responsive long time frame buyers.
+
+487
+00:35:44,668 --> 00:35:48,868
+遇到强势响应性多头
+These buyers are responding to lower prices being advertised.
+
+488
+00:35:49,468 --> 00:35:52,641
+这些多头对低价做出反应
+The buyers then force prices higher and the
+
+489
+00:35:52,641 --> 00:35:55,814
+仍持有空头持仓的空头
+shorts that are still holding their short positions
+
+490
+00:35:55,814 --> 00:36:01,367
+会回补空单，价格继续上涨
+will then buy out of those shorts and prices will continue to move higher.
+
+491
+00:36:01,968 --> 00:36:08,468
+价格持续上涨，直到遇到新的响应性空头
+Those prices will continue to move up until we run into fresh, responsive shorts.
+
+492
+00:36:08,768 --> 00:36:12,568
+此时市场开始横盘
+When that occurs, the market will then start to move sideways.
+
+493
+00:36:13,568 --> 00:36:20,668
+另一种失衡分布是B型或多头平仓剖面图
+The other type of out of balance type profile is a B shape or a long liquidation profile.
+
+494
+00:36:21,068 --> 00:36:26,868
+在B型分布区间中，多头这次遇到主动性空头
+In the B distribution, buyers this time, they run into aggressive initiative sellers.
+
+495
+00:36:26,968 --> 00:36:34,268
+所以市场中多头不断买入推高价格，直到遇到强响应性空头
+So we have longs in the market, they keep buying higher prices until they run into very strong responsive sellers.
+
+496
+00:36:34,968 --> 00:36:37,768
+这些响应性空头持续卖出，最终
+Those responsive sellers keep selling and eventually
+
+497
+00:36:37,768 --> 00:36:40,568
+多头被迫平仓
+the buyers are forced to liquidate their
+
+498
+00:36:40,568 --> 00:36:43,368
+通过卖出持仓来清仓
+longs by selling out of their position.
+
+499
+00:36:43,768 --> 00:36:47,768
+这会进一步推低价格，直到
+This takes prices further lower until such a point that
+
+500
+00:36:48,368 --> 00:36:55,168
+较长时间框架的多头响应相对较低的价格
+the longer time time frame buyers respond to relatively cheaper prices.
+
+501
+00:36:55,568 --> 00:36:59,768
+这会稳定市场，我们看到进一步双向交易
+This then stabilizes the market and we see further two-way trade.
+
+502
+00:37:00,268 --> 00:37:07,864
+这些只是对称性结构和非对称性结构的部分示例和形态
+Those are just some of the examples and some of the shapes you can expect to see when talking about symmetry and non-symmetry.
+
+503
+00:37:09,268 --> 00:37:15,368
+我们来看看非对称剖面图中典型的分布示例
+Let's take a look at some of the typical profiling examples you would see when talking about non-symmetrical profiles.
+
+504
+00:37:15,968 --> 00:37:19,868
+如你所见，第一个例子是非对称性趋势日
+As you can see, the first example is a non-symmetrical trend day.
+
+505
+00:37:19,868 --> 00:37:23,138
+现在，关键不是
+Now, what's important here is not too much
+
+506
+00:37:23,138 --> 00:37:26,408
+讨论趋势本身，而是理解
+about talking about trend or it's just understanding
+
+507
+00:37:26,408 --> 00:37:29,678
+非对称性结构的基本形态
+the basic shape of non-symmetry and why non-symmetry
+
+508
+00:37:29,678 --> 00:37:33,766
+以及为何非对称性
+is a particularly important principle for developing a very strong
+
+509
+00:37:34,168 --> 00:37:34,968
+是构建强大交易策略的重要原则
+trade strategy.
+
+510
+00:37:34,968 --> 00:37:40,590
+所以你可以看到，就趋势而言
+So what you can see with regards to the trend is how for the entire day we've
+
+511
+00:37:40,590 --> 00:37:43,566
+整天都是空头在主导
+seen initiative being taken by sellers in this example.
+
+512
+00:37:43,768 --> 00:37:49,868
+他们不断卖出，最终遇到较强买盘响应
+And they keep selling and selling and selling and eventually they run into sort of stronger response of buying.
+
+513
+00:37:49,868 --> 00:37:52,353
+而这种强劲的响应性买盘
+And that stronger response of buying is what
+
+514
+00:37:52,353 --> 00:37:54,528
+让市场几乎能轻微反弹
+allows the market to almost just bounce
+
+515
+00:37:54,528 --> 00:37:58,567
+并形成分布区间，出现双向交易
+a little bit and distribute and trade a little bit of two-way trade.
+
+516
+00:37:58,568 --> 00:38:05,866
+注意，这种非对称性结构或缺乏对称性结构 为我们创造了很好的交易机会
+Now, the important thing to note is that this non-symmetry or this lack of symmetry creates very good opportunity for us.
+
+517
+00:38:06,068 --> 00:38:12,868
+为我们创造了很好的交易机会
+So by that very token, non-symmetrical trend days are fantastic opportunities and you should be capitalizing on them.
+
+518
+00:38:13,268 --> 00:38:18,368
+所以关键的是，非对称性趋势日
+Not to worry though, we will spend a lot of time talking about trend and how you can develop strategy.
+
+519
+00:38:18,668 --> 00:38:21,868
+是绝佳的交易机会，你应抓住它们
+based purely on just simple non-symmetrical profiles.
+
+520
+00:38:22,868 --> 00:38:26,668
+放心，我们会花很多时间
+The second profile then is a very good example of short covering.
+
+521
+00:38:27,068 --> 00:38:30,327
+从这根K线可以看到
+As you can see with that K print, we can
+
+522
+00:38:30,327 --> 00:38:32,608
+市场开盘后大幅下跌
+see initially the market opened a lot
+
+523
+00:38:32,608 --> 00:38:35,867
+遇到非常激进的响应性买盘
+lower and ran into some very, very aggressive responsive buying.
+
+524
+00:38:36,268 --> 00:38:43,268
+买盘推高价格 迫使空头平仓
+That buying drove prices up to such a point that the sellers were forced to liquidate their short positions.
+
+525
+00:38:43,868 --> 00:38:47,968
+最终市场遇到新的响应性卖盘
+Eventually, the market ran into fresh responsive selling.
+
+526
+00:38:48,468 --> 00:38:55,368
+新卖盘阻止买盘流动 双向交易随之展开
+That fresh response of selling managed to stop the flow of buying and we saw two-way trade ensue.
+
+527
+00:38:55,968 --> 00:38:59,197
+有趣的是 空头最终
+Interestingly, what we saw was the sellers eventually
+
+528
+00:38:59,197 --> 00:39:02,426
+压制多头 并将市场
+overwhelmed those buyers and took the market all
+
+529
+00:39:02,426 --> 00:39:06,866
+一路回落至低点并大幅收低
+the way back to the low and closed quite aggressively lower.
+
+530
+00:39:07,868 --> 00:39:11,968
+第三个例子是B型，即多头平仓
+The third example is a B shape or long liquidation.
+
+531
+00:39:12,468 --> 00:39:15,011
+再看这里，我们可以看到
+Again, what we can see here is
+
+532
+00:39:15,011 --> 00:39:17,917
+市场开盘后尝试上涨
+that the market opens, it tries to move
+
+533
+00:39:17,917 --> 00:39:23,367
+多头试图推高价格，但遇到非常激进的响应性卖盘
+higher, the buyers try to initiate higher prices before running into very aggressive responsive sellers.
+
+534
+00:39:23,868 --> 00:39:31,568
+这些响应性空头持续抛售，多头被迫平仓
+Those responsive sellers keep selling those prices and buyers are forced to liquidate their long positions by selling out.
+
+535
+00:39:31,868 --> 00:39:37,868
+价格因此下跌，直到遇到新的响应性买盘
+This takes prices down up to such a point that we run into new fresh responsive buyers.
+
+536
+00:39:38,368 --> 00:39:42,868
+此时开始派发，形成双向交易
+When that occurs, we then start to distribute and form two-way trade.
+
+537
+00:39:43,368 --> 00:39:48,268
+所以关键的是要专注并理解这三种基本的非对称
+It's so important you focus and understand these three basic non-symmetric
+
+538
+00:39:49,268 --> 00:39:51,395
+形态，因为我们接下来会
+shapes because we're going to talk
+
+539
+00:39:51,395 --> 00:39:57,067
+大量讨论这些形态，并围绕它们开发独特的交易策略。
+a lot about these shapes as well as develop unique strategies around these shapes going forward.
+
+540
+00:39:59,168 --> 00:40:01,568
+现在我们来讲初始平衡区间。
+Let's now talk about the initial balance.
+
+541
+00:40:02,468 --> 00:40:05,289
+在讨论初始平衡区间之前，
+Before we get started with talking about the initial
+
+542
+00:40:05,289 --> 00:40:08,110
+我认为有必要先给大家
+balance, I think I need to paint a little
+
+543
+00:40:08,110 --> 00:40:14,066
+描绘一下市场电子化初期的样子。
+bit of a picture of maybe what the markets used to be like as they sort of became electronic.
+
+544
+00:40:14,068 --> 00:40:19,468
+注意，关键点是市场过去并非几乎24小时交易。
+Now, the important thing to understand is that the markets never used to be almost 24 hours.
+
+545
+00:40:19,468 --> 00:40:24,268
+如今大多数市场几乎可以24小时交易
+Nowadays, you can pretty much trade around the clock in most markets.
+
+546
+00:40:24,368 --> 00:40:30,568
+注意，初始平衡区间的概念
+Now, when the initial balance or the concept of the initial balance was first developed back
+
+547
+00:40:31,268 --> 00:40:33,318
+在场内交易时代首次提出时
+in the pit days, it used to
+
+548
+00:40:33,318 --> 00:40:35,368
+它包含开盘后第一小时的交易
+include the first hour of trade when
+
+549
+00:40:35,368 --> 00:40:39,468
+当时一天只有8或9小时交易
+there were only, for instance, eight or nine hours of trade in a day.
+
+550
+00:40:39,468 --> 00:40:45,568
+所以当时它的作用更加重要
+So it did play a far more important role back in the day.
+
+551
+00:40:45,868 --> 00:40:49,019
+但时至今日，它仍能提供
+However, it still offers very early opportunity and
+
+552
+00:40:49,019 --> 00:40:52,170
+早期机会和信息，这就是我们需要
+information for us and that's why we need
+
+553
+00:40:52,170 --> 00:40:58,866
+要理解初始平衡区间及其可识别的模式
+to understand the initial balance and some of the patterns we can recognize from the initial balance.
+
+554
+00:40:59,668 --> 00:41:01,068
+那么初始平衡区间是什么？
+So what is the initial balance?
+
+555
+00:41:01,668 --> 00:41:04,268
+它就是常规交易时段前的交易时段
+It's simply the pre-cash session.
+
+556
+00:41:04,668 --> 00:41:08,010
+现在，我们来看课程中
+Now, we will go through our four markets that we
+
+557
+00:41:08,010 --> 00:41:10,684
+交易或讨论的四个市场
+trade or that we speak about throughout the
+
+558
+00:41:10,684 --> 00:41:16,366
+E-迷你标普500期货、德国国债、WTI原油和欧元/美元外汇
+course, which are the E-mini S&P 500, the German Bunds, the WTI oil, and the Eurodollar FX.
+
+559
+00:41:16,468 --> 00:41:20,468
+我会给大家展示这四个市场的初始平衡区间图表
+So I will show you four charts. of what the initial balance will look like.
+
+560
+00:41:20,668 --> 00:41:23,563
+但关键是你要理解这个原理
+But it's important you understand this principle
+
+561
+00:41:23,563 --> 00:41:26,458
+不要只是试图接受
+and don't sort of try and take
+
+562
+00:41:26,458 --> 00:41:29,767
+我讲的就是最重要的
+what I say as the most important thing.
+
+563
+00:41:29,768 --> 00:41:35,268
+关键是要理解我们关注初始平衡区间的逻辑和原理
+What's important is understanding the logic and the principle behind why we look at the initial balance.
+
+564
+00:41:35,268 --> 00:41:39,868
+所以初始平衡区间就是常规交易时段前的交易时段
+So the initial balance is the pre-cash session.
+
+565
+00:41:40,468 --> 00:41:44,668
+常规交易时段开盘前的交易时段称为初始平衡区间
+The session before the cash market opens is known as the initial balance.
+
+566
+00:41:45,068 --> 00:41:48,090
+这通常是欧洲交易时段的第一小时
+This will be the first hour of the
+
+567
+00:41:48,090 --> 00:41:50,734
+美国产品的整个隔夜交易时段
+European session, the entire overnight session for
+
+568
+00:41:50,734 --> 00:41:55,267
+以及外汇和商品市场的隔夜交易时段
+US products and the overnight session of the FX and commodities markets.
+
+569
+00:41:55,668 --> 00:41:56,770
+注意，显然
+Now remember, obviously
+
+570
+00:41:56,770 --> 00:42:00,077
+欧洲市场会收盘，期货也会收盘
+European markets do shut, the futures do shut, so
+
+571
+00:42:00,077 --> 00:42:03,752
+所以第二天早上开盘后
+when they open the very next morning, that first hour
+
+572
+00:42:03,752 --> 00:42:10,367
+在常规交易时段开始前的交易时段，就是初始平衡区间
+of trade before, or the trade before the cash markets come in, that period is the initial balance.
+
+573
+00:42:10,768 --> 00:42:14,268
+而美国产品则是隔夜交易
+With regards to US products, they trade overnight.
+
+574
+00:42:15,668 --> 00:42:17,376
+显然，此时常规交易时段
+Obviously, the cash markets are
+
+575
+00:42:17,376 --> 00:42:20,792
+已经收盘
+shut at that point, so that period from where the
+
+576
+00:42:20,792 --> 00:42:24,208
+所以从期货开始交易到常规交易时段开始前的这段
+futures trade up until the point that the cash begins
+
+577
+00:42:24,208 --> 00:42:27,966
+这段交易时段称为初始平衡区间。
+to trade, that period is known as the initial balance period.
+
+578
+00:42:28,368 --> 00:42:36,768
+而外汇或商品市场，因为是24小时交易，
+And then obviously with regards to the FX or commodity markets, the same is because they're 24 hours predominantly, the session
+
+579
+00:42:37,468 --> 00:42:43,868
+从隔夜到欧洲时段开始前，属于常规交易时段。
+from the overnight all the way up until the beginning of the European session, that will be the cash session.
+
+580
+00:42:44,968 --> 00:42:52,368
+所以，不包含常规交易时段的期货时段，就是初始平衡区间或隔夜交易时段。
+So, any future session that does not include the cash markets will be the initial balance or the overnight session.
+
+581
+00:42:52,368 --> 00:42:57,868
+所以你会经常听到专业人士提到隔夜交易时段或隔夜市场。
+So a lot of the time you'll hear professionals talking about the overnight session or the overnight market.
+
+582
+00:42:57,868 --> 00:43:00,868
+这正是常规交易时段休市的时期。
+So that is the period when the cash is shut.
+
+583
+00:43:01,168 --> 00:43:04,768
+所以初始平衡区间的另一个名称就是隔夜交易时段。
+So another name for the initial balance is the overnight session.
+
+584
+00:43:05,368 --> 00:43:11,168
+初始平衡区间代表当日最早的参考点，因此备受关注。
+The initial balance represents the earliest reference points on the day and that is why it's closely watched.
+
+585
+00:43:11,368 --> 00:43:14,568
+它们为我们创造重要的早期枢轴点。
+They create important early pivots for us.
+
+586
+00:43:15,968 --> 00:43:23,465
+初始平衡区间是市场休市后，交易者首次进行平仓、对冲和建仓的机会。
+The initial balance is the first opportunity for traders to liquidate, hedge and initiate trade after the market has been shut.
+
+587
+00:43:23,568 --> 00:43:29,168
+所以再强调一次，这对欧市更相关，因为它们休市时间更长。
+So again, this is more relevant to the European markets because they tend to shut for a lot longer.
+
+588
+00:43:29,168 --> 00:43:33,360
+比如从晚上9点
+So if they're shutting from 9pm at night till 7am
+
+589
+00:43:33,360 --> 00:43:35,875
+到第二天早上7点，
+the next morning, there's a good 10
+
+590
+00:43:35,875 --> 00:43:39,648
+中间有长达10小时
+hour period in which very little can be done
+
+591
+00:43:40,568 --> 00:43:42,940
+无法进行对冲或开仓，
+to hedge or to take on
+
+592
+00:43:42,940 --> 00:43:45,312
+也无法平仓，
+or to cut positions and there's
+
+593
+00:43:45,312 --> 00:43:49,266
+有大量时间来制定策略和做出早期决策。
+a lot of time to strategize and make early decisions.
+
+594
+00:43:49,268 --> 00:43:55,368
+再强调一次，因此我们更倾向于在欧盘关注初始平衡区间策略。
+And again, that's why we tend to focus a lot more on initial balance strategies in the European session.
+
+595
+00:43:56,668 --> 00:44:04,665
+但美盘、商品、股票和外汇中也有一些非常重要的策略。
+But you do get some very important strategies in the US session too and the commodities and equities and the FX.
+
+596
+00:44:04,768 --> 00:44:08,468
+所以我们才会教你初始平衡区间的知识。
+And that is why we are actually teaching you about the initial balance.
+
+597
+00:44:09,668 --> 00:44:14,068
+传统上，初始平衡区间通常意味着成交量较低。
+Then, initial balance, they do traditionally imply low volume.
+
+598
+00:44:14,568 --> 00:44:21,068
+你通常会发现隔夜或初始平衡区间成交量低，流动性不足。
+So what you would typically find is low volume, lack of liquidity. in the overnight or initial balance.
+
+599
+00:44:21,068 --> 00:44:22,396
+注意，
+Now, this is a crucial
+
+600
+00:44:22,396 --> 00:44:24,255
+这是一个关键要素，因为如果这是
+element to understand because if this is
+
+601
+00:44:24,255 --> 00:44:25,848
+如果这是常态
+the norm, if this is the
+
+602
+00:44:25,848 --> 00:44:29,832
+如果这是传统，如果这是我们通常看到的
+tradition, if this is what we usually see, when we see something else, i.e.
+
+603
+00:44:30,068 --> 00:44:33,302
+看到波动性或成交量异常
+Volatility or volume, then you need to be
+
+604
+00:44:33,302 --> 00:44:36,536
+就要提高警惕，因为这会
+switched on because it's giving you very early
+
+605
+00:44:36,536 --> 00:44:39,366
+给你非常早的方向性交易线索
+identifiers or clues as to directional plays.
+
+606
+00:44:41,168 --> 00:44:45,568
+再强调一次，初始平衡区间相关策略非常有效
+Again, the initial balance, relative strategies are highly effective.
+
+607
+00:44:45,568 --> 00:44:49,402
+我们的意思是，如果你习惯了
+What we mean by that is if you're used to the initial
+
+608
+00:44:49,402 --> 00:44:52,916
+初始平衡区间每天早上成交量约10,000手
+balance trading, say, 10,000 contracts on average every single morning, that morning
+
+609
+00:44:52,916 --> 00:44:57,708
+看到3万或4万手成交量，你要警觉，因为市场出现了变化
+that you see 30,000 or 40,000 contracts, you need to be switched on because something has changed.
+
+610
+00:44:58,668 --> 00:45:04,668
+相对指标告诉我们，市场出现了变化，早盘有动向
+Their relative indicators are telling us that something has changed. There's early action in the market.
+
+611
+00:45:04,968 --> 00:45:06,668
+区间也是同样的道理
+The same can be said for the range.
+
+612
+00:45:06,968 --> 00:45:13,468
+所以关键的是，看这张图，上面是成交量，我们标出了平均成交量
+So important, as you can see by this chart, we've got in the top there, we've got the volume and we note the average volume.
+
+613
+00:45:13,468 --> 00:45:18,368
+当成交量突破平均值，就知道可能有机会
+So when it spikes above the average volume, we know there's potential for opportunity.
+
+614
+00:45:18,568 --> 00:45:20,268
+区间也是同样的道理
+And it's the same to be said for the range.
+
+615
+00:45:20,268 --> 00:45:27,431
+如果你习惯了每天早上或隔夜交易时段10个点的区间
+If you're used to a 10 price range every single morning or in the overnight session, the minute it does 20 or 30 prices,
+
+616
+00:45:27,431 --> 00:45:30,842
+一旦出现20或30个点，这又是一个可以利用的机会
+again, that represents opportunity that you can take advantage of.
+
+617
+00:45:33,568 --> 00:45:40,068
+而初始平衡区间是早期信号。这就是我们关注它的原因。
+And then the initial balance represents an early identifier. That is the reason we pay attention to it.
+
+618
+00:45:40,268 --> 00:45:47,565
+它为我们提供早期信息，可以据此规划并设定全天的交易路径。
+It gives us early bit of information that we can then plot and set our path for the rest of the day.
+
+619
+00:45:49,068 --> 00:45:55,866
+现在你已了解初始平衡区间，我们来看课程中提到的四个市场的四个例子。
+So now that you understand what the initial balance is, let's take a look at the four examples across the four markets that we speak about in this course.
+
+620
+00:45:56,368 --> 00:45:58,968
+第一个例子是德国国债。
+The first example is the German Tenier Bund.
+
+621
+00:45:59,368 --> 00:46:06,368
+注意，我之前提到，欧洲大部分产品通常在晚上9点左右收盘。
+Now note what I said, Europe tends to close around 9pm for most of the European products.
+
+622
+00:46:06,368 --> 00:46:09,968
+当然，不同产品收盘时间不同，
+Obviously it differs per product, so it's important that whichever product you're
+
+623
+00:46:09,968 --> 00:46:13,568
+所以如果你交易的产品不在课程讨论的四个里，
+trading, if they are outside the four we discuss in this course,
+
+624
+00:46:13,568 --> 00:46:15,968
+一定要确认其时间框架参数
+make sure you know the time frame parameters
+
+625
+00:46:15,968 --> 00:46:18,068
+这样你就能相应调整
+so that you can then adjust accordingly
+
+626
+00:46:18,068 --> 00:46:20,468
+并确定初始平衡区间
+and determine what the initial balance would be.
+
+627
+00:46:20,868 --> 00:46:28,365
+比如德国国债，初始平衡区间是7点到8点，常规交易时段开始
+So in the German Bund Tenier for instance, the initial balance will be the period from 7am to 8am when the cash comes in.
+
+628
+00:46:29,268 --> 00:46:36,968
+E-迷你标普500期货，市场收盘后11点重新开盘
+For the E-Money S&P 500 index, we can see that the market is shut and opens again at 11pm.
+
+629
+00:46:37,268 --> 00:46:41,193
+注意，从11点到次日2点半
+Now note, from 11pm till 2.30pm the next day, that
+
+630
+00:46:41,193 --> 00:46:47,867
+这被称为隔夜交易时段或初始平衡区间，即常规交易时段外的时段
+is known as the overnight session or the initial balance, so the period outside of cash trading.
+
+631
+00:46:51,736 --> 00:46:58,536
+再看WTI原油，同样收盘，现货市场7点半收盘
+We then have the WTI NYMEX oil. Again, it also shuts. The cash market shuts at 7.30.
+
+632
+00:46:58,836 --> 00:47:02,796
+所以从7点半到欧洲常规交易时段开始
+So from the period of 7.30 till when the European cash markets
+
+633
+00:47:02,796 --> 00:47:06,396
+次日开盘后，这段时期被视为
+open the next day, that would be regarded as the
+
+634
+00:47:06,396 --> 00:47:11,076
+隔夜交易时段或现货交易极少的时段
+overnight session or the session where there is very little cash being traded.
+
+635
+00:47:11,736 --> 00:47:17,636
+注意，初始平衡区间并非死板规则
+Now note guys, the initial balance session is not a hard fast rule.
+
+636
+00:47:17,836 --> 00:47:23,143
+理解初始平衡区间的关键是，这是
+What's important to understand with the initial balance, it's the period in
+
+637
+00:47:23,143 --> 00:47:29,335
+大周期参与者或现货交易者极不可能入场的时段
+which it's very unlikely to see bigger time frame participants or cash participants enter.
+
+638
+00:47:29,736 --> 00:47:34,136
+这段时期称为初始平衡区间或隔夜交易时段
+That period is known as the initial balance or the overnight session.
+
+639
+00:47:34,536 --> 00:47:41,934
+所以WTI原油的隔夜交易时段通常是从晚10点到次日早8点欧洲开盘
+So with the oil, typically the overnight session would be from 10pm till 8am the next morning when Europe comes online.
+
+640
+00:47:42,636 --> 00:47:47,043
+欧元/美元外汇同样，晚10点开盘
+The Eurodollar FX is, again, it opens at 10pm at
+
+641
+00:47:47,043 --> 00:47:51,450
+整夜交易，然后进入隔夜交易时段
+night and again it will trade the overnight session all
+
+642
+00:47:51,450 --> 00:47:54,535
+一直到第二天早上8点
+the way until 8am the next morning.
+
+643
+00:47:54,836 --> 00:48:04,236
+注意，外汇市场通常在每天下午4点GMT有美元结算
+Now note, predominantly with the foreign exchange markets, there is a dollar settlement around 4 o'clock GMT every afternoon.
+
+644
+00:48:04,336 --> 00:48:11,469
+所以常规交易时段一般是从8点到下午4点
+So we could typically see the cash session being all the way from 8am to about 4pm and then the
+
+645
+00:48:11,469 --> 00:48:15,035
+剩余时间就是隔夜交易时段或初始平衡区间
+rest would be the overnight session or the initial balance.
+
+646
+00:48:15,136 --> 00:48:18,236
+再强调一次，我之前说的
+Now again, remember what I said to you, the concept...
+
+647
+00:48:18,436 --> 00:48:24,236
+初始平衡区间的概念
+of the initial balance is not that it creates hard, fast rules.
+
+648
+00:48:24,436 --> 00:48:32,936
+并不是要制定硬性规则，而是要理解
+It's an understanding of when is there a time frame in which big participants, influential participants, initiative,
+
+649
+00:48:33,436 --> 00:48:36,476
+什么时候是这个时间框架，
+when is that time frame and when is
+
+650
+00:48:36,476 --> 00:48:39,516
+什么时候是另一个时间框架，
+the other time frame where there's low volume,
+
+651
+00:48:39,516 --> 00:48:42,936
+成交量低、流动性不足，获利机会少。
+low liquidity and less likely opportunities to make money.
+
+652
+00:48:43,236 --> 00:48:47,963
+所以我们要区分这两个时间框架，
+That is why we try and differentiate between the two time frames,
+
+653
+00:48:47,963 --> 00:48:51,114
+同时初始平衡区间还能
+but also because the initial balance can give
+
+654
+00:48:51,114 --> 00:48:56,235
+为我们提供进入常规交易时段前的早期信号和机会。
+us some very, very early identifiers and opportunity heading into the cash sessions.
+
+655
+00:48:58,336 --> 00:49:01,974
+现在我们已经讨论了初始平衡区间的概念，
+Now that we've spent a little bit of time discussing what the
+
+656
+00:49:01,974 --> 00:49:03,793
+我们来看一个
+initial balance is, let's take a
+
+657
+00:49:03,793 --> 00:49:07,734
+我们来看3种使用初始平衡区间的交易策略。
+look at three unique trading strategies you could execute using the initial balance.
+
+658
+00:49:08,036 --> 00:49:15,734
+所以第一种情况是市场中出现关键价格结构时。
+So the first time we would look to use the initial balance is when there's key structure or identifiable structure in the market.
+
+659
+00:49:15,936 --> 00:49:17,736
+这种价格结构是什么样的呢？
+So what would this structure look like?
+
+660
+00:49:18,036 --> 00:49:22,236
+举个简单例子，看前一交易日的成交量分布图。
+Let's look at a basic example. Take for instance the previous day's profile.
+
+661
+00:49:23,136 --> 00:49:27,936
+假设过去两个交易日市场逐渐
+Let's say over the last two sessions the market had become somewhat
+
+662
+00:49:27,936 --> 00:49:31,136
+被限制在一个区间内，
+contained and we had started trading in a
+
+663
+00:49:31,136 --> 00:49:37,136
+形成区间锁定或内日线形态。
+bracket time or a bracket type trade formation and the market formed an inside day.
+
+664
+00:49:37,836 --> 00:49:41,377
+注意，你可以看到非常清晰的价格结构，
+Now what you can see is very clear structure in
+
+665
+00:49:41,377 --> 00:49:46,335
+市场处于盘整/压缩区间，等待突破或响应
+the market where the market is consolidating and waiting for a move or response.
+
+666
+00:49:46,536 --> 00:49:48,336
+这种情况下，我们通常会
+Now typically on this day we want
+
+667
+00:49:48,436 --> 00:49:52,081
+关注初始平衡区间开盘时段
+to pay attention in the initial balance open or in
+
+668
+00:49:52,081 --> 00:49:54,997
+或开盘后第一小时的交易时段
+the period in the first hour of trade
+
+669
+00:49:54,997 --> 00:49:59,735
+寻找向下或向上的潜在延伸
+looking for a potential extension either to the downside or to the upside.
+
+670
+00:50:00,036 --> 00:50:06,836
+注意，这个策略的关键是不要抢跑
+Now note the key with this strategy is not to preempt. We don't want to preempt that it's going to break in the initial balance.
+
+671
+00:50:07,036 --> 00:50:10,401
+我们要做的是等待订单流
+What we want to do is wait for the flow, wait for
+
+672
+00:50:10,401 --> 00:50:12,644
+等待市场给出信号
+the market to give us the information and
+
+673
+00:50:12,644 --> 00:50:14,326
+然后在向上突破时执行买单
+then look to execute buy orders
+
+674
+00:50:14,326 --> 00:50:16,008
+在向下突破时执行卖单
+on the break to the upside
+
+675
+00:50:16,008 --> 00:50:18,532
+注意设置时的几个要点，很简单
+and sell orders to the break to the downside.
+
+676
+00:50:18,936 --> 00:50:23,736
+一定要看进入前的市场背景
+Now a few things to pay attention to when looking at the setup. It's very simple.
+
+677
+00:50:24,136 --> 00:50:29,036
+什么意思呢？
+Make sure you look at the context going into it. What do I mean by that?
+
+678
+00:50:29,436 --> 00:50:34,002
+本质上，如果市场在进入
+In essence, if the market is aggressively selling off before this consolidation
+
+679
+00:50:34,002 --> 00:50:37,046
+这个盘整日内类型前持续下跌
+day type, there's a much higher probability that
+
+680
+00:50:37,046 --> 00:50:43,736
+向下突破内日线时延伸的概率会更高。为什么？
+we're going to get an easier extension once we break the inside day toward the downside.Why?
+
+681
+00:50:43,736 --> 00:50:46,736
+因为短期趋势朝这个方向。
+Because the short-term trend is in that direction.
+
+682
+00:50:47,036 --> 00:50:49,536
+这就是我们说的背景。
+So that is what we mean by context.
+
+683
+00:50:50,236 --> 00:50:58,136
+注意，还要关注初始平衡区间突破后的延伸失败。
+Now important to note as well is that what you want to pay attention to is also the failed extension of the initial balance breakout.
+
+684
+00:50:58,136 --> 00:51:01,650
+如果我们无法守住这个突破，
+So if we cannot hold that break, if we cannot
+
+685
+00:51:01,650 --> 00:51:04,461
+无法在突破后站稳前一交易日高点或低点，
+hold above the previous day's high or low
+
+686
+00:51:04,461 --> 00:51:10,435
+很可能会看到强烈的反向反转。
+on the break, we could very likely then see a very strong reversal in the opposite direction.
+
+687
+00:51:11,236 --> 00:51:16,436
+这就是使用初始平衡区间的第一种交易策略。
+So that's the first type of trade strategy we would look at when using the initial balance.
+
+688
+00:51:16,836 --> 00:51:22,936
+第二种关键交易策略是寻找初始平衡区间内的尾部。
+A second very key trading strategy would be looking for tails in the initial period.
+
+689
+00:51:22,936 --> 00:51:26,236
+那什么是尾部？我们再回顾一下。
+So what do we mean by tails? Let's refresh your mind.
+
+690
+00:51:26,736 --> 00:51:34,436
+注意，尾部就是市场留下相对未交易的价格区域。
+Now a tail is nothing more than when a market leaves a relatively untraded area of prices.
+
+691
+00:51:34,736 --> 00:51:40,436
+这里你看到的是我所谓的当日前30分钟TPO。
+So what you have here is what I would call the first 30 minute TPOs of the day.
+
+692
+00:51:40,836 --> 00:51:46,136
+假设市场在低点开盘，然后强势上涨。
+Now let's say for instance the market opened at the low. We very aggressively drove higher.
+
+693
+00:51:46,436 --> 00:51:53,436
+接着出现L型成交单，但未能向下延伸到更低价格。
+We then had the L print come in and the L prints failed to actually get into lower prices.
+
+694
+00:51:54,036 --> 00:51:59,336
+我们通常把这称为尾部，即买盘长影。
+Now, what we would typically call this is our tail, our buying tail.
+
+695
+00:51:59,536 --> 00:52:03,536
+现在，我们要依据初始平衡区间寻找的是
+Now, what we're looking to lean on the initial balance here for
+
+696
+00:52:03,536 --> 00:52:06,202
+常规交易时段开盘或下一个TPO。
+is a cash open or the next TPO
+
+697
+00:52:06,202 --> 00:52:09,535
+开盘后寻找延续并延伸的方向
+open to look to continue and extend in the direction.
+
+698
+00:52:09,936 --> 00:52:17,436
+注意，尾部代表主动性，这是我们关注的重点
+Remember guys, a tail implies initiative and that is what we pay attention to.
+
+699
+00:52:17,836 --> 00:52:23,136
+这就是我们使用初始平衡区间的第二种关键策略
+So that's the second kind of key strategy we'd be looking for in using the initial balance.
+
+700
+00:52:23,536 --> 00:52:31,434
+第三种也是最后一种策略是周线延伸失败。这是什么意思？
+The third and final strategy we would be looking at would be a failed weekly extension. So what do we mean by that?
+
+701
+00:52:31,736 --> 00:52:37,536
+作为交易者，我们不仅看日线剖面图，还会看周线剖面图
+Well, as traders, we don't just look at daily profiles, we actually also look at weekly profiles.
+
+702
+00:52:37,736 --> 00:52:42,122
+现在，这些周线指标包括高点、低点、价值区间
+Now these weekly metrics being the high and the low, the value
+
+703
+00:52:42,122 --> 00:52:45,046
+成交量价值区间低点
+area low or the volume value area low
+
+704
+00:52:45,046 --> 00:52:48,335
+和成交量价值区间高点，这些都是
+and the volume value area high, these are relatively
+
+705
+00:52:48,436 --> 00:52:50,136
+市场中的关键指标。
+key metrics in the market.
+
+706
+00:52:50,536 --> 00:52:53,126
+现在我们要关注的是，如果
+Now what we want to look to do is if
+
+707
+00:52:53,126 --> 00:52:54,680
+市场在周一早上
+the market comes early on a
+
+708
+00:52:54,680 --> 00:52:56,234
+开盘后
+Monday morning and we open up
+
+709
+00:52:57,036 --> 00:53:01,470
+在上周交易区间内开盘，且
+within the previous area of trade from the previous week and the
+
+710
+00:53:01,470 --> 00:53:04,426
+市场早盘尝试
+market tries to extend very early on on
+
+711
+00:53:04,426 --> 00:53:05,534
+向上周
+the previous week's
+
+712
+00:53:06,336 --> 00:53:13,136
+最低成交价延伸，在初始平衡区间内要非常谨慎跟进。
+lowest traded price, we want to be very very cautious going with that within the initial balance.
+
+713
+00:53:13,436 --> 00:53:17,324
+我们通常会发现一个高概率情况
+What we do tend to find is a high probability
+
+714
+00:53:17,324 --> 00:53:21,212
+市场往往会先无法突破这些
+that markets tend to initially fail to extend on these
+
+715
+00:53:21,212 --> 00:53:27,434
+较大时间框架的高点和低点
+larger time frame, you know, sort of type of highs and lows that we point out.
+
+716
+00:53:27,636 --> 00:53:31,236
+所以这是使用初始平衡区间的第三个要点
+So that would be our third point of using an initial balance.
+
+717
+00:53:31,436 --> 00:53:35,876
+我们想看初始平衡区间
+We want to see how the initial balance responds on a previous
+
+718
+00:53:35,876 --> 00:53:42,536
+在前一周低点或高点的反应，寻找可能的失败和反转
+week's low or previous week's high and look for the potential failure and reversal into the opposite direction.
+
+719
+00:53:43,036 --> 00:53:48,436
+所以这是三个独特的交易策略
+So those are three unique trading strategies we would develop using the initial balance.
+
+720
+00:53:48,436 --> 00:53:52,336
+现在，我给你们展示这些图表模式的目的是
+Now, the purpose of me showing you these patterns on the board
+
+721
+00:53:52,336 --> 00:53:54,936
+不是要展示所有可用的初始平衡区间模式
+is not to show you the only patterns
+
+722
+00:53:54,936 --> 00:53:57,536
+而是要让你了解
+that can be utilized with the initial balance.
+
+723
+00:53:57,536 --> 00:54:04,534
+关键是要展示使用初始平衡区间时的特定交易策略
+The key is to show you that there are very specific strategies that we would employ when using the initial balance.
+
+724
+00:54:04,736 --> 00:54:09,936
+现在，首先你要先理解什么是初始平衡区间
+Now, it's up to you first and foremost to understand what exactly is the initial balance.
+
+725
+00:54:10,436 --> 00:54:18,334
+然后，理解后再开始识别可用初始平衡区间开发的关键模式
+Then, once you understand that, to begin to identify what are the key patterns that you can develop using the initial balance.
+
+726
+00:54:19,636 --> 00:54:21,936
+祝你好运，下一部分见
+Good luck and we'll see you again in the next part.
+
+727
+00:54:24,236 --> 00:54:27,036
+现在你们已经完成模块5的一半了
+So you guys are halfway through part five now.
+
+728
+00:54:27,236 --> 00:54:30,450
+我们快速总结一下，确保
+Let's have a quick little summary and just make sure
+
+729
+00:54:30,450 --> 00:54:33,021
+确保你完全理解我迄今为止
+that you fully understand the principles I've dealt
+
+730
+00:54:33,021 --> 00:54:36,235
+在模块5开头部分讲解的原则
+with so far in the beginning part of part five.
+
+731
+00:54:36,236 --> 00:54:40,583
+注意，我们之前提到过
+So straight away, remember we spoke a profile or a
+
+732
+00:54:40,583 --> 00:54:43,191
+一个分布区间无非是
+distribution is nothing more than a
+
+733
+00:54:43,191 --> 00:54:46,234
+时间分布的体现
+representation of time, which would effectively be
+
+734
+00:54:46,536 --> 00:54:55,936
+时间轴在此，价格轴在此，成交量轴在此
+on this axis, of price, which would be on this axis, and volume, which would be depicted on this axis.
+
+735
+00:54:55,936 --> 00:54:59,236
+注意，价格是一种广告
+Now, remember, price is an advertisement.
+
+736
+00:54:59,636 --> 00:55:03,758
+时间会调节这则广告，成交量会告诉我们
+Time will regulate that advertisement, and volume will tell
+
+737
+00:55:03,758 --> 00:55:07,880
+可以看到市场在各个价格的广告效果如何
+us how good is the market advertising at various
+
+738
+00:55:07,880 --> 00:55:13,834
+以及参与者如何根据广告接受或拒绝
+prices and how are participants accepting or rejecting based on what's being advertised.
+
+739
+00:55:13,836 --> 00:55:19,836
+所以我们从成交量分布的简要概述开始
+So that's where we began with just a brief summary of what volume profiling is all about.
+
+740
+00:55:19,936 --> 00:55:24,536
+接着我们讲了价格阶梯，并展示了其各个组成部分
+Then we spoke about the price ladder and I showed you the different elements of the price ladder.
+
+741
+00:55:24,836 --> 00:55:27,036
+左边是所有多头
+On the left side, we had all our buyers.
+
+742
+00:55:27,336 --> 00:55:30,536
+右边是空头或卖盘
+On the right side, we had our sellers or offers.
+
+743
+00:55:30,636 --> 00:55:33,136
+中间是各个价格
+And in the middle, we had all our prices.
+
+744
+00:55:33,336 --> 00:55:40,249
+注意 我给你们看这个的原因是
+Now, the reason I showed you this is because I wanted to show you that whilst we talk about distributions
+
+745
+00:55:40,249 --> 00:55:45,736
+因为交易本身就是拍卖过程，我们执行时也是基于拍卖过程。为什么？
+being an auction process, equally when we execute, we're executing based on an auction process.Why?
+
+746
+00:55:45,736 --> 00:55:50,536
+因为在这里中间，我们有各种价格，称作1、2、3、4。
+Because in the middle here, we have various prices. call it one, two, three, and four.
+
+747
+00:55:50,836 --> 00:55:57,536
+在这些价格上，都有多头和空头想要交易。
+And at every one of these prices, we have got buyers and sellers wanting to transact with one another.
+
+748
+00:55:57,736 --> 00:56:04,336
+注意，他们如何交易是需要学习观察的技能。
+Now, how they transact with one another is a skill in order to learn to watch.
+
+749
+00:56:05,336 --> 00:56:12,258
+以前，如果你见过交易池里的人，或听过‘读盘’的说法，
+Back in the day, if you were to have seen the people in the pits or people talking about reading
+
+750
+00:56:12,258 --> 00:56:18,834
+读盘无非就是解读和理解多头空头如何互动。
+the tape, reading the tape is nothing more than just interpreting and understanding how buyers and sellers are interacting.
+
+751
+00:56:19,136 --> 00:56:20,136
+他们是主动性交易吗？
+Are they aggressive?
+
+752
+00:56:20,436 --> 00:56:21,436
+还是被动价格行为？
+Are they passive?
+
+753
+00:56:21,736 --> 00:56:26,136
+他们是否边买边卖，只是在管理持仓？
+Are they buying some and then selling some, trying to just manage the position?
+
+754
+00:56:26,336 --> 00:56:27,936
+他们是如何执行交易的？
+How are they executing?
+
+755
+00:56:28,136 --> 00:56:32,436
+所以我们之前简要提到了价格阶梯
+And that is why we spoke very briefly about the price ladder.
+
+756
+00:56:32,936 --> 00:56:37,488
+接着我们讲到了成交量分布中
+We then moved on to quite possibly one of the most important
+
+757
+00:56:37,488 --> 00:56:40,523
+乃至整个市场中
+principles that you have in volume profiling and
+
+758
+00:56:40,523 --> 00:56:45,834
+最重要的原则之一：主动性与被动价格行为
+also in the markets in general, and that is initiative versus responsive price action.
+
+759
+00:56:45,836 --> 00:56:50,736
+现在，我再和大家详细讲解一次，
+Now, I'm going to go through that again with you and show you how the two fit with one another.
+
+760
+00:56:50,736 --> 00:56:53,636
+看看两者如何相互配合。主动性体现的是激进交易
+So, initiative is where we see aggression.
+
+761
+00:56:53,636 --> 00:57:01,536
+我们看到大型机构、大周期交易者，或能影响价格的参与者在执行持仓。
+We see a large institution, a large time frame player, someone who can influence price executing a position.
+
+762
+00:57:01,636 --> 00:57:04,636
+他们在市场上建立了方向性持仓。
+They take a directional position on the market.
+
+763
+00:57:04,636 --> 00:57:06,722
+注意，市场流动性的多少
+Now, depending on how much liquidity
+
+764
+00:57:06,722 --> 00:57:08,808
+决定了价格从A到B的移动方式。
+is in the market is how
+
+765
+00:57:08,808 --> 00:57:12,633
+所以这是我们的主动性推动。
+the market will move in this example from A to B.
+
+766
+00:57:12,636 --> 00:57:18,336
+如果流动性非常低，这个买家...
+So, if this is our initiative move and there is very low liquidity, this buyer...
+
+767
+00:57:18,336 --> 00:57:21,069
+就必须表现得非常激进，
+is going to have to look very aggressive,
+
+768
+00:57:21,069 --> 00:57:23,802
+不仅在成交量分布图上，还在
+not just on the profile, but also on
+
+769
+00:57:23,802 --> 00:57:26,535
+像我们之前讲的价格阶梯那样。
+the price ladder, like we spoke about previously.
+
+770
+00:57:26,736 --> 00:57:28,088
+注意，如果
+Now, if, however, this
+
+771
+00:57:28,088 --> 00:57:30,116
+这位多头能找到流动性，
+buyer can find liquidity, it may
+
+772
+00:57:30,116 --> 00:57:33,834
+价格走势可能会更锯齿，大致如此。
+look a little bit more jagged, a little something like this.
+
+773
+00:57:35,236 --> 00:57:38,812
+本质上我们看到的还是
+Effectively we are still seeing the same thing which is
+
+774
+00:57:38,812 --> 00:57:41,315
+主动性价格行为
+initiative now there's a few key characteristics
+
+775
+00:57:41,315 --> 00:57:44,534
+识别主动性价格行为有几个关键特征
+to identify initiative but the most important is that
+
+776
+00:57:44,936 --> 00:57:51,636
+但最重要的一点是：这是动能方向性交易
+it's a momentum directional play now that means straight away any strategies we ever execute
+
+777
+00:57:52,736 --> 00:57:58,694
+在这种价格行为中，我们不想逆势而为，这是关键
+in this type of price action we don't want to be going against it and that's the key
+
+778
+00:57:58,694 --> 00:58:02,335
+所以，在制定策略时，你需要判断
+is that when you develop your strategies you need to interpret
+
+779
+00:58:02,636 --> 00:58:08,736
+这个策略适合主动价格行为还是被动价格行为
+is that strategy going to work well in initiative type price response or in responsive type price response so
+
+780
+00:58:09,036 --> 00:58:10,919
+之前我们讲的是主动性
+that was the initiative we spoke
+
+781
+00:58:10,919 --> 00:58:12,802
+然后我们讲的是
+about then what we spoke about
+
+782
+00:58:12,802 --> 00:58:15,313
+被动价格行为
+was responsive now responsive is nothing more than
+
+783
+00:58:15,313 --> 00:58:17,824
+被动价格行为其实就是
+players being brought into the game so what
+
+784
+00:58:17,824 --> 00:58:22,533
+交易者被拉入市场，这是什么意思呢？我们来看第二个例子
+do we mean by that let's take the second example that we've been looking at
+
+785
+00:58:23,036 --> 00:58:28,090
+当价格上涨时
+as these prices move higher up what then happens is as prices
+
+786
+00:58:28,090 --> 00:58:32,302
+价格被推高后，我们会看到
+advertised higher at this point we see a responsive seller
+
+787
+00:58:32,302 --> 00:58:36,935
+响应性卖家进入市场，向主动性买家抛售
+step into the market and sell it to the initiative buyer
+
+788
+00:58:37,936 --> 00:58:41,820
+但当响应性买家不再对高价做出反应时,
+However, once that responsive buyer stops responding to higher prices,
+
+789
+00:58:41,820 --> 00:58:44,927
+主动性买家就会继续买入
+the initiative buyer will then continue to buy
+
+790
+00:58:44,927 --> 00:58:48,034
+推高市场，直到找到获利点
+the market up until he finds a gain.
+
+791
+00:58:48,836 --> 00:58:55,436
+响应性卖家，如此循环往复
+responsive sellers and so forth and so forth initiative buying until we run into
+
+792
+00:58:55,736 --> 00:58:57,124
+主动性买盘持续，直到遇到
+responsive sellers now the
+
+793
+00:58:57,124 --> 00:58:59,901
+卖盘响应的强度将决定
+degree of response of selling is going to
+
+794
+00:58:59,901 --> 00:59:02,678
+我们上涨的幅度 卖盘响应弱
+dictate how we move up little response of
+
+795
+00:59:02,678 --> 00:59:08,233
+则涨势会很激进 卖盘响应强
+selling and it will look aggressive a lot of response of selling and it will look
+
+796
+00:59:09,036 --> 00:59:15,536
+则涨势会更缓慢且磨蹭 这就是我们想强调的
+a lot less aggressive and more grindy so that's effectively what we were trying to point out now
+
+797
+00:59:16,436 --> 00:59:19,156
+再举个例子 假设我们
+In another example, if we were to just
+
+798
+00:59:19,156 --> 00:59:21,876
+演示主动性的响应 比如
+illustrate response of an initiative, is let's say
+
+799
+00:59:21,876 --> 00:59:24,936
+市场处于横盘/震荡的走势
+the market was moving in a sideways type formation.
+
+800
+00:59:24,936 --> 00:59:31,036
+市场上涨后遇到响应性卖盘
+So the market was moving up and then it ran into effectively responsive selling.
+
+801
+00:59:31,636 --> 00:59:34,236
+接着我们看到空头对高价做出响应
+We then saw sellers respond to higher prices.
+
+802
+00:59:34,336 --> 00:59:40,336
+所有买入的多头转而卖出
+Anyone who was buying the market then turns and also sells the market until we run into
+
+803
+00:59:41,436 --> 00:59:42,636
+直到遇到响应性买盘
+responsive buying.
+
+804
+00:59:43,036 --> 00:59:45,484
+一旦遇到响应性买盘
+Once you run into responsive buying, anyone that
+
+805
+00:59:45,484 --> 00:59:48,544
+做空的交易者就会获利了结
+was short on the way down will then take profits
+
+806
+00:59:48,544 --> 00:59:53,134
+市场会继续震荡，直到遇到响应性卖盘
+and the market will look to continue to rotate until it runs into responsive selling.
+
+807
+00:59:53,536 --> 00:59:56,251
+我知道这是个很简单的示例
+Now I know this is a very basic
+
+808
+00:59:56,251 --> 00:59:58,966
+但关键是要理解并解读
+illustration, but the important thing to interpret and
+
+809
+00:59:58,966 --> 01:00:04,735
+观察市场或成交量分布图时，要区分
+differentiate when you look at the market, when you look at a volume profile, are we seeing
+
+810
+01:00:05,336 --> 01:00:08,636
+我们看到的是主动性还是被动价格行为？
+initiative or are we seeing responsive?
+
+811
+01:00:09,036 --> 01:00:14,890
+识别这一点，你就能开发出非常强大的交易策略
+Identify this and you will be able to develop very very strong trade strategies
+
+812
+01:00:14,890 --> 01:00:19,536
+完全符合当前市场环境的策略
+just trading within the context of the current market conditions.
+
+813
+01:00:19,936 --> 01:00:26,836
+接着我们讲了对称性结构，分为两种基本类型
+We then moved on and we started to talk about symmetry and we had two basic types of symmetry.
+
+814
+01:00:27,636 --> 01:00:31,936
+对称性和非对称性
+Symmetrical and non-symmetrical.
+
+815
+01:00:34,236 --> 01:00:42,936
+关键区别在于：对称性结构是平衡市场、平衡分布区间
+And the key difference was that we have in symmetry, we have just nice balanced type markets, balanced distributions.
+
+816
+01:00:43,236 --> 01:00:49,736
+而非对称性结构有三种非平衡市场类型，即趋势市场
+Whereas in non-symmetry, we had three types of non-balanced type markets, which were trending markets.
+
+817
+01:00:51,636 --> 01:01:03,836
+其中P型剖面图和B型剖面图，分别对应多头平仓和空头获利了结
+Which were P profiles and which were B profiles, both long liquidation and short profit taking.
+
+818
+01:01:03,836 --> 01:01:09,436
+所以这些就是对称性与非对称性结构的核心交易策略库
+So those are the key sort of symmetrical versus non-symmetrical type pattern plays.
+
+819
+01:01:09,436 --> 01:01:13,022
+现在再强调一次，我们讨论这个的原因是
+Now, the reason we discuss that again is
+
+820
+01:01:13,022 --> 01:01:16,608
+记住，对称性市场或对称性剖面图
+that, remember, symmetrical markets or symmetrical profiles will
+
+821
+01:01:16,608 --> 01:01:22,435
+会为我们提供一套交易策略
+give us one set of trade strategies that we can develop, whereas non-symmetrical
+
+822
+01:01:22,736 --> 01:01:28,236
+而非对称性则会带来完全不同的交易机会和策略
+will give us completely different trade opportunities and strategies to use.
+
+823
+01:01:28,636 --> 01:01:33,436
+这就是我们之前讲对称性和非对称性时的重点
+So that's what we spoke about when we spoke with regard to symmetry and non-symmetry.
+
+824
+01:01:33,736 --> 01:01:36,727
+然后我们结束了，并讲到了
+We then finished off and spoke about the
+
+825
+01:01:36,727 --> 01:01:42,335
+初始平衡区间，即常规交易时段开始前的交易初期
+initial balance, which is the initial period of trade before the cash market steps in.
+
+826
+01:01:42,536 --> 01:01:48,136
+我给大家展示了德国国债、E-迷你标普500期货
+And I showed you the various examples of the Bund, the E-mini S&P,
+
+827
+01:01:48,336 --> 01:01:56,336
+WTI原油和欧元/美元外汇的初始平衡区间时长
+the oil market and the euro dollar FX and what time those initial balances would be.
+
+828
+01:01:56,636 --> 01:01:59,797
+然后我们还讲了几个例子
+We then also spoke about the few examples
+
+829
+01:01:59,797 --> 01:02:02,563
+如何利用初始平衡区间
+of how we would use the initial
+
+830
+01:02:02,563 --> 01:02:04,934
+来制定不同的交易策略
+balance to develop various trade strategies.
+
+831
+01:02:05,336 --> 01:02:07,636
+这就是模块5第一部分的总结
+So that's a wrap up of part 5.
+
+832
+01:02:07,736 --> 01:02:10,436
+希望大家喜欢模块5的前半部分
+I hope you've enjoyed the first half of this part 5.
+
+833
+01:02:10,636 --> 01:02:14,936
+现在继续模块5的剩余内容
+Let's now move on and get on with the rest of our part 5.
+
+834
+01:02:18,336 --> 01:02:22,736
+我们将进一步深入对称性结构
+We're going to move now a little bit further into the concept of symmetry and non-symmetry.
+
+835
+01:02:22,736 --> 01:02:28,536
+并开始讨论非趋势市场与趋势市场
+And we're going to start to talk about the non-trending market versus trending market.
+
+836
+01:02:28,636 --> 01:02:32,836
+记得我们讲主动价格行为时说的
+And the reason is, remember what I said to you when we spoke about initiative and responsive.
+
+837
+01:02:33,136 --> 01:02:41,236
+必须尽早区分市场是趋势还是无趋势
+We need to be able to very early differentiate when a market is trending and when there's no trend.
+
+838
+01:02:41,336 --> 01:02:45,193
+如果能早期识别
+If you can identify this very early on, you can
+
+839
+01:02:45,193 --> 01:02:52,135
+就能在任意时间框架下高信心应用策略
+then apply various strategies with a high degree of confidence over the course of any given time frame.
+
+840
+01:02:52,136 --> 01:02:55,536
+先来看非趋势市场
+So let's talk about firstly non-trending markets.
+
+841
+01:02:55,636 --> 01:03:06,136
+注意，非趋势市场的定义是：参与度极低，对方向缺乏信心
+Now, non-trending markets, by definition, there's minimal market participation and little or no confidence in direction.
+
+842
+01:03:06,136 --> 01:03:08,702
+换句话说，交易者在等待
+In other words, people are waiting or
+
+843
+01:03:08,702 --> 01:03:12,002
+或在更大时间框架下，参与者在等待
+on a larger term time frame participants, they're waiting
+
+844
+01:03:12,002 --> 01:03:18,235
+重要新闻、数据或基本面信息，来改变他们对价格的
+for big news, for data, for something fundamental that can then shift their, you know, how they.
+
+845
+01:03:18,436 --> 01:03:20,436
+认知或估值
+perceive or value various prices.
+
+846
+01:03:20,436 --> 01:03:27,236
+所以市场可能长时间处于非趋势，因为都在等更多信息
+So that's why markets can spend a long, long time not trending because they're just awaiting further information.
+
+847
+01:03:28,536 --> 01:03:34,636
+非趋势时，几乎没理由承担风险，因为持仓被锁定
+Non-trend, there's very little reason to take any risk as the market positioning is locked up.
+
+848
+01:03:34,736 --> 01:03:38,698
+所以再强调一次，你需要等待
+So again, it's this concept of you need to wait
+
+849
+01:03:38,698 --> 01:03:41,868
+等待关键央行的进一步信息
+for further information, say, from a crucial central
+
+850
+01:03:41,868 --> 01:03:45,434
+再分配资金并承担更多风险
+bank before then allocating and taking on further risk.
+
+851
+01:03:46,136 --> 01:03:53,636
+非趋势日中，初始平衡区间通常很窄，波动性极低
+In non-trends, we do tend to see very narrow initial balance ranges and very, very low volatility.
+
+852
+01:03:55,136 --> 01:03:56,969
+而趋势日
+Now, trend days, on the
+
+853
+01:03:56,969 --> 01:03:59,535
+相反
+flip side, we tend to see a
+
+854
+01:03:59,535 --> 01:04:03,935
+方向信念很强，全天都很明显
+high level of directional confidence and it's evident over the entire session.
+
+855
+01:04:04,336 --> 01:04:10,036
+关键是，市场非趋势时，全天可能保持这种状态
+Very crucial to understand, when a market's not trending, it's likely to stay that way for the entire day.
+
+856
+01:04:10,436 --> 01:04:14,636
+趋势形成后，全天可能维持趋势
+When it's trending, it will likely hold the trend for the entire session.
+
+857
+01:04:14,936 --> 01:04:17,636
+还记得我们讲非对称性结构时说的吗？
+Remember what we said when we spoke about non-symmetry.
+
+858
+01:04:18,036 --> 01:04:25,536
+这种非对称性通常会贯穿整个交易时段，
+That non-symmetry tends to hold for the entire session and it gives us a little bit of a lean in one direction or the other.
+
+859
+01:04:27,036 --> 01:04:30,042
+趋势日会吸引响应性买家，因此
+Trend A draws in responsive players, so therefore
+
+860
+01:04:30,042 --> 01:04:33,424
+同样地，如果有大量
+by that token, if we've got a lot of
+
+861
+01:04:33,424 --> 01:04:37,934
+参与者因价格快速上涨或下跌而入场，
+participants being drawn in as prices very quickly moving higher or lower,
+
+862
+01:04:38,336 --> 01:04:44,236
+意味着大量新资金也会进入，成交量会放大。
+that means a lot of new businesses being drawn in as well, and that implies higher volume.
+
+863
+01:04:46,036 --> 01:04:53,536
+趋势日中，我们常会看到一种‘单一时间框架’现象，
+Trend days, we tend to see something called one time framing we will talk about this and I will show you some very nice examples
+
+864
+01:04:54,236 --> 01:05:01,046
+但关键要理解单一时间框架的作用，只是显示多头或
+but the important thing to understand about one time framing is merely that it shows that either the buyers or
+
+865
+01:05:01,046 --> 01:05:03,429
+空头整个
+the sellers are in control the entire
+
+866
+01:05:03,429 --> 01:05:06,834
+交易日都控制着拍卖过程
+day they're controlling the auction process for the entire session
+
+867
+01:05:08,436 --> 01:05:12,342
+注意，趋势市场中
+There is a high tendency when we trend for the market to
+
+868
+01:05:12,342 --> 01:05:16,248
+市场常以最低或最高价开盘
+open at the low or the high and for the rest of
+
+869
+01:05:16,248 --> 01:05:22,434
+然后全天延续该方向，通常在趋势日最高或最低1/4区间收盘
+the day continue in that direction and usually close within the top or bottom quartile of that trend day.
+
+870
+01:05:24,436 --> 01:05:29,936
+关键是，早期识别趋势并顺势而为，收益可观
+Note, it's very profitable if you can identify trend early and go with it.
+
+871
+01:05:30,536 --> 01:05:35,566
+更重要的是，错过趋势后
+More importantly, if you miss the trend and you're taking counter strategies
+
+872
+01:05:35,566 --> 01:05:38,081
+若全天逆势操作
+all day long, it will feel
+
+873
+01:05:38,081 --> 01:05:41,434
+会非常痛苦，非常沮丧，非常困难。
+very painful, very, very frustrating and very difficult.
+
+874
+01:05:41,536 --> 01:05:46,209
+所以关键是要尽早识别趋势日，
+So it's important that you do identify trend days very early and
+
+875
+01:05:46,209 --> 01:05:50,882
+我会给你展示趋势日的早期特征，
+I will show you very early characteristics that trend days exhibit so
+
+876
+01:05:50,882 --> 01:05:56,334
+确保你不会错过这些趋势日机会。
+that you make sure you don't miss out on these trend day type opportunities.
+
+877
+01:05:57,036 --> 01:06:00,600
+再强调一次，我们会讲一些早期识别方法，
+Again, we will talk about some of those early identifiers, but it
+
+878
+01:06:00,600 --> 01:06:02,976
+但关键是要尽早捕捉到这些信号
+is crucial that you pick up on them
+
+879
+01:06:02,976 --> 01:06:07,134
+否则整个交易时段你都会逆势操作。
+early so that you don't end up fading the market for the entire session.
+
+880
+01:06:08,236 --> 01:06:12,591
+现在我们来看一个非常直观的图示，
+What we have here now is a very nice graphic depiction of
+
+881
+01:06:12,591 --> 01:06:15,494
+非趋势日的例子，是你可以预期的
+the non-trend examples, day types that you can
+
+882
+01:06:15,494 --> 01:06:18,034
+日内类型，以及趋势日的类型。
+expect, and then the trending day types.
+
+883
+01:06:18,436 --> 01:06:26,234
+这些是你可以预期的类型，现在关键是要记住这5种日内类型
+types you can expect and it's important now that you try and memorize these five day types as we're going to go through each one of them individually
+
+884
+01:06:26,536 --> 01:06:31,837
+我会给你展示每种日内类型的特征，我会给你展示每种类型的图表
+I'm going to show you the characteristics of each one of the day types I'm going to show you a chart of each one
+
+885
+01:06:31,837 --> 01:06:36,034
+然后我们会把这些日内类型
+of the day types and then we're going to summarize each one of these day types in a nice
+
+886
+01:06:36,636 --> 01:06:41,486
+总结成一个清晰的表格，你可以保存
+table that you can then keep with you and just make sure
+
+887
+01:06:41,486 --> 01:06:46,336
+确保你始终能将每一天归类到这5种日内类型中
+you're constantly evaluating each day within one of these five day types
+
+888
+01:06:46,736 --> 01:06:54,136
+所以你可以看到，非趋势日里有正常日、中性日和正常变动日
+So as you can see under non-trending day types we have a normal day, we have a neutral day and we have a normal variation.
+
+889
+01:06:54,536 --> 01:06:59,107
+在趋势市场中，有标准趋势日
+In a trending market we have a standard trend or
+
+890
+01:06:59,107 --> 01:07:04,135
+或传统趋势日，还有双分布趋势日
+a traditional trend day and then we have a double distribution.
+
+891
+01:07:05,036 --> 01:07:12,934
+现在我们逐一分析这些日内类型，看它们的特征和成交量分布图表现
+Let's go now through each one of these day types and have a look at the characteristics and what they would look like on the volume profiles.
+
+892
+01:07:14,336 --> 01:07:18,836
+非趋势市场中的第一种日内类型是常规日
+The first day type in a non-trending market is the normal day.
+
+893
+01:07:19,136 --> 01:07:21,736
+注意，这种情况非常罕见
+Now note, these are very, very rare to see.
+
+894
+01:07:22,636 --> 01:07:27,236
+所以有一个关键特征定义常规日
+So there's one key characteristic that defines a market as a normal day.
+
+895
+01:07:28,636 --> 01:07:31,336
+初始平衡区间极宽
+We have an extremely wide initial balance.
+
+896
+01:07:31,336 --> 01:07:36,936
+开盘第一小时的交易区间远大于平时
+So that initial hour of trade is substantially bigger range than normal.
+
+897
+01:07:36,936 --> 01:07:39,036
+远超平均区间范围
+So well above the average range.
+
+898
+01:07:39,036 --> 01:07:46,334
+每天都追踪初始平衡区间的范围
+Now the easy way to identify this is to make sure that you track the range of the initial balance every single day.
+
+899
+01:07:46,836 --> 01:07:54,236
+如果平均区间是10到15个价格单位，
+If on average you find that it's roughly 10 to 15 prices the day you have a 30 or 40 or more price range
+
+900
+01:07:54,536 --> 01:07:57,764
+就知道很可能会出现
+you know there's a high probability we are going to
+
+901
+01:07:57,764 --> 01:08:00,992
+非趋势日的一种类型
+get a normal day type now the important thing to
+
+902
+01:08:00,992 --> 01:08:05,834
+这种日内类型往往会
+understand about a normal day type is that we tend to spend the entire session
+
+903
+01:08:06,136 --> 01:08:12,336
+那么初始平衡区间就可能达到30或40个单位
+filling out the initial balance so straight away if you know there's a high probability that the market's going to
+
+904
+01:08:12,636 --> 01:08:17,474
+整个时段都在早盘区间内运行
+spend almost the entire session within the early established range straight away
+
+905
+01:08:17,474 --> 01:08:25,135
+知道这是常规日内类型后，你可以开发出很棒的交易机会，信念很强
+you can develop some fantastic trade opportunities with very good conviction knowing that it is a normal day type
+
+906
+01:08:26,336 --> 01:08:30,936
+注意，可以看到，长周期参与者
+Now note, as we can see, long time frame participants have a
+
+907
+01:08:30,936 --> 01:08:34,002
+有充分理由在早期做出反应，而这种
+strong reason to react early on and this
+
+908
+01:08:34,002 --> 01:08:37,835
+早期反应造就了非常宽的初始平衡区间
+early reaction is what creates the very wide initial balance.
+
+909
+01:08:39,856 --> 01:08:43,683
+关键线索和核心理解是，在常规日内类型中
+The important clue and the important understanding is that on a normal
+
+910
+01:08:43,683 --> 01:08:46,234
+初始平衡区间不会延伸
+day, there's no extension of the initial range
+
+911
+01:08:46,234 --> 01:08:51,655
+且整个交易时段保持这种状态的概率更高
+and it's a higher probability outcome that it's going to stay that way for the entire session.
+
+912
+01:08:54,156 --> 01:09:00,853
+从图中可以看到，深蓝色线是我们的初始平衡区间
+As you can see in the chart, what we have is the blue line is the, or the dark blue line, that is our initial range.
+
+913
+01:09:01,056 --> 01:09:05,356
+注意，这个市场是个特别大的例子。
+Now, in this market, you can see it's a particularly big example.
+
+914
+01:09:05,856 --> 01:09:09,956
+关键是要注意，浅蓝色K线是价值区间。
+What's important to note then with the light blue bar is that's the value area.
+
+915
+01:09:09,956 --> 01:09:16,856
+可以看到，全天的价值区间都在初始平衡区间内。
+So we can see that the value of the day, of the entire session, was accepted within the initial balance.
+
+916
+01:09:17,356 --> 01:09:22,956
+另外要注意的是，市场开盘时出现的强劲尾部。
+Also important to note is the very strong opening tail that the market exhibited in this market.
+
+917
+01:09:22,956 --> 01:09:27,356
+所以，这种日内类型经常会出现尾部。
+So it's quite often that you do see tails on these normal day types.
+
+918
+01:09:27,656 --> 01:09:29,901
+再强调一次，如果你看到
+So again, remember, if you see
+
+919
+01:09:29,901 --> 01:09:33,642
+一个特别宽的初始平衡区间，
+an extremely wide initial balance period, that could be an
+
+920
+01:09:33,642 --> 01:09:39,254
+这可能是一个早期线索，提示我们可能是一个常规日内类型。
+early clue or an identifier that we are likely to have a normal day type.
+
+921
+01:09:40,256 --> 01:09:42,856
+现在我们来看下一种日内类型。
+Let's now turn our attention to the next day type.
+
+922
+01:09:44,656 --> 01:09:51,756
+中性日，即多头和空头很容易就公允价值达成一致
+The neutral day so the neutral day is where a buyer and a seller agree on fair value
+
+923
+01:09:52,956 --> 01:10:00,156
+而且在中性日中，两种时间框架都非常活跃
+quite easily and quite often now both time frames are very active
+
+924
+01:10:00,756 --> 01:10:08,256
+多空会主动发起，直到遇到被动价格行为后反转
+within this day type and they tend to initiate until they run into responsive and then they tend to reverse
+
+925
+01:10:08,656 --> 01:10:13,956
+市场会向另一个方向运行，并在整个交易时段中反复拉锯
+and where the market goes in the other direction and it keeps pinging and reversing the entire session.
+
+926
+01:10:16,256 --> 01:10:18,884
+中性日的初始平衡区间
+Initial balance range for the neutral day will
+
+927
+01:10:18,884 --> 01:10:21,512
+会介于普通日与趋势日之间，
+be between a normal day, so very, very
+
+928
+01:10:21,512 --> 01:10:25,454
+普通日区间非常宽，趋势日区间较小或中等
+wide, and between a trend day, which can be small or medium.
+
+929
+01:10:25,456 --> 01:10:30,356
+所以中性日的初始平衡区间大小可能相对平均
+So the initial balance size of a neutral day can be relatively average.
+
+930
+01:10:30,656 --> 01:10:35,556
+从例子可以看到，市场在初始平衡区间两侧都有交易
+As you can see in the example, the market trades on both sides of the initial balance.
+
+931
+01:10:35,556 --> 01:10:38,944
+在第一个例子中
+So whilst we had in the first example, we had
+
+932
+01:10:38,944 --> 01:10:42,332
+市场整个交易时段都在初始平衡区间内运行
+the market trading the entire session within the initial balance,
+
+933
+01:10:42,332 --> 01:10:47,754
+但在中性日类型中，市场倾向于在初始平衡区间两侧交易
+in a neutral day type, the market tends to trade both sides of the initial balance.
+
+934
+01:10:48,256 --> 01:10:52,656
+更重要的是，它倾向于在初始平衡区间两侧都出现回拒
+More importantly, it tends to reject both sides of the initial balance.
+
+935
+01:10:53,056 --> 01:10:54,717
+这种回拒，或者当我们
+This rejection, or once we
+
+936
+01:10:54,717 --> 01:10:57,707
+重新进入初始平衡区间时，会给我们一种
+re-enter the initial balance, this gives us sort of
+
+937
+01:10:57,707 --> 01:11:03,355
+这是早期信号，表明可能突破初始平衡区间另一侧
+an early identifier that we are likely to take out the other side of the initial balance.
+
+938
+01:11:03,456 --> 01:11:07,269
+所以很多交易者都会关注的重要策略是
+So a very important strategy that a lot of traders look for
+
+939
+01:11:07,269 --> 01:11:11,082
+突破初始平衡区间一侧后
+is once we've taken out one side of the initial balance and
+
+940
+01:11:11,082 --> 01:11:13,306
+出现某种反转信号
+shown some sort of reversal type indications,
+
+941
+01:11:13,306 --> 01:11:17,754
+然后瞄准突破初始平衡区间的另一侧
+we then look to target the other side of the initial balance being broken.
+
+942
+01:11:18,256 --> 01:11:22,856
+再强调一次，这是另一种重要的非趋势日类型
+Again, this is another important non-trending type day type.
+
+943
+01:11:23,856 --> 01:11:27,056
+注意，我们确实在两侧都延伸了初始平衡区间
+Note we do extend the initial balance on both sides.
+
+944
+01:11:27,356 --> 01:11:31,056
+然后有两种收盘类型，这一点很重要
+We then have two types of closes and this is important to pay attention.
+
+945
+01:11:31,256 --> 01:11:32,456
+这是中性收盘。
+We have a neutral close.
+
+946
+01:11:32,456 --> 01:11:37,956
+注意，中性收盘是指收盘价位于价值区间内。
+Now a neutral close is where the close of the market occurs within value area.
+
+947
+01:11:38,456 --> 01:11:44,956
+是一种普通收盘，多空双方都未明显获胜。
+A pretty ordinary close where neither buyer nor seller kind of victoriously wins the day.
+
+948
+01:11:45,456 --> 01:11:52,554
+但若出现中性极端收盘，市场会在高点或低点收盘。
+However, when we get a neutral extreme close, this is where the market shuts at either the high or the low.
+
+949
+01:11:52,756 --> 01:11:56,165
+当出现这种极端收盘时，
+When we do have one of these extreme closes, this
+
+950
+01:11:56,165 --> 01:11:57,869
+会给我们
+is giving us quite an
+
+951
+01:11:57,869 --> 01:12:00,596
+发出下一个交易日的早期信号。为什么？
+early signal for the next day's trade.Why?
+
+952
+01:12:00,256 --> 01:12:05,756
+因为极端收盘象征多空一方的假设性胜利。
+Because an extreme close is a hypothetical victory for a buyer and seller.
+
+953
+01:12:06,356 --> 01:12:11,306
+从这两个例子可以看到，第一个是相对中性收盘
+As you can see in the two examples provided, the first one we have a relatively neutral close
+
+954
+01:12:11,306 --> 01:12:14,056
+市场在初始平衡区间两侧都有交易
+where the market traded both sides of the initial balance.
+
+955
+01:12:14,456 --> 01:12:20,756
+第二个例子也是在初始平衡区间两侧交易，但收盘是极端收盘
+The second example is where we traded both sides of the initial balance but we had an extreme close.
+
+956
+01:12:21,056 --> 01:12:27,856
+在极端收盘的情况下，我们会在次日寻找早盘买入机会
+In an extreme close situation, we would be looking for early buy side opportunities in the next day.
+
+957
+01:12:28,256 --> 01:12:31,456
+后续我们会详细讨论这些交易策略
+We will discuss these sorts of strategies as we move along further.
+
+958
+01:12:31,956 --> 01:12:33,756
+现在来看下一个交易日
+Let's now take a look at the next day.
+
+959
+01:12:35,256 --> 01:12:40,256
+常规变异日是你可能遇到的第三种非趋势日
+Normal variation is the third non-trend day type that you can expect to see.
+
+960
+01:12:41,656 --> 01:12:47,456
+常规变异日的动态性和特异性比常规日弱
+The normal variation of a normal day is less dynamic and less specific.
+
+961
+01:12:48,456 --> 01:12:56,356
+我们通常会看到初始平衡区间延伸
+We tend to see an extension of the initial balance just like we saw in the neutral day type where we extended on both sides.
+
+962
+01:12:57,856 --> 01:13:01,528
+可以看到，长期交易者会等待合适时机
+As you can see, long term players wait for the opportune moment
+
+963
+01:13:01,528 --> 01:13:03,976
+入场，他们并不一定
+to enter and they don't necessarily do this
+
+964
+01:13:03,976 --> 01:13:07,954
+会在常规日开盘时操作
+at the opening of the market that we saw in the normal day.
+
+965
+01:13:09,156 --> 01:13:12,289
+现在，它动态性稍弱的原因是
+Now the reason it's slightly less dynamic is because what
+
+966
+01:13:12,289 --> 01:13:16,049
+前两种日内类型中，我们看到
+we saw with the first two day types, when we have a
+
+967
+01:13:16,049 --> 01:13:18,242
+在常规日内类型中，我们知道
+normal day type, we know that there's
+
+968
+01:13:18,242 --> 01:13:20,435
+市场有很高概率
+a high probability that the market is
+
+969
+01:13:20,435 --> 01:13:23,254
+会在初始平衡区间内度过全天
+going to spend the day within the initial range.
+
+970
+01:13:23,556 --> 01:13:30,656
+中性日时，市场很可能在初始平衡区间两侧延伸
+When we have a neutral day, we know there's a high probability that the market's likely to extend on both sides of the initial range.
+
+971
+01:13:31,056 --> 01:13:38,154
+而常规波动日虽可能延伸，但方向不确定
+Whereas with a normal variation day, we know there's a high probability for extension, but we're not sure in which direction.
+
+972
+01:13:38,556 --> 01:13:46,554
+所以关键是等大周期走势明确后再执行交易策略
+So it's important that we wait for these bigger time frames to make their move before then placing our trade strategies.
+
+973
+01:13:48,156 --> 01:13:52,406
+注意分布区间的公允价值接受区域
+We note that the accepted value of the distribution or where fair
+
+974
+01:13:52,406 --> 01:13:56,656
+通常呈现B型或P型剖面图
+value is accepted tends to look like a B or P shape.
+
+975
+01:13:56,956 --> 01:14:06,156
+记得我们提过，这是空头获利了结和多头平仓
+Remember we spoke about these being both shorts taking profit and longs liquidating their positions.
+
+976
+01:14:08,156 --> 01:14:14,756
+P型剖面图表示空头回补，B型表示多头平仓
+The P shape is indicative of short covering and the B shape is indicative of long liquidation.
+
+977
+01:14:15,556 --> 01:14:19,856
+接下来我们讲下一种日内类型：趋势日。
+We'll now talk about our next day type which will be a trend day type.
+
+978
+01:14:21,356 --> 01:14:24,156
+第一种趋势日是传统趋势日。
+The first of the trend days is a traditional trend day.
+
+979
+01:14:25,056 --> 01:14:28,056
+注意，从图中可以看到
+Now it looks a lot like as you can see
+
+980
+01:14:28,056 --> 01:14:31,056
+成交量分布图里，这种日内类型
+in the profile in the picture, it's a day type
+
+981
+01:14:31,056 --> 01:14:36,156
+全天会形成多个小分布区间或接受区域。
+where we have lots of little profiles or areas being accepted over a period of a day.
+
+982
+01:14:36,456 --> 01:14:38,256
+记得我们之前说传统趋势日
+Remember what we said in a traditional
+
+983
+01:14:38,456 --> 01:14:45,556
+方向信念很强，且全程都会体现。
+trend day, there's a high level of directional confidence and it tends to be evident over the entire session.
+
+984
+01:14:46,456 --> 01:14:52,256
+市场趋势发展时，会吸引新资金入场，成交量随之上升。
+As the market trends, it tends to draw in new business and thus higher and higher volume.
+
+985
+01:14:53,156 --> 01:15:00,236
+我们还会看到大量单一时间框架
+We also tend to see a lot of one time framing as the initiative tends to occur over the entire
+
+986
+01:15:00,236 --> 01:15:06,254
+因为主动性贯穿全天，多头或空头控制整个交易时段
+day and we have either the buyer or the seller being in control over the entire session.
+
+987
+01:15:07,156 --> 01:15:11,165
+再强调一次，注意开盘和收盘
+Again, also note there is a tendency to open and close within
+
+988
+01:15:11,165 --> 01:15:15,174
+通常会落在第一或最低或最高四分位区间
+the first or the lowest or the highest quartile and we then
+
+989
+01:15:15,174 --> 01:15:20,854
+并且会随趋势收盘
+also close with the trend in either the highest quartile in an uptrend or the lowest quartile
+
+990
+01:15:21,456 --> 01:15:22,456
+上升趋势在最高四分位，下跌趋势在最低四分位
+in a downtrend.
+
+991
+01:15:23,456 --> 01:15:30,756
+现在，关于趋势日，传统趋势日的关键是早期特征
+Now, what's important to note about a trend day, a traditional trend day, is what are the early characteristics.
+
+992
+01:15:30,956 --> 01:15:34,770
+就像我们之前讨论日内类型的早期特征一样
+Just like we spoke about some of the early characteristics with the
+
+993
+01:15:34,770 --> 01:15:37,312
+普通日、中性日和普通变体日
+normal day, the neutral day and the normal
+
+994
+01:15:37,312 --> 01:15:39,854
+趋势日有其特定特征
+variation, we have characteristics for the trend day.
+
+995
+01:15:40,056 --> 01:15:46,256
+注意，其中一个特征是成交量分布
+Now, some of the characteristics is volume dispersion. This is how volume is dispersed over various prices.
+
+996
+01:15:46,556 --> 01:15:51,456
+从示例可以看到，成交量分布在多个价格上
+As you can see in the example, it tends to be dispersed over a varying number of prices.
+
+997
+01:15:51,656 --> 01:15:55,056
+这是趋势日的典型特征
+And this is very, very characteristic of a trend day.
+
+998
+01:15:55,156 --> 01:15:59,556
+市场会持续表现出主动性
+The market tends to show initiative until it finds responsive other time frames.
+
+999
+01:15:59,756 --> 01:16:02,656
+直到遇到被动价格行为的其他时间框架
+We then have a little bit of distribution and then initiative.
+
+1000
+01:16:02,756 --> 01:16:07,356
+然后是小幅分布区间，接着又是主动性
+And then it runs again into responsive time frame and then again initiative.
+
+1001
+01:16:07,356 --> 01:16:11,656
+所以我们会在交易时段内形成很多小价值区间
+So we tend to... form lots of little value areas over the period of the session.
+
+1002
+01:16:13,156 --> 01:16:20,456
+另一个关键特征是低成交量区域。记得我们在模块里提到过
+Another key characteristic is the low volume areas. Remember we spoke about this earlier in the module.
+
+1003
+01:16:20,856 --> 01:16:25,423
+你会发现，当市场处于趋势时
+And what you will see is that when a market is trending,
+
+1004
+01:16:25,423 --> 01:16:28,468
+往往会留下很多低成交量区域
+it tends to leave lots of low volume
+
+1005
+01:16:28,468 --> 01:16:32,655
+因为市场快速远离报价价格
+areas as the market quickly moves away from prices being advertised.
+
+1006
+01:16:33,556 --> 01:16:36,356
+市场天然倾向于方向性偏好
+There is a natural tendency for directional bias.
+
+1007
+01:16:36,356 --> 01:16:38,392
+所以在一天的交易中
+So over the period of the day,
+
+1008
+01:16:38,392 --> 01:16:40,428
+会感觉市场不断
+it'll feel as though a market constantly
+
+1009
+01:16:40,428 --> 01:16:42,754
+总想朝一个方向推进。
+wants to go in one direction or another.
+
+1010
+01:16:44,356 --> 01:16:46,656
+我们会看到非常短的盘整/压缩区间。
+We have very short consolidation periods.
+
+1011
+01:16:46,756 --> 01:16:52,856
+再强调一次，我们看到主动性交易中夹杂少量双向交易，且双向交易持续时间很短。
+So again, we see initiative with a little bit of two-way trade. And that two-way trade doesn't last very long.
+
+1012
+01:16:53,456 --> 01:16:58,056
+最后一点，我们会突破很多关键参考点位。
+And the last one, we tend to break through a lot of key reference points.
+
+1013
+01:16:58,356 --> 01:17:04,593
+如果你发现市场似乎不尊重任何技术分析，
+If ever you felt as though a market wasn't respecting any kind of technicals or wasn't paying attention to any
+
+1014
+01:17:04,593 --> 01:17:11,453
+或忽视你标记的关键枢轴点，这正是市场试图进入趋势的早期特征。
+kind of key pivots that you had noted, this is a very, very early characteristic that a market is trying to trend.
+
+1015
+01:17:11,756 --> 01:17:16,856
+之所以是早期特征，是因为主动价格行为的本质。
+And the reason this is an early characteristic is because of the nature of initiative price action.
+
+1016
+01:17:17,256 --> 01:17:26,056
+主动性本身就是大周期有影响力的参与者在积极执行交易。
+Initiative by its very nature is when large time frame participants who are influential are looking to execute quite aggressively.
+
+1017
+01:17:26,356 --> 01:17:30,156
+他们执行交易时，对价格并不在意
+When they're executing, they're not too concerned about price.
+
+1018
+01:17:30,456 --> 01:17:34,200
+他们不在意价格这一事实，强烈表明
+The fact that they're not concerned about price is very suggestive that
+
+1019
+01:17:34,200 --> 01:17:38,256
+市场中不仅存在主动价格行为
+not only is the initiative price action in the market, but it's like...
+
+1020
+01:17:38,356 --> 01:17:41,056
+而且可能具有趋势特征
+to be of a trending characteristic.
+
+1021
+01:17:41,356 --> 01:17:45,756
+这些就是趋势日的关键特征
+So those are some of the key characteristics with regards to a trend day.
+
+1022
+01:17:46,056 --> 01:17:50,456
+现在来看另一种趋势日：双分布趋势日
+Let's now turn to the other type of trend day which is a double distribution.
+
+1023
+01:17:52,356 --> 01:17:56,256
+双分布是你通常能发现的第二种趋势类型
+The double distribution is the second trend type that you can typically find.
+
+1024
+01:17:56,556 --> 01:18:00,756
+它的名称正是来源于其字面意思
+It gets its name from exactly what the name is.
+
+1025
+01:18:00,856 --> 01:18:05,506
+它包含两个分布区间，最初表现为
+It has two distributions and this is formed by initially seeing a
+
+1026
+01:18:05,506 --> 01:18:08,606
+一定的双向交易，且有大量
+little bit of two-way trade, a lot of
+
+1027
+01:18:08,606 --> 01:18:13,256
+接受，伴随少量主动性，随后又是双向交易
+acceptance with a little bit of initiative and then further two-way trade.
+
+1028
+01:18:13,456 --> 01:18:17,756
+现在来看双分布趋势日的形成特征
+But let's look at some of the characteristics of what creates a double distribution day.
+
+1029
+01:18:17,756 --> 01:18:23,256
+最初市场活跃度较低，因为方向信念不足
+So initially the market is quite inactive as there's a low level of conviction.
+
+1030
+01:18:23,256 --> 01:18:26,856
+换句话说，多空双方都缺乏方向信念
+In other words, there's very little conviction to either move up or down.
+
+1031
+01:18:28,556 --> 01:18:31,070
+注意，我们还会看到
+Note then, we also do have a relatively
+
+1032
+01:18:31,070 --> 01:18:33,584
+一个相对较小的初始平衡区间，这同样是
+small initial balance and this is again an
+
+1033
+01:18:33,584 --> 01:18:37,355
+这是市场缺乏方向信念和兴趣的早期信号。
+early identifier of a lack of conviction and interest in the market.
+
+1034
+01:18:38,156 --> 01:18:42,176
+但事件变化可能来自基本面、
+But a change in events, whether it may be fundamental, whether it
+
+1035
+01:18:42,176 --> 01:18:44,856
+技术面或大额订单进入市场，
+may be technical or maybe a large order
+
+1036
+01:18:44,856 --> 01:18:51,556
+这会突然产生主动性，突破初始平衡区间。
+comes into the market, this suddenly creates initiative and it's this initiative that breaks us out of the initial range.
+
+1037
+01:18:51,556 --> 01:18:57,656
+注意，这通常会留下低成交量区域或未交易价格区间。
+Now note, it does tend to leave a low volume area or an untraded area of prices.
+
+1038
+01:18:58,056 --> 01:19:02,186
+在双分布趋势日中，这个未交易区间至关重要，
+This untraded area is crucial in a double distribution day
+
+1039
+01:19:02,186 --> 01:19:09,156
+因为它会给市场一个轻微的方向倾向。
+as again it gives a little bit of a lean towards one direction. or the other.
+
+1040
+01:19:10,856 --> 01:19:13,598
+再注意，你通常会在
+And note, you tend to get, well, in
+
+1041
+01:19:13,598 --> 01:19:16,340
+双分布趋势日的特点是这些单印区
+the double distribution is that these single prints
+
+1042
+01:19:16,340 --> 01:19:18,054
+或低成交量区域
+or this low volume area
+
+1043
+01:19:18,656 --> 01:19:21,204
+通常会保持有效，只要
+will tend to hold and so long as
+
+1044
+01:19:21,204 --> 01:19:23,752
+保持有效，市场就会继续趋势
+it holds, the market will continue to trend
+
+1045
+01:19:23,752 --> 01:19:27,255
+或维持全天的方向趋势
+or hold the directional trend for the rest of the day.
+
+1046
+01:19:27,556 --> 01:19:30,184
+注意，低成交量区域
+Now the reason that this low volume area
+
+1047
+01:19:30,184 --> 01:19:32,155
+或单印区的关键原因是
+or single prints is crucial is
+
+1048
+01:19:32,155 --> 01:19:34,454
+因为它为我们提供方向偏好
+because it gives us the directional bias.
+
+1049
+01:19:34,656 --> 01:19:40,356
+所以关键问题是，如果低成交量区域被回补,
+So the question, you know, ultimately we have to say is that if the low volume area is filled,
+
+1050
+01:19:41,556 --> 01:19:43,572
+那么推动力就消失了
+effectively the impetus is now gone
+
+1051
+01:19:43,572 --> 01:19:49,956
+低成交量区域很可能被填平，双分布趋势日也就不复存在
+and the low volume area will likely be filled in and we'll no longer have a double distribution day.
+
+1052
+01:19:50,256 --> 01:19:52,055
+所以你要问自己
+So the question you have to ask
+
+1053
+01:19:52,055 --> 01:19:53,340
+在双分布趋势日中
+yourself when it comes to
+
+1054
+01:19:53,340 --> 01:19:55,653
+是回补还是不回补
+a double distribution to fill or not to fill.
+
+1055
+01:19:56,156 --> 01:19:58,956
+只要不回补，趋势就能维持
+So long as we don't fill we'll hold the trend.
+
+1056
+01:19:58,956 --> 01:20:01,276
+注意，在例子中你可以看到
+Now in the example as you can see
+
+1057
+01:20:01,276 --> 01:20:03,886
+市场开盘后，前
+the market opened and spent the first sort of
+
+1058
+01:20:03,886 --> 01:20:07,656
+一个半小时在相对较小的初始平衡区间内横盘
+hour and a half just moving sideways in a relatively small initial balance.
+
+1059
+01:20:08,056 --> 01:20:10,946
+随后出现一些买盘
+We then got a little bit of buying
+
+1060
+01:20:10,946 --> 01:20:13,836
+但市场无法强势上涨
+interest but the market couldn't really aggressively move
+
+1061
+01:20:13,836 --> 01:20:19,255
+一段时间内交易信念严重不足
+up and we got a real lack of conviction trade for some period of time.
+
+1062
+01:20:19,856 --> 01:20:24,456
+但突然，多头展现了主动性
+However, at some point, all of a sudden, initiative was taken by the buyers.
+
+1063
+01:20:24,756 --> 01:20:31,356
+我们迅速强势拉升，直到遇到空头的被动价格行为
+We quickly, aggressively moved higher until we ran into responsive sell-side action.
+
+1064
+01:20:31,656 --> 01:20:36,456
+空头响应后进入市场，双向交易随之开始
+And once those responsive sellers entered the market, we then started to see two-way trade.
+
+1065
+01:20:36,756 --> 01:20:38,256
+现在，关键是要理解...
+Now, the crucial thing to understand...
+
+1066
+01:20:38,256 --> 01:20:41,122
+我们只应在低成交量区域或单印区
+is that we only want to be looking
+
+1067
+01:20:41,122 --> 01:20:43,988
+存在时寻找多头机会
+for buy side opportunities so long as the
+
+1068
+01:20:43,988 --> 01:20:46,854
+低成交量区域或单印区仍然存在
+low volume area or the single prints remain.
+
+1069
+01:20:47,456 --> 01:20:55,656
+一旦单印区被交易，我们很可能会在两个分布区间内交易
+Once those single prints get traded, it's very likely that we then look to trade out between the two distributions.
+
+1070
+01:20:56,756 --> 01:21:00,456
+这标志着我们的5种日内类型讲解结束
+This now concludes our five different day types.
+
+1071
+01:21:00,656 --> 01:21:03,737
+现在我们来看一个图表
+Let's now look at a chart where we can graphically
+
+1072
+01:21:03,737 --> 01:21:06,818
+直观展示每种类型的方向信念
+show you the level of conviction of each one of
+
+1073
+01:21:06,818 --> 01:21:12,055
+这些日内类型，然后进入5种类型的精华总结。
+these day types and then move on to a very nice summary of the five day types.
+
+1074
+01:21:14,096 --> 01:21:21,094
+你面前的图表非常简单，但理解它极其重要，我来告诉你原因。
+The chart you have in front of you is extremely simple, but it's extremely important to understand this chart, and I'll tell you why.
+
+1075
+01:21:21,496 --> 01:21:24,547
+这里的内容实际上是
+What you have here effectively is on the
+
+1076
+01:21:24,547 --> 01:21:27,598
+横轴上，你能看到基本的6种
+x-axis, you've got basically the six different day
+
+1077
+01:21:27,598 --> 01:21:31,794
+日内类型，这是你每天可能会遇到的。
+types that you can expect to see on any given day.
+
+1078
+01:21:31,896 --> 01:21:36,296
+注意，你会在不同时间的各个市场中看到这些类型。
+Now, you will see these across various markets at any given time.
+
+1079
+01:21:36,896 --> 01:21:39,696
+纵轴是方向信念。
+On the y-axis, we've got directional conviction.
+
+1080
+01:21:39,696 --> 01:21:42,684
+换句话说，就是市场的偏向程度，
+In other words, the amount of bias that,
+
+1081
+01:21:42,684 --> 01:21:46,045
+或者说不一定是偏向性，而是
+or not necessarily bias, but how confident you can
+
+1082
+01:21:46,045 --> 01:21:52,395
+你对持有初始行情有多大信心，无论涨跌。
+be in the market holding the initial move, whether it's to the upside or to the downside.
+
+1083
+01:21:52,696 --> 01:21:53,896
+还记得我之前跟你说的吗？
+Remember what I said to you earlier.
+
+1084
+01:21:54,196 --> 01:21:57,121
+如果你知道市场有60%、70%或80%
+If you knew that there was a 60 or 70 or 80%
+
+1085
+01:21:57,121 --> 01:21:59,721
+的概率全天持续上涨或下跌，
+chance that a market was likely to keep
+
+1086
+01:21:59,721 --> 01:22:06,221
+这些概率会极大影响你的交易策略选择。
+going higher all day or keep going lower, these odds greatly impact the types of strategies you're going to take.
+
+1087
+01:22:07,396 --> 01:22:14,396
+所以我们要找出市场信念最低和最高的时段。
+And that's why we want to know where the market has the lowest amount of conviction and where it has the highest amount of conviction.
+
+1088
+01:22:14,696 --> 01:22:21,896
+现在，我要从信念最高的开始，讲两种趋势日类型。
+Now, it's important for me to, I'm going to start on the highest amount of conviction and talk about the two trend day types.
+
+1089
+01:22:22,096 --> 01:22:25,996
+可以看到，传统趋势日拥有最高方向信念。
+As you can see, the traditional trend has got the most amount of conviction.
+
+1090
+01:22:26,296 --> 01:22:28,849
+这很明显，因为我们看到
+And this is obvious because we see, you
+
+1091
+01:22:28,849 --> 01:22:34,594
+一个时间框架控制了整个交易时段，无论涨跌。
+know, the one time frame controlling the entire session, whether that's to the upside or to the downside.
+
+1092
+01:22:34,796 --> 01:22:42,496
+所以我们知道，当方向信念高时，
+So we know that momentum strategies or flow strategies or breakout strategies will work particularly well when there's a high.
+
+1093
+01:22:42,496 --> 01:22:43,896
+动量策略、流动性策略或突破策略效果特别好。
+high level of conviction.
+
+1094
+01:22:44,996 --> 01:22:48,196
+接下来是双分布趋势日。
+Next to that we have the double distribution trend day.
+
+1095
+01:22:48,496 --> 01:22:55,896
+注意，双分布趋势日只有在低成交量区域或单印区保持完整时才成立。
+Remember the double distribution only holds so long as the low volume area or single prints remain intact.
+
+1096
+01:22:56,496 --> 01:22:58,896
+然后是中性极端日。
+We then have the neutral extreme day.
+
+1097
+01:22:59,196 --> 01:23:03,018
+注意 这是市场在初始平衡区间
+Remember this is the day type where the market trades on both
+
+1098
+01:23:03,018 --> 01:23:05,247
+两侧交易但收盘
+sides of the initial balance but closes
+
+1099
+01:23:05,247 --> 01:23:07,795
+在高点或低点相对激进
+relatively aggressive on the high or the low.
+
+1100
+01:23:08,096 --> 01:23:12,396
+这种收盘为次日早盘提供早期信号
+That close gives us an early indicator for activity the next morning.
+
+1101
+01:23:13,296 --> 01:23:15,496
+接下来是正常波动日
+We then have the normal variation day.
+
+1102
+01:23:15,796 --> 01:23:19,896
+这种日内类型初始平衡区间非常宽
+This is the day type where we have a very, very wide initial balance.
+
+1103
+01:23:19,896 --> 01:23:23,083
+现在 我们方向信念高的原因是
+Now, the reason we have a high level of conviction,
+
+1104
+01:23:23,083 --> 01:23:24,995
+因为我们知道存在
+yeah, is because we know there's
+
+1105
+01:23:24,995 --> 01:23:26,907
+很可能会
+a high probability we're likely to
+
+1106
+01:23:26,907 --> 01:23:30,094
+整天填补隔夜交易时段的价格区间
+spend the day filling out that initial overnight trading session.
+
+1107
+01:23:31,496 --> 01:23:35,196
+然后是中性日内类型
+We then have the neutral day type.
+
+1108
+01:23:35,596 --> 01:23:41,396
+再强调一次，这是方向信念较弱的日内类型
+Again, this is a less convicted day type and there's far less conviction in this day.
+
+1109
+01:23:42,096 --> 01:23:49,296
+接着是常规日，方向信念更弱，最后是非趋势日
+Then we have the normal day, again even less conviction and then we have the non-trend day.
+
+1110
+01:23:49,896 --> 01:23:53,671
+所以关键的是，要理解市场
+So as you can see, it's important to understand the level of
+
+1111
+01:23:53,671 --> 01:23:56,188
+行情的方向信念水平
+conviction in the market move as this will
+
+1112
+01:23:56,188 --> 01:23:58,705
+因为这会有效给你
+sort of effectively give you a lot of
+
+1113
+01:23:58,705 --> 01:24:02,795
+这会让你在执行日内策略时更有信心
+confidence when you're taking on various strategies over the period of a day.
+
+1114
+01:24:03,296 --> 01:24:05,670
+现在我们来看一个非常
+Let's now turn our attention to a very,
+
+1115
+01:24:05,670 --> 01:24:07,450
+完整的5种
+very nice summary of the five
+
+1116
+01:24:07,450 --> 01:24:09,230
+日内类型总结，包括各自的特征
+day types, the characteristics, you know,
+
+1117
+01:24:09,230 --> 01:24:12,494
+以及隔夜交易时段或初始交易的大致走势
+what the initial trade or the overnight session might look like.
+
+1118
+01:24:12,496 --> 01:24:14,296
+和一些示意图
+look like and some drawings.
+
+1119
+01:24:18,596 --> 01:24:23,436
+现在你面前的是一个非常清晰的
+So what you have in front of you is a very nice
+
+1120
+01:24:23,436 --> 01:24:30,696
+图表和总结，展示了成交量分布图中可能出现的各种日内类型
+graphic chart and summary of the various day types you can expect to see in the volume profiles.
+
+1121
+01:24:30,996 --> 01:24:33,596
+复制这份材料,
+Make a copy of this, print it off,
+
+1122
+01:24:33,596 --> 01:24:35,546
+打印出来,
+keep it close to your desk,
+
+1123
+01:24:35,546 --> 01:24:37,496
+放在桌边，
+learn these day types off by
+
+1124
+01:24:37,496 --> 01:24:40,096
+把这些日内类型
+heart because if you can identify a day
+
+1125
+01:24:40,096 --> 01:24:45,296
+背下来，因为越早识别出当天类型，
+type very, very early on, it's going to make trading the day ahead far, far simpler.
+
+1126
+01:24:45,796 --> 01:24:47,596
+交易就会简单很多。
+So what are the five day types?
+
+1127
+01:24:47,596 --> 01:24:56,296
+记得我们还有非趋势日，包括普通日、中性日，收盘价接近中间或相对正常
+Remember we had non-trend days which include normal days, neutral days with a central or a relatively normal close.
+
+1128
+01:24:56,596 --> 01:24:58,896
+记得我们有非趋势日，包括普通日、
+We then have the neutral day with an extreme close.
+
+1129
+01:24:59,496 --> 01:25:01,210
+然后是常规日内类型的
+We then have the normal variation
+
+1130
+01:25:01,210 --> 01:25:02,924
+常见变体，
+of a normal day and then
+
+1131
+01:25:02,924 --> 01:25:05,495
+还有两种趋势日：传统趋势日和双分布趋势日。
+the two trend days being traditional and double distribution.
+
+1132
+01:25:06,096 --> 01:25:12,396
+可以看到，这些是各类日内类型的典型特征。
+As you can see, they are the various characteristics you will find within each one of those day types.
+
+1133
+01:25:13,496 --> 01:25:17,162
+现在，关键的是，我在这里
+Now, the important thing and what I've tried to show
+
+1134
+01:25:17,162 --> 01:25:24,495
+想展示的是初始平衡区间或隔夜交易时段区间的基础示例。
+you here is what a basic example of the initial balance or what the overnight session ranges might look like.
+
+1135
+01:25:24,596 --> 01:25:27,279
+再强调一次，这只是一个非常简单的示例，
+Again, this is just a very simple example
+
+1136
+01:25:27,279 --> 01:25:29,962
+帮助你理解
+so that I can try and help you
+
+1137
+01:25:29,962 --> 01:25:31,974
+理解初始交易
+to understand what the initial trade
+
+1138
+01:25:31,974 --> 01:25:34,993
+因方向信念的不同而有所不同
+would look like because of the level of conviction.
+
+1139
+01:25:35,496 --> 01:25:42,496
+可以看到，在非趋势日中，我们有很宽的区间，且会保持
+As you can see, in a non-trend normal day, we have a very wide range and we tend to remain
+
+1140
+01:25:42,696 --> 01:25:43,596
+初始平衡区间很宽，且价格会保持在该区间内
+within that range.
+
+1141
+01:25:44,096 --> 01:25:47,441
+在中性日中，初始平衡区间
+In a neutral day we have not necessarily
+
+1142
+01:25:47,441 --> 01:25:49,950
+不一定小，但相对较小
+small but a relatively small initial
+
+1143
+01:25:49,950 --> 01:25:53,295
+市场会向两侧延伸
+range and the market extends on both sides.
+
+1144
+01:25:54,196 --> 01:26:01,096
+中性日极端收盘时，记住我们会在极端位收盘，为下一个交易日提供早期偏向
+In a neutral day extreme close remember we close on one of the extremes giving us an early bias for the next day.
+
+1145
+01:26:02,096 --> 01:26:04,950
+再看一种普通日的变体
+A normal variation of a normal day, again,
+
+1146
+01:26:04,950 --> 01:26:07,804
+初始平衡区间相对较小
+we have a relatively small initial range, but
+
+1147
+01:26:07,804 --> 01:26:15,295
+但多头或空头主动性出现后，会向某一方向延伸
+we get the extension on one side or the other once that initiative comes from either the buyers or the sellers.
+
+1148
+01:26:16,096 --> 01:26:19,682
+而趋势日或双分布趋势日
+And then with a trend day and a double distribution
+
+1149
+01:26:19,682 --> 01:26:26,494
+初始平衡区间的交易区间通常处于平均水平
+day, we tend to have average type ranges in the initial trade of the day or the initial balance.
+
+1150
+01:26:26,996 --> 01:26:34,494
+可以看到，这些就是日内类型的图形示例
+As you can see then, those are some of the examples of graphic depictions of what the day types might look like.
+
+1151
+01:26:34,796 --> 01:26:37,903
+左侧的K线
+As you can see with the bars on the left,
+
+1152
+01:26:37,903 --> 01:26:40,388
+代表初始交易及其后续
+those represent the initial trade and then how
+
+1153
+01:26:40,388 --> 01:26:43,495
+成交量分布图可能展示全天的走势
+the profile might look over the period of the day.
+
+1154
+01:26:44,396 --> 01:26:48,615
+记住，把这张图拍下来，复印下来
+Remember, take a picture of this, photocopy this, you're going to get
+
+1155
+01:26:48,615 --> 01:26:51,427
+不仅概念检查会考到
+tested on this in not just the concept
+
+1156
+01:26:51,427 --> 01:26:55,294
+我还会确保你理解这5或6种
+checker, but I'm going to ensure that you understand these five
+
+1157
+01:26:55,996 --> 01:27:00,896
+日内类型并能应用到多个案例中
+or six day types and can apply them across many different examples.
+
+1158
+01:27:01,096 --> 01:27:07,846
+这是模块2中较为重要的部分
+This is one of the more important sort of sections we're going to deal with in module two,
+
+1159
+01:27:07,846 --> 01:27:11,596
+所以学这张表时别着急，要记住
+so don't rush through learning this table and memorizing it.
+
+1160
+01:27:14,048 --> 01:27:21,272
+现在我们完成模块2第5部分，聊聊成交量分布的交易流程
+We're now going to finish off part 5 of module 2 and just talk a little bit about the trading process with volume profiling.
+
+1161
+01:27:23,548 --> 01:27:30,380
+我们在模块1里简单提过，也讲过如何使用成交量分布
+We've spoken about this a little bit earlier in module 1 and we spoke about how you'd go about utilizing volume profiling.
+
+1162
+01:27:31,348 --> 01:27:37,748
+现在我来告诉你，我们为何用成交量分布的核心目的
+Now I'm going to give you almost just an understanding of the purpose as to why we use volume profiling.
+
+1163
+01:27:38,048 --> 01:27:41,813
+所以首先要理解的是，你需要
+So the first thing to understand is that you need to have
+
+1164
+01:27:41,813 --> 01:27:43,695
+一个交易优势
+an edge or a little bit
+
+1165
+01:27:43,695 --> 01:27:47,146
+或一些交易逻辑、理解或直觉
+of trading logic and a little bit of understanding or instinct.
+
+1166
+01:27:47,448 --> 01:27:52,152
+注意，这种直觉或主观理解很重要
+Now this instinct or you can almost call it subjective understanding, it's
+
+1167
+01:27:52,152 --> 01:27:57,248
+但仅凭这些还不足以执行交易
+important to have but it's not enough in order to execute a trade.
+
+1168
+01:27:57,448 --> 01:28:02,466
+你还需要某种价格结构或客观依据
+You have to then have some form of structure or objective understanding
+
+1169
+01:28:02,466 --> 01:28:06,647
+而成交量分布图在这里至关重要。
+and this is where the volume profile is absolutely crucial.
+
+1170
+01:28:06,948 --> 01:28:13,348
+我们用它来验证并增强对市场的理解信心。
+We use the volume profile to confirm and bolster our confidence about our understanding.
+
+1171
+01:28:13,748 --> 01:28:16,348
+比如，假设我们
+So let's take for example that we
+
+1172
+01:28:17,548 --> 01:28:26,848
+处于趋势日，可以看到市场正激进上涨，我们需要
+have a trend day and we can see that the market's trying to move up quite aggressively, we need to,
+
+1173
+01:28:27,348 --> 01:28:31,621
+但在直接入场做多前，
+before we can just execute and hit the market and be aggressive,
+
+1174
+01:28:31,621 --> 01:28:34,469
+我们需要看到一些确认信号，
+we need to see some form of understanding,
+
+1175
+01:28:34,469 --> 01:28:36,605
+可能是低成交量区域，
+whether it's maybe a low volume
+
+1176
+01:28:36,605 --> 01:28:38,741
+或非常激进的主动性买盘。
+area or a very aggressive initiative
+
+1177
+01:28:38,741 --> 01:28:41,945
+被突破，或市场不尊重
+being taken, or maybe the market's not respecting any
+
+1178
+01:28:42,448 --> 01:28:46,217
+前一交易日的任何枢轴点
+pivots from the previous day, we need to see this
+
+1179
+01:28:46,217 --> 01:28:52,247
+我们需先看到这种客观依据，才能执行交易逻辑或主观市场判断
+objectivity before we can take on our trading logic or our subjective understanding of the market.
+
+1180
+01:28:53,148 --> 01:29:00,348
+一旦有了价格结构，时间就变得至关重要
+Once we have that structure, time is then very crucial and we're going to talk about the element of time
+
+1181
+01:29:00,348 --> 01:29:05,748
+我们会详细讨论时间要素，但核心是：时间调控交易机会
+in some detail but the basic essence of time is that time regulates an opportunity.
+
+1182
+01:29:05,748 --> 01:29:10,948
+注意，我之前只说时间调控机会，这是什么意思呢？
+Now I've never really gone beyond telling you it regulates the opportunity. So what do I mean?
+
+1183
+01:29:11,348 --> 01:29:18,148
+比如，假设我们判断当天是趋势日
+Well for instance, let's say that we identify a day type as being a trending day type.
+
+1184
+01:29:18,148 --> 01:29:22,605
+注意，在趋势日中
+Now note, in a trending day type we know that a market
+
+1185
+01:29:22,605 --> 01:29:25,576
+全天应持续看到主动性，
+should see constant initiative all day long and
+
+1186
+01:29:25,576 --> 01:29:31,147
+价格不断上涨时会形成多个小分布区间。
+we should form lots of little distributions as prices move higher and higher and higher.
+
+1187
+01:29:31,748 --> 01:29:37,448
+但如果逻辑上我们知道全天应持续上涨，
+However, if we know by logic that we should move higher and higher over the period of the day,
+
+1188
+01:29:38,048 --> 01:29:43,248
+而在某个小分布区间停留过久，
+when we start spending too much time within one little distribution, all
+
+1189
+01:29:43,248 --> 01:29:46,714
+突然时间在告诉我们，
+of a sudden time is telling us that
+
+1190
+01:29:46,714 --> 01:29:51,047
+传统趋势日的可能性在降低。
+the likelihood of a normal traditional trend day is diminishing.
+
+1191
+01:29:51,248 --> 01:29:56,448
+这就是时间调控我们每次交易机会的方式。
+And that is how time regulates each one of the opportunities we take.
+
+1192
+01:29:57,048 --> 01:29:59,748
+时间至关重要的另一个典型例子。
+Another very good example of where time is crucial.
+
+1193
+01:30:00,048 --> 01:30:03,837
+如果我们寻找盘内突破
+If we are looking for an inside day break as we've spoken
+
+1194
+01:30:03,837 --> 01:30:05,731
+就像之前例子中讲的
+about in previous examples, we know
+
+1195
+01:30:05,731 --> 01:30:08,257
+我们预期会看到大量
+that we expect to see quite a bit
+
+1196
+01:30:08,257 --> 01:30:12,046
+主动性和跟进，突破前一交易日后
+of initiative and follow through once we take out the previous day.
+
+1197
+01:30:13,648 --> 01:30:20,548
+所以，如果市场突破前一交易日高点后
+So, by that very token, if the market breaks the previous day's high and spends a long, long time
+
+1198
+01:30:20,848 --> 01:30:24,526
+在前一交易日高点上方长时间派发
+distributing right above the previous day's high, this is telling
+
+1199
+01:30:24,526 --> 01:30:31,147
+这说明市场或突破的力度不如预期
+us that the market or the breakout of the market is not as strong as we had expected.
+
+1200
+01:30:31,448 --> 01:30:35,848
+再强调一次，时间调控着这个机会
+Again, as we can see, time regulates this opportunity.
+
+1201
+01:30:36,348 --> 01:30:41,268
+所以时间至关重要，因为它让我们
+That is why time is crucial because it allows us to not
+
+1202
+01:30:41,268 --> 01:30:48,648
+不仅能管理持仓，还能作为衡量预期的基准。
+just manage our positioning but it allows us almost a benchmark in which we can measure our expectations.
+
+1203
+01:30:49,748 --> 01:30:55,448
+注意，最后一点，市场会提供不同的信息量。
+Note, one last thing, markets tend to give various amounts of information.
+
+1204
+01:30:55,848 --> 01:30:59,368
+我有一句老话，如果某件事
+I have a little bit of a saying, if something is very
+
+1205
+01:30:59,368 --> 01:31:04,648
+肉眼可见且人人都看得到，成功的概率就低很多。
+obvious to the naked eye and everyone can see it, the probability of success is a lot lower.
+
+1206
+01:31:04,648 --> 01:31:08,648
+我们想表达的就是，
+And that's what we are trying to say here, the
+
+1207
+01:31:08,648 --> 01:31:12,648
+市场信息越明显，
+more obvious or the more information that the market is
+
+1208
+01:31:12,648 --> 01:31:19,048
+成功的可能性就越低，收益也会递减。
+showing you, the higher or the less likelihood there is of success and thus diminishing returns.
+
+1209
+01:31:19,048 --> 01:31:25,048
+换句话说，如果你看到很多信息，
+In other words, if you are seeing a lot of information, if it is becoming more and more obvious, the
+
+1210
+01:31:25,048 --> 01:31:28,948
+如果越来越明显，延续获利的概率就越来越低。
+probability or the likelihood of continuation to profit is becoming less and less.
+
+1211
+01:31:29,248 --> 01:31:31,545
+关键是要理解这一点，因为成交量分布
+Important you understand that because what volume
+
+1212
+01:31:31,545 --> 01:31:35,155
+会教你提前一步，
+profiling will teach you to do is almost be slightly ahead
+
+1213
+01:31:35,155 --> 01:31:38,437
+几乎站在信息的最前沿，
+of the curve, almost be at the front end of
+
+1214
+01:31:38,437 --> 01:31:42,047
+这样你就能抓住机会。
+receiving information so that you can take advantage of the opportunity.
+
+1215
+01:31:42,948 --> 01:31:45,548
+在信息变得过于明显之前。
+before it starts to show too much information.
+
+1216
+01:31:46,848 --> 01:31:51,634
+所以总结模块5，逻辑
+So to summarise and to end off part 5, logic
+
+1217
+01:31:51,634 --> 01:31:55,356
+动能创造推动力，时间生成信号
+creates the impetus, time generates the signal
+
+1218
+01:31:55,356 --> 01:31:58,015
+价格结构提供确认
+and structure provides the confirmation.
+
+1219
+01:31:59,548 --> 01:32:01,048
+概念检查部分祝你好运
+Good luck with your concept checkers.
+
+1220
+01:32:01,448 --> 01:32:06,448
+一定要花时间完善交易策略库，第六部分见
+Make sure you spend a lot of time filling in that playbook and we'll see you again in part six.
+
+1221
+01:32:07,548 --> 01:32:09,648
+我们现在完成第五部分
+We're now at the end of part five.
+
+1222
+01:32:09,848 --> 01:32:14,648
+快速总结一下第五部分B的内容
+Let's just quickly do a summary of what we've dealt with in part five B.
+
+1223
+01:32:14,848 --> 01:32:19,292
+首先我们讨论了趋势与非趋势
+So the first thing we spoke about was trend versus non-trend and
+
+1224
+01:32:19,292 --> 01:32:23,736
+并分析了趋势和非趋势的特征
+we went through the characteristics of what trend looks like and what
+
+1225
+01:32:23,736 --> 01:32:24,847
+以及非趋势的特征。
+non-trend looks like.
+
+1226
+01:32:24,948 --> 01:32:31,576
+现在我要指出的关键点是，我们讨论趋势和非趋势的原因是
+Now what I want to just point out and the crux of why we talk about trend and non-trend is
+
+1227
+01:32:31,576 --> 01:32:36,547
+最重要的一点是，当市场横盘时，
+that the most important thing is when a market is moving sideways it's okay to
+
+1228
+01:32:37,248 --> 01:32:41,109
+可以使用各种策略，可能不是动量策略，
+employ various strategies that are you know maybe not momentum
+
+1229
+01:32:41,109 --> 01:32:44,970
+而是更偏向分布区间的策略，
+strategies maybe sort of more distribution type strategies looking for
+
+1230
+01:32:44,970 --> 01:32:48,831
+寻找顶部和底部的尾部，
+those tails at tops and bottoms you know looking for
+
+1231
+01:32:48,831 --> 01:32:51,147
+寻找市场
+you know the the market to
+
+1232
+01:32:51,848 --> 01:32:54,761
+不会留下太多低成交量区域
+not leave a lot of the you know low volume
+
+1233
+01:32:54,761 --> 01:32:57,091
+或之前讨论过的单印区等异常区域
+areas and single prints and things we've discussed
+
+1234
+01:32:57,091 --> 01:32:58,547
+以及我们之前讨论的其他异常形态
+or the anomalies we've discussed
+
+1235
+01:32:59,048 --> 01:33:02,987
+但在趋势市场中
+previously however when we are in trending markets what we
+
+1236
+01:33:02,987 --> 01:33:06,926
+我们就不能再使用
+don't want to do then is expect to employ the
+
+1237
+01:33:06,926 --> 01:33:12,047
+非趋势市场中的那些策略了 所以关键是
+same types of strategies that we've utilized in non-trending markets so that was
+
+1238
+01:33:12,148 --> 01:33:16,877
+我们反复强调趋势与非趋势的区别
+the key and that's why we talk a lot about trend versus
+
+1239
+01:33:16,877 --> 01:33:21,606
+因为趋势与非趋势的市场环境
+non-trend because it's that context of trend versus non-trend that will determine
+
+1240
+01:33:21,606 --> 01:33:25,547
+决定了我们的策略是否有效
+whether or not our strategies will be effective or not.
+
+1241
+01:33:25,748 --> 01:33:29,748
+接下来我们讨论了
+Now we then went on and we spoke about a few of the
+
+1242
+01:33:30,948 --> 01:33:33,596
+可以识别的成交量分布图
+you know the types of profile you can
+
+1243
+01:33:33,596 --> 01:33:36,244
+以及日内类型
+you know volume profile day types you can
+
+1244
+01:33:36,244 --> 01:33:38,892
+我们简单过一遍 首先是
+expect let's briefly go through them so our
+
+1245
+01:33:38,892 --> 01:33:41,209
+正常日内类型
+first one is the normal day type
+
+1246
+01:33:41,209 --> 01:33:45,843
+关键是要理解 正常日内类型的特点是
+now the most important thing to understand about the normal day type is that
+
+1247
+01:33:46,348 --> 01:33:51,194
+市场开盘会有很大幅度的波动
+we have a very large opening move in the market so a
+
+1248
+01:33:51,194 --> 01:33:56,847
+初始平衡区间或常规交易时段前区间很大
+very large range in the initial balance period or in that initial pre cash
+
+1249
+01:33:57,448 --> 01:34:00,469
+无论是E-迷你、商品还是外汇市场
+session whether it's in the eminies or the commodities or
+
+1250
+01:34:00,469 --> 01:34:03,490
+都会出现一个非常宽的初始平衡区间
+the FX market so we get a very wide initial
+
+1251
+01:34:03,490 --> 01:34:04,094
+然后
+period the
+
+1252
+01:34:04,094 --> 01:34:06,511
+市场在剩余时间里
+market then spends the rest of the day
+
+1253
+01:34:06,511 --> 01:34:08,626
+会在这个区间内上下填充
+within that initial period just filling out
+
+1254
+01:34:08,626 --> 01:34:11,345
+反复上下波动
+the market up and down and up and down
+
+1255
+01:34:11,648 --> 01:34:15,381
+最终形成一个标准的非趋势日
+and effectively just forming a nice normal day now these
+
+1256
+01:34:15,381 --> 01:34:22,847
+这种类型较少见，但好处是我们能很早识别出线索
+are relatively rare but the nice thing about them is we get that identifier or that clue very early on
+
+1257
+01:34:23,348 --> 01:34:26,514
+在交易时段中 这就是第一种日内类型
+in the session so that was our first day type
+
+1258
+01:34:26,514 --> 01:34:30,947
+第二种是中性日内类型 中性日内类型
+our next day type was the neutral day type now the neutral day type
+
+1259
+01:34:31,548 --> 01:34:35,892
+本质上非常相似 只是开盘交易时
+effectively is very similar except we have an opening trade where the
+
+1260
+01:34:35,892 --> 01:34:38,788
+市场的初始平衡区间会小很多
+market sort of has a much smaller initial
+
+1261
+01:34:38,788 --> 01:34:42,046
+但随后会向初始区间两侧延伸
+range but we then extend on both sides of
+
+1262
+01:34:42,048 --> 01:34:49,648
+最终在初始区间两侧都进行派发
+that range but equally end up just distributing on both sides of the initial period.
+
+1263
+01:34:49,648 --> 01:34:53,148
+注意 这种日内类型的关键是收盘价
+Now the important thing to understand with this day type is the close.
+
+1264
+01:34:54,148 --> 01:34:57,614
+是正常收盘在价值区间内 还是
+Do we have a normal close in value or do
+
+1265
+01:34:57,614 --> 01:35:00,387
+我们会出现极端收盘，
+we have an extreme close to which we
+
+1266
+01:35:00,387 --> 01:35:04,547
+这需要我们关注，作为下一个交易日的早期信号？
+need to pay attention for an early identifier for the next day?
+
+1267
+01:35:04,848 --> 01:35:10,048
+注意，我们第三个例子是正常波动日。
+Now our third example we spoke about was the normal variance.
+
+1268
+01:35:10,348 --> 01:35:18,147
+正常波动日，顾名思义，市场会出现些许不对称。
+Now, a normal variance, as the word variance suggests, is where we have a little bit of non-symmetry in the market.
+
+1269
+01:35:18,248 --> 01:35:20,548
+即P型和B型。
+So the P-shape and the B-shape.
+
+1270
+01:35:20,948 --> 01:35:24,148
+P型的情况是，
+Where the P-shape is effectively, we get initiative
+
+1271
+01:35:24,148 --> 01:35:27,348
+早上早些时候，市场拒绝，
+early on in the morning, the market rejects,
+
+1272
+01:35:27,348 --> 01:35:30,148
+然后开始接受更高的价格。
+and we then start accepting prices higher.
+
+1273
+01:35:30,448 --> 01:35:33,986
+同样，B型，即多头平仓,
+Equally, the B-shape, which is the long liquidation,
+
+1274
+01:35:33,986 --> 01:35:37,524
+多头主动进场，遇到强空抛压,
+buyers initiate, they run into very strong selling,
+
+1275
+01:35:37,524 --> 01:35:41,947
+被迫下跌，市场在低位派发。
+and they force lower, and the market then distributes lower.
+
+1276
+01:35:42,248 --> 01:35:44,448
+这就是我们的正常偏差日内类型。
+So that was our normal variance day type.
+
+1277
+01:35:44,748 --> 01:35:49,448
+这三种是非趋势日。
+Those three day types were our non-trending day types.
+
+1278
+01:35:49,548 --> 01:35:57,648
+然后是两种趋势日：双分布趋势日和传统趋势日。
+We then had our two trending day types, which firstly was the double distribution, and then the traditional trend.
+
+1279
+01:35:58,048 --> 01:36:00,248
+注意，双分布趋势日很简单。
+Now the double distribution, very simple.
+
+1280
+01:36:00,448 --> 01:36:08,048
+有两个分布区间，趋势市场中有多种分布形态。
+We have two distributions with the trend being a trending market with loads of different types of distributions.
+
+1281
+01:36:08,248 --> 01:36:12,048
+再强调一次，这些都是非常激进的强势初始类型
+Again, these were very aggressive, strong type initials.
+
+1282
+01:36:13,548 --> 01:36:21,748
+成交量分布图交易类型，它们有多种策略，我们会在模块 2 和 3 中逐步展开
+profile trading types and they have various strategies which we will begin to develop later on in module 2 and 3.
+
+1283
+01:36:22,148 --> 01:36:25,765
+所以我们接着讲，
+So we then moved on and we had a very
+
+1284
+01:36:25,765 --> 01:36:29,382
+我们有一个非常
+nice table, a very important table where we identified what
+
+1285
+01:36:29,382 --> 01:36:34,446
+实用的表格，非常重要的表格，标明了这 5 种日内类型
+these five day types are, what they look like, what the key characteristics are.
+
+1286
+01:36:34,848 --> 01:36:35,548
+记住，
+Remember,
+
+1287
+01:36:36,148 --> 01:36:40,877
+如果你能尽早识别出日内类型，
+If you can identify a day type very early on, you can
+
+1288
+01:36:40,877 --> 01:36:44,029
+就能采用正确的策略并
+employ the right kind of strategy and take
+
+1289
+01:36:44,029 --> 01:36:49,546
+在别人还没意识到时抓住先机
+advantage of that before other people start to receive information of what is occurring.
+
+1290
+01:36:49,848 --> 01:36:56,448
+记住，市场信息越多，价格定价越准确
+Don't forget, the more information is in the market, the more likely prices are going to be priced correctly.
+
+1291
+01:36:57,448 --> 01:37:05,247
+接着我们讲了信心表，即市场偏向和信心度
+We then moved on and we finished with the confidence table or the level of bias and confidence in the market.
+
+1292
+01:37:05,448 --> 01:37:12,548
+从最缺乏信心的日内类型到最有信心的
+And we said we move from our least confident day type all the way to our most confident day type.
+
+1293
+01:37:13,648 --> 01:37:22,148
+然后结束模块5，讲解了交易流程
+We then finished part five and we spoke about how the trading process would occur.
+
+1294
+01:37:22,348 --> 01:37:29,148
+很简单，我们总是从直觉或交易优势开始
+And it's very simple. We always start off with that intuitive slash edge feeling slash idea.
+
+1295
+01:37:29,248 --> 01:37:32,454
+也就是说，我们先有想法，
+In other words, we have an idea in mind, we
+
+1296
+01:37:32,454 --> 01:37:38,546
+看到某些情况，觉得合理，就想要响应
+see something, it makes sense to us, and that gives us the initial sort of we want to respond.
+
+1297
+01:37:38,748 --> 01:37:40,948
+但仅凭这个还不足以响应，大家。
+But that's not enough to respond, guys.
+
+1298
+01:37:41,048 --> 01:37:45,248
+你必须得有客观依据。
+You have to... have to have to have something objective.
+
+1299
+01:37:45,348 --> 01:37:50,248
+在模块1里我们详细讲过客观与主观的区别。
+And we spoke a lot about objectivity versus subjectivity in Module 1.
+
+1300
+01:37:50,448 --> 01:37:55,648
+现在，这个客观依据来自成交量分布图。
+Now, that objectiveness will come from the volume profile.
+
+1301
+01:37:55,848 --> 01:38:01,208
+成交量分布图可以包含多种因素，
+And that volume profile can be any number of factors, but it's
+
+1302
+01:38:01,208 --> 01:38:04,781
+但关键是要有客观标识，
+important we have that objective identifier to give
+
+1303
+01:38:04,781 --> 01:38:09,247
+来支持我们的想法或交易优势，
+us the action on the idea or the edge or
+
+1304
+01:38:09,848 --> 01:38:11,348
+或者我们可能有的直觉。
+intuition that we may have.
+
+1305
+01:38:11,648 --> 01:38:15,048
+最后，时间会
+And then last but not least, time will
+
+1306
+01:38:15,048 --> 01:38:18,448
+调控这个机会，并告诉我们
+regulate this opportunity and tell us, it gives
+
+1307
+01:38:18,448 --> 01:38:23,548
+提供机会如何发展的重要信息。
+us very important information as to how the opportunity is playing out.
+
+1308
+01:38:24,248 --> 01:38:26,548
+第五部分就到这里。
+That is the end of part five.
+
+1309
+01:38:26,548 --> 01:38:29,414
+希望你喜欢这些原则
+I hope you've enjoyed some of these principles
+
+1310
+01:38:29,414 --> 01:38:32,997
+更希望你喜欢我们开始
+and I hope you've enjoyed more importantly that we've started
+
+1311
+01:38:32,997 --> 01:38:39,447
+基于所学内容，开发一些基础策略和模式交易。
+to develop a few basic strategies and pattern plays on what you're learning throughout the module so far.
+
+1312
+01:38:39,848 --> 01:38:42,648
+祝你好运，第六部分见。
+Good luck and we'll catch you again in part six.
+
+1313
+01:38:45,088 --> 01:38:51,588
+现在我们要确认你是否理解了模块5的所有原则
+It's that time again that we ensure that you've understood the principles we've been through throughout part 5.
+
+1314
+01:38:52,588 --> 01:38:59,488
+首先，定义并解释主动价格行为与被动价格行为。慢慢来
+So firstly, define and interpret initiative versus responsive price behavior. Take your time here.
+
+1315
+01:38:59,788 --> 01:39:08,488
+记得我讲主动、积极与被动、响应性价格行为时的例子
+Remember those examples I showed you when talking about initiative, aggressive versus sort of more passive responsive type price behavior.
+
+1316
+01:39:09,188 --> 01:39:14,388
+然后，对称性和非对称性结构在风险收益比上代表什么？
+Then, what does symmetry and non-symmetry represent in terms of risk-reward?
+
+1317
+01:39:16,188 --> 01:39:20,588
+列出趋势日和非趋势日的各种日内类型
+List the various day types for both trend and non-trend days.
+
+1318
+01:39:21,088 --> 01:39:22,088
+慢慢来
+Take your time here.
+
+1319
+01:39:22,588 --> 01:39:30,584
+花时间不仅列出它们，还要理解每种日内类型的特征和形态
+Spend a lot of time not just listing them, but understanding the various characteristics and shapes of each one of those day types.
+
+1320
+01:39:31,188 --> 01:39:38,488
+最后，什么是初始平衡区间？它在你交易的市场中何时出现？
+And lastly, what is the initial balance? And at which time does this occur in the markets you trade?
+
+1321
+01:39:38,988 --> 01:39:39,488
+祝你好运。
+Good luck.
+
+1322
+01:39:41,588 --> 01:39:47,388
+现在要做交易策略库的练习了，来看看模块5的要求。
+It's time for another playbook entry, so let's look what's expected of you in part 5's playbook.
+
+1323
+01:39:48,188 --> 01:39:57,488
+首先，在交易策略库中，在提供的图表里，标注每个区块是主动价格行为还是被动价格行为。
+Firstly, in your playbook, in the charts provided, differentiate in the blocks provided if it's initiative or responsive price response.
+
+1324
+01:39:58,288 --> 01:40:02,088
+然后，以下市场的初始平衡区间是什么时间？
+Then, what time is the initial balance in the following markets?
+
+1325
+01:40:02,688 --> 01:40:11,088
+德国十年期国债、欧元/美元外汇、E-迷你标普500期货和WTI原油。
+The German Tenure Bund, the Eurodollar FX, the E-mini S&P 500 index and the WTI oil.
+
+1326
+01:40:11,388 --> 01:40:16,088
+注意，初始平衡区间是常规交易时段前的区间。
+Remember, the initial balance is the pre-cash cash session.
+
+1327
+01:40:17,488 --> 01:40:20,588
+3. 在指定空白处绘制以下图形。
+3. Draw the following in the spaces provided.
+
+1328
+01:40:21,388 --> 01:40:23,288
+一个平衡的正态分布区间。
+A balanced normal distribution.
+
+1329
+01:40:23,988 --> 01:40:30,888
+P型剖面图分布区间、B型分布区间和趋势分布区间
+A skewed P distribution, a skewed B distribution and a trending distribution.
+
+1330
+01:40:32,288 --> 01:40:37,288
+问题4：完成各日内类型特征的汇总表
+Question 4. Complete the summary table of characteristics for the various day types.
+
+1331
+01:40:37,688 --> 01:40:39,788
+再强调一次，这里要慢慢来
+Again, take your time here.
+
+1332
+01:40:40,288 --> 01:40:49,888
+理解每个特征及其背后的原理， 明确这些日内类型的重要意义
+Understand each one of the characteristics and the principles about what makes each one of these day types significant.
+
+1333
+01:40:51,288 --> 01:40:55,788
+5. 填写方向信念等级图表的空白
+5. Fill in the blanks for the levels of conviction chart provided.
+
+1334
+01:40:56,488 --> 01:40:59,988
+在这个交易策略库上多花些时间， 不要匆匆了事
+Make sure you take some time on this playbook entry. Don't rush through it.
+
+1335
+01:41:00,188 --> 01:41:07,388
+记住，这个交易策略库 会在后续模块2和模块3中帮到你
+And remember, this playbook will stand you in good stead when you move on throughout the rest of Module 2 and 3.
+
+===== END AFTER_TRANSLATE =====

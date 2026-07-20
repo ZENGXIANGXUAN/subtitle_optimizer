@@ -1,0 +1,470 @@
+===== AFTER_SEGMENT (117 entries) =====
+1
+00:00:00,130 --> 00:00:01,710
+Hey everyone, it's Mike from OrderFlows,
+
+2
+00:00:01,710 --> 00:00:03,290
+and in this video I'm going
+
+3
+00:00:03,290 --> 00:00:04,870
+to talk about the engulfing value
+
+4
+00:00:04,870 --> 00:00:06,186
+area indicator in OrderFlows Trader 6.
+
+5
+00:00:07,030 --> 00:00:12,210
+Now, you know, in the previous version of OrderFlows Trader, this was called the EVA.
+
+6
+00:00:12,390 --> 00:00:13,820
+We've just called it what it
+
+7
+00:00:13,820 --> 00:00:15,250
+is. It's an engulfing value area.
+
+8
+00:00:15,250 --> 00:00:18,349
+It's a value area that engulfs the value area of the previous bar.
+
+9
+00:00:19,290 --> 00:00:20,671
+And, you know, I've often
+
+10
+00:00:20,671 --> 00:00:22,605
+referred to it as EVA, expanding value
+
+11
+00:00:22,605 --> 00:00:25,368
+area, but really all it is is engulfing value area.
+
+12
+00:00:25,370 --> 00:00:31,750
+So here you have your bullish EVA, bullish engulfing value area. It's engulfing the previous bar's value area.
+
+13
+00:00:31,890 --> 00:00:33,888
+You see that's why it's
+
+14
+00:00:33,888 --> 00:00:36,685
+colored blue. Here you have a bearish
+
+15
+00:00:36,685 --> 00:00:39,881
+one. It's colored darker red as opposed to
+
+16
+00:00:39,881 --> 00:00:43,077
+the normal red for a normal bearish value
+
+17
+00:00:43,077 --> 00:00:52,267
+area. And you see this bearish engulfing value area is, the value area is overlapping, engulfing the value area of the previous bar.
+
+18
+00:00:52,270 --> 00:00:57,990
+So it engulfs the previous bar's value area, not the previous bar. Okay, it's the value area.
+
+19
+00:00:58,850 --> 00:01:01,654
+And take a look at the settings real
+
+20
+00:01:01,654 --> 00:01:04,107
+quick. You can, again, the global setting
+
+21
+00:01:04,107 --> 00:01:11,118
+for a value area, you can adjust, but the default is 70%. It's adjusted from the global settings up in here.
+
+22
+00:01:11,470 --> 00:01:17,710
+But if you go down into the engulfing value area, we split it out from the normal value area.
+
+23
+00:01:18,290 --> 00:01:21,830
+You could enable it or disable. The default is enabled.
+
+24
+00:01:23,130 --> 00:01:25,690
+And we draw it fixed just in that bar.
+
+25
+00:01:26,290 --> 00:01:30,530
+And if it's bullish, it would be blue. If it's bearish, it would be red.
+
+26
+00:01:30,770 --> 00:01:31,750
+The outline is just
+
+27
+00:01:31,750 --> 00:01:32,730
+black. I mean, you
+
+28
+00:01:32,730 --> 00:01:36,408
+could change it. I like to keep, you know, black outline on all my candles.
+
+29
+00:01:36,410 --> 00:01:40,230
+And you can also draw it out until tested, right?
+
+30
+00:01:40,350 --> 00:01:42,154
+So the default is fixed
+
+31
+00:01:42,154 --> 00:01:43,958
+in that bar, giving you,
+
+32
+00:01:43,958 --> 00:01:49,009
+you know, the signals like this bar right here or this bar right here.
+
+33
+00:01:49,050 --> 00:01:54,650
+But if you draw it out until tested, you know, they make great support and resistance areas.
+
+34
+00:01:55,810 --> 00:01:57,050
+So let's take a look here.
+
+35
+00:01:57,130 --> 00:01:58,570
+So change it to until tested.
+
+36
+00:01:59,290 --> 00:02:00,150
+Click apply.
+
+37
+00:02:00,150 --> 00:02:03,770
+And just give it a second here to come back up.
+
+38
+00:02:04,750 --> 00:02:09,389
+Now, again, it's nice to see, right?
+
+39
+00:02:09,410 --> 00:02:10,905
+You can see this bearish
+
+40
+00:02:10,905 --> 00:02:12,999
+value area because it's good because, again,
+
+41
+00:02:12,999 --> 00:02:15,392
+you know, anytime I have a zone being
+
+42
+00:02:15,392 --> 00:02:17,785
+drawn out and it's not tested in, you
+
+43
+00:02:17,785 --> 00:02:23,468
+know, the first or second bar afterwards, it's usually a good sign for a potential move in that direction.
+
+44
+00:02:23,810 --> 00:02:27,810
+You know, this one came back in the third bar, traded into it, acting as resistance.
+
+45
+00:02:27,810 --> 00:02:31,150
+I mean, even if you were to draw this out a little bit further, you know,
+
+46
+00:02:31,190 --> 00:02:33,970
+you can see the second time it came up into those areas, right?
+
+47
+00:02:34,010 --> 00:02:39,370
+And then came off to your bullish engulfing value area right down in here.
+
+48
+00:02:40,090 --> 00:02:40,857
+Now, you know,
+
+49
+00:02:40,857 --> 00:02:42,136
+this one here's a bullish
+
+50
+00:02:42,136 --> 00:02:43,671
+engulfing value area, but it's not
+
+51
+00:02:43,671 --> 00:02:46,229
+being drawn out because the next bar was right inside.
+
+52
+00:02:47,110 --> 00:02:50,090
+But it's a nice indicator, right?
+
+53
+00:02:50,130 --> 00:02:53,670
+You can see here we got that engulfing value area.
+
+54
+00:02:53,670 --> 00:02:55,305
+The market rallied, came back
+
+55
+00:02:55,305 --> 00:02:56,940
+all the way down to
+
+56
+00:02:56,940 --> 00:02:58,902
+that area, right? Got two ticks
+
+57
+00:02:58,902 --> 00:03:02,827
+past it. And then it held and the market bounced back up.
+
+58
+00:03:03,070 --> 00:03:04,157
+Man, all you got
+
+59
+00:03:04,157 --> 00:03:05,788
+to do is just throw a
+
+60
+00:03:05,788 --> 00:03:07,419
+bid in here, somewhere in the
+
+61
+00:03:07,419 --> 00:03:08,778
+middle here, 44. Even if you
+
+62
+00:03:08,778 --> 00:03:10,409
+threw it, you know, right at
+
+63
+00:03:10,409 --> 00:03:17,479
+the top price level, 45 and a half or even 46. The market traded all the way up to, you know, 60, right? Before just sort of going sideways.
+
+64
+00:03:18,570 --> 00:03:19,485
+But, you know,
+
+65
+00:03:19,485 --> 00:03:21,010
+it's something that I've added
+
+66
+00:03:21,010 --> 00:03:22,840
+in my own trading and, you
+
+67
+00:03:22,840 --> 00:03:24,670
+know, I find it very useful.
+
+68
+00:03:24,670 --> 00:03:31,687
+And, again, I hope it's something that you'll find, you know, useful that you'd want to add into your own trading as well.
+
+69
+00:03:32,450 --> 00:03:39,410
+You know, here's one here. This is just a normal bullish engulfing value area.
+
+70
+00:03:39,510 --> 00:03:41,010
+It came in and tested it right in here.
+
+71
+00:03:41,070 --> 00:03:41,950
+Here's a bearish one.
+
+72
+00:03:42,270 --> 00:03:44,096
+You don't have to just trade these things
+
+73
+00:03:44,096 --> 00:03:45,466
+in the sense that they have
+
+74
+00:03:45,466 --> 00:03:47,749
+to be the next bar that doesn't trade into it.
+
+75
+00:03:47,750 --> 00:03:48,627
+You know, when
+
+76
+00:03:48,627 --> 00:03:50,090
+you see a bullish engulfing
+
+77
+00:03:50,090 --> 00:03:51,845
+value area, you know that this
+
+78
+00:03:51,845 --> 00:03:53,308
+market is moving because the
+
+79
+00:03:53,308 --> 00:03:58,868
+value area is expanding. It's expanding more than the previous bar's value area. And that's a good sign, right?
+
+80
+00:03:59,130 --> 00:03:59,950
+The market went up.
+
+81
+00:04:00,050 --> 00:04:00,930
+Here you got a bearish one.
+
+82
+00:04:01,050 --> 00:04:01,930
+The market went down.
+
+83
+00:04:03,430 --> 00:04:04,950
+Here the market just went sideways.
+
+84
+00:04:05,990 --> 00:04:06,857
+But, again, you
+
+85
+00:04:06,857 --> 00:04:08,302
+know, whether you decide to
+
+86
+00:04:08,302 --> 00:04:10,036
+use it fixed or until tested,
+
+87
+00:04:10,036 --> 00:04:11,770
+it's something that, you know, you
+
+88
+00:04:11,770 --> 00:04:15,528
+should really figure out how to use it in your own trading. Right?
+
+89
+00:04:15,570 --> 00:04:16,390
+Here's a bullish one.
+
+90
+00:04:16,450 --> 00:04:17,350
+It just sort of went sideways.
+
+91
+00:04:17,350 --> 00:04:19,149
+They don't always go up or down.
+
+92
+00:04:19,269 --> 00:04:23,290
+But, you know, when you see them, they could give you some great trades, right?
+
+93
+00:04:23,330 --> 00:04:24,648
+I showed you several,
+
+94
+00:04:24,648 --> 00:04:26,625
+you know, where the market just,
+
+95
+00:04:26,625 --> 00:04:28,932
+you got that bullish engulfing value area,
+
+96
+00:04:28,932 --> 00:04:32,228
+and the market just ran away from it right here.
+
+97
+00:04:32,930 --> 00:04:35,230
+But, again, you don't have to trade it that way. Right?
+
+98
+00:04:35,290 --> 00:04:37,630
+Just go with what's happening in the market.
+
+99
+00:04:37,830 --> 00:04:39,390
+Do what the market is telling you to do.
+
+100
+00:04:39,570 --> 00:04:40,890
+I got a bullish sign here.
+
+101
+00:04:40,970 --> 00:04:43,490
+Okay, just go with it, whether it's abandoned or not.
+
+102
+00:04:43,490 --> 00:04:44,649
+It's nice when you see
+
+103
+00:04:44,649 --> 00:04:45,808
+it like this, abandoned, and
+
+104
+00:04:45,808 --> 00:04:48,589
+then you got a target for when the market comes back down.
+
+105
+00:04:48,590 --> 00:04:50,738
+But if the market is gaining momentum and
+
+106
+00:04:50,738 --> 00:04:52,886
+starting to pick up ahead of steam, the
+
+107
+00:04:52,886 --> 00:04:53,960
+value area is expanding,
+
+108
+00:04:53,960 --> 00:04:57,988
+meaning we're sort of going to start searching, expand, look for a new value area.
+
+109
+00:04:57,990 --> 00:05:01,670
+You know, or sorry, not a new value area, but a new balance area.
+
+110
+00:05:02,610 --> 00:05:04,630
+Just go with it, right?
+
+111
+00:05:04,730 --> 00:05:05,994
+And it gives you
+
+112
+00:05:05,994 --> 00:05:07,890
+a nice trade, again, up from
+
+113
+00:05:07,890 --> 00:05:08,838
+this 42, 43 area all
+
+114
+00:05:08,838 --> 00:05:11,998
+the way up into the 50s. You know, relatively quick.
+
+115
+00:05:12,630 --> 00:05:16,410
+So, that is the engulfing value area indicator.
+
+116
+00:05:16,690 --> 00:05:18,590
+I'll see you guys on the next video.
+
+117
+00:05:18,810 --> 00:05:20,030
+Bye-bye. Bye.
+
+===== END AFTER_SEGMENT =====

@@ -1,0 +1,217 @@
+===== AFTER_TRANSLATE (43 entries) =====
+1
+00:00:00,340 --> 00:00:01,627
+大家好，我是来自Motorflows的Mike
+Hey everyone, it's Mike from Motorflows
+
+2
+00:00:01,627 --> 00:00:02,914
+在这个短视频中,
+here, and in this quick video,
+
+3
+00:00:02,914 --> 00:00:05,059
+我将向您展示如何启用Tick回放。
+I'm going to show you how to enable Tick Replay.
+
+4
+00:00:05,180 --> 00:00:09,900
+Tick回放是显示足迹图上历史数据所必需的。
+Tick Replay is required to show the historical data on a footprint chart.
+
+5
+00:00:10,040 --> 00:00:12,864
+如果您没有启用Tick回放，当您打开
+If you don't have Tick Replay enabled, when you open
+
+6
+00:00:12,864 --> 00:00:15,688
+图表时，您基本上会得到一个空白
+up your chart, you're going to get basically a blank
+
+7
+00:00:15,688 --> 00:00:21,619
+屏幕，因为此时数据只会从您登录并打开图表的时间点开始绘制。
+screen because now the data will only be plotted from the time that you log in and open up your chart.
+
+8
+00:00:22,160 --> 00:00:24,887
+好的，当您第一次打开图表时，
+Okay, so when you open up a chart
+
+9
+00:00:24,887 --> 00:00:26,932
+点击Charts，
+for the first time, click on
+
+10
+00:00:26,932 --> 00:00:29,318
+选择您的市场，比如E-Mini合约。
+Charts, choose your market, you know, e-minis.
+
+11
+00:00:29,320 --> 00:00:33,620
+一定要启用Tick回放。您务必点击这个按钮。务必点击它。
+Make sure you enable Tick Replay. You've got to click this button. You've got to literally click it.
+
+12
+00:00:34,100 --> 00:00:37,100
+好的，如果您不点击它，那么它就不会生效。
+Okay, if you don't click it, then it's not going to work.
+
+13
+00:00:37,220 --> 00:00:40,488
+现在，有些人可能在这里找不到这个功能。
+Now, some people may not have this feature here. It
+
+14
+00:00:40,488 --> 00:00:43,103
+它本应显示Tick回放，但
+says Tick Replay for some reason, but the
+
+15
+00:00:43,103 --> 00:00:47,679
+问题可以轻松解决，您只需返回NinjaTrader控制面板，
+problem can easily be resolved as you go back to your NinjaTrader control panel,
+
+16
+00:00:48,020 --> 00:00:54,260
+依次点击：Tools > Options > Market Data，然后选择Show Tick Replay。
+click on Tools, go to Options, click on Market Data, go Show Tick Replay.
+
+17
+00:00:54,260 --> 00:00:57,502
+再次确认这里有一个勾选。如果
+Again, make sure there's a check there. If
+
+18
+00:00:57,502 --> 00:01:00,744
+没有勾选，比如这里，我刚刚取消了勾选，
+there's no check, like here, I just unchecked
+
+19
+00:01:00,744 --> 00:01:03,986
+您会注意到，让我们回去看，当我
+it, you'll notice, let's go back, when I
+
+20
+00:01:03,986 --> 00:01:09,659
+去打开图表时，这里没有启用Tick回放的功能。
+go to Open Up a Chart, there's no function here to enable Tick Replay.
+
+21
+00:01:09,900 --> 00:01:13,260
+好的，这个问题可以通过进入Options来轻松解决。
+Okay, so that's easily resolved by going to Options.
+
+22
+00:01:14,940 --> 00:01:21,520
+在Tools下，进入Market Data，然后点击这里写着Show Tick Replay的按钮。
+Under the Tools, go to Market Data, click on this button here that says Show Tick Replay.
+
+23
+00:01:21,520 --> 00:01:23,683
+在该选项的复选框中打勾。
+Put a check in the
+
+24
+00:01:23,683 --> 00:01:25,846
+点击Apply。好的，
+box there. Click Apply. Okay,
+
+25
+00:01:25,846 --> 00:01:28,009
+然后当您去
+then when you go to
+
+26
+00:01:28,009 --> 00:01:32,768
+打开一个新图表时，好的，点击它，就这些。
+Open Up a New Chart, okay, click it, and that's it.
+
+27
+00:01:33,250 --> 00:01:41,450
+好的，那么当您去打开图表时，让我把足迹图调出来。
+Okay, so then when you go to Open Up a Chart, let me just get my Footprint Chart in here.
+
+28
+00:01:41,450 --> 00:01:42,981
+好的，现在有
+Okay, now there's a
+
+29
+00:01:42,981 --> 00:01:46,043
+几种方法。我个人的做法是，
+couple ways. Me, what I like to do
+
+30
+00:01:46,043 --> 00:01:52,168
+当我使用足迹图时，因为我已经确认Tick回放已启用，
+is, when I have my Footprint Chart, since already I know I have Tick Replay enabled,
+
+31
+00:01:53,210 --> 00:01:57,294
+通常我会先点击下方的
+generally what I'll do is I'll click down here on
+
+32
+00:01:57,294 --> 00:02:00,561
+标签页，选择“在新标签页复制”，这样
+the Tabs, Duplicate in a New Tab, so
+
+33
+00:02:00,561 --> 00:02:03,828
+就能将当前足迹图的所有设置复制到新图表中。
+it's carrying over everything into the new chart.
+
+34
+00:02:03,830 --> 00:02:07,150
+然后我只需在新图表中修改想要查看的合约即可，对吧？
+And then I'll just go and change it to whatever I want to look at, right?
+
+35
+00:02:07,250 --> 00:02:12,230
+比如我想看瑞士法郎，直接切换到瑞士法郎就行，不用重复设置。
+So if I want to look at Swiss Francs, then I can just change it to Swiss Francs and go from there,
+
+36
+00:02:12,270 --> 00:02:14,364
+这样就不用反复回到
+as opposed to having to keep going to,
+
+37
+00:02:14,364 --> 00:02:16,458
+NinjaTrader 控制面板，
+you know, my Ninja Trader Control Panel, you
+
+38
+00:02:16,458 --> 00:02:20,908
+点击图表，确认所有设置，再添加 Order Flow Trader 插件。
+know, click Chart, make sure everything is set up, you know, add Order Flow Trader to it.
+
+39
+00:02:21,090 --> 00:02:25,670
+我发现用底部的标签页操作会更方便。
+I just find that that's just easier for me, you know, is use the tabs down here at the bottom.
+
+40
+00:02:26,170 --> 00:02:27,622
+可能你看不到底部的标签栏，
+You know, you could just pull this chart
+
+41
+00:02:27,622 --> 00:02:30,889
+因为它可能在屏幕底部，导致你看不到。
+up because you might not be able to see it because it's on the bottom of the screen.
+
+42
+00:02:30,890 --> 00:02:37,930
+你可以选择“在新标签页复制”、“在新窗口复制”，甚至“移动到新窗口”。
+But you could duplicate in a new tab, duplicate in a new window, even move to a new window, okay?
+
+43
+00:02:39,050 --> 00:02:41,890
+这就是启用 Tick 回放的重要性...
+So that is the importance of...
+
+===== END AFTER_TRANSLATE =====

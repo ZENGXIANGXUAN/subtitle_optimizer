@@ -1,0 +1,2365 @@
+===== AFTER_TRANSLATE (475 entries) =====
+1
+00:00:00,000 --> 00:00:00,836
+大家好
+what's going on
+
+2
+00:00:00,836 --> 00:00:02,230
+今天Brian在这里
+guys brian's here today is
+
+3
+00:00:02,230 --> 00:00:03,902
+时间是2021年10月13日周三
+wednesday october 13th 2021 and the market
+
+4
+00:00:03,902 --> 00:00:09,199
+市场已经收盘 这期视频的目的是
+is closed now the purpose of this video is to introduce to you guys if you have not been
+
+5
+00:00:09,480 --> 00:00:11,374
+如果你们还没用过
+using any type of option spreads i'm
+
+6
+00:00:11,374 --> 00:00:13,268
+我来介绍两个我最喜欢的
+going to introduce two of my favorites
+
+7
+00:00:13,268 --> 00:00:14,620
+我觉得它们特别适合新手
+i think they're very beginner
+
+8
+00:00:14,620 --> 00:00:18,678
+付费组合和收费组合 我们会看
+friendly the debit and credit spreads we're going to be taking a look at a
+
+9
+00:00:18,680 --> 00:00:20,325
+看涨卖出组合
+bull put spread as well as a
+
+10
+00:00:20,325 --> 00:00:22,205
+还有看跌买入组合
+bear call spread and i'm choosing to introduce
+
+11
+00:00:22,205 --> 00:00:23,850
+我选这两个介绍是因为
+these two to you because i have
+
+12
+00:00:23,850 --> 00:00:28,080
+我有两个实盘案例 但更重要的是
+two live examples but more importantly a lot of you guys if you now start trading and you
+
+13
+00:00:28,080 --> 00:00:30,563
+很多小资金交易者
+have a small accounts and you look up these types
+
+14
+00:00:30,563 --> 00:00:33,046
+在网上查这些组合策略时
+of spreads online you're probably intimidated by seeing the type
+
+15
+00:00:33,046 --> 00:00:35,529
+可能会被所需资金规模吓到
+of size that you need to trade them but in
+
+16
+00:00:35,529 --> 00:00:37,764
+但在我看来
+my opinion i think if you have a small
+
+17
+00:00:37,764 --> 00:00:41,737
+如果你资金不多 又想追求稳定收益
+account and you're trying to focus on consistency as well as increasing your probability these types
+
+18
+00:00:41,740 --> 00:00:43,797
+提高胜率 这些组合策略
+of spreads is actually how i think you can build
+
+19
+00:00:43,797 --> 00:00:45,649
+其实很适合小资金账户
+up a small account now when i first started
+
+20
+00:00:45,649 --> 00:00:50,999
+我之前学期权交易不是这样学的，现在真希望当时是这样学的
+trading i did not learn to trade options this way and i do wish i did so i'm hoping to save you guys a lot of
+
+21
+00:00:51,000 --> 00:00:53,016
+并不是这样学期权的
+time and money it's how i mostly actively
+
+22
+00:00:53,016 --> 00:00:55,284
+现在很后悔
+trade now and again again if i was introduced
+
+23
+00:00:55,284 --> 00:00:57,300
+希望能帮你们节省时间和金钱
+to this a lot sooner in my options
+
+24
+00:00:57,300 --> 00:01:01,080
+这是我现在主要的交易方式
+trading career i would have been much better off and a lot of the mistakes
+
+25
+00:01:01,080 --> 00:01:03,702
+如果早点学会这些
+in which i made because if you ask me if
+
+26
+00:01:03,702 --> 00:01:06,062
+我的期权交易生涯会好很多
+you're trying to build a small account from the
+
+27
+00:01:06,062 --> 00:01:10,519
+少犯很多错误 如果你问我
+scratch you're actually probably better off swing trading but it's very difficult to swing trade options and
+
+28
+00:01:10,520 --> 00:01:12,992
+从零开始建小账户
+most people gravitate towards options when you have a small
+
+29
+00:01:12,992 --> 00:01:15,217
+可能波段交易更合适
+account because of the leverage you don't need a
+
+30
+00:01:15,217 --> 00:01:17,442
+但期权波段交易很难
+lot of money to make a lot of outsized
+
+31
+00:01:17,442 --> 00:01:19,419
+如果你学会运用期权组合策略
+returns but if you learn to actually utilize
+
+32
+00:01:19,420 --> 00:01:21,936
+就能让小账户稳定增长
+spreads you can actually grow a small account and not
+
+33
+00:01:21,936 --> 00:01:24,452
+同时不会承担过高风险
+opening up yourself to much risk because the numbers and
+
+34
+00:01:24,452 --> 00:01:26,465
+因为概率会站在你这边
+probabilities play out in your favor so jumping
+
+35
+00:01:26,465 --> 00:01:28,478
+我们直接开始
+right into it what we're looking at is
+
+36
+00:01:28,480 --> 00:01:30,037
+这是SPY的图表
+the spy right here and let's actually
+
+37
+00:01:30,037 --> 00:01:31,817
+我们切换到较短时间框架
+just dive into a smaller term time frame
+
+38
+00:01:31,817 --> 00:01:33,152
+这是5到10天的
+so this is the five 10 day
+
+39
+00:01:33,152 --> 00:01:37,157
+5分钟图 左上角有标注 这是thinkorswim平台
+five minute chart it says it right over here in the top left corner this is the thinkorswim
+
+40
+00:01:37,380 --> 00:01:39,453
+如果你没见过这个平台
+platform if you've never seen this before but at this
+
+41
+00:01:39,453 --> 00:01:41,319
+但看这个视频的你
+point i'm pretty sure if you're watching this video
+
+42
+00:01:41,319 --> 00:01:45,259
+你们应该见过这种交易平台
+you have seen some sort of trading platform like this what i have drawn out right here is the
+
+43
+00:01:45,260 --> 00:01:46,726
+我在这里标出的是VPAC
+vpac which is the virgin point of
+
+44
+00:01:46,726 --> 00:01:48,401
+也就是初始控制点（Volume Profile中的概念）
+control if you're unfamiliar with what this is
+
+45
+00:01:48,401 --> 00:01:50,495
+不熟悉的可以看视频描述里的链接
+you can check out the link in my description down
+
+46
+00:01:50,495 --> 00:01:52,589
+或者我会在视频中弹出相关说明
+below or i'll have it pop up somewhere in this
+
+47
+00:01:52,589 --> 00:01:57,616
+会详细讲解初始控制点 它来源于成交量分布图
+video where i'll go over what virgin point of controls are it just comes from the volume profile but just take my word for
+
+48
+00:01:57,620 --> 00:01:59,348
+先相信我 我们直接开始
+it if we just jump if you want
+
+49
+00:01:59,348 --> 00:02:01,292
+这是我们的成交量分布图
+to see this is our volume profiles right here
+
+50
+00:02:01,292 --> 00:02:02,804
+自定义指标的链接
+link to this custom studies also in
+
+51
+00:02:02,804 --> 00:02:06,260
+也在描述里 这里是上周四的初始控制点
+the description down below but what we have right here is the virgin point of control
+
+52
+00:02:06,260 --> 00:02:09,297
+我把它标出来了
+from thursday of last week so i just left this
+
+53
+00:02:09,297 --> 00:02:12,031
+假设你周五的思路是
+drawn out so assuming your thought process was on
+
+54
+00:02:12,031 --> 00:02:14,461
+就是图上这个日子
+friday which would be this day right here
+
+55
+00:02:14,461 --> 00:02:17,498
+你想做空市场
+you wanted to short the market because your assumption was
+
+56
+00:02:17,500 --> 00:02:20,307
+因为你预测会回补缺口
+we were going to fill the gap which would be
+
+57
+00:02:20,307 --> 00:02:23,114
+也就是下面这个位置
+down here so we jump to back to the five
+
+58
+00:02:23,114 --> 00:02:25,921
+我们回到5分钟图
+minute time frame let's actually draw out another level right
+
+59
+00:02:25,921 --> 00:02:32,938
+here and i believe this level is we'll make it nice and even for uh 35 let's actually just increase the thickness and let's just say
+
+60
+00:02:33,220 --> 00:02:35,830
+假设这个价位是35 我们把线加粗
+this is your trade thesis we have uh monday i
+
+61
+00:02:35,830 --> 00:02:38,440
+指的是上周四市场跳空上涨
+mean thursday of last week market gaps up it's super
+
+62
+00:02:38,440 --> 00:02:43,660
+特别看涨 但随后这里出现弱势
+bullish but then you can see the weakness right here we crack below vwap after we break out from this
+
+63
+00:02:43,660 --> 00:02:45,952
+跌破成交量加权平均价
+symmetrical triangle right here and you're like okay cool i
+
+64
+00:02:45,952 --> 00:02:48,244
+你可能会想
+think the market's going to sell off but you want
+
+65
+00:02:48,244 --> 00:02:52,599
+等到第二天再入场 你会看到周五的弱势
+to wait the next day before you enter the trade and you can see the weakness on friday of
+
+66
+00:02:52,600 --> 00:02:54,673
+上周五确实出现了弱势
+last week right now there's a couple ways in which
+
+67
+00:02:54,673 --> 00:02:55,709
+处理这种情况有几种方式
+you can go about this
+
+68
+00:02:55,709 --> 00:03:00,478
+有几种方法可以操作 但我们这里只比较两种情况
+there's a few ways in which you can go about this but we're just going to compare two different scenarios in this particular
+
+69
+00:03:00,480 --> 00:03:05,200
+一种是看跌买入组合 另一种是直接买入裸看跌期权
+case one of them would be the beer call spread and the other one would be just buying a naked put
+
+70
+00:03:05,200 --> 00:03:07,419
+这是大多数人会选的方式
+which is the way most people would go about this
+
+71
+00:03:07,419 --> 00:03:09,638
+你可能会想
+trade ideas here you're saying hey i think the market's
+
+72
+00:03:09,638 --> 00:03:14,077
+回到这儿 你可能会选435看跌期权 然后想
+going to go back to here you might choose the 435 put and you might say i think i'm going to
+
+73
+00:03:14,300 --> 00:03:17,014
+然后持有看跌期权直到市场到那里
+hold this put until the market gets down to here
+
+74
+00:03:17,014 --> 00:03:18,371
+但问题在于
+however the problem that we
+
+75
+00:03:18,371 --> 00:03:23,799
+如果你只是买入期权 尤其是波段交易时
+run into psychologically whenever you just buy an option especially if you're swing trading is you have to deal with
+
+76
+00:03:23,800 --> 00:03:27,311
+你要面对时间衰减
+theta which would be the time decay so the difference
+
+77
+00:03:27,311 --> 00:03:30,822
+周四到周一之间
+between here on thursday even though you're right as we
+
+78
+00:03:30,822 --> 00:03:36,088
+虽然你是对的 市场确实触及435
+can see the market ultimately did end up hitting 435 there's more chances than not psychologically
+
+79
+00:03:36,440 --> 00:03:39,178
+但周一开盘时市场跳空下跌
+on monday as we can see the market gap down
+
+80
+00:03:39,178 --> 00:03:41,916
+周一这里的上涨
+this run up right here on monday when you look
+
+81
+00:03:41,916 --> 00:03:47,939
+你的盈亏会先变红 即使你方向正确 我们快进看
+at your pnl will actually start showing red even though you are right as we can see if we flash forward in
+
+82
+00:03:47,940 --> 00:03:50,650
+尽管你判断正确
+time more than likely i don't know the exact number
+
+83
+00:03:50,650 --> 00:03:53,360
+但具体数字不确定
+but we'll say nine out of ten times because we're
+
+84
+00:03:53,360 --> 00:03:58,238
+作为人类 你会被止损出场 因为心理上无法持有
+human we're going to stop out of this trade because psychologically this does not make sense to hold
+
+85
+00:03:58,240 --> 00:04:00,506
+假设你在这里做空
+i'm assuming we shorted it right here and this was
+
+86
+00:04:00,506 --> 00:04:02,772
+并把这个位置设为止损
+our level the moment it crossed over this level and
+
+87
+00:04:02,772 --> 00:04:07,078
+假设你用这个做止损 那你已经被止损出局了
+let's just say that's what you're going to use as your stop loss you would have stopped out but
+
+88
+00:04:07,080 --> 00:04:09,145
+你很可能在这里被止损
+more than likely you would have stopped out around here
+
+89
+00:04:09,145 --> 00:04:11,210
+而用我等会讲的组合策略
+now when you trade with the spread that i'm going
+
+90
+00:04:11,210 --> 00:04:15,340
+我等下会展示 你可以进来然后说 如果
+to show you that i'm going to be showing shortly you can come in and say like hey if this
+
+91
+00:04:15,340 --> 00:04:17,863
+如果这是SPY的初始控制点
+is my uh if this is the spy's virgin point
+
+92
+00:04:17,863 --> 00:04:19,124
+控制点就在这里
+of control it's over this
+
+93
+00:04:19,124 --> 00:04:25,938
+在这个价位我会考虑平仓 如果你把止损设在这里
+level i'm going to look to close my trade and if you're using this up here as your stop loss now you have a much wider stop
+
+94
+00:04:25,940 --> 00:04:28,671
+止损范围就更大 而更大的止损
+loss and wider stop losses actually increases your probability because
+
+95
+00:04:28,671 --> 00:04:31,402
+实际上会提高你的成功概率
+it means you're not going to be stopped out every
+
+96
+00:04:31,402 --> 00:04:35,499
+因为不会每次价格逆你就被止损
+time price goes against you this actually right here ends up setting yourself up for
+
+97
+00:04:35,500 --> 00:04:38,115
+这其实能帮你做好一笔交易
+a proper trade because if you were to open up
+
+98
+00:04:38,115 --> 00:04:40,730
+比如你在这里做空 止损设在
+a short position here and your stop loss was we'll
+
+99
+00:04:40,730 --> 00:04:45,699
+控制点上方 目标盈利在这里
+say over this level over this point of control and this was your reward you're talking about risking from
+
+100
+00:04:45,700 --> 00:04:49,520
+那么从入场时算起
+from the time in which you would have entered the trade which would have
+
+101
+00:04:49,520 --> 00:04:52,794
+入场价格大概是439.5
+been about 4 39 and a half we'll say and you're giving it about
+
+102
+00:04:52,794 --> 00:04:56,341
+假设你承担1美元到1.5美元的风险
+a dollar in terms of a dollar 50 or a dollar in terms of
+
+103
+00:04:56,341 --> 00:05:00,161
+现在看盈利目标
+how much you're risking you can see right now if this is your profit
+
+104
+00:05:00,161 --> 00:05:03,981
+你已经有1:3的风险收益比了
+target you're already risking you already have about a one to three risk reward
+
+105
+00:05:03,981 --> 00:05:23,357
+这只是其中一个案例 显然风险收益比不总是完全一样 但为了教学 这里是1:3 也就是说 这里是你的风险 这里是盈利目标 看起来不错
+this is just one case so obviously the the risk reward is not always going to be exactly the same but let's just say for educational purposes your risk reward here is a one to three in other words again this right here is what you're risking and then this right here would be your profit target you can already see that it looks pretty decent now if we jump side
+
+106
+00:05:24,180 --> 00:05:26,994
+我们来对比看看图表上的期权
+by side and actually look at the options on the
+
+107
+00:05:26,994 --> 00:05:29,245
+现在拉出看跌期权
+chart let's actually pull up the put right
+
+108
+00:05:29,245 --> 00:05:35,436
+这就是我们刚提到的435看跌期权
+here so this would be our 4 35 put that we just mentioned that more than likely this is how most people would go
+
+109
+00:05:36,000 --> 00:05:38,440
+大部分人可能会这么操作
+about this and and and i'm not trying to necessarily
+
+110
+00:05:38,440 --> 00:05:40,880
+我并不是说这种交易方式不好
+say this is a bad way of trading because i
+
+111
+00:05:40,880 --> 00:05:43,320
+因为我自己有时候也会做
+take these types of trades sometimes too it's just as
+
+112
+00:05:43,320 --> 00:05:50,397
+a beginner sometimes i'm trying to expose to you guys that you have more tools at your disposal as opposed to just doing one thing so in this case
+
+113
+00:05:50,400 --> 00:05:52,760
+你有更多工具可用 不只是一种方法
+this would be uh the friday right here and if
+
+114
+00:05:52,760 --> 00:05:54,648
+这里是周五的K线
+we hover our mouse i have the crosshairs
+
+115
+00:05:54,648 --> 00:06:00,078
+鼠标悬停时 交叉线会显示开盘价
+are mirrored on each side and i have it saying right here what the price would have been going for at the open
+
+116
+00:06:00,080 --> 00:06:02,225
+假设你开盘就买入看跌期权
+we're going to assume you just hopped right into the
+
+117
+00:06:02,225 --> 00:06:03,941
+如果市场一开盘你就进场
+puts as soon as the market opened if
+
+118
+00:06:03,941 --> 00:06:08,660
+we zoom in right here we can actually see this would have been our open they're both on a five minute time
+
+119
+00:06:08,660 --> 00:06:10,736
+假设你立即入场
+frame so let's just say you hop right
+
+120
+00:06:10,736 --> 00:06:12,812
+你要付2美元
+in you would be paying two dollars and
+
+121
+00:06:12,812 --> 00:06:18,521
+26美分，期权中这代表买入这份看跌期权需花费226美元
+26 cents and in options that means it's costing you 226 to actually buy this put option and if you're buying this put option
+
+122
+00:06:19,040 --> 00:06:21,485
+你假设它会跌到
+you're making the assumption it's going to go down to
+
+123
+00:06:21,485 --> 00:06:22,952
+4.35美元
+4 35 but the problem is we can
+
+124
+00:06:22,952 --> 00:06:29,310
+但问题是，我们能看到这是周五，到周一时
+see now this would be friday look what happens by monday as we can see the market did gap down but then we ended up pushing
+
+125
+00:06:29,800 --> 00:06:33,820
+市场虽低开，但看看这份看跌期权的成本
+up look what happens to the cost of this put option it actually ends
+
+126
+00:06:33,820 --> 00:06:37,553
+它实际上还在上涨
+up dropping so assuming you bought it at 226 by the time it hits
+
+127
+00:06:37,553 --> 00:06:41,573
+假设你226美元买入，到周一最低点时
+it it's low on monday which would have been right here this put is
+
+128
+00:06:41,573 --> 00:06:51,910
+这份期权已跌至1.43美元，亏损36美元，如果你买了1手，就已亏损36美元
+now going for a dollar 43 which would be down 36 so assuming you bought one of these you're already down 36 of your position again this sucks let's just tell you let's just say you're using some sort
+
+129
+00:06:53,060 --> 00:06:55,930
+心理上，这是大多数期权交易者会遇到的问题
+of risk parameters where you say you stop out whenever you're down
+
+130
+00:06:55,930 --> 00:06:58,561
+尤其是在做波段交易时
+30 on an option or let's just say you bought this option
+
+131
+00:06:58,561 --> 00:07:05,259
+这很糟糕，你盯着价格，我们放大来看
+here and you're saying you're going to stop out once you're down 50 cents whatever ends up being everybody's risk parameters are different but you can already see that
+
+132
+00:07:05,740 --> 00:07:08,776
+我本该在这里标记这个价位
+psychologically this is the this is the problem that most
+
+133
+00:07:08,776 --> 00:07:10,597
+我们在这里开仓，所以价格你在这里做空
+options traders run into especially when
+
+134
+00:07:10,597 --> 00:07:15,758
+即使你判断正确，价格还没回到你做空的价位
+you swing trading because this sucks you're looking at price let's actually zoom in and i actually
+
+135
+00:07:15,760 --> 00:07:19,640
+应该直接标记这个位置 我们说的是在这里开盘
+should have just marked this level off right here we're saying we opened up right here so that's the
+
+136
+00:07:19,640 --> 00:07:22,575
+等它稍微突破一点，你会看到期权价格暴跌
+open so price you short here and now the market
+
+137
+00:07:22,575 --> 00:07:25,510
+即使你想在这里止损
+even though you're right before it even gets back up
+
+138
+00:07:25,510 --> 00:07:28,445
+你也等不到价格回到那里
+to the price in which you shorted it you're already
+
+139
+00:07:28,445 --> 00:07:36,958
+going to be down this much and by the time you know it just pokes slightly over it you're just going to see this huge drop in the option
+
+140
+00:07:36,960 --> 00:07:40,271
+你不会只亏36美元，可能会亏50美元
+even though you want to stop out over here you can't wait
+
+141
+00:07:40,271 --> 00:07:43,582
+这太可怕了，假设你有5手合约
+for it to get up here because if price was to get
+
+142
+00:07:43,582 --> 00:07:46,617
+或者你仓位规模在1000美元左右
+up here you're not going to be down 36 you'll probably be
+
+143
+00:07:46,617 --> 00:07:49,652
+你可能会亏360到500美元
+down something like 50 and that's huge imagine if you have five
+
+144
+00:07:49,652 --> 00:08:01,794
+of these contracts you know or imagine if you have four of them in your position size is around a thousand dollars or something like that you're talking about being down anywhere from 360 to being down 500 any reasonable person myself included is going to
+
+145
+00:08:02,900 --> 00:08:05,695
+然后当天晚些时候
+stop out of this trade and then later later in the day
+
+146
+00:08:05,695 --> 00:08:08,490
+我们看到价格真的触及了盈利目标
+we can see we end up actually hitting the profit target and
+
+147
+00:08:08,490 --> 00:08:11,285
+这会让人很沮丧，你会告诉自己
+then it just gets frustrating because you tell yourself oh i knew
+
+148
+00:08:11,285 --> 00:08:17,573
+‘早知道’‘我在这里买的，要是坚持住’
+it i bought it here if i just held if i just held i would have made 100 or i would have made 50 or whatever it ends up
+
+149
+00:08:18,040 --> 00:08:22,780
+‘我本可以赚100或50美元’之类的
+being but yeah in actuality this is poor risk management holding through this so the better
+
+150
+00:08:22,780 --> 00:08:26,287
+但实际上，这样坚持是风险管理不当
+way to approach this type of situation is if we look at
+
+151
+00:08:26,287 --> 00:08:29,209
+我们看看440看涨期权
+what's the uh 440 call so right here the 440 call for
+
+152
+00:08:29,209 --> 00:08:40,314
+同样是10月15日到期，也就是本周五，大家看这里，周四的情况是这样的，周五则是这样
+the same expiration october 15th which is this friday we can see now i'm actually if we if we take a look right here this would have been the uh thursday and this would have been the friday
+
+153
+00:08:40,900 --> 00:08:44,287
+我再把鼠标悬停在这里
+so i'm hovering my mouse again and this is where this contract
+
+154
+00:08:44,287 --> 00:08:47,674
+这是该合约的开盘价
+opens so assuming you shorted this contract at the open and we'll
+
+155
+00:08:47,674 --> 00:08:55,859
+假设你在开盘时卖出这个期权
+explain how you actually go about doing this pretty soon but assuming you short this option right here we can already see how much premium this option has lost
+
+156
+00:08:55,860 --> 00:08:59,548
+前提是SPY
+because the assumption in this particular case is hey the spy is
+
+157
+00:08:59,548 --> 00:09:02,928
+不会再收在440以上
+not going to close over 440 again it's a bearish position or
+
+158
+00:09:02,928 --> 00:09:13,684
+这是看跌交易，认为价格会维持在下方
+a bearish trade we're saying it's going to stay below this level we don't know how low it's going to go but this we can use as our profit target once it hits 435 that means
+
+159
+00:09:14,300 --> 00:09:18,680
+它已经补完缺口，我要平仓了，你们看差价
+it's filled the gap i'm going to close the trade you guys can already see look at the difference
+
+160
+00:09:18,680 --> 00:09:21,429
+因为补缺口后就平仓
+between the thought process here you're already looking at where you would
+
+161
+00:09:21,429 --> 00:09:24,178
+你已经在考虑止损点
+probably stop out of the trade and you're using that as the
+
+162
+00:09:24,178 --> 00:09:31,050
+并用它作为卖出看涨期权的行权价
+call in which you're going to short or use that as your strike price for the call in which you're going to short in this particular case i'm using the 440
+
+163
+00:09:31,280 --> 00:09:34,472
+这里我选440，因为是整数
+call just because it's a nice even number but you could have
+
+164
+00:09:34,472 --> 00:09:41,654
+还做空了441的看涨期权，我来标几个关键位，然后给大家分析一下，如果你做空这个看涨期权
+shorted the 441 call also so i'm going to throw some levels on this chart here and we can break this down if you're shorting this call for
+
+165
+00:09:41,920 --> 00:09:45,257
+如果在这里卖出，能收3.42美元
+this level right here that means you're collecting three dollars and 42
+
+166
+00:09:45,257 --> 00:09:48,898
+现在看需要买入的看涨期权
+cents as a credit now let's jump over to the call you're
+
+167
+00:09:48,898 --> 00:09:58,911
+必须买441，因为裸卖看涨期权风险无限
+going to need to buy the 441 would be the next strike up because if you just short a call naked you have unlimited risk in theory and that's very dangerous so that's why
+
+168
+00:09:59,520 --> 00:10:02,228
+所以这是组合策略
+it's because that's why it's considered a spread because you're
+
+169
+00:10:02,228 --> 00:10:04,665
+你要卖出440看涨期权
+going to short the 440 call and you're going to
+
+170
+00:10:04,665 --> 00:10:07,102
+同时买入441看涨期权
+buy the 441 call whenever you're executing an options order
+
+171
+00:10:07,102 --> 00:10:09,810
+执行期权订单时
+and you're actually doing multiple options at the same time
+
+172
+00:10:09,810 --> 00:10:17,935
+同时操作多个相关期权，这就叫组合策略
+that connect with each other that's considered a spread in this particular case this is one of the key vertical spreads and the name of this spread as i mentioned
+
+173
+00:10:18,480 --> 00:10:21,452
+这是重要的垂直价差组合
+before it's called a bear call spread it's very easy
+
+174
+00:10:21,452 --> 00:10:24,424
+之前提到过，叫看跌买入组合
+to remember it starts with what is your stance on
+
+175
+00:10:24,424 --> 00:10:36,018
+标的资产是你想交易的股票方向，比如SPY是ETF，你看跌它，这就是名称
+the underlying of what is your what is the direction you're trying to trade the stock so in this particular case if it's the spy which is an etf you're bearish on it so that's the name that's the
+
+176
+00:10:36,020 --> 00:10:38,788
+看跌，所以第一个词是‘看跌’
+first name bear bear and what are you doing what
+
+177
+00:10:38,788 --> 00:10:41,556
+然后看交易的期权类型
+type of options are you trading you're trading the calls
+
+178
+00:10:41,556 --> 00:10:51,799
+这就是看跌买入组合，你跟其他交易者说这个，他们自然知道你在做空一个看涨期权，同时也知道你在买另一个看涨期权
+so it's a bear call spread it means if you told this to another trader inherently they're going to know it means you are shorting a call option but they also know that you're buying another call
+
+179
+00:10:51,800 --> 00:10:54,094
+其他交易者一听就知道
+option as protection now because i don't want to make
+
+180
+00:10:54,094 --> 00:11:00,519
+你卖出看涨期权，同时买入另一个看涨期权保护
+this video too long just understand that that's the way it works i'll make other videos in the future expect to see a lot more spread based videos
+
+181
+00:11:00,520 --> 00:11:03,983
+因为我想在这个频道推广更多这类策略
+on this channel because i'm trying to introduce a lot more of this even for
+
+182
+00:11:03,983 --> 00:11:07,446
+目的是真心帮助你们
+day trading as well as swing trading as i'm trying to really help you guys
+
+183
+00:11:07,446 --> 00:11:18,298
+适合小资金账户，大账户也能用它做更安全的交易
+build out smaller accounts and even if you have a large account this is a great way to take safer trades well safe can be debatable i guess you can say but this is a lot way to increase your probability and actually stay in trades longer
+
+184
+00:11:18,300 --> 00:11:21,693
+如果你和我一样
+because if you're anything like me and you look back at a lot of the
+
+185
+00:11:21,693 --> 00:11:23,955
+回顾过往亏损的交易
+trades in which you might have taken a loss on
+
+186
+00:11:23,955 --> 00:11:32,099
+或过去被止损的交易，尤其是期权交易
+or stopped out on in the past especially as options trades you'll see that you were more than likely right in the in the direction but you were just wrong in how you structured the trade
+
+187
+00:11:32,100 --> 00:11:34,550
+可能你只是直接买了看涨期权
+because you probably just bought a call or you bought
+
+188
+00:11:34,550 --> 00:11:41,900
+买入看跌期权，结果时间衰减侵蚀权利金
+a put and then it sucked because time decay was eating away at your option and you had to take a loss even if you were right on the direction
+
+189
+00:11:41,900 --> 00:11:46,376
+那我们回到看跌期权的例子
+so what ended up happening if we go back to the put again the reason
+
+190
+00:11:46,376 --> 00:11:49,360
+它贬值这么多
+this put lost so much value is because not only
+
+191
+00:11:49,360 --> 00:12:00,699
+is the direction wrong in which way the spy is heading it's also because so much time had passed by from the time you open the put to the time to the present day and that's what's hurting
+
+192
+00:12:00,700 --> 00:12:04,945
+再看看看涨期权的例子
+this but in this case if we look at the call again by the time
+
+193
+00:12:04,945 --> 00:12:07,775
+大家看这里
+we can see right here if this is the call
+
+194
+00:12:07,775 --> 00:12:19,379
+看这里，我们做空后，隔天这个看涨期权下跌
+and this is where we shorted it look at the next day right here here goes the monday after the weekend this call is down but guess what even as the spy is rallying the call is also gaining in value
+
+195
+00:12:19,380 --> 00:12:21,932
+因为你卖出了它
+which is bad for you because you did short it
+
+196
+00:12:21,932 --> 00:12:24,484
+你不希望它涨
+so you don't want this call to increase in value
+
+197
+00:12:24,484 --> 00:12:27,036
+你希望它跌
+you actually want it to drop but in this particular
+
+198
+00:12:27,036 --> 00:12:35,458
+它在涨，但没回到你卖出时的行权价
+case it's increasing in value but guess what it doesn't come back up to the strike to the price in which you sold it for so if you think about this guys if
+
+199
+00:12:35,460 --> 00:12:37,767
+如果你卖出某样东西
+you're selling something if you don't understand necessarily
+
+200
+00:12:37,767 --> 00:12:40,074
+可能不太理解做空或卖出期权
+the concept of shorting or shorting options if
+
+201
+00:12:40,074 --> 00:12:44,399
+未来再低价买回
+you're shorting something it means you're selling it with the intention of buying it back
+
+202
+00:12:44,400 --> 00:12:46,536
+这就是收费组合的原理
+cheaper later that's what's creating what's
+
+203
+00:12:46,536 --> 00:12:49,384
+我卖出这个期权
+called this credit here because i shorted this
+
+204
+00:12:49,384 --> 00:12:51,520
+别人付给我3.42美元
+or i sold this to someone
+
+205
+00:12:51,520 --> 00:12:56,504
+买这个期权的权利
+i'm collecting they're paying me three dollars and 42 cents to actually buy this option
+
+206
+00:12:56,860 --> 00:12:59,775
+我的计划是
+from me my plan is to buy this back once
+
+207
+00:12:59,775 --> 00:13:02,107
+未来低价买回
+it's cheaper later and what do we know
+
+208
+00:13:02,107 --> 00:13:07,938
+期权的特性是，无论怎样，theta总在侵蚀
+about options is that no matter what happens theta is always burning away at an option which means it's always
+
+209
+00:13:07,940 --> 00:13:11,606
+所以期权价值总在下降
+losing value so even if the spy was not to sell off
+
+210
+00:13:11,606 --> 00:13:14,050
+只要时间过去
+to our price target as long as the
+
+211
+00:13:14,050 --> 00:13:20,772
+只要SPY保持在440下方 我们就能盈利
+spy stays below 440 we're going to be profitable you guys can already see how this is already opening up your chances of
+
+212
+00:13:21,080 --> 00:13:23,470
+你们已经能看到
+profitability or probability of being profitable because now
+
+213
+00:13:23,470 --> 00:13:25,860
+盈利的可能性是如何扩大的
+you don't need one scenario to happen if
+
+214
+00:13:25,860 --> 00:13:30,640
+如果你只买入看跌期权
+you just buy the put the only way you make money is if the spy actually
+
+215
+00:13:30,640 --> 00:13:33,595
+唯一盈利的方式就是SPY真正下跌
+dropped and it would need to drop quickly because it
+
+216
+00:13:33,595 --> 00:13:35,959
+而且必须快速下跌
+needs to outpace the theta or the time
+
+217
+00:13:35,959 --> 00:13:42,460
+但这种情况下SPY可以慢悠悠地走
+decay but in this particular case the spy can take its time it could have hovered around here for a few days
+
+218
+00:13:42,460 --> 00:13:44,932
+但在这个策略中 SPY可以慢慢来
+for a few days and even if the spy just
+
+219
+00:13:44,932 --> 00:13:46,662
+甚至可以在这里盘整几天
+hovered around here guess what the 440 call
+
+220
+00:13:46,662 --> 00:13:47,156
+即使SPY只是
+would have
+
+221
+00:13:47,156 --> 00:13:53,090
+在这附近盘整 猜怎么着？440看涨期权
+be down would still be down even though the spy did not drop yet and even if the spy did go higher as we
+
+222
+00:13:53,340 --> 00:13:56,465
+仍然会下跌
+can see if it takes too long to go higher you're still
+
+223
+00:13:56,465 --> 00:13:58,548
+尽管SPY没跌
+going to be profitable because even if you
+
+224
+00:13:58,548 --> 00:14:03,497
+bought this call back here if you shorted it at 340 and it's now going for we'll say 320 i'll round
+
+225
+00:14:04,020 --> 00:14:05,913
+你依然能盈利
+it up you're you're still making 20 cents
+
+226
+00:14:05,913 --> 00:14:08,077
+假设你在340做空
+on this option which means it would have
+
+227
+00:14:08,077 --> 00:14:14,569
+still been a green trade even though now you shorted the spy here and now the spy is higher than where you shorted it
+
+228
+00:14:14,840 --> 00:14:17,928
+你仍能赚20美分
+you can make this decision and you won't be emotional about it
+
+229
+00:14:17,928 --> 00:14:20,244
+这笔期权交易仍是盈利
+because you're not looking at your p&l and
+
+230
+00:14:20,244 --> 00:14:25,134
+reading how much you're down on the trade you're actually looking at your p&l and you're saying oh
+
+231
+00:14:24,620 --> 00:14:27,591
+你可以理性决策
+wow i'm still green on the trade even though the spy is
+
+232
+00:14:27,591 --> 00:14:29,571
+不会被情绪影响
+rallying so assuming you decide to close at
+
+233
+00:14:29,571 --> 00:14:35,018
+least you can close the trade for a break even in a clearer mind state but now if we take a look
+
+234
+00:14:35,020 --> 00:14:37,705
+而是看盈利
+at the 441 call this would be the call we would have
+
+235
+00:14:37,705 --> 00:14:39,657
+你会发现‘哇 交易还是绿的’
+to buy because again you can't just short
+
+236
+00:14:39,657 --> 00:14:44,050
+an option naked unless you own 100 shares which would be a covered call but that's for another video
+
+237
+00:14:44,540 --> 00:14:46,792
+至少你能在平静心态下平仓
+i'm going to throw the levels on this chart also
+
+238
+00:14:46,792 --> 00:14:48,593
+现在看441看涨期权
+and this is uh let's just zoom out
+
+239
+00:14:48,593 --> 00:14:53,998
+right here so in this particular case if you guys want to see i have the arrow drawn out exactly this is what the
+
+240
+00:14:54,000 --> 00:14:57,377
+因为不能裸卖期权
+price was going for directly at the open right here so at
+
+241
+00:14:57,377 --> 00:14:59,628
+这种情况下必须买入这个期权
+this case we have to buy this option
+
+242
+00:14:59,628 --> 00:15:04,975
+买入这个期权要花2.89美元，即289美元，但记得我们卖出了
+if we're buying this option it's going to cost us 2.89 cents which is 289 bucks but remember we sold the
+
+243
+00:15:05,540 --> 00:15:08,030
+也就是289美元 但我们之前卖出了
+440 call for three dollars and 41 cents if i jump back
+
+244
+00:15:08,030 --> 00:15:10,022
+440看涨期权 价格是3美元
+to it just to double check three dollars
+
+245
+00:15:10,022 --> 00:15:14,504
+哦 其实是3.42美元 但我们算3.41吧 差1美分
+oh it's actually three dollars and 42 but let's just say three dollars and 41 it's just the penny difference
+
+246
+00:15:15,500 --> 00:15:18,326
+回到这里 卖出后我们收到了
+right here we jump back to it so by selling that that's
+
+247
+00:15:18,326 --> 00:15:21,152
+这笔资金 然后必须买入
+how much money we actually collected and then we have to buy
+
+248
+00:15:21,152 --> 00:15:25,863
+这个期权 所以最终净收益是52美分
+this option so this is how much it's costing us so in total we end up with a credit of 52
+
+249
+00:15:26,100 --> 00:15:33,800
+52美分，也就是52美元。时间快进后，当SPY
+cents which means 52 dollars now as we fast forward in time we can actually see by the time the spy
+
+250
+00:15:33,800 --> 00:15:39,820
+到达目标区域时，一个经验法则是50%
+actually hit our targets assuming it's anywhere around here so i marked out a good rule of thumb is 50
+
+251
+00:15:39,820 --> 00:15:43,043
+一个简单的经验法则是50%
+percent of the option so if we go back to the call
+
+252
+00:15:43,043 --> 00:15:45,192
+回到我们卖出的看涨期权
+that we sold if we sold this for
+
+253
+00:15:45,192 --> 00:15:51,102
+3.42美元的看涨期权此时会跌去一半价值，这是一个
+342 this call would be down 50 of its value right about here so this could have been one place in which you would
+
+254
+00:15:51,640 --> 00:15:57,500
+这里就是它跌去50%价值的位置
+have closed the position so i'm going to use this for now most people use 50 of the credit received
+
+255
+00:15:57,500 --> 00:15:59,940
+可以作为平仓点
+which is a good way to go about it so
+
+256
+00:15:59,940 --> 00:16:02,380
+换句话说 回到这个图
+in other words if we jump back to this if
+
+257
+00:16:02,380 --> 00:16:08,480
+好的平仓时机：当组合损失一半收费时。你收到的权利金是
+this is your credit received a good place to close this trade is once the position has lost half of the credit so you'll buy
+
+258
+00:16:08,480 --> 00:16:10,914
+那么当头寸损失一半净收益时
+it back for cheaper so in other words i sold
+
+259
+00:16:10,914 --> 00:16:13,104
+就是好平仓点 可以更便宜买回
+this spread to someone collected 52 in credit and then
+
+260
+00:16:13,104 --> 00:16:17,972
+我会在26美元时回购，这样利润就是差价，即
+i'm going to buy it back when it's at 26 and then i would be profiting the difference would be which
+
+261
+00:16:18,460 --> 00:16:20,697
+然后在26美元时买回
+would be 26 bucks in this case but for purposes of this
+
+262
+00:16:20,697 --> 00:16:23,137
+利润就是差价
+video i'm just going to say i assume you ended up buying
+
+263
+00:16:23,137 --> 00:16:26,595
+即26美元 但为了演示
+it back right here just because you got a little bit nervous you got made the profit
+
+264
+00:16:26,800 --> 00:16:29,728
+假设你在这里买回
+so fast after holding through all this and you decide to close
+
+265
+00:16:29,728 --> 00:16:32,656
+因为太快获利就紧张了
+here but in actuality we can see the profit was ultimately hit
+
+266
+00:16:32,656 --> 00:16:36,560
+经过这么多波动后决定平仓
+or the target was ultimately hit so using this as an example we would have to
+
+267
+00:16:36,560 --> 00:16:39,975
+但实际上目标位已达成
+uh because we bought this for this price and then we have
+
+268
+00:16:39,975 --> 00:16:42,252
+用这个例子 因为我们以这个价格买入
+to buy it back cheaper that means we
+
+269
+00:16:42,252 --> 00:16:48,229
+会亏损1.53美元。但回到440美元看涨期权，我们以3.42美元
+would have suffered a dollar 53 loss but if we jump back to the 440 call we shorted this for three dollars and
+
+270
+00:16:48,800 --> 00:16:55,620
+卖出，现在以1.70美元回购，实际上赚了1.72美元
+42 cents but we're buying this one back for a dollar 70 which means we actually made a buck 72 or 172
+
+271
+00:16:55,620 --> 00:17:03,500
+这份合约赚了172美元
+dollars so we made 172 dollars on this contract but we actually lost 172 dollars on this contract
+
+272
+00:17:03,500 --> 00:17:06,182
+但另一份亏了172美元
+the difference ends up being 36 cents so that would
+
+273
+00:17:06,182 --> 00:17:09,162
+净差是36美分
+be our net profit so here was how much money
+
+274
+00:17:09,162 --> 00:17:15,122
+最终赢了 但这是我们的亏损金额 总体仍有盈利
+we ended up winning and this is how much money we ended up losing but overall we ended up with
+
+275
+00:17:15,420 --> 00:17:18,874
+左边是赚的，右边是亏的
+this as a profit you guys understand how this works and this
+
+276
+00:17:18,874 --> 00:17:22,328
+但最终净赚了这部分
+is this is in a sense how these types of credit spreads
+
+277
+00:17:22,328 --> 00:17:27,510
+你们现在理解收费组合的工作原理了吗
+work whenever you sell a spread and it is a spread because why we sold the 440 call and
+
+278
+00:17:27,800 --> 00:17:33,560
+我们买入441看涨期权 并作为一个订单执行 这就构成了组合策略
+we're buying a 441 call and we're doing it as one order and that's what's making it a spread and then
+
+279
+00:17:33,560 --> 00:17:38,480
+是因为我们同时卖出440看涨期权
+we're buying it back when it's cheaper do you guys how do you guys understand now why psychologically
+
+280
+00:17:38,480 --> 00:17:41,532
+又买入441看涨期权
+this is a much better situation to be in or it feels
+
+281
+00:17:41,532 --> 00:17:48,399
+并且作为一个整体订单执行
+a lot more comfortable now if you want to know what is the risk whenever you're doing these types of trades it's actually the distance between your
+
+282
+00:17:48,400 --> 00:17:52,642
+然后在更低价位回购
+strike prices so if the distance between the strike prices here 441
+
+283
+00:17:52,642 --> 00:17:55,342
+你们现在理解为什么
+and 440 that's that's one point and one
+
+284
+00:17:55,342 --> 00:18:01,127
+这种策略在心理上更舒服了吗
+point means a hundred dollars so it's a hundred dollars minus the credit received and
+
+285
+00:18:01,900 --> 00:18:08,180
+如果想了解这类交易的风险
+the credit received is 52 bucks so we're actually so our max loss in this case i'm going to average it
+
+286
+00:18:08,180 --> 00:18:14,540
+其实就是行权价之间的差距
+out to just say it's only going to be 50 dollars so we're risking 50 dollars to make at most 52 dollars
+
+287
+00:18:14,540 --> 00:18:17,893
+这里440和441之间相差1点
+but we're going to close it at half of that so the
+
+288
+00:18:17,893 --> 00:18:21,246
+1点等于100美元
+risk reward might seem weird when you first start using these types
+
+289
+00:18:21,246 --> 00:18:24,878
+所以最大风险是100美元
+of spreads but understand your room for profitability your your probability of success
+
+290
+00:18:24,880 --> 00:18:27,124
+减去收到的权利金52美元
+is much higher jumping back to the 441 call for
+
+291
+00:18:27,124 --> 00:18:29,617
+所以最大亏损大约是50美元
+a second if we take a look at its value
+
+292
+00:18:29,617 --> 00:18:32,110
+我们冒险50美元
+right now you guys can see how this thing is
+
+293
+00:18:32,110 --> 00:18:39,340
+实际上大跌 现在从开盘价下跌近90% 假设我们在这里入场 你仍在持仓
+actually crushed it's down almost down over 90 right now from the open assuming we had entered the trade here and you're still holding but you never want to hold
+
+294
+00:18:39,840 --> 00:18:42,527
+但我们会在赚一半时平仓
+these types of spreads all the way until the ends they still
+
+295
+00:18:42,527 --> 00:18:45,214
+所以风险收益比一开始可能看起来奇怪
+have two more days till expiration and the worst thing that would
+
+296
+00:18:45,214 --> 00:18:47,901
+但要理解你的盈利空间
+happen for you is if the market just decided to rally for
+
+297
+00:18:47,901 --> 00:18:56,858
+但你绝不能持仓过夜 今天是周三 市场已收盘 但周四周五还有交易
+the past for for the next couple days again today's wednesday and the market is closed but there's still a thursday and friday anything can happen and if you would have held this from all the way here to here
+
+298
+00:18:56,860 --> 00:19:00,024
+再看一下441看涨期权
+there's no reason to hold this trade to just make an extra
+
+299
+00:19:00,024 --> 00:19:01,870
+现在它已经暴跌
+10 cents of profit you might as well
+
+300
+00:19:01,870 --> 00:19:07,408
+所以我会平仓 我的规则是 盈利50%或61%就平仓
+close the trade so my rule of thumb i close the trade whenever i'm up either 50 or 61 those are my usual
+
+301
+00:19:08,200 --> 00:19:12,860
+运行这类组合策略时，我的止盈目标是50或61%
+profit targets whenever i'm running these types of spreads now i want to jump over to option strat which
+
+302
+00:19:12,860 --> 00:19:17,800
+是我分析期权组合时最爱用的网站之一，如你们所见
+is one of my favorite websites to use whenever i'm analyzing my types of spreads and as we can see
+
+303
+00:19:17,800 --> 00:19:20,851
+这是分析组合策略时喜欢用的网站
+right here this is a good breakdown this is how much margin
+
+304
+00:19:20,851 --> 00:19:26,445
+这里显示，运行这个组合需100美元保证金
+the spread would have taken to actually run 100 bucks and why because it's the distance between the two strike prices and then
+
+305
+00:19:26,700 --> 00:19:29,392
+因为保证金是两个行权价的差距
+the max loss is whatever is the distance minus the
+
+306
+00:19:29,392 --> 00:19:32,084
+最大亏损是差距减去
+credit received this is present day so this is if
+
+307
+00:19:32,084 --> 00:19:37,738
+收到的权利金 这是当前数据
+you were to run this spread right now and as we can see this is pointless to run this because it's
+
+308
+00:19:37,740 --> 00:19:41,068
+如果现在开仓的话，收益太低
+because you're not going to receive much credit but if we jump
+
+309
+00:19:41,068 --> 00:19:43,286
+但如果我们回溯到之前
+back in time we can actually see we
+
+310
+00:19:43,286 --> 00:19:48,278
+会发现开仓时间是10月8日周五
+would have been opening this trade it was right here and this was friday which was october 8th
+
+311
+00:19:48,280 --> 00:19:51,563
+看10月8日开盘时的情况
+so if we look at october 8th which would have been right
+
+312
+00:19:51,563 --> 00:19:54,846
+当时这个组合策略的报价是
+here at the open as we said the spread was going for
+
+313
+00:19:54,846 --> 00:19:57,308
+55美分左右
+about 50 it says right here uh 55 cents between 55 cents
+
+314
+00:19:57,308 --> 00:20:03,328
+我们用52美分举例，成交价大概是55美分
+and 51 cents 52 we were using 52 as an example so let's just say 55 52 this is pretty much where you would have gotten filled
+
+315
+00:20:05,520 --> 00:20:08,057
+现在这个组合的报价
+and you can see the spread is now going from here to
+
+316
+00:20:08,057 --> 00:20:09,537
+已经降到12美分
+here it's only going for 12 cents so
+
+317
+00:20:09,537 --> 00:20:13,765
+能赚约40美分，这里就是40美元，你的最大收益
+you'd be up about 40 cents which would be 40 dollars in this particular case and again your max profit would have
+
+318
+00:20:14,400 --> 00:20:16,916
+而最大收益是52美元
+been 52 so so it wouldn't make much sense to be in
+
+319
+00:20:16,916 --> 00:20:18,517
+为了多赚12美分而继续持仓
+this trade to make this extra 12 cents
+
+320
+00:20:18,517 --> 00:20:23,321
+完全没必要，现在就可以平仓
+you can close this right now and enter in some sort of other spread now the thing that's good about when
+
+321
+00:20:23,780 --> 00:20:25,812
+然后开其他组合策略
+you run these types of spreads is theta is on
+
+322
+00:20:25,812 --> 00:20:27,844
+运行这类组合的好处是
+your side right here and theta is positive as opposed
+
+323
+00:20:27,844 --> 00:20:32,518
+而在交易中Delta为负时，我就不喜欢
+to being in a trade where your theta is negative and that's what i like i like to open up as many spreads
+
+324
+00:20:32,520 --> 00:20:37,400
+我喜欢开尽可能多正Theta的组合，收费组合通常Theta为正
+as possible that have positive theta so credit spreads are usually trades that have positive theta as well
+
+325
+00:20:37,400 --> 00:20:40,224
+我喜欢开尽可能多的正Theta组合
+as certain calendar spreads iron condors diagonals those types of
+
+326
+00:20:40,224 --> 00:20:43,048
+收费组合通常Theta为正
+spreads have positive theta and you can start looking into
+
+327
+00:20:43,048 --> 00:20:47,284
+日历组合、铁鹰组合等也是
+some of those and again i think there are great ways to build small accounts
+
+328
+00:20:47,284 --> 00:20:51,520
+这些组合Theta都为正
+especially if you know what you're doing and essentially all you need the spy to
+
+329
+00:20:51,520 --> 00:21:02,817
+只要价格低于你卖出的行权价，低于这里就能赚钱，所以获胜概率很高
+do is stay below the strike price you shorted anything below here means you're making money and that's why the chance of profit is usually so high now now i want to point something out also on the options chain
+
+330
+00:21:02,820 --> 00:21:05,181
+我认为它们很适合小资金账户
+because if you follow me on instagram then you know i like
+
+331
+00:21:05,181 --> 00:21:07,739
+我经常在期权链上标记一些关键点
+to post certain things about the options chain just calling out certain things
+
+332
+00:21:07,739 --> 00:21:10,494
+比如看看440看涨期权的未平仓合约
+i see in the open interest if we take a look at the uh 440
+
+333
+00:21:10,494 --> 00:21:21,908
+这支看涨期权是我们要卖出的，你们看未平仓合约量不错，这里是最高的，下一个是450行权价，450行权价的未平仓合约量一直最高
+call this would have been the one that we would have shorted do you guys see the open interest is pretty decent right here it's actually one of the highest open interest is the next one is all the way down here which would be the 450 strike the 450 strike has had highest open interest for the longest time
+
+334
+00:21:22,500 --> 00:21:25,360
+这是最近几周来最高的
+for the past like few weeks if i remember correctly and that's
+
+335
+00:21:25,360 --> 00:21:30,841
+因为大家都觉得市场会反弹到450
+just because everyone's been thinking the market's going to bounce back up to 450 market makers know this so they're telling selling a bunch
+
+336
+00:21:31,080 --> 00:21:34,119
+做市商知道这一点，所以大量卖出450看涨期权
+of 450 calls that keep expiring worthless but now the interesting thing
+
+337
+00:21:34,119 --> 00:21:42,131
+现在看看看跌期权这边，你们看435的未平仓合约
+i want to point out is on the put side do you guys see 435 look at the open interest right here and the volume on the 435 put as well
+
+338
+00:21:42,960 --> 00:21:46,128
+还有成交量，和433看跌期权的
+as the open interest and volume on the 433 put this is
+
+339
+00:21:46,128 --> 00:21:49,872
+这可能是一个很好的垂直价差组合
+a good vertical spread that's probably happening right now a lot of people
+
+340
+00:21:49,872 --> 00:21:53,616
+很多人可能卖出了435看跌期权
+probably sold the 435 put because by the time the market got down to 435
+
+341
+00:21:53,616 --> 00:21:57,936
+因为当市场跌到435时
+people know that they people people traders will already know we fill the gap and
+
+342
+00:21:57,936 --> 00:22:14,641
+这相当于上周低点的50%回撤，从这里到那里大约50到61的回撤，这区域是做多的好位置，假设会反弹到初始控制点（VPAC）
+this is like the 50 retracement from last week's low if i remember correctly from here to here it's about a 51 about a 50 to 61 retracement so in this area is essentially a good place to be getting long if you are bullish assuming that we're going to bounce back up to this vpac and using any of these levels
+
+343
+00:22:16,660 --> 00:22:20,062
+这个区域基本是做多的好位置
+as some sort of a stop loss if you see my video my last my
+
+344
+00:22:20,062 --> 00:22:23,464
+如果看过我上个视频
+most recent video i talked about this area over the weekend before uh before this
+
+345
+00:22:23,464 --> 00:22:26,866
+周末我就在视频里提到过
+types of price action i already gave you guys the heads up that in this
+
+346
+00:22:26,866 --> 00:22:34,804
+我会在这些区域寻找做多机会，目标价位是432、440、431或430，具体数字记不太清，但432是个好价位
+area i was going to be looking to build some sort of long position i was targeting uh 432 as well as um 440 431 or 430 i remember exactly the levels but i did mention 432 as a good
+
+347
+00:22:35,940 --> 00:22:39,271
+目标价位是432，风险较低
+level to go long because the risk is much lower down here
+
+348
+00:22:39,271 --> 00:22:47,599
+再看期权链，这些看跌期权本周五到期时很难盈利
+and if we jump to the options chain again these puts are not very likely to expire in the money by friday and that's the way i like to look
+
+349
+00:22:47,600 --> 00:22:50,492
+这就是我分析期权链的方式
+at the options chain so if i was to open up some sort of spread
+
+350
+00:22:50,492 --> 00:22:55,699
+我会开一个与当前组合策略相反的仓位，但这期视频不讨论这个，我们直接开始
+i will open up the opposite to the spread in which we have running right now but this video isn't necessarily about that i want to jump
+
+351
+00:22:55,700 --> 00:22:58,773
+我会用和现在相反的组合
+into an example of one more ticker for you guys that i
+
+352
+00:22:58,773 --> 00:23:00,821
+不过这个视频不是讲这个
+actually opened up today if you notice i
+
+353
+00:23:00,821 --> 00:23:06,199
+我把这个也发到了Instagram和Twitter，我会尽量多发一些
+posted this on uh on instagram as well as my twitter i'm going to try to be a little bit more
+
+354
+00:23:06,200 --> 00:23:07,780
+今天我开的另一个标的
+active on my twitter but
+
+355
+00:23:07,780 --> 00:23:09,992
+我在Instagram和推特上也发过
+here we have uh the uh for
+
+356
+00:23:09,992 --> 00:23:12,520
+苹果这里也有一个初始控制点（VPAC）
+here we have another vpac on apple we'll
+
+357
+00:23:12,520 --> 00:23:19,472
+假设这里是440，去Discord看，这里是10，我刚提到过
+just say this is 440 and if we jump over to my discord we'll see here this is at a 10 10 i just mentioned
+
+358
+00:23:20,420 --> 00:23:21,944
+我之前说要波段交易几个
+i said i'm going to swing a few
+
+359
+00:23:21,944 --> 00:23:23,468
+交易想法，苹果周五收盘
+of these the trade ideas apple closes above
+
+360
+00:23:23,468 --> 00:23:27,849
+周五的周度买入，权利金价格假设为440，这是来自量化交易的
+the weekly buys on a friday weekly buys on this premium we'll just say 440 by friday again this is from the quant trading
+
+361
+00:23:28,040 --> 00:23:29,615
+量化交易app的价位
+app uh levels and the link
+
+362
+00:23:29,615 --> 00:23:31,715
+和app下载链接
+to descriptions to quant trading app is in
+
+363
+00:23:31,715 --> 00:23:33,290
+都在下方简介里
+the description down below as well
+
+364
+00:23:33,290 --> 00:23:38,278
+链接在简介里，这是Discord中金会员的专属区域
+as the link to my discord this is the premium section for gold members in the discord but there
+
+365
+00:23:38,280 --> 00:23:40,013
+这是付费区（金卡会员专享）
+is a free section that's the public section
+
+366
+00:23:40,013 --> 00:23:41,746
+但有免费的公开区
+if you're just interested to join the discord
+
+367
+00:23:41,746 --> 00:23:46,079
+链接在下方简介里，如果你是新观众
+link is in description down below and also if you're new to the channel hit the subscribe button share the
+
+368
+00:23:46,080 --> 00:23:47,743
+链接也在下方简介
+video like the video if you're learning anything
+
+369
+00:23:47,743 --> 00:23:49,406
+新来的记得订阅频道
+here and leave any comments and if you
+
+370
+00:23:49,406 --> 00:23:53,979
+有任何问题，但我说过这是个特别适合新手的组合策略
+have any questions but i said that this is a nice beginner friendly spread as it's apple and the risk is small
+
+371
+00:23:53,980 --> 00:23:56,800
+如果你在这里学到东西
+what did i mean by that is if we see right here
+
+372
+00:23:56,800 --> 00:23:58,445
+也可以留言提问
+the margin required is only 100 bucks because
+
+373
+00:23:58,445 --> 00:24:02,675
+我之前说这是个适合新手的组合
+again the distance between the two strikes is only one point so 100 bucks the credit received is 39 bucks
+
+374
+00:24:03,380 --> 00:24:05,207
+因为是苹果的期权
+and the uh max loss is only 61
+
+375
+00:24:05,207 --> 00:24:07,034
+风险特别小
+61 dollars again you just do the difference
+
+376
+00:24:07,034 --> 00:24:13,298
+只需要苹果股价保持在这个价位以上
+between the two and this is straight from option strat right here all we need apple to do is essentially stay above this price
+
+377
+00:24:13,820 --> 00:24:15,386
+保证金只需要100美元
+today tomorrow friday it doesn't really
+
+378
+00:24:15,386 --> 00:24:17,474
+因为两个行权价相差1美元
+matter this spread already is up pretty nice
+
+379
+00:24:17,474 --> 00:24:23,478
+今天涨了约40%，我之前在公开聊天里提到过
+it's up like 40 something percent right now today but i pointed this out here and then uh in the public chat i believe
+
+380
+00:24:23,740 --> 00:24:26,359
+最大亏损只有61美元
+i came in and i was uh talking about how
+
+381
+00:24:26,359 --> 00:24:28,978
+计算方式很简单
+you can approach this and why i suggest you know
+
+382
+00:24:28,978 --> 00:24:34,739
+如果你想用这种方式交易，想从小账户开始
+trading this type of way if you're looking to start building out a new if you're looking to build a small account
+
+383
+00:24:34,740 --> 00:24:36,911
+数据来自option strat
+now if we jump back to the chart and we're
+
+384
+00:24:36,911 --> 00:24:38,648
+我们只需要苹果
+seeing this you can see so i have
+
+385
+00:24:38,648 --> 00:24:43,642
+我有技术上的理由认为苹果会守住140美元，接下来看期权图
+technical reasons for why i think apple is going to stay above uh 140 but next let's take a look at the options chart
+
+386
+00:24:43,860 --> 00:24:45,964
+保持在这个价格之上
+here's our 440 put and check out that
+
+387
+00:24:45,964 --> 00:24:48,368
+具体哪一天都无所谓
+open interest as well as that volume it's
+
+388
+00:24:48,368 --> 00:24:54,078
+这个组合现在已经涨了不少
+pretty high relative to all of the other strike prices right it has the highest open interest right here
+
+389
+00:24:54,380 --> 00:24:56,260
+今天涨幅接近40%
+on top of that look at the open
+
+390
+00:24:56,260 --> 00:24:58,140
+我在公开聊天里分享过
+interest on the call side it's pretty aggressive
+
+391
+00:24:58,140 --> 00:25:03,545
+在这边，苹果本周收盘超150的概率
+on this side right here so i'm no way you know apple is going to be closing over 150 this week unless there's some
+
+392
+00:25:03,780 --> 00:25:05,784
+几乎为零，除非有什么
+insane catalyst or something like that but the
+
+393
+00:25:05,784 --> 00:25:07,788
+疯狂的催化剂，但这种情况
+chances of that happening are very low and
+
+394
+00:25:07,788 --> 00:25:13,299
+看Delta是0.01，意味着99%概率到期无价值
+how do we know look at the delta of this it's a 0.01 which means this has a 99 chance of pretty much expiring
+
+395
+00:25:13,800 --> 00:25:15,584
+意味着99%会作废到期
+out the money also a good strike to
+
+396
+00:25:15,584 --> 00:25:17,368
+也是个好行权价，但卖这个
+sell but you know this is pointless you're
+
+397
+00:25:17,368 --> 00:25:18,260
+只能收1美元权利金
+only going to collect
+
+398
+00:25:18,260 --> 00:25:26,958
+能拿到1美元权利金，但手续费太高，交易反而亏钱
+a dollar in credit which is ridiculous which means you're going to make one dollar you'd have to sell so many of these that your commission would actually mean you'd lose money on the trade but in this case
+
+399
+00:25:26,960 --> 00:25:32,660
+但手续费会让你亏损，而我之前卖这个看跌期权时
+right here at the time when i sold this call so at the time i sold this put earlier today collected
+
+400
+00:25:32,660 --> 00:25:34,306
+收的权利金足够值回票价
+enough credit to make it worth it
+
+401
+00:25:34,306 --> 00:25:36,422
+像我之前说的，我们跳到选项策略
+and as i mentioned if we jump to uh
+
+402
+00:25:36,422 --> 00:25:38,538
+看看它在期权链上的表现
+the options strat and we look at it on
+
+403
+00:25:38,538 --> 00:25:43,477
+我今天早些时候卖空这个，价格大概在这里
+the chain we can see how is this doing right now so i shorted this earlier today for around here and
+
+404
+00:25:43,480 --> 00:25:45,365
+现在已经能卖到
+you can see it's already going for
+
+405
+00:25:45,365 --> 00:25:47,519
+23美元了，明天可能触发止盈目标
+23 bucks so probably hitting the profit target tomorrow
+
+406
+00:25:47,519 --> 00:25:49,942
+即使苹果决定
+and again even if apple decides to even if
+
+407
+00:25:49,942 --> 00:25:54,789
+苹果没高开，或平开，甚至回落
+apple decides not to gap up or if it just opens flat or even if it comes back
+
+408
+00:25:55,060 --> 00:25:57,364
+甚至明天回落到这个位置
+down to about here tomorrow the position will still be
+
+409
+00:25:57,364 --> 00:25:59,668
+头寸仍然是盈利的
+green all it has to do is just hover around
+
+410
+00:25:59,668 --> 00:26:01,511
+只要它在这个区间盘整
+here and even if it came down to
+
+411
+00:26:01,511 --> 00:26:05,198
+即使跌到这儿，我的盈亏仍是绿的
+here it will still be green or at least i'll my pnl will still be green
+
+412
+00:26:05,200 --> 00:26:08,080
+如果它整天待在那个价位
+and then if it stayed all day at that level i'll still
+
+413
+00:26:08,080 --> 00:26:10,480
+我仍能赚到和现在差不多的收益率
+end up being up almost about the same percent that
+
+414
+00:26:10,480 --> 00:26:12,400
+苹果只需要在周五早上
+as i am now and then if all
+
+415
+00:26:12,400 --> 00:26:15,280
+轻微反弹
+apple had to do is just bounce slightly early on friday morning
+
+416
+00:26:15,280 --> 00:26:17,542
+我肯定会平仓，但更可能的是
+in which i'll definitely be closing the trade but i'm more than
+
+417
+00:26:17,542 --> 00:26:19,427
+我明天就平仓，因为
+likely going to close the trade tomorrow because again it's
+
+418
+00:26:19,427 --> 00:26:20,369
+它快触及50%的止盈目标了
+hitting about the 50 profit target
+
+419
+00:26:20,369 --> 00:26:23,009
+或者我会等一下，看能不能
+or i'm going to try and hold out to see if i can get
+
+420
+00:26:23,200 --> 00:26:25,321
+从交易里拿到68%的收益
+68 out of the trade but either way great way
+
+421
+00:26:25,321 --> 00:26:27,207
+这是构建小账户的好方法 因为如果你
+to build a small account because if you
+
+422
+00:26:27,207 --> 00:26:30,743
+频繁做这种交易 它们大概有
+take because if you take a lot of trades like this and they have about
+
+423
+00:26:30,980 --> 00:26:33,856
+如果你学会解读希腊字母 或者
+depending on when you learn how to read the greeks or if
+
+424
+00:26:33,856 --> 00:26:36,252
+知道何时开仓 何时
+you know where to open these trades or when to
+
+425
+00:26:36,252 --> 00:26:38,648
+开仓 或者如何正确解读期权链
+open these trades or how to read the options chain
+
+426
+00:26:38,648 --> 00:26:45,598
+你的胜率可以达到65%到75% 这种收费组合
+properly you can end up having a win rate of close to about 65 to 75 percent running these types of credit spreads so it means if you take four trades
+
+427
+00:26:46,080 --> 00:26:48,954
+如果你做4笔交易 其中1笔亏损
+like this and you lose on one and you lose on half
+
+428
+00:26:48,954 --> 00:26:51,349
+亏损金额是权利金的一半
+of your credit or even if you risk the full
+
+429
+00:26:51,349 --> 00:26:52,786
+甚至全额亏损权利金
+credit you can still end up
+
+430
+00:26:52,786 --> 00:26:56,618
+长期下来仍能盈利 只要多做交易
+being profitable over the long term if you take a lot of trades versus every time
+
+431
+00:26:56,620 --> 00:26:59,284
+而每次买看涨期权 如果苹果今天跌到
+you try to buy a call because if apple came down to
+
+432
+00:26:59,284 --> 00:27:01,282
+440美元 我买看涨期权 可能已经被止损了
+440 today and i bought a call i probably would
+
+433
+00:27:01,282 --> 00:27:02,614
+猜猜怎么了 对吧
+have stopped out guess what right
+
+434
+00:27:02,614 --> 00:27:05,278
+看看这个价格走势 是不是很合理
+here right doesn't this make sense because look at this price action
+
+435
+00:27:05,500 --> 00:27:08,238
+假设我在这里买看涨期权 止损可能设在
+assuming i bought the call here my stop loss might have been
+
+436
+00:27:08,238 --> 00:27:10,063
+更低的位置 我们已经离初始控制点（VPAC）
+the lower day we're ready we're ready pretty
+
+437
+00:27:10,063 --> 00:27:13,258
+很远了 我都没想到会跌这么多
+far below the vpoc i was actually surprised that we even went this far
+
+438
+00:27:13,260 --> 00:27:15,806
+但假设我在这里买入 如果
+below the vpoc but assuming i bought here if i
+
+439
+00:27:15,806 --> 00:27:18,352
+我买的是看涨期权 比如说
+bought the if i bought a call let's just say
+
+440
+00:27:18,352 --> 00:27:19,879
+买142美元行权价的看涨期权
+i bought the 142 calls the 142 uh
+
+441
+00:27:19,879 --> 00:27:23,443
+苹果走出这种行情 我的盈亏会
+strike price and apple did this my p&l would have looked a little
+
+442
+00:27:23,700 --> 00:27:26,386
+先变绿 再
+green and then this would have happened it would have
+
+443
+00:27:26,386 --> 00:27:29,072
+变得非常难看 因为这是周期权
+looked very red because these are weekly options so between
+
+444
+00:27:29,072 --> 00:27:31,221
+从这里到这里 不仅时间
+here to here not only did almost not
+
+445
+00:27:31,221 --> 00:27:33,638
+过了1-2小时
+only did an hour or two hours however much
+
+446
+00:27:33,640 --> 00:27:36,100
+价格还逆我而行
+time passed by but then price has also gone against me i
+
+447
+00:27:36,100 --> 00:27:38,150
+我会被止损出局 然后
+would have taken this as a stop loss and then
+
+448
+00:27:38,150 --> 00:27:39,380
+苹果之后又
+later in the day apple would
+
+449
+00:27:39,380 --> 00:27:41,840
+反弹了 我只能干坐着
+have done this and then i would have just been sitting here
+
+450
+00:27:41,840 --> 00:27:43,403
+沮丧不已
+pretty upset pretty frustrated you know
+
+451
+00:27:43,403 --> 00:27:45,487
+交易中的心理战
+the the psychological battles as it is as
+
+452
+00:27:45,487 --> 00:27:47,571
+和作为交易者的身份一样
+being a trader versus being able to mix
+
+453
+00:27:47,571 --> 00:27:51,218
+我并不是说你只能做
+up your trading style and i'm not necessarily saying you only need to do
+
+454
+00:27:51,220 --> 00:27:55,220
+收费组合或付费组合 今天视频只讲了收费组合
+spreads or credit spreads or debit spreads we only talked about credit spreads in today's video by the
+
+455
+00:27:55,220 --> 00:27:57,624
+但我也不是说你只能做这个
+way but i'm not saying you only need
+
+456
+00:27:57,624 --> 00:28:00,028
+我只是想告诉你
+to do this i'm just saying understand that
+
+457
+00:28:00,028 --> 00:28:06,639
+还有其他方式可以交易同样的想法 尤其是期权交易者
+there are other ways to trade the same trade idea and there's different ways to execute it especially if you're an options
+
+458
+00:28:06,640 --> 00:28:09,417
+做这些交易时你会更冷静
+trader and you can also be a lot more calm running these
+
+459
+00:28:09,417 --> 00:28:11,499
+回到Discord看一下
+types of trades because so if we jump back
+
+460
+00:28:11,500 --> 00:28:13,797
+我实际上在这儿成交了
+to the discord we can actually see i ended up
+
+461
+00:28:13,797 --> 00:28:15,635
+成交价是1.39美元
+saying right here i got filled at a
+
+462
+00:28:15,635 --> 00:28:20,919
+这是个设好就忘的交易 苹果要么在140上面
+dollar 39 and it's a set it and forget it type of trade for me either apple's above 140 or not we'll check back in
+
+463
+00:28:21,380 --> 00:28:23,627
+要么不在 我周五再来看
+on friday i made my size something i don't really
+
+464
+00:28:23,627 --> 00:28:25,650
+我已调整好仓位大小
+care if i even if i take the 100 max
+
+465
+00:28:25,650 --> 00:28:31,044
+我并不打算承担这100美元的最大亏损
+loss on now i'm not intending to take the 100 max loss but i'm just making a point that even if i did take the 100
+
+466
+00:28:31,720 --> 00:28:34,502
+我并不想亏100美元
+max loss my position size is fine and for you
+
+467
+00:28:34,502 --> 00:28:37,284
+但我的意思是 即使亏了
+if you took this trade and you only took one
+
+468
+00:28:37,284 --> 00:28:47,022
+作为期权交易者，60美元的亏损不会对你心理造成太大冲击
+and your max loss is 60 bucks you're okay let's just say you have a two thousand dollar account a 60 loss when you're an options trader is not going to really damage you psychologically especially when
+
+469
+00:28:47,580 --> 00:28:49,470
+如果你做这笔交易
+you have the potential to make upwards of like 30
+
+470
+00:28:49,470 --> 00:28:51,150
+只做1手 最大亏损60美元
+bucks we'll say on this and you take
+
+471
+00:28:51,150 --> 00:28:55,770
+对2000美元的账户来说 60美元亏损
+this and you have seven out of ten times you're going to be right on this the numbers end up working out
+
+472
+00:28:55,980 --> 00:28:57,486
+作为期权交易者不会伤到你
+is all i'm trying to say here so
+
+473
+00:28:57,486 --> 00:28:58,992
+而你还有可能赚30美元
+so to avoid myself from rambling too much
+
+474
+00:28:58,992 --> 00:29:03,699
+我本想录个短视频，但现在都不知道录了多久了
+i told myself this is going to be a short video i have no idea how long it's been already since i've been recording so
+
+475
+00:29:03,700 --> 00:29:07,820
+你做10次有7次能赢 数字上是划算的
+i'm going to cut it right here and i'll catch you guys in the next one thanks for watching later
+
+===== END AFTER_TRANSLATE =====

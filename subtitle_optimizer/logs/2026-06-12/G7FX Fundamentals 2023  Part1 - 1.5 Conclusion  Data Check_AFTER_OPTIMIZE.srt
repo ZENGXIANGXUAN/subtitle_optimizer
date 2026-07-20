@@ -1,0 +1,5357 @@
+===== AFTER_OPTIMIZE (1071 entries) =====
+1
+00:00:00,000 --> 00:00:05,580
+好，大家，欢迎回到下一节课。希望你刚才休息得不错。
+Okay everyone, welcome back to the next section. Hopefully you had a nice little break.
+
+2
+00:00:06,580 --> 00:00:09,860
+有些章节确实有点长，我理解这一点。
+Obviously some of these sections can be quite long, I appreciate that.
+
+3
+00:00:10,220 --> 00:00:11,564
+现在我们
+So here we
+
+4
+00:00:11,564 --> 00:00:15,596
+在这节课里，
+are. Anyway, what we're going to be doing in
+
+5
+00:00:15,596 --> 00:00:19,180
+我们要证明给自己看：
+this section, we're going to be proving to
+
+6
+00:00:19,180 --> 00:00:26,797
+每一年的每一个月，这些经济数据都存在可重复模式。
+ourselves that every single month of every single year, there's a repeatable pattern to these data points.
+
+7
+00:00:26,800 --> 00:00:28,825
+这一点我必须强调，
+I cannot stress this enough,
+
+8
+00:00:28,825 --> 00:00:32,470
+我之所以反复强调这个，
+and the reason I go on and on about
+
+9
+00:00:32,470 --> 00:00:36,520
+是因为至今我仍惊讶于
+this, it actually still amazes me to this day how
+
+10
+00:00:36,520 --> 00:00:47,860
+它对我的改变有多大，尤其是我在投行时，想理解经济数据，连我都感到应接不暇。
+much this changed things for me, especially when I was in investment banking and I was trying to understand economic data, it was so overwhelming even for me.
+
+11
+00:00:49,420 --> 00:00:52,980
+而且从来没人给我解释过，我也不知道为什么。
+And I never got explained this to me, and I just don't know why.
+
+12
+00:00:52,980 --> 00:00:57,043
+这么多年做机构交易，我从未在任何地方见过这个方法，
+I've never seen this anywhere, even in all my years
+
+13
+00:00:57,043 --> 00:01:00,293
+也从来没人告诉我，
+of institutional trading, no one ever told me,
+
+14
+00:01:00,293 --> 00:01:08,419
+嘿，你应该这样规划：第一周有这组数据，
+hey, this is how you should lay things out. First week of the month, you got this piece of data.
+
+15
+00:01:08,600 --> 00:01:09,694
+第二周一定是通胀数据。
+Second week, always inflation.
+
+16
+00:01:09,694 --> 00:01:14,619
+我当时完全乱了套，可能你没乱，但我认为大多数人都乱了。
+I was all over the place, and maybe you're not, but I think the majority of people are.
+
+17
+00:01:14,620 --> 00:01:21,240
+你有没有提前一个月想过？嘿，下个月第二周有通胀数据。
+Are you ever thinking a month ahead? Hey, next month, I know in the second week I've got inflation data.
+
+18
+00:01:21,340 --> 00:01:23,987
+大多数人连这样想都不会。
+Most people don't even begin to think that
+
+19
+00:01:23,987 --> 00:01:28,619
+而这会让你远远领先他人。
+way, and this is going to stand you so far ahead of anyone else.
+
+20
+00:01:29,620 --> 00:01:31,573
+别说散户了，
+Forget about retail, which I always
+
+21
+00:01:31,573 --> 00:01:34,177
+就连机构交易者，
+go on about. Institutional even. You know, most
+
+22
+00:01:34,177 --> 00:01:36,781
+嗯，不能说是大多数，但你懂的，
+guys, I wouldn't say most, but you know,
+
+23
+00:01:36,781 --> 00:01:45,897
+显然最顶尖的那批人知道。但很多机构交易者也是一周一周走，其实早该提前规划好。
+obviously the very best, they're aware. But a lot of even institutional traders take it week by week and all of that, and should know well in advance.
+
+24
+00:01:45,980 --> 00:01:47,427
+过几周就有通胀数据了。
+I've got inflation in a couple
+
+25
+00:01:47,427 --> 00:01:49,357
+的周后。好，现在不用担心，
+of weeks coming up. All right, I don't
+
+26
+00:01:49,357 --> 00:01:50,804
+到时候再关注就行。
+need to worry about it right
+
+27
+00:01:50,804 --> 00:01:57,077
+市场可能会在第一周末到第二周初开始关注。
+now. That's when I'll start to focus on it. Market might start to focus on it on, you know, end of week one into week two.
+
+28
+00:01:57,080 --> 00:01:58,970
+这会彻底改变你分析事物的方式，
+It's just going to be completely change
+
+29
+00:01:58,970 --> 00:02:01,130
+而这正是我
+the dial for you to start looking at
+
+30
+00:02:01,130 --> 00:02:03,020
+想要传达的
+things like this, and that's why I
+
+31
+00:02:03,020 --> 00:02:10,580
+想做这个部分，因为仅仅告诉你还不够。我不希望你只凭我的话就相信。
+wanted to do this section, because it's not good enough for me to just tell you this. I don't want you to just take my word for it.
+
+32
+00:02:10,940 --> 00:02:13,737
+我要亲自给你展示这个模式有多神奇，
+I want to actually show you how incredible
+
+33
+00:02:13,737 --> 00:02:15,834
+以及我讲的内容有多真实。
+this is and just how true
+
+34
+00:02:15,834 --> 00:02:20,379
+我希望你自己去验证。
+what I'm telling you is. I want you to prove it to yourself.
+
+35
+00:02:20,380 --> 00:02:23,218
+第三点很重要，就像我
+And number three, it is important, as I
+
+36
+00:02:23,218 --> 00:02:26,056
+在进阶和基础课里说的，
+said in Pro and Foundation, that everything you
+
+37
+00:02:26,056 --> 00:02:28,894
+你做的每件事，都要自己核对。千万别盲信，
+do, you check for yourself. Never take, even
+
+38
+00:02:28,894 --> 00:02:42,377
+甚至包括我。我都不希望你只听我的。反复验证你做的每件事，确保正确，否则你怎么敢用自己的钱交易？
+me, I'm putting myself down here. Do not take my word for anything. Double, triple check everything that you're doing and make sure it's correct, because otherwise, how are you going to put your own money on it?
+
+39
+00:02:42,380 --> 00:02:43,753
+这简直让人难以置信。
+You know, it's unbelievable.
+
+40
+00:02:43,753 --> 00:02:46,499
+我一次次看到这种情况，
+I see this time and time again, especially
+
+41
+00:02:46,499 --> 00:02:49,245
+尤其是在散户群体中，
+in the retail sector, where people are just
+
+42
+00:02:49,245 --> 00:02:56,798
+很多人只是听信他人，就拿自己的钱去交易。这太疯狂了。自己验证才对。
+take people's word for things and then start trading their money on it. It's completely crazy. I mean, check things for yourself.
+
+43
+00:02:57,100 --> 00:02:59,383
+你的优势在于，
+And the advantage you've got here is I'm
+
+44
+00:02:59,383 --> 00:03:01,095
+我不属于那种人。
+not one of those type of
+
+45
+00:03:01,095 --> 00:03:04,519
+所以，希望你会特别喜欢这门课程。
+people. And that's why, obviously, hopefully you will love, love this course.
+
+46
+00:03:04,520 --> 00:03:06,765
+这真的是基础分析领域最好的课程之一，
+And it really is one of the best
+
+47
+00:03:06,765 --> 00:03:08,448
+因为
+courses ever on fundamentals is because
+
+48
+00:03:08,448 --> 00:03:13,218
+我不会只让你做练习，
+I'm not just going to say to you, hey, here's an exercise I want you to do.
+
+49
+00:03:13,280 --> 00:03:16,860
+我们会一起来完成。这样你就能跟着一步步来。
+We're going to do it together. OK, so you can kind of go through it.
+
+50
+00:03:16,860 --> 00:03:20,600
+你可以随时暂停，自己试试，然后再回到课程。
+You can pause if you want and try it for yourself. Come back to it.
+
+51
+00:03:20,960 --> 00:03:24,560
+我会和你一起完成整个过程。放心，确保你做得正确。
+I'm going to do the entire thing with you. Don't worry. So you know that you're doing it correctly.
+
+52
+00:03:25,640 --> 00:03:27,063
+那我们开始吧。
+So let's get on with
+
+53
+00:03:27,063 --> 00:03:28,486
+首先，快速说明一下，
+it. Now, first thing, just
+
+54
+00:03:28,486 --> 00:03:31,618
+我把贸易余额放在了周五。
+very quickly, I put the trade balance here on the Friday.
+
+55
+00:03:31,620 --> 00:03:36,620
+但我忘了说，通常它会在周四左右发布。
+And I forgot to say that normally is here on earlier in the week around the Thursday.
+
+56
+00:03:36,740 --> 00:03:37,547
+只是我
+But I just I've
+
+57
+00:03:37,547 --> 00:03:38,556
+特别讲究整齐。
+got this thing about everything
+
+58
+00:03:38,556 --> 00:03:39,766
+我喜欢东西井井有条。
+being neat. I like things being
+
+59
+00:03:39,766 --> 00:03:43,398
+我不想把贸易余额和核心PCE放在同一行。
+neat. And I just didn't want to put the trade balance on the same line as core PCE.
+
+60
+00:03:44,080 --> 00:03:45,383
+我们大概
+And we're just roughly
+
+61
+00:03:45,383 --> 00:03:47,990
+是这样。我们知道贸易余额通常会在
+here. We know trade balance will be in
+
+62
+00:03:47,990 --> 00:03:49,945
+第四周发布，因为它大概是
+week four typically because it's about
+
+63
+00:03:49,945 --> 00:03:55,486
+我想是说30天，对吧？看日程安排。对，大约在月度结束后30天左右。
+I think it said 30 days, didn't it? Here, the scheduling. Yeah. So about 30 days after month ends.
+
+64
+00:03:56,360 --> 00:03:58,340
+所以我们知道它会在月底发布。
+So we know it's going to be at the end of the month.
+
+65
+00:03:58,480 --> 00:03:59,915
+不管你把它放在
+You know, whether you put it
+
+66
+00:03:59,915 --> 00:04:01,829
+周四、周三、周四还是周五，都没关系。通常
+Thursday, Wednesday, Thursday, Friday, it's fine. And typically
+
+67
+00:04:01,829 --> 00:04:05,418
+会是周四。我把它放在这里，只是不想重叠。
+it will be a Thursday. I just put it here because I don't want overlaps.
+
+68
+00:04:05,660 --> 00:04:07,753
+我想让这个安排
+I want to make this as nice,
+
+69
+00:04:07,753 --> 00:04:09,547
+尽可能整齐、紧凑。这样
+neat, compact as possible. So it's
+
+70
+00:04:09,547 --> 00:04:11,939
+我更容易记住。
+easy for me to retain in my memory.
+
+71
+00:04:12,680 --> 00:04:14,274
+这也是我希望
+And that's what I'm for you guys
+
+72
+00:04:14,274 --> 00:04:15,413
+为大家
+as well and ladies as
+
+73
+00:04:15,413 --> 00:04:17,919
+做的。所以我想这样安排。
+well. And that's why I wanted to do it like this.
+
+74
+00:04:18,160 --> 00:04:21,339
+刚才只是个小插曲。
+So that was just a little side note I was making.
+
+75
+00:04:21,880 --> 00:04:28,940
+现在我们来看正题，先别纠结这些边缘数据。
+So what we'll do, right, let's go through. Let's not worry too much about these periphery ones for now.
+
+76
+00:04:28,940 --> 00:04:36,040
+快速过一遍。坦白说，如果你之前没见过这个，
+Let's quickly fly through. And honestly, if you've not seen this before, your jaw is going to drop.
+
+77
+00:04:36,200 --> 00:04:42,080
+你会想：这些年我怎么没按这种方式跟数据？
+You're going to be like, what have I been doing all these years not following data in this format?
+
+78
+00:04:42,220 --> 00:04:45,260
+这会为你打开一个全新的世界。
+It's going to really open up a whole world for you.
+
+79
+00:04:45,300 --> 00:04:50,120
+所以我真的很激动想展示这个模式是如何运作的。
+So I'm really excited to show you just how this actually happens.
+
+80
+00:04:50,240 --> 00:04:51,240
+你会感到非常惊讶
+And you'll just be amazed
+
+81
+00:04:51,240 --> 00:04:52,640
+竟然没人用
+that no one looks at it in
+
+82
+00:04:52,640 --> 00:04:56,240
+这种方式看数据。这真的让我震惊，所以我才不停强调。
+this way. It is actually, it just amazes me and that's why I keep going on about it.
+
+83
+00:04:57,360 --> 00:04:59,420
+我们刚看了1月，但再复习一遍。
+We've done January, but let's just do it again.
+
+84
+00:04:59,540 --> 00:05:02,300
+我们要做的是：把全年都过一遍，对吧？
+So this is what we're going to do. We're going to do the whole year, right?
+
+85
+00:05:02,440 --> 00:05:06,580
+建议你关掉低影响性的新闻。
+I want you to switch off the low impact news.
+
+86
+00:05:06,760 --> 00:05:10,280
+只保留美国或你关注国家的数据，显然。
+Just got the US on there or whatever country it is that you look at, obviously.
+
+87
+00:05:10,280 --> 00:05:13,260
+第一周，对吧？
+First week of the month, right?
+
+88
+00:05:13,360 --> 00:05:14,060
+我们之前说什么？
+What did we say?
+
+89
+00:05:14,380 --> 00:05:20,160
+第一周我们预期什么？制造业、服务业和非农数据。
+What are we expecting in the first week of the month? Manufacturing, services and paywalls.
+
+90
+00:05:20,500 --> 00:05:21,980
+这是1月的第一周。
+This is the first week of January.
+
+91
+00:05:22,520 --> 00:05:25,540
+那我要回到任意一年的年初，哪一年都行
+So I'm going to go back to the start of any year. It doesn't matter.
+
+92
+00:05:25,820 --> 00:05:33,540
+我现在在2021、22年的元旦，我在元旦这天做这件事，听起来有点可怜
+I'm obviously here in 2021, 22, New Year's. I'm doing this on New Year's Day, as sad as it is.
+
+93
+00:05:33,540 --> 00:05:39,300
+但在元旦前后，元旦过后，我就能看到下一整年的数据了
+But around New Year's, the day after New Year's, so obviously I've got the whole year of next year.
+
+94
+00:05:39,420 --> 00:05:41,663
+如果你在年中，可以回溯到
+But if you're in the middle of the year, you can go
+
+95
+00:05:41,663 --> 00:05:44,279
+当年年初或前一年，都没关系
+back to the start of the year or the year before. It doesn't matter.
+
+96
+00:05:44,600 --> 00:05:49,620
+据我所知，经济数据的发布一直是这样的
+This, for as long as I know, this is how economic data has fallen.
+
+97
+00:05:49,920 --> 00:05:53,820
+好，每月第一周是制造业数据
+Okay, so the first week of the month, manufacturing.
+
+98
+00:05:53,980 --> 00:05:54,440
+你能看到吗？
+Can you see it?
+
+99
+00:05:54,520 --> 00:05:55,040
+能，我们能看到
+Yes, we do.
+
+100
+00:05:55,420 --> 00:05:59,840
+制造业、服务业，对了，服务业、非农
+Manufacturing, services. There we go. Services, payrolls.
+
+101
+00:05:59,940 --> 00:06:01,000
+对，非常感谢
+Yep, thank you very much.
+
+102
+00:06:01,000 --> 00:06:03,280
+好，数据发布时间和我预期的一模一样
+Okay, so it fell exactly as I expected.
+
+103
+00:06:03,540 --> 00:06:06,931
+唯一没在周一发布的原因
+The only reason that it didn't fall on a Monday
+
+104
+00:06:06,931 --> 00:06:09,643
+是因为这是元旦周
+is because this is a New Year's week.
+
+105
+00:06:09,643 --> 00:06:12,016
+显然，因为有
+Obviously, you know, with it being the
+
+106
+00:06:12,016 --> 00:06:18,798
+银行假期延迟，不管什么原因，数据晚发布了一个工作日，可能因为假期等
+bank holiday delay. And for whatever reason, the data was released one business day later, probably because of holidays, etc.
+
+107
+00:06:19,540 --> 00:06:22,280
+但在正常月份会恢复正常
+But it will revert back to normal in a normal month.
+
+108
+00:06:22,440 --> 00:06:24,540
+但你可以自己验证
+But essentially, you can see it for yourself.
+
+109
+00:06:25,040 --> 00:06:26,760
+第一周：制造业、服务业、非农
+Manufacturing, services, payrolls, first week.
+
+110
+00:06:27,080 --> 00:06:28,260
+我们来看第二周
+Let's go to the second week.
+
+111
+00:06:29,260 --> 00:06:30,520
+预期是CPI
+We're expecting CPI.
+
+112
+00:06:30,620 --> 00:06:32,540
+实际呢？CPI，对吧？
+And what do we have? CPI, okay?
+
+113
+00:06:33,180 --> 00:06:36,980
+零售销售数据提前了一天
+Retail sales has become a day early.
+
+114
+00:06:37,120 --> 00:06:42,720
+可能是因为那周的安排
+It's because of the way either the week fell or the Census
+
+115
+00:06:42,720 --> 00:06:46,920
+或者人口普查局提前整理好了数据
+Bureau has managed to collate the data slightly early.
+
+116
+00:06:47,020 --> 00:06:50,040
+他们会处理的，我们稍后会详细讲，别急
+So what they'll do, they'll obviously... And we're going to go through this. Don't worry.
+
+117
+00:06:50,040 --> 00:06:55,620
+后面还有更精彩的数据分析
+We've got some amazing stuff still to come in terms of the data.
+
+118
+00:06:56,180 --> 00:07:01,300
+人口普查局会整理这些数据，有时可能提前一天发布
+The Census Bureau will collate all this data. And sometimes they might get it a day early.
+
+119
+00:07:01,380 --> 00:07:07,620
+看这里，14、16、16、17号，可能会差一天
+You can see here. 14, 16, 16, 17. It will vary by a day or so.
+
+120
+00:07:07,620 --> 00:07:09,022
+顺便说一下
+And by the way, I'm just
+
+121
+00:07:09,022 --> 00:07:11,593
+我要，如果你不介意的话，把这一行删掉
+going to, if you don't mind, I'm just going to delete
+
+122
+00:07:11,593 --> 00:07:17,438
+因为我觉得可能覆盖了下面这个单元格，有点烦人。
+that row because I think I was covering a little bit of this cell just at the bottom. It's just bugging me a little bit.
+
+123
+00:07:18,440 --> 00:07:19,260
+好，这样就对了。
+So there we go.
+
+124
+00:07:19,260 --> 00:07:23,980
+所以，像我刚才说的，你可以看到在这个特定的
+So yeah, like I said, you can see that on this particular
+
+125
+00:07:23,980 --> 00:07:31,060
+月份里，数据并没有像往常一样在第三周发布，而是提前了一天，对吧？
+month, the data, instead of it being in the following week, week three, it's a day early, okay?
+
+126
+00:07:31,060 --> 00:07:34,500
+这种情况偶尔会发生，非常非常罕见。
+And that's going to happen from time to time. Very, very rare.
+
+127
+00:07:34,620 --> 00:07:37,562
+有时只是因为，你可以看到这里
+It can just be sometimes because you can see here
+
+128
+00:07:37,562 --> 00:07:39,621
+第一个工作日落在了
+the way the first fell towards the
+
+129
+00:07:39,621 --> 00:07:45,799
+月底。可能是因为新年期间，或其他各种各样的原因。
+end of the month. It can be because of the new year period. It can be very, very variety of reasons.
+
+130
+00:07:46,500 --> 00:07:49,541
+人口普查局很可能提前拿到了
+The Census Bureau more than likely managed to get the
+
+131
+00:07:49,541 --> 00:07:52,582
+数据，因为他们依赖的是，你懂的，他们发放
+data because they're relying on, you know, they send out
+
+132
+00:07:52,582 --> 00:07:57,143
+这些调查问卷之类的，来收集所有散户
+these surveys and whatever it is to get all the data in for what retail
+
+133
+00:07:57,143 --> 00:08:10,219
+销售数据。但如果大家都按时提交，数据恰好在周末前到齐，何必等呢？否则就得等三天，下周才能发布。
+sales were. But once everyone gives their submissions in and if they come in on time, you know, and it's coming just before kind of the weekends, why wait? Because then you have to wait three days and do it the following week.
+
+134
+00:08:10,220 --> 00:08:15,360
+所以偶尔数据提前到来，你会在第二周看到。
+So on the odd occasion, if the data comes in early, you'll see it in the second week.
+
+135
+00:08:15,420 --> 00:08:19,240
+但你会发现，通常散户销售数据会在第三周发布。
+But as you're going to see, typically it will be the third week that you get retail sales.
+
+136
+00:08:19,600 --> 00:08:26,640
+但有了这个模板，我立刻就知道，哦，散户销售数据在第二周发布了。
+But then we know straight away, right, by having this template, hey, I had retail sales in week two.
+
+137
+00:08:26,640 --> 00:08:31,380
+所以下周，经济数据会非常清淡，对吧？
+So next week, it's going to be very quiet in terms of economic data, right?
+
+138
+00:08:31,520 --> 00:08:33,900
+可能有FOMC会议，但仅此而已。
+I could potentially have FOMC, but that's going to be it.
+
+139
+00:08:34,200 --> 00:08:38,799
+不用担心散户销售数据。这甚至不是坏事。
+I don't need to worry about retail sales. So it's not even a bad thing.
+
+140
+00:08:39,020 --> 00:08:41,036
+事实上这是好事，因为
+In fact, it's a good thing because,
+
+141
+00:08:41,036 --> 00:08:43,340
+我通常会在第三周
+you know, I normally get retail sales in
+
+142
+00:08:43,340 --> 00:08:46,220
+拿到这个月的散户销售数据，不管是什么原因。
+week three for this particular month because of whatever reason.
+
+143
+00:08:46,360 --> 00:08:49,660
+可能是新年或其他原因，数据提前几天在周五发布了。
+Maybe it was a new year or whatever. It's come out a couple of days early on a Friday.
+
+144
+00:08:49,780 --> 00:08:51,800
+好，下周没有散户销售数据。
+Hey, next week, no retail sales.
+
+145
+00:08:51,800 --> 00:08:58,340
+好的，这个月的下一周，看，非常清淡的一周。
+Okay, so in this particular month, the following week, there you go. Very quiet week.
+
+146
+00:08:58,460 --> 00:09:02,260
+好的，你立刻就知道这是清淡的一周。
+Okay, you knew straight away it was going to be a quiet week.
+
+147
+00:09:02,760 --> 00:09:04,120
+甚至都不需要看日历，对吧？
+You don't even need the calendar, right?
+
+148
+00:09:04,180 --> 00:09:06,310
+然后第四周，不用看
+And then week four, without
+
+149
+00:09:06,310 --> 00:09:08,440
+GDP数据，我知道
+even looking, GDP. I know
+
+150
+00:09:08,440 --> 00:09:10,570
+它肯定会在那儿。
+it's going to be there.
+
+151
+00:09:10,570 --> 00:09:16,960
+但愿如此。对，就在那里。看到了吧，提前GDP，就在那里。像钟表一样准，伙计们。
+Hopefully it is. Yeah, it's there. There you go. Advanced GDP, there. Like clockwork, guys.
+
+152
+00:09:16,960 --> 00:09:23,600
+好，我无法告诉你这对你理解数据有多大帮助。
+Okay, I cannot tell you how unbelievable this is going to be for you understanding data.
+
+153
+00:09:23,840 --> 00:09:29,960
+再也不用依赖那些只是数据堆砌的日历了。
+No more reliance on all these data calendars that are just data dumps, basically.
+
+154
+00:09:30,160 --> 00:09:34,600
+不，现在我们要以专业的方式来看待这些数据，对吧？
+No, we're going to look at things in a proper professional manner now, right?
+
+155
+00:09:34,640 --> 00:09:37,480
+我们应该知道这些，不用特意来查。
+We should know this without having to look here.
+
+156
+00:09:37,820 --> 00:09:39,860
+对，下周就是GDP。我早知道它要来。
+Yep, GDP next week. I already know it's coming.
+
+157
+00:09:40,260 --> 00:09:44,640
+还有FOMC会议。先忽略FOMC，别担心。
+And then we've got the FOMC. Let's ignore the FOMC for now. Don't worry.
+
+158
+00:09:44,640 --> 00:09:46,172
+我们要自己构建
+We're going to build our own
+
+159
+00:09:46,172 --> 00:09:47,704
+FOMC日历。你能看到
+FOMC calendar. You can see it
+
+160
+00:09:47,704 --> 00:09:50,258
+那里，红色标签。能看到FOMC在这里吗？
+there, the red tab. Can you see the FOMC here?
+
+161
+00:09:52,240 --> 00:09:53,320
+1月27日。
+27th of January.
+
+162
+00:09:53,940 --> 00:09:54,760
+就在那里。
+So there we go.
+
+163
+00:09:55,320 --> 00:09:56,280
+1月27日。
+27th of January.
+
+164
+00:09:56,540 --> 00:09:57,820
+好，我知道它要来了。
+Okay, so I know it's coming.
+
+165
+00:09:58,560 --> 00:10:00,740
+就像我说的，时间可能会有变化。
+It's just like I said, it can vary.
+
+166
+00:10:01,400 --> 00:10:03,280
+确保我没挡住什么。
+Just make sure I'm not blocking anything here.
+
+167
+00:10:03,820 --> 00:10:05,415
+FOMC全年
+It can vary the FOMC
+
+168
+00:10:05,415 --> 00:10:07,010
+可能会有变化。他们通常
+throughout the year. They typically
+
+169
+00:10:07,010 --> 00:10:10,839
+一年开8次会，我想是的，8次。
+meet eight times, I think it is. Yeah, eight times a year.
+
+170
+00:10:11,520 --> 00:10:14,960
+通常在第三周或第四周，就像我之前说的。
+The weeks will typically be week three, week four, as I've said.
+
+171
+00:10:14,960 --> 00:10:18,460
+所以在这个月你能看到，是在第四周。
+So you can see it here in this particular month. It was week four.
+
+172
+00:10:18,600 --> 00:10:21,960
+但我喜欢单独列出来，因为时间可能有点变化。
+But I like to keep it just separate because it can vary a little bit.
+
+173
+00:10:22,600 --> 00:10:25,840
+就像我提到的，我干脆把它列出来。FOMC可能变化。
+And as I mentioned, I just put it there anyway. FOMC can vary.
+
+174
+00:10:25,940 --> 00:10:30,860
+这个月刚好在第四周，抱歉，刚好在第四周。
+This particular month, it just happened to be on, excuse me, the week four.
+
+175
+00:10:31,700 --> 00:10:34,200
+所以，这真的很有意思。
+And therefore, you know, it's fascinating.
+
+176
+00:10:34,360 --> 00:10:36,862
+在正常月份，如果FOMC从不落在第四周，
+In a normal month, if the FOMC never
+
+177
+00:10:36,862 --> 00:10:38,738
+那么可能会有更多关注在GDP上。
+fell on week four, then there'll
+
+178
+00:10:38,738 --> 00:10:42,178
+会有很多关注，或者说更多关注在GDP上。
+be a lot of attention or maybe more attention on GDP.
+
+179
+00:10:42,180 --> 00:10:48,320
+能看出FOMC确实落在第四周了吗？更多关注在FOMC上。
+Can you see the fact that FOMC did fall on week four? More attention is on FOMC.
+
+180
+00:10:48,660 --> 00:10:57,980
+能看出这安排有多井然有序吗？现在你能拥有多大优势，能完胜其他所有交易者，是不是？
+Can you see how amazingly organized, how much of an advantage you can now have over other, every trader really?
+
+181
+00:10:58,120 --> 00:11:02,680
+因为特别是机构交易者，散户不会这么想
+Because especially commercial traders, retail traders will not be thinking this way.
+
+182
+00:11:02,800 --> 00:11:04,020
+他们不会
+They will not be
+
+183
+00:11:04,020 --> 00:11:05,546
+去想，他们只会想，“我
+thinking, they'll be thinking, I
+
+184
+00:11:05,546 --> 00:11:07,072
+有这个，有那个”
+got this, I got that
+
+185
+00:11:07,072 --> 00:11:09,818
+下周，你知道，FOMC现在在下周
+next week. You know, FOMC is now next week.
+
+186
+00:11:10,120 --> 00:11:15,700
+其实，我知道GDP下周公布，但市场可能更关注FOMC
+So actually, I know GDP is coming next week, but the market's probably going to focus more on FOMC.
+
+187
+00:11:15,800 --> 00:11:19,580
+所以这个月，GDP发布可能没那么重要
+So this particular month, the GDP release may not be so important.
+
+188
+00:11:20,120 --> 00:11:22,620
+你看，你可以提前很久思考这些
+You see, you can start thinking about these things well in advance.
+
+189
+00:11:22,740 --> 00:11:26,000
+我可以在月初就知道，对吧？
+I can know this at the start of the month, right?
+
+190
+00:11:26,020 --> 00:11:28,740
+因为我能查FOMC日历，对吧？
+Because I can check my FOMC calendar, right?
+
+191
+00:11:28,860 --> 00:11:34,820
+我会查的，我会想，“好，这个月FOMC在27号，对吧？”
+I'll be checking that. I'll be thinking, okay, this month I've got FOMC on the 27th, right?
+
+192
+00:11:34,820 --> 00:11:38,020
+哦，这个月还有GDP，我们会这么做，别担心
+Oh, I've got GDP this month and we're going to do this, don't worry.
+
+193
+00:11:38,160 --> 00:11:42,860
+我们会提前6到8周来布局交易计划
+Well, we're going to start setting our stall out at eight, six, eight, seven, eight weeks in advance.
+
+194
+00:11:43,480 --> 00:11:47,206
+我们会提前几周知道第四周有
+We're going to know weeks in advance that this week four has
+
+195
+00:11:47,206 --> 00:11:49,690
+FOMC，而GDP可能不会
+FOMC and GDP will likely not have as
+
+196
+00:11:49,690 --> 00:11:55,279
+得到那么多关注，或者没有FOMC时GDP才会受关注，等等
+much attention or it doesn't have FOMC and therefore GDP will have attention, so on and so forth.
+
+197
+00:11:55,400 --> 00:11:58,320
+好，所以把这些规划好非常重要
+Okay, so that's why it's really important to have these laid out.
+
+198
+00:11:58,780 --> 00:11:59,780
+我们看二月
+Let's go to February.
+
+199
+00:12:00,040 --> 00:12:04,400
+第一周我们期待什么？制造业、服务业和非农，对吧？
+What are we expecting in the first week, right? Manufacturing services and payrolls.
+
+200
+00:12:04,820 --> 00:12:09,540
+实际得到什么？制造业、服务业和非农，对吧？
+What do we get? Manufacturing services and payrolls, okay?
+
+201
+00:12:10,280 --> 00:12:13,134
+如果不是这样，我就太丢人了
+I would be looking very silly if it didn't happen
+
+202
+00:12:13,134 --> 00:12:14,846
+但确实是这样
+that way, but it does. And
+
+203
+00:12:14,846 --> 00:12:17,129
+我知道是这样，而且这已经
+I know it does and it's happened for
+
+204
+00:12:17,129 --> 00:12:24,837
+持续多年、数十年，未来还会这样。当然，除非有剧变，你能应对，但不会有
+years, decades, and it will keep happening this way. Of course, unless there's a drastic change and obviously you can address that, but it's not going to.
+
+205
+00:12:24,920 --> 00:12:26,900
+好，这就是规律，这就是运作方式
+Okay, this is it. This is how it works.
+
+206
+00:12:26,900 --> 00:12:38,660
+制造业、服务业、非农，周一、周三、周五，制造业周一，服务业周三，非农周五
+Manufacturing services, payrolls, Monday, Wednesday, Friday, manufacturing Monday, services Wednesday, and payrolls Friday.
+
+207
+00:12:38,760 --> 00:12:40,960
+你甚至可以自己玩个游戏
+You can even play a game, right, with yourself.
+
+208
+00:12:41,200 --> 00:12:43,440
+抱歉，二月，对吧？二月的第一周
+Sorry, so February, isn't it? First week of February.
+
+209
+00:12:43,440 --> 00:12:50,140
+还没到这个月的第二周，你期待什么？CPI，对吧？
+Before you've even gone to week two, right, of that month, what are you expecting? CPI, right?
+
+210
+00:12:50,160 --> 00:12:51,360
+你可以自己玩个游戏
+You can play a game with yourself.
+
+211
+00:12:52,320 --> 00:12:57,720
+我看看CPI是不是在第二周，或者本月散户销售数据在哪周？第三周
+Let me see if CPI is in week two. Or when's retail sales this month? Week three.
+
+212
+00:12:57,980 --> 00:12:59,420
+你可以自己玩个游戏，对吧？
+You can play a game with yourself, right?
+
+213
+00:12:59,480 --> 00:13:03,480
+我看第三周，散户销售数据，好？
+Let me go to week three. Retail sales, okay?
+
+214
+00:13:04,160 --> 00:13:06,600
+第二周，通胀数据，好？
+Week two. Inflation, okay?
+
+215
+00:13:06,720 --> 00:13:08,120
+就像这里显示的，对吧？
+As we've got here, okay?
+
+216
+00:13:08,480 --> 00:13:10,360
+周三，周三，对吧？
+Wednesday, Wednesday, okay?
+
+217
+00:13:11,020 --> 00:13:13,240
+第三周，散户销售，对吧？
+Week three. Retail sales, right?
+
+218
+00:13:14,740 --> 00:13:18,420
+显然，我之前也说了，有时可能会提前或推迟一天，对吧？
+Obviously, as I said, sometimes it can fall one day here or there, okay?
+
+219
+00:13:18,560 --> 00:13:19,200
+这没什么大不了的
+Not a big deal.
+
+220
+00:13:19,520 --> 00:13:25,140
+你能看到15号、16号发布，是数据准备好的时间，而且总是上个月的数据，对吧？
+You can see that 15, 16, so it's when the date is ready. And it's always for the previous month, okay?
+
+221
+00:13:25,200 --> 00:13:27,320
+比如2月17日发布的是1月的数据
+So here's February 17th. That's for January.
+
+222
+00:13:28,060 --> 00:13:33,200
+那具体是怎么运作的？这就是规律，我讲过很多次，但我还会一直强调
+So what happens, okay? The way it works, and I've explained this many times, but I will keep saying it.
+
+223
+00:13:33,200 --> 00:13:41,020
+好，假设这是1月，现在我们在2月
+Okay, let's say this is January, okay? We're now in February.
+
+224
+00:13:42,920 --> 00:13:45,336
+这份散户销售数据，你能看到
+This retail sales, can you see it
+
+225
+00:13:45,336 --> 00:13:48,097
+他们花了大约两周半
+took them about two and a half weeks
+
+226
+00:13:48,097 --> 00:13:52,239
+来收集1月的数据，然后数据才会发布
+to collect the data for January? And then the number gets released.
+
+227
+00:13:52,660 --> 00:13:58,840
+一下子就出来了，散户销售环比增长接近6%
+Bang, there you go. Oh, retail sales were up, you know, just under 6% month-on-month.
+
+228
+00:13:58,840 --> 00:14:04,100
+虽然不是大幅增长，但1月环比增长6%，对吧？
+Not massive jump, but 6% month-on-month in January, okay?
+
+229
+00:14:04,160 --> 00:14:05,320
+他们需要两周半时间
+It takes them two and a half weeks.
+
+230
+00:14:05,380 --> 00:14:08,533
+我之所以这么说，是因为有时可能需要
+The reason I'm saying this is because sometimes it might
+
+231
+00:14:08,533 --> 00:14:11,055
+不是两周半，可能需要
+take them, instead of, you know, taking them
+
+232
+00:14:11,055 --> 00:14:18,308
+两周零一天，基本上不是15天，可能是14天
+two and a half weeks, it might take them two and a quarter. Basically, instead of taking 15 days, it might take them 14 days.
+
+233
+00:14:18,940 --> 00:14:20,428
+可能需要16天
+It might take them 16 days,
+
+234
+00:14:20,428 --> 00:14:26,381
+但大体时间是固定的，所以有时散户销售可能在周三发布，而不是周二
+but it's always roughly the same. That's why sometimes retail sales might fall on a Wednesday instead of a Tuesday.
+
+235
+00:14:26,900 --> 00:14:28,649
+1月时，数据提前几天
+You saw in January, it fell a couple
+
+236
+00:14:28,649 --> 00:14:29,961
+在周五发布，但
+days earlier on the Friday, but
+
+237
+00:14:29,961 --> 00:14:33,459
+你能看到时间总在大致范围内，我给你解释原因
+you can see it's always in the rough ballpark. I'm explaining to you why that is.
+
+238
+00:14:33,540 --> 00:14:36,207
+你能看到，显然，收集散户销售数据的机构
+Can you see the, obviously, the agency that
+
+239
+00:14:36,207 --> 00:14:38,541
+美国人口普查局，有时需要时间来收集
+collects retail sales, the Census Bureau, it
+
+240
+00:14:38,541 --> 00:14:41,208
+数据，他们总是需要时间
+takes them time sometimes to collect. It always
+
+241
+00:14:41,208 --> 00:14:48,878
+需要时间收集所有零售商等反馈，我们后面会详细讲
+takes them time to get all the respondents back from, you know, all the retailers and wherever, and we're going to cover this.
+
+242
+00:14:48,960 --> 00:14:52,800
+别担心，我们会在另一部分专门讲数据来源，这确实需要时间，好吗？
+Don't worry, in a separate section. Where they're getting the data from, it takes them time, okay?
+
+243
+00:14:52,960 --> 00:14:56,880
+有时可能要15天、16天，具体看情况
+And sometimes that can be 15 days, 16 days, whatever it is.
+
+244
+00:14:56,980 --> 00:14:59,380
+但通常就在这个时间点，所以才会安排在这里
+But typically, it's around here, and that's why we have it.
+
+245
+00:14:59,520 --> 00:15:00,720
+准确无误，完全符合预期
+Bang on, as expected.
+
+246
+00:15:01,700 --> 00:15:06,880
+会议纪要我们等下再讲，它在第二个标签页里
+The minutes, we'll come back to that in a sec, because it is in our secondary tab.
+
+247
+00:15:06,880 --> 00:15:12,220
+FOMC会议纪要，通常在会议后三周发布
+The FMC minutes, you see there, basically three weeks after the FMC meeting.
+
+248
+00:15:13,660 --> 00:15:14,960
+这部分我们先讲到这里
+So we're going to close that.
+
+249
+00:15:16,820 --> 00:15:19,220
+好，第四周我们期待什么数据？
+Okay. What are we expecting in week four?
+
+250
+00:15:19,460 --> 00:15:24,620
+GDP。会有GDP吗？有。就是GDP
+GDP. Do we get GDP? Yes. GDP. There you go.
+
+251
+00:15:24,640 --> 00:15:29,720
+而且是初步版，因为别忘了，1月我们发布过初值
+And it's the preliminary version, right? Because don't forget, in January, we had advanced GDP.
+
+252
+00:15:30,580 --> 00:15:34,860
+30天后发布初步版，属于二次数据
+30 days later, you get the preliminary version, which is secondary data.
+
+253
+00:15:34,860 --> 00:15:39,860
+所以这一周其实没有重要数据
+So really, in this particular week, there's no data, right? Of note.
+
+254
+00:15:41,080 --> 00:15:42,280
+我们再讲讲讲话
+We'll talk about the speeches.
+
+255
+00:15:42,480 --> 00:15:46,440
+显然，美联储主席鲍威尔会有证词
+Obviously, you have Fed Chairman Powell here testifying.
+
+256
+00:15:47,780 --> 00:15:50,780
+但这些日期会有变动，比较灵活
+But again, these days can vary, and it's a little bit ad hoc.
+
+257
+00:15:51,200 --> 00:15:52,400
+所以我在这里标为‘其他’
+That's why I've put here other.
+
+258
+00:15:53,260 --> 00:15:59,140
+在规划未来8周时，我们可以做些微调，对吗？
+When we are setting our stall out for the next eight weeks, we can make these fine-tuning adjustments, right?
+
+259
+00:15:59,540 --> 00:16:00,636
+比如零售销售数据
+Things like retail sales.
+
+260
+00:16:00,636 --> 00:16:03,376
+因为如果我们的主模板里标的是周二
+Because if in our main template, we've got it on
+
+261
+00:16:03,376 --> 00:16:06,116
+查看未来6到8周的日历
+Tuesday, and we check the calendar for the next six,
+
+262
+00:16:06,116 --> 00:16:09,678
+发现实际在周三，就可以调整
+eight weeks, and we know it's on a Wednesday, we can make fine-tuning.
+
+263
+00:16:10,040 --> 00:16:11,240
+这完全没问题
+But that's fine.
+
+264
+00:16:12,220 --> 00:16:16,560
+这和周二早上醒来查当天数据完全不同
+Completely different to waking up on a Tuesday morning and checking what data I have today.
+
+265
+00:16:16,860 --> 00:16:20,080
+那种做法太业余了，对吗？
+No. That's complete and utter amateurish, right?
+
+266
+00:16:21,040 --> 00:16:23,160
+至少得知道会发生什么
+At least know this is what's happening.
+
+267
+00:16:23,160 --> 00:16:27,980
+临近日期时，我再确认具体时间是否正确
+When I come closer to the time, I'll just double-check to make sure the exact day is correct.
+
+268
+00:16:28,360 --> 00:16:29,440
+这完全可以
+That's absolutely fine.
+
+269
+00:16:30,060 --> 00:16:33,180
+我们来看3月，一起分析
+Let's go to March. Go through this together.
+
+270
+00:16:33,600 --> 00:16:35,020
+第一周我们期待什么数据？
+What are we expecting in the first week?
+
+271
+00:16:35,320 --> 00:16:36,460
+制造业和服务业数据。
+Manufacturing services.
+
+272
+00:16:36,680 --> 00:16:37,360
+看看这个。
+Look at that.
+
+273
+00:16:37,600 --> 00:16:39,660
+制造业和服务业。
+Manufacturing services.
+
+274
+00:16:41,860 --> 00:16:43,240
+轻工业数据。
+Light clockwork.
+
+275
+00:16:44,300 --> 00:16:45,200
+轻工业。
+Light clockwork.
+
+276
+00:16:45,200 --> 00:16:49,400
+第二周是CPI。
+CPI week two.
+
+277
+00:16:51,600 --> 00:16:54,140
+我真不知道还能跟你说什么。
+I really don't know what else I can say to you.
+
+278
+00:16:54,200 --> 00:16:59,680
+希望现在你已经惊呆了，心想：哇，太棒了！这简直完美。
+Hopefully, most of your jaws are dropping now, thinking, wow, fantastic. This is brilliant.
+
+279
+00:16:59,800 --> 00:17:00,880
+这会让我的交易更轻松。
+It's going to make my life easier.
+
+280
+00:17:01,100 --> 00:17:05,240
+希望这种视角对你很有价值。
+This is very, hopefully, value-adding to you to see things in this way.
+
+281
+00:17:05,700 --> 00:17:06,319
+零售销售数据。
+Retail sales.
+
+282
+00:17:06,660 --> 00:17:09,400
+零售销售。这次正好在周二。
+Retail sales. And this time, it did fall on the Tuesday.
+
+283
+00:17:10,319 --> 00:17:12,440
+3月17日有FOMC会议。
+We got FOMC on March 17th.
+
+284
+00:17:12,440 --> 00:17:16,780
+像我说的，别担心，我们会一起做FOMC日历。
+Like I said, don't worry, we're going to have our FOMC calendar, which we're going to build together.
+
+285
+00:17:17,140 --> 00:17:20,800
+好，我会和你一起做。你也要自己做一个。
+Okay, I'm going to build that with you. So, I'm going to have you build this.
+
+286
+00:17:20,859 --> 00:17:21,359
+所以，别担心。
+So, don't worry.
+
+287
+00:17:21,440 --> 00:17:24,460
+FOMC，3月17日。
+FOMC, March 17th.
+
+288
+00:17:24,460 --> 00:17:27,579
+好，你会提前很久知道。
+Okay. So, you will know this well in advance.
+
+289
+00:17:27,700 --> 00:17:28,820
+看，3月17日。
+Here we go, March 17th.
+
+290
+00:17:29,140 --> 00:17:30,294
+像我说的，有时很难
+Like I said, sometimes difficult
+
+291
+00:17:30,294 --> 00:17:31,910
+确定准确的周数。这次，
+to get the exact week. This time,
+
+292
+00:17:31,910 --> 00:17:34,219
+它落在了第三周，就在这里。
+it did fall in week three, which we have there.
+
+293
+00:17:35,320 --> 00:17:40,920
+第四周，是最终GDP，对吧？这里就有。最终GDP，符合预期。
+Week four, we're expecting the final GDP, right? Which we've got here. Final GDP. Okay, as expected.
+
+294
+00:17:41,580 --> 00:17:45,840
+还有一些讲话，你可以记一下。完全没问题。
+Some speeches, which you can make a little note of. It's absolutely fine.
+
+295
+00:17:47,760 --> 00:17:49,480
+我们看下一个月，4月。
+Let's go to the next month, April.
+
+296
+00:17:50,580 --> 00:17:55,120
+这个月有点特殊，可能不符合完美的时间表。
+This is a bit of an awkward month, which might not follow the perfect schedule.
+
+297
+00:17:55,220 --> 00:17:58,720
+因为你看第一周？它落在了月底。
+Because can you see the first? It falls towards the end of the month.
+
+298
+00:17:59,300 --> 00:18:03,300
+3月时，第一周的周一在一周开始。
+You see in March, the first fell on a Monday at the start of the week.
+
+299
+00:18:03,480 --> 00:18:07,120
+周一、周二都行。那自然会符合完美的节奏。
+But Monday, Tuesday, fine. Then it will obviously follow a perfect.
+
+300
+00:18:07,120 --> 00:18:10,311
+因为，你知道，当我们制作一个
+Because, you know, when we build a
+
+301
+00:18:10,311 --> 00:18:13,958
+制作模板时，当然，我们假设，相对来说
+template, of course, we're assuming, relatively speaking, we
+
+302
+00:18:13,958 --> 00:18:17,605
+有一个完美的月份，有第一周、
+have a perfect month. You know, with week
+
+303
+00:18:17,605 --> 00:18:24,899
+第二周、第三周、第四周，就是周一、周二、周三、周四这样
+one, week two, week three, week four. Here's, you know, like week one, two, three, four.
+
+304
+00:18:24,900 --> 00:18:27,652
+但有时会出现这种情况，显然
+But sometimes what will happen, and then obviously
+
+305
+00:18:27,652 --> 00:18:30,404
+会稍微延伸到下一周
+there is a little bit of the following
+
+306
+00:18:30,404 --> 00:18:38,318
+如果下个月一开始就接近月尾，显然会挤压一下节奏，对吧？
+week there. If the following month starts right towards the end of the month, obviously it will squeeze things a little bit, right?
+
+307
+00:18:38,320 --> 00:18:44,440
+那我们来看看实际情况，但我想这会有点挤压效应
+So, let's see what happened anyway, but I suspect it will have a little bit of a squeezing effect.
+
+308
+00:18:44,560 --> 00:18:52,380
+看，制造业数据那周晚了，是周四发布，而不是周一
+Yeah, can you see there, the manufacturing came late in the week, as in on a Thursday instead of a Monday.
+
+309
+00:18:52,880 --> 00:18:54,355
+为什么？因为这是第一个
+Why? Because it's the first,
+
+310
+00:18:54,355 --> 00:18:56,420
+每月在第一个营业日发布
+look, released monthly on the first business
+
+311
+00:18:56,420 --> 00:19:02,320
+第一个营业日那周很晚，快到月尾了
+day. The first business day was quite late in the month, late in the week, I'll be given by here.
+
+312
+00:19:02,320 --> 00:19:04,428
+通常，第一个营业日
+Now, ordinarily, the first business day
+
+313
+00:19:04,428 --> 00:19:06,536
+会在这附近
+will be somewhere around here. This
+
+314
+00:19:06,536 --> 00:19:12,158
+这次正好在这里，显然把所有数据都挤到周末了
+time, it was right there. So, obviously, it squeezed everything towards the end of the week.
+
+315
+00:19:12,820 --> 00:19:13,920
+但我们不用在意
+But we don't care.
+
+316
+00:19:14,100 --> 00:19:15,623
+就算这样
+Does that, just because that
+
+317
+00:19:15,623 --> 00:19:17,756
+制造业数据就突然变成第四周了？
+happened, is manufacturing suddenly now in week
+
+318
+00:19:17,756 --> 00:19:20,498
+不是，位置没变
+four? No, it's not. It's in the same place.
+
+319
+00:19:20,560 --> 00:19:22,600
+只是早晚一两天的事
+It's just a day or two here or there.
+
+320
+00:19:23,320 --> 00:19:27,580
+所以千万别被这些日历小变动干扰
+That's why it's so important to not be thrown off by these little calendar changes.
+
+321
+00:19:27,700 --> 00:19:29,040
+完全没问题，好吗？
+It's absolutely fine, okay?
+
+322
+00:19:29,080 --> 00:19:30,360
+一点都不严重
+It's not a big deal at all.
+
+323
+00:19:30,360 --> 00:19:32,880
+它还是在我们预期的位置
+It's still exactly where we expect it.
+
+324
+00:19:32,960 --> 00:19:37,300
+别忘了，我们会为接下来8周做好布局
+And don't forget, we're going to set the stall out for the next eight weeks anyway.
+
+325
+00:19:37,560 --> 00:19:42,020
+每个月或每几周，都能微调
+Every kind of month or couple of weeks, we can be tweaking, fine tweaking.
+
+326
+00:19:42,640 --> 00:19:43,980
+我们会提前知道，好吗？
+We'll know well in advance, okay?
+
+327
+00:19:44,060 --> 00:19:49,240
+记住，制造业数据可能和模板差几天，但本质位置不变
+Just remember, manufacturing is going to be a few days off the template. But ultimately, it's still there.
+
+328
+00:19:49,380 --> 00:19:52,560
+第一周，非农就绪，像钟表一样准时
+First week, you've got payrolls, like clockwork, as expected.
+
+329
+00:19:54,640 --> 00:19:56,772
+因为数据显然被推迟了，能
+Because things obviously got pushed, can
+
+330
+00:19:56,772 --> 00:19:59,970
+看到服务业数据被推到周一了吗？
+you see the services got pushed into the Monday?
+
+331
+00:19:59,970 --> 00:20:08,499
+因为服务业数据在第三个工作日发布，对吧？所以第一、二、第三个工作日，就把它推到下一周了，对吧？
+Because services is on the third business day, right? So one, two, and the third business day pushed it into the following week, okay?
+
+332
+00:20:08,540 --> 00:20:09,420
+所以没什么大不了。
+So no big deal.
+
+333
+00:20:09,420 --> 00:20:17,740
+接下来一周，是CPI数据，这次稍微晚了点，稍微晚了点。
+And then, if we go to the following week, we've got CPI, which was slightly late, slightly late.
+
+334
+00:20:17,880 --> 00:20:24,240
+通常可能会早一点发布，但这次稍微晚了。
+Usually, it can be a little bit earlier. But on this occasion, it was slightly late.
+
+335
+00:20:24,320 --> 00:20:28,700
+你有没有注意到上个月的10日、10日，有时数据发布会稍晚一点。
+Do you see in the previous month, 10th, 10th, sometimes it gets released a little bit late.
+
+336
+00:20:28,700 --> 00:20:32,300
+13日也是，美国劳工统计局（BLS）
+13th, again, the BLS, the Bureau of Labor Statistics, don't
+
+337
+00:20:32,300 --> 00:20:35,900
+别忘了，他们可不是凭空捏造这些数字的，
+forget, they don't just pluck these numbers out of thin
+
+338
+00:20:35,900 --> 00:20:46,700
+对吧？他们会做大规模调查，发放问卷，或者收集不同商品的价格，这需要时间。
+air, right? They do a massive exercise where they will be sending out surveys or, you know, trying to find out the prices of different items. This can take time.
+
+339
+00:20:46,700 --> 00:20:50,292
+有时，他们可能从某个行业收到数据时，
+Now, sometimes they may receive the data back from a certain sector,
+
+340
+00:20:50,292 --> 00:20:52,687
+稍微晚了一点，在整理通胀数据时，
+slightly late, when they're putting the inflation data
+
+341
+00:20:52,687 --> 00:20:56,878
+所以结果就不会完全符合你的预期。
+together. And therefore, it's not going to be exactly as you want it to.
+
+342
+00:20:56,980 --> 00:21:01,480
+另外，这个月开始得晚，也压缩了时间。
+But also, it was a late start to the month, which squeezed things as well.
+
+343
+00:21:01,600 --> 00:21:02,900
+所以，原因有很多。
+So, a variety of reasons.
+
+344
+00:21:02,900 --> 00:21:04,912
+只是晚了一天或两天，
+It's slightly, talking a day, a
+
+345
+00:21:04,912 --> 00:21:07,930
+实际上发生的是，因为那一周
+couple days later, what's actually happened is, because that
+
+346
+00:21:07,930 --> 00:21:12,290
+我刚注意到，实际上发生的是，这一周
+week, in fact, I just noticed, what's actually happened is, this week is
+
+347
+00:21:12,290 --> 00:21:22,017
+太短了，几乎不像第一周。几乎第一周变成了第二周，第二周变第三周，第三周变第四周，对吧？
+so short, it's almost not like a week one. It's almost like that's become week one, that's become week two, that's become week three, that's become week four, okay?
+
+348
+00:21:22,080 --> 00:21:25,160
+所以，从这个角度看，其实很完美。
+So, it is actually, if you look at it that way, it's actually perfect.
+
+349
+00:21:25,360 --> 00:21:26,640
+它在对的位置，对吧？
+It's in the right place, right?
+
+350
+00:21:26,760 --> 00:21:28,540
+基本在第二周。
+It's in week two, basically.
+
+351
+00:21:28,540 --> 00:21:30,488
+只是晚了一周左右，
+It's that week or so later got
+
+352
+00:21:30,488 --> 00:21:32,436
+被压缩了，你几乎可以认为
+squashed, you could almost consider that not
+
+353
+00:21:32,436 --> 00:21:35,219
+这都不算一周。所以，这就是实际发生的。
+to even be a week. So, that's actually what's happened.
+
+354
+00:21:36,540 --> 00:21:41,860
+接下来是散户销售数据，那里有散户销售数据。
+So, we'll go on to the next one, which is retail sales. So, you've got retail sales there.
+
+355
+00:21:42,100 --> 00:21:45,234
+同样，因为这一周的安排
+Again, because the week, the way the
+
+356
+00:21:45,234 --> 00:21:47,473
+稍微有些不同。
+week is laid out, slightly
+
+357
+00:21:47,473 --> 00:21:52,399
+公平地说，这次反而早了两天。
+different. And, to be fair, it's actually a couple days early.
+
+358
+00:21:52,400 --> 00:21:54,534
+你还记得吗，你看，
+If you remember, do you see,
+
+359
+00:21:54,534 --> 00:21:58,090
+零售销售数据通常在16日、17日，3月17日，
+retail sales normally comes around the 16th, 17th, 17th, March
+
+360
+00:21:58,090 --> 00:22:00,935
+2月17日，他们的数据稍微
+17th, February 17th. They've got the data slightly
+
+361
+00:22:00,935 --> 00:22:05,558
+又提前了，到15号，完全没问题。这次他们把时间调到了这里。
+early again, 15th, so absolutely fine. On this occasion, they've pushed it here.
+
+362
+00:22:06,260 --> 00:22:09,315
+现在我们知道下一周很可能
+We now know that the following week is likely
+
+363
+00:22:09,315 --> 00:22:12,031
+会非常非常平静，除非
+to be very, very quiet, unless we have
+
+364
+00:22:12,031 --> 00:22:20,519
+4月FOMC在28号，所以其实没有FOMC。因此下一周应该会很平静。
+FOMC in April, which is on the 28th. So, actually, there is no FOMC. So, I would expect the following week to be very quiet.
+
+365
+00:22:20,520 --> 00:22:21,326
+我们来看一下。
+Let's have a look.
+
+366
+00:22:21,326 --> 00:22:22,132
+看，
+There we go. See
+
+367
+00:22:22,132 --> 00:22:25,358
+是不是？我还没看日历就知道会很平静，对吧？
+that? I knew it was going to be quiet before I even looked at it, right?
+
+368
+00:22:25,600 --> 00:22:31,820
+想象一下，在点开日历前就能预知它大概是什么样。
+Imagine being able to know what a calendar is likely to be like before you even click on it.
+
+369
+00:22:32,200 --> 00:22:33,848
+现在你该明白我为什么要做这个
+Now, you can see why I wanted to do this
+
+370
+00:22:33,848 --> 00:22:36,320
+练习了，因为我不希望你只听我的话。
+exercise with you because I didn't want you to just take my word for it.
+
+371
+00:22:36,380 --> 00:22:39,095
+我希望你亲眼看到，
+I want you to see for yourself, you
+
+372
+00:22:39,095 --> 00:22:41,810
+这方法有多强大，能让你的交易
+know, how powerful and how much easier you
+
+373
+00:22:41,810 --> 00:22:44,525
+变得多轻松，
+can make your life and how much better
+
+374
+00:22:44,525 --> 00:22:49,617
+能让你比其他交易者更懂每周的数据分布。
+you can be than the next trader at understanding how the weeks are laid out.
+
+375
+00:22:50,120 --> 00:22:55,060
+而这一切都始于了解这张“地图”，对吧？
+And it all starts here, knowing kind of the map, right?
+
+376
+00:22:55,060 --> 00:23:00,520
+提前知道这些，真的很解放。
+Very liberating feeling, knowing these things in advance.
+
+377
+00:23:00,620 --> 00:23:04,380
+然后是我们刚讲的FOMC，还有第四周的初值GDP。
+Then, obviously, the FOMC we just talked about and the advanced GDP, week four.
+
+378
+00:23:05,800 --> 00:23:09,120
+现在我们快速过一遍，加快点节奏。
+Let's just rush through this now a little bit more just to pick up the speed.
+
+379
+00:23:09,680 --> 00:23:12,860
+6月第一周，你期待什么？制造业数据。
+June, week one. What were you expecting? Manufacturing.
+
+380
+00:23:13,180 --> 00:23:18,020
+因为假期，所以时间调整了。或者说，第一个工作日是几号？
+Bank holiday, therefore, obviously got pushed. Or to be fair, what was the first business date?
+
+381
+00:23:18,100 --> 00:23:19,880
+是1号。所以其实时间是对的。
+It's the first. So, actually, it's in the right place.
+
+382
+00:23:20,860 --> 00:23:23,880
+制造业、服务业、非农。
+Manufacturing services, payrolls.
+
+383
+00:23:23,940 --> 00:23:24,300
+我们有什么？
+What do we have?
+
+384
+00:23:24,380 --> 00:23:25,800
+制造业、服务业、非农。
+Manufacturing services, payrolls.
+
+385
+00:23:26,260 --> 00:23:28,460
+第二周，你期待什么？CPI。
+Week two, what were you expecting? CPI.
+
+386
+00:23:29,960 --> 00:23:30,480
+CPI。
+CPI.
+
+387
+00:23:31,780 --> 00:23:35,340
+好，希望现在你已经非常清楚了。
+Okay. Hopefully, this is becoming very clear to you now.
+
+388
+00:23:35,620 --> 00:23:36,780
+第三周是零售销售数据。
+Retail sales week three.
+
+389
+00:23:37,320 --> 00:23:38,620
+第三周是零售销售数据。
+Retail sales week three.
+
+390
+00:23:40,400 --> 00:23:41,400
+第四周是GDP。
+GDP week four.
+
+391
+00:23:41,540 --> 00:23:42,580
+第四周是GDP。
+GDP week four.
+
+392
+00:23:43,940 --> 00:23:49,700
+好，7月，7月第一周。
+Okay. July. First week of July.
+
+393
+00:23:49,840 --> 00:23:53,780
+看到了吗？这个月有点挤，和4月那次差不多。
+Again, can you see? Bit of that squashed month. A little bit like how we had April.
+
+394
+00:23:54,360 --> 00:23:59,520
+4月第一周是周四开始的，对吧？
+See how the first fell on a Thursday? April there. First fell on the Thursday.
+
+395
+00:24:00,620 --> 00:24:01,460
+这次也一样，对吧？
+Same thing, right?
+
+396
+00:24:01,560 --> 00:24:05,880
+所以我们预期，服务业数据会落在周一，因为这样。
+So, we expect. We know services is going to fall on the Monday because of that.
+
+397
+00:24:07,240 --> 00:24:08,440
+看到了吧，好好利用这一点。
+See, use that to your advantage.
+
+398
+00:24:08,700 --> 00:24:10,220
+别被这些细节搞晕。
+Don't be thrown off by these things.
+
+399
+00:24:10,220 --> 00:24:16,560
+其实模板依然完美适用，只是服务业数据落在第三个交易日。
+Actually, the template still works perfectly. We just know services is on the third business day.
+
+400
+00:24:16,880 --> 00:24:22,580
+但这个月没有三个交易日，只有两个。
+There aren't three business days in this particular month. There's only two.
+
+401
+00:24:22,940 --> 00:24:24,720
+这一周只有两个交易日。
+In this particular week, there's only two.
+
+402
+00:24:25,120 --> 00:24:28,500
+好，制造业数据如期，还有非农就业。
+Okay. So, manufacturing as expected. Payrolls.
+
+403
+00:24:28,540 --> 00:24:30,100
+我们知道服务业数据会在周一。
+We know services is going to be on the Monday.
+
+404
+00:24:30,300 --> 00:24:31,360
+是不是？对，就是。
+Is it? Yes, it is.
+
+405
+00:24:31,800 --> 00:24:42,320
+好，别忘了，之前说零售销售数据，现在看看它落在哪。
+Okay. Don't forget, remember how we said the retail sales will now, in fact, let's check where retail sales fall.
+
+406
+00:24:42,740 --> 00:24:49,760
+抱歉，CPI可能会顺延，因为第一周不完整。
+So, sorry. The CPI will likely now get pushed because that is no longer week one.
+
+407
+00:24:49,760 --> 00:24:55,300
+那周几乎算第一周，因为不完整，后面依次是第二、三、四周。
+It's almost like that becomes week one because it's not a full week. And then these become two, three, four.
+
+408
+00:24:55,400 --> 00:24:58,640
+所以CPI可能会延到下一周。
+So, we almost expect the CPI to be the following week.
+
+409
+00:24:59,580 --> 00:25:02,800
+来看看，对了，就是这里。
+Let's have a look. There we go.
+
+410
+00:25:02,800 --> 00:25:05,570
+给你们展示这些时，我确实有点紧张，
+I do get nervous when I show you guys these
+
+411
+00:25:05,570 --> 00:25:07,232
+要是没落在预期位置，
+things because if it doesn't fall
+
+412
+00:25:07,232 --> 00:25:10,279
+那我可能会有点尴尬。
+there, then obviously, I end up looking a little bit silly.
+
+413
+00:25:10,600 --> 00:25:13,260
+但像我说的，我干这行多年了。
+But like I said, I've been doing this for years.
+
+414
+00:25:13,460 --> 00:25:16,940
+我得言出必行，对吧？
+And I kind of like to put my money where my mouth is, right?
+
+415
+00:25:17,000 --> 00:25:18,600
+你们都知道Pro Foundation。
+So, obviously, you guys know Pro Foundation.
+
+416
+00:25:18,780 --> 00:25:19,574
+我经常给你们展示
+Obviously, I show
+
+417
+00:25:19,574 --> 00:25:21,956
+我的交易案例，YouTube直播交易，
+you trading examples of me trading, my YouTube live
+
+418
+00:25:21,956 --> 00:25:25,132
+所有这些，我想冒点险，
+trading, all of that here I want to put my neck on
+
+419
+00:25:25,132 --> 00:25:28,308
+在点开周数据前就告诉你们，
+the line a little bit and show you, you know, before I
+
+420
+00:25:28,308 --> 00:25:35,719
+这会发生什么，因为这能巩固我教你们的方法的可信度。
+even click on the week that, guys, this is what's going to happen because it really solidifies and gives credibility to what I'm setting you up to do.
+
+421
+00:25:35,720 --> 00:25:37,940
+我必须确保你对这个有信心。
+I want to make sure that you have confidence in this.
+
+422
+00:25:38,500 --> 00:25:39,680
+所以，你能看到那里的CPI数据。
+So, you can see the CPI there.
+
+423
+00:25:39,780 --> 00:25:45,480
+零售销售数据又提前到周五发布，提前一天，我们现在知道了。
+Retail sales again, slightly early on the Friday, one day early, as we now know, going through them.
+
+424
+00:25:45,720 --> 00:25:50,880
+有时候，人口普查局确实会提前拿到数据。
+Sometimes, the Bureau, the Census Bureau does get the data slightly early.
+
+425
+00:25:50,880 --> 00:25:56,020
+想想看，如果数据周四晚上就准备好了，为什么不周五发布？为什么要等呢？
+Think about it, if the data's ready on Thursday night, right, why not release it on a Friday? Why wait?
+
+426
+00:25:56,520 --> 00:25:57,881
+因为接下来就是周末，
+Because then you've got the weekend,
+
+427
+00:25:57,881 --> 00:25:59,242
+你可以给
+you're giving the, you know, in
+
+428
+00:25:59,242 --> 00:26:00,603
+人口普查局很多人
+the Census, a lot of people
+
+429
+00:26:00,603 --> 00:26:03,098
+都依赖这些数据，越早发布越好。
+are relying on this data, you know, the earlier the better.
+
+430
+00:26:03,320 --> 00:26:06,360
+提前发布也能提升他们的可信度。
+Gives them also a lot of credibility to get it out there earlier.
+
+431
+00:26:08,840 --> 00:26:10,309
+第四周没有数据，因为
+Week four, nothing, because we had
+
+432
+00:26:10,309 --> 00:26:11,778
+零售销售数据已经发布了，
+the retail sales there, so we
+
+433
+00:26:11,778 --> 00:26:13,492
+抱歉，第三周，这种情况
+know, sorry, week three, this kind of
+
+434
+00:26:13,492 --> 00:26:14,961
+第三周、第四周，
+week three, week four, depending on
+
+435
+00:26:14,961 --> 00:26:22,798
+取决于你怎么标记，因为第一周只有两天，几乎可以不算一周，把这周算作第三周。
+how you want to label it, because obviously there was only two days in the first week, so you could almost not count that as a week, count this as week three.
+
+436
+00:26:24,360 --> 00:26:26,025
+七月，我们知道
+July, look, we know from
+
+437
+00:26:26,025 --> 00:26:28,356
+从我们的FOMC日历来看，
+our FOMC calendar, which we're going to
+
+438
+00:26:28,356 --> 00:26:33,019
+我们会一起构建这个日历，下周有FOMC会议，最后一周也会有。
+build together, that there is an FOMC meeting next week, and the final week.
+
+439
+00:26:33,300 --> 00:26:37,160
+所以我们知道最后一周会有几个重点。
+So, we know this final week, a couple of things.
+
+440
+00:26:37,240 --> 00:26:38,805
+这一周会有GDP数据，
+It's going to have GDP,
+
+441
+00:26:38,805 --> 00:26:40,370
+但实际上，
+but not the, in fact,
+
+442
+00:26:40,370 --> 00:26:44,439
+会有初值GDP吗？Q2会有初值GDP，对吧？
+is it going to have advanced GDP? Well, it will for Q2, right?
+
+443
+00:26:44,440 --> 00:26:50,080
+1月到6月是Q2，所以会有初值GDP。
+For January, February, March, April, May, June is Q2, so we're going to have advanced GDP.
+
+444
+00:26:50,580 --> 00:26:52,640
+FOMC会议在下一周。
+Well, FOMC is the following week.
+
+445
+00:26:52,840 --> 00:26:55,841
+所以我们知道
+So, we know that it's going to be
+
+446
+00:26:55,841 --> 00:26:58,092
+这通常是GDP的重要一周，
+a really big week, normally for
+
+447
+00:26:58,092 --> 00:27:02,219
+但FOMC可能会盖过它的风头。
+GDP focus, but we've got FOMC, so it may overshadow it.
+
+448
+00:27:02,800 --> 00:27:04,520
+我们提前就知道这些。
+Excuse me. So, we know this in advance.
+
+449
+00:27:05,880 --> 00:27:06,540
+就是这样。
+There we go.
+
+450
+00:27:06,780 --> 00:27:09,160
+初值GDP、FOMC，对吧？
+Advanced GDP, FOMC, right?
+
+451
+00:27:09,920 --> 00:27:11,440
+说实话，时至今日我仍然很爱这个
+Honestly, I love it to this day.
+
+452
+00:27:11,960 --> 00:27:17,220
+仅仅知道这一点，想想你比市场上其他人优势有多大，对吧？仅仅知道
+Just knowing, think over how much edge you have over other people in the market, right? Just knowing.
+
+453
+00:27:17,880 --> 00:27:20,240
+你认识的人中，有几个能做到？
+How many people do you know who could have just done that?
+
+454
+00:27:20,640 --> 00:27:23,280
+提前一周、两周、三周？
+A week, two weeks, three weeks in advance?
+
+455
+00:27:23,760 --> 00:27:24,660
+比如，嘿，你知道吗？
+Say, hey, you know what?
+
+456
+00:27:24,660 --> 00:27:28,040
+7月底有初值GDP和FOMC
+At the end of July, advanced GDP and I got FOMC.
+
+457
+00:27:28,140 --> 00:27:29,940
+我可以开始思考这些了
+Let me start thinking about those things.
+
+458
+00:27:30,880 --> 00:27:32,440
+这完全是另一个世界，对吧？
+Whole different world, isn't it?
+
+459
+00:27:32,500 --> 00:27:36,520
+看待数据的方式完全不同，还能提前知道这些
+Complete different way of looking at data and being able to know these things in advance.
+
+460
+00:27:37,060 --> 00:27:40,080
+现在来看8月，对吧？来模拟一下
+Let's now go to August, right? Play the game.
+
+461
+00:27:40,700 --> 00:27:42,140
+第一周预期什么？
+What are we expecting on week one?
+
+462
+00:27:42,260 --> 00:27:42,920
+我们早就知道
+We already know.
+
+463
+00:27:43,440 --> 00:27:47,140
+那周周一制造业，周三服务业，周五非农
+On that Monday, manufacturing, Wednesday services, Friday payrolls.
+
+464
+00:27:47,460 --> 00:27:48,173
+我又要
+Again, I'm going
+
+465
+00:27:48,173 --> 00:27:49,124
+去查看。而你们
+to look. And you
+
+466
+00:27:49,124 --> 00:27:50,313
+了解我，我从没
+guys know me. I've not
+
+467
+00:27:50,313 --> 00:27:54,118
+做过这个练习，这是我为了制作这门课程第一次尝试
+done this exercise. It's the first time I'm doing it as part of building this course.
+
+468
+00:27:54,120 --> 00:27:58,340
+我不会花两小时准备这个模块
+I'm not going to spend two hours before doing the module.
+
+469
+00:27:58,560 --> 00:28:01,040
+我显然是现场第一次做
+I'm obviously doing this live first hand.
+
+470
+00:28:01,120 --> 00:28:04,660
+我没核对过，等会揭晓时可能会出丑
+I've not checked this. I'm going to look silly when I reveal this.
+
+471
+00:28:04,840 --> 00:28:05,520
+我们来看看
+Let's have a look.
+
+472
+00:28:06,380 --> 00:28:06,900
+完美
+Perfect.
+
+473
+00:28:08,080 --> 00:28:12,940
+周一制造业，周三服务业，周五非农
+Manufacturing on Monday. Services on Wednesday. Payrolls on Friday.
+
+474
+00:28:13,340 --> 00:28:15,320
+好，看到了吧，你不需要日历
+Okay. Do you see you don't need the calendar.
+
+475
+00:28:15,800 --> 00:28:16,300
+但你确实需要
+You do.
+
+476
+00:28:16,600 --> 00:28:17,205
+当然，你
+Obviously, you
+
+477
+00:28:17,205 --> 00:28:19,325
+要确认数据是否正确
+want to check that the data is
+
+478
+00:28:19,325 --> 00:28:21,142
+我们会
+right. And we are going to
+
+479
+00:28:21,142 --> 00:28:24,777
+用日历来构建这些标签整理数据
+use the calendar to develop all these tabs to build the data.
+
+480
+00:28:24,900 --> 00:28:25,720
+你能看到所有这些数据
+You see all this data.
+
+481
+00:28:26,140 --> 00:28:29,520
+我是从这些数据源提取的。
+I've extracted it from these data sources.
+
+482
+00:28:30,500 --> 00:28:32,360
+但也就这些了。
+But that's about the extent of it.
+
+483
+00:28:32,440 --> 00:28:38,080
+好，我不会每天早上都盯着日历，直到数据发布。
+Okay. I'm not going to sit here checking this calendar every morning until the news is released.
+
+484
+00:28:38,140 --> 00:28:41,260
+只有数据出来后，我才会来查看具体数值。
+Only when the number comes out, I can come here and just check what was the number.
+
+485
+00:28:41,920 --> 00:28:46,140
+但我的大部分分析，并不需要日历。我早就提前知道了。
+But most of my analysis, it's not going to involve the calendar. I already know well in advance.
+
+486
+00:28:47,120 --> 00:28:50,500
+第二周，我们预期CPI会在周三发布。
+Week two, what we expect in CPI. There it is on the Wednesday.
+
+487
+00:28:51,400 --> 00:28:53,780
+对，第三周我们预期什么？
+Right. What are we expecting in week three?
+
+488
+00:28:53,940 --> 00:28:55,540
+我们早就知道了。散户销售数据，对吧？
+We already know. Retail sales, right?
+
+489
+00:28:57,500 --> 00:29:01,060
+对，散户销售数据也在周二发布。
+There we go. Retail sales on the Tuesday as well.
+
+490
+00:29:02,980 --> 00:29:08,360
+这个月有FOMC会议吗？来看看。FOMC日历。
+Do we have any FOMC this month? Let's have a look. So FOMC calendar.
+
+491
+00:29:09,380 --> 00:29:10,840
+没有，8月份没有。
+Nope. Nothing in August.
+
+492
+00:29:10,840 --> 00:29:15,720
+所以最后一周，我知道会很平静。
+So I already know that the final week, right, is going to be quiet.
+
+493
+00:29:16,000 --> 00:29:20,480
+为什么？因为Q2的GDP初值已在7月发布。
+Why? Because I had an advanced GDP already in July for Q2.
+
+494
+00:29:21,440 --> 00:29:27,980
+8月会有初步值，但这个不太重要，而且没有FOMC。
+August, I'm going to have the preliminary, the second one, which isn't that important. And I've got no FOMC.
+
+495
+00:29:28,520 --> 00:29:30,060
+所以我预计最后一周会非常平静。
+So I'm expecting a very quiet week.
+
+496
+00:29:30,380 --> 00:29:31,920
+看，初步GDP数据。
+There you go. Look, preliminary GDP.
+
+497
+00:29:32,220 --> 00:29:35,980
+不太重要，因为最终值我已经看过了。
+It's not that important. I've already had a final, as I said.
+
+498
+00:29:36,440 --> 00:29:37,720
+确实没什么重要内容。
+There's really not much there.
+
+499
+00:29:37,720 --> 00:29:43,340
+可能美联储主席鲍威尔会讲话，但这些讲话通常也不太重要。
+Maybe Fed Chairman Powell speaks, and even those speeches tend not to be that important.
+
+500
+00:29:43,560 --> 00:29:47,160
+我觉得我之前提过，因为他并没有真正采取行动。
+I think I already mentioned that. Because he's not actually doing anything.
+
+501
+00:29:47,420 --> 00:29:52,840
+他只是暗示，并没有调整利率，对吧？
+He's hinting. He's not changing the rates. He's not doing anything, right?
+
+502
+00:29:52,940 --> 00:29:57,100
+他只是偶尔给些暗示，仅此而已。
+He's actually just giving some hints here or there. That's it.
+
+503
+00:29:57,240 --> 00:29:58,280
+其他就没什么了，对吧？
+There's nothing else, okay?
+
+504
+00:29:58,420 --> 00:30:00,600
+显然，最重要的还是实际的会议。
+Obviously, the most important are the actual meetings.
+
+505
+00:30:00,600 --> 00:30:05,540
+讲话可以快速看一下，但确实不太重要。
+But we can have a quick look at the speeches, but really not that important.
+
+506
+00:30:06,960 --> 00:30:09,900
+最后一周真的很平静，没什么大事。
+Very quiet week, right? Really not much going on.
+
+507
+00:30:10,520 --> 00:30:14,320
+公平地说，我确实漏掉了这个，但模板里有。
+To be fair, I did miss this, but we have got it in our template.
+
+508
+00:30:14,640 --> 00:30:16,180
+你是不是发现模板有多重要？
+Do you see it's so important to have the template?
+
+509
+00:30:17,000 --> 00:30:19,980
+那周是杰克逊霍尔会议，我确实忘记提了。
+Jackson Hole was that week, and I did forget to mention that, actually.
+
+510
+00:30:19,980 --> 00:30:22,352
+基本上，我觉得我提过
+So, basically, I think I mentioned
+
+511
+00:30:22,352 --> 00:30:24,724
+给你说，堪萨斯联储会主办
+to you, the Kansas Fed hosts
+
+512
+00:30:24,724 --> 00:30:30,259
+所有央行行长都会出席。确认一下，对，是堪萨斯联邦储备银行
+all the central bankers. So, just confirm that. Yeah, Federal Reserve Bank of Kansas.
+
+513
+00:30:31,560 --> 00:30:33,088
+会议地点在杰克逊霍尔
+It's held in Jackson Hole,
+
+514
+00:30:33,088 --> 00:30:35,228
+参会的是
+and what they do is, it's attended
+
+515
+00:30:35,228 --> 00:30:37,979
+央行行长、财政部长、学者等等
+by central bankers, finance ministers, academics, blah, blah, blah.
+
+516
+00:30:38,920 --> 00:30:42,040
+会议不对媒体开放，是闭门进行的
+Meetings are closed to the press, so it's behind closed doors.
+
+517
+00:30:42,920 --> 00:30:45,540
+但官员通常会在当天与记者交流
+But officials usually talk with reporters throughout the day.
+
+518
+00:30:45,540 --> 00:30:49,396
+所以，央行行长和其他有影响力的
+So, comments and speeches from central bankers and other influential
+
+519
+00:30:49,396 --> 00:30:55,180
+官员的言论和讲话可能引发市场剧烈波动。我发现它确实会显著影响市场
+officials can create significant market volatility. And I have found it to be significantly market-moving.
+
+520
+00:30:56,360 --> 00:30:58,385
+因为有时候，这些央行行长
+Because sometimes, you know, a lot of
+
+521
+00:30:58,385 --> 00:31:00,699
+来自世界各地
+these central bankers, they're from all over the
+
+522
+00:31:00,699 --> 00:31:04,459
+他们会借此机会影响市场
+world, and they can use it as an opportunity to influence the market.
+
+523
+00:31:04,660 --> 00:31:13,040
+你想想，这里没有正式会议，也没有FOMC会议，直到9月
+You know, like, because if you think about it, here, there's no meeting. There's no FOMC get-together until September.
+
+524
+00:31:13,040 --> 00:31:20,400
+所以，美联储、鲍威尔等人会借这个会议
+So, the Fed, Powell, whoever else is talking to the press can use that meeting as an opportunity
+
+525
+00:31:20,400 --> 00:31:24,980
+因为他们知道接下来四周内没有FOMC会议
+because they know there's no FOMC for another four weeks.
+
+526
+00:31:25,060 --> 00:31:25,620
+中间有个空档期
+There's a gap.
+
+527
+00:31:25,760 --> 00:31:27,460
+7月后，8月没有会议
+You see, July, there's no August meeting.
+
+528
+00:31:28,080 --> 00:31:31,321
+他们可以利用杰克逊霍尔
+They can use Jackson Hole as an opportunity
+
+529
+00:31:31,321 --> 00:31:34,157
+来影响、引导，或者说
+to influence or dictate or inform, I
+
+530
+00:31:34,157 --> 00:31:39,019
+告诉市场：这是我们的想法
+should say, the market, that, hey, this is what's on our mind.
+
+531
+00:31:39,240 --> 00:31:43,620
+比如，通胀是我们关注的，或者就业市场是我们关注的
+You know, inflation is on our mind or, you know, the jobs market is on our mind.
+
+532
+00:31:43,660 --> 00:31:45,260
+我们会在FOMC会议上讨论，不用担心
+And we're going to talk about that FOMC, don't worry.
+
+533
+00:31:45,380 --> 00:31:50,280
+但这是他们向市场传达思路的绝佳机会
+But, you know, this is an opportunity for them to really let the market know what they're thinking.
+
+534
+00:31:50,740 --> 00:31:52,460
+这显然会影响市场
+And that will obviously influence the market.
+
+535
+00:31:52,560 --> 00:31:54,640
+所以，这个会议非常、非常重要
+So, it's very, very important, that meeting.
+
+536
+00:31:55,220 --> 00:31:57,240
+现在我们跳到8月、9月
+Let's now skip towards August, September.
+
+537
+00:31:57,240 --> 00:31:59,520
+9月第一周，我们知道
+September, first week, we know.
+
+538
+00:31:59,620 --> 00:32:03,060
+第一周稍晚，但没问题，因为有3个工作日
+You see how the first is slightly late, but it's okay because there's three business days.
+
+539
+00:32:03,180 --> 00:32:05,180
+所以服务业数据可能在周五发布
+So, I think services would have fallen on the Friday.
+
+540
+00:32:06,460 --> 00:32:10,800
+制造业数据在周一，非农就业数据当然在周五，希望如此
+Manufacturing on the Monday and payrolls, obviously, on the Friday, which hopefully is the case.
+
+541
+00:32:11,700 --> 00:32:12,280
+看，就在这儿。
+There you can see it.
+
+542
+00:32:12,760 --> 00:32:16,360
+制造业、服务业在周五，是第三个工作日。
+Manufacturing, services on the Friday, we said, third business day.
+
+543
+00:32:17,460 --> 00:32:18,360
+非农就业，对，没错。
+Payrolls, yeah, okay.
+
+544
+00:32:18,680 --> 00:32:21,480
+所以，千万别忘了，我刚才漏说了。
+So, don't forget, I forgot to mention this.
+
+545
+00:32:21,540 --> 00:32:22,340
+原油库存，
+Crude oil inventories,
+
+546
+00:32:22,340 --> 00:32:24,206
+如果你交易原油，一定要
+obviously, if you do trade crude, make
+
+547
+00:32:24,206 --> 00:32:27,139
+把它标在日历上，每周三、周四。
+sure you have that on your calendar, Wednesday, Thursday, every week.
+
+548
+00:32:27,720 --> 00:32:29,260
+准得像钟表一样。
+It will be there like clockwork.
+
+549
+00:32:30,600 --> 00:32:34,240
+第二周是PPI。
+Second week, we got the PPI.
+
+550
+00:32:35,000 --> 00:32:41,640
+第三周CPI稍晚，因为时间被挤压了……
+And then third week, CPI was slightly later just because it got squeezed in terms of the...
+
+551
+00:32:41,640 --> 00:32:43,440
+基本情况就是这样，对吧？
+So, what basically happens, right?
+
+552
+00:32:43,500 --> 00:32:49,120
+看见没？当数据首次出现在周末，那周几乎不算一周。
+Can you see when this first falls slightly late in the week, it's almost like that isn't a week.
+
+553
+00:32:49,500 --> 00:32:52,260
+这周就变成第一周，那周变第二周，那周变第三周。
+This becomes week one, that becomes week two, that becomes week three.
+
+554
+00:32:52,260 --> 00:32:55,168
+所以CPI
+And that's why you see CPI
+
+555
+00:32:55,168 --> 00:32:58,076
+会被挤进
+tend to get forced into that
+
+556
+00:32:58,076 --> 00:33:02,438
+那一周，因为那周几乎变成了第二周。
+week because it almost becomes like the week two.
+
+557
+00:33:02,800 --> 00:33:05,520
+还有散户销售数据。
+Then you've got retail sales as well.
+
+558
+00:33:06,520 --> 00:33:08,200
+我们来看一下。
+So, let's just have a look here.
+
+559
+00:33:08,320 --> 00:33:11,260
+散户销售。对，就是散户销售。
+Retail sales. Yeah. So, you've got retail sales.
+
+560
+00:33:11,400 --> 00:33:15,760
+同样，散户销售因为这周被推迟了，对吧？
+Now, again, retail sales, because this week gets pushed, right?
+
+561
+00:33:15,880 --> 00:33:22,040
+散户销售可能有点人为，被拉到那周，清楚吗？
+Retail sales, it can be a little bit artificial. It gets dragged into that week, okay?
+
+562
+00:33:22,720 --> 00:33:25,860
+时间上其实是对的。
+In terms of the timing, that timing is actually right.
+
+563
+00:33:25,960 --> 00:33:32,700
+想想之前的散户销售，15、16、17号左右，时间差不多。
+If you think about when previous retail sales were, did you see? 15, 16, 17. It's around about the right ballpark figure.
+
+564
+00:33:32,900 --> 00:33:37,820
+有时会早几天。当然，我之前说的，但这次不是，对吧？
+Sometimes it can be early. Obviously, a couple days early, as I said. That wasn't the case, okay?
+
+565
+00:33:37,820 --> 00:33:40,875
+所以别误会，别以为
+So, don't get confused and think, hey,
+
+566
+00:33:40,875 --> 00:33:44,366
+统计局或人口普查局
+the agency, the Bureau, Census Bureau that collects
+
+567
+00:33:44,366 --> 00:33:50,039
+提前拿到了数据。不是这样。
+this data has actually managed to get the data early. It's not that.
+
+568
+00:33:50,520 --> 00:33:53,745
+而是因为一周开始的方式
+It's because of the artificial way that the week started
+
+569
+00:33:53,745 --> 00:33:55,680
+在周初和周中
+on the first and the middle
+
+570
+00:33:55,680 --> 00:34:00,196
+的时间点人为导致的。16天刚好落在这儿，懂了吗？
+of the week. 16 days happened to fall, kind of in this. Do you see?
+
+571
+00:34:00,740 --> 00:34:02,900
+这其实有点争议，
+It's kind of, it's debatable whether that
+
+572
+00:34:02,900 --> 00:34:05,060
+这算第一周还是
+is week one or whether that is
+
+573
+00:34:05,060 --> 00:34:09,998
+第一周？因为这只是半周。所以得看你怎么理解，好吗？
+week one, because that's only half a week. So, it depends how you argue it, okay?
+
+574
+00:34:10,020 --> 00:34:11,260
+所以这只是人为设定的数据。
+So, it's just artificial data.
+
+575
+00:34:11,620 --> 00:34:13,203
+如果你认为这是第一周，
+If you think that is week one,
+
+576
+00:34:13,203 --> 00:34:14,786
+那其实算是第二周。如果
+then it's kind of week two. If
+
+577
+00:34:14,786 --> 00:34:18,858
+你把它当第一周，那么散户销售数据就正好在第三周，好吗？
+you consider that to be week one, then retail sales is in the right place week three, okay?
+
+578
+00:34:18,860 --> 00:34:20,604
+所以这只是人为设定，
+So, it's just artificial, just
+
+579
+00:34:20,604 --> 00:34:23,744
+只是日历排列的问题，但说到底，
+the way the calendar falls sometimes, but ultimately, as
+
+580
+00:34:23,744 --> 00:34:28,279
+我一直说，散户销售数据并不是突然出现的。
+I keep saying, it's not like suddenly retail sales is there. It's not.
+
+581
+00:34:28,400 --> 00:34:34,940
+它本就该在这个位置。一切都在按预期运行。这个双重验证也证明了这一点。
+It's where it's supposed to be. Everything's working exactly as it should. This double check shows us that.
+
+582
+00:34:35,440 --> 00:34:40,520
+然后9月22日有FOMC会议，你看到了吗？
+Then we've got FOMC on September 22nd, which, can you see that there?
+
+583
+00:34:41,260 --> 00:34:42,659
+这一点非常、非常关键。
+So, obviously, very, very important.
+
+584
+00:34:42,659 --> 00:34:45,686
+接下来我们可以看
+And then we can almost go
+
+585
+00:34:45,686 --> 00:34:48,713
+最后一个
+on to, we've got the final
+
+586
+00:34:48,713 --> 00:34:53,758
+GDP数据，这周它其实不太重要。
+GDP, which, again, isn't that important for that particular week.
+
+587
+00:34:54,040 --> 00:34:56,000
+现在我们可以进入10月了。
+We can actually go into October now.
+
+588
+00:34:59,240 --> 00:35:06,240
+抱歉。10月。10月的排列有点尴尬，对吧？
+Sorry. October. October, again, bit of an awkward month in terms of where things fall, right?
+
+589
+00:35:06,280 --> 00:35:11,380
+因为你能看到1号，那周只有一天。
+Because can you see the first? It's the only day in the whole week then.
+
+590
+00:35:11,380 --> 00:35:19,180
+所以我们预期制造业数据会在第一个工作日，好吗？
+So, we're kind of expecting manufacturing, because it's the first business day, to be there, okay?
+
+591
+00:35:19,660 --> 00:35:26,350
+现在你知道吗？我们原本预期非农数据。
+Now, you know what? We were expecting payrolls.
+
+592
+00:35:26,870 --> 00:35:31,090
+月后的第一个周五。月后第一个周五是哪天？
+First Friday after the month ends. What's the first Friday after the month ended?
+
+593
+00:35:31,710 --> 00:35:39,130
+就是这天，好吗？这是全年唯一一个不是那个日期的月份，好吗？
+That, okay? This is the only month in the whole year where it wasn't on that day, okay?
+
+594
+00:35:39,130 --> 00:35:41,510
+实际上，它在8号。
+It's actually, there we go, on the 8th.
+
+595
+00:35:41,510 --> 00:35:48,470
+这并不意味着这个可重复模式不适用。实际上，它非常有效。
+That doesn't mean that this doesn't work. In fact, it does very, very well.
+
+596
+00:35:49,270 --> 00:35:50,182
+猜猜看，
+Have a guess,
+
+597
+00:35:50,182 --> 00:35:51,702
+对吧？可以暂停视频。
+right? Maybe pause this video.
+
+598
+00:35:51,702 --> 00:35:53,830
+试着猜猜为什么
+Try and have a guess why you
+
+599
+00:35:53,830 --> 00:35:58,087
+在这个月，非农数据被推到了下一个周五，好吗？
+think, on this one month, the payrolls got pushed to the next Friday, okay?
+
+600
+00:35:58,330 --> 00:36:02,590
+问题是，他们不能在周一发布，因为它总是在周五，好吗？
+The problem is, they can't do it on the Monday, because it's always on the Friday, okay?
+
+601
+00:36:02,590 --> 00:36:08,430
+这就是发布的规则，他们不能选周一，必须是周五
+It's the way the release happens. They can't do it on the Mondays. It's always on the Friday.
+
+602
+00:36:09,550 --> 00:36:12,850
+你觉得为什么这次没按时发布？
+Why do you think that it didn't happen, okay?
+
+603
+00:36:13,010 --> 00:36:17,910
+我从没核对过，但我几乎能确定原因
+Now, I've never checked this, but I'm almost 100% certain why this is.
+
+604
+00:36:17,910 --> 00:36:23,870
+所以说，有时候你得动用分析思维
+This is why I say, sometimes, you know, you've just got to use your analytical, critical thinking.
+
+605
+00:36:24,030 --> 00:36:29,890
+对我而言这完全合理，我几乎能确定原因
+And for me, it makes total sense. And I'm almost 100% certain that the reason this happened.
+
+606
+00:36:31,940 --> 00:36:34,160
+好，还记得我之前说的吗？
+Right, so do you remember what I said, right?
+
+607
+00:36:34,160 --> 00:36:45,620
+这些机构，比如这次的美国劳工统计局，BLS
+Now, these agencies, right, so in this instance, it's the, what they call the Bureau of Labor Statistics, the BLS.
+
+608
+00:36:45,960 --> 00:36:51,600
+他们在收集各行业的非农就业数据
+They are collecting data, okay, from X, Y, Z industry about the payroll situation.
+
+609
+00:36:52,020 --> 00:36:54,420
+然后整理这些数据，得出最终数值
+They're putting it all together, and they're coming up with this number.
+
+610
+00:36:54,420 --> 00:36:58,328
+正常情况下，比如在
+What normally happens, right, on a
+
+611
+00:36:58,328 --> 00:37:02,236
+一个普通月份，比如9月
+given normal month, let's say September,
+
+612
+00:37:02,236 --> 00:37:08,098
+8月，随便哪个月，比如8月
+August, whatever that month is. Let's say it's August.
+
+613
+00:37:08,660 --> 00:37:11,090
+你同意吗？周五是6号
+Would you agree, Friday the 6th,
+
+614
+00:37:11,090 --> 00:37:13,520
+对，就是那里
+right, there. Sorry, just click the
+
+615
+00:37:13,520 --> 00:37:15,545
+点一下周视图，你就能看到
+week, so you can see
+
+616
+00:37:15,545 --> 00:37:21,620
+确实是周五6号，看到了吧？周五6号
+it's actually Friday the 6th. There you go. Can you see? Friday the 6th, there.
+
+617
+00:37:22,840 --> 00:37:24,720
+非农数据就出来了
+The payrolls data came out, right?
+
+618
+00:37:24,720 --> 00:37:31,980
+按照惯例，第一个周五发布的是上月数据，是7月的
+So, as we expect on a first Friday, what data is that for? It's for July, the month before.
+
+619
+00:37:33,880 --> 00:37:38,380
+记得吗？我们说数据是上月的
+Remember how we said the month before here, and then the data is for that previous month.
+
+620
+00:37:39,000 --> 00:37:44,220
+劳工统计局有多少天来收集数据？
+How many days did the Bureau have to collect this data?
+
+621
+00:37:44,800 --> 00:37:52,920
+7月什么时候结束的？一周前就结束了
+When did the previous month end, July? It ended here, didn't it? A week earlier.
+
+622
+00:37:52,920 --> 00:38:00,080
+天呐，他们整整有一周时间收集数据，甚至月份结束后还有一周
+Gee, they had this entire week to collect data, even after the month ended.
+
+623
+00:38:01,240 --> 00:38:09,740
+7月有30天还是31天？我都记不清了，31天，周日31号
+So, you know, it would have been, has it got 30 days or 31, I can't even remember. 31 days. Sunday the 31st.
+
+624
+00:38:09,740 --> 00:38:16,920
+别忘了，不能收集未结束月份的数据，月份得先结束
+Don't forget, you can't collect data for a month that hasn't ended. The month needs to end first, okay?
+
+625
+00:38:16,980 --> 00:38:23,840
+所以7月31号月份结束，然后数据才开始汇总
+So, you've got July 31st. Month ends, then the data starts coming in, right?
+
+626
+00:38:23,880 --> 00:38:24,720
+他们收集所有数据
+They get all the data.
+
+627
+00:38:25,700 --> 00:38:30,160
+有五六天时间
+They have one, two, three, four, five, six, almost five, six days
+
+628
+00:38:30,160 --> 00:38:34,620
+来整理7月的数据，然后发布
+to put all this data together for July, and then release it.
+
+629
+00:38:35,900 --> 00:38:39,260
+那我们现在看的这个月发生了什么？
+What happened in the month we're just looking at now?
+
+630
+00:38:40,280 --> 00:38:43,080
+有什么不同？
+How is it different? Right?
+
+631
+00:38:43,360 --> 00:38:44,240
+我们来看10月。
+We'll look at October.
+
+632
+00:38:45,360 --> 00:38:46,920
+上个月是何时结束的？
+When did the previous month end?
+
+633
+00:38:47,020 --> 00:38:50,100
+现在，10月的数据，其实是9月的。
+Now, October, right, is the data for September.
+
+634
+00:38:50,900 --> 00:38:51,600
+它是何时结束的？
+When did it end?
+
+635
+00:38:51,720 --> 00:38:54,820
+就是前一天，对吧？你能看出来吗？
+The day before, right? Can you see?
+
+636
+00:38:55,120 --> 00:39:00,280
+8月时，统计局有1、2、3、4、5、6天。
+In August, the Bureau had one, two, three, four, five, six days here.
+
+637
+00:39:01,260 --> 00:39:05,520
+他们需要多少天来收集并整理数据？
+How many days did they have to collect the data and put it together?
+
+638
+00:39:06,360 --> 00:39:10,600
+其实不用，9月30日数据还在持续涌入。
+Nothing. They would have had data pouring through on the September the 30th.
+
+639
+00:39:10,600 --> 00:39:12,140
+如果他们想给我们数据，
+If they're trying to give us data
+
+640
+00:39:12,140 --> 00:39:13,240
+9月的数据，然后发布，
+for September and then release
+
+641
+00:39:13,240 --> 00:39:15,440
+第二天就发布，不可能，对吧？
+it on the next day, not going to happen, right?
+
+642
+00:39:15,520 --> 00:39:16,900
+对他们来说非常困难。
+Very, very difficult for them.
+
+643
+00:39:17,720 --> 00:39:20,060
+所以，我从来没核对过这点。
+That is why, I've never double checked this.
+
+644
+00:39:20,200 --> 00:39:20,580
+不客气。
+You're welcome.
+
+645
+00:39:20,760 --> 00:39:23,120
+我懒得查，因为我几乎100%确定。
+I'm not even going to bother because I'm almost 100% certain.
+
+646
+00:39:23,720 --> 00:39:24,900
+这就是原因所在。
+That is what the reason was.
+
+647
+00:39:25,260 --> 00:39:27,740
+而且我不确定你能不能搜到或在哪里找到。
+And I don't even know if you'll be able to Google or find it anywhere.
+
+648
+00:39:28,120 --> 00:39:29,325
+就像我说的，
+Like I said, to
+
+649
+00:39:29,325 --> 00:39:31,132
+对我来说，这明显是他们
+me, it's just obvious that they
+
+650
+00:39:31,132 --> 00:39:33,542
+把发布推到那一周，因为这样
+then push it to that week because it
+
+651
+00:39:33,542 --> 00:39:37,458
+能多给他们几天收集9月的数据，对吧？
+gives them a few days here to collect the data for September, right?
+
+652
+00:39:37,540 --> 00:39:38,380
+合理，对吧？
+Makes sense, right?
+
+653
+00:39:38,380 --> 00:39:39,360
+所以这就是原因。
+So that is why.
+
+654
+00:39:40,460 --> 00:39:41,960
+为什么我反复强调这点？
+Why do I go on and on about that?
+
+655
+00:39:42,000 --> 00:39:43,970
+因为这是最重要的，和
+Because it's the most important, along with
+
+656
+00:39:43,970 --> 00:39:45,940
+每月的FMC发布一样，
+the FMC release of the month, you
+
+657
+00:39:45,940 --> 00:39:47,347
+你必须知道这些。
+need to know these things
+
+658
+00:39:47,347 --> 00:39:49,317
+知道这些，真的有好处。
+about, you know, it's good to know.
+
+659
+00:39:49,420 --> 00:39:49,920
+知道这些有好处。
+It's good to know.
+
+660
+00:39:49,980 --> 00:39:50,720
+你不用知道。
+You don't have to know.
+
+661
+00:39:50,720 --> 00:39:54,200
+我的意思是，有了日历你就能知道，哦，在这个特定的月份里
+I mean, once you've got the calendar there to tell you, oh, in this particular month,
+
+662
+00:39:54,240 --> 00:39:54,840
+数据会晚一周发布
+it's a week late.
+
+663
+00:39:55,020 --> 00:39:55,680
+但知道这一点很有用
+But it's good to know.
+
+664
+00:39:56,560 --> 00:39:57,500
+了解这些信息很有帮助
+Good to know these things.
+
+665
+00:39:58,560 --> 00:39:59,280
+这是我的猜测
+That's my guess.
+
+666
+00:39:59,400 --> 00:40:03,320
+所以下周数据才会稍晚发布
+That's why it came slightly late the following week.
+
+667
+00:40:03,380 --> 00:40:04,000
+所以被推迟了
+So it got pushed.
+
+668
+00:40:04,000 --> 00:40:09,240
+我们知道服务业数据是3个工作日，所以是第一、第三、第四周，对吧？
+We know services was three business days, so first, third, fourth, right?
+
+669
+00:40:09,320 --> 00:40:11,180
+所以你能看到服务业数据的位置
+So you can see the services there.
+
+670
+00:40:11,440 --> 00:40:16,900
+抱歉，是第一、第四、第五周。第四周是周一（第二个工作日），第五周是第三个工作日
+Sorry, first, fourth and fifth. Fourth being the Monday, the second business day, fifth being the third business day.
+
+671
+00:40:18,420 --> 00:40:22,000
+别忘了，如果你关注原油库存，那里有每周数据
+Don't forget, if you follow Crude Oil Inventories, there you've got it there, the weekly.
+
+672
+00:40:23,100 --> 00:40:25,980
+你的CPI在第二周，对吧？
+You've got your CPI, right? Week two.
+
+673
+00:40:26,520 --> 00:40:27,983
+还记得我们之前说的
+Do you remember, as we said,
+
+674
+00:40:27,983 --> 00:40:30,177
+如果起始较晚，你几乎可以
+when you've got a late start, you can almost
+
+675
+00:40:30,177 --> 00:40:34,078
+把那一周排除在周数统计之外，第一周、第二周
+exclude that week as being a week in terms of the counting, week one, week two.
+
+676
+00:40:34,160 --> 00:40:35,640
+你可以把它算作第一周
+You can consider that to be week one.
+
+677
+00:40:35,720 --> 00:40:38,060
+第二周就是CPI
+Week two, you've got your CPI.
+
+678
+00:40:39,340 --> 00:40:46,900
+零售销售数据，显然，由于周数安排的原因，被挤到了那个位置
+Retail sales, obviously, again, because of the way the weeks fell, it got squeezed into that spot there.
+
+679
+00:40:46,900 --> 00:40:52,580
+加上他们可能提前一天拿到了数据
+Plus the fact that they may have got the data slightly a day early or so.
+
+680
+00:40:52,820 --> 00:40:55,960
+所以又稍微推迟了，但基本都在预期的位置
+So again, it got slightly pushed, but all in the right place, as expected.
+
+681
+00:40:57,480 --> 00:40:59,300
+大致都在正确的位置
+Approximately all in the right place.
+
+682
+00:41:00,700 --> 00:41:01,780
+然后我们继续看
+We then go out.
+
+683
+00:41:02,000 --> 00:41:03,100
+第三周什么都没有
+Nothing week three.
+
+684
+00:41:03,220 --> 00:41:06,340
+我们知道零售销售已经在那个周五发布了
+We know retail sales already happened on that Friday there.
+
+685
+00:41:07,240 --> 00:41:09,240
+所以那里什么都没有，对吧？
+So there's nothing. There's nothing there, right?
+
+686
+00:41:09,720 --> 00:41:14,800
+十月我们知道没有FOMC会议，因为日历上十月没有会议
+And we also know in October there's no FOMC because a calendar has no meeting in October.
+
+687
+00:41:14,800 --> 00:41:16,630
+但有时这会
+But sometimes that can put a
+
+688
+00:41:16,630 --> 00:41:19,071
+稍微更多一点，该怎么说呢
+little bit more, how do I say it,
+
+689
+00:41:19,071 --> 00:41:25,479
+让市场更关注美联储在会议间隙的讲话
+focus on what the Fed is saying during his speeches when there is a bit of a gap between FOMC meetings.
+
+690
+00:41:25,560 --> 00:41:26,460
+但间隔并不大
+But it isn't a big gap.
+
+691
+00:41:26,980 --> 00:41:30,060
+看，你会发现 第三周直接连到11月第一周
+Look, you see there, it's week three straight onto the first week of November.
+
+692
+00:41:30,200 --> 00:41:31,800
+又不是11月的第四周
+It's not like it's the fourth week of November.
+
+693
+00:41:32,040 --> 00:41:37,420
+所以你可能会更关注美联储主席的讲话
+So you might have a little bit more focus on what the Fed chairman is saying.
+
+694
+00:41:38,480 --> 00:41:39,740
+没有一成不变的规则
+No hard and fast rules.
+
+695
+00:41:39,860 --> 00:41:41,255
+还有初值GDP数据
+And you've got advanced GDP,
+
+696
+00:41:41,255 --> 00:41:43,208
+这显然会
+which is obviously going to be a
+
+697
+00:41:43,208 --> 00:41:46,278
+受到极大关注，因为本月没有FOMC会议
+lot of focus on that because there's no FOMC this month.
+
+698
+00:41:46,380 --> 00:41:48,900
+你有初值GDP数据
+You've got the advanced GDP.
+
+699
+00:41:49,120 --> 00:41:50,620
+所以很多人都会关注这个
+So a lot of people will be looking at that.
+
+700
+00:41:51,120 --> 00:41:53,558
+但这是人们首次
+But this is the first opportunity for people
+
+701
+00:41:53,558 --> 00:41:55,996
+能看到整体经济状况
+to see what the economic situation was as
+
+702
+00:41:55,996 --> 00:42:01,178
+别忘了，我在上一模块讲过GDP是什么
+a whole in terms of, don't forget, I talked about in the last module what GDP is.
+
+703
+00:42:01,260 --> 00:42:08,180
+我们把所有数据整合成一个数字，加上其他数百个数据发布
+We're bringing everything together into kind of one number plus another several hundred data releases.
+
+704
+00:42:08,180 --> 00:42:11,600
+但说到底，我们把所有数据整合在一起
+But ultimately, we're bringing everything together.
+
+705
+00:42:12,360 --> 00:42:18,300
+所以那一周的关注度会非常高，我们已完美标注出来
+So that would be quite a big, heavy focus in that week, which we have here marked out perfectly.
+
+706
+00:42:19,540 --> 00:42:21,920
+好，最近几个月就是这样
+Okay. Last couple of months and then we're there.
+
+707
+00:42:23,260 --> 00:42:24,700
+11月，你可以用这个方法
+November again, you can play the game.
+
+708
+00:42:24,820 --> 00:42:25,520
+你预期什么？
+What are you expecting?
+
+709
+00:42:25,860 --> 00:42:32,180
+11月第一周是制造业、服务业数据，几天后是非农
+First week of November, manufacturing, services couple days later and then payrolls on the Friday.
+
+710
+00:42:32,180 --> 00:42:33,480
+是不是这样？
+Is that what we get?
+
+711
+00:42:33,800 --> 00:42:34,520
+没错
+Yes, we do.
+
+712
+00:42:35,120 --> 00:42:38,340
+制造业、服务业，几天后是非农
+Manufacturing, services couple days later, payrolls.
+
+713
+00:42:39,680 --> 00:42:42,700
+希望你能看出这不是我凭空编的
+Hopefully you can see this is not something I've just made up.
+
+714
+00:42:42,880 --> 00:42:50,540
+好，世界上顶尖交易者在基本面交易时就是这样组织的
+Okay. This is how the very best traders in the world organize their trading when it comes to fundamentals.
+
+715
+00:42:50,800 --> 00:42:51,640
+就是这样
+Okay. Like this.
+
+716
+00:42:52,660 --> 00:42:57,800
+而不是你在这里看到的，我也看到每个人都在这样做
+Not what you see here. And I see every single person doing.
+
+717
+00:42:58,560 --> 00:43:00,320
+不是那样
+Okay. Not that.
+
+718
+00:43:00,320 --> 00:43:02,040
+好，我不知道那是什么
+Okay. I don't know what that is.
+
+719
+00:43:02,100 --> 00:43:03,340
+我不知道大家在干什么
+I don't know what people are doing.
+
+720
+00:43:04,240 --> 00:43:05,420
+这完全荒谬
+It's complete ridiculous.
+
+721
+00:43:05,600 --> 00:43:06,480
+完全胡说。
+Complete nonsense.
+
+722
+00:43:07,780 --> 00:43:10,700
+我都无话可说了。
+You know, I don't even have words for it.
+
+723
+00:43:10,900 --> 00:43:12,040
+这简直太可笑了。
+It's completely silly.
+
+724
+00:43:12,500 --> 00:43:16,480
+好，这稍微好点。就一点点。但其实也不对。
+Okay. That's a little bit better. A little bit. But it isn't.
+
+725
+00:43:16,600 --> 00:43:17,840
+其实好不了多少。
+Okay. It isn't that much better.
+
+726
+00:43:18,260 --> 00:43:20,157
+就算你现在看到的这些，你
+Even what you see here. You
+
+727
+00:43:20,157 --> 00:43:22,054
+知道，有人会在周三醒来，
+know, people waking up on a
+
+728
+00:43:22,054 --> 00:43:24,899
+然后查，哦，今天有FOMC。
+Wednesday and checking, oh, I got the FOMC today.
+
+729
+00:43:25,000 --> 00:43:26,940
+或者周一醒来，哦，今天有制造业数据。
+Oh, waking up on a Monday. Oh, I got manufacturing.
+
+730
+00:43:27,160 --> 00:43:27,320
+不对。
+No.
+
+731
+00:43:27,320 --> 00:43:35,080
+这个模式会提前告诉你，你会知道的。它几乎会刻进你的系统里。
+This will tell you well in advance. You will know. It will almost be ingrained in your system.
+
+732
+00:43:36,580 --> 00:43:38,900
+下个月第一周，制造业数据。
+Next month, week one, manufacturing.
+
+733
+00:43:39,720 --> 00:43:45,140
+其实我都不需要看日历。制造业、服务业，周五非农。
+In fact, I'm not even going to look there. Manufacturing, services, and payrolls Friday.
+
+734
+00:43:45,140 --> 00:43:50,920
+我建议你这样做：同样练习，背下来。
+This is what I would suggest you do. The same exercise. Try and just know it off by heart.
+
+735
+00:43:51,560 --> 00:43:54,680
+第二周，通胀数据，CPI。
+Week two, we have inflation data, the CPI.
+
+736
+00:43:54,780 --> 00:43:56,887
+第三周，零售销售数据，
+Week three, we have retail sales,
+
+737
+00:43:56,887 --> 00:43:58,994
+对吧？然后可能有FOMC，
+right? And then potentially FOMC, depending
+
+738
+00:43:58,994 --> 00:44:02,858
+看它落在哪一周，通常是第三或第四周。
+if it falls in that week. Three or week four, typically.
+
+739
+00:44:03,040 --> 00:44:04,940
+第四周，GDP数据。
+And then week four, we've got GDP.
+
+740
+00:44:05,320 --> 00:44:08,640
+好了，就是这样。记住它。
+Okay. There you go. Know it.
+
+741
+00:44:09,240 --> 00:44:10,555
+你应该能做到，
+You should be able to go,
+
+742
+00:44:10,555 --> 00:44:14,500
+虽然有点悲，但你去酒吧都能背出日历，对吧？
+and this bit sad, you should be able to go to the pub and know the calendar, right?
+
+743
+00:44:14,580 --> 00:44:15,180
+就记住它。
+Just know it.
+
+744
+00:44:16,080 --> 00:44:20,560
+唯一的方法就是把它列出来，然后练习，好吗？
+And the only way you can do that is by having this laid out and practicing, okay?
+
+745
+00:44:20,620 --> 00:44:22,160
+最后它会变成你的本能。
+And then eventually it becomes second nature.
+
+746
+00:44:23,000 --> 00:44:25,900
+你几乎能看出来我在证明给你看。
+You can almost see I'm doing it because I want to prove it to you.
+
+747
+00:44:25,980 --> 00:44:32,960
+每周开始前，我就知道CPI要来了。看，CPI。
+Before I can open the week, I know CPI is going to be there. And there it is, CPI.
+
+748
+00:44:33,600 --> 00:44:40,060
+第三周，我们说零售销售数据，对吧？因为这是正常月，符合正常模式。
+Week three, we said retail sales, right? Because it's a normal month, it falls in the kind of normal pattern.
+
+749
+00:44:43,550 --> 00:44:50,490
+没有FOMC，因为第一周已经发布过了，对吧？第一周就有FOMC。
+No FOMC because we had it in the first week, didn't we? We had FOMC in the first week.
+
+750
+00:44:51,310 --> 00:44:55,190
+所以第一周其实数据挺多的，是不是？
+So actually, this first week was pretty heavy, wasn't it?
+
+751
+00:44:55,190 --> 00:45:02,210
+你想想，第一周有制造业、服务业、FOMC，还有非农，对吧？
+If you think about it, we had manufacturing, we had services, we had the FOMC, and we had payrolls, okay?
+
+752
+00:45:02,250 --> 00:45:04,530
+所以你知道这是你必须应对的重要一周。
+So you know that's a big week you need to navigate.
+
+753
+00:45:05,170 --> 00:45:07,350
+你可以提前为这周做准备。
+Well in advance, you can be preparing for that.
+
+754
+00:45:09,750 --> 00:45:11,150
+回到第三周的零售销售数据。
+Back to retail sales week three.
+
+755
+00:45:11,490 --> 00:45:14,974
+然后我们知道不会有初步GDP，因为
+And then we know we've got not advanced GDP because
+
+756
+00:45:14,974 --> 00:45:17,761
+Q3的初步GDP已经在10月发布过了。
+we already had it in October for Q3.
+
+757
+00:45:17,761 --> 00:45:20,548
+剩下的是初步值，重要性不高。
+We've got the preliminary, which isn't as important.
+
+758
+00:45:20,690 --> 00:45:21,530
+他们会发布初步值。
+They get the preliminary.
+
+759
+00:45:22,850 --> 00:45:24,490
+然后还有会议纪要。
+And then you've got the meeting minutes.
+
+760
+00:45:25,070 --> 00:45:27,810
+我快速说说会议纪要。
+You know, let me just talk about the meeting minutes very quickly.
+
+761
+00:45:27,810 --> 00:45:33,270
+所以这里的会议纪要，通常会在三周后发布。
+So the meeting minutes, which you've got here, are typically three weeks later.
+
+762
+00:45:33,390 --> 00:45:39,730
+会发生的是，第一周会发布FOMC声明，对吧？
+So what will happen is, you've got the FOMC release statement, right?
+
+763
+00:45:39,930 --> 00:45:45,670
+第一周发布。然后三周后，数一下，一、二、三，就是会议纪要。
+First week. And then three weeks later, can you see? One, two, three. You've got the meeting minutes.
+
+764
+00:45:46,250 --> 00:45:51,490
+会议纪要其实没那么重要，声明才更关键。
+The meeting minutes are not that important. It's kind of more just the statement.
+
+765
+00:45:51,490 --> 00:45:54,499
+他们在第一周会发布一份声明，对吧？
+They release a statement, right, in the first
+
+766
+00:45:54,499 --> 00:45:57,508
+这份FOMC声明基本上会
+week, this FOMC statement, which pretty much tells
+
+767
+00:45:57,508 --> 00:46:00,893
+告诉你他们的计划，比如利率方面
+you, lays out what their plans are, the rates
+
+768
+00:46:00,893 --> 00:46:13,307
+还有资产负债表的计划，比如是否有量化宽松，或通过资产负债表进行刺激。
+and, you know, their plans when it comes to the balance sheet in terms of whether they've, you know, got any sort of quantitative easing going on, any stimulus from the balance sheet.
+
+769
+00:46:13,310 --> 00:46:16,517
+他们是否会购买国债，或者扩大
+Are they going to be buying treasuries or building up
+
+770
+00:46:16,517 --> 00:46:18,441
+资产负债表，显然是在
+their balance sheet and obviously putting,
+
+771
+00:46:18,441 --> 00:46:21,969
+向经济注入现金，刺激经济？
+helping cash go into the economy, which obviously boosts the economy?
+
+772
+00:46:22,190 --> 00:46:24,245
+还是什么都不做？或者，
+Or are they doing none of that? Or,
+
+773
+00:46:24,245 --> 00:46:25,786
+他们对
+you know, what's their views on
+
+774
+00:46:25,786 --> 00:46:28,869
+通胀和就业市场的看法如何？声明里都会总结得很清楚。
+things and inflation and jobs market? And it's all very well summarized.
+
+775
+00:46:29,310 --> 00:46:35,790
+会议纪要会详细描述每位委员的讨论内容，还有更多细节。
+The minutes go into more details, obviously, about what each member may have been talking about. And there's further details.
+
+776
+00:46:35,870 --> 00:46:37,250
+这些内容我们后面会讲。
+And we are going to talk about those things.
+
+777
+00:46:37,310 --> 00:46:44,630
+但会议纪要相对次要，因为它晚三周，提供深度洞察。
+But that's why it takes kind of a backseat. Because it's three weeks later, anyway, provides in-depth insights.
+
+778
+00:46:45,870 --> 00:46:48,490
+但声明里几乎已经包含所有关键信息。
+But you've already pretty much had everything in the statement.
+
+779
+00:46:49,190 --> 00:46:51,017
+不过看看纪要也好，
+But it's nice to look at, kind of
+
+780
+00:46:51,017 --> 00:46:52,616
+看看有没有声明里没提到的
+see what, is there anything that wasn't
+
+781
+00:46:52,616 --> 00:46:55,129
+声明中提到的细节都有更多补充说明
+mentioned in the statement that more details have been given around.
+
+782
+00:46:55,190 --> 00:46:58,710
+但交易者通常不会特别关注这些
+But generally, a lot less focus from traders on that.
+
+783
+00:46:59,570 --> 00:47:05,550
+最后一个月的周数略短，一、二、三周
+And then the final month, again, slightly truncated week there, one, two, three.
+
+784
+00:47:05,550 --> 00:47:11,090
+所以日历可能需要微调
+So therefore, we expect the calendar to be slightly, you know, need to be fine-tuned.
+
+785
+00:47:11,530 --> 00:47:14,190
+第一个工作日是制造业数据
+You've got manufacturing there on the first business day.
+
+786
+00:47:14,910 --> 00:47:17,390
+还有服务业和非农就业数据，对吧？
+And you've got the services and you've got the payrolls, okay?
+
+787
+00:47:17,450 --> 00:47:20,467
+原来的模式是
+So rather than it being, all that's happened is rather
+
+788
+00:47:20,467 --> 00:47:23,484
+周一、周三、周五，现在变成周三、周五
+than it being Monday, Wednesday, Friday, it's become Wednesday, Friday,
+
+789
+00:47:23,484 --> 00:47:25,897
+周五。制造业数据在周三，服务业在
+Friday. As in manufacturing on Wednesday, services on
+
+790
+00:47:25,897 --> 00:47:28,009
+周五，非农也在周五
+the Friday and payrolls on the Friday.
+
+791
+00:47:28,130 --> 00:47:31,430
+但本质上，它还是该有的样子
+But for all intents and purposes, it's doing exactly what it should.
+
+792
+00:47:31,710 --> 00:47:34,590
+第一周，第一个工作日是制造业
+It's in the first week. It's on the first business day, manufacturing.
+
+793
+00:47:34,590 --> 00:47:36,150
+第三个工作日是服务业
+It's on the third business day, services.
+
+794
+00:47:36,670 --> 00:47:40,270
+第一个周五是非农，对吧？
+And it's on the first Friday, okay?
+
+795
+00:47:40,630 --> 00:47:41,605
+看到了吗？他们
+Do you see, they
+
+796
+00:47:41,605 --> 00:47:43,068
+没有硬推。这次他们
+didn't push it. This time they
+
+797
+00:47:43,068 --> 00:47:48,189
+给了劳工统计局几天时间整理数据
+had a couple of days. The Bureau for Labor Statistics to get all the data together had a couple of days.
+
+798
+00:47:48,230 --> 00:47:50,470
+所以他们按正常流程发布
+So they were happy to do it as they should.
+
+799
+00:47:50,690 --> 00:47:56,930
+如果是12月1日，可能非农会推到下一周，对吧？
+If this was December the 1st, we might have expected the payrolls to be the following week, right?
+
+800
+00:47:56,950 --> 00:48:01,630
+因为就像我之前说的，这样11月30日到1日之间就没多少时间了
+Because like I said, it then doesn't give them much time between November the 30th and the 1st.
+
+801
+00:48:01,630 --> 00:48:09,110
+得立刻发布，这显然不太现实
+They have to almost release it immediately, which obviously is not necessarily plausible for them to do that.
+
+802
+00:48:10,410 --> 00:48:13,170
+第二周是CPI，和预期一致
+Second week, we've got CPI as expected.
+
+803
+00:48:13,570 --> 00:48:16,670
+第三周是散户销售数据，也符合预期
+Third week, we've got retail sales as expected.
+
+804
+00:48:17,870 --> 00:48:20,470
+最后一周是最终GDP
+And then obviously going into the final week, we've got the final GDP.
+
+805
+00:48:20,890 --> 00:48:23,890
+好，各位。希望你不需要相信我
+Okay, ladies and gentlemen. Hopefully there, you don't even need to take my word for it.
+
+806
+00:48:23,890 --> 00:48:26,392
+自己验证后，你会坐在那里想
+We've done the exercise yourself and you're sitting
+
+807
+00:48:26,392 --> 00:48:28,268
+哇，太棒了
+there thinking, wow, amazing. This is
+
+808
+00:48:28,268 --> 00:48:30,144
+这会让我的交易变得
+going to make my life so
+
+809
+00:48:30,144 --> 00:48:31,708
+简单太多了。这方法太棒了
+much easier. This is brilliant.
+
+810
+00:48:31,850 --> 00:48:33,270
+希望你觉得这非常有用
+Hopefully you found that very useful.
+
+811
+00:48:34,030 --> 00:48:36,376
+现在我要留给你的任务是,
+What I'm going to leave you to do,
+
+812
+00:48:36,376 --> 00:48:38,722
+我们可以一起做，也可以
+we can do it together, but we can
+
+813
+00:48:38,722 --> 00:48:41,362
+快速过一遍，但你可以
+almost fly through it, but maybe you can kind
+
+814
+00:48:41,362 --> 00:48:45,468
+比我带你做的更详细。
+of do it in much more detail than I'm going to do with you.
+
+815
+00:48:46,730 --> 00:48:48,990
+你可以查看日历，核对失业救济申请数据。
+You can go through the calendar and just check claims.
+
+816
+00:48:49,110 --> 00:48:51,150
+我们快速看一下这些次要数据。
+Let's check these peripheral ones very, very quickly.
+
+817
+00:48:51,830 --> 00:48:52,370
+你会发现的。
+You'll see.
+
+818
+00:48:53,750 --> 00:48:55,811
+你需要做的是,
+What you'll have to do is
+
+819
+00:48:55,811 --> 00:48:58,559
+显然要关掉这个，因为有些
+obviously switch off that because obviously some of
+
+820
+00:48:58,559 --> 00:49:05,429
+可能被标为低影响，但我还是会关注。
+these might be categorized as low impact on this calendar, but I do like to keep my eye on them.
+
+821
+00:49:06,030 --> 00:49:07,090
+比如失业救济申请，你能看到。
+Claims, you can see that.
+
+822
+00:49:07,590 --> 00:49:08,990
+我们这里标了什么？每周四。
+What have we put here? Every Thursday.
+
+823
+00:49:09,330 --> 00:49:14,390
+好，我没每周都标，因为不想让日历太乱。
+Okay. I haven't put them here every Thursday because I don't want my calendar to get messy.
+
+824
+00:49:14,550 --> 00:49:16,990
+否则这里全是失业救济申请。
+Otherwise, I'll have claims here, claims here.
+
+825
+00:49:17,330 --> 00:49:18,630
+我早就知道，每周四都有。
+I already know. It's every Thursday.
+
+826
+00:49:18,690 --> 00:49:20,010
+我只需要在第一周标一次。
+I only need to put it in the first week.
+
+827
+00:49:20,550 --> 00:49:27,230
+每周四，你查整个日历，都会看到失业救济申请。
+Every Thursday, you can go through the whole calendar and you'll see unemployment claims every Thursday.
+
+828
+00:49:27,570 --> 00:49:29,830
+好，每周四。
+Okay. Every Thursday.
+
+829
+00:49:30,230 --> 00:49:30,610
+你懂了吗？
+Do you see?
+
+830
+00:49:30,690 --> 00:49:32,790
+你不用查日历。
+You don't need to check the calendar here.
+
+831
+00:49:33,670 --> 00:49:34,730
+这里已经标好了。
+You've already got it here.
+
+832
+00:49:34,830 --> 00:49:36,150
+你知道失业救济申请每周四都有。
+You know claims is every Thursday.
+
+833
+00:49:36,850 --> 00:49:38,130
+发布时不会惊讶。
+It's not a shock when it comes.
+
+834
+00:49:38,190 --> 00:49:38,710
+你早就知道了。
+You already knew.
+
+835
+00:49:38,890 --> 00:49:42,330
+你知道，你提前很久就知道每周四有这个数据。
+You know. You know well in advance that claims is every Thursday.
+
+836
+00:49:42,470 --> 00:49:43,130
+放轻松。
+Just have a drink.
+
+837
+00:49:45,380 --> 00:49:49,100
+你知道每周四都有，所以提前处理好。
+You know it's every Thursday, so obviously get that out of the way.
+
+838
+00:49:50,320 --> 00:49:53,800
+然后可以查会议纪要。
+Then you can check meeting minutes.
+
+839
+00:49:53,920 --> 00:49:56,220
+我想让你做的事，我们不一起做。
+What I want you to do, we won't do it together.
+
+840
+00:49:56,240 --> 00:49:59,820
+我不会逐一讲，但我们来看几个。
+I won't go through every single one, but let's do it. A couple of them.
+
+841
+00:50:00,320 --> 00:50:01,520
+会议是什么时候开的？
+When was the meeting?
+
+842
+00:50:01,900 --> 00:50:05,840
+1月27日开的会议。
+January the 27th was a meeting.
+
+843
+00:50:06,200 --> 00:50:08,320
+那我们来看FOMC的会议。
+So let's go to it. FOMC.
+
+844
+00:50:08,780 --> 00:50:12,380
+对，三周后我预期会议纪要会发布。
+Right. Three weeks later, I am expecting the minutes to come out.
+
+845
+00:50:12,640 --> 00:50:13,460
+是不是这样？
+Does that happen?
+
+846
+00:50:13,660 --> 00:50:14,200
+我们来验证一下。
+Let's check.
+
+847
+00:50:14,200 --> 00:50:18,520
+因为1月最后一周是1月27日，所以是2月第三周。
+So the third week of February, because this is the final week of Jan.
+
+848
+00:50:19,180 --> 00:50:26,680
+数一下：1、2、3，找到了，会议纪要。
+So where are we? One, two, three. There we go. Meeting minutes.
+
+849
+00:50:27,020 --> 00:50:29,720
+好的，和我预期的一模一样。
+Okay. Exactly what I expected.
+
+850
+00:50:29,920 --> 00:50:31,500
+所以我建议你做这个练习。
+So I want you to do this exercise.
+
+851
+00:50:31,760 --> 00:50:37,980
+对，去验证一下：每次FOMC后，三周后会议纪要是否真的会发布？
+Right. Go and check. Whenever I have an FOMC, do I get meeting minutes three weeks later?
+
+852
+00:50:38,100 --> 00:50:40,160
+自己证明给自己看，别只相信我。
+Prove it to yourself. Don't take my word for it.
+
+853
+00:50:40,520 --> 00:50:46,020
+你会发现每次FOMC后，三周后纪要都会发布。
+And you will see every single time we have an FOMC. Three weeks later, minutes are released.
+
+854
+00:50:46,020 --> 00:50:55,440
+PPI通常在CPI前后，这里写13天，可能略有出入。
+PPI is typically around, I think this is slightly off. It says here 13 days, but it's typically when CPI happens.
+
+855
+00:50:55,800 --> 00:50:58,200
+是不是这样？
+So is that the case?
+
+856
+00:50:58,360 --> 00:51:02,200
+基本上，我们来验证几个例子。
+Basically, let's go and check for a couple of them.
+
+857
+00:51:02,200 --> 00:51:04,720
+这是CPI。
+So there's CPI.
+
+858
+00:51:05,180 --> 00:51:09,860
+PPI是不是在前后几天？是的。
+Is PPI within plus or minus a couple of days? Yes, it is.
+
+859
+00:51:10,000 --> 00:51:14,540
+这是PPI。对，CPI后两天，我找到了PPI。
+There's PPI. Right. CPI, two days later, I got PPI.
+
+860
+00:51:16,240 --> 00:51:21,500
+我们甚至可以随机选个月验证，比如5月。
+We can even go and check a random month. Just check May.
+
+861
+00:51:21,900 --> 00:51:23,660
+CPI预计在第二周。
+When do we expect CPI? Week two.
+
+862
+00:51:23,960 --> 00:51:26,800
+看第二周，CPI在这里。
+So let's go to week two. There's my CPI.
+
+863
+00:51:26,900 --> 00:51:27,720
+谢谢。
+Thank you very much.
+
+864
+00:51:28,160 --> 00:51:32,160
+PPI是不是在前后几天？是的，就在这里。
+Is my PPI within a couple of days plus or minus? Yes, it is. There you go.
+
+865
+00:51:32,620 --> 00:51:33,968
+你可以验证很多这样的例子，
+So you can check a lot
+
+866
+00:51:33,968 --> 00:51:35,091
+对吧？去验证
+of these, right? Go and
+
+867
+00:51:35,091 --> 00:51:37,338
+当作练习，熟悉日历。
+do this as an exercise. Get familiar with the calendar.
+
+868
+00:51:38,300 --> 00:51:39,244
+我相信
+You know, I'm sure
+
+869
+00:51:39,244 --> 00:51:40,660
+你会同意我的，
+you agree with me. You know,
+
+870
+00:51:40,660 --> 00:51:45,380
+如果想精通交易，这就是你必须做的。
+if you want to be the best at this, this is the type of stuff you need to be doing.
+
+871
+00:51:45,600 --> 00:51:48,960
+你必须非常清楚每个数据的发布时间点，这真的太基础了
+You need to have an intimate understanding of where things fall. It's so basic.
+
+872
+00:51:49,720 --> 00:51:51,403
+工业生产数据通常
+Industrial production tends to
+
+873
+00:51:51,403 --> 00:51:53,928
+会在第三周左右发布。好的，这里
+be around week three. Okay. Here,
+
+874
+00:51:53,928 --> 00:51:59,399
+这次提前了一天，但大体上还是在那个时间范围内
+it fell just the date earlier, but still roughly in the right place.
+
+875
+00:52:02,660 --> 00:52:07,300
+这里呢？可能我没标发布日程，先补上
+Where are we? For some reason, I haven't put the release schedule there, but let me just put this in.
+
+876
+00:52:07,300 --> 00:52:17,600
+每月约在第16天发布。粘贴。保留源格式。
+Released monthly around 16 days. Paste. Keep source formatting.
+
+877
+00:52:18,480 --> 00:52:18,800
+我知道
+I know.
+
+878
+00:52:18,880 --> 00:52:19,100
+抱歉
+Sorry.
+
+879
+00:52:19,740 --> 00:52:20,040
+你看到了吗？
+Do you see?
+
+880
+00:52:20,120 --> 00:52:21,960
+如果保留源格式，会有点不同
+If you keep the source formatting, it's slightly different.
+
+881
+00:52:22,040 --> 00:52:24,960
+你需要匹配目标格式
+You need to match destination formatting this one.
+
+882
+00:52:26,000 --> 00:52:26,660
+好的，这样就对了
+Okay. There you go.
+
+883
+00:52:27,100 --> 00:52:28,300
+所以要匹配目标格式
+So match destination format.
+
+884
+00:52:28,400 --> 00:52:29,500
+大约是第16天
+So about 16 days.
+
+885
+00:52:29,780 --> 00:52:32,340
+好的，给它加个网格
+Okay. And in fact, let's just put a grid around that.
+
+886
+00:52:32,560 --> 00:52:33,420
+这样整齐多了
+It's nice and neat.
+
+887
+00:52:34,220 --> 00:52:35,540
+就是第16天左右
+It's about 16 days.
+
+888
+00:52:35,540 --> 00:52:38,900
+好的，这次是在第14天
+Okay. So this, on this occasion, it's on the 14th day.
+
+889
+00:52:39,440 --> 00:52:42,360
+就像我之前说的，这是美联储的数据
+Again, like I said, it's the Federal Reserve.
+
+890
+00:52:42,480 --> 00:52:45,783
+他们收集数据时，如果及时拿到数据，
+When they're collecting the data, if they have it on time, a
+
+891
+00:52:45,783 --> 00:52:47,985
+提前一天，他们也不会等着
+day early, they're not going to wait and
+
+892
+00:52:47,985 --> 00:52:52,939
+说什么等到周末再发布，有数据就直接发了
+say, let's wait the weekend and release it. They're going to release it if they have the data.
+
+893
+00:52:53,440 --> 00:52:58,300
+你看这里，16、15、17、15天，大概都在16天左右
+You can see here, 16, 15, 17, 15. So roughly 16 days.
+
+894
+00:52:58,480 --> 00:53:01,720
+好的，这次碰巧数据提前到了
+Okay. It just happened to be, they had the data slightly early.
+
+895
+00:53:02,540 --> 00:53:04,000
+这就是工业生产数据
+So that's industrial production.
+
+896
+00:53:04,140 --> 00:53:06,280
+发布时间和我预期的差不多
+It is in the kind of place I was expecting it.
+
+897
+00:53:07,080 --> 00:53:09,400
+我们可以看到，应该在这一周，对吧？
+We can see here. It should be in this week, right?
+
+898
+00:53:09,500 --> 00:53:11,320
+通常是15、16或17天
+Normally about 16, 15, 16, 17.
+
+899
+00:53:11,480 --> 00:53:11,920
+它在哪呢？
+Where is it?
+
+900
+00:53:11,960 --> 00:53:16,040
+我们能在这里看到吗？工业生产数据
+Can we see it here? Industrial production.
+
+901
+00:53:16,200 --> 00:53:17,320
+好，15号。
+There we go. 15th.
+
+902
+00:53:17,400 --> 00:53:19,940
+好的，和预期一样，这次在第三周。
+Okay. So as expected, and it is in the third week this time.
+
+903
+00:53:19,980 --> 00:53:22,240
+位置和你大致预期的完全一致。
+It's exactly where you kind of roughly expect it.
+
+904
+00:53:23,140 --> 00:53:28,680
+房地产数据。我建议你自己验证一下，房地产数据是否真的集中在同一时间段。
+Housing data. Again, I want you to prove to yourself that housing data does fall around the same area.
+
+905
+00:53:28,780 --> 00:53:31,200
+是不是？是的，确实如此。
+Does it? Yes, it does.
+
+906
+00:53:31,420 --> 00:53:33,000
+新房开工和建筑许可。
+Housing starts building permits.
+
+907
+00:53:33,660 --> 00:53:36,040
+好的，新房销售。
+Okay. The new home sales.
+
+908
+00:53:36,040 --> 00:53:36,920
+一共有四个数据。
+There's four of them.
+
+909
+00:53:37,040 --> 00:53:39,660
+有建筑许可，有新房开工。
+There's building permits. There's housing starts.
+
+910
+00:53:40,700 --> 00:53:42,580
+我来展示给你。我们会一一构建。
+So I'll show you. We're going to build them.
+
+911
+00:53:42,640 --> 00:53:45,120
+别急，这里能看到房屋销售数据。
+Don't worry. So you can see here, home sales.
+
+912
+00:53:45,720 --> 00:53:54,680
+你有新房销售，还有建筑许可，我认为应该是建筑许可。
+So you've got new home sales. You've got housing permit, and I believe that should be building permits.
+
+913
+00:53:57,350 --> 00:54:00,050
+建筑许可。我来改一下。
+Building permits. Let me just change this as well.
+
+914
+00:54:00,090 --> 00:54:01,610
+别急，我们一起逐步构建。
+Don't worry. We're going to build all this together.
+
+915
+00:54:02,910 --> 00:54:04,590
+应该叫做建筑许可。
+I think it's called building permits.
+
+916
+00:54:04,690 --> 00:54:07,010
+不是房屋许可，但我之前可能写成房屋了。
+They're not housing permits. But for some reason, I had a housing.
+
+917
+00:54:07,010 --> 00:54:12,590
+这些不都和房屋相关吗？房屋销售、新房销售、新房开工。
+It's all called housing, aren't they? Home sales, home sales, housing starts.
+
+918
+00:54:12,890 --> 00:54:18,230
+总之，我之前写成房屋许可或住房许可，其实是建筑许可。
+Anyway, I put it as home permit or housing permits for some reason. Building permits.
+
+919
+00:54:18,670 --> 00:54:23,210
+新房开工是最先发布的。
+Housing starts are the first ones released.
+
+920
+00:54:23,550 --> 00:54:25,527
+更关注
+A little bit more focused on
+
+921
+00:54:25,527 --> 00:54:27,504
+这些数据，因为在动工前，
+those because before you build anything,
+
+922
+00:54:27,504 --> 00:54:29,481
+显然你需要许可才能建造，我之前提过。
+obviously you, and I mentioned this
+
+923
+00:54:29,481 --> 00:54:32,447
+我认为，建房前必须先拿到许可。
+I think before, you need a permit to build.
+
+924
+00:54:32,450 --> 00:54:37,390
+根据我的经验，这通常比其他两个数据更受关注。
+So it is typically something that is most focused on rather than the other two, in my experience.
+
+925
+00:54:37,830 --> 00:54:41,710
+所以它的发布很重要，而且发布得更早。
+So it's good that it's released, and also the fact that it's released earlier.
+
+926
+00:54:41,710 --> 00:54:46,530
+然后我认为房屋销售数据稍晚一些，对，你能看到。
+Then I believe the home sales is a little bit later, yeah. You can see it there.
+
+927
+00:54:46,610 --> 00:54:49,810
+二手房销售和新房销售，过几天发布。
+Existing home sales and new home sales. A few days later.
+
+928
+00:54:50,170 --> 00:54:54,570
+我习惯在日历上把这些统称为房地产数据，但通常在第三周。对吧？
+I just like to lump it in there on my calendars housing data. But it's around the third week. Right?
+
+929
+00:54:54,630 --> 00:54:56,510
+你可以看到，完全符合预期。
+So you can see it is exactly where expected.
+
+930
+00:54:57,390 --> 00:54:57,790
+建筑许可。
+Permits.
+
+931
+00:54:57,930 --> 00:54:59,250
+新屋开工数据在第三周。
+Housing starts third week.
+
+932
+00:54:59,250 --> 00:55:02,810
+几天后是成屋销售、新屋销售数据。
+And then a few days later, you've got existing home sales, new home sales.
+
+933
+00:55:02,930 --> 00:55:07,650
+所以你要再去核对这些，确保我讲的你能接受。
+So again, go and double check these things. Make sure you're happy with what I'm telling you.
+
+934
+00:55:10,520 --> 00:55:12,100
+贸易数据在第四周。对吧？
+Trade data. Week four. Right?
+
+935
+00:55:12,740 --> 00:55:13,400
+第一周。
+Week one.
+
+936
+00:55:13,540 --> 00:55:14,000
+第二周。
+Week two.
+
+937
+00:55:14,140 --> 00:55:14,640
+第三周。
+Week three.
+
+938
+00:55:14,880 --> 00:55:20,720
+第四周。第四周，贸易平衡数据。对吧？
+Week four. Week four. Good trade balance. Right?
+
+939
+00:55:20,860 --> 00:55:24,360
+像我们刚才分析主要数据那样，去查一整年的数据。
+Go and check the whole year like we just did for the major data.
+
+940
+00:55:24,360 --> 00:55:38,560
+你会发现是第一周、第二周、第三周、第四周。抱歉，刚才那周时间短。
+And you will see that you have, sorry, week one, week two, week three, week four. Sorry, that was a short week.
+
+941
+00:55:38,800 --> 00:55:40,240
+所以应该在这周，对吧？
+So it should be in this week, shouldn't it?
+
+942
+00:55:40,880 --> 00:55:41,940
+我看看能不能找到。
+Let's see if I can find it.
+
+943
+00:55:41,960 --> 00:55:47,520
+这里好像没看到商品贸易数据。
+I don't seem to be able to see it here. The goods trade data.
+
+944
+00:55:47,620 --> 00:55:47,960
+找到了。
+There we go.
+
+945
+00:55:48,020 --> 00:55:49,100
+抱歉，刚才有点迷糊。
+Sorry, I got a little bit lost.
+
+946
+00:55:49,300 --> 00:55:51,400
+商品贸易平衡，果然在第四周。
+Goods trade balance. As expected in week four.
+
+947
+00:55:51,500 --> 00:55:52,100
+数据就在这里。
+So it is there.
+
+948
+00:55:52,100 --> 00:55:56,040
+还有核心PCE，也在第四周。
+And you've got core PCE. There you go. In the fourth week.
+
+949
+00:55:57,260 --> 00:56:01,572
+好，我可能已经重复多次了，但
+Okay. Again, I think I did mention to this several times, but
+
+950
+00:56:01,572 --> 00:56:04,447
+我还是想放在这里，不过
+I like to have it there, but it's
+
+951
+00:56:04,447 --> 00:56:09,119
+它关注度较低，因为CPI在几周前就发布了。
+got less attention because obviously CPI is released a couple of weeks earlier.
+
+952
+00:56:09,500 --> 00:56:14,360
+但我还是会看PCE，表格里用白色标记了。
+So, but I like to look at the PCE anyway, but we've got it in white there.
+
+953
+00:56:14,360 --> 00:56:17,379
+它是次要数据，但
+It's low level data, but nice to just
+
+954
+00:56:17,379 --> 00:56:20,398
+随着你作为基本面分析者的成长，
+kind of, as you develop as a fundamental
+
+955
+00:56:20,398 --> 00:56:26,059
+之后可以把这些加入你的知识库。
+person, you can bring this into your repertoire, into your knowledge bank a bit later.
+
+956
+00:56:26,160 --> 00:56:31,940
+现在，先确认你表格里的内容不是胡说八道，对吧？
+For now, just satisfy yourself that what you put on this spreadsheet is not a load of rubbish, right?
+
+957
+00:56:32,040 --> 00:56:37,320
+因为你对自己记录和操作的内容有信心，这一点非常关键。
+Because it's so important that you have confidence in what you're writing down and doing.
+
+958
+00:56:38,420 --> 00:56:40,180
+最后几句忠告送给你。
+You know, final words I leave you with.
+
+959
+00:56:40,240 --> 00:56:41,680
+我在进阶基础课程里也提过。
+I said it in the Pro Foundation course.
+
+960
+00:56:41,740 --> 00:56:44,632
+以前老板告诉我什么，我总会
+Whenever my boss used to tell me something, I've been
+
+961
+00:56:44,632 --> 00:56:46,367
+我在最好的投行工作
+working at the best investment bank
+
+962
+00:56:46,367 --> 00:56:49,838
+（在我看来是全球最好的），我会对他说，抱歉，老兄
+in the world, in my opinion, I told him, sorry, sorry, mate.
+
+963
+00:56:49,980 --> 00:56:53,192
+你告诉我这些，我也感谢你，但我
+You told me that and I'm grateful you told me, but I
+
+964
+00:56:53,192 --> 00:56:55,333
+必须自己验证一遍，因为我
+need to check that for myself because I'm
+
+965
+00:56:55,333 --> 00:57:01,758
+不会拿银行的钱或自己的钱，去押我不确定的事，仅凭别人告诉我
+not going to put the bank's money or my own money on something that I don't know if it, that someone's just told me.
+
+966
+00:57:02,100 --> 00:57:04,040
+不，我必须亲自查证来源
+No, I need to check the source for myself.
+
+967
+00:57:04,700 --> 00:57:05,980
+所以我才说，你来验证一下
+That's why I say, come and check.
+
+968
+00:57:06,100 --> 00:57:07,360
+别只听我的一面之词
+Don't just take my word for it.
+
+969
+00:57:07,420 --> 00:57:08,660
+贸易差额数据就在这里
+That trade balance is here.
+
+970
+00:57:09,120 --> 00:57:11,340
+PCE每月第四周发布
+PCE is here every fourth week.
+
+971
+00:57:11,480 --> 00:57:12,300
+你自己去查证吧
+Go and check for yourself.
+
+972
+00:57:12,300 --> 00:57:13,640
+没错，对了
+Yeah, it is. Oh, you know what?
+
+973
+00:57:14,280 --> 00:57:14,800
+他的说法是对的
+Envy's right.
+
+974
+00:57:14,880 --> 00:57:15,300
+确实如此
+It is there.
+
+975
+00:57:15,520 --> 00:57:15,880
+8月
+August.
+
+976
+00:57:16,060 --> 00:57:16,860
+让我去查一下
+Let me go. Check.
+
+977
+00:57:16,980 --> 00:57:17,540
+第四周
+Fourth week.
+
+978
+00:57:18,080 --> 00:57:18,800
+哦，找到了
+Oh, there it is.
+
+979
+00:57:18,860 --> 00:57:19,440
+就是PCE数据
+Call PCE.
+
+980
+00:57:19,580 --> 00:57:20,200
+是啊，他没错
+Yeah, he's right.
+
+981
+00:57:21,220 --> 00:57:23,940
+其他需要验证的，他也都对
+You know, whatever else I need to check, he's correct.
+
+982
+00:57:24,400 --> 00:57:25,300
+大概就是这样
+And that's about it.
+
+983
+00:57:25,940 --> 00:57:27,660
+所以各位，希望这就是全部
+So hopefully, ladies and gentlemen, that's it.
+
+984
+00:57:27,760 --> 00:57:29,420
+完成这个我真的很兴奋
+Really excited to have got that done.
+
+985
+00:57:30,960 --> 00:57:33,486
+如果你不介意，我们可以
+If you don't mind, what we could
+
+986
+00:57:33,486 --> 00:57:35,290
+做的就是把
+do is just make, in
+
+987
+00:57:35,290 --> 00:57:38,538
+其实，现在可能不做了
+fact, I don't know if we'll do it now.
+
+988
+00:57:38,640 --> 00:57:40,280
+我本想把这个标签页设为黑色
+I wanted to make that tab black.
+
+989
+00:57:40,280 --> 00:57:43,560
+我喜欢保持黑色，因为这是重点
+I like to keep it black because it's the main focus.
+
+990
+00:57:43,680 --> 00:57:44,700
+你也能看到我喜欢这样
+You can see I like that.
+
+991
+00:57:44,900 --> 00:57:48,620
+这有点像整个选项卡区域的起始点
+It's kind of like the start of the whole tab range.
+
+992
+00:57:48,960 --> 00:57:51,252
+那你要做的，我不太确定
+So what you do, I'm not sure
+
+993
+00:57:51,252 --> 00:57:53,544
+你的函数或Excel版本
+if your function or your Excel version
+
+994
+00:57:53,544 --> 00:57:56,819
+可能支持这个功能。其实我可能已经讲过了
+may have it. In fact, I might be covering it.
+
+995
+00:57:56,940 --> 00:57:58,180
+哦，不，我在讲选项卡
+Oh, no, I'm covering the tab.
+
+996
+00:57:59,240 --> 00:58:00,980
+哦，不，不是。不是。不是
+Oh, no, I'm not. I'm not. I'm not.
+
+997
+00:58:01,320 --> 00:58:04,340
+所以我把自己从屏幕边缘稍微往上调了点
+That's why I've raised myself a little bit up from the edge of the screen.
+
+998
+00:58:05,020 --> 00:58:06,420
+确保你能看到就行
+Just make sure you can see that.
+
+999
+00:58:06,520 --> 00:58:08,580
+不行，你看不到，我挡住了
+No, you won't be able to see it. I'm behind it.
+
+1000
+00:58:08,580 --> 00:58:10,390
+基本上，你需要做的是
+Basically, what you need to do
+
+1001
+00:58:10,390 --> 00:58:12,200
+你来这里，然后
+is if you go here and
+
+1002
+00:58:12,200 --> 00:58:14,010
+在选项卡上右键
+then you right click on the
+
+1003
+00:58:14,010 --> 00:58:19,139
+选择‘选项卡颜色’，就能改成黑色或其他你想要的颜色
+tab and you say tab color, you can change it to black or whatever color you want.
+
+1004
+00:58:19,520 --> 00:58:20,600
+好的，这就是我现在在做的
+Okay. That's what I'm doing here.
+
+1005
+00:58:21,020 --> 00:58:22,860
+选项卡颜色改成黑色
+Tab color black.
+
+1006
+00:58:23,040 --> 00:58:24,180
+你看，它刚刚变黑了吗？
+Do you see it just turned black?
+
+1007
+00:58:24,180 --> 00:58:28,220
+现在如果我打开新选项卡，你能看到它现在是黑色的吗？
+So now if I open a new tab, can you see it's now black?
+
+1008
+00:58:29,080 --> 00:58:32,800
+好的，我们现在要休息一下
+Okay. So we are now going to take a break.
+
+1009
+00:58:32,900 --> 00:58:35,180
+放松一下，做做练习
+Take some time. Relax. Do the exercise.
+
+1010
+00:58:35,180 --> 00:58:41,960
+不用只做一次，把这里的数据都检查一遍
+You don't have to just do it once. Go through. Check all of this data that you have here.
+
+1011
+00:58:42,140 --> 00:58:45,480
+这里大概有15个数据，对吧？你可以看下面的计数
+It thinks about 15 pieces, isn't it? You can check here the count.
+
+1012
+00:58:45,700 --> 00:58:47,720
+对，就在那里，下面显示15个，你看到了
+Yeah, there you go. 15 right at the bottom. You can see it.
+
+1013
+00:58:48,660 --> 00:58:49,770
+去确认一下
+Go and make
+
+1014
+00:58:49,770 --> 00:58:51,620
+把这个日历检查五次
+sure. Check this calendar five
+
+1015
+00:58:51,620 --> 00:58:54,210
+十次也行，直到确认无误
+times, ten times if you have to.
+
+1016
+00:58:54,210 --> 00:59:00,500
+确保这里的内容都放对地方了
+And just make sure you are satisfied that what you have here is in the right place.
+
+1017
+00:59:00,640 --> 00:59:02,946
+然后开始激动吧
+And then start to get excited that
+
+1018
+00:59:02,946 --> 00:59:06,241
+往后，你将领先
+going forward, you are now going to be ahead of
+
+1019
+00:59:06,241 --> 00:59:13,819
+几乎所有交易者，因为你会知道：第一周是制造业、服务业、非农数据
+pretty much every trader out there because you're going to know in week one, just to kind of summarize again, manufacturing services, payrolls.
+
+1020
+00:59:13,900 --> 00:59:15,060
+第二周是通胀数据
+Week two, inflation.
+
+1021
+00:59:15,460 --> 00:59:17,800
+第三周是零售销售和可能的FOMC
+Week three, retail sales and potentially FOMC.
+
+1022
+00:59:18,400 --> 00:59:20,120
+第四周是GDP
+Week four, GDP.
+
+1023
+00:59:20,120 --> 00:59:28,820
+我保证，你走进任何经济学部门或银行，告诉他们：第一周是制造业、服务业、非农
+I promise you, walk into any economics department or bank and you tell them, week one, manufacturing services, payrolls.
+
+1024
+00:59:28,860 --> 00:59:29,480
+第二周是通胀
+Week two, inflation.
+
+1025
+00:59:29,720 --> 00:59:31,860
+第三周是零售销售
+Week three, retail sales.
+
+1026
+00:59:32,020 --> 00:59:35,840
+第四周是GDP和可能的FOMC，他们一定知道
+Week four, GDP and potentially FOMC. They are going to know.
+
+1027
+00:59:36,640 --> 00:59:38,260
+你对这些了如指掌
+You know your stuff inside out.
+
+1028
+00:59:38,380 --> 00:59:39,880
+我真的很为你兴奋
+So really excited for you.
+
+1029
+00:59:40,040 --> 00:59:42,320
+接下来要构建的标签页也让我期待
+I'm really excited for the next tabs we're going to be building.
+
+1030
+00:59:42,940 --> 00:59:46,400
+现在我们来构建这些标签页
+And we're now going to move on and we're going to start building all these tabs.
+
+1031
+00:59:46,400 --> 00:59:50,940
+别担心，具体分析和理解后面会讲
+And don't worry, the actual analysis and understanding of everything is yet to come on.
+
+1032
+00:59:51,080 --> 00:59:52,680
+这门课会非常精彩
+This is going to be an incredible course.
+
+1033
+00:59:52,840 --> 00:59:55,800
+我们会逐步覆盖这些内容
+We're going to cover all these things in good time.
+
+1034
+00:59:55,860 --> 00:59:59,200
+但没有数据，我们怎么讨论制造业？
+But how can we start talking about manufacturing unless we have the data?
+
+1035
+00:59:59,920 --> 01:00:02,881
+我们怎么开始讨论该如何思考
+How can we start talking about what to think about
+
+1036
+01:00:02,881 --> 01:00:06,139
+展望未来，要是数据没整理好，对吧？
+going ahead unless we have everything laid out for us, right?
+
+1037
+01:00:06,720 --> 01:00:07,660
+就像我们现在这样
+And as we do here.
+
+1038
+01:00:07,660 --> 01:00:10,300
+没有数据，什么都做不了
+You can't do it unless you have the data.
+
+1039
+01:00:10,440 --> 01:00:11,360
+你知道吗，我
+You know, I
+
+1040
+01:00:11,360 --> 01:00:12,893
+真的做不到，这取决于你
+can't. It's up to you.
+
+1041
+01:00:12,893 --> 01:00:17,799
+我无法在面对这样的混乱数据时做分析
+I can't, you know, do analysis when I've got stuff like this in front of me.
+
+1042
+01:00:18,680 --> 01:00:22,680
+这只是第一周的情况，对吧？只是第一周
+And that's just one week, right? That's just one week.
+
+1043
+01:00:23,580 --> 01:00:28,100
+但在数据没整理好之前，我真的做不了分析
+But until that, unless I've got things laid out for me, you know, I can't do analysis.
+
+1044
+01:00:28,320 --> 01:00:29,340
+不知道你怎么想，但我做不到
+I don't know about you, but I can't.
+
+1045
+01:00:29,380 --> 01:00:31,240
+所以先把数据整理好
+So let's get the data together.
+
+1046
+01:00:31,340 --> 01:00:33,380
+把所有东西整理好，才能做分析
+Let's get everything together so we can do the analysis.
+
+1047
+01:00:33,940 --> 01:00:37,360
+接下来我们会做很棒的内容
+That's what we're going to do in the next sections is we're going to be really exciting.
+
+1048
+01:00:37,480 --> 01:00:39,364
+我们会构建所有这些
+We're going to be building all this
+
+1049
+01:00:39,364 --> 01:00:40,709
+这样你就能追踪
+out so you can track,
+
+1050
+01:00:40,709 --> 01:00:43,939
+比如，我知道下周是制造业数据，那又怎样？
+you know, okay, I know manufacturing is next week, but so what?
+
+1051
+01:00:44,460 --> 01:00:50,740
+哦，好的，制造业指数最近几周甚至几个月都维持在60以上
+Oh, okay. Manufacturing has been, you know, above 60 for the last few weeks and maybe even months.
+
+1052
+01:00:52,100 --> 01:00:53,745
+所以可能我不用特别关注
+So maybe I don't need to focus
+
+1053
+01:00:53,745 --> 01:00:55,390
+因为它表现一直不错
+on that so much because it's doing
+
+1054
+01:00:55,390 --> 01:00:57,740
+可能这个月数据也会类似
+well and probably I'm going to get a similar reading.
+
+1055
+01:00:57,900 --> 01:00:59,500
+所以这个月可能没那么重要
+So maybe it's not that important this month.
+
+1056
+01:00:59,500 --> 01:01:00,707
+你懂的，这种情况
+You know, you stuff
+
+1057
+01:01:00,707 --> 01:01:01,914
+或者你
+like that or, you
+
+1058
+01:01:01,914 --> 01:01:03,121
+知道，可能制造业数据，我
+know, maybe manufacturing. I've
+
+1059
+01:01:03,121 --> 01:01:05,838
+之前也做过类似的分析
+been doing stuff like this or stuff like this.
+
+1060
+01:01:06,480 --> 01:01:06,962
+哦，天，我
+Oh, wow. I
+
+1061
+01:01:06,962 --> 01:01:08,088
+必须关注这个，因为我
+need to focus on that because I
+
+1062
+01:01:08,088 --> 01:01:09,858
+完全不知道这个月会是怎样的数值
+don't know where on earth it's going to be this month.
+
+1063
+01:01:09,960 --> 01:01:11,200
+市场会密切关注这个
+The market's going to be looking at that.
+
+1064
+01:01:11,720 --> 01:01:17,880
+如果没有这样的图表整理数据，你怎么做得到？
+How can you do that unless you have the data laid out like this in a nice graphical format?
+
+1065
+01:01:18,440 --> 01:01:20,720
+我从没在别处见过这种整理方式
+I do not see this stuff anywhere.
+
+1066
+01:01:20,860 --> 01:01:22,820
+你能在这里看到吗？我哪都没见过
+Can you see it here? I can't see it anywhere.
+
+1067
+01:01:23,560 --> 01:01:27,020
+我再强调一次，这简直一团糟
+I'm going to say it one more time and probably another 100% complete shambles.
+
+1068
+01:01:27,020 --> 01:01:29,000
+大家看数据的方式几乎让人尴尬
+The way people look at this stuff is almost embarrassing.
+
+1069
+01:01:29,800 --> 01:01:30,980
+我们会帮你改掉这个坏习惯
+We're going to get you out of that.
+
+1070
+01:01:30,980 --> 01:01:33,560
+下一节我们来搭建标签页
+Let's get you building the tabs in the next section.
+
+1071
+01:01:33,720 --> 01:01:36,060
+期待下一模块见到你
+Can't wait. See you in the next module.
+
+===== END AFTER_OPTIMIZE =====

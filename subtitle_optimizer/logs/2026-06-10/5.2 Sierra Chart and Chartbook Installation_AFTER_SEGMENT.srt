@@ -1,0 +1,2386 @@
+===== AFTER_SEGMENT (596 entries) =====
+1
+00:00:00,300 --> 00:00:02,365
+hello traders so hopefully you'll agree
+
+2
+00:00:02,365 --> 00:00:04,430
+it was quite useful to do
+
+3
+00:00:04,430 --> 00:00:06,495
+a quick deep dive into the
+
+4
+00:00:06,495 --> 00:00:11,658
+back-end infrastructure so you actually know what's going on behind your charts i mean as
+
+5
+00:00:11,660 --> 00:00:14,439
+we've said if you're going to do a
+
+6
+00:00:14,439 --> 00:00:17,218
+business uh or a business plan kind of
+
+7
+00:00:17,218 --> 00:00:19,997
+makes sense that you understand every nook and
+
+8
+00:00:19,997 --> 00:00:22,081
+cranny of the market or the
+
+9
+00:00:22,081 --> 00:00:29,377
+business that you're getting into and that includes the administrative side right it's crucial so hopefully you'll agree and i think
+
+10
+00:00:29,380 --> 00:00:31,061
+what's going to happen is
+
+11
+00:00:31,061 --> 00:00:33,415
+if you haven't already realized your trading
+
+12
+00:00:33,415 --> 00:00:36,105
+journey isn't going to be probably what you
+
+13
+00:00:36,105 --> 00:00:38,459
+thought it was when you came into
+
+14
+00:00:38,459 --> 00:00:47,539
+trading that you know you'd learn a strategy and you'd be on your way i think maybe you're realizing and it's a good thing that to really
+
+15
+00:00:47,540 --> 00:00:50,005
+be successful in this game it is
+
+16
+00:00:50,005 --> 00:00:52,822
+going to be a long journey and the
+
+17
+00:00:52,822 --> 00:00:55,287
+reason i'm saying this in this video
+
+18
+00:00:55,287 --> 00:00:58,104
+even though it's a platform setup video is
+
+19
+00:00:58,104 --> 00:01:08,317
+because i think what you'll realize is you may decide actually i want to try ninja trader i want to try one of these other trading platforms and guys
+
+20
+00:01:08,320 --> 00:01:13,100
+i did it that's all part of the journey sometimes you need to figure stuff out for yourself
+
+21
+00:01:13,100 --> 00:01:15,786
+it's kind of like you know when someone
+
+22
+00:01:15,786 --> 00:01:18,472
+tells you well don't use this indicator don't
+
+23
+00:01:18,472 --> 00:01:21,158
+do that because it's lagging it's not telling
+
+24
+00:01:21,158 --> 00:01:23,844
+you any information yet you still want to
+
+25
+00:01:23,844 --> 00:01:26,530
+prove it to yourself so you still go
+
+26
+00:01:26,530 --> 00:01:40,297
+and use it and you still you know take trade space off it you make no money and then you realize oh yeah that was right what i was told so i think that you're going to find that in the
+
+27
+00:01:40,300 --> 00:01:43,078
+platform space as well you're going to
+
+28
+00:01:43,078 --> 00:01:46,253
+spend some time before you start getting a
+
+29
+00:01:46,253 --> 00:01:49,428
+feel for um you know hopefully you stick
+
+30
+00:01:49,428 --> 00:01:52,206
+with sierra because in my opinion you
+
+31
+00:01:52,206 --> 00:01:55,381
+know like i said in the first video
+
+32
+00:01:55,381 --> 00:02:08,877
+um there's definitely merit behind um using that as your sort of piece of software going forward um but again nothing wrong with trying all the other stuff prove it to yourself i think
+
+33
+00:02:08,880 --> 00:02:11,701
+you'll go on a bit of a journey
+
+34
+00:02:11,701 --> 00:02:14,170
+as you'll see um and the reason
+
+35
+00:02:14,170 --> 00:02:24,399
+i actually say all of that is so what i want you to do anyway is sierra chart do a great trial it's a free trial it's not going
+
+36
+00:02:24,400 --> 00:02:27,565
+to cost you anything so just in case
+
+37
+00:02:27,565 --> 00:02:30,334
+you can't see it on my bar
+
+38
+00:02:30,334 --> 00:02:33,103
+because it is quite small i'll just
+
+39
+00:02:33,103 --> 00:02:41,808
+write it here um it's sierra chart dot com okay guys so you go there um you log in they've got a
+
+40
+00:02:41,810 --> 00:02:44,180
+great free trial so what i wanted to
+
+41
+00:02:44,180 --> 00:02:46,253
+show you is just to quickly how
+
+42
+00:02:46,253 --> 00:02:48,326
+to set it up it's really straightforward
+
+43
+00:02:48,326 --> 00:02:59,288
+log on to the website and then there's a little uh button here great get started with sierra chart now free trial so you click on that and then as you can see download sierra chart so
+
+44
+00:02:59,290 --> 00:03:01,378
+download it then step two
+
+45
+00:03:01,378 --> 00:03:04,302
+is create your account free trial is
+
+46
+00:03:04,302 --> 00:03:13,909
+provided so again create your account it's all pretty self-explanatory obviously i'm not gonna go through that with you and then it will
+
+47
+00:03:13,910 --> 00:03:21,090
+say step three becomes set up with a data or trading service so i spoke about this and this was in fact
+
+48
+00:03:21,090 --> 00:03:23,461
+when i what i decided to do
+
+49
+00:03:23,461 --> 00:03:27,186
+is i thought oh let me go through this process myself
+
+50
+00:03:27,186 --> 00:03:31,928
+to see what ultimately my customers are going to be facing because i set
+
+51
+00:03:31,928 --> 00:03:36,331
+this up many years ago and i've completely forgotten and when i saw
+
+52
+00:03:36,331 --> 00:03:47,508
+this bit about become set up with the data or trading service that's why i thought to myself okay let me do that last video where i showed you guys the steps um
+
+53
+00:03:47,510 --> 00:03:49,395
+you know between the platform
+
+54
+00:03:49,395 --> 00:03:53,166
+and the exchange so one of those if you remember
+
+55
+00:03:53,166 --> 00:03:58,068
+if you've forgotten go and revisit the video um the platform comparison video
+
+56
+00:03:58,068 --> 00:04:02,593
+but there i talked about data providing services right and i said
+
+57
+00:04:02,593 --> 00:04:13,907
+that um there's many independent data providers it's not like uh the retail spot forex market where it's all bunched together there are it is split out for you so
+
+58
+00:04:13,910 --> 00:04:18,556
+that's why you've got this step that you see here where it
+
+59
+00:04:18,556 --> 00:04:21,653
+says become set up with a data or
+
+60
+00:04:21,653 --> 00:04:27,848
+trading service now obviously for now my recommendation guys don't spend any money on this stuff
+
+61
+00:04:27,850 --> 00:04:32,850
+um at least for my personal opinion several months because
+
+62
+00:04:32,850 --> 00:04:36,850
+and that's why i gave the whole speech
+
+63
+00:04:36,850 --> 00:04:43,350
+before about you probably going on a journey in terms of your platform
+
+64
+00:04:43,350 --> 00:04:46,632
+because what i don't want you to do is pay
+
+65
+00:04:46,632 --> 00:04:49,914
+for live data um which can cost anywhere between about
+
+66
+00:04:49,914 --> 00:04:54,837
+fifteen to twenty five dollars a month it's not um very expensive but then don't
+
+67
+00:04:54,837 --> 00:04:59,103
+forget you'll also be paying platform fees and so you can quickly start
+
+68
+00:04:59,103 --> 00:05:08,949
+to add up you know thirty forty fifty dollars a month you can be shelving out for platform and data um and even more depending on who you go with
+
+69
+00:05:08,950 --> 00:05:10,996
+but my recommendation is um
+
+70
+00:05:10,996 --> 00:05:15,089
+or the g7 fx policy anyway is guys as you
+
+71
+00:05:15,089 --> 00:05:19,182
+know i'm not the biggest fan of um wasting money
+
+72
+00:05:19,182 --> 00:05:24,503
+unnecessarily that's why i say don't live trade until don't even sim trade
+
+73
+00:05:24,503 --> 00:05:33,508
+until you understand the program sim trade then get a proven edge then you go live guys same with the data feed
+
+74
+00:05:33,510 --> 00:05:37,260
+until it's absolutely necessary for you to have real time
+
+75
+00:05:37,260 --> 00:05:39,885
+data my suggestion is do the 15 day
+
+76
+00:05:39,885 --> 00:05:48,135
+trial um use the delayed uh exchange feed because at the end of the day as you know i want you to
+
+77
+00:05:48,510 --> 00:05:51,751
+i don't necessarily want you to be trading off the
+
+78
+00:05:51,751 --> 00:05:54,992
+depth of market and i don't want you to use
+
+79
+00:05:54,992 --> 00:05:58,881
+that for too long i think i said you know a few
+
+80
+00:05:58,881 --> 00:06:07,308
+weeks maximum get familiar with how um you know the market orders work versus depending orders i supply versus demand as we've gone through at length
+
+81
+00:06:07,310 --> 00:06:10,573
+but my point is and the reason i bring that
+
+82
+00:06:10,573 --> 00:06:13,836
+up is guys you can do all that with delayed
+
+83
+00:06:13,836 --> 00:06:20,036
+exchange data it's 10 minutes i believe it's about 10 minutes delayed you don't need live data for the next one
+
+84
+00:06:20,690 --> 00:06:24,992
+two months or even more guys i want you understanding
+
+85
+00:06:24,992 --> 00:06:29,294
+the core of the market you don't need live data
+
+86
+00:06:29,294 --> 00:06:37,898
+to do that so don't worry about it keep it delayed what you will notice however um is that after 14
+
+87
+00:06:38,330 --> 00:06:41,140
+days the trial on sierra chart will run out so
+
+88
+00:06:41,140 --> 00:06:43,950
+you've got two options there you can and this is
+
+89
+00:06:43,950 --> 00:06:49,289
+where i say you know it's an exciting journey now i'm showing you what the professionals are looking at
+
+90
+00:06:49,290 --> 00:06:51,639
+you can go on a journey on your
+
+91
+00:06:51,639 --> 00:06:52,813
+own then and decide
+
+92
+00:06:52,813 --> 00:06:55,749
+right i want to try ninja trader try it guys
+
+93
+00:06:55,750 --> 00:06:57,466
+it's free it won't cost you
+
+94
+00:06:57,466 --> 00:06:59,755
+anything but what you're quickly going to realize
+
+95
+00:06:59,755 --> 00:07:02,044
+is if you want the same functionality as
+
+96
+00:07:02,044 --> 00:07:06,908
+sierra chart you'll have to pay for it in one way or the other it's going to
+
+97
+00:07:06,910 --> 00:07:10,280
+be more expensive in my opinion so as you know
+
+98
+00:07:10,280 --> 00:07:13,650
+it says here so read the getting started tutorial step
+
+99
+00:07:13,650 --> 00:07:17,020
+four and then it says step five after the trial
+
+100
+00:07:17,020 --> 00:07:20,390
+activate a service package so i mentioned this in the
+
+101
+00:07:20,390 --> 00:07:25,446
+comparison video but there's certain levels my recommendation is obviously you go for the best
+
+102
+00:07:25,450 --> 00:07:28,241
+level it's uh as i said if you pay for
+
+103
+00:07:28,241 --> 00:07:30,753
+a year up front it works out about 25 a
+
+104
+00:07:30,753 --> 00:07:32,427
+month otherwise i think it's about
+
+105
+00:07:32,427 --> 00:07:37,171
+35 a month or 36 now you might think oh i don't want to pay for a platform but
+
+106
+00:07:38,010 --> 00:07:41,585
+a you're going to continue if you get the uh
+
+107
+00:07:41,585 --> 00:07:45,160
+the top package which again over a year if you
+
+108
+00:07:45,160 --> 00:07:47,662
+pay it's only 25 a month you continue
+
+109
+00:07:47,662 --> 00:07:52,310
+to get the delayed exchange data feed so that's it guys that's going
+
+110
+00:07:52,670 --> 00:07:56,075
+to be your only cost every month 25 to have
+
+111
+00:07:56,075 --> 00:07:59,859
+one of the best platforms in the world and you're
+
+112
+00:07:59,859 --> 00:08:02,507
+getting 10 minute delayed futures data so you
+
+113
+00:08:02,507 --> 00:08:06,291
+can still continue to hone your craft learn volume profile
+
+114
+00:08:07,050 --> 00:08:10,644
+my point is i don't want you spending money on
+
+115
+00:08:10,644 --> 00:08:14,238
+a live data feed whilst you're still learning i still
+
+116
+00:08:14,238 --> 00:08:17,832
+want you to learn as you know in the professional
+
+117
+00:08:17,832 --> 00:08:21,426
+course to come we're going to be teaching you about
+
+118
+00:08:21,426 --> 00:08:32,568
+profile obviously there's footprints still to come and then building edge and guys do that in a simulated environment you don't need a live environment for that it's only 10 minutes delayed
+
+119
+00:08:32,929 --> 00:08:42,230
+so do that um so so like i was saying with sierra chart you'll be paying about you know 25 to 35
+
+120
+00:08:42,230 --> 00:08:44,495
+depending on what you do and my point
+
+121
+00:08:44,495 --> 00:08:46,760
+is this yeah go and try ninja trader
+
+122
+00:08:46,760 --> 00:08:48,459
+go and try any of the
+
+123
+00:08:48,459 --> 00:08:54,689
+others that are free um but the point is you're going to end up paying somewhere or the other so for example
+
+124
+00:08:54,690 --> 00:08:56,801
+if you want a good uh market profile
+
+125
+00:08:56,801 --> 00:08:58,912
+you're going to notice with ninja trader you're
+
+126
+00:08:58,912 --> 00:09:00,495
+going to have to pay a
+
+127
+00:09:00,495 --> 00:09:05,509
+third party company like rancho de niro are quite big in the space guys they're going to charge you
+
+128
+00:09:05,510 --> 00:09:12,930
+thousand dollars yeah it's a one-off fee but it's still a thousand dollars to get market profile um
+
+129
+00:09:12,930 --> 00:09:15,620
+you're going to pay a thousand dollars for
+
+130
+00:09:15,620 --> 00:09:18,310
+a decent footprint you're going to pay um
+
+131
+00:09:18,310 --> 00:09:21,000
+jigsaw you know a thousand dollars for a
+
+132
+00:09:21,000 --> 00:09:25,708
+decent depth of market guys that's three thousand dollars you're going to end up
+
+133
+00:09:25,710 --> 00:09:29,307
+spending on market profile i'm sorry volume profile
+
+134
+00:09:29,307 --> 00:09:32,904
+and the footprint and the depth of market
+
+135
+00:09:32,904 --> 00:09:36,501
+from three different companies when again i've built
+
+136
+00:09:36,501 --> 00:09:40,548
+this stuff for you i've custom built it myself
+
+137
+00:09:40,550 --> 00:09:44,317
+on sierra chart because you've obviously bought this course and
+
+138
+00:09:44,317 --> 00:09:48,084
+you know i'm trying to help people out here um
+
+139
+00:09:48,084 --> 00:09:51,851
+i kind of feel like um it's my responsibility to
+
+140
+00:09:51,851 --> 00:09:55,618
+get people access to this stuff at a reasonable price
+
+141
+00:09:55,618 --> 00:10:01,268
+so that's why i've done all of that for you already um you're literally go
+
+142
+00:10:01,270 --> 00:10:06,370
+and check yourself you're literally going to save two to three thousand dollars with the custom stuff
+
+143
+00:10:06,370 --> 00:10:07,992
+i'm giving you for free
+
+144
+00:10:07,992 --> 00:10:09,614
+um so my point is
+
+145
+00:10:09,614 --> 00:10:13,508
+that look go and try it figure this stuff out for yourself
+
+146
+00:10:13,510 --> 00:10:19,810
+go on a platform journey for the next month or two try different ones see what happens and um
+
+147
+00:10:19,810 --> 00:10:27,470
+yeah if not and you're happy to go ahead after the two weeks then obviously subscribe to sierra but
+
+148
+00:10:27,470 --> 00:10:29,265
+now what we're going to do
+
+149
+00:10:29,265 --> 00:10:31,659
+is we're going to um have a look
+
+150
+00:10:31,659 --> 00:10:34,652
+at what it looks like so now that whole lecture
+
+151
+00:10:34,652 --> 00:10:36,447
+is over and i hope you
+
+152
+00:10:36,447 --> 00:10:44,827
+understand that i'm doing this for your benefit because many of you watching this is the first time you'll ever have come across futures platforms and your options
+
+153
+00:10:44,830 --> 00:10:46,216
+and like i said i'm recommending
+
+154
+00:10:46,216 --> 00:10:47,602
+that you go and go on
+
+155
+00:10:47,602 --> 00:10:49,450
+your own journey and figure stuff out for
+
+156
+00:10:49,450 --> 00:10:50,836
+yourself and i'm always here to
+
+157
+00:10:50,836 --> 00:10:54,070
+help if you have questions what we're now going to do is we're going
+
+158
+00:10:54,070 --> 00:10:55,227
+to put that to
+
+159
+00:10:55,227 --> 00:10:56,962
+one side we're going to assume
+
+160
+00:10:56,962 --> 00:10:58,987
+that you've just signed up for the 14
+
+161
+00:10:58,987 --> 00:11:01,301
+day trial and so i'm going to show
+
+162
+00:11:01,301 --> 00:11:03,615
+you exactly what it looks like um when
+
+163
+00:11:03,615 --> 00:11:05,350
+you start the page up because
+
+164
+00:11:05,350 --> 00:11:18,078
+what i've done is i've signed up myself for one i did it on my laptop so it looks a little bit squeezed but let's go and have a look at that and um see what changes you need to make all right so
+
+165
+00:11:18,370 --> 00:11:25,670
+i'll see you in a sec guys okay traders so we just saw that you've signed up for sierra chart
+
+166
+00:11:25,670 --> 00:11:26,772
+etc etc now
+
+167
+00:11:26,772 --> 00:11:29,344
+what you need to do is download
+
+168
+00:11:29,344 --> 00:11:31,549
+the file that i've put in
+
+169
+00:11:31,549 --> 00:11:39,635
+the members area and you'll notice that it's called g7fx foundation dom chart book so what this is is as promised
+
+170
+00:11:39,270 --> 00:11:40,990
+the depth of market that obviously
+
+171
+00:11:40,990 --> 00:11:43,284
+if you go out and purchase it's going
+
+172
+00:11:43,284 --> 00:11:45,004
+to cost you over a thousand
+
+173
+00:11:45,004 --> 00:11:51,027
+dollars i'm going to give this to you free in my opinion this is good as the best depth of market
+
+174
+00:11:51,030 --> 00:11:52,486
+out there i've built it
+
+175
+00:11:52,486 --> 00:11:54,524
+myself all you need to do is
+
+176
+00:11:54,524 --> 00:11:56,853
+download this i'm going to show you exactly
+
+177
+00:11:56,853 --> 00:11:59,182
+how to bring it into the platform so
+
+178
+00:11:59,182 --> 00:12:07,627
+you get exactly the same depth of market that i've been showing throughout the tutorial videos um and it's something you can just play with and get used to
+
+179
+00:12:07,630 --> 00:12:08,243
+the um
+
+180
+00:12:08,243 --> 00:12:10,083
+obviously market orders pending orders so
+
+181
+00:12:10,083 --> 00:12:12,537
+download it um you'll notice it should come
+
+182
+00:12:12,537 --> 00:12:14,991
+into your download folder and then what i'm
+
+183
+00:12:14,991 --> 00:12:25,728
+going to do is i'm just going to press play so i've recorded myself doing this on my laptop um and i'm just going to move it so i'll show you what folder you need
+
+184
+00:12:25,730 --> 00:12:27,269
+to move it to
+
+185
+00:12:27,269 --> 00:12:29,577
+so i'm going to hit play
+
+186
+00:12:29,577 --> 00:12:31,885
+here okay so it's in the
+
+187
+00:12:31,885 --> 00:12:34,963
+download folder so i'm going to cut the
+
+188
+00:12:34,963 --> 00:12:38,041
+file out okay i'm going to move it
+
+189
+00:12:38,041 --> 00:12:57,278
+into c sierra chart data okay so obviously when you downloaded sierra chart it would have stored your files it doesn't have to be in the c drive wherever you decided to install sierra chart but obviously by default it goes in the c drive um so you can see
+
+190
+00:12:57,280 --> 00:13:03,980
+here it's c sierra chart folder and then you go into the data folder and then you paste it into here
+
+191
+00:13:03,980 --> 00:13:07,409
+so i'll continue to press play so you've
+
+192
+00:13:07,409 --> 00:13:10,838
+cut that file out of the download and
+
+193
+00:13:10,838 --> 00:13:20,698
+there you go you can see it there at the bottom okay now all i've done here is i've just sorted by type
+
+194
+00:13:20,700 --> 00:13:23,583
+so what you will see is
+
+195
+00:13:23,583 --> 00:13:26,466
+cht files are chart books they're
+
+196
+00:13:26,466 --> 00:13:29,349
+just basically they're chart books they're
+
+197
+00:13:29,349 --> 00:13:37,999
+books or templates so of a setup they're just stored in these chart book folders a file sorry
+
+198
+00:13:38,000 --> 00:13:41,247
+and you'll see here that by default sierra
+
+199
+00:13:41,247 --> 00:13:44,494
+chart comes with two uh default templates so
+
+200
+00:13:44,494 --> 00:13:53,424
+they call chart book example and example chart book so what you see here is we've just added the g7fx foundation
+
+201
+00:13:53,020 --> 00:13:55,417
+dome chart book dot cht so it's a
+
+202
+00:13:55,417 --> 00:13:57,814
+third chart book okay and we're going to
+
+203
+00:13:57,814 --> 00:14:00,211
+go straight over to how you will see
+
+204
+00:14:00,211 --> 00:14:02,608
+sierra chart when you open it up now
+
+205
+00:14:02,608 --> 00:14:12,797
+so shut this down um you've put the template in that's all you need to do and it'll be loaded into sierra chart now so let's see how to load it up on sierra
+
+206
+00:14:12,800 --> 00:14:16,197
+chart okay so i'm just going
+
+207
+00:14:16,197 --> 00:14:24,689
+to close this okay so there you go that's what you should see the first
+
+208
+00:14:24,690 --> 00:14:28,428
+time you start up sierra chart you're going to see
+
+209
+00:14:28,428 --> 00:14:31,419
+a notification message typically this will have technical
+
+210
+00:14:31,419 --> 00:14:38,149
+notices and what sierra chart will do is if there's any updates or any errors so do you
+
+211
+00:14:38,150 --> 00:14:41,500
+remember on the um videos about the dome
+
+212
+00:14:41,500 --> 00:14:44,850
+uh we had the treasury market that didn't
+
+213
+00:14:44,850 --> 00:14:52,808
+have the third decimal place that's something that came up as a technical notice so something they're aware of
+
+214
+00:14:52,810 --> 00:14:56,401
+they've now fixed it so in all future examples that i show
+
+215
+00:14:56,401 --> 00:14:59,992
+of the treasury market you will now see the third decimal place
+
+216
+00:14:59,992 --> 00:15:02,386
+but my point is anyway the technical notices
+
+217
+00:15:02,386 --> 00:15:10,168
+just tell you about any issues that um they've or bugs that they're aware of and they'll fix them in the next version so it's pretty
+
+218
+00:15:10,170 --> 00:15:15,150
+useful sometimes just have a quick read of it but usually i'll just close it down so just shut that
+
+219
+00:15:15,150 --> 00:15:18,140
+down okay i'm just going to close this
+
+220
+00:15:18,140 --> 00:15:21,130
+down on my laptop this is me earlier
+
+221
+00:15:21,130 --> 00:15:30,100
+i'm going to shut this chart book down okay so file close chart book close the chart book you don't need to save it
+
+222
+00:15:30,100 --> 00:15:33,323
+so do you see this is the example chart book
+
+223
+00:15:33,323 --> 00:15:36,546
+that we saw in the folder they were obviously the
+
+224
+00:15:36,546 --> 00:15:43,638
+two chart books they give us defaults um so just shut that down don't save changes and now i'm going to show
+
+225
+00:15:43,640 --> 00:15:46,951
+you how to load the chart book from before so
+
+226
+00:15:46,951 --> 00:15:50,262
+you go to file and uh open chart book so
+
+227
+00:15:50,262 --> 00:15:58,209
+can you see now you've got the g7fx foundation dome chart book it's there along with the two that they give you as
+
+228
+00:15:57,880 --> 00:16:01,057
+default so we're going to open that by
+
+229
+00:16:01,057 --> 00:16:04,234
+double clicking it or open okay so now
+
+230
+00:16:04,234 --> 00:16:14,559
+what's going to happen is um and i'm going to show you what all of this means i've put this quote board up here by default
+
+231
+00:16:14,560 --> 00:16:17,560
+for you um this is the main page
+
+232
+00:16:17,560 --> 00:16:20,560
+of sierra the console effectively you're going to
+
+233
+00:16:20,560 --> 00:16:29,560
+minimize this and what i've done is all the depth of markets i do this for my main um chart book anyway that some
+
+234
+00:16:29,560 --> 00:16:32,325
+of you may have seen on instagram where i've got
+
+235
+00:16:32,325 --> 00:16:35,090
+all the vwap charts and i've got market profile sorry
+
+236
+00:16:35,090 --> 00:16:40,620
+volume profile uh depth of market and so on and i like to detach the windows out of the console
+
+237
+00:16:40,620 --> 00:16:44,201
+if you want you can put them in the console it's almost
+
+238
+00:16:44,201 --> 00:16:46,588
+like on um your retail trading platform meta
+
+239
+00:16:46,588 --> 00:16:51,661
+trader 4 etc you've got the charts inside the console don't you what this allows you to detach
+
+240
+00:16:51,960 --> 00:16:53,909
+them i think you can do that there
+
+241
+00:16:53,909 --> 00:16:55,858
+as well but i like to have everything
+
+242
+00:16:55,858 --> 00:16:57,807
+detached so all the depth of markets i've
+
+243
+00:16:57,807 --> 00:17:01,218
+detached them so they're sitting behind this so we're just going to minimize this
+
+244
+00:17:01,220 --> 00:17:03,597
+okay so this is what you
+
+245
+00:17:03,597 --> 00:17:05,974
+should see now so there you
+
+246
+00:17:05,974 --> 00:17:09,539
+can see you've got uh five depth of markets
+
+247
+00:17:09,540 --> 00:17:12,023
+because this is on a laptop it's a
+
+248
+00:17:12,023 --> 00:17:14,506
+bit scrunched up on yours it shouldn't be
+
+249
+00:17:14,506 --> 00:17:16,989
+and anyway um even if it is you
+
+250
+00:17:16,989 --> 00:17:19,472
+can i think it's control and right click
+
+251
+00:17:19,472 --> 00:17:21,955
+on the area and you can just drag
+
+252
+00:17:21,955 --> 00:17:29,716
+them apart anyway and widen and you can play around with the dimensions you know if you want the edges further out again i'll let
+
+253
+00:17:29,720 --> 00:17:31,575
+you do that in your own time um
+
+254
+00:17:31,575 --> 00:17:33,430
+that's not the purpose of this video what
+
+255
+00:17:33,430 --> 00:17:35,285
+it is i just want to show you
+
+256
+00:17:35,285 --> 00:17:39,459
+what you're going to see the first time you open things up so you should see these five
+
+257
+00:17:39,460 --> 00:17:41,707
+depth of markets and what you're also going
+
+258
+00:17:41,707 --> 00:17:43,954
+to notice and i'm just going to show
+
+259
+00:17:43,954 --> 00:17:46,201
+you is they're going to have a lot
+
+260
+00:17:46,201 --> 00:17:50,977
+of buttons at the top okay guys now what i'm going to do in this little example
+
+261
+00:17:50,980 --> 00:17:53,844
+video i've done in my laptop is because
+
+262
+00:17:53,844 --> 00:17:56,708
+everything's scrunched up because it's on my laptop
+
+263
+00:17:56,708 --> 00:17:59,572
+and the reason i did that is because
+
+264
+00:17:59,572 --> 00:18:02,436
+um i wanted to do a first time
+
+265
+00:18:02,436 --> 00:18:05,300
+installation and obviously on my own main trading
+
+266
+00:18:05,300 --> 00:18:08,164
+computer um it's already been done so i
+
+267
+00:18:08,164 --> 00:18:19,978
+can't replicate what it's going to look like for you for the first time so to do that i just set up a brand new workspace on a laptop so it's a little
+
+268
+00:18:19,980 --> 00:18:22,671
+bit scrunched up so i'm going to maximize
+
+269
+00:18:22,671 --> 00:18:25,362
+one of the depth of markets i'm going
+
+270
+00:18:25,362 --> 00:18:33,099
+to show you what you should see okay so we've maximized it there you don't necessarily need to do this obviously if it
+
+271
+00:18:33,100 --> 00:18:35,321
+shows up and you've got a big screen
+
+272
+00:18:35,321 --> 00:18:37,542
+and everything's not scrunched but what you'll notice
+
+273
+00:18:37,542 --> 00:18:39,763
+guys is at the top here um you're
+
+274
+00:18:39,763 --> 00:18:41,984
+going to notice and it might be different
+
+275
+00:18:41,984 --> 00:18:49,758
+for you you're going to see different stuff but in this area here can you see there's a whole lot of stuff there and you're not going to
+
+276
+00:18:49,760 --> 00:18:51,738
+need it and i'm going to show you
+
+277
+00:18:51,738 --> 00:18:53,716
+how to get rid of it and i
+
+278
+00:18:53,716 --> 00:18:55,694
+can't put this in the template because it's
+
+279
+00:18:55,694 --> 00:18:57,672
+something obviously specific to each user so what
+
+280
+00:18:57,672 --> 00:18:59,650
+i'm going to do is i'm just take
+
+281
+00:18:59,650 --> 00:19:01,628
+a moment here to show you how to
+
+282
+00:19:01,628 --> 00:19:10,036
+get rid of all that stuff and just put the three buttons that in my opinion as a professional trader they're the only three buttons you'll need so let's go and do that now
+
+283
+00:19:10,040 --> 00:19:13,847
+okay so i'll let this video play out
+
+284
+00:19:13,847 --> 00:19:17,178
+so you right click customize control bar 2
+
+285
+00:19:17,178 --> 00:19:24,317
+okay when you do that you right click and hit and press customize control bar 2
+
+286
+00:19:25,270 --> 00:19:27,899
+you'll see all the things up there showing
+
+287
+00:19:27,899 --> 00:19:30,528
+a list now i want you to remove
+
+288
+00:19:30,528 --> 00:19:38,088
+every single one so we just do that okay so you see me removing every single one there you just don't need any
+
+289
+00:19:38,090 --> 00:19:40,664
+of this stuff and now i'm going to
+
+290
+00:19:40,664 --> 00:19:43,238
+show you how to put on the tabs
+
+291
+00:19:43,238 --> 00:19:45,812
+the stuff you need so first you go
+
+292
+00:19:45,812 --> 00:19:52,248
+to special items status bar add okay and you'll see what these things are when i come out of it
+
+293
+00:19:52,250 --> 00:20:00,670
+then you go to trade i believe trade and we're going to look for clear recent bid asks i'll probably
+
+294
+00:20:00,670 --> 00:20:03,051
+spend a moment just looking for
+
+295
+00:20:03,051 --> 00:20:05,432
+it here but what that does
+
+296
+00:20:05,432 --> 00:20:08,607
+is with a click of a button you
+
+297
+00:20:08,607 --> 00:20:11,782
+can clear all this you'll be able to
+
+298
+00:20:11,782 --> 00:20:14,957
+clear this area here the demand stuff you
+
+299
+00:20:14,957 --> 00:20:24,879
+see how there's residuals and we talked about this earlier so you'll be able to clear all that okay so believe on there you go
+
+300
+00:20:24,880 --> 00:20:27,000
+clear recent bid and ask volume
+
+301
+00:20:27,000 --> 00:20:29,120
+so you click on that add
+
+302
+00:20:29,120 --> 00:20:32,300
+okay crba and then the last one is re-center
+
+303
+00:20:32,300 --> 00:20:35,010
+so what it's going to do is obviously
+
+304
+00:20:35,010 --> 00:20:37,720
+as this moves up and down it will
+
+305
+00:20:37,720 --> 00:20:40,430
+go to the bottom on top of your
+
+306
+00:20:40,430 --> 00:20:47,207
+page just allows you to re-center it nicely and then click ok okay guys so that's your status bar there
+
+307
+00:20:47,210 --> 00:20:49,171
+okay all that shows you is
+
+308
+00:20:49,171 --> 00:20:51,785
+that there's data coming in i like to
+
+309
+00:20:51,785 --> 00:20:55,053
+see that because obviously i want to know is data
+
+310
+00:20:55,053 --> 00:20:57,667
+coming in or not has my internet internet
+
+311
+00:20:57,667 --> 00:21:05,838
+connection dropped off or has the market just gone dead for a moment i want to know the difference so as long as that's green
+
+312
+00:21:05,840 --> 00:21:08,021
+we're okay tl is trading locked
+
+313
+00:21:08,021 --> 00:21:10,929
+because you're going to be doing a lot
+
+314
+00:21:10,929 --> 00:21:18,199
+of practice just watching perhaps i don't want to accidentally click something so that would just lock you from accidentally
+
+315
+00:21:18,200 --> 00:21:26,020
+placing a trade that one we talked about which just clears this area and then the recenter okay
+
+316
+00:21:26,020 --> 00:21:27,954
+guys in my opinion that's all
+
+317
+00:21:27,954 --> 00:21:30,533
+you're going to need now what i'm going
+
+318
+00:21:30,533 --> 00:21:33,112
+to do here is i'm just going to
+
+319
+00:21:33,112 --> 00:21:39,238
+one more quick thing before we go to my main platform and i talk you through the quote board
+
+320
+00:21:39,240 --> 00:21:42,849
+is if by accident you remove everything in this control
+
+321
+00:21:42,849 --> 00:21:45,736
+bar and you hit ok you won't be
+
+322
+00:21:45,736 --> 00:21:54,038
+able to access it again by right clicking so i'm just going to show you how to access it from a different area
+
+323
+00:21:54,040 --> 00:21:59,137
+on your main console okay so all i'm doing here
+
+324
+00:21:59,137 --> 00:22:03,215
+is i'm just showing you that the change
+
+325
+00:22:03,215 --> 00:22:07,293
+you make on any one depth of market
+
+326
+00:22:07,293 --> 00:22:15,449
+you see how it copies it over to all of them okay onto all of them
+
+327
+00:22:15,450 --> 00:22:19,912
+so i'll continue to play this so yeah
+
+328
+00:22:19,912 --> 00:22:25,490
+like i said if you accidentally remove everything from that
+
+329
+00:22:25,490 --> 00:22:31,068
+control bar which i'm going to do here and you
+
+330
+00:22:31,068 --> 00:22:36,646
+try to so there we go customize control bar if
+
+331
+00:22:36,646 --> 00:22:48,918
+you remove everything and before adding stuff you want on you just come out of it you press ok so you see
+
+332
+00:22:48,920 --> 00:22:50,639
+it's got rid of the control bar how
+
+333
+00:22:50,639 --> 00:22:52,358
+do you get back to that how do
+
+334
+00:22:52,358 --> 00:22:58,159
+you add a control bar so this is what i want you to know in case i just thought some people might accidentally do that and get
+
+335
+00:22:58,160 --> 00:23:00,715
+stuck you go to the console as the
+
+336
+00:23:00,715 --> 00:23:03,270
+first place you started so it's the main
+
+337
+00:23:03,270 --> 00:23:05,825
+sierra chart console you go global settings and
+
+338
+00:23:05,825 --> 00:23:09,977
+there's a customized control bars there so there you can see it customized
+
+339
+00:23:09,980 --> 00:23:12,111
+control bars control bar 2 got it it's
+
+340
+00:23:12,111 --> 00:23:14,547
+the same one that you saw when you
+
+341
+00:23:14,547 --> 00:23:16,983
+went straight in the depth of market again
+
+342
+00:23:16,983 --> 00:23:21,855
+we're going to add the same stuff special item status bar and then we're going to
+
+343
+00:23:22,160 --> 00:23:27,144
+go to trade and we're going to add
+
+344
+00:23:27,144 --> 00:23:32,128
+the uh trading locked uh the center i
+
+345
+00:23:32,128 --> 00:23:37,112
+believe it was oh sorry the clear recent
+
+346
+00:23:37,112 --> 00:23:42,096
+bid ask okay crba there we go and
+
+347
+00:23:42,096 --> 00:23:48,949
+then we're going to recenter add the recenter i'm going to
+
+348
+00:23:48,950 --> 00:23:50,710
+show you in a second what all this
+
+349
+00:23:50,710 --> 00:23:54,010
+stuff does but i'm going to come off the laptop and i'm going to show
+
+350
+00:23:54,010 --> 00:23:55,646
+you on my main platform okay
+
+351
+00:23:55,646 --> 00:23:57,282
+so if you check the depth
+
+352
+00:23:57,282 --> 00:24:00,009
+of market now can you see it's come back on
+
+353
+00:24:00,010 --> 00:24:08,150
+there you go you've got your bar back okay guys so that's the full setup that should get you started
+
+354
+00:24:08,150 --> 00:24:09,001
+guys exciting times
+
+355
+00:24:09,001 --> 00:24:10,986
+you're now seeing demand and supply for
+
+356
+00:24:10,986 --> 00:24:13,255
+real on your own platform it's going to
+
+357
+00:24:13,255 --> 00:24:18,928
+be really exciting for you watching the stuff move up and down um what i want to quickly show you
+
+358
+00:24:18,930 --> 00:24:20,732
+is the same stuff but on my
+
+359
+00:24:20,732 --> 00:24:22,792
+main platform so i can just talk you
+
+360
+00:24:22,792 --> 00:24:24,594
+through the quote board so you can
+
+361
+00:24:24,594 --> 00:24:29,487
+understand and make sure that you've got the right uh futures contract loaded okay guys so i'll see you
+
+362
+00:24:29,490 --> 00:24:30,981
+over there in a second okay
+
+363
+00:24:30,981 --> 00:24:32,969
+guys so this is the exact same setup
+
+364
+00:24:32,969 --> 00:24:34,957
+that you're going to be seeing obviously this
+
+365
+00:24:34,957 --> 00:24:36,945
+is on my main workstation i didn't want
+
+366
+00:24:36,945 --> 00:24:45,147
+to show you the laptop it's a bit small i just wanted to show you how to do the initial setup so now you've got it all set up let me just explain
+
+367
+00:24:45,150 --> 00:24:46,593
+what you're going to see
+
+368
+00:24:46,593 --> 00:24:48,613
+so obviously i'm using a live uh
+
+369
+00:24:48,613 --> 00:24:50,922
+futures account so just make sure and i
+
+370
+00:24:50,922 --> 00:24:53,231
+don't want you guys to use any live
+
+371
+00:24:53,231 --> 00:25:03,047
+trading so what i want you to do is just make sure it's trade trains trade simulation mode on which it should be anyway uh so just click yes there so you can see
+
+372
+00:25:03,050 --> 00:25:08,490
+they've all got sim one now sim sim sim make sure you're on sim so that's point number one
+
+373
+00:25:08,490 --> 00:25:10,329
+point number two is um
+
+374
+00:25:10,329 --> 00:25:12,904
+the quote board but actually um yeah
+
+375
+00:25:12,904 --> 00:25:15,111
+let me just show you this
+
+376
+00:25:15,111 --> 00:25:22,468
+quickly first so what you'll also notice is i've put the time in sales okay you won't necessarily need this
+
+377
+00:25:22,470 --> 00:25:24,768
+but i wanted to show you so
+
+378
+00:25:24,768 --> 00:25:27,394
+i've put a time in sales for every
+
+379
+00:25:27,394 --> 00:25:29,692
+uh market so just quickly in order
+
+380
+00:25:29,692 --> 00:25:35,929
+what markets do you have here you've got the 10-year treasury which is the bond market you've got the
+
+381
+00:25:35,930 --> 00:25:37,010
+e-mini s p
+
+382
+00:25:37,010 --> 00:25:39,170
+500 okay i'm giving you a variety
+
+383
+00:25:39,170 --> 00:25:42,050
+of markets here guys but don't forget i
+
+384
+00:25:42,050 --> 00:25:44,570
+want you to focus on the 10-year
+
+385
+00:25:44,570 --> 00:25:49,610
+treasury because you will see it's the thickest market um and then what have
+
+386
+00:25:49,970 --> 00:25:52,481
+we got we've got oil okay
+
+387
+00:25:52,481 --> 00:25:54,992
+crude oil then we've got pound
+
+388
+00:25:54,992 --> 00:25:57,503
+dollar okay and then we've got
+
+389
+00:25:57,503 --> 00:26:05,038
+euro dollar so i just want you to become familiar with these and see how different they are
+
+390
+00:26:05,040 --> 00:26:07,166
+you can see here right now i've
+
+391
+00:26:07,166 --> 00:26:09,596
+got coronavirus stuff going on markets incredibly thin
+
+392
+00:26:09,596 --> 00:26:12,026
+including the treasuries but you can at least
+
+393
+00:26:12,026 --> 00:26:14,152
+see the treasuries is significantly thicker than
+
+394
+00:26:14,152 --> 00:26:20,836
+the other two so what do i mean these have got single digits on the supply side which should make sense to
+
+395
+00:26:20,840 --> 00:26:23,250
+you now um and supply
+
+396
+00:26:23,250 --> 00:26:26,625
+and the treasuries are obviously slightly thicker
+
+397
+00:26:26,625 --> 00:26:34,339
+so should be familiar with that now so i'm just going to get rid of this
+
+398
+00:26:34,340 --> 00:26:35,725
+so so you've got
+
+399
+00:26:35,725 --> 00:26:38,495
+time in sales for every single market okay
+
+400
+00:26:38,495 --> 00:26:41,265
+there's the time in sales for crude oil
+
+401
+00:26:41,265 --> 00:26:48,538
+again go back to the time in sales video if you need a reminder and then the other thing is guys
+
+402
+00:26:48,540 --> 00:26:50,961
+i've put charts for you so
+
+403
+00:26:50,961 --> 00:26:53,785
+you'll see that here on your page
+
+404
+00:26:53,785 --> 00:27:02,259
+so for example i've just put five minute charts but you know they're not that important at this stage but i
+
+405
+00:27:02,260 --> 00:27:06,440
+just wanted to obviously put them there for the option if you want to watch them etc etc
+
+406
+00:27:06,440 --> 00:27:13,460
+now this is the probably one of the most important bits of the video is the quote board
+
+407
+00:27:13,460 --> 00:27:15,746
+so you'll notice i've put a
+
+408
+00:27:15,746 --> 00:27:19,175
+quote board up here now guys i don't know
+
+409
+00:27:19,175 --> 00:27:21,842
+if you noticed but there's no volume
+
+410
+00:27:21,842 --> 00:27:28,319
+here in pound dollar and there's no volume coming through in euro dollar okay this market is
+
+411
+00:27:28,320 --> 00:27:31,470
+active there is volume trading here as
+
+412
+00:27:31,470 --> 00:27:35,520
+you can see on the volume profile we've had 1078
+
+413
+00:27:35,520 --> 00:27:38,670
+contracts trade at 12256 in pound dollar we've
+
+414
+00:27:38,670 --> 00:27:42,720
+had 283 contracts trade at 1.1141 in euro dollar the market
+
+415
+00:27:44,520 --> 00:27:45,494
+is active what
+
+416
+00:27:45,494 --> 00:27:48,416
+it is is and i may need to depending
+
+417
+00:27:48,416 --> 00:27:51,014
+on if people get confused or not about
+
+418
+00:27:51,014 --> 00:27:58,158
+this i may need to do a separate video but futures contracts as you may well be aware have an expiry date
+
+419
+00:27:58,160 --> 00:28:00,381
+so then what happens is
+
+420
+00:28:00,381 --> 00:28:03,491
+they roll over futures contracts don't go
+
+421
+00:28:03,491 --> 00:28:10,599
+on forever typically they last anywhere between one and three months before a new futures contract
+
+422
+00:28:10,600 --> 00:28:13,571
+um because if you think about it what's
+
+423
+00:28:13,571 --> 00:28:16,542
+the point otherwise a futures contract is literally
+
+424
+00:28:16,542 --> 00:28:23,599
+the promise um like a spot contract is still kind of a derivative in a sense that has a
+
+425
+00:28:23,600 --> 00:28:26,240
+delivery date more than zero days because spot
+
+426
+00:28:26,240 --> 00:28:28,880
+market tends to be t plus two where
+
+427
+00:28:28,880 --> 00:28:36,140
+you've got to deliver the currency in two days time when banks trade with each other pound dollar they work on the
+
+428
+00:28:36,140 --> 00:28:38,375
+premise that they will deliver um
+
+429
+00:28:38,375 --> 00:28:41,355
+the currency within two days futures market all
+
+430
+00:28:41,355 --> 00:28:43,590
+it is is there's a promise
+
+431
+00:28:43,590 --> 00:28:49,178
+to deliver the underlying asset um obviously could be s&p 500 it could be 10-year
+
+432
+00:28:49,180 --> 00:28:52,293
+treasury notes it could be the pound euro
+
+433
+00:28:52,293 --> 00:28:55,406
+could be crude oil in three months time
+
+434
+00:28:55,406 --> 00:28:58,519
+so obviously they can't last forever otherwise um
+
+435
+00:28:58,519 --> 00:29:03,578
+what's the point right you have to force delivery at some stage but
+
+436
+00:29:03,580 --> 00:29:05,071
+typically obviously financial speculators they
+
+437
+00:29:05,071 --> 00:29:07,159
+don't really want to deliver oil they
+
+438
+00:29:07,159 --> 00:29:09,545
+don't want to deliver the underlying all they
+
+439
+00:29:09,545 --> 00:29:14,318
+want to do is they want to realize a gain or loss so all that happens
+
+440
+00:29:14,320 --> 00:29:17,376
+is the futures contract will roll over onto
+
+441
+00:29:17,376 --> 00:29:21,196
+the next futures contract so what i've done is um
+
+442
+00:29:21,196 --> 00:29:23,870
+and if that didn't make any sense
+
+443
+00:29:23,870 --> 00:29:29,600
+then we can go over it again in a future video um but otherwise just
+
+444
+00:29:29,600 --> 00:29:32,566
+re-watch it a few times and hopefully the
+
+445
+00:29:32,566 --> 00:29:35,903
+way i've explained it here will make sense i've
+
+446
+00:29:35,903 --> 00:29:38,498
+actually put all the futures contracts for
+
+447
+00:29:38,498 --> 00:29:43,318
+every single um depth of market you see here okay so the five
+
+448
+00:29:43,320 --> 00:29:45,633
+depth of markets i've put all the
+
+449
+00:29:45,633 --> 00:29:48,276
+futures contract in a quote board for you
+
+450
+00:29:48,276 --> 00:29:50,589
+now what i typically do is i'll
+
+451
+00:29:50,589 --> 00:29:57,198
+look at the next three futures contracts going out so what do i mean by that well look at the
+
+452
+00:29:57,200 --> 00:29:59,240
+treasuries guys now the way
+
+453
+00:29:59,240 --> 00:30:02,096
+you can do this yourself okay is
+
+454
+00:30:02,096 --> 00:30:05,360
+you come to the quote board and you
+
+455
+00:30:05,360 --> 00:30:13,520
+go to this area name okay and you double click there and it will say you'll come up with a
+
+456
+00:30:13,520 --> 00:30:16,755
+box and you click find and it will
+
+457
+00:30:16,755 --> 00:30:19,990
+take you if you just scroll down let's
+
+458
+00:30:19,990 --> 00:30:23,225
+get rid of that yeah if you scroll
+
+459
+00:30:23,225 --> 00:30:30,099
+down it will take you to a list of all the futures contracts for that product so
+
+460
+00:30:30,100 --> 00:30:37,360
+obviously that first one this box here is 10-year treasuries right now if you remember i said it
+
+461
+00:30:37,360 --> 00:30:39,663
+depends the exchange will determine or
+
+462
+00:30:39,663 --> 00:30:43,117
+the product that you trade will determine what exchange
+
+463
+00:30:43,117 --> 00:30:48,107
+that you pick now uh the 10-year treasury is on the chicago board
+
+464
+00:30:48,107 --> 00:30:59,238
+of trade cbot so you'll see it here cbot and under there you'll see all the contracts available for expiry going out till next year so it could be
+
+465
+00:30:59,240 --> 00:31:01,205
+a futures contract expiring on march 2020
+
+466
+00:31:01,205 --> 00:31:03,825
+guys i know it can seem complicated at
+
+467
+00:31:03,825 --> 00:31:12,670
+first but it's no different to you to the spot market which a lot of people don't realize works on a t plus one t plus two
+
+468
+00:31:13,000 --> 00:31:14,920
+basis what that means is
+
+469
+00:31:14,920 --> 00:31:18,761
+when interbank banks or institutions trade with each other they
+
+470
+00:31:18,761 --> 00:31:23,755
+make a contractual promise to deliver that pound you know if you buy
+
+471
+00:31:23,755 --> 00:31:40,658
+pounds or you buy dollars etc the other bank etc will make a promise to deliver that within one to two days as per the contract now or to honor that transaction within one or two days depending on what the settlement period is
+
+472
+00:31:40,660 --> 00:31:42,881
+the only difference guys is the
+
+473
+00:31:42,881 --> 00:31:46,213
+settlement period in these is longer that's why they're
+
+474
+00:31:46,213 --> 00:31:51,026
+called futures contracts because you promise to honor that obligation not in one
+
+475
+00:31:51,026 --> 00:32:06,947
+or two days but maybe in 30 days maybe in 90 days but to standardize the market and to allow everyone to trade the same contract that expiry period is fixed by the exchange so in this case it will be a date in march 2020
+
+476
+00:32:08,060 --> 00:32:13,460
+then there's another contract june then there's another one september then there's december then
+
+477
+00:32:13,460 --> 00:32:15,765
+there's march now what you
+
+478
+00:32:15,765 --> 00:32:18,992
+will notice is there'll be a lot
+
+479
+00:32:18,992 --> 00:32:30,519
+of volume in the closest contract everyone will be trading the nearest contract that will be the most liquid now what's actually happened here is
+
+480
+00:32:30,520 --> 00:32:32,710
+the march contract is about
+
+481
+00:32:32,710 --> 00:32:40,157
+to expire in um the u uh the u.s treasury so let me show you that
+
+482
+00:32:39,720 --> 00:32:42,317
+if we just move this box
+
+483
+00:32:42,317 --> 00:32:44,914
+out of the way can you
+
+484
+00:32:44,914 --> 00:32:47,511
+see cancel sorry just cancel this
+
+485
+00:32:47,511 --> 00:32:58,767
+cancel that don't know if you can see it but you should see it on yours it says here now by the time you do this
+
+486
+00:32:58,770 --> 00:33:01,991
+it may even say zero but you can
+
+487
+00:33:01,991 --> 00:33:04,406
+see the volume is 3755 contracts that
+
+488
+00:33:04,406 --> 00:33:13,263
+means today 3755 contracts have traded on the march contract guys it's peanuts um whereas in the next contract so let's go back
+
+489
+00:33:14,070 --> 00:33:16,700
+and see which one that is you
+
+490
+00:33:16,700 --> 00:33:19,706
+see that it says zn m20 if we
+
+491
+00:33:19,706 --> 00:33:30,228
+go back here you can see it here it's june so what that means is every three months there's an expiry so the june contract the 10-year treasury
+
+492
+00:33:30,230 --> 00:33:40,090
+guys that's traded 1.2 million contracts today right versus 3 700 so that's the one i've got loaded
+
+493
+00:33:40,090 --> 00:33:42,927
+here so my point is you always want
+
+494
+00:33:42,927 --> 00:33:45,764
+the most liquid contract loaded obviously if it
+
+495
+00:33:45,764 --> 00:33:54,629
+says zero that means it's either expired or it's too far ahead in the future um for there to be any interest in it at
+
+496
+00:33:54,630 --> 00:33:58,150
+the moment so you'll see here with the
+
+497
+00:33:58,150 --> 00:34:01,230
+10-year treasury okay that the next one
+
+498
+00:34:01,230 --> 00:34:05,630
+after june is september z and u so zn means
+
+499
+00:34:05,630 --> 00:34:17,950
+10-year treasury u means september and 20 is 2020 so it's a pretty common you can google this it's a common um language used by futures traders and futures markets
+
+500
+00:34:18,830 --> 00:34:23,023
+to denote the contract type by the instrument the month and then
+
+501
+00:34:23,023 --> 00:34:27,216
+the year okay so you will see here that the september contract
+
+502
+00:34:27,216 --> 00:34:32,108
+no one's trading at the moment but i've put it there on the list
+
+503
+00:34:32,110 --> 00:34:35,300
+so what i like to do is i always like
+
+504
+00:34:35,300 --> 00:34:38,490
+to check oh where's the liquidity because when you come
+
+505
+00:34:38,490 --> 00:34:44,870
+close to rollover um what will happen is you'll see the contract start to build up in the next contract
+
+506
+00:34:44,870 --> 00:34:46,870
+so i like to load that but i'm going to
+
+507
+00:34:46,870 --> 00:34:49,270
+show you sierra chart will do will allow you to do that
+
+508
+00:34:49,270 --> 00:34:53,425
+automatically anyway um you see the same thing here in
+
+509
+00:34:53,425 --> 00:34:57,580
+the e-mini uh futures where um it's kind of you've
+
+510
+00:34:57,580 --> 00:35:01,735
+kind of got it's very close to the rollover period
+
+511
+00:35:01,735 --> 00:35:05,890
+so you've got people trading the march contract about to
+
+512
+00:35:05,890 --> 00:35:10,505
+expire and then you've got the june contract as well so really what i should
+
+513
+00:35:10,505 --> 00:35:15,120
+be doing is i should be rolling this over to june because you can see
+
+514
+00:35:15,120 --> 00:35:23,734
+here the one i've got loaded is march and that has traded 1.18 million and then june has traded 1.66 million so june's actually got more so it's a better
+
+515
+00:35:24,350 --> 00:35:27,798
+contract for me to have and i'm going to change
+
+516
+00:35:27,798 --> 00:35:31,246
+that in a second crude oil um is a bit
+
+517
+00:35:31,246 --> 00:35:38,488
+of a tricky one because that trades every uh contract every month so let me show you it's the same thing
+
+518
+00:35:38,490 --> 00:35:42,787
+double click it click on find and then scroll down
+
+519
+00:35:42,787 --> 00:35:47,084
+and you can see nymex as i said nymex the
+
+520
+00:35:47,084 --> 00:35:53,529
+mercantile exchange handles futures contracts for commodities so you can see here brent crude light
+
+521
+00:35:53,530 --> 00:35:59,370
+sweet crude obviously we're trading u.s crude oil uh can you see here how it expires every month
+
+522
+00:35:59,370 --> 00:36:02,731
+march april may june july so on and so forth
+
+523
+00:36:02,731 --> 00:36:06,092
+so h is march j is april so you can
+
+524
+00:36:06,092 --> 00:36:13,488
+see march has already expired no one's trading it um and then j april is the most liquid contract and that's what
+
+525
+00:36:13,490 --> 00:36:16,890
+i believe is loaded up there yeah so that's already
+
+526
+00:36:16,890 --> 00:36:20,630
+loaded so now the point of why these are so quiet
+
+527
+00:36:20,630 --> 00:36:24,877
+can you see the british pound futures um these are
+
+528
+00:36:24,877 --> 00:36:29,124
+every three months that's why you see it's got the
+
+529
+00:36:29,124 --> 00:36:38,044
+h okay and then the m20 the same as the treasuries and the s p 500 which roll over every three months
+
+530
+00:36:38,470 --> 00:36:45,229
+so the next one to expire british pound is the march contract guys and that's
+
+531
+00:36:45,229 --> 00:36:51,086
+here so we've traded 45 000 contracts however people have already started rolling over because
+
+532
+00:36:51,086 --> 00:36:59,647
+it's about to expire people have already started rolling over their positions to june so look what's happened here
+
+533
+00:37:00,550 --> 00:37:09,190
+how do i know that well look at june guys june's got more volume today 117 000 sorry i've written over
+
+534
+00:37:09,190 --> 00:37:15,350
+that euro futures have got the same march has got 150 000 and june's got 177 000
+
+535
+00:37:15,350 --> 00:37:22,219
+okay so if for whatever reason you're not seeing volume um or it's moving very
+
+536
+00:37:22,219 --> 00:37:26,798
+slowly then you need to roll the futures contract over
+
+537
+00:37:26,798 --> 00:37:33,209
+so that's what we're going to do here so i'm going to minimize the
+
+538
+00:37:33,210 --> 00:37:36,781
+quote board remember what this is for and you can
+
+539
+00:37:36,781 --> 00:37:40,352
+change these yourself so as the months change you should
+
+540
+00:37:40,352 --> 00:37:45,709
+be changing these yourself happy to do another video on this specifically if people get
+
+541
+00:37:45,710 --> 00:37:48,927
+confused but so we said we changed the s p
+
+542
+00:37:48,927 --> 00:37:53,109
+so what you do is you press uh believe it's just have to
+
+543
+00:37:53,110 --> 00:37:56,428
+find this guy's chart perform future symbol rollover
+
+544
+00:37:56,428 --> 00:37:59,746
+okay okay so it says it asks you
+
+545
+00:37:59,746 --> 00:38:03,064
+the current symbol and where do you want
+
+546
+00:38:03,064 --> 00:38:06,382
+it to go so we want it to
+
+547
+00:38:06,382 --> 00:38:18,827
+go from march to june m20 do we let's check the quote board again e mini s p future yep march to june that's correct so we simply press perform
+
+548
+00:38:18,830 --> 00:38:24,470
+futures rollover okay okay there you go it's done it now we've flipped it you see how simple that was
+
+549
+00:38:24,470 --> 00:38:26,749
+we're just making sure and now we're
+
+550
+00:38:26,749 --> 00:38:29,028
+going to do it for pound futures
+
+551
+00:38:29,028 --> 00:38:31,632
+chart perform futures symbol rollover right we want
+
+552
+00:38:31,632 --> 00:38:33,585
+to go from um it's exactly
+
+553
+00:38:33,585 --> 00:38:43,027
+the same march to june right where there's more volume as we said before click ok there you go guys okay so you can see you've now got volume
+
+554
+00:38:43,030 --> 00:38:44,616
+coming in there was volume in the
+
+555
+00:38:44,616 --> 00:38:47,789
+other contract as well but it was as you can see there's much more
+
+556
+00:38:47,790 --> 00:38:50,010
+here you can see a nicely built out
+
+557
+00:38:50,010 --> 00:38:52,230
+profile now we're going to do the same
+
+558
+00:38:52,230 --> 00:38:54,450
+with the euro dollar market so i'm going
+
+559
+00:38:54,450 --> 00:38:58,890
+to go to chart perform futures rollover and it's doing the same thing march to june
+
+560
+00:38:58,890 --> 00:39:07,190
+so you may have to do this process yourself as soon as you click ok you should see volume coming
+
+561
+00:39:07,190 --> 00:39:09,711
+there you go guys so you can see
+
+562
+00:39:09,711 --> 00:39:12,232
+it's a nicely built out profile right because
+
+563
+00:39:12,232 --> 00:39:14,753
+there's more there's there's nice volume it's the
+
+564
+00:39:14,753 --> 00:39:18,849
+one that everyone is trading you can see the volume here building out
+
+565
+00:39:18,850 --> 00:39:23,190
+there's obviously been decent volume today in this area there's been decent volume in this area
+
+566
+00:39:23,190 --> 00:39:24,998
+um so hopefully that helps
+
+567
+00:39:24,998 --> 00:39:27,529
+guys unless you all set up okay
+
+568
+00:39:27,529 --> 00:39:30,421
+i want you to spend some time now
+
+569
+00:39:30,421 --> 00:39:33,313
+just playing around have fun with this stuff
+
+570
+00:39:33,313 --> 00:39:35,844
+um no live trading um use the
+
+571
+00:39:35,844 --> 00:39:45,607
+delayed data feed feel free to place and take some sim trades if you want i'm going to try just bear with me because it's the coronavirus
+
+572
+00:39:45,610 --> 00:39:47,644
+going on right now and it's
+
+573
+00:39:47,644 --> 00:39:49,678
+um pretty difficult to um really
+
+574
+00:39:49,678 --> 00:39:52,390
+get stuck in to good examples but i'm
+
+575
+00:39:52,390 --> 00:39:59,170
+going to try and upload some videos give me some time over time um you know the market's not going
+
+576
+00:39:59,170 --> 00:40:01,486
+anywhere and anyway i want you to spend a bit
+
+577
+00:40:01,486 --> 00:40:03,339
+of time before you even start simming on
+
+578
+00:40:03,339 --> 00:40:04,960
+this but i can show you just
+
+579
+00:40:04,960 --> 00:40:09,129
+for fun how you can place trades on the depth of market it's going to help you keep
+
+580
+00:40:09,130 --> 00:40:11,695
+interested and stuff what i want you to
+
+581
+00:40:11,695 --> 00:40:14,260
+do now is maybe record it for a
+
+582
+00:40:14,260 --> 00:40:16,825
+few hours and see if you can spot
+
+583
+00:40:16,825 --> 00:40:19,390
+um you know the things that we discussed
+
+584
+00:40:19,390 --> 00:40:29,009
+in the banana market and so on and so forth and then i'm going to try and put some videos out about absorption and trading around the profile um but
+
+585
+00:40:29,010 --> 00:40:31,416
+you know don't worry i'm going to spend
+
+586
+00:40:31,416 --> 00:40:33,822
+too much time on it the whole point
+
+587
+00:40:33,822 --> 00:40:36,228
+of me doing that is because i want
+
+588
+00:40:36,228 --> 00:40:38,634
+you eventually when we transfer you over to
+
+589
+00:40:38,634 --> 00:40:41,040
+using profiles and looking at um you know
+
+590
+00:40:41,040 --> 00:40:51,868
+trading around extremes like standard deviations and vwaps and so on guys you're going to know this stuff so well that all of that stuff even the footprint is going to be really easy for you
+
+591
+00:40:53,150 --> 00:40:54,698
+because you did the hard work
+
+592
+00:40:54,698 --> 00:40:58,569
+on here so have fun with it guys if you've got any questions ask me
+
+593
+00:40:58,570 --> 00:40:59,973
+like i said i'll try and
+
+594
+00:40:59,973 --> 00:41:01,376
+put some videos out um but
+
+595
+00:41:01,376 --> 00:41:03,949
+be patient it may be a little while before i do
+
+596
+00:41:03,950 --> 00:41:09,510
+that but um yeah look forward to hearing your feedback guys enjoy you
+
+===== END AFTER_SEGMENT =====

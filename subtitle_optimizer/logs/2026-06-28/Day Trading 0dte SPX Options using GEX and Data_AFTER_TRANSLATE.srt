@@ -1,0 +1,3137 @@
+===== AFTER_TRANSLATE (627 entries) =====
+1
+00:00:00,000 --> 00:00:00,800
+大家好，我是Brian。
+Hey guys, Brian's here.
+
+2
+00:00:00,900 --> 00:00:03,600
+今天是2024年8月28日，星期三。
+Today is Wednesday, August 28th, 2024.
+
+3
+00:00:03,700 --> 00:00:06,400
+希望大家这几天交易顺利。
+Hopefully you've been having a great few days trading.
+
+4
+00:00:06,700 --> 00:00:09,300
+今天的视频和往常一样，有很多内容需要解析。
+There's a lot to unpack in today's video like most of these.
+
+5
+00:00:09,500 --> 00:00:12,300
+我会直接切入量化交易应用的关键价位。
+I will be jumping straight into some of the quant trading app levels.
+
+6
+00:00:12,500 --> 00:00:15,800
+今天我们还会来看一下gamma暴露的情况。
+We will take a look at some gamma exposure here for today.
+
+7
+00:00:16,000 --> 00:00:19,156
+我们还会查看专有的量化交易
+We'll also take a look at the proprietary quant trading
+
+8
+00:00:19,156 --> 00:00:22,312
+应用SPX交易引擎，并尝试将一些汇聚信号
+app SPX trade engine and try to combine some confluences
+
+9
+00:00:22,312 --> 00:00:26,099
+与我们在图表上观察到的价格行为结合起来。
+with what we see on our charts when we're reading price action.
+
+10
+00:00:26,400 --> 00:00:30,100
+最后，我们会来看一些非常不错的期权交易。
+And then lastly, we'll jump into some really nice options trades here.
+
+11
+00:00:30,400 --> 00:00:31,866
+这是一个看跌期权，
+This is a put and we
+
+12
+00:00:31,866 --> 00:00:34,310
+我们还会回顾一下
+will also take a look at a trade that happened
+
+13
+00:00:34,310 --> 00:00:36,998
+当天晚些时候使用深度虚值看涨期权的交易。
+later in the day using a deep out the money call.
+
+14
+00:00:37,300 --> 00:00:38,700
+那我们直接开始吧。
+So let's just jump right into it.
+
+15
+00:00:39,000 --> 00:00:42,300
+我们现在看的是SPY的15分钟图。
+What we're looking at is the SPY on the 15 minute time frame.
+
+16
+00:00:42,500 --> 00:00:47,200
+一天开始时行情比较震荡，但后来加速上涨。
+Things were pretty choppy to start the day, but we did get some acceleration later in the day.
+
+17
+00:00:47,500 --> 00:00:50,600
+和往常一样，我最喜欢的形态是突破后回踩。
+As usual, my favorite setup is the break and retest.
+
+18
+00:00:50,800 --> 00:00:54,000
+这就是图表上看到的量化交易应用的日内区间。
+This is the quant trading app intraday zone right here that you see on our charts.
+
+19
+00:00:54,300 --> 00:00:58,600
+这是我们的绝对gamma击价，同样来自量化交易应用的脚本。
+This is our absolute gamma strike, which is also coming straight from the quant trading app script.
+
+20
+00:00:58,800 --> 00:01:00,750
+如果我关闭所有技术指标，
+So if I turn off all of my studies, you
+
+21
+00:01:00,750 --> 00:01:02,700
+大家就能看到这是一个干净的图表。如果我
+guys can see this is a clear chart. If I
+
+22
+00:01:02,700 --> 00:01:06,600
+打开技术指标，图表上绘制的所有内容都来自量化交易应用的脚本。
+turn on my studies, everything that's being drawn on the chart is coming straight from the quant trading app scripts.
+
+23
+00:01:07,000 --> 00:01:11,900
+这是下方的周线价位，也被称为量化交易应用的买入区间。
+This is our weekly level right down here, which is referred to as the quant trading app buy zone.
+
+24
+00:01:12,200 --> 00:01:15,400
+大家可以看到价格最终是如何与这个价位互动的。
+You guys can see how price ended up interacting with the level.
+
+25
+00:01:15,900 --> 00:01:18,442
+提醒一下，如果大家是第一次在YouTube上看到这个，
+As a reminder, if you're seeing this for the first
+
+26
+00:01:18,442 --> 00:01:20,476
+这些价位是在一周开始时绘制的，
+time on YouTube, these levels are drawn out
+
+27
+00:01:20,476 --> 00:01:24,798
+并且直接来自量化交易应用的周线脚本。
+at the start of the week and they come straight from the quant trading app weekly script.
+
+28
+00:01:25,100 --> 00:01:28,500
+如果你使用thinkorswim，脚本就在这里。
+If you use thinkorswim, the scripts are right here.
+
+29
+00:01:28,500 --> 00:01:30,027
+如果你使用TradingView，脚本
+And if you use trading view, the scripts
+
+30
+00:01:30,027 --> 00:01:32,699
+同样也在这里，我们只需要在一周开始时点击这个。
+are Also right here, we just click this at the start of our week.
+
+31
+00:01:33,200 --> 00:01:35,520
+我们打开Thinkorswim的研究工具，进入
+We come up to our studies on Thinkorswim, go to
+
+32
+00:01:35,520 --> 00:01:37,840
+编辑研究，如果你已经从之前的级别创建了脚本，
+edit studies, double click the scroll right here if you
+
+33
+00:01:37,840 --> 00:01:40,160
+就双击这里的滚动条，
+already have the scripts created from the previous level, and
+
+34
+00:01:40,160 --> 00:01:44,800
+然后把它们粘贴到你的图表中，点击确定，这些价位就会自动绘制出来。
+then you just paste them in your chart and then you press OK, and then these levels are automatically drawn.
+
+35
+00:01:44,900 --> 00:01:47,400
+这些价位在一周开始时就已经存在，
+They are there at the start of the week, which
+
+36
+00:01:47,400 --> 00:01:51,900
+这意味着我们有充足的时间来为价格到达这些位置时的操作做准备。
+means we have plenty of time to prepare for what we're going to do when price gets there.
+
+37
+00:01:52,300 --> 00:01:55,900
+但从日内交易的角度来看，我想重点标出这个价位。
+But from an intraday standpoint, I want to highlight this level right here.
+
+38
+00:01:56,200 --> 00:01:58,700
+这就是著名的突破回测。
+This is the infamous break and retest.
+
+39
+00:01:58,700 --> 00:02:02,600
+价格先向下突破，这是对该价位的首次回测。
+So this is price breaking down. This is that first retest of the level.
+
+40
+00:02:02,700 --> 00:02:04,400
+然后出现了回踢。
+And then we had the rejection.
+
+41
+00:02:04,700 --> 00:02:08,800
+我们图表上看到的这个紫色价位也来自QTA脚本。
+This purple level that we see on our chart right here is also coming from the QTA script.
+
+42
+00:02:09,100 --> 00:02:14,000
+这是SPY周五到期的绝对gamma击价。
+This is our absolute gamma strike for the SPY for the Friday expiration.
+
+43
+00:02:14,500 --> 00:02:18,621
+下方描述中有一个链接，指向我的gamma暴露
+There's a link in the description down below to my gamma exposure
+
+44
+00:02:18,621 --> 00:02:22,399
+播放列表，里面我讲解了gamma暴露并展示了多个案例。
+playlist in which I've covered gamma exposure and shown multiple examples.
+
+45
+00:02:22,400 --> 00:02:27,600
+到目前为止，过去几年间可能已经有超过100个gamma暴露的案例。
+At this point, there's probably over 100 examples for gamma exposure over the course of the past couple years.
+
+46
+00:02:28,000 --> 00:02:30,800
+为了不让事情变得太复杂，你可以把它
+Without making things too complicated, you can think of this
+
+47
+00:02:30,800 --> 00:02:33,040
+看作是一个超级强化的支撑和阻力位，
+as a supercharged support and resistance level that
+
+48
+00:02:33,040 --> 00:02:35,000
+它直接来源于期权链。
+is coming straight from the options chain.
+
+49
+00:02:35,300 --> 00:02:37,351
+这是全天的概览，但
+So this is an overview of the entire day, but
+
+50
+00:02:37,351 --> 00:02:39,402
+我想回到早盘时段
+I want to go back to just the morning session
+
+51
+00:02:39,402 --> 00:02:43,299
+并尝试指出一些可能看起来有点奇怪的地方。
+here and try to point out certain things that we can see that might have been a little strange.
+
+52
+00:02:43,500 --> 00:02:48,900
+市场开盘时震荡行情非常剧烈。我们知道今天收盘后是Nvidia的财报。
+The market was very choppy to start the day. We know today after the market closed was Nvidia's earnings.
+
+53
+00:02:49,400 --> 00:02:51,685
+因此，整体价格走势
+So price action across the board has been
+
+54
+00:02:51,685 --> 00:02:55,399
+非常震荡，SPY一直在一个相对狭窄的区间内波动。
+pretty choppy and the SPY has been staying in a pretty tight range.
+
+55
+00:02:55,600 --> 00:02:58,300
+但我们先来看一下市场仪表板。
+But let's start by taking a look at the market dashboard.
+
+56
+00:02:58,700 --> 00:03:02,500
+我要展示我通常会查看的所有图表。
+So I'm going to reveal. all of the charts that I generally look at here.
+
+57
+00:03:03,000 --> 00:03:03,900
+市场震荡行情非常剧烈。
+Market was pretty choppy.
+
+58
+00:03:03,900 --> 00:03:05,775
+如果我们用更小的时间框架来看，这简直
+This is pretty disgusting if we take a look at
+
+59
+00:03:05,775 --> 00:03:08,400
+太难看了。这是3分钟图。
+this on a smaller time frame here. This is a three minute time frame.
+
+60
+00:03:08,400 --> 00:03:10,200
+在我看来，这根本无法交易。
+This, in my opinion, is untradeable.
+
+61
+00:03:10,400 --> 00:03:13,400
+这正是算法交易在相互拉锯的区间。
+This is where the algos are just going back and forth with each other.
+
+62
+00:03:13,400 --> 00:03:18,600
+在这种震荡行情中，交易者避免选择方向是明智的。
+And it's smart for a trader to avoid trying to pick a direction during that type of choppy price action.
+
+63
+00:03:19,000 --> 00:03:22,600
+我想指出的是，今日开盘时ADD指标在上升。
+Something I want to point out was the ADD was rising here to start the day.
+
+64
+00:03:22,900 --> 00:03:28,200
+这很奇怪，因为价格实际上处于下跌趋势，且并未有明显方向。
+That is very weird considering that price was actually in a downtrend and it wasn't really going anywhere.
+
+65
+00:03:28,400 --> 00:03:30,700
+我们可以看到ADD指标上有一定的强势。
+And we can see that there was some strength in the ADD.
+
+66
+00:03:31,000 --> 00:03:34,500
+Tick数据也是如此，不知何故在上升，之后陷入震荡。
+The same thing with the tick, for whatever reason, it was rising and then it was pretty choppy here.
+
+67
+00:03:34,800 --> 00:03:37,600
+不过，在当前时点，大约上午10点40分，
+At this point though, around 10.40 a.m.
+
+68
+00:03:37,700 --> 00:03:38,833
+美国东部时间10点30到10点45之间，
+Eastern time, 10.30 to 10.45, right
+
+69
+00:03:38,833 --> 00:03:41,099
+在这个区间内，我们可以看到，
+within that range here, we can see that's
+
+70
+00:03:41,099 --> 00:03:43,649
+Tick数据达到了600的衰竭水平。
+when the tick did reach the exhaustion level of 600.
+
+71
+00:03:45,000 --> 00:03:47,909
+同时，ADD指标在零线上方停滞，
+The same time the ADD did stall out above the
+
+72
+00:03:47,909 --> 00:03:51,399
+而这正是价格最终突破下行的时点。
+zero line was right around the time when price finally broke down.
+
+73
+00:03:51,400 --> 00:03:54,445
+当我们开始看到向下的动能时，
+As we started to see some momentum to the downside,
+
+74
+00:03:54,445 --> 00:03:56,272
+这几乎与VIX开始加速上升的时间一致。
+it was right around the same
+
+75
+00:03:56,272 --> 00:03:58,099
+VIX开始真正加速上升的时点。
+time the VIX actually started accelerating.
+
+76
+00:03:58,100 --> 00:04:01,800
+VIX上涨，对多头来说从来都不是好信号。
+So the VIX going up, it's never really a good sign for bulls.
+
+77
+00:04:02,500 --> 00:04:07,700
+VIX在上升，ADD指标最终突破并开始形成下降趋势。
+We have a rise in the VIX. We finally have the ADD breaking down as it started forming a downtrend.
+
+78
+00:04:08,000 --> 00:04:12,500
+然后我们可以看到Tick数据触及衰竭后继续下降。
+And then we can see the tick hitting exhaustion and then continuing also to decrease.
+
+79
+00:04:12,900 --> 00:04:16,600
+这些迹象暗示了当日后续价格可能的走向。
+This kind of gave clues to what may happen with price here later in the day.
+
+80
+00:04:16,800 --> 00:04:18,603
+我还想指出ES的情况。
+I also want to point out the
+
+81
+00:04:18,603 --> 00:04:20,406
+现在，这些是我之前指出的相同区域，
+ES. Now, these are the same zones
+
+82
+00:04:20,406 --> 00:04:23,498
+几周前我提到过，它们并未改变。
+that I've pointed out. A couple weeks ago, they have not changed.
+
+83
+00:04:23,600 --> 00:04:25,496
+我指出了这里的供给区。
+I pointed out the supply zone here. I
+
+84
+00:04:25,496 --> 00:04:27,155
+我记得这应该是在上周或前一周的视频中提到的。
+believe it must have been in a
+
+85
+00:04:27,155 --> 00:04:29,999
+我上周或上上周的视频中提到过的内容。
+video last week or the week before in which I talked about.
+
+86
+00:04:30,100 --> 00:04:31,027
+这里的控制点，
+this point of control
+
+87
+00:04:31,027 --> 00:04:32,417
+它已不再是未触及区域，
+here it's no longer virgin i
+
+88
+00:04:32,417 --> 00:04:33,807
+我还未移除标记，但
+haven't removed the v but it
+
+89
+00:04:33,807 --> 00:04:35,197
+这在之前的视频中已讨论过。
+was addressed in a previous video
+
+90
+00:04:35,800 --> 00:04:37,920
+我们可以看到ES从未突破
+we can see that the es never broke
+
+91
+00:04:37,920 --> 00:04:40,040
+价格从未真正站稳在这个价位上方
+above this level it never held above this
+
+92
+00:04:40,040 --> 00:04:42,425
+只是短暂触及上方
+level it just poked above it here but these
+
+93
+00:04:42,425 --> 00:04:46,400
+这些回踩K线表明该价位仍在起作用 这些倒锤线
+rejection candles are a sign that the level is still in play these inverted hammers
+
+94
+00:04:46,900 --> 00:04:49,794
+不管你怎么称呼它 重点是
+it doesn't matter what you call it the point is
+
+95
+00:04:49,794 --> 00:04:52,109
+要理解价格背后发生的情况
+to understand what's happening behind price action here
+
+96
+00:04:52,109 --> 00:04:57,898
+这表明多头不够强 无法让价格真正收在这个供应区之外
+this is showing that bulls were not strong enough to get price to actually close outside of this supply zone
+
+97
+00:04:58,100 --> 00:05:00,186
+所以我们拉远看 同样的价位
+so as we zoom out same level in
+
+98
+00:05:00,186 --> 00:05:02,272
+之前在成交量分布图中也被指出过
+which was pointed out from our volume profile
+
+99
+00:05:02,272 --> 00:05:04,619
+几周前或
+again on a video a couple weeks ago or
+
+100
+00:05:04,619 --> 00:05:06,183
+上周的视频里 我不太记得具体时间了
+last week i don't exactly remember
+
+101
+00:05:06,183 --> 00:05:07,747
+所以我们要理解
+so we want to understand the
+
+102
+00:05:07,747 --> 00:05:09,311
+整体背景 价格
+context of things where is price
+
+103
+00:05:09,311 --> 00:05:11,397
+隔夜走势 开盘后发生了什么
+action overnight what happened as the market opened
+
+104
+00:05:11,800 --> 00:05:18,000
+我们已经看到了一些弱势信号 这里又出现倒锤线 正好在一个关键gamma击价附近
+we had some clues regarding the weakness again here is our inverted hammer happening right at a key gamma strike
+
+105
+00:05:18,500 --> 00:05:20,985
+如果这是你第一次看我的视频
+if this is your first time watching any of my
+
+106
+00:05:20,985 --> 00:05:22,973
+在一周开始时 我
+videos at the start of the week i
+
+107
+00:05:22,973 --> 00:05:27,198
+通常会做一份当周的gamma暴露分布图
+usually like to do a total profile for the week in terms of a gamma exposure profile
+
+108
+00:05:27,500 --> 00:05:29,911
+其中我会选择接下来一周的所有到期日
+in which i would select every expiration for the upcoming
+
+109
+00:05:29,911 --> 00:05:31,840
+这张图是在一周开始时生成的
+week so this was generated at the start
+
+110
+00:05:31,840 --> 00:05:35,698
+这是周一开盘后3分钟的数据
+of the week here so this is three minutes into the market open on monday session
+
+111
+00:05:36,100 --> 00:05:38,610
+然后我会把这些gamma暴露价位
+i then like to take these gamma exposure levels anything
+
+112
+00:05:38,610 --> 00:05:40,618
+所有重要的 由量化交易应用标记出的价位
+that is significant that is marked off from
+
+113
+00:05:40,618 --> 00:05:42,626
+实际标注到我的图表上
+quant trading app and then actually plot these
+
+114
+00:05:42,626 --> 00:05:43,630
+为我自己建立一个价格走势预期的框架
+levels on my charts
+
+115
+00:05:43,630 --> 00:05:45,638
+所以这对于我来说
+and it creates a framework for myself in
+
+116
+00:05:45,638 --> 00:05:48,399
+是理解本周价格走势的一个参考
+terms of what to expect for price action for this week
+
+117
+00:05:48,700 --> 00:05:50,915
+所以这里我会认为这是
+so this right here is what i would consider the
+
+118
+00:05:50,915 --> 00:05:52,687
+未平仓合约堆叠图 这让我知道
+open interest heap map this is letting me
+
+119
+00:05:52,687 --> 00:05:54,016
+这是一个区间
+know this is the range in
+
+120
+00:05:54,016 --> 00:05:55,345
+其中存在最大量的
+which there is the most amount
+
+121
+00:05:55,345 --> 00:05:56,674
+本周未平仓合约最集中的区间
+of open interest for the week
+
+122
+00:05:56,674 --> 00:05:59,997
+然后我在图表上标出一个蓝色水平线
+and then i'll draw a little bit of a blue level on my chart here
+
+123
+00:06:00,100 --> 00:06:01,500
+我先把这个放大看一下
+So let me actually just maximize this.
+
+124
+00:06:01,800 --> 00:06:02,900
+我并不是每次都会画出来
+I don't always draw it out.
+
+125
+00:06:02,900 --> 00:06:05,003
+如果你注意到我之前的一些视频，
+If you've noticed in some of my previous videos, if
+
+126
+00:06:05,003 --> 00:06:06,265
+如果我认为这不太重要
+I don't think it's that significant
+
+127
+00:06:06,265 --> 00:06:08,999
+或者如果我看到未平仓合约分布得四处都是
+or if I see the open interest is spread all over the place.
+
+128
+00:06:09,300 --> 00:06:10,694
+这正是这个蓝色区间
+That's what this blue range is
+
+129
+00:06:10,694 --> 00:06:12,552
+在这里提示我的。所以这只是
+letting me know right here. So it's just
+
+130
+00:06:12,552 --> 00:06:17,199
+这个小蓝色矩形。这正是未平仓合约热力图在我的图表上的标注。
+this little bit of this blue rectangle. That's that same open interest heat map just plotted out on my charts.
+
+131
+00:06:17,600 --> 00:06:23,000
+所以560基本上是本周未平仓合约高点结束的位置。
+So 560 is pretty much where the high open interest ends for this week here.
+
+132
+00:06:23,300 --> 00:06:25,551
+这是我们本周初的绝对gamma击价
+This is our absolute gamma strike to start
+
+133
+00:06:25,551 --> 00:06:26,958
+也就是562。
+the week, which is 562. This
+
+134
+00:06:26,958 --> 00:06:30,054
+这就是562这个价位。所以这个紫色标记就是562。
+is that 562 level right here. So that's what this purple is, 562.
+
+135
+00:06:31,300 --> 00:06:35,000
+我们的G翻转击价是557。这就是557。
+Our gamma flip is 557. So here's 557.
+
+136
+00:06:35,200 --> 00:06:38,500
+所以今天图表上有一些汇聚信号。
+So we have some confluence on our chart right here for today.
+
+137
+00:06:38,600 --> 00:06:40,500
+但看一下昨天的情况。
+But take a look at yesterday.
+
+138
+00:06:40,700 --> 00:06:42,706
+当ES在供给区间盘整时，
+As the ES was consolidating in
+
+139
+00:06:42,706 --> 00:06:44,712
+SPY实际上
+that supply zone, the SPY actually
+
+140
+00:06:44,712 --> 00:06:46,718
+在本周初我们就关注的关键价位处遭到拒绝。
+ended up rejecting right at this
+
+141
+00:06:46,718 --> 00:06:50,397
+本周初我们就关注的关键价位。
+key level that we were aware of to start the week.
+
+142
+00:06:50,700 --> 00:06:55,200
+再次强调，理解这一点很重要，这就是为什么我在很多视频里反复提到。
+Again, it is important to understand and why I repeat this on so many videos.
+
+143
+00:06:55,500 --> 00:06:57,500
+这是本周准备工作的一部分。
+This is part of the preparation for the week.
+
+144
+00:06:57,500 --> 00:06:59,000
+我在周初会做这个分析，
+I do this analysis at the start
+
+145
+00:06:59,000 --> 00:07:00,071
+然后
+of the week and then
+
+146
+00:07:00,071 --> 00:07:01,999
+我会把这些价位保留整个周。
+I leave these levels up for the whole week.
+
+147
+00:07:02,000 --> 00:07:04,900
+我喜欢看看本周的蓝图是什么。
+I like to see what is the blueprint for this week.
+
+148
+00:07:05,200 --> 00:07:07,000
+期权链的情况如何？
+What is the options chain?
+
+149
+00:07:07,400 --> 00:07:08,644
+本周预期
+Expecting for the week
+
+150
+00:07:08,644 --> 00:07:11,755
+或者说，哪里有大量的
+or in other words where is there a lot of
+
+151
+00:07:11,755 --> 00:07:15,488
+本周流动性集中在562附近，我们知道这一区域有大量流动性
+liquidity for this week we know there's a ton of liquidity around 562
+
+152
+00:07:16,300 --> 00:07:23,500
+看看这个价格区间的价格行为，561以下的正gamma会变得很低，这意味着在561以下
+look at price action around this range the positive gamma becomes low below 561 that means below 561
+
+153
+00:07:24,300 --> 00:07:27,900
+价格更可能以这种方式移动。
+it is more likely for price to move like this below that level.
+
+154
+00:07:27,900 --> 00:07:30,700
+这里出现了非常急剧的抛售。
+This is a very sharp sell-off. here.
+
+155
+00:07:31,100 --> 00:07:34,173
+当价格位于这些高正gamma击价之上时，我
+When price is above these high positive gamma strikes, I'm
+
+156
+00:07:34,173 --> 00:07:37,246
+不会在这个区域过度做空，因为价格
+not looking too short within this area here as price
+
+157
+00:07:37,246 --> 00:07:39,704
+非常震荡或出现均值回归，而且
+is very choppy or mean reverting and more
+
+158
+00:07:39,704 --> 00:07:43,699
+大多数情况下，它只会向高正gamma击价靠拢。
+often than not, it will just gravitate towards the high positive gamma strikes.
+
+159
+00:07:44,000 --> 00:07:49,000
+本周并不是市场在高正gamma区间停留很久的一周。
+This is not a week in which the market spent a lot of time in high positive gammas.
+
+160
+00:07:49,100 --> 00:07:50,796
+如你所见，我们周一开始时表现非常疲软，
+As you can see, we started off
+
+161
+00:07:50,796 --> 00:07:52,492
+市场出现抛售，
+on Monday pretty weak as the market
+
+162
+00:07:52,492 --> 00:07:55,399
+然后它努力尝试重新站上这个绝对gamma击价。
+sold off and then it struggled to reclaim this absolute gamma strike.
+
+163
+00:07:55,700 --> 00:08:03,300
+这一点很重要，因为我们分析整周时所适用的原则同样适用于日内交易。
+This is important because the same principles when we're analyzing our overall week are applicable to intraday trading.
+
+164
+00:08:03,700 --> 00:08:06,639
+我的意思是，QTA Discord里的一个交易者在这里提问，
+And what I mean by that is a trader here
+
+165
+00:08:06,639 --> 00:08:08,990
+他已经是QTA的优秀成员有一段时间了，我想特别指出这一点。
+in the QTA Discord asked here, who's been
+
+166
+00:08:08,990 --> 00:08:13,399
+QTA的一位资深成员，想在这里指出这一点。
+a great member of QTA for a while, just want to point this out here.
+
+167
+00:08:13,500 --> 00:08:15,754
+他问核心击价在
+He asked that the power strike is at
+
+168
+00:08:15,754 --> 00:08:17,726
+620，这是否意味着我们应该
+620. Could this be seen as we should
+
+169
+00:08:17,726 --> 00:08:19,416
+上涨或接近那个价位收盘？
+go up or close near that?
+
+170
+00:08:19,700 --> 00:08:22,700
+所以当前时点是东部时间11:35。
+So at this point in time, this is 1135 Eastern time.
+
+171
+00:08:22,700 --> 00:08:25,700
+这是SPX所在的位置，这是核心击价的位置。
+This is where the SPX is, and this is where the power strike is.
+
+172
+00:08:26,000 --> 00:08:31,500
+我对他说，当时核心击价在那里时，它其实是在空中漂移，
+My response to that is the power strike at that point when it was up here was floating around nothing.
+
+173
+00:08:31,900 --> 00:08:34,300
+并没有锚定在任何重要的击价上。
+It's not latched on to any significant strike.
+
+174
+00:08:34,500 --> 00:08:36,400
+绝对gamma击价远在下方。
+The absolute gamma strike is all the way down here.
+
+175
+00:08:36,600 --> 00:08:38,000
+当时价格也位于下方。
+Price is down here at that time.
+
+176
+00:08:38,300 --> 00:08:40,700
+这是在他提出问题后的几分钟。
+This is just a few minutes after he asked that question.
+
+177
+00:08:40,800 --> 00:08:44,000
+核心击价实际上最终下移到了绝对gamma击价。
+The power strike actually ended up dropping down to the absolute gamma strike.
+
+178
+00:08:44,200 --> 00:08:48,000
+我的回复是，我不会以562这样的价位为目标
+My response is I would not target anything up here
+
+179
+00:08:48,000 --> 00:08:51,420
+当价格位于绝对gamma击价之下时
+like 562 while price is below the absolute gamma strike
+
+180
+00:08:51,420 --> 00:08:54,460
+并且位于核心击价之下，因为
+and below the power strike right here because
+
+181
+00:08:54,460 --> 00:08:57,120
+这会成为我们的关键重要阻力位。
+this becomes our key significant resistance level.
+
+182
+00:08:57,700 --> 00:09:02,400
+除非价格重新站上该位置，否则它不会有动能去触及这么远的上方目标。
+Unless price gets back above it, it's poised. to target anything this far up.
+
+183
+00:09:02,600 --> 00:09:04,600
+同样适用于我们观察这个成交量分布图的情况。
+The same thing when we're looking at this profile.
+
+184
+00:09:04,900 --> 00:09:06,960
+如果价格现在位于这个绝对gamma击价下方，
+If price is now below this absolute gamma
+
+185
+00:09:06,960 --> 00:09:09,020
+而我们知道这是本周的一个重要击价，
+strike here, and we know this is going
+
+186
+00:09:09,020 --> 00:09:11,080
+因为价格曾跌破该位置，现在回升
+to be a massive or significant strike for
+
+187
+00:09:11,080 --> 00:09:15,200
+来回测这个价位。
+the week, as it broke down below it, it is coming up to retest the level.
+
+188
+00:09:15,200 --> 00:09:17,591
+周一它没有完全回测，但
+It didn't have a full retest on Monday, but then
+
+189
+00:09:17,591 --> 00:09:20,699
+第二天它最终回到该位置并未能突破。
+it finally comes back up to it the next day and it fails.
+
+190
+00:09:21,000 --> 00:09:22,828
+然后它再次尝试向上突破，
+Then it tries to break past above it
+
+191
+00:09:22,828 --> 00:09:24,199
+但再次失败，
+again, and then it fails, and
+
+192
+00:09:24,199 --> 00:09:25,799
+然后这种情况延续到下一个交易日。
+then that continues into the next day.
+
+193
+00:09:26,000 --> 00:09:27,500
+这个价位最终被击穿。
+This level finally gives out.
+
+194
+00:09:27,700 --> 00:09:30,000
+这是该区域的多重顶部。
+This is a multi-top of this area here.
+
+195
+00:09:30,000 --> 00:09:32,840
+所以这是一个三重顶，虽然严格来说
+So it's a triple top, not quite because if we
+
+196
+00:09:32,840 --> 00:09:35,396
+我们没有触及562，但如果我们把整个区间
+didn't touch 562, but if we consider this entire range
+
+197
+00:09:35,396 --> 00:09:37,100
+或整个区域考虑在内，
+here or this entire area, this
+
+198
+00:09:37,100 --> 00:09:38,804
+这可以看作是一个多重顶或三重顶，
+is a multi-top or a triple
+
+199
+00:09:38,804 --> 00:09:42,213
+而这不是一个好信号。
+top in this case here, and which is not a good sign.
+
+200
+00:09:42,700 --> 00:09:49,200
+现在，如果价格重新站上562，这意味着突破了这个三重顶。
+Now, if price gets back above 562, that is a breakout of this triple top.
+
+201
+00:09:49,300 --> 00:09:52,938
+我预期价格会向这些正gamma击价方向上涨，
+And I would expect price to rise towards these positive gamma strikes,
+
+202
+00:09:52,938 --> 00:09:55,363
+特别是如果它在15分钟图或30分钟图上
+especially if it closes above this level on
+
+203
+00:09:55,363 --> 00:09:58,092
+收于该价位上方的话。
+a 15 minute time frame or a 30 minute time frame.
+
+204
+00:09:58,900 --> 00:10:02,917
+预期是我们会朝这些高正gamma击价移动，
+The expectation would be that we'll head towards these high positive gamma
+
+205
+00:10:02,917 --> 00:10:05,930
+本周稍晚是563，然后是565。
+strikes, which is 563 and then 565 later in the week.
+
+206
+00:10:06,900 --> 00:10:09,400
+但我们首先需要站上这个价位。
+However, we need to get above this level first.
+
+207
+00:10:09,700 --> 00:10:13,100
+否则，所有在这个区域做空该价位的交易者
+Otherwise, everyone that has shorted this level in this area
+
+208
+00:10:13,100 --> 00:10:16,500
+都会试图守住他们的空头头寸，
+here are going to try to defend their short positions,
+
+209
+00:10:16,500 --> 00:10:19,900
+这意味着整个区域预计会形成供给区。
+meaning this entire area can be expected to be supply.
+
+210
+00:10:20,100 --> 00:10:23,500
+所以如果价格上涨到这一位置，我们预期这里会是一个供给区。
+So if price comes up to here, we will expect this to be a supply zone.
+
+211
+00:10:23,800 --> 00:10:30,000
+如果价格未能在这个供给区被拒，且能守住这一价位，那么预期将会是
+If price is not rejected at this supply zone and we hold above this level, then the expectation would be
+
+212
+00:10:30,200 --> 00:10:32,939
+所有在此做空的人都会平仓
+Everyone that is short here is going to close out
+
+213
+00:10:32,939 --> 00:10:36,499
+这些空头头寸，市场将上涨至这些关键价位。
+those short positions and the market will head up to these key levels.
+
+214
+00:10:36,900 --> 00:10:39,233
+在你的图表上标出关键区域
+Having the awareness of a key area
+
+215
+00:10:39,233 --> 00:10:43,899
+能帮助你保持在交易的正确方向。
+on your charts can help keep you on the right side of the trade.
+
+216
+00:10:44,200 --> 00:10:47,600
+所以今天，那个价位就是这一位置。
+So for today, that level was this area right here.
+
+217
+00:10:48,000 --> 00:10:51,800
+一旦这个价位被突破，我会重新打开我们的指标。
+Once this level gave out, I'm going to turn back on our studies.
+
+218
+00:10:52,300 --> 00:10:54,500
+我们打开，保持图表清晰。
+Let's turn on, let's keep it on a clear chart here.
+
+219
+00:10:54,800 --> 00:11:00,000
+一旦这个日内区间被突破，这与SPX的一些关键价位相吻合。
+Once this intraday zone broke here, this coincided with some key levels on the SPX.
+
+220
+00:11:00,500 --> 00:11:07,800
+在价格收盘站稳这一区域并重新占领VWAP之前，我不会目标设在更高的位置。
+I will not target anything above this area until price closes above it and reclaims VWAP.
+
+221
+00:11:08,000 --> 00:11:10,100
+VWAP的下跌方式
+The way VWAP is dropping.
+
+222
+00:11:10,800 --> 00:11:16,800
+与SPY早些时候的下跌速度和力度相结合，非常激进。
+Is pretty aggressive in conjunction with the velocity in which the SPY dropped earlier in the day.
+
+223
+00:11:17,200 --> 00:11:19,600
+这不是你想买入的价格走势。
+This is not the type of price action you want to buy.
+
+224
+00:11:19,600 --> 00:11:21,400
+这不是你想抄底的下跌。
+This is not a dip you want to buy.
+
+225
+00:11:21,500 --> 00:11:22,900
+看看这里的速度。
+Look at the velocity in this.
+
+226
+00:11:22,900 --> 00:11:25,900
+看看价格下跌的速度和幅度。
+Look at the speed and the rate in which price dropped.
+
+227
+00:11:26,300 --> 00:11:29,100
+相对于昨天，看看价格在这里是如何停滞的。
+Relative to yesterday, look at how price stalled out here.
+
+228
+00:11:29,200 --> 00:11:32,000
+我们正好在562这个关键价位停滞
+We stalled out right at that key level
+
+229
+00:11:32,000 --> 00:11:34,450
+这是量化交易应用成员的日内区间。
+on our charts of 562, which is also
+
+230
+00:11:34,450 --> 00:11:37,250
+这对QTA成员来说就是这里。
+the intraday zone for quant trading app members.
+
+231
+00:11:38,300 --> 00:11:39,600
+这就是这里。
+That would be this right here.
+
+232
+00:11:39,800 --> 00:11:43,100
+这就是SPY昨天在QTA成员图表上的样子。
+This is what the SPY looked like yesterday for QTA members.
+
+233
+00:11:43,300 --> 00:11:45,900
+正好在日内区间被拒。
+That rejection right at the intraday zone.
+
+234
+00:11:46,500 --> 00:11:49,700
+同时我们也触及了562这个价位。
+The same time we were hitting this level right here of 562.
+
+235
+00:11:49,700 --> 00:11:52,200
+所以关键是要能对齐这些汇聚信号。
+So it's all about being able to line up these confluences.
+
+236
+00:11:52,300 --> 00:11:56,000
+这也是量化交易应用被开发的主要原因之一。
+And that is one of the main reasons Quant Trading App was developed.
+
+237
+00:11:56,300 --> 00:12:00,000
+结合多个因素，只需复制粘贴
+Combining multiple things very simple just by copying and pasting it.
+
+238
+00:12:00,100 --> 00:12:01,600
+脚本到你的图表，
+script on your charts, as well
+
+239
+00:12:01,600 --> 00:12:03,100
+也可以在一周开始时
+as doing your own analysis at
+
+240
+00:12:03,100 --> 00:12:05,600
+通过解读gamma暴露来做自己的分析。
+the start of the week by interpreting the gamma exposure.
+
+241
+00:12:05,900 --> 00:12:11,400
+当这些因素像这样排列组合时，它们会形成强大的汇聚信号，让我们更容易下单交易。
+When these things line up like this, they create powerful confluences that makes it simple for us to take trades.
+
+242
+00:12:12,000 --> 00:12:15,370
+这就是拼图中一个关键部分的作用时机,
+This is where a powerful piece of the puzzle comes
+
+243
+00:12:15,370 --> 00:12:17,729
+那就是量化交易应用
+to play, and that is the Quant
+
+244
+00:12:17,729 --> 00:12:21,099
+QTA SPX交易引擎，用于0DTE SPX信息。
+Trading App SPX trade engine for the 0DTE SPX information.
+
+245
+00:12:21,100 --> 00:12:22,895
+就是这里的这个数据源，
+That is this feed right here, and
+
+246
+00:12:22,895 --> 00:12:24,690
+我认为这是一个很好的过渡，
+I think that is a good segue
+
+247
+00:12:24,690 --> 00:12:26,998
+让我们可以深入回顾盘面。
+for us to jump in and review the tape.
+
+248
+00:12:27,200 --> 00:12:29,990
+所以我们看到的是一个视频，包含
+So what we're looking at is a video of all
+
+249
+00:12:29,990 --> 00:12:32,222
+从Discord下载的所有SPX交易引擎的图片，
+the images just downloaded from the Discord for
+
+250
+00:12:32,222 --> 00:12:34,175
+我只是
+the SPX trade engine, and I'm just
+
+251
+00:12:34,175 --> 00:12:39,198
+播放一下，这样我们可以回顾价格行为与数据的关联。
+going to play it out so we can kind of review price action in relation to the data.
+
+252
+00:12:39,700 --> 00:12:42,070
+如果这是你第一次看到这个，我建议
+If this is your first time seeing this, I suggest
+
+253
+00:12:42,070 --> 00:12:43,966
+你去查看这个YouTube频道上过去几个月的任何视频,
+you check out any of the previous videos
+
+254
+00:12:43,966 --> 00:12:46,099
+任何每日回顾的视频,
+on this YouTube channel over the past couple months.
+
+255
+00:12:46,600 --> 00:12:47,800
+有没有人在做每日回顾，
+Anything doing a daily recap,
+
+256
+00:12:47,800 --> 00:12:49,480
+和大多数事物一样，你看得越多，
+it's just like most things. The more
+
+257
+00:12:49,480 --> 00:12:52,600
+理解得就越多。
+and more you see it, the more and more it will make sense.
+
+258
+00:12:52,900 --> 00:12:58,300
+我不能在每个视频里花时间解释每一个价位，否则视频都会太长。
+I can't spend the time explaining every single level in every video. Otherwise, they'll all be way too long.
+
+259
+00:12:58,500 --> 00:12:59,700
+所以我在这里播放一下。
+So I'm just going to play this out here.
+
+260
+00:12:59,800 --> 00:13:00,900
+这是一天的开始。
+This is the start of the day.
+
+261
+00:13:01,100 --> 00:13:03,800
+现在距离市场开盘还有15、20分钟。
+So now we have 15, 20 minutes until the market opens.
+
+262
+00:13:04,000 --> 00:13:05,000
+有件事我想指出来。
+There's something I want to point out.
+
+263
+00:13:05,000 --> 00:13:08,600
+核心击价在这里，而我们的绝对gamma击价在这里。
+The power strike is up here and our absolute gamma strike is right here.
+
+264
+00:13:08,800 --> 00:13:12,133
+每当这两者之间相距这么远时，
+Whenever these two are that far away from each other,
+
+265
+00:13:12,133 --> 00:13:14,466
+这可能会被视为
+this can be seen as a little
+
+266
+00:13:14,466 --> 00:13:18,799
+我们两个重要击价之间的一点混淆，有时...
+bit of confusion between two of our significant strike prices that can sometimes...
+
+267
+00:13:19,200 --> 00:13:21,300
+会帮助拉动价格朝某个方向移动。
+Help pull price in a certain direction.
+
+268
+00:13:21,700 --> 00:13:24,815
+如果一个重要击价在拉低价格，而这个
+If one significant strike is pulling price down, and that
+
+269
+00:13:24,815 --> 00:13:26,684
+是我们5600的绝对gamma击价,
+is our absolute gamma strike of 5,600,
+
+270
+00:13:26,684 --> 00:13:29,487
+它恰好与最大痛点击价重合,
+which happens to coincide with the max pain strike,
+
+271
+00:13:30,000 --> 00:13:34,000
+同时还与下方的一 sigma收盘击价重合。
+which also happens to coincide with the one sigma close strike all the way down here.
+
+272
+00:13:34,300 --> 00:13:37,100
+我们有几个重要指标指向下行。
+We have a couple important metrics pointing down.
+
+273
+00:13:37,400 --> 00:13:39,900
+而另一端，我们的核心击价则指向上行。
+And then on the other end, we have our power strike pointing up.
+
+274
+00:13:40,100 --> 00:13:42,335
+现在是上午早些时候，
+Now it is early in the morning, so
+
+275
+00:13:42,335 --> 00:13:44,570
+所以核心击价的重要性还不大，
+the power strike is not that significant as
+
+276
+00:13:44,570 --> 00:13:46,525
+它的影响力会在之后增强，我会说，
+it gains its strength after, I would
+
+277
+00:13:46,525 --> 00:13:49,039
+东部时间10:30或11:30之后才会变得更显著。
+say, 10.30, 11.30 Eastern time is when it becomes more significant.
+
+278
+00:13:49,900 --> 00:13:51,900
+所以现在不宜过多依赖它。
+So it's not the time to put much weight on it.
+
+279
+00:13:52,000 --> 00:13:55,200
+不过，也有过早盘时它就很重要的情况。
+However, there have been instances in which it has been important early in the day.
+
+280
+00:13:55,200 --> 00:13:58,000
+但当它离当前价格这么远时，
+But when it's this far away from price, we are
+
+281
+00:13:58,000 --> 00:13:59,400
+我们参考的当前价格在5619，
+referencing price being at 619 and
+
+282
+00:13:59,400 --> 00:14:01,640
+而核心击价远在5650。
+the power strike all the way up at 650.
+
+283
+00:14:02,500 --> 00:14:05,500
+在这个时点考虑它的话，距离实在太远了。
+That's pretty far away to be considering it at this point in time.
+
+284
+00:14:05,600 --> 00:14:07,647
+我只是想指出，一个指向
+I'm just trying to point out the fact that one is pointing
+
+285
+00:14:07,647 --> 00:14:09,011
+远在上方，
+all the way up here and then the
+
+286
+00:14:09,011 --> 00:14:11,399
+另一个指向远在下方。这是一种分歧。
+other one is pointing all the way down here. And this is a split.
+
+287
+00:14:11,700 --> 00:14:14,900
+这可能会导致上午出现震荡行情。
+This can lead to some sort of choppiness for the morning.
+
+288
+00:14:15,200 --> 00:14:18,366
+如果这两个价位后续未能趋同，
+It can also lead to a volatile day later in
+
+289
+00:14:18,366 --> 00:14:22,799
+也可能导致一天内波动加剧。
+the day if we don't see these two levels in agreeance with each other.
+
+290
+00:14:23,200 --> 00:14:25,836
+所以随着交易继续，我们看到震荡、震荡，
+So as we continue to play. We see chop, chop,
+
+291
+00:14:25,836 --> 00:14:28,999
+震荡、震荡、震荡。这在核心击价附近是预期之内的。
+chop, chop, chop. This is to be expected around the power strike.
+
+292
+00:14:29,200 --> 00:14:34,400
+现在是东部时间10:30。所以开盘一小时后，核心击价下移了。
+Now we're looking at 10.30 a.m. Eastern time. So one hour after the market opens, the power strike drops down.
+
+293
+00:14:34,600 --> 00:14:37,700
+这不是好兆头，因为绝对gamma击价仍在下方。
+That is not a good sign as the absolute gamma strike is still down here.
+
+294
+00:14:37,900 --> 00:14:40,400
+它仍然与最大痛点击价绑定在一起。
+It is still latched on to the max pain strike.
+
+295
+00:14:40,600 --> 00:14:44,061
+核心击价下移，而这两个仍
+The power strike dropping down while these two are still
+
+296
+00:14:44,061 --> 00:14:46,830
+粘在一起，这是第一个警示信号，
+stuck together is a ready the first warning
+
+297
+00:14:46,830 --> 00:14:49,599
+表明这对价格走势不利。
+that this is not good for price action.
+
+298
+00:14:49,900 --> 00:14:54,300
+现在记得，我们之前在视频中观察过一些线索。
+Now remember, we did take a look at some clues here earlier in the video.
+
+299
+00:14:54,400 --> 00:14:56,525
+我总是喜欢把这些信息指出来，
+I always like to point it out for the information
+
+300
+00:14:56,525 --> 00:14:58,225
+供大家参考，
+that is available for those of you that
+
+301
+00:14:58,225 --> 00:14:59,500
+不是量化交易应用（QTA）的会员。
+are not Quant Trading app members.
+
+302
+00:15:00,000 --> 00:15:01,600
+ADD指标、逐笔成交。
+ADD, the tick.
+
+303
+00:15:02,100 --> 00:15:03,800
+此外，VIX也在上涨。
+We also had the VIX rising.
+
+304
+00:15:03,900 --> 00:15:09,500
+然后价格首次出现实质性的跌破，跌破VWAP，并且带有一定的动能。
+And then we had the first real breakdown in price coming below VWAP here with some sort of momentum.
+
+305
+00:15:09,800 --> 00:15:15,500
+所以这些信号在这里，正在发出一个警告，像闪烁的信号灯。
+So these clues right here, this is a ready something that is giving a warning as it is flashing.
+
+306
+00:15:15,600 --> 00:15:18,300
+这对多头不利。
+This is not good for bulls.
+
+307
+00:15:18,600 --> 00:15:19,951
+我们继续往下看。
+Let's continue to play this
+
+308
+00:15:19,951 --> 00:15:21,302
+出现震荡，震荡，
+out. We get chop, chop,
+
+309
+00:15:21,302 --> 00:15:25,627
+震荡。然后在美东时间10:45左右，动能出现了小幅突破。
+chop. And then we get the little bit of break of momentum here about 1045 Eastern time.
+
+310
+00:15:26,100 --> 00:15:27,200
+我们继续往下看。
+Let's continue to play this out.
+
+311
+00:15:27,400 --> 00:15:30,680
+现在价格终于触及绝对gamma击价，
+And now we get price finally hitting the absolute gamma
+
+312
+00:15:30,680 --> 00:15:33,304
+终于触及最大痛点击价，
+strike, finally hitting the max pain strike, and
+
+313
+00:15:33,304 --> 00:15:35,600
+并且终于触及1标准差收盘价。
+it's finally hitting the one sigma close.
+
+314
+00:15:35,800 --> 00:15:39,800
+此刻，我们预期会出现某种支撑。
+Now, what we would expect at this point is there to be some sort of support.
+
+315
+00:15:40,100 --> 00:15:43,400
+所以我们继续看盘面。可以看到价格确实又小幅下跌。
+So let's continue to play out the tape. And we see we do go a little bit lower.
+
+316
+00:15:43,500 --> 00:15:45,600
+继续看，价格确实又小幅下跌。
+Let's continue. We do go a little bit lower.
+
+317
+00:15:46,000 --> 00:15:49,168
+当前时点，随着价格跌破我们预期的范围，
+At this point, as price went further than we would have expected
+
+318
+00:15:49,168 --> 00:15:52,600
+这凸显了等待某种确认信号的重要性。
+to go, this is the importance of waiting for some sort of confirmation.
+
+319
+00:15:52,900 --> 00:15:55,900
+价格从未真正确认会停止下跌。
+Price never really confirmed that it was going to stop selling.
+
+320
+00:15:56,000 --> 00:15:58,600
+15分钟K线尚未收盘。
+The 15-minute candle had not closed yet.
+
+321
+00:15:59,000 --> 00:16:02,445
+我们原本预期价格会在某个支撑位企稳，
+We would have expected this to hold at some level of support,
+
+322
+00:16:02,445 --> 00:16:04,454
+但价格直接跌破，
+but price sliced right through it and
+
+323
+00:16:04,454 --> 00:16:07,899
+最终触及这个15分钟周期的预期波动范围。
+it ended up hitting the expected move for this 15-minute time frame.
+
+324
+00:16:08,400 --> 00:16:13,800
+现在，这根K线是我们第一个信号，表明形势开始放缓。
+Now, this candle right here is our first sign that things are now starting to slow down.
+
+325
+00:16:14,300 --> 00:16:18,900
+这些K线体现的是动能。看看图表上这些K线有多大？
+These candles are momentum. You see how big these candles are on our charts?
+
+326
+00:16:19,200 --> 00:16:22,044
+当你尝试逆势交易时，
+This is not something you want to get in front of when
+
+327
+00:16:22,044 --> 00:16:25,599
+也就是逆趋势交易时，你不想抢在这些动能前面。
+you're trying to take a contrarian trade, meaning you're trying to trade against the trend.
+
+328
+00:16:25,900 --> 00:16:27,000
+趋势是向下的。
+The trend is down.
+
+329
+00:16:27,200 --> 00:16:29,900
+你需要等待趋势放缓的信号。
+You want to wait for signs of the trend slowing.
+
+330
+00:16:30,600 --> 00:16:32,400
+而这根K线就是那个信号。
+And this is that candle right here.
+
+331
+00:16:32,600 --> 00:16:35,930
+现在，如果价格预计会在5600附近停滞，而我们
+Now, if price was supposed to stall out around 5600 and we
+
+332
+00:16:35,930 --> 00:16:37,746
+最终跌破了10到12点左右,
+ended up going lower, about 10, 12 points
+
+333
+00:16:37,746 --> 00:16:42,590
+预期会回溯到那个价位。
+or so lower, the expectation would be that we will retrace back up to that level.
+
+334
+00:16:43,900 --> 00:16:47,300
+这是我们图表上的SPX。我们把它放大看看。
+This is the SPX on our chart right here. Let's maximize this.
+
+335
+00:16:47,600 --> 00:16:53,000
+这就是5600价位。这恰好也是量化交易应用的日内区间。
+This is our 5600 level. So that happens to be the quant trading app intraday zone also.
+
+336
+00:16:53,300 --> 00:16:56,000
+这就是这里。价格直接切穿了这个区间。
+So this is it right here. This is price slicing right through it.
+
+337
+00:16:56,200 --> 00:17:00,400
+你不想抢在这样的K线前面入场。看看这根K线有多大。
+You don't want to get in front of a candlestick like this. Look at how big this is.
+
+338
+00:17:00,600 --> 00:17:06,200
+这根已经相对较大，但再看看这里。这是一根强势K线。
+This one's relatively large, but then look at this right here. It's a strong candle.
+
+339
+00:17:06,200 --> 00:17:09,651
+我喜欢等待这些15分钟K线形成，
+I like to wait for these 15 minute candles to form as
+
+340
+00:17:09,651 --> 00:17:14,671
+因为15分钟图对日内交易者来说非常好，尤其是在等待确认信号时。
+the 15 minute time frame is really good for day traders, especially if you're waiting for confirmation.
+
+341
+00:17:15,500 --> 00:17:18,108
+现在我们到这里，看到价格停滞，
+So now that we're here and we see price stalling
+
+342
+00:17:18,108 --> 00:17:21,499
+预期它会回溯到这个价位。
+out, the expectation would be that it will retrace back to this level.
+
+343
+00:17:22,200 --> 00:17:25,800
+但由于早盘时动能非常弱，而且
+But because things were so weak earlier in the morning and there's
+
+344
+00:17:25,800 --> 00:17:27,900
+这个区域没有什么特别的，
+nothing really in this area, there's no
+
+345
+00:17:27,900 --> 00:17:29,100
+下方也没有重要的击价。
+significant strikes down here.
+
+346
+00:17:29,400 --> 00:17:32,700
+所以仍然没有足够的理由认为会反弹。
+There's still not enough of a reason to think we are going to bounce.
+
+347
+00:17:32,900 --> 00:17:37,900
+所以这种情况下，你要等回测后再做空头交易。
+So this is a case in which you want to wait for the retest to then take the trade short.
+
+348
+00:17:38,200 --> 00:17:40,900
+所以如果我们继续播放这里的盘口，看看最终会发生什么。
+So if we continue to play out our tape right here, we see what ends up happening.
+
+349
+00:17:41,000 --> 00:17:43,000
+价格停滞了。震荡、震荡、震荡。
+Price stalls out. It's choppy, choppy, choppy.
+
+350
+00:17:43,200 --> 00:17:46,000
+现在核心击价已经下降到这个绝对gamma击价。
+The power strike now has dropped down to this absolute gamma strike.
+
+351
+00:17:46,300 --> 00:17:48,823
+这时候你就可以放弃期待
+This is when you can call it quits on expecting
+
+352
+00:17:48,823 --> 00:17:51,599
+当天会有任何看涨动能的想法了。
+there to be any sort of bullish momentum for the day.
+
+353
+00:17:52,200 --> 00:17:54,978
+除非价格开始收于5600击价之上，
+Unless price was to start closing above this 5600 strike
+
+354
+00:17:54,978 --> 00:17:58,991
+然后我们到达今日预期的区间，
+and then we get down to our expected range for the day here
+
+355
+00:18:00,000 --> 00:18:01,100
+然后继续播放盘口。
+And then we continue to play it out.
+
+356
+00:18:01,200 --> 00:18:04,800
+我们看到最终在这里得到了某种回弹，回到这个击价。
+And we see this is where we finally get some sort of a bounce back up to this strike.
+
+357
+00:18:05,000 --> 00:18:10,100
+现在，今天很不幸，在东部时间1:15时，出现了数据中断。
+Now, unfortunately here for today, at 1.15 Eastern time, there was a data outage.
+
+358
+00:18:10,500 --> 00:18:15,900
+所以QTA没有记录下今天剩余时间的盘口。这非常不幸。
+So QTA does not have any of the tape recorded for the rest of today. It is very unfortunate.
+
+359
+00:18:15,900 --> 00:18:18,000
+我真想看看这盘口会如何演绎。
+I would have loved to see how this tape would have played out.
+
+360
+00:18:18,300 --> 00:18:21,500
+这是我们过去几个月来第一次遇到这种情况。
+It's the first time this has happened for us in the past couple months.
+
+361
+00:18:21,500 --> 00:18:25,148
+我认为上次亚马逊网络服务器影响
+I believe the last time the Amazon web servers had affected the
+
+362
+00:18:25,148 --> 00:18:27,580
+市场时，过去两次发生这种情况时,
+markets, the last two times in which it
+
+363
+00:18:27,580 --> 00:18:29,100
+QTA 并未受到影响。
+happened, QTA was not affected.
+
+364
+00:18:29,100 --> 00:18:32,000
+但今天碰巧我们受到了一些故障的影响。
+But randomly here today, we were affected by some outages.
+
+365
+00:18:32,400 --> 00:18:36,800
+所以，遗憾的是，在磁带数据方面已经没有多少内容可看了。
+So again, it was unfortunate that there isn't much left to see in terms of the tape there.
+
+366
+00:18:37,000 --> 00:18:39,346
+我想指出的是，如果我们看一下 gamma暴露，
+I do want to point out, if we take a
+
+367
+00:18:39,346 --> 00:18:40,988
+这也是
+look at the gamma exposure, that's also
+
+368
+00:18:40,988 --> 00:18:42,864
+为什么价格在东部时间 1:15 就停在这里的原因。
+why this stopped right here at 1.15 Eastern time.
+
+369
+00:18:43,400 --> 00:18:45,672
+如果我们看一下东部时间 10:00，
+If we take a look at 10 a.m. Eastern time
+
+370
+00:18:45,672 --> 00:18:48,399
+当市场位于这里时，这已经是一个相当重要的击价了。
+as the market is here, this is already a pretty significant strike.
+
+371
+00:18:48,400 --> 00:18:50,438
+核心击价一直位于更高的这个位置，
+The power strike was somewhere all the way up here,
+
+372
+00:18:50,438 --> 00:18:52,068
+但我们还有绝对gamma击价，
+but we had the absolute gamma strike and
+
+373
+00:18:52,068 --> 00:18:53,698
+以及我们之前讨论过的最大痛点击价。
+the max pain strike as we discussed earlier.
+
+374
+00:18:54,100 --> 00:18:56,766
+一旦 620 被突破，关于这张图我还想指出的是，
+Once 620 broke, something that I also want to point
+
+375
+00:18:56,766 --> 00:18:59,136
+我们已经处于净负 gamma 状态。
+out about this chart is we are already
+
+376
+00:18:59,136 --> 00:19:01,802
+这就是为什么这里显示为红色。
+in net negative gamma. That's why this is red.
+
+377
+00:19:02,100 --> 00:19:04,318
+我们在这里看到的所有红色，
+We see all this red right here. This
+
+378
+00:19:04,318 --> 00:19:08,199
+这在告诉我们，当前到期日的整体净GEX是负的。
+is letting us know that the overall net GEX for this expiration is negative.
+
+379
+00:19:08,400 --> 00:19:11,653
+这意味着对于交易者来说，如果 620，即我们当前最近的高负 gamma 击价被突破，
+That means for a trader, if 620, which is our
+
+380
+00:19:11,653 --> 00:19:15,268
+价格将会倾向于向 N1 移动。
+current closest high negative gamma strike, breaks, price is going
+
+381
+00:19:15,268 --> 00:19:17,437
+N1 就是这里的这个击价。
+to want to gravitate towards N1.
+
+382
+00:19:18,200 --> 00:19:19,500
+这是负 gamma 最高的击价。
+N1 is this strike right here.
+
+383
+00:19:19,600 --> 00:19:21,900
+这也是当前在具有 gamma暴露的击价中,
+This is the strike price with the highest negative gamma.
+
+384
+00:19:22,100 --> 00:19:24,808
+看跌期权成交量最高的击价。
+It is also the strike price with the highest amount
+
+385
+00:19:24,808 --> 00:19:26,974
+所以这个击价将会作为一个磁铁，因为它是 N1。
+of put volume for today in terms of
+
+386
+00:19:26,974 --> 00:19:28,599
+N1 是我们负 gamma 最高的击价。
+the strike that have gamma exposure.
+
+387
+00:19:28,800 --> 00:19:32,400
+整体净GEX处于负 gamma 状态。价格突破 620。
+So this strike is going to. act as a magnet as it is N1.
+
+388
+00:19:33,000 --> 00:19:35,800
+这也是当前的最大痛点击价，
+N1 is our strike with the highest amount of negative gamma.
+
+389
+00:19:36,000 --> 00:19:42,000
+整体净GEX处于负gamma暴露。价格突破620。
+The overall net GEX is in negative gamma. Price breaks 620.
+
+390
+00:19:43,000 --> 00:19:45,247
+这也是最大痛苦击价
+It is also the max pain strike for
+
+391
+00:19:45,247 --> 00:19:47,213
+今天也是
+today and it is also the zero
+
+392
+00:19:47,213 --> 00:19:48,898
+今天的0DTE绝对gamma击价。
+DTE absolute gamma strike for today.
+
+393
+00:19:49,600 --> 00:19:52,900
+一旦突破620，这里就成为目标位。
+Once we broke 620, this becomes the target.
+
+394
+00:19:53,400 --> 00:19:57,900
+我们正在分层挂单，基于之前已分析的内容。
+We are layering context in terms of what we already analyze.
+
+395
+00:19:58,100 --> 00:20:01,067
+这并不是做空交易的唯一理由，
+It's not the only reason to take the short trade,
+
+396
+00:20:01,067 --> 00:20:04,034
+但我们在为自己设定一些参数，
+but we are defining some sort of parameters for ourselves
+
+397
+00:20:04,034 --> 00:20:07,298
+关于何时进入和退出交易。
+regarding when do we want to enter and exit our trades.
+
+398
+00:20:07,700 --> 00:20:11,500
+今天早些时候的这笔做空交易，我仍然不感兴趣。
+This short trade earlier in the day is still not a trade in which I was interested in.
+
+399
+00:20:11,800 --> 00:20:15,200
+这是大家知道我喜欢的交易类型：突破回踩。
+This is the trade that you guys know I like, the break and retest.
+
+400
+00:20:15,500 --> 00:20:20,600
+如果我们暂时切回SPY，这里的情况就很清晰。
+If we jump back to the SPY for a second here. This is where things are pretty clean.
+
+401
+00:20:20,700 --> 00:20:26,900
+这是SPY在回测QTA日内区域，就在15分钟图上这里。
+This is the SPY retesting the QTA intraday zone. This is it here on the 15-minute time frame.
+
+402
+00:20:27,200 --> 00:20:28,600
+一个明显的回踢K线。
+A solid rejection.
+
+403
+00:20:28,700 --> 00:20:30,154
+这个回踢，结合
+This rejection, in combination
+
+404
+00:20:30,154 --> 00:20:32,335
+SPX回测绝对gamma击价，
+with the SPX retesting the absolute
+
+405
+00:20:32,335 --> 00:20:34,516
+同时也是
+gamma strike, which is also the
+
+406
+00:20:34,516 --> 00:20:36,697
+核心击价，
+power strike, which is also the
+
+407
+00:20:36,697 --> 00:20:40,697
+同时也是最大痛点击价，同时也是1标准差收盘区域。
+max pain strike, which is also the one sigma close area.
+
+408
+00:20:41,000 --> 00:20:44,611
+这个区域堆叠了太多层级，
+This is a lot of stacked levels in this zone
+
+409
+00:20:44,611 --> 00:20:48,222
+这在告诉我们，价格不太可能
+that's letting us know not to expect price to get
+
+410
+00:20:48,222 --> 00:20:53,999
+重新回到上方，这意味着这里现在成为我们预期价格将前往的新区域。
+back above it, which means this now becomes our new territory to expect price to go.
+
+411
+00:20:54,300 --> 00:21:01,200
+582，我们暂且称其为580，现在可以成为我们的可行目标。
+582, we'll just call this 580, now can become a viable. targets for us.
+
+412
+00:21:01,400 --> 00:21:04,700
+所以这里我们要来看一些期权。
+So this is where we're going to take a look at some options.
+
+413
+00:21:05,800 --> 00:21:07,600
+这就是我们的看跌期权交易。
+This is our put trade right here.
+
+414
+00:21:07,800 --> 00:21:09,545
+左边是SPX，
+On the left hand side, we
+
+415
+00:21:09,545 --> 00:21:13,908
+右边是580的0DTE看跌期权。
+have the SPX. And on the right hand side, we have the 580 zero DTE put.
+
+416
+00:21:14,400 --> 00:21:19,400
+所以目标是580。这是行权价。这是期权。
+So it's targeting 580. This is the strike price here. This is the option.
+
+417
+00:21:19,800 --> 00:21:22,800
+这是我们将要寻找入场的区域，
+This is the area in which we will be looking
+
+418
+00:21:22,800 --> 00:21:26,700
+也就是这里，美国东部时间1点。
+to enter this trade, which is right at 1 p.m. Eastern time here.
+
+419
+00:21:26,900 --> 00:21:28,200
+所以我的十字光标是镜像的。
+So my crosshairs are mirrored.
+
+420
+00:21:28,200 --> 00:21:31,700
+所以当我在这里移动鼠标时，大家可以看到这里正在对齐。
+So as I hover my mouse around here, you guys can see this is lining up with right here.
+
+421
+00:21:32,000 --> 00:21:36,900
+这可能带来一个交易机会，5分钟内收益率就能超过100%.
+This ends up being an opportunity for a trade to go over 100% within five minutes.
+
+422
+00:21:36,900 --> 00:21:39,200
+两边都是5分钟K线.
+These are five minute candles on both sides here.
+
+423
+00:21:39,600 --> 00:21:41,476
+如果你在刀口舔血，15分钟可能
+As if you're scalping, 15 minutes might be
+
+424
+00:21:41,476 --> 00:21:46,032
+时间框架太长。5分钟才是真正锁定交易的时机。
+too long of a time frame. Five minutes is when you're really getting dialed into your trade.
+
+425
+00:21:46,400 --> 00:21:47,690
+15分钟图
+The 15 minute. Time frame
+
+426
+00:21:47,690 --> 00:21:49,949
+能帮助建立一个
+can help establish a decent structure for
+
+427
+00:21:49,949 --> 00:21:53,176
+合理的结构来确定你的价位，还能帮你等待确认信号。
+your levels and it can help you wait for confirmation.
+
+428
+00:21:53,800 --> 00:21:56,053
+一旦15分钟K线收盘确认，
+Once we had confirmation of the 15 minute
+
+429
+00:21:56,053 --> 00:21:58,306
+并且我们看到一个实体
+candle closing and we see the solid
+
+430
+00:21:58,306 --> 00:22:03,777
+回踩，我们就已经预期会出现突破并回测，这在SPY上更清晰，就在这里。
+rejection, we are already expecting the break in retests as demonstrated cleaner on the spy right here.
+
+431
+00:22:04,500 --> 00:22:06,800
+这是日内区间的回测。
+This is the retest of the intraday zone.
+
+432
+00:22:07,200 --> 00:22:08,817
+这是一个可行的入场点，因为
+This is our viable entry because this
+
+433
+00:22:08,817 --> 00:22:10,434
+这是5分钟时间框架。
+is the five minute time frame. This
+
+434
+00:22:10,434 --> 00:22:13,668
+15分钟用来决定是否入场。
+is over 15 minutes to decide if we want to enter the trade or not.
+
+435
+00:22:14,100 --> 00:22:19,200
+我用这三根5分钟K线的平均值，大概对应2点的买价。
+I use the average of these three five minute candles, which pulled us around a two o'clock bid.
+
+436
+00:22:19,600 --> 00:22:24,000
+假设买价报在2美元，这有足够的时间成交。
+So assuming a bid was put out for two bucks, this is plenty of time to get filled.
+
+437
+00:22:24,200 --> 00:22:29,900
+5分钟内就涨到4美元，退出时收益率超过100%。这是最大的机会。
+And this is it at $4 within five minutes here with an exit of over 100%. The maximum opportunity.
+
+438
+00:22:30,100 --> 00:22:36,200
+显然，如果一直持有到这一位置，收益率会超过800%，即1700美元。
+Obviously, if this was held all the way down to here, would be well over 800% or $1,700.
+
+439
+00:22:36,400 --> 00:22:41,400
+这个交易风险小，但潜在收益高，适合让利润奔跑。
+This is not a lot of risk for a trade that has a lot of reward for a runner.
+
+440
+00:22:41,800 --> 00:22:45,100
+当QTA出现这种情况时，这里真的太棒了。
+This is amazing right here whenever this happens for QTA.
+
+441
+00:22:45,200 --> 00:22:46,454
+我们稍后再看反弹交易，
+We'll take a look at the bounce
+
+442
+00:22:46,454 --> 00:22:49,499
+但现在我想先专注于看跌期权。
+trade a little bit later, but I want to focus just on puts for a second here.
+
+443
+00:22:50,100 --> 00:22:51,776
+这适合资金量较大的交易者，
+This is for anyone with a larger account
+
+444
+00:22:51,776 --> 00:22:53,242
+喜欢交易
+that likes to trade a little bit
+
+445
+00:22:53,242 --> 00:22:54,499
+更接近平值的期权。
+more closer to the money options.
+
+446
+00:22:54,500 --> 00:23:00,600
+这是5600看跌期权。所以SPX的5600看跌期权就是这个，就在这里。
+This is the 5600 put. So the 5600 put on the SPX would be this one right here.
+
+447
+00:23:01,100 --> 00:23:04,400
+基本上是平值或略微实值。
+Which is essentially going at the money or slightly in the money.
+
+448
+00:23:04,800 --> 00:23:07,900
+同样的交易机会价格大约是9美元。
+The same trade opportunity is going for about $9.
+
+449
+00:23:07,900 --> 00:23:10,900
+也就是大约900美元，而另一个是2美元。
+So this is around $900, whereas the other one was going for $2.
+
+450
+00:23:11,200 --> 00:23:12,496
+在这一点上，
+And at this point, this
+
+451
+00:23:12,496 --> 00:23:14,051
+这是一笔超过2800美元的交易，或者
+is over a $2,800 trade or a
+
+452
+00:23:14,051 --> 00:23:17,680
+如果持有跑单到量化交易应用买入区，能获得300%的回报。
+300% return if held with a runner down to the quant trading at buy zone.
+
+453
+00:23:18,400 --> 00:23:21,200
+但预期的短线交易收益应该就在这个区间内。
+The expected scalp, however, would have been right within here.
+
+454
+00:23:21,400 --> 00:23:27,700
+大概500美元左右，但最大收益大致在2800到3000美元。
+So around $500, but the maximum reward, give or take, is about $2,800 or $3,000.
+
+455
+00:23:28,000 --> 00:23:30,012
+现在，我比较喜欢这个选择，因为
+Now, I like this option here because
+
+456
+00:23:30,012 --> 00:23:32,024
+风险更低，尤其是对于短线交易来说，
+the risk is much lower, especially for
+
+457
+00:23:32,024 --> 00:23:34,899
+同时还能留下跑单的机会。
+a scalp, and this leaves opportunity to leave a runner.
+
+458
+00:23:35,300 --> 00:23:37,733
+我作为摄影师在市场外的日费
+My day rate for a cinematographer outside of the markets
+
+459
+00:23:37,733 --> 00:23:39,436
+接近这个价格区间，
+is coming up to around this price
+
+460
+00:23:39,436 --> 00:23:42,599
+但我知道自己作为摄影师该怎么做。
+range here, but I know what I have to do as a cinematographer.
+
+461
+00:23:42,600 --> 00:23:47,000
+要赚这么多钱需要超过10小时的工作。
+That's well over 10 hours worth of a day's work to make this type of money.
+
+462
+00:23:47,300 --> 00:23:50,600
+这笔钱可能在几小时内就能通过一张合约实现。
+That can happen within a couple hours with just one contract.
+
+463
+00:23:50,600 --> 00:23:52,166
+200美元变成1900美元，
+We're talking $200 turning into $1,900
+
+464
+00:23:52,166 --> 00:23:54,907
+在几小时内赚取超过1700美元的利润，
+with over $1,700 profit in a few hours
+
+465
+00:23:54,907 --> 00:23:58,823
+这简直疯狂，但这就是期权提供的机会。
+is crazy, but that is the opportunity that options provide.
+
+466
+00:24:00,500 --> 00:24:03,500
+尤其是对日内交易者来说，当我们交易0DTE期权时。
+especially as day traders when we're trading zero DT options.
+
+467
+00:24:03,800 --> 00:24:06,800
+这也是我成为期权交易者的主要原因之一。
+And it's one of the main reasons in which I became an options trader.
+
+468
+00:24:07,000 --> 00:24:09,800
+我喜欢当摄影师和拍电影，但
+I love being a cinematographer and making films, but for
+
+469
+00:24:09,800 --> 00:24:12,600
+在大多数情况下，期权交易提供了太多机会，
+the most part, this provides so much opportunity that it's
+
+470
+00:24:12,600 --> 00:24:14,000
+让人很难不去关注。
+hard to look away from.
+
+471
+00:24:14,300 --> 00:24:16,947
+接下来，不列出这里的所有汇聚信号，
+Next, without pointing out all of the confluences down here,
+
+472
+00:24:16,947 --> 00:24:19,064
+除了量化交易应用买入区之外，
+other than the quant trading at buy zone,
+
+473
+00:24:19,064 --> 00:24:23,299
+来看看当天晚些时候发生的低风险反弹交易。
+is take a look at the low risk bounce trade that happened later in the day.
+
+474
+00:24:23,600 --> 00:24:29,300
+这是SPX 0DTE的55.80行权价看涨期权。
+This is the 55. 80 call for the SPX zero DTE.
+
+475
+00:24:29,600 --> 00:24:32,500
+所以现在我们预期价格会回涨到这个价位。
+So now we're expecting price to retrace back up to this level.
+
+476
+00:24:32,500 --> 00:24:34,833
+如果我们在这里，只是想
+So if we're down here and we want to just
+
+477
+00:24:34,833 --> 00:24:36,699
+押注一下，然后说，嘿，
+throw out a lotto and we're saying, hey,
+
+478
+00:24:36,699 --> 00:24:39,499
+也许真实价格会直接回到这个行权价。
+maybe real price will come right back up to this strike here.
+
+479
+00:24:39,700 --> 00:24:41,200
+这些都是重要的行权价。
+These are significant strike prices.
+
+480
+00:24:41,300 --> 00:24:43,420
+不是我随便选的行权价，而是
+They're not random strike prices that I'm throwing out, but
+
+481
+00:24:43,420 --> 00:24:44,480
+我快要讲到
+I'm coming around to the
+
+482
+00:24:44,480 --> 00:24:46,600
+视频尾声了。我是从这里直接截取的。
+end of the video. I'm pulling right from right here.
+
+483
+00:24:46,900 --> 00:24:50,500
+我们知道580是今天1标准差预期区间。
+We know 580 is the one sigma expected range for today.
+
+484
+00:24:50,700 --> 00:24:53,420
+在早些时候，如果市场没有
+Earlier in the day, this level would have probably moved
+
+485
+00:24:53,420 --> 00:24:55,596
+遭遇故障，这个价位可能会
+a little bit lower as the markets had
+
+486
+00:24:55,596 --> 00:24:57,500
+稍微下移一些。
+continued had we not experienced the outage.
+
+487
+00:24:57,800 --> 00:25:00,680
+但当前时点，我们已经对580击价很熟悉了，
+But at this point, we would have already been familiar
+
+488
+00:25:00,680 --> 00:25:02,696
+尤其是如果你参与了
+with the 580 strike, especially if you participated
+
+489
+00:25:02,696 --> 00:25:04,424
+从这里开始的580看跌期权交易。
+in the 580 put trade from here.
+
+490
+00:25:05,200 --> 00:25:09,000
+现在的预期是价格会反弹回升进行回撤。
+This is now the expectation that we're just going to bounce back up for the retracements.
+
+491
+00:25:09,000 --> 00:25:12,000
+所以这就是选择580看涨期权的原因。
+So that's the selection in terms of this 580 call.
+
+492
+00:25:12,300 --> 00:25:14,900
+再次强调，这个价位在本周初就已经在我们的图表上了。
+Again, this level is right here on our chart at the start of the week.
+
+493
+00:25:15,000 --> 00:25:20,700
+当价格下探到这个价位时，尤其是在这样的急跌之后，我们已经知道会发生什么。
+We already know what to expect when price gets down to this level, especially after a sharp sell-off like this.
+
+494
+00:25:20,700 --> 00:25:24,800
+通常会有一定反弹，因为这里存在汇聚信号。
+There's usually going to be some sort of a bounce as there is confluences down in this level.
+
+495
+00:25:25,000 --> 00:25:28,100
+收盘后还有NVIDIA的财报要发布。
+There's still NVIDIA's earnings to be reported after the close.
+
+496
+00:25:28,200 --> 00:25:30,527
+所以任何参与这次
+So anyone that participated in this. nice drop
+
+497
+00:25:30,527 --> 00:25:32,563
+SPX大跌的人，
+here on the SPX, we'll probably want
+
+498
+00:25:32,563 --> 00:25:34,599
+可能都想获利了结一部分。
+to close out some sort of profit.
+
+499
+00:25:34,900 --> 00:25:37,313
+此外，如果我们看
+On top of that, if we take a look at
+
+500
+00:25:37,313 --> 00:25:39,244
+VIX，这里也存在
+the VIX, there also happens to be confluence
+
+501
+00:25:39,244 --> 00:25:41,899
+汇聚信号，因为我们正好触及QTA周线阻力位。
+right here as we hit right at the QTA weekly resistance.
+
+502
+00:25:42,000 --> 00:25:47,900
+再次说明，这些价位是本周初由量化交易应用的周脚本自动绘制的。
+Again, these levels are drawn out at the start of the week automatically from the Quant Trading App weekly script.
+
+503
+00:25:48,100 --> 00:25:51,752
+它并不是从期权数据计算得出的，而是
+It is calculated not from the options data, but from
+
+504
+00:25:51,752 --> 00:25:53,578
+通过专有算法计算的，
+a proprietary calculation, and that
+
+505
+00:25:53,578 --> 00:25:56,499
+并且与SPY和SPX保持一致。
+is aligning with the SPY and the SPX.
+
+506
+00:25:56,600 --> 00:25:59,200
+这是我们的K线给出的确认信号。
+This is our candle that is giving confirmation.
+
+507
+00:25:59,300 --> 00:26:02,400
+这就是你希望在这些价位上看到的反应类型。
+This is the type of reaction you want to see off of these levels.
+
+508
+00:26:02,700 --> 00:26:08,300
+价格并不是刚触及价位就停滞不前，而是在VIX上出现了急剧回拒。
+Price did not just get to the level and then sit there. It was a sharp rejection on the VIX.
+
+509
+00:26:08,400 --> 00:26:13,100
+同时SPY和SPX也回落到各自的量化交易应用买入区间价位，
+The same time the SPY and the SPX came down to their quant trading app.
+
+510
+00:26:13,500 --> 00:26:16,300
+我们看到一个犹豫不决的
+Buy zone levels respectively we see an indecisive
+
+511
+00:26:16,300 --> 00:26:18,750
+这一位置的K线是十字星
+candle right here this is a doji
+
+512
+00:26:18,750 --> 00:26:21,200
+K线正在支撑位形成
+candle forming right on supports which creates
+
+513
+00:26:21,200 --> 00:26:23,650
+这可能为交易创造机会
+a possible opportunity for a trade in
+
+514
+00:26:23,650 --> 00:26:26,100
+在这个例子中 这是一张3美元的期权
+this case here this is a three
+
+515
+00:26:26,100 --> 00:26:28,900
+所以价格稍微有点贵
+dollar option so it's a little bit pricey
+
+516
+00:26:29,200 --> 00:26:32,000
+可以看到这笔交易出现了一些回撤
+and we can see there was a little bit of a drawdown for this trade
+
+517
+00:26:32,600 --> 00:26:35,217
+因为时间在侵蚀这张0DTE期权的价值
+as time was eating away at this zero dt option
+
+518
+00:26:35,217 --> 00:26:37,311
+所以回撤比看跌期权的回撤要小
+so the drawdown was much lower than the
+
+519
+00:26:37,311 --> 00:26:41,499
+在这个例子中 看跌期权交易的回撤其实并不大
+puts so in this case here the put trade there wasn't really much of a drawdown
+
+520
+00:26:42,100 --> 00:26:44,218
+5600看跌期权和5800看跌期权
+on the 5600 put and on the 5800 put it
+
+521
+00:26:44,218 --> 00:26:46,336
+回撤都不大 这笔交易
+wasn't really much of a drawdown the trade
+
+522
+00:26:46,336 --> 00:26:51,368
+基本处于低点 如果在这些价位成交的话 而看涨期权的话
+was essentially at the lows in which it would have been filled versus the call there would have been
+
+523
+00:26:52,400 --> 00:26:54,951
+如果入场时机不完美 持有这笔交易会有一定的痛苦
+some sort of pain holding this trade here if the
+
+524
+00:26:54,951 --> 00:26:56,992
+但我认为
+entry was not timed perfectly but i think
+
+525
+00:26:56,992 --> 00:26:59,543
+对于大多数交易者来说 这个区域
+for most traders this in this area here within this 15
+
+526
+00:27:00,100 --> 00:27:05,200
+在这15到30分钟左右的时间窗口 内大多数交易者可能会寻找入场机会
+to 30 minutes or so is where most traders probably would have looked to take some sort of an entry.
+
+527
+00:27:05,500 --> 00:27:13,500
+但即便如此 仍然有机会获得超过490%的收益 或者用300美元的头寸赚取1500美元
+But even yet still, there was still an opportunity for over 490% returns or $1,500 on a $300 position.
+
+528
+00:27:13,900 --> 00:27:21,700
+合理的离场点是580价位 所以仍然能获得超过100%的收益 或者下午赚取约400美元
+The actual sensible exit is that 580 level. So it's still over 100% return or about $400 made for the afternoon.
+
+529
+00:27:22,100 --> 00:27:24,500
+在我看来 这些都是相对简单的交易
+These, in my opinion, are relatively simple trades.
+
+530
+00:27:24,500 --> 00:27:26,900
+你们应该听我讨论过这些策略上百次了
+You guys would have heard me discuss these about a million times.
+
+531
+00:27:26,900 --> 00:27:29,507
+这些是我交易0DTE期权时
+These are the only type of trades when I'm trading
+
+532
+00:27:29,507 --> 00:27:31,071
+唯一会进行的方向性交易 而且这不是价差策略
+zero DT options directionally and it's
+
+533
+00:27:31,071 --> 00:27:34,199
+它必须满足我设定的某些标准
+not a spread. It has to meet a certain criteria for myself.
+
+534
+00:27:34,500 --> 00:27:37,115
+而这就是我喜欢的标准和汇聚信号
+And this is the type of criteria and confluence in
+
+535
+00:27:37,115 --> 00:27:38,684
+我喜欢看到的
+which I like to see, in
+
+536
+00:27:38,684 --> 00:27:41,299
+也是我最愿意承担风险的
+which I'm most comfortable putting some sort of risk out.
+
+537
+00:27:41,800 --> 00:27:45,500
+早盘过后 价格走势整体相对干净
+Price action for the most part, relatively clean after the morning session here.
+
+538
+00:27:45,700 --> 00:27:48,200
+这就是我们能期望的最简单的突破情况
+This is about as simple as we can ask where we get the break.
+
+539
+00:27:48,500 --> 00:27:51,500
+价格下跌至一个重要的击价
+We get price coming down to a significant strike.
+
+540
+00:27:51,600 --> 00:27:53,900
+然后反弹回升 这就是我们看到的回踩
+We bounce back up and this is where we get our rejection.
+
+541
+00:27:54,300 --> 00:27:55,875
+这并不是我在这里指出的交易机会，
+This is not a trade in which I'm
+
+542
+00:27:55,875 --> 00:27:57,450
+因为这是逆势交易。
+pointing out here because it is counter trend.
+
+543
+00:27:57,450 --> 00:28:00,600
+而且此时此刻，我们已经知道市场想要走的方向。
+And at this point, we already know the direction in which the market wants to go.
+
+544
+00:28:00,700 --> 00:28:03,200
+它已经给出了足够多的线索，预示着弱势。
+It has shown enough clues to expect weakness.
+
+545
+00:28:03,600 --> 00:28:07,200
+SPX交易引擎显示弱势，gamma暴露也显示弱势。
+The trade engine was showing the weakness. The gamma exposure was showing weakness.
+
+546
+00:28:07,300 --> 00:28:11,200
+我们只是静待回测，然后在这里得到跟进。
+We're just sitting back and waiting for our retest. And then we get the follow through right here.
+
+547
+00:28:11,500 --> 00:28:15,300
+当我们在图表上分层叠加GEX水平时，我们在这里得到了相同的汇聚信号。
+As we layer the GEX levels on the charts, we get the same confluence right here.
+
+548
+00:28:15,700 --> 00:28:21,000
+557这个价位，我们在本周初就已经知道了，这是G翻转击价。
+557, we are already aware at the start of the week. That is the G flip strike.
+
+549
+00:28:21,100 --> 00:28:26,500
+所以不仅仅是价格下跌至绝对gamma击价，这同时也是G翻转击价。
+So not only this price drop down to the absolute gamma strike, it's also the gamma flip strike.
+
+550
+00:28:26,600 --> 00:28:28,600
+所以我们得到这个回弹，重新回到这一价位。
+So we get this bounce back up to this level.
+
+551
+00:28:28,800 --> 00:28:30,000
+如果你处于灰色区域，
+If you are in a gray.
+
+552
+00:28:30,000 --> 00:28:32,016
+作为激进的剥头皮交易者，这里有足够的背景信息，
+aggressive scalper there's enough context and
+
+553
+00:28:32,016 --> 00:28:34,704
+也有足够的线索，但大多数情况下，
+enough clues there but for the most part
+
+554
+00:28:34,704 --> 00:28:38,400
+图表上的这些价位本身已经提供了足够的背景信息，
+the levels in itself are providing enough context on our charts
+
+555
+00:28:39,100 --> 00:28:45,600
+对于激进的日内交易者来说，这里有空间可以入场，剥头皮操作，并在下方设置止损，
+for an aggressive day trader there's room here to take an entry scalp it up with a stop below here
+
+556
+00:28:45,900 --> 00:28:48,687
+这是一天中的早盘止损，
+there's one loss so this is a stop loss early
+
+557
+00:28:48,687 --> 00:28:51,474
+如果价格突破下跌，而你仍然
+in the day as price broke down if you're still
+
+558
+00:28:51,474 --> 00:28:53,146
+想要在这里激进操作，这是另一个
+looking to be aggressive here's another
+
+559
+00:28:53,146 --> 00:28:54,818
+入场点，你最终
+entry here that you end up
+
+560
+00:28:54,818 --> 00:28:58,998
+会在这里获得一个获胜交易的回报，这个获胜的收益远大于早盘的亏损，
+getting rewarded with a win up here this win is much greater than the loss
+
+561
+00:28:59,300 --> 00:29:03,438
+然后在一天中后面还有机会
+incurred earlier in the day then there's opportunity for a
+
+562
+00:29:03,438 --> 00:29:07,576
+进行一次更大的交易，
+larger trade later in the day and then another larger
+
+563
+00:29:07,576 --> 00:29:14,198
+然后在一天后期再进行一次更大的交易，
+trade back up later in the day so from a flawless execution standpoint there's one two
+
+564
+00:29:15,200 --> 00:29:20,400
+所以从完美执行的角度来看，今天在SPY/SPX上有1、2、
+three four trades on the spy slash spx today
+
+565
+00:29:20,900 --> 00:29:24,322
+3、4次交易，
+one of them being a loss right here in which this trade
+
+566
+00:29:24,322 --> 00:29:28,599
+其中一次是亏损，这笔交易
+would have stopped out if we're just following basic scalping off of the levels playbook
+
+567
+00:29:29,000 --> 00:29:31,955
+如果我们只是遵循基于价位的剥头皮交易手册，会被止损出局，
+this is a stop loss that anyone would have taken without feeling
+
+568
+00:29:31,955 --> 00:29:33,925
+这是任何人都会接受的止损，不会觉得后悔，
+bad but then if we just wait for
+
+569
+00:29:33,925 --> 00:29:35,359
+但如果我们只是等待价格
+price to get to another key
+
+570
+00:29:35,359 --> 00:29:36,793
+到达另一个关键价位，你可以看到
+level we can see that you
+
+571
+00:29:36,793 --> 00:29:38,161
+完全可以弥补这个
+can well make up for that
+
+572
+00:29:38,161 --> 00:29:39,301
+因为如果这是50美分的止损
+because if this is a 50
+
+573
+00:29:39,301 --> 00:29:41,582
+这边大约能赚1美元
+cent stop loss this is about a one dollar profit
+
+574
+00:29:42,800 --> 00:29:45,520
+这边大约能赚2美元
+this is about a two dollar profit and then this
+
+575
+00:29:45,520 --> 00:29:49,600
+这边也大约能赚2美元
+is about a two dollar profit so you're talking two dollars plus two dollars plus
+
+576
+00:29:50,600 --> 00:29:53,841
+所以你算的是2美元加2美元加
+one dollar that makes five dollars in terms of wins
+
+577
+00:29:53,841 --> 00:29:56,758
+1美元，总共赚5美元
+and about 50 cents let's call it a dollar actually
+
+578
+00:29:56,758 --> 00:29:59,675
+亏损方面大约50美分，公平起见算1美元
+in losses just to be fair there it's an
+
+579
+00:30:00,000 --> 00:30:02,764
+总体净赚大约4个点，也就是4美元
+overall win of about plus four points four dollars however
+
+580
+00:30:02,764 --> 00:30:05,528
+但你要分析清楚，这就是聪明的交易
+you want to decipher that and that's just smart trading
+
+581
+00:30:05,528 --> 00:30:07,186
+这是耐心等待
+that's being patient and then waiting
+
+582
+00:30:07,186 --> 00:30:08,844
+你的交易信号，大家
+for your setup guys if you
+
+583
+00:30:08,844 --> 00:30:10,226
+如果你喜欢这个视频，告诉我
+enjoyed this video let me
+
+584
+00:30:10,226 --> 00:30:14,096
+希望大家喜欢这个系列
+know in the comments down below hopefully you guys have been enjoying this series
+
+585
+00:30:14,700 --> 00:30:19,400
+每日回顾展示QTA提供的多种工具
+with these daily recaps kind of showing the multiple tools that qta offers
+
+586
+00:30:20,200 --> 00:30:26,600
+比如gamma暴露、SPX交易引擎、量化交易应用（QTA）、每周和日内关键价位
+like gamma exposure, like the SPX, trade engine, like the quant trading app, weekly and intraday levels.
+
+587
+00:30:26,800 --> 00:30:28,900
+大家可以看到这些工具是如何整合在一起的
+You guys can see how it all comes together.
+
+588
+00:30:29,100 --> 00:30:33,000
+这是我们上午10点（东部时间）的gamma暴露分布图
+This is our 10 a.m. Eastern time gamma exposure profile.
+
+589
+00:30:33,200 --> 00:30:35,000
+这里有一个计划
+There is some sort of a plan here.
+
+590
+00:30:35,100 --> 00:30:37,800
+我们突破这个价位，预期价格会去哪里？
+We break this level. Where do we expect price to go?
+
+591
+00:30:38,000 --> 00:30:40,400
+预期价格不会跌破哪个价位？
+Where will we expect price not to close below?
+
+592
+00:30:41,100 --> 00:30:43,900
+我会说当前时点应该是575这个价位
+I would say at this point, it would be that 575 level.
+
+593
+00:30:44,100 --> 00:30:46,500
+这个价位下方没有太多负gamma
+There's not really much negative gamma below this.
+
+594
+00:30:46,600 --> 00:30:49,200
+不过随着交易日推进，情况会变化
+However, things change as the day progresses.
+
+595
+00:30:49,600 --> 00:30:53,100
+价格最终直接突破575
+Price ends up slicing right past 575.
+
+596
+00:30:53,400 --> 00:30:57,050
+尽管之前一天内没有太多显著迹象表明
+So even though there wasn't much significant indications of that earlier in
+
+597
+00:30:57,050 --> 00:31:00,395
+但我们可以看到gamma暴露最终在550收盘
+the day, we can see that the gamma exposure ended at 550.
+
+598
+00:31:01,000 --> 00:31:06,800
+之前也没有太多迹象显示会跌破这里，这个价位远离行权价
+There wasn't really much signs of us going below here. That level is deep out the money.
+
+599
+00:31:07,000 --> 00:31:10,800
+但在今天早些时候的这个区间内，确实没什么动静
+But in this pocket right here, there wasn't really much going on this early in the day.
+
+600
+00:31:11,000 --> 00:31:13,478
+所以这只是想给大家展示
+So this is just to show you guys that are
+
+601
+00:31:13,478 --> 00:31:16,699
+所以过度关注gamma暴露，在这里寻找支撑或其他什么信号。
+so hyper fixated on gamma exposure, looking for support or something down here.
+
+602
+00:31:17,000 --> 00:31:19,520
+这就是你当天的一个自主交易区间,
+This is where you kind of have your own playing
+
+603
+00:31:19,520 --> 00:31:23,300
+你会说，嘿，这就是我今天的预期波动范围。
+field for the day and you say, hey, this is my range for the day.
+
+604
+00:31:23,600 --> 00:31:28,000
+如果市场突破了这个范围，我也不知道会发生什么。
+If the market gets outside of this range, I have no idea what's going on.
+
+605
+00:31:28,300 --> 00:31:29,700
+可能我就只能观望。
+Maybe I'll just sit on my hands.
+
+606
+00:31:30,000 --> 00:31:32,257
+或者我会等它到达一些极端水平，
+Or maybe I'll wait for it to get
+
+607
+00:31:32,257 --> 00:31:34,514
+因为预期它会迅速回弹到合理区间内。
+to some extreme levels because the expectation would
+
+608
+00:31:34,514 --> 00:31:37,899
+就是会在合理区间内迅速反弹回去。
+be that it's going to bounce right back within the sensible range.
+
+609
+00:31:38,400 --> 00:31:41,376
+SPX确实跌到了这些价位，
+The SPX made it down to these levels, but at
+
+610
+00:31:41,376 --> 00:31:44,055
+但在上午10点，也就是开盘后30分钟时，
+10 a.m., so 30 minutes into the market open, I
+
+611
+00:31:44,055 --> 00:31:47,471
+我不会说从这个gamma快照来看，
+would not say there was really much of an indication that we
+
+612
+00:31:47,471 --> 00:31:50,317
+有什么明显迹象显示我们会跌破575。
+would go below 575, at least from this snapshot of gamma.
+
+613
+00:31:51,500 --> 00:31:56,200
+之后形势确实有所发展，我们可以看到gamma暴露水平在上升。
+Things did progress, and we can see that there was gamma exposure levels growing.
+
+614
+00:31:56,200 --> 00:31:59,500
+这就是我们的575价位，现在它成了N2。
+So here's our 575 level. It now became N2.
+
+615
+00:31:59,500 --> 00:32:03,200
+这是560以上第二高的负gamma击价。
+This is the second highest negative gamma strike past 560.
+
+616
+00:32:03,600 --> 00:32:09,300
+但无论如何，gamma暴露只是观察市场的一个维度，它并不是全部。
+But still, gamma exposure is just one lens of the market. It is not everything.
+
+617
+00:32:09,700 --> 00:32:15,600
+我们图表上已经有足够的背景信息，这是来自量化交易应用的支撑位。
+We have enough context on our chart right here. This is our support from Quant Trading App.
+
+618
+00:32:15,900 --> 00:32:19,200
+我们和SPY有汇聚信号，和SPX也有汇聚信号。
+We have confluence with the SPY. We have confluence with the SPX.
+
+619
+00:32:19,400 --> 00:32:24,200
+我们放大看，这里是上周的低点。
+We can see that it is a low from last week here as we zoom out right here.
+
+620
+00:32:24,300 --> 00:32:26,400
+所以我们图表上有需求区。
+So we have our demand zone on our charts.
+
+621
+00:32:26,800 --> 00:32:33,800
+你可以看成交量分布图，各种不同的汇聚信号和价格在特定价位的拒绝背景。
+You can check the volume profile. There's all sorts of different confluences and context around price rejecting certain levels.
+
+622
+00:32:33,900 --> 00:32:38,700
+gamma暴露有助于分析，但这不是解读市场的唯一方式。
+The gamma exposure helps with this, but it is not the only way to interpret the market.
+
+623
+00:32:38,800 --> 00:32:40,800
+所以我想以这个观点作为结束。
+So I did want to leave on that note.
+
+624
+00:32:41,200 --> 00:32:42,500
+再次感谢大家的观看。
+Thanks again for watching, guys.
+
+625
+00:32:42,800 --> 00:32:44,100
+如果你喜欢这个视频，请点赞。
+Like the video if you enjoyed it.
+
+626
+00:32:44,400 --> 00:32:45,600
+如果你有所收获，请分享。
+Share it if you learned something.
+
+627
+00:32:45,900 --> 00:32:48,800
+如果还没订阅YouTube频道，请订阅，下期再见。
+Subscribe to the YouTube channel if you haven't already, and I'll catch you in the next one.
+
+===== END AFTER_TRANSLATE =====

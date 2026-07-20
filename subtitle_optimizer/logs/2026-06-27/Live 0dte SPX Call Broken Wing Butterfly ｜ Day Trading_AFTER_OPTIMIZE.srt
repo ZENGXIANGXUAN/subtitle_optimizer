@@ -1,0 +1,1631 @@
+===== AFTER_OPTIMIZE (326 entries) =====
+1
+00:00:00,200 --> 00:00:01,300
+大家好，我是Brian。
+What's going on guys, Brian's here.
+
+2
+00:00:01,400 --> 00:00:05,000
+今天是2023年12月29日，周五，市场开盘交易。
+Today is Friday, December 29th, 2023, and the market is open.
+
+3
+00:00:05,400 --> 00:00:09,100
+现在有机会上来，再分享一个实盘交易案例。
+I have the opportunity here to hop on and share a live trade example again.
+
+4
+00:00:09,200 --> 00:00:11,272
+这次我用的是断翼蝶式价差的看涨部分，
+This time I'm using a broken wing call
+
+5
+00:00:11,272 --> 00:00:14,899
+我会解释为何入场这笔交易。
+butterfly, and I'm going to justify the reasons behind why I entered the trade.
+
+6
+00:00:15,100 --> 00:00:17,370
+我会讲得有点快，因为
+I'm going to be talking a little bit fast because
+
+7
+00:00:17,370 --> 00:00:19,640
+市场正在交易，且持续下跌，
+again, the market is open and it is actively falling
+
+8
+00:00:19,640 --> 00:00:21,002
+我正在错失交易机会，
+right here, and I'm missing out
+
+9
+00:00:21,002 --> 00:00:22,364
+on opportunities to take some trades,
+
+10
+00:00:22,364 --> 00:00:23,726
+但我认为上来分享一个实时案例
+but I figured it'd be pretty
+
+11
+00:00:23,726 --> 00:00:25,996
+会很有价值。
+neat to get on and actually share a live example.
+
+12
+00:00:26,100 --> 00:00:27,978
+这周大家都在关注475点位。
+So this week we've all been aware of this 475
+
+13
+00:00:27,978 --> 00:00:30,691
+到目前为止，我已经发布了至少3个相关视频。
+level. I've shared at least three videos now at this point on this.
+
+14
+00:00:30,900 --> 00:00:33,441
+我不会再重复讨论这些点位，
+I'm not going to be talking about the levels as I've discussed
+
+15
+00:00:33,441 --> 00:00:34,923
+这周已经讲得够多了，
+that enough this week and you guys
+
+16
+00:00:34,923 --> 00:00:38,099
+如果你是未来观看这个视频，可以看看之前的内容。
+can check out the previous videos especially if you're watching this video in the future.
+
+17
+00:00:38,100 --> 00:00:40,842
+直接查看下方描述中的链接，
+Just check out the links in the description down below to some
+
+18
+00:00:40,842 --> 00:00:42,899
+里面有这周发布的部分视频。
+of the previous videos that were released this week.
+
+19
+00:00:43,200 --> 00:00:45,800
+现在市场下跌，我们来到475点位。
+Now as the market is falling we come down to this 475 strike.
+
+20
+00:00:46,100 --> 00:00:49,800
+我之前在考虑的一个思路是卖出一些平值外的看跌期权。
+One of the things in which I was thinking was selling some put out the money put options.
+
+21
+00:00:49,900 --> 00:00:53,200
+右边这是标普500指数，这是SPY（标普500ETF）。
+So this on the right hand side is the SPX and this is the SPY.
+
+22
+00:00:53,500 --> 00:00:56,402
+如果我在下方卖出一些平值外的看跌期权，
+So if I sold some out the money put options for down
+
+23
+00:00:56,402 --> 00:00:58,336
+预期是随着市场下跌，
+here the expectation would be that the puts
+
+24
+00:00:58,336 --> 00:01:00,270
+这些看跌期权的价格会被高估，
+have inflated in price as we're selling off,
+
+25
+00:01:00,270 --> 00:01:02,204
+但我不认为市场会
+but I'm not really expecting the markets to
+
+26
+00:01:02,204 --> 00:01:03,896
+从当前位置再跌太多。
+go much lower than right around here.
+
+27
+00:01:03,900 --> 00:01:07,400
+所以可以卖出看跌期权，利用时间衰减获利。
+So I can sell some puts and, you know, capitalize on some data decay.
+
+28
+00:01:07,700 --> 00:01:11,400
+但我没拿到理想成交价，所以不想追价。
+However, I did not get the exact fill in which I wanted. So I didn't want to chase price.
+
+29
+00:01:11,400 --> 00:01:13,680
+于是我开始模拟构建一个更好的交易，
+I started mocking up a better trade that I think
+
+30
+00:01:13,680 --> 00:01:17,100
+风险更低，且使用的资金量相似。
+that would have been a little bit less risky using a similar amount of capital.
+
+31
+00:01:17,100 --> 00:01:18,833
+那我们来看我的
+So if we take a look at my
+
+32
+00:01:18,833 --> 00:01:22,299
+风险收益图，这就是我入场的策略。这是一个看涨断翼蝶式价差。
+risk profile here, this is what I entered. And this is a call broken wing butterfly.
+
+33
+00:01:22,500 --> 00:01:28,100
+现在看的就是这个风险收益图。这是今日到期的图表。这些都是零日到期合约。
+So what we're looking at is this risk profile. This is at today's expiration. These are zero DTE expirations.
+
+34
+00:01:28,100 --> 00:01:29,800
+我在这里持有四个这样的头寸。
+I'm in four of them right here.
+
+35
+00:01:30,000 --> 00:01:31,500
+这是当前的现货价格。
+This is the current spot price.
+
+36
+00:01:31,500 --> 00:01:32,900
+这是我当前的盈亏。
+So this is my current P&L.
+
+37
+00:01:33,000 --> 00:01:34,600
+我在图表上添加了几个区间标记。
+I've added a couple slices on the chart.
+
+38
+00:01:34,600 --> 00:01:36,828
+如果市场回到
+So if the market was to return to
+
+39
+00:01:36,828 --> 00:01:38,220
+47.80点，就是这个区间，
+47.80, this is this slice right
+
+40
+00:01:38,220 --> 00:01:41,841
+我会亏损约230美元。而且这是立即发生的情况。
+here. I'll be down about 230 bucks. And that's if this happened right now.
+
+41
+00:01:42,500 --> 00:01:46,700
+同时，如果市场继续下跌，这个策略的价值会达到240美元。
+And then at the same time, if the market was to keep selling, this trade will be worth $240.
+
+42
+00:01:47,000 --> 00:01:48,600
+但大家可以注意到
+But what you guys can notice
+
+43
+00:01:48,600 --> 00:01:50,200
+在这里，
+right here is pretty much as
+
+44
+00:01:50,200 --> 00:01:51,800
+只要标普500指数的现货价格
+long as the spot price of
+
+45
+00:01:51,800 --> 00:01:53,666
+保持在47.80点以下，这个策略就能盈利240美元。
+the SPX remains below 47.80, this trade makes $240.
+
+46
+00:01:54,500 --> 00:01:56,442
+如果市场反弹，
+If the market does rally and we
+
+47
+00:01:56,442 --> 00:01:58,384
+最终回到所谓的
+end up back in what's referred to
+
+48
+00:01:58,384 --> 00:02:00,049
+开盘区间，也就是
+as the opening range, which is
+
+49
+00:02:00,049 --> 00:02:05,321
+这个区域，那么这可能会是一个大赢，最大潜在收益约2000美元。
+this region right here, it ends up being a potential major win with a maximum potential of making about $2,000.
+
+50
+00:02:05,800 --> 00:02:06,871
+我持有四个这样的头寸，
+So I'm in four of
+
+51
+00:02:06,871 --> 00:02:08,371
+但我更喜欢用单个策略
+them, but I do like to demonstrate
+
+52
+00:02:08,371 --> 00:02:09,871
+来演示这些交易，
+these trades using just one on option
+
+53
+00:02:09,871 --> 00:02:11,156
+因为我认为这样
+strat as I think it's easy
+
+54
+00:02:11,156 --> 00:02:12,441
+大家能清楚地看到
+for you guys to see exactly
+
+55
+00:02:12,441 --> 00:02:14,797
+使用了多少保证金，最大亏损是多少。
+how much margin is being used, what the max loss is.
+
+56
+00:02:14,800 --> 00:02:17,000
+大家可以据此加仓或减仓。
+You guys can scale up and scale down accordingly.
+
+57
+00:02:17,200 --> 00:02:18,300
+这就是这个策略的样子。
+So this is what the trade looks here.
+
+58
+00:02:18,400 --> 00:02:23,600
+每个策略使用440美元保证金。如我所述，我持有四个。
+I'm using $440 in margin per trade. As I shared, I'm in four of them.
+
+59
+00:02:23,700 --> 00:02:27,300
+所以如果我们在这里模拟构建，大家可以清楚地看到这个策略的具体情况。
+So if we were to mock this up right here, you guys can see exactly what the trade looks like.
+
+60
+00:02:27,500 --> 00:02:29,830
+四个头寸意味着我使用了约
+So four of them means I'm using about
+
+61
+00:02:29,830 --> 00:02:31,869
+实际执行这笔交易需要1800美元资金
+$1,800 in capital to actually execute this trade
+
+62
+00:02:31,869 --> 00:02:33,616
+潜在收益240美元。
+with the potential to make 240 bucks.
+
+63
+00:02:34,400 --> 00:02:36,854
+我选择做这笔交易的原因是
+The reason I decided to enter a trade like this
+
+64
+00:02:36,854 --> 00:02:38,326
+我通常更倾向
+is because I generally favor high
+
+65
+00:02:38,326 --> 00:02:39,798
+高盈利概率的交易。
+probability of success type of trades.
+
+66
+00:02:40,000 --> 00:02:42,053
+这笔交易
+So this is a trade that has
+
+67
+00:02:42,053 --> 00:02:44,106
+盈利概率非常高，
+a very high chance for profit, a
+
+68
+00:02:44,106 --> 00:02:45,572
+也就是盈利概率（POP）
+POP, which is a probability
+
+69
+00:02:45,572 --> 00:02:48,798
+比直接买入看跌或看涨期权的盈利概率高。
+of profit versus just buying a put or buying a call.
+
+70
+00:02:49,000 --> 00:02:52,400
+如果要买入期权，我通常需要更强的信心。
+I generally need a lot more conviction if I'm going to buy an option.
+
+71
+00:02:52,600 --> 00:02:56,100
+这里之前有个买入看跌期权的入场点，因为有叠加支撑/阻力位。
+There was an entry up here to actually buy some puts because we had confluence.
+
+72
+00:02:56,100 --> 00:02:59,600
+但一天开始或盘前，我完全没考虑买入看跌期权。
+However, at the start of the day or pre-market, I had no intention of actually buying puts.
+
+73
+00:02:59,600 --> 00:03:01,000
+这是今年的最后一个交易日。
+It's the last. trading day of the year.
+
+74
+00:03:01,100 --> 00:03:03,900
+所以我观察列表里甚至没模拟构建任何看跌期权。
+So I didn't even have any puts mocked up in my watch list or anything like that.
+
+75
+00:03:04,000 --> 00:03:07,700
+我只是在寻找高概率、高信心的交易。
+I was just looking for a high probability, high conviction type of trade.
+
+76
+00:03:08,000 --> 00:03:08,880
+而这笔交易正是如此，
+And this right here is,
+
+77
+00:03:08,880 --> 00:03:10,113
+大家可以看到，我标出了
+as you guys can see, I've drawn
+
+78
+00:03:10,113 --> 00:03:11,698
+大致的开盘区间。
+out what is the, just about the opening range.
+
+79
+00:03:11,700 --> 00:03:13,200
+这里是开盘区间的低点。
+So this is the low end right here.
+
+80
+00:03:13,200 --> 00:03:16,900
+提到开盘区间时，我通常会用前15分钟的K线。
+So the first 15 minute candle is what I'll generally use if I'm referring to the opening range.
+
+81
+00:03:17,200 --> 00:03:18,200
+有些交易者用30分钟，有些
+Some traders use 30 minutes, some
+
+82
+00:03:18,200 --> 00:03:19,200
+用15分钟。我习惯
+traders use 15. I like to
+
+83
+00:03:19,200 --> 00:03:20,400
+用15分钟，开盘区间
+use 15 minutes and the opening range
+
+84
+00:03:20,400 --> 00:03:23,400
+就是这根15分钟K线的最低点和最高点。
+is at the bottom of that 15 minute candle and the top of that 15 minute candle.
+
+85
+00:03:24,700 --> 00:03:29,500
+不过我在这里把区间向上延伸了一些，只是为了展示这基本是当日最高点。
+However, I just stretched this one up here just to, you know, showcase this is essentially the high of day.
+
+86
+00:03:29,600 --> 00:03:31,333
+所以如果关注
+So if we pay attention to
+
+87
+00:03:31,333 --> 00:03:32,777
+这个区间，也就是47.82
+this range right here, so 47.82
+
+88
+00:03:32,777 --> 00:03:34,221
+到我们称之为47.90的点位，
+to we'll call it 47.90, that
+
+89
+00:03:34,221 --> 00:03:36,821
+在某种程度上覆盖了这个区间。
+is in a sense what covers this range here.
+
+90
+00:03:37,400 --> 00:03:41,300
+所以可以认为是从47.80到47.90。
+So 47.80 all the way up to 47.90 we'll say.
+
+91
+00:03:41,400 --> 00:03:44,500
+所以这个10点的窄幅区间，就是最佳收益区。
+So right in this 10 point window right here is that sweet spot.
+
+92
+00:03:44,700 --> 00:03:46,146
+如果标普500指数突然
+So if the SPX was to somehow
+
+93
+00:03:46,146 --> 00:03:47,592
+反弹并一路回到
+bounce and come all the way back
+
+94
+00:03:47,592 --> 00:03:48,625
+这里，然后
+up to here and then
+
+95
+00:03:48,625 --> 00:03:50,898
+在该区域收盘，这笔交易就是大赚。
+close in this area, it ends up being a major win.
+
+96
+00:03:51,200 --> 00:03:52,680
+只要它一直保持
+If as long as it remains
+
+97
+00:03:52,680 --> 00:03:54,160
+在这个点位下方
+below this strike price right here
+
+98
+00:03:54,160 --> 00:03:55,640
+这就是盈亏平衡点。
+is that is the break even.
+
+99
+00:03:55,640 --> 00:03:58,353
+大家看，是47.90，所以缓冲空间稍大一点。
+You guys can see it's 47.90, so a little bit more buffer.
+
+100
+00:03:58,600 --> 00:04:04,900
+所以实际上，只要标普500指数保持在这个点位下方，不管收在哪里，
+So actually right up here, as long as the SPX remains below this strike, it doesn't matter where it lands.
+
+101
+00:04:05,200 --> 00:04:08,533
+只要它在这个点位下方，这笔交易今天收盘时
+As long as it is below this strike, this trade will make
+
+102
+00:04:08,533 --> 00:04:11,310
+至少能赚240美元，甚至可能赚2000美元
+at least $240 by the end of the day, or potentially $2,000
+
+103
+00:04:11,310 --> 00:04:14,643
+如果它最终落在这个最佳收益区。
+if it ends up being right in this sweet spot up here.
+
+104
+00:04:15,500 --> 00:04:18,250
+这种情况就是你交易价差时能做到的，
+These types of scenarios is what you can do when
+
+105
+00:04:18,250 --> 00:04:21,000
+尤其是交易蝶式价差时，
+you trade spreads, and more specifically when you trade butterfly
+
+106
+00:04:21,000 --> 00:04:24,300
+因为构建这些交易的方式太多了。
+spreads, because there's so many different ways to actually structure these trades.
+
+107
+00:04:24,500 --> 00:04:27,200
+我只是用了一个我认为概率很高的场景。
+I'm just using a scenario that I think is very probable.
+
+108
+00:04:27,200 --> 00:04:28,950
+这里有VWAP（成交量加权平均价）。
+We have VWAP right here. We
+
+109
+00:04:28,950 --> 00:04:30,700
+还有两天锚定的VWAP。
+have the two-day anchored VWAP. We
+
+110
+00:04:30,700 --> 00:04:34,200
+还有多个叠加支撑/阻力位，可能充当阻力。
+have multiple confluences that can potentially act as some sort of resistance.
+
+111
+00:04:34,500 --> 00:04:39,600
+现在价格跌破475点位，这个点位可能真的会变成阻力。
+Now that price is below 475, this strike price might actually act as some sort of resistance.
+
+112
+00:04:40,000 --> 00:04:42,937
+任何在这里下方卖出看跌期权的人，他们的预期是时间会
+Anyone that's selling puts for below here, their expectation is time will
+
+113
+00:04:42,937 --> 00:04:45,385
+逐渐侵蚀这些看跌期权的价值，因为现在
+just eat away at those puts because now it's a
+
+114
+00:04:45,385 --> 00:04:47,098
+是卖出这些看跌期权的好机会。
+good opportunity to actually sell these puts.
+
+115
+00:04:47,400 --> 00:04:49,608
+但这有点风险，因为你会
+However, it's a little bit risky because you're going to
+
+116
+00:04:49,608 --> 00:04:52,478
+用很多保证金，可能只赚50美分的权利金。
+be using a lot of margin to potentially make maybe 50 cents in credit.
+
+117
+00:04:53,000 --> 00:04:55,666
+所以如果我们在这里卖出一些看跌期权，
+So if we were to sell, you know, some puts all the
+
+118
+00:04:55,666 --> 00:04:57,888
+它们到期时不太可能价内行权。
+way out here, they're not very probable to expire in
+
+119
+00:04:57,888 --> 00:05:00,554
+但每1000美元，你可能只收50美分的权利金。
+the money. But for every $1,000, you might only collect 50 cents in credit.
+
+120
+00:05:01,000 --> 00:05:04,000
+我这里只是举个例子，而之前我
+And I'm just using an arbitrary example here versus when I was
+
+121
+00:05:04,000 --> 00:05:06,500
+模拟构建这笔交易时，我希望信用收益能拿到50到60美分
+mocking up this trade, I wanted something around 50 to 60 cents
+
+122
+00:05:06,500 --> 00:05:07,750
+因为如果我
+credit, because if I was
+
+123
+00:05:07,750 --> 00:05:09,500
+要做看跌信用价差，
+to run a put credit spread, that's
+
+124
+00:05:09,500 --> 00:05:12,000
+这就是我会寻找的收益区间。
+probably going to be what I would be looking for.
+
+125
+00:05:12,800 --> 00:05:17,300
+比如，如果现在真要模拟构建一笔，
+For example, if we were to actually just mock one up right now, just so we can see what
+
+126
+00:05:17,800 --> 00:05:19,342
+看看可能的表现
+one could potentially be going like
+
+127
+00:05:19,342 --> 00:05:20,884
+如果我们往下看
+if we were to hop down
+
+128
+00:05:20,884 --> 00:05:23,198
+看看这个的Delta是多少
+here let's see what the delta on this is
+
+129
+00:05:23,800 --> 00:05:29,500
+Delta是9，再往下看看，
+a nine delta so let's go even lower and see what we have so this is a
+
+130
+00:05:30,200 --> 00:05:31,160
+这个Delta是0.5
+0.5 delta so let's use something
+
+131
+00:05:31,160 --> 00:05:32,696
+那我们就用这个，把价差设宽一点
+like this let's make it a little wide
+
+132
+00:05:32,696 --> 00:05:34,617
+这类交易我习惯把保证金控制在1000美元左右
+so i like to keep the margin around a thousand
+
+133
+00:05:34,617 --> 00:05:37,114
+大家看，这笔的信用收益只有30美分
+for these types of trades you guys can see the credit is only 30
+
+134
+00:05:38,000 --> 00:05:40,611
+那我们把价位调高一点
+so let's actually just bump this up a little bit and try
+
+135
+00:05:40,611 --> 00:05:42,787
+试着至少拿到50美分的信用收益，
+to get at least 50 cents credit because anything below 50 cents
+
+136
+00:05:42,787 --> 00:05:44,044
+低于50美分的收益
+is generally not that interesting for
+
+137
+00:05:44,044 --> 00:05:45,720
+通常不符合我的风险参数，
+my risk parameters i would like to receive
+
+138
+00:05:45,720 --> 00:05:48,234
+做零日到期的信用价差，我希望至少收到50美分
+at least 50 cents credit if i'm doing some sort of zero dte
+
+139
+00:05:49,700 --> 00:05:51,142
+但这里的
+credit spread but this right here
+
+140
+00:05:51,142 --> 00:05:52,825
+Delta低于10，
+is a delta less than 10 so this
+
+141
+00:05:52,825 --> 00:05:55,229
+这已经很不错了，行权概率很低
+is pretty good you know low probability of this expiring
+
+142
+00:05:55,229 --> 00:05:59,317
+而且这是在下跌之后，看47.25点位，
+in the money and that's after the drop so if we look at 47.25 is all the way
+
+143
+00:06:00,600 --> 00:06:02,545
+它在图表上远在下方
+uh down here on the charts
+
+144
+00:06:02,545 --> 00:06:04,166
+把图表放大看，47.25点位，我们在这里卖出看跌期权
+let's zoom out 47.25 we're selling
+
+145
+00:06:04,166 --> 00:06:06,759
+所以
+this put all the way down here so
+
+146
+00:06:06,759 --> 00:06:10,649
+标普500指数还需要再下跌0.75点
+the spx would have to fall an additional uh let's see additional 0.75
+
+147
+00:06:12,300 --> 00:06:17,800
+今天已经从昨天收盘价下跌了约0.40点，这就是净变动
+it's already now down about 0.40 from yesterday's close so that is the net change
+
+148
+00:06:18,200 --> 00:06:20,605
+如果我们看一下，这是下跌1.2点
+from today's open if we were to take a look
+
+149
+00:06:20,605 --> 00:06:22,769
+这并不意味着不可能
+at that that is a 1.2 drop it doesn't mean
+
+150
+00:06:22,769 --> 00:06:26,858
+也不现实，因为我们都知道标普500指数完全可能出现这种跌幅
+it's not probable or unrealistic because we all know the spx can very much so do that
+
+151
+00:06:27,400 --> 00:06:29,502
+但这里确实有一些叠加支撑位，
+but we do have some potential support levels here we
+
+152
+00:06:29,502 --> 00:06:31,394
+比如474点位，这是一个
+have this level here we have 474 which was an
+
+153
+00:06:31,394 --> 00:06:35,388
+绝对Gamma击价，还有上周收盘价、最大痛点
+absolute gamma strike we have this level here we have last week's close we have the max pain strike
+
+154
+00:06:36,000 --> 00:06:38,467
+必须突破这些位才能
+it would have to get past a few of these levels before
+
+155
+00:06:38,467 --> 00:06:40,934
+跌到下方。如果你了解看跌信用价差，
+it would get down here and if you know anything about put
+
+156
+00:06:40,934 --> 00:06:42,082
+时间拖得越久，
+credit spreads the longer it takes
+
+157
+00:06:42,082 --> 00:06:43,230
+你其实
+to do it you can actually
+
+158
+00:06:43,230 --> 00:06:44,378
+仍能保持盈利。所以即使
+still be profitable so even if
+
+159
+00:06:44,378 --> 00:06:46,101
+它一路跌到4730点，
+it was to go all the way down to 47 30
+
+160
+00:06:47,500 --> 00:06:54,400
+4725点的看跌期权，是的，标普500指数继续下跌时，你会有段时间亏损
+that 47 25 put yes you will be red for some period of time as the spx continues to sell off
+
+161
+00:06:54,700 --> 00:06:57,525
+但如果它在某个位置停滞约60分钟，
+however if it just stalls out for maybe 60 minutes or so
+
+162
+00:06:57,525 --> 00:07:00,606
+那张看跌期权就会快速贬值，因为
+that put will start losing on so much of its value because
+
+163
+00:07:00,606 --> 00:07:05,742
+离收盘越近，时间衰减会越来越剧烈
+the closer and closer we get to today's close time decay is just going to become more and more harsh
+
+164
+00:07:06,300 --> 00:07:08,319
+所以大家才喜欢做这类看跌信用价差，
+so that's why people like to run those sorts of put credit
+
+165
+00:07:08,319 --> 00:07:10,001
+但我更倾向于看看，
+spreads but i like to take a look at if
+
+166
+00:07:10,001 --> 00:07:13,030
+能不能用类似的权利金拿到我想要的。比如我想要60美分权利金，
+i can get a similar credit for what i'm looking for so if i'm looking for 60 cents credit
+
+167
+00:07:13,600 --> 00:07:16,387
+用于一个高盈利概率的交易，因为你们可以看到，
+for a very high probable trade because you guys can see right
+
+168
+00:07:16,387 --> 00:07:18,709
+千万别只凭
+here again not to base your decisions just off of
+
+169
+00:07:18,709 --> 00:07:20,799
+期权结构显示的盈利概率做决策
+what option strut says is the chance of profit
+
+170
+00:07:21,100 --> 00:07:23,770
+很多这类计算都直接来自Delta
+a lot of that is being calculated also straight from the deltas
+
+171
+00:07:23,770 --> 00:07:25,550
+如果你用Tasty这类平台，
+if you're using some sort of platform like
+
+172
+00:07:25,550 --> 00:07:30,000
+或者用ThinkorSwim看期权链，你可以打开盈利概率(POP)
+tasty or if you're using thinkorswim and you're looking at the options chain you can turn on the probability of
+
+173
+00:07:30,100 --> 00:07:33,600
+入盈概率、出盈概率，或者直接看Delta。
+in the money or the probability of out the money, or you can just take a look at the deltas.
+
+174
+00:07:33,600 --> 00:07:37,200
+希腊值在很大程度上决定了这类交易的成功概率。
+The Greeks will largely determine the probability of success with these types of trades.
+
+175
+00:07:37,200 --> 00:07:39,300
+但我知道，我要的是60美分权利金。
+But all I know is I'm looking for 60 cents credit.
+
+176
+00:07:39,600 --> 00:07:44,900
+我清楚零日到期交易需要多少保证金，以及我通常会分配多少风险。
+I'm understanding how much margin is going to use for how much risk I generally allocate to zero DTE trades.
+
+177
+00:07:44,900 --> 00:07:47,700
+如果我做这类交易，不会超过5000美元。
+If I was running something like this, I would not exceed five grand.
+
+178
+00:07:47,700 --> 00:07:53,000
+所以在盘中最后一小时，我大概想要250美元左右。
+So I'm looking for about 250 bucks or so going into power hour.
+
+179
+00:07:53,200 --> 00:07:54,766
+不过，如果我要做这类交易，
+However, if I'm going to use a trade
+
+180
+00:07:54,766 --> 00:07:57,899
+我得承担至少是这个的2到3倍风险。
+like this, I understand I might need to risk at least two to three times this.
+
+181
+00:07:57,900 --> 00:08:00,100
+如果我想赚250美元，那我
+So if I'm looking to make 250 bucks, then it means I
+
+182
+00:08:00,100 --> 00:08:01,700
+就得愿意承担至少
+need to be willing to risk at least
+
+183
+00:08:01,700 --> 00:08:03,700
+700美元的风险，因为这是高盈利概率的交易。
+700 bucks because it is such a high probability of trade.
+
+184
+00:08:04,200 --> 00:08:06,575
+这个策略的思路是，10次交易中
+The idea is you can run this trade in nine
+
+185
+00:08:06,575 --> 00:08:08,237
+你能有9次、至少8次
+or sometimes at least eight out of 10
+
+186
+00:08:08,237 --> 00:08:09,662
+从中获利。
+times you should profit on this.
+
+187
+00:08:09,900 --> 00:08:11,800
+所以你得调整风险参数。
+So you have to open up your risk parameters.
+
+188
+00:08:12,000 --> 00:08:15,200
+不过，我不是最擅长零日到期信用价差的交易者。
+However, I'm not the greatest zero DTE credit spread trader.
+
+189
+00:08:15,400 --> 00:08:20,200
+我通常更爱用零日到期蝶式价差，因为它更灵活。
+I generally prefer to use zero DTE butterflies because there's a little bit more versatility.
+
+190
+00:08:20,300 --> 00:08:24,081
+而且我还喜欢这种策略
+And I also like the idea of potentially still hitting a major
+
+191
+00:08:24,081 --> 00:08:26,602
+既有潜力拿到大回报，
+return, but yet still bringing in the same
+
+192
+00:08:26,602 --> 00:08:30,698
+又能像传统零日到期信用价差交易者那样拿到相同的权利金。
+amount of credits that a traditional zero DTE credit spreads trader would run.
+
+193
+00:08:30,800 --> 00:08:34,194
+因为现在，如果我平掉这个交易，
+Because even now, if I was to close this trade out, being up 200
+
+194
+00:08:34,194 --> 00:08:35,760
+我们说话这时候已经盈利200美元，
+bucks right now, as we're talking,
+
+195
+00:08:35,760 --> 00:08:39,937
+这基本就是零日到期看跌信用价差能赚的金额。
+that is essentially how much someone would have made from the zero DTE put credit spread.
+
+196
+00:08:40,500 --> 00:08:42,200
+而且市场还在继续下跌。
+And the market is continuing to go lower.
+
+197
+00:08:42,200 --> 00:08:46,900
+但如果我做信用价差，现在可能已经亏了几百美元。
+However, if I ran the credit spread, I would actually be down probably a couple hundred dollars right now.
+
+198
+00:08:47,200 --> 00:08:50,766
+如果你懂技术分析，当我开这个仓时，
+If you know anything about technical analysis, when I open up this
+
+199
+00:08:50,766 --> 00:08:53,143
+假设市场从4770点这个关键位回弹，
+trade, let's just say the markets did bounce
+
+200
+00:08:53,143 --> 00:08:57,304
+这个位置与SPY（标普500ETF）的475点位叠加。
+back up off of that key level of 4770, which coincides with 475 on the SPY.
+
+201
+00:08:58,300 --> 00:09:01,800
+如果市场真的反弹，它可能会在VWAP（成交量加权平均价）附近止步。
+If the market did bounce, it probably would have stalled out around VWAP.
+
+202
+00:09:01,900 --> 00:09:04,937
+即使它涨得更高，
+And then even if it got higher, it probably would have stalled
+
+203
+00:09:04,937 --> 00:09:06,962
+可能也会在两日锚定VWAP附近止步，
+out around the two-day anchored VWAP, or it
+
+204
+00:09:06,962 --> 00:09:09,999
+或者很可能在开盘区间附近止步。
+more than likely would have stalled out right at the opening range.
+
+205
+00:09:10,100 --> 00:09:11,400
+这只是常规的价格走势。
+That's just general price action.
+
+206
+00:09:11,500 --> 00:09:16,900
+如果你对开盘区间不了解，它可能是最古老的日内交易策略之一。
+If you don't know anything about the opening range, it's probably one of the oldest day trading strategies out there.
+
+207
+00:09:17,000 --> 00:09:19,363
+所以这一点总是很重要，
+So it's always important to take note of that, which
+
+208
+00:09:19,363 --> 00:09:21,726
+这也是为什么，每当你看到开盘区间突破时，
+is why whenever you see an opening range break, especially
+
+209
+00:09:21,726 --> 00:09:23,144
+尤其是在成交量放大的情况下，
+with increased volume, you'll see a
+
+210
+00:09:23,144 --> 00:09:24,562
+你会发现很多交易者会
+lot of other traders will come
+
+211
+00:09:24,562 --> 00:09:27,398
+会进场推动价格，进一步加强动能。
+in and try to really accelerate price, really add to the momentum.
+
+212
+00:09:27,500 --> 00:09:29,100
+现在的情况正是如此。
+And that's what's happening here in this case.
+
+213
+00:09:29,400 --> 00:09:30,200
+希望这段视频对你们有帮助。
+Hopefully this video helps.
+
+214
+00:09:30,300 --> 00:09:31,322
+希望你们能
+Hopefully you guys are getting
+
+215
+00:09:31,322 --> 00:09:32,344
+多一些了解
+a little bit more context
+
+216
+00:09:32,344 --> 00:09:34,798
+不同的交易风格。
+of different types of styles of trading as there are out there.
+
+217
+00:09:35,000 --> 00:09:36,400
+这样我也能稍微轻松一点。
+And it makes it a little bit easier for me.
+
+218
+00:09:36,500 --> 00:09:38,785
+显然，如果我买看跌期权，
+Obviously, if I grab the put, I would probably up
+
+219
+00:09:38,785 --> 00:09:41,299
+用同样资金可能赚几千美元。
+a couple thousand dollars just using the same amount of capital.
+
+220
+00:09:41,300 --> 00:09:43,300
+那我们来看一下：
+So if we were to take a look at that,
+
+221
+00:09:43,300 --> 00:09:46,300
+我持有4手，之前提到过。
+let's see, I'm in four of these. As we mentioned before, so four of them.
+
+222
+00:09:46,300 --> 00:09:51,800
+我用了1700美元，想看看如果买看跌期权会怎样。
+So I'm using $1,700 out of curiosity if I were to take a look at what a put was going for.
+
+223
+00:09:51,800 --> 00:09:53,300
+就假设是买入看跌期权。
+So just say long put.
+
+224
+00:09:54,100 --> 00:09:55,300
+我们来看标普500指数。
+Let's go to the SPX.
+
+225
+00:09:55,900 --> 00:10:02,500
+再看看今天早些时候，1700或1800美元的看跌期权能带来什么收益。
+And then let's see what a $1,700, $1,800 put would have gotten me earlier here today.
+
+226
+00:10:02,500 --> 00:10:03,500
+就假设是这一个。
+So let's just say this one.
+
+227
+00:10:03,600 --> 00:10:10,000
+来看一下。我入场时，市场已经下跌了。
+Let's grab. At the time in which I entered that trade, the market had already sold off.
+
+228
+00:10:10,000 --> 00:10:11,673
+但如果我们回到今天早些时候，
+But if we were taking a look
+
+229
+00:10:11,673 --> 00:10:13,346
+当我们
+at earlier in the day when we
+
+230
+00:10:13,346 --> 00:10:14,780
+从这个关键点位反弹时，
+rejected off of this key strike
+
+231
+00:10:14,780 --> 00:10:16,214
+因为我们从
+right here because we rejected off
+
+232
+00:10:16,214 --> 00:10:17,648
+两日锚定VWAP（成交量加权平均价）处反弹，
+of the two-day anchored VWAP, this
+
+233
+00:10:17,648 --> 00:10:19,799
+那个位置还有几个叠加支撑/阻力位。
+was also a couple of confluences at that level.
+
+234
+00:10:20,400 --> 00:10:22,900
+是的，这笔交易本质上能赚同样多的钱。
+Yes, this trade would have essentially made the same amount of money.
+
+235
+00:10:23,100 --> 00:10:24,900
+或者说我选了一个稍微不同的。
+Or let's just say I went with something a little bit.
+
+236
+00:10:25,700 --> 00:10:26,700
+我们尝试找找。
+Let's try to find.
+
+237
+00:10:27,500 --> 00:10:30,000
+看看类似的看跌期权，
+Put that are similar
+
+238
+00:10:30,100 --> 00:10:31,255
+用同样资金，我们发现
+capital and we see
+
+239
+00:10:31,255 --> 00:10:33,566
+大约在这个位置，用一个估算的
+right around here just using an estimated uh
+
+240
+00:10:33,566 --> 00:10:35,299
+位置在这里，所以你
+uh place right here so you
+
+241
+00:10:35,299 --> 00:10:37,899
+大家看，这笔交易盈利1000美元
+guys can see this is up a thousand dollars
+
+242
+00:10:38,500 --> 00:10:39,900
+入场点位大概在
+and the entry being similar to
+
+243
+00:10:39,900 --> 00:10:41,300
+突破时的价位附近
+around here just when we broke
+
+244
+00:10:41,300 --> 00:10:42,700
+当日最低点附近，或者我
+the low of day or i'm
+
+245
+00:10:42,700 --> 00:10:44,800
+只是取了个平均值 这只是用来
+just averaging it out again this is just for
+
+246
+00:10:45,200 --> 00:10:46,020
+做对比的 因为
+it's for comparison because
+
+247
+00:10:46,020 --> 00:10:47,250
+有时候我觉得这样做很重要
+sometimes i think that's important to
+
+248
+00:10:47,250 --> 00:10:48,890
+所以 是的，这笔交易盈利
+see so yes this trade is up a
+
+249
+00:10:48,890 --> 00:10:50,530
+1000美元 但SPY（标普500ETF）只需
+thousand dollars however all the spy would have
+
+250
+00:10:50,530 --> 00:10:51,922
+触及这个价位
+had to do is just hit this
+
+251
+00:10:51,922 --> 00:10:53,314
+然后轻微反弹
+level and then just bounce just a
+
+252
+00:10:53,314 --> 00:10:54,507
+甚至不用涨那么多 反弹50美分左右就行
+little bit like that not even
+
+253
+00:10:54,507 --> 00:10:57,093
+那笔零日到期的看跌期权
+go that far bounce maybe 50 cents or so and that zero dte put
+
+254
+00:10:57,900 --> 00:10:59,619
+可能会亏30% 如果是
+would be down probably 30 so if it's
+
+255
+00:10:59,619 --> 00:11:01,584
+1000美元的交易 那笔看跌期权
+a thousand dollar trade that put will be
+
+256
+00:11:01,584 --> 00:11:03,303
+可能瞬间亏300美元 甚至
+down 300 bucks in a heartbeat and even
+
+257
+00:11:03,303 --> 00:11:04,776
+如果你在突破
+if the put was purchased you
+
+258
+00:11:04,776 --> 00:11:06,249
+当日最低点或昨天最低点时
+know right at the break of
+
+259
+00:11:06,249 --> 00:11:08,705
+买入看跌期权
+the low of day or yesterday's low of day break
+
+260
+00:11:09,600 --> 00:11:11,251
+它只需要
+all it would have to do is just
+
+261
+00:11:11,251 --> 00:11:12,902
+下跌后快速反弹
+wick down and bounce right back up and
+
+262
+00:11:12,902 --> 00:11:14,347
+你就可能亏300美元 所以我不喜欢
+then you're down 300 bucks so i don't
+
+263
+00:11:14,347 --> 00:11:15,998
+在这些情况下交易
+really like trading in those types of scenarios
+
+264
+00:11:15,998 --> 00:11:16,823
+不过 如果我
+however if i did
+
+265
+00:11:16,823 --> 00:11:18,474
+今天早些时候在这里买入看跌期权
+grab the put here earlier today that would
+
+266
+00:11:18,474 --> 00:11:19,712
+那会是另一种情况 因为
+have been a different story because
+
+267
+00:11:19,712 --> 00:11:22,189
+风险会低很多 那里有叠加支撑/阻力位
+the risk would have been much lower there was confluence up there
+
+268
+00:11:23,100 --> 00:11:28,100
+大家看，这是Quant Trading应用的零日到期SPY期权成交量图
+As we can see right here, this is the Quant Trading app, zero DTE spy option volume chart.
+
+269
+00:11:28,100 --> 00:11:30,400
+它会自动绘制这些价位，并刷新
+So it plots these levels automatically and it will refresh.
+
+270
+00:11:30,900 --> 00:11:32,340
+如果你打开自动刷新
+If you turn on the auto refresh and
+
+271
+00:11:32,340 --> 00:11:35,400
+大家看这里，这是SPY（标普500ETF）的第一大看涨期权点位。
+we saw this level right here, this is the number one call strike here for the spy.
+
+272
+00:11:35,700 --> 00:11:37,300
+这个点位也是之前的超级行权价。
+It was also the previous super strike.
+
+273
+00:11:37,300 --> 00:11:41,900
+这是前一天看涨和看跌期权成交量都最大的行权价。
+This is the strike from the previous day that had a lot of volume for both calls and puts.
+
+274
+00:11:42,100 --> 00:11:45,000
+它也是之前看涨期权成交量最大的点位。
+We can see that it is also the previous number one call volume.
+
+275
+00:11:45,000 --> 00:11:49,500
+而且之前看跌期权成交量最大的点位也在当天的成交量区间内。
+Also the most amount of previous put volume is the volume range for the day.
+
+276
+00:11:49,600 --> 00:11:51,900
+所以4770点位有很多叠加支撑/阻力位。
+So there was a lot of confluence at 4770.
+
+277
+00:11:51,900 --> 00:11:54,300
+但再说一遍，我当时没有寻找做空机会。
+But again, I was not looking for a short trade.
+
+278
+00:11:54,400 --> 00:11:59,100
+顺便说一下，图表上这些信息都是自动绘制的，包括两日锚定VWAP。
+And this is all plotted automatically, by the way, on the charts, as well as the two day anchored VWAP.
+
+279
+00:11:59,200 --> 00:12:02,200
+另外，我们还有前一天的控制点。
+And then we also have. had the previous day's point of control.
+
+280
+00:12:02,300 --> 00:12:03,900
+如果查看QTA的Discord频道，
+If we check out the QTA Discord, for
+
+281
+00:12:03,900 --> 00:12:05,100
+比如，你们可以在这里看到，
+example, you guys can see right
+
+282
+00:12:05,100 --> 00:12:07,500
+这就是我在这里开仓的时机。
+here, this is when, you know, I opened a trade right here.
+
+283
+00:12:07,900 --> 00:12:11,500
+今天早些时候，市场开盘10分钟后，
+And then earlier in the day here today, we see 10 minutes into the market open.
+
+284
+00:12:11,500 --> 00:12:15,500
+如果现货价格突破两日锚定VWAP和昨天的控制点，我就会尝试做多。
+If the spot gets above the two-day anchored VWAP in yesterday's POC, I'll take a shot at being long.
+
+285
+00:12:15,500 --> 00:12:17,000
+这基本就是我在等的信号。
+So that's essentially what I was waiting for.
+
+286
+00:12:17,000 --> 00:12:19,800
+我希望价格突破这个行权价后做多。
+I wanted us to get above this strike price to get long.
+
+287
+00:12:19,900 --> 00:12:21,100
+这就是我当时唯一寻找的机会。
+That was all I was looking for.
+
+288
+00:12:21,100 --> 00:12:22,717
+我其实并没有
+I wasn't really looking for a
+
+289
+00:12:22,717 --> 00:12:24,334
+寻找做空机会。因此我没有做空，
+short. Therefore, I did not take
+
+290
+00:12:24,334 --> 00:12:27,299
+但清楚这个点位可以用来做多。
+a short, but was aware of the level to be long.
+
+291
+00:12:27,600 --> 00:12:29,234
+我认为这很重要，
+And that's something I think is
+
+292
+00:12:29,234 --> 00:12:31,413
+关键是要识别出关键点位，然后
+important is identifying your key levels and then
+
+293
+00:12:31,413 --> 00:12:33,047
+等价格突破或跌破这些点位后再采取行动。
+waiting for price action to either
+
+294
+00:12:33,047 --> 00:12:35,498
+突破这些位置再做反应。
+get above or below those levels before you react.
+
+295
+00:12:35,600 --> 00:12:36,613
+这就是这里。
+This is it right
+
+296
+00:12:36,613 --> 00:12:38,639
+为什么我们要等价格突破
+here. Why we wait for price to get
+
+297
+00:12:38,639 --> 00:12:40,159
+两日锚定VWAP
+above the two-day anchored VWAP in
+
+298
+00:12:40,159 --> 00:12:43,199
+和前一天的控制点，尤其是在这种波动剧烈的行情中。
+the previous day's POC in this type of pricey choppy price action.
+
+299
+00:12:43,600 --> 00:12:44,900
+这是昨天的控制点。
+This is yesterday's POC.
+
+300
+00:12:45,000 --> 00:12:46,200
+这是两日锚定VWAP。
+This is the two-day anchored VWAP.
+
+301
+00:12:46,400 --> 00:12:50,800
+价格没能突破这两个点位，所以我没做多。
+Price did not get above those two strike prices. Therefore, I did not go long.
+
+302
+00:12:51,400 --> 00:12:52,982
+再次强调，只是想多给大家
+Again, just trying to provide a little
+
+303
+00:12:52,982 --> 00:12:54,564
+补充一点背景，
+bit more context for you guys, trying
+
+304
+00:12:54,564 --> 00:12:56,598
+让你们接触不同的交易风格。
+to expose you guys to different styles of trading.
+
+305
+00:12:56,900 --> 00:12:58,816
+现在可能进入支撑区间，我会
+And now that we're potentially in the support zone, I'm
+
+306
+00:12:58,816 --> 00:12:59,966
+观察是否有
+going to wait to see if
+
+307
+00:12:59,966 --> 00:13:01,307
+15分钟K线收盘的信号。
+there's some sort of 15 minute candle close.
+
+308
+00:13:01,600 --> 00:13:03,200
+成交量在增加，这是个好现象。
+I like that volume is increasing.
+
+309
+00:13:03,500 --> 00:13:05,433
+可能这是最后一批空头
+Maybe that is the last bit of shorts
+
+310
+00:13:05,433 --> 00:13:06,883
+现在寻找
+now looking to cover on what
+
+311
+00:13:06,883 --> 00:13:09,299
+年终平仓的好时机。
+is a great end of the year shorts for them.
+
+312
+00:13:09,600 --> 00:13:11,916
+但我想卖出
+But I would like the idea of selling
+
+313
+00:13:11,916 --> 00:13:14,232
+一些极低盈利概率(POP)的看跌期权，
+some sort of very low probability puts and
+
+314
+00:13:14,232 --> 00:13:16,838
+可能为今天进一步提升盈亏。
+potentially adding even more P&L to the day
+
+315
+00:13:16,838 --> 00:13:18,575
+因为我不需要
+as I don't really need to
+
+316
+00:13:18,575 --> 00:13:23,497
+过度担心这个蝶式价差，因为标普500指数在4790点位以上收盘的概率
+worry so much about this butterfly spread because now the odds of the SPX actually closing above 4790
+
+317
+00:13:23,800 --> 00:13:26,900
+已经更低了，因为如果拉远看，
+become even less likely because if we zoom out here
+
+318
+00:13:28,000 --> 00:13:30,000
+在标普500指数上，我们来看看。
+And actually on the SPX, let's see.
+
+319
+00:13:30,000 --> 00:13:32,500
+它现在需要反弹多少才能回到那里。
+how much it would now have to rally all the way back up here.
+
+320
+00:13:32,500 --> 00:13:34,500
+需要反弹约0.65%。
+It has to rally about 0.65%.
+
+321
+00:13:35,000 --> 00:13:38,900
+现在是东部时间11:30，交易日还剩约4个半小时。
+It's 11.30 Eastern time, so there's about four and a half hours left in the trading day.
+
+322
+00:13:39,000 --> 00:13:42,900
+是的，什么都可能发生，所以我下麦后再做决定。
+Yes, anything can happen, so I'll make that decision once I get off this mic right now.
+
+323
+00:13:43,000 --> 00:13:43,723
+如果你喜欢这个视频，
+If you enjoyed the
+
+324
+00:13:43,723 --> 00:13:44,446
+请在下方留言、点赞，
+video, leave a comment
+
+325
+00:13:44,446 --> 00:13:46,798
+下次直播见。
+down below, like it, and I'll catch you guys in the next one.
+
+326
+00:13:46,900 --> 00:13:47,300
+保重。
+Take care.
+
+===== END AFTER_OPTIMIZE =====

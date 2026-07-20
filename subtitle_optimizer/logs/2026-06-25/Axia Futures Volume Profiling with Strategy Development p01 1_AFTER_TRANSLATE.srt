@@ -1,0 +1,5752 @@
+===== AFTER_TRANSLATE (1150 entries) =====
+1
+00:00:02,200 --> 00:00:06,040
+成交量分布分析（Volume Profiling），模块1：学徒阶段
+Volume Profiling, Module 1, The Apprenticeship
+
+2
+00:00:06,040 --> 00:00:09,560
+欢迎来到模块1。
+Welcome to Module 1.
+
+3
+00:00:09,960 --> 00:00:11,740
+模块的结构是什么样的？
+What does the structure look like for the module?
+
+4
+00:00:12,300 --> 00:00:13,280
+非常简单。
+It's very simple.
+
+5
+00:00:13,820 --> 00:00:18,960
+它被分为五个核心要素，这五个要素会贯穿模块1的全部四个部分。
+It's broken down into five key elements that you'll find across all four parts of Module 1.
+
+6
+00:00:19,540 --> 00:00:22,080
+第一个要素是理论原则。
+The first element is Theoretical Principles.
+
+7
+00:00:22,540 --> 00:00:25,360
+每个部分都将以理论原则开始。
+Every part will begin with Theoretical Principles.
+
+8
+00:00:26,040 --> 00:00:30,780
+完成理论原则后，我们将进入实战案例。
+Once we've completed those Theoretical Principles, we'll then have Practical Examples.
+
+9
+00:00:30,780 --> 00:00:35,540
+在模块1中，理论原则共有19个。
+Now, across Module 1, there are in total 19 Theoretical Principles.
+
+10
+00:00:36,380 --> 00:00:41,500
+在每个部分的末尾，我们将提供学习视频和总结视频。
+At the end of each part, we're going to have Learning Videos and a Summary Video.
+
+11
+00:00:41,960 --> 00:00:46,560
+这是为了确保您理解每个部分中所讲授的原则。
+This is to ensure that you understand the principles that we've taught throughout each part.
+
+12
+00:00:47,080 --> 00:00:50,540
+学习视频和总结视频共有10个。
+In total, there'll be 10 of these Learning Videos and Summary Videos.
+
+13
+00:00:51,220 --> 00:00:53,420
+接下来是分布回放。
+We'll then have Profile Replay.
+
+14
+00:00:54,000 --> 00:00:57,954
+分布回放是任意一个交易日的回放，
+The Profile Replay is a replay of any given day
+
+15
+00:00:57,954 --> 00:01:01,117
+是历史数据的回放，您可以暂停、播放、
+that's backdated whereby we can stop, start, and
+
+16
+00:01:01,117 --> 00:01:06,258
+或在成交量分布在各个价格上形成时暂停任意交易日。
+pause any given day as the Profile is being distributed across various prices.
+
+17
+00:01:06,720 --> 00:01:10,880
+这让我们可以实时查看模式，
+This allows us to view patterns in real time and
+
+18
+00:01:10,880 --> 00:01:14,208
+并确保我们能捕捉到
+ensure we're picking up on the various characteristics
+
+19
+00:01:14,208 --> 00:01:19,200
+在任意交易日分布形成过程中发现的各种特征。
+that you find whilst a distribution is occurring on any given day.
+
+20
+00:01:20,160 --> 00:01:23,560
+接下来，在每个部分的末尾，我们将有概念检测。
+We'll then have a Concept Checker at the end of each part.
+
+21
+00:01:23,900 --> 00:01:29,560
+同样，概念检测是为了确保您理解每个部分中所讲授的所有原则。
+Again, the Concept Checker is to ensure that you've understood all the principles taught throughout each part.
+
+22
+00:01:29,960 --> 00:01:35,020
+最后，在每个部分的末尾，将有操作手册条目。
+And last, but not least, at the end of every part, there will be a Playbook Entry.
+
+23
+00:01:35,360 --> 00:01:37,592
+操作手册将提供给您，
+This playbook will be provided to you and
+
+24
+00:01:37,592 --> 00:01:39,266
+您需要完成
+you will then have to complete
+
+25
+00:01:39,266 --> 00:01:41,498
+才能进入下一个部分。
+it before moving on to the next section.
+
+26
+00:01:41,680 --> 00:01:45,340
+在模块1中，操作手册条目共有9个。
+In total, there'll be nine Playbook Entries throughout Module 1.
+
+27
+00:01:45,520 --> 00:01:46,120
+祝您好运。
+Good luck.
+
+28
+00:01:47,860 --> 00:01:52,460
+大家好。欢迎来到成交量分布分析课程，模块1。
+Hi guys. So again, welcome to the Volume Profiling Course, Module 1.
+
+29
+00:01:52,640 --> 00:01:55,300
+这是模块1的目录样式。
+This is what the index is going to look like for Module 1.
+
+30
+00:01:55,440 --> 00:01:57,760
+如您所见，它由四个部分组成。
+As you can see, it comprises of four parts.
+
+31
+00:01:58,140 --> 00:02:01,826
+第一部分，我们将首先讨论
+Part 1, we're going to start off and talk about
+
+32
+00:02:01,826 --> 00:02:04,693
+为何95%的交易者亏损，
+why 95% of traders lose money, why professional
+
+33
+00:02:04,693 --> 00:02:07,560
+为何专业交易者使用成交量分布分析，
+traders use Volume Profiling, what is Volume
+
+34
+00:02:07,560 --> 00:02:09,607
+什么是成交量分布分析，
+Profiling, the future of Volume
+
+35
+00:02:09,607 --> 00:02:11,654
+成交量分布分析作为工具的未来，
+Profiling as a tool, the
+
+36
+00:02:11,654 --> 00:02:13,701
+优势的定义，
+definition of edge, steps for
+
+37
+00:02:13,701 --> 00:02:16,977
+成交量分布分析成功的步骤，以及客观与主观分析的区别。
+Volume Profiling success, and objective versus subjective analysis.
+
+38
+00:02:17,800 --> 00:02:20,254
+第二部分，我们将继续
+In Part 2, we're going to move
+
+39
+00:02:20,254 --> 00:02:22,299
+讨论关键的
+on and talk about key
+
+40
+00:02:22,299 --> 00:02:26,389
+市场参与者、时间框架参与者，以及交易拍卖流程。
+market participants, time frame participants, and the trading auction process.
+
+41
+00:02:26,800 --> 00:02:27,383
+第三部分，我们将讨论
+Part 3, then, we will talk
+
+42
+00:02:27,383 --> 00:02:28,083
+成交量分布图和
+about the Volume Profile and the
+
+43
+00:02:28,083 --> 00:02:30,066
+交易拍卖流程。第三部分，我们将讨论成交量分布图和交易拍卖流程。
+trading auction process. Part 3, then, we will talk about the Volume Profile and the trading auction process.
+
+44
+00:02:30,300 --> 00:02:33,020
+我将讨论成交量分布图作为
+I will talk about Volume Profile as a
+
+45
+00:02:33,020 --> 00:02:34,380
+交易工具，成交量分布图
+trading tool, Volume Profile
+
+46
+00:02:34,380 --> 00:02:38,800
+的度量指标，以及传统价值区域与成交量价值区域的争议。
+Metrics, and then the argument between Traditional Value Area versus Volume Value areas.
+
+47
+00:02:40,480 --> 00:02:42,945
+第四部分，我们将讨论
+Part 4, we are going to talk about
+
+48
+00:02:42,945 --> 00:02:45,410
+成交量分布分析的异常现象，
+Volume Profiling Anomalies, the process of Trading
+
+49
+00:02:45,410 --> 00:02:47,875
+使用成交量分布分析进行交易的流程，
+with Volume Profiling, the basic Volume Profile
+
+50
+00:02:47,875 --> 00:02:49,988
+基础成交量分布图
+Trade Setup, choosing your Volume Profile
+
+51
+00:02:49,988 --> 00:02:51,396
+交易信号，选择你的成交量分布图
+software provider, and then
+
+52
+00:02:51,396 --> 00:02:53,509
+软件提供商，
+setting up Profiles using Trading technology
+
+53
+00:02:53,509 --> 00:02:55,622
+然后使用交易技术
+charts and then the rules to
+
+54
+00:02:55,622 --> 00:02:59,143
+图表设置成交量分布图，以及在交易领域取得成功的规则。寻找合格的交易币种。
+succeed in the trading arena. Finding a qualified trading coin.
+
+55
+00:02:59,500 --> 00:03:00,160
+Keller交易。
+Keller trading.
+
+56
+00:03:00,300 --> 00:03:04,575
+如您所见，这是一个关于成交量分布分析相当全面的概述，
+As you can see, it's quite a big overview of volume profiling,
+
+57
+00:03:04,575 --> 00:03:08,850
+但完成这四个部分后，
+but once you complete all four parts, you'll have a very good
+
+58
+00:03:08,850 --> 00:03:11,700
+你将对成交量分布分析的基本概念有非常好的理解。
+understanding of the basic concept of volume profiling.
+
+59
+00:03:12,160 --> 00:03:17,660
+完成本模块后，你将能够做到以下几点。
+By the end of this module, you'll be able to do the following.
+
+60
+00:03:18,460 --> 00:03:25,160
+理解为何专业交易者将成交量分布分析作为首选交易工具。
+Understand why professional traders use volume profiling as their preferred choice of trading tool.
+
+61
+00:03:25,920 --> 00:03:31,160
+你能区分主观与客观的市场分析。
+You'll be able to define between subjective and objective market analysis.
+
+62
+00:03:31,160 --> 00:03:37,780
+通过我提供的逐步流程，开发你自己的交易优势。
+Develop your own trading edge by following a step-by-step process that I will provide you with.
+
+63
+00:03:38,720 --> 00:03:42,259
+你能识别不同时间框架的参与者，但
+You'll be able to identify various time frame participants, but
+
+64
+00:03:42,259 --> 00:03:46,859
+更重要的是，理解这些时间框架参与者何时以及为何进入市场。
+more importantly, understand when and why those time frame participants enter the market.
+
+65
+00:03:48,320 --> 00:03:51,900
+解读定义拍卖过程的关键原则。
+Interpret the key principles that define the auction process.
+
+66
+00:03:53,060 --> 00:03:58,540
+能够识别并应用成交量分布图的关键指标。
+Be able to identify and apply the key metrics of the volume profile.
+
+67
+00:04:00,420 --> 00:04:01,160
+识别并确认成交量分布图的关键指标。识别并确认成交量分布图的关键指标。
+Recognize and identify the key metrics of the volume profile. Recognize and identify the key metrics of the volume profile.
+
+68
+00:04:01,420 --> 00:04:03,700
+利用成交量分布图的异常情况。
+Utilize volume profile anomalies.
+
+69
+00:04:05,080 --> 00:04:10,140
+将成交量分布图作为首选工具，开发交易流程。
+Develop a process of trading with volume profile as your preferred tool.
+
+70
+00:04:12,560 --> 00:04:19,440
+最后，回答每部分末尾的问题，并能更新你自己的交易操作手册。
+Lastly, answer the questions at the end of each part and be able to update your own trading playbook.
+
+71
+00:04:20,019 --> 00:04:23,940
+总计，模块一需要大约10个半小时。
+In total, module one should take you roughly ten and a half hours.
+
+72
+00:04:24,200 --> 00:04:26,650
+现在，我已将每个部分
+Now what I've done is I've broken down
+
+73
+00:04:26,650 --> 00:04:28,794
+拆分为各个要素，并
+each part into its various elements and
+
+74
+00:04:28,794 --> 00:04:30,938
+为你提供了分配的指导时长。
+given you a guided amount of allocations.
+
+75
+00:04:32,120 --> 00:04:35,820
+你需要设定时间来完成应用部分的学习。
+You'll need to set a time to knock down the application amount.
+
+76
+00:04:36,240 --> 00:04:40,800
+多亏这个数字，你可以在获取信息后核对你的待办清单。
+And thanks to that number you'll be able to check on your wait list once you've taken that information.
+
+77
+00:04:45,020 --> 00:04:50,120
+最后但同样重要，在打印前为项目再增加2小时。
+Last but not least, add two more hours to the project before printing.
+
+78
+00:04:50,800 --> 00:04:53,640
+这就是提交完成的时候。
+This is when the предлагation is done.
+
+79
+00:04:54,200 --> 00:04:58,160
+现在，我们将看到从这个演示文稿进入是多么容易。
+Now, we're going to see how easy it is to enter from this presentation.
+
+80
+00:04:59,040 --> 00:05:00,520
+现在，在 allez 那里有这样的内容。
+Now, in allez There's stuff like that.
+
+81
+00:05:00,520 --> 00:05:02,336
+概念检测30分钟，以及
+concept checker 30 minutes and the
+
+82
+00:05:02,336 --> 00:05:04,516
+操作手册条目1小时，第四部分
+playbook entry one hour and part
+
+83
+00:05:04,516 --> 00:05:06,332
+理论原则40分钟，第四部分
+four principles 40 and part four
+
+84
+00:05:06,332 --> 00:05:08,512
+应占用你3小时，
+should take you three hours and
+
+85
+00:05:08,512 --> 00:05:09,965
+理论原则45分钟，
+15 minutes principles 45 minutes the
+
+86
+00:05:09,965 --> 00:05:11,781
+总结和概念检测30分钟
+summary and concept checker 30 minutes
+
+87
+00:05:11,781 --> 00:05:16,141
+以及操作手册条目2小时，最重要的是，大家别匆忙完成
+and the playbook entry two hours most important guys don't rush through
+
+88
+00:05:17,960 --> 00:05:21,113
+每个章节，花大量时间，特别是
+each section spend a lot of time particularly
+
+89
+00:05:21,113 --> 00:05:24,266
+在你的操作手册上，因为这会巩固
+on your playbook as this will reinforce the
+
+90
+00:05:24,266 --> 00:05:27,419
+你所学的原则，更重要的是，这本操作手册将
+principles you've learned more importantly this playbook will
+
+91
+00:05:27,419 --> 00:05:30,572
+陪伴你度过余下的
+go through you for the rest of your
+
+92
+00:05:30,572 --> 00:05:37,273
+交易生涯 当你持续发展和成长 大家好 第一部分 为何95%的交易者亏损
+trading career as you continue to develop and evolve hi guys part one why 95 of traders lose
+
+93
+00:05:37,670 --> 00:05:43,910
+这是我会与任何年轻交易者或
+money now this is one of the first discussions i would have with any young trader or any of
+
+94
+00:05:43,910 --> 00:05:46,631
+我会指导的交易者首先讨论的内容
+the guys i would mentor and the reason i go over this
+
+95
+00:05:46,631 --> 00:05:49,352
+我先讲这个的原因是 我几乎想要
+first is i almost want to get rid of a lot of
+
+96
+00:05:49,352 --> 00:05:52,073
+摒除交易环境中
+these uh hidden you know fallacies uh you know within the trading
+
+97
+00:05:52,073 --> 00:05:53,433
+很多隐藏的
+environment you know i think a
+
+98
+00:05:53,433 --> 00:05:55,246
+谬误或误解 我认为
+lot of people seem to think or there's
+
+99
+00:05:55,246 --> 00:05:56,606
+很多人似乎认为 或存在一种错觉 认为交易很容易
+this illusion that trading is easy
+
+100
+00:05:56,606 --> 00:06:00,007
+但事实并非如此 这正是我们下一个视频要讲的
+but it's not and that's exactly what we're going to see in our next video
+
+101
+00:06:00,030 --> 00:06:02,167
+容易 并且能快速赚很多钱
+easy and you can make a lot of
+
+102
+00:06:02,167 --> 00:06:04,304
+而且认为 这是
+money quick and you know that it's it's
+
+103
+00:06:04,304 --> 00:06:05,639
+一份非常有趣的工作
+an amazingly fun job and
+
+104
+00:06:05,639 --> 00:06:07,508
+所以 对我来说 这个话题
+so for me this this topic is
+
+105
+00:06:07,508 --> 00:06:09,110
+很早就讨论非常重要
+very important to discuss early on
+
+106
+00:06:09,110 --> 00:06:11,246
+这样我可以把你
+so that i can kind of just bring
+
+107
+00:06:11,250 --> 00:06:17,662
+拉回现实 现在 有几个关键特征
+you back to reality now there's a couple of key characteristics that define the 95 of people that that fail
+
+108
+00:06:17,662 --> 00:06:20,699
+定义了那95%失败的人
+so in essence if we knew why 95 of people
+
+109
+00:06:20,699 --> 00:06:22,724
+所以本质上 如果我们知道为何95%的人
+fail so long as we don't
+
+110
+00:06:22,724 --> 00:06:24,749
+失败 只要我们不
+do that so long as we
+
+111
+00:06:24,749 --> 00:06:26,774
+这样做 只要我们
+avoid those pitfalls surely by that
+
+112
+00:06:26,774 --> 00:06:29,811
+避开这些陷阱 那么根据定义
+definition we should then be part of the five
+
+113
+00:06:30,490 --> 00:06:35,510
+我们就应成为成功的5% 那么这些特征是什么呢 首先是过度交易
+percent that succeed so what are these characteristics well first and foremost is over
+
+114
+00:06:35,510 --> 00:06:41,854
+现在我要说的可能有点反直觉 但
+trading now what i'm going to say is going to sound a little bit counterintuitive however in the beginning of
+
+115
+00:06:41,854 --> 00:06:45,026
+在你职业生涯初期 当你开始交易 当你学习市场
+your career when you start trading when you're learning about
+
+116
+00:06:45,026 --> 00:06:51,370
+试图理解市场时 本质上你需要稍微过度交易一下
+the markets trying to understand the markets in essence you need to over trade a little bit why because the
+
+117
+00:06:51,370 --> 00:06:52,008
+为什么 因为
+quicker you make mistakes
+
+118
+00:06:52,008 --> 00:06:52,805
+你犯错越快
+the more often you make
+
+119
+00:06:52,805 --> 00:06:53,602
+你犯错的次数越多
+mistakes the more often you
+
+120
+00:06:53,602 --> 00:06:54,399
+你犯错的次数越多
+make mistakes and the more
+
+121
+00:06:54,399 --> 00:06:55,196
+你犯错的次数越多，
+often you make mistakes and
+
+122
+00:06:55,196 --> 00:06:55,993
+你犯错的次数就越多，
+the more often you the
+
+123
+00:06:55,993 --> 00:06:57,747
+你就能越快从这些错误中学习。
+quicker you're going to be able to learn from those mistakes.
+
+124
+00:06:58,410 --> 00:07:03,410
+所以作为新手交易者，要积极进取，要果断，对吗？
+So as a trader in the beginning, be aggressive, be assertive, right?
+
+125
+00:07:03,490 --> 00:07:07,650
+但要在模拟账户上操作，要在非真实资金的账户上操作。
+But do this on a demo account. Do this on an account that is not real money.
+
+126
+00:07:08,670 --> 00:07:14,790
+一旦你犯过这些错误，一旦你进入用真实资金的实盘市场，我们就不再过度交易。
+Once you've made those mistakes, once you enter the live market with real money, we no longer overtrade.
+
+127
+00:07:14,790 --> 00:07:18,790
+我们要做的是，利用我们的优势，利用我们的策略并执行它。
+What we do is we take our edge, we take our strategy and implement it.
+
+128
+00:07:19,070 --> 00:07:23,130
+我们不会在市场中强行推行新策略，我们不会强行进入市场。
+We don't force new strategies in the market. We don't force ourselves in the market.
+
+129
+00:07:23,130 --> 00:07:25,890
+所以第一个特征是过度交易。
+So the first characteristic is overtrading.
+
+130
+00:07:26,490 --> 00:07:29,930
+第二个特征是没有明确优势的情况下交易。
+The second characteristic is trading without a defined edge.
+
+131
+00:07:30,590 --> 00:07:34,050
+现在，有很多交易者认为自己有
+Now, a lot of traders out there think they have
+
+132
+00:07:34,050 --> 00:07:34,742
+优势。
+an edge.
+
+133
+00:07:34,742 --> 00:07:37,510
+他们认为自己有优势，因为他们在推特上看到过，
+They think that they bought because they read
+
+134
+00:07:37,510 --> 00:07:39,586
+或者听说
+it on Twitter or they heard
+
+135
+00:07:39,586 --> 00:07:42,008
+有什么新工具出现。
+that there's this new tool out there.
+
+136
+00:07:42,310 --> 00:07:44,270
+然而，那并不是明确的优势。
+However, that's not a defined edge.
+
+137
+00:07:44,630 --> 00:07:46,598
+明确的优势是指，你
+A defined edge is where you
+
+138
+00:07:46,598 --> 00:07:48,566
+观察市场时，有一个逻辑流程，
+look at a market, you have
+
+139
+00:07:48,566 --> 00:07:51,847
+并基于这个流程进行执行。
+a logical process and you execute based on that process.
+
+140
+00:07:51,850 --> 00:07:56,470
+那就是优势，而那就是你成功所必需的。
+That is an edge, and that is what you're required to succeed.
+
+141
+00:07:57,530 --> 00:07:58,479
+现在，很多
+Now, a lot
+
+142
+00:07:58,479 --> 00:08:00,694
+交易者没有明确的
+of traders, they have a no defined
+
+143
+00:08:00,694 --> 00:08:02,592
+优势，因为他们倾向于更主观地交易，
+edge because they tend to trade
+
+144
+00:08:02,592 --> 00:08:04,807
+而不是客观地交易。
+a little bit more subjectively versus objectively.
+
+145
+00:08:04,810 --> 00:08:10,880
+我们稍后会详细讨论这个。情绪化决策。
+And we're going to talk about this a little later on. Emotional decision making.
+
+146
+00:08:11,220 --> 00:08:13,280
+我知道你们很多人之前都经历过这种情况。
+Now, I know a lot of you would have experienced this before.
+
+147
+00:08:13,920 --> 00:08:16,880
+这是大多数新手交易者的关键陷阱之一。
+This is one of the key pitfalls for most new traders.
+
+148
+00:08:17,380 --> 00:08:19,699
+他们进入了一次坏交易，陷入了尴尬的境地。
+They get into a bad trade. They get into a sticky position.
+
+149
+00:08:19,699 --> 00:08:20,278
+他们不确定该
+They're unsure what
+
+150
+00:08:20,278 --> 00:08:20,857
+怎么做，他们
+to do. They
+
+151
+00:08:20,857 --> 00:08:21,436
+不及时平仓，
+don't cut the
+
+152
+00:08:21,436 --> 00:08:22,015
+他们继续持有。
+position. They hold
+
+153
+00:08:22,015 --> 00:08:22,401
+他们
+on. They
+
+154
+00:08:22,401 --> 00:08:22,787
+坚持。
+hold on.
+
+155
+00:08:22,787 --> 00:08:23,366
+他们继续持有。
+They hold on.
+
+156
+00:08:23,366 --> 00:08:24,139
+他们持有头寸。
+They hold the position.
+
+157
+00:08:24,139 --> 00:08:26,071
+接下来，他们会造成更大的损失。
+And the next thing, they do a lot more damage.
+
+158
+00:08:26,420 --> 00:08:29,740
+现在，造成最大伤害的不是财务损失，
+Now, it's not the financial damage that does the most damage.
+
+159
+00:08:30,040 --> 00:08:35,620
+而是心理上的创伤。换句话说，是因错误决策而留下的疤痕。
+It's the psychological damage. In other words, the scar that is developed as a result of a bad decision.
+
+160
+00:08:36,280 --> 00:08:41,539
+因此，情绪化决策是交易者无法完全恢复并最终失败的原因之一。
+So, emotional decision making is one of the reasons why traders never fully recover and eventually fail.
+
+161
+00:08:43,520 --> 00:08:45,900
+自负。我们无需多言。
+Ego. We need not speak about this.
+
+162
+00:08:46,000 --> 00:08:47,535
+如果你是交易者，在某种程度上，
+If you're a trader, to an extent,
+
+163
+00:08:47,535 --> 00:08:49,070
+你可能需要有一点
+you probably need to have a little
+
+164
+00:08:49,070 --> 00:08:53,018
+自负。你需要对自己的能力有一点确信和自信。
+bit of an ego. You need to have a little bit of surety and confidence in your ability.
+
+165
+00:08:53,020 --> 00:08:57,240
+然而，这需要被适当地管理。
+However, this needs to be sort of managed.
+
+166
+00:08:57,240 --> 00:09:00,740
+有自信可以，但不能过度自信。
+It's okay to be confident but not be overconfident.
+
+167
+00:09:00,740 --> 00:09:03,855
+当你偏离自己惯用的方式，
+The minute you step out of the realm of what you used
+
+168
+00:09:03,855 --> 00:09:05,932
+当你开始交易比以往更大的仓位，
+to do, the minute you start trading more
+
+169
+00:09:05,932 --> 00:09:08,009
+或者你开始松懈，认为自己全都知道，
+size than you used to or you start
+
+170
+00:09:08,009 --> 00:09:09,307
+并停止学习，
+slacking and thinking you know
+
+171
+00:09:09,307 --> 00:09:11,124
+那就是
+it all and stop learning, that is
+
+172
+00:09:11,124 --> 00:09:15,278
+市场追上你，并从你手中夺走金钱的时候。
+when the market catches up with you and that is when the market takes money away
+
+173
+00:09:15,280 --> 00:09:20,620
+然后，就是在解读上花的时间不够。
+from you. Then, not enough time spent on interpretation.
+
+174
+00:09:20,620 --> 00:09:22,300
+我经常看到这种情况。
+I see this all the time, guys.
+
+175
+00:09:22,300 --> 00:09:24,126
+有太多交易者。
+So many traders out there. They
+
+176
+00:09:24,126 --> 00:09:25,952
+他们倾向于观察市场，
+tend to look at the markets
+
+177
+00:09:25,952 --> 00:09:27,778
+然后交易市场，
+and just trade the markets but
+
+178
+00:09:27,778 --> 00:09:29,604
+但他们从不回顾，
+they never actually go back and
+
+179
+00:09:29,604 --> 00:09:31,430
+也不去看自己做过的交易，
+look at the trades they did,
+
+180
+00:09:31,430 --> 00:09:35,996
+看执行情况，看他们如何操作，如何管理某些交易。
+look at the execution, look at how they did things, how they managed certain trades.
+
+181
+00:09:36,000 --> 00:09:39,855
+只有通过管理或至少花时间在
+It's only through managing or at least spending time on
+
+182
+00:09:39,855 --> 00:09:42,939
+你对市场的解读和理解上,
+your interpretation and understanding of the markets are
+
+183
+00:09:42,939 --> 00:09:47,179
+你才能充分发展自己，更重要的是取得成功。
+you going to fully develop yourself and more importantly become successful.
+
+184
+00:09:47,180 --> 00:09:52,800
+他们逆势而为。95%的人最终都在逆势操作。
+They fight trends. 95% of people end up fighting trends.
+
+185
+00:09:52,800 --> 00:09:54,044
+现在，可以
+Now. It's okay to
+
+186
+00:09:54,044 --> 00:09:55,910
+逆势操作。可以
+be a countertrend. It's okay to
+
+187
+00:09:55,910 --> 00:09:57,776
+淡化趋势，但不可以的是
+fade a trend but what it's
+
+188
+00:09:57,776 --> 00:10:00,264
+当你已经识别出
+not okay to do is when you've identified
+
+189
+00:10:00,264 --> 00:10:02,130
+市场中的强势或动能时,
+strength in a market or momentum
+
+190
+00:10:02,130 --> 00:10:04,618
+不可以做淡化趋势的操作。
+in a market, it's not okay to fade.
+
+191
+00:10:04,620 --> 00:10:06,925
+所以记住，可以逆势操作，但要
+So remember, it's fine to go
+
+192
+00:10:06,925 --> 00:10:09,999
+在你清楚知道自己在逆势时
+against the trend but do it when you
+
+193
+00:10:09,999 --> 00:10:15,379
+这样你才能相应地管理好自己。
+understand that you are against the trend so that you can manage yourself accordingly.
+
+194
+00:10:15,380 --> 00:10:16,900
+承受巨额亏损。
+Take big losses.
+
+195
+00:10:16,900 --> 00:10:22,660
+再次强调，作为日内交易者、专业交易者，我们的首要任务是资金管理。
+Again as day traders, as professional traders, our number one job is money management.
+
+196
+00:10:22,660 --> 00:10:24,505
+所以，如果我们没有
+So if we're not managing our
+
+197
+00:10:24,505 --> 00:10:26,350
+正确管理资金，如果我们在单日
+money correctly. If we're losing 10, 20% of
+
+198
+00:10:26,350 --> 00:10:28,195
+亏损了账户的10%、20%，
+our portfolio in any single day,
+
+199
+00:10:28,195 --> 00:10:30,276
+我们永远无法在
+we are never going to succeed in
+
+200
+00:10:30,276 --> 00:10:32,357
+长期中取得成功，因为
+the long term because it's very unlikely
+
+201
+00:10:32,357 --> 00:10:36,817
+交易者在一天内获得20%收益的可能性非常低，或非常罕见。
+or very unusual for a trader to make 20% return on his portfolio in one day.
+
+202
+00:10:38,040 --> 00:10:44,180
+所以记住，如果你一天内赚不了20%，那也不应该一天亏20%。
+So remember, if you're not going to make 20% in one day, you shouldn't be losing 20% in one day.
+
+203
+00:10:44,180 --> 00:10:47,180
+再次强调，这一点非常重要，你们中很多人
+Again, a very important one and a lot
+
+204
+00:10:47,180 --> 00:10:54,680
+听到这话时可能会觉得似曾相识，但完全依赖工具。对吧？
+of you would sort of hear this and you can almost liken to it but complete dependence on tools. Right?
+
+205
+00:10:54,680 --> 00:10:55,905
+你们中很多人
+There's a lot of you
+
+206
+00:10:55,905 --> 00:10:57,130
+似乎认为，拥有
+out there. You seem to
+
+207
+00:10:57,130 --> 00:10:58,355
+这些工具就是你的优势所在。
+think that, you know, having
+
+208
+00:10:58,355 --> 00:11:00,316
+但事实并非如此，伙计们。工具仅仅是参考点。好吗？
+these tools is what gives you the edge.
+
+209
+00:11:00,320 --> 00:11:04,560
+工具只是在告诉你，或为你已接收的信息增加价值。
+It isn't, guys. The tools are merely reference points. Okay?
+
+210
+00:11:04,560 --> 00:11:10,440
+一个工具仅是告诉你或为你已接收的信息增加价值。
+A tool is merely telling you or adding value to the information that you're already receiving.
+
+211
+00:11:10,440 --> 00:11:13,320
+记住，市场是预期定价的。
+Remember, markets are forward pricing.
+
+212
+00:11:13,320 --> 00:11:19,120
+市场总是根据新信息的涌入，重新为自己定价。
+Markets are always, you know, looking to reprice themselves based on new information coming in.
+
+213
+00:11:19,120 --> 00:11:20,322
+所以，一个工具告诉你,
+So a tool that's telling you,
+
+214
+00:11:20,322 --> 00:11:21,524
+比如移动平均线，
+for instance, a moving average, that's
+
+215
+00:11:21,524 --> 00:11:22,726
+它告诉你价格过去在哪里，
+telling you where the price was
+
+216
+00:11:22,726 --> 00:11:24,729
+是在过去20分钟或20个时间周期内的平均价格。对吧？
+on average over the last 20 minutes or 20 time frames. Right?
+
+217
+00:11:25,680 --> 00:11:29,820
+这是滞后信息。市场已经完全定价了。
+That is lagging information. The market's fully priced that.
+
+218
+00:11:29,820 --> 00:11:41,850
+所以记住，工具只是参考点，不能用来做重要决策。
+So just remember, tools are reference points and they're not there to make important decisions on.
+
+219
+00:11:41,850 --> 00:11:44,910
+对确定性的追求。非常重要。
+The search for certainty. Very important.
+
+220
+00:11:44,910 --> 00:11:47,550
+很多交易者总在寻找交易中的精确性。
+A lot of traders are always looking for exactness in trading.
+
+221
+00:11:47,550 --> 00:11:50,030
+他们在寻找完全的确定性。
+They're looking for complete certainty.
+
+222
+00:11:50,030 --> 00:11:56,270
+市场不会给你确定性。市场不会给你保证。它只能提供概率。
+The markets don't offer you certainty. The markets don't offer you guaranteed. They offer you probability.
+
+223
+00:11:56,270 --> 00:11:57,983
+仅仅理解这一点，
+Just knowing this notion, guys,
+
+224
+00:11:57,983 --> 00:12:00,381
+仅仅是远离这种，
+just stepping away from the idea that,
+
+225
+00:12:00,381 --> 00:12:02,779
+这种精确性的想法，几乎
+you know, this exactness, that will almost
+
+226
+00:12:02,779 --> 00:12:06,548
+会让你在交易中表现得更好。
+open you up a little bit to trading a lot better.
+
+227
+00:12:06,550 --> 00:12:10,490
+所以记住，市场只提供概率，而不是确定性。
+So just remember, the markets only offer probabilities, not certainties.
+
+228
+00:12:10,490 --> 00:12:17,490
+而成交量分布分析（Volume Profiling）是对市场活动的全面、客观、事实性、基于上下文的理解。
+Then market profiling is a holistic, objective, factual, context-based understanding of market activity.
+
+229
+00:12:17,490 --> 00:12:18,490
+这意味着什么？
+What does that mean?
+
+230
+00:12:18,490 --> 00:12:21,390
+这意味着市场不在乎你怎么想。
+It means the market doesn't care what you think.
+
+231
+00:12:21,390 --> 00:12:23,490
+市场不在乎你是对是错。
+The market doesn't care whether you're right or wrong.
+
+232
+00:12:23,490 --> 00:12:25,630
+市场不在乎你有多少钱。
+The market doesn't care how much money you got.
+
+233
+00:12:25,630 --> 00:12:31,990
+无论你多聪明、多能干、多高大、多优秀，市场都不在乎。
+It doesn't matter how intelligent you are or how smart or tall or wonderful you are. The market is.
+
+234
+00:12:31,990 --> 00:12:34,650
+它只是价格的上涨和下跌。
+It's purely price going up and down.
+
+235
+00:12:34,650 --> 00:12:40,650
+如果你记住这一点，你会让这份工作比大多数人简单很多。
+If you remember this, guys, you're going to keep this job a lot more simple than most people make it.
+
+236
+00:12:40,650 --> 00:12:46,470
+很多人失败的首要原因是，他们把交易过程复杂化了。
+Number one reason why a lot of people fail is they over-complicate the trading process.
+
+237
+00:12:46,470 --> 00:12:48,801
+记住，价格只能上涨，
+Just remember, price can only go up
+
+238
+00:12:48,801 --> 00:12:51,132
+下跌更难。是我们
+a lot more difficult. It's us that
+
+239
+00:12:51,132 --> 00:12:54,129
+让上涨和下跌变得更复杂。
+makes that up and down a lot more difficult.
+
+240
+00:12:54,130 --> 00:12:57,100
+保持简单。
+Keep it simple.
+
+241
+00:12:57,100 --> 00:12:58,600
+需要强调的是…
+To highlight…
+
+242
+00:12:58,600 --> 00:13:01,367
+要想成功，你必须去做
+To be successful, you have to do
+
+243
+00:13:01,367 --> 00:13:04,530
+95%的人不去做的事，而且要一直坚持
+what 95 per cent of people don't.. do all
+
+244
+00:13:04,530 --> 00:13:08,088
+抱歉，要想成功，你必须
+the time sorry to be successful you have to
+
+245
+00:13:08,088 --> 00:13:10,460
+去做95%的人不去做的事
+do what 95 of people don't do
+
+246
+00:13:10,460 --> 00:13:17,577
+如果你能做到，你就会成为成功的交易者。那么职业交易者为什么使用成交量分布分析呢？
+if you can do that you will be successful trader so why do professional traders use volume profiling
+
+247
+00:13:19,250 --> 00:13:24,530
+首先，这是一个用于识别一致模式的工具。这话是什么意思呢？
+first and foremost it's a tool for consistent pattern recognition what do i mean by that well
+
+248
+00:13:24,530 --> 00:13:28,512
+在每个交易日结束时，我能够
+at the end of each day i'm able to go through my
+
+249
+00:13:28,512 --> 00:13:32,826
+查看我的成交量分布图，并识别出非常具体的模式，
+volume profiles and pick up on very specific patterns because of the way
+
+250
+00:13:32,826 --> 00:13:36,144
+因为成交量分布图以特定的方式展示了价格、成交量和时间，
+volume profile depicts price volume and time so by using
+
+251
+00:13:36,144 --> 00:13:39,794
+因此，通过每天使用成交量分布图，我不仅
+volume profiles on a day-to-day basis i can not only
+
+252
+00:13:39,794 --> 00:13:42,448
+能发现这些模式，
+find these patterns but i can also see
+
+253
+00:13:42,448 --> 00:13:44,439
+还能看到这些模式如何演变，
+how these patterns evolve and then
+
+254
+00:13:44,439 --> 00:13:48,089
+然后基于这些模式发展出交易优势。成交量分布分析是一个用于解读的工具。这话是什么意思呢？
+develop edge using those patterns volume profiling is a tool for
+
+255
+00:13:47,760 --> 00:13:50,148
+我们的意思是，
+interpretation what do we mean
+
+256
+00:13:50,148 --> 00:13:54,925
+与其使用斐波那契、移动平均线和趋势线这些传统工具，
+by that well instead of having the traditional tools of
+
+257
+00:13:54,925 --> 00:13:59,702
+它们无法提供前瞻性信息，
+fibonacci's and moving averages and trend lines that don't give
+
+258
+00:13:59,702 --> 00:14:04,479
+我们可以使用成交量分布图，
+us forward-looking information we can use the volume profiles that
+
+259
+00:14:04,479 --> 00:14:08,300
+它能提供基于原则的解读，
+can give us principle-based interpretation, meaning we're able
+
+260
+00:14:08,300 --> 00:14:11,166
+这意味着我们能够使用成交量分布图做出前瞻性的决策。
+to make forward-looking decisions using volume
+
+261
+00:14:11,166 --> 00:14:15,465
+成交量分布图让我们保持非常客观，
+profiles. Volume profiles allow us to remain very objective
+
+262
+00:14:15,470 --> 00:14:17,533
+而不是主观。
+as opposed to subjective.
+
+263
+00:14:17,533 --> 00:14:22,689
+为什么？因为成交量分布图是精确的信息。它是基于事实的。
+Why? Well, a volume profile is exact information. It's fact-based.
+
+264
+00:14:22,689 --> 00:14:25,783
+它已经发生了。它已经出现了。它不是
+It's happened. It's occurred. It's not
+
+265
+00:14:25,783 --> 00:14:28,877
+主观的。它仅仅是基于事实的。
+opinionated. It's merely fact-based. So we
+
+266
+00:14:28,877 --> 00:14:36,097
+因此，我们可以做出基于事实的决策，而不是基于主观的意见。
+can make fact-based decisions instead of subjective-based opinions. Volume profiling is principles rather than
+
+267
+00:14:36,100 --> 00:14:39,090
+成交量分布分析是基于原则，而不是
+hard-fast rules. Again, this allows
+
+268
+00:14:39,090 --> 00:14:43,276
+僵化的规则。这同样允许
+us to have forward-looking trade strategies as
+
+269
+00:14:43,276 --> 00:14:46,864
+我们拥有前瞻性的交易策略，
+opposed to relying on indicators that
+
+270
+00:14:46,864 --> 00:14:54,040
+而不是依赖滞后的指标。成交量分布分析再次让我们远离
+are lagging. Volume profiling, again, it allows us to move away from
+
+271
+00:14:54,040 --> 00:14:56,016
+我们所谓的显而易见的交易信号
+what we like to think of as obvious
+
+272
+00:14:56,016 --> 00:14:57,745
+我这话什么意思？
+application of trade setups. What do I
+
+273
+00:14:57,745 --> 00:15:01,698
+换句话说，市场中有很多显而易见的交易机会。
+mean by that? In other words, there's a lot of obvious trades in the market. Trades,
+
+274
+00:15:01,720 --> 00:15:06,565
+所有人都在看很久以前的支撑位，
+everyone looks at a support level from a long, long time ago,
+
+275
+00:15:06,565 --> 00:15:09,795
+这非常非常明显。
+and it's very, very obvious. Now, obvious trades,
+
+276
+00:15:09,795 --> 00:15:14,640
+而显而易见的交易，算法能够复制。
+algorithms are able to duplicate those trades. If a trade's very obvious,
+
+277
+00:15:15,260 --> 00:15:18,948
+如果一个交易信号非常明显，
+there's less likelihood it's going to work because it's very
+
+278
+00:15:18,948 --> 00:15:21,899
+成功的可能性就很低，因为它太明显了。
+obvious. So volume profiling, because it's principle-based, is
+
+279
+00:15:21,899 --> 00:15:25,219
+而成交量分布分析基于原则，就不那么明显。
+not so obvious. There's a lot of interpretation required,
+
+280
+00:15:25,220 --> 00:15:32,350
+它需要大量解读，这意味着你有优势。此外，成交量分布分析允许精确的风险管理。
+which means you have edge. And then volume profiling allows for exact risk management.
+
+281
+00:15:32,530 --> 00:15:38,686
+这是什么意思？如果我们基于成交量分布策略进入交易，
+What do we mean? Well, if we enter a trade based on a volume profile strategy, we know exactly
+
+282
+00:15:38,686 --> 00:15:42,456
+我们就清楚地知道这个策略何时不再有效。
+where that strategy is no longer valid. Therefore, we can
+
+283
+00:15:42,456 --> 00:15:45,095
+因此，我们可以有效管理资金，
+effectively manage our money and ensure we're
+
+284
+00:15:45,095 --> 00:15:47,734
+确保不会承受非常大的损失。
+not taking very, very big losses. And
+
+285
+00:15:47,734 --> 00:15:51,127
+最后但同样重要的是，专业交易者使用成交量分布分析的原因
+last but not least, the reason professional traders use
+
+286
+00:15:51,130 --> 00:15:55,430
+仅仅是因为所有专业交易者都在用。
+volume profiling is simply because every professional uses it. So it becomes
+
+287
+00:15:55,430 --> 00:15:59,730
+因此它变成了一个自我实现的预言。
+a self-fulfilling prophecy. If all the traders around the world are using
+
+288
+00:15:59,730 --> 00:16:02,597
+如果全世界的交易者都在使用这些成交量分布图
+these volume profiles or using this tool, in
+
+289
+00:16:02,597 --> 00:16:05,105
+或使用这个工具来描绘价格、时间和成交量，
+order to depict price, time, and volume,
+
+290
+00:16:05,105 --> 00:16:09,047
+那么市场必然会对其中的某些或很多策略做出反应。
+then surely the market will respond to certain or a lot
+
+291
+00:16:09,050 --> 00:16:14,012
+成交量分布分析是什么？简单来说，
+of these strategies. What is volume profiling? Well, in simple,
+
+292
+00:16:14,012 --> 00:16:17,981
+成交量分布分析是将价格、时间和成交量
+volume profiling is price, time, and volume depicted
+
+293
+00:16:17,981 --> 00:16:23,439
+在一个图形化表示中展示。
+in one graphic representation. As you can see on the chart
+
+294
+00:16:23,440 --> 00:16:30,620
+如您在右侧图表中看到的，我们在一个图表中同时展示了时间、成交量和价格。
+on the right, we've got time, volume, and price all in one chart. Volume profiling's core idea is
+
+295
+00:16:30,620 --> 00:16:32,632
+成交量分布分析的核心理念很简单。
+simple. All financial markets are
+
+296
+00:16:32,632 --> 00:16:35,449
+所有金融市场都可以通过时间、价格和成交量来衡量。
+measurable by time, price, and volume. Not
+
+297
+00:16:35,449 --> 00:16:40,279
+并非所有价格都相等，如同在传统交易中，
+all prices are equal, as in traditional trading, as volume is transacted
+
+298
+00:16:40,280 --> 00:16:44,994
+因为每个价格上的成交量不同。
+differently at each price. This change in volume, or this volume that's
+
+299
+00:16:44,994 --> 00:16:52,459
+因此，这种在每个价格上的成交量变化意味着并非所有机会都相等。
+transacted at each price, therefore means that not all opportunities are equal. And this is key in managing probabilities
+
+300
+00:16:52,460 --> 00:16:57,965
+这对于管理风险概率至关重要。市场生成的信息是纯粹的、无偏见的信息，
+of risk. Market-generated information is pure, unbiased information that comes directly from
+
+301
+00:16:57,965 --> 00:17:02,553
+市场直接生成的信息。因此，结构化并解读这些信息
+the market. So structuring and interpreting this information is an
+
+302
+00:17:02,553 --> 00:17:11,729
+是获得对市场真实驱动因素客观看法的绝佳方式，因为它基于真实的订单流。
+excellent way to get a truly objective opinion about what's actually driving the market, as it's based on real order
+
+303
+00:17:11,730 --> 00:17:16,668
+成交量分布分析是面向未来的。
+flow. Volume profiling is forward-looking. So it's not looking back on past
+
+304
+00:17:16,668 --> 00:17:21,606
+它并不回顾过去的数据或过去的信息，而是面向未来。
+data or past information, it's forward-looking. This means that we can make
+
+305
+00:17:21,606 --> 00:17:24,898
+这意味着我们可以基于未来价格的走势
+strong decisions based on what future prices will
+
+306
+00:17:24,898 --> 00:17:30,247
+做出明智的决策，而不是基于过去价格的表现做决策。
+do, as opposed to strong decisions based on what past prices have done.
+
+307
+00:17:32,420 --> 00:17:38,440
+成交量分布分析的核心是识别那些风险远低于潜在收益的机会。
+Volume profiling is about identifying opportunities where the risk is considerably less than the potential reward.
+
+308
+00:17:38,500 --> 00:17:46,005
+如果你能用成交量分布图找到这些机会，你就掌握了一套强有力的策略。
+If you can find these opportunities using volume profile, you have found yourself a strong strategy. Let's look at an
+
+309
+00:17:46,005 --> 00:17:51,259
+现在我们来看一个成交量分布图的示例。首先，如你所见，
+example now of what a volume profile looks like. Firstly, as you can see
+
+310
+00:17:51,260 --> 00:17:56,660
+在第一张图表中，我们看到的是传统K线图。
+in the first chart, we've got traditional candlesticks. Now, as you can see, that price
+
+311
+00:17:56,660 --> 00:17:58,873
+如你所见，价格显示在右侧。
+is depicted on the right. Each
+
+312
+00:17:58,873 --> 00:18:01,086
+每根K线都是基于时间的K线。
+candle is a time-based candle. And
+
+313
+00:18:01,086 --> 00:18:03,668
+而在下方，我们可以看到成交量。
+at the bottom, we can see the
+
+314
+00:18:03,668 --> 00:18:06,250
+现在，如果我们将其转换为成交量分布图，
+volume. Now, if we put this into
+
+315
+00:18:06,250 --> 00:18:09,938
+你会发现，信息是完全相同的，
+a volume profile, you can see it's the exact same
+
+316
+00:18:10,100 --> 00:18:13,112
+只是以成交量分布图的形式展示。
+information, it's just depicted in
+
+317
+00:18:13,112 --> 00:18:17,328
+正是这种成交量分布图
+a volume profile chart. It's this volume
+
+318
+00:18:17,328 --> 00:18:25,159
+能让我们轻松识别模式并保持客观性。
+profile chart that will allow us to easily identify patterns and remain objective.
+
+319
+00:18:25,160 --> 00:18:27,104
+那么，成交量分布分析的未来会是什么样子呢？
+So what does the future of volume
+
+320
+00:18:27,104 --> 00:18:28,770
+为了理解未来，我们需要回顾
+profiling look like? Well, in order
+
+321
+00:18:28,770 --> 00:18:31,269
+各种工具在过去的表现。
+to understand the future, we need to look at
+
+322
+00:18:31,269 --> 00:18:34,878
+回溯几年前，传统工具如移动平均线、斐波那契回撤、趋势线，
+what various tools have done in the past. Now, you go back a
+
+323
+00:18:34,880 --> 00:18:42,808
+通常效果很好，因为当时所有人都在使用它们。
+couple of years, and traditional tools like moving averages, Fibonacci retracements, trendlines, tend to work particularly
+
+324
+00:18:42,808 --> 00:18:50,623
+然而，随着算法的出现，如今这类交易策略
+well because everyone used to use them. However, with the advent of algorithms, nowadays, these sorts
+
+325
+00:18:50,623 --> 00:18:57,712
+被算法大量使用，且它们在执行上非常高效，
+of trade strategies are very heavily utilized by algorithms, and they're very good in the
+
+326
+00:18:57,712 --> 00:19:05,693
+以至于已经挤出了大部分散户交易。
+execution in the sense that they've now crowded out most of the retail trades. And that's why a lot of
+
+327
+00:19:05,693 --> 00:19:11,874
+正因为如此，像50%斐波那契回撤和这些趋势线之类的交易，效果已不如从前。
+the time, these trades like the 50% Fibonacci and these trendlines, they don't work as well as they used to.
+
+328
+00:19:12,440 --> 00:19:19,514
+但成交量分布分析不同，因为它不是精确工具，
+However, with volume profiling, because it's not an exact tool, where there's exact execution methodology, the
+
+329
+00:19:19,514 --> 00:19:24,378
+没有精确的执行方法，算法无法
+algorithms cannot utilize the strategies we're going to show you that
+
+330
+00:19:24,380 --> 00:19:28,037
+轻易有效地利用我们将要展示的策略。
+effectively and that easily. And for that reason,
+
+331
+00:19:28,037 --> 00:19:31,694
+成交量分布分析拥有光明的未来
+volume profiling has got a long future ahead
+
+332
+00:19:31,694 --> 00:19:37,638
+此外，成交量分布分析非常注重资金管理。现在，由于
+of it. Then, volume profiling focuses very heavily on money management. Now, because
+
+333
+00:19:37,640 --> 00:19:45,448
+这个原因，很多人会继续使用它。因为他们知道何时
+of this very reason, this is why a lot of people will continue to use it. Because they know where
+
+334
+00:19:45,448 --> 00:19:48,571
+入场，知道何时退出，知道风险在哪里。因为
+you're getting in, they know where you're getting
+
+335
+00:19:48,571 --> 00:19:51,694
+这个原因，成交量分布分析仍是备受青睐的市场工具。
+out, they know where their risk lies. Because
+
+336
+00:19:51,694 --> 00:19:56,378
+此外，通过成交量分布分析，优势是自主创造的，因为你会为预设条件分配策略。
+of that reason, volume profiling remains a very, very chosen market tool.
+
+337
+00:19:56,380 --> 00:20:04,120
+这告诉我们，由于我们在使用成交量分布分析时策略非常精确，
+Then, Edge is self-created with volume profiling, as you assign strategy to a set precondition.
+
+338
+00:20:04,120 --> 00:20:07,868
+因此我们能利用这一点。现在我们来看一下。
+So what this is telling us is that, because we are being very exact with our
+
+339
+00:20:07,868 --> 00:20:12,319
+通过成交量分布分析的策略，我们因此可以利用这一点。现在让我们来看一下。
+strategies using volume profiling, we can therefore take advantage of this. So let's go ahead and take a look.
+
+340
+00:20:12,440 --> 00:20:18,722
+开发优势，基本上因为使用成交量分布分析能开发出真正的优势
+develop edge so basically because we're developing real edge as a result of using volume profiling
+
+341
+00:20:18,722 --> 00:20:25,398
+只要这种优势仍然存在，我们就不想用其他工具，更重要的原因是
+we wouldn't want to use any other tools so long as that edge remained more importantly because
+
+342
+00:20:25,400 --> 00:20:29,786
+你可以继续用成交量分布分析开发各种策略，
+you can continue to develop various strategies using volume profiling
+
+343
+00:20:29,786 --> 00:20:34,172
+你将不断开发出不仅一种优势，而是
+you will continue to develop not just one edge but
+
+344
+00:20:34,172 --> 00:20:38,558
+多种优势，那么成功就不再依赖其
+various edges then success is not as dependent on its
+
+345
+00:20:38,558 --> 00:20:44,698
+用户，而是依赖机构影响者的参与反应，这与斐波那契不同。
+users as it relies on the response of institutional influential participants compared to fibonacci
+
+346
+00:20:44,700 --> 00:20:46,776
+我们想说的是，
+so what we're trying to say here is
+
+347
+00:20:46,776 --> 00:20:48,852
+过去很多交易工具之所以有效，只是因为大家都在用它们，
+that back in the day a lot of
+
+348
+00:20:48,852 --> 00:20:51,707
+例如，过去的斐波那契，
+trading tools used to be successful simply because everyone used them
+
+349
+00:20:51,709 --> 00:20:55,293
+61.8 曾非常流行，仅仅因为大家都在
+for instance the fibonacci back in the day the
+
+350
+00:20:55,293 --> 00:20:58,877
+交易这个关键回撤位，
+61.8 was very very popular simply because everyone used to
+
+351
+00:20:58,877 --> 00:21:02,859
+由于这个原因，它变成了一个自证预言，这种交易因此有效。
+trade the retracement of that you know key retracement and
+
+352
+00:21:02,859 --> 00:21:07,638
+但如今它不再那么有效。然而，对于成交量分布分析，
+because of that it became a self-fulfilling prophecy that that trade worked
+
+353
+00:21:08,040 --> 00:21:12,515
+它并不那么依赖使用它的用户。为什么？
+nowadays however it doesn't work so well however with market
+
+354
+00:21:12,515 --> 00:21:15,200
+因为成交量分布分析本质上是前瞻性的
+or with volume profiling it's not
+
+355
+00:21:15,200 --> 00:21:22,360
+信息。随着信息
+as dependent on the users that use it why because volume profiling in essence is forward-looking
+
+356
+00:21:22,360 --> 00:21:23,852
+被输入市场，
+information so as the information
+
+357
+00:21:23,852 --> 00:21:25,941
+它吸引了各种长期时间框架的参与者，
+is being fed into the market it
+
+358
+00:21:25,941 --> 00:21:28,925
+正是这一点
+drags in various longer-term time frame participants and it's this
+
+359
+00:21:28,925 --> 00:21:31,909
+创造了我们在市场中看到的那些非常大的行情。
+that creates some of the very very big moves we
+
+360
+00:21:31,909 --> 00:21:34,296
+因此，因为它是前瞻性的
+see in the markets therefore because it's forward-looking
+
+361
+00:21:34,296 --> 00:21:36,683
+这意味着成交量分布分析并不是
+it implies that the volume profiling is not
+
+362
+00:21:36,683 --> 00:21:38,771
+一种真正长期或实用的方法
+something that is really long-term or useful
+
+363
+00:21:38,771 --> 00:21:41,456
+但我们可以使用一些策略来
+there are some strategies that we can use to
+
+364
+00:21:41,460 --> 00:21:47,396
+发现这一点，而成交量分布分析就是其中一个例子，作为快速趋势
+find that out but as an example of this is the example of volume profiling so as a fast trend
+
+365
+00:21:47,396 --> 00:21:49,770
+成交量分布分析将继续
+image the analysis of volume profiling will continue
+
+366
+00:21:49,770 --> 00:21:51,550
+作为工具不断发展，并且
+to progress as a tool and
+
+367
+00:21:51,550 --> 00:21:53,330
+在未来继续被使用
+be utilized into the future then
+
+368
+00:21:53,330 --> 00:21:56,595
+成交量分布分析不是交易系统，也不是预测工具
+volume profiling is not a trading system nor is it predictive
+
+369
+00:21:56,600 --> 00:21:58,765
+请注意，它并不精确，
+note it's not exact it's
+
+370
+00:21:58,765 --> 00:22:01,796
+也不是按年买卖的工具，它仅仅是
+not by-year sell-year it's merely a principle-based
+
+371
+00:22:01,796 --> 00:22:04,394
+一种基于原则的方法，
+approach where we're looking to engage
+
+372
+00:22:04,394 --> 00:22:07,858
+我们试图基于前瞻性信息参与各种策略，成交量
+in various strategies based on forward-looking information volume
+
+373
+00:22:07,860 --> 00:22:09,896
+分布分析让你能观察到市场展开时的结构，
+profiling allows you to observe structure as the
+
+374
+00:22:09,896 --> 00:22:11,677
+这种结构
+market is unfolding that structure and that
+
+375
+00:22:11,677 --> 00:22:13,967
+使得准确判断哪个时间框架正在主导市场走势成为可能
+enables accurate interpretation of which timeframe is in control
+
+376
+00:22:13,968 --> 00:22:19,058
+因此揭示了至关重要的信息和线索，帮助解读市场动能中的强弱。
+of market movement. It therefore uncovers vital information and clues that help unravel strength and weakness in the market momentum.
+
+377
+00:22:19,140 --> 00:22:22,097
+换句话说，大家，因为成交量分布分析
+So in other words guys, because volume profiling
+
+378
+00:22:22,097 --> 00:22:25,054
+为我们提供了如此多重要的关键信息，
+is giving us so much important vital information,
+
+379
+00:22:25,054 --> 00:22:31,338
+只要它继续提供这些信息，它就将保持首选工具的地位。
+it will remain a preferred tool so long as it continues to provide us with this information.
+
+380
+00:22:33,340 --> 00:22:36,024
+最后但同样重要的是，成交量分布分析将
+Last but not least, volume profiling takes what
+
+381
+00:22:36,024 --> 00:22:38,708
+本质上非常复杂的
+is ultimately very complex in terms of a
+
+382
+00:22:38,708 --> 00:22:41,392
+大量市场波动、多种工具、
+lot of movement, a lot of different tools,
+
+383
+00:22:41,392 --> 00:22:43,405
+以及海量信息，
+a lot of information, and it
+
+384
+00:22:43,405 --> 00:22:45,418
+将所有这些整合进
+all puts it into one simplified
+
+385
+00:22:45,418 --> 00:22:48,102
+一个简化的图表中。
+chart. For that very reason alone, the fact
+
+386
+00:22:48,102 --> 00:22:53,135
+正是因为它能将复杂的数据集
+that it can take a complex set of data and put it into a very
+
+387
+00:22:53,400 --> 00:22:55,048
+整合进一个非常简化的图表，
+simplified, you know, chart,
+
+388
+00:22:55,048 --> 00:22:57,520
+这将允许我们，
+that's going to allow us, not
+
+389
+00:22:57,520 --> 00:22:59,992
+不仅是今天，
+just today, but into the future,
+
+390
+00:22:59,992 --> 00:23:03,700
+而是在未来，利用非常简化的信息开发高效的策略。
+to develop highly effective strategies using very simplified information.
+
+391
+00:23:04,620 --> 00:23:12,620
+优势的定义是什么？它是什么？优势可以是多种形式。
+The definition of edge. What is it? Edge can be a number of things.
+
+392
+00:23:13,260 --> 00:23:20,500
+对我来说，优势非常简单。它是一种优势。是一种独特的优势。
+For me, edge is very simple. It's an advantage. It's a unique advantage.
+
+393
+00:23:20,500 --> 00:23:28,560
+现在，关于优势，大家需要理解的重要一点是，优势不会永远存在。好吗？
+Now the important thing to understand about edge, guys, is that edge doesn't last forever. Okay?
+
+394
+00:23:28,560 --> 00:23:34,000
+它不会永远存在的原因是，正如你们知道的，时间在流逝，
+The reason it doesn't last forever is because as you know, time goes by,
+
+395
+00:23:34,000 --> 00:23:40,620
+越来越多观察各种策略的人，最终会发现你的独特优势。
+more and more people that are observing loads of different strategies will eventually pick up on your unique edge.
+
+396
+00:23:40,620 --> 00:23:42,620
+那么，如何保持这种优势呢？
+So how do you keep this edge?
+
+397
+00:23:42,620 --> 00:23:43,620
+其实很简单。
+Well, it's very simple.
+
+398
+00:23:43,620 --> 00:23:50,620
+你必须持续发展这种优势。还要持续发展其他优势。
+You have to continue to develop this edge. And you have to continue to develop other edges.
+
+399
+00:23:50,620 --> 00:23:56,620
+这样做，你就能确保自己始终在市场中拥有独特优势。
+By doing this, you will ensure that you always have a unique advantage over the market.
+
+400
+00:23:56,620 --> 00:24:01,620
+那么，如何有效地发展自己的优势呢？
+So, how do we effectively develop our own edge?
+
+401
+00:24:01,620 --> 00:24:04,620
+对我来说，你需要做三件基本的事。
+For me, there's three basic things you need to do.
+
+402
+00:24:04,620 --> 00:24:08,620
+第一，你需要持续识别模式。
+One, you need to continuously recognize patterns.
+
+403
+00:24:08,620 --> 00:24:10,720
+我们可以通过成交量分布分析来做到这一点。
+We can do this utilizing volume
+
+404
+00:24:10,720 --> 00:24:13,520
+通过不断用成交量分布图来观察市场，
+profiling. By constantly looking at the markets through
+
+405
+00:24:13,520 --> 00:24:16,320
+我们不仅能观察到自己的优势或策略，
+a volume profile, we'll be able to not
+
+406
+00:24:16,320 --> 00:24:22,620
+不仅能审视自身的边界或策略，还能开发出独特的全新策略。
+only just look at our own edges or strategies, but we'll be able to develop unique, new strategies.
+
+407
+00:24:23,620 --> 00:24:28,620
+然后，反复、开发、反复、刻意练习。
+Then, repetitive, developed, repetitive, deliberate practice.
+
+408
+00:24:28,620 --> 00:24:29,620
+这非常简单。
+It's very simple.
+
+409
+00:24:29,620 --> 00:24:33,168
+每次有一个策略时，你需要
+Every time you have a strategy, you need to go
+
+410
+00:24:33,168 --> 00:24:36,006
+离开并反复推敲这个策略。
+away and keep going over and over that
+
+411
+00:24:36,006 --> 00:24:40,618
+在脑海中、在纸上、在市场中反复练习这个策略。
+strategy. Keep practicing that strategy in your head. On paper, in the markets.
+
+412
+00:24:40,620 --> 00:24:46,620
+你需要不断升级这个策略，并围绕这个策略发展各种技能，
+You need to constantly be upgrading that strategy and developing various skills around that strategy
+
+413
+00:24:46,620 --> 00:24:50,620
+以确保自己能够尽可能精通这个策略。
+to ensure that you always master that strategy as well as you can.
+
+414
+00:24:50,620 --> 00:24:58,620
+大家记得，在这个时代，随着算法的出现，每一个Tick都很重要。每一个增量都很重要。
+Remember guys, in this day and age with the advent of algorithms, every tick counts. Every increment counts.
+
+415
+00:24:58,620 --> 00:25:00,620
+所以，你必须做到完美。
+So you have to be perfect.
+
+416
+00:25:00,620 --> 00:25:04,620
+如果不够完美，你就是在浪费赚钱的机会。
+If you're less than perfect, you're leaving money on the table.
+
+417
+00:25:04,620 --> 00:25:11,620
+最后，管理并完善这个流程。这是巩固优势的关键。
+Last, manage and perfect the process. This is what caps off edge.
+
+418
+00:25:11,620 --> 00:25:19,620
+如果你能拥有一个完美的流程，无论你执行什么，无论是什么策略，都无关紧要。
+If you can have a perfect process, in whatever you're executing, whatever strategy, it doesn't matter.
+
+419
+00:25:19,620 --> 00:25:22,620
+如果你能完善这个流程，你就会成功。
+If you can perfect that process, you will be successful.
+
+420
+00:25:22,620 --> 00:25:25,620
+你将拥有持久的优势。
+You will have a long-lasting edge.
+
+421
+00:25:25,620 --> 00:25:29,620
+记住，交易的核心是控制可控的因素。
+Remember, trading is all about controlling the controllables.
+
+422
+00:25:29,620 --> 00:25:31,620
+你无法控制市场。
+You cannot control the market.
+
+423
+00:25:31,620 --> 00:25:33,620
+你无法决定市场的走向。
+You cannot dictate which way the market goes.
+
+424
+00:25:33,620 --> 00:25:35,620
+但你可以控制自己的流程。
+But you can control your own process.
+
+425
+00:25:35,620 --> 00:25:39,620
+做到这一点，你就能拥有独特的优势。
+You do this, and you will have a unique advantage.
+
+426
+00:25:39,620 --> 00:25:43,974
+现在我们来看看，
+So let's see now how one of our professional traders
+
+427
+00:25:43,974 --> 00:25:48,328
+我们的一位专业交易员如何发展他的优势，
+has developed his edge and ensures that he constantly upgrades
+
+428
+00:25:48,328 --> 00:25:53,118
+并确保他不断升级自己的流程，以保持对他人的优势。
+his process to ensure that he maintains his advantage over others.
+
+429
+00:25:53,120 --> 00:25:57,600
+那么，成交量分布分析成功的步骤是什么？
+So what are the steps for profiling success?
+
+430
+00:25:57,600 --> 00:26:03,600
+首先，我们需要用成交量分布分析识别一个模式。
+Well, first and foremost, we need to recognize a pattern using volume profiling.
+
+431
+00:26:03,600 --> 00:26:06,730
+不用担心，我会在本课程中
+Now not to worry, I will show you
+
+432
+00:26:06,730 --> 00:26:09,860
+为你展示大量模式，
+numerous patterns within this profiling course, as well
+
+433
+00:26:09,860 --> 00:26:12,599
+还有你加入直播服务后的内容。
+as when you join the streaming service.
+
+434
+00:26:12,600 --> 00:26:18,599
+每一天，我们都会为你展示独特的策略，
+Every single day, we will show you unique strategies that you can backtest and
+
+435
+00:26:18,599 --> 00:26:21,599
+你可以回测、查看并自行发展。
+have a look at and develop yourself.
+
+436
+00:26:21,600 --> 00:26:25,251
+所以，一旦你找到一个可识别的模式，
+So once you have found a recognizable pattern, you need to go
+
+437
+00:26:25,251 --> 00:26:28,597
+你需要去做我所谓的‘Harry事后回测’。
+and do what I like to call a Harry hindsight backtest.
+
+438
+00:26:28,600 --> 00:26:30,600
+这个方法非常简单。
+What this is, it's very simple.
+
+439
+00:26:30,600 --> 00:26:34,408
+你去找到相似的模式或那个模式，
+You go and find that similar pattern or that pattern,
+
+440
+00:26:34,408 --> 00:26:38,597
+然后在市场中找到其他五个类似的例子。
+and you go and find five other examples in the market.
+
+441
+00:26:38,600 --> 00:26:42,600
+接着，你把这些例子列出来，并展示这些例子的结果。
+You then take these examples and you lay out the results of those examples.
+
+442
+00:26:42,600 --> 00:26:46,773
+我的意思是，你实际计算一下，
+And what I mean by that is you physically find out how
+
+443
+00:26:46,773 --> 00:26:48,859
+进行这笔交易需要花费多少个Tick，
+many ticks it would cost you
+
+444
+00:26:48,859 --> 00:26:50,598
+以及这笔交易能赚取多少个Tick或价格。
+to take on that trade
+
+445
+00:26:50,600 --> 00:26:54,600
+所以，做一个简单的风险收益分析。
+versus how many ticks or prices you can make on that trade.
+
+446
+00:26:54,600 --> 00:26:58,600
+现在，我们先这样做的原因是，
+So do a little bit of a risk-reward, very basic risk-reward analysis.
+
+447
+00:26:58,600 --> 00:27:02,028
+我们可以非常容易地判断，
+Now the reason we do it this way around and we do
+
+448
+00:27:02,028 --> 00:27:03,742
+是否存在一个足够强的模式。
+that first is because we can
+
+449
+00:27:03,742 --> 00:27:06,599
+很多模式并不总是能给我们最佳的风险收益指标。
+very easily identify if there is a strong enough pattern.
+
+450
+00:27:06,600 --> 00:27:12,600
+很多模式并不总是能给我们提供最佳的风险收益比率。
+A lot of patterns, you know, don't always necessarily give us the best risk-reward metrics.
+
+451
+00:27:12,600 --> 00:27:16,600
+因此我们想尽早知道这个策略是否值得继续追踪。
+So we want to know early enough is this strategy actually worth pursuing.
+
+452
+00:27:16,600 --> 00:27:24,600
+然后，在完成视觉化的事后回测后，我们需要进行实战回放测试。
+Then, once we've done the visual Harry hindsight backtest, we then need to go and do a practical replay backtest.
+
+453
+00:27:24,600 --> 00:27:26,600
+这话是什么意思呢？
+What do I mean by that?
+
+454
+00:27:26,600 --> 00:27:30,600
+我们需要实际查看数据在市场中实时接收时的状态。
+We physically need to view the data as it's received live into the market.
+
+455
+00:27:30,600 --> 00:27:34,600
+现在，你们大多数人通常会在日常交易实时市场时这样做。
+Now, most of you would normally do that on a day-to-day trading live markets.
+
+456
+00:27:34,600 --> 00:27:37,000
+然而，如果你这样做，
+However, if you do that, in
+
+457
+00:27:37,000 --> 00:27:39,400
+在当今这个时代，
+this day and age, with the
+
+458
+00:27:39,400 --> 00:27:41,800
+有了现有的技术，
+technology available, you can actually get
+
+459
+00:27:41,800 --> 00:27:46,600
+你实际上可以获取数据并在类似实时市场的场景中回放这些数据。
+the data and replay that data in a live market type scenario.
+
+460
+00:27:46,600 --> 00:27:52,600
+因此，有了这些信息，我们的做法是实际看到这个策略是如何展开的。
+So with that information, what we do is we physically see how this strategy played out.
+
+461
+00:27:52,600 --> 00:27:56,600
+我们实际看到市场如何在实时中向我们展示这些信息。
+We physically see how the market shows us that information in real time.
+
+462
+00:27:56,600 --> 00:27:58,600
+现在，我们这样做有两个原因。
+Now, there's two reasons we do this.
+
+463
+00:27:58,600 --> 00:28:04,600
+首先，我们希望能够在策略发生时亲身体验它。
+First and foremost, we want to be able to live the strategy whilst it's occurring.
+
+464
+00:28:04,600 --> 00:28:08,048
+原因在于我们大多数人会在
+The reason is because most of us look at a
+
+465
+00:28:08,048 --> 00:28:10,806
+一天结束时查看市场，
+market at the end of the day and
+
+466
+00:28:10,806 --> 00:28:14,599
+然后说，这其实是一个相对简单的买入或卖出。
+we say, well, that was a relatively straightforward buy or sell.
+
+467
+00:28:14,600 --> 00:28:18,600
+策略就在那里，我只需要执行即可。
+The strategy was there, all I had to do was execute.
+
+468
+00:28:18,600 --> 00:28:22,446
+但仅仅看图表我们无法练习
+But what we cannot practice just looking at a chart
+
+469
+00:28:22,446 --> 00:28:25,522
+在每一秒、每一分钟或几分钟内经历的感受和情绪。
+is the feelings and emotions of living through
+
+470
+00:28:25,522 --> 00:28:28,598
+每秒、每分钟或每几分钟。
+every second or minute or couple of minutes.
+
+471
+00:28:28,600 --> 00:28:30,969
+非常重要的是，我们能回到过去
+It's so important that we can go back
+
+472
+00:28:30,969 --> 00:28:33,338
+并在不冒风险的情况下再次体验交易时的感受，
+and feel that trade out again as it
+
+473
+00:28:33,338 --> 00:28:36,596
+就像它在实时中发生的那样。
+occurred in real time but not risk capital in doing so.
+
+474
+00:28:36,600 --> 00:28:40,773
+我们可以捕捉到市场在实时中向我们展示的各种观察结果，
+We can pick up on various observations that the market is showing
+
+475
+00:28:40,773 --> 00:28:44,599
+这些结果可以确认交易策略，
+us in real time that can then confirm the trade strategy
+
+476
+00:28:44,600 --> 00:28:50,600
+或者更重要的，告诉我们交易策略并未按预期进行。
+or more importantly tell us that actually the trade strategy is not occurring as it should.
+
+477
+00:28:50,600 --> 00:28:52,600
+这话是什么意思呢？
+What do I mean by that?
+
+478
+00:28:52,600 --> 00:28:58,600
+例如，我们采用一个非常基础的交易策略，比如一个非常激进的买入长尾。
+For instance, if we take a basic trade strategy like a very aggressive buying tail.
+
+479
+00:28:58,600 --> 00:29:04,600
+现在，基于这个策略，我们知道
+Now, we know based on this strategy that we don't particularly want to see
+
+480
+00:29:04,600 --> 00:29:08,600
+在任何回撤时，我们特别不希望看到激进的卖出。
+aggressive selling at any point on a pullback.
+
+481
+00:29:08,600 --> 00:29:10,364
+如果我们确实看到
+If we do see that aggressive
+
+482
+00:29:10,364 --> 00:29:12,128
+主动卖盘，这会给我们
+selling it's giving us a very
+
+483
+00:29:12,128 --> 00:29:13,892
+一个非常早的线索，可能策略
+early clue that maybe the strategy
+
+484
+00:29:13,892 --> 00:29:18,597
+不会像我们期望的那样有效。
+isn't going to work out as well as we would have liked it to work out.
+
+485
+00:29:18,600 --> 00:29:20,475
+通过能够重温
+By being able to relive
+
+486
+00:29:20,475 --> 00:29:23,100
+这段经历，我们能捕捉到
+the experience, we're able to pick up
+
+487
+00:29:23,100 --> 00:29:25,350
+非常早的线索，判断
+on very early clues as to
+
+488
+00:29:25,350 --> 00:29:30,600
+一个交易策略何时有效，何时无效。
+when a trade strategy is working well and when it's not working as well.
+
+489
+00:29:30,600 --> 00:29:36,600
+正是这一点，会让我们的独特交易策略拥有非常强大的优势或边际。
+It's this that will give our unique trade strategy a very strong advantage or an edge.
+
+490
+00:29:36,600 --> 00:29:44,600
+完成实战回放后，我们会设置早期观察和潜在执行的条件与参数。
+Once we've done the practical replay we then set our conditions and parameters for early observation and potential execution.
+
+491
+00:29:44,600 --> 00:29:46,600
+所以这非常简单。
+So it's very simple.
+
+492
+00:29:46,600 --> 00:29:52,600
+你有一个交易策略，你已经回测过。
+You have a trade strategy, you've back tested it. You now go and put in place the parameters.
+
+493
+00:29:52,600 --> 00:29:58,600
+现在你需要设置参数。
+Remember, a unique edge or a trading strategy has exactness to it.
+
+494
+00:29:58,600 --> 00:30:00,600
+记住，一个独特的边际或交易策略是精确的。
+The process is exact.
+
+495
+00:30:00,600 --> 00:30:04,600
+这个过程是精确的。
+There's no ifs and buts, there's no maybes, there's very little subjectivity.
+
+496
+00:30:04,600 --> 00:30:09,933
+没有‘如果’或‘但是’，没有‘可能’，主观性非常少。
+So because of these parameters this will mean that we can allow
+
+497
+00:30:09,933 --> 00:30:13,488
+因此，由于这些参数，
+ourselves to just trade the trade and put
+
+498
+00:30:13,488 --> 00:30:16,599
+这意味着我们可以放心交易，并执行所需的操作。
+in place the execution that is required.
+
+499
+00:30:16,600 --> 00:30:18,600
+这是我们的第四步。
+That is our fourth step.
+
+500
+00:30:18,600 --> 00:30:22,408
+第五步是我们需要制定各种交易规则，
+Our fifth step is we need to create various trading
+
+501
+00:30:22,408 --> 00:30:24,693
+以及资金管理规则
+rules as well as money management
+
+502
+00:30:24,693 --> 00:30:26,597
+和风险管理规则。
+rules and risk management rules.
+
+503
+00:30:26,600 --> 00:30:28,600
+同样，我们要在执行前完成这些。
+Again, we do this before we execute.
+
+504
+00:30:28,600 --> 00:30:32,028
+我们不想在实盘交易中
+We don't want to be in a trade in the live markets
+
+505
+00:30:32,028 --> 00:30:34,313
+才开始思考：我的止损在哪里，
+and start thinking about where is my stop,
+
+506
+00:30:34,313 --> 00:30:36,027
+在这笔交易中我冒多少风险，
+how much am I risking on
+
+507
+00:30:36,027 --> 00:30:37,455
+这笔交易的问题在哪里，
+this, where is the trade
+
+508
+00:30:37,455 --> 00:30:40,597
+在交易中我应该识别什么。
+wrong, what should I be identifying whilst being in this trade.
+
+509
+00:30:40,600 --> 00:30:44,600
+所有这些都要在进入市场交易前完成。
+All of this is done before we execute the trade in the market.
+
+510
+00:30:44,600 --> 00:30:48,600
+还记得我在之前的幻灯片中关于边际的说法吗？
+Remember what I said to you in the previous slide when we spoke about edge.
+
+511
+00:30:48,600 --> 00:30:50,600
+你需要拥有一个完善的流程。
+You need to have a perfected process.
+
+512
+00:30:50,600 --> 00:30:54,600
+如果你完善了流程，就能在该交易策略中取得成功。
+If you perfect the process you will succeed in that trade strategy.
+
+513
+00:30:54,600 --> 00:30:58,600
+问题在于我们对该交易信号准备不足。
+It's the fact that we're not fully prepared for that trade setup.
+
+514
+00:30:58,600 --> 00:31:02,600
+问题在于我们对自身风险心中无数。
+The fact that we're not entirely sure of what our risk is.
+
+515
+00:31:02,600 --> 00:31:04,600
+这就是制造混乱的根源。
+That is what creates the confusion
+
+516
+00:31:04,600 --> 00:31:06,600
+最终导致执行不力。
+and ultimately leads to poor execution.
+
+517
+00:31:08,600 --> 00:31:12,600
+最后，我们要用小仓位进行测试。
+Then, last but not least, we want to test with small size.
+
+518
+00:31:12,600 --> 00:31:16,028
+因此，一旦你找到一个表现良好的策略，
+So once you've found a strategy that works well, you've
+
+519
+00:31:16,028 --> 00:31:19,456
+设定了所有参数，
+created all the parameters, you've set in place the rules,
+
+520
+00:31:19,456 --> 00:31:24,598
+制定了规则，清楚交易如何展开，就要开始测试。
+you know exactly how the trade plays out, you then want to start testing it.
+
+521
+00:31:24,600 --> 00:31:26,600
+将真金白银投入市场。
+Putting real money in the market.
+
+522
+00:31:26,600 --> 00:31:29,457
+现在，当你把真金白银投入市场时，
+Now again, when you're putting real money in the market
+
+523
+00:31:29,457 --> 00:31:34,599
+与模拟资金不同，情绪因素会带来完全不同的体验。
+as opposed to simulated money, you're going to create a whole different experience because of the emotional aspect.
+
+524
+00:31:34,600 --> 00:31:40,600
+但请记住，始终依赖于一个事实：你拥有强大的优势或完善的流程。
+Don't forget however, always lean on the fact that you've got a strong edge or a strong process.
+
+525
+00:31:40,600 --> 00:31:44,766
+如果你这样做，
+If you do this, it will allow you to become
+
+526
+00:31:44,766 --> 00:31:50,599
+它会让你减少情绪化，更专注于市场传递的客观信息。
+less emotional and focus more on the objective information that's coming from the market.
+
+527
+00:31:50,600 --> 00:31:56,600
+一旦找到成功的策略，别忘了加杠杆。
+Once you've found a successful strategy, don't forget leverage up.
+
+528
+00:31:56,600 --> 00:32:02,600
+不要害怕使用杠杆。很多交易者都害怕杠杆这个东西。
+Don't be afraid to leverage guys. Too many traders in general are afraid of this thing called leverage.
+
+529
+00:32:02,600 --> 00:32:06,078
+如果你真正拥有真实的优势，
+If you have got a real genuine edge, the path
+
+530
+00:32:06,078 --> 00:32:07,817
+通往成功的路径就是杠杆。
+to success is via leverage.
+
+531
+00:32:07,817 --> 00:32:10,599
+杠杆能让梦想成真。
+Leverage is what can make dreams come true.
+
+532
+00:32:10,600 --> 00:32:19,940
+最后，始终持续评估、升级和演进你的模式。
+Then, last but not least, always constantly assess and upgrade and evolve your patterns.
+
+533
+00:32:19,940 --> 00:32:21,940
+这是什么意思？
+What does that mean?
+
+534
+00:32:21,940 --> 00:32:23,940
+这意味着交易并非在盈利时结束。
+It means that the trade doesn't end when you make profit.
+
+535
+00:32:23,940 --> 00:32:27,940
+交易也并非在一天结束时关闭交易终端就结束了。
+The trade doesn't end when you switch off your trading machine at the end of the day.
+
+536
+00:32:27,940 --> 00:32:30,902
+交易只有在你将该策略拆解
+The trade only ends when you've taken that
+
+537
+00:32:30,902 --> 00:32:33,494
+反复推敲无数次，
+strategy, broken it down for the umpteenth
+
+538
+00:32:33,494 --> 00:32:37,938
+一次又一次地复盘后才算结束。
+time and you've gone over it time and time and time again.
+
+539
+00:32:37,940 --> 00:32:39,940
+那时交易才真正结束。
+That's when the trade ends.
+
+540
+00:32:39,940 --> 00:32:42,211
+持续升级这些交易策略，因为
+Keep upgrading those trade strategies because
+
+541
+00:32:42,211 --> 00:32:44,482
+通过优化策略，你在优化
+by upgrading them you're upgrading your
+
+542
+00:32:44,482 --> 00:32:47,510
+你的优势，在增强你的优势，且确保
+edge, you're enhancing your edge and you're ensuring
+
+543
+00:32:47,510 --> 00:32:53,188
+你领先于那些试图开发相同优势的人。
+that you're ahead of those that are trying to develop the same edge as you.
+
+544
+00:32:53,190 --> 00:32:59,190
+这绝对是你在第一部分要学的最重要原则之一。
+This is by far one of the most important principles you're going to learn in part one.
+
+545
+00:32:59,190 --> 00:33:01,190
+客观分析与主观分析的对比。
+Objective versus subjective analysis.
+
+546
+00:33:01,190 --> 00:33:05,190
+那么，二者的区别是什么？
+So what is the difference between the two?
+
+547
+00:33:05,190 --> 00:33:13,190
+主观或主观性受情感、观点、直觉或本能影响。
+Objective or subjectivity is influenced or feelings or opinions or intuitive or instinctive.
+
+548
+00:33:13,190 --> 00:33:21,190
+这是我们对某件事必须发生的看法，因为我们觉得它应该发生。
+It's this opinion we have about something having to occur because we feel it should.
+
+549
+00:33:21,190 --> 00:33:25,190
+现在，这些主观想法从哪里来？
+Now, where do these subjective ideas come from?
+
+550
+00:33:25,190 --> 00:33:33,190
+首先，它们来自非常重大的基本面因素。无论是推动市场的数据，
+Well, first and foremost they come from very big fundamentals. Whether that's data that moves the markets,
+
+551
+00:33:33,190 --> 00:33:37,190
+还是公司推出的新产品，
+whether that's companies producing new products,
+
+552
+00:33:37,190 --> 00:33:45,190
+或是市场中的新趋势、新热点。
+or whether that's a new big thing, a new big trend in the market.
+
+553
+00:33:45,190 --> 00:33:47,475
+所有这些基本面因素都给我们
+All these sorts of fundamentals give
+
+554
+00:33:47,475 --> 00:33:49,760
+带来这些想法、这些观点，或
+us these ideas, these opinions or
+
+555
+00:33:49,760 --> 00:33:53,187
+这种直觉，认为某件事应该上涨或下跌。
+this instinct that something should go up or down.
+
+556
+00:33:53,190 --> 00:33:57,190
+主观性还来自CNBC、彭博社和分析师。
+Subjectivity also comes from CNBC and Bloomberg and analysts.
+
+557
+00:33:57,190 --> 00:34:03,190
+为什么？因为我们在电视上看到这些高调人物，
+Why? Because we see these high profile individuals on the TV and writing articles in the newspapers
+
+558
+00:34:03,190 --> 00:34:07,190
+并在报纸上读到他们的文章，
+and we think because they're experts, they must be right.
+
+559
+00:34:07,190 --> 00:34:09,190
+我们认为，因为他们是专家，所以他们一定是对的。
+And all of a sudden we put ourselves
+
+560
+00:34:09,190 --> 00:34:17,190
+突然间，我们让自己陷入这些主观想法，或主观心态中，认为某件事应该发生，因为某个高调人物这么说了。
+in these subjective ideas or in the subjective mindset that something should occur because someone high profile said it.
+
+561
+00:34:19,190 --> 00:34:21,190
+最重要的是，主观性
+Then, most important, subjective is
+
+562
+00:34:21,190 --> 00:34:23,190
+源于观点。这些观点
+because of opinions. The opinions
+
+563
+00:34:23,190 --> 00:34:25,190
+来自你的同行、其他
+of your peers, of other
+
+564
+00:34:25,190 --> 00:34:29,190
+交易者，来自其他人的想法，来自推特上的言论。
+traders, of what other people think, of people on Twitter.
+
+565
+00:34:29,190 --> 00:34:35,190
+所有这些东西共同将我们推入主观心态或观点化思维中。
+All these things together put us into a subjective mindset or an opinionated mindset.
+
+566
+00:34:35,190 --> 00:34:39,190
+那么，与之相反的是什么？对立面是什么？
+Now, what's the counter to that? What's the opposite to that?
+
+567
+00:34:39,190 --> 00:34:41,190
+是客观。
+It's objective.
+
+568
+00:34:41,190 --> 00:34:45,190
+客观不受影响。它基于事实。
+Objective is not influenced. It's factual based.
+
+569
+00:34:45,190 --> 00:34:53,190
+它无偏见、中立、公正、开放、客观且无情绪。如我们所见，
+It's unbiased. It's neutral. Fair minded, open minded, impersonal and unemotional. As we can see,
+
+570
+00:34:53,190 --> 00:34:59,190
+它与主观完全相反。它基于事实，精确无误。
+it's the complete opposite of subjective. It's fact based. It's exact.
+
+571
+00:34:59,190 --> 00:35:03,190
+它不包含任何想法或观点。
+There's no idea or opinion about it.
+
+572
+00:35:03,190 --> 00:35:05,190
+那么，客观性从何而来？
+So, where does objectivity come from?
+
+573
+00:35:05,190 --> 00:35:11,190
+我们可以从成交量分布分析中获得客观性。我们可以从
+We can get objectivity from volume market profiling. We can get objectivity from
+
+574
+00:35:11,190 --> 00:35:15,190
+价格行情中获得客观性。换句话说，从我们实际看到的价格行为中。
+price action. In other words, what we're physically seeing prices do.
+
+575
+00:35:15,190 --> 00:35:19,190
+我们可以从各种交易策略中获得客观性。
+We can get objectivity from various trading strategies.
+
+576
+00:35:19,190 --> 00:35:27,190
+如果我们有一个交易策略，执行精准，没有如果和但是。只有A和B。
+If we have a trading strategy where we have exact execution, there's no ifs and buts. There's A and B.
+
+577
+00:35:27,190 --> 00:35:31,190
+所以，你必须问自己的问题非常简单。
+So, the question you have to ask yourself is very simple.
+
+578
+00:35:31,190 --> 00:35:39,190
+你是否保持客观？在每一次交易中，每一个策略开发中，你是否保持客观？
+Are you being objective? In every single trade you take, every single strategy you develop, are you being objective?
+
+579
+00:35:39,190 --> 00:35:44,280
+每次你点击鼠标时，你都应该能说，
+Every time you click on that mouse, you should be able to say, I'm
+
+580
+00:35:44,280 --> 00:35:47,189
+我在这种方法、这种流程中保持客观。
+being objective in this approach, in this process.
+
+581
+00:35:47,190 --> 00:35:49,190
+你的交易策略是否精准？
+And is your trading strategy exact?
+
+582
+00:35:49,190 --> 00:35:53,190
+如果它不精准，那么你没有优势。
+If it isn't exact, guys, you do not have an edge.
+
+583
+00:35:53,190 --> 00:35:57,190
+你可能有个好想法，但你没有优势。
+You might have a good idea, of course, but you do not have an edge.
+
+584
+00:35:57,190 --> 00:35:58,690
+换句话说，从长期来看，
+In other words, in the long
+
+585
+00:35:58,690 --> 00:36:00,190
+这个交易策略会让你
+run, that trading strategy is going
+
+586
+00:36:00,190 --> 00:36:03,190
+亏损的钱比赚的钱还多。
+to cause you to lose more money than you're going to make.
+
+587
+00:36:03,190 --> 00:36:07,190
+现在，从这张有趣的小图中可以看到，虽然简单，但非常有效。
+Now, as we can see from the funny little picture, whilst it's simple, it's highly effective.
+
+588
+00:36:07,190 --> 00:36:13,190
+可以看到，男友和女友坐下来，吃一块蛋糕。
+As we can see, the wonderful boyfriend and girlfriend are sitting down, eating a piece of cake.
+
+589
+00:36:13,190 --> 00:36:14,190
+现在，我们可以看到，
+Now, we can see
+
+590
+00:36:14,190 --> 00:36:15,690
+男孩正在
+that, you know, the boy is
+
+591
+00:36:15,690 --> 00:36:16,940
+看着蛋糕想，
+looking at the cake thinking,
+
+592
+00:36:16,940 --> 00:36:19,190
+哦，我女朋友完全不会做饭或烘焙。
+oh, my girlfriend can't cook or bake at all.
+
+593
+00:36:19,190 --> 00:36:25,190
+他在想，她的食物不好吃，这个蛋糕肯定很糟糕。
+And he's thinking, well, you know, her food's not very good and this cake's going to be terrible.
+
+594
+00:36:25,190 --> 00:36:31,190
+所以，可以看到他有观点，对蛋糕有先入为主的想法。
+So, we can see that he's got an opinion, a preconceived idea of what it would be like.
+
+595
+00:36:31,190 --> 00:36:37,190
+然而，如果我们把这与盘子上的圆形面团数量相比，
+However, if we compare that to the number of round dough balls on the plate,
+
+596
+00:36:37,190 --> 00:36:41,190
+可以看到，实际上有四个。
+we can see that, factually, there are four of them.
+
+597
+00:36:41,190 --> 00:36:47,190
+这是客观的，是精确的，不是主观的，是确定的事实。
+It's objective, it's exact, it's not opinionated, it's an exact thing.
+
+598
+00:36:47,190 --> 00:36:51,190
+这就是主观和客观的主要区别。
+And that's the major difference between subjective and objective.
+
+599
+00:36:51,190 --> 00:36:56,560
+主观是主观意见。客观是基于事实。
+Subjective is opinionated. Objective is fact-based.
+
+600
+00:36:56,560 --> 00:37:02,560
+现在，我们进一步发展客观性与主观性的这个概念。
+Let's now further develop this idea of objectivity versus subjectivity.
+
+601
+00:37:02,560 --> 00:37:06,560
+记住我们之前说的。客观是基于事实的。
+Remember what we said. Objective is fact-based.
+
+602
+00:37:06,560 --> 00:37:12,560
+这就是我们迄今为止发展的内容。
+That's what we've developed to this point.
+
+603
+00:37:12,560 --> 00:37:18,560
+我们发现客观是一种虚构。这在纸面上肯定成立。
+We've discovered that objective is a fiction. That's certainly true of paper.
+
+604
+00:37:18,560 --> 00:37:24,560
+客观性、利益、含义。
+Objectivity, interest, means.
+
+605
+00:37:24,560 --> 00:37:30,560
+你在交易中主观总有其原因。
+There's always a reason for why you're being subjective in your trade.
+
+606
+00:37:30,560 --> 00:37:40,560
+我想让你写出5个例子，首先是客观中带有少许主观的例子，我们的第一个例子是
+And I want you to write 5 examples and foremost objective with a little bit of subjectivity so our first example
+
+607
+00:37:40,560 --> 00:37:42,591
+好的，美国劳动力数据
+all right the US labor data
+
+608
+00:37:42,591 --> 00:37:44,622
+非农就业数据是最受
+non-farm payrolls it's the most highly
+
+609
+00:37:44,622 --> 00:37:46,653
+关注的美国数据之一
+anticipated data piece out of the
+
+610
+00:37:46,653 --> 00:37:48,684
+它在每月的
+US that comes out on the
+
+611
+00:37:48,684 --> 00:37:50,715
+第一个周五发布
+first Friday of every single month
+
+612
+00:37:50,715 --> 00:37:54,777
+现在我们来看这个例子，假设在某个周五
+now we get does the example so on any Friday choosing a
+
+613
+00:37:54,780 --> 00:38:00,345
+非农就业数据增长32万，而预期仅增长18万，所以
+Friday the non-farm payrolls rises 320,000 but it was only expected to rise 180,000 so
+
+614
+00:38:00,345 --> 00:38:05,482
+立即有大量信息进入市场，
+straight away there's a huge piece of information in the market and
+
+615
+00:38:06,340 --> 00:38:08,640
+价格需要重新定价，
+prices need to reprice so
+
+616
+00:38:08,640 --> 00:38:11,860
+首先，这是客观还是
+first and foremost is this objective or
+
+617
+00:38:11,860 --> 00:38:18,300
+主观？美元应上涨1%到2%，因为数据非常强劲，
+subjective the US dollar should rally one to two percent given how strong the
+
+618
+00:38:18,300 --> 00:38:20,857
+好的，这是主观的。
+data is okay yes it's subjective
+
+619
+00:38:20,857 --> 00:38:23,414
+为什么？我们不知道美元会涨多高，
+why we don't know how far
+
+620
+00:38:23,414 --> 00:38:25,971
+没有人知道美元应该涨多少，
+the US dollar should rally nobody
+
+621
+00:38:25,971 --> 00:38:30,659
+谁也不知道。
+knows how far the dollar US dollar should rally all right
+
+622
+00:38:30,660 --> 00:38:32,401
+它可能上涨，
+you it could go up it
+
+623
+00:38:32,401 --> 00:38:34,142
+也可能下跌，没有人知道。
+could go down nobody knows to
+
+624
+00:38:34,142 --> 00:38:35,883
+说它应该上涨1%到2%，因为数据强劲，
+say that it should go one
+
+625
+00:38:35,883 --> 00:38:40,237
+这是非常主观且带有个人意见的。
+to two percent given how strong the data is is very subjective it's very opinionated
+
+626
+00:38:40,240 --> 00:38:43,804
+我们的下一个例子：美元可能在数据强于预期后
+our next example the US dollar could initially
+
+627
+00:38:43,804 --> 00:38:46,923
+初期出现买家入场。
+see buyers enter given stronger than expected
+
+628
+00:38:46,923 --> 00:38:51,379
+现在这是一个更客观的陈述，为什么？
+data now this is a far more objective statement why
+
+629
+00:38:51,380 --> 00:38:54,025
+因为，如我们所见，美元
+because as we can see the US dollar
+
+630
+00:38:54,025 --> 00:38:56,340
+应该看到买家入场，我们是基于
+should see buyers notes we are basing
+
+631
+00:38:56,340 --> 00:39:00,639
+我们正基于事实来支撑我们的陈述 换句话说 我们知道
+our we are basing our statement on fact in other words we know
+
+632
+00:39:00,640 --> 00:39:02,736
+如果非农就业数据大幅超预期
+if we get a much stronger
+
+633
+00:39:02,736 --> 00:39:04,483
+我们理论上应看到多头入场
+US non-farm payrolls we should
+
+634
+00:39:04,483 --> 00:39:08,327
+理论上我们应看到多头入场 但可能不会
+see factually we should see buyers okay we might not but
+
+635
+00:39:08,328 --> 00:39:15,318
+理论上我们应看到多头入场 这意味着我们保持客观 然后是第三个例子 美元可能
+factually we should see that means we are remaining objective then our third example the US dollar could see buyers
+
+636
+00:39:15,320 --> 00:39:18,200
+以高概率出现趋势性行情
+enter with a high probability for a trend
+
+637
+00:39:18,200 --> 00:39:21,080
+但如果多头无法
+like move however if buyers are unable to
+
+638
+00:39:21,080 --> 00:39:23,960
+维持强劲买盘 这暗示空头
+sustain a strong bid this implies strong sellers
+
+639
+00:39:23,960 --> 00:39:30,440
+正在利用流动性执行大额订单 这是一个混合情况 有些棘手
+are using liquidity to execute large orders now this is a mix it's a tricky one it's a
+
+640
+00:39:30,440 --> 00:39:36,760
+它既有客观性 也有主观性 但注意我们首先是客观的
+bit of objectivity with a bit of subjectivity but note how we're being objective first and foremost
+
+641
+00:39:36,760 --> 00:39:38,745
+再带一点主观性
+with a little bit of subjectivity
+
+642
+00:39:38,745 --> 00:39:41,392
+所以我们的意思是 美元可能
+so what we're saying is the dollar could
+
+643
+00:39:41,392 --> 00:39:43,377
+以高概率出现趋势性行情 这是我们的客观陈述
+see buyers enter with a high
+
+644
+00:39:43,377 --> 00:39:47,678
+我们的主观陈述是 如果多头无法维持买盘
+probability for a trend like move that's our objective statement our subjective statement
+
+645
+00:39:47,680 --> 00:39:51,357
+这意味着空头正在利用流动性
+is that if the buyers cannot sustain a bid it
+
+646
+00:39:51,357 --> 00:39:54,298
+执行大额订单 这种主观性来源于
+means that sellers are utilizing the liquidity to
+
+647
+00:39:54,298 --> 00:39:59,078
+非农就业数据交易中的经验
+execute large orders now this bit of subjectivity comes from experience in trading
+
+648
+00:39:59,080 --> 00:40:00,904
+各位需要注意的是 我们首先
+the markets over non-farm payrolls
+
+649
+00:40:00,904 --> 00:40:03,457
+且最重要的一点是始终保持客观
+important to note guys we are first
+
+650
+00:40:03,457 --> 00:40:05,646
+然后再加一点主观性
+and foremost always objective and then
+
+651
+00:40:05,646 --> 00:40:11,118
+客观与主观的结合很重要 但始终
+a little bit of subjective it's important to have a mix of both but always
+
+652
+00:40:11,120 --> 00:40:16,840
+依赖客观性来做交易决策 因为这将长期保护你
+rely on objectivity to make your trading decisions why because it will protect you in the long run
+
+653
+00:40:16,840 --> 00:40:21,839
+而你的主观意见只会给你带来损失 现在第二个例子 如你所见
+whereas your opinion will only cause you damage now our second example as you can see
+
+654
+00:40:21,839 --> 00:40:24,338
+E迷你标普500出现向下跳空
+the e-money s&p 500 has gapped lower because
+
+655
+00:40:24,338 --> 00:40:27,462
+因为英国脱欧决定后隔夜出现激进抛售
+of an aggressive overnight sell-off after the unexpected brexit decision
+
+656
+00:40:27,462 --> 00:40:29,961
+所以你们中很多人应该看到了
+so a lot of you would have seen
+
+657
+00:40:29,961 --> 00:40:33,397
+这个例子 你们中很多人第二天会说
+this example a lot of you would have come the next
+
+658
+00:40:33,400 --> 00:40:35,316
+英国离开了
+day and said well the uk's left it
+
+659
+00:40:35,316 --> 00:40:37,232
+这完全出乎意料 这是
+was never expected uh you know this is
+
+660
+00:40:37,232 --> 00:40:39,148
+有史以来最糟糕的事情
+the the worst thing that's ever happened we
+
+661
+00:40:39,148 --> 00:40:43,459
+我们整天只需要做一件事 就是不断卖出 卖出 卖出 你们中很多人
+all we got to do all day is sell sell sell sell sell a lot of you would
+
+662
+00:40:43,460 --> 00:40:46,393
+可能已被拖入一种主观的想法中
+have been dragged into a subjective idea there
+
+663
+00:40:46,393 --> 00:40:49,326
+为什么 因为CNBC 彭博社 金融时报 华尔街日报
+why well because cnbc bloomberg financial times wall
+
+664
+00:40:49,326 --> 00:40:52,259
+这些媒体都在告诉我们
+street journal all of these publications were telling
+
+665
+00:40:52,259 --> 00:40:54,459
+事情应该会这样发展
+us that is what should happen
+
+666
+00:40:54,460 --> 00:40:56,591
+因此 我们立即都戴上了卖出的帽子
+therefore straight away we all put our sell
+
+667
+00:40:56,591 --> 00:40:58,722
+面对股票市场
+side hats on for the equity markets and
+
+668
+00:40:58,722 --> 00:41:00,853
+然后说 我们的意见
+we said well our you know our opinion
+
+669
+00:41:00,853 --> 00:41:04,317
+和媒体的一样 所以这肯定是对的
+is the same as as the the media therefore it must be right
+
+670
+00:41:04,320 --> 00:41:07,213
+事实真的是这样吗 我们来看看
+was that the case let's have a
+
+671
+00:41:07,213 --> 00:41:10,106
+我们的第一个陈述 市场可能会反弹
+look so our first statement the market
+
+672
+00:41:10,106 --> 00:41:12,586
+因为它被超卖了 能反弹吗
+can bounce because it's oversold can
+
+673
+00:41:12,586 --> 00:41:19,199
+应该反弹吗 好的 市场可以做任何事 朋友们 对吗
+it bounce should it bounce okay the market can do anything guys right is that an
+
+674
+00:41:19,200 --> 00:41:21,638
+这是客观陈述 还是主观陈述
+objective or a subjective statement it's very
+
+675
+00:41:21,638 --> 00:41:24,076
+这非常主观 这是意见性的 市场可能会反弹
+much subjective it's opinionated the market can
+
+676
+00:41:24,076 --> 00:41:27,559
+因为它被超卖了 你怎么知道什么是超卖
+bounce because it's oversold how do you know what's oversold
+
+677
+00:41:29,060 --> 00:41:32,920
+好的 这些是你应该问自己的问题 接下来一个例子
+okay these are the kind of questions you want to be asking yourself then the next example
+
+678
+00:41:32,920 --> 00:41:39,223
+存在一个高概率的跳空
+there is a high probability for a gap
+
+679
+00:41:39,223 --> 00:41:45,526
+并延续的可能 好的 再次强调 通过经验
+and continuation okay again now with experience and
+
+680
+00:41:45,526 --> 00:41:51,829
+和我们的策略 我们知道
+our strategy we know that because the markets
+
+681
+00:41:51,829 --> 00:41:58,919
+因为市场已经跳空 我们知道存在高概率
+have gapped we know that there's a high probability
+
+682
+00:41:58,920 --> 00:42:01,630
+会延续 所以我们陈述
+for continuation so the fact that we're stating
+
+683
+00:42:01,630 --> 00:42:04,340
+一个基于事实的 陈述 意味着
+a fact-based uh uh a statement means we
+
+684
+00:42:04,340 --> 00:42:07,050
+我们是客观的 好的 我们已经看到
+are being objective all right we've seen the
+
+685
+00:42:07,050 --> 00:42:09,421
+市场已经向我们展示了
+gap the market has showed us the
+
+686
+00:42:09,421 --> 00:42:11,792
+跳空 因此我们基于
+gap and we are therefore objective with
+
+687
+00:42:11,792 --> 00:42:13,824
+从市场接收到的信息是客观的
+the information that we receive from
+
+688
+00:42:13,824 --> 00:42:16,534
+我们的最后一个例子 如果市场
+the market our last example if the market
+
+689
+00:42:16,540 --> 00:42:19,001
+交易至我的关键支撑位 我会买入
+trades to my key support i will buy
+
+690
+00:42:19,001 --> 00:42:21,462
+它来等待反弹 好的 这里同样
+it for a bounce okay here again we've
+
+691
+00:42:21,462 --> 00:42:23,307
+稍微有一些
+got a little bit of a
+
+692
+00:42:23,307 --> 00:42:25,152
+混合 我们有一个客观陈述
+mix we've got an objective statement
+
+693
+00:42:25,152 --> 00:42:26,997
+以及一个主观陈述
+as well as a subjective statement
+
+694
+00:42:26,997 --> 00:42:28,535
+为什么 因为如果市场
+why because if the market
+
+695
+00:42:28,540 --> 00:42:30,643
+交易至我的关键支撑位 那么
+trades to my key support all
+
+696
+00:42:30,643 --> 00:42:33,447
+什么是关键支撑位 这是主观的 对吧
+right what is key support it's subjective right
+
+697
+00:42:33,447 --> 00:42:40,458
+一人的关键支撑可能是另一人的关键阻力位 不要忘了 所以我们说如果它
+one man's key support is another man's key resistance don't forget that so the fact that we're saying if it
+
+698
+00:42:40,460 --> 00:42:43,117
+交易至我的价位 意味着我们在做
+trades to my level means we are being
+
+699
+00:42:43,117 --> 00:42:48,099
+主观判断 但因为我们在交易它 或者我为反弹而买入
+subjective however because we are trading it or i'm buying it for a bounce i'm
+
+700
+00:42:48,100 --> 00:42:54,520
+我在使用一个精确的策略 我通过允许自己一个特定策略来保持客观
+employing an exact strategy i'm remaining objective by allowing myself a specific strategy
+
+701
+00:42:54,520 --> 00:43:00,300
+用主观观点 我也可以有客观结果 如果这合理的话
+with a subjective opinion i can have a i can have an objective outcome if that makes sense
+
+702
+00:43:00,300 --> 00:43:02,693
+好的 所以只需确保
+okay so just ensure there's nothing wrong
+
+703
+00:43:02,693 --> 00:43:05,428
+拥有主观观点或想法
+with having a subjective opinion or an idea
+
+704
+00:43:05,428 --> 00:43:11,239
+关于应该发生什么 没问题 只要确保你有一个客观策略
+about what should occur just make sure you've got an objective strategy in place to keep the
+
+705
+00:43:11,260 --> 00:43:17,622
+来保持平衡 然后下一个例子 WTI 由于供应过剩基本面而下跌
+balance then our next example wti world has sold off on oversupply fundamentals but goldman sachs
+
+706
+00:43:17,622 --> 00:43:24,780
+但高盛认为可能有修正 好的 所以如果我在60分钟
+thinks there is a possible correction likely okay so if i see a buying tail on the 60 minute
+
+707
+00:43:25,180 --> 00:43:28,574
+K线上看到买盘长影线 我会买入 并结合高盛的评论 这算是
+candlestick i will buy with goldman's comment is this being
+
+708
+00:43:28,574 --> 00:43:31,289
+客观还是主观 当然不是 主观 好的 我们
+objective or subjective well no chair okay we
+
+709
+00:43:31,289 --> 00:43:36,719
+说如果我在60分钟K线上看到买盘长影线 我会结合高盛的评论买入
+said if i see a buying tail on the 60 minute candle i'll buy with goldman's comment
+
+710
+00:43:37,060 --> 00:43:40,212
+我不是因为高盛的评论而买入 我买入是因为
+i'm not buying because of goldman's comment i'm buying because
+
+711
+00:43:40,212 --> 00:43:42,419
+60分钟K线的买盘
+of the 60 minute candlestick of a buying
+
+712
+00:43:42,419 --> 00:43:47,463
+长影线 换句话说 我让市场在执行主观想法前展示客观结果
+tail in other words i'm allowing the market to show me an objective outcome before i
+
+713
+00:43:47,780 --> 00:43:51,311
+我保持客观 然后下一个例子 如果我看到当日低点的低成交量延伸
+execute a subjective idea i'm being objective then our next
+
+714
+00:43:51,311 --> 00:43:54,136
+我会反向操作 并设1美元止损 考虑到
+example if i see a low volume extension
+
+715
+00:43:54,136 --> 00:44:00,139
+高盛观点的重要性 再次
+of the current day's low i'm going to fade it with a one dollar stop given how
+
+716
+00:44:00,140 --> 00:44:03,004
+这是一个技巧 当然 我们依赖高盛的评论
+important goldman sachs opinion is again it's a
+
+717
+00:44:03,004 --> 00:44:05,868
+但我们使用客观交易策略来确保
+trick of course we're leaning on goldman sachs's
+
+718
+00:44:05,868 --> 00:44:11,238
+市场执行 并且因此
+comment however we are utilizing an objective trading strategy to make sure that the market
+
+719
+00:44:11,260 --> 00:44:14,405
+我们
+to execute on and because of that we
+
+720
+00:44:14,405 --> 00:44:17,550
+保持客观 尽管我们在使用
+are remaining objective even though we are using
+
+721
+00:44:17,550 --> 00:44:25,019
+尽管高盛给出了一些主观陈述，比如我会做多并寻找分批建仓的机会
+somewhat a subjective statement from goldman sachs then our last example i will get long and look to average
+
+722
+00:44:25,020 --> 00:44:28,728
+如果我同意其
+myself into the position given i agree it
+
+723
+00:44:28,728 --> 00:44:31,972
+在三天内下跌15点后确实超卖
+is definitely oversold after moving 15 in three
+
+724
+00:44:31,972 --> 00:44:40,315
+好的，这显然是主观的。为什么？什么是超卖？
+days okay again this is clearly subjective why what is oversold okay yes some people use uh overbought
+
+725
+00:44:41,260 --> 00:44:44,694
+是的，有些人使用超买
+tools but those tools are based on so
+
+726
+00:44:44,694 --> 00:44:48,128
+工具，但这些工具基于
+many different varying parameters one man's oversold might
+
+727
+00:44:48,128 --> 00:44:54,138
+如此多不同的可变参数，一个人眼中的超卖
+be one man's opportunity to continue to sell don't forget that lagging information isn't
+
+728
+00:44:54,140 --> 00:44:58,023
+可能是另一个人继续做空的机会。别忘了，滞后信息
+necessarily objective information forward-looking information however is objective
+
+729
+00:44:58,023 --> 00:45:01,906
+不一定是客观信息，而前瞻性信息才是客观信息
+information and it's with volume profiling that we
+
+730
+00:45:01,906 --> 00:45:06,759
+通过成交量分布分析，我们
+can ensure all the information we have at our disposal
+
+731
+00:45:06,760 --> 00:45:12,683
+能够确保我们掌握的所有信息都是前瞻性的，而非滞后的。这些是
+is forward-looking as opposed to lagging those are some of the examples
+
+732
+00:45:12,683 --> 00:45:19,099
+主观与客观信息的例子，我们从市场中获取的
+from subjective versus objective information that we receive from the marketplace let's now
+
+733
+00:45:19,100 --> 00:45:22,593
+现在让我们继续讨论客观与主观的市场分析
+continue this discussion of objective and subjective market analysis now
+
+734
+00:45:22,593 --> 00:45:29,579
+我现在要带大家看的这个例子，多年来一直困扰着金融市场
+the example i'm going to take you through now is one that sort of baffled and bamboozled the financial markets
+
+735
+00:45:29,579 --> 00:45:35,518
+它被称为‘格林斯潘谜题’。我之所以想展示这个例子，是因为
+for many many years it's called the alan greenspan conundrum now the reason i want to show
+
+736
+00:45:35,520 --> 00:45:42,580
+我们往往认为，只有散户交易者有时候在分析中过于主观
+you this particular example is because we tend to think that it's only retail traders that are sometimes too subjective
+
+737
+00:45:42,600 --> 00:45:45,920
+在这个例子中，我们将看到，我会展示给大家
+in their their approach and analysis in this example we're
+
+738
+00:45:45,920 --> 00:45:49,240
+不仅是新手交易者
+going to see and i'm going to show you how
+
+739
+00:45:49,240 --> 00:45:52,560
+甚至是金融大师
+not just the the new traders but the financial gurus
+
+740
+00:45:52,560 --> 00:45:55,216
+和专业人士
+and and the professionals made huge errors in
+
+741
+00:45:55,216 --> 00:45:57,540
+在判断利率市场应该如何表现时
+their judgment about what the rates market
+
+742
+00:45:57,540 --> 00:46:00,196
+犯下了巨大错误
+should have done more importantly a lot of
+
+743
+00:46:00,200 --> 00:46:04,051
+更重要的是，很多人损失了大量资金
+people lost a lot of money and these are sometimes
+
+744
+00:46:04,051 --> 00:46:07,902
+而这些人正是我们依赖的专业人士
+the professionals we rely on what's the moral story remain
+
+745
+00:46:07,902 --> 00:46:10,597
+这个故事的寓意是：尽可能保持客观
+objective as as often as possible leave
+
+746
+00:46:10,597 --> 00:46:13,292
+把这种主观性留给那些有深厚资金的人
+this subjectivity for people with deep pockets
+
+747
+00:46:13,292 --> 00:46:18,297
+作为交易者，你需要保持客观，因为这将帮助你
+you as a trader need to remain objective because that will help you
+
+748
+00:46:18,300 --> 00:46:23,220
+从长远来看建立优势。那么格林斯潘谜题是什么呢？很简单
+develop an edge in the long run so what was that in greenspan conundrum about well it's very simple
+
+749
+00:46:23,220 --> 00:46:28,785
+2005年，美联储前主席无法理解
+in 2005 former chairman of the federal reserve failed to understand why fixed income didn't
+
+750
+00:46:28,785 --> 00:46:35,542
+为什么固定收益市场未能如预期那样
+respond as expected to the multiple rate hikes he had initiated in the previous year in theory
+
+751
+00:46:35,940 --> 00:46:42,197
+更高的利率应意味着更高的长期利率 更重要的一点是对未来加息的预期
+higher interest rates would imply higher long-term rates more importantly expectations for future rate rises
+
+752
+00:46:42,197 --> 00:46:46,368
+应意味着收益率曲线的长端也应上升
+would imply that the longer end of the curve should
+
+753
+00:46:46,368 --> 00:46:49,287
+而这正是让
+also rise and this is what baffled
+
+754
+00:46:49,287 --> 00:46:52,206
+不只是格林斯潘 还有大多数市场参与者感到困惑的地方
+not just mister greenspan but most market
+
+755
+00:46:52,206 --> 00:46:56,377
+因此 如果我们来看这张基本的收益率图表
+participants so if we take a look at this basic
+
+756
+00:46:56,380 --> 00:47:02,410
+在x轴上 我们可以看到期限
+yield chart what we can see is on the x-axis we can see the maturity
+
+757
+00:47:02,410 --> 00:47:05,626
+或时间长度
+or length of time and on the y-axis
+
+758
+00:47:05,626 --> 00:47:08,038
+在y轴上 我们可以看到收益率或收益机会
+we can see yields or yield
+
+759
+00:47:08,038 --> 00:47:12,460
+理论上 我们在这条曲线上应该看到的
+opportunity now what we should in theory see on this curve
+
+760
+00:47:12,600 --> 00:47:18,000
+随着利率上升 即收益率越来越高
+as rates rise notes as yields go higher and higher as we go further along
+
+761
+00:47:18,000 --> 00:47:21,600
+随着我们沿着期限曲线向前 我们应看到越来越高的利率
+the maturity curve we should see higher and higher rates
+
+762
+00:47:21,600 --> 00:47:23,760
+为什么 因为首先 我们对未来的加息有预期
+why because one we have rate
+
+763
+00:47:23,760 --> 00:47:26,640
+因此这
+expectations in the future going up so this
+
+764
+00:47:26,640 --> 00:47:28,800
+应意味着我们应有一条
+would imply we should have a
+
+765
+00:47:28,800 --> 00:47:33,480
+收益率曲线陡峭化 或曲线的高端上升 而实际上
+steepening of the curve or a higher end of the curve what actually
+
+766
+00:47:33,480 --> 00:47:36,471
+发生的情况 我们稍后会看到的是
+occurred what we'll see a little bit later on is
+
+767
+00:47:36,471 --> 00:47:40,359
+曲线实际上朝相反方向发展 这就是谜团所在
+that the curve actually went the opposite direction and that was the conundrum
+
+768
+00:47:42,600 --> 00:47:50,200
+这里只是对如何区分客观性和主观性的一个简要总结
+just a nice little summary brief summary of of how to interpret the difference between objectivity and subject and this
+
+769
+00:47:50,200 --> 00:47:53,240
+这是我一直牢记的东西
+is something i keep very close to me
+
+770
+00:47:53,240 --> 00:47:55,520
+而且我经常把它写下来
+and i write it down quite
+
+771
+00:47:55,520 --> 00:47:57,800
+很简单 如果买家比卖家多 价格就会上涨 这是基于事实的客观性
+often it's simple if there are
+
+772
+00:47:57,800 --> 00:48:01,980
+价格如何上涨 这是主观意见的问题
+more buys than sellers prices will rise that's fact based objectivity
+
+773
+00:48:01,980 --> 00:48:06,220
+把这句话写在某个地方 因为这将确保你
+how those prices rise is a matter of subjective opinion
+
+774
+00:48:06,220 --> 00:48:09,520
+始终保持尽可能客观 同时辅以一点主观分析
+write that down somewhere because that will ensure that you
+
+775
+00:48:09,520 --> 00:48:16,120
+太多机构损失了金钱 为什么 很简单 他们变得
+are always remaining as objective as possible with a little bit of object with a little bit of subjective analysis
+
+776
+00:48:17,480 --> 00:48:21,754
+太过主观 并且忘记了施加客观分析
+so many institutions lost money why very simple they became
+
+777
+00:48:21,754 --> 00:48:26,028
+如果你这样做 你会陷入麻烦 是的 当然
+too subjective and forgot to impose their objective analysis if
+
+778
+00:48:26,028 --> 00:48:32,439
+一次又一次 你可能靠非常主观的方式逃过一劫
+you do this you are going to land in trouble yes of course time and
+
+779
+00:48:32,440 --> 00:48:34,944
+但记住 这是一个长期游戏 从一开始就把它做对
+time again you may get away
+
+780
+00:48:34,944 --> 00:48:42,039
+虽然主观性较强，但请记住这是一场长期游戏，从一开始就要做对
+with being very subjective but remember this is a long-term game get it right from the start
+
+781
+00:48:42,600 --> 00:48:51,066
+你的方法可能客观
+you may be objective in your approach objective
+
+782
+00:48:51,066 --> 00:48:59,532
+你的分析和陈述可能客观
+in your analysis declarations but you'll be disgusting
+
+783
+00:48:59,532 --> 00:49:07,998
+但你会因主观性和机会主义而感到厌恶
+nonobjectivity an oportunism hiding this in all ryo
+
+784
+00:49:07,998 --> 00:49:14,348
+这会让你远离行动
+often out you from action from
+
+785
+00:49:14,350 --> 00:49:18,074
+从一开始到89年，我们可以看到
+all the way up to 89 we can see the
+
+786
+00:49:18,074 --> 00:49:21,384
+那条深蓝色实线，实际上代表美联储
+solid dark blue line that's effectively the fed
+
+787
+00:49:21,384 --> 00:49:24,418
+资金利率期货，这是美国
+funds futures rate that's the u.s
+
+788
+00:49:24,418 --> 00:49:27,019
+美联储的加息周期，现在随着
+fed hiking cycle now as that
+
+789
+00:49:27,019 --> 00:49:30,920
+加息周期上升，我们可以看到
+goes up we can see a very strong correlation
+
+790
+00:49:30,490 --> 00:49:34,873
+与美国10年期国债收益率的强相关性，即浅绿色
+with the u.s 10-year treasury yields which is the luminous
+
+791
+00:49:34,873 --> 00:49:38,060
+现在我们可以看到
+light green color there now we can see
+
+792
+00:49:38,060 --> 00:49:42,044
+在第一、第二和第三轮加息周期中
+that in the first and second and third hike cycles
+
+793
+00:49:42,044 --> 00:49:45,364
+每次美联储启动加息周期时
+every time the fed initiated a hiking cycle
+
+794
+00:49:45,364 --> 00:49:47,854
+我们都能看到
+we could see a very strong
+
+795
+00:49:47,854 --> 00:49:52,419
+与美国10年期国债收益率的强正相关，随着利率上升
+positive correlation with the u.s 10-year treasury yields as interest
+
+796
+00:49:51,210 --> 00:49:55,670
+我们看到10年期国债收益率也随之上升，但谜题是
+rose we saw 10-year treasury yields rise now the conundrum
+
+797
+00:49:55,670 --> 00:50:02,806
+2004年发生了什么，我们看到一个非常激进的逐步加息周期
+is what happened in 2004 we can see a very aggressive gradual 25 basis point rate hike cycle
+
+798
+00:50:02,806 --> 00:50:06,820
+从2004年6月开始，然而这次
+starting in june 2004 however this time around we can
+
+799
+00:50:06,820 --> 00:50:10,964
+我们可以看到美国10年期国债收益率
+see that the u.s treasury 10-year did not
+
+800
+00:50:10,964 --> 00:50:13,726
+并未如预期那样上涨，基于
+quite go as expected based on
+
+801
+00:50:13,726 --> 00:50:15,567
+之前三轮加息周期
+the previous three hiking
+
+802
+00:50:15,567 --> 00:50:21,552
+试想这个加息周期持续了近两年，想象
+cycles now just imagine this hiking cycle lasted almost two years imagine the
+
+803
+00:50:21,990 --> 00:50:24,822
+很多机构和交易者的挫败、痛苦
+frustration and the pain and the and the
+
+804
+00:50:24,822 --> 00:50:27,654
+以及损失，因为过度依赖
+losses that a lot of institutions and traders
+
+805
+00:50:27,654 --> 00:50:30,486
+过去的数据
+would have taken as a result of relying
+
+806
+00:50:30,486 --> 00:50:31,902
+故事的寓意是保持客观
+too much on the
+
+807
+00:50:31,902 --> 00:50:35,088
+是的，有一定的主观性是好的
+past what's the moral of the story remain objective
+
+808
+00:50:35,090 --> 00:50:37,728
+是的，回顾过去寻求指导是好的
+right yes it's good to have a subjectivity
+
+809
+00:50:37,728 --> 00:50:40,366
+但如果某些事情
+idea yes it's good to look into the
+
+810
+00:50:40,366 --> 00:50:43,004
+作为参考的过去，但如果有什么
+past for for guidance but if something is
+
+811
+00:50:43,004 --> 00:50:44,982
+若某事并未如预期发生
+not occurring as it should if
+
+812
+00:50:44,982 --> 00:50:46,960
+而市场未提供客观事实给我们
+the objective facts are not being
+
+813
+00:50:46,960 --> 00:50:50,587
+我们需确保
+given to us by the marketplace we need to ensure that
+
+814
+00:50:50,590 --> 00:50:54,097
+不要在这笔交易上投入过多资金和精力
+we're not committing too much capital and energy to that trade so
+
+815
+00:50:54,097 --> 00:50:55,777
+如果我们在2004年的这个例子中保持客观
+had we remained objective in this
+
+816
+00:50:55,777 --> 00:50:57,177
+是的，我们可能会损失一点钱
+example in 2004 right yes we
+
+817
+00:50:57,177 --> 00:51:00,538
+但不会浪费两年时间
+might have lost a little bit of money but we wouldn't have
+
+818
+00:51:00,819 --> 00:51:03,741
+去对抗一个并未发生的事
+lost two years of our lives trying to fight something
+
+819
+00:51:03,741 --> 00:51:05,786
+去预先阻止一个并未发生的事
+that wasn't happening trying to preempt something
+
+820
+00:51:05,786 --> 00:51:06,954
+所以记住，历史并非总是重演
+that was not happening
+
+821
+00:51:08,010 --> 00:51:11,634
+仅因某事在一个案例中发生
+so just remember history doesn't always repeat itself just because
+
+822
+00:51:11,634 --> 00:51:14,533
+并不意味着它会重复发生
+something happens in one instance doesn't mean it
+
+823
+00:51:14,533 --> 00:51:19,969
+这就是2004年的例子
+will repeat itself that's the example now what i want to lead you to think
+
+824
+00:51:19,970 --> 00:51:24,334
+现在我想让你们思考的是：美联储在2015年12月开始加息
+about is the fed started hiking in december 2015 they initiated the
+
+825
+00:51:24,334 --> 00:51:27,111
+他们启动了首次25个基点的加息
+first 25 basis point hike so based on
+
+826
+00:51:27,111 --> 00:51:33,855
+基于历史，很多人认为收益率曲线现在应该开始上升
+history a lot of people are saying well the yield curve should begin to rise now as
+
+827
+00:51:34,650 --> 00:51:38,518
+但截至制作本课程的日期，收益率曲线并未开始上升
+of day the date of doing this course yield curves haven't started
+
+828
+00:51:38,518 --> 00:51:42,386
+事实上，收益率继续走低
+to rise in fact yields have continued to move lower so again
+
+829
+00:51:42,386 --> 00:51:45,931
+所以，我们又看到了与2004年非常相似的情况
+we're seeing a very similar instance as we did back in 2004
+
+830
+00:51:45,931 --> 00:51:50,766
+在加息周期中，收益率未必会随之上升
+when the rate hike cycle was going up yields don't necessarily have to go higher
+
+831
+00:51:51,090 --> 00:52:00,050
+请记住这一点，随着美联储继续加息周期
+as well keep that in your back your mind as the fed continues their hiking cycle now i want to
+
+832
+00:52:00,050 --> 00:52:04,424
+现在我想向你们展示：当你允许主观性
+show you what happens when you allow subjectivity to be the most
+
+833
+00:52:04,424 --> 00:52:07,340
+而非客观性成为首要因素时会发生什么
+or the priority instead of objectivity what we're
+
+834
+00:52:07,340 --> 00:52:10,985
+我们将再次回顾2004年的加息周期
+going to look at again is this 2004 rate hike cycle
+
+835
+00:52:11,370 --> 00:52:14,915
+首先，我们要理解，利率实际上在下降
+first first to understand rates fell in other words long
+
+836
+00:52:14,915 --> 00:52:18,105
+换句话说，长期利率在2004年实际上下降了
+end rates actually fell in 2004 even with five consecutive
+
+837
+00:52:18,105 --> 00:52:24,840
+加息，想象一下2004年，美联储连续加息五次的情况
+rate hikes so just imagine for the year of 2004 when the fed had hiked five times in a row
+
+838
+00:52:25,550 --> 00:52:29,395
+想象一下，在2004年
+imagine you were on this trade or on the wrong side of
+
+839
+00:52:29,395 --> 00:52:33,240
+美联储连续加息五次时
+this trade for for almost five five or six months how would
+
+840
+00:52:33,240 --> 00:52:34,842
+如果你在这笔交易上，或站在错误的一边
+that have felt how would
+
+841
+00:52:34,842 --> 00:52:37,084
+处于错误方向的交易会是什么感受
+it have felt to be an offside
+
+842
+00:52:37,084 --> 00:52:40,929
+基于历史数据 你认为一个完美无瑕的想法
+on an idea that you thought was absolutely flawless based on history
+
+843
+00:52:41,370 --> 00:52:45,553
+当利率终于在
+how would that have felt then rates began to finally rise in
+
+844
+00:52:45,553 --> 00:52:49,387
+2005年第一季度开始上升时 那种感觉如何
+q1 of 2005 so after all that pain and torture finally rates
+
+845
+00:52:49,387 --> 00:52:53,570
+然而 利率上升了多少呢 看看长期利率
+began to rise however how far did they rise well long end
+
+846
+00:52:53,570 --> 00:52:57,404
+2005年全年保持高位 但直到
+rates continued high in 2005 but only rose above the highs made
+
+847
+00:52:57,404 --> 00:53:00,119
+加息周期开始时的高点才被突破
+at the start of the hiking cycle in
+
+848
+00:53:00,119 --> 00:53:02,155
+换句话说 如果你在美联储
+q4 2005 in other words had you
+
+849
+00:53:02,155 --> 00:53:04,530
+开始加息周期时进入这笔交易
+taken on this trade when the fed
+
+850
+00:53:04,530 --> 00:53:09,960
+你甚至都无法回到入场价格 试想
+embarked on their fed on their hiking cycle you wouldn't have even got back to the
+
+851
+00:53:11,370 --> 00:53:14,005
+那会有多痛苦 让我们
+point where you entered the market imagine how
+
+852
+00:53:14,005 --> 00:53:15,981
+看一下图表 如你所见
+painful that would have been let's
+
+853
+00:53:15,981 --> 00:53:19,275
+图表中蓝色线代表
+look at it on the chart as you can see
+
+854
+00:53:19,276 --> 00:53:22,295
+美联储从2004年开始的
+on the chart we have the blue line which depicts
+
+855
+00:53:22,295 --> 00:53:23,804
+连续17次加息 或总共25个基点的加息
+the 17 consecutive rate hikes or 25
+
+856
+00:53:23,804 --> 00:53:25,917
+橙色线是美国5年期国债收益率
+basis point rate hikes from the federal
+
+857
+00:53:26,522 --> 00:53:28,207
+红色线是美国10年期国债收益率 现在如你所见
+reserve starting in 2004 the orange
+
+858
+00:53:28,207 --> 00:53:31,240
+从加息周期开始 时 如果你做多收益率
+line is the u.s. five-year treasury bond yields
+
+859
+00:53:31,240 --> 00:53:33,599
+红线代表美国
+the red line is the u.s.
+
+860
+00:53:33,599 --> 00:53:36,295
+你几乎会立刻陷入错误方向
+treasury tenure yields now as we can see
+
+861
+00:53:36,295 --> 00:53:41,351
+这笔交易的前六个月你会持续亏损
+from the start of the hiking cycle had you initiated this trade for higher yields
+
+862
+00:53:41,370 --> 00:53:45,153
+你会一直亏钱 那会是什么感受
+you would have almost instantly gone offside you would have been losing
+
+863
+00:53:45,153 --> 00:53:48,936
+在交易的前六个月里做多的资金
+money for a long for the first six months of this trade
+
+864
+00:53:48,936 --> 00:53:52,719
+你会亏损越来越多 那会是什么感受
+you would have been losing money how would that have felt how
+
+865
+00:53:52,719 --> 00:53:56,502
+你会如何解释 试想你是对冲基金经理
+would how would you have explained that imagine you're a hedge fund
+
+866
+00:53:56,502 --> 00:53:59,655
+你如何向投资者解释
+how would you explain that to your investors that you're
+
+867
+00:53:59,655 --> 00:54:02,177
+你亏损越来越多 因为基于历史
+losing more and more money because based on
+
+868
+00:54:02,177 --> 00:54:04,068
+收益率应该上涨 那会是什么感受
+history yields should go up how
+
+869
+00:54:04,068 --> 00:54:06,590
+你现在能理解吗
+would that have felt can you see now
+
+870
+00:54:06,590 --> 00:54:11,003
+为什么即使我们有非常强的主观判断
+why it's so important that we remain objective even when we have very strong
+
+871
+00:54:11,370 --> 00:54:15,805
+基于历史的客观意识形态或想法 现在我
+objective ideologies or ideas based on history now the purpose of me
+
+872
+00:54:15,805 --> 00:54:20,240
+展示这个的目的是 我想让你们理解
+showing you this is I want you guys to understand that the
+
+873
+00:54:20,240 --> 00:54:24,675
+原则是 保有一些主观想法是好的
+principle is that it's good to have a little bit of subjective
+
+874
+00:54:24,675 --> 00:54:29,110
+保有直觉和基于过去的经验是好的
+ideas it's good to have intuition and experience based on the past
+
+875
+00:54:29,110 --> 00:54:31,327
+但首先且最重要的 始终要依赖
+but first and foremost always rely
+
+876
+00:54:31,327 --> 00:54:34,283
+客观性 这个市场清楚地向我们展示
+on objectivity this market clearly showed us that
+
+877
+00:54:34,283 --> 00:54:36,500
+收益率想要走低
+yields were wanting to move lower
+
+878
+00:54:36,500 --> 00:54:39,456
+即使理论上它们本应
+even when in theory they should have been
+
+879
+00:54:39,456 --> 00:54:42,412
+走高 因此我们本应
+moving higher therefore we should have been holding
+
+880
+00:54:42,412 --> 00:54:44,999
+坚持 我们本应
+on to the straight we should have
+
+881
+00:54:44,999 --> 00:54:48,325
+接受有些地方不对劲 市场
+accepted that something was not right the market was
+
+882
+00:54:48,325 --> 00:54:50,911
+在给我们基于事实的信息 收益率
+giving us fact based information that yields
+
+883
+00:54:50,911 --> 00:54:52,758
+不会上升 即使
+weren't going to rise even
+
+884
+00:54:52,758 --> 00:54:56,453
+主观上它们本应上升 现在我们来看看
+though subjectively they should have let's take a look now
+
+885
+00:54:56,460 --> 00:55:04,341
+2015年加息周期 美联储在2015年12月启动首次加息 具有历史意义 还记得我们之前说的
+the 2015 rate hike cycle the Fed initiated the first hike in December 2015 historic now remember what we said
+
+886
+00:55:04,341 --> 00:55:12,223
+理论上 当利率上升 或美联储推高利率时 我们本应
+in theory when rates rise or interest rates are pushed up higher by the Federal Reserve we should
+
+887
+00:55:13,100 --> 00:55:15,030
+那么 美联储如何让
+So, how did the Fed manage to keep
+
+888
+00:55:15,030 --> 00:55:16,478
+利率上升呢 看看长期收益率
+the rate rise? see longer-term yields
+
+889
+00:55:16,478 --> 00:55:20,098
+理论上也应上升 注意格林斯潘谜题 上次我们看到这种情况
+rise as well in theory note the greenspan conundrum the last time we saw this
+
+890
+00:55:20,100 --> 00:55:23,694
+它并未按理论发生 实际上它朝
+it didn't occur according to theory in fact it went
+
+891
+00:55:23,694 --> 00:55:27,288
+相反方向发展 那么你认为这次
+the opposite direction so what do you think happened this
+
+892
+00:55:27,288 --> 00:55:30,163
+美联储在2015年启动首次
+time around when the fed initiated the first
+
+893
+00:55:30,163 --> 00:55:32,319
+加息时 发生了什么 首先
+hike in 2015 well first and foremost
+
+894
+00:55:32,680 --> 00:55:36,558
+10年期国债收益率 如红线所示 在
+10-year treasury yields as depicted in the red line traded
+
+895
+00:55:36,558 --> 00:55:39,273
+2015年10月美联储释放加息信号时 交易价格为2.06% 记得他们在10月释放信号
+at 2.06 the day the federal reserve signaled
+
+896
+00:55:39,273 --> 00:55:44,703
+12月加息
+a rate hike in october 2015 remember they signaled in october they hiked in december
+
+897
+00:55:45,480 --> 00:55:54,360
+截至2016年10月 我们可以看到收益率为1.6% 几乎满一年
+currently as of october 2016 we can see yields are at 1.6 percent almost one full calendar year
+
+898
+00:55:54,360 --> 00:55:56,406
+那么这告诉我们什么
+later so what does this tell
+
+899
+00:55:56,406 --> 00:55:59,134
+它告诉我们 是的 理论
+us well it tells us that yes theory
+
+900
+00:55:59,134 --> 00:56:01,862
+上理论 你知道历史确实
+in theory what you know history does give
+
+901
+00:56:01,862 --> 00:56:08,000
+它确实能为我们提供客观和主观的思路
+us good ideas it does give us a sense of object a sense of subjectivity however had we
+
+902
+00:56:08,000 --> 00:56:11,809
+但若我们再次依赖这种主观性
+relied on that subjectivity again in this instance just like
+
+903
+00:56:11,809 --> 00:56:14,856
+就像格林斯潘谜题那样，我们会亏损
+the greenspan conundrum we would have lost money
+
+904
+00:56:14,856 --> 00:56:15,998
+注意市场今年或2016年
+again note how
+
+905
+00:56:16,000 --> 00:56:23,000
+在美联储开始加息后大幅抛售
+the market sold off quite aggressively this year or in 2016 ever since the federal reserve started
+
+906
+00:56:23,000 --> 00:56:25,213
+你是否感到困惑？
+hiking rates so are you confused
+
+907
+00:56:25,213 --> 00:56:28,164
+你不应该困惑，因为只要
+well you shouldn't be because so long as
+
+908
+00:56:28,164 --> 00:56:31,115
+你在分析中保持客观
+you remain objective in your approach in your
+
+909
+00:56:31,115 --> 00:56:37,018
+进行这些交易是可以的
+analysis it's okay to take these trades on if you took the trade on for higher
+
+910
+00:56:37,020 --> 00:56:39,655
+如果你是为了更高收益而交易
+yields it's okay it's a good
+
+911
+00:56:39,655 --> 00:56:43,168
+这是可以的，这是一笔好交易
+trade however just ensure that you have objectivity
+
+912
+00:56:43,168 --> 00:56:47,559
+但务必确保你保持客观性
+to protect you in the event that object that the
+
+913
+00:56:47,560 --> 00:56:54,340
+以防市场未按预期反应或回应
+markets don't react or respond in the way they should do so let's summarize subjective versus
+
+914
+00:56:54,340 --> 00:57:02,222
+那么让我们总结主观与客观分析
+objective analysis it's very simple it's all about a balancing act it's all about
+
+915
+00:57:02,222 --> 00:57:08,978
+这非常简单，这是一个平衡行为
+ensuring that subjective intuition plus objective market generated facts equals successful analysis
+
+916
+00:57:09,120 --> 00:57:12,141
+确保主观直觉加上客观市场数据
+make sure you have a balance of the
+
+917
+00:57:12,141 --> 00:57:15,162
+等于成功分析
+two it's important to develop opinion intuition and
+
+918
+00:57:15,162 --> 00:57:18,183
+确保你平衡这两者
+and understanding these are the kind of things
+
+919
+00:57:18,183 --> 00:57:21,959
+培养观点、直觉和理解很重要
+that give us edge that give us trading strategy but
+
+920
+00:57:21,960 --> 00:57:25,682
+这些是给我们优势的因素
+just ensure that you always remain objective even when you
+
+921
+00:57:25,682 --> 00:57:29,404
+是给我们交易策略的因素
+have almost certain opinion when you feel so confident about
+
+922
+00:57:29,404 --> 00:57:32,382
+但务必确保你始终保持客观
+something just make sure that you're not forgetting
+
+923
+00:57:32,382 --> 00:57:33,498
+即使你几乎确信某事
+your objective understanding
+
+924
+00:57:33,500 --> 00:57:36,794
+当你对某事非常有信心时
+of the market because it's this objectivity that's going to
+
+925
+00:57:36,794 --> 00:57:40,088
+务必确保你不忘记
+protect you from many many pitfalls and pitfalls that a
+
+926
+00:57:40,088 --> 00:57:42,723
+你对市场的客观理解
+lot of traders make which costs them very
+
+927
+00:57:42,723 --> 00:57:45,358
+因为这种客观性会保护你免受许多陷阱
+dearly we've reached the end of part one
+
+928
+00:57:45,360 --> 00:57:48,724
+很多交易者会犯这些错误
+let's summarize all the key principles we've dealt with thus
+
+929
+00:57:48,724 --> 00:57:51,078
+并让他们付出惨痛代价
+far firstly we spoke about the 95% of
+
+930
+00:57:51,078 --> 00:57:52,759
+我们已到达第一部分的结尾
+traders and why they happen
+
+931
+00:57:52,759 --> 00:57:54,440
+会失败 所以我们要做的
+to fail so what we're
+
+932
+00:57:54,440 --> 00:57:58,140
+通常是画两个列
+going to do what we would typically do is draw two
+
+933
+00:57:58,480 --> 00:58:04,560
+一个列是95%的交易者 另一个列是5%的交易者
+columns in the one column you'd have 95% of people and the other column you would have 5% of people
+
+934
+00:58:04,560 --> 00:58:07,365
+现在你想做的是
+now what you want to do is you want to
+
+935
+00:58:07,365 --> 00:58:10,170
+不仅标记今天以及我们讨论的内容
+go highlight not just today and what we've dealt with
+
+936
+00:58:10,170 --> 00:58:14,939
+还要随时间标记 所有定义成功者和失败者的特征 所以
+but over time all the characteristics that define those who succeed and those who don't succeed so
+
+937
+00:58:14,940 --> 00:58:19,067
+例如 95%的失败交易者倾向于承受巨额亏损
+for example 95% of traders that fail tend to take big losses
+
+938
+00:58:19,067 --> 00:58:22,819
+95%的倾向于失败的交易者 还倾向于
+95% of 95% of traders that tend to fail also tend to
+
+939
+00:58:22,819 --> 00:58:27,321
+每天带着某种偏见进入市场
+come into the markets every day with some form of a bias
+
+940
+00:58:27,321 --> 00:58:31,295
+95%的失败交易者倾向于没有优势 那么
+95% of traders who fail tend to have no edge then what
+
+941
+00:58:31,295 --> 00:58:34,185
+我们在另一边要做的是
+we do on the other side is we
+
+942
+00:58:34,185 --> 00:58:36,714
+尝试并突出所有关键特征
+try and highlight all the key characteristics
+
+943
+00:58:39,120 --> 00:58:45,174
+这些特征定义了行业中成功的交易者 首先他们倾向于有非常
+that define traders that succeed in the industry firstly they tend to have very
+
+944
+00:58:45,174 --> 00:58:51,228
+严格的常规 他们倾向于遵循一套非常严格的规则 他们倾向于
+strong routine they tend to follow a very stringent set of rules they tend
+
+945
+00:58:51,228 --> 00:58:55,552
+采用非常流程导向的方法 并且他们有
+to have a very process orientated approach and they have
+
+946
+00:58:55,552 --> 00:58:58,579
+非常非常强的优势 现在这
+a very very strong edge now this
+
+947
+00:58:58,579 --> 00:59:02,038
+不是一个全面的清单 这其中的要点是
+is not an exhaustive list the point of
+
+948
+00:59:02,040 --> 00:59:04,158
+你作为交易者 在你的职业生涯中
+this is that you as a trader as you go on in
+
+949
+00:59:04,158 --> 00:59:05,570
+随着你在市场中花费时间
+your career as you spend time in the
+
+950
+00:59:05,570 --> 00:59:09,100
+你会非常快速地发现 什么是定义行业中成功交易者的关键特征
+markets you will pick up very quickly what are the key characteristics that define traders that succeed in the industry
+
+951
+00:59:09,100 --> 00:59:13,504
+当你识别出让你和其他交易者亏损的东西时
+things that cost you money and other traders when you identify them
+
+952
+00:59:13,504 --> 00:59:17,541
+就把它们加入95%失败交易者的清单里 同样
+add them to the list of 95% of traders that fail equally
+
+953
+00:59:17,541 --> 00:59:21,945
+当你在同行中 甚至
+when you find certain characteristics amongst your peers or even you know
+
+954
+00:59:21,945 --> 00:59:26,349
+在你自己身上发现某些让你作为交易者成功的特征 时 确保
+within yourself that allow you to succeed as a trader make sure
+
+955
+00:59:26,349 --> 00:59:29,285
+你在成功的原因中突出标记它们
+you highlight them in the reasons for success
+
+956
+00:59:29,285 --> 00:59:33,689
+这样随着时间的推移 你会非常快速地发现
+that way over time you'll very quickly pick up on what characteristics
+
+957
+00:59:34,060 --> 00:59:37,812
+哪些特征是成功所需的 以及哪些特征会导致
+are required to succeed and what are required or what characteristics lead
+
+958
+00:59:37,812 --> 00:59:40,313
+交易者失败 那是我们讨论的第一个原则 然后我们继续 并开始讨论
+traders to fail in. That was the first
+
+959
+00:59:40,313 --> 00:59:44,378
+成交量分布分析的优势 现在我要快速突出强调
+principle we dealt with then we moved on and we started to talk
+
+960
+00:59:44,380 --> 00:59:49,041
+现在我将快速介绍成交量分布分析的优势
+about the advantages of volume profiling now I'm going to quickly highlight
+
+961
+00:59:49,041 --> 00:59:53,702
+我来回顾这些优势，以便你能记住，第一个是我们
+those advantages just so you can remember them the first was we
+
+962
+00:59:53,702 --> 00:59:58,363
+说过，通过成交量分布分析，我们可以将
+said that with volume profiling we can turn what is known as
+
+963
+00:59:58,363 --> 01:00:01,470
+一个非常复杂的环境转变为一个简单的环境
+a very complex environment into a simple environment
+
+964
+01:00:01,470 --> 01:00:04,577
+我们还说过，可以使用
+we then also said that we can use
+
+965
+01:00:04,580 --> 01:00:09,215
+成交量分布分析进行交易模式的快速早期识别
+volume profiling for very quick early pattern recognition of the trading patterns
+
+966
+01:00:09,215 --> 01:00:16,940
+以及交易观察。好的，通过成交量分布分析，我们不仅能快速发现模式，
+and the trading observation. Okay so by using volume profiling we can very quickly not just notice patterns but we
+
+967
+01:00:16,940 --> 01:00:24,340
+还能随时间检查这些模式。我们还说过，成交量分布分析是一个前瞻性
+can also then examine our patterns over time. We also said that volume profiling is a forward looking
+
+968
+01:00:24,340 --> 01:00:31,745
+工具，因此我们注意到，像斐波那契、趋势线、支撑位和阻力位
+tool so we noted that things like Fibonacci's and trend lines and support and resistance all tend to be lagging
+
+969
+01:00:31,745 --> 01:00:37,299
+这些通常都是滞后指标，而成交量分布分析则倾向于前瞻性工具。我们还说过，
+type tools whereas volume profiling tends to be a forward looking tool. We then also
+
+970
+01:00:37,300 --> 01:00:39,394
+通过成交量分布分析，你可以将
+said that with volume profiling you can turn
+
+971
+01:00:39,394 --> 01:00:41,226
+一个非常复杂的
+what is known as a very complex
+
+972
+01:00:41,226 --> 01:00:43,581
+环境转变为一个，我们可以拥有精确的资金管理
+environment into a we can have exact money management
+
+973
+01:00:43,582 --> 01:00:46,723
+而且，由于资金管理不仅
+and given that money management is so key in in not just
+
+974
+01:00:46,723 --> 01:00:48,293
+在日内交易中重要，在
+you know day trading but all
+
+975
+01:00:48,293 --> 01:00:49,863
+所有交易形式中都很重要，
+forms of trading you know being
+
+976
+01:00:49,863 --> 01:00:51,957
+能够管理你的风险和资金
+able to manage your risk and your money
+
+977
+01:00:51,957 --> 01:00:53,789
+至关重要，这是成交量分布分析的主要优势之一。然后我们还说过，
+management is highly crucial and one of
+
+978
+01:00:53,789 --> 01:00:57,454
+它并不容易，
+the main advantages of volume profiling and then we also said that it's not
+
+979
+01:00:57,460 --> 01:01:02,140
+很难自动化所有成交量分布分析策略，
+easily it's not easy to automate all the volume profiling strategies and
+
+980
+01:01:02,140 --> 01:01:06,820
+因此从长远来看，
+as a result it means that volume profiling in the long run
+
+981
+01:01:06,820 --> 01:01:09,940
+成交量分布分析是一个能为你
+is a tool that can give you a
+
+982
+01:01:09,940 --> 01:01:12,670
+提供可持续优势的工具。这就是
+sustainable edge going forward so that was
+
+983
+01:01:12,670 --> 01:01:15,400
+我们讨论成交量分布分析时提到的一些优势。然后我们继续
+some of the advantages that we spoke
+
+984
+01:01:15,400 --> 01:01:19,000
+讨论什么是成交量分布分析，
+about when talking about volume profiling we then moved on
+
+985
+01:01:19,000 --> 01:01:21,880
+成交量分布分析的基本要义是什么，我认为
+to talk about what is volume profiling what
+
+986
+01:01:21,880 --> 01:01:25,120
+解释它的最佳方式是通过演示。
+is the basic essence of volume profiling and I
+
+987
+01:01:25,120 --> 01:01:29,150
+我认为最好的解释方式是通过示例来说明
+think the best way to explain this is to illustrate
+
+988
+01:01:29,150 --> 01:01:33,180
+成交量分布图不过是一个分布
+it the volume profile is nothing more than a distribution
+
+989
+01:01:33,180 --> 01:01:37,210
+或是我们展示三个
+or a manner in which we can represent the three
+
+990
+01:01:37,210 --> 01:01:38,822
+关键变量的一种方式，即价格
+key variables being price
+
+991
+01:01:38,822 --> 01:01:41,240
+即时间和成交量
+being time and being volume and
+
+992
+01:01:41,240 --> 01:01:43,658
+我们注意到 我们会有一个
+we noted that we'll have a
+
+993
+01:01:43,658 --> 01:01:46,076
+价格集合在这一侧
+set of prices on this side
+
+994
+01:01:46,080 --> 01:01:50,440
+会有一个时间集合构成整个分布
+we'll have a set of time being this entire distribution
+
+995
+01:01:50,440 --> 01:01:53,928
+成交量会分散在
+and we'll have volume being dispersed over uh
+
+996
+01:01:53,928 --> 01:02:01,340
+所有这些价格上 我们说本质上 这是基本的
+all this uh all these prices and we said that in essence is the basic uh you
+
+997
+01:02:01,340 --> 01:02:04,858
+分布 现在 如果我们只是转换
+know distribution now if we were to just convert the
+
+998
+01:02:04,858 --> 01:02:07,673
+嗯 你 know 只是拿一个基础的K线
+um you know just take a basic candlestick
+
+999
+01:02:07,673 --> 01:02:14,358
+图表 并将其转换为某种形式的分布 举例来说 假设我们有一个传统的交易日
+chart and convert it into some form of a distribution let's say for instance we had a traditional day
+
+1000
+01:02:14,360 --> 01:02:18,017
+我们看到K线不断上涨 上涨 上涨
+where we saw candles going up up up and up
+
+1001
+01:02:18,017 --> 01:02:20,942
+分布会显示 我们会有
+the distribution will show that we'll just have
+
+1002
+01:02:20,942 --> 01:02:27,159
+许多不同的分布 因此我们实际上会有分布 并且会看到 随着时间推移
+lots of different distributions so we'd have effectively the distribution and we'll see that over time the
+
+1003
+01:02:27,160 --> 01:02:30,064
+市场会分布 分布 分布 而市场花费
+market will distribute distribute distribute and wherever the market spends
+
+1004
+01:02:30,064 --> 01:02:32,968
+最多时间的地方 来说 K线
+the most amount of time so let's say the candlesticks
+
+1005
+01:02:32,968 --> 01:02:34,710
+回落后又上涨
+came back and they went up
+
+1006
+01:02:34,710 --> 01:02:36,452
+再回落 市场
+and came back where the market
+
+1007
+01:02:36,452 --> 01:02:38,194
+花费最多时间的地方
+spends the most amount of time
+
+1008
+01:02:38,194 --> 01:02:40,517
+就是分布会变得稍微
+is where the distribution will become a little
+
+1009
+01:02:40,520 --> 01:02:46,340
+厚一些 所以 使用成交量分布分析 与K线并无不同
+bit fatter so there's nothing distributing using volume profiling is no different to candlesticks
+
+1010
+01:02:46,340 --> 01:02:49,840
+只是同一信息的不同表现形式 对吧
+it's just a different representation of the same information all
+
+1011
+01:02:49,840 --> 01:02:51,940
+然后我们继续
+right then we moved on and
+
+1012
+01:02:51,940 --> 01:02:54,040
+开始讨论
+we started to talk about the
+
+1013
+01:02:54,040 --> 01:02:57,540
+成交量分布分析的未来 成交量分布分析
+future of volume profiling where is volume profiling going in
+
+1014
+01:02:57,540 --> 01:03:00,194
+将走向何方 以及为什么
+the future and and why it's important that you know
+
+1015
+01:03:00,194 --> 01:03:02,848
+重要的是你要知道
+if you learn the tool today it will you know
+
+1016
+01:03:02,848 --> 01:03:06,298
+如果你今天学会这个工具 它将
+stand you in good stead going forward into the future and some of
+
+1017
+01:03:06,300 --> 01:03:09,316
+让你在未来受益匪浅 其中一些
+those advantages or or some of the you know the
+
+1018
+01:03:09,316 --> 01:03:12,332
+优势 或 其中一些 你 know
+the the key characteristics we identified for the future of
+
+1019
+01:03:12,332 --> 01:03:17,158
+成交量分布分析未来的 关键特征 我们确定的 显然有一个 因为自动化 换句话说
+volume profiling uh was obviously one um you know because of the automation in other words
+
+1020
+01:03:17,160 --> 01:03:20,702
+成交量分布分析会教你一套原则
+volume profiling will teach you a set of principles and
+
+1021
+01:03:20,702 --> 01:03:24,244
+算法当然很难自动化原则
+algorithms uh cannot easily uh you know automate principles and
+
+1022
+01:03:24,244 --> 01:03:29,558
+正因为如此，你要知道这个工具在未来会
+it's for that reason that you know the tool uh going to the future will
+
+1023
+01:03:29,560 --> 01:03:31,281
+继续存在，它不会消失，如果你要
+survive it won't be you know if you're going to
+
+1024
+01:03:31,281 --> 01:03:33,002
+走向未来，你要走向未来，你要
+the future you're going to the future you're going to
+
+1025
+01:03:33,002 --> 01:03:36,099
+很多现代工具，比如伯纳德·奇斯这些，你知道，非常数学化且精确的东西
+a lot of modern day for bernard cheese and you know things that are very mathematical and exact
+
+1026
+01:03:36,100 --> 01:03:40,082
+这些很容易被自动化，因为成交量分布分析
+they're easily uh sort of automated so because volume profiling
+
+1027
+01:03:40,082 --> 01:03:44,064
+不太容易自动化，所以它不会轻易
+is not as easily automated it won't easily be uh
+
+1028
+01:03:44,064 --> 01:03:49,639
+它会延续到未来，我们还说它是一个
+it will last into the future we then also said that it's a strong
+
+1029
+01:03:49,640 --> 01:03:56,740
+前瞻性很强的工具，正因为如此，你知道，交易者未来会倾向于采用这个工具
+forward-looking tool and because of that you know traders will tend to adopt this tool uh you know going forward
+
+1030
+01:03:56,740 --> 01:04:01,000
+因此，这成为了一个自我实现的预言，即成交量分布分析
+and as a result it becomes a self-fulfilling prophecy that volume profiling
+
+1031
+01:04:01,300 --> 01:04:06,760
+会继续存在并成功，作为一种开发优势和模式识别的形式。
+continue to exist and succeed as a form of developing edge and pattern recognition.
+
+1032
+01:04:07,840 --> 01:04:12,140
+所以这些就是我们定义的关于成交量分布分析未来的部分特征。
+So those are some of the characteristics defined about the future of volume profiling.
+
+1033
+01:04:12,420 --> 01:04:14,966
+接着我们继续，我们讨论了
+We then moved on and we spoke about
+
+1034
+01:04:14,966 --> 01:04:17,512
+优势，并且我们在这上面花了一些时间
+edge and we spent a bit of time
+
+1035
+01:04:17,512 --> 01:04:23,878
+以及作为交易者，为了在这个行业中取得成功，开发优势是多么关键。
+on this and how crucial it is to develop edge as a trader in order to succeed in this job.
+
+1036
+01:04:23,880 --> 01:04:27,289
+其中一个关键亮点是，我们讨论了开发优势的步骤，而我现在要
+One of the key highlights was we spoke about the steps to
+
+1037
+01:04:27,289 --> 01:04:29,277
+快速再回顾一下这些步骤，只是让你回忆一下。
+developing edge and I'm just going to
+
+1038
+01:04:29,277 --> 01:04:32,118
+快速回顾这些步骤，只为刷新你的记忆。
+quickly go over those steps again, just refresh your mind.
+
+1039
+01:04:32,240 --> 01:04:38,580
+所以这些步骤，首先我们想要识别模式。
+So those steps first and foremost was we want to recognize the pattern.
+
+1040
+01:04:38,760 --> 01:04:41,796
+所以你有一个分布图，或者你有一些东西
+So you have a profile or you have something that
+
+1041
+01:04:41,796 --> 01:04:44,225
+你已经识别出来了，你识别出一个模式，这个模式倾向于
+you've identified, you recognize a pattern that tends
+
+1042
+01:04:44,225 --> 01:04:48,779
+比不发生的次数更频繁地发生，我们说这是第一步。
+to play out more often than not and we said that that was step one.
+
+1043
+01:04:48,780 --> 01:04:52,080
+然后我们说，一旦你识别出一个模式，某个
+We then said once you recognize a pattern, something that
+
+1044
+01:04:52,080 --> 01:04:55,380
+对你来说有意义的东西，某个你熟悉的东西，
+makes sense to you, something that you're familiar with and
+
+1045
+01:04:55,380 --> 01:04:58,020
+某个你经常观察到的东西，我们说你
+something you're observing quite often, we said you
+
+1046
+01:04:58,020 --> 01:05:02,640
+想要对那个设置进行一次传统的‘事后诸葛亮’分析。
+want to go and do... a good old fashioned Harry Hindsight on that setup.
+
+1047
+01:05:02,640 --> 01:05:06,436
+所以你想要拿着那种模式，然后
+So you want to take that type of pattern and go and
+
+1048
+01:05:06,436 --> 01:05:08,966
+回到过去，尝试
+look back in time, go and try and
+
+1049
+01:05:08,966 --> 01:05:13,078
+找到那个模式，尽可能多地找到那个模式的观察案例。
+find that pattern, as many observations of that pattern as you can find.
+
+1050
+01:05:13,080 --> 01:05:17,225
+一旦你做到了这一点，接下来你想要做的就是
+Once you've done that, what you then want to go and do
+
+1051
+01:05:17,225 --> 01:05:20,679
+接下来你还想做的是我们
+is you also then want to go do what we
+
+1052
+01:05:20,679 --> 01:05:24,133
+所谓的回放功能，而这其实就是
+like to call a replay functionality and all that is,
+
+1053
+01:05:24,133 --> 01:05:26,205
+你尝试去寻找某种
+is you try and find some
+
+1054
+01:05:26,205 --> 01:05:28,623
+该模式发生过程的录制，你懂的...
+form of recordings of the... you know...
+
+1055
+01:05:28,623 --> 01:05:31,041
+这样你就能定义该模式的所有关键特征
+how that pattern played out so that
+
+1056
+01:05:31,041 --> 01:05:34,495
+你可以定义，可以对该模式做尽可能多的观察
+you can define all the key characteristics of that pattern.
+
+1057
+01:05:34,500 --> 01:05:37,940
+完成后，你接下来要为该模式设置条件
+You can define, you can do as many observations about that pattern.
+
+1058
+01:05:37,940 --> 01:05:42,460
+所以你要识别出该模式的所有参数和条件
+Once we've done that, you want to then go and set the conditions for the pattern.
+
+1059
+01:05:42,460 --> 01:05:45,822
+不管这意味着，你懂的，
+So you want to identify all the parameters and the
+
+1060
+01:05:45,822 --> 01:05:49,184
+该模式出现的时间，
+conditions for that pattern, whether that means, you know, what
+
+1061
+01:05:49,184 --> 01:05:52,546
+或者，你懂的,
+time of day the pattern occurs to or, you know,
+
+1062
+01:05:52,546 --> 01:05:54,227
+它效果最好的时段，
+when it works best, what
+
+1063
+01:05:54,227 --> 01:05:55,908
+一周中的哪一天
+day of the week it
+
+1064
+01:05:55,908 --> 01:05:57,589
+效果最好，你懂的，
+works best, you know, high
+
+1065
+01:05:57,589 --> 01:05:59,270
+高成交量或低成交量条件,
+volume or low volume conditions,
+
+1066
+01:05:59,270 --> 01:06:05,995
+你懂的，盘前还是盘中，所有这些关于模式的条件你都要识别
+you know, out of hours or cash hours, all these sorts of conditions you want to identify about the pattern.
+
+1067
+01:06:06,000 --> 01:06:09,340
+然后你要为该模式设置规则
+You then want to go and set the rules for the pattern.
+
+1068
+01:06:09,340 --> 01:06:16,240
+所以你要概括出让该模式成功的具体参数，也就是创建规则
+So you want to outline the very parameters that will make this pattern successful. So create the rules.
+
+1069
+01:06:16,240 --> 01:06:17,240
+在哪里买入？
+Where do you buy it?
+
+1070
+01:06:17,240 --> 01:06:18,340
+如何执行？
+How do you execute?
+
+1071
+01:06:18,340 --> 01:06:21,240
+你懂的，你寻找多少个价位？
+You know, how many prices are you looking for?
+
+1072
+01:06:21,240 --> 01:06:23,540
+如何管理你的风险？
+How are you going to manage your risk?
+
+1073
+01:06:23,540 --> 01:06:26,340
+你懂的，这笔交易你要用多大仓位？
+You know, what sort of size are you going to be utilizing on this trade?
+
+1074
+01:06:26,340 --> 01:06:32,300
+你懂的，你要做这笔交易，然后你要去测试它
+You know. you're going to be taking this trade on and then you want to go and test it okay
+
+1075
+01:06:32,300 --> 01:06:34,630
+你要用小仓位测试它
+you want to use small size test it
+
+1076
+01:06:34,630 --> 01:06:36,960
+用尽可能小的仓位
+with you know as small a smaller size
+
+1077
+01:06:36,960 --> 01:06:39,290
+然后看看结果
+as possible and you know have a look
+
+1078
+01:06:39,290 --> 01:06:40,455
+看看结果
+what the results you
+
+1079
+01:06:40,455 --> 01:06:42,202
+你懂的，输出结果，因为
+know spit out because it's the
+
+1080
+01:06:42,202 --> 01:06:43,658
+最终结果将决定
+results ultimately that will determine
+
+1081
+01:06:43,658 --> 01:06:45,696
+是否能扩大这个模式的规模
+whether or not we can scale up
+
+1082
+01:06:45,700 --> 01:06:50,474
+然后最后但同样重要的第七点
+on this particular pattern and then last but not least number seven
+
+1083
+01:06:50,474 --> 01:06:56,839
+我们想要评估并优化 很重要 你们说得对 很多人
+we want to assess and upgrade so important guys you're right too many people stop it
+
+1084
+01:06:56,840 --> 01:06:59,271
+在第六步开始赚钱后
+step number six they start making money they
+
+1085
+01:06:59,271 --> 01:07:01,702
+发现它有效就停止了 你们知道
+realizes it works and they stop you know
+
+1086
+01:07:01,702 --> 01:07:04,133
+不再推进这个设置
+sort of advancing the set up and and
+
+1087
+01:07:04,133 --> 01:07:06,564
+不再优化这个设置 结果
+enhancing the setup and as a result you
+
+1088
+01:07:06,564 --> 01:07:08,387
+这个设置最终会
+know eventually the setup starts to
+
+1089
+01:07:08,387 --> 01:07:10,210
+可能不再那么有效
+work maybe not as well a
+
+1090
+01:07:10,210 --> 01:07:12,033
+成功概率开始下降
+probability success starts to disappear a
+
+1091
+01:07:12,033 --> 01:07:15,376
+然后我们就放弃这个设置
+little bit and then we just give up on the setup
+
+1092
+01:07:15,380 --> 01:07:18,574
+所以你需要不断
+and that's why you need to constantly be
+
+1093
+01:07:18,574 --> 01:07:21,768
+思考如何改进这个设置
+looking how can you take this set up
+
+1094
+01:07:21,768 --> 01:07:26,559
+不断优化它 让这个模式的优势持续下去
+and constantly improve it so that the edge continues with that pattern
+
+1095
+01:07:26,560 --> 01:07:31,700
+这就是我们之前讨论的 关于培养交易优势的步骤
+so So that's what we spoke about with regards to the steps to developing edge as a trader.
+
+1096
+01:07:32,960 --> 01:07:35,004
+好的 然后我们继续
+All right, we then went on
+
+1097
+01:07:35,004 --> 01:07:37,048
+讨论了客观与主观分析的原则
+and we spoke about the principle
+
+1098
+01:07:37,048 --> 01:07:43,180
+我在这上面花了点时间 是有原因的
+of objective versus subjective analysis. And I spent a bit of time on this for good reason, guys.
+
+1099
+01:07:43,180 --> 01:07:45,866
+你们必须确保自己理解这一点
+You need to make sure that you understand
+
+1100
+01:07:45,866 --> 01:07:48,552
+因为对我来说 这可能是
+this because this for me is probably one
+
+1101
+01:07:48,552 --> 01:07:52,918
+交易者需要学习的最关键原则之一
+of the most crucial principles that you need to learn as a trader.
+
+1102
+01:07:52,920 --> 01:08:02,580
+我们曾说，目标是一种基于事实的分析类型。它是客观的，无偏见的，也是无情绪的。
+And very simply, we said that objective is very much fact-based sort of type analysis. It's unbiased. It's unemotional.
+
+1103
+01:08:03,280 --> 01:08:06,650
+然后我们说 如果你去看
+And we then said, if you go look
+
+1104
+01:08:06,650 --> 01:08:10,020
+主观 抱歉 我应该说主观
+at subjective, sorry, I should say subjective. So
+
+1105
+01:08:10,020 --> 01:08:13,390
+我们这里有主观分析
+we have subjective there. And we said subjective
+
+1106
+01:08:13,390 --> 01:08:21,816
+它是主观的，带有偏见。它包含感受、直觉以及这些想法。
+is very much opinionated and it's got a bias toward it. And it's feeling and intuition and all these ideas.
+
+1107
+01:08:21,819 --> 01:08:26,100
+我喜欢把主观分析 比作我们脑中的想法
+You know, I like to think of subjective. Subjective is almost like ideas that we have in our head.
+
+1108
+01:08:26,500 --> 01:08:30,279
+关键在于 我们通过了一些很好的例子
+And the crux of it, what we got to, you know, we went through some really good examples.
+
+1109
+01:08:31,100 --> 01:08:35,220
+我想达到的核心 是平衡的理念
+And what I want to get to is the crux, is this idea of the balance, okay?
+
+1110
+01:08:35,220 --> 01:08:39,220
+你需要在客观与主观之间找到一个平衡
+You need to find this happy balance between objectivity and subjectivity.
+
+1111
+01:08:40,340 --> 01:08:41,660
+是的，拥有想法是好的。
+Yes, it's good to have ideas.
+
+1112
+01:08:42,020 --> 01:08:44,347
+是的，你需要带着
+Yes, you need to, you know, come in
+
+1113
+01:08:44,347 --> 01:08:47,256
+各种想法进入，比如
+with all sorts of ideas as to, you know, the
+
+1114
+01:08:47,256 --> 01:08:51,619
+基本面和技术背景，以及这可能发生、那也可能发生。
+fundamentals and the technical backdrop. And this could potentially happen and that could potentially happen.
+
+1115
+01:08:52,000 --> 01:08:58,439
+但为了基于这些想法采取行动，你必须保持客观。
+But. In order to initiate on those ideas, you've got to have objectivity.
+
+1116
+01:08:58,620 --> 01:09:01,800
+如果你没有客观性，你就没有优势。
+If you do not have the objectivity, you haven't got edge.
+
+1117
+01:09:01,960 --> 01:09:08,060
+你只有观点、偏见、一厢情愿，这些都不够。
+All you've got is an opinion, a bias, a hopefulness. You know, that's not good enough, guys.
+
+1118
+01:09:08,060 --> 01:09:10,695
+如果你想
+If you want to, you know, make sure
+
+1119
+01:09:10,695 --> 01:09:13,659
+确保自己培养优势并真正成功，
+that you develop your edge and really succeed, you
+
+1120
+01:09:13,659 --> 01:09:19,259
+你必须确保在主观与客观之间找到平衡。
+know, at this job, you have to ensure you get the happy balance between subjective and objective.
+
+1121
+01:09:20,500 --> 01:09:22,319
+好，这就是我们在第一部分的结论。
+All right, guys, that is where we got to in part one.
+
+1122
+01:09:22,920 --> 01:09:25,634
+现在我们已经总结完第一部分，
+So now that we've done summarizing part one,
+
+1123
+01:09:25,634 --> 01:09:28,348
+是时候让你
+you know, it's time for you to go
+
+1124
+01:09:28,348 --> 01:09:32,759
+去测试自己对讨论过的原则的理解，并完成概要检测了。
+and test yourself on the principles we've discussed and complete the summary checker.
+
+1125
+01:09:32,920 --> 01:09:33,420
+祝你好运。
+Good luck.
+
+1126
+01:09:36,660 --> 01:09:41,600
+太好了。恭喜完成模块1的第一部分。
+Excellent. Congratulations on completing part one of module one.
+
+1127
+01:09:42,359 --> 01:09:46,022
+现在我要检查你是否理解了第一部分中讲解的原则。
+It's now time for me to check that you understand the principles
+
+1128
+01:09:46,022 --> 01:09:49,379
+请回答以下问题。
+we've dealt with in part one. So answer the following questions.
+
+1129
+01:09:50,340 --> 01:09:54,160
+你会如何做，才能成为交易中成功的5%？
+What will you do to be a part of the five percent who succeed at trading?
+
+1130
+01:09:54,160 --> 01:09:57,560
+职业交易者为什么使用成交量分布分析？
+Why do professional traders use volume profiling?
+
+1131
+01:09:58,760 --> 01:10:04,060
+使用成交量分布识别并实施新模式的步骤是什么？
+What are the steps to recognizing and implementing a new pattern using volume profile?
+
+1132
+01:10:05,060 --> 01:10:10,200
+主观分析与客观分析的区别和重要性是什么？
+And what is the difference and importance between subjective and objective analysis?
+
+1133
+01:10:11,240 --> 01:10:13,240
+请先回答这些问题。
+Make sure you answer these questions first.
+
+1134
+01:10:13,700 --> 01:10:16,136
+接下来，
+And then next up, we're going
+
+1135
+01:10:16,136 --> 01:10:23,039
+我们将实际应用第一部分的原则。是时候将这些理论原则付诸实践了。
+to practically apply the principles from part one. It's time to put those theoretical principles into practice.
+
+1136
+01:10:23,040 --> 01:10:25,480
+欢迎来到你的交易操作手册。
+Welcome to your trading playbook.
+
+1137
+01:10:25,600 --> 01:10:28,600
+这本手册的目的很简单。
+The purpose of this playbook is very simple.
+
+1138
+01:10:28,600 --> 01:10:34,100
+它是第一部分中你学到的关键原则的摘要版本。
+It's a summarized version of what of the key principles you've learned in part one.
+
+1139
+01:10:34,100 --> 01:10:36,100
+请确保随时更新。
+Make sure you keep it up to date.
+
+1140
+01:10:36,100 --> 01:10:40,100
+在提供的操作手册中回答以下问题。
+Answer the following questions in the playbook provided.
+
+1141
+01:10:40,100 --> 01:10:42,100
+完成你的交易使命宣言。
+Complete your trading mission statement.
+
+1142
+01:10:42,100 --> 01:10:48,100
+为此，请回答以下问题：你为何想成为交易者？
+In order to do this, answer the following questions. Why do you want to be a trader?
+
+1143
+01:10:48,100 --> 01:10:51,100
+你想通过交易实现什么？
+What do you want to achieve from trading?
+
+1144
+01:10:51,100 --> 01:10:55,100
+你给自己设定的交易成功时间线是多长？
+What timeline are you giving yourself to achieve success in trading?
+
+1145
+01:10:55,600 --> 01:10:58,600
+对你而言，成功意味着什么？
+What does success mean to you?
+
+1146
+01:10:58,600 --> 01:11:01,600
+你在本课程中的目标是什么？
+What are your goals with this course?
+
+1147
+01:11:02,600 --> 01:11:07,600
+然后，在虚拟操作手册中完成培养交易优势的步骤。
+Then, complete the steps to developing an edge in your virtual playbook.
+
+1148
+01:11:08,600 --> 01:11:14,600
+最后一个问题：查看提供的欧元/美元外汇日线图。
+And the last question. Have a look at the Eurodollar FX daily chart provided.
+
+1149
+01:11:14,600 --> 01:11:22,600
+在左侧栏写下所有客观事实点，在右侧栏写下主观意见点。
+Write down all the objective fact-based points in the left column and subjective opinion-based points in the right column.
+
+1150
+01:11:23,600 --> 01:11:26,600
+祝你好运。第二模块见。
+Good luck. And see you in part two.
+
+===== END AFTER_TRANSLATE =====

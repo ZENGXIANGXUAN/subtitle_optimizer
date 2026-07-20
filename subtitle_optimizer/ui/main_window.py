@@ -11,7 +11,8 @@ from PyQt6.QtWidgets import (
     QSplitter, QFrame, QScrollArea, QComboBox,
     QGroupBox, QLineEdit, QStatusBar, QTabWidget, QMessageBox,
     QCheckBox, QGridLayout, QListWidget, QListWidgetItem,
-    QSizePolicy, QTableWidget, QTableWidgetItem
+    QSizePolicy, QTableWidget, QTableWidgetItem, QHeaderView, QAbstractItemView,
+    QDialog
 )
 from PyQt6.QtCore import Qt, QThread, pyqtSlot, QTimer, QEvent
 from PyQt6.QtGui import QFont, QColor, QPalette, QWheelEvent
@@ -28,7 +29,35 @@ class NoWheelComboBox(QComboBox):
 # 导入业务层逻辑和界面辅助
 from core.models import SubtitleEntry, parse_srt, _format_subtitle_snapshot
 from core.client import MistralClient
-from core.workers import AnalysisWorker, OptimizeWorker, SegmentWorker, TranslateWorker, BatchWorker, LANGUAGE_MAP, LANGUAGE_LABELS
+from core.workers import (
+    AnalysisResult,
+    AnalysisWorker,
+    OptimizeWorker,
+    PipelineExecutionWorker,
+    SegmentWorker,
+    TranslateWorker,
+    BatchWorker,
+    BatchGlossaryWorker,
+    TranscriptionWorker,
+    LANGUAGE_MAP,
+    LANGUAGE_LABELS,
+    format_glossary_merge_log,
+    merge_glossaries,
+)
+from core.transcription import is_media_file, media_file_filter
+from core.source_normalization import (
+    LAYOUT_AUTO,
+    LAYOUT_BILINGUAL,
+    LAYOUT_MONOLINGUAL,
+    normalize_source_entries,
+)
+from core.batch_glossary import (
+    BatchGlossarySummary,
+    GlossaryCandidate,
+    approved_candidates_to_text,
+    merge_batch_glossary_candidates,
+    unresolved_conflict_sources,
+)
 from ui.styles import APP_STYLE
 from ui.highlighter import SRTHighlighter
 # 尝试相对导入，如果失败则使用绝对导入
@@ -44,14 +73,25 @@ except ImportError:
 from core.workers import _format_glossary_prompt
 
 
+def glossary_column_labels(input_lang: str, output_lang: str) -> tuple[str, str]:
+    input_lang = (input_lang or "").strip()
+    output_lang = (output_lang or "").strip()
+    source_label = f"原文（{input_lang}）" if input_lang else "原文"
+    target_label = f"译文（{output_lang}）" if output_lang else "译文"
+    return source_label, target_label
+
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         logger.info("MainWindow初始化开始")
         self.entries: list[SubtitleEntry] = []
         self.context_text = ""
+        self.auto_glossary_text = ""
         self.client: Optional[MistralClient] = None
         self._current_file_path: Optional[str] = None
+        self._pending_media_path: Optional[str] = None
+        self._transcription_auto_optimize = False
 
         # 线程及 Worker 引用保持
         self._analysis_thread: Optional[QThread] = None
@@ -62,9 +102,17 @@ class MainWindow(QMainWindow):
         self._translate_worker: Optional[TranslateWorker] = None
         self._optimize_thread: Optional[QThread] = None
         self._optimize_worker: Optional[OptimizeWorker] = None
+        self._pipeline_thread: Optional[QThread] = None
+        self._pipeline_worker: Optional[PipelineExecutionWorker] = None
+        self._transcription_thread: Optional[QThread] = None
+        self._transcription_worker: Optional[TranscriptionWorker] = None
         self._batch_thread: Optional[QThread] = None
         self._batch_worker: Optional[BatchWorker] = None
+        self._batch_glossary_thread: Optional[QThread] = None
+        self._batch_glossary_worker: Optional[BatchGlossaryWorker] = None
+        self._batch_glossary_settings: Optional[dict] = None
         self._pipeline_active = False  # 防止停止后旧信号继续推进流水线
+        self._last_quality_report = None
 
         self._batch_files: list = []
         # 存储各阶段的字幕数据，用于对比查看
@@ -294,6 +342,26 @@ class MainWindow(QMainWindow):
         cg.addWidget(btn_analyze)
         layout.addWidget(ctx_group)
 
+        auto_group = QGroupBox("阶段一自动术语")
+        ag = QVBoxLayout(auto_group)
+        ag.setSpacing(8)
+        self.text_auto_glossary = QTextEdit()
+        self.text_auto_glossary.setPlaceholderText("阶段一分析后自动填入，可按 source->target 编辑")
+        self.text_auto_glossary.setMaximumHeight(110)
+        self.text_auto_glossary.setStyleSheet("""
+            QTextEdit {
+                background: #f8f8f0;
+                border: 2px solid #c4b89e;
+                border-radius: 6px;
+                color: #725d42;
+                font-size: 12px;
+                font-family: 'JetBrains Mono', 'Consolas', monospace;
+                padding: 4px;
+            }
+        """)
+        ag.addWidget(self.text_auto_glossary)
+        layout.addWidget(auto_group)
+
         # 优化控制
         opt_group = QGroupBox("优化控制")
         og = QVBoxLayout(opt_group)
@@ -373,10 +441,10 @@ class MainWindow(QMainWindow):
         self.chk_overwrite_single.setStyleSheet("font-size: 12px; color: #8a7b66;")
         ef.addWidget(self.chk_overwrite_single)
 
-        btn_save = QPushButton("  导出优化字幕")
-        btn_save.setObjectName("btn_success")
-        btn_save.clicked.connect(self._export_srt)
-        ef.addWidget(btn_save)
+        self.btn_export = QPushButton("  导出优化字幕")
+        self.btn_export.setObjectName("btn_success")
+        self.btn_export.clicked.connect(self._export_srt)
+        ef.addWidget(self.btn_export)
         og.addWidget(export_frame)
 
         layout.addWidget(opt_group)
@@ -399,27 +467,63 @@ class MainWindow(QMainWindow):
         SRTHighlighter(self.tab_original.document())
         tabs.addTab(self.tab_original, "原始字幕")
 
-        # Tab 2: 对比查看 — 左右两个独立 QTextEdit，各自滚动
+        # Tab 2: 对比查看 — 逐条对齐表格，适合长字幕审校
         compare_widget = QWidget()
-        compare_layout = QHBoxLayout(compare_widget)
-        compare_layout.setSpacing(6)
+        compare_layout = QVBoxLayout(compare_widget)
+        compare_layout.setSpacing(8)
         compare_layout.setContentsMargins(6, 6, 6, 6)
 
-        # 左侧：原始字幕
-        self._cmp_left_text = QTextEdit()
-        self._cmp_left_text.setReadOnly(True)
-        self._cmp_left_text.setFont(QFont("Consolas", 11))
-        SRTHighlighter(self._cmp_left_text.document())
-        self._cmp_left_text.setStyleSheet("QTextEdit { background: #f8f8f0; color: #5a3a1a; border: 1px solid #c4b89e; border-radius: 8px; }")
-        compare_layout.addWidget(self._cmp_left_text, 1)
+        compare_tools = QHBoxLayout()
+        compare_tools.setSpacing(8)
+        compare_tools.addWidget(QLabel("阶段"))
+        self.combo_compare_stage = NoWheelComboBox()
+        self.combo_compare_stage.setMinimumWidth(130)
+        self.combo_compare_stage.currentTextChanged.connect(self._refresh_compare)
+        compare_tools.addWidget(self.combo_compare_stage)
 
-        # 右侧：最终结果
-        self._cmp_right_text = QTextEdit()
-        self._cmp_right_text.setReadOnly(True)
-        self._cmp_right_text.setFont(QFont("Consolas", 11))
-        SRTHighlighter(self._cmp_right_text.document())
-        self._cmp_right_text.setStyleSheet("QTextEdit { background: #f8f8f0; color: #2ea043; border: 1px solid #238636; border-radius: 8px; }")
-        compare_layout.addWidget(self._cmp_right_text, 1)
+        self.input_compare_filter = QLineEdit()
+        self.input_compare_filter.setPlaceholderText("搜索序号、时间、原文或译文")
+        self.input_compare_filter.textChanged.connect(self._refresh_compare)
+        compare_tools.addWidget(self.input_compare_filter, 1)
+
+        self.chk_compare_changed_only = QCheckBox("仅显示变化")
+        self.chk_compare_changed_only.stateChanged.connect(self._refresh_compare)
+        compare_tools.addWidget(self.chk_compare_changed_only)
+
+        self.lbl_compare_stats = QLabel("0 条")
+        self.lbl_compare_stats.setStyleSheet("color: #8a7b66; font-size: 11px;")
+        compare_tools.addWidget(self.lbl_compare_stats)
+        compare_layout.addLayout(compare_tools)
+
+        self.table_compare = QTableWidget()
+        self.table_compare.setColumnCount(2)
+        self.table_compare.setHorizontalHeaderLabels(["原文", "处理后结果"])
+        self.table_compare.setWordWrap(True)
+        self.table_compare.setAlternatingRowColors(True)
+        self.table_compare.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
+        self.table_compare.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self.table_compare.verticalHeader().setVisible(False)
+        self.table_compare.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.Stretch)
+        self.table_compare.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
+        self.table_compare.setStyleSheet("""
+            QTableWidget {
+                background: #f8f8f0;
+                alternate-background-color: #f0e8d8;
+                color: #5a3a1a;
+                border: 1px solid #c4b89e;
+                border-radius: 8px;
+                gridline-color: #d7ccb6;
+                font-size: 12px;
+            }
+            QHeaderView::section {
+                background: #f0e8d8;
+                color: #725d42;
+                font-weight: 600;
+                border: 1px solid #c4b89e;
+                padding: 6px;
+            }
+        """)
+        compare_layout.addWidget(self.table_compare, 1)
 
         tabs.addTab(compare_widget, "对比查看")
 
@@ -534,6 +638,14 @@ class MainWindow(QMainWindow):
         self.combo_model.setPlaceholderText("输入或选择模型名称")
         lc.addWidget(self.combo_model)
 
+        lc.addWidget(_section_lbl("Transcription model"))
+        self.input_transcription_model = QLineEdit("voxtral-mini-latest")
+        self.input_transcription_model.setPlaceholderText("voxtral-mini-latest")
+        lc.addWidget(self.input_transcription_model)
+        self.chk_transcription_wav = QCheckBox("转录提取音频使用 WAV（质量优先，临时文件更大）")
+        self.chk_transcription_wav.setToolTip("默认使用 MP3；勾选后视频转录会提取 16k mono WAV 再发送给转录 API。")
+        lc.addWidget(self.chk_transcription_wav)
+
         lc.addWidget(_section_lbl("性能参数"))
         params_row = QHBoxLayout()
         params_row.setSpacing(12)
@@ -559,7 +671,22 @@ class MainWindow(QMainWindow):
         params_row.addLayout(batch_wrap)
         lc.addLayout(params_row)
 
-        lc.addWidget(_section_lbl("原文行数"))
+        lc.addWidget(_section_lbl("输入字幕布局"))
+        layout_row = QHBoxLayout()
+        layout_row.setSpacing(12)
+        layout_desc = QLabel("布局识别：")
+        layout_desc.setStyleSheet("color: #8a7b66; font-size: 12px;")
+        layout_row.addWidget(layout_desc)
+        self.combo_source_layout = NoWheelComboBox()
+        self.combo_source_layout.addItem("自动识别（推荐）", LAYOUT_AUTO)
+        self.combo_source_layout.addItem("单语字幕（合并全部换行）", LAYOUT_MONOLINGUAL)
+        self.combo_source_layout.addItem("双语字幕（提取原文行）", LAYOUT_BILINGUAL)
+        self.combo_source_layout.setToolTip(
+            "自动模式优先防止丢行；同文字体系的双语字幕请手动选择双语布局"
+        )
+        layout_row.addWidget(self.combo_source_layout, 1)
+        lc.addLayout(layout_row)
+
         order_row = QHBoxLayout()
         order_row.setSpacing(12)
         order_desc = QLabel("原文在第几行：")
@@ -599,6 +726,8 @@ class MainWindow(QMainWindow):
         self.combo_output_lang.setCurrentText("中文")
         out_lang_wrap.addWidget(self.combo_output_lang)
         lang_row.addLayout(out_lang_wrap)
+        self.combo_input_lang.currentTextChanged.connect(lambda _text: self._refresh_glossary_headers())
+        self.combo_output_lang.currentTextChanged.connect(lambda _text: self._refresh_glossary_headers())
 
         lc.addLayout(lang_row)
 
@@ -628,15 +757,19 @@ class MainWindow(QMainWindow):
         gloss_title_row.addStretch()
         rc.addLayout(gloss_title_row)
 
-        gloss_hint = QLabel("在表格中填写英文和对应的中文翻译，点击「添加行」新增术语")
+        gloss_hint = QLabel("在表格中填写原文词汇和对应译文，点击「添加行」新增术语")
         gloss_hint.setStyleSheet("color: #8a7b66; font-size: 11px;")
         rc.addWidget(gloss_hint)
 
         # 术语表表格
         self.table_glossary = QTableWidget()
         self.table_glossary.setColumnCount(2)
-        self.table_glossary.setHorizontalHeaderLabels(["英文 (Source)", "中文 (Target)"])
-        self.table_glossary.horizontalHeader().setStretchLastSection(True)
+        source_label, target_label = glossary_column_labels(
+            self.combo_input_lang.currentText() if hasattr(self, "combo_input_lang") else "",
+            self.combo_output_lang.currentText() if hasattr(self, "combo_output_lang") else "",
+        )
+        self.table_glossary.setHorizontalHeaderLabels([source_label, target_label])
+        self.table_glossary.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
         self.table_glossary.setStyleSheet("""
             QTableWidget {
                 background: #f8f8f0;
@@ -662,6 +795,7 @@ class MainWindow(QMainWindow):
         btn_row = QHBoxLayout()
         btn_add = QPushButton("+ 添加行")
         btn_del = QPushButton("- 删除行")
+        btn_sort = QPushButton("去重排序")
         btn_add.setStyleSheet("""
             QPushButton {
                 background: #19c8b9;
@@ -684,10 +818,23 @@ class MainWindow(QMainWindow):
             }
             QPushButton:hover { background: #d4956b; }
         """)
+        btn_sort.setStyleSheet("""
+            QPushButton {
+                background: #f0e8d8;
+                color: #5a3a1a;
+                border: 1px solid #c4b89e;
+                border-radius: 4px;
+                padding: 6px 12px;
+                font-weight: 600;
+            }
+            QPushButton:hover { background: #e6dcc8; }
+        """)
         btn_add.clicked.connect(self._glossary_add_row)
         btn_del.clicked.connect(self._glossary_del_row)
+        btn_sort.clicked.connect(self._glossary_normalize)
         btn_row.addWidget(btn_add)
         btn_row.addWidget(btn_del)
+        btn_row.addWidget(btn_sort)
         btn_row.addStretch()
         rc.addLayout(btn_row)
 
@@ -768,6 +915,17 @@ class MainWindow(QMainWindow):
         og_out.addWidget(note)
         ll.addWidget(out_group)
 
+        self.chk_batch_glossary_review = QCheckBox("手动审核术语")
+        self.chk_batch_glossary_review.setChecked(False)
+        self.chk_batch_glossary_review.setToolTip("关闭时由 AI 自动自审并继续；开启时弹出术语表供手动删除/确认。")
+        self.chk_batch_glossary_review.stateChanged.connect(self._on_batch_glossary_review_changed)
+        ll.addWidget(self.chk_batch_glossary_review)
+
+        self.chk_batch_transcribe_only = QCheckBox("仅转录")
+        self.chk_batch_transcribe_only.setToolTip("只将音频/视频转成原目录同名 .srt，不执行后续优化")
+        self.chk_batch_transcribe_only.stateChanged.connect(self._on_batch_transcribe_only_changed)
+        ll.addWidget(self.chk_batch_transcribe_only)
+
         ctrl_row = QHBoxLayout()
         ctrl_row.setSpacing(8)
         self.btn_batch_start = QPushButton("▶  开始批量处理")
@@ -838,9 +996,19 @@ class MainWindow(QMainWindow):
     def _on_same_dir_changed(self, state):
         self.out_dir_widget.setVisible(state == 0)
 
+    def _on_batch_transcribe_only_changed(self, state):
+        transcribe_only = state != 0
+        if transcribe_only:
+            self.chk_batch_glossary_review.setChecked(False)
+
+    def _on_batch_glossary_review_changed(self, state):
+        glossary_review = state != 0
+        if glossary_review:
+            self.chk_batch_transcribe_only.setChecked(False)
+
     def _batch_add_files(self):
         paths, _ = QFileDialog.getOpenFileNames(
-            self, "选择字幕文件", "", "SRT 字幕文件 (*.srt);;所有文件 (*)"
+            self, "选择字幕文件", "", media_file_filter()
         )
         for p in paths:
             if p not in self._batch_files:
@@ -874,16 +1042,41 @@ class MainWindow(QMainWindow):
         item = self.batch_list.item(row)
         if not item:
             return
+        if status == "skipped":
+            name = Path(item.data(Qt.ItemDataRole.UserRole)).name
+            item.setText(f"SKIP  {name}")
+            return
         icons = {"processing": "🔄", "done": "✅", "error": "❌", "pending": "⏳"}
         name = Path(item.data(Qt.ItemDataRole.UserRole)).name
         item.setText(f"{icons.get(status, '⏳')}  {name}")
+
+    def _batch_settings(self) -> dict:
+        out_dir = None
+        if not self.chk_same_dir.isChecked():
+            out_dir = self.batch_out_dir.text().strip() or None
+        return {
+            "client": self._get_client(),
+            "out_dir": out_dir,
+            "overwrite": self.chk_overwrite_batch.isChecked(),
+            "concurrency": max(1, min(100, int(self.input_concurrency.text() or "6"))),
+            "batch_size": max(1, min(50, int(self.input_batch.text() or "5"))),
+            "raw_glossary": self._glossary_to_text(),
+            "files": list(self._batch_files),
+            "input_lang": self.combo_input_lang.currentText(),
+            "output_lang": self.combo_output_lang.currentText(),
+            "transcribe_only": self.chk_batch_transcribe_only.isChecked(),
+            "manual_glossary_review": self.chk_batch_glossary_review.isChecked(),
+            "source_layout": self._source_layout(),
+            "session_glossary": "",
+        }
 
     def _batch_start(self):
         if not self._batch_files:
             QMessageBox.warning(self, "提示", "请先添加要处理的文件")
             return
-        client = self._get_client()
-        if not client:
+
+        settings = self._batch_settings()
+        if not settings["client"]:
             return
 
         # ✅ 防止重复点击导致旧 worker 信号触发闪退
@@ -893,33 +1086,42 @@ class MainWindow(QMainWindow):
         self.btn_batch_stop.setEnabled(True)
         self.batch_overall_bar.setMaximum(len(self._batch_files))
         self.batch_overall_bar.setValue(0)
+        self._batch_completed_count = 0
         self.batch_log.clear()
         self._batch_log_msg(f"▶ 开始批量处理 {len(self._batch_files)} 个文件")
 
         for i in range(self.batch_list.count()):
             self._batch_set_item_status(i, "pending")
 
-        out_dir = None
-        if not self.chk_same_dir.isChecked():
-            out_dir = self.batch_out_dir.text().strip() or None
-        overwrite = self.chk_overwrite_batch.isChecked()
-        concurrency = max(1, min(100, int(self.input_concurrency.text() or "6")))
-        batch_size = max(1, min(50, int(self.input_batch.text() or "5")))
+        if not settings["transcribe_only"]:
+            self._start_batch_glossary_preanalysis(settings)
+            return
 
-        raw_glossary = self._glossary_to_text()
+        self._start_batch_worker(settings)
+
+    def _batch_runtime_glossary(self, settings: dict) -> str:
+        fixed_glossary = self._glossary_to_text()
+        session_glossary = (settings.get("session_glossary") or "").strip()
+        return "\n".join(part for part in (fixed_glossary, session_glossary) if part)
+
+    def _start_batch_worker(self, settings: dict):
+        runtime_glossary = self._batch_runtime_glossary(settings)
         self._batch_worker = BatchWorker(
-            client=client,
-            files=list(self._batch_files),
-            out_dir=out_dir,
-            concurrency=concurrency,
-            batch_size=batch_size,
-            overwrite=overwrite,
+            client=settings["client"],
+            files=settings["files"],
+            out_dir=settings["out_dir"],
+            concurrency=settings["concurrency"],
+            batch_size=settings["batch_size"],
+            overwrite=settings["overwrite"],
             target_first=self._target_first(),
-            glossary_prompt=self._get_glossary_prompt(),
-            raw_glossary=raw_glossary,
+            glossary_prompt=_format_glossary_prompt(runtime_glossary),
+            raw_glossary=runtime_glossary,
             original_line=self._get_original_line_index(),
-            input_lang=self.combo_input_lang.currentText(),
-            output_lang=self.combo_output_lang.currentText(),
+            transcription_audio_format=self._transcription_audio_format(),
+            transcribe_only=settings["transcribe_only"],
+            input_lang=settings["input_lang"],
+            output_lang=settings["output_lang"],
+            source_layout=settings["source_layout"],
         )
         self._batch_thread = QThread()
         self._batch_worker.moveToThread(self._batch_thread)
@@ -929,12 +1131,93 @@ class MainWindow(QMainWindow):
         self._batch_worker.file_analysis_done.connect(self._on_batch_analysis_done)
         self._batch_worker.file_progress.connect(self._on_batch_file_progress)
         self._batch_worker.file_done.connect(self._on_batch_file_done)
+        self._batch_worker.file_skipped.connect(self._on_batch_file_skipped)
         self._batch_worker.file_error.connect(self._on_batch_file_error)
         self._batch_worker.all_done.connect(self._on_batch_all_done)
         self._batch_worker.log.connect(self._batch_log_msg)
         self._batch_worker.all_done.connect(self._batch_thread.quit)
         self._batch_thread.finished.connect(self._batch_thread.deleteLater)
         self._batch_thread.start()
+
+    def _start_batch_glossary_preanalysis(self, settings: dict):
+        self._batch_log_msg("📖 开始批量术语统一...")
+        self._batch_glossary_settings = settings
+        self._batch_glossary_worker = BatchGlossaryWorker(
+            client=settings["client"],
+            files=settings["files"],
+            concurrency=settings["concurrency"],
+            fixed_glossary=settings["raw_glossary"],
+            original_line=self._get_original_line_index(),
+            transcription_audio_format=self._transcription_audio_format(),
+            input_lang=settings["input_lang"],
+            output_lang=settings["output_lang"],
+            manual_review=settings.get("manual_glossary_review", False),
+            source_layout=settings["source_layout"],
+        )
+        self._batch_glossary_thread = QThread()
+        self._batch_glossary_worker.moveToThread(self._batch_glossary_thread)
+        self._batch_glossary_thread.started.connect(self._batch_glossary_worker.run)
+        self._batch_glossary_worker.log.connect(self._batch_log_msg)
+        self._batch_glossary_worker.finished.connect(self._after_batch_glossary_preanalysis)
+        self._batch_glossary_worker.finished.connect(self._batch_glossary_thread.quit)
+        self._batch_glossary_worker.error.connect(self._on_batch_glossary_error)
+        self._batch_glossary_worker.error.connect(self._batch_glossary_thread.quit)
+        self._batch_glossary_thread.finished.connect(self._batch_glossary_thread.deleteLater)
+        self._batch_glossary_thread.start()
+
+    def _after_batch_glossary_preanalysis(self, summary: BatchGlossarySummary):
+        settings = self._batch_glossary_settings
+        if not settings:
+            self._reset_batch_controls_after_preanalysis_stop()
+            return
+
+        manual_review = bool(settings.get("manual_glossary_review"))
+        if summary.failures:
+            self._batch_log_msg(f"⚠️ 词汇预分析跳过 {len(summary.failures)} 个文件")
+        settings["session_glossary"] = summary.session_glossary
+        session_count = len([line for line in summary.session_glossary.splitlines() if line.strip()])
+        if session_count:
+            self._batch_log_msg(f"📖 已生成本次批量临时术语 {session_count} 条，仅用于当前批量，不写入固定词汇表")
+        if not manual_review and summary.fixed_glossary:
+            self._append_fixed_glossary_text(summary.fixed_glossary)
+            fixed_count = len([line for line in summary.fixed_glossary.splitlines() if line.strip()])
+            self._batch_log_msg(f"✅ AI 自审保留固定术语 {fixed_count} 条，已加入固定词汇表")
+
+        if not manual_review:
+            if not session_count and len(summary.failures) >= len(settings["files"]):
+                QMessageBox.warning(self, "批量术语统一失败", "所有文件都无法完成词汇预分析，已停止批量处理。")
+                self._reset_batch_controls_after_preanalysis_stop()
+                return
+            self._start_batch_worker(settings)
+            return
+
+        if not summary.candidates:
+            if not session_count and len(summary.failures) >= len(settings["files"]):
+                QMessageBox.warning(self, "批量词汇整理失败", "所有文件都无法完成词汇预分析，已停止批量处理。")
+                self._reset_batch_controls_after_preanalysis_stop()
+                return
+            self._batch_log_msg("📖 没有建议永久保存的固定术语，继续批量处理")
+            self._start_batch_worker(settings)
+            return
+
+        approved = self._confirm_batch_glossary(summary)
+        if approved is None:
+            self._batch_log_msg("⏹ 已取消批量词汇整理，未开始正式批量处理")
+            self._reset_batch_controls_after_preanalysis_stop()
+            return
+        if approved:
+            self._append_fixed_glossary_text(approved)
+            self._batch_log_msg("✅ 已加入固定词汇表并保存配置")
+        self._start_batch_worker(settings)
+
+    def _on_batch_glossary_error(self, message: str):
+        QMessageBox.critical(self, "批量词汇整理失败", message)
+        self._batch_log_msg(f"❌ 批量词汇整理失败：{message}")
+        self._reset_batch_controls_after_preanalysis_stop()
+
+    def _reset_batch_controls_after_preanalysis_stop(self):
+        self.btn_batch_start.setEnabled(True)
+        self.btn_batch_stop.setEnabled(False)
 
     def _cleanup_worker_thread(self, worker, thread, timeout_ms: int = 5000):
         """安全清理 worker 和 thread：取消任务 → 退出线程 → 等待结束"""
@@ -958,11 +1241,18 @@ class MainWindow(QMainWindow):
                 pass
 
     def _cleanup_batch_pipeline(self):
+        self._cleanup_worker_thread(self._batch_glossary_worker, self._batch_glossary_thread)
+        self._batch_glossary_worker = None
+        self._batch_glossary_thread = None
+        self._batch_glossary_settings = None
         self._cleanup_worker_thread(self._batch_worker, self._batch_thread)
         self._batch_worker = None
         self._batch_thread = None
 
     def _cleanup_single_pipeline(self):
+        self._cleanup_worker_thread(self._transcription_worker, self._transcription_thread)
+        self._transcription_worker = None
+        self._transcription_thread = None
         self._cleanup_worker_thread(self._analysis_worker, self._analysis_thread)
         self._analysis_worker = None
         self._analysis_thread = None
@@ -975,8 +1265,13 @@ class MainWindow(QMainWindow):
         self._cleanup_worker_thread(self._optimize_worker, self._optimize_thread)
         self._optimize_worker = None
         self._optimize_thread = None
+        self._cleanup_worker_thread(self._pipeline_worker, self._pipeline_thread)
+        self._pipeline_worker = None
+        self._pipeline_thread = None
 
     def _batch_stop(self):
+        if self._batch_glossary_worker:
+            self._batch_glossary_worker.cancel()
         if self._batch_worker:
             self._batch_worker.cancel()
         self.btn_batch_start.setEnabled(True)
@@ -1001,13 +1296,22 @@ class MainWindow(QMainWindow):
     @pyqtSlot(int, str, str)
     def _on_batch_file_done(self, file_idx: int, filename: str, out_path: str):
         self._batch_set_item_status(file_idx, "done")
-        self.batch_overall_bar.setValue(file_idx + 1)
+        self._batch_completed_count += 1
+        self.batch_overall_bar.setValue(self._batch_completed_count)
         self._batch_log_msg(f"✅ [{filename}] 完成 → {out_path}")
+
+    @pyqtSlot(int, str, str)
+    def _on_batch_file_skipped(self, file_idx: int, filename: str, reason: str):
+        self._batch_set_item_status(file_idx, "skipped")
+        self._batch_completed_count += 1
+        self.batch_overall_bar.setValue(self._batch_completed_count)
+        self._batch_log_msg(f"SKIP [{filename}] 跳过：{reason}")
 
     @pyqtSlot(int, str, str)
     def _on_batch_file_error(self, file_idx: int, filename: str, err: str):
         self._batch_set_item_status(file_idx, "error")
-        self.batch_overall_bar.setValue(file_idx + 1)
+        self._batch_completed_count += 1
+        self.batch_overall_bar.setValue(self._batch_completed_count)
         self._batch_log_msg(f"❌ [{filename}] 失败：{err}")
 
     def _on_batch_all_done(self):
@@ -1027,7 +1331,8 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(self, "提示", "请先输入 Mistral API Key")
             return None
         base_url = self.input_base_url.text().strip()
-        return MistralClient(key, self.combo_model.currentText(), base_url)
+        transcription_model = self.input_transcription_model.text().strip()
+        return MistralClient(key, self.combo_model.currentText(), base_url, transcription_model)
 
     def _target_first(self) -> bool:
         # 输出顺序：默认中文在前
@@ -1037,38 +1342,154 @@ class MainWindow(QMainWindow):
         """获取原文行号索引（0-based）"""
         return self.combo_original_line.currentIndex()
 
+    def _source_layout(self) -> str:
+        """Return the source-layout policy shared by single and batch tasks."""
+        return self.combo_source_layout.currentData() or LAYOUT_AUTO
+
     def _extract_original_line(self, entries: list[SubtitleEntry]) -> list[SubtitleEntry]:
-        """根据设置提取原文行，将双语字幕转换为单语言字幕"""
-        line_idx = self._get_original_line_index()
+        """Normalize source layout without dropping wrapped monolingual lines."""
+        input_code = LANGUAGE_MAP.get(
+            self.combo_input_lang.currentText(), ("en", "English")
+        )[0]
+        output_code = LANGUAGE_MAP.get(
+            self.combo_output_lang.currentText(), ("zh", "中文")
+        )[0]
+        normalized = normalize_source_entries(
+            entries,
+            source_line_index=self._get_original_line_index(),
+            input_lang_code=input_code,
+            output_lang_code=output_code,
+            requested_layout=self._source_layout(),
+        )
+        self._last_source_layout = normalized.detected_layout
+        self._last_source_layout_confidence = normalized.confidence
+        self._last_source_layout_warnings = normalized.warnings
+        return normalized.entries
 
-        extracted = []
-        for entry in entries:
-            if len(entry.lines) > 1:
-                # 双语字幕：提取指定行
-                if line_idx < len(entry.lines):
-                    original_text = entry.lines[line_idx]
-                    new_entry = SubtitleEntry(
-                        entry.index, entry.start_time, entry.end_time,
-                        [original_text]
-                    )
-                    new_entry.original_lines = list(entry.original_lines or entry.lines)
-                    extracted.append(new_entry)
-                else:
-                    # 设置的行号超出范围，保留原样
-                    extracted.append(entry)
-            else:
-                # 单语字幕：直接保留
-                extracted.append(entry)
+    def _load_srt_content(self, path: str, content: str, cleanup: bool = True):
+        self.entries = parse_srt(content)
+        self._last_quality_report = None
+        if hasattr(self, "btn_export"):
+            self.btn_export.setEnabled(True)
+        if cleanup:
+            self._cleanup_single_pipeline()
+        self._pending_media_path = None
+        self._set_auto_glossary_text("")
+        self._stage_data.clear()
 
-        return extracted
+        if self.entries:
+            self.entries = self._extract_original_line(self.entries)
+            self._log(
+                f"Detected source layout: {self._last_source_layout} "
+                f"(confidence {self._last_source_layout_confidence:.0%})"
+            )
+            for warning in self._last_source_layout_warnings:
+                self._log(f"⚠️ {warning}")
+
+        self._current_file_path = path
+        self.lbl_file.setText(f"馃搫 {Path(path).name}")
+        self.tab_original.setPlainText(content)
+        n = len(self.entries)
+        self.lbl_stat.setText(f"  {n} subtitles")
+        self._save_stage_data("原始字幕", self.entries)
+        self._refresh_compare()
+        self.lbl_stat.setStyleSheet("""
+            color: #3FB950; font-size: 12px; background: #12261E;
+            border: 1px solid #238636; border-radius: 12px; padding: 3px 12px;
+        """)
+        self.progress_bar.setMaximum(n)
+        self.progress_bar.setValue(0)
+        self._log(f"Loaded: {path}, {n} subtitles")
+        self.status_bar.showMessage(f"Loaded {n} subtitles · {Path(path).name}")
+
+    def _select_media_for_single(self, media_path: str):
+        self._cleanup_single_pipeline()
+        self._pending_media_path = media_path
+        self._transcription_auto_optimize = False
+        self.entries = []
+        self._current_file_path = media_path
+        self._set_auto_glossary_text("")
+        self._stage_data.clear()
+        self.lbl_file.setText(f"Media selected: {Path(media_path).name}")
+        self.tab_original.setPlainText("")
+        self.progress_bar.setMaximum(1)
+        self.progress_bar.setValue(0)
+        self.lbl_stat.setText("  media pending")
+        self._log(f"Media selected; click Start Optimize to transcribe first: {media_path}")
+        self.status_bar.showMessage(f"Media selected · click Start Optimize: {Path(media_path).name}")
+
+    def _start_single_transcription(self, media_path: str, auto_optimize: bool = False):
+        client = self._get_client()
+        if not client:
+            return
+        self._cleanup_single_pipeline()
+        self._transcription_auto_optimize = auto_optimize
+        self._set_auto_glossary_text("")
+        self._stage_data.clear()
+        self.entries = []
+        self._current_file_path = None
+        self.lbl_file.setText(f"Transcribing {Path(media_path).name}")
+        self.tab_original.setPlainText("")
+        self.progress_bar.setMaximum(0)
+        self.progress_bar.setValue(0)
+        self.btn_optimize.setEnabled(False)
+        self._log(f"Transcribing media to SRT: {media_path}")
+        self.status_bar.showMessage(f"Transcribing media: {Path(media_path).name}")
+
+        self._transcription_worker = TranscriptionWorker(
+            client,
+            media_path,
+            transcription_model=self.input_transcription_model.text().strip(),
+            transcription_audio_format=self._transcription_audio_format(),
+        )
+        self._transcription_thread = QThread()
+        self._transcription_worker.moveToThread(self._transcription_thread)
+        self._transcription_thread.started.connect(self._transcription_worker.run)
+        self._transcription_worker.log.connect(self._log)
+        self._transcription_worker.finished.connect(self._on_single_transcription_done)
+        self._transcription_worker.error.connect(self._on_single_transcription_error)
+        self._transcription_worker.finished.connect(self._transcription_worker.deleteLater)
+        self._transcription_worker.error.connect(self._transcription_worker.deleteLater)
+        self._transcription_worker.finished.connect(self._transcription_thread.quit)
+        self._transcription_worker.error.connect(self._transcription_thread.quit)
+        self._transcription_thread.finished.connect(self._on_single_transcription_thread_finished)
+        self._transcription_thread.finished.connect(self._transcription_thread.deleteLater)
+        self._transcription_thread.start()
+
+    @pyqtSlot(str, str)
+    def _on_single_transcription_done(self, srt_path: str, content: str):
+        self.progress_bar.setMaximum(1)
+        self.progress_bar.setValue(1)
+        self.btn_optimize.setEnabled(True)
+        self._log(f"Transcription complete: {srt_path}")
+        self._load_srt_content(srt_path, content, cleanup=False)
+
+    def _on_single_transcription_error(self, err: str):
+        self.progress_bar.setMaximum(1)
+        self.progress_bar.setValue(0)
+        self.btn_optimize.setEnabled(True)
+        self._log(f"Transcription failed: {err}")
+        self.status_bar.showMessage("Transcription failed")
+        QMessageBox.critical(self, "Transcription failed", err)
+
+    def _on_single_transcription_thread_finished(self):
+        should_auto_optimize = self._transcription_auto_optimize and bool(self.entries)
+        self._transcription_worker = None
+        self._transcription_thread = None
+        self._transcription_auto_optimize = False
+        if should_auto_optimize:
+            QTimer.singleShot(0, self._run_optimize)
 
     def _open_file(self):
         logger.info("开始打开字幕文件")
         path, _ = QFileDialog.getOpenFileName(
-            self, "打开字幕文件", "", "SRT 字幕文件 (*.srt);;所有文件 (*)"
+            self, "打开字幕文件", "", media_file_filter()
         )
         if not path:
             logger.info("用户取消文件选择")
+            return
+        if is_media_file(path):
+            self._select_media_for_single(path)
             return
         try:
             logger.debug(f"尝试读取文件: {path}")
@@ -1076,18 +1497,26 @@ class MainWindow(QMainWindow):
                 content = f.read()
             logger.info(f"文件读取成功，开始解析SRT内容")
             self.entries = parse_srt(content)
+            self._last_quality_report = None
+            if hasattr(self, "btn_export"):
+                self.btn_export.setEnabled(True)
+            self._pending_media_path = None
+            self._transcription_auto_optimize = False
 
             # 清理旧的 worker/thread，防止闪退
             self._cleanup_single_pipeline()
+            self._set_auto_glossary_text("")
             # 重置阶段数据
             self._stage_data.clear()
 
-            # 自动检测双语字幕并提取原文行
-            if self.entries and len(self.entries[0].lines) > 1:
-                original_count = len(self.entries)
+            if self.entries:
                 self.entries = self._extract_original_line(self.entries)
-                line_num = self._get_original_line_index() + 1
-                self._log(f"📋 检测到双语字幕（{original_count}条），已提取原文行（第{line_num}行）")
+                self._log(
+                    f"📋 原文布局：{self._last_source_layout} "
+                    f"(置信度 {self._last_source_layout_confidence:.0%})"
+                )
+                for warning in self._last_source_layout_warnings:
+                    self._log(f"⚠️ {warning}")
 
             self._current_file_path = path
             self.lbl_file.setText(f"📄 {Path(path).name}")
@@ -1111,6 +1540,69 @@ class MainWindow(QMainWindow):
             logger.error(error_msg, exc_info=True)  # 添加完整的异常信息
             QMessageBox.critical(self, "错误", error_msg)
 
+    def _coerce_analysis_result(self, result) -> AnalysisResult:
+        if isinstance(result, AnalysisResult):
+            return result
+        return AnalysisResult(context=str(result or ""))
+
+    def _set_auto_glossary_text(self, text: str):
+        self.auto_glossary_text = text or ""
+        if hasattr(self, "text_auto_glossary"):
+            self.text_auto_glossary.setPlainText(self.auto_glossary_text)
+
+    def _get_auto_glossary_text(self) -> str:
+        if hasattr(self, "text_auto_glossary"):
+            self.auto_glossary_text = self.text_auto_glossary.toPlainText().strip()
+        return self.auto_glossary_text
+
+    def _get_merged_glossary_text(self, entries=None) -> str:
+        user_glossary = self._glossary_to_text()
+        if entries and user_glossary:
+            from core.workers import filter_glossary_by_entries
+            user_glossary = filter_glossary_by_entries(user_glossary, entries)
+        return merge_glossaries(user_glossary, self._get_auto_glossary_text()).raw
+
+    def _get_merged_glossary_prompt(self, entries=None) -> str:
+        return _format_glossary_prompt(self._get_merged_glossary_text(entries=entries))
+
+    def _log_auto_glossary_merge(self, auto_glossary: str):
+        merge = merge_glossaries(self._glossary_to_text(), auto_glossary)
+        if not auto_glossary:
+            self._log("📖 阶段一未提取自动术语")
+            return
+        for line in format_glossary_merge_log(merge):
+            self._log(f"📖 {line}")
+
+    def _confirm_auto_glossary_for_single_run(self) -> bool:
+        auto_glossary = self._get_auto_glossary_text()
+        if not auto_glossary:
+            return True
+
+        filename = Path(self._current_file_path).name if self._current_file_path else "当前文件"
+        summary = merge_batch_glossary_candidates(
+            [(filename, auto_glossary)],
+            fixed_glossary=self._glossary_to_text(),
+        )
+        if not summary.candidates:
+            self._set_auto_glossary_text("")
+            self._log("📖 阶段一未发现需要加入固定词汇表的新术语")
+            return True
+
+        approved = self._confirm_glossary_candidates(
+            summary,
+            title="确认阶段一术语候选",
+            description="删除不合适的候选词；确认后剩余词汇会立即加入固定词汇表，并用于本次后续处理。",
+        )
+        if approved is None:
+            return False
+
+        self._set_auto_glossary_text("")
+        if approved:
+            self._append_fixed_glossary_text(approved)
+            count = len([line for line in approved.splitlines() if line.strip()])
+            self._log(f"📖 已加入固定词汇表：{count} 条")
+        return True
+
     def _run_analysis(self):
         logger.info("开始执行翻译情景分析")
         if not self.entries:
@@ -1126,6 +1618,7 @@ class MainWindow(QMainWindow):
         logger.info("开始分析翻译情景")
         self._log("🔍 开始分析翻译情景...")
         self.text_context.setPlainText("分析中...")
+        self._set_auto_glossary_text("")
 
         self._analysis_worker = AnalysisWorker(
             client, self.entries,
@@ -1147,15 +1640,21 @@ class MainWindow(QMainWindow):
         logger.debug("启动分析线程")
         self._analysis_thread.start()
 
-    def _on_analysis_done(self, result: str):
+    def _on_analysis_done(self, result):
         logger.info("翻译情景分析完成")
-        self.context_text = result
-        self.text_context.setPlainText(result)
+        analysis = self._coerce_analysis_result(result)
+        self.context_text = analysis.context
+        self.text_context.setPlainText(analysis.context)
+        self._set_auto_glossary_text(analysis.auto_glossary)
         self._log("✅ 情景分析完成")
+        self._log_auto_glossary_merge(analysis.auto_glossary)
 
     def _run_optimize(self):
         logger.info("开始执行字幕优化流程")
         if not self.entries:
+            if self._pending_media_path:
+                self._start_single_transcription(self._pending_media_path, auto_optimize=True)
+                return
             msg = "请先加载字幕文件"
             logger.warning(msg)
             QMessageBox.warning(self, "提示", msg)
@@ -1167,6 +1666,7 @@ class MainWindow(QMainWindow):
 
         # ✅ 防止重复点击导致旧 worker 信号触发闪退
         self._cleanup_single_pipeline()
+        self._last_quality_report = None
 
         # 重置阶段数据（保留原始字幕）
         original = self._stage_data.get("原始字幕")
@@ -1181,9 +1681,13 @@ class MainWindow(QMainWindow):
         for e in self.entries:
             e.status = "pending"
             e.optimized_lines = None
+            e.stage_status = "pending"
+            e.error_msg = ""
+            e.quality_flags.clear()
 
-        self._cmp_left_text.setPlainText("")
-        self._cmp_right_text.setPlainText("")
+        if hasattr(self, "table_compare"):
+            self.table_compare.setRowCount(0)
+            self.lbl_compare_stats.setText("0 条")
 
         self.progress_bar.setValue(0)
         self.progress_bar.setMaximum(len(self.entries))
@@ -1192,6 +1696,7 @@ class MainWindow(QMainWindow):
         logger.info("开始第一阶段：分析翻译情景")
         self._log("🔍 [阶段1/4] 开始分析翻译情景...")
         self.text_context.setPlainText("分析中...")
+        self._set_auto_glossary_text("")
 
         self._analysis_worker = AnalysisWorker(
             client, self.entries,
@@ -1210,45 +1715,133 @@ class MainWindow(QMainWindow):
         logger.debug("启动分析线程")
         self._analysis_thread.start()
 
-    def _after_analysis(self, result: str, client: MistralClient):
+    def _after_analysis(self, result, client: MistralClient):
         if not self._pipeline_active:
             return
         logger.info("情景分析完成，进入第二阶段：智能重组")
-        self.context_text = result
-        self.text_context.setPlainText(result)
+        analysis = self._coerce_analysis_result(result)
+        self.context_text = analysis.context
+        self.text_context.setPlainText(analysis.context)
+        self._set_auto_glossary_text(analysis.auto_glossary)
         self._log("✅ [阶段1/4] 情景分析完成")
+        if not self._confirm_auto_glossary_for_single_run():
+            self._on_pipeline_error("已停止：阶段一自动术语未确认")
+            return
+        if self._get_auto_glossary_text():
+            self._log_auto_glossary_merge(self._get_auto_glossary_text())
 
         concurrency = max(1, min(100, int(self.input_concurrency.text() or "6")))
         batch_size = max(1, min(50, int(self.input_batch.text() or "5")))
-
         seg_batch_size = max(10, min(30, int(self.input_batch.text() or "15")))
-        glossary_prompt = self._get_glossary_prompt(entries=self.entries)
+        glossary_prompt = self._get_merged_glossary_prompt(entries=self.entries)
 
-        logger.info(f"开始智能重组 {len(self.entries)} 条字幕")
-        self._log(f"🔗 [阶段2/4] 开始智能重组 {len(self.entries)} 条字幕...")
-        self._set_stage(1)
-        self.progress_bar.setValue(0)
-        self.progress_bar.setMaximum(len(self.entries))
-        self.lbl_progress_detail.setText(f"智能重组：0/{len(self.entries)}")
-
-        self._segment_worker = SegmentWorker(
-            client, self.entries, result, glossary_prompt, concurrency, seg_batch_size,
+        self._log("🔗 [统一任务] 已冻结情景与术语，开始语义重组 → 翻译 → 审校")
+        self._pipeline_worker = PipelineExecutionWorker(
+            client,
+            self.entries,
+            analysis.context,
+            glossary_prompt,
+            concurrency=concurrency,
+            batch_size=batch_size,
+            segment_batch_size=seg_batch_size,
             input_lang=self.combo_input_lang.currentText(),
-            output_lang=self.combo_output_lang.currentText()
+            output_lang=self.combo_output_lang.currentText(),
         )
-        self._segment_thread = QThread()
-        self._segment_worker.moveToThread(self._segment_thread)
-        self._segment_thread.started.connect(self._segment_worker.run)
-        self._segment_worker.progress.connect(self._on_segment_progress)
-        self._segment_worker.log.connect(self._log)
-        self._segment_worker.all_done.connect(
-            lambda new_entries: self._after_segment(new_entries, client, concurrency, batch_size)
+        self._pipeline_thread = QThread()
+        self._pipeline_worker.moveToThread(self._pipeline_thread)
+        self._pipeline_thread.started.connect(self._pipeline_worker.run)
+        self._pipeline_worker.stage_started.connect(self._on_unified_stage_started)
+        self._pipeline_worker.stage_progress.connect(self._on_unified_stage_progress)
+        self._pipeline_worker.stage_snapshot.connect(self._on_unified_stage_snapshot)
+        self._pipeline_worker.log.connect(self._log)
+        self._pipeline_worker.finished.connect(self._on_unified_pipeline_done)
+        self._pipeline_worker.finished.connect(self._pipeline_thread.quit)
+        self._pipeline_worker.cancelled.connect(self._pipeline_thread.quit)
+        self._pipeline_worker.error.connect(self._on_pipeline_error)
+        self._pipeline_worker.error.connect(self._pipeline_thread.quit)
+        self._pipeline_thread.finished.connect(self._pipeline_thread.deleteLater)
+        self._pipeline_thread.start()
+
+    @pyqtSlot(str)
+    def _on_unified_stage_started(self, stage: str):
+        mapping = {
+            "segment": (1, "智能重组"),
+            "translate": (2, "AI翻译"),
+            "optimize": (3, "忠实度/自然度/一致性审校"),
+        }
+        stage_index, label = mapping.get(stage, (1, stage))
+        self._set_stage(stage_index)
+        self.progress_bar.setValue(0)
+        self.progress_bar.setMaximum(max(1, len(self.entries)))
+        self.lbl_progress_detail.setText(f"{label}：0/{len(self.entries)}")
+        self._log(f"▶ [{label}] 开始")
+
+    @pyqtSlot(str, int, int)
+    def _on_unified_stage_progress(self, stage: str, current: int, total: int):
+        labels = {
+            "segment": "智能重组",
+            "translate": "AI翻译",
+            "optimize": "质量审校",
+        }
+        self.progress_bar.setMaximum(max(1, total))
+        self.progress_bar.setValue(current)
+        self.lbl_progress_detail.setText(
+            f"{labels.get(stage, stage)}：{current}/{total}"
         )
-        self._segment_worker.all_done.connect(self._segment_thread.quit)
-        self._segment_worker.error.connect(lambda e: self._on_pipeline_error(f"重组失败：{e}"))
-        self._segment_thread.finished.connect(self._segment_thread.deleteLater)
-        logger.debug("启动重组线程")
-        self._segment_thread.start()
+
+    @pyqtSlot(str, object, bool)
+    def _on_unified_stage_snapshot(self, stage: str, entries: list, use_optimized: bool):
+        if not self._pipeline_active:
+            return
+        self.entries = entries
+        stage_names = {
+            "segment": "阶段2 重组",
+            "translate": "阶段3 翻译",
+            "optimize": "阶段4 优化",
+        }
+        snapshot_names = {
+            "segment": "AFTER_SEGMENT",
+            "translate": "AFTER_TRANSLATE",
+            "optimize": "AFTER_OPTIMIZE",
+        }
+        if self._current_file_path:
+            write_phase_snapshot(
+                self._current_file_path,
+                snapshot_names.get(stage, stage.upper()),
+                entries,
+                use_optimized=use_optimized,
+            )
+        self._save_stage_data(stage_names.get(stage, stage), entries)
+        self.lbl_stat.setText(f"  {len(entries)} 条字幕")
+
+    @pyqtSlot(object)
+    def _on_unified_pipeline_done(self, result):
+        self._pipeline_active = False
+        self.entries = list(result.entries)
+        self._last_quality_report = result.quality_report
+        self._set_running_state(False)
+        self._save_stage_data("阶段4 优化", self.entries)
+        done = sum(1 for entry in self.entries if entry.status == "done")
+        needs_review = sum(
+            1 for entry in self.entries if entry.status in {"error", "needs_review"}
+        )
+        if result.quality_report.passed:
+            self._log(f"✅ 统一任务完成：{done} 条，质量门禁通过")
+        else:
+            self._log(
+                f"❌ 统一任务完成但未通过质量门禁："
+                f"{len(result.quality_report.critical_issues)} 个关键问题"
+            )
+        self.status_bar.showMessage(
+            f"处理完成：{len(self.entries)} 条，待复核 {needs_review} 条"
+        )
+        for label in self._stage_labels:
+            label.setStyleSheet(
+                "color: #5a3a1a; font-size: 11px; font-weight: 700; "
+                "background: #e6f9f6; border: 2px solid #82d5bb; "
+                "border-radius: 12px; padding: 3px 8px;"
+            )
+        self._refresh_compare()
 
     def _on_segment_progress(self, current: int, total: int):
         self.progress_bar.setValue(current)
@@ -1279,7 +1872,7 @@ class MainWindow(QMainWindow):
     def _start_translate_stage(self, client: MistralClient, concurrency: int, batch_size: int):
         logger.info("开始第三阶段：AI翻译")
         base_context = self.text_context.toPlainText().strip() or "通用教育视频字幕"
-        glossary_prompt = self._get_glossary_prompt()
+        glossary_prompt = self._get_merged_glossary_prompt()
 
         self._log(f"🌐 [阶段3/4] 开始AI翻译 {len(self.entries)} 条字幕 · 并发:{concurrency} · 批:{batch_size}")
         self._set_stage(2)
@@ -1334,7 +1927,7 @@ class MainWindow(QMainWindow):
     def _start_optimize_stage(self, client: MistralClient, concurrency: int, batch_size: int):
         logger.info("开始第四阶段：优化润色")
         base_context = self.text_context.toPlainText().strip() or "通用教育视频字幕"
-        glossary_prompt = self._get_glossary_prompt()
+        glossary_prompt = self._get_merged_glossary_prompt()
 
         if glossary_prompt:
             logger.info("已加载固定术语表规则")
@@ -1395,8 +1988,10 @@ class MainWindow(QMainWindow):
         self.lbl_progress_detail.setText(f"已完成 {current}/{total} 条")
         self.status_bar.showMessage(f"优化进行中 {current}/{total}...")
 
-    def _on_optimize_done(self):
+    def _on_optimize_done(self, final_entries=None):
         self._pipeline_active = False
+        if final_entries is not None:
+            self.entries = list(final_entries)
         if self._current_file_path:
             write_phase_snapshot(self._current_file_path, "AFTER_OPTIMIZE", self.entries, use_optimized=True)
             logger.info(_format_subtitle_snapshot("AFTER_OPTIMIZE", self.entries, use_optimized=True))
@@ -1421,6 +2016,7 @@ class MainWindow(QMainWindow):
         if self._segment_worker: self._segment_worker.cancel()
         if self._translate_worker: self._translate_worker.cancel()
         if self._optimize_worker: self._optimize_worker.cancel()
+        if self._pipeline_worker: self._pipeline_worker.cancel()
         self._set_running_state(False)
         self._set_stage(-1)
         self._log("⏹ 已停止")
@@ -1435,33 +2031,229 @@ class MainWindow(QMainWindow):
                 'lines': list(e.lines),
                 'original_lines': list(e.original_lines) if e.original_lines else None,
                 'optimized_lines': list(e.optimized_lines) if e.optimized_lines else None,
+                'status': e.status,
+                'error_msg': e.error_msg,
+                'source_indexes': list(e.source_indexes or [e.index]),
             }
             for e in entries
         ]
         logger.info(f"已保存阶段数据: {stage_name}, {len(entries)} 条")
+        self._refresh_compare()
 
-    def _refresh_compare(self):
-        """对比视图：左侧原始字幕，右侧最终结果，各自独立滚动"""
-        # 左侧：原始字幕
-        original = self._stage_data.get("原始字幕", [])
-        if original:
-            left_blocks = []
-            for d in original:
-                lines = d.get('original_lines') or d.get('lines', [])
-                left_blocks.append(f"{d['index']}\n{d['start_time']} --> {d['end_time']}\n" + "\n".join(lines))
-            self._cmp_left_text.setPlainText("\n\n".join(left_blocks))
-        else:
-            self._cmp_left_text.setPlainText("")
+    def _entry_to_stage_record(self, entry: SubtitleEntry) -> dict:
+        return {
+            'index': entry.index,
+            'start_time': entry.start_time,
+            'end_time': entry.end_time,
+            'lines': list(entry.lines),
+            'original_lines': list(entry.original_lines) if entry.original_lines else None,
+            'optimized_lines': list(entry.optimized_lines) if entry.optimized_lines else None,
+            'status': entry.status,
+            'error_msg': entry.error_msg,
+            'source_indexes': list(entry.source_indexes or [entry.index]),
+        }
 
-        # 右侧：当前阶段最终结果
-        if self.entries:
-            right_blocks = []
-            for e in self.entries:
-                lines = e.optimized_lines or e.lines
-                right_blocks.append(f"{e.index}\n{e.start_time} --> {e.end_time}\n" + "\n".join(lines))
-            self._cmp_right_text.setPlainText("\n\n".join(right_blocks))
-        else:
-            self._cmp_right_text.setPlainText("")
+    def _update_compare_stage_options(self):
+        if not hasattr(self, "combo_compare_stage"):
+            return
+
+        current = self.combo_compare_stage.currentText()
+        stages = ["当前结果"]
+        preferred = ["阶段4 优化", "阶段3 翻译", "阶段2 重组", "原始字幕"]
+        stages.extend(stage for stage in preferred if stage in self._stage_data)
+        stages.extend(stage for stage in self._stage_data if stage not in stages)
+
+        self.combo_compare_stage.blockSignals(True)
+        self.combo_compare_stage.clear()
+        self.combo_compare_stage.addItems(stages)
+        if current in stages:
+            self.combo_compare_stage.setCurrentText(current)
+        elif "阶段4 优化" in stages:
+            self.combo_compare_stage.setCurrentText("阶段4 优化")
+        self.combo_compare_stage.blockSignals(False)
+
+    def _stage_records_for_compare(self, stage_name: str) -> list[dict]:
+        if stage_name == "当前结果":
+            return [self._entry_to_stage_record(e) for e in self.entries]
+        return list(self._stage_data.get(stage_name, []))
+
+    def _join_compare_lines(self, lines) -> str:
+        return "\n".join(str(line) for line in (lines or []) if str(line).strip())
+
+    def _compare_original_text(self, record: dict) -> str:
+        return self._join_compare_lines(record.get("lines") or record.get("original_lines") or [])
+
+    def _compare_result_text(self, record: dict) -> str:
+        lines = record.get("lines") or []
+        optimized = record.get("optimized_lines") or []
+        if optimized:
+            return self._join_compare_lines(optimized)
+        return self._join_compare_lines(lines)
+
+    def _set_compare_row_item(self, row: int, col: int, text: str, background: str | None = None):
+        item = QTableWidgetItem(text)
+        item.setToolTip(text)
+        if background:
+            item.setBackground(QColor(background))
+        self.table_compare.setItem(row, col, item)
+
+    def _compare_original_cell_text(self, record: dict) -> str:
+        meta = f"#{record.get('index', '')}  {record.get('start_time', '')} --> {record.get('end_time', '')}"
+        body = self._compare_original_text(record)
+        return f"{meta}\n{body}".strip()
+
+    def _compare_result_cell_text(self, record: dict) -> str:
+        meta = f"#{record.get('index', '')}  {record.get('start_time', '')} --> {record.get('end_time', '')}"
+        body = self._compare_result_text(record)
+        return f"{meta}\n{body}".strip()
+
+    def _source_key_for_compare(self, record: dict) -> tuple[int, ...]:
+        source_indexes = record.get("source_indexes") or [record.get("index")]
+        cleaned = []
+        for value in source_indexes:
+            try:
+                cleaned.append(int(value))
+            except (TypeError, ValueError):
+                continue
+        return tuple(cleaned or [int(record.get("index", 0) or 0)])
+
+    def _compare_groups(self, records: list[dict]) -> list[dict]:
+        original_records = self._stage_data.get("原始字幕", [])
+        original_by_id = {
+            int(record.get("index")): record
+            for record in original_records
+            if record.get("index") is not None
+        }
+
+        groups: list[dict] = []
+        for record in records:
+            key = self._source_key_for_compare(record)
+            if groups and groups[-1]["key"] == key:
+                groups[-1]["results"].append(record)
+            else:
+                originals = [
+                    original_by_id[source_id]
+                    for source_id in key
+                    if source_id in original_by_id
+                ]
+                if not originals:
+                    originals = [record]
+                groups.append({"key": key, "originals": originals, "results": [record]})
+        return groups
+
+    def _compare_group_type(self, originals: list[dict], results: list[dict]) -> str:
+        statuses = [record.get("status") for record in results]
+        errors = [record.get("error_msg") for record in results if record.get("error_msg")]
+        if "error" in statuses:
+            return errors[0] if errors else "错误"
+
+        orig_count = len(originals)
+        result_count = len(results)
+        if orig_count == 1 and result_count > 1:
+            return f"拆分 1→{result_count}"
+        if orig_count > 1 and result_count == 1:
+            return f"合并 {orig_count}→1"
+        if orig_count != result_count:
+            return f"重组 {orig_count}→{result_count}"
+
+        original_text = "\n".join(self._compare_original_text(record) for record in originals).strip()
+        result_text = "\n".join(self._compare_result_text(record) for record in results).strip()
+        return "已变化" if original_text != result_text else "未变化"
+
+    def _compare_group_haystack(self, group: dict, group_type: str) -> str:
+        parts = [group_type, ",".join(str(i) for i in group["key"])]
+        for record in group["originals"]:
+            parts.extend([
+                str(record.get("index", "")),
+                str(record.get("start_time", "")),
+                str(record.get("end_time", "")),
+                self._compare_original_text(record),
+            ])
+        for record in group["results"]:
+            parts.extend([
+                str(record.get("index", "")),
+                str(record.get("start_time", "")),
+                str(record.get("end_time", "")),
+                self._compare_result_text(record),
+                str(record.get("status") or ""),
+                str(record.get("error_msg") or ""),
+            ])
+        return "\n".join(parts).casefold()
+
+    def _compare_background(self, group_type: str) -> str | None:
+        if "错误" in group_type:
+            return "#ffe1dc"
+        if group_type.startswith("拆分"):
+            return "#e8f1ff"
+        if group_type.startswith("合并"):
+            return "#e6f9f6"
+        if group_type.startswith("重组"):
+            return "#fff3cd"
+        if group_type == "已变化":
+            return "#f1f8e9"
+        return None
+
+    def _span_compare_cell(self, row: int, col: int, row_span: int):
+        if row_span > 1:
+            self.table_compare.setSpan(row, col, row_span, 1)
+
+    def _refresh_compare(self, *args):
+        """刷新合并单元格式的单文件对比表。"""
+        if not hasattr(self, "table_compare"):
+            return
+
+        self._update_compare_stage_options()
+        stage_name = self.combo_compare_stage.currentText() or "当前结果"
+        records = self._stage_records_for_compare(stage_name)
+        groups = self._compare_groups(records)
+        query = self.input_compare_filter.text().strip().casefold()
+        changed_only = self.chk_compare_changed_only.isChecked()
+
+        visible_groups = []
+        total_rows = 0
+        for group in groups:
+            group_type = self._compare_group_type(group["originals"], group["results"])
+            if changed_only and group_type == "未变化":
+                continue
+            if query and query not in self._compare_group_haystack(group, group_type):
+                continue
+            row_span = max(len(group["originals"]), len(group["results"]), 1)
+            visible_groups.append((group, group_type, row_span))
+            total_rows += row_span
+
+        self.table_compare.setUpdatesEnabled(False)
+        self.table_compare.clearSpans()
+        self.table_compare.setRowCount(total_rows)
+
+        row = 0
+        for group, group_type, row_span in visible_groups:
+            originals = group["originals"]
+            results = group["results"]
+            background = self._compare_background(group_type)
+
+            if len(originals) == 1 and row_span > 1:
+                original = originals[0]
+                self._set_compare_row_item(row, 0, self._compare_original_cell_text(original), background)
+                self._span_compare_cell(row, 0, row_span)
+            else:
+                for offset, original in enumerate(originals):
+                    current_row = row + offset
+                    self._set_compare_row_item(current_row, 0, self._compare_original_cell_text(original), background)
+
+            if len(results) == 1 and row_span > 1:
+                result = results[0]
+                self._set_compare_row_item(row, 1, self._compare_result_cell_text(result), background)
+                self._span_compare_cell(row, 1, row_span)
+            else:
+                for offset, result in enumerate(results):
+                    current_row = row + offset
+                    self._set_compare_row_item(current_row, 1, self._compare_result_cell_text(result), background)
+
+            row += row_span
+
+        self.table_compare.resizeRowsToContents()
+        self.table_compare.setUpdatesEnabled(True)
+        self.lbl_compare_stats.setText(f"{len(visible_groups)} 组 / {len(groups)} 组")
 
     def _export_srt(self):
         logger.info("开始导出优化后的字幕文件")
@@ -1469,6 +2261,17 @@ class MainWindow(QMainWindow):
             msg = "没有可导出的字幕"
             logger.warning(msg)
             return QMessageBox.warning(self, "提示", msg)
+        if (
+            self._last_quality_report is not None
+            and not self._last_quality_report.passed
+        ):
+            count = len(self._last_quality_report.critical_issues)
+            msg = (
+                f"质量门禁未通过（{count} 个关键问题），已阻止导出。"
+                "请重新执行；失败条目会在日志中标出。"
+            )
+            logger.warning(msg)
+            return QMessageBox.warning(self, "质量门禁未通过", msg)
         has_optimized = sum(1 for e in self.entries if e.optimized_lines) > 0
         has_segmented = any(e.original_lines is not None for e in self.entries)
         if not has_optimized and not has_segmented:
@@ -1528,6 +2331,7 @@ class MainWindow(QMainWindow):
             """)
             # 停止按钮：亮红高亮，醒目可点
             self.btn_stop.setEnabled(True)
+            self.btn_export.setEnabled(False)
             self.btn_stop.setStyleSheet("""
                 QPushButton {
                     background: #DA3633;
@@ -1554,6 +2358,10 @@ class MainWindow(QMainWindow):
             self.btn_optimize.setObjectName("btn_primary")
             # 停止按钮：暗淡禁用
             self.btn_stop.setEnabled(False)
+            self.btn_export.setEnabled(
+                self._last_quality_report is None
+                or self._last_quality_report.passed
+            )
             self.btn_stop.setStyleSheet("""
                 QPushButton {
                     background: transparent;
@@ -1580,6 +2388,194 @@ class MainWindow(QMainWindow):
             color = "#8a7b66"
         self.text_log.append(f'<span style="color:#9f927d">[{ts}]</span> <span style="color:{color}">{msg}</span>')
 
+    def _refresh_glossary_headers(self):
+        if not hasattr(self, "table_glossary"):
+            return
+        source_label, target_label = glossary_column_labels(
+            self.combo_input_lang.currentText() if hasattr(self, "combo_input_lang") else "",
+            self.combo_output_lang.currentText() if hasattr(self, "combo_output_lang") else "",
+        )
+        self.table_glossary.setHorizontalHeaderLabels([source_label, target_label])
+
+    def _append_fixed_glossary_text(self, glossary_text: str):
+        existing = self._glossary_to_text()
+        combined = "\n".join(part for part in (existing, glossary_text.strip()) if part)
+        self._glossary_from_text(combined)
+        self._save_config()
+
+    def _candidate_sources_text(self, candidate: GlossaryCandidate) -> str:
+        if len(candidate.files) <= 3:
+            return "、".join(candidate.files)
+        return f"{len(candidate.files)} 个文件"
+
+    def _batch_glossary_table_candidates(self, table: QTableWidget) -> list[GlossaryCandidate]:
+        candidates: list[GlossaryCandidate] = []
+        for row in range(table.rowCount()):
+            source_item = table.item(row, 0)
+            target_item = table.item(row, 1)
+            files_item = table.item(row, 2)
+            status_item = table.item(row, 3)
+            source = source_item.text().strip() if source_item else ""
+            target = target_item.text().strip() if target_item else ""
+            files = tuple(files_item.data(Qt.ItemDataRole.UserRole) or ()) if files_item else ()
+            status = status_item.text().strip() if status_item else "新词"
+            if source or target:
+                candidates.append(GlossaryCandidate(source, target, files, status))
+        return candidates
+
+    def _confirm_glossary_candidates(
+        self,
+        summary: BatchGlossarySummary,
+        *,
+        title: str,
+        description: str,
+    ) -> str | None:
+        if not summary.candidates:
+            return ""
+
+        dialog = QDialog(self)
+        dialog.setWindowTitle(title)
+        dialog.resize(820, 520)
+        layout = QVBoxLayout(dialog)
+
+        label = QLabel(description)
+        label.setWordWrap(True)
+        label.setStyleSheet("color: #8a7b66; font-size: 12px;")
+        layout.addWidget(label)
+
+        if summary.failures:
+            fail_label = QLabel(
+                "预分析跳过："
+                + "；".join(f"{failure.filename}: {failure.reason}" for failure in summary.failures[:5])
+            )
+            fail_label.setWordWrap(True)
+            fail_label.setStyleSheet("color: #b15f3b; font-size: 12px;")
+            layout.addWidget(fail_label)
+
+        table = QTableWidget()
+        table.setColumnCount(5)
+        table.setMouseTracking(True)
+        table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        table.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
+        table.setAlternatingRowColors(True)
+        table.setStyleSheet("""
+            QTableWidget {
+                background: #f8f8f0;
+                alternate-background-color: #f0e8d8;
+                gridline-color: #d8ceb9;
+                color: #5f4b31;
+            }
+            QHeaderView::section {
+                background: #f0e8d8;
+                color: #5a3a1a;
+                font-weight: 700;
+                border: 0;
+                border-bottom: 1px solid #c4b89e;
+                padding: 7px 8px;
+            }
+            QTableWidget::item {
+                padding: 6px 8px;
+            }
+            QTableWidget::item:hover {
+                background: #fff1bf;
+                color: #3f2b15;
+            }
+            QTableWidget::item:selected {
+                background: #d9f6ef;
+                color: #2e3a31;
+            }
+        """)
+        source_label, target_label = glossary_column_labels(
+            self.combo_input_lang.currentText(),
+            self.combo_output_lang.currentText(),
+        )
+        table.setHorizontalHeaderLabels([source_label, target_label, "来源", "状态", "操作"])
+        table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+        table.setRowCount(len(summary.candidates))
+
+        hover_state = {"row": -1}
+
+        def clear_hover_row(row: int):
+            if row < 0:
+                return
+            for col in range(table.columnCount()):
+                item = table.item(row, col)
+                if item:
+                    item.setData(Qt.ItemDataRole.BackgroundRole, None)
+
+        def set_hover_row(row: int):
+            if row == hover_state["row"]:
+                return
+            clear_hover_row(hover_state["row"])
+            hover_state["row"] = row
+            for col in range(table.columnCount()):
+                item = table.item(row, col)
+                if item:
+                    item.setBackground(QColor("#fff1bf"))
+
+        def delete_row(button: QPushButton):
+            for row in range(table.rowCount()):
+                if table.cellWidget(row, 4) is button:
+                    table.removeRow(row)
+                    hover_state["row"] = -1
+                    break
+
+        for row, candidate in enumerate(summary.candidates):
+            table.setItem(row, 0, QTableWidgetItem(candidate.source))
+            table.setItem(row, 1, QTableWidgetItem(candidate.target))
+            source_item = QTableWidgetItem(self._candidate_sources_text(candidate))
+            source_item.setData(Qt.ItemDataRole.UserRole, candidate.files)
+            table.setItem(row, 2, source_item)
+            table.setItem(row, 3, QTableWidgetItem(candidate.status))
+            table.setItem(row, 4, QTableWidgetItem(""))
+            btn_delete = QPushButton("删除")
+            btn_delete.clicked.connect(lambda _checked=False, b=btn_delete: delete_row(b))
+            table.setCellWidget(row, 4, btn_delete)
+
+        table.itemEntered.connect(lambda item: set_hover_row(item.row()))
+        layout.addWidget(table, 1)
+
+        btn_row = QHBoxLayout()
+        btn_clear = QPushButton("全部删除")
+        btn_cancel = QPushButton("取消")
+        btn_ok = QPushButton("确认并加入固定词汇表")
+        btn_row.addWidget(btn_clear)
+        btn_row.addStretch()
+        btn_row.addWidget(btn_cancel)
+        btn_row.addWidget(btn_ok)
+        layout.addLayout(btn_row)
+
+        btn_clear.clicked.connect(lambda: table.setRowCount(0))
+        btn_cancel.clicked.connect(dialog.reject)
+
+        approved_text = {"value": None}
+
+        def accept_dialog():
+            candidates = self._batch_glossary_table_candidates(table)
+            conflicts = unresolved_conflict_sources(candidates)
+            if conflicts:
+                QMessageBox.warning(
+                    dialog,
+                    "仍有译法冲突",
+                    "请先删除或修改这些原文的冲突译文：\n" + "\n".join(conflicts),
+                )
+                return
+            approved_text["value"] = approved_candidates_to_text(candidates)
+            dialog.accept()
+
+        btn_ok.clicked.connect(accept_dialog)
+
+        if dialog.exec() != QDialog.DialogCode.Accepted:
+            return None
+        return approved_text["value"] or ""
+
+    def _confirm_batch_glossary(self, summary: BatchGlossarySummary) -> str | None:
+        return self._confirm_glossary_candidates(
+            summary,
+            title="批量固定术语确认",
+            description="本次批量临时术语会自动用于当前处理；下面仅是建议长期保存到设置里的固定术语。",
+        )
+
     def _glossary_add_row(self):
         """在术语表末尾添加空行"""
         row = self.table_glossary.rowCount()
@@ -1588,6 +2584,34 @@ class MainWindow(QMainWindow):
         self.table_glossary.setItem(row, 1, QTableWidgetItem(""))
         self.table_glossary.editItem(self.table_glossary.item(row, 0))
 
+    def _glossary_dedup(self):
+        """去除术语表中重复的英文词条（保留最后出现的条目）"""
+        self._glossary_normalize()
+
+    def _glossary_normalize(self):
+        """去重并按 Source 字母排序；重复 Source 保留最后一次译法。"""
+        entries = {}
+        for row in range(self.table_glossary.rowCount()):
+            en_item = self.table_glossary.item(row, 0)
+            zh_item = self.table_glossary.item(row, 1)
+            if en_item and zh_item and en_item.text().strip() and zh_item.text().strip():
+                source = en_item.text().strip()
+                target = zh_item.text().strip()
+                key = source.casefold()
+                entries[key] = (source, target)
+
+        sorted_items = sorted(
+            entries.values(),
+            key=lambda pair: (pair[0].casefold(), pair[0]),
+        )
+
+        self.table_glossary.setRowCount(0)
+        for source, target in sorted_items:
+            row = self.table_glossary.rowCount()
+            self.table_glossary.insertRow(row)
+            self.table_glossary.setItem(row, 0, QTableWidgetItem(source))
+            self.table_glossary.setItem(row, 1, QTableWidgetItem(target))
+
     def _glossary_del_row(self):
         """删除选中的术语表行"""
         row = self.table_glossary.currentRow()
@@ -1595,7 +2619,8 @@ class MainWindow(QMainWindow):
             self.table_glossary.removeRow(row)
 
     def _glossary_to_text(self) -> str:
-        """将表格内容转换为 English->中文 格式文本"""
+        """将表格内容转换为 English->中文 格式文本（自动去重）"""
+        self._glossary_dedup()
         lines = []
         for row in range(self.table_glossary.rowCount()):
             en = self.table_glossary.item(row, 0)
@@ -1620,6 +2645,7 @@ class MainWindow(QMainWindow):
                         self.table_glossary.setItem(row, 0, QTableWidgetItem(parts[0].strip()))
                         self.table_glossary.setItem(row, 1, QTableWidgetItem(parts[1].strip()))
                     break
+        self._glossary_dedup()
 
     def _get_glossary_prompt(self, entries=None) -> str:
         """解析术语表输入框，返回一个措辞强硬的独立规则字符串（空则返回空串）。
@@ -1636,14 +2662,20 @@ class MainWindow(QMainWindow):
     def _config_path(self) -> Path:
         return Path.home() / ".subtitle_optimizer_config.json"
 
+    def _transcription_audio_format(self) -> str:
+        return "wav" if self.chk_transcription_wav.isChecked() else "mp3"
+
     def _save_config(self):
         cfg = {
             "api_key": self.input_apikey.text().strip(),
             "base_url": self.input_base_url.text().strip(),
             "model": self.combo_model.currentText(),
+            "transcription_model": self.input_transcription_model.text().strip(),
+            "transcription_audio_format": self._transcription_audio_format(),
             "concurrency": self.input_concurrency.text(),
             "batch_size": self.input_batch.text(),
             "original_line": self.combo_original_line.currentIndex(),
+            "source_layout": self._source_layout(),
             "glossary": self._glossary_to_text(),
             "input_language": self.combo_input_lang.currentText(),
             "output_language": self.combo_output_lang.currentText(),
@@ -1663,6 +2695,12 @@ class MainWindow(QMainWindow):
                 cfg = json.load(f)
             self.input_apikey.setText(cfg.get("api_key", ""))
             self.input_base_url.setText(cfg.get("base_url", ""))
+            self.input_transcription_model.setText(
+                cfg.get("transcription_model", "voxtral-mini-latest")
+            )
+            self.chk_transcription_wav.setChecked(
+                cfg.get("transcription_audio_format", "mp3") == "wav"
+            )
             saved_model = cfg.get("model", "")
             if saved_model:
                 idx = self.combo_model.findText(saved_model)
@@ -1673,6 +2711,11 @@ class MainWindow(QMainWindow):
             self.input_concurrency.setText(str(cfg.get("concurrency", "6")))
             self.input_batch.setText(str(cfg.get("batch_size", "5")))
             self.combo_original_line.setCurrentIndex(cfg.get("original_line", 1))  # 默认第2行
+            source_layout = cfg.get("source_layout", LAYOUT_AUTO)
+            source_layout_index = self.combo_source_layout.findData(source_layout)
+            self.combo_source_layout.setCurrentIndex(
+                source_layout_index if source_layout_index >= 0 else 0
+            )
             self._glossary_from_text(cfg.get("glossary", ""))
             # 加载语言设置（向后兼容）
             input_lang = cfg.get("input_language", "English")

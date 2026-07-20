@@ -1,0 +1,838 @@
+===== AFTER_SEGMENT (209 entries) =====
+1
+00:00:00,000 --> 00:00:01,583
+what's going on guys bryant
+
+2
+00:00:01,583 --> 00:00:03,166
+here today is friday december 6 2024
+
+3
+00:00:03,166 --> 00:00:06,332
+and this is a follow-up to the calendar spreads video
+
+4
+00:00:06,332 --> 00:00:10,765
+that i released earlier this week this video right here a step-by-step guide
+
+5
+00:00:10,765 --> 00:00:13,931
+to trading calendar spreads in this video i used a
+
+6
+00:00:13,931 --> 00:00:22,164
+live trade example of this 6035 call calendar spread that i opened on monday so this is just a few days later this is the risk profile
+
+7
+00:00:22,800 --> 00:00:27,920
+on option strat and this is the risk profile in thinkorswim for those of you that use thinkorswim
+
+8
+00:00:27,920 --> 00:00:29,930
+or are familiar with a more advanced
+
+9
+00:00:29,930 --> 00:00:32,227
+risk profile the pnl right now i'm up
+
+10
+00:00:32,227 --> 00:00:34,811
+634 or so and it's fluctuating as the market is
+
+11
+00:00:34,811 --> 00:00:37,682
+currently open i'm in four lots of the spread but
+
+12
+00:00:37,682 --> 00:00:41,415
+to analyze and to explain to beginner traders i like to use one
+
+13
+00:00:41,415 --> 00:00:44,286
+lot and i like to use option strat as it
+
+14
+00:00:44,286 --> 00:01:00,368
+is a little bit more beginner friendly to interpret what's going on the spread cost 950 per lot so with four of them that means i use just under four grand to open position but again with one lot we can just say it's about a thousand dollars the trade is currently fluctuating between 12 or 15 or so
+
+15
+00:01:02,160 --> 00:01:05,150
+and as i explained in that previous video i like to keep
+
+16
+00:01:05,150 --> 00:01:07,641
+track of the implied volatility throughout the duration of the
+
+17
+00:01:07,641 --> 00:01:17,359
+trade as well as the profits so that's why i just wanted to hop on here today and show you guys a continuation of that video as i showed the example of when i first open it the type
+
+18
+00:01:17,360 --> 00:01:20,846
+of notes i leave in the description when it hits that first
+
+19
+00:01:20,846 --> 00:01:23,751
+target right here it actually hit almost nine percent a
+
+20
+00:01:23,751 --> 00:01:26,656
+couple days ago which was wednesday which based on my
+
+21
+00:01:26,656 --> 00:01:39,439
+experience is a great place to take profit i'm continuing to hold the four lots because i'm not trading my full size and i also have other positions around this main position so i'm trying to stretch the pnl as much as possible which
+
+22
+00:01:39,440 --> 00:01:43,043
+is why i don't brand or label myself as an exclusive income-based
+
+23
+00:01:43,043 --> 00:01:46,045
+trader an exclusively income-based trader is going to follow a
+
+24
+00:01:46,045 --> 00:01:49,047
+list of very strict specific rules meaning they enter their
+
+25
+00:01:49,047 --> 00:02:00,157
+trade they hit their profit targets they close the trade they open up another set of calendars and they just rinse and repeat and they continue to go along i will usually interject a little bit of
+
+26
+00:02:00,160 --> 00:02:03,733
+discretion i will usually trade around some of my income spreads as
+
+27
+00:02:03,733 --> 00:02:10,879
+i use other tools that influence my discretion like gamma exposure some of the quant trading app levels but for the most part these
+
+28
+00:02:10,880 --> 00:02:14,524
+trades are relatively systematic this is monday here roughly monday morning when
+
+29
+00:02:14,524 --> 00:02:18,472
+the position was opened and here we have on friday where the spx
+
+30
+00:02:18,472 --> 00:02:21,509
+is so even though the peak of the calendar spread
+
+31
+00:02:21,509 --> 00:02:27,887
+was right around here which is 60 35 we can see that the spx is all the way almost at 6100 and the spread
+
+32
+00:02:28,800 --> 00:02:32,953
+is still profitable quant trading app members you guys will notice that
+
+33
+00:02:32,953 --> 00:02:36,414
+the tents will generally line up with our weekly levels
+
+34
+00:02:36,414 --> 00:02:45,759
+that's something i like to do at quant trading apps inception these weekly levels were actually generated to help iron condor traders as well as calendar spreads
+
+35
+00:02:45,760 --> 00:02:48,106
+swing traders because that was predominantly my style
+
+36
+00:02:48,106 --> 00:02:50,159
+back then as it was a reflection
+
+37
+00:02:50,159 --> 00:02:52,212
+of the majority of the type of
+
+38
+00:02:52,212 --> 00:02:56,318
+spreads that i use to swing trade let's dissect what has happened with this
+
+39
+00:02:56,320 --> 00:03:03,760
+calendar spread and why is it profitable the first takeaway is that the spx is still within the tent
+
+40
+00:03:03,760 --> 00:03:09,120
+so this right here is our tent of the calendar spread at expiration and as mentioned in the video
+
+41
+00:03:09,120 --> 00:03:10,912
+before this is our t plus zero line
+
+42
+00:03:10,912 --> 00:03:12,480
+which is the current pnl so this
+
+43
+00:03:12,480 --> 00:03:14,048
+right here if we just look over
+
+44
+00:03:14,048 --> 00:03:19,200
+to the left is exactly where the profit is or we can just take a look down here and that's what this is
+
+45
+00:03:19,200 --> 00:03:25,520
+telling us these slices right here are just to give us an estimation of what's the theoretical pnl
+
+46
+00:03:25,520 --> 00:03:27,252
+would be in this case here one
+
+47
+00:03:27,252 --> 00:03:29,231
+percent if the market went up one percent
+
+48
+00:03:29,231 --> 00:03:30,963
+the position will barely be up as
+
+49
+00:03:30,963 --> 00:03:36,159
+this is just about the break even on the t plus zero line if the market was to pull back one
+
+50
+00:03:36,160 --> 00:03:38,328
+percent the position will be theoretically up
+
+51
+00:03:38,328 --> 00:03:40,496
+over seven hundred dollars as we're coming
+
+52
+00:03:40,496 --> 00:03:42,354
+back closer to the peak of
+
+53
+00:03:42,354 --> 00:03:48,239
+the tent the next thing to take notice is that during the duration of the trade the t plus
+
+54
+00:03:48,240 --> 00:03:54,080
+zero line can be wider than the tent and that's this magenta pinkish level that we see right here
+
+55
+00:03:54,080 --> 00:04:01,040
+these are the break evens on the t plus zero line this one to this one is our range for profitability
+
+56
+00:04:01,040 --> 00:04:03,120
+so the spx is currently right here
+
+57
+00:04:03,120 --> 00:04:05,200
+whereas the tent at expiration is from
+
+58
+00:04:05,200 --> 00:04:07,280
+here to here it's a little bit
+
+59
+00:04:07,280 --> 00:04:10,064
+more of a narrow range this strategy called
+
+60
+00:04:10,064 --> 00:04:12,848
+a calendar spread benefits from the passage of
+
+61
+00:04:12,848 --> 00:04:15,284
+time or an increase in volatility for
+
+62
+00:04:15,284 --> 00:04:20,157
+your long expiration in this case here december 27th and this is what was
+
+63
+00:04:20,160 --> 00:04:22,922
+addressed in part one of this video so
+
+64
+00:04:22,922 --> 00:04:25,684
+even if a trader does nothing all we
+
+65
+00:04:25,684 --> 00:04:28,100
+need is for price to continue to
+
+66
+00:04:28,100 --> 00:04:33,278
+fluctuate throughout this tent or this range right here and the position will continue to
+
+67
+00:04:33,280 --> 00:04:42,240
+make profit every single day as long as implied volatility does not decrease at a faster rate
+
+68
+00:04:42,240 --> 00:04:44,648
+than the time decay of your front month
+
+69
+00:04:44,648 --> 00:04:47,056
+if that sounds a little confusing i highly
+
+70
+00:04:47,056 --> 00:04:48,862
+recommend you check out part one
+
+71
+00:04:48,862 --> 00:04:53,678
+of this video or any of the previous calendar spreads videos in which i have done
+
+72
+00:04:53,680 --> 00:04:56,153
+over the past few years as time continues
+
+73
+00:04:56,153 --> 00:04:58,317
+to pass this is december 6th let's
+
+74
+00:04:58,317 --> 00:05:00,481
+jump to december december 9th we can
+
+75
+00:05:00,481 --> 00:05:05,118
+see that the profit should in theory increase let's just jump to wednesday of next
+
+76
+00:05:05,120 --> 00:05:11,040
+week profit should continue to increase as long as the spx is at any of these ranges as i showcased
+
+77
+00:05:11,040 --> 00:05:13,238
+in the previous video no one knows what's
+
+78
+00:05:13,238 --> 00:05:15,162
+going to happen with the volatility so
+
+79
+00:05:15,162 --> 00:05:17,086
+we can try to speculate and adjust
+
+80
+00:05:17,086 --> 00:05:21,758
+for volatility but for the most part these systems or these risk profiles try to do the
+
+81
+00:05:21,760 --> 00:05:23,733
+best they can with an estimation of
+
+82
+00:05:23,733 --> 00:05:27,679
+what your profit and loss should be now let's take a look at the
+
+83
+00:05:27,680 --> 00:05:30,257
+implied volatility and what has happened since i've
+
+84
+00:05:30,257 --> 00:05:32,512
+opened the trade so this is going
+
+85
+00:05:32,512 --> 00:05:34,767
+to be for the front month and
+
+86
+00:05:34,767 --> 00:05:39,599
+this is our back month so right now it's saying according to think of swim
+
+87
+00:05:39,600 --> 00:05:48,720
+the volatility for the front month is now 11.89 when i first opened the trade it was about 13.95
+
+88
+00:05:48,720 --> 00:05:53,509
+and the back month was 13.5 so now the back month which is december 27th
+
+89
+00:05:53,509 --> 00:05:58,298
+is 11.84. you guys can see that these levels have now become closer to each
+
+90
+00:05:58,298 --> 00:06:03,087
+other whereas before this had about a point 45 percent increase over this one so
+
+91
+00:06:03,087 --> 00:06:19,851
+now one can say the implied volatility has in a sense flattened out between these two and that was the volatility skew that i addressed in the first video there's no longer that much of a volatility skew between these two expirations so if i was looking to open
+
+92
+00:06:20,880 --> 00:06:24,859
+up a calendar spread i would not choose these same expirations as
+
+93
+00:06:24,859 --> 00:06:27,512
+the edge is no longer present the flattening
+
+94
+00:06:27,512 --> 00:06:39,119
+of the volatility skew between these two is what was the edge and that's what this position has benefited from as we can see in a reflection of the pnl now earlier today so just
+
+95
+00:06:39,120 --> 00:06:44,451
+under two hours i took note of when the position was over 15 this is
+
+96
+00:06:44,451 --> 00:06:49,782
+what the implied volatility was it was about a 1.82 reduction in implied volatility for
+
+97
+00:06:49,782 --> 00:06:55,113
+the front month since when i opened the trade it was 13.95 earlier today it
+
+98
+00:06:55,113 --> 00:07:00,064
+was 12.13 that's about a decrease of 1.82 and look at our back month it
+
+99
+00:07:00,064 --> 00:07:19,868
+went from 13.5 to 12.8 that is a reduction of 1.42 the front month reduced in implied volatility much faster than the back month and that is a bonus for calendar spreads the market went from 6044 when i first opened it to about 6087 when i took note of this earlier in the day again you'll
+
+100
+00:07:23,680 --> 00:07:26,820
+see the pnl will fluctuate as the market is open
+
+101
+00:07:26,820 --> 00:07:29,960
+and now will be an excellent time to actually close
+
+102
+00:07:29,960 --> 00:07:35,926
+out the trade as plus 15 is generally going to be a great profit target for an income-based trader i
+
+103
+00:07:36,240 --> 00:07:39,623
+have seen these hits plus 25 before and even all the way
+
+104
+00:07:39,623 --> 00:07:41,776
+up to plus 50 but that would require
+
+105
+00:07:41,776 --> 00:07:53,156
+holding for another week or even another 11 more days you would have to hold it into the week of expiration i would never encourage a trader to hold these all the way until the day of expiration
+
+106
+00:07:54,080 --> 00:07:57,666
+the point is to get in them get out when you hit
+
+107
+00:07:57,666 --> 00:07:59,758
+these types of numbers so eight percent 15
+
+108
+00:07:59,758 --> 00:08:02,447
+if you're at 25 you've definitely been holding it for
+
+109
+00:08:02,447 --> 00:08:09,320
+too long again for an income-based trader if you're speculating or you're using your own discretion you're essentially deviating from the plan from
+
+110
+00:08:09,920 --> 00:08:14,037
+an income spreads traders perspective so what has happened since i've opened
+
+111
+00:08:14,037 --> 00:08:22,959
+the trade is that the spx has stayed within the tents and the short strike has lost in value faster than the long strike so as
+
+112
+00:08:22,960 --> 00:08:26,211
+the market was being choppy for a couple days and then it
+
+113
+00:08:26,211 --> 00:08:28,378
+gapped up and it was just moving with
+
+114
+00:08:28,378 --> 00:08:31,087
+low volatility up that's created the opportunity for the short
+
+115
+00:08:31,087 --> 00:08:39,216
+strike which is this one right here to lose in value so this strike was sold for 71 in this case when i first opened it and now it's going for 88
+
+116
+00:08:39,760 --> 00:08:44,674
+so even though it is now in the money and the market has gone up
+
+117
+00:08:44,674 --> 00:08:49,588
+it is losing extrinsic value it has gained some intrinsic value because it is now
+
+118
+00:08:49,588 --> 00:09:00,399
+in the money but the long strike has also gained in intrinsic value but it has lost an extrinsic value at a lower rate than the other one so this contract here was
+
+119
+00:09:00,400 --> 00:09:03,393
+purchased for 80 but it's now going for 97 almost
+
+120
+00:09:03,393 --> 00:09:06,386
+98 so has gained 18 in premium while this one
+
+121
+00:09:06,386 --> 00:09:10,128
+has gained the same amount of intrinsic value but it
+
+122
+00:09:10,128 --> 00:09:20,980
+is losing its extrinsic value at a faster rate than the other one and that is a large contribution to how calendar spreads make money lastly let's just show
+
+123
+00:09:22,480 --> 00:09:26,232
+you guys the example that i took note of this was the
+
+124
+00:09:26,232 --> 00:09:29,984
+alternative calendar in which i used the monday to monday expiration and
+
+125
+00:09:29,984 --> 00:09:39,365
+instead of the friday to friday expiration this calendar spread actually outperformed the other one as it was up over 20 earlier here today you guys can take notes of the
+
+126
+00:09:39,680 --> 00:09:42,419
+changes between the implied volatility albeit i did journal this
+
+127
+00:09:42,419 --> 00:09:45,158
+trade a little bit after the other one so this
+
+128
+00:09:45,158 --> 00:09:48,992
+one was opened about 15 minutes or so after the first calendar spread so obviously
+
+129
+00:09:48,992 --> 00:09:53,100
+it's not exactly a direct comparison but i did have a feeling based on experience
+
+130
+00:09:53,100 --> 00:10:04,604
+earlier in the week that this calendar would have performed better it's just i had already opened up this one and it wasn't until after i opened this one i was like oh crap this probably would have been a better calendar
+
+131
+00:10:04,880 --> 00:10:07,613
+i didn't want to close out the other one and then switch
+
+132
+00:10:07,613 --> 00:10:10,346
+over to this one i could have also then gotten this one
+
+133
+00:10:10,346 --> 00:10:12,851
+but you guys know i was in some calendar spreads i
+
+134
+00:10:12,851 --> 00:10:18,318
+was in butterfly spreads and i also focused on the nasdaq earlier this week as i covered in a couple other videos there's actually
+
+135
+00:10:18,320 --> 00:10:20,740
+another video i have coming out on a follow-up to
+
+136
+00:10:20,740 --> 00:10:22,676
+this one if it isn't out already and
+
+137
+00:10:22,676 --> 00:10:27,759
+then to conclude i just want to show you guys why these calendars are generally crap so this is a calendar
+
+138
+00:10:27,760 --> 00:10:32,010
+spread where i went with the next week friday to the monday expiration and even
+
+139
+00:10:32,010 --> 00:10:36,260
+though i've been trading these types of calendars for i think almost four four and
+
+140
+00:10:36,260 --> 00:10:40,510
+a half years now or so they can be wildly inconsistent in my experience if
+
+141
+00:10:40,510 --> 00:10:47,593
+you're looking for consistency and you're looking for income spreads trading you're better off going out at least three weeks this 11 to 14 dte is generally
+
+142
+00:10:48,160 --> 00:10:52,915
+not going to cut it in comparison to something like this with a wider term
+
+143
+00:10:52,915 --> 00:10:57,670
+structure so it's a seven day separation between your long and short strikes if you
+
+144
+00:10:57,670 --> 00:11:05,278
+go here this is just a friday expiration to a monday expiration so it's narrow it's tight it's cheaper this is a double calendar
+
+145
+00:11:05,280 --> 00:11:09,432
+spread but look at this price has stayed within the range and this crap has
+
+146
+00:11:09,432 --> 00:11:13,584
+barely made any money all week and even if the market pulled back right now
+
+147
+00:11:13,584 --> 00:11:17,736
+it's still barely going to be up anything i'm in the same for lots of
+
+148
+00:11:17,736 --> 00:11:26,318
+these here so i'm using only two thousand dollars in capital just under three thousand dollars in margin actually and this trade has virtually done nothing all week long and now
+
+149
+00:11:26,320 --> 00:11:29,427
+i'm forced to make a decision do i just close this or
+
+150
+00:11:29,427 --> 00:11:32,793
+do i hold it into next week and that's where you start entering
+
+151
+00:11:32,793 --> 00:11:41,598
+a dangerous territory because this looks very appealing but then what's going to happen over the weekend is friday's expiration is going to jump and that's going to hurt this spread so i think
+
+152
+00:11:41,600 --> 00:11:43,360
+you can actually make this adjustment here so
+
+153
+00:11:43,360 --> 00:11:44,900
+yeah so this is going to actually
+
+154
+00:11:44,900 --> 00:11:49,520
+jump up and then the same thing is going to happen this might increase just a little bit and there is
+
+155
+00:11:49,520 --> 00:11:51,784
+room for it to be profitable but you
+
+156
+00:11:51,784 --> 00:11:54,048
+don't want to hold these into the same
+
+157
+00:11:54,048 --> 00:12:00,558
+week you leave yourself susceptible to all sorts of wild things that can happen so i seldom run these types of trades in
+
+158
+00:12:00,560 --> 00:12:04,160
+my experience it would have been better to just go with an iron condor or something like that
+
+159
+00:12:04,160 --> 00:12:06,652
+they can work obviously when they do work
+
+160
+00:12:06,652 --> 00:12:09,144
+they are amazing for how low cost they
+
+161
+00:12:09,144 --> 00:12:15,998
+can be relative to the range relative to the type of profit you can make all this is very appealing but this
+
+162
+00:12:16,000 --> 00:12:18,575
+sucks holding a trade for four or five days and
+
+163
+00:12:18,575 --> 00:12:20,635
+you still see that your pnl is red
+
+164
+00:12:20,635 --> 00:12:26,558
+and that's largely also due to the fact that the time decay is not as severe with these expirations being so close to
+
+165
+00:12:26,560 --> 00:12:31,095
+each other they're both affected by implied volatility almost at the same
+
+166
+00:12:31,095 --> 00:12:34,118
+rate so when implied volatility decreased for next
+
+167
+00:12:34,118 --> 00:12:37,519
+week friday's expiration the monday expiration after also decreased
+
+168
+00:12:37,520 --> 00:12:39,961
+essentially at the same rate if not faster so even
+
+169
+00:12:39,961 --> 00:12:41,913
+though i opened the trade when there was
+
+170
+00:12:41,913 --> 00:12:46,795
+the same volatility skew as we can see right here and right here is about a point 50 percent or so
+
+171
+00:12:47,040 --> 00:12:50,169
+difference in implied volatility now that the skew has flattened
+
+172
+00:12:50,169 --> 00:12:52,672
+out it doesn't really matter that much because
+
+173
+00:12:52,672 --> 00:12:57,679
+our long strike has all has not held that enough gains to offset the difference here
+
+174
+00:12:57,680 --> 00:12:59,905
+this trade might have performed better maybe if i went
+
+175
+00:12:59,905 --> 00:13:01,685
+with this type of expiration but that's where
+
+176
+00:13:01,685 --> 00:13:04,800
+being able to journal and going in and seeing how would that have performed
+
+177
+00:13:04,800 --> 00:13:07,364
+this is why i love option strat because then i
+
+178
+00:13:07,364 --> 00:13:09,415
+can go and choose a different expiration right
+
+179
+00:13:09,415 --> 00:13:14,799
+here and then see how maybe that would have performed we can see the historical price for this i can jump
+
+180
+00:13:14,800 --> 00:13:17,090
+back to earlier this week and see if i open
+
+181
+00:13:17,090 --> 00:13:18,922
+it if it would have performed better and
+
+182
+00:13:18,922 --> 00:13:24,420
+it looks like it would have but only by about 20 or 30 cents or so so still rendering it maybe not worth it again the
+
+183
+00:13:24,880 --> 00:13:26,928
+only way you'll get great at this for yourself guys
+
+184
+00:13:26,928 --> 00:13:28,567
+is not just by watching a youtube video
+
+185
+00:13:28,567 --> 00:13:33,279
+as detailed as i try to make these you have to practice yourself you have to take your own notes you have to
+
+186
+00:13:33,280 --> 00:13:35,364
+journal your own trades especially if you want
+
+187
+00:13:35,364 --> 00:13:37,448
+to have some sort of confidence as well
+
+188
+00:13:37,448 --> 00:13:42,398
+as understanding what's going on why did one calendar perform better than the other why did i make x
+
+189
+00:13:42,400 --> 00:13:45,480
+amount of money in one versus the other or why
+
+190
+00:13:45,480 --> 00:13:47,944
+is one not making any money or losing
+
+191
+00:13:47,944 --> 00:13:54,720
+money when another one is making money why does one cost more than the other all these types of answers you can
+
+192
+00:13:54,720 --> 00:13:59,840
+figure out for yourself as i did but i actually learned more by actually just taking notes and journaling
+
+193
+00:13:59,840 --> 00:14:03,228
+these trades for months on end and that compounded into
+
+194
+00:14:03,228 --> 00:14:05,938
+years of information and knowledge but yet still
+
+195
+00:14:05,938 --> 00:14:11,359
+to this day there's they can still be nuanced and variations between which calendar can perform
+
+196
+00:14:11,360 --> 00:14:13,876
+better we're talking about a difference of maybe two to three percent
+
+197
+00:14:13,876 --> 00:14:16,392
+but if you're running these with 10k which is usually what i
+
+198
+00:14:16,392 --> 00:14:19,118
+would have liked to run them at that's the difference of a couple
+
+199
+00:14:19,120 --> 00:14:21,460
+hundred extra dollars which could end up being in a
+
+200
+00:14:21,460 --> 00:14:23,800
+difference between an extra five six hundred dollars a month
+
+201
+00:14:23,800 --> 00:14:25,672
+which is the difference between an extra five
+
+202
+00:14:25,672 --> 00:14:28,480
+to seven k at the end of the year as it all
+
+203
+00:14:28,480 --> 00:14:31,600
+compounds guys if you enjoyed this video let me know
+
+204
+00:14:31,600 --> 00:14:34,720
+in the comments down below leave a like on the
+
+205
+00:14:34,720 --> 00:14:40,960
+video subscribe to the youtube channel if you are new here and if you like or you are enjoying these
+
+206
+00:14:40,960 --> 00:14:44,255
+follow-up type of videos to a specific trade in which i share
+
+207
+00:14:44,255 --> 00:14:47,000
+on this youtube channel let me know and i'll also
+
+208
+00:14:47,000 --> 00:14:51,118
+try to make more videos like this next year the feedback is always appreciated thanks
+
+209
+00:14:51,120 --> 00:15:00,560
+for watching i'll catch you in the next one
+
+===== END AFTER_SEGMENT =====

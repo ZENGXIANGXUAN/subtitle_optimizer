@@ -1,0 +1,567 @@
+===== AFTER_OPTIMIZE (113 entries) =====
+1
+00:00:01,500 --> 00:00:07,200
+好，我们来讲象后藏身策略的执行方法。
+Alright then, obviously with regards to execution methodology for the hiding behind the elephant strategy.
+
+2
+00:00:07,800 --> 00:00:11,100
+首先，我们的入场点是被动的。
+Firstly, obviously our entry point is passive in nature.
+
+3
+00:00:11,500 --> 00:00:16,500
+别主动进场，因为我们只盯着小盈利。
+We don't want to be aggressive simply because we're going for a relatively small winner.
+
+4
+00:00:17,500 --> 00:00:23,000
+注意，止损位要设在大单区后方，也就是反转的底部。
+Obviously then do note our stop placement, slightly behind the elephant with the base of the reversal.
+
+5
+00:00:23,900 --> 00:00:28,400
+目标位相对较小，这是一种头皮交易策略。
+Our target, like I said, a little bit smaller. This is a bit of a scalp type strategy.
+
+6
+00:00:28,800 --> 00:00:36,200
+我们寻找的是合理的目标，比如填补买卖失衡，或者稍小的目标。
+We're looking for a logical target, something like maybe a fill of the imbalance or something a little bit smaller.
+
+7
+00:00:36,400 --> 00:00:39,300
+所以尽量找一个明显的目标位。
+So just try and find something that's a bit of an obvious type target.
+
+8
+00:00:39,900 --> 00:00:41,852
+但要始终记住，
+But again, always keep in the back of
+
+9
+00:00:41,852 --> 00:00:43,804
+主力可能在大单区留下一个较差的低点，
+your mind that that elephant's likely left a
+
+10
+00:00:43,804 --> 00:00:46,000
+并且很可能会回测这个低点。
+bad low and is likely going to revisit it.
+
+11
+00:00:46,000 --> 00:00:48,300
+所以把这个因素也考虑进去。
+So just factor that in to the equation.
+
+12
+00:00:48,700 --> 00:00:50,104
+在风险收益方面，
+In terms of risk reward,
+
+13
+00:00:50,104 --> 00:00:52,070
+因为我们风险控制很严，止损设得很紧，
+obviously, because we're managing the risk quite
+
+14
+00:00:52,070 --> 00:00:54,597
+所以收益指标相对不错。
+tight stop, we have got relatively good reward metrics.
+
+15
+00:00:54,800 --> 00:01:02,000
+好的，执行时我们要非常精确，不能在价格上赌博。为什么？
+Okay, application, we're going to be very exact here in process. We can't really afford to gamble over prices.Why?
+
+16
+00:01:02,800 --> 00:01:04,192
+假设我们冒险用3个点的风险，
+If we're risking, say, three prices
+
+17
+00:01:04,192 --> 00:01:05,584
+来赚10到15个点，
+to make 10 to 15 prices, okay, there's
+
+18
+00:01:05,584 --> 00:01:08,834
+容错空间很小，必须精确执行。
+not a great deal of wiggle room there in which we can't be exact.
+
+19
+00:01:09,900 --> 00:01:12,900
+所以执行上要非常精确。
+So it's a very exact application in terms of execution.
+
+20
+00:01:13,300 --> 00:01:14,200
+不需要抢先操作。
+No need to preempt.
+
+21
+00:01:15,800 --> 00:01:17,278
+在杠杆方面，
+In terms of leverage, we
+
+22
+00:01:17,278 --> 00:01:18,756
+我们不会用杠杆。
+don't leverage on this. We
+
+23
+00:01:18,756 --> 00:01:22,897
+甚至都不会考虑用杠杆。我们只是从市场中获取增量。
+don't even consider leveraging. We simply just take the increment out of the market.
+
+24
+00:01:23,000 --> 00:01:27,500
+说到短线交易，我总觉得短线交易就是捞几个Tick。
+Now, in terms of a scalp, I always like to think of a scalp as nicking ticks.
+
+25
+00:01:27,900 --> 00:01:31,600
+这就是为什么很多交易者会进行短线交易。
+That's why a lot of our traders... scalp the markets.
+
+26
+00:01:32,000 --> 00:01:35,800
+当然，我们也喜欢大行情、大突破这样的机会。
+Obviously, we like the big moves. We like to get on the big moves, the big breakouts, etc.
+
+27
+00:01:36,300 --> 00:01:41,400
+但当市场给你一个高概率的短线交易机会时，
+But when the markets present you with a scalp opportunity with a high probability, we're
+
+28
+00:01:41,400 --> 00:01:44,800
+我们就会有效地捞几个点，你也应该这么做。
+going to nick those ticks effectively and so should you.
+
+29
+00:01:45,100 --> 00:01:47,315
+好的，关于这个策略的小技巧
+Okay, in terms of the tip for this
+
+30
+00:01:47,315 --> 00:01:49,530
+策略，要学会什么是市场中的大单吸收（absorption）
+strategy, learn what is large absorption in the
+
+31
+00:01:49,530 --> 00:01:52,298
+这个概念在策略里已经详细讲过了。
+market. We spoke about this quite extensively in the strategy.
+
+32
+00:01:52,600 --> 00:01:54,317
+如果你懂大单吸收，
+If you know what large absorption is, you'll
+
+33
+00:01:54,317 --> 00:01:56,034
+就能识别市场上涨的信号，
+know when there's a lift in the market
+
+34
+00:01:56,034 --> 00:01:58,396
+然后就能抓住机会捞几个Tick。
+and you'll be able to take advantage and nick some ticks.
+
+35
+00:02:04,200 --> 00:02:07,100
+再来说我最喜欢的书之一，《障碍即道路》（The Obstacle is the Way）。
+Now again, another one of my favorite books, The Obstacle is the Way.
+
+36
+00:02:07,200 --> 00:02:08,500
+书名已经说明了一切。
+I think the title gives it away.
+
+37
+00:02:08,900 --> 00:02:11,660
+这本书讲的是发现无数
+What this book goes about is finding numerous
+
+38
+00:02:11,660 --> 00:02:14,075
+障碍（obstacle），并展示每一个障碍中
+obstacles and showing how within every single
+
+39
+00:02:14,075 --> 00:02:15,899
+都隐藏着机会，比如
+one of these obstacles, i.e.
+
+40
+00:02:15,900 --> 00:02:17,000
+失败，比如
+Failures, i.e.
+
+41
+00:02:17,100 --> 00:02:20,700
+困难时刻，都有一条前进的路。
+Difficult moments, there is always a way forward.
+
+42
+00:02:21,000 --> 00:02:24,900
+这正是本书的核心理念和原则。
+And it's that understanding, that principle understanding that this book is all about.
+
+43
+00:02:25,000 --> 00:02:28,500
+顺便说一下，作者是Ryan Holiday。他写过很多书。
+Now, note Ryan Holiday is the author. He's written a number of books.
+
+44
+00:02:29,000 --> 00:02:31,680
+其中一本非常有名，
+One of them, which is very popular, and we will
+
+45
+00:02:31,680 --> 00:02:33,824
+我们之后在扩展阅读中会讲到，
+talk about this later on in the additional
+
+46
+00:02:33,824 --> 00:02:35,700
+就是《自负是敌人》。
+reading, is The Ego is the Enemy.
+
+47
+00:02:35,700 --> 00:02:42,700
+总结一下，这本书本质上把障碍转化为机遇。
+So in terms of a summary, this book ultimately transforms obstacles into opportunities.
+
+48
+00:02:42,700 --> 00:02:45,000
+说到底，这是一种思维方式的转变。
+So it's just a mindset shift in essence.
+
+49
+00:02:45,200 --> 00:02:47,020
+它告诉你大多数人把障碍看作坏事，
+It shows you how most people think of
+
+50
+00:02:47,020 --> 00:02:48,840
+他们认为障碍是‘我怎么才能度过难关’之类的问题，
+obstacles as bad things. They think of them
+
+51
+00:02:48,840 --> 00:02:51,798
+比如‘我该怎么度过这个难关’之类的。
+as, you know, how am I going to get through this, etc., etc.
+
+52
+00:02:52,300 --> 00:02:54,220
+但Ryan Holiday试图打破这种观念，
+But Ryan Holiday tries to dispel that and
+
+53
+00:02:54,220 --> 00:02:56,140
+让你意识到每次遇到障碍时，
+make you realize that every time there is
+
+54
+00:02:56,140 --> 00:02:59,500
+通过一点思维方式的转变，
+an obstacle, through a little bit of a mindset shift, through a mindset shift,
+
+55
+00:03:00,600 --> 00:03:01,830
+通过思维转变，
+shift you can ultimately
+
+56
+00:03:01,830 --> 00:03:03,675
+你最终能
+establish a very very good opportunity
+
+57
+00:03:03,675 --> 00:03:05,520
+从每一个障碍中找到非常好的机会。
+from every one of the obstacles
+
+58
+00:03:05,520 --> 00:03:07,365
+好，再来说说行动层面，
+okay in terms of action again
+
+59
+00:03:07,367 --> 00:03:12,597
+这本书很发人深省，会促使你改变对
+this is very thought-provoking and it's going to want you to adjust the way you think about
+
+60
+00:03:13,000 --> 00:03:15,600
+现在来看障碍的普遍情况，以及几个关键亮点
+obstacles in general now some of the key highlights
+
+61
+00:03:16,600 --> 00:03:18,773
+同样，这也是一个我们之前看到的那种流程
+Again, another process like we saw
+
+62
+00:03:18,773 --> 00:03:21,308
+雷·达里奥的方法，是一个逐步的
+in Ray Dalio, obviously a step-for-step
+
+63
+00:03:21,308 --> 00:03:24,206
+识别障碍中机遇的流程
+process to identify the opportunity in an obstacle.
+
+64
+00:03:23,900 --> 00:03:29,100
+这一点很关键，因为有时候我们要很久才能发现其中的机遇
+And this is key because sometimes we can't always see the potential opportunity until much later on.
+
+65
+00:03:29,100 --> 00:03:30,800
+所以这是一个很不错的逐步流程
+So nice step-for-step process.
+
+66
+00:03:31,200 --> 00:03:37,300
+注意，它会教你如何通过边际化流程来应对困难局面
+Note, obviously, it's going to show you how to manage difficult situations through a process of marginalizing.
+
+67
+00:03:37,800 --> 00:03:40,234
+把障碍拆解成非常小的
+So breaking down obstacles into very small
+
+68
+00:03:40,234 --> 00:03:42,668
+部分，最终
+margins, into very small segments, is ultimately
+
+69
+00:03:42,668 --> 00:03:45,797
+会帮你找到突破障碍的方法
+going to show you how to get through obstacles.
+
+70
+00:03:46,300 --> 00:03:51,500
+然后转变思维，接受障碍，并相应调整焦点和精力
+Then shift your mindset to accepting obstacles and aligning focus and energy accordingly.
+
+71
+00:03:51,700 --> 00:03:54,036
+换句话说，与其被障碍卡住
+So in other words, rather than getting your
+
+72
+00:03:54,036 --> 00:03:56,080
+不如把精力放在
+back up with the obstacle, rather focus
+
+73
+00:03:56,080 --> 00:03:59,000
+克服它并超越它上
+your energy on getting through it and getting beyond it.
+
+74
+00:03:59,500 --> 00:04:04,300
+从困境中走出来的过程，才是真正的成长
+Then obviously the journey through a tough situation is ultimately what real growth is about.
+
+75
+00:04:04,300 --> 00:04:05,656
+接下来
+So it goes on then
+
+76
+00:04:05,656 --> 00:04:07,555
+强调每次我们
+to focus on how every time we
+
+77
+00:04:07,555 --> 00:04:09,997
+遇到障碍，最终都会从中成长
+do have an obstacle, ultimately we're growing from it.
+
+78
+00:04:10,400 --> 00:04:15,000
+好的，然后还是关于失败的，我们之前在雷·达里奥那里看到过
+Okay, and then obviously all about failures again. We saw this in Ray Dalio.
+
+79
+00:04:15,100 --> 00:04:17,066
+大多数书里都能看到这个理念
+We can see this in most of the
+
+80
+00:04:17,066 --> 00:04:18,540
+即从失败中学习
+books, which is the principle of
+
+81
+00:04:18,540 --> 00:04:20,997
+从失败中汲取教训
+learning from your failures, learning the lessons from your failures.
+
+82
+00:04:21,200 --> 00:04:23,344
+在后面的策略中，你会看到我多次提到这个
+You're going to see me talk about this
+
+83
+00:04:23,344 --> 00:04:25,488
+我职业生涯中学到的大多数策略
+through numerous strategies. Most of the strategies I've
+
+84
+00:04:25,488 --> 00:04:27,900
+都源自最初的失败
+learned throughout my career have come from initial failures.
+
+85
+00:04:28,300 --> 00:04:33,200
+好的，这就是我推荐的第二本延伸阅读书目
+All right, that is then obviously the... second book I would recommend for additional reading.
+
+86
+00:04:39,100 --> 00:04:41,700
+好的，我们现在来到了第7单元的结尾
+Okay, we've come then to the end of Unit 7.
+
+87
+00:04:42,100 --> 00:04:43,900
+也就是策略2的结尾
+This is the end of, obviously, Strategy 2.
+
+88
+00:04:44,500 --> 00:04:48,900
+我想说的是，你已经学过了如何完成练习流程
+What I am going to say is, obviously, again, you've been through this how to complete the drill process.
+
+89
+00:04:49,200 --> 00:04:51,600
+注意，要完整观看整个练习过程
+Note, watch the drill in its entirety.
+
+90
+00:04:51,800 --> 00:04:54,100
+再次提醒，自己独立完成模板。
+Again, complete the template by yourself.
+
+91
+00:04:54,500 --> 00:04:57,800
+完成模板后，再去观看指导教程。
+Once you've completed that template, then go and watch the guided tuition.
+
+92
+00:04:58,300 --> 00:05:03,800
+这样能确保你通过独立完成模板来提升自己。
+That's just to ensure that you are gaining and growing in your own way with completing the template.
+
+93
+00:05:04,200 --> 00:05:06,100
+注意，你会看到上面有一些星标。
+Do note, obviously, you can see some stars there.
+
+94
+00:05:06,500 --> 00:05:12,100
+这表示实际案例中的练习示例
+What that's showing us is that the practical example the drill example will be the same one utilized
+
+95
+00:05:12,600 --> 00:05:14,496
+会与本单元使用的案例一致，
+in this unit so you're going
+
+96
+00:05:14,496 --> 00:05:16,392
+你会复盘相同的案例，
+to go over the same example
+
+97
+00:05:16,392 --> 00:05:18,288
+这次由你独立完成，
+this time on your own and
+
+98
+00:05:18,288 --> 00:05:22,397
+完成后，记得将你的模板
+obviously note once you have completed your own template compare notes to the
+
+99
+00:05:23,000 --> 00:05:24,454
+与指导教程的内容
+you know to the guided
+
+100
+00:05:24,454 --> 00:05:26,490
+进行对比，做出相应调整。
+tuition make adjustments accordingly and again once
+
+101
+00:05:26,490 --> 00:05:28,526
+当你对理解有信心，
+you have confidence in your understanding and
+
+102
+00:05:28,526 --> 00:05:30,562
+并且准备好进入
+you're ready to then move on to
+
+103
+00:05:30,562 --> 00:05:32,598
+下一个单元时，就可以继续了。
+the next unit then do so now
+
+104
+00:05:33,700 --> 00:05:37,700
+记住，每个单元结束后，你都有一天休息时间。
+Do bear in mind at the end of every one of these units, you have got a day off.
+
+105
+00:05:38,300 --> 00:05:39,600
+好好利用这天休息时间。
+Utilize that day off.
+
+106
+00:05:39,600 --> 00:05:41,550
+确保专注于这些练习和原则，
+Make sure that you go focus
+
+107
+00:05:41,550 --> 00:05:47,096
+充分利用好这天。然后
+on those drills and those principles and make the most of the day off.Obviously, then
+
+108
+00:05:47,096 --> 00:05:48,584
+我们以一句格言收尾。
+we finish off with our quote.
+
+109
+00:05:48,584 --> 00:05:52,800
+赢得比赛的人往往是做事最少的那个。
+The guy who wins the race is often the one who does the least amount of work.
+
+110
+00:05:53,800 --> 00:05:54,600
+这话太对了。
+This is so true.
+
+111
+00:05:54,800 --> 00:05:58,500
+在Axia，我们的交易员身上一次次验证了这一点。
+We see this time and time again with all of our traders at Axia.
+
+112
+00:05:58,800 --> 00:06:00,100
+我们最优秀、最资深的交易员，
+Our best, most established traders.
+
+113
+00:06:00,700 --> 00:06:05,100
+看起来他们做的事最少，但其实是最聪明地工作。
+It sometimes appears as though they work the least, but they're actually just working the smartest.
+
+===== END AFTER_OPTIMIZE =====

@@ -1,0 +1,3162 @@
+===== AFTER_SEGMENT (790 entries) =====
+1
+00:00:02,600 --> 00:00:03,500
+Hey, good morning everybody.
+
+2
+00:00:03,500 --> 00:00:04,000
+It's Mike.
+
+3
+00:00:04,100 --> 00:00:07,000
+It's Thursday, July 17th.
+
+4
+00:00:07,100 --> 00:00:08,300
+This is session 8.
+
+5
+00:00:08,300 --> 00:00:11,800
+We're about halfway through the summer program.
+
+6
+00:00:12,400 --> 00:00:16,100
+And today what we'll be talking about is volume skews.
+
+7
+00:00:16,600 --> 00:00:18,540
+Okay, now this is, again, you
+
+8
+00:00:18,540 --> 00:00:20,480
+know, the topics I'm really trying
+
+9
+00:00:20,480 --> 00:00:22,420
+to cover here in this summer
+
+10
+00:00:22,420 --> 00:00:26,300
+program are more advanced topics that you probably never heard of or
+
+11
+00:00:27,300 --> 00:00:32,700
+have come across because they are really sort of on the cutting edge of order flow.
+
+12
+00:00:33,100 --> 00:00:34,600
+You know, I don't just work with order flows.
+
+13
+00:00:34,700 --> 00:00:37,900
+I work with a lot of other traders at different levels.
+
+14
+00:00:38,300 --> 00:00:42,400
+And this is something that, you know, we've been talking about for quite a while.
+
+15
+00:00:42,400 --> 00:00:49,500
+And this is really the first time that I've shared this. Um, with other traders outside of that particular circle.
+
+16
+00:00:49,900 --> 00:00:51,400
+So what
+
+17
+00:00:54,100 --> 00:01:02,100
+order flow volume skews are it's basically directional bias in volume placement and you know to be honest
+
+18
+00:01:02,700 --> 00:01:05,378
+the way that most markets trade
+
+19
+00:01:05,378 --> 00:01:08,056
+is you know they distribute volume
+
+20
+00:01:08,056 --> 00:01:10,734
+and some markets distribute the volume
+
+21
+00:01:10,734 --> 00:01:15,198
+better than others okay and you know e-minis do a
+
+22
+00:01:16,700 --> 00:01:22,000
+probably the best job of distributing volume out of all the markets.
+
+23
+00:01:23,000 --> 00:01:28,300
+You could say that maybe a market like 10 years do, but sometimes you just don't get that volatility.
+
+24
+00:01:28,800 --> 00:01:32,500
+But when we get into the... examples you'll understand it a lot better.
+
+25
+00:01:32,800 --> 00:01:39,300
+So what volume skews measure is the asymmetry of volume across the bar's price range.
+
+26
+00:01:39,300 --> 00:01:41,420
+You know, bars open, they have
+
+27
+00:01:41,420 --> 00:01:43,540
+a high, they have a low,
+
+28
+00:01:43,540 --> 00:01:49,900
+they have a close, and you know how the volume is distributed within that bar can be skewed.
+
+29
+00:01:49,900 --> 00:01:54,400
+It can be skewed one way or the other and positive
+
+30
+00:01:58,300 --> 00:01:58,700
+What is that?
+
+31
+00:01:58,800 --> 00:02:01,114
+I said positive skewness means more
+
+32
+00:02:01,114 --> 00:02:03,428
+volume clustered towards the upper end,
+
+33
+00:02:03,428 --> 00:02:06,899
+indicating buyers are aggressively lifting and potentially trapping shorts.
+
+34
+00:02:07,200 --> 00:02:11,900
+Negative skewness shows volume weighted towards the low signaling seller dominance.
+
+35
+00:02:12,800 --> 00:02:13,200
+And.
+
+36
+00:02:14,400 --> 00:02:23,900
+Skewness is a powerful yet under-discussed statistical concept that can reveal directional biases in market participant behavior.
+
+37
+00:02:24,100 --> 00:02:29,500
+So while traditional orderful analysis focuses on metrics like delta, right, the difference between aggressive buying
+
+38
+00:02:29,900 --> 00:02:32,000
+and selling volume or imbalances, right,
+
+39
+00:02:32,000 --> 00:02:34,100
+where one side dominates at a
+
+40
+00:02:34,100 --> 00:02:36,200
+price level in a two-way auction,
+
+41
+00:02:36,200 --> 00:02:41,100
+skewness applies principles from probability distributions to the volume profile within a footprint bar.
+
+42
+00:02:42,200 --> 00:02:45,126
+So this is going to help quantify asymmetry
+
+43
+00:02:45,126 --> 00:02:48,052
+in how volume is distributed across price levels
+
+44
+00:02:48,052 --> 00:02:49,515
+in the bar, offering
+
+45
+00:02:49,515 --> 00:02:56,099
+you insights into the conviction, potential traps, or momentum shifts that aren't immediately obvious from visual inspection alone.
+
+46
+00:02:57,300 --> 00:02:58,900
+Okay, so how to spot it.
+
+47
+00:03:01,744 --> 00:03:05,344
+Even though I wrote bullish here, what did I write?
+
+48
+00:03:08,744 --> 00:03:10,944
+Yeah, I'll have to fix this slide.
+
+49
+00:03:12,044 --> 00:03:13,544
+I wrote bullish twice here.
+
+50
+00:03:13,544 --> 00:03:15,344
+It's actually bullish and bearish.
+
+51
+00:03:15,444 --> 00:03:16,544
+Bearish is the second one.
+
+52
+00:03:16,844 --> 00:03:20,644
+But I'll fix this slide right after we're done here.
+
+53
+00:03:21,844 --> 00:03:30,344
+So bullish skewness, basically you're going to visually divide the bar into thirds, a low, a middle, and a high.
+
+54
+00:03:30,744 --> 00:03:35,744
+So if roughly 70% of the volume is in the top third with positive delta, it's a bullish skew.
+
+55
+00:03:36,544 --> 00:03:38,944
+Expect continuation if the next bar opens.
+
+56
+00:03:40,844 --> 00:03:42,044
+Above the prior close.
+
+57
+00:03:44,644 --> 00:03:46,844
+Bearish, even though I wrote bullish, I'm going to fix that.
+
+58
+00:03:49,144 --> 00:03:50,744
+Visually divide the bar into thirds.
+
+59
+00:03:50,744 --> 00:03:59,144
+And again, you know, I say visually because right now NinjaTrader doesn't have the ability.
+
+60
+00:03:59,244 --> 00:04:04,444
+I mean, we can write a code for it that will actually divide it into thirds.
+
+61
+00:04:04,644 --> 00:04:08,344
+Sometimes, you know, I find the vision test or the vision.
+
+62
+00:04:09,144 --> 00:04:10,886
+I say vision test easier
+
+63
+00:04:10,886 --> 00:04:13,325
+to manage because sometimes, you know, when
+
+64
+00:04:13,325 --> 00:04:15,415
+the problem when you write code,
+
+65
+00:04:15,415 --> 00:04:20,642
+I don't write the code, my program does, but you have to be very specific.
+
+66
+00:04:21,144 --> 00:04:22,244
+It has to be the third.
+
+67
+00:04:22,844 --> 00:04:28,444
+All right. If I'm saying you divide the bar into thirds, it's going to be 33 percent, 33 percent, 33 percent.
+
+68
+00:04:28,944 --> 00:04:29,244
+Okay.
+
+69
+00:04:29,344 --> 00:04:31,131
+Whereas if you're doing it
+
+70
+00:04:31,131 --> 00:04:33,634
+visually, you know, there might be a
+
+71
+00:04:33,634 --> 00:04:35,779
+time when it's, you know, just
+
+72
+00:04:35,779 --> 00:04:40,427
+under the percentage or just over the percentage, 34 percent or, you know, 30 percent.
+
+73
+00:04:41,344 --> 00:04:42,844
+Does that mean that it's not valid?
+
+74
+00:04:42,944 --> 00:04:49,544
+Well, you know, it could still be valid. But, you know, you have to make that decision as a trader.
+
+75
+00:04:49,644 --> 00:04:54,744
+Right. Really, that's, you know, the best traders are the ones that think for themselves.
+
+76
+00:04:54,744 --> 00:04:57,244
+You know, we all like to have programs, have stuff programmed.
+
+77
+00:04:57,544 --> 00:04:58,844
+I like to have things programmed.
+
+78
+00:04:59,244 --> 00:05:02,144
+And, you know, sometimes we rely on things too much.
+
+79
+00:05:02,244 --> 00:05:05,944
+It's just sort of like with AI and chat GPT.
+
+80
+00:05:06,344 --> 00:05:08,344
+You know, everyone is talking about.
+
+81
+00:05:09,044 --> 00:05:13,344
+how, you know, kids aren't thinking anymore, right?
+
+82
+00:05:13,344 --> 00:05:20,344
+They're just relying on tools like ChatGPT to find answers, right?
+
+83
+00:05:20,444 --> 00:05:25,744
+Rather than think things through and come up with the answer.
+
+84
+00:05:25,844 --> 00:05:29,644
+So, When I say visually, that's what I'm referring to.
+
+85
+00:05:29,944 --> 00:05:35,044
+So if roughly 70% of the total volume is in the bottom third with negative delta, it's a bearish skew.
+
+86
+00:05:35,044 --> 00:05:38,844
+Expect continuation if the next bar opens below the prior close.
+
+87
+00:05:39,344 --> 00:05:43,944
+So where it gets tricky is when 70% of the volume is half of the bar, right?
+
+88
+00:05:43,944 --> 00:05:48,344
+We really want to be in the top third for bullish or bottom third for bearish.
+
+89
+00:05:49,444 --> 00:05:53,544
+The other thing that needs to be said is there needs to be some volatility in the market.
+
+90
+00:05:53,544 --> 00:05:55,044
+And what do I mean by volatility?
+
+91
+00:05:55,044 --> 00:05:58,644
+It means price discovery, price going up, price going down.
+
+92
+00:05:59,344 --> 00:06:05,044
+You know, you need to have bars with some movement, with some price levels appearing in the bar.
+
+93
+00:06:05,044 --> 00:06:07,709
+You can't just have bars that have
+
+94
+00:06:07,709 --> 00:06:10,374
+very tight ranges, you know, meaning, you
+
+95
+00:06:10,374 --> 00:06:14,943
+know, the bar has a four tick range, a five tick range.
+
+96
+00:06:15,944 --> 00:06:18,744
+You know, it's going to be hard to spot.
+
+97
+00:06:19,644 --> 00:06:23,644
+Volume skews because volume is probably being distributed really well.
+
+98
+00:06:23,644 --> 00:06:26,944
+So there needs to be that sort of consistency in
+
+99
+00:06:28,744 --> 00:06:31,144
+or sorry, the volatility in the market.
+
+100
+00:06:34,036 --> 00:06:38,836
+I'm going to change that where it says bullish, the second one here. That's actually bearish.
+
+101
+00:06:43,636 --> 00:06:44,936
+So why is this your edge?
+
+102
+00:06:44,936 --> 00:06:49,636
+It's because in a trending market, you're going to look for increasing skewness over three or four bars.
+
+103
+00:06:49,736 --> 00:06:51,236
+It often precedes accelerations.
+
+104
+00:06:51,336 --> 00:06:56,336
+Your market is getting ready to accelerate in a direction.
+
+105
+00:06:57,236 --> 00:07:04,036
+Again, you want to be alerted to anything that's going to happen in the market as soon as possible.
+
+106
+00:07:04,636 --> 00:07:09,536
+So for reversals, watch for skewness, flipping around against the trend.
+
+107
+00:07:10,736 --> 00:07:13,536
+In other words, downtrend with sudden positive skew.
+
+108
+00:07:14,236 --> 00:07:21,636
+This catches fake outs where price probes lows, but volume doesn't follow, revealing spoofing or exhaustion.
+
+109
+00:07:22,336 --> 00:07:28,136
+Okay, now. Before we get into the charts, I just want to go over a couple of things here.
+
+110
+00:07:28,336 --> 00:07:31,836
+So there's positive skewness, and this is where it gets a little confusing sometimes.
+
+111
+00:07:32,036 --> 00:07:33,536
+I think I may have confused you already.
+
+112
+00:07:34,036 --> 00:07:37,236
+But positive skewness is volume concentrated towards the
+
+113
+00:07:37,236 --> 00:07:40,436
+lower prices in a bar near the low,
+
+114
+00:07:40,436 --> 00:07:43,636
+with a tail of lighter volume extending higher.
+
+115
+00:07:44,636 --> 00:07:48,936
+Okay, now this suggests sellers dominated early, pushing price down.
+
+116
+00:07:49,336 --> 00:07:56,336
+Buyers stepped in weakly or sporadically at highs. Often this is a bearish bias as a conviction is weighted low.
+
+117
+00:07:57,036 --> 00:08:01,536
+Okay, now I put down here, it can be confusing because when you think
+
+118
+00:08:01,536 --> 00:08:03,636
+Of positive, you think bullish.
+
+119
+00:08:06,936 --> 00:08:11,036
+But when positive skewness appears, it's actually bearish in market context.
+
+120
+00:08:11,736 --> 00:08:13,036
+Now, negative skewness.
+
+121
+00:08:14,636 --> 00:08:17,136
+Volume clusters towards the higher prices.
+
+122
+00:08:17,136 --> 00:08:19,722
+When I say volume clusters, you know,
+
+123
+00:08:19,722 --> 00:08:22,678
+volume is sort of getting grouped towards higher
+
+124
+00:08:22,678 --> 00:08:25,634
+prices near the high with that tail lower.
+
+125
+00:08:26,536 --> 00:08:27,236
+Okay, meaning
+
+126
+00:08:29,436 --> 00:08:32,236
+It's got lighter volume below the heavier volume.
+
+127
+00:08:32,536 --> 00:08:33,736
+That's really what I mean by tail.
+
+128
+00:08:33,736 --> 00:08:35,936
+Don't think of it in terms of candlesticks.
+
+129
+00:08:36,236 --> 00:08:39,869
+This indicates buyers lifting offers aggressively at tops
+
+130
+00:08:39,869 --> 00:08:43,502
+of the bars, which in turn traps the
+
+131
+00:08:43,502 --> 00:08:47,135
+sellers that are below that heavier volume, right?
+
+132
+00:08:47,136 --> 00:08:51,636
+Because, you know, imagine you have a green bar forming, and the negative skewness is bullish.
+
+133
+00:08:51,936 --> 00:08:53,636
+You have a green bar forming.
+
+134
+00:08:54,736 --> 00:08:58,226
+And it trades lower and starts trading higher
+
+135
+00:08:58,226 --> 00:09:01,716
+above those lower prices, those sellers that were
+
+136
+00:09:01,716 --> 00:09:05,206
+down below are, in a sense, they're trapped,
+
+137
+00:09:05,206 --> 00:09:09,133
+right, because the market is now trading above them.
+
+138
+00:09:10,036 --> 00:09:11,862
+And again, you know, negative skewness,
+
+139
+00:09:11,862 --> 00:09:14,296
+when you hear the term negative, you think
+
+140
+00:09:14,296 --> 00:09:17,035
+the market should go down, but it's actually bullish.
+
+141
+00:09:17,636 --> 00:09:18,636
+In market context.
+
+142
+00:09:18,636 --> 00:09:21,136
+When you talk about negative skewness, it's actually bullish.
+
+143
+00:09:21,536 --> 00:09:26,136
+I know it gets confusing because when you hear the term negative, you think red, right?
+
+144
+00:09:26,236 --> 00:09:27,436
+You think the market is going down.
+
+145
+00:09:27,536 --> 00:09:31,536
+You know, the market's negative today, but actually negative skewness when it appears is actually
+
+146
+00:09:33,036 --> 00:09:44,536
+And you have zero skewness, which is basically balanced distribution, applying indecision or equilibrium, which is common in ranges, right?
+
+147
+00:09:44,536 --> 00:09:50,536
+When a market is range bound, going sideways, volume is being distributed evenly.
+
+148
+00:09:51,836 --> 00:09:54,336
+So you have zero skewness taking place in the market.
+
+149
+00:09:55,936 --> 00:10:00,836
+So why volume skews matter in order flows?
+
+150
+00:10:00,836 --> 00:10:04,536
+Because, you know, markets are auctions.
+
+151
+00:10:04,636 --> 00:10:09,536
+They're driven by aggressive trading, which is taking place against passive trading, right?
+
+152
+00:10:09,536 --> 00:10:13,236
+The market orders against the limit orders in the order flow.
+
+153
+00:10:13,336 --> 00:10:16,436
+Skewness captures subtle biases in this situation, in this auction.
+
+154
+00:10:17,236 --> 00:10:19,886
+Like institutional accumulation, negative skew in
+
+155
+00:10:19,886 --> 00:10:22,536
+pullbacks or distribution positive skews at
+
+156
+00:10:22,536 --> 00:10:26,069
+peaks, which delta alone might miss even if
+
+157
+00:10:26,069 --> 00:10:27,835
+total volume is even.
+
+158
+00:10:28,536 --> 00:10:31,336
+Okay, so it's just another way to look at the market.
+
+159
+00:10:32,036 --> 00:10:36,036
+You know, we spent a lot of time talking about delta the other day, the last couple of sessions.
+
+160
+00:10:37,236 --> 00:10:39,693
+This sort of removes the delta
+
+161
+00:10:39,693 --> 00:10:42,150
+because now you're sort of focusing
+
+162
+00:10:42,150 --> 00:10:45,835
+on how volume is being distributed in the bar.
+
+163
+00:10:46,636 --> 00:10:53,436
+Okay, and that's something that if you're just normally looking at a normal candlestick chart, you're not paying attention to.
+
+164
+00:10:53,736 --> 00:10:56,236
+Now, skewness isn't mainstream yet.
+
+165
+00:10:56,836 --> 00:11:02,736
+Most gurus out there stick to visual patterns, you know, stacked imbalances. things like that.
+
+166
+00:11:04,136 --> 00:11:06,399
+But it's gaining traction in sort
+
+167
+00:11:06,399 --> 00:11:08,662
+of the quantitative order full of
+
+168
+00:11:08,662 --> 00:11:10,925
+circles, especially with algo heavy markets
+
+169
+00:11:10,925 --> 00:11:12,056
+in this year, 2025.
+
+170
+00:11:12,636 --> 00:11:19,536
+You know, it's really algos are really, I don't want to say taking over, but
+
+171
+00:11:20,236 --> 00:11:32,936
+You know, for the last decade, banks and funds have been just pouring money into the algo world of trading.
+
+172
+00:11:34,236 --> 00:11:36,436
+And that's just the way it goes.
+
+173
+00:11:36,536 --> 00:11:39,936
+And that's why I say, you know, sometimes it's as a trader.
+
+174
+00:11:40,336 --> 00:11:46,736
+It can be beneficial to not have something that's just programmed.
+
+175
+00:11:46,736 --> 00:11:50,636
+You know, use your eyes, use your brain, right?
+
+176
+00:11:50,636 --> 00:11:57,036
+When I was talking about the thirds, you know, because trading programs are binary, right?
+
+177
+00:11:57,136 --> 00:11:59,136
+It's ones and zeros. Either it is or it isn't.
+
+178
+00:11:59,136 --> 00:12:00,136
+So when I say 30,
+
+179
+00:12:00,836 --> 00:12:02,183
+percent or a third
+
+180
+00:12:02,183 --> 00:12:04,204
+percent you know break bar up
+
+181
+00:12:04,204 --> 00:12:05,888
+into thirds you think 33 percent
+
+182
+00:12:05,888 --> 00:12:06,561
+33 percent 33 percent
+
+183
+00:12:06,561 --> 00:12:11,950
+and if something is just outside the range you know if it's 30 percent or if it's 35
+
+184
+00:12:14,436 --> 00:12:17,004
+it might not cover it okay
+
+185
+00:12:17,004 --> 00:12:19,572
+but you know if you use
+
+186
+00:12:19,572 --> 00:12:22,140
+your brain use your critical thinking
+
+187
+00:12:22,140 --> 00:12:25,136
+so to speak then it's going to
+
+188
+00:12:27,916 --> 00:12:28,816
+help you, right?
+
+189
+00:12:28,816 --> 00:12:31,516
+Because you are making that differentiation.
+
+190
+00:12:32,216 --> 00:12:33,616
+Okay. So,
+
+191
+00:12:37,016 --> 00:12:39,616
+Volume skews deal with volume.
+
+192
+00:12:40,116 --> 00:12:45,116
+Now I'm going to pull up some examples first, and then we'll look at the charts in real time.
+
+193
+00:12:47,216 --> 00:12:54,516
+So since it deals with volume, let's start with what's the heaviest time of volume? What's the cash close?
+
+194
+00:12:55,016 --> 00:12:57,416
+Now, I know not everybody can trade cash close.
+
+195
+00:12:57,716 --> 00:12:59,816
+You know, guys that are trading in prop firms.
+
+196
+00:13:01,116 --> 00:13:02,516
+Some of the firms, I don't know if they still do.
+
+197
+00:13:02,916 --> 00:13:04,016
+I don't trade through these.
+
+198
+00:13:04,216 --> 00:13:06,916
+I don't really like to use the term prop firms, these funded accounts.
+
+199
+00:13:08,916 --> 00:13:09,516
+You know, they
+
+200
+00:13:09,516 --> 00:13:11,316
+got rules where you can't trade the cash close
+
+201
+00:13:11,316 --> 00:13:12,516
+or you can't trade the last 15
+
+202
+00:13:12,516 --> 00:13:14,316
+minutes of going into the cash close, et cetera.
+
+203
+00:13:14,916 --> 00:13:21,616
+But, you know, if you're trading real money, you know, just a normal account, you don't have those restrictions.
+
+204
+00:13:21,916 --> 00:13:22,216
+Now,
+
+205
+00:13:25,204 --> 00:13:27,804
+Skewness deals with volume distribution, so it's volume.
+
+206
+00:13:28,204 --> 00:13:32,904
+So the area, the time of day that has the most volume is the cash close.
+
+207
+00:13:32,904 --> 00:13:36,004
+The second most active time is usually the cash open.
+
+208
+00:13:36,104 --> 00:13:38,404
+But the cash close, you can see it up here.
+
+209
+00:13:38,904 --> 00:13:42,604
+Okay, so here's, where's my mouse?
+
+210
+00:13:43,104 --> 00:13:44,904
+You can see it's cursor here.
+
+211
+00:13:44,904 --> 00:13:47,004
+So you got the bar, it's got volatility.
+
+212
+00:13:47,704 --> 00:13:48,004
+Now,
+
+213
+00:13:49,804 --> 00:13:51,304
+Just going back here really quick.
+
+214
+00:13:53,504 --> 00:13:56,504
+All right, so again, this is to be bearish, not bullish.
+
+215
+00:13:57,004 --> 00:13:58,304
+Divide the bar into thirds.
+
+216
+00:13:58,904 --> 00:14:02,704
+Roughly 70% of the total volume is at the bottom third, okay?
+
+217
+00:14:03,804 --> 00:14:07,204
+I say with negative delta, you know, but usually that's a given.
+
+218
+00:14:08,904 --> 00:14:09,804
+So here's your bar.
+
+219
+00:14:11,004 --> 00:14:15,504
+Now, how can you determine 70% of the volume?
+
+220
+00:14:15,604 --> 00:14:16,904
+Well, easiest way,
+
+221
+00:14:20,456 --> 00:14:23,056
+is to use the value areas.
+
+222
+00:14:29,756 --> 00:14:31,256
+I see a question just came in from Rupa.
+
+223
+00:14:31,656 --> 00:14:36,756
+So if you see 7% of the buying volume, not buying volume, because you wrote a question here, Rupa.
+
+224
+00:14:37,256 --> 00:14:43,156
+He says, so if you see 70% buying volume in the bottom third of a red candle, it's bullish.
+
+225
+00:14:43,356 --> 00:14:44,556
+No, no, no, no.
+
+226
+00:14:46,256 --> 00:14:48,856
+You know what I'm going to do? I'm going to change that slide.
+
+227
+00:14:49,056 --> 00:14:50,056
+Give me a second here.
+
+228
+00:14:56,312 --> 00:15:02,212
+Okay, so here, let's put it up here. Where was that slide here?
+
+229
+00:15:04,412 --> 00:15:05,612
+This is bearish.
+
+230
+00:15:06,312 --> 00:15:07,212
+Total volume.
+
+231
+00:15:07,412 --> 00:15:09,712
+Okay, not, I'll change it right here.
+
+232
+00:15:10,112 --> 00:15:10,512
+So.
+
+233
+00:15:13,112 --> 00:15:14,012
+Yeah, I'm going to be right here.
+
+234
+00:15:14,112 --> 00:15:21,812
+So total volume, not buying volume, not selling volume, total volume, right?
+
+235
+00:15:22,212 --> 00:15:25,712
+Bids and offers combined, okay?
+
+236
+00:15:30,092 --> 00:15:32,992
+Let me just go here so I can get the.
+
+237
+00:15:39,792 --> 00:15:40,992
+So here's the total volume.
+
+238
+00:15:43,592 --> 00:15:44,592
+70% of the volume.
+
+239
+00:15:44,992 --> 00:15:49,492
+The easy way to determine it is using the value area of a bar.
+
+240
+00:15:50,092 --> 00:15:51,792
+You could set your value areas.
+
+241
+00:15:53,592 --> 00:15:56,517
+It's the total volume, not the buying volume, not the
+
+242
+00:15:56,517 --> 00:15:58,565
+volume traded on the offer, not the
+
+243
+00:15:58,565 --> 00:16:01,490
+volume traded on the bid. It's actually both put together.
+
+244
+00:16:03,592 --> 00:16:06,892
+Should be appearing towards the bottom third of the bar.
+
+245
+00:16:09,792 --> 00:16:14,992
+Sometimes it's going to, you know, you'll get the value really touching the bottom of the bar.
+
+246
+00:16:15,892 --> 00:16:18,392
+This one, in my opinion, is close enough.
+
+247
+00:16:18,392 --> 00:16:19,992
+This is where I was getting back to saying,
+
+248
+00:16:24,032 --> 00:16:32,832
+It's not set in stone that exactly has to be 33% of the bar, meaning the bottom third of the bar.
+
+249
+00:16:33,132 --> 00:16:34,332
+To me, this is low enough.
+
+250
+00:16:34,332 --> 00:16:37,732
+It's outside of the middle of the bar. Obviously, it's not on the top of the bar.
+
+251
+00:16:40,032 --> 00:16:43,832
+You know, this next bar, right, which is the one in the last five minutes.
+
+252
+00:16:45,832 --> 00:16:49,432
+Is really the bar that you want to be short on.
+
+253
+00:16:51,432 --> 00:16:55,632
+Because it drops basically 10 points, and this is a five-minute E-mini chart.
+
+254
+00:16:55,932 --> 00:16:57,836
+You could use it on five-minute
+
+255
+00:16:57,836 --> 00:16:59,740
+charts. You could use it on
+
+256
+00:16:59,740 --> 00:17:03,231
+one-minute charts. You could use it on range-based charts, et cetera.
+
+257
+00:17:07,432 --> 00:17:10,632
+So if it was bullish, what would it look like?
+
+258
+00:17:12,632 --> 00:17:20,032
+This would sort of be bullish, but this 70% of the volume is about half of the bar.
+
+259
+00:17:20,232 --> 00:17:27,132
+So it needs to be concentrated the bottom third for bearish, the top third for bullish.
+
+260
+00:17:27,232 --> 00:17:32,332
+Okay, so let's move to... A better example here for bullish.
+
+261
+00:17:32,432 --> 00:17:38,532
+Okay, here this is YM, okay, mini Dow.
+
+262
+00:17:39,732 --> 00:17:42,332
+Now you'll notice you can't read the footprint because I scrunched up this chart.
+
+263
+00:17:42,432 --> 00:17:42,832
+This is
+
+264
+00:17:45,332 --> 00:17:46,578
+a one minute chart,
+
+265
+00:17:46,578 --> 00:17:48,447
+you know, and you do have
+
+266
+00:17:48,447 --> 00:17:50,004
+big, you know, 50 point ranges,
+
+267
+00:17:50,004 --> 00:17:52,807
+100 point ranges in mini Dow during the day nowadays.
+
+268
+00:17:54,732 --> 00:17:57,632
+Okay, but if you're looking at this, to me, this is the top third.
+
+269
+00:17:58,432 --> 00:17:58,732
+Okay.
+
+270
+00:18:00,632 --> 00:18:01,532
+Appear as well.
+
+271
+00:18:04,036 --> 00:18:08,436
+These are bullish ones, right, where it's appearing the top third.
+
+272
+00:18:10,236 --> 00:18:15,036
+Of the bar, top third, top third, right? It's not the half.
+
+273
+00:18:18,536 --> 00:18:25,636
+Right here. Half would be like, sort of like this bar here, or sort of appearing in the middle.
+
+274
+00:18:28,436 --> 00:18:29,736
+This would be like the middle.
+
+275
+00:18:31,136 --> 00:18:35,236
+It's not sort of half of the bar. Like this one to me is about half of the bar.
+
+276
+00:18:36,636 --> 00:18:39,036
+It should be at the top third.
+
+277
+00:18:39,036 --> 00:18:41,636
+And again, it gets a little confusing because
+
+278
+00:18:41,636 --> 00:18:43,911
+I know somebody that programmed this and
+
+279
+00:18:43,911 --> 00:18:48,136
+sort of the drawback that I had when I saw it programmed is.
+
+280
+00:18:50,236 --> 00:18:52,479
+Like I said, you're drawing lines in
+
+281
+00:18:52,479 --> 00:18:55,363
+the sand where if you're literally breaking a bar
+
+282
+00:18:55,363 --> 00:18:57,606
+down by thirds, okay, this one would
+
+283
+00:18:57,606 --> 00:19:02,734
+be outside of the range because it would be starting from up here to about here.
+
+284
+00:19:03,036 --> 00:19:07,936
+Then the middle would be from here to here. The bottom third would be from here to here, right?
+
+285
+00:19:08,136 --> 00:19:10,136
+I do like to have that flexibility.
+
+286
+00:19:10,836 --> 00:19:13,736
+In determining if this is in the top
+
+287
+00:19:13,736 --> 00:19:16,636
+third, rather than literally drawing the line, breaking
+
+288
+00:19:16,636 --> 00:19:22,436
+a bar up into thirds and saying the value area has to appear here or here.
+
+289
+00:19:23,836 --> 00:19:25,536
+You know, one sort of note.
+
+290
+00:19:28,960 --> 00:19:32,860
+I think, now that I think about it, if you were...
+
+291
+00:19:34,960 --> 00:19:39,060
+Going to program it and literally cut the bar into thirds.
+
+292
+00:19:40,460 --> 00:19:45,860
+You could use a smaller amount of volume, 60% as opposed to 70%.
+
+293
+00:19:46,260 --> 00:19:54,160
+I wouldn't go below 50% in terms of volume, but I think you can sort of go down to maybe 60, 65% from 70%.
+
+294
+00:19:55,060 --> 00:20:02,160
+70% when you're looking at 70% of the volume in a bar is really rejecting much lower prices.
+
+295
+00:20:03,160 --> 00:20:05,660
+Okay, and you're really concentrating volume up there.
+
+296
+00:20:08,460 --> 00:20:12,960
+Well, 70%, Ben asked, why 70% as opposed to another value?
+
+297
+00:20:13,660 --> 00:20:15,660
+And again, it's not set in stone, right?
+
+298
+00:20:15,860 --> 00:20:18,060
+I know guys that use 60%.
+
+299
+00:20:19,960 --> 00:20:23,560
+70% is just sort of the one standard deviation, right?
+
+300
+00:20:23,560 --> 00:20:29,060
+Going back to market profile is just something that, like for me, I use value areas of 70%.
+
+301
+00:20:30,060 --> 00:20:36,660
+Okay, but you know people say it was really 68% but you know, we just sort of round up but
+
+302
+00:20:38,060 --> 00:20:41,060
+That's what I use but again, I just like with imbalances.
+
+303
+00:20:41,460 --> 00:20:43,155
+Okay, people are going to
+
+304
+00:20:43,155 --> 00:20:45,528
+say You know like for me I
+
+305
+00:20:45,528 --> 00:20:47,562
+use imbalances of four to one
+
+306
+00:20:47,562 --> 00:20:49,257
+other traders use imbalances of
+
+307
+00:20:51,660 --> 00:20:53,260
+3 to 1, 3 and a half to 1.
+
+308
+00:20:54,060 --> 00:20:54,460
+Okay.
+
+309
+00:20:57,964 --> 00:21:00,364
+really have to find what you're comfortable with.
+
+310
+00:21:00,864 --> 00:21:05,364
+Me, I like 70% just because I know it's an overwhelming amount of volume.
+
+311
+00:21:06,464 --> 00:21:10,464
+But again, you know, there's other traders out there that use 60%.
+
+312
+00:21:10,764 --> 00:21:16,364
+Okay, I mean, when I first learned about this, the guy that told me about it, he was using 60%.
+
+313
+00:21:16,464 --> 00:21:18,664
+Me personally, I bumped it up to 70%.
+
+314
+00:21:20,664 --> 00:21:26,064
+But I relax some of the thresholds, right, where he's strict on thirds of bars.
+
+315
+00:21:29,144 --> 00:21:37,444
+Okay, here, right here, this red bar, this red bar, this red bar, right?
+
+316
+00:21:37,444 --> 00:21:39,044
+So it's sort of coming in bunches.
+
+317
+00:21:39,044 --> 00:21:42,746
+And again, if you were to break it up, literally, again, if
+
+318
+00:21:42,746 --> 00:21:44,597
+you're going to use literal thirds
+
+319
+00:21:44,597 --> 00:21:49,842
+of the bar, right, where you say, okay, so this bar had a range of, you know,
+
+320
+00:21:50,744 --> 00:21:52,244
+21 ticks, right?
+
+321
+00:21:52,244 --> 00:21:53,439
+You're going to say, well, it has
+
+322
+00:21:53,439 --> 00:21:54,634
+to be these seven ticks, has to
+
+323
+00:21:54,634 --> 00:21:56,342
+be the next seven, has to be the next seven.
+
+324
+00:21:57,444 --> 00:21:58,944
+I'm more of a visual person.
+
+325
+00:21:59,044 --> 00:22:01,863
+I like to just sort of grasp it
+
+326
+00:22:01,863 --> 00:22:03,977
+as, okay, yeah, that's appearing towards
+
+327
+00:22:03,977 --> 00:22:06,443
+the bottom third of the candle, right?
+
+328
+00:22:06,544 --> 00:22:09,044
+And then when I see, you know, one,
+
+329
+00:22:10,844 --> 00:22:10,944
+to
+
+330
+00:22:13,396 --> 00:22:14,396
+Three coming in.
+
+331
+00:22:17,996 --> 00:22:21,996
+It's telling me these higher prices are being rejected.
+
+332
+00:22:22,796 --> 00:22:27,096
+You can see the market just sort of hanging around here before you have a nice drop here.
+
+333
+00:22:27,196 --> 00:22:29,396
+And then it drops from, you know,
+
+334
+00:22:32,796 --> 00:22:41,796
+you know, 44, this is, what is this, Dow, you know, the 520s, 530s, down into the 450s, down in here.
+
+335
+00:22:45,260 --> 00:22:48,860
+For Caness, wouldn't it be better if the value area was concentrated in the middle or low of the bar?
+
+336
+00:22:48,960 --> 00:22:50,660
+We get a close above for a bullish candle.
+
+337
+00:22:50,960 --> 00:22:58,060
+Well, the value areas generally should be appearing towards the middle of the bar. That's a normal distribution.
+
+338
+00:22:59,760 --> 00:23:09,060
+If you think of it as B shapes, P shapes, if you've delved into
+
+339
+00:23:11,060 --> 00:23:11,960
+profiles, right?
+
+340
+00:23:11,960 --> 00:23:18,560
+You know that when the value area is appearing in the middle, that's your normal distribution day.
+
+341
+00:23:22,260 --> 00:23:25,560
+that that's how it's supposed to be distributed.
+
+342
+00:23:25,560 --> 00:23:31,360
+What we're looking for is it being skewed to one side of the bar.
+
+343
+00:23:31,960 --> 00:23:33,983
+Now, that being said, you
+
+344
+00:23:33,983 --> 00:23:36,006
+know, there's also an argument
+
+345
+00:23:36,006 --> 00:23:38,029
+of, you know, like this
+
+346
+00:23:38,029 --> 00:23:40,457
+red bar with the heavy volume
+
+347
+00:23:41,460 --> 00:23:43,260
+being concentrated up near the top.
+
+348
+00:23:44,160 --> 00:23:46,115
+But what we've, what's been
+
+349
+00:23:46,115 --> 00:23:48,853
+discovered, I don't say we, you know,
+
+350
+00:23:48,853 --> 00:23:51,591
+people share with me things, is when
+
+351
+00:23:51,591 --> 00:23:57,458
+it gets skewed towards the bottom of a red candle or towards the top of
+
+352
+00:23:59,668 --> 00:24:03,020
+a green candle, we know that prices are
+
+353
+00:24:03,020 --> 00:24:06,372
+rejecting these higher prices and heavier volume is
+
+354
+00:24:06,372 --> 00:24:08,467
+being accepted at lower prices.
+
+355
+00:24:13,468 --> 00:24:16,203
+Ben asks, have you found that if the
+
+356
+00:24:16,203 --> 00:24:18,938
+value area takes up a smaller percentage overall
+
+357
+00:24:18,938 --> 00:24:21,331
+candle, meaning Simpson is concentrated instead of
+
+358
+00:24:21,331 --> 00:24:24,066
+spread out, means stronger or higher probability moves?
+
+359
+00:24:30,268 --> 00:24:31,468
+That is an interesting question.
+
+360
+00:24:31,868 --> 00:24:35,468
+That's a unique question that I've thought of.
+
+361
+00:24:37,068 --> 00:24:39,368
+And it's strange, you know, because.
+
+362
+00:24:40,968 --> 00:24:42,468
+It doesn't happen that often.
+
+363
+00:24:42,468 --> 00:24:46,068
+I actually have a tool for this.
+
+364
+00:24:46,668 --> 00:24:48,368
+This is more of a testing tool where
+
+365
+00:24:53,844 --> 00:24:56,344
+We set the value area to whatever, say 70%.
+
+366
+00:24:57,344 --> 00:25:03,844
+Then we just highlight the bars where, so like say this bar's got, you know, 25 price levels.
+
+367
+00:25:06,244 --> 00:25:12,144
+We would draw a number above it, how many price levels the value area is, you know, whether it's
+
+368
+00:25:12,844 --> 00:25:15,144
+two ticks, three ticks, four ticks, five ticks.
+
+369
+00:25:15,144 --> 00:25:24,944
+So we would specifically, I wanted to look for the value areas that are very tight, you know, very small.
+
+370
+00:25:24,944 --> 00:25:27,044
+I don't have the indicator on this PC.
+
+371
+00:25:28,344 --> 00:25:32,744
+It's on my other PC, but I should load it up here and show you guys.
+
+372
+00:25:33,544 --> 00:25:35,847
+Next week, but really because what
+
+373
+00:25:35,847 --> 00:25:38,917
+I've noticed in some markets, now it's not
+
+374
+00:25:38,917 --> 00:25:41,220
+all markets, because especially markets like
+
+375
+00:25:41,220 --> 00:25:45,442
+E-minis, you're not going to get it, volume is just distributed
+
+376
+00:25:46,944 --> 00:25:50,544
+really well in a market like E-minis, but when you get into
+
+377
+00:25:52,644 --> 00:25:53,844
+commodity markets.
+
+378
+00:25:56,044 --> 00:25:58,207
+Grains in particular, you can get these
+
+379
+00:25:58,207 --> 00:26:00,061
+bars where it's 10 price levels and
+
+380
+00:26:00,061 --> 00:26:02,533
+the value area is just one price level.
+
+381
+00:26:03,744 --> 00:26:08,444
+And I've seen very explosive moves come off of those bars.
+
+382
+00:26:10,044 --> 00:26:11,678
+The problem is they don't
+
+383
+00:26:11,678 --> 00:26:13,966
+occur that often, you know, where it's
+
+384
+00:26:13,966 --> 00:26:15,927
+like we try to split it
+
+385
+00:26:15,927 --> 00:26:18,542
+down into, you know, the value area being.
+
+386
+00:26:19,744 --> 00:26:29,944
+like 20% or 30% or even 35%, try to keep it under 40% of the bar's range.
+
+387
+00:26:30,744 --> 00:26:31,144
+Um,
+
+388
+00:26:33,244 --> 00:26:38,844
+I just found it was something that worked well in some markets and not all markets.
+
+389
+00:26:40,544 --> 00:26:45,044
+But sort of just one of those tests where it just came back inconclusive in a way.
+
+390
+00:26:46,144 --> 00:26:52,644
+I was really hoping for, you know, some much, much better results. So, you know, something more conclusive.
+
+391
+00:26:52,644 --> 00:26:54,944
+So, for example, here, let me just get Ninja Trader up.
+
+392
+00:26:57,044 --> 00:26:58,344
+Okay, so like this is Euro currency.
+
+393
+00:26:58,444 --> 00:27:00,244
+Let's see if there's one in here.
+
+394
+00:27:00,444 --> 00:27:07,644
+Sometimes you do get them in the currencies where, okay, you know, it'd be something like,
+
+395
+00:27:10,008 --> 00:27:15,608
+you know, a bar like this where the volume is just so tight, the concentration of volume.
+
+396
+00:27:16,408 --> 00:27:21,108
+But if it was, it's a good market here.
+
+397
+00:27:21,408 --> 00:27:22,908
+I don't know, I haven't looked at soybeans.
+
+398
+00:27:25,008 --> 00:27:26,508
+Time is open.
+
+399
+00:27:26,508 --> 00:27:27,608
+There's 930.
+
+400
+00:27:28,108 --> 00:27:28,808
+But let me just.
+
+401
+00:27:34,008 --> 00:27:34,808
+Go back.
+
+402
+00:27:35,708 --> 00:27:39,808
+I don't want, I can't remember when one appeared because I haven't really looked at it in a while.
+
+403
+00:27:40,308 --> 00:27:42,108
+But I know in some of these.
+
+404
+00:27:44,008 --> 00:27:46,576
+greens, you'd get a bar, right,
+
+405
+00:27:46,576 --> 00:27:49,144
+where it's just like seven price
+
+406
+00:27:49,144 --> 00:27:54,708
+levels and just one value area would basically be the point of control.
+
+407
+00:27:58,408 --> 00:27:59,408
+Maybe.
+
+408
+00:28:04,988 --> 00:28:07,188
+But again, unfortunately, it was just sort of.
+
+409
+00:28:09,088 --> 00:28:11,988
+inconclusive, you know, in terms of results.
+
+410
+00:28:12,788 --> 00:28:14,608
+I really was hoping that it would
+
+411
+00:28:14,608 --> 00:28:16,428
+be like something that, not like a
+
+412
+00:28:16,428 --> 00:28:19,288
+holy grail, but, you know, just something that would give me
+
+413
+00:28:22,288 --> 00:28:23,388
+a lot more to
+
+414
+00:28:25,988 --> 00:28:27,188
+to be excited about.
+
+415
+00:28:28,488 --> 00:28:31,488
+You know, you see here, it's the small value area.
+
+416
+00:28:34,388 --> 00:28:38,488
+But part of the thing with it coming in,
+
+417
+00:28:40,388 --> 00:28:41,288
+like this here.
+
+418
+00:28:43,480 --> 00:28:48,280
+Sometimes it could just be, so here you see zero, you know, a lot of ones, zeros.
+
+419
+00:28:50,480 --> 00:28:56,480
+You know, maybe at where the point of control is, you know, it comes in with like 200 contracts.
+
+420
+00:28:57,180 --> 00:28:57,580
+Okay.
+
+421
+00:28:58,080 --> 00:29:05,880
+Which would obviously give it the value area being the volume being concentrated right at that price level.
+
+422
+00:29:08,980 --> 00:29:12,880
+Where it was just like a big resting order sitting there that got filled.
+
+423
+00:29:13,680 --> 00:29:15,180
+Let me see if I could just find one.
+
+424
+00:29:15,380 --> 00:29:16,880
+I really wish I could find one here.
+
+425
+00:29:19,028 --> 00:29:22,428
+But it is something, it is a rabbit hole that I have gone down.
+
+426
+00:29:24,128 --> 00:29:26,728
+Just trying to...
+
+427
+00:29:33,328 --> 00:29:35,328
+One more market here. I'll just try gold futures.
+
+428
+00:29:36,328 --> 00:29:44,228
+Some of these markets where it just trades, sometimes there can be a very heavy bid or offer sitting there.
+
+429
+00:29:47,028 --> 00:29:54,128
+But again, unfortunately, this doesn't happen as often as you'd like it to appear, right?
+
+430
+00:29:55,828 --> 00:30:00,928
+Because when you see it, it really, really stands out. And then you think, oh, this is something.
+
+431
+00:30:01,728 --> 00:30:02,228
+But then.
+
+432
+00:30:04,228 --> 00:30:09,828
+The reality is it just doesn't happen as often as you'd like it to appear.
+
+433
+00:30:18,988 --> 00:30:22,388
+Yeah. It's like here. I'm trying to find one, but I just can't find one.
+
+434
+00:30:25,888 --> 00:30:30,088
+But sort of the same thing yesterday with that market.
+
+435
+00:30:37,588 --> 00:30:39,388
+Yeah, I just can't find one right now.
+
+436
+00:30:39,888 --> 00:30:41,888
+But, you know, I like the way you're thinking, Ben.
+
+437
+00:30:53,252 --> 00:30:53,652
+here.
+
+438
+00:30:56,452 --> 00:30:56,852
+All right.
+
+439
+00:30:58,652 --> 00:30:59,952
+Where's my cursor here?
+
+440
+00:31:02,652 --> 00:31:06,452
+Okay, so you see it right in here, right?
+
+441
+00:31:06,652 --> 00:31:07,852
+As you're breaking down.
+
+442
+00:31:08,552 --> 00:31:09,952
+Now, the one thing with,
+
+443
+00:31:13,352 --> 00:31:18,352
+with skewness is if you're using order flows trader,
+
+444
+00:31:20,632 --> 00:31:23,132
+You know, we do have a tool on...
+
+445
+00:31:27,032 --> 00:31:28,732
+Let me just get Ninja Trader back here.
+
+446
+00:31:30,732 --> 00:31:34,132
+That does help a little bit in identifying it.
+
+447
+00:31:35,232 --> 00:31:38,432
+If you were to go into the settings, right?
+
+448
+00:31:38,432 --> 00:31:46,832
+Because you're normally when you have skew like bullish or bearish, you do have an order flow gap up here.
+
+449
+00:31:54,932 --> 00:31:57,232
+Because there's usually a gap between the value areas.
+
+450
+00:32:01,012 --> 00:32:06,912
+Okay, so now if you're looking at the gaps, obviously it doesn't take into account
+
+451
+00:32:09,112 --> 00:32:09,812
+where the
+
+452
+00:32:13,012 --> 00:32:15,312
+where the value area is appearing in the bar.
+
+453
+00:32:17,012 --> 00:32:19,312
+Okay, but let me see if we can get one.
+
+454
+00:32:19,412 --> 00:32:21,112
+Let's go back to where we're trading right now.
+
+455
+00:32:26,112 --> 00:32:28,412
+This here, this gap.
+
+456
+00:32:35,684 --> 00:32:40,984
+Okay, this is nice, but this value area, this volume is about half of the bar, right?
+
+457
+00:32:40,984 --> 00:32:42,804
+It would be much nicer if the
+
+458
+00:32:42,804 --> 00:32:47,484
+volume was appearing on the bottom, towards the bottom of the bar, the bottom third of the bar.
+
+459
+00:32:50,084 --> 00:32:54,184
+But gaps is a way that can sort of help you identify these.
+
+460
+00:32:55,284 --> 00:33:01,184
+But there is still like a further step in where that volume is appearing.
+
+461
+00:33:01,284 --> 00:33:09,284
+And again, you know, if you're using 70%, there's nothing wrong with using 60%. You could use 60%.
+
+462
+00:33:09,284 --> 00:33:12,584
+If you want to change that, you just go into...
+
+463
+00:33:14,184 --> 00:33:16,784
+The indicator setting, change it from 70 to 60.
+
+464
+00:33:16,884 --> 00:33:19,696
+I just like to be a little bit consistent in where I'm
+
+465
+00:33:19,696 --> 00:33:21,571
+looking at in terms of, because once I
+
+466
+00:33:21,571 --> 00:33:24,149
+get into 70%, then I'm thinking in terms of value as well.
+
+467
+00:33:25,284 --> 00:33:27,302
+Okay, but if you make it
+
+468
+00:33:27,302 --> 00:33:28,983
+60, right, you see down here,
+
+469
+00:33:28,983 --> 00:33:32,346
+this is clearly towards the bottom third of the bar.
+
+470
+00:33:37,448 --> 00:33:39,248
+this, but it's already such a big bar.
+
+471
+00:33:42,248 --> 00:33:46,548
+To me, this is towards the top third, more of the top half.
+
+472
+00:33:49,348 --> 00:33:50,811
+But it's just one other way that
+
+473
+00:33:50,811 --> 00:33:52,274
+you can use, you know, this is
+
+474
+00:33:52,274 --> 00:33:53,946
+in the bottom third for sure right here.
+
+475
+00:33:54,848 --> 00:33:57,709
+Sort of maybe the one thing that
+
+476
+00:33:57,709 --> 00:34:00,570
+might help you identify it is sort
+
+477
+00:34:00,570 --> 00:34:03,022
+of the bigger the gap, because
+
+478
+00:34:03,022 --> 00:34:08,745
+this did come up a while back, probably not in this summer program, but.
+
+479
+00:34:11,448 --> 00:34:14,548
+In a training session, how big a gap is.
+
+480
+00:34:14,748 --> 00:34:19,048
+Because generally speaking, the bigger the gap, the farther away from value is.
+
+481
+00:34:19,548 --> 00:34:24,348
+So you can see, like this would be to me, top third here, okay?
+
+482
+00:34:25,348 --> 00:34:28,648
+And it's got a pretty decent size gap in between.
+
+483
+00:34:29,948 --> 00:34:31,648
+Just as this one, top third here.
+
+484
+00:34:33,648 --> 00:34:35,448
+Just as this bottom third here.
+
+485
+00:34:40,324 --> 00:34:45,024
+So that's a tool that you could use to sort of help you identify.
+
+486
+00:34:45,224 --> 00:34:47,800
+I don't think you probably don't necessarily
+
+487
+00:34:47,800 --> 00:34:50,376
+need to use value area gaps, but
+
+488
+00:34:50,376 --> 00:34:54,424
+value area gaps or order flow gaps, as we call them.
+
+489
+00:34:54,724 --> 00:34:56,424
+Now, these are not fair value gaps, but.
+
+490
+00:35:00,524 --> 00:35:06,724
+You know, it's just something that is something that can help you spot it visually. Right.
+
+491
+00:35:06,824 --> 00:35:13,724
+I mean, that's the beauty of a footprint chart is you can see these things taking place, you know, visually.
+
+492
+00:35:13,724 --> 00:35:17,624
+So, for example, let me just take this off.
+
+493
+00:35:17,724 --> 00:35:18,824
+This is Delta Scalper.
+
+494
+00:35:21,224 --> 00:35:24,224
+But if you were on a normal chart, right?
+
+495
+00:35:26,720 --> 00:35:27,220
+Gold.
+
+496
+00:35:31,520 --> 00:35:35,020
+you're not seeing how volume is being distributed, right?
+
+497
+00:35:35,020 --> 00:35:37,220
+You just see the open, the high,
+
+498
+00:35:39,920 --> 00:35:42,020
+You open the low, high, low, and close.
+
+499
+00:35:43,120 --> 00:35:44,431
+You don't know which may, you
+
+500
+00:35:44,431 --> 00:35:45,742
+know, if you look at a
+
+501
+00:35:45,742 --> 00:35:49,019
+candle, you have an idea of which was made first, the high or the low.
+
+502
+00:35:52,620 --> 00:35:54,620
+But it's very one-dimensional.
+
+503
+00:35:55,620 --> 00:36:05,020
+Looking at a footprint provides that further proof of what's actually taking place in the market.
+
+504
+00:36:10,424 --> 00:36:15,924
+Okay, this was gold yesterday, right? Right before that big takeoff.
+
+505
+00:36:16,324 --> 00:36:18,324
+Let's go look at that gold chart from yesterday.
+
+506
+00:36:18,724 --> 00:36:22,724
+It's around 9.50 in the morning here.
+
+507
+00:36:29,624 --> 00:36:31,424
+Right here, right?
+
+508
+00:36:31,424 --> 00:36:36,324
+This is where we went. We like spring catapulted up, right?
+
+509
+00:36:38,424 --> 00:36:42,924
+from, you know, whatever this is, 33, 40, you know, 20 bucks.
+
+510
+00:36:43,624 --> 00:36:47,724
+But if you're looking at here, right on this,
+
+511
+00:36:49,524 --> 00:36:51,324
+normal bar chart, right?
+
+512
+00:36:52,524 --> 00:36:56,124
+This is the catapult bar right here, 954.
+
+513
+00:36:57,824 --> 00:36:58,724
+It pulls in here.
+
+514
+00:37:00,024 --> 00:37:07,724
+I mean, look, we go from basically 40 all the way up to 80 in about 40 minutes.
+
+515
+00:37:09,324 --> 00:37:09,524
+Right?
+
+516
+00:37:09,624 --> 00:37:10,524
+And look at this.
+
+517
+00:37:12,124 --> 00:37:13,006
+And people, you
+
+518
+00:37:13,006 --> 00:37:15,064
+know, some guys will say, well, you
+
+519
+00:37:15,064 --> 00:37:17,122
+broke out above this high and this
+
+520
+00:37:17,122 --> 00:37:22,122
+high and this high, you know, the level line, you know, all these previous highs that we
+
+521
+00:37:24,404 --> 00:37:25,604
+Take out here.
+
+522
+00:37:28,704 --> 00:37:29,104
+Whoops.
+
+523
+00:37:31,304 --> 00:37:33,104
+Let's say, oh, we took out this high here.
+
+524
+00:37:37,504 --> 00:37:40,704
+Took out this high here, took out this high here, took out this high here.
+
+525
+00:37:41,604 --> 00:37:44,104
+But really, that was your skew.
+
+526
+00:37:50,804 --> 00:37:51,604
+Let's see here.
+
+527
+00:37:52,504 --> 00:37:56,004
+Can't wrap my, for kind of, I can't wrap my head around the negative skew.
+
+528
+00:37:56,104 --> 00:37:58,104
+If volume is concentrated at the low of the bar,
+
+529
+00:38:00,412 --> 00:38:04,912
+Okay, well, low of a red bar, wouldn't that be supportive volume instead?
+
+530
+00:38:05,812 --> 00:38:08,812
+Okay, so let's break this down here to your question.
+
+531
+00:38:11,712 --> 00:38:14,412
+Okay, so first we're going to start with what?
+
+532
+00:38:18,412 --> 00:38:19,112
+A red bar.
+
+533
+00:38:20,212 --> 00:38:21,212
+So let's find one here.
+
+534
+00:38:23,212 --> 00:38:23,512
+here.
+
+535
+00:38:25,912 --> 00:38:27,012
+This is positive skew.
+
+536
+00:38:27,212 --> 00:38:27,812
+This is where it gets
+
+537
+00:38:32,960 --> 00:38:34,560
+I can't remember the negative skew.
+
+538
+00:38:34,560 --> 00:38:38,660
+If the volume is concentrated near the low, wouldn't that be supportive volume?
+
+539
+00:38:43,360 --> 00:38:45,860
+Well, the key there, because Furkan says, let me just read this out.
+
+540
+00:38:46,160 --> 00:38:49,460
+I can't wrap my head around the negative skew.
+
+541
+00:38:49,660 --> 00:38:56,560
+If the volume is concentrated at the low on a red bar, wouldn't that be supportive volume instead?
+
+542
+00:38:56,860 --> 00:39:01,060
+The market has found liquidity to potentially bounce off of.
+
+543
+00:39:01,760 --> 00:39:02,060
+Okay.
+
+544
+00:39:03,460 --> 00:39:07,260
+Yeah, you know, it gets confusing when you start thinking a negative skew, positive skew.
+
+545
+00:39:08,160 --> 00:39:10,660
+Really, the way I like to think of it is.
+
+546
+00:39:12,988 --> 00:39:14,088
+Volume moving.
+
+547
+00:39:15,588 --> 00:39:16,088
+Period.
+
+548
+00:39:16,188 --> 00:39:18,888
+Don't think, you know, it gets confusing when you think of SKUs.
+
+549
+00:39:18,888 --> 00:39:20,105
+You know, people
+
+550
+00:39:20,105 --> 00:39:22,946
+like to, you know, one thing that
+
+551
+00:39:22,946 --> 00:39:25,787
+I've noticed in the last 10 years of
+
+552
+00:39:25,787 --> 00:39:32,281
+trading, especially with order flow and, you know, trading has really moved in a direction where.
+
+553
+00:39:37,688 --> 00:39:40,988
+There's a lot of people out there that are not traders.
+
+554
+00:39:40,988 --> 00:39:42,688
+They're just people.
+
+555
+00:39:43,888 --> 00:39:46,488
+And sometimes they come up with these terms.
+
+556
+00:39:46,788 --> 00:39:52,088
+And I'm not saying that that's the term being used here, negative skew, et cetera, that complicate things.
+
+557
+00:39:54,796 --> 00:39:57,996
+Because then people start thinking in terms of what they know.
+
+558
+00:39:58,296 --> 00:40:01,596
+So, for example, here, this red bar.
+
+559
+00:40:04,796 --> 00:40:06,696
+Take a step back and read what you wrote.
+
+560
+00:40:07,396 --> 00:40:10,896
+Volume is concentrated at the low on a red bar.
+
+561
+00:40:11,296 --> 00:40:15,296
+So what is price doing? Price is going down.
+
+562
+00:40:15,296 --> 00:40:18,396
+How do we know price is going down? It's a red bar.
+
+563
+00:40:19,296 --> 00:40:21,596
+Okay, then we look at
+
+564
+00:40:23,296 --> 00:40:25,296
+where the volume is coming in, right?
+
+565
+00:40:25,296 --> 00:40:27,196
+We're using the value area.
+
+566
+00:40:31,300 --> 00:40:33,600
+And what's taking place?
+
+567
+00:40:35,700 --> 00:40:40,900
+Well, volume is going down together with price.
+
+568
+00:40:44,600 --> 00:40:46,000
+If it was a green bar,
+
+569
+00:40:49,700 --> 00:40:53,500
+with the volume towards the bottom of it,
+
+570
+00:40:57,000 --> 00:41:03,200
+then you'd be looking at sort of the markets found that liquidity to bounce off of.
+
+571
+00:41:03,500 --> 00:41:05,860
+But what's taking place is this
+
+572
+00:41:05,860 --> 00:41:08,220
+market, we hit this high, it
+
+573
+00:41:08,220 --> 00:41:10,580
+starts coming off, volume is going,
+
+574
+00:41:10,580 --> 00:41:15,300
+is transacting lower here in this bar, lower here in this bar.
+
+575
+00:41:17,600 --> 00:41:19,100
+The search is not over for liquidity.
+
+576
+00:41:19,300 --> 00:41:20,845
+I guess, you know,
+
+577
+00:41:20,845 --> 00:41:23,163
+sort of another point in your
+
+578
+00:41:23,163 --> 00:41:27,799
+question there is the market has found liquidity to bounce off of.
+
+579
+00:41:28,100 --> 00:41:29,500
+Well, it's not bouncing yet.
+
+580
+00:41:30,000 --> 00:41:31,200
+The bar is still red.
+
+581
+00:41:32,600 --> 00:41:32,900
+Right.
+
+582
+00:41:33,100 --> 00:41:34,100
+It hasn't reversed.
+
+583
+00:41:34,100 --> 00:41:36,600
+When you think of a bounce, right, the market is reversing.
+
+584
+00:41:39,640 --> 00:41:42,440
+But in this case, the market hasn't reversed.
+
+585
+00:41:43,140 --> 00:41:44,340
+It's still going lower.
+
+586
+00:41:45,340 --> 00:41:51,240
+It's still looking for more liquidity to transact at lower prices.
+
+587
+00:41:57,640 --> 00:41:58,593
+Ben, yeah, Ben brings
+
+588
+00:41:58,593 --> 00:42:00,023
+a good point. Says, I guess
+
+589
+00:42:00,023 --> 00:42:01,453
+the value area is concentrating at
+
+590
+00:42:01,453 --> 00:42:03,837
+the bottom and the next candle doesn't break the low.
+
+591
+00:42:04,140 --> 00:42:05,240
+Then maybe it's supportive.
+
+592
+00:42:05,540 --> 00:42:08,140
+Exactly. Maybe is supportive, right?
+
+593
+00:42:08,240 --> 00:42:10,940
+You have to be watching what price is doing.
+
+594
+00:42:11,240 --> 00:42:12,240
+We could go sideways.
+
+595
+00:42:14,752 --> 00:42:14,952
+Right.
+
+596
+00:42:15,552 --> 00:42:17,352
+But if it's breaking down.
+
+597
+00:42:20,152 --> 00:42:21,352
+Then it's probably still looking.
+
+598
+00:42:21,352 --> 00:42:26,052
+There's probably still more transactions at lower prices that can take place.
+
+599
+00:42:28,252 --> 00:42:30,252
+You know, kind of think of it as.
+
+600
+00:42:33,052 --> 00:42:33,752
+How to say?
+
+601
+00:42:35,352 --> 00:42:38,852
+You know, there's stores out there that.
+
+602
+00:42:41,852 --> 00:42:49,152
+We'll lower, you know, there's like this, not too far from my house, there's like this furniture store.
+
+603
+00:42:50,552 --> 00:42:52,852
+It's like a consignment shop, basically.
+
+604
+00:42:53,452 --> 00:42:55,052
+People consign their furniture there.
+
+605
+00:42:55,552 --> 00:42:57,752
+They just want to get rid of it. They'll take whatever they can get.
+
+606
+00:42:58,852 --> 00:43:04,552
+Then, you know, so it'll be like a nice desk. Okay, say it'll be like $100.
+
+607
+00:43:06,852 --> 00:43:10,652
+If no one buys it after a week, they lower the price $80.
+
+608
+00:43:10,752 --> 00:43:12,052
+No one buys it, $60.
+
+609
+00:43:14,652 --> 00:43:17,852
+Until it gets sold or they throw it out.
+
+610
+00:43:18,252 --> 00:43:21,052
+But in the sense of like clothes, right?
+
+611
+00:43:21,052 --> 00:43:22,103
+You go to Macy's, you
+
+612
+00:43:22,103 --> 00:43:23,575
+know, that's the only reason why I
+
+613
+00:43:23,575 --> 00:43:25,047
+think these department stores are going out
+
+614
+00:43:25,047 --> 00:43:27,150
+of business is they keep lowering the prices on things.
+
+615
+00:43:28,952 --> 00:43:30,152
+Until they find the buyers.
+
+616
+00:43:33,508 --> 00:43:35,208
+For instance, I see.
+
+617
+00:43:39,408 --> 00:43:39,708
+I see.
+
+618
+00:43:39,808 --> 00:43:40,836
+So we're going to,
+
+619
+00:43:40,836 --> 00:43:42,378
+I see if you look at
+
+620
+00:43:42,378 --> 00:43:43,663
+it from the perspective of
+
+621
+00:43:43,663 --> 00:43:45,205
+price acceptance, this can make sense.
+
+622
+00:43:45,208 --> 00:43:49,108
+Yeah. It also depends on context of where we are trading also.
+
+623
+00:43:49,108 --> 00:43:49,308
+Yeah.
+
+624
+00:43:50,208 --> 00:43:50,408
+Yeah.
+
+625
+00:43:50,708 --> 00:43:51,308
+Context.
+
+626
+00:43:53,908 --> 00:43:57,808
+Is honestly is everything, but context matters a lot.
+
+627
+00:43:57,908 --> 00:44:02,408
+You know, and it's something that a lot of traders disregard.
+
+628
+00:44:05,964 --> 00:44:07,064
+is that context.
+
+629
+00:44:07,764 --> 00:44:09,964
+You know, and think of it in terms of
+
+630
+00:44:13,064 --> 00:44:17,464
+I hate to use sports analogies, but, you know, like,
+
+631
+00:44:20,664 --> 00:44:23,064
+Weather can affect how teams play.
+
+632
+00:44:23,864 --> 00:44:26,764
+Altitude can affect how teams play.
+
+633
+00:44:28,464 --> 00:44:30,364
+Injuries can affect how teams play.
+
+634
+00:44:30,464 --> 00:44:31,364
+There's always something.
+
+635
+00:44:31,564 --> 00:44:33,564
+That's the added context in sports.
+
+636
+00:44:33,964 --> 00:44:37,364
+And it's the same with the markets.
+
+637
+00:44:37,464 --> 00:44:38,864
+Where is the market trading?
+
+638
+00:44:40,064 --> 00:44:45,864
+Now relative to how it's been trading five minutes ago, 10 minutes ago.
+
+639
+00:44:46,664 --> 00:44:49,964
+Okay, are we breaking out just as, you know, here,
+
+640
+00:44:52,380 --> 00:44:52,580
+Right.
+
+641
+00:44:52,680 --> 00:44:54,580
+We were sort of range bound.
+
+642
+00:44:54,780 --> 00:44:57,480
+Now we're starting to break out to the upside.
+
+643
+00:44:57,480 --> 00:44:59,080
+I mean, once we sort of broke out here.
+
+644
+00:44:59,380 --> 00:45:00,280
+But to me, this was key.
+
+645
+00:45:00,380 --> 00:45:06,480
+I mean, this is just something you're not going to see on a normal candlestick chart or bar chart.
+
+646
+00:45:08,580 --> 00:45:09,880
+You're not going to notice this.
+
+647
+00:45:11,080 --> 00:45:13,480
+But if you noticed right away that volume,
+
+648
+00:45:15,780 --> 00:45:18,780
+was sort of making a run to the upside.
+
+649
+00:45:21,080 --> 00:45:24,080
+Traders are sort of tripping over themselves to find liquidity.
+
+650
+00:45:26,892 --> 00:45:28,692
+to get something while they still can.
+
+651
+00:45:31,392 --> 00:45:37,692
+Then it gives you an insight into what's going to take place in the market.
+
+652
+00:45:46,392 --> 00:45:48,792
+Okay, so hopefully, yeah, context matters.
+
+653
+00:45:52,392 --> 00:45:55,092
+Using value areas, because
+
+654
+00:45:57,392 --> 00:45:58,892
+Points of control, now again,
+
+655
+00:45:58,892 --> 00:46:00,392
+you know, on software, you
+
+656
+00:46:00,392 --> 00:46:03,992
+know, like on a reflator, you can use point of control one.
+
+657
+00:46:04,792 --> 00:46:07,192
+You could add the second point of control and the third point of control.
+
+658
+00:46:07,192 --> 00:46:11,492
+What second point of control is, is the second most highest volume.
+
+659
+00:46:11,592 --> 00:46:14,692
+The third is the third most volume price level in the bar.
+
+660
+00:46:15,392 --> 00:46:20,492
+The problem is you don't know how much of the volume that is.
+
+661
+00:46:22,392 --> 00:46:25,192
+I mean, it could be just going back here.
+
+662
+00:46:25,192 --> 00:46:32,292
+So in some cases where it's a very thin bar, you could have a point of control. This is 12.
+
+663
+00:46:32,292 --> 00:46:33,992
+This is 11 down here at the bottom.
+
+664
+00:46:35,792 --> 00:46:40,592
+It doesn't really give you an accurate representation of the...
+
+665
+00:46:42,292 --> 00:46:45,392
+Amount of volume that's being traded at those levels.
+
+666
+00:46:46,692 --> 00:46:52,092
+Because all it is, all point of control is, is just the price level with the most volume.
+
+667
+00:46:52,292 --> 00:46:58,192
+It doesn't factor into how much of the volume in the bar that is.
+
+668
+00:47:00,592 --> 00:47:04,492
+I don't have a pen here, but that leads me to something to test out here.
+
+669
+00:47:04,792 --> 00:47:05,492
+Just make a note.
+
+670
+00:47:18,192 --> 00:47:20,492
+I'm just making a note to myself about something.
+
+671
+00:47:21,692 --> 00:47:23,992
+So that's why I prefer to use
+
+672
+00:47:25,692 --> 00:47:30,692
+the value areas or again, you can adjust what you're using as a value area.
+
+673
+00:47:30,992 --> 00:47:35,592
+I showed you the value area as 70%.
+
+674
+00:47:35,692 --> 00:47:36,992
+You can use 60%.
+
+675
+00:47:37,992 --> 00:47:43,492
+Me personally, I definitely wouldn't go below 50%, but let me just get back here.
+
+676
+00:47:51,620 --> 00:47:51,820
+Yeah.
+
+677
+00:47:55,120 --> 00:47:59,520
+If you are using, let me take off these gaps here.
+
+678
+00:48:09,220 --> 00:48:13,920
+I definitely wouldn't go below 50. I mean, 50 is half the volume of the bar.
+
+679
+00:48:20,616 --> 00:48:23,091
+And when you do get the 50,
+
+680
+00:48:23,091 --> 00:48:25,978
+you do get those tight ranges, you
+
+681
+00:48:25,978 --> 00:48:30,103
+know, one, two, three price levels on the value areas.
+
+682
+00:48:31,216 --> 00:48:32,061
+You know, sort
+
+683
+00:48:32,061 --> 00:48:34,033
+of going back to what the question
+
+684
+00:48:34,033 --> 00:48:36,005
+was earlier about, you know, those value
+
+685
+00:48:36,005 --> 00:48:37,414
+areas that are very small.
+
+686
+00:48:41,516 --> 00:48:45,016
+Because I was also, you know, sort of, you know, here's two price levels on value.
+
+687
+00:48:45,816 --> 00:48:47,343
+But again, you're sort
+
+688
+00:48:47,343 --> 00:48:49,633
+of filtering out, you know, when
+
+689
+00:48:49,633 --> 00:48:52,305
+you get smaller value, you know, value
+
+690
+00:48:52,305 --> 00:48:53,832
+area percentages, you know, 50%.
+
+691
+00:48:57,504 --> 00:49:04,304
+On bars that have light volume, you can get a very small value area, two price levels, etc.
+
+692
+00:49:04,704 --> 00:49:07,037
+That was the other thing that I
+
+693
+00:49:07,037 --> 00:49:09,370
+was looking at, too, just sort of
+
+694
+00:49:09,370 --> 00:49:11,370
+a follow-up, was not only the
+
+695
+00:49:11,370 --> 00:49:17,703
+relationship of the height of the value area, like two price levels, but also in relationship to the total.
+
+696
+00:49:18,204 --> 00:49:19,604
+Number of price levels in a bar.
+
+697
+00:49:19,904 --> 00:49:21,918
+So if it was 20% of the
+
+698
+00:49:21,918 --> 00:49:24,268
+bar's range, so maybe the bar's range
+
+699
+00:49:24,268 --> 00:49:28,632
+was 10 ticks, value area was two price levels, what that meant, et cetera.
+
+700
+00:49:30,504 --> 00:49:34,404
+You know, where it gets a bit, can get interesting.
+
+701
+00:49:35,504 --> 00:49:39,604
+So these markets that we know are volatile, right, like MNQ.
+
+702
+00:49:40,704 --> 00:49:42,104
+Let's just pull up the chart here.
+
+703
+00:49:46,104 --> 00:49:47,604
+you know, where you can get a tight,
+
+704
+00:49:51,404 --> 00:49:55,204
+tight value area on a rain on a bar that has
+
+705
+00:49:58,104 --> 00:50:00,104
+some decent price movements.
+
+706
+00:50:06,904 --> 00:50:08,104
+Let's give it a second here to come.
+
+707
+00:50:08,204 --> 00:50:09,004
+Well, it's coming up.
+
+708
+00:50:09,104 --> 00:50:11,104
+I'll sort of finish up these slides here.
+
+709
+00:50:13,104 --> 00:50:16,604
+Now, to me, this is sort of talking to context.
+
+710
+00:50:21,240 --> 00:50:28,640
+Follow through needs to be immediate, right? Otherwise it fails and can fail dramatically.
+
+711
+00:50:28,640 --> 00:50:31,168
+Now, in this case, to me, if I'm
+
+712
+00:50:31,168 --> 00:50:33,064
+taking this as a bullish one,
+
+713
+00:50:33,064 --> 00:50:36,540
+I need the market to keep going up, but it's failing.
+
+714
+00:50:38,540 --> 00:50:41,240
+And you can also, you know, you can see some dramatic fails.
+
+715
+00:50:41,240 --> 00:50:42,740
+I mean, is it a fade trade?
+
+716
+00:50:44,340 --> 00:50:46,173
+I'm always looking at, you
+
+717
+00:50:46,173 --> 00:50:48,006
+know, things, you know, potential
+
+718
+00:50:48,006 --> 00:50:49,839
+trades that it can take
+
+719
+00:50:49,839 --> 00:50:51,672
+where, you know, when the
+
+720
+00:50:51,672 --> 00:50:55,338
+setup fails, how does it react in the opposite direction?
+
+721
+00:50:55,540 --> 00:50:57,440
+When it fails, does it fail miserably?
+
+722
+00:50:59,240 --> 00:51:01,158
+And that's one thing to keep in
+
+723
+00:51:01,158 --> 00:51:03,076
+mind with skews, because normally you'd be
+
+724
+00:51:03,076 --> 00:51:04,172
+thinking, hey, this market
+
+725
+00:51:04,172 --> 00:51:06,638
+is getting ready to take off, but it doesn't.
+
+726
+00:51:07,140 --> 00:51:07,840
+What does that mean?
+
+727
+00:51:07,840 --> 00:51:10,340
+You know, to me, that's one of the most important things in trading.
+
+728
+00:51:11,540 --> 00:51:13,740
+When the market doesn't do what it's expected to do.
+
+729
+00:51:15,640 --> 00:51:18,440
+there's usually something bigger afoot in the market.
+
+730
+00:51:19,940 --> 00:51:20,240
+Right.
+
+731
+00:51:21,540 --> 00:51:22,940
+So just always bear that in mind.
+
+732
+00:51:23,240 --> 00:51:25,940
+When the market doesn't do what it's supposed to do,
+
+733
+00:51:37,616 --> 00:51:41,316
+Let me just get this, get the NASDAQ chart back up here.
+
+734
+00:51:42,816 --> 00:51:44,616
+Okay, so here you can see.
+
+735
+00:51:46,416 --> 00:51:49,416
+Again, this is a one minute chart, so it's kind of crazy.
+
+736
+00:51:49,516 --> 00:51:54,816
+It's at 50%, but you can see, you know, here's a very tight value area up here towards the top.
+
+737
+00:51:55,516 --> 00:52:01,116
+Again, it hasn't, it takes one, two bars before it jumps from, you know, basically 160 up to 180.
+
+738
+00:52:02,216 --> 00:52:06,016
+You know, on the downside, value area is in the middle, value area is in the middle.
+
+739
+00:52:07,116 --> 00:52:10,516
+I wish this value was down here before it broke to the downside.
+
+740
+00:52:16,396 --> 00:52:19,796
+I'll let this run up here, right here, right?
+
+741
+00:52:20,996 --> 00:52:23,696
+Again, we can sort of open up the bar.
+
+742
+00:52:26,796 --> 00:52:28,596
+This big green candle right here.
+
+743
+00:52:31,196 --> 00:52:34,496
+This is, to me, appearing towards the top third of the bar.
+
+744
+00:52:36,396 --> 00:52:38,096
+Here to here.
+
+745
+00:52:43,596 --> 00:52:47,196
+And then it just breaks, runs away to the upside here.
+
+746
+00:52:48,596 --> 00:52:49,996
+Again, this is at 50%.
+
+747
+00:52:52,696 --> 00:52:54,908
+So depending on the market,
+
+748
+00:52:54,908 --> 00:52:57,120
+you know, you could look
+
+749
+00:52:57,120 --> 00:52:59,332
+for which, you know, what
+
+750
+00:52:59,332 --> 00:53:07,295
+setting, you know, even here, this one, this one, you know, this is mini MNQ, mini DAO, YM.
+
+751
+00:53:13,120 --> 00:53:17,220
+You still had one forming right in here on this move down from this high right here.
+
+752
+00:53:18,720 --> 00:53:19,320
+Right here.
+
+753
+00:53:20,720 --> 00:53:21,020
+Right.
+
+754
+00:53:21,020 --> 00:53:27,320
+And you're talking from this one, you're talking to move from 650 down to 550.
+
+755
+00:53:31,120 --> 00:53:31,320
+Right.
+
+756
+00:53:31,320 --> 00:53:34,220
+These are sort of in the middle, in the middle, in the middle.
+
+757
+00:53:35,320 --> 00:53:36,420
+You get the break here.
+
+758
+00:53:39,920 --> 00:53:43,420
+So this is 660 up to 80s before it turns around.
+
+759
+00:53:45,620 --> 00:53:47,620
+This was the cash open bar.
+
+760
+00:53:48,320 --> 00:53:49,620
+This is the cash opening bar.
+
+761
+00:53:49,720 --> 00:53:51,420
+This is the second bar after the cash open.
+
+762
+00:53:52,420 --> 00:53:58,920
+And it runs from, you know, 540 to 640 right away, right here.
+
+763
+00:54:07,344 --> 00:54:11,144
+So anyway, guys, that's going to wrap up this session, session eight.
+
+764
+00:54:13,544 --> 00:54:14,216
+So hopefully, you
+
+765
+00:54:14,216 --> 00:54:15,336
+know, again, it's I'm going
+
+766
+00:54:15,336 --> 00:54:16,456
+to go look through the
+
+767
+00:54:16,456 --> 00:54:19,144
+slides. I think I might have confused you guys a little bit.
+
+768
+00:54:19,944 --> 00:54:24,844
+But before I post them again, I have Tuesday session ready to be posted as well.
+
+769
+00:54:25,444 --> 00:54:27,444
+So I'll get both of those posted this afternoon.
+
+770
+00:54:28,144 --> 00:54:33,944
+And next week, I think next week, our schedule is just Tuesday.
+
+771
+00:54:34,044 --> 00:54:35,844
+We just got one session next week.
+
+772
+00:54:36,244 --> 00:54:36,844
+I believe.
+
+773
+00:54:40,844 --> 00:54:42,044
+Yeah, the 22nd.
+
+774
+00:54:42,544 --> 00:54:44,339
+So we'll go Tuesday the
+
+775
+00:54:44,339 --> 00:54:50,443
+22nd and then Thursday the 31st. But then we got, so just two sessions left for July.
+
+776
+00:54:50,544 --> 00:54:55,044
+Then in August, we've got 7, 12, 14, 19, and 21.
+
+777
+00:54:56,644 --> 00:54:57,244
+So.
+
+778
+00:54:58,844 --> 00:55:03,244
+But anyway, next Tuesdays, I might need to adjust the timing of it.
+
+779
+00:55:04,044 --> 00:55:06,744
+I might go a little bit earlier. I'm not sure yet.
+
+780
+00:55:07,444 --> 00:55:09,571
+I've got an appointment that if
+
+781
+00:55:09,571 --> 00:55:11,698
+I can't change that, you know,
+
+782
+00:55:11,698 --> 00:55:15,243
+these doctors, sometimes you make these appointments months in advance.
+
+783
+00:55:17,044 --> 00:55:20,244
+And it's like a. Pain in the ass if you have to change them.
+
+784
+00:55:21,644 --> 00:55:22,244
+But we'll see.
+
+785
+00:55:22,944 --> 00:55:24,900
+Right now, we'll keep it scheduled
+
+786
+00:55:24,900 --> 00:55:26,856
+for 10 a.m., but, or sorry,
+
+787
+00:55:26,856 --> 00:55:30,442
+for 9 a.m., but we'll go for We'll go from there.
+
+788
+00:55:30,444 --> 00:55:31,544
+I'll let you know next week.
+
+789
+00:55:31,844 --> 00:55:34,844
+So have a great rest of your week, everybody.
+
+790
+00:55:35,144 --> 00:55:37,544
+And I'll catch you guys next week. Take care.
+
+===== END AFTER_SEGMENT =====

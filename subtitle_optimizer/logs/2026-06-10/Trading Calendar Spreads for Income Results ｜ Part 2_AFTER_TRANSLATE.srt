@@ -1,0 +1,1040 @@
+===== AFTER_TRANSLATE (209 entries) =====
+1
+00:00:00,000 --> 00:00:01,583
+大家好，我是Bryant
+what's going on guys bryant
+
+2
+00:00:01,583 --> 00:00:03,166
+今天是2024年12月6日，周五
+here today is friday december 6 2024
+
+3
+00:00:03,166 --> 00:00:06,332
+这是日历价差策略视频的后续跟进
+and this is a follow-up to the calendar spreads video
+
+4
+00:00:06,332 --> 00:00:10,765
+本周早些时候我发布了这个视频
+that i released earlier this week this video right here a step-by-step guide
+
+5
+00:00:10,765 --> 00:00:13,931
+里面用了一个实盘案例
+to trading calendar spreads in this video i used a
+
+6
+00:00:13,931 --> 00:00:22,164
+周一开的6035看涨期权日历价差策略，现在才过去几天，这是它的风险收益曲线
+live trade example of this 6035 call calendar spread that i opened on monday so this is just a few days later this is the risk profile
+
+7
+00:00:22,800 --> 00:00:27,920
+这是Option Strat上的曲线，使用思拓思维（Thinkorswim）的用户也能看到类似的
+on option strat and this is the risk profile in thinkorswim for those of you that use thinkorswim
+
+8
+00:00:27,920 --> 00:00:29,930
+或更高级的风险收益曲线
+or are familiar with a more advanced
+
+9
+00:00:29,930 --> 00:00:32,227
+目前盈亏方面，我现在盈利
+risk profile the pnl right now i'm up
+
+10
+00:00:32,227 --> 00:00:34,811
+约634美元，随着市场波动
+634 or so and it's fluctuating as the market is
+
+11
+00:00:34,811 --> 00:00:37,682
+现在持有4手该策略
+currently open i'm in four lots of the spread but
+
+12
+00:00:37,682 --> 00:00:41,415
+但为了方便新手理解，我习惯用1手
+to analyze and to explain to beginner traders i like to use one
+
+13
+00:00:41,415 --> 00:00:44,286
+而且我倾向于用Option Strat
+lot and i like to use option strat as it
+
+14
+00:00:44,286 --> 00:01:00,368
+因为它对新手更友好。每手成本950美元，4手总共接近4000美元。以1手算，成本约1000美元，目前盈亏在12到15美元左右波动
+is a little bit more beginner friendly to interpret what's going on the spread cost 950 per lot so with four of them that means i use just under four grand to open position but again with one lot we can just say it's about a thousand dollars the trade is currently fluctuating between 12 or 15 or so
+
+15
+00:01:02,160 --> 00:01:05,150
+如前所述，我习惯
+and as i explained in that previous video i like to keep
+
+16
+00:01:05,150 --> 00:01:07,641
+在整个交易过程中追踪隐含波动率
+track of the implied volatility throughout the duration of the
+
+17
+00:01:07,641 --> 00:01:17,359
+和盈利情况。所以今天过来分享这个视频的续集，之前开仓时的分析
+trade as well as the profits so that's why i just wanted to hop on here today and show you guys a continuation of that video as i showed the example of when i first open it the type
+
+18
+00:01:17,360 --> 00:01:20,846
+以及我在描述中的备注，当它首次触及
+of notes i leave in the description when it hits that first
+
+19
+00:01:20,846 --> 00:01:23,751
+第一个目标时，其实前天，也就是周三
+target right here it actually hit almost nine percent a
+
+20
+00:01:23,751 --> 00:01:26,656
+已经接近9%的盈利
+couple days ago which was wednesday which based on my
+
+21
+00:01:26,656 --> 00:01:39,439
+根据我的经验，这是个很好的止盈点。但我继续持有4手，因为我没满仓，周围还有其他头寸，想尽可能拉伸盈利
+experience is a great place to take profit i'm continuing to hold the four lots because i'm not trading my full size and i also have other positions around this main position so i'm trying to stretch the pnl as much as possible which
+
+22
+00:01:39,440 --> 00:01:43,043
+所以我不把自己标榜为纯收入导向交易者
+is why i don't brand or label myself as an exclusive income-based
+
+23
+00:01:43,043 --> 00:01:46,045
+纯收入导向交易者会严格遵循一套规则：
+trader an exclusively income-based trader is going to follow a
+
+24
+00:01:46,045 --> 00:01:49,047
+入场、触及止盈、平仓、再开新的日历价差策略
+list of very strict specific rules meaning they enter their
+
+25
+00:01:49,047 --> 00:02:00,157
+然后重复这个过程。而我通常会加入一些主观判断
+trade they hit their profit targets they close the trade they open up another set of calendars and they just rinse and repeat and they continue to go along i will usually interject a little bit of
+
+26
+00:02:00,160 --> 00:02:03,733
+会在收入策略周围灵活操作
+discretion i will usually trade around some of my income spreads as
+
+27
+00:02:03,733 --> 00:02:10,879
+还会用Gamma敞口、量化交易应用的关键价位等工具辅助决策，但大部分交易仍相对系统化
+i use other tools that influence my discretion like gamma exposure some of the quant trading app levels but for the most part these
+
+28
+00:02:10,880 --> 00:02:14,524
+这是周一早上开仓时的情况
+trades are relatively systematic this is monday here roughly monday morning when
+
+29
+00:02:14,524 --> 00:02:18,472
+而这是周五时标普500的位置
+the position was opened and here we have on friday where the spx
+
+30
+00:02:18,472 --> 00:02:21,509
+尽管日历价差策略的峰值
+is so even though the peak of the calendar spread
+
+31
+00:02:21,509 --> 00:02:27,887
+大约在6035附近，现在SPX已接近6100，价差
+was right around here which is 60 35 we can see that the spx is all the way almost at 6100 and the spread
+
+32
+00:02:28,800 --> 00:02:32,953
+但标普500已接近6100，价差仍能盈利
+is still profitable quant trading app members you guys will notice that
+
+33
+00:02:32,953 --> 00:02:36,414
+量化交易应用的关键价位
+the tents will generally line up with our weekly levels
+
+34
+00:02:36,414 --> 00:02:45,759
+我习惯在量化交易应用初期，这些周线位是为铁鹰策略和日历价差策略设计的
+that's something i like to do at quant trading apps inception these weekly levels were actually generated to help iron condor traders as well as calendar spreads
+
+35
+00:02:45,760 --> 00:02:48,106
+与铁鹰策略、日历价差策略
+swing traders because that was predominantly my style
+
+36
+00:02:48,106 --> 00:02:50,159
+及波段交易策略保持一致
+back then as it was a reflection
+
+37
+00:02:50,159 --> 00:02:52,212
+因为当时我主要
+of the majority of the type of
+
+38
+00:02:52,212 --> 00:02:56,318
+用这些策略进行波段交易
+spreads that i use to swing trade let's dissect what has happened with this
+
+39
+00:02:56,320 --> 00:03:03,760
+我们来分析这个日历价差为何盈利
+calendar spread and why is it profitable the first takeaway is that the spx is still within the tent
+
+40
+00:03:03,760 --> 00:03:09,120
+这就是日历价差策略到期时的关键价位，如视频所述
+so this right here is our tent of the calendar spread at expiration and as mentioned in the video
+
+41
+00:03:09,120 --> 00:03:10,912
+这就是日历价差到期时的关键区间
+before this is our t plus zero line
+
+42
+00:03:10,912 --> 00:03:12,480
+之前提到过，这是T+0线
+which is the current pnl so this
+
+43
+00:03:12,480 --> 00:03:14,048
+即当前盈亏线
+right here if we just look over
+
+44
+00:03:14,048 --> 00:03:19,200
+左侧就是盈利区域，或直接看下方，这就是它的位置
+to the left is exactly where the profit is or we can just take a look down here and that's what this is
+
+45
+00:03:19,200 --> 00:03:25,520
+下方这些切片是理论盈亏的估算
+telling us these slices right here are just to give us an estimation of what's the theoretical pnl
+
+46
+00:03:25,520 --> 00:03:27,252
+比如市场上涨1%
+would be in this case here one
+
+47
+00:03:27,252 --> 00:03:29,231
+头寸几乎不盈利
+percent if the market went up one percent
+
+48
+00:03:29,231 --> 00:03:30,963
+因为接近T+0线的盈亏平衡点
+the position will barely be up as
+
+49
+00:03:30,963 --> 00:03:36,159
+这几乎是T+0线上的盈亏平衡点，如果市场回落1点
+this is just about the break even on the t plus zero line if the market was to pull back one
+
+50
+00:03:36,160 --> 00:03:38,328
+头寸理论上能盈利
+percent the position will be theoretically up
+
+51
+00:03:38,328 --> 00:03:40,496
+超过700美元
+over seven hundred dollars as we're coming
+
+52
+00:03:40,496 --> 00:03:42,354
+因为更接近关键价位的峰值
+back closer to the peak of
+
+53
+00:03:42,354 --> 00:03:48,239
+关键价位，接下来要注意的是，交易期间T+0线
+the tent the next thing to take notice is that during the duration of the trade the t plus
+
+54
+00:03:48,240 --> 00:03:54,080
+可能比关键价位更宽，这就是我们看到的品红色水平线
+zero line can be wider than the tent and that's this magenta pinkish level that we see right here
+
+55
+00:03:54,080 --> 00:04:01,040
+这些是T+0线上的盈亏平衡点，从这一端到另一端是盈利区间
+these are the break evens on the t plus zero line this one to this one is our range for profitability
+
+56
+00:04:01,040 --> 00:04:03,120
+当前标普500的位置在这里
+so the spx is currently right here
+
+57
+00:04:03,120 --> 00:04:05,200
+而到期时关键价位区间
+whereas the tent at expiration is from
+
+58
+00:04:05,200 --> 00:04:07,280
+范围会更窄
+here to here it's a little bit
+
+59
+00:04:07,280 --> 00:04:10,064
+日历价差策略
+more of a narrow range this strategy called
+
+60
+00:04:10,064 --> 00:04:12,848
+受时间推移获益
+a calendar spread benefits from the passage of
+
+61
+00:04:12,848 --> 00:04:15,284
+受益于时间流逝或
+time or an increase in volatility for
+
+62
+00:04:15,284 --> 00:04:20,157
+远月合约波动率上升，这里是12月27日
+your long expiration in this case here december 27th and this is what was
+
+63
+00:04:20,160 --> 00:04:22,922
+这部分内容在第一集视频中已讲解
+addressed in part one of this video so
+
+64
+00:04:22,922 --> 00:04:25,684
+即使交易者什么都不做
+even if a trader does nothing all we
+
+65
+00:04:25,684 --> 00:04:28,100
+只需标的价格继续
+need is for price to continue to
+
+66
+00:04:28,100 --> 00:04:33,278
+在这个区间内波动
+fluctuate throughout this tent or this range right here and the position will continue to
+
+67
+00:04:33,280 --> 00:04:42,240
+头寸每天都会盈利，只要
+make profit every single day as long as implied volatility does not decrease at a faster rate
+
+68
+00:04:42,240 --> 00:04:44,648
+隐含波动率下降速度不超过近月时间衰减
+than the time decay of your front month
+
+69
+00:04:44,648 --> 00:04:47,056
+如果这听起来有点复杂
+if that sounds a little confusing i highly
+
+70
+00:04:47,056 --> 00:04:48,862
+强烈建议你回看第一集视频
+recommend you check out part one
+
+71
+00:04:48,862 --> 00:04:53,678
+或我之前几年录制的日历价差策略视频
+of this video or any of the previous calendar spreads videos in which i have done
+
+72
+00:04:53,680 --> 00:04:56,153
+随着时间推移
+over the past few years as time continues
+
+73
+00:04:56,153 --> 00:04:58,317
+现在是12月6日
+to pass this is december 6th let's
+
+74
+00:04:58,317 --> 00:05:00,481
+我们跳到12月9日
+jump to december december 9th we can
+
+75
+00:05:00,481 --> 00:05:05,118
+理论上盈利会持续增加
+see that the profit should in theory increase let's just jump to wednesday of next
+
+76
+00:05:05,120 --> 00:05:11,040
+只要标普500在之前展示的任何区间内
+week profit should continue to increase as long as the spx is at any of these ranges as i showcased
+
+77
+00:05:11,040 --> 00:05:13,238
+没人知道波动率会如何变化
+in the previous video no one knows what's
+
+78
+00:05:13,238 --> 00:05:15,162
+我们可以尝试预测并调整
+going to happen with the volatility so
+
+79
+00:05:15,162 --> 00:05:17,086
+但大部分情况下
+we can try to speculate and adjust
+
+80
+00:05:17,086 --> 00:05:21,758
+这些系统或风险收益曲线
+for volatility but for the most part these systems or these risk profiles try to do the
+
+81
+00:05:21,760 --> 00:05:23,733
+会尽力用估算值
+best they can with an estimation of
+
+82
+00:05:23,733 --> 00:05:27,679
+展示你的盈亏预期
+what your profit and loss should be now let's take a look at the
+
+83
+00:05:27,680 --> 00:05:30,257
+现在看看开仓后
+implied volatility and what has happened since i've
+
+84
+00:05:30,257 --> 00:05:32,512
+隐含波动率的变化
+opened the trade so this is going
+
+85
+00:05:32,512 --> 00:05:34,767
+这是近月合约的隐含波动率
+to be for the front month and
+
+86
+00:05:34,767 --> 00:05:39,599
+这是远月合约的
+this is our back month so right now it's saying according to think of swim
+
+87
+00:05:39,600 --> 00:05:48,720
+思拓思维显示近月波动率现在为11.89
+the volatility for the front month is now 11.89 when i first opened the trade it was about 13.95
+
+88
+00:05:48,720 --> 00:05:53,509
+开仓时约为13.95
+and the back month was 13.5 so now the back month which is december 27th
+
+89
+00:05:53,509 --> 00:05:58,298
+远月（12月27日）现在是11.84
+is 11.84. you guys can see that these levels have now become closer to each
+
+90
+00:05:58,298 --> 00:06:03,087
+可以看到两者现在更接近了
+other whereas before this had about a point 45 percent increase over this one so
+
+91
+00:06:03,087 --> 00:06:19,851
+now one can say the implied volatility has in a sense flattened out between these two and that was the volatility skew that i addressed in the first video there's no longer that much of a volatility skew between these two expirations so if i was looking to open
+
+92
+00:06:20,880 --> 00:06:24,859
+若现在开日历价差策略
+up a calendar spread i would not choose these same expirations as
+
+93
+00:06:24,859 --> 00:06:27,512
+优势已不复存在
+the edge is no longer present the flattening
+
+94
+00:06:27,512 --> 00:06:39,119
+波动率偏差的扁平化正是优势所在
+of the volatility skew between these two is what was the edge and that's what this position has benefited from as we can see in a reflection of the pnl now earlier today so just
+
+95
+00:06:39,120 --> 00:06:44,451
+不到两小时前
+under two hours i took note of when the position was over 15 this is
+
+96
+00:06:44,451 --> 00:06:49,782
+此时隐含波动率下降约1.82
+what the implied volatility was it was about a 1.82 reduction in implied volatility for
+
+97
+00:06:49,782 --> 00:06:55,113
+近月合约开仓时为13.95
+the front month since when i opened the trade it was 13.95 earlier today it
+
+98
+00:06:55,113 --> 00:07:00,064
+今日早些时候降至12.13
+was 12.13 that's about a decrease of 1.82 and look at our back month it
+
+99
+00:07:00,064 --> 00:07:19,868
+went from 13.5 to 12.8 that is a reduction of 1.42 the front month reduced in implied volatility much faster than the back month and that is a bonus for calendar spreads the market went from 6044 when i first opened it to about 6087 when i took note of this earlier in the day again you'll
+
+100
+00:07:23,680 --> 00:07:26,820
+盈亏会随市场波动
+see the pnl will fluctuate as the market is open
+
+101
+00:07:26,820 --> 00:07:29,960
+现在是平仓的好时机
+and now will be an excellent time to actually close
+
+102
+00:07:29,960 --> 00:07:35,926
++15%是收入导向交易者的理想目标
+out the trade as plus 15 is generally going to be a great profit target for an income-based trader i
+
+103
+00:07:36,240 --> 00:07:39,623
+我见过盈利达+25%
+have seen these hits plus 25 before and even all the way
+
+104
+00:07:39,623 --> 00:07:41,776
+甚至+50%
+up to plus 50 but that would require
+
+105
+00:07:41,776 --> 00:07:53,156
+holding for another week or even another 11 more days you would have to hold it into the week of expiration i would never encourage a trader to hold these all the way until the day of expiration
+
+106
+00:07:54,080 --> 00:07:57,666
+重点是及时入场
+the point is to get in them get out when you hit
+
+107
+00:07:57,666 --> 00:07:59,758
+达到8%或15%就平仓
+these types of numbers so eight percent 15
+
+108
+00:07:59,758 --> 00:08:02,447
+若等到25%
+if you're at 25 you've definitely been holding it for
+
+109
+00:08:02,447 --> 00:08:09,320
+如果你是投机或凭自己判断交易
+too long again for an income-based trader if you're speculating or you're using your own discretion you're essentially deviating from the plan from
+
+110
+00:08:09,920 --> 00:08:14,037
+开仓后标普500一直在关键价位内
+an income spreads traders perspective so what has happened since i've opened
+
+111
+00:08:14,037 --> 00:08:22,959
+the trade is that the spx has stayed within the tents and the short strike has lost in value faster than the long strike so as
+
+112
+00:08:22,960 --> 00:08:26,211
+市场先横盘数日
+the market was being choppy for a couple days and then it
+
+113
+00:08:26,211 --> 00:08:28,378
+后出现向上跳空
+gapped up and it was just moving with
+
+114
+00:08:28,378 --> 00:08:31,087
+低波动性上涨
+low volatility up that's created the opportunity for the short
+
+115
+00:08:31,087 --> 00:08:39,216
+strike which is this one right here to lose in value so this strike was sold for 71 in this case when i first opened it and now it's going for 88
+
+116
+00:08:39,760 --> 00:08:44,674
+尽管已涨至价内
+so even though it is now in the money and the market has gone up
+
+117
+00:08:44,674 --> 00:08:49,588
+但时间价值仍在流失
+it is losing extrinsic value it has gained some intrinsic value because it is now
+
+118
+00:08:49,588 --> 00:09:00,399
+in the money but the long strike has also gained in intrinsic value but it has lost an extrinsic value at a lower rate than the other one so this contract here was
+
+119
+00:09:00,400 --> 00:09:03,393
+长期行权价合约买入价为80
+purchased for 80 but it's now going for 97 almost
+
+120
+00:09:03,393 --> 00:09:06,386
+现报价接近97-98
+98 so has gained 18 in premium while this one
+
+121
+00:09:06,386 --> 00:09:10,128
+内在价值同样增加
+has gained the same amount of intrinsic value but it
+
+122
+00:09:10,128 --> 00:09:20,980
+外在价值流失更快，这是日历价差策略盈利的关键原因 最后给大家看一下
+is losing its extrinsic value at a faster rate than the other one and that is a large contribution to how calendar spreads make money lastly let's just show
+
+123
+00:09:22,480 --> 00:09:26,232
+我之前记录的
+you guys the example that i took note of this was the
+
+124
+00:09:26,232 --> 00:09:29,984
+我用了周一到周一的到期日
+alternative calendar in which i used the monday to monday expiration and
+
+125
+00:09:29,984 --> 00:09:39,365
+这个日历价差策略表现更好，早些时候涨幅超20% 大家可以记下来
+instead of the friday to friday expiration this calendar spread actually outperformed the other one as it was up over 20 earlier here today you guys can take notes of the
+
+126
+00:09:39,680 --> 00:09:42,419
+虽然我是稍晚才记录的
+changes between the implied volatility albeit i did journal this
+
+127
+00:09:42,419 --> 00:09:45,158
+这个交易
+trade a little bit after the other one so this
+
+128
+00:09:45,158 --> 00:09:48,992
+大约在第一个日历价差开仓后15分钟开的
+one was opened about 15 minutes or so after the first calendar spread so obviously
+
+129
+00:09:48,992 --> 00:09:53,100
+但基于经验
+it's not exactly a direct comparison but i did have a feeling based on experience
+
+130
+00:09:53,100 --> 00:10:04,604
+周初这个日历策略会更好，只是我已经开仓了 事后才想到可能这个更合适
+earlier in the week that this calendar would have performed better it's just i had already opened up this one and it wasn't until after i opened this one i was like oh crap this probably would have been a better calendar
+
+131
+00:10:04,880 --> 00:10:07,613
+但我不想平掉第一个
+i didn't want to close out the other one and then switch
+
+132
+00:10:07,613 --> 00:10:10,346
+我也可以两个都做
+over to this one i could have also then gotten this one
+
+133
+00:10:10,346 --> 00:10:12,851
+但当时我已经持有
+but you guys know i was in some calendar spreads i
+
+134
+00:10:12,851 --> 00:10:18,318
+而且我当时重点关注纳斯达克
+was in butterfly spreads and i also focused on the nasdaq earlier this week as i covered in a couple other videos there's actually
+
+135
+00:10:18,320 --> 00:10:20,740
+我在其他视频里也提到了
+another video i have coming out on a follow-up to
+
+136
+00:10:20,740 --> 00:10:22,676
+其实还有一个后续视频
+this one if it isn't out already and
+
+137
+00:10:22,676 --> 00:10:27,759
+我想告诉大家为何这种日历通常很差
+then to conclude i just want to show you guys why these calendars are generally crap so this is a calendar
+
+138
+00:10:27,760 --> 00:10:32,010
+这是一个下周五到周一到期的日历价差
+spread where i went with the next week friday to the monday expiration and even
+
+139
+00:10:32,010 --> 00:10:36,260
+我交易这种日历差不多4年半了
+though i've been trading these types of calendars for i think almost four four and
+
+140
+00:10:36,260 --> 00:10:40,510
+但它们表现非常不稳定
+a half years now or so they can be wildly inconsistent in my experience if
+
+141
+00:10:40,510 --> 00:10:47,593
+交易日历价差策略要追求稳定收益，建议至少选3周到期 11-14天DTE是常见选择
+you're looking for consistency and you're looking for income spreads trading you're better off going out at least three weeks this 11 to 14 dte is generally
+
+142
+00:10:48,160 --> 00:10:52,915
+11-14天DTE的通常不如更宽期限的好
+not going to cut it in comparison to something like this with a wider term
+
+143
+00:10:52,915 --> 00:10:57,670
+这个策略的多空合约间隔7天
+structure so it's a seven day separation between your long and short strikes if you
+
+144
+00:10:57,670 --> 00:11:05,278
+看这里，这是周五到期转周一到期 价差窄、成本低，这是双日历价差
+go here this is just a friday expiration to a monday expiration so it's narrow it's tight it's cheaper this is a double calendar
+
+145
+00:11:05,280 --> 00:11:09,432
+价格一直在区间内波动
+spread but look at this price has stayed within the range and this crap has
+
+146
+00:11:09,432 --> 00:11:13,584
+但一周下来几乎没赚钱
+barely made any money all week and even if the market pulled back right now
+
+147
+00:11:13,584 --> 00:11:17,736
+也几乎没盈利
+it's still barely going to be up anything i'm in the same for lots of
+
+148
+00:11:17,736 --> 00:11:26,318
+这组交易用了2000美元本金，保证金不到3000美元 一周几乎没动，现在
+these here so i'm using only two thousand dollars in capital just under three thousand dollars in margin actually and this trade has virtually done nothing all week long and now
+
+149
+00:11:26,320 --> 00:11:29,427
+但这个交易一周几乎没动
+i'm forced to make a decision do i just close this or
+
+150
+00:11:29,427 --> 00:11:32,793
+是平仓还是持有到下周
+do i hold it into next week and that's where you start entering
+
+151
+00:11:32,793 --> 00:11:41,598
+这就进入危险区域 因为看起来很诱人
+a dangerous territory because this looks very appealing but then what's going to happen over the weekend is friday's expiration is going to jump and that's going to hurt this spread so i think
+
+152
+00:11:41,600 --> 00:11:43,360
+但周末前周五到期会暴涨
+you can actually make this adjustment here so
+
+153
+00:11:43,360 --> 00:11:44,900
+这会伤害价差
+yeah so this is going to actually
+
+154
+00:11:44,900 --> 00:11:49,520
+先上涨，然后同样情况可能再次发生
+jump up and then the same thing is going to happen this might increase just a little bit and there is
+
+155
+00:11:49,520 --> 00:11:51,784
+它会上涨 然后同样情况
+room for it to be profitable but you
+
+156
+00:11:51,784 --> 00:11:54,048
+可能略有增长
+don't want to hold these into the same
+
+157
+00:11:54,048 --> 00:12:00,558
+一周内会面临各种不可预测的风险
+week you leave yourself susceptible to all sorts of wild things that can happen so i seldom run these types of trades in
+
+158
+00:12:00,560 --> 00:12:04,160
+我经验来看，换铁鹰策略可能更好
+my experience it would have been better to just go with an iron condor or something like that
+
+159
+00:12:04,160 --> 00:12:06,652
+周末可能发生各种意外
+they can work obviously when they do work
+
+160
+00:12:06,652 --> 00:12:09,144
+我很少做这种交易
+they are amazing for how low cost they
+
+161
+00:12:09,144 --> 00:12:15,998
+以我经验 当时选铁鹰策略更好
+can be relative to the range relative to the type of profit you can make all this is very appealing but this
+
+162
+00:12:16,000 --> 00:12:18,575
+它们确实有效时
+sucks holding a trade for four or five days and
+
+163
+00:12:18,575 --> 00:12:20,635
+成本低 盈利潜力大
+you still see that your pnl is red
+
+164
+00:12:20,635 --> 00:12:26,558
+时间衰减也没那么剧烈，因为到期日很近
+and that's largely also due to the fact that the time decay is not as severe with these expirations being so close to
+
+165
+00:12:26,560 --> 00:12:31,095
+但持仓4-5天
+each other they're both affected by implied volatility almost at the same
+
+166
+00:12:31,095 --> 00:12:34,118
+盈亏还是亏损就很难受
+rate so when implied volatility decreased for next
+
+167
+00:12:34,118 --> 00:12:37,519
+这主要是因为时间衰减
+week friday's expiration the monday expiration after also decreased
+
+168
+00:12:37,520 --> 00:12:39,961
+到期日太近
+essentially at the same rate if not faster so even
+
+169
+00:12:39,961 --> 00:12:41,913
+时间价值流失不严重
+though i opened the trade when there was
+
+170
+00:12:41,913 --> 00:12:46,795
+波动率偏差相同，这里大约1.5%左右
+the same volatility skew as we can see right here and right here is about a point 50 percent or so
+
+171
+00:12:47,040 --> 00:12:50,169
+几乎同时受隐含波动率影响
+difference in implied volatility now that the skew has flattened
+
+172
+00:12:50,169 --> 00:12:52,672
+当隐含波动率下降时
+out it doesn't really matter that much because
+
+173
+00:12:52,672 --> 00:12:57,679
+周五到期的波动率下降
+our long strike has all has not held that enough gains to offset the difference here
+
+174
+00:12:57,680 --> 00:12:59,905
+周一到期的也几乎同步下降
+this trade might have performed better maybe if i went
+
+175
+00:12:59,905 --> 00:13:01,685
+甚至更快
+with this type of expiration but that's where
+
+176
+00:13:01,685 --> 00:13:04,800
+虽然我开仓时
+being able to journal and going in and seeing how would that have performed
+
+177
+00:13:04,800 --> 00:13:07,364
+波动率偏差约1.5%
+this is why i love option strat because then i
+
+178
+00:13:07,364 --> 00:13:09,415
+但现在偏差已消失
+can go and choose a different expiration right
+
+179
+00:13:09,415 --> 00:13:14,799
+here and then see how maybe that would have performed we can see the historical price for this i can jump
+
+180
+00:13:14,800 --> 00:13:17,090
+收益不足以抵消损失
+back to earlier this week and see if i open
+
+181
+00:13:17,090 --> 00:13:18,922
+看看是否表现更好
+it if it would have performed better and
+
+182
+00:13:18,922 --> 00:13:24,420
+看起来确实好一点，但仅好20-30美分
+it looks like it would have but only by about 20 or 30 cents or so so still rendering it maybe not worth it again the
+
+183
+00:13:24,880 --> 00:13:26,928
+各位，要想真正掌握这个策略
+only way you'll get great at this for yourself guys
+
+184
+00:13:26,928 --> 00:13:28,567
+光看YouTube视频可不行
+is not just by watching a youtube video
+
+185
+00:13:28,567 --> 00:13:33,279
+即使我做得再详细，你也得自己实践
+as detailed as i try to make these you have to practice yourself you have to take your own notes you have to
+
+186
+00:13:33,280 --> 00:13:35,364
+自己记笔记
+journal your own trades especially if you want
+
+187
+00:13:35,364 --> 00:13:37,448
+还要有信心
+to have some sort of confidence as well
+
+188
+00:13:37,448 --> 00:13:42,398
+得理解为什么一个日历策略
+as understanding what's going on why did one calendar perform better than the other why did i make x
+
+189
+00:13:42,400 --> 00:13:45,480
+比另一个表现好
+amount of money in one versus the other or why
+
+190
+00:13:45,480 --> 00:13:47,944
+为什么一个赚钱
+is one not making any money or losing
+
+191
+00:13:47,944 --> 00:13:54,720
+一个策略赚钱时，另一个也赚钱，
+money when another one is making money why does one cost more than the other all these types of answers you can
+
+192
+00:13:54,720 --> 00:13:59,840
+但我通过做笔记和写交易日志学到更多。
+figure out for yourself as i did but i actually learned more by actually just taking notes and journaling
+
+193
+00:13:59,840 --> 00:14:03,228
+我是通过月复一月的笔记和交易记录
+these trades for months on end and that compounded into
+
+194
+00:14:03,228 --> 00:14:05,938
+积累了多年的知识
+years of information and knowledge but yet still
+
+195
+00:14:05,938 --> 00:14:11,359
+但直到今天，不同日历策略间
+to this day there's they can still be nuanced and variations between which calendar can perform
+
+196
+00:14:11,360 --> 00:14:13,876
+的表现差异可能只有2-3%
+better we're talking about a difference of maybe two to three percent
+
+197
+00:14:13,876 --> 00:14:16,392
+如果你用1万美元操作
+but if you're running these with 10k which is usually what i
+
+198
+00:14:16,392 --> 00:14:19,118
+这差异就是几百美元
+would have liked to run them at that's the difference of a couple
+
+199
+00:14:19,120 --> 00:14:21,460
+可能一个月多赚5-6百美元
+hundred extra dollars which could end up being in a
+
+200
+00:14:21,460 --> 00:14:23,800
+一年下来就是多5-7千美元
+difference between an extra five six hundred dollars a month
+
+201
+00:14:23,800 --> 00:14:25,672
+随着复利增长
+which is the difference between an extra five
+
+202
+00:14:25,672 --> 00:14:28,480
+各位，如果你喜欢这个视频
+to seven k at the end of the year as it all
+
+203
+00:14:28,480 --> 00:14:31,600
+评论区告诉我
+compounds guys if you enjoyed this video let me know
+
+204
+00:14:31,600 --> 00:14:34,720
+点个赞
+in the comments down below leave a like on the
+
+205
+00:14:34,720 --> 00:14:40,960
+请订阅YouTube频道并点赞这个视频
+video subscribe to the youtube channel if you are new here and if you like or you are enjoying these
+
+206
+00:14:40,960 --> 00:14:44,255
+如果你是新观众
+follow-up type of videos to a specific trade in which i share
+
+207
+00:14:44,255 --> 00:14:47,000
+又喜欢这种针对特定交易
+on this youtube channel let me know and i'll also
+
+208
+00:14:47,000 --> 00:14:51,118
+的跟进视频，告诉我
+try to make more videos like this next year the feedback is always appreciated thanks
+
+209
+00:14:51,120 --> 00:15:00,560
+明年我会多做类似视频，感谢观看，下期见
+for watching i'll catch you in the next one
+
+===== END AFTER_TRANSLATE =====

@@ -1,0 +1,1358 @@
+===== AFTER_SEGMENT (339 entries) =====
+1
+00:00:01,140 --> 00:00:05,241
+Alright guys, so we've completed the majority of our business
+
+2
+00:00:05,241 --> 00:00:09,342
+plan, we've got ourselves to a great position where we
+
+3
+00:00:09,342 --> 00:00:13,443
+know the exact institution that we want to follow, the
+
+4
+00:00:13,443 --> 00:00:24,517
+exact strategy in terms of replicating what they're doing, we know what we're doing, we've just got left with actually a hugely important part of the process.
+
+5
+00:00:24,520 --> 00:00:27,904
+We want to make sure we've got the right tools,
+
+6
+00:00:27,904 --> 00:00:31,288
+right? If we've got the wrong tools, basically we've failed
+
+7
+00:00:31,288 --> 00:00:42,118
+before we've even started. So let's just quickly go through part B, which you saw on the first slide in terms of our business plan, which is essentially the final part now.
+
+8
+00:00:42,120 --> 00:00:47,703
+So what I want to show you guys is non-professionals
+
+9
+00:00:47,703 --> 00:00:54,961
+are using MetaTrader 4 and similar retail platforms, but professionals are using institutional platforms.
+
+10
+00:00:55,520 --> 00:00:59,143
+Now, you need to be careful here because what I
+
+11
+00:00:59,143 --> 00:01:02,766
+am not saying is that it's a platform problem. I'm
+
+12
+00:01:02,766 --> 00:01:13,636
+not saying that. In fact, there's nothing wrong with using MetaTrader 4. It's a good platform and you can continue to use it. It's just there's a big part you're missing.
+
+13
+00:01:14,000 --> 00:01:17,587
+Now, that's best illustrated if I actually get straight into
+
+14
+00:01:17,587 --> 00:01:21,174
+the pieces of information that are available to institutions. So
+
+15
+00:01:21,174 --> 00:01:36,239
+there's actually six pieces. So here you've got the bid, you've got the ask. So that's simply giving you the price that you can purchase and the price you can sell, for example, euro dollar. And then you've got pound dollar here.
+
+16
+00:01:36,240 --> 00:01:39,425
+So what I've done is I've actually showed you what
+
+17
+00:01:39,425 --> 00:01:42,610
+the professionals, the institutions have access to. So they'll be
+
+18
+00:01:42,610 --> 00:01:54,078
+seeing the same things, the bid and the ask, which we actually call it the offer. But don't worry about that. Let's just call it the ask for now because it is the same thing anyway.
+
+19
+00:01:54,080 --> 00:01:57,620
+So there you can see the price is very similar
+
+20
+00:01:57,620 --> 00:02:00,098
+to what you see here on cable. 129.72, 129.74, 129.76,
+
+21
+00:02:00,098 --> 00:02:16,383
+77. So it's virtually the same. And I'll go over that in a second because this is actually the futures market. And what you're seeing here is the spot market. But ultimately, would you agree that's one piece of information, two pieces of information, bid and ask?
+
+22
+00:02:17,800 --> 00:02:28,520
+Here you've got one piece of information, the same. So there and there, we're losing out nothing. We've got the same pieces of information as the institutions. Great start. But hang on, what's all this stuff?
+
+23
+00:02:29,240 --> 00:02:31,919
+Well, you've got the bid and you've got offers. Now,
+
+24
+00:02:31,919 --> 00:02:40,759
+I'm going to go through this really quickly because we're going to cover this in depth in the next modules and it'd just be a waste of time to cover this like twice.
+
+25
+00:02:40,760 --> 00:02:44,717
+So just for the purpose of an example, I'm just
+
+26
+00:02:44,717 --> 00:02:48,674
+going to quickly give you a brief description of what
+
+27
+00:02:48,674 --> 00:03:12,815
+this is. This is simply the depth. So it's just telling you it's actually contracts. It's not. It could be one person willing to buy 27 contracts at 129.76. But let's just assume for the ease of practice or practical example that it's 27 people. So what that means is 27 people are sitting on the bid and seven people are sitting on the offer.
+
+28
+00:03:14,720 --> 00:03:18,011
+What that means is if you want to go and
+
+29
+00:03:18,011 --> 00:03:26,899
+buy the market, you can only buy from seven people. Once you've bought, say, seven items or seven units, you can no longer buy at that price.
+
+30
+00:03:26,900 --> 00:03:29,793
+Do you see here, guys? You don't see that information.
+
+31
+00:03:29,793 --> 00:03:36,159
+That's incredibly useful information, which you're not seeing here. So that's already two pieces of information you're missing out on the depth.
+
+32
+00:03:36,460 --> 00:03:40,284
+So we've got here one, two, three, four. And then
+
+33
+00:03:40,284 --> 00:03:52,139
+what you're also not seeing, guys, is what's actually transacted in the market. Do you know what just transacted in pound dollar or euro dollar the moment you opened your platform?
+
+34
+00:03:52,140 --> 00:03:55,526
+No, here I can tell you straight away two units
+
+35
+00:03:55,526 --> 00:04:01,959
+were just bought a moment before. This is what was sold to eight units were sold at this price.
+
+36
+00:04:02,600 --> 00:04:06,673
+So what that means is it's telling me exactly the
+
+37
+00:04:06,673 --> 00:04:14,819
+demand and supply in any given moment, not only in terms of intention, but also in terms of actual action.
+
+38
+00:04:14,820 --> 00:04:18,708
+So you're missing out on five and six. So can
+
+39
+00:04:18,708 --> 00:04:25,319
+you see here, guys, that's four huge pieces of information out of six institutions have got six.
+
+40
+00:04:26,780 --> 00:04:36,960
+All information necessary. Now, this is the raw data that I talked about that all professional traders will be taught about from day one.
+
+41
+00:04:36,960 --> 00:04:42,220
+So guys, where's all this data here on your retail platform? It's not there.
+
+42
+00:04:43,440 --> 00:04:46,832
+Now, I'm sorry to say it, but you can see
+
+43
+00:04:46,832 --> 00:04:52,259
+why if you're going to keep pursuing use MT4 by all means, but look, supplement it.
+
+44
+00:04:52,260 --> 00:04:56,684
+So what I've been doing recently since I've come into
+
+45
+00:04:56,684 --> 00:05:01,108
+the retail space is I've been using my exchange traded
+
+46
+00:05:01,108 --> 00:05:06,859
+information. So the demand and supply information, but I've been executing on MT4.
+
+47
+00:05:06,940 --> 00:05:10,212
+So by all means, use this. You still got two
+
+48
+00:05:10,212 --> 00:05:14,139
+great pieces of information, but guys, guys, get three, four, five, six.
+
+49
+00:05:14,220 --> 00:05:18,260
+Get the other four pieces of information because you see here, you've only got two out of six.
+
+50
+00:05:18,260 --> 00:05:22,920
+Guys, you're only getting 33 percent of the information. See, you're doomed to fail straight away.
+
+51
+00:05:23,000 --> 00:05:26,021
+If you're going to continue sticking to this path. And
+
+52
+00:05:26,021 --> 00:05:31,459
+as I said on the last slide, that's why we're moving away from retail education into institutional education.
+
+53
+00:05:31,940 --> 00:05:35,520
+Do you want to be going into a job with only 33 percent of information, guys?
+
+54
+00:05:36,140 --> 00:05:41,520
+It's literally like going into a new field, but with no tools.
+
+55
+00:05:41,520 --> 00:05:46,307
+So I keep saying it, but it is crucially important
+
+56
+00:05:46,307 --> 00:05:57,319
+to understand that trading is not any sort of magical, mythical profession that is miles away from what you might already be doing.
+
+57
+00:05:57,860 --> 00:06:00,671
+You know, if you're already in a
+
+58
+00:06:00,671 --> 00:06:03,884
+vocation, any vocation, like I said, personal training,
+
+59
+00:06:03,884 --> 00:06:07,499
+it could even be you work in a cafe.
+
+60
+00:06:07,500 --> 00:06:10,021
+Anyway, it's exactly the same. How are you
+
+61
+00:06:10,021 --> 00:06:12,857
+going to, let's say someone comes and orders 10 coffees
+
+62
+00:06:12,857 --> 00:06:17,584
+from you, you work in Starbucks, but you don't have a tray to deliver it.
+
+63
+00:06:17,980 --> 00:06:20,297
+Guys, are you going to be able to hold 10
+
+64
+00:06:20,297 --> 00:06:23,902
+coffees in your hand without the tools? You're doomed to fail from day one.
+
+65
+00:06:24,740 --> 00:06:29,920
+Having this is like having the big tray, the tools, everything you need to do your job properly.
+
+66
+00:06:29,920 --> 00:06:32,270
+And there's so many examples we can use
+
+67
+00:06:32,270 --> 00:06:35,207
+like that. So you can see why it's absolutely crucial,
+
+68
+00:06:35,207 --> 00:06:43,139
+why we do this part of our business plan, because before we start a business, of course, we want to make sure we've got the right tools.
+
+69
+00:06:43,460 --> 00:06:44,640
+Common sense so far, right?
+
+70
+00:06:45,320 --> 00:06:49,084
+So what I just want to do before I end this chapter,
+
+71
+00:06:49,084 --> 00:06:51,593
+now that we know that there's a huge
+
+72
+00:06:51,593 --> 00:06:57,239
+part we're missing, and we need to obviously familiarise ourself with this, is why is that the case?
+
+73
+00:06:57,540 --> 00:07:01,260
+What exactly is it we're looking at here, and what exactly is it we're looking at here?
+
+74
+00:07:02,200 --> 00:07:04,828
+And guys, bear with me, because
+
+75
+00:07:04,828 --> 00:07:09,208
+this is probably one of the most important parts of
+
+76
+00:07:09,208 --> 00:07:13,150
+the entire course, that you understand the differences between
+
+77
+00:07:13,150 --> 00:07:22,348
+what you as a retailer are traditionally used to looking at, and what institutions are looking at, institutions and the professionals.
+
+78
+00:07:25,040 --> 00:07:28,357
+Now, just very briefly, the differences between futures
+
+79
+00:07:28,357 --> 00:07:31,674
+market and the spot market is essentially that
+
+80
+00:07:31,674 --> 00:07:39,138
+the futures market is a derivative, a leveraged derivative market, but that's not really that important to us.
+
+81
+00:07:39,140 --> 00:07:41,593
+The spot market is the only differences, and
+
+82
+00:07:41,593 --> 00:07:45,579
+you can Google this, guys, because all of this is available on Google.
+
+83
+00:07:45,580 --> 00:07:48,177
+I want to kind of tell you a lot of stuff that
+
+84
+00:07:48,177 --> 00:07:52,939
+you're not going to find in a book, or it's going to be very difficult for you to find it on Google.
+
+85
+00:07:53,160 --> 00:07:56,005
+The bits you will find on Google is the differences
+
+86
+00:07:56,005 --> 00:07:58,281
+between the spot market and the futures market,
+
+87
+00:07:58,281 --> 00:08:01,979
+and essentially all it is is that the spot market is deliverable now.
+
+88
+00:08:02,760 --> 00:08:06,720
+This will be delivered at expiry, so that can be in three months' time.
+
+89
+00:08:06,720 --> 00:08:10,410
+You don't actually deliver the asset, the underlying
+
+90
+00:08:10,410 --> 00:08:14,100
+asset in the futures market, be that foreign
+
+91
+00:08:14,100 --> 00:08:21,480
+exchange, oil, stocks, etc., but it doesn't matter, because we're never going to deliver this market.
+
+92
+00:08:21,600 --> 00:08:23,558
+We're going to buy it, and we're going
+
+93
+00:08:23,558 --> 00:08:25,026
+to close the contract out before
+
+94
+00:08:25,026 --> 00:08:28,698
+expiry, and if we don't, we'll just roll it over to the next contract anyway.
+
+95
+00:08:28,760 --> 00:08:29,800
+You're never going to deliver it.
+
+96
+00:08:29,800 --> 00:08:36,799
+So really, it doesn't matter what the differences are in terms of the specific minutiae.
+
+97
+00:08:37,419 --> 00:08:40,336
+Same with the spot market. It's deliverable physically.
+
+98
+00:08:40,336 --> 00:08:43,253
+Conventionally, it's T plus one or T plus
+
+99
+00:08:43,253 --> 00:08:48,358
+two, so you've got to deliver the currency or the asset that you promise.
+
+100
+00:08:48,360 --> 00:08:51,360
+But in our case, again, we're actually,
+
+101
+00:08:51,360 --> 00:08:54,789
+people don't realize this is by trading through
+
+102
+00:08:54,789 --> 00:09:01,219
+a broker platform like this, you're essentially trading a derivative of the spot market anyway.
+
+103
+00:09:01,380 --> 00:09:03,978
+So again, that's why you see
+
+104
+00:09:03,978 --> 00:09:07,009
+the leverage, one to 500, etc., etc., because
+
+105
+00:09:07,009 --> 00:09:14,805
+ultimately what your broker is allowing you to do is to not enter into a fully transacted deal.
+
+106
+00:09:15,240 --> 00:09:20,380
+They're allowing you to almost trade like it's a derivative, the way the futures is.
+
+107
+00:09:20,880 --> 00:09:23,054
+Again, you can Google all of this, but
+
+108
+00:09:23,054 --> 00:09:25,228
+for all our intents and purposes, let's just
+
+109
+00:09:25,228 --> 00:09:28,218
+imagine they're very similar, because you see the prices are similar.
+
+110
+00:09:29,020 --> 00:09:32,540
+You're really going to notice it in terms of those details I'm talking about.
+
+111
+00:09:33,300 --> 00:09:36,490
+What the differences are that we do care
+
+112
+00:09:36,490 --> 00:09:40,478
+about, however, that moves us away from thinking like a
+
+113
+00:09:40,478 --> 00:09:47,258
+retailer and really starting to think like an institution is this, it's really to do with volume.
+
+114
+00:09:47,600 --> 00:09:53,780
+Now, spreads, yeah, I'm going to come on to, but essentially the main thing is volume. Now, why is that?
+
+115
+00:09:54,520 --> 00:09:55,481
+Well, guys, in
+
+116
+00:09:55,481 --> 00:09:57,084
+the spot market, foreign exchange
+
+117
+00:09:57,084 --> 00:09:59,648
+spot market, and I said this before two
+
+118
+00:09:59,648 --> 00:10:05,098
+slides ago, why is it so important that part of our business plan we look at tools?
+
+119
+00:10:06,220 --> 00:10:10,800
+Guys, do you know this price? What is this price coming onto your retail platform?
+
+120
+00:10:11,140 --> 00:10:14,480
+Do you know where that comes from? How is that derived?
+
+121
+00:10:14,700 --> 00:10:19,020
+Does it come from thin air? Does it come from someone? Where does your broker actually get this price from?
+
+122
+00:10:19,940 --> 00:10:22,406
+It's absolutely crucial as part of
+
+123
+00:10:22,406 --> 00:10:24,872
+our business plan. And we research
+
+124
+00:10:24,872 --> 00:10:31,038
+this, right? And we understand this before we even think about trading as a business.
+
+125
+00:10:31,620 --> 00:10:33,400
+We need to make sure we understand this.
+
+126
+00:10:33,440 --> 00:10:34,820
+So I'm going to explain this to you now.
+
+127
+00:10:35,700 --> 00:10:43,620
+What happens is, let's say you've got two banks. So two big institutions like investment banks.
+
+128
+00:10:43,900 --> 00:10:45,064
+What they'll be
+
+129
+00:10:45,064 --> 00:10:47,781
+doing, guys, now I've said a large
+
+130
+00:10:47,781 --> 00:10:52,439
+percentage is OTC interbank of this. This is essentially what you're seeing.
+
+131
+00:10:53,060 --> 00:10:57,880
+Obviously, this isn't the futures market. It's the foreign exchange spot market.
+
+132
+00:10:58,840 --> 00:10:59,880
+So what is happening?
+
+133
+00:10:59,960 --> 00:11:09,060
+OTC is over the counter. What that means is, it literally is by telephone or using Bloomberg chat.
+
+134
+00:11:09,200 --> 00:11:13,135
+Basically, these banks, it's called interbank market,
+
+135
+00:11:13,135 --> 00:11:17,070
+which makes up a huge part of
+
+136
+00:11:17,070 --> 00:11:22,692
+the market. You know, 40, 50, 60 percent of the market is interbank.
+
+137
+00:11:24,840 --> 00:11:31,760
+So banks are trading amongst themselves, almost over a counter with each other. That's the term for it.
+
+138
+00:11:31,800 --> 00:11:33,480
+But actually, what they're doing is over the telephone.
+
+139
+00:11:34,200 --> 00:11:36,760
+So we don't have sight of this information, right?
+
+140
+00:11:36,900 --> 00:11:45,040
+These are just the big institutions, in particular, investment bank, investment banking, foreign exchange desks. So that's the sell side.
+
+141
+00:11:45,740 --> 00:11:49,040
+Go back and remind yourself what the sell side is, because I did talk about this before.
+
+142
+00:11:49,900 --> 00:11:56,860
+Then, guys, you've got pension funds, hedge funds, central banks. I called them the buy side, right?
+
+143
+00:11:57,580 --> 00:12:00,464
+So what they'll be doing is they'll be
+
+144
+00:12:00,464 --> 00:12:03,348
+going to the investment banks. Now, they'll either
+
+145
+00:12:03,348 --> 00:12:11,639
+be going directly through the salesperson, as I said. And so, in effect, again, that can be considered over the counter, directly transacting.
+
+146
+00:12:12,200 --> 00:12:18,720
+A lot of these transactions won't be made available to the public. And this is where futures are different.
+
+147
+00:12:18,860 --> 00:12:19,620
+I'm going to show you how.
+
+148
+00:12:19,620 --> 00:12:23,713
+They'll either be transacting, if it's very large
+
+149
+00:12:23,713 --> 00:12:28,829
+transactions, over the telephone, via the salesperson, directly with the
+
+150
+00:12:28,829 --> 00:12:38,039
+interbank traders. Or what they'll be doing is they'll be using electronic platforms like EBS and Thomson Reuters.
+
+151
+00:12:38,040 --> 00:12:41,130
+So they're just electronic platforms that allow huge
+
+152
+00:12:41,130 --> 00:12:46,539
+institutions to transact directly with banks without having to speak to the trader directly.
+
+153
+00:12:46,540 --> 00:12:53,480
+So it's kind of like their own little MetaTrader 4, but it's an institutional system.
+
+154
+00:12:54,020 --> 00:12:55,060
+So, again, guys,
+
+155
+00:12:55,060 --> 00:12:58,182
+as retailers, we don't have access to that because
+
+156
+00:12:58,182 --> 00:13:01,998
+we're not trading in enough size and we're not importing enough.
+
+157
+00:13:02,980 --> 00:13:05,160
+So where do we come in then?
+
+158
+00:13:05,580 --> 00:13:08,080
+So where does this price come from on MT4?
+
+159
+00:13:08,200 --> 00:13:09,200
+Well, we're over here.
+
+160
+00:13:12,690 --> 00:13:13,650
+This is us.
+
+161
+00:13:16,600 --> 00:13:18,560
+So let's just put R for retailer.
+
+162
+00:13:18,560 --> 00:13:20,617
+So what we'll do is, so
+
+163
+00:13:20,617 --> 00:13:22,674
+you know that you've got your
+
+164
+00:13:22,674 --> 00:13:24,731
+platform, it could be IC Markets
+
+165
+00:13:24,731 --> 00:13:30,559
+is one of the biggest. You've got Dukascopy, you've got FXCM, you've got all these brokers, right?
+
+166
+00:13:31,600 --> 00:13:36,300
+So let's call them FX Broker. FX Broker.
+
+167
+00:13:36,680 --> 00:13:41,620
+What they'll be doing, guys, is they will pull all the retail orders together.
+
+168
+00:13:41,620 --> 00:13:47,590
+So there'll be tons of retailers all trading through the platforms.
+
+169
+00:13:47,810 --> 00:13:49,770
+This will build up over time.
+
+170
+00:13:50,610 --> 00:13:54,990
+Now, there's an A and B desk. Again, you can Google this because it's quite commonly known.
+
+171
+00:13:55,610 --> 00:13:57,644
+The broker will then make a decision whether
+
+172
+00:13:57,644 --> 00:14:00,949
+they're going to hedge the risk that you're giving them or they don't.
+
+173
+00:14:00,950 --> 00:14:03,550
+So there's different desks that they'll have
+
+174
+00:14:03,550 --> 00:14:06,522
+within your brokerages and they'll decide whether they're
+
+175
+00:14:06,522 --> 00:14:10,608
+going to pool it and hedge it or whether they're not.
+
+176
+00:14:11,130 --> 00:14:12,669
+But typically, let's say the majority
+
+177
+00:14:12,669 --> 00:14:14,208
+of it, they'll be hedging that
+
+178
+00:14:14,208 --> 00:14:17,029
+out once it builds up to a certain amount of risk.
+
+179
+00:14:17,030 --> 00:14:21,554
+And what they will do is they'll go,
+
+180
+00:14:21,554 --> 00:14:26,078
+again, directly into the institutional space and then
+
+181
+00:14:26,078 --> 00:14:31,168
+they will hedge that out through electronic platforms again.
+
+182
+00:14:31,370 --> 00:14:33,736
+So it won't be necessarily EBS and Reuters,
+
+183
+00:14:33,736 --> 00:14:36,102
+but there'll be, I've forgotten the names of
+
+184
+00:14:36,102 --> 00:14:38,172
+most of them, but I think Prime
+
+185
+00:14:38,172 --> 00:14:44,088
+is one of them. There's a few electronic platforms that they can use depending on their size will depend which.
+
+186
+00:14:44,090 --> 00:14:46,970
+But essentially, they're using institutional platforms to hedge out.
+
+187
+00:14:47,970 --> 00:14:54,630
+So they'll be getting a price, right, from there. They will then decide what price to give you.
+
+188
+00:14:55,330 --> 00:14:58,210
+That's why I've put here spread can vary by broker.
+
+189
+00:14:58,710 --> 00:15:02,870
+And what you'll notice is in the futures market, that doesn't happen.
+
+190
+00:15:04,310 --> 00:15:08,092
+And even in the institutional market here, can
+
+191
+00:15:08,092 --> 00:15:11,874
+you see how we're almost cut off from
+
+192
+00:15:11,874 --> 00:15:17,548
+the institutional market market when it comes to foreign exchange spot market?
+
+193
+00:15:18,050 --> 00:15:19,590
+40% to 50% is done there.
+
+194
+00:15:19,750 --> 00:15:29,790
+Say 20% to 40% is done here through the buy side. Obviously, central banks, pension funds, etc., etc.
+
+195
+00:15:29,790 --> 00:15:35,450
+A little bit is done here through the retail sector. So we might be only 5%.
+
+196
+00:15:35,450 --> 00:15:43,650
+Guys, 95% of volume and transactions are either going to be institutionally done electronically,
+
+197
+00:15:44,230 --> 00:15:47,910
+maybe about 25%, 30%, 40%, another 40% done OTC.
+
+198
+00:15:47,910 --> 00:15:52,830
+We're not going to have access to virtually 80% of the volume.
+
+199
+00:15:53,050 --> 00:15:55,470
+That's why I say here volume is very sparse.
+
+200
+00:15:56,670 --> 00:16:00,250
+We don't actually see any of this information.
+
+201
+00:16:00,250 --> 00:16:02,670
+We don't know what's going on.
+
+202
+00:16:03,050 --> 00:16:08,670
+It's all unregulated, essentially. That's what I've put here, lightly regulated.
+
+203
+00:16:08,870 --> 00:16:10,130
+It's open to manipulation.
+
+204
+00:16:11,770 --> 00:16:13,170
+Institutional orders are benefiting.
+
+205
+00:16:13,370 --> 00:16:16,370
+If you're a big institution here on the buy side,
+
+206
+00:16:16,370 --> 00:16:18,470
+you're going to get preferential treatment. You're
+
+207
+00:16:18,470 --> 00:16:21,770
+going to be ahead of us, you and I, the retailers.
+
+208
+00:16:22,290 --> 00:16:25,549
+Because don't forget, even I, even though I used to
+
+209
+00:16:25,549 --> 00:16:28,482
+be in this space, I've obviously now evolved and
+
+210
+00:16:28,482 --> 00:16:34,349
+become a home trader. So from home, even I don't have a sight out of all of this.
+
+211
+00:16:34,910 --> 00:16:36,190
+However, it doesn't matter.
+
+212
+00:16:36,450 --> 00:16:39,390
+I'm still able to be incredibly profitable.
+
+213
+00:16:40,090 --> 00:16:40,730
+Why is that?
+
+214
+00:16:40,870 --> 00:16:42,170
+Well, this is the key, guys.
+
+215
+00:16:42,710 --> 00:16:49,450
+I'm seeing this information that you here are not seeing, even though you don't know it's available to you.
+
+216
+00:16:49,890 --> 00:16:57,490
+So how can we bridge the gap between what's going on here and how can we get closer to that?
+
+217
+00:16:57,490 --> 00:16:59,750
+So this is where the futures market comes in.
+
+218
+00:17:00,310 --> 00:17:03,559
+Because a lot of these guys will also be using,
+
+219
+00:17:03,559 --> 00:17:08,108
+even though the futures market is a much smaller market, just a few billions.
+
+220
+00:17:08,430 --> 00:17:09,550
+We're talking billions here.
+
+221
+00:17:09,609 --> 00:17:11,790
+Here we're obviously talking trillions in the spot market.
+
+222
+00:17:12,569 --> 00:17:16,710
+A lot of these guys are using the futures market to hedge their positions.
+
+223
+00:17:16,710 --> 00:17:20,170
+And also, because of something called arbitrage,
+
+224
+00:17:20,369 --> 00:17:29,210
+which go ahead and look up on Google, it's essentially a mechanism, which means the market has to stay efficient.
+
+225
+00:17:29,450 --> 00:17:35,650
+Otherwise, opportunities will exist for parties to profit easily.
+
+226
+00:17:35,890 --> 00:17:38,030
+So markets have to stay quite fairly aligned.
+
+227
+00:17:38,450 --> 00:17:42,210
+The futures market has to stay aligned to the institutional market.
+
+228
+00:17:42,210 --> 00:17:46,410
+Otherwise, opportunities will come in where people can just easily make profit.
+
+229
+00:17:48,410 --> 00:17:50,392
+So what happens is, anyway,
+
+230
+00:17:50,392 --> 00:17:53,167
+in the futures market, the way it's
+
+231
+00:17:53,167 --> 00:17:55,546
+different to the spot market is
+
+232
+00:17:55,546 --> 00:17:59,908
+what you've essentially got is you've got an exchange in between.
+
+233
+00:17:59,910 --> 00:18:05,770
+So here I'm going to draw it.
+
+234
+00:18:08,580 --> 00:18:11,780
+Think of it almost like a firm in between.
+
+235
+00:18:12,320 --> 00:18:13,893
+So do you see,
+
+236
+00:18:13,893 --> 00:18:16,253
+these guys are not, whereas here
+
+237
+00:18:16,253 --> 00:18:18,219
+is OTC, they're able to
+
+238
+00:18:18,219 --> 00:18:22,939
+transact with each other, and then they will record their transaction privately.
+
+239
+00:18:23,160 --> 00:18:24,492
+We don't actually see
+
+240
+00:18:24,492 --> 00:18:26,490
+that. They have no obligation to
+
+241
+00:18:26,490 --> 00:18:28,821
+tell the public, oh, I've just, this
+
+242
+00:18:28,821 --> 00:18:32,818
+bank has bought a huge amount of pound, dollar from this bank.
+
+243
+00:18:32,820 --> 00:18:36,580
+Guys, they don't need to tell anyone that. They can keep that between themselves.
+
+244
+00:18:37,280 --> 00:18:39,549
+Whereas here, if you're transacting
+
+245
+00:18:39,549 --> 00:18:41,818
+in crude oil, for example,
+
+246
+00:18:41,818 --> 00:18:44,087
+futures, which are a huge
+
+247
+00:18:44,087 --> 00:18:46,809
+market, e-mini S&P futures, huge
+
+248
+00:18:46,809 --> 00:18:56,792
+market, pound, dollar market, not as big, but like I said, it stays very closely aligned with the spot market, pound, dollar.
+
+249
+00:18:57,140 --> 00:19:01,580
+Every transaction, guys, has to be done through the exchange in the futures market.
+
+250
+00:19:01,580 --> 00:19:08,240
+So what happens is, you've got a queue of people here, right?
+
+251
+00:19:08,440 --> 00:19:11,520
+Let's say these are all the bids on the buy side.
+
+252
+00:19:11,840 --> 00:19:13,600
+These are all the sell side.
+
+253
+00:19:16,830 --> 00:19:19,930
+Now, this is what's so brilliant about this market, guys.
+
+254
+00:19:20,030 --> 00:19:22,170
+Whereas here, retailers are completely cut off.
+
+255
+00:19:22,250 --> 00:19:23,230
+These are the institutions.
+
+256
+00:19:24,050 --> 00:19:27,130
+Here, guys, there is, you can't tell the difference.
+
+257
+00:19:27,130 --> 00:19:31,090
+So let me give you an actual example of this.
+
+258
+00:19:31,210 --> 00:19:35,950
+Let's say you've got here seven people willing to sell, right?
+
+259
+00:19:36,490 --> 00:19:43,270
+So I've drawn four here. Let's just say it was seven, four, five, six, seven, yeah?
+
+260
+00:19:43,810 --> 00:19:46,290
+You've got seven people willing to sell, and there's a queue.
+
+261
+00:19:46,450 --> 00:19:48,959
+So this will be a queue in terms of who
+
+262
+00:19:48,959 --> 00:19:51,969
+gets filled first, who's the first person to put the offer in.
+
+263
+00:19:51,970 --> 00:19:58,410
+Guys, this could be a retailer like you and me.
+
+264
+00:19:58,770 --> 00:20:00,070
+This could be an institution.
+
+265
+00:20:01,090 --> 00:20:02,410
+This could be an institution.
+
+266
+00:20:02,790 --> 00:20:03,890
+This could be a retailer.
+
+267
+00:20:04,310 --> 00:20:05,470
+Guys, it doesn't matter.
+
+268
+00:20:06,110 --> 00:20:07,450
+Do you see here what I've put?
+
+269
+00:20:07,450 --> 00:20:12,970
+Well, one lot order equals 100 lot order from the institution.
+
+270
+00:20:13,230 --> 00:20:15,690
+You just, it doesn't matter. We don't know.
+
+271
+00:20:16,410 --> 00:20:19,730
+Everyone gets the same treatment.
+
+272
+00:20:20,390 --> 00:20:21,350
+Same on this side.
+
+273
+00:20:21,710 --> 00:20:23,690
+So can you see why it's such a beautiful market?
+
+274
+00:20:23,870 --> 00:20:27,930
+You're never going to be disadvantaged from an institution.
+
+275
+00:20:28,450 --> 00:20:30,330
+You've got equal playing field.
+
+276
+00:20:30,830 --> 00:20:33,990
+So every day I wake up, I look at the futures market
+
+277
+00:20:33,990 --> 00:20:36,096
+because I've got an equal playing field now
+
+278
+00:20:36,096 --> 00:20:38,729
+with what the institutions are doing. From my home office.
+
+279
+00:20:39,370 --> 00:20:41,510
+So this is why I say it's absolutely crucial for us to
+
+280
+00:20:41,510 --> 00:20:43,829
+have these tools, which I'm going to show you how you get later.
+
+281
+00:20:44,830 --> 00:20:46,090
+It's fully regulated.
+
+282
+00:20:47,110 --> 00:20:48,690
+Whereas here, there's no regulation.
+
+283
+00:20:48,830 --> 00:20:51,550
+What do I mean by fully regulated by an exchange?
+
+284
+00:20:52,230 --> 00:20:55,170
+So the exchange, guys, is essentially
+
+285
+00:20:55,170 --> 00:21:00,070
+watching these prices, making sure they're the same price is
+
+286
+00:21:00,070 --> 00:21:05,460
+available for everyone and that it's a 100% open and transparent market.
+
+287
+00:21:06,090 --> 00:21:06,970
+So what do I mean by that?
+
+288
+00:21:06,970 --> 00:21:09,670
+Well, here, these guys transacted with each other, didn't they?
+
+289
+00:21:10,250 --> 00:21:15,990
+As I said, two banks transacted with each other. They didn't have to publicize that information.
+
+290
+00:21:16,630 --> 00:21:19,430
+Let's say this was two banks transacting with each other.
+
+291
+00:21:19,510 --> 00:21:22,715
+Guys, the entire world has access
+
+292
+00:21:22,715 --> 00:21:26,988
+to that information because this exchange, their role
+
+293
+00:21:26,988 --> 00:21:32,329
+is full transparency over information so you can see everything.
+
+294
+00:21:33,190 --> 00:21:34,170
+There's no middleman.
+
+295
+00:21:35,170 --> 00:21:41,230
+Like I just said, there's an exchange. It's 100% price discovery.
+
+296
+00:21:41,230 --> 00:21:49,550
+So, in essence, it's 100% exchange traded. It's electronic.
+
+297
+00:21:49,930 --> 00:21:56,570
+Used to be people shouting previously and it's just full transparency.
+
+298
+00:21:56,570 --> 00:22:00,490
+So, 100% volume visibility for all.
+
+299
+00:22:01,010 --> 00:22:03,350
+So, I think that's pretty much everything.
+
+300
+00:22:04,170 --> 00:22:06,950
+Just to conclude, I've said spreads here.
+
+301
+00:22:07,810 --> 00:22:11,141
+So, in the futures market, see, the thing
+
+302
+00:22:11,141 --> 00:22:14,056
+is, I'm a bit hesitant to get
+
+303
+00:22:14,056 --> 00:22:19,469
+you guys trading on the futures market just because there is a trade-off.
+
+304
+00:22:19,470 --> 00:22:22,970
+That is that the minimum contract sizes can be slightly large
+
+305
+00:22:22,970 --> 00:22:25,955
+and that's why I still favor, especially
+
+306
+00:22:25,955 --> 00:22:28,940
+if you're just starting out, especially initially,
+
+307
+00:22:28,940 --> 00:22:31,498
+until your account size grows, it's
+
+308
+00:22:31,498 --> 00:22:34,483
+best to stick to something like MetaTrader 4.
+
+309
+00:22:35,770 --> 00:22:36,290
+Okay, guys?
+
+310
+00:22:36,350 --> 00:22:37,070
+So, as I said,
+
+311
+00:22:37,130 --> 00:22:40,130
+I've got nothing against MetaTrader 4. I think it's actually quite good.
+
+312
+00:22:40,770 --> 00:22:45,070
+The only downside is that your spreads may be slightly wider in MetaTrader 4
+
+313
+00:22:45,070 --> 00:22:48,190
+and I've put spreads here because there is an advantage in the futures market.
+
+314
+00:22:48,190 --> 00:22:52,490
+It's very tight spreads and everyone gets the same spread.
+
+315
+00:22:52,890 --> 00:22:57,910
+A broker has a different function to what the broker here does.
+
+316
+00:22:58,310 --> 00:23:01,743
+The broker here in the spot market can set the
+
+317
+00:23:01,743 --> 00:23:03,803
+spread as they wish within reason,
+
+318
+00:23:03,803 --> 00:23:06,549
+otherwise they themselves are going to get arbitraged.
+
+319
+00:23:08,350 --> 00:23:11,905
+Whereas the broker in the futures market is literally
+
+320
+00:23:11,905 --> 00:23:14,275
+there to provide you execution. That's
+
+321
+00:23:14,275 --> 00:23:17,830
+all. They're not allowed to actually change this spread.
+
+322
+00:23:17,830 --> 00:23:20,090
+So, the spread will be the same for both people.
+
+323
+00:23:20,490 --> 00:23:24,010
+So, let's just conclude anyway so we can move on.
+
+324
+00:23:24,210 --> 00:23:26,670
+Our tools section.
+
+325
+00:23:27,590 --> 00:23:33,410
+So, as part of our business plan, would you agree, guys, we need access to volume information?
+
+326
+00:23:33,810 --> 00:23:37,070
+Absolutely crucial because we want all six pieces of information.
+
+327
+00:23:37,670 --> 00:23:40,270
+We don't want to start our business handicapped.
+
+328
+00:23:40,270 --> 00:23:44,806
+It's literally like going into a personal training job,
+
+329
+00:23:44,806 --> 00:23:48,334
+walking into that gym and there's absolutely
+
+330
+00:23:48,334 --> 00:23:52,870
+no dumbbells, no machines, nothing, just an empty floor.
+
+331
+00:23:53,210 --> 00:23:55,610
+How do you expect to succeed? You're not going to.
+
+332
+00:23:56,350 --> 00:23:58,790
+So, I hope you agree with me. That's absolutely crucial
+
+333
+00:23:58,790 --> 00:24:01,670
+and you've also included it as part of your business plan.
+
+334
+00:24:01,670 --> 00:24:03,054
+So, we'll move on now
+
+335
+00:24:03,054 --> 00:24:04,992
+and then we'll just conclude very quickly
+
+336
+00:24:04,992 --> 00:24:07,207
+and move on to the next module and
+
+337
+00:24:07,207 --> 00:24:12,468
+get some exciting stuff going with the time in sales and really get you guys into the raw data.
+
+338
+00:24:12,910 --> 00:24:13,390
+Cheers, guys.
+
+339
+00:24:13,490 --> 00:24:14,310
+See you in the next slide.
+
+===== END AFTER_SEGMENT =====

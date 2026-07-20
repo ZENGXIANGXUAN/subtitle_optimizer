@@ -1,0 +1,912 @@
+===== AFTER_OPTIMIZE (182 entries) =====
+1
+00:00:00,000 --> 00:00:01,375
+大家好，我是Brian。
+What's going on, guys? Brian's here.
+
+2
+00:00:01,375 --> 00:00:05,020
+今天是2021年12月30日，周四，市场开盘。
+Today is Thursday, December 30th, 2021, and the market is open.
+
+3
+00:00:05,020 --> 00:00:06,795
+原本我计划和Mike连线，
+Now, I was planning to hop on Mike
+
+4
+00:00:06,795 --> 00:00:08,570
+给大家演示一下
+just to show you guys certain things around
+
+5
+00:00:08,570 --> 00:00:11,454
+量化交易应用期权标签页的新功能，
+the new features for the options tab on the Quant Trading App site,
+
+6
+00:00:11,455 --> 00:00:14,695
+但不确定大家是否能在线观看直播，
+but I don't know how many of you would be available to actually show you guys this live,
+
+7
+00:00:14,695 --> 00:00:16,351
+所以我决定录个
+so I figured I'd just record a very
+
+8
+00:00:16,351 --> 00:00:18,007
+短视频，
+quick video, and then you guys can check
+
+9
+00:00:18,007 --> 00:00:19,870
+大家有空时可以随时查看。
+it whenever you're available and whenever you have time.
+
+10
+00:00:19,870 --> 00:00:21,254
+这里有一个非常重要的功能，
+So something that's really important here or
+
+11
+00:00:21,254 --> 00:00:24,219
+昨晚进行了小规模更新，效果很不错。
+pretty neat to see, there was a little bit of a soft update last night.
+
+12
+00:00:24,220 --> 00:00:29,875
+现在点击本周到期，也就是明天到期的行权价格，
+If we click the strike prices now for this week's expiration, so tomorrow's expiration,
+
+13
+00:00:29,875 --> 00:00:34,740
+未平仓量和权利金最高的行权价会高亮显示。
+you guys can now have the ones that are the highest open interest volume and premium will be highlighted.
+
+14
+00:00:34,740 --> 00:00:37,061
+特别之处在于，苹果的这三个行权价
+What's unique here is we're seeing that all three of
+
+15
+00:00:37,061 --> 00:00:38,453
+完全对齐，
+these line up for this strike
+
+16
+00:00:38,453 --> 00:00:40,774
+我们可以看到苹果的行权价格。
+price for Apple, and we can see Apple's strike price.
+
+17
+00:00:40,775 --> 00:00:43,496
+现在切换到图表标签页，
+So if we actually come to the charts
+
+18
+00:00:43,496 --> 00:00:45,537
+调出苹果图表，
+tab and pull up Apple, let's
+
+19
+00:00:45,537 --> 00:00:48,939
+先放大一下，然后找到苹果。
+maximize this for a second, and let's go to Apple.
+
+20
+00:00:48,940 --> 00:00:51,435
+目前大家已经知道
+We, at this point, already are aware of
+
+21
+00:00:51,435 --> 00:00:55,489
+它的交易情况，价格被钉住在这里。
+how it's been trading because it's been stuck and getting pinned right here.
+
+22
+00:00:55,490 --> 00:00:58,700
+现在周阻力位大概在180，
+Now we have the weekly resistance level, which is pretty much 180,
+
+23
+00:00:58,700 --> 00:00:59,920
+这里出现汇聚。
+so there's confluence here.
+
+24
+00:00:59,920 --> 00:01:01,998
+之前我在群里分享过，
+And for a trade, I had posted in
+
+25
+00:01:01,998 --> 00:01:04,076
+可以利用这种情况
+the chat, like you can capitalize on using
+
+26
+00:01:04,076 --> 00:01:06,414
+做蝶式价差之类的策略，
+some sort of butterfly spread or something like that,
+
+27
+00:01:06,415 --> 00:01:11,595
+价格被钉住时，这个价差当时开仓约20多美分。
+where you're capitalizing on price getting pinned, and that spread opened around 20-something cents here.
+
+28
+00:01:11,595 --> 00:01:12,740
+我记得大约是30美分，
+I think it was around 30 cents,
+
+29
+00:01:12,740 --> 00:01:15,410
+上次看时涨到约90美分。
+and last I checked, it's going for like 90 cents or something like that.
+
+30
+00:01:15,410 --> 00:01:18,352
+仅凭这个策略就能获得3倍收益
+So that's a 3x return just from having this type
+
+31
+00:01:18,352 --> 00:01:21,294
+凭借这些信息，其实大家中已有人注意到
+of information and noticing one of you guys actually were
+
+32
+00:01:21,294 --> 00:01:25,119
+这个行权价的权利金有多高。
+the ones to point out how much premium there was in this strike.
+
+33
+00:01:25,120 --> 00:01:28,172
+现在需要注意的是，
+Now, something to take note of is the fact that
+
+34
+00:01:28,172 --> 00:01:31,224
+这里的权利金确实不少，但182.50以下
+there's a decent amount of premium here, but then past
+
+35
+00:01:31,224 --> 00:01:36,413
+的未平仓量和权利金都远低于这两个行权价。
+182.50, there really isn't anything down here in terms of open interest or premium relative to these two.
+
+36
+00:01:36,720 --> 00:01:39,176
+所以这是做空时需要关注的一个点，
+So that's one thing you want to look out for
+
+37
+00:01:39,176 --> 00:01:41,141
+如果你想寻找额外的汇聚信号，
+if you're looking for extra confluence to look
+
+38
+00:01:41,141 --> 00:01:46,299
+或者用这些信息抓住做空或钉住价格的机会。
+for a short trade, or if you're using that type of information to catch this short, or some sort of pinning.
+
+39
+00:01:46,300 --> 00:01:49,092
+价格在某个水平被钉住的时间越长，
+Now, the longer something has been pinned at a level
+
+40
+00:01:49,092 --> 00:01:51,884
+周五到期前仍可能突破，
+on a Friday, it could still very much so break
+
+41
+00:01:51,884 --> 00:01:58,584
+因为周五到期时，期权不再有时间价值，只是变成实值。
+out because at that point on Friday, it has no longer any extrinsic value in it. It's just kind of going in the money.
+
+42
+00:01:58,585 --> 00:02:04,240
+此时做市商已从时间衰减中获取了大量收益，
+And at that point, the market makers would have made a decent amount just off of the extrinsic value, which is the time decay.
+
+43
+00:02:04,240 --> 00:02:08,625
+而且可能已经开始出售下周的期权。
+And not to mention, they probably already started selling the options for next week.
+
+44
+00:02:08,625 --> 00:02:13,340
+对比下来，权利金差异其实不大，
+And comparing the two, there's not actually that much premium in terms of a difference.
+
+45
+00:02:13,340 --> 00:02:17,085
+只有1700万或17000。
+It's only was at 17 million. Uh, or 17,000.
+
+46
+00:02:17,085 --> 00:02:18,685
+差异确实不大，
+So not that much of a difference,
+
+47
+00:02:18,685 --> 00:02:19,992
+不过大家可以继续观察，
+I guess, but then you can just start
+
+48
+00:02:19,992 --> 00:02:22,279
+但我不会把问题复杂化。
+looking out, but I wouldn't even, you know, complicate it that much for yourself.
+
+49
+00:02:22,280 --> 00:02:23,210
+直接看这个即可：
+I would just take a look at this.
+
+50
+00:02:23,210 --> 00:02:24,515
+这三个行权价排列整齐，
+The fact that these three are lining up,
+
+51
+00:02:24,515 --> 00:02:29,655
+如果你寻找做空机会，且基于某种K线形态，
+if you were looking for a short trade and you had reasons because of, uh, some sort of candlestick patterns,
+
+52
+00:02:29,655 --> 00:02:31,168
+或某种回撤形态，
+some sort of retracements that you
+
+53
+00:02:31,168 --> 00:02:32,681
+你想做空，
+were looking to get short, some,
+
+54
+00:02:32,681 --> 00:02:36,213
+或影线拒绝、倒锤线等，直接入场即可。
+any type of wick rejections, inverted hammer, then by all means, take the trade.
+
+55
+00:02:36,215 --> 00:02:41,135
+特斯拉的情况就变得有趣了。
+Now where things start to get a little bit interesting is if we come to something like Tesla. Tesla.
+
+56
+00:02:41,135 --> 00:02:44,335
+注意，当所有信号对齐时，
+So take note of that's when everything lines up here, right?
+
+57
+00:02:44,335 --> 00:02:49,240
+看特斯拉本周的数据，大家注意这个点，
+If we come to Tesla, we go to, we can look at this week, take a, take note of this.
+
+58
+00:02:49,240 --> 00:02:50,745
+这里是权利金最高的行权价。
+This is where the highest premium is.
+
+59
+00:02:50,745 --> 00:02:51,591
+大家立刻就能看到，
+And right away, you
+
+60
+00:02:51,591 --> 00:02:52,861
+这里
+guys can see that this is,
+
+61
+00:02:52,861 --> 00:02:54,131
+这已经极大提升便利性
+this is already a huge convenience
+
+62
+00:02:54,131 --> 00:02:56,883
+至少对我来说很关键，因为我之前总是上下扫描
+factor, at least for me, because usually I'm always scanning up and down.
+
+63
+00:02:56,885 --> 00:02:57,920
+寻找这些信息
+I'm looking for this.
+
+64
+00:02:57,920 --> 00:02:58,971
+而这就是我之前
+And this is what I
+
+65
+00:02:58,971 --> 00:03:00,443
+在thinkorswim上常做的事
+used to do on think of swim
+
+66
+00:03:00,443 --> 00:03:02,126
+但现在在这里直接高亮显示
+a lot, but just coming here and having
+
+67
+00:03:02,126 --> 00:03:06,123
+到期日的关键信息一目了然，这点我特别喜欢
+it light up for me real quick for the expiration is already something that I'm, I know I love.
+
+68
+00:03:06,125 --> 00:03:09,850
+往下滚动可以看到未平仓量更多
+And if we scroll down right here, we can notice that there's a lot more open interest.
+
+69
+00:03:09,850 --> 00:03:10,985
+这是未平仓量最高的行权价格
+This is the highest open interest.
+
+70
+00:03:10,985 --> 00:03:15,370
+未平仓量集中在1200，但权利金最高在这里
+So the open interest is all the way at 1200, but yet there's the most amount of premium here.
+
+71
+00:03:15,370 --> 00:03:16,850
+这就是分析的思路
+So this is how you would think about this.
+
+72
+00:03:16,850 --> 00:03:23,590
+如果1100被突破，可能会继续上涨
+It's like if 1100 was to break, it could go a little bit higher because there is open interest higher.
+
+73
+00:03:23,590 --> 00:03:25,920
+因为更高价位有未平仓量
+People are interested in that price.
+
+74
+00:03:25,920 --> 00:03:27,885
+这是解读这些信息的一种方式
+That's one way to interpret this information.
+
+75
+00:03:27,885 --> 00:03:29,070
+如果我们再看远一点
+If we go a little bit
+
+76
+00:03:29,070 --> 00:03:30,255
+因为这些只是周度期权
+further out, because these are just
+
+77
+00:03:30,255 --> 00:03:32,428
+所以权重自然不高
+weekly options. So obviously there's not that much weight on them.
+
+78
+00:03:32,430 --> 00:03:36,920
+来看月度期权，情况基本相同
+So let's pay attention to the monthly and see if we notice anything. And it's essentially the same thing.
+
+79
+00:03:36,920 --> 00:03:38,505
+这里是成交量和权利金
+This is where the, there's the
+
+80
+00:03:38,505 --> 00:03:40,090
+最集中的地方
+most amount of volume and premium
+
+81
+00:03:40,090 --> 00:03:42,468
+但未平仓量其实在这里
+here, but the open interest is actually down here.
+
+82
+00:03:42,470 --> 00:03:45,555
+差异并不特别显著
+Now, there is not a huge significance in terms of the difference.
+
+83
+00:03:45,555 --> 00:03:46,915
+这是未平仓量最高的
+That's the highest open interest,
+
+84
+00:03:46,915 --> 00:03:48,819
+看这里的未平仓量
+but look, this is the open interest
+
+85
+00:03:48,819 --> 00:03:51,267
+同样在1200行权价格
+for this down here at the same 1200 strike price.
+
+86
+00:03:51,540 --> 00:03:56,875
+仅多出不到2000，百分比变化不大
+It's only about, you know, less than 2000 more. And that's not that large of a percentual change.
+
+87
+00:03:56,875 --> 00:04:00,640
+要留意这些细节寻找线索
+So you want to just look for little things like that to see if you spot clues,
+
+88
+00:04:00,640 --> 00:04:02,698
+因为如果特斯拉涨到1100并突破
+because if Tesla got to 1100 and it
+
+89
+00:04:02,698 --> 00:04:05,050
+这里的不同之处在于
+blew past it, what makes this a little
+
+90
+00:04:05,050 --> 00:04:08,284
+更高价位还有未平仓量
+bit different here is knowing that there is open interest higher.
+
+91
+00:04:08,580 --> 00:04:11,316
+这可以理解为
+The way this would be interpreted is it's
+
+92
+00:04:11,316 --> 00:04:14,052
+某种价差策略，很可能
+some kind of spread. It's more than likely
+
+93
+00:04:14,052 --> 00:04:20,550
+100或1100行权价的看涨期权被卖出，然后买入更高行权价的看涨期权对冲风险
+the 100, the 1100 call was shorted and they bought this call up here to offset the risk as a hedge.
+
+94
+00:04:21,235 --> 00:04:22,575
+这是其中一种解读方式
+That's one way it can be interpreted.
+
+95
+00:04:22,575 --> 00:04:26,115
+期权链中，这类信息有多种解读方式
+The options chain, there's multiple different ways to read this type of stuff.
+
+96
+00:04:26,115 --> 00:04:28,170
+所以如果你们现在开始分析
+So if you're now starting out looking at
+
+97
+00:04:28,170 --> 00:04:32,280
+目标是让问题简单化，只需寻找小线索
+this, the objective is to keep it simple for yourself and just look for little clues.
+
+98
+00:04:32,280 --> 00:04:34,930
+慢慢你们就会发现一些有意思的细节
+And eventually you'll just start spotting little neat things.
+
+99
+00:04:34,930 --> 00:04:37,597
+现在，如果看到这个
+Now, if we saw this right here and
+
+100
+00:04:37,597 --> 00:04:40,264
+这个未平仓量，然后向下滚动
+this open interest, but then we scroll down
+
+101
+00:04:40,264 --> 00:04:43,265
+看到这里的未平仓量是60000
+here and we see the open interest here was 60,000.
+
+102
+00:04:43,600 --> 00:04:45,170
+这完全不同
+That's completely different.
+
+103
+00:04:45,170 --> 00:04:47,500
+这是需要注意的点，可能要截图保存
+That's something that you take note of. You probably screenshot this,
+
+104
+00:04:47,500 --> 00:04:49,890
+记下笔记，留意
+put this down in your notes, be aware
+
+105
+00:04:49,890 --> 00:04:51,981
+特斯拉到1100时
+of when Tesla gets to 1100, that there's
+
+106
+00:04:51,981 --> 00:04:54,371
+更高行权价的未平仓量几乎是它的三倍
+almost three times more open interest for a
+
+107
+00:04:54,371 --> 00:04:59,450
+很可能在到期前突破这个价位
+higher strike price, that it's more than likely going to blow past this by this expiration here.
+
+108
+00:04:59,750 --> 00:05:01,380
+所以要跟踪
+So you want to, you know, track
+
+109
+00:05:01,380 --> 00:05:03,010
+记录这类信息
+and take note and keep, keep that
+
+110
+00:05:03,010 --> 00:05:04,407
+把这类信息存在脑海里
+type of information in your back
+
+111
+00:05:04,407 --> 00:05:07,899
+也可以在Discord分享，因为这就是目的
+pocket, as well as share it in a discord, because that's kind of the intention.
+
+112
+00:05:07,900 --> 00:05:14,195
+大家一起用数据思考，抓住这些量化交易机会
+It's like all of us thinking properly and using the data to our advantage and taking these quantitative trades.
+
+113
+00:05:14,195 --> 00:05:15,715
+这就是特斯拉的情况
+This is Tesla right here.
+
+114
+00:05:15,715 --> 00:05:17,280
+这是1100行权价
+This was, this is the 1100
+
+115
+00:05:17,280 --> 00:05:19,159
+可以看到它
+strike and we can see how
+
+116
+00:05:19,159 --> 00:05:22,290
+本周表现为明显阻力位
+it acted as resistance, a decent amount for this week.
+
+117
+00:05:22,605 --> 00:05:26,760
+目前看暂时没有继续上涨的意图
+And it's not looking like it has much intention to go much higher for now,
+
+118
+00:05:26,760 --> 00:05:28,599
+因为即使我们看到
+because again, even though we looked
+
+119
+00:05:28,599 --> 00:05:31,051
+未平仓量在更高价位
+at the open interest is higher all the
+
+120
+00:05:31,051 --> 00:05:35,343
+远超两个标准差，但这里的未平仓量和那里的一样
+way past two Sigma, it's the same open interest here as it is here.
+
+121
+00:05:35,345 --> 00:05:39,895
+但这未必能充分推动特斯拉大幅上涨
+And that's not necessarily enough of a driving factor for Tesla to go much higher.
+
+122
+00:05:39,895 --> 00:05:42,140
+我目前没有足够的历史数据
+I don't have much of the historical data on this.
+
+123
+00:05:42,140 --> 00:05:46,740
+暂时还看不到它过去的交易表现
+We can't see how this would have, you know, traded out in the past yet.
+
+124
+00:05:46,740 --> 00:05:48,872
+之后我会获取这些信息
+And we will, I will get that information
+
+125
+00:05:48,872 --> 00:05:50,738
+目前
+eventually right now, anything moving forward, it
+
+126
+00:05:50,738 --> 00:05:52,604
+正在跟踪未平仓量和成交量
+is tracking the open interest in volume.
+
+127
+00:05:52,605 --> 00:05:55,783
+理想状态是把它标注在
+So I would like to have it ideally plotted on
+
+128
+00:05:55,783 --> 00:05:59,279
+图表上，以及图表下方区域
+the charts for us, as well as below the charts page.
+
+129
+00:05:59,280 --> 00:06:03,385
+还想保存当时期权链的快照
+I want to have kind of snapshots for what the options chain look like at that point in time.
+
+130
+00:06:03,385 --> 00:06:05,474
+就像现在
+It's just like how we can go back
+
+131
+00:06:05,474 --> 00:06:07,040
+可以回溯查看
+in time right now and view
+
+132
+00:06:07,040 --> 00:06:09,129
+量化交易应用的历史价位数据
+previous dates for the quant trading app levels.
+
+133
+00:06:09,130 --> 00:06:11,680
+这就是本期视频的内容
+So that's this brief video here.
+
+134
+00:06:11,680 --> 00:06:15,345
+大家留意这些细节，很容易发现
+Again, just pay attention to little things like this and how easy it is to spot it out.
+
+135
+00:06:15,345 --> 00:06:16,948
+如果你们发现什么
+And if you spot anything,
+
+136
+00:06:16,948 --> 00:06:19,193
+发到Discord
+again, post it in discord and let's
+
+137
+00:06:19,193 --> 00:06:21,117
+我们一起
+all have a collaborative, you know,
+
+138
+00:06:21,117 --> 00:06:24,003
+协作寻找这类好机会
+mentality towards looking for these types of great opportunities.
+
+139
+00:06:24,005 --> 00:06:28,155
+现在的交易大家都清楚
+And you guys know the trade, which we're in right now for shop.
+
+140
+00:06:28,155 --> 00:06:30,850
+先看看这里有没有线索
+I'll end up on this and let's just see if we see anything here.
+
+141
+00:06:30,850 --> 00:06:33,810
+1450行权价格的未平仓量不错
+So decent open interest at 1450.
+
+142
+00:06:33,810 --> 00:06:37,825
+成交量和权利金方面，这里约900
+I mean, it's the volume and premium. This is about 900.
+
+143
+00:06:37,825 --> 00:06:41,820
+往下拉，1500美元行权价格的未平仓量是前面的两倍
+If we scroll down, this is two times as much open interest here at the $1,500 strike price.
+
+144
+00:06:41,820 --> 00:06:45,400
+这是0天到期，即明天到期
+And this is for the zero days, one day until expiration.
+
+145
+00:06:45,400 --> 00:06:50,065
+再看远一点，权利金最高在这里
+Let's go a little bit further out and we can see, okay, so the most amount of premium is here.
+
+146
+00:06:50,065 --> 00:06:57,025
+今日成交量最高的是1500，但未平仓量在哪？
+Most volume traded today is 1500, but look at the open interest. Where is it?
+
+147
+00:06:57,025 --> 00:06:57,935
+这是我第一次看到
+First time seeing this.
+
+148
+00:06:57,935 --> 00:06:58,315
+哇
+Wow.
+
+149
+00:06:58,315 --> 00:06:58,810
+太棒了
+Great.
+
+150
+00:06:58,810 --> 00:06:59,495
+了不起
+Amazing.
+
+151
+00:06:59,495 --> 00:07:01,895
+这能支持你们的看涨逻辑
+So this can kind of help your bullish case.
+
+152
+00:07:01,895 --> 00:07:03,087
+当然，这并不是
+Again, this is not
+
+153
+00:07:03,087 --> 00:07:05,472
+入场的唯一理由，但
+the only reason to take the trade, but
+
+154
+00:07:05,472 --> 00:07:09,348
+如果结合其他因素进入交易
+if you combine this with other things and when you're entering your trade,
+
+155
+00:07:09,350 --> 00:07:10,350
+这些是波段交易
+again, these are swing trades.
+
+156
+00:07:10,350 --> 00:07:11,160
+不是剥头皮
+These are not scalps.
+
+157
+00:07:11,160 --> 00:07:12,375
+也不是动能交易
+These are not momentum based trades.
+
+158
+00:07:12,375 --> 00:07:13,641
+显然，如果只是想
+Obviously, you don't have time to look at
+
+159
+00:07:13,641 --> 00:07:14,749
+抓小行情，
+all of this if you're just trying
+
+160
+00:07:14,749 --> 00:07:15,699
+你们没时间看这些
+to capitalize on a small move.
+
+161
+00:07:15,700 --> 00:07:17,965
+但当价格处于买入区
+But when something is in the buy zone and you
+
+162
+00:07:17,965 --> 00:07:19,777
+看到这些信号时，
+see this type of stuff and you start
+
+163
+00:07:19,777 --> 00:07:21,362
+你开始想，
+saying like, oh, can it go from
+
+164
+00:07:21,362 --> 00:07:25,893
+能否从买入区涨到卖出区，这种情况在市场动能强劲时会出现
+the buy zone to the sell zone, which we've seen happen when there's a lot of momentum in the market.
+
+165
+00:07:25,895 --> 00:07:31,415
+今天是周四，只剩一天，但有可能
+It's only one day left for shop to make it up here because it's Thursday, but it is possible.
+
+166
+00:07:31,415 --> 00:07:34,199
+这时候要考虑
+And then you want to start thinking instead of doing
+
+167
+00:07:34,199 --> 00:07:36,426
+别只盯周线，
+it for the weekly, maybe you should look
+
+168
+00:07:36,426 --> 00:07:38,375
+可以看看两倍标准差，
+at two sigma and then just round
+
+169
+00:07:38,375 --> 00:07:40,880
+然后取整到1600
+this up because it's shop. So just call this 1,600.
+
+170
+00:07:42,880 --> 00:07:44,699
+这就是波段交易的思路
+This is how you can think about a
+
+171
+00:07:44,699 --> 00:07:46,063
+因为周线要到1600
+swing trade because for the weekly,
+
+172
+00:07:46,063 --> 00:07:47,882
+得有催化剂推动
+it's not going 1,600 unless a catalyst comes out.
+
+173
+00:07:48,110 --> 00:07:50,034
+但波段交易更可能
+But for a swing trade, it could more
+
+174
+00:07:50,034 --> 00:07:51,718
+逐步涨至1600，
+than likely make its way up to
+
+175
+00:07:51,718 --> 00:07:54,123
+途中阻力很可能被突破
+1,600 and any resistance along the way is likely to break.
+
+176
+00:07:54,365 --> 00:07:58,065
+所以可以规划更大的交易
+So you can start thinking and planning out a bigger picture trade.
+
+177
+00:07:58,065 --> 00:08:00,632
+此时如果在买入区
+And at this point, if you're buying 1,600
+
+178
+00:08:00,632 --> 00:08:03,199
+买入1600看涨期权
+calls back here when shop is in
+
+179
+00:08:03,199 --> 00:08:05,032
+这些期权
+the buy zone, those calls
+
+180
+00:08:05,032 --> 00:08:08,332
+价格很低，潜在收益很高
+are dirt cheap, and you're ready up pretty nice.
+
+181
+00:08:08,700 --> 00:08:11,220
+希望这些内容能帮到大家，有问题随时提。
+Hopefully this helps, and let me know if you have any questions.
+
+182
+00:08:11,220 --> 00:08:11,540
+先这样。
+Later.
+
+===== END AFTER_OPTIMIZE =====

@@ -1,0 +1,3041 @@
+===== AFTER_OPTIMIZE (608 entries) =====
+1
+00:00:00,830 --> 00:00:05,630
+第12讲：反转成交量分析策略。
+Part 12. Reversal Volume Profiling Strategies.
+
+2
+00:00:06,830 --> 00:00:08,173
+Jack Schwager 曾经
+Jack Schwager once
+
+3
+00:00:08,173 --> 00:00:11,307
+说了一句箴言：如果你无法承受小亏损，
+said, Moral. If you can't take a
+
+4
+00:00:11,307 --> 00:00:17,128
+迟早会遭遇灭顶之灾。
+small loss, sooner or later you will take the mother of all losses.
+
+5
+00:00:19,170 --> 00:00:26,500
+各位，欢迎回到第12讲，这不仅是第3模块的最后一部分，也是整个课程的收官之作。
+Hey guys, welcome back to part 12, the final section of not just module 3, but of this course.
+
+6
+00:00:26,500 --> 00:00:31,360
+我们首先要讨论的是一种不确定性。
+What we're going to talk about firstly is a certain uncertainty.
+
+7
+00:00:31,360 --> 00:00:33,448
+我特别喜欢讲这个话题，
+Now I really enjoy talking about this
+
+8
+00:00:33,448 --> 00:00:35,835
+因为我认为有很多交易者
+topic because I think there are a lot
+
+9
+00:00:35,835 --> 00:00:38,819
+实际上害怕承担风险。
+of traders out there that actually fear to take risk.
+
+10
+00:00:38,820 --> 00:00:41,454
+我来告诉你，
+Let me tell you, the most successful
+
+11
+00:00:41,454 --> 00:00:44,088
+我认识的最成功的交易者，以及整个行业里的顶尖交易者，
+traders I know and that are in
+
+12
+00:00:44,088 --> 00:00:47,098
+他们都不怕亏钱。
+the industry are not afraid to lose money.
+
+13
+00:00:47,100 --> 00:00:48,720
+原因很简单。
+The reason is simple.
+
+14
+00:00:48,720 --> 00:00:54,385
+如果他们知道胜算在自己这一边，长期来看终会赚钱。
+If they know the odds are in their favor, in the long run they are going to make money.
+
+15
+00:00:54,385 --> 00:01:00,565
+所以，为一个高概率的结果而承担今天的风险，逻辑上是合理的。
+So risking money today for an outcome that's highly likely makes logical sense.
+
+16
+00:01:00,565 --> 00:01:04,127
+而解读市场信息流的关键，
+Now the key to unraveling the flux of
+
+17
+00:01:04,127 --> 00:01:07,689
+在于结合你自身不断演变的情绪认知结构来理解，
+market generated information as understood from the context
+
+18
+00:01:07,689 --> 00:01:17,484
+在于接受一个事实：所有决策都存在不确定性。
+of your own evolving emotional cognitive makeup is to accept the fact that all decisions are made under some degree of uncertainty.
+
+19
+00:01:17,485 --> 00:01:19,220
+什么都不确定。
+Nothing is certain.
+
+20
+00:01:19,220 --> 00:01:22,574
+解读市场信息流的关键，
+The key to unraveling the flux of market
+
+21
+00:01:22,574 --> 00:01:25,928
+在于结合你自身不断演变的情绪认知结构来理解，
+generated information, as understood from the context of
+
+22
+00:01:25,928 --> 00:01:34,733
+在于接受一个事实：所有决策都存在不确定性。
+your own evolving emotional cognitive makeup is to accept the fact that all decisions are made under some degree of uncertainty.
+
+23
+00:01:34,735 --> 00:01:37,365
+各位，什么都不确定，这就是重点。
+Nothing is certain guys, that's the point.
+
+24
+00:01:37,365 --> 00:01:43,340
+生活中没有什么是确定的，更别说任何一笔交易的成功了。
+Nothing in life is even certain, let alone the certainty of being successful on any given trade.
+
+25
+00:01:43,340 --> 00:01:47,370
+这就是人性的根本所在，
+That is where the fundamental nature of humanity is,
+
+26
+00:01:47,370 --> 00:01:48,890
+什么都不确定。
+is nothing is certain.
+
+27
+00:01:48,890 --> 00:01:52,563
+然而，一个灵活的思维，如果经过适当的训练和准备，
+The agile mind, however, when properly trained and
+
+28
+00:01:52,563 --> 00:01:57,154
+能够在不断演变的市场信息流中，
+prepared, can discern in the elegant array of evolving market
+
+29
+00:01:57,154 --> 00:02:01,745
+发现偶尔出现的模式，从而执行交易，
+generated information, occasional patterns that enable the execution of trades
+
+30
+00:02:01,745 --> 00:02:04,959
+这些交易能以更小的风险获取更大的回报。
+that offer greater reward with diminished risk.
+
+31
+00:02:04,960 --> 00:02:08,655
+这精准地总结了其中的精髓。
+That summarizes it quite beautifully.
+
+32
+00:02:08,655 --> 00:02:13,450
+本质上，它想说的是：交易中没有什么是确定的，永远都不会确定。
+In essence, what it's saying is that nothing is certain, nothing will ever be certain in trading.
+
+33
+00:02:13,450 --> 00:02:16,271
+但通过大量的练习，
+But, with a lot of practice and
+
+34
+00:02:16,271 --> 00:02:23,124
+以及大量有针对性的、刻意的训练，你才能训练自己的思维去接受这种风险。
+a lot of specific deliberate approach, you'll be able to teach your mind to accept this risk.
+
+35
+00:02:23,125 --> 00:02:27,631
+而要做到这一点，关键在于理解：
+And the way you do this is understanding that there are higher
+
+36
+00:02:27,631 --> 00:02:30,635
+存在一些高概率的结果，
+probability outcomes that you can learn, such as
+
+37
+00:02:30,635 --> 00:02:32,888
+比如我正在和你们一起开发的策略。
+the strategies I'm developing with you.
+
+38
+00:02:34,010 --> 00:02:37,831
+注意，如果你能接受并相信，
+Note, if you can come to accept and trust that
+
+39
+00:02:37,831 --> 00:02:41,652
+你的策略会在长期内有效，
+your strategies will work over time and the probabilities on
+
+40
+00:02:41,652 --> 00:02:45,090
+胜算在你这一边，
+your favor, you will then also learn to accept
+
+41
+00:02:45,090 --> 00:02:48,528
+那么你也会学会接受风险，并承担必要的风险去获得成功。
+risk and take the required risk to achieve success.
+
+42
+00:02:50,370 --> 00:02:56,810
+我认为James F. Dalton对‘确定的不确定性’这一概念做了很好的总结。
+I think James F. Dalton summarizes this concept of a certain uncertainty quite nicely.
+
+43
+00:02:56,810 --> 00:02:59,863
+他说，要想成功，
+He says, to be successful, you have to
+
+44
+00:02:59,863 --> 00:03:02,916
+你必须成为这个游戏的终身学习者，
+become a lifelong student of the game, immersed
+
+45
+00:03:02,916 --> 00:03:07,114
+以开放的心态和求知的精神，深入市场。
+in the markets with an open mind and an inquisitive spirit.
+
+46
+00:03:07,115 --> 00:03:10,083
+当然，你也可以选择当一个旁观者，
+Of course, you can also choose to be
+
+47
+00:03:10,083 --> 00:03:13,051
+一个知道很多
+a spectator, someone who knows a lot of
+
+48
+00:03:13,051 --> 00:03:16,390
+有趣事实的人，能背诵各种统计数据。
+interesting facts, able to recite all kinds of statistics.
+
+49
+00:03:16,390 --> 00:03:21,285
+但事实依然是，旁观者无法参与游戏。
+But the fact remains, spectators can't play the game.
+
+50
+00:03:21,285 --> 00:03:25,172
+想成为交易者的你和旁观者的区别在于是否
+The difference between a spectator and you who wants to
+
+51
+00:03:25,172 --> 00:03:29,059
+拥有承担必要风险的能力和心态，
+become a trader is whether or not you have the
+
+52
+00:03:29,059 --> 00:03:32,169
+ability and the mindset to be able to
+
+53
+00:03:32,169 --> 00:03:35,668
+以实现预期的结果。
+take the necessary risk to achieve the probable outcomes.
+
+54
+00:03:37,930 --> 00:03:39,855
+在第12讲的下一部分，
+In the next section of part 12,
+
+55
+00:03:39,855 --> 00:03:43,710
+我们要聊聊我最喜欢的交易话题之一。
+we're going to talk about one of my favorite parts of trading.
+
+56
+00:03:43,710 --> 00:03:47,925
+那就是‘错误’这个概念。
+And that is the idea that there is such a thing as wrong.
+
+57
+00:03:47,925 --> 00:03:51,027
+我要告诉你们的是，
+Now, what I'll tell you is that the idea of
+
+58
+00:03:51,027 --> 00:03:53,509
+一笔交易是对是错，或者一个策略是对是错，
+a trade being wrong or right or a
+
+59
+00:03:53,509 --> 00:04:00,024
+这种想法通常出现在那些认为市场在某种程度上是二元的交易者身上。
+strategy being wrong or right, it tends to be amongst traders who believe that the markets are binary in a sense.
+
+60
+00:04:00,025 --> 00:04:02,438
+而这，再次说明，可能源于
+And this, again, comes from probably a lot
+
+61
+00:04:02,438 --> 00:04:04,550
+这通常来自教科书中的内容，
+of the teaching you find in textbooks,
+
+62
+00:04:04,550 --> 00:04:08,774
+以及各种课程，还有所谓的市场大师们的言论。
+as well as courses and as well as the so-called market gurus out there.
+
+63
+00:04:08,775 --> 00:04:13,540
+现在，你要理解的关键一点是：不存在所谓的‘错误策略’。
+Now, the important thing to understand is there is no such thing as a wrong strategy.
+
+64
+00:04:13,540 --> 00:04:18,720
+只有高概率成功的策略，和低概率成功的策略。
+There is a strategy with a high probability outcome and a strategy with a low probability outcome.
+
+65
+00:04:18,720 --> 00:04:20,895
+这一点非常重要。
+And that's important to understand.
+
+66
+00:04:20,895 --> 00:04:25,595
+记住，交易的目标不是对错。
+Remember, the objective of trading is not to be wrong or right.
+
+67
+00:04:25,595 --> 00:04:28,745
+交易的目标是赚钱。
+The objective of trading is to make money.
+
+68
+00:04:28,745 --> 00:04:32,235
+当然，你可能会开发出一些不太合理的策略。
+Now, you can develop strategies that don't really make sense.
+
+69
+00:04:32,235 --> 00:04:37,220
+这些策略在风险、可扩展性或其他多方面可能都不合理。
+They don't make sense in terms of risk, in terms of scalability, in terms of a lot of factors.
+
+70
+00:04:37,220 --> 00:04:40,345
+有人可能会认为这是错误的策略。
+And some may deem this wrong strategy.
+
+71
+00:04:40,345 --> 00:04:45,900
+但归根结底，如果最终结果是盈利的，那就是好的。
+But at the end of the day, if the desired outcome is green, that is all that matters.
+
+72
+00:04:45,900 --> 00:04:48,902
+那么，在制定策略时，
+So what are some of the things you need to
+
+73
+00:04:48,902 --> 00:04:50,403
+你需要思考哪些关键因素呢？
+think about when developing your
+
+74
+00:04:50,403 --> 00:04:52,204
+如何才能开发出有效的策略呢？
+strategy to, well, develop those strategies?
+
+75
+00:04:52,205 --> 00:04:55,660
+首先，也是最重要的，是高概率和低概率。
+First and foremost, is high and low probability.
+
+76
+00:04:55,660 --> 00:04:58,630
+要用高概率和低概率来定义你的策略。
+Define your strategy in terms of high and low probability.
+
+77
+00:04:59,930 --> 00:05:02,610
+然后，这个策略的风险特征是什么？
+Then, what is the risk profile of that strategy?
+
+78
+00:05:02,610 --> 00:05:07,110
+另外，市场中还有一个常见的误区，就是认为
+Now, again, another fallacy in the markets is that, you know, professional traders take,
+
+79
+00:05:07,110 --> 00:05:11,725
+专业交易者会严格遵循1:1、2:1、5:1甚至10:1的风险回报比。
+you know, risk reward of one to one and two to one and five to one and ten to one.
+
+80
+00:05:11,725 --> 00:05:14,790
+我可以明确告诉你，这完全是无稽之谈。
+I will tell you this is absolute hocus pocus.
+
+81
+00:05:14,790 --> 00:05:22,075
+日内交易者有时甚至会采用逆向的风险回报比，承担更多风险以达到目标。
+Day traders sometimes actually take inverse risk reward, where we're taking on more risk just to achieve the desired outcome.
+
+82
+00:05:22,075 --> 00:05:25,285
+有人可能认为这不对，但其实不是这样。
+Now, some may think this is wrong, but it isn't.
+
+83
+00:05:25,285 --> 00:05:27,950
+记住，我们的目标是盈利。
+Remember, our objective is to be green.
+
+84
+00:05:29,350 --> 00:05:33,655
+在可扩展性方面，有些交易无法大幅扩大规模。
+In terms of scalability, sometimes trades you cannot scale up very much.
+
+85
+00:05:33,655 --> 00:05:36,265
+有些交易则可以大幅扩大规模。
+Sometimes trades you can scale up a lot.
+
+86
+00:05:36,265 --> 00:05:38,795
+可扩展性上并没有对错之分。
+There is no wrong or right when it comes to scalable.
+
+87
+00:05:38,795 --> 00:05:41,637
+但要记住，
+However, keep in the back of your mind that a
+
+88
+00:05:41,637 --> 00:05:44,764
+可扩展性差的交易，其寿命是有限的。
+trade that's not very scalable will only last you so long.
+
+89
+00:05:44,765 --> 00:05:49,540
+当你试图做大交易、追求更高杠杆时，
+And whilst you're trying to get bigger and the objective is to make, you know, bigger trades with more leverage,
+
+90
+00:05:49,540 --> 00:05:52,608
+可扩展性差的交易并不一定错，但
+a trade that's not very scalable isn't necessarily wrong, but
+
+91
+00:05:52,608 --> 00:05:55,062
+可能，它可能意味着
+it might not, you know, it might mean
+
+92
+00:05:55,062 --> 00:05:59,664
+你需要调整策略，或者未来改用其他策略。
+you need to adjust your strategy or change or use other strategies in the future.
+
+93
+00:05:59,665 --> 00:06:01,795
+说到重复模式，
+In terms of repetitive patterns,
+
+94
+00:06:01,795 --> 00:06:04,481
+有些人可能认为，如果一个策略一年只出现一次，
+some people may think just because a strategy only comes
+
+95
+00:06:04,481 --> 00:06:06,629
+他们
+in, you know, along once a year, they
+
+96
+00:06:06,629 --> 00:06:09,583
+可能会觉得这个策略有问题，或者不值得花时间。
+may think the strategy is wrong or not worth the time.
+
+97
+00:06:09,585 --> 00:06:13,297
+我再次告诉你，只要能找到重复的案例，
+Again, I tell you, a strategy is good so long
+
+98
+00:06:13,297 --> 00:06:18,866
+不管是一年一次，还是12次、20次，这个策略就是有效的。
+as you can find repetitive examples, whether it's once a year or 12, 20 times a year.
+
+99
+00:06:19,610 --> 00:06:26,180
+关键在于，你能用相同的方法论，重复执行这个策略，并达到预期的结果。
+The important thing is you can repeat the strategy with the same methodology and the same desired outcome.
+
+100
+00:06:26,180 --> 00:06:27,801
+这个策略对你来说合理吗？
+Does the strategy make sense to
+
+101
+00:06:27,801 --> 00:06:33,204
+如果你觉得不合理，那你可能执行得不会很好。
+you? If it doesn't make sense to you, the likelihood is you're probably not going to execute it very well.
+
+102
+00:06:33,205 --> 00:06:36,795
+在这一点上，它可能是一个低概率策略。
+In this sense, it's probably a low probability strategy.
+
+103
+00:06:36,795 --> 00:06:39,485
+但如果它对你来说合理，而且你理解
+However, if it makes sense to you and you understand
+
+104
+00:06:39,485 --> 00:06:41,637
+自己基于策略原理想要达成的目标，
+what you're trying to achieve based on the
+
+105
+00:06:41,637 --> 00:06:42,713
+策略中的原则，
+principles in the strategy,
+
+106
+00:06:42,715 --> 00:06:47,910
+这会让你获得更好的结果，整体上也是一个高概率策略。
+this will allow you to have a far better, you know, outcome and a much higher probability strategy overall.
+
+107
+00:06:49,370 --> 00:06:51,845
+这个策略是否符合你的性格？
+Does the strategy add to your personality?
+
+108
+00:06:51,845 --> 00:06:53,658
+我发现很多策略，
+I find so many strategies, you know,
+
+109
+00:06:53,658 --> 00:06:55,471
+或者很多交易者问我，
+or so many traders asking me, you
+
+110
+00:06:55,471 --> 00:06:57,284
+‘怎么做这笔交易？’
+know, how do I do this trade?
+
+111
+00:06:57,285 --> 00:06:59,365
+或者，‘你为什么做那笔交易？’
+Or, you know, how do, why did you do that trade?
+
+112
+00:06:59,365 --> 00:07:03,675
+我通常的回答是，我不想把我的策略给你。
+And my sort of standard response to them is, I don't want to give you my strategies.
+
+113
+00:07:03,675 --> 00:07:05,878
+这并不是因为我不想分享，
+And it's not because I don't want to
+
+114
+00:07:05,878 --> 00:07:08,081
+而是因为我的执行方式、
+share them. It's more because the way I
+
+115
+00:07:08,081 --> 00:07:12,213
+我对事物的理解和解读，和其他人都不一样。
+execute and the way I interpret and understand things is very different to everyone else.
+
+116
+00:07:12,215 --> 00:07:16,030
+所以在策略上，并没有一套万能的方法适合所有人。
+So one size does not fit all when it comes to various strategies.
+
+117
+00:07:16,030 --> 00:07:23,025
+因此，仅仅因为你和我或其他交易者用的策略不同，并不意味着它有问题。
+Therefore, just because you don't do the same strategy as me or other traders does not make it wrong.
+
+118
+00:07:23,025 --> 00:07:29,300
+选择适合你性格、对你来说合理的策略。
+Do strategies that fit your personality that make sense to you as a trader.
+
+119
+00:07:29,300 --> 00:07:33,320
+记住，最终点击鼠标的是你，
+Remember, ultimately, you the one that has to click on the mouse,
+
+120
+00:07:33,320 --> 00:07:36,960
+承担杠杆的是你，承担风险的也是你。
+you the one that has to leverage this trade, you the one that has to take the risk.
+
+121
+00:07:36,960 --> 00:07:42,165
+所以，你必须拥有最适合自己性格的交易策略。
+Therefore, you the one that must have the trade strategy that best suits your personality.
+
+122
+00:07:42,165 --> 00:07:46,605
+最后，这个策略是否符合你的情绪认知特征？
+And lastly, does the strategy fit your emotional characteristics?
+
+123
+00:07:46,605 --> 00:07:51,230
+我们一直在讨论，在所有策略中进行情绪准备的重要性。
+We spoke a lot about, you know, emotional preparing in all your strategies.
+
+124
+00:07:51,230 --> 00:07:53,374
+而其中一个关键点是要理解，
+And one of the key things to understand
+
+125
+00:07:53,374 --> 00:07:54,982
+如果你不喜欢
+is, if you do not like
+
+126
+00:07:54,982 --> 00:07:56,858
+风险，如果你害怕持有亏损头寸，
+risk, if you're afraid to sit offside,
+
+127
+00:07:56,860 --> 00:07:58,699
+如果你是一个
+if you, you know, someone who you
+
+128
+00:07:58,699 --> 00:08:00,801
+无法耐心等待的人，如果这是你的
+cannot be patient, if that's one of your
+
+129
+00:08:00,801 --> 00:08:03,429
+弱点，那么就不要尝试去学习或使用
+weaknesses, well, then don't try and employ and learn strategies
+
+130
+00:08:03,429 --> 00:08:07,108
+需要耐心的策略，因为这永远不会让你占据优势。
+that require patience, because this is never going to stand you in good stead.
+
+131
+00:08:08,470 --> 00:08:13,650
+所以，记住，世上没有绝对的对错。
+So, remember, there is no such thing as wrong.
+
+132
+00:08:13,650 --> 00:08:20,335
+归根结底，一切都归结为概率高低。
+Ultimately, everything leads to the same thing, which is, there's low probability, and there's high probability.
+
+133
+00:08:20,335 --> 00:08:25,430
+我们的最终目标，就是赚钱。这才是最重要的。
+Our objective, ultimately, is to make money. And that is all that matters.
+
+134
+00:08:28,290 --> 00:08:32,530
+在过去的三个模块中，我们一直在完善你的交易手册。
+We've been developing your playbook over the last three modules.
+
+135
+00:08:32,530 --> 00:08:34,473
+但我想让你们理解的是，
+But what I want you to understand
+
+136
+00:08:34,473 --> 00:08:36,694
+当你完成这个模块和课程，
+is, once you finish this module and this
+
+137
+00:08:36,694 --> 00:08:41,414
+并完成可以随身携带的交易手册后，这并不是终点。
+course, and complete your playbook that you'll be able to take with you, it doesn't stop there.
+
+138
+00:08:41,415 --> 00:08:45,610
+游戏不会就此结束。这只是游戏的开始。
+The game doesn't end there. That's just the beginning of the game.
+
+139
+00:08:45,610 --> 00:08:50,490
+我和你们一起开发的这11个策略，只是个开始。
+These 11 strategies I've developed with you in your playbook is just the beginning.
+
+140
+00:08:50,490 --> 00:08:57,780
+你的目标是掌握这11个策略，学习它们，复制它们，找到它们，执行它们。
+Your objective is to take those 11 strategies, learn them, replicate them, find them, execute them.
+
+141
+00:08:57,780 --> 00:08:59,500
+然后，慢慢地，
+And then, slowly but surely,
+
+142
+00:08:59,500 --> 00:09:01,908
+随着你对市场了解的不断深入，
+as you learn more and more about
+
+143
+00:09:01,908 --> 00:09:05,348
+开发自己的策略，更新自己的交易手册，
+the markets, develop your own strategies, update your own playbook,
+
+144
+00:09:05,350 --> 00:09:09,730
+不断进化，不仅是你的交易手册，还有你作为交易者的自己。
+constantly evolve, not just your playbook, but yourself as a trader.
+
+145
+00:09:09,730 --> 00:09:11,525
+持续发展。
+Keep developing.
+
+146
+00:09:11,525 --> 00:09:15,775
+现在，当你掌握了市场分析工具的原理后，
+Now, once you've mastered the principles of the market profiling tool,
+
+147
+00:09:15,775 --> 00:09:20,655
+就是时候将理论付诸实践，开发属于自己的策略手册了。
+it's time to put the theory into practice and develop your own playbook of strategies.
+
+148
+00:09:20,655 --> 00:09:28,550
+这本手册对你未来的成功至关重要，因为它能确保你不断识别和理解这些原理。
+This playbook is vital to your future success because it ensures you're constantly recognizing and understanding the principles.
+
+149
+00:09:28,550 --> 00:09:33,121
+就像职业运动员每天都要训练一样，
+Just like a professional athlete practices every day, so, too, we must
+
+150
+00:09:33,121 --> 00:09:36,549
+我们也必须每天通过不断更新交易手册来练习。
+practice every day with constant updates in our playbook.
+
+151
+00:09:37,710 --> 00:09:41,115
+各位，交易是一场马拉松。
+Remember, guys, trading is a marathon.
+
+152
+00:09:41,115 --> 00:09:46,845
+要花几年时间才能培养出优势，才能真正掌握技能。
+It takes a couple of years to develop edge, to develop real skill.
+
+153
+00:09:46,845 --> 00:09:53,875
+所以，你要把这本‘战术手册’随时带在身边，不断更新，不断完善它。
+So, you have to keep this playbook close by, keep updating it, and keep developing this playbook.
+
+154
+00:09:53,875 --> 00:09:57,688
+现在，你必须问自己一个重要的问题，
+Now, one of the important questions you have to ask yourself and
+
+155
+00:09:57,688 --> 00:10:00,865
+并且要解答它。很少有交易者知道这个问题，或者有答案。
+decipher. And again, not many traders know this or have
+
+156
+00:10:00,865 --> 00:10:06,584
+这个问题就是：你在市场中扮演什么角色？你的优势可能在哪里？
+the answer to this question is, where do you feature in the markets? Where is your likely edge?
+
+157
+00:10:06,585 --> 00:10:08,435
+这话是什么意思呢？
+What do I mean by that?
+
+158
+00:10:08,435 --> 00:10:13,105
+我刚开始做交易员的时候，我之前是经纪人。
+When I started as a trader, I was very much... I was a broker before a trader.
+
+159
+00:10:13,105 --> 00:10:16,754
+所以，我看市场的时候，
+So, when I looked at the markets, I looked at the markets
+
+160
+00:10:16,754 --> 00:10:19,794
+是从基本面、从趋势的角度来看的。
+very much from a fundamental perspective, from a trend-based perspective.
+
+161
+00:10:19,795 --> 00:10:24,705
+我从来没想过，其实每天都能在市场中赚到钱。
+I never thought that, on a day-to-day basis, you could actually make money in the markets.
+
+162
+00:10:24,705 --> 00:10:26,680
+直到我成为日内交易者，
+By becoming a day trader,
+
+163
+00:10:26,680 --> 00:10:29,795
+我突然发现，市场完全是另一番景象。
+all of a sudden, I saw a completely different market.
+
+164
+00:10:29,795 --> 00:10:36,170
+我看到市场可以在横盘中持续很多天，但依然存在机会。
+I could see how markets could sit tight range-bound for so many days, and yet there was still opportunity.
+
+165
+00:10:36,170 --> 00:10:38,606
+然后，有时候当趋势行情来临时，
+And then, sometimes, when there was a trending
+
+166
+00:10:38,606 --> 00:10:42,564
+我看到大资金、大玩家会进入市场。
+move, I could see how larger time frame, bigger players entered the market.
+
+167
+00:10:42,565 --> 00:10:47,800
+所以，你必须问自己并能回答的问题是：你在市场中扮演什么角色？
+So, the question you have to ask yourself and be able to answer is, where do you feature?
+
+168
+00:10:47,800 --> 00:10:52,192
+我不是说你不能什么都做，但
+Now, I'm not going to say you cannot be a jack-of-all-trades, but
+
+169
+00:10:52,192 --> 00:10:56,584
+我建议你最好别什么都做。
+I'm going to say you probably don't want to be a jack-of-all-trades.
+
+170
+00:10:55,910 --> 00:10:59,790
+你不想既做超短线，又做长线交易。
+You don't want to be a scalper and a long-term trader.
+
+171
+00:10:59,790 --> 00:11:05,690
+原因在于，长线交易者和超短线交易者的目标几乎是相反的。
+And the reason is because the objective of a long-term trader and a scalper are almost opposite.
+
+172
+00:11:06,810 --> 00:11:09,390
+是的，我们都想赚钱，但
+Yes, we all want to make money, but the
+
+173
+00:11:09,390 --> 00:11:14,264
+我们赚钱的方式和采用的策略会截然不同。
+manner in which we do and the strategies we employ will be very unique and very different.
+
+174
+00:11:14,265 --> 00:11:20,090
+所以今天，问问自己：你是跟随趋势的长线交易者吗？
+So, today, ask yourself the question, are you a long-term trader that goes with the trend?
+
+175
+00:11:20,090 --> 00:11:26,765
+你是中线波段交易者，专注点到点的突破和区间操作吗？
+Are you an intermediate swing trader, which looks for point-to-point and bracketing and moving out of various ranges?
+
+176
+00:11:26,765 --> 00:11:31,595
+你是短线交易者，更关注前一天的线索吗？
+Are you a short-term trader, where you focus more on the previous day for clues?
+
+177
+00:11:31,595 --> 00:11:36,955
+你是日内交易者，等待小幅价格波动、动能和资金流向吗？
+Are you a day trader looking for smaller price increments waiting for momentum and flow?
+
+178
+00:11:36,955 --> 00:11:42,925
+还是你是用自动化策略的超短线交易者，风险收益比很小？
+Or are you a scalper with automated strategies with very small risk-reward type plays?
+
+179
+00:11:42,925 --> 00:11:46,060
+在你的交易生涯早期，尽快回答这个问题。
+Answer this question soon in your career.
+
+180
+00:11:46,060 --> 00:11:51,990
+一旦确定了，就全身心投入到你选择的交易风格中。
+Once you do that, focus your energy intently on what you have decided to become.
+
+181
+00:11:53,170 --> 00:11:57,420
+说到底，一个田径运动员，比如
+Ultimately, a sportsman in, say, track, he cannot be a
+
+182
+00:11:57,420 --> 00:11:59,545
+不可能同时是100米短跑选手
+sprinter of 100 meters and a
+
+183
+00:11:59,545 --> 00:12:02,095
+和10公里长跑选手，非此即彼。
+10k runner. He's either or either.
+
+184
+00:12:02,520 --> 00:12:08,330
+所以今天你必须做出选择：你适合哪种类型？你的优势可能在哪里？
+So, today you have to choose. Where do you fit in? Where is your likely edge?
+
+185
+00:12:10,830 --> 00:12:14,110
+最后，我们来聊聊
+Just some final thoughts on, you know, the
+
+186
+00:12:14,110 --> 00:12:17,390
+成交量分布图策略的要点，以及
+volume profiling playbook and some key considerations to
+
+187
+00:12:17,390 --> 00:12:23,130
+在进入反转成交量分析策略的最后阶段前，需要考虑的几个关键点。
+take into account before we move on to our final stretch of reversal strategies.
+
+188
+00:12:24,170 --> 00:12:26,860
+现在，重点来了。
+Now, key considerations.
+
+189
+00:12:26,860 --> 00:12:31,910
+和所有涉及复杂关联的事业一样，
+As with any endeavor that involves complex associations, an actionable
+
+190
+00:12:31,910 --> 00:12:36,960
+对市场拍卖过程的可执行理解，
+understanding of the markets developing auction process can only be
+
+191
+00:12:36,960 --> 00:12:39,990
+只有通过大量观察和研究才能完善。
+perfected through extensive observation and study.
+
+192
+00:12:39,990 --> 00:12:48,355
+世界顶尖的国际象棋大师，并非仅凭直觉，而是花大量时间研究模式和可能性。
+The world's top chess players are not merely intuitive, but have spent considerable time poring over patterns and potentialities.
+
+193
+00:12:48,355 --> 00:12:49,935
+这非常简单。
+It's very simple.
+
+194
+00:12:49,935 --> 00:12:53,940
+如果你想成为交易者，
+If you want to be a trader, you're going to need to
+
+195
+00:12:53,940 --> 00:12:58,279
+就必须花大量时间发展你的技能和策略。
+spend a lot of time developing your skill set and developing your strategies.
+
+196
+00:12:58,280 --> 00:13:00,120
+没有捷径。
+There is no shortcut.
+
+197
+00:13:00,120 --> 00:13:02,030
+没有圣杯。
+There is no holy grail.
+
+198
+00:13:02,030 --> 00:13:06,355
+没有信号系统会告诉你现在买、现在卖。
+There is no signal system that's going to say buy now and sell now.
+
+199
+00:13:06,355 --> 00:13:08,030
+这必须来自你自己。
+It has to come from you.
+
+200
+00:13:09,230 --> 00:13:14,475
+然后，理解概率、风险和回报的概念。
+Then, understanding the concept of probability and risk and reward.
+
+201
+00:13:14,475 --> 00:13:15,905
+这是什么意思呢？
+What do we mean by this?
+
+202
+00:13:15,905 --> 00:13:25,655
+比如，如果一个策略有90%的成功概率，承担4单位风险去博1单位回报是可以的。
+Well, sometimes if a strategy is 90% likely to occur, it's okay to risk four risk for one reward.
+
+203
+00:13:25,655 --> 00:13:33,130
+同样，如果一个策略只有25%的成功概率，用1单位风险去博5单位回报也是可以的。
+Likewise, if a strategy is only 25% likely to occur, it's okay to go for one risk for five reward.
+
+204
+00:13:33,130 --> 00:13:34,890
+把这个记在脑海里。
+Keep this in the back of your mind.
+
+205
+00:13:34,890 --> 00:13:37,025
+理解这个概率游戏。
+Understand the game of odds.
+
+206
+00:13:37,025 --> 00:13:42,490
+记住，交易不是科学，没有完美的方法，这是一门艺术。
+Remember, it's not a science trading. There's no perfect way. It's an art form.
+
+207
+00:13:43,650 --> 00:13:45,525
+交易位置很关键。
+Trade location is key.
+
+208
+00:13:45,525 --> 00:13:51,995
+在制定策略时，一定要把交易位置纳入每一个策略中。
+Make sure whenever you develop strategies, you incorporate the trade location within every strategy you take.
+
+209
+00:13:51,995 --> 00:13:56,720
+总要问自己：在这个位置上我试图做什么？
+Always ask yourself, what am I trying to do in this location?
+
+210
+00:13:56,720 --> 00:13:59,731
+如果你发现自己在高位做多
+If you find yourself that you're long at the high
+
+211
+00:13:59,731 --> 00:14:03,044
+而别人都不做多时，你却做多，那你选的位置很差。
+when no one else is long, you're in a bad location.
+
+212
+00:14:03,045 --> 00:14:09,155
+但如果你做多时，所有人也在抢着做多，那你选的位置就很好。
+If, however, you find yourself long where everyone else is trying to get long, you're in a great location.
+
+213
+00:14:09,155 --> 00:14:21,710
+所以一定要问自己：这是不是关键？关键是要保持最大的灵活性。
+So always ask yourself, is this Then, crucial to maintain maximum flexibility.
+
+214
+00:14:21,710 --> 00:14:28,585
+一旦你有任何头寸，不管规模多大，你就失去了灵活性，解读信息的方式也会不同。
+If you are in any trade, regardless of the size, you are no longer flexible and you interpret information differently.
+
+215
+00:14:28,585 --> 00:14:32,105
+这是我作为交易者学到的最重要的教训之一。
+This is one of the greatest lessons I ever learned as a trader.
+
+216
+00:14:32,105 --> 00:14:33,460
+这意味着什么？
+What does it mean?
+
+217
+00:14:33,460 --> 00:14:35,323
+这意味着，当你在市场中承担风险的那一刻，
+It means that the minute you have
+
+218
+00:14:35,323 --> 00:14:37,186
+不管你每次变动的风险是1英镑，
+risk in the market, the minute you
+
+219
+00:14:37,186 --> 00:14:38,783
+1万英镑，
+put whether it's £1 per increment, whether
+
+220
+00:14:38,783 --> 00:14:40,646
+还是10万英镑，
+it's £10,000 per increment, whether it's £10,000 per increment.
+
+221
+00:14:41,445 --> 00:14:44,309
+一旦你在市场中承担了风险，
+The moment you have risk in a
+
+222
+00:14:44,309 --> 00:14:47,173
+你在思维上就会产生偏见。
+market, you intellectually have a bias. You
+
+223
+00:14:47,173 --> 00:14:54,129
+你会在思想上被锁定在多头或空头的某一方。永远别忘了这一点。
+are intellectually locked either to the buy side or to the sell side. Don't ever forget that.
+
+224
+00:14:54,130 --> 00:14:59,325
+有时候，最大的自由就是平掉所有头寸，让自己回到空仓状态。
+Sometimes the greatest freedom is to take a trade out of the market, to flatten yourself.
+
+225
+00:14:59,325 --> 00:15:04,305
+因为一旦你空仓，就能完全保持100%的客观。
+Because once you're flat, you can be completely 100% objective.
+
+226
+00:15:04,305 --> 00:15:10,130
+而只要你还有风险头寸在市场里，你就会更主观，更容易产生偏见。
+Whilst you have a risk on the table, you are more subjective and more bias prone.
+
+227
+00:15:10,130 --> 00:15:12,170
+把这一点牢记在心。
+Keep this in the back of your mind.
+
+228
+00:15:12,170 --> 00:15:15,068
+不要抱着一点点小头寸，
+Don't hold on to little bits of a trade and
+
+229
+00:15:15,068 --> 00:15:19,704
+指望能挽回一点损失。如果交易错了，就离场。
+hope that you can get a little bit back. If the trade is wrong, get out.
+
+230
+00:15:19,705 --> 00:15:23,355
+如果交易目标不再清晰，就离场。
+If the trade objective is no longer recognisable, get out.
+
+231
+00:15:23,355 --> 00:15:30,000
+如果你入场的理由不再成立，就离场。不要死撑。
+If the reason you got into that trade is no longer valid, get out. Don't hold on.
+
+232
+00:15:30,000 --> 00:15:33,100
+因为这会让你产生偏见。
+Because this is going to cause you a bias.
+
+233
+00:15:33,100 --> 00:15:38,870
+然后，最好的交易往往是让你最不舒服的那一笔。
+Then, the best trades are often those that make you feel most uncomfortable.
+
+234
+00:15:39,930 --> 00:15:41,480
+我再重复一遍。
+Let me repeat that.
+
+235
+00:15:41,480 --> 00:15:46,070
+最好的交易就是那些让你最不舒服的交易。
+The best trades are the ones that make you feel most uncomfortable.
+
+236
+00:15:46,070 --> 00:15:47,230
+为什么？
+Why?
+
+237
+00:15:47,230 --> 00:15:54,465
+因为这些交易往往是大多数参与者可获得信息最少的时候。
+Because these are the trades where there's the least amount of information available to the most amount of participants.
+
+238
+00:15:54,465 --> 00:15:58,410
+记住，最好的交易往往逆势而行。
+Remember, the best trades often fly in the face of adversity.
+
+239
+00:15:59,470 --> 00:16:02,085
+不要害怕逆趋势操作。
+Don't be afraid to go against the trend.
+
+240
+00:16:02,085 --> 00:16:06,860
+不要害怕在市场未完全确认时入场。
+Don't be afraid to put on a trade when there's not 100% confirmation from the market.
+
+241
+00:16:06,860 --> 00:16:12,730
+记住，如果市场给了你100%的确认，那它也给了所有人100%的确认。
+Remember, if the market is giving you 100% confirmation, it's giving everyone 100% confirmation.
+
+242
+00:16:12,730 --> 00:16:16,030
+如果一笔交易显而易见，那它对所有人都显而易见。
+If a trade is obvious, it's obvious to everyone.
+
+243
+00:16:17,110 --> 00:16:22,580
+作为交易者，不要害怕感到不适，因为这些往往是最好的交易机会。
+Don't be afraid to feel uncomfortable as a trader, because these are the best trades.
+
+244
+00:16:22,580 --> 00:16:27,385
+最后，要获利，你总要承担一定的风险。
+And lastly, to profit, you always have to take some element of risk.
+
+245
+00:16:27,385 --> 00:16:29,750
+没有任何一笔交易能保证100%成功。
+No trade will ever be 100%.
+
+246
+00:16:29,750 --> 00:16:32,430
+总会存在一定的风险。
+There is always an element of risk.
+
+247
+00:16:32,430 --> 00:16:33,690
+永远别忘了这一点。
+Never forget this.
+
+248
+00:16:33,690 --> 00:16:37,395
+作为交易者，每一天都充满风险。
+On any given day, there is always risk as a trader.
+
+249
+00:16:37,395 --> 00:16:41,730
+现在，我们继续来聊聊交易手册的不同部分。
+Let's now move on and talk a little bit about the different sections of our playbook.
+
+250
+00:16:43,770 --> 00:16:49,825
+欢迎来到第12讲第3模块的最后一个策略部分。
+Welcome to the final section of strategies that we are going to talk about in Part 12, Module 3.
+
+251
+00:16:49,825 --> 00:16:52,300
+今天我们讲的是反转交易策略。
+So, reversal trade strategies.
+
+252
+00:16:52,300 --> 00:16:53,920
+先给它们下个定义。
+Let's define them.
+
+253
+00:16:53,920 --> 00:16:59,670
+首先，在反转交易策略中，你期望看到哪些时间框架的参与者？
+Firstly, what sort of timeframe players are you expecting to see in the reversal trade strategies?
+
+254
+00:16:59,670 --> 00:17:03,710
+同样，你会看到所有时间框架的参与者。
+Again, you're going to see all timeframe participants.
+
+255
+00:17:03,710 --> 00:17:07,510
+原因在于，假设市场正在下跌，
+The reason is that, let's say for instance a market is moving lower.
+
+256
+00:17:07,510 --> 00:17:13,590
+当市场下跌时，可能有算法、短线和日内交易者在市场中。
+As this market is moving lower, we may have algorithmic, short-term and day traders in the market.
+
+257
+00:17:13,590 --> 00:17:21,885
+随着价格越来越低，他们可能会遇到摆动交易者以及更长期的重要参与者。
+As prices move lower and lower, they could then run into both swing traders as well as longer-term influential players.
+
+258
+00:17:21,885 --> 00:17:27,505
+这些长期重要参与者会以非常激进的方式将市场扭转方向。
+These longer-term influential players turn the market back around in a very aggressive nature.
+
+259
+00:17:27,505 --> 00:17:32,091
+当他们这样做时，算法、短线和日内交易者
+And as they do so, both algorithmic and short-term traders and day
+
+260
+00:17:32,091 --> 00:17:37,059
+往往会退出最初的空头仓位，并通过买入推高市场。
+traders tend to exit those original short positions, buying the market higher up.
+
+261
+00:17:37,060 --> 00:17:42,535
+这本质上意味着，所有五种时间框架的参与者都可能参与反转交易策略。
+This, in essence, means that all five timeframe players tend to be in reversal trade strategies.
+
+262
+00:17:42,535 --> 00:17:48,420
+在主动性和响应性方面，我们通常会看到两种情况。
+In terms of initiative and responsive, we tend to see both initiative as well as responsive.
+
+263
+00:17:48,420 --> 00:17:54,045
+首先，我们看到短线日内交易者和算法在推低价格。
+Firstly, we see short-term day traders as well as algorithmic moving prices lower.
+
+264
+00:17:54,045 --> 00:17:57,770
+接着，他们会遇到更长时间框架的响应性买家。
+They then run into longer timeframe responsive buyers.
+
+265
+00:17:57,770 --> 00:18:03,990
+这些响应性买家将价格扭转方向，并开始推动价格上涨。
+Those responsive buyers turn prices back around and then begin to initiate a move higher.
+
+266
+00:18:05,170 --> 00:18:11,055
+在时间目标方面，反转策略有时需要很长时间才能完成反转，
+In terms of the time objective, reversal strategies can sometimes take a long time to reverse,
+
+267
+00:18:11,055 --> 00:18:14,015
+但有时也可能在很短时间内完成。
+but they can also take a short period of time.
+
+268
+00:18:14,015 --> 00:18:17,665
+这取决于你试图实现的策略类型。
+Again, it depends on the type of strategy you're trying to achieve.
+
+269
+00:18:17,665 --> 00:18:24,415
+确保你根据所创建的策略，理解并解读其时间分配。
+Make sure you interpret and understand what the time allocation is based on the strategy you are trying to create.
+
+270
+00:18:24,415 --> 00:18:26,845
+在成交量和波动性方面，
+In terms of volume and volatility,
+
+271
+00:18:26,845 --> 00:18:30,695
+反转策略可能会呈现非常、非常高的成交量和波动性，
+reversal strategies can show very, very high volume and volatility,
+
+272
+00:18:30,695 --> 00:18:32,920
+这在后面我给大家展示的例子中会看到。
+as you will see in the examples I show you.
+
+273
+00:18:32,920 --> 00:18:39,805
+但同样，当动能消失时，它们有时也会表现出成交量和波动性极度不足。
+But equally, they can sometimes show a real lack of volume and volatility as momentum disappears.
+
+274
+00:18:39,805 --> 00:18:44,230
+再次强调，在制定策略时，一定要据此正确解读。
+Again, make sure when you develop your strategies, you interpret them accordingly.
+
+275
+00:18:45,450 --> 00:18:50,510
+在风险收益方面，反转策略可能拥有非常、非常高的风险收益比。
+In terms of risk-reward, reversal strategies can have very, very high risk-reward.
+
+276
+00:18:50,510 --> 00:18:57,215
+但要注意，运用反转策略时，你在技术上仍是逆短期趋势而为。
+But note, when you are playing for a reversal strategy, you are technically still against the short-term trend.
+
+277
+00:18:57,215 --> 00:19:00,355
+所以，控制风险至关重要。
+So it's imperative that you manage risk.
+
+278
+00:19:00,355 --> 00:19:01,581
+永远记住，
+Always remember, it doesn't
+
+279
+00:19:01,581 --> 00:19:04,033
+无论入场点位有多好，
+matter how good a point of entry is,
+
+280
+00:19:04,033 --> 00:19:06,485
+如果不控制风险，
+if you do not manage the risk, the
+
+281
+00:19:06,485 --> 00:19:09,857
+市场可能会比你想象的更长时间保持非理性。
+markets can remain irrational for a lot longer than you think.
+
+282
+00:19:09,860 --> 00:19:14,110
+一定要控制风险，尤其是在操作反转形态时。
+Always manage risk, particularly when it comes to reversal pattern plays.
+
+283
+00:19:15,150 --> 00:19:20,550
+说到动能，记住，我们一开始是逆初始动能而行的。
+Then when it comes to momentum, remember, we are initially against the initial momentum.
+
+284
+00:19:20,550 --> 00:19:26,745
+所以，我们寻找的是市场已触及某种顶部或底部的确认信号。
+So what we're looking for is confirmation that a market has found some sort of a top or a bottom.
+
+285
+00:19:26,745 --> 00:19:28,802
+一旦确认，
+Once it's done that, not only
+
+286
+00:19:28,802 --> 00:19:30,859
+我们不仅能降低风险，
+are we reducing risk, but we
+
+287
+00:19:30,859 --> 00:19:34,288
+还能顺着反方向的动能操作。
+can then go with the momentum in the opposite direction.
+
+288
+00:19:35,310 --> 00:19:38,105
+现在，我们来定义反转。
+Now, let's define reversals.
+
+289
+00:19:38,105 --> 00:19:43,350
+首先，反转是指其他时间框架的参与者发起的。
+Firstly, a reversal is where the other time frame participant initiates.
+
+290
+00:19:43,350 --> 00:19:49,475
+所以，我们要讨论的反转，并不一定是动能消失、动能衰减的情况，
+So the reversals we're going to talk about are not necessarily where momentum disappears and the momentum fades,
+
+291
+00:19:49,475 --> 00:19:51,651
+而是我们要讨论
+but we're going to talk about
+
+292
+00:19:51,651 --> 00:19:54,553
+市场运行至更低或更高的价位时，
+where the market moves to prices, whether lower
+
+293
+00:19:54,553 --> 00:19:56,729
+我们看到有影响力的参与者进入市场，
+prices or higher prices, and we
+
+294
+00:19:56,729 --> 00:20:01,082
+并朝相反方向发起交易。
+see influential participants enter the market and initiate in the opposite direction.
+
+295
+00:20:01,085 --> 00:20:06,470
+这就是我们在反转策略中要开发的策略类型。
+Those are the kinds of strategies we are going to develop under the reversal strategies.
+
+296
+00:20:06,470 --> 00:20:11,925
+然后，如果市场中存在仓位分布，这正是反转效应的成因。
+Then, if there's positioning in the market, this is what creates the effect of reversal.
+
+297
+00:20:11,925 --> 00:20:20,450
+再举个例子，当价格下跌时，日内交易者和短期算法会遇到主动买家。
+Take the example again, as prices are moving lower, day traders and short-term algorithms run into responsive initiative buyers.
+
+298
+00:20:20,450 --> 00:20:25,188
+一旦这些买家开始发起交易，
+Once these buyers begin to initiate, they then force a response out
+
+299
+00:20:25,188 --> 00:20:28,346
+就会迫使任何短期交易者做出回应，
+of any short-term trader and squeeze them out
+
+300
+00:20:28,346 --> 00:20:32,689
+并挤出他们的仓位。这种仓位分布正是导致激进反转的原因。
+of those positions. That positioning is what creates the aggressive reversal.
+
+301
+00:20:33,690 --> 00:20:36,455
+最后，是短期趋势。记住，反转
+Lastly, the short-term trend. Remember, reversals
+
+302
+00:20:36,455 --> 00:20:40,142
+通常发生在短期内。所以
+tend to be on a short-term basis. So
+
+303
+00:20:40,142 --> 00:20:42,907
+我们可以看到，作为短期
+we can see as a short-term
+
+304
+00:20:42,907 --> 00:20:49,359
+趋势会迅速转向。这可能发生在中长期趋势之内。
+trend shift quite quickly. This can be within a medium or longer term trend.
+
+305
+00:20:49,360 --> 00:20:55,030
+关键在于，我们要关注的是短期趋势内部的反转。
+The important thing to understand is that we are looking for reversals within the short-term trend.
+
+306
+00:20:55,030 --> 00:20:58,884
+接下来我们要开发的两个策略，
+The two strategies we're going to develop going forward now and for
+
+307
+00:20:58,884 --> 00:21:01,453
+以及第3模块的剩余部分，分别是：
+the rest of module three are one, the
+
+308
+00:21:01,453 --> 00:21:05,949
+第一，缺口交易日，即缺口被回补的情况；第二是尾部反转。
+gap day where the gap is filled. And then the second is tail reversals.
+
+309
+00:21:05,950 --> 00:21:11,010
+现在，我们开始讲解缺口交易日策略，即缺口回补交易策略。
+Now, let's get started and begin with gap day, gap fill trading strategy.
+
+310
+00:21:13,570 --> 00:21:22,590
+这是第10个策略，缺口交易日策略。这是我们反转类策略中的第一个。
+This is strategy 10, the gap day, fill day. And this is the first of our reversal type strategies.
+
+311
+00:21:22,590 --> 00:21:25,965
+在具体讲解这个独特策略之前，
+Now, before we actually go into the unique strategy, let's
+
+312
+00:21:25,965 --> 00:21:28,665
+我们先简单聊聊
+just talk a little bit about, you know,
+
+313
+00:21:28,665 --> 00:21:33,390
+反转形态，以及你必须理解的一些关键定义。
+reversal patterns and some of the definitions you need to understand that are imperative.
+
+314
+00:21:33,390 --> 00:21:42,265
+首先要理解的是，交易反转策略时，我们是在逆主流趋势而行。
+So the first thing to understand is when trading a reversal strategy, we are going counter to the prevailing trend.
+
+315
+00:21:42,265 --> 00:21:45,270
+这一点不仅要理解，
+Now, this is crucial not just to understand,
+
+316
+00:21:45,270 --> 00:21:51,240
+还要将其融入到你未来开发的所有反转策略中。
+but to incorporate into any reversal strategies you develop going forward.
+
+317
+00:21:51,240 --> 00:21:56,204
+之所以重要，是因为如果逆势交易时
+The reason it's important to understand is that if we do not
+
+318
+00:21:56,204 --> 00:21:59,513
+我们没有有效管理风险，
+manage our risk effectively when counter trend, we
+
+319
+00:21:59,513 --> 00:22:02,408
+就可能会面临巨大亏损。
+do expose ourselves to potentially big losses.
+
+320
+00:22:02,410 --> 00:22:06,608
+接下来，我会给大家分享两个独特策略，
+Now, what you're going to see as I go through the two
+
+321
+00:22:06,608 --> 00:22:10,806
+你会发现，执行这些交易的关键，
+unique strategies I share with you is that the key element and
+
+322
+00:22:10,806 --> 00:22:15,004
+以及成功的核心在于，我们不仅要关注交易时机，
+the key success to executing these trades well is that we pay
+
+323
+00:22:15,004 --> 00:22:23,749
+还要关注风险点在哪里，以及交易错误时我们在哪里。
+close attention, not just to the timing of the trade, but also to where the risk is and where we are wrong on that trade.
+
+324
+00:22:23,750 --> 00:22:35,745
+最重要的是，你必须始终明确风险所在，但我们是基于关键信号入场的。
+Now, most important is that you always identify the risk, but we enter based on a key identifier.
+
+325
+00:22:35,745 --> 00:22:41,740
+这个信号，你会在接下来的两个例子中看到，是非常明确的。
+Now, this identifier, as you'll see in the next two examples, is very explicit.
+
+326
+00:22:41,740 --> 00:22:45,488
+换句话说，一旦我们看到这个信号，
+In other words, once we see the identifier, we merely
+
+327
+00:22:45,488 --> 00:22:49,236
+我们只需要执行交易，
+execute, we put our stop in place that protects us
+
+328
+00:22:49,236 --> 00:22:54,858
+设置好保护我们的止损，然后让策略自行运行。
+as we go counter trend and then we just let the trade strategy play out.
+
+329
+00:22:54,860 --> 00:23:00,385
+现在，我们来看第一个反转交易策略。
+So, let's get into the first of our reversal trade strategies.
+
+330
+00:23:00,385 --> 00:23:06,205
+缺口交易日，其实就是一个区间缺口。
+Now, the gap day. A gap day is nothing more than a range gap.
+
+331
+00:23:06,205 --> 00:23:08,425
+这就是第一天的成交量分布图。
+So, this is day one profile.
+
+332
+00:23:08,425 --> 00:23:15,230
+市场开盘价位于前一交易日的极值点之外，无论高于还是低于。
+The market opens outside, whether higher or lower, of the previous day's extreme points.
+
+333
+00:23:15,230 --> 00:23:21,384
+现在，在讲解不同类型的缺口之前，
+Now, the first thing to understand before we go through the different
+
+334
+00:23:21,384 --> 00:23:25,486
+首先要理解的是
+types of gaps is what has effectively, you
+
+335
+00:23:25,486 --> 00:23:33,178
+是什么导致了这个缺口的形成。是基本面因素，还是技术面因素？
+know, created this gap. Is it created on fundamentals or is it created on technicals?
+
+336
+00:23:33,180 --> 00:23:36,900
+这一点非常重要，必须区分清楚。
+Again, it's important to differentiate.
+
+337
+00:23:36,900 --> 00:23:41,030
+基本面缺口并不总是回补，它们不一定需要回补。
+Fundamental gaps don't always fill. They don't need to fill.
+
+338
+00:23:41,030 --> 00:23:46,830
+如果市场中存在重大的基本面变化，且市场需要重新定价，
+If there are significant fundamentals in the market and that market needs to reprice,
+
+339
+00:23:46,830 --> 00:23:53,180
+这些缺口往往不会回补，甚至可能长期保持缺口状态。
+these gaps don't always fill and can actually leave the gap for some period of time.
+
+340
+00:23:53,180 --> 00:23:55,462
+然而，技术面缺口往往会回补，
+However, technical gaps, these do tend
+
+341
+00:23:55,462 --> 00:23:57,744
+而且在大多数情况下，
+to fill and more often or
+
+342
+00:23:57,744 --> 00:24:02,689
+它们会在当天或之后的几天内完成回补。
+not, they do get filled on the same day or the days thereafter.
+
+343
+00:24:03,750 --> 00:24:06,021
+现在，我们快速来看一下
+Now, let's have a quick look
+
+344
+00:24:06,021 --> 00:24:08,292
+缺口回补策略的
+and talk about some of the
+
+345
+00:24:08,292 --> 00:24:12,078
+几个关键特征。
+key characteristics when it comes to the gap fill strategy.
+
+346
+00:24:12,080 --> 00:24:20,000
+首先，我们必须理解，缺口意味着市场处于失衡状态。
+First and foremost, we need to understand the gap implies the market is out of balance.
+
+347
+00:24:20,000 --> 00:24:22,852
+根据我们在
+Now, by definition, as we went
+
+348
+00:24:22,852 --> 00:24:25,704
+第2模块中讲过的，
+through in Module 2, when a market
+
+349
+00:24:25,704 --> 00:24:31,884
+当市场处于失衡状态时，这意味着风险和机会都是不对称的。
+is out of balance, this implies skewed risk as well as skewed opportunity.
+
+350
+00:24:32,360 --> 00:24:33,927
+所以，你应该立刻告诉自己，
+So, straight away, you
+
+351
+00:24:33,927 --> 00:24:37,061
+如果出现缺口，
+should be saying to yourself, well, if we
+
+352
+00:24:37,061 --> 00:24:40,195
+那么风险是存在的，
+have a gap, we have got an element
+
+353
+00:24:40,195 --> 00:24:46,463
+但同样，上涨的机会也会更大。
+of risk, but equally, we've got a much bigger element or much larger opportunity for upside.
+
+354
+00:24:46,465 --> 00:24:55,340
+现在，成功交易缺口日的关键在于，首先必须管理好你的风险。
+Now, the key to being successful at trading gap days is to always, first and foremost, manage your risk.
+
+355
+00:24:55,340 --> 00:25:01,935
+现在，我们快速来看一下缺口日相关的情绪分析。
+Now, let's have a quick look at some of the emotional analysis when it comes to gap days.
+
+356
+00:25:01,935 --> 00:25:11,330
+记住，由于波动性增加，你可能会看到价格在两个方向上都有更大的波动。
+Remember, as a result of the excess volatility, you can expect to see much bigger movements in both directions.
+
+357
+00:25:11,330 --> 00:25:13,388
+有鉴于此，
+Now, with that in mind, don't
+
+358
+00:25:13,388 --> 00:25:16,133
+别忘了，交易者并不习惯
+forget, traders are not used to going a
+
+359
+00:25:16,133 --> 00:25:22,309
+价格大幅单边运动。交易者不适应市场激进地向某一方向移动。
+long way or side. Traders are not used to the markets moving aggressively in one direction or another.
+
+360
+00:25:22,310 --> 00:25:25,217
+所以，根据这个定义，
+So, by that very definition, make
+
+361
+00:25:25,217 --> 00:25:29,093
+要确保你理解反转类策略中可能经历的各种情绪
+sure you understand the various types of emotions
+
+362
+00:25:29,093 --> 00:25:32,969
+这些情绪可能出现在反转类策略中。
+you might experience within the reversal type strategies.
+
+363
+00:25:32,970 --> 00:25:38,755
+现在，关于执行这笔交易的几个关键问题。
+Now, some of the key questions with regards to executing this trade.
+
+364
+00:25:38,755 --> 00:25:43,870
+记得我说过，我们要寻找关键识别标志。好的，就是这个。
+Remember, I said we're looking for the key identifier. Well, here it is.
+
+365
+00:25:43,870 --> 00:25:47,750
+所以，关于跳空交易日，有三条基本规则。
+So, when it comes to a gap day, there are three basic rules.
+
+366
+00:25:47,750 --> 00:25:49,510
+第一条规则：
+Rule number one.
+
+367
+00:25:51,570 --> 00:25:59,995
+市场是否回补了跳空缺口？如果回补，我们打一个勾。
+Does the market fill the gap? If so, we give it a tick.
+
+368
+00:25:59,995 --> 00:26:01,380
+第二条规则：
+Rule number two.
+
+369
+00:26:02,760 --> 00:26:12,865
+市场是否重新回到前一交易日的区间？如果是，我们打一个勾。
+Does the market re-enter the previous day's range? If it does, we give it a tick.
+
+370
+00:26:12,865 --> 00:26:15,612
+到目前为止，
+Now, at this point, we have not yet
+
+371
+00:26:15,612 --> 00:26:20,419
+我们还没看到关键识别标志。换句话说，我们甚至还没启动交易。
+seen our key identifier. In other words, we have not even initiated a trade.
+
+372
+00:26:20,420 --> 00:26:24,935
+我们可能只是坐在那里观察市场动向。
+We could have been sitting there merely just watching the markets.
+
+373
+00:26:24,935 --> 00:26:27,345
+但是第三点：
+However, point number three.
+
+374
+00:26:27,345 --> 00:26:38,690
+这是我们的关键识别标志：市场是否重新回到前一交易日的价值区域？这就是我们的识别标志。
+This is our key identifier. Does the market re-enter the previous day's value area? And this is our identifier.
+
+375
+00:26:38,690 --> 00:26:44,610
+但这也是我们接下来要花几分钟讨论交易机会的地方。
+But it's also the point we're going to spend the next couple of minutes discussing the trade opportunity.
+
+376
+00:26:44,610 --> 00:26:51,995
+所以，在讨论交易机会之前，我们要先解读跳空交易日会发生什么。
+So, the first thing before we discuss the trade opportunity is to interpret what happens on a gap day.
+
+377
+00:26:51,995 --> 00:26:56,425
+很简单，显然波动性出现了巨大激增。
+Well, very simply put, we've obviously had a huge surge in volatility.
+
+378
+00:26:56,425 --> 00:26:59,100
+某种因素改变了市场的前景。
+Something has shifted the outlook of the markets.
+
+379
+00:26:59,100 --> 00:27:05,060
+突然之间，多头和空头因为价格的显著变动而手忙脚乱。
+And all of a sudden, the buyers and sellers are scrambling as price has shifted significantly.
+
+380
+00:27:05,060 --> 00:27:07,760
+通常会发生的是，
+Now, what tends to occur is
+
+381
+00:27:07,760 --> 00:27:14,960
+市场跳空开盘后，我们会在早盘看到波动性激增。
+the market gaps open and we tend to see a hive of volatility very early on.
+
+382
+00:27:14,960 --> 00:27:22,120
+当市场出现跳空时，立刻会有一种自然倾向，即倾向于入场。
+Now, straight away, there's a natural tendency when a market gaps for a bias to be in the market.
+
+383
+00:27:22,120 --> 00:27:29,150
+这里的倾向，无非就是持仓，或者说至少是短期持仓。
+Now, bias means nothing more than positioning or at least short-term positioning.
+
+384
+00:27:29,150 --> 00:27:35,675
+正是这种短期持仓，会为我们带来跳空交易日的回补机会。
+It's this very short-term positioning that is going to give us our gap day gap fill opportunity.
+
+385
+00:27:35,675 --> 00:27:37,015
+那会发生什么呢？
+So, what happens?
+
+386
+00:27:37,015 --> 00:27:38,525
+市场上涨。
+The market comes up.
+
+387
+00:27:38,525 --> 00:27:42,440
+第一条规则：它回测并回补了跳空缺口。
+Rule number one, it retests and fills the gap.
+
+388
+00:27:42,440 --> 00:27:47,445
+第二条规则：它重新回到前一交易日的区间。
+Rule number two, it re-enters the previous day's range.
+
+389
+00:27:47,445 --> 00:27:51,337
+第三条：如果它重新回到前一交易日
+And number three, if it re-enters the previous
+
+390
+00:27:51,337 --> 00:27:55,229
+的价值区域低点，那好，这就是我们的控制识别标志
+day's value area low, bang, our control identifier
+
+391
+00:27:55,229 --> 00:28:04,473
+已触发，我们寻找多头交易机会，目标指向价值区域高点。
+has been initiated and we look for long side trades to target the top of the value area high.
+
+392
+00:28:04,475 --> 00:28:09,865
+现在，这套交易策略背后的逻辑其实非常简单。
+Now, the understanding and the logic behind this trade strategy is very simple.
+
+393
+00:28:09,865 --> 00:28:12,649
+由于市场存在偏向性，
+Because of the bias in the market,
+
+394
+00:28:12,649 --> 00:28:19,014
+我们知道市场中自然会有空头在向下跳空时做空。
+we know there are natural short positions that are shorting with the gap to the downside.
+
+395
+00:28:19,015 --> 00:28:26,755
+当价格回升并重新进入前一交易日的区间时，这些空头头寸仍会持有。
+As prices come higher and re-enter the previous day's range, we continue to see those short positions hold.
+
+396
+00:28:26,755 --> 00:28:34,740
+但终究会有一个时点，这些空头头寸可能会被回补或解仓。
+However, at some point, we are likely to see a fill of the or an unwind of these short positions.
+
+397
+00:28:34,740 --> 00:28:42,850
+而这个时点通常出现在价格重新进入前一交易日最被接受的价值区域时。
+And that point usually occurs once we re-enter the previous day's most accepted area of value.
+
+398
+00:28:42,850 --> 00:28:49,520
+这就是我们的控制识别标志，也是我们据此执行交易的依据。
+That is our control identifier and that is where we execute based on the following.
+
+399
+00:28:50,720 --> 00:28:54,780
+我们来看下一张幻灯片，我来给大家演示如何执行交易。
+Let's have a look at the next slide and I can show you how the execution occurs.
+
+400
+00:28:56,400 --> 00:29:01,580
+现在我们来看一个例子，看看执行交易需要什么样的操作方式。
+Let's now take a look at an example so that we can have a look at the execution style required.
+
+401
+00:29:03,020 --> 00:29:05,932
+如图中所示，
+As you can see in the example provided, the
+
+402
+00:29:05,932 --> 00:29:07,873
+市场在当天
+market has gapped higher on the
+
+403
+00:29:07,873 --> 00:29:10,138
+以高于前一交易日区间的价格跳空高开。
+day, higher than the previous day's range.
+
+404
+00:29:10,140 --> 00:29:16,340
+开盘后出现波动，并出现双向交易。
+It opens and we see an element of volatility and two-way trade.
+
+405
+00:29:16,340 --> 00:29:20,705
+跳空缺口被回补，第一条规则已满足。
+The gap is filled, so rule number one is ticked.
+
+406
+00:29:20,705 --> 00:29:28,560
+随后市场重新回到并持稳在前一交易日的区间内，第二条规则也满足了。
+The market then re-enters and holds onto the previous day's range. Rule number two is ticked.
+
+407
+00:29:30,720 --> 00:29:31,720
+这就是正确的信号。
+This is the correct one.
+
+408
+00:29:31,720 --> 00:29:32,230
+这是价值区域低点。
+This is the value area low.
+
+409
+00:29:32,230 --> 00:29:32,520
+这是价值区域高点。
+Which is the value area high.
+
+410
+00:29:32,520 --> 00:29:32,520
+这是原始价值区域，
+This is the original value area,
+
+411
+00:29:32,520 --> 00:29:34,100
+也就是价值区域高点。
+which is the value area high.
+
+412
+00:29:34,100 --> 00:29:42,415
+然后我们执行空头交易，目标指向价值区域低点进行平仓。
+And we then execute our short trades looking to target the value area low, where we cover.
+
+413
+00:29:42,415 --> 00:29:46,788
+一旦我们在价值区域高点下方激进入场，
+Once we enter the market aggressively below the value area
+
+414
+00:29:46,788 --> 00:29:48,974
+我们只需将止损设在
+high, we merely place our
+
+415
+00:29:48,974 --> 00:29:51,598
+与目标等额的位置。
+stop, the equivalent of our target.
+
+416
+00:29:53,100 --> 00:29:55,760
+接下来会发生什么呢？
+And what happens next slide?
+
+417
+00:29:55,760 --> 00:30:00,189
+我们还可以根据点位
+We can also place our stop based on the point
+
+418
+00:30:00,189 --> 00:30:02,403
+从价值区域高点
+from the value error high
+
+419
+00:30:02,403 --> 00:30:07,718
+或低点到前一交易日的极值点来设置止损，就像图中所示的例子。
+or low to the previous day's extreme, as in this example illustrated.
+
+420
+00:30:07,720 --> 00:30:15,600
+现在，理解的关键在于：是的，我们是在逆势操作，但我们利用了市场当前的持仓状况，
+Now, the key to understanding is, yes, we are going counter-trend, but with using the current positioning in the market,
+
+421
+00:30:15,600 --> 00:30:17,675
+就像这个例子中，
+as in this example, there's
+
+422
+00:30:17,675 --> 00:30:20,580
+存在短期多头头寸，解仓会
+short-term long positions, the unwinder that will
+
+423
+00:30:20,580 --> 00:30:23,900
+为我们带来所需的动能，
+give us the desired momentum in order to
+
+424
+00:30:23,900 --> 00:30:27,220
+以便利用头寸快速解仓的机会。
+take advantage of the quick unwind of positions.
+
+425
+00:30:27,220 --> 00:30:29,440
+我们再来看另一个例子。
+Let's take a look at another example.
+
+426
+00:30:31,020 --> 00:30:34,990
+如第二个例子中德国国债所示，
+As you can see in the second example, with the German Bunz,
+
+427
+00:30:34,990 --> 00:30:38,840
+注意市场如何低开，当天出现向下跳空。
+note how the market opens lower, so we gap lower on the day.
+
+428
+00:30:38,840 --> 00:30:42,380
+初期阶段相对波动剧烈。
+We have a relatively volatile initial period.
+
+429
+00:30:42,380 --> 00:30:46,340
+市场随后触发规则一，填补跳空缺口。
+The market then fills rule number one, and we close the gap.
+
+430
+00:30:46,340 --> 00:30:53,445
+接着进入规则二，重新测试或回到前一交易日的区间。
+We then re-enter rule number two, whereby we re-test or re-enter the previous day's range.
+
+431
+00:30:53,445 --> 00:30:56,402
+规则三，
+Rule number three, we re-enter the value
+
+432
+00:30:56,402 --> 00:30:59,359
+重新进入价值区域低点，
+area low where we initiate our long
+
+433
+00:30:59,359 --> 00:31:02,739
+我们在此发起多头交易，目标指向价值区域高点。
+trades looking to target the value area high.
+
+434
+00:31:02,740 --> 00:31:04,559
+再次注意，
+Note again, this is
+
+435
+00:31:04,559 --> 00:31:07,287
+这就是我们的目标。
+our target. We look to put
+
+436
+00:31:07,287 --> 00:31:10,925
+我们将止损设在前一交易日的低点下方，
+our stop below the previous day's low or
+
+437
+00:31:10,925 --> 00:31:13,198
+或等同于目标的位置。
+equivalent to the target used.
+
+438
+00:31:14,480 --> 00:31:19,790
+这就是我们的第二个跳空日填补缺口的例子。
+That is our second example of the gap day gap fill.
+
+439
+00:31:19,790 --> 00:31:24,642
+现在要注意，一定要理解不仅是反转策略的重要性，
+Now note, make sure you understand not just the importance of reversal
+
+440
+00:31:24,642 --> 00:31:27,876
+还要理解为什么它们能高效有用，
+strategies, but why they can be highly effective
+
+441
+00:31:27,876 --> 00:31:31,919
+只要我们重视风险管理。
+so long as we place emphasis on managing the risk.
+
+442
+00:31:31,920 --> 00:31:34,810
+逆势操作没问题。
+It's okay to go against the trend.
+
+443
+00:31:34,810 --> 00:31:43,530
+偶尔逆众而行也没问题，只要你保持客观，通过风险管理来控制。
+It's okay, you know, to sometimes stand against the herd. So long as you remain objective by managing your risk.
+
+444
+00:31:43,530 --> 00:31:46,974
+现在我们通过回放系列，
+Let's take a look now with the replay series at how an
+
+445
+00:31:46,974 --> 00:31:51,279
+看看这样的例子在实盘中如何展开，以及如何执行交易。
+example like this would play out and how we can execute on the live markets.
+
+446
+00:31:54,920 --> 00:31:57,505
+欢迎回到回放系列。
+So welcome back to the replay series.
+
+447
+00:31:57,505 --> 00:32:01,904
+现在我们要讨论跳空日策略，即填补缺口，
+And we're now going to talk about the strategy gap day, gap
+
+448
+00:32:01,904 --> 00:32:05,203
+这是我们策略系列中的第10个策略。
+fill, which is number 10 in our series of strategies.
+
+449
+00:32:05,570 --> 00:32:13,480
+首先要指出的是，跳空日策略实际上是一种反转类型的形态。
+Now, first thing to point out is that the gap day strategy is actually a reversal type pattern.
+
+450
+00:32:13,480 --> 00:32:16,882
+你们中很多人可能一直被教导，
+Now, a lot of you would always have been taught and would
+
+451
+00:32:16,882 --> 00:32:18,583
+会把跳空交易日
+have thought about the gap day
+
+452
+00:32:18,583 --> 00:32:21,418
+看作是一种动能趋势型策略。
+as a sort of momentum trending, you know, type strategy.
+
+453
+00:32:21,420 --> 00:32:28,765
+但很多时候这些跳空会失败，这正是它们为我们提供特别好的反转机会的原因。
+But a lot of the time these gaps do fail and that's why they provide us with particularly good reversal opportunities.
+
+454
+00:32:28,765 --> 00:32:31,825
+现在，我要展示的是，我会讲解
+Now, what I'm going to show is I'm going to go through
+
+455
+00:32:31,825 --> 00:32:33,355
+在出现跳空交易日时，
+the three types of rules that
+
+456
+00:32:33,355 --> 00:32:35,905
+你可以应用的三种规则。
+you can apply to when we have a gap day.
+
+457
+00:32:35,905 --> 00:32:39,443
+但更重要的，我会准确展示
+But then more importantly, I'm going to show you exactly
+
+458
+00:32:39,443 --> 00:32:43,334
+跳空交易日中反转操作的机会在哪里。
+where the reversal play comes when we have a gap day.
+
+459
+00:32:43,335 --> 00:32:45,425
+现在，先想想这个问题。
+Now, just think about that for one second.
+
+460
+00:32:45,425 --> 00:32:48,660
+想象一下，每次出现跳空交易日时，
+Imagine if every single time you had a gap day.
+
+461
+00:32:48,660 --> 00:32:52,798
+想象你有一个几乎一步到位的流程，
+Imagine you had an almost, you know, step-for-step process as
+
+462
+00:32:52,798 --> 00:32:55,807
+只需识别跳空交易日，
+to how you could execute just by identifying
+
+463
+00:32:55,807 --> 00:32:56,935
+就能执行交易。
+the gap day.
+
+464
+00:32:56,560 --> 00:32:59,917
+更重要的，想象你有一个策略，
+Now, more importantly, imagine if you had a strategy that
+
+465
+00:32:59,917 --> 00:33:01,595
+在跳空交易日出现时，
+was working, say, 7, 8 or 9 times
+
+466
+00:33:01,595 --> 00:33:04,616
+能在10次中赢7、8或9次。
+out of 10 whenever you had this gap day occurring.
+
+467
+00:33:05,960 --> 00:33:09,427
+所以，我才会给大家展示这个策略，
+And that is why I'm going to show you the strategy and
+
+468
+00:33:09,427 --> 00:33:12,894
+这也是为什么它是一个特别强大且盈利的交易策略。
+that is why this is a particularly powerful and profitable trade strategy.
+
+469
+00:33:12,895 --> 00:33:15,595
+首先，我们来快速过一下，
+So, firstly, let's just go through the, you know, the
+
+470
+00:33:15,595 --> 00:33:19,375
+市场出现跳空时的基本规则。
+basic gap rules, you know, when you do get a gap in the market.
+
+471
+00:33:19,375 --> 00:33:24,979
+现在，我们首先要讨论的是，
+Now, the first thing we talk about when we get a gap is whether
+
+472
+00:33:24,979 --> 00:33:31,384
+这个跳空是由基本面驱动的，还是由技术面驱动的。
+or not this gap is being created by fundamentals or whether it's being created by technicals.
+
+473
+00:33:31,385 --> 00:33:35,405
+现在，区分这一点很重要，因为当我们得到，比如，
+Now, the differentiation is important because when we get, let's
+
+474
+00:33:35,405 --> 00:33:41,435
+一些新的基本面信息时，
+say, we get some new fundamental information, whether that's an election vote, whether that's a
+
+475
+00:33:41,435 --> 00:33:50,279
+不管是选举投票，还是某个行业重大消息，或是其他任何信息，
+new, you know, huge piece of industry information, whatever it may be, when we get that fundamental that comes into the market.
+
+476
+00:33:50,280 --> 00:33:57,295
+市场的性格或运行方式会发生非常显著的变化。
+The market is going to change its personality or the way that it moves in a very significant way.
+
+477
+00:33:57,295 --> 00:34:01,150
+背后的简单逻辑是，市场中存在头寸分布。
+And the simple reasoning behind it is that there is positioning in the market.
+
+478
+00:34:01,150 --> 00:34:04,760
+所以，如果市场中有大量头寸，
+So, if there are a lot of positions and now all of
+
+479
+00:34:04,760 --> 00:34:09,574
+突然之间我们得到新的市场信息，
+a sudden we've got this new information in the market, those positions need to be adjusted.
+
+480
+00:34:09,575 --> 00:34:11,502
+这些头寸就需要调整。
+Whether they, you know, some people add
+
+481
+00:34:11,502 --> 00:34:13,429
+是加仓这些头寸，还是有人对冲这些头寸,
+to those positions, whether some people hedge
+
+482
+00:34:13,429 --> 00:34:16,458
+或者有人从这些头寸中止损离场。
+those positions, or whether some people stop out of those positions.
+
+483
+00:34:16,460 --> 00:34:21,052
+仅仅是市场中出现新的基本面信息这一事实,
+The mere fact that we've got a new fundamental piece of information in the
+
+484
+00:34:21,052 --> 00:34:25,644
+就意味着市场将迎来一阵密集的交易活动和波动。
+market means that we are going to get a hive of activity and volatility.
+
+485
+00:34:25,645 --> 00:34:30,332
+这一点很重要，因为波动意味着市场的性格
+And that's important to understand because volatility means that the market's personality
+
+486
+00:34:30,332 --> 00:34:35,409
+会变得非常激进，或者看起来非常激进。
+is going to be very aggressive or it's going to appear very aggressive.
+
+487
+00:34:35,410 --> 00:34:42,500
+现在，作为日内交易者，很多时候，这种波动可能会让你对市场的真实表现产生恐惧。
+Now, as day traders, a lot of the time, this volatility can make you fear what the market's actually showing you.
+
+488
+00:34:42,500 --> 00:34:48,240
+现在，我想说的是，记住，虽然高波动时风险更高,
+Now, what I will say, remember, whilst there is a higher risk attached when there is higher volatility,
+
+489
+00:34:48,240 --> 00:34:51,860
+但同时也蕴含着更大的机会。
+there is also a higher potential for opportunity.
+
+490
+00:34:51,860 --> 00:34:53,385
+所以别忘了这一点。
+So don't forget that.
+
+491
+00:34:53,385 --> 00:34:56,223
+如果你拥抱波动、接受波动,
+If you embrace the volatility, take on
+
+492
+00:34:56,223 --> 00:34:59,061
+你就有可能
+the volatility, you will get the potential
+
+493
+00:34:59,061 --> 00:35:02,304
+获得潜在的收益，只要你应用一个非常基础的策略。
+upside if you apply a very basic strategy.
+
+494
+00:35:02,305 --> 00:35:07,400
+现在，从技术缺口的角度来看，这仅仅是指市场出现了隔夜行情。
+Now, in terms of a technical gap, this is merely where we've had an overnight move in the market.
+
+495
+00:35:07,400 --> 00:35:16,060
+这会迫使你交易的品种从前一交易日的区间内以缺口开盘。
+And this is, you know, forcing whichever mark you're trading to open on a gap from the previous day's range.
+
+496
+00:35:16,060 --> 00:35:20,105
+现在，缺口的三个基本规则如下。
+Now, the three basic rules to a gap are as follows.
+
+497
+00:35:20,105 --> 00:35:21,794
+首先，你要问自己，
+First and foremost, you have
+
+498
+00:35:21,794 --> 00:35:24,159
+如果这是前一交易日
+to ask yourself, if this is our
+
+499
+00:35:24,159 --> 00:35:26,862
+而我们向下跳空，那么
+previous day and we gap below it, the
+
+500
+00:35:26,862 --> 00:35:30,917
+问题在于，这个缺口会被回补吗？这是最大的问题。
+question is, will that gap fill? That is the big ultimate question.
+
+501
+00:35:30,920 --> 00:35:32,100
+缺口会回补吗？
+Does the gap fill?
+
+502
+00:35:32,100 --> 00:35:34,369
+现在，第一条规则，如果市场
+Now, rule number one, if the market
+
+503
+00:35:34,369 --> 00:35:36,962
+以缺口开盘，那么很大概率
+opens on gap, there is a high probability
+
+504
+00:35:36,962 --> 00:35:43,769
+市场会尝试测试这个缺口。它至少会试图回补这个缺口。
+the market is going to attempt to test that gap. It's going to try at least to fill in that gap.
+
+505
+00:35:43,770 --> 00:35:46,005
+现在，有三种情况可能发生。
+Now, one of three things can happen.
+
+506
+00:35:46,005 --> 00:35:48,540
+要么市场在尝试回补缺口时失败，
+Either the market fails to fill the
+
+507
+00:35:48,540 --> 00:35:51,075
+然后市场
+gap on its attempt and the market
+
+508
+00:35:51,075 --> 00:35:55,059
+继续在缺口下方进行某种分销。
+then continues, you know, to sort of distribute below the gap.
+
+509
+00:36:06,660 --> 00:36:24,060
+同样，我们会讨论亚马逊需要开始宣布的最终标记。
+Again, we are going to talk about how final mark that Amazon needs to start being announced.
+
+510
+00:36:24,060 --> 00:36:25,020
+其次，重点说第五个，因为你知道其中一个会与它们达成一致，如果市场...
+Second and foremost, let's say five there. Because you know that one here that's going to be terms with them, if the marketiyor jeze,
+
+511
+00:36:46,560 --> 00:36:51,680
+这是第二句。
+And this is the second sentence.
+
+512
+00:36:51,680 --> 00:36:51,955
+好，好的。
+Okay. Alright.
+
+513
+00:36:51,955 --> 00:36:52,020
+谢谢。
+Thank you.
+
+514
+00:36:54,900 --> 00:36:54,980
+我们开始。
+Here we go.
+
+515
+00:36:54,980 --> 00:36:57,118
+参考点首先是
+Reference points are first and foremost the
+
+516
+00:36:57,118 --> 00:36:59,256
+32点位，也就是我们前一交易日的
+32s, which is our gap from the
+
+517
+00:36:59,256 --> 00:37:02,004
+跳空缺口或前一交易日的高点。
+previous day, or our high from the previous day.
+
+518
+00:37:02,005 --> 00:37:04,806
+然后第二个关键参考区域是
+Then our second key area of reference
+
+519
+00:37:04,806 --> 00:37:10,409
+26点位，即前一交易日的价值区域高点。
+point is the 26s, which is the value area high of the previous day.
+
+520
+00:37:10,410 --> 00:37:17,215
+第三个参考点是13点位，即当日价值区域低点。
+And our third reference point is the 13s, which is our value area low of the day.
+
+521
+00:37:17,215 --> 00:37:23,260
+现在我们要观察的是，市场在这三个参考点会如何反应。
+Now what we're looking for, we're looking to see how the market responds at these three reference points.
+
+522
+00:37:23,260 --> 00:37:25,450
+更重要的是，当我为大家讲解
+More importantly, as I go through
+
+523
+00:37:25,450 --> 00:37:28,370
+这些特征时，我会展示
+the characteristics with you, I'm going to show
+
+524
+00:37:28,370 --> 00:37:33,480
+执行方式，或你想要实施反转策略的位置。
+you the execution style or where you want to be implementing a reversal strategy.
+
+525
+00:37:33,480 --> 00:37:36,975
+现在开始录制，我们一起来看。
+So let's get the recording going and we can go through it together.
+
+526
+00:37:36,975 --> 00:37:41,505
+首先要指出的是，我们可以看到市场是跳空开盘的。
+Now, the first thing to point out is that we can see the market has opened on gap.
+
+527
+00:37:41,505 --> 00:37:43,840
+所以开盘时大约有6-7个Tick的跳空。
+So we've opened roughly with a 6-7 tick gap.
+
+528
+00:37:43,840 --> 00:37:47,320
+现在市场试图向上推进。
+The market has now attempted to move itself higher.
+
+529
+00:37:48,420 --> 00:37:50,330
+现在，我们首先要关注的是，
+Now, what we want to pay attention
+
+530
+00:37:50,330 --> 00:37:52,785
+记住我们之前说的，规则
+to first and foremost, remember what we said, rule
+
+531
+00:37:52,785 --> 00:37:55,513
+第一条，市场是否填补了跳空缺口？
+number one, does the market manage to fill the gap?
+
+532
+00:37:55,515 --> 00:38:00,015
+可以看到市场开盘后，尚未尝试回补缺口。
+So we can see that the market's opened and it's yet to attempt to fill the gap.
+
+533
+00:38:00,015 --> 00:38:03,960
+而回补缺口的尝试，是很多交易者会犯错的地方。
+Now, this attempt at filling the gap is where a lot of traders make a mistake.
+
+534
+00:38:03,960 --> 00:38:08,945
+别忘了，当市场跳空开盘时，意味着开盘处于失衡状态。
+Don't forget, when a market is open on gap, it is opening out of balance.
+
+535
+00:38:08,945 --> 00:38:14,670
+换句话说，失衡的市场通常会表现出较大的波动性。
+In other words, by definition, a market that is out of balance is going to show a lot of volatility.
+
+536
+00:38:14,670 --> 00:38:20,100
+所以要记住，市场可能需要一点时间来测试缺口。
+So remember, it can take a little bit of time for the market to at least test the gap.
+
+537
+00:38:20,100 --> 00:38:23,545
+现在，我举个例子，比如德国国债期货，
+Now, what I would say, what I would use for instance in a German Bund example,
+
+538
+00:38:23,545 --> 00:38:27,017
+我会用现金市场开盘后的
+is I would use at least the first hour of
+
+539
+00:38:27,017 --> 00:38:31,184
+第一个小时作为市场测试缺口的参考点。
+cash as a reference point for the market to test the gap.
+
+540
+00:38:31,185 --> 00:38:34,331
+所以，无论是这个M点还是N点位，我会
+So, either this M or this N print, I would
+
+541
+00:38:34,331 --> 00:38:36,848
+预期市场至少会测试
+expect the market to at least just test
+
+542
+00:38:36,848 --> 00:38:40,938
+或者观察市场是否真的能测试缺口及其周边区域
+or see if that market can actually test in and around the gap.
+
+543
+00:38:40,940 --> 00:38:45,145
+现在可以看到，市场出现了M型成交单，确实出现了M型成交单
+Now, as we can see, the market's coming with an M print, it's coming with an M print.
+
+544
+00:38:45,145 --> 00:38:49,235
+现在正在尝试测试缺口的下边界
+And it's trying to now test the lower bounds of the gap.
+
+545
+00:38:49,235 --> 00:38:51,741
+首先，我们可能会看到
+So, first and foremost, we could see the
+
+546
+00:38:51,741 --> 00:38:55,814
+市场进入缺口区域后直接反弹
+market comes into that gap area and straight away the market bounces off.
+
+547
+00:38:55,815 --> 00:38:57,885
+这似乎在告诉我们，缺口正在被填补
+So, it's kind of telling us we're filling
+
+548
+00:38:57,885 --> 00:38:59,696
+我们已经填补了
+in the gap, we've now filled the
+
+549
+00:38:59,696 --> 00:39:03,578
+市场中的缺口，但不愿意进入前一个交易日的区间
+gap in the market, but we're not willing to enter into the previous day's range.
+
+550
+00:39:03,580 --> 00:39:08,560
+所以在这种情况下，我们仍然需要做多市场
+So, at this point in time, in this example, we still need to be buyers of the market.
+
+551
+00:39:08,560 --> 00:39:12,035
+这里没有反转的可能性，没有反转策略
+There's no reversal option here. There's no reversal strategy.
+
+552
+00:39:12,035 --> 00:39:16,900
+缺口可能被填补，但并不意味着我们现在就要做空
+The gap might be filled, but it does not imply we want to be short traders yet.
+
+553
+00:39:16,900 --> 00:39:20,855
+记住我之前对你们说的，这个交易信号的关键在于执行
+Remember what I said to you. The key to this trade setup is execution.
+
+554
+00:39:20,855 --> 00:39:27,690
+你们必须完善执行，必须耐心等待这个入场形态
+You have to perfect the execution. You have to be patient to wait to take on this trade setup.
+
+555
+00:39:27,690 --> 00:39:33,305
+现在，再次注意市场如何反弹，并出现了一波小幅上涨
+Now, again, notice how the market bounces off and we get a little bit of a rotation higher.
+
+556
+00:39:33,305 --> 00:39:38,200
+所以我们可能看到市场仅仅是在缺口内及上方区间轮动
+So we could see the market is just merely rotating in and above the gap.
+
+557
+00:39:38,200 --> 00:39:41,570
+第一条规则，记得我们说过，缺口是否被填补？
+So, rule number one, remember we said, does the gap fill?
+
+558
+00:39:41,570 --> 00:39:44,725
+我们可以看到，可以打钩了，缺口已经填补
+And we can see, we can give that a tick. The gap has now filled.
+
+559
+00:39:44,725 --> 00:39:50,420
+第二条规则，我们是否重新进入区间？重新进入前一个交易日的区间？
+Rule number two, do we re-enter range? Re-enter the previous day's range.
+
+560
+00:39:51,620 --> 00:39:54,170
+这就是这个交易信号的第二个线索
+And that's the second clue to this trade setup.
+
+561
+00:39:54,170 --> 00:40:00,010
+现在，我们即将看到市场重新进入前一个交易日的区间
+So, we are now about to see this market re-enter into the previous day's range.
+
+562
+00:40:00,010 --> 00:40:03,182
+现在，理解缺口交易日的重要一点是
+Now, the important thing to understand when we have a
+
+563
+00:40:03,182 --> 00:40:06,354
+比如图中的缺口交易日，市场会
+gap day in this example, okay, is that the market
+
+564
+00:40:06,354 --> 00:40:13,333
+守住缺口，或会守住缺口所带来的意图或主动性，尽可能长时间地守住
+will hold the gap or it will hold the intent or the initiative taken from the gap for as long as possible.
+
+565
+00:40:13,335 --> 00:40:14,265
+这是什么意思呢？
+So, what do I mean by that?
+
+566
+00:40:14,265 --> 00:40:17,826
+比如，像图中所示的缺口交易日
+If, for example, we have a gap day as illustrated,
+
+567
+00:40:17,826 --> 00:40:20,675
+你会不断看到多头试图
+you will constantly see buyers keep trying to
+
+568
+00:40:20,675 --> 00:40:24,949
+守住这个缺口，试图维持这个缺口，原因很简单
+defend this gap, keep trying to hold this gap for obvious reasons.
+
+569
+00:40:24,950 --> 00:40:28,420
+如果你是从这个点位做多，现在已经处于盈利状态
+If you were long from this point, you're substantially on side now.
+
+570
+00:40:28,420 --> 00:40:31,240
+所以继续持有这些多头是合理的
+So, it makes sense to hold on to those longs
+
+571
+00:40:31,240 --> 00:40:33,496
+尽可能长时间持有，在这种情况下
+for as long as possible, in the case
+
+572
+00:40:33,496 --> 00:40:36,034
+市场出现强劲上涨行情时。
+that we get an aggressive move to the upside.
+
+573
+00:40:36,035 --> 00:40:39,035
+现在我们暂停一下，看看刚才发生了什么。
+So, let's just pause that now and see what's just occurred.
+
+574
+00:40:39,035 --> 00:40:45,795
+可以看到，市场回到了缺口区域，注意波动性也发生了变化。
+So, we can see the market has come into the gap and note how the volatility has shifted.
+
+575
+00:40:45,795 --> 00:40:48,287
+之前我们看到波动区间相对较小，
+So, we can see we had relatively small
+
+576
+00:40:48,287 --> 00:40:50,779
+然后在成交量分布图上出现了一个明显的
+ranges. We had a nice pickup in the
+
+577
+00:40:50,779 --> 00:40:56,074
+成交量激增。但自此之后，最近五组TPO的波动区间又相对缩小了。
+Pprint. And since then, the ranges have been relatively small over the last five sets of TPOs.
+
+578
+00:40:56,075 --> 00:41:03,820
+突然之间，在成交量分布图上，注意波动性的转变，注意现在出现的区间扩展。
+All of a sudden, on the Vprint, notice the shift in volatility, notice the range expansion that's now occurred.
+
+579
+00:41:03,820 --> 00:41:07,007
+更重要的是，我们现在不仅重新回到了
+More importantly, we're now not just back inside
+
+580
+00:41:07,007 --> 00:41:10,194
+前一交易日的波动区间内，
+the previous day's range, but we're also now
+
+581
+00:41:10,194 --> 00:41:13,779
+还在尝试进入前一交易日的价值区域。
+trying to get into the previous day's value area.
+
+582
+00:41:14,780 --> 00:41:18,780
+现在，关键的考虑因素，关键的理解点在于，
+Now, the key consideration, the key thing to understand is,
+
+583
+00:41:18,780 --> 00:41:25,230
+记得，之前是多头在守护缺口，只要缺口存在，多头就会持仓。
+remember, we had buyers defending the gap. We had buyers holding so long as the gap held.
+
+584
+00:41:25,230 --> 00:41:27,025
+然后我们看到了一些止损盘。
+We then saw some stops.
+
+585
+00:41:27,025 --> 00:41:29,871
+所以，现在我们看到，一旦进入前一交易日的区间，
+So, we've now seen, as soon as we entered the
+
+586
+00:41:29,871 --> 00:41:32,148
+就有部分短线多头开始放弃他们的多头头寸。
+previous day's range, we've seen a few of
+
+587
+00:41:32,148 --> 00:41:34,709
+那些短线买家会放弃这些多头头寸。
+those short-term buyers give up on those long positions.
+
+588
+00:41:34,710 --> 00:41:38,760
+并出现了一些止损盘或向下的波动。
+And we've gotten a little bit of a stop out or the volatility to the downside.
+
+589
+00:41:38,760 --> 00:41:40,795
+这就是第二步。
+Now, that's step number two.
+
+590
+00:41:40,795 --> 00:41:48,725
+我们已经重新进入前一交易日的区间，但这还不构成反转成交量分析策略。
+We've re-entered the previous day's range. This does not constitute a gap-fill reversal trade strategy yet.
+
+591
+00:41:48,725 --> 00:41:52,520
+现在我们想看到的是，
+What we want to see now is we want to
+
+592
+00:41:52,520 --> 00:41:55,556
+市场收盘时回到前一交易日的
+see the market close back inside the previous
+
+593
+00:41:55,556 --> 00:42:00,489
+价值区域内部，只有到那时我们才会启动策略。
+day's value area, and then and only then do we initiate our strategy.
+
+594
+00:42:00,490 --> 00:42:04,010
+所以，注意，现在还不是做空的时机，好吗？
+So, note, this is not the time to be short yet, okay?
+
+595
+00:42:04,010 --> 00:42:09,100
+市场很可能会再次反弹走高，并继续上涨。
+We could very easily rotate back higher, and the market could go and continue higher.
+
+596
+00:42:09,100 --> 00:42:10,580
+现在，别忘了我之前跟你们说的。
+Now, don't forget what I said to you.
+
+597
+00:42:10,580 --> 00:42:13,767
+当市场出现缺口时，无论是基本面还是技术面的原因，
+When there's a gap day in the market, whether it's
+
+598
+00:42:13,767 --> 00:42:15,679
+参与者会比你想象的更长时间地保持缺口方向。
+fundamental or technical, participants will stay
+
+599
+00:42:15,679 --> 00:42:19,823
+他们几乎会因为缺口而对某一方向产生偏向。
+in the direction of the gap for a lot longer than you think.
+
+600
+00:42:19,825 --> 00:42:23,560
+他们几乎会因缺口而偏向一个方向。
+They'll almost be biased in one direction because of the gap.
+
+601
+00:42:23,560 --> 00:42:27,308
+所以你必须耐心等待
+And that's why you have to be patient and wait
+
+602
+00:42:27,308 --> 00:42:30,306
+直到市场收盘价回到前一交易日的
+until the market closes back inside the previous
+
+603
+00:42:30,306 --> 00:42:33,679
+价值区域内，再执行反转交易信号
+day's value area before executing the reversal trade setup.
+
+604
+00:42:33,680 --> 00:42:38,710
+现在继续，看看机会到底在哪里出现
+Let's continue on now and see where that opportunity actually comes.
+
+605
+00:42:38,710 --> 00:42:44,885
+现在你能看到，市场已经稳稳地跌破了164.25
+So, you can see now the market's now firmly back in below that 164.25,
+
+606
+00:42:44,885 --> 00:42:52,635
+突然间，市场收盘价又回到了前一交易日的价值区域下方
+and all of a sudden the market has now closed the Viprin back in below the previous day's value area.
+
+607
+00:42:52,635 --> 00:42:56,008
+现在，如你所见，市场收盘价一回到前一交易日的
+Now, as you can see, the minute the market closed back inside
+
+608
+00:42:56,008 --> 00:42:58,818
+价值区域内，就在这时，我们就
+the previous day's value area, at that point, we then... ...
+
+===== END AFTER_OPTIMIZE =====

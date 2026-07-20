@@ -1,0 +1,412 @@
+===== AFTER_OPTIMIZE (82 entries) =====
+1
+00:00:00,440 --> 00:00:04,100
+欢迎来到第14单元，策略9。
+Welcome to Unit 14, Strategy 9.
+
+2
+00:00:04,980 --> 00:00:11,020
+但这可能不是大家期望的完美案例。
+Again, not the picture-perfect example, I think, that most of you are hoping for.
+
+3
+00:00:11,640 --> 00:00:13,749
+和之前单元中的一个案例类似，
+So again, just like we did in one
+
+4
+00:00:13,749 --> 00:00:15,594
+我想给大家
+of the previous units, I wanted to
+
+5
+00:00:15,594 --> 00:00:18,494
+展示一个略有不同的Delta与Y策略变体。
+give you a slightly different variation of the Delta and Y.
+
+6
+00:00:18,500 --> 00:00:25,260
+首先，我们先看市场背景。
+Now, the first thing to interpret is that, let’s just look at the market context.
+
+7
+00:00:25,380 --> 00:00:26,810
+市场在油价方面
+We can see the market sold off
+
+8
+00:00:26,810 --> 00:00:28,240
+出现大幅抛售。我们从58.630
+quite aggressively in oil. We sold off
+
+9
+00:00:28,240 --> 00:00:30,488
+一路下跌至约55.96。
+all the way down from 58.630, all the way down to around 55.96.
+
+10
+00:00:31,820 --> 00:00:41,760
+从技术面看，市场中确实有一些空头头寸。
+Technically speaking, we’ve captured a little bit of short positioning in the market, technically. Okay.
+
+11
+00:00:42,100 --> 00:00:44,312
+我们知道这一点，
+We know that not just because of
+
+12
+00:00:44,312 --> 00:00:48,737
+不仅是因为价格，还因为持仓区间的位置。
+price, but we also know it because of where the trade location was holding.
+
+13
+00:00:48,741 --> 00:00:52,219
+抛售后，市场开始进入横盘。
+We had sold off and begun this process of sideways trading.
+
+14
+00:00:52,360 --> 00:00:57,475
+现在，唯一不太协调的是，
+Now, the only thing that doesn’t really work together with
+
+15
+00:00:57,475 --> 00:01:01,195
+这个Delta头寸解仓的方向。
+this Delta position unwind is that we actually
+
+16
+00:01:01,195 --> 00:01:08,635
+当天Delta其实是正的，下方显示Delta为正4,650。
+have quite a positive Delta on the day. You can see below, the Delta is positive 4,650.
+
+17
+00:01:09,040 --> 00:01:13,856
+如果出现Delta解仓，理想情况不会向上延伸。
+So if we were going to see a Delta unwind, we wouldn’t ideally be seeing it to the upside,
+
+18
+00:01:15,060 --> 00:01:24,120
+但话又说回来，有时解仓确实会在区间内发生。
+That being said, however, sometimes you do get Delta unwinds that are within the range.
+
+19
+00:01:24,340 --> 00:01:26,356
+通常，Delta解仓时，
+Often, the Delta unwinds, the market
+
+20
+00:01:26,356 --> 00:01:28,372
+市场会延伸——
+will extend— maybe all the way
+
+21
+00:01:28,372 --> 00:01:33,412
+可能一路延伸至低点捕获空头，或至高点捕获多头。
+to the low to capture short positions, or to the high to capture long positions.
+
+22
+00:01:33,416 --> 00:01:38,458
+随后，市场会缓慢反转，朝‘底线’区域靠近。
+Slowly but surely, we start to reverse toward that line-in-the-sand area we spoke about.
+
+23
+00:01:38,600 --> 00:01:41,340
+一旦突破或跌破这条底线，就会激烈解仓。
+And once we get above or below that line in the sand, we unwind quite aggressively.
+
+24
+00:01:45,400 --> 00:01:47,220
+现在，我要展示的案例中确实有一条底线。
+Now, in the example I’m going to show you, we do have a line in the sand.
+
+25
+00:01:47,320 --> 00:01:49,908
+如果画一条趋势线，
+If we were to draw some sort of
+
+26
+00:01:49,908 --> 00:01:51,849
+就能非常清楚地看到，
+a trend line, we could very
+
+27
+00:01:51,849 --> 00:01:55,732
+这条底线大约在56.15区域。
+clearly see that line in the sand comes in around the 56.15 area.
+
+28
+00:01:56,747 --> 00:02:01,098
+我们来看看后续会发生什么，市场如何反应。
+So let's watch what happens and let's see how the market responds.
+
+29
+00:02:01,380 --> 00:02:03,760
+首先要注意的是，
+The first thing to note is that
+
+30
+00:02:03,760 --> 00:02:08,520
+可能会有一波向上的冲动，但这不一定是Delta解仓。
+we're likely to get some rush to the upside. Not necessarily a Delta unwind.
+
+31
+00:02:08,520 --> 00:02:12,940
+为什么？因为市场里显然仍有相当正的Delta。
+Why? Because we obviously still have a very positive Delta in the market.
+
+32
+00:02:13,220 --> 00:02:20,960
+但注意，市场一旦突破56.15，观察其反应。
+Straight away, we can see that the market does, however, once it gets above this 56.15, note the reaction.
+
+33
+00:02:21,100 --> 00:02:23,478
+这正是这个案例的精彩之处。
+This is why this is quite an interesting example.
+
+34
+00:02:23,478 --> 00:02:25,592
+成交量出现明显激增。
+We do get quite a surge in volume.
+
+35
+00:02:25,592 --> 00:02:28,074
+成交量上升，
+A pick-up in the volume and a
+
+36
+00:02:28,074 --> 00:02:30,556
+Delta也同步上升，
+pick-up in the Delta, which suggests to
+
+37
+00:02:30,556 --> 00:02:33,747
+这说明那里确实有止损单被触发。
+us that there are actually positions stopping up there.
+
+38
+00:02:33,751 --> 00:02:38,043
+从Delta角度看，可能并没有空头持仓，
+There might not be short positions in a Delta sense,
+
+39
+00:02:40,620 --> 00:02:42,910
+市场突破56.16后，
+As we can see, the market getting
+
+40
+00:02:42,910 --> 00:02:44,545
+成交量激增。
+above those 56.16s, we get
+
+41
+00:02:44,545 --> 00:02:47,162
+这一点至关重要，因为通常
+a volume surge. This is crucial because a
+
+42
+00:02:47,162 --> 00:02:50,760
+我们会假设累积Delta代表持仓。
+lot of the time, we assume that cumulative Delta means positioning.
+
+43
+00:02:50,764 --> 00:02:57,939
+换句话说，我们会认为市场Delta为正5,309，意味着持仓是多头。
+In other words, we assume that because the market has a positive 5,309 Delta, that the position is long.
+
+44
+00:02:58,200 --> 00:03:00,643
+但情况并非总是如此。
+It isn’t always the case.
+
+45
+00:03:00,643 --> 00:03:08,380
+记住，很多时候，尤其是在移仓或重大基本面事件期间，Delta可能会失真。
+Remember, a lot of the time, particularly over roll events or big fundamental events, the Delta can be skewed.
+
+46
+00:03:08,380 --> 00:03:11,089
+Delta并不总是等同于
+Delta does not always equal
+
+47
+00:03:11,089 --> 00:03:14,339
+市场持仓。它只是一个粗略的
+market positioning. It’s a rough
+
+48
+00:03:14,339 --> 00:03:20,298
+指标，并非市场持仓的完美体现。
+indication, but it’s not a perfect example of market positioning.
+
+49
+00:03:17,340 --> 00:03:20,573
+做分析时务必记住这一点。
+Just bear that in mind when you do your analysis.
+
+50
+00:03:20,573 --> 00:03:22,389
+随后市场小幅波动，
+The market then rotates a little
+
+51
+00:03:22,389 --> 00:03:24,205
+我想说的是，
+bit, and I just want to
+
+52
+00:03:24,205 --> 00:03:27,837
+这里出现了双向交易。
+talk about We get this little bit of a two-way trade here.
+
+53
+00:03:27,860 --> 00:03:30,648
+我们可以看到市场目前维持得不错，
+We can see the market holding up
+
+54
+00:03:30,648 --> 00:03:32,639
+表现很好
+quite nicely now, and all
+
+55
+00:03:32,639 --> 00:03:34,630
+突然，我们看到
+of a sudden, we get
+
+56
+00:03:34,630 --> 00:03:38,215
+突然，市场回落。
+So, all of a sudden, the market comes in.
+
+57
+00:03:39,140 --> 00:03:40,442
+显然，我们在低点看到相当多的订单吸收，
+Obviously, we see quite a
+
+58
+00:03:40,442 --> 00:03:42,265
+在低点出现订单吸收
+bit of absorption at the low, a
+
+59
+00:03:42,265 --> 00:03:45,912
+Delta略有负值，成交量没有明显变化。
+little bit of a negative Delta, nothing really going on in terms of volume.
+
+60
+00:03:45,920 --> 00:03:54,992
+所以，成交量几乎没变化，市场突然被大幅买入。
+So, we can see no real changes in volume, and suddenly, the market just goes very aggressively bid
+
+61
+00:03:56,504 --> 00:04:03,100
+图表回来了，注意，市场突然被大幅拉升。
+The chart’s back, and note, we suddenly see the market go quite aggressively bid up.
+
+62
+00:04:03,220 --> 00:04:05,638
+好，我先在这里暂停。
+So, straight away, I just want to pause it there.
+
+63
+00:04:05,638 --> 00:04:10,232
+怎么判断这是Delta解仓，还是持仓解仓？
+How do we know this is a Delta Unwind, or how do we know this is a Position Unwind?
+
+64
+00:04:10,232 --> 00:04:11,199
+很简单。
+It’s very simple.
+
+65
+00:04:11,340 --> 00:04:17,173
+一是发生在区间中间，二是看足迹结构。
+One, it’s occurring in the middle of the range, and two, look at the structure of the footprint.
+
+66
+00:04:17,173 --> 00:04:19,254
+大量买卖失衡，
+A lot of imbalances, a lot
+
+67
+00:04:19,254 --> 00:04:21,335
+到处都是零，
+of zeros all over the place,
+
+68
+00:04:21,335 --> 00:04:25,497
+然后成交量和Delta大幅上升，价格激烈拉升。
+and a very aggressive snap higher on higher volume and higher Delta.
+
+69
+00:04:25,500 --> 00:04:32,153
+本质上，这仍是市场持仓解仓的一个很好的例子。
+So, in essence, still a very good example of an unwind of the positioning in the market.
+
+70
+00:04:32,153 --> 00:04:42,019
+只是不一定是我们通常认为的那种完美案例。
+It’s just not necessarily an unwind in a typical sense would have been more picture-perfect for us.
+
+71
+00:04:42,019 --> 00:04:44,799
+我现在播放一遍。
+I’m just going to play that through.
+
+72
+00:04:44,880 --> 00:04:46,045
+显然，市场
+Obviously, the market
+
+73
+00:04:46,045 --> 00:04:48,765
+接着继续停损
+does then continue the process of stopping
+
+74
+00:04:48,765 --> 00:04:54,205
+并解仓所有头寸，一旦突破那条关键价格线。
+out, unwinding all those positions once we get beyond that line in the sand.
+
+75
+00:04:54,209 --> 00:04:59,520
+这是停损发生在区间中间的基础案例。
+A very basic example, a very simple example of stops occurring in the middle of the range.
+
+76
+00:04:59,900 --> 00:05:04,000
+再去看一遍，重播一下。记住，Delta解仓，
+Do go and have a look Play that through again. Remember, Delta Unwinds,
+
+77
+00:05:04,000 --> 00:05:08,960
+有时会是完美案例，解仓现有Delta。
+Sometimes it is going to be picture-perfect, and it is going to unwind the Delta that is there.
+
+78
+00:05:09,180 --> 00:05:15,475
+但有时Delta也可能让人困惑，所以一定要理解区别。
+But sometimes the Delta can also be a little bit confusing, So just make sure that you understand the difference.
+
+79
+00:05:18,020 --> 00:05:21,280
+第14单元 第9策略的练习。
+Drill for Unit 14, Strategy 9.
+
+80
+00:05:21,280 --> 00:05:23,160
+还有一个练习环节。
+We’ve got one more drill session to go.
+
+81
+00:05:23,300 --> 00:05:28,300
+如果想看其他例子，下面有实际案例。祝好运。
+If you want another example of this, obviously, you have got the practical examples below. Good luck.
+
+82
+00:05:28,480 --> 00:05:30,080
+第15单元见。
+I’ll see you again in Unit 15.
+
+===== END AFTER_OPTIMIZE =====

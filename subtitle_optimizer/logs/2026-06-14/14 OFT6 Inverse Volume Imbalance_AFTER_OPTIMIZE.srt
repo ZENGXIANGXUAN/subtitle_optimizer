@@ -1,0 +1,472 @@
+===== AFTER_OPTIMIZE (94 entries) =====
+1
+00:00:00,000 --> 00:00:01,716
+大家好，我是Order Flow的Mike
+hey everyone it's mike from order
+
+2
+00:00:01,716 --> 00:00:03,432
+今天我们来讲
+flows and in this video i'll
+
+3
+00:00:03,432 --> 00:00:05,148
+Order Flow Trader 6中
+be talking about the inverse volume
+
+4
+00:00:05,148 --> 00:00:09,152
+反向成交量不平衡的设置 来看一下图表
+imbalance setting in the order flows trader 6 software all right so let's take a
+
+5
+00:00:09,440 --> 00:00:11,612
+看一下图表
+look at the chart okay so
+
+6
+00:00:11,612 --> 00:00:13,784
+这是我们的图表
+here is our chart and just
+
+7
+00:00:13,784 --> 00:00:15,956
+先看指标设置
+really quick in the indicator settings
+
+8
+00:00:15,956 --> 00:00:17,766
+调出设置面板
+just pull them up show
+
+9
+00:00:17,766 --> 00:00:23,197
+告诉大家位置和作用 这是少数默认设为待测试生效的设置之一
+you where it is and explain it now this is one of the few settings
+
+10
+00:00:23,200 --> 00:00:26,499
+默认设为待测试生效
+that the default is set to until tested
+
+11
+00:00:26,499 --> 00:00:29,798
+在设置中找到反向成交量不平衡
+and let's just scroll down in here inverse
+
+12
+00:00:29,798 --> 00:00:33,097
+默认是启用的 我保持默认
+volume imbalance default is enabled i have the
+
+13
+00:00:33,097 --> 00:00:36,396
+将最小聚类大小设为2
+default setting for inverse volume imbalance minimal cluster
+
+14
+00:00:36,396 --> 00:00:52,066
+意味着需要两个反向不平衡 默认绘制模式是待测试生效
+size set to two meaning there would have to be two inverse imbalances and by default it is drawn until tested now it's going to color it blue for bullish or red for bearish and the opacity is 20
+
+15
+00:00:53,120 --> 00:00:55,888
+蓝色表示看涨，红色表示看跌 不透明度20%
+and the inverse volume imbalance zone size is
+
+16
+00:00:55,888 --> 00:00:58,656
+反向成交量不平衡区域大小设为1
+set to one but it doesn't matter if
+
+17
+00:00:58,656 --> 00:01:06,960
+但无关紧要 只要设为待测试生效
+as long as it's set to until tested it'll appear that really only takes effect if you change it from until tested to fixed
+
+18
+00:01:06,960 --> 00:01:13,600
+但待测试生效模式下无需关注区域大小 那什么是反向成交量不平衡呢
+but with until tested you don't have to worry about the zone size now what is an inverse imbalance well
+
+19
+00:01:13,600 --> 00:01:21,120
+改成fixed模式时才会生效
+inverse imbalance is a stacked imbalance that has the opposite meaning that you would normally see
+
+20
+00:01:21,120 --> 00:01:23,578
+但用待测试生效模式时 不用管区域大小
+so normally you're seeing a stacked mine imbalance
+
+21
+00:01:23,578 --> 00:01:26,036
+什么是反向不平衡呢
+you would see that in a green bar
+
+22
+00:01:26,036 --> 00:01:28,494
+反向不平衡是堆叠失衡区
+you're expecting the market to go up but
+
+23
+00:01:28,494 --> 00:01:38,637
+反向成交量不平衡的情况相反 在红色K线中出现堆叠失衡区 价格在K线内下跌
+what is happening in the inverse imbalance is the opposite you have a stack mine imbalance in a red candle as the market is price is moving lower in the candle that is
+
+24
+00:01:38,640 --> 00:01:40,981
+通常堆叠失衡区出现在绿色K线
+actually a reversal signal in the sense that
+
+25
+00:01:40,981 --> 00:01:43,322
+预期市场会上涨
+it becomes instead of a bullish thing signal
+
+26
+00:01:43,322 --> 00:01:49,759
+这是堆叠失衡区 实际上是空头信号 因为交易者正被套牢
+a stacked fine imbalance it is actually a bearish signal because what is happening is traders are being trapped think of an
+
+27
+00:01:49,760 --> 00:01:52,929
+但反向不平衡的情况相反
+inverse imbalance as a trap for traders that's
+
+28
+00:01:52,929 --> 00:01:56,098
+在红色K线中出现堆叠失衡区 价格在K线内下跌
+why the zone is drawn red if it
+
+29
+00:01:56,098 --> 00:01:59,267
+这实际上是反转信号
+was a um bullish trap meaning this cat
+
+30
+00:01:59,267 --> 00:02:06,398
+堆叠失衡区不再是看涨信号
+trapping sellers the color would be uh was the default again that we go set to a blue
+
+31
+00:02:06,400 --> 00:02:09,046
+颜色 有趣的地方是
+color and you know the the interesting thing
+
+32
+00:02:09,046 --> 00:02:11,692
+大家习惯寻找堆叠买入
+is right everyone is so used to looking
+
+33
+00:02:11,692 --> 00:02:14,338
+和堆叠卖出的失衡区
+for stack buying and stack selling imbalances but
+
+34
+00:02:14,338 --> 00:02:25,917
+但很少人会想到反向情况 看涨的反向不平衡是蓝色 默认设为2级
+they never really think about the opposite so you see the bullish ones would be blue and it's set to two levels right our stacked imbalances by default are set to three but this is
+
+35
+00:02:25,920 --> 00:02:28,698
+而堆叠失衡区默认是3级 但这是反向失衡
+an inverse imbalance so it's set to two
+
+36
+00:02:28,698 --> 00:02:31,476
+意味着需要连续2个堆叠失衡区
+meaning you'd have two stacked imbalances in a
+
+37
+00:02:31,476 --> 00:02:40,158
+而非3个 因为是反向情况 所以出现频率较低
+row as opposed to three and since it's the opposite side it doesn't really happen as often as um you know you'd like to see
+
+38
+00:02:40,160 --> 00:02:42,615
+但这是个好信号
+it because it's a nice signal you can
+
+39
+00:02:42,615 --> 00:02:45,070
+看这里 这是空头陷阱的反向成交量不平衡
+see here this is a bearish inverse imbalance
+
+40
+00:02:45,070 --> 00:02:52,437
+价格在98.37左右 36.5到37区间 市场下午剩余时间都在下跌
+right and you know it's coming in at what 98.37 you know 36 and a half 37 and you know market sold off the rest of the
+
+41
+00:02:53,360 --> 00:02:56,367
+现在来找一个多头陷阱的
+afternoon right now let's find a bullish one
+
+42
+00:02:56,367 --> 00:02:59,374
+看这里 回放一下 之前有个
+here uh let's go back there was one
+
+43
+00:02:59,374 --> 00:03:08,019
+这种情况不会经常出现 因为它是市场预期的反向
+it's not something that appears very often because you know it's it's the opposite of what you expect to happen in the market
+
+44
+00:03:08,020 --> 00:03:11,079
+好的 这里有个 就在这里
+okay here's a here's one right here this
+
+45
+00:03:11,079 --> 00:03:14,138
+这个是
+was that uh well this was on the
+
+46
+00:03:14,138 --> 00:03:23,697
+期货收盘时 4点左右 可以看到它在98.40左右区域出现
+on the futures close right at uh four o'clock but you could see it's coming in around the 98.40 ish area and you know it did
+
+47
+00:03:24,080 --> 00:03:26,189
+然后市场在这里回撤
+pull back in here mark kept
+
+48
+00:03:26,189 --> 00:03:28,298
+理想情况下 你希望在交易时段内看到这些
+prowling ideally you want to see
+
+49
+00:03:28,298 --> 00:03:31,110
+而不是在期货收盘时
+them during the trading session not you know
+
+50
+00:03:31,110 --> 00:03:37,087
+但这是个例子 就在这里
+right on the on the futures close but that's that is an example of one um here
+
+51
+00:03:37,090 --> 00:03:39,352
+你可以用这个
+you could do this one okay
+
+52
+00:03:39,352 --> 00:03:41,614
+这很有趣 因为这是
+this is interesting because this is
+
+53
+00:03:41,614 --> 00:03:43,876
+一个反向成交量不平衡
+an inverse volume imbalance it's the
+
+54
+00:03:43,876 --> 00:03:50,287
+是红色K线中的堆叠买入失衡区 但收盘价在它上方
+snack buying imbalance in the red candle but obviously we closed above it right if the reason
+
+55
+00:03:50,290 --> 00:03:52,230
+你画出这些区域的原因是
+you draw the zones out is because you
+
+56
+00:03:52,230 --> 00:03:54,170
+你想在区域下方做空
+know you want to be bearish below this
+
+57
+00:03:54,170 --> 00:03:56,110
+对 你不想做空
+right you don't want to be bearish you
+
+58
+00:03:56,110 --> 00:03:58,050
+你不想在区域上方做空
+don't want to be short above this zone
+
+59
+00:03:58,050 --> 00:04:05,810
+如果在区域上方 你应该离场或做多 而不是做空 这是种特殊情况
+if it's above this zone you want to be either out of the trade or long right not short you know this is just a strange occurrence where it just sort of
+
+60
+00:04:05,810 --> 00:04:08,369
+有卖单进来 而你
+there was some selling coming in and you
+
+61
+00:04:08,369 --> 00:04:10,928
+这里有强空头
+know some strong sellers down in here then
+
+62
+00:04:10,928 --> 00:04:12,847
+价格最终反弹向上
+the price reversed up eventually it
+
+63
+00:04:12,847 --> 00:04:17,646
+确实朝那个方向走了 但有点奇怪
+did move in that direction but that one was a bit odd um i just
+
+64
+00:04:17,649 --> 00:04:19,621
+我只是觉得挺有意思
+thought it kind of interesting just just to
+
+65
+00:04:19,621 --> 00:04:21,593
+给你看看 这里还有没有
+show you let's see if there was another
+
+66
+00:04:21,593 --> 00:04:23,318
+另一个多头信号
+bullish one in here somewhere again it
+
+67
+00:04:23,318 --> 00:04:26,769
+这并不常见 不像常规堆叠失衡区那样
+doesn't it's not something that appears all the time as as a normal stacked
+
+68
+00:04:26,770 --> 00:04:31,950
+好的 换一个标的
+imbalance would okay let me just uh pull
+
+69
+00:04:31,950 --> 00:04:40,369
+好 这是英镑
+up a different mark all right so this is uh british pound before
+
+70
+00:04:40,370 --> 00:04:42,071
+之前给你展示的是货币对
+i was showing you the currency and again
+
+71
+00:04:42,071 --> 00:04:43,772
+这里有一个 稍晚些
+you got one here a little bit late
+
+72
+00:04:43,772 --> 00:04:45,048
+我只是想
+in the day i just want
+
+73
+00:04:45,048 --> 00:04:49,728
+在主要交易时段给你展示一个 这样你就知道它的用处了
+to show you one during the the main session here just so you can get an idea of how useful this is
+
+74
+00:04:49,730 --> 00:04:51,897
+看这里 这是堆叠多头
+so here's your stacked bullish stacked
+
+75
+00:04:51,897 --> 00:04:54,786
+反向失衡区 对 这里全是空头
+inverse imbalance right you got all these selling
+
+76
+00:04:54,786 --> 00:04:56,953
+买卖失衡区
+imbalances right down in here and
+
+77
+00:04:56,953 --> 00:05:01,648
+市场反应和你预期的不同
+the market reacted different than you would expect right you're expecting to see
+
+78
+00:05:01,650 --> 00:05:03,871
+你预期市场会下跌 因为有堆叠空头
+the market trade lower you got stacked selling
+
+79
+00:05:03,871 --> 00:05:06,092
+失衡区 但这些交易者陷入
+imbalances but these traders are getting trapped in
+
+80
+00:05:06,092 --> 00:05:07,757
+陷阱里了 对 有人进场
+here right there's someone came in
+
+81
+00:05:07,757 --> 00:05:11,088
+用买单吸收了所有抛压
+here with some bids to absorb whatever selling was going on and
+
+82
+00:05:11,090 --> 00:05:13,202
+然后市场
+you know the market uh it
+
+83
+00:05:13,202 --> 00:05:15,666
+基本从111.25开始
+basically rallied from you know 111.25 all the
+
+84
+00:05:15,666 --> 00:05:18,130
+一路涨到150以上
+way up to you know above 50. so
+
+85
+00:05:18,130 --> 00:05:25,874
+漂亮的25个Tick上涨 我认为这也是唯一一个
+a nice 25 tick move up and again this is one of the only in i think there's one more that we have
+
+86
+00:05:26,930 --> 00:05:29,900
+用默认设置绘制的 即待测试生效模式
+about drawing the default um setting being until
+
+87
+00:05:29,900 --> 00:05:32,870
+但我们设为待测试生效的原因是
+tested but the reason we have it until
+
+88
+00:05:32,870 --> 00:05:35,097
+因为它很少发生
+test is because you know it
+
+89
+00:05:35,097 --> 00:05:41,408
+发生时 这是一个很强的信号 好的
+happens so uh rarely that when it does happen it's quite a powerful signal okay and again
+
+90
+00:05:41,410 --> 00:05:43,868
+它会在这里标出来
+you know it will plot it here you
+
+91
+00:05:43,868 --> 00:05:46,326
+看这里 蓝色向上三角形
+can see the blue up triangle right here
+
+92
+00:05:46,326 --> 00:05:53,088
+蓝色是多头陷阱 红色是空头陷阱
+telling you um that is bullish right just as you'd have the bearish one um this is a bearish one right here
+
+93
+00:05:53,090 --> 00:06:03,330
+这里也会显示 这是成交量反转失衡
+and the plot is appearing up here as well all right so that is in the imbalance volume reversals
+
+94
+00:06:03,330 --> 00:06:13,570
+下个视频再见
+so i'll see you guys on the next video
+
+===== END AFTER_OPTIMIZE =====

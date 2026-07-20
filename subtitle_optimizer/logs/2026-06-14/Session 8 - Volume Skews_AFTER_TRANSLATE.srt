@@ -1,0 +1,3773 @@
+===== AFTER_TRANSLATE (759 entries) =====
+1
+00:00:02,220 --> 00:00:03,557
+大家好，
+Hey, good morning,
+
+2
+00:00:03,557 --> 00:00:04,894
+我是Mike。
+everybody. It's Mike.
+
+3
+00:00:04,894 --> 00:00:07,568
+今天是7月17日，星期四。
+It's Thursday, July 17th. This is
+
+4
+00:00:07,568 --> 00:00:10,688
+这是第八节课。
+session eight. We're about halfway through the
+
+5
+00:00:10,688 --> 00:00:16,037
+我们夏季项目已过半，今天要讲的是成交量偏度。
+summer program, and today what we'll be talking about is volume skews.
+
+6
+00:00:16,040 --> 00:00:16,761
+Okay. Now,
+
+7
+00:00:16,761 --> 00:00:18,565
+this is, again, you know,
+
+8
+00:00:18,565 --> 00:00:21,451
+在这个夏季项目中，
+the topics I'm really trying to cover here
+
+9
+00:00:21,451 --> 00:00:24,337
+我真正想要覆盖的主题
+in this summer program are more advanced topics
+
+10
+00:00:24,337 --> 00:00:26,863
+是一些你可能从未听说过
+that you probably never heard of or
+
+11
+00:00:26,863 --> 00:00:32,636
+或偶然接触过的高级内容，因为它们确实处于订单流的前沿。
+have come across because they are really sort of on the cutting edge of order flow.
+
+12
+00:00:32,759 --> 00:00:33,275
+You know,
+
+13
+00:00:33,275 --> 00:00:34,566
+我不仅研究订单流，
+I don't just work with
+
+14
+00:00:34,566 --> 00:00:36,373
+还与不同层次的众多交易者合作，
+order flows. I work with a lot
+
+15
+00:00:36,373 --> 00:00:38,180
+其他交易者在不同价位
+of other traders at different levels, and
+
+16
+00:00:38,180 --> 00:00:39,987
+这是我们讨论已久的话题，
+this is something that, you know, we've
+
+17
+00:00:39,987 --> 00:00:44,636
+而这是我首次与那个特定圈子外的交易者分享。
+been talking about for quite a while, and this is really the first time that I've shared this.
+
+18
+00:00:44,640 --> 00:00:47,514
+与其他交易者在
+With other traders outside of
+
+19
+00:00:47,514 --> 00:00:50,388
+那么，订单流中的成交量偏度，
+that particular circle. So what
+
+20
+00:00:50,388 --> 00:00:54,987
+其实是成交量分布的方向性偏好。
+order flow volume skews are, it's basically directional
+
+21
+00:00:54,987 --> 00:01:00,161
+成交量分布的偏好，以及
+bias in volume placement, and, you know, to be
+
+22
+00:01:00,161 --> 00:01:04,760
+坦率地说，大多数市场的交易方式是，
+honest, the way that most markets trade is,
+
+23
+00:01:04,760 --> 00:01:12,808
+它们会分布成交量，而有些市场比其他市场分布得更好。
+you know, they distribute volume, and some markets distribute the volume better than others.
+
+24
+00:01:12,810 --> 00:01:21,830
+期指（E-minis）可能在所有市场中成交量分布做得最好。
+Okay. And, you know, e-minis do a, probably the best job of distributing volume out of all the markets.
+
+25
+00:01:22,490 --> 00:01:22,980
+You know,
+
+26
+00:01:22,980 --> 00:01:23,960
+你可以说，
+you could say that
+
+27
+00:01:23,960 --> 00:01:25,186
+也许10年期国债也能做到，
+maybe, you know, a market
+
+28
+00:01:25,186 --> 00:01:27,883
+但有时你就是无法获得那种波动性。
+like 10 years do, but sometimes you just don't get that volatility.
+
+29
+00:01:28,750 --> 00:01:32,350
+但当我们进入示例时，你会理解得更好。
+But when we get into the examples, you'll understand it a lot better.
+
+30
+00:01:32,350 --> 00:01:39,310
+因此，成交量偏度衡量的是K线价格区间内成交量分布的不对称性。
+So what volume skews measure is the asymmetry of volume across a bar's price range.
+
+31
+00:01:39,430 --> 00:01:42,430
+K线有开盘价、最高价、最低价和收盘价。
+You know, bars open, they have a high, they have a low, they have a close.
+
+32
+00:01:43,230 --> 00:01:44,336
+And, you know,
+
+33
+00:01:44,336 --> 00:01:46,179
+成交量在这根K线内的分布情况
+how the volume is distributed
+
+34
+00:01:46,179 --> 00:01:51,709
+可能表现出偏度，可能向某一方向偏斜。
+within that bar can be skewed. It can be skewed one way or the other.
+
+35
+00:01:51,710 --> 00:02:06,760
+正偏度表示成交量集中在高价区，表明多头积极吃单，可能陷阱空头。
+And positive skewness means more volume clustered towards the upper end, indicating buyers are aggressively lifting and potentially trapping shorts.
+
+36
+00:02:07,240 --> 00:02:11,760
+负偏度表示成交量集中在低价区，表明空头占优。
+Negative skewness shows volume weighted towards the low signaling seller dominance.
+
+37
+00:02:11,760 --> 00:02:23,740
+而偏度是一个强大但常被忽视的统计概念，能揭示市场参与者行为的方向性偏好。
+And skewness is a powerful yet under-discussed statistical concept that can reveal directional biases in market participant behavior.
+
+38
+00:02:23,740 --> 00:02:25,180
+So while traditional orderful
+
+39
+00:02:25,180 --> 00:02:27,340
+传统顺序流分析关注的是Delta等指标，
+analysis focuses on metrics like delta,
+
+40
+00:02:27,340 --> 00:02:29,860
+即主动买卖成交量的差值，
+right, the difference between aggressive buying and
+
+41
+00:02:29,860 --> 00:02:32,740
+或在双向竞价中某一方在特定价格的主导地位，
+selling volume or imbalances, right, where one side
+
+42
+00:02:32,740 --> 00:02:41,020
+而偏度则是将概率分布的原理应用到足迹图K线内的成交量分布图中。
+dominates at a price level in a two-way auction, skewness applies principles from probability distributions to the volume profile within a footprint bar.
+
+43
+00:02:41,760 --> 00:02:44,002
+这将帮助你
+So this is going to help
+
+44
+00:02:44,002 --> 00:02:47,365
+量化K线内成交量在各价格水平的分布不对称性，
+quantify asymmetry in how volume is distributed across price
+
+45
+00:02:47,365 --> 00:02:50,354
+为你提供
+levels in the bar, offering you insights into
+
+46
+00:02:50,354 --> 00:02:55,959
+仅凭目测难以发现的信念、潜在陷阱或动能转换的洞察。
+the conviction, potential traps, or momentum shifts that aren't immediately obvious from visual inspection alone.
+
+47
+00:02:57,060 --> 00:02:58,040
+Okay, so
+
+48
+00:02:58,040 --> 00:03:00,491
+如何识别它呢，
+how to spot it, even
+
+49
+00:03:00,491 --> 00:03:03,922
+尽管我这里写的是“看涨”。
+though I wrote bullish here. What did
+
+50
+00:03:03,922 --> 00:03:07,843
+我写了什么？
+I write? Yeah, I'll have to fix this
+
+51
+00:03:07,843 --> 00:03:10,784
+是的，我得修正这张幻灯片。
+slide. I wrote bullish twice here.
+
+52
+00:03:10,784 --> 00:03:20,588
+我这里写了两次“看涨”。其实应为“看涨”和“看跌”。看跌是第二个。但等会议结束后我会修正这张幻灯片。
+It's actually bullish and bearish. Bearish is the second one. But I'll fix this slide right after we're done here.
+
+53
+00:03:21,550 --> 00:03:24,110
+看涨偏度。
+So bullish skewness.
+
+54
+00:03:24,210 --> 00:03:30,210
+简单来说，你要在视觉上将K线分成三部分：低价区、中间区和高价区。
+Basically, you're going to visually divide the bar into thirds, a low, a middle, and a high.
+
+55
+00:03:30,650 --> 00:03:35,690
+如果约70%的成交量集中在高价区且Delta为正，则为看涨偏度。
+So if roughly 70% of the volume is in the top third with positive delta, it's a bullish skew.
+
+56
+00:03:36,470 --> 00:03:41,970
+若下一根K线开盘价高于前一收盘价，则预期延续。
+Expect continuation if the next bar opens above the prior close.
+
+57
+00:03:41,970 --> 00:03:46,800
+看跌偏度，尽管我写的是看涨，我会修正的。
+Bearish, even though I wrote bullish, I'm going to fix that.
+
+58
+00:03:49,080 --> 00:03:50,680
+同样，在视觉上将K线分成三部分。
+Visually divide the bar into thirds.
+
+59
+00:03:50,680 --> 00:03:51,923
+And again, you
+
+60
+00:03:51,923 --> 00:03:54,824
+我之所以说“视觉上”，是因为目前
+know, I say visually because right now
+
+61
+00:03:54,824 --> 00:03:58,140
+NinjaTrader 无法直接实现这点。
+a ninja trader doesn't have the ability. I
+
+62
+00:03:58,140 --> 00:04:04,358
+当然，我们可以编写代码来精确将其三等分。
+mean, we can write a code for it that will actually divide it into thirds.
+
+63
+00:04:04,600 --> 00:04:05,264
+有时，
+Sometimes, you
+
+64
+00:04:05,264 --> 00:04:06,592
+我发现
+know, I find the
+
+65
+00:04:06,592 --> 00:04:09,249
+视觉判断更简单，
+vision test, you know, the vision, I say
+
+66
+00:04:09,249 --> 00:04:12,238
+因为有时编写代码时，
+vision test, easier to manage because sometimes, you know,
+
+67
+00:04:12,238 --> 00:04:14,563
+问题在于，
+when the problem when you write code,
+
+68
+00:04:14,563 --> 00:04:17,220
+我不写代码，我也不知道
+I don't write the code. I don't know
+
+69
+00:04:17,220 --> 00:04:28,181
+程序员会怎么写，但必须非常精确。必须是严格的三等分，对吧？如果我说将K线三等分，就是33%、33%、33%，对吗？
+if I'm a programmer does, but you have to be very specific. It has to be the third, right? If I'm saying you divide the bar into thirds, it's going to be 33%, 33%, 33%, okay?
+
+70
+00:04:29,180 --> 00:04:29,881
+而如果
+Whereas if
+
+71
+00:04:29,881 --> 00:04:31,633
+你用视觉判断，
+you're doing it visually, you
+
+72
+00:04:31,633 --> 00:04:34,086
+可能会有
+know, there might be a time when
+
+73
+00:04:34,086 --> 00:04:36,189
+略低于或略高于
+it's, you know, just under the
+
+74
+00:04:36,189 --> 00:04:38,292
+该比例的情况，比如34%
+percentage or just over the percentage, 34%
+
+75
+00:04:38,292 --> 00:04:40,395
+或30%。这意味着
+or, you know, 30%. Does that mean
+
+76
+00:04:40,395 --> 00:04:49,157
+判断无效吗？其实可能仍有效，但作为交易者，你需要自己决策，对吧？
+that it's not valid? Well, you know, it could still be valid, but, you know, you have to make that decision as a trader, right?
+
+77
+00:04:49,860 --> 00:04:50,415
+确实，
+Like, really,
+
+78
+00:04:50,415 --> 00:04:51,248
+这是，
+that's, you know,
+
+79
+00:04:51,248 --> 00:04:52,636
+最优秀的交易者
+the best traders are the
+
+80
+00:04:52,636 --> 00:04:54,024
+是那些独立思考的人。
+ones that think for themselves.
+
+81
+00:04:54,024 --> 00:04:55,412
+我们都喜欢
+You know, we all like
+
+82
+00:04:55,412 --> 00:05:02,077
+使用程序、自动化工具。我也喜欢。有时我们过于依赖工具了。
+to have programs, have stuff programmed. You know, I like to have things programmed. And, you know, sometimes we rely on things too much.
+
+83
+00:05:02,080 --> 00:05:03,650
+这有点像
+It's just sort
+
+84
+00:05:03,650 --> 00:05:06,267
+现在的AI和
+of like with AI and
+
+85
+00:05:06,267 --> 00:05:09,931
+ChatGPT，大家都在讨论
+ChatGPT, you know, everyone is talking about
+
+86
+00:05:09,931 --> 00:05:13,595
+孩子们不再独立思考了，
+how, you know, kids aren't thinking anymore,
+
+87
+00:05:13,595 --> 00:05:25,636
+对吧？他们只是依赖ChatGPT之类的工具来寻找答案，而不是自己思考并得出结论。
+right? They're just relying on tools like ChatGPT to find answers, right, rather than think things through and come up with the answer.
+
+88
+00:05:25,640 --> 00:05:29,600
+所以我提到‘视觉判断’时，指的就是这个意思。
+So when I say visually, that's what I'm referring to.
+
+89
+00:05:30,000 --> 00:05:35,020
+大致70%的总成交量集中在下三分之一区域，且Delta为负，这是看跌的成交量偏度。
+So roughly 70% of the total volume is in the bottom third with negative delta. It's a bearish skew.
+
+90
+00:05:35,180 --> 00:05:38,740
+若下一根K线开盘价低于前一收盘价，则预期趋势延续。
+Expect continuation if the next bar opens below the prior close.
+
+91
+00:05:38,740 --> 00:05:40,759
+复杂的情况出现在70%成交量
+So where it gets tricky is when 70%
+
+92
+00:05:40,759 --> 00:05:42,778
+分布在K线的中间部分时
+of the volume is half of the
+
+93
+00:05:42,778 --> 00:05:47,970
+我们真正想要的是上1/3看多或下1/3看空
+bar, right? We really want to be in the top third for bullish or bottom third for bearish.
+
+94
+00:05:49,120 --> 00:05:51,012
+还有一点需要说明的是
+The other thing that needs to be
+
+95
+00:05:51,012 --> 00:05:52,363
+市场必须要有一定的波动性
+said is there needs to
+
+96
+00:05:52,363 --> 00:05:58,579
+我所说的波动性是什么意思？指的是价格发现，价格上涨，价格下跌
+be some volatility in the market. And what do I mean by volatility? It means price discovery, price going up, price going down.
+
+97
+00:05:59,380 --> 00:06:00,174
+You know,
+
+98
+00:06:00,174 --> 00:06:02,953
+你需要K线有一定的
+you need to have bars with some
+
+99
+00:06:02,953 --> 00:06:05,732
+价格波动，K线内要出现一些价格水平
+movement, with some price levels appearing in
+
+100
+00:06:05,732 --> 00:06:08,908
+你不能只有那些
+the bar. You can't just have bars that
+
+101
+00:06:08,908 --> 00:06:11,290
+波动范围非常小的K线
+have very tight ranges, you know,
+
+102
+00:06:11,290 --> 00:06:14,069
+也就是说，K线的
+meaning, you know, the bar has a
+
+103
+00:06:14,069 --> 00:06:23,598
+波动范围只有4个Tick、5个Tick，这样很难识别成交量偏度，因为成交量可能分布得非常均匀
+four-tick range, a five-tick range. You know, it's going to be hard to spot volume skews because volume is probably being distributed really well.
+
+104
+00:06:23,600 --> 00:06:31,000
+所以市场需要有这种波动性
+So there needs to be that sort of consistency in, or sorry, that volatility in the market.
+
+105
+00:06:33,950 --> 00:06:37,350
+我要修改一下这里的第二个标注
+I'm going to change that where it says bullish, the second one here.
+
+106
+00:06:37,570 --> 00:06:38,770
+那其实是看空的
+That's actually bearish.
+
+107
+00:06:43,580 --> 00:06:44,960
+那么为什么这是你的优势？
+So why is this your edge?
+
+108
+00:06:45,040 --> 00:06:47,294
+因为在趋势市场中，你会寻找
+It's because in a trending market, you're going
+
+109
+00:06:47,294 --> 00:06:48,984
+在三到四根K线上偏度不断增加的情况
+to look for increasing skewness over
+
+110
+00:06:48,984 --> 00:06:51,238
+这通常预示着加速
+three or four bars. It often precedes accelerations.
+
+111
+00:06:51,340 --> 00:06:56,160
+你的市场准备朝某个方向加速
+Your market is getting ready to accelerate in a direction.
+
+112
+00:06:56,160 --> 00:06:57,268
+Again, you know,
+
+113
+00:06:57,268 --> 00:06:59,854
+你想尽早获知市场中即将发生的任何情况
+you want to be alerted to anything
+
+114
+00:06:59,854 --> 00:07:03,918
+这将在市场中尽快发生。
+that's going to happen in the market as soon as possible.
+
+115
+00:07:04,720 --> 00:07:13,480
+对于反转，要关注偏度是否逆趋势翻转，换句话说，下跌趋势中突然出现正偏度
+So for reversals, watch for skewness, flipping against the trend. In other words, downtrend with sudden positive skew.
+
+116
+00:07:14,180 --> 00:07:21,400
+这能捕捉到假突破，即价格探底但成交量未跟进，揭示幌骗或衰竭
+This catches fakeouts where price probes lows, but volume doesn't follow, revealing spoofing or exhaustion.
+
+117
+00:07:21,400 --> 00:07:28,140
+好，现在在进入图表之前，我先说明几点
+Okay, now, before we get into the charts, I just want to go over a couple of things here.
+
+118
+00:07:28,260 --> 00:07:28,958
+存在正偏度
+So there's positive
+
+119
+00:07:28,958 --> 00:07:30,587
+这有时会让人有点困惑
+skewness, and this is where it gets
+
+120
+00:07:30,587 --> 00:07:33,379
+我想我可能已经让你困惑了
+a little confusing sometimes. I think I may have confused you already.
+
+121
+00:07:34,080 --> 00:07:37,100
+但正偏度是成交量集中于
+But positive skewness is volume concentrated towards the
+
+122
+00:07:37,100 --> 00:07:40,120
+K线内的低价区附近，接近最低点,
+lower prices in a bar near the low,
+
+123
+00:07:40,120 --> 00:07:43,518
+并向上延伸出一条成交量较轻的尾部。
+okay, with a tail of lighter volume extending higher.
+
+124
+00:07:43,520 --> 00:07:52,140
+这表明空头早期占据主导，推动价格下跌，多头在高点弱势或零星介入。
+Okay, now, this suggests sellers dominated early, pushing price down, buyers stepped in weakly or sporadically at highs often.
+
+125
+00:07:52,680 --> 00:07:56,220
+因此这是一种看跌偏好，因信念权重偏低。
+This is a bearish bias as a conviction is weighted low.
+
+126
+00:07:57,060 --> 00:07:57,675
+现在,
+Okay, now,
+
+127
+00:07:57,675 --> 00:07:58,905
+我放了
+you know, I put
+
+128
+00:07:58,905 --> 00:08:01,058
+这里可能会让人困惑，因为
+down here, it can be confusing because
+
+129
+00:08:01,058 --> 00:08:03,518
+提到‘正’时，你会联想到看涨。
+when you think of positive, you think bullish.
+
+130
+00:08:03,520 --> 00:08:11,340
+但正偏度在市场语境中实际上是看跌的。
+Okay, but when positive skewness appears, it's actually bearish in market context, okay.
+
+131
+00:08:11,660 --> 00:08:12,995
+而负偏度，
+Now, negative skewness,
+
+132
+00:08:12,995 --> 00:08:16,112
+成交量集中于高价区。
+volume clusters towards the higher prices. And
+
+133
+00:08:16,112 --> 00:08:19,674
+当我说成交量集群时，成交量
+when I say volume clusters, you know, volume
+
+134
+00:08:19,674 --> 00:08:26,798
+成交量聚集在高价区附近，接近最高点，并向下延伸出一条尾部。
+is sort of getting grouped towards higher prices near the high with that tail lower, okay.
+
+135
+00:08:26,800 --> 00:08:33,700
+也就是说，重心成交量下方的成交量较轻，这正是我提到的‘尾部’的含义。
+Meaning, it's got lighter volume below the heavier volume. That's really what I mean by tail.
+
+136
+00:08:33,740 --> 00:08:35,880
+不要用K线的形态来理解它。
+Don't think of it in terms of candlesticks.
+
+137
+00:08:35,880 --> 00:08:39,640
+这表明多头在K线顶部积极吃进卖盘，
+This indicates buyers lifting offers aggressively at tops
+
+138
+00:08:39,640 --> 00:08:42,930
+反过来
+of the bars, which in turn traps
+
+139
+00:08:42,930 --> 00:08:47,160
+套住了位于重心成交量下方的空头。
+the sellers that are below that heavier volume, right.
+
+140
+00:08:47,200 --> 00:08:51,500
+因为，假设有一根阳线正在形成。
+Because, you know, imagine you have a green bar forming. Again, negative skewness is bullish.
+
+141
+00:08:51,500 --> 00:08:55,106
+负偏度其实是看涨的。
+You have a green bar forming and it
+
+142
+00:08:55,106 --> 00:08:58,261
+它先在低位交易，然后
+trades lower and starts trading higher above
+
+143
+00:08:58,261 --> 00:09:01,416
+开始在更高的价位交易，
+those lower prices. Those sellers that were
+
+144
+00:09:01,416 --> 00:09:09,079
+那些在低位的空头某种程度上被套牢，因为市场现在在他们的上方交易。
+down below are, in a sense, they're trapped, right, because the market is now trading above them.
+
+145
+00:09:10,080 --> 00:09:10,733
+另外,
+And, again,
+
+146
+00:09:10,733 --> 00:09:12,367
+负偏度，当
+you know, negative skewness, when
+
+147
+00:09:12,367 --> 00:09:14,655
+你听到‘负’这个词时，
+you hear the term negative, you think
+
+148
+00:09:14,655 --> 00:09:18,578
+会认为市场应该下跌。
+the market should go down. But it's actually bullish in market context.
+
+149
+00:09:18,580 --> 00:09:21,080
+但负偏度在市场语境中实际上是看涨的。
+When you talk about negative skewness, it's actually bullish.
+
+150
+00:09:21,080 --> 00:09:22,710
+我知道这会让人困惑，因为
+I know it gets confusing because
+
+151
+00:09:22,710 --> 00:09:24,340
+当你听到“负”这一术语时,
+when you hear the term negative,
+
+152
+00:09:24,340 --> 00:09:25,698
+你会想到红色，对吧，你
+you think red, right, you
+
+153
+00:09:25,698 --> 00:09:28,958
+会认为市场要下跌，比如今天市场是负的。
+think the market is going down. You know, the market's negative today.
+
+154
+00:09:29,140 --> 00:09:32,020
+但实际上，当负偏度出现时，反而是看涨信号。
+But actually negative skewness, when it appears, is actually bullish.
+
+155
+00:09:32,820 --> 00:09:44,540
+而零偏度则表示成交量分布基本平衡，体现犹豫或均衡状态，这在盘整市场中很常见。
+And you have zero skewness, which is basically balanced distribution, applying indecision or equilibrium, which is common in ranges, right.
+
+156
+00:09:44,540 --> 00:09:47,906
+当市场处于区间震荡、横盘走势时,
+When a market is range bound, going sideways,
+
+157
+00:09:47,906 --> 00:09:50,431
+成交量会被均匀分布。因此,
+volume is being distributed evenly. So,
+
+158
+00:09:50,431 --> 00:09:54,218
+市场中会出现零偏度的情况。
+you have zero skewness taking place in the market.
+
+159
+00:09:55,740 --> 00:09:58,424
+那么，成交量偏度
+So, why volume skews matter in
+
+160
+00:09:58,424 --> 00:10:01,108
+在订单流中之所以重要，是因为
+order flow is because, you know,
+
+161
+00:10:01,108 --> 00:10:04,687
+市场是拍卖系统，由主动交易驱动,
+markets are auctions. They're driven by aggressive trading,
+
+162
+00:10:04,687 --> 00:10:07,371
+而主动交易
+which is taking place against passive
+
+163
+00:10:07,371 --> 00:10:13,187
+是在对抗订单流中的被动交易，即市价单对抗限价单。
+trading, right, the market orders against the limit orders in the order flow.
+
+164
+00:10:13,190 --> 00:10:14,905
+偏度能捕捉这种拍卖中的微妙偏好,
+Skewness captured subtle biases
+
+165
+00:10:14,905 --> 00:10:17,477
+比如机构累积、回撤中的负偏度
+in this situation, in this auction,
+
+166
+00:10:17,477 --> 00:10:20,907
+或高点的正偏度分布,
+like institutional accumulation, negative skew in pullbacks or
+
+167
+00:10:20,907 --> 00:10:23,479
+而这些情况即使总成交量平衡，
+distribution positive skews at peaks, which
+
+168
+00:10:23,479 --> 00:10:27,767
+Delta 也可能会遗漏。
+delta alone might miss even if total volume is even.
+
+169
+00:10:27,770 --> 00:10:28,782
+好，那么，好，那么
+Okay, so, okay, so
+
+170
+00:10:28,782 --> 00:10:29,794
+这只是观察市场的另一种方式。
+it's just another way
+
+171
+00:10:29,794 --> 00:10:31,312
+你
+to look at the market. You
+
+172
+00:10:31,312 --> 00:10:35,868
+知道，我们之前花了很多时间讨论 Delta，上几次课程里。
+know, we spent a lot of time talking about delta the other day, the last couple of sessions.
+
+173
+00:10:36,930 --> 00:10:40,250
+这种方法某种程度上排除了 Delta，因为现在
+This sort of removes delta because now
+
+174
+00:10:40,250 --> 00:10:43,570
+你关注的是成交量
+you're sort of focusing on how volume
+
+175
+00:10:43,570 --> 00:10:46,890
+如何在 K 线内部被分布。
+is being distributed in the bar, okay.
+
+176
+00:10:47,030 --> 00:10:48,830
+而且，你知道，这是
+And, you know, that's something that
+
+177
+00:10:48,830 --> 00:10:51,230
+如果你只是正常查看普通的
+if you're just normally looking at a normal
+
+178
+00:10:51,230 --> 00:10:53,330
+K 线图，你不会注意到的。
+candlestick chart, you're not paying attention to.
+
+179
+00:10:53,790 --> 00:10:56,190
+现在，偏度分析还未成为主流。
+Now, skewness isn't mainstream yet.
+
+180
+00:10:56,190 --> 00:11:02,750
+大多数大师只专注于视觉模式，比如堆叠失衡区之类的。
+Most gurus out there stick to visual patterns, you know, stacked imbalances, things like that.
+
+181
+00:11:03,910 --> 00:11:12,010
+但它在量化订单流圈子里正逐渐受到重视，尤其是在2025年这种算法交易占主导的市场中。
+But it's gaining traction in sort of the quantitative order flow circles, especially with algal heavy markets in this year, 2025.
+
+182
+00:11:12,010 --> 00:11:14,265
+实际上，
+You know, it's really,
+
+183
+00:11:14,265 --> 00:11:17,647
+算法交易确实
+algals are really, I don't want
+
+184
+00:11:17,647 --> 00:11:21,029
+可以说并未完全主导，但
+to say taking over, but, you
+
+185
+00:11:21,029 --> 00:11:24,411
+过去十年间，
+know, for the last decade, banks
+
+186
+00:11:24,411 --> 00:11:32,867
+银行和基金不断向算法交易领域投入大量资金。
+and funds have been just, pouring money into, you know, the algal world of trading.
+
+187
+00:11:33,630 --> 00:11:36,470
+这就是当前的趋势。
+You know, and that's just the way it goes.
+
+188
+00:11:36,510 --> 00:11:39,153
+因此我要说的是，
+And that's why I say, you
+
+189
+00:11:39,153 --> 00:11:41,796
+作为交易者，
+know, sometimes it's, as a trader,
+
+190
+00:11:41,796 --> 00:11:44,439
+有时拥有非纯程序化的工具会有帮助。
+it can be beneficial to not
+
+191
+00:11:44,439 --> 00:11:50,607
+用你的眼睛，用你的大脑去思考，对吧。
+have something that's just programmed. You know, use your eyes, use your brain, right.
+
+192
+00:11:50,610 --> 00:11:52,650
+当我提到将K线分为三部分时，
+When I was talking about the
+
+193
+00:11:52,650 --> 00:11:54,690
+因为交易程序是二元的，
+thirds, you know, because trading programs
+
+194
+00:11:54,690 --> 00:11:56,050
+对吧。
+are binary, right. It's
+
+195
+00:11:56,050 --> 00:11:59,110
+它只有0和1，要么满足，要么不满足。
+ones and zeros. Either it is or it isn't.
+
+196
+00:11:59,170 --> 00:12:01,973
+所以当我说30%或三分之一时，
+So when I say 30% or a third
+
+197
+00:12:01,973 --> 00:12:05,176
+你可能会想到将K线分为
+percent, you know, break a bar up into
+
+198
+00:12:05,176 --> 00:12:07,178
+33%、33%、33%。
+thirds, you think 33%, 33%, 33%. And if
+
+199
+00:12:07,178 --> 00:12:14,786
+如果某个值略微偏离范围，比如30%或35%，程序可能就无法覆盖它。
+something is just outside the range, you know, if it's 30% or if it's 35%, it might not cover it, okay.
+
+200
+00:12:17,730 --> 00:12:19,642
+但，
+But, you know, if
+
+201
+00:12:19,642 --> 00:12:22,511
+如果你用自己的大脑，
+you use your brain, use your
+
+202
+00:12:22,511 --> 00:12:25,380
+用所谓的批判性思维，
+critical thinking, so to speak, then
+
+203
+00:12:25,380 --> 00:12:31,118
+这会帮助你，因为你能做出区分。
+it's going to help you, right. Because you are making that differentiation.
+
+204
+00:12:31,120 --> 00:12:39,530
+好，成交量偏度是关于成交量的。
+Okay, so volume skews deal with volume.
+
+205
+00:12:40,030 --> 00:12:45,910
+现在我先展示一些例子，然后我们再实时查看图表，好吧。
+Now, I'm going to pull up some examples first, and then we'll look at the charts in real time, okay.
+
+206
+00:12:46,930 --> 00:12:54,430
+既然它涉及成交量，我们先从成交量最活跃的时段开始：现金市场收盘是什么时候？
+So since it deals with volume, let's start with what's the heaviest time of volume? What's the cash close?
+
+207
+00:12:54,810 --> 00:12:55,632
+好的，现在，
+Okay, now, I
+
+208
+00:12:55,632 --> 00:12:57,551
+我知道不是所有人都能交易现金市场收盘。
+know not everybody can trade in cash
+
+209
+00:12:57,551 --> 00:13:00,293
+比如在自营公司交易的人，
+close. You know, guys that are trading in prop firms,
+
+210
+00:13:00,293 --> 00:13:03,035
+有些公司，我不知道是否
+you know, some of the firms, I don't know if
+
+211
+00:13:03,035 --> 00:13:05,777
+有些机构可能还在这样做。我不用这些渠道交易。我只
+they still do. I don't trade through these. I only
+
+212
+00:13:05,777 --> 00:13:08,519
+喜欢用“资金账户”来称呼这些由资金方提供的账户。
+like to use the term prop firms, these funded accounts.
+
+213
+00:13:08,519 --> 00:13:21,133
+它们有规则，比如不能在现金收盘时交易，或不能在收盘前15分钟交易等等。但如果你用真实资金，即普通账户，就没有这些限制。
+You know, they got rules where you can't trade the cash close or you can't trade the last 15 minutes of going into the cash close, et cetera. But, you know, if you're trading real money, you know, just a normal account, you don't have those restrictions.
+
+214
+00:13:22,010 --> 00:13:27,720
+现在，偏度涉及的是成交量分布，所以核心是成交量。
+Now, skewness deals with volume distribution, so it's volume.
+
+215
+00:13:28,200 --> 00:13:32,880
+一天中成交量最大的时间段是现金收盘。
+So the area that the time of day that has the most volume is the cash close.
+
+216
+00:13:32,880 --> 00:13:35,880
+第二活跃的时间段通常是现金开盘。
+The second most active time is usually the cash open.
+
+217
+00:13:36,080 --> 00:13:39,160
+但现金收盘的情况，你可以在这里看到。
+But the cash close, you can see it up here, okay.
+
+218
+00:13:39,300 --> 00:13:46,780
+这里，我的鼠标在哪？你可以看到这个光标。这根K线有波动性。
+So here's, where's my mouse? So you can see this cursor here. So you got the bar. It's got volatility.
+
+219
+00:13:47,760 --> 00:13:53,730
+现在，快速回顾一下。
+Now, just going back here really quick, all right.
+
+220
+00:13:53,730 --> 00:13:56,430
+再强调一次，这是看跌信号，不是看涨。
+So, again, this is to be bearish, not bullish.
+
+221
+00:13:56,850 --> 00:14:02,650
+将K线分成三部分。大约70%的总成交量在下三分之一。
+Divide the bar into thirds. Roughly 70% of the total volume is at the bottom third, okay.
+
+222
+00:14:03,390 --> 00:14:07,130
+我提到Delta为负，这通常是默认的。
+I say with negative delta, you know, but usually that's a given.
+
+223
+00:14:08,590 --> 00:14:09,730
+这就是你的K线。
+So here's your bar.
+
+224
+00:14:09,730 --> 00:14:26,640
+那如何确定70%的成交量？最简单的方法是用价值区域。
+Now, how can you determine 70% of the volume? Well, easiest way is to use the value areas, okay.
+
+225
+00:14:29,620 --> 00:14:31,140
+我刚收到Rupa的一个问题。
+I see a question just came in from Rupa.
+
+226
+00:14:31,380 --> 00:14:32,573
+如果你看到70%
+So if you see 70%
+
+227
+00:14:32,573 --> 00:14:34,662
+的买入成交量，不是买入成交量，
+of the buying volume, not buying volume,
+
+228
+00:14:34,662 --> 00:14:37,049
+因为他在这里写了问题，Rupa。
+okay, because he wrote a question here, Rupa.
+
+229
+00:14:37,049 --> 00:14:42,421
+他问，如果在下跌K线的下三分之一看到70%买入成交量，是不是看涨。
+He says, so if you see 70% buying volume in the bottom third of a red candle, it's bullish.
+
+230
+00:14:43,020 --> 00:14:46,113
+不，不，不，不，不，你
+No, no, no, no, no, you
+
+231
+00:14:46,113 --> 00:14:49,206
+知道我要做什么吗？
+know what I'm going to do?
+
+232
+00:14:49,206 --> 00:14:57,969
+我要换这张幻灯片。等我一下，因为我，好，这样。
+I'm going to change that slide. Just give me a second here, because I, okay, so there.
+
+233
+00:14:58,410 --> 00:14:59,430
+把它放在这里。
+Let's put it up here.
+
+234
+00:15:00,410 --> 00:15:02,010
+刚才那张幻灯片在哪？
+What was that slide here?
+
+235
+00:15:04,360 --> 00:15:05,580
+这是看跌信号。
+This is bearish.
+
+236
+00:15:06,340 --> 00:15:09,720
+是总成交量，我现在就改这里。
+Total volume, okay, not, I'll change it right here.
+
+237
+00:15:10,220 --> 00:15:14,000
+对，我把字放大一点。
+So, yeah, I'll make it bigger here.
+
+238
+00:15:14,000 --> 00:15:25,680
+所以，是总成交量，不是买入成交量，也不是卖出成交量，是总成交量。好，买盘和卖盘的总和。
+So, total volume, not buying volume, not selling volume, total volume. All right, bids and offers combined, okay.
+
+239
+00:15:29,740 --> 00:15:38,640
+现在，我过去用指针。
+Now, let me just go here so I can get the pointer.
+
+240
+00:15:39,280 --> 00:15:44,980
+这里是总成交量，70%的成交量，对吧。
+So, here's the total volume, 70% of the volume, right.
+
+241
+00:15:45,000 --> 00:15:50,100
+判断它的简单方法是使用K线的价值区域
+The easy way to determine it is using the value area of a bar, okay.
+
+242
+00:15:50,100 --> 00:15:53,460
+你可以设置你的价值区域
+You could set your value areas, okay.
+
+243
+00:15:53,460 --> 00:15:55,665
+这是总成交量，
+It's the total volume, not the buying
+
+244
+00:15:55,665 --> 00:15:57,870
+不是买入成交量，
+volume, not the volume traded on the
+
+245
+00:15:57,870 --> 00:16:02,280
+不是在卖价成交的成交量，也不是在买价成交的成交量，实际上是两者合并的总和
+offer, not the volume traded on the bid. It's actually both put together, okay.
+
+246
+00:16:03,280 --> 00:16:08,020
+应该出现在K线下三分之一的位置
+Should be appearing towards the bottom third of the bar, okay.
+
+247
+00:16:08,020 --> 00:16:14,880
+有时价值区域会接触到K线的最低点
+Sometimes it's going to, you know, you'll get the value area really touching the bottom of the bar.
+
+248
+00:16:15,820 --> 00:16:18,340
+这根K线，在我看来，已经足够接近
+This one, right, in my opinion, is close enough.
+
+249
+00:16:18,440 --> 00:16:23,384
+这又回到了一个观点，即这并不是
+This is where it's getting back to saying it's not
+
+250
+00:16:23,384 --> 00:16:26,845
+一成不变的，不一定要
+set in stone that exactly has to
+
+251
+00:16:26,845 --> 00:16:32,284
+严格占K线的33%，即下三分之一区域
+be 33% of the bar, meaning the bottom third of the bar.
+
+252
+00:16:32,780 --> 00:16:34,053
+对我来说，这已经足够低了
+To me, this is low enough.
+
+253
+00:16:34,053 --> 00:16:35,326
+它位于K线中间区域之外
+It's outside of the middle of
+
+254
+00:16:35,326 --> 00:16:37,659
+显然，它不在K线的顶部
+the bar. Obviously, it's not on the top of the bar.
+
+255
+00:16:39,820 --> 00:16:41,015
+这根
+You know, this
+
+256
+00:16:41,015 --> 00:16:43,805
+下一根K线，
+next bar, right, which is the one
+
+257
+00:16:43,805 --> 00:16:46,595
+也就是最近5分钟的这根，
+in the last five minutes, is really,
+
+258
+00:16:46,595 --> 00:16:51,378
+确实是你想做空的那根K线
+you know, the bar that you want to be short on, right.
+
+259
+00:16:51,380 --> 00:16:55,580
+因为它基本下跌了10个点，这是一个5分钟期指（E-minis）图表
+Because it drops basically 10 points, and this is a five-minute e-mini chart.
+
+260
+00:16:55,960 --> 00:16:58,220
+你可以用在5分钟图表上
+You could use it on five-minute charts.
+
+261
+00:16:58,340 --> 00:16:59,640
+你可以用在1分钟图表上
+You could use it on one-minute charts.
+
+262
+00:16:59,720 --> 00:17:03,060
+你可以用在区间图表等其他图表上
+You could use it on, you know, range-based charts, et cetera.
+
+263
+00:17:07,160 --> 00:17:10,520
+那如果是看涨信号，会是什么样子？
+So if it was bullish, what would it look like?
+
+264
+00:17:12,640 --> 00:17:19,940
+这可能算是看涨，但这70%的成交量大约占K线的一半
+This would sort of be bullish, but this 70% of the volume is about half of the bar.
+
+265
+00:17:19,940 --> 00:17:27,440
+所以看跌时成交量要集中在下三分之一，看涨时集中在上三分之一
+So it needs to be concentrated the bottom third for bearish, the top third for bullish, okay.
+
+266
+00:17:27,520 --> 00:17:32,700
+现在我们来看一个更好的看涨例子
+So let's move to a better example here for bullish, okay.
+
+267
+00:17:33,020 --> 00:17:38,360
+这是YM，也就是小道指期货
+Here, this is YM, okay, mini Dow.
+
+268
+00:17:39,440 --> 00:17:42,340
+现在你会发现你无法读取足迹图，因为我把图表压缩了
+Now, you'll notice you can't read the footprint because I scrunched up this chart.
+
+269
+00:17:42,340 --> 00:17:44,284
+这是一个1分钟
+This is a one-minute
+
+270
+00:17:44,284 --> 00:17:47,200
+图表
+chart, you know, and you do
+
+271
+00:17:47,200 --> 00:17:50,116
+现在可能会有很大的波动，比如50点,
+have big, you know, 50-point ranges,
+
+272
+00:17:50,116 --> 00:17:54,977
+现在小道指期货（E-mini Dow）日内甚至能有100点的波动。
+100-point ranges in mini Dow during the day nowadays, okay.
+
+273
+00:17:54,980 --> 00:18:01,440
+但如果你观察这根K线，在我看来，这属于上三分之一区域。
+But if you're looking at this, to me, this is the top third, okay, up here as well.
+
+274
+00:18:03,860 --> 00:18:13,860
+这些是看涨的信号，成交量集中在K线的上三分之一。
+These are bullish ones, right, where it's appearing the top third of the bar, top third, top third, right.
+
+275
+00:18:13,860 --> 00:18:23,730
+不是中间一半的位置。
+It's not the half, right here. Half would be like sort of like this bar here.
+
+276
+00:18:24,150 --> 00:18:29,620
+中间的情况大概是这样，成交量集中在K线中间。
+We're sort of appearing in the middle, okay. This would be like the middle.
+
+277
+00:18:30,920 --> 00:18:35,120
+不是K线的一半位置。比如这根K线，在我看来大概在一半的位置。
+It's not sort of half of the bar. Like this one, to me, is about half of the bar.
+
+278
+00:18:36,400 --> 00:18:39,020
+它应该出现在上三分之一区域。
+It should appear at the top third.
+
+279
+00:18:39,140 --> 00:18:40,226
+而且，
+And, again, it
+
+280
+00:18:40,226 --> 00:18:43,123
+这会有点混乱，因为我知道有人
+gets a little confusing because I know somebody
+
+281
+00:18:43,123 --> 00:18:46,020
+编写了这个工具，而我第一次看到它时的困惑在于，
+that programmed this, and sort of the drawback
+
+282
+00:18:46,020 --> 00:18:52,538
+我看到它被编程时的想法是，正如我所说，你是在画地为牢,
+that I had when I saw it programmed is, like I said, you're drawing lines in the sand,
+
+283
+00:18:52,680 --> 00:18:54,346
+如果你字面上把K线分成三等分，
+where if you're literally breaking
+
+284
+00:18:54,346 --> 00:18:57,679
+好的，这根K线会
+a bar down by thirds, okay, this one would be
+
+285
+00:18:57,679 --> 00:19:02,679
+超出范围，因为它是从这里到大约这里。
+outside of the range because it would be starting from up here to about here.
+
+286
+00:19:03,020 --> 00:19:07,880
+中间部分是从这里到这里，下三分之一是从这里到这里。
+Then the middle would be from here to here. The bottom third would be from here to here, right.
+
+287
+00:19:07,880 --> 00:19:10,792
+我确实喜欢这种灵活性，
+I do like to have that flexibility in
+
+288
+00:19:10,792 --> 00:19:14,432
+来判断成交量是否在上三分之一，
+determining if this is in the top third rather than
+
+289
+00:19:14,432 --> 00:19:22,440
+而不是字面上划线，把K线分成三段，然后说价值区必须在这里或那里。
+literally drawing the line, breaking a bar up into thirds and saying, no, the value area has to appear here or here.
+
+290
+00:19:22,440 --> 00:19:26,041
+我想到一个注意事项，
+One sort of note, I think,
+
+291
+00:19:26,041 --> 00:19:30,843
+现在想想，如果你
+now that I think about it, if you
+
+292
+00:19:30,843 --> 00:19:34,444
+要编程实现，
+were going to program it and
+
+293
+00:19:34,444 --> 00:19:44,648
+并且字面上把K线分成三等分，你可以用较小的成交量阈值，比如60%而不是70%。
+literally cut the bar into thirds, you could use a smaller amount of volume, 60% as opposed to 70%.
+
+294
+00:19:45,850 --> 00:19:54,190
+我不会把成交量阈值降到50%以下，但我认为可以从70%降到60%或65%。
+I wouldn't go below 50% in terms of volume, but I think you can sort of go down to maybe 60%, 65% from 70%.
+
+295
+00:19:54,190 --> 00:19:55,956
+当你观察K线中70%的成交量时，
+70%, when you're looking at 70%
+
+296
+00:19:55,956 --> 00:19:59,488
+它确实
+of the volume in a bar, it's really
+
+297
+00:19:59,488 --> 00:20:04,786
+在拒绝更低的价格，并且成交量确实集中在上方。
+rejecting much lower prices, okay, and you're really concentrating volume up there.
+
+298
+00:20:08,080 --> 00:20:12,860
+Ben问过，为什么是70%而不是其他数值？
+Well, 70%, Ben asked, why 70% as opposed to another value?
+
+299
+00:20:13,680 --> 00:20:18,040
+这也不是一成不变的，我知道有些人用60%。
+And again, it's not set in stone, right. I know guys that use 60%.
+
+300
+00:20:18,040 --> 00:20:24,880
+70%大概对应市场轮廓中的一倍标准差。
+70% is just sort of the one standard deviation, right, going back to market profile.
+
+301
+00:20:24,880 --> 00:20:26,235
+这只是
+It's just something that,
+
+302
+00:20:26,235 --> 00:20:28,267
+对我来说，我用70%作为
+like for me, I use value
+
+303
+00:20:28,267 --> 00:20:29,960
+价值区域，但
+areas of 70%, okay, but, you
+
+304
+00:20:29,960 --> 00:20:35,041
+有人会说真正数值是68%，不过我们四舍五入到70%
+know, people say it was really 68%, but, you know, we just sort of round up.
+
+305
+00:20:36,520 --> 00:20:38,940
+但这是我使用的标准。
+But that's what I use.
+
+306
+00:20:39,000 --> 00:20:40,180
+同样，
+But again, just
+
+307
+00:20:40,180 --> 00:20:42,933
+就如同处理买卖失衡一样，
+like with imbalances, okay, people are going
+
+308
+00:20:42,933 --> 00:20:46,079
+有人会说，
+to say, you know, like for me, I
+
+309
+00:20:46,079 --> 00:20:54,339
+我用4:1的失衡，其他交易者用3:1、3.5:1的失衡
+use imbalances of four to one, other traders use imbalances of three to one, three and a half to one, okay.
+
+310
+00:20:57,760 --> 00:21:00,260
+你得找到自己舒服的数值。
+Really have to find what you're comfortable with.
+
+311
+00:21:00,740 --> 00:21:05,240
+我喜欢70%，因为我知道这是成交量压倒性的数量。
+Me, I like 70% just because I know it's an overwhelming amount of volume.
+
+312
+00:21:05,240 --> 00:21:11,000
+但同样，有些交易者用60%
+But again, you know, there's other traders out there that use 60%, okay.
+
+313
+00:21:11,100 --> 00:21:16,200
+我刚学这个概念时，告诉我这个的人用的是60%
+I mean, when I first learned about this, the guy that sort of told me about it, he was using 60%.
+
+314
+00:21:16,200 --> 00:21:18,396
+我个人
+Me, personally, I bumped
+
+315
+00:21:18,396 --> 00:21:21,141
+把它调高到70%，但
+it up to 70%, but I
+
+316
+00:21:21,141 --> 00:21:28,829
+我放宽了一些阈值，而他对K线的三分之一部分很严格
+relaxed some of the thresholds, right, where he's strict on thirds of bars, okay.
+
+317
+00:21:29,380 --> 00:21:39,060
+这里，这根红色K线，这根红色K线，这根红色K线，连续出现
+Here, right here, this red bar, this red bar, this red bar, right, so it's sort of coming in bunches.
+
+318
+00:21:39,120 --> 00:21:40,246
+同样，如果你
+And again, if you
+
+319
+00:21:40,246 --> 00:21:41,935
+要拆分的话，
+were to break it up, literally,
+
+320
+00:21:41,935 --> 00:21:44,188
+如果你要用K线的精确三分之一
+again, if you're going to use literal thirds
+
+321
+00:21:44,188 --> 00:21:46,441
+你会说，
+of the bar, right, where you say, okay,
+
+322
+00:21:46,441 --> 00:21:48,694
+这根K线的波动范围是21个Tick，
+so this bar had a range of, you
+
+323
+00:21:48,694 --> 00:21:56,016
+那必须是前7个Tick，接下来7个Tick，再接下来7个Tick
+know, 21 ticks, right, you know, say, well, it has to be these seven ticks, has to be the next seven, has to be the next seven.
+
+324
+00:21:56,300 --> 00:21:58,840
+我更偏向直观判断。
+And again, I'm more of a visual person.
+
+325
+00:21:59,020 --> 00:22:01,480
+我喜欢大致把握
+I like to just sort of grasp
+
+326
+00:22:01,480 --> 00:22:06,400
+它出现在K线下三分之一的位置
+it as, okay, yeah, that's appearing towards the bottom third of the candle, right.
+
+327
+00:22:06,480 --> 00:22:08,508
+然后当我
+And then when
+
+328
+00:22:08,508 --> 00:22:11,889
+看到一根、
+I see, you know, one,
+
+329
+00:22:11,889 --> 00:22:22,709
+两根、三根连续出现，
+two, three coming in, you know, it's telling me these higher prices are being rejected, right.
+
+330
+00:22:22,770 --> 00:22:27,030
+它告诉我这些高价位被拒绝，你能看到市场在此盘整后出现大跌
+And you can see the market just sort of hanging around here before you have a nice drop here.
+
+331
+00:22:27,030 --> 00:22:29,135
+然后它下跌
+And then it drops
+
+332
+00:22:29,135 --> 00:22:31,767
+从，大约44
+from, you know, you know, 44,
+
+333
+00:22:31,767 --> 00:22:34,925
+这是，这是道指，
+this is, what is this, Dow,
+
+334
+00:22:34,925 --> 00:22:41,242
+你知道，520、530下跌到450左右。
+you know, the 520s, 530s, down into the 450s down in here.
+
+335
+00:22:45,310 --> 00:22:48,810
+Furkin问，若成交量集中区在K线中部或下部，是否会更好？
+Furkin asks, wouldn't it be better if the value area was concentrated in the middle or low of the bar?
+
+336
+00:22:48,930 --> 00:22:50,570
+我们得到一个收盘价高于开盘价的看涨K线。
+We get a close above for a bullish candle.
+
+337
+00:22:51,050 --> 00:22:59,690
+通常成交量集中区应出现在K线中部。这是正态分布，对吧。
+Well, the value areas generally should be appearing towards the middle of the bar. That's a normal distribution, right.
+
+338
+00:22:59,730 --> 00:23:05,270
+如果你把它看作B形、P形，对吧。
+If you think of it as B shapes, P shapes, right.
+
+339
+00:23:05,370 --> 00:23:07,873
+我的意思是，如果你
+I mean, if you
+
+340
+00:23:07,873 --> 00:23:12,880
+深入研究成交量分布图，对吧，你会知道当
+delved into profiles, right, you know that when
+
+341
+00:23:12,880 --> 00:23:17,887
+成交量集中区出现在中部时，
+the value area is appearing in the middle,
+
+342
+00:23:17,887 --> 00:23:25,398
+这就是正态分布日。成交量本应如此分布。
+that's your normal distribution day. That's how it's supposed to be distributed.
+
+343
+00:23:25,620 --> 00:23:31,320
+我们寻找的是成交量偏向K线的一侧。
+What we're looking for is it being skewed to one side of the bar.
+
+344
+00:23:31,880 --> 00:23:33,560
+不过，话虽如此，
+Now, that being said,
+
+345
+00:23:33,560 --> 00:23:36,080
+确实，也有一种观点
+you know, there's also an argument
+
+346
+00:23:36,080 --> 00:23:38,600
+比如这根红色
+of, you know, like this red
+
+347
+00:23:38,600 --> 00:23:43,220
+K线，大量成交量集中在上部附近。
+bar with the heavy volume being concentrated up near the top.
+
+348
+00:23:43,220 --> 00:23:45,964
+但我们发现的，
+But what we've, what's been discovered,
+
+349
+00:23:45,964 --> 00:23:50,081
+我不是说我们，人们和我分享的是，
+I don't say we, you know, people share with
+
+350
+00:23:50,081 --> 00:23:56,027
+当成交量偏向红色K线的下部
+me things, is when it gets skewed towards the bottom of a red
+
+351
+00:23:56,027 --> 00:24:08,378
+或绿色K线的上部时，说明价格在拒绝这些较高价位，且大量成交量在较低价位被接受。
+candle or towards the top of a green candle, we know that prices are rejecting these higher prices and heavier volume is being accepted at lower prices.
+
+352
+00:24:08,380 --> 00:24:11,911
+Ben问，你是否发现如果
+Ben asks, have you found that if
+
+353
+00:24:11,911 --> 00:24:16,451
+成交量集中区占整个K线的百分比较小，
+the value area takes up a smaller percentage overall
+
+354
+00:24:16,451 --> 00:24:23,514
+比如7%的成交量集中，而不是分散开，是否意味着更强劲或更高概率的行情？
+candle, meaning 7% is concentrated instead of spread out, means stronger or higher probability moves?
+
+355
+00:24:25,440 --> 00:24:31,420
+这是一个有趣的问题。
+That is an interesting question.
+
+356
+00:24:31,720 --> 00:24:42,420
+这是我思考过的一个独特问题。而且很奇怪，因为这种情况并不常发生。
+That's a unique question that I've thought of. And it's strange, you know, because it doesn't happen that often.
+
+357
+00:24:42,520 --> 00:24:46,545
+我实际上有个工具来处理这个。
+I actually have a tool for this.
+
+358
+00:24:46,545 --> 00:24:55,745
+这更多是一个测试工具，我们可以将成交量集中区设为任意值，比如70%。
+This is more of a testing tool where we set the value area to whatever, say 70%.
+
+359
+00:24:56,320 --> 00:24:59,241
+然后我们只需标记那些K线，
+Then we just highlight the bars where,
+
+360
+00:24:59,241 --> 00:25:02,579
+比如这根K线的成交量集中区占
+so like say this bar's got, you know, 25
+
+361
+00:25:02,579 --> 00:25:06,752
+价格水平。我们会在其上方标注一个数字，
+price levels. We would draw a number above it, how
+
+362
+00:25:06,752 --> 00:25:14,681
+表示价值区域包含多少个价格水平，比如两个Tick、三个Tick、四个Tick或五个Tick。
+many price levels the value area is, you know, whether it's two ticks, three ticks, four ticks, five ticks.
+
+363
+00:25:15,180 --> 00:25:24,880
+因此，我们特别关注那些非常狭窄的价值区域，也就是非常小的区域。
+So we would, specifically, I wanted to look for the value areas that are very tight, you know, very small.
+
+364
+00:25:24,980 --> 00:25:26,850
+我没有，
+I don't have, I don't have
+
+365
+00:25:26,850 --> 00:25:28,720
+我在这台电脑上没有这个指标。
+the indicator on this PC. It's
+
+366
+00:25:28,720 --> 00:25:34,019
+它在我的另一台电脑上，但我应该在这里加载并下周展示给大家。
+on my other PC, but I should load it up here and show you guys next week.
+
+367
+00:25:34,240 --> 00:25:36,720
+但其实，我注意到
+But really, because what I've noticed
+
+368
+00:25:36,720 --> 00:25:39,613
+在某些市场中，并非所有市场都如此，
+in some markets, now it's not all
+
+369
+00:25:39,613 --> 00:25:43,746
+尤其是像期指（E-minis）这样的市场，
+markets, because especially markets like E-minis, you're not going to
+
+370
+00:25:43,746 --> 00:25:49,119
+你不会看到这种情况，因为成交量在期指市场中分布得非常均匀。
+get it, volume is just distributed really well in a market like E-minis.
+
+371
+00:25:49,120 --> 00:25:53,915
+但当你进入商品市场，特别是谷物市场时，
+But when you get into commodity markets, grains in particular,
+
+372
+00:25:53,915 --> 00:25:57,751
+你会看到某些K线包含10个价格水平，
+you can get these bars where it's 10 price
+
+373
+00:25:57,751 --> 00:26:07,820
+而价值区域仅占一个价格水平。我曾看到这些K线后出现非常剧烈的行情。
+levels and the value area is just one price level. And I've seen very explosive moves come off of those bars.
+
+374
+00:26:08,300 --> 00:26:11,177
+问题在于这种情况
+The problem is they don't occur
+
+375
+00:26:11,177 --> 00:26:15,493
+并不经常发生，
+that often, you know, where it's like we try
+
+376
+00:26:15,493 --> 00:26:20,288
+我们尝试将其细分，
+to split it down into, you know, the value area
+
+377
+00:26:20,288 --> 00:26:27,960
+比如价值区域占K线区间的20%、30%或甚至35%，尽量保持在40%以下。
+being like 20% or 30% or even, you know, 35%, try to keep it under 40% of the bar's range.
+
+378
+00:26:29,880 --> 00:26:38,700
+我只是发现这在某些市场中有效，而在其他市场中无效。
+I just found it was something that worked well in some markets and not all markets.
+
+379
+00:26:40,260 --> 00:26:42,993
+但这只是其中一个
+But sort of, it's just one of those
+
+380
+00:26:42,993 --> 00:26:45,384
+测试，结果不确定。
+tests where it just came back inconclusive
+
+381
+00:26:45,384 --> 00:26:52,559
+我原本期望能获得更好、更明确的结果。
+in a way. I was really hoping for, you know, some much, much better results. So, you know, something more conclusive.
+
+382
+00:26:52,720 --> 00:26:58,340
+举个例子，让我打开Ninja Trader。好的，比如这是欧元货币。
+So, for example, here, let me just get Ninja Trader up. So, okay, so like this is Euro currency.
+
+383
+00:26:58,480 --> 00:27:00,180
+看看这里面有没有。
+Let's see if there's one in here.
+
+384
+00:27:00,360 --> 00:27:03,114
+有时在货币市场中也会出现这种情况，
+Sometimes you do get them in
+
+385
+00:27:03,114 --> 00:27:05,868
+好的，
+the currencies where, okay, you know,
+
+386
+00:27:05,868 --> 00:27:08,622
+可能是一个
+it'd be something like, you know,
+
+387
+00:27:08,622 --> 00:27:15,508
+成交量非常集中、非常紧凑的K线。
+a bar like this where the volume is just so tight, the concentration of volume.
+
+388
+00:27:16,290 --> 00:27:22,760
+如果这是一个好的市场，我不确定，我还没看过大豆市场。
+But if it was a good market here, I don't know, I haven't looked at soybeans.
+
+389
+00:27:22,760 --> 00:27:27,360
+现在开盘了，时间是9点30分。
+In time, we're open there, it's 930.
+
+390
+00:27:28,060 --> 00:27:29,575
+但让我
+But let me
+
+391
+00:27:29,575 --> 00:27:32,101
+我只记得一个，
+just, I know one, I
+
+392
+00:27:32,101 --> 00:27:35,637
+但我不记得上面的这个，因为
+can't remember one up here because I
+
+393
+00:27:35,637 --> 00:27:39,678
+我好久没仔细看过了。
+haven't really looked at it in a while.
+
+394
+00:27:40,280 --> 00:27:42,961
+但我知道在某些
+But I know in some of
+
+395
+00:27:42,961 --> 00:27:45,642
+谷物市场中，你会看到一根K线，
+these grains, you'd get a bar,
+
+396
+00:27:45,642 --> 00:27:49,217
+对，那里可能只有七个价格水平，
+right, where it's just like seven price levels
+
+397
+00:27:49,217 --> 00:27:54,579
+而一个价值区基本上就是控制点。
+and just one value area would basically be the point of control.
+
+398
+00:27:54,580 --> 00:28:11,850
+但不幸的是，结果往往不够明确。
+But, again, unfortunately, it was just sort of inconclusive, you know, in terms of results.
+
+399
+00:28:12,550 --> 00:28:14,611
+我真心希望
+I really was hoping that
+
+400
+00:28:14,611 --> 00:28:17,497
+它能成为某种，并非
+it would be like something that, not
+
+401
+00:28:17,497 --> 00:28:19,970
+圣杯，但能
+like a holy grail, but, you
+
+402
+00:28:19,970 --> 00:28:26,978
+让我更加兴奋的东西。
+know, just something that would give me a lot more to, you know, to be excited about.
+
+403
+00:28:26,980 --> 00:28:31,320
+你看这里，对吧，这是一个小价值区。
+It's, you know, you see here, right, it's the small value area.
+
+404
+00:28:34,320 --> 00:28:38,000
+但部分原因在于它是这样进来的，
+But part of the thing with it coming
+
+405
+00:28:38,000 --> 00:28:41,220
+有时候它可能
+in like this here, sometimes it could
+
+406
+00:28:41,220 --> 00:28:48,120
+太接近，导致你看到很多0或1。
+just be so near that you see zero, you know, a lot of ones, zeros.
+
+407
+00:28:48,120 --> 00:28:49,517
+可能
+You know, maybe
+
+408
+00:28:49,517 --> 00:28:52,777
+在控制点的位置，
+at where the point of control is,
+
+409
+00:28:52,777 --> 00:28:56,037
+它带着200手合约进来，
+you know, it comes in with like 200
+
+410
+00:28:56,037 --> 00:28:59,297
+这显然会
+contracts, okay, which would obviously give it
+
+411
+00:28:59,297 --> 00:29:05,352
+让价值区的成交量集中在该价格水平。
+the value area being the volume being concentrated right at that price level.
+
+412
+00:29:05,820 --> 00:29:09,082
+那里可能有一个大挂单
+Where it was just like a big resting
+
+413
+00:29:09,082 --> 00:29:10,713
+被成交，让我试试能不能找到一个。
+order sitting there that
+
+414
+00:29:10,713 --> 00:29:15,199
+我真希望能
+got filled, let me see if I could just find one.
+
+415
+00:29:15,300 --> 00:29:18,539
+在这里找到一个，但这是一个
+I really wish I could
+
+416
+00:29:18,539 --> 00:29:23,074
+我深入探索过的
+find one here, but it is something,
+
+417
+00:29:23,074 --> 00:29:26,961
+兔子洞，
+it is a rabbit hole that
+
+418
+00:29:26,961 --> 00:29:34,088
+我尝试再看一个市场。
+I have gone down just trying to, one more market here.
+
+419
+00:29:34,090 --> 00:29:37,210
+我就试试黄金期货吧，因为某些
+I'll just try gold futures because some of
+
+420
+00:29:37,210 --> 00:29:39,940
+市场交易时，有时候
+these markets where it just trades, sometimes
+
+421
+00:29:39,940 --> 00:29:44,230
+可能会有大量买盘或卖盘挂在那里。
+there can be a very heavy bid or offer sitting there.
+
+422
+00:29:47,020 --> 00:29:54,040
+但不幸的是，这种情况并不像你期望的那样频繁出现，对吧？
+But again, unfortunately, this doesn't happen as often as you'd like it to appear, right?
+
+423
+00:29:55,560 --> 00:29:58,480
+因为当它出现时，确实非常突出。
+Because when you see it, it really, really stands out.
+
+424
+00:29:58,480 --> 00:30:00,732
+然后你会想，哦，
+And then you think, oh,
+
+425
+00:30:00,732 --> 00:30:03,884
+这是某种信号，
+this is something, but then the reality
+
+426
+00:30:03,884 --> 00:30:09,739
+但现实是它并不像你期望的那样频繁出现。
+is it just doesn't happen as often as you'd like it to appear.
+
+427
+00:30:20,080 --> 00:30:22,400
+比如现在，我试着找一个，但就是找不到。
+It's like, here, I'm trying to find one, but I just can't find one.
+
+428
+00:30:25,910 --> 00:30:29,810
+但昨天那个市场也是类似的情况。
+But sort of the same thing yesterday with that market.
+
+429
+00:30:30,510 --> 00:30:39,400
+我现在就是找不到一个。
+I just can't find one right now.
+
+430
+00:30:39,880 --> 00:30:41,840
+不过，Ben，我喜欢你的思路。
+But, you know, I like the way you're thinking, Ben.
+
+431
+00:30:42,300 --> 00:30:59,860
+好的，这里。好，我的光标在哪？
+Okay, here. All right. Where's my cursor here?
+
+432
+00:31:02,670 --> 00:31:07,750
+好的，你能看到，对吧，就在这里，当你分解时。
+Okay, so you see it right in here, right, as you're breaking down.
+
+433
+00:31:08,290 --> 00:31:25,610
+现在，关于偏度的一点是，如果你在用OrderFlowsTrader，你知道，我们这里确实有个工具。
+Now, the one thing with skewness is if you're using OrderFlowsTrader, you know, we do have a tool on here.
+
+434
+00:31:26,830 --> 00:31:28,690
+让我把NinjaTrader调回来。
+Let me just get NinjaTrader back here.
+
+435
+00:31:30,450 --> 00:31:38,470
+这有助于识别它，如果你进入设置的话，对吧？
+That does help a little bit in identifying it if you were to go into the settings, right?
+
+436
+00:31:38,470 --> 00:31:46,810
+因为通常当你有看涨或看跌的偏度时，这里会有订单流的缺口。
+Because normally when you have skew like bullish or bearish, you do have an order flow gap up here.
+
+437
+00:31:46,810 --> 00:31:57,130
+因为价值区之间通常会有缺口。
+Because there's usually a gap between the value areas.
+
+438
+00:32:01,060 --> 00:32:03,373
+好的，现在如果
+Okay, so now if
+
+439
+00:32:03,373 --> 00:32:07,999
+你在看这些缺口，显然它
+you're looking at the gaps, obviously it doesn't
+
+440
+00:32:07,999 --> 00:32:14,939
+并没有考虑价值区在K线中的位置。
+take into account where the value area is appearing in the bar.
+
+441
+00:32:14,940 --> 00:32:21,140
+好的，但让我回到我们现在交易的位置。
+Okay, but let me just go back to where we're trading right now.
+
+442
+00:32:25,960 --> 00:32:37,400
+这个缺口，这个很不错。
+This here, this gap, this is nice.
+
+443
+00:32:37,400 --> 00:32:41,020
+但这个价值区，这个成交量大约占了K线的一半，对吧？
+But this value area, this volume is about half of the bar, right?
+
+444
+00:32:41,040 --> 00:32:42,585
+如果成交量
+It would be much nicer if
+
+445
+00:32:42,585 --> 00:32:44,130
+出现在K线的
+the volume was appearing on the
+
+446
+00:32:44,130 --> 00:32:47,478
+底部，靠近K线底部的三分之一位置，那就更好了。
+bottom, towards the bottom of the bar, the bottom third of the bar.
+
+447
+00:32:50,110 --> 00:32:54,090
+但缺口是一种帮助你识别这些的方式。
+But gaps is a way that can sort of help you identify these.
+
+448
+00:32:54,090 --> 00:33:01,050
+但成交量出现的位置仍然还有进一步的步骤需要考虑。
+But there is still like a further step in where that volume is appearing.
+
+449
+00:33:01,410 --> 00:33:09,270
+而且，如果你在用70%的阈值，用60%也没问题。你可以用60%。
+And again, you know, if you're using 70%, there's nothing wrong with using 60%. You could use 60%.
+
+450
+00:33:09,270 --> 00:33:16,690
+如果你想改这个，只需进入指标设置，把70改成60。
+If you want to change that, you just go into the indicator setting, change it from 70 to 60.
+
+451
+00:33:16,690 --> 00:33:18,610
+我只是更倾向于
+I just like to be a little bit
+
+452
+00:33:18,610 --> 00:33:20,290
+在观察时保持一致性，
+consistent in where I'm looking at in
+
+453
+00:33:20,290 --> 00:33:24,130
+因为一旦我用70%，就会考虑价值区的问题。
+terms of, because once I get into 70%, then I'm thinking in terms of value as well.
+
+454
+00:33:25,370 --> 00:33:26,666
+但如果
+Okay, but if
+
+455
+00:33:26,666 --> 00:33:29,259
+你设为60%，你会发现
+you make it 60, right, you see
+
+456
+00:33:29,259 --> 00:33:32,716
+这里显然
+down here, you know, this is clearly towards
+
+457
+00:33:32,716 --> 00:33:38,766
+处于K线下方三分之一。这根K线本身就很大。
+the bottom third of the bar. This, but it's already such a big bar.
+
+458
+00:33:42,200 --> 00:33:46,460
+在我看来，这更接近上方三分之一，甚至上半部分。
+To me, this is towards the top third, more of the top half.
+
+459
+00:33:46,460 --> 00:33:48,491
+这只是另一种
+But it's just one other way
+
+460
+00:33:48,491 --> 00:33:50,184
+你可以使用的方法，
+that you can use, you
+
+461
+00:33:50,184 --> 00:33:53,909
+这里肯定处于下方三分之一。
+know, this is in the bottom third for sure, right here.
+
+462
+00:33:54,830 --> 00:33:58,033
+可能帮你识别的一个因素是
+Sort of maybe the one thing that
+
+463
+00:33:58,033 --> 00:34:01,694
+缺口的大小。
+might help you identify it is sort of
+
+464
+00:34:01,694 --> 00:34:06,270
+因为这之前出现过，
+the bigger the gap. Because this did come up a
+
+465
+00:34:06,270 --> 00:34:14,508
+可能不是在夏季项目里，而是在培训课程中，
+while back, probably not in this summer program, but in a training session, how big a gap is.
+
+466
+00:34:14,510 --> 00:34:19,010
+通常来说，缺口越大，离价值区越远。
+Because generally speaking, the bigger the gap, the farther away from value is.
+
+467
+00:34:19,690 --> 00:34:24,310
+所以你可以看到，在我看来，这里是上方三分之一。
+So you can see, like, this would be, to me, top third here, okay.
+
+468
+00:34:25,070 --> 00:34:27,542
+它中间有一个相当大的
+And it's got a pretty decent
+
+469
+00:34:27,542 --> 00:34:30,014
+缺口，对吧，
+size gap in between, right, just
+
+470
+00:34:30,014 --> 00:34:35,370
+就像这里是上方三分之一，这里是下方三分之一。
+as this one, top third here, right, just as this bottom third here.
+
+471
+00:34:35,370 --> 00:34:44,940
+所以这是一个能帮你识别的工具。
+So that's a tool that you could use to sort of help you identify.
+
+472
+00:34:45,159 --> 00:34:47,804
+我认为，你可能不
+I don't think, you probably don't
+
+473
+00:34:47,804 --> 00:34:50,449
+一定需要使用价值区
+necessarily need to use value area
+
+474
+00:34:50,449 --> 00:34:53,975
+缺口，但可以是价值区缺口或订单流
+gaps, but value area gaps or order flow
+
+475
+00:34:53,975 --> 00:34:57,501
+缺口，我们是这样称呼的。
+gaps, as we call them. Now, these are
+
+476
+00:34:57,501 --> 00:35:06,758
+这些不是公平价值缺口，但它能帮你直观地发现，对吧？
+not fair value gaps, but, you know, it's just something that, it's something that can help you spot it visually, right?
+
+477
+00:35:06,760 --> 00:35:13,500
+我是说，足迹图的优势在于你能直观看到这些情况。
+I mean, that's the beauty of a footprint chart is you can see these things taking place, you know, visually.
+
+478
+00:35:13,780 --> 00:35:18,760
+比如，我把这个关掉。这是Delta Scalper。
+So, for example, let me just take this off. This is Delta Scalper.
+
+479
+00:35:20,920 --> 00:35:23,601
+但如果你
+But if you were
+
+480
+00:35:23,601 --> 00:35:27,623
+在普通图表上，对吧，你
+on a normal chart, right, you
+
+481
+00:35:27,623 --> 00:35:34,998
+比如黄金，你看不到成交量如何分布，对吧？
+know, gold, you're not seeing how volume is being distributed, right?
+
+482
+00:35:35,000 --> 00:35:43,090
+你只能看到开盘价、最高价、最低价和收盘价，对吧？
+You just see the open, the high, the open, the low, high, low, and close, right?
+
+483
+00:35:43,130 --> 00:35:44,459
+你不知道哪个先出现，
+You don't know which
+
+484
+00:35:44,459 --> 00:35:46,453
+比如看一根K线，
+made, you know, if you look
+
+485
+00:35:46,453 --> 00:35:49,111
+你只能大概知道
+at a candle, you have an idea of
+
+486
+00:35:49,111 --> 00:35:54,428
+是高点先形成还是低点先形成，但这太单一了。
+which was made first, the high or the low. You know, but that's, it's very one-dimensional.
+
+487
+00:35:55,450 --> 00:36:10,660
+而足迹图能进一步证明市场中实际发生的情况。
+Looking at a footprint provides that further proof of, you know, what's actually taking place in the market, okay?
+
+488
+00:36:10,660 --> 00:36:15,900
+这是昨天黄金的走势，就在大涨之前。
+This was gold yesterday, right, right before that big takeoff.
+
+489
+00:36:16,100 --> 00:36:18,220
+我们来看看昨天的黄金图表。
+Let's go look at that gold chart from yesterday.
+
+490
+00:36:18,520 --> 00:36:29,890
+这里是上午9点50分左右。
+It's around 9.50 in the morning here, right?
+
+491
+00:36:30,610 --> 00:36:32,290
+就是这里，
+Here, right? This is where we went.
+
+492
+00:36:33,210 --> 00:36:39,290
+我们像弹簧一样飙升，对吧？从某个价位开始。
+We, like, spring catapulted up, right? From, you know, whatever.
+
+493
+00:36:39,430 --> 00:36:42,790
+这是33.40，涨了20美元。
+This is 33.40, you know, 20 bucks.
+
+494
+00:36:42,790 --> 00:36:55,890
+但如果你看普通K线图，这根是弹射K线，时间是9点54分。
+But if you're looking at here, right, on this normal bar chart, right, this is the catapult bar right here, 9.54.
+
+495
+00:36:57,230 --> 00:36:58,710
+它在这里回落。
+It pulls in here.
+
+496
+00:37:00,070 --> 00:37:09,490
+我们从40点左右涨到80点，只用了40分钟。
+I mean, look, we go from basically 40 all the way up to 80 in about 40 minutes, right?
+
+497
+00:37:09,490 --> 00:37:10,490
+看看这个。
+And look at this.
+
+498
+00:37:12,070 --> 00:37:13,129
+有些人会说，
+When people, you
+
+499
+00:37:13,129 --> 00:37:14,894
+有些人会说,
+know, some guys will say,
+
+500
+00:37:14,894 --> 00:37:17,366
+你突破了这个高点，
+well, you broke out above this high
+
+501
+00:37:17,366 --> 00:37:19,131
+这个高点，
+and this high and this
+
+502
+00:37:19,131 --> 00:37:25,487
+还有这个高点，他们会画线，标出我们突破的所有前期高点。
+high, you know, they'll have a line, you know, all these previous highs that we take out here.
+
+503
+00:37:28,580 --> 00:37:29,027
+哦。
+Whoops.
+
+504
+00:37:29,027 --> 00:37:30,815
+他们会说，
+You know, they'll say,
+
+505
+00:37:30,815 --> 00:37:33,050
+我们突破了这个高点，
+well, we took out this
+
+506
+00:37:33,050 --> 00:37:35,285
+突破了这个高点，
+high here, took out this
+
+507
+00:37:35,285 --> 00:37:40,649
+突破了这个高点，突破了这个高点。
+high here, took out this high here, took out this high here.
+
+508
+00:37:40,650 --> 00:37:44,150
+但实际上，这是你的成交量偏度。
+But really, that was your skew.
+
+509
+00:37:50,790 --> 00:37:51,550
+我们来看看这里。
+Let's see here.
+
+510
+00:37:52,430 --> 00:37:56,050
+我有点难以理解负偏度。
+Can't wrap my, for kind of, I can't wrap my head around the negative skew.
+
+511
+00:37:56,130 --> 00:37:57,377
+若成交量
+If volume is
+
+512
+00:37:57,377 --> 00:37:59,456
+集中在K线的
+concentrated at the low of
+
+513
+00:37:59,456 --> 00:38:01,119
+这根K线,
+the bar, okay, well,
+
+514
+00:38:01,119 --> 00:38:06,109
+红色K线的低点，那这不是支撑成交量吗？
+low of a red bar, wouldn't that be supportive volume instead? Okay.
+
+515
+00:38:06,330 --> 00:38:11,850
+现在来拆解你的问题。
+So let's break this down here to your question. Okay.
+
+516
+00:38:11,890 --> 00:38:21,210
+首先，我们从一根红色K线开始。找一根来看看。
+So first, we're going to start with, what, a red bar. So let's find one here.
+
+517
+00:38:21,210 --> 00:38:26,940
+好，这里。这是正向成交量偏度。
+Okay, here. This is positive skew.
+
+518
+00:38:27,240 --> 00:38:34,490
+这里我记不清是否有负向成交量偏度的例子。
+This is where it gets, I can't remember if I had the negative skew.
+
+519
+00:38:34,630 --> 00:38:38,550
+如果成交量集中在低点，那不是支撑成交量吗？
+If the volume is concentrated near the low, wouldn't that be supportive volume?
+
+520
+00:38:43,310 --> 00:38:44,288
+关键在于
+Well, the key
+
+521
+00:38:44,288 --> 00:38:45,918
+Furkan说，让
+there, because Furkan says, let
+
+522
+00:38:45,918 --> 00:38:48,200
+我读一下。我
+me just read this out. I can't
+
+523
+00:38:48,200 --> 00:38:49,830
+理不清
+wrap my head around the
+
+524
+00:38:49,830 --> 00:38:56,350
+负向成交量偏度。如果成交量集中在红色K线的低点，那不是支撑成交量吗？
+negative skew. If the volume is concentrated at the low on a red bar, wouldn't that be supportive volume instead?
+
+525
+00:38:56,910 --> 00:39:00,950
+市场找到了流动性，可能会反弹。
+The market has found liquidity to potentially bounce off of.
+
+526
+00:39:01,850 --> 00:39:07,290
+确实，负向偏度、正向偏度容易让人混淆。
+Okay. Yeah, you know, it gets confusing when you start thinking of negative skew, positive skew.
+
+527
+00:39:07,970 --> 00:39:15,840
+其实，我倾向于认为成交量是在移动。
+Really, the way I like to think of it is volume moving, period.
+
+528
+00:39:16,200 --> 00:39:18,880
+别想偏度，这样容易混淆。
+Don't think, you know, it gets confusing when you think of skews.
+
+529
+00:39:18,880 --> 00:39:19,837
+You know,
+
+530
+00:39:19,837 --> 00:39:21,272
+人们喜欢
+people like to,
+
+531
+00:39:21,272 --> 00:39:24,621
+过去10年交易中，我注意到一件事
+you know, one thing that I've noticed
+
+532
+00:39:24,621 --> 00:39:27,970
+尤其是在订单流交易中
+in the last 10 years of trading, especially
+
+533
+00:39:27,970 --> 00:39:31,798
+交易已经
+with order flow, and, you know, trading has
+
+534
+00:39:31,798 --> 00:39:35,147
+朝一个方向发展，即
+really moved in a direction where there's
+
+535
+00:39:35,147 --> 00:39:38,496
+很多人并非交易者
+a lot of people out there that
+
+536
+00:39:38,496 --> 00:39:54,287
+他们只是普通人。有时他们会创造些术语。我不是说‘负向成交量偏度’这些术语让问题复杂化。对吧？
+are not traders. They're just people. And sometimes they come up with these terms. And I'm not saying that that's the term being used here, negative skew, et cetera, that complicate things. Right?
+
+537
+00:39:54,810 --> 00:39:58,010
+因为大家会按自己理解的方式思考。
+Because then people start thinking in terms of what they know.
+
+538
+00:39:58,010 --> 00:40:06,610
+比如这里，好，这根红色K线。退一步，读读你写的。
+So, for example, here, okay, this red bar. Take a step back and read what you wrote.
+
+539
+00:40:07,310 --> 00:40:10,770
+成交量集中在红色K线的低点。
+Volume is concentrated at the low on a red bar.
+
+540
+00:40:11,170 --> 00:40:13,570
+那价格在做什么？
+So, what is price doing?
+
+541
+00:40:13,950 --> 00:40:15,210
+价格正在下跌。
+Price is going down.
+
+542
+00:40:15,310 --> 00:40:18,310
+我们如何知道价格在下跌？因为这是根阴线K线。
+How do we know price is going down? It's a red bar.
+
+543
+00:40:19,270 --> 00:40:25,230
+然后我们观察成交量分布的位置。
+Okay. Then we look at where the volume is coming in, right?
+
+544
+00:40:25,310 --> 00:40:27,090
+我们使用的是价值区域。
+We're using the value area.
+
+545
+00:40:31,320 --> 00:40:40,770
+发生了什么？成交量随价格一起下降。
+And what's taking place? Well, volume is going down together with price.
+
+546
+00:40:40,770 --> 00:40:48,015
+若是一根阳线K线，
+Now, if it was a green bar with the volume
+
+547
+00:40:48,015 --> 00:40:52,362
+而成交量集中在底部，
+towards the bottom of it, then
+
+548
+00:40:52,362 --> 00:41:03,229
+那么市场可能已找到流动性并反弹。
+you'd be looking at sort of the markets found that liquidity to bounce off of.
+
+549
+00:41:03,230 --> 00:41:05,638
+但实际情况是，
+But what's taking place is this
+
+550
+00:41:05,638 --> 00:41:08,046
+市场触及高点后，
+market, we hit this high, it
+
+551
+00:41:08,046 --> 00:41:10,454
+开始回落，
+starts coming off, volume is going,
+
+552
+00:41:10,454 --> 00:41:15,270
+成交量在这根K线的低位交易，在这根K线的低位交易。
+is transacting lower here in this bar, lower here in this bar.
+
+553
+00:41:15,270 --> 00:41:19,040
+对流动性的搜索尚未结束。
+The search is not over for liquidity.
+
+554
+00:41:19,280 --> 00:41:20,099
+I guess,
+
+555
+00:41:20,099 --> 00:41:22,147
+you know, sort of another
+
+556
+00:41:22,147 --> 00:41:25,014
+point in your question there is the
+
+557
+00:41:25,014 --> 00:41:27,062
+市场已找到流动性
+market has found liquidity to
+
+558
+00:41:27,062 --> 00:41:32,797
+来反弹。但它还未反弹。这根K线仍是阴线。
+bounce off of. Well, it's not bouncing yet. The bar is still red. Right?
+
+559
+00:41:32,920 --> 00:41:34,040
+它还未反转。
+It hasn't reversed.
+
+560
+00:41:34,160 --> 00:41:36,560
+当你想到反弹时，市场是在反转。
+When you think of a bounce, right, the market is reversing.
+
+561
+00:41:36,980 --> 00:41:44,220
+但在这种情况下，市场还未反转。它仍在下跌。
+But in this case, the market hasn't reversed. It's still going lower.
+
+562
+00:41:44,220 --> 00:41:51,200
+然而，它仍在寻找更多流动性以在更低价位成交。
+However, it's still looking for more liquidity to transact at lower prices.
+
+563
+00:41:57,680 --> 00:41:58,383
+Ben，对，Ben
+Ben, yeah, Ben
+
+564
+00:41:58,383 --> 00:42:00,025
+提了个好问题。他说，可能
+brings a good point. Says, I guess
+
+565
+00:42:00,025 --> 00:42:01,901
+成交量分布图集中在底部，
+the value area is concentrating at the bottom
+
+566
+00:42:01,901 --> 00:42:03,777
+且下一根K线未跌破低点。
+and the next candle doesn't break the low.
+
+567
+00:42:04,120 --> 00:42:08,100
+那么可能具有支撑作用。没错。可能具有支撑作用。
+Then maybe it's supportive. Exactly. Maybe it's supportive. Right?
+
+568
+00:42:08,160 --> 00:42:10,800
+你必须观察价格的走势。
+You have to be watching what price is doing.
+
+569
+00:42:11,260 --> 00:42:12,160
+我们可能会横盘。
+We could go sideways.
+
+570
+00:42:12,160 --> 00:42:14,680
+但如果它跌破
+But if it's breaking
+
+571
+00:42:14,680 --> 00:42:18,460
+向下突破，可能仍在寻找方向。
+down, then it's probably still looking.
+
+572
+00:42:18,460 --> 00:42:26,020
+可能在更低价位还有更多交易会发生。
+There's probably still more transactions at lower prices that can take place.
+
+573
+00:42:26,020 --> 00:42:27,027
+Just, you
+
+574
+00:42:27,027 --> 00:42:29,546
+know, kind of think of
+
+575
+00:42:29,546 --> 00:42:32,065
+it as, how to say,
+
+576
+00:42:32,065 --> 00:42:35,088
+you know, there's stores out there
+
+577
+00:42:35,088 --> 00:42:38,615
+that will lower, you know, there's like
+
+578
+00:42:38,615 --> 00:42:42,142
+this, not too far from my house,
+
+579
+00:42:42,142 --> 00:42:45,669
+there's like this furniture store. It's like
+
+580
+00:42:45,669 --> 00:43:02,297
+其实就是寄售商店，基本如此。人们把家具寄售到那里，只想处理掉，价格随便。然后，比如有一张好桌子，
+a consignment shop, basically. People consign their furniture there. They just want to get rid of it. They'll take whatever they can get. Then, you know, so it'll be like a nice desk.
+
+581
+00:43:02,520 --> 00:43:04,160
+假设标价100美元。
+Okay. Say it'll be like $100.
+
+582
+00:43:06,000 --> 00:43:10,200
+如果一周没人买，就降到80美元。
+Okay. If no one buys it after a week, they lower the price $80.
+
+583
+00:43:10,700 --> 00:43:17,800
+还是没人买就降到60美元，直到卖出或处理掉。
+No one buys it $60. Until it gets sold or they throw it out.
+
+584
+00:43:18,220 --> 00:43:19,150
+但从服装的角度来看，
+But in the sense
+
+585
+00:43:19,150 --> 00:43:20,545
+你去梅西百货。
+of like clothes, right? You go
+
+586
+00:43:20,545 --> 00:43:22,406
+你知道，这也是百货公司倒闭的原因之一，
+to Macy's. You know, that's one of the
+
+587
+00:43:22,406 --> 00:43:27,058
+我认为这些百货商店即将倒闭的原因是它们不断降低商品价格。
+reasons why I think these department stores are going out of business is they keep lowering the prices on things.
+
+588
+00:43:28,040 --> 00:43:28,920
+对吧？
+Right?
+
+589
+00:43:29,000 --> 00:43:30,080
+直到找到买家。
+Until they find the buyers.
+
+590
+00:43:33,560 --> 00:43:39,710
+比如，我看到。我看到。
+For instance, I see. I see.
+
+591
+00:43:39,850 --> 00:43:40,612
+So, again, I
+
+592
+00:43:40,612 --> 00:43:42,392
+所以，再次，如果你从
+see if you look at it from
+
+593
+00:43:42,392 --> 00:43:45,189
+价格接受的角度来看，这会变得合理。
+the perspective of price acceptance, this is going to make sense.
+
+594
+00:43:45,190 --> 00:43:49,050
+是的，这也取决于我们交易的上下文。
+Yeah, it also depends on context of where we are trading also.
+
+595
+00:43:49,170 --> 00:43:57,840
+是的。上下文，我会说，就是一切，但上下文确实很重要。
+Yeah. Context is, I'll say, is everything, but context matters a lot.
+
+596
+00:43:57,960 --> 00:44:07,010
+你知道，很多交易者忽略的一点，就是上下文。
+You know, and it's something that a lot of traders disregard, right, is that context.
+
+597
+00:44:07,010 --> 00:44:08,207
+You know,
+
+598
+00:44:08,207 --> 00:44:11,199
+用
+and think of it in
+
+599
+00:44:11,199 --> 00:44:14,191
+类比的方式来想，我不想
+terms of, I hate to
+
+600
+00:44:14,191 --> 00:44:17,183
+用体育类比，但
+use sports analogies, but, you
+
+601
+00:44:17,183 --> 00:44:20,175
+天气会影响球队表现,
+know, like weather can affect
+
+602
+00:44:20,175 --> 00:44:31,547
+海拔会影响球队表现，伤病也会影响球队表现。总有某些因素，对吧？
+how teams play. Altitude can affect how teams play. Injuries can affect how teams play. There's always something, right?
+
+603
+00:44:31,570 --> 00:44:37,310
+这就是体育中的额外背景。市场也是如此。
+That's the added context in sports. And it's the same with the markets.
+
+604
+00:44:37,410 --> 00:44:45,770
+市场现在相对于5分钟前、10分钟前的交易位置在哪里？
+Where is the market trading now relative to how it's been trading five minutes ago, ten minutes ago?
+
+605
+00:44:46,710 --> 00:44:48,010
+我们是在突破吗？
+Okay. Are we breaking out?
+
+606
+00:44:48,010 --> 00:44:48,899
+正如
+Just as,
+
+607
+00:44:48,899 --> 00:44:50,678
+you know, here, right,
+
+608
+00:44:50,678 --> 00:44:52,901
+我们之前处于区间
+we were sort of range
+
+609
+00:44:52,901 --> 00:44:57,348
+震荡。现在开始向上突破。
+bound. Now we're starting to break out to the upside.
+
+610
+00:44:57,570 --> 00:45:00,330
+我的意思是，一旦我们在这里突破。但对我来说，这才是关键。
+I mean, once we sort of broke out here. But to me, this was key.
+
+611
+00:45:00,450 --> 00:45:01,538
+我的意思是，
+I mean, this
+
+612
+00:45:01,538 --> 00:45:04,076
+这是你在普通K线图或柱状图上
+is just something you're not going to
+
+613
+00:45:04,076 --> 00:45:05,889
+看不到的，
+see on a normal candlestick
+
+614
+00:45:05,889 --> 00:45:09,878
+你不会注意到这一点。
+chart or bar chart, right? You're not going to notice this.
+
+615
+00:45:10,820 --> 00:45:11,847
+但如果
+But if
+
+616
+00:45:11,847 --> 00:45:15,443
+你立刻注意到成交量
+you noticed right away that volume was
+
+617
+00:45:15,443 --> 00:45:19,039
+正在向上冲刺，
+sort of making a run to the
+
+618
+00:45:19,039 --> 00:45:22,635
+而交易者正争先恐后地寻找流动性，
+upside, and traders are sort of tripping
+
+619
+00:45:22,635 --> 00:45:26,231
+趁还有机会时抢单，
+over themselves to find liquidity to get
+
+620
+00:45:26,231 --> 00:45:37,535
+那么这会让你洞察市场即将发生的情况。
+something while they still can, then it gives you an insight into what's going to take place, you know, in the market.
+
+621
+00:45:46,280 --> 00:45:48,640
+好的，希望如此，背景确实很重要。
+Okay. So hopefully, yeah, context matters.
+
+622
+00:45:51,760 --> 00:45:58,230
+因此使用价值区域作为控制点。
+So using value areas because points of control.
+
+623
+00:45:58,510 --> 00:46:01,950
+现在，同样，在软件上，比如在冰箱上，
+Now, again, you know, on software, you know, like on a refrigerator,
+
+624
+00:46:01,950 --> 00:46:03,890
+你可以使用第一控制点。
+you can use point of control one.
+
+625
+00:46:04,710 --> 00:46:07,170
+你可以添加第二控制点和第三控制点。
+You could add the second point of control and the third point of control.
+
+626
+00:46:07,290 --> 00:46:11,410
+第二控制点指的是成交量第二高的价格水平。
+What second point of control is, is the second most highest volume.
+
+627
+00:46:11,670 --> 00:46:14,650
+第三控制点是该K线中成交量第三高的价格水平。
+The third is the third most volume price level in the bar.
+
+628
+00:46:15,190 --> 00:46:22,350
+问题是你不知道这些成交量的具体数值，对吧？
+The problem is you don't know how much of the volume that is, right?
+
+629
+00:46:22,390 --> 00:46:23,303
+我的意思是，
+I mean, it
+
+630
+00:46:23,303 --> 00:46:24,826
+可能只是
+could be, you know, just
+
+631
+00:46:24,826 --> 00:46:26,958
+回到这里。
+going back here. So, you know, in
+
+632
+00:46:26,958 --> 00:46:29,090
+在某些情况下，如果是一根非常细的
+some cases where it's a very thin
+
+633
+00:46:29,090 --> 00:46:34,878
+K线，你可能会有控制点，这里是12，这里是11在底部，
+bar, right, you could have a point of control, this is 12, this is 11 down here at the bottom, okay?
+
+634
+00:46:35,490 --> 00:46:46,230
+它并不能准确反映这些价位上交易的成交量数量，
+It doesn't really give you an accurate representation of the amount of volume that's being traded at those levels, okay?
+
+635
+00:46:46,430 --> 00:46:52,070
+因为控制点仅仅是成交量最大的那个价位。
+Because all it is, all point of control is, is just the price level with the most volume.
+
+636
+00:46:52,070 --> 00:46:58,150
+它并没有考虑该价位成交量在整根K线中所占的比例。
+It doesn't factor into how much of the volume in the bar that is.
+
+637
+00:47:00,310 --> 00:47:04,510
+我现在没有笔，但这让我想到一个可以测试的点。
+I don't have a pen here, but that leads me to something to test out here.
+
+638
+00:47:04,670 --> 00:47:20,440
+让我记个笔记。让我给自己记个笔记。
+Let me just make a note. Let me just make a note to myself about something.
+
+639
+00:47:20,440 --> 00:47:22,140
+所以，这也是我
+So, that's why I
+
+640
+00:47:22,140 --> 00:47:24,690
+更倾向于使用价值区的原因，
+prefer to use the value areas,
+
+641
+00:47:24,690 --> 00:47:30,640
+或者你也可以调整你作为价值区使用的标准。
+or again, you know, you could adjust what you're using as a value area.
+
+642
+00:47:30,860 --> 00:47:35,480
+我之前向你展示过价值区是70%。
+I showed you the value area as 70%.
+
+643
+00:47:35,480 --> 00:47:37,000
+你可以用60%。
+You can use 60%.
+
+644
+00:47:37,000 --> 00:47:41,705
+我个人绝对
+I, me personally, I definitely
+
+645
+00:47:41,705 --> 00:47:47,351
+不会低于50%，但让我
+wouldn't go below 50%, but let me
+
+646
+00:47:47,351 --> 00:47:54,879
+回到这里。是的，如果你正在使用，让我去掉这些缺口，
+just get back here. Yeah, if you were
+
+647
+00:47:54,879 --> 00:48:01,466
+你可以，我绝对不会低于50%。
+using, let me take off these gaps
+
+648
+00:48:01,466 --> 00:48:08,994
+此处，你绝对不能低于50%
+here, you could, I definitely wouldn't go below 50%.
+
+649
+00:48:10,880 --> 00:48:12,510
+我的意思是，50%
+I mean, that's, 50%
+
+650
+00:48:12,510 --> 00:48:16,856
+是整根K线成交量的一半，
+is half the volume of the bar, and
+
+651
+00:48:16,856 --> 00:48:22,832
+当你达到50%时，你确实会得到这些窄幅区间，
+when you do get to 50%, you do get those tight ranges,
+
+652
+00:48:23,920 --> 00:48:25,148
+比如
+you know, one,
+
+653
+00:48:25,148 --> 00:48:26,785
+一、两个或三个价位
+two, three price levels
+
+654
+00:48:26,785 --> 00:48:29,651
+在价值区内，
+on the value areas, you know, sort
+
+655
+00:48:29,651 --> 00:48:32,517
+这有点回到之前的问题，
+of going back to what the question
+
+656
+00:48:32,517 --> 00:48:35,383
+关于那些非常小的价值区，
+was earlier about, you know, those value
+
+657
+00:48:35,383 --> 00:48:38,249
+因为我之前也
+areas that are very small, because I
+
+658
+00:48:38,249 --> 00:48:41,115
+有点，
+was also, you know, sort of, you
+
+659
+00:48:41,115 --> 00:48:53,808
+这里价值区只有两个价位。但同样，当你过滤掉较小的价值区，比如50%的价值区百分比时，
+know, here's two price levels on the value area. But again, you're sort of filtering out, you know, when you get smaller value area, you know, value area percentages, you know, 50%.
+
+660
+00:48:54,220 --> 00:49:04,210
+在成交量较轻的K线上，你可能会得到一个非常小的价值区，仅包含两个价位，等等。
+On bars that have light volume, you can get a very small value area at two price levels, et cetera.
+
+661
+00:49:04,210 --> 00:49:06,163
+另外一件事是
+And that was the other thing
+
+662
+00:49:06,163 --> 00:49:08,767
+我当时也在观察的
+that I was looking at, too, just sort
+
+663
+00:49:08,767 --> 00:49:11,371
+不仅是追踪
+of the follow-up, was not only the relationship
+
+664
+00:49:11,371 --> 00:49:19,509
+价值区域的高度与K线内价格水平总数的关系，而不仅仅是两个价格水平
+of the height of the value area, like two price levels, but also in relationship to the total number of price levels in a bar.
+
+665
+00:49:19,850 --> 00:49:21,092
+比如价值区域占K线区间的20%
+So if it was 20%
+
+666
+00:49:21,092 --> 00:49:23,266
+K线区间内,
+of the bar's range, so, you know,
+
+667
+00:49:23,266 --> 00:49:25,130
+假设这根K线的波动区间是10个Tick
+maybe the bar's range was 10 ticks,
+
+668
+00:49:25,130 --> 00:49:28,547
+价值区域覆盖两个价格水平，这意味着什么，等等
+value area was two price levels, what that meant, et cetera.
+
+669
+00:49:29,170 --> 00:49:30,460
+即
+You know, where
+
+670
+00:49:30,460 --> 00:49:32,180
+其
+it gets, you know,
+
+671
+00:49:32,180 --> 00:49:35,190
+这会变得有点有趣
+a bit, can get interesting, say, on
+
+672
+00:49:35,190 --> 00:49:39,490
+特别是在我们熟知的波动性较强的市场中，比如微型纳指（MNQ）
+these markets that we know are volatile, right, like MNQ.
+
+673
+00:49:40,510 --> 00:49:43,884
+我现在拉出图表
+I'll just pull up the
+
+674
+00:49:43,884 --> 00:49:48,607
+此图表中,
+chart here, you know, where you can
+
+675
+00:49:48,607 --> 00:49:53,330
+你会发现
+get a tight value area on a
+
+676
+00:49:53,330 --> 00:50:00,078
+在一根有相当价格波动的K线上，价值区域可能很集中
+rain, on a bar that has some decent price movements.
+
+677
+00:50:01,720 --> 00:50:07,910
+等一下
+Let's give it a second here.
+
+678
+00:50:08,010 --> 00:50:11,110
+图表加载时，我先完成这部分幻灯片
+While it's coming up, I'll sort of finish up the slides here.
+
+679
+00:50:12,910 --> 00:50:16,390
+在我看来，这其实是在讨论市场背景
+Now, to me, this is, you know, sort of talking to context.
+
+680
+00:50:21,180 --> 00:50:24,280
+延续性必须是立即的
+A follow-through needs to be immediate, right?
+
+681
+00:50:24,360 --> 00:50:28,420
+否则就会失败，甚至可能失败得很惨
+Otherwise, it fails and can fail dramatically.
+
+682
+00:50:28,740 --> 00:50:29,588
+现在，在这个例子里
+Now, in this
+
+683
+00:50:29,588 --> 00:50:31,002
+这种情况下,
+case, you know, to me,
+
+684
+00:50:31,002 --> 00:50:32,133
+如果我把它当作看涨信号
+if I'm taking this
+
+685
+00:50:32,133 --> 00:50:36,377
+我需要市场继续上涨，但它正在失败
+as a bullish one, I need the market to keep going up, but it's failing.
+
+686
+00:50:38,260 --> 00:50:41,140
+你也能看到一些失败得特别惨的情况
+And you can also, you know, you can see some dramatic fails.
+
+687
+00:50:41,140 --> 00:50:42,640
+这算是反向交易吗？
+I mean, is it a fade trade?
+
+688
+00:50:44,160 --> 00:50:45,270
+我总是在寻找
+I'm always looking
+
+689
+00:50:45,270 --> 00:50:46,380
+在
+at, you know,
+
+690
+00:50:46,380 --> 00:50:47,860
+一些潜在的
+things, you know, potential
+
+691
+00:50:47,860 --> 00:50:49,710
+能执行的交易
+trades that it can take
+
+692
+00:50:49,710 --> 00:50:55,260
+当设置失败时，它会如何向反方向反应？
+where, you know, when the setup fails, how does it react in the opposite direction?
+
+693
+00:50:55,260 --> 00:50:57,360
+失败时，会惨烈失败吗？
+When it fails, does it fail miserably?
+
+694
+00:50:59,020 --> 00:51:00,151
+这是需要记住的一点
+And that's one thing
+
+695
+00:51:00,151 --> 00:51:01,848
+在分析 SKUs 时
+to keep in mind with SKUs
+
+696
+00:51:01,848 --> 00:51:03,262
+因为通常你会认为
+because normally you'd be thinking,
+
+697
+00:51:03,262 --> 00:51:06,657
+嘿，市场即将启动，但它并没有。
+hey, this market is getting ready to take off, but it doesn't.
+
+698
+00:51:06,980 --> 00:51:07,860
+这意味着什么？
+What does that mean?
+
+699
+00:51:07,860 --> 00:51:10,220
+在我看来，这是交易中最重要的事情之一。
+And, you know, to me, that's one of the most important things in trading.
+
+700
+00:51:11,300 --> 00:51:20,140
+当市场未按预期表现时，通常市场中有更大的动向。
+When the market doesn't do what it's expected to do, there's usually something bigger afoot in the market, right?
+
+701
+00:51:20,140 --> 00:51:25,940
+所以，一定要记住：当市场未按预期运行时。
+So, just always bear that in mind. When the market doesn't do what it's supposed to do.
+
+702
+00:51:37,560 --> 00:51:41,260
+让我把纳斯达克图表再调出来。
+Let me just get this, get the NASDAQ chart back up here.
+
+703
+00:51:42,600 --> 00:51:44,600
+好的，这里你可以看到。
+Okay. So, here you can see.
+
+704
+00:51:46,280 --> 00:51:49,400
+这仍是1分钟图，所以有点混乱。
+Again, this is a one-minute chart, so it's kind of crazy.
+
+705
+00:51:49,540 --> 00:51:54,780
+它处于50%位置，但你可以看到，这里有一个非常紧凑的价值区，在顶部附近。
+And it's at 50%, but you can see, you know, here's a very tight value area up here towards the top.
+
+706
+00:51:54,780 --> 00:52:00,940
+同样，它用了一两根K线，然后从160直接跳到180。
+Again, it has it, it takes one, two bars before it jumps from, you know, basically 160 up to 180.
+
+707
+00:52:01,940 --> 00:52:05,960
+在下行方面，价值区在中间，价值区在中间。
+You know, on the downside, value area is in the middle, value area is in the middle.
+
+708
+00:52:06,540 --> 00:52:10,280
+我希望这个价值区在下行突破前位于这里。
+You know, I wish this value area was down here before it broke to the downside.
+
+709
+00:52:12,380 --> 00:52:19,700
+这段上涨呢？就这里，对吧？
+How about this run up here? Right here, right?
+
+710
+00:52:20,900 --> 00:52:23,540
+同样，我们可以打开这根K线。
+Again, we can sort of open up the bar.
+
+711
+00:52:26,720 --> 00:52:34,490
+这根大阳线在这里。在我看来，它出现在K线上三分之一的位置。
+This big green candle right here. This is, to me, appearing towards the top third of the bar.
+
+712
+00:52:36,270 --> 00:52:38,030
+从这里到这里。
+Here to here.
+
+713
+00:52:43,530 --> 00:52:47,170
+然后它突破，向上飙升。
+And then it just breaks, runs away to the upside here.
+
+714
+00:52:48,430 --> 00:52:50,030
+同样，这处于50%位置。
+Again, this is at 50%.
+
+715
+00:52:50,030 --> 00:52:51,603
+所以，根据
+So, depending on
+
+716
+00:52:51,603 --> 00:52:54,225
+市场情况，你
+the market, you know, you
+
+717
+00:52:54,225 --> 00:52:56,847
+可以寻找哪种
+could look for which, you
+
+718
+00:52:56,847 --> 00:52:59,469
+设置，你
+know, what setting, you know,
+
+719
+00:52:59,469 --> 00:53:07,337
+甚至这里，这个，这个。这是小型纳斯达克期货（MNQ）、小道指期货（YM）。
+even here, this one, this one. You know, this is mini MNQ, mini Dow, YM.
+
+720
+00:53:13,120 --> 00:53:14,538
+然后你可以
+And you sort of
+
+721
+00:53:14,538 --> 00:53:15,956
+正在形成一根新K线
+add one forming right
+
+722
+00:53:15,956 --> 00:53:17,374
+在这里
+in here. On this
+
+723
+00:53:17,374 --> 00:53:20,919
+从这个高点开始下跌，就在这里，这里，对吧？
+move down from this high, right here. Right here. Right?
+
+724
+00:53:21,040 --> 00:53:31,270
+你讨论的是从这一根开始，价格从650跌到550，对吧？
+And you're talking, you know, from this one, you're talking to move from 650 down to 550. Right?
+
+725
+00:53:31,350 --> 00:53:34,130
+这些K线大致处于中间，中间，中间位置
+These are sort of, you know, in the middle, in the middle, in the middle.
+
+726
+00:53:35,130 --> 00:53:36,410
+在这里出现突破
+You get the break here.
+
+727
+00:53:39,840 --> 00:53:43,280
+然后这根K线，从660涨到80多点后反转
+So, this, you know, 660 up to 80s before it turns around.
+
+728
+00:53:45,440 --> 00:53:48,200
+这是现金市场开盘的K线，对吧？
+This was the cash open bar. Right?
+
+729
+00:53:48,280 --> 00:53:49,640
+这是现金市场开盘K线
+This is the cash opening bar.
+
+730
+00:53:49,740 --> 00:53:51,360
+这是现金市场开盘后的第二根K线
+This is the second bar after the cash open.
+
+731
+00:53:51,360 --> 00:53:58,860
+它立即从540涨到640，就在这里
+And it runs from, I don't know, 540 to 640 right away, right here.
+
+732
+00:54:07,060 --> 00:54:11,040
+总之，各位，这将结束第八节课程
+So, anyway, guys, that's going to wrap up this session, session eight.
+
+733
+00:54:13,430 --> 00:54:13,886
+希望
+So, hopefully,
+
+734
+00:54:13,886 --> 00:54:14,798
+其实
+you know, again, it's,
+
+735
+00:54:14,798 --> 00:54:15,710
+我会去
+I'm going to go
+
+736
+00:54:15,710 --> 00:54:16,622
+检查一下课件
+look through the slides.
+
+737
+00:54:16,622 --> 00:54:19,130
+可能让你们有点困惑
+I think I might have confused you guys a little bit.
+
+738
+00:54:19,890 --> 00:54:24,770
+但在发布之前，我还准备好下周二的课程
+But before I post them, again, I have Tuesday session ready to be posted as well.
+
+739
+00:54:25,270 --> 00:54:27,290
+我会在今天下午发布这两个
+So, I'll get both of those posted this afternoon.
+
+740
+00:54:27,290 --> 00:54:28,638
+下周
+And next week,
+
+741
+00:54:28,638 --> 00:54:30,885
+我认为下周
+I think next week, our
+
+742
+00:54:30,885 --> 00:54:33,582
+我们的安排只有周二，我们只
+schedule is just Tuesday. We just
+
+743
+00:54:33,582 --> 00:54:36,728
+有下周一节课，我记得是
+got one session next week, I believe.
+
+744
+00:54:40,500 --> 00:54:46,100
+对，22号，所以我们周二22号上课，然后周四31号
+Yeah, the 22nd. So, we'll go Tuesday, the 22nd, and then Thursday, the 31st.
+
+745
+00:54:47,000 --> 00:54:50,420
+7月只剩下两节课
+And then we got, so just two sessions left for July.
+
+746
+00:54:50,560 --> 00:54:54,820
+8月有7号、12号、14号、19号和21号
+Then in August, we've got 7, 12, 14, 19, and 21.
+
+747
+00:54:54,820 --> 00:55:03,280
+不过不管怎样，下周二可能需要调整时间
+So, but anyway, next Tuesdays, I might need to adjust the timing of it.
+
+748
+00:55:03,960 --> 00:55:05,260
+可能会早一点开始
+I might go a little bit earlier.
+
+749
+00:55:06,020 --> 00:55:06,780
+还不确定
+I'm not sure yet.
+
+750
+00:55:06,980 --> 00:55:09,176
+我知道我有一个预约
+I know I've got an appointment that
+
+751
+00:55:09,176 --> 00:55:11,372
+如果无法更改的话
+if I can't change that, you know,
+
+752
+00:55:11,372 --> 00:55:15,138
+这些医生，有时需提前几个月预约
+these doctors, sometimes you got to make these appointments months in advance.
+
+753
+00:55:15,140 --> 00:55:20,220
+要更改的话，简直是件麻烦事
+And it's like a pain in the ass if you got to change them.
+
+754
+00:55:21,520 --> 00:55:22,200
+先这样吧
+But we'll see.
+
+755
+00:55:22,780 --> 00:55:30,460
+现在暂定上午10点，抱歉，是上午9点，之后再调整
+Right now, we'll keep it scheduled for 10 a.m., or sorry, for 9 a.m. But we'll go from there.
+
+756
+00:55:30,540 --> 00:55:31,520
+下周我会通知你
+I'll let you know next week.
+
+757
+00:55:31,880 --> 00:55:34,700
+祝大家本周剩余时间愉快
+So, have a great rest of your week, everybody.
+
+758
+00:55:35,280 --> 00:55:37,460
+下周见，保重
+And I'll catch you guys next week. Take care.
+
+759
+00:55:37,460 --> 00:56:01,140
+下周见
+I'll catch you guys next week.
+
+===== END AFTER_TRANSLATE =====

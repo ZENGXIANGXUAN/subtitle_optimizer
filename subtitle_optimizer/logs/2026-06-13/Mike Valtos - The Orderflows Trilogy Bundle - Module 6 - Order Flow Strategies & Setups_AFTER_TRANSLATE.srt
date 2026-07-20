@@ -1,0 +1,2937 @@
+===== AFTER_TRANSLATE (587 entries) =====
+1
+00:00:00,180 --> 00:00:05,540
+大家好，我是Order Flows的Mike，欢迎回到订单流策略交易课程。
+Hey everyone, it's Mike from Order Flows and welcome back to the Strategic Order Flows Trading Course.
+
+2
+00:00:05,900 --> 00:00:09,200
+这是第6模块，订单流策略与入场信号。
+This is Module 6 on Order Flow Strategies and Setups.
+
+3
+00:00:10,000 --> 00:00:12,400
+好的，我鼓励你去探索并
+Alright, so I encourage you to explore and
+
+4
+00:00:12,400 --> 00:00:14,500
+根据自己的
+develop your own strategies based on your
+
+5
+00:00:14,500 --> 00:00:17,200
+经验、知识和从足迹图中获得的洞察来开发自己的策略。
+experience, knowledge, and insights gained from the footprint charts.
+
+6
+00:00:17,680 --> 00:00:20,465
+随着你对订单流越来越熟悉，
+As you become more familiar with Order Flow,
+
+7
+00:00:20,465 --> 00:00:22,554
+交易者能发现新的模式、触发条件，
+traders can uncover new patterns, triggers,
+
+8
+00:00:22,554 --> 00:00:25,339
+以及适合自己交易风格的入场信号。
+and trade setups specific to their trading style.
+
+9
+00:00:25,340 --> 00:00:30,700
+现在，当我谈到策略时，我指的并不是那种可以加载到NinjaTrader（交易平台）或其他平台的即插即用策略。
+Now, when I talk about strategies, I'm not talking about plug-and-play strategies you load into NinjaTrader or whatever platform.
+
+10
+00:00:31,120 --> 00:00:37,120
+我所说的策略，是指一个行动计划，即如何应对市场，对吧？
+Strategies is what I mean, the term I use for a game plan, how to approach the market, okay?
+
+11
+00:00:37,560 --> 00:00:41,620
+现在，在入场交易前出现订单流设置是一回事，
+Now, it's one thing to have an Order Flow setup appear prior to taking a trade.
+
+12
+00:00:42,000 --> 00:00:46,300
+但入场后还需要持续的订单流不断涌入。
+You also need continuing Order Flow coming in after taking the trade.
+
+13
+00:00:46,740 --> 00:00:48,308
+你知道，订单流
+You know, the Order Flow is
+
+14
+00:00:48,308 --> 00:00:49,876
+以某种方式设置，
+set up a certain way and
+
+15
+00:00:49,876 --> 00:00:54,058
+它会向你展示一些东西，揭示一些信息，然后你可以入场交易。
+show you something, it will reveal something to you, and you can get into a trade.
+
+16
+00:00:54,060 --> 00:00:56,680
+好的，但交易如何持续下去呢？
+Okay, but how is the trade going to continue?
+
+17
+00:00:56,780 --> 00:00:59,960
+仅仅因为你买入了，知道吧，并不意味着市场就会继续朝你的方向走。
+Just because you bought it, you know, it doesn't necessarily mean the market is going to continue.
+
+18
+00:01:00,100 --> 00:01:04,280
+市场不会知道，哦，你买入了，所以它得继续朝你的方向走。
+The market doesn't know that, oh, you bought it, so I got to continue on in your direction.
+
+19
+00:01:04,379 --> 00:01:06,098
+不，你需要其他交易者，
+No, you need other traders,
+
+20
+00:01:06,098 --> 00:01:08,504
+你知道，某种程度上和你
+you know, sort of having the same,
+
+21
+00:01:08,504 --> 00:01:11,254
+有相同的，
+you know, directional, what do you want to
+
+22
+00:01:11,254 --> 00:01:18,818
+你知道，方向性，你想怎么称呼它？你知道，和你有相同的方向性思维，来让市场继续朝你的交易方向移动。
+call it? You know, it's the same directional thought as you to keep the market moving in the direction of your trade.
+
+23
+00:01:18,820 --> 00:01:22,560
+所以我总是会在入场信号前观察订单流，当然还有入场后。
+So I always watch Order Flow prior to the setup, of course, and after.
+
+24
+00:01:23,160 --> 00:01:25,300
+当订单流持续出现时，你知道，
+When the Order Flow is continuing, you
+
+25
+00:01:25,300 --> 00:01:27,440
+朝我预期的方向，
+know, in the direction that I'm expecting
+
+26
+00:01:27,440 --> 00:01:32,638
+如果是看涨的，我希望看到持续的看涨订单流不断出现，对吧？
+it to go, if it's bullish, I want to see continued bullish Order Flow keep appearing, right?
+
+27
+00:01:32,660 --> 00:01:35,055
+在你做多后，仍然需要看涨的订单流，
+You still need bullish Order Flow after you
+
+28
+00:01:35,055 --> 00:01:37,450
+或者在你做空后，
+get long, or you need bearish Order Flow
+
+29
+00:01:37,450 --> 00:01:42,539
+需要持续的看跌订单流，才能让市场达到你的盈利目标。
+to continue happening after you get short for, you know, the market to hit your profit targets.
+
+30
+00:01:42,540 --> 00:01:45,860
+而且，你知道，当它持续出现时，那就是我入场交易的时机。
+And, you know, when it's continuing, that's when I get in the trade.
+
+31
+00:01:45,940 --> 00:01:48,160
+我不会仅因为出现订单流设置就直接入场。
+I don't just jump in because there's an Order Flow setup.
+
+32
+00:01:48,340 --> 00:01:49,840
+我让市场带我进场。
+I let the markets take me in.
+
+33
+00:01:50,340 --> 00:01:53,700
+你知道吗，我总是说要有，你知道，我所谓的入场信号。
+You know, I always talk about having, you know, what I call a trade entry signal.
+
+34
+00:01:54,100 --> 00:01:55,334
+你知道吗，基本上就是订单流
+You know, basically the Order Flow
+
+35
+00:01:55,334 --> 00:01:56,568
+按我喜欢的方式设置好，
+sets up the way I like,
+
+36
+00:01:56,568 --> 00:01:59,859
+然后，你知道，我就下买入止损单或卖出止损单进场。
+and then, you know, I just place my buy stop or sell stop to get in.
+
+37
+00:02:00,520 --> 00:02:05,160
+你知道吗，在K线收盘后，下一根K线开盘，开始朝我的方向移动，对吧？
+You know, after the bar closes and the next bar opens, it starts moving in my direction, okay?
+
+38
+00:02:05,160 --> 00:02:06,087
+所以，再说一次，如何选择
+So, again, how you choose
+
+39
+00:02:06,087 --> 00:02:09,239
+进场方式取决于你，但我喜欢让市场带我进场。
+to do it is up to you, but I like to let the market take me in.
+
+40
+00:02:09,380 --> 00:02:16,200
+我经常通过买入止损单做多、卖出止损单做空进场，对吧？
+I get into trades often off of buy stops to get long and sell stops to get short, right?
+
+41
+00:02:16,220 --> 00:02:19,860
+因为我想确认我确实有持续的订单流。
+Because I want to be sure that I do have that continuing Order Flow.
+
+42
+00:02:21,060 --> 00:02:26,960
+好的，第一个交易设置是我所谓的主动性失衡，基本上是突破价值区域的失衡。
+All right, so the first trade setup is what I call initiative imbalances, basically imbalances out of value.
+
+43
+00:02:26,960 --> 00:02:34,680
+在绿色上涨K线中，寻找在K线价值区域上沿之上的买盘失衡来做多。
+And in a green up candle, look for buying imbalances above the bar's value area high to get long.
+
+44
+00:02:35,580 --> 00:02:37,831
+在红色下跌K线中，寻找
+And in a red down candle, look for
+
+45
+00:02:37,831 --> 00:02:39,519
+在K线价值区域下沿之上的
+selling imbalances below the bar's value
+
+46
+00:02:39,519 --> 00:02:43,178
+卖盘失衡。我忘了把‘下沿’写进去了，在下沿做空。
+area low. I forgot to write that in there, low to get short.
+
+47
+00:02:43,300 --> 00:02:47,320
+现在，你需要在你的K线上启用价值区域。
+Now, you will need to have the value areas enabled on your bar.
+
+48
+00:02:47,860 --> 00:02:51,620
+但你会看到的，对吧，这就像你的普通足迹图。
+But what you're going to see, right, this is like your normal footprint.
+
+49
+00:02:51,740 --> 00:02:53,245
+如果你没有启用价值区域，
+If you don't have the value areas,
+
+50
+00:02:53,245 --> 00:02:54,750
+你知道，你已经看到了很多
+you know, you've seen a lot of
+
+51
+00:02:54,750 --> 00:02:56,900
+买卖失衡。这里有一个很好的走势。
+buying and selling imbalances. You have a nice move here.
+
+52
+00:02:57,160 --> 00:03:02,900
+好的，那是什么触发了，你知道，帮你做多的触发因素？
+Okay, well, what was the trigger to help, you know, help you get long?
+
+53
+00:03:03,240 --> 00:03:05,080
+这就是你需要价值区域的原因，对吧？
+That's why you need value areas, right?
+
+54
+00:03:05,140 --> 00:03:07,240
+这是一个简单的小信息。
+That's a simple little piece of information.
+
+55
+00:03:07,420 --> 00:03:11,860
+一条小小的信息能改变整个世界。
+One lousy little piece of information can make all the difference in the world.
+
+56
+00:03:12,080 --> 00:03:14,681
+如果你在这里添加了价值区域，
+If you add the value area on here,
+
+57
+00:03:14,681 --> 00:03:16,632
+你可以看到大部分时间
+you can see most of the
+
+58
+00:03:16,632 --> 00:03:19,558
+价值区域内都有失衡。
+time the value area, you have the imbalances inside.
+
+59
+00:03:19,560 --> 00:03:23,233
+但当你在上涨K线上看到
+But when you have the value area on up candles
+
+60
+00:03:23,233 --> 00:03:26,171
+价值区域外上方出现失衡，
+appearing outside the value to the upside, it's
+
+61
+00:03:26,171 --> 00:03:30,579
+这说明有主动性交易正在发生。
+telling you that you have sort of this initiative trading going on.
+
+62
+00:03:30,840 --> 00:03:34,360
+人们在价值区域外买入，因为他们预期市场会继续上涨。
+People are buying it outside of value because they're expecting the market to go higher.
+
+63
+00:03:34,440 --> 00:03:35,948
+你会注意到这是
+You'll notice this is the
+
+64
+00:03:35,948 --> 00:03:38,059
+整个上涨过程中仅有的两处。
+only two. On this whole move up,
+
+65
+00:03:38,059 --> 00:03:41,979
+在价值区域上方仅有的两处失衡就在这两根K线上。
+the only two imbalances above the value area are on these two bars.
+
+66
+00:03:41,980 --> 00:03:45,240
+同样，这里也是。
+Again, here you are.
+
+67
+00:03:45,420 --> 00:03:48,940
+这里有一处，其实这里还有两处，一、二，对吧？
+You've got one over here, actually, but you've got another two here, one, two, right?
+
+68
+00:03:49,000 --> 00:03:51,940
+这就是我为什么说要让市场带你入场，对吧？
+And this is why I talk about letting the market take you in, right?
+
+69
+00:03:52,040 --> 00:03:56,740
+你确实在价值区域下方有一个卖出失衡。这是根红色K线，所以你要看下方。
+You do have your selling imbalance here below the value area. It's a red candle, so you're looking for below.
+
+70
+00:03:57,160 --> 00:03:58,840
+但下一根K线并没有更低。
+But the next bar didn't go any lower.
+
+71
+00:03:59,040 --> 00:04:00,683
+接下来这根K线
+Here you have the next bar
+
+72
+00:04:00,683 --> 00:04:02,326
+交易得更低。这就是你入场的信号，
+trading lower. That's your sign to
+
+73
+00:04:02,326 --> 00:04:04,517
+做空并把市场带到
+get in to take this market down to
+
+74
+00:04:04,517 --> 00:04:08,078
+这里有一个看涨信号的地方，然后大多横盘。
+where you have a bullish signal right here and just mostly go sideways.
+
+75
+00:04:08,080 --> 00:04:14,100
+寻找价值区域外的失衡，抱歉，寻找价值区域外的失衡。
+Look for the value areas outside, I'm sorry, look for the imbalances outside of value.
+
+76
+00:04:14,820 --> 00:04:21,800
+就在这里，对吧？市场在上涨，对吧？
+There, there, right? And the market is moving higher, right?
+
+77
+00:04:22,740 --> 00:04:24,900
+你可以看到在这次市场
+You can see right before this market took
+
+78
+00:04:24,900 --> 00:04:26,520
+出现5点大跌之前
+a nice five-point dump here in
+
+79
+00:04:26,520 --> 00:04:28,680
+在这根K线上，卖出失衡出现在哪里？
+this bar, where did the selling imbalances appear?
+
+80
+00:04:29,100 --> 00:04:29,560
+就在这里。
+Right here.
+
+81
+00:04:29,620 --> 00:04:32,720
+你会注意到这些K线都有买入和卖出失衡。
+You'll notice all these bars here have got buying and selling imbalances.
+
+82
+00:04:33,140 --> 00:04:35,320
+这里有一处刚好在外部。市场横盘了。
+Here you have one just outside. The market went sideways.
+
+83
+00:04:35,600 --> 00:04:35,920
+好的。
+Okay.
+
+84
+00:04:36,240 --> 00:04:39,320
+你知道，我不介意市场横盘时的交易。
+You know, I'm fine to take a trade where the market goes sideways on me.
+
+85
+00:04:39,520 --> 00:04:41,421
+因为我可以小亏出局，
+Because I could cut it for a
+
+86
+00:04:41,421 --> 00:04:43,322
+然后准备好
+small loss, and I want to get
+
+87
+00:04:43,322 --> 00:04:46,038
+在下一个交易机会出现时抓住它。
+ready for the next trade opportunity when it comes in.
+
+88
+00:04:46,120 --> 00:04:48,680
+这里是我价值区域下方的两处卖出失衡。
+Here's my two selling imbalances below the value area.
+
+89
+00:04:49,340 --> 00:04:51,440
+下一根K线没怎么动。
+Next bar goes nowhere.
+
+90
+00:04:51,680 --> 00:04:52,464
+然后之后那根K线，
+Then the bar afterwards,
+
+91
+00:04:52,464 --> 00:04:54,033
+你知道吧，我喜欢给它两根K线的时间
+you know, I like to give it two
+
+92
+00:04:54,033 --> 00:04:55,798
+来完成走势，而不仅仅是一根K线。
+bars to make its move, not just one bar.
+
+93
+00:04:56,300 --> 00:04:58,060
+然后，你知道吧，你就在这里做空。
+Then, you know, you get short right in here.
+
+94
+00:04:58,200 --> 00:05:00,080
+接下来一根K线就暴跌。
+And then the next bar dumps.
+
+95
+00:05:00,520 --> 00:05:01,730
+这就是你，这些是
+That's what you, these are
+
+96
+00:05:01,730 --> 00:05:03,425
+你作为交易者最喜欢的那些K线，
+those bars that you love to get
+
+97
+00:05:03,425 --> 00:05:05,362
+当你一做空，就好像，你知道吧，
+as a trader, where as soon as you
+
+98
+00:05:05,362 --> 00:05:07,299
+有人拉了开关，
+get short, it's like, you know, someone pulled
+
+99
+00:05:07,299 --> 00:05:11,658
+你知道吧，市场底部在你做空后崩盘了。
+the switch and, you know, the market, the bottom fell out of the market after you got short.
+
+100
+00:05:11,720 --> 00:05:12,940
+这些是最好的交易机会。
+Those are the best trades to take.
+
+101
+00:05:12,940 --> 00:05:18,720
+现在，第二个交易设置叫做最小最大Delta衰减。
+Now, the second trade set up is what I call the min-max-delta decay.
+
+102
+00:05:19,040 --> 00:05:21,860
+你要做的是观察最大和最小Delta。
+And what you're going to do is you're going to look at the max and min-delta.
+
+103
+00:05:22,260 --> 00:05:25,461
+对于空头衰减，最大买卖强弱差
+So for bearish decay, the max-delta should
+
+104
+00:05:25,461 --> 00:05:29,120
+应该在多根K线中逐渐减小，
+be getting smaller over several bars, while min-delta
+
+105
+00:05:29,120 --> 00:05:32,779
+而最小买卖强弱差也应在多根K线中持续增长。
+should be growing consistently also over several bars.
+
+106
+00:05:32,780 --> 00:05:35,420
+对于多头衰减，则是相反的情况。
+So for bullish decay, it's going to be the opposite.
+
+107
+00:05:35,580 --> 00:05:40,920
+最小买卖强弱差应在多根K线中逐渐减小，而最大买卖强弱差应持续增长。
+Min-delta should be getting smaller over several bars, while max-delta should be growing consistently over several bars.
+
+108
+00:05:41,340 --> 00:05:42,890
+而且，你知道吧，
+And, you know, I
+
+109
+00:05:42,890 --> 00:05:45,990
+我在‘持续增长’旁边标了个星号，因为
+put the little asterisk besides growing consistently, because
+
+110
+00:05:45,990 --> 00:05:48,703
+‘持续增长’并不一定意味着连续
+growing consistently does not necessarily mean sequentially
+
+111
+00:05:48,703 --> 00:05:49,478
+变大，对吧？
+bigger, okay?
+
+112
+00:05:50,260 --> 00:05:53,980
+它只需要持续保持一个不错的水平。
+It just needs to be consistently, you know, decent.
+
+113
+00:05:54,940 --> 00:05:58,660
+而且最大和最小买卖强弱差的K线之间可以有重叠。
+And you can have overlap between the bars with the max and min-delta.
+
+114
+00:05:58,720 --> 00:06:00,140
+我来给你看看我的意思，好吗？
+I'll show you what I mean, okay?
+
+115
+00:06:00,140 --> 00:06:03,080
+好的，这是多头Delta衰减。
+Okay, there's bullish delta decay.
+
+116
+00:06:04,920 --> 00:06:07,620
+你可以看到最小买卖强弱差在减小。
+So you can see the min-deltas are getting smaller.
+
+117
+00:06:07,840 --> 00:06:13,280
+1300很大，1300很大，然后-189，0，-43。
+1,300 is big, 1,300 is big, then minus 189, zero, minus 43.
+
+118
+00:06:14,240 --> 00:06:18,340
+同时，最大买卖强弱差在增强。
+While at the same time, you have the max delta getting stronger.
+
+119
+00:06:19,040 --> 00:06:25,400
+你知道吧，这里是2369，580，386，你知道吧，这里是800，对吧？
+You know, it's 2,369, 580, 386, you know, 800 here, okay?
+
+120
+00:06:25,440 --> 00:06:27,040
+而且你会看到市场在上涨。
+And you see the market is going up.
+
+121
+00:06:27,040 --> 00:06:34,840
+所以这是K线内部的情况，对吧？因为最大买卖强弱差和最小买卖强弱差是K线内部的读数，知道吧,
+So you have internally, right? Because min and max delta is an internal reading of the bar, you know,
+
+122
+00:06:34,860 --> 00:06:37,840
+显示积极空头有多强势，或者积极多头有多强势。
+how strong aggressive sellers were or how strong aggressive buyers were.
+
+123
+00:06:38,200 --> 00:06:41,100
+同时，如果
+And if at the same time you have the aggressive
+
+124
+00:06:41,100 --> 00:06:43,130
+积极空头在减弱，而积极多头
+sellers getting weakening and the aggressive buyers
+
+125
+00:06:43,130 --> 00:06:46,900
+在增强，知道吧，这就是进入交易的好信号。
+getting stronger, you know, that's a nice sign to get into the trade.
+
+126
+00:06:46,900 --> 00:06:48,900
+这是看跌Delta衰减。
+Here's a bearish delta decay.
+
+127
+00:06:50,900 --> 00:07:03,520
+这里的情况是，知道吧，最大买卖强弱差是214、148、131、19、60，所以这里在变小，知道吧，19、60、14。
+And what you got here is, you know, the max delta, 214, 148, 131, 19, 60. So it's getting smaller here, you know, 19, 60, 14.
+
+128
+00:07:03,840 --> 00:07:06,826
+同时，最小买卖强弱差
+While at the same time, the min delta
+
+129
+00:07:06,826 --> 00:07:08,692
+在增强，-233、-300,
+is getting stronger, minus 233, minus 300,
+
+130
+00:07:08,692 --> 00:07:12,798
+-392。现在，这个最小买卖强弱差在连续增强，知道吧。
+minus 392. Now, this min delta is getting stronger, you know, sequentially.
+
+131
+00:07:14,200 --> 00:07:16,953
+其实不一定要这样。我的意思是，如果
+It wouldn't have to. I mean, if
+
+132
+00:07:16,953 --> 00:07:18,919
+这是，知道吧，233、392，还有
+this was, you know, 233, 392, and
+
+133
+00:07:18,919 --> 00:07:20,885
+307，我还是会一样对待。
+307, I'd still treat it the
+
+134
+00:07:20,885 --> 00:07:24,818
+但它确实在，知道吧，负值持续增强。
+same. But it's getting, you know, it's consistently stronger negative.
+
+135
+00:07:28,510 --> 00:07:30,530
+这是看跌Delta衰减的另一个信号。
+Another sign of bearish delta decay.
+
+136
+00:07:30,610 --> 00:07:32,970
+我们刚刚创了一个高点，好吗？
+We just made a high. Okay?
+
+137
+00:07:32,970 --> 00:07:35,387
+在接近这个高点时，你可以看到
+And going into this high, you can see
+
+138
+00:07:35,387 --> 00:07:37,502
+最大买卖强弱差在高点最强，629，
+the max delta is strongest at the
+
+139
+00:07:37,502 --> 00:07:39,919
+然后只有122，然后只有11、31、66。
+high, 629. Then it's only 122. Then just 11, just 31, just 66.
+
+140
+00:07:42,070 --> 00:07:44,043
+而，知道吧，高点之后的K线，
+While, you know, the bar
+
+141
+00:07:44,043 --> 00:07:46,805
+你的最小买卖强弱差最强，是-762，
+after the high, you got your strongest
+
+142
+00:07:46,805 --> 00:07:48,778
+但，知道吧，-387、-216、-692，好吗？
+min delta, minus 762. But, you
+
+143
+00:07:48,778 --> 00:07:50,751
+知道吧，-387，-216，-692。好的？
+know, minus 387, minus 216, minus 692. Okay?
+
+144
+00:07:53,110 --> 00:07:58,650
+然后有一根K线，价格来回波动，然后，又出现类似情况，Delta是-365。
+And you have a bar where it's back and forth. Then, again, sort of writes itself, minus 365 in the delta.
+
+145
+00:07:58,950 --> 00:08:00,690
+你可以看到它在这里抛售。
+And you can see here as it sells off.
+
+146
+00:08:00,690 --> 00:08:02,455
+所以，同时，
+So, at the same time,
+
+147
+00:08:02,455 --> 00:08:04,926
+最大买卖强弱差在减弱，对吧？或者说
+the max delta is weakening, right? Or
+
+148
+00:08:04,926 --> 00:08:07,750
+比较弱。我不一定说减弱，因为
+weak, rather. I don't say necessarily weakening. Because
+
+149
+00:08:07,750 --> 00:08:14,810
+当我说减弱时，人们会认为是一系列K线上的连续减弱，但整体上只是比较弱。
+when I say weakening, people think it's sort of sequential over a series of bars. But it's just weak overall.
+
+150
+00:08:15,410 --> 00:08:21,850
+但最小买卖强弱差在同一时期内很强，或者说，知道吧，与那一时期重叠。
+But min delta is strong over that same period. Or, you know, overlapping that period.
+
+151
+00:08:21,970 --> 00:08:24,750
+因为最大买卖强弱差在这里最强。
+Because the max delta was strongest here.
+
+152
+00:08:24,850 --> 00:08:26,230
+然后它开始逐渐变弱。
+Then it just sort of started getting weaker.
+
+153
+00:08:26,650 --> 00:08:29,090
+然后最小买卖强弱差在这里开始上升。
+Then the min delta started picking up in here.
+
+154
+00:08:29,090 --> 00:08:35,130
+这是多头Delta衰减。对吧？
+It's bullish delta decay. Okay?
+
+155
+00:08:35,230 --> 00:08:38,270
+所以，再来说，你知道的，你处于低点。出现了强劲的抛售。
+So, again, you got, you know, you're at your lows. You got some strong selling.
+
+156
+00:08:38,350 --> 00:08:43,330
+负679，负189，负577，负123，负269，负781。
+Minus 679, minus 189, minus 577, minus 123, minus 269, minus 781.
+
+157
+00:08:44,790 --> 00:08:50,970
+最小买卖强弱差，最大买卖强弱差，你知道吗，除了412外，其他都很小。45，0，25，0。然后是1200。
+Min delta, max delta, you know, other than it's 412. It's all kind of small. 45, 0, 25, 0. But then 1200.
+
+158
+00:08:51,390 --> 00:08:56,170
+同时，最小买卖强弱差只有60，负69，正299。
+At the same time, the min delta is just 60, minus 69, plus 299.
+
+159
+00:08:56,170 --> 00:09:02,950
+好的，所以最大买卖强弱差开始变强。
+Okay, so it's starting to get stronger in the max delta.
+
+160
+00:09:03,550 --> 00:09:08,710
+而且，这并不一定是连续的，因为是1200，然后299，然后278。
+And, again, it's not necessarily sequential because it's 1200 and then 299 and then 278.
+
+161
+00:09:10,980 --> 00:09:14,040
+有人可能会说，这不是在变弱吗？对吧？
+People might say, well, isn't that getting weaker? Right?
+
+162
+00:09:14,080 --> 00:09:14,800
+它在下降。
+It's dropping off.
+
+163
+00:09:14,800 --> 00:09:22,900
+嗯，我是说，你可以这样认为，但最小买卖强弱差并没有变得特别强。
+Well, I mean, you can make that argument, but it's not like the min delta is getting super-duper strong.
+
+164
+00:09:23,020 --> 00:09:28,940
+它，你知道吗，负60，负69，负103。在这一点上它仍然相对较弱。
+It's, you know, minus 60, minus 69, minus 103. I mean, it's still relatively weak in that sense.
+
+165
+00:09:30,680 --> 00:09:33,500
+好的。现在，我先喝点水。
+Okay. Now, let me drink some water here.
+
+166
+00:09:36,710 --> 00:09:38,790
+现在，被动交易者控制市场。
+Now, passive traders in control.
+
+167
+00:09:39,470 --> 00:09:40,370
+这是第三个入场信号。
+This is the third setup.
+
+168
+00:09:40,370 --> 00:09:44,930
+被动交易者是订单吸收的信号，对吧？
+Passive traders are a sign of absorption, right?
+
+169
+00:09:45,030 --> 00:09:48,990
+市场在K线中分布成交量方面做得很好。
+And the market does a pretty good job of distributing volume in a bar.
+
+170
+00:09:49,790 --> 00:09:52,017
+但有时你会开始看到
+But there are times when you start seeing the heaviest
+
+171
+00:09:52,017 --> 00:09:53,130
+成交量集中在K线的
+volume on one side of
+
+172
+00:09:53,130 --> 00:09:54,689
+一侧，这需要特别关注。
+the bar, and it warrants special attention.
+
+173
+00:09:56,970 --> 00:09:58,850
+我在前面的模块里提到过这点，对吧？
+I've talked about this in the earlier modules, right?
+
+174
+00:09:58,890 --> 00:09:59,890
+在绿色上涨K线中,
+In green up candles,
+
+175
+00:09:59,890 --> 00:10:01,890
+你知道吗，当你在足迹图中间看到大量成交量时，
+you know, when you see heavy volume on
+
+176
+00:10:01,890 --> 00:10:04,390
+它会告诉你一些信息。
+the mid side of the footprint, it tells you something.
+
+177
+00:10:04,390 --> 00:10:10,990
+但这种情况下，两个最高成交量水平出现在K线的中间位置。
+But in this case, it's the two highest volume levels appearing on the mid side of the bar.
+
+178
+00:10:12,250 --> 00:10:18,330
+或者在红色下跌K线中，两个最高成交量水平在K线的卖盘一侧。
+Or in red down candles, the two heaviest volume levels are on the offer side of the bar.
+
+179
+00:10:19,610 --> 00:10:22,950
+我们来看一下，这样你能有更直观的理解。
+And let's take a look here so you have better visual representation.
+
+180
+00:10:24,390 --> 00:10:26,510
+所以你看这个市场，对吧？它下跌了。
+So you see this market, right? It's sold off.
+
+181
+00:10:27,570 --> 00:10:32,930
+出现绿色上涨K线。好的。这根K线，你得仔细看柱状线里的成交量。
+You get your green candle. Okay. This one, you actually got to look at the volumes in the bars.
+
+182
+00:10:33,290 --> 00:10:35,950
+好的。你看到什么了？好吧。
+Okay. And what do you see? Okay.
+
+183
+00:10:35,950 --> 00:10:42,630
+这里最高成交量是387，卖盘那边是379。但买盘那边是427、421。
+Here, the highest volume, 387. It's 379 on the offer side. But on the bid side, 427, 421.
+
+184
+00:10:42,830 --> 00:10:46,830
+很少会在绿色上涨K线的买盘那边，
+It's not often that you get the two heaviest volumes
+
+185
+00:10:46,830 --> 00:10:52,830
+看到两个最大的成交量。这点很重要，要记住。
+appearing on the bid side of a green up candle. So that's important to note.
+
+186
+00:10:53,090 --> 00:10:55,810
+就像红色下跌K线里，两个
+Just as in a red candle, the two
+
+187
+00:10:55,810 --> 00:10:57,170
+最大的成交量出现在
+heaviest volumes appearing on
+
+188
+00:10:57,170 --> 00:11:01,930
+卖盘那边。对吧。这说明被动交易者肯定控制了市场。
+the offer side. All right. It's telling you passive traders are definitely in control.
+
+189
+00:11:02,770 --> 00:11:09,390
+你看411、402，买盘那边最大成交量是393、350，对吧？
+You see 411, 402. The heaviest volume on the bid side, 393, 350, right?
+
+190
+00:11:09,470 --> 00:11:14,770
+你懂的，通常红色K线里，最大成交量一般在买盘那边，对吧？
+You see, normally on the red candles, the heaviest volume is generally going to be on the bid side, right?
+
+191
+00:11:14,790 --> 00:11:19,370
+这里是389。知道吧，这比另一边多一手。
+You see 389 here. You know, this was the heaviest by one contract.
+
+192
+00:11:19,370 --> 00:11:26,990
+下面是518，这里485，288，好的？
+518 down here, you know, 485 here, 288, okay?
+
+193
+00:11:27,110 --> 00:11:31,614
+所以当你看到两个最大的成交量出现在
+So when you see the two heaviest volumes appear on
+
+194
+00:11:31,614 --> 00:11:36,569
+卖盘那边，这就是交易的重要信息，对吧？
+the offer side, that's important information to trade off of, right?
+
+195
+00:11:36,690 --> 00:11:40,070
+看这里。10801、654。
+Here you go. 10801, 654.
+
+196
+00:11:40,630 --> 00:11:43,990
+你知道这根K线上面有阻力，对吧？
+You know you got resistance up here in this bar, right?
+
+197
+00:11:43,990 --> 00:11:46,810
+而阻力是被动交易者形成的。
+And resistance is in the form of passive traders.
+
+198
+00:11:48,410 --> 00:11:51,630
+再看这里，对吧？从低点反弹的漂亮绿色K线。
+Again, here, right? Nice green candle off the low.
+
+199
+00:11:54,480 --> 00:11:58,340
+171、10，抱歉，是1071和746。
+171, 10, I'm sorry, 1071 and 746.
+
+200
+00:11:58,660 --> 00:12:02,380
+买盘卖盘那边下一个最高成交量才577。
+The next highest volume on the bid on the offer side is just, what, 577.
+
+201
+00:12:02,920 --> 00:12:07,360
+所以很清楚，多了200手。
+So it's clear by, you know, an extra 200 contracts.
+
+202
+00:12:07,360 --> 00:12:14,800
+这里很接近。是1151、1048，但1048刚好在1078到1094下面。
+Right here, it's close. It's 1151, 1048, but this 1048 is just below the 1078 to 1094.
+
+203
+00:12:14,800 --> 00:12:16,177
+你知道，你总在讨论，
+You know, you're always talking about,
+
+204
+00:12:16,177 --> 00:12:17,554
+订单流的平衡里，
+you know, there's a fine line
+
+205
+00:12:17,554 --> 00:12:18,931
+有一条细微的分界线。
+in the balance of the order
+
+206
+00:12:18,931 --> 00:12:21,457
+这正是订单流平衡的典型例子。
+flow. And this is, you know, a prime example of that.
+
+207
+00:12:23,700 --> 00:12:28,280
+知道吧，这里是775，这是最大成交量。
+You know, here you've got 775. So this is the heaviest volume.
+
+208
+00:12:28,420 --> 00:12:33,720
+这里是747，但下一个最高成交量才360，对吧？
+Here's 747, but the next highest volume is only, what, 360, okay?
+
+209
+00:12:34,240 --> 00:12:38,320
+这里是800和18，但这里是844，对吧？
+Here's 800 and 18, but here's 844, right?
+
+210
+00:12:38,320 --> 00:12:42,145
+所以你要在K线里找两个最大的成交量，
+So you're looking for the two heaviest volumes in the bar on
+
+211
+00:12:42,145 --> 00:12:44,695
+在买盘出现的绿色上涨K线中
+a green candle appearing on the bid side
+
+212
+00:12:44,695 --> 00:12:49,158
+或在卖盘出现的红色下跌K线中找两个最大成交量
+or the two heaviest volumes in a red candle appearing on the offer side.
+
+213
+00:12:50,740 --> 00:12:53,600
+现在，Delta波动性，这是第四个交易设置
+Now, delta volatility, this is the fourth setup.
+
+214
+00:12:54,000 --> 00:12:54,860
+现在，有两种类型
+Now, there are two types.
+
+215
+00:12:54,980 --> 00:12:57,920
+有看跌和看涨的，对吧，或者说这里看涨和看跌
+There's bearish and bullish, okay, or bullish and bearish here.
+
+216
+00:12:58,000 --> 00:13:00,258
+所以看跌的例子是大的正Delta
+So the bearish example is big positive delta
+
+217
+00:13:00,258 --> 00:13:02,516
+接近最大买卖强弱差的数值，对吧？所以你得有
+number near the max delta, right? So you've
+
+218
+00:13:02,516 --> 00:13:07,879
+一个大的正Delta，而且它应该接近最大买卖强弱差
+got to have a big positive delta and it's going to be, you know, somewhere near the max delta
+
+219
+00:13:07,880 --> 00:13:10,620
+而且这根K线的波动范围很小，对吧？
+and the bar's range is small, right?
+
+220
+00:13:10,640 --> 00:13:12,640
+然后下一根K线有大的负Delta
+Then the next bar has a big negative
+
+221
+00:13:12,640 --> 00:13:16,640
+接近最小买卖强弱差，而且这根K线的波动范围明显比前一根大
+delta near the min delta and the bar's range is obviously bigger than the previous bar.
+
+222
+00:13:16,640 --> 00:13:19,012
+我并不是说你得去测量
+And I'm not saying you've got to measure
+
+223
+00:13:19,012 --> 00:13:23,459
+然后说，哦，它是两倍大小。只是应该明显更大，对吧？
+it and say, oh, it's double the size. It just should be noticeably bigger, right?
+
+224
+00:13:23,500 --> 00:13:24,800
+所以不会是一样大小
+So it's not going to be the same size.
+
+225
+00:13:25,400 --> 00:13:27,661
+看涨的例子则相反，一个大的负Delta
+Bullish example is the opposite, a big negative
+
+226
+00:13:27,661 --> 00:13:31,619
+接近最小买卖强弱差，而且这根K线的波动范围，你知道，相对较小
+delta near the min delta and the bar's range is, you know, relatively small.
+
+227
+00:13:31,740 --> 00:13:32,787
+我不是说，你
+I'm not saying, you
+
+228
+00:13:32,787 --> 00:13:34,357
+知道，它特别小，比如，你知道
+know, it's tiny, like, you know,
+
+229
+00:13:34,357 --> 00:13:35,927
+覆盖一个价格或两个价格
+covering one price or two prices,
+
+230
+00:13:35,927 --> 00:13:37,497
+而是，你知道，只是
+but, you know, just sort of
+
+231
+00:13:37,497 --> 00:13:40,638
+一根普通的K线，但有大的负Delta，而且接近最大
+a normal bar, but with big negative delta and near the max,
+
+232
+00:13:40,800 --> 00:13:41,700
+抱歉，接近最小买卖强弱差
+sorry, near the min delta.
+
+233
+00:13:41,700 --> 00:13:46,900
+但下一根K线出现大的正Delta，你知道，大概接近最大买卖强弱差
+But then the next bar comes in with big positive delta, you know, sort of near the max delta.
+
+234
+00:13:46,960 --> 00:13:49,040
+不一定要正好在最大买卖强弱差上，对吧？
+It doesn't have to be on the max delta, right?
+
+235
+00:13:49,100 --> 00:13:50,280
+只要接近那里就行
+It's got to be somewhere near there.
+
+236
+00:13:50,500 --> 00:13:53,860
+而且这根K线的波动范围明显比前一根大，好吧？
+And the bar's range is obviously bigger than the previous bar, okay?
+
+237
+00:13:53,860 --> 00:13:54,820
+这是一个完美的例子
+So here's a perfect example.
+
+238
+00:13:54,980 --> 00:13:57,809
+这是你那种正常的小K线
+Here's your kind of normal small bar,
+
+239
+00:13:57,809 --> 00:14:00,234
+大的负Delta -1635，你知道
+big negative delta minus 1635, you know,
+
+240
+00:14:00,234 --> 00:14:03,871
+最小买卖强弱差是-1705，所以相对接近
+the min delta is minus 1705, so it's relatively close.
+
+241
+00:14:04,740 --> 00:14:09,415
+然后出现一根大的上涨K线，
+Then you get the big bar up,
+
+242
+00:14:09,415 --> 00:14:12,086
+Delta为正1011。
+big positive delta, 1011. The
+
+243
+00:14:12,086 --> 00:14:19,433
+最大买卖强弱差是1055，这就是多头Delta波动，对吧？
+max delta is 1055, so whichever is that bullish delta volatility, okay?
+
+244
+00:14:21,890 --> 00:14:28,690
+这里，对吧，你有根绿色上涨K线，Delta较小，79，收盘接近最大买卖强弱差。
+Here, right, you got your green up candle, smallish delta, 79, it's closing sort of near the max delta.
+
+245
+00:14:29,270 --> 00:14:35,870
+然后是波动更大的K线，对吧，规模几乎是那根绿色K线的两倍。
+Then the big, bigger bar volatility-wise, right, it's almost twice the size as that green candle.
+
+246
+00:14:36,370 --> 00:14:41,570
+Delta为负1128，收盘接近最小买卖强弱差1150。
+Strong negative delta, 1128, it's closing near its min delta number of 1150.
+
+247
+00:14:42,230 --> 00:14:45,510
+好的，就在这里，类似的情况。这和你这里的情况非常相似。
+All right, just here, similar one. This is very similar to what you have here.
+
+248
+00:14:46,070 --> 00:14:47,270
+K线规模几乎是两倍。
+Bar is almost twice the size.
+
+249
+00:14:47,930 --> 00:14:51,830
+这里最大买卖强弱差是311，最终Delta是171。
+Here you have the max delta, 311. The final delta is 171.
+
+250
+00:14:51,830 --> 00:14:55,410
+不需要收盘在最大买卖强弱差5%以内，知道吧。
+Again, it doesn't have to close, you know, within 5% of the max delta.
+
+251
+00:14:55,550 --> 00:14:56,570
+只要接近就行。
+It's got to be, you know, somewhere near.
+
+252
+00:14:56,750 --> 00:15:00,530
+如果最大买卖强弱差是311，而最终Delta是71，那我真的不会认为接近。
+If this was 311 and this was 71, I really wouldn't consider it near.
+
+253
+00:15:00,970 --> 00:15:02,430
+但知道吧，这已经足够接近了。
+But, you know, that's close enough.
+
+254
+00:15:03,430 --> 00:15:05,770
+知道吧，交易中有时你得自己做决定。
+You know, in trading, sometimes you got to make those decisions.
+
+255
+00:15:05,870 --> 00:15:06,610
+够接近吗？
+Is it close enough?
+
+256
+00:15:06,690 --> 00:15:09,850
+你可以说，啊，知道吧，超过一半了，知道吧。
+You can say, ah, you know what, it's, you know, it's more than half, you know.
+
+257
+00:15:09,970 --> 00:15:13,570
+对我来说，在50%以上。
+So, to me, it's on the right side of 50%.
+
+258
+00:15:13,570 --> 00:15:15,763
+然后是根大的红色下跌K线，
+But then the big red candle down,
+
+259
+00:15:15,763 --> 00:15:17,329
+我说的大，是
+when I say big, it's
+
+260
+00:15:17,329 --> 00:15:20,149
+相对于前面那根绿色K线更大。
+bigger relative to that green candle right before it.
+
+261
+00:15:20,150 --> 00:15:23,410
+显然，Delta是负628。
+Obviously, the negative delta is minus 628.
+
+262
+00:15:24,010 --> 00:15:30,410
+收盘接近最小买卖强弱差负638。好的。
+And it's closing right near our min delta of minus 638. Okay.
+
+263
+00:15:30,410 --> 00:15:32,650
+多头Delta衰减。
+Bullish delta decay.
+
+264
+00:15:32,910 --> 00:15:37,330
+这里绿色K线规模是红色K线的两倍，对吧？
+The green candle is like twice the size of the red candle here, right?
+
+265
+00:15:37,670 --> 00:15:39,230
+红色K线规模比较小。
+The red candle is kind of smallish.
+
+266
+00:15:39,630 --> 00:15:45,330
+你有个很大的负Delta，负710。最小买卖强弱差是负781。收盘接近它。
+You've got a nice negative delta minus 710. The min delta is minus 781. So, it's closing near it.
+
+267
+00:15:45,810 --> 00:15:47,874
+然后出现一根大的
+And then you get the big
+
+268
+00:15:47,874 --> 00:15:49,938
+波动K线。知道吧，这是一根
+volatility candle. You know, it's a
+
+269
+00:15:49,938 --> 00:15:52,690
+很大的绿色上涨K线。Delta为正1222，
+nice big green candle up. Nice positive delta
+
+270
+00:15:52,690 --> 00:15:58,882
+最大买卖强弱差是1233。收盘接近最大买卖强弱差。
+of 1222. The min delta, sorry, the max delta, rather, is 1233. So, it's closing right near our max delta.
+
+271
+00:15:59,570 --> 00:16:01,142
+那你现在看到的是,
+So, what you got, you
+
+272
+00:16:01,142 --> 00:16:03,343
+知道吧，你大概看到的是,
+know, you sort of got your, you
+
+273
+00:16:03,343 --> 00:16:05,858
+知道吧，空头在激进卖出，
+know, your aggressive selling that's kind of running
+
+274
+00:16:05,858 --> 00:16:14,348
+但碰到了些吸收，所以这根K线没大幅下跌。然后反弹回来了，对吧？
+into, you know, a little bit of absorption. That's why this bar is not a big wide bar going down. Then it sort of springs back, right?
+
+275
+00:16:14,370 --> 00:16:19,630
+你还有流动性，或者说波动性。市场在寻找流动性，知道吧。
+You got, you know, the liquidity or, you know, volatility. You know, market's looking for liquidity.
+
+276
+00:16:20,350 --> 00:16:23,335
+可能之前在这里卖出的空头
+All these sellers maybe that were selling in
+
+277
+00:16:23,335 --> 00:16:26,320
+现在意识到，知道吧，我们错了。
+here are realizing that, you know, we're wrong.
+
+278
+00:16:26,320 --> 00:16:34,158
+他们得开始回补，这导致了这根较宽的K线，还有强正Delta，好的？
+They got to start covering it here. That's what's causing this wider bar as well as the strong positive delta, okay?
+
+279
+00:16:34,480 --> 00:16:36,580
+这就是看跌Delta衰减。
+Here's your bearish delta decay.
+
+280
+00:16:36,800 --> 00:16:38,537
+知道吧，我喜欢它们出现的时机,
+You know, I like them when they appear,
+
+281
+00:16:38,537 --> 00:16:40,274
+比如，如果是看跌Delta衰减，
+like, near the high of the day if
+
+282
+00:16:40,274 --> 00:16:43,098
+就出现在当天高点附近，或者看涨Delta衰减出现在当天低点附近。
+it's a bearish delta decay or bullish near the low of the day.
+
+283
+00:16:43,180 --> 00:16:44,557
+不过，知道吧，你
+But, again, you know, you
+
+284
+00:16:44,557 --> 00:16:46,485
+有时候也能在趋势中
+can sometimes catch them in, you know,
+
+285
+00:16:46,485 --> 00:16:48,137
+抓到它们，知道吧,
+while the market's moving in, you
+
+286
+00:16:48,137 --> 00:16:49,238
+当市场在趋势中运行时。
+know, in a trend.
+
+287
+00:16:49,240 --> 00:16:58,540
+知道吧，这里有一根相对正常的K线，对吧？正Delta 747，收盘接近最大买卖强弱差876。
+You know, you're a relatively normal bar up here, right? Positive delta 747 closing near our max delta of 876.
+
+288
+00:16:59,620 --> 00:17:02,768
+然后是一根大红色下跌K线，强负Delta
+Then the big red candle down, strong negative
+
+289
+00:17:02,768 --> 00:17:05,522
+负665，收盘接近
+delta minus 665, which is closing near our
+
+290
+00:17:05,522 --> 00:17:12,212
+最小买卖强弱差负685。而市场之前先横盘，然后才开始下跌。
+min delta minus 685. And in this case, the market just went sideways before, you know, selling off.
+
+291
+00:17:13,000 --> 00:17:14,430
+但知道吧，这仍然
+But, you know, this is still
+
+292
+00:17:14,430 --> 00:17:16,336
+是我会考虑做的交易,
+a trade that I'd be looking to take
+
+293
+00:17:16,336 --> 00:17:21,818
+因为我知道如果我做空，知道吧，我的止损放哪？就放在当天高点上方。
+because I know that if I get short, you know, where's my stop going to be? Just above the high of the day.
+
+294
+00:17:22,260 --> 00:17:24,448
+知道吧，任何能让我
+You know, any excuse I could
+
+295
+00:17:24,448 --> 00:17:26,636
+在当天高点附近做空的理由
+have to get short off the
+
+296
+00:17:26,636 --> 00:17:29,554
+对我来说都是
+high of the day to me is a
+
+297
+00:17:29,554 --> 00:17:40,498
+很好的交易机会，因为我的潜在收益在哪？我的潜在收益是，知道吧，到当天区间中点，甚至可能测试低点。
+great trading opportunity because where's my potential? My potential is, you know, up to, you know, the midpoint of the day's range and, you know, maybe even testing the lows.
+
+298
+00:17:40,500 --> 00:17:42,940
+所以这会给我一个很好的交易机会。
+So it's going to give me a great trading opportunity.
+
+299
+00:17:44,480 --> 00:17:48,080
+现在，开盘控制点。这是第五个交易设置策略。
+Now, the open point of control. This is the fifth setup strategy.
+
+300
+00:17:48,780 --> 00:17:50,058
+你需要做的是
+And what you got to do is
+
+301
+00:17:50,058 --> 00:17:51,336
+你要看控制点左边
+you got to look to the left
+
+302
+00:17:51,336 --> 00:17:52,979
+而不是右边。
+of the point of control instead of the right.
+
+303
+00:17:53,100 --> 00:17:59,730
+这是一个两根K线的设置。看涨的开放控制点设置。
+Now, this is a two-bar setup. And the bullish one is open point of control.
+
+304
+00:17:59,830 --> 00:18:01,370
+需要连续两根绿色K线。
+It requires two consecutive green candles.
+
+305
+00:18:01,670 --> 00:18:05,950
+第二根绿色K线的控制点要高于第一根K线的高点。
+The second green candle's point of control should be above the high of the first bar.
+
+306
+00:18:05,950 --> 00:18:08,223
+它寻找在
+It looks to get long on the
+
+307
+00:18:08,223 --> 00:18:09,846
+第二根K线之后的那根K线做多，对吧，
+bar after the second, right,
+
+308
+00:18:09,846 --> 00:18:12,768
+当它交易价格高于第二根K线的高点时。
+when it trades above the high of bar two.
+
+309
+00:18:12,970 --> 00:18:15,152
+我没把看跌的放在这里
+I didn't put the bearish one on here
+
+310
+00:18:15,152 --> 00:18:17,334
+因为我想详细解释一下
+because I want to explain it a little
+
+311
+00:18:17,334 --> 00:18:19,789
+因为，再说一次，你对这个的思考方式
+bit because, again, the way you think about with
+
+312
+00:18:19,789 --> 00:18:21,699
+和，你知道的，
+this one, it's different than, you know,
+
+313
+00:18:21,699 --> 00:18:28,247
+我通常教的控制点分析方法不同，那种方法叫做向右看，对吧，寻找那些被放弃的控制点。
+how I normally teach point of control analysis, which is called looking to the right, right, and looking for those abandoned point of controls.
+
+314
+00:18:28,250 --> 00:18:29,920
+现在，这个需要两根
+Now, this one requires two
+
+315
+00:18:29,920 --> 00:18:32,259
+红色K线，对吧，这是看跌的
+red candles, right, this is for bearish
+
+316
+00:18:32,259 --> 00:18:36,269
+开放控制点。连续两根，一根接一根。
+open point of control. Two consecutive, you know, one after the other.
+
+317
+00:18:36,950 --> 00:18:40,370
+我在这里输入‘连续红色K线’
+I'm going to type here consecutive red candles.
+
+318
+00:18:41,630 --> 00:18:53,190
+第二根红色K线的控制点要低于第一根K线的低点。
+The second red candles POC should be below the low of bar one.
+
+319
+00:18:53,190 --> 00:19:12,800
+寻找在第二根K线之后的那根K线做空，当它交易价格低于第二根K线的低点时，好的？
+Look to get short on the bar after bar two when it trades below the low of bar two, okay?
+
+320
+00:19:13,280 --> 00:19:14,820
+所以，看看这里。
+So, take a look here.
+
+321
+00:19:18,180 --> 00:19:21,760
+看涨的开放控制点，对吧？你要向左看而不是向右看。
+Bullish open point of control, right? You're looking to the left instead of to the right.
+
+322
+00:19:21,840 --> 00:19:25,320
+通常，我让人们向右看，对吧？寻找那些被放弃的控制点。
+Normally, I tell people look to the right, right? Look for those abandoned point of controls.
+
+323
+00:19:25,320 --> 00:19:31,240
+在这种情况下，现在它是在高于之前的价格交易，我之前提过，对吧，迁移的控制点。
+In this case, it's now it's trading above, and I've talked about this, right, the migrating point of controls.
+
+324
+00:19:32,040 --> 00:19:34,360
+这有点像是迁移控制点的延伸。
+This is sort of a playoff, those migrating point of controls.
+
+325
+00:19:35,040 --> 00:19:41,140
+两根绿色K线，这里的控制点，第二根K线的，高于第一根K线的高点。
+Two green candles, the point of control here, the second candle, is above the high of this first bar.
+
+326
+00:19:42,560 --> 00:19:43,876
+高点，这个控制点，
+High, this point of
+
+327
+00:19:43,876 --> 00:19:45,192
+实际上还有一个，
+control, another one actually,
+
+328
+00:19:45,192 --> 00:19:46,838
+看涨的开放控制点
+bullish open point of control
+
+329
+00:19:46,838 --> 00:19:51,118
+就在这里，高于高点，这个高点，不是控制点。
+right here, is above the high, the high, not the point of control.
+
+330
+00:19:51,120 --> 00:19:54,600
+如果它高于高点，显然它也高于前一根K线的控制点。
+And if it's above the high, it's obviously above the point of control of the previous bar.
+
+331
+00:19:55,320 --> 00:19:57,560
+这里还有一个例子，好吧？
+Here's another one up here, okay?
+
+332
+00:19:57,780 --> 00:19:59,851
+但这是你会真正考虑
+But this is the one that you'd
+
+333
+00:19:59,851 --> 00:20:01,922
+用来交易的那个，
+really be looking to take to trade,
+
+334
+00:20:01,922 --> 00:20:06,359
+对吧？因为你有入场信号，然后价格开始上涨。
+right, in the sense that you have the setup, then the price starts moving higher.
+
+335
+00:20:06,640 --> 00:20:07,622
+就像，你知道的，
+Just as, you know,
+
+336
+00:20:07,622 --> 00:20:09,587
+我等一下会讲这个，
+and I'll talk about this in a minute,
+
+337
+00:20:09,587 --> 00:20:13,518
+这些技术上算是空头信号，但缺少持续的订单流，对吧？
+these would be technically a bearish one, but you don't have the follow-through order flow, right?
+
+338
+00:20:13,520 --> 00:20:15,180
+控制点，两根红色K线。
+The point of control, two red candles.
+
+339
+00:20:15,180 --> 00:20:17,637
+第二根K线的控制点
+The second bar's point of control is below
+
+340
+00:20:17,637 --> 00:20:19,480
+在前一根K线的最低点下方，
+the low of the previous candle,
+
+341
+00:20:19,480 --> 00:20:22,859
+就像这个例子，但我们没再下跌，好吧？
+just as this one, but we don't go any lower, okay?
+
+342
+00:20:22,860 --> 00:20:25,200
+那我们来看看这里的空头例子，对吧？
+So let's take a look at the bearish one here, right?
+
+343
+00:20:25,300 --> 00:20:27,500
+这里是空头开盘控制点。
+Bearish open point of control right here.
+
+344
+00:20:28,500 --> 00:20:34,600
+这根K线的控制点在前一根红色K线的最低点下方，抱歉，前一根红色K线的最低点。
+This bar's point of control is below the previous red bar's point of, sorry, the previous red bar's low.
+
+345
+00:20:35,280 --> 00:20:37,120
+然后下一根K线开始下跌。
+Then the next bar starts trading down.
+
+346
+00:20:37,120 --> 00:20:41,240
+所以你会看到，对吧，市场上涨，突然就反转了。
+So what you have, right, market moving up, all of a sudden it just reverses.
+
+347
+00:20:41,540 --> 00:20:44,800
+成交量在K线内向下迁移，对吧？
+Volume is migrating lower in the bar, right?
+
+348
+00:20:44,860 --> 00:20:47,220
+控制点显然也在向下迁移，好吧？
+Point of control is obviously migrating lower, okay?
+
+349
+00:20:47,240 --> 00:20:48,820
+这就是你的入场信号。
+So that's your setup.
+
+350
+00:20:49,000 --> 00:20:50,455
+然后你等下一根
+And then you just wait for the next
+
+351
+00:20:50,455 --> 00:20:52,819
+K线开盘后在该K线最低点下方交易。
+bar to open up and start trading below the low of this bar.
+
+352
+00:20:53,380 --> 00:20:55,060
+这就是你做空的信号。
+That's your sign to get short.
+
+353
+00:20:55,060 --> 00:21:02,170
+然后你能抓住这波漂亮的下跌，好吧？
+And then you catch this nice move down, okay?
+
+354
+00:21:02,170 --> 00:21:03,870
+这里还有一个例子，对吧？
+Here's another example, right?
+
+355
+00:21:04,070 --> 00:21:06,310
+多头开盘控制点，对吧？
+Bullish open point of control, right?
+
+356
+00:21:06,450 --> 00:21:12,230
+这里不是，因为这是一根绿色，抱歉，灰色K线。这是十字星K线，好吧？
+This is not one here because this is a green, sorry, a gray candle. It's a doji candle, okay?
+
+357
+00:21:12,590 --> 00:21:17,670
+而这个例子，你知道的，几乎可以在这里交易一手合约，好吧？
+And this one, you know, almost, trade one contract right here, okay?
+
+358
+00:21:17,690 --> 00:21:19,570
+下一根K线实际上上涨了，
+The next bar goes up, actually
+
+359
+00:21:19,570 --> 00:21:21,450
+然后回落，你知道的，
+pulls down and, you know, sort
+
+360
+00:21:21,450 --> 00:21:24,270
+某种程度测试了那个低点，然后又回涨了。
+of tests that low, sort of comes back up.
+
+361
+00:21:24,270 --> 00:21:25,470
+所以，你知道，我不
+So, you know, I don't
+
+362
+00:21:25,470 --> 00:21:27,150
+确定，取决于你把止损单放在哪里，
+know, depending on where you place your
+
+363
+00:21:27,150 --> 00:21:28,350
+如果你把止损单放在
+stop, if you place your
+
+364
+00:21:28,350 --> 00:21:30,750
+这根K线下方，就会被止损出局。
+stop below this, below this bar, you've been stopped up.
+
+365
+00:21:30,810 --> 00:21:33,770
+然后这里又出现一个交易机会，对吧？
+Then you got another trade opportunity right here, okay?
+
+366
+00:21:33,810 --> 00:21:37,190
+绿色K线，绿色K线。这根K线的控制点比之前的高点还高。
+Green candle, green candle. This point of control is higher than the high here.
+
+367
+00:21:37,830 --> 00:21:41,410
+下一根K线上涨，我们又回到了高位，知道吧？
+Next bar goes up and we're back up, you know?
+
+368
+00:21:41,430 --> 00:21:42,483
+不管怎样，如果你
+So whatever, if you
+
+369
+00:21:42,483 --> 00:21:43,799
+做了这笔交易，你知道，
+took this trade, you know,
+
+370
+00:21:43,799 --> 00:21:45,115
+然后亏损了，
+and you had a loss,
+
+371
+00:21:45,115 --> 00:21:47,748
+好的，下一笔交易就能把钱赚回来。
+okay, you got your money back on the next trade.
+
+372
+00:21:49,610 --> 00:21:51,410
+Paris开盘控制点，就在这里。
+Parish open point of control, right here.
+
+373
+00:21:52,650 --> 00:21:57,190
+在哪里？好的，再来看，这是一根十字星K线，对吧？
+Where is it? Okay, again, this is a doji candle, okay?
+
+374
+00:21:57,290 --> 00:22:06,310
+通常我会忽略这根K线，但其实，你知道，机会就在这根K线里。
+So generally I would just ignore this candle, but really, you know, is the opportunity right here in this bar.
+
+375
+00:22:06,530 --> 00:22:12,610
+下一根K线在内部运行，但信号出现在两根K线之后。
+Next bar goes inside, but it happened two bars later or the second bar after the signal.
+
+376
+00:22:13,030 --> 00:22:16,310
+你做空的时机是突破这根K线的低点时，对吧？
+Where you're going to get short is once you take out the low of this bar, right?
+
+377
+00:22:16,310 --> 00:22:17,742
+同样，你知道，如果
+Again, you know, if
+
+378
+00:22:17,742 --> 00:22:19,890
+你跟过我，看过我
+you've followed me, you've seen my
+
+379
+00:22:19,890 --> 00:22:22,754
+其他课程，你知道我的入场策略，
+other courses, you know that my trade entry
+
+380
+00:22:22,754 --> 00:22:27,408
+必须在信号K线后两根K线内移动，对吧？
+is, it's got to move within two bars after the signal bar, okay?
+
+381
+00:22:27,410 --> 00:22:29,189
+然后你在这根K线里得到做空信号，
+And you get your signal right
+
+382
+00:22:29,189 --> 00:22:30,968
+知道吧，然后它
+here in this bar to get
+
+383
+00:22:30,968 --> 00:22:32,747
+从37.5一路跌到，你知道，32。
+short, you know, and then it
+
+384
+00:22:32,747 --> 00:22:35,415
+几乎在一根K线内就下跌了4个点。
+drops from 37.5 all the way down to, you know, 32.
+
+385
+00:22:36,630 --> 00:22:40,690
+但你是从37.3或38左右开始做空的。
+Almost a quick four-point move in one bar in this bar.
+
+386
+00:22:40,690 --> 00:22:46,070
+现在，失衡重新加载，对吧？这就是失衡水平重新加载的情况。
+But you're short from, you know, over in here, 37.3 quarters, 38.
+
+387
+00:22:48,650 --> 00:22:56,090
+想象一下，市场来了一个大单，对吧？
+Now, the imbalance reload, okay? And what this is, it's when levels of imbalances are reloaded.
+
+388
+00:22:56,210 --> 00:22:58,510
+我在第一模块讲过这个，对吧？机构交易部分。
+So imagine a big order coming to the market, right?
+
+389
+00:22:58,570 --> 00:23:02,130
+它不会一次性全部成交，对吧？
+I talked about this in the first module, right? The institutional trading part.
+
+390
+00:23:02,790 --> 00:23:04,770
+不会一次全部成交，对吧？
+It's not going to get filled all at once, right?
+
+391
+00:23:04,770 --> 00:23:09,110
+它会随着时间或成交量分批执行，取决于他们选择的执行方式。
+It's going to be spread out over time or volume traded, depending on the way they're executing it.
+
+392
+00:23:09,590 --> 00:23:13,990
+所以在多根K线上同一价位看到买入失衡，说明在持续加仓。
+So to see buying imbalances at the same level over several bars shows the reload.
+
+393
+00:23:13,990 --> 00:23:20,430
+或者在多根K线上同一价位看到卖出失衡，说明在持续加仓卖出，对吧？
+Or selling imbalances at the same level over several bars shows a selling imbalance reload, okay?
+
+394
+00:23:21,610 --> 00:23:25,830
+这意味着什么呢？这非常直观，在足迹图上很容易发现。
+And what that means, it's very visual. It's very easy to spot on a footprint chart.
+
+395
+00:23:26,450 --> 00:23:32,410
+绿色K线，绿色K线，同一价位的买入失衡，买入失衡。
+You have a green bar, green bar. Buying imbalances, buying imbalances at the same level.
+
+396
+00:23:32,810 --> 00:23:35,590
+绿色K线，绿色K线，同一价位的买入失衡，买入失衡。
+Green bar, green bar. Buying imbalances, buying imbalances at the same level.
+
+397
+00:23:36,070 --> 00:23:36,930
+市场上涨了。
+Market went up.
+
+398
+00:23:37,590 --> 00:23:40,530
+这种激进买入暂停了，知道吧，退了一步。
+That aggressive buying pulled off, you know, took a step back.
+
+399
+00:23:41,290 --> 00:23:46,430
+算法暂停后又重新介入，在同一价位又出现激进买入，就像这里。
+Algo paused, came back in. Aggressive buying coming in at the same level, just like here.
+
+400
+00:23:47,150 --> 00:23:47,850
+市场又上涨了。
+Market went up.
+
+401
+00:23:48,670 --> 00:23:49,254
+激进买入，
+Aggressive buying,
+
+402
+00:23:49,254 --> 00:23:50,714
+你知道，他们，我不是说
+you know, they, I don't
+
+403
+00:23:50,714 --> 00:23:52,759
+关闭了它，但你知道，
+say turned it off, but, you know,
+
+404
+00:23:52,759 --> 00:23:56,849
+执行算法足够聪明，知道‘嘿，这在推动市场’。
+the execution algo is smart enough to know that, hey, it's moving this market.
+
+405
+00:23:56,950 --> 00:23:59,170
+然后它稍微退一步，然后又立刻回到原来价位。
+Then it backs off a little bit. Then it comes right back up.
+
+406
+00:23:59,250 --> 00:24:02,830
+又开始上涨，对吧？然后继续一路推高。
+It starts back up again, right? And just keeps working its way up.
+
+407
+00:24:05,540 --> 00:24:10,980
+这里、这里、这里、这里都有卖出失衡。
+Selling imbalance here, here, here, here.
+
+408
+00:24:11,200 --> 00:24:13,847
+那我是否需要连续两根
+Now, do I need to have two
+
+409
+00:24:13,847 --> 00:24:16,116
+同色的K线呢？
+consecutive candles of the same color?
+
+410
+00:24:16,116 --> 00:24:19,519
+我是说，两根绿色，绿色，或者两根红色，红色？
+I mean, two green, green, or two red, red?
+
+411
+00:24:21,530 --> 00:24:22,930
+我对这点有点矛盾。
+I'm kind of mixed on this.
+
+412
+00:24:22,930 --> 00:24:25,630
+其实我真正寻找的是这些
+Really, what I'm looking for is those
+
+413
+00:24:25,630 --> 00:24:27,559
+失衡，方向性失衡，
+imbalances, directional imbalances, either buying
+
+414
+00:24:27,559 --> 00:24:29,488
+不管是买入失衡还是卖出失衡，
+imbalances or selling imbalances, spread
+
+415
+00:24:29,488 --> 00:24:32,188
+分布在几根K线上，对吧？
+out over a couple of bars, okay?
+
+416
+00:24:32,270 --> 00:24:33,914
+所以如果我在
+So if I see it in,
+
+417
+00:24:33,914 --> 00:24:35,558
+十字星K线里看到，这种开盘价和收盘价相同的K线，
+you know, a doji candle, sort
+
+418
+00:24:35,558 --> 00:24:39,669
+我也接受。
+of a candle that opens and closes at the same price, I'm fine with it.
+
+419
+00:24:39,670 --> 00:24:45,990
+我也接受卖出失衡，因为我知道这里买盘很强。
+And I'm kind of fine with the selling imbalances, because I know that there's strong selling into this bid here.
+
+420
+00:24:48,150 --> 00:24:52,610
+然后市场在同一价位开盘，我仍然看到这个失衡，101对15。
+And then this market opens up at the same level, and I still got this imbalance, 101 against 15.
+
+421
+00:24:52,710 --> 00:24:56,570
+但我知道这次，最终，主动卖家控制了市场。
+But I know that this time, finally, the aggressive sellers took control of the market.
+
+422
+00:24:56,830 --> 00:25:00,990
+但接下来这根K线，它没再下跌，所以我不考虑做空。
+But again, in this bar, right afterwards, it doesn't go any lower, so I'm not looking to get short.
+
+423
+00:25:01,410 --> 00:25:04,750
+这根K线的最低点，我清楚就在这里。
+This one, again, I know the low of this bar is right here.
+
+424
+00:25:04,750 --> 00:25:06,270
+我就下一个卖出
+I just drop in a sell
+
+425
+00:25:06,270 --> 00:25:07,536
+止损单，知道吧，一个Tick
+stop, you know, a tick
+
+426
+00:25:07,536 --> 00:25:10,829
+低一点，两个Tick低一点，然后让它跑下两根K线。
+lower, two ticks lower, and let it ride for the next two bars.
+
+427
+00:25:10,990 --> 00:25:13,068
+接下来这根K线，它交易
+And in the next bar, it trades
+
+428
+00:25:13,068 --> 00:25:14,552
+直接跌到那个位置，然后
+right down to it, then
+
+429
+00:25:14,552 --> 00:25:16,333
+立刻从，知道吧，
+immediately sells off from, you know,
+
+430
+00:25:16,333 --> 00:25:18,708
+0.4一路跌到90中期。
+0.4 all the way down to the mid-90s.
+
+431
+00:25:21,760 --> 00:25:23,880
+看，这里有一个平衡的再次加仓。
+There you go, a balanced reload right here.
+
+432
+00:25:24,120 --> 00:25:26,400
+有卖出失衡，卖出失衡。
+You got selling imbalances, selling imbalances.
+
+433
+00:25:27,940 --> 00:25:30,280
+也有买入失衡，买入失衡。
+And you got buying imbalances, buying imbalances.
+
+434
+00:25:30,580 --> 00:25:31,360
+市场上涨了。
+Market went up.
+
+435
+00:25:32,820 --> 00:25:34,113
+这里有买入失衡
+And here you got buying imbalances
+
+436
+00:25:34,113 --> 00:25:35,406
+接着又是买入失衡，但
+followed by a buying imbalances, but
+
+437
+00:25:35,406 --> 00:25:36,483
+这次有点
+this time it's sort of
+
+438
+00:25:36,483 --> 00:25:38,638
+相反，是绿色K线后面跟着红色K线。
+the opposite, it's the green candle than the red candle.
+
+439
+00:25:39,280 --> 00:25:41,800
+我不会特意说
+I wouldn't go out of my way to
+
+440
+00:25:41,800 --> 00:25:43,690
+这是供给进入市场，但，你知道，其实我
+say that's supply coming into the
+
+441
+00:25:43,690 --> 00:25:45,580
+在找的是跟随第二根K线的方向。
+market, but, you know, really what
+
+442
+00:25:45,580 --> 00:25:49,360
+但第二根K线，我会找红色K线的卖出失衡或绿色K线的买入失衡。
+I'm looking for is to follow the direction of the second candle.
+
+443
+00:25:50,840 --> 00:25:57,860
+但第二根K线，我会寻找红色K线的卖出失衡 或绿色K线的买入失衡。
+But second candle, I'll be looking for the selling imbalances for red candles or buying imbalances for green candles.
+
+444
+00:25:59,840 --> 00:26:01,520
+卖出失衡，卖出失衡。
+Here, it's just littered with them, right?
+
+445
+00:26:03,660 --> 00:26:04,900
+好的，它没再下跌。我会考虑在这里做空。但没发生。
+Selling imbalances, selling imbalances.
+
+446
+00:26:05,020 --> 00:26:08,400
+然后你有买入失衡，买入失衡，对吧？
+Okay, it doesn't go any further. I'd be looking to get short down here. But it doesn't happen.
+
+447
+00:26:09,200 --> 00:26:13,200
+这里买入失衡，这里买入失衡。
+Then you got the buying imbalances, the buying imbalances, right?
+
+448
+00:26:13,280 --> 00:26:15,460
+所以，我是说，我甚至可以把这个移到下面，对吧？因为这里有75，537，34，103。这里有283，518，对吧？
+Buying imbalances here, buying imbalances here.
+
+449
+00:26:16,200 --> 00:26:26,760
+它在再次加仓，对吧？执行算法有点在同一价位再次加仓其主动性，对吧？
+So, I mean, I could even move this one down here, right? Because you got 75, 537, 34, 103. Here you got 283, 518, right?
+
+450
+00:26:27,240 --> 00:26:35,500
+它在重新加载，对吧？ 执行算法在某种程度上 在同一价位重新加载其激进性，对吧？
+It's reloading, right? The execution alga is sort of reloading its aggressiveness at the same level, right?
+
+451
+00:26:35,500 --> 00:26:37,480
+它并没有强行推动市场。
+It's just not bullying its way through the market.
+
+452
+00:26:37,480 --> 00:26:43,160
+但我必须理解，你知道吗，现在市场的交易方式，全都是大单。
+But I just got to understand, you know, the way the market's trading now, it's all, you know, big orders.
+
+453
+00:26:43,660 --> 00:26:47,940
+这不是有人在电脑前手动交易，你知道吗，通常不是。
+It's not someone tapping away at the computer, you know, manually trading it generally.
+
+454
+00:26:48,100 --> 00:26:51,940
+我是说，这仍然会发生，但这真的是一种正在消失的技艺。
+I mean, it still happens, but it's really a dying art.
+
+455
+00:26:51,940 --> 00:26:59,400
+现在全都是，你知道吗，进场后执行算法执行，因为它是这么被设计的，对吧？
+Now it's all, you know, it goes in and the execution alga executes it because that's how it's taught, right?
+
+456
+00:26:59,480 --> 00:27:06,740
+别，好的，买入后，暂停，让市场回落，再次变得激进，对吧？
+Don't, okay, buy it up, pause, let the market come back, be aggressive again, right?
+
+457
+00:27:06,740 --> 00:27:11,146
+你不想一直激进，激进，激进，
+You don't just want to be aggressive, be aggressive, be
+
+458
+00:27:11,146 --> 00:27:14,671
+激进，激进，然后回撤。让市场
+aggressive, be aggressive, then pull back. Let the
+
+459
+00:27:14,671 --> 00:27:19,959
+喘口气，回落。然后你可以再次变得激进，好的？
+market breathe, come back. Then you can start being aggressive again, okay?
+
+460
+00:27:20,060 --> 00:27:21,960
+那我们来看最后一个，对吧？
+So let's take a look at the last one, right?
+
+461
+00:27:22,020 --> 00:27:26,160
+这是交易设置7，我称之为被动鲸鱼。
+This is trade setup number seven. That's what I call the passive whales.
+
+462
+00:27:26,420 --> 00:27:29,500
+被动交易者，我们知道，为市场提供流动性，对吧？
+And passive traders, we know, provide liquidity to the market, right?
+
+463
+00:27:29,560 --> 00:27:31,020
+他们在买价挂单，在卖价挂单。
+They work bids, they work offers.
+
+464
+00:27:31,440 --> 00:27:37,040
+激进交易者从市场中拿走流动性，因为他们买入卖盘或打掉买价。
+Aggressive traders take that liquidity out of the market because they buy the offer or they hit the bid.
+
+465
+00:27:37,600 --> 00:27:40,120
+现在有时候大额被动订单会吸收交易。
+Now there are times when big passive orders absorb the trade.
+
+466
+00:27:40,260 --> 00:27:44,620
+找到这些交易者的最佳方式，或者说，是通过Delta足迹图，对吧？
+The best way to find these traders, rather, are through a delta footprint, right?
+
+467
+00:27:44,620 --> 00:27:48,742
+价格处的Delta，你具体要找的是大额Delta
+The delta at price, what you're looking for specifically is big delta
+
+468
+00:27:48,742 --> 00:27:52,864
+在绿色K线的买价侧，这表示吸收支撑，
+at price on the bid side of a green candle, which shows
+
+469
+00:27:52,864 --> 00:28:00,078
+或者大额Delta在价格处，或者说，在红色K线的卖价侧，这是吸收阻力。
+absorption support, or big delta at price, or, sorry, on the offer side of a red candle, which is absorption resistance.
+
+470
+00:28:00,980 --> 00:28:02,760
+这是市场自发产生的信息。
+This is market-generated information.
+
+471
+00:28:03,260 --> 00:28:06,000
+我所说的大，是指那种一眼就能看出来的大，好吗？
+And by big, I mean knock you over the head big, okay?
+
+472
+00:28:06,000 --> 00:28:09,181
+我不是说，哦，你知道吗，
+I'm not talking about, oh, you know,
+
+473
+00:28:09,181 --> 00:28:13,271
+Delta在250，你知道吗，负Delta，然后，你知道吗，
+it's 250 on the, you know, delta where, you know,
+
+474
+00:28:13,271 --> 00:28:17,815
+在同一根K线里，有个正Delta，比如220。
+a negative delta, then, you know, there's in the same
+
+475
+00:28:17,815 --> 00:28:21,450
+这根K线，Delta是正220，知道吧。
+bar, there's a positive delta of, you know, 220.
+
+476
+00:28:22,740 --> 00:28:24,764
+得像-300，你知道吗，负Delta，而K线里
+It would have to be like minus
+
+477
+00:28:24,764 --> 00:28:26,788
+另一根是负Delta 300，知道吧，其他地方也有
+300, you know, a negative delta, and elsewhere
+
+478
+00:28:26,788 --> 00:28:29,680
+最大的正Delta只有80，好吗？
+in the bar, the biggest positive delta is like 80, okay?
+
+479
+00:28:30,260 --> 00:28:35,000
+比如这里，大额负Delta-332。
+So, for example, here, big negative delta minus 332.
+
+480
+00:28:35,220 --> 00:28:41,520
+现在这个大额负Delta在绝对值上很大，对吧？
+Now this big negative delta is big in the absolute terms, right?
+
+481
+00:28:41,660 --> 00:28:51,560
+其他最大的Delta，这里是271，这里是234、233，知道吧，这里是-496，远在哪里，对吧？但其他都是244、281。
+Your other biggest deltas, here's 271, here's 234, 233, you know, here's minus 496, way over here, right? But everything else, 244, 281.
+
+482
+00:28:52,240 --> 00:28:54,080
+这会让你
+This is, knock you over the
+
+483
+00:28:54,080 --> 00:28:56,533
+目瞪口呆，大，知道吧，在其他最大的
+head, big, you know, in the other biggest
+
+484
+00:28:56,533 --> 00:28:58,986
+Delta中，这根K线里只有64，只有54。
+deltas in this bar, it's just 64, it's just 54.
+
+485
+00:29:00,000 --> 00:29:04,840
+现在，再次强调，这是价格上的Delta，不是实际成交量。
+Now, again, this is delta at price, it's not the actual volume.
+
+486
+00:29:05,100 --> 00:29:06,815
+所以，可能是，知道吧，
+So, it could be, you know,
+
+487
+00:29:06,815 --> 00:29:08,816
+这可能是632，而这可能是3，
+this is probably 632, and this is three,
+
+488
+00:29:08,816 --> 00:29:11,675
+知道吧，如果看买价和卖价的
+you know, if this is looking at a bid ask
+
+489
+00:29:11,675 --> 00:29:16,535
+足迹图，这可能是-632，而这可能是300。好的，差值就是-332。
+footprint, this would be like minus 632, and this would be 300. Okay, and that's the difference of minus 332.
+
+490
+00:29:18,620 --> 00:29:25,260
+在绿色上涨K线上，必须在买盘一侧。在红色下跌K线上，必须在卖盘一侧，对吧？
+And on green candles, it's got to be on the bid side. On red candles, it'd have to be on the offer side, right?
+
+491
+00:29:25,260 --> 00:29:26,555
+所以，这个309很大，但
+So, this 309 is big, but
+
+492
+00:29:26,555 --> 00:29:30,960
+它在卖盘一侧。这正是你预期的位置，在绿色上涨K线上。
+it's on the offer side. That's where you'd expect it to be, on a green up candle.
+
+493
+00:29:31,560 --> 00:29:35,000
+当它在买盘一侧时，这告诉我这是被动方，对吧？
+When it's on the bid side, that's telling me that's the passive side, right?
+
+494
+00:29:35,080 --> 00:29:38,909
+我有一根绿色K线，当你有一根绿色K线时，
+I have a green, when you have a green candle,
+
+495
+00:29:38,909 --> 00:29:45,419
+并且它在买盘交易，对吧，在左侧，这是被卖给被动买家。
+and it trades on the bid, right, on the left side, that's being sold into passive buyers.
+
+496
+00:29:45,780 --> 00:29:48,515
+所以，尽管，知道吧，你有
+So, even though it's, you know, you got
+
+497
+00:29:48,515 --> 00:29:51,934
+强烈的主动卖盘冲击那个买盘，但事实上
+strong aggressive selling into that bid there, the fact that
+
+498
+00:29:51,934 --> 00:29:59,798
+它出现在这里，基本上告诉我，知道吧，这里的买盘比主动卖盘更强，好吧？
+it's appearing here is basically, it's telling me that, you know, the bid that was here was stronger than the aggressive selling, okay?
+
+499
+00:30:00,320 --> 00:30:03,000
+通常在红色下跌K线上，卖盘一侧会有大Delta。
+I have normally a big delta on the offer side in a red candle.
+
+500
+00:30:04,260 --> 00:30:06,080
+332，对吧？
+332, right?
+
+501
+00:30:06,140 --> 00:30:10,840
+而买盘一侧最大的成交量只有-111，-111。这里是-541。
+And the biggest volume on the bid side is just minus 111, minus 111. Here's minus 541.
+
+502
+00:30:12,180 --> 00:30:13,860
+买盘一侧最大的是-250。
+Biggest on the bid side, minus 250.
+
+503
+00:30:14,660 --> 00:30:17,100
+即使是这个280，如果单独存在的话也是很大的。
+Even this 280 would be big if it was by itself.
+
+504
+00:30:17,580 --> 00:30:18,520
+你可以看到这里的成交量。
+You can see the volumes here.
+
+505
+00:30:18,580 --> 00:30:22,220
+这是-311，但它在绿色K线的卖盘一侧。这就是你预期的位置。
+It's minus 311, but it's on the offer side of the green candle. That's where you expect it to be.
+
+506
+00:30:22,500 --> 00:30:24,620
+这就是流动性提供者所在的位置。
+That's where the liquidity providers sit.
+
+507
+00:30:24,700 --> 00:30:31,960
+他们位于绿色K线的卖盘一侧，或者红色K线的买盘一侧。
+They sit on the offer of, you know, green candles, or they sit on the bid side of red candles.
+
+508
+00:30:32,280 --> 00:30:35,160
+比如这里是1030，1030。
+So, like here is 1,030, 1,030.
+
+509
+00:30:35,160 --> 00:30:37,950
+但，再次强调，我未必会
+But, again, I wouldn't be looking necessarily to
+
+510
+00:30:37,950 --> 00:30:40,740
+在这里做空
+get short off of this way down here
+
+511
+00:30:40,740 --> 00:30:43,181
+在市场从105下跌到95之后。
+after the market's moved from 05 down to 95.
+
+512
+00:30:44,620 --> 00:30:46,280
+你要更早寻找这些信号。
+You're looking for those signs earlier.
+
+513
+00:30:46,460 --> 00:30:48,720
+而这里就是你的信号，这个332。
+And this is your sign right here, this 332.
+
+514
+00:30:49,360 --> 00:30:52,280
+即使你迟了，这个541也行，对吧？
+Or even if you're late, this 541, okay?
+
+515
+00:30:54,900 --> 00:31:00,140
+这里，绿色K线。我的意思是，这个-331，你可能觉得很大。
+Here, green candle. I mean, this minus 331, you know, you might consider that big.
+
+516
+00:31:00,340 --> 00:31:04,240
+是的，我会觉得很大。但这个显然更大。
+Yeah, I would consider it big. But this one, obviously, is much bigger.
+
+517
+00:31:04,340 --> 00:31:10,120
+甚至这里还有一个，-571。所以，你能看到-571、-438、-331。
+And you even got one here, minus 571. So, you can see the minus 571, minus 438, the minus 331.
+
+518
+00:31:10,200 --> 00:31:11,260
+所以，这里其实有3个。
+So, you actually have 3 in here.
+
+519
+00:31:11,660 --> 00:31:12,500
+现在，你会注意到这个。
+Now, you'll notice this.
+
+520
+00:31:12,560 --> 00:31:14,420
+人们会问，那这个340呢？算大吗？
+People say, well, what about this 340? Is it big?
+
+521
+00:31:14,500 --> 00:31:17,560
+嗯，它不是K线里最大的，因为还有644。
+Well, it's not the biggest in the candle because you've got 644.
+
+522
+00:31:18,380 --> 00:31:19,620
+这里，是398。
+Here, well, it's a 398.
+
+523
+00:31:19,700 --> 00:31:21,317
+这里有465、325。
+Well, you've got 465, 325. Even
+
+524
+00:31:21,317 --> 00:31:24,147
+即使这个465不存在，如果我
+if this 465 was not there, if I
+
+525
+00:31:24,147 --> 00:31:28,998
+只有-398和+325，我也会觉得这很正常。
+had the minus 398 and the positive 325, I would consider this just normal.
+
+526
+00:31:32,000 --> 00:31:32,800
+好的。
+All right.
+
+527
+00:31:32,980 --> 00:31:36,940
+现在，抱歉，这里的这个不该在这里。它应该在这里。
+Now, sorry, this one here shouldn't be here. It should be down here.
+
+528
+00:31:37,760 --> 00:31:40,080
+因为438，你知道，然后还有4。
+Because the 438, you know, and then you got 4.
+
+529
+00:31:41,800 --> 00:31:43,260
+其实，我之前有放在这里吗？
+Actually, did I have that there?
+
+530
+00:31:43,340 --> 00:31:44,400
+我不确定是不是那个。
+I wasn't sure if it was that one.
+
+531
+00:31:44,520 --> 00:31:48,820
+我应该关注这个。438、442。它很接近。
+I should have been on this one. 438, 442. It goes close.
+
+532
+00:31:48,920 --> 00:31:52,560
+但这里是-571，抱歉，还有103。
+But here, it's minus 571, minus, sorry, and 103.
+
+533
+00:31:52,560 --> 00:32:01,220
+我的意思是，这个-571，加上103、89，就是200，再加50、250，你知道，260。
+I mean, this minus 571, you add up 103, 89, that's 200, plus 50, 250, you know, 260.
+
+534
+00:32:01,480 --> 00:32:04,288
+在卖盘这边是整个
+On the offer side is the delta for the whole
+
+535
+00:32:04,288 --> 00:32:08,219
+K线的Delta，但在买盘这边是-571。所以，这就是强信号。
+bar, but on the bid side, it's minus 571. So, that's your strong one there.
+
+536
+00:32:11,320 --> 00:32:19,340
+再强调一下，438对442，这很正常。好的。强信号是这个-571。
+Again, just to reiterate this, 438 versus 442, that's just normal. Okay. The strong one is this minus 571.
+
+537
+00:32:19,580 --> 00:32:24,280
+还有这里，这个331，我也会觉得很强，对吧？它在买盘这边。
+And again, even here, this 331, I'd consider strong, right? It's on the bid side.
+
+538
+00:32:24,500 --> 00:32:28,140
+如果这个331在卖盘这边，对我来说完全正常。
+If this 331 is on the offer side, that would be completely normal to me.
+
+539
+00:32:29,160 --> 00:32:30,680
+但这个也很强。
+But this is strong as well.
+
+540
+00:32:31,100 --> 00:32:33,320
+但显然，这个更清楚。
+But obviously, this is much more clearer.
+
+541
+00:32:39,240 --> 00:32:43,900
+在卖盘一侧，显然，2093 很大。好的。
+On the offer side, obviously, 2093 is huge. Okay.
+
+542
+00:32:44,340 --> 00:32:48,060
+现在，这个 2576，是在绿色上涨K线的卖盘一侧，对吧？
+Now, this 2576, it's on the offer side of a green candle, right?
+
+543
+00:32:48,060 --> 00:32:54,600
+我预期在卖盘一侧会看到更大的成交量，当市场上涨时，人们提供流动性。
+I expect to see heavier volumes on the offer side, people providing liquidity as the market is going up.
+
+544
+00:32:54,840 --> 00:32:58,126
+但当市场下跌，人们
+But as the market is going down and people are
+
+545
+00:32:58,126 --> 00:33:02,399
+提供流动性出去，这对我来说是市场吸收的信号。
+offering liquidity out, that's a sign to me of absorption in the market.
+
+546
+00:33:02,700 --> 00:33:05,840
+一个大卖家在市场中提供供给，甚至在这里也是。
+A big seller offering supply in the market, even here.
+
+547
+00:33:06,880 --> 00:33:08,140
+326，你知道的，这很强。
+326, you know, it's strong.
+
+548
+00:33:08,440 --> 00:33:09,380
+这是 293。
+It's 293.
+
+549
+00:33:09,380 --> 00:33:11,560
+我不确定你是否真的会考虑这个。
+I don't know if you'd really consider that.
+
+550
+00:33:11,560 --> 00:33:16,260
+我的意思是，它处理方式不同，你知道的，293 和 326。
+I mean, it handles different, you know, 293 versus 326.
+
+551
+00:33:16,380 --> 00:33:23,180
+但相对来说，大约多了 30 多手合约，对吧？
+But relatively speaking, it's about, you know, about 30-some contracts more, right?
+
+552
+00:33:23,180 --> 00:33:27,620
+但显然，这个是这里的 278 的 9 倍多。
+But obviously, this one is, you know, nine times more than 278 here.
+
+553
+00:33:28,300 --> 00:33:29,860
+好的。所以这个很明显，对吧？
+Okay. So that one's obvious, right?
+
+554
+00:33:29,860 --> 00:33:31,060
+这个是那个会重重打击你的。
+This is the one that hits you over the head.
+
+555
+00:33:31,220 --> 00:33:33,260
+这个不会重重打击你。
+This one doesn't hit you over the head here.
+
+556
+00:33:33,260 --> 00:33:46,060
+因此，订单流分析的核心在于阅读和解读数据点：价格、成交量、Delta、市场情绪。
+So at its core, order flow analysis comes down to reading and interpreting data points, price, volume, delta, sentiment.
+
+557
+00:33:46,420 --> 00:33:48,524
+一开始可能看起来复杂，但
+It may seem complex initially, but
+
+558
+00:33:48,524 --> 00:33:51,680
+你越熟练于分析从市场中流出的数据，
+the more fluent you become in analyzing the data
+
+559
+00:33:51,680 --> 00:33:55,186
+阅读订单流
+flow streaming from the markets, the easier reading order flow
+
+560
+00:33:55,186 --> 00:33:56,939
+和理解市场走势就变得越容易。
+and understanding market movements becomes.
+
+561
+00:33:56,940 --> 00:33:59,040
+这就像学习任何一种新语言。
+It's like learning any new language.
+
+562
+00:33:59,220 --> 00:34:03,480
+随着时间和实践，订单流会变得舒适且直观。
+Order flow starts feeling comfortable and intuitive over time and practice.
+
+563
+00:34:04,360 --> 00:34:08,520
+当你理解了这些数据流，你就能掌握价格驱动因素。
+When you make sense of this data flow, you grasp what drives prices.
+
+564
+00:34:09,219 --> 00:34:15,139
+噪音会退到背景，你的注意力会聚焦在真正指向机会的信号上。
+The noise fades to the background and your focus zones in on the true signals that pinpoint opportunity.
+
+565
+00:34:16,100 --> 00:34:20,400
+内化这种数据流是任何交易者需要的最后一项技能。
+Internalizing this flow of data is the last skill any trader needs.
+
+566
+00:34:20,400 --> 00:34:24,780
+所以花时间去观察订单流，解码它，并获得流利性。
+So take the time to observe the order flow, decode it, and gain fluency.
+
+567
+00:34:25,260 --> 00:34:27,506
+市场会以
+The market will reveal itself to you in
+
+568
+00:34:27,506 --> 00:34:29,752
+全新的方式向你展现自己，
+new ways, and you'll trade on a whole
+
+569
+00:34:29,752 --> 00:34:32,279
+你会在一个全新的层次上交易，基于直接来自源头的信息。
+new level backed by information directly from the source.
+
+570
+00:34:32,560 --> 00:34:37,219
+市场，对吧？市场生成的信息就是订单流的全部内容。
+The market, right? Market-generated information is what order flow is all about.
+
+571
+00:34:38,520 --> 00:34:40,380
+所以第6模块就讲到这里。
+So this concludes Module 6.
+
+572
+00:34:40,760 --> 00:34:47,600
+在第7模块，我会讲无效市场，以及如何识别并交易它们，知道吧。
+In Module 7, I'll discuss inefficient markets and, you know, how to recognize them and trade them.
+
+573
+00:34:47,860 --> 00:34:49,940
+那下个模块见，大家。
+So I'll see you guys on the next module.
+
+574
+00:34:50,400 --> 00:34:52,760
+该动态与rugents及记者等相关。
+The motion is related to rugents and stuff like journalists.
+
+575
+00:34:52,860 --> 00:34:53,880
+该事件相关。
+The event is related.
+
+576
+00:34:53,880 --> 00:34:54,360
+该计划基本是Plutus的网站。
+The plan is basically website of plutus.
+
+577
+00:34:54,560 --> 00:34:54,620
+Inst两个Yoon先生。
+Inst� two- 윤 sirs.
+
+578
+00:34:54,620 --> 00:34:55,000
+人才墙在这里很容易找到。
+Wall of the talent is here easily.
+
+579
+00:34:55,000 --> 00:34:56,000
+我们用那些天的greners。
+Let's use those days greners.
+
+580
+00:34:56,060 --> 00:34:56,960
+我们只有当讲故事是闪电ora时。
+We're only days when storytelling is a lightningora.
+
+581
+00:34:56,960 --> 00:34:57,139
+Volus wibh在蔵。
+Volus wibh is at蔵.
+
+582
+00:34:57,400 --> 00:35:10,660
+所以Acc Osania是一个事件的实践。
+So acc Osania is a Practice of a event.
+
+583
+00:35:10,660 --> 00:35:11,160
+这真的是不是最高星评价？
+It really is the highest star giving?
+
+584
+00:35:11,400 --> 00:35:12,580
+该声音被称为shuttle shuttle hilos。
+The sound is called shuttle shuttle hilos.
+
+585
+00:35:12,580 --> 00:35:15,460
+这个raft只会mascara umbrella向上其他资源向你展示在地板。实践你的空间。
+This raft will only mascara umbrell up other resources to show to you in the floor. practicum your space.
+
+586
+00:35:15,460 --> 00:35:18,340
+Arou Sal今天是最高路径Mol Paula的光。危险。
+Arou Sal today is the highest path Mol Paula's light. Danger.
+
+587
+00:35:18,360 --> 00:35:19,720
+那ess在onài genus可以理解游戏调色板。
+��ئess that onài genus can make sense of gameplay palette.
+
+===== END AFTER_TRANSLATE =====

@@ -1,0 +1,962 @@
+===== AFTER_OPTIMIZE (192 entries) =====
+1
+00:00:02,000 --> 00:00:03,400
+欢迎来到本次模拟训练。
+So welcome to this drill session.
+
+2
+00:00:03,500 --> 00:00:07,200
+本次内容是拍卖不平衡的策略。
+This is for strategy for the auction imbalances.
+
+3
+00:00:08,400 --> 00:00:09,700
+希望你喜欢刚才的单元。
+I hope you've enjoyed that unit.
+
+4
+00:00:09,700 --> 00:00:14,000
+我认为拍卖不平衡是足迹图工具的精华部分。
+I think auction imbalances are a wonderful aspect of the footprint tool.
+
+5
+00:00:14,400 --> 00:00:17,846
+即使你不交易
+And even if you don't necessarily trade the
+
+6
+00:00:17,846 --> 00:00:21,292
+这个独立策略，即拍卖不平衡本身
+strategy, the standalone strategy, the actual auction imbalance
+
+7
+00:00:21,292 --> 00:00:25,599
+也能辅助你的其他策略。
+can really aid you in some of your other strategies.
+
+8
+00:00:25,700 --> 00:00:29,300
+我们直接进入足迹图工具。
+So let's just get straight onto the footprint.
+
+9
+00:00:29,700 --> 00:00:34,300
+可以看到成交量快速积累。这是Eurodollar的5分钟周期。
+What we can see, quite a build up in volume. This is the Eurodollar 5 minute rotation.
+
+10
+00:00:35,000 --> 00:00:41,900
+注意，我这里没用不平衡周期设置。你可以自行设置。
+Note I'm not using an imbalance rotation setting here. You can obviously set those.
+
+11
+00:00:42,500 --> 00:00:44,500
+这里会真正考验你
+So you're really going to be tested here
+
+12
+00:00:44,500 --> 00:00:46,250
+或者说你本会
+in terms of, or you would have
+
+13
+00:00:46,250 --> 00:00:48,500
+在识别这些不平衡区域时受到考验。
+been really tested in terms of identifying those imbalances.
+
+14
+00:00:48,500 --> 00:00:51,490
+但我们能立刻看到，
+But we can see straight away a
+
+15
+00:00:51,490 --> 00:00:57,899
+突破出现后，图表上留下第一个不平衡区域。
+bit of a break up comes and our first imbalance is left on the chart.
+
+16
+00:00:57,900 --> 00:00:59,800
+这是我们首先能观察到的，
+So that's the first thing we can
+
+17
+00:00:59,800 --> 00:01:01,700
+一个从60到65区间的小不平衡区域，
+see, a nice little imbalance from the
+
+18
+00:01:01,700 --> 00:01:05,500
+该区间几乎无成交。
+60s up to the 65s. You know, a real lack of trade taking place.
+
+19
+00:01:06,000 --> 00:01:13,600
+数据显示：14比15，8比24，3比47，41比74，26比107。
+We've got 14 by 15, 8 by 24, 3 by 47, 41 by 74, 26 by 107.
+
+20
+00:01:13,900 --> 00:01:17,000
+对角线上不平衡非常明显。
+You know, quite a lot of imbalance on the diagonals.
+
+21
+00:01:18,500 --> 00:01:23,200
+首先要明确：这本身不是我们的策略。
+The first thing we obviously noted is that this in its own is not our strategy.
+
+22
+00:01:23,800 --> 00:01:29,700
+我们的策略是等待周期回落，
+Our strategy is to wait for the rotation, let it come back and test ultimately that.
+
+23
+00:01:30,000 --> 00:01:33,400
+回测不平衡区域后再顺势而为。
+imbalance area before we get along with the trend.
+
+24
+00:01:33,400 --> 00:01:38,100
+现在要注意，成交量非常关键。
+Now, do note, obviously, we spoke quite important, you know, is the volume.
+
+25
+00:01:38,100 --> 00:01:46,200
+成交量是判断不平衡延续性及激进程度的关键指标，
+Volume is a real identifier in terms of continuation of the imbalance and how aggressive that continuation might be,
+
+26
+00:01:46,800 --> 00:01:49,066
+如果成交量低，
+where if we have low volume, there's
+
+27
+00:01:49,066 --> 00:01:53,599
+不平衡区域自行反转回补的概率会大幅提高。
+a much higher probability that the imbalance will reverse itself and fill itself out.
+
+28
+00:01:54,900 --> 00:02:02,000
+不过，这个突破的成交量极大，达2370手合约。
+That being said, we can straight away see that, you know, really, really dark volume on this breakup, 2,370 contracts.
+
+29
+00:02:02,900 --> 00:02:06,000
+说明市场意图非常强烈。
+So we could see there's a real intent in terms of the volume.
+
+30
+00:02:06,000 --> 00:02:08,800
+这是我们首先要观察的要点。
+And I think that's the first thing we need to observe.
+
+31
+00:02:09,100 --> 00:02:10,052
+高成交量，
+High volume, you
+
+32
+00:02:10,052 --> 00:02:12,273
+向上突破且出现拍卖不平衡，
+know, break to the upside with an
+
+33
+00:02:12,273 --> 00:02:16,399
+确实暗示可能会有小幅延伸。
+imbalance does suggest we've got the potential for a little bit of extension.
+
+34
+00:02:17,800 --> 00:02:20,166
+所以现在我们要找的是，
+So what we're looking for now, obviously,
+
+35
+00:02:20,166 --> 00:02:22,532
+第一个小小的订单吸收，
+is that first little bit of absorption
+
+36
+00:02:22,532 --> 00:02:24,898
+在对不平衡区域的回测中。
+on a retest of the ultimate imbalance.
+
+37
+00:02:24,900 --> 00:02:32,200
+现在，不平衡区域的起始位置，可以看到那里有3×51，然后是52×114。
+Now, the imbalance area starts, we can see obviously we've got a 3 by 51 there, and then we've got a 52 by 114.
+
+38
+00:02:32,200 --> 00:02:39,600
+根据你的设置，不平衡区域大约从118、62.5区域开始。
+So depending on your settings, we can see that imbalance starts somewhere around that 118, 62.5 area.
+
+39
+00:02:39,600 --> 00:02:43,100
+那我们回到下一个周期，看看情况。
+So let's get back to the next rotation, let's see what it looks like.
+
+40
+00:02:43,700 --> 00:02:46,600
+下一个周期到来了，看看会发生什么。
+So our next rotation comes in and let's see what happens.
+
+41
+00:02:46,700 --> 00:02:48,800
+现在我们要找的是回补，或者首先找
+Now we're looking for a fill or we're
+
+42
+00:02:48,800 --> 00:02:50,637
+首先寻找一点
+looking firstly for a little bit of
+
+43
+00:02:50,637 --> 00:02:52,999
+一点订单吸收，然后执行市价单。
+absorption and then we're going to execute a market.
+
+44
+00:02:53,000 --> 00:02:55,472
+再次注意，几乎在
+Now note again most of the time in
+
+45
+00:02:55,472 --> 00:02:57,635
+每一个我们讲过的策略中，
+almost every single one of the strategies
+
+46
+00:02:57,635 --> 00:02:59,798
+我总是倾向于
+we've dealt with I always sort of
+
+47
+00:03:00,000 --> 00:03:02,300
+让你们不要抢跑市场。
+prefer you to not preempt the market.
+
+48
+00:03:02,300 --> 00:03:06,800
+我倾向于让你们等待信号，等市场给出线索。
+I prefer you to wait for a signal, wait for the market to give you the clue.
+
+49
+00:03:06,900 --> 00:03:12,200
+这个策略的线索，就是等待大单前的订单吸收。
+Now, the clue in this strategy is to wait for the absorption ahead of the elephant.
+
+50
+00:03:12,200 --> 00:03:15,033
+所以我们寻找任何一种订单吸收，
+So we're looking for any kind of absorption
+
+51
+00:03:15,033 --> 00:03:16,803
+在62、62.5附近的
+around the 62, 62 and a half
+
+52
+00:03:16,803 --> 00:03:19,990
+标记，以便最终执行这个交易策略。
+marker for us to ultimately execute this trade strategy.
+
+53
+00:03:22,300 --> 00:03:27,600
+我们可以看到市场下跌，在之前的深色区域成交了一手。
+Okay, so we can see market comes down. It trades a one lot at that previous dark area.
+
+54
+00:03:27,700 --> 00:03:29,385
+现在我们可能会忍不住
+Now again, we might be tempted
+
+55
+00:03:29,385 --> 00:03:31,070
+在这里入场。我们可能
+to get in here. We might
+
+56
+00:03:31,070 --> 00:03:33,598
+会忍不住冲进去抓这个机会。
+be tempted to jump in and jump on that.
+
+57
+00:03:34,500 --> 00:03:40,000
+是的，这是关键因素。你必须在这个策略上保持纪律。
+And again, yes, this is one of the real factors. You have to be disciplined with this trade strategy.
+
+58
+00:03:40,000 --> 00:03:46,800
+你必须告诉自己：如果在这个价位入场，就放弃了两个价位。
+You've got to say to yourself, if you're jumping in at this price point, you're foregoing two prices.
+
+59
+00:03:46,900 --> 00:03:47,845
+在
+Okay, now again, in
+
+60
+00:03:47,845 --> 00:03:49,263
+长期来看，两个价位，
+the long run, two prices, or
+
+61
+00:03:49,263 --> 00:03:52,099
+短期内，两个Tick可能看似无关紧要。
+in the short run, two prices might not seem like a lot.
+
+62
+00:03:52,200 --> 00:03:55,500
+但长期来看，这两个Tick的累积效应是相同的。
+But in the long run, those two prices add up equally.
+
+63
+00:03:56,300 --> 00:04:00,300
+缺乏纪律，迟早会在某个时点反噬你。
+You know, the lack of discipline shown will come out and catch you at some point.
+
+64
+00:04:00,500 --> 00:04:01,732
+另外，别忘了，
+Okay, also don't forget,
+
+65
+00:04:01,732 --> 00:04:04,196
+如果你在收益上少赚了两个Tick，
+if you're taking two prices less in terms
+
+66
+00:04:04,196 --> 00:04:08,200
+意味着在风险上你多承担了两个Tick。
+of profit, it means you're taking two prices more in terms of risk.
+
+67
+00:04:08,500 --> 00:04:15,400
+所以实际上，万一出错，净影响是四个Tick的波动。
+So in effect, the net is actually a four-tick swing, you know, in the event that it does go wrong.
+
+68
+00:04:15,500 --> 00:04:19,400
+所以在考虑这个交易策略时，把这点算进去。
+So just factor that in when you're obviously considering this trade strategy.
+
+69
+00:04:19,800 --> 00:04:24,300
+好，我们把行情快进一点，来到那个点位。
+Okay, so let's just move the tape on a little bit forward. Let's get to that point.
+
+70
+00:04:25,400 --> 00:04:29,900
+突然，市场下跌后反弹，直接拉升至62.5。
+Okay, so bang, market comes down, it trades up, right, 62.5 straight.
+
+71
+00:04:30,000 --> 00:04:31,200
+成交9手。
+9 contracts trades.
+
+72
+00:04:31,500 --> 00:04:34,300
+又回落，成交19手。
+Comes back again. 19 contracts trades.
+
+73
+00:04:34,700 --> 00:04:35,800
+注意前方的价格表现。
+Note what it's doing in front.
+
+74
+00:04:36,100 --> 00:04:39,800
+注意这里出现大量订单吸收，抛压涌入。
+Okay, note how we're getting quite a little bit of absorption here. Quite a lot of selling coming in here.
+
+75
+00:04:40,100 --> 00:04:42,600
+我们看到订单吸收正在发生。
+So we're seeing the absorption taking place in the bird.
+
+76
+00:04:42,600 --> 00:04:45,900
+多头在加仓，价格在53.76。
+The reloading is taking place. 53.76.
+
+77
+00:04:46,300 --> 00:04:48,400
+多头乐意加仓。
+So the buyers are happy to be reloading.
+
+78
+00:04:48,900 --> 00:04:50,722
+现在我们要么已经成交，
+We've now looking or we've got
+
+79
+00:04:50,722 --> 00:04:52,544
+要么尝试
+our fill or we're trying to
+
+80
+00:04:52,544 --> 00:04:57,099
+在62.5买入并成交，或者直接吃进63。
+be a buyer of 62.5s which we filled there or we can lift the 63s.
+
+81
+00:04:57,500 --> 00:04:58,600
+但我们已经成交了。
+But we've now got our fill.
+
+82
+00:04:58,600 --> 00:05:01,278
+我们看到订单吸收发生在
+So we've seen the absorption taking place in
+
+83
+00:05:01,278 --> 00:05:03,286
+大单前方，
+front of the elephant and that's
+
+84
+00:05:03,286 --> 00:05:06,299
+这给了我们入场的信念和信心。
+given us the conviction and the confidence to enter.
+
+85
+00:05:06,800 --> 00:05:09,500
+再次注意订单吸收的持续性。
+Again, note the continuation of the absorption.
+
+86
+00:05:09,800 --> 00:05:16,200
+几乎没有买盘，抛压主要涌入62区间、62.5和63区域。
+No real buying taking place, mostly just selling into the 62s and halves and 63s.
+
+87
+00:05:16,700 --> 00:05:19,400
+好，这就是我们要关注的订单吸收。
+Okay, so this is the absorption we're looking out for.
+
+88
+00:05:19,900 --> 00:05:24,900
+这就是我们寻找的价格反应，用来启动交易的信号。
+This is the kind of price response, the signal we're looking for in order to initiate.
+
+89
+00:05:26,800 --> 00:05:29,826
+至于风险，正如我们所说，
+In terms of the risk, as we said,
+
+90
+00:05:29,826 --> 00:05:32,095
+我们总是把风险控制在
+we always keep our risk inside
+
+91
+00:05:32,095 --> 00:05:35,499
+在低成交量区域内，在不平衡区域内。
+of the low volume area, inside of the imbalance.
+
+92
+00:05:35,800 --> 00:05:36,800
+这才是真正的关键。
+That's the real key.
+
+93
+00:05:37,200 --> 00:05:40,240
+你不想在入场点位下方1个Tick就被止损出局，
+You don't want to be stopping out one
+
+94
+00:05:40,240 --> 00:05:43,280
+因为最终
+tick below ultimately where you got in because
+
+95
+00:05:43,280 --> 00:05:48,600
+整个区域从87.6一路向下。
+this whole area all the way from even down to the 87s by 6s.
+
+96
+00:05:48,700 --> 00:05:53,600
+所以从58区间一直到62区间，我们有一个不平衡。
+So from sort of 58s all the way up until 62s, we've got an imbalance.
+
+97
+00:05:53,700 --> 00:05:58,200
+对我来说，可能会在60左右设置止损。
+So for me, likely to put a stop probably in around that 60.
+
+98
+00:05:58,300 --> 00:06:00,200
+不希望看到那些整数点位成交。
+Don't really want to see those zeros trade.
+
+99
+00:06:01,600 --> 00:06:03,000
+所以我们止损设得非常紧。
+So we've got a really tight stop.
+
+100
+00:06:03,100 --> 00:06:10,600
+你可以看到几乎2个Tick在等待极值回测，如果不行，希望能进一步延伸。
+You can see almost two ticks looking for the retest of the extreme, if not, hopefully an extension as well.
+
+101
+00:06:10,700 --> 00:06:16,600
+所以这是一个非常好的开放式目标，配合一个非常严格的紧止损。
+So really good open-ended target here with a very, very managed tight stop.
+
+102
+00:06:17,100 --> 00:06:23,000
+好，现在注意：在第二个周期的一些指标中，Delta相当平坦。
+Okay, now note obviously... Some of the metrics on the second rotation, we can see the delta quite flat.
+
+103
+00:06:23,600 --> 00:06:28,600
+整个交易时段的Delta仍保持正Delta。
+We can also see the delta on the session still holding that positive delta.
+
+104
+00:06:29,100 --> 00:06:30,800
+好，下一个周期来了。
+Okay, next rotation comes in.
+
+105
+00:06:31,500 --> 00:06:35,200
+注意，现在能看到非常强烈的订单吸收。
+Note now you can see the absorption that took place quite strong.
+
+106
+00:06:35,300 --> 00:06:39,600
+好，那里的颜色动态很真实，深色阴影很明显。
+Okay, we can see the real color dynamic there, some nice dark shade colors there.
+
+107
+00:06:40,000 --> 00:06:42,300
+而最终，我们现在要找的是
+And ultimately, what we're looking for now is
+
+108
+00:06:42,300 --> 00:06:44,025
+一点推动力
+that little bit of a bit
+
+109
+00:06:44,025 --> 00:06:49,200
+进入市场，我们最终等到了，价格开始回升。
+to come into the market, which we eventually get, and we start to see the rotation back up.
+
+110
+00:06:49,800 --> 00:06:51,828
+好，这是第一个
+Okay, so this is the first
+
+111
+00:06:51,828 --> 00:06:53,856
+在实操练习中你处理过的、看到的
+then of the imbalances that you
+
+112
+00:06:53,856 --> 00:06:56,898
+买卖失衡。
+dealt with, that you saw within this practice example.
+
+113
+00:06:56,900 --> 00:06:59,424
+现在，这个买卖失衡案例的有趣之处在于，
+Now, what was interesting about this imbalance example,
+
+114
+00:06:59,424 --> 00:07:01,948
+我不喜欢用
+and the reason I don't like using the
+
+115
+00:07:01,948 --> 00:07:04,472
+完美案例的原因是，我不想
+picture perfect examples is because I don't want
+
+116
+00:07:04,472 --> 00:07:06,680
+给你一种假象，每个
+to give you this pretense that every
+
+117
+00:07:06,680 --> 00:07:08,888
+买卖失衡
+one of these is going to be
+
+118
+00:07:08,888 --> 00:07:11,096
+都会很简单，能立刻赚钱。
+straightforward and you make money straight away.
+
+119
+00:07:11,400 --> 00:07:13,100
+我从不想给人这种印象。
+I never wanted to come across like that.
+
+120
+00:07:13,600 --> 00:07:15,200
+波动确实会变化。
+The variances do change.
+
+121
+00:07:15,600 --> 00:07:18,552
+重点在于，当你浏览你的
+The important part is now as you're going through your
+
+122
+00:07:18,552 --> 00:07:20,913
+模板时，你应该已经注意到这个
+template, what you should have noticed about this
+
+123
+00:07:20,913 --> 00:07:22,389
+整个买卖失衡，我要快进来给你看,
+entire imbalance, and I'm going
+
+124
+00:07:22,389 --> 00:07:24,455
+快进来给你看,
+to fast forward it to show you,
+
+125
+00:07:24,455 --> 00:07:27,997
+你应该已经注意到这个买卖失衡经历了多个循环。
+you should have noted that this imbalance had a number of rotations.
+
+126
+00:07:28,400 --> 00:07:30,000
+好，那你想要做的是
+Okay, so what you want to do.
+
+127
+00:07:30,100 --> 00:07:32,437
+你想要去标记一下
+is you want to go and highlight well
+
+128
+00:07:32,437 --> 00:07:35,066
+通常买卖失衡可能有10分钟或两到
+normally imbalances they maybe have maybe 10 minutes or two
+
+129
+00:07:35,066 --> 00:07:37,403
+三个循环，然后它们要么在极端处延伸
+or three rotations and then they either extend
+
+130
+00:07:37,403 --> 00:07:38,863
+要么失败，好，所以你想要
+on the extreme or they
+
+131
+00:07:38,863 --> 00:07:40,907
+区分哪些是好的，哪些是坏的
+fail okay so you want to go
+
+132
+00:07:40,907 --> 00:07:44,704
+并识别哪些是好的，哪些是差的
+and identify what are the good ones versus what are the bad ones
+
+133
+00:07:45,300 --> 00:07:47,566
+我可以告诉你，这是一个非常
+I can tell you this was a very
+
+134
+00:07:47,566 --> 00:07:49,832
+缓慢的买卖失衡，好，非常罕见能看到
+slow imbalance okay it's very unusual to have
+
+135
+00:07:49,832 --> 00:07:52,098
+这么多循环后市场才
+seen this many rotations before the market then
+
+136
+00:07:52,098 --> 00:07:52,664
+延伸，好
+extended okay
+
+137
+00:07:52,664 --> 00:07:54,364
+我会继续往下看
+I'm going to keep going through
+
+138
+00:07:54,364 --> 00:07:56,347
+我们可以看到市场仍在
+it we can see the market keeps
+
+139
+00:07:56,347 --> 00:07:58,897
+守住这个买卖失衡的低端
+holding on to that lower end of that imbalance
+
+140
+00:07:59,400 --> 00:08:07,400
+并且不太愿意回补这个买卖失衡，最终我们看到市场确实为自己蓄力
+and not quite wanting to fill the imbalance and eventually we can see the market does prep itself ultimately
+
+141
+00:08:07,900 --> 00:08:09,921
+准备向上突破，所以再
+for a move higher so again
+
+142
+00:08:09,921 --> 00:08:12,615
+让我回退一下，注意
+let me just go back one sec note
+
+143
+00:08:12,615 --> 00:08:14,636
+可以数一下循环的次数
+that can count the number of
+
+144
+00:08:14,636 --> 00:08:20,699
+伙计们，这点很关键，我们有1、2、3、4、5、6、7、8个循环
+rotations guys this is quite crucial we've got one two three four five six seven eight rotations ultimately
+
+145
+00:08:21,200 --> 00:08:27,800
+然后市场才为向上突破蓄力，所以把这个因素纳入分析，好，如果欧元
+before the market then preps itself for the move higher so factor that into the analysis okay if the euro
+
+146
+00:08:28,200 --> 00:08:31,493
+如果你已经做过十个这样的例子，并且发现
+if you've done ten of these examples and you find that the
+
+147
+00:08:31,493 --> 00:08:33,688
+欧元倾向于在最多
+euro tends to extend after a maximum of
+
+148
+00:08:33,688 --> 00:08:35,883
+四个延伸后延展，而今天是八个，那么
+four extensions and today was eight well then
+
+149
+00:08:35,883 --> 00:08:39,999
+你可以为自己制定一个新规则，即如果市场还没有延伸
+you create a new rule for yourself which is that if the market hasn't extended
+
+150
+00:08:40,700 --> 00:08:42,400
+在
+you know by the time you
+
+151
+00:08:42,400 --> 00:08:44,666
+可能在四个周期后降低
+know potentially after four rotations to reduce the
+
+152
+00:08:44,666 --> 00:08:46,366
+风险，直接出场
+risk I simply just get out
+
+153
+00:08:46,366 --> 00:08:47,215
+那建立
+okay so create
+
+154
+00:08:47,215 --> 00:08:49,198
+一种基于规则的方法
+some sort of a rule based approach
+
+155
+00:08:49,198 --> 00:08:52,597
+这样你就能用观察到的信息为自己服务
+so that you're using the information that you're observing to your advantage
+
+156
+00:08:53,700 --> 00:08:58,300
+好，现在看第二个买卖失衡
+Okay, what we're going to see now is then the second of our imbalances.
+
+157
+00:08:58,500 --> 00:09:01,100
+确实出现了延伸，看那里的延伸
+We do get our extension. See the extension there.
+
+158
+00:09:01,500 --> 00:09:05,000
+注意市场突破了之前的窄幅区间
+Note the market now breaks out of that little tight range it's been in.
+
+159
+00:09:05,300 --> 00:09:07,175
+然后出现
+And we then get a number
+
+160
+00:09:07,175 --> 00:09:09,050
+一些剩余的买卖失衡。所以
+of imbalances left. So we can
+
+161
+00:09:09,050 --> 00:09:12,800
+下方出现一大堆零，还有零和二
+see a whole bunch of zeros below. Another zero and a two.
+
+162
+00:09:12,900 --> 00:09:15,900
+强劲的对角线买入买卖失衡出现
+Real strong diagonal buy imbalances coming in.
+
+163
+00:09:16,500 --> 00:09:20,700
+又一个零在37，8在40
+Again, another 0 by 37, 8 by 40.
+
+164
+00:09:21,700 --> 00:09:24,681
+所以一系列买卖失衡从
+So a number of imbalances starting all the
+
+165
+00:09:24,681 --> 00:09:29,526
+64区间一路延伸到70区域左右
+way down at 64s, all the way up until the sort of 70 area.
+
+166
+00:09:29,900 --> 00:09:32,300
+这就是买卖失衡的价位
+So that's the level of our imbalances.
+
+167
+00:09:33,300 --> 00:09:38,500
+现在，如果你仍做多，别出场，市场还没给你出场理由
+Now again, if you're still long, you don't get out. The market hasn't given you a reason to get out.
+
+168
+00:09:38,500 --> 00:09:41,600
+跟进止损，现在再次移动
+You trail that stop. Again, now we move it back.
+
+169
+00:09:42,400 --> 00:09:46,500
+如果不在交易中，就把止损移到下一个买卖失衡区域
+If we're not in a trade, we move our stop up into this imbalance, the next imbalance.
+
+170
+00:09:46,800 --> 00:09:49,700
+如果在找交易机会，那就重复这个过程
+And if we're looking for a trade, well then, we rinse and repeat.
+
+171
+00:09:49,700 --> 00:09:51,500
+等下一个周期
+So we wait for the next rotation.
+
+172
+00:09:51,800 --> 00:09:54,200
+让市场回落并出现订单吸收
+We allow the market to come back and absorb.
+
+173
+00:09:54,200 --> 00:09:55,838
+我直接跳到下一个
+I'm just going to get to that next
+
+174
+00:09:55,838 --> 00:09:58,499
+周期。所以等市场回落
+rotation. So we can see we wait for the market to come back.
+
+175
+00:09:58,500 --> 00:10:01,700
+让它回测70区域附近的买卖失衡
+Let it test that imbalance around the 70 area.
+
+176
+00:10:02,800 --> 00:10:03,800
+市场回落了
+So the market comes in.
+
+177
+00:10:03,900 --> 00:10:06,600
+注意更深的阴影，那就是订单吸收
+Note the darker shading again. There's the absorption.
+
+178
+00:10:06,900 --> 00:10:13,800
+现在在70.5寻找做多机会，然后等周期和延伸再次出现
+We're looking for our longs now at 70.5. And we wait for the rotation and extension again.
+
+179
+00:10:14,300 --> 00:10:18,700
+好，这是个很好的例子，它清楚展示了两个买卖失衡
+All right. So it's a lovely example in the sense that it does show you two imbalances.
+
+180
+00:10:19,300 --> 00:10:23,800
+它展示了第一个买卖失衡，这个失衡持续了很长时间
+It shows you the first imbalance that takes a long, long time
+
+181
+00:10:23,800 --> 00:10:26,800
+要回测并延伸极值区间，而
+to retest and extend the extreme, whereas the
+
+182
+00:10:26,800 --> 00:10:29,800
+第二个不平衡区域几乎瞬间回测了该极值点。
+second imbalance almost instantaneously retests that extreme point.
+
+183
+00:10:30,600 --> 00:10:35,900
+好，这标志着我们拍卖不平衡实操练习的结束。
+Okay, that then is obviously the end of our auction imbalance drill session.
+
+184
+00:10:37,000 --> 00:10:38,129
+非常重要，
+So important, you know,
+
+185
+00:10:38,129 --> 00:10:40,387
+现在回到那些模板，
+go back now onto those templates, make the
+
+186
+00:10:40,387 --> 00:10:42,081
+做你需要的修改，
+changes you need to do, add
+
+187
+00:10:42,081 --> 00:10:46,598
+添加你需要的笔记，确保从这些实操练习中学习。
+the notes you need to add, and make sure you're learning from these little drill-based sessions.
+
+188
+00:10:46,800 --> 00:10:51,200
+当然，你已经掌握了我们之前讲过的单元案例。
+Of course, you obviously have got the examples from the unit that we went over.
+
+189
+00:10:51,400 --> 00:10:56,500
+现在可以去完成这些案例，并再填写一个模板。
+You can go now and complete those and again complete a template.
+
+190
+00:10:56,700 --> 00:10:57,847
+好，各位，
+Alright guys, that
+
+191
+00:10:57,847 --> 00:11:00,525
+这带我们
+brings us then to the end of
+
+192
+00:11:00,525 --> 00:11:05,116
+进入第10单元的结束，下个单元见。
+unit 10 and I will now see you guys in the next unit.
+
+===== END AFTER_OPTIMIZE =====

@@ -1,0 +1,4630 @@
+===== AFTER_OPTIMIZE (926 entries) =====
+1
+00:00:02,610 --> 00:00:05,154
+大家早上好，我是Mike。
+Hey, good morning, everybody. It's Mike.
+
+2
+00:00:05,154 --> 00:00:07,698
+现在是7月15日，上午9点。
+It's July 15th at 9 a.m.
+
+3
+00:00:07,698 --> 00:00:11,090
+这是第七天，或者说
+This is day seven of the, or not
+
+4
+00:00:11,090 --> 00:00:15,330
+是夏季10周项目的第七场课程。
+day seven, session seven, rather, of the 10-week summer program.
+
+5
+00:00:15,490 --> 00:00:21,510
+今天讲的是Delta移动的空头版本，上周四我们讲了多头版本。
+This is the bearish version of what we talked about last Thursday of Delta shifts. We talked about bullish ones.
+
+6
+00:00:21,510 --> 00:00:23,788
+今天我会重点讲解
+Today, I'm going to go over
+
+7
+00:00:23,788 --> 00:00:27,205
+几个空头交易设置。不过首先，
+some bearish ones, but first, you know, there was
+
+8
+00:00:27,205 --> 00:00:31,001
+上一场课程有人提了个问题，
+a question that came in on the last session about
+
+9
+00:00:31,001 --> 00:00:34,797
+是关于我做欧元时的主要交易设置，
+sort of my top setups for euro currency, you know,
+
+10
+00:00:34,797 --> 00:00:44,288
+也就是我关注的点，或者说交易者可以重点关注的。Venement还问能不能自动执行这些设置。
+what I'm looking for and, you know, what traders can sort of focus on, you know, the Venement asked about automating some of these setups.
+
+11
+00:00:44,290 --> 00:00:48,641
+其中有些交易设置非常容易自动执行，
+Some of these setups are very easy to automate. You
+
+12
+00:00:48,641 --> 00:00:52,122
+可以用Toolbox来实现，
+can use the toolbox to automate it and,
+
+13
+00:00:52,122 --> 00:00:56,908
+比如结合标记，或者用Bloodhound。
+you know, with markers and as well as, I believe, Bloodhound.
+
+14
+00:00:57,990 --> 00:01:04,970
+我的程序员Peter之前发过一个视频，讲的是如何结合Bloodhound和Toolbox使用。
+Peter, my programmer, had posted a video about using Bloodhound with the toolbox.
+
+15
+00:01:06,930 --> 00:01:11,910
+所以操作起来应该很简单。现在，我来讲这三种交易设置，会配合一些例子。
+So it should be pretty straightforward. Now, the three setups, and I'll go through some examples.
+
+16
+00:01:11,910 --> 00:01:13,926
+这三种设置没有固定顺序，
+Now, these are in no particular
+
+17
+00:01:13,926 --> 00:01:16,950
+如果你在交易欧元的话，
+order, you know, if you're using, if you're looking
+
+18
+00:01:16,950 --> 00:01:20,310
+其实这些设置适用于所有市场，
+at euro currency, and to be honest, a lot of
+
+19
+00:01:20,310 --> 00:01:25,350
+不仅仅是欧元，但这三种是最容易上手的。
+these apply to all markets, not just euro currency, but these are the three easiest.
+
+20
+00:01:26,090 --> 00:01:34,750
+其中有两种设置，我从做顺序流交易到现在一直在用。
+And two of these are setups that I have been looking at for almost as long as I've been trading order flow, right?
+
+21
+00:01:34,750 --> 00:01:41,430
+订单流交易的原始版本是在2015年左右发布的，到现在大概10年了。
+I mean, the original version of order flows trader came out about 10 years ago, 2015, was when we first released it.
+
+22
+00:01:41,530 --> 00:01:42,815
+其实我在此之前就已经在用了，
+But, you know, I was using
+
+23
+00:01:42,815 --> 00:01:44,742
+it well before that, and I was looking at
+
+24
+00:01:44,742 --> 00:01:46,669
+当时我关注的是耗尽印记和不平衡反转。
+exhaustion prints, and I was looking at imbalanced reversals.
+
+25
+00:01:47,630 --> 00:01:56,790
+而第三种我发现特别有效的，是放弃价值区间和放弃突出控制点。
+But the third one that I found really strong is the abandoned value area and abandoned prominent point of control.
+
+26
+00:01:56,790 --> 00:02:00,430
+好，那它长什么样呢？
+Okay, so just really quick, how does it look?
+
+27
+00:02:01,130 --> 00:02:04,570
+你看这里，上面这个区域，
+Well, you see right up here, we have
+
+28
+00:02:04,570 --> 00:02:08,010
+就是放弃价值区间，这是一个大的粉色区域，
+the abandoned value area. That's this big pink
+
+29
+00:02:08,010 --> 00:02:11,450
+里面还包含一个放弃突出控制点。
+area with an abandoned prominent point of control.
+
+30
+00:02:11,450 --> 00:02:14,618
+这个设置的关键点在于，
+Now, the thing with that, with this setup,
+
+31
+00:02:14,618 --> 00:02:17,786
+你无法确定它会不会
+is you don't know if it's going to
+
+32
+00:02:17,786 --> 00:02:20,954
+被放弃，或者说会不会
+be abandoned, you know, if it's going to
+
+33
+00:02:20,954 --> 00:02:27,687
+在市场里留下这种足迹，直到下一根K线收盘，对吧？
+leave sort of that footprint in the market, in the market, until the next bar closes, right?
+
+34
+00:02:27,710 --> 00:02:30,857
+因为在K线收盘前，
+Because you don't know that this point of control is
+
+35
+00:02:30,857 --> 00:02:34,004
+你无法确定这个控制点
+going to be a prominent point of control until the
+
+36
+00:02:34,004 --> 00:02:38,409
+会成为突出控制点，因为控制点可能在K线内移动。
+bar closes, because you know that point of controls can shift in a bar.
+
+37
+00:02:38,410 --> 00:02:42,950
+这种情况其实很常见，对吧？
+Okay, they do that pretty regularly, right?
+
+38
+00:02:43,010 --> 00:02:45,165
+因为成交量
+Because, you know, volume is always
+
+39
+00:02:45,165 --> 00:02:48,038
+不断流入并在K线内成交，
+coming in and transacting in the bar, and
+
+40
+00:02:48,038 --> 00:02:51,989
+控制点会在K线内上下移动。
+points of controls go up and go down in the bar.
+
+41
+00:02:52,250 --> 00:02:55,219
+价值区间也一样，
+The value area is similar in the sense
+
+42
+00:02:55,219 --> 00:02:58,188
+K线开盘后，
+that, you know, you start, your bar opens,
+
+43
+00:02:58,188 --> 00:03:01,157
+你形成一个价值区间，
+you form a value area, and it can
+
+44
+00:03:01,157 --> 00:03:08,209
+它可能会扩大或缩小，但随着更多成交量进入，价值区间也会移动。
+expand or contract a little bit. But the value area can move as more volume comes into the market.
+
+45
+00:03:08,930 --> 00:03:11,756
+所以在K线收盘前，
+Okay, so you don't know that the point of control
+
+46
+00:03:11,756 --> 00:03:14,582
+你无法确定这个控制点
+is going to be a prominent point of control until
+
+47
+00:03:14,582 --> 00:03:17,408
+会成为突出控制点，也无法确定它会被放弃，
+the bar closes, and you don't know that it's going
+
+48
+00:03:17,408 --> 00:03:23,908
+直到下一根K线开盘后未回踩并收盘，价值区间也是一样。
+to be abandoned until the next bar opens and doesn't trade in there and then closes, just as same with the value area.
+
+49
+00:03:23,910 --> 00:03:27,050
+你无法确定这个价值区间
+You don't know that this value area is going to
+
+50
+00:03:27,050 --> 00:03:29,562
+会被放弃，直到下一根K线开盘，
+be abandoned until the next bar opens up,
+
+51
+00:03:29,562 --> 00:03:32,388
+成交后未回踩并放弃它。
+trades, does not trade into it, and abandons it.
+
+52
+00:03:32,490 --> 00:03:36,634
+我所说的放弃价值区间，是指市场
+What I mean by abandoned value area means the market
+
+53
+00:03:36,634 --> 00:03:39,949
+不再回踩前一根K线的
+is not trading back into that value area
+
+54
+00:03:39,949 --> 00:03:42,849
+价值区间进行交易。
+of the bar, of the previous bar.
+
+55
+00:03:42,850 --> 00:03:48,370
+比如这里是一个放弃价值区间，但没有突出控制点。
+So, like, this would be an abandoned value area over here, but we don't have a prominent point of control.
+
+56
+00:03:49,110 --> 00:03:53,770
+而这里是一个带放弃突出控制点的放弃价值区间。
+This one right here is an abandoned value area with an abandoned point of control.
+
+57
+00:03:54,050 --> 00:03:56,381
+你会发现，当市场回溯时，
+And you see how oftentimes when the market
+
+58
+00:03:56,381 --> 00:03:58,712
+它会测试价值区间，
+does trace back up there, it tests the
+
+59
+00:03:58,712 --> 00:04:02,209
+再测试突出控制点，然后开始下跌。
+value area, it tests the prominent point of control before selling off.
+
+60
+00:04:02,210 --> 00:04:05,250
+这是今天的行情，如果我
+This was just today, and if I were
+
+61
+00:04:05,250 --> 00:04:07,910
+快速调几个图表
+to pull up some charts really quick
+
+62
+00:04:07,910 --> 00:04:10,950
+好，现在位置在哪？找到了
+here, where are we here? I've got it.
+
+63
+00:04:11,670 --> 00:04:13,907
+其实这些是
+Now, you know, these are sort
+
+64
+00:04:13,907 --> 00:04:16,889
+我特别爱找的信号模式
+of setups that I love to look for
+
+65
+00:04:16,889 --> 00:04:22,109
+我一直在找这些，而且我这里开着多个标签页，对吧？
+all the time, and what I have is I have different tabs open, right?
+
+66
+00:04:22,150 --> 00:04:26,110
+下面NinjaTrader里能看到这些标签页，对吧？
+You can see down here at the bottom you have tabs on NinjaTrader, right?
+
+67
+00:04:26,110 --> 00:04:29,710
+也就是说，不同的信号模式我放在不同标签页
+So, I have, you know, the different setups on different tabs.
+
+68
+00:04:30,270 --> 00:04:32,110
+比如，这是不平衡反转
+You know, this is the imbalanced reversal.
+
+69
+00:04:32,530 --> 00:04:36,090
+这是摆动高点和低点的耗尽印记
+This is the exhaustion prints at swing highs and swing lows.
+
+70
+00:04:36,430 --> 00:04:40,170
+这是放弃价值区间，对吧？
+This is the abandoned value area, okay?
+
+71
+00:04:40,270 --> 00:04:44,730
+所以，我们现在就在这里
+So, this is just, well, this is where we are right now.
+
+72
+00:04:44,790 --> 00:04:49,750
+这里有放弃价值区间，但没有突出控制点
+We have the abandoned value area here, abandoned value area, abandoned value areas, but no prominent points of control.
+
+73
+00:04:49,750 --> 00:04:52,824
+显然，今天早上大约7点59分时
+Obviously, this morning around 7.59 is when
+
+74
+00:04:52,824 --> 00:04:56,923
+出现了空头放弃价值区间
+you've got the bearish abandoned value area and
+
+75
+00:04:56,923 --> 00:04:59,485
+还有空头突出控制点
+bearish prominent point of control,
+
+76
+00:04:59,485 --> 00:05:04,096
+一个，然后两根K线后又出现一个，对吧？
+one, and then two bars later, another one, right?
+
+77
+00:05:04,650 --> 00:05:08,730
+当时有一波漂亮的下跌，创下新低
+We had that nice, you know, sell off down to new lows.
+
+78
+00:05:08,850 --> 00:05:11,939
+甚至还有一个
+We even had one, we
+
+79
+00:05:11,939 --> 00:05:16,263
+之前也出现过，但回到
+had some earlier, you know, but going
+
+80
+00:05:16,263 --> 00:05:20,587
+昨天，快速看一下
+back to, just go back to yesterday
+
+81
+00:05:20,587 --> 00:05:28,618
+这里有一个空头信号，这里有一个多头信号
+real quick. You know, there's a bearish one here, a bullish one here.
+
+82
+00:05:30,860 --> 00:05:33,244
+这是一个例子，价值区间和控制点都被放弃了
+This is one where you have both the value area
+
+83
+00:05:33,244 --> 00:05:35,151
+and the point of control as being abandoned
+
+84
+00:05:35,151 --> 00:05:36,819
+因为显然只有两个价格水平
+because obviously there's just two price levels.
+
+85
+00:05:38,160 --> 00:05:42,890
+我继续往前看
+I'm just going forward.
+
+86
+00:05:43,030 --> 00:05:46,310
+这里有一个多头信号，差一个Tick就突破了
+There's a bullish one right here. Did get through it by one tick.
+
+87
+00:05:46,570 --> 00:05:48,540
+后面还有一个多头信号
+Got another bullish one coming
+
+88
+00:05:48,540 --> 00:05:51,299
+这里还有些空头信号
+in here and some bearish ones here,
+
+89
+00:05:51,299 --> 00:05:53,664
+这里，其实
+here, you know, and again, it
+
+90
+00:05:53,664 --> 00:05:56,423
+不管你用的是1分钟图
+doesn't matter if you're on a one-minute
+
+91
+00:05:56,423 --> 00:06:03,518
+不管1分钟图还是8点差图，我寻找的信号模式都一样。
+chart. If you're on a, you know, eight-range chart, I'd still be looking for the exact same thing.
+
+92
+00:06:05,140 --> 00:06:08,220
+这里是个多头信号。
+It's a bullish one here.
+
+93
+00:06:09,840 --> 00:06:16,500
+现在我这里设置了两个突出控制点，一号和二号。
+Now, I do have this set up for two prominent point of control levels, one and two.
+
+94
+00:06:16,680 --> 00:06:18,520
+如果设成三个，就会在这里显示。
+If I had it on three, it would appear here.
+
+95
+00:06:18,520 --> 00:06:20,452
+其实这是
+You know, this is
+
+96
+00:06:20,452 --> 00:06:23,351
+数据发布的时候，但
+when the data came out, but
+
+97
+00:06:23,351 --> 00:06:25,767
+回到之前，
+just going back, you know,
+
+98
+00:06:25,767 --> 00:06:30,599
+前一天，这里出现了一个大信号。
+previous day, I got a big one, came in here.
+
+99
+00:06:32,060 --> 00:06:32,940
+它在哪里？
+Where was it?
+
+100
+00:06:33,020 --> 00:06:36,520
+在这里，就在这里。一个很典型的多头信号。
+Here, right here. Nice bullish one.
+
+101
+00:06:36,520 --> 00:06:40,845
+其实如果我用
+You know, if I was on
+
+102
+00:06:40,845 --> 00:06:44,449
+比如100 Tick
+a, I don't know, 100 tick
+
+103
+00:06:44,449 --> 00:06:47,332
+图，这里有个空头信号，
+chart, there's a bearish,
+
+104
+00:06:47,332 --> 00:06:51,657
+那里有个小空头，那里也是。
+small bearish one there, bearish there.
+
+105
+00:06:54,140 --> 00:06:59,600
+这里、这里、这里、这里都是空头，这里是多头。
+Some bearish ones coming in here, here, here, here, bullish.
+
+106
+00:06:59,600 --> 00:07:03,248
+其实即使
+You know, even if
+
+107
+00:07:03,248 --> 00:07:10,545
+我换到其他市场，比如E-mini，
+I was on different market, so E-minis, the
+
+108
+00:07:10,545 --> 00:07:16,018
+情况一样，放弃价值区间和
+same thing, abandoned value area and
+
+109
+00:07:16,018 --> 00:07:20,578
+放弃突出控制点。
+abandoned prominent point of control.
+
+110
+00:07:20,980 --> 00:07:23,192
+现在，如果我是在日内交易，
+Now, if I was doing this
+
+111
+00:07:23,192 --> 00:07:26,142
+我得把突出控制点
+during the day, I'd have to expand my
+
+112
+00:07:26,142 --> 00:07:27,985
+的范围设得宽一点，
+prominent point of controls a
+
+113
+00:07:27,985 --> 00:07:32,778
+因为K线波动更大，波动性更强。
+little wider simply because the bars have more movement, more volatility to them.
+
+114
+00:07:32,780 --> 00:07:45,220
+其实早上有个多头信号，昨天、昨晚都有大行情。
+You know, there's a bullish one, two in the morning, yesterday, last night, we had a big move.
+
+115
+00:07:49,230 --> 00:07:57,160
+其实这里有个多头信号，那里有个小多头。
+You know, there's a bullish one right here, small bullish there.
+
+116
+00:07:59,750 --> 00:08:00,990
+所以，你明白了吧。
+So, you get the idea.
+
+117
+00:08:02,050 --> 00:08:04,190
+这是三种中的第一种。
+That's the first one of the three.
+
+118
+00:08:06,470 --> 00:08:10,010
+第二种是摆动高点或低点处的耗尽印记。
+Second one is exhaustion prints at swing highs or swing lows.
+
+119
+00:08:11,370 --> 00:08:14,610
+好，这里有个耗尽印记，这里也有。
+All right, you can see here, there's an exhaustion print here, exhaustion print here.
+
+120
+00:08:14,610 --> 00:08:18,230
+那里，哦，我回到图表上来设置一下。
+There's, oh, let me just go back to how to set it up on the chart here.
+
+121
+00:08:19,090 --> 00:08:22,033
+那在图表上，
+So, on the chart, so
+
+122
+00:08:22,033 --> 00:08:26,154
+对于放弃价值区间和放弃突出控制点，
+for abandoned value area and abandoned prominent
+
+123
+00:08:26,154 --> 00:08:30,864
+你只需要启用的就是，
+point of control, the only thing you have
+
+124
+00:08:30,864 --> 00:08:34,985
+进入突出控制点，
+to enable is you go under prominent
+
+125
+00:08:34,985 --> 00:08:42,638
+一级，启用，二级，启用，然后设置为‘直到测试’。
+point of control, level one, enable, level two, enable, have it until tested.
+
+126
+00:08:42,640 --> 00:08:45,080
+这样它就会画出那条线，方便观察。
+So, it draws that line out, so it's easy to see.
+
+127
+00:08:45,160 --> 00:08:47,900
+如果你想用三级，也可以启用。
+If you want to use level three, you could just enable that.
+
+128
+00:08:49,860 --> 00:08:56,760
+然后是价值区间，启用价值区间，把绘制模式从‘固定’改成‘直到测试’。
+And then value areas, enable value area, change the draw mode from fixed to until tested.
+
+129
+00:08:59,120 --> 00:09:03,400
+你也可以启用吸收或者吞噬价值区间，如果你想的话。
+You could use the absorption if you want, as well as the engulfing value areas.
+
+130
+00:09:03,400 --> 00:09:05,080
+好的，但其实，
+Okay, but really, the
+
+131
+00:09:05,080 --> 00:09:07,600
+你关注的重点是
+one that you're focused on is
+
+132
+00:09:07,600 --> 00:09:10,120
+任何被放弃的价值区间。对吧，
+any value area that's abandoned. Okay,
+
+133
+00:09:10,120 --> 00:09:14,320
+所以一定要确保已经改成‘直到测试’了。
+so make sure you have it changed to until tested.
+
+134
+00:09:14,920 --> 00:09:20,700
+接下来，第二个，就是在摆动高点或摆动低点的耗尽印记。
+Now, the second one, right, is the exhaustion prints at swing highs or swing lows.
+
+135
+00:09:21,060 --> 00:09:22,188
+那什么是耗尽印记呢，
+So, what's an exhaustion
+
+136
+00:09:22,188 --> 00:09:24,445
+其实，当你有
+print is, you know, when you have the
+
+137
+00:09:24,445 --> 00:09:26,137
+一根绿色上涨K线，你要看
+green up candle, you're looking at
+
+138
+00:09:26,137 --> 00:09:28,958
+买盘那边的底部成交量，只成交了一手。
+the bottom volume on the bid side, one contract trades.
+
+139
+00:09:29,580 --> 00:09:32,240
+有人会问，这真的是摆动低点吗？其实这就是当天的最低点。
+People say, well, is this really a swing low? Well, this is our low of the day.
+
+140
+00:09:32,240 --> 00:09:39,040
+我们反弹上涨，然后回落，回撤了大约60%，接着又有一波漂亮的上涨。
+We rallied up, came down, retraced about 60%, and then we had a nice rally up here.
+
+141
+00:09:39,100 --> 00:09:44,760
+就像这里，我们触及低点后，反弹上涨，成交了三手，对吧？这就是耗尽印记。
+Just as up here, we hit the low, we rally up, trade three contracts, right? That's an exhaustion print.
+
+142
+00:09:44,880 --> 00:09:46,160
+我怎么知道这是耗尽印记？
+How do I know it's an exhaustion print?
+
+143
+00:09:46,200 --> 00:09:47,880
+因为我们之前在上涨，
+It's because we were
+
+144
+00:09:47,880 --> 00:09:50,400
+然后买盘的推动力
+rallying, and then the buying pressure
+
+145
+00:09:50,400 --> 00:09:55,440
+基本上结束了。没有更多的买单出现了，对吧？
+basically ended. There was no more buying that was taking place, right?
+
+146
+00:09:55,480 --> 00:09:57,500
+只有三手成交。市场随即小幅回落。
+Just three contracts. The market came off a little bit.
+
+147
+00:09:57,560 --> 00:09:58,913
+他们实际上测试了
+They actually tested it
+
+148
+00:09:58,913 --> 00:10:01,619
+一次、两次、第三次。甚至在这里又出现了一个耗尽印记，
+once, twice, third time. Even got another exhaustion
+
+149
+00:10:01,619 --> 00:10:03,987
+然后才有了
+print here, too, before you had this
+
+150
+00:10:03,987 --> 00:10:05,678
+这波向低点的大跌。
+nice sell-off down into lows.
+
+151
+00:10:06,400 --> 00:10:08,947
+在NinjaTrader上设置时，
+To set it up on NinjaTrader,
+
+152
+00:10:08,947 --> 00:10:12,343
+你要做的只有一件事，
+what you're going to do here is all
+
+153
+00:10:12,343 --> 00:10:14,890
+其实不需要
+you have to do, you don't
+
+154
+00:10:14,890 --> 00:10:19,559
+开启其他任何功能，只用打开耗尽印记就行。
+have to turn on anything else other than the exhaustion prints.
+
+155
+00:10:19,560 --> 00:10:26,320
+就在下面，找到耗尽印记，打开它。
+So it's just under here, exhaustion prints. Turn it on.
+
+156
+00:10:26,320 --> 00:10:28,223
+我习惯用9，
+I like to use nine and
+
+157
+00:10:28,223 --> 00:10:30,126
+然后启用摆动过滤器，因为我们
+enable the swing filter because we're
+
+158
+00:10:30,126 --> 00:10:33,298
+要找的是摆动高点或低点的耗尽印记。
+looking for exhaustion prints at swing highs or swing lows.
+
+159
+00:10:33,720 --> 00:10:40,040
+摆动过滤器和全局摆动周期设置的5关联，对吧？
+The swing filter is linked to the global setting of swing period of five, okay?
+
+160
+00:10:40,140 --> 00:10:41,060
+这个可以调整。
+And you can adjust that.
+
+161
+00:10:41,100 --> 00:10:47,700
+比如你想要更高的摆动过滤器，比如20或25，直接改数值就行。
+Say you want a higher swing filter, you know, for 20 or something, 25, you just change it.
+
+162
+00:10:47,700 --> 00:10:48,440
+我偏好5。
+I like five.
+
+163
+00:10:48,720 --> 00:10:51,640
+对我来说，这样已经足够判断摆动高点或低点了。
+To me, that's enough for a swing high or a swing low.
+
+164
+00:10:52,100 --> 00:10:57,780
+看得到吧，这里又出现了一个空头耗尽印记。
+And you can see, right, here's another bearish one coming in right here.
+
+165
+00:10:58,740 --> 00:11:01,960
+空头的耗尽印记刚横盘，多头的也在横盘。
+The bearish one just went sideways. Bullish is going sideways.
+
+166
+00:11:03,540 --> 00:11:05,680
+我们直接看当前交易的位置。
+Let's just go to where we are trading right now.
+
+167
+00:11:06,820 --> 00:11:13,460
+在这次大跌前，这里有一个，这里也有一个，是多头耗尽印记。
+Right before this big sell-off, we had one here. We had one here. It is bullish one.
+
+168
+00:11:13,460 --> 00:11:15,191
+不过其实，
+But, again, you know, we
+
+169
+00:11:15,191 --> 00:11:17,615
+我们只是小幅上涨了一点，
+just poked up a little bit, but
+
+170
+00:11:17,615 --> 00:11:19,692
+虽然有多头耗尽印记，
+we have the bullish one, but
+
+171
+00:11:19,692 --> 00:11:25,578
+但价格跌破了这个水平，所以在上涨到这里前，信号就已经失效了。
+we came down below the level. So that would have invalidated it before it came up here.
+
+172
+00:11:25,920 --> 00:11:28,760
+交易耗尽印记的方法很简单。
+How you trade exhaustion prints is very simple.
+
+173
+00:11:29,920 --> 00:11:31,920
+等这根K线收盘就行，对吧？
+You just wait for the bar to close, right?
+
+174
+00:11:32,020 --> 00:11:37,160
+然后看下一根K线是否继续沿这个方向走，这就是你想要的，对吧？
+And then the next bar to either continue trading in that direction. That's what you like to see, right?
+
+175
+00:11:37,220 --> 00:11:39,280
+比如这里有三个耗尽印记。
+Just as here we have the exhaustion print of three.
+
+176
+00:11:39,280 --> 00:11:47,200
+你能立刻确认这是耗尽印记，因为这里标出了。
+You know right away that this is exhaustion print because it's printing the exhaustion print up here.
+
+177
+00:11:47,460 --> 00:11:49,980
+即使这根K线在这里交易，你也只需等它收盘。
+Even though the bar is trading down here, you just wait for this bar to close.
+
+178
+00:11:50,660 --> 00:11:56,380
+如果下一根K线开盘后开始下跌，就可以做空，对吧，就像上面这个例子。
+If the next bar opens up, starts trading lower, you get short, okay, just as up here.
+
+179
+00:11:56,480 --> 00:11:59,580
+这里有耗尽印记，一目了然，对吧？
+We got the exhaustion print. It's clear as day, too, okay?
+
+180
+00:11:59,660 --> 00:12:00,380
+这根K线收盘了。
+This bar closes.
+
+181
+00:12:00,500 --> 00:12:01,580
+这是1分钟图。
+This is a one-minute chart.
+
+182
+00:12:02,460 --> 00:12:04,120
+你可以坐在那里，可以等时间走完。
+We could sit there. We could watch the time.
+
+183
+00:12:04,120 --> 00:12:07,002
+我喜欢开启的一个工具是，
+One thing I like to have on,
+
+184
+00:12:07,002 --> 00:12:09,884
+如果你没用过，你应该
+if you don't use it, you should
+
+185
+00:12:09,884 --> 00:12:11,942
+考虑添加它，就是
+think about adding it, is
+
+186
+00:12:11,942 --> 00:12:16,059
+NinjaTrader 上有一个工具叫做 Bar Timer。
+the NinjaTrader has a tool on here called Bar Timer.
+
+187
+00:12:16,880 --> 00:12:18,360
+好，你只需要启用它。
+Okay, so you just enable that.
+
+188
+00:12:18,460 --> 00:12:19,740
+确保它在这里显示出来。
+Make sure it shows up down here.
+
+189
+00:12:20,620 --> 00:12:21,260
+Bar Timer。
+Bar Timer.
+
+190
+00:12:22,400 --> 00:12:23,240
+点击应用。
+Click Apply.
+
+191
+00:12:23,760 --> 00:12:29,640
+这样你就能在下方看到这根K线剩余多少时间。
+That way, you can see down here at the bottom how much time is left in the bar.
+
+192
+00:12:29,640 --> 00:12:30,942
+比如，我们
+So if, you know, we're
+
+193
+00:12:30,942 --> 00:12:32,244
+在1分钟K线上，
+on a one-minute bar and
+
+194
+00:12:32,244 --> 00:12:33,286
+已经过了55秒，而且
+we're 55 seconds and we're
+
+195
+00:12:33,286 --> 00:12:38,237
+价格在这里在低点交易，对吧，我知道这根K线很可能会收阴线。
+trading down here at the low, okay, I know that chances are this bar is going to close red.
+
+196
+00:12:38,780 --> 00:12:46,140
+我可以准备在117.14下一个卖单止损单做空，对吧？
+I could just be ready to drop in a sell stop at 117.14 to get short, right?
+
+197
+00:12:46,140 --> 00:12:52,880
+你能承受多少风险？其实，如果价格涨到17以上，比如17.5、18，那这个耗尽印记就无效了。
+How much heat are you taking? Well, just if we come up above 17, so 17.5, 18, that would invalidate this exhaustion print.
+
+198
+00:12:53,740 --> 00:12:57,200
+所以你在14做空，在18被止损。
+So you're getting short at 14. You're getting stopped out at 18.
+
+199
+00:12:57,200 --> 00:12:59,881
+这是4个整Tick，或者说8个半Tick，
+That's four full ticks, eight half
+
+200
+00:12:59,881 --> 00:13:02,115
+然后价格从14开始，
+ticks, and it goes from 14,
+
+201
+00:13:02,115 --> 00:13:04,796
+一路下跌，突破
+goes all the way down, takes
+
+202
+00:13:04,796 --> 00:13:07,030
+这里的低点09，
+out the low here at 09,
+
+203
+00:13:07,030 --> 00:13:14,628
+继续下跌，创了6个半Tick的新低，到96，甚至到91.5。
+goes lower, does six and a half new lows, down to 96, even down to 91 and a half.
+
+204
+00:13:16,420 --> 00:13:22,300
+一旦开始在这里突破，价格下跌得很快。
+It goes down pretty quick over, once you sort of start breaking down here, it dropped pretty quick.
+
+205
+00:13:22,560 --> 00:13:24,140
+当然，最终它确实
+I mean, eventually it did
+
+206
+00:13:24,140 --> 00:13:26,352
+创了更低的低点，但其实，对吧，
+make lower lows, but really, you know,
+
+207
+00:13:26,352 --> 00:13:30,460
+一旦开始在这里横盘，那就是你可以平仓的地方。
+once it starts going sideways in here, that's where you can cover it.
+
+208
+00:13:30,600 --> 00:13:32,540
+现在我们在这里做多，两手。
+Now we had a long here, two.
+
+209
+00:13:34,320 --> 00:13:36,052
+好，但同样，你得
+Okay, but again, you got
+
+210
+00:13:36,052 --> 00:13:38,476
+等这市场
+to be waiting for this market to
+
+211
+00:13:38,476 --> 00:13:42,632
+要做什么？交易要有效，必须先突破96.
+do what? It's got to break 96 for the trade to be valid.
+
+212
+00:13:43,900 --> 00:13:46,289
+如果它跌破92，比如
+If it breaks below 92, so it
+
+213
+00:13:46,289 --> 00:13:48,678
+交易到91.5，信号就无效了，
+trades 91 and a half, it's invalid,
+
+214
+00:13:48,678 --> 00:13:52,262
+或者说被证伪了，而且下一根K线确实如此。
+invalidated rather, and it does in the next bar.
+
+215
+00:13:53,200 --> 00:13:55,870
+所以你不会在这里96做多，
+So you wouldn't be getting long here at
+
+216
+00:13:55,870 --> 00:13:58,206
+然后因为下一根K线
+96 and then getting stopped out because the
+
+217
+00:13:58,206 --> 00:14:00,208
+跌破了耗尽印记而被止损出局，
+next bar came in, traded below
+
+218
+00:14:00,208 --> 00:14:02,544
+因为这会让信号失效。
+the exhaustion print, which invalidates the signal.
+
+219
+00:14:02,880 --> 00:14:05,022
+好，然后这里又有一个空头信号，
+Okay, then another short right
+
+220
+00:14:05,022 --> 00:14:08,022
+其实我们只是在盈亏平衡附近小幅交易，
+here, you know, we're just trading a
+
+221
+00:14:08,022 --> 00:14:10,593
+也就是
+little bit, you know, a little
+
+222
+00:14:10,593 --> 00:14:17,021
+在81或81.5附近做空后，
+bit around break even because you would have been short somewhere around 81, 81 and a half.
+
+223
+00:14:17,960 --> 00:14:19,720
+现在只是在80.5附近交易。
+We're just trading 80 and a half right now.
+
+224
+00:14:21,910 --> 00:14:25,090
+之前有一个多头信号会让你止损出局。这里之前有一个很好的多头信号。
+There's a bullish one that would have stopped you out. There was a nice bullish one here.
+
+225
+00:14:25,170 --> 00:14:29,370
+现在，其实我不建议在整数关口前入场交易。
+Now, you know, I wouldn't recommend taking any trade going into a number.
+
+226
+00:14:31,770 --> 00:14:32,752
+其实，我记得几年前，
+You know, I know I've
+
+227
+00:14:32,752 --> 00:14:34,128
+有人会说，哦，你
+seen years ago, people say, oh, you
+
+228
+00:14:34,128 --> 00:14:35,504
+只需要等整数关口出来。
+just wait for the number to come
+
+229
+00:14:35,504 --> 00:14:36,683
+也就是说，它出来后，
+out. So, you know, it's coming
+
+230
+00:14:36,683 --> 00:14:41,008
+你在这里放买入止损单，在那里放买入止损单，然后成交后就高位卖出。
+out and you put a buy stop here, buy stop there, and then you get filled and you sell it up here.
+
+231
+00:14:41,090 --> 00:14:42,090
+这行不通。
+It doesn't work that way.
+
+232
+00:14:43,470 --> 00:14:45,372
+所以，再来说耗尽印记，
+So, again, for exhaustion prints,
+
+233
+00:14:45,372 --> 00:14:48,035
+你图表上唯一需要的
+the only thing you need on your
+
+234
+00:14:48,035 --> 00:14:52,219
+就是启用带摆动过滤器的耗尽印记。
+chart is just the exhaustion prints enabled with the swing filter.
+
+235
+00:14:53,800 --> 00:15:01,150
+所以到耗尽印记这里，确保启用摆动过滤器。
+So go here to exhaustion print and make sure you enable swing filter.
+
+236
+00:15:01,150 --> 00:15:12,490
+好的，不管是区间图、时间图、Tick图还是成交量图，都一样，同样的设置。
+Okay, and again, whether it's a range-based chart or time-based chart or tick-based or volume-based chart, same thing, same setup.
+
+237
+00:15:13,310 --> 00:15:14,370
+现在，不平衡反转。
+Now, imbalance reversal.
+
+238
+00:15:16,270 --> 00:15:20,490
+我们之前叫这‘第二槽失衡’。
+We used to call these second-slot imbalances.
+
+239
+00:15:20,690 --> 00:15:22,370
+有人抄了我的命名。
+People have stole my name for it.
+
+240
+00:15:22,370 --> 00:15:32,670
+所以我改叫不平衡反转，因为其实——第二槽失衡，我之前专门做过一个演示。
+So I changed it to imbalance reversal because it's not really – second-slot imbalance, I did a whole presentation on this.
+
+241
+00:15:32,810 --> 00:15:36,450
+这些内容在内部圈子的视频里。
+It's in the videos for the inner circle.
+
+242
+00:15:37,110 --> 00:15:40,274
+第二槽失衡基本是指
+Second-slot imbalance basically is in the second price
+
+243
+00:15:40,274 --> 00:15:43,438
+在红色K线顶部卖盘侧的第二个价格，
+level from the top offer side on a
+
+244
+00:15:43,438 --> 00:15:47,789
+或者绿色K线底部买盘侧的第二个价格。
+red candle or the bottom bid side of a green candle.
+
+245
+00:15:47,790 --> 00:15:50,199
+但这是一个非常特定的价格位置，
+But it's a very specific price location,
+
+246
+00:15:50,199 --> 00:15:53,296
+而不平衡反转可能出现在第二槽，
+whereas an imbalanced reversal could be either a second
+
+247
+00:15:53,296 --> 00:15:56,049
+或者在空头K线上这个价格的上方，
+slot or the price above it on a
+
+248
+00:15:56,049 --> 00:16:02,588
+或者在绿色K线底部买盘价，或者是底部买盘价往上数第二个价格。
+short or the bottom bid price or the bottom second from the bottom bid price on a green candle.
+
+249
+00:16:02,810 --> 00:16:04,350
+但这些都属于不平衡反转。
+But these are imbalanced reversals.
+
+250
+00:16:04,810 --> 00:16:07,570
+现在我们来看实际图表。
+But let's take a look here on an actual chart.
+
+251
+00:16:08,730 --> 00:16:10,770
+这里的不平衡反转。
+Imbalanced reversals on here.
+
+252
+00:16:11,070 --> 00:16:13,230
+我们回到当前交易的位置。
+So let's go back to where we're trading right now.
+
+253
+00:16:13,230 --> 00:16:20,070
+在顺序流里，这个信号模式其实很简单。
+So, okay, now on the order for a straighter, it's really simple, set up.
+
+254
+00:16:23,490 --> 00:16:29,690
+你只需要在 I 选项下启用不平衡反转。
+All you have to enable is under I's, imbalance reversal.
+
+255
+00:16:30,030 --> 00:16:37,350
+我确实设了一个最小成交量要求，你可以在这里看到。
+Now, I do have a minimum volume that I do require. You can see it right here.
+
+256
+00:16:38,590 --> 00:16:41,990
+不平衡反转的最小成交量是 10。
+Minimal imbalance reversal volume of 10.
+
+257
+00:16:41,990 --> 00:16:51,870
+也就是说，必须是 10 或者更大的失衡，比如 1 比 10。
+That just means it has to be an imbalance of 10 or more, meaning, you know, like one against 10.
+
+258
+00:16:52,430 --> 00:16:56,370
+不能是 1 比 4 或者 1 比 5 的失衡。
+It can't be an imbalance of one against four or one against five.
+
+259
+00:16:57,470 --> 00:16:59,630
+你可以选择是否使用摆动过滤器。
+You could choose to use the swing filter or not.
+
+260
+00:16:59,790 --> 00:17:01,755
+我通常希望在任何地方都能看到它们，
+I generally want to see them anywhere
+
+261
+00:17:01,755 --> 00:17:03,720
+尤其是当市场上涨或下跌时，
+because I like to see them, especially
+
+262
+00:17:03,720 --> 00:17:06,808
+我更希望看到这些信号。
+if a market is moving up or down to see them.
+
+263
+00:17:06,810 --> 00:17:10,390
+所以你只需要点击启用不平衡反转。
+So that's all you have to do is just click enable imbalance reversal.
+
+264
+00:17:12,839 --> 00:17:19,000
+好的，我们来看这里。这正在欧元货币对中发生。
+Okay, so let's take a look here. This is just taking place right now here in the euro currency.
+
+265
+00:17:19,119 --> 00:17:20,700
+这里有一个不平衡反转。
+So there was an imbalance reversal here.
+
+266
+00:17:21,300 --> 00:17:22,660
+好的，12 比 3。
+Okay, so 12 against three.
+
+267
+00:17:23,380 --> 00:17:25,300
+它出现在这根K线的底部。
+Okay, it's coming at the bottom of this bar.
+
+268
+00:17:26,040 --> 00:17:27,420
+我会在哪里做多？
+Where would I be getting long?
+
+269
+00:17:27,480 --> 00:17:29,740
+我会在这里 86 的位置做多，对吧？
+I'd be getting long up here at 86, right?
+
+270
+00:17:29,760 --> 00:17:32,600
+因为如果这是一个反转，市场就要开始移动了。
+Because if this is a reversal, the market's got to start moving.
+
+271
+00:17:32,660 --> 00:17:33,940
+必须开始反转。
+It's got to start reversing.
+
+272
+00:17:33,940 --> 00:17:39,560
+如果不朝那个方向走，那很可能不成立。
+If it's not going in that direction, then chances are it's not going to work out.
+
+273
+00:17:39,600 --> 00:17:40,220
+然后会怎样？
+And what happens?
+
+274
+00:17:40,600 --> 00:17:43,540
+价格会跌破这根K线的低点。
+It trades below the low of this bar.
+
+275
+00:17:43,700 --> 00:17:47,520
+下一根K线会跌破失衡区。
+It trades below the imbalances in the next bar.
+
+276
+00:17:47,620 --> 00:17:49,320
+这样这个交易设置就失效了。
+So it invalidates that setup.
+
+277
+00:17:49,500 --> 00:17:51,240
+所以这个信号你不会入场。
+So this is not one that you would have taken.
+
+278
+00:17:52,300 --> 00:17:58,960
+好，这些例子类似，都是在区间内震荡，对吧？
+Okay. These, similar thing, trades inside, inside, right?
+
+279
+00:17:59,060 --> 00:18:01,800
+第三根K线先拉升，然后才回落。
+Third bar does pop up before coming down.
+
+280
+00:18:01,800 --> 00:18:03,680
+如果你入场，会被止损出局。
+If you were to take this, you would have been stopped out.
+
+281
+00:18:03,760 --> 00:18:05,840
+这个信号也是一样，对吧？
+Take this one, similar thing, right?
+
+282
+00:18:05,900 --> 00:18:07,600
+你可能在这里被止损。
+You probably would have been stopped out here.
+
+283
+00:18:07,980 --> 00:18:11,600
+做多后，价格先横盘，然后下跌，把你止损出局。
+Got long, just going sideways before it came down, stopped you up.
+
+284
+00:18:11,660 --> 00:18:14,872
+但你的风险基本定在
+But your risk is really defined basically above
+
+285
+00:18:14,872 --> 00:18:18,084
+空头K线的高点上方，
+the high of a short bar, a bearish
+
+286
+00:18:18,084 --> 00:18:21,698
+或者说多头K线的低点下方。
+bar, or below the low of a bullish bar.
+
+287
+00:18:22,720 --> 00:18:23,900
+好的，然后你做多。
+Okay, and you're just getting long.
+
+288
+00:18:23,900 --> 00:18:29,560
+如果市场立刻朝你的方向移动，我通常会给它两根K线的时间。
+If the market starts moving in your direction immediately, you know, I like to give it two bars.
+
+289
+00:18:30,760 --> 00:18:35,520
+不会等五分钟、十分钟，必须快速发生。
+Not, you know, I don't wait five, ten minutes for it. It's got to happen soon.
+
+290
+00:18:35,520 --> 00:18:37,778
+因为如果是反转，
+Because if it's a reversal, what needs
+
+291
+00:18:37,778 --> 00:18:40,358
+最好的反转
+to be, you know, the best reversals are
+
+292
+00:18:40,358 --> 00:18:45,519
+是V型反转，那种立即转向就启动的。对吧？
+the V-shaped reversals, the ones where it just turns on a dime and starts moving. Right?
+
+293
+00:18:45,600 --> 00:18:46,945
+不是那种
+It's not the ones that
+
+294
+00:18:46,945 --> 00:18:48,828
+只是横盘的，
+just sort of go sideways, you know,
+
+295
+00:18:48,828 --> 00:18:50,442
+第一根、第二根、第三根K线，
+one bar, two bar, the third
+
+296
+00:18:50,442 --> 00:18:54,478
+到第三根K线时，应该已经朝那个方向移动了。
+bar. You know, by the third bar, it should already be moving in that direction.
+
+297
+00:18:54,860 --> 00:19:00,140
+所以这个信号，我会在这里做多，然后持有，后来被止损了。
+So this one, you know, yeah, I would have gotten long here, stayed long. Then it stopped me out.
+
+298
+00:19:00,260 --> 00:19:01,420
+可以接受，这种情况没问题。
+Fine. You can live with that.
+
+299
+00:19:01,640 --> 00:19:02,920
+这是一个空头信号，对吧？
+Here's a short, right?
+
+300
+00:19:02,980 --> 00:19:05,100
+在这里做空，开始下跌。
+Get short here. Starts moving down.
+
+301
+00:19:05,220 --> 00:19:07,180
+可以在这里小赚一笔平仓。
+You know, you'd cover it here for a small profit.
+
+302
+00:19:07,980 --> 00:19:09,780
+但这里有些不错的信号，对吧？
+But here's some nice ones, right?
+
+303
+00:19:09,780 --> 00:19:10,780
+在这里做空。
+Getting short here.
+
+304
+00:19:11,420 --> 00:19:13,800
+价格回到反转位置，然后开始下跌。
+Trades back up into the reversal. Starts coming down.
+
+305
+00:19:15,060 --> 00:19:16,720
+一、二，连续两次。
+One, two, two in a row.
+
+306
+00:19:17,000 --> 00:19:17,960
+这里还有一个。
+Another one in here.
+
+307
+00:19:21,220 --> 00:19:23,940
+这个信号也很接近。
+You know, here's, again, this one's pretty close.
+
+308
+00:19:24,360 --> 00:19:28,280
+数据发布后五分钟内的信号，我不会理会。
+Within five minutes of the data coming out, it's not something I'll be looking at.
+
+309
+00:19:28,360 --> 00:19:31,065
+每次有数据要发布时，我总会
+Anytime you've got data coming out, I always like to
+
+310
+00:19:31,065 --> 00:19:33,770
+至少等五分钟，而不是
+give it a minimum of five minutes rather than just
+
+311
+00:19:33,770 --> 00:19:35,934
+一看到信号就
+sort of jumping in at any signal that
+
+312
+00:19:35,934 --> 00:19:38,639
+匆忙进场，就在数据发布的那一刻。
+comes in, you know, right when the data comes out.
+
+313
+00:19:38,640 --> 00:19:46,100
+交易前也是一样，对吧？知道有数据发布，就远离市场。
+And same with trading before, right? I know there's a number coming out. Just stay out of the market.
+
+314
+00:19:46,100 --> 00:19:50,360
+不用匆忙进场，然后指望数据对你有利。
+You don't have to go jump in and then hope the number comes out in your favor.
+
+315
+00:19:50,980 --> 00:19:57,020
+这次如果你在725做空，市场开始下跌。
+In this case, it doesn't because if you took this short here at 725, market starts going down.
+
+316
+00:19:57,140 --> 00:19:58,008
+对，很好。
+Yeah, it's great. You
+
+317
+00:19:58,008 --> 00:19:59,745
+可能数据发布后，
+know, maybe the number is going to come
+
+318
+00:19:59,745 --> 00:20:03,438
+会像这波反弹一样出现大跌，但方向是空头。
+out and it's going to get a big drop like this rally, but to the bearish side.
+
+319
+00:20:03,440 --> 00:20:04,280
+但并没有。
+But it doesn't.
+
+320
+00:20:04,360 --> 00:20:05,040
+触发了止损。
+It stops you out.
+
+321
+00:20:05,120 --> 00:20:06,656
+如果止损设在这里，
+And if you had to stop
+
+322
+00:20:06,656 --> 00:20:08,192
+比如在18或18到19之间，
+up here, maybe at, you know,
+
+323
+00:20:08,192 --> 00:20:08,960
+你的止损单会在哪里成交？
+18 or 18 at 19, where's
+
+324
+00:20:08,960 --> 00:20:10,753
+可能在28。
+your stop going to be filled? Probably 28.
+
+325
+00:20:13,000 --> 00:20:20,360
+10个Tick、20个Tick，因为是整点和半点，基本就是20个Tick。
+You know, a full 10 ticks, 20 ticks, you know, because it's straights and half ticks. It's basically 20 ticks.
+
+326
+00:20:20,360 --> 00:20:21,711
+同样，这里也是。
+And again, similar here,
+
+327
+00:20:21,711 --> 00:20:24,414
+虽然这里有一个不错的多头信号，
+even though, you know, you got a nice
+
+328
+00:20:24,414 --> 00:20:26,441
+但仍然是数据发布后的残余波动。
+bullish signal coming in here, it
+
+329
+00:20:26,441 --> 00:20:30,158
+这是数据发布后的余波。
+is still that residual volatility from when the number came out.
+
+330
+00:20:30,280 --> 00:20:33,700
+人们仍在消化这个数据。
+People are still looking at digesting this data.
+
+331
+00:20:34,340 --> 00:20:35,560
+这个信号稍好一些。
+This one is a little bit better.
+
+332
+00:20:35,720 --> 00:20:40,620
+已经过了些时间，差不多13分钟了。
+Some enough time has elapsed. Almost, you know, 13 minutes.
+
+333
+00:20:40,720 --> 00:20:43,480
+现在是743根K线，接下来是744根。
+This is 743, so you're going to 744 bar.
+
+334
+00:20:44,200 --> 00:20:46,440
+但说到底，不想进就不用进。
+But again, you know, if you don't want to take it, you don't have to take it.
+
+335
+00:20:46,480 --> 00:20:52,940
+等到8点，市场肯定平静了，到时候再进场。
+You just wait, you know, by 8 o'clock, things have settled down for sure. And you can take that trade.
+
+336
+00:20:54,560 --> 00:21:01,300
+回顾一下前一天，我们这里的位置在哪？
+You know, just going back, you know, previous day, you know, where are we here?
+
+337
+00:21:01,420 --> 00:21:02,520
+7点到8点。
+7, 8 o'clock.
+
+338
+00:21:02,520 --> 00:21:07,740
+有些多头信号，更多多头信号，还有一个很不错的空头信号，出现在当天高点。
+You know, some bullish ones, more bullish, nice bearish one off this high of the day.
+
+339
+00:21:07,880 --> 00:21:09,560
+这是昨天的高点。
+This was the high yesterday.
+
+340
+00:21:09,960 --> 00:21:10,840
+一个很不错的空头信号。
+Nice bearish signal.
+
+341
+00:21:11,000 --> 00:21:13,600
+我们把这个叫做二级失衡，
+This is what we call a second slot imbalance, where
+
+342
+00:21:13,600 --> 00:21:14,900
+它确实出现在
+it literally comes in that
+
+343
+00:21:14,900 --> 00:21:17,240
+红色K线高点下方的第二个位置。
+second spot from the high of the red candle.
+
+344
+00:21:17,580 --> 00:21:19,700
+另外，这里还有一个耗尽印记。
+Plus, you also have an exhaustion print here.
+
+345
+00:21:21,420 --> 00:21:23,460
+这也是一个二级失衡。
+This is also a second slot imbalance.
+
+346
+00:21:23,880 --> 00:21:28,080
+这个是失衡反转，但出现在低价位。
+This one is an imbalance reversal, but it's coming in at the bottom price level.
+
+347
+00:21:32,120 --> 00:21:43,400
+现在快速给大家看一下，不详细讲，只是展示。
+Now, just really quick here. I'm not going to, I'm just going to show you guys something.
+
+348
+00:21:44,240 --> 00:21:45,320
+它在这里的位置在哪？
+Where is it here?
+
+349
+00:21:46,040 --> 00:21:48,460
+好的，我先清理一下图表。
+Well, let me just get a clean chart up here.
+
+350
+00:21:49,600 --> 00:21:51,560
+这是一个转折点。
+This is a turn.
+
+351
+00:21:51,840 --> 00:22:00,830
+我想把这个拿下来，但速度有点快。
+I want to take this one down, but it's really, whoops, really quick.
+
+352
+00:22:01,090 --> 00:22:02,090
+把图表放大一点。
+Let's make this chart bigger.
+
+353
+00:22:02,570 --> 00:22:04,690
+我把这个催化剂去掉。
+I'll take this off, this catalyst.
+
+354
+00:22:05,550 --> 00:22:07,170
+然后我要加上Toolbox。
+And I'm going to put the toolbox on here.
+
+355
+00:22:12,040 --> 00:22:21,830
+好的，有人会问，如何才能自动执行这个？
+Okay. So here, because people say, you know, how can I, like, sort of automate this?
+
+356
+00:22:21,830 --> 00:22:25,690
+如果用Toolbox，会简单一些。
+If you're using this toolbox, it makes it a little bit easier.
+
+357
+00:22:26,110 --> 00:22:29,030
+现在，我来调欧元货币对。
+Now, let me just get euro currency.
+
+358
+00:22:29,430 --> 00:22:31,230
+这是超长期国债。
+This is ultra bonds.
+
+359
+00:22:32,410 --> 00:22:36,890
+好的，你们能看到，对吧？
+All right. So you can see here, right?
+
+360
+00:22:36,950 --> 00:22:39,470
+空头信号在这里、这里出现。
+The bearish signals come in here, here.
+
+361
+00:22:39,470 --> 00:22:43,607
+你想知道是什么让
+If you wanted to, what makes
+
+362
+00:22:43,607 --> 00:22:47,744
+Toolbox 与众不同，对吧？
+the toolbox unique is, you know,
+
+363
+00:22:47,744 --> 00:22:51,192
+比如我想看
+if I wanted to see,
+
+364
+00:22:51,192 --> 00:22:57,398
+这里我已经标出了不平衡反转。
+so I got the imbalance reversals on right here.
+
+365
+00:22:57,400 --> 00:23:10,320
+如果我想看带有耗尽印记的不平衡反转，把这些标出来给我，对吧？
+If I wanted to see it, imbalance reversals that have an exhaustion print, you know, highlight those to me, right?
+
+366
+00:23:10,360 --> 00:23:12,600
+我这里能看到，这是在数值期间。
+I can see here, this is during the number.
+
+367
+00:23:13,240 --> 00:23:14,360
+这个信号没成功。
+This one didn't work out.
+
+368
+00:23:17,310 --> 00:23:20,830
+回到前一天，这里有一些多头信号。
+You know, just going back to the previous day, you know, some bullish ones here.
+
+369
+00:23:22,190 --> 00:23:27,140
+这里有点拉锯。
+A little back and forth in here.
+
+370
+00:23:27,140 --> 00:23:30,573
+然后你当然可以筛选
+And then you could obviously filter it out
+
+371
+00:23:30,573 --> 00:23:33,577
+用摆动过滤器，如果你
+by swing filters as well, if you
+
+372
+00:23:33,577 --> 00:23:38,298
+想为这些信号添加某种摆动过滤器的话。
+wanted to add some sort of swing filter for those signals.
+
+373
+00:23:40,140 --> 00:23:41,780
+好，你也可以这么做。
+All right. You can do that as well.
+
+374
+00:23:43,580 --> 00:23:44,680
+其实，有很多种方式
+So, you know, there's a
+
+375
+00:23:44,680 --> 00:23:46,220
+你可以用 Toolbox 这样的工具
+lot of different ways you can chop
+
+376
+00:23:46,220 --> 00:23:48,420
+来拆分并自动执行这些操作。
+it up and automate it using tools like the toolbox.
+
+377
+00:23:48,420 --> 00:23:53,550
+我看看这里。
+Let me see here.
+
+378
+00:23:53,590 --> 00:23:55,730
+今天开始前有几个问题。
+There's a couple questions before I jump in today's.
+
+379
+00:23:56,250 --> 00:24:01,170
+Ben 问，你有没有根据交易品种的最小值速查表，比如 10？
+Ben asked, do you have a cheat sheet of minimal values depending on what you're trading, i.e. 10?
+
+380
+00:24:01,410 --> 00:24:04,350
+没有，我通常对所有市场都用 10。
+No, I generally use 10 for all markets.
+
+381
+00:24:06,250 --> 00:24:07,272
+大部分情况下，
+Most, you know,
+
+382
+00:24:07,272 --> 00:24:08,976
+如果你交易的是权益，比如
+if you're trading equity, you
+
+383
+00:24:08,976 --> 00:24:11,361
+E-mini 或者 MES，你不需要。
+know, E-minis or MES, you don't need
+
+384
+00:24:11,361 --> 00:24:14,769
+如果你交易的是利率产品，也不需要。
+it. If you're trading interest rates, you don't need it.
+
+385
+00:24:14,990 --> 00:24:18,590
+只是在流动性薄的市场，你才需要。
+It's just on these thinner markets, you do need it.
+
+386
+00:24:18,590 --> 00:24:22,910
+外汇的话，你可能需要用。
+You know, I mean, currencies, you're going to want to use it.
+
+387
+00:24:23,350 --> 00:24:26,730
+原油，我们快速看一下。
+Crude oil, let's take a look at crude real quick.
+
+388
+00:24:27,030 --> 00:24:28,350
+10 就可以。
+You know, 10 is fine.
+
+389
+00:24:28,950 --> 00:24:31,670
+只是我想确保足够。
+It's just, you know, I just want to make sure it's enough.
+
+390
+00:24:32,170 --> 00:24:34,730
+这里有一个很不错的不平衡反转。
+You know, here's a nice imbalance reversal coming in here.
+
+391
+00:24:35,610 --> 00:24:40,770
+最近比如9点左右，大概10分钟或5分钟前。
+Just, you know, recently here, nine, just about 10 minutes, five minutes ago.
+
+392
+00:24:42,930 --> 00:24:45,450
+大部分时候，成交量通常都很稳定。
+Most of the time, you're going to get solid volume anyway.
+
+393
+00:24:45,450 --> 00:24:47,727
+只是在某些
+It's just on some of
+
+394
+00:24:47,727 --> 00:24:50,915
+流动性较薄的市场里，比如
+these thinner markets, like if you were
+
+395
+00:24:50,915 --> 00:24:55,469
+比如，假设我正在看豆粕，对吧？
+on, you know, say I was looking at meal, okay?
+
+396
+00:24:55,890 --> 00:25:04,550
+现在，如果我看豆粕，这里有对19的、对11的，或者说对4的。
+Now, if I was looking at meal, here's one against 19, one against 11, you know, one against four.
+
+397
+00:25:04,550 --> 00:25:07,770
+但在1分钟图上，可能会有点困难。
+But, you know, on a one-minute chart, it might be a little bit of a struggle.
+
+398
+00:25:08,370 --> 00:25:20,370
+如果你用5点差价图之类的，应该没问题，对吧？
+If you're on, say, a five-range chart or something, you should be okay, you know?
+
+399
+00:25:20,630 --> 00:25:22,119
+如果你在某些
+If you're on some
+
+400
+00:25:22,119 --> 00:25:23,980
+其实，如果
+of the, you know, if
+
+401
+00:25:23,980 --> 00:25:26,214
+你在看，比如大多数人，
+you're on, say, again, most people,
+
+402
+00:25:26,214 --> 00:25:28,448
+或者说你在看黄金。
+you know, say you're on gold.
+
+403
+00:25:28,630 --> 00:25:29,610
+好，我们来看黄金。
+Okay, let's go to gold.
+
+404
+00:25:29,610 --> 00:25:34,770
+因为黄金有时候成交量分布会比较分散。
+Because gold can be one of those markets that's pretty spotty at times in terms of volume.
+
+405
+00:25:37,830 --> 00:25:42,110
+其实黄金的成交量往往会在关键价位上集中。
+You know, gold volume tends to sort of bunch up at levels.
+
+406
+00:25:43,070 --> 00:25:46,950
+也就是说，有时候它会直接突破某些价位，成交量也很大。
+You know, there's going to be times where it just blows through levels within volume.
+
+407
+00:25:47,170 --> 00:25:50,690
+一个对9，一个对3，零对2，零对8。
+One against nine, one against three, zero against two, zero against eight.
+
+408
+00:25:53,350 --> 00:25:54,710
+这里有一个空头信号。
+There's a bearish one here.
+
+409
+00:25:54,710 --> 00:26:02,730
+但通常，我会把10作为一个参考水平。
+But generally, I use 10 as a good level.
+
+410
+00:26:03,570 --> 00:26:09,450
+你认为反转信号应该用1:1风险回报来剥头皮，还是寻找更大的行情？
+Do you think reversals should be traded with more scalps with a one-to-one risk reward or bigger moves?
+
+411
+00:26:09,770 --> 00:26:14,510
+如果是反转的话，理想情况下我会寻找更大的行情。
+Well, if it's a reversal, ideally, I'm looking for a bigger move.
+
+412
+00:26:17,800 --> 00:26:26,020
+因为根据定义，如果是反转，市场正在反转之前的走势，对吧？
+Because, you know, by definition, if it's a reversal, market is reversing its prior activity, okay?
+
+413
+00:26:26,520 --> 00:26:33,180
+所以，比如在这里，我会寻找超过1:1的风险回报。
+And so, you know, like here, I'd be looking for more than a one-to-one risk reward coming in here.
+
+414
+00:26:33,940 --> 00:26:36,540
+不过，这个会先让你止损出局，然后才继续走。
+Now, this one would stop you out, you know, before it kept going.
+
+415
+00:26:36,740 --> 00:26:43,310
+但问题是，当我用不平衡反转时，我是在趋势中使用它们。
+But now this is where it gets tricky because when I use imbalance reversals, I use them in moves.
+
+416
+00:26:44,770 --> 00:26:47,490
+因为不平衡反转真正帮助我显示的是，
+Because really what an imbalance reversal helps
+
+417
+00:26:47,490 --> 00:26:51,376
+如果是红色K线，是否有卖盘进入市场，
+show me is supply coming into the market if it's
+
+418
+00:26:51,376 --> 00:26:56,428
+或者说如果是绿色K线，就是相反的情况，对吧？
+a red candle or the opposite case if it's a green candle, right?
+
+419
+00:26:56,430 --> 00:26:58,430
+基本上，这里有支撑进来，对吧？
+Basically, support coming in here, right?
+
+420
+00:26:58,530 --> 00:27:00,910
+你能看到这里成交量很大，对吧？
+You can see the heavy volume here, right?
+
+421
+00:27:00,990 --> 00:27:02,371
+25对
+The 25 against
+
+422
+00:27:02,371 --> 00:27:07,207
+6。其实我寻找的是
+six. So, I'm looking for more than
+
+423
+00:27:07,207 --> 00:27:15,497
+任何交易里风险收益比大于1:1的。
+one-to-one on any sort of – out of any of these trades.
+
+424
+00:27:16,190 --> 00:27:25,960
+因为衰竭阶段、摆动高点或低点，其实仍是反转信号，尽管没明确标‘反转’。
+Because exhaustion period, swing high or swing low is actually still a reversal sign, even though it doesn't say reversal.
+
+425
+00:27:26,680 --> 00:27:27,940
+不平衡反转，不用说。
+Imbalanced reversal, obviously.
+
+426
+00:27:29,140 --> 00:27:33,580
+我们叫它不平衡反转，部分原因是我们在找市场反转。
+The reason we call it imbalanced reversal is partly because we're looking for a reversal in the market.
+
+427
+00:27:33,580 --> 00:27:35,260
+但其实我们看到的是
+But what we're seeing is sort
+
+428
+00:27:35,260 --> 00:27:36,940
+相反的情况在发生。
+of the opposite taking place. We're
+
+429
+00:27:36,940 --> 00:27:40,580
+市场里出现了吸收或分销的迹象。
+seeing a sign of absorption or a sign of distribution in the market.
+
+430
+00:27:41,300 --> 00:27:44,440
+放弃价值区间和放弃突出控制点。
+The abandoned value area and abandoned prominent point of control.
+
+431
+00:27:46,520 --> 00:27:54,140
+只要市场从价值角度远离，我就寻找强势行情。
+Anytime you have the market moving away from a value standpoint, I'm looking for a strong move.
+
+432
+00:27:54,140 --> 00:28:02,540
+一般来说，突出控制点意味着市场出现阻挡成交量，对吧？
+And generally, a prominent point of control is a sign of stopping volume taking place in the market, okay?
+
+433
+00:28:03,800 --> 00:28:05,261
+Furkan问，你是否交易
+Furkan asks, do you trade
+
+434
+00:28:05,261 --> 00:28:07,307
+任何订单流对齐的情况，
+anything where the order flow aligns or
+
+435
+00:28:07,307 --> 00:28:09,938
+还是会找额外的汇聚点或特定的交易设置？
+do you look for additional confluences or particular setups?
+
+436
+00:28:10,380 --> 00:28:12,920
+其实，比如这三种交易设置，对吧？
+Well, like, for example, these three setups, okay?
+
+437
+00:28:12,920 --> 00:28:16,680
+好的，我们回到图表这里。
+Okay, so let's go back to the chart here.
+
+438
+00:28:22,890 --> 00:28:27,770
+比如，就在这里，对吧？
+So, okay, so, like, right here, okay?
+
+439
+00:28:27,790 --> 00:28:29,270
+这里出现了放弃价值区间。
+So, I got the abandoned value area.
+
+440
+00:28:29,450 --> 00:28:32,650
+这个刚发生在7分钟前，现在是9点28分。
+This just took place seven minutes ago. It's 928.
+
+441
+00:28:32,770 --> 00:28:33,790
+这里是9点22分。
+Now, this is at 922.
+
+442
+00:28:34,390 --> 00:28:37,170
+是放弃价值区间、放弃突出控制点。
+It's abandoned value area, abandoned point of control.
+
+443
+00:28:37,450 --> 00:28:41,410
+这里并没有不平衡反转。
+Now, this doesn't have an imbalanced reversal in there.
+
+444
+00:28:42,150 --> 00:28:45,470
+好的。但下一根K线有衰竭印记，三个。
+Okay, fine. But the next bar has an exhaustion print, three.
+
+445
+00:28:45,870 --> 00:28:47,150
+进来了，对吧？
+Coming in, okay?
+
+446
+00:28:47,850 --> 00:28:49,291
+即使我在第一根K线
+That would, you know, even
+
+447
+00:28:49,291 --> 00:28:51,308
+没对齐订单流，
+though I don't get the alignment in
+
+448
+00:28:51,308 --> 00:28:53,037
+当我在这里做空时，
+the first bar, when I'm getting
+
+449
+00:28:53,037 --> 00:28:56,208
+这也会增强信心，对吧？
+short here, you know, this just helps add to it, right?
+
+450
+00:28:56,230 --> 00:28:58,070
+我看到衰竭印记、衰竭印记。
+And I see exhaustion print, exhaustion print.
+
+451
+00:28:58,150 --> 00:29:04,470
+所以我会预期市场进一步下跌，和之前上涨的情况类似。
+So, I'd be looking for this market to go further down just as, you know, sort of up here.
+
+452
+00:29:04,470 --> 00:29:06,735
+我们看到的是放弃价值区间，
+We're seeing, you know, abandoned
+
+453
+00:29:06,735 --> 00:29:09,000
+放弃突出控制点，
+value area, abandoned prominent point
+
+454
+00:29:09,000 --> 00:29:11,265
+而且还能看到
+of control, and you also
+
+455
+00:29:11,265 --> 00:29:14,437
+这根K线里有一个不平衡反转。
+have an imbalanced reversal in that bar.
+
+456
+00:29:14,440 --> 00:29:16,336
+所以，它不一定
+So, it doesn't, I don't
+
+457
+00:29:16,336 --> 00:29:18,991
+让信号更强，
+want to say it makes it stronger,
+
+458
+00:29:18,991 --> 00:29:21,266
+但在我看来，
+but it, in my opinion, it
+
+459
+00:29:21,266 --> 00:29:25,058
+这能帮助我确认我正在观察的情况，对吧？
+helps with the confirmation of what I'm looking at, okay?
+
+460
+00:29:25,060 --> 00:29:28,029
+所以，这不一定是
+So, it's not necessarily the
+
+461
+00:29:28,029 --> 00:29:32,185
+我寻找的汇聚信号。我的意思是，
+confluence that I'm looking for. I mean,
+
+462
+00:29:32,185 --> 00:29:37,529
+我可以单独使用其中每一个。
+I could take each one of these by itself.
+
+463
+00:29:37,870 --> 00:29:39,911
+但一旦进入交易，
+But once you're in the
+
+464
+00:29:39,911 --> 00:29:42,769
+对吧？当我开始看到它们
+trade, right? When I start seeing them
+
+465
+00:29:42,769 --> 00:29:47,669
+出现时，这只会让我想更长时间地持有交易。
+appear, it just helps me want to stay in the trade longer.
+
+466
+00:29:47,770 --> 00:29:48,901
+因为记住，对吧？
+Because remember, right?
+
+467
+00:29:48,901 --> 00:29:51,541
+我总是喜欢观察订单流的情况，
+I always like to watch what's happening
+
+468
+00:29:51,541 --> 00:29:53,803
+尤其是在
+in the order flow, especially after
+
+469
+00:29:53,803 --> 00:29:55,688
+你进入交易之后。
+you get into the trade.
+
+470
+00:29:55,810 --> 00:30:02,170
+因为这能帮你决定，是应该更长时间持有，还是应该平仓离场？
+Because that's going to help you decide, should I stay in the trade longer? Or should I cut this trade?
+
+471
+00:30:05,490 --> 00:30:07,132
+Anthony问，超长期国债，好的，
+Anthony asks, ultra bonds, okay,
+
+472
+00:30:07,132 --> 00:30:09,432
+看看这里。关于
+take a look here. In regards to
+
+473
+00:30:09,432 --> 00:30:12,060
+未测试的价值区间和未测试的前端，你是否
+untested value areas and untested front, do you
+
+474
+00:30:12,060 --> 00:30:14,688
+发现这些在价值区间吸收时更强，比如蓝色、紫色，
+find these are much stronger with value area
+
+475
+00:30:14,688 --> 00:30:19,288
+还是关闭原始价值区间的绿色和红色更有效？
+absorption, blue, purple, or is turning off the original value areas green and red?
+
+476
+00:30:19,550 --> 00:30:25,110
+所以，他在说超长期国债。这里是超长期国债的4点范围图。
+So, he's talking about ultra bonds. Ultra's here on a four-range chart.
+
+477
+00:30:25,110 --> 00:30:31,630
+好的，超长期国债有一些不错的波动，一些不错的信号。
+So, okay, you got some decent movement in the ultra bonds. Some nice signals.
+
+478
+00:30:31,910 --> 00:30:34,610
+这里有一个空头信号，这里也有一个不错的空头信号。
+You know, there's a bearish one here. Nice bearish one here.
+
+479
+00:30:36,390 --> 00:30:44,010
+而且，我确实保留了它们。我确实保留了吸收和价值区间吸收的水平。
+Even, you know, I do keep them on. I do keep the absorption, value area absorption levels on.
+
+480
+00:30:45,450 --> 00:30:53,450
+就像你在这里看到的。在哪里呢？对吧？价值区间吸收。
+As you can see right down here. Where is it here? Right? Value area absorption.
+
+481
+00:30:53,970 --> 00:30:55,290
+但这不是必须的。
+But it doesn't have to be.
+
+482
+00:30:55,710 --> 00:30:57,290
+这不会让信号更强。
+It doesn't make it stronger.
+
+483
+00:30:57,510 --> 00:31:04,310
+我会说不是。
+I would say no.
+
+484
+00:31:08,770 --> 00:31:10,208
+也就是说，我还是会
+Meaning, I would
+
+485
+00:31:10,208 --> 00:31:13,564
+接受这个信号，其实
+still take it for, you know, it
+
+486
+00:31:13,564 --> 00:31:19,798
+颜色可能有点难看清楚。
+might be a little bit hard for people to see with these colors.
+
+487
+00:31:19,980 --> 00:31:22,980
+我把颜色调深一点。
+But let me just make the color a little bit stronger here.
+
+488
+00:31:24,280 --> 00:31:28,300
+这个吸收。吸收是蓝色，但看起来偏紫。
+The absorption. The absorption is this blue, but it's sort of this purple color.
+
+489
+00:31:28,400 --> 00:31:30,000
+可能你们有点难看清。
+But it might be a little hard for you guys to see.
+
+490
+00:31:30,000 --> 00:31:42,540
+但我会把它调成深紫色，这样可能更显眼些。
+But what I'll do is I'll make it dark violet so it might stand out a bit more.
+
+491
+00:31:46,290 --> 00:31:52,210
+抱歉。比如这里，这是吸收加突出控制点。
+Excuse me. So, like here, this is absorption plus the prominent point of control.
+
+492
+00:31:52,470 --> 00:31:53,210
+这是吸收。
+This is absorption.
+
+493
+00:31:53,670 --> 00:31:54,330
+这也是吸收。
+This is absorption.
+
+494
+00:31:54,590 --> 00:32:00,730
+蓝色是多头吸收，紫色是空头吸收或者说分销。
+And the blue is bullish absorption. The purple is bearish absorption or distribution.
+
+495
+00:32:02,170 --> 00:32:03,190
+这里有一个。
+There's one here.
+
+496
+00:32:03,690 --> 00:32:04,770
+这里也有一个。
+There's one here.
+
+497
+00:32:05,290 --> 00:32:07,150
+而不是这个或这个。
+As opposed to this one or this one.
+
+498
+00:32:07,850 --> 00:32:11,850
+其实，这是吸收加突出控制点。
+You know, this is the absorption with the prominent point of control.
+
+499
+00:32:11,850 --> 00:32:19,990
+老实说，我认为这不会让信号更强，因为我真正看的是价值区间。
+So, honestly, I don't think it makes it any stronger because really what I'm looking at is the value area.
+
+500
+00:32:20,130 --> 00:32:23,930
+顶多多满足一个条件。
+I mean, if anything, it might just check an extra box.
+
+501
+00:32:24,090 --> 00:32:25,950
+但我还是会找它。
+But I would still look for it.
+
+502
+00:32:25,950 --> 00:32:27,517
+不过，其实
+But, you know,
+
+503
+00:32:27,517 --> 00:32:31,175
+即使没有吸收，我也不会放弃交易，
+I wouldn't not trade it if it
+
+504
+00:32:31,175 --> 00:32:35,355
+因为我更关注的是
+didn't have the absorption because really what I'd
+
+505
+00:32:35,355 --> 00:32:42,148
+价值区间是否未被回踩。
+be more interested in is the value area not being traded back into.
+
+506
+00:32:42,910 --> 00:32:48,490
+好的。超期国债是个很不错的交易市场。
+Okay. But ultra bonds is a nice market to trade.
+
+507
+00:32:48,810 --> 00:32:49,610
+其实，这里有一个。
+You know, here's one.
+
+508
+00:32:49,750 --> 00:32:50,150
+这里有一个。
+Here's one.
+
+509
+00:32:50,190 --> 00:32:53,430
+但这里没有突出控制点，只有吸收。
+But you don't have the prominent point of control. You just have the absorption.
+
+510
+00:32:54,090 --> 00:32:58,390
+高点有吸收，或者说是分销，低点也有吸收。
+You got absorption, distribution rather, up at this high, absorption down at this low.
+
+511
+00:32:58,390 --> 00:33:08,800
+Ben 问，抱歉如果已经讲过，怎么区分吸收和非吸收？
+So, Ben asks, sorry if you already said this, what makes it distinguish as absorption versus non-absorption?
+
+512
+00:33:11,400 --> 00:33:17,493
+其实，我们有自己的判断方法，基于它在价值区间内的交易方式，
+Well, we have our way of determining that based on how it's
+
+513
+00:33:17,493 --> 00:33:21,555
+以及成交量
+trading inside the value area, how the volume
+
+514
+00:33:21,555 --> 00:33:26,633
+在价值区间内的分布情况，来判断是否是吸收信号，
+is being distributed inside the value area to determine if
+
+515
+00:33:26,633 --> 00:33:34,758
+比如是多头K线还是空头K线。
+it's a sign of absorption, if it was, you know, a bullish candle or the opposite.
+
+516
+00:33:34,960 --> 00:33:40,290
+虽然我们叫它吸收，其实也可以称为吸收分销。
+Even though we call it absorption, we could have called it absorption distribution.
+
+517
+00:33:40,490 --> 00:33:41,970
+我们只是简称为吸收。
+We just call it absorption for short.
+
+518
+00:33:42,170 --> 00:33:44,512
+但空头信号其实是
+But the bearish sign is really
+
+519
+00:33:44,512 --> 00:33:46,854
+分销，成交量在
+distribution, the way volume is being
+
+520
+00:33:46,854 --> 00:33:51,148
+空头价值区间内红色K线中的表现。
+handled inside of a bearish value area on a red candle.
+
+521
+00:33:51,150 --> 00:33:53,576
+但这个，我不能
+But that's, I can't
+
+522
+00:33:53,576 --> 00:33:57,216
+详细讲计算方法，
+get into how we calculate it,
+
+523
+00:33:57,216 --> 00:33:59,642
+但这就是，其实
+but that's what, that's
+
+524
+00:33:59,642 --> 00:34:03,888
+基本部分。
+sort of the basic part of it.
+
+525
+00:34:05,170 --> 00:34:07,430
+比如，这里有一个很典型的耗尽印记。
+You know, up here you got a nice exhaustion print.
+
+526
+00:34:07,790 --> 00:34:09,530
+比如，如果我
+You know, if I
+
+527
+00:34:09,530 --> 00:34:12,141
+在这里打开耗尽印记，
+were to turn on exhaustion prints
+
+528
+00:34:12,141 --> 00:34:13,881
+利率产品很适合用耗尽印记，
+as well here, you
+
+529
+00:34:13,881 --> 00:34:17,797
+不一定要在摆动点用，但保持在9。
+know, interest rates are great for using exhaustion prints.
+
+530
+00:34:17,800 --> 00:34:22,920
+但你可以看到，这里是空头耗尽印记。
+You know, you don't necessarily need to use them at swings, but keep it at nine.
+
+531
+00:34:30,139 --> 00:34:33,560
+还有未被回踩的价值区间。
+But you can see here is bearish exhaustion print, bearish exhaustion print.
+
+532
+00:34:33,719 --> 00:34:36,719
+这里有价值区间和突出控制点，对吧？还有耗尽印记，对吧？
+You got value areas that are not traded back into.
+
+533
+00:34:36,860 --> 00:34:41,560
+这里有价值区间和突出控制点，对吧？还有耗尽印记，对吧？
+Here you got the value area and the prominent point of control, right? Then exhaustion prints, right?
+
+534
+00:34:41,580 --> 00:34:43,100
+这里有一个多头耗尽印记。
+You got a bullish exhaustion print here.
+
+535
+00:34:43,699 --> 00:34:46,139
+接着是一个空头耗尽印记，对吧？
+Then it follows it up with a bearish one, right?
+
+536
+00:34:46,280 --> 00:34:50,420
+下跌过程中放弃的价值区间、放弃的突出控制点。
+Abandoned value area, abandoned point of control as we're going down.
+
+537
+00:34:50,420 --> 00:34:55,620
+所以，其实你在讲一种汇聚。
+So, you know, you talk about sort of confluence.
+
+538
+00:34:57,960 --> 00:35:00,060
+好的，我已经有耗尽印记了。
+Well, I have already exhaustion prints.
+
+539
+00:35:00,140 --> 00:35:03,620
+我知道我在这里和这里都有耗尽印记，对吧？
+I know I've got these exhaustion prints right here and here, right?
+
+540
+00:35:03,780 --> 00:35:04,813
+然后我，其实，
+Then I'm, you know,
+
+541
+00:35:04,813 --> 00:35:06,362
+如果我单独训练耗尽印记，
+if I was training exhaustion prints
+
+542
+00:35:06,362 --> 00:35:07,395
+其实，
+by themselves, you know,
+
+543
+00:35:07,395 --> 00:35:09,719
+这里会收到一个不错的空头信号。
+I have a nice bearish signals coming in here.
+
+544
+00:35:12,030 --> 00:35:14,230
+这时候就会想，好，我该怎么办？
+Then it's just sort of, okay, what do I do?
+
+545
+00:35:14,330 --> 00:35:17,610
+其实，这里还有一个多头信号，我要平仓还是继续持有？
+You know, I got a bullish one coming in here. Do I cut it or what?
+
+546
+00:35:17,670 --> 00:35:19,610
+然后这里又出现一个不错的空头信号。
+And then I get the nice bearish signal here.
+
+547
+00:35:19,810 --> 00:35:21,230
+其实，我可以继续做空下去。
+You know, I can take it further down.
+
+548
+00:35:21,230 --> 00:35:24,160
+或者我在这里平仓，
+Or if I cut it here
+
+549
+00:35:24,160 --> 00:35:27,090
+基于这个多头耗尽印记，
+off this bullish exhaustion print, I
+
+550
+00:35:27,090 --> 00:35:32,950
+可以在这里再次做空，对吧？赶上这波下跌。
+can get short again here, right? I catch that move down, okay?
+
+551
+00:35:33,090 --> 00:35:39,130
+所以这些其实是欧元的三个核心交易设置。
+So those are sort of the top three setups for euro currency.
+
+552
+00:35:39,590 --> 00:35:41,690
+而且，这些设置可以用在任何市场。
+And, again, you know, these can be used in any market.
+
+553
+00:35:41,950 --> 00:35:44,190
+不一定只能用在欧元上。
+They don't necessarily have to just be used for euro currency.
+
+554
+00:35:44,570 --> 00:35:46,510
+比如利率市场也能用。
+Look at them in interest rates.
+
+555
+00:35:46,510 --> 00:35:49,283
+其实，我确实有一套
+You know, I really have sort of a
+
+556
+00:35:49,283 --> 00:35:52,056
+自己喜欢的交易设置，
+set of setups that I like to look
+
+557
+00:35:52,056 --> 00:35:54,829
+而这些肯定都包含在内，
+for, and these are definitely in there, sort
+
+558
+00:35:54,829 --> 00:36:01,069
+或者说，我不想说是前三，但它们绝对是最重要的。
+of, I don't want to say the top three, but they're definitely the ones that matter the most.
+
+559
+00:36:01,110 --> 00:36:04,010
+今天我想讲的是空头Delta移动。
+So what I want to talk about today are sort of the bearish delta shifts.
+
+560
+00:36:04,070 --> 00:36:07,490
+先快速说一下，是什么导致Delta移动，对吧？
+So just really quick, you know, what causes delta shifts, right?
+
+561
+00:36:07,570 --> 00:36:09,841
+Delta移动就是Delta的大幅变化，
+Delta shifts are those big changes
+
+562
+00:36:09,841 --> 00:36:12,112
+在 Delta 的，其实就是 Delta,
+in delta from, you know, delta,
+
+563
+00:36:12,112 --> 00:36:17,789
+每根K线都有Delta，对吧？我们之前讲过Delta是什么。
+you know, every bar has a delta, right? We talked about what a delta is.
+
+564
+00:36:18,070 --> 00:36:21,830
+它是一根K线中净主动买入和主动卖出的差值。
+It's the difference between the net aggressive buying and aggressive selling in a bar.
+
+565
+00:36:22,670 --> 00:36:24,850
+而且，它是会变化的。
+And, you know, it can change.
+
+566
+00:36:24,950 --> 00:36:27,480
+比如，前一根K线可能有一个小的
+You know, one bar could have a small
+
+567
+00:36:27,480 --> 00:36:29,378
+负Delta，
+negative delta. Then the next bar
+
+568
+00:36:29,378 --> 00:36:31,908
+然后下一根K线可能有一个大的负Delta，这意味着什么。
+could have a big negative. What that means.
+
+569
+00:36:31,910 --> 00:36:34,642
+现在，是什么导致
+Now, sort of, you know, what causes that,
+
+570
+00:36:34,642 --> 00:36:37,374
+这些Delta移动发生的，显然是新闻事件，
+these delta shifts to happen, obviously news events,
+
+571
+00:36:37,374 --> 00:36:40,106
+比如重要经济数据发布，
+you know, a major economic data release like
+
+572
+00:36:40,106 --> 00:36:42,838
+像非农就业数据或美联储意外公告，
+nonfarm payrolls or surprise announcement from the Fed
+
+573
+00:36:42,838 --> 00:36:45,570
+或者说特朗普的一条推文，
+or even a tweet from Trump, you know,
+
+574
+00:36:45,570 --> 00:36:57,866
+其实我最近尽量远离推特，那里真的会让人陷入无底深渊。但这类事件会触发交易者的即时反应，
+is, you know, honestly, I've been trying to stay off Twitter because it gets, you really go down some really some dark rabbit holes there. But stuff like that can trigger instant reaction from traders, right?
+
+575
+00:36:57,950 --> 00:37:02,195
+算法和机构交易者会立即根据
+Algos and institutional traders immediately execute large market orders based on the
+
+576
+00:37:02,195 --> 00:37:05,732
+新闻执行大额市价单，
+news. They're going to get longer and get short based
+
+577
+00:37:05,732 --> 00:37:14,929
+做多或做空，基于进入市场的信息。而这可能导致Delta出现大规模单边爆发，因为这些交易者争相建仓。
+off of what is information that's hitting the market. And that could result in massive one-sided delta bursts as these traders scramble to position themselves, right?
+
+578
+00:37:14,970 --> 00:37:23,250
+比如，就业报告好于预期，可能引发股指期货出现大幅正Delta激增，因为多头积极入场。
+For example, a better-than-expected jobs report might cause a huge positive delta spike in stock index futures as buyers aggressively enter the market.
+
+579
+00:37:23,430 --> 00:37:25,730
+或者我们可能突破了关键价位，
+Or we could be breaking key levels, right?
+
+580
+00:37:26,150 --> 00:37:28,964
+可能是价格接近一个被多次测试的重要支撑或阻力位，
+Maybe the price approaches a significant support or resistance level
+
+581
+00:37:28,964 --> 00:37:31,215
+已经被多次验证过。其实
+that has been tested multiple times. You know,
+
+582
+00:37:31,215 --> 00:37:34,029
+突破时往往会伴随Delta激增。
+a breakout can be accompanied by a surge in delta.
+
+583
+00:37:34,030 --> 00:37:39,050
+止损单会被触发，突破交易者开始跟进，
+A stop-loss orders can be triggered and breakout traders start jumping in, right?
+
+584
+00:37:39,150 --> 00:37:42,102
+这就是，
+That's, you know, when people talk about triggering
+
+585
+00:37:42,102 --> 00:37:45,792
+人们说的触发止损，或者说止损狩猎，
+stops, right, or a stop run, that's why people trigger
+
+586
+00:37:45,792 --> 00:37:49,482
+因为他们想要制造一种市场开始突破的假象。
+stops is because they want to, one, give the impression
+
+587
+00:37:49,482 --> 00:38:02,029
+当市场突破时，他们试图吸引其他交易者，那些交易突破的交易者进场跟进。
+that the market is starting to break out. And as it's breaking out, what they're trying to do is attract other traders, the traders that trade breakouts, to come in and trade that breakout.
+
+588
+00:38:02,030 --> 00:38:07,130
+好的，那你经常会看到Delta会在突破方向上激增。
+Okay, then what you often will have is delta will explode in the direction of the breakout.
+
+589
+00:38:09,150 --> 00:38:12,332
+但是，
+But, you know, that's when people say, oh,
+
+590
+00:38:12,332 --> 00:38:15,514
+他们在触发止损。触发止损的最终目的是吸引其他交易者进场。
+they're triggering stops. That's what the end game
+
+591
+00:38:15,514 --> 00:38:19,889
+基本上，大型机构订单会导致Delta激增。
+is for triggering stops is attracting other traders into the market.
+
+592
+00:38:22,520 --> 00:38:27,800
+一个机构想要建仓或平仓大头寸，
+Basically, large institutional orders are going to cause a surge in delta, right?
+
+593
+00:38:27,800 --> 00:38:30,541
+可能会尝试慢慢悄悄地执行。
+An institution looking to enter or exit a large position
+
+594
+00:38:30,541 --> 00:38:32,734
+然而，有时候他们需要快速执行订单的大部分。
+may try to do so quietly over time.
+
+595
+00:38:32,734 --> 00:38:36,298
+这笔订单的执行会表现为突然的大量Delta，
+However, sometimes they need to execute a significant portion of the order quickly.
+
+596
+00:38:36,960 --> 00:38:41,240
+我这么说的意思是，
+This order execution will appear as a sudden substantial delta first.
+
+597
+00:38:41,400 --> 00:38:44,095
+其实机构会竭尽全力隐藏自己在市场中的操作，
+And what do I mean by
+
+598
+00:38:44,095 --> 00:38:46,790
+也就是说，
+that is, you know, institutions, they
+
+599
+00:38:46,790 --> 00:38:52,180
+他们会竭尽全力隐藏自己在市场中的操作。
+try their darndest to hide what they're doing in the market, right?
+
+600
+00:38:52,180 --> 00:38:59,900
+他们不希望别人知道自己正在买500手E-mini，或者说买300手黄金合约。
+They don't want people to know that they're trying to buy 500 e-minis or, you know, buy 300 gold contracts.
+
+601
+00:39:00,040 --> 00:39:04,700
+他们会尽量分批悄悄建仓。
+They're trying to piece it in as quietly as possible if they can.
+
+602
+00:39:05,000 --> 00:39:08,840
+但有时候他们就是藏不住。
+But there's going to be times where they just can't.
+
+603
+00:39:08,840 --> 00:39:11,886
+其实，
+So, you know, really what
+
+604
+00:39:11,886 --> 00:39:15,541
+他们——所有这些交易
+they're – and all that trading shows
+
+605
+00:39:15,541 --> 00:39:24,070
+都会在足迹图里体现，对吧？因为这是实际成交量。
+up in the footprint chart, okay? Because it's volume. It's actual volume that traded.
+
+606
+00:39:25,700 --> 00:39:26,722
+所以，
+So, you know, large
+
+607
+00:39:26,722 --> 00:39:28,255
+大机构，其实，
+institutions, you know, they've got to
+
+608
+00:39:28,255 --> 00:39:29,277
+需要买入2000手E-Mini。
+buy 2,000 e-minis. They've got
+
+609
+00:39:29,277 --> 00:39:32,343
+必须现在就买，因为预期价格会上涨。
+to buy them now, right, because they're expecting price to go up.
+
+610
+00:39:32,960 --> 00:39:40,360
+得尽快执行一大部分，同时避免冲击市场。
+They've got to execute a portion of it, a large portion, as quickly as possible without impacting the market.
+
+611
+00:39:40,360 --> 00:39:42,090
+所以，他们会直接吃掉
+So, they're going to lift
+
+612
+00:39:42,090 --> 00:39:44,513
+现有的卖盘。
+the offers that are there. They're going
+
+613
+00:39:44,513 --> 00:39:46,936
+还会做一些买盘。
+to work some bids. But they do
+
+614
+00:39:46,936 --> 00:39:53,859
+但必须早点积极进场，因为知道自己的买单会影响市场。
+need to be aggressive early because they know that their buying is going to have that impact on the market.
+
+615
+00:39:54,120 --> 00:39:55,182
+因为如果有人发现，
+Because if someone sees,
+
+616
+00:39:55,182 --> 00:39:56,510
+‘操，1000手’
+oh, shit, you know, 1,000 just
+
+617
+00:39:56,510 --> 00:39:58,103
+刚在卖价成交，
+traded here on the offer, they're
+
+618
+00:39:58,103 --> 00:40:02,353
+也会跟进买入，对吧？有些算法就是专门盯这个的。
+also going to come in and start buying, right? There's algos that are designed for that.
+
+619
+00:40:03,040 --> 00:40:05,460
+现在，Delta暴发也有缺陷。
+Now, there are drawbacks to delta burst.
+
+620
+00:40:05,460 --> 00:40:11,540
+陷阱交易者是让很多人迷惑的点。
+You know, trap traders is something that people sort of get lost in.
+
+621
+00:40:11,680 --> 00:40:18,700
+吸收其实也是陷阱交易的一种，因为有人在吸收所有积极交易。
+You know, absorption is a form of trap traders because someone is absorbing all that aggressive trading that's taking place.
+
+622
+00:40:19,280 --> 00:40:21,906
+所以，在关键阻力位出现大量正Delta暴发，
+So, a massive positive delta burst at a
+
+623
+00:40:21,906 --> 00:40:23,876
+如果没能
+key resistance level that fails to
+
+624
+00:40:23,876 --> 00:40:27,159
+拉升价格，其实是空头信号，对吧？
+push the price higher is actually a bearish signal, right?
+
+625
+00:40:27,160 --> 00:40:32,380
+这也引出了‘第二档失衡’或‘不平衡反转’的概念。
+And that sort of leans into the whole concept of the second slot imbalance or the imbalance reversal.
+
+626
+00:40:32,740 --> 00:40:34,919
+有人在上面放了一个
+Someone is sitting up there with a
+
+627
+00:40:34,919 --> 00:40:37,721
+大额被动单来吸收所有积极买单。这说明
+large passive order absorbing the aggressive buying. It shows
+
+628
+00:40:37,721 --> 00:40:39,900
+尽管有积极买入，
+that despite the aggressive buying, a large
+
+629
+00:40:39,900 --> 00:40:44,258
+但大额被动卖家吸收了所有买压，同时没让价格上涨。
+passive seller or sellers absorbed all that buying pressure without letting price move up.
+
+630
+00:40:45,140 --> 00:40:46,840
+所以，这些积极买家
+So, these aggressive buyers are
+
+631
+00:40:46,840 --> 00:40:49,220
+现在被套在亏损头寸里。他们可能
+now trapped in losing positions. They may
+
+632
+00:40:49,220 --> 00:40:53,980
+会被迫在某个时点清仓，进一步增加卖压，对吧？
+be forced to liquidate at some point, which adds to the selling pressure, okay?
+
+633
+00:40:53,980 --> 00:40:55,327
+所以有时候，比如如果
+So, sometimes, you know, if
+
+634
+00:40:55,327 --> 00:40:57,213
+你看到非常强的正Delta出现在
+you see very strong positive delta at
+
+635
+00:40:57,213 --> 00:41:00,178
+高点，而市场没再上涨，这就是关键。
+a high and the market's not going higher, that's the key.
+
+636
+00:41:00,800 --> 00:41:02,570
+正Delta，强正Delta
+Positive delta, strong positive delta
+
+637
+00:41:02,570 --> 00:41:05,048
+出现在高点，而市场没
+at a high and the market's not
+
+638
+00:41:05,048 --> 00:41:10,359
+继续上涨，这说明交易者被吸引进市场并被套牢。
+going higher is a sign of traders getting sucked into the market and getting trapped.
+
+639
+00:41:12,840 --> 00:41:16,520
+然后，这些交易者最终会意识到：嘿，我错了，对吧？
+And then, eventually, those traders are going to realize, hey, you know what? I'm wrong, right?
+
+640
+00:41:16,520 --> 00:41:17,780
+这个市场不会上涨，对吧？
+This market's not going up, right?
+
+641
+00:41:17,780 --> 00:41:22,720
+你有多少次在高点附近买入，以为市场会继续上涨，结果却反转了？
+How many times have you bought near the high thinking the market's going higher only for it to reverse?
+
+642
+00:41:22,940 --> 00:41:24,400
+在某种程度上，你被套牢了。
+In a sense, you were trapped.
+
+643
+00:41:24,400 --> 00:41:27,800
+所以，足迹图在这里至关重要。
+So, the footprint chart is essential here.
+
+644
+00:41:27,880 --> 00:41:33,200
+它会显示某个价格上出现大成交量和高正Delta，但价格没能上涨。
+It's going to show that large volume and high positive delta at a single price with no upward progress.
+
+645
+00:41:34,380 --> 00:41:39,500
+另外，大Delta爆发也可能标志着行情的顶点或动能衰竭。
+Two other drawbacks is a large delta burst can also signal the climax or exhaustion of a move.
+
+646
+00:41:40,140 --> 00:41:43,224
+比如，在长期上涨趋势后，最后一次大规模正Delta
+For example, after a prolonged uptrend, a final massive positive
+
+647
+00:41:43,224 --> 00:41:45,691
+激增可能代表最后一批
+delta spike might be representative of the last
+
+648
+00:41:45,691 --> 00:41:50,318
+多头因恐高（FOMO）进入市场，对吧？
+of the buyers entering the market out of FOMO, right? Fear of missing out, right?
+
+649
+00:41:50,320 --> 00:41:51,805
+我们在比特币上看到过很多这种情况，
+We saw that with, you see that
+
+650
+00:41:51,805 --> 00:41:52,865
+人们总是恐高地涌入市场。
+with Bitcoin a lot. People
+
+651
+00:41:52,865 --> 00:41:55,198
+总是FOMO进入市场，我得做多。
+are always FOMOing into the market. I got to get long.
+
+652
+00:41:56,000 --> 00:42:00,569
+所以，当这最后一波买盘衰竭后，
+So, once this last burst of buying is exhausted, there are fewer
+
+653
+00:42:00,569 --> 00:42:03,615
+就没有足够的新多头来维持上涨动能，
+new buyers to sustain the upward momentum, making
+
+654
+00:42:03,615 --> 00:42:05,519
+这使得反转的可能性大大增加。
+a reversal much more likely.
+
+655
+00:42:06,120 --> 00:42:11,586
+现在，在某些市场中，算法可能制造Delta爆发的假象
+Now, in some markets, algorithms may create the illusion of delta burst
+
+656
+00:42:11,586 --> 00:42:15,230
+来诱使交易者入场，然后
+to entice traders to jump in, only to
+
+657
+00:42:15,230 --> 00:42:18,418
+撤回订单并反转价格。
+pull their orders and reverse the price.
+
+658
+00:42:18,420 --> 00:42:20,900
+其实现在不太常见了，但偶尔还是会发生。
+You know, not so much now, but it does happen.
+
+659
+00:42:22,460 --> 00:42:25,236
+其实这是其中一种
+You know, it's one of those
+
+660
+00:42:25,236 --> 00:42:28,012
+情况，其实我
+things where, you know, I don't
+
+661
+00:42:28,012 --> 00:42:30,788
+我不太想讨论市场操纵的问题。
+like to talk about market manipulation.
+
+662
+00:42:30,788 --> 00:42:33,564
+这确实会发生，但其实，
+It does happen, but, you know,
+
+663
+00:42:33,564 --> 00:42:46,058
+人们其实是在，比如，如果你被抓到操纵市场，对吧？每年确实有人因为干这种事被抓，比如翻盘，对吧？
+really people are trying to, you know, if you get caught doing some market manipulation. And people do get caught every year doing this stuff, flipping, right?
+
+664
+00:42:46,080 --> 00:42:47,821
+他们都听说过Paul Rotter，
+They all heard of Paul Rotter,
+
+665
+00:42:47,821 --> 00:42:49,562
+那个翻盘手。他
+you know, the flipper. He did
+
+666
+00:42:49,562 --> 00:42:55,078
+是在翻盘还合法的时候干的，对吧？当时没有禁止的规则。现在干这种事是违法的。
+it when it was legal, right? There wasn't rules against it. Now, to do stuff like that, it's illegal.
+
+667
+00:42:55,080 --> 00:42:58,628
+其实，他们会进场，在卖盘
+You know, so they'll come in, buy a
+
+668
+00:42:58,628 --> 00:43:02,176
+上大量买入，然后挂一些买单，
+bunch on the offer, have some bids working,
+
+669
+00:43:02,176 --> 00:43:07,498
+但接着他们会撤掉买单，市场就会下跌，对吧？
+but then they'll pull their bids and the market will drop, right?
+
+670
+00:43:07,500 --> 00:43:11,572
+现在，这种情况在Delta所代表的已执行成交量中较少见，
+Now, while this is less common with executed volume, which delta represents,
+
+671
+00:43:11,572 --> 00:43:14,286
+但这阵阵的活动可能是更大的操纵策略的一部分，
+the flurry of activity can be part of
+
+672
+00:43:14,286 --> 00:43:18,018
+目的是为了骗那些经验不足的交易者，对吧？
+a larger manipulated strategy designed to trick less experienced traders, right?
+
+673
+00:43:18,040 --> 00:43:18,780
+散户交易者。
+The retail traders.
+
+674
+00:43:19,380 --> 00:43:23,412
+现在，今天我要讲的空头版本的场景，
+Now, scenarios I'm going to cover today of the bearish
+
+675
+00:43:23,412 --> 00:43:26,637
+小负Delta到大负Delta，
+version, small negative to big negative, average negative
+
+676
+00:43:26,637 --> 00:43:29,056
+平均负Delta到大负Delta，
+to big negative, big positive to
+
+677
+00:43:29,056 --> 00:43:34,298
+大正Delta到小负Delta，小正Delta到大负Delta，以及大正Delta到大负Delta。
+small negative, small positive to big negative, and big positive to big negative.
+
+678
+00:43:34,300 --> 00:43:37,271
+现在，小负Delta到大负Delta，
+Now, small negative to big negative,
+
+679
+00:43:37,271 --> 00:43:40,242
+还有小正Delta，
+and small positive, you know, one
+
+680
+00:43:40,242 --> 00:43:43,213
+1和4其实有点类似，
+and four are kind of similar
+
+681
+00:43:43,213 --> 00:43:47,669
+因为你是从小数字变成大数字。
+because you're going from small numbers to big numbers.
+
+682
+00:43:48,410 --> 00:43:51,956
+有时候，当你从小数字跳到特别大的时候，
+And sometimes I'm a little bit wary of when you
+
+683
+00:43:51,956 --> 00:43:54,083
+我会有点谨慎，
+jump from small to really big,
+
+684
+00:43:54,083 --> 00:43:57,629
+这可能是某个数据发布的结果。
+it could be a result of a number coming out.
+
+685
+00:43:59,580 --> 00:44:03,940
+而且，其实你还得结合市场背景来看，好吗？
+And depending on, you know, you also got to put it in context of the market, okay?
+
+686
+00:44:08,410 --> 00:44:11,990
+好，那先说小负Delta到大负Delta，好吗？
+All right, so small negative to big negative, okay?
+
+687
+00:44:11,990 --> 00:44:14,650
+这里市场基本上是在横盘。
+So here's the market just basically going sideways.
+
+688
+00:44:14,830 --> 00:44:15,550
+这儿有什么？
+What have we got here?
+
+689
+00:44:15,630 --> 00:44:20,090
+原油，Delta很小，然后突然，被重挫，对吧？
+Crude oil, you know, small deltas, and then wham, it gets slammed, right?
+
+690
+00:44:20,150 --> 00:44:25,550
+从-25、-12 Delta变成-548，对吧？
+It goes from minus 25, minus 12 delta to minus 548, right?
+
+691
+00:44:25,570 --> 00:44:26,690
+这里直接被砸下去了。
+It just gets slammed here.
+
+692
+00:44:27,390 --> 00:44:28,998
+显然，其实
+Obviously, you know, either
+
+693
+00:44:28,998 --> 00:44:31,410
+看到这种情况时，
+when you see something like this
+
+694
+00:44:31,410 --> 00:44:34,626
+可能是某个数据出来了，或者有消息
+happen, it's a number came out or news
+
+695
+00:44:34,626 --> 00:44:39,450
+但你仍然得观察后续走势，对吧？
+came out, but you still got to watch the follow through, okay?
+
+696
+00:44:39,450 --> 00:44:42,102
+我不太喜欢这种即时的条件反射式反应，
+I don't necessarily like the immediate knee-jerk
+
+697
+00:44:42,102 --> 00:44:44,754
+比如，哦，我们刚刚，
+reaction like, oh, we just, you know,
+
+698
+00:44:44,754 --> 00:44:47,027
+大量空头在这里涌入。我
+massive sellers coming in here. I
+
+699
+00:44:47,027 --> 00:44:54,227
+得做空，但我不喜欢在高波动K线上做空，尤其是行情由这种K线引发的。
+got to get short, especially if the move, I don't like to get short off of high volatile candles.
+
+700
+00:44:54,510 --> 00:44:58,347
+那我说的高波动K线是什么意思？
+And what do I mean by high
+
+701
+00:44:58,347 --> 00:45:02,184
+高波动K线是指
+volatile candles? High volatile candles are those
+
+702
+00:45:02,184 --> 00:45:09,309
+波动范围很大的K线，因为消息出来后，交易者都在慌乱调整。
+that have big ranges because basically news came out and traders are scrambling.
+
+703
+00:45:09,470 --> 00:45:12,305
+这就是让这根K线
+That's what's making this bar go
+
+704
+00:45:12,305 --> 00:45:14,667
+从69.20，其实，跌到
+from 69.20, you know, down to
+
+705
+00:45:14,667 --> 00:45:17,975
+基本68.68，大约50美分的跌幅
+basically 68.68. So about a 50-cent move in
+
+706
+00:45:17,975 --> 00:45:23,173
+一分钟内，这是交易者在调整仓位，对吧？
+one minute is something where people are readjusting their positions, okay?
+
+707
+00:45:24,400 --> 00:45:26,380
+市场会继续下跌吗？会，确实会。
+Does the market go lower? Yeah, it does.
+
+708
+00:45:26,380 --> 00:45:28,440
+我是说，你可以在这根K线的低点被跌破后做空，
+I mean, you could short here once
+
+709
+00:45:28,440 --> 00:45:30,500
+我们开始跌破
+we start taking out the low of
+
+710
+00:45:30,500 --> 00:45:32,266
+但说实话，
+that candle, but really what's the,
+
+711
+00:45:32,266 --> 00:45:34,032
+我是说，你刚刚跌了50美分，
+I mean, you just drop 50 cents,
+
+712
+00:45:34,032 --> 00:45:43,450
+然后又跌了20美分。这算不上大行情，对吧？毕竟你的风险可能在行情开始的地方附近。
+and then you just drop another 20 cents. That's not much of a move, you know, considering your risk would be up here, you know, somewhere near, you know, where the move started.
+
+713
+00:45:44,740 --> 00:45:50,340
+所以我对这种从小数字到大数字的情况总是很谨慎，对吧？
+So I'm always wary of those where you go from small numbers to big numbers, okay?
+
+714
+00:45:50,340 --> 00:45:52,380
+再看一个例子，对吧？
+Here's another one, right?
+
+715
+00:45:52,440 --> 00:46:00,560
+它从10到-107，到-29，还有-335。然后回到区间内，然后又跌了。
+It goes from, you know, 10 to minus 107 to minus 29, also minus 335. Then you go inside. Then you drop again.
+
+716
+00:46:00,900 --> 00:46:02,080
+但你能看到这里，对吧？
+But you can see here, right?
+
+717
+00:46:02,340 --> 00:46:03,963
+是的，这是一根做空的好K线
+Yeah, this is a nice bar
+
+718
+00:46:03,963 --> 00:46:05,586
+但
+if you got short on. But
+
+719
+00:46:05,586 --> 00:46:10,998
+然后它就横盘了，还在测试低点，最终确实创了新低。
+then it just sort of goes sideways, and it's still testing the lows. Eventually, it does make a new low.
+
+720
+00:46:11,000 --> 00:46:15,440
+所以当从小负数变成大负数时要小心。
+So be wary when you go from small negatives to big negatives.
+
+721
+00:46:18,910 --> 00:46:23,810
+Furkan 说，有时候我看见大单砸向市场，但价格却纹丝不动。
+Furkan says, sometimes I see a big order hitting the market, but price does not move at all.
+
+722
+00:46:23,910 --> 00:46:28,870
+是不是因为激进交易者在订单簿里看到了大额买盘或卖盘，然后决定吃下它？
+Is this because the aggressive trader sees the big bidder offer in the order book and decides to hit it?
+
+723
+00:46:29,130 --> 00:46:35,050
+其实，当你看到大单砸向市场，但价格没动，基本就是有人在吸收这个单子。
+Well, when you see a big order hitting the market, but price doesn't move, someone's absorbing it, basically.
+
+724
+00:46:35,050 --> 00:46:37,053
+有人正在进场
+You know, someone's coming
+
+725
+00:46:37,053 --> 00:46:40,058
+基本是在支撑市场
+in and basically supporting the market,
+
+726
+00:46:40,058 --> 00:46:44,065
+要么是多头方向
+either, you know, from a bullish side or
+
+727
+00:46:44,065 --> 00:46:55,587
+要么是空头方向。如果大单进入市场，市场应该会突破这些价格水平，对吧？
+from a bearish side. If a big order is coming into the market, the market should be trading through those price levels, okay?
+
+728
+00:46:55,910 --> 00:47:00,790
+如果突破不了，就说明有人在守住这个价位。
+If it can't get through there, there's someone defending that price level.
+
+729
+00:47:00,790 --> 00:47:05,683
+现在，从小幅负 Delta
+Now, the average negative to a
+
+730
+00:47:05,683 --> 00:47:10,576
+到大幅负 Delta，在我看来
+big negative, okay, to me, this
+
+731
+00:47:10,576 --> 00:47:15,469
+这种情况其实
+one is, you know, a bit
+
+732
+00:47:15,469 --> 00:47:22,809
+更适合交易，对吧？
+more, a bit better to trade, I guess, okay?
+
+733
+00:47:23,770 --> 00:47:25,920
+因为这不是突然之间的事
+Because it's not all of a sudden,
+
+734
+00:47:25,920 --> 00:47:28,070
+在我看来，这更说明
+to me, that this is more of,
+
+735
+00:47:28,070 --> 00:47:30,528
+市场里有交易者在活跃交易。
+you know, there's traders active in the market.
+
+736
+00:47:31,490 --> 00:47:32,264
+他们在交易
+They're trading, they're
+
+737
+00:47:32,264 --> 00:47:34,071
+在卖出，但必须在特定时机变得激进
+selling, but they have to get aggressive
+
+738
+00:47:34,071 --> 00:47:37,169
+必须在市场里展现自己的激进态度。
+at certain times. They have to show their aggression in the market.
+
+739
+00:47:37,690 --> 00:47:39,250
+所以你能在这里看出来，对吧？
+So you see it right here, right?
+
+740
+00:47:39,250 --> 00:47:48,150
+这里到那里，Delta 从 -276 到 -1300，然后这里到那里，从 -200 到 -1200。
+It goes from minus 276 to minus 1,300 here to here, then minus 200 to minus 1,200, right, here to here.
+
+741
+00:47:48,290 --> 00:47:53,050
+这种抛压更持续，对吧？
+It's more consistent, that selling pressure, okay?
+
+742
+00:47:53,690 --> 00:48:00,990
+这是从 -95 到 -900，差不多是 10 倍，但基本就到这了。
+Here's a small to a big, minus 95 to minus 900. So it's like 10 times, but that's sort of it already.
+
+743
+00:48:01,250 --> 00:48:03,517
+其实你已经看到了持续的抛压
+You know, you had that consistent selling
+
+744
+00:48:03,517 --> 00:48:05,784
+强劲的抛压不断涌入
+coming in, you know, strong selling, and
+
+745
+00:48:05,784 --> 00:48:07,727
+然后抛压更强了
+then, hmm, get more. You know,
+
+746
+00:48:07,727 --> 00:48:09,994
+抛压依然强劲，接着
+strong selling still, and then you come
+
+747
+00:48:09,994 --> 00:48:16,148
+又加大抛压，然后抛压变小，最后在这里看到一波爆发。
+in with more, and then you get small selling, and you sort of get that last burst right here.
+
+748
+00:48:16,230 --> 00:48:17,630
+现在，市场还能继续下跌吗？
+Now, can the market keep going down?
+
+749
+00:48:17,730 --> 00:48:18,937
+能，但
+Yeah, it can, but
+
+750
+00:48:18,937 --> 00:48:21,352
+到这个点，这就是 FOMO 的时刻
+by this point, this is where that FOMO
+
+751
+00:48:21,352 --> 00:48:23,465
+对我来说，这时候FOMO开始进入
+is, to me, is coming into the
+
+752
+00:48:23,465 --> 00:48:30,107
+市场，因为大家都在做空。其实，最后一批想做空的交易者正在进入这个市场。
+market because everyone was getting short. Now, sort of the last traders that want to get short are coming into that market.
+
+753
+00:48:34,200 --> 00:48:36,209
+Delta又回到了大幅负值，对吧，
+Average to big again, you
+
+754
+00:48:36,209 --> 00:48:38,218
+从-72到-300。然后
+know, minus 72 to minus 300. Then
+
+755
+00:48:38,218 --> 00:48:41,432
+这里又有一大笔进来，
+you got the big chunk coming in here,
+
+756
+00:48:41,432 --> 00:48:49,469
+是-1600。但其实你应该已经注意到Delta从-72跳到-300这个变化了。
+minus 1,600. But you should have already been picked up on sort of this jump in delta from minus 72 to minus 300.
+
+757
+00:48:51,480 --> 00:49:01,580
+也就是说，先是大幅正Delta，然后是小幅负Delta。
+You know, big positive, the small negative.
+
+758
+00:49:04,380 --> 00:49:10,280
+有时候这种走势会触发一个不错的反转，对吧？
+Sometimes these moves can trigger a nice reversal, okay?
+
+759
+00:49:10,700 --> 00:49:15,084
+因为最后一波FOMO
+Because you sort of get that last FOMO
+
+760
+00:49:15,084 --> 00:49:22,209
+买盘涌入，导致大幅正Delta进入市场。
+buying coming in, causing the big positive delta to come into the market.
+
+761
+00:49:24,860 --> 00:49:28,220
+但接着你会开始看到激进的卖盘涌入，对吧？
+But then you start seeing the aggressive selling coming in, right?
+
+762
+00:49:28,220 --> 00:49:30,014
+可能有人在止盈，其实
+Maybe people are taking profits, you
+
+763
+00:49:30,014 --> 00:49:31,808
+他们在退出
+know, they're getting out of the
+
+764
+00:49:31,808 --> 00:49:35,098
+头寸，因为他们认为这个市场再也涨不上去了。
+position because they don't think this market can go any higher.
+
+765
+00:49:36,000 --> 00:49:39,320
+你可以看到，Delta从942降到了153。
+And you can see it goes from 942 to just 153.
+
+766
+00:49:39,740 --> 00:49:41,805
+但接着它就
+But then it just sort of
+
+767
+00:49:41,805 --> 00:49:44,558
+横盘了一阵，然后缓慢下跌。因为
+goes sideways before meandering a bit lower. Because
+
+768
+00:49:44,558 --> 00:49:46,623
+在我看来，其实
+now, to me, you know, people
+
+769
+00:49:46,623 --> 00:49:51,098
+大家都在想，我要在高位获利了结。
+are like, I'm going to take my money off the table. Up here.
+
+770
+00:49:57,780 --> 00:49:59,760
+大幅正Delta，小幅负Delta。
+Big positive, small negative.
+
+771
+00:49:59,760 --> 00:50:06,820
+再次出现大幅正Delta，比如2000的Delta，然后是小幅负Delta，283。
+Big positive, again, you know, you got that big positive, 2,000 delta. Then just small negative, 283.
+
+772
+00:50:07,080 --> 00:50:09,656
+通常，当你从大幅正Delta
+Often what you see when you go from a big
+
+773
+00:50:09,656 --> 00:50:11,201
+转为小幅负Delta时，我
+positive to a small negative, I
+
+774
+00:50:11,201 --> 00:50:13,519
+上周提到过，这就是内包线。
+talked about this last week, is that inside bar.
+
+775
+00:50:13,820 --> 00:50:21,000
+而我们知道，内包线代表交易者的犹豫不决，对吧？
+And we know that that inside bar is traders' indecision, okay?
+
+776
+00:50:21,160 --> 00:50:25,600
+如果市场存在犹豫不决，我就不会指望这个市场继续上涨。
+And if I have indecision present, I'm not looking for this market to keep going higher.
+
+777
+00:50:25,600 --> 00:50:35,550
+因为如果交易者犹豫不决，他们在经过这轮激进买盘后仍在犹豫。
+Because if traders are indecisive, they're still trying to make up their mind after all this aggressive buying.
+
+778
+00:50:36,010 --> 00:50:37,791
+其实，如果这轮激进买盘
+You know, if this aggressive buying
+
+779
+00:50:37,791 --> 00:50:40,463
+是真实的，也就是说所有人都想
+was legit in the sense of everyone wants to
+
+780
+00:50:40,463 --> 00:50:43,432
+做多，那这个市场应该会继续上涨，而不是
+get long, this market would be trading up. It wouldn't
+
+781
+00:50:43,432 --> 00:50:47,588
+它会回踩到内部，显示出犹豫不决，和这里的情况类似，对吧？
+be going inside, you know, showing a sign of indecision, similar to here, right?
+
+782
+00:50:47,690 --> 00:50:57,130
+这里有一根内部K线，价格在前一根K线的区间内波动，对吧？
+It's got this inside bar where we're trading within the range of the previous bar, okay?
+
+783
+00:50:57,130 --> 00:51:00,130
+所以，这是大阳线后跟小阴线。
+So, that's the big positive, small negative.
+
+784
+00:51:01,030 --> 00:51:07,490
+还有另一个例子。大阳线，Delta是220。其实这得看情况，因为这是原油。
+There's another one. Big positive, 220. Now, again, you know, this is relative because this is crude oil.
+
+785
+00:51:08,150 --> 00:51:14,290
+从+220到-53，Delta摆动了-273。
+220 to minus 53. So, it's a swing in delta from plus 220 to minus 53. It's minus 273.
+
+786
+00:51:14,710 --> 00:51:15,652
+又是一根内部K线。
+It's inside again.
+
+787
+00:51:15,652 --> 00:51:17,852
+我想说这是内部K线，
+Now, I want to say it's inside,
+
+788
+00:51:17,852 --> 00:51:21,309
+但它的高点和低点和这两根K线一样。
+but it's the same high and low of these two bars.
+
+789
+00:51:21,310 --> 00:51:28,650
+但你期待的那种推动市场上涨的激进买盘呢？根本没有。
+But where's that aggressive buying that you're looking for for this market to go higher? It's not there.
+
+790
+00:51:28,990 --> 00:51:30,598
+我们基本上只是在
+We're just hanging around basically the
+
+791
+00:51:30,598 --> 00:51:32,475
+相同的价格附近徘徊，然后下跌，
+same prices. And then we drop, go
+
+792
+00:51:32,475 --> 00:51:36,229
+稍微横盘一下，最终确实上涨并创了新高。
+a little bit sideways. Eventually, we do go up and make a new high.
+
+793
+00:51:36,850 --> 00:51:43,130
+但其实，从这个高点到这20分钟内发生了很多其他情况。
+But, you know, there's a lot of other information from this high to this 20 minutes took place.
+
+794
+00:51:43,890 --> 00:51:46,077
+其实，我会谨慎
+But, you know, I'd be wary
+
+795
+00:51:46,077 --> 00:51:49,358
+在这里做多，因为如果你在这里做多，心想，
+of buying it right here because if you were
+
+796
+00:51:49,358 --> 00:51:53,004
+嘿，这个市场会开始交易到52、55，
+to buy it here, thinking, hey, this market's going to,
+
+797
+00:51:53,004 --> 00:52:02,484
+结果它一路回落到20多点，对吧？所以在最终反弹前，经历了20个Tick的下跌。
+you know, start trading 52, 55, it pulls all the way back into the 20s, right? So, that's, you know, a 20 tick sell-off before it finally comes around.
+
+798
+00:52:04,380 --> 00:52:06,840
+为什么要承受20个Tick的回撤？
+Why should you take 20 ticks of heat?
+
+799
+00:52:08,560 --> 00:52:12,300
+而这里你可以直接做空头皮。
+And this is something you can scalp right here to the downside.
+
+800
+00:52:12,300 --> 00:52:17,700
+第四种是小阳线转大阴线。
+Now, number four is a small positive to big negative.
+
+801
+00:52:17,840 --> 00:52:21,595
+其实，我之前说第四种
+And, again, I said four is
+
+802
+00:52:21,595 --> 00:52:27,227
+和第一种非常相似，也就是小阴线
+very similar to number one, which is small negative
+
+803
+00:52:27,227 --> 00:52:33,485
+转大阴线，对吧？Delta从276突然到1700、1100、1000，好吗？
+to big negative, right? 276 to all of a sudden 1,700, 1,100, 1,000, okay?
+
+804
+00:52:36,910 --> 00:52:42,090
+市场只是在正常来回交易，然后突然被重重地砸了下来。
+So, market's just sort of going trading normally back and forth. Then, wham, it gets slammed here.
+
+805
+00:52:42,090 --> 00:52:46,110
+更关键的是，接下来又被砸了一下。
+And then, more importantly, the next part comes in, slams it again.
+
+806
+00:52:46,350 --> 00:52:48,290
+然后接下来又被砸了一下。
+And the next part comes in, slams it again.
+
+807
+00:52:48,630 --> 00:52:56,270
+所以，基本上从75一路跌破60，到64、62。
+So, basically, it breaks from, you know, 75 all the way down to below 60s, 64, 62.
+
+808
+00:53:00,320 --> 00:53:05,660
+小阳线，然后这里就是大阴线。
+Small positive, the big negative right over here.
+
+809
+00:53:05,660 --> 00:53:07,932
+其实，就像
+And, again, you know, like
+
+810
+00:53:07,932 --> 00:53:10,204
+我之前说的，有时候这种走势，
+I said, sometimes these moves,
+
+811
+00:53:10,204 --> 00:53:12,476
+你必须时刻关注
+you got to be watching
+
+812
+00:53:12,476 --> 00:53:15,657
+顺序流里的动向，对吧？
+what's happening in the order flow, right?
+
+813
+00:53:15,700 --> 00:53:18,093
+而我对这种小阳
+And I'm always wary of these small positive
+
+814
+00:53:18,093 --> 00:53:19,887
+转大阴的情况特别警惕，因为这可能
+to big negatives because it can
+
+815
+00:53:19,887 --> 00:53:22,579
+只是市场出现了投降盘。
+just sort of be capitulation coming into the market.
+
+816
+00:53:22,940 --> 00:53:25,333
+这里，我们有一个很大的
+Here, we've got a nice big
+
+817
+00:53:25,333 --> 00:53:28,524
+Delta。对吧？它在下一根K线里确实延续了，
+delta, okay? It does continue in the next
+
+818
+00:53:28,524 --> 00:53:30,917
+但如果我看到强劲的
+bar, but if I have strong
+
+819
+00:53:30,917 --> 00:53:37,698
+Delta涌入，也就是说，如果是强劲的负Delta，那意味着有大量激进的空头。
+delta coming in, meaning if it's strong negative, I mean, I got a lot of aggressive sellers.
+
+820
+00:53:37,700 --> 00:53:40,049
+就像如果是强劲的正Delta，
+Just as if it was strong positive, I
+
+821
+00:53:40,049 --> 00:53:41,810
+我有大量激进的多头
+have a lot of aggressive buyers
+
+822
+00:53:41,810 --> 00:53:44,159
+涌入，但我想看到的是延续。
+coming in, but I want to see continuation.
+
+823
+00:53:44,380 --> 00:53:47,340
+而且确实出现了一些延续，因为价格
+And you do get some continuation because it
+
+824
+00:53:47,340 --> 00:53:49,190
+从83跌到了80左右，
+drops from 83 down to about 80,
+
+825
+00:53:49,190 --> 00:53:51,040
+但然后
+but then just sort of
+
+826
+00:53:51,040 --> 00:53:53,260
+横盘了三四根K线。
+go sideways over three, four bars.
+
+827
+00:53:54,680 --> 00:53:58,700
+这可不是好信号，对吧？因为接下来的五分钟里，价格只是横盘。
+That's not a good sign, right? Because over the next five minutes, you're just going sideways.
+
+828
+00:53:59,460 --> 00:54:01,625
+这个市场可能不会
+This market is probably not going
+
+829
+00:54:01,625 --> 00:54:03,790
+继续下跌，而它
+to be selling off, which it
+
+830
+00:54:03,790 --> 00:54:07,038
+确实没跌，然后反弹创了新高。
+doesn't. And then it rallies up to new highs.
+
+831
+00:54:07,240 --> 00:54:08,933
+然后你会看到，其实
+Then you had, you know,
+
+832
+00:54:08,933 --> 00:54:11,304
+一个大阳转大阴，
+a big positive to a big negative,
+
+833
+00:54:11,304 --> 00:54:13,336
+这其实是我接下来要讲的另一个例子，
+which is sort of the next
+
+834
+00:54:13,336 --> 00:54:17,401
++8.93转为非常强劲的卖盘涌入，-5.98。
+one I'll be talking about, plus 8.93 to very strong selling coming in, 5.98.
+
+835
+00:54:18,080 --> 00:54:27,780
+所以Delta从+8.93转为-5.98，Delta总变化是-1491。
+So that's a swing in delta from positive 8.93 to minus 5.98. It's minus 1,491 in the delta.
+
+836
+00:54:28,540 --> 00:54:38,180
+所以在这个高点，我看到Delta从激进多头转向激进空头。
+So at this high, I have a delta shift from aggressive buyers to aggressive sellers taking place here.
+
+837
+00:54:40,850 --> 00:54:42,570
+因此我会预期这个市场会下跌。
+And so I'll be looking for that market to sell off.
+
+838
+00:54:42,630 --> 00:54:46,890
+这就是我接下来要深入讲解的，大阳转大阴的情况。
+And that's the next one that I'll get into, which is the big positive, the big negative.
+
+839
+00:54:46,890 --> 00:54:52,170
+但我们先回顾一下这个例子，也就是小阳转大阴的情况。
+But let's just go through this last example, the small positive, the big negative right here.
+
+840
+00:54:52,390 --> 00:54:56,990
+再强调一下，这是原油，+29，然后突然-183。
+Again, this is crude oil, 29. And then all of a sudden, minus 183.
+
+841
+00:54:58,150 --> 00:55:01,106
+但像我说的，小负的情况,
+But like I said, the small negative, the
+
+842
+00:55:01,106 --> 00:55:04,062
+大负，以及大正，抱歉,
+big negative, and the big positive, I'm sorry,
+
+843
+00:55:04,062 --> 00:55:07,388
+小正、大负这些其实很相似。
+the small positive, the big negative are very similar.
+
+844
+00:55:07,530 --> 00:55:08,950
+我对这些信号总是有点谨慎。
+I'm always a little bit wary of it.
+
+845
+00:55:09,410 --> 00:55:12,910
+我确实想看到一些延续的迹象。
+I do want to see some signs of continuation coming in.
+
+846
+00:55:12,910 --> 00:55:16,490
+其实，它先跌了一段，然后横盘。最后确实又跌了。
+And, you know, it does go lower here, then it goes sideways. Eventually, it does go lower.
+
+847
+00:55:17,170 --> 00:55:21,478
+但如果要在这些里选一个,
+But if I was going to choose one
+
+848
+00:55:21,478 --> 00:55:23,632
+我会选
+of these, it would
+
+849
+00:55:23,632 --> 00:55:28,479
+下一个，也就是大正转大负。
+be this next one, big positive to big negative.
+
+850
+00:55:29,180 --> 00:55:31,440
+好的，现在，我之前说，其实这是我最喜欢的一个。
+Okay, now, I said, you know, this is my favorite one.
+
+851
+00:55:31,560 --> 00:55:35,900
+但这个例子，它只是稍微下跌一点，大部分时间横盘。
+But this one, it just sort of goes sideways to a little bit lower, but mostly sideways.
+
+852
+00:55:36,400 --> 00:55:48,760
+其实大正是+7.76，大负是-600，Delta 移动是-13.90。
+Big negative, actually, big positive, 7.76. The big negative, minus 600. It's a delta shift of minus 13.90.
+
+853
+00:55:49,140 --> 00:55:52,820
+下一根K线开始下跌，然后只是稍微再往下一点。
+Next bar starts going lower. And it's just sort of hanging a little bit lower.
+
+854
+00:55:53,700 --> 00:55:54,746
+其实，我们
+But, you know, we
+
+855
+00:55:54,746 --> 00:55:56,838
+都希望多头立刻进场开始抛售，
+wish they would all come in and start
+
+856
+00:55:56,838 --> 00:56:00,238
+但有时候市场就是这样，对吧？
+selling off immediately. But sometimes this is just how the market happens, right?
+
+857
+00:56:00,280 --> 00:56:03,900
+它只是朝对你有利的方向横盘一段时间。
+It just sort of just drifts sideways in your favor for a while.
+
+858
+00:56:03,900 --> 00:56:05,306
+但这时候，
+But at this point, you
+
+859
+00:56:05,306 --> 00:56:07,275
+如果已经进场了，
+know, if you're somewhere in here, you
+
+860
+00:56:07,275 --> 00:56:12,339
+就得开始考虑止盈了。回到上面这个位置，你可不想亏损。
+got to be looking to take profits already. Back up here, you don't want to take a loss.
+
+861
+00:56:12,960 --> 00:56:17,560
+但它确实在这里给了你第二次止盈的机会。
+But it does give you a sort of a second chance to take some profits right over here.
+
+862
+00:56:20,790 --> 00:56:24,760
+这就是我之前给你们看的那个例子，对吧？
+This is the one I showed you earlier, right?
+
+863
+00:56:24,840 --> 00:56:26,135
+所以，大正
+So the big positive
+
+864
+00:56:26,135 --> 00:56:28,725
+转大负。
+to the big negative. And it does have
+
+865
+00:56:28,725 --> 00:56:30,668
+它确实有一个
+a nice, excuse me, it does,
+
+866
+00:56:30,668 --> 00:56:34,878
+其实是一个快速的抛售，大概有6、7个点。
+you know, a nice quick sell off. About six, seven points right there.
+
+867
+00:56:34,880 --> 00:56:45,080
+所以突然的Delta暴发是一个很强的信号，对吧？
+So a sudden delta burst is a powerful piece of information, right?
+
+868
+00:56:45,080 --> 00:56:47,760
+但它不是独立信号。记住这一点，对吧？
+But it's not a standalone signal. Remember that, right?
+
+869
+00:56:47,820 --> 00:56:49,458
+仅仅因为一根K线
+Just because a bar,
+
+870
+00:56:49,458 --> 00:56:52,735
+仅仅因为有一个大的Delta
+just because there's a big delta in the
+
+871
+00:56:52,735 --> 00:56:58,879
+市场里出现大Delta，并不代表你就得做多或做空。
+market, doesn't automatically mean you got to get long or you got to get short.
+
+872
+00:56:59,540 --> 00:57:02,820
+要结合市场背景来理解，对吧？
+Try to interpret it in market context, right?
+
+873
+00:57:05,400 --> 00:57:06,790
+它出现在哪里？是不是
+Where's it coming in? Is
+
+874
+00:57:06,790 --> 00:57:08,736
+出现在摆动高点
+it coming in at a swing high
+
+875
+00:57:08,736 --> 00:57:13,184
+还是摆动低点？或者市场已经横盘了10、15分钟？
+or swing low or is it just has the market been trading sideways for 10 minutes, 15 minutes?
+
+876
+00:57:14,740 --> 00:57:15,673
+其实，是不是
+You know, is
+
+877
+00:57:15,673 --> 00:57:17,539
+突然爆发的Delta
+it there's the burst of delta
+
+878
+00:57:17,539 --> 00:57:19,716
+是因为美联储有公告
+coming in because there's a Fed announcement
+
+879
+00:57:19,716 --> 00:57:21,582
+或者有某个数据
+or there was a number that
+
+880
+00:57:21,582 --> 00:57:29,358
+发布了？有些消息你可能提前知道，但像特朗普的推文，你得事后才知道。
+came out? You know, sometimes, you know, those you know about, but, you know, things like a Trump tweet you don't know about till later.
+
+881
+00:57:29,360 --> 00:57:30,344
+或者说
+Or, you know,
+
+882
+00:57:30,344 --> 00:57:33,296
+我希望我们都能提前掌握这些信息，
+I wish we all could be on top of
+
+883
+00:57:33,296 --> 00:57:35,592
+但有时候我们会看到
+that, but, you know, sometimes we see
+
+884
+00:57:35,592 --> 00:57:40,840
+市场突然大幅波动，我们手忙脚乱。机构交易桌也一样。
+these big moves in the market and we're scrambling. And it's no different than institutional desks.
+
+885
+00:57:40,960 --> 00:57:42,001
+有时候
+Sometimes, you know,
+
+886
+00:57:42,001 --> 00:57:44,431
+这些交易桌，市场突然
+these trading desks, the market just makes
+
+887
+00:57:44,431 --> 00:57:46,166
+出现一波行情，
+a move all of a
+
+888
+00:57:46,166 --> 00:57:50,678
+你不知道为什么，直到后来才知道原因。
+sudden and you don't know why. And you don't know why until later.
+
+889
+00:57:50,680 --> 00:57:51,494
+你
+You know, you
+
+890
+00:57:51,494 --> 00:57:52,851
+得，我是说，如果
+got to, I mean, if
+
+891
+00:57:52,851 --> 00:57:54,480
+你是机构交易员，有时候
+you're an institutional trader, sometimes you
+
+892
+00:57:54,480 --> 00:57:57,738
+得四处打听，市场发生什么了？
+got, you're asking around what, what, what's going on in the market?
+
+893
+00:57:57,820 --> 00:57:58,840
+为什么市场在动？
+Why is this market moving?
+
+894
+00:57:59,600 --> 00:58:03,620
+最后，有人会说，哦，这个发布了，或者说有人提到这个，有人提到那个。
+And then finally, you know, someone said, well, this came out, you know, someone said this or someone said that.
+
+895
+00:58:03,620 --> 00:58:05,687
+所以，你还得考虑Delta爆发出现的位置。
+So, also, you got to consider where
+
+896
+00:58:05,687 --> 00:58:07,754
+这个Delta爆发出现的位置。
+the delta burst is coming in. You
+
+897
+00:58:07,754 --> 00:58:09,821
+是不是在支撑阻力位？是不是
+know, is it at support resistance? Is
+
+898
+00:58:09,821 --> 00:58:18,679
+在日内高点或低点？你是不是在日内高点，然后出现大量负Delta？
+it at the daily high or daily low? Do you have a big, are you at the high of the day and you have a big negative delta coming in?
+
+899
+00:58:18,960 --> 00:58:20,720
+好，这意味着什么？
+Okay. What does that mean?
+
+900
+00:58:21,080 --> 00:58:25,440
+对吧。看看之前的价格走势，以及后续的价格反应。
+Right. Look at the preceding price action, the subsequent price response.
+
+901
+00:58:26,080 --> 00:58:30,440
+对吧。Delta 爆发告诉你发生了什么，但上下文才能说明它为什么重要。
+Right. A delta burst tells you what happened, but the context tells you why it matters.
+
+902
+00:58:30,440 --> 00:58:33,744
+我之前说，有一个很大的 Delta 爆发，
+There's, I said, a big burst in delta
+
+903
+00:58:33,744 --> 00:58:36,635
+可能只是一个大单子砸进市场，
+at once could just be a big
+
+904
+00:58:36,635 --> 00:58:45,309
+对吧？你要把它放到上下文里去理解，这样才能看清背后的全貌。
+order hitting the market, right? You want to start putting it in context so you understand the broader story of it.
+
+905
+00:58:46,910 --> 00:58:49,410
+好的，第七场次课程就到这里。
+All right. So, that's the end of session seven.
+
+906
+00:58:50,450 --> 00:58:52,290
+今天就讲到这儿。
+Okay. We'll end it there.
+
+907
+00:58:52,370 --> 00:58:56,590
+今天是周二，虽然我早上还以为是周四，其实今天只是周二。
+Today is Tuesday, although for me, I thought it was Thursday this morning, but it's only a Tuesday.
+
+908
+00:58:57,010 --> 00:58:59,695
+周四，也就是两天后，
+On Thursday, in two days, we'll
+
+909
+00:58:59,695 --> 00:59:02,380
+我们会在中部时间上午9点
+meet again at 9 a.m. Central
+
+910
+00:59:02,380 --> 00:59:09,988
+再次见面。到时我们会讨论顺序流的其他部分，应该能拓展一下你们的思路。
+time. And we'll discuss some other parts of order flow that should expand your mind a bit.
+
+911
+00:59:10,170 --> 00:59:11,330
+现在先不展开讲这个。
+I don't want to get into it right now.
+
+912
+00:59:11,390 --> 00:59:13,170
+不过，其实如果
+But, again, you know, if
+
+913
+00:59:13,170 --> 00:59:15,662
+你们这段时间有什么问题，
+you've got any questions in the meantime,
+
+914
+00:59:15,662 --> 00:59:20,646
+一定要发邮件到我的雅虎邮箱：mvaltos@yahoo.com。
+be sure to send them over to my Yahoo email, mvaltos at yahoo.com.
+
+915
+00:59:20,530 --> 00:59:22,890
+周四见。
+So, I'll see you guys on Thursday.
+
+916
+00:59:22,890 --> 00:59:24,753
+还有一点，
+Now, one other thing,
+
+917
+00:59:24,753 --> 00:59:27,548
+下周具体是哪几天，我还不确定。
+next week, I'm not sure what
+
+918
+00:59:27,548 --> 00:59:30,343
+让我看一下日历。
+days those are. Let me just
+
+919
+00:59:30,343 --> 00:59:39,659
+是22号和24号。我可能需要调整演示的开始时间。
+look at my calendar. The 22nd and 24th. I just might need to change the start time of the presentation.
+
+920
+00:59:39,800 --> 00:59:41,680
+现在还不确定，我们再看看。
+I don't know yet. But we'll see.
+
+921
+00:59:41,740 --> 00:59:43,520
+可能会提前一个小时。
+I might move it just one hour earlier.
+
+922
+00:59:43,740 --> 00:59:47,000
+但我会提前通知你们。
+But I'll let you guys know ahead of time.
+
+923
+00:59:47,540 --> 00:59:48,440
+好的，谢谢大家。
+So, thanks, everyone.
+
+924
+00:59:48,940 --> 00:59:51,720
+祝大家度过愉快的一天。
+Have a great rest of your day.
+
+925
+00:59:51,800 --> 00:59:53,700
+周四见，两天后见。
+And I'll see you guys in a couple of days on Thursday.
+
+926
+00:59:53,920 --> 01:00:24,260
+保重，祝大家余下时间愉快。
+Take care. Have a great rest of your day.
+
+===== END AFTER_OPTIMIZE =====

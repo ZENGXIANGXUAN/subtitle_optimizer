@@ -1,0 +1,2801 @@
+===== AFTER_OPTIMIZE (560 entries) =====
+1
+00:00:00,800 --> 00:00:04,329
+在进入这张幻灯片之前
+now before I move on to seeing this slide I'd
+
+2
+00:00:04,329 --> 00:00:07,858
+我想欢迎你们进入课程的实战部分
+like to welcome you to the practical part of the
+
+3
+00:00:07,858 --> 00:00:13,152
+接下来的内容都将基于后续10个单元的策略
+course and this is all going to be based on the strategies of the next
+
+4
+00:00:13,152 --> 00:00:15,975
+未来的每一个单元
+10 units so every single one of the next 10
+
+5
+00:00:15,975 --> 00:00:30,092
+都会遵循一个非常简单的流程：每个策略单元都会像本次一样，先阐述交易中的一个核心原则，最终以导师式的方式展开
+units is going to follow a very simple process each one of the strategy unit sessions will begin like this one began outlining a very key principle within the trading and ultimately we'll do that in a mentor type fashion
+
+6
+00:00:31,699 --> 00:00:34,888
+阐述完后，会有一个非常关键且相关的引用
+once you've done that a very very key relevant quote
+
+7
+00:00:34,888 --> 00:00:37,439
+你们会看到我在整个单元中反复使用这个引用
+you will see me utilize this quote throughout
+
+8
+00:00:37,439 --> 00:00:43,498
+并解释它为何如此适用，然后进入实战应用
+the unit and why it's so applicable and then we're going to move on to the real practical application
+
+9
+00:00:44,100 --> 00:00:46,954
+我们会通过黑板演示，真正构建交易策略
+we'll really construct the trade strategy utilizing the
+
+10
+00:00:46,954 --> 00:00:49,808
+将其分解为各种变体
+blackboard we'll break it down into the various
+
+11
+00:00:49,808 --> 00:00:53,019
+你可以期待看到执行方法
+variations you can expect to see the execution methodology
+
+12
+00:00:53,019 --> 00:00:56,587
+以及一大堆技巧等等
+and a whole bunch of tips etc etc and obviously
+
+13
+00:00:56,587 --> 00:01:00,155
+还有实例演示，不仅包含足迹图
+the live examples with a cross-pollination of not just the
+
+14
+00:01:00,155 --> 00:01:17,997
+还包含K线和价格梯度的交叉验证，确保不同工具间轻松建立联系，因此我在同一个实例中包含了这三种工具
+footprint but also the the candlesticks as well as the price ladder that is to ensure obviously a lot of the strategies you might already recognize so just to ensure a real ease of overlap between the different tools I have included all three tools in the same live examples
+
+15
+00:01:19,000 --> 00:01:24,299
+每个单元还会以延伸阅读结束
+ Each unit session will then end with an additional reading over the next 10 units.
+
+16
+00:01:24,400 --> 00:01:27,587
+接下来的10个单元中，我会为你们提供
+I'm going to provide you with what I think are probably 10
+
+17
+00:01:27,587 --> 00:01:35,410
+我认为最重要的10本交易书籍。需要注意的是，这些书并非真正关于交易，大多数是关于心理或启发思考的
+of the most important trading books out there. We'll note that none of them are actually trading based. Most of them are psychology or thought provoking based.
+
+18
+00:01:36,099 --> 00:01:40,200
+然后我们会以钻石练习结束每个单元
+ And then we'll finish off each one of the units with your drill based session.
+
+19
+00:01:40,599 --> 00:01:43,033
+好，现在我们开始
+Okay, so let's get into it now. As
+
+20
+00:01:43,033 --> 00:01:47,598
+如你所见，本策略会聚焦于吸收与拍卖
+you can see that this strategy, we're going to focus on the absorption and auctioning.
+
+21
+00:01:48,099 --> 00:01:50,900
+首先，它是一个动能策略
+ First and foremost, it is a momentum strategy.
+
+22
+00:01:51,099 --> 00:01:53,591
+我已经把这两列分为动能和逆势
+Okay, so I've broken up the two columns
+
+23
+00:01:53,591 --> 00:01:55,460
+显然
+into momentum and counter trend. Obviously,
+
+24
+00:01:55,460 --> 00:01:59,198
+有些人偏好动能策略，有些人偏好逆势策略
+some of you prefer momentum strategies. Some of you prefer counter trend.
+
+25
+00:01:59,700 --> 00:02:02,971
+现在，你会发现有些策略可能不适合你的风格
+Now, What you are going to find is that some
+
+26
+00:02:02,971 --> 00:02:06,242
+这没问题
+of the strategies might not suit your style and that's
+
+27
+00:02:06,242 --> 00:02:11,149
+但随着我们逐一讲解每个策略
+fine But as you'll see as we go through every one of the strategies you're
+
+28
+00:02:11,149 --> 00:02:14,420
+你会意识到，了解这些策略
+going to recognize that knowing these strategies Doesn't mean you
+
+29
+00:02:14,420 --> 00:02:17,691
+并不意味着你必须手头就有一个策略
+necessarily have a strategy at hand, but it could assist
+
+30
+00:02:17,691 --> 00:02:20,962
+但它可以帮你确定目标位等等
+you in many other ways ie targets ie You know
+
+31
+00:02:20,962 --> 00:02:36,994
+比如获利了结、止损位置等等。掌握这些策略和原则，能帮你做交易决策。这是动量策略，是独立策略，不需其他工具就能识别
+taking profits ie, you know where to place stops etc, etc So knowing these strategies knowing these principles will aid you, you know in making obviously trading decisions now this is a momentum based strategy it is standalone so you don't require any other trading tool to recognize this
+
+32
+00:02:37,699 --> 00:02:40,020
+这个策略在执行方面
+trade strategy and obviously in terms of execution
+
+33
+00:02:40,020 --> 00:02:42,341
+采用被动执行，你要等待
+it's a passive execution you're gonna wait for
+
+34
+00:02:42,341 --> 00:02:49,597
+市场回调后，给你一个相对简单的入场点。好，我们继续看接下来的内容
+the market to come back and allow you a relatively straightforward entry point all right let's now move on in the next couple of slides
+
+35
+00:02:50,400 --> 00:02:52,799
+我们先从
+we're obviously going to start off and we're
+
+36
+00:02:52,799 --> 00:02:56,698
+重点讲解‘吸收与拍卖’策略背后的核心原则
+going to focus on the principles underlying the strategy of absorption and auctioning
+
+37
+00:03:00,304 --> 00:03:07,903
+在第三单元，我们已经讲过所有策略中可能出现的各种原则
+Now, as we focused on in Unit 3, we went through all the various principles that you can expect to see in all the strategies.
+
+38
+00:03:08,403 --> 00:03:12,382
+在这张幻灯片上，你能看到两部分：A部分和B部分
+Now, on this slide, what you can see is two sections, Part
+
+39
+00:03:12,382 --> 00:03:16,361
+这两部分基本来自第三单元。但我做了一个处理
+A and Part B, and those effectively come from Unit 3. But what
+
+40
+00:03:16,361 --> 00:03:26,972
+在本策略会用到的原则旁边标了星号。你需要理解这些原则，才能有效应用策略
+I've done is I've annotated stars next to the principles you're going to encounter in this strategy. So you're almost expected to understand these principles in order to effectively apply the strategy.
+
+41
+00:03:27,304 --> 00:03:30,487
+不用担心，接下来
+Now, not to worry, because when we go on to the next
+
+42
+00:03:30,487 --> 00:03:32,609
+在下一张幻灯片里
+slide, I'm going to introduce you to the
+
+43
+00:03:32,609 --> 00:03:40,302
+我会给你介绍黑板演示和实战案例。然后你会看到我用案例逐一应用这些原则，我会为你演示
+blackboard as well as the practical examples. And you're then going to see me apply every one of these principles with an example. So you'll see me illustrate it.
+
+44
+00:03:40,304 --> 00:03:42,304
+你会看到我如何运用这些原则
+ You'll see me utilize the principles.
+
+45
+00:03:42,403 --> 00:03:45,951
+希望你能开始理解这些原则的含义
+And hopefully you'll begin to understand what each one of these principles
+
+46
+00:03:45,951 --> 00:03:48,316
+以及它们如何
+means and ultimately how it adds value to
+
+47
+00:03:48,316 --> 00:03:49,203
+最终为交易策略增值
+the trade strategy.
+
+48
+00:03:49,804 --> 00:03:52,738
+好，进入下一张之前
+Okay, now before we move on to the next slide,
+
+49
+00:03:52,738 --> 00:03:55,672
+请记住，接下来的几张幻灯片里，我会
+do bear in mind the next couple of slides, I'm
+
+50
+00:03:55,672 --> 00:03:58,606
+从黑板演示开始。我会给你展示这个策略
+going to begin on the blackboard. I'm going to show
+
+51
+00:03:58,606 --> 00:04:01,540
+标注它，给你展示变体
+you the strategy. I'm going to annotate it, show you
+
+52
+00:04:01,540 --> 00:04:04,474
+并展示策略背后的原则
+the variations, show you the principles that underline the strategy.
+
+53
+00:04:04,474 --> 00:04:12,398
+然后进入足迹图的实战案例，先是静态案例，最后是动态案例
+And then I'm going to move on to practical examples with a static example of the footprint before then finishing with live practical examples of the footprint.
+
+54
+00:04:12,503 --> 00:04:15,217
+现在请记住，这将是一个完整的视频环节
+Now, do bear in mind, this will be an entire
+
+55
+00:04:15,217 --> 00:04:18,203
+我会为你一一指出
+video session where I'm going to point it out for you.
+
+56
+00:04:18,603 --> 00:04:21,934
+但如果你想回顾某些内容
+If however there was something you wanted to go back and view
+
+57
+00:04:21,934 --> 00:04:25,542
+或者想看完整视频
+or you maybe wanted to watch the full length of the video do
+
+58
+00:04:25,542 --> 00:04:28,318
+请注意，在接下来的几张幻灯片里，你可以
+note in the next couple of slides you will be
+
+59
+00:04:28,318 --> 00:04:34,702
+在自己的时间查看所有图表，以及实战案例的完整视频
+able to to view all of those charts at your own time as well as the full length video of the practical example.
+
+60
+00:04:34,903 --> 00:04:36,403
+好，那我们现在开始
+ Alright, let's get into it then.
+
+61
+00:04:48,004 --> 00:04:51,292
+好的，接下来我们要
+Okay, so what we're going to do over the next couple of
+
+62
+00:04:51,292 --> 00:04:55,402
+在接下来的几张幻灯片里，给你介绍‘吸收与拍卖’策略。
+slides now is we're going to actually introduce the trade strategy of absorption and auctioning.
+
+63
+00:04:56,204 --> 00:05:00,754
+然后我们会通过一个实战案例
+And we're going to take a look at a real practical application
+
+64
+00:05:00,754 --> 00:05:05,683
+来演示这个策略：首先绘制策略图，
+of the strategy through means of firstly drawing the strategy and showing you
+
+65
+00:05:05,683 --> 00:05:09,475
+展示各项原则如何融入策略，
+where the various principles fit into the strategy before then
+
+66
+00:05:09,475 --> 00:05:16,301
+接着转向实战案例，包含静态和实时两种。
+turning our attention to the practical examples, which will include both static examples as well as live examples.
+
+67
+00:05:16,903 --> 00:05:20,504
+这个策略的演示其实很简单。
+Now, To illustrate this strategy is very simple.
+
+68
+00:05:21,603 --> 00:05:25,903
+就像我们之前在原则部分提到的，
+You know, it's like we mentioned, you know, in the
+
+69
+00:05:25,903 --> 00:05:30,203
+实际上，你会看到的是
+principle section. In effect, what we're seeing is the process
+
+70
+00:05:30,203 --> 00:05:34,503
+在有限价格区间内的吸收和分发过程。
+of accumulation and distribution within a confined number of prices.
+
+71
+00:05:34,704 --> 00:05:37,733
+好的，你可以这样理解：
+Okay, so we can think of it. I don't want
+
+72
+00:05:37,733 --> 00:05:40,762
+我不想纠结于支撑和阻力的概念，
+to get stuck in the principle idea of support and
+
+73
+00:05:40,762 --> 00:05:45,003
+更倾向于称其为‘从一个枢轴到另一个枢轴’。
+resistance. So I'm rather going to call this just a pivot and a pivot.
+
+74
+00:05:45,504 --> 00:05:51,403
+本质上，市场开始在两个枢轴之间交易。
+ Okay, so in essence the market begins the process of trading between two pivots now
+
+75
+00:05:52,803 --> 00:05:57,140
+我们关注的一个核心原则是
+One of the key principles we focused on was the
+
+76
+00:05:57,140 --> 00:06:01,477
+‘盘整’原则。但需要注意的是，
+principle of cons. consolidation now most important note this is
+
+77
+00:06:01,477 --> 00:06:05,814
+这并不是盘整，
+not consolidation why because consolidation as we mentioned in the
+
+78
+00:06:05,814 --> 00:06:10,151
+因为在原则部分我们提到过，
+principle section tends to be relatively low volume okay so
+
+79
+00:06:10,151 --> 00:06:14,488
+盘整通常伴随相对较低的成交量，
+what we are actually going to be talking about is
+
+80
+00:06:14,488 --> 00:06:24,898
+而我们真正要讨论的是吸收和分发过程。
+the process of accumulation and distribution okay now we noted the key difference between accumulation and distribution and consolidation was very simply the volume
+
+81
+00:06:26,004 --> 00:06:29,754
+吸收和分发与盘整的关键区别在于
+and the delta exchange in other words in accumulation distribution
+
+82
+00:06:29,754 --> 00:06:35,004
+成交量和Delta交换。
+we do tend to see a much higher relative amount of volume being traded
+
+83
+00:06:35,903 --> 00:06:39,629
+换句话说，在吸收和分发过程中，
+versus the consolidation now the key identifier of this trade
+
+84
+00:06:39,629 --> 00:06:43,355
+成交量会明显高于盘整。
+strategy comes at the extreme pivots okay and what you're
+
+85
+00:06:43,355 --> 00:06:47,081
+这个策略的关键识别点出现在极端枢轴处，
+going to tend to see is you're going to tend
+
+86
+00:06:47,081 --> 00:06:50,807
+你通常会看到一些深色的高成交量区域，
+to see some real dark high volume areas high volume
+
+87
+00:06:50,807 --> 00:07:03,102
+并在枢轴的极端点反复出现高成交量区域。
+areas and then effectively some real dark high volume areas and high volume areas so you're going to see this process of high volume areas at the extreme points of the pivot now
+
+88
+00:07:04,303 --> 00:07:08,245
+在拍卖过程中，
+Note obviously in terms of the auction process, what we're
+
+89
+00:07:08,245 --> 00:07:12,187
+你并未看到真正的拍卖强势，
+seeing is no real strength in the auction process, rather
+
+90
+00:07:12,187 --> 00:07:18,101
+而是在高点和低点都出现响应性价格走势。
+just responsive price action at the high and then responsive price action at the low.
+
+91
+00:07:18,903 --> 00:07:25,403
+一旦最终向任一方向突破，就会进入主动推动阶段。
+ Once it finally breaks in either direction, we then get the process of initiative.
+
+92
+00:07:27,103 --> 00:07:31,430
+当出现这种主动响应时，
+When we do get this initiative response and
+
+93
+00:07:31,430 --> 00:07:34,675
+更强的拍卖过程通常
+the stronger auctioning process, it's usually
+
+94
+00:07:34,675 --> 00:07:39,002
+会伴随买卖失衡。
+going to be accompanied by some auction imbalances.
+
+95
+00:07:40,704 --> 00:07:48,403
+好的，非常典型的是，突破后会伴随买卖失衡。
+ Okay, so very typically, once the break comes, obviously, you're going to get these auction imbalances accompanying it.
+
+96
+00:07:48,603 --> 00:07:50,103
+原因其实很简单。
+ And the reason being is very simple.
+
+97
+00:07:51,103 --> 00:07:55,935
+如果我们看看在积累和分散区间内，
+If we look at what's effectively happened with the delta and the
+
+98
+00:07:55,935 --> 00:07:59,156
+Delta 和成交量实际上发生了什么，
+volume whilst we are sitting inside this accumulation
+
+99
+00:07:59,156 --> 00:08:01,572
+本质上，
+and distribution zone, in essence, what
+
+100
+00:08:01,572 --> 00:08:06,002
+我们是在窄幅区间内积累仓位。
+we're doing is we're building up position within this tight range.
+
+101
+00:08:06,103 --> 00:08:10,303
+在这个区间内，要么持多头，要么持空头。
+ So within this range, we're either going to have a positive or negative position.
+
+102
+00:08:10,403 --> 00:08:12,252
+现在，我要说的是，
+Now, what I will say, I've
+
+103
+00:08:12,252 --> 00:08:14,717
+我从未发现过一个有效的经验法则，
+never found there to be a good rule
+
+104
+00:08:14,717 --> 00:08:17,182
+即Delta偏多或偏空时，
+of thumb that if the delta is more
+
+105
+00:08:17,182 --> 00:08:19,031
+就能高概率预测突破方向，
+negative or more positive, that has
+
+106
+00:08:19,031 --> 00:08:25,502
+或者说能给出突破方向的提示。
+a high probability, you know, sort of in terms of giving an indication as to which way we're going to break.
+
+107
+00:08:26,303 --> 00:08:28,760
+但我想说的是，高成交量和高Delta，
+But what I would say is that high
+
+108
+00:08:28,760 --> 00:08:31,217
+本质上意味着突破时，
+volume and that high delta, in essence, implies
+
+109
+00:08:31,217 --> 00:08:34,902
+会有交易者在另一侧被套。
+that when we break, there are positions caught on the other side.
+
+110
+00:08:34,903 --> 00:08:40,903
+比如，如果向下突破，就会有多头被套。
+So, for example. If it breaks to the downside, obviously we do have some longs that are caught.
+
+111
+00:08:41,504 --> 00:08:43,518
+这些多头需要快速平仓。
+So those longs need to pay
+
+112
+00:08:43,518 --> 00:08:46,203
+正是这个原因，
+down very quickly. And it's that reason that
+
+113
+00:08:46,203 --> 00:08:50,902
+我们才会看到高成交量、高Delta，以及买卖失衡。
+we get the high volume, the high delta, as well as the auction imbalances.
+
+114
+00:08:51,004 --> 00:08:52,446
+现在，关于…
+Now, in terms of...
+
+115
+00:08:52,446 --> 00:08:54,610
+关于相对变化，
+In terms of the relative change,
+
+116
+00:08:54,610 --> 00:08:56,774
+你会注意到，
+obviously you will note that the
+
+117
+00:08:56,774 --> 00:08:58,938
+成交量、Delta
+difference between the volume the delta
+
+118
+00:08:58,938 --> 00:09:01,102
+和累积Delta
+and the cumulative delta in the
+
+119
+00:09:01,102 --> 00:09:03,266
+在区间内与突破后的差异，
+zone relative to once it breaks
+
+120
+00:09:03,266 --> 00:09:11,201
+好，突破后你会看到成交量、价格和Delta动态的真正转变，现在注意，
+okay once it breaks you are going to see a real shift in the volume price and delta dynamics now note obviously
+
+121
+00:09:12,803 --> 00:09:15,803
+你会看到区间内的相对成交量
+you will see much lower relative volume within
+
+122
+00:09:15,803 --> 00:09:18,053
+会比突破时低很多
+the zone compared to the break
+
+123
+00:09:18,053 --> 00:09:21,803
+这显然是因为主动交易在推动
+and that's obviously simply because of the initiative being taken
+
+124
+00:09:22,703 --> 00:09:24,587
+当然
+as well as obviously again I
+
+125
+00:09:24,587 --> 00:09:27,099
+我不想真用‘支撑’这个词
+don't want to really use the word support
+
+126
+00:09:27,099 --> 00:09:29,611
+和‘阻力’
+and resistance but you can think of these
+
+127
+00:09:29,611 --> 00:09:31,495
+但你可以把这些枢轴点
+pivots in terms of some form
+
+128
+00:09:31,495 --> 00:09:33,379
+看作某种形式
+of you know maybe the the
+
+129
+00:09:33,379 --> 00:09:40,602
+较低枢轴可能是初始支撑，较高枢轴可能是初始阻力 现在注意
+lower pivot is some sort of a initial support whereas the higher pivot is some sort of initial resistance now do note obviously
+
+130
+00:09:42,203 --> 00:09:44,604
+还有一个关键点要考虑：流动性
+ One of the key things to consider as well is liquidity.
+
+131
+00:09:45,203 --> 00:09:47,639
+当我们处于这两个枢轴之间的区间时
+Whilst we are inside of this range between
+
+132
+00:09:47,639 --> 00:09:51,902
+其实有大量流动性被注入
+the two pivots, there is actually quite a high amount of liquidity being provided.
+
+133
+00:09:51,903 --> 00:09:59,903
+为什么？因为两端都有真正激进的累积
+Why? Because we can see that there's some real aggressive accumulation taking place on both extremes.
+
+134
+00:10:00,203 --> 00:10:01,924
+所以流动性很高
+So there is high liquidity, which
+
+135
+00:10:01,924 --> 00:10:03,645
+这有时意味着突破
+sometimes means that the break isn't
+
+136
+00:10:03,645 --> 00:10:06,801
+并不像你希望的那样干净且方向明确
+always as clean and directional as you want it to be.
+
+137
+00:10:06,903 --> 00:10:12,703
+为什么？因为如果有人在这里提供流动性
+Why? Because if someone's providing liquidity over here, they could be providing liquidity even higher up.
+
+138
+00:10:12,703 --> 00:10:16,048
+他们可能在更高的位置也提供流动性
+And that's why we sometimes actually do get
+
+139
+00:10:16,048 --> 00:10:18,557
+这就是为什么我们有时会看到
+failure of the absorption and auctioning
+
+140
+00:10:18,557 --> 00:10:21,902
+吸收与拍卖策略失败 我等下会讲
+strategy, which I'll talk about in a minute.
+
+141
+00:10:22,203 --> 00:10:28,104
+这就是吸收与拍卖策略的基本原则
+So that's the basic principles applied to the absorption and auctioning. auctioning strategy.
+
+142
+00:10:28,203 --> 00:10:34,803
+现在来看看你将要看到的一些实战案例
+ Now let's go and have a look at some of the practical examples that you can expect to see.
+
+143
+00:10:36,004 --> 00:10:38,010
+其实在进入实际例子前
+In fact before we move on
+
+144
+00:10:38,010 --> 00:10:40,016
+让我
+to the practical examples let me
+
+145
+00:10:40,016 --> 00:10:42,022
+先给你展示吸收与拍卖中的三种变体
+just show you the three variations
+
+146
+00:10:42,022 --> 00:10:45,700
+你可能会看到这三种
+that you can expect to see within the absorption and auctioning.
+
+147
+00:10:46,604 --> 00:10:48,395
+第一种就是我之前给你展示的
+Now the first is obviously as I showed
+
+148
+00:10:48,395 --> 00:10:49,962
+我会快速画出来
+you and I'm going to draw these
+
+149
+00:10:49,962 --> 00:10:52,201
+记得在笔记本上记下来
+very briefly so do make a note in your notebook.
+
+150
+00:10:52,504 --> 00:10:55,046
+第一种显然是我们拥有的
+So the first is obviously where we have
+
+151
+00:10:55,046 --> 00:10:57,588
+首先是非常清晰的支撑阻力位，这些你应该知道
+a very clear pivots again you know these
+
+152
+00:10:57,588 --> 00:11:00,130
+低点不会每次都精确，可能相差一个Tick
+lows are not going to be exact every
+
+153
+00:11:00,130 --> 00:11:06,802
+但本质上，你想在极值点看到高成交量
+time they could extend by a tick or not but in essence you want to see high volumes at the extremes
+
+154
+00:11:07,903 --> 00:11:10,780
+第二种变体，
+Then the second type of variation, which a
+
+155
+00:11:10,780 --> 00:11:14,376
+很多同学会更熟悉，是类似内包K线的方式
+lot more of you will be familiar with, is more
+
+156
+00:11:14,376 --> 00:11:17,972
+具体来说，市场会这样：
+of an inside candle approach where effect, what happens is
+
+157
+00:11:17,972 --> 00:11:20,849
+市场在越来越窄的区间内积累或分发
+the market finds some sort of accumulation and
+
+158
+00:11:20,849 --> 00:11:30,200
+后续K线无法突破前高或前低
+distribution in a tighter and tighter range. So failing to take out either the previous high or the previous low as the next candlesticks come in.
+
+159
+00:11:30,203 --> 00:11:31,675
+现在注意，
+Now note, obviously, you'll
+
+160
+00:11:31,675 --> 00:11:33,883
+你会在时间周期图上更容易看到这种情况
+see this a lot easier, again,
+
+161
+00:11:33,883 --> 00:11:39,403
+这就是吸收与拍卖的第二种变体
+on a time-based rotation. But that's the second type of variation of absorption and auctioning.
+
+162
+00:11:39,903 --> 00:11:47,504
+第三种变体，本质上是吸收与拍卖的假突破
+The third type. Is in essence where we've got a failed break of the absorption and auctioning.
+
+163
+00:11:47,803 --> 00:11:49,330
+具体来说，
+So in essence what happens is
+
+164
+00:11:49,330 --> 00:11:50,857
+市场会向一个方向突破
+the market breaks to the one
+
+165
+00:11:50,857 --> 00:11:53,402
+然后又回落
+way or to the other way and comes back in.
+
+166
+00:11:54,703 --> 00:11:56,783
+本质上在这两个例子中，
+So in essence in these two
+
+167
+00:11:56,783 --> 00:11:58,863
+我们突破并启动一个方向
+examples We break and initiate in
+
+168
+00:11:58,863 --> 00:12:01,636
+在第三个例子中，我们突破，
+one direction. In the third example, we break,
+
+169
+00:12:01,636 --> 00:12:05,103
+尝试启动一个方向，然后迅速反转
+try to initiate in one direction and very swiftly reverse.
+
+170
+00:12:05,303 --> 00:12:10,004
+好，这就是接下来要讨论的三种变体
+ Okay, those are the three variations we're going to discuss as we go through the rest of this unit.
+
+171
+00:12:10,303 --> 00:12:14,903
+现在，这个策略最适合什么情况？
+ Now note, where does this strategy best come into play?
+
+172
+00:12:16,203 --> 00:12:17,453
+这很重要，
+This is important, you
+
+173
+00:12:17,453 --> 00:12:19,328
+你要知道，
+know, what we're going to talk
+
+174
+00:12:19,328 --> 00:12:21,828
+当我们讲到观察策略时，
+about when we get to observing a strategy
+
+175
+00:12:21,828 --> 00:12:26,203
+本质上，你能在平衡和失衡市场中都看到它
+is that in essence, you can see this in both balanced and imbalanced markets.
+
+176
+00:12:26,504 --> 00:12:29,603
+但我想说的是，
+But what I would say is this concept
+
+177
+00:12:29,603 --> 00:12:32,702
+吸收与拍卖这个交易策略
+or this trade strategy of absorption and auctioning
+
+178
+00:12:32,702 --> 00:12:35,801
+在失衡状态下效果最好
+is going to occur best in imbalanced conditions.
+
+179
+00:12:36,104 --> 00:12:38,761
+原因很简单，
+And the reason is very simple.
+
+180
+00:12:38,761 --> 00:12:42,303
+像我说的，记住，我们寻找的是
+Like I said, remember, what we're looking for
+
+181
+00:12:42,303 --> 00:12:44,960
+我们要找的是突破关键枢轴后的主动性
+is we're looking for initiative once
+
+182
+00:12:44,960 --> 00:12:48,502
+一旦突破关键枢轴区域
+we break out of the key pivot area.
+
+183
+00:12:48,504 --> 00:12:51,566
+现在，如果市场处于失衡状态
+Now, if the market is in the imbalanced
+
+184
+00:12:51,566 --> 00:12:55,394
+注意，失衡仅意味着
+zone, note that imbalanced just simply means we're trading maybe
+
+185
+00:12:55,394 --> 00:12:59,222
+可能交易价格接近前一交易日的极值区域
+quite close to the extreme of the previous day or
+
+186
+00:12:59,222 --> 00:13:03,050
+甚至有时超出前一交易日的波动范围
+even sometimes outside of the previous day's range. So if
+
+187
+00:13:03,050 --> 00:13:15,300
+如果在市场失衡区域看到吸收与拍卖，说明这种主动性可能更激进
+we're seeing the concept of absorption and auctioning occurring in an imbalanced area of the market or market context, this means that this initiative has the potential to be far more aggressive.
+
+188
+00:13:15,303 --> 00:13:16,520
+为什么？
+Why? Because if we're
+
+189
+00:13:16,520 --> 00:13:18,954
+因为交易价格接近前一交易日的极值
+trading quite close to a previous day's extreme,
+
+190
+00:13:18,954 --> 00:13:22,301
+突破的潜力会非常高
+We know that the potential for a breakout is quite high.
+
+191
+00:13:22,303 --> 00:13:29,703
+所以我们要利用吸收与拍卖来抓住突破前一交易日极值的机会
+So we want to utilize this absorption and auctioning to play for the potential. breakout of the previous day's extreme.
+
+192
+00:13:30,303 --> 00:13:34,803
+好，这就是市场环境方面的内容
+ Okay, so that's obviously in terms of market context.
+
+193
+00:13:35,104 --> 00:13:36,363
+但请注意
+Do note, however, you
+
+194
+00:13:36,363 --> 00:13:38,882
+在平衡状态下也能看到这种情况
+can see this in balanced conditions as well.
+
+195
+00:13:38,882 --> 00:13:41,401
+并不是说它在平衡状态下效果不好
+It's not to say it doesn't work equally
+
+196
+00:13:41,401 --> 00:13:43,920
+但对我来说
+well, but for me, I've noticed that in
+
+197
+00:13:43,920 --> 00:13:47,699
+在失衡状态下，吸收与拍卖策略的效果要好得多
+imbalanced conditions, the absorption and auctioning trade strategy works far more effectively.
+
+198
+00:13:48,504 --> 00:13:50,604
+好，现在我们来看例子
+ Okay, let's have a look at some examples now.
+
+199
+00:13:51,303 --> 00:13:55,703
+这是12月16日的欧元美元数据
+ So obviously this is taken from the 16th of December, it's the Eurodollar.
+
+200
+00:13:56,203 --> 00:14:02,504
+注意，这是旋转型K线或足迹图
+ Do note this is a rotational based candle or footprint chart.
+
+201
+00:14:04,104 --> 00:14:07,842
+在每个例子中，我都会展示
+As we go through every example, I'm going to show you both
+
+202
+00:14:07,842 --> 00:14:10,334
+时间基础和旋转基础的图表
+time-based and rotational-based so that you get used
+
+203
+00:14:10,334 --> 00:14:12,203
+让你适应不同的视角
+to seeing them with different views.
+
+204
+00:14:12,203 --> 00:14:15,060
+显然，我们可以看到
+Now, obviously what we can see is the
+
+205
+00:14:15,060 --> 00:14:17,917
+吸收与拍卖在旋转图上效果特别好
+absorption auctioning, it can work particularly well on
+
+206
+00:14:17,917 --> 00:14:22,202
+前提是旋转设置正确
+a rotation, assuming that your rotations are set to the right rotation.
+
+207
+00:14:23,703 --> 00:14:26,815
+我们可以看到，市场在
+So what we can see is that the market entered
+
+208
+00:14:26,815 --> 00:14:29,616
+凌晨大约6点05分进入
+in from sort of 6.05. Am in the morning to
+
+209
+00:14:29,616 --> 00:14:32,417
+哦，抱歉，不是6点05分
+oh not 605 sorry that'll be in the evening in
+
+210
+00:14:32,417 --> 00:14:35,529
+应该是在晚上，其实我也不清楚这些时间是什么意思
+fact I don't know what these times mean but this
+
+211
+00:14:35,529 --> 00:14:38,641
+这肯定不是早盘时段 好吗
+is definitely not the morning session okay obviously as we
+
+212
+00:14:38,641 --> 00:14:41,753
+讲解这些策略时 同学们
+go through these strategies guys none of these will be
+
+213
+00:14:41,753 --> 00:14:44,865
+都不会在非现金交易时段使用
+taken outside of cash hours for good reason like I
+
+214
+00:14:44,865 --> 00:14:56,380
+原因很简单 如我之前提到 大部分策略适用于多头和空头互动的场景
+mentioned most of the strategies are applicable when there is interaction between buyers and sellers now we noted that that interaction is best seen when the cash market is in okay so these time formats won't be
+
+215
+00:14:57,104 --> 00:15:00,789
+而这种互动在现金市场开盘时最明显
+quite correct but in essence what we've seen is the
+
+216
+00:15:00,789 --> 00:15:03,737
+所以这些时间格式不太准确
+market has gone into a sideways holding we
+
+217
+00:15:03,737 --> 00:15:10,002
+但本质上 我们看到市场进入横盘整理
+can obviously see nice pivot on the downside and a nice pivot to the upside now note
+
+218
+00:15:11,203 --> 00:15:14,692
+能看到下方有一个很好的支点
+we can see some real extreme absorption at the high
+
+219
+00:15:14,692 --> 00:15:18,181
+上方也有一个很好的阻力点
+and then again equally some absorption at the low some
+
+220
+00:15:18,181 --> 00:15:21,670
+注意高位有明显的订单吸收
+absorption at the low once that resolves itself again note
+
+221
+00:15:21,670 --> 00:15:25,159
+低位同样有订单吸收
+as well whilst we in this zone of accumulation and
+
+222
+00:15:25,159 --> 00:15:28,648
+一旦吸收完成 请注意
+distribution note the high volume okay relatively high compared to
+
+223
+00:15:28,648 --> 00:15:43,302
+我们处于累积和派发区间时 成交量较高 还要注意Delta
+what we've seen also note the delta so note how the delta goes positive on the upward rotation and then high volume and the delta goes negative on the downward rotation okay this is this is a function of absorption and auctioning
+
+224
+00:15:43,703 --> 00:15:45,641
+你会在这些波动中看到这种情况
+you are going to see this within these
+
+225
+00:15:45,641 --> 00:15:47,095
+轮动 但重点是
+rotations but the important thing to
+
+226
+00:15:47,095 --> 00:15:50,003
+但关键点在于 一旦突破 我们需要看到主动性
+note is once we break we want to see initiative now note
+
+227
+00:15:51,303 --> 00:15:54,966
+主动性体现在Delta和颜色上
+initiative in terms of the delta and the colors you
+
+228
+00:15:54,966 --> 00:15:58,629
+你可以预期看到的是
+can expect to see is that you're going to get
+
+229
+00:15:58,629 --> 00:16:02,292
+主动性初期颜色会比较浅
+the initiative the initial part will be light colors Okay,
+
+230
+00:16:02,292 --> 00:16:13,647
+如你所见 这里颜色相对较浅 之前也是较浅的颜色
+so as you can see here, we can see relatively lighter colors here and relatively light colors before then running into darker colors once we start to see liquidity being found.
+
+231
+00:16:13,648 --> 00:16:18,548
+然后在发现流动性后颜色会变深
+Okay, that's what you can think of the darker colors as. It's simply just liquidity being provided.
+
+232
+00:16:18,548 --> 00:16:21,576
+所以一旦出现主动性 它看起来会是浅色
+So once we get the initiative, it will look like
+
+233
+00:16:21,576 --> 00:16:23,998
+颜色变浅 直到遇到某些
+a lighter color until it runs into some
+
+234
+00:16:23,998 --> 00:16:29,146
+在这个例子中 会让Delta颜色变得稍深一些
+responsive sellers in this example, which will start to make the delta colors a little bit darker.
+
+235
+00:16:29,648 --> 00:16:31,872
+好 显然 就像我们说的
+Okay, do note obviously, well, like we said,
+
+236
+00:16:31,872 --> 00:16:34,096
+好的 当然 如我们所说
+we want to also see with any kind
+
+237
+00:16:34,096 --> 00:16:36,320
+我们还希望看到成交量上升
+of initiative, we always want to see the
+
+238
+00:16:36,320 --> 00:16:47,444
+同时Delta朝同一方向移动 这对主动型价格行动至关重要 你总要看到成交量和Delta都朝主动方向移动
+volume pick up, but we also want to see the delta go in the direction. That's so crucial with initiative price action. You always want to see both the volume and the delta go in the direction of the initiative.
+
+239
+00:16:47,947 --> 00:16:51,370
+说到颜色线
+Now note in terms of color lines, like we always
+
+240
+00:16:51,370 --> 00:16:53,423
+一旦出现主动性
+say. Once we get that initiative
+
+241
+00:16:53,423 --> 00:16:56,846
+一旦主动性行情被接手，就会显示青绿色。
+being taken, we will obviously post a nice turquoise color.
+
+242
+00:16:57,347 --> 00:17:00,401
+好的，现在说入场点，
+Okay, so in terms of entry point now, what I
+
+243
+00:17:00,401 --> 00:17:03,455
+要注意，很多交易者
+am going to say is do note, you know, I
+
+244
+00:17:03,455 --> 00:17:06,509
+在任何策略中常犯一个错误：
+think one of the mistakes that a lot of traders
+
+245
+00:17:06,509 --> 00:17:14,145
+他们总想要精确执行：精确入场、精确出场。但行不通。
+will make with any strategy is they want an exact execution. They want an exact entry, an exact exit. Okay, it doesn't work like that.
+
+246
+00:17:14,448 --> 00:17:18,548
+关键要理解：这些每一个都是策略。
+ All right, the important thing to understand is that every one of these is a strategy.
+
+247
+00:17:18,847 --> 00:17:22,597
+但本质上，我们寻找的是
+But in essence, what we're looking for is we're looking
+
+248
+00:17:22,597 --> 00:17:25,597
+在市场回测或
+to be long once the market retests or
+
+249
+00:17:25,597 --> 00:17:27,847
+出现吸收时做多。
+shows us some form of absorption.
+
+250
+00:17:28,748 --> 00:17:31,814
+如果我移除这里，你会看到
+If I can remove this here. you'll see
+
+251
+00:17:31,814 --> 00:17:34,880
+在75到77区间有大量吸收。
+quite a lot of absorption taking place in
+
+252
+00:17:34,880 --> 00:17:37,180
+the zone around these 75 to 77 area.
+
+253
+00:17:38,548 --> 00:17:42,048
+吸收很充分，突破时就是入场点。
+Some real good absorption. That's your entry point on the break.
+
+254
+00:17:42,548 --> 00:17:42,847
+为什么？
+ Why?
+
+255
+00:17:42,847 --> 00:17:49,347
+因为一开始这里出现响应性买盘和卖盘。
+ Because what happens is we initially see some responsive buying here and responsive selling.
+
+256
+00:17:49,647 --> 00:17:54,948
+然后，响应性卖盘或枢轴阻力就变成枢轴支撑。
+ And what happens is that responsive selling or that pivot resistance then becomes pivot support.
+
+257
+00:17:55,347 --> 00:17:59,548
+好的，现在看突破向上或向下的两种变体。
+ Okay, now note the two variations with regard to the break up or down.
+
+258
+00:17:59,548 --> 00:18:04,347
+像我说的，你可能看到非常激进的主动性行情，往往出现买卖失衡。
+ Like I said, you can see some very aggressive initiative where we do tend to have imbalances.
+
+259
+00:18:04,748 --> 00:18:12,048
+或者像这个例子，是相对缓慢、逐步的上涨。
+ Or, as in this example, you can see that we have a relatively slow, gradual move to the upside.
+
+260
+00:18:12,448 --> 00:18:13,751
+好的，现在... 这一点很重要
+Okay, now... That's important
+
+261
+00:18:13,751 --> 00:18:16,357
+因为并非总是像后面
+to know because it's not always going to
+
+262
+00:18:16,357 --> 00:18:18,963
+一些例子那样直接干净。
+be as straightforward and clean as some of
+
+263
+00:18:18,963 --> 00:18:22,546
+后面幻灯片中的例子。
+the examples you might see in some of the later slides.
+
+264
+00:18:22,847 --> 00:18:28,548
+下一个例子，仍是反转失败的案例。
+ Now, the next example, again, is one of the failed reversals now.
+
+265
+00:18:29,048 --> 00:18:32,448
+我会给你展示这个失败反转，并展示它的样子。
+ And I'm going to show you this failed reversal and show you what it looks like.
+
+266
+00:18:32,448 --> 00:18:38,147
+同样，这个例子来自E-Money标普500，而且是最近的。
+ So again, this is taken from the E-Money S&P 500, quite recent as well.
+
+267
+00:18:38,147 --> 00:18:44,048
+现在，我还想给你展示：这个市场进入了盘整阶段。
+ Now, again, what I want to show you is this market enters a phase of consolidation.
+
+268
+00:18:44,448 --> 00:18:49,347
+我们能看到极端成交量，负Delta正在发生。
+ We can see real sort of extreme kind of volume, negative delts taking place.
+
+269
+00:18:49,647 --> 00:18:55,647
+然后看到反转，市场在更高价位吸收后启动。
+We then see a flip of that. The market then absorbs on the higher up prices and then it initiates.
+
+270
+00:18:55,647 --> 00:18:57,607
+这很有趣，因为
+And this is quite interesting because we
+
+271
+00:18:57,607 --> 00:18:59,847
+然后主动性转向上涨。
+then get the initiative taken to the upside.
+
+272
+00:18:59,847 --> 00:19:04,047
+注意成交量也体现了这一点，市场向上启动。
+Notice that because of the volume as well. So the market initiates to the upside.
+
+273
+00:19:04,448 --> 00:19:05,114
+我们看到
+We see,
+
+274
+00:19:05,114 --> 00:19:07,447
+之前，
+obviously, before that, we did see quite
+
+275
+00:19:07,447 --> 00:19:09,447
+市场中出现大量激进的响应性卖单，
+an aggressive amount of responsive selling
+
+276
+00:19:09,447 --> 00:19:11,447
+但被压制了。
+in the market. It got overwhelmed.
+
+277
+00:19:11,548 --> 00:19:19,248
+市场向上延伸，但很快反转，回到初始区间。
+ The market extends to the upside, but very quickly reverses and finds itself back inside the initial range.
+
+278
+00:19:19,647 --> 00:19:20,647
+接下来发生了什么？
+ What then occurs?
+
+279
+00:19:21,448 --> 00:19:22,610
+市场回测，
+The market retests,
+
+280
+00:19:22,610 --> 00:19:25,322
+注意，这是反转策略的关键：
+note, and this is the key to
+
+281
+00:19:25,322 --> 00:19:28,034
+市场回测
+the reversal strategy, the market then retests
+
+282
+00:19:28,034 --> 00:19:30,746
+突破前的原始吸收区域。
+that original absorption area before we broke.
+
+283
+00:19:31,048 --> 00:19:35,147
+这就是我们所说的高位成交量区。
+ Okay, so that's what we call a high pocket volume or a high volume area.
+
+284
+00:19:35,647 --> 00:19:38,048
+那里曾发生被动卖单。
+ That was where the passive selling was occurring.
+
+285
+00:19:38,248 --> 00:19:47,248
+市场重新进入该区域，回测并再次吸收约1600张合约，然后开始激进的反转。
+ So the market re-enters that zone, it retests and again absorbs another 1600 contracts before then beginning the aggressive reversal.
+
+286
+00:19:47,748 --> 00:19:48,882
+就像
+Okay, so like
+
+287
+00:19:48,882 --> 00:19:51,528
+反转交易策略，
+I said, The reversal trade strategy, what
+
+288
+00:19:51,528 --> 00:19:54,552
+通常的情况是：一旦突破失败，
+tends to occur is once we fail to
+
+289
+00:19:54,552 --> 00:19:57,198
+我们就重新进入区间，
+break, we then re-enter range, but we
+
+290
+00:19:57,198 --> 00:20:03,246
+但会迅速从区间的一边移动到另一边。
+very quickly move from one side of the range to the other side of the range.
+
+291
+00:20:03,347 --> 00:20:06,067
+你可以看到，市场
+And what you can see is that market
+
+292
+00:20:06,067 --> 00:20:08,447
+在同一个循环中，
+within the same rotation takes almost within
+
+293
+00:20:08,447 --> 00:20:11,847
+几分钟内直接反转到另一边。
+a couple of minutes, reverses straight to the other side.
+
+294
+00:20:11,847 --> 00:20:15,048
+这是反转策略的关键因素。
+ So that's a key factor of the reversal strategy.
+
+295
+00:20:15,048 --> 00:20:20,748
+学习这个策略时，首先要记住：我们寻找的是突破。
+ So again, if you're going to learn the strategy, remember first and foremost, we're looking for the break.
+
+296
+00:20:22,647 --> 00:20:25,748
+当然，你需要有效管理止损。
+ Obviously, you need to manage your stop quite effectively.
+
+297
+00:20:26,248 --> 00:20:29,872
+就像我之前例子中说的，如果回到
+As I said in the previous example, if we go back to
+
+298
+00:20:29,872 --> 00:20:33,496
+那里，很简单，
+that quickly, very simply you know we ideally we don't really want
+
+299
+00:20:33,496 --> 00:20:37,120
+我们不希望看到，市场
+to see I mean we can see how the market gave us
+
+300
+00:20:37,120 --> 00:20:40,744
+给了我们一个不错的买卖失衡，但理想上不希望看到市场
+a nice imbalance but ideally we don't want to see the market
+
+301
+00:20:40,744 --> 00:20:44,368
+再次回到这个区间 所以止损方面 如果你
+re-enter this range so again in terms of a stop if you
+
+302
+00:20:44,368 --> 00:20:47,992
+是个止损设得特别紧的人 可能只设了
+someone that keeps it very very tight you might have had only
+
+303
+00:20:47,992 --> 00:20:56,146
+几个Tick的止损 但我不希望这个失衡被吞噬 因为失衡标志着主动性的开始
+a couple of tick stop for me I didn't want to see this imbalance be taken up why because the imbalance shows that the start of initiative.
+
+304
+00:20:56,748 --> 00:20:59,303
+对我来说 止损会直接设在上方
+So for me, a stop would have gone right over
+
+305
+00:20:59,303 --> 00:21:01,347
+注意市场确实过来测试了一下
+there, notice it did come and try and
+
+306
+00:21:01,347 --> 00:21:03,646
+然后在另一个方向反转
+test it before then reversing in the other direction.
+
+307
+00:21:04,147 --> 00:21:05,989
+好的 关于目标位 这个策略总是
+Okay, in terms of target, this is always
+
+308
+00:21:05,989 --> 00:21:07,601
+有点棘手
+a tricky one for the strategy. What
+
+309
+00:21:07,601 --> 00:21:11,747
+我总是说 当市场让你出场时你就出场 这是策略的一部分
+I always say is you get out when the market tells you to get out in the strategy.
+
+310
+00:21:13,248 --> 00:21:15,825
+简单来说 我们可以看到
+So simply put, we can see obviously the
+
+311
+00:21:15,825 --> 00:21:18,080
+市场在这里开始了订单吸收
+market began a process of absorption here,
+
+312
+00:21:18,080 --> 00:21:24,846
+出现一个小K线 然后又延伸了 所以市场其实没有给出出场理由
+a little inside candle and then extended again. So again, the market didn't really give us any reason to get out.
+
+313
+00:21:24,948 --> 00:21:27,847
+为什么？因为它并没有真正跌破之前的摆动低点
+Why? Because it didn't really take out any previous swing lows.
+
+314
+00:21:28,448 --> 00:21:32,347
+我会说 一旦看到这个双底 我就会变得非常谨慎
+ I would have said once we saw this double bottom, I would have become far more cautious.
+
+315
+00:21:32,948 --> 00:21:35,603
+好的 关于拒绝策略
+Okay, in terms of obviously the rejection strategy,
+
+316
+00:21:35,603 --> 00:21:37,926
+目标位
+well again, you know, target is a
+
+317
+00:21:37,926 --> 00:21:40,249
+确实是一门需要精准把握的艺术
+little bit of a nuanced fine art.
+
+318
+00:21:40,249 --> 00:21:48,546
+但我们寻找的是反方向的洗盘 然后让市场告诉我们何时出场
+But again, what we're looking for is a flush in the opposite direction and let the market tell us when it's time to get out.
+
+319
+00:21:49,748 --> 00:21:52,059
+好的 最后一个例子 还是拒绝策略的
+Okay, our last example, again, another one of
+
+320
+00:21:52,059 --> 00:21:54,081
+我再举一个例子
+the rejection ones. And again, I want
+
+321
+00:21:54,081 --> 00:21:57,547
+只是为了向你展示它们有多常见
+to illustrate this twice just to show you how common they are.
+
+322
+00:21:58,448 --> 00:22:03,647
+显然 我们可以看到 市场再次进入横盘区间
+So obviously, as we can see, the... market again settled into a sideways range.
+
+323
+00:22:03,948 --> 00:22:07,330
+但有一点你要注意 我在这里提醒你这个策略的注意事项
+But one thing you should note here, and this is
+
+324
+00:22:07,330 --> 00:22:10,035
+记得我们之前说的
+where I caution you on the strategy, remember
+
+325
+00:22:10,035 --> 00:22:15,446
+盘整和累积、派发的区别在于成交量
+what we said, the difference between consolidation and accumulation and distribution is the volume being traded.
+
+326
+00:22:16,147 --> 00:22:18,889
+现在看看这里的成交量
+Now note the volume being traded here. Do
+
+327
+00:22:18,889 --> 00:22:23,346
+我们在极端位置有极端的Delta吗？答案是没有
+we have extreme delta on the extremes? And the simple answer is no.
+
+328
+00:22:24,147 --> 00:22:26,747
+这碰巧又是欧元/美元
+This happens to be the euro dollar again,
+
+329
+00:22:26,747 --> 00:22:29,022
+但没有真正的极端
+but no real extreme. A little bit
+
+330
+00:22:29,022 --> 00:22:33,247
+那里和那里有一些极端成交单 但不是最好的例子
+of extreme printing coming in there and there, but not the best example.
+
+331
+00:22:33,248 --> 00:22:36,948
+我不会把这当成潜在机会。
+ I wouldn't be looking at this going, okay, this is a potential opportunity.
+
+332
+00:22:37,347 --> 00:22:42,548
+从Delta也能看出来。这是最明显的线索。
+And we can see that also simply by the delta. This is always the dead giveaway clue.
+
+333
+00:22:42,847 --> 00:22:45,378
+Delta在
+There's no shift in that delta on
+
+334
+00:22:45,378 --> 00:22:48,270
+两边都没出现转向。
+either side. And that tells me this isn't
+
+335
+00:22:48,270 --> 00:22:52,247
+这说明这不是累积或分发，而是盘整。
+a process of accumulation distribution, but rather a process of consolidation.
+
+336
+00:22:52,748 --> 00:22:54,417
+现在，我想举这个例子的原因很简单。
+Now, the reason I want to include
+
+337
+00:22:54,417 --> 00:22:56,086
+你们中很多人会看这个例子然后说，
+this was very simple. A lot of
+
+338
+00:22:56,086 --> 00:22:58,947
+‘这简直是完美的例子。’
+you will look at that and say, well, it's a perfect example.
+
+339
+00:22:59,548 --> 00:23:01,281
+它突破了，延伸了，
+It broke, extended, left all sorts
+
+340
+00:23:01,281 --> 00:23:03,014
+留下大量买卖失衡，
+of imbalances, had a high volume
+
+341
+00:23:03,014 --> 00:23:04,747
+成交量很大，Delta也转向了。
+and a shift in the delta.
+
+342
+00:23:04,747 --> 00:23:07,346
+所以本质上，它还是重复了同样的走势。
+So in essence, it still did the same thing.
+
+343
+00:23:07,748 --> 00:23:16,847
+但记住，交易的核心是提高或降低成功概率，所以条件判断至关重要。
+However, Remember, this job is about reducing or increasing the probability of success, and that's why the conditioning is crucial.
+
+344
+00:23:17,347 --> 00:23:19,458
+注意，只有在极端区域出现高Delta时，
+So note, it's only absorption
+
+345
+00:23:19,458 --> 00:23:22,413
+才构成吸收与拍卖。
+and auctioning if we have got high
+
+346
+00:23:22,413 --> 00:23:24,946
+而在例子中，
+deltas at the extremes, which we
+
+347
+00:23:24,946 --> 00:23:28,746
+我们可以通过Delta看到这一点。
+can see with the delta in the example provided.
+
+348
+00:23:29,147 --> 00:23:30,948
+好，就这些。三个例子。
+Okay, so that's it. So three examples.
+
+349
+00:23:31,248 --> 00:23:33,357
+现在我们来看
+Let's now have a look at
+
+350
+00:23:33,357 --> 00:23:36,169
+一个交易策略。你会发现，
+one of the trade strategies. And what you'll
+
+351
+00:23:36,169 --> 00:23:38,278
+关于交易策略，
+note, obviously, is that with regards
+
+352
+00:23:38,278 --> 00:23:42,145
+我会给你们演示一遍。
+to the trade strategies, I'm going to play you through it.
+
+353
+00:23:42,548 --> 00:23:46,748
+我会为你们标出几个要点。别担心我讲得快，
+And I'm going to identify a few things for you. Don't worry if I rush through this, guys.
+
+354
+00:23:47,248 --> 00:23:52,068
+你们会有很多机会
+You will get plenty of opportunity to go
+
+355
+00:23:52,068 --> 00:23:56,888
+自己操作并回放，
+and run this on your own and watch
+
+356
+00:23:56,888 --> 00:23:59,298
+在自己的时间里学习。
+it back in your
+
+357
+00:23:59,298 --> 00:24:08,938
+好的。好，给我一点时间，我试着播放这个。
+own time. Okay. Alright, let's just give me one moment, just trying to get this playing.
+
+358
+00:24:19,640 --> 00:24:21,228
+抱歉。现在，
+Okay, apologies for that. Now,
+
+359
+00:24:21,228 --> 00:24:23,451
+在进入例子之前，
+the first thing before we actually move
+
+360
+00:24:23,451 --> 00:24:25,356
+你可以
+into the example that you can
+
+361
+00:24:25,356 --> 00:24:30,438
+你首先看到的是这个交易策略的一个小技巧。
+see in front of you is just a little tip with regards to the trade strategy.
+
+362
+00:24:30,440 --> 00:24:32,890
+现在，我会把这些技巧
+Now, I'm going to give you these
+
+363
+00:24:32,890 --> 00:24:35,690
+和所有经验法则一起分享给你。但
+tips alongside all the rules of thumb. But
+
+364
+00:24:35,690 --> 00:24:41,640
+这个策略的技巧是：暴风雨前总有平静。
+the tip for this trade strategy is there always tends to be a calm before the storm.
+
+365
+00:24:41,839 --> 00:24:43,946
+好的，所以你通常会看到
+Okay, so you tend to see
+
+366
+00:24:43,946 --> 00:24:46,755
+市场真正缓慢移动，几乎像
+this real just slow moving market, almost like
+
+367
+00:24:46,755 --> 00:24:49,564
+在喘息。某个触发因素出现，可能是一端的吸收，
+a breath. Something triggers, maybe it's absorption on
+
+368
+00:24:49,564 --> 00:24:56,237
+但总会有短暂的相对平静，然后突然主动性被激发。
+the one extreme, but there's always this little bit of relative calm and then suddenly the initiative is taken.
+
+369
+00:24:56,339 --> 00:24:58,264
+这就是你在这个策略中要寻找的。
+So that's what you're looking for in
+
+370
+00:24:58,264 --> 00:25:00,189
+你要寻找任何
+this trade strategy. You're looking for anything
+
+371
+00:25:00,189 --> 00:25:02,939
+暗示主动性可能被激发的迹象。
+that hints at the potential for initiative to be taken.
+
+372
+00:25:04,240 --> 00:25:07,093
+你面前的例子是
+The example in front of you is
+
+373
+00:25:07,093 --> 00:25:09,946
+18日的欧元美元，我
+the Eurodollar from the 18th and I'm
+
+374
+00:25:09,946 --> 00:25:11,576
+会快速过一遍。
+just going to run
+
+375
+00:25:11,576 --> 00:25:14,837
+记住这些例子。
+this through. Obviously, bear in mind these examples.
+
+376
+00:25:15,440 --> 00:25:18,539
+完整例子会在视频中供你回顾。
+ The full example will be there for you to watch the entire video.
+
+377
+00:25:19,039 --> 00:25:20,519
+我会
+Obviously, I'm going to be
+
+378
+00:25:20,519 --> 00:25:22,295
+快速过一遍，向你展示
+running through it relatively quickly, showing
+
+379
+00:25:22,295 --> 00:25:24,071
+关键点、技巧，
+you the key points, showing you
+
+380
+00:25:24,071 --> 00:25:26,439
+希望你能理解。
+the tips and hopefully you get an idea.
+
+381
+00:25:26,440 --> 00:25:33,740
+我会稍微快进，展示进入横盘阶段时的情况。
+So I'm just going to fast forward this fractionally, show you when we get to that phase of sideways.
+
+382
+00:25:34,039 --> 00:25:35,779
+现在，给你讲背景：
+Now, to bring things into context,
+
+383
+00:25:35,779 --> 00:25:37,809
+这也是为什么我们有
+and this is why we have the
+
+384
+00:25:37,809 --> 00:25:42,739
+右边的K线。注意今天早上我们小幅上涨。
+candlestick on the right, note we are in a little bit of a drive up this morning.
+
+385
+00:25:43,240 --> 00:25:44,740
+目前处于买卖失衡状态。
+ We are imbalanced at the moment.
+
+386
+00:25:44,740 --> 00:25:46,710
+这就是我之前说的。
+So this is what I said. This
+
+387
+00:25:46,710 --> 00:25:48,961
+这个策略效果最好的理想情况是
+is ideally where the trade strategy works very
+
+388
+00:25:48,961 --> 00:25:52,338
+在极端点出现订单吸收或分布时。
+well, is when we get this accumulation distribution at an extreme point.
+
+389
+00:25:52,339 --> 00:25:54,853
+现在，首先要注意的一点是，
+Now, the first thing to note,
+
+390
+00:25:54,853 --> 00:25:57,367
+注意Delta在
+obviously, note the delta at the
+
+391
+00:25:57,367 --> 00:26:01,138
+低点的Delta，同样看高点的Delta。
+low. Then equally note the delta at the high.
+
+392
+00:26:01,140 --> 00:26:03,670
+所以低点和高点都出现了吸收，
+So we're seeing both absorption at the
+
+393
+00:26:03,670 --> 00:26:06,200
+以及高点的吸收反应。
+low as well as absorption response at
+
+394
+00:26:06,200 --> 00:26:10,538
+这个过程已经持续了一段时间。
+the high. And this process continues to occur for some time now.
+
+395
+00:26:11,039 --> 00:26:11,872
+我来给你展示一下，
+I'm going to show it
+
+396
+00:26:11,872 --> 00:26:12,872
+我会快进播放，
+to you, I'm going to keep
+
+397
+00:26:12,872 --> 00:26:15,538
+然后分享一个小技巧。
+fast forwarding it and then I'm going to show you a little bit of a tip.
+
+398
+00:26:15,640 --> 00:26:17,194
+再次注意，
+So again, notice again the
+
+399
+00:26:17,194 --> 00:26:19,059
+多头进场的反应，看Delta，
+response of buying coming in, notice
+
+400
+00:26:19,059 --> 00:26:21,235
+这就是我之前说的，
+the delta, this is what I said,
+
+401
+00:26:21,235 --> 00:26:23,411
+你总会看到正Delta，
+you're always going to get positive delta,
+
+402
+00:26:23,411 --> 00:26:29,939
+正Delta、负Delta。无论在哪个极端出现反应，都会体现在Delta上。
+positive delta, negative delta. So wherever that response comes in at whichever extreme, you're going to see it in the delta.
+
+403
+00:26:30,440 --> 00:26:37,839
+现在要注意，我们在寻找可能发起主动性的信号。
+ Now note obviously we're looking for any signal of the potential for some form of initiative to be taken.
+
+404
+00:26:37,839 --> 00:26:40,376
+再看高点处的情况。
+So again, note what we see at
+
+405
+00:26:40,376 --> 00:26:42,551
+确实有真实的买盘和意图，
+the high. Some real positive buying
+
+406
+00:26:42,551 --> 00:26:46,538
+但有人仍乐意接走这些流动性。
+and intent, but someone is still happy to take that liquidity.
+
+407
+00:26:47,140 --> 00:26:50,140
+这个过程持续了一段时间。
+ Okay, and this process goes on for some time.
+
+408
+00:26:50,140 --> 00:26:51,555
+现在注意，
+Now note. What we
+
+409
+00:26:51,555 --> 00:26:54,385
+突然发现，如果把最近的
+suddenly see, if you were to compare every
+
+410
+00:26:54,385 --> 00:26:56,507
+每一次拍卖对比，
+one of these last auctions, notice
+
+411
+00:26:56,507 --> 00:26:59,337
+就会发现这次拍卖有不同。
+what we've just seen in this latest auction.
+
+412
+00:26:59,539 --> 00:27:02,310
+如果你只是用肉眼看，
+If you were to just vision the eyeball
+
+413
+00:27:02,310 --> 00:27:05,081
+这次拍卖明显不一样。
+this something looks uniquely different about this auction
+
+414
+00:27:05,081 --> 00:27:07,506
+首先注意最后那173手
+okay one notice obviously where that last 173
+
+415
+00:27:07,506 --> 00:27:10,277
+多头重新建仓的位置，
+lot got reloaded notice how we only traded
+
+416
+00:27:10,277 --> 00:27:12,702
+我们只交易了13手就开始下跌，再看
+13 lots before we sold off and look
+
+417
+00:27:12,702 --> 00:27:18,245
+这次回调的成交量，和之前五次相比。
+at the volume traded in this rotation compared to all five of the previous rotations okay
+
+418
+00:27:19,440 --> 00:27:20,892
+你会清楚地发现，
+you're very distinctly seen nothing
+
+419
+00:27:20,892 --> 00:27:22,634
+其实成交很少，
+really got traded yet and that
+
+420
+00:27:22,634 --> 00:27:25,538
+那就是线索，暴风雨前的平静。
+was the clue that was the calm before the storm
+
+421
+00:27:26,539 --> 00:27:28,839
+现在，看看这场风暴是什么样。
+ Now, let's see what this storm looks like.
+
+422
+00:27:29,339 --> 00:27:33,940
+我直接切入重点，再给你展示一遍。
+ I'm just going to get to the point of it so I can show it to you again.
+
+423
+00:27:34,440 --> 00:27:41,640
+好，看到一点多头进场。看看这次主动性表现如何。
+Okay, what we can see a little bit of buying coming in. And let's see what this initiative looks like.
+
+424
+00:27:41,640 --> 00:27:47,339
+注意这里，上次吸收处成交39手，这次21手。
+ So note here, 39 contracts traded where we last absorbed, 21 contracts traded.
+
+425
+00:27:47,339 --> 00:27:49,339
+所以你能看到，确实没什么动静。
+ So you can see there's really nothing going on.
+
+426
+00:27:49,339 --> 00:27:50,945
+你知道，从实际操作中
+You know, from going, you know,
+
+427
+00:27:50,945 --> 00:27:52,551
+从每次
+from a point where every time
+
+428
+00:27:52,551 --> 00:27:54,157
+在极端位置都有大量吸收
+in extreme there was a great
+
+429
+00:27:54,157 --> 00:27:58,439
+到突然非常平静，停在当天最高价上。
+deal of absorption to suddenly very, very calm sitting on the highest price of the day.
+
+430
+00:27:58,940 --> 00:28:00,339
+这就是我讲的平静。
+ That's the calm I'm talking about.
+
+431
+00:28:00,640 --> 00:28:04,339
+好的，这正是你最终要利用的平静。
+ Okay, and that's the calm that you ultimately want to take advantage of.
+
+432
+00:28:04,539 --> 00:28:09,539
+现在，这里还有一个小线索最终出现。
+ Now, there's one more little clue that did come in here ultimately.
+
+433
+00:28:10,240 --> 00:28:12,539
+我稍微快进一点来演示。
+ I'm going to just illustrate this if I go a little bit further forward.
+
+434
+00:28:14,740 --> 00:28:16,323
+同样，我们能清楚看到
+So again, we can see obviously
+
+435
+00:28:16,323 --> 00:28:17,906
+市场在那里回落。
+the market did back off there.
+
+436
+00:28:17,906 --> 00:28:21,337
+我们一路回到低点，出现响应性价格走势。
+We came all the way back again, responsive price action at the low.
+
+437
+00:28:21,740 --> 00:28:23,640
+再看，我们又会得到另一个小线索。
+ And let's see again, we're going to get another little clue.
+
+438
+00:28:24,039 --> 00:28:28,240
+再次注意低点的响应性，Delta为负，Delta为负。
+ Again, notice the responsive at the low, delta negative, delta negative.
+
+439
+00:28:29,140 --> 00:28:31,208
+好的，看看发生了什么...
+Okay, and let's see what... what
+
+440
+00:28:31,208 --> 00:28:33,276
+同样，和之前看到的类似，
+happened so again similarly to what
+
+441
+00:28:33,276 --> 00:28:35,344
+当我指出
+we saw when I pointed out
+
+442
+00:28:35,344 --> 00:28:37,412
+这个非常有趣的轮动时，
+this very very interesting rotation notice
+
+443
+00:28:37,412 --> 00:28:39,480
+注意这里我们再次看到的情况，
+what we saw here again so
+
+444
+00:28:39,480 --> 00:28:48,790
+市场下跌，总成交400手，有真正的响应性多头，然后市场留下一个成交量极低的区域，好的。
+the market came down we traded 400 contracts in total some real responsive buyers sitting there and then the market left a really really low volume area okay
+
+445
+00:28:49,740 --> 00:28:51,603
+这通常是突破前会发生的。
+and this is often what happens
+
+446
+00:28:51,603 --> 00:28:53,466
+在突破前，
+just before we get a breakout
+
+447
+00:28:53,466 --> 00:28:55,329
+在累积分布之后，我们要么
+of this accumulation distribution we either
+
+448
+00:28:55,329 --> 00:28:57,192
+得到我们所谓的拍卖
+get what we call an auction
+
+449
+00:28:57,192 --> 00:29:07,439
+买卖失衡——你已知道，或者得到这个低成交量区域，立即注意这些零值，这显然是主动性启动的初始过程，好的，在执行方面
+imbalance which you know about or we get this low volume area and straight away note the zeros that's obviously the beginning process of the initiative taken okay so in terms of execution
+
+450
+00:29:09,240 --> 00:29:12,892
+如果我稍微回退一点，一旦我们
+If I just go back fractionally, once we
+
+451
+00:29:12,892 --> 00:29:15,631
+看到一点买卖失衡
+saw that little bit of imbalance
+
+452
+00:29:15,631 --> 00:29:19,283
+发生时，你会注意到有115手成交
+taking place, you'll notice that 115 contracts got traded.
+
+453
+00:29:19,839 --> 00:29:25,140
+我们来看看那个样子，因为那最终是我们激进执行的机会
+ Let's see what that looks like because that was ultimately our opportunity for some aggressive execution.
+
+454
+00:29:25,940 --> 00:29:31,440
+好的，显然我想说的是，当我们讲解PPT时，会讨论执行层面
+Okay, obviously what I would say. When we go through the slides, we talk about the execution side.
+
+455
+00:29:32,140 --> 00:29:35,339
+你不需要预先布局这些交易策略
+ You don't have to preempt any of these trade strategies.
+
+456
+00:29:35,640 --> 00:29:39,440
+随着你越来越熟练，你会学会预先布局，因为你会掌握其中的细微差别
+ As you get better at them, you'll learn to preempt them because you'll learn the nuances of it.
+
+457
+00:29:39,440 --> 00:29:41,185
+但你能看到的是
+But what you can see is
+
+458
+00:29:41,185 --> 00:29:42,930
+你其实可以预先布局这个
+you could have actually preempted this
+
+459
+00:29:42,930 --> 00:29:45,838
+仅仅因为在高点有重新建仓
+just simply because of the reloading taking at the high.
+
+460
+00:29:45,839 --> 00:29:47,359
+现在注意，每次
+Now notice, every time
+
+461
+00:29:47,359 --> 00:29:49,639
+我们处于极端位置时
+that we've... Ultimately been at the
+
+462
+00:29:49,639 --> 00:29:51,919
+我们有空头抛售，或者
+extreme we've had sellers or we've
+
+463
+00:29:51,919 --> 00:29:54,199
+有多头在面对非常激进的空头响应时买入
+had a buyer buying into some
+
+464
+00:29:54,199 --> 00:30:01,039
+但这次我们有空头在面对非常激进的多头时抛售
+really aggressive sell side response this time however we have a seller selling into a really aggressive buyer.
+
+465
+00:30:01,039 --> 00:30:05,539
+换句话说，我们有多头在极端价位重新建仓
+ In other words, we've got a really aggressive buyer reloading at very extreme prices.
+
+466
+00:30:05,539 --> 00:30:06,339
+那就是我们的线索
+ And that was our clue.
+
+467
+00:30:06,440 --> 00:30:10,740
+那是我们的微妙线索，很像我们在之前循环中看到的线索
+ That was our subtle clue, a lot like the clue we saw in the previous rotation.
+
+468
+00:30:11,140 --> 00:30:18,440
+好的，因此，一旦空头意识到那个多头，我们就开始激进拍卖推高
+ Okay, as a result, once the sellers recognize that buyer, we begin the process of auctioning aggressively higher.
+
+469
+00:30:19,640 --> 00:30:20,940
+好的，这个过程持续进行
+ Okay, and this process continues.
+
+470
+00:30:21,440 --> 00:30:22,633
+你显然能看到我们
+You can see obviously we
+
+471
+00:30:22,633 --> 00:30:24,065
+创出新高，一点
+make an extended high, a little
+
+472
+00:30:24,065 --> 00:30:25,497
+像我们提到的那样买卖失衡
+bit of imbalance as we mentioned.
+
+473
+00:30:25,497 --> 00:30:28,838
+市场发现一点空头压力，回落，注意它回测了什么
+Market finds a little bit of sell side, comes back, notice what it retests.
+
+474
+00:30:29,140 --> 00:30:34,240
+好的，它回测了突破点，然后继续推高
+ Okay, it retests that break point before then extending on high.
+
+475
+00:30:34,240 --> 00:30:38,940
+我要快进一下，这样我们就能看到单一时间框架的过程
+ And I'm just going to fast forward this so we can see the process of one time framing.
+
+476
+00:30:38,940 --> 00:30:40,092
+所以显然注意到我们
+So note obviously we
+
+477
+00:30:40,092 --> 00:30:41,820
+突破了，注意市场
+got the break. Note the market
+
+478
+00:30:41,820 --> 00:30:43,548
+确实第二次回落了
+did come back a second time,
+
+479
+00:30:43,548 --> 00:30:46,140
+给了你一个入场点，然后继续上涨
+give you an entry point before then continuing higher.
+
+480
+00:30:47,039 --> 00:30:48,311
+好的，显然你有
+Okay, obviously you've got
+
+481
+00:30:48,311 --> 00:30:50,856
+你可以自己抽时间复习这个视频
+this video to go over yourself in your
+
+482
+00:30:50,856 --> 00:30:53,401
+但我想重点强调的是
+own time, but I just wanted to highlight
+
+483
+00:30:53,401 --> 00:30:57,537
+价格走势中那关键的细微变化，这正是你要捕捉的
+that really key nuance shift in the price action. That's what you're after.
+
+484
+00:30:57,539 --> 00:30:59,475
+如果想精通这个策略
+If you want to get good at the strategy,
+
+485
+00:30:59,475 --> 00:31:00,981
+你必须学会
+you're going to need to learn to
+
+486
+00:31:00,981 --> 00:31:04,639
+识别这些细微变化，这能让你把握策略的完美入场时机
+identify that little nuance because that's going to give you the perfect timing on the trade strategy.
+
+487
+00:31:07,039 --> 00:31:08,905
+我们再来看一个例子
+Let's look at another example, this
+
+488
+00:31:08,905 --> 00:31:11,394
+这次是黄金市场
+time in the gold market and this time
+
+489
+00:31:11,394 --> 00:31:15,438
+我们来看看激进反转的样子
+we're going to have a look at what an aggressive reversal looks like.
+
+490
+00:31:15,440 --> 00:31:17,334
+这是12月6日的
+So this was taken from the 6th
+
+491
+00:31:17,334 --> 00:31:19,498
+黄金市场
+of December, it is the gold market and
+
+492
+00:31:19,498 --> 00:31:21,392
+我再把这个
+again I just want to move this
+
+493
+00:31:21,392 --> 00:31:24,639
+稍微往前调，找到关键区域
+a little bit forward, let's get to some of the key areas.
+
+494
+00:31:26,339 --> 00:31:27,817
+显然，你会看到
+Obviously, what you're going to
+
+495
+00:31:27,817 --> 00:31:29,295
+这里是一个积累和分发的过程
+see here is a process
+
+496
+00:31:29,295 --> 00:31:33,139
+我们怎么判断？看极值部分
+of accumulation. And distribution, how do we know? Well, look at the extremes.
+
+497
+00:31:33,240 --> 00:31:34,306
+有一个高
+We have a high
+
+498
+00:31:34,306 --> 00:31:35,372
+Delta，看
+delta. Look at the
+
+499
+00:31:35,372 --> 00:31:36,972
+极值部分，有一个负Delta
+extremes. We have a negative delta.
+
+500
+00:31:36,972 --> 00:31:40,438
+两个枢轴的极端位置，颜色非常深
+We have some really dark colors at the extreme sides of both pivots.
+
+501
+00:31:40,440 --> 00:31:44,076
+现在，我想指出的是
+Now, what I want to point out is
+
+502
+00:31:44,076 --> 00:31:47,257
+当市场回撤到分发区后
+once this market retraces back in to
+
+503
+00:31:47,257 --> 00:31:50,438
+最终发生了什么
+the distribution zone, what then finally occurs.
+
+504
+00:31:52,240 --> 00:31:58,339
+同样，你可以看到市场现在回落，开始积累和分发的过程
+ Again, you can see we've come down now, the market's beginning the process of accumulation and distribution.
+
+505
+00:31:58,339 --> 00:32:00,245
+在低点有积累
+So we can see accumulation at
+
+506
+00:32:00,245 --> 00:32:02,151
+然后在高点分发
+the low and then we distribute
+
+507
+00:32:02,151 --> 00:32:04,057
+接着空头开始积累
+at the high and then accumulation
+
+508
+00:32:04,057 --> 00:32:05,645
+然后
+from the sellers and then
+
+509
+00:32:05,645 --> 00:32:09,139
+在更低点分发，这个过程持续了一段时间
+we distribute lower and this process continues for some time now.
+
+510
+00:32:09,740 --> 00:32:11,515
+你会发现，显然
+What you'll recognize is that obviously
+
+511
+00:32:11,515 --> 00:32:13,882
+我们能看到当天 Delta 累计非常负
+we can see quite a negative cumulative delta
+
+512
+00:32:13,882 --> 00:32:16,249
+但同样可以看到
+on the day, but we can see again
+
+513
+00:32:16,249 --> 00:32:24,238
+每次价格下跌时，Delta 会变得更负，因为多头愿意在此接单并提供流动性
+every time the prices come down, we see the delta becoming more negative as the response of buyers are happy to be filled there and provide liquidity.
+
+514
+00:32:24,539 --> 00:32:29,839
+同样，一旦我们上涨，显然能看到空头愿意提供流动性并成交
+ Equally, once we go bid, we can see obviously the response of sellers happy to provide liquidity and get filled.
+
+515
+00:32:31,339 --> 00:32:33,115
+现在讲突破点
+Let's move on to the break
+
+516
+00:32:33,115 --> 00:32:35,484
+因为记住我之前说的
+point because remember as I said in terms
+
+517
+00:32:35,484 --> 00:32:37,260
+关于变体，你总是假设
+of variations you always assume that
+
+518
+00:32:37,260 --> 00:32:39,036
+突破会延续主动方的动能
+the break will continue with initiative.
+
+519
+00:32:39,240 --> 00:32:44,240
+你永远别假设它会反转，所以我现在给你看如何执行反转
+ You never assume it will reverse so I'm going to show you exactly how you execute the reversal now.
+
+520
+00:32:45,440 --> 00:32:46,973
+同样，我们能看到
+So we can see again
+
+521
+00:32:46,973 --> 00:32:49,119
+更负的 Delta，然后看看
+more negative delta and let's see if
+
+522
+00:32:49,119 --> 00:32:54,639
+能否找到我之前说的‘暴风雨前的平静’的迹象
+we can find that little bit of a telltale sign as I said the calm before the storm.
+
+523
+00:32:55,039 --> 00:32:59,740
+现在注意，显然市场流动性稍微减少了
+Now note. Okay, we can see obviously the market thinning out a little bit.
+
+524
+00:33:00,240 --> 00:33:02,663
+刚才看
+Just now in terms of look at
+
+525
+00:33:02,663 --> 00:33:05,086
+我们在 66.1 价格
+the accumulation that we were receiving at
+
+526
+00:33:05,086 --> 00:33:08,893
+收到的累积成交量，这里出现深色一次、两次
+this price 66.1. So we're receiving dark colors here once and twice.
+
+527
+00:33:09,339 --> 00:33:14,740
+突然市场又开始乐意在此区间促成交易了
+ All of a sudden, the market's beginning to happily facilitate trade again in this area.
+
+528
+00:33:15,240 --> 00:33:18,039
+好的，我们再次看到，这是非常明显的迹象
+ Okay, so what we can see again, and this is such a telltale sign.
+
+529
+00:33:18,539 --> 00:33:24,940
+注意之前多头是如何吸收市场并重新建仓提供流动性的
+ Notice how previously we would see buyers absorbing the market and buyers reloading and providing liquidity.
+
+530
+00:33:25,339 --> 00:33:26,940
+但现在，看空头在做什么
+ Now, however, look what the sellers are doing.
+
+531
+00:33:27,440 --> 00:33:30,940
+看空头在哪里提供流动性，在哪里吸收
+ Okay, look where the sellers are providing liquidity and where they're absorbing.
+
+532
+00:33:30,940 --> 00:33:32,601
+这和之前的例子非常相似
+So this was very, very similar
+
+533
+00:33:32,601 --> 00:33:34,262
+你通常会在突破前看到这种情况
+to the previous example. You tend
+
+534
+00:33:34,262 --> 00:33:38,138
+这就是你的线索，这就是你的提示
+to get this just before the breakout. And there's your clue. There's your tip.
+
+535
+00:33:38,240 --> 00:33:40,830
+当空头在较低价位开始吸收时
+When you get the absorption coming in from
+
+536
+00:33:40,830 --> 00:33:42,772
+在更低价位的空头，
+the sellers at lower down prices,
+
+537
+00:33:42,772 --> 00:33:45,038
+这就是我们即将突破的信号
+that's your clue we're about to break.
+
+538
+00:33:45,240 --> 00:33:48,640
+现在，看看这次突破的样子，然后跟踪反转
+ Now, let's see what this break looks like and let's follow it on the reversal.
+
+539
+00:33:48,740 --> 00:33:49,539
+现在，还记得我之前说的吗？
+ Now, remember what I said?
+
+540
+00:33:50,539 --> 00:33:58,140
+关于突破，我们显然想看到一些主动性和一些买卖失衡
+ In terms of breakout, we obviously want to see some initiative and we want to see some imbalances.
+
+541
+00:33:58,539 --> 00:34:03,440
+这里能看到向下突破。空头突破时的仓位也看到了。
+So what we can see here is we broke below. We've seen the seller's position for the break.
+
+542
+00:34:03,740 --> 00:34:08,739
+突破下方后，下方立刻出现了什么？好，非常激进的多头。
+We've broken below and what have we seen straight below that? Okay, some really, really aggressive buying.
+
+543
+00:34:09,139 --> 00:34:14,139
+这其实是反转的一个关键线索。
+ Okay, that was effectively a real big clue of the reversal.
+
+544
+00:34:14,340 --> 00:34:14,576
+显然，
+Obviously,
+
+545
+00:34:14,576 --> 00:34:15,757
+好的，我们不会，这是
+okay, we won't, this is
+
+546
+00:34:15,757 --> 00:34:17,175
+一个稍微更
+a little bit more of a
+
+547
+00:34:17,175 --> 00:34:18,593
+复杂的例子，因为它并没有
+tricky example because it didn't quite
+
+548
+00:34:18,593 --> 00:34:22,138
+像K线上显示的那样延伸，并没有延伸那么远。
+extend as we can see on the candlestick. It didn't quite extend by that far.
+
+549
+00:34:22,739 --> 00:34:25,639
+但显然，我们能看到它确实被买盘推高，动能进场了。
+ But we can see once, obviously, it did go bid and that initiative came in.
+
+550
+00:34:26,039 --> 00:34:29,239
+注意这些买卖失衡，注意零成交区，还有更多失衡。
+ Notice the imbalances, notice the zeros, more imbalances.
+
+551
+00:34:30,340 --> 00:34:32,308
+碰到了一些流动性
+runs into a bit of liquidity
+
+552
+00:34:32,308 --> 00:34:34,932
+现在如果我们还没做多
+and what we're looking for now if we're
+
+553
+00:34:34,932 --> 00:34:37,556
+就要寻找潜在的做多机会
+not already long we're looking for potential long
+
+554
+00:34:37,556 --> 00:34:40,180
+就在失衡前方，好的，
+just in front of that imbalance okay and
+
+555
+00:34:40,180 --> 00:34:42,804
+你会看到，市场确实形成了
+you'll see obviously marker does post a nice
+
+556
+00:34:42,804 --> 00:34:45,428
+一个很漂亮的吞没K线，最终回落，注意
+little engulfing candle and ultimately comes back notice
+
+557
+00:34:45,428 --> 00:34:59,535
+那里的回补。用策略执行来看，它会一路回落到之前提到的高点枢轴，给我们多头重新建仓的机会，最终继续上涨。
+the fill there if we just show it to you in terms of the strategy execution comes back all the way down to that previous high pivot as we mentioned gives us the opportunity to enter on a reload before ultimately continuing higher.
+
+558
+00:35:00,539 --> 00:35:02,239
+好的，这就是两个策略。
+ Okay, so those are two strategies guys.
+
+559
+00:35:02,239 --> 00:35:10,039
+一个是启动后持续，另一个是失败后激进反转，朝相反方向启动。
+The one obviously initiates and continues. The other is failure, reverses very aggressively and initiates in the opposite direction.
+
+560
+00:35:10,340 --> 00:35:14,739
+好的，现在回到课件，一起完成模板。
+ Okay, let's go back to the slides now and together we're going to complete the template.
+
+===== END AFTER_OPTIMIZE =====

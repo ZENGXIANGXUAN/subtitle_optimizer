@@ -1,0 +1,2410 @@
+===== AFTER_SEGMENT (602 entries) =====
+1
+00:00:00,000 --> 00:00:01,800
+Okay, everyone. Welcome back.
+
+2
+00:00:01,800 --> 00:00:03,370
+We're almost there now.
+
+3
+00:00:03,370 --> 00:00:09,500
+Really exciting and we're almost there to a fully fledg ling dashboard.
+
+4
+00:00:11,260 --> 00:00:13,525
+We're going to look at the housing data.
+
+5
+00:00:13,525 --> 00:00:15,620
+Let me show you how I've been looking at it.
+
+6
+00:00:15,620 --> 00:00:16,785
+I think it's overkill.
+
+7
+00:00:16,785 --> 00:00:21,530
+I've had a little bit of a thought about this and I think it 's really too over the top.
+
+8
+00:00:21,530 --> 00:00:26,600
+Half the time, I don't even bother looking at half this stuff, so I'm going to use
+
+9
+00:00:26,600 --> 00:00:31,320
+this as an opportunity to improve things for myself. As well as for you.
+
+10
+00:00:31,320 --> 00:00:34,429
+And that's why I love doing this, building this stuff
+
+11
+00:00:34,429 --> 00:00:36,605
+as in this course as well, because
+
+12
+00:00:36,605 --> 00:00:39,403
+it helps me as well in a selfish way.
+
+13
+00:00:39,405 --> 00:00:43,565
+Call it good karma, you know, sharing all of this helps me as well,
+
+14
+00:00:43,565 --> 00:00:46,700
+because basically what it is, let's start from the
+
+15
+00:00:46,700 --> 00:00:47,045
+beginning.
+
+16
+00:00:47,045 --> 00:00:50,029
+So when it comes to housing data, let
+
+17
+00:00:50,029 --> 00:00:52,640
+me just go here because my head
+
+18
+00:00:52,640 --> 00:00:54,878
+is blocking some of that information.
+
+19
+00:00:54,880 --> 00:00:59,810
+So the way that housing data works, okay, is it is released on a monthly basis.
+
+20
+00:00:59,810 --> 00:01:02,831
+At the moment, like I said, because
+
+21
+00:01:02,831 --> 00:01:05,852
+housing is fairly healthy and, you know,
+
+22
+00:01:05,852 --> 00:01:09,304
+obviously it's not a primary piece of data.
+
+23
+00:01:09,305 --> 00:01:10,780
+In the past, in 2008, it
+
+24
+00:01:10,780 --> 00:01:13,141
+has been a primary piece of data because
+
+25
+00:01:13,141 --> 00:01:16,683
+we had a housing crisis and a bubble and all of that.
+
+26
+00:01:16,980 --> 00:01:22,155
+So you can see here, relatively some of it is going to be low impact now.
+
+27
+00:01:22,155 --> 00:01:23,400
+So can you see?
+
+28
+00:01:23,400 --> 00:01:31,995
+building permits, housing starts, they tend to be relatively low impact.
+
+29
+00:01:31,995 --> 00:01:34,070
+And then we can see here
+
+30
+00:01:34,070 --> 00:01:36,145
+new home sales, which is quite
+
+31
+00:01:36,145 --> 00:01:38,220
+a commonly cited number, and also
+
+32
+00:01:38,220 --> 00:01:41,678
+existing home sales, which I don't see and look to
+
+33
+00:01:41,680 --> 00:01:42,695
+find, there you go.
+
+34
+00:01:42,695 --> 00:01:45,800
+You can see existing home sales is medium impact, okay?
+
+35
+00:01:45,800 --> 00:01:48,945
+So what we're going to do is we 're going to be clever about this.
+
+36
+00:01:48,945 --> 00:01:53,675
+We're just going to take the items that kind of cover all basis.
+
+37
+00:01:53,675 --> 00:01:54,940
+What do I mean by that?
+
+38
+00:01:54,940 --> 00:01:59,600
+Okay, so as you can see, the way I've been looking at it here is I've got everything, okay?
+
+39
+00:01:59,600 --> 00:02:03,285
+So I've got building permits and housing starts, okay?
+
+40
+00:02:03,285 --> 00:02:09,075
+Which is, do you see these two? Building permits and housing starts, okay?
+
+41
+00:02:09,075 --> 00:02:13,735
+Now, you can build these if you want, but can you see they 're so highly correlated?
+
+42
+00:02:13,735 --> 00:02:16,817
+I'm not actually getting much out of looking at both.
+
+43
+00:02:16,817 --> 00:02:18,960
+So what I am going to look at,
+
+44
+00:02:18,960 --> 00:02:20,840
+it's up to you how you do this.
+
+45
+00:02:22,820 --> 00:02:30,525
+I think building permits for me are slightly better because before starting work on a home, right?
+
+46
+00:02:30,525 --> 00:02:35,215
+So before starting construction, essentially if you look at housing starts, right?
+
+47
+00:02:35,215 --> 00:02:43,700
+Housing starts are what? And began construction, annualized number of new residential buildings that began construction.
+
+48
+00:02:43,700 --> 00:02:46,790
+You can't begin construction without a permit, okay?
+
+49
+00:02:46,790 --> 00:02:48,935
+When you get the permit, you then begin construction.
+
+50
+00:02:48,935 --> 00:02:52,600
+So it kind of makes sense that majority of those permits, once
+
+51
+00:02:52,600 --> 00:02:55,349
+you get the permit, you're going to start construction.
+
+52
+00:02:55,350 --> 00:02:57,370
+So why do I want to look at both of those?
+
+53
+00:02:57,370 --> 00:02:59,650
+Okay, so we're going to be clever about this.
+
+54
+00:02:59,650 --> 00:03:02,880
+I'm not going to get you to build both of these. buildings.
+
+55
+00:03:03,900 --> 00:03:06,505
+So let's just have one, okay?
+
+56
+00:03:06,505 --> 00:03:09,915
+Building permits. Focus on that number.
+
+57
+00:03:09,915 --> 00:03:11,170
+Can you see they're so close together?
+
+58
+00:03:11,170 --> 00:03:12,540
+1.68, 1.7.
+
+59
+00:03:12,540 --> 00:03:14,770
+It's just pointless having both of them.
+
+60
+00:03:14,770 --> 00:03:17,945
+And it really is overkill what I 've been doing up until now.
+
+61
+00:03:17,945 --> 00:03:21,100
+Again, just to remind you, got both of them there, okay?
+
+62
+00:03:21,100 --> 00:03:23,240
+So you can see building permits and housing starts,
+
+63
+00:03:23,240 --> 00:03:27,020
+they're so highly correlated, very similar numbers.
+
+64
+00:03:27,020 --> 00:03:28,445
+I'm not going to get anything out of them.
+
+65
+00:03:28,445 --> 00:03:32,105
+So we're going to look at just building permits, okay?
+
+66
+00:03:32,105 --> 00:03:36,595
+And it is released slightly earlier than home sales.
+
+67
+00:03:36,595 --> 00:03:37,600
+So that's great.
+
+68
+00:03:38,940 --> 00:03:41,060
+So let's focus on building permits.
+
+69
+00:03:41,060 --> 00:03:42,385
+That 's what I'm going to do.
+
+70
+00:03:42,385 --> 00:03:43,580
+Obviously you can do different
+
+71
+00:03:43,580 --> 00:03:46,115
+to me if you want, but that's how I would suggest you do it.
+
+72
+00:03:46,115 --> 00:03:47,940
+And then a few days later,
+
+73
+00:03:47,940 --> 00:03:50,920
+and let's have a look what they say about building permits, okay?
+
+74
+00:03:52,820 --> 00:03:54,714
+Excellent gorge of future construction
+
+75
+00:03:54,714 --> 00:03:57,365
+activity because obtaining a permit is among
+
+76
+00:03:57,365 --> 00:04:00,774
+the first steps in constructing a new building, okay?
+
+77
+00:04:00,775 --> 00:04:07,480
+And if you actually look for housing starts, leading indicator of economic health
+
+78
+00:04:07,480 --> 00:04:12,340
+because building construction produces a wide-ranging ripple effect, which it does.
+
+79
+00:04:12,340 --> 00:04:17,840
+Obviously, you know, it's created job creation, construction workers, as you can see here,
+
+80
+00:04:17,840 --> 00:04:21,985
+you know, a lot of construction activity basically.
+
+81
+00:04:21,985 --> 00:04:25,890
+But just because we don't look at it, don't mean we're missing out on that. We're not.
+
+82
+00:04:25,890 --> 00:04:31,330
+Building permits is ultimately what leads to housing starts, okay?
+
+83
+00:04:31,330 --> 00:04:32,880
+So we've got it all covered, okay?
+
+84
+00:04:32,880 --> 00:04:35,425
+So building permits we're going to look at.
+
+85
+00:04:35,425 --> 00:04:39,625
+If we then go to the following week where you get the home sales.
+
+86
+00:04:39,625 --> 00:04:42,230
+So that's more to do with construction, right?
+
+87
+00:04:42,230 --> 00:04:44,880
+Getting a permit, starting construction.
+
+88
+00:04:46,060 --> 00:04:48,520
+Sales is ultimately selling, isn't it?
+
+89
+00:04:49,800 --> 00:04:53,300
+Now, the market likes to look at existing home sales, okay?
+
+90
+00:04:53,300 --> 00:04:55,900
+And that's because it's a much bigger number.
+
+91
+00:04:55,900 --> 00:04:59,895
+You know, existing home sales, 6.46 million, right?
+
+92
+00:04:59,895 --> 00:05:02,649
+On an annualized basis, you see
+
+93
+00:05:02,649 --> 00:05:06,321
+that annualized number of residential buildings that were
+
+94
+00:05:06,321 --> 00:05:09,993
+sold during the previous month, excluding new construction.
+
+95
+00:05:09,995 --> 00:05:11,470
+New construction is this,
+
+96
+00:05:11,470 --> 00:05:17,880
+new home sales. Can you see there's a lot less new homes sold in the U. S. in a year?
+
+97
+00:05:17,880 --> 00:05:25,600
+A 744,000 annualized number of single family homes that were sold compared to existing home sales, okay?
+
+98
+00:05:26,720 --> 00:05:28,815
+It's also a very volatile number.
+
+99
+00:05:28,815 --> 00:05:29,655
+Let me show you.
+
+100
+00:05:29,655 --> 00:05:30,540
+So I've got them plotted.
+
+101
+00:05:31,660 --> 00:05:36,325
+Can you see I've plotted home sales, new home sales and existing home sales?
+
+102
+00:05:36,325 --> 00:05:39,460
+Look at existing home sales, so much smoother.
+
+103
+00:05:39,460 --> 00:05:41,860
+The blue line, right? Very smooth.
+
+104
+00:05:41,860 --> 00:05:45,115
+New home sales tends to be a little bit volatile.
+
+105
+00:05:45,115 --> 00:05:47,040
+They are fairly correlated.
+
+106
+00:05:47,040 --> 00:05:48,608
+Again, you know, if I had
+
+107
+00:05:48,608 --> 00:05:50,176
+to choose one, if I'm not
+
+108
+00:05:50,176 --> 00:05:54,098
+looking at one and I 'm looking at the other, am I really missing out?
+
+109
+00:05:54,100 --> 00:05:55,280
+Not really.
+
+110
+00:05:55,280 --> 00:05:56,740
+If I had to choose one,
+
+111
+00:05:56,740 --> 00:06:01,595
+I'd choose existing home sales because it covers a broader range of the population, doesn't it?
+
+112
+00:06:01,595 --> 00:06:07,320
+And we can see that because existing home sales, there's 6.46 million on an annual ized basis.
+
+113
+00:06:07,320 --> 00:06:11,875
+There's 10 times less new home sales in a year, right?
+
+114
+00:06:11,875 --> 00:06:13,990
+So I don't need to look at both of them.
+
+115
+00:06:13,990 --> 00:06:15,560
+I'm not going to be missing anything.
+
+116
+00:06:15,560 --> 00:06:18,095
+I may as well focus on existing home sales.
+
+117
+00:06:18,095 --> 00:06:19,390
+And the market agrees with me.
+
+118
+00:06:19,390 --> 00:06:22,700
+Can you see it's a medium impact?
+
+119
+00:06:22,700 --> 00:06:24,890
+New home sales is a low impact, okay?
+
+120
+00:06:24,890 --> 00:06:29,855
+We're traders. We're here to try and gauge what is going to move the market.
+
+121
+00:06:29,855 --> 00:06:34,386
+If the market is clearly telling me that it likes that number
+
+122
+00:06:34,386 --> 00:06:38,539
+as in as a gauge of activity, why am I doing
+
+123
+00:06:38,540 --> 00:06:40,415
+anything contrary to that?
+
+124
+00:06:40,415 --> 00:06:44,340
+I'm applying a bit of logic and saying, you know what? That makes a lot of sense to me.
+
+125
+00:06:44,340 --> 00:06:48,135
+I 'm covering kind of if total
+
+126
+00:06:48,135 --> 00:06:51,930
+home sales are, you know, just over 7
+
+127
+00:06:51,930 --> 00:06:56,267
+million because 6.46 plus 744,000, 6.46 million plus 744, 000 is around 7 million.
+
+128
+00:07:00,065 --> 00:07:03,670
+And I've got 90% of those sales covered in that number.
+
+129
+00:07:03,670 --> 00:07:08,805
+Why would I even look at new home sales instead of existing home sales?
+
+130
+00:07:08,805 --> 00:07:12,200
+So we're going to look at just existing home sales.
+
+131
+00:07:12,200 --> 00:07:13,251
+I think it makes a lot of
+
+132
+00:07:13,251 --> 00:07:15,504
+sense because otherwise what you 'll end up doing is what I 've got here.
+
+133
+00:07:15,505 --> 00:07:17,230
+I've got a little bit over kill.
+
+134
+00:07:17,230 --> 00:07:19,922
+I 've got one graph there looking at
+
+135
+00:07:19,922 --> 00:07:22,277
+building permits and housing starts and I've
+
+136
+00:07:22,277 --> 00:07:27,998
+got existing home sales and new home sales and then I bring it all together and I
+
+137
+00:07:28,000 --> 00:07:32,145
+look at building permits and existing home sales.
+
+138
+00:07:32,145 --> 00:07:34,160
+So what we're going to do is we 're just going to bring it all together.
+
+139
+00:07:34,160 --> 00:07:36,940
+It's just having extra tabs for no reason.
+
+140
+00:07:36,940 --> 00:07:40,705
+Okay, so let's do what we just highlighted there.
+
+141
+00:07:40,705 --> 00:07:42,055
+We're going to plot.
+
+142
+00:07:42,055 --> 00:07:44,048
+When we follow housing data, we're going
+
+143
+00:07:44,048 --> 00:07:46,041
+to follow existing home sales and then
+
+144
+00:07:46,041 --> 00:07:48,319
+obviously we want to look at the data
+
+145
+00:07:48,320 --> 00:07:51,040
+that comes 我们的这种情况是我们的,
+
+146
+00:07:51,040 --> 00:07:53,540
+核养费者,由此之间的数字。
+
+147
+00:07:53,540 --> 00:07:57,800
+那么我们的根本就发展了一个支持。
+
+148
+00:07:57,800 --> 00:07:59,320
+所以我们要打图了可乐性。
+
+149
+00:08:02,200 --> 00:08:04,280
+所以我们需要建立了一个属性的来源。
+
+150
+00:08:06,100 --> 00:08:08,905
+所以我们要打图了一旦的信号。
+
+151
+00:08:08,905 --> 00:08:10,520
+我们先 Azte點建设,而且我们已经做到一旦分之为no知,
+
+152
+00:08:10,520 --> 00:08:11,020
+我们 将 一个 图 的 管 理繁件中进行方式。
+
+153
+00:08:11,020 --> 00:08:11,800
+因为 我们 是 中 一 旦 内 的 本 文 件 和 称房。
+
+154
+00:08:11,800 --> 00:08:16,900
+RISD後,我可以记着这儿它写联统加封信号。
+
+155
+00:08:25,780 --> 00:08:32,900
+再�acji当工作时。
+
+156
+00:08:32,900 --> 00:08:38,000
+we'll just after industrial production so we've got it there.
+
+157
+00:08:39,220 --> 00:08:41,920
+Change the name, let's just call it housing
+
+158
+00:08:41,920 --> 00:08:46,360
+week 3, good enough.
+
+159
+00:08:46,360 --> 00:08:53,550
+And we're going to change the tab colour to no-colour because it's not a primary piece of data, you know.
+
+160
+00:08:53,550 --> 00:08:55,339
+If we miss it we're not going
+
+161
+00:08:55,339 --> 00:08:57,128
+to panic about it, we're just going
+
+162
+00:08:57,128 --> 00:08:59,428
+to have a brief look at it every month,
+
+163
+00:08:59,430 --> 00:09:01,449
+kind of see into that time and see
+
+164
+00:09:01,449 --> 00:09:03,468
+what's going on in the housing sector but
+
+165
+00:09:03,468 --> 00:09:05,487
+it's not a major focus for traders at
+
+166
+00:09:05,487 --> 00:09:09,778
+the moment in time but it may be in the future so it's worth having it there.
+
+167
+00:09:11,020 --> 00:09:12,280
+Now we want...what do we want?
+
+168
+00:09:12,280 --> 00:09:17,855
+We want two pieces of data. We want the building permits. Okay?
+
+169
+00:09:17,855 --> 00:09:25,800
+That's that, so find your latest building permits release for me that happens to be here December the 16th and
+
+170
+00:09:25,800 --> 00:09:27,340
+we 're just going to do our usual process.
+
+171
+00:09:27,340 --> 00:09:29,580
+OK, so we're going to copy that data here.
+
+172
+00:09:31,040 --> 00:09:32,305
+We're going to put it here.
+
+173
+00:09:32,305 --> 00:09:34,140
+Actual forecast and previous.
+
+174
+00:09:35,480 --> 00:09:37,951
+You can see why I don't go to the Census
+
+175
+00:09:37,951 --> 00:09:39,681
+Bureau website because the format they may
+
+176
+00:09:39,681 --> 00:09:42,399
+have it in is going to be all over the place.
+
+177
+00:09:44,740 --> 00:09:49,285
+Here, it's all in that actual forecast previous. Nice laid out for me.
+
+178
+00:09:49,285 --> 00:09:51,130
+So I'm just going to copy it.
+
+179
+00:09:51,130 --> 00:09:55,800
+OK, here I'm going to do paste. Match destination formatting.
+
+180
+00:09:55,800 --> 00:09:59,620
+OK, now it is copied as text.
+
+181
+00:09:59,620 --> 00:10:05,890
+OK, so Excel doesn't know this is 1.71. It just sees it as a text 1.71 M.
+
+182
+00:10:05,890 --> 00:10:07,555
+It doesn't even know what that is.
+
+183
+00:10:07,555 --> 00:10:09,460
+So we're going to have to change that.
+
+184
+00:10:09,460 --> 00:10:11,480
+But don't worry, we won't do it immediately.
+
+185
+00:10:13,020 --> 00:10:16,195
+Let's put the correct date in December 16th.
+
+186
+00:10:16,195 --> 00:10:19,840
+So change that to 16th of December 21.
+
+187
+00:10:19,840 --> 00:10:22,910
+And of course, your local do it in your local format.
+
+188
+00:10:22,910 --> 00:10:24,865
+Again, December is 4 November.
+
+189
+00:10:24,865 --> 00:10:30,080
+So make sure you've got the correct month data month there and then the release date.
+
+190
+00:10:30,080 --> 00:10:31,475
+And so that's all correct.
+
+191
+00:10:31,475 --> 00:10:32,580
+I'm very happy with that.
+
+192
+00:10:32,580 --> 00:10:34,187
+Don't worry about the versus forecast because
+
+193
+00:10:34,187 --> 00:10:35,794
+like I said, it's seeing that as
+
+194
+00:10:35,794 --> 00:10:39,238
+text at the moment, it's a bit confused, but we're going to clean that up.
+
+195
+00:10:41,160 --> 00:10:42,795
+Let's put the rest of the data in.
+
+196
+00:10:42,795 --> 00:10:44,310
+OK, this is building permits.
+
+197
+00:10:44,310 --> 00:10:47,560
+Remember, so let's change that actually to building permits.
+
+198
+00:10:47,560 --> 00:10:55,620
+you can copy that. OK, paste match destination formatting.
+
+199
+00:10:55,620 --> 00:10:58,480
+And then what I would put is annual ized.
+
+200
+00:10:58,480 --> 00:11:01,130
+OK, is annualized as if it's for the whole year.
+
+201
+00:11:01,130 --> 00:11:06,800
+So in brackets, I would put here. annual ized.
+
+202
+00:11:07,960 --> 00:11:12,300
+OK, so released monthly.
+
+203
+00:11:12,300 --> 00:11:13,540
+Let's put the frequency in.
+
+204
+00:11:16,220 --> 00:11:18,180
+Toils, business date. We'll change this.
+
+205
+00:11:19,600 --> 00:11:22,125
+OK, match destination formatting.
+
+206
+00:11:22,125 --> 00:11:26,080
+OK, let's put here housing data at the top.
+
+207
+00:11:28,020 --> 00:11:33,125
+OK, don't have to do it all this in the same order as me.
+
+208
+00:11:33,125 --> 00:11:34,570
+You might be pretty good at this now.
+
+209
+00:11:34,570 --> 00:11:35,595
+I've done it so many times.
+
+210
+00:11:35,595 --> 00:11:39,355
+Obviously, I'm just doing it in whatever order I can remember.
+
+211
+00:11:39,355 --> 00:11:41,980
+And then we're going to copy as much data as we can.
+
+212
+00:11:43,760 --> 00:11:44,425
+Copy.
+
+213
+00:11:44,425 --> 00:11:45,220
+I'm going to paste.
+
+214
+00:11:45,220 --> 00:11:46,900
+Remember, we've already done the first line.
+
+215
+00:11:46,900 --> 00:11:48,410
+We're now going to go underneath.
+
+216
+00:11:48,410 --> 00:11:49,605
+Do the second line.
+
+217
+00:11:49,605 --> 00:11:50,290
+Paste.
+
+218
+00:11:50,290 --> 00:11:51,835
+Match destination formatting.
+
+219
+00:11:51,835 --> 00:11:59,480
+I might be covering some of this, but that doesn't. don't worry about that because we don't need it anyway.
+
+220
+00:12:01,440 --> 00:12:01,440
+Delete.
+
+221
+00:12:02,780 --> 00:12:05,460
+OK, let's just get rid of.
+
+222
+00:12:08,160 --> 00:12:09,490
+In fact, let's leave that.
+
+223
+00:12:09,490 --> 00:12:10,160
+Let's leave that.
+
+224
+00:12:11,340 --> 00:12:14,100
+What we're going to do is we 're going to type these in.
+
+225
+00:12:14,100 --> 00:12:16,210
+OK, as we've been doing so far.
+
+226
+00:12:16,210 --> 00:12:20,320
+So 17.21, 19.21.
+
+227
+00:12:20,320 --> 00:12:21,880
+I'm going to type all of these in.
+
+228
+00:12:23,380 --> 00:12:27,325
+What I'm also going to do is I 'm going to hit F2 and release.
+
+229
+00:12:27,325 --> 00:12:28,060
+Get rid of that M.
+
+230
+00:12:29,480 --> 00:12:31,496
+Okay, so what we're going to have
+
+231
+00:12:31,496 --> 00:12:32,936
+to do actually because these
+
+232
+00:12:32,936 --> 00:12:35,528
+are percentages and that 's not going to work.
+
+233
+00:12:35,530 --> 00:12:37,985
+So if I control Z.
+
+234
+00:12:37,985 --> 00:12:39,805
+Let's make these numbers.
+
+235
+00:12:39,805 --> 00:12:42,300
+So what I want you to do is highlight all of this.
+
+236
+00:12:43,420 --> 00:12:45,000
+Right click format cells.
+
+237
+00:12:46,220 --> 00:12:48,460
+Okay, let me just make sure I 'm not covering any of this.
+
+238
+00:12:51,480 --> 00:12:53,180
+Right click format cells.
+
+239
+00:12:54,220 --> 00:12:55,380
+Yeah, I'm covering a little bit.
+
+240
+00:12:55,380 --> 00:12:57,710
+There we go.
+
+241
+00:12:57,710 --> 00:12:58,905
+Format cells.
+
+242
+00:12:58,905 --> 00:12:59,340
+Number.
+
+243
+00:13:00,800 --> 00:13:02,420
+And it's a percentage at the
+
+244
+00:13:02,420 --> 00:13:04,335
+moment. We 're not using percentages.
+
+245
+00:13:04,335 --> 00:13:05,860
+Change that to number.
+
+246
+00:13:05,860 --> 00:13:07,650
+And we've got two decimal places.
+
+247
+00:13:07,650 --> 00:13:08,965
+So make that two.
+
+248
+00:13:08,965 --> 00:13:12,460
+I hit OK. OK. Now what I want you to do is
+
+249
+00:13:12,460 --> 00:13:14,255
+get rid of all these M's.
+
+250
+00:13:14,255 --> 00:13:15,500
+OK, so you need to F2.
+
+251
+00:13:16,700 --> 00:13:19,440
+See, that's gone to 1.71, 1.65.
+
+252
+00:13:20,860 --> 00:13:24,380
+OK, I need you to go through every single one of these.
+
+253
+00:13:24,380 --> 00:13:27,075
+You'll only have to ever do this once and then you're done.
+
+254
+00:13:27,075 --> 00:13:29,200
+And get rid of all these M's.
+
+255
+00:13:30,260 --> 00:13:32,395
+OK, so even the forecasts unfortunately.
+
+256
+00:13:32,395 --> 00:13:34,900
+Once you've done this once, you'll never need to do it again.
+
+257
+00:13:34,900 --> 00:13:39,140
+There is a way you can write a formula to
+
+258
+00:13:39,140 --> 00:13:43,804
+get rid of equals left and then the first four characters.
+
+259
+00:13:43,805 --> 00:13:46,375
+But, you know, when I worked in Investment Bank,
+
+260
+00:13:46,375 --> 00:13:53,450
+I did incredibly complex. I even did Visual Basic and wrote Excel code and I did all sorts of stuff.
+
+261
+00:13:53,450 --> 00:13:55,765
+But we don't need to be fancy here.
+
+262
+00:13:55,765 --> 00:13:57,275
+We 're only looking at this once.
+
+263
+00:13:57,275 --> 00:14:02,920
+It only makes sense to use formula when you're going to repeat a task over and over.
+
+264
+00:14:02,920 --> 00:14:05,402
+If I was doing this every day for the next
+
+265
+00:14:05,402 --> 00:14:06,891
+few years and I had to
+
+266
+00:14:06,891 --> 00:14:09,124
+keep removing M's, then I would write a formula.
+
+267
+00:14:09,125 --> 00:14:11,920
+Because some of you that are better at Excel than me might be thinking that.
+
+268
+00:14:13,300 --> 00:14:15,210
+You don't need to do that, OK? Honestly.
+
+269
+00:14:15,210 --> 00:14:19,080
+For now, it's fine to just do it manually because we're only ever going to do this once.
+
+270
+00:14:20,580 --> 00:14:24,340
+In the future, we don't need to keep going back in history and doing this.
+
+271
+00:14:24,340 --> 00:14:27,435
+So, that's why I'm happy to do it manually in case some of you are thinking,
+
+272
+00:14:27,435 --> 00:14:28,810
+Hey, you can write a formula.
+
+273
+00:14:28,810 --> 00:14:30,055
+I already know that.
+
+274
+00:14:30,055 --> 00:14:33,200
+Believe me, I've used Excel to a very, very high level.
+
+275
+00:14:34,840 --> 00:14:38,585
+It's just not worth it for two minutes work.
+
+276
+00:14:38,585 --> 00:14:40,915
+You're not going to save much time writing a formula.
+
+277
+00:14:40,915 --> 00:14:43,380
+So, just get rid of all the M 's, OK?
+
+278
+00:14:43,380 --> 00:14:44,255
+I'm going to pause.
+
+279
+00:14:44,255 --> 00:14:45,683
+I want you to update all these
+
+280
+00:14:45,683 --> 00:14:46,703
+dates, get rid of all
+
+281
+00:14:46,703 --> 00:14:48,539
+the M's and I'll see you in a second.
+
+282
+00:14:50,560 --> 00:14:53,210
+OK, literally took a few minutes, then a couple of minutes.
+
+283
+00:14:53,210 --> 00:14:54,995
+You 'll never need to do that again.
+
+284
+00:14:54,995 --> 00:14:56,900
+And versus forecast, I forgot.
+
+285
+00:14:56,900 --> 00:14:59,045
+I'm sorry, this should be a number as well.
+
+286
+00:14:59,045 --> 00:15:02,255
+So, let's right click. Format.
+
+287
+00:15:02,255 --> 00:15:04,275
+Let me just make sure I'm not covering any of this.
+
+288
+00:15:04,275 --> 00:15:05,040
+Format cells.
+
+289
+00:15:07,900 --> 00:15:09,615
+OK, let me just move that out of the way.
+
+290
+00:15:09,615 --> 00:15:10,480
+Change that to a number.
+
+291
+00:15:12,080 --> 00:15:13,540
+What are we? Two decimal places.
+
+292
+00:15:14,940 --> 00:15:16,160
+It's OK.
+
+293
+00:15:16,160 --> 00:15:17,585
+OK, there you go.
+
+294
+00:15:17,585 --> 00:15:23,005
+So now you can see, and let's make sure we remind ourselves that this is millions.
+
+295
+00:15:23,005 --> 00:15:29,135
+OK, so what I like to do just to be complete, just put M there.
+
+296
+00:15:29,135 --> 00:15:32,880
+OK, forecast. M previous.
+
+297
+00:15:34,680 --> 00:15:36,060
+So we know it's in millions.
+
+298
+00:15:36,060 --> 00:15:38,480
+OK, you can just make that a little bit bigger.
+
+299
+00:15:39,840 --> 00:15:44,940
+OK, maybe a little bit smaller so it doesn't get into the graph area.
+
+300
+00:15:46,600 --> 00:15:47,595
+That's it.
+
+301
+00:15:47,595 --> 00:15:48,940
+Building permits analyze.
+
+302
+00:15:48,940 --> 00:15:49,840
+OK, so we've got our data.
+
+303
+00:15:49,840 --> 00:15:52,335
+We've got our building permits data.
+
+304
+00:15:52,335 --> 00:15:55,420
+Perfect. Exactly as we want it to be.
+
+305
+00:15:57,620 --> 00:15:59,760
+Let's just double check that that is the case.
+
+306
+00:16:01,280 --> 00:16:05,840
+Don't forget you can check the
+
+307
+00:16:05,840 --> 00:16:07,940
+data. You know, so you can go and check form.
+
+308
+00:16:07,940 --> 00:16:13,220
+Obviously, as you know, my last piece of data on all of these is December 19, isn't it?
+
+309
+00:16:13,220 --> 00:16:16,135
+Yours is going to be my might be further than that.
+
+310
+00:16:16,135 --> 00:16:17,445
+I'm happy with that.
+
+311
+00:16:17,445 --> 00:16:18,740
+Can you see that is correct?
+
+312
+00:16:19,960 --> 00:16:22,890
+We went up, we had the dip, came back out.
+
+313
+00:16:22,890 --> 00:16:25,525
+We went up at the dip and came back out.
+
+314
+00:16:25,525 --> 00:16:29,320
+Peaked there, peaked there and then rolled off.
+
+315
+00:16:31,040 --> 00:16:33,720
+OK, so we can see it's healthy, right?
+
+316
+00:16:33,720 --> 00:16:41,920
+We can see during the, obviously the coronavirus period here, we had building permits collapsed and then
+
+317
+00:16:41,920 --> 00:16:51,685
+rose back up as obviously the construction industry became very sort of buoyed and enthusiastic again about the housing industry.
+
+318
+00:16:51,685 --> 00:16:53,760
+So we can see that and we'll discuss that anyway when we
+
+319
+00:16:53,760 --> 00:16:55,070
+analyze this data for now.
+
+320
+00:16:55,070 --> 00:16:57,740
+Let's just make sure we have it at our fingertips.
+
+321
+00:16:58,860 --> 00:17:07,930
+So next thing we're going to do is we're now going to put the existing home sales number in.
+
+322
+00:17:07,930 --> 00:17:11,110
+OK, so and then we're done. That's our housing data.
+
+323
+00:17:11,110 --> 00:17:14,220
+It gives us plenty of housing data to look at every month
+
+324
+00:17:14,220 --> 00:17:17,230
+and two of the biggest releases, the building permits.
+
+325
+00:17:17,230 --> 00:17:20,035
+And then obviously, as you can see, an existing home sales.
+
+326
+00:17:20,035 --> 00:17:22,070
+So let's work on existing home sales.
+
+327
+00:17:22,070 --> 00:17:24,100
+My latest release is December 22.
+
+328
+00:17:25,580 --> 00:17:29,480
+OK, so I'm going to go across here.
+
+329
+00:17:30,580 --> 00:17:31,960
+What I'm going to do, right?
+
+330
+00:17:31,960 --> 00:17:37,930
+Just to make my life easier, maximize this because I want the formatting to be the same.
+
+331
+00:17:37,930 --> 00:17:41,460
+I'm almost going to copy. OK, I'm going to copy this.
+
+332
+00:17:42,740 --> 00:17:44,545
+Let me see if this works.
+
+333
+00:17:44,545 --> 00:17:46,175
+Sorry, I hit copy there.
+
+334
+00:17:46,175 --> 00:17:47,740
+So I'm going to copy this.
+
+335
+00:17:49,080 --> 00:17:53,100
+I'm going to paste it here because the formatting will be identical then.
+
+336
+00:17:53,100 --> 00:17:54,200
+Let me see if this works.
+
+337
+00:17:55,380 --> 00:17:56,525
+Paste.
+
+338
+00:17:56,525 --> 00:17:58,190
+Yeah, perfect.
+
+339
+00:17:58,190 --> 00:18:00,165
+OK, so that works.
+
+340
+00:18:00,165 --> 00:18:05,560
+Because you remember, I had to change everything to two decimal places and all of that stuff.
+
+341
+00:18:05,560 --> 00:18:08,430
+So that's done nicely for me there.
+
+342
+00:18:08,430 --> 00:18:09,760
+So I just pasted that across.
+
+343
+00:18:10,900 --> 00:18:14,260
+Obviously, I've just pasted building permits into building permits.
+
+344
+00:18:14,260 --> 00:18:16,535
+I don't want building permits twice, right?
+
+345
+00:18:16,535 --> 00:18:19,955
+You can see it's got basically two identical lines there.
+
+346
+00:18:19,955 --> 00:18:20,825
+I want existing home sales.
+
+347
+00:18:20,825 --> 00:18:22,200
+So let's change all of this over.
+
+348
+00:18:22,200 --> 00:18:22,440
+Copy.
+
+349
+00:18:23,960 --> 00:18:26,440
+OK, I'm going to change building permits.
+
+350
+00:18:27,600 --> 00:18:30,255
+Paste to existing home sales. Hit enter.
+
+351
+00:18:30,255 --> 00:18:35,380
+Because this is also annual ized, released as a monthly number, but annualized.
+
+352
+00:18:35,380 --> 00:18:39,230
+OK. So it's an annual number.
+
+353
+00:18:39,230 --> 00:18:41,160
+We're going to copy the data across.
+
+354
+00:18:43,440 --> 00:18:45,720
+OK. In here, actual forecast previous.
+
+355
+00:18:48,240 --> 00:18:51,380
+Match destination formatting. OK.
+
+356
+00:18:51,380 --> 00:18:52,490
+Don't worry about this.
+
+357
+00:18:52,490 --> 00:18:53,720
+We'll clean all of this up.
+
+358
+00:18:55,380 --> 00:18:58,755
+The date is what? 22nd of December.
+
+359
+00:18:58,755 --> 00:19:03,415
+Now, unfortunately, existing home sales is released a few days after building permits.
+
+360
+00:19:03,415 --> 00:19:09,020
+So I can't just copy the dates that I've just spent a couple of minutes rewriting.
+
+361
+00:19:09,020 --> 00:19:11,730
+But it will take us, won't take us long anyway.
+
+362
+00:19:11,730 --> 00:19:15,235
+And we then going to, and this is the only time we 're going to have to do this.
+
+363
+00:19:15,235 --> 00:19:17,355
+OK. Once you've put the history once, that's it.
+
+364
+00:19:17,355 --> 00:19:17,640
+It's done.
+
+365
+00:19:19,740 --> 00:19:23,000
+Like I said, that's why I don 't bother writing fancy formulas for this.
+
+366
+00:19:23,000 --> 00:19:23,900
+You don't need to.
+
+367
+00:19:31,580 --> 00:19:32,910
+Same thing.
+
+368
+00:19:32,910 --> 00:19:36,260
+I need to just get rid of all these M's update the date.
+
+369
+00:19:37,360 --> 00:19:41,450
+So for example, get read that M.
+
+370
+00:19:41,450 --> 00:19:42,985
+Get rid of that M.
+
+371
+00:19:42,985 --> 00:19:43,980
+Get rid of that M.
+
+372
+00:19:43,980 --> 00:19:46,740
+M M M M M M R.
+
+373
+00:19:55,610 --> 00:19:57,070
+F21 pressing F21 on tab.
+
+374
+00:19:57,070 --> 00:19:58,830
+两个,并且返回来了。
+
+375
+00:20:02,470 --> 00:20:03,850
+现在我们这里面都位置。
+
+376
+00:20:03,850 --> 00:20:04,995
+因为 我们 在 一 旦中继续是好呢!
+
+377
+00:20:04,995 --> 00:20:08,075
+继续化了一旦。
+
+378
+00:20:08,075 --> 00:20:10,230
+现在就可以了这么好的方式。
+
+379
+00:20:11,290 --> 00:20:13,965
+就是要做好安全和信息。
+
+380
+00:20:13,965 --> 00:20:20,850
+对 我们 来自估计的,' 二兴r对," ,"
+
+381
+00:20:20,850 --> 00:20:25,870
+是 结结结结结结结结结结结结结结结结结结结结结结结结结结结。
+
+382
+00:20:25,870 --> 00:20:28,670
+现在一件事,让我们先试一下这些问题。
+
+383
+00:20:28,670 --> 00:20:31,910
+这是一件事,我将来说你什么,你必须要去做。
+
+384
+00:20:33,950 --> 00:20:42,865
+一件事我们的问题是因为之前,我们有两个人有两个人的项目。
+
+385
+00:20:42,865 --> 00:20:45,415
+可以看到这些? CPI。
+
+386
+00:20:45,415 --> 00:20:54,610
+它们是一件事,因为我们在两个人的相似的相似, 0.5,0.8。
+
+387
+00:20:55,730 --> 00:20:59,430
+我们有先以一个同量的数量。
+
+388
+00:21:02,970 --> 00:21:05,490
+我们可以用一个支援。
+
+389
+00:21:06,990 --> 00:21:18,890
+这些组织、同量的组织、 同 量的支援。
+
+390
+00:21:18,890 --> 00:21:20,710
+0.70%很远。 很远。
+
+391
+00:21:23,470 --> 00:21:28,870
+Imagine the core was like 10% and the headline was 1%.
+
+392
+00:21:28,870 --> 00:21:31,985
+It would be very difficult to have them both on one axis.
+
+393
+00:21:31,985 --> 00:21:33,685
+And that's the problem here.
+
+394
+00:21:33,685 --> 00:21:34,980
+Think about it.
+
+395
+00:21:34,980 --> 00:21:39,915
+Okay, we've got here around one point.
+
+396
+00:21:39,915 --> 00:21:44,150
+Would you agree on average, but 1.5, 1.6 million every month.
+
+397
+00:21:44,150 --> 00:21:49,885
+A building permit annualized basis on an annualized basis are being issued.
+
+398
+00:21:49,885 --> 00:21:54,570
+We've got existing home sales on an annualized basis six times that number.
+
+399
+00:21:54,570 --> 00:21:58,190
+Can you see if we put them both on the same axis,
+
+400
+00:21:58,190 --> 00:22:00,050
+they're very hard to compare
+
+401
+00:22:00,050 --> 00:22:03,950
+because we've got existing home sales number that's seven
+
+402
+00:22:03,950 --> 00:22:07,075
+times as big as the number of permits being issued.
+
+403
+00:22:07,075 --> 00:22:08,985
+They are kind of correlated.
+
+404
+00:22:08,985 --> 00:22:14,035
+You can see that, but because this is down here and that's up there, very difficult to compare.
+
+405
+00:22:14,035 --> 00:22:16,553
+So what you want to do is
+
+406
+00:22:16,553 --> 00:22:19,071
+you want to have an existing home
+
+407
+00:22:19,071 --> 00:22:22,668
+sales or building permits have its own axis over here.
+
+408
+00:22:22,670 --> 00:22:24,870
+So we can compare the two, right?
+
+409
+00:22:24,870 --> 00:22:27,770
+Now to do that, very straightforward.
+
+410
+00:22:27,770 --> 00:22:30,645
+Okay. What I do, there's several ways of doing this.
+
+411
+00:22:30,645 --> 00:22:32,890
+I do a change chart type.
+
+412
+00:22:34,470 --> 00:22:38,025
+Okay. And where's it gone?
+
+413
+00:22:38,025 --> 00:22:40,215
+Can you see combo? Combo.
+
+414
+00:22:40,215 --> 00:22:41,975
+Okay. This gives you a preview.
+
+415
+00:22:41,975 --> 00:22:44,570
+Now what I want is I want both of them to be lines.
+
+416
+00:22:45,770 --> 00:22:49,390
+So building permits is a cl ustered column. Existing home sales is a line
+
+417
+00:22:49,390 --> 00:22:52,045
+in this new chart. I'm proposing to Excel.
+
+418
+00:22:52,045 --> 00:22:53,425
+I want them both to be line.
+
+419
+00:22:53,425 --> 00:22:56,535
+Okay. So this one, I'm going to go to line.
+
+420
+00:22:56,535 --> 00:22:57,625
+Okay. Make sure they're both line.
+
+421
+00:22:57,625 --> 00:22:58,385
+Can you see?
+
+422
+00:22:58,385 --> 00:23:02,110
+Okay. So now it's looking, um, similar.
+
+423
+00:23:02,110 --> 00:23:04,155
+It's the same, right? As we have it.
+
+424
+00:23:04,155 --> 00:23:08,840
+What I'm going to do is I want one of them, like I said, to have its own axis.
+
+425
+00:23:08,840 --> 00:23:12,975
+I don't want them both plotted on here, right?
+
+426
+00:23:12,975 --> 00:23:13,985
+At the moment, can you see?
+
+427
+00:23:13,985 --> 00:23:19,865
+Building permits are around 1.5 in that region, between one and two, between one and two.
+
+428
+00:23:19,865 --> 00:23:20,930
+And can you see?
+
+429
+00:23:20,930 --> 00:23:23,550
+Home sales are there between six and seven.
+
+430
+00:23:23,550 --> 00:23:26,810
+Okay. Which is, uh, kind of where they are right now.
+
+431
+00:23:26,810 --> 00:23:27,220
+Can you see?
+
+432
+00:23:27,220 --> 00:23:28,950
+Between six and seven million.
+
+433
+00:23:28,950 --> 00:23:30,210
+I don't want that.
+
+434
+00:23:30,210 --> 00:23:35,185
+I want, and this, all this to be plotted on its own axis.
+
+435
+00:23:35,185 --> 00:23:39,810
+You can choose which one, and you're going to see that they will suddenly become aligned.
+
+436
+00:23:41,830 --> 00:23:51,560
+So let's just go with building permits, have that on a secondary axis, or you can have home sales, right?
+
+437
+00:23:51,560 --> 00:23:52,775
+Doesn't really matter.
+
+438
+00:23:52,775 --> 00:23:54,110
+Let's put home sales, okay?
+
+439
+00:23:54,110 --> 00:23:56,000
+I'm going to click, okay?
+
+440
+00:23:56,000 --> 00:23:56,960
+Do you see that?
+
+441
+00:23:56,960 --> 00:24:01,055
+It's brilliant because I can now see them close together.
+
+442
+00:24:01,055 --> 00:24:03,225
+Now, there is one other issue, okay?
+
+443
+00:24:03,225 --> 00:24:05,925
+Just to kind of make your life more complicated.
+
+444
+00:24:05,925 --> 00:24:08,370
+And in fact, what I'm going to do is I'm going to flip these around.
+
+445
+00:24:08,370 --> 00:24:11,130
+Sorry, I'm going to do change charts.
+
+446
+00:24:11,130 --> 00:24:15,010
+I 'm going to make that the secondary axis because it's the first one that gets released.
+
+447
+00:24:17,130 --> 00:24:20,630
+I 'm going to put it this way round.
+
+448
+00:24:22,390 --> 00:24:23,080
+Either is fine.
+
+449
+00:24:23,080 --> 00:24:24,660
+In fact, give me a second.
+
+450
+00:24:24,660 --> 00:24:26,610
+It's been a while since I've done this.
+
+451
+00:24:26,610 --> 00:24:27,205
+I'll beg your pardon.
+
+452
+00:24:27,205 --> 00:24:30,170
+I should have checked this. Decided on this before.
+
+453
+00:24:32,750 --> 00:24:33,645
+Yeah, that's right.
+
+454
+00:24:33,645 --> 00:24:34,455
+Let me do it this way.
+
+455
+00:24:34,455 --> 00:24:38,355
+And the reason I say that is because building permits is released first.
+
+456
+00:24:38,355 --> 00:24:39,665
+Let's have it on the left.
+
+457
+00:24:39,665 --> 00:24:41,165
+Housing comes next.
+
+458
+00:24:41,165 --> 00:24:42,790
+Let's have it on the right, okay?
+
+459
+00:24:43,930 --> 00:24:47,850
+Now, believe it or not, I believe there is an issue with this data.
+
+460
+00:24:47,850 --> 00:24:49,575
+And I'm going to tell you why.
+
+461
+00:24:49,575 --> 00:24:53,140
+So just to reiterate, change chart type.
+
+462
+00:24:53,140 --> 00:24:54,415
+Make sure you go to combo.
+
+463
+00:24:54,415 --> 00:24:57,110
+I've got existing home sales on my secondary axis.
+
+464
+00:24:57,110 --> 00:24:58,410
+It's up to you which one you do.
+
+465
+00:24:58,410 --> 00:25:00,105
+Really not going to make a difference.
+
+466
+00:25:00,105 --> 00:25:00,730
+Click okay.
+
+467
+00:25:01,830 --> 00:25:06,010
+What you're going to notice is we 've only reversed the categories on one axis.
+
+468
+00:25:06,010 --> 00:25:07,510
+Okay, so we're going to have to do it for both.
+
+469
+00:25:07,510 --> 00:25:09,540
+So let me show you what I mean by that.
+
+470
+00:25:09,540 --> 00:25:11,775
+And I believe that is the case.
+
+471
+00:25:11,775 --> 00:25:14,430
+So can you see existing building permits?
+
+472
+00:25:15,770 --> 00:25:19,030
+Sorry, existing home sales is 5.54.
+
+473
+00:25:21,810 --> 00:25:25,165
+And this is coming up as 1.4.
+
+474
+00:25:25,165 --> 00:25:27,875
+In fact, they both need revers ing, don't they?
+
+475
+00:25:27,875 --> 00:25:29,730
+So let me just double click here.
+
+476
+00:25:31,770 --> 00:25:33,240
+Okay, so what you need to
+
+477
+00:25:33,240 --> 00:25:34,710
+do, they're both going to need
+
+478
+00:25:34,710 --> 00:25:37,405
+revers ing. It's because I was f iddling around with them.
+
+479
+00:25:37,405 --> 00:25:39,790
+So if you, as in just there, we were just messing about
+
+480
+00:25:39,790 --> 00:25:42,135
+which one we wanted on the secondary axis.
+
+481
+00:25:42,135 --> 00:25:43,715
+So what you want to do, right?
+
+482
+00:25:43,715 --> 00:25:47,275
+What it's doing at the moment, look, it's not, it sounds complicated. It 's not.
+
+483
+00:25:47,275 --> 00:25:49,110
+What it's doing is, like I said before,
+
+484
+00:25:50,190 --> 00:25:56,035
+it's assuming that both the data is going from like this,
+
+485
+00:25:56,035 --> 00:26:09,470
+one, two, one, sorry about this, let me just get rid of formatting here.
+
+486
+00:26:10,530 --> 00:26:13,570
+Okay, so what it's assuming is, it's thinking that that,
+
+487
+00:26:13,570 --> 00:26:23,350
+this is point one, two, three, four, five, okay?
+
+488
+00:26:27,660 --> 00:26:31,155
+So it's assuming that is January, February, March.
+
+489
+00:26:31,155 --> 00:26:36,705
+Basically, it's assuming the chron ological order of the dating is from top to bottom.
+
+490
+00:26:36,705 --> 00:26:41,360
+We know we've, the way that obviously the data we're
+
+491
+00:26:41,360 --> 00:26:42,610
+picking up, can you see here?
+
+492
+00:26:42,610 --> 00:26:46,560
+It's going from bottom to top, January, February, March, April, May, June.
+
+493
+00:26:46,560 --> 00:26:48,295
+It's going from bottom to top.
+
+494
+00:26:48,295 --> 00:26:51,599
+Excel think it's going from top to bottom, so it's
+
+495
+00:26:51,599 --> 00:26:53,912
+getting, not confused, but it's plotting it
+
+496
+00:26:53,912 --> 00:26:55,564
+the wrong way round basically.
+
+497
+00:26:55,565 --> 00:27:00,085
+So what we want to do first, we want to flip the data, double click the axis.
+
+498
+00:27:00,085 --> 00:27:01,940
+Okay, categories in reverse order.
+
+499
+00:27:04,360 --> 00:27:08,610
+Okay, so now we've suddenly got the data in the right order.
+
+500
+00:27:08,610 --> 00:27:09,920
+Okay, so can you see here?
+
+501
+00:27:11,740 --> 00:27:20,850
+You've got building permits of 1.71, which is correct for November, okay?
+
+502
+00:27:20,850 --> 00:27:28,075
+1.71, 1.59 for September, 1.59 for September.
+
+503
+00:27:28,075 --> 00:27:34,080
+The problem is it's only flipped the data for building permits.
+
+504
+00:27:34,080 --> 00:27:36,730
+It hasn't flipped. Can you see?
+
+505
+00:27:36,730 --> 00:27:42,310
+It's plotting 5.54 December as the last number.
+
+506
+00:27:42,310 --> 00:27:42,910
+Do you see?
+
+507
+00:27:42,910 --> 00:27:44,760
+It's going down still.
+
+508
+00:27:46,080 --> 00:27:49,150
+I know this sounds like a lot, but it actually is pretty straightforward.
+
+509
+00:27:49,150 --> 00:27:52,120
+It 's just a couple of setting tweaks that need tweaking.
+
+510
+00:27:52,120 --> 00:27:53,852
+So what you need to do
+
+511
+00:27:53,852 --> 00:27:55,584
+is you go to chart design
+
+512
+00:27:55,584 --> 00:27:57,894
+because at the moment what it's doing is
+
+513
+00:27:57,894 --> 00:28:01,359
+it 's just showing me the axis for one of the series.
+
+514
+00:28:01,360 --> 00:28:04,825
+So I need to add chart element axis.
+
+515
+00:28:04,825 --> 00:28:07,095
+See that secondary horizontal?
+
+516
+00:28:07,095 --> 00:28:08,255
+I need to add that in.
+
+517
+00:28:08,255 --> 00:28:09,691
+Okay, now what it's
+
+518
+00:28:09,691 --> 00:28:11,845
+giving me is it's giving me
+
+519
+00:28:11,845 --> 00:28:13,999
+the axis for the second series,
+
+520
+00:28:13,999 --> 00:28:16,512
+which is basically the existing home cells.
+
+521
+00:28:16,515 --> 00:28:19,490
+So that I also need to do in reverse order.
+
+522
+00:28:19,490 --> 00:28:21,075
+Okay? C ategories in reverse order.
+
+523
+00:28:21,075 --> 00:28:21,945
+There you go.
+
+524
+00:28:21,945 --> 00:28:23,410
+Okay? See, we got there in the end.
+
+525
+00:28:23,410 --> 00:28:23,910
+Can you see?
+
+526
+00:28:23,910 --> 00:28:28,615
+It 's now very highly correlated, which makes sense.
+
+527
+00:28:28,615 --> 00:28:32,405
+Existing home sales, permits, you'd expect them to be roughly correlated.
+
+528
+00:28:32,405 --> 00:28:34,120
+It's the housing industry after all.
+
+529
+00:28:35,540 --> 00:28:37,025
+Okay? So that's perfect.
+
+530
+00:28:37,025 --> 00:28:38,160
+Exactly how we want it.
+
+531
+00:28:40,500 --> 00:28:47,255
+Um, for some reason it's decided to put the home sales number over here.
+
+532
+00:28:47,255 --> 00:28:47,920
+But don't worry about it.
+
+533
+00:28:47,920 --> 00:28:49,585
+I'm not going to bother changing it back again.
+
+534
+00:28:49,585 --> 00:28:51,340
+It's how I had it before.
+
+535
+00:28:51,340 --> 00:28:54,535
+Um, I'm going to highlight this, make it the same sort of sizing.
+
+536
+00:28:54,535 --> 00:28:55,075
+So what's that?
+
+537
+00:28:55,075 --> 00:28:59,400
+12 and bold. Let's make that 12.
+
+538
+00:28:59,400 --> 00:29:00,595
+Okay, bold.
+
+539
+00:29:00,595 --> 00:29:01,690
+Okay, perfect.
+
+540
+00:29:01,690 --> 00:29:03,415
+It's exactly how I want it.
+
+541
+00:29:03,415 --> 00:29:06,870
+Um, this is, you know, end of the day. Let's be honest.
+
+542
+00:29:06,870 --> 00:29:10,625
+Home sales are somewhere between kind of even there.
+
+543
+00:29:10,625 --> 00:29:11,820
+We had the COVID dip,
+
+544
+00:29:11,820 --> 00:29:20,435
+but let's do let's kind of do 8 million and through 4 million.
+
+545
+00:29:20,435 --> 00:29:21,415
+We don't need to go zero.
+
+546
+00:29:21,415 --> 00:29:22,955
+Home sales are never going to be zero, right?
+
+547
+00:29:22,955 --> 00:29:24,985
+So it's silly to have it as zero.
+
+548
+00:29:24,985 --> 00:29:29,940
+So let's change that axis to let 's do three and a half to eight.
+
+549
+00:29:31,440 --> 00:29:33,000
+Okay, so I double click here.
+
+550
+00:29:35,500 --> 00:29:38,400
+Three and a half and I'm happy with where it's at eight.
+
+551
+00:29:40,520 --> 00:29:48,345
+Okay, and let's do for this permits, which is this side. Okay, this side is permits.
+
+552
+00:29:48,345 --> 00:29:51,840
+Let's kind of do one to two.
+
+553
+00:29:52,940 --> 00:29:55,900
+I think that makes sense. Would you agree one to two?
+
+554
+00:29:55,900 --> 00:30:00,320
+So axis options, just checking it's recording again.
+
+555
+00:30:00,320 --> 00:30:01,475
+I 'm nervous.
+
+556
+00:30:01,475 --> 00:30:04,475
+There we go. Perfect. Very happy with that.
+
+557
+00:30:04,475 --> 00:30:06,900
+Okay, that's your housing data, basically.
+
+558
+00:30:08,800 --> 00:30:11,385
+In a way, I never see presented anywhere else.
+
+559
+00:30:11,385 --> 00:30:12,845
+Have you ever seen it presented like that?
+
+560
+00:30:12,845 --> 00:30:13,575
+I don't.
+
+561
+00:30:13,575 --> 00:30:18,750
+This is going to get us much further ahead of the competition when we're looking at housing data.
+
+562
+00:30:18,750 --> 00:30:19,505
+Can you see?
+
+563
+00:30:19,505 --> 00:30:25,785
+I'm fairly happy that the housing market, I can see straight away, existing home sales.
+
+564
+00:30:25,785 --> 00:30:27,305
+Can you see?
+
+565
+00:30:27,305 --> 00:30:30,220
+Recently, you know, doing very, very well.
+
+566
+00:30:31,560 --> 00:30:39,175
+Fairly stable around the kind of what six to seven mark.
+
+567
+00:30:39,175 --> 00:30:48,120
+The number of building permits being issued doing well, fairly stable around the, and this is on an annualized basis.
+
+568
+00:30:48,120 --> 00:30:51,695
+I can see it here. 1.6, 1.7.
+
+569
+00:30:51,695 --> 00:30:54,140
+We've had a little uptick recently in the housing
+
+570
+00:30:54,140 --> 00:30:59,425
+market. Okay. So, um, you know, perfect way to see that.
+
+571
+00:30:59,425 --> 00:31:02,120
+You're not going to be able to see that otherwise, right?
+
+572
+00:31:02,120 --> 00:31:04,740
+You can see that the housing market has had a little uptick recently.
+
+573
+00:31:04,740 --> 00:31:06,570
+It 's doing well generally.
+
+574
+00:31:06,570 --> 00:31:09,750
+And you're going to see that unless you lay out your data like this.
+
+575
+00:31:09,750 --> 00:31:11,465
+Uh, very happy with that.
+
+576
+00:31:11,465 --> 00:31:14,810
+Um, just make sure we've got everything correct.
+
+577
+00:31:14,810 --> 00:31:18,510
+Existing home sales, let's just get the right frequency in.
+
+578
+00:31:18,510 --> 00:31:23,315
+Um, release monthly about 20 days after month ends.
+
+579
+00:31:23,315 --> 00:31:27,880
+Copy. Paste in there.
+
+580
+00:31:29,580 --> 00:31:32,885
+Okay. And we're also going to have,
+
+581
+00:31:32,885 --> 00:31:36,720
+uh, let's just make sure the permits, we've got the right frequency.
+
+582
+00:31:36,720 --> 00:31:40,055
+Um, where is it?
+
+583
+00:31:40,055 --> 00:31:44,755
+Building permits. Release monthly on the 12th business day.
+
+584
+00:31:44,755 --> 00:31:50,070
+Yeah. Perfect. Okay. Just make sure, I just want to do a final check.
+
+585
+00:31:50,070 --> 00:31:53,595
+Make sure I'm leaving you, uh, with the correct data.
+
+586
+00:31:53,595 --> 00:31:55,990
+Um, let's just make sure that looks correct.
+
+587
+00:31:55,990 --> 00:32:06,105
+So, 1.71 for November, 1.71 for November, uh, 6.46 for November.
+
+588
+00:32:06,105 --> 00:32:09,310
+Uh, 6.46 for November. Uh, for existing home sales, 6.46 for November.
+
+589
+00:32:09,310 --> 00:32:11,600
+Uh, let's just make sure it's the right way around.
+
+590
+00:32:11,600 --> 00:32:14,775
+5.54 December, existing home sales at the bottom.
+
+591
+00:32:14,775 --> 00:32:20,565
+Yeah. And, uh, 1.42 for December at the bottom.
+
+592
+00:32:20,565 --> 00:32:23,805
+Perfect. Okay. Um, hopefully that's useful for you.
+
+593
+00:32:23,805 --> 00:32:24,815
+Um, ladies and gentlemen,
+
+594
+00:32:24,815 --> 00:32:27,340
+we've got another couple to go.
+
+595
+00:32:27,340 --> 00:32:29,825
+Literally call PCE and trade balance.
+
+596
+00:32:29,825 --> 00:32:30,880
+And then we're virtually done.
+
+597
+00:32:30,880 --> 00:32:34,330
+We've got the perfect, probably one of the best dash boards in the world.
+
+598
+00:32:34,330 --> 00:32:36,545
+Let's be honest, when it comes to fundamental data.
+
+599
+00:32:36,545 --> 00:32:39,400
+So we've just got those two, um, to go.
+
+600
+00:32:39,400 --> 00:32:43,510
+Um, and then we were able to move on and start actually making use of all this data,
+
+601
+00:32:43,510 --> 00:32:45,275
+which I'm really excited to do with you.
+
+602
+00:32:45,275 --> 00:32:46,280
+I'll see you on the other side.
+
+===== END AFTER_SEGMENT =====

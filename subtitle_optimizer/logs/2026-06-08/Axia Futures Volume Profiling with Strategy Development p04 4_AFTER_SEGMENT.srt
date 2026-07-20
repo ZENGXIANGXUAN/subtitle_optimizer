@@ -1,0 +1,5086 @@
+===== AFTER_SEGMENT (1271 entries) =====
+1
+00:00:00,980 --> 00:00:06,860
+Welcome to part 4. In part 4 we're going to discuss 4 important elements.
+
+2
+00:00:07,500 --> 00:00:10,820
+First we're going to discuss volume profiling and nominalies.
+
+3
+00:00:11,460 --> 00:00:16,880
+We're then going to move on to the basic process of trading using volume profiles.
+
+4
+00:00:17,440 --> 00:00:22,860
+I'm then going to show you a very basic trade strategy using volume profiles.
+
+5
+00:00:23,500 --> 00:00:27,151
+We will then finish off by me giving you a
+
+6
+00:00:27,151 --> 00:00:29,707
+nice tutorial on how to set up
+
+7
+00:00:29,707 --> 00:00:33,358
+your volume profiles using your free demo with Trading Technologies.
+
+8
+00:00:34,100 --> 00:00:35,800
+Let's now get into part 4.
+
+9
+00:00:36,840 --> 00:00:37,660
+Trading Anomalies
+
+10
+00:00:37,660 --> 00:00:41,060
+So what is a volume profile anomaly?
+
+11
+00:00:41,960 --> 00:00:47,500
+Well, very simply, an anomaly is anything that shouldn't be there.
+
+12
+00:00:47,680 --> 00:00:51,400
+It's anything that looks different to what is normally there.
+
+13
+00:00:52,060 --> 00:00:54,960
+So anytime you see that, you need to raise a question mark.
+
+14
+00:00:55,060 --> 00:00:59,960
+Now the wonderful thing with using volume profiles is because we're used to seeing values.
+
+15
+00:01:00,340 --> 00:01:02,353
+The same pattern or very similar patterns
+
+16
+00:01:02,353 --> 00:01:04,654
+all the time, when we do get one
+
+17
+00:01:04,654 --> 00:01:07,818
+of these anomalies, it does stick out like a golden fish.
+
+18
+00:01:08,760 --> 00:01:11,407
+The more important thing to understand is when
+
+19
+00:01:11,407 --> 00:01:13,392
+you see these anomalies, whilst they
+
+20
+00:01:13,392 --> 00:01:16,039
+are rare, they do present unique trading strategies.
+
+21
+00:01:16,560 --> 00:01:21,360
+We will continue the discussion in detail when we move into module 2.
+
+22
+00:01:21,360 --> 00:01:27,400
+I will show you some key strategies using these anomalies as we progress into module 2 and 3.
+
+23
+00:01:28,340 --> 00:01:31,340
+So, the basic type of anomaly. 1.
+
+24
+00:01:31,340 --> 00:01:34,340
+A non-symmetrical profile.
+
+25
+00:01:34,340 --> 00:01:37,940
+Non-symmetrical means non-normal distribution.
+
+26
+00:01:37,940 --> 00:01:45,040
+Now this just means something that's not normally distributed or not the normal shape that we're used to seeing.
+
+27
+00:01:45,040 --> 00:01:48,254
+What you will typically see in these non-symmetrical
+
+28
+00:01:48,254 --> 00:01:50,263
+profiles is things like single
+
+29
+00:01:50,263 --> 00:01:51,870
+prints, things like gaps
+
+30
+00:01:51,870 --> 00:01:53,879
+and things like volume skew.
+
+31
+00:01:53,880 --> 00:01:59,300
+These anomalies give us very important information about what and how buyers and sellers are
+
+32
+00:01:59,300 --> 00:02:03,340
+interacting with one another. And they do present unique trading strategies.
+
+33
+00:02:03,340 --> 00:02:08,160
+2. A poor auction extreme. Another type of anomaly is a poor auction extreme.
+
+34
+00:02:08,160 --> 00:02:09,160
+What do we mean by that?
+
+35
+00:02:09,160 --> 00:02:11,178
+Well, we expect when a market
+
+36
+00:02:11,178 --> 00:02:13,869
+makes a high or a low, we expect
+
+37
+00:02:13,869 --> 00:02:20,598
+that it makes a high based on very little buy side action and quite a lot of sell side action.
+
+38
+00:02:20,600 --> 00:02:22,347
+So when a market makes a bad
+
+39
+00:02:22,347 --> 00:02:24,094
+high or we see quite a lot
+
+40
+00:02:24,094 --> 00:02:28,338
+of buy side action at a high or a lot of sell side action at a low.
+
+41
+00:02:28,340 --> 00:02:29,340
+3.
+
+42
+00:02:29,340 --> 00:02:31,767
+call that a poorly auctioned high
+
+43
+00:02:31,767 --> 00:02:34,194
+or low this anomaly presents an
+
+44
+00:02:34,194 --> 00:02:37,430
+opportunity either on the same day or on
+
+45
+00:02:37,430 --> 00:02:43,498
+the following days so why do we identify these anomalies well as we said before
+
+46
+00:02:43,500 --> 00:02:45,580
+these anomalies will present unique trading
+
+47
+00:02:45,580 --> 00:02:48,353
+strategies we will discuss these strategies in depth
+
+48
+00:02:48,353 --> 00:02:54,939
+as we move into module two and three let's now take a look at a basic example of an
+
+49
+00:02:54,940 --> 00:02:56,814
+anomaly that you can find in
+
+50
+00:02:56,814 --> 00:03:01,499
+the markets take a second to have a look at the chart on the left
+
+51
+00:03:02,060 --> 00:03:04,720
+try and identify what the anomaly
+
+52
+00:03:04,720 --> 00:03:08,266
+is as you can see on the left
+
+53
+00:03:08,266 --> 00:03:11,812
+side we've got a daily volume profile in
+
+54
+00:03:11,812 --> 00:03:19,348
+the german tenure bund now noted before we said some of the key anomalies you can find
+
+55
+00:03:19,350 --> 00:03:22,267
+are tails low volume errors and bad highs
+
+56
+00:03:22,267 --> 00:03:25,184
+as you can see in this example we've
+
+57
+00:03:25,184 --> 00:03:33,208
+got two areas or two single print areas within this distribution this area is the area where we have single tpos or
+
+58
+00:03:33,210 --> 00:03:36,253
+single time price opportunities this can be illustrated
+
+59
+00:03:36,253 --> 00:03:39,296
+by the lower lower print at the bottom
+
+60
+00:03:39,296 --> 00:03:42,339
+of the distribution as well as the higher
+
+61
+00:03:42,339 --> 00:03:52,229
+print or the the print within the higher end of the distribution these two areas represent a low volume traded area now we know this anomaly
+
+62
+00:03:52,230 --> 00:03:55,009
+is not supposed to be there we know
+
+63
+00:03:55,009 --> 00:03:57,788
+it's unusual based on pattern recognition therefore the
+
+64
+00:03:57,788 --> 00:04:04,389
+fact that it's unusual means that at some point in time it should be filled out and the market
+
+65
+00:04:04,390 --> 00:04:07,255
+should return to these prices and turn those
+
+66
+00:04:07,255 --> 00:04:10,120
+low volume areas into high volume errors the
+
+67
+00:04:10,120 --> 00:04:12,985
+chart on the right shows you exactly what
+
+68
+00:04:12,985 --> 00:04:15,850
+happened in the preceding days as you can
+
+69
+00:04:15,850 --> 00:04:21,050
+see the market took that low volume error and filled it out it completed the puzzle
+
+70
+00:04:21,050 --> 00:04:21,282
+the pattern recognition is the same
+
+71
+00:04:21,282 --> 00:04:21,514
+way as starting this distribution we
+
+72
+00:04:21,514 --> 00:04:22,248
+can use so at first we want to unfortunate certain or extraordinaryδώing so it's for us to initially
+
+73
+00:04:22,210 --> 00:04:26,626
+that's a good example of what a volume or what an anomaly
+
+74
+00:04:26,626 --> 00:04:29,570
+looks like but more importantly how the market
+
+75
+00:04:29,570 --> 00:04:35,090
+comes back to complete those anomalies. As said before we will discuss some very key
+
+76
+00:04:35,090 --> 00:04:39,430
+trading opportunities around these anomalies as we progress into module two and three.
+
+77
+00:04:41,640 --> 00:04:47,700
+We're finally getting to the fun part of the module. We're now going to do just a very basic
+
+78
+00:04:47,700 --> 00:04:51,821
+step-for-step process on how you can use volume profiling within
+
+79
+00:04:51,821 --> 00:04:54,818
+your trading. So how do we go about
+
+80
+00:04:54,818 --> 00:04:58,564
+it? First and foremost when you approach volume profiling the
+
+81
+00:04:58,564 --> 00:05:06,432
+first thing you need to do when looking at any market is you need to identify the key volume profile metrics.
+
+82
+00:05:06,520 --> 00:05:09,496
+As you will recall we did this in the playbook at the
+
+83
+00:05:09,496 --> 00:05:11,480
+end of part three. So first things first
+
+84
+00:05:11,480 --> 00:05:17,680
+find a market you like, have a look at that market and then you're going to be able to identify the key volume profile metrics.
+
+85
+00:05:17,680 --> 00:05:18,868
+So first things first find a market you like, have a look
+
+86
+00:05:18,868 --> 00:05:19,660
+at that market and then you're going to
+
+87
+00:05:19,660 --> 00:05:21,938
+be able to identify the key volume profile metrics. and break it down or complete the template based on the volume profile metrics.
+
+88
+00:05:22,440 --> 00:05:25,779
+Once you have completed that, you then need
+
+89
+00:05:25,779 --> 00:05:29,118
+to do a subjective and objective analysis. We
+
+90
+00:05:29,118 --> 00:05:32,039
+did this back in part 1. We will
+
+91
+00:05:32,039 --> 00:05:40,804
+do an example later in part 4, so not to worry if you're not too sure about an objective or subjective analysis.
+
+92
+00:05:41,920 --> 00:05:48,800
+Once you've completed the subjective-objective analysis, you will then identify the volume profile anomalies.
+
+93
+00:05:49,460 --> 00:05:58,700
+By doing this basic three-step process, you are on path ready to develop a key strategy with using volume profiles.
+
+94
+00:05:59,900 --> 00:06:03,764
+So let's take a look now at a practical example illustrating the
+
+95
+00:06:03,764 --> 00:06:05,696
+power of profiling as a tool,
+
+96
+00:06:05,696 --> 00:06:09,238
+as well as a very basic profiling strategy we can implement.
+
+97
+00:06:09,820 --> 00:06:14,840
+In module 2 and 3, we will go further in depth with profiling principles, building models, and more.
+
+98
+00:06:14,840 --> 00:06:18,224
+Moving further upon the basics we've established in module 1,
+
+99
+00:06:18,224 --> 00:06:20,480
+we will also develop a host
+
+100
+00:06:20,480 --> 00:06:23,864
+of profiling strategies and your personalized market profiling playbook.
+
+101
+00:06:24,240 --> 00:06:27,340
+This is just the beginning of volume profiling.
+
+102
+00:06:29,340 --> 00:06:33,640
+Now that we've gone through the three basic steps of utilizing your volume profiles,
+
+103
+00:06:33,640 --> 00:06:39,640
+we're now going to take a basic example and we're going to go through each one of those steps individually.
+
+104
+00:06:40,340 --> 00:06:44,640
+What you can see in the chart provided is four days of volume profiles.
+
+105
+00:06:44,840 --> 00:06:46,840
+So let's take a look at the volume profile.
+
+106
+00:06:46,840 --> 00:06:53,840
+So step one, what you would do is begin by giving an overview or a market context.
+
+107
+00:06:53,840 --> 00:06:59,240
+Now, this is dated the 25th of October 2016, so you can go get this chart yourself.
+
+108
+00:06:59,800 --> 00:07:04,580
+However, let's just have a brief little rundown of what we see in front of us.
+
+109
+00:07:05,000 --> 00:07:07,545
+So the market has been consolidating, overlapping
+
+110
+00:07:07,545 --> 00:07:10,090
+value areas. We've had three days in
+
+111
+00:07:10,090 --> 00:07:14,454
+a row where the market closes within 10 pips of the previous close.
+
+112
+00:07:14,840 --> 00:07:17,532
+We have a similar volume point of
+
+113
+00:07:17,532 --> 00:07:20,224
+control, implying excessively balanced. We have smaller
+
+114
+00:07:20,224 --> 00:07:24,070
+ranges with 70% of the volume transacted over a 25 pip range.
+
+115
+00:07:24,840 --> 00:07:31,840
+On day four, as illustrated, the buyers show initiative and post a drive out of and away from fair price.
+
+116
+00:07:31,840 --> 00:07:35,532
+A strong sell tail forms at R after
+
+117
+00:07:35,532 --> 00:07:38,762
+an aggressive 50 pip move up, and that's
+
+118
+00:07:38,762 --> 00:07:43,377
+effectively double the average range of the current fair value.
+
+119
+00:07:43,840 --> 00:07:44,840
+So that's that.
+
+120
+00:07:44,840 --> 00:07:49,840
+So as you can see, that just puts everything into context for us.
+
+121
+00:07:49,840 --> 00:07:53,840
+What we then do is we then go through our three step process.
+
+122
+00:07:53,840 --> 00:07:58,840
+Now, step one, we identify the key volume profile metrics.
+
+123
+00:07:58,840 --> 00:08:02,840
+Basically, you take the template provided in your playbook and you complete it.
+
+124
+00:08:02,840 --> 00:08:04,554
+So you analyze on
+
+125
+00:08:04,554 --> 00:08:07,125
+day three, the high, the low,
+
+126
+00:08:07,125 --> 00:08:09,696
+the range, the initial balance, the
+
+127
+00:08:09,696 --> 00:08:14,838
+value area, the open, the close, the volume point of control, etc.
+
+128
+00:08:14,840 --> 00:08:17,840
+So you complete your template provided.
+
+129
+00:08:17,840 --> 00:08:19,768
+Once you've completed the template, and
+
+130
+00:08:19,768 --> 00:08:22,339
+the reason you complete the template is because
+
+131
+00:08:22,339 --> 00:08:24,267
+you're going to pick up on
+
+132
+00:08:24,267 --> 00:08:26,838
+some very specific things when completing the template.
+
+133
+00:08:26,840 --> 00:08:29,887
+For example, if you complete the template every
+
+134
+00:08:29,887 --> 00:08:32,172
+single day, you'll very quickly begin
+
+135
+00:08:32,172 --> 00:08:34,838
+to realize when the range is expanding.
+
+136
+00:08:34,840 --> 00:08:37,181
+If you know on day one, the range
+
+137
+00:08:37,181 --> 00:08:39,229
+is 40 ticks, on day two, the range
+
+138
+00:08:39,229 --> 00:08:41,277
+was 30 ticks, and day three, the range
+
+139
+00:08:41,277 --> 00:08:45,959
+is 20 ticks, you'll very quickly pick up on a trend developing within the market you're trading.
+
+140
+00:08:46,840 --> 00:08:51,013
+This is why we do these analytics every single day, to ensure
+
+141
+00:08:51,013 --> 00:08:54,839
+that we pick up on these trends when they are occurring.
+
+142
+00:08:54,840 --> 00:08:59,411
+Once you've identified all the key volume profile metrics, you then do
+
+143
+00:08:59,411 --> 00:09:02,839
+step two, which is a subjective versus objective analysis.
+
+144
+00:09:02,840 --> 00:09:06,840
+In the next slide, we are going to do this.
+
+145
+00:09:06,840 --> 00:09:10,840
+Step three would be to identify the volume profile anomalies.
+
+146
+00:09:10,840 --> 00:09:16,840
+Now, as you can see, some of the anomalies that exist in this consolidated chart,
+
+147
+00:09:16,840 --> 00:09:22,840
+if you look at day one, you can see we have a four TPO, or a time price opportunity, ledge.
+
+148
+00:09:22,840 --> 00:09:25,840
+In other words, the market tested this high four times.
+
+149
+00:09:25,840 --> 00:09:29,840
+Now remember, back in part three, we spoke about this anomaly.
+
+150
+00:09:29,840 --> 00:09:33,658
+We spoke about how it's very unusual for a high of a
+
+151
+00:09:33,658 --> 00:09:36,839
+day to be tested four times and not be broken.
+
+152
+00:09:36,840 --> 00:09:39,916
+Therefore, by that token, we are very aware that the
+
+153
+00:09:39,916 --> 00:09:42,377
+high posted on day one is likely to
+
+154
+00:09:42,377 --> 00:09:44,838
+be broken at some point in the future.
+
+155
+00:09:44,840 --> 00:09:48,288
+Another anomaly to point out is on day four, when
+
+156
+00:09:48,288 --> 00:09:51,046
+we finally break out of the day three
+
+157
+00:09:51,046 --> 00:09:54,839
+range, we can see an untraded or a low volume area.
+
+158
+00:09:54,840 --> 00:09:56,840
+This is a second anomaly.
+
+159
+00:09:56,840 --> 00:09:59,340
+The third anomaly is on day three. We
+
+160
+00:09:59,340 --> 00:10:02,465
+can see a selling tail or a low volume area
+
+161
+00:10:02,465 --> 00:10:06,840
+at the high of the day, signaling an important pivot point in the market.
+
+162
+00:10:06,840 --> 00:10:11,840
+That is the three step process you would take when looking at an overview of the market.
+
+163
+00:10:11,840 --> 00:10:15,476
+Let's go back to the step two and do an
+
+164
+00:10:15,476 --> 00:10:18,385
+objective versus subjective analysis of the previous example
+
+165
+00:10:18,385 --> 00:10:19,839
+we've just spoken about.
+
+166
+00:10:19,840 --> 00:10:23,173
+So as you can see, to do a subjective analysis
+
+167
+00:10:23,173 --> 00:10:26,839
+on the previous example, we could say a number of things.
+
+168
+00:10:26,840 --> 00:10:29,840
+One, the market should break out.
+
+169
+00:10:29,840 --> 00:10:31,840
+Note how, yes, there's a high
+
+170
+00:10:31,840 --> 00:10:34,506
+probability the market does move away from this
+
+171
+00:10:34,506 --> 00:10:36,506
+value area that it's been consolidating
+
+172
+00:10:36,506 --> 00:10:38,839
+in for the last number of days.
+
+173
+00:10:38,840 --> 00:10:40,840
+However, it's not to say that it will break out.
+
+174
+00:10:40,840 --> 00:10:42,369
+Equally, if we say
+
+175
+00:10:42,369 --> 00:10:44,663
+that the anomaly is likely to
+
+176
+00:10:44,663 --> 00:10:47,721
+get filled, yes, of course, we know anomalies
+
+177
+00:10:47,721 --> 00:10:53,838
+tend to eventually get filled or that bad quadruple top TPO eventually will be taken out.
+
+178
+00:10:53,840 --> 00:10:55,840
+That's not to say it will do it today.
+
+179
+00:10:55,840 --> 00:10:58,840
+This is merely an idea or an opinion.
+
+180
+00:10:58,840 --> 00:11:00,957
+Also, if we say once we
+
+181
+00:11:00,957 --> 00:11:03,074
+break out of range, momentum is
+
+182
+00:11:03,074 --> 00:11:05,897
+expected. Whilst this is or there is a
+
+183
+00:11:05,897 --> 00:11:10,838
+high probability based on tuition that this could occur, it's not necessarily a fact.
+
+184
+00:11:10,840 --> 00:11:13,506
+And being stuck in this frame of mind
+
+185
+00:11:13,506 --> 00:11:16,172
+of the market should and could do something
+
+186
+00:11:16,172 --> 00:11:20,838
+could land you in a very strong bias, which ultimately will lead to losses.
+
+187
+00:11:20,840 --> 00:11:24,840
+Let's look then on the other side and see what objectivity means.
+
+188
+00:11:24,840 --> 00:11:28,840
+To say the market is consolidating. That's an objective statement.
+
+189
+00:11:28,840 --> 00:11:29,840
+Why?
+
+190
+00:11:29,840 --> 00:11:34,840
+Because we can see this market has been overlapping value areas for the last three sessions in a row.
+
+191
+00:11:34,840 --> 00:11:36,840
+This is very, very unusual.
+
+192
+00:11:36,840 --> 00:11:40,840
+The fact that we are overlapping suggests that we are consolidating.
+
+193
+00:11:40,840 --> 00:11:43,284
+The fact that we also have a lot
+
+194
+00:11:43,284 --> 00:11:45,728
+of overlap between the open close price as
+
+195
+00:11:45,728 --> 00:11:47,561
+well as a very similar point
+
+196
+00:11:47,561 --> 00:11:51,838
+of control on each one in three days again suggests that we are consolidating.
+
+197
+00:11:51,840 --> 00:11:56,840
+All three of these together are very factual leading us to be objective.
+
+198
+00:11:56,840 --> 00:11:59,840
+Then a rejection top is a pivot.
+
+199
+00:11:59,840 --> 00:12:01,405
+Again, we know that when there
+
+200
+00:12:01,405 --> 00:12:02,970
+is a tail in the market,
+
+201
+00:12:02,970 --> 00:12:05,839
+the market tends to very quickly auction away from this point.
+
+202
+00:12:05,840 --> 00:12:08,246
+Noting that this is a pivot and
+
+203
+00:12:08,246 --> 00:12:10,652
+a very important area in the market
+
+204
+00:12:10,652 --> 00:12:16,839
+is again being very objective, and this will allow us to remain in an objective state of mind.
+
+205
+00:12:16,840 --> 00:12:19,840
+The stop placement above the tail high.
+
+206
+00:12:19,840 --> 00:12:25,840
+Again, what we're merely stating here is a fact-based approach to how we wish to execute.
+
+207
+00:12:25,840 --> 00:12:30,840
+Allowing ourselves to execute in this manner will ensure that we will remain objective.
+
+208
+00:12:30,840 --> 00:12:34,840
+And last but not least, a low volume area anomaly.
+
+209
+00:12:34,840 --> 00:12:37,840
+Stating a fact is remaining objective.
+
+210
+00:12:37,840 --> 00:12:42,840
+There is a low volume area, which the market has very quickly auctioned away from.
+
+211
+00:12:42,840 --> 00:12:44,840
+This is an objective fact.
+
+212
+00:12:44,840 --> 00:12:46,840
+So again, the key highlights.
+
+213
+00:12:46,840 --> 00:12:48,840
+It's important to note the following.
+
+214
+00:12:48,840 --> 00:12:53,840
+We need to be both subjective and objective in our analysis.
+
+215
+00:12:53,840 --> 00:12:56,840
+Subjectivity gives us the idea and feeling.
+
+216
+00:12:56,840 --> 00:13:01,840
+Objectivity gives us the confirmation to execute on that idea.
+
+217
+00:13:01,840 --> 00:13:04,173
+By doing a basic objective versus subjective
+
+218
+00:13:04,173 --> 00:13:06,506
+test, we can very quickly determine when
+
+219
+00:13:06,506 --> 00:13:09,839
+we are trading objectively or being biased by our analysis.
+
+220
+00:13:09,840 --> 00:13:12,840
+We can then use our subjective opinion.
+
+221
+00:13:12,840 --> 00:13:17,840
+Whilst this is a very simple illustration, it highlights the power behind profiling.
+
+222
+00:13:17,840 --> 00:13:21,840
+Let's now take a look at some of the benefits of using profiling then.
+
+223
+00:13:21,840 --> 00:13:25,840
+Profiling allows us to be factual and objective.
+
+224
+00:13:25,840 --> 00:13:29,840
+It is a tool that prevents us from becoming too biased.
+
+225
+00:13:29,840 --> 00:13:32,840
+Profiling allows us to be objective,
+
+226
+00:13:32,840 --> 00:13:35,840
+therefore remain honest.
+
+227
+00:13:35,840 --> 00:13:41,840
+Profiling allows us to recognize repeatable patterns that we can execute upon time and time again.
+
+228
+00:13:41,840 --> 00:13:49,840
+By using the same framework being profiling, we'll very quickly begin to recognize patterns that work more often than not.
+
+229
+00:13:49,840 --> 00:13:53,112
+And last but not least, profiling allows us
+
+230
+00:13:53,112 --> 00:13:55,975
+to create a strong process and most
+
+231
+00:13:55,975 --> 00:13:58,838
+importantly allows us to manage our risk.
+
+232
+00:13:58,840 --> 00:14:03,840
+In essence, we need to be objective and subjective.
+
+233
+00:14:03,840 --> 00:14:09,840
+Now that we've completed the three steps required when using volume profiling,
+
+234
+00:14:09,840 --> 00:14:12,360
+we're going to finish off with just
+
+235
+00:14:12,360 --> 00:14:14,880
+showing you how you would now start
+
+236
+00:14:14,880 --> 00:14:18,840
+to begin to develop various trade strategies with the volume profile.
+
+237
+00:14:18,840 --> 00:14:21,883
+So for example, in the two charts
+
+238
+00:14:21,883 --> 00:14:24,926
+provided, both are EURUSD FX charts, what
+
+239
+00:14:24,926 --> 00:14:28,839
+you can see is a very simple volume profile.
+
+240
+00:14:28,840 --> 00:14:35,840
+This happens to be the day four of the EURUSD FX consolidation pattern I was showing you in previous slides.
+
+241
+00:14:35,840 --> 00:14:39,840
+Now, the important thing to note in this chart
+
+242
+00:14:39,840 --> 00:14:42,840
+is how at the end of the day, if you looked at this chart,
+
+243
+00:14:42,840 --> 00:14:46,840
+there's two very, very key anomalies that are sticking out like a sore thumb.
+
+244
+00:14:46,840 --> 00:14:52,840
+The first is the low volume area after the early consolidation in the first chart.
+
+245
+00:14:52,840 --> 00:14:56,840
+What you can see is the market spent quite a bit of time early in the morning consolidating
+
+246
+00:14:56,840 --> 00:15:01,840
+before breaking out of the previous day's range. Once we broke out of the previous day's range,
+
+247
+00:15:01,840 --> 00:15:07,840
+the market very quickly auctioned away from the break point and continued to move higher.
+
+248
+00:15:07,840 --> 00:15:12,840
+Then later on in the day, you can see an excess tail or a premium tail
+
+249
+00:15:12,840 --> 00:15:17,840
+where sellers very aggressively stepped into the market and sold the market back down.
+
+250
+00:15:17,840 --> 00:15:24,840
+These two patterns alone are extremely identifiable on any chart and across many, many different days.
+
+251
+00:15:24,840 --> 00:15:30,840
+That is why we use volume profiling, so we can pick up on these patterns quite quickly and easily.
+
+252
+00:15:30,840 --> 00:15:33,322
+In the next slide and the following slides,
+
+253
+00:15:33,322 --> 00:15:35,184
+we are going to be developing
+
+254
+00:15:35,184 --> 00:15:39,839
+a lot more strategies based on these anomalies and other strategies using the volume profile.
+
+255
+00:15:39,840 --> 00:15:46,840
+Let's now look at an example of what a basic volume profile trade setup could look like.
+
+256
+00:15:46,840 --> 00:15:53,840
+In the charts provided, what we have on the left side is three-day distributions or three daily profiles.
+
+257
+00:15:53,840 --> 00:15:59,840
+Now, as you can see in the first profile, we had a relatively normal distribution.
+
+258
+00:15:59,840 --> 00:16:04,840
+In day two, we spent most of the day trading within the previous day's volume profile.
+
+259
+00:16:04,840 --> 00:16:11,840
+In other words, the market accepted the prices that it accepted from the previous day.
+
+260
+00:16:11,840 --> 00:16:15,840
+Now, when we see this, we call this an inside day.
+
+261
+00:16:15,840 --> 00:16:20,840
+Now, the longer a market spends accepting value between two prices,
+
+262
+00:16:20,840 --> 00:16:23,385
+the more likely as time goes by that
+
+263
+00:16:23,385 --> 00:16:25,612
+we are likely to break out either
+
+264
+00:16:25,612 --> 00:16:27,839
+to the upside or to the downside.
+
+265
+00:16:27,840 --> 00:16:29,800
+The important thing to understand is not
+
+266
+00:16:29,800 --> 00:16:31,760
+so much when we break out, but
+
+267
+00:16:31,760 --> 00:16:34,840
+what are you going to do when the market breaks out.
+
+268
+00:16:34,840 --> 00:16:36,840
+Now, one of two things can happen.
+
+269
+00:16:36,840 --> 00:16:41,840
+The market can break to the upside and continue with the trend or the momentum,
+
+270
+00:16:41,840 --> 00:16:44,000
+or the market could break to
+
+271
+00:16:44,000 --> 00:16:46,160
+the upside and then return back
+
+272
+00:16:46,160 --> 00:16:48,320
+into value and very quickly move
+
+273
+00:16:48,320 --> 00:16:50,840
+to the other side of the distribution.
+
+274
+00:16:50,840 --> 00:16:54,840
+Likewise, we could see the same sort of idea to the downside.
+
+275
+00:16:54,840 --> 00:16:56,395
+What we're going to take a
+
+276
+00:16:56,395 --> 00:16:57,950
+look at now is what the
+
+277
+00:16:57,950 --> 00:16:59,505
+anomaly is and how we could
+
+278
+00:16:59,505 --> 00:17:01,838
+have developed a trade strategy using this basic setup.
+
+279
+00:17:01,840 --> 00:17:04,359
+As you can see, by the end
+
+280
+00:17:04,359 --> 00:17:06,878
+of day three, once the market had
+
+281
+00:17:06,878 --> 00:17:10,837
+broken to the upside, it finished aggressively higher on the day.
+
+282
+00:17:10,839 --> 00:17:12,839
+Now, the trade setup is very simple.
+
+283
+00:17:12,839 --> 00:17:17,839
+What we're looking for is an example of single prints anomaly.
+
+284
+00:17:17,839 --> 00:17:23,839
+And the reason is that when the market leaves single prints as it breaks an inside day,
+
+285
+00:17:23,839 --> 00:17:29,840
+what we tend to find is that the market continues in a trend-like fashion with the trend.
+
+286
+00:17:29,840 --> 00:17:32,440
+As you can see, once the market
+
+287
+00:17:32,440 --> 00:17:35,411
+finally broke out of that previous day's high,
+
+288
+00:17:35,411 --> 00:17:42,839
+once it broke out of the previous day's high, we left a large amount of untraded area on the breakout.
+
+289
+00:17:42,840 --> 00:17:48,840
+The fact that there's an untraded area once we break out, this suggests there is a high probability for extension.
+
+290
+00:17:48,840 --> 00:17:51,840
+Now, let's take a look at the second profile.
+
+291
+00:17:51,840 --> 00:17:55,840
+As you can see, we've opened this up so we can see each one of the auctions.
+
+292
+00:17:55,840 --> 00:17:58,640
+The first thing to note is that
+
+293
+00:17:58,640 --> 00:18:00,640
+what we can see is
+
+294
+00:18:00,640 --> 00:18:05,840
+prior to the break, the market had a relatively tight, low volatility range.
+
+295
+00:18:05,840 --> 00:18:10,840
+In other words, what this was suggesting was that the market wasn't yet ready to break out.
+
+296
+00:18:10,840 --> 00:18:11,965
+Note, however, once
+
+297
+00:18:11,965 --> 00:18:14,590
+we break out, how the ranges of
+
+298
+00:18:14,590 --> 00:18:16,840
+each individual auction become a little
+
+299
+00:18:16,840 --> 00:18:19,840
+bit larger, suggesting more volatility in the auction.
+
+300
+00:18:19,840 --> 00:18:23,268
+This is the first early clue that we
+
+301
+00:18:23,268 --> 00:18:25,839
+shouldn't be going against the trend,
+
+302
+00:18:25,839 --> 00:18:28,839
+but instead be looking for continuation-type plays.
+
+303
+00:18:28,840 --> 00:18:30,840
+Now, the trade is simple.
+
+304
+00:18:30,840 --> 00:18:36,840
+What we're looking for is any sort of one confirmation that the market is going to leave an untraded area
+
+305
+00:18:36,840 --> 00:18:37,840
+or single prints.
+
+306
+00:18:37,840 --> 00:18:42,840
+Once it does this and confirms this, we then want to look to get with the trend.
+
+307
+00:18:42,840 --> 00:18:45,240
+Now, in the strategy, you can
+
+308
+00:18:45,240 --> 00:18:47,640
+see that we had two, we
+
+309
+00:18:47,640 --> 00:18:52,840
+had three different timeframe pricings or three half an hour distributions or auctions
+
+310
+00:18:52,840 --> 00:18:58,840
+until we came back and retested and confirmed that that area was no longer going to be traded.
+
+311
+00:18:58,840 --> 00:19:05,840
+Once we then took out the higher value, that auction that retested the breakpoint, the market never looked back.
+
+312
+00:19:05,840 --> 00:19:06,840
+It's very simple.
+
+313
+00:19:06,840 --> 00:19:09,622
+The trade strategy is to get long on
+
+314
+00:19:09,622 --> 00:19:11,361
+that retest so long as
+
+315
+00:19:11,361 --> 00:19:14,839
+the single prints hold or the low volume anomaly holds.
+
+316
+00:19:14,840 --> 00:19:16,840
+We then look for a continuation-type
+
+317
+00:19:16,840 --> 00:19:21,840
+pattern and only get out of this trade once the market suggests we do so.
+
+318
+00:19:21,840 --> 00:19:26,840
+As you can see, this is a very, very high risk-reward-type trade.
+
+319
+00:19:26,840 --> 00:19:30,840
+More importantly, we're going with momentum and with the trend,
+
+320
+00:19:30,840 --> 00:19:32,554
+and we're merely leaning on the
+
+321
+00:19:32,554 --> 00:19:36,839
+fact that the market leaves a set of single prints for us to get involved.
+
+322
+00:19:36,840 --> 00:19:39,840
+I hope you've enjoyed this trade setup.
+
+323
+00:19:39,840 --> 00:19:44,570
+Choosing your volume profiling software provider.
+
+324
+00:19:44,570 --> 00:19:47,570
+Now, there's loads of options out there
+
+325
+00:19:47,570 --> 00:19:50,178
+with regards to choosing your volume profile vendor.
+
+326
+00:19:50,178 --> 00:19:53,438
+What I would say, the important thing to determine is
+
+327
+00:19:53,438 --> 00:19:56,698
+what it is that you need, what it is that's
+
+328
+00:19:56,698 --> 00:20:02,567
+going to provide value to you as a tool, and then look at what the relative prices are.
+
+329
+00:20:02,570 --> 00:20:05,309
+So what I'm going to provide you
+
+330
+00:20:05,309 --> 00:20:08,048
+with is a basic five options that
+
+331
+00:20:08,048 --> 00:20:11,569
+you could pick from to use different volume profiles.
+
+332
+00:20:11,570 --> 00:20:14,070
+What I've done is I've broken it
+
+333
+00:20:14,070 --> 00:20:16,927
+down into six different key characteristics that I
+
+334
+00:20:16,927 --> 00:20:19,427
+think are important for any trader when
+
+335
+00:20:19,427 --> 00:20:21,569
+looking for a volume profile software.
+
+336
+00:20:21,570 --> 00:20:23,570
+The first is ease of use.
+
+337
+00:20:23,570 --> 00:20:26,427
+Now, as you can see, I've
+
+338
+00:20:26,427 --> 00:20:29,284
+done it in stars. Five stars
+
+339
+00:20:29,284 --> 00:20:32,141
+signals very easy to use, very
+
+340
+00:20:32,141 --> 00:20:33,569
+simplistic, very straightforward.
+
+341
+00:20:33,570 --> 00:20:40,570
+Whereas one star or zero stars means extremely difficult or not easy at all.
+
+342
+00:20:40,570 --> 00:20:47,570
+As you can see, trading technologies is by far one of the easiest charting packages to use.
+
+343
+00:20:47,570 --> 00:20:49,570
+We then have Sierra charts,
+
+344
+00:20:49,570 --> 00:20:50,570
+market delta charts,
+
+345
+00:20:50,570 --> 00:20:54,570
+CQG, and Investor RT.
+
+346
+00:20:54,570 --> 00:20:57,570
+We then move on to data feed reliability.
+
+347
+00:20:57,570 --> 00:21:01,570
+So crucial, guys. Do not go cheap on data feed reliability.
+
+348
+00:21:01,570 --> 00:21:05,125
+And the reason is when it comes to
+
+349
+00:21:05,125 --> 00:21:08,680
+looking at particularly volume and specific, very important
+
+350
+00:21:08,680 --> 00:21:13,568
+trade setups, we need to ensure that our data is accurate.
+
+351
+00:21:13,570 --> 00:21:16,236
+We cannot afford to have inaccurate data as
+
+352
+00:21:16,236 --> 00:21:18,569
+we're going to be risking quite a
+
+353
+00:21:18,569 --> 00:21:21,569
+lot of dollars on taking various trade strategies on.
+
+354
+00:21:21,570 --> 00:21:26,570
+So make sure you don't cheap on the data feed reliability.
+
+355
+00:21:26,570 --> 00:21:31,570
+Again, as you can see, trading technologies gets a four.
+
+356
+00:21:31,570 --> 00:21:36,570
+We then see the likes of market delta and CQG that are extremely reliable.
+
+357
+00:21:36,570 --> 00:21:39,115
+The reason is both market delta uses
+
+358
+00:21:39,115 --> 00:21:41,296
+an external source so that it
+
+359
+00:21:41,296 --> 00:21:44,568
+will be, they use external source for their data.
+
+360
+00:21:44,570 --> 00:21:46,712
+And CQG, which is pretty
+
+361
+00:21:46,712 --> 00:21:49,712
+much the industry standard for traders, whilst
+
+362
+00:21:49,712 --> 00:21:53,569
+more expensive, it does have extremely reliable data feed.
+
+363
+00:21:53,570 --> 00:21:56,570
+In terms of cost effective, again, highly important.
+
+364
+00:21:56,570 --> 00:21:59,570
+If you're a starting trader, cost means everything.
+
+365
+00:21:59,570 --> 00:22:02,486
+If you're a more experienced trader and professional trader, then
+
+366
+00:22:02,486 --> 00:22:04,527
+cost isn't that important and you're better
+
+367
+00:22:04,527 --> 00:22:06,568
+off going with the more expensive products.
+
+368
+00:22:06,570 --> 00:22:12,570
+As you can see, in terms of cost effective, with trading technology, highly cost effective.
+
+369
+00:22:12,570 --> 00:22:18,570
+Sierra charts, highly cost effective with market delta and CQG being a little bit more expensive.
+
+370
+00:22:18,570 --> 00:22:26,570
+Again, as noted, CQG is the professional industry standard charting package and therefore it is far more expensive.
+
+371
+00:22:26,570 --> 00:22:29,570
+As you can see, also investor ROT relatively cheap.
+
+372
+00:22:29,570 --> 00:22:33,570
+In terms of functionality, we're talking about what can the product do?
+
+373
+00:22:33,570 --> 00:22:35,479
+What, how many, you know, types
+
+374
+00:22:35,479 --> 00:22:40,569
+of different tools can you use? How functional is the product to be able to use?
+
+375
+00:22:40,570 --> 00:22:45,570
+Again, as you can see, trading technologies does a 4 out of 5. Sierra charts a 3 out of 5.
+
+376
+00:22:45,570 --> 00:22:51,570
+Market delta and CQG, by far the most functional product options available.
+
+377
+00:22:51,570 --> 00:22:53,570
+Then, back testing ability.
+
+378
+00:22:53,570 --> 00:22:59,570
+This is quite important for predominantly traders that want to go into a more algorithmic systematic approach,
+
+379
+00:22:59,570 --> 00:23:05,570
+but it's also very important for us as traders when we want to back test our various strategies.
+
+380
+00:23:05,570 --> 00:23:07,940
+So again, it's highly crucial that you do
+
+381
+00:23:07,940 --> 00:23:10,014
+not go cheap on a product that
+
+382
+00:23:10,014 --> 00:23:13,569
+cannot back test because you will need this to develop your strategies.
+
+383
+00:23:13,570 --> 00:23:16,570
+So, as you can see, back testing ability,
+
+384
+00:23:16,570 --> 00:23:24,570
+trading technologies gets a 3, Sierra charts a 3, market delta a 4, CQG a 4, and investor ROT a 3.
+
+385
+00:23:24,570 --> 00:23:27,613
+Again, we can see the industry leader,
+
+386
+00:23:27,613 --> 00:23:30,656
+both CQG and market delta, whilst more
+
+387
+00:23:30,656 --> 00:23:34,569
+expensive, they do have incredibly good back testing abilities.
+
+388
+00:23:34,570 --> 00:23:38,570
+And then our last key characteristic is reliable front end execution.
+
+389
+00:23:38,570 --> 00:23:40,845
+Whilst this isn't so important for
+
+390
+00:23:40,845 --> 00:23:43,879
+this course, if you are looking to be
+
+391
+00:23:43,879 --> 00:23:49,568
+trading futures using a futures platform, again, this is something you might want to consider.
+
+392
+00:23:49,570 --> 00:23:54,570
+What I would say in terms of front end, trading technologies is the industry standard
+
+393
+00:23:54,570 --> 00:23:58,570
+or majority of professional traders do use trading technologies.
+
+394
+00:23:58,570 --> 00:24:02,570
+They have done so for many years and continue to do so.
+
+395
+00:24:02,570 --> 00:24:03,570
+And the reason is simple.
+
+396
+00:24:03,570 --> 00:24:08,570
+The front end software is extremely reliable. It's extremely good.
+
+397
+00:24:08,570 --> 00:24:10,236
+What we will say is
+
+398
+00:24:10,236 --> 00:24:12,569
+in terms of Sierra charts, they don't
+
+399
+00:24:12,569 --> 00:24:16,569
+have a known reliable front end execution software nor does investor ROT.
+
+400
+00:24:16,570 --> 00:24:22,570
+Market delta has a relatively new execution platform, so it's still really much in the testing phases
+
+401
+00:24:22,570 --> 00:24:23,570
+and CQG,
+
+402
+00:24:23,570 --> 00:24:27,070
+whilst they've had their platform for a few more years, they are
+
+403
+00:24:27,070 --> 00:24:30,570
+still very much an underdog when it comes to front end execution.
+
+404
+00:24:30,570 --> 00:24:32,792
+The most important thing to understand guys is
+
+405
+00:24:32,792 --> 00:24:35,014
+find out what you need, what is important
+
+406
+00:24:35,014 --> 00:24:40,569
+to your trading, what is not going to hold you back and what is not going to cost you money.
+
+407
+00:24:40,570 --> 00:24:53,620
+Welcome to this market delta charting overview.
+
+408
+00:24:53,620 --> 00:24:54,620
+Before we get started,
+
+409
+00:24:54,620 --> 00:24:59,620
+just note that this trial will last 28 days only.
+
+410
+00:24:59,620 --> 00:25:00,620
+With that in mind,
+
+411
+00:25:00,620 --> 00:25:03,620
+if you haven't already downloaded the software,
+
+412
+00:25:03,620 --> 00:25:05,620
+the link will be provided on the LMS system.
+
+413
+00:25:05,620 --> 00:25:06,620
+Once you've downloaded that,
+
+414
+00:25:06,620 --> 00:25:08,466
+do ensure you also download the setup file
+
+415
+00:25:08,466 --> 00:25:12,619
+so that you'll be able to see the exact setup that you can see in front of you.
+
+416
+00:25:12,620 --> 00:25:13,620
+Now,
+
+417
+00:25:13,620 --> 00:25:16,620
+some of the key things we're going to look at with this overview
+
+418
+00:25:16,620 --> 00:25:18,620
+will include volume profiles
+
+419
+00:25:18,620 --> 00:25:20,620
+to start off with, both full and split profiles.
+
+420
+00:25:20,620 --> 00:25:24,620
+We'll then also take a look at basic candlestick charts and some of the tools you can use
+
+421
+00:25:24,620 --> 00:25:27,620
+as well as then the basic footprint charts
+
+422
+00:25:27,620 --> 00:25:29,620
+and some of the tools you can use
+
+423
+00:25:29,620 --> 00:25:32,620
+as well as then the basic footprint charts
+
+424
+00:25:32,620 --> 00:25:34,620
+and some of the tools you can use
+
+425
+00:25:34,620 --> 00:25:36,620
+as well as then the basic footprint charts.
+
+426
+00:25:36,620 --> 00:25:38,620
+Now, let's get started
+
+427
+00:25:38,620 --> 00:25:43,620
+and as you can see on the left side we have what we call a traditional volume market profile.
+
+428
+00:25:43,620 --> 00:25:45,175
+Now as you can see you
+
+429
+00:25:45,175 --> 00:25:46,730
+can open and expand the page
+
+430
+00:25:46,730 --> 00:25:50,618
+and some of the features you'll be able to do with this include the following.
+
+431
+00:25:50,620 --> 00:25:55,620
+You can merely scroll up and down, left and right across to view patterns that have passed.
+
+432
+00:25:55,620 --> 00:25:59,620
+You can then also right click on the profile and add splits.
+
+433
+00:25:59,620 --> 00:26:03,620
+This will allow you to see the individual auctions.
+
+434
+00:26:03,620 --> 00:26:07,620
+You can then right click again and remove splits.
+
+435
+00:26:07,620 --> 00:26:13,620
+If you just want to see various auctions that have taken place across at some point during the day
+
+436
+00:26:13,620 --> 00:26:15,620
+you can click on the letter
+
+437
+00:26:15,620 --> 00:26:19,620
+which you want to separate from the rest of the profile.
+
+438
+00:26:19,620 --> 00:26:25,620
+This will then separate all letters that come and occur after the letter you've separated.
+
+439
+00:26:25,620 --> 00:26:30,620
+Note, if you want to remove this again simply right click and remove splits.
+
+440
+00:26:30,620 --> 00:26:36,620
+Now, you would have noticed that the scale on the right is not set to show each individual price.
+
+441
+00:26:36,620 --> 00:26:40,620
+You can adjust this so that you can see all the available information.
+
+442
+00:26:40,620 --> 00:26:45,620
+Merely just click on the left scroll up to get to the
+
+443
+00:26:45,620 --> 00:26:47,334
+to go the one way and
+
+444
+00:26:47,334 --> 00:26:49,048
+then scroll down to go the
+
+445
+00:26:49,048 --> 00:26:51,619
+other way and make your profile smaller and larger.
+
+446
+00:26:51,620 --> 00:26:52,786
+Now note, if you
+
+447
+00:26:52,786 --> 00:26:54,536
+want to get a simple line
+
+448
+00:26:54,536 --> 00:26:58,619
+you just click on the price and this will have a pop up line.
+
+449
+00:26:58,620 --> 00:27:04,620
+You can then you know find the location you want to put that line and simply click on that price.
+
+450
+00:27:04,620 --> 00:27:09,620
+Now, it's important to be able to change the colors of these prices
+
+451
+00:27:09,620 --> 00:27:15,620
+and so to do that you right click on the line and you go and set the
+
+452
+00:27:15,620 --> 00:27:16,584
+horizontal line color.
+
+453
+00:27:16,584 --> 00:27:19,476
+Now, the reason it's important to be able to
+
+454
+00:27:19,476 --> 00:27:22,047
+set different line colors is so that you
+
+455
+00:27:22,047 --> 00:27:24,618
+can visually see when something important is approaching.
+
+456
+00:27:24,620 --> 00:27:29,620
+Now, I tend to have a basic four color set and that would include red lines
+
+457
+00:27:29,620 --> 00:27:33,620
+orange lines when I want to identify value area high and lows.
+
+458
+00:27:33,620 --> 00:27:38,620
+I will then have pink lines in order to identify weekly highs and lows
+
+459
+00:27:38,620 --> 00:27:45,620
+and lastly I will have blue lines to identify various tail single prints that are left
+
+460
+00:27:45,620 --> 00:27:49,620
+in the profile as you can see with a Y print in this example.
+
+461
+00:27:49,620 --> 00:27:55,620
+So that's just some of the basic color lines that I would utilize in my volume profiles.
+
+462
+00:27:55,620 --> 00:27:58,620
+Now that we've spoken about the close profile
+
+463
+00:27:58,620 --> 00:28:01,620
+as you can see in your second set of profiles
+
+464
+00:28:01,620 --> 00:28:03,620
+those are your open profiles.
+
+465
+00:28:03,620 --> 00:28:10,620
+So, again note that just shows us the individual auctions that have taken place over the period of a day.
+
+466
+00:28:10,620 --> 00:28:15,620
+Now, as you can see in the top of the chart you'll see that
+
+467
+00:28:15,620 --> 00:28:17,620
+you have four different markets here.
+
+468
+00:28:17,620 --> 00:28:24,620
+Those are the four markets that you'll be required to find examples of for to include into your playbook.
+
+469
+00:28:24,620 --> 00:28:31,620
+Again, simply just click on it and it will take you to your playbook.
+
+470
+00:28:31,620 --> 00:28:36,620
+So that's the basics with regards to the volume profiles.
+
+471
+00:28:36,620 --> 00:28:39,620
+Let's have a look at the candlestick chart now.
+
+472
+00:28:39,620 --> 00:28:45,620
+Again, we can expand it, we can make it smaller and larger, we can scroll left and right.
+
+473
+00:28:45,620 --> 00:28:49,620
+Now, first things first, if you want any specific tools
+
+474
+00:28:49,620 --> 00:28:51,620
+simply right click and add a study.
+
+475
+00:28:51,620 --> 00:28:59,620
+There you can find Bollinger Bands, Average to Range, Volume, Moving Averages all the same tools that you'll need.
+
+476
+00:28:59,620 --> 00:29:03,620
+However, note the purpose of this course is volume profiling.
+
+477
+00:29:03,620 --> 00:29:06,620
+It's not to give you a whole range of different other tools.
+
+478
+00:29:06,620 --> 00:29:11,620
+So don't be tempted to suddenly start populating your charts with various types of tools.
+
+479
+00:29:11,620 --> 00:29:15,620
+Focus on the volume profiling and the strategies that I have provided
+
+480
+00:29:15,620 --> 00:29:16,654
+to you. Again,
+
+481
+00:29:16,654 --> 00:29:19,067
+if you do want to however, you
+
+482
+00:29:19,067 --> 00:29:21,480
+know, have a look at a bit
+
+483
+00:29:21,480 --> 00:29:25,617
+of a shorter term timeframe to see how a strategy played out
+
+484
+00:29:25,620 --> 00:29:31,620
+on the shorter term timeframe and adjust it according to the timeframe you want to see.
+
+485
+00:29:31,620 --> 00:29:34,620
+That is then the basic candlestick chart.
+
+486
+00:29:34,620 --> 00:29:36,620
+Note this little arrow in the bottom right.
+
+487
+00:29:36,620 --> 00:29:40,620
+This will simply move the chart to the latest piece of information.
+
+488
+00:29:40,620 --> 00:29:45,620
+This can be quite useful particularly if you are doing some back testing and you're scrolling
+
+489
+00:29:45,620 --> 00:29:47,620
+all the way left all the way left.
+
+490
+00:29:47,620 --> 00:29:53,620
+You do sometimes want to quickly be able to come straight back to where the market is currently trading.
+
+491
+00:29:53,620 --> 00:29:55,620
+Then with regards to the footprint chart.
+
+492
+00:29:55,620 --> 00:30:00,620
+This is not imperative to have or to understand for the volume profiling course
+
+493
+00:30:00,620 --> 00:30:03,620
+but I've included it because it's a very popular tool
+
+494
+00:30:03,620 --> 00:30:08,620
+to be able to see the interaction between buyers and sellers at those key points.
+
+495
+00:30:08,620 --> 00:30:14,620
+So note, if the strategy talks about 163.60 being an important area in the market
+
+496
+00:30:14,620 --> 00:30:15,620
+go and have a look
+
+497
+00:30:15,620 --> 00:30:19,620
+at how the buyers and sellers interact around that reference point.
+
+498
+00:30:19,620 --> 00:30:26,620
+This will allow you to start to develop basic understanding of price response in the price ladder.
+
+499
+00:30:26,620 --> 00:30:33,620
+So that is the basic tools you're going to be able to utilize with this charting package.
+
+500
+00:30:33,620 --> 00:30:36,620
+Now let's go and actually do an example
+
+501
+00:30:36,620 --> 00:30:37,620
+find an example
+
+502
+00:30:37,620 --> 00:30:40,620
+copy that picture so that you get a basic understanding
+
+503
+00:30:40,620 --> 00:30:45,620
+of how you can utilize this tool for your playbook and going further forward.
+
+504
+00:30:45,620 --> 00:30:49,620
+So in the example we're going to look at the German Bund.
+
+505
+00:30:49,620 --> 00:30:54,620
+Now note, we spoke about a strategy where we have a break of a consolidation.
+
+506
+00:30:54,620 --> 00:30:58,620
+So take a look for example what we've seen here.
+
+507
+00:30:58,620 --> 00:31:00,620
+We had a consolidated inside day.
+
+508
+00:31:00,620 --> 00:31:06,620
+The market sat confined within the previous day's range within the previous day's value area.
+
+509
+00:31:06,620 --> 00:31:12,620
+We then opened and the market broke below the previous day and extended upon the range.
+
+510
+00:31:12,620 --> 00:31:15,620
+Now what we want to point out is we want to be able
+
+511
+00:31:15,620 --> 00:31:17,397
+to add some splits and go
+
+512
+00:31:17,397 --> 00:31:19,767
+and view how the market actually did what
+
+513
+00:31:19,767 --> 00:31:23,618
+it did and also look at some of the potential shifts in volatility.
+
+514
+00:31:23,620 --> 00:31:26,620
+Once you found a nice snipping tool,
+
+515
+00:31:26,620 --> 00:31:29,620
+snip the part of the chart you wish to add to your playbook,
+
+516
+00:31:29,620 --> 00:31:34,620
+simply file save as onto your desktop and add it into your playbook
+
+517
+00:31:34,620 --> 00:31:36,620
+as explained previously.
+
+518
+00:31:36,620 --> 00:31:41,620
+That's the basics of how you would utilize this market profiling tool.
+
+519
+00:31:41,620 --> 00:31:44,620
+Remember guys, ensure that you keep this simple.
+
+520
+00:31:44,620 --> 00:31:47,620
+Don't start over complicating it by adding
+
+521
+00:31:47,620 --> 00:31:51,620
+all sorts of various tools and various other interpretations to it.
+
+522
+00:31:51,620 --> 00:31:53,620
+You're simply going to complex this.
+
+523
+00:31:53,620 --> 00:31:55,620
+To finish off, a few other things.
+
+524
+00:31:55,620 --> 00:31:57,620
+Make sure you save.
+
+525
+00:31:57,620 --> 00:32:00,620
+Always save your charts in the top right here.
+
+526
+00:32:00,620 --> 00:32:02,620
+You can see the save button.
+
+527
+00:32:02,620 --> 00:32:07,620
+Also if you're struggling to find something or struggling to interpret something,
+
+528
+00:32:07,620 --> 00:32:10,620
+the helpful support menu, they're incredibly good.
+
+529
+00:32:10,620 --> 00:32:13,620
+You merely click on the support and you go to the live chat
+
+530
+00:32:13,620 --> 00:32:17,620
+and within a couple of seconds you will be able to talk to one of their very
+
+531
+00:32:17,620 --> 00:32:19,620
+helpful technical staff.
+
+532
+00:32:19,620 --> 00:32:21,620
+I hope this has been helpful for you.
+
+533
+00:32:21,620 --> 00:32:31,040
+Good luck and enjoy the charting package.
+
+534
+00:32:31,040 --> 00:32:33,040
+Welcome to part four summary.
+
+535
+00:32:33,040 --> 00:32:37,040
+In part four we spoke about four key elements and the first thing we spoke about
+
+536
+00:32:37,040 --> 00:32:39,040
+was that keyword anomalies.
+
+537
+00:32:39,040 --> 00:32:43,040
+We identified what a few types of anomalies you can get.
+
+538
+00:32:43,040 --> 00:32:47,040
+Now remember an anomaly is anything that sticks out from a normal distribution.
+
+539
+00:32:47,040 --> 00:32:50,040
+So in theory prices should distribute normally.
+
+540
+00:32:50,040 --> 00:32:53,040
+If they don't distribute normally and anything that
+
+541
+00:32:53,040 --> 00:32:55,040
+stands out like a sore thumb,
+
+542
+00:32:55,040 --> 00:32:57,040
+that's a normal distribution.
+
+543
+00:32:57,040 --> 00:33:00,040
+So in theory prices should distribute normally.
+
+544
+00:33:00,040 --> 00:33:02,040
+If they don't distribute normally
+
+545
+00:33:02,040 --> 00:33:04,040
+it's called an anomaly.
+
+546
+00:33:04,040 --> 00:33:08,040
+Now the reason we talk about these anomalies a lot and highlight them so much
+
+547
+00:33:08,040 --> 00:33:11,165
+is because they give us not just key understanding of
+
+548
+00:33:11,165 --> 00:33:13,665
+the markets or key sort of ideas and
+
+549
+00:33:13,665 --> 00:33:18,040
+observations about the market but we can develop strategies based on those very anomalies.
+
+550
+00:33:18,040 --> 00:33:22,040
+So the first thing to identify was some basic types of anomalies.
+
+551
+00:33:22,040 --> 00:33:25,040
+Now we spoke about for instance a low volume area.
+
+552
+00:33:25,040 --> 00:33:28,040
+We spoke about a bad high and a bad low.
+
+553
+00:33:28,040 --> 00:33:31,040
+We spoke about a low volume area.
+
+554
+00:33:31,040 --> 00:33:34,040
+And we spoke about a non-symmetrical distribution.
+
+555
+00:33:34,040 --> 00:33:38,040
+Now again guys this is very much the basic types of anomalies.
+
+556
+00:33:38,040 --> 00:33:44,040
+As we get to part two and three we're going to go very extensively into these anomalies.
+
+557
+00:33:44,040 --> 00:33:48,040
+I'm going to explain to you what a lot of these anomalies mean
+
+558
+00:33:48,040 --> 00:33:52,040
+in terms of sort of who's in control of price but then
+
+559
+00:33:52,040 --> 00:33:55,040
+more importantly how we can utilize those
+
+560
+00:33:55,040 --> 00:33:58,040
+anomalies and take advantage of them.
+
+561
+00:33:58,040 --> 00:34:04,040
+An anomaly is a structure or a nice strategy that we can then lean on
+
+562
+00:34:04,040 --> 00:34:09,040
+and we have an obvious target that we need to target.
+
+563
+00:34:09,040 --> 00:34:12,040
+So let's take a look at an anomaly.
+
+564
+00:34:12,040 --> 00:34:15,040
+An anomaly is nothing more than maybe
+
+565
+00:34:15,040 --> 00:34:18,040
+someone's kind of lost their head
+
+566
+00:34:18,040 --> 00:34:23,040
+and they've gotten a little bit too aggressive on price and
+
+567
+00:34:23,040 --> 00:34:25,040
+they've created this anomaly.
+
+568
+00:34:25,040 --> 00:34:29,040
+Bang! You can take advantage of it.
+
+569
+00:34:29,040 --> 00:34:31,665
+It's an obvious target that we need
+
+570
+00:34:31,665 --> 00:34:34,290
+to take out so that's why we
+
+571
+00:34:34,290 --> 00:34:38,040
+spoke very briefly about the anomalies and what they mean.
+
+572
+00:34:38,040 --> 00:34:43,040
+Then just to draw you a little basic example of what an anomaly will look like
+
+573
+00:34:43,040 --> 00:34:46,040
+if I was to draw a low volume area
+
+574
+00:34:46,040 --> 00:34:49,040
+I'll take something like this for example.
+
+575
+00:34:49,040 --> 00:34:55,040
+So let's say we spent the first half of the day inside a nice normal distribution and
+
+576
+00:34:55,040 --> 00:35:00,040
+then in the afternoon suddenly we saw some little bit of an anomaly.
+
+577
+00:35:00,040 --> 00:35:09,040
+The problem with that is that the anomaly is not in the middle of the distribution
+
+578
+00:35:09,040 --> 00:35:14,040
+but in the middle of the distribution.
+
+579
+00:35:14,040 --> 00:35:17,040
+So it's pretty obvious
+
+580
+00:35:17,040 --> 00:35:25,040
+that the anomaly is in the middle of the distribution
+
+581
+00:35:25,040 --> 00:35:32,520
+and so untraded area where the market quickly moved away from will become titled a low volume area
+
+582
+00:35:32,520 --> 00:35:35,226
+and that will present various opportunity down the
+
+583
+00:35:35,226 --> 00:35:37,932
+line so that was the first example a
+
+584
+00:35:37,932 --> 00:35:41,992
+bad high or bad low is simply where the market you know
+
+585
+00:35:41,992 --> 00:35:53,157
+comes up to a high for instance it prints a tpo which is a time price opportunity or a letter for instance and we printed one letter x and then we went down
+
+586
+00:35:53,160 --> 00:35:55,894
+and we came back later on and we printed a
+
+587
+00:35:55,894 --> 00:35:58,081
+y maybe went back down and then we
+
+588
+00:35:58,081 --> 00:36:04,918
+printed a z so we printed what we like to call a triple top or a triple tpo so that was another type of anomaly
+
+589
+00:36:04,920 --> 00:36:07,984
+that we spoke about and then obviously a non-symmetrical distribution
+
+590
+00:36:07,984 --> 00:36:11,048
+so we know that we want our profiles to look
+
+591
+00:36:11,048 --> 00:36:13,499
+nice and normal if however we get a
+
+592
+00:36:13,499 --> 00:36:22,998
+distribution where the market kind of you know very thin at the bottom very thin at the bottom and then we kind of get a nice little bit of higher acceptance
+
+593
+00:36:23,160 --> 00:36:26,031
+we know that non-symmetry represents something to us
+
+594
+00:36:26,031 --> 00:36:28,902
+it tells us something about the market at
+
+595
+00:36:28,902 --> 00:36:36,439
+that present time so those were some of the anomalies we spoke about we then moved on and we started to
+
+596
+00:36:36,440 --> 00:36:39,050
+talk about the basic process of trading with
+
+597
+00:36:39,050 --> 00:36:41,660
+volume profiling now this is kind of the
+
+598
+00:36:41,660 --> 00:36:48,838
+key summary it's almost like a part one two three and four all in a nutshell and this is the crux of
+
+599
+00:36:48,840 --> 00:36:50,136
+where we're going to go to in module two and three is
+
+600
+00:36:50,136 --> 00:36:53,160
+now that i've given you the basic foundation of what we're going to do in module two and three is now that i've given you the basic foundation
+
+601
+00:36:53,160 --> 00:36:56,911
+of volume profiling now when we get to part two
+
+602
+00:36:56,911 --> 00:36:59,912
+and three we're going to start developing strategies
+
+603
+00:36:59,912 --> 00:37:05,539
+in a very specific manner and that manner was in a three-step type approach the
+
+604
+00:37:05,540 --> 00:37:10,729
+step one was to identify the key metrics
+
+605
+00:37:10,729 --> 00:37:15,918
+okay step two was we want to do
+
+606
+00:37:15,918 --> 00:37:21,107
+a objective and a subjective analysis and step
+
+607
+00:37:21,107 --> 00:37:35,378
+three was we want to identify the anomalies now by the end of module one you know what you should be able
+
+608
+00:37:35,380 --> 00:37:38,201
+to do is you should be able to do all
+
+609
+00:37:38,201 --> 00:37:41,022
+three of these things perfectly without thinking they should be
+
+610
+00:37:41,022 --> 00:37:43,843
+instinctive you should be able to take any kind of
+
+611
+00:37:43,843 --> 00:37:51,178
+a chart have a look at a chart and complete all three steps by completing all three of these steps you are creating the single you
+
+612
+00:37:51,180 --> 00:37:54,944
+know the foundation or the building blocks called process you're
+
+613
+00:37:54,944 --> 00:37:58,708
+developing a process to building strategy and by developing a
+
+614
+00:37:58,708 --> 00:38:02,472
+process to develop strategy you are ultimately building the one
+
+615
+00:38:02,472 --> 00:38:10,000
+thing we've spoken about which is edge so that's why we do this that's why we take a structured process
+
+616
+00:38:10,000 --> 00:38:16,380
+approach to building strategies anyways let's take a basic example so we would take an example
+
+617
+00:38:16,380 --> 00:38:18,757
+of say a one week distribution again we're
+
+618
+00:38:18,757 --> 00:38:21,134
+going to use this idea of you know
+
+619
+00:38:21,134 --> 00:38:23,511
+we distributed for a few days we accelerated
+
+620
+00:38:23,511 --> 00:38:26,779
+higher and then we distributed for a few more days now
+
+621
+00:38:26,940 --> 00:38:31,500
+step one would be to identify the key metrics so again we
+
+622
+00:38:31,500 --> 00:38:36,060
+would identify our high our low our open our close our range
+
+623
+00:38:36,060 --> 00:38:39,100
+our value area within our range our initial
+
+624
+00:38:39,100 --> 00:38:42,140
+balance any potential tails or anything like that
+
+625
+00:38:42,140 --> 00:38:47,840
+so that would be step one identifying the key metrics step two we would then
+
+626
+00:38:47,840 --> 00:38:51,678
+say let us be objective let us draw
+
+627
+00:38:51,678 --> 00:38:55,516
+two columns objective and subjective and let us
+
+628
+00:38:55,516 --> 00:38:59,354
+go and identify every thing that we want
+
+629
+00:38:59,354 --> 00:39:03,192
+to draw with what can be it can
+
+630
+00:39:03,192 --> 00:39:07,030
+be a function of how we doing this
+
+631
+00:39:07,030 --> 00:39:10,868
+I just want to compare our marketaminner we
+
+632
+00:39:10,868 --> 00:39:14,706
+can say compare we're doing this we're doing
+
+633
+00:39:14,706 --> 00:39:26,699
+this so we're talking about this chart and we're going to follow this chart and we're going to table the folks we were talking about
+
+634
+00:39:26,700 --> 00:39:29,521
+this week, or this day, or whatever had
+
+635
+00:39:29,521 --> 00:39:32,342
+occurred, looked relatively strong. It opened on the
+
+636
+00:39:32,342 --> 00:39:38,338
+low, it closed on the high. Buyers were in control throughout the entire session, okay? And that's
+
+637
+00:39:38,340 --> 00:39:42,140
+why we remain objective, because if we are objective, what
+
+638
+00:39:42,140 --> 00:39:45,180
+we can then do is we can lean
+
+639
+00:39:45,180 --> 00:39:51,640
+on that objectivity to sort of almost back up our ideas, or back up our subjective analysis.
+
+640
+00:39:51,640 --> 00:39:54,222
+So now, what would subjective analysis be? Let's
+
+641
+00:39:54,222 --> 00:39:56,804
+take an example. So again, let's utilize the
+
+642
+00:39:56,804 --> 00:40:03,259
+idea that we opened on the low, and we closed on the high. We call that a full-bodied candle. Now,
+
+643
+00:40:03,440 --> 00:40:06,271
+we know full-bodied candles, or sort of opening
+
+644
+00:40:06,271 --> 00:40:09,102
+on the high, or closing on the low,
+
+645
+00:40:09,102 --> 00:40:16,179
+shows a strength from the buyers, okay? Now, subjectively, we could say we're looking for some form of an extension
+
+646
+00:40:16,180 --> 00:40:17,985
+at some point in time. So that's subjective,
+
+647
+00:40:17,985 --> 00:40:19,790
+in other words, we've got this idea in
+
+648
+00:40:19,790 --> 00:40:21,595
+our head that there's strength in the low.
+
+649
+00:40:21,595 --> 00:40:23,400
+So now, subjectively, we could say we're looking
+
+650
+00:40:23,400 --> 00:40:25,205
+for coming from buyers because of how we
+
+651
+00:40:25,205 --> 00:40:30,620
+view the market and at some point we're going to see an extension now that's an opinion it's it's a bias I'm forming an
+
+652
+00:40:30,620 --> 00:40:33,692
+opinionated bias based on what I see okay
+
+653
+00:40:33,692 --> 00:40:36,764
+so it's important to understand the difference between
+
+654
+00:40:36,764 --> 00:40:40,220
+what is objectivity and what is subjectivity because when
+
+655
+00:40:40,220 --> 00:40:45,050
+the next week comes let's say for instance we take out that
+
+656
+00:40:45,050 --> 00:40:49,880
+high right we know that because of the objective points we've determined
+
+657
+00:40:49,880 --> 00:40:56,320
+right once we take out that high we can initiate longs looking for continuation right because
+
+658
+00:40:56,320 --> 00:40:59,812
+we've finally gotten that objective fact which is we've taken
+
+659
+00:40:59,812 --> 00:41:02,605
+out the previous the previous week's high or
+
+660
+00:41:02,605 --> 00:41:05,398
+the previous day's high and that objectivity gives
+
+661
+00:41:05,400 --> 00:41:08,424
+the subjective idea it's groundwork it's you
+
+662
+00:41:08,424 --> 00:41:11,016
+know it's the key elements to
+
+663
+00:41:11,016 --> 00:41:12,744
+being able to to
+
+664
+00:41:12,744 --> 00:41:18,360
+execute that trade okay and then the last step would be to identify
+
+665
+00:41:18,360 --> 00:41:20,240
+the anomaly so again we identify
+
+666
+00:41:20,240 --> 00:41:20,320
+the anomaly so again we identify the anomaly so again we identify the anomaly
+
+667
+00:41:20,320 --> 00:41:21,320
+the anomaly so again we identify the anomaly so again we identify the anomaly
+
+668
+00:41:21,320 --> 00:41:22,320
+the anomaly so again we identify the anomaly
+
+669
+00:41:22,320 --> 00:41:23,320
+the anomaly so again we identify the anomaly
+
+670
+00:41:23,320 --> 00:41:24,320
+the anomaly so again we identify the anomaly
+
+671
+00:41:24,320 --> 00:41:25,320
+the anomaly so again we identify the anomaly
+
+672
+00:41:25,320 --> 00:41:26,320
+the anomaly so again we identify the anomaly
+
+673
+00:41:26,320 --> 00:41:27,320
+the anomaly so again we identify the anomaly
+
+674
+00:41:27,320 --> 00:41:28,320
+the anomaly so again we identify the anomaly
+
+675
+00:41:28,320 --> 00:41:29,320
+the anomaly so again we identify the anomaly
+
+676
+00:41:29,320 --> 00:41:30,320
+the anomaly so again we identify the anomaly
+
+677
+00:41:30,320 --> 00:41:31,320
+the anomaly so again we identify the anomaly
+
+678
+00:41:31,320 --> 00:41:32,320
+the anomaly so again we identify the anomaly
+
+679
+00:41:32,320 --> 00:41:33,320
+the anomaly so again we identify the anomaly
+
+680
+00:41:33,320 --> 00:41:34,320
+the anomaly so again we identify the anomaly
+
+681
+00:41:34,320 --> 00:41:35,320
+the anomaly so again we identify the anomaly
+
+682
+00:41:35,320 --> 00:41:36,320
+the anomaly so again we identify the anomaly
+
+683
+00:41:36,320 --> 00:41:37,320
+the anomaly so again we identify the anomaly
+
+684
+00:41:37,320 --> 00:41:38,320
+the anomaly so again we identify the anomaly
+
+685
+00:41:38,320 --> 00:41:39,320
+the anomaly so again we identify the anomaly
+
+686
+00:41:39,320 --> 00:41:40,320
+the anomaly so again we identify the anomaly
+
+687
+00:41:40,320 --> 00:41:41,320
+the anomaly so again we identify the anomaly
+
+688
+00:41:41,320 --> 00:41:44,114
+aggressive buyers that stepped into the market as
+
+689
+00:41:44,114 --> 00:41:46,559
+the price was being advertised at a
+
+690
+00:41:46,559 --> 00:41:51,099
+discount so straight away we say well hello okay there's some key support
+
+691
+00:41:51,100 --> 00:41:52,934
+there some buyers some really
+
+692
+00:41:52,934 --> 00:41:55,502
+big influential buyers thought that this was
+
+693
+00:41:55,502 --> 00:41:57,703
+discount and they very quickly moved
+
+694
+00:41:57,703 --> 00:42:00,638
+the market away from there so what happens
+
+695
+00:42:00,640 --> 00:42:06,400
+when we retest that point remember we said in part two or three we said that a
+
+696
+00:42:06,400 --> 00:42:08,768
+tail is important for two reasons one
+
+697
+00:42:08,768 --> 00:42:11,136
+it shows us some strength it shows
+
+698
+00:42:11,136 --> 00:42:13,166
+us an observation but then equally
+
+699
+00:42:13,166 --> 00:42:22,639
+it becomes a key pivot when we return to it so when we take it out it's telling us a lot about the market nature all right and
+
+700
+00:42:22,640 --> 00:42:24,987
+that's why we identify the anomaly
+
+701
+00:42:24,987 --> 00:42:27,334
+so that's what we did then
+
+702
+00:42:27,334 --> 00:42:30,463
+in part four and in the second part
+
+703
+00:42:30,463 --> 00:42:42,199
+of part four we then moved on and I started talking to you about the providers that you can use now it's important that we deal with this and I
+
+704
+00:42:42,200 --> 00:42:46,100
+hope you guys got a good idea of what some of the options are available to you
+
+705
+00:42:46,100 --> 00:42:48,230
+I'm not going to go through it too
+
+706
+00:42:48,230 --> 00:42:50,360
+much the crux of it is all right
+
+707
+00:42:50,360 --> 00:42:52,490
+you're going to be getting a TT platform
+
+708
+00:42:52,490 --> 00:42:54,620
+and you're going to as you know by
+
+709
+00:42:54,620 --> 00:43:06,337
+now I've shown you how to set up that TT platform I've shown you how to set up your ladders and set up your profiles how to just adjust your profile so that you know you can extract the information you want to see
+
+710
+00:43:06,380 --> 00:43:09,077
+again this is not the only provider out
+
+711
+00:43:09,077 --> 00:43:11,774
+there but remember guys in the beginning of
+
+712
+00:43:11,774 --> 00:43:20,539
+your careers keep it simple don't look for something too complicated all right the less the less you know distractions you have on your charts the
+
+713
+00:43:20,540 --> 00:43:23,660
+more effective they'll become all right and then
+
+714
+00:43:23,660 --> 00:43:26,780
+obviously you know we've completed the part four
+
+715
+00:43:26,780 --> 00:43:36,140
+and I showed you how to set up you know everything on your TT and how to use your your demo all right guys
+
+716
+00:43:36,140 --> 00:43:36,250
+that's it for part four and I showed you how to set
+
+717
+00:43:36,250 --> 00:43:36,360
+up you know everything on your TT and how to use your your demo all right guys that's
+
+718
+00:43:36,360 --> 00:43:39,865
+a summary then of part four and that
+
+719
+00:43:39,865 --> 00:43:43,370
+concludes our module one so you know good
+
+720
+00:43:43,370 --> 00:43:46,875
+luck make sure you do that summary checker
+
+721
+00:43:46,875 --> 00:43:50,380
+make sure you able to analyze any kind
+
+722
+00:43:50,380 --> 00:44:05,717
+of a market with that three step process of identifying the key metrics doing a subjective objective analysis and identifying the profile anomalies good luck and I'll see you in module two congratulations on finishing
+
+723
+00:44:05,720 --> 00:44:09,041
+part four we're now going to test those
+
+724
+00:44:09,041 --> 00:44:12,362
+principles that you learnt in part four firstly
+
+725
+00:44:12,362 --> 00:44:21,079
+what are the three basic anomalies we find in volume profiling what are the basic steps to using volume profile good
+
+726
+00:44:21,080 --> 00:44:23,362
+luck well done I hope you
+
+727
+00:44:23,362 --> 00:44:25,644
+managed to answer all those questions
+
+728
+00:44:25,644 --> 00:44:31,729
+in the concept checker it's time to update your playbook again make sure you spend quite
+
+729
+00:44:31,730 --> 00:44:35,650
+a bit of time on this playbook entry as it's going to
+
+730
+00:44:35,650 --> 00:44:38,263
+summarize pretty much everything we've done up until
+
+731
+00:44:38,263 --> 00:44:40,549
+this point so answer the following questions
+
+732
+00:44:40,790 --> 00:44:45,461
+one using the profile provided identify all the anomalies to
+
+733
+00:44:45,461 --> 00:44:50,132
+annotate the basic strategy provided and find and add the
+
+734
+00:44:50,132 --> 00:44:53,869
+same setup to your playbook from the following
+
+735
+00:44:53,869 --> 00:45:00,409
+markets e-mini S&P 500 German bunds WTI oil and the euro dollar FX and
+
+736
+00:45:00,410 --> 00:45:03,235
+then lastly set up your demo account make
+
+737
+00:45:03,235 --> 00:45:06,060
+sure you some spend some time doing all
+
+738
+00:45:06,060 --> 00:45:08,885
+of this as when we start module two
+
+739
+00:45:08,885 --> 00:45:15,948
+we're going to be you're going to be expected to have understood everything you've learned in module one good luck
+
+740
+00:45:16,910 --> 00:45:20,888
+thank you very much thank you
+
+741
+00:45:20,888 --> 00:45:24,866
+well thank you President Powers provost
+
+742
+00:45:24,866 --> 00:45:28,844
+Fenves Deans members of the faculty
+
+743
+00:45:28,844 --> 00:45:32,822
+family and friends and most importantly
+
+744
+00:45:32,822 --> 00:45:37,463
+the class of 2014. it is it is
+
+745
+00:45:38,130 --> 00:45:45,630
+indeed an honor for me to be here tonight it's been almost 37 years to the day that I graduated
+
+746
+00:45:46,710 --> 00:46:20,150
+and my give marks to my family and to the University Marine Corps and for my notarized Pikana口 inuge al of the your interests and restaurants
+
+747
+00:46:20,150 --> 00:46:20,363
+yes please our very attempted days about that
+
+748
+00:46:20,363 --> 00:46:20,789
+day I remember I had a throbbing headache from a party the night before I remember
+
+749
+00:46:20,790 --> 00:46:24,630
+I will at least try to make it short.
+
+750
+00:46:24,630 --> 00:46:28,290
+So the university slogan is, what starts here changes the world.
+
+751
+00:46:28,290 --> 00:46:33,410
+Well, I've got to admit, I kind of like it. What starts here changes the world.
+
+752
+00:46:33,410 --> 00:46:39,990
+Tonight there are almost 8,000 students, or there are more than 8,000 students, graduated from UT.
+
+753
+00:46:39,990 --> 00:46:50,310
+So that great paragon of analytical rigor, ask.com, says that the average American will meet 10,000 people in their lifetime.
+
+754
+00:46:50,310 --> 00:46:52,650
+10,000 people, that's a lot of folks.
+
+755
+00:46:52,650 --> 00:46:58,754
+But if every one of you changed the lives of just 10 people, and each
+
+756
+00:46:58,754 --> 00:47:02,678
+one of those people changed the lives of another 10
+
+757
+00:47:02,678 --> 00:47:06,166
+people, and another 10, then in five generations, 125 years,
+
+758
+00:47:06,166 --> 00:47:11,398
+the class of 2014 will have changed the lives of 800 million people, 800 million
+
+759
+00:47:14,450 --> 00:47:20,270
+people. Think about it. Over twice the population of the United States.
+
+760
+00:47:20,270 --> 00:47:26,470
+Go one more generation, and you can change the entire population of the world, 8 billion people.
+
+761
+00:47:26,470 --> 00:47:32,650
+If you think it's hard to change the lives of 10 people, change their lives forever, you're wrong.
+
+762
+00:47:32,650 --> 00:47:35,810
+I saw it happen every day in Iraq and Afghanistan.
+
+763
+00:47:35,810 --> 00:47:39,810
+A young army officer makes a decision to go left instead of
+
+764
+00:47:39,810 --> 00:47:42,476
+right down a road in Baghdad, and the
+
+765
+00:47:42,476 --> 00:47:45,476
+10 soldiers with him are saved from a close-in ambush.
+
+766
+00:47:45,810 --> 00:47:50,036
+In Kandahar Province, Afghanistan, a non-commissioned officer from the female
+
+767
+00:47:50,036 --> 00:47:54,262
+engagement team, a female engagement team, senses that something isn't
+
+768
+00:47:54,262 --> 00:47:58,488
+right and directs the infantry platoon away from a 500-pound
+
+769
+00:47:58,488 --> 00:48:01,869
+IED, saving the lives of a dozen soldiers.
+
+770
+00:48:01,870 --> 00:48:06,690
+But if you think about it, not only were those soldiers saved
+
+771
+00:48:06,690 --> 00:48:09,903
+by the decisions of one person, but their
+
+772
+00:48:09,903 --> 00:48:15,928
+children were saved, and their children's children. Generations were saved by one decision, one person.
+
+773
+00:48:15,930 --> 00:48:18,810
+But changing the world can happen anywhere, and anyone can do it.
+
+774
+00:48:18,810 --> 00:48:21,853
+So what starts here can indeed change the world, but
+
+775
+00:48:21,853 --> 00:48:25,809
+the question is, what will the world look like after you change it?
+
+776
+00:48:25,810 --> 00:48:28,242
+Well, I'm confident that it will look much, much better,
+
+777
+00:48:28,242 --> 00:48:30,674
+but if you'll humor this old sailor for just a
+
+778
+00:48:30,674 --> 00:48:34,809
+moment, I have a few suggestions that might help you on your way to a better world.
+
+779
+00:48:34,810 --> 00:48:38,238
+And while these lessons were learned during my time in the military,
+
+780
+00:48:38,238 --> 00:48:42,809
+I can assure you that it matters not whether you ever served a day in uniform.
+
+781
+00:48:42,810 --> 00:48:48,030
+It matters not your gender, your ethnic or religious background, your origin, or your nationality.
+
+782
+00:48:48,030 --> 00:48:52,030
+It matters not your background, your orientation, or your social status.
+
+783
+00:48:52,030 --> 00:48:55,578
+Our struggles in this world are similar, and the lessons
+
+784
+00:48:55,578 --> 00:48:59,126
+to overcome those struggles and to move forward, changing ourselves
+
+785
+00:48:59,126 --> 00:49:03,029
+and changing the world around us, will apply equally to all.
+
+786
+00:49:03,030 --> 00:49:05,116
+I've been a Navy SEAL for 36
+
+787
+00:49:05,116 --> 00:49:07,550
+years, but it all began when I
+
+788
+00:49:07,550 --> 00:49:10,680
+left UT for basic SEAL training in Coronado, California.
+
+789
+00:49:11,030 --> 00:49:13,160
+Basic SEAL training is six months of
+
+790
+00:49:13,160 --> 00:49:18,029
+long, torturous runs in the soft sand, midnight swims in the cold water off San Diego.
+
+791
+00:49:18,030 --> 00:49:23,030
+Half-school courses, unending calisthenics, days without sleep, and always being cold, wet, and miserable.
+
+792
+00:49:23,030 --> 00:49:27,868
+It is six months of being constantly harassed by professionally
+
+793
+00:49:27,868 --> 00:49:32,706
+trained warriors who seek to find the weak of mind
+
+794
+00:49:32,706 --> 00:49:38,028
+and body and eliminate them from ever becoming a Navy SEAL.
+
+795
+00:49:38,030 --> 00:49:41,302
+But the training also seeks to find those
+
+796
+00:49:41,302 --> 00:49:47,029
+students who can lead in an environment of constant stress, chaos, failure, and hardships.
+
+797
+00:49:48,030 --> 00:49:53,030
+To me, basic SEAL training was a lifetime of challenges crammed into six months.
+
+798
+00:49:53,030 --> 00:49:55,722
+So here are the ten lessons I learned from basic
+
+799
+00:49:55,722 --> 00:49:57,875
+SEAL training that hopefully will be of value
+
+800
+00:49:57,875 --> 00:50:00,028
+to you as you move forward in life.
+
+801
+00:50:00,030 --> 00:50:02,780
+Every morning in SEAL training, my instructors, who
+
+802
+00:50:02,780 --> 00:50:05,186
+at the time were all Vietnam veterans,
+
+803
+00:50:05,186 --> 00:50:07,592
+would show up in my barracks room,
+
+804
+00:50:07,592 --> 00:50:11,029
+and the first thing they'd do was inspect my bed.
+
+805
+00:50:11,030 --> 00:50:14,172
+If you did it right, the corners would be square,
+
+806
+00:50:14,172 --> 00:50:16,686
+the covers would be pulled tight, the pillows
+
+807
+00:50:16,686 --> 00:50:22,028
+centered just under the headboard. And the extra blanket folded neatly at the foot of the rack.
+
+808
+00:50:22,030 --> 00:50:30,030
+It was a simple task, mundane at best, but every morning we were required to make our bed to perfection.
+
+809
+00:50:30,030 --> 00:50:32,590
+It seemed a little ridiculous at the time,
+
+810
+00:50:32,590 --> 00:50:35,150
+particularly in light of the fact that we
+
+811
+00:50:35,150 --> 00:50:38,030
+were aspiring to be real warriors, tough, battle-hardened SEALs.
+
+812
+00:50:38,030 --> 00:50:45,030
+But the wisdom of this simple act has been proven to me many times over.
+
+813
+00:50:45,030 --> 00:50:47,030
+If you make your bed every morning, you're not going to be able to sleep.
+
+814
+00:50:47,030 --> 00:50:50,030
+You will have accomplished the first task of the day.
+
+815
+00:50:50,030 --> 00:50:52,575
+It will give you a small sense of
+
+816
+00:50:52,575 --> 00:50:54,484
+pride, and it will encourage you
+
+817
+00:50:54,484 --> 00:50:57,029
+to do another task, and another, and another.
+
+818
+00:50:57,030 --> 00:51:02,030
+And by the end of the day, that one task completed will have turned into many tasks completed.
+
+819
+00:51:02,030 --> 00:51:07,030
+Making your bed will also reinforce the fact that the little things in life matter.
+
+820
+00:51:07,030 --> 00:51:12,030
+If you can't do the little things right, you'll never be able to do the big things right.
+
+821
+00:51:12,030 --> 00:51:13,848
+And if by chance you have a miserable day, you
+
+822
+00:51:13,848 --> 00:51:16,029
+will come home to a bed that is more important to you.
+
+823
+00:51:16,030 --> 00:51:21,310
+You will come home to a bed that is made, that you made.
+
+824
+00:51:21,310 --> 00:51:25,310
+And a made bed gives you encouragement that tomorrow will be better.
+
+825
+00:51:25,310 --> 00:51:29,310
+So if you want to change the world, start off by making your bed.
+
+826
+00:51:29,310 --> 00:51:37,040
+During SEAL training, the students are all broken down into boat crews.
+
+827
+00:51:37,040 --> 00:51:39,267
+Each crew is seven students, three on
+
+828
+00:51:39,267 --> 00:51:41,494
+each side of a small rubber boat,
+
+829
+00:51:41,494 --> 00:51:44,039
+and one coxswain to help guide the dinghy.
+
+830
+00:51:44,040 --> 00:51:45,424
+Every day, your boat crew forms
+
+831
+00:51:45,424 --> 00:51:47,500
+up on the beach and is instructed to get
+
+832
+00:51:47,500 --> 00:51:50,038
+through the surf zone and paddle several miles down the coast.
+
+833
+00:51:50,040 --> 00:51:53,477
+In the winter, the surf off San Diego can get
+
+834
+00:51:53,477 --> 00:51:56,227
+to be eight to ten feet high, and
+
+835
+00:51:56,227 --> 00:52:01,039
+it is exceedingly difficult to paddle through the plunging surf unless everyone digs in.
+
+836
+00:52:01,040 --> 00:52:06,040
+Every paddle must be synchronized to the stroke count of the coxswain.
+
+837
+00:52:06,040 --> 00:52:08,373
+Everyone must exert equal effort, or the
+
+838
+00:52:08,373 --> 00:52:13,039
+boat will turn against the wave and be unceremoniously dumped back on the beach.
+
+839
+00:52:13,040 --> 00:52:17,040
+For the boat to make it to its destination, everyone must paddle.
+
+840
+00:52:17,040 --> 00:52:20,040
+You can't change the world alone.
+
+841
+00:52:20,040 --> 00:52:22,040
+You will need some help.
+
+842
+00:52:22,040 --> 00:52:25,640
+And to truly get from your starting point to your
+
+843
+00:52:25,640 --> 00:52:27,800
+destination takes friends, colleagues, the goodwill
+
+844
+00:52:27,800 --> 00:52:31,040
+of strangers, and a strong coxswain to guide you.
+
+845
+00:52:31,040 --> 00:52:35,040
+If you want to change the world, find someone to help you paddle.
+
+846
+00:52:35,040 --> 00:52:44,320
+Over a few weeks of difficult training, my SEAL class, which started with 150 men, was down to just 42.
+
+847
+00:52:44,320 --> 00:52:47,320
+There are now six boat crews of seven men each.
+
+848
+00:52:47,320 --> 00:52:49,492
+I was in the boat with the
+
+849
+00:52:49,492 --> 00:52:51,974
+tall guys, but the best boat crew we
+
+850
+00:52:51,974 --> 00:52:56,318
+had was made up of the little guys, the munchkin crew, we called them.
+
+851
+00:52:56,320 --> 00:52:59,320
+No one was over five foot five.
+
+852
+00:52:59,320 --> 00:53:01,912
+The munchkin boat crew had one American
+
+853
+00:53:01,912 --> 00:53:04,504
+Indian, one African American, one Polish American,
+
+854
+00:53:04,504 --> 00:53:06,355
+one Greek American, one Italian
+
+855
+00:53:06,355 --> 00:53:09,317
+American, and two tough kids from the Midwest.
+
+856
+00:53:09,320 --> 00:53:14,320
+They out paddled, out ran, and out swam all the other boat crews.
+
+857
+00:53:14,320 --> 00:53:17,320
+The big men in the other boat crews would always make great progress.
+
+858
+00:53:17,320 --> 00:53:20,748
+The good natured fun of the tiny little
+
+859
+00:53:20,748 --> 00:53:24,176
+flippers the munchkins put on their tiny little
+
+860
+00:53:24,176 --> 00:53:26,318
+feet prior to every swim.
+
+861
+00:53:26,320 --> 00:53:29,653
+But somehow these little guys from every corner of the
+
+862
+00:53:29,653 --> 00:53:32,986
+nation and the world always had the last laugh, swimming
+
+863
+00:53:32,986 --> 00:53:35,652
+faster than everyone and reaching the shore long
+
+864
+00:53:35,652 --> 00:53:37,318
+before the rest of us.
+
+865
+00:53:37,320 --> 00:53:39,320
+SEAL training was a great equalizer.
+
+866
+00:53:39,320 --> 00:53:41,605
+Nothing mattered but your will to
+
+867
+00:53:41,605 --> 00:53:43,890
+succeed, not your color, not your
+
+868
+00:53:43,890 --> 00:53:46,175
+ethnic background, not your education, not
+
+869
+00:53:46,175 --> 00:53:47,317
+your social status.
+
+870
+00:53:47,320 --> 00:53:51,493
+If you want to change the world, measure a person by the
+
+871
+00:53:51,493 --> 00:53:55,319
+size of their heart, not by the size of their flippers.
+
+872
+00:53:55,320 --> 00:54:03,320
+Several times a week, the instructors would line up the class and do a uniform inspection. It was exceptionally thorough.
+
+873
+00:54:03,320 --> 00:54:11,320
+Your hat had to be perfectly starched, your uniform immaculately pressed, your belt buckle shiny and void of any smudges.
+
+874
+00:54:11,320 --> 00:54:14,630
+But it seemed that no matter how much effort you put into
+
+875
+00:54:14,630 --> 00:54:17,388
+starching your hat or pressing your uniform or polishing your
+
+876
+00:54:17,388 --> 00:54:19,319
+belt buckle, it just wasn't good enough.
+
+877
+00:54:19,320 --> 00:54:21,320
+The instructors would find something wrong.
+
+878
+00:54:21,320 --> 00:54:25,536
+For failing the uniform inspection, the student had to run, fully clothed,
+
+879
+00:54:25,536 --> 00:54:29,049
+into the surf zone, then wet from head to toe,
+
+880
+00:54:29,049 --> 00:54:31,157
+roll around on the beach until
+
+881
+00:54:31,157 --> 00:54:34,319
+every part of your body was covered with sand.
+
+882
+00:54:34,320 --> 00:54:37,716
+The effect was known as a sugar cookie.
+
+883
+00:54:37,716 --> 00:54:43,659
+You stayed in the uniform the rest of the day, cold, wet, and sandy.
+
+884
+00:54:43,660 --> 00:54:46,387
+There were many a student who just couldn't accept the
+
+885
+00:54:46,387 --> 00:54:49,114
+fact that all their efforts were in vain, that no
+
+886
+00:54:49,114 --> 00:54:52,659
+matter how hard they tried to get the uniform right, it went unappreciated.
+
+887
+00:54:52,660 --> 00:54:54,660
+Those students didn't make it through training.
+
+888
+00:54:54,660 --> 00:54:58,660
+Those students didn't understand the purpose of the drill.
+
+889
+00:54:58,660 --> 00:55:02,660
+You were never going to succeed. You were never going to have a perfect uniform.
+
+890
+00:55:02,660 --> 00:55:05,660
+The instructors weren't going to allow it.
+
+891
+00:55:05,660 --> 00:55:09,660
+Sometimes, no matter how well you prepare or how well you perform,
+
+892
+00:55:09,660 --> 00:55:15,660
+you still end up as a sugar cookie. It's just the way life is sometimes.
+
+893
+00:55:15,660 --> 00:55:21,660
+If you want to change the world, get over being a sugar cookie and keep moving forward.
+
+894
+00:55:21,660 --> 00:55:24,736
+Every day during training, you were challenged with
+
+895
+00:55:24,736 --> 00:55:27,812
+multiple physical events, long runs, long swims, obstacle
+
+896
+00:55:27,812 --> 00:55:31,658
+courses, hours of calisthenics, something designed to test your mettle.
+
+897
+00:55:31,660 --> 00:55:34,660
+Every event had standards, times you had to meet.
+
+898
+00:55:34,660 --> 00:55:37,066
+If you failed to meet those times,
+
+899
+00:55:37,066 --> 00:55:39,472
+those standards, your name was posted on
+
+900
+00:55:39,472 --> 00:55:45,659
+a list, and at the end of the day, those on the list were invited to a circus.
+
+901
+00:55:45,660 --> 00:55:47,296
+A circus was two hours of
+
+902
+00:55:47,296 --> 00:55:48,932
+additional calisthenics, designed to wear you
+
+903
+00:55:48,932 --> 00:55:51,659
+down, to break your spirit, to force you to quit.
+
+904
+00:55:51,660 --> 00:55:54,660
+No one wanted a circus.
+
+905
+00:55:54,660 --> 00:55:57,660
+A circus meant that for that day, you didn't measure up.
+
+906
+00:55:57,660 --> 00:55:58,932
+A circus meant more
+
+907
+00:55:58,932 --> 00:56:00,841
+fatigue, and more fatigue meant that
+
+908
+00:56:00,841 --> 00:56:02,750
+the following day would be more
+
+909
+00:56:02,750 --> 00:56:04,659
+difficult, and more circuses were likely.
+
+910
+00:56:04,660 --> 00:56:11,660
+But at some time during SEAL training, everyone, everyone made the circus list.
+
+911
+00:56:11,660 --> 00:56:17,660
+But an interesting thing happened to those who were constantly struggling. To those who were constantly on the list.
+
+912
+00:56:17,660 --> 00:56:24,660
+Over time, those students who did two hours of extra calisthenics got stronger and stronger.
+
+913
+00:56:24,660 --> 00:56:28,660
+The pain of the circuses built inner strength and physical resiliency.
+
+914
+00:56:28,660 --> 00:56:31,660
+Life is filled with circuses.
+
+915
+00:56:31,660 --> 00:56:33,660
+You will fail.
+
+916
+00:56:33,660 --> 00:56:35,660
+You will likely fail often.
+
+917
+00:56:35,660 --> 00:56:36,660
+It will be painful.
+
+918
+00:56:36,660 --> 00:56:38,660
+It will be discouraging.
+
+919
+00:56:38,660 --> 00:56:41,660
+At times, it will test you to your very core.
+
+920
+00:56:41,660 --> 00:56:46,660
+But if you don't, if you want to change the world, don't be afraid of the circuses.
+
+921
+00:56:46,660 --> 00:56:51,660
+At least twice a week, the trainees were required to run the obstacle course.
+
+922
+00:56:51,660 --> 00:56:53,887
+The obstacle course contained 25 obstacles, including a
+
+923
+00:56:53,887 --> 00:56:55,796
+10-foot wall, a 30-foot cargo net,
+
+924
+00:56:55,796 --> 00:56:58,341
+a barbed wire crawl, to name a few.
+
+925
+00:56:58,660 --> 00:57:02,660
+But the most challenging obstacle was the slide for life.
+
+926
+00:57:02,660 --> 00:57:07,660
+It had a three-level, 30-foot tower at one end, and a one-level tower at the other.
+
+927
+00:57:07,660 --> 00:57:10,660
+In between was a 200-foot long rope.
+
+928
+00:57:10,660 --> 00:57:12,993
+You had to climb the three-tiered tower,
+
+929
+00:57:12,993 --> 00:57:15,326
+and once at the top, you grabbed
+
+930
+00:57:15,326 --> 00:57:17,326
+the rope, swung underneath the rope,
+
+931
+00:57:17,326 --> 00:57:21,659
+and pulled yourself hand over hand until you got to the other end.
+
+932
+00:57:21,660 --> 00:57:26,660
+The record for the obstacle course had stood for years when my class began in 1977.
+
+933
+00:57:26,660 --> 00:57:28,660
+The record seemed unbeatable
+
+934
+00:57:28,660 --> 00:57:34,660
+until one day a student decided to go down the slide for life head first.
+
+935
+00:57:34,660 --> 00:57:38,660
+Instead of swinging his body underneath the rope and inching his way down,
+
+936
+00:57:38,660 --> 00:57:42,660
+he bravely mounted the top of the rope and thrust himself forward.
+
+937
+00:57:42,660 --> 00:57:47,660
+It was a dangerous move, seemingly foolish and fraught with risk.
+
+938
+00:57:47,660 --> 00:57:49,660
+Failure could mean injury and being dropped from the course.
+
+939
+00:57:49,660 --> 00:57:53,660
+Without hesitation, the student slid down the rope perilously fast.
+
+940
+00:57:53,660 --> 00:57:57,660
+Instead of several minutes, it only took him half that time.
+
+941
+00:57:57,660 --> 00:58:01,660
+And by the end of the course, he had broken the record.
+
+942
+00:58:01,660 --> 00:58:03,660
+If you want to change the world,
+
+943
+00:58:03,660 --> 00:58:08,910
+sometimes you have to slide down the obstacles head first.
+
+944
+00:58:08,910 --> 00:58:11,243
+During the land warfare phase of training, the
+
+945
+00:58:11,243 --> 00:58:13,284
+students are flown out to San Clemente
+
+946
+00:58:13,284 --> 00:58:15,909
+Island, which lies off the coast of San Diego.
+
+947
+00:58:15,910 --> 00:58:19,910
+The waters off San Clemente are a breeding ground for the great white sharks.
+
+948
+00:58:19,910 --> 00:58:23,910
+To pass SEAL training, there are a series of long swims that must be completed.
+
+949
+00:58:23,910 --> 00:58:25,910
+One is the night swim.
+
+950
+00:58:25,910 --> 00:58:28,364
+Before the swim, the instructors joyfully
+
+951
+00:58:28,364 --> 00:58:30,818
+brief the students on all the
+
+952
+00:58:30,818 --> 00:58:34,908
+species of sharks that inhabit the waters off San Clemente.
+
+953
+00:58:34,910 --> 00:58:36,814
+They assure you, however, that
+
+954
+00:58:36,814 --> 00:58:39,480
+no student has ever been eaten by
+
+955
+00:58:39,480 --> 00:58:42,908
+a shark, at least not that they can remember.
+
+956
+00:58:42,910 --> 00:58:50,910
+But you are also taught that if a shark begins to circle your position, stay on your ground.
+
+957
+00:58:50,910 --> 00:58:52,910
+Do not swim away.
+
+958
+00:58:52,910 --> 00:58:54,910
+Do not act afraid.
+
+959
+00:58:54,910 --> 00:58:57,168
+And if a shark, hungry for a
+
+960
+00:58:57,168 --> 00:58:59,426
+midnight snack, darts towards you, then summons
+
+961
+00:58:59,426 --> 00:59:01,361
+up all your strength and punch
+
+962
+00:59:01,361 --> 00:59:04,909
+him in the snout, and he will turn and swim away.
+
+963
+00:59:04,910 --> 00:59:07,910
+There are a lot of sharks in the world.
+
+964
+00:59:07,910 --> 00:59:11,910
+If you hope to complete the swim, you will have to deal with them.
+
+965
+00:59:12,910 --> 00:59:15,910
+So if you want to change the world,
+
+966
+00:59:15,910 --> 00:59:18,910
+don't back down from the sharks.
+
+967
+00:59:18,910 --> 00:59:23,910
+As Navy SEALs, one of our jobs is to conduct underwater attacks against enemy shipping.
+
+968
+00:59:23,910 --> 00:59:27,910
+We practice this technique extensively during training.
+
+969
+00:59:27,910 --> 00:59:31,510
+The ship attack mission is where a pair of SEAL divers is
+
+970
+00:59:31,510 --> 00:59:33,910
+dropped off outside an enemy harbor and then
+
+971
+00:59:33,910 --> 00:59:36,310
+swims well over two miles, underwater, using nothing
+
+972
+00:59:36,310 --> 00:59:39,910
+but a depth gauge and a compass to get to the target.
+
+973
+00:59:39,910 --> 00:59:47,910
+During the entire swim, even well below the surface, there is some light that comes through.
+
+974
+00:59:47,910 --> 00:59:51,910
+It is comforting to know that there is open water above you.
+
+975
+00:59:51,910 --> 00:59:57,910
+But as you approach the ship, which is tied to a pier, the light begins to fade.
+
+976
+00:59:57,910 --> 01:00:05,910
+The steel structure of the ship blocks the moonlight. It blocks the surrounding street lamps. It blocks all ambient light.
+
+977
+01:00:05,910 --> 01:00:08,502
+To be successful in your mission, you have to swim
+
+978
+01:00:08,502 --> 01:00:10,057
+under the ship and find the
+
+979
+01:00:10,057 --> 01:00:12,908
+keel, the center line, and the deepest part of the ship.
+
+980
+01:00:12,910 --> 01:00:14,910
+This is your objective.
+
+981
+01:00:14,910 --> 01:00:17,166
+But the keel is also the darkest part
+
+982
+01:00:17,166 --> 01:00:19,422
+of the ship, where you cannot see your
+
+983
+01:00:19,422 --> 01:00:21,678
+hand in front of your face, where the
+
+984
+01:00:21,678 --> 01:00:25,908
+noise from the ship's machinery is deafening, and where it gets to be easily disoriented,
+
+985
+01:00:25,910 --> 01:00:27,910
+and you can fail.
+
+986
+01:00:27,910 --> 01:00:32,710
+Every SEAL knows that under the keel, at that darkest moment of
+
+987
+01:00:32,710 --> 01:00:37,510
+the mission, is a time when you need to be calm, when
+
+988
+01:00:37,510 --> 01:00:42,310
+you must be calm, when you must be composed, when all your
+
+989
+01:00:42,310 --> 01:00:47,910
+tactical skills, your physical power, and your inner strength must be brought to bear.
+
+990
+01:00:47,910 --> 01:00:54,910
+If you want to change the world, you must be your very best in the darkest moments.
+
+991
+01:00:54,910 --> 01:00:57,910
+The ninth week of training is referred to as Hell Week.
+
+992
+01:00:57,910 --> 01:01:05,910
+It is six days of no sleep, constant physical and mental harassment, and one special day at the mud flats.
+
+993
+01:01:05,910 --> 01:01:09,660
+The mud flats are an area between San Diego and Tijuana where
+
+994
+01:01:09,660 --> 01:01:12,160
+the water runs off, and creates the Tijuana
+
+995
+01:01:12,160 --> 01:01:15,910
+sloughs, a swampy patch of terrain where the mud will engulf you.
+
+996
+01:01:15,910 --> 01:01:19,602
+It is on Wednesday of Hell Week that you paddle down to
+
+997
+01:01:19,602 --> 01:01:22,986
+the mud flats and spend the next 15 hours trying to survive
+
+998
+01:01:22,986 --> 01:01:27,601
+this freezing cold, the howling wind, and the incessant pressure to quit from the instructors.
+
+999
+01:01:27,910 --> 01:01:32,710
+As the sun began to set that Wednesday evening, my training class,
+
+1000
+01:01:32,710 --> 01:01:37,910
+having committed some egregious infraction of the rules, was ordered into the mud.
+
+1001
+01:01:37,910 --> 01:01:42,910
+The mud consumed each man until there was nothing visible but our heads.
+
+1002
+01:01:42,910 --> 01:01:47,910
+The instructors told us we could leave the mud if only five men would quit.
+
+1003
+01:01:47,910 --> 01:01:52,910
+Only five men, just five men, and we could get out of the oppressive cold.
+
+1004
+01:01:52,910 --> 01:01:56,910
+Looking around the mud flat, it was apparent that some students were about to give up.
+
+1005
+01:01:56,910 --> 01:02:03,910
+It was still over eight hours until the sun came up, eight more hours of bone-chilling cold.
+
+1006
+01:02:03,910 --> 01:02:10,910
+The chattering teeth and the shivering moans of the trainees were so loud, it was hard to hear anything.
+
+1007
+01:02:10,910 --> 01:02:17,910
+And then one voice began to echo through the night. One voice raised in song.
+
+1008
+01:02:17,910 --> 01:02:23,910
+The song was terribly out of tune, but sung with great enthusiasm.
+
+1009
+01:02:23,910 --> 01:02:29,910
+One voice became two, and two became three, and before long, everyone in the class was singing.
+
+1010
+01:02:29,910 --> 01:02:35,910
+The instructors threatened us with more time in the mud if we kept up the singing, but the singing persisted,
+
+1011
+01:02:35,910 --> 01:02:37,910
+and somehow the mud seemed a
+
+1012
+01:02:37,910 --> 01:02:39,910
+little warmer, and the wind a
+
+1013
+01:02:39,910 --> 01:02:42,910
+little tamer, and the dawn not so far away.
+
+1014
+01:02:42,910 --> 01:02:48,910
+If I have learned anything in my time traveling the world, it is the power of hope,
+
+1015
+01:02:48,910 --> 01:02:53,910
+the power of one person, a Washington, a Lincoln, King, Mandela,
+
+1016
+01:02:53,910 --> 01:03:00,910
+and even a young girl from Pakistan, Malala. One person can change the world by giving people hope.
+
+1017
+01:03:00,910 --> 01:03:05,910
+So if you want to change the world, start singing when you're up to your neck in mud.
+
+1018
+01:03:06,910 --> 01:03:09,576
+Finally, in SEAL training, there's a bell, a
+
+1019
+01:03:09,576 --> 01:03:11,576
+brass bell that hangs in the
+
+1020
+01:03:11,576 --> 01:03:14,909
+center of the compound for all the students to see.
+
+1021
+01:03:14,910 --> 01:03:20,910
+All you have to do to quit, all you have to do to quit, is ring the bell.
+
+1022
+01:03:20,910 --> 01:03:23,910
+Ring the bell, and you no longer have to wake up at 5 o'clock.
+
+1023
+01:03:23,910 --> 01:03:28,910
+Ring the bell, and you no longer have to be in the freezing cold swims.
+
+1024
+01:03:28,910 --> 01:03:30,695
+Ring the bell, and you
+
+1025
+01:03:30,695 --> 01:03:33,195
+no longer have to do the runs,
+
+1026
+01:03:33,195 --> 01:03:38,909
+the obstacle course, the PT, and you no longer have to endure the hardships of training.
+
+1027
+01:03:38,910 --> 01:03:41,910
+All you have to do is ring the bell to get out.
+
+1028
+01:03:41,910 --> 01:03:48,910
+If you want to change the world, don't ever, ever ring the bell.
+
+1029
+01:03:48,910 --> 01:03:50,743
+To the class of 2014, you
+
+1030
+01:03:50,743 --> 01:03:52,943
+are moments away from graduating, moments
+
+1031
+01:03:52,943 --> 01:03:55,143
+away from beginning your journey through
+
+1032
+01:03:55,143 --> 01:03:59,543
+life, moments away from starting to change the world for the better.
+
+1033
+01:03:59,910 --> 01:04:03,910
+It will not be easy, but you are the class of 2014,
+
+1034
+01:04:03,910 --> 01:04:07,910
+the class that can affect the lives of 800 million people in the next century.
+
+1035
+01:04:07,910 --> 01:04:09,910
+Start each day with a task completed.
+
+1036
+01:04:09,910 --> 01:04:11,910
+Find someone to help you through life.
+
+1037
+01:04:11,910 --> 01:04:13,910
+Respect everyone.
+
+1038
+01:04:13,910 --> 01:04:16,910
+Know that life is not fair and that you will fail often.
+
+1039
+01:04:16,910 --> 01:04:19,023
+But if you take some risks, step
+
+1040
+01:04:19,023 --> 01:04:21,136
+up when the times are the toughest,
+
+1041
+01:04:21,136 --> 01:04:22,947
+face down the bullies, lift up
+
+1042
+01:04:22,947 --> 01:04:25,362
+the downtrodden, and never, ever give up, if
+
+1043
+01:04:25,362 --> 01:04:32,909
+you do these things, the next generation and the generations that follow will live in a world far better than the one we have today.
+
+1044
+01:04:32,910 --> 01:04:38,910
+And what started here, will indeed have changed the world for the better.
+
+1045
+01:04:38,910 --> 01:04:40,910
+Thank you very much.
+
+1046
+01:04:40,910 --> 01:04:41,910
+Hook them horns.
+
+1047
+01:04:41,910 --> 01:04:45,830
+I really hope you enjoyed that video.
+
+1048
+01:04:45,830 --> 01:04:49,830
+It's so important that you can relate trading to something that's important to you.
+
+1049
+01:04:49,830 --> 01:04:51,682
+I'd like to go over a few
+
+1050
+01:04:51,682 --> 01:04:53,534
+of the key takeaways from that video
+
+1051
+01:04:53,534 --> 01:04:58,828
+and we can see how, you know, the Navy, we can relate trading to the Navy in so many ways.
+
+1052
+01:04:58,830 --> 01:05:05,830
+Personally, I like golf a lot and I found that you can relate golf to trading almost perfectly.
+
+1053
+01:05:06,830 --> 01:05:10,830
+But anyways, let's go through this video and see what some of the key takeaways were.
+
+1054
+01:05:10,830 --> 01:05:13,830
+Firstly, discipline every day.
+
+1055
+01:05:13,830 --> 01:05:16,830
+The General talks about starting by making your bet.
+
+1056
+01:05:16,830 --> 01:05:20,830
+Pay attention to the small things and accomplish them perfectly.
+
+1057
+01:05:20,830 --> 01:05:22,830
+So every morning when you get up,
+
+1058
+01:05:22,830 --> 01:05:27,830
+get up at the same time, start with the same routine, have discipline the minute you open your eyes.
+
+1059
+01:05:27,830 --> 01:05:32,830
+If you do that, it will become a habit, not just in your daily lives, but in your trading.
+
+1060
+01:05:32,830 --> 01:05:34,830
+Don't do it alone.
+
+1061
+01:05:34,830 --> 01:05:37,830
+Find those families, those friends, the community, the colleagues.
+
+1062
+01:05:37,830 --> 01:05:39,830
+That's what we are for, mentors.
+
+1063
+01:05:39,830 --> 01:05:42,375
+That's what the Axiom membership is all about,
+
+1064
+01:05:42,375 --> 01:05:44,284
+is being in a community of
+
+1065
+01:05:44,284 --> 01:05:46,829
+like-minded people going through similar things as you.
+
+1066
+01:05:46,830 --> 01:05:48,080
+If you can find these kind
+
+1067
+01:05:48,080 --> 01:05:48,913
+of people, hold on
+
+1068
+01:05:48,913 --> 01:05:49,746
+to them, don't let
+
+1069
+01:05:49,746 --> 01:05:51,829
+go of them, because this is going to be tough.
+
+1070
+01:05:51,830 --> 01:05:54,830
+You're going to need all the help you can get.
+
+1071
+01:05:54,830 --> 01:05:56,830
+Fair for all.
+
+1072
+01:05:56,830 --> 01:06:04,830
+Markets don't reward age, race, culture, intelligence, beauty, height, but they reward the size of your heart.
+
+1073
+01:06:04,830 --> 01:06:06,830
+That's an important thing to understand.
+
+1074
+01:06:06,830 --> 01:06:08,830
+You don't have to be smart to be a trader.
+
+1075
+01:06:08,830 --> 01:06:10,830
+You don't have to be a straight-A student.
+
+1076
+01:06:10,830 --> 01:06:14,830
+What you do have to do is have one hell of a passion and a love for what you're doing.
+
+1077
+01:06:14,830 --> 01:06:18,830
+If you have that, it's a vital ingredient to success in trading.
+
+1078
+01:06:18,830 --> 01:06:21,830
+How well you prepare determines how well you succeed.
+
+1079
+01:06:21,830 --> 01:06:23,830
+So crucial.
+
+1080
+01:06:23,830 --> 01:06:25,739
+I see so many guys coming in
+
+1081
+01:06:25,739 --> 01:06:27,648
+Monday morning. They haven't even prepared their
+
+1082
+01:06:27,648 --> 01:06:29,557
+thoughts over the weekend. They haven't even
+
+1083
+01:06:29,557 --> 01:06:32,829
+thought about what happened in the past week. They're all so unprepared.
+
+1084
+01:06:32,830 --> 01:06:34,115
+They start off on a Monday,
+
+1085
+01:06:34,115 --> 01:06:35,400
+they lose money, and they spend
+
+1086
+01:06:35,400 --> 01:06:38,828
+the rest of the week trying to get that back simply because they were not prepared.
+
+1087
+01:06:38,830 --> 01:06:40,830
+Make sure you're prepared.
+
+1088
+01:06:40,830 --> 01:06:42,830
+Being prepared is in your control.
+
+1089
+01:06:42,830 --> 01:06:45,830
+So make sure you're perfectly prepared.
+
+1090
+01:06:45,830 --> 01:06:48,830
+Constant hurdles that will push you to quit.
+
+1091
+01:06:48,830 --> 01:06:52,830
+Remember, guys, hurdles create mental strength. They create resilience.
+
+1092
+01:06:52,830 --> 01:06:57,830
+You will fail, and it is going to be painful. But that's the only way you're going to learn.
+
+1093
+01:06:57,830 --> 01:07:00,830
+The important thing is, are you willing to keep going?
+
+1094
+01:07:00,830 --> 01:07:02,830
+Are you willing to keep going?
+
+1095
+01:07:02,830 --> 01:07:04,830
+Are you willing to keep moving forward?
+
+1096
+01:07:04,830 --> 01:07:06,430
+You ask any successful trader.
+
+1097
+01:07:06,430 --> 01:07:08,670
+You ask me even. I've had some
+
+1098
+01:07:08,670 --> 01:07:12,830
+hurdles that I had to overcome in order to continue as a trader.
+
+1099
+01:07:12,830 --> 01:07:16,830
+There's been times I've wanted to pack it up. There's been times I've wanted to give it up.
+
+1100
+01:07:16,830 --> 01:07:21,830
+But at the end of the day, I know those experiences have made me that little bit stronger,
+
+1101
+01:07:21,830 --> 01:07:25,830
+that little bit wiser, and definitely more resilient.
+
+1102
+01:07:25,830 --> 01:07:27,115
+Number six. Take
+
+1103
+01:07:27,115 --> 01:07:28,400
+risks. Be daring.
+
+1104
+01:07:28,400 --> 01:07:30,971
+Go where no one wishes to
+
+1105
+01:07:30,971 --> 01:07:34,828
+venture. Because it's the only way you set records.
+
+1106
+01:07:34,830 --> 01:07:38,830
+There's too many out there that are happily just sitting in their comfort zone.
+
+1107
+01:07:38,830 --> 01:07:41,830
+Remember what we said right in the beginning of this module.
+
+1108
+01:07:41,830 --> 01:07:43,644
+The only time that you're ever going
+
+1109
+01:07:43,644 --> 01:07:45,458
+to see the magic and see where
+
+1110
+01:07:45,458 --> 01:07:48,828
+the fun things happen is when you step out of your comfort zone.
+
+1111
+01:07:48,830 --> 01:07:50,830
+Don't be afraid to take risks.
+
+1112
+01:07:50,830 --> 01:07:53,830
+Don't be afraid to venture where no one wants to venture.
+
+1113
+01:07:53,830 --> 01:07:55,258
+If you do take risks
+
+1114
+01:07:55,258 --> 01:07:57,258
+and you step out of your comfort
+
+1115
+01:07:57,258 --> 01:08:01,543
+zone, you will be part of the exclusive 5% that make it in the trading community.
+
+1116
+01:08:01,830 --> 01:08:04,830
+Don't fear the unknown.
+
+1117
+01:08:04,830 --> 01:08:08,830
+Just like the general says, it was scary knowing that there's sharks there.
+
+1118
+01:08:08,830 --> 01:08:11,830
+But what's the point of fearing the unknown?
+
+1119
+01:08:11,830 --> 01:08:13,830
+Embrace it head on.
+
+1120
+01:08:13,830 --> 01:08:15,830
+Always stand your ground.
+
+1121
+01:08:15,830 --> 01:08:19,830
+Don't be afraid in this industry to do what you think is right.
+
+1122
+01:08:19,830 --> 01:08:21,830
+Don't be afraid to go against the herd.
+
+1123
+01:08:21,830 --> 01:08:25,830
+Because it's that kind of thinking that's going to make you succeed.
+
+1124
+01:08:25,830 --> 01:08:30,830
+Remember, the herd is the same 95% of people that don't succeed in this job.
+
+1125
+01:08:30,830 --> 01:08:32,830
+So stand up against them.
+
+1126
+01:08:32,830 --> 01:08:34,830
+Don't fear the unknown.
+
+1127
+01:08:34,830 --> 01:08:39,830
+In order to succeed, you will be pushed to your darkest point.
+
+1128
+01:08:39,830 --> 01:08:41,830
+Face your fear.
+
+1129
+01:08:41,830 --> 01:08:46,830
+Be calm, composed, and rely on your skills and abilities.
+
+1130
+01:08:46,830 --> 01:08:52,830
+Be your very best in the darkest hour and you will achieve abundant success.
+
+1131
+01:08:52,830 --> 01:08:58,830
+Just like those sailors who were underwater, couldn't see a thing, didn't know what to expect.
+
+1132
+01:08:58,830 --> 01:09:01,830
+That is the darkest hour.
+
+1133
+01:09:01,830 --> 01:09:02,830
+What did they do?
+
+1134
+01:09:02,830 --> 01:09:03,830
+They didn't give up.
+
+1135
+01:09:03,830 --> 01:09:04,830
+They didn't pack it in.
+
+1136
+01:09:04,830 --> 01:09:07,830
+They continued to push on.
+
+1137
+01:09:07,830 --> 01:09:11,830
+It's when you're in the darkest hour, that's when you need to be your best.
+
+1138
+01:09:11,830 --> 01:09:15,830
+And you are going to be in many, many dark hours in this trading industry.
+
+1139
+01:09:15,830 --> 01:09:18,830
+The question is, how do you respond?
+
+1140
+01:09:18,830 --> 01:09:24,830
+Fatigue, frustration, doubt. Natural instincts.
+
+1141
+01:09:24,830 --> 01:09:28,830
+But if one person has overcome them, so can you.
+
+1142
+01:09:28,830 --> 01:09:31,830
+Believe in the power of hope and belief.
+
+1143
+01:09:31,830 --> 01:09:32,830
+One of the sayings I've got
+
+1144
+01:09:32,830 --> 01:09:36,205
+and one of the mantras I've got when I look up to
+
+1145
+01:09:36,205 --> 01:09:38,455
+the successful guys above me is I always
+
+1146
+01:09:38,455 --> 01:09:41,830
+say to myself, if he can do it, then so can I.
+
+1147
+01:09:41,830 --> 01:09:45,830
+There are a multitude of very successful traders.
+
+1148
+01:09:45,830 --> 01:09:47,830
+Some of them might be your mentors.
+
+1149
+01:09:47,830 --> 01:09:48,972
+Just think, if they
+
+1150
+01:09:48,972 --> 01:09:51,257
+could do it, if they could get through
+
+1151
+01:09:51,257 --> 01:09:53,542
+those tough times, whether it's the beginning of
+
+1152
+01:09:53,542 --> 01:09:59,827
+your career, whether it's a slump in your career, whether it's the best time of your career, they would have been there.
+
+1153
+01:09:59,830 --> 01:10:01,830
+They would have been beyond that as well.
+
+1154
+01:10:01,830 --> 01:10:03,830
+That means you can get beyond it too.
+
+1155
+01:10:03,830 --> 01:10:05,830
+So don't give up.
+
+1156
+01:10:05,830 --> 01:10:07,830
+Keep pushing forward.
+
+1157
+01:10:07,830 --> 01:10:10,830
+Believe in the power of hope and belief.
+
+1158
+01:10:10,830 --> 01:10:15,830
+Lastly, never, ever give up.
+
+1159
+01:10:15,830 --> 01:10:20,830
+Winners never quit. They just find another way to succeed.
+
+1160
+01:10:20,830 --> 01:10:22,830
+Let me repeat that.
+
+1161
+01:10:22,830 --> 01:10:29,830
+Never give up. Winners never quit. They just find another way to succeed.
+
+1162
+01:10:29,830 --> 01:10:34,830
+If you're struggling, if times are tough, remember this.
+
+1163
+01:10:34,830 --> 01:10:37,830
+Find the way to success.
+
+1164
+01:10:37,830 --> 01:10:38,830
+Good luck.
+
+1165
+01:10:38,830 --> 01:10:41,425
+Now that we've completed Module 1, I'd like
+
+1166
+01:10:41,425 --> 01:10:44,020
+to take a few moments just to
+
+1167
+01:10:44,020 --> 01:10:48,468
+go through what I feel are the rules to succeed in trading.
+
+1168
+01:10:48,840 --> 01:10:51,021
+First and foremost, if you take
+
+1169
+01:10:51,021 --> 01:10:53,202
+a look at the picture, you
+
+1170
+01:10:53,202 --> 01:10:56,838
+can see the man climbing the stairs towards the top.
+
+1171
+01:10:56,840 --> 01:11:05,840
+Now, whilst this is a simple analogy, it's crucial to understand these steps as these are steps of progression.
+
+1172
+01:11:05,840 --> 01:11:08,840
+Trading is like any skill set.
+
+1173
+01:11:08,840 --> 01:11:11,840
+It takes a long time to develop your skills.
+
+1174
+01:11:11,840 --> 01:11:18,840
+And you only develop those skills through trial and error, through making mistakes, through highs and lows.
+
+1175
+01:11:18,840 --> 01:11:22,840
+So please understand that trading is an investment.
+
+1176
+01:11:22,840 --> 01:11:25,840
+It's a long-term adventure that you're taking.
+
+1177
+01:11:25,840 --> 01:11:27,840
+You cannot expect to be making millions in this.
+
+1178
+01:11:27,840 --> 01:11:32,840
+Why? Well, because you have to go through the natural steps of progression.
+
+1179
+01:11:32,840 --> 01:11:37,840
+Every skill, you have to begin with the basics and constantly build upon those skills.
+
+1180
+01:11:37,840 --> 01:11:39,840
+And once you've built upon those skills,
+
+1181
+01:11:39,840 --> 01:11:45,840
+once you have the entire skill set and the knowledge and the understanding of the markets, then,
+
+1182
+01:11:45,840 --> 01:11:50,840
+when the market presents you with unique opportunities, you can fully capitalize on those opportunities.
+
+1183
+01:11:50,840 --> 01:11:53,840
+That is where you begin to become successful.
+
+1184
+01:11:53,840 --> 01:11:56,840
+That is where you become successful.
+
+1185
+01:11:56,840 --> 01:11:58,840
+That is where you become successful as a trader.
+
+1186
+01:11:58,840 --> 01:12:03,840
+So what are the four basic rules that I feel are required to succeed in trading?
+
+1187
+01:12:03,840 --> 01:12:07,840
+Number one, discipline. You need to have discipline.
+
+1188
+01:12:07,840 --> 01:12:12,840
+And that's not just discipline to, you know, be at your desk first thing in the morning.
+
+1189
+01:12:12,840 --> 01:12:13,840
+Discipline to do your prep.
+
+1190
+01:12:13,840 --> 01:12:16,840
+Discipline to do your aftermarket debriefing.
+
+1191
+01:12:16,840 --> 01:12:20,840
+Discipline to practice, you know, some of the trades that you're doing.
+
+1192
+01:12:20,840 --> 01:12:22,840
+Discipline to keep up to date.
+
+1193
+01:12:22,840 --> 01:12:24,840
+This is discipline in everything.
+
+1194
+01:12:24,840 --> 01:12:28,492
+If you're not disciplined in the basic elements of trading, in the
+
+1195
+01:12:28,492 --> 01:12:30,622
+elements that you can control, the market
+
+1196
+01:12:30,622 --> 01:12:31,839
+will not reward you.
+
+1197
+01:12:31,840 --> 01:12:33,840
+Not only will it not reward you,
+
+1198
+01:12:33,840 --> 01:12:35,840
+it will take from you.
+
+1199
+01:12:35,840 --> 01:12:39,840
+Make sure you discipline because you can control the discipline.
+
+1200
+01:12:39,840 --> 01:12:43,840
+Then, work ethic.
+
+1201
+01:12:43,840 --> 01:12:47,840
+Very, very crucial to make sure that you work hard.
+
+1202
+01:12:47,840 --> 01:12:49,840
+Trading is not going to be easy.
+
+1203
+01:12:49,840 --> 01:12:51,840
+It's not a nine to five job.
+
+1204
+01:12:51,840 --> 01:12:54,840
+It's not a job where you can just slack.
+
+1205
+01:12:54,840 --> 01:12:58,840
+You're the only one that determines how much you make in this job.
+
+1206
+01:12:58,840 --> 01:13:01,840
+You're the only one that determines how far you want to go in this job.
+
+1207
+01:13:01,840 --> 01:13:03,840
+There's no one to push you.
+
+1208
+01:13:03,840 --> 01:13:06,840
+So you have to be willing to work hard from day one.
+
+1209
+01:13:06,840 --> 01:13:08,760
+Whenever you feel yourself slacking, just
+
+1210
+01:13:08,760 --> 01:13:10,680
+remind yourself, if you're not working
+
+1211
+01:13:10,680 --> 01:13:13,240
+hard enough, there's always someone else that's willing
+
+1212
+01:13:13,240 --> 01:13:14,840
+to work harder than you.
+
+1213
+01:13:14,840 --> 01:13:18,840
+And they will take the opportunity that you should be taking.
+
+1214
+01:13:18,840 --> 01:13:20,840
+Patience.
+
+1215
+01:13:20,840 --> 01:13:22,840
+You have to be patient as a trader.
+
+1216
+01:13:22,840 --> 01:13:24,908
+Not just patient in your business,
+
+1217
+01:13:24,908 --> 01:13:26,976
+in your level of progression. Not
+
+1218
+01:13:26,976 --> 01:13:29,044
+just patient in how much you're
+
+1219
+01:13:29,044 --> 01:13:32,837
+learning. But patient to wait for the right kind of strategies
+
+1220
+01:13:32,840 --> 01:13:34,840
+that make sense to you as a trader.
+
+1221
+01:13:34,840 --> 01:13:38,840
+There's so many traders I see time and time again.
+
+1222
+01:13:38,840 --> 01:13:40,840
+They try and take on things that don't make sense to them.
+
+1223
+01:13:40,840 --> 01:13:43,840
+Instead of waiting for the things they understand.
+
+1224
+01:13:43,840 --> 01:13:48,840
+All they end up doing is losing valuable money and time and creating frustration.
+
+1225
+01:13:48,840 --> 01:13:51,840
+You're going to have to learn to be patient in this job.
+
+1226
+01:13:51,840 --> 01:13:53,840
+The markets reward patient people.
+
+1227
+01:13:53,840 --> 01:13:56,840
+And they take from impatient people.
+
+1228
+01:13:56,840 --> 01:13:59,840
+Lastly, determination.
+
+1229
+01:13:59,840 --> 01:14:05,840
+Trading is an extremely difficult job. It's not for the faint-hearted.
+
+1230
+01:14:05,840 --> 01:14:07,840
+You're going to have to love this.
+
+1231
+01:14:07,840 --> 01:14:11,840
+You're going to have to be willing to do everything for this job.
+
+1232
+01:14:11,840 --> 01:14:15,840
+If you truly want to be a trader, you're going to need determination.
+
+1233
+01:14:15,840 --> 01:14:21,840
+You're going to need to be determined to see through both the bad times and the good times.
+
+1234
+01:14:21,840 --> 01:14:27,840
+Those are my basic four rules that I think are required to succeed as a trader.
+
+1235
+01:14:27,840 --> 01:14:29,840
+Good luck.
+
+1236
+01:14:29,840 --> 01:14:31,840
+Thank you for joining me for Module 1.
+
+1237
+01:14:31,840 --> 01:14:35,840
+And I really look forward to seeing you guys in Module 2 and 3.
+
+1238
+01:14:35,840 --> 01:14:37,840
+We're going to spend a lot of time
+
+1239
+01:14:37,840 --> 01:14:47,840
+in Module 2 and 3 developing complex principles but more importantly, developing some extremely valuable trading strategies using volume profiles.
+
+1240
+01:14:47,840 --> 01:14:49,840
+Good luck and see you soon.
+
+1241
+01:14:49,840 --> 01:15:04,460
+Congratulations on finishing the apprenticeship. I hope you've enjoyed the course and the way we've laid it out.
+
+1242
+01:15:04,460 --> 01:15:10,460
+More importantly, I hope you've grasped the basic understanding of volume profiling principles.
+
+1243
+01:15:10,460 --> 01:15:21,340
+In Module 2, we are going to continue with our principles except they're going to become a little bit more complex.
+
+1244
+01:15:21,340 --> 01:15:27,340
+We're then going to move on and develop very specific strategies based on the concepts we're going to teach you.
+
+1245
+01:15:27,340 --> 01:15:35,340
+Do note, we will follow the very same layout that we used in Module 1, with theoretical principles.
+
+1246
+01:15:35,340 --> 01:15:39,043
+We then move on to practical applications of those principles
+
+1247
+01:15:39,043 --> 01:15:43,117
+and finish with you applying those principles in the day-to-day
+
+1248
+01:15:43,117 --> 01:15:45,709
+markets and updating your very own playbook.
+
+1249
+01:15:45,340 --> 01:15:52,830
+Make sure you continually update that playbook
+
+1250
+01:15:52,830 --> 01:15:54,830
+every single day.
+
+1251
+01:15:54,830 --> 01:16:00,830
+The reason is, that playbook will become your trading bible going forward.
+
+1252
+01:16:00,830 --> 01:16:03,393
+By continually updating it, you're going
+
+1253
+01:16:03,393 --> 01:16:05,956
+to keep up with the markets,
+
+1254
+01:16:05,956 --> 01:16:09,373
+you're going to learn to observe the markets
+
+1255
+01:16:09,373 --> 01:16:12,790
+and more importantly, you're going to have a
+
+1256
+01:16:12,790 --> 01:16:20,906
+reference point to come back to when you have specific patterns that you notice on a day-to-day basis.
+
+1257
+01:16:20,480 --> 01:16:24,480
+Every single day, we are going to have live streams.
+
+1258
+01:16:24,480 --> 01:16:27,025
+A lot of these live streams are
+
+1259
+01:16:27,025 --> 01:16:29,570
+going to be covering the very principles
+
+1260
+01:16:29,570 --> 01:16:32,479
+you have learnt in the volume profiling course.
+
+1261
+01:16:32,480 --> 01:16:34,400
+So make sure that you watch
+
+1262
+01:16:34,400 --> 01:16:36,320
+these live streams because you are
+
+1263
+01:16:36,320 --> 01:16:38,880
+going to see a host of different professional
+
+1264
+01:16:38,880 --> 01:16:40,480
+traders utilising the market profile.
+
+1265
+01:16:40,480 --> 01:16:47,640
+Other professional traders apply those very same principles.
+
+1266
+01:16:47,640 --> 01:16:49,640
+Keep it simple guys.
+
+1267
+01:16:49,640 --> 01:16:55,640
+Every single day, focus on just one thing. Focus on getting that little bit better every single day.
+
+1268
+01:16:55,640 --> 01:16:59,640
+Keep updating your playbook and make sure that whenever you
+
+1269
+01:16:59,640 --> 01:17:03,640
+find something unique, add it to that playbook.
+
+1270
+01:17:03,640 --> 01:17:13,640
+Remember, with strong discipline, very focused work ethic, patience and determination you will be successful.
+
+1271
+01:17:13,640 --> 01:17:15,640
+Good luck.
+
+===== END AFTER_SEGMENT =====

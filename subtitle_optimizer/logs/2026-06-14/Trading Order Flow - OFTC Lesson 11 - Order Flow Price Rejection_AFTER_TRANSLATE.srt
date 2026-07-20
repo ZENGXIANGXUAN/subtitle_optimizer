@@ -1,0 +1,3502 @@
+===== AFTER_TRANSLATE (700 entries) =====
+1
+00:00:00,000 --> 00:00:04,720
+好，这是订单流交易课程第11课，订单流价格拒绝。
+Okay, this is Order Flow Trading Course Lesson 11, Order Flow Price Rejection.
+
+2
+00:00:04,840 --> 00:00:08,039
+我是 Michael Valtos，OrderFlows.com 的创始人。
+My name is Michael Valtos. I'm the founder of OrderFlows.com.
+
+3
+00:00:08,560 --> 00:00:11,240
+在开始之前，我需要先读一段免责声明。
+Before we get started, I need to read through a quick disclaimer.
+
+4
+00:00:11,460 --> 00:00:14,763
+本演示仅用于教育和信息传达目的，
+This presentation is for educational and informational purposes only and
+
+5
+00:00:14,763 --> 00:00:18,066
+不应被视为购买或出售
+should not be considered a solicitation to buy or sell
+
+6
+00:00:18,066 --> 00:00:21,699
+期货合约或做出其他任何类型投资决策的邀请。
+a futures contract or make any other type of investment decision.
+
+7
+00:00:22,420 --> 00:00:25,560
+期货交易包含巨大风险，并不适合所有投资者。
+Futures trading contains substantial risk and is not for every investor.
+
+8
+00:00:26,140 --> 00:00:29,320
+投资者可能会损失全部甚至超过初始投资的金额。
+An investor could potentially lose all or more than the initial investment.
+
+9
+00:00:29,320 --> 00:00:34,580
+可承受损失的资金是指即使损失也不会危及个人财务安全或生活方式的资金。
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+10
+00:00:35,480 --> 00:00:40,460
+只有可承受损失的资金才应用于交易，且只有拥有充足可承受损失资金的人才应考虑交易。
+Only risk capital should be used for trading and only those with sufficient risk capital should consider trading.
+
+11
+00:00:41,000 --> 00:00:44,140
+过往表现并不必然预示未来结果。
+Past performance is not necessarily indicative of future results.
+
+12
+00:00:44,840 --> 00:00:51,400
+CFTC 4.41 条规则指出，模拟交易结果具有一定的局限性。
+CFTC Rules 4.41 state, Hypothetical or simulated performance results have certain limitations.
+
+13
+00:00:52,240 --> 00:00:56,320
+与实际业绩记录不同，模拟结果并不代表真实交易。
+Unlike an actual performance record, simulated results do not represent actual trading.
+
+14
+00:00:56,320 --> 00:00:59,646
+此外，由于交易未实际执行，结果可能
+Also, since the trades have not been executed, the results may have
+
+15
+00:00:59,646 --> 00:01:01,863
+低估或高估了某些市场因素的影响（如果有的话），
+under or overcompensated for the impact, if any,
+
+16
+00:01:01,863 --> 00:01:04,358
+例如流动性不足。
+of certain market factors, such as lack of liquidity.
+
+17
+00:01:04,580 --> 00:01:07,301
+一般来说，模拟交易程序还受限于
+Simulated trading programs in general are also subject to the
+
+18
+00:01:07,301 --> 00:01:10,022
+它们是基于事后诸葛的设计，
+fact that they are designed, with the benefit of hindsight,
+
+19
+00:01:10,022 --> 00:01:15,738
+不能保证任何账户会取得或可能取得与展示结果类似的盈利或亏损。
+no representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+
+20
+00:01:15,740 --> 00:01:18,100
+好，我们继续。
+Okay, let's move on.
+
+21
+00:01:19,280 --> 00:01:22,280
+第11课，理解订单流价格拒绝。
+Lesson number 11, understanding order flow price rejection.
+
+22
+00:01:23,020 --> 00:01:26,900
+知道市场参与者何时在拒绝价格，将提升你的交易水平。
+Knowing when the market participants are rejecting price will improve your trading.
+
+23
+00:01:27,300 --> 00:01:32,680
+你想知道的是，你想知道其他交易者何时在拒绝价格。
+What you want to know is, you want to know when other traders are rejecting price.
+
+24
+00:01:32,680 --> 00:01:36,045
+如果你持有头寸，你认为价格会
+If you're in a position, you're thinking it's going to
+
+25
+00:01:36,045 --> 00:01:38,064
+继续上涨，但价格正在被
+go higher, but price is being
+
+26
+00:01:38,064 --> 00:01:42,439
+拒绝，通常情况下，市场不会再涨了。
+rejected, more often than not, the market's not going to go any higher.
+
+27
+00:01:42,840 --> 00:01:46,540
+所以你应该理解价格正在被拒绝的区域。
+So you should understand areas where price is being rejected.
+
+28
+00:01:47,360 --> 00:01:49,300
+可以尝试用非市场的角度思考。
+Think in non-market terms.
+
+29
+00:01:50,020 --> 00:01:54,720
+你知道，有时候人们通过日常例子来理解市场会更容易。
+You know, sometimes it's easier for people to understand the market when they think of,
+
+30
+00:01:54,800 --> 00:01:58,380
+比如，当你去杂货店买食物时，
+you know, everyday examples. So, when you go to the grocery store to buy food,
+
+31
+00:01:58,580 --> 00:02:01,340
+而且，比如，你的购物清单上想买些牛肉。
+and, you know, on your grocery list is you want to buy some beef.
+
+32
+00:02:01,840 --> 00:02:05,720
+如果牛肉价格涨得太高，你还会买同样的数量吗？
+If the price of beef has risen too much, do you buy the same amount?
+
+33
+00:02:05,860 --> 00:02:06,620
+不会。那你会怎么办？
+No. What do you do?
+
+34
+00:02:06,680 --> 00:02:09,180
+你要么停止购买，要么少买一些。
+You either stop buying it or you buy less.
+
+35
+00:02:09,520 --> 00:02:14,520
+你可以想象成，你的购买量在减少，直到你基本不再买牛肉。
+You know, you think of it as you're buying volume and beef slows down until you basically stop buying beef.
+
+36
+00:02:15,340 --> 00:02:18,480
+通常，当价格太高时，你就会停止购买牛肉。
+You know, usually when the price is too high, you will stop buying the beef.
+
+37
+00:02:18,580 --> 00:02:19,560
+你会拒绝这个价格。
+You'll reject the price.
+
+38
+00:02:20,300 --> 00:02:22,980
+另一种思考方式是用约会来类比。
+Another way to think of it is in terms of dating.
+
+39
+00:02:22,980 --> 00:02:24,403
+比如，你向一个漂亮女孩
+I mean, you ask a pretty girl
+
+40
+00:02:24,403 --> 00:02:25,826
+多次要电话号码，
+several times for a phone number, and
+
+41
+00:02:25,826 --> 00:02:27,859
+她一直拒绝你，最后你就放弃了。
+she keeps turning you down, and eventually you give up.
+
+42
+00:02:28,420 --> 00:02:29,460
+市场也是一样的。
+The market is the same.
+
+43
+00:02:29,860 --> 00:02:32,774
+虽然可能会有被动的大买家或
+Although there may be a heavy passive buyer or a
+
+44
+00:02:32,774 --> 00:02:35,688
+被动的大卖家在某根K线的边缘，
+passive seller, you know, at the edge of a bar
+
+45
+00:02:35,688 --> 00:02:38,602
+或者在上涨或下跌的高点或低点，
+or at the high of a move or the low
+
+46
+00:02:38,602 --> 00:02:45,597
+但对立的主动卖家或主动买家最终会放弃并拒绝价格，如果他们无法再推高或压低价格的话。
+of a move, the opposing aggressive seller or aggressive buyer will eventually give up in rejection if they can't move the price any higher.
+
+47
+00:02:46,920 --> 00:02:48,116
+回到之前，
+You know, going back to,
+
+48
+00:02:48,116 --> 00:02:49,312
+之前我
+you know, earlier how I
+
+49
+00:02:49,312 --> 00:02:50,508
+用约会的例子解释过，
+explained, you know, in terms
+
+50
+00:02:50,508 --> 00:02:51,704
+你可以想想，
+of dating, you know, think
+
+51
+00:02:51,704 --> 00:02:54,816
+比如，你有没有求过女孩结婚？
+about, you know, if you've ever asked a girl to get married, right?
+
+52
+00:02:55,020 --> 00:02:58,860
+有时候，你特别渴望结婚。
+You know, sometimes you're very desperate to get married.
+
+53
+00:02:58,940 --> 00:03:01,640
+就像交易时，你特别渴望市场朝你的方向走。
+You know, just like trading, you're desperate for the market to go in your direction.
+
+54
+00:03:01,740 --> 00:03:03,468
+但如果，
+But if, you know, the girl doesn't
+
+55
+00:03:03,468 --> 00:03:05,196
+那个女孩不想嫁给你，
+want to marry you, no matter what
+
+56
+00:03:05,196 --> 00:03:09,639
+不管你做什么，如果她不想嫁给你，她就是不想嫁给你。
+you can do, you know, if she doesn't want to marry you, she doesn't want to marry you.
+
+57
+00:03:10,100 --> 00:03:11,280
+市场也是一样。
+The market is the same way.
+
+58
+00:03:11,480 --> 00:03:12,662
+你希望
+You know, you want the
+
+59
+00:03:12,662 --> 00:03:14,317
+市场上涨，但，
+market to go up, but, you know,
+
+60
+00:03:14,317 --> 00:03:18,099
+如果价格在你做多后的某个价位被拒绝，
+if price is being rejected at, you know, a level just past where you got long,
+
+61
+00:03:18,800 --> 00:03:20,660
+你可以期望、祈祷
+you know, you can hope and wish
+
+62
+00:03:20,660 --> 00:03:24,380
+但这些都无法让市场继续上涨。
+all you want, but that's not going to make the market go any higher.
+
+63
+00:03:26,550 --> 00:03:31,350
+所以价格拒绝很重要，因为它回答了交易中的一个关键问题：这个价位会守住还是会失败？
+So price rejection is important because it answers the trading question, will this level hold or fail?
+
+64
+00:03:32,050 --> 00:03:35,250
+发生的情况是，价格到达某个价位后无法继续推进。
+What happens is price gets to a level and cannot follow through.
+
+65
+00:03:35,410 --> 00:03:38,550
+那个价位或其后的价位上，不再有更多的兴趣。
+There was no more interest at that level or price levels just behind it.
+
+66
+00:03:38,550 --> 00:03:40,863
+而且，你知道，这通常是一个明确的信号
+And, you know, usually a sure sign
+
+67
+00:03:40,863 --> 00:03:42,515
+就是市场不再想
+is the market doesn't want
+
+68
+00:03:42,515 --> 00:03:45,489
+停留在或接近那个价位了。
+to be at or around that price level anymore.
+
+69
+00:03:45,810 --> 00:03:50,850
+所以，你知道，当市场涨到一个高点时，接下来会发生什么？
+So, you know, you come up to a high in the market and what's going to happen?
+
+70
+00:03:51,290 --> 00:03:52,463
+你知道，市场要么
+You know, either the market
+
+71
+00:03:52,463 --> 00:03:53,636
+继续上涨，
+is going to keep going
+
+72
+00:03:53,636 --> 00:03:54,809
+市场要么
+higher, the market is going
+
+73
+00:03:54,809 --> 00:03:57,389
+横盘，要么市场会下跌。
+to go sideways, or the market is going to sell off.
+
+74
+00:03:57,650 --> 00:04:00,970
+如果价格被接受，价格就会继续上涨。
+If price is going to be accepted, price will keep going higher.
+
+75
+00:04:01,550 --> 00:04:06,030
+如果市场有些犹豫，市场可能会横盘。
+If the market is sort of indecisive, the market may go sideways.
+
+76
+00:04:06,030 --> 00:04:09,110
+如果价格被拒绝，市场就会下跌。
+If price is going to be rejected, the market will go lower.
+
+77
+00:04:10,050 --> 00:04:15,510
+所以订单流能让你看到成交量低迷的区域，这是价格拒绝的一个信号。
+So order flow allows you to see areas where low volume is occurring, which is a sign of price rejection.
+
+78
+00:04:16,890 --> 00:04:18,649
+你知道，这就是一个简单的解释。
+You know, that's a simple explanation.
+
+79
+00:04:19,010 --> 00:04:20,703
+所以，你知道，可以想象
+So, you know, imagine as
+
+80
+00:04:20,703 --> 00:04:23,073
+市场不断上涨，
+the market is going higher and higher,
+
+81
+00:04:23,073 --> 00:04:25,782
+但高点处的成交量越来越小，
+but the volume at the highs is getting
+
+82
+00:04:25,782 --> 00:04:29,507
+你知道，多头正在拒绝那些更高的价格。
+smaller and smaller, you know, buyers are rejecting those higher prices.
+
+83
+00:04:30,090 --> 00:04:33,790
+所以这个说法的问题在于，低成交量并不一定意味着价格被拒绝。
+So the problem with that expression is this low volume doesn't necessarily mean that price was rejected.
+
+84
+00:04:33,790 --> 00:04:37,230
+价格可能快速穿过某个价位后不再回到那里。
+The price could have moved through a level very fast not to return there.
+
+85
+00:04:37,350 --> 00:04:40,710
+所以，我的意思是，有时候市场会快速拉升然后快速回落。
+So, I mean, there's going to be times where the market just spikes up and spikes back down.
+
+86
+00:04:41,230 --> 00:04:42,595
+你知道，这通常是
+You know, usually that's
+
+87
+00:04:42,595 --> 00:04:44,302
+由于某些
+due to, you know, some
+
+88
+00:04:44,302 --> 00:04:46,009
+外部因素，可能一个止损
+external factor. Maybe a stop
+
+89
+00:04:46,009 --> 00:04:47,716
+被触发了。
+got triggered. It's not necessarily
+
+90
+00:04:47,716 --> 00:04:50,447
+这不一定是由于整体供需关系。
+due to, you know, overall supply and demand.
+
+91
+00:04:50,450 --> 00:04:54,890
+那么我们来看一下这张图表。
+So let's look at a chart here.
+
+92
+00:04:55,110 --> 00:04:56,150
+这是一张债券图表。
+This is a bond chart.
+
+93
+00:04:56,490 --> 00:05:02,090
+市场在上涨，然后在 746 这里触及高点，开始回落。
+You know, the market is going up and it hits the high here at 746. It starts to sell off.
+
+94
+00:05:02,510 --> 00:05:04,874
+但每次我们尝试向高点
+But every time we sort of try to make a
+
+95
+00:05:04,874 --> 00:05:06,529
+发起反弹时，
+run back up at the high, you
+
+96
+00:05:06,529 --> 00:05:09,129
+你也知道，我们此前处于上升趋势，但现在停止了。
+know, I said we had been in an uptrend. We stop.
+
+97
+00:05:09,390 --> 00:05:10,270
+好的，接下来会发生什么？
+Okay, what's going to happen?
+
+98
+00:05:10,350 --> 00:05:13,710
+市场要么继续上涨，要么横盘，要么下跌。
+The market's either going to keep going higher, go sideways, or go lower.
+
+99
+00:05:13,710 --> 00:05:16,710
+在这种情况下，市场开始横盘后下跌，
+So in this case, it starts going sideways to lower
+
+100
+00:05:16,710 --> 00:05:18,810
+每根 K线都尝试
+and, you know, each bar tries to
+
+101
+00:05:18,810 --> 00:05:21,810
+略微上涨一点，但成交量却在减少。
+go a little bit higher, but you get less volume.
+
+102
+00:05:21,890 --> 00:05:24,050
+在这些 K线的顶部出现单印区。
+You're getting single prints at the tops of these bars.
+
+103
+00:05:24,050 --> 00:05:35,150
+它正在拒绝这些价格，比如在 160.17、160.16 以上的价格，拒绝后市场开始回落。
+It's rejecting the prices up here above, you know, 160.17, you know, 160.16. It's rejecting these prices and the market sells off.
+
+104
+00:05:36,970 --> 00:05:40,298
+订单流的优势在于，它不仅能显示价格被拒绝的价格水平，
+So the power of order flow is that it can show you
+
+105
+00:05:40,298 --> 00:05:45,290
+还能显示价格是如何被拒绝的。
+more than just a price level where price was rejected. It shows you how price is being rejected.
+
+106
+00:05:46,570 --> 00:05:49,303
+所以，价格拒绝的最佳信号之一
+So, you know, one of the best signs of price
+
+107
+00:05:49,303 --> 00:05:51,216
+是当你再次回到
+rejection is when you circle back to
+
+108
+00:05:51,216 --> 00:05:53,949
+某个价格时，第二次的成交量更小。
+a price again, but on lesser volume the second time.
+
+109
+00:05:54,910 --> 00:05:57,226
+我的意思是，假设你有一个价格水平，
+What do I mean by that is, you
+
+110
+00:05:57,226 --> 00:05:59,252
+看起来市场可能在拒绝它。
+know, say you have a level that
+
+111
+00:05:59,252 --> 00:06:01,568
+市场看起来可能正在拒绝价格。
+the market is, looks like it's probably rejecting.
+
+112
+00:06:01,770 --> 00:06:04,204
+如果我们回到那个价格水平，
+If we come back to that level and,
+
+113
+00:06:04,204 --> 00:06:06,334
+没有显示出任何接受的迹象，
+you know, it's not showing any signs
+
+114
+00:06:06,334 --> 00:06:08,464
+而是显示出拒绝的迹象，
+of acceptance, you know, and showing rejection,
+
+115
+00:06:08,464 --> 00:06:13,028
+那么价格很可能会向相反方向运行。
+you know, then chances are the price is going to go in the opposite direction.
+
+116
+00:06:13,230 --> 00:06:14,410
+这里有一个例子。
+So, you know, here's an example.
+
+117
+00:06:14,870 --> 00:06:17,390
+这是 E-mini 标普 500 期货（ES）的图表。
+This is the ES, the E-minis chart.
+
+118
+00:06:18,010 --> 00:06:19,390
+我们在这里触及高点 836。
+You know, we hit a high here at 836.
+
+119
+00:06:19,390 --> 00:06:21,710
+我们上涨到大约 1886 点位。
+You know, we got up to around the 1886 levels.
+
+120
+00:06:21,710 --> 00:06:27,890
+然后回落了四五个点，之后尝试再次发起上涨。
+It came off, you know, four or five points, and we tried to make a run back up.
+
+121
+00:06:27,970 --> 00:06:31,150
+你知道，有一根绿色K线开始回涨，但价格正在这里被拒绝。
+You know, you got a green candle starting to run back up, but the price is being rejected here.
+
+122
+00:06:31,190 --> 00:06:34,630
+你有一个单印区，你知道，你有买卖失衡，然后市场开始下跌。
+You have a single print, you know, you have the ratio, and the market sells off.
+
+123
+00:06:34,630 --> 00:06:36,531
+好的，它有点停住了，然后，
+Okay, it sort of stops, and again,
+
+124
+00:06:36,531 --> 00:06:38,703
+你知道，交易者想要尝试
+you know, people want to try and take
+
+125
+00:06:38,703 --> 00:06:40,604
+再往上推。但，又在这里停住了
+it higher. But, again, it stopped here
+
+126
+00:06:40,604 --> 00:06:43,048
+在这个价位，在单印区。
+with this, at this level, with the single print.
+
+127
+00:06:43,170 --> 00:06:48,390
+它有点在这个区域徘徊，也就是第一次价格拒绝的地方。
+It's sort of circling around to this area where you have the, you know, the price rejection the first time.
+
+128
+00:06:48,450 --> 00:06:49,430
+它确实稍微突破了一点。
+It does get a little bit through.
+
+129
+00:06:49,570 --> 00:06:51,357
+所以，你知道，第二次时，
+So, you know, at this time, the second
+
+130
+00:06:51,357 --> 00:06:52,697
+它试图
+time, it is trying to get,
+
+131
+00:06:52,697 --> 00:06:54,708
+你知道，稍微再高一点，并且确实做到了。
+you know, a little bit higher, and it does.
+
+132
+00:06:54,710 --> 00:07:00,070
+但，你知道，多头正在拒绝1883上方的这些价位。
+But, you know, buyers are rejecting these levels above 1883.
+
+133
+00:07:00,670 --> 00:07:04,310
+你知道，没有更多的延续性，然后市场开始下跌。
+You know, there's no more follow-through, and the market sells off.
+
+134
+00:07:08,310 --> 00:07:12,155
+现在，交易价格拒绝的一个常见方法是
+Now, a common way to trade price rejection is to trade it
+
+135
+00:07:12,155 --> 00:07:16,000
+交易到价格接受的区域，这基本上意味着你在
+to a level of price acceptance, which basically translates to you get
+
+136
+00:07:16,000 --> 00:07:22,409
+价格拒绝的区域附近进入交易，然后在价格接受的区域入场。
+into the trade around an area where there's price rejection, and you enter in an area where there's price acceptance.
+
+137
+00:07:22,410 --> 00:07:26,490
+虽然这种方法没有问题，但它确实会错过一些利润。
+While there's nothing wrong with that approach, it does leave money on the table.
+
+138
+00:07:27,390 --> 00:07:36,650
+我认为，你知道，有时很难确定价格接受的位置。价格拒绝更容易识别。
+I think, you know, sometimes it's hard to determine where price acceptance is. It's easier to determine price rejection.
+
+139
+00:07:38,190 --> 00:07:43,350
+但，你知道，订单流能让你从一个价格拒绝交易到另一个价格拒绝。
+But, you know, order flows will allow you to trade from one price rejection to another.
+
+140
+00:07:44,510 --> 00:07:47,676
+你知道，所以从一个区域，而不是从
+You know, so from an area, rather than going from
+
+141
+00:07:47,676 --> 00:07:50,842
+价格正在被拒绝的区域到
+an area where price is being rejected to an area
+
+142
+00:07:50,842 --> 00:07:53,374
+价格正在被接受的区域，可能
+where price is being accepted, it might be
+
+143
+00:07:53,374 --> 00:08:01,289
+更谨慎的做法是从一个方向的价格拒绝区域交易到相反方向的价格拒绝区域。
+more prudent to go from an area where price is being rejected in one direction versus where price is being rejected in the opposite direction.
+
+144
+00:08:02,730 --> 00:08:06,294
+你知道，因为随着市场上涨或下跌，它会
+You know, because as the market moves up or down, it'll go
+
+145
+00:08:06,294 --> 00:08:08,670
+从顶部的高点到
+from a high at the top to the
+
+146
+00:08:08,670 --> 00:08:14,908
+中间的价格接受区域，然后下跌到价格被拒绝的区域。
+middle area where price is going to be accepted, and then go down to an area where price is being rejected.
+
+147
+00:08:14,910 --> 00:08:17,628
+你难道不更愿意从高点交易到低点
+Wouldn't you rather trade from the high to the low
+
+148
+00:08:17,628 --> 00:08:19,803
+而不是从高点交易到区间中点
+rather from the high to the middle of
+
+149
+00:08:19,803 --> 00:08:24,968
+然后，你知道，尝试从区间中点交易到低点吗？
+the range than, you know, try and trade it from the middle of the range down to the low?
+
+150
+00:08:25,030 --> 00:08:26,790
+从高点交易到低点更简单。
+It's just easier to trade from the high to the low.
+
+151
+00:08:27,510 --> 00:08:28,930
+这正是你能大赚一笔的地方。
+That's where you're going to make a lot of money.
+
+152
+00:08:30,330 --> 00:08:35,809
+所以要记住，如果价格在某个价位被接受，它会在该价位附近持续交易更久，或者突破该价位。
+So remember, if price was accepted at a certain level, it would trade longer around there or move beyond that level.
+
+153
+00:08:35,809 --> 00:08:38,627
+现在，通过阅读订单流，你可以看到市场
+Now, by reading the order flow, you can see if the market
+
+154
+00:08:38,627 --> 00:08:40,975
+是否在拒绝该价格，因为不会有订单流
+is rejecting that price because there won't be a flow
+
+155
+00:08:40,975 --> 00:08:44,028
+流入市场来推动价格突破该价位。
+of orders coming into the market to move the market beyond that price.
+
+156
+00:08:45,910 --> 00:08:50,610
+一个完美的例子是原油的订单流图表，也就是原油价格图表。
+A perfect example here is a crude order chart, crude oil chart.
+
+157
+00:08:50,750 --> 00:08:51,510
+你知道，市场上涨了。
+You know, the market moved up.
+
+158
+00:08:51,570 --> 00:08:53,530
+我们触及了高点，但价格在高位被拒绝。
+We hit a high, but price is rejected up there.
+
+159
+00:08:53,630 --> 00:08:56,470
+你只能达到，你知道，当你继续上涨时，后续动能在哪里？
+You only got to, you know, where's the follow-through as you're going higher?
+
+160
+00:08:56,950 --> 00:08:59,254
+在高位刚好有三手成交，
+You've got three lots traded right on the
+
+161
+00:08:59,254 --> 00:09:00,982
+而且，你知道，多头
+high, and, you know, buyers are
+
+162
+00:09:00,982 --> 00:09:04,150
+正在拒绝这些更高的价格。你知道，没有更多的买盘兴趣了。
+rejecting these higher prices. You know, there's no more buying interest.
+
+163
+00:09:04,150 --> 00:09:05,690
+市场开始回落。
+The market starts to come off.
+
+164
+00:09:06,010 --> 00:09:08,430
+然后，它尝试再次试探更高价位。
+Again, it tries to poke back higher.
+
+165
+00:09:08,550 --> 00:09:09,730
+但价格又被拒绝了。
+Again, it's rejecting price.
+
+166
+00:09:09,810 --> 00:09:14,110
+在这里你可以看到单印区只有两手成交，你知道，没有更多的后续推动了。
+You can see here in the single print of two lots, you know, there's no more follow-throughs.
+
+167
+00:09:14,170 --> 00:09:17,370
+它在拒绝 34.14 美元以上的价格，市场开始下跌。
+It's rejecting prices above $34.14, and the market sells off.
+
+168
+00:09:21,500 --> 00:09:25,100
+现在，当市场价格被低估或高估时，机构交易者通常
+Now, when the market is underpriced or overpriced, the institutional traders generally
+
+169
+00:09:25,100 --> 00:09:27,500
+会介入买入或卖出，
+will come in and buy or sell to
+
+170
+00:09:27,500 --> 00:09:31,400
+将市场价格拉回到一个能有更多交易发生的价位。
+bring back the market to a price level where more trade can occur.
+
+171
+00:09:32,360 --> 00:09:34,220
+那么，价格拒绝的信号有哪些呢？
+So what are the signs of price rejection?
+
+172
+00:09:34,500 --> 00:09:36,560
+基本上有两个信号。
+Well, there's basically two signs.
+
+173
+00:09:36,560 --> 00:09:38,400
+而且，你知道，乍一看，
+And, you know, at first glance,
+
+174
+00:09:38,400 --> 00:09:40,240
+你会觉得这两个信号完全相反，
+you'll think that they're complete opposites,
+
+175
+00:09:40,240 --> 00:09:42,080
+但，你知道，你必须
+but, you know, you have to
+
+176
+00:09:42,080 --> 00:09:43,920
+用同样的方式来对待它们。
+approach it in the same way.
+
+177
+00:09:44,200 --> 00:09:48,720
+可能是在 K 线的边缘成交量低，或者在 K 线的边缘成交量大。
+It can be low volume at edges of a bar or heavy volume at edges of a bar.
+
+178
+00:09:51,070 --> 00:09:54,120
+上涨 K 线边缘成交量低的原因是
+Low volume at edges of an up bar occur because
+
+179
+00:09:54,120 --> 00:09:58,390
+不再有多头来维持涨势。市场被高估了。
+there's no longer any more buyers to sustain the move. The market is overvalued.
+
+180
+00:09:59,650 --> 00:10:02,945
+下跌 K 线底部成交量低的原因是
+Low volume at the bottom of a down bar occurs
+
+181
+00:10:02,945 --> 00:10:06,569
+是因为空头不再有兴趣抛售了。
+when there's no longer any more interest from sellers in selling.
+
+182
+00:10:06,570 --> 00:10:09,190
+所以，你可以想想这个情况，好吗？
+So, I mean, think about that, okay?
+
+183
+00:10:09,250 --> 00:10:16,290
+如果市场在上涨，但多头不再有买入兴趣，会发生什么？
+If a market is on the way up but there's no more buying interest, what's happening?
+
+184
+00:10:17,030 --> 00:10:19,470
+你知道，多头会认为市场被高估了。
+You know, buyers are thinking the market is too rich.
+
+185
+00:10:19,470 --> 00:10:23,510
+反过来，如果市场在下跌，会发生什么
+And conversely, if the market is going lower, what's going
+
+186
+00:10:23,510 --> 00:10:26,742
+导致价格反转的是
+to cause the price to turn is going
+
+187
+00:10:26,742 --> 00:10:31,590
+可能是市场中不再有空头了。
+to be that, you know, there's no more sellers in the market.
+
+188
+00:10:31,590 --> 00:10:33,401
+你知道，是的，严格来说这不一定是
+You know, yeah, technically that isn't
+
+189
+00:10:33,401 --> 00:10:35,212
+价格拒绝，但如果
+necessarily price rejection, but if, you
+
+190
+00:10:35,212 --> 00:10:37,023
+市场中不再有空头，
+know, there's no more sellers in
+
+191
+00:10:37,023 --> 00:10:40,041
+你知道，那些在抛售市场的交易者
+the market, you know, people that are selling the market
+
+192
+00:10:40,041 --> 00:10:43,059
+会认为，你知道，他们再也无法通过抛售获利了。
+are thinking, you know, there's no more capacity for them
+
+193
+00:10:43,059 --> 00:10:46,077
+所以，如果他们停止抛售，
+to make any money by selling there. So, if they
+
+194
+00:10:46,077 --> 00:10:54,528
+你知道，他们是在拒绝这些低价，市场应该会反弹到一个他们愿意再次抛售的价位。
+stop selling, you know, they're rejecting those little prices and the market should, you know, bounce up to a level where they could be happy to sell again.
+
+195
+00:10:55,430 --> 00:10:57,250
+所以，你知道，这是一张五年周期图。
+So, you know, here's a five-year chart.
+
+196
+00:10:59,190 --> 00:11:02,450
+而且，你知道，这里面有几个值得注意的情况。
+And, you know, you've got a couple things going on in here.
+
+197
+00:11:04,110 --> 00:11:05,558
+下方在 812 这个位置
+You have down here at 812
+
+198
+00:11:05,558 --> 00:11:07,296
+有一个单印区。
+and you've got a single print.
+
+199
+00:11:07,296 --> 00:11:12,799
+你知道，市场在下跌过程中，空头正在拒绝这个区域。
+You know, the market was working its way down and sellers were rejecting, you know, this area in here.
+
+200
+00:11:13,090 --> 00:11:14,850
+他们不再愿意抛售了。
+They weren't interested in selling anymore.
+
+201
+00:11:15,570 --> 00:11:16,950
+在这种情况下，你知道，多头进场了。
+In this case, you know, buyers came in.
+
+202
+00:11:16,990 --> 00:11:19,863
+出现了几次买盘失衡，
+You've got a few buying imbalances and the
+
+203
+00:11:19,863 --> 00:11:22,736
+市场交易上涨到这个上方的位置，
+market trades up to, again, this level up
+
+204
+00:11:22,736 --> 00:11:26,328
+多头现在改变了他们的想法。
+here where buyers have now sort of changed their thoughts.
+
+205
+00:11:26,590 --> 00:11:34,730
+你知道，在 20.5 以上，他们认为可能太贵了，市场开始回落。
+You know, above 20.5, you know, they think it's probably too expensive and the market starts to come off.
+
+206
+00:11:34,830 --> 00:11:36,607
+你知道，可能多头又进场了，
+You know, maybe the buyers are stepping in
+
+207
+00:11:36,607 --> 00:11:40,829
+心想，嘿，我们再尝试冲击这个高点，看看能不能推得更高。
+again thinking, hey, let's make another run up at this high and see if we can take it higher.
+
+208
+00:11:41,130 --> 00:11:43,010
+但是，你知道，他们无法继续推进。
+But, you know, they can't follow through.
+
+209
+00:11:43,950 --> 00:11:45,958
+而且，你知道，我之前提到过，
+And, you know, what I was talking about
+
+210
+00:11:45,958 --> 00:11:48,468
+与其从下方区域买入，你知道，
+earlier, rather than buying from an area down, you know,
+
+211
+00:11:48,468 --> 00:11:50,978
+在低点从价格接受区域，你
+at the low to a level of price acceptance, you
+
+212
+00:11:50,978 --> 00:11:53,488
+知道，在这里的某个地方，你可以从某个
+know, somewhere in here, you trade it from, you know,
+
+213
+00:11:53,488 --> 00:11:58,508
+价格拒绝区交易到下一个价格拒绝区，再到下一个价格拒绝区。
+an area of price rejection to the next area of price rejection down to the next area of price rejection.
+
+214
+00:12:00,290 --> 00:12:02,978
+你知道，这就是那种情况，
+You know, it's one of those things where
+
+215
+00:12:02,978 --> 00:12:05,330
+与其必然把钱留在桌上，
+rather than necessarily leave money on the
+
+216
+00:12:05,330 --> 00:12:12,050
+你可以从一个拒绝区交易到下一个拒绝区，如果，你知道，如果一切都符合这样的设置的话。
+table, you can trade it from rejection to rejection if, you know, if everything sort of sets up that way.
+
+217
+00:12:12,050 --> 00:12:15,308
+所以，在K线的边缘出现大量成交量也是拒绝的信号，
+So, heavy volume occurring at the edges of
+
+218
+00:12:15,308 --> 00:12:21,009
+尽管这听起来不合理。
+a bar are also a sign of rejection, even though that doesn't make sense.
+
+219
+00:12:21,110 --> 00:12:24,410
+大多数人认为大量成交量是价格接受的标志。
+Most people feel that heavy volume would be a level of acceptance.
+
+220
+00:12:24,410 --> 00:12:26,700
+但是，当市场无法突破，
+But, when the market cannot get through, get
+
+221
+00:12:26,700 --> 00:12:28,990
+无法越过某个价位并反转时，
+past a level and turns, one side of
+
+222
+00:12:28,990 --> 00:12:34,429
+市场的一方已经放弃了。他们拒绝了市场。他们拒绝了这些价格。
+the market has thrown in the towel and they gave up. They rejected the market. They rejected those prices.
+
+223
+00:12:34,430 --> 00:12:37,648
+当在下跌行情的底部出现大量成交量时，
+When heavy volume occurs at the bottom of a move
+
+224
+00:12:37,648 --> 00:12:40,223
+空头遇到了强劲的被动买盘，
+down, sellers were met with strong passive buying
+
+225
+00:12:40,223 --> 00:12:44,729
+无法让市场突破该价位，于是放弃了。
+and could not get the market to move past that level and gave up.
+
+226
+00:12:44,730 --> 00:12:47,752
+你知道，反过来想，当在上涨行情的顶部出现大量成交量时，
+You know, in the opposite way of thinking, when the
+
+227
+00:12:47,752 --> 00:12:50,774
+在上涨行情的顶部出现大量成交量,
+heavy volume occurs at the top of an up move,
+
+228
+00:12:50,774 --> 00:12:58,028
+多头遇到了强劲的被动卖盘，无法让市场进一步上涨，直到所有多头都放弃为止。
+buyers were met with strong passive selling and could not get the market to move up any further until all the buyers gave up.
+
+229
+00:12:58,030 --> 00:13:04,030
+现在，在订单流图表上，这通常表现为大量成交量。
+Now, what that looks like on an order flow chart is going to be often heavy volume.
+
+230
+00:13:04,490 --> 00:13:11,190
+现在，人们说这是被套的交易者，但，你知道，你必须意识到这到底是什么。
+Now, people say that it's trapped traders, but, you know, you've got to realize what it is.
+
+231
+00:13:11,250 --> 00:13:14,092
+市场在上涨，这里成交量很大，
+The market is rallying and there's heavy volume
+
+232
+00:13:14,092 --> 00:13:16,934
+人们无法让市场突破
+here. People cannot get the market past this
+
+233
+00:13:16,934 --> 00:13:24,394
+这里的1910价位。最终，他们放弃尝试突破该价位，认输并退出。
+level here at 1910. Eventually, they give up in trying to get it past there and they capitulate and they get out.
+
+234
+00:13:25,250 --> 00:13:30,430
+你想认为这些人被套了？可以。他们很可能很快就退出了。
+You want to consider these people trapped? Yeah, you can. They most likely got out pretty quick.
+
+235
+00:13:30,570 --> 00:13:32,999
+我不喜欢用‘被套的交易者’这个词，
+I hate to use the term, trapped traders,
+
+236
+00:13:32,999 --> 00:13:35,125
+因为，你知道，当人们，你
+because, you know, when people are, you
+
+237
+00:13:35,125 --> 00:13:38,162
+知道，当你被套且很难退出时，
+know, when you're trapped and something's really difficult to get
+
+238
+00:13:38,162 --> 00:13:41,199
+你知道，在像E-mini这样的市场中，退出是相对容易的。
+out, you know, in the markets like E-minis, it's fairly
+
+239
+00:13:41,199 --> 00:13:53,348
+但是，你知道，如果你认为自己被套并退出，你知道，在入场价位的3个点差处退出，你知道，我认为你的交易方式有问题。
+easy to get out. But, you know, if you think you're trapped and you're getting out, you know, at three points, you know, from where you got in, you know, I think there's a problem with the way you're trading.
+
+240
+00:13:53,570 --> 00:13:56,130
+但是，你知道，如果人们在这里买入，
+But, you know, if people are buying it here at
+
+241
+00:13:56,130 --> 00:13:58,434
+在 1910 点位尝试推高价格，然后他们发现
+1910 trying to take it higher and they realize they
+
+242
+00:13:58,434 --> 00:14:00,994
+自己无法再推高了，对吧，你知道，他们会
+can't take it any higher, okay, you know, they're going
+
+243
+00:14:00,994 --> 00:14:03,554
+拒绝这个价格，因为他们认为价格
+to reject that price thinking that, you know, the price
+
+244
+00:14:03,554 --> 00:14:16,354
+他们会寻找出场机会，或者如果他们认为价格正在被拒绝，他们会选择出场或做空，或者只是出场后在场外观望一段时间。
+is up here. They can't get through and they're going to look to get out and, you know, either get out or get short if they think price is being rejected up here or, you know, they're just going to get out and sit on the sidelines for a while.
+
+245
+00:14:17,610 --> 00:14:19,440
+老实说，当我看到这种情况时，
+You know, honestly, when I see something like
+
+246
+00:14:19,440 --> 00:14:23,329
+对我来说，这是价格拒绝的信号。价格无法在这里突破。
+this here, to me, it's a sign of price rejection. The price can't get through it here.
+
+247
+00:14:23,450 --> 00:14:24,790
+对我来说，这是一个做空的信号。
+For me, it's a sign to get short.
+
+248
+00:14:28,610 --> 00:14:33,630
+所以，就像我说的，有些交易者会说这并不是真正的拒绝。老实说，这只是术语问题。
+So, like I said, I mean, some traders will say that's not really rejection. Honestly, that's just semantics.
+
+249
+00:14:33,790 --> 00:14:35,790
+市场的一边放弃了，这就是拒绝。
+One side of the market gives up. That is rejection.
+
+250
+00:14:35,790 --> 00:14:39,130
+如果市场触及高点，即使那里有强劲的卖盘，
+If the market hits a high and even though there's strong selling
+
+251
+00:14:39,130 --> 00:14:41,078
+卖盘存在的原因是
+up there, the reason the selling is
+
+252
+00:14:41,078 --> 00:14:42,748
+因为价格被高估了。
+there is because price is overvalued.
+
+253
+00:14:43,130 --> 00:14:49,190
+最终，多头意识到这一点，并拒绝市场，拒绝在这些价位的价格。
+Eventually, buyers realize this and reject the market, you know, reject prices at those levels.
+
+254
+00:14:51,650 --> 00:14:54,230
+好的。现在我们来看一堆例子
+Okay. And now let's get into a bunch of examples
+
+255
+00:14:54,230 --> 00:14:57,069
+然后带你逐一分析。
+here and, you know, just sort of take you through it.
+
+256
+00:14:57,690 --> 00:15:05,610
+这里的情况是，市场上涨到这个位置，823，1123。
+What you have here is, you know, market is, okay, we come up here at this level, 823, 1123.
+
+257
+00:15:05,610 --> 00:15:07,693
+你有一个
+You know, you know, you got a
+
+258
+00:15:07,693 --> 00:15:09,776
+单印区，市场开始下跌，
+single print, the market starts trading down,
+
+259
+00:15:09,776 --> 00:15:13,348
+然后小幅反弹，在这里拒绝了稍高的价格。
+bounces up a little bit, rejects a little bit higher prices here.
+
+260
+00:15:13,710 --> 00:15:18,590
+但紧接着，你会看到一个单印区。
+But then what happens immediately after it, you get a single print.
+
+261
+00:15:18,590 --> 00:15:21,734
+所以，从市场背景来看，
+So, looking at context, context of the
+
+262
+00:15:21,734 --> 00:15:24,878
+第一次触及这个
+market, the first time you hit this
+
+263
+00:15:24,878 --> 00:15:28,920
+低点时，1199 在这个价位有成交，
+low, you got 1199 trading, you know, at this level.
+
+264
+00:15:29,990 --> 00:15:31,610
+第二次触及时，只有 3 手成交。
+Second time you got it, it's only three.
+
+265
+00:15:33,570 --> 00:15:34,806
+这告诉你什么？
+So, what is it telling you?
+
+266
+00:15:34,806 --> 00:15:36,454
+这告诉你，第二次下探到这个低点时，
+It's telling you the second time you're coming
+
+267
+00:15:36,454 --> 00:15:38,308
+市场在拒绝这个低价。
+down into this low, it's rejecting this low price.
+
+268
+00:15:38,810 --> 00:15:41,890
+没有更多的兴趣将市场推得更低，因此市场反弹上涨。
+There's no more interest to take the market lower and the market reacts higher.
+
+269
+00:15:41,890 --> 00:15:43,730
+我的意思是，你可以争论，
+I mean, you can make the argument,
+
+270
+00:15:43,730 --> 00:15:45,570
+你可能会想，
+you sort of think, you know, you
+
+271
+00:15:45,570 --> 00:15:47,147
+有一个下跌走势，好，但
+have this move down, okay, but
+
+272
+00:15:47,147 --> 00:15:52,668
+你必须要理解市场正在发生什么，而不是仅仅盯着市场的单边。
+you have to read what's going on rather than just, you know, get caught up on one side of the market.
+
+273
+00:15:53,090 --> 00:15:59,970
+你应该观察K线在形成时的状态，来理解市场正在发生什么。
+You should be watching, you know, the bars as they're forming to understand what's happening in the market.
+
+274
+00:15:59,970 --> 00:16:02,970
+你可能会想，这里有一个单印区，这里也有一个单印区。
+You could be thinking, well, you have a single print here, a single print here.
+
+275
+00:16:03,470 --> 00:16:06,470
+这表示市场正在拒绝价格继续上涨。
+You know, it's indicating that the market is rejecting the price to go higher.
+
+276
+00:16:06,850 --> 00:16:10,750
+确实如此，但之后价格也在这里被拒绝继续下跌。
+Well, it did, but then it also rejected the price to go lower here.
+
+277
+00:16:10,850 --> 00:16:12,971
+所以，我的意思是，如果你在这里做空，
+So, I mean, if you're getting short in here and
+
+278
+00:16:12,971 --> 00:16:14,879
+并且持续做空，事实是你正在盯着这个
+staying short, the fact that you're looking at this
+
+279
+00:16:14,879 --> 00:16:18,696
+就明摆在你面前，第一次触及这个低点时，成交量是1199。
+staring at you right in the face, you know, the first time you hit this low, you got 1199.
+
+280
+00:16:19,470 --> 00:16:20,630
+第二次成交量是3。
+Second time you got three.
+
+281
+00:16:21,850 --> 00:16:26,370
+这比你在上面看到的价格被拒绝的情况要明显得多。
+It's much more obvious than what you're looking at up here with this price being rejected.
+
+282
+00:16:26,770 --> 00:16:32,050
+这实际上在大声告诉你，第一次成交量是1100。
+This is really shouting at you saying, hey, you know, you've got first time you got 1100.
+
+283
+00:16:32,190 --> 00:16:37,350
+第二次成交量是3。看，价格正在被拒绝，市场已经转向并上涨。
+Second time you got three. See, it's rejecting the price and the market has turned around and gone higher.
+
+284
+00:16:42,740 --> 00:16:44,960
+好的，这是一个五年周期图。
+Okay. Now, this is a five-year chart.
+
+285
+00:16:45,420 --> 00:16:47,300
+那么，这里发生了什么？
+And, you know, what's happening here?
+
+286
+00:16:48,160 --> 00:16:50,460
+好的，市场上涨到这个高点。
+Okay. The market comes up to this high level here.
+
+287
+00:16:50,480 --> 00:16:51,400
+只有一手成交。
+You get one lot traded.
+
+288
+00:16:51,820 --> 00:16:57,720
+接下来的第二根K线，又出现一个单印区，成交量是5手。
+And the second, you know, the second bar after it, you've got another single print, you know, five lots traded.
+
+289
+00:16:58,160 --> 00:17:01,900
+市场试图回涨，看看能否突破这个高点，但没能成功。
+The market tried to go back up to see if we could take out this high, but it couldn't.
+
+290
+00:17:02,020 --> 00:17:04,300
+遇到了价格拒绝。
+You know, it was met with rejection.
+
+291
+00:17:04,500 --> 00:17:06,099
+这里只成交了5手。
+You know, only five lots can trade here.
+
+292
+00:17:06,099 --> 00:17:10,200
+没有更多的跟进推动市场进一步上涨，市场就开始下跌了。
+There was no more follow-through in taking the market any higher, and the market sold off.
+
+293
+00:17:14,430 --> 00:17:15,550
+这是一个E-mini图表。
+This is an e-mini chart.
+
+294
+00:17:15,670 --> 00:17:17,282
+我们正在逐步上涨，
+You know, we're working our way up,
+
+295
+00:17:17,282 --> 00:17:18,434
+上涨势头很好。
+working our way up nicely.
+
+296
+00:17:18,434 --> 00:17:21,429
+突然，在顶部出现了大量成交量。
+Boom. You get hit with heavy volume right up here at the top.
+
+297
+00:17:21,530 --> 00:17:22,710
+这是一个区间下界比率。
+This is a ratio of bounds low.
+
+298
+00:17:23,349 --> 00:17:26,025
+我的意思是，订单流交易者是唯一
+This, I mean, the order flows trader is the only
+
+299
+00:17:26,025 --> 00:17:28,166
+能提供这些数字的软件。所以，
+software that will give you these numbers. So,
+
+300
+00:17:28,166 --> 00:17:32,448
+它在告诉你，在顶部这个位置成交量很大。
+it's telling you there's heavy volume up here at this, at the top of this move.
+
+301
+00:17:32,750 --> 00:17:36,950
+然后呢？市场开始下跌，开始回落。
+And what happens after that? And the market sells, starts to sell off.
+
+302
+00:17:37,670 --> 00:17:41,130
+你会立刻注意到这一点，它会直接显示在你的图表上。
+I mean, you'll notice this, you know, immediately. It'll show up on your chart.
+
+303
+00:17:41,250 --> 00:17:45,830
+然后，你知道，你会观察下一根K线，看看会发生什么。这里有一个单印区。
+Then, you know, you're watching in the next bar to see what happens. You got a single print here.
+
+304
+00:17:45,830 --> 00:17:50,370
+市场确实尝试向上走了几个Tick，但这里没有后续跟进。
+The market did try to tick up a couple of ticks, and there's no more follow-through here.
+
+305
+00:17:50,690 --> 00:17:56,290
+你知道，这里只有5手成交，然后市场开始下跌，之后继续下跌。
+You know, you've got just five lots traded, and the market sells off, and then sells off, you know, afterwards.
+
+306
+00:17:57,430 --> 00:17:58,865
+你知道，但所有这些都会
+You know, but all this will
+
+307
+00:17:58,865 --> 00:18:00,300
+在图表上实时
+show up, you know, as it's
+
+308
+00:18:00,300 --> 00:18:03,649
+显示出来。我是说，你可以在这里直接看到。
+happening in the chart. I mean, you could be looking at it right here.
+
+309
+00:18:03,930 --> 00:18:05,394
+你会看到这个比例
+You'll see this ratio up
+
+310
+00:18:05,394 --> 00:18:06,858
+在这里。你会在
+here. You'll see in the
+
+311
+00:18:06,858 --> 00:18:12,129
+下一根K线看到价格正在被拒绝。你知道，这是你做空的信号。
+next bar, you know, price being rejected. And, you know, it's a sign for you to get short.
+
+312
+00:18:12,130 --> 00:18:19,220
+这是原油的图表，那这里有什么？
+This is a crude oil chart, and what do you have?
+
+313
+00:18:19,780 --> 00:18:21,184
+好的，市场大致
+Okay, the market's sort of
+
+314
+00:18:21,184 --> 00:18:23,149
+在横盘。它尝试突破
+going sideways. It tries to pop up
+
+315
+00:18:23,149 --> 00:18:26,238
+当前这个区间的上方，你知道，突破3144上方。
+above this sort of range that we're in, you know, above 3144.
+
+316
+00:18:26,800 --> 00:18:30,580
+然后呢？在顶部这里有激进的多头，你会看到一个比例。
+And what happens? You're getting aggressive buyers right up here at the top. You're getting a ratio.
+
+317
+00:18:31,580 --> 00:18:37,760
+后续跟进在哪里？哪里有更多激进的买盘来推动市场更高？
+And where's the follow-through? Where's the more aggressive buying coming in here to help move the market higher?
+
+318
+00:18:37,840 --> 00:18:38,540
+没有。
+It's not there.
+
+319
+00:18:38,940 --> 00:18:40,860
+市场转头开始下跌。
+The market turns around and starts going lower.
+
+320
+00:18:40,940 --> 00:18:44,780
+这里有一个单印区。这个比例我不太喜欢，但这是一个单印区。
+You got a single print here. It's not a ratio that I like, but it's a single print.
+
+321
+00:18:44,780 --> 00:18:46,966
+尽管如此，你知道，市场正在
+Nonetheless, you know, the market is trying to
+
+322
+00:18:46,966 --> 00:18:49,152
+尝试重新回到
+make a move back up, you know, as
+
+323
+00:18:49,152 --> 00:18:51,338
+这个高点回落后的位置。
+we sort of came off from this high.
+
+324
+00:18:51,960 --> 00:18:55,980
+但价格再次被拒绝，然后市场只是横盘或下跌。
+But prices, again, are being rejected, and then the market just sort of goes sideways to lower.
+
+325
+00:19:00,880 --> 00:19:04,040
+你知道，在原油中，你知道，情况类似。
+You know, again, in the crude, you know, it's a similar thing.
+
+326
+00:19:04,340 --> 00:19:07,600
+你知道，市场缓慢地向上爬升。
+You know, the market is slowly grinding its way higher.
+
+327
+00:19:07,720 --> 00:19:10,300
+它碰到这个价位。这里有一些激进的买盘。
+It hits this level. You got some aggressive buying happening here.
+
+328
+00:19:11,380 --> 00:19:12,400
+后续跟进在哪里？
+Where's the follow-through?
+
+329
+00:19:12,540 --> 00:19:13,300
+没有。
+It's not there.
+
+330
+00:19:13,840 --> 00:19:16,960
+你知道，你能认为这是大成交量吗？
+You know, can you consider this heavy volume?
+
+331
+00:19:16,960 --> 00:19:22,940
+你知道，是的，我的意思是，在K线的边缘出现超过100的成交量，这本身就相当显著。
+You know, yeah, I mean, it's crude to get something over 100 at the edge of a bar is fairly significant.
+
+332
+00:19:22,940 --> 00:19:24,791
+你知道，但即使在下一根
+You know, but then even in the
+
+333
+00:19:24,791 --> 00:19:26,906
+K线中，你会看到，价格尝试
+next bar, you see, the price tries to
+
+334
+00:19:26,906 --> 00:19:30,079
+回升，试图重新回到这个高点。
+come back up, tries to circle back up to this high level.
+
+335
+00:19:30,340 --> 00:19:33,060
+但你只看到一个单印区。没有更多的买盘能突破。
+But you got a single print. There's no more buying bottle-through.
+
+336
+00:19:33,200 --> 00:19:35,513
+所以即使你在这根
+So even if you're not convinced in this
+
+337
+00:19:35,513 --> 00:19:37,826
+K线，在这第二根K线中，你仍然
+bar, in this second bar, you know, it's
+
+338
+00:19:37,826 --> 00:19:40,718
+可以看出，这再次告诉你，买盘正在这里被拒绝。
+telling you, again, you know, buying is being rejected here.
+
+339
+00:19:40,840 --> 00:19:42,135
+你只能看到，人们
+You can only, you know, people
+
+340
+00:19:42,135 --> 00:19:43,430
+在买入9手，然后
+are calling buying nine lots and
+
+341
+00:19:43,430 --> 00:19:46,020
+再也无法推高价格。没有人愿意把价格推得更高。
+can't take it any. There's no more interest in taking it higher.
+
+342
+00:19:46,160 --> 00:19:50,200
+假设你仍然不信服。你知道，你说，我还不信服。我仍然需要更多信号。
+Say you're still not convinced. You know, you say, I'm not convinced. I still need more sign.
+
+343
+00:19:50,200 --> 00:19:52,060
+第三根K线，你又看到一个单印区。
+The third bar, you get another single print.
+
+344
+00:19:52,220 --> 00:19:56,180
+你知道，市场尝试上涨，但无法突破那个高点。它就悬在那里。
+You know, the market tries to go higher. It can't take off that high. It's just hanging here.
+
+345
+00:19:56,220 --> 00:19:56,940
+你得到一个单印区。
+You got a single print.
+
+346
+00:19:57,240 --> 00:19:58,600
+然后市场就开始下跌。
+And the market just sells off.
+
+347
+00:20:03,500 --> 00:20:05,240
+这依然是原油的K线图。
+Again, this is a crude chart again.
+
+348
+00:20:05,840 --> 00:20:08,500
+而且，你知道，情况类似。
+And, you know, it's similar.
+
+349
+00:20:09,280 --> 00:20:11,466
+现在我经常处理的是
+Now what I'm dealing a lot with is
+
+350
+00:20:11,466 --> 00:20:13,106
+在上涨或K线边缘的高点出现大量成交量。
+heavy volume at the highs of
+
+351
+00:20:13,106 --> 00:20:15,019
+K线的移动或边缘。
+a move or edge of a bar.
+
+352
+00:20:15,560 --> 00:20:16,480
+你知道，我们一步步上涨。
+You know, we work our way up.
+
+353
+00:20:17,080 --> 00:20:18,160
+你知道，你在这里碰到高点。
+You know, you hit the high here.
+
+354
+00:20:18,340 --> 00:20:19,080
+你突破了它。
+You get past it.
+
+355
+00:20:19,080 --> 00:20:22,620
+然后在最顶部出现一个巨大的买盘失衡，3100。
+And you got a big buying imbalance right at the top, 31 double O.
+
+356
+00:20:24,540 --> 00:20:29,840
+多头无法推动市场突破这个价位。无法突破这个买盘失衡。
+People can't get, can't take the market past this level. Can't get past this buying imbalance.
+
+357
+00:20:30,060 --> 00:20:33,340
+显然，有人在那里持有大量供给想要抛售。
+Obviously, there's somebody in there with a lot of supply to sell.
+
+358
+00:20:33,900 --> 00:20:35,880
+你知道，市场随后有所回落。
+You know, the market came off a bit.
+
+359
+00:20:36,260 --> 00:20:39,860
+然后，你知道，下一根K线，它再次尝试回升，但还是不行。
+And, you know, the next bar, again, it tries to go back higher, but it can't.
+
+360
+00:20:39,900 --> 00:20:42,040
+你得到一个单印区，然后市场开始下跌。
+You get a single print and the market sells off.
+
+361
+00:20:45,420 --> 00:20:47,840
+这是一张ES图表，也就是E-mini图表。
+Here's an ES chart, an E-mini chart.
+
+362
+00:20:47,960 --> 00:20:49,000
+你知道，我们正在逐步上涨。
+You know, we're working our way up.
+
+363
+00:20:49,000 --> 00:20:51,040
+然后它在这个高点处停住了。
+And it stops right up here at this high.
+
+364
+00:20:51,120 --> 00:20:52,080
+你有一个单印区。
+You got a single print.
+
+365
+00:20:52,880 --> 00:20:54,220
+市场开始下跌。
+The market starts to sell off.
+
+366
+00:20:54,380 --> 00:20:55,900
+好的，假设你并不完全确信。
+Okay. Say you're not necessarily convinced.
+
+367
+00:20:56,140 --> 00:20:58,580
+好的，你知道，可能会有一点回调。
+Okay. You know, maybe you're going to get a little bit of a pullback.
+
+368
+00:20:59,240 --> 00:21:00,240
+你知道，你触及了一个高点。
+You know, you hit a high.
+
+369
+00:21:00,340 --> 00:21:01,100
+你想要一个回调。
+You want to get a pullback.
+
+370
+00:21:01,160 --> 00:21:05,660
+然后你在这里看到一个单印区。它告诉你价格正在这里被拒绝。
+And then you see a single print here. And it's telling you the price is being rejected up here.
+
+371
+00:21:06,220 --> 00:21:08,680
+问题是你在这里遇到了一个小单成交。
+Problem is you're met with a small print down here.
+
+372
+00:21:08,760 --> 00:21:10,540
+你在想，好的，我不知道怎么解读这个。
+You're thinking, okay, I don't know how to read this.
+
+373
+00:21:10,600 --> 00:21:12,080
+你知道，市场是不是在转向？
+You know, is the market turning or not?
+
+374
+00:21:13,420 --> 00:21:14,240
+看看接下来会发生什么。
+Watch what happens.
+
+375
+00:21:14,240 --> 00:21:16,840
+它又回到这个区域，并直接上涨到这个位置。
+It comes back in here, circles right up to this.
+
+376
+00:21:16,840 --> 00:21:19,820
+因为这个单印区能够突破它，然后市场下跌。
+Because this single print can get through it and it sells off.
+
+377
+00:21:22,230 --> 00:21:27,890
+好的，下一张图表是Bunn图表，德国10年期国债图表。Bunn期货，FGBL。
+Okay. In the next chart, this is a Bunn chart, a German 10-year chart. Bunn Futures, FGBL.
+
+378
+00:21:28,370 --> 00:21:34,990
+然后你下跌。你在这里有一个单印区。这是价格拒绝的信号。
+And you come down. You got a single print down here. It's a sign of price rejection.
+
+379
+00:21:34,990 --> 00:21:38,320
+你知道，在这种情况下，你得到买盘，
+And, you know, in this case, you get a buying,
+
+380
+00:21:38,320 --> 00:21:39,985
+在价格拒绝区域后出现堆叠买盘失衡，
+the stack buying imbalance right
+
+381
+00:21:39,985 --> 00:21:43,648
+然后市场上涨。
+after the area of price rejection. And the market moves higher.
+
+382
+00:21:44,650 --> 00:21:52,290
+你知道，它告诉你空头在哪里？下面的其他空头都消失了。没有了。
+You know, it's telling you that sellers, where's the rest of the sellers down here? They're disappeared. There's no more.
+
+383
+00:21:52,370 --> 00:21:53,890
+你在底部只能交易三手。
+You can only trade three lots down at the bottom.
+
+384
+00:21:53,890 --> 00:21:56,120
+然后这种情况下发生的是，你知道，足够多的人意识到，
+And what happened in this case is, you know, enough
+
+385
+00:21:56,120 --> 00:21:57,904
+嘿，你知道，他们
+people have realized that, hey, you know, they're
+
+386
+00:21:57,904 --> 00:21:59,465
+会拒绝这些低于
+going to reject these prices at below
+
+387
+00:21:59,465 --> 00:22:03,925
+92的价格。突然有大量买盘涌入以拒绝这些价位，然后市场上涨。
+92. And a lot of buying all of a sudden came in to reject these levels and the market goes higher.
+
+388
+00:22:04,690 --> 00:22:09,990
+你知道，当你上涨时，你会看到更多，你知道，这里有更多比例，你知道，种族反弹低点。
+You know, as you're going higher, you're seeing more, you know, more ratios in here, you know, racial bounce lows.
+
+389
+00:22:10,110 --> 00:22:11,710
+你会看到有人在支撑市场。
+You're seeing people supporting the market.
+
+390
+00:22:12,210 --> 00:22:15,083
+你知道，当你看到有人进来支撑
+You know, when you see people coming in to support
+
+391
+00:22:15,083 --> 00:22:16,519
+市场，他们正在拒绝这些
+the market, they're rejecting these
+
+392
+00:22:16,519 --> 00:22:18,530
+下方的价格。他们在想，嘿，你
+prices down here. They're thinking, hey, you
+
+393
+00:22:18,530 --> 00:22:23,989
+知道，他们必须进场，开始买入，因为他们认为价格会继续上涨。
+know, they've got to get in and, you know, start buying because they're thinking the price is going higher.
+
+394
+00:22:27,920 --> 00:22:30,180
+所以这是一张E-mini图表。
+So this is an e-mini chart.
+
+395
+00:22:30,820 --> 00:22:39,000
+发生的情况是，你知道，早些时候它在1020到1027之间横盘，这是一个5分钟周期。
+And what's happening is, you know, you've gone sideways here early, you know, 1020 to 1027. You know, it's a five-minute period.
+
+396
+00:22:39,520 --> 00:22:45,000
+市场在横盘，没有趋势，在大约2.5个点的区间内交易。
+The market's going sideways. It's not going anywhere. It's trading in this sort of two-and-a-half-point range.
+
+397
+00:22:45,380 --> 00:22:46,620
+但随后它开始移动。
+But then it starts moving.
+
+398
+00:22:46,800 --> 00:22:50,140
+你在这些柱状线底部看到的是单印区。
+And what you're seeing at the bottom of these bars are single prints.
+
+399
+00:22:50,140 --> 00:22:55,940
+它在告诉你，市场现在改变了它对价格的看法。
+And it's telling you that the market now has changed its, you know, its view of price.
+
+400
+00:22:56,260 --> 00:23:01,120
+它正在拒绝这个区域，而早些时候市场曾在这里花费大量时间。
+And it's rejecting this area in here where earlier the market was spending a lot of time.
+
+401
+00:23:01,720 --> 00:23:05,260
+你知道，这是价格曾乐于反复交易的区域。
+You know, this was the area where, you know, price was happy to trade back and forth.
+
+402
+00:23:05,740 --> 00:23:09,828
+现在，当我们尝试回到那个区域交易时，空头正在拒绝
+Now, as we try to trade back in there, sellers are rejecting
+
+403
+00:23:09,828 --> 00:23:12,213
+1891以下的这些低价，你知道，随着价格开始上涨，
+these lower prices below 1891, you know, below
+
+404
+00:23:12,213 --> 00:23:14,257
+1893以下的价格。
+1893 as you start to move higher.
+
+405
+00:23:14,940 --> 00:23:18,000
+这就是单印区和小单成交会
+That's what single prints and small prints will
+
+406
+00:23:18,000 --> 00:23:21,060
+告诉你的，就是，你知道，空头，
+tell you, that, you know, sellers are, you
+
+407
+00:23:21,060 --> 00:23:24,120
+空头，人们有兴趣在卖盘价位卖出，你知道，
+know, sellers, people are interested in selling, you
+
+408
+00:23:24,120 --> 00:23:29,858
+正在拒绝这些单印区以下的价格。
+know, into the bids, are rejecting, you know, prices below these areas of single prints.
+
+409
+00:23:30,320 --> 00:23:34,920
+现在，他们不想在这些区域以下卖出。
+Now, they're not interested in selling, you know, below these areas.
+
+410
+00:23:34,920 --> 00:23:41,060
+所以，这是一张E-mini图表。
+So, this is an E-mini chart.
+
+411
+00:23:41,640 --> 00:23:43,942
+再来说，你知道，你看到的是
+And, again, you know, what you're seeing is
+
+412
+00:23:43,942 --> 00:23:45,956
+这里有一个单印区，一个小单成交。
+you have a single, a small print
+
+413
+00:23:45,956 --> 00:23:48,258
+你知道，市场在横盘。
+here. You know, the market is going sideways.
+
+414
+00:23:49,060 --> 00:23:53,840
+你有点上涨，然后，你知道，又出现了一个比率。
+You sort of, you know, come up. And, again, you got, you know, a ratio.
+
+415
+00:23:53,980 --> 00:23:57,240
+它接近了，是25，你知道，但它表明是一个小单成交。
+It's close. It's 25, you know, but it's indicating a small print.
+
+416
+00:23:57,940 --> 00:23:59,400
+然后市场下跌。
+And the market sells off.
+
+417
+00:23:59,620 --> 00:24:03,680
+你知道，它正在拒绝1895以上的价格。
+You know, it's rejecting prices above, you know, above 1895.
+
+418
+00:24:03,680 --> 00:24:06,410
+你无法在1895以上再上涨，
+You can't go any higher above 1895, and
+
+419
+00:24:06,410 --> 00:24:09,140
+你会看到，当你绕圈回到这些高点时，
+you're seeing, you know, less volume as
+
+420
+00:24:09,140 --> 00:24:12,650
+成交量在减少。
+you circle around back up to these high levels.
+
+421
+00:24:13,880 --> 00:24:17,098
+通常，当你回到一个高点时，如果，你懂的,
+Usually, when you come back into a high level, if, you know,
+
+422
+00:24:17,098 --> 00:24:19,243
+如果你要突破这个高点,
+if you're going to take out the high,
+
+423
+00:24:19,243 --> 00:24:21,388
+你会看到很大的成交量。当你
+you're going to have heavy volume. When you
+
+424
+00:24:21,388 --> 00:24:27,557
+成交量较小时，通常行情不会持续推进，市场会向相反方向运行。
+have less volume, often you're not going to get the follow-through in the move, and the market will go in the opposite direction.
+
+425
+00:24:27,560 --> 00:24:30,640
+现在，这是另一个图表。
+Now, here's another chart.
+
+426
+00:24:30,760 --> 00:24:31,940
+这还是E-mini合约。
+This is E-minis again.
+
+427
+00:24:32,360 --> 00:24:34,132
+然后，你逐步上涨
+And, you know, you work your way up
+
+428
+00:24:34,132 --> 00:24:35,682
+到一个高点，然后你有一个,
+to a high, and you got a,
+
+429
+00:24:35,682 --> 00:24:38,118
+你懂的，这里成交量很小。你有一个小单成交。
+you know, small volume up here. You got a small print.
+
+430
+00:24:38,220 --> 00:24:42,600
+你懂的，这是上面的回调高点，表明高点附近成交量较少。
+You know, this is the ratio bounce high up here, indicating that there's less volume up here near the top.
+
+431
+00:24:44,340 --> 00:24:46,440
+这表明价格正在被拒绝。
+It's indicating that price is being rejected up here.
+
+432
+00:24:46,760 --> 00:24:48,960
+然后，你懂的，你再次看到买卖失衡
+And, you know, you get a selling imbalance
+
+433
+00:24:48,960 --> 00:24:50,885
+这会帮助你判断,
+again, which will help you indicate that,
+
+434
+00:24:50,885 --> 00:24:53,360
+你懂的，空头正在拒绝这些价格。
+you know, sellers are rejecting these prices up here.
+
+435
+00:24:53,360 --> 00:24:55,736
+或者，你懂的，如果你仍然不信服
+Or, you know, if you're still not convinced
+
+436
+00:24:55,736 --> 00:24:58,112
+这点的话，你懂的，我认为这已经很
+with that, you know, I think that's pretty
+
+437
+00:24:58,112 --> 00:25:00,488
+明显了，在下一个K线，你看到，你
+obvious, in the next bar, you're seeing, you
+
+438
+00:25:00,488 --> 00:25:07,319
+懂的，另一个，我来说，另一个上涨。你懂的，你只到K线的一半，然后遇到一个小单成交。
+know, another, I'll say, another run-up. You know, you only get halfway up into the bar, and then you hit a small print.
+
+439
+00:25:07,420 --> 00:25:11,860
+你懂的，价格无法再上涨。然后价格横盘。
+You know, price can't get any higher. And the price goes sideways.
+
+440
+00:25:11,860 --> 00:25:13,750
+你懂的，然后，你回到这个
+You know, again, you come back, you trade
+
+441
+00:25:13,750 --> 00:25:17,059
+被拒绝的价格水平，也就是之前有三个成交单的地方。
+back up to this level of rejection here where you had the three prints.
+
+442
+00:25:17,620 --> 00:25:19,360
+这次，成交量稍大一些。
+This time, it's a slightly heavier volume.
+
+443
+00:25:19,500 --> 00:25:20,000
+是500。
+It's 500.
+
+444
+00:25:20,980 --> 00:25:24,980
+但，你懂的，重要的是你无法突破它。然后市场开始下跌。
+But, you know, what's important is you couldn't get past it. And the market starts selling off.
+
+445
+00:25:30,730 --> 00:25:31,990
+再看一个ES的例子。
+Another ES example.
+
+446
+00:25:33,010 --> 00:25:39,070
+你懂的，我们缓慢地逐步上涨。你在这里碰到1895这个高点。
+You know, we're slowly grinding our way higher. You hit this high right here at 1895.
+
+447
+00:25:40,070 --> 00:25:42,690
+你懂的，这里有连续17手。买卖比是28。
+You know, you got 17 lots straight here. You got a ratio of 28.
+
+448
+00:25:42,930 --> 00:25:47,230
+你懂的，市场无法再上涨。然后，你懂的，市场开始横盘。
+You know, the market can't get any higher. And, you know, the market sort of goes sideways.
+
+449
+00:25:47,650 --> 00:25:52,610
+你再次尝试突破这个高点。它到达相同的价格水平。成交量更小，只有10手。
+You make another run-up at this high. It gets right up to the same level. It trades less volume, 10 lots.
+
+450
+00:25:53,090 --> 00:25:57,110
+无法再上涨。然后市场开始下跌。在下跌过程中你看到价格被拒绝。
+You can't get any higher. And the market starts selling off. And you're seeing price rejection on the way down.
+
+451
+00:25:57,110 --> 00:25:59,616
+而且你无法让市场再往上走
+And you can't take the market any higher
+
+452
+00:25:59,616 --> 00:26:01,496
+超过，你知道吗，93。你知道吗，就是上不去
+than, you know, 93. You know, can't
+
+453
+00:26:01,496 --> 00:26:04,942
+无法超过91，因为市场正在下跌。
+take it any higher than 91 as the market is selling off.
+
+454
+00:26:05,770 --> 00:26:07,590
+哪里有持续性？
+Where's the follow-through?
+
+455
+00:26:07,730 --> 00:26:12,470
+如果你期望市场继续上涨，你知道吗，你需要突破这些高点。
+If you're looking for the market to keep going higher, you know, you want to get past these highs.
+
+456
+00:26:12,470 --> 00:26:14,859
+但当你看到，你知道吗，
+But when you're seeing, you know, very small
+
+457
+00:26:14,859 --> 00:26:17,248
+K线顶部的成交量非常小，
+volume at the tops of bars as you
+
+458
+00:26:17,248 --> 00:26:21,429
+当你开始下跌时，你知道吗，没有买盘兴趣了。买盘兴趣已经消失。
+start heading lower, you know, there's no more buying interest. Buying interest has disappeared.
+
+459
+00:26:26,020 --> 00:26:27,880
+好的，这个例子更有趣。
+Okay. This one's more interesting.
+
+460
+00:26:28,500 --> 00:26:30,435
+这里你看到的是E-Mini期货，
+What you have here is E-minis
+
+461
+00:26:30,435 --> 00:26:32,370
+当市场下跌时。而且，
+as you're selling off. And really,
+
+462
+00:26:32,370 --> 00:26:35,918
+你只是看到，在这种情况下，你只是看到大量抛售。
+you're seeing just, in this case, you're just seeing heavy selling.
+
+463
+00:26:36,140 --> 00:26:41,520
+但，你知道吗，在K线顶部，你得到的是，你知道吗，单印区成交。你得到的是全都是单印区。
+But, you know, at the tops of the bars, you're getting, you know, one-lots trading. You're getting all single prints.
+
+464
+00:26:41,660 --> 00:26:44,194
+通常，当你开始看到单印区时，
+Usually when you start seeing single
+
+465
+00:26:44,194 --> 00:26:46,728
+你知道吗，它意味着什么，
+prints, you know, what it indicates
+
+466
+00:26:46,728 --> 00:26:49,262
+就是没有兴趣，你知道吗，
+is there's no interest, you know,
+
+467
+00:26:49,262 --> 00:26:51,796
+在高位交易，你知道吗，回撤到
+trading above, you know, retracing back
+
+468
+00:26:51,796 --> 00:26:55,597
+之前交易过的区域。
+into, you know, earlier areas where we've been trading.
+
+469
+00:26:55,600 --> 00:27:00,020
+相反，你只是看到，你知道吗，一路下跌都有非常强的抛售。
+Instead, you're just seeing, you know, very strong selling all the way down.
+
+470
+00:27:00,800 --> 00:27:03,162
+你知道吗，当出现一个单印区、单印区、单印区时，
+You know, when you have a single
+
+471
+00:27:03,162 --> 00:27:04,849
+而且，你知道吗，它真的没有回到K线里面。
+print, single print, single print,
+
+472
+00:27:04,849 --> 00:27:08,899
+它在告诉你，你知道吗，下跌的势头非常强劲。
+and, you know, it's really not going back up into the bars.
+
+473
+00:27:09,120 --> 00:27:12,840
+你知道吗，在这里抓住机会，我认为，已经有点晚了。
+It's telling you that, you know, the move is quite strong to go lower.
+
+474
+00:27:14,060 --> 00:27:16,500
+你很容易在这里看到这种情况，
+You know, catch it down here, I think, is much later.
+
+475
+00:27:16,600 --> 00:27:18,786
+你有买卖失衡，而且，
+You could easily see it happening in here where you've
+
+476
+00:27:18,786 --> 00:27:20,316
+你知道吗，这里有一个单印区，甚至在这里也有。你有单印区。
+got the imbalance and you've got, you
+
+477
+00:27:20,316 --> 00:27:23,158
+你知道吗，你很容易就能从这波行情中
+know, a single print here or even here. You've got the single print.
+
+478
+00:27:23,160 --> 00:27:25,058
+赚到，你知道吗，多少点，三四个点，很快。
+You know, you could easily have gotten, you
+
+479
+00:27:25,058 --> 00:27:28,379
+要知道，这个行情中有多少点，三四个点会迅速走完。
+know, how many points, three or four points out of that move very quickly.
+
+480
+00:27:34,320 --> 00:27:37,720
+好的，这是欧元股。然后发生了什么？
+Okay, this is a euro stock. And what happens?
+
+481
+00:27:37,820 --> 00:27:38,440
+你知道，我们创出了一个高点。
+You know, we make a high.
+
+482
+00:27:38,500 --> 00:27:39,420
+你会看到一个单印区。
+You've got a single print.
+
+483
+00:27:40,140 --> 00:27:45,480
+好的，然后你会看到一个卖盘失衡。而在下一个K线，你又看到了一个单印区。
+Okay, and you've got a selling imbalance. And in the next bar, again, you've got a single print.
+
+484
+00:27:46,120 --> 00:27:49,540
+你知道，我之前讲过失衡的问题。
+You know, I had talked about imbalances before.
+
+485
+00:27:49,720 --> 00:27:51,438
+你知道，我更倾向于利用这些失衡，
+You know, I'm more inclined to take them,
+
+486
+00:27:51,438 --> 00:27:54,659
+比如在高点附近的卖盘失衡，或者在低点附近的买盘失衡。
+you know, selling a balance near a high or buying a balance near a low.
+
+487
+00:27:54,760 --> 00:27:55,560
+为什么会这样呢？
+And why is that?
+
+488
+00:27:55,560 --> 00:28:00,520
+但这告诉我，市场在高点拒绝了更高的价格。
+But it's telling me that the market is rejecting, at a high, it's rejecting the higher prices.
+
+489
+00:28:00,680 --> 00:28:03,501
+你会看到，你知道，强劲的、
+And you're seeing, you know, aggressive, strong,
+
+490
+00:28:03,501 --> 00:28:06,322
+积极的卖盘涌入，导致
+aggressive selling come in that's causing the
+
+491
+00:28:06,322 --> 00:28:11,158
+市场出现买卖失衡，并且在高点附近订单流失去了平衡。
+market imbalances and getting the stack imbalanced, you know, at the high.
+
+492
+00:28:11,320 --> 00:28:13,440
+你知道，如果处于高点，你本应看到买盘。
+You know, if you're at a high, you should be seeing buying.
+
+493
+00:28:13,440 --> 00:28:19,100
+因为，你知道，当你创出高点时，你希望看到趋势延续。
+Because, you know, you like to see a follow-through in the move whenever you make a high.
+
+494
+00:28:19,180 --> 00:28:24,280
+但有时候，你知道，趋势无法持续，卖盘就会涌入。
+But there's going to be times when, you know, the move can't sustain itself and the selling comes in.
+
+495
+00:28:24,660 --> 00:28:27,430
+而当你看到高点附近连续的卖盘失衡，
+And when you see stacked selling imbalances,
+
+496
+00:28:27,430 --> 00:28:30,200
+你知道，这在告诉
+you know, around the high, it's telling
+
+497
+00:28:30,200 --> 00:28:34,158
+你，交易者已经拒绝了这些高价。
+you that, you know, people have rejected those high prices.
+
+498
+00:28:34,160 --> 00:28:36,299
+因为当你在高点附近看到单印区时，
+Because when you see single prints up near
+
+499
+00:28:36,299 --> 00:28:38,170
+你知道，这在告诉你
+the high, you know, it's telling you
+
+500
+00:28:38,170 --> 00:28:41,378
+买盘已经枯竭，无法再推高价格。
+the buying has dried up. That can't necessarily take it any higher.
+
+501
+00:28:41,540 --> 00:28:42,620
+所以，这里你触及了高点。
+So, here you hit the high.
+
+502
+00:28:43,040 --> 00:28:45,600
+你有一个单印区，然后又一个单印区，还有一个小单成交。
+You've got a single print and then a single print and a small print.
+
+503
+00:28:45,820 --> 00:28:48,140
+你知道，这三个信号同时出现。
+You know, you've got these three things lining up.
+
+504
+00:28:48,260 --> 00:28:53,820
+你知道，即使你没有特别关注高点附近的卖盘失衡。
+You know, even if you're not even paying attention to the selling imbalances right up here at the high.
+
+505
+00:28:53,820 --> 00:28:55,524
+你知道，我们在
+You know, the fact that we hit the
+
+506
+00:28:55,524 --> 00:28:57,015
+高点触及单印区，某种程度上
+high on a single print, sort of
+
+507
+00:28:57,015 --> 00:28:59,998
+试图回冲高点，但无法维持。
+tried to make a run back up at the high, but couldn't sustain it.
+
+508
+00:29:00,080 --> 00:29:03,080
+然后，你又看到，成交量很小，又是一个单印区。
+And you've got, again, you've got a small volume number, a single print.
+
+509
+00:29:04,420 --> 00:29:10,180
+你知道，市场在恳求你，说，嘿，你应该卖出。
+You know, the market is, you know, pleading with you that's saying, hey, you should sell me.
+
+510
+00:29:10,320 --> 00:29:13,380
+我无法再推高价格，我不会再涨了。
+I can't take the market any, I'm not going to go any higher.
+
+511
+00:29:14,060 --> 00:29:18,040
+你知道，在第三根K线，你会看到一个小单成交，然后，市场开始下跌。
+You know, in the third bar, you see a small print and, you know, the market sells off.
+
+512
+00:29:26,000 --> 00:29:27,440
+好的，这是欧股。
+Okay, so this is a Euro stock.
+
+513
+00:29:27,440 --> 00:29:31,020
+那，你在这里看到了什么？
+And, you know, what are you seeing here?
+
+514
+00:29:31,360 --> 00:29:34,420
+好的，这里有一个卖盘失衡。
+Okay, you have a selling imbalance right here.
+
+515
+00:29:34,680 --> 00:29:36,440
+好的，这条绿色线是高点。
+Okay, this green line is the high.
+
+516
+00:29:37,300 --> 00:29:38,980
+然后，市场从高点回落。
+And, you know, markets come off.
+
+517
+00:29:39,040 --> 00:29:40,700
+这里有一个非常强的卖盘失衡。
+You've got this big strong selling imbalance.
+
+518
+00:29:40,960 --> 00:29:41,840
+然后发生了什么？
+And what's happened?
+
+519
+00:29:42,240 --> 00:29:45,680
+在失衡区域外侧有一个单印区，还有一个单印区。
+You've got a single print on the, just outside of it, and another single print.
+
+520
+00:29:46,280 --> 00:29:49,957
+好的，如果你确信有强劲的卖盘介入，
+Okay, if you're convinced that strong selling has come in,
+
+521
+00:29:49,957 --> 00:29:53,634
+但这是由堆叠的卖盘失衡所显示的，那么，
+but it is indicated by the stack selling imbalance, well,
+
+522
+00:29:53,634 --> 00:29:59,518
+你可别仅仅因为出现了卖盘失衡，就被堆叠的卖盘失衡迷惑了。
+you know, don't be mesmerized by the selling imbalance, stack selling imbalance, just because it occurred.
+
+523
+00:30:00,000 --> 00:30:02,180
+你必须意识到，你必须观察市场正在发生什么。
+You've got to realize, you've got to watch what's happening in the market.
+
+524
+00:30:02,420 --> 00:30:03,760
+好的，这里有一个单印区。
+Okay, you've got a single print here.
+
+525
+00:30:04,760 --> 00:30:06,560
+你知道，我们又回到了失衡区域内部交易。
+You know, we're trading back inside the imbalance.
+
+526
+00:30:06,660 --> 00:30:08,020
+为什么市场没有继续下跌？
+Why isn't the market selling off?
+
+527
+00:30:08,480 --> 00:30:09,780
+然后，又出现了一个单印区。
+Then you get another single print.
+
+528
+00:30:11,240 --> 00:30:13,620
+你知道，应该会有强劲的卖盘把价格压得更低。
+You know, there should be strong selling to move it lower.
+
+529
+00:30:13,620 --> 00:30:21,720
+但是，空头正在拒绝22以下的区域，你可以看到这里有两个单印区。
+But, you know, sellers are rejecting the area below 22, as you see two single prints here.
+
+530
+00:30:22,580 --> 00:30:24,940
+然后市场只是转头向上，开始上涨。
+And then the market just, you know, turns around and goes higher.
+
+531
+00:30:25,360 --> 00:30:29,480
+你知道，如果我们无法突破这些单印区，市场正在告诉你一些信息。
+You know, if we can't get through these single prints, you know, the market is telling you something.
+
+532
+00:30:29,480 --> 00:30:32,403
+所以，你知道，即使你是基于
+And so, you know, even if you're getting short based
+
+533
+00:30:32,403 --> 00:30:35,326
+堆叠的卖盘失衡做空，但事实是我们无法
+on the stack selling imbalance, the fact that we couldn't
+
+534
+00:30:35,326 --> 00:30:39,126
+突破这些单印区，市场正在拒绝20以下的价格。
+get through these single prints, you know, the market's rejecting these prices below 20.
+
+535
+00:30:39,740 --> 00:30:43,460
+你知道，所有人都预期市场会下跌，但它并没有。
+You know, people are all expecting the market to sell off, but it's not.
+
+536
+00:30:43,680 --> 00:30:48,000
+你知道，在20以下没有人愿意卖出。
+You know, there's no interest to sell it below 20.
+
+537
+00:30:48,240 --> 00:30:51,740
+这些单印区以下的价格正在被拒绝。
+The prices below here, below these two single prints, are being rejected.
+
+538
+00:30:51,740 --> 00:30:59,520
+好的，还是欧股，然后发生了什么？
+Okay, Eurostox again, and then what happens?
+
+539
+00:31:00,140 --> 00:31:01,400
+你知道，你在这附近接近高点。
+You know, you're up here around the high.
+
+540
+00:31:02,720 --> 00:31:11,780
+好的，这里成交量很大，但然后你再次触及高点，成交量还可以。
+Okay, you've got a heavy volume here, but then you hit the high again, and, you know, volume's okay.
+
+541
+00:31:11,920 --> 00:31:15,380
+成交量是 38，但紧接着，你得到一个单印区。
+It's 38, but then immediately afterwards, you get a single print.
+
+542
+00:31:15,480 --> 00:31:17,451
+所以，它在告诉你，
+So, it's telling you that, you know, you
+
+543
+00:31:17,451 --> 00:31:19,176
+你碰到高点后，开始回落，
+hit the high, you start coming off,
+
+544
+00:31:19,176 --> 00:31:22,379
+你又尝试往上冲，但多头正在拒绝这些价格。
+you're making a run back up there. But buyers are rejecting these prices.
+
+545
+00:31:23,060 --> 00:31:29,260
+多头不愿意把价格进一步推高，市场转而下跌或横盘。
+You know, buyers aren't interested in taking it any higher in the market. It goes lower to sideways.
+
+546
+00:31:33,270 --> 00:31:34,657
+再看 Eurostox，好，你来到
+Eurostox again, okay, you're right up
+
+547
+00:31:34,657 --> 00:31:36,507
+接近高点的位置，然后发生了什么？
+here near the high, and what happens? You
+
+548
+00:31:36,507 --> 00:31:40,669
+你距离高点只差一个 Tick，然后出现一个单印区。后续动能呢？
+know, you get it within a tick of the high. You get a single print. Where's the follow-through?
+
+549
+00:31:41,010 --> 00:31:43,990
+这里有买盘失衡，这里也有买盘失衡。
+You know, you've got buying imbalance here. You've got buying imbalance here.
+
+550
+00:31:45,030 --> 00:31:47,943
+但，大家在 51 这个价位这么积极，
+But, you know, everyone's so aggressive at
+
+551
+00:31:47,943 --> 00:31:50,440
+为什么到了 52 就不积极了？
+this level at 51, why aren't they're
+
+552
+00:31:50,440 --> 00:31:52,521
+他们不再感兴趣了。
+aggressive at 52? You know, they're
+
+553
+00:31:52,521 --> 00:31:57,516
+市场离开后，稍微回落了一些。
+not interested anymore. The market goes off, comes off a little bit.
+
+554
+00:31:58,350 --> 00:32:03,590
+但，你又得到一个单印区。现在，交易价格是 50，对吧？
+But, you get another single print. Now, you're trading 50, okay?
+
+555
+00:32:03,670 --> 00:32:05,856
+会有一个交易者愿意
+You're going to get one person interested
+
+556
+00:32:05,856 --> 00:32:08,042
+在这个价位买入。
+to buy it there. The market just
+
+557
+00:32:08,042 --> 00:32:09,916
+然后市场只是
+sort of goes sideways again, gets
+
+558
+00:32:09,916 --> 00:32:13,976
+又横盘了一阵，回到 51 这个价位，然后开始下跌。
+back up to this 51 level, and just heads off. You know, heads lower.
+
+559
+00:32:14,290 --> 00:32:17,108
+这两根 K线在告诉你的是，
+You know, what these two bars here are
+
+560
+00:32:17,108 --> 00:32:19,926
+交易者正在拒绝这些价格，
+telling you is people are rejecting these prices
+
+561
+00:32:19,926 --> 00:32:21,335
+高于 51、高于 50、51 的价格。
+above 51, above 50, 51. Here, it
+
+562
+00:32:21,335 --> 00:32:26,619
+这里，它冲到了 51。好，它尝试过。但，它就是无法维持这个涨势。
+got up to 51. Okay, it tried. But, you know, it just couldn't sustain that move.
+
+563
+00:32:32,980 --> 00:32:34,256
+好，再来看 Eurostox，
+Okay, and Eurostox, again, as
+
+564
+00:32:34,256 --> 00:32:36,042
+当我们下跌时，我之前说，
+we're heading lower, you know, I said,
+
+565
+00:32:36,042 --> 00:32:38,083
+首先，
+you know, first things first, you know, you
+
+566
+00:32:38,083 --> 00:32:40,124
+你在低点看到卖盘失衡。
+have the selling imbalance right at the low.
+
+567
+00:32:40,124 --> 00:32:49,057
+你期望在低点看到卖盘失衡。这就是你在突破低点、创新低时希望看到的——积极的抛售。
+You expect to see selling imbalances at the low. That's what you want to see as you're making out, as you're taking out the lows and making new lows. You expect to see aggressive selling.
+
+568
+00:32:50,280 --> 00:32:52,928
+但，这里的情况是，
+But, what you have here is you
+
+569
+00:32:52,928 --> 00:32:54,819
+你碰到低点，然后开始反弹，
+hit the low, start rallying
+
+570
+00:32:54,819 --> 00:32:59,359
+但，这里有阻挡成交量，这里也有阻挡成交量。
+back up. But, you have some stopping volume here, stopping volume here.
+
+571
+00:32:59,820 --> 00:33:05,360
+现在，你看到的是单印区。也就是说，你看到市场回升时缺乏持续性。
+Now, you're seeing single prints. So, you're seeing lack of follow-through to move the market back up.
+
+572
+00:33:06,980 --> 00:33:08,860
+你知道，相反，你这里有的是
+You know, instead, what you have
+
+573
+00:33:08,860 --> 00:33:10,740
+有人进场挂出
+is someone coming in and offering
+
+574
+00:33:10,740 --> 00:33:13,560
+大单，挂出大单来压制市场。
+size, offering size to sort of cap the market.
+
+575
+00:33:14,560 --> 00:33:19,960
+你知道，但多头不再愿意把市场推得更高。
+You know, but buyers aren't any more interested in taking the market any higher.
+
+576
+00:33:20,360 --> 00:33:23,900
+他们正在拒绝这里的高价，而且人们愿意接受更低的价格。
+They're rejecting these higher prices up here, and people are willing to accept lower prices.
+
+577
+00:33:30,000 --> 00:33:31,780
+好的，这是欧斯托克斯的另一个例子。
+Okay, this is another example of Eurostox.
+
+578
+00:33:31,840 --> 00:33:36,480
+我们触及低点。你看到一个单印区。你知道，在低点成交了一手。
+We hit the low. You got a single print. You know, one lot traded right on the low.
+
+579
+00:33:36,540 --> 00:33:41,580
+市场小幅反弹，然后我们回到了距离低点两个Tick的位置。
+The market bounced up a little bit, and we got back within, you know, two ticks of the low.
+
+580
+00:33:41,820 --> 00:33:45,760
+而且，你知道，这里有一个失衡低点，显示这里有大量成交量。
+And, you got, you know, a ratio of balance low here, indicating some heavy volume here.
+
+581
+00:33:46,160 --> 00:33:50,080
+第二次测试这个价位时，我们回跌到那个价位，但成交量大幅减少。
+Second time we test that, we came back down exactly to that price, and you got much less volume.
+
+582
+00:33:50,180 --> 00:33:52,425
+这次，你看到一个
+This time, you got a single
+
+583
+00:33:52,425 --> 00:33:54,670
+成交单，六手。这在告诉
+print, six lots. So, it's telling
+
+584
+00:33:54,670 --> 00:33:58,038
+你，你知道，这里的价格正在被拒绝。
+you, you know, it's rejecting these prices down here.
+
+585
+00:33:58,040 --> 00:33:59,594
+你知道，人们不愿意
+You know, people aren't interested
+
+586
+00:33:59,594 --> 00:34:01,148
+在这里抛售。你
+in selling down here. You
+
+587
+00:34:01,148 --> 00:34:03,635
+知道，他们认为，你知道，没有理由
+know, they think, you know, there's no reason
+
+588
+00:34:03,635 --> 00:34:05,811
+在这里抛售。而且继续
+for them to sell. Well, and keep
+
+589
+00:34:05,811 --> 00:34:11,097
+抛售，当他们可以预期市场反弹，你知道，可能在更高的价位抛售。
+selling here when they could expect the market to bounce up and, you know, possibly sell higher.
+
+590
+00:34:15,540 --> 00:34:16,479
+在其他欧斯托克斯的例子中
+In other cases
+
+591
+00:34:16,479 --> 00:34:18,044
+你知道，为什么
+of Eurostox, you know, why
+
+592
+00:34:18,044 --> 00:34:19,922
+我有很多欧斯托克斯的例子，
+I got a lot of Eurostox,
+
+593
+00:34:19,922 --> 00:34:21,800
+你知道，这是一个市场，
+you know, it's a market where,
+
+594
+00:34:21,800 --> 00:34:26,497
+你知道，这是一个流动性很强的市场。你知道，这是一个非常适合交易的市场。
+you know, it's a very liquid market. You know, it's a great market for trading.
+
+595
+00:34:26,500 --> 00:34:27,401
+你知道，有时候，
+You know, sometimes,
+
+596
+00:34:27,401 --> 00:34:29,504
+你知道，人们总会问，那什么是
+you know, people always ask, well, what's
+
+597
+00:34:29,504 --> 00:34:31,307
+最适合交易的市场？你
+the best market for trading? You
+
+598
+00:34:31,307 --> 00:34:36,717
+知道，对我来说，任何有足够成交量的市场都是适合交易的好市场。
+know, for me, any market that has a decent amount of volume is a good market to trade.
+
+599
+00:34:36,719 --> 00:34:37,939
+所以，你知道，我们
+So, you know, we
+
+600
+00:34:37,939 --> 00:34:39,769
+触及高点。我们得到一手
+hit the high. We got one
+
+601
+00:34:39,769 --> 00:34:40,989
+大量成交出现在
+lot traded right on
+
+602
+00:34:40,989 --> 00:34:44,039
+高点附近。这里出现了价格拒绝。
+the high. You've got a, you know, price rejection here.
+
+603
+00:34:44,560 --> 00:34:46,322
+当你触及
+You know, if you're hitting the
+
+604
+00:34:46,322 --> 00:34:48,671
+高点，但只成交一手，
+high and it just ticks on one lot,
+
+605
+00:34:48,671 --> 00:34:50,433
+为什么，为什么剩下的
+why can't, you know, where's the
+
+606
+00:34:50,433 --> 00:34:54,838
+多头没有推高市场？然后价格就直接下跌了。
+rest of the buyers that take the market higher? And it just falls right over.
+
+607
+00:34:54,840 --> 00:35:03,030
+好的，这是一个五年期图表。
+Okay, this one, it's a five-year chart.
+
+608
+00:35:03,630 --> 00:35:05,570
+五年期也是一个非常活跃的市场。
+You know, five years are also a very liquid market.
+
+609
+00:35:05,710 --> 00:35:08,030
+但我们来看看这里发生了什么。
+But, you know, let's just talk about what's happened here.
+
+610
+00:35:08,290 --> 00:35:12,070
+我们触及了高点。这没什么特别的，只是一个普通的高点。
+You know, we hit the high. There's nothing special about it. It's just an average high.
+
+611
+00:35:12,510 --> 00:35:13,750
+然后开始逐步回落。
+Start working our way down.
+
+612
+00:35:13,750 --> 00:35:20,090
+接着你来到这个区域，这里出现了大量成交量，基本阻止了行情的发展。
+Then you hit this area right here where you have very strong volumes basically to stop the move.
+
+613
+00:35:20,170 --> 00:35:21,370
+然后市场又反弹回来。
+And the market comes back up.
+
+614
+00:35:22,530 --> 00:35:26,270
+但你会发现这里只有一个单印区，只成交了一手。
+But, you know, you're met with a single print. You know, there's only one lot trades here.
+
+615
+00:35:26,890 --> 00:35:29,730
+为什么没有后续动能推高市场？
+You know, where's the follow-through to take the market higher?
+
+616
+00:35:30,430 --> 00:35:34,510
+这里的成交量本应支撑市场，
+You know, you know you have this volume right here to basically support the market.
+
+617
+00:35:35,190 --> 00:35:39,710
+但当你开始远离这个区域，价格就停止上涨了。
+But you start to move away from this area. Then it just stops.
+
+618
+00:35:39,890 --> 00:35:44,470
+交易者正在拒绝这些高价位。为什么市场没有再涨？
+You know, people are rejecting these prices up here. You know, why isn't the market going any higher?
+
+619
+00:35:44,910 --> 00:35:48,230
+相反，它只是在 120 美元上方拒绝价格。
+Instead, it's just rejecting prices above $120.
+
+620
+00:35:48,770 --> 00:35:50,730
+市场开始逐步下跌。
+The market starts working its way down.
+
+621
+00:35:50,970 --> 00:35:52,343
+你在这里得到确认，
+You know, you get confirmation
+
+622
+00:35:52,343 --> 00:35:53,716
+价格，
+here where prices, you know,
+
+623
+00:35:53,716 --> 00:35:55,089
+这里出现了单印区。
+you've got a single print.
+
+624
+00:35:55,089 --> 00:35:57,287
+价格无法进一步上涨，幅度有限。
+Prices can't move higher to a lesser extent.
+
+625
+00:35:57,390 --> 00:36:01,130
+这根 K 线顶部有大量成交量，显然有强劲的空头。
+You've got some heavy volume at the top of this bar. So, obviously, there are some strong sellers.
+
+626
+00:36:01,670 --> 00:36:06,170
+交易者已经改变了对市场的看法，他们预期市场会下跌。
+People are, you know, have changed their view in the market. And they expect the market to go lower.
+
+627
+00:36:07,070 --> 00:36:08,253
+当你跌到
+You know, when you get
+
+628
+00:36:08,253 --> 00:36:09,910
+这根 K 线时，
+down into this bar, you know, people
+
+629
+00:36:09,910 --> 00:36:11,803
+那些想尝试推高市场的交易者
+that want to try and push the market
+
+630
+00:36:11,803 --> 00:36:13,696
+回到这些价位，测试
+back up to these levels, you know, test
+
+631
+00:36:13,696 --> 00:36:17,247
+这些价位。要看它们是否会守住，要知道，已经没有更多的兴趣了。
+these levels. If they're going to hold or not, you know, there's no more interest.
+
+632
+00:36:17,590 --> 00:36:19,130
+要知道，这里的价格正在被拒绝。
+You know, price up here is being rejected.
+
+633
+00:36:19,130 --> 00:36:29,460
+好的，这是一张10年周期的图表。要知道，10年周期是一个非常活跃且成交量巨大的市场。
+Okay, a 10-year chart. You know, 10 years are a market that is very thick and trades a ton of volume.
+
+634
+00:36:30,620 --> 00:36:36,180
+要知道，我们触及了低点。你又看到了，这里在低点刚好成交了4手。
+You know, we hit the low. You've got, again, you know, you've got four lots traded right on the low.
+
+635
+00:36:36,480 --> 00:36:39,020
+要知道，它正在拒绝这些低于这个低点的价格。
+You know, it's rejecting these prices below this low.
+
+636
+00:36:39,020 --> 00:36:40,940
+然后市场开始逐步上涨。
+And the market just starts working its way up.
+
+637
+00:36:41,980 --> 00:36:46,160
+要知道，你在这里有一个单印区。但它遇到了反方向的一个单印区。
+You know, you have a single print up here. But it's met with a single print in the opposite direction.
+
+638
+00:36:46,600 --> 00:36:48,490
+然后，这里又出现了一个单印区。
+Then, again, a single print here.
+
+639
+00:36:48,490 --> 00:36:50,380
+它在告诉你，要知道，价格
+It's telling you, you know, price
+
+640
+00:36:50,380 --> 00:36:54,160
+正在拒绝下方这个区域，然后回到这个区域交易。
+is rejecting this area down here to trade back into this area.
+
+641
+00:36:54,160 --> 00:36:55,687
+甚至在这里，你有一个零成交量。
+Even here, you have a zero
+
+642
+00:36:55,687 --> 00:36:57,214
+成交了。要知道，买入非常
+that's traded. You know, buying was
+
+643
+00:36:57,214 --> 00:36:59,759
+积极。价格被迅速推高。
+quite aggressive here. It just was bought up very fast.
+
+644
+00:37:00,340 --> 00:37:02,165
+你在这根K线的底部有一个零成交量。
+You have a zero at the
+
+645
+00:37:02,165 --> 00:37:03,990
+通常，你会在
+bottom of this bar. Normally, you'll
+
+646
+00:37:03,990 --> 00:37:05,815
+绿色K线左侧的底部看到成交量出现。
+have volume appearing, you know, at
+
+647
+00:37:05,815 --> 00:37:08,857
+绿色K线左侧的底部。
+the bottom on the left side of a green candlestick.
+
+648
+00:37:08,940 --> 00:37:10,607
+当你出现零成交量时，它
+When you get a zero, it's
+
+649
+00:37:10,607 --> 00:37:12,274
+在告诉你，这里确实有一些
+telling you that there's really some
+
+650
+00:37:12,274 --> 00:37:13,941
+在市场远离低点时的激进买入。
+aggressive buying as the market's moving
+
+651
+00:37:13,941 --> 00:37:19,498
+因此，它正在拒绝下方这些价格。要知道，你可以通过订单流看到这一点。
+away from the low. So, it's rejecting these prices down here. You know, you can see that with order flow.
+
+652
+00:37:19,560 --> 00:37:20,880
+如果你只是在看一张
+If you're just looking at a
+
+653
+00:37:20,880 --> 00:37:22,200
+K线图，你只会看到，你知道，
+bar chart, you just see, you
+
+654
+00:37:22,200 --> 00:37:23,960
+一根绿色K线，一根绿色K线，
+know, a green candle, a green candle, a
+
+655
+00:37:23,960 --> 00:37:29,460
+一根绿色K线。现在，你不知道价格是否必然在这里被拒绝，但你在订单流中看到了这一点。
+green candle. Now, you don't know that prices are necessarily being rejected down here, but you're seeing it down, you know, in the order flow.
+
+656
+00:37:32,480 --> 00:37:34,554
+要知道，最后，这里又是一张10年周期的图表。
+You know, lastly, here's a 10-year
+
+657
+00:37:34,554 --> 00:37:36,628
+所以，你上涨到高点，你知道，截断图表。
+chart again. So, you come up
+
+658
+00:37:36,628 --> 00:37:39,739
+到高点，你知道的，截断图表。
+to the high, you know, cut the chart off.
+
+659
+00:37:39,820 --> 00:37:42,200
+我无法告诉你那里的成交量是多少，但这不重要。
+I can't tell what the volume is up there, but that's not important.
+
+660
+00:37:42,340 --> 00:37:44,161
+重要的是，你开始
+What's important is you start coming
+
+661
+00:37:44,161 --> 00:37:45,982
+从高点回落，你会看到一个
+off the high, you get a
+
+662
+00:37:45,982 --> 00:37:48,714
+小单成交。你知道，你看到有19手成交。
+small print here. You know, you see 19 lots traded.
+
+663
+00:37:49,020 --> 00:37:50,129
+你知道，你会有
+You know, you have
+
+664
+00:37:50,129 --> 00:37:51,793
+一个比例。你知道，这个，
+a ratio. You know, this is,
+
+665
+00:37:51,793 --> 00:37:53,457
+我在我的软件中花了很多时间
+I spend a lot of time
+
+666
+00:37:53,457 --> 00:37:55,121
+讲解比例的问题。
+talking about ratios in my software.
+
+667
+00:37:55,121 --> 00:38:03,719
+而订单流交易者是唯一一个会显示比例的软件，这样你就能看见小单成交，就能看见价格正在被拒绝的位置。
+And the order flows trader is the only software that will put ratios so you can see if it's a small print, so you can see where price is being rejected.
+
+668
+00:38:04,220 --> 00:38:05,698
+所以，我们从
+So, we came up off the
+
+669
+00:38:05,698 --> 00:38:07,176
+高点回落，然后开始
+high, and we start making a
+
+670
+00:38:07,176 --> 00:38:08,654
+向高点反弹，
+run back up towards the high,
+
+671
+00:38:08,654 --> 00:38:11,857
+但价格在这里被拒绝，因为，你知道，没有后续跟进。
+but price is being rejected here because, you know, there's no more follow-through.
+
+672
+00:38:12,560 --> 00:38:14,202
+好吧，也许你还不信服，
+Okay, maybe you're not convinced, you
+
+673
+00:38:14,202 --> 00:38:15,844
+你知道，市场回落到
+know, the market comes down to
+
+674
+00:38:15,844 --> 00:38:17,486
+下一个价位。嗯，它
+this next level. Well, it trades
+
+675
+00:38:17,486 --> 00:38:21,318
+横盘了一段时间，但你会看到，你知道，小单成交、小单成交。
+a bit sideways, but you're seeing, you know, a small print, a small print.
+
+676
+00:38:21,320 --> 00:38:22,782
+你知道，价格无法
+You know, price can't
+
+677
+00:38:22,782 --> 00:38:24,975
+突破，你知道，现在它
+get through, you know, now it
+
+678
+00:38:24,975 --> 00:38:27,168
+无法突破这个价位
+can't get through this level up
+
+679
+00:38:27,168 --> 00:38:30,092
+在128.30，然后市场就开始下跌。
+here at 128.30, and the market just sells off.
+
+680
+00:38:30,460 --> 00:38:32,557
+你知道，它表示如果价格
+You know, it said if price
+
+681
+00:38:32,557 --> 00:38:34,654
+在这个区域
+isn't being rejected in this area
+
+682
+00:38:34,654 --> 00:38:36,751
+上方没有被拒绝，你知道，它会
+up here, you know, it'll move
+
+683
+00:38:36,751 --> 00:38:38,848
+重新回到，你知道，
+back up into, you know, the
+
+684
+00:38:38,848 --> 00:38:44,440
+129.01、129.02这个价位。但，你知道，你可以从订单流中看到价格正在被拒绝。
+129.01, 129.02 level. But, you know, you can see in the order flow that price is being rejected.
+
+685
+00:38:45,540 --> 00:38:50,580
+当你看到小单成交时，说明缺乏买盘，缺乏后续跟进，然后市场开始下跌。
+When you're seeing small prints, there's a lack of buying, lack of follow-through, and the market sells off.
+
+686
+00:38:50,840 --> 00:38:52,394
+你知道，你知道，
+You know, you know,
+
+687
+00:38:52,394 --> 00:38:54,725
+你可以用，你知道，你
+you could use, you know, you
+
+688
+00:38:54,725 --> 00:38:57,056
+可以用这些小单成交、这些
+could use these small prints, these
+
+689
+00:38:57,056 --> 00:38:59,387
+比例，作为确认，即市场
+ratios, as confirmation that the market
+
+690
+00:38:59,387 --> 00:39:05,216
+正在拒绝这些更高的价格，多头不愿意将市场进一步推高。
+is rejecting these higher prices, that buyers aren't interested in taking the market any higher.
+
+691
+00:39:05,220 --> 00:39:12,960
+好，这就是第11课的结束，订单流价格拒绝。
+So, that's the end of Lesson 11, Order Flow Price Rejection.
+
+692
+00:39:13,040 --> 00:39:16,490
+在下一课中，我会讨论如何利用订单流
+In the next lesson, I'll discuss how order flow can
+
+693
+00:39:16,490 --> 00:39:18,560
+来确定市场中的支撑位和
+be used to determine support and
+
+694
+00:39:18,560 --> 00:39:21,320
+阻力位，并且使用实时市场信息。
+resistance in the market with real-time market information.
+
+695
+00:39:21,320 --> 00:39:26,440
+要知道，我并不是说要等市场收盘后再计算你的支撑位和阻力位。
+You know, I'm not talking about waiting until the market closes and calculating your support and resistance levels.
+
+696
+00:39:27,460 --> 00:39:29,795
+要知道，你可以在市场交易时
+You know, you could be watching the
+
+697
+00:39:29,795 --> 00:39:32,130
+实时观察市场，并且可以
+market as it's trading, and you can
+
+698
+00:39:32,130 --> 00:39:36,800
+实时看到市场正在形成哪些支撑位和阻力位。
+see in real-time where support and resistance levels are being formed by the market.
+
+699
+00:39:36,800 --> 00:39:39,760
+好，谢谢。这就是第11课的结束。
+So, thank you. That's the end of Lesson 11.
+
+700
+00:39:39,760 --> 00:39:39,880
+谢谢。
+Thank you.
+
+===== END AFTER_TRANSLATE =====

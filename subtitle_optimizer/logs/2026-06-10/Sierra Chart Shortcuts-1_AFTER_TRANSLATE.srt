@@ -1,0 +1,4422 @@
+===== AFTER_TRANSLATE (883 entries) =====
+1
+00:00:00,000 --> 00:00:01,075
+大家好，交易者们。
+Hello, traders.
+
+2
+00:00:01,075 --> 00:00:04,285
+我觉得现在这个阶段
+So I thought it'd be quite useful at this stage.
+
+3
+00:00:04,285 --> 00:00:06,318
+其实，公平地说，我已经
+Well, actually, to be fair, I've
+
+4
+00:00:06,318 --> 00:00:08,690
+完成了高级课程，然后我
+finished the pro course now and I've
+
+5
+00:00:08,690 --> 00:00:11,062
+又回到这里，添加了
+come back and I've added this as
+
+6
+00:00:11,062 --> 00:00:13,773
+这个额外部分，因为我觉得
+an additional sort of bit because I thought
+
+7
+00:00:13,773 --> 00:00:20,891
+这对你们会很有用，能帮你们掌握Sierra Chart的一些快捷键和我常用的功能。
+it'd be quite useful for you to get help with some of the Sierra chart shortcuts and things that I use.
+
+8
+00:00:20,895 --> 00:00:22,456
+这个模板呢，
+So, you know, this particular
+
+9
+00:00:22,456 --> 00:00:24,642
+我已经放进去了，
+template, I have put it in there,
+
+10
+00:00:24,642 --> 00:00:29,639
+但可能对你们来说现在还用不上，要等到第二阶段才相关。
+but it's not going to be relevant for you probably till you get to that stage.
+
+11
+00:00:29,640 --> 00:00:33,635
+这就是我这里展示的第二阶段末尾的模板。
+So it's like the end of stage two template that I'm showing here.
+
+12
+00:00:33,635 --> 00:00:37,235
+但这部分内容很重要，你们现在就得知道。
+But this is relevant. You need to know this stuff now.
+
+13
+00:00:37,235 --> 00:00:39,091
+这能帮你们
+It's going to help you so
+
+14
+00:00:39,091 --> 00:00:41,565
+把Sierra Chart设置成
+you can have your Sierra chart set up
+
+15
+00:00:41,565 --> 00:00:44,349
+和我用的方式类似。
+using it in the similar way that I do.
+
+16
+00:00:44,350 --> 00:00:45,810
+之后你们可以再调整。
+And then you can change it.
+
+17
+00:00:45,810 --> 00:00:47,215
+不调也行，但
+You don't need to, but
+
+18
+00:00:47,215 --> 00:00:49,745
+我觉得这对你们会很有用，因为你们可能看到我
+I thought it'd be useful because you might see
+
+19
+00:00:49,745 --> 00:00:51,993
+做某些操作，然后会疑惑：
+me doing certain things and you might be
+
+20
+00:00:51,993 --> 00:00:58,458
+怎么弄这个？怎么启用全局十字光标？怎么让它在所有图表上显示？
+wondering, oh, how do I get that? How do I get the global crosshair? How do I get this to show across everything?
+
+21
+00:00:58,460 --> 00:01:00,275
+Envy怎么做到的？
+How's Envy doing?
+
+22
+00:01:00,275 --> 00:01:02,735
+抱歉，Envy是怎么做到这个的？
+Excuse me. How's Envy doing this?
+
+23
+00:01:02,735 --> 00:01:04,600
+Envy是怎么做到那个的？
+How's Envy doing that?
+
+24
+00:01:04,600 --> 00:01:09,100
+所以我觉得有必要给你们讲一下，可能我漏了一些。
+So I thought it'd be really useful for me to just go, I might miss something.
+
+25
+00:01:09,100 --> 00:01:11,610
+当然，如果发现漏了，告诉我，我会补上。
+Obviously, let me know and I'll add it on.
+
+26
+00:01:11,610 --> 00:01:17,260
+我这里列了些内容，觉得有必要带大家过一遍。
+But I've got a list of things here that I thought, let me take everyone through.
+
+27
+00:01:17,260 --> 00:01:21,000
+前几个点特别重要，
+The first one or first couple of things are really important,
+
+28
+00:01:21,000 --> 00:01:22,905
+其实是基础。
+right? It's actually fundamental.
+
+29
+00:01:22,905 --> 00:01:26,485
+然后我会讲一些我常用的快捷键，等等。
+Then I'll go through some of the shortcuts that I use and so on and so forth.
+
+30
+00:01:26,485 --> 00:01:32,780
+首先，你们得先做一步，否则成交量加权平均价就无法正常工作。
+So the first thing that I actually need you to do, because otherwise your VWAP is not going to work.
+
+31
+00:01:32,780 --> 00:01:37,844
+成交量加权平均价在第一阶段模板里可用
+So the VWAP will work on the stage one template
+
+32
+00:01:37,844 --> 00:01:40,882
+配合成交量分布图
+with the profile, but you're not
+
+33
+00:01:40,882 --> 00:01:46,959
+但你无法得到我这里的这些延伸线
+going to get these extensions over here that you see me having.
+
+34
+00:01:46,960 --> 00:01:50,745
+你看到的这些延伸线，是自定义成交量加权平均价
+You see these extensions. It's a custom VWAP.
+
+35
+00:01:50,745 --> 00:01:55,575
+要得到它，我一直说，是自定义成交量加权平均价
+And to get that, and look, I say it all the time, custom VWAP.
+
+36
+00:01:55,575 --> 00:01:59,006
+但这并不意味着它是神奇的点金石
+It doesn't mean it's a magical gold elixir
+
+37
+00:01:59,006 --> 00:02:01,579
+不会给你
+that is going to give you
+
+38
+00:02:01,579 --> 00:02:05,439
+通往财富的钥匙
+the answer to the unlock the key to millions.
+
+39
+00:02:05,440 --> 00:02:06,240
+不是
+It's not.
+
+40
+00:02:06,240 --> 00:02:11,905
+它其实和你这里的成交量加权平均价一样
+All it is is, it's just the same VWAP that you have here.
+
+41
+00:02:11,905 --> 00:02:14,100
+现在你可能还不理解成交量加权平均价
+And VWAP won't make sense to you right now.
+
+42
+00:02:14,100 --> 00:02:16,411
+但在后面
+It will make sense to you in the
+
+43
+00:02:16,411 --> 00:02:18,144
+你就会理解了，本质是一样的
+section, but it's the same thing
+
+44
+00:02:18,144 --> 00:02:21,899
+只是允许你把这些线向前延伸
+as the VWAP, but it just allows you to extend these lines forward.
+
+45
+00:02:21,900 --> 00:02:23,270
+仅此而已
+All right. That's all it is.
+
+46
+00:02:23,270 --> 00:02:24,940
+没有魔法，也没有特别之处
+Nothing magical or special.
+
+47
+00:02:24,940 --> 00:02:29,460
+但你现在必须做一件事，所有人都要做
+But, so what I need you to do, right, is, and everyone needs to do this.
+
+48
+00:02:29,460 --> 00:02:33,300
+点击帮助，然后下载最新版本
+What you do is you go to Help, Download Current Version.
+
+49
+00:02:35,080 --> 00:02:36,760
+等一下
+Okay. And then give it a second.
+
+50
+00:02:45,460 --> 00:02:45,940
+好
+Okay.
+
+51
+00:02:45,940 --> 00:02:49,395
+然后会提示软件已下载更新
+And then it will say the software update has been downloaded.
+
+52
+00:02:49,395 --> 00:02:52,320
+需要关闭Sierra Chart等
+Sierra chart needs to be closed, etc, etc.
+
+53
+00:02:52,320 --> 00:02:53,380
+然后点击是
+And then you just click yes.
+
+54
+00:02:55,760 --> 00:02:58,705
+如果有未保存的内容可以先保存
+You can save it if you've got anything to save.
+
+55
+00:02:58,705 --> 00:03:00,139
+我会点是
+I'm going to press yes, but,
+
+56
+00:03:00,139 --> 00:03:02,290
+如果你做了些不想保存的修改
+you know, if you've made some changes that you
+
+57
+00:03:02,290 --> 00:03:05,398
+那就点否，但我会点是
+don't want saved, then obviously click no, but I'm going to hit yes.
+
+58
+00:03:06,940 --> 00:03:09,310
+好，然后会弹出这个窗口
+Okay. And then this window is going to come up.
+
+59
+00:03:09,310 --> 00:03:13,535
+你需要点击安装可选组件
+And I need you to click Install Optional Components.
+
+60
+00:03:13,535 --> 00:03:19,220
+不点这个就无法获取自定义成交量加权平均价
+If you don't click that, you're not going to be able to get the custom VWAP.
+
+61
+00:03:19,220 --> 00:03:20,910
+实际上，所有的成交量加权平均价
+And in fact, none of the VWAPs
+
+62
+00:03:20,910 --> 00:03:22,600
+在第二阶段模板里都无法使用
+are going to work on the Stage
+
+63
+00:03:22,600 --> 00:03:26,464
+第一阶段可以用，没问题。但第二阶段就是不行
+2 template. Stage 1, it will work. You'll be fine. But Stage 2, it's just not going to work.
+
+64
+00:03:27,190 --> 00:03:28,766
+所以你需要点击
+So you need to click
+
+65
+00:03:28,766 --> 00:03:30,657
+安装。它默认是未选中的，你
+Install. It will be unchecked. You
+
+66
+00:03:30,657 --> 00:03:34,439
+需要选中它并安装可选组件，然后点击安装
+need to click that and install Optional Components and then hit Install.
+
+67
+00:03:35,960 --> 00:03:44,980
+好的，这样就安装或重装了Sierra Chart，包含可选组件
+Okay. So that's installed, reinstalled, or the Sierra Chart software, but with Optional Components.
+
+68
+00:03:44,980 --> 00:03:50,720
+刚才有点快，我没想拍这个过程
+So, you know, just to repeat, obviously that was pretty quick. I didn't want to film that.
+
+69
+00:03:50,720 --> 00:03:57,160
+我刚才做的是，下载最新版本，然后勾选安装可选组件
+So all I've done is, so we did Download Current Version. We ticked Install Optional Components.
+
+70
+00:03:57,160 --> 00:04:01,570
+点击后，你会发现它会自动弹出并登录
+Hit that. You would have noticed this would have come up and automatically signed you in.
+
+71
+00:04:01,570 --> 00:04:03,828
+如果没保存用户名和密码，那当然需要
+If you didn't save your username and password, obviously just
+
+72
+00:04:03,828 --> 00:04:04,957
+输入它们，然后
+put that in and then
+
+73
+00:04:04,957 --> 00:04:06,763
+加载图表书，我们已经做过了
+load up the chart book, which we've done.
+
+74
+00:04:06,765 --> 00:04:09,865
+你可能有第一阶段的图表书
+So you might have Stage 1 chart book.
+
+75
+00:04:09,865 --> 00:04:14,160
+没问题，不影响。这些内容对你都有用
+That's fine. It doesn't make any difference. It's all going to be relevant for you.
+
+76
+00:04:14,160 --> 00:04:16,395
+实际上，我建议你在第一阶段就做这个
+And in fact, I recommend you do this at Stage 1.
+
+77
+00:04:16,395 --> 00:04:19,775
+我这里只是用第二阶段的图表书示范
+I'm just using the Stage 2 chart books here.
+
+78
+00:04:19,775 --> 00:04:22,435
+再重复一遍，这不影响
+But again, to repeat, it makes no difference.
+
+79
+00:04:22,435 --> 00:04:26,375
+我建议你在第一阶段就做这个
+I recommend you do this at the Stage 1.
+
+80
+00:04:26,375 --> 00:04:28,080
+然后我要讲一下这个
+And then I'm just going to go through this.
+
+81
+00:04:28,080 --> 00:04:33,560
+我们已经下载了可选组件
+So we've downloaded the Optional Components.
+
+82
+00:04:33,560 --> 00:04:38,345
+第二个重要的操作是编辑
+Then the second thing that's probably quite important for you to do is Edit.
+
+83
+00:04:38,345 --> 00:04:41,215
+还记得吗？把符号转换为当前服务
+And then do you remember, Translate Symbols to Current Service?
+
+84
+00:04:41,215 --> 00:04:47,625
+因为我用的是实时数据，你用的是延迟数据
+Because obviously I've got Live Data Feed. You've got the Delayed Data Feed.
+
+85
+00:04:47,625 --> 00:04:49,860
+再说一遍，这完全没问题
+Which again, to repeat, is absolutely fine.
+
+86
+00:04:49,860 --> 00:04:51,310
+你不需要实时数据
+You don't need the Live Data Feed.
+
+87
+00:04:51,310 --> 00:04:52,140
+别浪费钱
+Don't waste money.
+
+88
+00:04:53,520 --> 00:04:55,700
+模拟交易，一切都能正常工作
+The simulation, everything works fine.
+
+89
+00:04:55,700 --> 00:04:57,080
+你不需要它
+You don't need it.
+
+90
+00:04:57,080 --> 00:04:59,533
+但这意味着你的符号
+But it does mean that obviously your symbols
+
+91
+00:04:59,533 --> 00:05:03,519
+你的符号会和我的一致，需要修改
+are going to be the same as mine. Which you'll need to change.
+
+92
+00:05:03,520 --> 00:05:06,420
+点击编辑，翻译符号到当前服务
+Again, Edit, Translate Symbols to Current Service.
+
+93
+00:05:06,420 --> 00:05:07,995
+这样就全部切换过来了
+And that will flip them all over.
+
+94
+00:05:07,995 --> 00:05:10,010
+这部分我就标记完成了
+So I'll just tick that off the list.
+
+95
+00:05:10,010 --> 00:05:11,988
+还有另外一点
+And then the other thing I
+
+96
+00:05:11,988 --> 00:05:13,307
+我想讲的是
+wanted to cover was
+
+97
+00:05:13,307 --> 00:05:16,934
+时区。这一点非常重要，非常非常重要
+the Time Zone. This is really important. Really, really, really important.
+
+98
+00:05:16,935 --> 00:05:22,450
+点击文件，数据交易服务设置
+You go to File, Data Trade Service Settings.
+
+99
+00:05:22,450 --> 00:05:26,605
+确保时区设为纽约
+Okay, now make sure your Time Zone is set to New York.
+
+100
+00:05:26,605 --> 00:05:31,260
+因为当你在图表里时
+Because the reason I say that is because when you are in a chart, right?
+
+101
+00:05:32,540 --> 00:05:35,210
+我在高级课程里多次提到过
+And I talk about this throughout the Pro section.
+
+102
+00:05:35,210 --> 00:05:35,599
+不用担心
+So don't
+
+103
+00:05:35,599 --> 00:05:36,572
+后面会详细讲解
+worry. This will be covered
+
+104
+00:05:36,572 --> 00:05:39,298
+现在我先快速演示一下
+in a lot of detail. But now I'm just going to quickly show you.
+
+105
+00:05:40,460 --> 00:05:44,260
+抱歉，是图表。然后图表设置，按F5
+Sorry, Chart. And then Chart Settings, where you can press F5.
+
+106
+00:05:45,680 --> 00:05:50,085
+我这里设了ETH的交易时段
+I've got certain hours set in here, which is the ETH.
+
+107
+00:05:50,085 --> 00:05:56,195
+如果你还没学过ETH和RTH的课程，现在可能会觉得不太理解
+Again, this may not make sense right now if you haven't been through the ETH versus RTH sessions.
+
+108
+00:05:56,195 --> 00:05:58,135
+可能现在不太理解
+But all the sessions, right?
+
+109
+00:05:58,135 --> 00:06:03,580
+还有成交量分布图的时段设置
+ETH and then for the Profile, again, which you may not have covered yet.
+
+110
+00:06:03,580 --> 00:06:11,440
+比如E-mini S&P 500，主力时段是上午9:30到4:30
+So in the e-mini S&P, it's 9.30 in the morning to 4.30 is the main pit session.
+
+111
+00:06:11,440 --> 00:06:14,195
+原油是9:00到14:30
+And then for Crude Oil, it's 9 to 2.30.
+
+112
+00:06:14,195 --> 00:06:20,100
+我已把这些时间都设好在模板里了，但都是纽约时间
+I've set all the templates up for you with those timings. But they're New York Times.
+
+113
+00:06:20,100 --> 00:06:25,640
+如果你不设置，点击文件，数据交易设置
+And if you don't do this, File, Data Trade Settings, and change
+
+114
+00:06:25,640 --> 00:06:30,718
+把时区改成纽约，否则比如上午9:30
+this time zone to New York, then where it says 9.30 in
+
+115
+00:06:30,718 --> 00:06:35,796
+它会默认是你当地的9:30
+the morning, for example, it's going to assume it's 9.30 local time.
+
+116
+00:06:36,720 --> 00:06:40,480
+如果你在英国，它会认为
+So if you're in the UK, it's going to assume that you
+
+117
+00:06:40,480 --> 00:06:44,240
+你的成交量分布图要从英国时间9:30开始
+want your market profile to start at 9.30 UK time, which is wrong.
+
+118
+00:06:44,555 --> 00:06:46,805
+但实际你想要的是美国时间9:30
+You want it to start at 9.30 US time.
+
+119
+00:06:46,805 --> 00:06:48,100
+所以你有两个选择
+So you've got two options.
+
+120
+00:06:48,100 --> 00:06:50,751
+要么把电脑时间改成美国时间
+You can either change your clock to match US, but
+
+121
+00:06:50,751 --> 00:06:52,872
+显然你不会想这么做，因为
+obviously you don't want to do that because
+
+122
+00:06:52,872 --> 00:06:55,788
+否则你整个电脑时间都会跟着纽约走
+otherwise your whole computer is going to be matching New York.
+
+123
+00:06:55,790 --> 00:06:57,700
+如果你住在纽约，那没问题，对吧？
+If you live in New York, you're fine, right?
+
+124
+00:06:57,700 --> 00:07:00,070
+但显然很多人并不住在那里
+But obviously there's going to be a lot of you that don't.
+
+125
+00:07:00,070 --> 00:07:01,861
+有些人住在美国的其他州
+Some of you are going to live
+
+126
+00:07:01,861 --> 00:07:03,652
+有些人住在美国境外
+in different states in America. Some of
+
+127
+00:07:03,652 --> 00:07:05,187
+有些人在英国、欧洲，不管你在哪里
+you are going to live outside
+
+128
+00:07:05,187 --> 00:07:09,282
+不管你在美国、英国、欧洲，还是其他地方
+of America. Some of you are going to be in the UK, Europe, wherever you are.
+
+129
+00:07:09,285 --> 00:07:13,380
+所以为了管理这个问题，只让Sierra Chart用纽约时间
+So to manage that and only make Sierra chart New
+
+130
+00:07:13,380 --> 00:07:16,656
+这是个很棒的功能，你只需
+York time, it's a fantastic feature. You just
+
+131
+00:07:16,656 --> 00:07:21,979
+进入时区设置，选择纽约就能实现
+go time zone and then New York basically allows you to do that.
+
+132
+00:07:23,220 --> 00:07:24,466
+好的，然后这些设置
+Okay. And then this stuff,
+
+133
+00:07:24,466 --> 00:07:26,709
+你的肯定会有所不同，因为
+obviously yours is going to be slightly different because
+
+134
+00:07:26,709 --> 00:07:28,454
+我用的是实时数据源
+obviously I'm using the live data feed.
+
+135
+00:07:28,455 --> 00:07:30,180
+所以这些部分你不用动
+So you don't want to touch any of that stuff.
+
+136
+00:07:30,180 --> 00:07:32,855
+确保保持原样即可
+Just make sure that's that.
+
+137
+00:07:32,855 --> 00:07:38,560
+还有什么要讲的？时区设置，还有...
+And then what else did I want to cover? Time zone and then...
+
+138
+00:07:38,560 --> 00:07:47,260
+好的，那我先带你过一遍我的快捷键设置
+Okay. So what I'll do is I'll go through all my keyboard shortcuts with you first.
+
+139
+00:07:47,260 --> 00:07:56,160
+我用了...我用了多少快捷键？四五个吧
+So I use... How many shortcuts am I using? Four, five shortcuts.
+
+140
+00:07:56,160 --> 00:08:01,070
+好的，我来演示如何设置键盘快捷键
+Okay. So let me show you how to set keyboard. Keyboard shortcuts.
+
+141
+00:08:01,070 --> 00:08:03,269
+你只需要进入
+So you just go to the
+
+142
+00:08:03,269 --> 00:08:05,468
+主控制台，也就是这个界面，对吧？
+main console, which is this, right?
+
+143
+00:08:05,468 --> 00:08:11,333
+然后进入全局设置，我会展示所有快捷键
+And you go to global settings and then I'm going to show you all the shortcuts.
+
+144
+00:08:11,335 --> 00:08:17,120
+抱歉，全局设置里有个自定义键盘快捷键选项
+Sorry that I have global settings and then it's customised keyboard shortcuts.
+
+145
+00:08:17,120 --> 00:08:18,418
+好的，你可以
+Okay. So you can
+
+146
+00:08:18,418 --> 00:08:20,366
+记下这些，暂停视频
+make a note of these, pause
+
+147
+00:08:20,366 --> 00:08:22,314
+都行，但我会告诉你我用的是哪些
+it, whatever, but I'm going to
+
+148
+00:08:22,314 --> 00:08:27,184
+然后我们再一起过一遍
+tell you which ones I have and then we can go through them as well.
+
+149
+00:08:27,185 --> 00:08:35,575
+好的，那个，我用十字光标的快捷键是W
+So, um, so I use, uh, for the crosshair, okay, I use W, right?
+
+150
+00:08:35,575 --> 00:08:39,585
+但你可以改，不用和我一样，不愿意就不用，无所谓
+But you can change it. Don't use the same thing as me. If you don't want to, it doesn't matter.
+
+151
+00:08:39,585 --> 00:08:41,315
+选你觉得顺手的就行
+Use whatever's comfortable for you.
+
+152
+00:08:41,315 --> 00:08:45,360
+每个人习惯不同，你可能想用C作十字光标
+Everyone has their own, you know, you might want C as crosshair.
+
+153
+00:08:45,360 --> 00:08:48,760
+我用的是W，这样我用着舒服
+I just have it as W, okay? That's how I like it.
+
+154
+00:08:48,760 --> 00:08:51,990
+你可以用Ctrl、Alt
+So what you do is you just, you can use control, alt,
+
+155
+00:08:51,990 --> 00:08:52,715
+Shift我也不用
+shift. I don't.
+
+156
+00:08:52,715 --> 00:08:54,725
+或者按X之类的
+You can press X or whatever.
+
+157
+00:08:54,725 --> 00:08:58,430
+比如我设成W，然后点分配
+Let's say I set it as W and then you hit assign, okay?
+
+158
+00:08:58,430 --> 00:09:00,635
+这样就分配好了
+And then that will assign it.
+
+159
+00:09:00,635 --> 00:09:02,840
+这是我用的第一个快捷键
+Um, so that's the first one I use.
+
+160
+00:09:02,840 --> 00:09:08,440
+手形工具我用Q，等会给你讲这些
+Then for hand, I use Q and I'll tell you what these things are in a moment.
+
+161
+00:09:09,540 --> 00:09:18,520
+让我再看看我设了什么
+And then, uh, let me see what else I've got. Um, just give me a second.
+
+162
+00:09:20,020 --> 00:09:23,240
+其实你可能会用到这些功能
+Again, you know, you might start using some of these things.
+
+163
+00:09:23,240 --> 00:09:28,040
+我自己不太用这些，比如画线
+For me, I don't really use many of these things, lines or whatever.
+
+164
+00:09:28,040 --> 00:09:30,430
+如果你用得上，也没问题
+If you end up using them, there's nothing wrong with it.
+
+165
+00:09:30,430 --> 00:09:32,110
+但我个人不用
+But I personally don't.
+
+166
+00:09:32,110 --> 00:09:33,159
+水平射线
+Then horizontal ray,
+
+167
+00:09:33,159 --> 00:09:34,907
+我设的是F
+I use as F. That's
+
+168
+00:09:34,907 --> 00:09:39,453
+用来标记我的控制点，你也可以这样设
+to mark my point of control, um, which you can do as well.
+
+169
+00:09:39,455 --> 00:09:47,470
+最后，我设了两个，抱歉
+And then finally, I've got, uh, uh, two things, sorry. It's extending rectangle.
+
+170
+00:09:47,470 --> 00:09:48,620
+稍等一下
+Just bear with me.
+
+171
+00:09:48,620 --> 00:09:52,520
+延展矩形是A
+Extending rectangle is A, okay?
+
+172
+00:09:52,520 --> 00:09:54,800
+你可以设成自己喜欢的
+So you can set that to whatever you want.
+
+173
+00:09:54,800 --> 00:09:56,805
+记得点分配
+And then remember to set a sign.
+
+174
+00:09:56,805 --> 00:10:05,760
+嗯，等等，我找一下，现在有点找不到。
+Um, and then I've got, uh, just give me a second. Because I can't seem to find it.
+
+175
+00:10:05,760 --> 00:10:10,915
+好，找到了，直线工具
+Uh, there you go. Line, okay?
+
+176
+00:10:10,915 --> 00:10:12,980
+我把直线设成了E
+I've got line set as E.
+
+177
+00:10:12,980 --> 00:10:15,650
+好的，这就是我的全部快捷键
+Okay, and that's it. That's my shortcuts. All right?
+
+178
+00:10:15,650 --> 00:10:16,800
+这些就是我的全部快捷键
+Those are all my shortcuts.
+
+179
+00:10:16,800 --> 00:10:26,925
+再重复一遍：十字光标是W，手形工具是Q
+Um, so just to repeat, it's crosshair is W, hand is Q, uh, line is E.
+
+180
+00:10:26,925 --> 00:10:29,615
+直线是E，也就是Q、W、E
+So Q, W, E. And I'm going to go through them.
+
+181
+00:10:29,615 --> 00:10:31,456
+然后
+Um, and then
+
+182
+00:10:31,456 --> 00:10:34,525
+矩形框工具是
+extending rectangle is, uh, wherever
+
+183
+00:10:34,525 --> 00:10:36,980
+A键，好的
+it is. A, okay,
+
+184
+00:10:36,980 --> 00:10:44,347
+射线工具我设的是F键
+and, uh, I think it's the ray that I've set as F.
+
+185
+00:10:44,350 --> 00:10:45,270
+就这些
+That's it.
+
+186
+00:10:45,270 --> 00:10:49,130
+好，这些就是我的快捷键了
+我刚才演示了用法
+Okay, so those are all my shortcuts. And I showed you how I do them.
+
+187
+00:10:49,130 --> 00:10:51,210
+全局设置，对吧？
+Global settings. All right?
+
+188
+00:10:51,210 --> 00:10:53,570
+现在我来展示这些功能
+Now let me show you what those things are.
+
+189
+00:10:53,570 --> 00:10:55,440
+还有一点需要注意
+Um, but there is one more thing.
+
+190
+00:10:55,440 --> 00:11:03,960
+这个十字光标，对吧
+我设的是W键
+Um, so, this crosshair, right, I have it as, um, W, as I said.
+
+191
+00:11:03,960 --> 00:11:05,405
+如果你想让它
+Now what you need to do,
+
+192
+00:11:05,405 --> 00:11:06,850
+在所有图表上同时显示
+if you want it to be
+
+193
+00:11:06,850 --> 00:11:09,499
+我喜欢这样
+global across all your charts, which I like it to be,
+
+194
+00:11:09,500 --> 00:11:16,915
+你需要去工具栏
+you go to, um, what is it? Tools, I think.
+
+195
+00:11:16,915 --> 00:11:21,060
+工具，对，看见全局光标选项了吗？
+Tools, yeah. And you see this global cursor on, okay?
+
+196
+00:11:21,060 --> 00:11:22,836
+需要打开这个设置
+You need to set that on, because
+
+197
+00:11:22,836 --> 00:11:24,105
+如果不打开
+if you leave it off,
+
+198
+00:11:24,105 --> 00:11:27,658
+会怎样呢？我移动一下
+what's going to happen is, um, let me just move this to the side.
+
+199
+00:11:27,660 --> 00:11:29,930
+看见了吗？只会在一个图表上显示
+Can you see it will only appear on one chart?
+
+200
+00:11:29,930 --> 00:11:33,425
+不会在所有图表上同时出现
+It won't appear on all the charts at the same time.
+
+201
+00:11:33,425 --> 00:11:37,685
+如果你只想在一个图表上显示
+当然也可以
+If you want it just to appear on one chart at a time, absolutely fine.
+
+202
+00:11:37,685 --> 00:11:39,200
+我喜欢在所有图表上都显示
+Um, I like it on all of them.
+
+203
+00:11:39,200 --> 00:11:46,590
+所以我再次进入工具
+打开全局光标，点击启用
+So I go to, again, tools, global cursor on. Click that. All right, set that.
+
+204
+00:11:46,590 --> 00:11:52,610
+现在看见了吗？
+任何图表上都能看到光标位置
+Now can you see? I can see on any chart what point I'm at.
+
+205
+00:11:52,610 --> 00:11:54,830
+比如你
+So for example, if you're
+
+206
+00:11:54,830 --> 00:11:57,938
+在这个大图表上
+on this big, um, okay, this chart
+
+207
+00:11:57,938 --> 00:12:00,158
+比如这个ETH图表
+here, this ETH, and let's
+
+208
+00:12:00,158 --> 00:12:04,598
+或者说，其实换一种方式
+say for example, well in fact, let's do it differently.
+
+209
+00:12:04,600 --> 00:12:06,889
+假设你在VWAP图表上
+Let's say you're on one of the VWAP
+
+210
+00:12:06,889 --> 00:12:08,605
+想快速
+charts and you want to roughly
+
+211
+00:12:08,605 --> 00:12:12,038
+想看周线成交量加权平均价的位置，可以打开全局十字光标
+see where weekly VWAP is, you can turn the global crosshair on.
+
+212
+00:12:12,040 --> 00:12:15,580
+看到了吗？我能看到它在所有图表上的位置
+Can you see? I can see it, where it is across the board.
+
+213
+00:12:15,580 --> 00:12:19,990
+我特别喜欢这个功能，能快速定位各个点
+So I love using that because it allows me to just see where things are.
+
+214
+00:12:19,990 --> 00:12:23,390
+比如，我现在可能指向季度图
+So for example, I might now be pointing at my quarterly.
+
+215
+00:12:23,390 --> 00:12:25,572
+或者指向成交量分布图
+I might be pointing at my volume
+
+216
+00:12:25,572 --> 00:12:27,130
+然后我想看
+profile and I want to
+
+217
+00:12:27,130 --> 00:12:30,559
+今天控制点大概的位置
+see roughly where's the, where's this, uh, POC for the day.
+
+218
+00:12:30,560 --> 00:12:32,621
+按W键，启用全局
+Then I hit W, go global
+
+219
+00:12:32,621 --> 00:12:34,682
+十字光标，然后你就能看到
+crosshair and then you can see,
+
+220
+00:12:34,682 --> 00:12:38,118
+现在我在ETH图上也能看到它了
+I can see it on now my ETH chart there.
+
+221
+00:12:38,120 --> 00:12:39,802
+其实就是
+So what it is, is
+
+222
+00:12:39,802 --> 00:12:42,157
+对，我之前给你们演示过键盘
+right, I showed you the, um, keyboard
+
+223
+00:12:42,157 --> 00:12:45,858
+快捷键，比如指针、手形工具之类的
+shortcuts for the pointers, et cetera, hand and all of that.
+
+224
+00:12:45,860 --> 00:12:49,330
+Q键是普通指针
+Q is just this, normal pointer.
+
+225
+00:12:49,330 --> 00:12:53,680
+W键点一下，就切换成十字光标
+W, I click it, right, and it gives me the crosshair.
+
+226
+00:12:53,680 --> 00:12:57,470
+E键是直线工具
+And then E is just the, the line.
+
+227
+00:12:57,470 --> 00:12:58,960
+还记得我把E设成直线工具吗？
+Do you remember I set that as E?
+
+228
+00:13:00,940 --> 00:13:02,860
+这样我就能
+So what that allows me to do
+
+229
+00:13:02,860 --> 00:13:04,780
+画线了，其实我不怎么用趋势线
+is draw, I don't really use trend
+
+230
+00:13:04,780 --> 00:13:09,718
+但我喜欢在图表上标记一些点，比如这里
+lines as you know, but I do like to, uh, mark things on my chart like there or,
+
+231
+00:13:09,720 --> 00:13:11,670
+或者那里
+you know, over here
+
+232
+00:13:11,670 --> 00:13:14,596
+可能用W键
+I might, um, use W and
+
+233
+00:13:14,596 --> 00:13:17,522
+然后说，好吧，大概
+then say, all right, approximately, um,
+
+234
+00:13:17,522 --> 00:13:21,911
+比如周线成交量加权平均价大概在3.015
+you know, let's say weekly VWAP is about 3.015, right?
+
+235
+00:13:22,400 --> 00:13:28,875
+然后在这里标上3.015，行吗？
+And then I'll just mark it on here, about 3.015, okay?
+
+236
+00:13:28,875 --> 00:13:34,610
+然后删掉这些标记，行了
+And then I'll just get rid of these, okay?
+
+237
+00:13:34,610 --> 00:13:37,820
+基本就这些功能
+So that's really, uh, all I'm using, there.
+
+238
+00:13:39,940 --> 00:13:44,407
+还有一个设置，好
+Now, there is a setting, okay,
+
+239
+00:13:44,407 --> 00:13:48,874
+你应该会用到
+that you want to be using
+
+240
+00:13:48,874 --> 00:13:57,064
+是在工具里，好的，工具然后是工具设置
+and that is for tools, okay, tools and then tool settings,
+
+241
+00:13:57,065 --> 00:14:01,125
+好，你可以暂停视频,
+okay? So you can pause this,
+
+242
+00:14:01,125 --> 00:14:04,730
+查看我的工具设置，可以按你的需求调整。
+have a look at all my tool settings, you can set them exactly the way you want.
+
+243
+00:14:04,730 --> 00:14:07,205
+自己试试这些设置，我不会逐一讲解,
+Play around with these, I'm not going to go through them one by one,
+
+244
+00:14:07,205 --> 00:14:10,005
+但告诉你，其中有一个是关键。
+but I tell you there are some, one key one.
+
+245
+00:14:10,005 --> 00:14:14,260
+你可以在这里查看，如果你想用和我一样的工具设置
+Obviously you can check here, you know, if you want to use the same tool settings as me,
+
+246
+00:14:14,260 --> 00:14:19,565
+如果想用和我一样的工具设置，暂停视频，确认设置一致，但这是最关键的。
+again, pause the video, just make sure you've got the same thing, but this is the crucial one.
+
+247
+00:14:19,565 --> 00:14:24,055
+单次使用工具后，切换到图表数值，好吗？
+After single tool, use change to chart values, okay?
+
+248
+00:14:24,055 --> 00:14:26,655
+因为如果你设置为无，
+Because what's going to happen, if you have it as none,
+
+249
+00:14:26,655 --> 00:14:32,445
+然后点击确定，你会发现，比如画趋势线时，
+and then I click OK, you'll notice, if you want to use things like the trend line,
+
+250
+00:14:32,445 --> 00:14:36,600
+它会一直画下去，基本上。对吧？
+if you, it's just going to keep drawing it, basically. Right?
+
+251
+00:14:36,600 --> 00:14:39,472
+你无法切换回去，
+You won't be able to go back and switch it
+
+252
+00:14:39,472 --> 00:14:42,919
+除非按W键，回到这个状态，
+up unless you press W, which will take you back to this,
+
+253
+00:14:45,000 --> 00:14:46,970
+否则它会一直画下去。
+it's just going to keep drawing it.
+
+254
+00:14:46,970 --> 00:14:50,640
+我习惯设置为单次使用。
+What I like to do is, have it as a single use.
+
+255
+00:14:50,640 --> 00:14:53,340
+也就是说，
+So what I mean by that is, let me just get rid of these.
+
+256
+00:15:00,120 --> 00:15:02,135
+假设我画趋势线，
+Let's say I draw the trend line,
+
+257
+00:15:02,135 --> 00:15:06,640
+一旦画完，我希望光标自动回到全局十字光标，
+as soon as I've clicked it, I want my pointer to go back to my global crosshair,
+
+258
+00:15:06,640 --> 00:15:10,180
+否则下次点击，它还会继续画。
+because if I don't, the next time I click it, it's just going to keep drawing it.
+
+259
+00:15:11,400 --> 00:15:21,820
+所以我会进入工具，然后工具设置。
+So what I do is, as I said, is I go to tools, and then I go to tool settings.
+
+260
+00:15:23,240 --> 00:15:28,920
+单次使用后，比如单次画趋势线，效果一样，好吗，
+After single use, so single trend line, it will be the same, okay,
+
+261
+00:15:28,920 --> 00:15:35,120
+如果不这样设置，会让你抓狂，因为会发生这种情况，
+for, it's going to drive you crazy, if you don't do this, because what will happen is,
+
+262
+00:15:35,120 --> 00:15:39,985
+另外一个快捷键是A，对吧？
+so the other shortcut I had was A, right?
+
+263
+00:15:39,985 --> 00:15:43,750
+用于绘制你需要的延展矩形。
+And that was for this extending rectangle that you're going to need.
+
+264
+00:15:43,750 --> 00:15:47,625
+但如果不设置，你会到处画这些矩形，对吧？
+But what's going to happen is, you're just going to keep drawing them everywhere, right?
+
+265
+00:15:47,625 --> 00:15:50,800
+除非你切换回十字光标。
+Unless you, obviously, flip back to the crosshair.
+
+266
+00:15:50,800 --> 00:15:54,354
+所以每个工具都是如此。你希望
+So it's every type of tool you're drawing. What you
+
+267
+00:15:54,354 --> 00:15:57,908
+画完一个工具后，
+want it to do is, once you've drawn your tool
+
+268
+00:15:57,908 --> 00:16:01,818
+自动切换回全局十字光标。
+once, you want it to automatically go back to global crosshair.
+
+269
+00:16:01,820 --> 00:16:03,600
+试试看，你就知道我的意思了。
+Play around with it, you'll see exactly what I mean.
+
+270
+00:16:03,600 --> 00:16:10,840
+所以我会这样设置，否则，你看，它会一直画下去。
+So what I then do is, so, you know, rather than it, do you see, it's just constantly drawing them.
+
+271
+00:16:12,940 --> 00:16:14,180
+我先把这个去掉。
+I'll just get rid of that.
+
+272
+00:16:15,300 --> 00:16:21,485
+我把它改成工具，工具设置，
+Once I change that to tools, tool settings, where are we,
+
+273
+00:16:21,485 --> 00:16:23,607
+工具设置，然后
+tool settings, and then after
+
+274
+00:16:23,607 --> 00:16:25,729
+单次使用，改成图表
+single use, change to chart
+
+275
+00:16:25,729 --> 00:16:30,398
+数值，你可以改成指针，试试看。
+values, you can change it to pointer, play around with them.
+
+276
+00:16:30,400 --> 00:16:32,250
+如果你想改成
+If you wanted to change it
+
+277
+00:16:32,250 --> 00:16:33,791
+手形，也就是说
+to hand, you know, so
+
+278
+00:16:33,791 --> 00:16:36,874
+会变成鼠标指针，点击手形。
+it just changes it to the mouse pointer, click hand.
+
+279
+00:16:36,875 --> 00:16:39,825
+但我喜欢改成全局十字光标。
+But I like it to change to the global crosshair.
+
+280
+00:16:39,825 --> 00:16:44,105
+画完图形后，我点图表数值，再点确定。
+Once I've drawn something, so I click on chart values, and then click OK.
+
+281
+00:16:44,105 --> 00:16:45,118
+然后看这里，
+And then here, look,
+
+282
+00:16:45,118 --> 00:16:46,638
+图表数值，你可以
+chart values, you can just make
+
+283
+00:16:46,638 --> 00:16:48,158
+确保和我设置一样，
+sure you've got the same settings
+
+284
+00:16:48,158 --> 00:16:52,213
+默认应该是一样的，你可以暂停视频确认。
+as me, should be that by default, but you can pause the video, just make sure.
+
+285
+00:16:52,215 --> 00:16:53,210
+好吧，其实是这样，
+Okay, so, because look,
+
+286
+00:16:53,210 --> 00:16:54,702
+我得老实说，
+I'm going to be honest with
+
+287
+00:16:54,702 --> 00:16:56,692
+我用这个软件很多年了。
+you, obviously, I've been using this thing for
+
+288
+00:16:56,692 --> 00:16:58,682
+可能有些设置我改过后忘了，
+many years. There may have been a couple
+
+289
+00:16:58,682 --> 00:17:04,902
+抱歉，但你能在这里看到，可以直接复制，对吧？
+of things I've changed that I've forgotten about, and I apologize, but you can see it all here, so you can just copy it, alright?
+
+290
+00:17:04,905 --> 00:17:09,575
+如果我有什么你没有的设置，但我觉得应该都一样，其实。
+If I've got anything that you don't have, but I think it's all the same, to be honest.
+
+291
+00:17:09,575 --> 00:17:10,670
+这里也一样。
+And then same here.
+
+292
+00:17:10,670 --> 00:17:15,820
+像我说的，主要是图表数值，你可以试试手形，随你喜欢。
+Like I said, the main thing is chart values, or you can play around with it, hand, whatever you want.
+
+293
+00:17:15,820 --> 00:17:18,040
+我设的是图表数值，点确定。
+I've got it as chart values, click OK.
+
+294
+00:17:18,040 --> 00:17:19,941
+这样做的效果是，
+And then again, what that
+
+295
+00:17:19,941 --> 00:17:22,603
+每次你画图形，比如趋势线，
+does is, this time, every time you
+
+296
+00:17:22,603 --> 00:17:25,645
+看到了吗？
+draw something, so say a trendline, do you
+
+297
+00:17:25,645 --> 00:17:29,448
+会自动切回我的全局十字光标。
+see? It just goes back automatically to my global clutter.
+
+298
+00:17:29,450 --> 00:17:32,160
+你的配置文件也一样。
+Same for your profile.
+
+299
+00:17:33,980 --> 00:17:37,895
+我把A设成了延伸矩形。就这些。
+I've got A as the extending rectangle. That's it.
+
+300
+00:17:37,895 --> 00:17:39,390
+不会一直画下去。就这些。
+It won't keep drawing. That's it.
+
+301
+00:17:39,390 --> 00:17:46,060
+它只会画一次，然后你可以自己调整延伸矩形。
+It's just drawn it once, and then you can just adjust your extending rectangle if you wish.
+
+302
+00:17:47,500 --> 00:17:50,500
+也可以调整趋势线，如果你愿意。
+You can adjust the trendline if you wish.
+
+303
+00:17:51,740 --> 00:17:54,500
+好的，这就是这个设置。
+OK, so that is that setting.
+
+304
+00:17:54,500 --> 00:18:00,145
+我已经给你演示了自定义快捷键中的四个快捷方式。
+So I've taken you through four of the shortcuts that I showed you in the customized keyboard shortcuts.
+
+305
+00:18:00,145 --> 00:18:01,975
+一共有五个，对吧？
+There was five, wasn't there?
+
+306
+00:18:01,975 --> 00:18:02,910
+再重复一遍，
+So just to
+
+307
+00:18:02,910 --> 00:18:04,469
+Q键是...
+repeat, Q was... Do you
+
+308
+00:18:04,469 --> 00:18:09,459
+看见了吗？我点Q，会自动跳到鼠标光标位置。
+see? I click Q and it just takes me automatically to my hand or mouse pointer.
+
+309
+00:18:10,620 --> 00:18:14,580
+W是全局十字光标，所有图表上都会显示。
+W is the global crosshair, which you can see across everywhere.
+
+310
+00:18:14,580 --> 00:18:18,700
+E是趋势线。这三个是我主要用的。
+E is the trendline. So those are really the main three I use.
+
+311
+00:18:18,700 --> 00:18:26,580
+F键我用来标记控制点/核心成交区。
+And then I also use F to mark my point of control.
+
+312
+00:18:26,580 --> 00:18:29,980
+好的。然后你可以进入图表绘制属性。
+OK. And then with that, you can go chart drawing properties.
+
+313
+00:18:29,980 --> 00:18:32,055
+你可以自己试试这些设置。
+And guys, you can mess around with this. All right.
+
+314
+00:18:32,055 --> 00:18:35,965
+我让它延伸了。抱歉，我设置的是延伸模式。
+I extend it. Sorry. I have it as extended.
+
+315
+00:18:35,965 --> 00:18:36,840
+好的。
+OK.
+
+316
+00:18:36,840 --> 00:18:39,620
+因为我想让它延伸到最右边。
+Obviously, because I want it to go right to the end.
+
+317
+00:18:39,620 --> 00:18:42,065
+这就是我得到的效果。
+And then this is what I've got.
+
+318
+00:18:42,065 --> 00:18:45,000
+我喜欢显示价格，不想显示的话就关掉。
+I like it to show the price. If you don't want it to, don't.
+
+319
+00:18:46,180 --> 00:18:46,540
+好的。
+OK.
+
+320
+00:18:46,540 --> 00:18:49,540
+你可以像我这样设置。
+You can set it how I've got it.
+
+321
+00:18:51,380 --> 00:18:59,545
+我认为我已经把它设为默认了。
+Now, I believe I've got this set as default.
+
+322
+00:18:59,545 --> 00:19:03,630
+你要做的是点击其中一个。
+So what you want to do is you click on one.
+
+323
+00:19:03,630 --> 00:19:06,080
+我把它命名为关键假设水平。
+Now, I've got it called key hypo level.
+
+324
+00:19:07,680 --> 00:19:09,990
+我也不知道为什么起这个名，但就是这么叫的。
+I don't know why I've called it that. But I do.
+
+325
+00:19:09,990 --> 00:19:10,220
+好的。
+All right.
+
+326
+00:19:11,600 --> 00:19:13,450
+TC1是你的默认模板。
+So TC1 is your default.
+
+327
+00:19:13,450 --> 00:19:16,025
+这就是你设置默认模板的方式。
+So that's how you always set your default.
+
+328
+00:19:16,025 --> 00:19:18,555
+点保存，起个你喜欢的名字。
+You just hit save. Call it what you want.
+
+329
+00:19:18,555 --> 00:19:18,855
+好的。
+All right.
+
+330
+00:19:18,855 --> 00:19:22,730
+可以叫POC标记，可能更贴切。
+You can call it POC Marker. It's probably more relevant.
+
+331
+00:19:22,730 --> 00:19:23,090
+好的。
+Right.
+
+332
+00:19:23,090 --> 00:19:24,000
+就叫POC标记。
+POC Marker.
+
+333
+00:19:25,000 --> 00:19:26,940
+你可以设置颜色，这是我的颜色。
+You can set the color. That's my color.
+
+334
+00:19:26,940 --> 00:19:27,335
+好。
+All right.
+
+335
+00:19:27,335 --> 00:19:30,030
+选你喜欢的颜色。
+Use whatever color you want.
+
+336
+00:19:30,030 --> 00:19:31,540
+这是我的风格。
+That's my style.
+
+337
+00:19:31,540 --> 00:19:32,695
+这是我的线宽。
+That's my width.
+
+338
+00:19:32,695 --> 00:19:35,540
+喜欢的话就复制吧。
+OK, guys. Just copy it if you want.
+
+339
+00:19:35,540 --> 00:19:37,070
+随你怎么设置。
+Do what you want, really.
+
+340
+00:19:37,070 --> 00:19:38,250
+选适合你的就行。
+Whatever suits you.
+
+341
+00:19:38,250 --> 00:19:42,355
+然后像我说的，点这里，点TC1。
+Then, like I said, go here. Click TC1.
+
+342
+00:19:42,355 --> 00:19:43,720
+随便起个名，然后保存。
+Call it what you want and hit save.
+
+343
+00:19:44,980 --> 00:19:46,480
+好，然后点确定。
+OK. And then hit OK.
+
+344
+00:19:46,480 --> 00:19:50,290
+之后每次默认就会这样。
+And then every time, it's just going to, by default.
+
+345
+00:19:50,290 --> 00:19:51,825
+默认就会显示成这样。
+It's just going to come up like that.
+
+346
+00:19:51,825 --> 00:19:52,335
+好。
+All right.
+
+347
+00:19:52,335 --> 00:19:54,935
+记住，TC1是你的默认设置。
+So remember, TC1 is your default.
+
+348
+00:19:54,935 --> 00:19:58,370
+延展矩形也是一样。
+And it's the same thing for your extending rectangle.
+
+349
+00:19:58,370 --> 00:20:01,840
+我很早之前就设好了。
+Again, this I've set a long time ago.
+
+350
+00:20:01,840 --> 00:20:06,600
+有时候我默认它已经是这个设置了。
+So, sometimes I take it for granted that it's already that by default.
+
+351
+00:20:06,600 --> 00:20:11,020
+不过我也不太记得自己怎么设的。
+But again, look, I can't remember exactly how I've set mine.
+
+352
+00:20:11,020 --> 00:20:12,955
+但你可以复制我的设置。
+But you can copy mine if you want.
+
+353
+00:20:12,955 --> 00:20:14,675
+这是我的轮廓。
+That's my outline.
+
+354
+00:20:14,675 --> 00:20:16,350
+这是我的风格。
+That's my style.
+
+355
+00:20:16,350 --> 00:20:16,925
+好。
+All right.
+
+356
+00:20:16,925 --> 00:20:18,080
+这是我的填充色。
+That's my fill color.
+
+357
+00:20:19,320 --> 00:20:20,780
+这是我的透明度。
+That's my transparency.
+
+358
+00:20:20,780 --> 00:20:22,470
+这样效果。
+To have it like that.
+
+359
+00:20:22,470 --> 00:20:24,280
+想和我一样的话，可以这样设。
+If you want it the same as me, you can have it.
+
+360
+00:20:24,280 --> 00:20:27,520
+这是我勾选的选项。
+This is what I've got ticked.
+
+361
+00:20:27,520 --> 00:20:30,700
+好，还有什么设置？
+OK. What else have I done?
+
+362
+00:20:30,700 --> 00:20:31,380
+就这些。
+That's it.
+
+363
+00:20:31,380 --> 00:20:33,095
+看，显示价格标签。
+Look, show price labels.
+
+364
+00:20:33,095 --> 00:20:37,650
+抱歉，显示价格标签。
+Excuse me. OK. So, showing price labels.
+
+365
+00:20:37,650 --> 00:20:40,725
+标签在右侧，价格标签居中对齐。
+Labels on right. Center price labels on level.
+
+366
+00:20:40,725 --> 00:20:42,950
+否则会跳到两边。
+Otherwise, it will flick to the outsides.
+
+367
+00:20:42,950 --> 00:20:44,475
+试试这些选项。
+See, play around with these.
+
+368
+00:20:44,475 --> 00:20:47,300
+暂停看，能看到我的设置。
+But look, pause it. You can see exactly what settings I have.
+
+369
+00:20:47,300 --> 00:20:52,730
+之前我会把它设为默认。
+And what I would have done at some stage is to make this default.
+
+370
+00:20:52,730 --> 00:20:55,775
+每次按A键，
+So, every time I press A and
+
+371
+00:20:55,775 --> 00:20:57,950
+出现这个界面，
+it does this, I must
+
+372
+00:20:57,950 --> 00:21:01,865
+我之前应该用TC保存过。
+have a long time ago done it as TC.
+
+373
+00:21:01,865 --> 00:21:04,520
+这些功能我现在很少用了。
+These are things I don't really use that much anymore.
+
+374
+00:21:05,900 --> 00:21:09,070
+可以自己调整。
+So, you know, you can fiddle around with it.
+
+375
+00:21:09,070 --> 00:21:14,620
+这些年我保存过，但现在不用了。
+Over the years, I've obviously saved these and I don't really use them anymore, like I said.
+
+376
+00:21:14,620 --> 00:21:21,135
+比如进入下个部分会用到。
+But if you want, for example, this will become relevant when you go into the section.
+
+377
+00:21:21,135 --> 00:21:23,580
+回到重点，抱歉。
+In fact, so just come back to the point, I beg your pardon.
+
+378
+00:21:23,580 --> 00:21:28,775
+如果想设为默认，每次按A键都会调用这些设置
+If you want this to be your default, so every time you press A, these settings come up.
+
+379
+00:21:28,775 --> 00:21:39,280
+记得点TC1，可以随便命名，比如‘复合标记’
+Remember, click TC1. Call it what you want. You know, you might want to call it composite marker.
+
+380
+00:21:40,560 --> 00:21:42,120
+点保存。
+Hit save.
+
+381
+00:21:42,120 --> 00:21:43,285
+对，保存。
+Right. Save it.
+
+382
+00:21:43,285 --> 00:21:44,065
+点确定。
+Hit OK.
+
+383
+00:21:44,065 --> 00:21:46,940
+之后每次按A键，
+And then every time, sorry, you hit A.
+
+384
+00:21:48,320 --> 00:21:52,700
+就会显示同样的设置。
+OK. It's just going to show the same thing.
+
+385
+00:21:55,040 --> 00:21:55,640
+好。
+OK.
+
+386
+00:21:55,640 --> 00:22:00,440
+想要其他设置，打开图表绘图属性。
+And if you want other ones, right, so you open it up, go to chart drawing properties.
+
+387
+00:22:02,340 --> 00:22:05,885
+比如前值区域要不同。
+Let's say you want your prior value area to be different.
+
+388
+00:22:05,885 --> 00:22:11,475
+可以修改，我随便改一下。
+What you can do is you can change. I'm going to do it randomly, guys.
+
+389
+00:22:11,475 --> 00:22:17,100
+比如改成这个颜色，还有填充。
+All right. You can change it to say that color and then the fill.
+
+390
+00:22:19,500 --> 00:22:20,440
+就设成这样。
+Let's do it as that.
+
+391
+00:22:20,440 --> 00:22:22,165
+这就是你的前期价值区域
+That's your prior value area.
+
+392
+00:22:22,165 --> 00:22:23,295
+随便你
+Whatever.
+
+393
+00:22:23,295 --> 00:22:28,525
+因为你会看到，我需要时会标记前期价值区域
+Because you'll see, I mark prior value areas if I need to use them when we're doing the hypos.
+
+394
+00:22:28,525 --> 00:22:32,850
+这部分会在后面的高级课程中讲解
+This will be later on in the course, in the pro course.
+
+395
+00:22:32,850 --> 00:22:36,885
+所以，如果你现在看这个视频，等讲到时再回来看
+So look, if you're watching this before I've come to it, come back to this bit.
+
+396
+00:22:36,885 --> 00:22:41,265
+但你可以把它保存为前期价值区域
+But what you can do is you can then save this as prior value area.
+
+397
+00:22:41,265 --> 00:22:44,740
+可以命名为TC2、TC7，随你喜欢
+You can save it as TC2, TC7, whatever you want.
+
+398
+00:22:44,740 --> 00:22:47,335
+我们就叫它前期价值区域
+So let's call this prior value area.
+
+399
+00:22:47,335 --> 00:22:47,840
+点击保存
+Hit save.
+
+400
+00:22:50,520 --> 00:22:52,175
+好，现在删除它
+Okay, let's delete that.
+
+401
+00:22:52,175 --> 00:22:55,650
+会发生的是，抱歉，继续操作
+So what will happen is, sorry, keep doing that.
+
+402
+00:22:55,650 --> 00:22:57,862
+如果你按A键，
+If you hit A, and by
+
+403
+00:22:57,862 --> 00:23:00,074
+顺便说一下，如果你按A键，
+the way, if you hit A,
+
+404
+00:23:00,074 --> 00:23:02,286
+然后你不想绘制，
+right, and then you don't want
+
+405
+00:23:02,286 --> 00:23:07,817
+左键单击鼠标取消选中即可
+it to draw, just left click your mouse and then it will just deselect it.
+
+406
+00:23:07,820 --> 00:23:10,000
+好的，取消选中
+Okay, deselect it.
+
+407
+00:23:10,000 --> 00:23:11,997
+然后按W键
+And then W to go
+
+408
+00:23:11,997 --> 00:23:13,994
+返回全局十字光标
+back to your global crosshair
+
+409
+00:23:13,994 --> 00:23:18,788
+或者按A或Q键返回
+or A or Q if you want to go back to this.
+
+410
+00:23:18,790 --> 00:23:24,640
+所以，如果你按A键，这次你的默认会一直显示，对吧？
+So again, if you hit A, right, this time, do you see your default will keep showing?
+
+411
+00:23:24,640 --> 00:23:26,630
+但你想让它变成前期价值区域
+But you want this to be prior value area.
+
+412
+00:23:26,630 --> 00:23:30,865
+你只需进入图表绘制属性，然后我们把它保存为TC7，对吧？
+All you do is chart drawing properties and then we saved it as TC7, right?
+
+413
+00:23:30,865 --> 00:23:32,720
+看到没？前期价值区域
+Do you see? Prior value area.
+
+414
+00:23:32,720 --> 00:23:38,785
+如果我想换回组合标记
+If I want to change it back to my composite marker.
+
+415
+00:23:38,785 --> 00:23:42,055
+TC1始终是你的默认
+So TC1 is always going to be your default.
+
+416
+00:23:42,055 --> 00:23:42,940
+继续操作
+Keep doing that.
+
+417
+00:23:43,940 --> 00:23:44,480
+对吧？
+Right?
+
+418
+00:23:44,480 --> 00:23:45,400
+记住这一点
+So remember that.
+
+419
+00:23:46,820 --> 00:23:49,050
+好的，就这些
+Okay, so that is that.
+
+420
+00:23:49,050 --> 00:23:50,580
+确保我已经讲清楚了
+Just make sure I've covered that off.
+
+421
+00:23:52,700 --> 00:23:55,820
+全局十字光标、快捷键都讲完了
+Global crosshair, keyboard shortcuts are all done.
+
+422
+00:23:57,460 --> 00:23:58,960
+矩形延展也讲完了
+Extending rectangles done.
+
+423
+00:23:58,960 --> 00:24:01,500
+单工具使用后的设置也讲完了
+After single tool use we've done.
+
+424
+00:24:04,840 --> 00:24:06,804
+接下来还有几个小技巧
+So the other couple of things
+
+425
+00:24:06,804 --> 00:24:08,768
+Sierra Chart里会显示
+Sierra chart is this will show
+
+426
+00:24:08,768 --> 00:24:13,679
+图表末端是实时行情时会显示绿色
+as green. When you're at the end of the chart and it's the live market.
+
+427
+00:24:13,680 --> 00:24:14,560
+今天是周六
+Now today's Saturday.
+
+428
+00:24:17,560 --> 00:24:20,020
+所以市场没开，行情不走
+And therefore the market is not live. So it's not moving.
+
+429
+00:24:21,980 --> 00:24:24,565
+现在显示绿色是因为在最末端
+So yeah, it's showing as green because it's right at the end.
+
+430
+00:24:24,565 --> 00:24:27,960
+如果离开末端就会变红
+But you see if you're off, it goes red.
+
+431
+00:24:27,960 --> 00:24:33,070
+确保它始终是绿色，这样就是实时行情
+So just make sure this is always green. Because that means it's the live market.
+
+432
+00:24:33,070 --> 00:24:36,870
+一旦变红，就不是实时行情了，明白吗？
+As soon as you go red, it means it's not the live market. Alright?
+
+433
+00:24:36,870 --> 00:24:40,420
+就这些，很简单，一目了然
+So that's that. Pretty straightforward. Self-explanatory.
+
+434
+00:24:44,140 --> 00:24:46,340
+还有什么？接下来讲什么？
+What else? What can we cover next?
+
+435
+00:24:46,340 --> 00:24:51,365
+如果你想...
+Is if you... And I talk about this in the profile section.
+
+436
+00:24:51,365 --> 00:24:53,545
+我在成交量分布图部分提到过
+But if you want... Right?
+
+437
+00:24:53,545 --> 00:24:58,355
+想让一个图表上的工具出现在另一个图表上
+Any tool on one chart to appear on the other. Right?
+
+438
+00:24:58,355 --> 00:25:06,180
+比如这里有个工具
+So let's say we've got this here. Right?
+
+439
+00:25:07,340 --> 00:25:11,660
+我想让我的成交量分布图出现在这里
+And I want my profile to appear on here. What you do is you go to chart...
+
+440
+00:25:11,660 --> 00:25:22,430
+你要去图表...
+Chart... It's not chart settings. It's studies. Which is... Where's it gone here?
+
+441
+00:25:22,430 --> 00:25:24,140
+我一般直接按F6
+I use F6.
+
+442
+00:25:24,140 --> 00:25:27,795
+分析... 指标，对吧？
+So... Analysis. Studies. Right?
+
+443
+00:25:27,795 --> 00:25:28,395
+F6
+F6.
+
+444
+00:25:28,395 --> 00:25:32,595
+我刚才找不到，因为我习惯直接按F6，就会出来
+So for me, I couldn't find it because I normally just hit F6. And it's there.
+
+445
+00:25:32,595 --> 00:25:35,640
+实际上，我收回刚才的话，是图表... 图表设置
+And in fact, I'll take that all back. It's chart... Chart settings.
+
+446
+00:25:35,640 --> 00:25:37,310
+F5，对吧？
+F5. Right?
+
+447
+00:25:37,310 --> 00:25:39,395
+所以按F5
+So you hit F5. Okay?
+
+448
+00:25:39,395 --> 00:25:45,610
+然后去高级设置，复制图表绘图，从...
+And you go to advanced settings. And copy chart drawings from... This chart is number one. Whatever that chart is.
+
+449
+00:25:45,610 --> 00:25:49,350
+每个图表顶部都有编号，看到了吗？编号1
+Each chart will have a number at the top. There. Can you see it? Number one.
+
+450
+00:25:49,350 --> 00:25:52,290
+我刚才按了1，然后确认
+I just hit one. And then hit okay.
+
+451
+00:25:52,290 --> 00:25:55,790
+然后你会看到它直接出现
+And then you will see... That it just appears.
+
+452
+00:25:55,790 --> 00:25:57,960
+看到了吧 它刚从那里显示出来
+There you go. Can you see it? It's just appeared from there.
+
+453
+00:25:57,960 --> 00:26:08,520
+所以每次我画控制点 或其他标记
+So every time I draw that. Point of control. Whatever I draw on there. I'll do that. Okay?
+
+454
+00:26:08,520 --> 00:26:09,747
+如果你
+And if you
+
+455
+00:26:09,747 --> 00:26:11,792
+想要画些东西
+want to draw stuff... Let's
+
+456
+00:26:11,792 --> 00:26:14,655
+比如
+say... I mean, you're not going to
+
+457
+00:26:14,655 --> 00:26:22,428
+其实你不需要这么做 但可能想标记
+need to do this. But you might want to actually. Let's say you want to mark your weekly VWAP.
+
+458
+00:26:22,430 --> 00:26:23,618
+别太担心这些
+And again, don't get too
+
+459
+00:26:23,618 --> 00:26:24,806
+别想太多
+worried about this stuff. Thinking...
+
+460
+00:26:24,806 --> 00:26:25,756
+我还没讲过
+I haven't gone over
+
+461
+00:26:25,756 --> 00:26:28,369
+后面高级课程里会详细讲
+this yet. We'll go over this. Later in the pro calls.
+
+462
+00:26:28,370 --> 00:26:31,085
+回到这个视频 看到了吗
+Come back to this video. Do you see there?
+
+463
+00:26:31,085 --> 00:26:32,628
+如果你想标记
+If you want to mark
+
+464
+00:26:32,628 --> 00:26:34,171
+你的周线成交量加权平均价
+your weekly VWAP. Or you
+
+465
+00:26:34,171 --> 00:26:35,405
+或者想用
+want to use your
+
+466
+00:26:35,405 --> 00:26:40,653
+趋势线之类的 还想从第六个图复制过来
+trend line on here. Or whatever. And you want it to copy it from six as well.
+
+467
+00:26:40,655 --> 00:26:42,915
+你可以从多个图表复制
+You can copy from as many as you want.
+
+468
+00:26:42,915 --> 00:26:43,573
+再强调一次
+So again,
+
+469
+00:26:43,573 --> 00:26:44,561
+记住 F5
+remember. F5. Chart
+
+470
+00:26:44,561 --> 00:26:45,549
+图表设置
+settings. Advanced settings.
+
+471
+00:26:45,549 --> 00:26:46,537
+高级设置
+Two. And then
+
+472
+00:26:46,537 --> 00:26:47,525
+输入2
+one. And then
+
+473
+00:26:47,525 --> 00:26:48,513
+然后输入
+you just do
+
+474
+00:26:48,513 --> 00:26:50,818
+逗号 这是第六个图表
+comma. And then this is chart six.
+
+475
+00:26:51,880 --> 00:26:52,680
+6 好
+Six. Okay. Now
+
+476
+00:26:52,680 --> 00:26:54,013
+你可以添加任意数量
+you can have as many
+
+477
+00:26:54,013 --> 00:26:57,479
+想从多少个图表复制就复制多少
+as you want. However many charts you want stuff to be copied from.
+
+478
+00:26:57,480 --> 00:26:57,980
+完全没问题
+That's fine.
+
+479
+00:26:59,620 --> 00:27:02,725
+比如第六个图表 看到了吗
+You can do six. Okay. And then can you see?
+
+480
+00:27:02,725 --> 00:27:10,405
+这条趋势线就是从那里复制的 或者标记也行
+That trend line is from there. It's that trend line. Or marker. If you want.
+
+481
+00:27:10,405 --> 00:27:14,725
+我把直线快捷键设成了E键
+So remember I have the line as a shortcut as E.
+
+482
+00:27:14,725 --> 00:27:17,700
+看这里 我在这里画一条 完成
+So look here. I'm going to draw it there. Boom.
+
+483
+00:27:17,700 --> 00:27:19,985
+看到没 它就出现在那里
+Can you see it? It just turns up there.
+
+484
+00:27:19,985 --> 00:27:24,015
+如果我现在移动它 看到没 它也会出现在那里
+And then this. If I move it now. Do you see? It turns up there.
+
+485
+00:27:24,015 --> 00:27:25,660
+好 希望这对你们有用
+Alright. So hopefully that's useful for you.
+
+486
+00:27:27,480 --> 00:27:33,715
+这部分就讲完了 就是复制功能
+So that's that done. Which is the copying stuff across. Okay.
+
+487
+00:27:33,715 --> 00:27:40,070
+现在讲几个小细节 不想详细展开
+Now a couple of minor things. I don't really want to get into it in detail. It's not hugely important.
+
+488
+00:27:40,070 --> 00:27:41,700
+但我想让你确认一下
+But I want you to just make sure.
+
+489
+00:27:43,100 --> 00:27:44,780
+你能看到我所有的设置吧
+So you can see all my settings, right?
+
+490
+00:27:44,780 --> 00:27:47,280
+我希望大家都能看到我的设置
+I want everyone to see my settings.
+
+491
+00:27:48,320 --> 00:27:52,525
+很多人好奇我这里那里的设置
+Because a lot of people wonder what Envy's got for his settings here and there.
+
+492
+00:27:52,525 --> 00:27:56,760
+好 都在这里 公开的 你可以看看 我的所有设置
+Alright. So it's there. Open book. You can have a look. All my settings.
+
+493
+00:27:56,760 --> 00:27:58,420
+你可以暂停视频
+You can pause it.
+
+494
+00:27:58,420 --> 00:28:03,075
+有些图表不需要回溯365天
+You don't necessarily need to go back 365 days for some of the charts.
+
+495
+00:28:03,075 --> 00:28:03,965
+有些需要
+Others you do.
+
+496
+00:28:03,965 --> 00:28:06,200
+我已经提前设置好了
+I've set them up in a way that I've got them already.
+
+497
+00:28:07,360 --> 00:28:09,417
+但有些地方你可能想改
+But things you might want to change
+
+498
+00:28:09,417 --> 00:28:11,474
+比如成交量
+is obviously the volume. And I'll talk
+
+499
+00:28:11,474 --> 00:28:14,119
+订单流部分会详细讲
+about this a lot in the order flow section.
+
+500
+00:28:15,240 --> 00:28:17,400
+成交量你可能想...
+Is the volume you'll want to...
+
+501
+00:28:17,400 --> 00:28:19,960
+抱歉 刚才被打断了
+Sorry I just got distracted by something there.
+
+502
+00:28:24,080 --> 00:28:25,740
+发生什么了 发生什么了
+What happened there? What happened there?
+
+503
+00:28:25,740 --> 00:28:26,460
+出问题了
+Something went wrong.
+
+504
+00:28:26,460 --> 00:28:30,160
+不过没关系 可能是我移动东西了
+But that's okay. I think it's because I was moving stuff around.
+
+505
+00:28:30,160 --> 00:28:32,360
+好 回到图表设置
+So yeah. Back to the chart settings.
+
+506
+00:28:33,560 --> 00:28:36,580
+去主设置里看
+If you go to the main settings.
+
+507
+00:28:36,580 --> 00:28:40,990
+标普500的成交量是5000
+Volume is 5,000. Typically in the S&P 500.
+
+508
+00:28:40,990 --> 00:28:44,760
+第三阶段会详细讲 不用担心
+And I'll talk about this in the stage 3 section. So don't worry.
+
+509
+00:28:44,760 --> 00:28:47,530
+成交量K线部分会详细覆盖
+It's covered in detail about volume candles.
+
+510
+00:28:47,530 --> 00:28:50,765
+我通常用5000到10000
+But typically I use between 5 and 10,000.
+
+511
+00:28:50,765 --> 00:28:55,085
+好的，成交量暴增时
+Alright. Obviously when there's a load of volume.
+
+512
+00:28:55,085 --> 00:29:00,585
+你在报价板上就能看出来
+Right. And you'll know this when you go to your quote board. And you look.
+
+513
+00:29:00,585 --> 00:29:03,535
+也就是说现在成交量很大
+So you know. There is a lot of volume at the moment.
+
+514
+00:29:03,535 --> 00:29:05,932
+可能我应该用
+And probably I should be using
+
+515
+00:29:05,932 --> 00:29:07,130
+7500左右
+about 7,500. So I'll
+
+516
+00:29:07,130 --> 00:29:08,328
+调高数值
+up it. If
+
+517
+00:29:08,328 --> 00:29:12,324
+市场成交量大时用7500或8000
+there's a lot of volume in the market. To like 7,500. 8,000.
+
+518
+00:29:13,525 --> 00:29:15,345
+大概这个范围
+You know. Around there or thereabouts.
+
+519
+00:29:15,345 --> 00:29:18,545
+成交量小的时候我用5000
+When there's less volume in the market. I use 5,000.
+
+520
+00:29:18,545 --> 00:29:24,220
+原油合约一般用1000到3000
+And same for crude oil. Is between 1 and 3,000. Is typically what I'm using.
+
+521
+00:29:24,220 --> 00:29:27,260
+原油数值低是因为合约数量少
+The reason crude oil is less. Is because there's less contracts.
+
+522
+00:29:27,260 --> 00:29:30,780
+后面我会详细解释
+Right. And you'll see this as I. Talk you through some of the sections.
+
+523
+00:29:30,780 --> 00:29:35,445
+原油日均成交量在80万到100万手
+That typically crude oil. Trades 800,000 to 1 million contracts a day.
+
+524
+00:29:35,445 --> 00:29:39,465
+迷你合约是150万到200万手
+The e-minis. Trades between 1.5 and 2 million contracts.
+
+525
+00:29:39,465 --> 00:29:44,860
+所以E迷你S&P的成交量柱设置更高
+So that's why the settings are higher. In terms of the volume bars. For e-mini S&P.
+
+526
+00:29:44,860 --> 00:29:47,140
+总之，你可以在这里调整
+But anyway. Look. That's where you can change it.
+
+527
+00:29:48,320 --> 00:29:52,840
+这些是我的高级设置
+These are all the settings that I have. Advanced settings.
+
+528
+00:29:52,840 --> 00:29:53,800
+就这些
+There you go.
+
+529
+00:29:53,800 --> 00:29:56,980
+你可以暂停视频
+You can pause the video. Just make sure you've got exactly the same as me.
+
+530
+00:29:56,980 --> 00:29:58,620
+确保和我设置一致
+This is quite important.
+
+531
+00:29:58,620 --> 00:29:59,460
+这部分很重要
+I use...
+
+532
+00:29:59,460 --> 00:30:03,180
+你想想看
+So if you think about it. Every time the futures contract rolls over.
+
+533
+00:30:04,540 --> 00:30:09,475
+每次期货合约换月时
+Imagine you're going back one year. Each contract is only three months.
+
+534
+00:30:09,475 --> 00:30:16,925
+会把所有合约拼接起来
+So it sows them together. All the contracts. And makes them continuous. Even though it's different contracts.
+
+535
+00:30:16,925 --> 00:30:19,095
+让它们形成连续数据
+If you think about it. You've got...
+
+536
+00:30:19,095 --> 00:30:22,175
+原油是按月换月的
+You know. It's monthly. For crude oil.
+
+537
+00:30:22,175 --> 00:30:24,635
+1月、2月、3月、4月
+So January. February. March. April.
+
+538
+00:30:24,635 --> 00:30:26,460
+到了5月
+Imagine you get into May.
+
+539
+00:30:26,460 --> 00:30:32,240
+要能查看一年或一个季度的数据
+It needs to... For the yearly. For the year. To be able to view a year or quarter.
+
+540
+00:30:32,240 --> 00:30:36,315
+就能把1月到5月的数据连起来
+You can have like. January. February. March. April. May. All sewed together.
+
+541
+00:30:36,315 --> 00:30:37,655
+这是怎么实现的？
+How does it do that?
+
+542
+00:30:37,655 --> 00:30:39,715
+其实有很多种方法。
+Well there's various ways of doing it.
+
+543
+00:30:39,715 --> 00:30:43,230
+如果深入研究，会变得很复杂。
+And you know. You can get very complex. If you start getting into this stuff.
+
+544
+00:30:43,230 --> 00:30:44,131
+我不会
+So I'm not
+
+545
+00:30:44,131 --> 00:30:45,032
+详细讲这些。
+going to. But
+
+546
+00:30:45,032 --> 00:30:45,933
+但我用的方法是
+the one I
+
+547
+00:30:45,933 --> 00:30:46,834
+我一直在用的。
+used is. I
+
+548
+00:30:46,834 --> 00:30:50,741
+这是行业标准，人人都用。
+always use. And it's industry standard. Everyone uses this. That I know of.
+
+549
+00:30:50,745 --> 00:30:54,125
+我还没见过 кто用其他方法。
+I don't really know anyone. Who uses anything else.
+
+550
+00:30:54,125 --> 00:30:55,900
+用这个方法就是合理。
+It just makes sense. To use this.
+
+551
+00:30:55,900 --> 00:30:56,860
+相信我。
+Take my word for it.
+
+552
+00:30:56,860 --> 00:30:59,020
+你可以自己去搜，会发现
+You're more than welcome to Google it. And you're going to find.
+
+553
+00:30:59,020 --> 00:30:59,752
+很多
+A lot
+
+554
+00:30:59,752 --> 00:31:00,850
+更详细的
+more detail about
+
+555
+00:31:00,850 --> 00:31:02,314
+资料。但本质上，它是
+this. But. Essentially. It's
+
+556
+00:31:02,314 --> 00:31:07,439
+基于成交量的滚动合约。这很合理。
+basing it on. You know. Volume based rollover. Which makes a lot of sense.
+
+557
+00:31:07,440 --> 00:31:11,935
+回测调整的。所以确保设置成这个。应该就是了。
+Back adjusted. So. Just make sure that. That is set to that. And it should be.
+
+558
+00:31:11,935 --> 00:31:15,910
+然后看看，确保其他设置都一样。
+And then look. Just make sure all these. Other settings are the same.
+
+559
+00:31:15,910 --> 00:31:16,533
+盈亏
+Profit and
+
+560
+00:31:16,533 --> 00:31:17,468
+在模拟交易时
+loss. When you're
+
+561
+00:31:17,468 --> 00:31:18,715
+我不会让它显示。
+doing your. Sim trading.
+
+562
+00:31:18,715 --> 00:31:19,962
+因为，其实，心理上
+You can. I don't
+
+563
+00:31:19,962 --> 00:31:26,201
+我想让它直接显示，因为心理上，我不想去算自己赚了一千、两千
+like it to show me. Because. You know. Psychological. I don't want to think. I'm up a thousand. Two thousand.
+
+564
+00:31:26,205 --> 00:31:27,225
+让我把它关了。
+Let me just grab that.
+
+565
+00:31:27,225 --> 00:31:29,260
+不，我不想看到。
+No. I don't want to see it. Right.
+
+566
+00:31:29,260 --> 00:31:31,180
+对我来说，重点是市场结构。
+For me. It's all about structure.
+
+567
+00:31:31,180 --> 00:31:32,740
+还有，当然是背景。
+And. Obviously context.
+
+568
+00:31:32,740 --> 00:31:34,280
+以及交易本身。
+And. The trade.
+
+569
+00:31:34,280 --> 00:31:37,820
+我在遵循我的流程吗？
+Am I following my. Sort of process. To some extent.
+
+570
+00:31:37,820 --> 00:31:39,390
+当然，我希望能灵活点。
+Obviously I like to be. Fluid.
+
+571
+00:31:39,390 --> 00:31:41,950
+但我不希望它显示盈亏
+But. I don't like it to show me P&L.
+
+572
+00:31:41,950 --> 00:31:44,365
+如果你想要，就在那里
+But if you want it to. That's where it is.
+
+573
+00:31:44,365 --> 00:31:47,005
+我觉得后面会讲，不用担心
+I think I covered this later. So don't worry.
+
+574
+00:31:47,005 --> 00:31:49,960
+高级设置里，确保和我一样
+Advanced settings. There you can just make sure. You've got the same as me.
+
+575
+00:31:49,960 --> 00:31:57,370
+如果想要垂直网格线，可以改成你习惯的
+If you want. Vertical grid lines. You can change it. As to. Whatever suits you.
+
+576
+00:31:57,370 --> 00:31:59,280
+K线名称、标题栏名称
+Bar name. Title bar name.
+
+577
+00:31:59,280 --> 00:32:01,715
+高级设置，我其实没动过这些
+Advanced settings. Look. I don't play with any of this stuff.
+
+578
+00:32:01,715 --> 00:32:03,475
+所以确保和我设置一致
+So you can just make sure. You've got the same.
+
+579
+00:32:03,475 --> 00:32:03,865
+暂停一下
+Pause it.
+
+580
+00:32:03,865 --> 00:32:05,555
+确认设置是否相同
+And make sure it's the same.
+
+581
+00:32:05,555 --> 00:32:08,115
+我觉得我从没改过这些
+I don't think I've ever changed any of this stuff.
+
+582
+00:32:08,115 --> 00:32:10,850
+我也没设任何提醒
+So. And then I don't have any alerts.
+
+583
+00:32:10,850 --> 00:32:11,545
+好
+Alright.
+
+584
+00:32:11,545 --> 00:32:13,775
+希望这些对你有用
+So hopefully that's. Useful for you.
+
+585
+00:32:13,775 --> 00:32:15,625
+你能看到我完整的设置
+You can see exactly what I've got.
+
+586
+00:32:15,625 --> 00:32:16,305
+好的
+Okay.
+
+587
+00:32:16,305 --> 00:32:18,015
+这是我的日线图
+So this is my day chart.
+
+588
+00:32:18,015 --> 00:32:21,230
+其实我没启用垂直网格线
+I don't actually have. The vertical grid line.
+
+589
+00:32:21,230 --> 00:32:23,780
+因为我已经为你设置好了
+And that's because. I've already set it for you.
+
+590
+00:32:23,780 --> 00:32:28,820
+在指标设置里，我已经配置好了
+In the. Study settings. Where I've got. I've set for you.
+
+591
+00:32:28,820 --> 00:32:35,240
+显然，常规交易时段开始和延长交易时段的开始结束
+Obviously when the RTH session starts. And when the. ETH session. Starts and ends as well.
+
+592
+00:32:35,240 --> 00:32:36,755
+这就是隔夜时段
+So that's overnight.
+
+593
+00:32:36,755 --> 00:32:38,140
+这里的区域
+This area here.
+
+594
+00:32:38,140 --> 00:32:41,770
+然后是常规交易时段，进入
+And then this is. RTH. Going into.
+
+595
+00:32:41,770 --> 00:32:44,035
+隔夜时段，严格来说不是
+The overnight session. Technically it isn't.
+
+596
+00:32:44,035 --> 00:32:47,570
+因为ES的常规时段在4:30结束
+Because. The RTH does end at 430 for ES.
+
+597
+00:32:47,570 --> 00:32:52,835
+但我不想再加一条4:30的线，就让它延伸到结束
+But rather than have another line. At 430. It just kind of. I let it. Flow until the end.
+
+598
+00:32:52,835 --> 00:32:55,925
+好，后面我会详细解释
+Alright. I explain all of this in much more detail later.
+
+599
+00:32:55,925 --> 00:32:59,515
+如果现在听不懂，不用担心
+So if a lot of it is going over your head. Don't worry about it.
+
+600
+00:32:59,515 --> 00:33:06,375
+我只是想确认，大家看到我和你们的设置一样
+I just wanted to make sure. That everyone sees. That I'm not. Doing anything. Different to anyone else.
+
+601
+00:33:06,375 --> 00:33:09,390
+我希望大家都能舒服地使用和我一样的设置
+I want everyone to be comfortable. They've got the same settings as me.
+
+602
+00:33:09,390 --> 00:33:11,200
+好的，这就是连续合约
+Alright. So that's continuous contracts.
+
+603
+00:33:13,400 --> 00:33:17,930
+然后确保你的合约都是最活跃的
+And then just make sure. Right. That your. Contracts. Are all obviously the most liquid.
+
+604
+00:33:17,930 --> 00:33:21,220
+我在基础部分已经提到过
+I've mentioned this in the foundation section. Here.
+
+605
+00:33:21,220 --> 00:33:22,895
+我有点懒
+I've been a bit lazy.
+
+606
+00:33:22,895 --> 00:33:26,005
+其实我应该改一下这些，我们一起做
+And I should really change these. So let's do it together.
+
+607
+00:33:26,005 --> 00:33:27,640
+好的，双击这个
+Okay. So double click on that.
+
+608
+00:33:28,880 --> 00:33:32,175
+然后在这里
+Right. Find. And then in here.
+
+609
+00:33:32,175 --> 00:33:36,430
+原油的话，我直接去期货，NYMEX
+For crude. I just go to futures. NYMEX.
+
+610
+00:33:36,430 --> 00:33:39,410
+然后你可能会看到一大堆选项
+Alright. And then. You might see a whole bunch of stuff.
+
+611
+00:33:39,410 --> 00:33:45,080
+直接选轻质低硫原油，NYMEX，CL
+Just go to. Light sweet. Light sweet. Crude oil. NYMEX. CL.
+
+612
+00:33:45,080 --> 00:33:48,145
+好的，你的代码可能和我稍有不同
+Okay. Again. Your codes might be slightly different to mine.
+
+613
+00:33:48,145 --> 00:33:49,940
+我之前已经解释过
+And I've explained this already.
+
+614
+00:33:49,940 --> 00:33:52,260
+我们选接下来的三个，比如5月
+Let's just get the next three. So May.
+
+615
+00:33:54,100 --> 00:33:57,215
+好的，记住，我只记住这些代码
+Okay. And then. Remember. I just remember these codes.
+
+616
+00:33:57,215 --> 00:33:57,685
+K
+K.
+
+617
+00:33:57,685 --> 00:33:59,500
+M，还有N代表11月
+M. And N. For November.
+
+618
+00:34:01,760 --> 00:34:03,565
+然后我在这里双击
+And I just double click here.
+
+619
+00:34:03,565 --> 00:34:07,620
+我选了K、M和N，代表11月
+And I've got K. M. And N. For November.
+
+620
+00:34:07,620 --> 00:34:08,195
+现在
+Now.
+
+621
+00:34:08,195 --> 00:34:14,505
+显然，有些已经过期或者成交量为零
+Obviously. Some of these have. Already. Either expired. Or they've got. No volume. In them.
+
+622
+00:34:14,505 --> 00:34:19,715
+我会不断切换，直到找到有成交量的
+So. What I will do is. I'll keep changing them. Until I find ones. That have volume.
+
+623
+00:34:19,715 --> 00:34:23,890
+我只关心接下来的三个
+So. I'm only interested in. The next three.
+
+624
+00:34:23,890 --> 00:34:27,835
+M的成交量为零
+So. M. It's just got no volume in it.
+
+625
+00:34:27,835 --> 00:34:29,600
+显然，K
+Right. Obviously. K.
+
+626
+00:34:29,600 --> 00:34:30,830
+可能已经过期
+Would have expired.
+
+627
+00:34:30,830 --> 00:34:32,945
+取决于你什么时候看
+It depends what day you're looking at this.
+
+628
+00:34:32,945 --> 00:34:35,955
+其实很简单
+Alright. I mean. Realistically. It's obvious.
+
+629
+00:34:35,955 --> 00:34:38,555
+显示零，说明没交易
+It says zero. So it's not trading.
+
+630
+00:34:38,555 --> 00:34:44,370
+那我们选7月、8月和9月，接下来成交量最大的三个
+So let's go to July. August. And September. The next three. With the most volume.
+
+631
+00:34:44,370 --> 00:34:45,640
+N、Q 和 U
+N. Q. And U.
+
+632
+00:34:46,680 --> 00:34:51,690
+我会重复这个过程，直到找到成交量最高的三个
+I keep doing this process. Until I find. The next three that have the volume.
+
+633
+00:34:51,690 --> 00:34:52,560
+N
+N.
+
+634
+00:34:52,560 --> 00:34:56,460
+这个成交量很高，Q
+So that's got volume. Q.
+
+635
+00:34:58,200 --> 00:35:00,800
+好，你看它成交量很高，还有 U
+Okay. You see it's got volume. And U.
+
+636
+00:35:04,040 --> 00:35:04,520
+9 月
+September.
+
+637
+00:35:05,820 --> 00:35:07,520
+你能看到我用的是右边的
+So you can see I'm using the right.
+
+638
+00:35:07,520 --> 00:35:13,400
+如果我直接拉过来，我的另一个，你能看到我有 CLN
+If I just bring across. My other. Can you see I've got CLN.
+
+639
+00:35:14,460 --> 00:35:18,740
+就在那，这是最活跃的，420
+There. Which is the most liquid. 420.
+
+640
+00:35:18,740 --> 00:35:19,615
+直接这么做
+Just do this.
+
+641
+00:35:19,615 --> 00:35:22,875
+确保你用的是原油最活跃的合约
+Just make sure you're using the most liquid contract for crude oil.
+
+642
+00:35:22,875 --> 00:35:28,080
+如果不是，你可以逐个修改
+And if you're not. You can either go and individually change. You know like every single one.
+
+643
+00:35:28,080 --> 00:35:30,220
+我刚从另一个屏幕拉过来的
+I've just brought this across from my other screen.
+
+644
+00:35:33,300 --> 00:35:40,905
+或者你可以直接，在哪里来着，图表，执行期货符号滚动
+Or there is a way that you can just do. To. Where is it. Chart. Performs future symbol rollover.
+
+645
+00:35:40,905 --> 00:35:42,075
+好，你点这个
+Okay. You click that.
+
+646
+00:35:42,075 --> 00:35:48,205
+确保它切换到新符号，到 N
+And just make sure. That is changing it to new symbol. To N.
+
+647
+00:35:48,205 --> 00:35:49,045
+我已经做过了
+I've already done it.
+
+648
+00:35:49,045 --> 00:35:49,664
+如果我再做一次
+If I do
+
+649
+00:35:49,664 --> 00:35:50,490
+它会再次向前滚动
+it again. It's going
+
+650
+00:35:50,490 --> 00:35:53,588
+我不想让它跳到 Q
+to roll me forward again. And I don't want it to take me to Q.
+
+651
+00:35:53,590 --> 00:35:55,970
+所以确保你已经有 N 了
+So just make sure if you've already got N.
+
+652
+00:35:55,970 --> 00:35:58,155
+检查所有图表顶部的栏
+Check the bar at the top of all your charts.
+
+653
+00:35:58,155 --> 00:36:01,660
+确保是最新的合约
+Make sure it's. The latest contract.
+
+654
+00:36:01,660 --> 00:36:07,800
+如果不是，成交量最高的
+If it isn't. Then. With the most volume.
+
+655
+00:36:07,800 --> 00:36:14,265
+成交量最高的，抱歉，确保它是
+With the most volume. Excuse me. Make sure that it is.
+
+656
+00:36:14,265 --> 00:36:15,410
+现在
+Now.
+
+657
+00:36:15,410 --> 00:36:18,440
+我们做完了，然后对 ES 做同样操作
+So we've done that. And then obviously do the same thing for the ES.
+
+658
+00:36:22,020 --> 00:36:29,880
+角色设置完成，好，接下来是什么？
+So that's the roles done. Okay. What was next?
+
+659
+00:36:29,880 --> 00:36:33,720
+对，锁定填充空间，这部分很重要
+Right. Lock fill space. This is quite an important. One.
+
+660
+00:36:33,720 --> 00:36:36,360
+如果你想要这个
+So if you. If you want this.
+
+661
+00:36:36,360 --> 00:36:37,766
+显然每个人都想有
+Obviously everyone likes to have
+
+662
+00:36:37,766 --> 00:36:39,172
+不同的空白区间
+different spaces. Between the last
+
+663
+00:36:39,172 --> 00:36:40,578
+在最后一个K线和边缘之间
+bar here. And the edge.
+
+664
+00:36:40,578 --> 00:36:44,798
+成交量分布图也是一样，要调整的话
+And same for profile. Same for all of these. If you want to change that.
+
+665
+00:36:44,800 --> 00:36:48,905
+好，你要做的是：我一直锁定填充空间
+Right. What you do is. I have my lock fill space locked at all times.
+
+666
+00:36:48,905 --> 00:36:50,590
+取消这个勾选
+Uncheck that.
+
+667
+00:36:50,590 --> 00:36:51,215
+现在
+Now.
+
+668
+00:36:51,215 --> 00:36:55,535
+滚动鼠标滚轮，看到没？间距会变
+If you either scroll your mouse. Do you see? It now changes. The distance.
+
+669
+00:36:55,535 --> 00:36:57,120
+同时保持实时绿色
+Whilst. Staying live. Green.
+
+670
+00:36:58,120 --> 00:36:59,920
+或者你可以按住这个
+Or what you can do is. You can just hold this down.
+
+671
+00:37:02,560 --> 00:37:03,635
+看到没？
+Can you see?
+
+672
+00:37:03,635 --> 00:37:05,720
+这里就有空间了
+Then you've got some. Space here.
+
+673
+00:37:05,720 --> 00:37:08,860
+或者可以移动它
+Or you can. Move it along.
+
+674
+00:37:10,280 --> 00:37:16,340
+调好后，去图表-锁定填充空间
+And then once you've got it set to how you want. Just go to. Chart. Lock. Fill space.
+
+675
+00:37:17,940 --> 00:37:19,100
+看到没？
+Okay. Do you see it?
+
+676
+00:37:19,100 --> 00:37:20,100
+现在就锁定了
+Now it's just locked it.
+
+677
+00:37:20,100 --> 00:37:24,745
+这样你前后切换
+So you can. Go forward and back. Without. That gap. Changing.
+
+678
+00:37:24,745 --> 00:37:27,875
+间距也不会变
+And it's the same here. For your market profile.
+
+679
+00:37:27,875 --> 00:37:30,075
+成交量分布图也是一样
+I like to have mine quite. Close to the edge.
+
+680
+00:37:30,075 --> 00:37:31,430
+我喜欢靠近边缘
+Some people don't.
+
+681
+00:37:31,430 --> 00:37:32,490
+有些人不喜欢
+So again. Chart.
+
+682
+00:37:32,490 --> 00:37:33,720
+好，取消锁定填充空间
+Get rid of lock fill space.
+
+683
+00:37:34,940 --> 00:37:37,460
+然后你可以点这里
+Okay. And then you can. Either click here.
+
+684
+00:37:37,460 --> 00:37:39,520
+如果你鼠标没有滚轮
+If you. If you don't have a scroll on your mouse.
+
+685
+00:37:39,520 --> 00:37:43,225
+或者其他方式
+Or. Whatever. I just scroll it with my mouse.
+
+686
+00:37:43,225 --> 00:37:47,020
+我直接用鼠标滚轮
+It seems to. Just. Work. With the scroll on my mouse.
+
+687
+00:37:47,020 --> 00:37:49,900
+看起来能用
+But if it doesn't. Then you can use.
+
+688
+00:37:49,900 --> 00:37:51,985
+可能你看不到
+You might not be able to see it. Because I'm covering it.
+
+689
+00:37:51,985 --> 00:37:54,035
+因为我挡住了
+But it's. The same thing.
+
+690
+00:37:54,035 --> 00:37:56,220
+我把它移开看看
+So let me just move that actually.
+
+691
+00:37:56,220 --> 00:37:59,485
+就是这里的小区域
+So it's this little. Area here.
+
+692
+00:37:59,485 --> 00:38:04,530
+好，你看到了吗
+Okay. Do you see.
+
+693
+00:38:04,530 --> 00:38:07,600
+可以把空间调得很远
+So you can have your space. Far away. As you want.
+
+694
+00:38:09,520 --> 00:38:11,900
+有人喜欢在这里做笔记
+Some people like to make notes here. Or whatever.
+
+695
+00:38:18,330 --> 00:38:18,975
+好
+Okay.
+
+696
+00:38:18,975 --> 00:38:22,575
+设置好后，对空间满意了
+And then once you're set. And you're happy. With how far away you are.
+
+697
+00:38:22,575 --> 00:38:25,755
+就点图表-锁定空白区域
+Then you can just do. Chart. Lock fill space.
+
+698
+00:38:25,755 --> 00:38:27,230
+看，它就会固定在那里
+And then do you see. It will just stay there.
+
+699
+00:38:29,830 --> 00:38:40,330
+然后你可以回滚图表
+Essentially you can. Just. You can then go. And scroll back.
+
+700
+00:38:40,330 --> 00:38:43,390
+但市场分布图其实不需要
+But on the market profile. You're not going to need. To do that. Really.
+
+701
+00:38:43,390 --> 00:38:44,990
+主要是给空白区域用的
+It's just mainly. For the space.
+
+702
+00:38:46,370 --> 00:38:49,035
+可以往回拉多远都行
+And then yeah. You can go far back. As you want. Etc. Etc.
+
+703
+00:38:49,035 --> 00:38:51,590
+回到原位时记得位置
+And when you come back. You just remember. Where you are.
+
+704
+00:38:51,590 --> 00:38:53,770
+只要锁定了空白区域
+As long as you've. Lock the fill space.
+
+705
+00:38:55,110 --> 00:38:56,410
+好，这个功能很实用
+Okay. So pretty happy.
+
+706
+00:38:56,410 --> 00:39:08,355
+接下来我想给你展示
+With. That. Okay. Next thing. I wanted to show you. Was. Hiding and unhiding. Studies.
+
+707
+00:39:08,355 --> 00:39:09,890
+比如成交量分布图
+Things like. Volume profile.
+
+708
+00:39:09,890 --> 00:39:16,205
+或者这些柱状线
+Things like. These bars. You can either. Right click. On the top. Here. At the bar. Okay.
+
+709
+00:39:16,205 --> 00:39:18,150
+你可以右键点击顶部
+And then. Show you. All your studies. That you've got.
+
+710
+00:39:18,150 --> 00:39:23,640
+会显示你添加的所有指标
+So like. VWAP. Heikinashi. Timelines. And volume profile.
+
+711
+00:39:23,640 --> 00:39:28,070
+比如时间线就是这个
+Timelines. Is just. This.
+
+712
+00:39:29,650 --> 00:39:31,660
+其实我要改一下这个
+In fact. What I'm going to do. Is. I'm going to change this.
+
+713
+00:39:31,660 --> 00:39:33,455
+你看，我习惯
+Do you see. I like to.
+
+714
+00:39:33,455 --> 00:39:35,560
+成交量已经很大了
+There's been a lot. Of contracts. Traded.
+
+715
+00:39:35,560 --> 00:39:36,860
+大约200万左右
+Basically. About 2 million.
+
+716
+00:39:36,860 --> 00:39:40,930
+我要把它改成7500
+So. I'm just going to. Change this. To. 7500.
+
+717
+00:39:42,450 --> 00:39:43,870
+等它加载的时候
+And. Whilst. We do that.
+
+718
+00:39:46,570 --> 00:39:49,515
+隐藏和显示指标
+Yeah. Hide. Unhide. Is. When you.
+
+719
+00:39:49,515 --> 00:39:50,570
+等我一下
+Give me a second.
+
+720
+00:39:50,570 --> 00:39:51,930
+让它先加载完
+Actually. Let it. Just load up.
+
+721
+00:39:54,510 --> 00:39:55,880
+你应该能看到
+You should be able. To see.
+
+722
+00:39:55,880 --> 00:39:58,150
+时间轴了 我就是为了这个
+The timeline. Now. That's why. I did it.
+
+723
+00:39:58,150 --> 00:40:01,180
+才能给你展示时间轴
+So. I can actually. Show you. The timeline.
+
+724
+00:40:01,180 --> 00:40:03,785
+等一下 让它加载
+Just give it a second. To just load up.
+
+725
+00:40:03,785 --> 00:40:04,900
+我操作的时候
+Whilst. I do that.
+
+726
+00:40:04,900 --> 00:40:07,300
+我把这个往回拉一下
+I'm just going to. Move this back.
+
+727
+00:40:07,300 --> 00:40:13,710
+其实我更喜欢靠近边缘
+Because. Is. I actually. Prefer it. To be. Closer. To the edge.
+
+728
+00:40:20,550 --> 00:40:23,835
+好的 大概设在这里
+Okay. So. We've. Set it. About. There.
+
+729
+00:40:23,835 --> 00:40:26,255
+图表锁定
+And. Chart. Lock.
+
+730
+00:40:26,255 --> 00:40:29,055
+填充空间 等一下
+Fill. Space. Just give this a second.
+
+731
+00:40:29,055 --> 00:40:34,310
+加载一下 这样你就可以右键
+To load. To load. So you can. Right click. And then.
+
+732
+00:40:34,310 --> 00:40:35,535
+看到时间轴了吗
+Do you see. There's the timeline.
+
+733
+00:40:35,535 --> 00:40:36,130
+就是这样
+So there you go.
+
+734
+00:40:36,130 --> 00:40:39,245
+这里是9:30 就是常规交易时段 还有18:00
+There's 930. Which is the RTH. And there's 1800.
+
+735
+00:40:39,245 --> 00:40:44,460
+不想要的话 点隐藏 隐藏时间轴
+If you don't want them. Just go to. Hide. Hide the timeline.
+
+736
+00:40:44,460 --> 00:40:45,715
+看 它消失了
+Do you see. Got rid of it.
+
+737
+00:40:45,715 --> 00:40:48,770
+或者显示 显示时间轴
+Or show. Show the timeline.
+
+738
+00:40:48,770 --> 00:40:51,560
+好的 如果想要成交量分布图
+Okay. Now if you want. Volume profile. You can do.
+
+739
+00:40:51,560 --> 00:40:52,850
+可以显示 显示成交量分布图
+Show. Volume profile.
+
+740
+00:40:53,950 --> 00:40:55,760
+我知道很多人没有这个
+I know a lot of people. That don't have it.
+
+741
+00:40:55,760 --> 00:41:00,085
+不需要的话 就隐藏 隐藏它
+So hide. Hide. If you don't find it useful. Hide it.
+
+742
+00:41:00,085 --> 00:41:01,985
+好的 高度也是一样
+Alright. Same for the height. You know.
+
+743
+00:41:01,985 --> 00:41:03,490
+我不使用Heiken Ashi
+I don't use the Heiken Ashi.
+
+744
+00:41:03,490 --> 00:41:04,995
+但我想让你
+I want you guys to be
+
+745
+00:41:04,995 --> 00:41:08,005
+一开始先用 我在入场出场部分讲过
+using them at first. Which I've explained in the entry exit section.
+
+746
+00:41:08,005 --> 00:41:12,390
+所以你可以回头看这个视频
+So again. You can come back to this video. When you do the entry exit stuff.
+
+747
+00:41:12,390 --> 00:41:17,510
+不想要Heiken Ashi的话 点隐藏 隐藏Heiken Ashi
+If you don't want Heiken Ashi. You can go to hide. Hide the Heiken Ashi.
+
+748
+00:41:17,510 --> 00:41:22,375
+好的 或者显示 显示Heiken Ashi
+Alright. Or show. Show the Heiken Ashi.
+
+749
+00:41:22,375 --> 00:41:25,120
+现在 你还可以
+Now. The other thing you can do. Is you can go chart.
+
+750
+00:41:25,120 --> 00:41:29,415
+Sorry 点分析研究 F6 或者直接按F6
+Sorry. Analysis Studies. F6. Or you can just press F6.
+
+751
+00:41:29,415 --> 00:41:32,780
+如果你想修改的话
+And if you want to change. I'm not going to go through these things in detail.
+
+752
+00:41:32,780 --> 00:41:33,900
+显然没必要详细讲
+Obviously. It's pointless.
+
+753
+00:41:33,900 --> 00:41:35,780
+你可以自己试试这些功能
+I'll let you play around with this.
+
+754
+00:41:35,780 --> 00:41:39,705
+比如 Heiken Ashi
+But things like Heiken Ashi. Which is this. The second one.
+
+755
+00:41:39,705 --> 00:41:41,510
+看，这里写着 Heiken Ashi
+See that. It says Heiken Ashi.
+
+756
+00:41:43,390 --> 00:41:47,310
+点设置，然后子图
+And go settings. And then in here. Sub graphs.
+
+757
+00:41:47,310 --> 00:41:48,875
+看，这里有所有颜色选项
+And then look. You've got all the colors.
+
+758
+00:41:48,875 --> 00:41:50,620
+好，你可以自己试试
+Alright. I'll let you play around with them.
+
+759
+00:41:50,620 --> 00:41:52,610
+颜色可以随便调
+You can play around with the colors. If you want.
+
+760
+00:41:53,950 --> 00:41:55,945
+操作很简单
+Alright. Pretty self explanatory.
+
+761
+00:41:55,945 --> 00:41:59,545
+这里设置为忽略
+Okay. This is set to ignore. Because it doesn't show it.
+
+762
+00:41:59,545 --> 00:42:01,495
+所以开盘价和收盘价不显示
+The open and close. But this is all visible.
+
+763
+00:42:01,495 --> 00:42:05,830
+但其他都可见
+So you see. You can change the colors here. For the up bars. Down bars.
+
+764
+00:42:05,830 --> 00:42:07,330
+你可以在这里改颜色
+Whatever. Whatever. Change it.
+
+765
+00:42:07,330 --> 00:42:09,115
+阳线阴线都能调
+Same for all the other stuff guys.
+
+766
+00:42:09,115 --> 00:42:12,505
+其他功能也一样
+Cumulative delta bars. When we do the cumulative delta section.
+
+767
+00:42:12,505 --> 00:42:16,270
+比如累计差值
+If you want your cumulative delta to be different to me. You can change it.
+
+768
+00:42:16,270 --> 00:42:17,435
+讲累计差值时
+From candlestick bars.
+
+769
+00:42:17,435 --> 00:42:19,365
+如果想和我不一样
+You can change all the colors.
+
+770
+00:42:19,365 --> 00:42:22,135
+可以改颜色
+Alright guys. Play with this to your heart's content.
+
+771
+00:42:22,135 --> 00:42:25,425
+随便试试
+And you will learn a lot. If you just play with stuff.
+
+772
+00:42:25,425 --> 00:42:28,900
+我之前教你的隐藏和显示图表的方法，这里也一样适用
+And the way I showed you how you can hide. And unhide. You can do it here as well.
+
+773
+00:42:28,900 --> 00:42:30,985
+之前教你的隐藏和取消隐藏
+Alright. You can unhide.
+
+774
+00:42:30,985 --> 00:42:32,550
+这里也可以
+Do you see it? It shows the volume profile.
+
+775
+00:42:33,630 --> 00:42:34,110
+看，显示成交量分布图了
+Hide.
+
+776
+00:42:34,110 --> 00:42:36,595
+Heiken Ashi 也一样
+Same for Heiken Ashi. Hide.
+
+777
+00:42:36,595 --> 00:42:38,090
+隐藏
+Do you see? It gets rid of it.
+
+778
+00:42:41,210 --> 00:42:43,045
+看，消失了
+Okay. So that's colors.
+
+779
+00:42:43,045 --> 00:42:44,270
+好，颜色和隐藏功能就是这样
+That's hide. Unhide.
+
+780
+00:42:47,770 --> 00:42:50,475
+差不多讲完了
+I think we're almost there.
+
+781
+00:42:50,475 --> 00:42:53,030
+最后还有几个我想跟你说的
+The only final couple of things I wanted to
+
+782
+00:42:53,030 --> 00:42:55,301
+其实我也在图表手册里提过
+talk to you about was. And I do
+
+783
+00:42:55,301 --> 00:43:00,128
+如果你想把图表放在这个区域
+talk about this in the chart book section. But if you ever want charts in this space.
+
+784
+00:43:00,130 --> 00:43:05,930
+不想放在外面，或者想把市场分布图放这里
+And you don't want them outside. Or you want your market profile here. Right.
+
+785
+00:43:05,930 --> 00:43:12,790
+点图表窗口，然后分离，看到没？现在在这里了
+You just go to chart window. And then detach. Do you see? And now it's here.
+
+786
+00:43:12,790 --> 00:43:14,170
+这样就能放在这里
+So you can have it in here.
+
+787
+00:43:15,730 --> 00:43:19,485
+你可以放几个图表，甚至整个界面都放这里
+You can have a couple of charts in here. You can have the whole thing in here if you want.
+
+788
+00:43:19,485 --> 00:43:24,625
+窗口，分离，分离，窗口，看到没？
+Window. Detach. Detach. Window. Do you see?
+
+789
+00:43:24,625 --> 00:43:29,645
+现在两个都在这里了，可以切换
+And then you've got both of it in here. You can flick between them. Okay.
+
+790
+00:43:29,645 --> 00:43:37,130
+或者用Tyler的网格水平排列，试试看
+Or you can do Tyler's grid horizontally. Play with it. Play with it.
+
+791
+00:43:37,130 --> 00:43:39,525
+我只是想告诉你怎么用，看到没？
+I just want to show you how to use it. Do you see?
+
+792
+00:43:39,525 --> 00:43:48,870
+有些人喜欢放这里，然后窗口，看到没？并排
+Some people like to have it in here. And then window. Do you see? Side by side. Okay.
+
+793
+00:43:50,890 --> 00:43:55,300
+等等，如果你喜欢放在内部
+Etc, etc. If you prefer things on the inside of your thing.
+
+794
+00:43:55,300 --> 00:43:55,975
+我不喜欢
+I don't.
+
+795
+00:43:55,975 --> 00:43:57,515
+你也知道，我喜欢放外面
+As you know, I like them outside.
+
+796
+00:43:57,515 --> 00:43:58,415
+这取决于你
+It's up to you guys.
+
+797
+00:43:58,415 --> 00:43:58,880
+对
+No.
+
+798
+00:43:58,880 --> 00:44:00,435
+不用学我
+You don't need to do what I do.
+
+799
+00:44:00,435 --> 00:44:02,935
+我只是想展示这个软件有多可自定义
+I just want to show you how customizable this thing is.
+
+800
+00:44:02,935 --> 00:44:04,370
+简直太棒了
+It's just brilliant.
+
+801
+00:44:04,370 --> 00:44:06,470
+我从没用过这样的平台
+I've never used a platform like this.
+
+802
+00:44:06,470 --> 00:44:08,965
+太完美了
+It's just fantastic.
+
+803
+00:44:08,965 --> 00:44:11,870
+你可以随心自定义
+You can customize it as much as you like.
+
+804
+00:44:13,150 --> 00:44:15,850
+好的，这就是分离和固定
+Okay. So that was the detach and untouch.
+
+805
+00:44:22,550 --> 00:44:25,370
+然后是存储数据
+Then, store data.
+
+806
+00:44:25,370 --> 00:44:27,005
+还有一个最后的点
+So there's one final thing, right?
+
+807
+00:44:27,005 --> 00:44:29,238
+这对你来说
+This is going to be much more relevant to you
+
+808
+00:44:29,238 --> 00:44:31,694
+未来两三个月会更相关
+further down the line. In two, three, four, five months time.
+
+809
+00:44:31,695 --> 00:44:33,620
+如果你发现图表变慢
+If you find your charts are getting slow.
+
+810
+00:44:33,620 --> 00:44:40,115
+去文件-数据-交易服务设置，里面有数据文件管理
+Then you just go to file data trade service settings. And there's this data file management.
+
+811
+00:44:40,115 --> 00:44:44,210
+好，它会压缩你的所有历史数据。
+All right. And it will compress all your historical data.
+
+812
+00:44:44,210 --> 00:44:47,400
+因为它需要用这些数据处理连续期货
+Because it uses it to obviously do the continuous futures
+
+813
+00:44:47,400 --> 00:44:51,229
+合约之类的，而且一直在存储数据。
+contracts and things like that. And it's storing data all the time.
+
+814
+00:44:51,230 --> 00:44:53,620
+直接压缩数据就行。
+Just compress the data.
+
+815
+00:44:53,620 --> 00:44:54,945
+好，点确定。
+All right. Click OK.
+
+816
+00:44:54,945 --> 00:44:59,620
+或者手动启动，选手动启动即可。
+Or manual start. Just do manual start.
+
+817
+00:44:59,620 --> 00:45:01,885
+我设的是30天。
+I've got mine set to 30 days.
+
+818
+00:45:01,885 --> 00:45:05,410
+每30天它会自动压缩一次。
+Every 30 days it's going to do it. Or it should.
+
+819
+00:45:05,410 --> 00:45:07,470
+如果没自动运行，就点手动启动。
+But if it doesn't, just hit manual start.
+
+820
+00:45:07,470 --> 00:45:09,105
+有时候我会自己手动压缩。
+Sometimes I just do it myself.
+
+821
+00:45:09,105 --> 00:45:12,850
+直接压缩所有数据，你会发现图表速度快很多。
+I just compress all the data. And you'll see your charts are just really quick.
+
+822
+00:45:12,850 --> 00:45:15,690
+因为你的历史数据都被压缩了。
+Again. Because it's all your historical data being compressed.
+
+823
+00:45:17,590 --> 00:45:21,855
+我觉得我要分享的内容就这些了。
+And do you know what, guys? I think that is everything that I wanted to show you.
+
+824
+00:45:21,855 --> 00:45:24,130
+好的，交易员们，我漏了一件事。
+OK, traders. I forgot one thing.
+
+825
+00:45:24,130 --> 00:45:29,360
+我刚回看视频，突然想到一个小细节。
+I was just reviewing the video back. And I just realized a very small thing. It's about the axes.
+
+826
+00:45:29,360 --> 00:45:33,090
+关于坐标轴的设置，我的是自动的。
+So you know what mine is set at. It should be automatically.
+
+827
+00:45:33,090 --> 00:45:39,000
+但有时候不确定，传输图表书时，
+But sometimes I'm not sure. When you're obviously transferring chart books. Whether your own PC settings stay.
+
+828
+00:45:39,000 --> 00:45:41,250
+你的电脑设置会不会保留。
+But essentially that's what I've got.
+
+829
+00:45:41,250 --> 00:45:43,855
+但基本上我就是这么设置的。
+OK. So I have this set up.
+
+830
+00:45:43,855 --> 00:45:47,095
+好的，我这里是固定范围缩放。
+Scale range is constant range. You can play with the others.
+
+831
+00:45:47,095 --> 00:45:49,280
+其他选项你可以自己试试。
+All right. It just gives you different options.
+
+832
+00:45:49,280 --> 00:45:54,920
+我习惯用固定范围。然后可以查看缩放设置。
+I like mine to be at constant range. And then you can have a look at scale settings.
+
+833
+00:45:54,920 --> 00:45:57,625
+然后可以看缩放设置。
+All right. I've just got constant range, basically.
+
+834
+00:45:57,625 --> 00:45:59,130
+我基本就是用固定范围。
+So that's what I've got.
+
+835
+00:45:59,130 --> 00:46:03,685
+还有交互式缩放。
+And then interactive scale. Move.
+
+836
+00:46:03,685 --> 00:46:05,395
+好的，我喜欢这个。
+OK. So I like it.
+
+837
+00:46:05,395 --> 00:46:07,830
+这样我手就能空出来，只用鼠标。
+My hands are free. I'm just using my mouse.
+
+838
+00:46:07,830 --> 00:46:09,350
+上下移动图表。
+And it just moves it up and down.
+
+839
+00:46:09,350 --> 00:46:14,275
+但我知道有些人喜欢交互式缩放范围。
+But I know some people like the interactive scale range.
+
+840
+00:46:14,275 --> 00:46:15,085
+懂我的意思吧？
+So do you see what I mean?
+
+841
+00:46:15,085 --> 00:46:17,040
+它确实能这样做。好。
+It does that. OK.
+
+842
+00:46:17,040 --> 00:46:18,280
+我不喜欢这样。
+I don't like that.
+
+843
+00:46:18,280 --> 00:46:20,260
+我更喜欢交互式缩放移动。
+I like to have interactive scale move.
+
+844
+00:46:20,260 --> 00:46:22,035
+如果我想让它这样做，
+And then if I want it to do that.
+
+845
+00:46:22,035 --> 00:46:25,070
+按住Ctrl键，然后鼠标左键点击。
+You just press control. And then left click on your mouse.
+
+846
+00:46:25,070 --> 00:46:26,915
+用Ctrl键就能实现。
+And you can do it with control.
+
+847
+00:46:26,915 --> 00:46:30,290
+松开Ctrl键，它就只能上下移动。
+And then if you'd let go of control, it would just move it up and down.
+
+848
+00:46:31,730 --> 00:46:32,815
+就这些。好。
+And that's it. All right.
+
+849
+00:46:32,815 --> 00:46:34,014
+最后，我
+And then finally, I
+
+850
+00:46:34,014 --> 00:46:35,812
+突然意识到这不该出现。
+just realized this shouldn't be the
+
+851
+00:46:35,812 --> 00:46:39,709
+因为你应该花大量时间学基础课程。
+case. Because you should have spent a long time doing the foundation course.
+
+852
+00:46:39,710 --> 00:46:46,615
+但如果你没学就跳过了，这由你决定。
+But if you haven't and you've skipped ahead or whatever. Which, you know, obviously it's your decision to do.
+
+853
+00:46:46,615 --> 00:46:51,770
+确保你选了正确的Sierra Chart服务套餐。
+Just make sure that you've got the correct service package for Sierra Chart.
+
+854
+00:46:51,770 --> 00:46:54,040
+否则TPO图表会是空白的。
+Because the TPOs will be blank otherwise.
+
+855
+00:46:54,040 --> 00:46:57,655
+所以我在这里放了Sierra Chart的页面。
+And therefore, I've got it here. The Sierra Chart page.
+
+856
+00:46:57,655 --> 00:47:00,395
+这个套餐提供的内容，
+The package is looking... For what you're getting,
+
+857
+00:47:00,395 --> 00:47:02,460
+老实说，很棒，对吧？
+let's be honest, it's incredible, right?
+
+858
+00:47:02,460 --> 00:47:07,270
+相对来说，花费真的很少。
+So, you know, relatively speaking, we're talking peanuts here.
+
+859
+00:47:07,270 --> 00:47:10,625
+所以选服务套餐5。
+So get the service package 5.
+
+860
+00:47:10,625 --> 00:47:13,940
+因为上面写着TPO图表功能，否则你用不了。
+Because you can see it says TPO Chart Study. Otherwise, you're not going to get it.
+
+861
+00:47:13,940 --> 00:47:17,820
+另外，你也拿不到延迟交易所数据。所以必须选。
+You won't get the delayed exchange data feed as well. So you need that.
+
+862
+00:47:17,820 --> 00:47:19,450
+真的，这个套餐很便宜。
+So it's... Look, it's really cheap.
+
+863
+00:47:19,450 --> 00:47:23,450
+每月36美元，按当前汇率，
+$36 a month. Which, you know, current exchange rate is...
+
+864
+00:47:23,450 --> 00:47:25,510
+大概27、28英镑一个月。
+What about 28? 27, 28 pounds a month.
+
+865
+00:47:25,510 --> 00:47:26,225
+非常便宜。
+It's very cheap.
+
+866
+00:47:26,225 --> 00:47:31,150
+或者如果你愿意，可以一次付一年，
+Or if you really want, I pay for a year. And you can drop that right down to...
+
+867
+00:47:31,150 --> 00:47:33,050
+能降到25美元？
+Is it $25?
+
+868
+00:47:34,130 --> 00:47:36,155
+大约20英镑一个月，很划算，对吧？
+About 20 quid a month is peanuts, right?
+
+869
+00:47:36,155 --> 00:47:37,495
+或者选中间的套餐。
+Or you can do one of the ones in between.
+
+870
+00:47:37,495 --> 00:47:41,070
+选三个月，能打9折。所以，真的不贵。
+Three months, you get a 10% discount. So, really, we're not talking very much.
+
+871
+00:47:41,070 --> 00:47:42,930
+但我的意思是确保你选了这个
+But my point is just make sure you've got this.
+
+872
+00:47:42,930 --> 00:47:44,975
+服务包5
+The service package 5.
+
+873
+00:47:44,975 --> 00:47:45,660
+好，
+Okay, guys.
+
+874
+00:47:45,660 --> 00:47:48,075
+我觉得要分享的都分享了
+I think that's everything that I wanted to show you.
+
+875
+00:47:48,075 --> 00:47:54,015
+要是想到其他内容，我会加到视频结尾
+If there's anything else I remember, I'll just add it on to the end of this video.
+
+876
+00:47:54,015 --> 00:47:58,350
+基本上该讲的都讲了
+But I'm fairly satisfied that I've shown you everything.
+
+877
+00:47:58,350 --> 00:48:02,385
+如果你在任何视频里
+If there's anything you see me doing in any of the videos,
+
+878
+00:48:02,385 --> 00:48:04,739
+看到我用了些
+anything that isn't in the... sort of
+
+879
+00:48:04,739 --> 00:48:06,084
+Sierra 快捷键视频里没提到的
+Sierra Shortcuts Sierra video,
+
+880
+00:48:06,085 --> 00:48:07,905
+请告诉我
+then please let me know.
+
+881
+00:48:07,905 --> 00:48:10,135
+我会开心地补到结尾
+And I'll happily add it at the end.
+
+882
+00:48:10,135 --> 00:48:12,700
+好，享受学习吧
+Otherwise, yeah, enjoy.
+
+883
+00:48:12,700 --> 00:48:14,070
+有问题随时联系。拜拜
+Any questions, let me know. Cheers.
+
+===== END AFTER_TRANSLATE =====

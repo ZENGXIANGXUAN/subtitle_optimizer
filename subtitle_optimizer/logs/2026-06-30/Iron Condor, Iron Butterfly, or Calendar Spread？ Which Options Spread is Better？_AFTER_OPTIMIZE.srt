@@ -1,0 +1,1067 @@
+===== AFTER_OPTIMIZE (213 entries) =====
+1
+00:00:00,300 --> 00:00:02,600
+大家早安、午安、晚安、晚安。
+Good morning, good afternoon, good evening, good night.
+
+2
+00:00:02,700 --> 00:00:03,200
+Brian来了。
+Brian's here.
+
+3
+00:00:03,300 --> 00:00:09,300
+今天是2023年4月12日，周三，这是我之前上传视频的续集。
+Today is Wednesday, April 12, 2023, and this is a continuation to the video I previously uploaded.
+
+4
+00:00:09,500 --> 00:00:12,409
+我决定把内容拆分，
+I decided to separate this content as the previous video was becoming
+
+5
+00:00:12,409 --> 00:00:15,318
+因为之前的视频有点长，
+a little bit too long, and I figured since this was a
+
+6
+00:00:15,318 --> 00:00:17,499
+而且这是一个更专业的视频，不如单独分开。
+more specialized video, I might as well separate it.
+
+7
+00:00:18,200 --> 00:00:21,900
+在之前的视频中，我们回顾了4月3日和6日的价格走势。
+In that video, we reviewed the price action for April 3rd and April 6th.
+
+8
+00:00:22,200 --> 00:00:24,902
+这期视频的重点是：当你认为
+The focus of this video is what to do when
+
+9
+00:00:24,902 --> 00:00:27,604
+市场会横盘震荡，或者会围绕某个行权价
+you know or you have enough conviction behind thinking the
+
+10
+00:00:27,604 --> 00:00:32,198
+来回波动时，应该怎么做。
+market is just going to be choppy or it's going to pin around a certain strike price.
+
+11
+00:00:32,600 --> 00:00:35,600
+这时候大家首先想到的策略通常是铁鹰策略。
+Usually the spread that might come to mind is an iron condor.
+
+12
+00:00:35,800 --> 00:00:38,591
+我们会分析日历差价、铁鹰策略
+We will be looking at a calendar spread, an iron
+
+13
+00:00:38,591 --> 00:00:42,499
+以及铁蝶策略，还有我为什么大多数时候会选择铁蝶策略。
+condor and an iron butterfly and why I choose butterflies most of the time.
+
+14
+00:00:42,500 --> 00:00:44,535
+最近我并不是一开始就这样交易的。
+As of lately, I did not start out this way.
+
+15
+00:00:44,535 --> 00:00:46,570
+我之前交易过很多日历差价，
+I used to trade a lot more calendars, but these
+
+16
+00:00:46,570 --> 00:00:48,198
+现在我交易更多的是蝶式价差策略。
+days I'm trading a lot more butterfly spreads.
+
+17
+00:00:48,400 --> 00:00:51,800
+这是Gamma敞口的一个汇聚位图。
+So this is just a pitch of the gamma exposure, which was just one of our confluences.
+
+18
+00:00:51,800 --> 00:00:55,800
+这是在市场实际收于这个价位的一周前生成的。
+This was generated a week in advance before the market actually closed at this level.
+
+19
+00:00:55,800 --> 00:01:00,000
+如果你看过之前的视频，大家知道标普500指数期权（SPX）最终收在4050点左右。
+If you've seen the previous video, you guys know that the SPX ended up closing around 405.
+
+20
+00:01:00,400 --> 00:01:02,900
+接下来我们要回顾的策略，
+So the spreads that we will be reviewing, as I
+
+21
+00:01:02,900 --> 00:01:05,900
+正如我刚才提到的，我会详细分析每一个。
+just mentioned, I will get into each of these in smaller detail.
+
+22
+00:01:06,200 --> 00:01:09,013
+因为视频的下一部分其实是之前录制的，
+As the next portion of this video was actually recorded previously, again,
+
+23
+00:01:09,013 --> 00:01:11,357
+它原本是之前视频的一部分，
+it was part of the previous video. I just didn't
+
+24
+00:01:11,357 --> 00:01:12,998
+但我没有把它发布在之前的那个视频里。
+upload it as part of that one.
+
+25
+00:01:13,200 --> 00:01:14,700
+这是一个4100点的日历差价。
+So this is a 4100 calendar.
+
+26
+00:01:14,700 --> 00:01:16,543
+假设你在周一开盘时开仓，
+This is hypothetically speaking, if you had opened
+
+27
+00:01:16,543 --> 00:01:19,769
+成本是890美元。
+it on Monday at the start of the week, it would have cost 890 bucks.
+
+28
+00:01:20,200 --> 00:01:26,800
+然后我会把它和另一个同样针对4100点的日历差价做比较，
+And then I'm going to compare that to a calendar also targeting 4100, but this time widening the term structure.
+
+29
+00:01:26,800 --> 00:01:30,000
+这次期限结构扩大到从一个周五到下一个周五，
+So going with from a Friday to a Friday, and then we have an iron.
+
+30
+00:01:30,200 --> 00:01:33,500
+接着是铁鹰策略，最后是铁蝶策略。
+Condor and then lastly we have an iron butterfly.
+
+31
+00:01:33,500 --> 00:01:35,917
+这些策略本质上都把目标定在了4100点，
+So all of them essentially targeting 4100 these prices were
+
+32
+00:01:35,917 --> 00:01:38,603
+这些价格是事后添加的。我并没有实际交易这四个价差策略，
+retroactively added So I did not trade these four spreads
+
+33
+00:01:38,603 --> 00:01:41,289
+我决定跟踪它们，
+I decided to keep track of them or to show
+
+34
+00:01:41,289 --> 00:01:42,094
+并在
+you guys at
+
+35
+00:01:42,094 --> 00:01:43,974
+周末时向大家展示
+the end of the week Different strategies
+
+36
+00:01:43,974 --> 00:01:46,928
+如果大家预期市场会震荡，可以使用的不同策略。
+you can use if you're expecting the market to be choppy
+
+37
+00:01:47,700 --> 00:01:50,700
+现在我们直接进入之前录制的视频部分。
+So let's just jump into the part of the video that was previously recorded
+
+38
+00:01:51,600 --> 00:01:57,200
+我们先从这个宏观思路开始。这里的‘宏观’是针对日内交易者而言的。
+We're starting with this macro idea right here. By macro, I mean macro for us as day traders.
+
+39
+00:01:57,600 --> 00:01:59,300
+标普500指数期权（SPX）上周收盘时超过了2倍标准差。
+SPX closed over 2 Sigma last week.
+
+40
+00:02:00,000 --> 00:02:01,500
+净变动幅度会下降。
+The net change is going to drop.
+
+41
+00:02:01,500 --> 00:02:06,000
+如果它上周移动了13点，那么下周的移动幅度会小于13点。
+So if it moved over 13 points last week, it's going to be less than 13 points this upcoming week.
+
+42
+00:02:06,400 --> 00:02:08,400
+通常会有显著下降。
+Usually it has a significant drop.
+
+43
+00:02:08,400 --> 00:02:10,226
+没有人能未卜先知，
+There's no way to have known it would have only
+
+44
+00:02:10,226 --> 00:02:12,417
+事先知道它只会波动20美分。
+been 20 cents without a crystal ball being able to tell the future.
+
+45
+00:02:12,600 --> 00:02:14,600
+但我们的假设是，
+But the thesis is it's going to be
+
+46
+00:02:14,600 --> 00:02:16,600
+波动幅度会很小，这意味着
+a narrow change, which means there's a ton
+
+47
+00:02:16,600 --> 00:02:19,600
+在周初可以执行很多不同的交易。
+of different trades you can run at the beginning of the week.
+
+48
+00:02:19,600 --> 00:02:21,600
+这里是四个非常流行的价差策略。
+So here are four very popular spreads.
+
+49
+00:02:21,600 --> 00:02:25,600
+我会在另一个视频中详细解析这些策略，这里只是简单提及。
+Again, I will break these down in more detail in another video, just specifically these.
+
+50
+00:02:26,100 --> 00:02:28,700
+首先是平值日历价差策略。
+But we have an at the money calendar.
+
+51
+00:02:28,800 --> 00:02:35,200
+标普500指数期权（SPX）开盘价是4100，我们选择的是平值日历价差策略。
+So the SPX opened at 4100 as we reviewed already, and we're going with an at the money calendar spread.
+
+52
+00:02:35,700 --> 00:02:41,900
+这个策略是卖出当周周五到期的期权，同时买入下周周一到期的期权，成本约为890美元。
+This is shorting the Friday expiration and buying the following Monday expiration. It costs about 890.
+
+53
+00:02:42,100 --> 00:02:44,171
+我们可以看到，在截图时，
+And we see just before the close, when I took
+
+54
+00:02:44,171 --> 00:02:45,828
+标普500指数期权（SPX）的价格大约在这里，
+this screenshot, the SPX is right around here,
+
+55
+00:02:45,828 --> 00:02:47,692
+但我们知道它最终收盘价大约是4105。
+but we know it ended up closing at about 4105.
+
+56
+00:02:47,900 --> 00:02:51,300
+这个截图是在市场收盘前10分钟左右拍的。
+So this was taken maybe 10 minutes or so before the market closed.
+
+57
+00:02:52,000 --> 00:02:55,200
+看看这个交易的回报率，大约100%回报率，这是盈亏图。
+Look at the return on this trade, about 100% return, and this is the P&L.
+
+58
+00:02:55,200 --> 00:02:57,103
+所以这个策略是在周一市场开盘时开仓，
+So this is opening as soon as the market opened
+
+59
+00:02:57,103 --> 00:02:58,244
+然后你
+this Monday, and you took the
+
+60
+00:02:58,244 --> 00:02:59,005
+休息一周。你决定
+week off. You said
+
+61
+00:02:59,005 --> 00:03:01,098
+大家只需周五再来看一下市场。
+you would just check back in. on the market on Friday.
+
+62
+00:03:01,400 --> 00:03:02,200
+我手头有这些数据。
+I have all this data.
+
+63
+00:03:02,200 --> 00:03:03,100
+统计数据也都有。
+I have all the stats.
+
+64
+00:03:03,200 --> 00:03:04,900
+Gamma暴露量在4100点。
+Absolute Gex is at 4,100.
+
+65
+00:03:05,200 --> 00:03:07,000
+上周收盘时，我们超过了2倍标准差。
+You know, we closed over to Sigma last week.
+
+66
+00:03:07,200 --> 00:03:10,500
+标普500指数这周可能横盘，应该会收十字星。
+The SPX is not going to go anywhere this week. I think it's just going to be a doji.
+
+67
+00:03:10,700 --> 00:03:12,100
+怎么利用这个行情交易？
+How do you capitalize on that trade?
+
+68
+00:03:12,900 --> 00:03:13,200
+看这里。
+Boom.
+
+69
+00:03:13,400 --> 00:03:15,600
+这里有个小回撤，不算严重。
+A little bit of a drawdown right here. Nothing too bad.
+
+70
+00:03:15,600 --> 00:03:16,300
+回撤是多少呢？
+What was the drawdown?
+
+71
+00:03:16,400 --> 00:03:17,600
+我记得记在笔记里了。
+I believe I left it in my notes.
+
+72
+00:03:17,700 --> 00:03:19,100
+大概80美分。
+We have about an 80.
+
+73
+00:03:19,600 --> 00:03:20,775
+这份合约的回撤是80美分，
+Dollar drawdown so 80 cents drawdown
+
+74
+00:03:20,775 --> 00:03:22,185
+它是从8美元90美分
+on this contract so it went
+
+75
+00:03:22,185 --> 00:03:23,360
+跌到8美元10美分，
+from eight dollars and 90 cents
+
+76
+00:03:23,360 --> 00:03:24,770
+也就是回落了80美分。
+down to eight dollars and 10 cents
+
+77
+00:03:24,770 --> 00:03:26,415
+不算太糟，也就是说
+not too bad which means you're down
+
+78
+00:03:26,415 --> 00:03:27,092
+每手合约亏损80美元，
+80 bucks depending on
+
+79
+00:03:27,092 --> 00:03:28,446
+具体看你开了几手。
+how many you ran if you
+
+80
+00:03:28,446 --> 00:03:29,800
+如果是3手，
+ran three of these we'll talk
+
+81
+00:03:29,800 --> 00:03:31,831
+等一下再详细说为什么选3手。
+about three of these in a second why three
+
+82
+00:03:33,600 --> 00:03:36,000
+但就回撤百分比来看，
+but that's not too bad in terms of
+
+83
+00:03:36,000 --> 00:03:38,100
+大概是
+how much the percentual drawdown was about
+
+84
+00:03:38,100 --> 00:03:42,000
+我们算它9%回撤，最终在交易结束前获利约88%。
+we'll call it nine percent drawdown before the ultimately being up about 88 return
+
+85
+00:03:42,700 --> 00:03:44,580
+在这笔交易里，就在收盘前，
+on this trade right here just before the
+
+86
+00:03:44,580 --> 00:03:45,990
+我们切换到下一笔交易。
+market closed we jump to the
+
+87
+00:03:45,990 --> 00:03:47,400
+这同样是一笔平值蝶式价差策略，
+next one this is also an
+
+88
+00:03:47,400 --> 00:03:52,100
+只是期限结构更宽，这是下一个周五的合约。
+at the money butterfly but just but just going with a wider term structure so this is the following friday
+
+89
+00:03:52,800 --> 00:03:56,600
+我们做空本周五的合约，做多14日的合约。
+So we have this is short this Friday and then long the 14th.
+
+90
+00:03:56,900 --> 00:03:58,566
+这份合约成本稍高一些。
+And then this contract costs a little bit
+
+91
+00:03:58,566 --> 00:03:59,816
+显然成本更高，因为远月期权
+more, obviously, because the back month
+
+92
+00:03:59,816 --> 00:04:01,899
+通常会稍微贵一些。
+options are going to be a little bit more expensive.
+
+93
+00:04:01,900 --> 00:04:03,100
+大家可以看到回报率。
+You guys can see the return.
+
+94
+00:04:03,500 --> 00:04:05,100
+这个价差从未亏损。
+And this spread never went red.
+
+95
+00:04:05,100 --> 00:04:06,220
+大家可以看到，
+So as you guys can see
+
+96
+00:04:06,220 --> 00:04:07,340
+这里，
+right here, this is opening as
+
+97
+00:04:07,340 --> 00:04:08,646
+头寸是在周一市场一开盘就开的，
+soon as the market opens on opening
+
+98
+00:04:08,646 --> 00:04:10,699
+周一市场开盘后立即建仓
+the position as soon as the market opens on the Monday.
+
+99
+00:04:11,300 --> 00:04:15,900
+当天晚些时候回到盈亏平衡，但交易从未亏损。
+Later in the day on that Monday, it just went back to break even, but trade never went red.
+
+100
+00:04:15,900 --> 00:04:17,700
+这是你扩大期限结构时会看到的情况。
+That's something you'll see whenever you widen
+
+101
+00:04:17,700 --> 00:04:19,500
+通常来说，
+your term structure. You'll generally, it has
+
+102
+00:04:19,500 --> 00:04:21,300
+价差出现亏损的概率会更低。
+less chance of the spread going red.
+
+103
+00:04:21,700 --> 00:04:26,500
+如果你判断正确，市场确实没怎么动，就会体验到这一点。
+If you're right, obviously, this is if the market is not going anywhere, you'll generally experience that.
+
+104
+00:04:27,100 --> 00:04:30,000
+继续往下看，现在我们有
+And as we continue right along, now we have the...
+
+105
+00:04:30,300 --> 00:04:31,766
+如果你真的认为市场不会有大动作，
+King of these types of trades if
+
+106
+00:04:31,766 --> 00:04:33,232
+第一个想到的策略
+you really think the market's not going
+
+107
+00:04:33,232 --> 00:04:34,908
+应该是
+to go anywhere the first thing that's going
+
+108
+00:04:34,908 --> 00:04:36,584
+铁鹰策略。
+to come to Your mind is going to
+
+109
+00:04:36,584 --> 00:04:38,050
+就是某种铁鹰策略，
+be some sort of an iron condor
+
+110
+00:04:38,050 --> 00:04:39,057
+大家可以看到
+you guys can see this
+
+111
+00:04:39,057 --> 00:04:40,467
+这就是铁鹰策略的表现，
+is what an iron condor would have
+
+112
+00:04:40,467 --> 00:04:43,086
+我只是在两侧各设了30点的等宽。
+been I just went with an even width of 30 points on each side.
+
+113
+00:04:43,800 --> 00:04:47,800
+短行权价从哪来？这里用的是QTA（量化交易应用）的买入区和卖出区。
+Where did I get the short strikes from? This is just using the QTA buy zone and sell zone.
+
+114
+00:04:47,900 --> 00:04:53,400
+这里是4030，
+So we have 40 30 41 80 so that's 40 30.
+
+115
+00:04:53,600 --> 00:04:55,600
+把这个拉出来看看。
+Let's Pull this up right here.
+
+116
+00:04:55,600 --> 00:04:56,300
+放大一点。
+Let's zoom out.
+
+117
+00:04:56,300 --> 00:05:03,500
+这里我们有4030，上面还有4180，基本上就是在说
+So what do we have is 40 30 and then we have up here 41 80 so you're pretty much just saying hey
+
+118
+00:05:03,900 --> 00:05:05,621
+我认为标普500指数期权（SPX）会保持
+I think the SPX is going to stay
+
+119
+00:05:05,621 --> 00:05:07,342
+在买入区和卖出区内，
+within the buy zone in the cell zone
+
+120
+00:05:07,342 --> 00:05:09,063
+因为数据是这样显示的，我们
+because that's what the data says We're going
+
+121
+00:05:09,063 --> 00:05:10,784
+会待在这个区间内 但不确定
+to stay within this region You don't know
+
+122
+00:05:10,784 --> 00:05:12,505
+周末会收在哪里 但开盘时
+where we're going to close but at the
+
+123
+00:05:12,505 --> 00:05:14,010
+一周初数据显示
+start of the week your data tells
+
+124
+00:05:14,010 --> 00:05:15,515
+会在这个区间内波动
+you we're going to be within here
+
+125
+00:05:15,515 --> 00:05:18,096
+以及这里 那该怎么做呢 做空这个行权价
+and here boom, so what do you do you short that strike
+
+126
+00:05:18,600 --> 00:05:20,009
+做空这个行权价
+you short this strike and
+
+127
+00:05:20,009 --> 00:05:21,418
+然后
+and you go with your
+
+128
+00:05:21,418 --> 00:05:24,799
+再根据你想设多大价差来选做多行权价
+long strikes depending on how expensive you want the spread to be.
+
+129
+00:05:25,100 --> 00:05:27,300
+这只是给大家举个例子
+This is just to show you guys an example.
+
+130
+00:05:27,600 --> 00:05:29,662
+在这个例子中 权利金只有
+In this case here, the credit is only
+
+131
+00:05:29,662 --> 00:05:31,466
+517美元 因为这是铁鹰策略
+$517 because it is an iron condo that
+
+132
+00:05:31,466 --> 00:05:33,528
+4天后或5天后到期
+expires five days later, or four days later
+
+133
+00:05:33,528 --> 00:05:35,332
+如果你是周一开始建仓
+if you were opening this on a
+
+134
+00:05:35,332 --> 00:05:38,940
+这里实际是3天后 因为那周交易日很短
+Monday, three days later in this case because it was such a short week.
+
+135
+00:05:39,800 --> 00:05:42,200
+显然 这是100%回报率
+And obviously, this is 100% return.
+
+136
+00:05:42,200 --> 00:05:44,800
+市场收盘时仍在这个区间内
+The market closed well within the region.
+
+137
+00:05:45,500 --> 00:05:48,000
+实际上 到周四时 回报率已经接近90%了
+Actually, by Thursday, it was already up 90-something percent return.
+
+138
+00:05:48,000 --> 00:05:49,800
+所以通常这时候你就可以平仓了
+So this is generally where you would have closed this.
+
+139
+00:05:50,000 --> 00:05:51,476
+正如我们在这里看到的
+As we can see right here, it would
+
+140
+00:05:51,476 --> 00:05:52,952
+周五整天你可能只是为了
+have taken you all day on Friday just
+
+141
+00:05:52,952 --> 00:05:53,690
+挤出最后一点利润
+to squeeze out those
+
+142
+00:05:53,690 --> 00:05:55,166
+所以不如在周四
+last few pennies. So you might as well
+
+143
+00:05:55,166 --> 00:05:57,196
+也就是前一天就平仓
+close it out on the Thursday, which is the previous day.
+
+144
+00:05:57,600 --> 00:05:58,200
+在这种情况下
+In this case, it's...
+
+145
+00:06:00,000 --> 00:06:02,500
+价差可能只是稍微下降了一点
+Here the spread would have just dropped a little bit down.
+
+146
+00:06:02,500 --> 00:06:06,600
+我认为这种情况下最大回撤是98美元
+I think the max drawdown in this case would have been 98 bucks.
+
+147
+00:06:06,700 --> 00:06:11,500
+也就是约-3.9%的保证金
+So about minus 3.9% margin here.
+
+148
+00:06:11,600 --> 00:06:14,100
+还不错 大家应该明白了
+So not too bad, but you guys get the point right here.
+
+149
+00:06:14,100 --> 00:06:16,600
+基本上 铁鹰策略开仓后通常就是这样
+Pretty much as soon as you open it, that's generally the way iron condors go.
+
+150
+00:06:17,000 --> 00:06:20,100
+开仓后如果市场大幅波动 你就会有麻烦
+As soon as you open it, if the market makes a big move, you're going to be in trouble.
+
+151
+00:06:20,200 --> 00:06:21,072
+大家也知道
+And as you guys
+
+152
+00:06:21,072 --> 00:06:22,817
+市场确实出现了
+know, the market made a big move, quote
+
+153
+00:06:22,817 --> 00:06:24,562
+对周度合约来说算大幅波动
+unquote, big move for a weekly contract because
+
+154
+00:06:24,562 --> 00:06:27,398
+因为周一市场先大幅拉升后又回落
+it made this big pop right here on Monday before it came back.
+
+155
+00:06:27,400 --> 00:06:31,500
+所以铁鹰策略的盈亏才会出现这样的下跌
+So that's why this iron condor would have had a drop in the P&L like that.
+
+156
+00:06:32,000 --> 00:06:32,950
+最后
+And then lastly.
+
+157
+00:06:32,950 --> 00:06:35,800
+来说说我最爱的策略，原因是
+We would have our favorite and this is why
+
+158
+00:06:35,800 --> 00:06:39,600
+我特别喜欢铁蝶策略，大家可以看这里
+I love the iron butterflies because as you guys can see here
+
+159
+00:06:40,000 --> 00:06:41,013
+情况和之前类似
+Same same situation this
+
+160
+00:06:41,013 --> 00:06:42,533
+这次我们做空
+time we're shorting the at the
+
+161
+00:06:42,533 --> 00:06:44,560
+平值期权，因为我认为市场
+money ones because we don't think the market's
+
+162
+00:06:44,560 --> 00:06:46,080
+不会有太大波动
+really going to go anywhere This
+
+163
+00:06:46,080 --> 00:06:47,600
+这笔交易的保证金是2900美元
+trade costs two thousand nine hundred
+
+164
+00:06:47,600 --> 00:06:50,895
+到周五时保证金收益率大家看一下
+dollars in terms of margin and then look at the return by friday.
+
+165
+00:06:50,900 --> 00:06:51,332
+权利金收益率是90%
+So 90
+
+166
+00:06:51,332 --> 00:06:53,492
+而保证金收益率
+return And 90 return on credit,
+
+167
+00:06:53,492 --> 00:06:56,517
+达到了124%
+by the way, but on margin, that's 124
+
+168
+00:06:56,517 --> 00:07:01,702
+因为实际盈利超过了风险敞口
+return on margin because you're making more than what you're actually risking.
+
+169
+00:07:03,400 --> 00:07:08,000
+最大回撤是195美元，同样发生在周一
+The max drawdown in this case was $195, again, also on Monday.
+
+170
+00:07:08,000 --> 00:07:09,135
+开仓后
+So right after we opened the
+
+171
+00:07:09,135 --> 00:07:10,460
+盈亏曲线立即
+trade, we see that it dipped right
+
+172
+00:07:10,460 --> 00:07:13,299
+下跌，这点小回调让交易短暂亏损
+here. And that little dip is what would have caused this trade to go red.
+
+173
+00:07:13,600 --> 00:07:18,700
+但周一前45分钟后，交易一路盈利直到周末
+And then after the first 45 minutes on Monday, the trade was just straight green for the whole week.
+
+174
+00:07:18,800 --> 00:07:21,900
+大家可以参考这些数据，后面还会提到
+So use this information. I will be referencing this in the future.
+
+175
+00:07:21,900 --> 00:07:23,220
+显然，当标普500指数期权（SPX）
+Obviously, whenever we have the
+
+176
+00:07:23,220 --> 00:07:25,068
+收盘价超过2倍标准差，或者
+SPX closing over to Sigma or the
+
+177
+00:07:25,068 --> 00:07:28,500
+标普500指数ETF（SPY）收盘价超过2倍标准差时，我就会用这些策略
+SPY closing over to Sigma, I'm going to run this type of strategies.
+
+178
+00:07:28,500 --> 00:07:31,200
+掌握这种优势时，就是出手的好时机
+When you know this type, when you have this type of edge. This is when you open up your wrist.
+
+179
+00:07:31,200 --> 00:07:32,215
+但不要全仓
+You don't go all
+
+180
+00:07:32,215 --> 00:07:34,245
+而是适当运用这种策略
+in, obviously, but you use this type of
+
+181
+00:07:34,245 --> 00:07:37,798
+因为我们已有足够信息表明，市场很可能会陷入横盘。
+information because we have enough to show that we're likely going to get stuck.
+
+182
+00:07:37,900 --> 00:07:39,800
+但并不意味着必须一直持有到周五。
+It doesn't mean you have to hold this all the way until Friday.
+
+183
+00:07:39,800 --> 00:07:42,400
+我只是给大家展示理想情况下的回报率。
+I'm just showing you guys the idealized type of returns.
+
+184
+00:07:42,800 --> 00:07:44,000
+原因在于
+So the reason...
+
+185
+00:07:44,500 --> 00:07:46,734
+我之前提到过，大概会开
+I mentioned going with about
+
+186
+00:07:46,734 --> 00:07:49,862
+3手平值日历价差策略
+three on the at the money calendar
+
+187
+00:07:49,862 --> 00:07:53,437
+是因为我在把最大亏损调整到3000美元
+is because I'm just adjusting it for 3K
+
+188
+00:07:53,437 --> 00:07:58,352
+因为这个策略的最大亏损大约是890美元。
+in max loss because the max loss in this is about $890.
+
+189
+00:07:59,200 --> 00:08:04,300
+如果和这四个价差中最贵的那个比较，就是这个，大约3000美元。
+To compare it to the most expensive of the four spreads, it would have been this one, which was about 3,000.
+
+190
+00:08:04,400 --> 00:08:07,800
+所以我只是把它乘以一个系数，算下来大约是3.3。
+So I'm just multiplying this. If you just do the math, it ends up being about 3.3.
+
+191
+00:08:08,200 --> 00:08:10,650
+所以把这个仓位乘以
+So you multiply this position by
+
+192
+00:08:10,650 --> 00:08:13,100
+3.3，得到大约2800美元
+3.3 and you get about $2,800 or so
+
+193
+00:08:13,100 --> 00:08:17,183
+我们把它称为调整后的盈利潜力。
+in terms of the adjusted profit potential, we'll call it.
+
+194
+00:08:18,100 --> 00:08:25,400
+所以2800美元，仍然比不上其中一个4000美元的策略。
+So $2,800, it still doesn't compare to one of these, which was $4,000.
+
+195
+00:08:25,500 --> 00:08:26,331
+这2800美元
+So this $2,800 is
+
+196
+00:08:26,331 --> 00:08:28,549
+你需要开3手这样的日历价差策略
+you would need three of those calendars to
+
+197
+00:08:28,549 --> 00:08:31,321
+才能匹配这个策略的仓位规模。
+equate to the same amount of position size as this.
+
+198
+00:08:32,100 --> 00:08:33,600
+各位，希望这次分享有帮助。
+Guys, hopefully this one helped.
+
+199
+00:08:33,600 --> 00:08:35,664
+我没想到会在短短一周里
+I did not think I was going to go over this much
+
+200
+00:08:35,664 --> 00:08:37,040
+讲这么多内容，
+in such a short week, but there was
+
+201
+00:08:37,040 --> 00:08:37,900
+但确实有很多值得学习的地方。
+so much again to learn.
+
+202
+00:08:37,900 --> 00:08:44,900
+我们有两个开盘平值蝶式价差策略的例子，还有一个方向性蝶式价差策略。
+We have two examples of the opening drive at the money, a butterfly. Then we also had a directional butterfly.
+
+203
+00:08:45,200 --> 00:08:50,800
+然后是这个方向性蝶式价差策略，我们持有了两天。
+And then we had, this was the directional butterfly. We had a directional butterfly for two days.
+
+204
+00:08:50,900 --> 00:08:54,700
+还有开盘平值蝶式价差策略，以及方向性蝶式价差策略。
+We had an at the money fly, at the money fly at the open, as well as directional flies.
+
+205
+00:08:54,900 --> 00:08:59,500
+然后在短短四天里，还有一个持续一周的波段交易，信息量特别大。
+And then we had a week long swing all in just these four days with a ton of information.
+
+206
+00:09:00,100 --> 00:09:01,100
+感谢大家收看。
+Thanks for watching, guys.
+
+207
+00:09:01,200 --> 00:09:03,741
+如果想了解量化交易应用（QTA）的信息，链接
+If you want information to Quant Trading App, link is
+
+208
+00:09:03,741 --> 00:09:06,028
+在视频描述中可以找到网站地址。Discord链接
+in the description to the website. The Discord is
+
+209
+00:09:06,028 --> 00:09:07,298
+也在描述里。
+also linked in the description.
+
+210
+00:09:07,400 --> 00:09:09,529
+里面有免费公开区，但
+There is a free public section, but
+
+211
+00:09:09,529 --> 00:09:11,962
+我不在免费区，我在付费区，
+I'm not accessible there. I am in the
+
+212
+00:09:11,962 --> 00:09:14,699
+所以相关信息可以在网站上找到。
+premium section, so you'll find information on the website.
+
+213
+00:09:14,900 --> 00:09:16,500
+感谢收看，下期再见。
+Thanks for watching. Catch you guys in the next one.
+
+===== END AFTER_OPTIMIZE =====

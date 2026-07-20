@@ -1,0 +1,2730 @@
+===== AFTER_SEGMENT (682 entries) =====
+1
+00:00:00,040 --> 00:00:03,602
+okay traders really really excited about this section because this
+
+2
+00:00:03,602 --> 00:00:07,164
+is where you bring all your hard work you've been
+
+3
+00:00:07,164 --> 00:00:10,726
+doing over the last two three months together and things
+
+4
+00:00:10,726 --> 00:00:14,288
+should just really make sense to you like oh wow
+
+5
+00:00:14,288 --> 00:00:17,850
+um i now understand why envy's got us doing this
+
+6
+00:00:17,850 --> 00:00:30,676
+hard graft on individual things which may have been boring and taken a lot of effort um but it's really going to start paying off very quickly in the sense that you're really going to understand
+
+7
+00:00:30,680 --> 00:00:34,982
+what institutions are looking at in terms of the profile
+
+8
+00:00:34,982 --> 00:00:37,133
+so to do that i
+
+9
+00:00:37,133 --> 00:00:45,738
+need to introduce you to auction market theory which is what i've written here amt auction market theory because essentially
+
+10
+00:00:45,740 --> 00:00:53,160
+what we're going to be doing is i'm going to take a trade on the simulator bringing all the things
+
+11
+00:00:53,160 --> 00:00:57,093
+that we've been learning together so so far you've done
+
+12
+00:00:57,093 --> 00:01:01,026
+a great job guys in on an individual basis looking
+
+13
+00:01:01,026 --> 00:01:04,959
+at what so you've understood market orders the demand side
+
+14
+00:01:04,959 --> 00:01:13,219
+of buying and selling you've understood supply sitting passively on the bid and offer again on the buy and sell side
+
+15
+00:01:13,220 --> 00:01:16,303
+that's in terms of supply i mean it seems like
+
+16
+00:01:16,303 --> 00:01:19,386
+an age ago now module one do you remember where
+
+17
+00:01:19,386 --> 00:01:22,469
+we spoke about price uh in terms of the bid
+
+18
+00:01:22,469 --> 00:01:25,552
+and the offer and i believe i said to you
+
+19
+00:01:25,552 --> 00:01:37,577
+guys you're missing you know out of the six pieces of information you're missing an additional four now you guys should be experts in that and actually you don't see the volume profile as well but the point is
+
+20
+00:01:37,580 --> 00:01:41,211
+you should understand by now not necessarily shape of profile
+
+21
+00:01:41,211 --> 00:01:44,842
+and what that means because we're going to discuss that
+
+22
+00:01:44,842 --> 00:01:48,473
+now but how a profile is formed and if you
+
+23
+00:01:48,473 --> 00:01:52,104
+don't go back guys and redo some of the modules
+
+24
+00:01:52,104 --> 00:02:05,539
+where we discuss it because it should be abundantly clear to you what is causing just on a very basic level these numbers in the profile to appear so as a recap you should already know but
+
+25
+00:02:05,540 --> 00:02:09,952
+it's whenever what whenever market orders are taking place right
+
+26
+00:02:09,952 --> 00:02:12,158
+not the supply columns purely
+
+27
+00:02:12,158 --> 00:02:19,659
+demand whenever we see buying and selling taking place here and numbers appearing here it's appearing there
+
+28
+00:02:19,660 --> 00:02:23,787
+right so the point is that as you can see
+
+29
+00:02:23,787 --> 00:02:27,914
+now um this was the reason why i got you
+
+30
+00:02:27,914 --> 00:02:32,041
+doing things on an individual basis because i really needed
+
+31
+00:02:32,041 --> 00:02:43,598
+you to understand that it's demand taking place on the buying sell side here that's causing the profile to build in this area do you remember the banana
+
+32
+00:02:43,600 --> 00:02:46,769
+market example where we were roughly trading between honestly i've
+
+33
+00:02:46,769 --> 00:02:49,304
+completely forgotten maybe 10 and 12 dollars don't forgive me
+
+34
+00:02:49,304 --> 00:02:52,473
+if i'm wrong but i think it was something around
+
+35
+00:02:52,473 --> 00:03:05,152
+10 11 12 where we said oh it's a typical box of bananas and then we went out and then we came back in or we went out and we came back in guys you've got to understand that essentially this is happening
+
+36
+00:03:06,740 --> 00:03:11,042
+in i'm just going to delete all of this this
+
+37
+00:03:11,042 --> 00:03:13,193
+is happening everywhere in life
+
+38
+00:03:13,193 --> 00:03:24,379
+i'm going to talk in a minute about a carton of milk but we could apply this as i keep saying to any thing you want
+
+39
+00:03:24,380 --> 00:03:26,442
+it's even happening um in
+
+40
+00:03:26,442 --> 00:03:29,330
+non-tangible elements you know in terms of
+
+41
+00:03:29,330 --> 00:03:32,630
+um things going on throughout your day for
+
+42
+00:03:32,630 --> 00:03:35,105
+example um that are not measured
+
+43
+00:03:35,105 --> 00:03:38,818
+in monetary terms you could draw a profile around
+
+44
+00:03:38,820 --> 00:03:41,070
+but look at the end of the
+
+45
+00:03:41,070 --> 00:03:43,320
+day i'm not a life specialist i'm
+
+46
+00:03:43,320 --> 00:03:45,249
+a trader so i'm going to
+
+47
+00:03:45,249 --> 00:03:51,679
+just talk about um financial markets and products but the point is you've got to understand guys this is not
+
+48
+00:03:51,680 --> 00:03:58,420
+an indicator all this is is it's measuring transactions taking place now would you agree
+
+49
+00:03:58,420 --> 00:03:59,970
+transactions are taking place
+
+50
+00:03:59,970 --> 00:04:02,683
+um everywhere in the world on everything
+
+51
+00:04:02,683 --> 00:04:06,172
+right so if you think about a carton of
+
+52
+00:04:06,172 --> 00:04:08,885
+milk let's just say it's one dollar
+
+53
+00:04:08,885 --> 00:04:13,537
+fifty i don't know how much it is where you live but
+
+54
+00:04:13,540 --> 00:04:14,848
+you know let's just
+
+55
+00:04:14,848 --> 00:04:17,137
+say it's approximately 150 which sounds about right
+
+56
+00:04:17,137 --> 00:04:19,753
+to me um you can think of whatever
+
+57
+00:04:19,753 --> 00:04:21,715
+price you want in your country
+
+58
+00:04:21,715 --> 00:04:25,312
+but would you agree guys january february march april may june
+
+59
+00:04:25,640 --> 00:04:28,073
+july august all the way to
+
+60
+00:04:28,073 --> 00:04:31,722
+december generally that's going to be the price of
+
+61
+00:04:31,722 --> 00:04:34,560
+a carton of milk yeah it might
+
+62
+00:04:34,560 --> 00:04:41,048
+go up to 160 in some shops it may be 140 in other shops but essentially that's approximately
+
+63
+00:04:41,860 --> 00:04:45,475
+going to be the price of a carton
+
+64
+00:04:45,475 --> 00:04:49,993
+of milk right now the point here is that they
+
+65
+00:04:49,993 --> 00:04:53,156
+may not be recording this data in
+
+66
+00:04:53,156 --> 00:04:58,578
+terms of a volume profile but guys when i say volume profile
+
+67
+00:04:58,580 --> 00:05:00,712
+is not an indicator what
+
+68
+00:05:00,712 --> 00:05:03,697
+you need to understand is that even
+
+69
+00:05:03,697 --> 00:05:07,108
+the price of everyday um goods product services
+
+70
+00:05:07,108 --> 00:05:09,666
+have a volume profile think about
+
+71
+00:05:09,666 --> 00:05:14,357
+it what exactly is this would you agree that's the price
+
+72
+00:05:14,360 --> 00:05:15,773
+now let's look at do
+
+73
+00:05:15,773 --> 00:05:17,752
+you remember go back and look at
+
+74
+00:05:17,752 --> 00:05:20,013
+the coronavirus um instagram video i did or
+
+75
+00:05:20,013 --> 00:05:21,992
+um any of the other videos i
+
+76
+00:05:21,992 --> 00:05:26,798
+did um and if you're not sure send me a message i'll point you in the right
+
+77
+00:05:26,800 --> 00:05:29,418
+direction where i had the frequency distribution of
+
+78
+00:05:29,418 --> 00:05:32,691
+the range you know every time we had a certain
+
+79
+00:05:32,691 --> 00:05:34,982
+range i recorded it and then each
+
+80
+00:05:34,982 --> 00:05:39,237
+record would just go on top of each other and that's what caused
+
+81
+00:05:39,240 --> 00:05:42,156
+the shape of the distribution that i showed
+
+82
+00:05:42,156 --> 00:05:45,801
+well guys think about it you can apply this to
+
+83
+00:05:45,801 --> 00:05:48,717
+the price of a carton of milk if
+
+84
+00:05:48,717 --> 00:05:54,549
+let's say you were a worker firms are doing this all the time you probably just
+
+85
+00:05:54,550 --> 00:06:02,190
+you may realize it or you may not but instead of plotting it this way they're plotting it this way
+
+86
+00:06:02,190 --> 00:06:04,334
+so think about it
+
+87
+00:06:04,334 --> 00:06:05,942
+that's 150 that's 140 that's 160
+
+88
+00:06:05,942 --> 00:06:09,158
+okay guys now i'm thinking of
+
+89
+00:06:09,158 --> 00:06:12,910
+the best way to explain this okay
+
+90
+00:06:12,910 --> 00:06:22,559
+let's say you stood at the end of a road of a row of supermarkets and shops right
+
+91
+00:06:24,170 --> 00:06:26,506
+in a busy high street would
+
+92
+00:06:26,506 --> 00:06:29,621
+you agree they sell milk generally in several
+
+93
+00:06:29,621 --> 00:06:32,736
+shops it could be small shops big shops
+
+94
+00:06:32,736 --> 00:06:37,408
+wholesalers uh supermarkets whatever every time someone bought a carton of milk
+
+95
+00:06:37,410 --> 00:06:39,414
+you stood outside and you did
+
+96
+00:06:39,414 --> 00:06:42,086
+a survey guys and you said to them
+
+97
+00:06:42,086 --> 00:06:44,758
+um how much did you pay for a
+
+98
+00:06:44,758 --> 00:06:46,762
+carton of milk every time someone
+
+99
+00:06:46,762 --> 00:06:52,107
+walked out of a shop and you recorded it okay this is done all the time
+
+100
+00:06:52,110 --> 00:06:53,624
+this is how surveys are
+
+101
+00:06:53,624 --> 00:06:55,744
+done guys how do you think economic
+
+102
+00:06:55,744 --> 00:06:58,166
+data is released it's all done in a
+
+103
+00:06:58,166 --> 00:06:59,983
+similar manner to this but obviously
+
+104
+00:06:59,983 --> 00:07:02,708
+on a bigger scale where people are asking companies
+
+105
+00:07:02,710 --> 00:07:06,650
+to give surveys that's how you get all these manufacturing indexes and whatever you see
+
+106
+00:07:06,650 --> 00:07:07,631
+released there's a
+
+107
+00:07:07,631 --> 00:07:09,594
+profile guys you this is what
+
+108
+00:07:09,594 --> 00:07:12,212
+you need to understand it's nothing to do
+
+109
+00:07:12,212 --> 00:07:15,157
+with indicators this is where you're learning to be
+
+110
+00:07:15,157 --> 00:07:17,120
+a professional trader this is exactly
+
+111
+00:07:17,120 --> 00:07:23,666
+what um the institutions are looking at for the reason i'm about to show you so anyway you're asked you're
+
+112
+00:07:23,670 --> 00:07:25,392
+doing a survey about milk
+
+113
+00:07:25,392 --> 00:07:27,803
+right um and stick with me because
+
+114
+00:07:27,803 --> 00:07:30,559
+this is very relevant to the way i'm
+
+115
+00:07:30,559 --> 00:07:32,970
+going to be taking trades the trade
+
+116
+00:07:32,970 --> 00:07:37,448
+on the simulator um shortly would you agree guys if the carton of
+
+117
+00:07:37,450 --> 00:07:39,650
+milk is about 150 where you live
+
+118
+00:07:39,650 --> 00:07:42,950
+every single person that walks down and tells you
+
+119
+00:07:42,950 --> 00:07:45,150
+how much they paid is approximately
+
+120
+00:07:45,150 --> 00:07:49,550
+going to be about 150 140 once it's going to be around that price
+
+121
+00:07:50,650 --> 00:07:53,416
+so imagine you were standing there every time
+
+122
+00:07:53,416 --> 00:07:56,182
+someone told you the price next to the
+
+123
+00:07:56,182 --> 00:07:58,948
+price you just made a tally like you
+
+124
+00:07:58,948 --> 00:08:03,789
+just did a a bar to represent one unit so this is units one
+
+125
+00:08:03,790 --> 00:08:05,830
+two three and so on and
+
+126
+00:08:05,830 --> 00:08:08,890
+so forth would you agree you're going to go
+
+127
+00:08:08,890 --> 00:08:11,950
+one the next person comes out and you'll say
+
+128
+00:08:11,950 --> 00:08:14,330
+yeah i paid 150 two oh yeah i
+
+129
+00:08:14,330 --> 00:08:18,410
+paid 155 so you just do one now this will go on like
+
+130
+00:08:19,090 --> 00:08:21,496
+thousands of people are buying milk every
+
+131
+00:08:21,496 --> 00:08:24,590
+day you literally stood there and every time someone
+
+132
+00:08:24,590 --> 00:08:27,684
+came out you asked them how much it was
+
+133
+00:08:27,684 --> 00:08:31,809
+would you agree pretty much everyone is going to be in this
+
+134
+00:08:31,810 --> 00:08:34,507
+range so maybe eight or nine
+
+135
+00:08:34,507 --> 00:08:37,653
+hundred people will have bought at 150 so
+
+136
+00:08:37,653 --> 00:08:41,249
+this will keep you keep putting a unit
+
+137
+00:08:41,249 --> 00:08:44,395
+every time it goes up 140 yeah few
+
+138
+00:08:44,395 --> 00:08:48,890
+people and then few people here and then very few
+
+139
+00:08:49,790 --> 00:08:51,832
+people buying in this area
+
+140
+00:08:51,832 --> 00:08:54,690
+look guys what are you doing you're
+
+141
+00:08:54,690 --> 00:08:57,957
+building a profile okay that is exactly what
+
+142
+00:08:57,957 --> 00:09:00,815
+this is it's a profile of transactions
+
+143
+00:09:00,815 --> 00:09:05,307
+this is why i got you guys to understand the difference
+
+144
+00:09:05,310 --> 00:09:08,180
+between market orders and supply because
+
+145
+00:09:08,180 --> 00:09:12,007
+excuse me if you think about it right
+
+146
+00:09:12,007 --> 00:09:15,834
+every time this could just as easily how
+
+147
+00:09:15,834 --> 00:09:19,183
+this is 150 here this all you do
+
+148
+00:09:19,183 --> 00:09:23,489
+is just flip it sideways forget about these prices
+
+149
+00:09:23,970 --> 00:09:27,235
+imagine this price was $1.50 here every
+
+150
+00:09:27,235 --> 00:09:31,588
+time someone bought a carton of milk what
+
+151
+00:09:31,588 --> 00:09:35,941
+are they doing what are they doing guys
+
+152
+00:09:35,941 --> 00:09:39,750
+they're placing a market order right whenever
+
+153
+00:09:39,750 --> 00:09:43,015
+someone buys the treasury as you
+
+154
+00:09:43,560 --> 00:09:45,612
+know you click there you aggressively
+
+155
+00:09:45,612 --> 00:09:48,348
+want to buy guys what are they doing
+
+156
+00:09:48,348 --> 00:09:51,084
+supermarket is on the supply side sitting here
+
+157
+00:09:51,084 --> 00:09:53,820
+on the offer saying there's my carton of
+
+158
+00:09:53,820 --> 00:09:56,556
+milk 150 take it or leave it they're the
+
+159
+00:09:56,900 --> 00:09:59,823
+passive person in this transaction you're the
+
+160
+00:09:59,823 --> 00:10:03,163
+aggressor you've just walked into the supermarket and
+
+161
+00:10:03,163 --> 00:10:06,503
+made the aggressive decision to take that price
+
+162
+00:10:06,503 --> 00:10:09,426
+right you haven't sat there on the
+
+163
+00:10:09,426 --> 00:10:10,678
+bid you've actually
+
+164
+00:10:10,680 --> 00:10:13,270
+gone and lifted the offer do you
+
+165
+00:10:13,270 --> 00:10:16,230
+remember the blanket blank area which then causes
+
+166
+00:10:16,230 --> 00:10:18,820
+this to change i hope you can
+
+167
+00:10:18,820 --> 00:10:20,828
+now see why this is going
+
+168
+00:10:20,828 --> 00:10:22,836
+on when you buy a chocolate
+
+169
+00:10:22,836 --> 00:10:24,844
+bar when you buy a haircut
+
+170
+00:10:24,844 --> 00:10:26,517
+when you buy anything guys
+
+171
+00:10:26,520 --> 00:10:27,840
+so we're gonna i don't
+
+172
+00:10:27,840 --> 00:10:29,688
+want to i mean it seems like
+
+173
+00:10:29,688 --> 00:10:31,800
+actually i've probably gotten into a lot of
+
+174
+00:10:31,800 --> 00:10:33,912
+the details i wanted to in the pro
+
+175
+00:10:33,912 --> 00:10:37,080
+course about auction market theory but you know what i'm thinking might
+
+176
+00:10:37,080 --> 00:10:38,977
+as well just get you guys
+
+177
+00:10:38,977 --> 00:10:41,822
+started so you can because what it is i
+
+178
+00:10:41,822 --> 00:10:44,984
+want you to come away from the foundation course thinking
+
+179
+00:10:44,984 --> 00:10:48,146
+yeah oh it's making sense now why envy made us
+
+180
+00:10:48,146 --> 00:10:55,418
+spend so long watching this thing being being built it's so boring guys this is why because you're now going to be experts
+
+181
+00:10:55,420 --> 00:10:58,361
+in understanding what this thing is being built
+
+182
+00:10:58,361 --> 00:11:01,302
+i can assure you when i was in
+
+183
+00:11:01,302 --> 00:11:04,610
+professional um firm many people around me took shortcuts
+
+184
+00:11:04,610 --> 00:11:07,183
+and just used this as some sort
+
+185
+00:11:07,183 --> 00:11:15,638
+of indicator that oh when the market reaches this area i'm gonna guys that's the problem with books and taking shortcuts you don't
+
+186
+00:11:15,640 --> 00:11:16,912
+understand um this was
+
+187
+00:11:16,912 --> 00:11:19,456
+a big turning point in my career uh
+
+188
+00:11:19,456 --> 00:11:22,000
+for me and i'm sorry to um you
+
+189
+00:11:22,000 --> 00:11:28,679
+know waffle on about this stuff but it's so important um and you know i love sharing this with you guys
+
+190
+00:11:28,680 --> 00:11:31,386
+because i see the amount of crap out
+
+191
+00:11:31,386 --> 00:11:33,754
+there being sold about technical indicators and
+
+192
+00:11:33,754 --> 00:11:40,519
+really the turning point for me early on in my career was understanding that the profile is not an indicator
+
+193
+00:11:40,520 --> 00:11:42,716
+it's actually just recording i mean
+
+194
+00:11:42,716 --> 00:11:45,645
+i still sit here and laugh about it
+
+195
+00:11:45,645 --> 00:11:48,574
+it's just recording data just like is what
+
+196
+00:11:48,574 --> 00:11:54,798
+is happening around the world you know even when you get on a bus the bus company
+
+197
+00:11:54,800 --> 00:11:58,138
+is recording this data all they're doing is they've got
+
+198
+00:11:58,138 --> 00:12:01,476
+a time and sales if you think about it they've
+
+199
+00:12:01,476 --> 00:12:04,814
+got a computer every time someone pays a dollar for
+
+200
+00:12:04,814 --> 00:12:15,497
+a bus ticket it records one transaction one one or family get on four that's the time and sale guys hope you can see now why i showed you time and sales
+
+201
+00:12:15,500 --> 00:12:18,366
+where does the time and sales then get
+
+202
+00:12:18,366 --> 00:12:21,232
+recorded here as the transactions are taking place
+
+203
+00:12:21,232 --> 00:12:28,039
+here the time and sales is the demand column it's getting recorded there hope you can see that guy
+
+204
+00:12:28,040 --> 00:12:31,688
+so instead of it being a financial market where transactions
+
+205
+00:12:31,688 --> 00:12:34,606
+are being ordered market orders are taking place
+
+206
+00:12:34,606 --> 00:12:40,078
+the demand side it's a bus ticket so what would you see around one dollar
+
+207
+00:12:40,080 --> 00:12:42,604
+instead of it being a profile this way
+
+208
+00:12:42,604 --> 00:12:45,128
+it'll be a profile the other way and
+
+209
+00:12:45,128 --> 00:12:53,018
+you'll just see around one dollar lots of transactions it's a lot of volume so you'll have a you know quite a bit of volume
+
+210
+00:12:53,020 --> 00:12:56,207
+around one dollar this is the carton of
+
+211
+00:12:56,207 --> 00:12:59,792
+milk 150 you know you as i said you're standing
+
+212
+00:12:59,792 --> 00:13:03,776
+there doing the survey and i'm sure you'll agree people
+
+213
+00:13:03,776 --> 00:13:07,760
+aren't going to you're not going to have a lot
+
+214
+00:13:07,760 --> 00:13:22,900
+of people saying oh i paid five dollars for a carton i paid nothing just don't happen guys thousands of people are buying milk every day in your local area and they're all approximately paying the same price
+
+215
+00:13:23,300 --> 00:13:27,280
+now here's the other bit that i also i mean
+
+216
+00:13:27,280 --> 00:13:31,260
+i still to this day i find it so fascinating
+
+217
+00:13:31,260 --> 00:13:35,240
+and how amazing it is that things like milk are
+
+218
+00:13:35,240 --> 00:13:47,580
+the same as financial markets is you know we talked about 150 being the price and then if you think about it it's not always 150 on the dot is it and this
+
+219
+00:13:48,380 --> 00:13:51,715
+is why sometimes i'm a bit hesitant about recommending books
+
+220
+00:13:51,715 --> 00:13:55,050
+to people because they like to be so precise and
+
+221
+00:13:55,050 --> 00:13:59,719
+human beings like to be precise and this is the beauty of profile is
+
+222
+00:13:59,720 --> 00:14:02,574
+it's slightly it's not imprecise but it's more
+
+223
+00:14:02,574 --> 00:14:06,141
+a reflection of reality in the sense that yeah most
+
+224
+00:14:06,141 --> 00:14:10,065
+people are going to buy at 150 but there'll be some that
+
+225
+00:14:10,065 --> 00:14:13,632
+you know obviously one shot might be 10 cents 5 cents more
+
+226
+00:14:13,632 --> 00:14:16,486
+expensive or cheaper but so the majority would
+
+227
+00:14:16,486 --> 00:14:31,827
+you agree there's going to be very little transactions up here at the high prices and low prices would be like that my point is it's going to be approximately between a range of a small range of prices guys look what's happened
+
+228
+00:14:32,900 --> 00:14:36,165
+what's essentially happening is the market is giving
+
+229
+00:14:36,165 --> 00:14:39,430
+us a huge amount of feedback here it's
+
+230
+00:14:39,430 --> 00:14:42,695
+not an indicator i've just shown you it's
+
+231
+00:14:42,695 --> 00:14:52,899
+just transactions taking place where's where's the indic where's the predictive element in that there isn't it's a fact you know people are buying milk
+
+232
+00:14:52,900 --> 00:14:54,808
+for 150 they're trading a market
+
+233
+00:14:54,808 --> 00:14:57,098
+transaction guys where's the argument i
+
+234
+00:14:57,098 --> 00:14:59,388
+can't argue with someone and say
+
+235
+00:14:59,388 --> 00:15:04,732
+no you didn't pay $1.50 he's gonna be like mate i paid $1.50 here's the receipt
+
+236
+00:15:05,880 --> 00:15:10,986
+this is why i find it madness that people even use technical
+
+237
+00:15:10,986 --> 00:15:16,092
+indicators i really can't understand how that stuff is even used because
+
+238
+00:15:16,092 --> 00:15:21,198
+what you're basically doing with a technical indicator is you this is
+
+239
+00:15:21,198 --> 00:15:26,304
+what you're doing to all this data you're covering it up i'm
+
+240
+00:15:26,304 --> 00:15:44,177
+sorry to do this but literally this is what you're doing you've got the data in front of you and you're basically saying now i don't want that it just seems to me completely crazy that people are not using transactional data
+
+241
+00:15:44,180 --> 00:15:46,957
+so the final point i make is and
+
+242
+00:15:46,957 --> 00:15:50,428
+why i say this and we will move on and
+
+243
+00:15:50,428 --> 00:15:54,594
+talk about this much more in ultra market theory section in profile
+
+244
+00:15:54,594 --> 00:15:58,760
+is because essentially i guess what i'm getting at you'll hear me
+
+245
+00:15:58,760 --> 00:16:11,258
+talk about this sometimes in the discord is what you're trying to do with this stuff is you're trying to figure out what's the fair price now again what amazes me is if you ask someone
+
+246
+00:16:11,260 --> 00:16:13,584
+what's the fair price of milk they're gonna
+
+247
+00:16:13,584 --> 00:16:16,489
+know aren't they because they're buying milk every day they're
+
+248
+00:16:16,489 --> 00:16:19,103
+probably in if you pay $1.50 in your local area
+
+249
+00:16:19,103 --> 00:16:22,008
+whatever it is i don't it doesn't matter to me
+
+250
+00:16:22,008 --> 00:16:33,047
+the point is the fair price is going to be obvious to you you're going to say oh it's about it's about $1.50 well guys how do you know that because you've paid $1.50 guys we're trying to find out
+
+251
+00:16:33,940 --> 00:16:40,480
+what's the fair price of the treasury market today this applies to pound dollar euro dollar s&p 500
+
+252
+00:16:40,480 --> 00:16:43,822
+guys this is what i am looking at
+
+253
+00:16:43,822 --> 00:16:47,164
+every single day when i wake up i'm
+
+254
+00:16:47,164 --> 00:16:55,938
+looking oh what's the fair price where does the market um transact today where is the market happy to transact so
+
+255
+00:16:55,940 --> 00:16:58,663
+if we would so my point is this
+
+256
+00:16:58,663 --> 00:17:01,386
+when i said about technical indicators if we
+
+257
+00:17:01,386 --> 00:17:04,109
+look at the price of milk it's at
+
+258
+00:17:04,109 --> 00:17:09,556
+$1.50 right so we just said that you know majority of transactions take place in this range
+
+259
+00:17:09,900 --> 00:17:12,659
+if you're if you're a shop right the
+
+260
+00:17:12,659 --> 00:17:15,418
+reason you might want to do this analysis
+
+261
+00:17:15,418 --> 00:17:18,177
+is because at the end of the year
+
+262
+00:17:18,177 --> 00:17:25,076
+right you're trying to work out um you know what's the likely price you can sell stuff at next year
+
+263
+00:17:25,079 --> 00:17:30,480
+obviously companies are doing this all the time and sellers of milk are going to do this all the time
+
+264
+00:17:30,480 --> 00:17:36,660
+right they're going to be sitting there thinking all right what price um should we sell at next year
+
+265
+00:17:36,660 --> 00:17:41,580
+guys they're going to look at their time and sales which i already said is their book of transactions
+
+266
+00:17:41,580 --> 00:17:44,423
+and essentially this is what they're looking at
+
+267
+00:17:44,423 --> 00:17:47,266
+they may not draw a profile and actually
+
+268
+00:17:47,266 --> 00:17:50,109
+i can tell you they do but they
+
+269
+00:17:50,109 --> 00:17:52,952
+just draw it this way it's a normal
+
+270
+00:17:52,952 --> 00:18:00,416
+distribution or whatever shape the distribution comes out we will get into normal distributions and a little bit of probability and
+
+271
+00:18:00,420 --> 00:18:05,820
+statistics in the pro course but don't worry it's not too complicated it's fairly basic stuff
+
+272
+00:18:05,820 --> 00:18:07,995
+but what are they trying to
+
+273
+00:18:07,995 --> 00:18:10,895
+do they're trying to figure out what's the
+
+274
+00:18:10,895 --> 00:18:13,070
+fair price where are sellers willing
+
+275
+00:18:13,070 --> 00:18:20,320
+to sell and where are buyers willing to buy um now to do that this is what they're doing guys
+
+276
+00:18:20,320 --> 00:18:22,698
+they're just looking at where have
+
+277
+00:18:22,698 --> 00:18:25,869
+we transacted guys they are not drawing a
+
+278
+00:18:25,869 --> 00:18:28,247
+trend line between 140 150 they're not looking
+
+279
+00:18:28,247 --> 00:18:30,625
+at some moving average they're not
+
+280
+00:18:30,625 --> 00:18:39,345
+looking at some divergence and guys complete garbage what they are looking at would you agree is where have we sold milk
+
+281
+00:18:40,140 --> 00:18:42,011
+simple as that guys to
+
+282
+00:18:42,011 --> 00:18:43,882
+get the fair price this
+
+283
+00:18:43,882 --> 00:18:47,999
+is auction market theory go on youtube you'll see a lot
+
+284
+00:18:48,000 --> 00:18:49,865
+of stuff about this um
+
+285
+00:18:49,865 --> 00:18:51,730
+i think they make it
+
+286
+00:18:51,730 --> 00:18:56,579
+too complicated you know over years this is all you need to know
+
+287
+00:18:56,580 --> 00:18:58,334
+300 pages they'll talk about this
+
+288
+00:18:58,334 --> 00:19:01,141
+stuff in a book this is basically what
+
+289
+00:19:01,141 --> 00:19:03,948
+you need to understand and this is the
+
+290
+00:19:03,948 --> 00:19:06,053
+extent of it is that you
+
+291
+00:19:06,053 --> 00:19:10,966
+can apply this same theory here and it's not theory because at the end
+
+292
+00:19:11,320 --> 00:19:20,040
+of the day it's reality what do i mean by that have transactions taken place at 137 15 yes they have
+
+293
+00:19:20,040 --> 00:19:23,080
+you cannot argue with that this is and
+
+294
+00:19:23,080 --> 00:19:26,120
+i know i keep going on about this
+
+295
+00:19:26,120 --> 00:19:28,400
+but what it is i want
+
+296
+00:19:28,400 --> 00:19:35,620
+you to move away from technical analysis is very much about trying to predict the future and you know
+
+297
+00:19:35,620 --> 00:19:38,980
+based on a very false perception of the
+
+298
+00:19:38,980 --> 00:19:42,340
+past here what you're doing is you're looking
+
+299
+00:19:42,340 --> 00:19:44,860
+at the facts and you're letting
+
+300
+00:19:44,860 --> 00:19:51,580
+the market tell you um where the fair value is because we know for a fact
+
+301
+00:19:51,580 --> 00:19:53,620
+and this is the point is
+
+302
+00:19:53,620 --> 00:19:56,340
+facts we don't need an indicator to tell
+
+303
+00:19:56,340 --> 00:19:58,380
+us that today the market has
+
+304
+00:19:58,380 --> 00:20:05,520
+been transacting around this area so guys anyway this is ultra market theory i know i talked a lot about it
+
+305
+00:20:05,520 --> 00:20:13,280
+but it's really really really important because um essentially this is what i'm doing um all the time
+
+306
+00:20:13,280 --> 00:20:15,940
+and become more clear in the the pro
+
+307
+00:20:15,940 --> 00:20:18,600
+course and also in this trading example um
+
+308
+00:20:18,600 --> 00:20:21,260
+why i'm doing this and that's why it
+
+309
+00:20:21,260 --> 00:20:27,578
+was so important i spent such a long period of time going over this because i want you to
+
+310
+00:20:27,580 --> 00:20:35,840
+understand all we are doing is basing stuff on facts i'm not interested in um you know using some
+
+311
+00:20:35,840 --> 00:20:40,034
+indicator to predict something based on just information
+
+312
+00:20:40,034 --> 00:20:44,228
+what what essentially indicators are doing is they're
+
+313
+00:20:44,228 --> 00:20:47,373
+taking this information facts and they're
+
+314
+00:20:47,373 --> 00:20:50,518
+creating a fluff around it essentially
+
+315
+00:20:50,520 --> 00:20:57,100
+they are distorting it was the word i'm using they're distorting what is in front of you and
+
+316
+00:20:57,100 --> 00:21:01,900
+it's just criminal really so you can tell i'm obviously not the biggest fan of that stuff but
+
+317
+00:21:01,900 --> 00:21:03,601
+what is i'm trying
+
+318
+00:21:03,601 --> 00:21:06,152
+to make you understand why um
+
+319
+00:21:06,152 --> 00:21:09,554
+so that's ultra market theory is um essentially
+
+320
+00:21:09,554 --> 00:21:12,956
+to do with the fact that um you
+
+321
+00:21:12,956 --> 00:21:24,438
+know there's people transacting at prices in the market for goods which essentially determine what their fair price is okay so we can apply that to anything
+
+322
+00:21:24,440 --> 00:21:26,640
+now the last thing i want
+
+323
+00:21:26,640 --> 00:21:29,574
+to say to you guys is um we
+
+324
+00:21:29,574 --> 00:21:32,508
+can obviously see here that the fair price
+
+325
+00:21:32,508 --> 00:21:34,708
+i'm going to put fp here
+
+326
+00:21:34,708 --> 00:21:47,178
+was here then we saw shift downwards and we saw volume building here so potentially this could become fair price we don't know that but my point is that so i want to come
+
+327
+00:21:47,180 --> 00:21:49,814
+back to the milk example just
+
+328
+00:21:49,814 --> 00:21:53,326
+very briefly i want to show you what
+
+329
+00:21:53,326 --> 00:21:56,838
+is going on here so we've already said
+
+330
+00:21:56,838 --> 00:21:59,472
+that approximately in this area is
+
+331
+00:21:59,472 --> 00:22:14,399
+the milk market for the whole year right so if we think of this as a chart of milk over time it's just doing this and you'll see this the market here is just
+
+332
+00:22:14,400 --> 00:22:16,638
+doing this in treasuries for a
+
+333
+00:22:16,638 --> 00:22:18,876
+little while what happened then it
+
+334
+00:22:18,876 --> 00:22:21,114
+popped down then it started doing
+
+335
+00:22:21,114 --> 00:22:23,352
+this can you see hardly any
+
+336
+00:22:23,352 --> 00:22:34,917
+transactions took place here so this move was fast guys what's that the equivalent of in the milk market so would you agree sometimes you get uh supply side demand side
+
+337
+00:22:34,920 --> 00:22:43,500
+shocks you get fundamental changes in markets um that cause prices to obviously move now in the milk
+
+338
+00:22:43,500 --> 00:22:46,219
+market guys simply all that's happening
+
+339
+00:22:46,219 --> 00:22:48,938
+is let's say um obviously cows
+
+340
+00:22:48,938 --> 00:22:51,657
+produce milk and now let's say
+
+341
+00:22:51,657 --> 00:22:54,376
+um that a huge portion proportion
+
+342
+00:22:54,376 --> 00:23:07,519
+of cows um started to develop some sort of disease um now obviously it'll be down to perception in terms of how the public perceives that to be but
+
+343
+00:23:07,520 --> 00:23:09,863
+let's say the public perceived that to be
+
+344
+00:23:09,863 --> 00:23:12,206
+a bad thing in the sense that they
+
+345
+00:23:12,206 --> 00:23:14,549
+were now worried about drinking milk because they
+
+346
+00:23:14,549 --> 00:23:16,306
+were worried about contracting this disease
+
+347
+00:23:16,306 --> 00:23:23,337
+um that obviously the majority of the population of cows have got so would you agree then if people are worried about it and
+
+348
+00:23:23,340 --> 00:23:25,532
+they no longer see um the
+
+349
+00:23:25,532 --> 00:23:27,724
+fundamental value in milk as being
+
+350
+00:23:27,724 --> 00:23:29,551
+at 150 why because they just
+
+351
+00:23:29,551 --> 00:23:36,493
+don't want it anymore until this situation is sorted price gonna drop guys right to let's say one dollar
+
+352
+00:23:36,860 --> 00:23:43,380
+then what you'll see is market will transact there for a little bit longer and that's all that's happening
+
+353
+00:23:43,380 --> 00:23:45,462
+you're getting more profile being built
+
+354
+00:23:45,462 --> 00:23:47,544
+down here same thing here there
+
+355
+00:23:47,544 --> 00:23:49,626
+was a fundamental shift something happened
+
+356
+00:23:49,626 --> 00:23:56,219
+i don't know what it was and it moved down and i'll show you later in the pro course
+
+357
+00:23:56,220 --> 00:23:58,336
+why um i don't really i
+
+358
+00:23:58,336 --> 00:24:00,452
+look at fundamentals but more just
+
+359
+00:24:00,452 --> 00:24:02,568
+from a um interest i have
+
+360
+00:24:02,568 --> 00:24:04,684
+a keen interest in knowing what's
+
+361
+00:24:04,684 --> 00:24:10,679
+going on in the economy and in financial instruments but i don't really use it to trade
+
+362
+00:24:10,680 --> 00:24:12,717
+and i'll show you why that
+
+363
+00:24:12,717 --> 00:24:15,433
+is um in particular in the pro course
+
+364
+00:24:15,433 --> 00:24:18,149
+but just for the purpose of this example
+
+365
+00:24:18,149 --> 00:24:20,186
+the reality is there probably is
+
+366
+00:24:20,186 --> 00:24:28,676
+some um especially in the longer term there's some fundamental factors that are driving shifts in prices but the point is that those shifts cause
+
+367
+00:24:28,680 --> 00:24:30,815
+um shapes of profiles right
+
+368
+00:24:30,815 --> 00:24:33,804
+in terms of the demand which we
+
+369
+00:24:33,804 --> 00:24:36,793
+already said so we drop down to
+
+370
+00:24:36,793 --> 00:24:44,479
+one dollar same thing happened here here is the most crucial part of this video okay guys so
+
+371
+00:24:44,480 --> 00:24:48,244
+let's say that all the cows get healthy
+
+372
+00:24:48,244 --> 00:24:52,008
+again this um you know issue with this
+
+373
+00:24:52,008 --> 00:25:02,359
+virus that's um has spread is now cleared and we're giving the all clear would you agree everyone now wants milk again
+
+374
+00:25:02,360 --> 00:25:05,172
+guys this is where profile to
+
+375
+00:25:05,172 --> 00:25:08,922
+me is the most powerful tool in the
+
+376
+00:25:08,922 --> 00:25:12,672
+world not only to do with financial markets
+
+377
+00:25:12,672 --> 00:25:29,079
+but in terms of any sort of um pricing demand and supply side analysis that any company corporation um trader whatever you want to call it can do in the world why is that because
+
+378
+00:25:29,080 --> 00:25:33,013
+if all the cows get healthy what is the most
+
+379
+00:25:33,013 --> 00:25:37,339
+obvious price that the price of milk is likely to gravitate
+
+380
+00:25:37,340 --> 00:25:44,420
+to think about it pause the video if you have to okay well clearly guys is here isn't it
+
+381
+00:25:44,420 --> 00:25:47,700
+that's the benchmark back in the zone of
+
+382
+00:25:47,700 --> 00:25:50,570
+fair value fair price we've been trading
+
+383
+00:25:50,570 --> 00:25:59,590
+here 150 for how long the whole of last year as we said january february march blah blah blah before all this happened
+
+384
+00:26:00,000 --> 00:26:05,060
+guys it's just going to come back here that's what's going to happen and what you need to realize
+
+385
+00:26:05,060 --> 00:26:07,202
+is this is exactly forget about
+
+386
+00:26:07,202 --> 00:26:10,059
+it no i mean really just sometimes i
+
+387
+00:26:10,059 --> 00:26:12,201
+i don't know whether to laugh
+
+388
+00:26:12,201 --> 00:26:25,058
+or cry when i see these indicators saying oh there's divergence there's the trend line and that's what's causing this complete and utter crap guys what's causing the price to move up is that the market
+
+389
+00:26:25,060 --> 00:26:29,207
+something has changed and they want to go and test
+
+390
+00:26:29,207 --> 00:26:32,524
+the next fair price and see if transactions
+
+391
+00:26:32,524 --> 00:26:40,818
+take place there that's exactly what happens in financial markets you'll see it as we get more into the pro
+
+392
+00:26:40,820 --> 00:26:43,885
+course and we look at examples all the market is
+
+393
+00:26:43,885 --> 00:26:46,337
+constantly doing is it's moving from one area
+
+394
+00:26:46,337 --> 00:26:53,080
+of fair price to another area of fair price think about it at the end of the day guys we're not magicians
+
+395
+00:26:53,080 --> 00:26:56,124
+right we don't know um if you're a milk manufacturer
+
+396
+00:26:56,124 --> 00:26:59,168
+and you need to sell milk or you're a supermarket
+
+397
+00:26:59,168 --> 00:27:10,738
+and you decide you want to sell milk after this you know little issue happened where prices went down to one dollar everything's back to normal where are you going to put your price guys are you just
+
+398
+00:27:10,740 --> 00:27:12,848
+going to stick your finger in the air
+
+399
+00:27:12,848 --> 00:27:14,692
+are you going to go and get
+
+400
+00:27:14,692 --> 00:27:21,279
+a moving average are you going to use half all the nonsense on you know your retail platform indicators no you're not you've got this
+
+401
+00:27:21,280 --> 00:27:24,831
+data you're going to go back to your historical prices
+
+402
+00:27:24,831 --> 00:27:27,672
+that you've been selling milk at where there
+
+403
+00:27:27,672 --> 00:27:34,419
+was huge demand here and you're going to use that aren't you of course you are it's obvious you're
+
+404
+00:27:34,420 --> 00:27:36,223
+going to go back and you're going to
+
+405
+00:27:36,223 --> 00:27:39,379
+sell it to where you sold it before when things were in the same
+
+406
+00:27:39,380 --> 00:27:42,921
+fundamental state guys this is exactly what institutions
+
+407
+00:27:42,921 --> 00:27:46,462
+are doing um i can tell you for
+
+408
+00:27:46,462 --> 00:27:50,003
+a fact because obviously i've worked with algorithms
+
+409
+00:27:50,003 --> 00:28:01,957
+in the past guys algorithms as you've seen on the supply side are the market and i can assure you every institution every single algorithm is programmed
+
+410
+00:28:01,960 --> 00:28:06,402
+to read this i can assure you this is what they're reading
+
+411
+00:28:06,402 --> 00:28:10,473
+they couldn't give a monkeys about you know a 21 day moving
+
+412
+00:28:10,473 --> 00:28:14,915
+average or it's just garbage it doesn't mean anything if someone wants
+
+413
+00:28:14,915 --> 00:28:19,357
+to tell me what it actually means in terms of where price
+
+414
+00:28:19,357 --> 00:28:23,428
+should be in terms of fundamental value please let me know
+
+415
+00:28:23,800 --> 00:28:26,912
+buy my as far as i can tell
+
+416
+00:28:26,912 --> 00:28:32,359
+um it's logical that you know value is clearly where the market has been
+
+417
+00:28:32,360 --> 00:28:34,422
+happy to trade so in the
+
+418
+00:28:34,422 --> 00:28:37,171
+treasury market that was here in the milk
+
+419
+00:28:37,171 --> 00:28:40,608
+market that was here okay we had a fundamental shift
+
+420
+00:28:40,608 --> 00:28:43,357
+then we came back we came back now
+
+421
+00:28:43,357 --> 00:28:47,137
+yeah i agree you know i wish markets were this simple
+
+422
+00:28:47,140 --> 00:28:51,274
+that we always come back um generally in a simplistic
+
+423
+00:28:51,274 --> 00:28:55,408
+market like milk we will generally go back and trade
+
+424
+00:28:55,408 --> 00:28:59,128
+or continue to trade around 150 again um because as
+
+425
+00:28:59,128 --> 00:29:03,262
+you know there's only several factors small factors large factors
+
+426
+00:29:03,262 --> 00:29:14,424
+but individual factors things like financial markets can obviously become very complicated and there's so many factors that we do see shifts permanent shifts in fair value
+
+427
+00:29:14,840 --> 00:29:19,700
+so the equivalent of that would be um you know for example
+
+428
+00:29:19,700 --> 00:29:24,560
+if market was trading here and i don't for whatever reason obviously
+
+429
+00:29:24,560 --> 00:29:29,420
+nowadays um it's all done mechanically where we extract the milk from
+
+430
+00:29:29,420 --> 00:29:34,280
+cows before it was done manually but let's say for whatever reason
+
+431
+00:29:34,280 --> 00:29:42,380
+the materials required to create the machines that extract milk manually from cows became scarce you couldn't get them anymore
+
+432
+00:29:42,380 --> 00:29:46,700
+and you had to go back to doing this process manually obviously
+
+433
+00:29:46,700 --> 00:29:51,020
+to produce milk is going to become very expensive so would you
+
+434
+00:29:51,020 --> 00:29:55,340
+agree the price going to shoot up to let's say two dollars
+
+435
+00:29:55,340 --> 00:30:03,980
+again you'll see this on the profile where the profile will build you know value here would you agree guys once it's become scarce
+
+436
+00:30:03,980 --> 00:30:06,991
+and you can never get that material back that's it
+
+437
+00:30:06,991 --> 00:30:09,099
+the price isn't coming back to 150 that's
+
+438
+00:30:09,099 --> 00:30:13,917
+going to become the new normal that's all that's happening in financial markets all the time
+
+439
+00:30:14,220 --> 00:30:17,065
+um is prices will shift so
+
+440
+00:30:17,065 --> 00:30:24,179
+that's basically auction market theory i know i took a long time to explain it
+
+441
+00:30:24,180 --> 00:30:26,405
+but it's very very important that's why i
+
+442
+00:30:26,405 --> 00:30:28,074
+want you to understand it um
+
+443
+00:30:28,074 --> 00:30:30,299
+now how do i use to trade it
+
+444
+00:30:30,300 --> 00:30:34,183
+that was really why i needed to spend time for you to
+
+445
+00:30:34,183 --> 00:30:38,066
+understand because what it is is i didn't want you to think
+
+446
+00:30:38,066 --> 00:30:41,949
+of this as oh envy's told us when the market gets to
+
+447
+00:30:41,949 --> 00:30:51,658
+this area i've got to do something when it gets to this area i've got to do guys that's how you know where people fail is just being sold all
+
+448
+00:30:51,660 --> 00:30:56,920
+this crap like systems do this do that forget that i want you to critically think for yourself
+
+449
+00:30:56,920 --> 00:31:00,668
+that okay this is a great place to trade because
+
+450
+00:31:00,668 --> 00:31:04,416
+it's fair value because it isn't fair value or because
+
+451
+00:31:04,416 --> 00:31:11,538
+ah i get it this is what the market is trying to achieve and it's clearly shown me that
+
+452
+00:31:11,540 --> 00:31:16,422
+so let me show you what i mean so basically
+
+453
+00:31:16,422 --> 00:31:20,327
+now we know would you agree that that's
+
+454
+00:31:20,327 --> 00:31:28,138
+fair value there's also some value being built down here so if we had a chart
+
+455
+00:31:28,140 --> 00:31:33,060
+chart is going to go like that and you're going to come down and it's going to go like that
+
+456
+00:31:33,060 --> 00:31:34,862
+can you see why in institutions in
+
+457
+00:31:34,862 --> 00:31:36,664
+the first year they don't even want
+
+458
+00:31:36,664 --> 00:31:38,209
+you to look at a chart
+
+459
+00:31:38,209 --> 00:31:43,617
+because well guys all the information you need is here you don't need a chart now don't get me wrong i've
+
+460
+00:31:43,620 --> 00:31:45,090
+obviously moved away from this
+
+461
+00:31:45,090 --> 00:31:47,148
+and yep i don't want you to
+
+462
+00:31:47,148 --> 00:31:49,206
+trade on this um and there's reasons
+
+463
+00:31:49,206 --> 00:31:55,380
+why we do want to chart because without trying to scare you this is profile on what one day guys you
+
+464
+00:31:55,380 --> 00:31:57,548
+can build profiles for a week you
+
+465
+00:31:57,548 --> 00:31:59,716
+can build profiles for several days you
+
+466
+00:31:59,716 --> 00:32:01,574
+can build profile for a month
+
+467
+00:32:01,574 --> 00:32:06,839
+uh a quarter one year i'm doing that i've learned to bring profile analysis over many many
+
+468
+00:32:06,840 --> 00:32:09,057
+time frame also looking at excuse me
+
+469
+00:32:09,057 --> 00:32:11,274
+the vwap the vwap is essentially the
+
+470
+00:32:11,274 --> 00:32:13,175
+profile but on a dynamic intraday
+
+471
+00:32:13,175 --> 00:32:18,878
+basis so look this is going to confuse you so a lot so let's not get into that
+
+472
+00:32:18,880 --> 00:32:21,110
+now let's just imagine this was the
+
+473
+00:32:21,110 --> 00:32:23,658
+only profile that existed for now so you
+
+474
+00:32:23,658 --> 00:32:25,250
+can see why just by
+
+475
+00:32:25,250 --> 00:32:32,258
+looking at profile you get a feel for where the chart is um now how do you trade this so the reason
+
+476
+00:32:32,260 --> 00:32:34,772
+i had to hammer home the point
+
+477
+00:32:34,772 --> 00:32:37,284
+and i know it's probably incredibly boring
+
+478
+00:32:37,284 --> 00:32:39,437
+listening to me talk at you
+
+479
+00:32:39,437 --> 00:32:46,257
+um about fair value is because guys the point is here would you agree fair value there's no edge
+
+480
+00:32:46,260 --> 00:32:48,457
+if the price of milk is $1.50
+
+481
+00:32:48,457 --> 00:32:51,020
+and that's fair would you agree if
+
+482
+00:32:51,020 --> 00:32:53,217
+you're trying to make profit on
+
+483
+00:32:53,217 --> 00:33:00,540
+milk you're going to walk into a shop and pay $1.50 because what are you going to sell it for $1.50 guys
+
+484
+00:33:01,640 --> 00:33:05,019
+that's the market is fair value there's
+
+485
+00:33:05,019 --> 00:33:08,398
+no edge there so i when i
+
+486
+00:33:08,398 --> 00:33:11,294
+was trading historically on the depth
+
+487
+00:33:11,294 --> 00:33:19,018
+of market i would not be interested in um necessarily you know trading in this area
+
+488
+00:33:19,020 --> 00:33:22,103
+because i don't know um in which
+
+489
+00:33:22,103 --> 00:33:25,627
+direction obviously the price could go what i
+
+490
+00:33:25,627 --> 00:33:27,829
+would be more interested in
+
+491
+00:33:27,829 --> 00:33:34,877
+trading at is either if prices away from fair value right because then i have a
+
+492
+00:33:34,880 --> 00:33:37,944
+profit opportunity think about it if the
+
+493
+00:33:37,944 --> 00:33:41,008
+market starts to go down i know
+
+494
+00:33:41,008 --> 00:33:43,634
+what well it might be heading
+
+495
+00:33:43,634 --> 00:33:51,951
+to $1 so same way here now this is called a value area the value area the reason it's called
+
+496
+00:33:52,390 --> 00:33:54,220
+that is because it's one standard deviation
+
+497
+00:33:54,220 --> 00:33:56,050
+on a normal distribution but we're going
+
+498
+00:33:56,050 --> 00:33:57,619
+to talk about that in the
+
+499
+00:33:57,619 --> 00:34:02,588
+pro course but all you need to remember is do you remember how i said and you know this
+
+500
+00:34:02,590 --> 00:34:04,400
+guys don't take my word for it
+
+501
+00:34:04,400 --> 00:34:06,210
+go walk into town and see what
+
+502
+00:34:06,210 --> 00:34:07,762
+the price of milk is it's
+
+503
+00:34:07,762 --> 00:34:13,711
+not going to be identical it's going to vary by 5 10 cents isn't it up or down so this is a very approximate area
+
+504
+00:34:14,230 --> 00:34:17,049
+that's all this is it's just telling
+
+505
+00:34:17,049 --> 00:34:19,868
+us yes the market agrees on price
+
+506
+00:34:19,868 --> 00:34:22,284
+but guys unfortunately you life isn't
+
+507
+00:34:22,284 --> 00:34:28,728
+that simple not everyone we're humans we don't agree on an individual price and you see
+
+508
+00:34:28,730 --> 00:34:31,240
+this you know in pound dollar for
+
+509
+00:34:31,240 --> 00:34:33,750
+example you might see the the market
+
+510
+00:34:33,750 --> 00:34:35,901
+just ranging up and down up
+
+511
+00:34:35,901 --> 00:34:42,355
+and down like 130 131 130 guys that's 100 pips you know end of the day that's quite a wide range and
+
+512
+00:34:43,790 --> 00:34:45,982
+that's what the market is doing is
+
+513
+00:34:45,982 --> 00:34:48,174
+it is kind of finding a range
+
+514
+00:34:48,174 --> 00:34:55,689
+of prices where it's happy but the point is it's not this area and it's not this area it's this area same as here
+
+515
+00:34:55,690 --> 00:34:57,072
+kind of 140 to 160 right
+
+516
+00:34:57,072 --> 00:34:59,145
+that's where the market's happy with
+
+517
+00:34:59,145 --> 00:35:01,909
+milk so here's the key this is what
+
+518
+00:35:01,909 --> 00:35:07,437
+i'm doing so these areas where there's very little transactions taking place which you see here
+
+519
+00:35:08,130 --> 00:35:13,230
+no one bought milk as it was coming down they just started transacting again in this area
+
+520
+00:35:13,230 --> 00:35:21,690
+here was just you know crazy selling going on there just shot down so you can see it moved fast
+
+521
+00:35:21,690 --> 00:35:24,219
+in this area because no one was there
+
+522
+00:35:24,219 --> 00:35:26,748
+to stop it there were no one on
+
+523
+00:35:26,748 --> 00:35:29,277
+the bids there was but it was very
+
+524
+00:35:29,277 --> 00:35:34,968
+thin so it was just aggressive selling and it happened so quickly that do you see there wasn't
+
+525
+00:35:34,970 --> 00:35:36,713
+two-way transaction guys going on
+
+526
+00:35:36,713 --> 00:35:39,154
+whereas here there's two-way transaction and that's
+
+527
+00:35:39,154 --> 00:35:41,944
+why you're building the profile here and then
+
+528
+00:35:41,944 --> 00:35:46,129
+obviously here you had the bulge which you see here as well
+
+529
+00:35:46,130 --> 00:35:48,542
+so my point is sorry
+
+530
+00:35:48,542 --> 00:35:51,919
+about that the point my point is
+
+531
+00:35:51,919 --> 00:35:55,779
+that um the profiting opportunity is for me
+
+532
+00:35:55,779 --> 00:36:05,429
+is not where fair value is but it's moving away from fair value either side okay so i'm looking for
+
+533
+00:36:05,430 --> 00:36:08,615
+trades that are breaking out of this
+
+534
+00:36:08,615 --> 00:36:11,800
+zone or out of this zone why
+
+535
+00:36:11,800 --> 00:36:14,530
+clear target area right guys to
+
+536
+00:36:14,530 --> 00:36:23,630
+the next area where the market has shown me that that is fair price guys no indicator doing some ridiculous
+
+537
+00:36:23,630 --> 00:36:26,195
+prediction um you know based on
+
+538
+00:36:26,195 --> 00:36:29,616
+some random percentages or numbers i mean come
+
+539
+00:36:29,616 --> 00:36:31,754
+on 21 day you know average
+
+540
+00:36:31,754 --> 00:36:37,313
+or whatever what's 21 guys if someone just literally you know rolled a dice
+
+541
+00:36:38,170 --> 00:36:40,462
+and decided that three rolls or four rolls
+
+542
+00:36:40,462 --> 00:36:42,467
+of the dice adds up to 21 so
+
+543
+00:36:42,467 --> 00:36:44,759
+let me that is literally how ridiculous that
+
+544
+00:36:44,759 --> 00:36:50,202
+stuff is this is what the market has told me and look guys don't take my word for it
+
+545
+00:36:50,490 --> 00:36:53,512
+it's there on your depth of market open
+
+546
+00:36:53,512 --> 00:36:56,534
+up your depth of market and look where
+
+547
+00:36:56,534 --> 00:36:59,556
+has transactions taken place is taken place in
+
+548
+00:36:59,556 --> 00:37:04,089
+this area sorry it's getting incredibly messy here so that becomes my
+
+549
+00:37:04,090 --> 00:37:11,970
+target right i want to know where's the market previously traded um you know decent volume at
+
+550
+00:37:11,970 --> 00:37:14,816
+so what i'm doing is again
+
+551
+00:37:14,816 --> 00:37:18,611
+to so two things one is i'm looking
+
+552
+00:37:18,611 --> 00:37:21,457
+for a break away from value
+
+553
+00:37:21,457 --> 00:37:32,368
+okay so we're going this way and i'm going to try and target this area or guys this is much more of a
+
+554
+00:37:32,370 --> 00:37:34,672
+how do i say a nimble trade these
+
+555
+00:37:34,672 --> 00:37:36,974
+are more like trend trades right and not
+
+556
+00:37:36,974 --> 00:37:39,276
+i hate to use the word trend trading
+
+557
+00:37:39,276 --> 00:37:44,168
+i mean it really gets under my skin a little bit because it's just complete garbage what
+
+558
+00:37:44,170 --> 00:37:46,327
+you see about you know i keep saying
+
+559
+00:37:46,327 --> 00:37:48,484
+it but you see all this stuff that
+
+560
+00:37:48,484 --> 00:37:50,641
+people talk about trend trade it isn't trend
+
+561
+00:37:50,641 --> 00:37:54,687
+trading guys what the market is doing is exactly what the milk market is doing
+
+562
+00:37:54,690 --> 00:37:58,253
+or the chocolate bar market is doing when
+
+563
+00:37:58,253 --> 00:38:01,816
+there's a fundamental shift it's looking for the
+
+564
+00:38:01,816 --> 00:38:05,379
+next area of fair value the market is
+
+565
+00:38:05,379 --> 00:38:11,169
+an auction machine guys it's always looking for an area where people agree
+
+566
+00:38:11,170 --> 00:38:14,632
+on supply and demand it's literally basic economics
+
+567
+00:38:14,632 --> 00:38:17,661
+guys 101 you know where you've got the
+
+568
+00:38:17,661 --> 00:38:19,392
+supply and demand curves
+
+569
+00:38:19,392 --> 00:38:27,615
+etc etc and i think i did a little video on this in terms of price and then obviously
+
+570
+00:38:28,050 --> 00:38:34,870
+quantity so that's your demand curve and that's your supply curve it's just where it meets and don't if
+
+571
+00:38:34,870 --> 00:38:36,790
+this doesn't make sense you don't
+
+572
+00:38:36,790 --> 00:38:39,030
+worry but obviously some of you've done
+
+573
+00:38:39,030 --> 00:38:41,270
+economics you'll understand that this is all
+
+574
+00:38:41,270 --> 00:38:42,870
+the market's really doing is
+
+575
+00:38:42,870 --> 00:38:46,070
+it's looking for areas of supply and demand and again
+
+576
+00:38:46,070 --> 00:38:47,715
+i want to reiterate guys
+
+577
+00:38:47,715 --> 00:38:50,018
+whatever i just drew there don't worry
+
+578
+00:38:50,018 --> 00:38:52,650
+about it um i've just realized i've probably
+
+579
+00:38:52,650 --> 00:38:55,282
+drawn it behind my head because on the
+
+580
+00:38:55,282 --> 00:38:57,585
+uh i can't actually see myself on
+
+581
+00:38:57,585 --> 00:38:59,888
+this screen but i think i'm in
+
+582
+00:38:59,888 --> 00:39:02,520
+this little quarter here so i'll probably draw
+
+583
+00:39:02,520 --> 00:39:04,823
+it by my hand so ignore that
+
+584
+00:39:04,823 --> 00:39:07,455
+anyway it was just for those that might
+
+585
+00:39:07,455 --> 00:39:18,644
+be familiar with economics but essentially um it's not important at all as long as you understand this um very basic concept that the market has shown us that it's traded in this area
+
+586
+00:39:18,650 --> 00:39:20,729
+and i'm looking for it
+
+587
+00:39:20,729 --> 00:39:23,640
+to move down um or in this
+
+588
+00:39:23,640 --> 00:39:26,967
+instance the nimble trade which is go back
+
+589
+00:39:26,967 --> 00:39:34,869
+to fair value whenever it moves a little bit out okay so once i've identified this area the value
+
+590
+00:39:34,870 --> 00:39:36,327
+area i'm either looking as
+
+591
+00:39:36,327 --> 00:39:38,367
+soon as we get out of it
+
+592
+00:39:38,367 --> 00:39:40,698
+i'm thinking oh the market's just popped out
+
+593
+00:39:40,698 --> 00:39:42,446
+milk is at 140 135 it should be
+
+594
+00:39:42,446 --> 00:39:44,486
+at 150 let me take it back take
+
+595
+00:39:44,486 --> 00:39:46,817
+it back and if it goes just above
+
+596
+00:39:46,817 --> 00:39:48,565
+so if it goes 165 110 oh milk's
+
+597
+00:39:48,565 --> 00:39:50,896
+a bit high there that doesn't make sense
+
+598
+00:39:50,896 --> 00:39:59,056
+it should be at 150 so i'll take it back into the value area how do i know this well i'm looking for action here i'm looking for action
+
+599
+00:40:00,810 --> 00:40:06,390
+here market orders absorption that's what i'm going to show you in this example to help me decide
+
+600
+00:40:06,390 --> 00:40:08,001
+obviously if i don't see
+
+601
+00:40:08,001 --> 00:40:10,257
+any um buyers trying to stop the
+
+602
+00:40:10,257 --> 00:40:12,835
+market as it pops down then i know
+
+603
+00:40:12,835 --> 00:40:15,413
+okay i need to be taking it down
+
+604
+00:40:15,413 --> 00:40:17,991
+if i see a lot of support coming
+
+605
+00:40:17,991 --> 00:40:20,569
+in not support like lines and all that
+
+606
+00:40:20,569 --> 00:40:33,785
+stuff i mean support in terms of absorption or market orders buying then i know guys i've got a good chance to play this back in to fair value so those are the two things make a note of them okay
+
+607
+00:40:33,790 --> 00:40:36,364
+we either um i'm just
+
+608
+00:40:36,364 --> 00:40:39,968
+going to write it down back to
+
+609
+00:40:39,968 --> 00:40:44,087
+value or away from value what the industry
+
+610
+00:40:44,087 --> 00:40:48,206
+has somehow managed to do is call this
+
+611
+00:40:48,206 --> 00:40:52,325
+second bit trend trading when it isn't complete
+
+612
+00:40:52,325 --> 00:40:56,444
+let's try and delete that from the vocabulary
+
+613
+00:40:56,444 --> 00:41:00,563
+because we've just learned now that it's actually
+
+614
+00:41:00,563 --> 00:41:04,682
+just moving to the next level of fair
+
+615
+00:41:04,682 --> 00:41:08,801
+value all this is the industry has decided
+
+616
+00:41:08,801 --> 00:41:21,158
+to call this a range trading well actually isn't all it's actually doing is playing the edges of fair value okay so once we've
+
+617
+00:41:21,160 --> 00:41:22,684
+established fair value we're either
+
+618
+00:41:22,684 --> 00:41:24,818
+playing the edges back or if we
+
+619
+00:41:24,818 --> 00:41:27,257
+want if we think it's going to break
+
+620
+00:41:27,257 --> 00:41:33,659
+out of value we're going to the next value all right guys i know that was very very long and i
+
+621
+00:41:33,660 --> 00:41:35,103
+apologize but i hope that
+
+622
+00:41:35,103 --> 00:41:37,124
+um that's added some value to you
+
+623
+00:41:37,124 --> 00:41:39,434
+no pun intended um so i'm going to
+
+624
+00:41:39,434 --> 00:41:45,498
+play the example now i'll probably do it on a separate video just to give you a bit of a break
+
+625
+00:41:45,500 --> 00:41:47,034
+and let this digest um
+
+626
+00:41:47,034 --> 00:41:49,181
+just to give you a heads up
+
+627
+00:41:49,181 --> 00:41:51,635
+what i'm actually doing in the trading example
+
+628
+00:41:51,635 --> 00:41:57,158
+um and i will explain it as i'm doing it as well is we're basically taking a trade
+
+629
+00:41:57,160 --> 00:41:59,237
+so what i did on
+
+630
+00:41:59,237 --> 00:42:02,145
+the simulator is um i'm taking so
+
+631
+00:42:02,145 --> 00:42:06,299
+i didn't what it is is at the obviously people
+
+632
+00:42:06,300 --> 00:42:09,695
+are playing breakouts right at the highs and lows of days so
+
+633
+00:42:09,695 --> 00:42:13,090
+on the example if i remember correctly there's a profile near the
+
+634
+00:42:13,090 --> 00:42:16,485
+and it's actually near the high of the day but let's say
+
+635
+00:42:16,485 --> 00:42:19,880
+it was the low of the day so i know approximately that's
+
+636
+00:42:19,880 --> 00:42:29,499
+fair price there so if the price is say it comes down to the low of the day would you agree as i said to you before i'm playing doing two things that's all
+
+637
+00:42:29,500 --> 00:42:32,842
+i'm ever doing i'm taking it back to value right
+
+638
+00:42:32,842 --> 00:42:36,184
+back to this area or what away from value but
+
+639
+00:42:36,184 --> 00:42:39,526
+the point is here do you see we don't see
+
+640
+00:42:39,526 --> 00:42:49,218
+any other value well guys this is where charts and this why i've evolved into using charts now is there'll be a profile for the previous day previous month
+
+641
+00:42:49,220 --> 00:42:52,672
+so i use those areas to trade into okay now
+
+642
+00:42:52,672 --> 00:42:56,124
+the point is for the example i show you i
+
+643
+00:42:56,124 --> 00:42:59,576
+don't actually take a breakout of value because the alternative
+
+644
+00:42:59,576 --> 00:43:03,028
+is prices here i go back into the next value
+
+645
+00:43:03,028 --> 00:43:08,897
+right it's very similar to this example here but what i'm actually doing is i'm playing them
+
+646
+00:43:08,900 --> 00:43:12,319
+a mean reversion trade essentially is the word for it
+
+647
+00:43:12,319 --> 00:43:15,738
+um but i'm doing it on the top but essentially
+
+648
+00:43:15,738 --> 00:43:19,157
+it's the same thing so what i'll be doing is
+
+649
+00:43:19,157 --> 00:43:22,576
+values there the market's creeping down and i see um
+
+650
+00:43:22,576 --> 00:43:36,937
+you know action on the depth of market that leads me to believe that people want to fade it where's the obvious target for it to go back to back to value so that's the trade i'm taking but from the top
+
+651
+00:43:36,940 --> 00:43:39,902
+back into value all right guys hope that was uh
+
+652
+00:43:39,902 --> 00:43:42,864
+good and um yeah i'll see you shortly on the
+
+653
+00:43:42,864 --> 00:43:45,826
+next video where i'm playing this out cheers guys guys
+
+654
+00:43:45,826 --> 00:43:48,788
+sorry you just needed to add this bit on as
+
+655
+00:43:48,788 --> 00:43:51,750
+if you hadn't heard enough of my voice but the
+
+656
+00:43:51,750 --> 00:44:02,118
+point was where i said to you before you've got you can see this on a chart like this then it comes down and you've got it there right guys i completely forgot to tell
+
+657
+00:44:02,120 --> 00:44:05,662
+you that i've actually got this on the next slide
+
+658
+00:44:05,662 --> 00:44:09,204
+so can you see it that's essentially what it is
+
+659
+00:44:09,204 --> 00:44:12,746
+it's the market's just come down this bit is that
+
+660
+00:44:12,746 --> 00:44:21,957
+fair value right like we said with the milk example then it comes back down and you've got more value being built here in this region
+
+661
+00:44:21,960 --> 00:44:26,724
+and essentially that is all that i'm doing markets doing algorithms are doing is they're
+
+662
+00:44:26,724 --> 00:44:31,488
+looking for any clues are we going to you know bust out of this value
+
+663
+00:44:31,488 --> 00:44:36,252
+where are we going to go there are we going to turn around if we've
+
+664
+00:44:36,252 --> 00:44:48,639
+just popped out where are we going to go back here so all the market is doing all day long guys are we going to bust out of here or are we going to return here so that's returning
+
+665
+00:44:48,640 --> 00:44:52,667
+to value and this is breaking out of value we're going to go into this
+
+666
+00:44:52,667 --> 00:44:56,694
+in the pro course a lot more because obviously i'll be doing this on charts
+
+667
+00:44:56,694 --> 00:45:04,479
+um and we'll give these things names but essentially it's just one or the other you're either going back into value or you're looking for a move out of
+
+668
+00:45:04,480 --> 00:45:07,006
+value and then obviously down here i'll be looking for
+
+669
+00:45:07,006 --> 00:45:09,532
+a previous day if i could find any sort of
+
+670
+00:45:09,532 --> 00:45:14,838
+value so i just wanted to show you how it looks on a chart um you know you can do this
+
+671
+00:45:14,840 --> 00:45:17,359
+yourself but you can probably see why in
+
+672
+00:45:17,359 --> 00:45:19,878
+professional firms they just say to new traders
+
+673
+00:45:19,878 --> 00:45:22,712
+for the first year look guys you don't need
+
+674
+00:45:22,712 --> 00:45:25,231
+a chart just trade the profile that's all
+
+675
+00:45:25,231 --> 00:45:32,159
+they're doing this is exactly what they're doing in professional firms is they're just saying look there's the profile if it breaks
+
+676
+00:45:32,160 --> 00:45:34,080
+out you either trade it back or
+
+677
+00:45:34,080 --> 00:45:36,000
+you go to the next area if
+
+678
+00:45:36,000 --> 00:45:37,646
+it breaks out you either trade
+
+679
+00:45:37,646 --> 00:45:43,957
+it back or you go to the next area all right guys so those are the crucial areas is fair value and then
+
+680
+00:45:43,960 --> 00:45:45,995
+obviously these thin areas are the ones where
+
+681
+00:45:45,995 --> 00:45:47,776
+you're looking to break through and then
+
+682
+00:45:47,776 --> 00:45:53,119
+go into the next area but that was the chart all right guys uh see you on the next video cheers
+
+===== END AFTER_SEGMENT =====

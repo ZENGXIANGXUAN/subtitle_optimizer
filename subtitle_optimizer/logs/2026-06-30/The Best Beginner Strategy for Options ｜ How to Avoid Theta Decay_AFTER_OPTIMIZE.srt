@@ -1,0 +1,3641 @@
+===== AFTER_OPTIMIZE (728 entries) =====
+1
+00:00:00,100 --> 00:00:01,700
+大家好，我是Brian。
+What's going on guys? Brian's here.
+
+2
+00:00:01,800 --> 00:00:05,200
+今天是2021年8月12日，星期四。
+Today is Thursday, August 12th, 2021.
+
+3
+00:00:05,600 --> 00:00:06,712
+开门见山地说，
+Jumping right into it, I
+
+4
+00:00:06,712 --> 00:00:08,270
+我想告诉大家，
+want to let you guys know this,
+
+5
+00:00:08,270 --> 00:00:10,050
+在我看来，这可能是
+in my opinion, is going to be one
+
+6
+00:00:10,050 --> 00:00:12,498
+你们看过的最重要的期权交易视频之一。
+of the most important options trading videos you've probably ever seen.
+
+7
+00:00:12,700 --> 00:00:19,700
+我会给大家展示特斯拉、苹果和AMD的三个实时案例。
+I'm going to show you guys three live scenarios going on right now in Tesla, Apple, and AMD.
+
+8
+00:00:20,500 --> 00:00:24,700
+我们要讨论的是日历价差策略。
+We're going to be talking about the calendar spread option strategy.
+
+9
+00:00:24,800 --> 00:00:26,600
+首先，这就是这个策略的名称。
+Right off the bat, that's the name of the strategy.
+
+10
+00:00:26,900 --> 00:00:28,645
+我们会深入分析
+We're going to look at an
+
+11
+00:00:28,645 --> 00:00:30,972
+日历价差策略，以及为什么
+in-depth analysis on the calendar campaign and why
+
+12
+00:00:30,972 --> 00:00:32,717
+我认为它可能是
+I think it's probably one of
+
+13
+00:00:32,717 --> 00:00:36,498
+最佳交易策略，尤其是对期权交易新手。
+the best strategies to trade, especially if you're now starting out trading options.
+
+14
+00:00:36,800 --> 00:00:37,345
+老实说，如果
+Honestly, if
+
+15
+00:00:37,345 --> 00:00:40,074
+我刚开始交易期权时就知道这个策略，
+I knew about this when I first started trading options,
+
+16
+00:00:40,074 --> 00:00:42,257
+我认为它会大大缩短
+I think it would have really helped the
+
+17
+00:00:42,257 --> 00:00:44,440
+学习曲线，因为大多数交易者
+learning curve because the biggest problem that most
+
+18
+00:00:44,440 --> 00:00:49,898
+刚从股票转到期权时面临的最大问题，
+traders face when they first start trading options, when you first trade stocks and then you move over to options,
+
+19
+00:00:50,300 --> 00:00:52,000
+就是时间衰减的概念。
+is this concept of time decay.
+
+20
+00:00:52,400 --> 00:00:53,861
+当你买入期权时，
+When you buy an options, even
+
+21
+00:00:53,861 --> 00:00:55,809
+即使股价朝你预期的方向走，
+if a stock price is going in your
+
+22
+00:00:55,809 --> 00:00:57,270
+也就是说，
+direction, so in other words, if
+
+23
+00:00:57,270 --> 00:01:01,898
+如果你买入看涨期权，看好某只股票，而股票在上涨，
+you buy what's called a call option, meaning you're bullish on a stock and the stock is going up,
+
+24
+00:01:02,300 --> 00:01:07,800
+但如果涨得太慢，你的期权仍会持续贬值。
+if it's going up too slowly, your option is continuing to lose value.
+
+25
+00:01:08,200 --> 00:01:10,281
+它需要大幅上涨，
+It needs a big move and
+
+26
+00:01:10,281 --> 00:01:13,056
+并且必须快速上涨，
+it needs to be moving quickly in order
+
+27
+00:01:13,056 --> 00:01:19,299
+期权才能保住收益，因为期权是贬值资产，会不断流失价值。
+for your option to maintain its gains because options are a depreciating asset, meaning they're constantly losing value.
+
+28
+00:01:19,600 --> 00:01:21,457
+所以，应对期权最大缺陷的最快方法，
+So the quickest way to counteract
+
+29
+00:01:21,457 --> 00:01:23,314
+期权最大的缺点是
+the biggest flaw with options would
+
+30
+00:01:23,314 --> 00:01:26,099
+就是开立日历价差策略。
+be to open up what's called a calendar campaign.
+
+31
+00:01:26,500 --> 00:01:30,000
+接下来我会给你们演示三种情况，
+And again, I'm going to be going over three scenarios right now and show you.
+
+32
+00:01:30,000 --> 00:01:30,663
+各位，我会详细展示。
+guys exactly
+
+33
+00:01:30,663 --> 00:01:32,653
+我们会逐一分析
+we're going to look at each
+
+34
+00:01:32,653 --> 00:01:34,643
+每份合约的运作逻辑，
+individual contract and see why it
+
+35
+00:01:34,643 --> 00:01:37,297
+看看它为什么能这样运作，
+works the way it does as well as
+
+36
+00:01:38,900 --> 00:01:40,892
+以及为什么 我认为，当你开始
+why i think when you're now starting to
+
+37
+00:01:40,892 --> 00:01:42,885
+交易期权时，
+trade options you should probably be the only
+
+38
+00:01:42,885 --> 00:01:44,878
+可能应该先只交易日历价差策略，
+thing you trade until you really understand what's
+
+39
+00:01:44,878 --> 00:01:46,871
+直到你真正理解它的原理。
+going on if you buy a stock in
+
+40
+00:01:46,871 --> 00:01:48,070
+比如，如果你现在买入特斯拉，
+this case tesla if you
+
+41
+00:01:48,070 --> 00:01:49,749
+在这个点位买入，
+were to buy tesla right here at
+
+42
+00:01:49,749 --> 00:01:53,107
+系统会四舍五入显示为685美元。
+this point it will just round it down and say it's going for 685 dollars
+
+43
+00:01:54,000 --> 00:01:57,700
+如果特斯拉涨到你的目标价位，
+if tesla comes all the way up to your targets which would be up here
+
+44
+00:01:59,000 --> 00:02:01,400
+你不用担心它涨得有多快。
+You don't have to worry about how fast it gets there.
+
+45
+00:02:01,700 --> 00:02:03,315
+你只需要知道，
+All you know is if you
+
+46
+00:02:03,315 --> 00:02:04,661
+如果你以685美元买入，
+buy it $6.85, you're never going
+
+47
+00:02:04,661 --> 00:02:08,161
+只要不跌回685美元以下，你就不会亏损。
+to be in the red as long as it doesn't come back below $6.85.
+
+48
+00:02:08,700 --> 00:02:10,000
+但期权就不同了。
+That's not the same for options.
+
+49
+00:02:10,300 --> 00:02:14,800
+换句话说，如果你在这里买入看涨期权，
+In other words, if you were to buy a call option here, meaning you're bullish.
+
+50
+00:02:15,000 --> 00:02:16,246
+意思就是你看涨。
+I won't repeat too much because
+
+51
+00:02:16,246 --> 00:02:17,492
+我不会重复太多，
+I'm going to already make the
+
+52
+00:02:17,492 --> 00:02:20,399
+因为我假设你们大部分人
+assumption that most of you guys have a basic understanding of what options are.
+
+53
+00:02:20,500 --> 00:02:24,500
+已经了解期权的基础知识了。
+So instead of repeating myself too much, just understand you should know this already.
+
+54
+00:02:24,500 --> 00:02:27,600
+看涨期权意味着你看涨该股票。
+A call option means you are bullish on the stock.
+
+55
+00:02:27,600 --> 00:02:28,373
+如果我提到
+And if I mention
+
+56
+00:02:28,373 --> 00:02:29,919
+看跌期权的任何内容，
+anything about a put option, which this video
+
+57
+00:02:29,919 --> 00:02:31,079
+不过这个视频
+is not going to be about
+
+58
+00:02:31,079 --> 00:02:33,399
+可能不会讲看跌期权，
+puts, I don't believe so. It means you're bearish on the stock.
+
+59
+00:02:33,400 --> 00:02:34,520
+看跌期权意味着你看跌该股票。
+So put means you think the stock
+
+60
+00:02:34,520 --> 00:02:37,400
+看跌期权是看空股票，看涨期权是看多股票
+is going to go down and a call means you think a stock is going to go up.
+
+61
+00:02:37,700 --> 00:02:39,066
+那咱们假设
+So in this case, let's just
+
+62
+00:02:39,066 --> 00:02:40,887
+你买入一个看涨期权
+say you were to buy a call option
+
+63
+00:02:40,887 --> 00:02:42,708
+在特斯拉当前价位
+on Tesla when it's at this price right
+
+64
+00:02:42,708 --> 00:02:44,074
+第二天特斯拉跳空高开
+here and Tesla gaps up the
+
+65
+00:02:44,074 --> 00:02:45,477
+如图所示
+next day and as you can
+
+66
+00:02:45,477 --> 00:02:47,581
+这是个大好日子，你的盈亏会是绿的
+see it's a very good day your P&L
+
+67
+00:02:47,581 --> 00:02:48,983
+但接下来一天
+will be very green but then
+
+68
+00:02:48,983 --> 00:02:50,385
+如果特斯拉回调到这个位置
+the next day if Tesla was
+
+69
+00:02:50,385 --> 00:02:52,957
+再反弹到这个点位
+to pull back to here and then come up to here
+
+70
+00:02:53,500 --> 00:02:54,630
+信不信由你
+Believe it or not,
+
+71
+00:02:54,630 --> 00:02:56,325
+这笔交易你可能会亏损
+you can actually be red on
+
+72
+00:02:56,325 --> 00:02:57,738
+也就是你在这里买的看涨期权
+the trade, meaning the call
+
+73
+00:02:57,738 --> 00:02:59,998
+如果在这一天到期
+that you purchase here, if it expires on.
+
+74
+00:03:00,100 --> 00:03:01,883
+很有可能即使特斯拉回到
+this day here there's a high
+
+75
+00:03:01,883 --> 00:03:03,666
+这个价位
+possibility that even on this push
+
+76
+00:03:03,666 --> 00:03:05,449
+你的盈亏可能开始
+the moment tesla comes back to
+
+77
+00:03:05,449 --> 00:03:07,232
+你可能会发现
+this level you're probably going to
+
+78
+00:03:07,232 --> 00:03:10,798
+账户里的钱可能比开仓时还少
+be starting you'll probably end up having less money in your pnl
+
+79
+00:03:11,700 --> 00:03:13,144
+最后
+then and you'll end up
+
+80
+00:03:13,144 --> 00:03:15,166
+账户里的钱可能比开仓时还少
+probably end up having less money in
+
+81
+00:03:15,166 --> 00:03:16,899
+尽管特斯拉股价更高
+your account than when you actually
+
+82
+00:03:16,899 --> 00:03:18,921
+这是因为已经过去了一两天
+open it here even though tesla is
+
+83
+00:03:18,921 --> 00:03:24,698
+更高，因为此时已过去了一两三天
+higher and that's just because at this point there's been one two three days of time that has passed by
+
+84
+00:03:25,100 --> 00:03:26,927
+如果特斯拉随后横盘整理
+and if tesla then just consolidates
+
+85
+00:03:26,927 --> 00:03:28,754
+就像图中这样
+which in this particular case it
+
+86
+00:03:28,754 --> 00:03:31,799
+到周五收盘时
+did you can see by friday by tesla closing here
+
+87
+00:03:32,100 --> 00:03:34,157
+即使你在这里开的仓
+even though you would have opened this trade
+
+88
+00:03:34,157 --> 00:03:35,957
+到周五特斯拉收在这个位置
+here and by friday tesla close here
+
+89
+00:03:35,957 --> 00:03:37,757
+如果你没选对策略
+if you were not in the right
+
+90
+00:03:37,757 --> 00:03:40,842
+不管行权价如何 你可能亏光全部权利金
+strike price or anything you would actually end up losing 100% of your
+
+91
+00:03:42,100 --> 00:03:43,675
+那怎么应对呢
+your investment so how do we
+
+92
+00:03:43,675 --> 00:03:45,250
+再来看看如何对冲
+counter that again we're going to
+
+93
+00:03:45,250 --> 00:03:48,400
+我们来看日历价差策略
+be looking at the calendar the calendar campaign or the calendar spread
+
+94
+00:03:49,200 --> 00:03:51,232
+用这个实时例子
+so using this live example this
+
+95
+00:03:51,232 --> 00:03:53,264
+这是上周的情况
+was last week this is a
+
+96
+00:03:53,264 --> 00:03:55,296
+这是周四
+thursday right here and this was
+
+97
+00:03:55,296 --> 00:03:59,699
+这是上周五 这是周一 这是周五
+last week friday this is a monday and this was a friday right
+
+98
+00:04:00,000 --> 00:04:02,191
+假设在收盘前
+so let's just say before the market closed
+
+99
+00:04:02,191 --> 00:04:04,108
+你有理由相信
+you had reasons to believe or your
+
+100
+00:04:04,108 --> 00:04:06,025
+或者你的技术分析让你
+technical analysis of whatever you used to
+
+101
+00:04:06,025 --> 00:04:07,394
+决定入场交易
+tell you to enter a
+
+102
+00:04:07,394 --> 00:04:09,311
+这个视频同样假设
+trade again this this video also assumes
+
+103
+00:04:09,311 --> 00:04:12,597
+你已掌握交易的基本原理
+that you understand the basic principles of trading and things like that.
+
+104
+00:04:15,000 --> 00:04:16,107
+看看这个图表
+Taking a look at this right
+
+105
+00:04:16,107 --> 00:04:17,214
+你有理由相信
+here, so you have reasons to
+
+106
+00:04:17,214 --> 00:04:19,798
+特斯拉会上涨 所以你买入看涨期权
+believe that Tesla will go up, so you decide to enter a call option.
+
+107
+00:04:19,800 --> 00:04:24,800
+假设你目标行权价是730 因为你认为特斯拉会涨到那里
+Let's just say you're targeting 730 is your strike because that's where you think Tesla is going to go.
+
+108
+00:04:25,200 --> 00:04:30,000
+或者目标是750看涨期权 因为深度虚值更便宜
+Or you target like a 750 call because it's deeper out the money and it's more affordable, so it's cheaper.
+
+109
+00:04:30,300 --> 00:04:32,300
+你没买730行权价 而是买了750
+Instead of buying the 730, you buy a 750.
+
+110
+00:04:32,300 --> 00:04:35,000
+但你真正想在730行权价卖出
+But your intention is to sell at 730.
+
+111
+00:04:35,000 --> 00:04:44,200
+你从没打算在750卖出 因为知道离目标有50到75点
+You're never really intending to sell at 750 because you understand that's 50, 60, 70 points away, 75 points or something like that.
+
+112
+00:04:44,200 --> 00:04:48,400
+目标确实太远了
+It's a pretty large target.
+
+113
+00:04:48,400 --> 00:04:51,400
+所以730作为目标你就满足了 对吧
+So you're happy taking the 730 as your target, right?
+
+114
+00:04:53,100 --> 00:04:57,000
+你在这里买入看涨期权 现在
+You enter this call here and now here we are.
+
+115
+00:04:57,200 --> 00:04:58,300
+明天就是周五
+Tomorrow is Friday.
+
+116
+00:04:58,300 --> 00:05:04,900
+我们说的是10个交易日后 特斯拉还没到目标价
+So we're talking a whole 10 days later in terms of trading days and Tesla has not hit your target.
+
+117
+00:05:05,100 --> 00:05:09,600
+假设你的合约明天到期 因为我是在周四录制的
+And let's just say your contract was to expire tomorrow because, again, I'm shooting this video on a Thursday.
+
+118
+00:05:09,600 --> 00:05:11,300
+所以合约明天到期
+So your contract expires tomorrow.
+
+119
+00:05:11,700 --> 00:05:15,444
+可能面临亏损
+You could be looking at potentially being down
+
+120
+00:05:15,444 --> 00:05:17,316
+可能损失合约价值的60%到80%
+probably 60 percent, 80 percent of
+
+121
+00:05:17,316 --> 00:05:22,464
+仅仅因为时间流逝。
+your contract just because of so much time has passed by.
+
+122
+00:05:23,800 --> 00:05:27,500
+那我们看看图表上的实际表现。
+So let's take a look at how that actually looks on a chart.
+
+123
+00:05:28,200 --> 00:05:30,300
+现在看到的是OptionStrat（期权策略分析工具）网站。
+What we're looking at is optionstrat.com.
+
+124
+00:05:30,300 --> 00:05:35,600
+这是我最爱用的工具之一，强烈推荐这个网站。
+This is by far one of my favorite tools to use. I highly recommend this website.
+
+125
+00:05:35,700 --> 00:05:36,733
+我用的是付费账户，
+I have the paid
+
+126
+00:05:36,733 --> 00:05:37,766
+费用并不高，
+account. It's not that
+
+127
+00:05:37,766 --> 00:05:38,799
+我一直在用，
+expensive. I use it
+
+128
+00:05:38,799 --> 00:05:41,899
+特别喜欢它的分析标签等功能。
+all the time. I love their analyze tab and things like that.
+
+129
+00:05:42,500 --> 00:05:43,978
+ThinkorSwim（交易平台）也有分析标签，但
+Thinkorswim has an analyze tab, but
+
+130
+00:05:43,978 --> 00:05:45,456
+有时候会有点卡顿，
+it gets a little clunky, especially
+
+131
+00:05:45,456 --> 00:05:49,398
+尤其是在市场开盘期间，还会拖慢电脑。
+during the market open hours. It ends up slowing down your computer and stuff like that.
+
+132
+00:05:49,400 --> 00:05:51,000
+所以我通常会切到这个网站。
+So I usually hop over to this website.
+
+133
+00:05:51,300 --> 00:05:52,554
+我喜欢在这里输入
+I like to plug in my
+
+134
+00:05:52,554 --> 00:05:56,108
+行权价之类的信息，来查看整体的盈亏图分析。
+strike prices and stuff like that just to get an overall analysis of my P&L chart.
+
+135
+00:05:56,300 --> 00:05:58,813
+现在看到的是8月20日到期的合约。
+So what we're looking at right now
+
+136
+00:05:58,813 --> 00:06:03,840
+我们看的是特斯拉750美元行权价的看涨期权。
+is the August 20th expiration. And we're looking at the 750 call strike for Tesla.
+
+137
+00:06:04,600 --> 00:06:08,400
+这是初学者最常交易的基础策略。
+This is a simple basic strategy that most people know how to trade when they start trading options.
+
+138
+00:06:08,400 --> 00:06:11,300
+就是直接买入看涨期权，这里我们只买一个。
+It means that you just buy a call. In this case, we're just looking at one.
+
+139
+00:06:11,700 --> 00:06:18,100
+期权成本是5.65美元，也就是要花565美元。
+This is the cost of the option. So $5.65, which means it's going to cost you $565, right?
+
+140
+00:06:18,900 --> 00:06:20,528
+我们来看这只期权的历史表现。
+Let's look at the history of
+
+141
+00:06:20,528 --> 00:06:24,599
+把图表往前拉两周。
+this option. And if we jump back two weeks, let's look back at our chart.
+
+142
+00:06:24,700 --> 00:06:27,900
+这是哪一天？是7月30日。
+What day was this? This was the 30th of July.
+
+143
+00:06:28,700 --> 00:06:33,300
+找到7月30日，就是图表上的这个点。
+So if we come right here and we find the 30th of July, that would be this day right here.
+
+144
+00:06:33,600 --> 00:06:36,600
+当时这份合约的价格是多少？看这里。
+So how much was this contract going for? We can see that right over here.
+
+145
+00:06:36,600 --> 00:06:40,100
+当时合约价格大约是10美元。
+At that point, the contract was going for, we'll say, we'll just make it an even $10.
+
+146
+00:06:40,400 --> 00:06:46,000
+现在合约价值是5.65美元，而当时是10美元。
+And right now, the contract is currently going for $565, but at that time, it was going for $10.
+
+147
+00:06:46,300 --> 00:06:50,700
+也就是说，你差不多亏了500美元，准确说是亏了435美元。
+That means you're pretty much almost down $500. You're down $435.
+
+148
+00:06:51,000 --> 00:06:56,200
+这正好说明了期权交易的复杂性。
+So this right here should show you... The complications of trading options.
+
+149
+00:06:56,300 --> 00:07:02,900
+你在这里买入了看涨期权，特斯拉现在涨到这里，但你却亏了近500美元。
+You bought the call option here. Tesla is now here, but somehow you are down almost $500.
+
+150
+00:07:03,500 --> 00:07:05,500
+时间又过去了，对吧？
+Again, time has passed by, right?
+
+151
+00:07:06,400 --> 00:07:09,800
+回到这个情况，这就是所谓的Theta值（时间衰减）
+If we jump back to this, this is what's called time decay.
+
+152
+00:07:09,900 --> 00:07:12,175
+这正是期权交易者难以持有的原因，
+And this is what's hard to hold as
+
+153
+00:07:12,175 --> 00:07:14,165
+因为如果你之前交易的是股票，
+an options trader, because if you're coming
+
+154
+00:07:14,165 --> 00:07:18,999
+习惯了买入后设置止损。
+from trading equity, which is just the stock, you're used to just buying, setting a stop loss.
+
+155
+00:07:19,000 --> 00:07:22,200
+在这种情况下，你在这里买入，觉得这个止损位合理，
+In this particular case, you buy here and you're saying this is a sensible stop loss.
+
+156
+00:07:22,200 --> 00:07:24,700
+认为特斯拉不应该再跌破这个区间。
+Tesla should not come back below this zone.
+
+157
+00:07:25,000 --> 00:07:27,200
+结果特斯拉却来了次大幅拉升。
+In this particular case, you got a really big explosive move.
+
+158
+00:07:27,300 --> 00:07:30,000
+现实中，任何交易者看到这种行情，
+Now in a real world, I'm pretty sure any trader would have
+
+159
+00:07:30,000 --> 00:07:32,200
+周一肯定会获利了结，
+taking profits on Monday after a move like
+
+160
+00:07:32,200 --> 00:07:34,400
+不管交易的是不是期权，
+this, whether you trade options or not, might
+
+161
+00:07:34,400 --> 00:07:38,800
+周末大涨后也会减仓锁定利润。
+as well take some risk off because you got a really nice win over the weekend.
+
+162
+00:07:39,300 --> 00:07:41,800
+获利了结后继续持有。
+Take some profit and then continue to hold.
+
+163
+00:07:41,900 --> 00:07:44,506
+如果交易的是股票，
+If you're trading stock, there's no reason
+
+164
+00:07:44,506 --> 00:07:47,485
+没必要平仓，
+to close this trade because you don't know
+
+165
+00:07:47,485 --> 00:07:52,698
+因为特斯拉仍有很高概率触及你的目标位。
+how long, you know Tesla still has high probability of hitting your profit target.
+
+166
+00:07:53,700 --> 00:07:56,300
+回到这个情况。
+If we jump back to this right here.
+
+167
+00:07:57,100 --> 00:08:00,200
+我们来看看看涨价差策略。
+Let's take a look at what's called a bull call spread.
+
+168
+00:08:00,300 --> 00:08:08,100
+这是期权策略的基础组成部分。
+This is one of the basic, I guess you can say, building blocks to option strategies.
+
+169
+00:08:08,300 --> 00:08:10,120
+看涨价差策略也被称为
+The bull call spread is also called
+
+170
+00:08:10,120 --> 00:08:12,200
+它属于
+a, it falls under the category of what's
+
+171
+00:08:12,200 --> 00:08:16,199
+垂直价差策略的一种，即V-E-R-T。
+known as a vertical spread. So I'll just put V-E-R-T. You can look that up.
+
+172
+00:08:16,200 --> 00:08:22,700
+垂直价差是高级期权交易的基础。
+Vertical spreads are the building blocks to advanced option trading or different option trading strategies.
+
+173
+00:08:23,100 --> 00:08:26,020
+看涨价差策略的操作是：
+So if we look at the bull call spread, it
+
+174
+00:08:26,020 --> 00:08:30,400
+在某个到期日买入一份合约，
+would mean you would buy a contract on a certain expiration and you would short.
+
+175
+00:08:31,000 --> 00:08:33,720
+同时在相同到期日卖出另一份合约，
+Another contract at the same expiration and you're
+
+176
+00:08:33,720 --> 00:08:36,440
+用卖出合约收取的权利金
+using the premium you collect from this contract
+
+177
+00:08:36,440 --> 00:08:39,500
+来抵消买入合约的成本。
+to help pay for how much this one cost
+
+178
+00:08:39,900 --> 00:08:41,236
+如果理解的话，
+if that makes sense let's
+
+179
+00:08:41,236 --> 00:08:43,106
+我们来看看这个。
+take a look at this right here
+
+180
+00:08:43,106 --> 00:08:45,244
+这份合约要花你2.90美元
+so this contract is costing you two dollars
+
+181
+00:08:45,244 --> 00:08:47,837
+如果你直接买入 但
+and ninety cents if you were to buy it however
+
+182
+00:08:47,837 --> 00:08:49,203
+如果我们看这份
+if we look at the the
+
+183
+00:08:49,203 --> 00:08:50,341
+行权价250的看涨期权
+250 call this is going for
+
+184
+00:08:50,341 --> 00:08:52,617
+报价是70美分 你能收取70美元权利金
+70 cents so you can collect 70 cents in premium meaning 70 dollars
+
+185
+00:08:55,200 --> 00:09:00,000
+也就是说 你可以从这份合约中抵扣70美元
+and that would means you take 70 off of this right here and that would bring
+
+186
+00:09:00,100 --> 00:09:03,900
+这样这份合约的成本就降到2.20美元
+this contract down to $2.20.
+
+187
+00:09:05,000 --> 00:09:10,100
+换句话说 你只需220美元就能开这个仓 而不是290美元
+So in other words, instead of paying $290, you can pay $220 to get this contract.
+
+188
+00:09:10,100 --> 00:09:12,700
+这只是降低成本的一种方式
+It's just a way to reduce the cost of this.
+
+189
+00:09:12,900 --> 00:09:17,800
+但代价是你要限制盈利目标 如图所示
+The trade-off to this is you're capping your profit target, as we can see right here.
+
+190
+00:09:18,000 --> 00:09:20,479
+一旦特斯拉涨到750美元
+It means once Tesla reaches $750, you can't
+
+191
+00:09:20,479 --> 00:09:23,312
+超过这个行权价后 你就无法再盈利
+make any more money past that strike because
+
+192
+00:09:23,312 --> 00:09:26,145
+因为你会在这份合约上开始亏损
+you'll start losing on this contract right here.
+
+193
+00:09:26,500 --> 00:09:28,900
+而且这都是到期时的情况
+And this is all by expiration, by the way.
+
+194
+00:09:28,900 --> 00:09:34,600
+在这个例子中 我们看的是明天到期的合约 也就是8月13日
+So in this particular case, we're looking at tomorrow's expiration, which is August 13th.
+
+195
+00:09:35,000 --> 00:09:36,833
+那我们来看一下
+So if we take a look at
+
+196
+00:09:36,833 --> 00:09:40,499
+它的历史图表 我们回溯到两周前
+the historical chart for this, we can see, let's jump back again two weeks.
+
+197
+00:09:40,800 --> 00:09:43,345
+假设我们在这时候开仓
+Assuming we open this spread at this time
+
+198
+00:09:43,345 --> 00:09:45,572
+当时需要支付
+right here, we would have been paying,
+
+199
+00:09:45,572 --> 00:09:47,481
+我们取个整 数约3美元
+we'll round it, we'll say about $3.
+
+200
+00:09:47,800 --> 00:09:48,600
+取个中间值
+We'll just put it in the middle.
+
+201
+00:09:48,600 --> 00:09:50,100
+就算3.50美元
+We'll say $3.50.
+
+202
+00:09:50,300 --> 00:09:52,910
+现在我们看到这个价差
+And now we can see this spread close
+
+203
+00:09:52,910 --> 00:09:55,846
+当天收于2.23美元 这意味着交易亏损
+the day at $2.23, which means we've taken a loss
+
+204
+00:09:55,846 --> 00:10:02,372
+因为时间衰减对垂直价差的影响 和单纯买入看涨期权一样
+on the trade because time decay actually affects vertical spreads the same way it affects just buying a call option.
+
+205
+00:10:02,700 --> 00:10:06,900
+如果你只买看涨期权 价格必须快速朝你预期的方向走
+If you just buy a call, you need price to go in your favor quickly.
+
+206
+00:10:07,800 --> 00:10:09,400
+做垂直价差时 你不需要这么快
+You don't need it to happen as quickly
+
+207
+00:10:09,400 --> 00:10:12,000
+但仍然需要价格有所移动
+when you do a vertical spread, but you still need it to move.
+
+208
+00:10:12,300 --> 00:10:14,166
+接下来 我们来看所谓的
+So next, let's look at what's called
+
+209
+00:10:14,166 --> 00:10:16,032
+日历价差策略，这是
+the calendar spread, which is the main
+
+210
+00:10:16,032 --> 00:10:17,898
+我认为你应该交易的主要策略。
+strategy I think you should be trading.
+
+211
+00:10:18,000 --> 00:10:21,136
+我仍把它归为
+The reason I still put it under the category of
+
+212
+00:10:21,136 --> 00:10:23,331
+所谓期权交易初学者策略，是因为
+a quote-unquote beginner option trading strategy is
+
+213
+00:10:23,331 --> 00:10:24,899
+它其实并不复杂。
+because it's not that complicated.
+
+214
+00:10:25,100 --> 00:10:30,000
+你只需选择行权价，
+You're just choosing the strike, the same strike you would as if you were trading your
+
+215
+00:10:30,000 --> 00:10:37,700
+和交易目标价一样，比如这里的750，
+your target so in this case 750 we would be looking at 750 but in this case you just choose
+
+216
+00:10:38,600 --> 00:10:41,514
+然后选择两个不同的到期日，
+one expiration and another one and
+
+217
+00:10:41,514 --> 00:10:44,428
+买入远期的那个，
+you buy the further out expiration
+
+218
+00:10:44,428 --> 00:10:48,313
+卖出近期的那个。
+and you short the one that's expiring sooner
+
+219
+00:10:48,313 --> 00:10:51,227
+这样操作会产生
+when you do this you create
+
+220
+00:10:51,227 --> 00:10:52,198
+正Theta值（时间衰减）。
+positive theta
+
+221
+00:10:54,500 --> 00:10:56,600
+Theta值代表时间衰减。
+And theta is what represents time decay.
+
+222
+00:10:56,900 --> 00:11:00,400
+如果我们看这里，这个交易的Theta值是正的。
+If we actually scroll right here, we can see this trade has a positive theta.
+
+223
+00:11:00,700 --> 00:11:05,900
+回到最初的交易，这里Theta值是负的。
+If we come back to the original trade and we scroll here, we'll see the theta is negative.
+
+224
+00:11:05,900 --> 00:11:13,300
+这意味着每过一天，持有合约就会损失0.80美元
+That means pretty much for every day, this contract is going to lose 80 just as you continue to hold it.
+
+225
+00:11:13,800 --> 00:11:15,800
+也就是80美分。
+Which is 80 bucks, 80 cents.
+
+226
+00:11:16,100 --> 00:11:19,100
+看这里，这个是正Theta值。
+If we come over here, we can see that this has a positive theta.
+
+227
+00:11:19,300 --> 00:11:21,400
+只要Theta值保持正值，
+So as long as this theta remains
+
+228
+00:11:21,400 --> 00:11:23,800
+可能会在接下来的5天左右保持正值，
+positive, it'll remain theta positive for probably another
+
+229
+00:11:23,800 --> 00:11:25,900
+这就是为什么
+five days or so, which is why
+
+230
+00:11:25,900 --> 00:11:28,900
+你总要选1到2周的到期时间。
+you always want to go one week to two weeks.
+
+231
+00:11:28,900 --> 00:11:30,200
+最好选2周。
+You want to go two weeks.
+
+232
+00:11:30,600 --> 00:11:31,614
+至少要远期，
+Out at least and
+
+233
+00:11:31,614 --> 00:11:32,628
+然后卖出
+then you to short
+
+234
+00:11:32,628 --> 00:11:34,149
+并至少买入下一个
+and at least buy whatever is
+
+235
+00:11:34,149 --> 00:11:35,417
+到期的合约，
+the the following one i
+
+236
+00:11:35,417 --> 00:11:37,192
+我喜欢让它们
+like to keep them right next to
+
+237
+00:11:37,192 --> 00:11:38,967
+紧挨着，这样能降低成本，
+each other because it keeps the cost
+
+238
+00:11:38,967 --> 00:11:40,996
+如果我们跳到这个
+down if we were to jump to this
+
+239
+00:11:41,700 --> 00:11:43,334
+选择这个行权价和到期日
+strike this expiration as we can
+
+240
+00:11:43,334 --> 00:11:44,968
+这就是交易的成本
+see this is the cost of
+
+241
+00:11:44,968 --> 00:11:46,330
+如果我们选择这个
+the trade if we were
+
+242
+00:11:46,330 --> 00:11:49,598
+跳到这个的话 成本会大幅上升 因为
+to jump to this right here it significantly increases the cost because
+
+243
+00:11:49,800 --> 00:11:50,761
+买入9月的看涨期权
+buying the further buying
+
+244
+00:11:50,761 --> 00:11:51,722
+9月的看涨期权
+the september calls are
+
+245
+00:11:51,722 --> 00:11:53,164
+会贵很多
+going to be significantly more expensive
+
+246
+00:11:53,164 --> 00:11:54,606
+因为多了一周时间
+because it's an extra week so
+
+247
+00:11:54,606 --> 00:11:56,048
+所以我会把合约
+i keep them i keep them
+
+248
+00:11:56,048 --> 00:11:59,895
+设置得紧凑一些 来降低成本 如图所示
+nice and tight to keep the cost down and as you can see this is actually
+
+249
+00:12:00,200 --> 00:12:05,500
+这个成本其实还行 只有500美元
+not that bad it would cost $500 versus when we bought the naked
+
+250
+00:12:06,000 --> 00:12:07,255
+而如果直接买入
+or we bought the option
+
+251
+00:12:07,255 --> 00:12:08,761
+750行权价的看涨期权
+flat out right the 750 call it's
+
+252
+00:12:08,761 --> 00:12:10,769
+差不多也要这个价
+pretty much going to end up costing that
+
+253
+00:12:10,769 --> 00:12:12,526
+尤其是在我们买入的时候
+much anyway especially at the time we
+
+254
+00:12:12,526 --> 00:12:13,844
+所以如果我们看
+were buying it so if
+
+255
+00:12:13,844 --> 00:12:15,425
+这对盈亏的影响
+we look at this how does
+
+256
+00:12:15,425 --> 00:12:18,061
+如图所示
+this affect the our P&L as we can see
+
+257
+00:12:18,700 --> 00:12:22,000
+特斯拉涨到行权价时 我们其实能盈利
+As Tesla continues to go up to the strike price, we'll actually be profitable.
+
+258
+00:12:22,200 --> 00:12:29,100
+只有特斯拉大幅超行权价时 才会亏损
+You only really start to lose on the trade if Tesla goes significantly past your strikes.
+
+259
+00:12:29,300 --> 00:12:33,100
+图中显示 我们设定为780
+In this particular case, this graph is telling us right here, we'll say 780.
+
+260
+00:12:33,100 --> 00:12:39,800
+特斯拉得在8月20日前涨到780以上 才会亏损
+Tesla would have to be over 780 by August 20th for us to actually be red on the trade.
+
+261
+00:12:39,800 --> 00:12:44,800
+这种情况很少发生 但你的亏损其实不会太大
+In that case, it's a very rare situation to happen, but you're actually not going to be down that much.
+
+262
+00:12:44,900 --> 00:12:49,300
+也只会亏在做空的近月合约上
+You're only going to be down on the contract that you shorted, which is what's called the front month.
+
+263
+00:12:49,800 --> 00:12:53,500
+远月合约仍然是盈利的
+And your back month is actually not going, it's still going to be green.
+
+264
+00:12:53,800 --> 00:12:55,270
+我们再仔细看一下
+Again, we're going to take a look
+
+265
+00:12:55,270 --> 00:12:56,740
+在ThinkorSwim（交易平台）上
+in this and a little bit more
+
+266
+00:12:56,740 --> 00:13:00,100
+但我想给各位看一下历史图表
+in depth on Thinkorswim, but I want to show you guys the historical chart for this.
+
+267
+00:13:00,400 --> 00:13:02,500
+时间拉到两周 然后看一下
+Let's go to two weeks. And now let's take a look.
+
+268
+00:13:02,600 --> 00:13:06,900
+我们会在这里开仓 因为这是30日收盘前
+We would have opened the trade here because again, this is the 30th right before the market closed.
+
+269
+00:13:06,900 --> 00:13:08,600
+我用的是所有合约的收盘成交价。
+I'm using like the closing print for everything.
+
+270
+00:13:08,900 --> 00:13:12,200
+此时合约价格略高于4美元。
+And we can see at this point, the contract will be going for just over four bucks.
+
+271
+00:13:12,200 --> 00:13:13,800
+我们可以算作4美元。
+We'll round it down to say $4.
+
+272
+00:13:14,000 --> 00:13:16,000
+现在涨到5美元了。
+And now we can see that it's going for five.
+
+273
+00:13:16,300 --> 00:13:19,500
+更重要的是，看看这笔交易的盈亏表现。
+More importantly, take a look at how the P&L worked on this trade here.
+
+274
+00:13:19,500 --> 00:13:24,300
+当时价格是4美元，后来最低跌到3.17美元。
+So at this point, it was going for $4. It did hit a low of $3.17.
+
+275
+00:13:24,500 --> 00:13:29,800
+所以它确实贬值了，
+So it did lose some value, even though Tesla, if we go back to the chart again,
+
+276
+00:13:30,200 --> 00:13:32,800
+尽管特斯拉股价从未回到开仓时的价位。
+It never came back to where we opened the trade.
+
+277
+00:13:32,800 --> 00:13:34,600
+理论上，特斯拉得跌到那里，
+So in theory, Tesla should be
+
+278
+00:13:34,600 --> 00:13:36,400
+期权才会那么低，
+down here for the option to
+
+279
+00:13:36,400 --> 00:13:39,100
+但特斯拉实际上在这里。
+be that low, but Tesla is actually up here.
+
+280
+00:13:39,400 --> 00:13:42,500
+所以这里存在一定的时间衰减。
+So there is a little bit of time decay in that case.
+
+281
+00:13:42,700 --> 00:13:46,200
+下一个应对方法是选更远的到期日。
+The next way to counter that is you can go even further out.
+
+282
+00:13:46,300 --> 00:13:47,300
+比如这次，
+So in this case.
+
+283
+00:13:47,900 --> 00:13:50,369
+明天是13号，
+Again, tomorrow is the 13th, but
+
+284
+00:13:50,369 --> 00:13:53,661
+我选了距离本周两周，
+in this case, I went with just two
+
+285
+00:13:53,661 --> 00:13:58,599
+以及距离本周三周来做多。
+weeks out from this week and three weeks out to go long.
+
+286
+00:13:58,800 --> 00:14:00,252
+如果再选更远的到期日，
+If we go a little further out now,
+
+287
+00:14:00,252 --> 00:14:01,523
+假设直接跳到9月，
+let's just say we jump all the
+
+288
+00:14:01,523 --> 00:14:02,794
+可以看到，交易成本几乎一样，
+way to September, you can see the
+
+289
+00:14:02,794 --> 00:14:05,699
+甚至可能更便宜。
+cost of the trade is pretty much almost the same, if not a little bit cheaper.
+
+290
+00:14:06,700 --> 00:14:08,600
+这背后的原因留到下个视频再讲。
+What's dependent on that will be for another video.
+
+291
+00:14:08,900 --> 00:14:10,525
+这取决于隐含波动率，
+It's depending on the implied volatility and
+
+292
+00:14:10,525 --> 00:14:12,150
+以及两者之间的差异，
+the differences between the two, but that's
+
+293
+00:14:12,150 --> 00:14:13,543
+但这就是我们开始变得更复杂的地方，
+where we start getting a little
+
+294
+00:14:13,543 --> 00:14:16,097
+我会把这个视频保持简单。
+bit more advanced, and I'm going to keep this video simple.
+
+295
+00:14:16,500 --> 00:14:18,673
+只需记住，选择更远的到期日
+Just take note that it's not going to cost you
+
+296
+00:14:18,673 --> 00:14:20,412
+并不会让你花费更多，
+more by going further out so that already
+
+297
+00:14:20,412 --> 00:14:21,933
+这本身就说明
+should tell you that that's a good
+
+298
+00:14:21,933 --> 00:14:23,019
+这是一个好兆头，如果我们看
+sign if we look at
+
+299
+00:14:23,019 --> 00:14:26,497
+从盈亏图可以看到，这里稍微拉伸了一些
+our pnl graph we can already see how it's a little bit uh more stretched here
+
+300
+00:14:27,000 --> 00:14:28,695
+如果我们再看
+if we were to then look
+
+301
+00:14:28,695 --> 00:14:30,390
+看看这个策略的历史图表
+at the historical chart for this
+
+302
+00:14:30,390 --> 00:14:33,498
+可以看到，在两周前
+we can see if we go to the two weeks ago
+
+303
+00:14:33,900 --> 00:14:35,378
+我们本可以买入这个日历价差策略
+we can see we would have
+
+304
+00:14:35,378 --> 00:14:36,856
+这是30日线，这是收盘价
+been buying this spread here's the
+
+305
+00:14:36,856 --> 00:14:38,826
+当时我们需要支付
+30th right here's the market close we would
+
+306
+00:14:38,826 --> 00:14:40,304
+假设是3.25美元
+have been paying at this point
+
+307
+00:14:40,304 --> 00:14:43,752
+现在这个日历价差策略报价是4.70美元
+we'll say three dollars and a quarter and the spread is now going for $4.70.
+
+308
+00:14:44,200 --> 00:14:52,700
+也就是说，每张合约能赚近150美元
+So that is, you're talking about you're up almost $150 per contract that you bought.
+
+309
+00:14:52,700 --> 00:14:55,800
+如果只买一张，至少赚150美元
+If you just bought one, you would be up at least $150.
+
+310
+00:14:56,400 --> 00:14:58,250
+更重要的是
+And as you can see, more
+
+311
+00:14:58,250 --> 00:15:00,100
+特斯拉在周一跳空上涨后
+importantly, as Tesla gapped up on
+
+312
+00:15:00,100 --> 00:15:01,950
+然后横盘整理，看看这个盈亏图
+Monday, and then it consolidated, look
+
+313
+00:15:01,950 --> 00:15:04,099
+看看这个盈亏图
+at how this P&L graph looks.
+
+314
+00:15:04,100 --> 00:15:06,900
+和特斯拉的走势图非常相似
+It looks very similar to Tesla's chart.
+
+315
+00:15:07,000 --> 00:15:13,300
+特斯拉跳空上涨后回落，然后横盘，但没再跌下来
+Tesla gapped up, it came back, and then it consolidated, but it never came back down here.
+
+316
+00:15:13,500 --> 00:15:14,800
+你甚至可以像交易股票一样
+You can actually trade
+
+317
+00:15:15,800 --> 00:15:18,117
+来交易期权
+the options the same way you
+
+318
+00:15:18,117 --> 00:15:20,434
+因为现在
+would trade the stock because now
+
+319
+00:15:20,434 --> 00:15:22,751
+你消除了时间衰减的风险
+you're eliminating that risk of time
+
+320
+00:15:22,751 --> 00:15:26,999
+否则可能会让你错失赢面交易
+decay that would actually take you out of a winning trade.
+
+321
+00:15:27,300 --> 00:15:31,000
+各位有多少次买入期权后又平仓了？
+How many times have you guys entered in an option and then closed it?
+
+322
+00:15:31,600 --> 00:15:33,033
+像今天这种行情，或者
+On a day like this or
+
+323
+00:15:33,033 --> 00:15:34,466
+类似情况，只是因为
+something like that just because you're
+
+324
+00:15:34,466 --> 00:15:35,899
+你担心如果特斯拉回到原来价位
+afraid that if tesla came back
+
+325
+00:15:35,899 --> 00:15:37,332
+会亏损
+to your same price you know
+
+326
+00:15:37,332 --> 00:15:40,198
+或者出现负收益
+you're actually going to be in the red or in the negative
+
+327
+00:15:40,600 --> 00:15:42,940
+在我看来，这是最简单的方法
+this is the easiest way in my opinion
+
+328
+00:15:42,940 --> 00:15:44,988
+来对冲这个风险。当然，还有
+to counteract that now there are a
+
+329
+00:15:44,988 --> 00:15:48,499
+外面有很多复杂的期权策略
+lot of complex option strategies and things like that out there there's
+
+330
+00:15:48,900 --> 00:15:50,424
+种类非常多
+there's a wide array of them
+
+331
+00:15:50,424 --> 00:15:52,710
+但如果你只想专注一种
+but if the only one you wanted to stick
+
+332
+00:15:52,710 --> 00:15:55,250
+或者想摆脱仅靠
+to or you're now looking to get away from just
+
+333
+00:15:55,250 --> 00:15:56,266
+买入看涨期权
+buying calls and just
+
+334
+00:15:56,266 --> 00:15:57,790
+或仅买入看跌期权
+buying puts and hope price goes
+
+335
+00:15:57,790 --> 00:15:59,314
+然后祈祷价格朝你期望的方向走
+in your direction and you're tired
+
+336
+00:15:59,314 --> 00:16:01,600
+而且你已经受够Theta值（时间衰减）的侵蚀
+of getting eaten up by time decay and theta.
+
+337
+00:16:02,800 --> 00:16:04,061
+那么这就是
+This is my this
+
+338
+00:16:04,061 --> 00:16:05,953
+我认为最推荐的
+is this in my opinion would
+
+339
+00:16:05,953 --> 00:16:11,314
+可能会在年终改善你的盈亏
+be the recommendation or potentially what should help your P&L at the end of the year.
+
+340
+00:16:11,700 --> 00:16:15,100
+交易股票时，制定交易计划更容易
+When you're when you're trading stock and you know, it's easier to have a trading plan again.
+
+341
+00:16:15,200 --> 00:16:15,800
+在此处入场
+Enter here.
+
+342
+00:16:16,100 --> 00:16:17,300
+这是你的止损点
+This is your stop loss.
+
+343
+00:16:17,700 --> 00:16:18,700
+这是你的止盈点
+This is your target.
+
+344
+00:16:18,800 --> 00:16:22,800
+如果出现这样的跳空上涨
+Probably once you get a gap up like this, you then change your plan.
+
+345
+00:16:22,900 --> 00:16:26,700
+你可能会调整计划
+You probably draw a line here and say this is where you're going to stop out. Right.
+
+346
+00:16:26,900 --> 00:16:33,100
+比如在这里画条线
+So if I just. Make this change this Make it brighter again.
+
+347
+00:16:35,000 --> 00:16:37,200
+可以看到，特斯拉跳空上涨
+And we can see, so Tesla gaps up.
+
+348
+00:16:37,400 --> 00:16:39,500
+然后告诉自己，这是新的止损点
+And now we tell ourselves, this is our new stop loss.
+
+349
+00:16:39,500 --> 00:16:41,800
+不需要再用原来的止损点
+We don't need this to be our stop loss. Let's raise it.
+
+350
+00:16:42,100 --> 00:16:43,668
+但你不想因为价格触及某个价位
+But you don't want to take a stop
+
+351
+00:16:43,668 --> 00:16:45,040
+就被止损出局
+loss just because price hits a level,
+
+352
+00:16:45,040 --> 00:16:47,000
+因为这个价位很可能变成支撑位
+because this is most likely to end up being support.
+
+353
+00:16:47,000 --> 00:16:48,300
+这是上周的高点
+This was the previous week's high.
+
+354
+00:16:48,400 --> 00:16:50,800
+这是跳空缺口的支撑位等
+This was the support from the gap level and things like that.
+
+355
+00:16:51,100 --> 00:16:52,128
+所以你要告诉自己
+So you want to tell yourself,
+
+356
+00:16:52,128 --> 00:16:53,156
+如果收盘跌破这个价位
+if it closes below this level,
+
+357
+00:16:53,156 --> 00:16:54,698
+就在这里止损
+this is where you're going to take your stop.
+
+358
+00:16:54,800 --> 00:16:57,900
+更不用说700这个关键心理价位了
+Not to mention the hard psychological level of 700.
+
+359
+00:16:58,100 --> 00:16:59,471
+所以整个这一区域
+So this whole area here now,
+
+360
+00:16:59,471 --> 00:17:00,842
+如果完全跌破这个位置
+if it completely breaks down underneath
+
+361
+00:17:00,842 --> 00:17:02,899
+就在这里止损
+here, that's where you're going to take the stop.
+
+362
+00:17:03,800 --> 00:17:05,633
+这是交易股票的方式
+That's how we would trade the stock, but
+
+363
+00:17:05,633 --> 00:17:07,008
+但期权交易不能这样操作
+we can't trade the option the
+
+364
+00:17:07,008 --> 00:17:09,299
+除非用日历价差策略
+same way unless we're doing something like a calendar spread.
+
+365
+00:17:09,600 --> 00:17:13,900
+现在深入分析期权本身，看看为什么能这样运作
+So now let's get an in-depth look at the options itself and why it actually works out that way.
+
+366
+00:17:14,600 --> 00:17:20,100
+这是8月20日到期的750行权价
+What we're looking at is the 750 strike price for August 20th.
+
+367
+00:17:20,100 --> 00:17:22,200
+这是ThinkorSwim（交易平台）上的图表
+So this is the chart on Thinkorswim.
+
+368
+00:17:22,700 --> 00:17:26,200
+和之前看的行权价完全一致
+This is the same strike price as this, exactly what we were looking at.
+
+369
+00:17:26,500 --> 00:17:30,500
+我们来看，这是7月30日开仓的日期。
+If we take a look, this is the 30th of July when we would have opened the trade.
+
+370
+00:17:30,600 --> 00:17:33,700
+开仓价格是8.85美元
+We would have opened it for about $8.85.
+
+371
+00:17:34,000 --> 00:17:36,600
+现在价格变成5.75美元
+And now we can see it's going for $5.75.
+
+372
+00:17:36,700 --> 00:17:39,200
+亏损3.20美元
+So a loss of $3.20.
+
+373
+00:17:39,800 --> 00:17:46,300
+开日历价差策略时，第一张合约是做空
+Whenever you open a calendar, the first contract you open is actually a short trade.
+
+374
+00:17:46,400 --> 00:17:48,700
+换句话说，我们做空了该行权价
+So in other words, we would have actually shorted the strike.
+
+375
+00:17:49,000 --> 00:17:55,000
+这张合约权利金亏3美元，对盈亏是正收益
+So this contract, by losing $3 in premium, it's actually a positive for our P&L.
+
+376
+00:17:55,000 --> 00:17:57,100
+这就是我们的盈利来源
+This is actually how much we make.
+
+377
+00:17:57,700 --> 00:18:00,000
+现在看8月20日到期的合约
+And now if we jumped to the 20.
+
+378
+00:18:00,200 --> 00:18:02,452
+8月7日这周
+7th of August, this is the week right
+
+379
+00:18:02,452 --> 00:18:04,704
+之后
+after, which would be if we come to
+
+380
+00:18:04,704 --> 00:18:06,393
+看这个价差
+the spread right here, we can
+
+381
+00:18:06,393 --> 00:18:08,082
+27日到期的是我们做多的
+see the 27th is what we're
+
+382
+00:18:08,082 --> 00:18:10,897
+10日到期的是我们做空的
+long and the 10th is the contract that we're short.
+
+383
+00:18:12,100 --> 00:18:13,000
+这是27日到期的合约
+Here's the 27th.
+
+384
+00:18:13,000 --> 00:18:17,000
+开仓价格是12.77美元
+We would be entering this for $12.77.
+
+385
+00:18:17,300 --> 00:18:23,200
+现在价格是10.08美元，权利金亏损1.97美元
+We can see it's now going for $10.08, which means this contract has lost $1.97 in premium.
+
+386
+00:18:23,400 --> 00:18:27,762
+算一下
+So if we do the math here, we would have collected $3.10
+
+387
+00:18:27,762 --> 00:18:30,537
+我们从第一张750看涨期权
+in premium from the first 750 call that
+
+388
+00:18:30,537 --> 00:18:33,709
+做空后收取了3.10美元权利金，现在亏损1.97美元
+we shorted and we're collecting and we're losing $197
+
+389
+00:18:35,400 --> 00:18:40,800
+这份合约最终净盈1.13美元。
+on this contract, but it ends up being a net positive of $1.13.
+
+390
+00:18:40,800 --> 00:18:43,800
+所以这个日历价差策略实际盈利超100美元。
+So that's how we're actually up over $100 on this spread.
+
+391
+00:18:43,900 --> 00:18:45,000
+而且这只是其中一个策略的收益。
+And this is just with one of them.
+
+392
+00:18:45,300 --> 00:18:49,100
+顺便提一下，做这类交易时，
+Whenever you enter this type of trade, by the way, you're not manually putting all this in.
+
+393
+00:18:49,200 --> 00:18:51,241
+不用手动输入所有信息。
+You're actually just going to your options chain,
+
+394
+00:18:51,241 --> 00:18:53,027
+你只需打开期权链，
+depending on your platform, you're just right
+
+395
+00:18:53,027 --> 00:18:56,599
+根据交易平台，
+clicking on it and you're choosing the strategy and it will load up the
+
+396
+00:18:56,900 --> 00:18:59,085
+点击选择策略，系统会自动加载到期日和相关信息，
+expirations and everything for you you just tweak
+
+397
+00:18:59,085 --> 00:19:01,270
+你只需微调想要的行权价，
+and adjust the strike prices that you want
+
+398
+00:19:01,270 --> 00:19:03,455
+还有其他细节。
+and things like that but this is it's
+
+399
+00:19:03,455 --> 00:19:05,640
+其实很简单，
+not complicated to answer this it's the same
+
+400
+00:19:05,640 --> 00:19:08,098
+和在图表上右键
+as like if you right click on your chart
+
+401
+00:19:08,500 --> 00:19:10,791
+选择买入或卖出一样，
+and you go to buy or sell or
+
+402
+00:19:10,791 --> 00:19:13,082
+你可以设置
+you know you can you can put in
+
+403
+00:19:13,082 --> 00:19:15,373
+不同的快捷键和策略，还能保存
+different shortcuts and strategies and you can save
+
+404
+00:19:15,373 --> 00:19:19,097
+模板之类的。看起来复杂，其实很简单。
+templates and things like that so it's not that complicated it sounds complicated
+
+405
+00:19:19,700 --> 00:19:22,602
+如果是第一次看到这些，
+if it's your first time seeing anything like this when you're looking
+
+406
+00:19:22,602 --> 00:19:24,536
+可能会想，怎么做空看涨期权
+at well how do you short a call
+
+407
+00:19:24,536 --> 00:19:26,470
+之类的。但系统会让一切变简单，
+option and things like that the system makes
+
+408
+00:19:26,470 --> 00:19:29,999
+操作起来非常容易，甚至在Robinhood上也能做
+it very easy you can do this even on robin hood i robin hood actually
+
+409
+00:19:30,000 --> 00:19:31,400
+它的界面确实很方便。
+She makes it very easy to do.
+
+410
+00:19:31,600 --> 00:19:33,200
+不得不说，它的设计确实很可爱。
+It's kind of cute. I'm not going to lie.
+
+411
+00:19:33,400 --> 00:19:35,800
+我自己也有个Robinhood账户玩玩。
+I have a Robinhood account on the side that I play around with.
+
+412
+00:19:35,900 --> 00:19:37,500
+在这种平台上也能做这些策略。
+You can do these types of strategies on Robinhood.
+
+413
+00:19:37,600 --> 00:19:39,400
+只需确保是保证金账户即可。
+You just need to make sure it's a margin account.
+
+414
+00:19:39,600 --> 00:19:41,600
+这就是日历价差策略的运作原理。
+But this is one breakdown of how that works.
+
+415
+00:19:42,000 --> 00:19:46,700
+好，各位，正准备把视频传到YouTube时，我想干脆
+All right, guys, just as I was about to upload the video to YouTube, I figured I might as well.
+
+416
+00:19:46,700 --> 00:19:50,700
+花几秒钟给你们演示如何实际开仓日历价差策略。
+It's only going to take a few seconds to show you guys how to actually open up a calendar.
+
+417
+00:19:50,900 --> 00:19:52,394
+我之前提到过，然后就想，
+I mentioned it and then I was like,
+
+418
+00:19:52,394 --> 00:19:53,888
+或许你们会看这个视频，
+maybe you guys might watch this video and
+
+419
+00:19:53,888 --> 00:19:55,008
+然后你会想，天哪
+then you're like, oh my God,
+
+420
+00:19:55,008 --> 00:19:56,128
+我之前提过如何操作
+I know I mentioned how to
+
+421
+00:19:56,128 --> 00:19:57,996
+但不如直接演示给你们看
+do it, but I might as well just show you.
+
+422
+00:19:58,000 --> 00:19:58,800
+其实不用多久
+It doesn't take that long.
+
+423
+00:19:58,800 --> 00:20:00,400
+这就是期权链
+So this is an options chain.
+
+424
+00:20:00,400 --> 00:20:01,600
+没错，这是ThinkorSwim（交易平台）
+Again, this is thinkorswim.
+
+425
+00:20:01,700 --> 00:20:04,700
+大多数平台界面都大同小异
+Every platform pretty much looks relatively the same.
+
+426
+00:20:05,100 --> 00:20:10,800
+如果我想在特斯拉上建日历价差策略，我会点这里，到期日是8月20日
+If I want to open up the calendar on Tesla, I'm going to click this is my expiration, August 20th.
+
+427
+00:20:11,200 --> 00:20:13,900
+向下滚动到行权价，我们之前说的是750
+Scroll down to the strike price. We were talking about the 750.
+
+428
+00:20:14,200 --> 00:20:16,185
+如果我右键点击这个
+If I were to right click on this
+
+429
+00:20:16,185 --> 00:20:17,922
+然后选择买入，会弹出一些
+and go to buy, these are some
+
+430
+00:20:17,922 --> 00:20:20,899
+策略选项，我会选日历价差策略
+of the strategies that pop up and I will be selecting calendar.
+
+431
+00:20:20,900 --> 00:20:25,700
+可以看到，这里弹出的是750行权价，都是看涨期权
+And as we can see, what pops up here is the 750 strike, the 750 strike. They're both call options.
+
+432
+00:20:26,100 --> 00:20:31,200
+这是我们要买入的行权价，因为这是27日的合约
+And this is the strike in which we're buying because this is the 27th.
+
+433
+00:20:31,300 --> 00:20:34,900
+一定要确保买入的是远期到期的合约
+You always want to make sure you're buying the further out expiration.
+
+434
+00:20:35,200 --> 00:20:38,800
+而这是20日的合约，是我们要卖出的
+And this is the 20th, which is the contract that we're shorting.
+
+435
+00:20:39,000 --> 00:20:41,500
+成本是5.08美元
+And this is the cost of it, $5.08.
+
+436
+00:20:41,500 --> 00:20:43,400
+然后点击确认并发送
+And then you would just press confirm and send.
+
+437
+00:20:43,800 --> 00:20:45,800
+如果想换到期日
+And if you wanted to change your expiration,
+
+438
+00:20:45,800 --> 00:20:47,550
+只需把这个移出来
+you would just move this out and
+
+439
+00:20:47,550 --> 00:20:49,800
+比如改成买入17日的
+say like maybe we want to buy the 17th.
+
+440
+00:20:50,200 --> 00:20:53,700
+然后卖出9月10日的
+And then you want to be shorting the 10th of September.
+
+441
+00:20:53,900 --> 00:20:59,600
+可以看到，成本是4.78美元，和OptionStrat（期权策略分析工具）上看到的差不多
+And as you can see, this is $4.78, which is exactly pretty much what we were looking at on option strats.
+
+442
+00:20:59,600 --> 00:21:00,800
+就这么简单，伙计们
+So it's a Simple as that, guys.
+
+443
+00:21:01,100 --> 00:21:01,700
+按删除键
+Press delete.
+
+444
+00:21:02,200 --> 00:21:03,400
+换个行权价就行
+Just choose a different strike price.
+
+445
+00:21:03,400 --> 00:21:05,363
+如果你认为特斯拉会
+If you say you think Tesla is
+
+446
+00:21:05,363 --> 00:21:07,046
+因为某种原因涨到800，你
+going to 800 for whatever reason, you
+
+447
+00:21:07,046 --> 00:21:08,729
+想买这个，直接来
+want to buy this, just come
+
+448
+00:21:08,729 --> 00:21:13,217
+点下面的日历价差策略，一下就加载好了
+down here, come down to calendar, boom, and it loads it up right there for you.
+
+449
+00:21:13,500 --> 00:21:14,800
+你可以调整到期日。
+You can change the expirations.
+
+450
+00:21:14,800 --> 00:21:16,100
+可以调整行权价。
+You can change the strike prices.
+
+451
+00:21:16,100 --> 00:21:19,600
+甚至临时改主意，想换到790。
+You can just say you change your mind. You want to go to 790.
+
+452
+00:21:19,700 --> 00:21:21,185
+你会发现它会立即更新，
+You see it changes it right
+
+453
+00:21:21,185 --> 00:21:22,670
+因为策略名称
+here because it has the name
+
+454
+00:21:22,670 --> 00:21:24,898
+已预装为模板。
+of the strategy already preloaded in as a template.
+
+455
+00:21:25,300 --> 00:21:25,800
+就这么简单。
+That's all.
+
+456
+00:21:26,100 --> 00:21:27,600
+现在回到视频其他部分。
+Now let's get back to the other part of the video.
+
+457
+00:21:27,900 --> 00:21:35,100
+如果跳到更远的合约，这就是9月21日的合约。
+If we jump further out now. This would be the September 21st contract.
+
+458
+00:21:35,100 --> 00:21:38,200
+再往后跳，这就是…
+And if we jump to even further out, this is the...
+
+459
+00:21:40,100 --> 00:21:41,700
+抱歉，这是9月17日的合约。
+Sorry, this is the September 17th.
+
+460
+00:21:41,800 --> 00:21:44,800
+再回到这个，这就是9月10日的合约。
+And if we jump back to this one, this would be the September 10th.
+
+461
+00:21:44,800 --> 00:21:48,100
+这就是另一个日历价差策略的例子。
+So this would be the example of the other calendar campaign.
+
+462
+00:21:48,100 --> 00:21:51,800
+比如10日和17日的合约，解释一下它为何有效。
+So the 10th and the 17th, a breakdown of why this one works.
+
+463
+00:21:52,000 --> 00:21:54,300
+看这里，图表上有个小点。
+If we take a look here, there was a little speck on the chart.
+
+464
+00:21:54,300 --> 00:21:59,200
+假设你拿到当天最后一笔订单，成交价是19美元。
+So assuming you got the last order of the day, you would have been getting this for $19.
+
+465
+00:21:59,500 --> 00:22:03,135
+由于你做空后，价格比做空时更高，
+And because you shorted it and it's going higher than where you
+
+466
+00:22:03,135 --> 00:22:05,558
+这份合约的价值实际上增加了
+shorted it, this contract has actually increased in
+
+467
+00:22:05,558 --> 00:22:09,193
+76美分，也就是说这份合约你目前亏损76美分。
+76 cents in value, which means you're currently down 76 cents on this contract.
+
+468
+00:22:10,100 --> 00:22:12,620
+但看你做多的这份，
+But if we look at the one you're long on,
+
+469
+00:22:12,620 --> 00:22:16,148
+你可能以23.25美元买入。
+you would have been purchasing this one for about 23 and a quarter, we'll say.
+
+470
+00:22:16,700 --> 00:22:18,800
+现在这份合约报价24.45美元。
+And this one's going for 24.45.
+
+471
+00:22:18,800 --> 00:22:23,200
+所以这份合约升值约1.16美元。
+So this contract has appreciated in value about $1.16.
+
+472
+00:22:23,500 --> 00:22:27,800
+而你做空的那份合约权利金损失了约76美分。
+Meanwhile, the other one you shorted has lost about 76 cents in.
+
+473
+00:22:28,200 --> 00:22:29,900
+如你所见，这个价差的
+Premium and as you can see your profit
+
+474
+00:22:30,100 --> 00:22:33,500
+总盈亏是40美分，如果你仍持有的话。
+is 40 cents overall on this spread if you're still holding.
+
+475
+00:22:33,700 --> 00:22:35,200
+开门见山地说，如果这个
+So right off the back, if this doesn't
+
+476
+00:22:35,200 --> 00:22:38,200
+没让你作为期权交易者笑逐颜开，那真不知道什么能让你笑了。
+already put a grin on your face as an options trader, I don't know what will.
+
+477
+00:22:38,300 --> 00:22:42,041
+我第一次交易日历价差策略时，
+The moment I first started trading my first calendars, it
+
+478
+00:22:42,041 --> 00:22:45,034
+稳定性大幅提升了。
+was just consistency came, increased a lot more
+
+479
+00:22:45,034 --> 00:22:49,898
+因为我发现，如果你和我一样,
+because I realized if you're anything like me, you realize that your analysis
+
+480
+00:22:50,200 --> 00:22:52,000
+在股票分析上会很有一套,
+on stocks, especially if you've been
+
+481
+00:22:52,000 --> 00:22:53,800
+尤其是交易股票一段时间后，
+trading shares for a while, we
+
+482
+00:22:53,800 --> 00:22:57,100
+我们通常能准确判断价格走向。
+tend to have really good analysis on where something is going.
+
+483
+00:22:57,300 --> 00:23:00,175
+到目前为止，无论是技术分析师还是量化交易者,
+At this point, as a technical analysis, as a quant
+
+484
+00:23:00,175 --> 00:23:02,475
+只要你有优势,
+trader, any sort of edge in which you
+
+485
+00:23:02,475 --> 00:23:06,500
+交易股票其实不难。
+have, it's really not that hard to trade the shares most of the time.
+
+486
+00:23:06,600 --> 00:23:10,200
+刚接触期权时，学习曲线确实很陡。
+It's just there's a really hard learning curve when you first jump into options.
+
+487
+00:23:10,200 --> 00:23:13,200
+这主要是因为隐含波动率,
+And again, it's mostly because of implied volatility.
+
+488
+00:23:14,100 --> 00:23:16,005
+还有Theta值（时间衰减）。如果各位
+And theta and if you guys
+
+489
+00:23:16,005 --> 00:23:17,910
+想看实际操作,
+want to see this is actually
+
+490
+00:23:17,910 --> 00:23:19,815
+这就是我在交易时的情况,
+me uh right here as i'm
+
+491
+00:23:19,815 --> 00:23:24,897
+我正在交易特斯拉，今天逐步买入股票，预期会跳空上涨,
+trading tesla i'm accumulating shares now slowly on this day here expecting the gap up here
+
+492
+00:23:25,200 --> 00:23:27,236
+并在回调后买入一些股票,
+but some shares here because we came back
+
+493
+00:23:27,236 --> 00:23:29,272
+因为价格回到这个支点位置，我本想
+to this uh pivot right here i wanted
+
+494
+00:23:29,272 --> 00:23:31,053
+在700美元再买更多，但今天早些时候我退缩了,
+to buy more shares at 700 but i
+
+495
+00:23:31,053 --> 00:23:32,580
+所以你没看到这笔交易,
+chickened out earlier today so that's
+
+496
+00:23:32,580 --> 00:23:33,598
+但我预期特斯拉会继续上涨,
+why you didn't see
+
+497
+00:23:33,598 --> 00:23:35,125
+所以我在逐步买入股票,
+this but i'm i'm expecting tesla
+
+498
+00:23:35,125 --> 00:23:36,652
+同时也在交易,
+to go higher so i am
+
+499
+00:23:36,652 --> 00:23:38,942
+目前我正在运行一个日历价差策略,
+accumulating shares and i am trading i have a
+
+500
+00:23:39,800 --> 00:23:42,088
+行权价是730美元对730美元,
+currently have a calendar going on for the
+
+501
+00:23:42,088 --> 00:23:43,804
+因为这是我的目标价位。
+730 by 730 because this is my target
+
+502
+00:23:43,804 --> 00:23:46,092
+但我想让你们理解的是,
+but just so you can understand this is
+
+503
+00:23:46,092 --> 00:23:51,526
+在期权运行的同时买入股票是多么简单。
+how it's easy to just buy the shares accumulate them while i have the options running in the meantime
+
+504
+00:23:52,400 --> 00:23:55,300
+而日历价差策略让我能持续留在这个交易中。
+and running a campaign has allowed me to stay in this trade
+
+505
+00:23:57,200 --> 00:24:01,400
+现在我们来看其他例子，不用花太多时间。希望各位已经明白了。
+Now let's look at very, now we don't have to spend as much time. Because hopefully you guys understand this.
+
+506
+00:24:01,400 --> 00:24:05,000
+我只是想给你们展示更多例子，这样你们就知道不止这一个案例。
+I just wanted to show you guys some other examples. So you know it's not just one example here.
+
+507
+00:24:05,000 --> 00:24:08,000
+我们来看看AMD的情况,
+If we look at, let's look at AMD.
+
+508
+00:24:12,600 --> 00:24:18,700
+我其实已经平仓了，因为
+And it's actually close out my trades because
+
+509
+00:24:19,500 --> 00:24:21,442
+我在这里小仓位买入了一些，
+I bought a little bit here but some
+
+510
+00:24:21,442 --> 00:24:23,384
+趁回调时加仓，
+of the dip here and then look to
+
+511
+00:24:23,384 --> 00:24:24,841
+然后获利了结之类的。
+take some profits and stuff like
+
+512
+00:24:24,841 --> 00:24:26,298
+但这并不是
+that but this is not necessarily
+
+513
+00:24:26,298 --> 00:24:29,697
+关于我自己的交易，
+just about my trading it's just to introduce you guys and show you guys
+
+514
+00:24:31,400 --> 00:24:34,011
+只是想给各位介绍一些能提升交易的原则。
+principle that would probably help improve your trading so in
+
+515
+00:24:34,011 --> 00:24:36,622
+在这个例子中，AMD出现回调，
+this particular case AMD dip down the whole world was
+
+516
+00:24:36,622 --> 00:24:38,972
+所有人都在105美元处抄底AMD，
+looking for the dip buy on AMD at 105 so
+
+517
+00:24:38,972 --> 00:24:40,538
+假设你刚好在场，
+assuming you happen to have been
+
+518
+00:24:40,538 --> 00:24:42,104
+并且抓到了这个回调，
+here and you were able to
+
+519
+00:24:42,104 --> 00:24:45,237
+你的止损设在这个位置，
+catch this dip right here and your stop-loss is at this level
+
+520
+00:24:45,700 --> 00:24:48,178
+目标价位设在112美元，或者110美元，
+and you're targeting call it a 112 or even 110
+
+521
+00:24:48,178 --> 00:24:51,275
+你如何坚持持有这笔交易？
+or something like that how do you stay in this
+
+522
+00:24:51,275 --> 00:24:57,470
+因为AMD已经横盘三天，没到112美元，我们来看看期权。
+trade because now AMD has spent three days it has not gone to 112 let's take a look at some options
+
+523
+00:25:01,428 --> 00:25:03,983
+如果我们买入下周到期的110美元看涨期权，
+If we were to buy the 110 call that expires next week
+
+524
+00:25:03,983 --> 00:25:05,376
+然后看它的历史图表，
+and we take a look at
+
+525
+00:25:05,376 --> 00:25:06,769
+这基本就是你买入时的回调点。
+its historical chart, this would have
+
+526
+00:25:06,769 --> 00:25:09,092
+本质上就是你会买入的回调位置。
+been essentially the dip in which you would have bought.
+
+527
+00:25:09,328 --> 00:25:11,428
+你可能以2美元买入，
+You would have been buying this for, we'll say, $2.
+
+528
+00:25:11,528 --> 00:25:13,228
+现在价格是1.54美元。
+It's going for $1.54 right now.
+
+529
+00:25:13,228 --> 00:25:16,528
+一张合约就亏了约50美元。
+So you'd be down about $50 on one contract.
+
+530
+00:25:16,828 --> 00:25:19,128
+如果有4张，就亏200美元。
+So if you have four of those, you're down $200.
+
+531
+00:25:19,128 --> 00:25:21,328
+再回头看AMD，
+Meanwhile, if we look back again.
+
+532
+00:25:21,628 --> 00:25:27,028
+你抄底后AMD涨了，但盈亏却是亏损。
+At AMD, you bought this dip, AMD is higher, but your P&L is down.
+
+533
+00:25:27,428 --> 00:25:28,228
+非常沮丧。
+Very frustrating.
+
+534
+00:25:28,228 --> 00:25:30,728
+那么心理上你更可能怎么做？
+So what are you more likely to do psychologically? End
+
+535
+00:25:30,728 --> 00:25:32,728
+最终因交易沮丧而平仓，
+up being frustrated with the trade and closing
+
+536
+00:25:32,728 --> 00:25:36,228
+亏损出局，然后第二天AMD却涨上去了。
+it for a loss, and then the next day AMD ends up going here.
+
+537
+00:25:36,828 --> 00:25:40,428
+为了避免这种情况，我们来看看一些正确的策略。
+So to counter that, let's take a look at some of the proper strategies.
+
+538
+00:25:40,428 --> 00:25:42,228
+比如看涨期权价差策略。
+We have a bull call spread.
+
+539
+00:25:42,328 --> 00:25:44,428
+各位，这时候应该知道这是垂直价差策略了。
+This, in this case, you guys would know what this is at this point.
+
+540
+00:25:44,428 --> 00:25:45,028
+这是垂直价差策略。
+It's a vertical.
+
+541
+00:25:45,228 --> 00:25:48,928
+你会买入一份看涨期权，
+It means you would buy one call expecting this to go in the money.
+
+542
+00:25:49,228 --> 00:25:51,728
+同时卖出另一份来抵减成本。
+You're shorting another one to just help pay for this one.
+
+543
+00:25:51,928 --> 00:25:54,664
+这里的垂直价差是110到
+In this particular case, this vertical is the 110 by
+
+544
+00:25:54,664 --> 00:25:58,616
+115，也就是说你的最大收益锁定在115。
+the 115. In other words, you're saying you're going to maximize your profit at 115.
+
+545
+00:25:59,828 --> 00:26:03,328
+现在看看这个策略的实际表现。
+And let's take a look at how this strategy traded.
+
+546
+00:26:03,528 --> 00:26:05,831
+假设你买入时正好抓到底部，
+You would have been buying this to say assuming you
+
+547
+00:26:05,831 --> 00:26:08,134
+但更可能的是你成交价在1美元左右，
+got the exact dip more likely you probably would have
+
+548
+00:26:08,134 --> 00:26:10,437
+但如图所示，
+got filled about a dollar or so but as we
+
+549
+00:26:10,437 --> 00:26:11,765
+现在价格是94美分，
+can see here this is going
+
+550
+00:26:11,765 --> 00:26:12,872
+所以你要么正好抓到底部，
+for 94 cents so either you
+
+551
+00:26:12,872 --> 00:26:14,200
+要么成交价在1美元，
+got the exact bottom or a
+
+552
+00:26:14,200 --> 00:26:15,971
+无论如何，你要么略有亏损，
+dollar either way you're either slightly break even
+
+553
+00:26:17,328 --> 00:26:22,628
+要么基本持平，即使AMD股价上涨了。
+You're slightly red or you're just about break even on this one right here, even though AMD is higher.
+
+554
+00:26:22,728 --> 00:26:24,428
+接下来看日历价差策略。
+And now let's look at the calendar.
+
+555
+00:26:25,028 --> 00:26:28,928
+假设你目标是111，
+We'll say you're targeting 111 because you're looking at the trade.
+
+556
+00:26:29,128 --> 00:26:31,732
+因为112可能有点远，
+and you're saying maybe 112 is a little
+
+557
+00:26:31,732 --> 00:26:33,964
+110到111之间
+too far away, between 110 and 111 is
+
+558
+00:26:33,964 --> 00:26:37,312
+可能更安全，适合获利了结。
+more of where it's probably safer to take profit.
+
+559
+00:26:38,428 --> 00:26:41,228
+但如果涨到110，你可能愿意持有。
+But if it gets to 110, you won't mind maybe holding or something like that.
+
+560
+00:26:41,228 --> 00:26:42,708
+但111看起来更合理。
+But 111 just seems like the
+
+561
+00:26:42,708 --> 00:26:44,484
+而且那里未平仓合约、流动性、成交量更多。
+more sensible strike price to trade.
+
+562
+00:26:44,484 --> 00:26:48,332
+所以你选了111作为行权价。
+Not to mention there's probably more open interest, liquidity, there's more volume there.
+
+563
+00:26:48,628 --> 00:26:51,128
+所以你最终会把111选为行权价。
+So you end up taking the 111 as your strike price.
+
+564
+00:26:51,428 --> 00:26:53,128
+看看它的历史图表。
+Let's take a look at the historical chart for that.
+
+565
+00:26:53,428 --> 00:26:59,428
+在回调时，你可以60多美分买入，假设是65美分。
+As we can see on the dip. Right here, you'd be getting this for around 60 something cents. We'll say 65.
+
+566
+00:26:59,428 --> 00:27:01,628
+这种情况下，你不需要精准抓底。
+You don't even need the exact bottom in this particular case.
+
+567
+00:27:01,828 --> 00:27:04,628
+现在价格是90美分。为什么？
+And you can see this is going for 90 cents.Why?
+
+568
+00:27:04,928 --> 00:27:10,028
+因为近月合约的价值衰减得最快。
+Because the front month, the front contract, the way this works is the front contract.
+
+569
+00:27:11,028 --> 00:27:14,428
+它比你做多的那份衰减得更快。
+Is losing value faster than the one you're long.
+
+570
+00:27:14,428 --> 00:27:18,728
+所以你做空这份合约，正是利用了Theta值（时间衰减）的特性。
+And that's why you short this one, because of that phenomenon called theta.
+
+571
+00:27:18,928 --> 00:27:23,128
+用日历价差策略，你就让Theta值（时间衰减）为你所用。
+In this case, by running the calendar spreads, you're putting theta in your side.
+
+572
+00:27:23,128 --> 00:27:26,528
+而这个希腊字母（期权敏感性指标）常让交易者亏损。
+And this Greek right here is the one that crushes everyone's dreams.
+
+573
+00:27:26,828 --> 00:27:29,951
+你还能保持正的Delta，
+You're managing to maintain a positive delta,
+
+574
+00:27:29,951 --> 00:27:33,520
+这意味着标的每涨1美元，
+which means for every dollar that the underlying
+
+575
+00:27:33,520 --> 00:27:38,427
+期权价值就上涨对应金额。
+is increasing, that's how much the option is appreciating in value.
+
+576
+00:27:38,728 --> 00:27:41,628
+我们再以特斯拉为例，来看希腊字母（期权敏感性指标）。
+We go back to, again, something like Tesla, and we take a look at the Greeks.
+
+577
+00:27:41,828 --> 00:27:45,128
+在这个例子中，Theta值（时间衰减）和Delta都是正的。
+We can see in this particular case, positive theta, positive delta.
+
+578
+00:27:45,228 --> 00:27:48,828
+这是远期合约，所以Delta不会那么高。
+Now, this is the further out one, so obviously the delta is not going to be as high.
+
+579
+00:27:49,128 --> 00:27:49,955
+如果我们看
+If we go to
+
+580
+00:27:49,955 --> 00:27:51,196
+这份合约，你会发现
+this one. We can see you
+
+581
+00:27:51,196 --> 00:27:55,127
+它的Delta稍高，所以这个日历价差策略能赚更多。
+have a little bit higher delta. So that's why this spread will actually make a little bit more money.
+
+582
+00:27:55,528 --> 00:27:58,828
+而且Theta值（时间衰减）也是正的。
+And then if we look here at our theta is positive.
+
+583
+00:27:58,928 --> 00:28:02,428
+你能把自己放在一个无需选太远期合约的位置。
+You're putting yourself in a situation where you don't have to go too far out.
+
+584
+00:28:02,828 --> 00:28:05,328
+如果你愿意，也可以选远一点。
+You can go a little further out if you want to.
+
+585
+00:28:05,428 --> 00:28:07,628
+你也不知道它会横盘多久。
+You don't know how long it's going to consolidate or something.
+
+586
+00:28:08,028 --> 00:28:11,828
+但各位可以看到，你保持了正的Delta和正的Theta值（时间衰减）。
+But you guys can see here you're maintaining a positive delta and a positive theta.
+
+587
+00:28:11,828 --> 00:28:13,741
+这是最理想的状态之一，
+And that's one of the best situations which
+
+588
+00:28:13,741 --> 00:28:15,414
+因为这样你
+you can be in because then you
+
+589
+00:28:15,414 --> 00:28:17,327
+几乎可以把它当股票来交易。
+can literally almost treat this like a stock.
+
+590
+00:28:17,728 --> 00:28:18,873
+而且我得
+And I'm not, let's
+
+591
+00:28:18,873 --> 00:28:20,591
+再回到这个图来，
+jump to this right here again,
+
+592
+00:28:20,591 --> 00:28:24,027
+因为我不确定之前有没有解释清楚。
+because I'm not sure if I entirely explained this enough or correctly.
+
+593
+00:28:24,328 --> 00:28:30,328
+当你做空这份合约时，它比另一份合约到期更早。
+When you short this contract, this is the one that is expiring sooner than the other one.
+
+594
+00:28:30,628 --> 00:28:38,228
+这份合约的价值衰减速度比你做多的那份更快。
+This contract is losing in value faster than the other one that you're long is losing in value.
+
+595
+00:28:38,228 --> 00:28:40,928
+所以即使特斯拉的两份750行权价的看涨期权
+So even though both calls on Tesla, both
+
+596
+00:28:40,928 --> 00:28:42,953
+都在贬值，这份
+750 strikes lost in value, this one
+
+597
+00:28:42,953 --> 00:28:45,990
+在贬值，那份也在贬值。
+lost in value and this one lost in value.
+
+598
+00:28:46,728 --> 00:28:49,780
+这个交易的制胜秘诀在于
+The winning secret in this trade here is the one
+
+599
+00:28:49,780 --> 00:28:52,527
+你做空的那份期权价值流失得更快
+that you shorted is losing value faster because this
+
+600
+00:28:52,527 --> 00:28:58,327
+因为它的时间衰减更快，这是期权的固有特性
+is the one that has a more aggressive time decay because that's just the nature of how options work.
+
+601
+00:28:58,328 --> 00:29:00,028
+这个视频里我就不详细解释了
+I'm not going to explain that in this video.
+
+602
+00:29:00,328 --> 00:29:01,470
+你们可以自己查
+Just you can look that
+
+603
+00:29:01,470 --> 00:29:02,612
+搜索
+up. You can search for
+
+604
+00:29:02,612 --> 00:29:05,126
+时间衰减、Theta值之类的
+time decay, search for theta on options and stuff like that.
+
+605
+00:29:05,228 --> 00:29:06,928
+网上有很多优质的YouTube视频
+There's a lot of great YouTube videos out there.
+
+606
+00:29:06,928 --> 00:29:08,776
+我也可能
+I might end up doing one on my
+
+607
+00:29:08,776 --> 00:29:10,624
+自己录一个
+own, but for now, I don't have anything
+
+608
+00:29:10,624 --> 00:29:13,627
+但目前还没做过，无法推荐给各位
+that I can recommend you guys or refer to that I've done firsthand.
+
+609
+00:29:13,828 --> 00:29:20,328
+但一定要理解：离到期日越近的合约，价值流失越快，这就是你要利用的点
+But just understand that the contracts that are closer to expiration lose value faster, and that's what you're capitalizing on.
+
+610
+00:29:20,428 --> 00:29:23,728
+所以你不需要价格迅速朝有利方向移动
+So you don't necessarily need price to move in your favor super quick.
+
+611
+00:29:24,828 --> 00:29:26,628
+总结这个视频
+So to wrap up this video,
+
+612
+00:29:26,628 --> 00:29:28,428
+我们再来看一个例子
+let's actually take a look at
+
+613
+00:29:28,428 --> 00:29:31,128
+看看苹果的情况
+one last example here. Here, let's look at Apple.
+
+614
+00:29:32,428 --> 00:29:34,304
+这周在苹果上我其实亏了
+I actually took a loss on Apple
+
+615
+00:29:34,304 --> 00:29:36,180
+因为我没用日历价差策略
+this week because I did not run
+
+616
+00:29:36,180 --> 00:29:39,128
+我只是直接买了看涨期权
+it as one of my favorite spreads. I just bought calls.
+
+617
+00:29:39,128 --> 00:29:44,428
+我原本预期苹果这个月能涨到150美元，所以买了看涨期权
+I was expecting Apple to hit 150 sometime this month, so I did buy calls.
+
+618
+00:29:44,428 --> 00:29:50,428
+但后来只能平仓，因为时间衰减把我搞惨了，对吧？
+And I had to close out the trade because, as you can imagine, this time decay destroyed me here, right?
+
+619
+00:29:50,828 --> 00:29:53,428
+图上这里有一个很漂亮的形态
+So here we have a beautiful pattern, whatever.
+
+620
+00:29:53,428 --> 00:29:54,628
+假设这里是一个旗形
+Let's just say we have this pennant.
+
+621
+00:29:54,628 --> 00:29:56,728
+我图表上的灰线是成交量加权平均价（VWAP）
+We have the gray line on my chart is VWAP.
+
+622
+00:29:56,728 --> 00:29:58,287
+那我进入交易的原因
+So let's just say my reasons for
+
+623
+00:29:58,287 --> 00:29:59,400
+就是这里的突破
+entering the trade right here
+
+624
+00:29:59,400 --> 00:30:01,627
+然后这里出现了爆发式上涨
+is this breakout. And we have this explosion right here.
+
+625
+00:30:01,728 --> 00:30:03,828
+接着是一段漂亮的延伸
+And it's just a beautiful extension.
+
+626
+00:30:04,028 --> 00:30:06,128
+但我不喜欢频繁交易
+But I'm not, I like to swing. I'm more of a swing trade.
+
+627
+00:30:06,128 --> 00:30:08,328
+不喜欢当天就获利了结之类的
+I don't like to take too much profits in today and stuff like that.
+
+628
+00:30:08,328 --> 00:30:11,328
+所以我目标是持有到150。
+So I'm holding for 150.
+
+629
+00:30:11,328 --> 00:30:13,728
+甚至可能在149左右就止盈。
+I'll even take profit at 149 or something like that.
+
+630
+00:30:13,728 --> 00:30:15,828
+这就是我入场时的思路。
+That's the thought process as I first entered the trade.
+
+631
+00:30:16,128 --> 00:30:17,528
+所以我持有这些行权价150的看涨期权。
+So I'm in these 150 calls.
+
+632
+00:30:17,828 --> 00:30:20,132
+后来苹果股价回落,
+Now, Apple comes back and
+
+633
+00:30:20,132 --> 00:30:23,358
+接连一两天、三四天,
+it pulls one, two, three, four, five,
+
+634
+00:30:23,358 --> 00:30:28,427
+甚至五六七天，股价都在横盘震荡。
+six, seven days of just nothing but price just chopping around.
+
+635
+00:30:28,428 --> 00:30:30,114
+这直接侵蚀我的持仓,
+And this is destroying it, even
+
+636
+00:30:30,114 --> 00:30:32,643
+尽管我持有的是月度合约，
+though I'm in a monthly contract, which means when
+
+637
+00:30:32,643 --> 00:30:35,453
+买入时离到期还有3周,
+I time on which I bought it expired in three
+
+638
+00:30:35,453 --> 00:30:38,825
+但因为股价没动静，权利金还是被严重侵蚀。
+weeks and it was still getting crushed because there was nothing happening.
+
+639
+00:30:39,128 --> 00:30:40,328
+所以我们在这儿入场。
+So we enter the trade here.
+
+640
+00:30:40,728 --> 00:30:44,128
+如果交易股票，合理的止损可能设在这下方。
+Sensible stop loss, if I was trading this stock, might be below here.
+
+641
+00:30:44,228 --> 00:30:48,028
+显然，在这样的延伸后可以考虑部分止盈。
+And as we can see, obviously take some profit or something like that on an extension like this.
+
+642
+00:30:48,228 --> 00:30:49,799
+但完全平仓并没有真正理由,
+But there's no real reason to
+
+643
+00:30:49,799 --> 00:30:53,727
+因为价格还没回到止损位。
+completely go flat the trade because it has not come back to the stop loss.
+
+644
+00:30:54,128 --> 00:30:55,428
+如果我们看看期权的情况,
+If we take a look at an option.
+
+645
+00:30:56,428 --> 00:30:58,228
+比如这份行权价150的看涨期权。
+The 150 call
+
+646
+00:30:59,928 --> 00:31:03,728
+假设我们现在拉出图表，来看看。
+If we were to pull this up right here, let's go.
+
+647
+00:31:03,828 --> 00:31:09,228
+这是什么时候？应该是3号上午。
+When was this? This would have been the morning of the 3rd.
+
+648
+00:31:10,128 --> 00:31:12,428
+回到这儿，我们看看历史图表。
+So if we come back to here, let's look at the historical chart.
+
+649
+00:31:13,928 --> 00:31:16,828
+这儿应该就是3号，对吧？
+And right here would be the 3rd, right?
+
+650
+00:31:16,928 --> 00:31:20,128
+假设是在突破前刚买入的。
+So assuming it would have been just before the breakout.
+
+651
+00:31:20,128 --> 00:31:24,928
+所以在这儿，我们说成交了这份合约，成交价49美分。
+So right here, we're saying we get filled on this contract. We'll say 49 cents.
+
+652
+00:31:25,228 --> 00:31:29,728
+它最低跌到43美分，但现在涨到73美分了。
+It does hit a low of 43 cents, but now it's going for 73 cents.
+
+653
+00:31:29,928 --> 00:31:32,728
+持有的亏损还能接受。
+So this pain is not too bad to hold.
+
+654
+00:31:32,728 --> 00:31:34,448
+我们说的是从
+We're talking about the difference of from
+
+655
+00:31:34,448 --> 00:31:35,677
+这儿到这儿，差不多5美分,
+here to here, almost five,
+
+656
+00:31:35,677 --> 00:31:36,906
+这份合约上只亏了5美分。
+just five cents on this
+
+657
+00:31:36,906 --> 00:31:38,626
+现在价格在这儿，对吧？
+contract. And now it's at here, right?
+
+658
+00:31:39,128 --> 00:31:46,828
+差异在于，如果我们只是擦掉它 这份
+The difference, the difference being if we were to just, let's erase.This
+
+659
+00:31:49,528 --> 00:31:51,428
+先去掉我们做空的那份合约
+Let's get rid of the one that we're shorting.
+
+660
+00:31:51,428 --> 00:31:54,828
+移除这份，再移除到期日
+So we'll remove this. Let's remove the expiration.
+
+661
+00:31:55,128 --> 00:31:56,728
+这是我做多的那份合约
+This is the contract in which I was long.
+
+662
+00:31:56,928 --> 00:31:59,928
+看看历史图表，往前推两周
+Let's look at the historical chart. Let's go two weeks out.
+
+663
+00:32:00,028 --> 00:32:05,428
+看看这份合约的买入时点，假设买入价是1美元
+And let's look at the third in which this contract was purchased. So purchase, we'll say at $1.
+
+664
+00:32:05,628 --> 00:32:08,528
+这份合约一度跌到0.40美元
+We can see this contract came all the way down to $0.40.
+
+665
+00:32:08,528 --> 00:32:10,128
+这份合约亏了0.60美元
+So it was down $0.60 on this contract.
+
+666
+00:32:10,128 --> 00:32:14,128
+我只能在这个区域止损，因为实在太难受了
+I had to take my stop loss in this area because this was just too painful.
+
+667
+00:32:14,428 --> 00:32:18,128
+现在苹果终于开始上涨了
+And as we can see, now Apple made its move finally today.
+
+668
+00:32:18,428 --> 00:32:20,659
+显然这很糟糕，因为现在
+And this sucks obviously because now we can
+
+669
+00:32:20,659 --> 00:32:22,890
+我现在还是盈利的
+see i would still be in a green
+
+670
+00:32:22,890 --> 00:32:25,121
+如果没止损的话
+trade had i not taken this stop loss
+
+671
+00:32:25,121 --> 00:32:28,927
+但我不得不止损，因为风险
+here but i had to take the stop because the risk was just getting
+
+672
+00:32:28,928 --> 00:32:31,928
+因为时间衰减，每天都在不断累积
+getting higher and higher with each day because of time decay.
+
+673
+00:32:33,128 --> 00:32:35,552
+如果我像平时那样
+And had I just entered in some sort of a
+
+674
+00:32:35,552 --> 00:32:37,491
+做日历价差策略的话
+calendar like I normally do, the reason, so
+
+675
+00:32:37,491 --> 00:32:41,127
+你可能会问，为什么这次没用日历价差策略？
+you might be asking yourself, why did I not enter a calendar in this one?
+
+676
+00:32:41,828 --> 00:32:46,628
+做日历价差策略的权衡是，你会牺牲部分利润
+It's a little bit of the trade-off is when you do the calendar, you're obviously sacrificing some profits.
+
+677
+00:32:46,828 --> 00:32:49,621
+比如你直接买入150美元行权价的看涨期权
+Because if you just buy the 150 call and Apple
+
+678
+00:32:49,621 --> 00:32:51,793
+苹果股价直接涨到150美元
+just goes straight to 150, obviously you're going
+
+679
+00:32:51,793 --> 00:32:54,586
+你可能一两天就把1美元变4美元
+to turn $1 into $4 in like a day or two.
+
+680
+00:32:55,928 --> 00:32:58,028
+100美元变400美元，这简直疯狂
+So $100 into $400 is something crazy.
+
+681
+00:32:58,128 --> 00:32:58,828
+特斯拉也是一样
+Same thing with Tesla.
+
+682
+00:32:58,928 --> 00:33:01,168
+特斯拉直接涨到750美元
+Tesla went straight to $750 and you're in
+
+683
+00:33:01,168 --> 00:33:03,408
+你持有730美元行权价的看涨期权
+a $730 call and it does it in
+
+684
+00:33:03,408 --> 00:33:05,968
+它可能两天内就涨上去
+like two days and you bought it at $700.
+
+685
+00:33:07,128 --> 00:33:13,128
+100美元可能变成1000美元
+Guess what? You're pretty much turning $100 into probably $1,000 or something like that.
+
+686
+00:33:13,128 --> 00:33:18,728
+这显然很有吸引力，所以大多数人都在追求这种机会
+So that's very attractive, obviously, which is why most people try to search for that.
+
+687
+00:33:18,728 --> 00:33:20,986
+但刚开始交易期权时,
+But when you're now starting out trading options, the time
+
+688
+00:33:20,986 --> 00:33:22,792
+时间衰减会让你很头疼,
+decay is really going to mess with you
+
+689
+00:33:22,792 --> 00:33:25,727
+心理上难以接受，交易也很难保持一致。
+psychologically and it's going to be hard to be consistent with trading options.
+
+690
+00:33:26,028 --> 00:33:28,428
+所以我建议你们用日历价差策略。
+So that's why I suggest going with this.
+
+691
+00:33:28,428 --> 00:33:31,398
+权衡点在于，
+The trade-off again being you're not going to make as
+
+692
+00:33:31,398 --> 00:33:34,368
+你不会赚那么多钱，
+much money because remember you are going to be losing
+
+693
+00:33:34,368 --> 00:33:38,526
+因为第一份合约会亏损，
+on one of the contracts even though you'll be gaining on the second contract.
+
+694
+00:33:38,528 --> 00:33:41,069
+第二份合约能盈利，
+So it's the fact that you're losing on one is
+
+695
+00:33:41,069 --> 00:33:44,627
+但第一份的亏损会侵蚀总盈利，不如直接买第二份合约赚得多。
+what's eating away from your profits than if you just bought the other one.
+
+696
+00:33:44,928 --> 00:33:48,228
+但不能只盯着盈利。
+But again, you can't think about the profits all the time.
+
+697
+00:33:48,228 --> 00:33:50,728
+更要注重交易的一致性。
+It should be more so about the consistency of it all.
+
+698
+00:33:50,828 --> 00:33:52,982
+And if you can consistently trade.
+
+699
+00:33:52,982 --> 00:33:55,136
+如果你交易权益时表现不错，
+Equity and you really are struggling
+
+700
+00:33:55,136 --> 00:33:58,726
+但在期权上挣扎，那日历价差策略可能适合你们。
+with options, this is probably the solution for you guys.
+
+701
+00:33:59,428 --> 00:34:00,828
+希望这个视频能帮到你们。
+I really hope this video helps.
+
+702
+00:34:00,928 --> 00:34:03,528
+我刚开始交易期权时，真希望能看到这样的内容。
+I wish I saw something like this when I first started trading options.
+
+703
+00:34:03,528 --> 00:34:07,428
+真希望当时有人能像我在这段视频里一样，
+I wish someone explained this to me as well as I hope I did on this video.
+
+704
+00:34:07,528 --> 00:34:08,828
+给我讲得这么清楚。
+I just did it all in one shot.
+
+705
+00:34:09,428 --> 00:34:13,328
+我一口气录完，
+Didn't really put any pauses or anything like that in this video.
+
+706
+00:34:13,628 --> 00:34:15,028
+视频里没加停顿。
+I'm treating it more so as a webinar.
+
+707
+00:34:15,028 --> 00:34:17,228
+我更把它当网络研讨会来做。
+I do have a private community.
+
+708
+00:34:17,628 --> 00:34:19,268
+我有个私人社区，
+I'm the creative quant trading app.com
+
+709
+00:34:19,268 --> 00:34:20,673
+就是Creative Quant的量化交易应用（QTA）网站，
+and I was going to do
+
+710
+00:34:20,673 --> 00:34:22,547
+我原本打算
+this video I was going to do a
+
+711
+00:34:22,547 --> 00:34:26,061
+做个网络研讨会，给社区里的伙计们详细讲解，
+webinar and really break this down with the guys in there to really help them
+
+712
+00:34:26,628 --> 00:34:30,074
+帮他们根据算法在不同点位的建议，
+Be more consistent with what the algorithm says at different places to
+
+713
+00:34:30,074 --> 00:34:33,520
+更好地执行买卖操作。
+buy and sell and things like that But if we were to
+
+714
+00:34:33,520 --> 00:34:37,827
+但如果在特定点位实施这个策略，我认为所有人都能更稳定。
+implement this strategy at certain levels, I think everyone would be a lot more consistent
+
+715
+00:34:38,328 --> 00:34:41,640
+所以我决定不只和他们分享，
+So instead of just sharing it with them, I figured I'd just
+
+716
+00:34:41,640 --> 00:34:45,228
+而是做个视频帮到YouTube上的整个交易社区。
+do a video that can help the entire trading community on YouTube so
+
+717
+00:34:46,428 --> 00:34:47,228
+希望对你有帮助。
+I hope this helped.
+
+718
+00:34:48,128 --> 00:34:51,163
+简介下方会有量化交易应用（QTA）或我的Discord链接
+Description down below will have any link to quant trading
+
+719
+00:34:51,163 --> 00:34:53,591
+感兴趣的可以加入。
+app or my discord if you're interested again
+
+720
+00:34:53,591 --> 00:34:56,626
+最近在公开区发布得不多，
+I haven't been really posting much in the public section
+
+721
+00:34:56,928 --> 00:34:59,353
+主要在服务付费会员，
+I've been mostly catering to the premium members really trying
+
+722
+00:34:59,353 --> 00:35:01,778
+帮他们保持稳定，
+to just help them be consistent and really help them
+
+723
+00:35:01,778 --> 00:35:04,203
+让他们尽快成为优秀的期权交易者。
+get their feet off the ground as options as successful
+
+724
+00:35:04,203 --> 00:35:06,628
+并向他们介绍很多策略，
+options traders and introducing them to a lot of these
+
+725
+00:35:07,028 --> 00:35:08,458
+其中日历价差策略
+strategies this is one of the
+
+726
+00:35:08,458 --> 00:35:10,604
+是初学者友好的，但还有更复杂的。
+beginner friendly ones but there's a lot more complicated
+
+727
+00:35:10,604 --> 00:35:12,750
+欢迎在下方留言，
+ones so leave a comment down below and I
+
+728
+00:35:12,750 --> 00:35:16,326
+很快会再更新视频，各位，感谢收看！
+hope to put on another video pretty soon for you guys but thanks for watching
+
+===== END AFTER_OPTIMIZE =====

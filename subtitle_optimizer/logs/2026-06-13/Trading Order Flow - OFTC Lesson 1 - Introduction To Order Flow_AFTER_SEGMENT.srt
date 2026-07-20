@@ -1,0 +1,2454 @@
+===== AFTER_SEGMENT (613 entries) =====
+1
+00:00:00,980 --> 00:00:06,300
+Okay, this is the Order Flow Trading Course Lesson 1, Introduction to Order Flow.
+
+2
+00:00:06,960 --> 00:00:10,900
+My name is Michael Valtos. I'm the founder of orderflows.com.
+
+3
+00:00:11,860 --> 00:00:13,420
+First, we'll start with a disclaimer.
+
+4
+00:00:13,600 --> 00:00:16,557
+This presentation is for educational and informational purposes
+
+5
+00:00:16,557 --> 00:00:19,514
+only and should not be considered a solicitation
+
+6
+00:00:19,514 --> 00:00:24,319
+to buy or sell futures or make any other type of investment decision.
+
+7
+00:00:24,640 --> 00:00:28,360
+Futures trading contains substantial risk and is not for every investor.
+
+8
+00:00:28,360 --> 00:00:32,840
+An investor could potentially lose all or more than their initial investment.
+
+9
+00:00:33,080 --> 00:00:37,580
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+10
+00:00:38,340 --> 00:00:44,080
+Only risk capital should be used for trading, and only those with sufficient risk capital should consider trading.
+
+11
+00:00:44,520 --> 00:00:47,440
+Past performance is not necessarily indicative of future results.
+
+12
+00:00:48,040 --> 00:00:55,360
+The CFTC rules state hypothetical or simulated performance results have certain limitations unlike an actual performance record.
+
+13
+00:00:55,360 --> 00:00:56,903
+Simulated results do not represent
+
+14
+00:00:56,903 --> 00:00:59,989
+actual trading, and also since the trades have not been
+
+15
+00:00:59,989 --> 00:01:03,075
+executed, the results may have under or overcompensated for the
+
+16
+00:01:03,075 --> 00:01:06,778
+impact, if any, of certain market factors, such as lack of liquidity.
+
+17
+00:01:07,380 --> 00:01:12,740
+Simulated trading programs in general are also subject to the fact that they are designed with the benefit of hindsight.
+
+18
+00:01:12,920 --> 00:01:15,243
+No representation is being made that any account
+
+19
+00:01:15,243 --> 00:01:17,276
+will or is likely to achieve profit
+
+20
+00:01:17,276 --> 00:01:19,018
+or losses similar to those shown.
+
+21
+00:01:19,020 --> 00:01:24,900
+Okay, so let's get started. Introduction to order flow trading.
+
+22
+00:01:25,680 --> 00:01:27,080
+Order flow trading is a phrase
+
+23
+00:01:27,080 --> 00:01:28,480
+you hear a lot nowadays, and
+
+24
+00:01:28,480 --> 00:01:30,580
+it's being touted by a lot of software vendors.
+
+25
+00:01:31,360 --> 00:01:35,540
+It's also being touted as, you know, sort of the holy grail to trading.
+
+26
+00:01:35,700 --> 00:01:39,500
+It's really not, it's not new. It's been around for decades.
+
+27
+00:01:39,880 --> 00:01:42,480
+I mean, you know, it's been around since the 1920s.
+
+28
+00:01:42,540 --> 00:01:43,600
+You know, one
+
+29
+00:01:43,600 --> 00:01:45,721
+of the famous books on trading,
+
+30
+00:01:45,721 --> 00:01:48,195
+reminiscence of a stock operator, you know,
+
+31
+00:01:48,195 --> 00:01:53,498
+the main character in the book, you know, he was basically an order flow trader.
+
+32
+00:01:53,620 --> 00:01:54,280
+He read the tape.
+
+33
+00:01:55,420 --> 00:01:55,990
+When markets,
+
+34
+00:01:55,990 --> 00:01:58,273
+you know, were traded in the pits, it
+
+35
+00:01:58,273 --> 00:02:02,839
+was easy for locals and market makers to see the order flow and profit from it.
+
+36
+00:02:02,880 --> 00:02:04,434
+They can see when the
+
+37
+00:02:04,434 --> 00:02:06,610
+orders were coming in, you know, from
+
+38
+00:02:06,610 --> 00:02:09,096
+the brokers, from Lehman Brothers, from J.P.
+
+39
+00:02:09,096 --> 00:02:17,489
+Morgan, from Goldman Sachs, or, you know, the big hedge funds, you know, which brokers they used. They used to be able to see that very easily.
+
+40
+00:02:17,340 --> 00:02:18,302
+I mean, that's why,
+
+41
+00:02:18,302 --> 00:02:19,746
+you know, these exchange memberships cost
+
+42
+00:02:19,746 --> 00:02:21,190
+hundreds of thousands of dollars back
+
+43
+00:02:21,190 --> 00:02:24,318
+then, you know, because it used to be very easy to see it.
+
+44
+00:02:25,020 --> 00:02:27,860
+And, you know, people, you know, that's how they made their living.
+
+45
+00:02:28,480 --> 00:02:29,105
+But, you
+
+46
+00:02:29,105 --> 00:02:30,356
+know, with the advent
+
+47
+00:02:30,356 --> 00:02:32,546
+of PCs, now the individual traders, you
+
+48
+00:02:32,546 --> 00:02:34,736
+know, can watch it on their screens
+
+49
+00:02:34,736 --> 00:02:39,117
+themselves and profit from it if they know how to read the order flow.
+
+50
+00:02:39,120 --> 00:02:39,901
+So, now,
+
+51
+00:02:39,901 --> 00:02:40,682
+you know,
+
+52
+00:02:40,682 --> 00:02:42,245
+you take this course,
+
+53
+00:02:42,245 --> 00:02:43,808
+you know, as a
+
+54
+00:02:43,808 --> 00:02:45,761
+trader, you know, no matter
+
+55
+00:02:45,761 --> 00:02:47,714
+if you're a trader or
+
+56
+00:02:47,714 --> 00:02:59,827
+anything you're doing in your life, you always want to, you know, raise your level of, you know, of education, whether it be, you know, your job, you know, your car.
+
+57
+00:02:59,910 --> 00:03:02,470
+You're always striving to take it to the next level.
+
+58
+00:03:03,070 --> 00:03:03,850
+You know, trading is no different.
+
+59
+00:03:03,970 --> 00:03:05,870
+You should always be looking for ways to improve your trading.
+
+60
+00:03:07,010 --> 00:03:11,090
+You know, I mean, the market is constantly changing and evolving, and the trader also needs to.
+
+61
+00:03:11,410 --> 00:03:17,310
+You know, you've got to keep up with the latest developments in the market and how to profit from it.
+
+62
+00:03:20,890 --> 00:03:21,982
+Now, even though,
+
+63
+00:03:21,982 --> 00:03:24,530
+you know, order flows has been around
+
+64
+00:03:24,530 --> 00:03:27,078
+for at least 100 years, it hasn't really
+
+65
+00:03:27,078 --> 00:03:32,902
+been followed by people outside of the trading pits for, you know, maybe the last 10 years.
+
+66
+00:03:33,630 --> 00:03:36,576
+Most of the last 50 years, a
+
+67
+00:03:36,576 --> 00:03:40,013
+lot of the technical developments have been
+
+68
+00:03:40,013 --> 00:03:42,959
+in, you know, lagging indicators, you
+
+69
+00:03:42,959 --> 00:03:47,378
+know, moving averages, RSI, MACD, those sort of indicators.
+
+70
+00:03:48,730 --> 00:03:49,980
+Overflow, you know, takes
+
+71
+00:03:49,980 --> 00:03:52,480
+the market information and basically turns this on
+
+72
+00:03:52,480 --> 00:03:58,730
+its head and lets you look at the market in a way to determine what the winning traders are doing.
+
+73
+00:03:58,730 --> 00:04:02,190
+The winning traders are the big traders, the institutional traders.
+
+74
+00:04:02,870 --> 00:04:04,251
+You know, the firms
+
+75
+00:04:04,251 --> 00:04:06,323
+that have been around for, you
+
+76
+00:04:06,323 --> 00:04:08,395
+know, hundreds of years, the Cargill,
+
+77
+00:04:08,395 --> 00:04:13,229
+the Goldman Sachs, you know, Rothschilds, all these people, they've been around for centuries.
+
+78
+00:04:13,670 --> 00:04:15,890
+You know, so obviously what they're doing is right.
+
+79
+00:04:15,890 --> 00:04:17,985
+You know, the people that come and
+
+80
+00:04:17,985 --> 00:04:19,781
+go into the market, the losing
+
+81
+00:04:19,781 --> 00:04:21,277
+traders, those are the people's,
+
+82
+00:04:21,277 --> 00:04:25,168
+you know, those are the traders, the money that you're trying to take.
+
+83
+00:04:26,590 --> 00:04:32,790
+You know, imagine it's like a poker game, you know, you're trying to take the other guy's money.
+
+84
+00:04:33,570 --> 00:04:34,854
+You know, with trading,
+
+85
+00:04:34,854 --> 00:04:36,780
+you know, you don't sit there
+
+86
+00:04:36,780 --> 00:04:38,706
+and stare at the other person
+
+87
+00:04:38,706 --> 00:04:44,807
+in the eye. It's on the screen, it's anonymous, and, you know, so the feeling is a bit different.
+
+88
+00:04:45,810 --> 00:04:51,030
+Now, you know, order flow, you need to read order flow.
+
+89
+00:04:51,130 --> 00:04:55,350
+You have to learn how the charts are set up. That's what this course will teach you.
+
+90
+00:04:55,570 --> 00:04:57,120
+It'll teach you how to
+
+91
+00:04:57,120 --> 00:04:58,670
+read, you know, all the
+
+92
+00:04:58,670 --> 00:05:00,220
+numbers, you know, how to
+
+93
+00:05:00,220 --> 00:05:01,770
+read what delta is, cumulative
+
+94
+00:05:01,770 --> 00:05:06,110
+delta, you know, when you have buying imbalances, point of control, all this stuff.
+
+95
+00:05:06,410 --> 00:05:08,170
+You know, it looks a bit
+
+96
+00:05:08,170 --> 00:05:09,930
+intimidating at first, but it's really
+
+97
+00:05:09,930 --> 00:05:13,450
+not. Once you understand what you're looking at, it's actually fairly easy.
+
+98
+00:05:14,810 --> 00:05:18,110
+Now, there are two key components to being a successful trader.
+
+99
+00:05:18,430 --> 00:05:21,850
+You have to be able to read and anticipate the
+
+100
+00:05:21,850 --> 00:05:25,270
+market as it's trading. What that means is you have
+
+101
+00:05:25,270 --> 00:05:38,950
+to be able to see how the market is developing and then, you know, base your decisions off that rather than just being a reactionary trader and saying, oh, the market did this, so now I have to do this.
+
+102
+00:05:39,310 --> 00:05:45,490
+Once you can read the market, you can play the scenarios out in your head. It's like in chess, right?
+
+103
+00:05:45,530 --> 00:05:47,250
+You should always be thinking three steps ahead.
+
+104
+00:05:47,690 --> 00:05:48,524
+You know, if
+
+105
+00:05:48,524 --> 00:05:50,471
+you're following indicators, you're just sitting back
+
+106
+00:05:50,471 --> 00:05:52,140
+and then waiting for the bell
+
+107
+00:05:52,140 --> 00:05:54,087
+to go off to buy or sell.
+
+108
+00:05:54,350 --> 00:05:55,170
+That's not trading.
+
+109
+00:05:55,790 --> 00:05:59,370
+That's just, you know, following a signal.
+
+110
+00:06:00,810 --> 00:06:07,290
+The other thing that you have to keep in mind is you have to keep your emotions in check, okay?
+
+111
+00:06:07,290 --> 00:06:10,930
+And you have to execute the trades as they appear before you.
+
+112
+00:06:11,470 --> 00:06:13,280
+What that means is,
+
+113
+00:06:13,280 --> 00:06:15,995
+you know, you have to take
+
+114
+00:06:15,995 --> 00:06:18,710
+a step back from the market
+
+115
+00:06:18,710 --> 00:06:23,688
+and realize what's happening and not let it get to you.
+
+116
+00:06:24,010 --> 00:06:29,410
+You know, it's easy to let your emotions get the best of you in trading, but you really shouldn't.
+
+117
+00:06:29,710 --> 00:06:33,490
+You should just, you know, be able to trade without emotion.
+
+118
+00:06:33,490 --> 00:06:38,530
+You know, it sounds cold, but, you know, you're doing this to make money, right?
+
+119
+00:06:38,590 --> 00:06:39,434
+If you're, say,
+
+120
+00:06:39,434 --> 00:06:40,841
+you're a butcher, right, and
+
+121
+00:06:40,841 --> 00:06:42,529
+you've got to slaughter animals, yeah,
+
+122
+00:06:42,529 --> 00:06:44,217
+it sounds cruel, but, I mean,
+
+123
+00:06:44,217 --> 00:06:46,187
+that's what you're doing for a living.
+
+124
+00:06:47,470 --> 00:06:50,250
+You know, and be able to execute the trades when they're happening.
+
+125
+00:06:51,070 --> 00:06:51,732
+You know, you
+
+126
+00:06:51,732 --> 00:06:53,277
+don't want to sit there and analyze
+
+127
+00:06:53,277 --> 00:06:54,822
+everything, and then by the time you
+
+128
+00:06:54,822 --> 00:06:56,808
+decide to pull the trigger, the trade is gone.
+
+129
+00:07:01,990 --> 00:07:04,670
+So one of the things you have to understand, okay, the market is dynamic.
+
+130
+00:07:04,830 --> 00:07:05,870
+It's constantly changing.
+
+131
+00:07:05,870 --> 00:07:09,450
+There's no pattern or behavior. It's exactly repeated.
+
+132
+00:07:10,450 --> 00:07:11,407
+But, you know,
+
+133
+00:07:11,407 --> 00:07:13,002
+there will be patterns and
+
+134
+00:07:13,002 --> 00:07:14,597
+behaviors that are repeated, not
+
+135
+00:07:14,597 --> 00:07:18,107
+exactly. You know, they may be off by a little bit.
+
+136
+00:07:18,210 --> 00:07:19,490
+You know, optically, they're the same.
+
+137
+00:07:20,450 --> 00:07:21,730
+But order flow will
+
+138
+00:07:21,730 --> 00:07:24,290
+give you the clues as to what's happening
+
+139
+00:07:24,290 --> 00:07:26,850
+in the market so you can see that
+
+140
+00:07:26,850 --> 00:07:32,930
+and you can see the patterns or behaviors as it's happening and say, yes, I understand why that's happening.
+
+141
+00:07:32,930 --> 00:07:37,750
+Now, a lot of traders fail because they think the market can't be predicted.
+
+142
+00:07:38,990 --> 00:07:42,550
+Now, when you say the market can't be predicted,
+
+143
+00:07:44,590 --> 00:07:46,250
+don't think of it as, okay,
+
+144
+00:07:46,250 --> 00:07:47,910
+you're going to predict it and
+
+145
+00:07:47,910 --> 00:07:49,570
+it's going to go, you know,
+
+146
+00:07:49,570 --> 00:07:53,996
+the market's trading at 1910 and you think it's going to go to 1917 and then sell off.
+
+147
+00:07:54,550 --> 00:07:58,810
+You know, right now we could be trading at 1910 and we go up to 1915.
+
+148
+00:07:59,290 --> 00:08:01,250
+You may be able to predict the general direction.
+
+149
+00:08:01,690 --> 00:08:04,310
+The exact turning point will be tricky.
+
+150
+00:08:05,370 --> 00:08:06,549
+You know, to be
+
+151
+00:08:06,549 --> 00:08:08,318
+able to say you can predict
+
+152
+00:08:08,318 --> 00:08:10,087
+it to the point, to the
+
+153
+00:08:10,087 --> 00:08:14,509
+level, the price level, where it's going to turn, you know, is really a stretch.
+
+154
+00:08:14,750 --> 00:08:18,870
+I don't think anybody could really do that with any accuracy over a long period of time.
+
+155
+00:08:18,870 --> 00:08:24,190
+But, you know, what you should try to do is you should try to anticipate the market, okay?
+
+156
+00:08:24,350 --> 00:08:26,172
+So you should be able to
+
+157
+00:08:26,172 --> 00:08:27,994
+tell when the market's turning, you
+
+158
+00:08:27,994 --> 00:08:30,728
+know, where the market is forming a continuation pattern.
+
+159
+00:08:31,650 --> 00:08:33,230
+That's what order flows will help you do.
+
+160
+00:08:33,850 --> 00:08:34,683
+You know, you could
+
+161
+00:08:34,683 --> 00:08:35,933
+see here in this chart, right,
+
+162
+00:08:35,933 --> 00:08:36,766
+the market was going
+
+163
+00:08:36,766 --> 00:08:38,849
+up, up, up. It hits this level right up here.
+
+164
+00:08:38,929 --> 00:08:39,510
+What do you have?
+
+165
+00:08:39,730 --> 00:08:40,676
+You know, you've got
+
+166
+00:08:40,676 --> 00:08:41,622
+a lot of volume
+
+167
+00:08:41,622 --> 00:08:43,041
+and, you know, you've got a
+
+168
+00:08:43,041 --> 00:08:43,987
+big buying balance right
+
+169
+00:08:43,987 --> 00:08:46,589
+on the top. Yeah, and the market just sold right off.
+
+170
+00:08:47,130 --> 00:08:49,210
+You know, this is what order flow can do for you.
+
+171
+00:08:49,490 --> 00:08:50,594
+You know, it could
+
+172
+00:08:50,594 --> 00:08:51,698
+tell you when you
+
+173
+00:08:51,698 --> 00:08:53,355
+see this appearing on a chart,
+
+174
+00:08:53,355 --> 00:08:54,459
+you should be able
+
+175
+00:08:54,459 --> 00:08:59,707
+to, you know, you could react instantly and know that, hey, this could be the top of a move.
+
+176
+00:09:00,370 --> 00:09:01,615
+And, you know, you
+
+177
+00:09:01,615 --> 00:09:02,860
+could be able to
+
+178
+00:09:02,860 --> 00:09:04,105
+get short somewhere, you
+
+179
+00:09:04,105 --> 00:09:05,038
+know, immediately afterwards, 1938.
+
+180
+00:09:05,038 --> 00:09:07,217
+Now the market sold off quite nicely.
+
+181
+00:09:07,970 --> 00:09:08,775
+You know, this chart
+
+182
+00:09:08,775 --> 00:09:09,580
+only goes down to
+
+183
+00:09:09,580 --> 00:09:10,184
+1932. But, you know,
+
+184
+00:09:10,184 --> 00:09:10,989
+over the next few
+
+185
+00:09:10,989 --> 00:09:13,204
+days, you know, it would trade all the way down to 1800.
+
+186
+00:09:13,610 --> 00:09:15,411
+Once you're able to
+
+187
+00:09:15,411 --> 00:09:18,113
+understand order flow, you know, it
+
+188
+00:09:18,113 --> 00:09:20,815
+will allow you to make educated
+
+189
+00:09:20,815 --> 00:09:26,219
+trading decisions based on what's actually occurring in the market right now.
+
+190
+00:09:26,600 --> 00:09:32,080
+You know, rather than trying to base your decision on, you know, something that happened 10 months ago.
+
+191
+00:09:32,440 --> 00:09:33,640
+Do you really want to do that?
+
+192
+00:09:34,100 --> 00:09:34,300
+No.
+
+193
+00:09:34,700 --> 00:09:37,520
+You know, you want to know what's going on right now and how to profit from it.
+
+194
+00:09:38,300 --> 00:09:39,074
+Indicators, you know,
+
+195
+00:09:39,074 --> 00:09:41,396
+they try to predict the future price movements based
+
+196
+00:09:41,396 --> 00:09:43,718
+on what happened over a period in the past.
+
+197
+00:09:43,720 --> 00:09:48,580
+That's what we're moving averages based on an average over, you know, a certain period.
+
+198
+00:09:49,580 --> 00:09:51,172
+Well, I mean, do you
+
+199
+00:09:51,172 --> 00:09:53,402
+really want to be making your decision
+
+200
+00:09:53,402 --> 00:09:55,313
+on something that happened 10 bars ago,
+
+201
+00:09:55,313 --> 00:09:57,861
+15 bars ago, relative to where we are now?
+
+202
+00:09:58,840 --> 00:10:00,720
+Why don't you just be able to
+
+203
+00:10:00,720 --> 00:10:03,137
+make decisions based on what's happening now rather than
+
+204
+00:10:03,137 --> 00:10:04,479
+what happened in the past?
+
+205
+00:10:04,480 --> 00:10:05,156
+You know,
+
+206
+00:10:05,156 --> 00:10:07,523
+it's the information that's appearing before you
+
+207
+00:10:07,523 --> 00:10:10,566
+right now is what you want to be basing
+
+208
+00:10:10,566 --> 00:10:11,918
+your decisions off of.
+
+209
+00:10:14,080 --> 00:10:17,000
+You know, what does that mean, make decisions based on what's happened in the past?
+
+210
+00:10:17,380 --> 00:10:19,114
+Well, if you look at the past
+
+211
+00:10:19,114 --> 00:10:21,095
+in relation to where the market is now,
+
+212
+00:10:21,095 --> 00:10:22,333
+yes, the best setup in
+
+213
+00:10:22,333 --> 00:10:25,058
+the market going nowhere has a lower chance of being successful.
+
+214
+00:10:25,060 --> 00:10:25,926
+Do you want to
+
+215
+00:10:25,926 --> 00:10:27,009
+buy here, sell here, what
+
+216
+00:10:27,009 --> 00:10:28,309
+direction of the past is a
+
+217
+00:10:28,309 --> 00:10:30,259
+big move, understand what's going on in the market.
+
+218
+00:10:30,980 --> 00:10:31,629
+You know,
+
+219
+00:10:31,629 --> 00:10:32,928
+if the market's in
+
+220
+00:10:32,928 --> 00:10:34,877
+a range, you know, you can
+
+221
+00:10:34,877 --> 00:10:36,826
+have the best setup, picture-perfect setup,
+
+222
+00:10:36,826 --> 00:10:38,775
+but, you know, you're in the
+
+223
+00:10:38,775 --> 00:10:42,998
+middle of a range, so it's probably not going to be very effective.
+
+224
+00:10:43,000 --> 00:10:44,238
+Whereas if you get
+
+225
+00:10:44,238 --> 00:10:46,405
+that same setup and it appears, you
+
+226
+00:10:46,405 --> 00:10:48,262
+know, at the high of a
+
+227
+00:10:48,262 --> 00:10:50,738
+move, that's where you want to take it.
+
+228
+00:10:51,080 --> 00:10:57,700
+You know, you have to know what the market is doing now and how you can trade it.
+
+229
+00:11:00,000 --> 00:11:00,929
+So, you
+
+230
+00:11:00,929 --> 00:11:01,858
+know, for
+
+231
+00:11:01,858 --> 00:11:03,251
+example here, you
+
+232
+00:11:03,251 --> 00:11:04,644
+know, we come
+
+233
+00:11:04,644 --> 00:11:06,502
+down, you know, you
+
+234
+00:11:06,502 --> 00:11:08,360
+have these ratios, you
+
+235
+00:11:08,360 --> 00:11:14,398
+know, this order flow, right? It's at the end of a move, right?
+
+236
+00:11:14,460 --> 00:11:16,100
+It's not necessarily in the middle of a move.
+
+237
+00:11:16,180 --> 00:11:19,680
+It's at the end of a move, and then the market turns around. That's what you want to take.
+
+238
+00:11:19,760 --> 00:11:23,840
+You don't want to take signals where the market is in the middle of a trading range.
+
+239
+00:11:23,920 --> 00:11:25,364
+You want to have it
+
+240
+00:11:25,364 --> 00:11:26,808
+where, you know, it makes
+
+241
+00:11:26,808 --> 00:11:28,541
+a move, stops, and turns around,
+
+242
+00:11:28,541 --> 00:11:30,274
+and you're looking for those areas,
+
+243
+00:11:30,274 --> 00:11:32,296
+you know, to buy or to sell.
+
+244
+00:11:34,950 --> 00:11:35,518
+You know,
+
+245
+00:11:35,518 --> 00:11:36,939
+with order flow, you're watching
+
+246
+00:11:36,939 --> 00:11:38,929
+the current trades that are occurring, you
+
+247
+00:11:38,929 --> 00:11:40,634
+know, which will help you determine
+
+248
+00:11:40,634 --> 00:11:42,908
+whether the buyers or sellers are in control.
+
+249
+00:11:42,910 --> 00:11:45,770
+You know, you ask, you know, is supply or demand greater?
+
+250
+00:11:47,430 --> 00:11:49,030
+Workflow allows you to monitor the
+
+251
+00:11:49,030 --> 00:11:50,630
+participation of different market participants which
+
+252
+00:11:50,630 --> 00:11:52,230
+show up in the volume being
+
+253
+00:11:52,230 --> 00:11:53,830
+traded on the bid or offer.
+
+254
+00:11:54,210 --> 00:11:55,310
+So why is that important?
+
+255
+00:11:55,650 --> 00:11:57,606
+Well, it's important because depending
+
+256
+00:11:57,606 --> 00:12:00,344
+on what's trading in the market, is
+
+257
+00:12:00,344 --> 00:12:02,691
+the bid being traded more or
+
+258
+00:12:02,691 --> 00:12:05,038
+is the offer being traded more?
+
+259
+00:12:05,480 --> 00:12:10,920
+That will tell you if there's active selling or active buying.
+
+260
+00:12:10,920 --> 00:12:16,140
+So if the bid is trading more than the offer side, then you're having people selling into the bid.
+
+261
+00:12:17,820 --> 00:12:22,220
+You know, or if the offer is trading more, you have more people buying the offer.
+
+262
+00:12:22,920 --> 00:12:26,340
+It shows up in the delta, which we'll get into a bit later.
+
+263
+00:12:26,340 --> 00:12:33,620
+I mean, you know, people say the market is a zero-sum game. For every buyer, there is a seller.
+
+264
+00:12:34,420 --> 00:12:40,820
+But order flow allows you to tell the difference between what is being traded.
+
+265
+00:12:40,980 --> 00:12:44,100
+Is it being traded on the bid side or on the offer side?
+
+266
+00:12:44,520 --> 00:12:49,360
+That said, you know, is someone selling into the bid or is someone buying the offer?
+
+267
+00:12:49,660 --> 00:12:51,920
+There's always going to be a bid and there's going to be an offer.
+
+268
+00:12:51,920 --> 00:12:58,080
+But, you know, for one side to trade, someone has to move their price down.
+
+269
+00:12:58,600 --> 00:13:01,740
+Now, imagine it, you know, you go to a car dealer.
+
+270
+00:13:02,340 --> 00:13:03,400
+There's always cars for sale.
+
+271
+00:13:04,000 --> 00:13:07,240
+Now, you know, you have your price in mind, which you want to pay for the car.
+
+272
+00:13:07,640 --> 00:13:10,920
+The car dealer has his price in mind on what he wants to sell the car for.
+
+273
+00:13:11,400 --> 00:13:12,820
+So you guys go back and forth.
+
+274
+00:13:12,820 --> 00:13:15,143
+Eventually, you know, you're going to
+
+275
+00:13:15,143 --> 00:13:18,628
+either pay what the car dealer is offering it
+
+276
+00:13:18,628 --> 00:13:22,113
+to you at or the car dealer is going
+
+277
+00:13:22,113 --> 00:13:29,858
+to have to go down to your price that you want to pay, that you don't want to go over.
+
+278
+00:13:30,620 --> 00:13:33,720
+So, you know, say you're trying to buy this Honda car for $20,000.
+
+279
+00:13:35,180 --> 00:13:38,060
+The car dealer wants to sell it to you for $21,000.
+
+280
+00:13:38,060 --> 00:13:46,520
+Well, you know, maybe you guys, you know, maybe you'll say, okay, I'll pay $20,300.
+
+281
+00:13:47,280 --> 00:13:50,360
+The car dealer says, well, I'll sell it to you for $20,900.
+
+282
+00:13:53,490 --> 00:13:55,465
+To get the deal done, one of
+
+283
+00:13:55,465 --> 00:13:58,005
+you guys, either you, the buyer, have to pay
+
+284
+00:13:58,005 --> 00:14:03,649
+the offer price or the dealer has to sell it to you at the bid price, at your bid price.
+
+285
+00:14:04,390 --> 00:14:10,810
+So, you know, that's what order flows can show you, you know, where the trade occurred.
+
+286
+00:14:11,090 --> 00:14:13,610
+Did the trade occur on the bid side or the offer side?
+
+287
+00:14:14,230 --> 00:14:17,270
+Which is very important, as you'll learn, you know, later in the course.
+
+288
+00:14:18,710 --> 00:14:19,400
+So, you know,
+
+289
+00:14:19,400 --> 00:14:21,470
+order flows gives you a visual representation of price
+
+290
+00:14:21,470 --> 00:14:23,080
+movements constructed by recording the volume you
+
+291
+00:14:23,080 --> 00:14:24,690
+traded on the bid or the offer.
+
+292
+00:14:25,910 --> 00:14:27,831
+It provides insight into the market psychology
+
+293
+00:14:27,831 --> 00:14:29,752
+as well as market conditions, and the
+
+294
+00:14:29,752 --> 00:14:31,398
+value lies in confirming market tops
+
+295
+00:14:31,398 --> 00:14:35,789
+and bottoms, as well as price areas where there have been shifts in supply and demand.
+
+296
+00:14:36,210 --> 00:14:37,750
+Again, why is that important?
+
+297
+00:14:37,750 --> 00:14:42,470
+Well, you know, the market is made up of participants,
+
+298
+00:14:43,430 --> 00:14:44,195
+and, you know,
+
+299
+00:14:44,195 --> 00:14:45,215
+the way they think,
+
+300
+00:14:45,215 --> 00:14:46,490
+you know, shapes what the
+
+301
+00:14:46,490 --> 00:14:47,765
+market is going to do,
+
+302
+00:14:47,765 --> 00:14:50,827
+whether it's going to go up or it's going to go down.
+
+303
+00:14:51,410 --> 00:14:52,152
+You know,
+
+304
+00:14:52,152 --> 00:14:54,379
+so if you have participants who
+
+305
+00:14:54,379 --> 00:14:56,235
+are actively buying the market,
+
+306
+00:14:56,235 --> 00:14:59,948
+that tells you there's the market psychology at the moment.
+
+307
+00:15:00,230 --> 00:15:05,970
+It tells you, you know, people are thinking the market's going higher and they're buying aggressively, lifting the offers.
+
+308
+00:15:10,060 --> 00:15:14,180
+So, you know, the market is always at a tug of war between buyers and sellers.
+
+309
+00:15:14,480 --> 00:15:16,920
+You know, each try is trying to assert themselves and take control.
+
+310
+00:15:18,400 --> 00:15:19,338
+And you should always be
+
+311
+00:15:19,338 --> 00:15:20,276
+asking the question, who is
+
+312
+00:15:20,276 --> 00:15:22,339
+in control? Is it the buyers or is it the sellers?
+
+313
+00:15:23,180 --> 00:15:27,380
+Once you know who's in control, you can see when control shifts from one side to the other.
+
+314
+00:15:27,380 --> 00:15:38,200
+You know, once you understand how to tell who's in control, you can anticipate the price movements as they occur.
+
+315
+00:15:38,920 --> 00:15:44,160
+You know, so you can see as one side becomes stronger how the market is going to move.
+
+316
+00:15:44,160 --> 00:15:46,940
+So, you know, you can anticipate that.
+
+317
+00:15:47,180 --> 00:15:51,540
+You can see that, okay, well, buyers are taking control.
+
+318
+00:15:52,040 --> 00:15:56,980
+So, strictly by knowing that, you can anticipate that there's going to be a move higher.
+
+319
+00:15:57,840 --> 00:15:58,395
+You know,
+
+320
+00:15:58,395 --> 00:15:59,228
+you can see,
+
+321
+00:15:59,228 --> 00:16:00,339
+you know, if you
+
+322
+00:16:00,339 --> 00:16:01,727
+see sellers are starting to
+
+323
+00:16:01,727 --> 00:16:02,838
+overrun the buyers, you
+
+324
+00:16:02,838 --> 00:16:05,338
+know, sometimes that's very easy to see with overflow.
+
+325
+00:16:05,680 --> 00:16:08,840
+You can't necessarily see that with normal price bars.
+
+326
+00:16:08,840 --> 00:16:09,708
+But when you
+
+327
+00:16:09,708 --> 00:16:10,576
+see that, you
+
+328
+00:16:10,576 --> 00:16:11,734
+can anticipate, okay, now,
+
+329
+00:16:11,734 --> 00:16:12,892
+you know, we're going
+
+330
+00:16:12,892 --> 00:16:14,918
+to get ready for a move lower.
+
+331
+00:16:16,400 --> 00:16:20,000
+You know, a perfect example is, you know, this chart here.
+
+332
+00:16:20,180 --> 00:16:25,540
+You know, it came down a little bit, bounced up. Then you just see the sellers really take over.
+
+333
+00:16:26,040 --> 00:16:28,160
+You know, they just overran the buyers here.
+
+334
+00:16:29,100 --> 00:16:33,180
+You know, market tried to come back up. You got some more aggressive selling and the market just sold off.
+
+335
+00:16:33,820 --> 00:16:34,389
+I mean,
+
+336
+00:16:34,389 --> 00:16:35,243
+this is, you
+
+337
+00:16:35,243 --> 00:16:36,382
+know, what order flow
+
+338
+00:16:36,382 --> 00:16:37,521
+offers you. It offers
+
+339
+00:16:37,521 --> 00:16:39,799
+you a chance to see this very clearly.
+
+340
+00:16:40,560 --> 00:16:43,640
+You know, if you're just looking at a bar chart, you just see, oh, the market popped up.
+
+341
+00:16:43,920 --> 00:16:46,280
+You know, sort of went sideways and starts to come back off.
+
+342
+00:16:46,760 --> 00:16:52,760
+But you can see very early, immediately after the bounce up, that the aggressive sellers came back in.
+
+343
+00:16:55,280 --> 00:17:02,220
+You know, surely, you know, I mean, you cannot see that on a normal bar chart.
+
+344
+00:17:02,220 --> 00:17:03,661
+You know, order
+
+345
+00:17:03,661 --> 00:17:07,023
+flow footprint charts are superior to bar
+
+346
+00:17:07,023 --> 00:17:10,865
+charts, candlestick charts, because they provide actionable visual
+
+347
+00:17:10,865 --> 00:17:16,148
+insights into the psychology of what's currently happening in the market.
+
+348
+00:17:17,430 --> 00:17:18,178
+You know, the
+
+349
+00:17:18,178 --> 00:17:19,925
+trading clues that you get from an
+
+350
+00:17:19,925 --> 00:17:21,422
+order flow footprint chart are immediate
+
+351
+00:17:21,422 --> 00:17:23,668
+and hidden from users on bar and candlestick charts.
+
+352
+00:17:24,170 --> 00:17:27,569
+You know, a perfect example. Here's a candlestick chart.
+
+353
+00:17:27,569 --> 00:17:29,570
+Okay, you can see the market went up.
+
+354
+00:17:29,650 --> 00:17:32,790
+Yeah, you got a red candle. Okay, what does that mean?
+
+355
+00:17:32,930 --> 00:17:34,210
+You know, you went sideways after.
+
+356
+00:17:34,790 --> 00:17:37,290
+You know, the red candle looks almost exactly the same.
+
+357
+00:17:37,470 --> 00:17:38,112
+You know, you
+
+358
+00:17:38,112 --> 00:17:39,182
+got two green bars going
+
+359
+00:17:39,182 --> 00:17:40,252
+up, two green bars going
+
+360
+00:17:40,252 --> 00:17:41,108
+up. You got the
+
+361
+00:17:41,108 --> 00:17:42,607
+red candle here. You got the wick.
+
+362
+00:17:43,110 --> 00:17:44,050
+Probably going to go sideways.
+
+363
+00:17:44,210 --> 00:17:45,190
+It's going to keep going up.
+
+364
+00:17:45,270 --> 00:17:46,010
+It's going to go down here.
+
+365
+00:17:46,990 --> 00:17:50,250
+It could really go any way, you know, by looking at that.
+
+366
+00:17:50,250 --> 00:17:51,357
+But, you know, if
+
+367
+00:17:51,357 --> 00:17:52,741
+you're looking at the order
+
+368
+00:17:52,741 --> 00:17:54,125
+flows chart, you can see,
+
+369
+00:17:54,125 --> 00:17:55,232
+you know, the red
+
+370
+00:17:55,232 --> 00:17:57,169
+candle, market goes sideways, comes back up.
+
+371
+00:17:57,850 --> 00:17:59,750
+Again, you know, you got this high here.
+
+372
+00:17:59,870 --> 00:18:03,590
+You can see here, you can see massive volume up here at the top.
+
+373
+00:18:04,550 --> 00:18:07,750
+You know, this is your sign that the market isn't going to go any higher.
+
+374
+00:18:07,930 --> 00:18:12,890
+You know right away you want to be short, you know, that the market should not be going sideways.
+
+375
+00:18:13,150 --> 00:18:14,790
+You know, it has more complexity to move short.
+
+376
+00:18:14,790 --> 00:18:16,648
+You know, this
+
+377
+00:18:16,648 --> 00:18:19,126
+is the, you know,
+
+378
+00:18:19,126 --> 00:18:21,604
+this is how it
+
+379
+00:18:21,604 --> 00:18:24,082
+looked, you know, coming
+
+380
+00:18:24,082 --> 00:18:25,940
+into that, coming
+
+381
+00:18:25,940 --> 00:18:29,657
+into that, coming into that chart.
+
+382
+00:18:29,920 --> 00:18:34,520
+You know, you don't know, you know, is the market going to go higher? Is it going to stop?
+
+383
+00:18:35,060 --> 00:18:36,460
+You know, go back to the chart.
+
+384
+00:18:36,660 --> 00:18:40,460
+You know, it went back up. Here, turn it around.
+
+385
+00:18:40,780 --> 00:18:41,940
+You could see it in the order flow.
+
+386
+00:18:41,980 --> 00:18:45,460
+You could see the orders, what's being traded, and then it sold off.
+
+387
+00:19:01,880 --> 00:19:02,866
+Okay, what's the market going to
+
+388
+00:19:02,866 --> 00:19:03,852
+do when it gets to this
+
+389
+00:19:03,852 --> 00:19:05,659
+level? Is it going to go up, going to go down?
+
+390
+00:19:06,360 --> 00:19:06,900
+You don't know.
+
+391
+00:19:07,820 --> 00:19:13,760
+But if you're looking at the order flow, you can see here, you know, the market's in an uptrend.
+
+392
+00:19:13,800 --> 00:19:18,120
+You see the aggressive buying going on here, you know, 936, 200, 2000.
+
+393
+00:19:18,680 --> 00:19:21,740
+You can see the people being aggressive here that move up.
+
+394
+00:19:25,960 --> 00:19:26,800
+You know, what is order flow?
+
+395
+00:19:26,860 --> 00:19:27,860
+Order flow is a tool.
+
+396
+00:19:28,040 --> 00:19:28,820
+It's not a system.
+
+397
+00:19:29,940 --> 00:19:32,400
+You know, it's used in context of what's occurring in the market.
+
+398
+00:19:33,160 --> 00:19:35,060
+Order flow makes analysis of what current works.
+
+399
+00:19:35,060 --> 00:19:38,360
+It provides an in-depth view of what traders are doing in the market.
+
+400
+00:19:38,360 --> 00:19:39,969
+You know, it's
+
+401
+00:19:39,969 --> 00:19:43,723
+particularly useful in signaling trend changes as
+
+402
+00:19:43,723 --> 00:19:46,941
+they happen, which is much earlier
+
+403
+00:19:46,941 --> 00:19:50,159
+than those generated by the market.
+
+404
+00:19:51,280 --> 00:20:01,280
+So, you know, with order flow, you can see changes in trend as they're happening, not after they're happening.
+
+405
+00:20:15,010 --> 00:20:21,510
+You see trend changes as they happen, which is much earlier than those, like, in that trend years.
+
+406
+00:20:22,150 --> 00:20:27,710
+So, you know, with order flow, you'll see them as the trend is changing, not after it's changed.
+
+407
+00:20:29,800 --> 00:20:32,100
+Okay, order flow shows what's happened in the market.
+
+408
+00:20:32,220 --> 00:20:33,340
+It's a tool, right?
+
+409
+00:20:33,400 --> 00:20:35,240
+That's partially understood by other traders.
+
+410
+00:20:35,540 --> 00:20:38,420
+It looks confusing to people that don't understand it.
+
+411
+00:20:38,460 --> 00:20:43,560
+It's the only tool that gives you immediate feedback on what's happening now in the market.
+
+412
+00:20:43,560 --> 00:20:49,440
+As with any form of trading, you're supposed to buy at a lower place than you sell or sell.
+
+413
+00:20:56,450 --> 00:20:58,390
+The order flow is vital in spotting reversals.
+
+414
+00:20:58,610 --> 00:21:04,530
+Most reversals are short-term, which is precisely the type of short-term that short-term traders look for on a regular basis.
+
+415
+00:21:05,050 --> 00:21:07,790
+It can be used on other trends, but the plan is just when it's really trading.
+
+416
+00:21:08,350 --> 00:21:10,390
+Order flow is used to confirm trends once they've started.
+
+417
+00:21:10,650 --> 00:21:13,270
+This will help keep you in moves once you are in.
+
+418
+00:21:13,270 --> 00:21:14,176
+You know, if
+
+419
+00:21:14,176 --> 00:21:16,290
+you're in a trade, you know, lots
+
+420
+00:21:16,290 --> 00:21:18,404
+of times you're thinking, hey, do I
+
+421
+00:21:18,404 --> 00:21:20,518
+get out now? Do I stay? You
+
+422
+00:21:20,518 --> 00:21:28,069
+know, with order flow, you can see, you can decide, you know, very easily if you should stay in or get out of the trade.
+
+423
+00:21:29,590 --> 00:21:39,660
+You know, for example, where markets come up. Okay, you're looking to get short somewhere in here.
+
+424
+00:21:41,120 --> 00:21:45,740
+You get short based on what you've seen in the order flow right up in here.
+
+425
+00:21:45,760 --> 00:21:49,980
+Okay, and then you have all these selling imbalances right in here.
+
+426
+00:21:51,180 --> 00:21:52,077
+You know, you're
+
+427
+00:21:52,077 --> 00:21:53,572
+starting to get, you know,
+
+428
+00:21:53,572 --> 00:21:55,366
+some more indication. So, you know,
+
+429
+00:21:55,366 --> 00:21:58,058
+you don't have to necessarily get out right away.
+
+430
+00:21:58,260 --> 00:22:06,680
+You're getting indications, you know, besides all the bar closed lower than it opened. So, it's going down.
+
+431
+00:22:06,760 --> 00:22:07,582
+You can see,
+
+432
+00:22:07,582 --> 00:22:08,952
+you know, you can see
+
+433
+00:22:08,952 --> 00:22:10,870
+the selling coming in. You can see
+
+434
+00:22:10,870 --> 00:22:14,980
+the price rejections in the bars. So, you know that the market is going lower.
+
+435
+00:22:15,260 --> 00:22:17,200
+You're more confident in your trades.
+
+436
+00:22:20,960 --> 00:22:23,440
+Order flow is not your typical technical analysis tool.
+
+437
+00:22:23,620 --> 00:22:25,180
+It places greater emphasis on volume.
+
+438
+00:22:25,920 --> 00:22:27,600
+Volume cannot, should not be ignored.
+
+439
+00:22:27,780 --> 00:22:33,120
+Without knowing the volume traded and how it traded, you have no idea of the conviction involved in a move.
+
+440
+00:22:33,120 --> 00:22:34,299
+You know, in
+
+441
+00:22:34,299 --> 00:22:37,050
+the old days, when people have talked
+
+442
+00:22:37,050 --> 00:22:40,195
+about volume, it had double meaning. You know,
+
+443
+00:22:40,195 --> 00:22:45,698
+in the pit, there was volume, the number of contracts traded, but there's also
+
+444
+00:22:45,700 --> 00:22:52,180
+volume with how loud it was in the pit. Whether it was quiet or whether it was noisy.
+
+445
+00:22:52,920 --> 00:22:55,580
+You know, if it's noisy, there's a lot of volume being traded.
+
+446
+00:22:55,580 --> 00:23:02,480
+So, when you connect price and volume, it tells you what other traders are going.
+
+447
+00:23:02,560 --> 00:23:04,640
+It allows you to take advantage of that knowledge.
+
+448
+00:23:05,520 --> 00:23:07,424
+You know, when the big
+
+449
+00:23:07,424 --> 00:23:09,708
+traders are in the market, you
+
+450
+00:23:09,708 --> 00:23:11,612
+know, you want to know
+
+451
+00:23:11,612 --> 00:23:15,039
+that. Where they're trading, you want to know that.
+
+452
+00:23:16,040 --> 00:23:17,249
+You know, if you don't
+
+453
+00:23:17,249 --> 00:23:18,942
+look at volume, you don't know all
+
+454
+00:23:18,942 --> 00:23:21,119
+you're seeing is just a line on a chart.
+
+455
+00:23:21,600 --> 00:23:22,640
+It doesn't tell you much.
+
+456
+00:23:22,640 --> 00:23:27,560
+You're really leaving out a big, you know, a big section of the market.
+
+457
+00:23:28,700 --> 00:23:32,300
+Now, you know, fundamentals do not directly determine price.
+
+458
+00:23:32,500 --> 00:23:35,740
+They're only as important as the emphasis placed on them by the traders to analyze them.
+
+459
+00:23:36,240 --> 00:23:48,570
+You know, what that means is you can have fundamentals not directly determine price.
+
+460
+00:23:49,710 --> 00:23:51,545
+What that means is,
+
+461
+00:23:51,545 --> 00:23:54,298
+you know, it's hard for you
+
+462
+00:23:54,298 --> 00:23:58,886
+to trade fundamentals for a retail trader that have trade
+
+463
+00:23:58,886 --> 00:24:02,098
+fundamentals because they don't have access to
+
+464
+00:24:02,098 --> 00:24:06,228
+the same fundamentals that, you know, the producers have.
+
+465
+00:24:06,310 --> 00:24:07,410
+You don't know the supply chain.
+
+466
+00:24:07,510 --> 00:24:14,570
+You don't know that it's raining in Indonesia or Malaysia that, you know, they can't harvest the palm oil.
+
+467
+00:24:14,910 --> 00:24:19,630
+You don't know what the shipping rates are currently and how they're affecting the cost of oil.
+
+468
+00:24:20,810 --> 00:24:23,990
+You know, but what does that matter?
+
+469
+00:24:24,410 --> 00:24:32,540
+You know, it's what the other traders are analyzing them at that you want to know.
+
+470
+00:24:32,540 --> 00:24:35,940
+And, yeah, you're going to see it reflected in the price that it's trading.
+
+471
+00:24:36,860 --> 00:24:46,180
+You know, the market doesn't necessarily reflect one individual's, you know, consensus. You know, it's consensus.
+
+472
+00:24:46,820 --> 00:24:52,660
+So it's going to be, you know, it's going to be a wide range of people and what they think.
+
+473
+00:24:53,120 --> 00:24:57,660
+The market determines the fair price, but the volume trader represents the strength of interest in that determination.
+
+474
+00:24:57,660 --> 00:25:03,080
+And so that said, I mean, the market determines the price, right?
+
+475
+00:25:03,280 --> 00:25:12,660
+But how much is traded represents, you know, whether, you know, people think it's legitimate or not.
+
+476
+00:25:12,860 --> 00:25:16,600
+I mean, if it trades on a very small size, then it's most often it's not legitimate.
+
+477
+00:25:18,020 --> 00:25:18,899
+You know, for
+
+478
+00:25:18,899 --> 00:25:20,364
+example, going back to this
+
+479
+00:25:20,364 --> 00:25:21,829
+chart that happened before, you
+
+480
+00:25:21,829 --> 00:25:23,294
+can see, you know, up
+
+481
+00:25:23,294 --> 00:25:28,277
+here, this is in the minis, you know, right up here, there's very heavy volume, you know.
+
+482
+00:25:28,340 --> 00:25:32,880
+On the way up, you know, everyone was eager to buy, you know, was making new highs.
+
+483
+00:25:33,060 --> 00:25:35,800
+Then it just stopped up here. You know, there was a big seller.
+
+484
+00:25:36,460 --> 00:25:38,760
+It basically, they'll whack it back down.
+
+485
+00:25:39,640 --> 00:25:41,420
+You know, it traded a decent volume up here.
+
+486
+00:25:41,520 --> 00:25:42,211
+You know,
+
+487
+00:25:42,211 --> 00:25:43,593
+there's 1,600 lots at the
+
+488
+00:25:43,593 --> 00:25:45,320
+high of the day, the
+
+489
+00:25:45,320 --> 00:25:47,047
+high of the week, you
+
+490
+00:25:47,047 --> 00:25:48,774
+know, the high of the
+
+491
+00:25:48,774 --> 00:25:53,611
+bar, you know, it's telling you, you know, the market couldn't get past it.
+
+492
+00:25:54,260 --> 00:26:00,920
+And, you know, the thinking has shifted in the market, you know, whereas buyers were really taking control.
+
+493
+00:26:01,060 --> 00:26:03,780
+But you got up here, you got a big seller that's taking control.
+
+494
+00:26:04,500 --> 00:26:07,060
+You know, it may not just be one person. It might be a few people.
+
+495
+00:26:07,440 --> 00:26:08,740
+And then the market sold off.
+
+496
+00:26:09,580 --> 00:26:12,400
+You know, that's what, you know, order flows helps you see.
+
+497
+00:26:12,400 --> 00:26:17,640
+You know, you can see where things are changing in the market as they're happening.
+
+498
+00:26:20,230 --> 00:26:24,430
+So, to make money in trading, it's necessary to have a disciplined approach to trading.
+
+499
+00:26:24,710 --> 00:26:25,950
+It's important to keep things simple.
+
+500
+00:26:28,330 --> 00:26:30,330
+Order flow seems complex at first.
+
+501
+00:26:30,510 --> 00:26:31,702
+However, once you learn how
+
+502
+00:26:31,702 --> 00:26:33,372
+to read and understand an order flow
+
+503
+00:26:33,372 --> 00:26:35,042
+chart, you'll be able to better know
+
+504
+00:26:35,042 --> 00:26:40,529
+what is happening in the market and become disciplined as a trader, you know, which is, you know, what you want to do.
+
+505
+00:26:40,530 --> 00:26:42,198
+You don't want to make things
+
+506
+00:26:42,198 --> 00:26:44,144
+so complicated that you get paralyzed with
+
+507
+00:26:44,144 --> 00:26:45,812
+your analysis that you can't decide,
+
+508
+00:26:45,812 --> 00:26:47,202
+should I be getting long,
+
+509
+00:26:47,202 --> 00:26:52,486
+should I not be getting long, should I be getting short, I don't know what to do, you know.
+
+510
+00:26:52,830 --> 00:26:53,950
+You want to keep things simple.
+
+511
+00:26:55,230 --> 00:27:00,510
+You know, you want to have a way of trading that you become second nature, you know.
+
+512
+00:27:01,270 --> 00:27:03,170
+Luck is not a strategy in trading.
+
+513
+00:27:07,180 --> 00:27:10,380
+So, you know, learning order flow is like learning any new life skill.
+
+514
+00:27:10,380 --> 00:27:12,640
+The more you practice, the more proficient you become.
+
+515
+00:27:13,600 --> 00:27:15,827
+You have to learn the basics, get them
+
+516
+00:27:15,827 --> 00:27:18,610
+down cold, because as you start to move to more
+
+517
+00:27:18,610 --> 00:27:23,899
+advanced techniques in your training and trading, you start to struggle, you can just go back to the basics.
+
+518
+00:27:24,360 --> 00:27:29,220
+You know, most traders don't even have the basic education in order flow trading.
+
+519
+00:27:30,100 --> 00:27:31,676
+You know, imagine it, like,
+
+520
+00:27:31,676 --> 00:27:33,882
+you're driving, right? When you learned how
+
+521
+00:27:33,882 --> 00:27:37,979
+to drive, you had to, there's a lot you had to take in.
+
+522
+00:27:38,060 --> 00:27:42,060
+But now, you know, after you've been driving a lot, you understand what you're doing.
+
+523
+00:27:42,060 --> 00:27:44,337
+You don't have to go through, you know,
+
+524
+00:27:44,337 --> 00:27:46,898
+a standard list of things when you're driving down
+
+525
+00:27:46,898 --> 00:27:49,175
+the highway, you know how to act when
+
+526
+00:27:49,175 --> 00:27:54,298
+someone cuts in front of you or when the car in front of you slams on the race.
+
+527
+00:27:54,420 --> 00:27:55,580
+You know exactly what to do.
+
+528
+00:27:56,460 --> 00:27:58,484
+With order flow trading, you know,
+
+529
+00:27:58,484 --> 00:28:01,183
+you will learn the same things on what
+
+530
+00:28:01,183 --> 00:28:04,219
+to do with the market and how to react.
+
+531
+00:28:07,040 --> 00:28:08,361
+I'll be honest, you know,
+
+532
+00:28:08,361 --> 00:28:10,211
+when I first saw the footprint chart,
+
+533
+00:28:10,211 --> 00:28:13,118
+I was already aware of why it was important to trading.
+
+534
+00:28:13,920 --> 00:28:15,671
+You know, it's one of
+
+535
+00:28:15,671 --> 00:28:17,422
+those things, you know, I
+
+536
+00:28:17,422 --> 00:28:19,874
+didn't even know back in the early
+
+537
+00:28:19,874 --> 00:28:23,377
+days that, you know, these types of charts were available.
+
+538
+00:28:24,920 --> 00:28:31,460
+You know, I used to see, sit on a desk where I had massive orders going through.
+
+539
+00:28:32,020 --> 00:28:34,840
+You know, I could sense what's going on.
+
+540
+00:28:34,840 --> 00:28:36,701
+But, you know, once I
+
+541
+00:28:36,701 --> 00:28:38,562
+saw the order flow chart,
+
+542
+00:28:38,562 --> 00:28:40,795
+you know, the footprint chart, it
+
+543
+00:28:40,795 --> 00:28:44,518
+really, you know, opened my eyes to a whole world.
+
+544
+00:28:45,620 --> 00:28:46,599
+You know, so it's
+
+545
+00:28:46,599 --> 00:28:49,047
+necessary to see and determine whether volume was heavy or
+
+546
+00:28:49,047 --> 00:28:51,739
+light as the market moved through levels of support or resistance.
+
+547
+00:28:51,740 --> 00:28:53,383
+Again, you know, if you're
+
+548
+00:28:53,383 --> 00:28:55,684
+just looking at it as an open
+
+549
+00:28:55,684 --> 00:28:58,314
+market chart, you know, and you break a
+
+550
+00:28:58,314 --> 00:29:02,259
+trend line, you don't know if the volume is heavy or light.
+
+551
+00:29:02,440 --> 00:29:05,140
+Like I said, you just see a straight line on there that you went through.
+
+552
+00:29:05,920 --> 00:29:07,212
+You know, it's, you
+
+553
+00:29:07,212 --> 00:29:08,827
+know, I'm sure some, you
+
+554
+00:29:08,827 --> 00:29:10,442
+know, fewer technicians will say,
+
+555
+00:29:10,442 --> 00:29:12,057
+well, you broke it even
+
+556
+00:29:12,057 --> 00:29:14,318
+if you broke it on one lot.
+
+557
+00:29:14,480 --> 00:29:19,120
+Well, you know, nowadays trading is very different.
+
+558
+00:29:19,120 --> 00:29:19,910
+And, you know,
+
+559
+00:29:19,910 --> 00:29:20,964
+there's a lot of
+
+560
+00:29:20,964 --> 00:29:22,282
+algos, you know, and just
+
+561
+00:29:22,282 --> 00:29:23,600
+because it's an algo doesn't
+
+562
+00:29:23,600 --> 00:29:24,918
+mean it's a smart algo.
+
+563
+00:29:25,880 --> 00:29:28,860
+You know, it could just be buying one at the market. You don't know.
+
+564
+00:29:30,970 --> 00:29:38,590
+You know, in the past, volume was often relegated to a secondary significance or even clearly ignored by most traders.
+
+565
+00:29:39,050 --> 00:29:39,537
+You know,
+
+566
+00:29:39,537 --> 00:29:40,756
+people used to look at
+
+567
+00:29:40,756 --> 00:29:41,975
+volume at the end of
+
+568
+00:29:41,975 --> 00:29:43,194
+the day. They didn't necessarily
+
+569
+00:29:43,194 --> 00:29:44,169
+look at it intraday.
+
+570
+00:29:44,810 --> 00:29:45,490
+They would just,
+
+571
+00:29:45,490 --> 00:29:46,623
+you know, plot it along
+
+572
+00:29:46,623 --> 00:29:47,983
+the bottom and say, well, okay,
+
+573
+00:29:47,983 --> 00:29:49,116
+today, what was the volume?
+
+574
+00:29:49,116 --> 00:29:50,249
+Was it heavier or lighter?
+
+575
+00:29:50,690 --> 00:29:51,482
+They didn't actually
+
+576
+00:29:51,482 --> 00:29:52,802
+analyze it intraday and, you
+
+577
+00:29:52,802 --> 00:29:54,650
+know, really try to understand what was
+
+578
+00:29:54,650 --> 00:29:55,970
+going on in the market
+
+579
+00:29:55,970 --> 00:29:58,610
+and how the market was being affected by the volume.
+
+580
+00:30:00,900 --> 00:30:05,600
+You know, so you can't understand the dynamics of a price movement without understanding the volume.
+
+581
+00:30:06,720 --> 00:30:09,160
+You know, so it's not new information.
+
+582
+00:30:10,480 --> 00:30:13,097
+You take in the same information that's
+
+583
+00:30:13,097 --> 00:30:15,714
+been available, but you put it into
+
+584
+00:30:15,714 --> 00:30:17,209
+a format that's makes
+
+585
+00:30:17,209 --> 00:30:19,078
+it much easier to interpret.
+
+586
+00:30:19,080 --> 00:30:24,420
+But you can determine how prices are changing rather than just seeing that they're changing.
+
+587
+00:30:30,670 --> 00:30:33,550
+You know, here's a chart.
+
+588
+00:30:33,690 --> 00:30:34,764
+You can see, okay,
+
+589
+00:30:34,764 --> 00:30:35,838
+we're working our way
+
+590
+00:30:35,838 --> 00:30:36,912
+up, working our way
+
+591
+00:30:36,912 --> 00:30:39,329
+up. We hit the high, start to come down.
+
+592
+00:30:39,330 --> 00:30:40,079
+You know,
+
+593
+00:30:40,079 --> 00:30:41,953
+what's in Waterflow will help
+
+594
+00:30:41,953 --> 00:30:44,576
+you tell what's going on in the
+
+595
+00:30:44,576 --> 00:30:46,450
+market, why we hit this,
+
+596
+00:30:46,450 --> 00:30:50,198
+why we're starting to sell off after hitting the high.
+
+597
+00:30:50,200 --> 00:30:51,187
+I mean, yeah,
+
+598
+00:30:51,187 --> 00:30:52,833
+you can say, well, there's
+
+599
+00:30:52,833 --> 00:30:54,479
+sellers coming in, but, you
+
+600
+00:30:54,479 --> 00:30:56,125
+know, are you sure? Do
+
+601
+00:30:56,125 --> 00:30:58,758
+you really see the selling coming in there?
+
+602
+00:30:59,440 --> 00:31:03,900
+You know, when we come back up into this bar, you know, is there selling?
+
+603
+00:31:04,480 --> 00:31:06,680
+Can you determine that, you know, we're going to sell?
+
+604
+00:31:07,240 --> 00:31:09,220
+Why didn't we come back up and take out this high?
+
+605
+00:31:09,620 --> 00:31:12,480
+Well, you know, this is all the things that Waterflow will help you tell.
+
+606
+00:31:12,480 --> 00:31:16,760
+So, you know, so this is the end of the first lesson, lesson one.
+
+607
+00:31:17,220 --> 00:31:19,210
+In the next lesson, I'll discuss the
+
+608
+00:31:19,210 --> 00:31:21,484
+different choices of Waterflow software that are available
+
+609
+00:31:21,484 --> 00:31:23,758
+on the market for traders to choose from.
+
+610
+00:31:23,880 --> 00:31:27,220
+I mean, there's a lot out there on various prices.
+
+611
+00:31:27,480 --> 00:31:35,140
+It's just, you know, literally from almost free to, you know, tens of thousands of dollars.
+
+612
+00:31:35,920 --> 00:31:39,120
+You know, it's easy to be misled.
+
+613
+00:31:39,120 --> 00:31:44,180
+So, you know, thank you and, you know, end the first lesson for now.
+
+===== END AFTER_SEGMENT =====

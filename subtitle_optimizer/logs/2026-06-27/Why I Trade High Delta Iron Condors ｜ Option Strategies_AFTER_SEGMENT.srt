@@ -1,0 +1,2086 @@
+===== AFTER_SEGMENT (521 entries) =====
+1
+00:00:00,100 --> 00:00:01,500
+What's going on guys, Brian here.
+
+2
+00:00:01,500 --> 00:00:05,300
+Today is Friday, September 9th, 2022, and the market is closed.
+
+3
+00:00:05,800 --> 00:00:11,700
+Iron condors are very popular options income trading strategy known to options traders.
+
+4
+00:00:11,900 --> 00:00:14,800
+It's something I don't believe I've talked about exclusively on this channel yet.
+
+5
+00:00:14,900 --> 00:00:17,900
+I just want to make sure to let you guys know everything
+
+6
+00:00:17,900 --> 00:00:19,900
+I'm talking about in this video is completely
+
+7
+00:00:19,900 --> 00:00:22,900
+my opinion, as I'm by no means an expert iron condor trader.
+
+8
+00:00:23,100 --> 00:00:25,910
+However, I do trade them from time to time, and I want
+
+9
+00:00:25,910 --> 00:00:28,252
+to show you guys one of the reasons why I
+
+10
+00:00:28,252 --> 00:00:31,999
+don't trade what can be considered a traditional iron condor, which I think is very subjective.
+
+11
+00:00:32,300 --> 00:00:37,105
+When I say traditional iron condor, I'm referring to shorting any type of iron
+
+12
+00:00:37,105 --> 00:00:39,507
+condor that has a call delta below 15,
+
+13
+00:00:39,507 --> 00:00:43,969
+closer to 10 or 0.11, and shorting a put that has a negative delta around
+
+14
+00:00:46,600 --> 00:00:47,700
+negative 0.15.
+
+15
+00:00:47,900 --> 00:00:50,900
+If you're an avid follower of the Tastyworks YouTube channel, you've probably
+
+16
+00:00:50,900 --> 00:00:52,900
+seen them talk about different iron condor strategies
+
+17
+00:00:52,900 --> 00:00:56,400
+out there, but I like to make my iron condors a little bit tighter,
+
+18
+00:00:56,700 --> 00:00:59,828
+meaning I will usually short strikes that are a little bit closer
+
+19
+00:00:59,828 --> 00:01:03,999
+to the current spot price because I'm looking to bring in a little bit more premium.
+
+20
+00:01:04,200 --> 00:01:06,757
+Now, if you don't know what an iron condor is, I'm surprised
+
+21
+00:01:06,757 --> 00:01:08,462
+you'd be watching this video, but just in
+
+22
+00:01:08,462 --> 00:01:12,298
+case you've never seen an iron condor, I just want to mention the basics of what it is.
+
+23
+00:01:12,300 --> 00:01:15,000
+It's just a combination of two vertical spreads.
+
+24
+00:01:15,200 --> 00:01:17,454
+So you're shorting a call strike and then
+
+25
+00:01:17,454 --> 00:01:21,399
+you're buying a call further out as a protection from the one you're shorting.
+
+26
+00:01:21,900 --> 00:01:24,045
+And then you're also shorting a put option
+
+27
+00:01:24,045 --> 00:01:27,799
+and then you're buying another put option further out as protection on this one.
+
+28
+00:01:28,100 --> 00:01:30,600
+And then the combination of these two vertical spreads. spreads right here.
+
+29
+00:01:30,600 --> 00:01:34,300
+So this would be considered a call credit spread, and this is a put credit spread.
+
+30
+00:01:34,600 --> 00:01:38,158
+When you combine the both of them together, you get an iron
+
+31
+00:01:38,158 --> 00:01:39,937
+condor, sometimes abbreviated as just an
+
+32
+00:01:39,937 --> 00:01:43,199
+IC, and you're profiting on time decay by being long theta.
+
+33
+00:01:43,400 --> 00:01:48,500
+So that means as long as the price stays between your strike prices that you've shorted, you'd profit.
+
+34
+00:01:48,700 --> 00:01:51,500
+You don't need to hold the strategy until expiration.
+
+35
+00:01:51,600 --> 00:01:56,200
+You just need it to stay within your zones for a certain amount of time, and that's how you profit.
+
+36
+00:01:56,300 --> 00:02:00,100
+And what you're essentially doing is selling these options and collecting a premium.
+
+37
+00:02:00,200 --> 00:02:02,096
+So by selling them, it falls under the
+
+38
+00:02:02,096 --> 00:02:06,599
+category of a credit spread, and then you're looking to buy back the iron condor at a cheaper price.
+
+39
+00:02:06,600 --> 00:02:12,300
+So in other words, if I sell someone an iron condor for nine bucks, that means I've collected $900 in credit.
+
+40
+00:02:12,600 --> 00:02:15,766
+And then I might be looking to buy back the iron condor
+
+41
+00:02:15,766 --> 00:02:17,877
+for a cheaper price when it's maybe going
+
+42
+00:02:17,877 --> 00:02:21,571
+for negative $7, and then I'll be buying it back from them for essentially 700 bucks.
+
+43
+00:02:22,400 --> 00:02:24,900
+And the difference between the two is 200 bucks.
+
+44
+00:02:24,900 --> 00:02:29,300
+And that would mean that's how much I've profit on this particular iron condor, hypothetically speaking.
+
+45
+00:02:29,500 --> 00:02:32,751
+Now, if you have any experience with credit spreads, you know, you'll
+
+46
+00:02:32,751 --> 00:02:37,899
+generally need to put up a decent amount of capital to receive a small amount of profits, relatively speaking.
+
+47
+00:02:38,100 --> 00:02:41,004
+The reason we run strategies like this is because the
+
+48
+00:02:41,004 --> 00:02:44,199
+probability of success is generally much higher than picking a direction.
+
+49
+00:02:44,500 --> 00:02:47,242
+And as long as you know how to manage the trade, you
+
+50
+00:02:47,242 --> 00:02:49,070
+end up never really taking on the max
+
+51
+00:02:49,070 --> 00:02:52,498
+loss, of course, unless you hold it into expiration, which is not something that's suggested.
+
+52
+00:02:52,800 --> 00:02:55,091
+If we were to build an iron condo right now,
+
+53
+00:02:55,091 --> 00:02:58,299
+what I have on the chart is just very key resistance and support levels.
+
+54
+00:02:58,400 --> 00:03:02,500
+So this is the most recent. strong resistance level up here on the SPX.
+
+55
+00:03:02,600 --> 00:03:07,200
+So this is the SPX daily timeframe, which is 4,325.
+
+56
+00:03:07,200 --> 00:03:12,200
+And now right here, we have 3,720 as the most recent very strong support.
+
+57
+00:03:12,500 --> 00:03:14,900
+So if we were looking to run an iron condor, we might
+
+58
+00:03:14,900 --> 00:03:16,500
+look at a chart, which is one way
+
+59
+00:03:16,500 --> 00:03:19,900
+some people do it, but it's not the way that I think most professionals approach iron condors.
+
+60
+00:03:19,900 --> 00:03:24,200
+They're generally looking at the deltas of these positions, but let's just say we were to run an iron condor.
+
+61
+00:03:24,200 --> 00:03:28,000
+We think the SPX is going to stay within this range over the next couple of weeks.
+
+62
+00:03:28,200 --> 00:03:30,918
+We can say maybe we'll sell this strike price up here and
+
+63
+00:03:30,918 --> 00:03:33,636
+then we'll buy this strike price up here because we're thinking if
+
+64
+00:03:33,636 --> 00:03:34,995
+price does go up to here,
+
+65
+00:03:34,995 --> 00:03:36,354
+it's likely to reach some sort
+
+66
+00:03:36,354 --> 00:03:39,298
+of resistance and then price will be rejected and it'll come back down.
+
+67
+00:03:39,500 --> 00:03:42,029
+The only two indicators on the chart right now are this simple
+
+68
+00:03:42,029 --> 00:03:43,504
+moving average, which is this 50 simple moving
+
+69
+00:03:43,504 --> 00:03:46,876
+average. And then we have the 200 daily moving average or the simple moving average up there.
+
+70
+00:03:47,400 --> 00:03:50,089
+And as a trader, you might speculate that maybe if price got
+
+71
+00:03:50,089 --> 00:03:53,675
+back up to the 200 day moving average, it might reject just like it happens back here.
+
+72
+00:03:54,000 --> 00:03:55,500
+This was a great short trade.
+
+73
+00:03:55,800 --> 00:03:57,871
+And if price was to get back up to the
+
+74
+00:03:57,871 --> 00:04:01,392
+200 day moving average, you might tell yourself it will probably reject and come back to right here.
+
+75
+00:04:01,700 --> 00:04:04,500
+Now, the market tends to consolidate more than it trends.
+
+76
+00:04:04,800 --> 00:04:06,518
+This is 2022. So things have been very
+
+77
+00:04:06,518 --> 00:04:09,954
+volatile and we have been getting some very strong short term trends right here.
+
+78
+00:04:10,200 --> 00:04:11,509
+This is a very aggressive move
+
+79
+00:04:11,509 --> 00:04:12,818
+up, just like this was a
+
+80
+00:04:12,818 --> 00:04:14,127
+very aggressive move down. And this
+
+81
+00:04:14,127 --> 00:04:17,399
+was also a very aggressive move up. And this is a very aggressive move down.
+
+82
+00:04:17,400 --> 00:04:19,200
+So things have been very volatile this year.
+
+83
+00:04:19,200 --> 00:04:21,043
+If we just zoom out for a second,
+
+84
+00:04:21,043 --> 00:04:24,499
+we can see that's not a normal market considering how wide these ranges have been.
+
+85
+00:04:24,700 --> 00:04:28,100
+If we look back here, we can see that this even was not necessarily a normal market.
+
+86
+00:04:28,100 --> 00:04:32,200
+But in recent times, since the crash of COVID, COVID, we can see we've been a strong uptrend.
+
+87
+00:04:32,500 --> 00:04:37,900
+But even during this uptrend, we can see we only were dealing with a couple of very aggressive pullbacks here.
+
+88
+00:04:38,200 --> 00:04:40,104
+And generally, even when price pulls back, it
+
+89
+00:04:40,104 --> 00:04:43,199
+tends to be choppy and it tends to consolidate on its way down.
+
+90
+00:04:43,400 --> 00:04:45,800
+It's very rarely going to do this type of price action here.
+
+91
+00:04:45,800 --> 00:04:48,268
+And this is what makes it a little bit scary for a
+
+92
+00:04:48,268 --> 00:04:49,296
+year like this, considering the
+
+93
+00:04:49,296 --> 00:04:50,735
+type of drops we've been having, as
+
+94
+00:04:50,735 --> 00:04:52,997
+well as the bear market rallies that we've also been having.
+
+95
+00:04:53,000 --> 00:04:55,307
+So trading iron condors this year makes sense if you're
+
+96
+00:04:55,307 --> 00:04:56,691
+new to this and you've tried
+
+97
+00:04:56,691 --> 00:04:58,998
+it and you failed because it's very difficult this year.
+
+98
+00:04:59,000 --> 00:05:01,052
+Because even if we zoom back to this to last
+
+99
+00:05:01,052 --> 00:05:02,694
+year, we can see if you ran an
+
+100
+00:05:02,694 --> 00:05:06,799
+iron condor, maybe around a day like this, which probably wouldn't have been a good day to run one anyway.
+
+101
+00:05:07,000 --> 00:05:11,100
+You can see about a month and a half later, price was right back to where the spot price was.
+
+102
+00:05:11,200 --> 00:05:12,313
+And then the same thing here, if you
+
+103
+00:05:12,313 --> 00:05:14,399
+run an iron condor here, we can see price kind of came back to it.
+
+104
+00:05:14,700 --> 00:05:16,338
+If you ran an iron condor here, we
+
+105
+00:05:16,338 --> 00:05:18,999
+can see price kind of came back to that strike price right there.
+
+106
+00:05:19,300 --> 00:05:22,100
+But if we zoom out, the same thing has in a sense been happening.
+
+107
+00:05:22,100 --> 00:05:24,000
+So let's just say you decided to run an iron condor here.
+
+108
+00:05:24,300 --> 00:05:26,150
+Yes, price did come back to it, but
+
+109
+00:05:26,150 --> 00:05:28,695
+you'd have to deal with a very violent negative P&L
+
+110
+00:05:28,695 --> 00:05:30,777
+while all of this has happened, why you wait
+
+111
+00:05:30,777 --> 00:05:33,090
+for a price to come back to within your iron
+
+112
+00:05:33,090 --> 00:05:34,246
+condor or return to the
+
+113
+00:05:34,246 --> 00:05:36,328
+spot price in which you open the iron condor.
+
+114
+00:05:36,400 --> 00:05:39,400
+So what we have on the chart, we're going to go over a couple examples.
+
+115
+00:05:39,500 --> 00:05:41,472
+One is what I'm going to label a standard iron
+
+116
+00:05:41,472 --> 00:05:43,049
+condor, and then one is going to be
+
+117
+00:05:43,049 --> 00:05:46,599
+one that's a little bit tighter, and it's more so the type of iron condors that I run.
+
+118
+00:05:47,000 --> 00:05:49,012
+Using different approaches, I might look at gamma
+
+119
+00:05:49,012 --> 00:05:51,024
+exposure, or I might look at other key
+
+120
+00:05:51,024 --> 00:05:54,798
+technical levels or quantitative levels to decide which are going to be my short strikes.
+
+121
+00:05:54,800 --> 00:05:58,100
+So as we remember these strike prices right here, let's look at the options chain.
+
+122
+00:05:58,500 --> 00:05:59,637
+And another thing you will generally want to do is
+
+123
+00:05:59,637 --> 00:06:00,319
+you will generally want to do
+
+124
+00:06:00,319 --> 00:06:01,798
+a little bit of a to do is go further out in time.
+
+125
+00:06:01,800 --> 00:06:06,000
+So it's suggested to go maybe 35 days as a minimum as your expiration.
+
+126
+00:06:06,000 --> 00:06:07,982
+If you're looking to swing trade income-based iron
+
+127
+00:06:07,982 --> 00:06:09,468
+condors, because you'll, the whole point
+
+128
+00:06:09,468 --> 00:06:11,698
+of why we run these again is for consistency.
+
+129
+00:06:12,000 --> 00:06:13,700
+You'll win a lot more than you lose.
+
+130
+00:06:13,700 --> 00:06:15,506
+So as long as you have proper risk management in
+
+131
+00:06:15,506 --> 00:06:16,409
+place and you know how
+
+132
+00:06:16,409 --> 00:06:17,312
+to defend them, you'll end
+
+133
+00:06:17,312 --> 00:06:19,298
+up with a positive expectancy at the end of the year.
+
+134
+00:06:19,400 --> 00:06:24,200
+But instead of using 35 days till expiration, I like to pay attention to just the monthly expirations right here.
+
+135
+00:06:24,200 --> 00:06:29,200
+So we've already passed this expiration right here. It's not necessarily past it, but it's too soon.
+
+136
+00:06:29,200 --> 00:06:31,400
+It's the six, it's only six days till expiration.
+
+137
+00:06:31,700 --> 00:06:33,553
+So I like to jump out to the following month
+
+138
+00:06:33,553 --> 00:06:35,035
+and we're going to use the AM expiration
+
+139
+00:06:35,035 --> 00:06:35,776
+right here, just because
+
+140
+00:06:35,776 --> 00:06:36,888
+it tends to be a little
+
+141
+00:06:36,888 --> 00:06:39,297
+bit more liquidity if you're looking to trade the options well in advance.
+
+142
+00:06:39,400 --> 00:06:42,200
+So 41 days till expiration, we'll drop this down right here.
+
+143
+00:06:42,300 --> 00:06:44,156
+And if we take a look at the
+
+144
+00:06:44,156 --> 00:06:47,868
+deltas, this is this column right here, we can see that this is a negative 15 delta.
+
+145
+00:06:48,100 --> 00:06:51,700
+So this would be our short strike in which we're going to use for this hypothetical example.
+
+146
+00:06:52,000 --> 00:06:54,191
+And if we scroll all the way down
+
+147
+00:06:54,191 --> 00:06:58,299
+to the call side and we were to decide to use something like a point.
+
+148
+00:06:58,700 --> 00:07:00,479
+11 delta we can see that we have
+
+149
+00:07:00,479 --> 00:07:02,258
+the 43 we can see that we have
+
+150
+00:07:02,258 --> 00:07:04,037
+the 4390 if we come back to the
+
+151
+00:07:04,037 --> 00:07:05,816
+chart we can see 4390 puts us all
+
+152
+00:07:05,816 --> 00:07:07,284
+the way up here so well
+
+153
+00:07:07,284 --> 00:07:08,752
+past our resistance level and if
+
+154
+00:07:08,752 --> 00:07:12,179
+we scroll back up here and we take a look at our uh negative 15
+
+155
+00:07:14,200 --> 00:07:16,739
+delta on the put side we see we
+
+156
+00:07:16,739 --> 00:07:21,182
+have 3745 so that puts us right around here so a little bit above the
+
+157
+00:07:22,000 --> 00:07:23,600
+support and that's only just because the market
+
+158
+00:07:23,600 --> 00:07:25,200
+has been up for the past couple of
+
+159
+00:07:25,200 --> 00:07:26,000
+days but let's just
+
+160
+00:07:26,000 --> 00:07:27,200
+say we opened something like this
+
+161
+00:07:27,200 --> 00:07:30,000
+yesterday the deltas wouldn't have been that different and it probably would have coincided
+
+162
+00:07:30,200 --> 00:07:33,100
+with this massive resistance and this massive potential support.
+
+163
+00:07:33,100 --> 00:07:34,914
+So potential resistance, potential support, because we
+
+164
+00:07:34,914 --> 00:07:36,728
+don't know yet until price gets up
+
+165
+00:07:36,728 --> 00:07:40,098
+to that level and then rejects, can we actually label it as resistance?
+
+166
+00:07:40,200 --> 00:07:42,100
+I went ahead and mocked up that iron condor.
+
+167
+00:07:42,100 --> 00:07:44,100
+So this is the call strike that we mentioned.
+
+168
+00:07:44,100 --> 00:07:50,700
+So again, shorting the 4,390 and the delta on that position is about 0.11, 0.12 or so.
+
+169
+00:07:51,200 --> 00:07:53,521
+And if we scroll down here, we can see that
+
+170
+00:07:53,521 --> 00:07:54,681
+this is the short put
+
+171
+00:07:54,681 --> 00:07:57,466
+in which we were just talking about. So having a delta of 0.15.
+
+172
+00:07:57,900 --> 00:07:59,800
+And this is what our iron condor would look like.
+
+173
+00:08:00,100 --> 00:08:02,201
+As we take a look at the Greeks, we can
+
+174
+00:08:02,201 --> 00:08:03,882
+see it has a slightly negative delta, which
+
+175
+00:08:03,882 --> 00:08:05,353
+is something you generally want to do
+
+176
+00:08:05,353 --> 00:08:07,034
+when you're running an iron condor to give
+
+177
+00:08:07,034 --> 00:08:08,505
+yourself a little bit of a buffer
+
+178
+00:08:08,505 --> 00:08:12,497
+because the iron condor is a short vega trade, which means you benefit from a decrease in implied volatility.
+
+179
+00:08:12,800 --> 00:08:16,700
+And generally implied volatility increases whenever the market's pulling back.
+
+180
+00:08:16,700 --> 00:08:19,020
+So in this case, if the market was to pull
+
+181
+00:08:19,020 --> 00:08:22,500
+back, you're going to benefit from making it start off as a negative delta position.
+
+182
+00:08:22,700 --> 00:08:28,800
+And that in theory should counter the increase in implied volatility, which is hurting you because you're short vega.
+
+183
+00:08:29,300 --> 00:08:33,100
+What you're getting paid from is the theta or the time decay in this case.
+
+184
+00:08:33,100 --> 00:08:35,166
+So right now this is saying that it
+
+185
+00:08:35,166 --> 00:08:37,232
+has a time decay option strat, which is
+
+186
+00:08:37,232 --> 00:08:42,398
+my favorite platform, aside from obviously the thinkorswim risk profile, but my favorite platform for analyzing a trade very quickly.
+
+187
+00:08:42,800 --> 00:08:44,100
+It's multiplying it by 100.
+
+188
+00:08:44,100 --> 00:08:45,500
+So it's doing the math for us right now.
+
+189
+00:08:45,500 --> 00:08:47,700
+And it's saying that the theta in this case is about 12 bucks.
+
+190
+00:08:47,700 --> 00:08:50,800
+So that's essentially how much this spread will pocket every day.
+
+191
+00:08:50,800 --> 00:08:54,900
+Again, not accounting for implied volatility and also not accounting for the delta.
+
+192
+00:08:54,900 --> 00:08:56,784
+If it was in a vacuum and the only thing
+
+193
+00:08:56,784 --> 00:08:59,799
+that mattered was time decay, then this is how much this strategy would make per day.
+
+194
+00:09:00,000 --> 00:09:02,975
+If we take a look at how much capital this
+
+195
+00:09:02,975 --> 00:09:05,057
+is required, we see we need about
+
+196
+00:09:05,057 --> 00:09:11,007
+almost $2,000 and we're collecting about $550 in credit and $1,950 in terms of collateral or how much margin you're going to need.
+
+197
+00:09:12,000 --> 00:09:15,500
+The max amount of profit you can make on a trade like this is the credit received.
+
+198
+00:09:15,600 --> 00:09:18,350
+Now, what's often taught or what's often mentioned is you
+
+199
+00:09:18,350 --> 00:09:20,825
+should look for about 25% return on your credit as
+
+200
+00:09:20,825 --> 00:09:23,025
+a profit target because all the studies, all
+
+201
+00:09:23,025 --> 00:09:24,950
+the guys that have been doing this
+
+202
+00:09:24,950 --> 00:09:26,875
+for a couple of decades have a
+
+203
+00:09:26,875 --> 00:09:29,625
+lot more experience than I have, especially running iron condors.
+
+204
+00:09:30,200 --> 00:09:32,700
+They've all taught that looking for about 25% on profit
+
+205
+00:09:32,700 --> 00:09:34,922
+from all their backtesting over, I don't know,
+
+206
+00:09:34,922 --> 00:09:36,588
+10 to 15 years of research has shown 25%
+
+207
+00:09:38,600 --> 00:09:41,364
+return on credit is a good expectancy to have if
+
+208
+00:09:41,364 --> 00:09:43,575
+you're looking for consistency because you'll free up
+
+209
+00:09:43,575 --> 00:09:47,998
+your capital and then you're able to run multiple of these iron condors throughout the year.
+
+210
+00:09:48,300 --> 00:09:50,900
+And then you're not holding all the way until expiration.
+
+211
+00:09:50,900 --> 00:09:54,600
+It ends up not being worth it for the extra 75% that you're going to make.
+
+212
+00:09:54,800 --> 00:09:59,000
+You have to deal with a lot more fluctuations in price and a lot more fluctuations in your P&L.
+
+213
+00:09:59,600 --> 00:10:08,600
+25% return on credit usually ends up being between 7% to 10% return on your capital or return on margin.
+
+214
+00:10:09,100 --> 00:10:10,789
+So ROC, as you can abbreviate it,
+
+215
+00:10:10,789 --> 00:10:11,754
+return on capital. 7% to
+
+216
+00:10:11,754 --> 00:10:15,616
+10% is pretty good considering you're probably going to need to be in these type of trades.
+
+217
+00:10:16,100 --> 00:10:22,100
+Usually about 8 to, in my experience, 8 to 16 days is usually how long the whole time would be.
+
+218
+00:10:22,400 --> 00:10:25,800
+Again, that's the averages and just with my personal experiences.
+
+219
+00:10:26,000 --> 00:10:30,000
+For purposes of this video, this is what I'm going to label as a standard iron condor.
+
+220
+00:10:30,100 --> 00:10:34,300
+You can see that the credit received is much less than how much margin you need.
+
+221
+00:10:34,600 --> 00:10:40,700
+This has much higher probability of profit because of how wide the strikes are, the short strikes are.
+
+222
+00:10:40,900 --> 00:10:45,900
+It's well past the one standard deviation and it's well past the major resistance levels on the chart.
+
+223
+00:10:46,200 --> 00:10:48,750
+As mentioned before, iron condor traders are not necessarily looking
+
+224
+00:10:48,750 --> 00:10:51,300
+at support and resistance on the charts or if they
+
+225
+00:10:51,300 --> 00:10:53,340
+label themselves a purist, they're paying attention to
+
+226
+00:10:53,340 --> 00:10:56,400
+the deltas and they're also managing their positions based on their deltas.
+
+227
+00:10:56,700 --> 00:11:00,800
+This just happens to coincide with our potential resistance and support on our chart.
+
+228
+00:11:00,800 --> 00:11:03,690
+I want to switch over to an iron condor that was opened
+
+229
+00:11:03,690 --> 00:11:06,099
+last week, Monday, which would be this one right here.
+
+230
+00:11:06,100 --> 00:11:09,500
+We're going to call this the standard iron condor opened on this day.
+
+231
+00:11:09,500 --> 00:11:11,465
+So this was last week, Monday. We're
+
+232
+00:11:11,465 --> 00:11:13,430
+now dealing with a Friday. So 10 trading
+
+233
+00:11:13,430 --> 00:11:16,518
+days or nine trading days later as Monday was a holiday.
+
+234
+00:11:17,000 --> 00:11:20,500
+The reason this one is being called the standard iron condor is
+
+235
+00:11:20,500 --> 00:11:23,708
+because this short call strike up here had a delta of 0.10.
+
+236
+00:11:24,500 --> 00:11:29,500
+And then the short put down here at the time in which this was opened had a negative delta of 0.15.
+
+237
+00:11:29,800 --> 00:11:31,895
+Now, puts are generally higher in delta just
+
+238
+00:11:31,895 --> 00:11:35,299
+because of the fact that there's usually a skew between calls and puts.
+
+239
+00:11:35,500 --> 00:11:36,900
+And that's for a variety of reasons.
+
+240
+00:11:36,900 --> 00:11:39,778
+But one way to keep it simple is people are
+
+241
+00:11:39,778 --> 00:11:42,656
+willing to pay a premium to purchase insurance on their
+
+242
+00:11:42,656 --> 00:11:44,094
+portfolios or hedge funds or
+
+243
+00:11:44,094 --> 00:11:45,532
+anybody or most long term
+
+244
+00:11:45,532 --> 00:11:48,697
+investors or market participants are willing to pay that extra premium.
+
+245
+00:11:48,800 --> 00:11:51,753
+So put is generally going to be more expensive, which means you're
+
+246
+00:11:51,753 --> 00:11:55,199
+going to collect a little bit more premium from selling puts versus selling calls.
+
+247
+00:11:55,300 --> 00:11:59,400
+And that's just because, again, more people are interested in actually buying insurance or buying puts.
+
+248
+00:11:59,700 --> 00:12:00,000
+Let's jump up.
+
+249
+00:12:00,000 --> 00:12:02,162
+over to option strap and now we're taking
+
+250
+00:12:02,162 --> 00:12:04,324
+a look at the risk profile for that
+
+251
+00:12:04,324 --> 00:12:09,729
+iron condor and in this case when it was open it was 53 days till expiration it was using the october
+
+252
+00:12:10,500 --> 00:12:12,757
+pm expiration spx options right here october 21st
+
+253
+00:12:12,757 --> 00:12:15,014
+monthly pm expiration and at the time it
+
+254
+00:12:15,014 --> 00:12:17,271
+was open we can see that the put
+
+255
+00:12:17,271 --> 00:12:22,068
+delta was 0.16 so not 0.15 0.16 in this case and then we can see that the call delta is 0.10
+
+256
+00:12:23,800 --> 00:12:26,000
+a little bit wider than what some might suggest some
+
+257
+00:12:26,000 --> 00:12:28,860
+might say use a put delta of 0.15 and use a call delta of 0.11
+
+258
+00:12:29,900 --> 00:12:32,109
+others might say use a put delta of 0.16 and
+
+259
+00:12:32,109 --> 00:12:34,318
+then use a call delta of maybe 0.12 again there's
+
+260
+00:12:34,318 --> 00:12:36,281
+so many different ways and everyone has their
+
+261
+00:12:36,281 --> 00:12:37,589
+own particular strategy but for purposes
+
+262
+00:12:37,589 --> 00:12:38,897
+of this video i'm keeping this
+
+263
+00:12:38,897 --> 00:12:39,769
+close to a 0.15 and
+
+264
+00:12:39,769 --> 00:12:41,514
+then this close to about a 0.10 or 0.11 delta
+
+265
+00:12:43,700 --> 00:12:50,900
+and we can see right here the credit received was about 685 dollars and it required 2315 dollars in margin
+
+266
+00:12:51,100 --> 00:12:53,736
+and at the time this was well past an expected
+
+267
+00:12:53,736 --> 00:12:55,845
+implied move or one standard deviation move by
+
+268
+00:12:55,845 --> 00:12:59,535
+this expiration and we can see that it was open on august 29th to 19
+
+269
+00:13:00,300 --> 00:13:03,197
+p.m eastern time the implied volatility at the time was
+
+270
+00:13:03,197 --> 00:13:05,567
+23 according to how option strat calculates this implied volatility
+
+271
+00:13:05,567 --> 00:13:10,835
+but we can see right now that the implied volatility has come down about one percent so it's currently at 22
+
+272
+00:13:11,700 --> 00:13:14,100
+which is good for an iron condor right
+
+273
+00:13:14,100 --> 00:13:18,000
+now currently it's up 30 and the way option strat calculates is saying it's 30
+
+274
+00:13:19,200 --> 00:13:21,360
+on the credits so not 30 of your
+
+275
+00:13:21,360 --> 00:13:23,520
+margin again 30 of the credit puts it
+
+276
+00:13:23,520 --> 00:13:25,680
+puts it up about 205 the iron condor
+
+277
+00:13:25,680 --> 00:13:29,074
+that i'm going to call as non-standard i'm going to switch
+
+278
+00:13:30,100 --> 00:13:32,046
+over to that right here is the iron
+
+279
+00:13:32,046 --> 00:13:33,749
+condor that i generally run again it's
+
+280
+00:13:33,749 --> 00:13:37,399
+not based on delta it's a little bit biased it's a little bit i enter
+
+281
+00:13:37,800 --> 00:13:40,127
+i put in a little bit of discretion which is
+
+282
+00:13:40,127 --> 00:13:42,454
+something that you probably don't want to do when you're
+
+283
+00:13:42,454 --> 00:13:44,781
+trading iron condors again it's meant to be non-discretionary it's
+
+284
+00:13:44,781 --> 00:13:46,642
+meant to be an income-based strategy which means
+
+285
+00:13:46,642 --> 00:13:48,271
+you don't care if the market goes
+
+286
+00:13:48,271 --> 00:13:50,598
+up or down you're just following your rules and then
+
+287
+00:13:50,800 --> 00:13:52,960
+over the long run as long as you follow the rules and
+
+288
+00:13:52,960 --> 00:13:55,300
+pay attention to your delta is you're going to end up making money
+
+289
+00:13:55,900 --> 00:14:02,100
+In this case, I was more interested with shorting the 4250 strike and then shorting the 3800 strike.
+
+290
+00:14:02,100 --> 00:14:06,800
+So it was a little bit inside of the support here and a little bit inside of the resistance here.
+
+291
+00:14:07,000 --> 00:14:08,933
+The reason I was interested in doing this is just
+
+292
+00:14:08,933 --> 00:14:09,899
+because of the gamma exposure,
+
+293
+00:14:09,899 --> 00:14:12,799
+as well as a few other reasons when I was looking to enter the trade.
+
+294
+00:14:12,800 --> 00:14:17,400
+I did not think the market was actually going to go down to 3800 and at least not back here.
+
+295
+00:14:17,400 --> 00:14:19,245
+And if it did go down to 3800,
+
+296
+00:14:19,245 --> 00:14:20,826
+I was expecting implied volatility to
+
+297
+00:14:20,826 --> 00:14:22,935
+decrease and then the market would actually reverse.
+
+298
+00:14:23,500 --> 00:14:25,482
+And one thing that's pretty neat for iron
+
+299
+00:14:25,482 --> 00:14:26,473
+condors is if price
+
+300
+00:14:26,473 --> 00:14:29,199
+comes price will generally come back to the spot price within
+
+301
+00:14:29,700 --> 00:14:31,488
+two to three weeks again during normal market
+
+302
+00:14:31,488 --> 00:14:33,052
+conditions you can kind of almost expect
+
+303
+00:14:33,052 --> 00:14:37,299
+that to happen it's just how much pain are you going to have to deal with before that happens
+
+304
+00:14:37,500 --> 00:14:40,012
+it's also good running iron condors whenever implied volatility spikes
+
+305
+00:14:40,012 --> 00:14:42,524
+up and we can see that implied volatility was spiking
+
+306
+00:14:42,524 --> 00:14:47,298
+up because the market had pulled back aggressively from a pair so that's why right around this week here
+
+307
+00:14:47,700 --> 00:14:50,352
+iron condors were very appealing because it's a strategy you
+
+308
+00:14:50,352 --> 00:14:53,004
+want to run when implied volatility spikes because you're short
+
+309
+00:14:53,004 --> 00:14:55,656
+vega and if you're short vega again that means you're
+
+310
+00:14:55,656 --> 00:14:59,899
+benefiting when the implied volatility decreases and that's something that's pretty much always going to happen
+
+311
+00:15:00,200 --> 00:15:02,196
+Whenever there's a spike in implied volatility,
+
+312
+00:15:02,196 --> 00:15:04,192
+it's going to decrease. So you want
+
+313
+00:15:04,192 --> 00:15:07,899
+to keep iron condors in your toolkit to run whenever implied volatility spikes.
+
+314
+00:15:08,100 --> 00:15:10,400
+Now let's take a look at the risk profile for this iron condor.
+
+315
+00:15:10,700 --> 00:15:12,921
+And here it is, the same expiration,
+
+316
+00:15:12,921 --> 00:15:15,142
+the 21st, and the short call is
+
+317
+00:15:15,142 --> 00:15:17,363
+$4,250 and the short put is $3,800 right here.
+
+318
+00:15:18,200 --> 00:15:19,866
+We can see a lot more credit
+
+319
+00:15:19,866 --> 00:15:23,199
+was bought in just from bringing the strike prices in a little bit tighter.
+
+320
+00:15:23,600 --> 00:15:26,500
+And regarding the margin being used, it's a little bit more margin than the other one.
+
+321
+00:15:26,600 --> 00:15:30,300
+So this is $2,800 and then over here it's about $2,300.
+
+322
+00:15:30,500 --> 00:15:32,548
+So a little bit more margin, but you're
+
+323
+00:15:32,548 --> 00:15:34,340
+collecting a lot more collateral compared to
+
+324
+00:15:34,340 --> 00:15:36,900
+how much you're receiving from running a standard iron condor.
+
+325
+00:15:37,200 --> 00:15:39,733
+And that's just because the premium you're collecting from selling
+
+326
+00:15:39,733 --> 00:15:42,266
+a put and selling a call that's closer to the
+
+327
+00:15:42,266 --> 00:15:43,785
+spot price, it means you're bringing
+
+328
+00:15:43,785 --> 00:15:45,304
+in so much more premium, which
+
+329
+00:15:45,304 --> 00:15:48,597
+increases how much credit you're receiving when you first sell the iron condor.
+
+330
+00:15:48,800 --> 00:15:50,280
+As we can see right now, this
+
+331
+00:15:50,280 --> 00:15:51,337
+iron condor is currently up
+
+332
+00:15:51,337 --> 00:15:54,087
+20%. Again, the market is closed, so these numbers are not fluctuating right now.
+
+333
+00:15:54,400 --> 00:15:56,528
+We can see this is up $425, and
+
+334
+00:15:56,528 --> 00:15:58,352
+this one is up $205. And as
+
+335
+00:15:58,352 --> 00:16:01,392
+mentioned before, these iron condors were opened last week, Monday.
+
+336
+00:16:02,200 --> 00:16:04,871
+Right away, as we compare the P&L between both of
+
+337
+00:16:04,871 --> 00:16:07,299
+these right now, we can see that obviously the non-standard
+
+338
+00:16:07,299 --> 00:16:09,076
+iron condor has produced a much greater
+
+339
+00:16:09,076 --> 00:16:13,137
+result when we're looking at it, or at least when we're just comparing the P&L.
+
+340
+00:16:12,400 --> 00:16:15,000
+So almost twice as much as the standard iron condor.
+
+341
+00:16:15,100 --> 00:16:17,700
+As we can see right here, about $200 and $400.
+
+342
+00:16:18,000 --> 00:16:19,900
+Both of these were opened up right around the same time.
+
+343
+00:16:19,900 --> 00:16:25,600
+So this is at 2.25, again, Eastern time, and this is at 2.19 Eastern time right here.
+
+344
+00:16:25,800 --> 00:16:29,000
+So within 10 minutes of each other. And this was also on a Monday.
+
+345
+00:16:29,200 --> 00:16:30,380
+Now, obviously, This is just
+
+346
+00:16:30,380 --> 00:16:32,032
+one case and it's by no means
+
+347
+00:16:32,032 --> 00:16:35,100
+a sample set of a thousand trades over years and years of data.
+
+348
+00:16:35,300 --> 00:16:40,900
+I'm just sharing, again, my personal experience between different iron condors and why I prefer one way over another.
+
+349
+00:16:41,100 --> 00:16:43,694
+If you have some sort of an edge, I don't necessarily see
+
+350
+00:16:43,694 --> 00:16:45,207
+the reason why not adjust your iron
+
+351
+00:16:45,207 --> 00:16:49,098
+condors or maybe pull them in a little bit to create a little bit more credit for yourself.
+
+352
+00:16:49,500 --> 00:16:51,524
+If you have some sort of an edge
+
+353
+00:16:51,524 --> 00:16:53,801
+on the charts or you're willing to accept the
+
+354
+00:16:53,801 --> 00:16:55,825
+fact that you're going to have a lower
+
+355
+00:16:55,825 --> 00:16:56,584
+probability of success,
+
+356
+00:16:56,584 --> 00:16:58,355
+because again, the tighter you make your
+
+357
+00:16:58,355 --> 00:17:00,379
+iron condors, obviously the higher likelihood it is
+
+358
+00:17:00,379 --> 00:17:01,897
+of your short strikes getting touched.
+
+359
+00:17:02,200 --> 00:17:06,100
+Certain people make adjustments once their short strike is touched.
+
+360
+00:17:06,400 --> 00:17:08,800
+Other people make adjustments when their deltas change.
+
+361
+00:17:09,000 --> 00:17:11,200
+Other people hold it until expirations.
+
+362
+00:17:11,300 --> 00:17:15,400
+Some people will wait for their long strikes to get broken before they decide to do something.
+
+363
+00:17:15,400 --> 00:17:20,000
+Again, there's so many different ways to trade and there's so many different ways to trade iron condors specifically.
+
+364
+00:17:20,200 --> 00:17:22,144
+Something I forgot to mention, if we
+
+365
+00:17:22,144 --> 00:17:24,366
+take a look at this right here, I
+
+366
+00:17:24,366 --> 00:17:29,643
+forgot to log the deltas, but the put delta was negative 0.24 and the call delta, I believe, was about 0.28.
+
+367
+00:17:30,500 --> 00:17:32,700
+So I shorted a call that had a little bit higher delta.
+
+368
+00:17:32,700 --> 00:17:34,800
+Now, something worth mentioning is that the
+
+369
+00:17:34,800 --> 00:17:36,900
+deltas are also used as a proxy
+
+370
+00:17:36,900 --> 00:17:40,200
+as a probability of this strike price expiring in the money.
+
+371
+00:17:40,400 --> 00:17:44,089
+So in this case, the fact that this put is
+
+372
+00:17:44,089 --> 00:17:46,671
+a delta of 0.15, that means it has
+
+373
+00:17:46,671 --> 00:17:50,360
+about an 85% chance of being outside the money at expiration.
+
+374
+00:17:51,400 --> 00:17:53,700
+Some people like to look at that and say, okay,
+
+375
+00:17:53,700 --> 00:17:55,310
+with an 85% chance, it creates a higher
+
+376
+00:17:55,310 --> 00:17:58,070
+odds versus if you were to sell, say, for example, this put.
+
+377
+00:17:58,400 --> 00:17:59,860
+If you sell this put right here, it
+
+378
+00:17:59,860 --> 00:18:00,955
+means It has a 70% chance that
+
+379
+00:18:00,955 --> 00:18:02,415
+it's going to be outside of the money.
+
+380
+00:18:02,700 --> 00:18:05,500
+And if you're selling a put, it means you don't want it to go in the money.
+
+381
+00:18:05,800 --> 00:18:11,200
+So it has significantly less probability of success than selling this one all the way out here.
+
+382
+00:18:11,300 --> 00:18:13,700
+The trade-off is that you're receiving almost no credit.
+
+383
+00:18:14,000 --> 00:18:16,700
+So by selling this put, you're only getting about $30.
+
+384
+00:18:16,800 --> 00:18:19,400
+And if you're selling this put all the way down here, you're getting $64.
+
+385
+00:18:19,600 --> 00:18:22,300
+So you're getting two times as much money by selling this put.
+
+386
+00:18:22,500 --> 00:18:26,300
+But obviously, you have a lower odds of the trade working out in your favor.
+
+387
+00:18:26,300 --> 00:18:28,600
+So that's obviously the trade-off as in anything with trading.
+
+388
+00:18:28,700 --> 00:18:31,400
+Not everything is going to be 100% and not everything is going to be easy.
+
+389
+00:18:31,400 --> 00:18:33,000
+Everything has some sort of a trade-off.
+
+390
+00:18:33,100 --> 00:18:35,800
+Coming around to the conclusion of this video, I'm just going to show you guys again.
+
+391
+00:18:35,800 --> 00:18:40,300
+This is the non-standard iron condor and this would be what can be considered a standard iron condor.
+
+392
+00:18:40,500 --> 00:18:44,000
+And then I'm going to show you guys the P&L as we look through time.
+
+393
+00:18:44,000 --> 00:18:47,600
+So this right here was a few days ago. So this was Tuesday right before the market opened.
+
+394
+00:18:47,700 --> 00:18:52,200
+So eight days after the iron condor was open, this would be the non-standard iron condor.
+
+395
+00:18:52,300 --> 00:18:54,284
+And we can see that a few days
+
+396
+00:18:54,284 --> 00:18:56,268
+later, so eight days later, which is great,
+
+397
+00:18:56,268 --> 00:18:58,252
+the return was about 16% on credit right here.
+
+398
+00:18:58,700 --> 00:19:03,300
+And at the same time, this iron condor, again, these screenshots were taken 15 minutes before the market opened.
+
+399
+00:19:03,600 --> 00:19:05,700
+We can see that this one was only up 13%.
+
+400
+00:19:06,200 --> 00:19:10,200
+So a little bit over a week later, you're already hitting a much better return in this case here.
+
+401
+00:19:10,300 --> 00:19:12,025
+And then all the way, this
+
+402
+00:19:12,025 --> 00:19:13,750
+is now Thursday right after the
+
+403
+00:19:13,750 --> 00:19:15,187
+market opened. So yesterday, 10 days
+
+404
+00:19:15,187 --> 00:19:16,624
+later, this is now hitting 17%.
+
+405
+00:19:17,300 --> 00:19:21,200
+This would be the standard iron condor and this would be the non-standard iron condor.
+
+406
+00:19:21,200 --> 00:19:22,680
+So bringing in a little bit more
+
+407
+00:19:22,680 --> 00:19:24,372
+credit, we can see that this one is
+
+408
+00:19:24,372 --> 00:19:26,698
+already hitting pretty much what would be considered a profit target.
+
+409
+00:19:26,900 --> 00:19:29,800
+As we look at them currently, we can see 20% return right here.
+
+410
+00:19:30,100 --> 00:19:31,600
+This one is currently at 30%.
+
+411
+00:19:31,600 --> 00:19:34,094
+So if you're following the rules, you'll pretty much
+
+412
+00:19:34,094 --> 00:19:36,588
+be closing this iron condo out already because it's
+
+413
+00:19:36,588 --> 00:19:38,250
+hit 25% return on credit and it's
+
+414
+00:19:38,250 --> 00:19:40,467
+currently up over 8% or 9% or so on margin.
+
+415
+00:19:41,500 --> 00:19:43,861
+If you're trading an iron condo like this one, you
+
+416
+00:19:43,861 --> 00:19:45,749
+don't need to hold all the way for
+
+417
+00:19:45,749 --> 00:19:49,290
+the 25% return because a 20% of credit in this case ends up being about 15% on margin.
+
+418
+00:19:50,300 --> 00:19:52,437
+So you're well past the 10% target that you would
+
+419
+00:19:52,437 --> 00:19:54,812
+generally have whenever you're looking to run some sort of
+
+420
+00:19:54,812 --> 00:19:56,712
+credit spread like this, which means this trade
+
+421
+00:19:56,712 --> 00:19:59,324
+would have been closed yesterday, even though it's just 20% of credit.
+
+422
+00:20:00,100 --> 00:20:02,144
+And this trade you would have probably had
+
+423
+00:20:02,144 --> 00:20:04,188
+to hold also until yesterday as the actual
+
+424
+00:20:04,188 --> 00:20:06,743
+profit target was closer to about 180 bucks, if I believe.
+
+425
+00:20:07,300 --> 00:20:11,600
+Lastly, I just want to show you guys the drawdown or the P&L as these trades were opened.
+
+426
+00:20:11,800 --> 00:20:13,657
+And if we take a look at the
+
+427
+00:20:13,657 --> 00:20:15,282
+standard iron condor, this right here is
+
+428
+00:20:15,282 --> 00:20:18,299
+probably my last reason for why I prefer to trade the other one.
+
+429
+00:20:18,500 --> 00:20:21,500
+As we can see that it ends up being pretty flat for a while.
+
+430
+00:20:21,500 --> 00:20:23,720
+And as it took a while in this case for
+
+431
+00:20:23,720 --> 00:20:26,162
+the P&L to actually start showing in comparison to this
+
+432
+00:20:26,162 --> 00:20:27,938
+one right here, we can see that the
+
+433
+00:20:27,938 --> 00:20:28,866
+P&L, yes, it
+
+434
+00:20:28,866 --> 00:20:30,490
+had a little bit of a drawdown
+
+435
+00:20:30,490 --> 00:20:33,275
+also as most iron condors will have when you first open them.
+
+436
+00:20:32,800 --> 00:20:34,886
+But then we can see that the P&L,
+
+437
+00:20:34,886 --> 00:20:36,508
+this was well within profit much longer
+
+438
+00:20:36,508 --> 00:20:38,130
+and it's just been an easier hold.
+
+439
+00:20:38,300 --> 00:20:40,124
+Holding something like this tends to be a
+
+440
+00:20:40,124 --> 00:20:41,720
+little bit difficult and that's something that's
+
+441
+00:20:41,720 --> 00:20:44,000
+important. What I don't think is often discussed that much.
+
+442
+00:20:44,100 --> 00:20:46,277
+Yes, if the end, let's just say at
+
+443
+00:20:46,277 --> 00:20:48,454
+the end of the day, this trade ends
+
+444
+00:20:48,454 --> 00:20:50,359
+up pulling in 600 bucks, but you have
+
+445
+00:20:50,359 --> 00:20:53,081
+to be down 1800 bucks to actually see that $600 in profit.
+
+446
+00:20:54,100 --> 00:20:56,400
+That's not really a trade that I want to be in personally.
+
+447
+00:20:56,600 --> 00:20:58,400
+And that's my main reason for trading the other one.
+
+448
+00:20:58,400 --> 00:21:00,000
+Psychologically, it's probably because I didn't.
+
+449
+00:21:00,200 --> 00:21:04,200
+start off trading credit spreads when I first started trading options is something I learned a little bit later.
+
+450
+00:21:04,600 --> 00:21:07,600
+And as mentioned previously, I'm by no means an iron condor expert.
+
+451
+00:21:07,600 --> 00:21:10,085
+So I still have a little bit of the residuals when it
+
+452
+00:21:10,085 --> 00:21:11,742
+comes to momentum based trading and thinking about,
+
+453
+00:21:11,742 --> 00:21:13,399
+hey, I want to risk a dollar to
+
+454
+00:21:13,399 --> 00:21:16,298
+make three or I want to risk a dollar to make at least two.
+
+455
+00:21:16,600 --> 00:21:19,041
+Sometimes I'm looking forward to risk a dollar to make even all
+
+456
+00:21:19,041 --> 00:21:22,499
+the way up to six dollars or so if I'm trading something really far out the money.
+
+457
+00:21:22,700 --> 00:21:27,100
+I'm still coming from this risk reward type of mentality and it's still taking me time.
+
+458
+00:21:27,200 --> 00:21:29,840
+Even though I've run quite a few iron condors over the past
+
+459
+00:21:29,840 --> 00:21:32,700
+two years, it's still, if I see something that, yes, you can risk.
+
+460
+00:21:33,100 --> 00:21:35,125
+Three dollars to make one if you have an 80
+
+461
+00:21:35,125 --> 00:21:37,375
+probability of success and then you know when to cut
+
+462
+00:21:37,375 --> 00:21:39,625
+the trade when it goes wrong or manage it you're
+
+463
+00:21:39,625 --> 00:21:41,200
+going to end up making money this
+
+464
+00:21:41,200 --> 00:21:42,775
+right here i still struggle with and
+
+465
+00:21:42,775 --> 00:21:44,575
+in this case sometimes you're risking four dollars
+
+466
+00:21:45,100 --> 00:21:46,622
+to make one which is why you want
+
+467
+00:21:46,622 --> 00:21:48,144
+to cut it maybe if you're down two
+
+468
+00:21:48,144 --> 00:21:49,666
+dollars if you're only looking to make one
+
+469
+00:21:49,666 --> 00:21:51,188
+because you need to have a win rate
+
+470
+00:21:51,188 --> 00:21:52,520
+that's pretty high so it's just come
+
+471
+00:21:52,520 --> 00:21:53,471
+down so just so at
+
+472
+00:21:53,471 --> 00:21:56,896
+the end of the day it comes down to a personality thing i was just hoping to share
+
+473
+00:21:57,200 --> 00:21:59,623
+I was just hoping to share some of my thoughts
+
+474
+00:21:59,623 --> 00:22:03,499
+as well as sometimes my iron condors are very discretionary, which they're not intended to be.
+
+475
+00:22:03,800 --> 00:22:05,800
+Sometimes my iron condors tend to be a little bit weird.
+
+476
+00:22:05,900 --> 00:22:08,428
+You might see I might run an iron condor or I might
+
+477
+00:22:08,428 --> 00:22:11,378
+talk about one in the future where maybe I might short the 400 to 4200 call.
+
+478
+00:22:12,300 --> 00:22:14,400
+And then I might short the 3800 put.
+
+479
+00:22:14,600 --> 00:22:16,827
+And it's just because I'm actually thinking that the price
+
+480
+00:22:16,827 --> 00:22:19,499
+is going to probably stall out maybe around here and pull back.
+
+481
+00:22:19,500 --> 00:22:24,600
+And then I might run some sort of calendar around here to counter my delta as we're running up.
+
+482
+00:22:24,800 --> 00:22:26,628
+Again, there's so many creative ways to run
+
+483
+00:22:26,628 --> 00:22:29,599
+these trades. And that's one of the things I love about options trading.
+
+484
+00:22:30,800 --> 00:22:33,000
+There's not one way to do any of these things.
+
+485
+00:22:33,000 --> 00:22:35,333
+It all comes down to what works for you, what
+
+486
+00:22:35,333 --> 00:22:38,599
+makes it easy to hold as you're waiting for your profit targets to hit.
+
+487
+00:22:39,000 --> 00:22:41,934
+If I know I can hit my profit target within 14 days, that's something
+
+488
+00:22:41,934 --> 00:22:43,288
+that I'll really look forward to,
+
+489
+00:22:43,288 --> 00:22:46,448
+especially if it means within that 14 days, I don't have to see much red.
+
+490
+00:22:47,100 --> 00:22:48,500
+It just makes me a little bit more comfortable.
+
+491
+00:22:48,600 --> 00:22:52,900
+And then it also makes it easier for me to hold because I'm thinking about this at the beginning.
+
+492
+00:22:53,500 --> 00:22:55,423
+So if you're holding the standard iron condor, and let's
+
+493
+00:22:55,423 --> 00:22:58,499
+just say you're in a few lots, because generally you're running at least a few lots.
+
+494
+00:22:59,100 --> 00:23:03,900
+If you're thinking about 10K in capital, and again, you're looking to make some sort of income off of this.
+
+495
+00:23:04,500 --> 00:23:06,245
+This right here makes me nervous because the whole time
+
+496
+00:23:06,245 --> 00:23:07,990
+I'm like, okay, I know I have a lot of
+
+497
+00:23:07,990 --> 00:23:08,862
+margin out there and I
+
+498
+00:23:08,862 --> 00:23:10,083
+know I have a high probability of
+
+499
+00:23:10,083 --> 00:23:11,129
+success and I know I'm going
+
+500
+00:23:11,129 --> 00:23:13,397
+to hit my profit target, but I can't shake sometimes thinking about this.
+
+501
+00:23:13,700 --> 00:23:15,700
+At least I still haven't outgrown that phase yet.
+
+502
+00:23:16,000 --> 00:23:19,121
+And if we take a look at this one and we have the same
+
+503
+00:23:19,121 --> 00:23:21,350
+almost 10K in capital being used, so let's just say
+
+504
+00:23:21,350 --> 00:23:22,687
+three to keep it pretty fair
+
+505
+00:23:22,687 --> 00:23:24,470
+under 10K, this makes it a little bit
+
+506
+00:23:24,470 --> 00:23:25,807
+easier for me to hold because
+
+507
+00:23:25,807 --> 00:23:29,597
+I'm telling myself at least I still have a chance to pull in a lot more capital.
+
+508
+00:23:30,000 --> 00:23:34,300
+A lot more profit than I'm looking to make from the other one, even though it's just an illusion.
+
+509
+00:23:34,300 --> 00:23:36,400
+It just makes me feel better and makes me trade it better.
+
+510
+00:23:36,600 --> 00:23:37,300
+So those are my thoughts.
+
+511
+00:23:37,400 --> 00:23:39,600
+If you want to see me talk a little bit more about
+
+512
+00:23:39,600 --> 00:23:41,066
+iron condors and other different types of credit
+
+513
+00:23:41,066 --> 00:23:42,165
+spreads that there are out there
+
+514
+00:23:42,165 --> 00:23:43,264
+on this channel, because I do
+
+515
+00:23:43,264 --> 00:23:45,097
+trade them, let me know in the comments down below.
+
+516
+00:23:45,200 --> 00:23:46,600
+Like the video if you learned something.
+
+517
+00:23:46,800 --> 00:23:48,400
+And if you have any feedback for me, I'd love to hear it.
+
+518
+00:23:48,500 --> 00:23:50,155
+If you have a lot more experience running iron condors
+
+519
+00:23:50,155 --> 00:23:51,479
+and maybe there's something that you have some
+
+520
+00:23:51,479 --> 00:23:53,299
+sort of an edge with, I would love to hear it.
+
+521
+00:23:53,500 --> 00:23:55,200
+Thanks for watching, guys, and I'll catch you in the next one.
+
+===== END AFTER_SEGMENT =====

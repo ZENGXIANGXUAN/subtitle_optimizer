@@ -1,0 +1,3961 @@
+===== AFTER_OPTIMIZE (792 entries) =====
+1
+00:00:00,000 --> 00:00:02,600
+大家好，欢迎来到频道，我是Brian。
+Hey guys, welcome to the YouTube channel, Brian's here.
+
+2
+00:00:03,060 --> 00:00:09,340
+2024年1月8日（周一），我开仓了铁鹰策略，2天到期（2DTE）。
+On Monday, January 8th, 2024, I opened a 2DTE iron condor.
+
+3
+00:00:09,580 --> 00:00:11,420
+到期日是当周周三。
+So my expiration was for this Wednesday.
+
+4
+00:00:11,900 --> 00:00:13,700
+这是我开仓铁鹰的位置。
+This is where I opened the iron condor.
+
+5
+00:00:14,020 --> 00:00:16,880
+但同一天内，行情走势不理想。
+And within the same day, things did not go well.
+
+6
+00:00:17,140 --> 00:00:19,120
+我当天进行了调整。
+I made an adjustment for this day.
+
+7
+00:00:19,280 --> 00:00:23,760
+将看跌侧上移，把策略转为铁蝶。
+I rolled the put side up and I turned the trade into an iron butterfly.
+
+8
+00:00:23,980 --> 00:00:29,680
+这是铁鹰出问题时的标准调整手法。
+That is one of the textbook adjustments to make to iron condors where things go wrong.
+
+9
+00:00:29,680 --> 00:00:31,500
+我持仓了几天。
+I held the trade for a couple of days.
+
+10
+00:00:31,660 --> 00:00:34,340
+到周三收盘时，交易最终盈利。
+And then by the Wednesday, the trade ended up being profitable.
+
+11
+00:00:34,760 --> 00:00:36,748
+下面我来详细分解
+I'm going to walk you guys through
+
+12
+00:00:36,748 --> 00:00:38,736
+我为何开仓的原因,
+why I opened the trade, the reasons
+
+13
+00:00:38,736 --> 00:00:40,440
+以及选择该调整的逻辑,
+behind why I chose that adjustment,
+
+14
+00:00:40,440 --> 00:00:44,701
+还会展示整个持仓期的损益（P&L）变化。
+as well as show you guys my P&L throughout the duration of the trade.
+
+15
+00:00:44,800 --> 00:00:47,740
+我们看到的是标普500指数（SPX）的15分钟K线。
+What we're looking at is the SPX on the 15 minute timeframe.
+
+16
+00:00:47,980 --> 00:00:50,220
+这是我日内交易偏好的K线周期。
+This is my preferred timeframe for intraday trading.
+
+17
+00:00:50,500 --> 00:00:53,700
+我现在要打开价格水平线。
+I'm actually going to turn on the levels.
+
+18
+00:00:53,960 --> 00:00:57,020
+这样能直观展示铁鹰的结构。
+So this is just demonstrating what the iron condor looked like.
+
+19
+00:00:57,060 --> 00:00:58,786
+我特意这样做,
+I took the liberty of doing this because
+
+20
+00:00:58,786 --> 00:01:00,296
+这样能
+I figured it would make it a
+
+21
+00:01:00,296 --> 00:01:02,238
+更直观地呈现我的思路。
+little bit easy to visualize what I was thinking.
+
+22
+00:01:02,520 --> 00:01:04,060
+这是我的入场点。
+This was my entry right here.
+
+23
+00:01:04,480 --> 00:01:07,540
+这里是我的短看跌期权，这里是我的短看涨期权。
+This was my short put and this was my short call.
+
+24
+00:01:07,740 --> 00:01:10,040
+这些是长期权的行权价。
+And then these were the long strikes.
+
+25
+00:01:10,220 --> 00:01:11,280
+这是我的长看涨期权。
+So that was my long call.
+
+26
+00:01:11,340 --> 00:01:13,020
+这是我的长看跌期权。
+And this was my long put.
+
+27
+00:01:13,180 --> 00:01:15,663
+开仓时，
+At the time in which I opened the
+
+28
+00:01:15,663 --> 00:01:17,836
+我判断标普本周已有不错的反弹,
+trade, I figured the SPX had already
+
+29
+00:01:17,836 --> 00:01:20,319
+开启了本周行情。
+made a decent rally to start the week.
+
+30
+00:01:20,320 --> 00:01:25,740
+从当天低点到高点，市场已上涨31点，涨幅约0.68%。
+So from the low of day to the high, the market was already up 31 points or about 68%.
+
+31
+00:01:25,740 --> 00:01:27,880
+从净变动角度来看
+If we're thinking about it from a
+
+32
+00:01:27,880 --> 00:01:30,631
+上周五收盘至
+net change perspective, so last week, Friday's close to
+
+33
+00:01:30,631 --> 00:01:33,688
+当前价格已上涨0.73%或43点
+where the market currently was, it was up 0.73% or 43 points.
+
+34
+00:01:34,620 --> 00:01:36,133
+我当时判断
+I figured at this point,
+
+35
+00:01:36,133 --> 00:01:38,252
+这属于正常的
+that was about an average, you know,
+
+36
+00:01:38,252 --> 00:01:40,371
+强势反弹
+strong rally that we'll see in the
+
+37
+00:01:40,371 --> 00:01:43,398
+尤其是市场未出现明显回调
+market, especially since there wasn't any type of significant pullback.
+
+38
+00:01:43,620 --> 00:01:49,000
+此外，标普处于周五到期的Max Pain行权价
+On top of that, the SPX was at the Max Payne strike for the Friday expiration.
+
+39
+00:01:49,580 --> 00:01:51,136
+如果不了解Max Pain
+If you don't know what Max Payne
+
+40
+00:01:51,136 --> 00:01:52,914
+只需知道它是
+is, just know it is a strike that
+
+41
+00:01:52,914 --> 00:01:55,359
+一个强支撑和阻力位
+acts as a very strong support and resistance level as well.
+
+42
+00:01:55,700 --> 00:01:56,960
+如果了解Max Pain理论
+And if you are aware of
+
+43
+00:01:56,960 --> 00:01:58,640
+就会知道
+the Max Payne theory, then you'll know that
+
+44
+00:01:58,640 --> 00:02:02,000
+它会像磁铁一样吸引价格
+it states that the Max Payne strike will tend to act as a magnet for price.
+
+45
+00:02:02,320 --> 00:02:06,360
+大家看次日价格确实回落到该行权价
+As you guys can see the next day, price did come back down to that Max Payne strike.
+
+46
+00:02:06,560 --> 00:02:11,100
+但周一时我显然无法预知次日走势
+However, on Monday, obviously there was no way for me to know what was going to happen the next day.
+
+47
+00:02:11,580 --> 00:02:14,720
+这是开仓时的铁鹰策略图
+This is exactly what the Iron Condor looked like at the time of open.
+
+48
+00:02:14,820 --> 00:02:16,400
+这里是短看涨期权
+So you guys can see here, this is the short call,
+
+49
+00:02:16,500 --> 00:02:17,240
+这里是短看跌期权
+this is the short put,
+
+50
+00:02:17,360 --> 00:02:18,180
+这里是长看涨期权
+this is the long call,
+
+51
+00:02:18,220 --> 00:02:19,140
+这里是长看跌期权
+and this is the long put.
+
+52
+00:02:19,380 --> 00:02:24,460
+这是铁鹰的一个翼，这是另一个翼
+So this is the wing here, and then this is the other wing here of the Iron Condor.
+
+53
+00:02:24,740 --> 00:02:26,960
+铁鹰由两个信用价差组成
+The Iron Condor is made up of two credit spreads.
+
+54
+00:02:27,140 --> 00:02:28,950
+即看涨信用价差
+So it is a call credit spread, meaning
+
+55
+00:02:28,950 --> 00:02:30,534
+你做空一个价格更高的看涨期权
+you are shorting a call that is
+
+56
+00:02:30,534 --> 00:02:32,118
+并买入一个价格更低的看涨期权
+more expensive than the call you're buying.
+
+57
+00:02:32,260 --> 00:02:34,840
+这样在看涨侧收取权利金
+So you're collecting a credit on the call side,
+
+58
+00:02:34,940 --> 00:02:38,260
+同时做空看跌信用价差
+and then you are selling a put credit spread.
+
+59
+00:02:38,360 --> 00:02:41,195
+我做空4700看跌期权
+So I'm selling the 4,700 puts because it is more
+
+60
+00:02:41,195 --> 00:02:43,085
+因为它比4685看跌期权更值钱
+valuable than the 4,685 put, and I'm
+
+61
+00:02:43,085 --> 00:02:45,290
+同时在这一侧收取权利金。
+also collecting a credit on this side.
+
+62
+00:02:46,140 --> 00:02:49,460
+这两者的组合就构成铁鹰策略。
+The combination of those two is what creates an Iron Condor.
+
+63
+00:02:49,580 --> 00:02:53,300
+也就是两个垂直价差或两个信用价差。
+So it is two vertical spreads or two credit spreads.
+
+64
+00:02:53,620 --> 00:02:55,140
+信用价差本身也是垂直价差。
+Credit spreads are also vertical spreads.
+
+65
+00:02:55,320 --> 00:02:58,460
+只是更专业的术语，描述你交易的垂直价差类型。
+They're just the more technical name for what type of vertical spread you're trading.
+
+66
+00:02:58,680 --> 00:03:00,640
+如果你还不知道铁鹰策略是什么，
+So in case you didn't know what an Iron Condor is,
+
+67
+00:03:00,920 --> 00:03:05,220
+交易者会用这种策略，当他们对市场持中性看法时，
+a person will open a strategy like this if they are neutral on the markets,
+
+68
+00:03:05,220 --> 00:03:09,243
+如果他们认为价格不会大幅波动，
+if they don't think price is really going to make a large
+
+69
+00:03:09,243 --> 00:03:11,925
+或他们认为在一段时间内，
+move for some time, or they think by
+
+70
+00:03:11,925 --> 00:03:16,619
+到期时标的资产价格会落在短仓行权价之间。
+expiration, the price of whatever underlying their trading will be within the short strikes.
+
+71
+00:03:16,620 --> 00:03:23,300
+可以说，4700和4765，这是盈亏平衡点附近。
+So in a sense, 4,700 and 4,765, as you guys can see, this is close to the break-evens here.
+
+72
+00:03:23,420 --> 00:03:29,060
+只要价格在盈亏平衡点之间，到期时这笔交易就会盈利。
+As long as price is within the break-evens, at expiration, this trade will profit a certain amount.
+
+73
+00:03:29,280 --> 00:03:32,219
+看涨期权侧收取的权利金，
+The combination of the credit received from selling the call
+
+74
+00:03:32,219 --> 00:03:36,039
+加上看跌期权侧的权利金，会形成净权利金。
+side and the put side is going to give us a net credit.
+
+75
+00:03:36,240 --> 00:03:39,280
+这就是开仓时收取的总权利金。
+That is how much credit is being received to open this trade.
+
+76
+00:03:39,700 --> 00:03:43,920
+最大亏损等于开仓所需的保证金。
+The max loss is how much margin is required to open this trade.
+
+77
+00:03:43,920 --> 00:03:48,280
+最大盈利就是你收取的最大权利金。
+Your max profit is going to be the max amount of credit you received.
+
+78
+00:03:48,640 --> 00:03:52,080
+随着时间推移，
+As time passes by, the options that are
+
+79
+00:03:52,080 --> 00:03:58,100
+卖出的期权会贬值，这就是铁鹰策略盈利的方式。
+sold depreciate in value, and that is how you profit on an Iron Condor.
+
+80
+00:03:58,260 --> 00:04:00,983
+我开仓时，
+At the time in which I opened this trade, the
+
+81
+00:04:00,983 --> 00:04:02,616
+标普指数大约在4730、4731点，
+SPX was about 47.30, 47.31, so just right
+
+82
+00:04:02,616 --> 00:04:04,794
+正好处于铁鹰策略的中间位置。
+in within the middle of the Iron Condor.
+
+83
+00:04:05,340 --> 00:04:07,925
+我卖出的看跌期权Delta约为-0.23，
+I shorted a put that had a delta
+
+84
+00:04:07,925 --> 00:04:12,773
+卖出的看涨期权Delta约为0.21。
+of about negative 0.23, and then I shorted a call that had a delta of about 0.21.
+
+85
+00:04:13,680 --> 00:04:16,060
+这是看跌期权的Delta，这是看涨期权的Delta。
+So that is my puts delta, and this is my call delta.
+
+86
+00:04:16,260 --> 00:04:21,000
+如果你交易过铁鹰策略，就会知道这个策略的区间并不算宽，
+If you guys have experience trading Iron Condors, you know this is not really that wide of an Iron Condor,
+
+87
+00:04:21,100 --> 00:04:24,496
+所以盈利概率不像有些策略那么高，
+so the probability of profit is not as high as some people
+
+88
+00:04:24,496 --> 00:04:28,176
+有些人会卖Delta接近12的看涨和看跌期权。
+might sell a call and a puts that have a delta's closer to 12.
+
+89
+00:04:28,960 --> 00:04:35,320
+有些人会用Delta接近10的期权，甚至有的会卖Delta约为5的期权。
+Some even run deltas closer to 10, and some will even sell options with a delta of about five.
+
+90
+00:04:35,420 --> 00:04:39,525
+所以如果你用这种Delta卖出铁鹰策略，
+So if you're selling Iron Condors with this type of delta, you
+
+91
+00:04:39,525 --> 00:04:44,315
+盈利概率会很高，接近88%到95%
+guys know your probability of profit is very high, closer to the 88 to the 95%.
+
+92
+00:04:45,000 --> 00:04:48,020
+但收到的权利金不多
+However, you're not really receiving a lot of credit.
+
+93
+00:04:48,380 --> 00:04:51,500
+我尽量选择能多收权利金的铁鹰
+Whenever I can, I like to run Iron Condors where I can
+
+94
+00:04:51,500 --> 00:04:54,620
+即使盈利概率低些
+receive a little bit more credits, even though the probability of profit
+
+95
+00:04:54,620 --> 00:05:02,940
+因为我准备调整，或有其他依据判断行情不会大幅波动
+is lower as I'm expecting to make some sort of adjustments or I'm using some sort of other edge in which I don't think price is going to make a large move.
+
+96
+00:05:03,380 --> 00:05:08,280
+如前所述，这是2天到期（DTE）的铁鹰，用的是周三到期
+As stated earlier, the Iron Condor was a 2DTE as I was using the Wednesday expiration.
+
+97
+00:05:08,940 --> 00:05:13,580
+铁鹰的两侧翼宽相等，都是15点
+The wings of my Iron Condor were even on both sides, so it was 15 points wide on both sides.
+
+98
+00:05:13,640 --> 00:05:16,720
+大家可以看到，这是一个对称铁鹰
+As you guys can see here, it is a balanced Iron Condor.
+
+99
+00:05:16,880 --> 00:05:20,093
+唯一不太常规的是
+The only thing that makes this probably a little bit unconventional is
+
+100
+00:05:20,093 --> 00:05:22,235
+Delta值较高
+the fact that my deltas are pretty high
+
+101
+00:05:22,235 --> 00:05:26,519
+用这种铁鹰策略时，DTE很短
+for the type of Iron Condor in which I'm running, and my DTE is pretty short.
+
+102
+00:05:27,120 --> 00:05:31,040
+看过损益图后，希望能更清楚背景
+Now that you guys have seen the risk profile, hopefully that provides a little bit more context.
+
+103
+00:05:31,380 --> 00:05:36,460
+这是铁鹰的区间，这里是周三到期
+This is the range of the Iron Condor right here, and this is the expiration on the Wednesday.
+
+104
+00:05:37,820 --> 00:05:43,440
+我选这些行权价，是因为当时有足够理由认为标普
+I chose these strikes because at this point, I had enough reasons to think that the SPX
+
+105
+00:05:43,440 --> 00:05:47,020
+不会跌破这些关键价位
+would not go back below these major strike prices here.
+
+106
+00:05:47,120 --> 00:05:48,800
+等会我来展示我当时看的图表
+I'll show you guys in a second what I was looking at.
+
+107
+00:05:49,120 --> 00:05:51,750
+所以我决定做空这个
+So I decided it would be safe to short this
+
+108
+00:05:51,750 --> 00:05:53,591
+当日低点的看跌期权
+put, which was the low of day
+
+109
+00:05:53,591 --> 00:05:55,958
+行权价，这是一个高Gamma风险的价位
+strike, and this was a high gamma exposure strike.
+
+110
+00:05:55,960 --> 00:05:58,900
+所以我对做空4700行权价很有信心
+So I had a lot of confidence in selling this 4,700 strike.
+
+111
+00:05:59,120 --> 00:06:05,460
+然后我做空4765看涨期权，知道那个价位也有高Gamma风险
+I then shorted this 4,765 call, understanding there was a lot of gamma exposure up at that level.
+
+112
+00:06:05,740 --> 00:06:08,008
+看过我其他视频的朋友知道
+However, for those of you that have watched many of
+
+113
+00:06:08,008 --> 00:06:10,049
+我是Quant Trading App的首席开发者
+my other videos, you guys know I'm the lead
+
+114
+00:06:10,049 --> 00:06:14,359
+所以我会用一些额外工具，这里给大家演示
+developer at Quant Trading App, so I do use additional tools, which I will demonstrate for you guys here.
+
+115
+00:06:14,780 --> 00:06:16,689
+如果我打开我的研究工具
+If I were to turn back on my studies, this
+
+116
+00:06:16,689 --> 00:06:18,979
+这就是Quant Trading App的周度卖出区间
+is what's referred to as the Quant Trading App Weekly Sell Zone.
+
+117
+00:06:19,320 --> 00:06:21,840
+我对这个价位有信心
+So I had some faith and understanding that this level
+
+118
+00:06:21,840 --> 00:06:23,856
+认为它会作为阻力位
+should act as some sort of resistance if
+
+119
+00:06:23,856 --> 00:06:25,620
+如果价格涨到这个区间
+price did get up to this range.
+
+120
+00:06:25,720 --> 00:06:28,068
+大家可以看到，市场
+As you guys can see here, the markets
+
+121
+00:06:28,068 --> 00:06:30,416
+最终在收盘前一小时直线上涨
+did end up rallying straight into power hour
+
+122
+00:06:30,416 --> 00:06:33,938
+并最终在Quant Trading App卖出区间内收盘
+and ended up closing right within the Quant Trading App Sell Zone.
+
+123
+00:06:34,240 --> 00:06:36,587
+我在区间顶部卖出了看涨期权
+I sold the call that was right at the top
+
+124
+00:06:36,587 --> 00:06:39,639
+因为我理解这些价格水平的运作机制
+of the zone because I have an understanding of how these levels work.
+
+125
+00:06:39,960 --> 00:06:42,076
+看到价格继续在卖出区间内上涨
+It obviously did not feel good to see
+
+126
+00:06:42,076 --> 00:06:43,927
+显然感觉很不好
+that price continue to rally straight within
+
+127
+00:06:43,927 --> 00:06:45,778
+尤其是在同一天内
+the Sell Zone within the same day.
+
+128
+00:06:46,120 --> 00:06:47,700
+这不是我预期的走势
+That is not what I was expecting.
+
+129
+00:06:48,080 --> 00:06:49,800
+看一下Quant Trading App的Discord
+If we take a look at the Quant
+
+130
+00:06:49,800 --> 00:06:51,305
+这就是我分享交易的时间点
+Trading App Discord, this is right as
+
+131
+00:06:51,305 --> 00:06:53,240
+美国东部时间下午1点
+I shared the trade here, 1 p.m. Eastern Time.
+
+132
+00:06:53,560 --> 00:06:54,672
+大家可以看到
+You guys can see here,
+
+133
+00:06:54,672 --> 00:06:56,228
+我当时说自己可能有点冲动
+I said I might've been a little
+
+134
+00:06:56,228 --> 00:06:59,119
+但刚开了这个2天到期的铁鹰
+trigger happy right now, but I just opened up this 2DTE Iron Condor.
+
+135
+00:06:59,500 --> 00:07:01,091
+开仓时我就知道
+I knew at the time in which I
+
+136
+00:07:01,091 --> 00:07:02,682
+自己有点冲动
+was opening the trade that I was being
+
+137
+00:07:02,682 --> 00:07:04,273
+因为这不是我喜欢开铁鹰的时机
+a little bit trigger happy because this is
+
+138
+00:07:04,273 --> 00:07:06,858
+不是我最喜欢开仓铁鹰的时机
+not the time in which I really like to open up Iron Condors.
+
+139
+00:07:07,000 --> 00:07:08,060
+一天中太早了
+It's very early in the day.
+
+140
+00:07:08,200 --> 00:07:13,000
+而且这是下跌趋势的突破，动能正在启动
+On top of that, this was the break of a downtrend and momentum was kicking in.
+
+141
+00:07:13,340 --> 00:07:17,300
+看到动能时，你不会想开非方向性价差
+You never really wanna open up a non-directional spread when you see momentum.
+
+142
+00:07:17,520 --> 00:07:19,760
+这是一个强势趋势日
+This is a strong trending day.
+
+143
+00:07:19,760 --> 00:07:22,500
+最好等到收盘前一小时再开仓
+Okay, you're better off waiting until power hour.
+
+144
+00:07:22,600 --> 00:07:24,102
+如果我等到这时候
+So if I waited until here
+
+145
+00:07:24,102 --> 00:07:26,105
+再开铁鹰
+to decide to open the Iron Condor, I
+
+146
+00:07:26,105 --> 00:07:28,358
+铁鹰的结构会更合理
+would've had a different structure behind the Iron Condor.
+
+147
+00:07:28,680 --> 00:07:32,700
+所以我比平时开这类摆动交易的时间早
+So I opened it earlier in the day than I normally would open up a swing trade like this.
+
+148
+00:07:32,880 --> 00:07:38,620
+而且开仓时市场还没形成任何区间
+On top of that, I was opening it without the market showing that it had established any type of range.
+
+149
+00:07:39,200 --> 00:07:40,350
+我所说的区间是
+What I mean by range is,
+
+150
+00:07:40,350 --> 00:07:41,500
+假设这是一个
+let's just say this is a
+
+151
+00:07:41,500 --> 00:07:43,418
+这是趋势日，市场一路上涨
+trending day and the market trends all the way up.
+
+152
+00:07:43,540 --> 00:07:47,840
+此时还不知道高点在哪，因为仍在突破中
+We don't know at this point where the high is because it's still breaking out.
+
+153
+00:07:47,840 --> 00:07:49,260
+价格继续走高
+It's still continuing to go higher.
+
+154
+00:07:49,460 --> 00:07:52,200
+并未跌破之前的重要回调低点
+It's not breaking out a previous major swing low.
+
+155
+00:07:52,360 --> 00:07:57,940
+放大看当天，我提到的回调低点指日内价格走势
+So if we zoom into this day, when I say swing low, I'm referring to just the intraday price action.
+
+156
+00:07:58,360 --> 00:08:00,000
+这是一波上涨，这是回调
+This was a rally and this was a pullback.
+
+157
+00:08:00,080 --> 00:08:01,960
+回调仅触及这里的低点
+It barely pulled back to this low here.
+
+158
+00:08:02,060 --> 00:08:03,760
+然后又上涨，再回调
+Then it rallied again and then it pulled back.
+
+159
+00:08:03,840 --> 00:08:05,640
+但没回到这个低点
+It did not come back to this low right here.
+
+160
+00:08:05,740 --> 00:08:09,900
+接着上涨、回调，但仍未触及这个低点
+Then we rallied and we pulled back, but it did not come back down to this low right here.
+
+161
+00:08:10,020 --> 00:08:13,740
+再上涨，尝试回调，还是没回到这个低点
+Then it rallied, it tried to pull back. It did not come back to this low right here.
+
+162
+00:08:13,740 --> 00:08:17,440
+这些阶梯状走势意味着价格持续上行
+So these are steps in a sense for price just continuing to go higher and higher.
+
+163
+00:08:17,600 --> 00:08:20,178
+只有当价格跌破
+It's only if price comes and breaks
+
+164
+00:08:20,178 --> 00:08:22,756
+某个枢轴区域
+back below one of these pivoting areas,
+
+165
+00:08:22,756 --> 00:08:26,439
+我才会说，好，现在形成了区间
+then I would say, okay, now we're establishing a range
+
+166
+00:08:26,440 --> 00:08:29,260
+因为这可以确定为高点
+because this would be what I would determine as the high.
+
+167
+00:08:29,420 --> 00:08:33,640
+而趋势起点的位置就是低点
+And then I would say, whatever is where it started, you know, the trend started, that would be the low.
+
+168
+00:08:33,760 --> 00:08:38,520
+大家看，这里没有真正回调，只是持续上涨
+In this case here, you guys can see there was no real pullback. It just continued to go up.
+
+169
+00:08:38,640 --> 00:08:40,254
+直到周二
+It wasn't until Tuesday on
+
+170
+00:08:40,254 --> 00:08:41,868
+出现这个跳空下跌
+this gap down, as you
+
+171
+00:08:41,868 --> 00:08:45,419
+现在才形成了区间
+guys can see here, now we have a range that's established.
+
+172
+00:08:45,600 --> 00:08:47,258
+这是高点
+This would be our high and
+
+173
+00:08:47,258 --> 00:08:48,916
+这是低点
+this would be our low, thus
+
+174
+00:08:48,916 --> 00:08:51,679
+铁鹰策略会更安全
+making it a little bit safer for an iron condor,
+
+175
+00:08:51,780 --> 00:08:53,331
+至少符合我的入场标准
+or at least the criteria I
+
+176
+00:08:53,331 --> 00:08:55,657
+我计划周五
+look for. I'm actually intending to do a video
+
+177
+00:08:55,657 --> 00:08:58,242
+稍晚做一个0 DTE铁鹰策略
+on Friday, a zero DTE iron condor a little bit
+
+178
+00:08:58,242 --> 00:09:02,119
+到时给大家演示一个案例
+later this week, in which I will demonstrate to you guys an example of that.
+
+179
+00:09:02,200 --> 00:09:03,120
+这是当日最高点
+This was a high of day.
+
+180
+00:09:03,580 --> 00:09:04,500
+这是当日最低点
+This was a low of day.
+
+181
+00:09:04,600 --> 00:09:05,882
+此时我
+And at this point, I
+
+182
+00:09:05,882 --> 00:09:07,677
+正考虑在这里做铁鹰策略
+was considering an iron condor here for
+
+183
+00:09:07,677 --> 00:09:10,498
+0天到期（DTE），因为这是高点，这是低点
+zero DTE because this is the high, this is the low.
+
+184
+00:09:10,500 --> 00:09:13,920
+价格在区间中部波动，形成了一个明确的区间
+We have a nice range established prices within the middle of the range.
+
+185
+00:09:14,120 --> 00:09:15,638
+当动能开始
+When momentum is now starting
+
+186
+00:09:15,638 --> 00:09:17,763
+启动，趋势
+and kicking in and a trend is
+
+187
+00:09:17,763 --> 00:09:20,799
+开始形成，尤其在突破之前的趋势后
+now forming, especially after the break of a previous trend.
+
+188
+00:09:20,920 --> 00:09:24,820
+之前是下跌趋势，现在价格突破了这条趋势线
+So this was a previous downtrend. Price is now breaking out of that trend.
+
+189
+00:09:24,820 --> 00:09:28,280
+这时候不适合开铁鹰
+This is not the time you want to open an iron condor.
+
+190
+00:09:28,440 --> 00:09:30,498
+我之前做过一个关于跳空上涨的视频
+I did a video on the gap up
+
+191
+00:09:30,498 --> 00:09:32,298
+就是这个周一
+on this Monday here. It was a
+
+192
+00:09:32,298 --> 00:09:34,870
+相对于两天锚定成交量加权平均价（VWAP）的跳空，然后我
+gap over the two day anchored VWAP. And then I
+
+193
+00:09:34,870 --> 00:09:37,442
+分析了当天的动能，我会在描述里放链接
+discussed the momentum on this day. And I will leave
+
+194
+00:09:37,442 --> 00:09:45,417
+如果你想看周一的复盘，我当时做了一个0天到期不对称蝶式，没有上行风险
+a link in the description. If you guys want to check out the review on Monday, as I did run a zero DTE broken wing butterfly that had no upside risk.
+
+195
+00:09:45,460 --> 00:09:50,840
+0天到期那笔我盈利了，但我的波段交易出了问题
+So I did profits on the zero DTE, but my swing trade is what was now in trouble.
+
+196
+00:09:50,840 --> 00:09:53,506
+这就是为什么我提到自己
+That was the reason behind why I mentioned that I
+
+197
+00:09:53,506 --> 00:09:56,172
+有点操之过急，意思是我有点迫不及待地进入下一笔交易
+was a little trigger happy, meaning I was a little
+
+198
+00:09:56,172 --> 00:09:59,638
+急着进入下一笔交易，这并不一定是好事
+excited to get right back into another trade. And that's not necessarily good.
+
+199
+00:09:59,720 --> 00:10:01,600
+有时候你得等条件成熟
+Sometimes you want to wait for your conditions to hit.
+
+200
+00:10:01,780 --> 00:10:05,900
+我知道这不是我做铁鹰的理想条件
+I was aware these are not my ultimate conditions for an iron condor.
+
+201
+00:10:06,240 --> 00:10:07,560
+不过，如果我们来看
+However, if we take a
+
+202
+00:10:07,560 --> 00:10:09,408
+图表是这样的
+look, this is what the chart looked
+
+203
+00:10:09,408 --> 00:10:13,898
+我会把它放大，这样大家能看得更清楚
+like. So I'm going to make this full screen just so we can really observe closer here.
+
+204
+00:10:14,320 --> 00:10:15,720
+这就是价格走势
+This is what price action looked like.
+
+205
+00:10:15,800 --> 00:10:17,260
+这是最大痛点行权价
+This is that max pain strike.
+
+206
+00:10:17,260 --> 00:10:21,920
+4730是我了解的最大痛点行权价
+So 4730 is the strike in which I'm aware of as max pain.
+
+207
+00:10:22,320 --> 00:10:23,580
+这里是卖出区域
+This is the sell zone right here.
+
+208
+00:10:23,640 --> 00:10:25,196
+我只是想向
+So I was just pointing out to the
+
+209
+00:10:25,196 --> 00:10:26,557
+Quant Trading App的其他成员
+other members within Quant Trading App, the
+
+210
+00:10:26,557 --> 00:10:27,918
+说明我为什么选这些行权价
+reason why I'm using those strike prices.
+
+211
+00:10:28,100 --> 00:10:29,140
+这个逻辑不言自明。
+It's pretty self-explanatory.
+
+212
+00:10:29,360 --> 00:10:32,560
+这是4700点，正好在上周收盘价附近。
+Here's 4700. It is right around last week's close.
+
+213
+00:10:32,660 --> 00:10:34,400
+今天正好在日内低点。
+It is right at the low of day today.
+
+214
+00:10:34,680 --> 00:10:36,818
+这就是我做空这个
+And then this is why I'm shorting this
+
+215
+00:10:36,818 --> 00:10:40,559
+看涨期权的原因，它正好在Quant Trading App周卖区上方。
+call up here. It is right above the Quant Trading App weekly sell zone.
+
+216
+00:10:40,760 --> 00:10:44,540
+此外，我知道这些行权价是重要的Gamma水平。
+On top of that, I knew these were significant gamma strikes right here.
+
+217
+00:10:44,540 --> 00:10:49,500
+所以我更确信价格在这些位置会遇到阻力。
+So I had some extra faith in that price will meet some sort of resistance up at these levels.
+
+218
+00:10:50,000 --> 00:10:53,035
+如果价格回落或横盘，
+And if price was to come back or consolidate, it
+
+219
+00:10:53,035 --> 00:10:55,463
+应该会在蓝色行权价附近横盘。
+should consolidate around this blue strike right here.
+
+220
+00:10:55,463 --> 00:10:58,498
+这是我交易中的一个重要优势。
+That is a significant edge that I use for trading.
+
+221
+00:10:58,640 --> 00:11:01,389
+我会查看期权水平，
+I take a look at options levels, more
+
+222
+00:11:01,389 --> 00:11:04,138
+特别是Gamma敞口水平，
+specifically gamma exposure levels, whenever I'm making my
+
+223
+00:11:04,138 --> 00:11:07,918
+在选择期权策略时作为决策依据。
+decisions behind what type of option strategy I'm looking to implement.
+
+224
+00:11:08,380 --> 00:11:10,306
+开仓几小时后，
+Now, a couple hours after opening that trade,
+
+225
+00:11:10,306 --> 00:11:11,750
+可以看到，价格是439。
+as we can see right here, 439.
+
+226
+00:11:11,750 --> 00:11:13,917
+这是收盘前20分钟。
+So this is about 20 minutes before the market closes.
+
+227
+00:11:14,720 --> 00:11:16,820
+这是铁鹰的风险曲线。
+This is the Iron Condor's risk profile.
+
+228
+00:11:17,000 --> 00:11:19,460
+当天这个头寸就出现了问题。
+And within the same day, that position is in trouble.
+
+229
+00:11:20,160 --> 00:11:21,460
+我把它全屏展示，
+Let me just make that full screen
+
+230
+00:11:21,460 --> 00:11:24,060
+这样大家可以看得更清楚。
+for you guys so we can also take a look. Here we have it.
+
+231
+00:11:24,320 --> 00:11:26,280
+我做了4手铁鹰。
+I ran four lots of this Iron Condor.
+
+232
+00:11:26,380 --> 00:11:28,501
+分享风险曲线时，
+So whenever I share the risk profile, I'm
+
+233
+00:11:28,501 --> 00:11:30,092
+我只展示1手，
+showcasing things. I'm just showcasing it
+
+234
+00:11:30,092 --> 00:11:33,539
+这样其他交易者更容易理解。
+in one lot because it makes it easier for other traders to understand.
+
+235
+00:11:33,760 --> 00:11:35,658
+这样也能
+It makes it a little bit easier for
+
+236
+00:11:35,658 --> 00:11:38,979
+让我更方便统计季度交易表现。
+me to quantify my performance whenever I do my quarterly review of my trading.
+
+237
+00:11:38,980 --> 00:11:41,016
+还能让
+And then it also makes it easy for
+
+238
+00:11:41,016 --> 00:11:43,052
+任何资金规模的交易者
+any trader of any account size to be
+
+239
+00:11:43,052 --> 00:11:45,088
+根据自己的账户规模
+able to scale up or scale down according
+
+240
+00:11:45,088 --> 00:11:49,160
+灵活调整仓位，尤其适合新手学习这种交易。
+to your account size, especially if you're now starting out to learn this type of trading.
+
+241
+00:11:49,320 --> 00:11:51,316
+我分享交易的主要原因是
+And that's the main reason in which I
+
+242
+00:11:51,316 --> 00:11:53,312
+帮助新手交易者
+share my personal trades is to help newer
+
+243
+00:11:53,312 --> 00:11:55,558
+借鉴其他交易者的经验。
+traders leverage the experience that another trader might have.
+
+244
+00:11:55,780 --> 00:12:00,740
+大家可以看到，这种铁鹰策略会承受什么样的压力。
+So in this case here, you guys can see what type of pain an Iron Condor like this can suffer.
+
+245
+00:12:00,740 --> 00:12:04,500
+此时我亏损640美元。
+I was down $640 at this point.
+
+246
+00:12:04,680 --> 00:12:07,207
+距离收盘还有20分钟左右
+So about 20 minutes before the market closed, about two
+
+247
+00:12:07,207 --> 00:12:09,453
+开仓后约2.5小时
+and a half hours after I opened the
+
+248
+00:12:09,453 --> 00:12:10,857
+我亏损600多美元。
+trade, I'm down $600 and change.
+
+249
+00:12:11,560 --> 00:12:16,280
+这笔交易使用的保证金总额是4000美元，大家可以看到。
+The total amount of margin being used on this trade is $4,000, as you guys can see right here.
+
+250
+00:12:16,500 --> 00:12:19,854
+或者你还记得我开头分享的风险概况
+Or if you guys remember the risk profile that I shared at
+
+251
+00:12:19,854 --> 00:12:22,929
+每单成本和保证金约1000美元。
+the beginning, this trade cost and margin about $1,000 per unit. I
+
+252
+00:12:22,929 --> 00:12:28,800
+我做了4单，所以最大风险或保证金都是4000美元。
+was running four of them. So therefore, the max risk is $4,000 or the max amount of margin that I'm using is $4,000.
+
+253
+00:12:29,640 --> 00:12:37,500
+亏损640美元占4000美元的16%，这是我的回撤。
+So to be down $640 on $4,000 is 16%. That was my drawdown.
+
+254
+00:12:37,680 --> 00:12:43,740
+保证金的16%回撤，对我而言是重大回撤。
+So I'm down 16% of the margin being used. That is a significant drawdown for me.
+
+255
+00:12:44,060 --> 00:12:50,080
+通常回撤12%到14%，我就会调整铁鹰。
+I generally around 12% to 14%. If I'm down in an Iron Condor, I will definitely make an adjustment.
+
+256
+00:12:50,360 --> 00:12:53,300
+我知道自己反应慢了。
+So I was aware that I was very late to the party.
+
+257
+00:12:53,420 --> 00:12:56,115
+这主要是因为当天有其他事务
+That is largely because of other obligations I had within
+
+258
+00:12:56,115 --> 00:12:59,349
+还有一点不相信
+the day, as well as a little bit of disbelief at the
+
+259
+00:12:59,349 --> 00:13:05,009
+市场会一直上涨而不回测4740点。
+time that the market would just continue to keep going straight up without retesting, coming back to at least the $4740 level.
+
+260
+00:13:05,380 --> 00:13:06,888
+但价格从未真正回落。
+It never really pulled back. I
+
+261
+00:13:06,888 --> 00:13:08,396
+我决定先不动。
+decided to just leave it alone.
+
+262
+00:13:08,396 --> 00:13:10,658
+有时这是最糟的选择。
+And that's sometimes the worst thing you can do.
+
+263
+00:13:11,020 --> 00:13:13,632
+但这次我不害怕，因为
+But in this case, I was not afraid because I
+
+264
+00:13:13,632 --> 00:13:15,722
+我知道可能会转为
+already knew I would probably turn it into
+
+265
+00:13:15,722 --> 00:13:19,118
+铁蝶，如果标普涨到这个位置。
+an Iron Butterfly if the SPX made it all the way up here.
+
+266
+00:13:19,120 --> 00:13:22,654
+我之所以敢转为铁蝶
+The reason I had some sort of conviction or I felt safe
+
+267
+00:13:22,654 --> 00:13:26,188
+是因为
+in this case of turning it into an Iron Butterfly is because
+
+268
+00:13:26,188 --> 00:13:32,078
+我了解价格在这些量化交易水平附近的走势动态。
+I understand, again, the dynamics of what happens with price action when we come to these quant trading at levels.
+
+269
+00:13:32,260 --> 00:13:36,288
+价格一天涨这么多
+It is very unlikely that price will rally this much
+
+270
+00:13:36,288 --> 00:13:40,719
+第二天继续这样上涨的可能性极低。
+on one day and then continue like this the next day.
+
+271
+00:13:40,720 --> 00:13:43,744
+更可能在这个区间内震荡
+It is more likely that it will consolidate within this
+
+272
+00:13:43,744 --> 00:13:46,768
+也就是说，即使价格涨到这么高
+area, meaning if price made it up this high, even
+
+273
+00:13:46,768 --> 00:13:50,397
+第二天出现缺口下跌，
+if it were to gap down the next day, my expectation would
+
+274
+00:13:50,397 --> 00:13:55,538
+我预期当天早晚会回到这个区间
+be at one point or another during the next day, it's going to return to this area.
+
+275
+00:13:55,680 --> 00:14:00,500
+周三到期日时，这也可能发生
+And then for my expiration date on the Wednesday, that is also a likely scenario.
+
+276
+00:14:00,720 --> 00:14:04,460
+所以当时我的逻辑是，即使涨到这儿
+So my logic at the time was even if we go all the way up here,
+
+277
+00:14:04,600 --> 00:14:09,060
+价格也会在这个区间停留至少一两天
+price will remain in this area for at least a day or two.
+
+278
+00:14:09,060 --> 00:14:12,360
+这样时间衰减足以让我盈利
+And that will give me enough time decay to become profitable.
+
+279
+00:14:12,820 --> 00:14:18,120
+铁鹰转为铁蝶，这是调整后的损益图
+The Iron Condo was turned into an Iron Butterfly, and this is what my risk profile looked like right after that.
+
+280
+00:14:18,260 --> 00:14:21,041
+看到这个后几分钟内
+So a few minutes after seeing this, this is just
+
+281
+00:14:21,041 --> 00:14:24,379
+我就转为了铁蝶
+a couple of minutes later, I turned it into an Iron Butterfly.
+
+282
+00:14:24,880 --> 00:14:29,200
+这是收盘前3分钟的更新损益图
+This is what the updated risk profile looked like three minutes before the market closed.
+
+283
+00:14:29,340 --> 00:14:33,269
+因为我锁定了看跌侧的收益，
+Because I realized the gains on the put side, meaning I closed
+
+284
+00:14:33,269 --> 00:14:36,215
+平掉了原本做空4700点看跌期权的头寸
+out the put side that was originally short the 4,700
+
+285
+00:14:36,215 --> 00:14:40,144
+这笔获利约1000美元
+puts, I realized those gains, it bought in about $1,000 worth of profit.
+
+286
+00:14:41,020 --> 00:14:46,020
+然后我立即做空4750和4765点看跌期权
+And then I immediately sold the 4,750 puts and the 4,765 put.
+
+287
+00:14:46,180 --> 00:14:49,680
+大家还记得，我们做空了4765点看涨期权
+If you guys recall, we are short the 4,765 call.
+
+288
+00:14:50,040 --> 00:14:53,671
+做空4765点看涨期权后，
+So by being short the 4,765 call, and then also
+
+289
+00:14:53,671 --> 00:14:58,512
+又做空4765点看跌期权，铁鹰的盈利区间被压缩了
+shorting the 4,765 puts, I'm now restricting the range of the Iron Condor.
+
+290
+00:14:59,320 --> 00:15:02,240
+之前的损益图是这样的，
+So if the profile before looked something like this, I've
+
+291
+00:15:02,240 --> 00:15:05,160
+现在我将这侧上移，
+now moved this side up, pushed it all the way
+
+292
+00:15:05,160 --> 00:15:11,878
+一直推到这儿，形成背景中的铁蝶损益图
+up to here, and now it is creating this profile that we see in the background right here known as an Iron Butterfly.
+
+293
+00:15:12,320 --> 00:15:17,820
+这样做的原因是，做空平值看跌期权能多收权利金
+The reason for doing so is I'm now bringing in more credits because I'm shorting an at-the-money put.
+
+294
+00:15:18,120 --> 00:15:21,158
+做空平值看跌期权，
+By shorting an at-the-money put, I'm going to receive a
+
+295
+00:15:21,158 --> 00:15:23,919
+收到的权利金远多于4700点看跌期权的价格
+lot more credits than what the 4,700 put was going for.
+
+296
+00:15:23,920 --> 00:15:26,878
+因为4700点看跌期权在当天低点
+Because the 4,700 put is all the way back at the low
+
+297
+00:15:26,878 --> 00:15:29,567
+随着行情上涨，这部分期权的时间价值衰减严重
+of day, that put has already decayed so much as
+
+298
+00:15:29,567 --> 00:15:33,870
+继续持有这部分头寸几乎没意义
+the market rallied, it was almost pointless to continue holding onto that side of the option.
+
+299
+00:15:34,400 --> 00:15:37,047
+这样的调整还能
+By making an adjustment like this, what it also does
+
+300
+00:15:37,047 --> 00:15:39,959
+降低T+0线的曲线
+is it reduces the curve of my T plus zero line.
+
+301
+00:15:40,060 --> 00:15:42,397
+大家看这里，我的风险
+So as you guys see right here, my risk is
+
+302
+00:15:42,397 --> 00:15:44,734
+对价格波动的敏感度已降低
+not as high or as sensitive to price because you
+
+303
+00:15:44,734 --> 00:15:47,539
+这里就是T+0线
+guys can see right here, this is the T plus zero line.
+
+304
+00:15:47,620 --> 00:15:51,160
+这是截图时的损益（P&L）
+So this is the P&L at the time in which the screenshot was being taken.
+
+305
+00:15:51,160 --> 00:15:53,428
+大家看，这里亏损1500美元
+It is down $1,500 as you guys can see here.
+
+306
+00:15:53,428 --> 00:15:55,444
+这里亏损1000美元，这里亏损2000美元
+So this is down $1,000, this is down $2,000, this
+
+307
+00:15:55,444 --> 00:15:57,712
+中间位置，大约亏损1500美元
+is right within the middle, so it's down about $1,500.
+
+308
+00:15:59,420 --> 00:16:01,904
+但如果价格继续上涨，假设
+However, if price was to continue rallying, let's just say
+
+309
+00:16:01,904 --> 00:16:03,891
+再涨15到20点左右
+it rallied another 15 or 20 points or so, you
+
+310
+00:16:03,891 --> 00:16:07,121
+回撤幅度不会太大
+guys can see at this point the drawdown would not be that significant.
+
+311
+00:16:07,800 --> 00:16:15,760
+可能从亏1500美元变成亏1700美元左右，仅多200美元，影响不大
+It would go from maybe down $1,500 to maybe down about $1,700, $1,600. So just an additional $200 drawdown is not that bad.
+
+312
+00:16:15,760 --> 00:16:18,108
+同时，如果价格
+And then at the same time, if price was to
+
+313
+00:16:18,108 --> 00:16:21,630
+回落20点左右，这个头寸只亏200美元
+retrace all the way back, maybe down 20 points or so, this position would be down $200.
+
+314
+00:16:22,540 --> 00:16:27,360
+此时无论价格大幅向哪个方向波动
+So at this point, it doesn't really matter which large move it makes in any direction
+
+315
+00:16:27,360 --> 00:16:28,608
+因为我已经平滑了T+0线
+because I've flattened my T
+
+316
+00:16:28,608 --> 00:16:30,355
+做调整时
+plus zero line. And whenever you're making
+
+317
+00:16:30,355 --> 00:16:33,599
+这是你要关注的重点
+an adjustment, that is something that you really want to look out for.
+
+318
+00:16:33,680 --> 00:16:35,860
+你希望这条线保持平滑
+You want to keep this line pretty smooth.
+
+319
+00:16:36,320 --> 00:16:39,980
+显然，整个头寸看起来是亏损的
+Obviously, the entire position is going to read as if it's in the red.
+
+320
+00:16:40,320 --> 00:16:45,640
+但图中没显示的是，我已从看跌侧获利了结，已落袋1000美元
+What this is not showing is that I realized the profit from the put side. So I've already pocketed $1,000.
+
+321
+00:16:46,320 --> 00:16:51,400
+所以实际亏损大约500美元，上下浮动50美元
+Therefore, I'm really only down about $500 in this position, give or take $50 or so.
+
+322
+00:16:51,980 --> 00:16:53,525
+大家可能记得，今天早些时候
+Which if you guys remember earlier in
+
+323
+00:16:53,525 --> 00:16:55,070
+这是铁鹰策略
+the day, this is the iron condor.
+
+324
+00:16:55,070 --> 00:16:58,160
+这是铁鹰策略的亏损
+This is the P&L that that position was down on, the iron condor.
+
+325
+00:16:58,020 --> 00:16:59,760
+这就是调整后
+So that's the difference between when you're reading
+
+326
+00:16:59,760 --> 00:17:01,500
+读损益（P&L）时的区别
+your P&L after you make this type
+
+327
+00:17:01,500 --> 00:17:03,676
+有时会有点混淆
+of adjustment. Sometimes it can be a little bit confusing.
+
+328
+00:17:04,119 --> 00:17:05,355
+你可能需要记录
+You probably want to journal
+
+329
+00:17:05,355 --> 00:17:07,086
+或归档
+or archive. You can save the trade
+
+330
+00:17:07,086 --> 00:17:08,570
+可以在Thinkorswim里保存看跌侧的交易
+within Thinkorswim, the put side, and
+
+331
+00:17:08,570 --> 00:17:13,765
+可以保留这个设置。我会给你展示更精确的损益读数。
+then you can keep that on. And I will show you a more accurate read of what your P&L is.
+
+332
+00:17:13,520 --> 00:17:15,186
+但截图时，
+But when I took the screenshot, I
+
+333
+00:17:15,186 --> 00:17:17,091
+我没这么做，
+didn't do that because I just wanted you
+
+334
+00:17:17,091 --> 00:17:21,139
+只是想让大家看看实际数据，别被这个数字吓到。
+guys to see what it can look like and not to be afraid of this number here.
+
+335
+00:17:21,300 --> 00:17:23,253
+再说一次，如果你平掉看跌侧的收益，
+Again, if you realize the grand from the
+
+336
+00:17:23,253 --> 00:17:24,718
+这只是当前持仓的读数，
+put side, this is just reading
+
+337
+00:17:24,718 --> 00:17:27,159
+也就是现在的铁蝶。
+what the current position is, which is this iron butterfly.
+
+338
+00:17:27,579 --> 00:17:30,660
+看涨侧出现了较大回撤。
+The call side is experiencing a significant drawdown.
+
+339
+00:17:30,780 --> 00:17:32,246
+所以数据才会这样显示，
+So that's why it's going to read
+
+340
+00:17:32,246 --> 00:17:33,922
+因为你刚开了一个新的看跌信用价差。
+this way because you just open up a
+
+341
+00:17:33,922 --> 00:17:35,388
+刚收了新的权利金，
+fresh put credit spread. You just bought
+
+342
+00:17:35,388 --> 00:17:39,368
+损益要等时间流逝后才会体现。
+in some new credit. It's not going to be reflected in your P&L until time has passed by.
+
+343
+00:17:39,160 --> 00:17:41,120
+还有几点想说明。
+There are a few other things I want to point out.
+
+344
+00:17:41,200 --> 00:17:44,880
+但在此之前，我想先看看最终结果。
+But before that, I want to jump to how this ended up working out.
+
+345
+00:17:45,000 --> 00:17:46,267
+如果这段视频对有些人来说有点长，
+In case this video is getting a little
+
+346
+00:17:46,267 --> 00:17:47,217
+我直接带大家看现金流。
+bit long for some of you
+
+347
+00:17:47,217 --> 00:17:48,959
+下面我来分解现金流。
+guys, I just want to walk you through the cash flow.
+
+348
+00:17:49,400 --> 00:17:51,111
+周三时，铁鹰
+So the iron condor on Wednesday at
+
+349
+00:17:51,111 --> 00:17:52,822
+在这时已转为盈利，
+this point ended up becoming overall green
+
+350
+00:17:52,822 --> 00:17:54,289
+或者说，
+or in terms of or in
+
+351
+00:17:54,289 --> 00:17:59,179
+铁鹰调整为铁蝶后整体盈利。
+this case, the iron fly. It was an iron condor adjusted into an iron fly and ended up overall green.
+
+352
+00:17:59,920 --> 00:18:04,260
+看跌侧实现了2.5美元的收益。
+$2.50 profit is what was realized from the put side of the iron condors.
+
+353
+00:18:04,260 --> 00:18:06,571
+我们一开始是卖出4700看跌期权，
+So again, we started off by selling the
+
+354
+00:18:06,571 --> 00:18:08,015
+并买入4685看跌期权。
+$4,700 put and I purchased the $4,685
+
+355
+00:18:08,015 --> 00:18:11,481
+这是铁鹰的看跌信用侧。
+put. So that was the put credit side of the iron condor.
+
+356
+00:18:12,220 --> 00:18:15,340
+周一我卖出4手，收益1000美元。
+On Monday, I sold four lots. So I collected $1K in profit.
+
+357
+00:18:15,460 --> 00:18:18,740
+250美元×4手，就是1000美元收益。
+That's $250 times four. That's $1,000 in profits.
+
+358
+00:18:19,160 --> 00:18:21,002
+然后我将看跌侧上移，
+Then I rolled up the
+
+359
+00:18:21,002 --> 00:18:23,582
+平掉这个看跌信用价差，
+put side. So I ended up taking
+
+360
+00:18:23,582 --> 00:18:26,530
+并
+this put credit spread, closing it out, and
+
+361
+00:18:26,530 --> 00:18:31,690
+然后在这里新开一个看跌信用价差，额外获得650美元权利金。
+then opening up another put credit spread right here, bringing in $650 of additional credits.
+
+362
+00:18:32,060 --> 00:18:36,100
+卖出4手，自己算一下，这就是总共获得的权利金。
+So by selling four of those, you guys do the math, that's how much credit was received.
+
+363
+00:18:36,500 --> 00:18:43,640
+现在报价4.37美元，每手盈利衰减2.15美元。
+Now it's going for $4.37. So it decayed $2.15 profit per lot.
+
+364
+00:18:43,800 --> 00:18:47,680
+我做了4手，带来860美元盈利。
+So I ran four of these. So that brought in $860 in profits.
+
+365
+00:18:47,860 --> 00:18:49,935
+看涨侧，
+The call side, which was
+
+366
+00:18:49,935 --> 00:18:52,425
+最初以2.47美元卖出。
+originally sold for $2.47. This is the
+
+367
+00:18:52,425 --> 00:18:56,990
+这是原铁鹰的看涨侧，现在报价5.90美元。
+call side of the original iron condor is now going for $5.90.
+
+368
+00:18:58,120 --> 00:19:00,337
+我最初以2.45美元卖出，
+So I originally sold it
+
+369
+00:19:00,337 --> 00:19:02,111
+现在报价5.90美元，
+for $2.45. It's now going
+
+370
+00:19:02,111 --> 00:19:05,215
+亏损
+for $5.90. So that is a loss of
+
+371
+00:19:05,215 --> 00:19:10,980
+3.45美元，即每手345美元，4手总共亏损1380美元。
+$3.45 or $345 times the four lots, which is a total of $1,380 in the red.
+
+372
+00:19:13,600 --> 00:19:15,707
+现在把数字加起来。
+So we just add up the
+
+373
+00:19:15,707 --> 00:19:17,463
+第一个信用价差获得1000美元，
+total numbers. $1,000 received from the
+
+374
+00:19:17,463 --> 00:19:19,921
+第二个看跌信用价差获得860美元，
+first credit spread, $860 received from the second
+
+375
+00:19:19,921 --> 00:19:25,892
+看涨信用价差亏损1380美元，总计盈利480美元。
+put credit spread, and then a loss of $1,380 from the call credit spread, making a total of $480.
+
+376
+00:19:27,300 --> 00:19:32,260
+另外再提一下，总保证金使用约4000美元。
+Also want to mention, again, the total margin I used was about $4,000.
+
+377
+00:19:33,120 --> 00:19:44,060
+480美元收益相对于4000美元保证金，回报率约12%。2天到期（DTE）的铁鹰能拿到12%回报已很不错。
+So a $480 return on $4,000 in margin used is about 12%. So a 12% return on a 2DTE iron condor is pretty good.
+
+378
+00:19:44,360 --> 00:19:46,740
+回撤约15%到16%。
+The drawdown was around 15% to 16%.
+
+379
+00:19:46,740 --> 00:19:49,669
+交易这类铁鹰时，
+When you're trading these types of iron condors, you have
+
+380
+00:19:49,669 --> 00:19:52,598
+得接受更大的回撤空间，
+to be willing to give them a little bit more
+
+381
+00:19:52,598 --> 00:19:55,527
+相对于你的目标收益。
+room in terms of drawdown relative to how much you're
+
+382
+00:19:55,527 --> 00:20:06,659
+想赚10%？铁鹰策略有时要容忍15%甚至20%的回撤。信用价差就是这么运作的。
+looking to make. So if you're looking to make 10%, sometimes you need to be willing to give the trade a 15%, possibly even a 20% drawdown because it is the nature of credit spreads, specifically iron condors, how they work.
+
+383
+00:20:07,740 --> 00:20:09,460
+因为信用价差，尤其是铁鹰，就是这么运作的。
+Again, if you're looking to make 10%, sometimes
+
+384
+00:20:09,460 --> 00:20:11,425
+你可能需要接受
+you need to be willing to have it
+
+385
+00:20:11,425 --> 00:20:13,882
+15%到20%的回撤，才能达成盈利目标。
+drawdown 15% to 20% if you're looking to make your profit target.
+
+386
+00:20:15,000 --> 00:20:20,620
+你在等时间衰减，等时间流逝。开仓前就得考虑这一点。
+You're waiting for time to decay and time to pass by. That is something you have to consider when you first open the trade.
+
+387
+00:20:20,620 --> 00:20:23,231
+如果你用4000美元保证金，
+So if you're spending $4,000 or using $4,000 of margin,
+
+388
+00:20:23,231 --> 00:20:26,169
+15%的回撤意味着多少？
+what is a 15% drawdown of that margin or that
+
+389
+00:20:26,169 --> 00:20:31,392
+如果这个数字对你太高，那4000美元风险太大。
+amount of capital? If that number is too high for you, then $4,000 is too much risk.
+
+390
+00:20:32,800 --> 00:20:35,430
+你需要减仓，
+You need to reduce your size. Maybe run
+
+391
+00:20:35,430 --> 00:20:37,731
+用2000美元保证金做铁鹰策略
+an iron condor using just $2,000 in margin
+
+392
+00:20:37,731 --> 00:20:42,662
+这样你能接受20%的回撤
+because at that point, you can maybe say, hey, you're willing to have a 20% drawdown.
+
+393
+00:20:43,480 --> 00:20:45,420
+这个风险可能更适合你的账户规模
+That is something that might fit your account size.
+
+394
+00:20:45,420 --> 00:20:47,687
+2000美元头寸20%回撤
+A 20% drawdown on a $2,000 position, you can give
+
+395
+00:20:47,687 --> 00:20:50,521
+能给交易留出呼吸空间
+the trade some room to breathe and you won't be
+
+396
+00:20:50,521 --> 00:20:54,489
+不会惊慌，因为不会出现1000美元的巨额亏损
+panicking because you're not going to see that you're down $1,000 or something too high.
+
+397
+00:20:55,740 --> 00:20:58,461
+能从容持仓，让交易发挥作用
+You can very comfortably hold to let the trade work
+
+398
+00:20:58,461 --> 00:21:03,359
+毕竟铁鹰是高成功概率的策略
+out because at the end of the day, iron condors are high probability of success type of trades.
+
+399
+00:21:03,680 --> 00:21:06,900
+但很少有人讨论持仓周期的问题
+The thing that's not often discussed is the duration of holding the trade.
+
+400
+00:21:07,340 --> 00:21:11,440
+交易中常会经历一些波动和回撤
+You will often ensue some type of pain and there will be some type of drawdown.
+
+401
+00:21:11,440 --> 00:21:14,355
+在我看来，铁鹰策略的关键
+The key or the success, in my opinion, with iron
+
+402
+00:21:14,355 --> 00:21:17,270
+无论是做宽幅铁鹰
+condors, whether you're going really wide iron condors or you're
+
+403
+00:21:17,270 --> 00:21:22,808
+还是我现在用的20 Delta铁鹰，核心是如何管理回撤
+going with a 20 delta type of iron condor that I'm running, is how well do you manage your drawdowns.
+
+404
+00:21:23,140 --> 00:21:25,947
+而管理回撤的关键
+And a large portion of how well you manage your
+
+405
+00:21:25,947 --> 00:21:28,192
+很大程度上取决于头寸规模
+drawdown is your position size. How large are
+
+406
+00:21:28,192 --> 00:21:30,999
+从开仓那一刻起，你的仓位有多大？
+you going from the moment you actually open the trade?
+
+407
+00:21:31,140 --> 00:21:34,740
+你需清楚铁鹰可能面临的最差情况
+You need to be aware of how bad the iron condor can get.
+
+408
+00:21:35,320 --> 00:21:37,946
+此外，还要明确交易的关键价位
+On top of that, having clear levels that you are
+
+409
+00:21:37,946 --> 00:21:40,572
+换句话说，如果你用某个交易系统
+aware of what you're trading. In other words, if you're
+
+410
+00:21:40,572 --> 00:21:47,399
+或其他交易工具，要在图表上标出这些价位，随时可见
+using some sort of system like QuantTrading app or using some sort of other edge, have the levels on your chart, be able to see them.
+
+411
+00:21:47,580 --> 00:21:51,046
+在我看来，这能显著提升对行权价的理解
+This helps, in my opinion, significantly knowing what is at
+
+412
+00:21:51,046 --> 00:21:54,512
+清楚每个看涨期权的行权价
+this call strike, knowing what put strike I'm shorting, knowing
+
+413
+00:21:54,512 --> 00:22:00,058
+清楚做空的看跌期权行权价，清楚上周低点，知道这些区域可能提供支撑
+what the previous week's low was, understanding that this area should provide some type of support.
+
+414
+00:22:00,060 --> 00:22:03,474
+如果行情反转，回落到这个区域
+So if the markets did reverse and came back down into this
+
+415
+00:22:03,474 --> 00:22:05,750
+我不会慌
+area, I would not panic because I would
+
+416
+00:22:05,750 --> 00:22:08,026
+因为我知道这个区域会起作用
+be thinking this area is going to act
+
+417
+00:22:08,026 --> 00:22:17,699
+会形成需求区，提供支撑，所以不会慌
+as some sort of demand zone. I'm not going to panic because I would be telling myself this area should act as some sort of demand zone. It should offer some type of support.
+
+418
+00:22:17,900 --> 00:22:20,735
+所以我才在这里卖出看跌期权
+That is why I sold the puts in this area,
+
+419
+00:22:20,735 --> 00:22:23,003
+因为我预期价格会回落到此
+because I would expect price to come down
+
+420
+00:22:23,003 --> 00:22:27,539
+然后反转，到周三铁鹰就会恢复正常
+to here and then reverse. And then by Wednesday, the iron condor will be totally fine.
+
+421
+00:22:27,660 --> 00:22:32,860
+这里同理。若价格上涨，预期会在此区域遇阻回落。
+The same case here. If price was to go up, I would expect it to reject in this area.
+
+422
+00:22:32,860 --> 00:22:36,750
+但市场上涨触及行权价时，
+However, whenever the market is going up and it enters in strike
+
+423
+00:22:36,750 --> 00:22:39,343
+这些行权价通常带有高正Gamma，
+prices that have a lot of high positive
+
+424
+00:22:39,343 --> 00:22:45,178
+价格会在此区域震荡。这就是我所把握的优势。
+gamma, it will usually be choppy in that area. And that is the edge that I'm aware of.
+
+425
+00:22:45,300 --> 00:22:49,080
+回到图表看看后续走势。先观察一下。
+So we come back up here and we see what happens later. Let's just see.
+
+426
+00:22:49,220 --> 00:22:51,310
+我标注了这点。原因是
+So, yes, I just highlighted this. The reason
+
+427
+00:22:51,310 --> 00:22:53,400
+我坚持持仓的信心，
+I had that conviction, the main reason I
+
+428
+00:22:53,400 --> 00:22:57,580
+主要是因为了解QuantTrading应用卖出区域的典型表现。
+had this conviction to hold was knowing what usually happens around the QuantTrading app sell zone.
+
+429
+00:22:57,700 --> 00:23:04,440
+价格通常会在此盘整，除非有重大催化剂。当时几日内没有重大催化剂。
+Price usually sticks around here without a major catalyst. There was no major catalyst on the schedule for a couple of days.
+
+430
+00:23:04,940 --> 00:23:08,980
+另外，Gex在这个区域很高，也增强了我的信心。
+Added conviction was with how high Gex was around this area.
+
+431
+00:23:09,180 --> 00:23:10,980
+我只做了一次调整，然后持有。
+I only made one adjustment and held.
+
+432
+00:23:11,320 --> 00:23:12,080
+我开仓了。
+So I opened the trade.
+
+433
+00:23:12,280 --> 00:23:12,800
+时机不好。
+Poor timing.
+
+434
+00:23:13,000 --> 00:23:14,500
+开仓后，价格就上涨了。
+When I opened this trade, price rallies.
+
+435
+00:23:14,760 --> 00:23:17,500
+我做了一次调整，转为铁蝶策略。
+I made that one adjustment and turn it into an iron butterfly.
+
+436
+00:23:17,680 --> 00:23:19,760
+然后只需等待两天。
+And then all I had to do was just wait a couple of days.
+
+437
+00:23:20,100 --> 00:23:21,560
+我还做了另一笔交易。
+I also ran another trade.
+
+438
+00:23:21,660 --> 00:23:22,600
+这是
+So this is
+
+439
+00:23:22,600 --> 00:23:24,168
+另一笔无关的交易，但值得一提。
+unrelated, but this was something.
+
+440
+00:23:24,168 --> 00:23:28,558
+这是我在周一开的看跌破翼蝶策略。
+But this was a put broken wing butterfly that I opened on the Monday.
+
+441
+00:23:28,560 --> 00:23:32,140
+是在周一收盘时开的。这是看跌破翼蝶。
+So at Monday's close. This is the put broken wing butterfly.
+
+442
+00:23:32,860 --> 00:23:34,580
+这也是你可以尝试的策略。
+And this is something you can also do.
+
+443
+00:23:34,980 --> 00:23:38,100
+你可以在持仓基础上再加一个价差组合。
+You can add on another spread to whatever trade in which you're already holding.
+
+444
+00:23:38,700 --> 00:23:40,200
+铁鹰的到期日是
+The iron condos expiration was
+
+445
+00:23:40,200 --> 00:23:42,300
+10号。但我在2024年1月
+for the 10th. But on Monday, January
+
+446
+00:23:42,300 --> 00:23:45,300
+8日（周一）决定做了这个看跌破翼蝶。
+8th, I decided to run this put broken wing butterfly.
+
+447
+00:23:45,780 --> 00:23:48,154
+这个交易的结构或逻辑是，
+The structure of this trade or the logic
+
+448
+00:23:48,154 --> 00:23:50,231
+市场在4760点，
+behind this trade was, hey, the market
+
+449
+00:23:50,231 --> 00:23:52,011
+处于这个区域。
+is at 4760. It's in this area.
+
+450
+00:23:52,011 --> 00:23:56,462
+这个区域应该会作为阻力，如图表所分析的。
+This area should act as some sort of resistance as we established on the chart.
+
+451
+00:23:56,760 --> 00:23:57,992
+于是此时
+So at this point,
+
+452
+00:23:57,992 --> 00:24:00,457
+我不会忽视一个事实
+I'm not going to ignore the fact that
+
+453
+00:24:00,457 --> 00:24:02,922
+市场可能会回踩至
+the market might just retrace back to the
+
+454
+00:24:02,922 --> 00:24:06,619
+次日（周二到期）的最大痛点行权价
+max pain strike the next day, which would be the Tuesday expiration.
+
+455
+00:24:06,820 --> 00:24:09,660
+这就是0 DTE每天的魅力所在
+And that is the beauty of zero DTEs every day of the week.
+
+456
+00:24:09,740 --> 00:24:11,620
+你可以构建这样的交易
+You can create a trade like this.
+
+457
+00:24:11,920 --> 00:24:12,777
+我的风险并不高
+My risk was not that
+
+458
+00:24:12,777 --> 00:24:13,977
+大家也能看到
+high. As you guys can see, the
+
+459
+00:24:13,977 --> 00:24:15,519
+这笔交易的权利金成本不到1美元
+debit on this trade was less than a dollar.
+
+460
+00:24:15,520 --> 00:24:16,722
+换句话说
+So in other words,
+
+461
+00:24:16,722 --> 00:24:19,127
+如果市场继续上涨
+if the market was to keep running up
+
+462
+00:24:19,127 --> 00:24:21,532
+或价格维持在这个区间
+or price just stayed around here, I was
+
+463
+00:24:21,532 --> 00:24:24,839
+我只会在总仓位上增加1美元风险
+only adding a dollar more in risk to my overall position.
+
+464
+00:24:25,080 --> 00:24:27,580
+这完全在我的风险控制范围内
+This is well within the risk parameters for myself.
+
+465
+00:24:27,760 --> 00:24:28,454
+但如果
+However, if
+
+466
+00:24:28,454 --> 00:24:31,233
+市场先跳空下跌再回踩
+the market did gap down and then retrace
+
+467
+00:24:31,233 --> 00:24:34,359
+到4730的最大痛点行权价
+back to the max pain strike of that 4730, the
+
+468
+00:24:34,359 --> 00:24:39,223
+4720区间，我预期会回踩到这个范围
+4720 area, anywhere within this area is what I was thinking we would retrace to.
+
+469
+00:24:39,920 --> 00:24:42,780
+这笔交易能带来额外几美元收益
+This trade can bring in an extra couple dollars in profit.
+
+470
+00:24:42,940 --> 00:24:47,020
+显然，如果价格在这个区间收盘，有机会赚更多
+And obviously, if the price pinned around here, there was an opportunity to make a lot of money.
+
+471
+00:24:47,380 --> 00:24:49,420
+但我并没有持仓到全天
+But I did not hold the trade like this for the full day.
+
+472
+00:24:49,880 --> 00:24:53,820
+价格跳空下跌后反弹，并突破前期高点时
+Once price gapped down and I saw that we bounced back up and we took out the higher day,
+
+473
+00:24:53,900 --> 00:24:56,440
+我决定兑现这笔交易的收益
+I decided to just realize the profit on that trade.
+
+474
+00:24:56,740 --> 00:24:58,381
+此外
+On top of that, it's also
+
+475
+00:24:58,381 --> 00:25:00,569
+还需要交易经验来判断
+having the experience to know. Usually after we
+
+476
+00:25:00,569 --> 00:25:03,305
+通常在反弹后，价格会回踩约50%
+get some sort of a rally, price will retrace about 50%.
+
+477
+00:25:03,580 --> 00:25:05,284
+回到Quant Trading
+As we head back to the Quant Trading
+
+478
+00:25:05,284 --> 00:25:06,775
+App的Discord群
+App Discord, you guys can see this
+
+479
+00:25:06,775 --> 00:25:08,266
+大家可以看到这一点
+right here. This is that 50% retracement side.
+
+480
+00:25:08,680 --> 00:25:10,264
+我用周五的低点作为参考
+So I use Friday's low to
+
+481
+00:25:10,264 --> 00:25:12,112
+用周一高点。然后我想如果
+Monday's high. And then I figured if
+
+482
+00:25:12,112 --> 00:25:13,960
+回撤，价格会回落到
+we retrace, we would come right back
+
+483
+00:25:13,960 --> 00:25:17,656
+4720。因此我决定做铁蝶，目标是这个区间。
+down to 4720. And that's why I decided to run the butterfly targeting this area.
+
+484
+00:25:17,920 --> 00:25:22,560
+但4730也足够。不需要跌回4720。
+But understanding 4730 was good enough. It didn't have to come all the way back down to 4720.
+
+485
+00:25:22,920 --> 00:25:24,753
+只要在这个区间内，
+Anything within this area, as long as it
+
+486
+00:25:24,753 --> 00:25:26,586
+即使跳空下跌，
+gaps down, the trade was going to be
+
+487
+00:25:26,586 --> 00:25:30,939
+交易也能盈利。如果市场继续上涨，我只多承担1美元风险。
+good. And if the market continued to go up, I was only going to be risking an extra dollar.
+
+488
+00:25:31,080 --> 00:25:32,568
+如果价格横盘，
+If price stayed sideways, then the
+
+489
+00:25:32,568 --> 00:25:34,304
+交易可能亏损约20美分
+trade might have been down maybe 20 cents
+
+490
+00:25:34,304 --> 00:25:37,032
+隔夜，这完全没问题。
+or so overnight, which definitely would not have been a problem.
+
+491
+00:25:37,820 --> 00:25:39,240
+现在回到铁蝶策略。
+Now back to the iron butterfly.
+
+492
+00:25:39,560 --> 00:25:42,100
+当天，因为市场
+That same day, because the market
+
+493
+00:25:42,100 --> 00:25:44,216
+在4765遇阻后跳空下跌。
+had rejected 4765, we gapped down.
+
+494
+00:25:44,216 --> 00:25:49,719
+这是铁蝶的损益（P&L）图。
+And this is what the P&L looked like for that iron fly.
+
+495
+00:25:50,020 --> 00:25:51,985
+大家可能记得这个点
+If you guys remember this one right
+
+496
+00:25:51,985 --> 00:25:53,669
+亏损1500美元。
+here, that was down 1500 bucks. Because
+
+497
+00:25:53,669 --> 00:25:57,318
+因为跳空下跌，铁蝶已不再吸引人。
+price gapped down, it meant this iron fly was no longer as attractive.
+
+498
+00:25:57,900 --> 00:25:59,333
+所以我说这看起来
+So that's why I said it looks like
+
+499
+00:25:59,333 --> 00:26:00,586
+像是在铁鹰调整上犯了错，
+I messed up with that very late
+
+500
+00:26:00,586 --> 00:26:02,019
+调整太晚了。
+in the day adjustments to the iron condor.
+
+501
+00:26:02,020 --> 00:26:03,975
+我应该更早调整。
+I should have made this adjustment much sooner
+
+502
+00:26:03,975 --> 00:26:05,930
+因为这个时候，可以说
+because at this point, one can argue it
+
+503
+00:26:05,930 --> 00:26:08,618
+不调整可能更好。
+was probably better if I just left the iron condor alone.
+
+504
+00:26:08,740 --> 00:26:11,680
+所以我想分享这个可能的错误。
+So I wanted to share what could be argued as a mistake.
+
+505
+00:26:12,140 --> 00:26:13,926
+这是铁鹰的损益图，
+This is what the iron condor would have
+
+506
+00:26:13,926 --> 00:26:15,489
+如果我什么都不做，
+been looking like if I made no
+
+507
+00:26:15,489 --> 00:26:18,839
+任其发展。
+adjustments or I did absolutely nothing. I just let it continue to play itself out.
+
+508
+00:26:19,280 --> 00:26:21,300
+我把图放大点。
+So I'm going to open this up and make it a little bit larger for you guys.
+
+509
+00:26:21,440 --> 00:26:22,865
+大家可以看到，
+You guys can see it was
+
+510
+00:26:22,865 --> 00:26:24,527
+这里盈利约1美元。截图
+up about a dollar here. The screenshot
+
+511
+00:26:24,527 --> 00:26:27,139
+截图拍摄于2024年1月9日（周二）开盘后4分钟
+was taken four minutes after the market opened on the Tuesday.
+
+512
+00:26:27,280 --> 00:26:29,160
+次日市场低开后，我立即调整
+So the next day, right after the market gapped down.
+
+513
+00:26:29,160 --> 00:26:30,580
+我最喜欢期权分层交易的一点是
+It's one of the things that I really
+
+514
+00:26:30,580 --> 00:26:31,645
+可以保存交易
+like about option strata. I can
+
+515
+00:26:31,645 --> 00:26:35,018
+放进已结束文件夹，这样就退出了交易
+save the trade. I can put it in a closed folder. So now I'm no longer in this trade.
+
+516
+00:26:35,120 --> 00:26:36,677
+但我仍会回头追踪
+However, I still like to go back and
+
+517
+00:26:36,677 --> 00:26:38,234
+尤其是周末做复盘或分析时
+track to see, especially at the end of
+
+518
+00:26:38,234 --> 00:26:39,401
+或者制作像这样的视频
+the week when I do my
+
+519
+00:26:39,401 --> 00:26:43,099
+做交易日志或分析，也可能制作这样的视频和大家分享
+journal or do my analysis or I might create a video like this. I can share with you guys.
+
+520
+00:26:43,260 --> 00:26:45,102
+让交易自然运行可能风险更低
+It might have been less risky to actually
+
+521
+00:26:45,102 --> 00:26:46,944
+因为我已经接近最大亏损
+just let this trade play itself out because
+
+522
+00:26:46,944 --> 00:26:49,938
+损失接近铁鹰的最大亏损上限
+I was already down close to what would have been my max loss.
+
+523
+00:26:50,060 --> 00:26:51,835
+但我知道自己会担心
+However, I know I wouldn't have
+
+524
+00:26:51,835 --> 00:26:54,201
+隔夜睡不安稳，因为市场可能意外
+slept that comfortable overnight considering what could have
+
+525
+00:26:54,201 --> 00:26:55,976
+比如低开后继续下跌
+happened if the markets did do
+
+526
+00:26:55,976 --> 00:26:58,638
+或反向高开后持续上涨
+the unexpected and gapped up and then continued running.
+
+527
+00:26:58,800 --> 00:27:00,640
+铁鹰策略绝不能承受最大亏损
+You never really want to suffer a max loss.
+
+528
+00:27:00,720 --> 00:27:02,304
+你甚至不该让自己
+You don't even want to put yourself in
+
+529
+00:27:02,304 --> 00:27:03,492
+处于可能承受最大亏损的境地
+the position in which you can
+
+530
+00:27:03,492 --> 00:27:04,878
+铁鹰策略中遭遇最大亏损
+suffer a max loss on iron condors.
+
+531
+00:27:05,040 --> 00:27:06,462
+这次的情况
+So in this case here, yes,
+
+532
+00:27:06,462 --> 00:27:07,884
+可能是个好主意
+this might have been a good
+
+533
+00:27:07,884 --> 00:27:10,018
+因为这符合我的止盈目标
+idea because this would have been the profit targets.
+
+534
+00:27:10,220 --> 00:27:18,400
+我通常会设定20%~25%的权利金目标，大约占保证金的7%~10%
+I'm generally looking for about 20 to 25% of my credits, which usually translates to about seven to 10% of the margin.
+
+535
+00:27:18,400 --> 00:27:21,640
+换句话说，这里10%的保证金约100美元
+So in other words, 10% of the margin here is about a hundred bucks.
+
+536
+00:27:21,880 --> 00:27:22,622
+9%已经接近
+So 9% this is
+
+537
+00:27:22,622 --> 00:27:24,601
+铁鹰策略的止盈目标
+well around the profit targets for an iron
+
+538
+00:27:24,601 --> 00:27:28,312
+这意味着我次日就能达到止盈目标
+condor like this, which means I would have hit my profit target one day later.
+
+539
+00:27:28,560 --> 00:27:33,680
+4手合约的话，这笔交易损益约400美元，持仓还不到24小时
+And with four lots, that would have been about $400 on a trade that didn't even take 24 hours to hold.
+
+540
+00:27:33,960 --> 00:27:35,660
+这一点我也想特别指出
+That is something that I also want to point out.
+
+541
+00:27:35,740 --> 00:27:37,725
+对这类策略做调整时
+When you make adjustments to these types of
+
+542
+00:27:37,725 --> 00:27:41,199
+通常需要多持仓一段时间
+trades, it will usually mean you have to hold it a little bit longer.
+
+543
+00:27:41,200 --> 00:27:43,960
+这部分我通常不太适应
+And that's the part that I'm usually uncomfortable with.
+
+544
+00:27:44,080 --> 00:27:48,000
+我更想直接平仓，但正在训练自己坚持持仓
+I would rather just get out of the trade, but I'm trying to condition myself to hold the
+
+545
+00:27:48,000 --> 00:27:49,726
+多持仓一段时间，尤其是
+trades a little bit longer, especially if
+
+546
+00:27:49,726 --> 00:27:51,452
+当我有非常充分的理由
+I have some sort of very strong
+
+547
+00:27:51,452 --> 00:27:56,138
+且已做好风险管理，市场走向非我们能控
+reasons and I've done my job with managing the risks, what the market does is outside of our control.
+
+548
+00:27:56,320 --> 00:27:58,020
+我的任务是降低风险
+My job was to reduce my risk.
+
+549
+00:27:58,020 --> 00:28:00,672
+我觉得我做得不错
+And I felt I did a good job with that
+
+550
+00:28:00,672 --> 00:28:02,793
+通过降低T+0线
+by reducing my T plus zero line, following
+
+551
+00:28:02,793 --> 00:28:05,445
+遵循铁鹰管理规则，尽管我知道
+the rules of iron condor management, even though I know
+
+552
+00:28:05,445 --> 00:28:15,258
+现在不得不比预期多持仓一段时间，因为铁蝶策略中平值期权衰减需要更长时间
+now I'm going to have to hold this trade a little bit longer than I would like to, because it's going to take longer for the iron fly to have the options decay out the money options.
+
+553
+00:28:15,260 --> 00:28:19,600
+虚值期权衰减比平值期权快
+So out the money options decay faster than at the money options.
+
+554
+00:28:20,620 --> 00:28:23,320
+但平值期权的权利金更高
+However, at the money options have a lot more premium.
+
+555
+00:28:23,740 --> 00:28:25,621
+所以虽虚值期权衰减快
+So even though the out the money options
+
+556
+00:28:25,621 --> 00:28:28,679
+平值期权的吸引力更大
+are decaying faster, the at the money options are a lot more attractive.
+
+557
+00:28:28,680 --> 00:28:31,305
+这也是我倾向于交易铁蝶
+And that's one of the reasons why I usually tend
+
+558
+00:28:31,305 --> 00:28:33,143
+而非铁鹰的原因之一
+to trade in butterflies versus iron condors,
+
+559
+00:28:33,143 --> 00:28:36,819
+尽管虚值期权的成功概率更高
+even though the probability of success is much higher with out the money options.
+
+560
+00:28:36,980 --> 00:28:40,240
+这可能适合只关注Delta的交易者
+I think that's for guys that only trade paying attention to their deltas.
+
+561
+00:28:40,360 --> 00:28:42,900
+他们对技术分析的理解不够深入
+They don't have as firm of an understanding with technical analysis.
+
+562
+00:28:42,900 --> 00:28:44,640
+不使用量化交易工具
+They're not using something like quant trading
+
+563
+00:28:44,640 --> 00:28:45,882
+或不理解
+app, or they don't understand
+
+564
+00:28:45,882 --> 00:28:48,119
+Gamma敞口，或根本不用
+gamma exposure, or they just don't use gamma exposure.
+
+565
+00:28:48,380 --> 00:28:51,296
+现在散户交易者的选择
+We have so many different options for any type of
+
+566
+00:28:51,296 --> 00:28:54,504
+比5年、10年、20年、30年前多很多
+edge now as retail traders than we did five, 10, 20, 30 years ago.
+
+567
+00:28:55,460 --> 00:28:58,740
+我喜欢用尽可能多的合理工具
+And I like to utilize as many of the tools possible that makes sense to me.
+
+568
+00:28:58,800 --> 00:29:01,847
+如果有机会用平值期权
+So if there's a time where I can go with at the
+
+569
+00:29:01,847 --> 00:29:03,878
+来收取更多权利金
+money options to collect more credit, I would
+
+570
+00:29:03,878 --> 00:29:07,179
+我可能更倾向于这种选择，而非虚值期权
+probably prefer to go with that option versus using out the money options.
+
+571
+00:29:07,180 --> 00:29:09,186
+虽然胜率更高,
+Even though the probability of success is
+
+572
+00:29:09,186 --> 00:29:13,199
+但需占用更多保证金，收取的权利金却少很多。
+higher, you'll have to use a lot more margin to receive significantly less credit.
+
+573
+00:29:13,360 --> 00:29:14,280
+这就是权衡所在。
+So that is the trade-off.
+
+574
+00:29:14,880 --> 00:29:16,714
+到收盘时，
+By market close, so this
+
+575
+00:29:16,714 --> 00:29:19,282
+这是收盘前3分钟,
+is three minutes before the market close
+
+576
+00:29:19,282 --> 00:29:23,318
+周二。这是铁蝶策略的回本情况。
+on the Tuesday. This was how the iron fly had recovered.
+
+577
+00:29:23,480 --> 00:29:26,820
+当天收益约329美元。
+So as you guys can see, it pulled in about $329 on this day.
+
+578
+00:29:27,520 --> 00:29:30,000
+前一天还亏损约1.5美元,
+Again, the previous day, it was down about 1.5.
+
+579
+00:29:30,420 --> 00:29:32,060
+现在正在回升。
+So we can see that it was recovering.
+
+580
+00:29:32,420 --> 00:29:33,960
+所以我开始在这里标注。
+So that's why I just started mentioning here.
+
+581
+00:29:34,040 --> 00:29:35,560
+今天略有回升。
+We can see this recovering a little bit today.
+
+582
+00:29:35,660 --> 00:29:39,580
+若能转盈，明天会更有意思。
+And the fact that it can even turn out profitable is going to be funny for tomorrow.
+
+583
+00:29:39,580 --> 00:29:45,000
+And the following day, if we take a look at the P&L, this would be right here.
+
+584
+00:29:45,100 --> 00:29:49,280
+这是到期日周三，纽约时间10:36。
+So this is 10.36 Eastern time here now on the day of expiration. So this is the Wednesday.
+
+585
+00:29:49,640 --> 00:29:52,720
+价格仍在47.65美元附近震荡。
+As you guys can see, the price is still chopping around $47.65.
+
+586
+00:29:53,440 --> 00:29:56,440
+等待期间又赚了500美元。
+The trade pulled in another $500 just from waiting.
+
+587
+00:29:56,640 --> 00:29:59,980
+这时我开始提交平仓订单。
+And at this point, this is when I started submitting my closing orders.
+
+588
+00:30:00,500 --> 00:30:02,646
+我一边截图记录交易日志,
+So I was taking my screenshots from my journal as
+
+589
+00:30:02,646 --> 00:30:04,792
+一边在QuantChairN的Discord分享,
+well as sharing within the QuantChairN app Discord just for
+
+590
+00:30:04,792 --> 00:30:06,938
+给没调整过铁鹰的交易者参考。
+anyone that is curious that have not adjusted iron condors.
+
+591
+00:30:06,940 --> 00:30:10,880
+大家问过我如何管理或调整铁鹰。
+You guys have asked for how I manage or make adjustments to my iron condors.
+
+592
+00:30:11,000 --> 00:30:13,720
+所以我决定分享一些实例。
+So I figured I'd just come in and share some of this.
+
+593
+00:30:13,820 --> 00:30:18,060
+这就是我之前分享的复盘，包括部分逻辑。
+So that's why this was the recap in which I shared a little bit earlier, some of my justifications.
+
+594
+00:30:18,800 --> 00:30:21,475
+另外，铁鹰策略
+And then as well as how the iron condor would
+
+595
+00:30:21,475 --> 00:30:24,150
+如果交易者在周二不止盈,
+have performed if a person did not take profits on
+
+596
+00:30:24,150 --> 00:30:29,500
+周二时我决定持有铁鹰到周三，此时铁鹰已亏损1美元
+the Tuesday, decided to hold the iron condor into the Wednesday, the iron condor would have been down a dollar.
+
+597
+00:30:29,720 --> 00:30:32,235
+这时铁鹰的决策会很棘手,
+So now this would have been a very challenging decision
+
+598
+00:30:32,235 --> 00:30:33,492
+不知道如何是好。
+to make what to do
+
+599
+00:30:33,492 --> 00:30:38,019
+但用铁鹰策略时，转为铁蝶后，止盈就变得简单。
+now with the iron condor. But by using the iron fly, it was simple to just take profits.
+
+600
+00:30:38,460 --> 00:30:40,303
+我假设，如果我没调整
+So I was just saying hypothetically, if I didn't make
+
+601
+00:30:40,303 --> 00:30:42,699
+周一没调整的话，我可能直接平仓了
+the adjustment on Monday, I would have probably just closed that one out.
+
+602
+00:30:42,800 --> 00:30:44,903
+然后我会在周三再开一个铁鹰
+And then I would have run an iron condor on
+
+603
+00:30:44,903 --> 00:30:47,006
+因为我确信价格会在这一区间震荡
+the Wednesday because of the conviction in which I would
+
+604
+00:30:47,006 --> 00:30:49,319
+那个价位区间会是震荡行情
+have had that price would have been choppy in this area.
+
+605
+00:30:49,680 --> 00:30:52,003
+不过，我决定把gamma风险暴露
+Anyway, I decided to leave the gamma exposure towards the
+
+606
+00:30:52,003 --> 00:30:55,719
+留到视频最后再详细解释
+end of this video in case it's a subject that you guys are not aware of.
+
+607
+00:30:55,800 --> 00:30:59,560
+这样更方便大家理解
+That way, this is a good time to probably conclude with watching this video.
+
+608
+00:30:59,560 --> 00:31:02,660
+现在，我想强调另一个要点：gamma风险暴露
+Now, I want to point out the other edge that I had was gamma exposure.
+
+609
+00:31:02,860 --> 00:31:05,088
+看一下量化交易app
+So if we take a look at the quant trading
+
+610
+00:31:05,088 --> 00:31:07,316
+这里的gamma风险暴露
+app right here, the gamma exposure has been archived for
+
+611
+00:31:07,316 --> 00:31:10,658
+已存档近一年半，涵盖0DTE和周到期
+almost a year and a half now, both the zero DTE and the weekly expiration.
+
+612
+00:31:10,900 --> 00:31:12,040
+我们看的是SPY
+So what we're looking at is the SPY.
+
+613
+00:31:12,160 --> 00:31:15,420
+这是周到期日，8号，周一的数据
+This is the weekly expiration on the 8th. So this was on Monday.
+
+614
+00:31:15,920 --> 00:31:19,580
+这是周五到期的gamma风险暴露
+This is what the gamma exposure was for the Friday expiration.
+
+615
+00:31:19,840 --> 00:31:21,013
+开仓时
+So at the time in which
+
+616
+00:31:21,013 --> 00:31:22,773
+我再强调一下
+I was opening, so again, this is right when
+
+617
+00:31:22,773 --> 00:31:24,141
+当时我正准备开仓
+I was looking to open the trade,
+
+618
+00:31:24,141 --> 00:31:26,878
+我注意到上方有大量看涨期权gamma
+I was aware of how much call gamma there was to this upside here.
+
+619
+00:31:26,880 --> 00:31:28,320
+成交量也在涌入
+I saw how much volume was coming in.
+
+620
+00:31:28,320 --> 00:31:30,027
+我对470点位
+This is where I had some sort
+
+621
+00:31:30,027 --> 00:31:31,978
+有信心，觉得比较安全
+of conviction or I felt safe around the 470
+
+622
+00:31:31,978 --> 00:31:33,929
+因为这里成交量很强
+level because I saw how strong of a
+
+623
+00:31:33,929 --> 00:31:36,855
+这是绝对gamma行权价
+level this was in terms of the volume that was coming in.
+
+624
+00:31:37,460 --> 00:31:40,560
+也是最大痛点，且价格在上方
+It was the absolute gamma strike. It was the max pain strike and price was above it.
+
+625
+00:31:40,880 --> 00:31:47,000
+价格高于这样一个强势期权行权价时，我会把它看作支撑
+So whenever price is above such a strong option strike as this, my brain immediately interprets this as support.
+
+626
+00:31:47,200 --> 00:31:49,113
+所以会考虑在该行权价下方卖出看跌期权
+So selling any type of puts below
+
+627
+00:31:49,113 --> 00:31:51,026
+这通常是我第一个考虑的
+this strike is usually the first thing
+
+628
+00:31:51,026 --> 00:31:52,939
+这是SPY的情况
+I'm going to take a look at.
+
+629
+00:31:53,180 --> 00:31:54,280
+再来看SPX
+So that's on the SPY here.
+
+630
+00:31:54,280 --> 00:31:57,160
+这是SPX
+And let's take a look at the SPX. This is the SPX.
+
+631
+00:31:58,320 --> 00:32:00,640
+开仓铁鹰前几分钟
+A few minutes before I open the Iron Condor.
+
+632
+00:32:00,760 --> 00:32:02,451
+大家可以看到
+So as you guys can see
+
+633
+00:32:02,451 --> 00:32:04,142
+这里的gamma曲线
+here, this gamma profile was generated
+
+634
+00:32:04,142 --> 00:32:05,833
+在东部时间12:51生成
+at 1251 Eastern time. It is for
+
+635
+00:32:05,833 --> 00:32:09,216
+针对4天到期（DTE），即周五到期的周度合约
+the 4DTE. So this is the Friday expiration. It is the weekly.
+
+636
+00:32:09,660 --> 00:32:12,900
+周度到期的流动性更大，非常重要
+The weekly expirations are larger and they're very important.
+
+637
+00:32:13,300 --> 00:32:19,340
+我在这里做空4700看跌期权，当时SPY在470行权价下方
+So as I'm looking at this, I shorted the 4700 put right here. This was below that 470 strike on the SPY.
+
+638
+00:32:19,460 --> 00:32:20,945
+我先从SPY开始分析
+I start my analysis on the
+
+639
+00:32:20,945 --> 00:32:22,925
+然后来看SPX
+SPY and then I come and take a
+
+640
+00:32:22,925 --> 00:32:24,905
+决定实际交易的行权价
+look at the SPX to decide what strike
+
+641
+00:32:24,905 --> 00:32:31,590
+可能有人不知道，我90%的分析基于SPY，但实际交易SPX期权
+prices I actually want to trade because if you guys didn't know, I do 90% of my analysis on the SPY and then I actually trade SPX options.
+
+642
+00:32:32,060 --> 00:32:36,380
+看涨侧这里有4765行权价，我称之为‘孤岛’
+On the upside here, we can see this 4765. I call this an island.
+
+643
+00:32:36,540 --> 00:32:42,680
+这种行权价与相邻行权价完全相反
+Whenever there is a strike like this, that is the opposite of all the neighboring strike prices.
+
+644
+00:32:42,680 --> 00:32:44,620
+非常突出，非常显眼
+And it's pretty dominant and it sticks out.
+
+645
+00:32:44,620 --> 00:32:46,522
+我称之为‘负gex孤岛’
+This is what I call a negative
+
+646
+00:32:46,522 --> 00:32:47,881
+因为它
+gex island because it is
+
+647
+00:32:47,881 --> 00:32:51,958
+是孤立的，单独存在，几乎不属于那里
+in isolation. It is by itself. In other words, it almost doesn't even belong there.
+
+648
+00:32:52,120 --> 00:32:57,180
+看到这种情况，会导致价格在这一行权价附近震荡
+Whenever I see this, this is one thing that contributes to price being choppy around this strike price.
+
+649
+00:32:57,660 --> 00:33:00,629
+如果不考虑铁鹰策略
+If I was not considering running an iron condor, I
+
+650
+00:33:00,629 --> 00:33:02,707
+我会考虑做一个
+would have considered just running an out
+
+651
+00:33:02,707 --> 00:33:05,379
+场外长看涨蝶式策略，目标就是这个行权价
+the money long call butterfly targeting this strike price.
+
+652
+00:33:05,440 --> 00:33:07,946
+预期价格会在本周某个时点上涨至
+And the expectation would be that price would rise towards
+
+653
+00:33:07,946 --> 00:33:09,951
+这个行权价
+this strike at one point during this week,
+
+654
+00:33:09,951 --> 00:33:12,959
+然后在该区域略有震荡
+and then it will remain a little bit choppy in that area.
+
+655
+00:33:12,960 --> 00:33:16,317
+结合量化交易app的卖出区间
+So knowing this in combination with the quant trading app
+
+656
+00:33:16,317 --> 00:33:18,667
+所以4765行权价
+sell zone is why this 4765 strike, I
+
+657
+00:33:18,667 --> 00:33:21,017
+我并没有真正的恐惧或担忧
+didn't have any real fear or concern
+
+658
+00:33:21,017 --> 00:33:25,382
+关于运行铁鹰策略并转为铁蝶
+regarding running the iron condor and then rolling it into an iron fly.
+
+659
+00:33:25,880 --> 00:33:30,340
+因为如果不做铁鹰，我本来就会做铁蝶
+Because if I wasn't running an iron condor, I would have just ran an iron butterfly anyway.
+
+660
+00:33:30,820 --> 00:33:32,000
+这一点值得注意
+Something to take note of.
+
+661
+00:33:32,340 --> 00:33:35,860
+量化交易应用的一个亮点是，可以重新生成这些图表
+Another thing that's pretty neat with quant trading app is we can regenerate all of these graphs right here.
+
+662
+00:33:35,940 --> 00:33:39,060
+这样就能准确看到当时的数据和信息
+So we can see exactly what the data, what the information looked like at the time.
+
+663
+00:33:39,280 --> 00:33:42,800
+我要打开绝对Gamma行权价，关闭净GEX
+I'm going to turn on the absolute gamma strikes and I'm going to turn off the net gex.
+
+664
+00:33:42,800 --> 00:33:44,520
+这里是当前现货价格
+And this is our spot price right here.
+
+665
+00:33:44,900 --> 00:33:48,200
+上方有大量绝对Gamma
+This is a lot of absolute gamma to the upside.
+
+666
+00:33:48,760 --> 00:33:53,360
+这通常是我判断方向性的参考
+This right here is usually something I will use as a gauge for some sort of directionality.
+
+667
+00:33:53,760 --> 00:33:56,516
+我的理解是
+My brain is going to interpret this as there is
+
+668
+00:33:56,516 --> 00:33:58,169
+上方流动性充足
+a lot of liquidity up here
+
+669
+00:33:58,169 --> 00:34:02,579
+价格会倾向于流动性集中的区域
+and price is going to want to gravitate towards where there is a lot of liquidity.
+
+670
+00:34:03,080 --> 00:34:05,096
+此外
+On top of that, there is a
+
+671
+00:34:05,096 --> 00:34:07,400
+当时还有大量投机行为
+lot of speculation at this time that people
+
+672
+00:34:07,400 --> 00:34:10,280
+交易者仍在大量买入虚值看涨期权
+are still buying a lot of out the money calls.
+
+673
+00:34:10,739 --> 00:34:11,719
+这也是一个信号
+That is going to be a sign.
+
+674
+00:34:11,780 --> 00:34:14,060
+这是看涨期权和看跌期权的成交量，我刚打开
+So this is the call volume, the put volume, which I just turned on.
+
+675
+00:34:14,120 --> 00:34:15,980
+这里能看出强度有多大
+And we can see how strong this is right here.
+
+676
+00:34:16,360 --> 00:34:19,820
+相较图表上其他行权价，没有更突出的了
+Relative to the other strike prices on this chart, there's nothing more dominant.
+
+677
+00:34:20,139 --> 00:34:22,314
+最高看涨成交量、第二高
+The highest call volume, the second highest
+
+678
+00:34:22,314 --> 00:34:24,489
+第三高的看涨成交量
+call volume, and the third highest call
+
+679
+00:34:24,489 --> 00:34:28,218
+都高于图表上最高的看跌成交量
+volume are all higher than the highest put volume on this chart.
+
+680
+00:34:28,320 --> 00:34:30,659
+此时最高看跌成交量集中在4600点
+At this point, the highest put volume is coming into 4,600.
+
+681
+00:34:31,219 --> 00:34:32,604
+这时我会想
+At this point, I'm going to think
+
+682
+00:34:32,604 --> 00:34:33,989
+可能有人在抛售4600看跌期权
+someone is just selling these 4,600 puts because
+
+683
+00:34:33,989 --> 00:34:36,561
+因为他们认为市场不可能跌到这么低
+they're thinking there's no way the market is going to go this low.
+
+684
+00:34:36,760 --> 00:34:42,400
+不管谁在做什么，我都会关注这里
+So that aside, regardless of who's doing what, this is something I'm paying attention to right here.
+
+685
+00:34:42,480 --> 00:34:44,900
+这是大量资金流向看涨方向
+That is a lot of volume going into the upside.
+
+686
+00:34:45,060 --> 00:34:47,542
+如果关闭所有成交量
+If we turn off all of the volume, we take
+
+687
+00:34:47,542 --> 00:34:49,527
+从绝对Gamma角度看
+a look at from an absolute gamma perspective,
+
+688
+00:34:49,527 --> 00:34:53,498
+相较现货价格，上方的绝对Gamma明显更多
+there is a whole lot more absolute gamma to the upside relative to the spot price.
+
+689
+00:34:53,540 --> 00:34:54,540
+这里是我们的现货价格
+So this is our spot price.
+
+690
+00:34:54,540 --> 00:34:56,212
+价格可以上涨或
+Price can either go up or
+
+691
+00:34:56,212 --> 00:34:57,884
+会从这里下跌
+it's going to go down from
+
+692
+00:34:57,884 --> 00:34:59,835
+因为不会一直停留
+here because it's not going to stay
+
+693
+00:34:59,835 --> 00:35:02,343
+在4729.7273美元整整4天
+at exactly 47, 29, 72, 73 cents for four more days this week.
+
+694
+00:35:03,520 --> 00:35:04,497
+它要么上涨
+It's either going to go
+
+695
+00:35:04,497 --> 00:35:05,865
+哪怕只涨1美分
+up, even if it goes up one
+
+696
+00:35:05,865 --> 00:35:08,798
+要么下跌1美分，总会有波动
+penny or it goes down one penny, it's going to make some sort of move.
+
+697
+00:35:09,000 --> 00:35:11,073
+那么相对现价，哪边
+So relative to the spot price, where is
+
+698
+00:35:11,073 --> 00:35:12,887
+的绝对Gamma更高？我仔细看
+there more absolute gamma? And I'm looking
+
+699
+00:35:12,887 --> 00:35:15,738
+发现全在上涨方向
+at this and I'm seeing that it's all to this upside.
+
+700
+00:35:15,900 --> 00:35:17,786
+所以这是我当时
+So that was another reason in which I
+
+701
+00:35:17,786 --> 00:35:19,436
+开仓铁鹰时可能有点冲动
+said I might've been a little trigger
+
+702
+00:35:19,436 --> 00:35:21,558
+的另一个原因
+happy when I first opened up the iron condo.
+
+703
+00:35:21,640 --> 00:35:22,820
+我早就意识到这一点
+I was already aware of this.
+
+704
+00:35:22,820 --> 00:35:24,494
+我分析过这些数据
+I took a look at all this
+
+705
+00:35:24,494 --> 00:35:26,168
+然后我想，可能要往上走了
+and I said, Hey, we're probably heading
+
+706
+00:35:26,168 --> 00:35:29,038
+所以要做好调整的准备
+up there. So be prepared to make some sort of an adjustment.
+
+707
+00:35:29,340 --> 00:35:31,094
+更聪明的做法可能是
+The smarter thing that I could have done
+
+708
+00:35:31,094 --> 00:35:32,409
+直接买入看涨期权
+is probably just grab a call
+
+709
+00:35:32,409 --> 00:35:35,259
+或买入看涨差价组合对冲
+debit spread, or I could have just grabbed a call and hedge myself.
+
+710
+00:35:35,400 --> 00:35:36,624
+我本可以处理得更好
+I could have done a better
+
+711
+00:35:36,624 --> 00:35:38,256
+而不是等价格
+job with that instead of waiting for price
+
+712
+00:35:38,256 --> 00:35:39,480
+真正涨到4765
+to actually get all the way
+
+713
+00:35:39,480 --> 00:35:41,112
+再采取行动
+up to 47, 65 and then doing something about it.
+
+714
+00:35:41,780 --> 00:35:44,680
+但确实有点不愿接受现实，还有其他事务
+But again, a little bit of denial, a little bit of some other obligations.
+
+715
+00:35:44,680 --> 00:35:48,440
+开仓铁鹰后我并未全神贯注
+I wasn't entirely focused after I opened the trade as I like to open up the iron condors and
+
+716
+00:35:48,440 --> 00:35:50,083
+我习惯开仓后离开
+step away, go grab lunch, go,
+
+717
+00:35:50,083 --> 00:35:51,726
+去吃午饭
+go take care of emails or
+
+718
+00:35:51,726 --> 00:35:54,739
+处理邮件或接听电话
+handle any type of calls or, or meetings at that time.
+
+719
+00:35:54,840 --> 00:35:56,540
+这是一天中间，晚一点的午餐时间
+It's the middle of the day, a late lunch.
+
+720
+00:35:56,540 --> 00:36:00,280
+所以我不太喜欢在下午1点左右做其他交易决策
+And that's why I don't really like to make too many other trading decisions around 1 PM.
+
+721
+00:36:00,280 --> 00:36:03,560
+我更倾向于等到2点、2点半，甚至动能时段
+I'd much rather wait until two, two 30, possibly even power hour.
+
+722
+00:36:03,940 --> 00:36:05,024
+但现在我开始
+However, I am starting to trade
+
+723
+00:36:05,024 --> 00:36:06,108
+在一天中
+a little bit more throughout the
+
+724
+00:36:06,108 --> 00:36:08,999
+更频繁地交易，因为开盘时段交易减少
+middle of the day as I'm trading less and less at the start of the day.
+
+725
+00:36:09,060 --> 00:36:10,975
+我认为等待更多信息
+I think waiting for more information is becoming
+
+726
+00:36:10,975 --> 00:36:12,890
+对我来说变得更容易
+a little bit easier for me as a
+
+727
+00:36:12,890 --> 00:36:16,959
+尤其是在交易更多0DTE和短期铁鹰时
+trader, especially as I'm trying to trade a lot more zero DTE and shorter DTE iron condors.
+
+728
+00:36:17,080 --> 00:36:20,240
+以前我只交易21到45DTE的铁鹰
+I used to only trade 21 to 45 DTE iron condors.
+
+729
+00:36:20,340 --> 00:36:22,720
+对周线铁鹰不太自在
+I wasn't really that comfortable trading weekly iron condors.
+
+730
+00:36:22,820 --> 00:36:24,884
+现在我越来越适应
+Now I'm getting more and more comfortable with
+
+731
+00:36:24,884 --> 00:36:26,948
+因为我在改进管理方式
+them because I'm improving how I manage them
+
+732
+00:36:26,948 --> 00:36:30,560
+还在增加更多交易信号和优势
+as well as adding more confluences and more of an edge to the trading.
+
+733
+00:36:30,720 --> 00:36:35,120
+这减轻了‘天呐，要是出问题怎么办’的焦虑
+And that's reducing that anxiety behind, Oh my God, what am I going to do if something goes wrong?
+
+734
+00:36:35,180 --> 00:36:37,540
+我不想出现任何回撤
+I don't really want to have some sort of a drawdown X, Y, Z.
+
+735
+00:36:37,700 --> 00:36:41,700
+说到底，恐惧只是不理解或未知的副产品
+At the end of the day, fear is just a by-product of not understanding or not knowing.
+
+736
+00:36:41,700 --> 00:36:43,693
+如果我们有工具
+And if we have some sort of tools
+
+737
+00:36:43,693 --> 00:36:47,679
+或已知可能发生的情况，就能缓解焦虑
+or we already know what's likely to happen, that can ease the anxiety and the concern.
+
+738
+00:36:47,680 --> 00:36:51,960
+所以这为我提供了优势和背景
+So this is what provided some sort of an edge and context for myself here.
+
+739
+00:36:52,040 --> 00:36:56,280
+关键是理解4765行权价的重要性
+It's understanding this 4765 strike, how important it was.
+
+740
+00:36:56,320 --> 00:36:57,540
+这里有大量绝对Gamma
+There's a lot of absolute gamma here.
+
+741
+00:36:57,800 --> 00:37:02,060
+这是一个负GEX区域，周围是正GEX
+It was a negative gex island surrounded by a lot of positive gex.
+
+742
+00:37:02,280 --> 00:37:06,960
+这意味着价格会在这个区间震荡
+This all translates to me as price is going to be choppy within this area.
+
+743
+00:37:06,960 --> 00:37:11,300
+这与量化交易应用的脚本完美吻合
+And that coincided perfectly with the quant trading app script.
+
+744
+00:37:11,820 --> 00:37:13,032
+把指标重新打开
+Just going to turn the studies
+
+745
+00:37:13,032 --> 00:37:14,244
+我的ThinkorSwim
+back on. My think of swim
+
+746
+00:37:14,244 --> 00:37:15,456
+现在运行得很慢
+is actually running really slow right
+
+747
+00:37:15,456 --> 00:37:19,900
+可能在维护中，好，重新打开指标
+now. I think it's in the middle of maintenance, but all right, there we go. So just turn the studies back on.
+
+748
+00:37:20,300 --> 00:37:22,380
+这是量化交易应用的卖出区域
+So here is our quant trading app sell zone.
+
+749
+00:37:22,880 --> 00:37:26,720
+这里是476点位周围的绝对Gamma分布
+Here is where all the absolute gamma was around that 476 area.
+
+750
+00:37:27,060 --> 00:37:30,500
+这是价格可能震荡的整个区间
+Here is that whole range in which I would expect the price to be choppy.
+
+751
+00:37:30,600 --> 00:37:34,160
+然后可以看到价格在这里震荡。这里是磁吸区。震荡得很厉害。
+And then we can see price was choppy here. It was a magnet here. It was pretty choppy.
+
+752
+00:37:34,240 --> 00:37:36,064
+是的，它低开，但很快就回到了
+Yes, it gapped down, but it just went right back
+
+753
+00:37:36,064 --> 00:37:40,259
+目标区间。周三它在这里停留了几小时。
+to where it wants to be. And then on the Wednesday, it stayed right where it wanted to be for a few hours.
+
+754
+00:37:40,400 --> 00:37:44,160
+掌握这些信息提供了显著优势。
+So just having this information provided a significant edge.
+
+755
+00:37:44,320 --> 00:37:47,120
+让铁鹰策略运行得更顺畅。
+It allowed the iron condor to go a little bit smoother.
+
+756
+00:37:47,380 --> 00:37:49,160
+完全不担心。一点都不焦虑。
+Wasn't really that concerned. I wasn't worried.
+
+757
+00:37:49,380 --> 00:37:52,109
+确实还有改进空间，但我想分享
+Yes, there's room for improvements, but I figured I'd share
+
+758
+00:37:52,109 --> 00:37:54,838
+一段详细视频，因为我好像还没做过
+a detailed video as I don't think I've done a
+
+759
+00:37:54,838 --> 00:37:58,659
+关于如何管理或调整铁鹰策略的视频。
+video on how I manage or how I might make an iron condor adjustments.
+
+760
+00:37:59,180 --> 00:38:00,460
+希望能提供一些启发。
+Hopefully this provides some insight.
+
+761
+00:38:00,580 --> 00:38:04,780
+这不是我调整铁鹰时的默认策略。
+It is not my default or go-to strategy when I'm looking to make an iron condor adjustments.
+
+762
+00:38:04,780 --> 00:38:09,740
+我不会总是转为铁蝶，但这是标准调整手法之一。
+I won't always turn it into an iron butterfly, but it is one of the textbook staple ways.
+
+763
+00:38:09,900 --> 00:38:12,679
+如果你刚开始做铁鹰，
+So if you're now starting out with your iron condors and you
+
+764
+00:38:12,679 --> 00:38:14,531
+想知道一种调整方法，
+want to know what's one way of making
+
+765
+00:38:14,531 --> 00:38:17,078
+直接把铁鹰转为铁蝶即可。
+your adjustments, just turn an iron condor into an iron fly.
+
+766
+00:38:17,300 --> 00:38:21,500
+你降低了盈利概率，但也降低了风险。
+You are reducing your probability of profits, but you are reducing your risk.
+
+767
+00:38:21,960 --> 00:38:24,280
+需要持仓更久一些。
+You will have to stay in the trade a little bit longer.
+
+768
+00:38:24,820 --> 00:38:27,185
+还要为自己制定
+And then you just have to come up with an
+
+769
+00:38:27,185 --> 00:38:30,259
+退出计划，防止价格未在此区间整固。
+exit plan for yourself that in case price did not consolidate around here.
+
+770
+00:38:30,260 --> 00:38:33,940
+必须有应对方案，设定止损点位。
+You have to have some sort of plan for what you're going to do, for where you're going to stop out.
+
+771
+00:38:34,000 --> 00:38:36,356
+假设市场低开，
+In this case, let's just say the market did gap down and
+
+772
+00:38:36,356 --> 00:38:37,927
+或许这些信息这次
+maybe all of this information in this case
+
+773
+00:38:37,927 --> 00:38:41,658
+失效了，市场没回到这里，继续下跌。
+didn't work out and the market did not come back up to here and we just kept selling off.
+
+774
+00:38:41,760 --> 00:38:45,860
+显然这个铁蝶策略就彻底失效了。
+And obviously this iron butterfly up here would have just been completely dead.
+
+775
+00:38:45,980 --> 00:38:47,200
+这是需要考虑的因素。
+So that's something to consider.
+
+776
+00:38:47,340 --> 00:38:52,020
+所以周一时，我用破损翼看跌蝶式策略，
+So in this case here on the Monday, I ran a broken wing put butterfly to try to bring
+
+777
+00:38:52,020 --> 00:38:53,740
+试图在价格可能回落时锁定一点利润。
+a little bit of profit in case we
+
+778
+00:38:53,740 --> 00:38:55,245
+这样操作
+did gap back down to here. So
+
+779
+00:38:55,245 --> 00:38:58,040
+可以考虑低价买入平值外看跌期权。
+you consider that you can maybe grab a cheap out the money puts.
+
+780
+00:38:58,040 --> 00:39:00,552
+如果价格低开，你会意识到
+And then if price gaps down, you realize
+
+781
+00:39:00,552 --> 00:39:03,064
+锁定看跌期权的收益，因为你在降低
+the gains on that puts because you're reducing
+
+782
+00:39:03,064 --> 00:39:06,518
+整体铁鹰或铁蝶的成本基础。
+the cost basis for your overall iron condor slash iron butterfly.
+
+783
+00:39:06,860 --> 00:39:11,180
+这可能稍显高级，但这是职业交易者的思路。
+That's a little bit more of an advanced concept, I guess, but that's the approach professional traders will have.
+
+784
+00:39:11,300 --> 00:39:12,938
+如果你在自营公司交易，
+If you trade at some sort of prop
+
+785
+00:39:12,938 --> 00:39:14,166
+或为某家机构交易，
+firm or if you trade for
+
+786
+00:39:14,166 --> 00:39:16,418
+核心都是降低成本基础。
+some sort of institution, it's all about reducing your cost basis.
+
+787
+00:39:16,580 --> 00:39:17,720
+这就是最终目标。
+And that is the ultimate goal.
+
+788
+00:39:17,880 --> 00:39:23,860
+如何降低成本基础，从而降低风险，让策略自行发挥？
+How can I reduce my cost basis, therefore reducing my risk to see my trading strategy play itself out?
+
+789
+00:39:23,980 --> 00:39:24,434
+各位，如果
+Guys, if
+
+790
+00:39:24,434 --> 00:39:25,798
+你喜欢这个视频，
+you enjoyed this video, leave a
+
+791
+00:39:25,798 --> 00:39:27,162
+请在下方留言。点赞，分享，
+comment down below. Like it, share
+
+792
+00:39:27,162 --> 00:39:30,118
+下期见。感谢观看。
+it, and I'll catch you guys in the next one. Thanks for watching.
+
+===== END AFTER_OPTIMIZE =====

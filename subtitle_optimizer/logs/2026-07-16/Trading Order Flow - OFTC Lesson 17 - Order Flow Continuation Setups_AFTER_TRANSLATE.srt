@@ -1,0 +1,1257 @@
+===== AFTER_TRANSLATE (251 entries) =====
+1
+00:00:00,300 --> 00:00:05,000
+这是订单流交易课程第17课，趋势延续型交易设置。
+This is Order Flow Trading Course Lesson 17, Order Flow Continuation Setups.
+
+2
+00:00:05,000 --> 00:00:06,300
+我是Michael Valtos。
+My name is Michael Valtos.
+
+3
+00:00:06,600 --> 00:00:08,700
+我是OrderFlows.com的创始人。
+I'm the founder of OrderFlows.com.
+
+4
+00:00:10,900 --> 00:00:12,200
+先简单说一下免责声明。
+Briefly, a quick disclaimer.
+
+5
+00:00:12,300 --> 00:00:21,700
+本演示仅用于教育和信息传递，不应视为购买或出售期货合约或做出其他投资决策的邀约。
+This presentation is for educational and informational purposes only and should not be considered a solicitation to buy or sell a futures contract or make any other type of investment decision.
+
+6
+00:00:22,100 --> 00:00:25,400
+期货交易存在重大风险，并非适合所有投资者。
+Futures trading contains substantial risk and is not for every investor.
+
+7
+00:00:25,800 --> 00:00:29,300
+投资者可能会损失全部甚至超过初始投资的金额。
+An investor could potentially lose all or more than the initial investment.
+
+8
+00:00:29,600 --> 00:00:34,200
+风险资金是指即使亏损，也不会危及个人财务安全或生活方式的资金。
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+9
+00:00:34,700 --> 00:00:39,300
+交易只应使用风险资金，且只有拥有充足风险资金的人才应考虑交易。
+Only risk capital should be used for trading, and only those with sufficient risk capital should consider trading.
+
+10
+00:00:39,700 --> 00:00:42,700
+过往表现并不必然预示未来结果。
+Past performance is not necessarily indicative of future results.
+
+11
+00:00:43,300 --> 00:00:49,700
+CFTC（美国商品期货交易委员会）4.41条规则指出，假设或模拟交易的表现结果存在一定局限性。
+CFTC Rules 4.41 state hypothetical or simulated performance results have certain limitations.
+
+12
+00:00:50,200 --> 00:00:54,400
+与实际交易记录不同，模拟结果并不代表真实交易。
+Unlike an actual performance record, simulated results do not represent actual trading.
+
+13
+00:00:54,800 --> 00:01:03,100
+此外，由于交易未实际执行，结果可能对某些市场因素（如流动性不足）的影响估计不足或过高。
+Also, since the trades have not been executed, the results may have under- or overcompensated for the impact, if any, of certain market factors, such as lack of liquidity.
+
+14
+00:01:03,600 --> 00:01:08,800
+模拟交易程序通常还受限于其设计时已知的后见之明。
+Simulated trading programs in general are also subject to the fact that they are designed with the benefit of hindsight.
+
+15
+00:01:09,200 --> 00:01:15,900
+我们并未声明任何账户会或可能取得与展示结果类似的盈利或亏损。
+No representation is being made that any account will or is likely to achieve profit or losses similar to those shown.
+
+16
+00:01:18,536 --> 00:01:20,136
+好的，我们继续。
+Okay, let's move on.
+
+17
+00:01:23,336 --> 00:01:24,936
+订单流中的趋势延续型交易设置。
+Order flow continuation setups.
+
+18
+00:01:25,036 --> 00:01:26,136
+这是第17课。
+This is lesson 17.
+
+19
+00:01:26,236 --> 00:01:29,936
+市场大部分时间都在从一个价格极端向另一个价格极端趋势运行。
+The market spends a majority of the time trending from one price extreme to another.
+
+20
+00:01:30,636 --> 00:01:32,336
+大钱都在趋势中赚到。
+The big money is made in trends.
+
+21
+00:01:32,436 --> 00:01:35,936
+你总能听到趋势跟随者、海龟交易法、趋势系统这些说法。
+You always hear about the trend followers, the turtle, trend system.
+
+22
+00:01:36,936 --> 00:01:38,936
+没错，这些都很棒。
+You know, that's great.
+
+23
+00:01:40,036 --> 00:01:44,236
+如果你是长期交易者的话，但大多数人都是短期交易者。
+If you're a long-term trader, but most people are shorter-term traders.
+
+24
+00:01:44,536 --> 00:01:50,336
+他们没有大型基金那种雄厚的资金，能让他们持有一个趋势长达六个月。
+They don't have the big capital behind them that the big funds have that they can sit on a trend for six months.
+
+25
+00:01:50,336 --> 00:01:53,836
+但好消息是，趋势也会在日内出现。
+However, the good news is that trends appear intraday as well.
+
+26
+00:01:55,136 --> 00:01:59,236
+当市场处于大行情中时，没人能告诉你它会持续多久或涨跌多远。
+When the market is in the middle of a big move, no one can tell you how long or how far it will go.
+
+27
+00:01:59,636 --> 00:02:02,236
+你想知道的是，它会延续还是结束。
+What you want to know is whether it's going to continue or not.
+
+28
+00:02:02,436 --> 00:02:09,436
+无论是1分钟图上的趋势，还是日线图或月线图上的趋势，
+So whether it's a trend on a one-minute chart or a trend on a daily chart or a monthly chart,
+
+29
+00:02:11,876 --> 00:02:14,276
+你不知道它何时结束，会走多远。
+You don't know when it's going to end, how far it's going to go.
+
+30
+00:02:14,776 --> 00:02:27,976
+你要做的是识别出趋势存在，然后跟进，尽量捞些容易得手的利润。
+What you want to do is you want to identify that there is a trend and jump on board and try and catch your berries, catch your grapes, pick your low-hanging fruit
+
+31
+00:02:29,176 --> 00:02:29,976
+当它发生时。
+when it's happening.
+
+32
+00:02:31,776 --> 00:02:36,776
+在订单流交易中，我有四种趋势延续型交易设置。
+So in order flow, I have four continuation steps.
+
+33
+00:02:36,776 --> 00:02:40,176
+其实是三种，但其中一种被拆成了两个名称。
+It's really three, but one's worded as two.
+
+34
+00:02:40,576 --> 00:02:48,476
+基本上是大幅买卖失衡、订单堆叠买入失衡、订单堆叠卖出失衡，或者我喜欢称之为‘连续三单’的情况。
+Basically, it's big fat market imbalance, stacked buying imbalance, or stacked selling imbalance, or what I like to call the three in a row.
+
+35
+00:02:49,076 --> 00:02:50,876
+我会给你们展示。
+And I'll show you.
+
+36
+00:02:51,076 --> 00:02:55,476
+有图表的话更容易理解，但先简单解释一下。
+It's easier to see it, I think, with photos. But quickly, I'll just explain it.
+
+37
+00:02:55,476 --> 00:02:59,076
+大幅买卖失衡是指出现超大规模的买卖失衡。
+A big fat market imbalance occurs when there is an oversized market imbalance.
+
+38
+00:02:59,976 --> 00:03:06,776
+高成交量通常出现在行情启动初期或行情中途，此时资金雄厚的机构交易者开始入场。
+High volume levels are common at the beginning of moves and in the middle of moves, and bigger, well-funded institutional traders start to come into the market.
+
+39
+00:03:07,176 --> 00:03:09,176
+这意味着...
+So what that means is...
+
+40
+00:03:09,776 --> 00:03:11,376
+市场已经反转了，对吧？
+You know, a market has turned, okay?
+
+41
+00:03:11,676 --> 00:03:17,176
+它已经触及低点或高点，并开始向相反方向移动。
+It's reached its low or reached its high, and it's starting to move in the opposite direction.
+
+42
+00:03:17,276 --> 00:03:18,276
+反转已经开始。
+A reversal has started.
+
+43
+00:03:18,976 --> 00:03:22,776
+而反转往往就是趋势的起点。
+And, you know, the reversal is going to be the beginning of the trend.
+
+44
+00:03:23,076 --> 00:03:25,476
+那你怎么知道趋势开始加速？
+Well, how do you know the trend is starting to pick up steam?
+
+45
+00:03:25,976 --> 00:03:35,376
+就是当你看到大玩家进场，在多头或空头方向建仓时。
+Is when you see, you know, the big players come in and, you know, build their position up, whether it's, you know, they're building their position up on the long side or the short side.
+
+46
+00:03:35,776 --> 00:03:36,976
+有时候他们...
+Sometimes they...
+
+47
+00:03:39,776 --> 00:03:42,276
+而在订单流中你能清楚看到这一点。
+and you can see it really clearly in the order flow.
+
+48
+00:03:42,776 --> 00:03:44,776
+在普通K线图里，你是看不到的。
+Is it in a normal bar chart? You wouldn't see it.
+
+49
+00:03:45,276 --> 00:03:53,676
+不过，比如，有图表在眼前解释会更简单。
+But, you know, for example, okay, so I like to think it's easier to explain things when you have a picture of a chart in front of you.
+
+50
+00:03:53,676 --> 00:03:56,076
+那我来说说大额买卖失衡的情况。
+So I'll talk about the big fat market imbalance.
+
+51
+00:03:56,576 --> 00:03:59,976
+交易时，你需要知道什么算是
+Now, when you're trading a market, you should know what's considered...
+
+52
+00:04:00,276 --> 00:04:10,276
+大成交量，这样才能判断是否有机构参与。
+Big volume when it goes through, so you can determine if there's institutional participation or not.
+
+53
+00:04:10,676 --> 00:04:18,976
+对E-迷你标普500期货来说，我通常关注成交量在50到
+So for E-mini S&Ps, I tend to look at volume between 50 and
+
+54
+00:04:20,276 --> 00:04:21,676
+2,000之间算是正常水平。
+2,000 is kind of normal.
+
+55
+00:04:21,876 --> 00:04:30,376
+一旦超过2,500，在我看来就是大资金进场了，至少是大资金的初期迹象。
+Once you start getting above 2,500, to me that's really big size going through, at least the beginning of big size.
+
+56
+00:04:31,476 --> 00:04:34,376
+尤其是在5点区间图上，行情会走得非常快。
+And especially on a five range chart, that moves very fast.
+
+57
+00:04:34,676 --> 00:04:38,376
+如果我看到买卖失衡，看到成交量超过
+If I'm seeing imbalances, if I'm seeing bars with volume over
+
+58
+00:04:39,576 --> 00:04:50,376
+2500手的K线/柱状线，我就会开始关注，因为这说明有人在大量交易，
+you know, two and a half thousand, you know, I'm starting to pay attention because, you know, someone has got size, they're moving on both sides, you know, to
+
+59
+00:04:51,276 --> 00:05:00,576
+当某个价位的成交量超过2000、2500手时，这说明即使有积极买家，也还有积极卖家。
+see a price level where you got, you know, over two thousand, two and a half thousand, it's saying that, you know, even though there's an active buyer, there's still an active seller.
+
+60
+00:05:01,176 --> 00:05:07,676
+当我看到成交量超过2500手的买卖失衡时，我就会特别关注，通常会入场交易。
+Now when I see an imbalance above 2,500, then I really stand and pay attention and I usually take a trade.
+
+61
+00:05:07,976 --> 00:05:13,676
+这里你能看到，市场上涨时出现一个大失衡，成交量2800手。
+So here you see... A big imbalance, 2,800, you know, as the market's going up.
+
+62
+00:05:14,476 --> 00:05:17,376
+你不一定会在行情低点看到这种情况。
+You know, you're not going to necessarily see that on a low of a move.
+
+63
+00:05:17,376 --> 00:05:22,576
+通常你会发现，买卖失衡会沿着趋势方向出现。
+You tend to find, you know, the imbalances going in your direction of the trend.
+
+64
+00:05:23,276 --> 00:05:26,876
+并不一定是在上涨时才会出现。
+You know, not necessarily, you know, when you're going up.
+
+65
+00:05:27,376 --> 00:05:39,676
+当你想看到积极买盘时，不会突然连续上涨，然后在上涨过程中出现积极卖盘，因为会有多头挂买单，也会有多头直接吃卖盘
+When you want to see aggressive buying, you're not going to all of a sudden start to go up, up, up, up, up, and on your move up, have aggressive selling, because there's going to be people bidding the market, there's going to be people buying the offer.
+
+66
+00:05:40,276 --> 00:05:46,676
+通常在上涨行情中，你会看到多头直接吃卖盘，表现积极，所以你应该看到买卖失衡
+Generally, on a move up, You're going to have people buying the offer being aggressive. That's why you should see buying imbalances.
+
+67
+00:05:47,176 --> 00:05:49,776
+在下跌行情中，你应该看到卖出失衡
+On a move down, you should be seeing selling imbalances.
+
+68
+00:05:50,176 --> 00:05:57,476
+但当你看到一个特别突出的数字，比如2,800，是蓝色的，是买入失衡，对比只有480
+But when you see a number that really stands out here, 2,800, you know, it's blue. It's a buying imbalance. You know, it's against 480.
+
+69
+00:05:57,576 --> 00:06:02,976
+这告诉我，那里有大单，但有人非常积极，直接吃了卖盘
+It's telling me, you know, There was some size there, but people were extremely aggressive and lifted the offer.
+
+70
+00:06:03,376 --> 00:06:05,776
+可能是一个人，也可能是几个人，谁知道呢？
+It could have been one person. It could have been a couple people. Who knows?
+
+71
+00:06:06,176 --> 00:06:13,176
+但事实是，价格在这些位置没停留多久，在这里成交后，就出现买单并继续上涨
+But the fact is, it didn't spend much time at these levels. It traded here. It went bid here and traded higher.
+
+72
+00:06:14,776 --> 00:06:17,376
+然后在这里出现一个2,000的卖出失衡
+You get a selling imbalance up here of 2,000.
+
+73
+00:06:17,776 --> 00:06:25,276
+好的，这个数值很大，但处于平均到大的边界线上。
+Okay, it's big, but it's just sort of on the borderline of average to big.
+
+74
+00:06:26,176 --> 00:06:29,776
+而在高点附近出现卖出失衡也很常见。
+And it's not uncommon to get a selling imbalance just off of a high.
+
+75
+00:06:30,376 --> 00:06:34,576
+尤其是在阴线中，因为市场会出现买单，然后来回交易。
+Especially in a red bar because the market is going to go bid and it's going to trade back and forth.
+
+76
+00:06:34,676 --> 00:06:39,776
+很多时候，在阴线的高点附近成交量会比较小，
+Lots of times you're going to get smaller volume traded right up on the high of a red bar, just as, you know,
+
+77
+00:06:39,876 --> 00:06:46,976
+在阳线中，低点附近第二个位置出现买入失衡也很常见。
+In a green candle, it's very common to get a buying imbalance on the second slot just off the low.
+
+78
+00:06:48,076 --> 00:06:50,676
+这些都是正常现象。
+These are normal occurrences.
+
+79
+00:06:50,776 --> 00:06:57,976
+就像这里有买入失衡，这里有卖出失衡，这里也有卖出失衡。这只是市场交易的方式。
+Just like you have this buying imbalance here, you have this selling imbalance here, here you have this selling imbalance. It's just sort of how the market trades.
+
+80
+00:06:58,276 --> 00:07:02,776
+就像我之前说的，阳线底部通常成交量较小。
+Oftentimes, as I said, at the bottom of a green candle, you tend to get smaller volume.
+
+81
+00:07:04,076 --> 00:07:06,676
+所以出现失衡很常见
+So it's not uncommon to get the imbalance.
+
+82
+00:07:06,876 --> 00:07:14,076
+这里又出现了失衡，我不太担心，知道吧，不像看到中间突出的大数字那样
+Here you have the imbalance again. So I'm not too concerned with it, you know, as opposed to when I see a big number sticking out in the middle.
+
+83
+00:07:18,744 --> 00:07:25,044
+好的，订单堆叠的买卖失衡是指一根K线中有三个或更多买卖失衡叠在一起
+Okay, a stacked buying imbalance occurs when there's three or more buying imbalances in the bar stacked on top of each other.
+
+84
+00:07:25,144 --> 00:07:30,344
+订单堆叠的卖出失衡是指一根K线中有三个或更多卖出失衡叠在一起
+Stacked selling imbalance occurs when there are three or more selling imbalances in a bar stacked on top of each other.
+
+85
+00:07:31,444 --> 00:07:34,144
+而且，你知道，这又回到了
+And, you know, again, it's...
+
+86
+00:07:34,844 --> 00:07:46,444
+关键在于，这通常是因为成交量高于平均水平的激进交易者进入市场推动行情，大多数情况下是一个交易者，但也可能是多个交易者同时进入市场推动行情
+Due to the importance is it's due to above average volume aggressive traders coming into the market to move it the majority of the time is one trader but it can be several traders at the same time coming into the market to move it
+
+87
+00:07:47,644 --> 00:07:55,144
+你知道，很多时候你看到的是大单进入市场必须执行，而市场正在移动
+you know oftentimes you're what you're seeing is the result of a big order coming into the market that has to be executed as the market's moving
+
+88
+00:07:56,344 --> 00:08:08,344
+所以这里的情况是，这是迷你合约，是在早上7:20，你看到订单堆叠的买卖失衡，这里有连续三个，它们都叠在一起
+So what you have here, this is in the E-minis, this is at 720 in the morning, and you see in the stacked buying imbalance, you have three in a row right here, they're all stacked on top of each other.
+
+89
+00:08:08,644 --> 00:08:14,244
+这里有连续四个堆叠，你要寻找市场延续当前趋势的信号。
+Here you have four in a row, and you're looking for the market to continue in that trend.
+
+90
+00:08:14,644 --> 00:08:19,444
+你现在看到的是，这种情况下，
+What you're seeing is, in this case, in times when there's...
+
+91
+00:08:20,244 --> 00:08:32,044
+可以说这是流动性不足的时段，但早上7:20的成交量通常比现金市场8:30开盘后要小。
+I'll say it's an illiquid time, but 7.20 in the morning tends to be lesser volume than after 8.30 once the cash opens.
+
+92
+00:08:32,144 --> 00:08:33,644
+但无论如何，这仍然很重要。
+But it's still important nevertheless.
+
+93
+00:08:33,644 --> 00:08:37,244
+你在这里看到的是，有人有大单正在尝试执行。
+What you're seeing here is someone's got a big order they're trying to execute.
+
+94
+00:08:37,644 --> 00:08:38,944
+他们开始在这里买入一些。
+They start buying some here.
+
+95
+00:08:38,944 --> 00:08:39,944
+他们有点激进。
+They're a little bit aggressive.
+
+96
+00:08:39,944 --> 00:08:41,144
+你能看到买卖失衡的情况。
+You see the buying and balances.
+
+97
+00:08:41,144 --> 00:08:42,144
+市场再也没回落。
+The market never comes back.
+
+98
+00:08:42,544 --> 00:08:44,044
+然后开始在更高的位置交易。
+Then we start trading a little bit higher.
+
+99
+00:08:44,144 --> 00:08:45,044
+现在他们在更高的价位继续推高。
+Now they're getting a little bit higher.
+
+100
+00:08:44,644 --> 00:08:45,444
+更积极进取。
+more aggressive.
+
+101
+00:08:46,144 --> 00:08:48,444
+为什么买入订单堆叠和买卖失衡很重要？
+Why is a buy-in, stack buy-in and balance important?
+
+102
+00:08:48,544 --> 00:08:51,544
+市场现在在18.89美元交易。
+Well, the market's trading here at $18.89.
+
+103
+00:08:52,044 --> 00:08:55,544
+可能有人有1000或1005美元的大单要买入。
+Someone's got probably $1,000, $1,005 to buy.
+
+104
+00:08:56,744 --> 00:09:01,944
+他们直接下单，知道会推高市场，但想快速完成。
+They just go in. They know they're going to move the market a bit, but they want to get it done pretty quick.
+
+105
+00:09:02,844 --> 00:09:07,844
+标普500指数期货是那种你能移动1000点左右的市场。
+S&Ps is one of those markets where you can move. You know, a thousand and maybe move at a point.
+
+106
+00:09:08,844 --> 00:09:11,644
+所以他们会很激进，直接进场完成交易。
+So, you know, they're going to be aggressive and just go in and get it done.
+
+107
+00:09:12,144 --> 00:09:20,544
+通常市场会稍微快速上涨一点，当其他多头进场说‘嘿，我们刚涨了1点，我要开始买入’时。
+Now, you know, the market will oftentimes squirt up a little bit, you know, as other buyers come into the market and say, hey, we just rallied a point and I want to start buying.
+
+108
+00:09:21,644 --> 00:09:25,444
+当市场回撤/回调到买卖失衡区域时，
+When the market retraces back into that zone of the buying imbalance,
+
+109
+00:09:26,244 --> 00:09:30,444
+你要看是否有更多多头在这个区域入场。
+You're looking to see if there's going to be additional buyers in this area.
+
+110
+00:09:30,644 --> 00:09:32,944
+那就是你会看到行情延续的时候。
+That's when you're going to see a continuation of the move.
+
+111
+00:09:33,344 --> 00:09:43,144
+如果只是一次性大单，比如有人在对冲一篮子股票，必须快速完成，那市场可能横盘/震荡后回落。
+If it's just a one-time order where someone was working against a basket of stocks or something and they just had to get it done and got it done, yeah, the market may trade sideways and then come off.
+
+112
+00:09:43,444 --> 00:09:46,544
+但如果是真正的...
+But if it's a legitimate...
+
+113
+00:09:46,744 --> 00:10:00,344
+当趋势和失衡是真实有效时，往往是有人想建仓，当你回撤到失衡区时，市场会在附近波动，然后继续沿趋势方向运行，就像你在这里看到的
+Trend and the imbalance is legitimate where it's just somebody you know they want to build their position oftentimes when you pull into the imbalance it will trade around there and then continue on in its trend like you see here
+
+114
+00:10:03,616 --> 00:10:07,616
+通常，要让市场突破盘整区间并启动趋势，需要很大的力量。
+Often times it takes a lot to get a market to move outside of a trading range and start a trend.
+
+115
+00:10:08,316 --> 00:10:15,616
+一旦市场启动趋势，推动行情的力量通常会在订单流中显现，来确认这波行情。这时你就知道趋势会延续。
+Once the market starts a trend, the forces behind the move often appear in the order flow to confirm the move. Then you know that move will continue.
+
+116
+00:10:16,916 --> 00:10:29,416
+就像我之前说的，这有点像自证预言，当交易者认为市场会走时，他们会和别人沟通，试图推高自己的持仓。
+So like I said, it's one of those things I hate to call a self-fulfilling prophecy, but when traders think the market's going to move, they're always talking to other people and trying to talk up their position.
+
+117
+00:10:30,916 --> 00:10:32,816
+希望市场能继续走下去。
+In hopes to get the market to continue.
+
+118
+00:10:33,116 --> 00:10:38,616
+当然，这并不总是奏效，但显然其中有供需因素在起作用。
+I mean, it doesn't always work that way, but there's obviously big supply and demand factors in there.
+
+119
+00:10:39,116 --> 00:10:40,416
+但一旦趋势启动，
+But once a trend starts,
+
+120
+00:10:42,316 --> 00:10:48,216
+就要观察订单流来确认行情已发生，然后入场，抓住这波行情。
+Look for the order flow to confirm that the move has happened and get in and take advantage of that move.
+
+121
+00:10:52,460 --> 00:10:57,660
+好的，下一个趋势延续型交易设置是我称之为‘连续三比’的模式。
+Okay, the next continuation setup is what I call the three in a row.
+
+122
+00:10:57,860 --> 00:11:02,860
+‘连续三比’出现的条件是同一方向上连续出现三个比率。
+The three in a row occurs when you have three ratios in a row in the same direction.
+
+123
+00:11:03,660 --> 00:11:10,660
+基本上，你要在看到第三个比率的K线后入场。你的入场点可以在控制点与第二、第三根K线之间的任意位置。
+Basically, you want to look to get in after the third bar that you see the ratio. Your entry could be anywhere between the point of control and the second and third bars.
+
+124
+00:11:11,160 --> 00:11:14,960
+它的图形表现是这样的：比率、比率、比率。
+What it looks like is this. You have ratio, ratio, ratio.
+
+125
+00:11:15,660 --> 00:11:18,060
+我并不特别关注这个买单失衡。
+I'm not necessarily concerned about this buying imbalance.
+
+126
+00:11:18,160 --> 00:11:23,960
+看到它当然好，但通常在‘连续三比’中不会同时出现买单失衡或卖单失衡。
+It's nice to see, but normally you don't get also a buying imbalance or a selling imbalance in your three in a row.
+
+127
+00:11:24,360 --> 00:11:32,060
+你真正关注的是比率。而且不一定要是平衡状态低点、小单成交、小单成交之类的。
+What you're really concerned with is the ratios. And it doesn't have to be a ratio balance low, small print, small print or anything like that.
+
+128
+00:11:32,460 --> 00:11:39,360
+只要有三个蓝色数字，可以是单印区、单印区、单印区，也可以是大单成交、单印区、小单成交。
+As long as there's three blue numbers, it could be single print, single print, single print. It could be... Large print, single print, small print.
+
+129
+00:11:40,360 --> 00:11:41,460
+这其实不重要。
+It doesn't really matter.
+
+130
+00:11:41,460 --> 00:11:45,060
+我真正关注的是连续三个比率。
+What I'm really concerned about is having three ratios in a row.
+
+131
+00:11:45,660 --> 00:11:48,660
+而且，你知道，像这样，我可以快速给你演示一下。
+And, you know, like this, I could just sort of walk you through it real quick.
+
+132
+00:11:48,760 --> 00:11:54,060
+这里有一个平衡状态的比率低点，成交量很大。然后市场开始上涨。
+You have a ratio balance low, so it's heavy volume down here. And the market starts rallying.
+
+133
+00:11:54,060 --> 00:12:01,560
+出现一个单印区。这是因为这个K线里的空头在拒绝更低的价格，所以才会出现单印区。
+You get a single print. You know, it's... The sellers in this bar are rejecting the lower prices. That's why you have the single print.
+
+134
+00:12:01,660 --> 00:12:02,760
+市场继续走高。
+The market goes higher.
+
+135
+00:12:04,260 --> 00:12:07,760
+这个技术上也是平衡状态的比率低点，但接近单印区。
+This one is technically a ratio balance low, but it's close to a single print.
+
+136
+00:12:07,760 --> 00:12:14,360
+但同样，空头在这里拒绝更低的价格，市场继续上行。
+But again, the sellers are rejecting the lower prices down here, and the market continues on higher.
+
+137
+00:12:16,360 --> 00:12:18,560
+关键是要连续出现一、二、三
+Really what's important is you have one, two, three.
+
+138
+00:12:19,160 --> 00:12:32,960
+蓝色数字（正Delta）连续出现，或者在下跌行情中，若它们位于你入场点上方的红色K线区域，你的入场点通常在第二和第三根K线的控制点之间
+blue numbers in a row or you know on a down moving market if they're up above the red bars where your point of entry is it's somewhere you know between these two points of controls between the third bar and the second bar
+
+139
+00:12:34,760 --> 00:12:37,460
+你需要等一个小回撤来获得更好的入场价位
+You want to get a little bit of a pullback for a better entry.
+
+140
+00:12:37,960 --> 00:12:48,660
+有时行情会直接延续，让你错过入场，但我更倾向于通过等更好价位来留一点操作空间，而不是直接追价入场
+There's going to be times where it just continues on and you miss your entry, but I prefer to have a little bit of wiggle room by getting a better entry rather than just paying the market.
+
+141
+00:12:49,560 --> 00:12:53,660
+趋势延续型交易设置能帮你在既有趋势中找到入场点
+So a continuation pattern allows you to find an entry point in an existing trend.
+
+142
+00:12:54,260 --> 00:12:58,060
+趋势行情中才能赚大钱，所以跟上趋势对你有利
+Trends aren't where the big money is made in trading, so it's to your benefit to jump in on the trend.
+
+143
+00:12:59,260 --> 00:13:03,360
+有些交易者的整个交易策略就是跟着趋势走
+Some traders base their entire trading program on just jumping along for the ride.
+
+144
+00:13:03,560 --> 00:13:06,760
+所以掌握几种趋势延续型交易设置对你会很有帮助
+So it'll benefit you to have a few continuation pattern setups to look for.
+
+145
+00:13:08,360 --> 00:13:15,760
+就像我之前说的，一些运营了20、30年的对冲基金和商品交易顾问（CTA）都是趋势跟随者
+Like I said, some of these hedge funds and CTAs that have been around for 20, 30 years are trend followers.
+
+146
+00:13:18,260 --> 00:13:20,160
+他们不试图抓顶或抄底
+They're not trying to pick tops and bottoms.
+
+147
+00:13:20,460 --> 00:13:25,660
+他们只想识别趋势形成时，然后尽可能长时间地跟随
+They just want to identify when a trend is occurring and ride it for as long as they can.
+
+148
+00:13:28,560 --> 00:13:32,260
+这些机构之所以交易全球50、60个不同市场
+These guys, that's why they trade 50, 60 different markets around the world.
+
+149
+00:13:32,260 --> 00:13:33,660
+是因为他们在寻找
+They're looking for the...
+
+150
+00:13:34,160 --> 00:13:39,160
+一年中那6、7或8个出现大趋势的市场，这些趋势能为他们赚回全部利润
+Six or seven or eight markets a year that have the monster trends where they're going to make up all their money.
+
+151
+00:13:39,460 --> 00:13:45,760
+所以他们愿意承受一堆小亏损，但赢的时候会赢得很大
+That's why they're willing to take a bunch of small losses, but their winner is going to be quite big.
+
+152
+00:13:49,092 --> 00:13:53,192
+所以当趋势正在进行，且有模式提示你买入时，你就买入
+So when a trend is underway and there's a pattern telling you to buy, you buy.
+
+153
+00:13:53,292 --> 00:13:59,092
+当市场提示你卖出时，你就卖出，尤其是在趋势中
+Just as if the market is telling you to sell, you sell, especially in a trend.
+
+154
+00:13:59,192 --> 00:14:07,092
+你要跟随趋势，因为当市场从低点涨到高点而你没参与时，你会觉得自己很蠢
+You want to ride the trend because when the market moves from a low to a high and you're not in on it, you feel like an idiot.
+
+155
+00:14:07,692 --> 00:14:11,692
+但你仍然需要一个理由来入场交易
+But you still need a reason to get into the trade.
+
+156
+00:14:12,292 --> 00:14:15,492
+好的，那我们来看一下图表
+All right, so... Let's take a look at a chart.
+
+157
+00:14:15,792 --> 00:14:17,092
+这是一张国债期货图
+Here you have a bond chart.
+
+158
+00:14:17,192 --> 00:14:19,292
+我们在11.45点位触及低点
+We came into the low at 11.45.
+
+159
+00:14:19,292 --> 00:14:24,592
+出现单印区，然后30分钟后又出现一个单印区
+You have the single print. Then, you know, 30 minutes later you have another single print.
+
+160
+00:14:24,792 --> 00:14:29,792
+现在你基本能确认趋势向上，我们正在远离低点
+So now you're sort of convinced yourself that the trend is up, that we're starting to move away.
+
+161
+00:14:30,392 --> 00:14:31,892
+延续型形态在哪里？
+Where's your continuation pattern?
+
+162
+00:14:31,992 --> 00:14:34,592
+价格回落到同一水平后，该位置守住了。
+You come back down to the same level, it holds.
+
+163
+00:14:34,692 --> 00:14:42,692
+然后你开始看到，随着上涨，单印区、单印区不断出现，市场进一步走高。
+Then you're starting to see, you know, as you're moving up, you're starting to see confirmation with single print, single print, and the market moves higher.
+
+164
+00:14:46,852 --> 00:14:50,452
+这个例子稍微复杂一点，但不管怎样，我会讲一下。
+This one's a little bit more messy, but nevertheless, I'll talk about it.
+
+165
+00:14:50,952 --> 00:14:56,352
+我们在这里在债券上触及1018的高点后开始回落。
+We sort of peaked up here at 1018 in the bonds and start coming down.
+
+166
+00:14:56,852 --> 00:15:03,252
+这里的比率是0.53，然后市场开始横盘。
+You have a ratio here of 0.53, and the market proceeds to go sideways.
+
+167
+00:15:06,552 --> 00:15:12,252
+我知道高点在这里，现在你开始看到这里有几个比率，这里也有几个比率。
+I know the high is here, and what's happening is you're starting to get a couple ratios here, a couple ratios here.
+
+168
+00:15:12,752 --> 00:15:17,952
+很难准确判断市场会往哪个方向走。
+It's kind of hard to really get a good gauge on which way the market's going to go.
+
+169
+00:15:18,152 --> 00:15:21,052
+所以我现在关注的是控制点的位置。
+So what I'm looking at is where the points of controls are.
+
+170
+00:15:21,652 --> 00:15:24,652
+现在，我知道这里、这里、这里都是控制点。
+Now, I know points of control here, here, here.
+
+171
+00:15:24,952 --> 00:15:29,552
+我之前提到过，可以把控制点用作支撑位或阻力位。
+I had talked about earlier using point of controls as support or resistance.
+
+172
+00:15:30,052 --> 00:15:37,552
+所以在这种情况下，我认为市场处于下跌趋势，因为我知道这里有一个高点，而且我看到了比率回弹低点。
+So in this case, I'm using, I think the market is in a downtrend because I know we have a high here and I see this ratio bounce low.
+
+173
+00:15:38,952 --> 00:15:46,652
+尽管这里有一个单印区，这里有一个大单成交，但在这两个的另一侧还有相对的单印区。
+Even though you have a single print here, a large print here, but you have opposing single prints just on the other side of these two.
+
+174
+00:15:46,952 --> 00:15:51,652
+但有趣的是，所有控制点都在这里排成一线。
+But what's interesting is you have the points of controls all lining up right here.
+
+175
+00:15:51,952 --> 00:15:58,152
+你知道，所以现在… 我并不太担心这些，因为这个仍然有负Delta。
+You know, so now... I'm not too concerned about these because this one still has a negative delta.
+
+176
+00:15:58,152 --> 00:15:59,952
+这个有一个小的正Delta。
+This one has a small positive delta.
+
+177
+00:16:00,552 --> 00:16:05,152
+如果我预期市场会大幅上涨，我需要看到强正Delta。
+If I'm expecting the market to really move higher, I want to see a strong positive delta.
+
+178
+00:16:05,752 --> 00:16:10,952
+所以，我会更重视这些比率，而不是这两个。
+So, you know, I'm able to take this ratio, this ratio, this ratio more seriously than these two.
+
+179
+00:16:11,252 --> 00:16:13,052
+实际上，这里的控制点都排列在这里。
+In fact, I got the points of controls here.
+
+180
+00:16:13,652 --> 00:16:17,152
+我仍在寻找下跌趋势，仍在等市场进一步走低。
+I'm still looking for a downtrend. I'm still looking for the market to move lower.
+
+181
+00:16:17,652 --> 00:16:23,552
+然后我又看到了几个确认信号：比率回弹低点和单印区。
+Then I'm seeing a few more confirmation ratios here, ratio bounce low and single print.
+
+182
+00:16:23,852 --> 00:16:26,352
+这告诉我行情应该继续下跌。
+So it's telling me the move should be lower.
+
+183
+00:16:30,252 --> 00:16:35,552
+这还是国债期货，你碰到高点后，我们开始逐步回落。
+Again, this is the bond, and you hit the high, and we start working our way down.
+
+184
+00:16:35,552 --> 00:16:40,052
+你在这里看到单印区，配合不错的比率，77、82。
+You're seeing the single prints here with nice ratio, 77, 82.
+
+185
+00:16:41,552 --> 00:16:46,552
+此时你已经在想，趋势正朝下走。
+And you're thinking already the trend is lower.
+
+186
+00:16:47,152 --> 00:16:49,952
+可能你还不太确定，想再找些证据。
+You know, maybe you're not convinced yet. You want a little bit extra.
+
+187
+00:16:50,252 --> 00:16:54,852
+但你看到一连串的卖盘失衡、卖盘失衡、卖盘失衡、卖盘失衡。
+But, you know, you're seeing the selling imbalances, selling imbalance, selling imbalance, selling imbalance, selling imbalance.
+
+188
+00:16:55,352 --> 00:17:02,452
+如果你还是不确定，这根K线的负Delta非常强，接着就是一根单印区。
+You know, if you're still not convinced, this bar here has got a very strong negative delta. And then immediately it's followed by a bar with a single print.
+
+189
+00:17:02,852 --> 00:17:07,252
+这在告诉你，其实你早该在更高的位置警觉了。
+So it's telling you, you know, you should have been alert way up here.
+
+190
+00:17:07,452 --> 00:17:11,652
+但现在我们已经处于趋势中，所以你要找延续的信号。
+But, you know, we're in the trend already. So you're looking for a sign of continuation.
+
+191
+00:17:12,052 --> 00:17:14,452
+你看到Delta非常强劲。
+You're seeing a delta very strong.
+
+192
+00:17:14,552 --> 00:17:16,152
+你看到大量卖盘失衡。
+You're seeing a lot of selling imbalances.
+
+193
+00:17:16,652 --> 00:17:21,852
+你看到单印区，帮助确认下跌行情。
+You're seeing the single print to help confirm the move lower.
+
+194
+00:17:25,988 --> 00:17:30,288
+好的，这是E-迷你图。现在我们已经跌至这波低点。
+Okay, now this is an E-mini chart. Now, we've come down into our low here.
+
+195
+00:17:30,488 --> 00:17:32,088
+在低点处出现买卖失衡。
+We've got a buying imbalance right on the low.
+
+196
+00:17:32,388 --> 00:17:37,088
+好的，可能你还不确定这是低点。你想先看到趋势启动再入场。
+Okay, maybe you're not yet convinced that this is the low. You want to see the trend start to happen before getting in.
+
+197
+00:17:37,488 --> 00:17:42,688
+突然，这里出现另一个比率反弹低点，显示有阻挡成交量。
+And boom, you get this other ratio bounce low here indicating some stopping volume.
+
+198
+00:17:43,088 --> 00:17:47,488
+接着又出现买卖失衡，市场开始回升。
+And you get another buying imbalance, you know, and the market worked its way back up.
+
+199
+00:17:51,588 --> 00:17:55,288
+好的，还是标普500指数期货。我们正在下跌。
+Okay, S&Ps again. We're working our way lower.
+
+200
+00:17:57,396 --> 00:18:00,996
+我们这里出现比率平衡状态低点，成交量很大，还有单印区。
+You know, we got a ratio balance low, some heavy volume here. We got a single print.
+
+201
+00:18:02,496 --> 00:18:04,796
+价格回撤至单印区，好的。
+You get a pullback up to the single print, okay.
+
+202
+00:18:05,396 --> 00:18:07,496
+你知道市场正在下行，然后出现回撤。
+You know you're working your way lower. You get a pullback.
+
+203
+00:18:08,596 --> 00:18:13,196
+你可能会想，这到底是回撤还是要反弹。
+You know, well, you know, I'm not sure if this is a pullback or we're just going to go higher.
+
+204
+00:18:13,496 --> 00:18:15,196
+所以你需要额外的确认信号。
+So you want to have some extra confirmation.
+
+205
+00:18:15,296 --> 00:18:15,796
+现在信号来了。
+Now you have it.
+
+206
+00:18:15,896 --> 00:18:18,196
+出现卖盘失衡，市场随即下跌。
+You have the selling imbalance and the market sells off.
+
+207
+00:18:20,096 --> 00:18:26,296
+仅凭价格回撤到单印区这一点，对我来说通常是个好交易机会。
+This by itself, where we trace back up to the single print for me, is normally a good trade.
+
+208
+00:18:26,596 --> 00:18:28,996
+我喜欢市场回撤到单印区的情况。
+I like it when the market circles back up to a single print.
+
+209
+00:18:30,296 --> 00:18:36,896
+如果你做空，当我看到卖出失衡和平衡状态时，这告诉我要再持仓一段时间。
+If you get short, then when I see a sell and a balance, it tells me to hold on to the trade a bit longer.
+
+210
+00:18:41,960 --> 00:18:44,160
+好的，现在市场正在上涨。
+Okay, so, you know, we're working our way up.
+
+211
+00:18:44,260 --> 00:18:49,560
+这里的比率很不错，蓝图显示我们已经处于趋势中。
+Nice ratios here, blueprints. It's telling you we're in a trend already.
+
+212
+00:18:49,660 --> 00:18:51,860
+你真该在这里寻找做多机会。
+You really should have been looking to get long in here.
+
+213
+00:18:52,160 --> 00:18:57,460
+假设你错过了，那你得找另一个理由做多，证明趋势会继续延续。
+Say you missed it. You're looking for another reason to get long that the trend is going to keep continuing.
+
+214
+00:18:58,060 --> 00:19:00,460
+现在你看到了什么？这里出现了买入失衡。
+And what do you have? You've got buying imbalance here.
+
+215
+00:19:00,760 --> 00:19:04,660
+但通常我不太会在买入失衡时做多。
+I'm usually not a big... Person to get long in a buying imbalance.
+
+216
+00:19:04,660 --> 00:19:10,460
+但你知道吗？这种情况下，如果你设了紧密止损，我通常会在买入失衡时做多。
+But you know what? This is one of those cases where if you have a tight stop, you know, I usually like to get long in a buying imbalance.
+
+217
+00:19:10,960 --> 00:19:12,860
+但我更倾向于在稍低一点的位置入场。
+I'd prefer to get a little bit lower though.
+
+218
+00:19:13,960 --> 00:19:21,260
+不过，如果你设了紧止损，可以控制风险，而且还能在回调时重新入场。
+You know, but if you have a tight stop, you can manage it and, you know, it's going to give you a chance to get back in on the move back up.
+
+219
+00:19:22,060 --> 00:19:25,060
+就像我之前说的，这里的高点有单印区的比率。
+Like I said, you have this high here with the ratio of single print.
+
+220
+00:19:27,524 --> 00:19:36,924
+有点像个阻碍，但如果你能在下方某处入场，风险其实很低，因为我通常希望看到价格回撤到这个位置。
+sort of standing in your way, but you know what, if you're able to get in somewhere down here, you know, your risk is relatively low, because usually I like to see a pull back up to this level.
+
+221
+00:19:37,324 --> 00:19:42,324
+所以，如果价格回撤到那个位置，你可能有机会突破它。
+So, you know, if you're going to get a pull back up to that level, you could have a chance to get past it, you know.
+
+222
+00:19:43,524 --> 00:19:50,224
+有时候仅凭单印区、比率和负Delta就卖出高点会比较难，但...
+Sometimes it's hard to sell a high, just off of a single print and a ratio and negative delta, but...
+
+223
+00:19:50,924 --> 00:19:52,824
+有时候这种策略也会失效。
+You know, there are times when it doesn't work.
+
+224
+00:19:53,024 --> 00:19:55,424
+如果你在寻找趋势延续的机会，
+And, you know, if you're looking for a continuation of a trend,
+
+225
+00:19:58,588 --> 00:20:00,088
+那趋势就会延续。
+then it's going to happen.
+
+226
+00:20:02,988 --> 00:20:04,188
+这个例子不太合理。
+That one made no sense.
+
+227
+00:20:05,688 --> 00:20:07,788
+好，现在你看这张图，这是E-迷你图。
+Okay, now what do you have here? You got an E-mini chart.
+
+228
+00:20:07,788 --> 00:20:09,088
+市场一路下跌、下跌、再下跌。
+Markets coming down, down, down.
+
+229
+00:20:09,088 --> 00:20:11,088
+这里连续出现几个卖盘失衡。
+You got a couple selling imbalances right in a row.
+
+230
+00:20:11,688 --> 00:20:15,488
+我喜欢这种情况：两个卖盘失衡分布在两根K线上。
+Now this is, I like this, where you get two selling imbalances split over two bars.
+
+231
+00:20:17,588 --> 00:20:20,688
+然后这里出现单印区回撤，接着市场继续下跌。
+You get the pullback up here in a single print, and then the market sells off.
+
+232
+00:20:20,788 --> 00:20:22,988
+当你看到卖盘失衡时，
+You know, when you're seeing selling imbalances,
+
+233
+00:20:24,988 --> 00:20:32,788
+当市场接近低点时，你需要谨慎，但若出现回撤/回调，这通常意味着这些位置可能会守住，市场会继续下跌。
+going into a low, you might want to be careful, but if you get a pullback in there, it's telling you that these most likely are going to hold and the market's going to continue lower.
+
+234
+00:20:35,632 --> 00:20:37,532
+同样，我们之前是从高点回落的。
+Again, we had sort of coming off our high up here.
+
+235
+00:20:37,632 --> 00:20:43,932
+出现了卖盘失衡，然后你会看到比率（蓝色数字）的确认，随着市场下跌。
+We got a selling imbalance. Then you're seeing the confirmation with the ratios, the blue numbers, as the market's moving lower.
+
+236
+00:20:47,032 --> 00:20:50,432
+好的，这就是第17课，趋势延续型交易设置的全部内容。
+So this is the end of lesson 17, continuation setups.
+
+237
+00:20:51,332 --> 00:20:57,732
+下一课，我会讲解如何将订单流与传统技术分析结合，来提升你当前的交易方法。
+In the next lesson, I'll explain how to integrate order flow with your traditional technical analysis to enhance your current ways of trading.
+
+238
+00:20:59,132 --> 00:21:02,432
+我没有在趋势延续型交易设置上花太多时间，因为…
+I didn't spend much time under continuation setups because...
+
+239
+00:21:04,632 --> 00:21:07,232
+我认为，这对你来说应该很容易识别。
+It should be pretty easy, I think, for you to spot.
+
+240
+00:21:07,632 --> 00:21:09,632
+我给了你几个我喜欢寻找的设置。
+I gave you a few setups that I like to look for.
+
+241
+00:21:10,032 --> 00:21:15,732
+但总体来说，你仍在寻找和反转信号相同的要素。
+But in general, you're still looking for the same things that you're looking for around reversals.
+
+242
+00:21:16,532 --> 00:21:24,232
+延续型交易通常是因为你错过了反转信号，然后在延续行情中稍晚入场。
+With continuations, it's generally because you missed the reversal sign and you're getting in just a little bit late on the continuation.
+
+243
+00:21:24,732 --> 00:21:27,732
+但你始终应该寻找...
+But you should always be looking for...
+
+244
+00:21:28,532 --> 00:21:33,132
+任何出现的交易设置，结合市场所处的位置来判断。
+Any setups where they're occurring, just take them into context with where the market is.
+
+245
+00:21:33,532 --> 00:21:37,832
+如果市场处于趋势中，可以考虑做这些设置。
+Um, If the market is trending, it's okay to take the setups.
+
+246
+00:21:38,532 --> 00:21:42,232
+如果市场横盘/震荡，我会比较犹豫是否入场。
+If the market is going sideways, I'm a bit hesitant to take setups.
+
+247
+00:21:43,632 --> 00:21:48,732
+我希望市场是有方向性的，而不是… 基本上原地踏步。
+I said I want a market to be moving, not... Basically spinning its wheels.
+
+248
+00:21:49,632 --> 00:21:53,132
+当市场在动的时候，你才有机会赚钱。
+You know, when a market's moving is when you're going to have the opportunity to make money.
+
+249
+00:21:53,632 --> 00:21:58,932
+关键是要能判断市场是否在走势，若出现交易设置，就立即入场。
+So the important thing is, you know, just be able to determine when the market is moving, and if you're seeing a setup, take it.
+
+250
+00:21:59,032 --> 00:22:02,832
+如果市场没走势，即使出现设置，也要谨慎。
+If the market is not moving and you see a setup, be hesitant.
+
+251
+00:22:04,532 --> 00:22:07,032
+好，第17课就到这里。谢谢大家。
+So thank you. That's the end of lesson 17.
+
+===== END AFTER_TRANSLATE =====

@@ -1,0 +1,2607 @@
+===== AFTER_TRANSLATE (521 entries) =====
+1
+00:00:00,000 --> 00:00:05,300
+大家好，我是Brian，现在是2023年3月第二周录制这段视频
+Hey guys, Brian's here and I'm recording this video during the second week of March 2023.
+
+2
+00:00:05,700 --> 00:00:11,700
+我们看到的是标普500指数期权（SPX）的日线图
+What we're looking at is a daily chart of the SPX, which is the S&P 500 index.
+
+3
+00:00:12,000 --> 00:00:16,900
+这是过去几年的交易数据，最早可以追溯到2018年
+This is the past few years of trading, so we have dating all the way back to 2018 over here.
+
+4
+00:00:17,200 --> 00:00:24,700
+这里是2020年的崩盘，然后是2022年的熊市，现在是2023年
+This is the crash of 2020 and then we have the bear markets of 2022 and we're currently at 2023 right here.
+
+5
+00:00:25,100 --> 00:00:28,372
+如果你是期权交易新手，可能已经知道
+Now, if you're new to trading options, you probably are familiar already
+
+6
+00:00:28,372 --> 00:00:31,644
+当你认为标的资产价格会上涨时，可以买入看涨期权（call）
+with buying a call option when you think the prices of the
+
+7
+00:00:31,644 --> 00:00:33,825
+或者
+underlying is going to go up or buying
+
+8
+00:00:33,825 --> 00:00:36,006
+如果认为标的资产价格会下跌，可以买入看跌期权（put）
+a put option if you think the price
+
+9
+00:00:36,006 --> 00:00:40,096
+并通过选择正确方向获利
+of the underlying is going to go down and profiting on picking the right direction.
+
+10
+00:00:40,500 --> 00:00:44,020
+在这个视频中，我想给大家介绍一个概念
+With this video, I want to introduce you the concept
+
+11
+00:00:44,020 --> 00:00:49,300
+可以称为‘做空波动率’，这是期权交易的另一种思路
+of what can be called selling volatility, and it's just another approach to trading options.
+
+12
+00:00:49,700 --> 00:00:53,000
+有人可能会说，这是所谓的‘专业交易者’的交易方式
+One can argue it's how quote unquote professionals trade options.
+
+13
+00:00:53,000 --> 00:00:58,000
+这个我就不多评论了，因为市场上赚钱的方法有很多种
+I'll leave that up to anyone to discuss as there's many ways to make money in the market.
+
+14
+00:00:58,300 --> 00:01:02,200
+但我本人倾向于做空波动率
+But I tend to be someone that falls under the line of actually selling volatility.
+
+15
+00:01:02,600 --> 00:01:05,700
+我刚开始交易期权时，并不是这样操作的
+And when I first started out trading options, I did not start this way.
+
+16
+00:01:05,800 --> 00:01:08,354
+我记得我读的第一本关于期权的书
+I believe the first book in which I read on options or
+
+17
+00:01:08,354 --> 00:01:12,399
+或者说第一本里面提到期权的章节，作者应该是Alexander Elder
+the first chapter in which I read on options was from Alexander Elder, I believe was the author's name.
+
+18
+00:01:12,400 --> 00:01:14,900
+书名是《以交易为生》
+And it was a new trading for the living.
+
+19
+00:01:14,900 --> 00:01:17,700
+这本书并不是专门讲期权的
+And towards the end of the book, the book was not a book on options.
+
+20
+00:01:17,700 --> 00:01:20,300
+主要是讲交易心理之类的内容
+It was just about trading in general, psychology, that type of stuff.
+
+21
+00:01:20,700 --> 00:01:23,716
+但在书的最后，他写了一个章节
+And then towards the end of the book, he had a chapter
+
+22
+00:01:23,716 --> 00:01:26,732
+讲期权，他说他自己不交易期权
+on options and he was talking about how he doesn't trade options
+
+23
+00:01:26,732 --> 00:01:29,999
+他还采访过一些所谓的‘期权交易者’和专业的期权交易者
+and he's spoken with options quote unquote traders and traders that trade options.
+
+24
+00:01:30,100 --> 00:01:33,180
+他们说专业交易者都是卖出期权
+Professionally, they sell options and he was saying they essentially just sell
+
+25
+00:01:33,180 --> 00:01:37,800
+基本上是把期权卖给那些不知道自己在做什么的人
+to people that don't know what they're doing and they think they're constantly trying to pick a direction.
+
+26
+00:01:38,200 --> 00:01:40,575
+这些人总是试图选择方向
+And the statistics and the odds show that they're losing
+
+27
+00:01:40,575 --> 00:01:43,900
+而统计数据和概率显示，他们亏损严重，真正赚钱的是期权空头
+a ton of money. So the people that actually make money are option sellers.
+
+28
+00:01:44,300 --> 00:01:45,800
+这又是为什么呢？
+And why is that? Right.
+
+29
+00:01:45,800 --> 00:01:50,200
+那我们来看看VIX指数背后的一些数据，图表上已经标出来了
+So we're going to take a look at some data behind the VIX here as we have on this chart.
+
+30
+00:01:50,700 --> 00:01:52,893
+如果有一件事需要注意，那就是
+If there's one thing to take note of, if we
+
+31
+00:01:52,893 --> 00:01:54,647
+我们来看一下，等等，我们直接看
+just take a look at this, wait, let's
+
+32
+00:01:54,647 --> 00:01:57,498
+对比这两个。这是标普500指数，对，这个指数本身。
+compare the two. So we have the S&P 500. All right, the index.
+
+33
+00:01:57,700 --> 00:02:00,308
+如果我们从2018年初开始看
+If we take a look at this from the start here back
+
+34
+00:02:00,308 --> 00:02:02,481
+到现在，它整体是上涨的，对吧？
+in 2018 and where it is right now, it's higher, right?
+
+35
+00:02:03,200 --> 00:02:07,600
+除了这里的这次崩盘，简直疯狂，这就是疫情期间的崩盘。
+And we can see, except for this crash right here, which was crazy, this is the pandemic.
+
+36
+00:02:07,600 --> 00:02:09,500
+所以我们先忽略这个，好吗？
+So let's disregard this, right?
+
+37
+00:02:09,500 --> 00:02:12,200
+这次疯狂的恐慌性崩盘。
+This insane panic crash.
+
+38
+00:02:12,500 --> 00:02:14,900
+而这里更像是熊市。
+And we have, this is more so a bear market.
+
+39
+00:02:14,900 --> 00:02:17,694
+太疯狂了，而那次只是，我会把它称作闪崩，
+You know, it's crazy, whereas this was just, I'm going
+
+40
+00:02:17,694 --> 00:02:20,488
+尽管严格来说不是闪崩，
+to label it a flash crash, even though it was
+
+41
+00:02:20,488 --> 00:02:24,399
+特别是当时的世界局势。
+not a flash crash, especially the state of the world during this time here.
+
+42
+00:02:24,700 --> 00:02:27,100
+但我们看到这次崩盘后是V型复苏。
+But we have this crash and we have this V-shaped recovery.
+
+43
+00:02:27,900 --> 00:02:30,900
+总体来看，它还是上涨了。
+That occurred, we can see that generally it's gone up.
+
+44
+00:02:31,100 --> 00:02:33,892
+再来看VIX指数，
+If we come to the VIX,
+
+45
+00:02:33,892 --> 00:02:36,684
+也就是芝加哥期权交易所的波动率指数，
+which is the CBOE Markets Volatility
+
+46
+00:02:36,684 --> 00:02:43,199
+它是一个追踪标普500指数期权（SPX）
+Index, it is an index that tracks the quote-unquote implied volatility of the SPX.
+
+47
+00:02:43,500 --> 00:02:48,200
+所谓‘隐含波动率’的指数。
+So to simplify that, it's how big of the expected move is given a certain time frame.
+
+48
+00:02:48,200 --> 00:02:51,900
+简单来说，它反映的是在特定时间框架内，
+I believe it's about 30 days, the implied move for the SPX.
+
+49
+00:02:51,900 --> 00:02:56,700
+市场预期标普500指数期权（SPX）的波动幅度有多大。
+Implied move is just saying how big does it think the SPX of a move is it going to make?
+
+50
+00:02:56,700 --> 00:03:00,000
+它会上涨100点、200点吗？
+Is it going to be up 100, 200 points in the next 30?
+
+51
+00:03:00,300 --> 00:03:04,100
+还是会下跌100点或200点？
+or is it going to be down 100 or 200 points in the next 30 days?
+
+52
+00:03:04,200 --> 00:03:09,400
+这个数值会根据标普500指数期权（SPX）的期权活动不断变化。
+And it's constantly changing based on some of the options activity that's happening for the SPX.
+
+53
+00:03:09,400 --> 00:03:10,500
+别引用我的话，
+And don't quote me on that.
+
+54
+00:03:10,500 --> 00:03:11,100
+我可能错了。
+I might be wrong.
+
+55
+00:03:11,100 --> 00:03:12,470
+我几年前读过，
+I read it a few years ago,
+
+56
+00:03:12,470 --> 00:03:13,645
+然后这个定义就留在了
+and then it just stuck with
+
+57
+00:03:13,645 --> 00:03:15,799
+我的脑海里，万一定义偶尔变了。
+me in case their definition of change every now and then.
+
+58
+00:03:15,800 --> 00:03:19,100
+我会再去芝加哥期权交易所网站确认他们有没有更新。
+I'll check back on the CBO website to see if they updated anything.
+
+59
+00:03:19,100 --> 00:03:23,600
+但据我了解，这个指数的计算公式没变，而且这也不一定相关。
+But to my knowledge, the formula for how this is calculated has not changed, nor is that necessarily relevant.
+
+60
+00:03:24,000 --> 00:03:25,718
+只需要知道芝加哥期权交易所在
+Just know that the CBO is doing the
+
+61
+00:03:25,718 --> 00:03:27,006
+辛苦计算后，
+hard work, and then they're giving
+
+62
+00:03:27,006 --> 00:03:29,798
+他们在这里给出一个数值，告诉我们市场波动有多激烈。
+us a number right here to let us know how volatile things are.
+
+63
+00:03:30,300 --> 00:03:31,174
+2020年，我们经历了
+During 2020, we had this
+
+64
+00:03:31,174 --> 00:03:32,703
+一场崩盘，可以看到VIX指数
+crash, and we can see the spike
+
+65
+00:03:32,703 --> 00:03:35,762
+暴涨至85，这波动率简直疯狂。
+that went all the way up to 85, which is ridiculous, which is insane volatility.
+
+66
+00:03:36,300 --> 00:03:38,975
+这意味着标普500指数期权（SPX）
+That means that the SPX is expected to
+
+67
+00:03:38,975 --> 00:03:41,315
+在未来一天、两天或三十天内
+make huge moves up or down for
+
+68
+00:03:41,315 --> 00:03:42,986
+可能出现剧烈上涨或下跌。
+the next day and the
+
+69
+00:03:42,986 --> 00:03:46,664
+次日、再次日，在30天内依此类推。
+day after and the day after within 30 days and so forth.
+
+70
+00:03:47,500 --> 00:03:50,700
+但如果我们观察VIX指数，会发现它相对平稳。
+But if we take a look at this, we can see the VIX is relatively flat.
+
+71
+00:03:50,800 --> 00:03:54,600
+也就是说，如果在这里画一条线，
+I mean, if we were to just draw a line here across.
+
+72
+00:03:55,600 --> 00:03:56,665
+它基本上只是在
+It's kind of just hovering
+
+73
+00:03:56,665 --> 00:03:58,157
+某个点附近徘徊，
+around, you know, this this point to
+
+74
+00:03:58,157 --> 00:03:59,435
+如果我们
+be if we're if we're to
+
+75
+00:03:59,435 --> 00:04:03,485
+如果严格一点，真正画一条线，会发现大概在17.5左右。
+be anal about it and actually draw a line, we can see that's about 17 and a half or so.
+
+76
+00:04:03,700 --> 00:04:04,903
+没错。我只是松散地
+Right. And I'm just loosely
+
+77
+00:04:04,903 --> 00:04:06,588
+把这些数值标在图表上，
+plotting these numbers on the chart as
+
+78
+00:04:06,588 --> 00:04:10,199
+因为这个视频主要是为了分享背后的概念。
+this video is more so about the concept behind what I'm trying to share here.
+
+79
+00:04:10,500 --> 00:04:12,600
+如果我们画一个回归通道，
+If we were to draw a regressional channel
+
+80
+00:04:12,600 --> 00:04:13,650
+会发现
+out across this, we
+
+81
+00:04:13,650 --> 00:04:16,800
+VIX指数具有均值回归的特性。
+can see that the VIX is what's known to be mean reverting.
+
+82
+00:04:17,000 --> 00:04:18,500
+我们可以说，
+And that's something that we
+
+83
+00:04:18,500 --> 00:04:20,600
+可以说的是
+can say is we can say the
+
+84
+00:04:20,600 --> 00:04:22,400
+VIX指数整体上是
+VIX is a proxy as a
+
+85
+00:04:22,400 --> 00:04:24,800
+几乎所有期权的隐含波动率的代理指标。
+whole for implied volatility across almost all options.
+
+86
+00:04:25,000 --> 00:04:30,000
+当然，个股在财报前的隐含波动率会有所不同。
+Granted, implied volatility will be different for an individual stock around earnings.
+
+87
+00:04:30,000 --> 00:04:33,300
+会有隐含波动率的飙升或暴跌，之类的情况。
+There will be IV spikes, IV crushes, those types of things.
+
+88
+00:04:33,300 --> 00:04:37,700
+但大多数情况下，为了简化，这里指的就是隐含波动率。
+But for the most part, trying to keep it simple here, this is implied volatility.
+
+89
+00:04:37,700 --> 00:04:38,377
+它具有均值回归的特性。
+It's mean reverting.
+
+90
+00:04:38,377 --> 00:04:40,408
+也就是说，当它飙升后，
+That means when it spikes, it wants to come
+
+91
+00:04:40,408 --> 00:04:41,988
+迅速回到均值水平。
+right back to wherever the mean is.
+
+92
+00:04:41,988 --> 00:04:45,599
+当它跌得过低时，也会迅速回到均值水平。
+If it drops too low, it wants to come right back to wherever the mean is.
+
+93
+00:04:45,600 --> 00:04:48,700
+我只是用回归通道在图表上标出来。
+And I'm just using a regression channel to plot this out on the chart.
+
+94
+00:04:48,700 --> 00:04:52,100
+回归线上的这个点就是我们的均值。
+And then this would be our mean right here on the regression line.
+
+95
+00:04:52,600 --> 00:04:56,200
+如果我们切换到标普500指数期权（SPX），做同样的操作。
+And if we were to jump to the SPX. Do the same thing.
+
+96
+00:04:56,300 --> 00:04:58,236
+直接在图表上标出来，
+So just plot it out from here and
+
+97
+00:04:58,236 --> 00:05:00,172
+然后让系统自动绘制。
+then just let the system draw it out
+
+98
+00:05:00,172 --> 00:05:02,108
+我们这里有一个回归通道，
+for us here We have a regression Channel
+
+99
+00:05:02,108 --> 00:05:04,528
+然后可以看到，当标普500指数期权（SPX）
+and then we can see this is when the SPX
+
+100
+00:05:04,528 --> 00:05:06,464
+低于回归通道时，它会
+is below the regression channel and wants to
+
+101
+00:05:06,464 --> 00:05:10,095
+回到均值。可以看到均值
+get back to the mean Which is this way we can see that the mean
+
+102
+00:05:10,800 --> 00:05:15,800
+或者说通道本身处于上升趋势，而当我们回到VIX指数时，它基本是平的。
+or the channel itself is in an uptrend and as we jump back to the VIX It's relatively flat.
+
+103
+00:05:15,900 --> 00:05:16,700
+是的，它确实在上升。
+Yes, it is in an uptrend.
+
+104
+00:05:16,800 --> 00:05:22,500
+所以波动率一直在上升，但大部分情况下，
+So in volatility has been increasing but for the most part it's it's pretty much gone back to
+
+105
+00:05:22,900 --> 00:05:24,815
+它基本回到了几年前的水平，
+where it was x amount of years ago
+
+106
+00:05:24,815 --> 00:05:26,730
+即使在2020年出现那些疯狂的波动时，
+and even when it has these insane moves
+
+107
+00:05:26,730 --> 00:05:28,329
+它也几乎迅速回落
+during 2020 it kind of came right back
+
+108
+00:05:28,329 --> 00:05:31,528
+到可以认为是‘应有’的水平。
+down to the level in which it's one can argue it's supposed to be
+
+109
+00:05:32,500 --> 00:05:38,100
+当VIX指数低于20或高于30时，市场交易完全不同。比如高于30时，
+the market trades completely different if it's below 20 if it's or if it's above 30 so above 30
+
+110
+00:05:39,100 --> 00:05:41,700
+几乎可以预期它会回落到30以下。
+You can almost expect it to come back to be below 30.
+
+111
+00:05:41,700 --> 00:05:46,900
+如果低于20，谁也不知道它会低于20多久，这可能被视为正常。
+And if it's below 20, who knows how long it might stay below 20. That might be considered normal.
+
+112
+00:05:47,900 --> 00:05:50,152
+那些从VIX指数诞生起就活跃在市场的交易者，
+Traders that have been in the market since
+
+113
+00:05:50,152 --> 00:05:52,404
+可能对波动率有不同的看法，
+this has been around will probably have different
+
+114
+00:05:52,404 --> 00:05:54,554
+对于2020年崩盘后涌现的新时代交易者，
+perspectives on it for the new age or
+
+115
+00:05:54,554 --> 00:05:58,048
+或者新时代的交易者来说，
+the new era of traders that came about because of the crash of 2020.
+
+116
+00:05:59,500 --> 00:06:00,000
+他们的观点会不同。
+We'll have a different.
+
+117
+00:06:00,100 --> 00:06:03,200
+对波动率的看法会和之前的交易者不同。
+opinion on volatility versus the traders that traded back here.
+
+118
+00:06:03,500 --> 00:06:05,356
+之前标普500指数期权（SPX）的交易活跃度，
+There was not a lot of SPX options
+
+119
+00:06:05,356 --> 00:06:06,748
+相对于现在来说要低很多，
+activity relative to how much there
+
+120
+00:06:06,748 --> 00:06:09,300
+因为现在我们有从周一到周五的0到期剩余天数（DTE）期权。
+is here because we have the zero DTE Monday through Friday.
+
+121
+00:06:09,500 --> 00:06:13,500
+现在散户交易者更多了，小账户交易也更多了。
+We have a lot more retail traders. We have a lot more smaller accounts that are trading.
+
+122
+00:06:13,700 --> 00:06:16,900
+期权交易更容易了，可及性比以前高了。
+It's easier. There's more accessibility to options than there was back here.
+
+123
+00:06:17,200 --> 00:06:19,800
+以前交易的人都知道，手续费要高得多。
+Anyone that was trading back here knew we had to pay a lot more commissions.
+
+124
+00:06:19,800 --> 00:06:24,200
+股票交易的手续费
+We also had to pay commissions on equity stocks as much as
+
+125
+00:06:24,600 --> 00:06:28,000
+和期权交易一样高，而且当时Robinhood还没那么流行。
+As well as options, there was not necessarily Robinhood was not as popular.
+
+126
+00:06:28,100 --> 00:06:30,000
+当时它还没现在这么大。
+It wasn't it wasn't as big back then.
+
+127
+00:06:30,100 --> 00:06:31,143
+所以我们得支付
+So we had to pay
+
+128
+00:06:31,143 --> 00:06:32,603
+更多的费用。这某种程度上
+a lot more. And that kind of
+
+129
+00:06:32,603 --> 00:06:34,898
+为新散户交易者设置了更高的门槛。
+had a bigger gate, we can say, for newer retail traders.
+
+130
+00:06:35,200 --> 00:06:36,536
+所以，这两个因素
+So with this, those two things,
+
+131
+00:06:36,536 --> 00:06:37,426
+正如我指出的那样,
+as I'm pointing out,
+
+132
+00:06:37,426 --> 00:06:40,098
+我们来看隐含波动率。注意这一点，它是均值回归的，对吧？
+we have implied volatility. Take note of that. It's mean reverting, right?
+
+133
+00:06:40,500 --> 00:06:45,400
+我们可以看到，VIX指数几乎很难保持其‘涨幅’。
+We can see that it almost is hard for the VIX to hold its quote unquote gains.
+
+134
+00:06:45,400 --> 00:06:47,700
+如果它上涨了，那只是时间问题，它很快就会回落。
+If it increases, it's just a matter of time before it comes back.
+
+135
+00:06:48,100 --> 00:06:50,800
+这个概念是很多期权交易者都知道的。
+That concept is something that a lot of option traders know.
+
+136
+00:06:51,200 --> 00:06:54,200
+而隐含波动率对期权交易者来说非常重要。
+And implied volatility isn't very important for option traders.
+
+137
+00:06:54,300 --> 00:06:58,400
+他们知道的一点是，统计上VIX指数会回到某个区间内。
+So one thing they know is statistically the VIX is going to come back within a certain range.
+
+138
+00:06:58,600 --> 00:07:02,300
+因此，也有一些策略在某种程度上是基于这个特性交易的。
+So there's also some strategies that in a sense trade based on that.
+
+139
+00:07:02,600 --> 00:07:04,840
+如果我们来看一下VIX指数的数据，
+If we take a look at some data on the
+
+140
+00:07:04,840 --> 00:07:06,408
+你现在看到的这些信息
+VIX right here, this information that you're
+
+141
+00:07:06,408 --> 00:07:08,200
+来自量化交易应用（QTA）的网站。
+seeing is from the Quant Trading app website.
+
+142
+00:07:08,300 --> 00:07:09,820
+这是它的数据页面
+So this is just the data page
+
+143
+00:07:09,820 --> 00:07:11,340
+我们正在查看的。
+in which we're looking at. And we're
+
+144
+00:07:11,340 --> 00:07:12,643
+我们只是在看一下
+just taking a look at the
+
+145
+00:07:12,643 --> 00:07:14,380
+VIX指数。这是过去365天的数据。
+VIX. And this is for the past 365 days.
+
+146
+00:07:14,700 --> 00:07:16,800
+这就是K线的交易情况。
+This is how the candles have in a sense traded.
+
+147
+00:07:17,100 --> 00:07:18,806
+我们可以看到，只有31%的时间
+We can see only 31% of the time,
+
+148
+00:07:18,806 --> 00:07:20,512
+或者说我们可以四舍五入，说是32%
+or we'll round it up, we'll say 32%
+
+149
+00:07:20,512 --> 00:07:24,412
+的时间，VIX指数的收盘是上涨的。这是基于日线K线。
+of the time, the VIX actually closed green. And this is based on the daily candles.
+
+150
+00:07:25,400 --> 00:07:28,100
+而有68%的时间是下跌收盘的。
+Whereas 68% of the time it has closed red.
+
+151
+00:07:28,200 --> 00:07:30,000
+周三时它经常收阴。
+It's very red on Wednesday.
+
+152
+00:07:30,200 --> 00:07:32,142
+周五也是，然后我们可以
+and Fridays and then we can
+
+153
+00:07:32,142 --> 00:07:34,084
+看到它并非特别阴
+see that on not very red
+
+154
+00:07:34,084 --> 00:07:36,998
+但基本在周三和周四收阴
+it just closes red mostly on Wednesdays and Thursdays
+
+155
+00:07:37,400 --> 00:07:38,584
+这是过去365天的数据，
+over the past 365 days and
+
+156
+00:07:38,584 --> 00:07:40,005
+我们可以进一步拆解
+we can kind of break this
+
+157
+00:07:40,005 --> 00:07:41,426
+更详细的数据，
+down a little bit more down
+
+158
+00:07:41,426 --> 00:07:46,162
+但不需要过度细化，我们直接切换到
+there but we don't need to get too nuanced with this let's just actually change this now to this is
+
+159
+00:07:47,400 --> 00:07:48,900
+过去365天的视图。
+the past 365 days.
+
+160
+00:07:48,900 --> 00:07:52,600
+但我们单独看一下2021年初的情况。
+But let's just take a look in isolation of the start of 2021.
+
+161
+00:07:53,100 --> 00:07:54,219
+我们假设
+And we have, we'll say
+
+162
+00:07:54,219 --> 00:07:55,785
+一年从1月3日开始，
+the year started on the third year,
+
+163
+00:07:55,785 --> 00:07:57,799
+因为这是交易年的起点。
+because that was the start of the trading year.
+
+164
+00:07:57,800 --> 00:07:59,700
+然后我们直接跳到12月。
+And then let's just jump to the December.
+
+165
+00:08:00,100 --> 00:08:01,500
+然后运行这份报告。
+And then let's just run this report.
+
+166
+00:08:03,400 --> 00:08:06,300
+数据结果也很类似。
+And we have similar stats here.
+
+167
+00:08:06,400 --> 00:08:12,100
+66.8%的时间收阴，33.2%的时间收阳。
+So 66.8% of the time it's red, 33.2% of the time it's green.
+
+168
+00:08:12,300 --> 00:08:13,760
+这里只是绘制了实际净变化。
+This is just plotting the actual net
+
+169
+00:08:13,760 --> 00:08:15,637
+绿色是VIX指数收涨的日子，
+changes right here. So the green is the days
+
+170
+00:08:15,637 --> 00:08:19,599
+其中绿色K线是VIX指数收涨的交易日，红色K线则是收跌的交易日
+in which the VIX actually closed up and then the red is the days in which it's closed down.
+
+171
+00:08:19,800 --> 00:08:23,124
+从图中可以看到，
+What we can see right here on this graph is
+
+172
+00:08:23,124 --> 00:08:25,783
+每当VIX指数收盘价
+every time the VIX has closed outside of
+
+173
+00:08:25,783 --> 00:08:32,099
+在一个标准差波动中，这里的净变动幅度相对于跌势的红色区间来说非常大
+a one standard deviation move, it's had really, really large net changes right here relative to the red side.
+
+174
+00:08:32,200 --> 00:08:33,500
+相对于收跌的日子，
+So relative to the red days.
+
+175
+00:08:33,800 --> 00:08:35,828
+换句话说，当VIX指数收涨时，
+So in other words, whenever the VIX closes
+
+176
+00:08:35,828 --> 00:08:37,603
+它会大幅收涨，这意味着
+green, it closes really green, which means
+
+177
+00:08:37,603 --> 00:08:40,899
+隐含波动率激增，这正是我们在这里看到的。
+implied volatility spikes. And that's in a sense what we can see here.
+
+178
+00:08:40,900 --> 00:08:42,500
+我们可以看到有些日子
+We can see these days in which
+
+179
+00:08:42,500 --> 00:08:43,642
+VIX指数直接飙升，
+the VIX really just jumps
+
+180
+00:08:43,642 --> 00:08:45,699
+出现剧烈的上涨。
+up and just rallies. It has these huge spikes.
+
+181
+00:08:46,300 --> 00:08:47,932
+我常对新手交易者说
+Something that I like to tell new traders
+
+182
+00:08:47,932 --> 00:08:49,360
+把VIX指数
+to this is think of the VIX
+
+183
+00:08:49,360 --> 00:08:51,400
+想象成一个爱发脾气的小孩
+almost as like a child that just throws a tantrum.
+
+184
+00:08:51,400 --> 00:08:52,270
+它爱发脾气
+It likes to cause a
+
+185
+00:08:52,270 --> 00:08:53,488
+但你只要
+fit, but then, you know, you just
+
+186
+00:08:53,488 --> 00:08:54,532
+暂时不管它
+leave it alone for a little
+
+187
+00:08:54,532 --> 00:08:56,098
+它自己就会平静下来
+bit and then it just calms down by itself.
+
+188
+00:08:56,200 --> 00:08:57,300
+它表现得很疯狂
+Like it acts crazy.
+
+189
+00:08:57,700 --> 00:08:59,300
+好像什么事都很严重
+It makes it seem like everything's a big deal.
+
+190
+00:08:59,300 --> 00:09:00,100
+然后它自己就冷静了
+And then it just calms down.
+
+191
+00:09:00,400 --> 00:09:02,700
+时间一长，它会越来越平静
+And then naturally over time, it just keeps calming down.
+
+192
+00:09:03,100 --> 00:09:05,300
+这正是我们现在的体验
+And that's exactly what we're in a sense experiencing now.
+
+193
+00:09:05,400 --> 00:09:07,591
+去年经过那一阵疯狂后
+After all the craziness that happened last year,
+
+194
+00:09:07,591 --> 00:09:09,508
+VIX指数现在仍低于
+the VIX is still below, you know,
+
+195
+00:09:09,508 --> 00:09:11,699
+去年大部分时间里的低点
+even most of last year's lows, currently speaking.
+
+196
+00:09:11,700 --> 00:09:13,774
+现在，人们用它来
+Now, people use this as a measure to
+
+197
+00:09:13,774 --> 00:09:15,848
+判断市场是否会再次崩盘或回调
+think that another crash or pullback is going
+
+198
+00:09:15,848 --> 00:09:18,699
+因为VIX指数太低了
+to happen in the market because the VIX is so low.
+
+199
+00:09:18,800 --> 00:09:23,700
+所以当VIX指数较低时，通常建议考虑对冲策略
+So whenever the VIX is low, it's generally a good idea to look into hedging principles and things like that.
+
+200
+00:09:24,200 --> 00:09:25,600
+好，我们来看这个分析
+All right. So we have this analysis.
+
+201
+00:09:25,600 --> 00:09:29,000
+为了节省时间，我已经预先打开了几个标签页
+Let's just jump. So to save time, I have some tabs already pre-opened here.
+
+202
+00:09:29,000 --> 00:09:30,900
+现在看的是2021年
+So now we're looking at just 2021.
+
+203
+00:09:31,600 --> 00:09:32,600
+这是2022年
+So this is 2022.
+
+204
+00:09:32,900 --> 00:09:34,400
+可以看到有66%的时间
+We can see 66% of the time.
+
+205
+00:09:34,500 --> 00:09:37,200
+现在有61%的时间是红色
+Now we have 61% of the time red.
+
+206
+00:09:37,500 --> 00:09:39,500
+这是2020年
+This now is 2020.
+
+207
+00:09:39,500 --> 00:09:42,853
+当时经历了疫情崩盘和
+So the big, crazy pandemic crash with the
+
+208
+00:09:42,853 --> 00:09:45,368
+V型反弹，63%的时间里
+V-shaped recovery, 63% of the time, we
+
+209
+00:09:45,368 --> 00:09:49,979
+VIX指数上涨的日子主要出现在周五
+can still see the red VIX days really came on Fridays.
+
+210
+00:09:51,100 --> 00:09:53,664
+这很正常，而周一通常
+Which is to be expected and Mondays usually
+
+211
+00:09:53,664 --> 00:09:55,908
+会有大量隐含波动率崩跌
+there's a lot of implied volatility crushes
+
+212
+00:09:55,908 --> 00:09:58,152
+出现在周一和周五
+that happens on Mondays as well as
+
+213
+00:09:58,152 --> 00:10:01,999
+但周五如果收盘为绿色
+Fridays and then we have however on Fridays if it does close
+
+214
+00:10:03,100 --> 00:10:07,600
+据我记忆，它最终会是非常非常
+green I think from memory it ends up being really really really really
+
+215
+00:10:08,700 --> 00:10:09,453
+绿色，我们看看
+Green, let's see if
+
+216
+00:10:09,453 --> 00:10:10,960
+我在这里输入周五，然后
+I type in here just Fridays and we
+
+217
+00:10:10,960 --> 00:10:13,598
+单独提取这些数据，看看净变化
+pull that down in isolation and we take a look at the net changes.
+
+218
+00:10:13,600 --> 00:10:17,600
+可以看到，收盘为绿色的日子涨幅很大
+We can see that the days in which it has closed green were pretty big.
+
+219
+00:10:17,600 --> 00:10:22,700
+但VIX指数的红色日子是隐含波动率大崩跌
+However, the red days for the VIX were big volatility crushes.
+
+220
+00:10:22,700 --> 00:10:27,200
+这正是导致标普500指数期权（SPX）在周五大反弹的原因
+And that's what caused a lot of rallies on Fridays in the SPX.
+
+221
+00:10:27,200 --> 00:10:30,000
+如果你交易过0到期剩余天数的标普500指数期权（SPX）
+And that's if you've ever traded zero DT options on the SPX.
+
+222
+00:10:30,100 --> 00:10:32,673
+并且赶上这样的周五，
+and you catch one of these Fridays, those
+
+223
+00:10:32,673 --> 00:10:34,603
+那就是你
+are the days in which you
+
+224
+00:10:34,603 --> 00:10:36,855
+在0到期剩余天数期权中获得1000%到3000%收益的日子
+get 1,000 to 3,000 returns on zero DTE options.
+
+225
+00:10:37,900 --> 00:10:38,862
+继续往下看，
+Moving right along,
+
+226
+00:10:38,862 --> 00:10:41,106
+我们现在看的是疫情前的数据，
+we have, this is now before the
+
+227
+00:10:41,106 --> 00:10:43,030
+也就是2019年，相对
+pandemic, so 2019, a little bit more
+
+228
+00:10:43,030 --> 00:10:46,557
+所谓的“正常”市场，有62%的时间
+of a quote unquote, you know, normal market, 62% of the time.
+
+229
+00:10:48,100 --> 00:10:52,900
+然后是自2007年以来的数据
+And then we have this is since 2007.
+
+230
+00:10:52,900 --> 00:10:58,300
+包括金融危机、疫情以及去年
+So we have the financial crash in here as well as the pandemic we have last year.
+
+231
+00:10:58,400 --> 00:11:00,103
+所有这些情况，我们仍然看到
+Everything in there we still see is we'll
+
+232
+00:11:00,103 --> 00:11:01,380
+可以四舍五入到60%
+just round this up to 60 percent
+
+233
+00:11:01,380 --> 00:11:04,786
+的时间。其中部分日子净变动为零
+of the time. Some of these days in which it had a net change of zero.
+
+234
+00:11:05,000 --> 00:11:10,000
+所以，在日线上，VIX指数有6成概率收盘下跌
+So, boom, six out of 10 times on a daily time frame, the VIX is going to close red.
+
+235
+00:11:10,700 --> 00:11:14,400
+我认为这非常有趣，值得了解
+I think that's pretty fascinating, pretty interesting something to know.
+
+236
+00:11:14,400 --> 00:11:16,100
+我们先重置一下这个数据
+So let's just reset this for a second here.
+
+237
+00:11:16,300 --> 00:11:17,436
+然后
+And then let's just switch
+
+238
+00:11:17,436 --> 00:11:18,572
+切换到周线
+it over to the weekly
+
+239
+00:11:18,572 --> 00:11:21,299
+再生成一下数据
+and then generate this. And then we'll stop with the VIX analysis.
+
+240
+00:11:21,400 --> 00:11:23,500
+现在看，红色K线有多少
+And now we have, look how much red that is.
+
+241
+00:11:23,500 --> 00:11:27,200
+过去一年，几乎10周里有8周的周线K线
+So almost eight out of 10 weekly candles over the past year.
+
+242
+00:11:27,200 --> 00:11:32,000
+这基本覆盖了2022年的大部分时间
+And again, this is in covering most of 2022.
+
+243
+00:11:32,900 --> 00:11:34,600
+而2022年是个波动极大的一年
+Which was a very volatile year.
+
+244
+00:11:34,600 --> 00:11:38,700
+我们从年初开始看，因为市场年初时回调得很剧烈
+Let's take the start because the market did pull back pretty aggressively at the start of the year.
+
+245
+00:11:39,000 --> 00:11:43,500
+为了对VIX指数公平起见，现在包含了1月和2月
+So just to be in all fairness to the VIX, now we're including that January and February.
+
+246
+00:11:43,500 --> 00:11:44,500
+这些是周线K线
+These are the weekly candles.
+
+247
+00:11:44,500 --> 00:11:46,416
+看，几乎8周里
+And look at that, almost eight
+
+248
+00:11:46,416 --> 00:11:48,651
+有10周的VIX指数
+out of 10 weeks for the VIX during
+
+249
+00:11:48,651 --> 00:11:54,080
+在我们所处的熊市中，一次次被压制，波动率崩盘接连不断
+the bear market season that we've been in has been crushed, volatile crush one after the next.
+
+250
+00:11:54,800 --> 00:11:57,300
+我们再来看看标普500指数ETF（SPY）
+And let's just take a look at the SPY.
+
+251
+00:11:57,400 --> 00:12:01,200
+这是自2007年以来的SPY走势
+And this is the SPY during since 2007.
+
+252
+00:12:01,600 --> 00:12:05,200
+这里就是2008年的金融危机
+So this right here is the financial crash of 2008.
+
+253
+00:12:05,200 --> 00:12:06,871
+如果我悬停在这些点上，
+If I hover over these, so
+
+254
+00:12:06,871 --> 00:12:09,099
+可以看到11月和3月，
+we can see that November and March, these
+
+255
+00:12:09,099 --> 00:12:10,770
+这些是标普500指数期权（SPX）
+are some of the biggest returns
+
+256
+00:12:10,770 --> 00:12:12,365
+有史以来最大的几次涨幅
+the SPX has had, at least
+
+257
+00:12:12,365 --> 00:12:13,960
+至少在标普500的现代历史中
+of the modern lifetime of the
+
+258
+00:12:13,960 --> 00:12:16,353
+也就是过去20年左右
+SP500, you know, within the past 20 years or so.
+
+259
+00:12:17,200 --> 00:12:20,400
+然后这里就是2020年的崩盘
+And then we have this right here would be the crash of 2020.
+
+260
+00:12:21,200 --> 00:12:22,141
+在这个图表中，这就是
+On this chart so that's
+
+261
+00:12:22,141 --> 00:12:23,458
+这些点所覆盖的内容，如果我
+what these are covering so if i
+
+262
+00:12:23,458 --> 00:12:24,587
+悬停在这里，可以看到2020年
+hover over this we can see 2020
+
+263
+00:12:24,587 --> 00:12:25,716
+这些是一些较早的日期
+and these are some of the
+
+264
+00:12:25,716 --> 00:12:26,468
+所以
+older dates here so
+
+265
+00:12:26,468 --> 00:12:27,597
+我们可以开始，我们可以获取
+we can start we can get
+
+266
+00:12:27,597 --> 00:12:30,608
+很多信息，只需扫一眼这个图，可以看到SPY
+a lot of information just by glancing at this and we can see that the spy
+
+267
+00:12:31,500 --> 00:12:36,500
+收盘时绿色K线比红色K线多
+the closes green more times than it closes uh red and
+
+268
+00:12:37,000 --> 00:12:38,411
+我们可以在这里看到
+we can see right here as
+
+269
+00:12:38,411 --> 00:12:40,293
+当我们看这个图时，周二
+we take a look at this that tuesdays
+
+270
+00:12:40,293 --> 00:12:41,704
+至少，我知道如果我们
+at least you know if we
+
+271
+00:12:41,704 --> 00:12:43,115
+分别查看每一年
+take a look at each year
+
+272
+00:12:43,115 --> 00:12:44,526
+单独来看 我知道周二通常
+in isolation i know tuesdays used
+
+273
+00:12:44,526 --> 00:12:45,937
+对标普500指数ETF（SPY）来说是表现较差的交易日
+to be pretty bad days for
+
+274
+00:12:45,937 --> 00:12:48,995
+因为通常很多金融新闻会在这一天
+the spy because that's usually when a lot of financial news would uh
+
+275
+00:12:49,500 --> 00:12:50,912
+很多宏观时段
+that's when a lot of macro
+
+276
+00:12:50,912 --> 00:12:52,324
+的新闻会在这一天发布 我记得
+news would come out i think
+
+277
+00:12:52,324 --> 00:12:56,798
+美联储过去通常会在周二发言 某些报告也会影响这些交易日
+the feds usually used to talk on tuesdays and certain reports and stuff used to affect those days there
+
+278
+00:12:57,700 --> 00:13:00,100
+所以图表上才会出现这些红色峰值
+So that's why we have these, the red spike there.
+
+279
+00:13:00,100 --> 00:13:01,100
+这只是我根据记忆说的
+And again, that's just from memory.
+
+280
+00:13:01,900 --> 00:13:04,038
+我想指出这一点是因为
+And so I wanted to point that
+
+281
+00:13:04,038 --> 00:13:06,176
+如果你知道这一点
+out because if you know this, and
+
+282
+00:13:06,176 --> 00:13:08,009
+这里只是数据
+this is just data here, and
+
+283
+00:13:08,009 --> 00:13:12,897
+我们可以查看图表 就会看到这些信息
+we can take a look at this and we can see on the chart this information.
+
+284
+00:13:13,400 --> 00:13:15,660
+如果我们看期权 会发现
+If we take a look at options, we
+
+285
+00:13:15,660 --> 00:13:17,638
+在关键事件前后
+can see around key events, there are
+
+286
+00:13:17,638 --> 00:13:19,898
+隐含波动率会更高的交易日
+days in which the implied volatility is higher.
+
+287
+00:13:19,900 --> 00:13:22,500
+下周 就是14号
+So next week, this is the 14th right here.
+
+288
+00:13:22,600 --> 00:13:25,400
+这天会发布CPI（消费者物价指数）报告
+This would be the day that the CPI report comes out.
+
+289
+00:13:25,400 --> 00:13:28,300
+可以看到 这就是隐含波动率高的原因
+And we can see that's why this implied volatility is higher.
+
+290
+00:13:28,700 --> 00:13:31,400
+14号 这里出现了一个峰值
+So the 14th, we have. of this spike right here.
+
+291
+00:13:31,800 --> 00:13:34,474
+我忘了下次美联储公开市场委员会（FOMC）报告什么时候发布
+I forget when the next FOMC report is out,
+
+292
+00:13:34,474 --> 00:13:37,148
+但如果让我猜 我会说
+but if I had to guess, I would say
+
+293
+00:13:37,148 --> 00:13:42,199
+应该是在其中一天 因为可以看到隐含波动率也很高
+it's one of these days here because we can see the implied volatility is pretty high also.
+
+294
+00:13:42,400 --> 00:13:44,784
+所以 当你看到短期
+So whenever you see pretty high implied
+
+295
+00:13:44,784 --> 00:13:47,168
+30天到期剩余天数内
+volatility in a short less than 30 DTE
+
+296
+00:13:47,168 --> 00:13:52,958
+隐含波动率特别高时 通常是因为当时有宏观事件预定发生
+timeframe, it's probably because there's some sort of macro event scheduled to take place around that time.
+
+297
+00:13:53,700 --> 00:13:56,052
+现在 知道这一点的人
+Now, people that know this, that are
+
+298
+00:13:56,052 --> 00:13:58,740
+更有经验 更老练 或者只是性格不同
+more experienced, more seasoned, or just different personality,
+
+299
+00:13:58,740 --> 00:14:01,428
+我们会说 因为你可能交易期权
+we would say, because you can be trading
+
+300
+00:14:01,428 --> 00:14:05,125
+10年 20年 但仍然选择交易买入看涨期权
+options for 10, 20 years and still choose to trade long call options.
+
+301
+00:14:05,800 --> 00:14:07,200
+那我们直接切入正题。
+So let's just jump straight into that.
+
+302
+00:14:07,300 --> 00:14:12,400
+这是一个做多看跌期权（put）。也就是说，你买入了一个看跌期权。
+So this is a long put option. And this is just meaning you just bought a put option.
+
+303
+00:14:12,400 --> 00:14:17,000
+你认为标普500指数期权（SPX）会下跌，想要买入一个44天到期剩余天数的看跌期权。
+You think the SPX is going to go down. You want to buy a put option 44 DTE.
+
+304
+00:14:17,500 --> 00:14:19,466
+当你买入期权时，你属于
+When you buy an option, you are
+
+305
+00:14:19,466 --> 00:14:23,399
+做多Vega值。这意味着你会从隐含波动率的上升中获益。
+what's called long vega. That means you benefit from an increase in implied volatility.
+
+306
+00:14:23,600 --> 00:14:25,700
+但我们刚刚看了VIX指数。
+However, we just took a look at the VIX.
+
+307
+00:14:25,800 --> 00:14:26,500
+我们知道，
+We know.
+
+308
+00:14:27,500 --> 00:14:32,400
+在周线时间框架下，我之前打开的是哪个标签页？
+On a weekly time frame, which tab did I have that open here?
+
+309
+00:14:32,600 --> 00:14:37,700
+日线、日线、日线、日线。我是不是关了周线？好，这是我们一开始打开的第一个。
+Daily, daily, daily, daily. Did I close the weekly? Okay, it was the first one we started.
+
+310
+00:14:38,000 --> 00:14:39,716
+好的，在周线时间框架下，
+All right, so eight out of
+
+311
+00:14:39,716 --> 00:14:42,004
+至少有8/10次，
+10 times on a weekly time frame, at least
+
+312
+00:14:42,004 --> 00:14:44,006
+这个数据是相对的，
+this is relative, this can change over
+
+313
+00:14:44,006 --> 00:14:49,726
+显然会随时间变化，但至少在熊市期间，VIX指数有8/10周收盘下跌。
+time, obviously, but at least during a bear market, we have eight out of 10 weeks, the VIX has closed red.
+
+314
+00:14:51,500 --> 00:14:52,200
+我再重复一遍。
+I'll repeat that again.
+
+315
+00:14:53,500 --> 00:14:59,900
+四舍五入的话，过去的60周、61周里，
+Rounding this up, 8 out of 10 times in the past, how many weeks has this been?
+
+316
+00:15:00,200 --> 00:15:05,500
+VIX指数在周线时间框架下有8/10次收盘下跌。
+60 weeks, 61 weeks, the VIX has closed red on a weekly time frame.
+
+317
+00:15:07,400 --> 00:15:09,937
+如果你买入看跌期权，
+If you buy a put option and
+
+318
+00:15:09,937 --> 00:15:11,749
+或者你买入看涨期权，假设你只是做多看涨期权，
+you struggle or you buy
+
+319
+00:15:11,749 --> 00:15:16,099
+看涨期权（call） 我们假设你只是持有买入看涨期权
+a call option, let's just say you're just in a long call
+
+320
+00:15:17,300 --> 00:15:24,800
+你是做多Vega值，也就是说你通常希望出现大幅波动，无论上涨还是下跌，你希望隐含波动率上升。
+and you are long vega, meaning you generally want a big move, up or down, you want implied volatility increase.
+
+321
+00:15:24,800 --> 00:15:26,469
+显然，如果你买入看涨期权，
+Obviously, if you're buying a call, you
+
+322
+00:15:26,469 --> 00:15:28,376
+你希望市场上涨，
+want the market to go up and you
+
+323
+00:15:28,376 --> 00:15:29,568
+而且希望大幅上涨，
+want it to go up
+
+324
+00:15:29,568 --> 00:15:34,337
+因为如果你买入看涨期权，我们把这个图拉下来，这是你的盈亏曲线。
+big because if you buy that call option and let's pull this down here, this is your P&L curve.
+
+325
+00:15:34,100 --> 00:15:34,900
+这是风险收益曲线。
+This is a risk profile.
+
+326
+00:15:35,000 --> 00:15:35,800
+这是期权策略。
+This is option strat.
+
+327
+00:15:35,800 --> 00:15:37,648
+我认为这是一个很棒的网站，
+I think this is an amazing site
+
+328
+00:15:37,648 --> 00:15:38,968
+在分析你的持仓时使用，
+to use whenever you're analyzing
+
+329
+00:15:38,968 --> 00:15:42,400
+特别是在你不熟悉ThinkorSwim（交易平台）的风险收益曲线时。
+your positions, your options positions, if you're not familiar with thinkorswim's risk profile.
+
+330
+00:15:42,800 --> 00:15:44,400
+好的，当我增加供给时
+All right, so as I increase the supply
+
+331
+00:15:44,400 --> 00:15:45,200
+把隐含波动率拉满
+volatility, just jack this
+
+332
+00:15:45,200 --> 00:15:47,400
+但实际上这种情况几乎不可能发生
+all the way up, this would never really happen like this.
+
+333
+00:15:47,400 --> 00:15:51,100
+你会发现，仅仅因为隐含波动率上升，就能赚更多钱
+You can see there's so much more money to be made just because your implied volatility has gone up.
+
+334
+00:15:51,400 --> 00:15:55,700
+而如果隐含波动率下降，你会亏很多钱，因为你是多头Vega值
+Versus if implied volatility shrinks, you're down a lot of money, that's because you're long vega.
+
+335
+00:15:55,700 --> 00:16:01,100
+也就是说，你做多隐含波动率，意味着你希望隐含波动率上涨
+That means you are long implied volatility, meaning you want implied volatility to go up.
+
+336
+00:16:01,200 --> 00:16:06,000
+但我们有数据，我们知道隐含波动率更可能下降
+However, we have the data, we know implied volatility is more likely to go down.
+
+337
+00:16:06,200 --> 00:16:11,200
+如果我们换一个多头Vega值的策略，比如日历价差策略
+If we jump to another long vega type of strategy, it is a calendar spread.
+
+338
+00:16:11,500 --> 00:16:13,000
+日历价差策略同样是多头
+Calendar spread is also long
+
+339
+00:16:13,000 --> 00:16:15,100
+Vega值，不过这个解释有点过于简化
+vega, but you know, things are, this
+
+340
+00:16:15,100 --> 00:16:17,500
+因为实际上你可以在预期隐含波动率下降时
+is an oversimplification for how this works because
+
+341
+00:16:17,500 --> 00:16:22,300
+使用日历价差策略
+you can actually use the calendar spread when you think implied volatility is going to decrease.
+
+342
+00:16:22,600 --> 00:16:25,900
+这就是在利用波动率偏斜的优势
+That's whenever you're taking advantage of something called the volatility skew.
+
+343
+00:16:27,300 --> 00:16:34,000
+假设你做空头不够，这里的隐含波动率是26%，而那里的隐含波动率是19%
+So let's just say you were too short. You see this implies Volatility is 26%, whereas this implied volatility is 19%.
+
+344
+00:16:34,300 --> 00:16:38,600
+这说明这里的隐含波动率远高于平均水平
+It means this is pretty jacked up more than the average.
+
+345
+00:16:38,700 --> 00:16:40,950
+假设我们回到下面这个区域
+So let's just say we were to come
+
+346
+00:16:40,950 --> 00:16:42,637
+正常的隐含波动率
+down here and the normal implied
+
+347
+00:16:42,637 --> 00:16:47,137
+假设标普500指数期权（SPX）在过去52周的平均隐含波动率是18.14%之类的
+volatility, let's just say it's 18.14% for the SPX over the past 52 weeks or something like that.
+
+348
+00:16:47,700 --> 00:16:50,800
+我不记得ThinkorSwim（交易平台）是怎么计算的
+I don't remember how this is calculated down here on SPX.
+
+349
+00:16:51,600 --> 00:16:52,100
+ThinkorSwim（交易平台）
+TOS.
+
+350
+00:16:52,800 --> 00:16:54,727
+但回到这里，我们可以说
+But as we come back up here, we
+
+351
+00:16:54,727 --> 00:16:58,099
+当天的隐含波动率远高于正常水平
+can say that this day is really, it's way above what it normally is.
+
+352
+00:16:58,200 --> 00:17:00,000
+所以你可以把这个用作近月合约
+So you're going to use this as your front month.
+
+353
+00:17:00,000 --> 00:17:01,725
+做空这个到期日的合约
+You're going to short that expiration
+
+354
+00:17:01,725 --> 00:17:03,450
+然后买入一个
+and you're going to buy a
+
+355
+00:17:03,450 --> 00:17:05,175
+到期剩余天数更长且隐含波动率更低的期权
+longer DTE option that has less
+
+356
+00:17:05,175 --> 00:17:09,200
+从而利用近月合约隐含波动率可能下降的机会
+implied volatility, thus taking advantage of a potential IV drop in the front month.
+
+357
+00:17:09,600 --> 00:17:11,500
+如果你不懂我刚才说的，不用担心
+If you don't know what I just said, don't worry about it.
+
+358
+00:17:11,500 --> 00:17:13,930
+我只是给大家展示另一种
+I'm just showing you guys a different type
+
+359
+00:17:13,930 --> 00:17:15,753
+可以利用隐含波动率的价差策略
+of spreads that you can take
+
+360
+00:17:15,753 --> 00:17:19,399
+即使它是多头Vega值的交易
+advantage of implied volatility, even if it is a long vega trade.
+
+361
+00:17:19,800 --> 00:17:26,800
+这意味着如果我们做同样的操作，先把这条曲线缩小一下。
+That means if we were to do the same thing, let's just shrink this curve here.
+
+362
+00:17:27,400 --> 00:17:29,500
+对于还不熟悉的朋友，
+And this, just for those of you that
+
+363
+00:17:29,500 --> 00:17:31,075
+这里展示的是
+are new to this, this is
+
+364
+00:17:31,075 --> 00:17:34,225
+到期时的理论盈亏（P&L）情况。
+just showing the P&L or the theoretical P&L at expiration.
+
+365
+00:17:34,200 --> 00:17:42,600
+当我向下调整时，这显示的是特定日期的理论盈亏。
+And as I pull this down, this is showing the theoretical P&L at a given date.
+
+366
+00:17:43,000 --> 00:17:48,100
+这也被称为T+0线，我们把T大写。
+It's also referred to as the T plus, let's put that in caps, T plus zero line.
+
+367
+00:17:48,600 --> 00:17:50,300
+这就是我们现在看到的。
+And that's what we're looking at right here.
+
+368
+00:17:50,600 --> 00:17:52,634
+如果我提高隐含波动率，
+If I were to increase implied
+
+369
+00:17:52,634 --> 00:17:54,668
+你会看到它像蘑菇一样膨胀。
+volatility, you see how it mushrooms.
+
+370
+00:17:54,668 --> 00:17:58,737
+它会完美绽放，盈亏曲线变得更大。
+It just blossoms beautifully and you have a larger P&L curve.
+
+371
+00:18:00,500 --> 00:18:02,600
+盈利区间也更宽，原理相同。
+larger profitability zone, same deal.
+
+372
+00:18:02,600 --> 00:18:05,700
+我们把视图拉远一点，把隐含波动率直接调到100。
+Let's just zoom this out a little bit and jack this all the way up to 100.
+
+373
+00:18:05,700 --> 00:18:07,357
+你会发现能赚的钱更多，
+You can see so much more
+
+374
+00:18:07,357 --> 00:18:08,461
+理论上是这样。
+money can be made.
+
+375
+00:18:08,461 --> 00:18:11,499
+但实际上不会真这样发生。
+Again, theoretical. It's not really going to work out that way.
+
+376
+00:18:11,700 --> 00:18:13,000
+然后我们把它调回去。
+And then we just brought this back down.
+
+377
+00:18:13,300 --> 00:18:16,700
+而如果隐含波动率下降，你几乎会亏掉所有的钱。
+Versus if implied volatility was to decrease, you'd pretty much lose all of your money.
+
+378
+00:18:16,700 --> 00:18:21,400
+这是因为我们做多Vega值，而日历价差策略不希望出现这种情况。
+That's because we're long vega here and we don't want that to happen with a calendar.
+
+379
+00:18:21,900 --> 00:18:27,700
+接下来是短Vega（做空波动率）策略，我这里举几个例子。
+The spreads now that are known as short vega trades, I'm just showing a couple examples here.
+
+380
+00:18:27,800 --> 00:18:29,800
+这就是铁蝶式策略。
+This is what's called an iron butterfly.
+
+381
+00:18:30,500 --> 00:18:32,500
+这种组合策略，
+And this type of spread.
+
+382
+00:18:33,400 --> 00:18:35,210
+是通过卖出两个平值期权，
+Is constructed by selling two at the
+
+383
+00:18:35,210 --> 00:18:37,020
+一个看涨期权（call）和一个看跌期权（put），
+money options, a call and a put,
+
+384
+00:18:37,020 --> 00:18:40,899
+然后买入一个虚值看跌期权和一个虚值看涨期权来构建的。
+and then buying an out the money put and buying an out the money call.
+
+385
+00:18:41,200 --> 00:18:42,727
+你可以把这些虚值期权
+You can say that these are
+
+386
+00:18:42,727 --> 00:18:44,254
+看作对冲工具，或者保护性头寸，
+your hedges, these are your protections,
+
+387
+00:18:44,254 --> 00:18:46,799
+总之，这里不逐一解释每种策略。
+whatever, X, Y, Z, not explaining every single spread here.
+
+388
+00:18:46,800 --> 00:18:48,637
+我只是想给大家介绍并展示
+I'm just trying to introduce and show
+
+389
+00:18:48,637 --> 00:18:49,949
+一种不同的期权交易理念，
+you guys a different concept
+
+390
+00:18:49,949 --> 00:18:53,099
+即如何做空波动率（短Vega）的策略。
+of trading options where you're short vega and how to do that.
+
+391
+00:18:53,100 --> 00:18:55,900
+你需要先查一下、研究一下什么是铁蝶式策略
+You would look up, you would want to research what an iron butterfly is.
+
+392
+00:18:56,300 --> 00:18:58,233
+现在这种情况下，如果我们
+This case now, if we were
+
+393
+00:18:58,233 --> 00:19:00,166
+把它拉到这里，我们
+to pull this down here, we
+
+394
+00:19:00,166 --> 00:19:01,777
+可以看到，如果
+can see if we were
+
+395
+00:19:01,777 --> 00:19:04,999
+隐含波动率下降，这笔交易实际上会受益
+to decrease the implied volatility, this trade is actually benefiting.
+
+396
+00:19:05,100 --> 00:19:08,000
+它实际上会从隐含波动率的下跌中获利
+It's actually going to profit from a drop in implied volatility.
+
+397
+00:19:08,300 --> 00:19:14,300
+但如果隐含波动率上升，它就会损失部分潜在收益
+However, if implied volatility increases, it's going to be losing some of its profit potential.
+
+398
+00:19:14,900 --> 00:19:17,218
+不过，对于到期日时的价差策略
+However, by expiration with a spread
+
+399
+00:19:17,218 --> 00:19:19,536
+像这样的，其实无所谓
+like this, it doesn't really matter
+
+400
+00:19:19,536 --> 00:19:23,399
+隐含波动率是否飙升，因为到期时
+if implied volatility goes through the roof because at expiration,
+
+401
+00:19:24,300 --> 00:19:30,000
+这就是当市场价格收盘正好处于
+This is the this will be the realized gains if the price of the market was to close right at
+
+402
+00:19:30,000 --> 00:19:31,900
+你的行权价上，隐含波动率真的不重要
+Your strike price doesn't really matter.
+
+403
+00:19:33,400 --> 00:19:34,103
+隐含波动率会怎样？
+What happens with
+
+404
+00:19:34,103 --> 00:19:35,510
+隐含波动率只是
+implied volatility. Implied volatility is just
+
+405
+00:19:35,510 --> 00:19:39,498
+你持仓期间，T+0线会是什么样子
+as you're actually holding the trade, what your T plus zero line is going to look like.
+
+406
+00:19:39,800 --> 00:19:41,709
+现在，称霸
+And now the king
+
+407
+00:19:41,709 --> 00:19:44,572
+或是统领，被公认为
+or the queen, the leader known
+
+408
+00:19:44,572 --> 00:19:46,958
+我们称之为
+as the, we'll call it
+
+409
+00:19:46,958 --> 00:19:50,298
+所有收益型策略之父
+the daddy of all income based strategies.
+
+410
+00:19:50,400 --> 00:19:51,500
+这些策略很稳定
+These are consistent.
+
+411
+00:19:51,500 --> 00:19:56,400
+这些策略被称为‘稳定’的收益策略，或者说你在寻找收益
+These are known to be quote unquote consistent, or, you know, you're looking for income.
+
+412
+00:19:56,400 --> 00:19:57,900
+你想要非方向性
+You want to be non-directional.
+
+413
+00:19:57,900 --> 00:20:01,500
+不想预测市场方向的，就是铁鹰策略
+You want to pick which direction the market's going is the iron condor.
+
+414
+00:20:01,900 --> 00:20:09,800
+而铁鹰策略也是短Vega（做空波动率）交易，意味着它会从隐含波动率下降中受益
+And the iron condor is also a short vega trade. That means it benefits from a decrease in implied volatility.
+
+415
+00:20:09,800 --> 00:20:11,420
+所以如果我们快进
+So if we were to jump
+
+416
+00:20:11,420 --> 00:20:13,040
+说在接下来的
+ahead and say in the next
+
+417
+00:20:13,040 --> 00:20:14,390
+14天内，如果标普500指数期权（SPX）
+14 days, if the SPX was
+
+418
+00:20:14,390 --> 00:20:16,010
+保持在某个区间内
+to stay within a certain vicinity,
+
+419
+00:20:16,010 --> 00:20:17,630
+如果隐含波动率下降
+if implied volatility was to decrease,
+
+420
+00:20:17,630 --> 00:20:20,330
+我们可以看到这个价差能赚多少
+we can see how much profit this spread can make
+
+421
+00:20:21,100 --> 00:20:22,738
+而如果我们重置这个，
+versus if we reset this and
+
+422
+00:20:22,738 --> 00:20:24,376
+假设隐含波动率
+we say that implied volatility was
+
+423
+00:20:24,376 --> 00:20:28,199
+上升，你会看到这个价差会亏损非常严重。
+to increase, we can see that this spread would be hurting really, really badly.
+
+424
+00:20:28,700 --> 00:20:30,300
+好，我们重置一下。
+Right. So let's just reset that.
+
+425
+00:20:30,500 --> 00:20:32,188
+到期时也是一样。
+And the same thing at expiration.
+
+426
+00:20:32,188 --> 00:20:33,876
+其实无所谓，只要价格
+It doesn't really matter. This will
+
+427
+00:20:33,876 --> 00:20:38,098
+保持在你设定的这些行权价范围内，这就是你的收益。
+be your profit as long as it stays within these strikes here that you set.
+
+428
+00:20:38,500 --> 00:20:41,247
+这就是我想介绍的，
+And that is the introduction or something that
+
+429
+00:20:41,247 --> 00:20:43,307
+或者说是
+I really wanted to introduce. The
+
+430
+00:20:43,307 --> 00:20:46,398
+短Vega（做空波动率）和长Vega（做多波动率）的概念。
+concept of being short vega versus being long vega.
+
+431
+00:20:46,800 --> 00:20:49,272
+大多数散户交易者，刚开始交易期权时，
+Most retail traders, when you first start trading
+
+432
+00:20:49,272 --> 00:20:53,599
+只学过买入看涨期权或买入看跌期权。
+options, you just learn to buy a call option or buy a put option.
+
+433
+00:20:54,000 --> 00:20:59,900
+而你面临的不仅是Delta风险，也就是说，如果你选择买入看涨期权（call），
+And what you have is not only a delta risk of delta risk, meaning if you choose a call,
+
+434
+00:21:00,200 --> 00:21:05,000
+即如果你选看涨期权，市场却下跌，你就会亏钱。
+and the market goes against you, which means the market goes back, you're going to lose some sort of money.
+
+435
+00:21:05,500 --> 00:21:08,300
+还有Theta风险，也就是时间衰减风险。
+You also have theta risk, which means you have risk of time decay.
+
+436
+00:21:08,300 --> 00:21:10,220
+另外，你还有一点
+And then you also have a little bit
+
+437
+00:21:10,220 --> 00:21:14,300
+Vega风险，因为如果隐含波动率下降，我们之前已经看到了，
+of vega risk, because if the implied volatility comes down, we took a look at that already.
+
+438
+00:21:14,300 --> 00:21:17,700
+仅仅因为隐含波动率下降，你也会亏钱。
+It means you will be losing money just because of implied volatility.
+
+439
+00:21:18,100 --> 00:21:19,500
+那我们从这个视频中学到了什么？
+And what did we learn from this video?
+
+440
+00:21:19,600 --> 00:21:25,800
+统计上，隐含波动率更可能下降，而不是上升。
+Implied volatility statistically is more likely to decrease versus increase.
+
+441
+00:21:25,900 --> 00:21:29,500
+所以如果你之前不知道，这就是我想让你了解的。
+So the intent was to expose you to this if you didn't already know this.
+
+442
+00:21:29,600 --> 00:21:32,104
+如果你在期权交易之路上还是新手，
+And if you're new in your options trading
+
+443
+00:21:32,104 --> 00:21:34,608
+请尽可能多研究
+journey, please research as much as you can
+
+444
+00:21:34,608 --> 00:21:36,799
+隐含波动率以及价差交易的相关知识。
+about implied volatility and also trading spreads.
+
+445
+00:21:37,000 --> 00:21:42,000
+铁蝶式策略是很多交易者的最爱。
+The iron butterfly is a favorite amongst a lot of traders.
+
+446
+00:21:42,200 --> 00:21:47,900
+你可以交易0天到期剩余天数，也可以3天，甚至44天到期剩余天数。
+You can trade them zero DTE. You can trade them three DTE. You can go all the way out 44 DTEs.
+
+447
+00:21:48,100 --> 00:21:49,475
+我会给大家展示一些价差策略，
+I'll show you guys some spreads
+
+448
+00:21:49,475 --> 00:21:50,850
+如果我有时间的话，
+if I get around to it
+
+449
+00:21:50,850 --> 00:21:53,600
+周末会分享我目前持有的头寸。
+over the weekend for a current position in which I had running.
+
+450
+00:21:53,900 --> 00:21:55,700
+我已经持有大约15天了。
+I've been holding it for about 15 days or so.
+
+451
+00:21:55,700 --> 00:21:58,900
+我已经获利了结了一部分，这笔交易表现非常好。
+I already took some profits and it's just been going really well.
+
+452
+00:21:58,900 --> 00:22:01,700
+这是一个我在4000点附近开仓的铁蝶式策略。
+It's an iron butterfly that I had to open around the 4,000 level.
+
+453
+00:22:01,900 --> 00:22:08,400
+最初开仓时是51天到期剩余天数，保证金收益率达到了18%到19%。
+It was a 51 DTE when I had initially opened it and it's hitting around 18, 19% return on margin use.
+
+454
+00:22:08,500 --> 00:22:11,106
+我喜欢用这种方式交易这类头寸，
+And that's the way I like to trade these types
+
+455
+00:22:11,106 --> 00:22:12,669
+因为它们的获利空间很大，
+of positions because they have such
+
+456
+00:22:12,669 --> 00:22:17,099
+而且通常只需要持有两到三周。
+a wide room for profit and you're generally only in them for about two to three weeks.
+
+457
+00:22:17,100 --> 00:22:17,767
+如果你交易的是51天到期剩余天数，
+If you're trading 51
+
+458
+00:22:17,767 --> 00:22:19,102
+如果是11天到期剩余天数的品种，
+DTE, if you're trading something that's
+
+459
+00:22:19,102 --> 00:22:20,214
+可能只需要持有5天，
+like an 11 DTE, you might
+
+460
+00:22:20,214 --> 00:22:23,552
+或者直接交易0天到期剩余天数的合约。
+only be in it for five days, or you can just trade a zero DTE.
+
+461
+00:22:24,100 --> 00:22:26,300
+有些人会在市场开盘后立即执行这种策略。
+There are some guys that run this as soon as the market opens.
+
+462
+00:22:26,600 --> 00:22:28,400
+我可能一周内会尝试一次。
+I might do that one day out of the week or so.
+
+463
+00:22:28,400 --> 00:22:29,440
+比如，
+So say for example,
+
+464
+00:22:29,440 --> 00:22:31,000
+明天市场开盘后，
+the market opens to tomorrow and
+
+465
+00:22:31,000 --> 00:22:32,560
+我们可以直接执行
+we just want to run and
+
+466
+00:22:32,560 --> 00:22:36,200
+平值价差策略，因为我们认为市场不会大幅波动。
+at the money spread because we think the market is not going to move.
+
+467
+00:22:36,500 --> 00:22:39,700
+这对今天这种行情来说是完美的交易。
+That would have been a perfect trade for something like today.
+
+468
+00:22:40,200 --> 00:22:46,800
+如果我们放大看这里，会发现市场在这里几乎形成了十字星。
+If we zoom in right here and we see the market essentially formed almost a doji right here.
+
+469
+00:22:46,900 --> 00:22:49,200
+这是一种混乱、难看的价格走势。
+This is just choppy, disgusting price action.
+
+470
+00:22:49,400 --> 00:22:50,712
+这种行情对交易这类策略的人来说反而是好事，
+This happens to be great for
+
+471
+00:22:50,712 --> 00:22:52,024
+因为如果我们看一下，
+people that trade these types of
+
+472
+00:22:52,024 --> 00:22:53,336
+会发现市场今天是在这里开盘的。
+trades because if we take a
+
+473
+00:22:53,336 --> 00:22:56,398
+在这个价位附近，这种价差策略的报价
+look at this, we can see that the market would have opened here today.
+
+474
+00:22:58,000 --> 00:22:59,360
+大概是这样的。
+Around this price, this type
+
+475
+00:22:59,360 --> 00:23:01,264
+这种价差策略当时的价格
+of spread would have been going for
+
+476
+00:23:01,264 --> 00:23:02,352
+大约是29美元，
+around here. So around 29
+
+477
+00:23:02,352 --> 00:23:04,256
+现在是26美元。
+bucks and now it's going for 26 bucks.
+
+478
+00:23:04,900 --> 00:23:06,200
+这个逻辑需要好好理解一下。
+So that's something to wrap your head around.
+
+479
+00:23:06,200 --> 00:23:08,800
+你其实是在卖出某个东西，然后以更低的价格回购。
+You're actually selling something and then you're buying it back cheaper.
+
+480
+00:23:09,100 --> 00:23:10,119
+这种思路
+That concept is something that
+
+481
+00:23:10,119 --> 00:23:11,342
+让很多人望而却步
+keeps people away from trading these
+
+482
+00:23:11,342 --> 00:23:12,361
+因为这是一种信用交易
+types of things because it's
+
+483
+00:23:12,361 --> 00:23:14,399
+信用交易会让人紧张
+a credit. And then that kind of makes you nervous.
+
+484
+00:23:14,400 --> 00:23:18,100
+你可能不理解什么是信用，但请花时间真正理解并学习
+You don't understand what a credit is, but please take the time to really understand this and learn.
+
+485
+00:23:18,500 --> 00:23:20,140
+因为你在用统计数据
+Because you're putting the statistics
+
+486
+00:23:20,140 --> 00:23:22,436
+为自己背书，并从
+at your back and you're capitalizing off
+
+487
+00:23:22,436 --> 00:23:24,404
+那些真正提高胜率的
+of something that actually tilts odds
+
+488
+00:23:24,404 --> 00:23:26,700
+东西中获利
+in your favor a little bit more.
+
+489
+00:23:26,800 --> 00:23:29,300
+刚开始学习时，这确实不容易
+Now, this is not easy to learn when you first start.
+
+490
+00:23:29,600 --> 00:23:30,100
+确实如此
+It's not.
+
+491
+00:23:30,200 --> 00:23:34,200
+我不想给你这种印象，认为这些是‘放着不管’的交易
+I don't want to paint this picture or perception that these are set it and forget it type of trades.
+
+492
+00:23:34,200 --> 00:23:35,800
+你仍然需要监控
+You still need to monitor them.
+
+493
+00:23:35,800 --> 00:23:41,000
+仍然需要清楚自己在做什么，因为没错，隐含波动率确实会均值回归
+You still need to be aware of what you're doing because, yes, implied volatility does revert to the mean.
+
+494
+00:23:41,100 --> 00:23:45,100
+没错，数据显示10次里有7次会周线收阴
+Yes, you know, seven out of 10 times it's going to close red on the week.
+
+495
+00:23:45,400 --> 00:23:46,590
+这些统计数据
+All these types of statistics
+
+496
+00:23:46,590 --> 00:23:47,780
+都对你有利
+are in favor of you,
+
+497
+00:23:47,780 --> 00:23:50,399
+但并不意味着操作起来就容易
+but it doesn't mean it's going to be easy doing them.
+
+498
+00:23:50,700 --> 00:23:54,700
+好，大家，谢谢观看。如果喜欢这个视频，点赞并留言
+Okay, guys, thanks for watching. If you enjoyed this video, like it, leave a comment down below.
+
+499
+00:23:54,700 --> 00:23:58,800
+如果对量化交易应用（QTA）感兴趣，链接在简介中
+If you're interested in Quant Trading app, the links will be in the description.
+
+500
+00:23:58,800 --> 00:24:02,800
+这是我之前提到的铁蝶式策略的一个例子
+This is an example of the iron fly in which I was talking about a little bit earlier.
+
+501
+00:24:03,200 --> 00:24:07,600
+这是我刚开仓时的情况，当时是51天到期剩余天数
+This was it that as it was opened here, it was 51 DTE when I first opened it.
+
+502
+00:24:08,000 --> 00:24:09,666
+现在我们可以看到
+And then we can see
+
+503
+00:24:09,666 --> 00:24:11,999
+标普500指数期权（SPX）一直在4000点附近震荡
+that now the SPX has been just
+
+504
+00:24:11,999 --> 00:24:15,665
+尽管市场波动很大
+chopping around the 4,000 level, even though things have been pretty volatile.
+
+505
+00:24:16,700 --> 00:24:17,981
+昨天我录制视频时
+Yesterday it was up when I
+
+506
+00:24:17,981 --> 00:24:19,262
+我录这个视频时
+recorded, I'm recording this video, I
+
+507
+00:24:19,262 --> 00:24:21,398
+我记得，对，我是在周三录的这个视频
+believe, yeah, I'm recording this video on a Wednesday here.
+
+508
+00:24:21,400 --> 00:24:23,705
+所以昨天我分享这个时
+So yesterday when I shared this, it was
+
+509
+00:24:23,705 --> 00:24:25,722
+信用收益已经上涨了4%
+already up a 4% return on credits, which
+
+510
+00:24:25,722 --> 00:24:30,333
+相当于我用于这笔交易的资金保证金收益率约19%到20%
+was roughly about a 19 to 20% return on how much capital I was using for the trade.
+
+511
+00:24:31,200 --> 00:24:34,000
+而且是51天到期剩余天数，风险很小，还有几个未平仓。
+And it's 51 DT, so pretty harmless. Still had a couple left.
+
+512
+00:24:34,000 --> 00:24:37,300
+仅用其中两个策略就能带来约680美元收益。
+So this is about $680 return using just two of these.
+
+513
+00:24:37,300 --> 00:24:41,700
+当时我又获利了结了一个，之前视频里提到过。
+At the time, I took profit on one more, as I mentioned earlier in this video.
+
+514
+00:24:42,000 --> 00:24:46,400
+量化交易应用（QTA）的Discord链接在下方说明里，有公开区域。
+And the link to the Quant Trading App Discord is in the description down below. There is a public section.
+
+515
+00:24:46,500 --> 00:24:47,700
+我在那里不活跃。
+I'm not active in there.
+
+516
+00:24:47,700 --> 00:24:49,054
+还有一个黄金会员，
+There is a gold membership, and
+
+517
+00:24:49,054 --> 00:24:50,859
+可以访问我之前分享的
+then that gives you access to all the
+
+518
+00:24:50,859 --> 00:24:52,664
+所有数据，
+data in which you see that I was
+
+519
+00:24:52,664 --> 00:24:54,018
+以及
+sharing a little bit earlier, as
+
+520
+00:24:54,018 --> 00:24:55,598
+大量其他功能。
+well as a ton of other features.
+
+521
+00:24:56,100 --> 00:24:57,800
+谢谢观看，下期见。
+Thanks for watching, guys. Catch you in the next one.
+
+===== END AFTER_TRANSLATE =====

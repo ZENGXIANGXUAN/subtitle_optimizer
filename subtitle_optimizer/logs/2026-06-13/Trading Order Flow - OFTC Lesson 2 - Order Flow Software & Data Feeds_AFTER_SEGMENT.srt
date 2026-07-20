@@ -1,0 +1,1750 @@
+===== AFTER_SEGMENT (437 entries) =====
+1
+00:00:01,010 --> 00:00:05,890
+Order Flow Trading Course Lesson 2, Order Flow Software and Data Feeds
+
+2
+00:00:05,890 --> 00:00:11,150
+Presented by Michael Waltos, founder of OrderFlows.com
+
+3
+00:00:11,150 --> 00:00:13,390
+First, the disclaimer.
+
+4
+00:00:14,030 --> 00:00:18,303
+This presentation is for educational and informational purposes only and should not
+
+5
+00:00:18,303 --> 00:00:21,152
+be considered a solicitation to buy or sell
+
+6
+00:00:21,152 --> 00:00:25,069
+a futures contract or make any other type of investment decision.
+
+7
+00:00:25,250 --> 00:00:29,470
+Futures trading contains substantial risk, and it's not for every investor.
+
+8
+00:00:29,470 --> 00:00:33,210
+An investor could potentially lose all or more than the initial investment.
+
+9
+00:00:33,390 --> 00:00:37,730
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+10
+00:00:38,450 --> 00:00:44,410
+Only risk capital should be used for trading, and only those with sufficient risk capital should consider trading.
+
+11
+00:00:45,070 --> 00:00:48,150
+Past performance is not necessarily indicative of future results.
+
+12
+00:00:49,070 --> 00:00:51,470
+CFTC Rules 4.41
+
+13
+00:00:51,470 --> 00:00:55,710
+Hypothetical or simulated performance results have certain limitations.
+
+14
+00:00:55,710 --> 00:01:00,610
+Unlike an actual performance record, simulated results do not represent actual trading.
+
+15
+00:01:00,730 --> 00:01:05,015
+Also, since trades have not been executed, the results may have under
+
+16
+00:01:05,015 --> 00:01:07,872
+or overcompensated for the impact, if any, of
+
+17
+00:01:07,872 --> 00:01:10,729
+certain market factors, such as lack of liquidity.
+
+18
+00:01:11,030 --> 00:01:15,950
+Simulated trading programs, in general, are also subject to the fact that they are designed without the benefit of hindsight.
+
+19
+00:01:16,510 --> 00:01:20,041
+No representation is being made that any account will or is likely
+
+20
+00:01:20,041 --> 00:01:22,689
+to achieve profit or losses similar to those shown.
+
+21
+00:01:22,690 --> 00:01:28,460
+So, okay, so, let's get started. Software and data feeds.
+
+22
+00:01:28,860 --> 00:01:32,720
+Now, there are many different order flow software packages on the market.
+
+23
+00:01:33,100 --> 00:01:40,840
+They have a wide range of prices. They're priced anywhere from $100 to $4,500 and more even.
+
+24
+00:01:41,120 --> 00:01:49,040
+I think I've seen some, you know, starting at $4,500 and then, you know, going up to $10,000. It's quite crazy.
+
+25
+00:01:49,680 --> 00:01:51,120
+Now, there are many types of data feeds.
+
+26
+00:01:51,120 --> 00:01:54,240
+Level 1 is all that is needed with order flow footprint charts.
+
+27
+00:01:54,240 --> 00:01:57,760
+Level 2 is needed if you're looking at the depth of a market.
+
+28
+00:01:57,940 --> 00:01:59,611
+Say you have a dome and
+
+29
+00:01:59,611 --> 00:02:01,282
+you want to trade. You know,
+
+30
+00:02:01,282 --> 00:02:05,460
+looking at the depth of the market, you know, five levels deep, you'll need level 2.
+
+31
+00:02:08,610 --> 00:02:11,540
+For data feeds, I recommend Kinetic
+
+32
+00:02:11,540 --> 00:02:14,470
+or CQG. There are others out
+
+33
+00:02:14,470 --> 00:02:18,377
+there. I mean, you could use IQ feed,
+
+34
+00:02:18,377 --> 00:02:23,749
+continuum data, e-signal. There's really, you know, many different data feeds.
+
+35
+00:02:24,550 --> 00:02:32,430
+I use NinjaTrader. So, you know, Kinetic is probably, you know, works best with NinjaTrader.
+
+36
+00:02:32,430 --> 00:02:40,970
+Or if you're using, you know, some other softwares, you can connect it to different data feeds.
+
+37
+00:02:42,370 --> 00:02:47,687
+Just be noted that interactive brokers, their data feed for
+
+38
+00:02:47,687 --> 00:02:51,940
+their footprint charts is, you've got to be
+
+39
+00:02:51,940 --> 00:02:58,320
+careful. The way they are taking in the data and disseminating it
+
+40
+00:02:58,320 --> 00:03:04,168
+out, it's horrible for, as far as footprint charts, five-per-bar
+
+41
+00:03:04,168 --> 00:03:20,119
+charts. It's probably acceptable, but they're aggregating the data and taking it by, you know, certain times. So, it's not an actual flow of what's being traded in the markets.
+
+42
+00:03:22,140 --> 00:03:24,303
+So, you know, ideally,
+
+43
+00:03:24,303 --> 00:03:27,548
+you'll want to have, you know,
+
+44
+00:03:27,548 --> 00:03:34,579
+two data feeds. You know, I use Kinetic, then I also have Continuum.
+
+45
+00:03:35,080 --> 00:03:37,485
+Now, you know, don't solely rely
+
+46
+00:03:37,485 --> 00:03:40,692
+on the data feed provided from your futures
+
+47
+00:03:40,692 --> 00:03:43,899
+broker. However, you know, there's times where you
+
+48
+00:03:43,899 --> 00:03:52,719
+could lose your connection and, you know, you'll lose your data. So, you know, always try and have a backup data feed.
+
+49
+00:03:52,820 --> 00:03:54,290
+I mean, you know, I know
+
+50
+00:03:54,290 --> 00:03:55,760
+it's the cost involved, but, you
+
+51
+00:03:55,760 --> 00:04:00,418
+know, I mean, if trading is going to be your business, you should, you know, take that into account.
+
+52
+00:04:01,760 --> 00:04:04,014
+Now, there are different types of data feeds.
+
+53
+00:04:04,014 --> 00:04:07,959
+You know, there's a quote data feed and there's an order routing data feed.
+
+54
+00:04:07,960 --> 00:04:11,688
+And so, you know, if you're going to
+
+55
+00:04:11,688 --> 00:04:15,416
+be trading through, say, NinjaTrader, Kinetic is not
+
+56
+00:04:15,416 --> 00:04:18,212
+an order routing data feed. You'll,
+
+57
+00:04:18,212 --> 00:04:26,600
+you know, want to use something like, you know, their Continuum or the one that's provided for NinjaTrader.
+
+58
+00:04:27,780 --> 00:04:33,280
+So, you know, you just talk to your broker on what data feeds they have available for you.
+
+59
+00:04:33,280 --> 00:04:35,637
+So, you know, you don't necessarily
+
+60
+00:04:35,637 --> 00:04:38,780
+need to look at a footprint chart on
+
+61
+00:04:38,780 --> 00:04:41,137
+an order routing system. You can
+
+62
+00:04:41,137 --> 00:04:52,138
+run, you know, NinjaTrader. You know, you can run NinjaTrader with Kinetic data, but you don't have to route your orders through it if you don't want to.
+
+63
+00:04:52,240 --> 00:04:55,200
+Say, you know, you have another broker and they have the different front end.
+
+64
+00:04:55,540 --> 00:04:56,520
+That's perfectly fine.
+
+65
+00:04:56,700 --> 00:04:58,140
+A lot of traders have to do that.
+
+66
+00:04:58,140 --> 00:05:04,020
+You know, they use the NinjaTrader just as their charting software. They're not necessarily routing their orders through it.
+
+67
+00:05:08,040 --> 00:05:12,040
+So, you know, just a brief background about me.
+
+68
+00:05:12,120 --> 00:05:15,460
+You know, in the past, I have used many different order flow softwares to trade.
+
+69
+00:05:16,280 --> 00:05:20,880
+And, you know, in the end, they're all basically the same as the volume footprint chart.
+
+70
+00:05:20,880 --> 00:05:22,364
+The problem is, I'll
+
+71
+00:05:22,364 --> 00:05:24,590
+say the problem, but, you know,
+
+72
+00:05:24,590 --> 00:05:26,816
+there's only so many ways you
+
+73
+00:05:26,816 --> 00:05:30,898
+can disseminate, you know, analyze the data, analyze the order flow.
+
+74
+00:05:31,640 --> 00:05:33,044
+When you're looking at a footprint
+
+75
+00:05:33,044 --> 00:05:34,448
+chart, you know, a footprint chart
+
+76
+00:05:34,448 --> 00:05:35,852
+just tells you what's traded on
+
+77
+00:05:35,852 --> 00:05:41,237
+the bid and the offer, where the imbalances are, you know, and a few other things. They don't necessarily analyze the order flow.
+
+78
+00:05:42,080 --> 00:05:45,740
+You know, that's why people think order flow trading is a system.
+
+79
+00:05:45,740 --> 00:05:47,555
+It's not a system,
+
+80
+00:05:47,555 --> 00:05:50,278
+you know, it takes the data
+
+81
+00:05:50,278 --> 00:05:56,178
+and, you know, presents it to you in a different way than normal.
+
+82
+00:05:56,740 --> 00:06:01,340
+You know, it gives you a lot more information than a normal bar chart.
+
+83
+00:06:01,820 --> 00:06:04,940
+So, when you're choosing your software, you have to decide what your needs are.
+
+84
+00:06:06,620 --> 00:06:10,200
+You know, are you good with software? You like to tinker around with code?
+
+85
+00:06:10,200 --> 00:06:11,078
+If so, you
+
+86
+00:06:11,078 --> 00:06:12,542
+know, then maybe, you know,
+
+87
+00:06:12,542 --> 00:06:14,299
+the bottom end software is a
+
+88
+00:06:14,299 --> 00:06:18,399
+good few since it has very little documentation and there are lots of builds.
+
+89
+00:06:19,040 --> 00:06:20,640
+So, you know, if
+
+90
+00:06:20,640 --> 00:06:23,040
+you're the type that likes to
+
+91
+00:06:23,040 --> 00:06:25,440
+play around with, you know, setting
+
+92
+00:06:25,440 --> 00:06:27,840
+things up, you know, you could
+
+93
+00:06:27,840 --> 00:06:34,640
+get a version of the Gomi footprint from Big Mike's Trading. I think it's now futures.io.
+
+94
+00:06:34,240 --> 00:06:35,680
+So, you know, it's
+
+95
+00:06:35,680 --> 00:06:37,840
+free, but you've got to join
+
+96
+00:06:37,840 --> 00:06:40,000
+the website and pay like a
+
+97
+00:06:40,000 --> 00:06:44,680
+hundred bucks. I mean, it's worth it, you know, to join the website.
+
+98
+00:06:45,040 --> 00:06:51,040
+But, you know, even if you don't take out the, you know, the available software that's there.
+
+99
+00:06:51,040 --> 00:06:52,599
+But, you know, if
+
+100
+00:06:52,599 --> 00:06:55,717
+you're a bit like me and you don't
+
+101
+00:06:55,717 --> 00:06:58,835
+have the patience or the inclination to really
+
+102
+00:06:58,835 --> 00:07:01,953
+sit down and write code and, you know,
+
+103
+00:07:01,953 --> 00:07:04,292
+try and troubleshoot everything, you're going
+
+104
+00:07:04,292 --> 00:07:14,817
+to want a software that, you know, all you've got to do is just import it into your system and you can start looking at the market.
+
+105
+00:07:14,820 --> 00:07:19,530
+Now, you know, what are your choices?
+
+106
+00:07:20,070 --> 00:07:23,550
+So, you know, just real quickly, I'll go through a bunch of them real quick.
+
+107
+00:07:25,230 --> 00:07:30,870
+There's, you know, there's orderflows.com. It's $750 for a lifetime license.
+
+108
+00:07:31,630 --> 00:07:33,530
+Orderflows is my company, actually.
+
+109
+00:07:33,790 --> 00:07:39,490
+So, you know, a lot of the charts you're going to see here are based on my software.
+
+110
+00:07:40,210 --> 00:07:41,550
+Now, there's Noft Traders.
+
+111
+00:07:42,090 --> 00:07:46,130
+They recently raised the price to $4,500 for a lifetime license.
+
+112
+00:07:47,430 --> 00:07:49,610
+There's orderflowanalytics.com.
+
+113
+00:07:50,690 --> 00:07:56,730
+You know, they've got different prices, $2,500, you know, almost $5,000 for a lifetime license.
+
+114
+00:07:57,250 --> 00:07:59,050
+There's finalg.com.
+
+115
+00:08:00,050 --> 00:08:06,610
+It's $59 a month you could lease it for, or $750 for a lifetime license.
+
+116
+00:08:08,150 --> 00:08:10,050
+There's orderflowtrading.net.
+
+117
+00:08:10,170 --> 00:08:14,510
+It's $74 a month, or basically $2,000 for a lifetime license.
+
+118
+00:08:14,510 --> 00:08:22,510
+There's MarketDelta, which is, we'll run CQG data. MarketDelta is one of the originals out there.
+
+119
+00:08:22,610 --> 00:08:25,810
+Actually, it's very stable, very good software. It's a little pricey, though.
+
+120
+00:08:26,350 --> 00:08:32,770
+It's $129 a month, or $175 a month, depending on what you're getting with it.
+
+121
+00:08:33,429 --> 00:08:36,030
+There's a discount for quarterly subscription.
+
+122
+00:08:36,030 --> 00:08:40,610
+There's auctiondashboard.com.
+
+123
+00:08:40,690 --> 00:08:45,650
+It's $180 for a lifetime license. It's just in software.
+
+124
+00:08:45,930 --> 00:08:54,230
+They cover, you know, they include a dome in their software, which is a nice little feature.
+
+125
+00:08:54,230 --> 00:08:58,570
+So, there's the futures.io, which is, you know, formerly Big Mike's Trading.
+
+126
+00:09:00,270 --> 00:09:03,190
+You could, it's called the Gomi Ladder on there.
+
+127
+00:09:03,270 --> 00:09:04,940
+What you do is you sign
+
+128
+00:09:04,940 --> 00:09:06,610
+up for Big Mike's, you know,
+
+129
+00:09:06,610 --> 00:09:10,229
+futures.io, and if you want to become an elite member, it costs $100.
+
+130
+00:09:10,230 --> 00:09:12,908
+But once you're a member,
+
+131
+00:09:12,908 --> 00:09:16,657
+you get access to all their, you
+
+132
+00:09:16,657 --> 00:09:22,549
+know, user-submitted software, and there's a Gomi footprint ladder in there.
+
+133
+00:09:23,810 --> 00:09:27,450
+Gomi, later, I believe, went to do some work for NOFT.
+
+134
+00:09:28,110 --> 00:09:31,690
+So, you know, it's a good software.
+
+135
+00:09:31,950 --> 00:09:33,730
+I mean, if you just want
+
+136
+00:09:33,730 --> 00:09:35,510
+to get started, but you have
+
+137
+00:09:35,510 --> 00:09:37,290
+to, you know, know how to,
+
+138
+00:09:37,290 --> 00:09:40,850
+I think you've got to know a little bit of, of programming.
+
+139
+00:09:41,810 --> 00:09:47,270
+So, there's a lot of people that don't necessarily, I said, have the time or the inclination to do it.
+
+140
+00:09:47,450 --> 00:09:48,680
+So, but if, you
+
+141
+00:09:48,680 --> 00:09:50,526
+know, you're someone that likes to
+
+142
+00:09:50,526 --> 00:09:52,372
+tinker around with coding and, you
+
+143
+00:09:52,372 --> 00:09:55,448
+know, troubleshooting stuff, then, you know, it's definitely worth it.
+
+144
+00:09:55,830 --> 00:10:01,450
+I think, I mean, the website itself is worth it, even without the software, the free software that's available.
+
+145
+00:10:03,570 --> 00:10:13,430
+Now, there's also tradeorderflow.com, which is ridiculously priced, $4,500,000. $6,500,000, or even close to $13,000,000 for a lifetime license.
+
+146
+00:10:13,630 --> 00:10:16,250
+It's just ridiculous, in my opinion.
+
+147
+00:10:17,410 --> 00:10:22,570
+You know, this software is basically a footprint chart.
+
+148
+00:10:22,570 --> 00:10:27,630
+Jigsaw trading, now, it's not a footprint chart, rather, it's a dome.
+
+149
+00:10:28,170 --> 00:10:29,858
+But, you know, I mention
+
+150
+00:10:29,858 --> 00:10:31,546
+it here because it's a
+
+151
+00:10:31,546 --> 00:10:33,234
+good piece of software if
+
+152
+00:10:33,234 --> 00:10:34,922
+you're, you know, trading. It
+
+153
+00:10:34,922 --> 00:10:36,610
+can help you manage, you
+
+154
+00:10:36,610 --> 00:10:38,298
+know, your trading. Once you
+
+155
+00:10:38,298 --> 00:10:53,156
+get, you know, getting in and out, you know, it's one click. If you don't necessarily want to, you know, trade off a footprint chart, per se, you know, it's, I think it's good to, it's a good addition to having a footprint chart.
+
+156
+00:10:54,040 --> 00:10:57,866
+Now, there's indicatormall.com, which is basically $200 for
+
+157
+00:10:57,866 --> 00:11:01,214
+a lifetime license. I think Peter also
+
+158
+00:11:01,214 --> 00:11:04,562
+has a lease for about $20, $25 a month.
+
+159
+00:11:05,520 --> 00:11:07,431
+It's, it's good, it's good
+
+160
+00:11:07,431 --> 00:11:09,342
+software, you know, the creator's
+
+161
+00:11:09,342 --> 00:11:11,253
+a good guy, I know
+
+162
+00:11:11,253 --> 00:11:13,164
+him, so, you know, it's,
+
+163
+00:11:13,164 --> 00:11:15,075
+it's, it's a good footprint
+
+164
+00:11:15,075 --> 00:11:16,986
+chart to, to use. You
+
+165
+00:11:16,986 --> 00:11:18,897
+know, it's a little bit
+
+166
+00:11:18,897 --> 00:11:40,302
+different than the one from futures.io in the sense that it's really ready to go. Futures.io on the Gomi ladder, you really gotta, I think you gotta play around with a little bit to get it working. Um, whereas the one from indicatormall, you could just install directly onto your, uh, onto your NinjaTrader.
+
+167
+00:11:40,400 --> 00:11:43,523
+Now, Rancho De Niro, they have
+
+168
+00:11:43,523 --> 00:11:46,646
+a couple choices. There's one for
+
+169
+00:11:46,646 --> 00:11:55,496
+basically $1,200, and there's one for $1,800. For a lifetime license, you cost a lease on for, for less.
+
+170
+00:11:56,540 --> 00:11:58,225
+Um, they actually integrate a
+
+171
+00:11:58,225 --> 00:11:59,910
+lot with, uh, a market
+
+172
+00:11:59,910 --> 00:12:01,595
+profile. So, I mean, you
+
+173
+00:12:01,595 --> 00:12:10,020
+know, if market profile is something that floats your boat, you know, I think the Rancho De Niro is probably something you should look at.
+
+174
+00:12:10,500 --> 00:12:12,068
+But, it's, I mean, they
+
+175
+00:12:12,068 --> 00:12:13,636
+have, you know, they have
+
+176
+00:12:13,636 --> 00:12:15,204
+footprint charts, which, the way
+
+177
+00:12:15,204 --> 00:12:16,772
+they, they take, to me,
+
+178
+00:12:16,772 --> 00:12:18,340
+the data is on the
+
+179
+00:12:18,340 --> 00:12:32,139
+bid up-down ticks, which is explained on the website. Um, you know, it's gonna help you if you, if you, if you want to look at historical data. Um, so it's one of the few softwares that can allow you to see historical data.
+
+180
+00:12:32,940 --> 00:12:34,378
+But, you know, I think
+
+181
+00:12:34,378 --> 00:12:35,816
+the data is, is a
+
+182
+00:12:35,816 --> 00:12:37,254
+little bit different than, you
+
+183
+00:12:37,254 --> 00:12:38,692
+know, normally what you're gonna
+
+184
+00:12:38,692 --> 00:12:50,777
+see. Um, but they don't really necessarily talk very much about the footprint charts in their education. So, you know, there are some templates you can download, but it's a little bit, uh, it's a little bit tricky to get used to.
+
+185
+00:12:50,780 --> 00:12:54,117
+So, then there's OrderFlow Dash Pro, which is
+
+186
+00:12:54,117 --> 00:12:56,620
+basically also a footprint chart. That's
+
+187
+00:12:56,620 --> 00:13:02,044
+$89 a month, and they also have a lifetime license for about $1,200 as well.
+
+188
+00:13:04,020 --> 00:13:05,475
+So, you know, do you
+
+189
+00:13:05,475 --> 00:13:06,930
+want software that has a
+
+190
+00:13:06,930 --> 00:13:08,385
+lot of features you won't
+
+191
+00:13:08,385 --> 00:13:09,840
+use or indicators that don't
+
+192
+00:13:09,840 --> 00:13:17,698
+even apply to OrderFlow? You have to, you find those in more expensive software because they're looking for a reason to, you know, to raise the price.
+
+193
+00:13:17,700 --> 00:13:18,897
+You know, so,
+
+194
+00:13:18,897 --> 00:13:21,690
+you're gonna see a lot of things
+
+195
+00:13:21,690 --> 00:13:23,685
+in some of these expensive
+
+196
+00:13:23,685 --> 00:13:26,878
+softwares that, you know, isn't really OrderFlow trading.
+
+197
+00:13:27,160 --> 00:13:27,865
+You know,
+
+198
+00:13:27,865 --> 00:13:29,275
+they'll add in, you
+
+199
+00:13:29,275 --> 00:13:30,685
+know, some, you know,
+
+200
+00:13:30,685 --> 00:13:32,447
+VWAP or something, which, you
+
+201
+00:13:32,447 --> 00:13:34,209
+know, they, they sort of
+
+202
+00:13:34,209 --> 00:13:36,677
+bastardize it into something that it's not.
+
+203
+00:13:36,840 --> 00:13:39,000
+You know, they basically turn it into a moving average.
+
+204
+00:13:39,000 --> 00:13:45,440
+Um, you know, but, you know, but then they start charging you a lot for it.
+
+205
+00:13:46,240 --> 00:13:46,979
+You know, if
+
+206
+00:13:46,979 --> 00:13:48,704
+you want to trade with OrderFlow, you
+
+207
+00:13:48,704 --> 00:13:50,675
+want to concentrate on OrderFlow, you don't want
+
+208
+00:13:50,675 --> 00:13:54,618
+to necessarily start using other indicators that are unrelated to OrderFlow to base your decisions on.
+
+209
+00:13:54,620 --> 00:13:55,821
+I mean, that
+
+210
+00:13:55,821 --> 00:13:58,224
+said, you can use OrderFlow with,
+
+211
+00:13:58,224 --> 00:14:01,829
+you know, other indicators. But, you know, when you're
+
+212
+00:14:01,829 --> 00:14:04,632
+starting to understand OrderFlow, you should understand
+
+213
+00:14:04,632 --> 00:14:09,038
+OrderFlow before you start mixing it into, you know, other indicators.
+
+214
+00:14:11,720 --> 00:14:12,755
+Now, you know,
+
+215
+00:14:12,755 --> 00:14:15,171
+I created my own software called OrderFlow's
+
+216
+00:14:15,171 --> 00:14:17,933
+Trader because, you know, I've traded with OrderFlow's
+
+217
+00:14:17,933 --> 00:14:21,385
+for many years. And, you know, one of the reasons
+
+218
+00:14:21,385 --> 00:14:23,801
+that I created the software is because,
+
+219
+00:14:23,801 --> 00:14:31,396
+you know, I'm a trader and I'm not a programmer. I don't have time to spend days programming or setting up software.
+
+220
+00:14:32,660 --> 00:14:33,865
+And, you know,
+
+221
+00:14:33,865 --> 00:14:36,677
+I don't want to spend thousands of
+
+222
+00:14:36,677 --> 00:14:39,891
+dollars on software that, you know, has indicators
+
+223
+00:14:39,891 --> 00:14:42,703
+that make no sense to me because
+
+224
+00:14:42,703 --> 00:14:55,559
+they're black box indicators. And they don't tell you what the logic is behind it, you know, or they're drawing, you know, other lines on there that I'm not necessarily looking at.
+
+225
+00:14:55,660 --> 00:14:56,818
+You know, I
+
+226
+00:14:56,818 --> 00:14:59,521
+don't really care to apply moving averages
+
+227
+00:14:59,521 --> 00:15:02,610
+or anything like that to my OrderFlow, you
+
+228
+00:15:02,610 --> 00:15:11,878
+know, my OrderFlow analysis. I want to analyze the OrderFlow, not, you know, a bunch of other unrelated things going on in the market.
+
+229
+00:15:11,880 --> 00:15:12,859
+So, you know,
+
+230
+00:15:12,859 --> 00:15:15,797
+one of the main things that makes OrderFlow's Trader
+
+231
+00:15:15,797 --> 00:15:19,062
+different than the rest of the software out there is
+
+232
+00:15:19,062 --> 00:15:27,878
+that it allows you to interpret the OrderFlow by highlighting areas where buying or selling is drying up or where there are large buyers or sellers participating.
+
+233
+00:15:30,630 --> 00:15:31,239
+You know, it's,
+
+234
+00:15:31,239 --> 00:15:32,254
+like I said, you know,
+
+235
+00:15:32,254 --> 00:15:33,472
+it's one thing to have an
+
+236
+00:15:33,472 --> 00:15:35,908
+OrderFlow chart, but you still need to know how to interpret it.
+
+237
+00:15:35,910 --> 00:15:37,107
+And that's why I
+
+238
+00:15:37,107 --> 00:15:39,501
+created the OrderFlow's Trader because, you know, I
+
+239
+00:15:39,501 --> 00:15:41,895
+used to be able to look at the
+
+240
+00:15:41,895 --> 00:15:44,289
+chart, get an idea, do some calculations in
+
+241
+00:15:44,289 --> 00:15:54,167
+my head to determine, you know, if there was buying or selling was drying up or, you know, what I considered a large buyer or a large seller being active in the market.
+
+242
+00:15:54,170 --> 00:15:55,222
+But when I
+
+243
+00:15:55,222 --> 00:15:58,379
+envisioned the OrderFlow's Trader, I wanted something that would
+
+244
+00:15:58,379 --> 00:16:01,185
+just tell me at a glance, you know,
+
+245
+00:16:01,185 --> 00:16:03,991
+that way I could look at a few
+
+246
+00:16:03,991 --> 00:16:18,727
+more markets rather than just one or two. I could, you know, expand it to four or five or six markets at once. You know, it would just help me diversify, but, you know, give me other trading opportunities during the day.
+
+247
+00:16:18,730 --> 00:16:19,817
+So, you know,
+
+248
+00:16:19,817 --> 00:16:21,628
+really quick, you know, this
+
+249
+00:16:21,628 --> 00:16:24,164
+is an OrderFlow's Trader chart, so it'll
+
+250
+00:16:24,164 --> 00:16:26,700
+print ratio, it'll print numbers, and you
+
+251
+00:16:26,700 --> 00:16:44,457
+can see, you know, areas in there where, you know, the volume is drying up or where there is, you know, considered heavy sellers, you know, all sorts of things, you know, that you're not going to see on a regular OrderFlow's chart, especially not on a bar chart.
+
+252
+00:16:44,460 --> 00:16:50,880
+So, you know, you can see how, you know, these, how the market is reacting around, you know, certain areas.
+
+253
+00:16:51,540 --> 00:16:52,370
+It's, you know,
+
+254
+00:16:52,370 --> 00:16:53,754
+all this will be explained
+
+255
+00:16:53,754 --> 00:16:55,691
+further in the course, but, you know,
+
+256
+00:16:55,691 --> 00:16:57,628
+the main thing is, you know, it's
+
+257
+00:16:57,628 --> 00:17:05,378
+helping you analyze the OrderFlow rather than just looking at a bunch of numbers and not knowing how to make, you know, heads or tails out of them.
+
+258
+00:17:08,890 --> 00:17:09,647
+You know, what's
+
+259
+00:17:09,647 --> 00:17:11,415
+the point of having an OrderFlow chart
+
+260
+00:17:11,415 --> 00:17:13,436
+if you don't know how to use it?
+
+261
+00:17:13,436 --> 00:17:21,268
+You know, if you're spending thousands of dollars on an OrderFlow chart, you don't know what the, you know, what's going on. I mean, it's kind of a waste of money.
+
+262
+00:17:22,050 --> 00:17:22,897
+You know, so,
+
+263
+00:17:22,897 --> 00:17:24,309
+you know, that said, you
+
+264
+00:17:24,309 --> 00:17:26,003
+know, everything in this course is
+
+265
+00:17:26,003 --> 00:17:29,109
+based on my using, on using my software, the OrderFlow's Trader.
+
+266
+00:17:31,110 --> 00:17:32,008
+But, that said,
+
+267
+00:17:32,008 --> 00:17:34,103
+you know, what I teach you in
+
+268
+00:17:34,103 --> 00:17:36,497
+this course can be applied to any other
+
+269
+00:17:36,497 --> 00:17:40,089
+similar OrderFlow footprint chart. You don't necessarily have to use my software.
+
+270
+00:17:40,730 --> 00:17:41,788
+I mean, it
+
+271
+00:17:41,788 --> 00:17:44,257
+helps, but, you know, the other software
+
+272
+00:17:44,257 --> 00:17:49,549
+isn't going to show you the setups the way the OrderFlow's Trader will show you.
+
+273
+00:17:50,650 --> 00:17:57,190
+You know, I have my software created in such a way that the setups will stand out more.
+
+274
+00:17:57,190 --> 00:17:59,672
+If you're looking at a normal OrderFlow's
+
+275
+00:17:59,672 --> 00:18:02,154
+footprint chart, then, you know, you have
+
+276
+00:18:02,154 --> 00:18:04,281
+to look more closely at it
+
+277
+00:18:04,281 --> 00:18:10,309
+and, you know, maybe do a little bit of calculation from it and make your trading decisions.
+
+278
+00:18:10,830 --> 00:18:14,710
+You know, I've been in the futures industry for 20 years.
+
+279
+00:18:15,210 --> 00:18:21,410
+So, you know, a lot of my experience over that 20 years has been put into the software.
+
+280
+00:18:21,410 --> 00:18:22,440
+You know, and
+
+281
+00:18:22,440 --> 00:18:24,845
+it's not like I've been trading on
+
+282
+00:18:24,845 --> 00:18:27,937
+myself. You know, I've been trading for J.P.
+
+283
+00:18:27,937 --> 00:18:29,655
+Morgan for 8 years, Cargill for 4
+
+284
+00:18:29,655 --> 00:18:31,373
+years, Comers Bank, you know,
+
+285
+00:18:31,373 --> 00:18:35,496
+the big German bank for 3 years, you know, EDF Mann for 2 years.
+
+286
+00:18:36,990 --> 00:18:37,944
+You know, they're
+
+287
+00:18:37,944 --> 00:18:40,171
+all institutional firms, right? And, you know,
+
+288
+00:18:40,171 --> 00:18:43,989
+I've had exposure to some of the biggest traders in the world.
+
+289
+00:18:45,070 --> 00:18:45,778
+You know, I've
+
+290
+00:18:45,778 --> 00:18:47,903
+talked to them on a daily basis. You know,
+
+291
+00:18:47,903 --> 00:18:49,556
+I know what they think and how
+
+292
+00:18:49,556 --> 00:18:51,209
+they think and how they execute orders.
+
+293
+00:18:51,650 --> 00:18:55,578
+All that stuff that I've learned over the years, in
+
+294
+00:18:55,578 --> 00:18:58,720
+addition to how I've learned to trade myself,
+
+295
+00:18:58,720 --> 00:19:01,469
+all that stuff goes into my software.
+
+296
+00:19:04,680 --> 00:19:05,509
+So, you know,
+
+297
+00:19:05,509 --> 00:19:07,998
+one of the things that really bothers me about
+
+298
+00:19:07,998 --> 00:19:10,210
+a lot of traders is their software is,
+
+299
+00:19:10,210 --> 00:19:14,358
+you know, their screen has got so many lines. You know, it's like a headache.
+
+300
+00:19:14,360 --> 00:19:16,005
+You look at it and you're
+
+301
+00:19:16,005 --> 00:19:18,199
+like, how do you make heads, you know,
+
+302
+00:19:18,199 --> 00:19:19,844
+how do you decide to go
+
+303
+00:19:19,844 --> 00:19:23,958
+to buy or sell? You know, there's so many lines and so many different colors.
+
+304
+00:19:26,740 --> 00:19:27,721
+You know, I
+
+305
+00:19:27,721 --> 00:19:30,010
+mean, when people, you know, when you're
+
+306
+00:19:30,010 --> 00:19:32,626
+trading for a bank, you don't sit there
+
+307
+00:19:32,626 --> 00:19:34,915
+and say, you know, I've never heard
+
+308
+00:19:34,915 --> 00:19:41,457
+anyone say, well, it's the MACD is crossing the zero line, it's time to sell, you know, think like that.
+
+309
+00:19:41,580 --> 00:19:46,980
+And they don't sell because MACD is at this level or this oscillator across there.
+
+310
+00:19:47,120 --> 00:19:48,182
+You know, they've
+
+311
+00:19:48,182 --> 00:19:51,369
+got much different, you know, different views of the
+
+312
+00:19:51,369 --> 00:19:53,494
+market. They're not looking at charts
+
+313
+00:19:53,494 --> 00:19:55,619
+with all sorts of squiggly lines.
+
+314
+00:19:55,620 --> 00:19:56,707
+You know, traders
+
+315
+00:19:56,707 --> 00:19:59,245
+are looking at charts that are clean,
+
+316
+00:19:59,245 --> 00:20:01,420
+you know, that are interested in
+
+317
+00:20:01,420 --> 00:20:03,958
+what price is, you know, where it's
+
+318
+00:20:03,958 --> 00:20:09,397
+trading relative to, you know, recent highs or, you know, yearly highs, things like that.
+
+319
+00:20:10,060 --> 00:20:10,824
+You know, and,
+
+320
+00:20:10,824 --> 00:20:12,607
+you know, order flow, you should keep
+
+321
+00:20:12,607 --> 00:20:14,136
+your charts clean. You don't need
+
+322
+00:20:14,136 --> 00:20:17,958
+all sorts of different lines in there that's just confusing the heck out of you.
+
+323
+00:20:17,960 --> 00:20:26,420
+But, you know, I said, you don't need to use my software to understand order flows.
+
+324
+00:20:26,940 --> 00:20:28,401
+I mean, you could go through
+
+325
+00:20:28,401 --> 00:20:30,350
+this course and, you know, trust me, after
+
+326
+00:20:30,350 --> 00:20:32,299
+this course, you should learn a lot already.
+
+327
+00:20:32,740 --> 00:20:41,300
+But, you know, if you're interested in my software, you can purchase it at, you know, at a reduced price.
+
+328
+00:20:41,780 --> 00:20:42,686
+You know, so,
+
+329
+00:20:42,686 --> 00:20:44,801
+I said, you know, I'm not here
+
+330
+00:20:44,801 --> 00:20:47,218
+to try and gouge money out of you.
+
+331
+00:20:47,218 --> 00:20:49,031
+You know, the order flow is
+
+332
+00:20:49,031 --> 00:20:52,657
+something that, you know, everybody should be available to have to trade.
+
+333
+00:20:53,360 --> 00:20:56,080
+You know, I could easily charge $5,000 for the software.
+
+334
+00:20:56,780 --> 00:20:59,740
+But, you know, honestly, there's no need to, you know.
+
+335
+00:21:00,080 --> 00:21:05,420
+You know, I just charge a reasonable price, pay for the programming, you know, pay for the work behind it.
+
+336
+00:21:06,920 --> 00:21:08,554
+But, you know, one
+
+337
+00:21:08,554 --> 00:21:11,823
+of the major drawbacks that a lot of
+
+338
+00:21:11,823 --> 00:21:15,909
+trading software has is their education. There is no education.
+
+339
+00:21:15,910 --> 00:21:17,750
+You know, you can buy indicators.
+
+340
+00:21:18,330 --> 00:21:26,110
+You know, it seems they spend more time writing the sales page than writing the instruction manual.
+
+341
+00:21:27,370 --> 00:21:28,687
+You know, how many
+
+342
+00:21:28,687 --> 00:21:31,321
+indicators have you bought, you know, where all
+
+343
+00:21:31,321 --> 00:21:33,626
+you get with it is maybe a
+
+344
+00:21:33,626 --> 00:21:36,589
+two- to three-page PDF on the settings, if that.
+
+345
+00:21:36,870 --> 00:21:38,118
+You know, you may
+
+346
+00:21:38,118 --> 00:21:40,615
+just download the thing and then they give
+
+347
+00:21:40,615 --> 00:21:43,112
+you, like, a one-pager on what the settings
+
+348
+00:21:43,112 --> 00:21:48,107
+mean. And they don't teach you the logic behind the indicator or why it should work.
+
+349
+00:21:50,580 --> 00:21:55,820
+You know, basically, here's this indicator. You know, here's a few sample charts on where it worked.
+
+350
+00:21:56,020 --> 00:22:00,340
+You know, they don't necessarily, you don't know why it's, you know, what's going on with it.
+
+351
+00:22:00,440 --> 00:22:02,860
+You know, it could just be something completely random.
+
+352
+00:22:02,860 --> 00:22:05,380
+Usually not.
+
+353
+00:22:05,540 --> 00:22:06,711
+I mean, some people,
+
+354
+00:22:06,711 --> 00:22:08,175
+you know, basically just take
+
+355
+00:22:08,175 --> 00:22:10,225
+indicators out of a book that's 30 years
+
+356
+00:22:10,225 --> 00:22:13,446
+old and, you know, try and rework it for the present.
+
+357
+00:22:14,600 --> 00:22:17,560
+But, you know, I mean, it's just one of those things, you know.
+
+358
+00:22:17,560 --> 00:22:18,917
+It's like you would
+
+359
+00:22:18,917 --> 00:22:20,613
+think that, you know, people
+
+360
+00:22:20,613 --> 00:22:22,309
+selling, you know, indicators or,
+
+361
+00:22:22,309 --> 00:22:23,666
+you know, trading things
+
+362
+00:22:23,666 --> 00:22:27,738
+would want to take the time to really explain it to you.
+
+363
+00:22:27,900 --> 00:22:31,000
+So, you know, because if you make money, then everybody wins.
+
+364
+00:22:31,660 --> 00:22:32,683
+But, you know, there's
+
+365
+00:22:32,683 --> 00:22:34,729
+a lot of people out there that they
+
+366
+00:22:34,729 --> 00:22:36,775
+think just sell it and get the money
+
+367
+00:22:36,775 --> 00:22:38,309
+and move on to the next
+
+368
+00:22:38,309 --> 00:22:42,657
+indicator and, you know, find some more people to sell it to. And just keep on going.
+
+369
+00:22:45,140 --> 00:22:50,360
+Now, you know, once again, that was one of the things, you know, with my order flows traders.
+
+370
+00:22:50,780 --> 00:22:52,141
+So, one of the
+
+371
+00:22:52,141 --> 00:22:54,864
+problems, and I said I've used other software
+
+372
+00:22:54,864 --> 00:22:57,587
+before, I mean, before I created this software.
+
+373
+00:22:57,587 --> 00:22:59,629
+And it's really a pain in
+
+374
+00:22:59,629 --> 00:23:07,798
+the butt trying to get it all set up and make it, you know, how you just see it in there on their websites.
+
+375
+00:23:08,020 --> 00:23:10,260
+You know, one or two places offer templates.
+
+376
+00:23:10,260 --> 00:23:11,170
+But, you know, I
+
+377
+00:23:11,170 --> 00:23:12,535
+mean, with the order flows trader,
+
+378
+00:23:12,535 --> 00:23:13,672
+I give you the template
+
+379
+00:23:13,672 --> 00:23:16,858
+that I use. You know, it's the template that you see in these charts.
+
+380
+00:23:17,360 --> 00:23:18,595
+So, you know, once
+
+381
+00:23:18,595 --> 00:23:20,447
+you install order flows trader, you
+
+382
+00:23:20,447 --> 00:23:22,299
+can load the template and your
+
+383
+00:23:22,299 --> 00:23:25,078
+charts will look, you know, look just like mine.
+
+384
+00:23:25,860 --> 00:23:27,012
+But also, you know,
+
+385
+00:23:27,012 --> 00:23:28,164
+what comes with the
+
+386
+00:23:28,164 --> 00:23:29,892
+book is a guide. You know,
+
+387
+00:23:29,892 --> 00:23:31,044
+I wrote a book
+
+388
+00:23:31,044 --> 00:23:32,772
+on trading order flow. It's 150 pages.
+
+389
+00:23:33,460 --> 00:23:42,140
+It's called Trading Order Flow. You know, which, you know, which is, you know, very informative.
+
+390
+00:23:42,360 --> 00:23:45,340
+I mean, so if some people come to me, they just want to buy the book.
+
+391
+00:23:46,000 --> 00:23:52,960
+That tells me that, you know, there isn't much education out there for people learning order flow.
+
+392
+00:23:52,960 --> 00:23:54,421
+So, you know, it's
+
+393
+00:23:54,421 --> 00:23:57,344
+a shame because, as I said, you know,
+
+394
+00:23:57,344 --> 00:24:00,267
+order flow is such a great way to
+
+395
+00:24:00,267 --> 00:24:05,017
+trade. But there's, you know, there's very few places to really learn it.
+
+396
+00:24:05,060 --> 00:24:06,940
+That's one of the reasons why I created this course.
+
+397
+00:24:08,560 --> 00:24:12,660
+So, I mean, it's up to you as to which software you want to use for your order flow analysis.
+
+398
+00:24:12,820 --> 00:24:16,960
+Like I said, I mean, there's a lot that's good. That's good. That's out there.
+
+399
+00:24:17,080 --> 00:24:18,900
+I mean, you don't necessarily have to use mine.
+
+400
+00:24:18,900 --> 00:24:24,220
+You know, I think if you use mine, you'll understand it better.
+
+401
+00:24:26,020 --> 00:24:30,760
+But you just remember, you know, just because something is priced high doesn't mean that it works better.
+
+402
+00:24:31,080 --> 00:24:38,440
+You know, a lot of people think, I could buy this software for $4,000, $5,000, and I'll start making money.
+
+403
+00:24:38,980 --> 00:24:42,020
+No, you know, I know a lot of
+
+404
+00:24:42,020 --> 00:24:44,680
+people that have bought the software for $4,000,
+
+405
+00:24:44,680 --> 00:24:51,140
+$5,000, and they couldn't make any money with it. And in the end, they're all $4,000 at a minimum.
+
+406
+00:24:52,600 --> 00:24:59,260
+You know, that's not even counting what they lost trading, you know, which is much more than the software cost.
+
+407
+00:24:59,940 --> 00:25:05,380
+So, you know, choose a software that you're comfortable with and can understand.
+
+408
+00:25:05,840 --> 00:25:07,115
+And, you know, rather
+
+409
+00:25:07,115 --> 00:25:09,665
+than something that looks good and is expensive
+
+410
+00:25:09,665 --> 00:25:12,215
+and, you know, they put up videos saying,
+
+411
+00:25:12,215 --> 00:25:14,446
+you know, today I made $1,200, you know,
+
+412
+00:25:14,446 --> 00:25:16,996
+apparently, you know, the systems, you know, these,
+
+413
+00:25:16,996 --> 00:25:21,459
+some of these videos, people, they never lose, you know, which is quite amazing.
+
+414
+00:25:22,540 --> 00:25:25,860
+Um, you know, if that's the case, guys, might as well just open up a hedge fund.
+
+415
+00:25:27,820 --> 00:25:29,237
+But, you know, people
+
+416
+00:25:29,237 --> 00:25:32,071
+ask, you know, this is really what, where
+
+417
+00:25:32,071 --> 00:25:35,259
+a lot of software belongs, in the garbage dump.
+
+418
+00:25:35,260 --> 00:25:36,976
+Um, you know, I
+
+419
+00:25:36,976 --> 00:25:39,551
+gotta admit, you know, honestly, I
+
+420
+00:25:39,551 --> 00:25:42,126
+bought indicators here and there, you
+
+421
+00:25:42,126 --> 00:25:46,418
+know, just because I'm curious, um, you know, with them.
+
+422
+00:25:46,540 --> 00:25:53,680
+I mean, sometimes they really look so good in, you know, in their advertisements or, you know, on their websites.
+
+423
+00:25:53,680 --> 00:26:02,840
+And, you know, sometimes, you know, I do want some of them to work, but, you know, most don't.
+
+424
+00:26:03,080 --> 00:26:07,560
+You know, as I said, you know, you find that things are cherry-picked more often than not.
+
+425
+00:26:08,080 --> 00:26:15,960
+Um, you know, but, I mean, there are some good softwares out there that's not order flows.
+
+426
+00:26:16,080 --> 00:26:23,260
+I mean, some good indicators, but, you know, it really depends on who's developing them, you know.
+
+427
+00:26:23,260 --> 00:26:24,767
+And how the person thinks,
+
+428
+00:26:24,767 --> 00:26:26,877
+honestly, you know, I've bought some, like,
+
+429
+00:26:26,877 --> 00:26:31,399
+Elliott Wave stuff, just because I wanted to see how it works with order flow.
+
+430
+00:26:31,920 --> 00:26:33,504
+Um, they said there are
+
+431
+00:26:33,504 --> 00:26:35,722
+some good vendors out there, but, you
+
+432
+00:26:35,722 --> 00:26:40,158
+know, the majority of them just, you know, belongs here on the garbage dump.
+
+433
+00:26:41,640 --> 00:26:47,980
+So, you know, this is the end of lesson two, covering order flow, trading software, and data.
+
+434
+00:26:47,980 --> 00:26:50,200
+In the next lesson, I'll explain how
+
+435
+00:26:50,200 --> 00:26:52,420
+to read an order flow chart, which,
+
+436
+00:26:52,420 --> 00:26:56,860
+you know, for most people is a new way of looking at the market.
+
+437
+00:26:57,480 --> 00:27:02,660
+So, you know, end this lesson now and, you know, pick it up in the next lesson.
+
+===== END AFTER_SEGMENT =====

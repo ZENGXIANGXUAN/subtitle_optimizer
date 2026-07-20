@@ -1,0 +1,2125 @@
+===== AFTER_TRANSLATE (425 entries) =====
+1
+00:00:00,000 --> 00:00:01,060
+大家好，我是Brian。
+Hey guys, Brian's here.
+
+2
+00:00:01,060 --> 00:00:03,785
+今天是2022年9月10日，星期六。
+Today is Saturday, September 10th, 2022.
+
+3
+00:00:03,785 --> 00:00:07,525
+日历价差策略是我最喜欢的期权策略之一。
+Calendar spreads are one of my favorite option strategies to use.
+
+4
+00:00:07,525 --> 00:00:10,140
+今天我们来分析NVIDIA公司，
+We will be reviewing the company NVIDIA and
+
+5
+00:00:10,140 --> 00:00:12,428
+以及我在8月
+the trade that I opened on August
+
+6
+00:00:12,428 --> 00:00:14,716
+31日（2022年，星期三）开的交易。
+31st, 2022 right here, which was a Wednesday.
+
+7
+00:00:15,045 --> 00:00:17,625
+我开的是一个非方向性日历价差策略。
+Now I opened up a non-directional calendar spread.
+
+8
+00:00:17,625 --> 00:00:20,363
+如果你不知道日历价差策略是什么，
+If you don't know what a calendar spread is, it's
+
+9
+00:00:20,363 --> 00:00:22,280
+它是一个期权组合，
+just a combination of selling an option
+
+10
+00:00:22,280 --> 00:00:25,018
+即卖出近月或DTE（到期剩余天数）较短的期权。
+in a front month or selling a shorter DTE option.
+
+11
+00:00:25,020 --> 00:00:31,280
+换句话说，假设我卖出150行权价的看涨期权，
+In other words, let's just say I was to sell the 150 call for a month. For this upcoming Friday.
+
+12
+00:00:31,280 --> 00:00:35,220
+到期日是下周五，同时买入150行权价的看涨期权，
+And then I purchased the 150 call for two weeks out.
+
+13
+00:00:35,220 --> 00:00:38,745
+到期日是两周后，这样会形成一个风险收益曲线。
+That's going to create a risk profile that looks something like this.
+
+14
+00:00:38,745 --> 00:00:41,580
+假设这里是当前的现货价格。
+And let's just say this is the current spot price right here.
+
+15
+00:00:41,580 --> 00:00:47,375
+只要价格在这个区间内波动，也就是你的盈利区间，
+As long as the price hovers between here and here, which is referred to as your tense.
+
+16
+00:00:47,375 --> 00:00:49,337
+换句话说，只要
+In other words, as long as
+
+17
+00:00:49,337 --> 00:00:51,953
+价格保持在这个区间内，
+price remains within this zone, you profit from
+
+18
+00:00:51,953 --> 00:00:54,569
+你就能从时间衰减值（theta）或隐含波动率上升中获利。
+time decay or a rise in implied volatility.
+
+19
+00:00:54,570 --> 00:00:57,500
+举个例子，风险收益曲线看起来是这样的。
+To illustrate that, this is what the risk profile will look like.
+
+20
+00:00:57,500 --> 00:00:59,180
+这就是我提到的盈利区间。
+And this is the tense in which I'm referring to.
+
+21
+00:00:59,180 --> 00:01:01,850
+这是NVIDIA当前的现货价格。
+This is the current spot price right now for Nvidia.
+
+22
+00:01:01,850 --> 00:01:03,603
+大家可以看到，如果
+So as you guys can see, if
+
+23
+00:01:03,603 --> 00:01:05,356
+NVIDIA继续上涨，
+Nvidia was to continue to rise and
+
+24
+00:01:05,356 --> 00:01:07,109
+然后回落到150行权价，
+it returns back to the 150 strike price,
+
+25
+00:01:07,360 --> 00:01:10,675
+这就是该日历价差策略到期时的最大收益。
+that is the maximum profit at expiration for this calendar.
+
+26
+00:01:10,675 --> 00:01:14,211
+我当天开的日历价差策略是150行权价的看跌期权，
+In this case, the calendar that I opened on that
+
+27
+00:01:14,211 --> 00:01:16,686
+也就是说，我卖出了9月16日到期的150行权价看跌期权，
+day was the 150 puts calendar, meaning I
+
+28
+00:01:16,686 --> 00:01:18,807
+然后买入8月21日到期的150行权价看跌期权。
+shorted the 150 puts for September 16th.
+
+29
+00:01:19,515 --> 00:01:22,260
+这样会形成一个结构，
+And then I bought the 150 put for August 21st.
+
+30
+00:01:22,260 --> 00:01:26,520
+让我们获得正的theta，同时做多vega（波动率敏感性）。
+And that's going to create a structure that gives us positive theta as well as being long Vega.
+
+31
+00:01:26,520 --> 00:01:28,880
+因此我们持有正theta、正vega。
+So we're long theta, long Vega.
+
+32
+00:01:28,880 --> 00:01:33,210
+开仓时，delta几乎中性。
+And in this case, when I first opened it, the delta was pretty close to being neutral.
+
+33
+00:01:33,210 --> 00:01:35,503
+我选择非方向性日历价差，
+Now, the reason I opened up a non-directional calendar in
+
+34
+00:01:35,503 --> 00:01:37,796
+是因为我认为
+this case is because I did not think there was
+
+35
+00:01:37,796 --> 00:01:42,153
+much of an edge to pick a direction in which I thought Nvidia's stock price was going to go.
+
+36
+00:01:42,155 --> 00:01:44,675
+从图表看，150是关键价位。
+As we can see, 150 is a key level on the chart.
+
+37
+00:01:44,675 --> 00:01:46,230
+可以看到它多次触及该价位，
+As we can see a few touches
+
+38
+00:01:46,230 --> 00:01:49,564
+6月底至7月初曾作为支撑位。
+here, we can see how it acted as support back in late June, early July.
+
+39
+00:01:49,565 --> 00:01:52,200
+这是股价首次回到150。
+And this was the first day price had come back to 150.
+
+40
+00:01:52,200 --> 00:01:55,340
+这种情况下，我偏好非方向性交易。
+Whenever I see that, I really like opening up non-directional trades.
+
+41
+00:01:55,340 --> 00:01:58,201
+但我没选铁鹰策略，
+But instead of opening up an iron condor because I'm
+
+42
+00:01:58,201 --> 00:02:00,490
+因为对NVIDIA这种波动股，
+not comfortable opening up iron condors on volatile
+
+43
+00:02:00,490 --> 00:02:01,634
+我不太愿意用铁鹰。
+stocks such as Nvidia,
+
+44
+00:02:01,635 --> 00:02:05,525
+结果第二天就遇到最坏情况。
+you guys can see almost the worst case scenario happened to me the next day.
+
+45
+00:02:05,525 --> 00:02:07,190
+这点我必须特别强调。
+And that's something I want to highlight also.
+
+46
+00:02:07,190 --> 00:02:09,547
+做非方向性交易时，
+You don't need to panic when you open up a
+
+47
+00:02:09,547 --> 00:02:12,139
+股价大幅波动不用慌。
+non-directional trade and then the stock price makes a big move.
+
+48
+00:02:12,140 --> 00:02:16,750
+这次不同寻常，收盘后出了突发新闻。
+In this case, this is not normal. There was a breaking news event that happened right after the market closed.
+
+49
+00:02:16,750 --> 00:02:18,366
+如果我们看今天的图表，
+So if we go in today and we
+
+50
+00:02:18,366 --> 00:02:19,780
+我又在现价附近开仓，
+actually look at the chart, I opened
+
+51
+00:02:19,780 --> 00:02:21,598
+结果股价大幅低开，
+it again when spot price is right around here.
+
+52
+00:02:21,600 --> 00:02:26,195
+并继续下跌。
+And then we can see that it gapped down tremendously and then it continued to sell off.
+
+53
+00:02:26,195 --> 00:02:28,845
+NVIDIA跌幅超过10%。
+So Nvidia was actually down over 10%, I believe.
+
+54
+00:02:28,845 --> 00:02:30,445
+我们来确认一下。
+So let's actually check. This is where
+
+55
+00:02:30,445 --> 00:02:32,273
+前一交易日收盘价在这里，
+it closed the previous day and all the
+
+56
+00:02:32,273 --> 00:02:34,330
+最低点时跌幅达12%。
+way down here was actually down 12% at one point.
+
+57
+00:02:34,560 --> 00:02:35,890
+这简直惨不忍睹。
+And that is disgusting.
+
+58
+00:02:35,890 --> 00:02:40,280
+我非常恼火，
+I was actually very annoyed and upset because another reason I opened the trade is that I
+
+59
+00:02:40,280 --> 00:02:43,266
+因为我开仓的另一个原因是，
+had actually hit my weekly goal right around here for
+
+60
+00:02:43,266 --> 00:02:46,252
+我已在附近达成周度目标，
+the week because I had some huge trades in the
+
+61
+00:02:46,252 --> 00:02:49,238
+SPX上我做了几笔收益不错的交易
+SPX that made a very nice return on profit and
+
+62
+00:02:49,238 --> 00:02:51,627
+周三时可能只是无聊交易
+I was actually probably boredom trading on Wednesday.
+
+63
+00:02:51,630 --> 00:02:54,135
+只是想找个地方投入资金
+I was just looking for other places to put the capital.
+
+64
+00:02:54,135 --> 00:02:58,025
+但我觉得研究不够，分析也不足
+I didn't do enough research or didn't really do enough of an analysis in my opinion.
+
+65
+00:02:58,025 --> 00:02:59,290
+我只是看到它在150行权价
+I just saw it was at 150.
+
+66
+00:02:59,290 --> 00:03:00,931
+然后检查了其他几个指标
+I ended up checking a few other metrics
+
+67
+00:03:00,931 --> 00:03:02,162
+心想，好的
+and I was like, okay, this
+
+68
+00:03:02,162 --> 00:03:03,803
+这个日历价差策略看起来不错
+looks like a good calendar to put on.
+
+69
+00:03:03,805 --> 00:03:05,503
+距离到期日不到16天
+And it was a less than 16 days
+
+70
+00:03:05,503 --> 00:03:07,444
+这种短DTE日历策略
+till expiration calendar, which inherently is going to
+
+71
+00:03:07,444 --> 00:03:09,870
+本身风险就比25-30天的高
+be a little bit riskier than going something like 25, 30 days.
+
+72
+00:03:10,600 --> 00:03:12,755
+但如果时间选太远
+But the trade-off is if you go too far out
+
+73
+00:03:12,755 --> 00:03:14,479
+你得等太久才能见收益
+in time, you're going to have to wait
+
+74
+00:03:14,479 --> 00:03:16,203
+投资回报周期太长
+too long for the return on your investment.
+
+75
+00:03:16,205 --> 00:03:19,895
+我只想要7个交易日内有收益
+And I really just wanted something that would give a return within seven trading days or so.
+
+76
+00:03:19,895 --> 00:03:22,940
+所以故意选了两周内到期的日历价差
+So I intentionally chose a calendar spread that expires within two weeks.
+
+77
+00:03:22,940 --> 00:03:25,710
+但第二天股价跳空下跌
+However, once the video gaps down the next day,
+
+78
+00:03:25,710 --> 00:03:30,430
+日历价差策略的简单调整或解决方案，就是再开一个仓位
+the simple adjustments or simple solution you can make to calendar spreads is just to open up another tent.
+
+79
+00:03:30,430 --> 00:03:34,260
+假设你先开一个日历价差，这就是你的风险收益曲线
+So if you first open up one calendar and let's just say this is your risk profile right here.
+
+80
+00:03:34,260 --> 00:03:37,045
+一旦现价跌破你的‘帐篷’
+Once the spot price breaks below your tents,
+
+81
+00:03:37,045 --> 00:03:40,995
+你可以在另一个关键行权价再开一个日历
+you can always open up another calendar for another key strike price.
+
+82
+00:03:40,995 --> 00:03:43,452
+这会扩大你的风险收益曲线
+And that's going to increase your risk profile
+
+83
+00:03:43,452 --> 00:03:45,909
+或者扩大你的盈利区间
+or it's going to increase your profitability zone
+
+84
+00:03:45,909 --> 00:03:47,444
+覆盖更大范围
+covering a much larger area.
+
+85
+00:03:47,445 --> 00:03:53,730
+只要现价保持在这两个‘帐篷’内
+As long as the spot price remains within these two tents now, you will profit, especially by expiration.
+
+86
+00:03:53,730 --> 00:03:56,345
+我们来看我开仓的时间
+What we're looking at is the time in which I opened up the spread.
+
+87
+00:03:56,345 --> 00:04:01,070
+8月31日，我开仓这个非方向性策略
+So again, August 31st, I open up this non-directional 16 days till expiration,
+
+88
+00:04:01,070 --> 00:04:02,200
+150行权价的看跌日历价差
+150 put calendar.
+
+89
+00:04:02,200 --> 00:04:05,055
+小仓位，目标20%收益
+It's a small trade and I'm just looking for 20% profit.
+
+90
+00:04:05,055 --> 00:04:09,415
+一开始我想找做多理由，但价格走势不支持
+At first, I was looking for reasons to get long, but price action said otherwise.
+
+91
+00:04:09,415 --> 00:04:13,810
+我当时的意思是150是支撑位，且支撑有效
+What I meant by that was 150 was support and I see that support was holding.
+
+92
+00:04:13,810 --> 00:04:15,850
+所以我想做多
+So I wanted to go long.
+
+93
+00:04:15,850 --> 00:04:18,196
+但从大周期来看，你不能忽视
+However, on the larger timeframe, you can't ignore
+
+94
+00:04:18,196 --> 00:04:20,542
+这一轮激进的下跌趋势
+this aggressive downtrend and you don't want to
+
+95
+00:04:20,542 --> 00:04:24,354
+不能仅因认为会反弹就抢先买入
+be the first buyer just because you think something is going to bounce.
+
+96
+00:04:24,355 --> 00:04:26,600
+你需要某种共振或确认信号
+You need some sort of confluence or you need some sort of confirmation.
+
+97
+00:04:26,600 --> 00:04:29,395
+如果寻求更大的波段交易，我需要
+If you're looking for a bigger swing trade, I need
+
+98
+00:04:29,395 --> 00:04:33,029
+其他迹象表明值得买入并持有
+something else to show that there should be reasons to buy and hold.
+
+99
+00:04:33,030 --> 00:04:35,613
+所以矛盾在于
+So the confliction between us being at a good level
+
+100
+00:04:35,613 --> 00:04:38,196
+英伟达处于一个好价位
+for Nvidia, as the chart says, on top of that,
+
+101
+00:04:38,196 --> 00:04:40,779
+通常在激进抛售后，价格会
+the fact that usually after an aggressive sell off, price
+
+102
+00:04:40,779 --> 00:04:47,494
+先横盘一段时间，再决定反转或继续下跌
+is going to stall out for a bit before it decides if it's going to either reverse or if it's going to continue in its downtrend.
+
+103
+00:04:47,495 --> 00:04:51,260
+我喜欢在横盘时利用时间衰减获利
+I like to capitalize on that time decay as price is just consolidating.
+
+104
+00:04:51,260 --> 00:04:53,110
+此外，我注意到
+On top of that, a couple of
+
+105
+00:04:53,110 --> 00:04:56,810
+短期期权的gamma敞口是原因之一
+the reasons that I have was the gamma exposure for the short dated option.
+
+106
+00:04:56,810 --> 00:04:59,526
+9月剩余时间里的gamma敞口
+So again, the gamma exposure for the rest of September
+
+107
+00:04:59,526 --> 00:05:01,427
+显示150是一个非常强的
+was showing that 150 was a very strong
+
+108
+00:05:01,427 --> 00:05:04,143
+负gamma行权价和绝对gamma行权价
+negative gamma strike as well as an absolute gamma strike.
+
+109
+00:05:04,415 --> 00:05:07,150
+该价位的敞口非常大
+And there was just a lot of exposure at that level.
+
+110
+00:05:07,150 --> 00:05:10,290
+如你所见，我发现
+As we take a look at it right here, I noticed that
+
+111
+00:05:10,290 --> 00:05:12,645
+当时英伟达在140以下
+there really wasn't much interest in Nvidia being below 140
+
+112
+00:05:12,645 --> 00:05:17,617
+当月或至少我在截图时gamma敞口显示兴趣不大
+for the month or at least at the time in which I took this screenshot for the gamma exposure.
+
+113
+00:05:17,880 --> 00:05:19,920
+150的敞口巨大
+150 was massive and it was difficult to
+
+114
+00:05:19,920 --> 00:05:22,252
+很难忽视这一点
+ignore this as I was expecting, again, price
+
+115
+00:05:22,252 --> 00:05:24,292
+因为我预期价格会在该区域停滞
+to kind of stall around this area.
+
+116
+00:05:24,585 --> 00:05:27,269
+尽管我的判断倾向于反弹
+Even though my bias was saying that we would likely
+
+117
+00:05:27,269 --> 00:05:29,416
+但我不想裸买看涨期权
+bounce, I did not want to be naked
+
+118
+00:05:29,416 --> 00:05:32,368
+也不想再增持股票
+in call options and I wasn't prepared to buy more equity.
+
+119
+00:05:32,370 --> 00:05:34,612
+我确实持有英伟达股票
+I actually hold shares in Nvidia, but I really was
+
+120
+00:05:34,612 --> 00:05:36,854
+但我在犹豫是否再买入
+contemplating if I want to either buy more shares, if
+
+121
+00:05:36,854 --> 00:05:40,889
+我认为它会反弹，或仅想从时间衰减中获利。
+I think it was going to bounce, or I just want to profit off of the time decay.
+
+122
+00:05:40,890 --> 00:05:43,658
+最终，我意识到更好的方案是
+And at the end of the day, I realized that the better
+
+123
+00:05:43,658 --> 00:05:45,503
+开仓一个
+solution for me was just to open up
+
+124
+00:05:45,503 --> 00:05:48,963
+非方向性看涨日历价差，再根据价格走向添加盈利区间。
+a non-directional call calendar and then add another tense depending on which direction price went.
+
+125
+00:05:48,965 --> 00:05:54,975
+我们现在看到的是Quant Trading App平台上周四的历史图表。
+What we're looking at right here is the archived chart on the Quant Trading App platform for the Thursday.
+
+126
+00:05:54,975 --> 00:05:57,210
+这张图显示的是开仓当天的周三。
+So this right here was the Wednesday in which the trade was open.
+
+127
+00:05:57,210 --> 00:06:01,465
+当时我注意到一个额外信号：价格守住了Quant Trading App的买入区。
+So I had a little bit of an extra confluence as it was holding the Quant Trading App buy zone.
+
+128
+00:06:01,465 --> 00:06:03,543
+这提示我们
+And this is letting us know that statistically, this tends
+
+129
+00:06:03,543 --> 00:06:05,205
+从统计上看，
+to be a good place for Nvidia to
+
+130
+00:06:05,205 --> 00:06:07,283
+Nvidia在这里常会反转或反弹。
+reverse or bounce if it sells off into this level.
+
+131
+00:06:07,285 --> 00:06:08,730
+这引起了我的注意。
+So that caught my attention.
+
+132
+00:06:08,730 --> 00:06:12,560
+这通常是我进一步分析前的关注点。
+That's usually what's going to catch my attention before I look to analyze a little further.
+
+133
+00:06:12,560 --> 00:06:15,810
+我不再使用任何扫描器。
+I'm not the type of person that uses any type of scanners anymore.
+
+134
+00:06:15,810 --> 00:06:17,907
+几年前，我常在Finviz上
+A few years ago, I used to be on Finviz
+
+135
+00:06:17,907 --> 00:06:20,004
+盘前盘后都待着，
+all the time, pre-market, after hours. I was always doing
+
+136
+00:06:20,004 --> 00:06:23,989
+总在研究，寻找第二天想交易的公司。
+a ton of research trying to find the next company that I wanted to trade for the following day.
+
+137
+00:06:23,990 --> 00:06:26,633
+现在，我只依赖Quant Trading App平台
+These days, I just rely on the Quant Trading App platform to
+
+138
+00:06:26,633 --> 00:06:28,395
+提示我是否需要进一步调查
+let me know if I should investigate a
+
+139
+00:06:28,395 --> 00:06:30,157
+价格走势，
+little bit further into price action, do a
+
+140
+00:06:30,157 --> 00:06:35,223
+做更多分析，判断是否买入权益或建立期权仓位。
+little bit more of analysis to see if I want to either buy more equity or put on some sort of options position.
+
+141
+00:06:35,225 --> 00:06:37,640
+大家可以看到150行权价，这里有信号叠加。
+So you guys can see 150, I had this confluence here.
+
+142
+00:06:37,640 --> 00:06:39,560
+我注意到gamma敞口的信号叠加。
+I had the confluence from the gamma exposure.
+
+143
+00:06:39,560 --> 00:06:41,435
+同时也在看图表。
+And then also looking at the chart.
+
+144
+00:06:41,435 --> 00:06:42,855
+哦，对，我这里有截图。
+So, oh yeah, I had a screenshot right here.
+
+145
+00:06:42,855 --> 00:06:44,337
+显示150行权价附近
+So showing that 150, there's a decent
+
+146
+00:06:44,337 --> 00:06:46,313
+有相当多的信号叠加，
+amount of confluence around the area, at least
+
+147
+00:06:46,313 --> 00:06:50,266
+足以让我相信价格会在此区间震荡几天。
+enough to believe that price is just going to consolidate around here for a few days.
+
+148
+00:06:50,515 --> 00:06:54,255
+但突发新闻事件我们无法预测。
+However, what we can't account for are breaking news events.
+
+149
+00:06:54,255 --> 00:06:56,374
+这也是大多数人
+And that's generally the reason most people
+
+150
+00:06:56,374 --> 00:06:58,796
+避免交易Nvidia这样的高贝塔股票的原因。
+avoid trading high beta stocks like Nvidia and
+
+151
+00:06:58,796 --> 00:07:01,824
+而是选择SPY、纳斯达克、SPX，
+stick to things like the SPY, the NASDAQ, the SPX,
+
+152
+00:07:01,824 --> 00:07:08,788
+或任何标普500的衍生品，无需担心其隔夜涨跌10%。
+any derivative of the S&P 500, because you don't have to worry about the S&P 500 being down 10% overnight or being up 10% overnight.
+
+153
+00:07:09,395 --> 00:07:15,440
+而个股很可能因突发新闻而大幅波动。
+And that's something that is very likely to happen with individual stocks because they're very susceptible to breaking news.
+
+154
+00:07:15,440 --> 00:07:17,872
+但即使是最坏情况，
+But even what can be considered almost a
+
+155
+00:07:17,872 --> 00:07:20,304
+比如开仓后几小时就遇到突发新闻，
+worst case scenario, which is a breaking news
+
+156
+00:07:20,304 --> 00:07:26,384
+事件就发生在你开仓后的几小时，然后一家巨头股票出现大幅抛售
+event literally a few hours right after you open a trade and then a massive sell-off on a huge company.
+
+157
+00:07:26,385 --> 00:07:31,420
+我想告诉大家，这笔交易最低点只亏损约30%。
+I want to let you guys know this trade was only down about 30% at the lows right here.
+
+158
+00:07:31,420 --> 00:07:36,600
+我最终加仓两手，持有两组150行权价的日历价差。
+And I ended up buying two lots of this. So I was in two of the 150 calendar.
+
+159
+00:07:36,600 --> 00:07:40,765
+这里拉出来看，这就是我之前展示的150行权价看跌日历价差。
+So if we pull this up right here, this would be the 150 put calendar, as I showed you guys earlier.
+
+160
+00:07:40,765 --> 00:07:41,900
+我持有两手。
+And I was in two lots.
+
+161
+00:07:41,900 --> 00:07:45,005
+我把图表放大，让大家看清我用了多少资金。
+I'll just bump this up so you guys can see exactly how much capital I was using.
+
+162
+00:07:45,005 --> 00:07:49,040
+大约1730美元，本是一笔小额交易。
+Using about $1,730 as it was intended to be a very small trade for me.
+
+163
+00:07:49,040 --> 00:07:53,600
+我只想在接下来5个交易日内赚250美元左右。
+And again, I was just looking for maybe 250 bucks or so over the next five trading days.
+
+164
+00:07:53,600 --> 00:07:57,700
+对我的账户规模和风险配置来说，这笔交易风险不大。
+So for my account size and my risk allocation, this is not a very risky trade.
+
+165
+00:07:57,700 --> 00:08:00,180
+Unfortunately，我最终平掉了这条腿。
+I ended up closing this leg out, unfortunately.
+
+166
+00:08:00,180 --> 00:08:04,380
+不得不接受300美元的亏损，因为第二天就跌了30%。
+So I had to realize a $300 loss as it was down 30% the following day.
+
+167
+00:08:04,380 --> 00:08:06,373
+但价格下跌后，
+But what I ended up doing right after
+
+168
+00:08:06,373 --> 00:08:07,867
+触及某个点位时，
+price sold off and it hit
+
+169
+00:08:07,867 --> 00:08:10,109
+我又加了一组日历价差。
+a certain point is I just added another tent.
+
+170
+00:08:10,110 --> 00:08:11,450
+大家可以看到这组，
+So you guys can see this tent,
+
+171
+00:08:11,450 --> 00:08:15,580
+目前盈利约156到158美元，涨幅16%。
+I'm currently up about $156, $158 right now or 16%.
+
+172
+00:08:15,580 --> 00:08:17,898
+如果我以20%的盈利止盈，
+And I'm now looking, if I took my
+
+173
+00:08:17,898 --> 00:08:19,926
+整体算下来，
+profit at the same 20%, it means overall
+
+174
+00:08:19,926 --> 00:08:22,244
+这笔交易只亏损约10%。
+I would have lost about 10% on the trade,
+
+175
+00:08:22,825 --> 00:08:26,520
+对这种最坏情况来说，亏损并不大。
+which is not a major loss considering this was a horrible case scenario.
+
+176
+00:08:26,520 --> 00:08:28,280
+如果我等到盈利30%再平仓，
+If I decide to hold this for 30%,
+
+177
+00:08:28,280 --> 00:08:30,291
+这组日历价差将抵消另一组的亏损，
+it means this tent will negate the other
+
+178
+00:08:30,291 --> 00:08:32,302
+最终我可能不亏不赚，
+tent and I'll end up losing no money,
+
+179
+00:08:32,555 --> 00:08:35,795
+尽管这本是最坏情况。
+even though this again was a worst case scenario here.
+
+180
+00:08:35,795 --> 00:08:37,788
+我平仓的原因是
+My reasons for closing the trade is
+
+181
+00:08:37,788 --> 00:08:39,781
+如果回到
+if we were to jump back to
+
+182
+00:08:39,781 --> 00:08:41,774
+这一步，我在这里添加了仓位。
+this, I believe I added right here.
+
+183
+00:08:41,775 --> 00:08:45,575
+我买入140行权价的看跌日历价差，成本4.79美元。
+So I added the 140 put calendar for $4.79.
+
+184
+00:08:45,575 --> 00:08:50,195
+当天晚些时候，我以30%亏损平仓。
+And then later that day, I ended up closing out the calendar for a 30% loss.
+
+185
+00:08:50,195 --> 00:08:54,825
+必须承认亏损，因为此时价格已远超盈利区间。
+So I had to realize this loss mostly because at this point, price was way beyond the tent.
+
+186
+00:08:54,825 --> 00:08:56,254
+这种情况我通常不会
+And that's something I generally don't
+
+187
+00:08:56,254 --> 00:08:58,159
+继续持有，因为我不想
+like to hold because I don't want to
+
+188
+00:08:58,159 --> 00:09:01,969
+寄希望于价格回到盈利区间。
+leave it up to faith or chance or hoping that price will return to the tent.
+
+189
+00:09:01,970 --> 00:09:03,801
+但这次是
+However, in this case, it was
+
+190
+00:09:03,801 --> 00:09:05,937
+极端抛售，而150仍是
+an extremely harsh sell-off and $150 was still
+
+191
+00:09:05,937 --> 00:09:08,683
+9月的关键价位。
+a very key level for the month of September.
+
+192
+00:09:08,990 --> 00:09:12,090
+可以看到，价格正努力回到该价位。
+So as we can see, price is fighting to return to that level.
+
+193
+00:09:12,090 --> 00:09:13,555
+所以我本可以同时持有这两个仓位。
+So I could have held both of them.
+
+194
+00:09:13,555 --> 00:09:15,172
+在某种程度上，如果我继续持有
+In a sense, if I was to hold
+
+195
+00:09:15,172 --> 00:09:16,789
+这两个仓位，你们会发现
+both of them, you guys can see that
+
+196
+00:09:16,789 --> 00:09:19,417
+两者组合起来实际上能让我盈利约20%。
+the combination of the two of these would actually put me up about 20%.
+
+197
+00:09:19,620 --> 00:09:20,720
+通过这两手仓位，
+So with the two lots,
+
+198
+00:09:20,720 --> 00:09:21,866
+我本会在周五平仓
+I would actually be closing them
+
+199
+00:09:21,866 --> 00:09:23,012
+或已经平仓，
+out or I would have closed
+
+200
+00:09:23,012 --> 00:09:24,923
+达到我的目标。
+them out on Friday, which would have hit my goal.
+
+201
+00:09:24,925 --> 00:09:26,708
+这是一笔交易，
+And we're talking about a trade that
+
+202
+00:09:26,708 --> 00:09:28,491
+在这里开仓，
+was open here and closed out a
+
+203
+00:09:28,491 --> 00:09:31,803
+一周半后平仓，如果我继续持有两个日历价差。
+week and a half later if I had continued to hold both calendars.
+
+204
+00:09:31,805 --> 00:09:32,882
+但由于我已在150行权价上承认亏损，
+But instead, because I realized
+
+205
+00:09:32,882 --> 00:09:34,175
+现在我持有140行权价，
+the loss on $150, now I'm holding
+
+206
+00:09:34,175 --> 00:09:35,468
+并试图从交易中再挤出些盈利。
+the $140 and I'm looking to just
+
+207
+00:09:35,468 --> 00:09:37,838
+你们有很多种应对方式。
+squeeze a little bit more P&L out of the trade.
+
+208
+00:09:38,055 --> 00:09:40,005
+另一种选择是，我本可以在这里重新买入150行权价的看涨日历价差。
+There's many different approaches you guys can have.
+
+209
+00:09:40,005 --> 00:09:44,155
+我本可以在下跌过程中增加权益，
+Another thing I could have done is I could have re-entered the $150 call calendar here.
+
+210
+00:09:44,155 --> 00:09:45,999
+I could have bought more equity as we
+
+211
+00:09:45,999 --> 00:09:47,843
+回落到这个价位时
+came back down to this level, or I
+
+212
+00:09:47,843 --> 00:09:49,687
+或直接买入裸看涨期权
+could have just actually purchased a naked call
+
+213
+00:09:49,687 --> 00:09:51,531
+或进入某种看涨借差策略
+option at that point or enter in some
+
+214
+00:09:51,531 --> 00:09:56,833
+因为有足够迹象显示短期内可能不会再跌
+sort of bull debit spread because there was enough confluence to say that we would probably not go lower in the short term.
+
+215
+00:09:56,835 --> 00:10:00,630
+但仓位太小，这周我直接忽略了
+But because the position was so small, I actually ended up neglecting it this week.
+
+216
+00:10:00,630 --> 00:10:02,890
+这会是我未来需要提醒自己的
+And that's something I'll remind myself in the future.
+
+217
+00:10:02,890 --> 00:10:07,855
+我决定止损的另一个原因是
+Another reason why I realized the loss on the trade is these are the quantifiable levels again.
+
+218
+00:10:07,855 --> 00:10:12,005
+这些是关键价位
+And once we broke below this intraday zone right here, it was just looking way too ugly.
+
+219
+00:10:12,005 --> 00:10:13,330
+一旦跌破这个日内区间
+And at this point, you never know.
+
+220
+00:10:13,330 --> 00:10:16,225
+形势就变得非常难看
+Again, it was a fundamental catalyst in the stock.
+
+221
+00:10:16,225 --> 00:10:20,855
+我记得当时有消息称，英伟达可能会被禁止向中国出售半导体芯片。
+I believe the news was there was going to be a ban on Nvidia selling the semiconductor chips to China.
+
+222
+00:10:20,855 --> 00:10:26,000
+这可能会影响他们的营收，以及接下来的财报或未来几个季度的业绩。
+And I can imagine that would affect their revenue and the next earnings or the next few quarters earnings.
+
+223
+00:10:26,000 --> 00:10:29,915
+新闻是英伟达可能被禁售芯片给中国
+So fundamentally, there was probably a ton of investors that were liquidating some of their positions.
+
+224
+00:10:29,915 --> 00:10:32,084
+这可能影响其营收和未来几个季度的业绩
+And in that case, you never know because
+
+225
+00:10:32,084 --> 00:10:33,982
+所以基本面上
+we could have easily continued to sell
+
+226
+00:10:33,982 --> 00:10:36,693
+可能有大量投资者在抛售
+all the way off to 124, even wherever were the high,
+
+227
+00:10:36,965 --> 00:10:41,020
+接下来的高gamma行权价。让我有些担忧的是，我进行gamma敞口分析时，
+the next high gamma strikes. What made me a little bit concerned is when I did the gamma exposure analysis,
+
+228
+00:10:41,020 --> 00:10:44,310
+价格可能轻松跌至124
+I know there really wasn't much gamma exposure below these levels.
+
+229
+00:10:44,310 --> 00:10:45,893
+甚至跌至前期高点
+And that made me a little bit
+
+230
+00:10:45,893 --> 00:10:47,476
+或下一个高Gamma行权价
+nervous because it meant I didn't really
+
+231
+00:10:47,476 --> 00:10:49,738
+让我担忧的是做Gamma敞口分析时
+know where the next clear support was going to be.
+
+232
+00:10:49,740 --> 00:10:53,225
+发现这些价位下方Gamma敞口很少
+And I don't rely on support just from technical analysis.
+
+233
+00:10:53,225 --> 00:10:54,297
+这让我有些紧张
+In other words, just from
+
+234
+00:10:54,297 --> 00:10:55,799
+因为这意味着
+going at the chart and then drawing
+
+235
+00:10:55,799 --> 00:10:58,374
+我不知道下一个明确支撑在哪里
+a line here and maybe seeing that there was another support here.
+
+236
+00:10:58,375 --> 00:11:03,400
+而且我不会仅依赖技术分析的支撑
+Once this broke, the thought process could have been we could be going to 120, maybe even 110.
+
+237
+00:11:03,400 --> 00:11:05,130
+换句话说
+And I don't rely just on those.
+
+238
+00:11:05,130 --> 00:11:09,135
+我需要其他信号来确认，可能会有某种支撑。
+I need something else to kind of confirm that there's probably going to be some sort of support.
+
+239
+00:11:09,135 --> 00:11:14,720
+可能是gamma敞口，可能是成交量分布图，甚至可能是量化交易应用的价位。
+If it's the gamma exposure, maybe if it's a volume profile, maybe if it's even the quant trading app levels.
+
+240
+00:11:14,720 --> 00:11:18,950
+一旦跌破，思路可能是会跌到120
+But in this case, we were exceeding all of the support levels that I had left on the chart.
+
+241
+00:11:18,950 --> 00:11:19,940
+所以我在观察这里。
+So I was watching it here.
+
+242
+00:11:19,940 --> 00:11:21,568
+而它突破的方式
+And the fact that the way it broke
+
+243
+00:11:21,568 --> 00:11:22,993
+跌破这个位不太理想。
+down below this level is not something
+
+244
+00:11:22,993 --> 00:11:24,214
+这不是我想看到的。
+that I really like to see.
+
+245
+00:11:24,215 --> 00:11:25,335
+通常30%是
+And again, 30% is generally
+
+246
+00:11:25,335 --> 00:11:27,296
+非方向性日历价差策略的
+where you want to cap out a
+
+247
+00:11:27,296 --> 00:11:29,257
+止损上限，如果你目标是20%
+loss if you're looking to make a 20%
+
+248
+00:11:29,257 --> 00:11:32,618
+的投资回报率。
+return on your investment for something such as a non-directional calendar spread.
+
+249
+00:11:33,180 --> 00:11:35,164
+因为非方向性日历价差策略的胜率
+Because your win rate with non-directional calendar spreads,
+
+250
+00:11:35,164 --> 00:11:36,900
+尤其是加入其他合约后，
+especially once you add the other 10s,
+
+251
+00:11:36,900 --> 00:11:38,388
+会非常高，
+it's going to be very high,
+
+252
+00:11:38,390 --> 00:11:41,965
+特别是在关键价位开仓，比如150行权价。
+especially if you open them around key levels, such as the 150 was.
+
+253
+00:11:41,965 --> 00:11:45,360
+所以即使目标20%回报，你也能承担更大风险。
+So you can risk a little bit more, even if you're looking to make 20%.
+
+254
+00:11:45,360 --> 00:11:48,465
+我知道对新手来说，这听起来有点奇怪。
+And I know if you're new to trading this type of way, that seems a little bit weird.
+
+255
+00:11:48,465 --> 00:11:51,400
+你实际上可以设置更宽的止损。
+You're actually... you have a wider stop loss.
+
+256
+00:11:51,400 --> 00:11:55,425
+通常，目标30%回报时，止损设在10%。
+Generally, you want to have maybe a 10% stop loss if you're looking to make 30% or so.
+
+257
+00:11:55,425 --> 00:11:58,540
+但这种交易方式，你可以给它更大空间，
+But for this style of trading, you can actually give it a little bit more room,
+
+258
+00:11:58,540 --> 00:12:02,260
+因为胜率会远高于传统方向性交易
+again, because your probability of success is going to be much higher
+
+259
+00:12:02,260 --> 00:12:05,050
+或直接买入裸期权。
+than your traditional picking direction or buying naked options.
+
+260
+00:12:05,050 --> 00:12:09,620
+现在，我们来看交易开仓后的盈亏表现。
+Now, let's take a look at how the P&L actually performed as the trades were open.
+
+261
+00:12:09,620 --> 00:12:11,740
+各位可以看到，开仓点在这里。
+So as you guys can see, it was opened right here.
+
+262
+00:12:11,740 --> 00:12:15,380
+第二天就下跌了29%、30%左右。
+And then the following day, it was down 29, 30% or so.
+
+263
+00:12:15,380 --> 00:12:18,042
+现在可以看到，这笔交易随着价格回到150行权价，
+And now we can see that this trade is now coming back
+
+264
+00:12:18,042 --> 00:12:20,482
+逐渐转盈。
+into the green as the video is returning to the 150 strike.
+
+265
+00:12:20,705 --> 00:12:22,573
+如果我们拉近看这里，
+And then if we actually pull this up right here,
+
+266
+00:12:22,573 --> 00:12:23,507
+各位可以看到，
+you guys can see this
+
+267
+00:12:23,507 --> 00:12:24,627
+这是开仓的140行权价合约。
+was the 140 tenths that was open.
+
+268
+00:12:24,815 --> 00:12:29,025
+这笔交易在开仓第一天后就开始盈利，
+And this one started returning our profit pretty much right after the first day in which it was open.
+
+269
+00:12:29,025 --> 00:12:31,810
+并且持续增值。
+And it's just been continuing to increase in value.
+
+270
+00:12:31,810 --> 00:12:35,270
+它正在弥补另一笔的亏损。
+And that is something that this one is helping offset the loss from this one.
+
+271
+00:12:35,270 --> 00:12:36,881
+但大家可以看到，如果我继续持有
+But as you guys can see, if I remained in
+
+272
+00:12:36,881 --> 00:12:38,654
+这两个头寸，我就能达到盈利目标
+both of them, I would have been hitting my profit target.
+
+273
+00:12:38,655 --> 00:12:40,934
+现在看我的风险收益曲线
+If we take a look at my current risk profile
+
+274
+00:12:40,934 --> 00:12:42,301
+这是Thinkorswim平台
+right now, this is the Thinkorswim
+
+275
+00:12:42,301 --> 00:12:45,491
+大家可以看到，我目前持有两手，行权价最高到158美元
+platform, you guys can see I'm in two lots of these currently up to $158.
+
+276
+00:12:45,720 --> 00:12:48,687
+假设我快进到本周
+And if I were to jump forward to let's just
+
+277
+00:12:48,687 --> 00:12:51,060
+比如周二（13日）
+say the 13th, which would be this week,
+
+278
+00:12:51,060 --> 00:12:55,807
+如果标的仍在这个区间，我能获利约246美元
+Tuesday here, I'll end up pulling in about $246 if the video is still in this area.
+
+279
+00:12:56,105 --> 00:12:57,928
+但现在的风险是
+Now I'm at risk as if the
+
+280
+00:12:57,928 --> 00:12:59,751
+如果标的继续涨到150
+video continues to go up to 150. And
+
+281
+00:12:59,751 --> 00:13:03,398
+并在本周收于150附近，我大部分利润会化为乌有
+if it ends the week around 150, I'll actually be forfeiting most of my profits.
+
+282
+00:13:03,920 --> 00:13:06,335
+所以我需要做个决定
+So I'm going to need to make some sort of a decision
+
+283
+00:13:06,335 --> 00:13:07,945
+是否在周内提前获利了结
+here if I want to take the profits
+
+284
+00:13:07,945 --> 00:13:11,165
+还是认为它会在这个区间波动
+early in the week, or if I still think it's going to hover around this area.
+
+285
+00:13:11,165 --> 00:13:14,000
+理想情况是它回落到140
+Ideally, I would like it to pull back to 140.
+
+286
+00:13:14,000 --> 00:13:16,019
+如果跳到周三
+And if we jumped to the Wednesday and
+
+287
+00:13:16,019 --> 00:13:17,785
+标的回落到140，大家可以看到
+the video pulled back to 140, you guys
+
+288
+00:13:17,785 --> 00:13:21,571
+我几乎会回到持平点
+can see I'll actually be close to my break even around that point right here.
+
+289
+00:13:21,825 --> 00:13:23,872
+显然，如果我持有到周五到期
+And obviously, if I held it into expiration
+
+290
+00:13:23,872 --> 00:13:27,199
+这笔交易整体可能还是盈利的
+on Friday, I could actually end up being green overall in the trade.
+
+291
+00:13:27,200 --> 00:13:28,943
+所以需要做个决定
+So a little bit of a decision to
+
+292
+00:13:28,943 --> 00:13:30,686
+如果操作起来太复杂
+be made if it ends up being too
+
+293
+00:13:30,686 --> 00:13:34,173
+或问题太多，我会直接落袋为安
+cumbersome or too much of a problem for me, I'll just realize whatever gains there are.
+
+294
+00:13:34,175 --> 00:13:36,297
+我考虑过加回150行权价的头寸
+I was considering adding back the 150 tenths,
+
+295
+00:13:36,297 --> 00:13:38,419
+但通常我不喜欢
+but I generally don't like to make
+
+296
+00:13:38,419 --> 00:13:40,541
+对短期合约做太多调整
+those many adjustments to such short-dated contracts.
+
+297
+00:13:40,845 --> 00:13:42,901
+我更倾向于
+I'd much rather maybe just take my chances
+
+298
+00:13:42,901 --> 00:13:44,957
+如果看到日内看涨信号
+with a naked call option if I see
+
+299
+00:13:44,957 --> 00:13:47,013
+就直接买入裸看涨期权
+some sort of intraday bullish setup, and if
+
+300
+00:13:47,013 --> 00:13:48,812
+并在日内波动中获利约200美元
+I realize maybe $200 intraday on a scalper.
+
+301
+00:13:49,070 --> 00:13:51,123
+我会把这笔收益
+So I'll add that to the P&L from
+
+302
+00:13:51,123 --> 00:13:52,720
+加到之前的损益里
+here, and it ends up being an
+
+303
+00:13:52,720 --> 00:13:55,457
+最终这两周整体净盈利
+overall net gain on the video over last week and this week.
+
+304
+00:13:55,230 --> 00:13:57,435
+这正是我要达成的目标
+And that's just something that I'm looking to achieve.
+
+305
+00:13:57,435 --> 00:14:00,005
+回顾各个日历价差策略
+So to review the individual calendars,
+
+306
+00:14:00,005 --> 00:14:01,743
+我习惯按单个合约
+I like to save things in terms of
+
+307
+00:14:01,743 --> 00:14:03,481
+来保存数据
+one lot. So just one contract, even though
+
+308
+00:14:03,481 --> 00:14:06,739
+虽然我做了两手，但这样便于查看希腊值
+I was in two of them, because I like to save the Greeks that way.
+
+309
+00:14:06,740 --> 00:14:11,850
+比如这里，我的theta约为10美元，vega约为10美元
+So as we can see right here, my Theta was about around $10 and the Vega was around $10.
+
+310
+00:14:11,850 --> 00:14:13,840
+当时隐含波动率是55%
+The implied volatility at the time was 55%.
+
+311
+00:14:13,840 --> 00:14:16,640
+现在隐含波动率降到48%
+And we can see that the implied volatility is now 48%.
+
+312
+00:14:16,640 --> 00:14:18,900
+虽然隐含波动率下降
+So even though the implied volatility has dropped,
+
+313
+00:14:18,900 --> 00:14:21,069
+但只是压缩了盈利区间
+all that's done is just shrunk the profitability
+
+314
+00:14:21,069 --> 00:14:22,967
+因为开仓时的盈亏平衡点是139
+zone for this calendar because the break-evens
+
+315
+00:14:22,967 --> 00:14:25,407
+盈利区间最初从139
+when it first was opened was 139, which means it
+
+316
+00:14:25,407 --> 00:14:30,016
+一直到163
+accounted the tenths look something like this all the way out here, all the way up to 163.
+
+317
+00:14:30,560 --> 00:14:35,645
+现在上方损失约3美元，下方也几乎损失相同金额
+And now it's lost about $3 up here and it's lost about almost the same amount down here.
+
+318
+00:14:35,645 --> 00:14:39,735
+盈利区间略有压缩，因为隐含波动率下降
+So it's just shrunk the calendar a little bit. And that's just because the implied volatility has come down.
+
+319
+00:14:39,735 --> 00:14:44,340
+开仓时近月合约隐含波动率是57%
+When I first opened the trade, the implied volatility was 57% for the front month.
+
+320
+00:14:44,340 --> 00:14:46,060
+随后它还出现了飙升
+And then it ended up spiking.
+
+321
+00:14:46,060 --> 00:14:52,160
+比如跳到140行权价，隔天就涨到61%
+If we were to jump to the 140, we can see that the next day it was 61%.
+
+322
+00:14:52,160 --> 00:14:54,045
+这种情况也不理想
+So that's something that's also not good.
+
+323
+00:14:54,045 --> 00:14:57,850
+近月隐含波动率暴涨会损害你的损益
+The implied volatility jumping that much on the front month is going to harm your P&L.
+
+324
+00:14:57,850 --> 00:14:59,840
+但当我开新仓时
+But then when I open up the
+
+325
+00:14:59,840 --> 00:15:01,261
+你会从中受益
+new tenths, you're going to
+
+326
+00:15:01,261 --> 00:15:04,388
+因为现在你在更高隐含波动率下卖出
+benefit from that because now you're shorting at higher implied volatility.
+
+327
+00:15:04,390 --> 00:15:07,515
+当隐含波动率下降时，这会帮到你
+So when this implied volatility decreases, that's going to help you.
+
+328
+00:15:07,515 --> 00:15:13,120
+大家可以看到，远月合约隐含波动率上升了50
+As you guys can see, the back month increased by 50. This was 58%. And the day before it was only 57%.
+
+329
+00:15:13,120 --> 00:15:21,680
+远月合约隐含波动率上涨约1.6%，近月合约则上涨近3%
+So the back month increased a little over 1.6% or so in implied volatility, but the front month increased almost 3%.
+
+330
+00:15:21,680 --> 00:15:22,499
+你会从中受益
+So you're benefiting
+
+331
+00:15:22,499 --> 00:15:24,411
+你受益于…但开仓时
+from... but you're benefiting when you open
+
+332
+00:15:24,411 --> 00:15:26,323
+你就已从非方向性日历价差中受益
+up a non-directional calendar spread and then
+
+333
+00:15:26,323 --> 00:15:29,054
+若现货价格下跌，你再开一个十字价差
+the spot price drops and you open up another tenth.
+
+334
+00:15:29,055 --> 00:15:31,985
+这对你其实有双重好处
+That's actually beneficial to you in both ways.
+
+335
+00:15:31,985 --> 00:15:34,143
+但很多情况下，当你开仓
+But in many instances, whenever you open
+
+336
+00:15:34,143 --> 00:15:36,301
+非方向性日历价差后
+up a non-directional calendar spread and then
+
+337
+00:15:36,301 --> 00:15:38,459
+现货价格下跌，隐含波动率上升
+the spot price drops, implied volatility rises.
+
+338
+00:15:38,460 --> 00:15:41,415
+再开其他十字价差时，你通常能从中受益
+When you open up the other tenths, you're generally going to benefit from that.
+
+339
+00:15:41,415 --> 00:15:42,870
+当然，这取决于你的期限结构
+Again, it depends on your term structure.
+
+340
+00:15:42,870 --> 00:15:44,838
+在这次交易中，我的远月合约
+In this case, my back month all
+
+341
+00:15:44,838 --> 00:15:46,806
+在这里的表现
+the way out here was not as
+
+342
+00:15:46,806 --> 00:15:48,774
+对隐含波动率飙升不那么敏感
+sensitive to the spike in implied volatility.
+
+343
+00:15:48,775 --> 00:15:50,520
+我是故意这么设计的，因为
+And I did that intentionally because I
+
+344
+00:15:50,520 --> 00:15:52,265
+我不希望远月合约
+didn't want my back month to be
+
+345
+00:15:52,265 --> 00:15:53,761
+过于敏感
+sensitive, again, because this is a
+
+346
+00:15:53,761 --> 00:15:55,257
+毕竟NVIDIA是高贝塔股
+high beta stock such as NVIDIA.
+
+347
+00:15:55,260 --> 00:15:57,651
+如果交易标普500或SPY，
+If I'm running the SPX or the SPY, I generally
+
+348
+00:15:57,651 --> 00:15:59,325
+我通常不会把期限结构设得这么宽
+won't have my term structures so wide.
+
+349
+00:15:59,325 --> 00:16:00,999
+会稍微紧凑一些
+I make them a little bit tighter.
+
+350
+00:16:01,000 --> 00:16:02,820
+这只是给大家的小建议
+But that's just a little bit of a tip for you guys.
+
+351
+00:16:02,820 --> 00:16:04,797
+再说，若你开非方向性日历价差
+Again, if you open up a non-directional calendar
+
+352
+00:16:04,797 --> 00:16:06,527
+而股价因突发新闻暴跌
+and the stock price drops drastically because
+
+353
+00:16:06,527 --> 00:16:08,009
+你只需再开一个十字价差
+of some sort of breaking news,
+
+354
+00:16:08,010 --> 00:16:10,315
+监控盈亏、监控希腊值
+all you have to do is just open up another tent,
+
+355
+00:16:10,315 --> 00:16:16,170
+然后决定是否平仓原十字价差
+monitor your P&L, monitor your Greeks, decide if you want to close the original tent out.
+
+356
+00:16:16,170 --> 00:16:17,908
+你总能在下方再加一个十字价差
+You can always add another tent
+
+357
+00:16:17,908 --> 00:16:19,646
+本质上
+to the bottom side and you're
+
+358
+00:16:19,646 --> 00:16:21,964
+只是在调整十字价差的位置
+essentially just looking to move the tent around
+
+359
+00:16:21,964 --> 00:16:24,282
+围绕现货价格
+the spot price and eventually the stock price
+
+360
+00:16:24,282 --> 00:16:26,600
+最终股价希望在到期前回到你的十字价差区间
+will consolidate within your tent, hopefully before expiration
+
+361
+00:16:26,600 --> 00:16:28,048
+就能实现目标。
+and you'll meet your goal.
+
+362
+00:16:28,050 --> 00:16:29,606
+显然，我开仓时，
+Obviously, when I first opened it, I
+
+363
+00:16:29,606 --> 00:16:31,162
+本可以同时开两个
+could have also opened up a double
+
+364
+00:16:31,162 --> 00:16:33,163
+日历价差策略。
+calendar, which is something that I will do sometimes.
+
+365
+00:16:33,165 --> 00:16:34,627
+但这次我没这么做，
+But in this case, I didn't want
+
+366
+00:16:34,627 --> 00:16:36,297
+因为如前所述，
+to do that because as I said, my
+
+367
+00:16:36,297 --> 00:16:37,759
+我其实认为NVIDIA
+bias was actually thinking that NVIDIA was
+
+368
+00:16:37,759 --> 00:16:39,638
+会在未来一周内上涨。
+going to jump over the next week or so.
+
+369
+00:16:39,640 --> 00:16:40,952
+所以别像这样开双日历，
+So you don't want to open up
+
+370
+00:16:40,952 --> 00:16:42,264
+否则如果SPY价格反弹，
+a double calendar like this and then
+
+371
+00:16:42,264 --> 00:16:43,764
+你就得平仓，
+the SPY price ends up bouncing because then
+
+372
+00:16:43,764 --> 00:16:47,139
+你需先平仓，再逐步加仓到这一区间。
+you have to close out this trade and then add the other tents all the way up here.
+
+373
+00:16:47,140 --> 00:16:49,470
+这样会增加风险敞口。
+And then you're opening up yourself to a little bit more risk.
+
+374
+00:16:49,470 --> 00:16:50,957
+如果你对SPY价格不确定，
+If you're unsure about the SPY price
+
+375
+00:16:50,957 --> 00:16:52,444
+但仍认为它会
+and you still think it's going to
+
+376
+00:16:52,444 --> 00:16:54,144
+继续朝某个方向走，
+continue in a certain direction, in this case,
+
+377
+00:16:54,145 --> 00:16:56,580
+比如NVIDIA从160跌到150。
+NVIDIA sold off from 160 all the way down to 150.
+
+378
+00:16:56,580 --> 00:17:01,390
+如果你认为它还会继续下跌，
+If you think it's going to continue to sell, you can just open up a double calendar like this.
+
+379
+00:17:01,390 --> 00:17:04,955
+看这笔交易的盈亏，成本约10美元。
+If we take a look at the P&L from in this case here, it would have cost about 10 bucks.
+
+380
+00:17:04,955 --> 00:17:07,490
+看这组合的风险收益曲线，
+So the combination of both calendars, which makes sense.
+
+381
+00:17:07,490 --> 00:17:10,620
+成本大约10美元。
+The next day, this trade was down a lot less than the 30%.
+
+382
+00:17:10,620 --> 00:17:12,905
+这符合双日历的逻辑。
+And then you guys can see it's, it's up right now.
+
+383
+00:17:12,905 --> 00:17:14,500
+第二天，这笔交易
+And then more than likely within this
+
+384
+00:17:14,500 --> 00:17:15,867
+亏损远低于30%。
+week, it's going to hit the 20,
+
+385
+00:17:15,867 --> 00:17:17,918
+现在你们看到，它已盈利。
+25% return as you would expect on something like this.
+
+386
+00:17:18,375 --> 00:17:19,630
+本周内很可能
+Well, within the time here.
+
+387
+00:17:19,630 --> 00:17:21,665
+达到20%到25%的收益，
+So in the future, something to keep in mind,
+
+388
+00:17:21,665 --> 00:17:23,046
+这符合预期。
+but again, my reasons for not
+
+389
+00:17:23,046 --> 00:17:25,118
+未来可以考虑这个思路，
+wanting to open it this way is because I
+
+390
+00:17:25,118 --> 00:17:27,420
+但我这次没这么做，
+wanted to leave room for if we gapped down to
+
+391
+00:17:27,420 --> 00:17:29,722
+或开新盈利区间，或现货价格反弹，
+open up another tent or if the spot price bounce,
+
+392
+00:17:29,722 --> 00:17:34,327
+我会在这里再开一个盈利区间，然后让价格在这一范围内整固。
+I would have opened up another tent around here and then I would have let it consolidate in that range.
+
+393
+00:17:34,330 --> 00:17:35,918
+我在这个案例中唯一做的事，
+The only thing that I did in this
+
+394
+00:17:35,918 --> 00:17:39,095
+就是平掉了150行权价的合约，这本不是我想做的。
+case is I closed the 150 and that's not something that I would have wanted to do.
+
+395
+00:17:39,295 --> 00:17:40,500
+抱歉，这一点我道歉。
+Actually, sorry about that.
+
+396
+00:17:40,500 --> 00:17:42,008
+如果完全镜像我的持仓，
+This would actually be a put also if
+
+397
+00:17:42,008 --> 00:17:43,328
+这其实也是一个卖出期权。
+I was to completely mirror what I
+
+398
+00:17:43,328 --> 00:17:45,968
+所以结果几乎相同。
+was in. So it's going to end up being about the same thing here.
+
+399
+00:17:45,970 --> 00:17:47,077
+无论是买入看涨还是看跌期权，
+Not much change if it was the
+
+400
+00:17:47,077 --> 00:17:49,449
+因为最终都是平值状态。
+put on call, because at the end of the day, it was at the money.
+
+401
+00:17:49,450 --> 00:17:53,520
+希望刚才的例子能解答你的疑问。
+But hopefully that example that I just made would help explain a question you might've thought of.
+
+402
+00:17:53,520 --> 00:17:55,725
+为什么不直接开双日历价差策略？
+Why don't, why not just open double calendars?
+
+403
+00:17:55,725 --> 00:17:56,940
+主要原因是，
+It main reason is because
+
+404
+00:17:56,940 --> 00:17:58,641
+你会暴露更多风险。
+you're opening yourself up. Yes, you have
+
+405
+00:17:58,641 --> 00:18:00,586
+是的，盈利概率更高，
+a higher probability of profit, but you're opening
+
+406
+00:18:00,586 --> 00:18:02,531
+但你也会让自己对波动率更敏感。
+up yourself to be a lot more sensitive
+
+407
+00:18:02,531 --> 00:18:04,476
+因为一旦开两个日历价差，
+to Vega because once you add two calendars,
+
+408
+00:18:04,476 --> 00:18:13,958
+vega会是单个的两倍，隐含波动率下降时，你的盈利区间会收窄。
+the Vega is going to be double what it would be as if you're in a single calendar, which means if implied volatility was to decrease, you're going to deal with the shrinkage of the middle of your tents.
+
+409
+00:18:13,960 --> 00:18:15,665
+而单个策略就不用担心这个问题。
+In this case, you won't have to worry about that.
+
+410
+00:18:15,665 --> 00:18:19,430
+但我的意思是，假设你开这样的日历价差。
+But what I mean by that is, let's just say you open up some sort of calendar like this.
+
+411
+00:18:19,430 --> 00:18:20,963
+各位可以看到，
+You guys can see as implied
+
+412
+00:18:20,963 --> 00:18:23,008
+如果隐含波动率下降，
+volatility drops, it means even if the spot
+
+413
+00:18:23,008 --> 00:18:25,053
+即使现货价格保持在两个盈利区间内，
+price remains in between your two tents, there's
+
+414
+00:18:25,053 --> 00:18:27,098
+仍有可能亏损，
+a risk that you still won't make any
+
+415
+00:18:27,098 --> 00:18:36,044
+因为隐含波动率下降会压缩你的盈利区间，中间斜率会导致损益表现变差。
+money because as implied volatility is decreasing, it's shrinking the width of your tents right there and your slope in the middle is going to end up causing a negative performance on your P&L.
+
+416
+00:18:35,790 --> 00:18:36,810
+这是其中一个风险。
+So that's one of the risks.
+
+417
+00:18:36,810 --> 00:18:39,335
+所以每个策略都有适用的时机和场景。
+So every strategy has a time and place for it.
+
+418
+00:18:39,335 --> 00:18:40,760
+更灵活的做法是
+The more versatile option is to
+
+419
+00:18:40,760 --> 00:18:42,185
+只用单个盈利区间，
+just go with the single tents
+
+420
+00:18:42,185 --> 00:18:43,610
+然后再逐步增加。
+and then just add the one
+
+421
+00:18:43,610 --> 00:18:49,548
+选择是否平仓原合约，或继续持有两者。
+that you need. Decide if you want to close out the original one or decide if you then want to hold the both of them.
+
+422
+00:18:49,550 --> 00:18:52,980
+大家好，如果喜欢这个视频，
+Guys, if you enjoyed this video, let me know in the comments down below.
+
+423
+00:18:52,980 --> 00:18:54,595
+请点赞，如果有所收获。
+Make sure to like the video if you learned something.
+
+424
+00:18:54,595 --> 00:18:56,730
+想看更多类似内容，告诉我。
+If you want to see more content like this, let me know.
+
+425
+00:18:56,730 --> 00:18:58,680
+感谢观看，下期见。
+Thanks for watching guys and I'll catch you in the next one.
+
+===== END AFTER_TRANSLATE =====

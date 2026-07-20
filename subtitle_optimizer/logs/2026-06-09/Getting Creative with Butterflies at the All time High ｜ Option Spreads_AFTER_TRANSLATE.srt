@@ -1,0 +1,2110 @@
+===== AFTER_TRANSLATE (422 entries) =====
+1
+00:00:00,000 --> 00:00:01,275
+大家好，我是Brian。
+What's going on, guys? Brian's here.
+
+2
+00:00:01,275 --> 00:00:03,570
+今天是2024年11月8日，星期五。
+Today is Friday, November 8th, 2024.
+
+3
+00:00:03,570 --> 00:00:04,915
+市场目前正在交易，
+The market is currently open, so
+
+4
+00:00:04,915 --> 00:00:06,933
+我会快速讲解，
+excuse me if I'm talking pretty quickly, as I
+
+5
+00:00:06,933 --> 00:00:11,418
+因为内容很多，我还有持仓需要主动管理。
+have a lot I would love to cover and I have some positions that I would actively like to manage.
+
+6
+00:00:11,420 --> 00:00:14,260
+这是我E-Mini期货的风险曲线。
+This is my risk profile on the E-mini futures.
+
+7
+00:00:14,260 --> 00:00:15,640
+也就是ES期货。
+So this is the ES.
+
+8
+00:00:15,640 --> 00:00:18,895
+我目前持有0DTE断翼蝶式（broken wing butterfly）。
+I'm in a broken wing butterfly that is 0DTE.
+
+9
+00:00:18,895 --> 00:00:20,875
+这是该持仓的盈亏情况。
+This is the P&L on this position right here.
+
+10
+00:00:20,875 --> 00:00:22,535
+我们来分析这个持仓。
+We're going to cover this position.
+
+11
+00:00:22,535 --> 00:00:26,500
+再看看交易者为何会考虑这种策略。
+We'll take a look at why a trader might consider running a position like that.
+
+12
+00:00:26,500 --> 00:00:29,900
+左边是SPY，右边是标普500指数。
+This is the SPY on the left-hand side here, and this is the SPX.
+
+13
+00:00:29,900 --> 00:00:34,985
+As we can see, the market just hit 6,000 for the first time, so we have a new all-time high.
+
+14
+00:00:34,985 --> 00:00:40,215
+我们还会看一个标普500指数的波段交易，
+We'll take a look at a swing trade on a different type of broken wing butterfly on the SPX.
+
+15
+00:00:40,215 --> 00:00:42,090
+使用另一种断翼蝶式，从昨天持续到今天。
+This is from yesterday into today.
+
+16
+00:00:42,090 --> 00:00:44,153
+同样看ES期货
+We'll take a look at the same ES
+
+17
+00:00:44,153 --> 00:00:45,958
+的0DTE断翼蝶式，
+broken wing butterfly that's 0DTE on option
+
+18
+00:00:45,958 --> 00:00:52,404
+在期权策略平台上，方便大家理解界面，或者如果你不是swim用户的话。
+strat, if it makes it a little bit easier for you to understand this user interface, or if you're not, I think, a swim user.
+
+19
+00:00:52,405 --> 00:00:56,640
+快速更新一下本周早些时候的波段断翼蝶式。
+Just a quick update on the broken wing butterfly that I swung from earlier in the week.
+
+20
+00:00:56,640 --> 00:00:59,905
+可能大家几天前的视频里见过这个。
+You guys might recognize this from a video that came out a couple days ago.
+
+21
+00:00:59,905 --> 00:01:01,660
+最后，在Quant
+And then lastly, in the Quant
+
+22
+00:01:01,660 --> 00:01:03,415
+交易App的Discord里，
+Trading App Discord, some of the
+
+23
+00:01:03,415 --> 00:01:07,803
+有今天早些时候的gamma敞口，以及Quant交易App的专有交易引擎数据。
+gamma exposure from earlier today, as well as the Quant Trading App proprietary trade engine.
+
+24
+00:01:07,805 --> 00:01:13,990
+部分数据指向6,000点，这也是我为何瞄准6,000行权价的关键原因。
+So some of the data targeting 6,000, as this was a key reason as to why I was targeting the 6,000 strike.
+
+25
+00:01:13,990 --> 00:01:16,510
+先从昨天的波段交易开始。
+Let's start first with the swing trade from yesterday.
+
+26
+00:01:16,510 --> 00:01:17,915
+这是市场收盘前
+This was just before the market
+
+27
+00:01:17,915 --> 00:01:19,320
+的时段。
+closed. So everything is in Eastern
+
+28
+00:01:19,320 --> 00:01:21,428
+这里都是美国东部时间，距离收盘还有3分钟。
+time here, so three minutes before the markets close.
+
+29
+00:01:21,430 --> 00:01:23,559
+其实指数和部分ETF期权
+You can actually trade index and some ETF
+
+30
+00:01:23,559 --> 00:01:25,422
+可以在收盘后15分钟内交易，
+options 15 minutes after the market closes, if
+
+31
+00:01:25,422 --> 00:01:29,148
+如果受PDT限制，想做隔夜波段交易
+you're under PDT and you're looking for a swing trade into the next day.
+
+32
+00:01:29,415 --> 00:01:33,395
+这是一个低成本的1DTE，押注SPICE达到600
+Now I mentioned this is a cheap 1DTE shot at the SPICE hitting 600.
+
+33
+00:01:33,395 --> 00:01:36,430
+这就是我在这里开的相同组合
+So this is the same spread opened right here.
+
+34
+00:01:36,430 --> 00:01:41,150
+现在权利金回报率已超200%
+It's now hitting over 200% return on the debit, not the max loss.
+
+35
+00:01:41,150 --> 00:01:43,945
+这是该交易的保证金要求
+This is the margin requirement for a trade like this.
+
+36
+00:01:43,945 --> 00:01:46,565
+这是实际开仓的权利金支出
+And this is how much you are actually debited to open a trade.
+
+37
+00:01:46,565 --> 00:01:51,940
+显示回报率超250%，因为相对权利金确实超250%
+So it's showing it's up over 250% because it is up over 250% from the debit.
+
+38
+00:01:51,940 --> 00:01:54,244
+但如果计算保证金回报率
+However, if you're actually calculating your
+
+39
+00:01:54,244 --> 00:01:56,548
+就要用实际抵押品或保证金要求
+return on margin, you would want
+
+40
+00:01:56,548 --> 00:02:00,773
+来计算了
+to use the actual collateral or the actual margin requirement here.
+
+41
+00:02:00,775 --> 00:02:01,530
+在期权策略平台
+With option strat, you
+
+42
+00:02:01,530 --> 00:02:02,663
+无需自己计算
+don't need to do the math.
+
+43
+00:02:02,663 --> 00:02:05,118
+直接切换到风险百分比视图
+You can actually just switch this over here to the percentage of risk.
+
+44
+00:02:05,120 --> 00:02:06,527
+可以拉到
+You can pull it down to
+
+45
+00:02:06,527 --> 00:02:07,934
+当前时间
+the actual current time and then
+
+46
+00:02:07,934 --> 00:02:09,341
+然后悬停在这里
+you can hover over it here
+
+47
+00:02:09,341 --> 00:02:12,624
+可以看到相对保证金已上涨约24%
+and you can see that it's actually up about 24% of the margin right there.
+
+48
+00:02:12,860 --> 00:02:18,340
+先看SPX的Y6020，从图表分析得出
+Let's start first with Y6020 on the SPX. And that will come from looking at the charts.
+
+49
+00:02:18,340 --> 00:02:20,540
+左边是SPY
+This is the SPY on the left-hand side here.
+
+50
+00:02:20,540 --> 00:02:21,750
+我们放大看
+So let's maximize this.
+
+51
+00:02:21,750 --> 00:02:23,963
+大家之前视频里知道
+And you guys will know from previous videos
+
+52
+00:02:23,963 --> 00:02:26,176
+我一直说SPY是分析标普500的主要工具
+that I say the SPY is the main
+
+53
+00:02:26,176 --> 00:02:28,943
+我用来分析标普500指数的工具
+instrument in which I use to analyze the S&P 500.
+
+54
+00:02:28,945 --> 00:02:34,040
+但我也会给大家展示ES和SPX期权的交易示例
+But I'm showing you guys examples of how I trade the ES options as well as the SPX options.
+
+55
+00:02:34,040 --> 00:02:36,945
+之后还会看XSP
+We'll even take a look at the XSP later in this video.
+
+56
+00:02:36,945 --> 00:02:39,378
+昨天收盘前，我只是
+Yesterday, as the market was going to close, all I did was
+
+57
+00:02:39,378 --> 00:02:41,000
+点击这里，当时SPY就在这个位置
+just click right here, which is pretty much
+
+58
+00:02:41,000 --> 00:02:42,419
+当时SPY所处的价位
+where the SPY was at the time.
+
+59
+00:02:42,420 --> 00:02:43,775
+假设我们拉到这
+Let's just say we go down to here.
+
+60
+00:02:43,775 --> 00:02:46,623
+然后拖动鼠标到
+And then I dragged my mouse up until I hit
+
+61
+00:02:46,623 --> 00:02:48,901
+大约600点。然后在这里
+about 600. And then right here in this box
+
+62
+00:02:48,901 --> 00:02:53,173
+大家能看到鼠标悬停的这个框，它在帮我计算
+that you guys can see is hovering around my mouse. It's calculating that for me.
+
+63
+00:02:53,460 --> 00:02:55,643
+当我向上拖动鼠标，到达
+So as I drag my mouse up here and I come to
+
+64
+00:02:55,643 --> 00:02:56,916
+600点时，不需要把鼠标移到那边
+600, I don't have to move the mouse
+
+65
+00:02:56,916 --> 00:03:00,555
+直接向上延伸，对齐到600左右即可
+all the way over here. You can just go straight up this way and let it line up with about 600.
+
+66
+00:03:00,920 --> 00:03:04,820
+我发现市场需上涨约0.75%
+I saw that the market would have to be up about 0.75%.
+
+67
+00:03:04,820 --> 00:03:07,496
+所以我直接来到标普500指数
+So all I did was come over to
+
+68
+00:03:07,496 --> 00:03:09,837
+放大一下，拉伸图表
+the SPX and then let's zoom in,
+
+69
+00:03:09,837 --> 00:03:12,178
+看这里
+stretch this out, and see right here.
+
+70
+00:03:12,180 --> 00:03:15,385
+假设我点击，当时标普500指数大约在这里
+So if I clicked, let's just say the SPX was right around here at that point.
+
+71
+00:03:15,385 --> 00:03:20,190
+确保使用这个工具，下面也能点，功能相同
+Let's make sure we're using this tool here. You can actually click this from down here. That's the same tool.
+
+72
+00:03:20,190 --> 00:03:22,116
+如果用鼠标，可以用快捷方式
+Or you can use the shorthand if you're using a
+
+73
+00:03:22,116 --> 00:03:25,005
+按鼠标中键，就会弹出工具菜单
+mouse. You middle click on your mouse and then that brings up the tool menu.
+
+74
+00:03:25,005 --> 00:03:27,075
+点击这里，然后我再点这个
+Clicking this here and then I'm clicking
+
+75
+00:03:27,075 --> 00:03:29,736
+然后向上拖动，直到
+this. And then I drag this right up until
+
+76
+00:03:29,736 --> 00:03:32,102
+百分比大致匹配我之前在标普500指数上看到的数值
+the percent pretty much matches what I saw
+
+77
+00:03:32,102 --> 00:03:36,242
+这样算下来，标普500指数大约在60.16或60.15左右
+in the SPX. And that brought me to around 60.16, 60.15 or so on the SPX.
+
+78
+00:03:36,835 --> 00:03:40,423
+基于这个计算，我考虑的是
+So with a calculation like that, what I'm going to consider is
+
+79
+00:03:40,423 --> 00:03:42,516
+如果SPY涨到600点
+if the SPY was to go to 600,
+
+80
+00:03:42,516 --> 00:03:45,506
+标普500指数应该会到这个区域
+that should put the SPX in this area right here.
+
+81
+00:03:45,805 --> 00:03:50,580
+所以我想在这里部署蝶式策略
+So I want to target a butterfly right in this area.
+
+82
+00:03:50,580 --> 00:03:55,480
+但当时市场涨幅已较大，处于历史新高
+However, because the market is pretty extended, we are at all time highs.
+
+83
+00:03:55,480 --> 00:03:58,099
+当时
+At that point in time, the market
+
+84
+00:03:58,099 --> 00:04:00,344
+当周市场已经上涨超过4.25%
+would have been up over 4.25% for
+
+85
+00:04:00,344 --> 00:04:04,085
+这本身就是一个异常的涨幅
+the week, which is already an outlier of a week.
+
+86
+00:04:04,460 --> 00:04:07,150
+但当时有催化剂，美国大选
+But we had a catalyst. It was the US General's elections.
+
+87
+00:04:07,150 --> 00:04:11,105
+市场处于历史新高，没有真正的前期阻力位
+We are at all time highs. So there is no real previous resistance.
+
+88
+00:04:11,105 --> 00:04:12,515
+市场进入价格发现模式
+The market is in price discovery
+
+89
+00:04:12,515 --> 00:04:16,510
+意味着如果它想，可以继续上涨几个月
+mode, which means it can keep trending up for the next few months if it wants to.
+
+90
+00:04:16,510 --> 00:04:18,840
+没有真正的回调理由
+There's no reason for it really to pull back.
+
+91
+00:04:18,840 --> 00:04:19,664
+理解这一点,
+Understanding this and
+
+92
+00:04:19,664 --> 00:04:21,586
+理解动能，才是我保持看多的原因,
+understanding momentum is why my bias is
+
+93
+00:04:21,586 --> 00:04:23,783
+直到市场证明
+going to remain to the upside until the
+
+94
+00:04:23,783 --> 00:04:27,903
+这不再是交易方向为止。
+market proves this is no longer the direction in which you want to be trading.
+
+95
+00:04:27,905 --> 00:04:32,060
+这可能表现为跌破前一交易日低点并收于其下。
+That might come in the way of breaking a previous day's low and then closing below it.
+
+96
+00:04:32,060 --> 00:04:33,572
+假设周一,
+So let's just say on Monday,
+
+97
+00:04:33,572 --> 00:04:35,336
+市场收于今日开盘价下方,
+the market was to close below today's
+
+98
+00:04:35,336 --> 00:04:38,108
+或收于前一交易日低点下方。
+open or it was to close below the previous day's low.
+
+99
+00:04:38,110 --> 00:04:41,670
+这将显示趋势和动能的破坏。
+That would show a break in trend and a break in momentum.
+
+100
+00:04:41,670 --> 00:04:43,581
+但目前来看,
+But for now, for the most part,
+
+101
+00:04:43,581 --> 00:04:45,492
+优势依然在买入回调,
+it looks like the edge is looking
+
+102
+00:04:45,492 --> 00:04:47,130
+或买入回撤，
+to buy dips or buying pullbacks
+
+103
+00:04:47,130 --> 00:04:51,498
+比如到成交量加权平均价或任意EMA等位置。
+to something like VWAP or any type of EMA or whatever method in which you use.
+
+104
+00:04:51,500 --> 00:04:57,915
+我喜欢断翼蝶式（broken wing butterfly），因为它非常灵活，是一种高级期权策略。
+I like broken wing butterflies because they are extremely flexible. They are an advanced trading strategy.
+
+105
+00:04:57,915 --> 00:05:00,815
+但熟悉后，你会发现它并不难。
+But once you get used to them, you realize they're not that difficult.
+
+106
+00:05:00,815 --> 00:05:01,865
+我基本目标是60-20，
+I'm essentially targeting 60-20 because
+
+107
+00:05:01,865 --> 00:05:03,704
+因为我刚刚多加了5点，
+I just added an extra five points
+
+108
+00:05:03,704 --> 00:05:05,805
+只是为了给它一点
+just to give it a little bit of
+
+109
+00:05:05,805 --> 00:05:09,745
+缓冲，防止市场远超预期。
+buffer in case the market was to go way past in which I was expecting.
+
+110
+00:05:10,010 --> 00:05:11,956
+但没有足够理由认为
+But there wasn't enough reason to think
+
+111
+00:05:11,956 --> 00:05:13,624
+我们会涨到600，
+that we would go up to 600
+
+112
+00:05:13,624 --> 00:05:17,795
+然后突破它，毕竟一周只剩一天了。
+and then blow past it when there was only one day left in the week.
+
+113
+00:05:18,075 --> 00:05:21,335
+今天日程上也没有重大催化因素，
+And there wasn't really a major catalyst on the schedule for today,
+
+114
+00:05:21,335 --> 00:05:25,325
+而且市场本周已经严重超买。
+as well as understanding the market was already well overextended for the week.
+
+115
+00:05:25,325 --> 00:05:30,265
+在我看来，市场再涨1.5%左右的风险很低。
+The risk, in my opinion, for the market being up another 1.5% or so for the day was very low.
+
+116
+00:05:30,265 --> 00:05:33,840
+所以我决定使用断翼蝶式策略。
+So that's why I decided to run a broken wing butterfly strategy.
+
+117
+00:05:33,840 --> 00:05:37,785
+我确保这边的权利金成本不高。
+And I made sure that the debits to this side was not expensive.
+
+118
+00:05:37,785 --> 00:05:39,483
+换句话说，如果我判断错误，
+In other words, if I was wrong
+
+119
+00:05:39,483 --> 00:05:41,181
+市场隔夜出现缺口下跌，
+and the market gapped down or it
+
+120
+00:05:41,181 --> 00:05:45,304
+或直接下跌或持平，这笔交易的风险其实很小。
+just sold off or it was flat overnight, there wasn't really much risk associated with the trade.
+
+121
+00:05:45,305 --> 00:05:48,135
+市场要突破这个行权价,
+In order for the market to have gotten past this
+
+122
+00:05:48,135 --> 00:05:50,399
+意味着SPY必须
+strike, it means the SPY would have had
+
+123
+00:05:50,399 --> 00:05:54,645
+突破600点，这在我的经验里几乎不可能。
+to blown past 600, which in this case, or my experience, is a very unlikely scenario.
+
+124
+00:05:54,930 --> 00:05:56,687
+但交易这类策略时,
+But when you trade these types of
+
+125
+00:05:56,687 --> 00:06:00,704
+不能只坐等祈祷，我们可以采取行动。
+strategies, you don't need to sit there and just hope. There is something you can do.
+
+126
+00:06:00,705 --> 00:06:05,450
+我会寻找便宜的对冲工具，比如某种保险。
+And that's when I like to look at something really cheap as maybe some sort of insurance or hedge.
+
+127
+00:06:05,450 --> 00:06:07,935
+这时XSP就派上用场了。
+And that's where the XSP comes into play.
+
+128
+00:06:07,935 --> 00:06:15,710
+我买了XSP看涨期权，行权价602，对应标普500指数6,020点。
+So I grabbed an XSP call, which is the 602 strike, which is the equivalent of 6,020 on the SPX.
+
+129
+00:06:15,710 --> 00:06:18,545
+这次我选了11月11日到期,
+But this time I decided to go with November 11th
+
+130
+00:06:18,545 --> 00:06:20,813
+也就是周一，
+expiration, which is Monday, just to give it
+
+131
+00:06:20,813 --> 00:06:24,499
+给它多点时间，减少时间衰减的影响。
+a little bit more time. So it's not as susceptible to time decay.
+
+132
+00:06:24,500 --> 00:06:26,906
+交易期权的人都知道，
+Anyone that trades options know if you buy
+
+133
+00:06:26,906 --> 00:06:29,011
+买入期权后持有，
+an option and you hold it and
+
+134
+00:06:29,011 --> 00:06:33,523
+如果到期日很近，时间衰减会快速侵蚀权利金。
+it is very limited DTE, time decay is going to eat away at that option.
+
+135
+00:06:33,525 --> 00:06:35,573
+这个头寸是周四买的，
+And when this was purchased, it was Thursday,
+
+136
+00:06:35,573 --> 00:06:37,109
+也就是昨天，
+which was yesterday, and it expires
+
+137
+00:06:37,109 --> 00:06:40,438
+周一到期，留给期权的时间不多。
+on Monday. That's not a lot of time for an option like this.
+
+138
+00:06:40,440 --> 00:06:44,535
+如果市场回调，这个期权只花了58美分。
+If the market was to pull back, the price of this option was only 58 cents.
+
+139
+00:06:44,535 --> 00:06:47,495
+买一手只要58美元。
+So it was only $58 to buy just one lot here.
+
+140
+00:06:47,495 --> 00:06:49,496
+这一手某种程度上
+This one lot, in a sense,
+
+141
+00:06:49,496 --> 00:06:51,497
+能对冲市场
+would be protection if the market
+
+142
+00:06:51,497 --> 00:06:54,499
+再涨1%或以上的风险。
+was to go up a full percent or more.
+
+143
+00:06:54,500 --> 00:06:55,441
+大家可以看到
+You guys can see
+
+144
+00:06:55,441 --> 00:06:56,853
+这里是当前时间戳。
+right here. Well, this is from
+
+145
+00:06:56,853 --> 00:07:00,619
+所以这不是昨天的实际图表。
+the current timestamp. So this is not actually what it would have looked like from yesterday.
+
+146
+00:07:00,620 --> 00:07:05,225
+但如果市场从这里再涨1%，这笔头寸能赚超400美元。
+But if the market was to go up 1% from here, this position would be up over $400.
+
+147
+00:07:05,225 --> 00:07:08,980
+今天交易时段剩余不足两小时半。
+There's a little over two hours left in the trading session here for today.
+
+148
+00:07:10,440 --> 00:07:20,210
+如果再涨1%，断翼蝶式会亏1,000美元，但XSP看涨期权能赚近500美元。
+remarkably, was to pop another 1% at most. This position would be down $1,000 while the XSP call would be up almost $500.
+
+149
+00:07:20,210 --> 00:07:26,520
+这样就能减少断翼蝶式40%到50%的风险。
+And that's already a reduction of risk of around 40% to 50% from the broken wing butterfly.
+
+150
+00:07:26,520 --> 00:07:28,590
+这是一个值得记住的小技巧。
+So that's something to keep in mind as a little tip here.
+
+151
+00:07:28,590 --> 00:07:30,352
+如果你在做这类蝶式策略
+If you're running these types of butterflies and
+
+152
+00:07:30,352 --> 00:07:32,114
+担心‘如果方向对了
+you are concerned that, hey, what happens if
+
+153
+00:07:32,114 --> 00:07:35,418
+但市场可能会进一步上涨’
+you're right on the direction, but you're concerned that the market might go even further,
+
+154
+00:07:35,420 --> 00:07:37,294
+可以考虑买一个
+maybe use something that is a lot
+
+155
+00:07:37,294 --> 00:07:39,435
+更便宜的期权作为对冲
+cheaper of an option and just buy it
+
+156
+00:07:39,435 --> 00:07:43,718
+DTE稍长些，当作保护工具
+with a little bit more DTE and consider that your hedge or some sort of protection.
+
+157
+00:07:43,720 --> 00:07:46,840
+但我对这笔交易从未特别担心
+But I was never really that concerned about this particular trade here.
+
+158
+00:07:46,840 --> 00:07:49,750
+我已经平仓了，所以没什么好担心的
+I'm actually out of the trade, so there isn't really any of our concerns here.
+
+159
+00:07:49,750 --> 00:07:51,245
+分享给大家
+So this is sharing it.
+
+160
+00:07:51,245 --> 00:07:54,445
+这适合小资金账户，基于XSP
+This was for anyone with a smaller account, just on the XSP.
+
+161
+00:07:54,445 --> 00:08:00,040
+类似情况，62对应SPX的6020
+Similar situation, 62 is the same as 6020 on the SPX.
+
+162
+00:08:00,040 --> 00:08:02,180
+这笔交易成本不到20美元
+In this case here, this trade costs less than $20.
+
+163
+00:08:02,180 --> 00:08:04,570
+最大亏损不到120美元
+The max loss is less than $120.
+
+164
+00:08:04,570 --> 00:08:07,735
+目前这笔交易涨幅近300%
+And the same thing, this trade right now would be up almost 300%.
+
+165
+00:08:07,735 --> 00:08:11,510
+我今天早些时候平仓时，回报率约100%
+I closed my trade out earlier today as it was just about 100% return.
+
+166
+00:08:11,510 --> 00:08:15,610
+达到100%后，我对波段交易很满意
+So once I hit about 100%, I was perfectly content with the swing trade.
+
+167
+00:08:15,610 --> 00:08:19,720
+我平仓的原因是当时是东部时间11点
+The reason why I closed that out is because at that point in time, this is 11 a.m. Eastern time.
+
+168
+00:08:19,720 --> 00:08:26,665
+几小时后，我看不到行权价上方有太多活跃度
+So a few hours from now, I didn't really see much activity higher than this strike price here.
+
+169
+00:08:26,665 --> 00:08:31,300
+如果我用蝶式策略瞄准更高目标
+If I'm targeting something that's higher, in other words, I'm targeting this area with a butterfly,
+
+170
+00:08:31,300 --> 00:08:35,620
+那一带也需要足够的活跃度
+I want there to be enough activity in that area also.
+
+171
+00:08:35,620 --> 00:08:39,130
+我判断市场会在这里停滞
+I'm going to read this as the market is going to stall out around here.
+
+172
+00:08:39,130 --> 00:08:42,590
+不太适合做0DTE
+And I don't really like it for a 0DTE play.
+
+173
+00:08:42,590 --> 00:08:46,960
+虽然昨天是波段交易
+Because even though it was a swing trade yesterday, today it is a 0DTE trade.
+
+174
+00:08:46,960 --> 00:08:50,320
+但今天就变成了0DTE交易
+And the markets, in my opinion, would consolidate around here.
+
+175
+00:08:50,320 --> 00:08:51,765
+市场可能在这里震荡
+And that would drive me nuts.
+
+176
+00:08:51,765 --> 00:08:53,850
+我们来看价格走势
+So as we take a look at price
+
+177
+00:08:53,850 --> 00:08:55,413
+过去几小时市场非常震荡
+action, we can see how choppy
+
+178
+00:08:55,413 --> 00:08:57,758
+过去几小时市场的表现
+the market has been over the past few hours.
+
+179
+00:08:57,760 --> 00:09:00,207
+对0DTE交易来说
+And for a 0DTE trade like that, no
+
+180
+00:09:00,207 --> 00:09:02,654
+没人知道市场会不会
+one knows if the market is going to
+
+181
+00:09:02,654 --> 00:09:05,407
+市场要突破6,000才能到达这个区间
+break over 6,000 to actually get up to this area.
+
+182
+00:09:05,715 --> 00:09:08,050
+今天剩余时间已经不多了
+And there's not that much time left in the day.
+
+183
+00:09:08,050 --> 00:09:09,935
+所以我遵循了我的一个主要原则
+So I just followed one of my main rules.
+
+184
+00:09:09,935 --> 00:09:14,660
+只要持仓盈利超过100%
+Whenever I'm up on a trade, that's up at least 100%. And it's a 0DTE.
+
+185
+00:09:14,660 --> 00:09:18,920
+我就不会让利润全部回吐，会选择锁定
+Instead of giving back all of that profit, I'd rather just lock in that position.
+
+186
+00:09:18,920 --> 00:09:25,625
+针对0DTE交易，我决定在ES期货上开新仓
+Now for a 0DTE trade, that's where I decided to open up a separate position here on the ES.
+
+187
+00:09:25,625 --> 00:09:29,290
+大家看，这只是图上的一条线
+So this is also it right here. It's just one line as you guys can see.
+
+188
+00:09:29,290 --> 00:09:31,760
+目标位是6035
+I'm targeting 6035.
+
+189
+00:09:31,760 --> 00:09:35,375
+为什么是6035？我用的是常规方法
+Why 6035? I'm doing the same thing I usually do.
+
+190
+00:09:35,375 --> 00:09:38,363
+如果我们拉出ES期货的图表
+If we pull up the ES on this chart right
+
+191
+00:09:38,363 --> 00:09:40,454
+我点击这里
+here, I just click this and I
+
+192
+00:09:40,454 --> 00:09:44,040
+然后问自己：如果标普500指数到6,000
+said, hey, if the SPX goes to 6,000, where will the ES be?
+
+193
+00:09:44,340 --> 00:09:47,260
+ES期货会在哪个位置？大概就是这个点位
+And that was about this level right here. So I put this level on my chart.
+
+194
+00:09:47,260 --> 00:09:49,887
+我就把这个点位标在图上
+Then I told myself if we went a little bit
+
+195
+00:09:49,887 --> 00:09:51,988
+然后告诉自己，如果再涨一点
+higher and we landed around this area, where
+
+196
+00:09:51,988 --> 00:09:56,191
+落在这个区域，断翼蝶式会怎样？6035就是这么确定的
+will that butterfly land? And that's pretty much how I loosely chose my strike price of 6035.
+
+197
+00:09:56,455 --> 00:10:00,675
+现在看，ES期货正好触及这个点位后回落
+As we can see, that's just where the ES is just about hitting and getting rejected.
+
+198
+00:10:00,675 --> 00:10:04,600
+所以早些时候，我不记得具体什么时候开的仓
+So that means earlier on today, I don't remember when I actually opened up the trade.
+
+199
+00:10:04,600 --> 00:10:05,837
+我们看一下
+Let's see if we pull up
+
+200
+00:10:05,837 --> 00:10:09,343
+开盘后大约25分钟左右我入场了
+here. So just around 25 minutes or so after the market opened is when I opened the trade.
+
+201
+00:10:09,550 --> 00:10:14,905
+我又在期权策略平台上模拟了一下，方便新手理解
+I mocked this up in the option strat again, just because it's easier for beginners to actually interpret this.
+
+202
+00:10:14,905 --> 00:10:17,225
+这次交易的成本是这个数
+This is how much the trade costs in this case here.
+
+203
+00:10:17,225 --> 00:10:19,771
+上行风险为零，因为我不确定
+There's no risk to the upside because I didn't know
+
+204
+00:10:19,771 --> 00:10:21,808
+动能会把市场推到多高
+how far momentum might carry the market in
+
+205
+00:10:21,808 --> 00:10:24,864
+万一我判断错误，市场突破了这个点位
+case I was wrong and the market did blow past that level.
+
+206
+00:10:24,865 --> 00:10:27,785
+我不想承担和波段交易一样的风险
+I didn't want the same level of risk with the swing trade.
+
+207
+00:10:27,785 --> 00:10:28,775
+这次的情况是
+So in this case here,
+
+208
+00:10:28,775 --> 00:10:31,445
+波段交易的上行风险较大
+the swing trade had a decent amount of risk to the upside.
+
+209
+00:10:31,445 --> 00:10:35,465
+XSP看涨期权的保护成本是50多美元
+The XSP call was protection for 50 something dollars.
+
+210
+00:10:35,465 --> 00:10:37,107
+如果市场继续上涨
+If we kept going up, as you
+
+211
+00:10:37,107 --> 00:10:38,984
+大家可以看到，该持仓目前仅上涨
+guys can see, this position is only up
+
+212
+00:10:38,984 --> 00:10:42,504
+$13.53，但这并非我重点关注的持仓
+$13.53, but this is not really a position in which I'm monitoring or paying attention to.
+
+213
+00:10:42,740 --> 00:10:45,028
+我其实刚调出了风险曲线
+I just pulled up the risk profile actually
+
+214
+00:10:45,028 --> 00:10:47,030
+只是为了制作这个视频
+just to make this video to show
+
+215
+00:10:47,030 --> 00:10:49,604
+给大家展示XSP期权有多便宜
+you guys how cheap the XXP options can be.
+
+216
+00:10:49,605 --> 00:10:53,755
+这是实时持仓，我已关闭其他冲突行权价的干扰
+So this is the live position here, and I've made sure to turn off any other conflicting strike prices.
+
+217
+00:10:53,755 --> 00:10:55,363
+大家可以看到，我已平掉
+As you guys can see, I closed
+
+218
+00:10:55,363 --> 00:10:57,201
+所有0DTE持仓或其他
+out any other zero DTE positions or any
+
+219
+00:10:57,201 --> 00:11:00,418
+波段交易，这样我们能专注于这个蝶式
+other swing trades here, just so we can focus in on this particular butterfly.
+
+220
+00:11:00,420 --> 00:11:05,275
+我有时会在标普500上同时持有6-10个头寸
+I layer sometimes six to 10 different positions on the S&P 500.
+
+221
+00:11:05,275 --> 00:11:08,460
+可能在SPX上跑2-3个头寸
+So I might have maybe two to three positions running on the SPX.
+
+222
+00:11:08,460 --> 00:11:11,605
+在ES期货上跑2-3个头寸
+I might have two to three positions running on the ES.
+
+223
+00:11:11,605 --> 00:11:13,750
+在SPY上跑1个头寸
+I might have one position running on the SPY.
+
+224
+00:11:13,750 --> 00:11:16,530
+可能还会在XSP上抓一个头寸
+And then maybe I'll grab another position on the XSP.
+
+225
+00:11:16,530 --> 00:11:21,325
+所以很难完全复制其他交易者的操作
+And that's why it's difficult to simulate or copy and paste exactly what another trader is doing.
+
+226
+00:11:21,325 --> 00:11:23,703
+这类视频，我只是想
+A video like this, I'm just trying to
+
+227
+00:11:23,703 --> 00:11:25,784
+分享一个整体思路，希望
+share an overall arcing idea and hopefully
+
+228
+00:11:25,784 --> 00:11:30,244
+能激发大家对自身交易的思考
+it can spark some sort of inspiration regarding how you can approach your own trading.
+
+229
+00:11:30,245 --> 00:11:35,960
+在我看来，这更多是风险管理和组合管理
+This is more so in alignment with risk management and portfolio management, in my opinion, than it is actually trading.
+
+230
+00:11:35,960 --> 00:11:39,260
+我只是在用工具和可用的数据
+I'm just using the tools and using the data that's accessible to me.
+
+231
+00:11:39,260 --> 00:11:42,365
+然后形成某种观点或目标
+And then I'm coming up with some sort of an opinion, some sort of a target.
+
+232
+00:11:42,365 --> 00:11:49,185
+足够多迹象指向方向，理解整体动能和情绪
+There's enough signs pointing to the direction and understanding the overall momentum and understanding sentiments.
+
+233
+00:11:49,185 --> 00:11:53,620
+然后通过分散配置来管理风险
+And then I'm just managing the risk accordingly by placing money in different places.
+
+234
+00:11:53,620 --> 00:11:57,056
+这会给我最好的机会
+That's going to give me the best opportunity to make
+
+235
+00:11:57,056 --> 00:11:59,461
+获取投资回报，同时
+a return on that investment with minimizing
+
+236
+00:11:59,461 --> 00:12:01,179
+尽可能降低风险
+risk as best as possible.
+
+237
+00:12:01,180 --> 00:12:05,001
+如果市场隔夜下跌，我不会担心
+If the market went down overnight, I would not have been worried
+
+238
+00:12:05,001 --> 00:12:09,459
+$92加上XSP的$50，最大风险约$150
+about the $92. plus the $50 on the XSP. It's about $150 or so in max risk.
+
+239
+00:12:10,415 --> 00:12:13,710
+即使市场跳空下跌3%，我也不担心
+That means if the market gaps down 3%, there wouldn't have been a concern.
+
+240
+00:12:13,710 --> 00:12:15,316
+我留着这个持仓的原因是
+The reason why I left this up here
+
+241
+00:12:15,316 --> 00:12:18,329
+大家好，这是本周早些时候开的波段交易。
+is you guys, this is the trade that was swung from earlier in the week.
+
+242
+00:12:18,330 --> 00:12:20,470
+现在我已经平掉这个持仓，
+Now I'm out of this trade and I've realized the
+
+243
+00:12:20,470 --> 00:12:22,182
+并实现了收益，还有之前
+position as well as the position that was
+
+244
+00:12:22,182 --> 00:12:25,393
+在NQ上的持仓，这在之前的视频里提到过。
+on the NQ that again, that was mentioned in a couple of previous videos ago.
+
+245
+00:12:25,395 --> 00:12:28,572
+但如果今天市场开盘前下跌约3%，
+But if the market did gap down about 3% today,
+
+246
+00:12:28,572 --> 00:12:34,221
+ES和NQ上都有机会获得巨额回报。
+there was the opportunity for a massive return on the ES as well as the NQ.
+
+247
+00:12:34,575 --> 00:12:39,090
+所以我其实在寻找这些持仓的隔夜回调。
+So I was actually looking for some sort of a pullback overnight on these positions.
+
+248
+00:12:39,090 --> 00:12:41,855
+这些持仓本可以盈利数千美元，
+These would have been up a couple thousand dollars where
+
+249
+00:12:41,855 --> 00:12:44,344
+而我在这些ES
+I would have been down about $150 on these ES
+
+250
+00:12:44,344 --> 00:12:47,662
+和标普500指数持仓上可能亏损约150美元，这几乎无关紧要。
+and SPX positions, which would have been of little to no concern.
+
+251
+00:12:47,940 --> 00:12:51,041
+今天我的主要持仓是这个，
+This is the main position here for me today, which I'm actually
+
+252
+00:12:51,041 --> 00:12:54,401
+我很快就会平仓，因为今天收盘前我不会在电脑前，
+going to realize pretty soon as I won't be at my desk for
+
+253
+00:12:54,401 --> 00:13:01,379
+不想让ES期权持仓到现金结算，收盘后容易出奇葩情况。
+power hour today and I don't want to leave an ES option to let a cash settle after the market closes as strange things tend to happen.
+
+254
+00:13:01,380 --> 00:13:05,687
+我更愿意让SPX或XSP期权在收盘后到期，
+I'm much more comfortable letting SPX or XSP options expire after the
+
+255
+00:13:05,687 --> 00:13:11,429
+但对期货期权收盘后就没那么有信心了。
+market closes, but I don't have the same confidence in futures options after the market closes.
+
+256
+00:13:11,430 --> 00:13:16,080
+我也不建议把ES期权的结算交给经纪商。
+And I wouldn't recommend leaving it up to your broker to settle your ES options.
+
+257
+00:13:16,080 --> 00:13:18,580
+我们来看看标普500指数的数据，
+Let's take a look at the SPX data here and
+
+258
+00:13:18,580 --> 00:13:23,330
+还有Quant Trading App的交易引擎。我们往前翻点时间。
+the trade engine from Quant Trading App. And let's just scroll to a little bit earlier in the day.
+
+259
+00:13:23,330 --> 00:13:28,370
+直接回到今天早上，这是昨天的数据。
+So let's just go all the way to this morning here. And this is yesterday.
+
+260
+00:13:28,370 --> 00:13:34,945
+这里大概是今天市场开盘的位置，东部时间9:45。
+So right about here is where the market would have opened today. So this is 9.45 Eastern time.
+
+261
+00:13:34,945 --> 00:13:37,060
+这里有Power Strike，
+We have the Power Strike, which is a
+
+262
+00:13:37,060 --> 00:13:39,175
+这是Quant Trading App的专有计算，
+proprietary calculation for Quant Trading App and it
+
+263
+00:13:39,175 --> 00:13:41,290
+它与Absolute Gamma Strike保持一致。
+is in alignment with the Absolute Gamma Strike.
+
+264
+00:13:41,290 --> 00:13:48,070
+所以我们看到这条紫色虚线和这条橙色金线。
+So that's why we see this dash level here that's purple as well as this orange golden level here.
+
+265
+00:13:48,070 --> 00:13:52,485
+同时，它也是拥有最多正gamma的行权价。
+And it is also the strike price that has the highest amount of positive gamma.
+
+266
+00:13:52,485 --> 00:13:59,630
+大家知道，在整体净正gamma环境下，P1行权价会像磁铁一样。
+So the P1 strike, as we know, in an overall net positive gamma environment tend to act as a magnet.
+
+267
+00:13:59,630 --> 00:14:02,916
+价格倾向于向这些高正gamma节点漂移，
+Price likes to drift towards these high positive gamma nodes
+
+268
+00:14:02,916 --> 00:14:05,544
+当我们处于整体净正gamma环境时，
+when we are in an overall net positive
+
+269
+00:14:05,544 --> 00:14:09,158
+尤其是市场有上涨动能的时候。
+gamma environment, especially when there is bullish momentum in the market.
+
+270
+00:14:09,160 --> 00:14:12,400
+所以P1此时就是一个磁铁。
+So P1 is already a magnet in this case.
+
+271
+00:14:12,400 --> 00:14:15,456
+绝对Gamma行权价通常会
+The Absolute Gamma Strike is going to act as
+
+272
+00:14:15,456 --> 00:14:18,173
+起到磁铁作用，大多数情况下如此。
+a magnet more times than not. And then
+
+273
+00:14:18,173 --> 00:14:21,229
+我们的专有QTA行权价也与6,000对齐。
+our proprietary QTA strike is also in alignment with 6,000.
+
+274
+00:14:21,570 --> 00:14:25,471
+所以今天开盘时，这变成了一个
+So at the start of the day today, it became an easy,
+
+275
+00:14:25,471 --> 00:14:28,071
+简单的选择题，几乎不用多想：
+almost a no-brainer concept to think, hey, the
+
+276
+00:14:28,071 --> 00:14:30,346
+市场今天可能会向6,000进发，
+market's probably going to head towards 6,000 today,
+
+277
+00:14:30,346 --> 00:14:35,872
+甚至可能延续到周一，但我更关注0DTE来收尾本周。
+possibly even Monday, but I'm more interested in just the zero DTE to round out the week.
+
+278
+00:14:36,200 --> 00:14:38,199
+比如，我是否想在6,000上
+Like, do I want to put some
+
+279
+00:14:38,199 --> 00:14:42,483
+承担些风险？数据已经告诉我答案了。
+sort of risk on 6,000? This is a summarization of the data already telling me that.
+
+280
+00:14:42,770 --> 00:14:47,010
+0DTE的gamma敞口也验证了这一点。
+The zero DTE gamma exposure is also confirming this.
+
+281
+00:14:47,010 --> 00:14:51,210
+如果我们拉到这张图，这是开盘后21分钟的数据。
+If we pull this up here, this would have been 21 minutes after the market opened.
+
+282
+00:14:51,210 --> 00:14:52,815
+这里是我们的绝对gamma行权价。
+This is our absolute gamma strike.
+
+283
+00:14:52,815 --> 00:14:55,096
+还能看到大量看涨期权成交量
+We can see also how much call volume
+
+284
+00:14:55,096 --> 00:14:59,089
+流入该价位，背景中的蓝色区域就是。
+is going into this. That's what the blue level is in the background here.
+
+285
+00:14:59,090 --> 00:15:00,824
+可以看到这个尖峰，
+We can see this spike or
+
+286
+00:15:00,824 --> 00:15:02,558
+或者说这个高点。
+this peak. We can see that
+
+287
+00:15:02,558 --> 00:15:05,159
+这是一个相当显著的净正gamma行权价。
+it is a pretty dominant net positive gamma strike.
+
+288
+00:15:05,160 --> 00:15:09,730
+我们还看到，更高价位也有大量净正gamma，
+We also see that there's a decent amount of net positive gamma higher than that,
+
+289
+00:15:09,730 --> 00:15:13,115
+这在我的gamma敞口视频中也有强调。
+which is something I also highlight in these gamma exposure videos.
+
+290
+00:15:13,115 --> 00:15:16,518
+看到比目标价位更高的行权价也有大量gamma，
+It's always good to see another strike price that is higher than
+
+291
+00:15:16,518 --> 00:15:20,204
+总是好的。
+the one you are targeting that also has a decent amount of gamma.
+
+292
+00:15:20,205 --> 00:15:25,000
+如果你是多头且看涨，希望高位有活跃度。
+So if you are a bull and you're targeting to the upside, you want to see some activity higher.
+
+293
+00:15:25,000 --> 00:15:29,497
+如果这个25点的行权价也有大量净正gamma敞口，
+If this strike had a lot of net positive gamma exposure also,
+
+294
+00:15:29,497 --> 00:15:32,869
+那我会更有信心认为市场今天肯定能到6,000，
+this 25 strike here, that would have given me a
+
+295
+00:15:32,869 --> 00:15:39,614
+massive confidence to believe the market was definitely going to go to 6,000 and possibly push higher for today.
+
+296
+00:15:40,365 --> 00:15:44,079
+如果市场守住这个位置，我肯定会更有信心
+If it held over this level, I would have definitely had more
+
+297
+00:15:44,079 --> 00:15:50,269
+看到标普500指数冲向6025，类似我之前发布的gamma敞口视频。
+confidence in seeing the SPX head up to 6025, similar to the videos in which I've released previously on gamma exposure.
+
+298
+00:15:50,580 --> 00:15:53,730
+但当前数据并未显示这一点，
+Because that's not what the data is showing us in
+
+299
+00:15:53,730 --> 00:15:58,455
+所以目标设定上要更保守一些。
+this particular case, you want to be a little bit more conservative regarding your target.
+
+300
+00:15:58,455 --> 00:16:03,269
+如果标普500指数在5,985，
+So if the SPX is at 5,985, then conservatively a decent target
+
+301
+00:16:03,269 --> 00:16:08,521
+根据gamma敞口曲线，保守目标是6,000到6,005。
+is 6,000 to 6,005 based on what this gamma exposure profile is showing us.
+
+302
+00:16:09,835 --> 00:16:12,750
+根据我的经验，目标不宜设得更高。
+In my experience, you don't want to target much higher than that.
+
+303
+00:16:12,750 --> 00:16:17,260
+并非市场不会更高，而是进入未知区域。
+It doesn't mean the market won't go much higher than that, but it's entering uncharted territory.
+
+304
+00:16:17,260 --> 00:16:21,157
+这时候更像赌博或盲目期待
+And this is where you're more in alignment with gambling or hoping
+
+305
+00:16:21,157 --> 00:16:25,704
+而不是有足够数据支撑你的判断。
+it goes higher versus having enough information or data to back your thesis up.
+
+306
+00:16:25,705 --> 00:16:30,010
+看支撑位，这个gamma曲线显示在5,980。
+Regarding supports, as I'm looking at this profile, it's right here at 5,980.
+
+307
+00:16:30,010 --> 00:16:33,995
+这是最后一个正gamma显著的行权价。
+This is the strike price that has the last decent level of positive gamma.
+
+308
+00:16:33,995 --> 00:16:36,784
+同时我们看到背景中这个行权价
+It's also the strike as we see in the background here has
+
+309
+00:16:36,784 --> 00:16:38,643
+看跌期权成交量激增，
+a spike in put volume as well as
+
+310
+00:16:38,643 --> 00:16:41,897
+看涨期权成交量也激增，5,980处有多重信号。
+a spike in call volume. So a decent amount of things lining up at 980.
+
+311
+00:16:42,130 --> 00:16:45,864
+如果市场能守住这个行权价，
+I would tell myself if the markets can remain above this strike
+
+312
+00:16:45,864 --> 00:16:49,909
+这里就成为今日的目标区间。
+price here, then this becomes our zone or our targets for the day.
+
+313
+00:16:49,910 --> 00:16:52,795
+更高的位置是持有看涨期权的额外收益。
+Anything higher is a bonus if you're holding calls.
+
+314
+00:16:52,795 --> 00:16:55,377
+但因为处于历史新高，没有之前的阻力位，
+But because we're at all-time highs and there's no previous
+
+315
+00:16:55,377 --> 00:16:57,443
+市场可能超出预期继续上涨。
+resistance, there's always the risk that the markets
+
+316
+00:16:57,443 --> 00:16:59,509
+所以存在风险。
+might go higher or further than you expect.
+
+317
+00:16:59,510 --> 00:17:02,395
+这就是我这样构建蝶式的原因。
+And that's why I would structure a butterfly like this.
+
+318
+00:17:02,395 --> 00:17:05,736
+虽然保守，但我会把ES目标设在6,035，
+As conservative as it might be, I'm going a little
+
+319
+00:17:05,736 --> 00:17:09,077
+略高于我的预期区间，
+bit further than where I think it's going to go
+
+320
+00:17:09,077 --> 00:17:16,094
+平掉另一个SPX蝶式后，上行风险就被排除了。
+by targeting 6035 on the ES, but I'm eliminating any risks to the upside once I closed out the other SPX butterfly.
+
+321
+00:17:16,430 --> 00:17:21,590
+同时XSP看涨期权也无上行风险。
+And then at the same end, there is this XSP call that has no risks to the upside.
+
+322
+00:17:21,590 --> 00:17:25,355
+这些策略叠加在一起，
+So these strategies are just layered on top of each other and just stacked.
+
+323
+00:17:25,355 --> 00:17:28,840
+共同构建了风险管理框架。
+And they're all creating a profile around risk management.
+
+324
+00:17:28,840 --> 00:17:31,026
+我只是大致跟随数据指引。
+And I'm just loosely following what the data
+
+325
+00:17:31,026 --> 00:17:35,399
+我不是在预测，只是顺着信息走。
+is telling me. I'm not trying to predict. I'm just going right along with the information.
+
+326
+00:17:35,400 --> 00:17:38,925
+现在滚动到当前时间，我们看到一样的情况。
+And if we scroll towards present time now, we can see the same thing.
+
+327
+00:17:38,925 --> 00:17:42,365
+这里有几个高点在6,005。
+We have these couple of towers right here at 6,605.
+
+328
+00:17:42,365 --> 00:17:45,550
+仍没有足够理由认为会涨得更高。
+Still not that much of a reason to think we're going to go much higher.
+
+329
+00:17:45,550 --> 00:17:50,980
+但我们看到在‘动力时段’，市场会突然波动10点上下。
+However, we've seen during power hour, the market just puts in this random spike 10 points up or 10 points down.
+
+330
+00:17:50,980 --> 00:17:53,420
+过去四五年这很常见。
+That's pretty common over the past four or five years or so.
+
+331
+00:17:53,420 --> 00:17:55,206
+过去四年这很常见
+That's pretty common over the past four years
+
+332
+00:17:55,206 --> 00:17:56,768
+在收盘前10分钟
+to just see a random move the
+
+333
+00:17:56,768 --> 00:17:58,777
+看到10点的随机波动
+last 10 minutes of the day, 10 points in any direction.
+
+334
+00:17:59,225 --> 00:18:03,000
+但数据不足，我不会针对性操作
+But because I don't see enough data to support that, I'm not going to target it.
+
+335
+00:18:03,000 --> 00:18:07,230
+我们来看这里，行权价仍在6,000
+If we take a look at this here, we see that our power strike is still at 6,000.
+
+336
+00:18:07,230 --> 00:18:10,210
+现在接近1标准差收盘价
+We are now coming up at the one sigma close.
+
+337
+00:18:10,210 --> 00:18:11,850
+根据这些数据
+According to this data here,
+
+338
+00:18:11,850 --> 00:18:17,130
+60-30仍在合理范围，这是今日1标准差区间
+60-30 is still within reasonable range as that's only the one sigma range for today.
+
+339
+00:18:17,130 --> 00:18:20,360
+所以仍有可能，但缺乏其他支撑数据
+So it is still possible, but there isn't much other data to support that.
+
+340
+00:18:20,360 --> 00:18:24,525
+同样需要突破这个行权价
+The same thing would have to clear this strike price here, which
+
+341
+00:18:24,525 --> 00:18:27,302
+这基本是我的目标
+is essentially what I'm targeting, which is that
+
+342
+00:18:27,302 --> 00:18:29,732
+即60-15区域，昨天就提到过
+60-15 area as mentioned as early as yesterday.
+
+343
+00:18:30,080 --> 00:18:37,395
+回到期权组合，我们往上滚动
+If we come back to this option spreads here, and let's scroll up. That's where initially this was the target.
+
+344
+00:18:37,395 --> 00:18:39,905
+这是最初60-20的低成本目标
+This was our cheap shot at 60-20.
+
+345
+00:18:39,905 --> 00:18:41,355
+我已退出交易
+I'm no longer in the trade, so obviously
+
+346
+00:18:41,355 --> 00:18:44,255
+当然留下来更好，但我遵循规则
+it would have been nice to still be in it. But I'm just following my rules.
+
+347
+00:18:44,255 --> 00:18:47,931
+这里有个机会，投入92美元
+There's an opportunity here for a massive lotto winner for a trade
+
+348
+00:18:47,931 --> 00:18:50,075
+有望赚1,000美元
+that only costs $92 in terms of a
+
+349
+00:18:50,075 --> 00:18:51,300
+这是10倍回报
+debit to make over $1,000.
+
+350
+00:18:51,915 --> 00:18:54,940
+这样的交易收益极佳
+That's a 10x return on a trade like this, which is excellent.
+
+351
+00:18:54,940 --> 00:18:57,790
+从保证金角度看，也是100%回报
+And even from a margin requirement, that's a 100% return.
+
+352
+00:18:57,790 --> 00:19:00,270
+但我怀疑会在附近收盘
+But I doubt it's actually going to pin or close around there.
+
+353
+00:19:00,270 --> 00:19:01,950
+我先保留这个
+I'm just leaving it up so I can
+
+354
+00:19:01,950 --> 00:19:05,100
+回家后再看实际收盘价
+track it when I come back home to see where it actually ended up closing.
+
+355
+00:19:05,100 --> 00:19:07,005
+这是我目前持有的交易
+This is the trade I'm currently in.
+
+356
+00:19:07,005 --> 00:19:12,715
+这是已实现的波段交易，锁定约440美元
+This is the trade that was the swing trade that was realized already here. Around $440 is what was locked in.
+
+357
+00:19:12,715 --> 00:19:15,448
+这期视频可能有点散
+While this video might have been a little bit all
+
+358
+00:19:15,448 --> 00:19:18,181
+我想分享一些内容
+over the place, I figured I'll just share something to
+
+359
+00:19:18,181 --> 00:19:20,914
+结束本周
+close out the week to showcase some thoughts that I
+
+360
+00:19:20,914 --> 00:19:26,654
+展示我的思路：为何开仓、如何管理、如何叠加头寸
+have, why I open certain positions, how I'm managing certain positions, how I layer multiple positions on top of each other,
+
+361
+00:19:26,655 --> 00:19:27,940
+我如何管理风险。
+how I'm managing my risk.
+
+362
+00:19:27,940 --> 00:19:30,784
+如果你喜欢这个视频，
+If you enjoyed this video as a little bit of an insight
+
+363
+00:19:30,784 --> 00:19:32,680
+想了解我如何管理某个账户
+regarding how I might manage one account or
+
+364
+00:19:32,680 --> 00:19:35,524
+或某种投资组合，欢迎在评论区留言。
+one type of portfolio, let me know in the comments down below.
+
+365
+00:19:35,525 --> 00:19:37,145
+如果有收获，分享这个视频。
+Share this video if you learned something.
+
+366
+00:19:37,145 --> 00:19:38,390
+有收获就点赞。
+Like it if you learned something.
+
+367
+00:19:38,390 --> 00:19:39,490
+谢谢大家观看。
+Thanks for watching, guys.
+
+368
+00:19:39,490 --> 00:19:41,337
+顺便说一下，我分享的这些交易
+And by the way, all these trades and
+
+369
+00:19:41,337 --> 00:19:44,569
+和策略都可在低于PDT的账户中操作。
+all these strategies which I've shared can be done with an account below PDT.
+
+370
+00:19:44,570 --> 00:19:48,620
+这种交易风格只需5,000到10,000美元。
+And this style of trading can be done with an account around $5,000 to $10,000.
+
+371
+00:19:48,620 --> 00:19:51,485
+所以其实不需要太多资金。
+So it doesn't actually require that much capital.
+
+372
+00:19:51,485 --> 00:19:52,552
+当然，这相对来说。
+Relatively speaking, of course,
+
+373
+00:19:52,552 --> 00:19:54,686
+只要你有保证金账户，
+as long as you have margin account and
+
+374
+00:19:54,686 --> 00:19:56,820
+并且获得期权交易权限，
+as long as you're approved to trade options
+
+375
+00:19:56,820 --> 00:19:58,687
+还有期货期权交易权限，
+and you're approved to trade futures options,
+
+376
+00:19:58,690 --> 00:20:00,175
+就会有很多灵活性。
+there's so much flexibility.
+
+377
+00:20:00,175 --> 00:20:02,835
+PDT规则其实不会限制你。
+And PDT is actually something that doesn't have to hold you back.
+
+378
+00:20:02,835 --> 00:20:07,275
+大家注意到，标普500指数期权昨天开仓，
+As you guys noticed, the SPX options were open yesterday and they were a swing into today.
+
+379
+00:20:07,275 --> 00:20:11,250
+并持有到今天，是波段交易。
+The XSP option was a swing trade also opened yesterday.
+
+380
+00:20:11,250 --> 00:20:16,820
+ES期权也是波段，但0DTE ES期权是当日到期。
+The ES options were a swing, but then the 0DTE ES option is 0DTE.
+
+381
+00:20:16,820 --> 00:20:20,290
+期货期权不受PDT规则限制。
+And again, futures options do not follow the same PDT rules.
+
+382
+00:20:20,290 --> 00:20:22,215
+你可以随意日内交易。
+You can day trade them as much as you'd like.
+
+383
+00:20:22,215 --> 00:20:26,100
+这就是交易或期权交易的魅力所在。
+And that's the beauty, in my opinion, of being a trader or being an options trader in general.
+
+384
+00:20:26,100 --> 00:20:27,730
+灵活性很高。
+There's so much flexibility.
+
+385
+00:20:27,730 --> 00:20:29,660
+创造性也很强。
+There's so much creativity here.
+
+386
+00:20:29,660 --> 00:20:31,565
+看看这个蝶式的结构。
+Look at the structure of this butterfly.
+
+387
+00:20:31,565 --> 00:20:34,270
+看看这个蝶式的结构。
+Look at the structure of this butterfly.
+
+388
+00:20:34,270 --> 00:20:35,880
+看看这个蝶式的结构。
+Look at the structure of this butterfly.
+
+389
+00:20:35,880 --> 00:20:39,610
+这三个都是完全不同的断翼蝶式（broken wing butterfly）。
+They're all three completely different types of broken wing butterflies.
+
+390
+00:20:39,610 --> 00:20:41,818
+这两个在无
+These two are pretty similar to each other regarding no
+
+391
+00:20:41,818 --> 00:20:43,364
+上行风险有限，但这一个
+risk to the upside, but this one
+
+392
+00:20:43,364 --> 00:20:46,014
+若市场大涨，收益也很有限
+doesn't really stand to make much If the market went much higher,
+
+393
+00:20:46,015 --> 00:20:47,075
+但这是个0DTE
+but it was a zero
+
+394
+00:20:47,075 --> 00:20:48,983
+因为这个仓位是上周大选前开的
+DTE. Because this was initially opened last week before
+
+395
+00:20:48,983 --> 00:20:52,375
+当时无法预知市场会涨多高
+the general elections, there was no way to know how far the market would have went.
+
+396
+00:20:52,375 --> 00:20:54,597
+所以我不想承担上行风险
+So I didn't want any risk to the upside, but
+
+397
+00:20:54,597 --> 00:20:56,374
+但又想如果市场大涨
+I wanted there to be an opportunity to
+
+398
+00:20:56,374 --> 00:20:58,818
+能有机会获取不错的收益
+make a decent return if the market did go much higher.
+
+399
+00:20:58,820 --> 00:21:00,780
+同样，这个1DTE交易
+And then the same thing like this with
+
+400
+00:21:00,780 --> 00:21:03,965
+风险极大
+the one DTE trade, there is immense amount of risk associated with this.
+
+401
+00:21:03,965 --> 00:21:06,785
+那何不买一个便宜的XSP
+So why not grab a really cheap XSP out the
+
+402
+00:21:06,785 --> 00:21:09,041
+行权价外看涨期权
+money call for if the market blows past
+
+403
+00:21:09,041 --> 00:21:12,425
+如果市场突破行权价，就有保护
+this strike price, there is protection regardless of how high it went,
+
+404
+00:21:12,425 --> 00:21:17,005
+不管涨多高，尽管没数据支持会涨到60.35
+even though there was no data to support we're going. past 60.35 to today.
+
+405
+00:21:17,005 --> 00:21:20,010
+好，我先截断视频
+Anyway, I'm going to cut the video here before I just keep going around in circles.
+
+406
+00:21:20,010 --> 00:21:21,375
+希望对大家有帮助
+I hope there was value in this.
+
+407
+00:21:21,375 --> 00:21:26,395
+我喜欢这种视频，因为这是我交易的真实写照
+This type of video is fun for me because this is a direct reflection on exactly how I trade.
+
+408
+00:21:26,395 --> 00:21:30,985
+刚开始交易时，我从没见过这种策略
+I had not seen anything like this when I first started trading, especially options.
+
+409
+00:21:30,985 --> 00:21:32,690
+特别是期权，我以为只能买看涨或看跌
+I thought you just buy a call, you buy a put.
+
+410
+00:21:32,690 --> 00:21:36,500
+不知道还能混合搭配，分层操作
+I had no idea you could mix and match and, you know, layer so much things.
+
+411
+00:21:36,500 --> 00:21:39,545
+可以更灵活地应对不同情况
+And you can think about things more in a situational basis.
+
+412
+00:21:39,545 --> 00:21:41,570
+这很符合我的性格
+It fits my personality so much better.
+
+413
+00:21:41,570 --> 00:21:44,785
+可能对其他交易者来说很复杂
+It might be complicated for another trader. For me, this is relatively simple.
+
+414
+00:21:44,785 --> 00:21:45,930
+但对我来说相对简单
+It's actually fun.
+
+415
+00:21:45,930 --> 00:21:48,867
+甚至很有趣
+It makes it a little bit more exciting for me as a
+
+416
+00:21:48,867 --> 00:21:51,804
+作为交易者，这让我更兴奋
+trader, because compared to scalpers, this style of trading is relatively boring.
+
+417
+00:21:51,805 --> 00:21:53,390
+因为相比刷单
+You open the trade and you wait hours.
+
+418
+00:21:53,390 --> 00:21:55,645
+这种交易方式确实有点无聊
+So it keeps it a little bit interesting to me.
+
+419
+00:21:55,645 --> 00:21:58,670
+开仓后就等几小时
+And the key ingredient is being able to understand your
+
+420
+00:21:58,670 --> 00:22:01,090
+这让我保持一点兴趣
+risk profile, knowing how to use this, knowing
+
+421
+00:22:01,090 --> 00:22:06,233
+学会衡量不同情景，最重要的是别开太多仓位搞混自己
+how to measure different scenarios, and ultimately not confusing yourself by having too many different positions open.
+
+422
+00:22:06,235 --> 00:22:08,100
+谢谢大家收看，下期再见
+Thanks for watching guys. Catch you on the next one.
+
+===== END AFTER_TRANSLATE =====

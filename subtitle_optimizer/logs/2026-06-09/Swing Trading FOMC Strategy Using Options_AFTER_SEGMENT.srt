@@ -1,0 +1,2178 @@
+===== AFTER_SEGMENT (544 entries) =====
+1
+00:00:00,000 --> 00:00:01,300
+What's going on, guys? Brian's here.
+
+2
+00:00:01,300 --> 00:00:06,895
+Today is February 4th, 2023, and I hope you're having a great start to the trading year.
+
+3
+00:00:06,895 --> 00:00:09,675
+Trading options does not have to be binary.
+
+4
+00:00:09,675 --> 00:00:12,263
+And what I mean by that is most traders are used to
+
+5
+00:00:12,263 --> 00:00:15,499
+trying to call the direction that they think the market is going to go in.
+
+6
+00:00:15,500 --> 00:00:18,580
+In other words, if they think the market is going to go up, they're going to buy calls.
+
+7
+00:00:18,580 --> 00:00:21,225
+If they think the market is going to go down, they're going to buy puts.
+
+8
+00:00:21,225 --> 00:00:23,864
+And that can be extremely risky if you're trying to
+
+9
+00:00:23,864 --> 00:00:27,294
+pick the direction or predict, which is not something you want to do.
+
+10
+00:00:27,295 --> 00:00:29,287
+If you're We're trying to predict the direction
+
+11
+00:00:29,287 --> 00:00:31,030
+that you think the market is going
+
+12
+00:00:31,030 --> 00:00:32,524
+to go around big macro events.
+
+13
+00:00:32,525 --> 00:00:36,230
+In this case, for this video, we're talking about the FOMC.
+
+14
+00:00:36,230 --> 00:00:39,233
+Now, if you've been trading for the past 14 months or so,
+
+15
+00:00:39,233 --> 00:00:41,417
+you'll know that the market has been very
+
+16
+00:00:41,417 --> 00:00:44,147
+sensitive to this catalyst as well as the CPI report.
+
+17
+00:00:44,420 --> 00:00:47,615
+But just focusing on this one right here, the FOMC, we have
+
+18
+00:00:47,615 --> 00:00:50,810
+the calendar for the year, so it's easy to know the dates.
+
+19
+00:00:50,810 --> 00:00:55,480
+And you can use the approach that I'm going to share in this video around every single FOMC.
+
+20
+00:00:55,480 --> 00:00:59,420
+It's not very risky because we will be using longer dated options.
+
+21
+00:00:59,420 --> 00:01:02,237
+And I will show an alternative for how you can use a
+
+22
+00:01:02,237 --> 00:01:04,349
+shorter DTE if you have a very smaller count.
+
+23
+00:01:04,350 --> 00:01:07,580
+Granted, the shorter the DTE, the more risk inherently.
+
+24
+00:01:07,580 --> 00:01:12,960
+We will be comparing the options in which I will be talking about and comparing it to the price.
+
+25
+00:01:12,960 --> 00:01:15,640
+And we'll also be comparing the SPI to the QQQ.
+
+26
+00:01:15,640 --> 00:01:19,635
+Now, if you've never heard of the FOMC, I'm just going to turn this on for a second here.
+
+27
+00:01:19,635 --> 00:01:25,690
+And this is a list of all the past FOMC announcements for 2022, which started here and ended here.
+
+28
+00:01:25,690 --> 00:01:28,305
+And this was the first FOMC for 2023.
+
+29
+00:01:28,305 --> 00:01:33,290
+And you can already see I have a couple of the next upcoming ones marked off on my chart.
+
+30
+00:01:33,290 --> 00:01:34,795
+I like to be aware of these dates.
+
+31
+00:01:34,795 --> 00:01:39,470
+You can find these dates out very simply by just searching on Google for the FOMC announcement calendar.
+
+32
+00:01:39,470 --> 00:01:43,280
+And then it will bring you to the official government site where it shows the dates right here.
+
+33
+00:01:43,280 --> 00:01:45,560
+So we can see this is February 1st.
+
+34
+00:01:45,560 --> 00:01:49,395
+And then the next one is the 22nd, the 3rd, the 14th, the 26th and so forth.
+
+35
+00:01:49,395 --> 00:01:52,086
+You also have the previous years if you ever wanted
+
+36
+00:01:52,086 --> 00:01:54,239
+to go back and see what were the
+
+37
+00:01:54,239 --> 00:01:57,469
+previous dates for each FOMC from last year and the year prior.
+
+38
+00:01:57,470 --> 00:02:01,070
+FOMC just stands for Federal Open Market Committee.
+
+39
+00:02:01,070 --> 00:02:02,300
+Now, I'm not an economist.
+
+40
+00:02:02,300 --> 00:02:04,960
+I don't really care when I'm trying to base my
+
+41
+00:02:04,960 --> 00:02:08,419
+trading decision for this strategy on what the feds are going to say.
+
+42
+00:02:08,420 --> 00:02:11,405
+It doesn't really matter in a sense what they're going to do.
+
+43
+00:02:11,405 --> 00:02:14,550
+What we do know from a price action standpoint or
+
+44
+00:02:14,550 --> 00:02:18,954
+as a trader is that there will be increased volatility leading into the announcement.
+
+45
+00:02:18,955 --> 00:02:20,590
+So coming back to the chart,
+
+46
+00:02:20,590 --> 00:02:23,900
+the announcement takes place at 2 p.m. Eastern time.
+
+47
+00:02:23,900 --> 00:02:26,015
+And if there's ever going to be a change,
+
+48
+00:02:26,015 --> 00:02:27,900
+I'm pretty sure we'll know about it beforehand.
+
+49
+00:02:27,900 --> 00:02:30,461
+As again, it is listed on the government site and
+
+50
+00:02:30,461 --> 00:02:32,509
+there's a lot of news pages out there
+
+51
+00:02:32,509 --> 00:02:34,814
+that will update us on if this ever changed.
+
+52
+00:02:34,815 --> 00:02:36,880
+But for the most part, we know when to expect it.
+
+53
+00:02:36,880 --> 00:02:38,550
+We also know what time to expect it,
+
+54
+00:02:38,550 --> 00:02:41,235
+which means it gives us a decent amount of time
+
+55
+00:02:41,235 --> 00:02:43,383
+to prepare or decide how much risk we're
+
+56
+00:02:43,383 --> 00:02:44,994
+going to use for the trade.
+
+57
+00:02:44,995 --> 00:02:50,150
+Without getting too nuanced with the details, we can just take a look at this and we'll notice something here.
+
+58
+00:02:50,150 --> 00:02:54,725
+So all the way back in January of 2022, we can see that after the FOMC announcement,
+
+59
+00:02:54,725 --> 00:02:58,680
+there was a lot of volatility right here as these were wide ranges and the market made a big move.
+
+60
+00:02:58,680 --> 00:03:04,160
+We can also see right here, this was a pretty decent sized day as the market made another large move.
+
+61
+00:03:04,160 --> 00:03:08,040
+We can see right here, the market opened here and made a huge move.
+
+62
+00:03:08,040 --> 00:03:12,560
+And then it made another huge move the next day into the following day and made another large move.
+
+63
+00:03:12,560 --> 00:03:16,480
+And if we come right here, we can see on this date, the market made a huge move down.
+
+64
+00:03:16,480 --> 00:03:18,720
+This date market made a huge move.
+
+65
+00:03:18,720 --> 00:03:20,200
+It started to trend in a certain direction.
+
+66
+00:03:20,200 --> 00:03:22,098
+And here we have the market open up
+
+67
+00:03:22,098 --> 00:03:23,521
+here and it made a huge
+
+68
+00:03:23,521 --> 00:03:25,419
+move as it continued into the following day.
+
+69
+00:03:25,420 --> 00:03:29,625
+We can see this day here, market also made a huge move around this and so forth.
+
+70
+00:03:29,625 --> 00:03:32,770
+And as we zoom into this current FOMC announcement,
+
+71
+00:03:32,770 --> 00:03:35,460
+which was on Wednesday of this week, the market opened here.
+
+72
+00:03:35,460 --> 00:03:38,770
+And you guys can see by the following day, it made this pop up to about here.
+
+73
+00:03:38,770 --> 00:03:43,945
+So these moves, this move is actually relatively tame compared to some which we've seen in the past.
+
+74
+00:03:43,945 --> 00:03:46,217
+This is only about a 3% move or so, as
+
+75
+00:03:46,217 --> 00:03:47,984
+we'll say, which is about 12 points on
+
+76
+00:03:47,984 --> 00:03:52,529
+the SPY, which for right now, granted coming, you know, we're in the midst of this bear market.
+
+77
+00:03:53,035 --> 00:03:55,885
+Everyone's still trying to decide, are we in one? Are we not in one?
+
+78
+00:03:55,885 --> 00:04:00,310
+That's, you know, a 3% move is kind of become the norm for the time being,
+
+79
+00:04:00,310 --> 00:04:01,411
+because as you guys can
+
+80
+00:04:01,411 --> 00:04:04,934
+see, there's been a lot of big ranges on these daily candlesticks that we're looking at.
+
+81
+00:04:04,935 --> 00:04:07,160
+But more importantly, take a look at this here.
+
+82
+00:04:07,160 --> 00:04:11,620
+It's not that large relative to some of the other bigger moves in which we've seen.
+
+83
+00:04:11,620 --> 00:04:13,340
+So from here to here, this
+
+84
+00:04:13,340 --> 00:04:15,060
+three days right here, this was
+
+85
+00:04:15,060 --> 00:04:16,780
+about, we just estimated from here
+
+86
+00:04:16,780 --> 00:04:18,786
+to here, this was almost 5%, so over 4.5%.
+
+87
+00:04:19,360 --> 00:04:22,995
+If we come to this date right here, we can see the market open up around here.
+
+88
+00:04:22,995 --> 00:04:25,780
+And then by the following days, it was also over 4%.
+
+89
+00:04:25,780 --> 00:04:29,660
+If we take the exact low to the exact high, so we get about 4%.
+
+90
+00:04:29,660 --> 00:04:33,310
+But you see, a lot of these other dates had much wider ranges,
+
+91
+00:04:33,310 --> 00:04:34,684
+especially within the two days
+
+92
+00:04:34,684 --> 00:04:36,607
+following. So just, I want, that's important
+
+93
+00:04:36,607 --> 00:04:38,805
+to point out because it just means the
+
+94
+00:04:38,805 --> 00:04:42,378
+performance in which I'm going to show you guys for this particular strategy.
+
+95
+00:04:42,380 --> 00:04:46,880
+It worked out well this time, but it actually also performed better in the past.
+
+96
+00:04:46,880 --> 00:04:47,706
+And this is something,
+
+97
+00:04:47,706 --> 00:04:49,358
+you know, if you see a video on
+
+98
+00:04:49,358 --> 00:04:50,804
+YouTube, I don't suggest you just take
+
+99
+00:04:50,804 --> 00:04:54,729
+the information and say that's exactly how you're going to apply it and everything you do in the future.
+
+100
+00:04:54,730 --> 00:04:57,775
+Take the information and then go and backtest it for yourself.
+
+101
+00:04:57,775 --> 00:04:59,135
+Go on Thinkorswim's On Demand.
+
+102
+00:04:59,135 --> 00:05:01,039
+Take a look and see if you
+
+103
+00:05:01,039 --> 00:05:03,759
+can compare, see if you can get your own performances.
+
+104
+00:05:03,760 --> 00:05:04,678
+I highly encourage, you
+
+105
+00:05:04,678 --> 00:05:06,515
+know, open up an Excel spreadsheet, plot the
+
+106
+00:05:06,515 --> 00:05:08,352
+dates in there, see the moves in which
+
+107
+00:05:08,352 --> 00:05:20,297
+it made, compare the options, and see if you can kind of devise a strategy for yourself because that's the best way you can prepare for the trade in the future, as well as know how much risk to give the trade, how much capital you want to allocate for the trade.
+
+108
+00:05:20,300 --> 00:05:22,194
+Because I can tell you right now,
+
+109
+00:05:22,194 --> 00:05:24,358
+for my expectations, the strategy in which I'm
+
+110
+00:05:24,358 --> 00:05:25,710
+going to share my expectations
+
+111
+00:05:25,710 --> 00:05:31,392
+for the year is to essentially make anywhere from about $20,000 to $25,000 on just this strategy for the balance of the year.
+
+112
+00:05:31,935 --> 00:05:37,995
+There's eight FOMC announcements for the year. We've just had the first one. So there's seven left in the year.
+
+113
+00:05:37,995 --> 00:05:41,380
+If my goals for the year is to make, you know, about $150,000
+
+114
+00:05:41,380 --> 00:05:43,744
+from trading, and I have one particular strategy
+
+115
+00:05:43,744 --> 00:05:46,404
+in which I can say I'm estimating about $25,000, my
+
+116
+00:05:46,404 --> 00:05:49,359
+objective is what are the strategies can I implement to
+
+117
+00:05:49,359 --> 00:05:51,132
+make the additional $125,000 or so forth.
+
+118
+00:05:51,725 --> 00:05:53,812
+Or even if you're just looking to make
+
+119
+00:05:53,812 --> 00:05:56,160
+$50,000 for the year, if you have a strategy that
+
+120
+00:05:56,160 --> 00:05:58,508
+you can make, you know, $15,000 and this video can
+
+121
+00:05:58,508 --> 00:06:03,466
+help you kind of devise your own plan and your own strategy around it, then I would highly suggest,
+
+122
+00:06:03,990 --> 00:06:07,390
+you know, you watch this video a couple times and then take notes,
+
+123
+00:06:07,390 --> 00:06:09,008
+go back, back test, and that's
+
+124
+00:06:09,008 --> 00:06:13,054
+how you can prepare because we have plenty of time before the next FOMC announcement.
+
+125
+00:06:13,055 --> 00:06:15,280
+Now, this strategy can be used as a swing trading strategy.
+
+126
+00:06:15,280 --> 00:06:16,675
+It's not for day trading.
+
+127
+00:06:16,675 --> 00:06:19,106
+It's not for the anxiety that comes with
+
+128
+00:06:19,106 --> 00:06:21,233
+trying to be right because we know
+
+129
+00:06:21,233 --> 00:06:25,488
+if we go to the actual intraday trade right here, this is the announcement.
+
+130
+00:06:25,490 --> 00:06:28,195
+Volatility ensues a lot around the timeframe.
+
+131
+00:06:28,195 --> 00:06:30,344
+So 2 p.m. as soon as the news
+
+132
+00:06:30,344 --> 00:06:34,104
+hits the wire, algorithms are going back and forth and things are pretty chaotic.
+
+133
+00:06:34,105 --> 00:06:35,871
+When I first started trading futures a few
+
+134
+00:06:35,871 --> 00:06:37,637
+years ago, I actually used to trade futures
+
+135
+00:06:37,637 --> 00:06:39,844
+around these FOMC announcements and they were always very stressful.
+
+136
+00:06:39,845 --> 00:06:40,795
+It was either hit or miss.
+
+137
+00:06:40,795 --> 00:06:42,660
+One FOMC announcement, I'd make $2,000.
+
+138
+00:06:42,660 --> 00:06:45,720
+The next FOMC announcement, I'd lose $3,000.
+
+139
+00:06:45,720 --> 00:06:48,400
+The following one, I'd only make, you know, $500.
+
+140
+00:06:48,400 --> 00:06:49,285
+And then the next one,
+
+141
+00:06:49,285 --> 00:06:50,615
+I'd end up losing $1,000.
+
+142
+00:06:50,615 --> 00:06:52,632
+And at the end of, you know, the
+
+143
+00:06:52,632 --> 00:06:54,397
+year, I was just like, I'm net
+
+144
+00:06:54,397 --> 00:06:57,423
+negative on trading around the FOMC and the stress that it ensued.
+
+145
+00:06:57,425 --> 00:06:59,246
+After taking a step back the following year,
+
+146
+00:06:59,246 --> 00:07:00,840
+I was just like, wow, this is
+
+147
+00:07:00,840 --> 00:07:04,483
+why am I stressing myself out trying to day trade and scalp all of these things?
+
+148
+00:07:04,485 --> 00:07:05,250
+Occasionally, yes.
+
+149
+00:07:05,250 --> 00:07:07,016
+Now I'll trade with a zero DTE, just
+
+150
+00:07:07,016 --> 00:07:08,561
+grab one or two where the risk
+
+151
+00:07:08,561 --> 00:07:13,417
+is less than 50, 60 bucks, just to see if, you know, you can squeeze out an extra two, $300 on a day trade here.
+
+152
+00:07:14,080 --> 00:07:16,262
+But your, your risk for the day trade,
+
+153
+00:07:16,262 --> 00:07:18,172
+especially around these events should not be
+
+154
+00:07:18,172 --> 00:07:21,719
+that high, especially when the moves are so much larger after the event.
+
+155
+00:07:21,720 --> 00:07:23,906
+And then not to mention the fact that you have
+
+156
+00:07:23,906 --> 00:07:25,655
+a lot clearer ahead if you're not putting
+
+157
+00:07:25,655 --> 00:07:28,279
+so much risk on such short dated trades, if you're using options.
+
+158
+00:07:28,280 --> 00:07:30,260
+And if you're trading futures, then you know,
+
+159
+00:07:30,260 --> 00:07:31,993
+the risk is already, the leverage is
+
+160
+00:07:31,993 --> 00:07:35,706
+through the roof on futures that you're watching your P&L swing up and down.
+
+161
+00:07:35,460 --> 00:07:37,916
+If you're trading a one ES contract here
+
+162
+00:07:37,916 --> 00:07:40,065
+and the market is moving, you know,
+
+163
+00:07:40,065 --> 00:07:42,521
+30, 40 handles or points or however you call it.
+
+164
+00:07:43,135 --> 00:07:45,067
+If you're, if the market moves 40 points
+
+165
+00:07:45,067 --> 00:07:46,999
+against you within five minutes, which it
+
+166
+00:07:46,999 --> 00:07:51,139
+can very easily do around here, you're talking about a lot of money being lost.
+
+167
+00:07:51,415 --> 00:07:53,390
+So I tend to avoid most of that.
+
+168
+00:07:53,390 --> 00:07:56,320
+I want to start now by showing the exact options I traded.
+
+169
+00:07:56,320 --> 00:07:59,175
+So this right here is just within the Quant Trading App Discord.
+
+170
+00:07:59,175 --> 00:08:03,400
+And this right here was the day before the FOMC announcement.
+
+171
+00:08:03,400 --> 00:08:05,635
+So the announcement was on February 1st.
+
+172
+00:08:05,635 --> 00:08:08,092
+And on the Tuesday, as soon as the
+
+173
+00:08:08,092 --> 00:08:10,549
+market closed, you can actually trade index and
+
+174
+00:08:10,549 --> 00:08:13,313
+ETF options, some ETF options after the market closes.
+
+175
+00:08:13,315 --> 00:08:16,065
+So you have 15 minutes after the market closes to get filled.
+
+176
+00:08:16,065 --> 00:08:18,770
+And that's usually when I like to place a lot of my orders.
+
+177
+00:08:18,770 --> 00:08:20,628
+So this right here, I was just
+
+178
+00:08:20,628 --> 00:08:22,752
+sharing with some of the traders within QTA
+
+179
+00:08:22,752 --> 00:08:25,938
+showing that I grabbed a 390 put and a 305 call in the QQQ.
+
+180
+00:08:26,470 --> 00:08:29,840
+So I essentially was short the SPY and long the Q.
+
+181
+00:08:29,840 --> 00:08:32,900
+And this is just showing here the P&L was barely budget. I had just got filled.
+
+182
+00:08:32,900 --> 00:08:34,319
+So I just took a screenshot and
+
+183
+00:08:34,319 --> 00:08:36,143
+shared it because I know it didn't have a
+
+184
+00:08:36,143 --> 00:08:39,589
+lot of time for anybody if they were looking for strategies to implement for the following day.
+
+185
+00:08:39,590 --> 00:08:41,665
+So I just want to take a quick screenshot, share it.
+
+186
+00:08:41,665 --> 00:08:44,465
+And that's what we're seeing as I drag this watchlist over right here.
+
+187
+00:08:44,465 --> 00:08:48,625
+So it's just these two and we will be taking a look at them in detail in a second.
+
+188
+00:08:48,625 --> 00:08:50,680
+So that's what we have here.
+
+189
+00:08:50,680 --> 00:08:52,391
+And then there's another strategy in which
+
+190
+00:08:52,391 --> 00:08:54,346
+was shared in which I was just showing
+
+191
+00:08:54,346 --> 00:08:55,568
+for a smaller account here,
+
+192
+00:08:55,568 --> 00:08:59,479
+something that you can do, especially if you're looking to hedge something like an iron condor,
+
+193
+00:08:59,480 --> 00:09:03,580
+because I actually had a few iron condors last week, took profit on those before the announcement.
+
+194
+00:09:03,580 --> 00:09:05,815
+And then I opened another one out
+
+195
+00:09:05,815 --> 00:09:08,050
+on Thursday and close it on Friday
+
+196
+00:09:08,050 --> 00:09:11,243
+because I was expecting the volatility to drop by Friday.
+
+197
+00:09:11,245 --> 00:09:13,425
+Anyway, so moving right along, keeping it simple.
+
+198
+00:09:13,425 --> 00:09:16,140
+Again, the point of this video is to keep the strategy pretty simple here.
+
+199
+00:09:16,140 --> 00:09:18,985
+So put on the SPY and a call on the QQQ.
+
+200
+00:09:18,985 --> 00:09:19,805
+Let's take a look.
+
+201
+00:09:19,805 --> 00:09:23,680
+Why would I do something like that? Or why would I even consider doing something like that?
+
+202
+00:09:23,680 --> 00:09:26,711
+If we take a look at the chart and zoom out for
+
+203
+00:09:26,711 --> 00:09:29,994
+a second here, we can see a huge move happened in the SPY.
+
+204
+00:09:29,995 --> 00:09:31,350
+SPY went up pretty big.
+
+205
+00:09:31,350 --> 00:09:35,005
+And if we take a look at the Qs, the Qs also went up pretty big.
+
+206
+00:09:35,005 --> 00:09:41,610
+Now, what made this week extra special is the fact that there was also a lot of big tech earnings.
+
+207
+00:09:41,610 --> 00:09:46,440
+So Apple reported earnings, Google reported earnings, Amazon reported earnings.
+
+208
+00:09:46,440 --> 00:09:49,617
+So I told myself if there was going to be any sector
+
+209
+00:09:49,617 --> 00:09:53,324
+that would actually make a large move, it would probably be the tech sector.
+
+210
+00:09:53,325 --> 00:09:57,460
+Because if the market reacted positively to what Fed Chairman Powell was
+
+211
+00:09:57,460 --> 00:09:59,872
+going to say at the FOMC announcement,
+
+212
+00:09:59,872 --> 00:10:01,939
+it would probably be the NASDAQ.
+
+213
+00:10:01,940 --> 00:10:04,040
+So I want it to be long the NASDAQ.
+
+214
+00:10:04,040 --> 00:10:06,490
+And as a hedge, I wanted to be short the SPY.
+
+215
+00:10:06,490 --> 00:10:11,580
+If the SPY was to roll over, it was very likely going to drop very harshly.
+
+216
+00:10:11,580 --> 00:10:13,552
+So if we zoom out here, I want
+
+217
+00:10:13,552 --> 00:10:15,524
+you guys to see on this chart, this
+
+218
+00:10:15,524 --> 00:10:18,729
+was the entry from the day before in which I grabbed the put.
+
+219
+00:10:18,730 --> 00:10:20,285
+The target was 390.
+
+220
+00:10:20,285 --> 00:10:24,140
+Now there's all sorts of different ways to decide, you know, which strike to go with.
+
+221
+00:10:24,140 --> 00:10:27,715
+I will just say for now, a little bit of experience to keep this simple.
+
+222
+00:10:27,715 --> 00:10:31,020
+We know 390 is a very strong, powerful support level on the chart.
+
+223
+00:10:31,020 --> 00:10:36,890
+And the DTE was a 58 DTE option I was trading. So the March 31st.
+
+224
+00:10:36,890 --> 00:10:38,860
+Why would I go with the March 31st?
+
+225
+00:10:38,860 --> 00:10:45,820
+If we come back to the calendar, the next FOMC announcement is on the 22nd of March.
+
+226
+00:10:45,820 --> 00:10:52,785
+So by going for the 31st of March, I don't have to worry about the implied volatility dropping significantly.
+
+227
+00:10:52,785 --> 00:10:56,065
+That is an issue that traders, option traders run into.
+
+228
+00:10:56,065 --> 00:10:59,851
+If you buy an option contract around or right before
+
+229
+00:10:59,851 --> 00:11:02,880
+a big news event, after the big news
+
+230
+00:11:02,880 --> 00:11:05,909
+events happens, what happens is implied volatility decreases.
+
+231
+00:11:05,910 --> 00:11:10,175
+And you'll notice this, and you'll notice this if you try to trade options around earnings.
+
+232
+00:11:10,175 --> 00:11:14,380
+In other words, if Apple is reporting earnings, say for example, on Thursday,
+
+233
+00:11:14,380 --> 00:11:16,742
+and then you buy a call.
+
+234
+00:11:16,742 --> 00:11:19,104
+So this will be AAPL. Let's
+
+235
+00:11:19,104 --> 00:11:23,434
+just say you buy a call and this looks like Apple.
+
+236
+00:11:23,435 --> 00:11:25,615
+So Apple reports earnings and then it beats.
+
+237
+00:11:25,615 --> 00:11:27,789
+But your call, let's just say, again, this
+
+238
+00:11:27,789 --> 00:11:29,963
+is not Apple, but let's just say your
+
+239
+00:11:29,963 --> 00:11:32,409
+call was for the 304 strike and Apple goes to 304.
+
+240
+00:11:32,955 --> 00:11:36,053
+The next morning, even though you called it right on
+
+241
+00:11:36,053 --> 00:11:39,151
+the direction, you might actually lose money because what happens
+
+242
+00:11:39,151 --> 00:11:45,658
+is that implied volatility is going to drop after the earnings comes out because the implied move is no longer there.
+
+243
+00:11:45,660 --> 00:11:47,800
+The large implied move is no longer there.
+
+244
+00:11:47,800 --> 00:11:50,400
+Before the event, no one knows what's going to happen.
+
+245
+00:11:50,400 --> 00:11:53,672
+So option sellers have to bake in a higher premium to account
+
+246
+00:11:53,672 --> 00:11:56,399
+for the risk that they're taking by selling those options.
+
+247
+00:11:56,400 --> 00:11:59,035
+And that's something that you get crushed on.
+
+248
+00:11:59,035 --> 00:12:00,265
+It's called the IV crush.
+
+249
+00:12:00,265 --> 00:12:07,620
+Now, if you're trading options that expire over 45 DTE, that's one way to mitigate that IV crush risk.
+
+250
+00:12:07,620 --> 00:12:11,070
+Now, obviously, if you're trading longer DTE, the options are more expensive.
+
+251
+00:12:11,070 --> 00:12:21,955
+So what we're looking at here is the 390 put that is 58 days till expiration after the next FOMC.
+
+252
+00:12:21,955 --> 00:12:26,745
+It means after the implied volatility drops, it won't suffer as much.
+
+253
+00:12:26,745 --> 00:12:29,554
+So let's actually come to studies and let's take a
+
+254
+00:12:29,554 --> 00:12:34,049
+look at... not that this is the most scientific way to look at the implied volatility,
+
+255
+00:12:34,050 --> 00:12:38,885
+but if we zoom in right here, this is the implied volatility on the SPY.
+
+256
+00:12:38,885 --> 00:12:41,890
+As we're looking at, and you guys can see it's a little bit elevated and it's high.
+
+257
+00:12:41,890 --> 00:12:45,228
+The moment the announcement comes out, we can see that
+
+258
+00:12:45,228 --> 00:12:48,899
+the implied volatility just takes this plummet down here and then
+
+259
+00:12:48,900 --> 00:12:53,220
+eventually bounces back up by the next day as volatility comes a little bit back into the market.
+
+260
+00:12:53,220 --> 00:12:56,900
+We can see price pulls back, volatility spikes a little bit here.
+
+261
+00:12:56,900 --> 00:12:59,515
+But what's significant is this implied volatility drop right here.
+
+262
+00:12:59,515 --> 00:13:02,808
+If you're trading a zero DTE option or you're trading
+
+263
+00:13:02,808 --> 00:13:04,784
+an option that expires even by
+
+264
+00:13:04,784 --> 00:13:07,089
+the Friday or even the following day,
+
+265
+00:13:07,090 --> 00:13:12,725
+you're going to take part of this IV crush a little bit more than trading something like a 58 DTE option.
+
+266
+00:13:12,725 --> 00:13:15,038
+And again, the significance here is it's an
+
+267
+00:13:15,038 --> 00:13:17,061
+option that takes place the week of
+
+268
+00:13:17,061 --> 00:13:19,374
+or the week after the next FOMC announcement.
+
+269
+00:13:19,375 --> 00:13:22,130
+That is important for the strategy.
+
+270
+00:13:22,130 --> 00:13:27,450
+So let's just turn off the implied volatility and continue right along.
+
+271
+00:13:27,450 --> 00:13:29,655
+Now let's go over the cash flow for this trade.
+
+272
+00:13:29,655 --> 00:13:31,265
+The entry for this, again, this
+
+273
+00:13:31,265 --> 00:13:32,875
+is right here as the market
+
+274
+00:13:32,875 --> 00:13:34,485
+closed on the Tuesday, this contract
+
+275
+00:13:34,485 --> 00:13:35,290
+was going for $6.
+
+276
+00:13:35,560 --> 00:13:40,665
+The max drawdown for this contract was $2.44, so $244.
+
+277
+00:13:40,665 --> 00:13:43,980
+That's because it was a put for 390.
+
+278
+00:13:43,980 --> 00:13:45,470
+So this is targeting 390.
+
+279
+00:13:45,470 --> 00:13:53,100
+However, the market went up pretty big. We'll say roughly 12 points from the initial entry here.
+
+280
+00:13:53,100 --> 00:13:54,975
+And that's what caused this contract to be down.
+
+281
+00:13:54,975 --> 00:13:57,159
+But to be down $244 on implied volatility
+
+282
+00:13:57,159 --> 00:13:59,655
+coming down and you call the direction wrong.
+
+283
+00:13:59,655 --> 00:14:03,711
+In this case, it's a put, which means we call the direction wrong.
+
+284
+00:14:04,025 --> 00:14:06,085
+If you're buying a put, you think the market's going to go down.
+
+285
+00:14:06,085 --> 00:14:08,367
+The market went up and this contract was
+
+286
+00:14:08,367 --> 00:14:10,364
+only down $2.44, which means if you bought
+
+287
+00:14:10,364 --> 00:14:12,361
+one of these, you're only down $244, which
+
+288
+00:14:12,361 --> 00:14:18,923
+is not the end of the world, especially on a contract that still has well over a month and a half till expiration.
+
+289
+00:14:19,495 --> 00:14:23,885
+Now let's compare that overall with the call that was purchased on the NASDAQ.
+
+290
+00:14:23,885 --> 00:14:25,729
+So if we pull up the
+
+291
+00:14:25,729 --> 00:14:27,573
+QQQ and then we pull up
+
+292
+00:14:27,573 --> 00:14:31,569
+the 305 call, we can see that this call was purchased for $6.55 right here.
+
+293
+00:14:32,185 --> 00:14:37,560
+Again, the same time right here after the market closed on Tuesday, this was the initial entry.
+
+294
+00:14:37,560 --> 00:14:42,945
+And then we can see at the maximum profit at this point, this contract had hit $17.70.
+
+295
+00:14:42,945 --> 00:14:44,350
+Now that's a huge return.
+
+296
+00:14:44,350 --> 00:14:50,020
+Obviously, if you only bought the call and you were right on the direction, you're taking the binary approach,
+
+297
+00:14:50,020 --> 00:14:51,933
+you're saying you have a crystal ball and you know
+
+298
+00:14:51,933 --> 00:14:53,272
+exactly what the market's going to do
+
+299
+00:14:53,272 --> 00:14:54,419
+and where it's going to go.
+
+300
+00:14:54,420 --> 00:14:55,825
+And you just buy this contract.
+
+301
+00:14:55,825 --> 00:14:57,410
+Obviously, this is a huge return.
+
+302
+00:14:57,410 --> 00:14:59,475
+You're essentially doubling your money company.
+
+303
+00:14:59,475 --> 00:15:01,258
+However, you're taking on major risks
+
+304
+00:15:01,258 --> 00:15:03,636
+because if this did not work and the
+
+305
+00:15:03,636 --> 00:15:06,608
+markets did come down, this call would have been crushed.
+
+306
+00:15:06,610 --> 00:15:11,005
+Now, if we compare what we're risking, if we grabbed the put in the SPY here,
+
+307
+00:15:11,005 --> 00:15:13,825
+we can see the max drawdown was only $244.
+
+308
+00:15:13,825 --> 00:15:17,990
+And if we come back to the call here, this contract made over $11.
+
+309
+00:15:17,990 --> 00:15:23,355
+So if we net out the difference, you're talking about $871 in net profit.
+
+310
+00:15:23,355 --> 00:15:26,626
+So by buying the insurance or buying the security of
+
+311
+00:15:26,626 --> 00:15:29,243
+also grabbing the put, we can see that
+
+312
+00:15:29,243 --> 00:15:32,514
+that's taking advantage of what's called a convexity of options.
+
+313
+00:15:32,515 --> 00:15:36,000
+Or you can think of it as the exponential return that can come from options.
+
+314
+00:15:36,000 --> 00:15:38,288
+In other words, if we take a look again
+
+315
+00:15:38,288 --> 00:15:39,813
+at this put, the time value
+
+316
+00:15:39,813 --> 00:15:42,609
+or the extrinsic value is what's left on this contract here.
+
+317
+00:15:42,610 --> 00:15:45,255
+So it's very hard for this contract to
+
+318
+00:15:45,255 --> 00:15:47,900
+continue to lose money because there's still so
+
+319
+00:15:47,900 --> 00:15:49,553
+much time left on it.
+
+320
+00:15:49,555 --> 00:15:52,547
+So in other words, for buying this contract for
+
+321
+00:15:52,547 --> 00:15:54,874
+$6 for a month and a half out,
+
+322
+00:15:54,874 --> 00:15:56,536
+that's essentially what we're purchasing.
+
+323
+00:15:56,870 --> 00:15:59,381
+Because the market went in the wrong direction
+
+324
+00:15:59,381 --> 00:16:01,578
+for the put, it lost, yes, it
+
+325
+00:16:01,578 --> 00:16:03,147
+did lose some value because
+
+326
+00:16:03,147 --> 00:16:05,658
+of the way options work because of what
+
+327
+00:16:05,660 --> 00:16:07,270
+happened with the delta and the gamma.
+
+328
+00:16:07,270 --> 00:16:09,027
+But when we think about this,
+
+329
+00:16:09,027 --> 00:16:10,784
+most importantly, from a risk standpoint,
+
+330
+00:16:10,784 --> 00:16:13,419
+you're only risking in this case, this particular scenario.
+
+331
+00:16:13,420 --> 00:16:15,290
+And again, this is a relatively large move.
+
+332
+00:16:15,290 --> 00:16:19,505
+So from here to here, we're talking about a 6% move in the Qs.
+
+333
+00:16:19,505 --> 00:16:21,355
+Sorry, let's just jump back to the SPY.
+
+334
+00:16:21,355 --> 00:16:26,730
+So from here to here, we're talking about almost a 3% rally against your position.
+
+335
+00:16:26,730 --> 00:16:34,360
+And you're only down $244. Again, if you're in one contract, that is not bad when we're talking about options.
+
+336
+00:16:34,360 --> 00:16:36,464
+If we jump back to the call
+
+337
+00:16:36,464 --> 00:16:40,673
+for the NASDAQ, we're seeing the net difference again is $871 as a max profit.
+
+338
+00:16:40,975 --> 00:16:43,169
+Now, if we just held these contracts
+
+339
+00:16:43,169 --> 00:16:45,677
+until the end of the week, which is
+
+340
+00:16:45,677 --> 00:16:50,380
+the simplified approach that I sometimes will use, we're talking about a net profit of $522.
+
+341
+00:16:50,695 --> 00:16:57,800
+Because in this case, this call on the NASDAQ accrued in value $667.
+
+342
+00:16:57,800 --> 00:17:00,510
+So that's $6.67.
+
+343
+00:17:00,510 --> 00:17:05,600
+The contract went up minus what we lost on the SPY call, which is $1.45.
+
+344
+00:17:05,600 --> 00:17:06,422
+I mean, the
+
+345
+00:17:06,422 --> 00:17:08,342
+SPY put, if we jump back to
+
+346
+00:17:08,342 --> 00:17:10,262
+the SPY put, we can see by
+
+347
+00:17:10,262 --> 00:17:13,279
+the close, this contract was actually down from here to here, $1.45.
+
+348
+00:17:13,555 --> 00:17:18,475
+So if we net out the difference, that's how we get this net profit of $522.
+
+349
+00:17:18,475 --> 00:17:28,180
+So the total investment cost $1,255 because buying the one put was $6 and then buying the one call is $655.
+
+350
+00:17:28,180 --> 00:17:31,125
+So in total, this is how much the initial investment costs.
+
+351
+00:17:31,125 --> 00:17:34,899
+And then total max return, if the max net return was $871,
+
+352
+00:17:34,899 --> 00:17:39,016
+if you timed it perfectly and you were able to get that
+
+353
+00:17:39,016 --> 00:17:45,879
+perfect fill at the top, you're talking about a return of $871, which is about a 69% return on your initial investment.
+
+354
+00:17:46,910 --> 00:17:48,660
+Now, if we're talking about the investment return,
+
+355
+00:17:48,660 --> 00:17:50,747
+if you just held it and you take the simplify
+
+356
+00:17:50,747 --> 00:17:54,294
+approach and you just play it out all the way until the close of the weekly candle,
+
+357
+00:17:54,295 --> 00:17:56,255
+you're essentially... that's the simplify strategies.
+
+358
+00:17:56,255 --> 00:17:57,988
+We have eight weeks out of the year
+
+359
+00:17:57,988 --> 00:18:01,239
+and you're saying eight weeks out of the year, I'm going to run something similar.
+
+360
+00:18:01,240 --> 00:18:06,240
+This is not the exact or it's not exact science where you can duplicate this exact approach.
+
+361
+00:18:06,240 --> 00:18:08,450
+I'll show you guys a comparison after.
+
+362
+00:18:08,450 --> 00:18:14,930
+But if we're looking at the eight weeks and we're talking about a 41% return, if you just close until Friday,
+
+363
+00:18:14,930 --> 00:18:21,610
+I would say, keep your expectations a little bit more mellow at around 20 to 30% return, 25 to 30% return.
+
+364
+00:18:21,610 --> 00:18:24,370
+I usually end up taking profits around 25% return on
+
+365
+00:18:24,370 --> 00:18:31,117
+my initial investment here, because again, I like to focus on the predictability and as well as the consistency aspect of it.
+
+366
+00:18:31,425 --> 00:18:33,948
+Yes, it does suck sometimes seeing that I could have
+
+367
+00:18:33,948 --> 00:18:36,219
+made 40% return, but at the end of the day,
+
+368
+00:18:36,219 --> 00:18:42,527
+it's about how is it going to work systematically over the long-term as well as knowing what the expectations are for if things go wrong.
+
+369
+00:18:42,780 --> 00:18:45,735
+In this case, if I'm looking for a 25% return,
+
+370
+00:18:45,735 --> 00:18:48,105
+you can keep it for a strategy like this as a one-to-one.
+
+371
+00:18:48,105 --> 00:18:51,830
+So if you are down 25%, maybe, you know, take the loss.
+
+372
+00:18:51,830 --> 00:18:52,670
+It's very rare.
+
+373
+00:18:52,670 --> 00:18:55,825
+In my experience, I haven't been down more than 25% on something like this.
+
+374
+00:18:55,825 --> 00:18:58,375
+If you're running something that's called a straddle, or if
+
+375
+00:18:58,375 --> 00:19:00,415
+you're running what's called a guts, where you
+
+376
+00:19:00,415 --> 00:19:03,985
+purchase an in-the-money call and an in-the-money put both on the SPY,
+
+377
+00:19:03,475 --> 00:19:06,840
+those types of strategies that have been down 20, 25% on before.
+
+378
+00:19:06,840 --> 00:19:08,947
+But if you're buying out the money
+
+379
+00:19:08,947 --> 00:19:11,054
+options, and if you're using two instruments,
+
+380
+00:19:11,054 --> 00:19:13,463
+and it's pretty difficult for that to happen.
+
+381
+00:19:13,465 --> 00:19:15,615
+But as we focus in on this right here,
+
+382
+00:19:15,615 --> 00:19:18,242
+yes, buying just one naked option or buying
+
+383
+00:19:18,242 --> 00:19:20,541
+just one direction and picking one direction
+
+384
+00:19:20,541 --> 00:19:23,168
+would net you a massive return right here.
+
+385
+00:19:23,170 --> 00:19:24,669
+However, by saying, if you're
+
+386
+00:19:24,669 --> 00:19:26,768
+thinking about it, and if you're approaching
+
+387
+00:19:26,768 --> 00:19:29,166
+it as a risk manager, and you're telling
+
+388
+00:19:29,166 --> 00:19:34,263
+yourself, what's the expected return, and what am I risking if the market was to go down,
+
+389
+00:19:34,265 --> 00:19:36,191
+the put would have the put
+
+390
+00:19:36,191 --> 00:19:38,759
+would have made an amazing return because this
+
+391
+00:19:38,759 --> 00:19:40,685
+contract probably would have went from
+
+392
+00:19:40,685 --> 00:19:42,932
+655, probably down to about $4 or $5 or so.
+
+393
+00:19:43,895 --> 00:19:47,595
+And this put would have increased in value exponentially.
+
+394
+00:19:47,595 --> 00:19:51,660
+Also, this put probably would have ended up going all the way up to over $12.
+
+395
+00:19:51,660 --> 00:19:53,500
+So it would have ended up being a
+
+396
+00:19:53,500 --> 00:19:55,110
+net positive trade either way, not to
+
+397
+00:19:55,110 --> 00:19:57,410
+mention the fact that if the SPY did go down,
+
+398
+00:19:57,410 --> 00:20:03,375
+implied volatility would have increased significantly. And that would have helped the put actually increase in value,
+
+399
+00:20:03,375 --> 00:20:04,505
+that value even more,
+
+400
+00:20:04,505 --> 00:20:07,567
+the put might have ended up going all the way up to
+
+401
+00:20:07,567 --> 00:20:11,139
+$14 or something like that, or potentially even the $17 that the call ended up making.
+
+402
+00:20:11,650 --> 00:20:14,926
+Now, the reason the call for the queues was a little bit
+
+403
+00:20:14,926 --> 00:20:16,837
+closer to the money is because that's
+
+404
+00:20:16,837 --> 00:20:20,659
+just the nature of you want some intrinsic value if you're buying the call.
+
+405
+00:20:20,660 --> 00:20:24,164
+So I wanted this call to go in the money, because that
+
+406
+00:20:24,164 --> 00:20:27,960
+helps offset some of the implied volatility hit that it's going to take,
+
+407
+00:20:27,960 --> 00:20:33,740
+because as the market goes up, implied volatility generally goes down, and that tends to hurt options.
+
+408
+00:20:33,740 --> 00:20:37,252
+So again, that's why the call, if we notice here, this call
+
+409
+00:20:37,252 --> 00:20:39,008
+on the queues is only right
+
+410
+00:20:39,008 --> 00:20:41,642
+from here to here. It's only about a 3.5% expectation.
+
+411
+00:20:41,935 --> 00:20:44,973
+But if we were to go to the SPY, the drop on
+
+412
+00:20:44,973 --> 00:20:49,276
+the SPY was all the way down here. So this is about a 4% drop on the SPY.
+
+413
+00:20:49,530 --> 00:20:55,540
+So this is a much bigger drop. It's a 16-point drop on the SPY I would have been looking for.
+
+414
+00:20:55,540 --> 00:20:57,928
+But that's just to account as if you've heard the
+
+415
+00:20:57,928 --> 00:20:59,599
+saying, you know, the market takes the
+
+416
+00:20:59,599 --> 00:21:01,748
+stairs up, and then it takes the elevator down.
+
+417
+00:21:01,750 --> 00:21:04,520
+So keep that in mind whenever you're trying to structure out your trades like this.
+
+418
+00:21:04,520 --> 00:21:06,229
+Now to briefly show you guys a little
+
+419
+00:21:06,229 --> 00:21:07,938
+bit of the alternative, as I mentioned, if
+
+420
+00:21:07,938 --> 00:21:10,929
+we just were to come to here, I was just telling this other trader,
+
+421
+00:21:10,930 --> 00:21:14,214
+you can also go with something like a 1DTE expiration, and you
+
+422
+00:21:14,214 --> 00:21:16,403
+can go with something, if you want to
+
+423
+00:21:16,403 --> 00:21:19,961
+keep it with just the SPY, this is the 410 call or the 398 put.
+
+424
+00:21:20,510 --> 00:21:25,240
+And that's what I have on this watch list right here. So let's switch into the 398 put.
+
+425
+00:21:25,240 --> 00:21:26,750
+So this was the 1DTE.
+
+426
+00:21:26,750 --> 00:21:28,806
+So the next day, and this
+
+427
+00:21:28,806 --> 00:21:30,520
+is grabbing the 398 put right
+
+428
+00:21:30,520 --> 00:21:34,633
+here, and then the 410 call, which would be this strike right here.
+
+429
+00:21:35,320 --> 00:21:37,335
+To keep it simple, why those strikes?
+
+430
+00:21:37,335 --> 00:21:39,915
+Here's a little hack or a little trick or a little tip.
+
+431
+00:21:39,915 --> 00:21:41,645
+If you're ever trying to decide for something
+
+432
+00:21:41,645 --> 00:21:44,673
+like this, you can always just go with the contract that's going for about $1.
+
+433
+00:21:44,890 --> 00:21:49,680
+So as we can see the entry at this point, this, however, was taking place right before the announcement.
+
+434
+00:21:49,680 --> 00:21:51,002
+So if this, if I hover
+
+435
+00:21:51,002 --> 00:21:52,324
+my mouse right here, you can
+
+436
+00:21:52,324 --> 00:21:55,849
+see that this announcement would be at 2 p.m. Eastern time, which would be right here.
+
+437
+00:21:55,850 --> 00:22:03,225
+So about 15 to 30 minutes or so, 15, 20 minutes before the announcement, you can actually grab a put and grab a call.
+
+438
+00:22:03,225 --> 00:22:05,055
+So this again is the put.
+
+439
+00:22:05,055 --> 00:22:07,880
+And we can see this obviously ended up expiring worthless.
+
+440
+00:22:07,880 --> 00:22:11,380
+So the max drawdown was a hundred bucks or $1.
+
+441
+00:22:11,380 --> 00:22:14,760
+And if we take a look at the call, we can see also $1.
+
+442
+00:22:14,760 --> 00:22:17,645
+So entering at the same time. So both of these are going for $1.
+
+443
+00:22:17,645 --> 00:22:19,905
+Here's the put again, and here's the call.
+
+444
+00:22:19,905 --> 00:22:23,145
+Entering both of them at the same time, $1.
+
+445
+00:22:23,145 --> 00:22:26,930
+The total investment at this point would be 200 bucks.
+
+446
+00:22:26,930 --> 00:22:31,005
+And we can see at the highest points, this contract went all the way up to over $8.
+
+447
+00:22:31,005 --> 00:22:33,215
+So the return on this would be 718 bucks.
+
+448
+00:22:33,215 --> 00:22:35,995
+Taking the same approach in this case, it's not the Friday expiration.
+
+449
+00:22:35,995 --> 00:22:38,005
+So you're holding until both of them expire.
+
+450
+00:22:38,005 --> 00:22:40,930
+I wouldn't suggest doing this all the time.
+
+451
+00:22:40,930 --> 00:22:44,470
+This is something you would do with a lot less, a lot less size, obviously.
+
+452
+00:22:44,470 --> 00:22:47,777
+And the fact that it's only 200 bucks means you're going to
+
+453
+00:22:47,777 --> 00:22:50,182
+get a much larger return than going with
+
+454
+00:22:50,182 --> 00:22:52,286
+the 50 or the 40 or the 60 DTE expiration.
+
+455
+00:22:53,490 --> 00:22:57,920
+But this is just another little way to bringing a little bit of cash flow for a smaller account here.
+
+456
+00:22:57,920 --> 00:23:00,830
+It's not as complicated as going with the Q's and the SPY.
+
+457
+00:23:00,830 --> 00:23:03,052
+This is actually how I started off, but
+
+458
+00:23:03,052 --> 00:23:07,774
+now I like to mix it in with using different instruments to hedge and offset the risk.
+
+459
+00:23:07,775 --> 00:23:12,300
+So the put cost a dollar, the call cost a dollar, total investment 200 bucks.
+
+460
+00:23:12,300 --> 00:23:16,620
+The max return would have been 618 bucks because we're just netting out the difference,
+
+461
+00:23:16,620 --> 00:23:19,085
+you know, taking the 780 bucks that this one was
+
+462
+00:23:19,085 --> 00:23:21,276
+up, subtracting it from the dollar loss, and
+
+463
+00:23:21,276 --> 00:23:24,015
+you end up with a net positive return of that.
+
+464
+00:23:24,290 --> 00:23:27,145
+And then the same time, if we were to hold until the close here,
+
+465
+00:23:27,145 --> 00:23:36,850
+so to compare, you're talking about $516, a $516 return on $200 investment is over 250% return.
+
+466
+00:23:36,850 --> 00:23:40,120
+For something like this, I would say just look for about 100% return or so.
+
+467
+00:23:40,120 --> 00:23:45,275
+So if you're using 200 bucks and, you know, you're up 100%, I would take the profit there.
+
+468
+00:23:45,275 --> 00:23:47,940
+If you have size to scale out, then scale out at 200%.
+
+469
+00:23:47,940 --> 00:23:50,720
+Once you're up 100%, you should generally take profits.
+
+470
+00:23:50,720 --> 00:23:53,705
+200%, take profit again, and then you can leave a runner.
+
+471
+00:23:53,705 --> 00:23:55,940
+That's just, this is a little bit more wacky.
+
+472
+00:23:55,940 --> 00:23:58,410
+It's not as much of a science because again, it's a 1DTE.
+
+473
+00:23:58,410 --> 00:24:01,142
+So there is a chance in which this might not
+
+474
+00:24:01,142 --> 00:24:03,328
+work because if the market just, you know,
+
+475
+00:24:03,328 --> 00:24:06,880
+stayed within range for 24 hours, these contracts are going to be hurt significantly.
+
+476
+00:24:07,155 --> 00:24:09,769
+However, as we started the video, we did
+
+477
+00:24:09,769 --> 00:24:12,056
+take a look on the daily timeframe
+
+478
+00:24:12,056 --> 00:24:15,324
+and we saw it's not very common that that happens.
+
+479
+00:24:15,325 --> 00:24:16,020
+And that's one thing.
+
+480
+00:24:16,020 --> 00:24:18,160
+That's why I wanted to make sure to point that out to you guys.
+
+481
+00:24:18,160 --> 00:24:22,240
+You can almost expect, at least that's the rhetoric for the market right now.
+
+482
+00:24:22,240 --> 00:24:25,835
+The market is very sensitive to the CPI and the FOMC.
+
+483
+00:24:25,835 --> 00:24:28,875
+So you can expect or count on the market making these big moves.
+
+484
+00:24:28,875 --> 00:24:31,465
+And that's why I suggest going back and back testing.
+
+485
+00:24:31,465 --> 00:24:37,320
+Now for me, for a strategy, something like this, I'm comfortable using about $10,000 in margin or BP.
+
+486
+00:24:37,320 --> 00:24:40,374
+And if my expectation on this is about a 25%
+
+487
+00:24:40,374 --> 00:24:42,749
+or even we'll say a 30%, but we'll
+
+488
+00:24:42,749 --> 00:24:49,875
+keep it simple and say 25% return, it means I'm essentially counting on about 2.5K return from a strategy like this one.
+
+489
+00:24:50,895 --> 00:24:53,096
+In other words, we did mention that there
+
+490
+00:24:53,096 --> 00:24:56,674
+are eight times a year in which we can do something like this.
+
+491
+00:24:56,675 --> 00:25:00,585
+The reason I'm using 10K is because I'd like to take the longer DTE approach.
+
+492
+00:25:00,585 --> 00:25:03,474
+And I know the risk is not that high for the short
+
+493
+00:25:03,474 --> 00:25:05,400
+term, as well as the fact that I'm
+
+494
+00:25:05,400 --> 00:25:09,974
+swinging it from the day before the FOMC announcement, and then I'm holding into the close by the Friday.
+
+495
+00:25:09,975 --> 00:25:16,875
+So $2,500 times eight, essentially nets out about 20K for the year.
+
+496
+00:25:16,875 --> 00:25:20,245
+And this is just one particular strategy, which can net something like that.
+
+497
+00:25:20,245 --> 00:25:22,310
+I'm not risking the entire 10K.
+
+498
+00:25:22,310 --> 00:25:25,880
+At most, I might only be down 1K if something is not going right.
+
+499
+00:25:25,880 --> 00:25:31,650
+If I might have chosen the wrong expiration or possibly the wrong distance from the current strike price,
+
+500
+00:25:31,650 --> 00:25:33,303
+there's little variables, there's rooms to
+
+501
+00:25:33,303 --> 00:25:34,956
+mess up, which is why I'm
+
+502
+00:25:34,956 --> 00:25:37,712
+saying your average might end up being about a 25% return.
+
+503
+00:25:37,990 --> 00:25:39,994
+10K, if I'm risking 1K to make 2.5K,
+
+504
+00:25:39,994 --> 00:25:41,998
+and I'm only running the trade about eight
+
+505
+00:25:41,998 --> 00:25:44,754
+times a year, this is just something that's comfortable for me.
+
+506
+00:25:44,755 --> 00:25:51,970
+For the one DTE contract, I would never go over $500 in BP just for where I'm at right now.
+
+507
+00:25:51,970 --> 00:25:54,323
+So if you're doing that, it means I'm only getting
+
+508
+00:25:54,323 --> 00:25:56,205
+about two to three of the one DTE
+
+509
+00:25:56,205 --> 00:25:59,028
+options using less than in this case, it would have been 600 bucks.
+
+510
+00:25:59,265 --> 00:26:03,320
+Sometimes if I'm not confident at all, if I'm having a bad week, I'll just go with two lots,
+
+511
+00:26:03,320 --> 00:26:05,370
+which means I'm just getting two lots of
+
+512
+00:26:05,370 --> 00:26:06,907
+each. In that case, it ends
+
+513
+00:26:06,907 --> 00:26:08,957
+up being $200 each. It only ends up being $400.
+
+514
+00:26:09,470 --> 00:26:10,944
+Sorry if the numbers are getting a little
+
+515
+00:26:10,944 --> 00:26:12,418
+bit confusing here. I'm not sure how this
+
+516
+00:26:12,418 --> 00:26:14,998
+is going to translate in the video as I'm just kind of recording it
+
+517
+00:26:15,000 --> 00:26:18,250
+on the fly. But it's something that I did want to point out to you guys.
+
+518
+00:26:18,250 --> 00:26:21,000
+10K investment is not that big of a deal.
+
+519
+00:26:21,000 --> 00:26:23,978
+If you're talking about over 50 DTE, and that only
+
+520
+00:26:23,978 --> 00:26:26,625
+means I'm only getting, in the initial example
+
+521
+00:26:26,625 --> 00:26:30,927
+here, if we take a look at the put, this is six bucks.
+
+522
+00:26:31,260 --> 00:26:34,235
+So in a sense, I'm just saying I'm pretty much getting five puts and five calls.
+
+523
+00:26:34,235 --> 00:26:41,485
+It's not like I'm dealing with 100 contracts or 50 contracts, which can really get your heart rate elevated.
+
+524
+00:26:41,485 --> 00:26:44,185
+If I'm just getting five of these here for this price and
+
+525
+00:26:44,185 --> 00:26:45,985
+five of those here, it's a little bit
+
+526
+00:26:45,985 --> 00:26:49,360
+over 10K, but that's something that I'm personally comfortable with around this type of strategy.
+
+527
+00:26:49,360 --> 00:26:50,960
+Hopefully this helps you guys.
+
+528
+00:26:50,960 --> 00:26:53,985
+And I would love to hear, you know, some comments in the future.
+
+529
+00:26:53,985 --> 00:26:59,810
+If you guys discover this video around future FOMC announcements, you can do something similar around the CPI reports.
+
+530
+00:26:59,810 --> 00:27:02,845
+This is not something I do around earnings for individual stickers.
+
+531
+00:27:02,845 --> 00:27:04,850
+It's something I only do on the SPI.
+
+532
+00:27:04,850 --> 00:27:09,055
+I don't even do it on the SPX because the size would be a little bit too large for me.
+
+533
+00:27:09,055 --> 00:27:13,315
+And I'm comfortable with the SPI as well as the fact that the liquidity is there.
+
+534
+00:27:13,315 --> 00:27:14,816
+As you guys can see, this
+
+535
+00:27:14,816 --> 00:27:16,817
+is not the most liquid instrument because we
+
+536
+00:27:16,817 --> 00:27:18,568
+are trading a little bit further out.
+
+537
+00:27:18,570 --> 00:27:21,340
+So you guys can see it's pretty spotty right here. It's not that liquid.
+
+538
+00:27:21,340 --> 00:27:24,680
+If you're getting it before the price action starts going crazy, then it's fine.
+
+539
+00:27:24,680 --> 00:27:27,805
+But trying to get filled while all of this is happening can be very scary.
+
+540
+00:27:27,805 --> 00:27:33,195
+And that can skew your numbers, which is why I get in the day before things get pretty chaotic.
+
+541
+00:27:33,195 --> 00:27:34,710
+Leave a comment down below.
+
+542
+00:27:34,710 --> 00:27:36,795
+Like the video if you learned something, share it.
+
+543
+00:27:36,795 --> 00:27:39,420
+Thanks for watching guys and I look forward to catching you on the next one. Take care.
+
+544
+00:27:39,420 --> 00:27:39,540
+We'll be right back.
+
+===== END AFTER_SEGMENT =====

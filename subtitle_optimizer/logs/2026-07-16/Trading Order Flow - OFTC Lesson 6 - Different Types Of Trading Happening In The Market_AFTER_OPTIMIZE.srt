@@ -1,0 +1,2007 @@
+===== AFTER_OPTIMIZE (401 entries) =====
+1
+00:00:00,900 --> 00:00:06,300
+欢迎来到《订单流交易》课程第6节：市场中的不同交易类型。
+Welcome to Order Flow Trading Course, Lesson Number 6, Different Types of Trading in the Market.
+
+2
+00:00:07,000 --> 00:00:08,200
+我是Michael Valtos。
+My name is Michael Valtos.
+
+3
+00:00:08,300 --> 00:00:10,700
+我是orderflows.com的创始人。
+I'm the founder of orderflows.com.
+
+4
+00:00:11,800 --> 00:00:12,900
+首先，免责声明。
+First, a disclaimer.
+
+5
+00:00:13,200 --> 00:00:16,619
+本演示仅用于教育和信息传递，
+This presentation is for educational and informational purposes only and
+
+6
+00:00:16,619 --> 00:00:20,038
+不应视为购买或出售
+should not be considered a solicitation to buy or sell
+
+7
+00:00:20,038 --> 00:00:23,799
+期货合约或做出其他投资决策的推荐。
+a futures contract or make any other type of investment decision.
+
+8
+00:00:24,200 --> 00:00:27,400
+期货交易存在重大风险，并非适合所有投资者。
+Futures trading contains substantial risk and is not for every investor.
+
+9
+00:00:27,900 --> 00:00:31,100
+投资者可能损失全部甚至超过初始投资金额。
+An investor could potentially lose all or more than the initial investment.
+
+10
+00:00:31,200 --> 00:00:36,400
+风险资本是指即使亏损，也不会危及个人财务安全或生活方式的资金。
+Risk capital is money that can be lost without jeopardizing one's financial security or lifestyle.
+
+11
+00:00:36,900 --> 00:00:41,800
+交易只应使用风险资本，且只有拥有充足风险资本的人才应考虑交易。
+Only risk capital should be used for trading, and only those with sufficient risk capital should consider trading.
+
+12
+00:00:42,400 --> 00:00:45,700
+过往表现并不必然预示未来结果。
+Fast performance is not necessarily indicative of future results.
+
+13
+00:00:46,200 --> 00:00:48,600
+CFTC（美国商品期货交易委员会）4.41条规则
+CFTC Rules 4.41
+
+14
+00:00:49,900 --> 00:00:53,100
+假设或模拟的业绩结果具有一定局限性。
+Hypothetical or simulated performance results have certain limitations.
+
+15
+00:00:53,200 --> 00:00:58,700
+与实际业绩记录不同，模拟结果并不代表真实交易。
+Unlike an actual performance record, simulated results do not represent actual trading.
+
+16
+00:00:58,800 --> 00:01:01,765
+此外，由于交易未实际执行，
+Also, since the trades have not been executed, the results
+
+17
+00:01:01,765 --> 00:01:04,137
+结果可能低估或高估了某些市场因素的影响，
+may have under or overcompensated for the impact,
+
+18
+00:01:04,137 --> 00:01:07,399
+例如流动性不足。
+if any, of certain market factors, such as lack of liquidity.
+
+19
+00:01:07,700 --> 00:01:13,500
+模拟交易程序通常还受限于其设计时已知后视镜效应的事实。
+Simulated trading programs... In general are also subject to the fact that they are designed with the benefit of hindsight.
+
+20
+00:01:13,900 --> 00:01:16,261
+我们并未声明任何账户
+No representation is being made that any account
+
+21
+00:01:16,261 --> 00:01:18,327
+会实现或可能实现与展示类似的盈利
+will or is likely to achieve profit
+
+22
+00:01:18,327 --> 00:01:20,098
+或亏损。
+or losses similar to those shown.
+
+23
+00:01:23,064 --> 00:01:26,864
+市场中的不同交易类型。第6节。
+different types of trading in the market. Lesson 6.
+
+24
+00:01:27,064 --> 00:01:30,064
+市场中每天都在发生不同类型的交易。
+There are different types of trading occurring in the market every day.
+
+25
+00:01:30,664 --> 00:01:38,464
+有投机、对冲、长期交易、短期交易、趋势跟随、基本面交易、技术交易、算法交易。
+You have speculation, hedging, long-term trading, short-term trading, trend following, fundamental trading, technical trading, algorithmic trading.
+
+26
+00:01:39,264 --> 00:01:40,164
+还有很多很多。
+And much, much more.
+
+27
+00:01:40,664 --> 00:01:45,164
+你可以就市场中的不同交易者和交易写一本书。
+You can write a book on the different types of traders and tradings going on in the market.
+
+28
+00:01:45,664 --> 00:01:47,064
+这重要吗？不重要。
+Does it matter?No.
+
+29
+00:01:48,564 --> 00:01:51,774
+有人会让你相信，哦，你必须跟随长期交易，
+People have you believe, oh, you've got to follow long-term trading is
+
+30
+00:01:51,774 --> 00:01:52,844
+这是唯一出路，
+the way to go,
+
+31
+00:01:52,844 --> 00:01:53,914
+短期交易才是
+short-term trading is the
+
+32
+00:01:53,914 --> 00:01:54,984
+正确方向，趋势跟随
+way to go, trend
+
+33
+00:01:54,984 --> 00:01:58,461
+才是正确方向，基本面交易才是正确方向。
+following is the way to go, fundamental trading is the way to go.
+
+34
+00:01:58,864 --> 00:02:02,064
+其实进入市场的方式有很多种。
+There's really so many different ways to approach the market.
+
+35
+00:02:02,964 --> 00:02:08,064
+你可以读《市场魔法师》这本书。书里的每个人都是成功的交易者。
+You could read the book Market Wizards. And everybody in the book is a successful trader.
+
+36
+00:02:08,164 --> 00:02:09,364
+他们的交易方式都一样吗？不一样。
+Do they all trade the same?No.
+
+37
+00:02:09,564 --> 00:02:11,564
+他们都有各自不同的交易策略。
+They all have different ways of trading.
+
+38
+00:02:12,864 --> 00:02:16,483
+你可能会花一辈子时间去分析
+You could spend your life trying to analyze all the
+
+39
+00:02:16,483 --> 00:02:20,463
+所有不同的交易策略，或者在开始交易前就去研究。
+different ways of trading. Or before you even start to trade.
+
+40
+00:02:23,464 --> 00:02:25,609
+你真正想知道的是，为什么
+What you want to know is why the
+
+41
+00:02:25,609 --> 00:02:27,217
+市场行情会波动，什么时候波动，
+market is moving, when it's moving,
+
+42
+00:02:27,217 --> 00:02:29,362
+以及如何抓住这波行情。
+and how to get in on the move.
+
+43
+00:02:29,764 --> 00:02:38,364
+盈利交易的核心，就是在行情启动前入场，捕捉这波行情。
+That's what trading profitably is about, is getting in before the market moves and catching the move.
+
+44
+00:02:41,500 --> 00:02:45,308
+现在，很多人不理解的是，
+Now, one of the things that people
+
+45
+00:02:45,308 --> 00:02:49,116
+在行情启动前，
+don't understand is before the market moves,
+
+46
+00:02:49,116 --> 00:02:55,100
+必须有一个让行情启动的原因。
+there has to be a reason for the market to move.
+
+47
+00:02:55,700 --> 00:02:59,700
+而这个原因往往始于一个大单进入市场。
+And it's often going to start when there's a big order coming into the market.
+
+48
+00:03:00,000 --> 00:03:02,500
+行情不会无缘无故地开始波动。
+The market's just not going to start moving for the sake of moving.
+
+49
+00:03:02,700 --> 00:03:07,400
+必须有一个推动力，某种能启动行情的因素。
+There has to be... An impetus in the market, you know, something to get the market started.
+
+50
+00:03:08,100 --> 00:03:12,600
+你不知道别人交易背后的原因。
+And you don't know what's behind another person's trade.
+
+51
+00:03:13,000 --> 00:03:18,100
+你不知道那2,500手大单什么时候抵达交易台/交易柜台需要执行。
+You don't know when that 2,500-lot order hits the sales desk that needs to be executed.
+
+52
+00:03:18,700 --> 00:03:20,920
+你想做的就是，
+What you want to be is you
+
+53
+00:03:20,920 --> 00:03:23,140
+为那个
+want to be ready for when that
+
+54
+00:03:23,140 --> 00:03:25,043
+大单进入市场时做好准备，
+big order starts coming into the
+
+55
+00:03:25,043 --> 00:03:27,898
+这样你就能快速反应并顺势交易。
+market that you can react and trade against it.
+
+56
+00:03:29,800 --> 00:03:32,296
+现在，重要的是要观察
+Now, what is important is seeing what the
+
+57
+00:03:32,296 --> 00:03:34,792
+不同类型的交易者在市场中的表现，
+different types of traders are doing and did
+
+58
+00:03:34,792 --> 00:03:37,600
+并据此做出你的交易决策。
+in the market to make your trading decision around.
+
+59
+00:03:38,300 --> 00:03:41,500
+你无法和机构交易者竞争。你会亏光的。
+You can't compete with the big institutional traders. You'll go broke.
+
+60
+00:03:41,800 --> 00:03:43,534
+你想做的是，
+What you want to do is you
+
+61
+00:03:43,534 --> 00:03:47,499
+你要观察机构交易者的动向。理想情况下，你也想跟着他们的方向操作。
+want to see what they're doing. And ideally, you'd like to be in the same direction.
+
+62
+00:03:47,900 --> 00:03:53,400
+要知道，你可能只交易5手、10手，甚至25手。
+You know, honestly, you're trading, you know, 5 lots, 10 lots, you know, say even, you know, 25 lots.
+
+63
+00:03:54,000 --> 00:03:54,975
+而
+And, you know,
+
+64
+00:03:54,975 --> 00:03:57,252
+你对抗的可能是一家银行，
+you're going against a bank that's got
+
+65
+00:03:57,252 --> 00:03:59,203
+持有2,500手的仓位，
+a position of, you know, 2,500 lots
+
+66
+00:03:59,203 --> 00:04:00,829
+正在不断累积。
+that they're trying to accumulate.
+
+67
+00:04:02,000 --> 00:04:05,000
+而你却试图用25手的订单去对抗他们。
+And, you know, you're trying to go against them with a 25-lot order.
+
+68
+00:04:05,000 --> 00:04:06,200
+你会被碾压。
+You'll get run over.
+
+69
+00:04:06,600 --> 00:04:10,400
+可以说会被生吞活剥。
+You'll get, you know... Eaten alive, so to speak.
+
+70
+00:04:11,600 --> 00:04:15,900
+你不知道大单何时会抵达交易台/交易柜台。
+You don't know when the big order is going to be hitting the trading desk.
+
+71
+00:04:17,000 --> 00:04:19,851
+在我看来，有时这些银行的交易者，
+To me, it's like sometimes these banks,
+
+72
+00:04:19,851 --> 00:04:22,702
+只是在伺机而动，
+the traders, are just sort of lying
+
+73
+00:04:22,702 --> 00:04:25,146
+等待市场行情
+and waiting for the market to
+
+74
+00:04:25,146 --> 00:04:27,997
+显露活力迹象，然后他们就会扑上去。
+show signs of life, and they'll pounce.
+
+75
+00:04:29,600 --> 00:04:36,400
+非洲的狮子，只是静静等待机会。
+The lion in Africa, he's just sitting there waiting for his opportunity.
+
+76
+00:04:37,000 --> 00:04:40,700
+它最突出的特质是耐心。
+He's just patient more than anything else.
+
+77
+00:04:42,100 --> 00:04:45,500
+专业交易者、成功交易者，都懂得耐心。
+A professional trader, a successful trader, is patient.
+
+78
+00:04:45,900 --> 00:04:51,100
+他们不是行动上瘾的人，不喜欢频繁进出，只为追求刺激。
+They're not action junkies. They don't like to just get in and get out, live for the action.
+
+79
+00:04:52,000 --> 00:04:53,500
+他们想长期生存下去。
+They want to be around for a long time.
+
+80
+00:04:53,700 --> 00:04:55,000
+他们要养家糊口。
+They've got families to feed.
+
+81
+00:04:56,000 --> 00:04:59,000
+他们能耐心等待正确的机会。
+They can afford to be patient and wait for the right opportunity.
+
+82
+00:05:02,208 --> 00:05:04,029
+但要知道，一旦
+But, you know, once an
+
+83
+00:05:04,029 --> 00:05:06,579
+机构交易者开始入场，
+institutional trader starts to get into the
+
+84
+00:05:06,579 --> 00:05:12,407
+他们会在市场中留下自己对价格走势方向的判断痕迹。
+market, they're going to leave behind evidence of their view of the direction of the market.
+
+85
+00:05:13,508 --> 00:05:15,208
+你能看到他们的成交量。
+You can see their volume that they trade.
+
+86
+00:05:15,208 --> 00:05:17,008
+你能在成交量足迹图中看到。
+You can see it in the volume footprint chart.
+
+87
+00:05:17,408 --> 00:05:21,508
+就像我说的，一旦成交，他们无法隐藏交易。
+Like I said, they can't hide their trades once they're executed.
+
+88
+00:05:22,008 --> 00:05:26,808
+他们可能会尝试在交易进行时隐藏。
+You know, they could... Try and hide the trade as it's happening.
+
+89
+00:05:26,908 --> 00:05:33,608
+他们不会在想买3,000手时先显示500手。
+They're not going to show 500 lot when they've got 3,000 to buy.
+
+90
+00:05:33,908 --> 00:05:39,808
+他们会一次显示25手，但订单会不断刷新，最终会在成交量中显现。
+They'll show 25 at a time, but the order will keep refreshing and it'll show up in the volume.
+
+91
+00:05:40,908 --> 00:05:44,808
+买单和卖盘的成交量为交易者提供线索
+Traded volume on the bids and offers provide the clues that the trader
+
+92
+00:05:45,808 --> 00:05:51,508
+要知道，这关乎回撤区域的行情走势强度
+you know, regarding the intensity of the move in areas where they have backed off.
+
+93
+00:05:51,708 --> 00:05:52,584
+所以
+So, you know,
+
+94
+00:05:52,584 --> 00:05:54,628
+如果某个价位正在
+if you have an area that's being
+
+95
+00:05:54,628 --> 00:05:56,672
+被大单防守
+defended by, you know, a big trader,
+
+96
+00:05:56,672 --> 00:05:59,008
+你会在成交量上看到
+you're going to see it in the volume.
+
+97
+00:05:59,208 --> 00:06:01,980
+要知道，他们可能没展示全仓
+You know, they may not be showing the full size.You know,
+
+98
+00:06:01,980 --> 00:06:02,925
+如果你在看
+if you're looking at
+
+99
+00:06:02,925 --> 00:06:04,343
+订单簿，比如买单
+the book, you know, the bid
+
+100
+00:06:04,343 --> 00:06:05,761
+卖盘，你可能会看到
+offer, you may see, you know,
+
+101
+00:06:05,761 --> 00:06:08,597
+买单挂10手，卖盘挂50手
+a size of 10 by, you know, 10 on the bid, 50 on the offer.
+
+102
+00:06:09,308 --> 00:06:15,308
+但挂10手买单的那个交易者，背后可能有1,200手，他只展示了10手
+But the guy that's got 10 on the bid, you know, may have 1,200 behind it. You know, he's only showing 10.
+
+103
+00:06:16,908 --> 00:06:20,508
+你可能会想，哦，买单只有10手，看来不强
+And you're thinking, oh, there's only 10 on the bid. You know, it's not that strong.
+
+104
+00:06:20,508 --> 00:06:21,808
+但实际上这很强
+But it actually is strong.
+
+105
+00:06:22,208 --> 00:06:23,489
+你要关注的是
+What you want to see is
+
+106
+00:06:23,489 --> 00:06:24,770
+这个价位的成交量
+you want to see what the
+
+107
+00:06:24,770 --> 00:06:26,905
+有多少成交量在这个价位成交
+volume is at that price, how much is traded there.
+
+108
+00:06:28,108 --> 00:06:29,208
+然后判断
+And determine
+
+109
+00:06:29,608 --> 00:06:36,608
+他们是否还在防守这个区域，或者已经停止防守，比如弹药用光了
+If they're defending that area or if they're done defending the area, say they've got no more bullets.
+
+110
+00:06:37,608 --> 00:06:40,100
+他们可能已经失去兴趣
+They may have lost interest already and given
+
+111
+00:06:40,100 --> 00:06:45,706
+放弃了，说，好吧，我认栽，稍后再重新评估市场行情
+up and say, okay, I'll take my lumps and I'll come back again and reassess the market later.
+
+112
+00:06:49,308 --> 00:06:51,118
+现在，这是你
+Now, this is something you
+
+113
+00:06:51,118 --> 00:06:54,376
+在当今订单流交易中经常听到的一点：
+hear a lot with order flows nowadays is when
+
+114
+00:06:54,376 --> 00:06:59,807
+当交易者做多时，他未来会自动变成空头
+a trader goes long in the market, he automatically becomes a seller in the future.
+
+115
+00:07:00,408 --> 00:07:04,408
+或者当交易者做空时，他未来会变成多头
+Or when a trader goes short in the market, he becomes a buyer in the future.
+
+116
+00:07:05,408 --> 00:07:09,508
+一般来说，是的，情况如此
+In general, yes. that's the case.
+
+117
+00:07:09,608 --> 00:07:14,808
+我是说，对大多数散户交易者来说，是的，但对有些交易者，不是
+I mean, for most, obviously for retail traders, yes. You know, for some traders, no.
+
+118
+00:07:15,008 --> 00:07:23,108
+他们可能买入是为了接货，或者卖空是为了交割
+You know, they may very well buy with the intention of taking delivery or making delivery if they're short.
+
+119
+00:07:24,608 --> 00:07:29,808
+并非总是一做多，未来就会变成空头
+It's not always the case that as soon as someone is long, In the future, there'll be a seller.
+
+120
+00:07:30,608 --> 00:07:32,008
+但大多数情况下，是的
+More often than not, yes.
+
+121
+00:07:32,608 --> 00:07:36,320
+这并不意味着他们会在接下来的10分钟内变成空头。
+That doesn't necessarily mean that they're going to be a seller in the next 10
+
+122
+00:07:36,320 --> 00:07:39,767
+他们可能要5周后才会变成空头，如果真的会的话。
+minutes. They may be a seller in the next five weeks, if that.
+
+123
+00:07:41,908 --> 00:07:48,208
+这完全取决于行情走势，因为价格变动会影响交易者持仓后的决策。
+It really depends on the price movement that affects the trader's decision once they're in a position.
+
+124
+00:07:49,208 --> 00:07:51,208
+我指的是...
+I'm referring to...
+
+125
+00:07:51,808 --> 00:07:52,773
+短线交易者，如果
+short-term trader, if
+
+126
+00:07:52,773 --> 00:07:55,668
+市场行情对他们不利，那他们会
+the market is moving against them, yeah, they're going
+
+127
+00:07:55,668 --> 00:07:59,207
+迅速离场，毕竟他们本就是短线交易者。
+to get out relatively quick because by definition they're short-term traders.
+
+128
+00:08:00,008 --> 00:08:00,997
+如果是长线
+If it's a long-term
+
+129
+00:08:00,997 --> 00:08:02,975
+交易者，要知道，他们做多后
+trader, you know, and they go long in
+
+130
+00:08:02,975 --> 00:08:04,953
+市场行情开始对他们不利，
+the market and the market starts moving against
+
+131
+00:08:04,953 --> 00:08:09,405
+持续几天，他们可能不会立即考虑离场。
+them for a few days, you know, they may not necessarily be looking to get out right away.
+
+132
+00:08:10,508 --> 00:08:15,808
+要知道，他们会先评估市场行情，再决定如何操作。
+You know, they'll assess the market and then decide what to do.
+
+133
+00:08:17,408 --> 00:08:19,158
+但对于短线交易者，如果
+But for a short-term trader, if the
+
+134
+00:08:19,158 --> 00:08:21,158
+市场行情对他们不利几个点，
+market starts moving a couple points against them,
+
+135
+00:08:21,158 --> 00:08:24,408
+他们就会开始寻找理由平仓离场。
+they're already looking for a reason to close the trade and get out.
+
+136
+00:08:28,108 --> 00:08:33,408
+如今交易者可获取的基本面信息实在太多了。
+The amount of fundamental information available to traders nowadays is overwhelming.
+
+137
+00:08:34,608 --> 00:08:37,160
+交易者不可能看到并
+There's no way a trader can see and
+
+138
+00:08:37,160 --> 00:08:39,393
+处理每一条可能
+process every bit of information that may
+
+139
+00:08:39,393 --> 00:08:41,307
+影响市场价格的信息。
+influence the price of a market.
+
+140
+00:08:41,708 --> 00:08:45,708
+现在可获取的信息实在太多了。
+There's really so much information out there nowadays.
+
+141
+00:08:46,008 --> 00:08:46,908
+你可以看
+You can look at the...
+
+142
+00:08:47,408 --> 00:08:55,008
+天气，或者玉米的发芽率。
+Weather you could look at the germination counts for the corn.
+
+143
+00:08:56,208 --> 00:08:57,408
+真的，任选一个市场都行。
+Really, pick any market.
+
+144
+00:08:57,708 --> 00:09:02,408
+有数百个因素会影响市场行情。
+There's hundreds of factors that go in to influence the market.
+
+145
+00:09:05,624 --> 00:09:06,801
+但要知道,
+But, you know,
+
+146
+00:09:06,801 --> 00:09:10,334
+你要考虑这些信息的作用是
+what you should think about with the information is
+
+147
+00:09:10,334 --> 00:09:12,689
+如何影响其他交易者，
+how it will influence the other
+
+148
+00:09:12,689 --> 00:09:16,222
+他们会如何对这些信息做出反应。
+traders, how they're going to react to the information.
+
+149
+00:09:17,624 --> 00:09:22,924
+你可能觉得某条信息很重要，但市场上其他人可能不这么认为。
+You may think it's something that's very important, but maybe the rest of the market doesn't think it's important.
+
+150
+00:09:23,324 --> 00:09:27,924
+你得判断这条信息是否会影响...
+You have to decide if it's something that may affect the...
+
+151
+00:09:29,124 --> 00:09:33,524
+长期来看，供需关系可能会出现转变。
+The long-term views that there could be a shift in supply and demand.
+
+152
+00:09:34,424 --> 00:09:37,224
+供需关系转变时，往往能带来真正的赚钱机会。
+When there's shifts in supply and demand, that's where money is really made.
+
+153
+00:09:37,224 --> 00:09:45,524
+你不一定要在几个点的小波动中获利。
+You're not necessarily making money on these little fluctuations up and down for a couple of points.
+
+154
+00:09:45,824 --> 00:09:47,680
+你要的是大行情，
+You want the big moves where you're
+
+155
+00:09:47,680 --> 00:09:49,536
+能让你
+going to be able to get a
+
+156
+00:09:49,536 --> 00:09:51,922
+拿到大量点数，而不仅仅是几个最小价格单位/点。
+lot of points rather than just a few ticks.
+
+157
+00:09:53,224 --> 00:09:57,824
+很多人可能觉得赚几个最小价格单位/点就很棒。
+A lot of people... I think making a few ticks is great.
+
+158
+00:09:57,824 --> 00:09:59,424
+可能认为每天赚几个最小价格单位/点就足够。
+I think you just make a few ticks a day.
+
+159
+00:10:00,624 --> 00:10:02,151
+这确实不错，但现实是，
+It's happy days, but in reality,
+
+160
+00:10:02,151 --> 00:10:03,678
+你要定期赚取点数，
+you want to be making points
+
+161
+00:10:03,678 --> 00:10:06,223
+而不仅仅是几个最小价格单位/点。
+on a regular basis, not just a couple of ticks.
+
+162
+00:10:07,024 --> 00:10:10,924
+你要的是有分量的交易，要的是主菜。
+You want meaty trades. You want the meat and the potatoes.
+
+163
+00:10:11,924 --> 00:10:16,124
+不要用薯条或沙拉填饱肚子。
+You don't want the little french fries or the salad to fill you up.
+
+164
+00:10:16,124 --> 00:10:18,324
+你要的是一顿丰盛的牛排大餐。
+You want the big steak dinner.
+
+165
+00:10:18,724 --> 00:10:20,824
+你要的是能真正填饱肚子的交易。
+You want something that's going to fill your belly.
+
+166
+00:10:24,324 --> 00:10:30,924
+理解供需关系转变的时机，才是大机会所在。
+Understanding when there are shifts in supply and demand is where the big opportunities are going to be.
+
+167
+00:10:34,324 --> 00:10:39,924
+你不需要知道进入市场的每一条基本面信息。
+You don't need to know every underlying fundamental piece of information that comes into the market.
+
+168
+00:10:40,924 --> 00:10:47,624
+你要理解的是，掌握最佳信息的交易者在市场中如何操作。
+What you want to understand is people that have access to the best information, what they're doing in the market.
+
+169
+00:10:49,424 --> 00:10:51,224
+这些交易者才是你要跟随的对象。
+Those are the traders you want to follow.
+
+170
+00:10:52,024 --> 00:10:56,024
+订单流能让你汇总市场中涌入的所有信息碎片。
+OrderFlow allows you to take all the little bits of information that's coming to the market.
+
+171
+00:10:56,724 --> 00:11:00,224
+并判断市场对这些信息的心理反应。
+And determine the market's psychological response to that information.
+
+172
+00:11:00,824 --> 00:11:04,724
+像我之前说的，你不需要分析每一个细节信息。
+Like I said, you don't need to analyze every single little bit of information.
+
+173
+00:11:05,524 --> 00:11:07,787
+这部分工作已经由
+That's being done for you by
+
+174
+00:11:07,787 --> 00:11:10,050
+大型参与者、机构交易者，
+the bigger participants, the institutional traders,
+
+175
+00:11:10,050 --> 00:11:13,822
+对冲基金、真实资金账户、商业交易者来完成了。
+the hedge funds, the real money accounts, the commercial traders.
+
+176
+00:11:15,224 --> 00:11:21,124
+要知道，他们会基于对供需关系的判断来分析这些信息。
+You know, they're analyzing that, you know, based on their view of supply and demand.
+
+177
+00:11:21,324 --> 00:11:24,724
+而且，他们的视角是你无法拥有的。
+And they have a view that, like I said, that you're not going to have.
+
+178
+00:11:24,724 --> 00:11:28,905
+要知道，普通机构交易者不可能
+You know, the regular institutional traders is not going to
+
+179
+00:11:28,905 --> 00:11:33,923
+像机构交易者那样深入理解市场。
+have, you know, insight into the market that the institutional traders have.
+
+180
+00:11:34,924 --> 00:11:40,324
+要知道，他们了解供应链，了解运输费率，了解一切。
+You know, they know the supply chain, you know, they know the shipping rates, they know everything.
+
+181
+00:11:41,224 --> 00:11:43,324
+他们至少假装无所不知。
+Well, at least they pretend to know everything.
+
+182
+00:11:43,824 --> 00:11:48,924
+要知道，交易者会对每一点信息做出买卖反应。
+But, you know, traders buy and sell in response to every little bit of information.
+
+183
+00:11:49,624 --> 00:11:52,224
+我是说，我认为…
+And, yeah, I said, I think it's...
+
+184
+00:11:53,824 --> 00:11:55,104
+你会看到这些交易者，
+You see these people,
+
+185
+00:11:55,104 --> 00:11:56,384
+他们看电视，
+they watch TV, they're
+
+186
+00:11:56,384 --> 00:11:58,304
+在交易，
+trading, someone says something, all of
+
+187
+00:11:58,304 --> 00:12:01,824
+有人说点什么，突然就要抛售这些或买入原油。
+a sudden they've got to sell us these or buy crude.
+
+188
+00:12:02,324 --> 00:12:09,724
+等信息传到新闻主播嘴里时，早就被市场行情消化了。
+Well, by the time that information... information's already hit the news speaker's mouth, it's already been factored into the market.
+
+189
+00:12:10,724 --> 00:12:13,724
+如果你试图交易每一点信息，只会被盘整砍仓。
+If you're trying to trade every little bit of information, you're going to get chopped up.
+
+190
+00:12:14,624 --> 00:12:19,724
+像我说的，你要抓大行情，要跟随机构交易者。
+Like I said, you want to get the big moves and you want to follow the big institutional traders.
+
+191
+00:12:21,024 --> 00:12:23,024
+你会看到他们的反应。
+And you're going to see their response.
+
+192
+00:12:24,324 --> 00:12:27,224
+体现在价格和成交量上。
+In price and volume that's traded.
+
+193
+00:12:27,724 --> 00:12:30,424
+你会注意到价格开始偏离时的情况。
+You're going to notice when price starts moving away.
+
+194
+00:12:30,724 --> 00:12:33,936
+如果你觉得价格应该上涨，但它突然
+If you're thinking price should be going higher and it just sort
+
+195
+00:12:33,936 --> 00:12:36,077
+触发止损单后，原地不动，然后开始抛售，
+of stops, goes nowhere, and it starts selling
+
+196
+00:12:36,077 --> 00:12:39,022
+你得问自己，为什么会这样？
+off, you've got to ask yourself, why is it doing that?
+
+197
+00:12:39,324 --> 00:12:47,124
+市场一切看似利好，但突然不涨反跌。
+Everything is bullish about the market, but all of a sudden we're not going higher. We're starting to sell off.
+
+198
+00:12:47,524 --> 00:12:48,924
+为什么？这是为什么？
+Why? Why is that?
+
+199
+00:12:50,724 --> 00:12:53,324
+比如这里，这是原油的K线图。
+You know, here for example, this is a crude chart.
+
+200
+00:12:55,312 --> 00:12:58,570
+市场行情上涨后开始回落，
+you know, the market went up, it started coming down,
+
+201
+00:12:58,570 --> 00:12:59,547
+然后，
+and, you know,
+
+202
+00:12:59,547 --> 00:13:01,827
+你会看到这些区域，
+you're seeing these areas where, you know,
+
+203
+00:13:01,827 --> 00:13:03,455
+在这些区域出现大量买卖失衡，
+you get these big imbalances,
+
+204
+00:13:03,455 --> 00:13:05,409
+要知道，在这波上涨中
+you know, on this move up.
+
+205
+00:13:06,412 --> 00:13:12,312
+好，这里卖出426手到买单，这里504手。
+Okay, so, you know, you got 426 sold into the bid here, 504 here.
+
+206
+00:13:12,612 --> 00:13:14,763
+我们回到上涨时，
+You know, we go back up, you know, you're
+
+207
+00:13:14,763 --> 00:13:18,110
+你会看到，哦，这里有大量卖出失衡，为什么市场行情不下跌？
+seeing, oh, you got these big selling imbalances, why isn't the market going down?
+
+208
+00:13:18,512 --> 00:13:22,612
+你并没有看到另一边有大量买入失衡。
+You know, you're not necessarily seeing big buying imbalances in the other direction.
+
+209
+00:13:23,112 --> 00:13:27,312
+显然，这里有679手，我们从高点开始回落。
+Obviously, you know, you got 679, you know, we started coming up from the high.
+
+210
+00:13:28,512 --> 00:13:33,612
+这里有大量卖出失衡。为什么市场行情不抛售？为什么不下跌？
+You've got this big selling imbalance here. Why isn't the market selling off? Why isn't it going lower?
+
+211
+00:13:34,112 --> 00:13:39,212
+有人在抛售679手，下方还有470手。
+There's a lot of people selling 679 lots, 470 below it.
+
+212
+00:13:40,812 --> 00:13:42,412
+你要理解这里发生了什么。
+You've got to understand what's going on.
+
+213
+00:13:42,512 --> 00:13:43,912
+有人在那里挂买单。
+There's somebody bidding there.
+
+214
+00:13:44,912 --> 00:13:46,946
+当你看到这样的大单时，
+When you're seeing size like this
+
+215
+00:13:46,946 --> 00:13:48,980
+在交易中，你要了解市场行情，
+in a market, understand your market
+
+216
+00:13:48,980 --> 00:13:52,709
+要分清哪些是真正的大单，哪些对这个市场算大单。
+and understand what's solid size, what's big size for that market.
+
+217
+00:13:53,012 --> 00:13:55,112
+这是原油市场，这是10点区间图。
+This is a crude market. This is a 10-range chart.
+
+218
+00:13:56,212 --> 00:14:02,012
+你看679手，下方紧挨着470手，这个价位总共1,149手。
+You see in 679, you know, 470 right below it, that's 1,000 lots, you know, right at this level.
+
+219
+00:14:02,912 --> 00:14:04,612
+显然有人在支撑市场行情。
+Obviously, there's somebody supporting the market.
+
+220
+00:14:04,612 --> 00:14:09,812
+之前你看到过，周围有426、169、191手。
+You know, earlier you saw, you know, 426, 169, 191, you know, right around it.
+
+221
+00:14:09,812 --> 00:14:15,512
+这里有800手，还有500、295手，那边又有800手。
+You know, you're talking 800 here, you know, 500, 295. You're talking another 800 here.
+
+222
+00:14:15,512 --> 00:14:19,112
+显然有人乐意在回撤时买入。
+So obviously, there's somebody that's interested in buying the little breaks.
+
+223
+00:14:19,112 --> 00:14:22,312
+市场行情上涨后小幅回落，他们就挂买单。
+You know, the market comes up, it comes off a little bit, and they're bidding.
+
+224
+00:14:22,512 --> 00:14:25,412
+他们很乐意买入，在回撤时买入。
+You know, they're happy to buy. buy it on a pullback.
+
+225
+00:14:25,912 --> 00:14:30,512
+市场行情反弹后又回落，这些人又回来了，继续买入。
+Market pops back up, comes right back down, and these guys are back in here. They're buying again.
+
+226
+00:14:32,512 --> 00:14:34,639
+尽管存在卖出失衡，
+Even though there's selling imbalances, and
+
+227
+00:14:34,639 --> 00:14:37,475
+按理说市场行情应该会抛售，
+by definition the market should sell off because
+
+228
+00:14:37,475 --> 00:14:40,311
+因为这些是大额卖出失衡，但实际并没有。
+those are big selling imbalances, but it's not.
+
+229
+00:14:40,412 --> 00:14:42,212
+所以显然有人在支撑市场行情。
+So obviously there's somebody supporting the market.
+
+230
+00:14:42,812 --> 00:14:45,388
+能识别这一点，
+Being able to spot that is what's
+
+231
+00:14:45,388 --> 00:14:52,012
+才能让你从其他交易者中脱颖而出。
+going to make you stand out from the rest of the traders that are trading in the market.
+
+232
+00:14:55,012 --> 00:14:59,212
+好的，这还是原油图，简单快速看一下。
+So, okay, this is, again, this is a crude chart, okay, you know, just really quick.
+
+233
+00:15:00,612 --> 00:15:02,012
+市场行情一路上涨，持续走高。
+Market's going up, going up, going up.
+
+234
+00:15:02,112 --> 00:15:04,512
+这里出现了积极的多头。
+Okay, you're seeing these aggressive buyers here.
+
+235
+00:15:04,512 --> 00:15:09,012
+高位附近出现大额买入失衡，这正是你想看到的。
+You've got a big buying imbalance right up here near the high, which is what you want to see.
+
+236
+00:15:09,512 --> 00:15:10,212
+这是正常的。
+That's normal.
+
+237
+00:15:11,112 --> 00:15:13,912
+你期望在高位附近看到大量买盘。
+You're expecting to see a lot of buying happening near the high.
+
+238
+00:15:14,212 --> 00:15:15,669
+交易者预期市场行情会
+People are expecting the market to
+
+239
+00:15:15,669 --> 00:15:16,640
+继续上涨，
+go higher, and it
+
+240
+00:15:16,640 --> 00:15:19,311
+结果确实如此，直接反弹，创出新高。
+does. It pops right back up. It hits a new high.
+
+241
+00:15:19,312 --> 00:15:20,384
+这里出现了背离
+You've got a divergence
+
+242
+00:15:20,384 --> 00:15:22,528
+在高点附近。这是一个信号，表明
+up there. Which is a sign to say,
+
+243
+00:15:22,528 --> 00:15:26,012
+哦，好，你创了新高，但出现负Delta
+ooh, okay, you hit a new high, but you got a negative delta.
+
+244
+00:15:26,412 --> 00:15:28,612
+显然在高点附近涌入了抛盘
+So obviously selling came in right at the high.
+
+245
+00:15:29,012 --> 00:15:33,212
+随后立即出现激进抛售，形成订单堆叠的卖出失衡
+And then immediately after, you're getting aggressive selling. You get a stacked selling imbalance.
+
+246
+00:15:34,512 --> 00:15:36,612
+结果呢？价格走势随即下跌
+And what happens? The market falls right over.
+
+247
+00:15:36,812 --> 00:15:44,512
+你触及高点。在订单流中，首先看到的是背离
+You hit the high. And you see in the order flow, first you got your divergence.
+
+248
+00:15:45,412 --> 00:15:50,812
+你创了新高，但后续买盘在哪？那根K线中空头超过了多头
+You hit the new high, but where's the rest of the buying? The selling overtook the buying in that bar.
+
+249
+00:15:51,212 --> 00:15:53,712
+接下来一根K线，出现订单堆叠的卖出失衡
+And then in the next bar, you got a stack selling imbalance.
+
+250
+00:15:54,212 --> 00:15:56,190
+大量空头涌入
+where there's a lot of sellers coming
+
+251
+00:15:56,190 --> 00:16:00,711
+并引发一连串卖出失衡，价格走势随即大跌
+in and kicking off a bunch of selling imbalances, and the market just sold right off.
+
+252
+00:16:03,412 --> 00:16:07,212
+这张图在之前的课程中多次出现
+Again, you've seen this chart a lot in the earlier lessons.
+
+253
+00:16:07,912 --> 00:16:09,012
+但这是一个完美的例子
+But it's a perfect example.
+
+254
+00:16:09,112 --> 00:16:11,012
+好，这是标普500指数期货在1940点的情况
+Okay, this is S&Ps at 1940.
+
+255
+00:16:12,712 --> 00:16:15,712
+我们知道，价格走势一路走高，触及高点
+You know, we worked our way up, hit the high.
+
+256
+00:16:16,012 --> 00:16:17,512
+这里出现大量阻挡成交量
+You got big stopping volume up here.
+
+257
+00:16:17,512 --> 00:16:19,912
+在1940点，成交量达到1,600手
+In 1940, you got 1,600 lots traded there.
+
+258
+00:16:20,812 --> 00:16:22,112
+价格走势无法突破这个点位
+The market couldn't get past it.
+
+259
+00:16:22,112 --> 00:16:25,512
+显然有人在这里持有大量抛压
+You know, there's obviously somebody with big supply there.
+
+260
+00:16:26,212 --> 00:16:30,612
+要知道，价格走势在到达之前就已回落，出现一个小单成交
+And, you know, the market came off, you know, slightly before it. You know, you have a small print.
+
+261
+00:16:30,912 --> 00:16:33,012
+之后又出现一个小单成交
+Immediately after it, again, you got a small print.
+
+262
+00:16:33,712 --> 00:16:36,312
+价格走势尝试回升，但无法突破高点
+The market did try to go back up. It couldn't take off the high.
+
+263
+00:16:36,512 --> 00:16:40,812
+要知道，在K线顶部附近出现卖出失衡
+You know, you get selling of balances right up near the top of the bars.
+
+264
+00:16:41,412 --> 00:16:45,112
+价格走势就是直接下跌
+And, you know, the markets are just, it just sells right off.
+
+265
+00:16:45,712 --> 00:16:48,712
+要知道，为什么价格走势没能继续上涨？
+You know, why isn't the market, you know, keep going up?
+
+266
+00:16:48,712 --> 00:16:52,212
+你可以看到这里有大量成交量
+Well, you can see you have this big volume here.
+
+267
+00:16:52,612 --> 00:16:55,812
+要知道，你要时刻问自己，市场中发生了什么？
+You know, you got to always be asking yourself, what's going on in the market?
+
+268
+00:16:57,912 --> 00:17:00,516
+当你看到不正常的情况时
+When you see things that are not
+
+269
+00:17:00,516 --> 00:17:03,120
+比如看到大量成交量
+normal, when you see big volumes that
+
+270
+00:17:03,120 --> 00:17:07,212
+终结了价格走势，且价格走势无法突破，为什么？
+end the moves and the market can't get past it, why?
+
+271
+00:17:07,612 --> 00:17:08,312
+这是怎么回事？
+What's happening?
+
+272
+00:17:08,612 --> 00:17:09,412
+出现了转折。
+There's a shift.
+
+273
+00:17:09,912 --> 00:17:12,212
+显然，有交易者持有大量供给要抛售。
+Obviously, there's somebody with a lot of supply to sell.
+
+274
+00:17:15,512 --> 00:17:23,312
+基本上是在对所有想推高价格的多头说：好，你们要多少我就卖多少。
+Basically saying to all the buyers that want to try and take it higher, sure, I'll sell whatever you want.
+
+275
+00:17:23,712 --> 00:17:24,412
+你们要多少？
+How much do you want?
+
+276
+00:17:24,912 --> 00:17:25,612
+我全卖给你们。
+I'll sell it to you.
+
+277
+00:17:26,112 --> 00:17:26,812
+没问题。
+No problem.
+
+278
+00:17:30,012 --> 00:17:32,712
+要知道，这和之前的情况类似。
+You know, again, this is similar.
+
+279
+00:17:32,712 --> 00:17:35,712
+你一直在推高，推高，再推高。
+You know, you're working your way up. Work, work, work.
+
+280
+00:17:35,812 --> 00:17:37,212
+要知道，Delta是正的。
+You know, positive deltas.
+
+281
+00:17:37,312 --> 00:17:40,112
+要知道，就连这根K线是阴线，Delta仍然是正的。
+You know, even this bar, it's a red candle. It's still got positive delta.
+
+282
+00:17:40,212 --> 00:17:41,812
+所以，里面仍有大量买盘。
+So, you know, there's still a good buying in there.
+
+283
+00:17:43,512 --> 00:17:45,612
+接近高点时，这里出现买入失衡。
+Right up here near the high, you've got a buying imbalance.
+
+284
+00:17:45,612 --> 00:17:48,012
+要知道，你离高点只差2个最小价格单位。
+You know, you're just, you know, two ticks off the high.
+
+285
+00:17:48,112 --> 00:17:48,812
+价格突然上冲。
+It squirts up.
+
+286
+00:17:49,412 --> 00:17:51,012
+创了新高。
+You know, you make a new high.
+
+287
+00:17:51,912 --> 00:17:52,812
+那接下来会怎样？
+Well, what happens?
+
+288
+00:17:53,812 --> 00:17:54,912
+出现了背离。
+You got a divergence.
+
+289
+00:17:55,212 --> 00:17:56,112
+空头进场了。
+Sellers came in.
+
+290
+00:17:56,512 --> 00:18:02,912
+好，就算你忽略这根K线，下一根K线，空头又进场了。
+Even, okay, you will forgive this bar. The next bar, again, the sellers have come in.
+
+291
+00:18:03,412 --> 00:18:05,512
+好吧，你还没被说服。
+Okay, so you're not yet convinced.
+
+292
+00:18:06,712 --> 00:18:08,362
+看这第三根K线，
+This third bar you have here,
+
+293
+00:18:08,362 --> 00:18:13,312
+出现了比率、单印区，还有K线内大量卖出失衡。
+you got a ratio, a single print, and you got a bunch of selling imbalances in the bar.
+
+294
+00:18:13,712 --> 00:18:19,412
+我的意思是，如果你在第二根K线没注意到，第三根K线就非常明显了。
+I mean, if you didn't really notice it in the second bar, in this third bar, it's really quite obvious.
+
+295
+00:18:21,412 --> 00:18:25,612
+所以你要问自己，为什么价格走势没继续上涨？
+So you have to ask yourself, why isn't the market going higher?
+
+296
+00:18:25,712 --> 00:18:30,512
+你看到这个买入失衡，延续性在哪里？没有。
+You see this nice buying imbalance. Where is the follow-through? It's not there.
+
+297
+00:18:31,212 --> 00:18:37,612
+突然，Delta出现大幅转向，空头开始主导。
+And all of a sudden, you see the big shift in delta where the sellers are taking over.
+
+298
+00:18:40,700 --> 00:18:44,500
+这是订单流能帮你清晰看到的东西。
+It's something that order flows will really help you see.
+
+299
+00:18:45,900 --> 00:18:48,080
+有时候非常明显，比如
+Sometimes it's very obvious, like in
+
+300
+00:18:48,080 --> 00:18:50,260
+这种情况，有时候则需要
+this case, other times it does
+
+301
+00:18:50,260 --> 00:18:52,440
+需要稍微分析一下
+take a little bit of work
+
+302
+00:18:52,440 --> 00:18:56,800
+但随着时间的推移，你会理解得越来越清晰。
+to understand it, but over time you'll understand it a lot clearer.
+
+303
+00:18:58,800 --> 00:19:02,600
+这是一个行情走势，正在发生时，价格直线上涨。
+So this is a move, as it's happening, it's going straight up.
+
+304
+00:19:08,000 --> 00:19:10,800
+理解订单流能帮你捕捉这样的行情走势。
+Understanding the order flow will help you catch moves like this.
+
+305
+00:19:11,600 --> 00:19:18,800
+你会看到控制点不断上移，每个新控制点都比前一个高，为前一根K线提供支撑。
+You see the point controls all starting, each one subsequently higher, acting as support for the previous bar.
+
+306
+00:19:19,600 --> 00:19:21,000
+Delta全都是正Delta。
+The deltas are all positive.
+
+307
+00:19:21,000 --> 00:19:23,300
+你会看到单印区。
+You're seeing single prints.
+
+308
+00:19:24,300 --> 00:19:29,100
+在上涨过程中，这提示你价格走势开始拉升。
+On the way up, which is helping to indicate to you that the market is starting to pull away.
+
+309
+00:19:30,900 --> 00:19:36,800
+早些时候，价格走势只是在这个区域，在一个小区间内波动。
+Earlier, the market was just sort of in this area here, in a little bit of a range.
+
+310
+00:19:37,300 --> 00:19:40,271
+但现在你开始看到买单方成交量很大
+But now you're starting to see heavy volume
+
+311
+00:19:40,271 --> 00:19:45,099
+这表明市场中存在支撑。
+on the bid side. Which is indicating that there's support in the market.
+
+312
+00:19:45,300 --> 00:19:46,578
+尽管价格走势在上涨，
+Even though the market's going up,
+
+313
+00:19:46,578 --> 00:19:47,856
+交易者仍试图在买单价位抛售，
+people are trying to sell into
+
+314
+00:19:47,856 --> 00:19:50,199
+试图把价格拉回去、压回去。
+the bid to pull it back down, push it back down.
+
+315
+00:19:50,300 --> 00:19:52,000
+这里成交了1,000手。
+You've got 1,000 traded here.
+
+316
+00:19:52,000 --> 00:19:56,000
+这里是765手，500手，400手。
+You've got 765 here, 500, 400.
+
+317
+00:19:57,500 --> 00:20:02,400
+而价格走势在上涨，涨势良好，阻力很小。
+And the market's moving up. It's moving up nicely without much resistance.
+
+318
+00:20:02,600 --> 00:20:06,400
+在上涨过程中，你只看到卖盘方成交了几百手。
+You're seeing only a few hundred being traded on the offer on the way up.
+
+319
+00:20:08,100 --> 00:20:13,000
+这里的成交量，826手是上涨过程中最大的成交量，这里是1,200手。
+Size here, 826 is the biggest amount that's traded on the move up. Here you got 1,200.
+
+320
+00:20:15,600 --> 00:20:17,400
+这是最小阻力路径。
+It's the path of least resistance.
+
+321
+00:20:18,100 --> 00:20:23,100
+多头在推高价格，而且成交量不小，是合理的成交量。
+The buyers are taking it up. And it's not on thin volume. It's decent volume.
+
+322
+00:20:23,300 --> 00:20:30,000
+每根K线的成交量是5,000手、3,000手、4,000手、3,000手、5,000手。
+Each bar is 5,000, 3,000, 4,000, 3,000, 5,000.
+
+323
+00:20:30,600 --> 00:20:32,800
+交易者有意推动价格走势。
+People are interested in moving the market.
+
+324
+00:20:33,100 --> 00:20:37,200
+有人在大量买入，逐步建仓。
+Somebody is buying it up. Accumulating a position nicely.
+
+325
+00:20:37,200 --> 00:20:44,800
+他们并没有压倒性地控制市场，立即大量买入，而是在一段时间内逐步完成。
+They're not necessarily overpowering the market and just buying it up immediately. It's happening over a period of time.
+
+326
+00:20:45,400 --> 00:20:52,500
+这是从1036点涨到1040点，用了5分钟，但这是从1880点涨到1890点的一个漂亮行情。
+This is 1036 up to 1040. It's a five minutes, but it's a nice move from 1880 basically up to 1890.
+
+327
+00:20:53,600 --> 00:20:54,900
+这是一个平稳的上涨行情。
+It's a nice gradual move.
+
+328
+00:20:55,200 --> 00:20:57,100
+这就是你想捕捉的行情类型。
+These are the types of moves that you want to catch.
+
+329
+00:21:01,688 --> 00:21:02,521
+好的，你
+Okay, so, you
+
+330
+00:21:02,521 --> 00:21:03,909
+要知道，这又是一个
+know, this is a, again,
+
+331
+00:21:03,909 --> 00:21:05,575
+这是一张E-迷你K线图。
+this is an E-mini chart. And,
+
+332
+00:21:05,575 --> 00:21:09,186
+价格会回升、小幅回落、再回升。
+you know, come back up, come off a little bit, come back up.
+
+333
+00:21:09,188 --> 00:21:10,848
+这种情况在
+You often see that with,
+
+334
+00:21:10,848 --> 00:21:12,508
+普通
+you know, just a normal
+
+335
+00:21:12,508 --> 00:21:14,168
+交易日里经常出现，
+trading day, you know, where
+
+336
+00:21:14,168 --> 00:21:17,488
+市场行情只是在小幅震荡。
+the market's just sort of bing, bing, bing, bing around.
+
+337
+00:21:18,088 --> 00:21:23,188
+你要做的就是捕捉这波上涨行情。
+And, you know... What you want to do is you want to catch this move up.
+
+338
+00:21:23,188 --> 00:21:28,488
+上涨过程中，你会看到早期的买入失衡，后续可能就看不到了。
+You're seeing on the move up, you're seeing some early buying imbalances. You don't necessarily see them later.
+
+339
+00:21:29,688 --> 00:21:31,160
+接着你会开始看到
+Then you're starting to see the
+
+340
+00:21:31,160 --> 00:21:35,085
+卖出失衡出现，价格小幅推高时还有几次买入失衡。
+selling imbalances come in, a couple more buying imbalances as you push a little bit higher.
+
+341
+00:21:35,188 --> 00:21:36,454
+然后是卖出失衡，
+Then the selling imbalances,
+
+342
+00:21:36,454 --> 00:21:38,354
+这里有3次，这里1次，
+you've got three here, one here,
+
+343
+00:21:38,354 --> 00:21:40,254
+这里3次，
+two here, I'm sorry, three here,
+
+344
+00:21:40,254 --> 00:21:42,787
+这里1次，随着市场行情回落。
+one here, as the market moves back down.
+
+345
+00:21:43,088 --> 00:21:45,388
+再也看不到买入了。
+You're not seeing any more buying come in.
+
+346
+00:21:45,988 --> 00:21:48,388
+触及这个高点后，
+To a lesser extent, after you hit this high,
+
+347
+00:21:49,388 --> 00:21:57,088
+这根K线有3次卖出失衡，两侧各有几次卖出失衡。
+You got this bar here with three selling imbalances and a couple of selling imbalances either side of it.
+
+348
+00:21:58,488 --> 00:21:59,074
+要知道，
+And, you know,
+
+349
+00:21:59,074 --> 00:22:00,051
+市场行情确实
+the market did come back
+
+350
+00:22:00,051 --> 00:22:02,787
+小幅回升过，突破了这根K线的高点。
+up a little bit. You know, it took out the high of this bar.
+
+351
+00:22:03,488 --> 00:22:06,688
+而在此之前，还出现了几次买入失衡。
+And, you know, slightly before it, you got a few buying imbalances.
+
+352
+00:22:07,288 --> 00:22:08,688
+但后来怎么了？
+But what happens?
+
+353
+00:22:08,688 --> 00:22:10,638
+形势转变，
+It shifts, and then you're starting
+
+354
+00:22:10,638 --> 00:22:12,588
+你开始看到
+to see the selling imbalances come
+
+355
+00:22:12,588 --> 00:22:16,488
+下跌过程中出现卖出失衡，这正是你想要的信号。
+in on the way down, which is what you want to see.
+
+356
+00:22:16,988 --> 00:22:19,349
+这里，你以为会提前发生，
+Here, you thought it was going to happen
+
+357
+00:22:19,349 --> 00:22:23,187
+但买入又出现了，你能看到。
+a little bit early, but the buying came in. You can see that.
+
+358
+00:22:23,588 --> 00:22:24,352
+所以，要知道，
+So, you know, had
+
+359
+00:22:24,352 --> 00:22:25,116
+如果你在这里做空，
+you gotten short here,
+
+360
+00:22:25,116 --> 00:22:25,880
+要知道，
+you know, and you
+
+361
+00:22:25,880 --> 00:22:26,835
+就得止损
+have to stop, you know,
+
+362
+00:22:26,835 --> 00:22:30,083
+这时候你会发现，可能现在时机还不对
+here, you could... just sort of see that, you know, okay, maybe it's not happening right now.
+
+363
+00:22:30,088 --> 00:22:32,888
+你可以小亏出局
+You could get out at a little bit of a scratch or a loss.
+
+364
+00:22:33,288 --> 00:22:37,239
+但关键是，当行情真正启动时
+But then, you know, again, when it starts to happen, you know,
+
+365
+00:22:37,239 --> 00:22:43,825
+价格几乎回到同一位置，你就能抓住这波行情走势，从1904跌到1899甚至更低
+it's literally around the same price, and you catch the move, you know, from 1904 down to, you know, 1899 or lower.
+
+366
+00:22:45,988 --> 00:22:48,888
+这就是订单流能告诉你的
+I mean, that's what order flows will tell you.
+
+367
+00:22:49,188 --> 00:22:53,888
+它会显示市场中不同的交易类型
+They'll tell you the different types of trading that's happening in the market.
+
+368
+00:22:54,088 --> 00:22:57,116
+当交易者积极入场
+When people are being aggressive in the sense
+
+369
+00:22:57,116 --> 00:23:00,144
+压倒对手盘时
+that they're overwhelming the other side of the
+
+370
+00:23:00,144 --> 00:23:04,686
+你通常会从出现的买卖失衡中看到这一点
+market, you tend to see that with the imbalances as they're occurring.
+
+371
+00:23:05,388 --> 00:23:10,788
+当市场行情横盘/震荡时，很难判断市场动向
+When the market is going sideways, it's really hard to get a gauge on the market.
+
+372
+00:23:10,788 --> 00:23:18,688
+但一旦市场行情开始波动，订单流能帮你判断波动的强度
+But once the market starts moving, order flows will help you determine the intensity of the move.
+
+373
+00:23:19,188 --> 00:23:24,388
+如果你发现行情远离高点或低点时出现大量买卖失衡
+If you're starting to see a lot of imbalances come in as the market starts moving away,
+
+374
+00:23:24,788 --> 00:23:28,288
+要知道，这很重要
+from a high or a low, you know, that's important.
+
+375
+00:23:28,388 --> 00:23:29,888
+这就是你能赚钱的地方
+You know, that's where you're going to make money on.
+
+376
+00:23:30,888 --> 00:23:31,760
+这就是
+That's, you know,
+
+377
+00:23:31,760 --> 00:23:33,795
+订单流的价值所在
+that's the value that exists in order
+
+378
+00:23:33,795 --> 00:23:37,284
+而普通K线/柱状线图上看不到这些
+flow that you're not going to see on a regular bar chart.
+
+379
+00:23:38,988 --> 00:23:43,788
+我再怎么强调都不为过，订单流能让你看到
+And I can't stress it enough, you know, order flows allows you to see, you know,
+
+380
+00:23:44,188 --> 00:23:49,688
+单凭K线图或K线/柱状线无法看出的行情走势强度
+the intensity of a move that you just can't see in a candlestick chart or a bar chart by itself.
+
+381
+00:23:51,588 --> 00:23:52,170
+所以
+So, you
+
+382
+00:23:52,170 --> 00:23:53,043
+总之
+know, anyway, that's
+
+383
+00:23:53,043 --> 00:23:55,081
+这就是第六节课的内容
+the end of lesson six, you know,
+
+384
+00:23:55,081 --> 00:23:58,284
+市场中不同的交易类型
+the different types of trading that's happening. happening in the market.
+
+385
+00:23:58,288 --> 00:24:03,631
+下一节课，我会讲解最适合用订单流交易的期货合约 要知道
+In the next lesson, I'll explain the best futures markets to trade order flow.You know,
+
+386
+00:24:03,631 --> 00:24:04,961
+很多人都在问
+a lot of people are asking,
+
+387
+00:24:04,961 --> 00:24:06,291
+哪个市场最适合订单流交易
+what's the best market to trade
+
+388
+00:24:06,291 --> 00:24:08,286
+其实并没有最好的单一市场
+order flow? There really is no one best market.
+
+389
+00:24:08,288 --> 00:24:11,788
+我会介绍很多可交易的市场
+I'll discuss many of the markets that you can trade.
+
+390
+00:24:12,188 --> 00:24:15,488
+基本上，任何市场只要
+Basically, any market out there, you can trade as long as it's a
+
+391
+00:24:16,888 --> 00:24:23,988
+日内成交量足够大，订单流都能用。
+Something that trades with a decent amount of volume on an intraday basis, order flow can be applied to it.
+
+392
+00:24:24,488 --> 00:24:27,895
+我交易的期货合约范围很广，从
+I trade a wide range of contracts from
+
+393
+00:24:27,895 --> 00:24:30,876
+谷物到金融类期货合约（交易较少）
+grains to financials to a lesser extent
+
+394
+00:24:30,876 --> 00:24:35,987
+再到外汇，但更多是商品，这些都遵循供需规律。
+currencies, but a lot of commodities, things that follow supply and demand.
+
+395
+00:24:36,588 --> 00:24:38,988
+供需是定律，而非理论。
+Supply and demand is a law, it's not a theory.
+
+396
+00:24:42,288 --> 00:24:45,151
+适用于小麦市场的供需定律
+Laws that apply to supply and demand
+
+397
+00:24:45,151 --> 00:24:51,287
+同样适用于标普500指数期货等市场的供需。
+in the wheat market also apply to supply and demand in the index futures markets.
+
+398
+00:24:51,388 --> 00:24:57,288
+下一节课，我会讲解你可以交易的不同市场类型。
+So in the next lesson, I'll explain the different types of markets that you can trade.
+
+399
+00:24:57,788 --> 00:25:03,888
+有没有更好的市场？关键看你的风险承受能力和投入交易的时间。
+Is anyone better? It really depends on your risk tolerance and the time you have to devote to trading.
+
+400
+00:25:04,288 --> 00:25:08,488
+这些内容我们会在下一节课，也就是第7节详细讨论。
+But we'll go over that in the next lesson, lesson seven.
+
+401
+00:25:08,888 --> 00:25:09,388
+谢谢。
+Thank you.
+
+===== END AFTER_OPTIMIZE =====
