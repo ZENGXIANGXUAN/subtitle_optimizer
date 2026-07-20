@@ -1118,6 +1118,9 @@ class MainWindow(QMainWindow):
             raw_glossary=runtime_glossary,
             original_line=self._get_original_line_index(),
             transcription_audio_format=self._transcription_audio_format(),
+            transcription_model=self.input_transcription_model.text().strip(),
+            language=self._get_transcription_language(),
+            chunk_concurrency=settings["concurrency"],
             transcribe_only=settings["transcribe_only"],
             input_lang=settings["input_lang"],
             output_lang=settings["output_lang"],
@@ -2664,6 +2667,24 @@ class MainWindow(QMainWindow):
 
     def _transcription_audio_format(self) -> str:
         return "wav" if self.chk_transcription_wav.isChecked() else "mp3"
+
+    def _get_transcription_language(self) -> str | None:
+        """获取转录语言设置，返回语言代码或None"""
+        lang = self.combo_input_lang.currentText()
+        # 映射常见语言到ISO代码
+        lang_map = {
+            "English": "en",
+            "中文": "zh",
+            "Japanese": "ja",
+            "Korean": "ko",
+            "French": "fr",
+            "German": "de",
+            "Spanish": "es",
+            "Russian": "ru",
+            "Portuguese": "pt",
+            "Italian": "it",
+        }
+        return lang_map.get(lang)
 
     def _save_config(self):
         cfg = {

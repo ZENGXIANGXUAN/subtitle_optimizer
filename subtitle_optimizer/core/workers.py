@@ -28,8 +28,10 @@ from core.transcription import (
     NO_TRANSCRIBABLE_AUDIO_ERROR,
     is_media_file,
     prepare_transcription_audio,
+    should_use_chunked_transcription,
     transcribe_media_to_srt,
     transcribe_prepared_audio_to_srt,
+    transcribe_chunked_to_srt,
 )
 from core.batch_glossary import (
     BatchGlossarySummary,
@@ -487,13 +489,15 @@ class TranscriptionWorker(BaseWorker):
 
     def __init__(self, client: MistralClient, media_path: str,
                  transcription_model: str = "", language: str = None,
-                 transcription_audio_format: str = "mp3"):
+                 transcription_audio_format: str = "mp3",
+                 chunk_concurrency: int = 4):
         super().__init__()
         self.client = client
         self.media_path = media_path
         self.transcription_model = transcription_model
         self.language = language
         self.transcription_audio_format = transcription_audio_format
+        self.chunk_concurrency = chunk_concurrency
 
     @pyqtSlot()
     def run(self):
@@ -503,14 +507,30 @@ class TranscriptionWorker(BaseWorker):
         if self._cancelled:
             return
         self.log.emit(f"Transcribing media to SRT: {Path(self.media_path).name}")
-        srt_path, content = await transcribe_media_to_srt(
-            self.client,
-            self.media_path,
-            model=self.transcription_model or None,
-            language=self.language,
-            audio_format=self.transcription_audio_format,
-            on_log=self.log.emit,
-        )
+
+        # 根据文件大小自动选择分段或普通转录
+        use_chunked = should_use_chunked_transcription(self.media_path)
+        if use_chunked:
+            self.log.emit(f"Large file detected, using chunked transcription (concurrency={self.chunk_concurrency})")
+            srt_path, content = await transcribe_chunked_to_srt(
+                self.client,
+                self.media_path,
+                model=self.transcription_model or None,
+                language=self.language,
+                audio_format=self.transcription_audio_format,
+                concurrency=self.chunk_concurrency,
+                on_log=self.log.emit,
+            )
+        else:
+            srt_path, content = await transcribe_media_to_srt(
+                self.client,
+                self.media_path,
+                model=self.transcription_model or None,
+                language=self.language,
+                audio_format=self.transcription_audio_format,
+                on_log=self.log.emit,
+            )
+
         if not self._cancelled:
             self.finished.emit(srt_path, content)
 
@@ -2475,6 +2495,9 @@ class BatchWorker(BaseWorker):
                  glossary_prompt: str = "", raw_glossary: str = "",
                  original_line: int = 1,
                  transcription_audio_format: str = "mp3",
+                 transcription_model: str = "",
+                 language: str = None,
+                 chunk_concurrency: int = 4,
                  transcribe_only: bool = False,
                  input_lang: str = "English", output_lang: str = "中文",
                  source_layout: str = LAYOUT_AUTO):
@@ -2493,6 +2516,9 @@ class BatchWorker(BaseWorker):
         self.output_lang = output_lang
         self.input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
         self.transcription_audio_format = transcription_audio_format
+        self.transcription_model = transcription_model
+        self.language = language
+        self.chunk_concurrency = chunk_concurrency
         self.transcribe_only = transcribe_only
         self.source_layout = source_layout
 
@@ -2545,12 +2571,22 @@ class BatchWorker(BaseWorker):
                 if is_media_file(filepath):
                     self.log.emit(f"  Transcribing media before subtitle optimization: {filename}")
                     try:
-                        working_path, _ = await transcribe_media_to_srt(
-                            self.client,
-                            filepath,
-                            audio_format=self.transcription_audio_format,
-                            on_log=lambda msg: self.log.emit(f"  {msg}"),
-                        )
+                        # 根据文件大小自动选择分段或普通转录
+                        if should_use_chunked_transcription(filepath):
+                            self.log.emit(f"  Large file, using chunked transcription")
+                            working_path, _ = await transcribe_chunked_to_srt(
+                                self.client,
+                                filepath,
+                                audio_format=self.transcription_audio_format,
+                                on_log=lambda msg: self.log.emit(f"  {msg}"),
+                            )
+                        else:
+                            working_path, _ = await transcribe_media_to_srt(
+                                self.client,
+                                filepath,
+                                audio_format=self.transcription_audio_format,
+                                on_log=lambda msg: self.log.emit(f"  {msg}"),
+                            )
                     except RuntimeError as exc:
                         message = str(exc)
                         if message == NO_TRANSCRIBABLE_AUDIO_ERROR or "no audio track" in message.lower():
@@ -2665,13 +2701,27 @@ class BatchWorker(BaseWorker):
                     return
                 out_path = str(Path(filepath).with_suffix(".srt"))
                 self.log.emit(f"  [{filename}] 开始转录 API → {out_path}")
-                srt_path, _ = await transcribe_prepared_audio_to_srt(
-                    self.client,
-                    audio_path,
-                    filepath,
-                    output_path=out_path,
-                    on_log=lambda msg: self.log.emit(f"  {msg}"),
-                )
+
+                # 根据文件大小选择转录方式
+                if should_use_chunked_transcription(audio_path):
+                    self.log.emit(f"  [{filename}] 大文件，使用分段转录")
+                    srt_path, _ = await transcribe_chunked_to_srt(
+                        self.client,
+                        audio_path,
+                        output_path=out_path,
+                        model=self.transcription_model or None,
+                        language=self.language,
+                        concurrency=self.chunk_concurrency,
+                        on_log=lambda msg: self.log.emit(f"  {msg}"),
+                    )
+                else:
+                    srt_path, _ = await transcribe_prepared_audio_to_srt(
+                        self.client,
+                        audio_path,
+                        filepath,
+                        output_path=out_path,
+                        on_log=lambda msg: self.log.emit(f"  {msg}"),
+                    )
                 if not self._cancelled:
                     self.file_done.emit(idx, filename, srt_path)
             except RuntimeError as exc:

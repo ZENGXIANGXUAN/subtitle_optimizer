@@ -348,3 +348,249 @@ async def transcribe_prepared_audio_to_srt(
         f.write(content)
     _emit_log(on_log, f"SRT write complete: {srt_path} ({len(content)} chars)")
     return srt_path, content
+
+
+# ===== 分段转录（大文件支持）=====
+
+# 分段参数
+CHUNK_DURATION = 15 * 60       # 每段15分钟
+CHUNK_OVERLAP = 1 * 60         # 重叠1分钟
+CHUNK_MAX_FILE_MB = 8          # 每段最大文件大小
+
+
+def get_audio_duration(audio_path: str) -> float:
+    """获取音频时长（秒）"""
+    cmd = [
+        "ffprobe", "-v", "error",
+        "-show_entries", "format=duration",
+        "-of", "default=noprint_wrappers=1:nokey=1",
+        audio_path,
+    ]
+    result = subprocess.run(cmd, **_media_probe_run_kwargs())
+    return float(result.stdout.decode("utf-8", errors="ignore").strip())
+
+
+def extract_audio_chunk(
+    audio_path: str,
+    start: float,
+    duration: float,
+    output_path: str,
+    audio_format: str = "mp3",
+) -> str:
+    """提取音频片段"""
+    codec_args = _audio_transcode_args(audio_format)
+    cmd = [
+        "ffmpeg", "-i", audio_path,
+        "-ss", str(start),
+        "-t", str(duration),
+        "-vn", *codec_args,
+        "-y", output_path,
+    ]
+    subprocess.run(cmd, **_media_probe_run_kwargs())
+    if not _valid_audio_file(output_path):
+        raise RuntimeError(f"Failed to extract audio chunk: {start:.1f}s +{duration:.1f}s")
+    return output_path
+
+
+def _compute_chunk_starts(total_duration: float, chunk_duration: float, overlap: float) -> list[float]:
+    """计算分段起始时间"""
+    starts = []
+    pos = 0.0
+    while pos < total_duration:
+        starts.append(pos)
+        if pos + chunk_duration >= total_duration:
+            break
+        pos += chunk_duration - overlap
+    return starts
+
+
+def _merge_chunk_segments(
+    all_results: list[dict],
+    chunk_starts: list[float],
+    overlap: float,
+) -> list[dict]:
+    """合并多段转录结果，处理重叠区域"""
+    merged = []
+
+    for i, result in enumerate(all_results):
+        segments = result.get("segments") or []
+        chunk_start = chunk_starts[i]
+
+        for seg in segments:
+            abs_start = chunk_start + seg.get("start", 0)
+            abs_end = chunk_start + seg.get("end", 0)
+            text = (seg.get("text") or "").strip()
+            if not text:
+                continue
+
+            # 去重重叠区域：非首段的前半重叠区域跳过
+            if i > 0:
+                overlap_boundary = chunk_starts[i] + overlap / 2
+                if abs_start < overlap_boundary:
+                    continue
+
+            merged.append({
+                "start": abs_start,
+                "end": abs_end,
+                "text": text,
+            })
+
+    return merged
+
+
+async def _transcribe_chunk_concurrent(
+    client,
+    chunk_path: str,
+    chunk_index: int,
+    model: str | None,
+    language: str | None,
+    on_log: Callable[[str], None] | None,
+) -> dict:
+    """转录单个分段"""
+    size_label = _file_size_label(chunk_path)
+    _emit_log(on_log, f"Chunk {chunk_index + 1}: uploading ({size_label})...")
+    start = time.perf_counter()
+    result = await client.transcribe_audio(
+        chunk_path,
+        model=model,
+        language=language,
+        on_log=on_log,
+    )
+    segments = result.get("segments") or []
+    _emit_log(
+        on_log,
+        f"Chunk {chunk_index + 1}: done ({len(segments)} segments, {_elapsed(start)})",
+    )
+    return result
+
+
+async def transcribe_chunked_to_srt(
+    client,
+    input_path: str,
+    output_path: str | None = None,
+    model: str | None = None,
+    language: str | None = None,
+    audio_format: str = "mp3",
+    chunk_duration: float = CHUNK_DURATION,
+    overlap: float = CHUNK_OVERLAP,
+    concurrency: int = 4,
+    on_log: Callable[[str], None] | None = None,
+) -> tuple[str, str]:
+    """
+    分段转录大文件，支持并发
+
+    Args:
+        client: MistralClient 实例
+        input_path: 音频/视频文件路径
+        output_path: 输出 SRT 路径（可选）
+        model: 转录模型
+        language: 语言
+        audio_format: 音频格式（mp3/wav）
+        chunk_duration: 每段时长（秒）
+        overlap: 重叠时长（秒）
+        concurrency: 并发数
+        on_log: 日志回调
+
+    Returns:
+        (srt_path, srt_content)
+    """
+    total_start = time.perf_counter()
+
+    # 1. 准备音频
+    audio_path, temp_audio = prepare_transcription_audio(
+        input_path, audio_format=audio_format, on_log=on_log,
+    )
+
+    try:
+        # 2. 获取时长
+        total_duration = get_audio_duration(audio_path)
+        _emit_log(on_log, f"Audio duration: {total_duration / 60:.1f} min")
+
+        # 3. 计算分段
+        chunk_starts = _compute_chunk_starts(total_duration, chunk_duration, overlap)
+        num_chunks = len(chunk_starts)
+        _emit_log(
+            on_log,
+            f"Chunked transcription: {num_chunks} chunks "
+            f"({chunk_duration / 60:.0f}min each, {overlap / 60:.0f}min overlap, "
+            f"concurrency={concurrency})",
+        )
+
+        # 4. 提取所有分段
+        tmp_dir = tempfile.mkdtemp(prefix="subtitle_optimizer_chunk_")
+        chunk_paths: list[str] = []
+        for i, chunk_start in enumerate(chunk_starts):
+            remaining = total_duration - chunk_start
+            chunk_dur = min(chunk_duration, remaining)
+            chunk_path = os.path.join(tmp_dir, f"chunk_{i:03d}.{audio_format}")
+            _emit_log(
+                on_log,
+                f"Extracting chunk {i + 1}/{num_chunks}: "
+                f"{chunk_start / 60:.1f} - {(chunk_start + chunk_dur) / 60:.1f} min",
+            )
+            extract_audio_chunk(audio_path, chunk_start, chunk_dur, chunk_path, audio_format)
+            chunk_paths.append(chunk_path)
+
+        # 5. 并发转录
+        _emit_log(on_log, f"Starting concurrent transcription ({concosity} workers)...")
+        semaphore = asyncio.Semaphore(concurrency)
+
+        async def _limited_transcribe(idx: int, path: str):
+            async with semaphore:
+                return await _transcribe_chunk_concurrent(
+                    client, path, idx, model, language, on_log,
+                )
+
+        tasks = [_limited_transcribe(i, p) for i, p in enumerate(chunk_paths)]
+        all_results = await asyncio.gather(*tasks, return_exceptions=True)
+
+        # 检查是否有失败的分段
+        failed = [i for i, r in enumerate(all_results) if isinstance(r, Exception)]
+        if failed:
+            _emit_log(on_log, f"WARNING: {len(failed)} chunks failed: {[i+1 for i in failed]}")
+            # 用空结果替代失败的分段
+            for i in failed:
+                all_results[i] = {"segments": [], "text": ""}
+
+        # 6. 合并结果
+        _emit_log(on_log, "Merging segments...")
+        merged = _merge_chunk_segments(all_results, chunk_starts, overlap)
+        _emit_log(on_log, f"Merged: {len(merged)} segments from {num_chunks} chunks")
+
+        # 7. 生成 SRT
+        result_data = {"segments": merged}
+        content = generate_srt_content(result_data)
+        srt_path = output_path or default_srt_output_path(input_path)
+        with open(srt_path, "w", encoding="utf-8") as f:
+            f.write(content)
+
+        _emit_log(
+            on_log,
+            f"Chunked transcription complete: {srt_path} "
+            f"({len(content)} chars, {_elapsed(total_start)})",
+        )
+        return srt_path, content
+
+    finally:
+        # 清理临时文件
+        if temp_audio:
+            try:
+                os.remove(temp_audio)
+                _emit_log(on_log, f"Temporary audio removed: {temp_audio}")
+            except OSError:
+                pass
+        # 清理分段文件
+        try:
+            import shutil
+            shutil.rmtree(tmp_dir, ignore_errors=True)
+        except Exception:
+            pass
+
+
+def should_use_chunked_transcription(input_path: str, chunk_threshold_mb: float = 20) -> bool:
+    """判断是否应该使用分段转录"""
+    try:
+        size_mb = os.path.getsize(input_path) / (1024 * 1024)
+        return size_mb > chunk_threshold_mb
+    except OSError:
+        return False
