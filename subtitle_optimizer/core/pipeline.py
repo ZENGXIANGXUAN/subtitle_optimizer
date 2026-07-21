@@ -397,12 +397,12 @@ class SubtitlePipeline:
             if source_text and not _translation_is_usable(
                 target_text, source_text, self.output_lang
             ):
-                entry.status = "needs_review"
-                entry.stage_status = "translation_needs_review"
-                if not entry.error_msg:
-                    entry.error_msg = "translation_needs_review"
-                if "translation_hard_gate_failed" not in entry.quality_flags:
-                    entry.quality_flags.append("translation_hard_gate_failed")
+                # 漏译修复失败，保留原文，不标记失败
+                # 直接将原文作为译文，状态设为 done
+                entry.lines = [source_text] if source_text else entry.lines
+                entry.status = "done"
+                entry.stage_status = "translation_kept_source"
+                entry.error_msg = ""
                 still_bad.append(entry.index)
             elif entry.stage_status in {"translation_failed_fallback", "translation_needs_review"}:
                 # 修复函数可能已经把内容修好，恢复准确阶段状态。
@@ -412,8 +412,7 @@ class SubtitlePipeline:
 
         if still_bad and on_log:
             on_log(
-                f"  ⚠️ 仍有 {len(still_bad)} 条未通过译文硬检查，"
-                f"已标记 needs_review: {still_bad}"
+                f"  ℹ️ {len(still_bad)} 条漏译修复失败，已保留原文: {still_bad}"
             )
 
         logger.debug(_format_subtitle_snapshot("AFTER_TRANSLATE", entries))

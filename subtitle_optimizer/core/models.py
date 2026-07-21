@@ -230,27 +230,6 @@ def _translation_looks_incomplete(zh: str, en: str) -> bool:
     if not target:
         return True
 
-    # ASR错误/非语言内容白名单：这些内容不需要翻译，保留原文是正确的
-    # 包括：纯数字、口头禅、拟声词、重复词等
-    source_lower = source.lower().strip().rstrip(".,!?;:")
-    # 纯数字或数数字 (1, 2, 3 或 1 2 3)
-    if re.match(r'^[\d\s,，]+$', source):
-        return False
-    # 口头禅/拟声词/重复词 (lulu, hmm, okay, yeah, uh, um, ah, oh等)
-    # 检测重复的单词或纯拟声词
-    words = source_lower.split()
-    if len(words) >= 2:
-        # 检查是否所有单词都相同（如 "lulu lulu lulu lulu lulu"）
-        if len(set(words)) == 1:
-            return False
-    # 常见的无实义口头禅/拟声词
-    _FILLERS = {"hmm", "uh", "um", "ah", "oh", "er", "lulu", "huh", "mhm", "uh-huh", "mm-hmm"}
-    if source_lower in _FILLERS:
-        return False
-    # 短于2个单词的无实义内容（如 "OK.", "Yeah.", "Sure."）
-    if en_words <= 2 and source_lower.rstrip(".,!?") in {"ok", "okay", "yeah", "yes", "no", "sure", "right", "good", "bad", "wow", "oops", "hey", "hi", "hello", "bye", "thanks", "sorry"}:
-        return False
-
     en_words = _english_word_count(source)
     zh_chars = _chinese_char_count(target)
 
