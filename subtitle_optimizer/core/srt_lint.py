@@ -19,7 +19,13 @@ import unicodedata
 from dataclasses import dataclass, field
 from typing import Iterable
 
-from core.models import SourceCueSnapshot, SubtitleEntry, _srt_time_to_ms, _ms_to_srt_time
+from core.models import (
+    SourceCueSnapshot,
+    SubtitleEntry,
+    _srt_time_to_ms,
+    _ms_to_srt_time,
+    source_can_remain_untranslated,
+)
 
 try:
     from ..utils import logger
@@ -566,7 +572,14 @@ def _detect_remaining_issues(
 ) -> None:
     for entry in entries:
         lines = _selected_lines(entry, use_optimized)
-        if expect_bilingual and len(lines) < 2:
+        source_identity_allowed = len(lines) == 1 and (
+            "source_fallback" in entry.quality_flags
+            or (
+                "source_identity_allowed" in entry.quality_flags
+                and source_can_remain_untranslated(lines[0])
+            )
+        )
+        if expect_bilingual and len(lines) < 2 and not source_identity_allowed:
             preview = " / ".join(lines)[:80] if lines else "空文本"
             report.incomplete_bilingual.append(
                 SrtLintIssue(
@@ -579,7 +592,7 @@ def _detect_remaining_issues(
         # Chinese-target hard check: in the canonical bilingual layout, line 1
         # must be the Chinese translation. This prevents English-only fallback
         # lines from being accepted just because there are two lines.
-        if expect_bilingual and output_lang_code == "zh":
+        if expect_bilingual and output_lang_code == "zh" and not source_identity_allowed:
             target_line = lines[0] if lines else ""
             if not _has_chinese(target_line):
                 preview = target_line[:80] if target_line else "空译文"

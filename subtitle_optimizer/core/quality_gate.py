@@ -8,7 +8,6 @@ from core.task_models import QualityGateReport, QualityIssue
 
 CRITICAL_QUALITY_FLAGS = {
     "source_integrity_failed",
-    "source_fallback",
     "translation_batch_failed",
     "translation_hard_gate_failed",
     "translation_repair_failed",

@@ -8,6 +8,7 @@ from core.models import (
     SubtitleEntry,
     _srt_time_to_ms,
     _format_subtitle_snapshot,
+    source_can_remain_untranslated,
     verify_source_integrity,
 )
 from core.segmenter import _get_source_text, _get_target_text
@@ -65,7 +66,17 @@ class SubtitlePipeline:
     DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS = 2
     DEFAULT_CONSISTENCY_GUIDE_RETRY_ATTEMPTS = 2
     QUALITY_MAX_BATCH_SIZE = 8
-    QUALITY_MAX_CONCURRENCY = 8
+    QUALITY_MAX_CONCURRENCY = 16
+    _TRANSLATION_FAILURE_FLAGS = (
+        "source_fallback",
+        "translation_batch_failed",
+        "translation_hard_gate_failed",
+        "translation_repair_failed",
+        "fidelity_review_failed",
+        "optimize_target_invalid",
+        "optimize_timeout",
+        "optimize_failed",
+    )
 
     def __init__(
         self,
@@ -123,6 +134,40 @@ class SubtitlePipeline:
             clone.source_cues = list(entry.source_cues)
             snapshots.append(clone)
         return snapshots
+
+    @classmethod
+    def _mark_translation_recovered(cls, entry: SubtitleEntry) -> None:
+        """Clear stale failure state after a later stage supplies a valid target."""
+        entry.status = "done"
+        entry.error_msg = ""
+        for flag in cls._TRANSLATION_FAILURE_FLAGS:
+            if flag in entry.quality_flags:
+                entry.quality_flags.remove(flag)
+
+    @classmethod
+    def _keep_source_fallback(cls, entry: SubtitleEntry, source_text: str) -> None:
+        """Keep the source cue as an automatic, exportable final fallback.
+
+        A failed model response must never erase a subtitle or make the entire
+        file unexportable.  This is intentionally distinct from a completed
+        translation: downstream review stages skip the cue, while the output
+        and logs retain a machine-readable ``source_fallback`` marker.
+        """
+        entry.lines = [source_text] if source_text else entry.lines
+        entry.optimized_lines = []
+        cls._mark_translation_recovered(entry)
+        entry.status = "done"
+        entry.stage_status = "translation_source_fallback"
+        entry.error_msg = ""
+        if "source_fallback" not in entry.quality_flags:
+            entry.quality_flags.append("source_fallback")
+
+    @staticmethod
+    def _is_source_identity_allowed(entry: SubtitleEntry) -> bool:
+        return bool(
+            {"source_identity_allowed", "source_fallback"}
+            & set(entry.quality_flags)
+        )
 
     # ------------------------------------------------------------------
     # Stage 1: Analyze
@@ -326,7 +371,17 @@ class SubtitlePipeline:
                         for entry in batch:
                             translation = result_map.get(entry.index, "")
                             source_text = _get_source_text(entry, self.input_lang_code)
-                            if translation and source_text:
+                            if (
+                                source_can_remain_untranslated(source_text)
+                                and translation.strip() == source_text.strip()
+                            ):
+                                entry.lines = [source_text]
+                                entry.status = "done"
+                                entry.stage_status = "source_identity_allowed"
+                                entry.error_msg = ""
+                                if "source_identity_allowed" not in entry.quality_flags:
+                                    entry.quality_flags.append("source_identity_allowed")
+                            elif translation and source_text:
                                 entry.lines = [translation, source_text]
                                 entry.status = "done"
                                 entry.stage_status = "translated"
@@ -365,12 +420,7 @@ class SubtitlePipeline:
                 for entry in entries:
                     if entry.index in unresolved_set:
                         source_text = _get_source_text(entry, self.input_lang_code)
-                        entry.lines = [source_text] if source_text else entry.lines
-                        entry.status = "needs_review"
-                        entry.stage_status = "translation_failed_fallback"
-                        entry.error_msg = "translation_failed_fallback_source"
-                        if "source_fallback" not in entry.quality_flags:
-                            entry.quality_flags.append("source_fallback")
+                        self._keep_source_fallback(entry, source_text)
                 if on_log:
                     on_log(
                         f"    ⚠️ {len(unresolved_ids)} 条字幕翻译失败，"
@@ -397,22 +447,16 @@ class SubtitlePipeline:
             if source_text and not _translation_is_usable(
                 target_text, source_text, self.output_lang
             ):
-                # 漏译修复失败，保留原文，不标记失败
-                # 直接将原文作为译文，状态设为 done
-                entry.lines = [source_text] if source_text else entry.lines
-                entry.status = "done"
-                entry.stage_status = "translation_kept_source"
-                entry.error_msg = ""
+                self._keep_source_fallback(entry, source_text)
                 still_bad.append(entry.index)
             elif entry.stage_status in {"translation_failed_fallback", "translation_needs_review"}:
                 # 修复函数可能已经把内容修好，恢复准确阶段状态。
-                entry.status = "done"
+                self._mark_translation_recovered(entry)
                 entry.stage_status = "translated_repaired"
-                entry.error_msg = ""
 
         if still_bad and on_log:
             on_log(
-                f"  ℹ️ {len(still_bad)} 条漏译修复失败，已保留原文: {still_bad}"
+                f"  ⚠️ {len(still_bad)} 条漏译修复失败，已自动保留原文兜底: {still_bad}"
             )
 
         logger.debug(_format_subtitle_snapshot("AFTER_TRANSLATE", entries))
@@ -488,18 +532,9 @@ class SubtitlePipeline:
                 live.optimized_lines = (
                     [target_text, source_text] if source_text else [target_text]
                 )
-                if live.status != "needs_review":
-                    live.status = "done"
-                    live.error_msg = ""
-                for flag in (
-                    "optimize_target_invalid", "optimize_timeout", "optimize_failed"
-                ):
-                    if flag in live.quality_flags:
-                        live.quality_flags.remove(flag)
+                self._mark_translation_recovered(live)
                 live.stage_status = (
-                    "optimized_with_flags"
-                    if live.status == "needs_review" or live.quality_flags
-                    else "optimized"
+                    "optimized_with_flags" if live.quality_flags else "optimized"
                 )
 
             def mark_optimize_failure(
@@ -509,6 +544,14 @@ class SubtitlePipeline:
             ) -> None:
                 live = entries[position]
                 live.optimized_lines = list(live.lines)
+                source_text = _get_source_text(live, self.input_lang_code)
+                target_text = _get_target_text(live, self.input_lang_code)
+                if _translation_is_usable(target_text, source_text, self.output_lang):
+                    self._mark_translation_recovered(live)
+                    if "optimize_unapplied" not in live.quality_flags:
+                        live.quality_flags.append("optimize_unapplied")
+                    live.stage_status = "optimize_skipped_with_flags"
+                    return
                 live.status = "needs_review"
                 flag = {
                     "timeout": "optimize_timeout",
@@ -531,6 +574,11 @@ class SubtitlePipeline:
                 async with sem:
                     if is_cancelled and is_cancelled():
                         raise asyncio.CancelledError()
+                    for offset, snapshot in enumerate(batch):
+                        if self._is_source_identity_allowed(snapshot):
+                            entries[start_pos + offset].optimized_lines = list(
+                                entries[start_pos + offset].lines
+                            )
                     retry_items: list[tuple[int, SubtitleEntry, str, Exception]] = []
                     try:
                         result_map = await asyncio.wait_for(
@@ -542,6 +590,8 @@ class SubtitlePipeline:
                         )
                         for offset, snapshot in enumerate(batch):
                             position = start_pos + offset
+                            if self._is_source_identity_allowed(snapshot):
+                                continue
                             try:
                                 apply_optimized(
                                     position,
@@ -570,6 +620,8 @@ class SubtitlePipeline:
                         )
 
                     for position, snapshot, initial_kind, initial_error in retry_items:
+                        if self._is_source_identity_allowed(snapshot):
+                            continue
                         recovered = False
                         last_kind = initial_kind
                         last_error = initial_error
@@ -953,17 +1005,32 @@ class SubtitlePipeline:
             if not _translation_is_usable(target, source_text, self.output_lang):
                 raise ValueError(f"fidelity invalid target id={snapshot.index}")
             live.lines = [target, source_text] if source_text else [target]
-            if live.status != "needs_review":
-                live.status = "done"
-                live.error_msg = ""
+            self._mark_translation_recovered(live)
             live.stage_status = (
                 "fidelity_checked_with_flags"
-                if live.status == "needs_review" or live.quality_flags
-                else "fidelity_checked"
+                if live.quality_flags else "fidelity_checked"
             )
-            if "fidelity_review_failed" in live.quality_flags:
-                live.quality_flags.remove("fidelity_review_failed")
             return int(target != old_target)
+
+        def keep_existing_after_fidelity_failure(
+            position: int,
+            error: Exception,
+        ) -> None:
+            live = entries[position]
+            source_text = _get_source_text(live, self.input_lang_code)
+            target_text = _get_target_text(live, self.input_lang_code)
+            if _translation_is_usable(target_text, source_text, self.output_lang):
+                self._mark_translation_recovered(live)
+                if "fidelity_review_unapplied" not in live.quality_flags:
+                    live.quality_flags.append("fidelity_review_unapplied")
+                live.stage_status = "fidelity_skipped_with_flags"
+                return
+
+            live.stage_status = "fidelity_failed_fallback"
+            live.status = "needs_review"
+            live.error_msg = f"fidelity review failed: {error}"
+            if "fidelity_review_failed" not in live.quality_flags:
+                live.quality_flags.append("fidelity_review_failed")
 
         async def process(
             start: int,
@@ -985,6 +1052,8 @@ class SubtitlePipeline:
                     )
                     validated: list[tuple[int, SubtitleEntry, str]] = []
                     for offset, snapshot in enumerate(batch):
+                        if self._is_source_identity_allowed(snapshot):
+                            continue
                         source_text = _get_source_text(snapshot, self.input_lang_code)
                         target = result_map.get(snapshot.index, "")
                         if not _translation_is_usable(
@@ -1008,6 +1077,8 @@ class SubtitlePipeline:
 
                     for offset, snapshot in enumerate(batch):
                         position = start + offset
+                        if self._is_source_identity_allowed(snapshot):
+                            continue
                         last_error: Exception = exc
                         recovered = False
                         for attempt in range(self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS):
@@ -1049,13 +1120,7 @@ class SubtitlePipeline:
                                 )
                         if recovered:
                             continue
-
-                        live = entries[position]
-                        live.stage_status = "fidelity_failed_fallback"
-                        live.status = "needs_review"
-                        live.error_msg = f"fidelity review failed: {last_error}"
-                        if "fidelity_review_failed" not in live.quality_flags:
-                            live.quality_flags.append("fidelity_review_failed")
+                        keep_existing_after_fidelity_failure(position, last_error)
                         async with counter_lock:
                             failed_items += 1
 
@@ -1102,6 +1167,15 @@ class SubtitlePipeline:
         if guide_error is not None:
             logger.error("Build consistency guide failed: %s", guide_error)
             for entry in entries:
+                source_text = _get_source_text(entry, self.input_lang_code)
+                target_text = _get_target_text(entry, self.input_lang_code)
+                if _translation_is_usable(target_text, source_text, self.output_lang):
+                    self._mark_translation_recovered(entry)
+                    if "consistency_guide_unapplied" not in entry.quality_flags:
+                        entry.quality_flags.append("consistency_guide_unapplied")
+                    entry.stage_status = "consistency_guide_skipped_with_flags"
+                    continue
+
                 if "consistency_guide_failed" not in entry.quality_flags:
                     entry.quality_flags.append("consistency_guide_failed")
                 entry.status = "needs_review"
@@ -1149,15 +1223,13 @@ class SubtitlePipeline:
                     f"consistency invalid target id={snapshot.index}"
                 )
             live.optimized_lines = [target, source_text] if source_text else [target]
-            if live.status != "needs_review":
-                live.status = "done"
-                live.error_msg = ""
-            if "consistency_review_failed" in live.quality_flags:
-                live.quality_flags.remove("consistency_review_failed")
+            self._mark_translation_recovered(live)
+            for flag in ("consistency_review_failed", "consistency_review_unapplied"):
+                if flag in live.quality_flags:
+                    live.quality_flags.remove(flag)
             live.stage_status = (
                 "consistency_checked_with_flags"
-                if live.status == "needs_review" or live.quality_flags
-                else "consistency_checked"
+                if live.quality_flags else "consistency_checked"
             )
             return int(target != old_target)
 
@@ -1203,6 +1275,8 @@ class SubtitlePipeline:
                     )
                     validated: list[tuple[int, SubtitleEntry, str]] = []
                     for offset, snapshot in enumerate(batch):
+                        if self._is_source_identity_allowed(snapshot):
+                            continue
                         source_text = _get_source_text(snapshot, self.input_lang_code)
                         target = result_map.get(snapshot.index, "")
                         if not _translation_is_usable(
@@ -1226,6 +1300,8 @@ class SubtitlePipeline:
 
                     for offset, snapshot in enumerate(batch):
                         position = start + offset
+                        if self._is_source_identity_allowed(snapshot):
+                            continue
                         last_error: Exception = exc
                         recovered = False
                         for attempt in range(self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS):

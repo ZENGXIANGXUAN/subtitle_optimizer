@@ -49,15 +49,36 @@ def _strip_code_fences(value: str) -> str:
 def _parse_json(value: str):
     """Parse a model JSON response with conservative syntax repair.
 
-    Semantic repair is intentionally not attempted.  A malformed response must
-    fail loudly so the pipeline can mark a fallback instead of pretending that
-    an audit succeeded.
+    Semantic repair is intentionally not attempted.  We do, however, accept a
+    complete JSON value followed by unsolicited prose; this is a transport-
+    successful model response, not a reason to discard an entire subtitle
+    batch.
     """
     clean = _strip_code_fences(value)
     attempts = [clean]
     repaired = re.sub(r",\s*([}\]])", r"\1", clean)
     if repaired != clean:
         attempts.append(repaired)
+
+    # Some models omit only the final container character.  This is safe to
+    # repair when the response otherwise ends in the matching item type.
+    trimmed = repaired.rstrip()
+    if trimmed.startswith("[") and trimmed.endswith("}"):
+        attempts.append(trimmed + "]")
+    elif trimmed.startswith("{") and trimmed.endswith("]"):
+        attempts.append(trimmed + "}")
+
+    # json.loads rejects valid JSON followed by prose (``Extra data``).  Parse
+    # the first complete value instead, while still refusing malformed JSON.
+    decoder = json.JSONDecoder()
+    starts = [pos for pos in (clean.find("["), clean.find("{")) if pos >= 0]
+    if starts:
+        start = min(starts)
+        try:
+            data, _ = decoder.raw_decode(clean[start:])
+            return data
+        except json.JSONDecodeError:
+            pass
 
     # Some providers prepend prose despite the prompt.  Extract the outermost
     # JSON object/array only when both boundaries are unambiguous.
@@ -140,7 +161,7 @@ async def fidelity_review_batch(
         "因果/转折关系错误、数字/单位/人名/术语错误、指代错误。\n"
         "原译文正确时必须原样保留，不得为了文采改写，不得合并或跨条搬运信息。\n"
         "每个输入 id 必须返回一次。严格输出 JSON 数组，不要解释。\n"
-        f'格式：[{{"id":1,"tgt":"核对后的{output_prompt}译文","changed":false,"reason":""}}]'
+        f'格式：[{{"id":1,"tgt":"核对后的{output_prompt}译文"}}]'
     )
     if glossary:
         system += "\n\n【强制术语表】\n" + glossary
@@ -345,7 +366,7 @@ async def consistency_review_batch(
         "按钮名、产品名和明确的全篇风格冲突。\n"
         "没有冲突时必须原样返回 tgt；不得借机重新润色，不得改变信息，不得跨条搬运。\n"
         "每个输入id必须返回一次。严格输出JSON数组，不要解释。\n"
-        f'格式：[{{"id":1,"tgt":"最终{output_prompt}字幕","changed":false,"reason":""}}]'
+        f'格式：[{{"id":1,"tgt":"最终{output_prompt}字幕"}}]'
         f"\n\n【情境分析】\n{context}\n\n【一致性指南】\n{consistency_guide}"
     )
     user = "\n\n".join(references + ["【待检查字幕】\n" + json.dumps(payload, ensure_ascii=False)])

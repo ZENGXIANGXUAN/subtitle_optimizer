@@ -29,6 +29,7 @@ class NoWheelComboBox(QComboBox):
 # 导入业务层逻辑和界面辅助
 from core.models import SubtitleEntry, parse_srt, _format_subtitle_snapshot
 from core.client import MistralClient
+from core.pipeline import SubtitlePipeline
 from core.workers import (
     AnalysisResult,
     AnalysisWorker,
@@ -71,6 +72,9 @@ except ImportError:
 
 
 from core.workers import _format_glossary_prompt
+
+
+PIPELINE_MAX_CONCURRENCY = SubtitlePipeline.QUALITY_MAX_CONCURRENCY
 
 
 def glossary_column_labels(input_lang: str, output_lang: str) -> tuple[str, str]:
@@ -651,12 +655,16 @@ class MainWindow(QMainWindow):
         params_row.setSpacing(12)
 
         conc_wrap = QVBoxLayout()
-        conc_lbl = QLabel("并发数  (1 – 100)")
+        conc_lbl = QLabel(f"并发数  (1 – {PIPELINE_MAX_CONCURRENCY})")
         conc_lbl.setStyleSheet("color: #8a7b66; font-size: 11px;")
         conc_wrap.addWidget(conc_lbl)
         self.input_concurrency = QLineEdit("6")
-        self.input_concurrency.setPlaceholderText("1-12")
-        self.input_concurrency.setValidator(__import__('PyQt6.QtGui', fromlist=['QIntValidator']).QIntValidator(1, 100))
+        self.input_concurrency.setPlaceholderText(f"1-{PIPELINE_MAX_CONCURRENCY}")
+        self.input_concurrency.setValidator(
+            __import__('PyQt6.QtGui', fromlist=['QIntValidator']).QIntValidator(
+                1, PIPELINE_MAX_CONCURRENCY
+            )
+        )
         conc_wrap.addWidget(self.input_concurrency)
         params_row.addLayout(conc_wrap)
 
@@ -1058,7 +1066,10 @@ class MainWindow(QMainWindow):
             "client": self._get_client(),
             "out_dir": out_dir,
             "overwrite": self.chk_overwrite_batch.isChecked(),
-            "concurrency": max(1, min(100, int(self.input_concurrency.text() or "6"))),
+            "concurrency": max(
+                1,
+                min(PIPELINE_MAX_CONCURRENCY, int(self.input_concurrency.text() or "6")),
+            ),
             "batch_size": max(1, min(50, int(self.input_batch.text() or "5"))),
             "raw_glossary": self._glossary_to_text(),
             "files": list(self._batch_files),
@@ -1733,7 +1744,10 @@ class MainWindow(QMainWindow):
         if self._get_auto_glossary_text():
             self._log_auto_glossary_merge(self._get_auto_glossary_text())
 
-        concurrency = max(1, min(100, int(self.input_concurrency.text() or "6")))
+        concurrency = max(
+            1,
+            min(PIPELINE_MAX_CONCURRENCY, int(self.input_concurrency.text() or "6")),
+        )
         batch_size = max(1, min(50, int(self.input_batch.text() or "5")))
         seg_batch_size = max(10, min(30, int(self.input_batch.text() or "15")))
         glossary_prompt = self._get_merged_glossary_prompt(entries=self.entries)
@@ -2729,7 +2743,10 @@ class MainWindow(QMainWindow):
                     self.combo_model.setCurrentIndex(idx)
                 else:
                     self.combo_model.setCurrentText(saved_model)
-            self.input_concurrency.setText(str(cfg.get("concurrency", "6")))
+            configured_concurrency = int(cfg.get("concurrency", "6"))
+            self.input_concurrency.setText(
+                str(max(1, min(PIPELINE_MAX_CONCURRENCY, configured_concurrency)))
+            )
             self.input_batch.setText(str(cfg.get("batch_size", "5")))
             self.combo_original_line.setCurrentIndex(cfg.get("original_line", 1))  # 默认第2行
             source_layout = cfg.get("source_layout", LAYOUT_AUTO)

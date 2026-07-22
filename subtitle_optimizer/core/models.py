@@ -192,6 +192,28 @@ def _chinese_char_count(text: str) -> int:
     return sum(1 for char in text or "" if "一" <= char <= "鿿")
 
 
+def source_can_remain_untranslated(text: str) -> bool:
+    """Whether keeping source text is safer than inventing a translation.
+
+    This is deliberately limited to non-verbal ASR residue. Ordinary short
+    phrases still require a target-language translation.
+    """
+    source = (text or "").strip()
+    if not source:
+        return False
+    if re.fullmatch(r"[\d\s,，.。:：;；!?！？、-]+", source):
+        return True
+
+    normalized = source.casefold().strip(" .,!?:;，。！？：；")
+    tokens = re.findall(r"[a-z]+(?:-[a-z]+)?", normalized)
+    if not tokens or any(token != tokens[0] for token in tokens):
+        return False
+    return tokens[0] in {
+        "hmm", "uh", "um", "ah", "oh", "er", "huh", "mhm",
+        "uh-huh", "mm-hmm", "lulu",
+    }
+
+
 def _source_text_length(text: str, lang_code: str = "en") -> int:
     """获取原文文本长度（根据语言使用不同的计算方式）
     - 英文等拉丁语系：计算单词数
@@ -215,13 +237,15 @@ def _latin_word_count(text: str) -> int:
 
 
 def _translation_looks_incomplete(zh: str, en: str) -> bool:
-    """Conservative Chinese-target coverage check for English source subtitles.
+    """Return whether a target is structurally unusable for a Chinese output.
 
-    The old rule ignored every source shorter than 18 English words, which let
-    short untranslated cues such as ``Hi guys, part one...`` pass through as
-    completed.  For a Chinese target, a non-empty English source must produce a
-    target line containing Chinese characters, no matter how short the cue is.
-    The length-ratio check then catches obvious long-form shrinkage.
+    Character-count ratios cannot establish semantic coverage: Chinese
+    subtitles legitimately compress English discourse markers, repetitions,
+    and syntax.  Treating a short but Chinese target as a hard failure caused
+    the pipeline to discard valid model output and to retry the same cue in
+    every later stage.  Semantic omissions are handled by the model-backed
+    fidelity pass; this predicate is intentionally limited to empty output and
+    an English-only target for a translatable English source.
     """
     source = (en or "").strip()
     target = (zh or "").strip()
@@ -233,27 +257,15 @@ def _translation_looks_incomplete(zh: str, en: str) -> bool:
     en_words = _english_word_count(source)
     zh_chars = _chinese_char_count(target)
 
-    # Hard gate: English source translated into Chinese cannot remain
-    # English-only, even when the source cue is very short.
-    if en_words > 0 and zh_chars == 0:
-        return True
+    # Non-verbal/numeric source cues need no Chinese characters in their
+    # faithful output (for example ``1, 2, 3`` or repeated vocal noise).
+    if en_words == 0 or source_can_remain_untranslated(source):
+        return False
 
-    # If the target is mostly copied Latin text with barely any Chinese, treat
-    # it as suspicious. This catches source leakage such as ``Okay.`` or full
-    # English lines being used as fallback.
-    latin_words_in_target = _latin_word_count(target)
-    if en_words >= 3 and zh_chars <= 1 and latin_words_in_target >= max(2, en_words // 2):
-        return True
-
-    # Short cues still need a small amount of Chinese. Keep this deliberately
-    # lenient so single-word terms or fillers are not over-rejected.
-    if en_words <= 3:
-        min_chars = 1
-    elif en_words < 18:
-        min_chars = max(2, int(en_words * 0.35))
-    else:
-        min_chars = max(12, int(en_words * 0.45))
-    return zh_chars < min_chars
+    # A substantive English source must not be accepted as an English-only
+    # target.  Once a target contains Chinese, do not guess at semantic
+    # completeness from its length; the fidelity pass evaluates that directly.
+    return zh_chars == 0
 
 
 def _merge_candidate_is_safe(batch: list[SubtitleEntry], item: dict) -> bool:

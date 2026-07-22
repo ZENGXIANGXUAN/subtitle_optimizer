@@ -26,6 +26,12 @@ def _entry(index: int, target: str = "target", source: str = "source") -> Subtit
     return entry
 
 
+def test_pipeline_honors_sixteen_requested_concurrent_requests() -> None:
+    pipeline = SubtitlePipeline(client=object(), concurrency=70, batch_size=5)
+
+    assert pipeline.concurrency == 16
+
+
 class _RecordingPipeline(SubtitlePipeline):
     """Network-free pipeline double that exercises only execute orchestration."""
 

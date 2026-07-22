@@ -16,6 +16,7 @@ from core.models import (
     _translation_looks_incomplete,
     _english_word_count,
     _chinese_char_count,
+    source_can_remain_untranslated,
     _srt_time_to_ms,
     _ms_to_srt_time,
     _source_text_length,
@@ -1304,10 +1305,15 @@ def _translation_is_usable(translation: str, source_text: str, output_lang: str 
         or translation.lower() in {"none", "null", "nan"}
         or translation in {"-", "\u2014", "\u65e0"}
     ):
-        return False
+        return source_can_remain_untranslated(source_text)
 
     output_lang_code = LANGUAGE_MAP.get(output_lang, ("zh", output_lang))[0]
     if output_lang_code == "zh":
+        # Non-verbal/numeric source cues can legitimately remain without CJK
+        # characters.  Handle them before the English-only target guard so a
+        # normalized response such as ``Lulu，Lulu`` is not discarded.
+        if source_can_remain_untranslated(source_text):
+            return True
         # Chinese-target hard gate: a non-empty English source cannot be accepted
         # as translated unless the target line contains Chinese characters and
         # passes the conservative coverage check.
@@ -1363,6 +1369,8 @@ async def _translate_batch_with_repair(
             translation = retry_map.get(entry.index, "")
 
         translation = strip_annotation(str(translation or "").strip())
+        if not translation and source_can_remain_untranslated(source_text):
+            translation = source_text
         if _translation_is_usable(translation, source_text, output_lang):
             result[entry.index] = translation
         else:
@@ -2669,6 +2677,9 @@ class BatchWorker(BaseWorker):
                 )
                 entries = run_result.entries
 
+                if self._cancelled:
+                    break
+
                 if not run_result.quality_report.passed:
                     previews = [
                         f"#{issue.entry_index or '?'} {issue.kind}"
@@ -2677,9 +2688,6 @@ class BatchWorker(BaseWorker):
                     raise RuntimeError(
                         "质量门禁未通过，已停止导出：" + ", ".join(previews)
                     )
-
-                if self._cancelled:
-                    break
 
                 out_path = self._get_out_path(working_path)
                 blocks = [e.to_srt_block(use_optimized=True, target_first=self.target_first) for e in entries]
