@@ -30,9 +30,9 @@ class QualityGateReport:
 
     def summary(self) -> str:
         return (
-            "质量门禁通过"
+            "质量检查未发现关键提示"
             if self.passed
-            else f"质量门禁未通过：{len(self.critical_issues)} 个关键问题"
+            else f"质量检查提示：{len(self.critical_issues)} 个关键项"
         )
 
 
@@ -41,4 +41,3 @@ class PipelineRunResult:
     entries: list[SubtitleEntry]
     lint_report: Any = None
     quality_report: QualityGateReport = field(default_factory=QualityGateReport)
-

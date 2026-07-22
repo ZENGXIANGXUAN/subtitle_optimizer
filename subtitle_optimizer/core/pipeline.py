@@ -875,8 +875,13 @@ class SubtitlePipeline:
 
         quality_report = evaluate_quality_gate(entries, self.last_lint_report)
         if on_log:
-            prefix = "  ✅" if quality_report.passed else "  ❌"
-            on_log(f"{prefix} {quality_report.summary()}")
+            if quality_report.passed:
+                on_log("  ✅ 字幕质检未发现关键提示")
+            else:
+                on_log(
+                    f"  ⚠️ 字幕质检提示："
+                    f"{len(quality_report.critical_issues)} 个关键项（不阻止导出）"
+                )
         return PipelineRunResult(
             entries=entries,
             lint_report=self.last_lint_report,

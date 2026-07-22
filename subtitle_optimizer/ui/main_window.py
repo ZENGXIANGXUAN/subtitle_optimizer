@@ -1843,11 +1843,11 @@ class MainWindow(QMainWindow):
             1 for entry in self.entries if entry.status in {"error", "needs_review"}
         )
         if result.quality_report.passed:
-            self._log(f"✅ 统一任务完成：{done} 条，质量门禁通过")
+            self._log(f"✅ 统一任务完成：{done} 条，质检未发现关键提示")
         else:
             self._log(
-                f"❌ 统一任务完成但未通过质量门禁："
-                f"{len(result.quality_report.critical_issues)} 个关键问题"
+                f"⚠️ 统一任务完成：{done} 条；质检提示 "
+                f"{len(result.quality_report.critical_issues)} 个关键项（不阻止导出）"
             )
         self.status_bar.showMessage(
             f"处理完成：{len(self.entries)} 条，待复核 {needs_review} 条"
@@ -2278,17 +2278,6 @@ class MainWindow(QMainWindow):
             msg = "没有可导出的字幕"
             logger.warning(msg)
             return QMessageBox.warning(self, "提示", msg)
-        if (
-            self._last_quality_report is not None
-            and not self._last_quality_report.passed
-        ):
-            count = len(self._last_quality_report.critical_issues)
-            msg = (
-                f"质量门禁未通过（{count} 个关键问题），已阻止导出。"
-                "请重新执行；失败条目会在日志中标出。"
-            )
-            logger.warning(msg)
-            return QMessageBox.warning(self, "质量门禁未通过", msg)
         has_optimized = sum(1 for e in self.entries if e.optimized_lines) > 0
         has_segmented = any(e.original_lines is not None for e in self.entries)
         if not has_optimized and not has_segmented:
@@ -2375,10 +2364,7 @@ class MainWindow(QMainWindow):
             self.btn_optimize.setObjectName("btn_primary")
             # 停止按钮：暗淡禁用
             self.btn_stop.setEnabled(False)
-            self.btn_export.setEnabled(
-                self._last_quality_report is None
-                or self._last_quality_report.passed
-            )
+            self.btn_export.setEnabled(True)
             self.btn_stop.setStyleSheet("""
                 QPushButton {
                     background: transparent;

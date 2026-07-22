@@ -83,6 +83,7 @@ def test_execute_has_one_stage_contract_and_returns_the_complete_final_result() 
     )
 
     events: list[tuple] = []
+    logs: list[str] = []
     result = asyncio.run(
         pipeline.execute(
             initial_entries,
@@ -96,6 +97,7 @@ def test_execute_has_one_stage_contract_and_returns_the_complete_final_result() 
             on_snapshot=lambda stage, entries, optimized: events.append(
                 ("snapshot", stage, entries, optimized)
             ),
+            on_log=logs.append,
         )
     )
 
@@ -126,6 +128,7 @@ def test_execute_has_one_stage_contract_and_returns_the_complete_final_result() 
     assert [issue.kind for issue in result.quality_report.critical_issues] == [
         "incomplete_bilingual"
     ]
+    assert logs == ["  ⚠️ 字幕质检提示：1 个关键项（不阻止导出）"]
 
 
 def test_execute_restores_translation_batch_size_when_segmentation_fails() -> None:

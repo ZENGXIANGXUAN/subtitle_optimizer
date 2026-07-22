@@ -2685,8 +2685,8 @@ class BatchWorker(BaseWorker):
                         f"#{issue.entry_index or '?'} {issue.kind}"
                         for issue in run_result.quality_report.critical_issues[:12]
                     ]
-                    raise RuntimeError(
-                        "质量门禁未通过，已停止导出：" + ", ".join(previews)
+                    self.log.emit(
+                        "  ⚠️ 字幕质检提示（不阻止导出）：" + ", ".join(previews)
                     )
 
                 out_path = self._get_out_path(working_path)

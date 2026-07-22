@@ -44,3 +44,16 @@
 已新增 Lulu、`1, 2, 3` 以及英译法布局的 linter + quality gate 回归测试。直接对本次 `AFTER_OPTIMIZE` 快照重跑 lint 后：1860 条、`incomplete=[]`、质量门禁通过且无关键问题。全量测试：`80 passed, 3 subtests passed`。
 
 状态：DONE（已修复并验证）。
+
+## 最终导出策略调整（2026-07-22）
+
+用户明确要求移除最终质检门禁：质量检查不能再阻止字幕生成或导出。
+
+- `core/workers.py`：批处理保留关键项预览日志，但不再抛出异常；随后仍写出 SRT。
+- `ui/main_window.py`：删除单文件导出前的拦截弹窗，并在处理结束后始终启用导出按钮。
+- `core/pipeline.py` 与 `core/task_models.py`：将“门禁通过/失败”文案改为非阻断的质量检查提示。
+- `tests/test_unified_pipeline_api.py`：覆盖含关键项时返回结果并记录“不阻止导出”提示的执行路径。
+
+验证：全量测试 `80 passed, 3 subtests passed`；代码搜索确认没有残留的“质量门禁未通过”“已停止导出”或按 `quality_report.passed` 禁用导出的执行路径。
+
+状态：DONE（质量检查保留为提示，导出永不由它阻断）。
