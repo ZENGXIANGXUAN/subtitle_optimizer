@@ -15,9 +15,6 @@ from core.segmenter import _get_source_text
 from core.source_normalization import join_source_lines
 
 
-_SAFE_BOUNDARY_RE = re.compile(r"[，。！？；：、,.!?;:\s]")
-
-
 def cue_snapshot(entry: SubtitleEntry, input_lang_code: str = "en") -> SourceCueSnapshot:
     return SourceCueSnapshot(
         index=entry.index,
@@ -65,103 +62,6 @@ def source_cue_signature(cues: Iterable[SourceCueSnapshot]) -> tuple[tuple, ...]
     )
 
 
-def _visible_target_units(text: str, output_lang_code: str) -> int:
-    value = (text or "").strip()
-    if not value:
-        return 0
-    if (output_lang_code or "").lower() in {"zh", "ja", "ko"}:
-        return len([char for char in value if not char.isspace()])
-    words = re.findall(r"\w+(?:['’-]\w+)?", value, flags=re.UNICODE)
-    return len(words) if words else len(value)
-
-
-def _source_weight(text: str, input_lang_code: str) -> int:
-    value = (text or "").strip()
-    if not value:
-        return 1
-    if (input_lang_code or "").lower() in {"zh", "ja", "ko"}:
-        return max(1, len([char for char in value if not char.isspace()]))
-    return max(1, len(re.findall(r"\w+(?:['’-]\w+)?", value, flags=re.UNICODE)))
-
-
-def _best_cut(text: str, expected: int, lower: int, upper: int) -> int:
-    if lower >= upper:
-        return lower
-    candidates = [
-        position
-        for position in range(lower, upper + 1)
-        if 0 < position < len(text) and _SAFE_BOUNDARY_RE.match(text[position - 1])
-    ]
-    if not candidates:
-        return min(max(expected, lower), upper)
-    return min(candidates, key=lambda position: (abs(position - expected), position))
-
-
-def split_target_by_weights(text: str, weights: list[int]) -> list[str]:
-    """Split target text monotonically while preserving all non-space content."""
-    value = str(text or "").strip()
-    if not weights:
-        return []
-    if len(weights) == 1:
-        return [value]
-    if not value:
-        return [""] * len(weights)
-
-    positive = [max(1, int(weight or 1)) for weight in weights]
-    count = len(positive)
-    length = len(value)
-    total = sum(positive)
-    cuts: list[int] = []
-    consumed_weight = 0
-    previous = 0
-    for index, weight in enumerate(positive[:-1]):
-        consumed_weight += weight
-        expected = round(length * consumed_weight / total)
-        remaining_parts = count - index - 1
-        # When possible, leave at least one character for every remaining cue.
-        lower = previous + (1 if length >= count else 0)
-        upper = length - (remaining_parts if length >= count else 0)
-        cut = _best_cut(value, expected, min(lower, length), max(min(upper, length), min(lower, length)))
-        cuts.append(cut)
-        previous = cut
-
-    boundaries = [0] + cuts + [length]
-    return [value[boundaries[i]:boundaries[i + 1]].strip() for i in range(count)]
-
-
-def _group_cues(cues: list[SourceCueSnapshot], group_count: int, input_lang_code: str) -> list[list[SourceCueSnapshot]]:
-    if group_count >= len(cues):
-        return [[cue] for cue in cues]
-    if group_count <= 1:
-        return [list(cues)]
-
-    weights = [_source_weight(cue.source_text, input_lang_code) for cue in cues]
-    total = sum(weights)
-    groups: list[list[SourceCueSnapshot]] = []
-    current: list[SourceCueSnapshot] = []
-    consumed = 0
-    next_threshold_index = 1
-    for position, (cue, weight) in enumerate(zip(cues, weights)):
-        current.append(cue)
-        consumed += weight
-        remaining_cues = len(cues) - position - 1
-        remaining_groups = group_count - len(groups) - 1
-        threshold = total * next_threshold_index / group_count
-        if (
-            len(groups) < group_count - 1
-            and consumed >= threshold
-            and remaining_cues >= remaining_groups
-        ):
-            groups.append(current)
-            current = []
-            next_threshold_index += 1
-    if current:
-        groups.append(current)
-    while len(groups) > group_count:
-        groups[-2].extend(groups.pop())
-    return groups
-
-
 def _effective_lines(entry: SubtitleEntry, use_optimized: bool) -> list[str]:
     values = entry.optimized_lines if use_optimized and entry.optimized_lines else entry.lines
     return [str(value).strip() for value in values if str(value).strip()]
@@ -181,7 +81,15 @@ def reflow_semantic_entries(
     output_lang_code: str = "zh",
     use_optimized: bool = True,
 ) -> list[SubtitleEntry]:
-    """Flow sentence-level translations back onto immutable source cue timing."""
+    """Place a complete semantic translation onto its immutable cue span.
+
+    A translation can cover several source cues, but character length cannot
+    establish which target characters belong to each cue.  Do not split the
+    target without an explicit validated cue-to-target mapping: emitting the
+    complete target over the combined span is safer than producing a name,
+    number, or punctuation as a false translation.
+    """
+    _ = output_lang_code  # Retained for the stable public API and future mappings.
     result: list[SubtitleEntry] = []
     for entry in entries:
         lines = _effective_lines(entry, use_optimized)
@@ -204,37 +112,27 @@ def reflow_semantic_entries(
             result.append(clone)
             continue
 
-        target_units = _visible_target_units(target_text, output_lang_code)
-        group_count = min(len(cues), max(1, target_units))
-        cue_groups = _group_cues(cues, group_count, input_lang_code)
-        group_weights = [
-            sum(_source_weight(cue.source_text, input_lang_code) for cue in group)
-            for group in cue_groups
-        ]
-        target_parts = split_target_by_weights(target_text, group_weights)
-
-        for group, target_part in zip(cue_groups, target_parts):
-            source_text = join_source_lines(
-                [cue.source_text for cue in group],
-                input_lang_code,
-            )
-            source_ids: list[int] = []
-            original_lines: list[str] = []
-            for cue in group:
-                source_ids.extend(cue.source_indexes or (cue.index,))
-                original_lines.extend(cue.original_lines or (cue.source_text,))
-            flowed = SubtitleEntry(
-                index=group[0].index,
-                start_time=group[0].start_time,
-                end_time=group[-1].end_time,
-                lines=[target_part, source_text] if source_text else [target_part],
-            )
-            flowed.optimized_lines = list(flowed.lines)
-            flowed.original_lines = original_lines or [source_text]
-            flowed.source_indexes = list(dict.fromkeys(source_ids))
-            flowed.source_cues = list(group)
-            _copy_quality_metadata(entry, flowed)
-            result.append(flowed)
+        source_text = join_source_lines(
+            [cue.source_text for cue in cues],
+            input_lang_code,
+        )
+        source_ids: list[int] = []
+        original_lines: list[str] = []
+        for cue in cues:
+            source_ids.extend(cue.source_indexes or (cue.index,))
+            original_lines.extend(cue.original_lines or (cue.source_text,))
+        flowed = SubtitleEntry(
+            index=cues[0].index,
+            start_time=cues[0].start_time,
+            end_time=cues[-1].end_time,
+            lines=[target_text, source_text] if source_text else [target_text],
+        )
+        flowed.optimized_lines = list(flowed.lines)
+        flowed.original_lines = original_lines or [source_text]
+        flowed.source_indexes = list(dict.fromkeys(source_ids))
+        flowed.source_cues = cues
+        _copy_quality_metadata(entry, flowed)
+        result.append(flowed)
 
     return result
 
