@@ -558,10 +558,6 @@ def _infer_bilingual_mode(
     return bilingual_like >= max(1, int(len(sample) * 0.6))
 
 
-def _has_chinese(text: str) -> bool:
-    return any("一" <= char <= "鿿" for char in text or "")
-
-
 def _detect_remaining_issues(
     entries: list[SubtitleEntry],
     report: SrtLintReport,
@@ -589,20 +585,12 @@ def _detect_remaining_issues(
                 )
             )
 
-        # Chinese-target hard check: in the canonical bilingual layout, line 1
-        # must be the Chinese translation. This prevents English-only fallback
-        # lines from being accepted just because there are two lines.
-        if expect_bilingual and output_lang_code == "zh" and not source_identity_allowed:
-            target_line = lines[0] if lines else ""
-            if not _has_chinese(target_line):
-                preview = target_line[:80] if target_line else "空译文"
-                report.incomplete_bilingual.append(
-                    SrtLintIssue(
-                        "missing_chinese_target",
-                        entry.index,
-                        f"第一行缺少中文译文：{preview}",
-                    )
-                )
+        # The first content line is the configured target-language line, not a
+        # Chinese-only field.  Script detection cannot validate same-script
+        # pairs such as English -> French, and it incorrectly rejects faithful
+        # numeric or non-verbal targets.  Target-language validity belongs to
+        # the translation and fidelity stages; this final pass only enforces
+        # positional bilingual structure.
 
         duration_ms = _duration_ms(entry)
         if duration_ms > LONG_DURATION_MS:

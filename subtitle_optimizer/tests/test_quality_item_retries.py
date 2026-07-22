@@ -338,6 +338,58 @@ def test_nonverbal_source_identity_does_not_fail_bilingual_lint() -> None:
     assert evaluate_quality_gate(finalized, lint_report).passed
 
 
+def test_bilingual_nonverbal_targets_do_not_require_chinese_characters() -> None:
+    entries = [
+        SubtitleEntry(
+            index=1,
+            start_time="00:00:01,000",
+            end_time="00:00:01,900",
+            lines=["Lulu，Lulu，Lulu。", "Lulu, lulu, lulu, lulu, lulu."],
+        ),
+        SubtitleEntry(
+            index=2,
+            start_time="00:00:02,000",
+            end_time="00:00:02,900",
+            lines=["1、2、3。", "1, 2, 3."],
+        ),
+    ]
+    for entry in entries:
+        entry.optimized_lines = list(entry.lines)
+
+    finalized, lint_report = finalize_entries(
+        entries,
+        input_lang_code="en",
+        output_lang_code="zh",
+    )
+
+    assert [entry.lines for entry in finalized] == [
+        ["Lulu，Lulu，Lulu。", "Lulu, lulu, lulu, lulu, lulu."],
+        ["1、2、3。", "1, 2, 3."],
+    ]
+    assert lint_report.incomplete_bilingual == []
+    assert evaluate_quality_gate(finalized, lint_report).passed
+
+
+def test_lint_treats_first_content_line_as_the_configured_target_language() -> None:
+    entry = SubtitleEntry(
+        index=1,
+        start_time="00:00:01,000",
+        end_time="00:00:01,900",
+        lines=["Bonjour tout le monde.", "Hello everyone."],
+    )
+    entry.optimized_lines = list(entry.lines)
+
+    finalized, lint_report = finalize_entries(
+        [entry],
+        input_lang_code="en",
+        output_lang_code="fr",
+    )
+
+    assert finalized[0].lines == ["Bonjour tout le monde.", "Hello everyone."]
+    assert lint_report.incomplete_bilingual == []
+    assert evaluate_quality_gate(finalized, lint_report).passed
+
+
 def test_substantive_source_fallback_is_preserved_and_exportable() -> None:
     source = "A substantive source cue remains when the translation API returns nothing."
     entry = SubtitleEntry(
@@ -371,6 +423,11 @@ def test_only_nonverbal_source_can_bypass_the_chinese_translation_gate() -> None
     assert _translation_is_usable("", "1, 2, 3.", "中文")
     assert _translation_is_usable("Lulu", "Lulu", "中文")
     assert _translation_is_usable("", "Lulu, lulu, lulu, lulu, lulu.", "中文")
+    assert not _translation_is_usable(
+        "Okay, this is meaningful speech.",
+        "Okay, this is meaningful speech.",
+        "中文",
+    )
     assert not _translation_is_usable("", "Okay, this is meaningful speech.", "中文")
 
 
