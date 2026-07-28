@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# 运行时产物
+# 自 2026-07-26 起 utils.log_root() 默认写到 ~/.subtitle_optimizer/logs，
+# 不再污染源码目录。这里保留 logs/ 是为了忽略历史遗留目录。
+logs/
+*.log
+
+# Claude Code 的临时 worktree。必须忽略：里面是整个仓库的副本，
+# 被 pytest 收集会造成同名测试模块冲突，整个测试套件在收集阶段报错。
+.claude/worktrees/
+
+# 编辑器备份与打包快照
+*.bak
+*.bak*
+*.zip
+_backups/
+
+# 本地配置与密钥
+.env
+.idea/

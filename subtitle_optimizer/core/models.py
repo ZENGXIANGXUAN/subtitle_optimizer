@@ -214,6 +214,25 @@ def source_can_remain_untranslated(text: str) -> bool:
     }
 
 
+def target_echoes_source(target: str, source: str) -> bool:
+    """Whether the target is just the source text handed back unchanged.
+
+    This is the language-agnostic replacement for "the target contains no
+    Chinese characters".  A script test cannot work for the nine non-Chinese
+    output languages and cannot separate same-script pairs such as
+    English -> French, but *no* language pair translates a sentence into a
+    byte-identical sentence.  Comparison ignores case and line wrapping so a
+    re-wrapped echo is still caught; anything subtler is left to the
+    model-backed fidelity pass.
+
+    Callers must check :func:`source_can_remain_untranslated` first: a
+    non-verbal cue such as ``Hmm`` is legitimately identical on both sides.
+    """
+    left = re.sub(r"\s+", " ", str(target or "")).strip().casefold()
+    right = re.sub(r"\s+", " ", str(source or "")).strip().casefold()
+    return bool(left) and left == right
+
+
 def _source_text_length(text: str, lang_code: str = "en") -> int:
     """获取原文文本长度（根据语言使用不同的计算方式）
     - 英文等拉丁语系：计算单词数

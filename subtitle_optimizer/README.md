@@ -133,7 +133,17 @@ if not result.quality_report.passed:
 
 ## 日志
 
-日志文件按日期写入 `logs/subtitle_optimizer_YYYYMMDD.log`，记录 API 请求详情、错误堆栈和处理阶段耗时。
+日志写在**源码目录之外**：`~/.subtitle_optimizer/logs/YYYY-MM-DD/`，启动时会在日志里打印实际路径。
+每天一个目录，包含 `subtitle_optimizer.log`（API 请求详情、错误堆栈、阶段耗时）和各阶段 SRT 快照。
+
+- 单个日志文件超过 10 MB 自动轮转，最多保留 3 份备份
+- 超过 30 天的日期目录在启动时自动清理（只删 `YYYY-MM-DD` 格式的目录，其他文件不动）
+
+| 环境变量 | 作用 | 默认 |
+|----------|------|------|
+| `SUBTITLE_OPTIMIZER_LOG_DIR` | 自定义日志根目录 | `~/.subtitle_optimizer/logs` |
+| `SUBTITLE_OPTIMIZER_PHASE_SNAPSHOTS` | 设为 `0` 关闭各阶段 SRT 快照 | 开启 |
+| `SUBTITLE_OPTIMIZER_DEBUG_REQUESTS` | 设为 `1` 转储术语统一器请求体 | 关闭 |
 
 ## 许可证
 

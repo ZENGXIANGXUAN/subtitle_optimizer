@@ -17,10 +17,10 @@ from core.models import (
     _english_word_count,
     _chinese_char_count,
     source_can_remain_untranslated,
+    target_echoes_source,
     _srt_time_to_ms,
     _ms_to_srt_time,
     _source_text_length,
-    verify_source_integrity,
 )
 from core.segmenter import _get_source_text, _get_target_text
 from core.source_normalization import LAYOUT_AUTO, normalize_source_entries
@@ -38,9 +38,11 @@ from core.batch_glossary import (
     BatchGlossarySummary,
     GlossaryCandidate,
     GlossaryFileFailure,
+    batch_glossary_debug_requests_enabled,
     batch_glossary_review_reasoning_options,
     batch_glossary_reasoning_options,
     batch_glossary_unifier_candidate_limit,
+    batch_glossary_unifier_concurrency_limit,
     batch_glossary_unifier_timeout_seconds,
     filter_human_review_glossary_candidates,
     is_low_value_glossary_source,
@@ -200,6 +202,9 @@ def _llm_merge_group_is_safe(
     if positions != list(range(min(positions), max(positions) + 1)):
         return False
 
+    # Unverified cue mappings deliberately do not reflow a semantic target
+    # onto individual cues. The merged span is therefore also the display span
+    # in the normal pipeline and must remain subtitle-sized.
     start_ms = _srt_time_to_ms(entries[0].start_time)
     end_ms = _srt_time_to_ms(entries[-1].end_time)
     if end_ms - start_ms > MAX_LLM_MERGE_TIMESPAN_MS:
@@ -217,7 +222,48 @@ def _llm_merge_group_is_safe(
     return merged_length <= MAX_LLM_MERGE_SOURCE_LENGTH
 
 
-def filter_glossary_by_entries(raw_glossary: str, entries: list[SubtitleEntry]) -> str:
+SHORT_LATIN_GLOSSARY_SOURCE_LENGTH = 3
+
+
+def glossary_source_appears(source: str, haystack_lower: str, lang_code: str = "en") -> bool:
+    """Whether a glossary source term genuinely occurs in the subtitle text.
+
+    This used to be a bare ``src in all_text`` substring test.  Every match it
+    produced became a *mandatory* translation rule in every downstream prompt
+    ("必须严格统一翻译为...绝不允许替换"), so a spurious match actively corrupts
+    the output.  Measured on a NASA physics video against a futures-trading
+    glossary, 8 of 11 "matched" terms had zero whole-word occurrences:
+    ``he`` matched inside "the", ``dom`` inside "random", ``ratio`` inside
+    "acceleration", ``retest`` inside "retesting" -- and that last one did
+    reach the output as 反复回测 ("backtesting") for "testing and retesting".
+    """
+    src = (source or "").strip()
+    if not src:
+        return False
+    lowered = src.lower()
+
+    if (lang_code or "").lower() in ("zh", "ja", "ko"):
+        # No word boundaries exist in these scripts, so substring matching is
+        # the only option; require two characters because single-character
+        # sources match almost any text.
+        return len(lowered) >= 2 and lowered in haystack_lower
+
+    if re.search(rf"(?<!\w){re.escape(lowered)}(?!\w)", haystack_lower) is None:
+        return False
+
+    # A very short Latin source (R, HE, sim) is usually an abbreviation. Its
+    # lowercase form collides with ordinary words, so require the original
+    # casing to appear as written.
+    if len(src) <= SHORT_LATIN_GLOSSARY_SOURCE_LENGTH and src.lower() != src:
+        return False
+    return True
+
+
+def filter_glossary_by_entries(
+    raw_glossary: str,
+    entries: list[SubtitleEntry],
+    input_lang_code: str = "en",
+) -> str:
     """过滤术语表：只保留字幕原文中实际出现的术语源词（大小写不敏感）。"""
     if not raw_glossary or not entries:
         return raw_glossary
@@ -231,8 +277,8 @@ def filter_glossary_by_entries(raw_glossary: str, entries: list[SubtitleEntry]) 
             continue
         for sep in ("->", "→"):
             if sep in line_s:
-                src = line_s.split(sep, 1)[0].strip().lower()
-                if src and src in all_text:
+                src = line_s.split(sep, 1)[0].strip()
+                if glossary_source_appears(src, all_text, input_lang_code):
                     kept.append(line_s)
                 break
         else:
@@ -252,12 +298,29 @@ def _format_glossary_prompt(raw: str) -> str:
             if sep in line:
                 parts = line.split(sep, 1)
                 if parts[0].strip() and parts[1].strip():
-                    pairs.append(f'"{parts[0].strip()}" 必须译为 "{parts[1].strip()}"')
+                    pairs.append(f'"{parts[0].strip()}" → "{parts[1].strip()}"')
                 break
     if not pairs:
         return ""
-    return "★ 【强制术语表】遇到以下英文专业词汇，必须严格统一翻译为对应中文，绝不允许替换为同义词或意译：\n" + "\n".join(
-        f"  - {p}" for p in pairs) + "\n"
+    # The glossary is matched by word form, not by meaning, so a user's
+    # domain glossary can name ordinary polysemous words. Observed on a NASA
+    # physics video carrying a futures-trading glossary: "resistance" was
+    # force-translated as 阻力位 (a chart level) inside "the resistance of an
+    # object to motion", and "structure" as 价格结构 (price structure) inside
+    # "internal systems and structures". The old wording ("必须严格统一翻译…
+    # 绝不允许替换") left no room to notice the sense was wrong, so the model
+    # slot-filled the term into sentences where it is not even idiomatic.
+    return (
+        "★ 【强制术语表】以下词汇若在当前句中确为该专业含义，必须统一使用指定译法，"
+        "不得改用同义词或自行意译：\n"
+        + "\n".join(f"  - {p}" for p in pairs)
+        + "\n\n"
+        "【术语适用性判断】术语表按词形匹配生成，可能包含在本片语境中并非该专业含义的词。\n"
+        "使用前先判断：该词在当前句子里的实际含义，是否就是术语表设定的那个专业含义？\n"
+        "  - 是 → 必须使用指定译法，全文保持一致\n"
+        "  - 否（属于该词的日常义或其他领域义）→ 按当前语境正常翻译，不要套用术语表\n"
+        "判断依据是原文句子本身和阶段一情境分析，不是词形是否相同。\n"
+    )
 
 
 def _parse_glossary_lines(raw: str) -> list[tuple[str, str]]:
@@ -301,6 +364,13 @@ def _term_rules_to_glossary_text(term_rules) -> str:
 
         key = source.casefold()
         if not source or not target or key in seen or is_low_value_glossary_source(source):
+            continue
+        # Drop identity mappings. They carry no translation information -- their
+        # only effect is to pin the exact spelling as a mandatory term that the
+        # fidelity and consistency passes are told never to change. When the
+        # spelling came from a mis-heard transcript ("PataBort 1" for "Pad Abort
+        # 1"), that turns an upstream ASR error into a protected constraint.
+        if key == target.casefold():
             continue
         seen.add(key)
         lines.append(f"{source}->{target}")
@@ -1029,16 +1099,27 @@ async def _translate_batch_impl(
     prev_ctx: list[SubtitleEntry] | None = None,
     next_ctx: list[SubtitleEntry] | None = None,
     include_context_targets: bool = True,
-) -> dict[int, str]:
-    """共享：翻译一批字幕，返回 {index: tgt}。失败返回空字典。"""
+    capture_cue_targets: bool = False,
+) -> dict[int, str] | tuple[dict[int, str], dict[int, dict[int, str]]]:
+    """Translate a batch and optionally retain explicit semantic cue mappings."""
     # 获取输入语言代码，用于获取正确的原文文本
     input_lang_code = LANGUAGE_MAP.get(input_lang, ("en", input_lang))[0]
     # 转换为 prompt 使用的语言名称
     input_lang_prompt = _get_prompt_lang(input_lang)
     output_lang_prompt = _get_prompt_lang(output_lang)
-    items_json = json.dumps([
-        {"id": e.index, "src": _get_source_text(e, input_lang_code)} for e in batch
-    ], ensure_ascii=False)
+    items = []
+    for entry in batch:
+        item = {"id": entry.index, "src": _get_source_text(entry, input_lang_code)}
+        # A merged entry is a translation-only semantic unit.  Give the model
+        # immutable source cue ids so it can make an explicit mapping rather
+        # than leaving reflow to guess from character positions afterwards.
+        if len(entry.source_cues) > 1:
+            item["source_cues"] = [
+                {"id": cue.index, "src": cue.source_text}
+                for cue in entry.source_cues
+            ]
+        items.append(item)
+    items_json = json.dumps(items, ensure_ascii=False)
 
     system_content = (
         f"你是专业字幕翻译师。\n"
@@ -1083,6 +1164,13 @@ async def _translate_batch_impl(
         "参考区只用于理解，不得翻译参考区条目，不得把参考区内容提前或滞后搬进当前条目。\n"
         "每条只翻译自己的 src；如果 src 是半句，就按半句翻译，保持可与上下文衔接。\n\n"
 
+        "6a.【语义单元回流】\n"
+        "若输入项包含 source_cues，它的 src 是由多条原始时间 cue 组成的完整语义单元。"
+        "先完整理解并翻译 src；同时必须按 source_cues 中的每个 id 返回对应的 cue_targets。\n"
+        "cue_targets 必须覆盖每个 source cue 一次且仅一次，保持原顺序；不得按字符数硬切、"
+        "不得遗漏、重复或跨 cue 搬运信息。每个 cue 的 tgt 都必须可以独立显示。\n"
+        "该项的 tgt 仍须给出 src 的完整译文，用作映射校验失败时的安全回退。\n\n"
+
         "7.【字幕可读性】\n"
         "译文应适合屏幕阅读，尽量短句、清楚、顺口。\n"
         "不要为了文采拉长句子；不要输出解释性长句。\n\n"
@@ -1091,13 +1179,16 @@ async def _translate_batch_impl(
         "严格返回 JSON，不加任何解释。\n"
         "不得合并条目，输入几条必须返回几条，id 与输入一一对应。\n"
         "每条必须有 tgt 字段；若 src 为空或仅含空白，tgt 也返回空字符串。\n\n"
+        "包含 source_cues 的输入项还必须返回 cue_targets；不包含时不要返回 cue_targets。\n\n"
 
         "9.【严禁】\n"
         "不得输出 Markdown。\n"
         "不得输出解释、注释、括号说明、译者说明。\n"
         "不得输出多个候选译文。\n\n"
 
-        f'返回格式：[{{"id":1,"tgt":"{output_lang_prompt}译文"}}]'
+        f'普通条目格式：[{{"id":1,"tgt":"{output_lang_prompt}译文"}}]\n'
+        f'语义单元格式：[{{"id":1,"tgt":"完整{output_lang_prompt}译文",'
+        f'"cue_targets":[{{"id":101,"tgt":"该原始cue的{output_lang_prompt}译文"}}]}}]'
     )
     if glossary:
         system_content += (
@@ -1168,9 +1259,21 @@ async def _translate_batch_impl(
                 data = json.loads(clean)
             except json.JSONDecodeError:
                 logger.error(f"JSON修复失败，原始响应: {response[:200]}")
-                return {}
+                return ({}, {}) if capture_cue_targets else {}
+        if not isinstance(data, list):
+            logger.error("翻译响应不是JSON数组")
+            return ({}, {}) if capture_cue_targets else {}
+
         result: dict[int, str] = {}
+        cue_target_maps: dict[int, dict[int, str]] = {}
         for item in data:
+            if not isinstance(item, dict):
+                continue
+            try:
+                entry_id = int(item.get("id"))
+            except (TypeError, ValueError):
+                continue
+
             tgt = item.get("tgt", "")
             # 兼容旧格式：如果 tgt 为空，尝试 zh 字段
             if not tgt:
@@ -1178,13 +1281,38 @@ async def _translate_batch_impl(
             tgt = strip_annotation(str(tgt).strip()).replace('\n', ' ') if tgt else ""
             if tgt.lower() in ("none", "null", "无", "—", "-", ""):
                 tgt = ""
-            result[item["id"]] = tgt
-        empty_ids = [item["id"] for item in data if not (item.get("tgt") or item.get("zh", "")).strip()]
+            result[entry_id] = tgt
+
+            raw_cue_targets = item.get("cue_targets")
+            if not isinstance(raw_cue_targets, list):
+                continue
+            cue_targets: dict[int, str] = {}
+            invalid_mapping = False
+            for cue_item in raw_cue_targets:
+                if not isinstance(cue_item, dict):
+                    invalid_mapping = True
+                    break
+                try:
+                    cue_id = int(cue_item.get("id"))
+                except (TypeError, ValueError):
+                    invalid_mapping = True
+                    break
+                if cue_id in cue_targets:
+                    invalid_mapping = True
+                    break
+                cue_target = cue_item.get("tgt") or cue_item.get("zh") or ""
+                cue_target = strip_annotation(str(cue_target).strip()).replace('\n', ' ')
+                cue_targets[cue_id] = cue_target
+            # Keep an invalid mapping as an empty dict. The caller then retries
+            # once and, if needed, retains the complete semantic translation.
+            cue_target_maps[entry_id] = {} if invalid_mapping else cue_targets
+
+        empty_ids = [entry_id for entry_id, target in result.items() if not target]
         logger.warning(f"翻译结果: {len(result)} 条，非空: {sum(1 for v in result.values() if v)} 条，空译文id: {empty_ids if empty_ids else '无'}")
-        return result
+        return (result, cue_target_maps) if capture_cue_targets else result
     except Exception as e:
         logger.error(f"翻译解析失败: {e}")
-        return {}
+        return ({}, {}) if capture_cue_targets else {}
 
 
 async def _repair_incomplete_segment_translations(
@@ -1207,7 +1335,7 @@ async def _repair_incomplete_segment_translations(
         source_text = _get_source_text(entry, input_lang_code)
         target_text = _get_target_text(entry, input_lang_code)
         if source_text and not _translation_is_usable(
-            target_text, source_text, output_lang
+            target_text, source_text, output_lang, input_lang
         ):
             incomplete.append(entry)
     if not incomplete:
@@ -1263,7 +1391,7 @@ async def _repair_incomplete_segment_translations(
             str(retry_map.get(entry.index, "")).strip()
         ).replace("\n", " ")
         source_text = _get_source_text(entry, input_lang_code)
-        if not _translation_is_usable(target, source_text, output_lang):
+        if not _translation_is_usable(target, source_text, output_lang, input_lang):
             logger.warning(
                 "  [ID:%d] 修复失败: API返回译文仍不可用: '%s'",
                 entry.index, target,
@@ -1298,7 +1426,41 @@ async def _repair_incomplete_segment_translations(
     return repaired_count, len(incomplete)
 
 
-def _translation_is_usable(translation: str, source_text: str, output_lang: str = "zh") -> bool:
+def _resolve_lang_code(value: str | None) -> str:
+    """Map a UI display label or a bare language code to its language code.
+
+    ``LANGUAGE_MAP.get(value, ("zh", value))`` silently resolved every unknown
+    value to Chinese, so a caller passing a bare code took the Chinese branch
+    of the quality gate no matter which language it actually named.
+    """
+    if not value:
+        return ""
+    if value in LANGUAGE_MAP:
+        return LANGUAGE_MAP[value][0]
+    return str(value).strip().casefold()
+
+
+def _translation_is_usable(
+    translation: str,
+    source_text: str,
+    output_lang: str = "zh",
+    input_lang: str | None = None,
+) -> bool:
+    """Whether a response counts as a finished translation of ``source_text``.
+
+    This predicate is the single accept/reject gate for every pipeline stage:
+    the translate coverage retry and source fallback, optimize's apply/fail
+    branches, and both the fidelity and consistency review passes.  It must
+    therefore behave the same for all ten output languages.  It previously
+    wrapped its entire body in ``if output_lang_code == "zh"`` and returned
+    True otherwise, which made every downstream quality guarantee a no-op for
+    the other nine languages -- including accepting the model echoing the
+    source back verbatim.
+
+    ``input_lang`` stays optional for backward compatibility, but callers
+    should pass it: it separates translation (the text must change) from a
+    same-language polish run (the text may legitimately stay identical).
+    """
     translation = strip_annotation(str(translation or "").strip())
     if (
         not translation
@@ -1307,17 +1469,31 @@ def _translation_is_usable(translation: str, source_text: str, output_lang: str 
     ):
         return source_can_remain_untranslated(source_text)
 
-    output_lang_code = LANGUAGE_MAP.get(output_lang, ("zh", output_lang))[0]
+    # Non-verbal/numeric source cues are faithfully kept as-is in every output
+    # language.  Handle them before the echo guard so a normalized response
+    # such as ``Lulu\uff0cLulu`` is not discarded.
+    if source_can_remain_untranslated(source_text):
+        return True
+    if not source_text.strip():
+        return True
+
+    output_lang_code = _resolve_lang_code(output_lang)
+    input_lang_code = _resolve_lang_code(input_lang)
+
+    # Language-agnostic hard gate.  When the languages differ, a target that is
+    # the source handed back unchanged is not a translation.  A same-language
+    # polish pass is exempt: there, leaving a good cue untouched is correct.
+    if input_lang_code != output_lang_code and target_echoes_source(
+        translation, source_text
+    ):
+        return False
+
     if output_lang_code == "zh":
-        # Non-verbal/numeric source cues can legitimately remain without CJK
-        # characters.  Handle them before the English-only target guard so a
-        # normalized response such as ``Lulu，Lulu`` is not discarded.
-        if source_can_remain_untranslated(source_text):
-            return True
-        # Chinese-target hard gate: a non-empty English source cannot be accepted
-        # as translated unless the target line contains Chinese characters and
-        # passes the conservative coverage check.
-        if source_text.strip() and _english_word_count(source_text) > 0 and _chinese_char_count(translation) == 0:
+        # Additional Chinese-only signal, kept because it also catches partial
+        # echoes that are not byte-identical -- a target that drops half the
+        # source but leaves the rest in English.  It supplements the universal
+        # rule above rather than being a per-language script table.
+        if _english_word_count(source_text) > 0 and _chinese_char_count(translation) == 0:
             return False
         if _translation_looks_incomplete(translation, source_text):
             return False
@@ -1346,7 +1522,9 @@ async def _translate_batch_with_repair(
     for entry in batch:
         source_text = _get_source_text(entry, input_lang_code)
         translation = first_map.get(entry.index, "")
-        if not _translation_is_usable(translation, source_text, output_lang):
+        if not _translation_is_usable(
+            translation, source_text, output_lang, input_lang
+        ):
             missing_entries.append(entry)
 
     retry_map: dict[int, str] = {}
@@ -1364,14 +1542,23 @@ async def _translate_batch_with_repair(
     unresolved: list[int] = []
     for entry in batch:
         source_text = _get_source_text(entry, input_lang_code)
-        translation = first_map.get(entry.index, "")
-        if not _translation_is_usable(translation, source_text, output_lang):
-            translation = retry_map.get(entry.index, "")
+        first_translation = first_map.get(entry.index, "")
+        retry_translation = retry_map.get(entry.index, "")
+        first_is_usable = _translation_is_usable(
+            first_translation, source_text, output_lang, input_lang
+        )
+        retry_is_usable = _translation_is_usable(
+            retry_translation, source_text, output_lang, input_lang
+        )
+
+        translation = first_translation
+        if not first_is_usable and retry_is_usable:
+            translation = retry_translation
 
         translation = strip_annotation(str(translation or "").strip())
         if not translation and source_can_remain_untranslated(source_text):
             translation = source_text
-        if _translation_is_usable(translation, source_text, output_lang):
+        if _translation_is_usable(translation, source_text, output_lang, input_lang):
             result[entry.index] = translation
         else:
             unresolved.append(entry.index)
@@ -1722,6 +1909,7 @@ class BatchGlossaryWorker(BaseWorker):
         self.manual_review = manual_review
         self.source_layout = source_layout
         self._ai_semaphore = asyncio.Semaphore(self.concurrency)
+        self._debug_request_seq = 0
 
     def _extract_original_line(self, entries: list[SubtitleEntry]) -> list[SubtitleEntry]:
         input_code = LANGUAGE_MAP.get(self.input_lang, ("en", self.input_lang))[0]
@@ -2154,10 +2342,16 @@ class BatchGlossaryWorker(BaseWorker):
         if current_batch:
             batches.append(current_batch)
         num_batches = len(batches)
+        unifier_concurrency = max(
+            1,
+            min(self.concurrency, batch_glossary_unifier_concurrency_limit()),
+        )
+        unifier_semaphore = asyncio.Semaphore(unifier_concurrency)
 
         self.log.emit(
             f"  全局术语统一器：共 {total} 条候选，按 source 分组后 "
-            f"{len(groups)} 组，分 {num_batches} 批（每批最多 {candidate_limit} 条）"
+            f"{len(groups)} 组，分 {num_batches} 批（每批最多 {candidate_limit} 条，"
+            f"统一器并发上限 {unifier_concurrency}）"
         )
 
         def split_batch_by_source(
@@ -2295,10 +2489,11 @@ class BatchGlossaryWorker(BaseWorker):
                 session_glossary="",
             )
             try:
-                return await self._unify_single_batch(
-                    batch_summary,
-                    batch_candidates,
-                )
+                async with unifier_semaphore:
+                    return await self._unify_single_batch(
+                        batch_summary,
+                        batch_candidates,
+                    )
             except asyncio.CancelledError:
                 raise
             except Exception as exc:
@@ -2355,20 +2550,25 @@ class BatchGlossaryWorker(BaseWorker):
         )
         return unified
 
-    async def _unify_single_batch(
-        self,
-        summary: BatchGlossarySummary,
-        batch_candidates: list[GlossaryCandidate],
-    ) -> BatchGlossarySummary:
-        """处理单批候选的统一逻辑"""
-        messages = self._build_global_unifier_messages(summary)
-        # DEBUG: 保存请求内容供调试
+    def _dump_unifier_request_for_debug(self, messages: list[dict]) -> None:
+        """Write one unifier request body to disk, only when explicitly enabled.
+
+        Previously unconditional.  Besides growing ``logs/`` without bound, its
+        filename came from ``len(glob(...)) + 1``, which two concurrent batches
+        evaluate to the same number, so the dumps silently overwrote each other
+        and could not be trusted for the debugging they existed to support.
+        The per-worker counter below is collision-free within a run.
+        """
+        if not batch_glossary_debug_requests_enabled():
+            return
         try:
-            from pathlib import Path
             debug_dir = Path(__file__).resolve().parent.parent / "logs" / "debug_requests"
             debug_dir.mkdir(parents=True, exist_ok=True)
-            batch_idx = len(list(debug_dir.glob("unifier_request_batch_*.json"))) + 1
-            debug_path = debug_dir / f"unifier_request_batch_{batch_idx}.json"
+            self._debug_request_seq += 1
+            debug_path = (
+                debug_dir
+                / f"unifier_request_{id(self):x}_{self._debug_request_seq:03d}.json"
+            )
             debug_path.write_text(
                 json.dumps(messages, ensure_ascii=False, indent=2),
                 encoding="utf-8",
@@ -2376,6 +2576,15 @@ class BatchGlossaryWorker(BaseWorker):
             self.log.emit(f"    [DEBUG] 请求内容已保存到 {debug_path}")
         except Exception as dbg_exc:
             self.log.emit(f"    [DEBUG] 保存请求内容失败: {dbg_exc}")
+
+    async def _unify_single_batch(
+        self,
+        summary: BatchGlossarySummary,
+        batch_candidates: list[GlossaryCandidate],
+    ) -> BatchGlossarySummary:
+        """处理单批候选的统一逻辑"""
+        messages = self._build_global_unifier_messages(summary)
+        self._dump_unifier_request_for_debug(messages)
         timeout_seconds = batch_glossary_unifier_timeout_seconds()
         reasoning_options = batch_glossary_reasoning_options()
         self.log.emit(
@@ -2580,25 +2789,35 @@ class BatchWorker(BaseWorker):
                     self.log.emit(f"  Transcribing media before subtitle optimization: {filename}")
                     try:
                         # 根据文件大小自动选择分段或普通转录
+                        # These must match _run_transcribe_only(): omitting
+                        # model/language/concurrency here silently ignored the
+                        # user's transcription model, forced language and chunk
+                        # concurrency whenever a media file went through the
+                        # full optimize pipeline instead of transcribe-only.
                         if should_use_chunked_transcription(filepath):
-                            self.log.emit(f"  Large file, using chunked transcription")
+                            self.log.emit("  Large file, using chunked transcription")
                             working_path, _ = await transcribe_chunked_to_srt(
                                 self.client,
                                 filepath,
+                                model=self.transcription_model or None,
+                                language=self.language,
                                 audio_format=self.transcription_audio_format,
+                                concurrency=self.chunk_concurrency,
                                 on_log=lambda msg: self.log.emit(f"  {msg}"),
                             )
                         else:
                             working_path, _ = await transcribe_media_to_srt(
                                 self.client,
                                 filepath,
+                                model=self.transcription_model or None,
+                                language=self.language,
                                 audio_format=self.transcription_audio_format,
                                 on_log=lambda msg: self.log.emit(f"  {msg}"),
                             )
                     except RuntimeError as exc:
                         message = str(exc)
                         if message == NO_TRANSCRIBABLE_AUDIO_ERROR or "no audio track" in message.lower():
-                            self.log.emit(f"  Skipping media: no transcribable audio detected")
+                            self.log.emit("  Skipping media: no transcribable audio detected")
                             self.file_skipped.emit(idx, filename, NO_TRANSCRIBABLE_AUDIO_ERROR)
                             continue
                         raise
@@ -2619,7 +2838,9 @@ class BatchWorker(BaseWorker):
                 # Filter user glossary first; auto terms are merged after stage 1 analysis.
                 user_glossary = ""
                 if self.raw_glossary:
-                    user_glossary = filter_glossary_by_entries(self.raw_glossary, entries)
+                    user_glossary = filter_glossary_by_entries(
+                        self.raw_glossary, entries, self.input_lang_code
+                    )
 
                 self.log.emit(f"  🔍 [{filename}] 分析情景（{len(entries)} 条字幕）...")
                 analysis = await pipeline.analyze_details(

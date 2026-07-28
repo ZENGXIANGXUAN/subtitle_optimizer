@@ -91,9 +91,22 @@ AIOHTTP_STUB = types.SimpleNamespace(
     ClientSession=_Session,
     ClientError=_ClientError,
 )
-sys.modules["aiohttp"] = AIOHTTP_STUB
 
-import core.client as client_module
+# Install the stub only for as long as core.client needs it to import, then put
+# the real module back. Leaving `sys.modules["aiohttp"] = AIOHTTP_STUB` in place
+# leaked this partial stub into every test collected afterwards -- the stub has
+# no TCPConnector, so SubtitlePipeline._create_session() raised AttributeError
+# and the suite's result depended on collection order. setUp() below rebinds
+# client_module.aiohttp, so these tests still run against the stub.
+_REAL_AIOHTTP = sys.modules.get("aiohttp")
+sys.modules["aiohttp"] = AIOHTTP_STUB
+try:
+    import core.client as client_module
+finally:
+    if _REAL_AIOHTTP is not None:
+        sys.modules["aiohttp"] = _REAL_AIOHTTP
+    else:  # pragma: no cover - only when aiohttp is genuinely not installed
+        del sys.modules["aiohttp"]
 
 MistralClient = client_module.MistralClient
 

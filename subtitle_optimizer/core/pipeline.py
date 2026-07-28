@@ -34,6 +34,7 @@ from core.workers import (
     _build_analysis_messages,
     _apply_llm_merge,
     _apply_llm_split,
+    _clone_segment_entry,
     _force_split_entry,
     _split_short_long,
     _translate_batch_with_repair,
@@ -339,7 +340,6 @@ class SubtitlePipeline:
         total = len(entries)
         completed = 0
         context_size = self.DEFAULT_CONTEXT_SIZE
-
         starts = list(range(0, total, self.batch_size))
         batches_with_ctx: list[tuple[list[SubtitleEntry], list[SubtitleEntry], list[SubtitleEntry]]] = []
         for start in starts:
@@ -445,7 +445,7 @@ class SubtitlePipeline:
             source_text = _get_source_text(entry, self.input_lang_code)
             target_text = _get_target_text(entry, self.input_lang_code)
             if source_text and not _translation_is_usable(
-                target_text, source_text, self.output_lang
+                target_text, source_text, self.output_lang, self.input_lang
             ):
                 self._keep_source_fallback(entry, source_text)
                 still_bad.append(entry.index)
@@ -523,7 +523,7 @@ class SubtitlePipeline:
                 source_text = _get_source_text(snapshot, self.input_lang_code)
                 target_text = str(lines[0] if lines else "").strip()
                 if not _translation_is_usable(
-                    target_text, source_text, self.output_lang
+                    target_text, source_text, self.output_lang, self.input_lang
                 ):
                     raise ValueError(
                         f"optimize invalid target id={snapshot.index}"
@@ -546,7 +546,9 @@ class SubtitlePipeline:
                 live.optimized_lines = list(live.lines)
                 source_text = _get_source_text(live, self.input_lang_code)
                 target_text = _get_target_text(live, self.input_lang_code)
-                if _translation_is_usable(target_text, source_text, self.output_lang):
+                if _translation_is_usable(
+                    target_text, source_text, self.output_lang, self.input_lang
+                ):
                     self._mark_translation_recovered(live)
                     if "optimize_unapplied" not in live.quality_flags:
                         live.quality_flags.append("optimize_unapplied")
@@ -748,7 +750,7 @@ class SubtitlePipeline:
                     entry.quality_flags.append("source_integrity_diff")
             if on_log:
                 on_log(
-                    f"  ⚠️ Source integrity 差异（已降级为警告）: "
+                    "  ⚠️ Source integrity 差异（已降级为警告）: "
                     + "; ".join(final_integrity_errors)
                 )
         self.last_lint_report = lint_report
@@ -1007,7 +1009,9 @@ class SubtitlePipeline:
             live = entries[position]
             source_text = _get_source_text(snapshot, self.input_lang_code)
             old_target = _get_target_text(snapshot, self.input_lang_code)
-            if not _translation_is_usable(target, source_text, self.output_lang):
+            if not _translation_is_usable(
+                target, source_text, self.output_lang, self.input_lang
+            ):
                 raise ValueError(f"fidelity invalid target id={snapshot.index}")
             live.lines = [target, source_text] if source_text else [target]
             self._mark_translation_recovered(live)
@@ -1024,7 +1028,9 @@ class SubtitlePipeline:
             live = entries[position]
             source_text = _get_source_text(live, self.input_lang_code)
             target_text = _get_target_text(live, self.input_lang_code)
-            if _translation_is_usable(target_text, source_text, self.output_lang):
+            if _translation_is_usable(
+                target_text, source_text, self.output_lang, self.input_lang
+            ):
                 self._mark_translation_recovered(live)
                 if "fidelity_review_unapplied" not in live.quality_flags:
                     live.quality_flags.append("fidelity_review_unapplied")
@@ -1062,7 +1068,7 @@ class SubtitlePipeline:
                         source_text = _get_source_text(snapshot, self.input_lang_code)
                         target = result_map.get(snapshot.index, "")
                         if not _translation_is_usable(
-                            target, source_text, self.output_lang
+                            target, source_text, self.output_lang, self.input_lang
                         ):
                             raise ValueError(
                                 f"fidelity invalid target id={snapshot.index}"
@@ -1148,6 +1154,7 @@ class SubtitlePipeline:
     ) -> None:
         guide = ""
         guide_error: Exception | None = None
+        guide_retry_state: dict = {}
         for attempt in range(self.DEFAULT_CONSISTENCY_GUIDE_RETRY_ATTEMPTS):
             if is_cancelled and is_cancelled():
                 raise asyncio.CancelledError()
@@ -1157,6 +1164,7 @@ class SubtitlePipeline:
                     self.input_lang, self.output_lang,
                     chunk_size=max(40, self.batch_size * 10),
                     concurrency=max(1, min(4, self.concurrency)),
+                    retry_state=guide_retry_state,
                 )
                 guide_error = None
                 break
@@ -1174,7 +1182,9 @@ class SubtitlePipeline:
             for entry in entries:
                 source_text = _get_source_text(entry, self.input_lang_code)
                 target_text = _get_target_text(entry, self.input_lang_code)
-                if _translation_is_usable(target_text, source_text, self.output_lang):
+                if _translation_is_usable(
+                    target_text, source_text, self.output_lang, self.input_lang
+                ):
                     self._mark_translation_recovered(entry)
                     if "consistency_guide_unapplied" not in entry.quality_flags:
                         entry.quality_flags.append("consistency_guide_unapplied")
@@ -1223,7 +1233,9 @@ class SubtitlePipeline:
             live = entries[position]
             source_text = _get_source_text(snapshot, self.input_lang_code)
             old_target = snapshot.lines[0] if snapshot.lines else ""
-            if not _translation_is_usable(target, source_text, self.output_lang):
+            if not _translation_is_usable(
+                target, source_text, self.output_lang, self.input_lang
+            ):
                 raise ValueError(
                     f"consistency invalid target id={snapshot.index}"
                 )
@@ -1285,7 +1297,7 @@ class SubtitlePipeline:
                         source_text = _get_source_text(snapshot, self.input_lang_code)
                         target = result_map.get(snapshot.index, "")
                         if not _translation_is_usable(
-                            target, source_text, self.output_lang
+                            target, source_text, self.output_lang, self.input_lang
                         ):
                             raise ValueError(
                                 f"consistency invalid target id={snapshot.index}"
@@ -1530,4 +1542,10 @@ class SubtitlePipeline:
             return _apply_llm_merge(batch, data, log_fn=on_log, lang_code=self.input_lang_code)
         except Exception as exc:
             logger.warning(f"LLM merge pass failed, keeping original batch: {exc}")
-            return batch
+            # Clone rather than hand back the caller's own objects. Every other
+            # path through _apply_llm_merge returns fresh entries, so returning
+            # `batch` here aliased the pipeline input: segment() renumbers its
+            # result in place, which rewrote the caller's indexes (producing
+            # duplicates) and left verify_source_integrity() comparing the
+            # result against ids it had already overwritten.
+            return [_clone_segment_entry(entry) for entry in batch]

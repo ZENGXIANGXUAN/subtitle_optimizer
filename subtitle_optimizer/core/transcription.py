@@ -1,4 +1,7 @@
+import asyncio
+from difflib import SequenceMatcher
 import os
+import re
 import subprocess
 import tempfile
 import time
@@ -354,20 +357,46 @@ async def transcribe_prepared_audio_to_srt(
 
 # 分段参数
 CHUNK_DURATION = 15 * 60       # 每段15分钟
-CHUNK_OVERLAP = 1 * 60         # 重叠1分钟
+CHUNK_OVERLAP = 2 * 60         # 重叠2分钟，交接点距两侧边缘各60秒
 CHUNK_MAX_FILE_MB = 8          # 每段最大文件大小
 
 
 def get_audio_duration(audio_path: str) -> float:
-    """获取音频时长（秒）"""
+    """获取音频时长（秒）
+
+    Failures are wrapped the same way ``has_audio_stream`` wraps them. The bare
+    ``float(...)`` used to surface as ``could not convert string to float: 'N/A'``
+    for containers that do not report a duration, which says nothing about what
+    the user should do.
+    """
     cmd = [
         "ffprobe", "-v", "error",
         "-show_entries", "format=duration",
         "-of", "default=noprint_wrappers=1:nokey=1",
         audio_path,
     ]
-    result = subprocess.run(cmd, **_media_probe_run_kwargs())
-    return float(result.stdout.decode("utf-8", errors="ignore").strip())
+    try:
+        result = subprocess.run(cmd, **_media_probe_run_kwargs())
+    except FileNotFoundError as exc:
+        raise RuntimeError("ffprobe is not installed or is not available in PATH") from exc
+    except subprocess.CalledProcessError as exc:
+        detail = exc.stderr.decode("utf-8", errors="ignore").strip()
+        raise RuntimeError(f"ffprobe failed to read audio duration: {detail[:500]}") from exc
+
+    raw = result.stdout.decode("utf-8", errors="ignore").strip()
+    try:
+        duration = float(raw)
+    except ValueError as exc:
+        raise RuntimeError(
+            f"ffprobe reported no usable duration for {Path(audio_path).name!r} "
+            f"(got {raw!r}); the file may be corrupt or still being written"
+        ) from exc
+    if duration <= 0:
+        raise RuntimeError(
+            f"ffprobe reported a non-positive duration ({duration}) for "
+            f"{Path(audio_path).name!r}"
+        )
+    return duration
 
 
 def extract_audio_chunk(
@@ -392,15 +421,52 @@ def extract_audio_chunk(
     return output_path
 
 
+def _clamp_chunk_plan(chunk_duration: float, overlap: float, audio_format: str) -> tuple[float, float]:
+    """Return a (chunk_duration, overlap) pair that is safe to iterate and upload.
+
+    Two independent hazards are handled here:
+
+    * ``overlap >= chunk_duration`` makes the stride zero or negative, so
+      :func:`_compute_chunk_starts` never advances and appends forever.
+    * ``CHUNK_MAX_FILE_MB`` was declared but never enforced.  A 15-minute chunk
+      is 6.9 MB as 64 kbps mp3 but 27.5 MB as 16 kHz mono wav, well past the
+      limit the constant exists to express.
+    """
+    chunk_duration = max(1.0, float(chunk_duration))
+    overlap = max(0.0, float(overlap))
+
+    bytes_per_second = _encoded_bytes_per_second(audio_format)
+    max_duration = (CHUNK_MAX_FILE_MB * 1024 * 1024) / bytes_per_second
+    chunk_duration = min(chunk_duration, max_duration)
+
+    # Keep a real stride: the overlap may never consume the whole chunk.
+    if overlap >= chunk_duration:
+        overlap = chunk_duration / 2
+    return chunk_duration, overlap
+
+
+def _encoded_bytes_per_second(audio_format: str) -> float:
+    if _normalize_audio_format(audio_format) == "wav":
+        return 16000 * 2  # pcm_s16le, 16 kHz, mono
+    return 64_000 / 8  # libmp3lame, 64 kbps
+
+
 def _compute_chunk_starts(total_duration: float, chunk_duration: float, overlap: float) -> list[float]:
     """计算分段起始时间"""
+    stride = chunk_duration - overlap
+    if stride <= 0:
+        # Callers should pass a clamped plan; refuse rather than loop forever.
+        raise ValueError(
+            f"chunk overlap ({overlap}) must be smaller than chunk duration "
+            f"({chunk_duration})"
+        )
     starts = []
     pos = 0.0
     while pos < total_duration:
         starts.append(pos)
         if pos + chunk_duration >= total_duration:
             break
-        pos += chunk_duration - overlap
+        pos += stride
     return starts
 
 
@@ -409,33 +475,306 @@ def _merge_chunk_segments(
     chunk_starts: list[float],
     overlap: float,
 ) -> list[dict]:
-    """合并多段转录结果，处理重叠区域"""
-    merged = []
+    """Merge overlapping chunk transcripts without cutting a cue in half.
 
-    for i, result in enumerate(all_results):
-        segments = result.get("segments") or []
-        chunk_start = chunk_starts[i]
+    ASR splits are not stable across two overlapping requests.  A cue that is
+    one item in the earlier chunk can be two items in the later chunk.  Choosing
+    each item independently by its midpoint can therefore discard both halves
+    of a sentence.  Instead, every handoff selects a *cue boundary*: a prefix
+    of the earlier chunk and a suffix of the later chunk.  This keeps a whole
+    ASR segmentation chain on either side of the handoff.
+    """
 
-        for seg in segments:
-            abs_start = chunk_start + seg.get("start", 0)
-            abs_end = chunk_start + seg.get("end", 0)
-            text = (seg.get("text") or "").strip()
+    def absolute_segments(result: dict, chunk_start: float) -> list[dict]:
+        prepared: list[dict] = []
+        for segment in result.get("segments") or []:
+            text = (segment.get("text") or "").strip()
             if not text:
                 continue
+            start = chunk_start + float(segment.get("start", 0) or 0)
+            end = chunk_start + float(segment.get("end", 0) or 0)
+            if end < start:
+                continue
+            prepared.append({"start": start, "end": end, "text": text})
+        return sorted(prepared, key=lambda segment: (segment["start"], segment["end"]))
 
-            # 去重重叠区域：非首段的前半重叠区域跳过
-            if i > 0:
-                overlap_boundary = chunk_starts[i] + overlap / 2
-                if abs_start < overlap_boundary:
+    def bridge_index(segments: list[dict], handoff: float) -> int | None:
+        for index, segment in enumerate(segments):
+            if segment["start"] < handoff < segment["end"]:
+                return index
+        return None
+
+    def select_handoff(
+        left: list[dict],
+        right: list[dict],
+        overlap_start: float,
+        overlap_end: float,
+        handoff: float,
+    ) -> tuple[int, int]:
+        """Return ``(left_end, right_start)`` indices for one chunk boundary."""
+        if not left:
+            return 0, 0
+        if not right:
+            return len(left), 0
+
+        # Prefer a real join between two complete ASR cues.  A tiny timestamp
+        # overlap is normal rounding noise, but a larger overlap means that
+        # selecting both cues would repeat speech.
+        timing_tolerance = 0.25
+        joins: list[tuple[tuple[float, float, float], int, int]] = []
+        for left_end in range(1, len(left) + 1):
+            left_time = left[left_end - 1]["end"]
+            if not overlap_start <= left_time <= overlap_end:
+                continue
+            for right_start, segment in enumerate(right):
+                right_time = segment["start"]
+                if not overlap_start <= right_time <= overlap_end:
                     continue
+                if right_time + timing_tolerance < left_time:
+                    continue
+                joins.append((
+                    (
+                        abs(right_time - left_time),
+                        abs((left_time + right_time) / 2 - handoff),
+                        abs(left_time - handoff) + abs(right_time - handoff),
+                    ),
+                    left_end,
+                    right_start,
+                ))
+        if joins:
+            _, left_end, right_start = min(joins, key=lambda candidate: candidate[0])
+            return left_end, right_start
 
-            merged.append({
-                "start": abs_start,
-                "end": abs_end,
-                "text": text,
-            })
+        # When both chunks describe the same cue across the handoff, retain one
+        # complete copy.  The newer chunk wins for this exact-overlap case to
+        # preserve the established half-open ownership convention.
+        left_bridge = bridge_index(left, handoff)
+        right_bridge = bridge_index(right, handoff)
+        if left_bridge is not None and right_bridge is not None:
+            left_segment = left[left_bridge]
+            right_segment = right[right_bridge]
+            same_timing = (
+                abs(left_segment["start"] - right_segment["start"]) <= timing_tolerance
+                and abs(left_segment["end"] - right_segment["end"]) <= timing_tolerance
+            )
+            if same_timing:
+                return left_bridge, right_bridge
 
-    return merged
+        # There is no safe common cue boundary.  Keep the complete earlier cue
+        # that crosses the handoff, then resume from the first later cue in the
+        # newer chunk.  This is deliberately biased toward preserving words:
+        # a duplicate is preferable to dropping the first half of a sentence.
+        if left_bridge is not None:
+            left_end = left_bridge + 1
+            resume_at = left[left_bridge]["end"]
+            right_start = next(
+                (
+                    index
+                    for index, segment in enumerate(right)
+                    if segment["start"] + timing_tolerance >= resume_at
+                ),
+                len(right),
+            )
+            return left_end, right_start
+
+        if right_bridge is not None:
+            right_start = right_bridge
+            resume_before = right[right_bridge]["start"]
+            left_end = next(
+                (
+                    index
+                    for index, segment in enumerate(left)
+                    if segment["end"] + timing_tolerance >= resume_before
+                ),
+                len(left),
+            )
+            return left_end, right_start
+
+        # No cue touches the handoff.  The chunks have a genuine pause there,
+        # so the conventional time ownership is safe.
+        left_end = next(
+            (index for index, segment in enumerate(left) if segment["end"] > handoff),
+            len(left),
+        )
+        right_start = next(
+            (index for index, segment in enumerate(right) if segment["start"] >= handoff),
+            len(right),
+        )
+        return left_end, right_start
+
+    chunks = [
+        absolute_segments(result, chunk_starts[index])
+        for index, result in enumerate(all_results)
+    ]
+    if overlap <= 0 or len(chunks) < 2:
+        return sorted(
+            [segment for chunk in chunks for segment in chunk],
+            key=lambda segment: (segment["start"], segment["end"]),
+        )
+
+    starts = [0] * len(chunks)
+    ends = [len(chunk) for chunk in chunks]
+    for index in range(len(chunks) - 1):
+        overlap_start = chunk_starts[index + 1]
+        overlap_end = overlap_start + overlap
+        handoff = overlap_start + overlap / 2
+        left_end, right_start = select_handoff(
+            chunks[index],
+            chunks[index + 1],
+            overlap_start,
+            overlap_end,
+            handoff,
+        )
+        ends[index] = min(ends[index], left_end)
+        starts[index + 1] = max(starts[index + 1], right_start)
+
+    merged = [
+        segment
+        for index, chunk in enumerate(chunks)
+        for segment in chunk[starts[index]:ends[index]]
+    ]
+
+    # A middle chunk is cut twice: once by the boundary on its left and once by
+    # the boundary on its right.  Those two decisions are made independently, so
+    # they can cross -- most easily when the ASR returns one long segment that
+    # spans both overlap windows -- and the chunk then contributes nothing.
+    #
+    # Dropping a cue is *correct* when a neighbouring chunk already transcribes
+    # the same speech, which is the normal case at a handoff.  It is data loss
+    # when nothing else covers that span.  So rather than trust the index
+    # arithmetic, check the timeline: any dropped cue whose span the kept cues
+    # do not cover is restored.  This module's stated bias applies -- a
+    # duplicate is preferable to losing words, and the final lint merges
+    # adjacent duplicates again.
+    dropped = [
+        segment
+        for index, chunk in enumerate(chunks)
+        for position, segment in enumerate(chunk)
+        if not starts[index] <= position < ends[index]
+    ]
+    if dropped:
+        restored = _restore_uncovered_segments(dropped, merged)
+        if restored:
+            logger.warning(
+                "Chunk merge would have dropped %s cue(s) covering time no other "
+                "chunk transcribed; restoring them: %s",
+                len(restored),
+                [f"{s['start']:.1f}-{s['end']:.1f}s" for s in restored[:5]],
+            )
+            merged.extend(restored)
+
+    merged.sort(key=lambda segment: (segment["start"], segment["end"]))
+    return _dedupe_adjacent_segments(merged)
+
+
+def _covered_intervals(segments: list[dict]) -> list[tuple[float, float]]:
+    """Union of the time spans a set of segments occupies."""
+    spans = sorted(
+        (segment["start"], segment["end"])
+        for segment in segments
+        if segment["end"] > segment["start"]
+    )
+    union: list[tuple[float, float]] = []
+    for start, end in spans:
+        if union and start <= union[-1][1]:
+            union[-1] = (union[-1][0], max(union[-1][1], end))
+        else:
+            union.append((start, end))
+    return union
+
+
+def _uncovered_duration(segment: dict, union: list[tuple[float, float]]) -> float:
+    start, end = segment["start"], segment["end"]
+    uncovered = max(0.0, end - start)
+    for span_start, span_end in union:
+        if span_end <= start:
+            continue
+        if span_start >= end:
+            break
+        uncovered -= min(end, span_end) - max(start, span_start)
+    return max(0.0, uncovered)
+
+
+def _restore_uncovered_segments(
+    dropped: list[dict],
+    kept: list[dict],
+    tolerance_seconds: float = 1.0,
+) -> list[dict]:
+    """Return dropped cues whose speech no kept cue accounts for."""
+    union = _covered_intervals(kept)
+    restored: list[dict] = []
+    for segment in dropped:
+        if _uncovered_duration(segment, union) > tolerance_seconds:
+            restored.append(segment)
+            # Later drops must not be restored twice for the same silence.
+            union = _covered_intervals(kept + restored)
+    return restored
+
+
+def _dedupe_adjacent_segments(
+    segments: list[dict],
+    tolerance_seconds: float = 0.25,
+) -> list[dict]:
+    """Collapse duplicate ASR speech retained at an overlapping handoff."""
+
+    def tokens(text: str) -> list[str]:
+        return re.findall(r"\w+", str(text or "").casefold())
+
+    def repeated_speech(left: dict, right: dict) -> bool:
+        overlap = min(left["end"], right["end"]) - max(
+            left["start"], right["start"]
+        )
+        # Small overlaps are ordinary timestamp rounding. Only inspect speech
+        # that materially overlaps in time.
+        if overlap <= tolerance_seconds:
+            return False
+
+        left_tokens = tokens(left["text"])
+        right_tokens = tokens(right["text"])
+        if not left_tokens or not right_tokens:
+            return False
+
+        left_text = " ".join(left_tokens)
+        right_text = " ".join(right_tokens)
+        # A complete cue and its ASR-produced prefix/suffix are unambiguous
+        # duplicates even when the short repeated cue has only a few words.
+        if left_text in right_text or right_text in left_text:
+            return True
+
+        # Different chunk requests can vary slightly (for example, "fact that
+        # there's" vs "fact is") while transcribing the same speech. Require
+        # a near-total match of the shorter cue so distinct overlapping speech
+        # is never collapsed merely because it shares common words.
+        if min(len(left_tokens), len(right_tokens)) < 6:
+            return False
+        matcher = SequenceMatcher(None, left_tokens, right_tokens, autojunk=False)
+        matching = sum(block.size for block in matcher.get_matching_blocks())
+        return (
+            matcher.ratio() >= 0.85
+            and matching / min(len(left_tokens), len(right_tokens)) >= 0.9
+        )
+
+    deduped: list[dict] = []
+    for segment in segments:
+        previous = deduped[-1] if deduped else None
+        if (
+            previous is not None
+            and previous["text"] == segment["text"]
+            and abs(previous["start"] - segment["start"]) <= tolerance_seconds
+            and abs(previous["end"] - segment["end"]) <= tolerance_seconds
+        ):
+            continue
+        if previous is not None and repeated_speech(previous, segment):
+            previous_tokens = tokens(previous["text"])
+            current_tokens = tokens(segment["text"])
+            winner = segment if len(current_tokens) > len(previous_tokens) else previous
+            kept = dict(winner)
+            kept["start"] = min(previous["start"], segment["start"])
+            kept["end"] = max(previous["end"], segment["end"])
+            deduped[-1] = kept
+            continue
+        deduped.append(segment)
+    return deduped
 
 
 async def _transcribe_chunk_concurrent(
@@ -495,6 +834,20 @@ async def transcribe_chunked_to_srt(
         (srt_path, srt_content)
     """
     total_start = time.perf_counter()
+    # Bind before the try: the finally block references it, and an early failure
+    # in get_audio_duration() would otherwise raise NameError there.
+    tmp_dir: str | None = None
+
+    requested_chunk_duration, requested_overlap = chunk_duration, overlap
+    chunk_duration, overlap = _clamp_chunk_plan(chunk_duration, overlap, audio_format)
+    if (chunk_duration, overlap) != (requested_chunk_duration, requested_overlap):
+        _emit_log(
+            on_log,
+            f"Chunk plan clamped for {_normalize_audio_format(audio_format)}: "
+            f"{requested_chunk_duration / 60:.1f}min/{requested_overlap / 60:.1f}min "
+            f"-> {chunk_duration / 60:.1f}min/{overlap / 60:.1f}min "
+            f"(max {CHUNK_MAX_FILE_MB} MB per chunk)",
+        )
 
     # 1. 准备音频
     audio_path, temp_audio = prepare_transcription_audio(
@@ -532,7 +885,7 @@ async def transcribe_chunked_to_srt(
             chunk_paths.append(chunk_path)
 
         # 5. 并发转录
-        _emit_log(on_log, f"Starting concurrent transcription ({concosity} workers)...")
+        _emit_log(on_log, f"Starting concurrent transcription ({concurrency} workers)...")
         semaphore = asyncio.Semaphore(concurrency)
 
         async def _limited_transcribe(idx: int, path: str):
@@ -547,10 +900,44 @@ async def transcribe_chunked_to_srt(
         # 检查是否有失败的分段
         failed = [i for i, r in enumerate(all_results) if isinstance(r, Exception)]
         if failed:
-            _emit_log(on_log, f"WARNING: {len(failed)} chunks failed: {[i+1 for i in failed]}")
-            # 用空结果替代失败的分段
+            _emit_log(
+                on_log,
+                f"WARNING: {len(failed)} chunks failed: {[i + 1 for i in failed]}; "
+                "retrying them sequentially",
+            )
+            # client.transcribe_audio() already retried each chunk internally, so
+            # retry once more one at a time: a burst of concurrent requests is a
+            # common cause of the gateway errors that produced these failures.
+            still_failed: list[int] = []
             for i in failed:
-                all_results[i] = {"segments": [], "text": ""}
+                if asyncio.iscoroutine(all_results[i]):  # pragma: no cover - defensive
+                    continue
+                try:
+                    all_results[i] = await _transcribe_chunk_concurrent(
+                        client, chunk_paths[i], i, model, language, on_log,
+                    )
+                except asyncio.CancelledError:
+                    raise
+                except Exception as exc:
+                    _emit_log(on_log, f"Chunk {i + 1} failed again: {exc}")
+                    still_failed.append(i)
+
+            if still_failed:
+                # Substituting an empty transcript here used to return success
+                # with a hole in it: the caller wrote an SRT that silently
+                # omitted the whole span and then spent a full translation run
+                # on it. Refuse instead, naming the spans that are missing.
+                gaps = ", ".join(
+                    f"{chunk_starts[i] / 60:.1f}-"
+                    f"{min(chunk_starts[i] + chunk_duration, total_duration) / 60:.1f}min"
+                    for i in still_failed
+                )
+                raise RuntimeError(
+                    f"Transcription failed for {len(still_failed)} of {num_chunks} "
+                    f"audio chunks after retry; the transcript would be missing "
+                    f"these spans: {gaps}"
+                )
+            _emit_log(on_log, f"Sequential retry recovered all {len(failed)} chunks")
 
         # 6. 合并结果
         _emit_log(on_log, "Merging segments...")
@@ -580,11 +967,9 @@ async def transcribe_chunked_to_srt(
             except OSError:
                 pass
         # 清理分段文件
-        try:
+        if tmp_dir:
             import shutil
             shutil.rmtree(tmp_dir, ignore_errors=True)
-        except Exception:
-            pass
 
 
 def should_use_chunked_transcription(input_path: str, chunk_threshold_mb: float = 20) -> bool:

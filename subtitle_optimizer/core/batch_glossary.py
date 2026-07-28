@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import json
+import os
 import re
 from typing import Iterable, Sequence
 
@@ -266,9 +267,11 @@ def relevant_fixed_glossary(fixed_glossary: str, sources: Iterable[str]) -> str:
 
 
 def batch_glossary_reasoning_options() -> dict[str, str]:
-    # mistral-medium-3-5 only supports high/none.  Sending xhigh merely makes
-    # the local proxy normalize the request, so use the effective value here.
-    return {"reasoning_effort": "high"}
+    # Global unification is a bounded classification/normalization pass, not
+    # an open-ended reasoning task.  High reasoning adds hidden completion
+    # tokens and makes a 20+ candidate request likely to exceed the local
+    # proxy's 165-second total request budget.
+    return {"reasoning_effort": "none"}
 
 
 def batch_glossary_review_reasoning_options() -> dict[str, str]:
@@ -279,14 +282,40 @@ def batch_glossary_review_reasoning_options() -> dict[str, str]:
 
 
 def batch_glossary_unifier_candidate_limit() -> int:
-    # Large structured glossary requests have a long latency tail even when
-    # their token count is modest.  Smaller batches keep each request inside
-    # the proxy's bounded request budget and are merged deterministically.
-    return 40
+    # The local proxy has a 165-second total request budget.  Real 40-item
+    # unifier requests intermittently exhaust that budget, while their 20-item
+    # split retries complete well within it.  Keep the normal path at that
+    # proven size; a failed request can still split once more to 10 items.
+    return 20
+
+
+def batch_glossary_unifier_concurrency_limit() -> int:
+    # Serialize unifier requests so a slow upstream attempt does not contend
+    # with another glossary request in the proxy's upstream connection pool.
+    return 1
 
 
 def batch_glossary_unifier_timeout_seconds() -> int:
-    return 300
+    # Fail slightly before the proxy's non-configurable 165-second cutoff so
+    # the caller can split the batch rather than waiting for a gateway 504.
+    return 160
+
+
+def batch_glossary_debug_requests_enabled() -> bool:
+    """Whether to dump each unifier request body to disk for debugging.
+
+    Off by default.  This dump used to run unconditionally on every batch and
+    had accumulated 164 files: it writes subtitle-derived glossary content into
+    the repository's ``logs/`` tree, is never pruned, and performs blocking
+    file I/O inside the request coroutine.  Enable it deliberately with
+    ``SUBTITLE_OPTIMIZER_DEBUG_REQUESTS=1`` when reproducing a unifier problem.
+    """
+    return os.environ.get("SUBTITLE_OPTIMIZER_DEBUG_REQUESTS", "").strip().lower() in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }
 
 
 def normalize_glossary_source_key(source: str) -> str:

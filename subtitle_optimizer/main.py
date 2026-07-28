@@ -10,10 +10,18 @@ if sys.platform == "win32":
 
 from PyQt6.QtWidgets import QApplication
 from ui.main_window import MainWindow
-from utils import logger
+from utils import LOG_RETENTION_DAYS, log_root, logger, prune_old_logs
 
 def main():
     logger.info("应用程序启动")
+    # 日志目录在仓库之外；启动时打印位置，并清理超过保留期的旧日志。
+    logger.info("日志目录: %s", log_root())
+    removed = prune_old_logs()
+    if removed:
+        logger.info(
+            "已清理 %d 个超过 %d 天的日志目录: %s",
+            len(removed), LOG_RETENTION_DAYS, ", ".join(sorted(removed)),
+        )
     app = QApplication(sys.argv)
     app.setStyle("Fusion")
     window = MainWindow()

@@ -1,0 +1,54 @@
+{
+  "transcribed_cues": 18,
+  "segmented_cues": 13,
+  "source_indexes_exact_once": true,
+  "source_integrity_errors": [],
+  "caller_entries_unchanged": true,
+  "merged_groups": [
+    {
+      "result_id": 6,
+      "source_indexes": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "start": "00:00:55,200",
+      "end": "00:01:08,400",
+      "duration_ms": 13200,
+      "source": "Then, where does the open play occur? Is it in value? Is it in and out of range? And all these sorts of questions, again, are going to be feeding us objective information about what the market may potentially do."
+    },
+    {
+      "result_id": 9,
+      "source_indexes": [
+        12,
+        13
+      ],
+      "start": "00:01:27,200",
+      "end": "00:01:35,100",
+      "duration_ms": 7900,
+      "source": "Now remember, if we see a market opening in battle, with a very basic open auction, there's a low level of conviction."
+    },
+    {
+      "result_id": 12,
+      "source_indexes": [
+        16,
+        17
+      ],
+      "start": "00:01:48,500",
+      "end": "00:02:03,300",
+      "duration_ms": 14800,
+      "source": "And then note, where will other market participants be drawn in? So, so important to have those, remember those key pivot points or trigger points where one, we may see initiative or where we may see, you know, further responsive type pattern behavior."
+    }
+  ],
+  "max_merge_duration_ms": 14800,
+  "segment_logs": [
+    "  📋 检测到原生字幕，将自动翻译为中文",
+    "  🔗 合并 [6, 7, 8, 9] → [6] \"Then, where does the open play occur? Is it in value? Is it ...\"",
+    "  🔗 合并 [12, 13] → [12] \"Now remember, if we see a market opening in battle, with a v...\"",
+    "  🔗 合并 [16, 17] → [16] \"And then note, where will other market participants be drawn...\"",
+    "  🔍 开始复查 1 个字幕批次边界",
+    "  ✅ 已复查边界 10/11：6 条 → 6 条",
+    "  📊 重组完整性: 18条/365词 → 13条/365词 | 来源丢失: 无 | 重复: 无 | OK"
+  ]
+}

@@ -8,7 +8,7 @@ separate and are deterministic so they can be covered by regression tests.
 from __future__ import annotations
 
 import re
-from typing import Iterable
+from typing import Callable, Iterable, Mapping
 
 from core.models import SourceCueSnapshot, SubtitleEntry
 from core.segmenter import _get_source_text
@@ -74,20 +74,66 @@ def _copy_quality_metadata(source: SubtitleEntry, target: SubtitleEntry) -> None
     target.quality_flags = list(source.quality_flags)
 
 
+def has_validated_cue_target_mapping(
+    entry: SubtitleEntry,
+    cue_targets: Mapping[int, str] | None,
+    *,
+    target_is_usable: Callable[[str, str], bool] | None = None,
+) -> bool:
+    """Whether a model supplied an unambiguous target for every source cue.
+
+    Character positions cannot prove semantic alignment.  The only safe way to
+    return a translated semantic unit to its original timeline is an explicit
+    one-to-one mapping from immutable source cue ids to usable target text.
+    """
+    cues = list(entry.source_cues)
+    if len(cues) <= 1 or not cue_targets:
+        return False
+
+    cue_ids = [cue.index for cue in cues]
+    if len(set(cue_ids)) != len(cue_ids):
+        return False
+
+    normalized: dict[int, str] = {}
+    for raw_id, raw_target in cue_targets.items():
+        try:
+            cue_id = int(raw_id)
+        except (TypeError, ValueError):
+            return False
+        if cue_id in normalized:
+            return False
+        normalized[cue_id] = str(raw_target or "").strip()
+
+    if set(normalized) != set(cue_ids):
+        return False
+
+    for cue in cues:
+        target = normalized[cue.index]
+        if not target:
+            return False
+        if target_is_usable and not target_is_usable(target, cue.source_text):
+            return False
+    return True
+
+
 def reflow_semantic_entries(
     entries: list[SubtitleEntry],
     *,
     input_lang_code: str = "en",
     output_lang_code: str = "zh",
     use_optimized: bool = True,
+    cue_target_mappings: Mapping[int, Mapping[int, str]] | None = None,
+    cue_target_mappings_verified: bool = False,
+    target_is_usable: Callable[[str, str], bool] | None = None,
 ) -> list[SubtitleEntry]:
     """Place a complete semantic translation onto its immutable cue span.
 
     A translation can cover several source cues, but character length cannot
-    establish which target characters belong to each cue.  Do not split the
-    target without an explicit validated cue-to-target mapping: emitting the
-    complete target over the combined span is safer than producing a name,
-    number, or punctuation as a false translation.
+    establish which target characters belong to each cue. Do not split the
+    target without a mapping that has passed an independent semantic check.
+    An ID-complete model response proves only structure, not that each target
+    belongs to the matching source cue. Emitting the complete target over the
+    combined span is safer than placing fluent but unrelated text on a cue.
     """
     _ = output_lang_code  # Retained for the stable public API and future mappings.
     result: list[SubtitleEntry] = []
@@ -95,6 +141,57 @@ def reflow_semantic_entries(
         lines = _effective_lines(entry, use_optimized)
         target_text = lines[0] if len(lines) >= 2 else ""
         cues = list(entry.source_cues) or [cue_snapshot(entry, input_lang_code)]
+
+        raw_mapped_targets = (cue_target_mappings or {}).get(entry.index) or {}
+        mapped_targets: dict[int, str] = {}
+        for raw_id, raw_target in raw_mapped_targets.items():
+            try:
+                mapped_targets[int(raw_id)] = str(raw_target or "").strip()
+            except (TypeError, ValueError):
+                mapped_targets = {}
+                break
+        if cue_target_mappings_verified and has_validated_cue_target_mapping(
+            entry,
+            mapped_targets,
+            target_is_usable=target_is_usable,
+        ):
+            for cue in cues:
+                target = str(mapped_targets[cue.index]).strip()
+                flowed = SubtitleEntry(
+                    index=cue.index,
+                    start_time=cue.start_time,
+                    end_time=cue.end_time,
+                    lines=[target, cue.source_text] if cue.source_text else [target],
+                )
+                flowed.original_lines = list(cue.original_lines or (cue.source_text,))
+                flowed.source_indexes = list(cue.source_indexes or (cue.index,))
+                flowed.source_cues = [cue]
+                _copy_quality_metadata(entry, flowed)
+                if "semantic_cue_mapping_applied" not in flowed.quality_flags:
+                    flowed.quality_flags.append("semantic_cue_mapping_applied")
+                result.append(flowed)
+            continue
+
+        # During the post-translation mapping pass, an absent or invalid map is
+        # deliberately a no-op.  The caller keeps the complete semantic target
+        # and its combined span as the safe fallback; do not accidentally mark
+        # it as an optimized reflow result before the quality stages run.
+        if cue_target_mappings is not None:
+            clone = SubtitleEntry(
+                entry.index,
+                entry.start_time,
+                entry.end_time,
+                list(entry.lines),
+            )
+            clone.optimized_lines = (
+                list(entry.optimized_lines) if entry.optimized_lines else None
+            )
+            clone.original_lines = list(entry.original_lines or entry.lines)
+            clone.source_indexes = list(entry.source_indexes or [entry.index])
+            clone.source_cues = cues
+            _copy_quality_metadata(entry, clone)
+            result.append(clone)
+            continue
 
         # Do not invent a target for a failed translation. Preserve the source
         # and quality flag so the export gate can block it explicitly.

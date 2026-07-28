@@ -1360,11 +1360,14 @@ class MainWindow(QMainWindow):
         """Return the source-layout policy shared by single and batch tasks."""
         return self.combo_source_layout.currentData() or LAYOUT_AUTO
 
-    def _extract_original_line(self, entries: list[SubtitleEntry]) -> list[SubtitleEntry]:
-        """Normalize source layout without dropping wrapped monolingual lines."""
-        input_code = LANGUAGE_MAP.get(
+    def _input_lang_code(self) -> str:
+        return LANGUAGE_MAP.get(
             self.combo_input_lang.currentText(), ("en", "English")
         )[0]
+
+    def _extract_original_line(self, entries: list[SubtitleEntry]) -> list[SubtitleEntry]:
+        """Normalize source layout without dropping wrapped monolingual lines."""
+        input_code = self._input_lang_code()
         output_code = LANGUAGE_MAP.get(
             self.combo_output_lang.currentText(), ("zh", "中文")
         )[0]
@@ -1573,7 +1576,9 @@ class MainWindow(QMainWindow):
         user_glossary = self._glossary_to_text()
         if entries and user_glossary:
             from core.workers import filter_glossary_by_entries
-            user_glossary = filter_glossary_by_entries(user_glossary, entries)
+            user_glossary = filter_glossary_by_entries(
+                user_glossary, entries, self._input_lang_code()
+            )
         return merge_glossaries(user_glossary, self._get_auto_glossary_text()).raw
 
     def _get_merged_glossary_prompt(self, entries=None) -> str:
@@ -2659,7 +2664,7 @@ class MainWindow(QMainWindow):
             return ""
         if entries:
             from core.workers import filter_glossary_by_entries
-            raw = filter_glossary_by_entries(raw, entries)
+            raw = filter_glossary_by_entries(raw, entries, self._input_lang_code())
         return _format_glossary_prompt(raw)
 
     def _config_path(self) -> Path:
@@ -2702,7 +2707,9 @@ class MainWindow(QMainWindow):
             "output_language": self.combo_output_lang.currentText(),
         }
         try:
-            with open(self._config_path(), "w") as f:
+            # 显式 UTF-8：默认编码在 Windows 上是本地代码页，一旦配置里出现
+            # 非 ASCII 字符（例如手工编辑过的术语表）就会读不回来。
+            with open(self._config_path(), "w", encoding="utf-8") as f:
                 json.dump(cfg, f)
             from datetime import datetime
             current_time = datetime.now().strftime("%H:%M:%S")
@@ -2711,36 +2718,63 @@ class MainWindow(QMainWindow):
             self._log(f"⚠️ 保存配置失败：{e}")
 
     def _load_config(self):
+        def warn(message: str) -> None:
+            # _load_config() 在 __init__ 里于 _build_ui() 之后调用，但日志控件
+            # 不该成为配置恢复的前置条件，因此始终先写文件日志。
+            logger.warning(message)
+            if hasattr(self, "text_log"):
+                self._log(f"⚠️ {message}")
+
         try:
-            with open(self._config_path()) as f:
+            with open(self._config_path(), "r", encoding="utf-8") as f:
                 cfg = json.load(f)
-            self.input_apikey.setText(cfg.get("api_key", ""))
-            self.input_base_url.setText(cfg.get("base_url", ""))
-            self.input_transcription_model.setText(
-                cfg.get("transcription_model", "voxtral-mini-latest")
-            )
-            self.chk_transcription_wav.setChecked(
-                cfg.get("transcription_audio_format", "mp3") == "wav"
-            )
+        except FileNotFoundError:
+            return  # 首次启动没有配置文件，属于正常情况。
+        except Exception as exc:
+            warn(f"读取配置失败，本次使用默认设置：{exc}")
+            return
+        if not isinstance(cfg, dict):
+            warn("配置文件内容不是 JSON 对象，本次使用默认设置")
+            return
+
+        failed: list[str] = []
+
+        def restore(field: str, apply) -> None:
+            """逐项恢复。
+
+            旧实现把所有字段放在同一个 try 里并 ``except Exception: pass``，
+            所以任何一项损坏（例如 concurrency 是空串）都会静默跳过它之后的
+            全部字段——术语表和语言设置就这样凭空消失，界面上毫无提示。
+            """
+            try:
+                apply()
+            except Exception as exc:
+                failed.append(f"{field}({exc})")
+
+        def restore_model() -> None:
             saved_model = cfg.get("model", "")
-            if saved_model:
-                idx = self.combo_model.findText(saved_model)
-                if idx >= 0:
-                    self.combo_model.setCurrentIndex(idx)
-                else:
-                    self.combo_model.setCurrentText(saved_model)
+            if not saved_model:
+                return
+            idx = self.combo_model.findText(saved_model)
+            if idx >= 0:
+                self.combo_model.setCurrentIndex(idx)
+            else:
+                self.combo_model.setCurrentText(saved_model)
+
+        def restore_concurrency() -> None:
             configured_concurrency = int(cfg.get("concurrency", "6"))
             self.input_concurrency.setText(
                 str(max(1, min(PIPELINE_MAX_CONCURRENCY, configured_concurrency)))
             )
-            self.input_batch.setText(str(cfg.get("batch_size", "5")))
-            self.combo_original_line.setCurrentIndex(cfg.get("original_line", 1))  # 默认第2行
+
+        def restore_source_layout() -> None:
             source_layout = cfg.get("source_layout", LAYOUT_AUTO)
             source_layout_index = self.combo_source_layout.findData(source_layout)
             self.combo_source_layout.setCurrentIndex(
                 source_layout_index if source_layout_index >= 0 else 0
             )
-            self._glossary_from_text(cfg.get("glossary", ""))
+
+        def restore_languages() -> None:
             # 加载语言设置（向后兼容）
             input_lang = cfg.get("input_language", "English")
             output_lang = cfg.get("output_language", "中文")
@@ -2748,5 +2782,36 @@ class MainWindow(QMainWindow):
                 self.combo_input_lang.setCurrentText(input_lang)
             if output_lang in LANGUAGE_LABELS:
                 self.combo_output_lang.setCurrentText(output_lang)
-        except Exception:
-            pass
+
+        restore("api_key", lambda: self.input_apikey.setText(cfg.get("api_key", "")))
+        restore("base_url", lambda: self.input_base_url.setText(cfg.get("base_url", "")))
+        restore(
+            "transcription_model",
+            lambda: self.input_transcription_model.setText(
+                cfg.get("transcription_model", "voxtral-mini-latest")
+            ),
+        )
+        restore(
+            "transcription_audio_format",
+            lambda: self.chk_transcription_wav.setChecked(
+                cfg.get("transcription_audio_format", "mp3") == "wav"
+            ),
+        )
+        restore("model", restore_model)
+        restore("concurrency", restore_concurrency)
+        restore(
+            "batch_size",
+            lambda: self.input_batch.setText(str(cfg.get("batch_size", "5"))),
+        )
+        restore(
+            "original_line",
+            lambda: self.combo_original_line.setCurrentIndex(
+                int(cfg.get("original_line", 1))  # 默认第2行
+            ),
+        )
+        restore("source_layout", restore_source_layout)
+        restore("glossary", lambda: self._glossary_from_text(cfg.get("glossary", "")))
+        restore("languages", restore_languages)
+
+        if failed:
+            warn(f"以下配置项恢复失败，已保留默认值：{'; '.join(failed)}")

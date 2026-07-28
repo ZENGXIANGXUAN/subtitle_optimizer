@@ -649,21 +649,3 @@ def finalize_entries(
 
     logger.info(report.summary())
     return fixed, report
-
-
-def lint_entries(
-    entries: list[SubtitleEntry],
-    use_optimized: bool = True,
-    input_lang_code: str = "",
-    output_lang_code: str = "",
-    bilingual_mode: bool | None = None,
-) -> SrtLintReport:
-    """Report-only convenience wrapper. Does not mutate caller-visible ordering."""
-    _, report = finalize_entries(
-        list(entries),
-        use_optimized=use_optimized,
-        input_lang_code=input_lang_code,
-        output_lang_code=output_lang_code,
-        bilingual_mode=bilingual_mode,
-    )
-    return report

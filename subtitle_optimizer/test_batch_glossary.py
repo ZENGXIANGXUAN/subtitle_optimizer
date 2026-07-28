@@ -5,6 +5,7 @@ from core.batch_glossary import (
     approved_candidates_to_text,
     batch_glossary_review_reasoning_options,
     batch_glossary_unifier_candidate_limit,
+    batch_glossary_unifier_concurrency_limit,
     batch_glossary_reasoning_options,
     batch_glossary_unifier_timeout_seconds,
     filter_human_review_glossary_candidates,
@@ -14,8 +15,8 @@ from core.batch_glossary import (
 )
 
 
-def test_batch_glossary_unifier_uses_supported_high_reasoning_by_default():
-    assert batch_glossary_reasoning_options() == {"reasoning_effort": "high"}
+def test_batch_glossary_unifier_disables_expensive_reasoning():
+    assert batch_glossary_reasoning_options() == {"reasoning_effort": "none"}
 
 
 def test_batch_glossary_ai_review_disables_expensive_reasoning():
@@ -38,8 +39,9 @@ def test_ai_review_fixed_glossary_only_keeps_sources_in_current_batch():
 
 
 def test_batch_glossary_unifier_is_bounded():
-    assert batch_glossary_unifier_candidate_limit() == 40
-    assert batch_glossary_unifier_timeout_seconds() == 300
+    assert batch_glossary_unifier_candidate_limit() == 20
+    assert batch_glossary_unifier_concurrency_limit() == 1
+    assert batch_glossary_unifier_timeout_seconds() == 160
 
 
 def test_batch_glossary_summary_can_carry_session_glossary_without_fixed_candidates():

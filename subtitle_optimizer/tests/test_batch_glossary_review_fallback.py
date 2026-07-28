@@ -40,11 +40,14 @@ def _summary(
     )
 
 
-def _worker(client: object | None = None) -> BatchGlossaryWorker:
+def _worker(
+    client: object | None = None,
+    concurrency: int = 2,
+) -> BatchGlossaryWorker:
     return BatchGlossaryWorker(
         client=client,
         files=[],
-        concurrency=2,
+        concurrency=concurrency,
         fixed_glossary="existing->已有译法",
         input_lang="English",
         output_lang="中文",
@@ -202,7 +205,7 @@ def test_local_proxy_unifier_runtime_failure_does_not_send_a_second_request(
         )
 
     assert len(client.calls) == 1
-    assert client.calls[0] is not None
+    assert client.calls[0] == {"reasoning_effort": "none"}
 
 
 def test_remote_unifier_keeps_reasoning_compatibility_fallback(
@@ -240,7 +243,7 @@ def test_remote_unifier_keeps_reasoning_compatibility_fallback(
 
     assert unified == summary
     assert len(client.calls) == 2
-    assert client.calls[0] is not None
+    assert client.calls[0] == {"reasoning_effort": "none"}
     assert client.calls[1] is None
     assert any("远端统一器思考模式不可用" in message for message in logs)
 
@@ -345,10 +348,54 @@ def test_global_unifier_partitions_93_candidates_without_loss(
 
     unified = asyncio.run(worker._unify_candidates_globally(summary))
 
-    assert batch_sizes == [40, 40, 13]
+    assert batch_sizes == [20, 20, 20, 20, 13]
     assert len(unified.session_glossary.splitlines()) == 93
     assert unified.candidates == []
     assert unified.failures == []
+
+
+def test_global_unifier_limits_simultaneous_requests(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    summary = _summary(session_count=0, candidate_count=6)
+    worker = _worker(concurrency=16)
+    active_requests = 0
+    peak_requests = 0
+
+    async def unify_batch(
+        batch_summary: BatchGlossarySummary,
+        batch_candidates: list[GlossaryCandidate],
+    ) -> BatchGlossarySummary:
+        nonlocal active_requests, peak_requests
+        active_requests += 1
+        peak_requests = max(peak_requests, active_requests)
+        await asyncio.sleep(0.01)
+        active_requests -= 1
+        return BatchGlossarySummary(
+            candidates=[],
+            skipped_existing=batch_summary.skipped_existing,
+            failures=[],
+            session_glossary="\n".join(
+                f"{candidate.source}->{candidate.target}"
+                for candidate in batch_candidates
+            ),
+        )
+
+    monkeypatch.setattr(worker, "_unify_single_batch", unify_batch)
+    monkeypatch.setattr(
+        "core.workers.batch_glossary_unifier_candidate_limit",
+        lambda: 2,
+    )
+    monkeypatch.setattr(
+        "core.workers.batch_glossary_unifier_concurrency_limit",
+        lambda: 2,
+        raising=False,
+    )
+
+    unified = asyncio.run(worker._unify_candidates_globally(summary))
+
+    assert peak_requests == 2
+    assert len(unified.session_glossary.splitlines()) == 6
 
 
 def test_global_unifier_unsplittable_failure_preserves_conflicts_and_continues(
