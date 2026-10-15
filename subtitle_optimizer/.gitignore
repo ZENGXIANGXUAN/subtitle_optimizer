@@ -26,6 +26,12 @@ logs/
 *.zip
 _backups/
 
+# 流水线测试运行产物（2026-10-15 起不再入库；历史 _artifacts_2026* 已从 git 移除）
+_artifacts_*/
+
+# 任务作业数据（只留在本地，不进 GitHub）
+job_trading_course/
+
 # 本地配置与密钥
 .env
 .idea/
