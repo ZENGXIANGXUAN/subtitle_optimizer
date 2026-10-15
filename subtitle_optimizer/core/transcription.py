@@ -27,6 +27,19 @@ AUDIO_EXTENSIONS = {
 SRT_EXTENSIONS = {".srt"}
 NO_TRANSCRIBABLE_AUDIO_ERROR = "No transcribable audio was detected in this media file."
 SUPPORTED_AUDIO_EXTRACTION_FORMATS = {"mp3", "wav"}
+WORD_CUE_PAUSE_SECONDS = 0.8
+WORD_CUE_MAX_DURATION_SECONDS = 6.0
+WORD_CUE_MAX_CHARACTERS = 84
+WORD_CUE_MAX_WORDS = 18
+AUDIO_ALIGNMENT_SILENCE_DB = -35
+AUDIO_ALIGNMENT_MIN_SILENCE_SECONDS = 0.6
+AUDIO_ALIGNMENT_MAX_EXTENSION_SECONDS = 6.0
+
+_TERMINAL_PUNCTUATION_RE = re.compile(r'[.!?。！？…][\"\'”’）)\]】」』]*$')
+_NO_SPACE_BEFORE_RE = re.compile(r'^[,.;:!?%。，、；：！？…\"\'”’）)\]】」』]')
+_NO_SPACE_AFTER_RE = re.compile(r'[（(\[【「『\"\'“‘]$')
+_CONTRACTION_RE = re.compile(r"^(?:n['’]t|['’](?:s|re|ve|ll|d|m))$", re.IGNORECASE)
+_CJK_RE = re.compile(r"[\u3400-\u9fff\uf900-\ufaff\u3040-\u30ff\uac00-\ud7af]")
 
 
 def _emit_log(on_log: Callable[[str], None] | None, message: str):
@@ -259,8 +272,234 @@ def prepare_transcription_audio(
     return input_path, None
 
 
-def generate_srt_content(result_data: dict) -> str:
+def _word_chunk_text(chunk: dict) -> str:
+    return str(chunk.get("text") or chunk.get("word") or "").strip()
+
+
+def _join_word_chunk_text(chunks: list[dict]) -> str:
+    """Join word timestamp chunks without corrupting punctuation or CJK text."""
+    joined = ""
+    for chunk in chunks:
+        piece = _word_chunk_text(chunk)
+        if not piece:
+            continue
+        if not joined:
+            joined = piece
+            continue
+        if (
+            _NO_SPACE_BEFORE_RE.search(piece)
+            or _NO_SPACE_AFTER_RE.search(joined)
+            or _CONTRACTION_RE.fullmatch(piece)
+            or (_CJK_RE.search(joined[-1:]) and _CJK_RE.search(piece[:1]))
+        ):
+            joined += piece
+        else:
+            joined += f" {piece}"
+    return joined.strip()
+
+
+def _normalized_word_chunks(chunks: list[dict]) -> list[dict]:
+    normalized: list[dict] = []
+    for chunk in chunks:
+        if not isinstance(chunk, dict):
+            continue
+        text = _word_chunk_text(chunk)
+        if not text:
+            continue
+        try:
+            start = float(chunk.get("start", 0) or 0)
+            end = float(chunk.get("end", start) or start)
+        except (TypeError, ValueError):
+            continue
+        if end < start:
+            continue
+        prepared = {"start": start, "end": end, "text": text}
+        if chunk.get("speaker_id") is not None:
+            prepared["speaker_id"] = chunk["speaker_id"]
+        normalized.append(prepared)
+    return sorted(normalized, key=lambda chunk: (chunk["start"], chunk["end"]))
+
+
+def _group_word_timestamp_chunks(chunks: list[dict]) -> list[dict]:
+    """Build readable cues whose boundaries come from actual spoken words."""
+    words = _normalized_word_chunks(chunks)
+    grouped: list[dict] = []
+    current: list[dict] = []
+
+    def flush() -> None:
+        if not current:
+            return
+        cue = {
+            "start": current[0]["start"],
+            "end": max(word["end"] for word in current),
+            "text": _join_word_chunk_text(current),
+        }
+        if current[0].get("speaker_id") is not None:
+            cue["speaker_id"] = current[0]["speaker_id"]
+        if cue["text"]:
+            grouped.append(cue)
+        current.clear()
+
+    for word in words:
+        if current:
+            previous = current[-1]
+            pause = max(0.0, word["start"] - previous["end"])
+            projected_text = _join_word_chunk_text([*current, word])
+            projected_duration = word["end"] - current[0]["start"]
+            previous_speaker = previous.get("speaker_id")
+            current_speaker = word.get("speaker_id")
+            speaker_changed = (
+                previous_speaker is not None
+                and current_speaker is not None
+                and previous_speaker != current_speaker
+            )
+            if (
+                speaker_changed
+                or pause >= WORD_CUE_PAUSE_SECONDS
+                or projected_duration > WORD_CUE_MAX_DURATION_SECONDS
+                or len(projected_text) > WORD_CUE_MAX_CHARACTERS
+                or len(current) >= WORD_CUE_MAX_WORDS
+            ):
+                flush()
+
+        current.append(word)
+        if _TERMINAL_PUNCTUATION_RE.search(word["text"]):
+            flush()
+
+    flush()
+    return grouped
+
+
+def _subtitle_segments_from_result(result_data: dict) -> list[dict]:
+    """Return subtitle-ready segments, preferring precise word timestamps."""
+    words = result_data.get("words") or []
+    if isinstance(words, list) and words:
+        return _group_word_timestamp_chunks(words)
+
     segments = result_data.get("segments") or []
+    if result_data.get("_timestamp_granularity") == "word":
+        return _group_word_timestamp_chunks(segments)
+    return segments
+
+
+def _detect_long_silences(audio_path: str) -> list[tuple[float, float]]:
+    """Return meaningful silence spans used to close subtitle cues."""
+    cmd = [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostats",
+        "-i",
+        audio_path,
+        "-vn",
+        "-af",
+        (
+            f"silencedetect=noise={AUDIO_ALIGNMENT_SILENCE_DB}dB:"
+            f"d={AUDIO_ALIGNMENT_MIN_SILENCE_SECONDS}"
+        ),
+        "-f",
+        "null",
+        "-",
+    ]
+    result = subprocess.run(cmd, **_media_probe_run_kwargs())
+    output = result.stderr.decode("utf-8", errors="ignore")
+    events = re.finditer(r"silence_(start|end):\s*([0-9.]+)", output)
+    intervals: list[tuple[float, float]] = []
+    pending_start: float | None = None
+    for event in events:
+        value = float(event.group(2))
+        if event.group(1) == "start":
+            pending_start = value
+        elif pending_start is not None and value >= pending_start:
+            intervals.append((pending_start, value))
+            pending_start = None
+    return intervals
+
+
+def _align_subtitle_ends_to_silences(
+    segments: list[dict],
+    silence_intervals: list[tuple[float, float]],
+    max_extension: float = AUDIO_ALIGNMENT_MAX_EXTENSION_SECONDS,
+) -> tuple[list[dict], int]:
+    """Close overlapping cues and extend early ends to the next real pause."""
+    aligned = [dict(segment) for segment in segments]
+    silences = sorted(silence_intervals)
+    changed = 0
+
+    for index, segment in enumerate(aligned):
+        try:
+            cue_start = float(segment.get("start", 0) or 0)
+            cue_end = float(segment.get("end", 0) or 0)
+            next_start = (
+                float(aligned[index + 1].get("start", cue_end) or cue_end)
+                if index + 1 < len(aligned)
+                else None
+            )
+        except (TypeError, ValueError):
+            continue
+
+        # Word timestamps occasionally overlap by a few frames, and chunk
+        # handoffs can retain a longer overlap when the two ASR requests split
+        # the sentence differently.  A subtitle must never remain visible over
+        # the next cue: close it exactly at the next cue's first spoken word
+        # before considering any forward extension.
+        if (
+            next_start is not None
+            and cue_start < next_start < cue_end
+        ):
+            segment["end"] = next_start
+            cue_end = next_start
+            changed += 1
+
+        # A cue that already ends inside a meaningful silence is not early.
+        if any(start <= cue_end < end for start, end in silences):
+            continue
+
+        limit = cue_end + max_extension
+        if next_start is not None:
+            limit = min(limit, next_start)
+        if limit <= cue_end:
+            continue
+
+        target = next(
+            (start for start, _end in silences if cue_end < start <= limit),
+            None,
+        )
+        if target is None and next_start is not None and next_start <= limit:
+            # No meaningful pause separates the adjacent ASR cues.
+            target = next_start
+        if target is not None and target > cue_end + 0.05:
+            segment["end"] = target
+            changed += 1
+
+    return aligned, changed
+
+
+def _align_subtitle_ends_to_audio(
+    segments: list[dict],
+    audio_path: str,
+    on_log: Callable[[str], None] | None = None,
+) -> list[dict]:
+    if not segments:
+        return segments
+    start = time.perf_counter()
+    try:
+        silences = _detect_long_silences(audio_path)
+    except (FileNotFoundError, subprocess.CalledProcessError, OSError) as exc:
+        logger.warning("Audio boundary alignment skipped: %s", exc)
+        _emit_log(on_log, "Audio boundary alignment skipped; keeping API timestamps")
+        return segments
+
+    aligned, changed = _align_subtitle_ends_to_silences(segments, silences)
+    _emit_log(
+        on_log,
+        f"Audio boundary alignment complete: {changed}/{len(segments)} cue ends adjusted "
+        f"({_elapsed(start)})",
+    )
+    return aligned
+
+
+def generate_srt_content(result_data: dict) -> str:
+    segments = _subtitle_segments_from_result(result_data)
     if not segments:
         text = str(result_data.get("text") or "").strip()
         if not text:
@@ -345,7 +584,16 @@ async def transcribe_prepared_audio_to_srt(
         on_log,
         f"Transcription API response received: {len(segments)} segments, text {text_len} chars ({_elapsed(api_start)})",
     )
-    content = generate_srt_content(result)
+    subtitle_segments = _subtitle_segments_from_result(result)
+    if subtitle_segments:
+        subtitle_segments = _align_subtitle_ends_to_audio(
+            subtitle_segments,
+            audio_path,
+            on_log=on_log,
+        )
+        content = generate_srt_content({"segments": subtitle_segments})
+    else:
+        content = generate_srt_content(result)
     srt_path = output_path or default_srt_output_path(source_path)
     with open(srt_path, "w", encoding="utf-8") as f:
         f.write(content)
@@ -487,7 +735,7 @@ def _merge_chunk_segments(
 
     def absolute_segments(result: dict, chunk_start: float) -> list[dict]:
         prepared: list[dict] = []
-        for segment in result.get("segments") or []:
+        for segment in _subtitle_segments_from_result(result):
             text = (segment.get("text") or "").strip()
             if not text:
                 continue
@@ -943,6 +1191,7 @@ async def transcribe_chunked_to_srt(
         _emit_log(on_log, "Merging segments...")
         merged = _merge_chunk_segments(all_results, chunk_starts, overlap)
         _emit_log(on_log, f"Merged: {len(merged)} segments from {num_chunks} chunks")
+        merged = _align_subtitle_ends_to_audio(merged, audio_path, on_log=on_log)
 
         # 7. 生成 SRT
         result_data = {"segments": merged}

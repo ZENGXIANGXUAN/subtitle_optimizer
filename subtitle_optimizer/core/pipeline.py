@@ -1,3 +1,4 @@
+import sys
 import re
 import json
 import asyncio
@@ -66,8 +67,8 @@ class SubtitlePipeline:
     DEFAULT_CONTEXT_SIZE = 12
     DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS = 2
     DEFAULT_CONSISTENCY_GUIDE_RETRY_ATTEMPTS = 2
-    QUALITY_MAX_BATCH_SIZE = 8
-    QUALITY_MAX_CONCURRENCY = 16
+    QUALITY_MAX_BATCH_SIZE = 50
+    QUALITY_MAX_CONCURRENCY = 100
     _TRANSLATION_FAILURE_FLAGS = (
         "source_fallback",
         "translation_batch_failed",
@@ -104,12 +105,14 @@ class SubtitlePipeline:
 
     def _create_session(self) -> aiohttp.ClientSession:
         """Create one reusable HTTP connection pool for a whole stage."""
-        connector = aiohttp.TCPConnector(
-            limit=max(16, self.concurrency * 2),
-            limit_per_host=max(8, self.concurrency),
-            ttl_dns_cache=300,
-            enable_cleanup_closed=True,
-        )
+        connector_kwargs = {
+            "limit": max(16, self.concurrency * 2),
+            "limit_per_host": max(8, self.concurrency),
+            "ttl_dns_cache": 300,
+        }
+        if sys.version_info < (3, 12):
+            connector_kwargs["enable_cleanup_closed"] = True
+        connector = aiohttp.TCPConnector(**connector_kwargs)
         return aiohttp.ClientSession(connector=connector)
 
     def _snapshot_entries(
@@ -340,17 +343,24 @@ class SubtitlePipeline:
         total = len(entries)
         completed = 0
         context_size = self.DEFAULT_CONTEXT_SIZE
+        # Every concurrent request must read from the same pre-translation
+        # state.  The live entries below are write targets only, so a batch
+        # finishing early cannot change the context observed by a later batch.
+        translation_snapshots = self._snapshot_entries(entries)
         starts = list(range(0, total, self.batch_size))
-        batches_with_ctx: list[tuple[list[SubtitleEntry], list[SubtitleEntry], list[SubtitleEntry]]] = []
+        batches_with_ctx: list[
+            tuple[int, list[SubtitleEntry], list[SubtitleEntry], list[SubtitleEntry]]
+        ] = []
         for start in starts:
             end = min(total, start + self.batch_size)
-            batch = entries[start:end]
-            prev = entries[max(0, start - context_size):start]
-            next_ctx = entries[end:min(total, end + context_size)]
-            batches_with_ctx.append((batch, prev, next_ctx))
+            batch = translation_snapshots[start:end]
+            prev = translation_snapshots[max(0, start - context_size):start]
+            next_ctx = translation_snapshots[end:min(total, end + context_size)]
+            batches_with_ctx.append((start, batch, prev, next_ctx))
 
         async with self._create_session() as session:
             async def process_batch(
+                start_pos: int,
                 batch: list[SubtitleEntry],
                 prev_ctx: list[SubtitleEntry],
                 next_ctx: list[SubtitleEntry],
@@ -368,9 +378,12 @@ class SubtitlePipeline:
                             self.input_lang, self.output_lang, prev_ctx, next_ctx,
                             include_context_targets=False,
                         )
-                        for entry in batch:
-                            translation = result_map.get(entry.index, "")
-                            source_text = _get_source_text(entry, self.input_lang_code)
+                        for offset, snapshot in enumerate(batch):
+                            entry = entries[start_pos + offset]
+                            translation = result_map.get(snapshot.index, "")
+                            source_text = _get_source_text(
+                                snapshot, self.input_lang_code
+                            )
                             if (
                                 source_can_remain_untranslated(source_text)
                                 and translation.strip() == source_text.strip()
@@ -389,11 +402,12 @@ class SubtitlePipeline:
                             else:
                                 entry.status = "error"
                                 entry.stage_status = "translation_failed"
-                                if entry.index in unresolved:
+                                if snapshot.index in unresolved:
                                     entry.error_msg = "translation missing after retry"
                     except Exception as exc:
                         logger.error(f"Translate batch failed: {exc}")
-                        for entry in batch:
+                        for offset, _snapshot in enumerate(batch):
+                            entry = entries[start_pos + offset]
                             entry.status = "error"
                             entry.stage_status = "translation_failed"
                             entry.error_msg = "translation batch failed"
@@ -405,8 +419,8 @@ class SubtitlePipeline:
                             on_progress(min(completed, total), total)
 
             await asyncio.gather(*(
-                process_batch(batch, prev, next_ctx)
-                for batch, prev, next_ctx in batches_with_ctx
+                process_batch(start_pos, batch, prev, next_ctx)
+                for start_pos, batch, prev, next_ctx in batches_with_ctx
             ))
 
             unresolved_ids = [
@@ -432,6 +446,7 @@ class SubtitlePipeline:
             repaired, total_incomplete = await _repair_incomplete_segment_translations(
                 entries, context, glossary, self.client, session,
                 self.input_lang, self.output_lang,
+                concurrency=self.concurrency,
             )
 
         if on_log:
@@ -490,7 +505,7 @@ class SubtitlePipeline:
 
             # 忠实度阶段结束后，所有 entry.lines 已冻结。润色并发只写
             # optimized_lines，因此各批次读取到的上下文是确定的。
-            sem = asyncio.Semaphore(max(1, self.concurrency))
+            request_sem = asyncio.Semaphore(max(1, self.concurrency))
             completed = 0
             optimize_recovered = 0
             optimize_failed = 0
@@ -564,6 +579,20 @@ class SubtitlePipeline:
                 if flag not in live.quality_flags:
                     live.quality_flags.append(flag)
 
+            async def run_optimize_request(
+                batch: list[SubtitleEntry],
+                prev_ctx: list[SubtitleEntry],
+                next_ctx: list[SubtitleEntry],
+            ):
+                async with request_sem:
+                    return await asyncio.wait_for(
+                        _optimize_batch_impl(
+                            batch, context, glossary, self.client, session,
+                            self.input_lang, self.output_lang, prev_ctx, next_ctx,
+                        ),
+                        timeout=self.optimize_batch_timeout_seconds,
+                    )
+
             async def process_batch(
                 start_pos: int,
                 batch: list[SubtitleEntry],
@@ -573,114 +602,112 @@ class SubtitlePipeline:
                 nonlocal completed, optimize_recovered, optimize_failed
                 if is_cancelled and is_cancelled():
                     raise asyncio.CancelledError()
-                async with sem:
-                    if is_cancelled and is_cancelled():
-                        raise asyncio.CancelledError()
-                    for offset, snapshot in enumerate(batch):
-                        if self._is_source_identity_allowed(snapshot):
-                            entries[start_pos + offset].optimized_lines = list(
-                                entries[start_pos + offset].lines
-                            )
-                    retry_items: list[tuple[int, SubtitleEntry, str, Exception]] = []
-                    try:
-                        result_map = await asyncio.wait_for(
-                            _optimize_batch_impl(
-                                batch, context, glossary, self.client, session,
-                                self.input_lang, self.output_lang, prev_ctx, next_ctx,
-                            ),
-                            timeout=self.optimize_batch_timeout_seconds,
-                        )
-                        for offset, snapshot in enumerate(batch):
-                            position = start_pos + offset
-                            if self._is_source_identity_allowed(snapshot):
-                                continue
-                            try:
-                                apply_optimized(
-                                    position,
-                                    snapshot,
-                                    result_map.get(snapshot.index),
-                                )
-                            except Exception as item_error:
-                                retry_items.append(
-                                    (position, snapshot, "invalid", item_error)
-                                )
-                    except asyncio.TimeoutError as exc:
-                        ids = [snapshot.index for snapshot in batch]
-                        logger.error(
-                            "Optimize batch timed out after %ss for ids: %s",
-                            self.optimize_batch_timeout_seconds, ids,
-                        )
-                        retry_items.extend(
-                            (start_pos + offset, snapshot, "timeout", exc)
-                            for offset, snapshot in enumerate(batch)
-                        )
-                    except Exception as exc:
-                        logger.error(f"Optimize batch failed: {exc}")
-                        retry_items.extend(
-                            (start_pos + offset, snapshot, "failed", exc)
-                            for offset, snapshot in enumerate(batch)
+
+                for offset, snapshot in enumerate(batch):
+                    if self._is_source_identity_allowed(snapshot):
+                        entries[start_pos + offset].optimized_lines = list(
+                            entries[start_pos + offset].lines
                         )
 
-                    for position, snapshot, initial_kind, initial_error in retry_items:
+                retry_items: list[tuple[int, SubtitleEntry, str, Exception]] = []
+                try:
+                    result_map = await run_optimize_request(
+                        batch, prev_ctx, next_ctx
+                    )
+                    for offset, snapshot in enumerate(batch):
+                        position = start_pos + offset
                         if self._is_source_identity_allowed(snapshot):
                             continue
-                        recovered = False
-                        last_kind = initial_kind
-                        last_error = initial_error
-                        for attempt in range(self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS):
-                            if is_cancelled and is_cancelled():
-                                raise asyncio.CancelledError()
-                            item_prev = optimize_snapshots[
-                                max(0, position - context_size):position
-                            ]
-                            item_next = optimize_snapshots[
-                                position + 1:min(total, position + 1 + context_size)
-                            ]
-                            try:
-                                item_map = await asyncio.wait_for(
-                                    _optimize_batch_impl(
-                                        [snapshot], context, glossary,
-                                        self.client, session,
-                                        self.input_lang, self.output_lang,
-                                        item_prev, item_next,
-                                    ),
-                                    timeout=self.optimize_batch_timeout_seconds,
-                                )
-                                apply_optimized(
-                                    position,
-                                    snapshot,
-                                    item_map.get(snapshot.index),
-                                )
-                                async with counter_lock:
-                                    optimize_recovered += 1
-                                recovered = True
-                                break
-                            except asyncio.TimeoutError as retry_error:
-                                last_kind = "timeout"
-                                last_error = retry_error
-                            except Exception as retry_error:
-                                last_kind = (
-                                    "invalid"
-                                    if isinstance(retry_error, ValueError)
-                                    else "failed"
-                                )
-                                last_error = retry_error
-                            logger.warning(
-                                "Optimize item retry %s/%s failed for id=%s: %s",
-                                attempt + 1,
-                                self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS,
-                                snapshot.index,
-                                last_error,
+                        try:
+                            apply_optimized(
+                                position,
+                                snapshot,
+                                result_map.get(snapshot.index),
                             )
-                        if not recovered:
-                            mark_optimize_failure(
-                                position, last_kind, last_error
+                        except Exception as item_error:
+                            retry_items.append(
+                                (position, snapshot, "invalid", item_error)
+                            )
+                except asyncio.TimeoutError as exc:
+                    ids = [snapshot.index for snapshot in batch]
+                    logger.error(
+                        "Optimize batch timed out after %ss for ids: %s",
+                        self.optimize_batch_timeout_seconds, ids,
+                    )
+                    retry_items.extend(
+                        (start_pos + offset, snapshot, "timeout", exc)
+                        for offset, snapshot in enumerate(batch)
+                    )
+                except Exception as exc:
+                    logger.error(f"Optimize batch failed: {exc}")
+                    retry_items.extend(
+                        (start_pos + offset, snapshot, "failed", exc)
+                        for offset, snapshot in enumerate(batch)
+                    )
+
+                async def retry_one(
+                    position: int,
+                    snapshot: SubtitleEntry,
+                    initial_kind: str,
+                    initial_error: Exception,
+                ) -> None:
+                    nonlocal optimize_recovered, optimize_failed
+                    if self._is_source_identity_allowed(snapshot):
+                        return
+
+                    last_kind = initial_kind
+                    last_error = initial_error
+                    for attempt in range(self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS):
+                        if is_cancelled and is_cancelled():
+                            raise asyncio.CancelledError()
+                        item_prev = optimize_snapshots[
+                            max(0, position - context_size):position
+                        ]
+                        item_next = optimize_snapshots[
+                            position + 1:min(total, position + 1 + context_size)
+                        ]
+                        try:
+                            item_map = await run_optimize_request(
+                                [snapshot], item_prev, item_next
+                            )
+                            apply_optimized(
+                                position,
+                                snapshot,
+                                item_map.get(snapshot.index),
                             )
                             async with counter_lock:
-                                optimize_failed += 1
-                    completed += len(batch)
-                    if on_progress:
-                        on_progress(min(completed, total), total)
+                                optimize_recovered += 1
+                            return
+                        except asyncio.TimeoutError as retry_error:
+                            last_kind = "timeout"
+                            last_error = retry_error
+                        except Exception as retry_error:
+                            last_kind = (
+                                "invalid"
+                                if isinstance(retry_error, ValueError)
+                                else "failed"
+                            )
+                            last_error = retry_error
+                        logger.warning(
+                            "Optimize item retry %s/%s failed for id=%s: %s",
+                            attempt + 1,
+                            self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS,
+                            snapshot.index,
+                            last_error,
+                        )
+
+                    mark_optimize_failure(position, last_kind, last_error)
+                    async with counter_lock:
+                        optimize_failed += 1
+
+                if retry_items:
+                    await asyncio.gather(*(
+                        retry_one(*item) for item in retry_items
+                    ))
+
+                completed += len(batch)
+                if on_progress:
+                    on_progress(min(completed, total), total)
 
             if on_log:
                 on_log("  ✨ 第二轮：自然度与字幕表达润色")
@@ -696,12 +723,6 @@ class SubtitlePipeline:
 
             logger.debug(
                 _format_subtitle_snapshot("AFTER_OPTIMIZE", entries, use_optimized=True)
-            )
-
-            if on_log:
-                on_log("  🌐 第三轮：构建全文术语/专名一致性规则并执行审计")
-            await self._run_consistency_review(
-                entries, context, glossary, session, on_log, is_cancelled
             )
 
         entries = reflow_semantic_entries(
@@ -988,7 +1009,7 @@ class SubtitlePipeline:
         snapshots = self._snapshot_entries(entries)
         total = len(snapshots)
         context_size = self.DEFAULT_CONTEXT_SIZE
-        sem = asyncio.Semaphore(max(1, self.concurrency))
+        request_sem = asyncio.Semaphore(max(1, self.concurrency))
         corrected = 0
         failed_batches = 0
         recovered_items = 0
@@ -1043,6 +1064,20 @@ class SubtitlePipeline:
             if "fidelity_review_failed" not in live.quality_flags:
                 live.quality_flags.append("fidelity_review_failed")
 
+        async def run_fidelity_request(
+            batch: list[SubtitleEntry],
+            prev_ctx: list[SubtitleEntry],
+            next_ctx: list[SubtitleEntry],
+        ):
+            async with request_sem:
+                return await asyncio.wait_for(
+                    fidelity_review_batch(
+                        batch, context, glossary, self.client, session,
+                        self.input_lang, self.output_lang, prev_ctx, next_ctx,
+                    ),
+                    timeout=self.fidelity_batch_timeout_seconds,
+                )
+
         async def process(
             start: int,
             batch: list[SubtitleEntry],
@@ -1052,88 +1087,90 @@ class SubtitlePipeline:
             nonlocal corrected, failed_batches, recovered_items, failed_items
             if is_cancelled and is_cancelled():
                 raise asyncio.CancelledError()
-            async with sem:
-                try:
-                    result_map = await asyncio.wait_for(
-                        fidelity_review_batch(
-                            batch, context, glossary, self.client, session,
-                            self.input_lang, self.output_lang, prev_ctx, next_ctx,
-                        ),
-                        timeout=self.fidelity_batch_timeout_seconds,
+
+            try:
+                result_map = await run_fidelity_request(
+                    batch, prev_ctx, next_ctx
+                )
+                validated: list[tuple[int, SubtitleEntry, str]] = []
+                for offset, snapshot in enumerate(batch):
+                    if self._is_source_identity_allowed(snapshot):
+                        continue
+                    source_text = _get_source_text(
+                        snapshot, self.input_lang_code
                     )
-                    validated: list[tuple[int, SubtitleEntry, str]] = []
-                    for offset, snapshot in enumerate(batch):
-                        if self._is_source_identity_allowed(snapshot):
-                            continue
-                        source_text = _get_source_text(snapshot, self.input_lang_code)
+                    target = result_map.get(snapshot.index, "")
+                    if not _translation_is_usable(
+                        target, source_text, self.output_lang, self.input_lang
+                    ):
+                        raise ValueError(
+                            f"fidelity invalid target id={snapshot.index}"
+                        )
+                    validated.append((start + offset, snapshot, target))
+
+                local_corrected = sum(
+                    apply_target(position, snapshot, target)
+                    for position, snapshot, target in validated
+                )
+                async with counter_lock:
+                    corrected += local_corrected
+                return
+            except Exception as exc:
+                batch_error = exc
+                logger.error("Fidelity review batch failed: %s", exc)
+                async with counter_lock:
+                    failed_batches += 1
+
+            async def retry_one(
+                offset: int,
+                snapshot: SubtitleEntry,
+                initial_error: Exception,
+            ) -> None:
+                nonlocal corrected, recovered_items, failed_items
+                position = start + offset
+                if self._is_source_identity_allowed(snapshot):
+                    return
+
+                last_error = initial_error
+                for attempt in range(self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS):
+                    if is_cancelled and is_cancelled():
+                        raise asyncio.CancelledError()
+                    item_prev = snapshots[
+                        max(0, position - context_size):position
+                    ]
+                    item_next = snapshots[
+                        position + 1:min(total, position + 1 + context_size)
+                    ]
+                    try:
+                        result_map = await run_fidelity_request(
+                            [snapshot], item_prev, item_next
+                        )
                         target = result_map.get(snapshot.index, "")
-                        if not _translation_is_usable(
-                            target, source_text, self.output_lang, self.input_lang
-                        ):
-                            raise ValueError(
-                                f"fidelity invalid target id={snapshot.index}"
-                            )
-                        validated.append((start + offset, snapshot, target))
-
-                    local_corrected = sum(
-                        apply_target(position, snapshot, target)
-                        for position, snapshot, target in validated
-                    )
-                    async with counter_lock:
-                        corrected += local_corrected
-                except Exception as exc:
-                    logger.error("Fidelity review batch failed: %s", exc)
-                    async with counter_lock:
-                        failed_batches += 1
-
-                    for offset, snapshot in enumerate(batch):
-                        position = start + offset
-                        if self._is_source_identity_allowed(snapshot):
-                            continue
-                        last_error: Exception = exc
-                        recovered = False
-                        for attempt in range(self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS):
-                            if is_cancelled and is_cancelled():
-                                raise asyncio.CancelledError()
-                            item_prev = snapshots[
-                                max(0, position - context_size):position
-                            ]
-                            item_next = snapshots[
-                                position + 1:min(total, position + 1 + context_size)
-                            ]
-                            try:
-                                result_map = await asyncio.wait_for(
-                                    fidelity_review_batch(
-                                        [snapshot], context, glossary,
-                                        self.client, session,
-                                        self.input_lang, self.output_lang,
-                                        item_prev, item_next,
-                                    ),
-                                    timeout=self.fidelity_batch_timeout_seconds,
-                                )
-                                target = result_map.get(snapshot.index, "")
-                                local_corrected = apply_target(
-                                    position, snapshot, target
-                                )
-                                async with counter_lock:
-                                    corrected += local_corrected
-                                    recovered_items += 1
-                                recovered = True
-                                break
-                            except Exception as retry_exc:
-                                last_error = retry_exc
-                                logger.warning(
-                                    "Fidelity item retry %s/%s failed for id=%s: %s",
-                                    attempt + 1,
-                                    self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS,
-                                    snapshot.index,
-                                    retry_exc,
-                                )
-                        if recovered:
-                            continue
-                        keep_existing_after_fidelity_failure(position, last_error)
+                        local_corrected = apply_target(
+                            position, snapshot, target
+                        )
                         async with counter_lock:
-                            failed_items += 1
+                            corrected += local_corrected
+                            recovered_items += 1
+                        return
+                    except Exception as retry_exc:
+                        last_error = retry_exc
+                        logger.warning(
+                            "Fidelity item retry %s/%s failed for id=%s: %s",
+                            attempt + 1,
+                            self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS,
+                            snapshot.index,
+                            retry_exc,
+                        )
+
+                keep_existing_after_fidelity_failure(position, last_error)
+                async with counter_lock:
+                    failed_items += 1
+
+            await asyncio.gather(*(
+                retry_one(offset, snapshot, batch_error)
+                for offset, snapshot in enumerate(batch)
+            ))
 
         await asyncio.gather(*(process(*job) for job in jobs))
         if on_log:
@@ -1163,7 +1200,7 @@ class SubtitlePipeline:
                     entries, context, glossary, self.client, session,
                     self.input_lang, self.output_lang,
                     chunk_size=max(40, self.batch_size * 10),
-                    concurrency=max(1, min(4, self.concurrency)),
+                    concurrency=max(1, self.concurrency),
                     retry_state=guide_retry_state,
                 )
                 guide_error = None
@@ -1213,7 +1250,7 @@ class SubtitlePipeline:
         snapshots = self._snapshot_entries(entries, use_optimized=True)
         total = len(snapshots)
         context_size = self.DEFAULT_CONTEXT_SIZE
-        sem = asyncio.Semaphore(max(1, self.concurrency))
+        request_sem = asyncio.Semaphore(max(1, self.concurrency))
         changed = 0
         failed_batches = 0
         recovered_items = 0
@@ -1272,6 +1309,20 @@ class SubtitlePipeline:
                 else "consistency_skipped_fallback"
             )
 
+        async def run_consistency_request(
+            batch: list[SubtitleEntry],
+            prev_ctx: list[SubtitleEntry],
+            next_ctx: list[SubtitleEntry],
+        ):
+            async with request_sem:
+                return await asyncio.wait_for(
+                    consistency_review_batch(
+                        batch, guide, context, self.client, session,
+                        self.input_lang, self.output_lang, prev_ctx, next_ctx,
+                    ),
+                    timeout=self.consistency_batch_timeout_seconds,
+                )
+
         async def process(
             start: int,
             batch: list[SubtitleEntry],
@@ -1281,89 +1332,90 @@ class SubtitlePipeline:
             nonlocal changed, failed_batches, recovered_items, failed_items
             if is_cancelled and is_cancelled():
                 raise asyncio.CancelledError()
-            async with sem:
-                try:
-                    result_map = await asyncio.wait_for(
-                        consistency_review_batch(
-                            batch, guide, context, self.client, session,
-                            self.input_lang, self.output_lang, prev_ctx, next_ctx,
-                        ),
-                        timeout=self.consistency_batch_timeout_seconds,
+
+            try:
+                result_map = await run_consistency_request(
+                    batch, prev_ctx, next_ctx
+                )
+                validated: list[tuple[int, SubtitleEntry, str]] = []
+                for offset, snapshot in enumerate(batch):
+                    if self._is_source_identity_allowed(snapshot):
+                        continue
+                    source_text = _get_source_text(
+                        snapshot, self.input_lang_code
                     )
-                    validated: list[tuple[int, SubtitleEntry, str]] = []
-                    for offset, snapshot in enumerate(batch):
-                        if self._is_source_identity_allowed(snapshot):
-                            continue
-                        source_text = _get_source_text(snapshot, self.input_lang_code)
+                    target = result_map.get(snapshot.index, "")
+                    if not _translation_is_usable(
+                        target, source_text, self.output_lang, self.input_lang
+                    ):
+                        raise ValueError(
+                            f"consistency invalid target id={snapshot.index}"
+                        )
+                    validated.append((start + offset, snapshot, target))
+
+                local_changed = sum(
+                    apply_target(position, snapshot, target)
+                    for position, snapshot, target in validated
+                )
+                async with counter_lock:
+                    changed += local_changed
+                return
+            except Exception as exc:
+                batch_error = exc
+                logger.error("Consistency review batch failed: %s", exc)
+                async with counter_lock:
+                    failed_batches += 1
+
+            async def retry_one(
+                offset: int,
+                snapshot: SubtitleEntry,
+                initial_error: Exception,
+            ) -> None:
+                nonlocal changed, recovered_items, failed_items
+                position = start + offset
+                if self._is_source_identity_allowed(snapshot):
+                    return
+
+                last_error = initial_error
+                for attempt in range(self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS):
+                    if is_cancelled and is_cancelled():
+                        raise asyncio.CancelledError()
+                    item_prev = snapshots[
+                        max(0, position - context_size):position
+                    ]
+                    item_next = snapshots[
+                        position + 1:min(total, position + 1 + context_size)
+                    ]
+                    try:
+                        result_map = await run_consistency_request(
+                            [snapshot], item_prev, item_next
+                        )
                         target = result_map.get(snapshot.index, "")
-                        if not _translation_is_usable(
-                            target, source_text, self.output_lang, self.input_lang
-                        ):
-                            raise ValueError(
-                                f"consistency invalid target id={snapshot.index}"
-                            )
-                        validated.append((start + offset, snapshot, target))
-
-                    local_changed = sum(
-                        apply_target(position, snapshot, target)
-                        for position, snapshot, target in validated
-                    )
-                    async with counter_lock:
-                        changed += local_changed
-                except Exception as exc:
-                    logger.error("Consistency review batch failed: %s", exc)
-                    async with counter_lock:
-                        failed_batches += 1
-
-                    for offset, snapshot in enumerate(batch):
-                        position = start + offset
-                        if self._is_source_identity_allowed(snapshot):
-                            continue
-                        last_error: Exception = exc
-                        recovered = False
-                        for attempt in range(self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS):
-                            if is_cancelled and is_cancelled():
-                                raise asyncio.CancelledError()
-                            item_prev = snapshots[
-                                max(0, position - context_size):position
-                            ]
-                            item_next = snapshots[
-                                position + 1:min(total, position + 1 + context_size)
-                            ]
-                            try:
-                                result_map = await asyncio.wait_for(
-                                    consistency_review_batch(
-                                        [snapshot], guide, context,
-                                        self.client, session,
-                                        self.input_lang, self.output_lang,
-                                        item_prev, item_next,
-                                    ),
-                                    timeout=self.consistency_batch_timeout_seconds,
-                                )
-                                target = result_map.get(snapshot.index, "")
-                                local_changed = apply_target(
-                                    position, snapshot, target
-                                )
-                                async with counter_lock:
-                                    changed += local_changed
-                                    recovered_items += 1
-                                recovered = True
-                                break
-                            except Exception as retry_exc:
-                                last_error = retry_exc
-                                logger.warning(
-                                    "Consistency item retry %s/%s failed for id=%s: %s",
-                                    attempt + 1,
-                                    self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS,
-                                    snapshot.index,
-                                    retry_exc,
-                                )
-                        if recovered:
-                            continue
-
-                        keep_existing_after_consistency_failure(position, last_error)
+                        local_changed = apply_target(
+                            position, snapshot, target
+                        )
                         async with counter_lock:
-                            failed_items += 1
+                            changed += local_changed
+                            recovered_items += 1
+                        return
+                    except Exception as retry_exc:
+                        last_error = retry_exc
+                        logger.warning(
+                            "Consistency item retry %s/%s failed for id=%s: %s",
+                            attempt + 1,
+                            self.DEFAULT_QUALITY_ITEM_RETRY_ATTEMPTS,
+                            snapshot.index,
+                            retry_exc,
+                        )
+
+                keep_existing_after_consistency_failure(position, last_error)
+                async with counter_lock:
+                    failed_items += 1
+
+            await asyncio.gather(*(
+                retry_one(offset, snapshot, batch_error)
+                for offset, snapshot in enumerate(batch)
+            ))
 
         await asyncio.gather(*(process(*job) for job in jobs))
         if on_log:

@@ -5,52 +5,55 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from core.batch_glossary import BatchGlossarySummary, GlossaryCandidate
 from ui.main_window import MainWindow
 
 
-def test_auto_review_fallback_starts_formal_batch_without_promoting_candidates() -> None:
+def test_batch_start_directly_starts_batch_worker_without_preanalysis() -> None:
     settings = {
         "files": ["one.srt", "two.srt", "three.srt"],
-        "manual_glossary_review": False,
+        "client": object(),
+        "transcribe_only": False,
     }
     started: list[dict] = []
-    fixed_appends: list[str] = []
     logs: list[str] = []
 
+    class FakeBar:
+        def setMaximum(self, val): pass
+        def setValue(self, val): pass
+        def clear(self): pass
+
+    class FakeList:
+        def count(self): return 0
+
+    class FakeButton:
+        def setEnabled(self, val): pass
+
     class FakeWindow:
-        _batch_glossary_settings = settings
+        _batch_files = settings["files"]
+        btn_batch_start = FakeButton()
+        btn_batch_stop = FakeButton()
+        batch_overall_bar = FakeBar()
+        batch_log = FakeBar()
+        batch_list = FakeList()
+
+        def _batch_settings(self):
+            return settings
+
+        def _cleanup_batch_pipeline(self):
+            pass
 
         def _batch_log_msg(self, message: str) -> None:
             logs.append(message)
 
-        def _append_fixed_glossary_text(self, glossary: str) -> None:
-            fixed_appends.append(glossary)
+        def _batch_set_item_status(self, idx, status):
+            pass
 
         def _start_batch_worker(self, batch_settings: dict) -> None:
             started.append(batch_settings)
 
-        def _reset_batch_controls_after_preanalysis_stop(self) -> None:
-            raise AssertionError("safe self-review fallback must not stop the batch")
-
-    summary = BatchGlossarySummary(
-        candidates=[
-            GlossaryCandidate(
-                source="gamma exposure",
-                target="伽马敞口",
-                files=("one.srt",),
-                status="需确认",
-            )
-        ],
-        skipped_existing=[],
-        failures=[],
-        session_glossary="gamma exposure->伽马敞口",
-        fixed_glossary="",
-    )
-
-    MainWindow._after_batch_glossary_preanalysis(FakeWindow(), summary)
+    window = FakeWindow()
+    MainWindow._batch_start(window)
 
     assert started == [settings]
-    assert settings["session_glossary"] == summary.session_glossary
-    assert fixed_appends == []
-    assert any("本次批量临时术语 1 条" in message for message in logs)
+    assert any("开始批量处理" in message for message in logs)
+    assert not hasattr(MainWindow, "_start_batch_glossary_preanalysis")

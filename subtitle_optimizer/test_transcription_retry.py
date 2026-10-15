@@ -62,6 +62,7 @@ class _Session:
     outcomes = []
     attempts = 0
     request_timeouts = []
+    request_form_fields = []
 
     def __init__(self, *args, **kwargs):
         pass
@@ -76,6 +77,10 @@ class _Session:
         type(self).attempts += 1
         timeout = kwargs.get("timeout")
         type(self).request_timeouts.append(getattr(timeout, "total", None))
+        form_data = kwargs.get("data")
+        type(self).request_form_fields.append(
+            list(getattr(form_data, "fields", []))
+        )
         return _PostContext(type(self).outcomes.pop(0))
 
 
@@ -117,10 +122,12 @@ class TranscriptionRetryTests(unittest.IsolatedAsyncioTestCase):
         _Session.outcomes = []
         _Session.attempts = 0
         _Session.request_timeouts = []
+        _Session.request_form_fields = []
         fd, self.audio_path = tempfile.mkstemp(suffix=".mp3")
         os.close(fd)
 
     def tearDown(self):
+        client_module.aiohttp = _REAL_AIOHTTP
         try:
             os.remove(self.audio_path)
         except OSError:
@@ -167,6 +174,36 @@ class TranscriptionRetryTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(1, _Session.attempts)
         self.assertTrue(any("returned empty transcript" in line for line in logs))
         self.assertFalse(any("request 2/3 starting" in line for line in logs))
+
+    async def test_transcription_requests_word_level_timestamps(self):
+        _Session.outcomes = [
+            _Response(
+                200,
+                {
+                    "segments": [
+                        {"start": 0.0, "end": 0.4, "text": "hello"},
+                    ],
+                    "text": "hello",
+                },
+            )
+        ]
+
+        client = MistralClient("key", transcription_model="voxtral")
+        result = await client.transcribe_audio(
+            self.audio_path,
+            retry_delay_seconds=0,
+        )
+
+        fields = [
+            args[:2]
+            for args, _kwargs in _Session.request_form_fields[0]
+            if len(args) >= 2
+        ]
+        self.assertIn(("timestamp_granularities", "word"), fields)
+        self.assertNotIn(("timestamp_granularities", "segment"), fields)
+        self.assertIn(("diarize", "false"), fields)
+        self.assertNotIn(("diarize", "true"), fields)
+        self.assertEqual("word", result["_timestamp_granularity"])
 
     async def test_client_error_status_fails_without_more_requests(self):
         _Session.outcomes = [
@@ -244,7 +281,7 @@ class TranscriptionRetryTests(unittest.IsolatedAsyncioTestCase):
                     )
 
                 self.assertEqual(1, _Session.attempts)
-                self.assertEqual([175.0], _Session.request_timeouts)
+                self.assertEqual([360.0], _Session.request_timeouts)
 
     async def test_remote_chat_keeps_client_retry_policy(self):
         _Session.outcomes = [
@@ -264,7 +301,7 @@ class TranscriptionRetryTests(unittest.IsolatedAsyncioTestCase):
 
         self.assertEqual("recovered", result)
         self.assertEqual(2, _Session.attempts)
-        self.assertEqual([180.0, 180.0], _Session.request_timeouts)
+        self.assertEqual([360.0, 360.0], _Session.request_timeouts)
 
     async def test_chat_cancellation_is_not_retried_or_wrapped(self):
         _Session.outcomes = [asyncio.CancelledError()]

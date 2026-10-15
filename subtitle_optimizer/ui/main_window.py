@@ -28,7 +28,11 @@ class NoWheelComboBox(QComboBox):
 
 # 导入业务层逻辑和界面辅助
 from core.models import SubtitleEntry, parse_srt, _format_subtitle_snapshot
-from core.client import MistralClient
+from core.client import (
+    MistralClient,
+    TRANSLATION_PROVIDERS,
+    TRANSCRIPTION_PROVIDERS,
+)
 from core.pipeline import SubtitlePipeline
 from core.workers import (
     AnalysisResult,
@@ -38,7 +42,6 @@ from core.workers import (
     SegmentWorker,
     TranslateWorker,
     BatchWorker,
-    BatchGlossaryWorker,
     TranscriptionWorker,
     LANGUAGE_MAP,
     LANGUAGE_LABELS,
@@ -112,11 +115,12 @@ class MainWindow(QMainWindow):
         self._transcription_worker: Optional[TranscriptionWorker] = None
         self._batch_thread: Optional[QThread] = None
         self._batch_worker: Optional[BatchWorker] = None
-        self._batch_glossary_thread: Optional[QThread] = None
-        self._batch_glossary_worker: Optional[BatchGlossaryWorker] = None
-        self._batch_glossary_settings: Optional[dict] = None
         self._pipeline_active = False  # 防止停止后旧信号继续推进流水线
         self._last_quality_report = None
+
+        # 服务商不再作为 UI 选项展示；保留内部值以兼容旧配置和不同转录协议。
+        self._translation_provider = "Mistral AI"
+        self._transcription_provider = "Mistral AI"
 
         self._batch_files: list = []
         # 存储各阶段的字幕数据，用于对比查看
@@ -584,14 +588,15 @@ class MainWindow(QMainWindow):
 
         left_card = QFrame()
         left_card.setStyleSheet("""
-            QFrame {
+            QFrame#left_settings_card {
                 background: rgb(247, 243, 223);
                 border: 2px solid #c4b89e;
                 border-radius: 10px;
             }
         """)
+        left_card.setObjectName("left_settings_card")
         lc = QVBoxLayout(left_card)
-        lc.setContentsMargins(24, 20, 24, 20)
+        lc.setContentsMargins(18, 16, 18, 16)
         lc.setSpacing(14)
 
         def _section_lbl(text):
@@ -599,7 +604,18 @@ class MainWindow(QMainWindow):
             lb.setStyleSheet("color: #8a7b66; font-size: 11px; font-weight: 600; letter-spacing: 0.5px;")
             return lb
 
-        lc.addWidget(_section_lbl("API Key"))
+        # ── 1. 翻译与优化服务商 ──
+        grp_trans = QGroupBox("🌐 翻译与优化服务商")
+        lt = QVBoxLayout(grp_trans)
+        lt.setContentsMargins(14, 16, 14, 14)
+        lt.setSpacing(10)
+
+        lt.addWidget(_section_lbl("API URL / Base URL  （留空使用 Mistral 默认）"))
+        self.input_base_url = QLineEdit()
+        self.input_base_url.setPlaceholderText("https://api.mistral.ai/v1")
+        lt.addWidget(self.input_base_url)
+
+        lt.addWidget(_section_lbl("API Key"))
         key_row = QHBoxLayout()
         self.input_apikey = QLineEdit()
         self.input_apikey.setPlaceholderText("sk-••••••••••••••••")
@@ -623,34 +639,79 @@ class MainWindow(QMainWindow):
 
         btn_toggle_key.clicked.connect(_toggle_key_vis)
         key_row.addWidget(btn_toggle_key)
-        lc.addLayout(key_row)
+        lt.addLayout(key_row)
 
-        lc.addWidget(_section_lbl("Base URL  （留空使用官方默认）"))
-        self.input_base_url = QLineEdit()
-        self.input_base_url.setPlaceholderText("https://api.mistral.ai/v1")
-        lc.addWidget(self.input_base_url)
-
-        lc.addWidget(_section_lbl("模型  （可下拉选择或直接输入自定义名称）"))
+        lt.addWidget(_section_lbl("翻译模型  （可下拉选择或直接输入自定义名称）"))
         self.combo_model = NoWheelComboBox()
         self.combo_model.setEditable(True)
-        self.combo_model.addItems([
-            "mistral-large-latest",
-            "mistral-medium-latest",
-            "mistral-small-latest",
-            "open-mistral-7b",
-        ])
+        self.combo_model.addItems(TRANSLATION_PROVIDERS["Mistral AI"]["models"])
         self.combo_model.setPlaceholderText("输入或选择模型名称")
-        lc.addWidget(self.combo_model)
+        lt.addWidget(self.combo_model)
 
-        lc.addWidget(_section_lbl("Transcription model"))
-        self.input_transcription_model = QLineEdit("voxtral-mini-latest")
-        self.input_transcription_model.setPlaceholderText("voxtral-mini-latest")
-        lc.addWidget(self.input_transcription_model)
+        lc.addWidget(grp_trans)
+
+        # ── 2. 转录服务商 ──
+        grp_transcribe = QGroupBox("🎙️ 转录服务商")
+        ls = QVBoxLayout(grp_transcribe)
+        ls.setContentsMargins(14, 16, 14, 14)
+        ls.setSpacing(10)
+
+        ls.addWidget(_section_lbl("API URL / Base URL  （留空使用 Mistral 默认）"))
+        self.input_transcription_base_url = QLineEdit()
+        self.input_transcription_base_url.setPlaceholderText("https://api.mistral.ai/v1")
+        ls.addWidget(self.input_transcription_base_url)
+
+        ls.addWidget(_section_lbl("API Key  （留空则复用翻译 API Key）"))
+        tkey_row = QHBoxLayout()
+        self.input_transcription_apikey = QLineEdit()
+        self.input_transcription_apikey.setPlaceholderText("sk-••••••••••••••••（留空复用翻译 Key）")
+        self.input_transcription_apikey.setEchoMode(QLineEdit.EchoMode.Password)
+        tkey_row.addWidget(self.input_transcription_apikey)
+        btn_toggle_tkey = QPushButton("显示")
+        btn_toggle_tkey.setMaximumWidth(52)
+        btn_toggle_tkey.setStyleSheet("""
+            QPushButton { background: #f8f8f0; border: 2px solid #c4b89e;
+                border-radius: 6px; color: #8a7b66; padding: 4px 8px; font-size: 11px; }
+            QPushButton:hover { border-color: #8a7b66; color: #725d42; }
+        """)
+
+        def _toggle_tkey_vis():
+            if self.input_transcription_apikey.echoMode() == QLineEdit.EchoMode.Password:
+                self.input_transcription_apikey.setEchoMode(QLineEdit.EchoMode.Normal)
+                btn_toggle_tkey.setText("隐藏")
+            else:
+                self.input_transcription_apikey.setEchoMode(QLineEdit.EchoMode.Password)
+                btn_toggle_tkey.setText("显示")
+
+        btn_toggle_tkey.clicked.connect(_toggle_tkey_vis)
+        tkey_row.addWidget(btn_toggle_tkey)
+        ls.addLayout(tkey_row)
+
+        ls.addWidget(_section_lbl("转录模型  （可下拉选择或直接输入自定义名称）"))
+        self.combo_transcription_model = NoWheelComboBox()
+        self.combo_transcription_model.setEditable(True)
+        self.combo_transcription_model.addItems(TRANSCRIPTION_PROVIDERS["Mistral AI"]["models"])
+        self.combo_transcription_model.setPlaceholderText("voxtral-mini-latest")
+        self.combo_transcription_model.setCurrentText("voxtral-mini-latest")
+        # 兼容旧代码引用 input_transcription_model
+        self.input_transcription_model = self.combo_transcription_model
+        self.combo_transcription_model.text = lambda: self.combo_transcription_model.currentText()
+        self.combo_transcription_model.setText = lambda t: self.combo_transcription_model.setCurrentText(t)
+        ls.addWidget(self.combo_transcription_model)
+
         self.chk_transcription_wav = QCheckBox("转录提取音频使用 WAV（质量优先，临时文件更大）")
         self.chk_transcription_wav.setToolTip("默认使用 MP3；勾选后视频转录会提取 16k mono WAV 再发送给转录 API。")
-        lc.addWidget(self.chk_transcription_wav)
+        ls.addWidget(self.chk_transcription_wav)
 
-        lc.addWidget(_section_lbl("性能参数"))
+        lc.addWidget(grp_transcribe)
+
+        # ── 3. 性能与字幕参数 ──
+        grp_params = QGroupBox("⚙ 性能与字幕参数")
+        lp = QVBoxLayout(grp_params)
+        lp.setContentsMargins(14, 16, 14, 14)
+        lp.setSpacing(10)
+
+        lp.addWidget(_section_lbl("性能参数"))
         params_row = QHBoxLayout()
         params_row.setSpacing(12)
 
@@ -665,6 +726,11 @@ class MainWindow(QMainWindow):
                 1, PIPELINE_MAX_CONCURRENCY
             )
         )
+        self.input_concurrency.setToolTip(
+            "API 并发请求数 (1–100)。\n"
+            "• 官方公有云 API 建议：8 ~ 16（防止触发 429 频控）；\n"
+            "• 本地多账号代理池 (如 Freebuff Proxy) 或自建 API：可设 30 ~ 60。"
+        )
         conc_wrap.addWidget(self.input_concurrency)
         params_row.addLayout(conc_wrap)
 
@@ -675,11 +741,16 @@ class MainWindow(QMainWindow):
         self.input_batch = QLineEdit("5")
         self.input_batch.setPlaceholderText("1-50")
         self.input_batch.setValidator(__import__('PyQt6.QtGui', fromlist=['QIntValidator']).QIntValidator(1, 50))
+        self.input_batch.setToolTip(
+            "每批发送给 AI 的字幕条数 (1–50)。\n"
+            "• 推荐：8 ~ 15（兼顾上下文理解连贯性与翻译吞吐量）；\n"
+            "• 单批条数越多，总请求数越少；若字幕总条数较少，调大批大小反而会减少在途并发。"
+        )
         batch_wrap.addWidget(self.input_batch)
         params_row.addLayout(batch_wrap)
-        lc.addLayout(params_row)
+        lp.addLayout(params_row)
 
-        lc.addWidget(_section_lbl("输入字幕布局"))
+        lp.addWidget(_section_lbl("输入字幕布局"))
         layout_row = QHBoxLayout()
         layout_row.setSpacing(12)
         layout_desc = QLabel("布局识别：")
@@ -693,7 +764,7 @@ class MainWindow(QMainWindow):
             "自动模式优先防止丢行；同文字体系的双语字幕请手动选择双语布局"
         )
         layout_row.addWidget(self.combo_source_layout, 1)
-        lc.addLayout(layout_row)
+        lp.addLayout(layout_row)
 
         order_row = QHBoxLayout()
         order_row.setSpacing(12)
@@ -707,9 +778,9 @@ class MainWindow(QMainWindow):
         order_hint = QLabel("仅用于输入解析，不影响输出顺序")
         order_hint.setStyleSheet("color: #8a7b66; font-size: 11px;")
         order_row.addWidget(order_hint)
-        lc.addLayout(order_row)
+        lp.addLayout(order_row)
 
-        lc.addWidget(_section_lbl("语言设置"))
+        lp.addWidget(_section_lbl("语言设置"))
         lang_row = QHBoxLayout()
         lang_row.setSpacing(12)
 
@@ -736,11 +807,18 @@ class MainWindow(QMainWindow):
         lang_row.addLayout(out_lang_wrap)
         self.combo_input_lang.currentTextChanged.connect(lambda _text: self._refresh_glossary_headers())
         self.combo_output_lang.currentTextChanged.connect(lambda _text: self._refresh_glossary_headers())
+        lp.addLayout(lang_row)
 
-        lc.addLayout(lang_row)
-
+        lc.addWidget(grp_params)
         lc.addStretch()
-        cols.addWidget(left_card, 1)
+
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setFrameShape(QFrame.Shape.NoFrame)
+        scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        scroll.setStyleSheet("QScrollArea { background: transparent; border: none; }")
+        scroll.setWidget(left_card)
+        cols.addWidget(scroll, 1)
 
         right_card = QFrame()
         right_card.setStyleSheet("""
@@ -854,6 +932,64 @@ class MainWindow(QMainWindow):
         cols.addWidget(right_card, 1)
         return w
 
+    def _on_translation_provider_changed(self, provider_name: str):
+        info = TRANSLATION_PROVIDERS.get(provider_name)
+        if not info:
+            return
+        self._translation_provider = provider_name
+        if getattr(self, "_is_loading_config", False):
+            return
+        if info["base_url"]:
+            self.input_base_url.setText(info["base_url"])
+        self.input_base_url.setPlaceholderText(info["base_url"] or "https://api.mistral.ai/v1")
+
+        models = info.get("models", [])
+        current = self.combo_model.currentText().strip()
+        self.combo_model.blockSignals(True)
+        self.combo_model.clear()
+        if models:
+            self.combo_model.addItems(models)
+            if current in models:
+                self.combo_model.setCurrentText(current)
+            elif info.get("default_model"):
+                self.combo_model.setCurrentText(info["default_model"])
+            else:
+                self.combo_model.setCurrentText(current)
+        else:
+            if current:
+                self.combo_model.addItem(current)
+                self.combo_model.setCurrentText(current)
+        self.combo_model.blockSignals(False)
+
+    def _on_transcription_provider_changed(self, provider_name: str):
+        info = TRANSCRIPTION_PROVIDERS.get(provider_name)
+        if not info:
+            return
+        self._transcription_provider = provider_name
+        if getattr(self, "_is_loading_config", False):
+            return
+        if info["base_url"]:
+            self.input_transcription_base_url.setText(info["base_url"])
+        self.input_transcription_base_url.setPlaceholderText(info["base_url"] or "https://api.mistral.ai/v1")
+
+        models = info.get("models", [])
+        current = self.combo_transcription_model.currentText().strip()
+        self.combo_transcription_model.blockSignals(True)
+        self.combo_transcription_model.clear()
+        if models:
+            self.combo_transcription_model.addItems(models)
+            if current in models:
+                self.combo_transcription_model.setCurrentText(current)
+            elif info.get("default_model"):
+                self.combo_transcription_model.setCurrentText(info["default_model"])
+            else:
+                self.combo_transcription_model.setCurrentText(current)
+        else:
+            if current:
+                self.combo_transcription_model.addItem(current)
+                self.combo_transcription_model.setCurrentText(current)
+        self.combo_transcription_model.blockSignals(False)
+
     def _build_batch_page(self) -> QWidget:
         w = QWidget()
         layout = QHBoxLayout(w)
@@ -922,12 +1058,6 @@ class MainWindow(QMainWindow):
         note.setWordWrap(True)
         og_out.addWidget(note)
         ll.addWidget(out_group)
-
-        self.chk_batch_glossary_review = QCheckBox("手动审核术语")
-        self.chk_batch_glossary_review.setChecked(False)
-        self.chk_batch_glossary_review.setToolTip("关闭时由 AI 自动自审并继续；开启时弹出术语表供手动删除/确认。")
-        self.chk_batch_glossary_review.stateChanged.connect(self._on_batch_glossary_review_changed)
-        ll.addWidget(self.chk_batch_glossary_review)
 
         self.chk_batch_transcribe_only = QCheckBox("仅转录")
         self.chk_batch_transcribe_only.setToolTip("只将音频/视频转成原目录同名 .srt，不执行后续优化")
@@ -1005,14 +1135,7 @@ class MainWindow(QMainWindow):
         self.out_dir_widget.setVisible(state == 0)
 
     def _on_batch_transcribe_only_changed(self, state):
-        transcribe_only = state != 0
-        if transcribe_only:
-            self.chk_batch_glossary_review.setChecked(False)
-
-    def _on_batch_glossary_review_changed(self, state):
-        glossary_review = state != 0
-        if glossary_review:
-            self.chk_batch_transcribe_only.setChecked(False)
+        pass
 
     def _batch_add_files(self):
         paths, _ = QFileDialog.getOpenFileNames(
@@ -1062,8 +1185,18 @@ class MainWindow(QMainWindow):
         out_dir = None
         if not self.chk_same_dir.isChecked():
             out_dir = self.batch_out_dir.text().strip() or None
+        is_transcribe_only = self.chk_batch_transcribe_only.isChecked()
+        has_media = any(is_media_file(f) for f in self._batch_files)
+        if is_transcribe_only:
+            client = self._get_transcription_client()
+            transcription_client = client
+        else:
+            client = self._get_translation_client()
+            transcription_client = self._get_transcription_client() if has_media else None
+
         return {
-            "client": self._get_client(),
+            "client": client,
+            "transcription_client": transcription_client,
             "out_dir": out_dir,
             "overwrite": self.chk_overwrite_batch.isChecked(),
             "concurrency": max(
@@ -1075,8 +1208,7 @@ class MainWindow(QMainWindow):
             "files": list(self._batch_files),
             "input_lang": self.combo_input_lang.currentText(),
             "output_lang": self.combo_output_lang.currentText(),
-            "transcribe_only": self.chk_batch_transcribe_only.isChecked(),
-            "manual_glossary_review": self.chk_batch_glossary_review.isChecked(),
+            "transcribe_only": is_transcribe_only,
             "source_layout": self._source_layout(),
             "session_glossary": "",
         }
@@ -1088,6 +1220,9 @@ class MainWindow(QMainWindow):
 
         settings = self._batch_settings()
         if not settings["client"]:
+            return
+        has_media = any(is_media_file(f) for f in self._batch_files)
+        if not settings["transcribe_only"] and has_media and not settings.get("transcription_client"):
             return
 
         # ✅ 防止重复点击导致旧 worker 信号触发闪退
@@ -1103,10 +1238,6 @@ class MainWindow(QMainWindow):
 
         for i in range(self.batch_list.count()):
             self._batch_set_item_status(i, "pending")
-
-        if not settings["transcribe_only"]:
-            self._start_batch_glossary_preanalysis(settings)
-            return
 
         self._start_batch_worker(settings)
 
@@ -1129,13 +1260,14 @@ class MainWindow(QMainWindow):
             raw_glossary=runtime_glossary,
             original_line=self._get_original_line_index(),
             transcription_audio_format=self._transcription_audio_format(),
-            transcription_model=self.input_transcription_model.text().strip(),
+            transcription_model=self.combo_transcription_model.currentText().strip(),
             language=self._get_transcription_language(),
             chunk_concurrency=settings["concurrency"],
             transcribe_only=settings["transcribe_only"],
             input_lang=settings["input_lang"],
             output_lang=settings["output_lang"],
             source_layout=settings["source_layout"],
+            transcription_client=settings.get("transcription_client"),
         )
         self._batch_thread = QThread()
         self._batch_worker.moveToThread(self._batch_thread)
@@ -1152,86 +1284,6 @@ class MainWindow(QMainWindow):
         self._batch_worker.all_done.connect(self._batch_thread.quit)
         self._batch_thread.finished.connect(self._batch_thread.deleteLater)
         self._batch_thread.start()
-
-    def _start_batch_glossary_preanalysis(self, settings: dict):
-        self._batch_log_msg("📖 开始批量术语统一...")
-        self._batch_glossary_settings = settings
-        self._batch_glossary_worker = BatchGlossaryWorker(
-            client=settings["client"],
-            files=settings["files"],
-            concurrency=settings["concurrency"],
-            fixed_glossary=settings["raw_glossary"],
-            original_line=self._get_original_line_index(),
-            transcription_audio_format=self._transcription_audio_format(),
-            input_lang=settings["input_lang"],
-            output_lang=settings["output_lang"],
-            manual_review=settings.get("manual_glossary_review", False),
-            source_layout=settings["source_layout"],
-        )
-        self._batch_glossary_thread = QThread()
-        self._batch_glossary_worker.moveToThread(self._batch_glossary_thread)
-        self._batch_glossary_thread.started.connect(self._batch_glossary_worker.run)
-        self._batch_glossary_worker.log.connect(self._batch_log_msg)
-        self._batch_glossary_worker.finished.connect(self._after_batch_glossary_preanalysis)
-        self._batch_glossary_worker.finished.connect(self._batch_glossary_thread.quit)
-        self._batch_glossary_worker.error.connect(self._on_batch_glossary_error)
-        self._batch_glossary_worker.error.connect(self._batch_glossary_thread.quit)
-        self._batch_glossary_thread.finished.connect(self._batch_glossary_thread.deleteLater)
-        self._batch_glossary_thread.start()
-
-    def _after_batch_glossary_preanalysis(self, summary: BatchGlossarySummary):
-        settings = self._batch_glossary_settings
-        if not settings:
-            self._reset_batch_controls_after_preanalysis_stop()
-            return
-
-        manual_review = bool(settings.get("manual_glossary_review"))
-        if summary.failures:
-            self._batch_log_msg(f"⚠️ 词汇预分析跳过 {len(summary.failures)} 个文件")
-        settings["session_glossary"] = summary.session_glossary
-        session_count = len([line for line in summary.session_glossary.splitlines() if line.strip()])
-        if session_count:
-            self._batch_log_msg(f"📖 已生成本次批量临时术语 {session_count} 条，仅用于当前批量，不写入固定词汇表")
-        if not manual_review and summary.fixed_glossary:
-            self._append_fixed_glossary_text(summary.fixed_glossary)
-            fixed_count = len([line for line in summary.fixed_glossary.splitlines() if line.strip()])
-            self._batch_log_msg(f"✅ AI 自审保留固定术语 {fixed_count} 条，已加入固定词汇表")
-
-        if not manual_review:
-            if not session_count and len(summary.failures) >= len(settings["files"]):
-                QMessageBox.warning(self, "批量术语统一失败", "所有文件都无法完成词汇预分析，已停止批量处理。")
-                self._reset_batch_controls_after_preanalysis_stop()
-                return
-            self._start_batch_worker(settings)
-            return
-
-        if not summary.candidates:
-            if not session_count and len(summary.failures) >= len(settings["files"]):
-                QMessageBox.warning(self, "批量词汇整理失败", "所有文件都无法完成词汇预分析，已停止批量处理。")
-                self._reset_batch_controls_after_preanalysis_stop()
-                return
-            self._batch_log_msg("📖 没有建议永久保存的固定术语，继续批量处理")
-            self._start_batch_worker(settings)
-            return
-
-        approved = self._confirm_batch_glossary(summary)
-        if approved is None:
-            self._batch_log_msg("⏹ 已取消批量词汇整理，未开始正式批量处理")
-            self._reset_batch_controls_after_preanalysis_stop()
-            return
-        if approved:
-            self._append_fixed_glossary_text(approved)
-            self._batch_log_msg("✅ 已加入固定词汇表并保存配置")
-        self._start_batch_worker(settings)
-
-    def _on_batch_glossary_error(self, message: str):
-        QMessageBox.critical(self, "批量词汇整理失败", message)
-        self._batch_log_msg(f"❌ 批量词汇整理失败：{message}")
-        self._reset_batch_controls_after_preanalysis_stop()
-
-    def _reset_batch_controls_after_preanalysis_stop(self):
-        self.btn_batch_start.setEnabled(True)
-        self.btn_batch_stop.setEnabled(False)
 
     def _cleanup_worker_thread(self, worker, thread, timeout_ms: int = 5000):
         """安全清理 worker 和 thread：取消任务 → 退出线程 → 等待结束"""
@@ -1255,10 +1307,6 @@ class MainWindow(QMainWindow):
                 pass
 
     def _cleanup_batch_pipeline(self):
-        self._cleanup_worker_thread(self._batch_glossary_worker, self._batch_glossary_thread)
-        self._batch_glossary_worker = None
-        self._batch_glossary_thread = None
-        self._batch_glossary_settings = None
         self._cleanup_worker_thread(self._batch_worker, self._batch_thread)
         self._batch_worker = None
         self._batch_thread = None
@@ -1284,8 +1332,6 @@ class MainWindow(QMainWindow):
         self._pipeline_thread = None
 
     def _batch_stop(self):
-        if self._batch_glossary_worker:
-            self._batch_glossary_worker.cancel()
         if self._batch_worker:
             self._batch_worker.cancel()
         self.btn_batch_start.setEnabled(True)
@@ -1339,14 +1385,61 @@ class MainWindow(QMainWindow):
         # 清理 batch worker 和 thread，防止下次启动时闪退
         self._cleanup_batch_pipeline()
 
-    def _get_client(self) -> Optional[MistralClient]:
+    def _get_translation_client(self) -> Optional[MistralClient]:
         key = self.input_apikey.text().strip()
         if not key:
-            QMessageBox.warning(self, "提示", "请先输入 Mistral API Key")
+            QMessageBox.warning(self, "提示", "请先在 API 设置中输入翻译 API Key")
             return None
         base_url = self.input_base_url.text().strip()
-        transcription_model = self.input_transcription_model.text().strip()
-        return MistralClient(key, self.combo_model.currentText(), base_url, transcription_model)
+        model = self.combo_model.currentText().strip()
+        trans_provider = self._translation_provider
+
+        t_key = self.input_transcription_apikey.text().strip() or key
+        t_base_url = self.input_transcription_base_url.text().strip() or base_url
+        t_model = self.combo_transcription_model.currentText().strip()
+        t_provider = self._transcription_provider
+
+        return MistralClient(
+            key,
+            model=model,
+            base_url=base_url,
+            transcription_model=t_model,
+            translation_provider=trans_provider,
+            transcription_provider=t_provider,
+            transcription_api_key=t_key,
+            transcription_base_url=t_base_url,
+        )
+
+    def _get_transcription_client(self) -> Optional[MistralClient]:
+        t_key = self.input_transcription_apikey.text().strip()
+        if not t_key:
+            t_key = self.input_apikey.text().strip()
+        if not t_key:
+            QMessageBox.warning(self, "提示", "请先在 API 设置中输入转录 API Key（或翻译 API Key）")
+            return None
+
+        t_base_url = self.input_transcription_base_url.text().strip()
+        t_model = self.combo_transcription_model.currentText().strip()
+        t_provider = self._transcription_provider
+
+        key = self.input_apikey.text().strip() or t_key
+        base_url = self.input_base_url.text().strip() or t_base_url
+        model = self.combo_model.currentText().strip()
+        trans_provider = self._translation_provider
+
+        return MistralClient(
+            key,
+            model=model,
+            base_url=base_url,
+            transcription_model=t_model,
+            translation_provider=trans_provider,
+            transcription_provider=t_provider,
+            transcription_api_key=t_key,
+            transcription_base_url=t_base_url,
+        )
+
+    def _get_client(self) -> Optional[MistralClient]:
+        return self._get_translation_client()
 
     def _target_first(self) -> bool:
         # 输出顺序：默认中文在前
@@ -1436,9 +1529,13 @@ class MainWindow(QMainWindow):
         self.status_bar.showMessage(f"Media selected · click Start Optimize: {Path(media_path).name}")
 
     def _start_single_transcription(self, media_path: str, auto_optimize: bool = False):
-        client = self._get_client()
-        if not client:
+        transcription_client = self._get_transcription_client()
+        if not transcription_client:
             return
+        if auto_optimize:
+            translation_client = self._get_translation_client()
+            if not translation_client:
+                return
         self._cleanup_single_pipeline()
         self._transcription_auto_optimize = auto_optimize
         self._set_auto_glossary_text("")
@@ -1454,9 +1551,9 @@ class MainWindow(QMainWindow):
         self.status_bar.showMessage(f"Transcribing media: {Path(media_path).name}")
 
         self._transcription_worker = TranscriptionWorker(
-            client,
+            transcription_client,
             media_path,
-            transcription_model=self.input_transcription_model.text().strip(),
+            transcription_model=self.combo_transcription_model.currentText().strip(),
             transcription_audio_format=self._transcription_audio_format(),
         )
         self._transcription_thread = QThread()
@@ -2577,13 +2674,6 @@ class MainWindow(QMainWindow):
             return None
         return approved_text["value"] or ""
 
-    def _confirm_batch_glossary(self, summary: BatchGlossarySummary) -> str | None:
-        return self._confirm_glossary_candidates(
-            summary,
-            title="批量固定术语确认",
-            description="本次批量临时术语会自动用于当前处理；下面仅是建议长期保存到设置里的固定术语。",
-        )
-
     def _glossary_add_row(self):
         """在术语表末尾添加空行"""
         row = self.table_glossary.rowCount()
@@ -2693,11 +2783,17 @@ class MainWindow(QMainWindow):
 
     def _save_config(self):
         cfg = {
+            "translation_provider": self._translation_provider,
             "api_key": self.input_apikey.text().strip(),
             "base_url": self.input_base_url.text().strip(),
-            "model": self.combo_model.currentText(),
-            "transcription_model": self.input_transcription_model.text().strip(),
+            "model": self.combo_model.currentText().strip(),
+
+            "transcription_provider": self._transcription_provider,
+            "transcription_api_key": self.input_transcription_apikey.text().strip(),
+            "transcription_base_url": self.input_transcription_base_url.text().strip(),
+            "transcription_model": self.combo_transcription_model.currentText().strip(),
             "transcription_audio_format": self._transcription_audio_format(),
+
             "concurrency": self.input_concurrency.text(),
             "batch_size": self.input_batch.text(),
             "original_line": self.combo_original_line.currentIndex(),
@@ -2725,93 +2821,119 @@ class MainWindow(QMainWindow):
             if hasattr(self, "text_log"):
                 self._log(f"⚠️ {message}")
 
+        self._is_loading_config = True
         try:
-            with open(self._config_path(), "r", encoding="utf-8") as f:
-                cfg = json.load(f)
-        except FileNotFoundError:
-            return  # 首次启动没有配置文件，属于正常情况。
-        except Exception as exc:
-            warn(f"读取配置失败，本次使用默认设置：{exc}")
-            return
-        if not isinstance(cfg, dict):
-            warn("配置文件内容不是 JSON 对象，本次使用默认设置")
-            return
-
-        failed: list[str] = []
-
-        def restore(field: str, apply) -> None:
-            """逐项恢复。
-
-            旧实现把所有字段放在同一个 try 里并 ``except Exception: pass``，
-            所以任何一项损坏（例如 concurrency 是空串）都会静默跳过它之后的
-            全部字段——术语表和语言设置就这样凭空消失，界面上毫无提示。
-            """
             try:
-                apply()
+                with open(self._config_path(), "r", encoding="utf-8") as f:
+                    cfg = json.load(f)
+            except FileNotFoundError:
+                return  # 首次启动没有配置文件，属于正常情况。
             except Exception as exc:
-                failed.append(f"{field}({exc})")
-
-        def restore_model() -> None:
-            saved_model = cfg.get("model", "")
-            if not saved_model:
+                warn(f"读取配置失败，本次使用默认设置：{exc}")
                 return
-            idx = self.combo_model.findText(saved_model)
-            if idx >= 0:
-                self.combo_model.setCurrentIndex(idx)
-            else:
-                self.combo_model.setCurrentText(saved_model)
+            if not isinstance(cfg, dict):
+                warn("配置文件内容不是 JSON 对象，本次使用默认设置")
+                return
 
-        def restore_concurrency() -> None:
-            configured_concurrency = int(cfg.get("concurrency", "6"))
-            self.input_concurrency.setText(
-                str(max(1, min(PIPELINE_MAX_CONCURRENCY, configured_concurrency)))
+            failed: list[str] = []
+
+            def restore(field: str, apply) -> None:
+                """逐项恢复。
+
+                旧实现把所有字段放在同一个 try 里并 ``except Exception: pass``，
+                所以任何一项损坏（例如 concurrency 是空串）都会静默跳过它之后的
+                全部字段——术语表和语言设置就这样凭空消失，界面上毫无提示。
+                """
+                try:
+                    apply()
+                except Exception as exc:
+                    failed.append(f"{field}({exc})")
+
+            def restore_translation_provider() -> None:
+                saved_p = cfg.get("translation_provider", "")
+                if saved_p in TRANSLATION_PROVIDERS:
+                    self._translation_provider = saved_p
+
+            def restore_transcription_provider() -> None:
+                saved_p = cfg.get("transcription_provider", "")
+                if saved_p in TRANSCRIPTION_PROVIDERS:
+                    self._transcription_provider = saved_p
+
+            def restore_model() -> None:
+                saved_model = cfg.get("model", "")
+                if not saved_model:
+                    return
+                idx = self.combo_model.findText(saved_model)
+                if idx >= 0:
+                    self.combo_model.setCurrentIndex(idx)
+                else:
+                    self.combo_model.setCurrentText(saved_model)
+
+            def restore_transcription_model() -> None:
+                saved_model = cfg.get("transcription_model", "voxtral-mini-latest")
+                if not saved_model:
+                    return
+                idx = self.combo_transcription_model.findText(saved_model)
+                if idx >= 0:
+                    self.combo_transcription_model.setCurrentIndex(idx)
+                else:
+                    self.combo_transcription_model.setCurrentText(saved_model)
+
+            def restore_concurrency() -> None:
+                configured_concurrency = int(cfg.get("concurrency", "6"))
+                self.input_concurrency.setText(
+                    str(max(1, min(PIPELINE_MAX_CONCURRENCY, configured_concurrency)))
+                )
+
+            def restore_source_layout() -> None:
+                source_layout = cfg.get("source_layout", LAYOUT_AUTO)
+                source_layout_index = self.combo_source_layout.findData(source_layout)
+                self.combo_source_layout.setCurrentIndex(
+                    source_layout_index if source_layout_index >= 0 else 0
+                )
+
+            def restore_languages() -> None:
+                # 加载语言设置（向后兼容）
+                input_lang = cfg.get("input_language", "English")
+                output_lang = cfg.get("output_language", "中文")
+                if input_lang in LANGUAGE_LABELS:
+                    self.combo_input_lang.setCurrentText(input_lang)
+                if output_lang in LANGUAGE_LABELS:
+                    self.combo_output_lang.setCurrentText(output_lang)
+
+            restore("translation_provider", restore_translation_provider)
+            restore("api_key", lambda: self.input_apikey.setText(cfg.get("api_key", "")))
+            restore("base_url", lambda: self.input_base_url.setText(cfg.get("base_url", "")))
+            restore("model", restore_model)
+
+            restore("transcription_provider", restore_transcription_provider)
+            restore("transcription_api_key", lambda: self.input_transcription_apikey.setText(cfg.get("transcription_api_key", "")))
+            restore("transcription_base_url", lambda: self.input_transcription_base_url.setText(
+                cfg.get("transcription_base_url", cfg.get("base_url", ""))
+            ))
+            restore("transcription_model", restore_transcription_model)
+            restore(
+                "transcription_audio_format",
+                lambda: self.chk_transcription_wav.setChecked(
+                    cfg.get("transcription_audio_format", "mp3") == "wav"
+                ),
             )
-
-        def restore_source_layout() -> None:
-            source_layout = cfg.get("source_layout", LAYOUT_AUTO)
-            source_layout_index = self.combo_source_layout.findData(source_layout)
-            self.combo_source_layout.setCurrentIndex(
-                source_layout_index if source_layout_index >= 0 else 0
+            restore("concurrency", restore_concurrency)
+            restore(
+                "batch_size",
+                lambda: self.input_batch.setText(str(cfg.get("batch_size", "5"))),
             )
+            restore(
+                "original_line",
+                lambda: self.combo_original_line.setCurrentIndex(
+                    int(cfg.get("original_line", 1))  # 默认第2行
+                ),
+            )
+            restore("source_layout", restore_source_layout)
+            restore("glossary", lambda: self._glossary_from_text(cfg.get("glossary", "")))
+            restore("languages", restore_languages)
 
-        def restore_languages() -> None:
-            # 加载语言设置（向后兼容）
-            input_lang = cfg.get("input_language", "English")
-            output_lang = cfg.get("output_language", "中文")
-            if input_lang in LANGUAGE_LABELS:
-                self.combo_input_lang.setCurrentText(input_lang)
-            if output_lang in LANGUAGE_LABELS:
-                self.combo_output_lang.setCurrentText(output_lang)
-
-        restore("api_key", lambda: self.input_apikey.setText(cfg.get("api_key", "")))
-        restore("base_url", lambda: self.input_base_url.setText(cfg.get("base_url", "")))
-        restore(
-            "transcription_model",
-            lambda: self.input_transcription_model.setText(
-                cfg.get("transcription_model", "voxtral-mini-latest")
-            ),
-        )
-        restore(
-            "transcription_audio_format",
-            lambda: self.chk_transcription_wav.setChecked(
-                cfg.get("transcription_audio_format", "mp3") == "wav"
-            ),
-        )
-        restore("model", restore_model)
-        restore("concurrency", restore_concurrency)
-        restore(
-            "batch_size",
-            lambda: self.input_batch.setText(str(cfg.get("batch_size", "5"))),
-        )
-        restore(
-            "original_line",
-            lambda: self.combo_original_line.setCurrentIndex(
-                int(cfg.get("original_line", 1))  # 默认第2行
-            ),
-        )
-        restore("source_layout", restore_source_layout)
-        restore("glossary", lambda: self._glossary_from_text(cfg.get("glossary", "")))
-        restore("languages", restore_languages)
-
-        if failed:
-            warn(f"以下配置项恢复失败，已保留默认值：{'; '.join(failed)}")
+            if failed:
+                warn(f"以下配置项恢复失败，已保留默认值：{'; '.join(failed)}")
+        finally:
+            self._is_loading_config = False

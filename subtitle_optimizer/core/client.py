@@ -12,7 +12,7 @@ from core.transcription import get_content_type
 
 RETRYABLE_TRANSCRIPTION_STATUS_CODES = {408, 429, 500, 502, 503, 504}
 RETRYABLE_CHAT_STATUS_CODES = {408, 409, 425, 429, 500, 502, 503, 504}
-LOCAL_PROXY_CHAT_TIMEOUT_SECONDS = 175.0
+LOCAL_PROXY_CHAT_TIMEOUT_SECONDS = 360.0
 
 
 def _is_loopback_url(value: str) -> bool:
@@ -113,23 +113,134 @@ except ImportError:
     from utils import logger
 
 
+TRANSLATION_PROVIDERS = {
+    "Mistral AI": {
+        "base_url": "https://api.mistral.ai/v1",
+        "models": [
+            "mistral-large-latest",
+            "mistral-medium-latest",
+            "mistral-small-latest",
+            "open-mistral-7b",
+        ],
+        "default_model": "mistral-large-latest",
+    },
+    "DeepSeek": {
+        "base_url": "https://api.deepseek.com/v1",
+        "models": [
+            "deepseek-chat",
+            "deepseek-reasoner",
+        ],
+        "default_model": "deepseek-chat",
+    },
+    "OpenAI": {
+        "base_url": "https://api.openai.com/v1",
+        "models": [
+            "gpt-4o",
+            "gpt-4o-mini",
+            "gpt-4.1",
+            "o3-mini",
+        ],
+        "default_model": "gpt-4o",
+    },
+    "SiliconFlow (硅基流动)": {
+        "base_url": "https://api.siliconflow.cn/v1",
+        "models": [
+            "deepseek-ai/DeepSeek-V3",
+            "deepseek-ai/DeepSeek-R1",
+            "Qwen/Qwen2.5-72B-Instruct",
+            "THUDM/glm-4-9b-chat",
+        ],
+        "default_model": "deepseek-ai/DeepSeek-V3",
+    },
+    "自定义 (Custom)": {
+        "base_url": "",
+        "models": [],
+        "default_model": "",
+    },
+}
+
+TRANSCRIPTION_PROVIDERS = {
+    "Mistral AI": {
+        "base_url": "https://api.mistral.ai/v1",
+        "models": [
+            "voxtral-mini-latest",
+        ],
+        "default_model": "voxtral-mini-latest",
+    },
+    "Groq": {
+        "base_url": "https://api.groq.com/openai/v1",
+        "models": [
+            "whisper-large-v3",
+            "whisper-large-v3-turbo",
+            "distil-whisper-large-v3-en",
+        ],
+        "default_model": "whisper-large-v3",
+    },
+    "OpenAI": {
+        "base_url": "https://api.openai.com/v1",
+        "models": [
+            "whisper-1",
+        ],
+        "default_model": "whisper-1",
+    },
+    "SiliconFlow (硅基流动)": {
+        "base_url": "https://api.siliconflow.cn/v1",
+        "models": [
+            "FunAudioLLM/SenseVoiceSmall",
+        ],
+        "default_model": "FunAudioLLM/SenseVoiceSmall",
+    },
+    "自定义 (Custom)": {
+        "base_url": "",
+        "models": [],
+        "default_model": "",
+    },
+}
+
+
 class MistralClient:
     DEFAULT_BASE = "https://api.mistral.ai/v1"
     DEFAULT_CHAT_TEMPERATURE = 0.1
 
-    def __init__(self, api_key: str, model: str = "mistral-large-latest",
+    def __init__(self, api_key: str = "", model: str = "mistral-large-latest",
                  base_url: str = "", transcription_model: str = "",
-                 default_chat_temperature: float = DEFAULT_CHAT_TEMPERATURE):
+                 default_chat_temperature: float = DEFAULT_CHAT_TEMPERATURE,
+                 *,
+                 translation_provider: str = "Mistral AI",
+                 transcription_provider: str = "Mistral AI",
+                 transcription_api_key: str = "",
+                 transcription_base_url: str = ""):
         self.api_key = api_key
         self.model = model
         self.default_chat_temperature = default_chat_temperature
-        self.transcription_model = transcription_model.strip() or model
+        self.translation_provider = translation_provider
+
         base = base_url.strip().rstrip("/") if base_url.strip() else self.DEFAULT_BASE
         self.base_url = base
         self.is_local_proxy = _is_loopback_url(base)
-        self.chat_url = f"{base}/chat/completions"
-        self.transcription_url = f"{base}/audio/transcriptions"
-        logger.debug(f"MistralClient初始化完成，模型: {model}")
+        self.chat_url = base if base.endswith("/chat/completions") else f"{base}/chat/completions"
+
+        # Independent transcription configuration
+        self.transcription_provider = transcription_provider
+        self.transcription_api_key = (
+            transcription_api_key.strip()
+            if transcription_api_key and transcription_api_key.strip()
+            else api_key
+        )
+        t_base_raw = transcription_base_url.strip() if transcription_base_url else ""
+        t_base = t_base_raw.rstrip("/") if t_base_raw else base
+        self.transcription_base_url = t_base
+        self.transcription_model = (
+            transcription_model.strip() if transcription_model else ""
+        ) or model
+        self.transcription_url = (
+            t_base if t_base.endswith("/audio/transcriptions") else f"{t_base}/audio/transcriptions"
+        )
+        self.transcription_is_local_proxy = _is_loopback_url(t_base)
+        logger.debug(
+            f"MistralClient初始化完成，翻译服务商: {translation_provider}, 模型: {model}, URL: {self.chat_url}; "
+            f"转录服务商: {transcription_provider}, 模型: {self.transcription_model}, URL: {self.transcription_url}"
+        )
 
     async def chat(
         self,
@@ -140,7 +251,7 @@ class MistralClient:
         *,
         max_retries: int = 4,
         base_retry_delay_seconds: float = 1.5,
-        request_timeout_seconds: float = 180.0,
+        request_timeout_seconds: float = 360.0,
     ) -> str:
         """Call the chat-completions endpoint with bounded exponential retry.
 
@@ -167,7 +278,7 @@ class MistralClient:
         base_delay = max(0.0, float(base_retry_delay_seconds or 0.0))
         requested_timeout = max(1.0, float(request_timeout_seconds))
         effective_timeout = (
-            min(requested_timeout, LOCAL_PROXY_CHAT_TIMEOUT_SECONDS)
+            max(requested_timeout, LOCAL_PROXY_CHAT_TIMEOUT_SECONDS)
             if self.is_local_proxy
             else requested_timeout
         )
@@ -365,11 +476,28 @@ class MistralClient:
             f"{Path(audio_path).name}",
         )
 
-        headers = {"Authorization": f"Bearer {self.api_key}"}
+        headers = {"Authorization": f"Bearer {self.transcription_api_key}"}
         data = aiohttp.FormData()
         data.add_field("model", model or self.transcription_model)
-        data.add_field("timestamp_granularities", "segment")
-        data.add_field("diarize", "true")
+
+        if self.transcription_provider in ("OpenAI", "Groq"):
+            data.add_field("response_format", "verbose_json")
+            data.add_field("timestamp_granularities[]", "word")
+        elif self.transcription_provider == "SiliconFlow (硅基流动)":
+            data.add_field("response_format", "verbose_json")
+        elif self.transcription_provider == "自定义 (Custom)":
+            current_m = (model or self.transcription_model).lower()
+            if "voxtral" in current_m:
+                data.add_field("timestamp_granularities", "word")
+                data.add_field("diarize", "false")
+            else:
+                data.add_field("response_format", "verbose_json")
+                data.add_field("timestamp_granularities[]", "word")
+        else:
+            # Mistral AI and default
+            data.add_field("timestamp_granularities", "word")
+            data.add_field("diarize", "false")
+
         if language:
             data.add_field("language", language)
 
@@ -403,7 +531,14 @@ class MistralClient:
                             if resp.status in RETRYABLE_TRANSCRIPTION_STATUS_CODES:
                                 raise _RetryableTranscriptionError(error_msg)
                             raise RuntimeError(error_msg)
-                        return await resp.json()
+                        result = await resp.json()
+                        if isinstance(result, dict):
+                            # Mistral returns timestamp chunks in ``segments``
+                            # for either requested granularity.  Preserve which
+                            # one was requested so the transcription layer can
+                            # group word chunks into readable subtitle cues.
+                            result["_timestamp_granularity"] = "word"
+                        return result
         except (asyncio.TimeoutError, aiohttp.ClientError) as exc:
             if started_event and not started_event.is_set():
                 started_event.set()

@@ -26,10 +26,102 @@ def _entry(index: int, target: str = "target", source: str = "source") -> Subtit
     return entry
 
 
-def test_pipeline_honors_sixteen_requested_concurrent_requests() -> None:
+def test_pipeline_honors_requested_concurrency_and_clamps_to_max() -> None:
     pipeline = SubtitlePipeline(client=object(), concurrency=70, batch_size=5)
+    assert pipeline.concurrency == 70
 
-    assert pipeline.concurrency == 16
+    pipeline_over_limit = SubtitlePipeline(client=object(), concurrency=150, batch_size=5)
+    assert pipeline_over_limit.concurrency == 100
+
+
+def test_translate_reads_snapshot_while_out_of_order_batches_write_live_entries(
+    monkeypatch,
+) -> None:
+    async def scenario() -> None:
+        entries = [
+            SubtitleEntry(
+                index=index,
+                start_time=f"00:00:0{index},000",
+                end_time=f"00:00:0{index},900",
+                lines=[f"Source sentence {index}."],
+            )
+            for index in range(1, 4)
+        ]
+        release_first_batch = asyncio.Event()
+        observed: dict[str, object] = {}
+        targets = {
+            1: "第一条完整中文翻译",
+            2: "第二条完整中文翻译",
+            3: "第三条完整中文翻译",
+        }
+
+        async def fake_translate_batch(
+            batch,
+            context,
+            glossary,
+            client,
+            session,
+            input_lang,
+            output_lang,
+            prev_ctx,
+            next_ctx,
+            *,
+            include_context_targets,
+        ):
+            entry_id = batch[0].index
+            observed.setdefault("detached", []).append(
+                batch[0] is not entries[entry_id - 1]
+            )
+            observed.setdefault("target_context_flags", []).append(
+                include_context_targets
+            )
+
+            if entry_id == 1:
+                await release_first_batch.wait()
+            elif entry_id == 3:
+                # Batch 2 has already completed and written to the live list.
+                # Batch 3 must still see the original pre-translation snapshot.
+                observed["live_previous"] = list(entries[1].lines)
+                previous_snapshot = next(
+                    item for item in prev_ctx if item.index == 2
+                )
+                observed["snapshot_previous"] = list(previous_snapshot.lines)
+                release_first_batch.set()
+
+            return {entry_id: targets[entry_id]}, []
+
+        monkeypatch.setattr(
+            "core.pipeline._translate_batch_with_repair",
+            fake_translate_batch,
+        )
+
+        pipeline = SubtitlePipeline(
+            client=object(),
+            input_lang="English",
+            output_lang="中文",
+            concurrency=2,
+            batch_size=1,
+        )
+        result = await asyncio.wait_for(
+            pipeline.translate(entries, context="known context", glossary=""),
+            timeout=2,
+        )
+
+        assert result is entries
+        assert observed["live_previous"] == [
+            targets[2],
+            "Source sentence 2.",
+        ]
+        assert observed["snapshot_previous"] == ["Source sentence 2."]
+        assert observed["detached"] == [True, True, True]
+        assert observed["target_context_flags"] == [False, False, False]
+        assert [entry.lines[0] for entry in entries] == [
+            targets[1],
+            targets[2],
+            targets[3],
+        ]
+
+    asyncio.run(scenario())
 
 
 class _RecordingPipeline(SubtitlePipeline):

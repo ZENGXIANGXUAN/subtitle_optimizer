@@ -25,6 +25,7 @@ from core.models import (
 from core.segmenter import _get_source_text, _get_target_text
 from core.source_normalization import LAYOUT_AUTO, normalize_source_entries
 from core.client import MistralClient
+from core.quality import _parse_json
 from core.transcription import (
     NO_TRANSCRIBABLE_AUDIO_ERROR,
     is_media_file,
@@ -1240,26 +1241,14 @@ async def _translate_batch_impl(
         clean = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', clean)
         logger.debug(f"翻译API响应: {clean[:1000]}")
         try:
-            data = json.loads(clean)
-        except json.JSONDecodeError as e:
-            logger.warning(f"JSON解析失败，尝试修复: {e}")
-            # 尝试修复常见的 JSON 错误
-            # 1. 移除尾部逗号
-            clean = re.sub(r',\s*}', '}', clean)
-            clean = re.sub(r',\s*]', ']', clean)
-            # 2. 补全缺失的 ] 或 }
-            if clean.startswith('[') and not clean.rstrip().endswith(']'):
-                clean = clean.rstrip() + ']'
-                logger.warning("JSON修复: 补全缺失的 ']'")
-            elif clean.startswith('{') and not clean.rstrip().endswith('}'):
-                clean = clean.rstrip() + '}'
-                logger.warning("JSON修复: 补全缺失的 '}'")
-            # 3. 尝试再次解析
-            try:
-                data = json.loads(clean)
-            except json.JSONDecodeError:
-                logger.error(f"JSON修复失败，原始响应: {response[:200]}")
-                return ({}, {}) if capture_cue_targets else {}
+            data = _parse_json(response)
+        except ValueError as exc:
+            logger.error(
+                "翻译JSON解析失败: %s; 原始响应: %s",
+                exc,
+                response[:200],
+            )
+            return ({}, {}) if capture_cue_targets else {}
         if not isinstance(data, list):
             logger.error("翻译响应不是JSON数组")
             return ({}, {}) if capture_cue_targets else {}
@@ -1323,6 +1312,7 @@ async def _repair_incomplete_segment_translations(
     session: aiohttp.ClientSession,
     input_lang: str = "English",
     output_lang: str = "中文",
+    concurrency: int = 4,
 ) -> tuple[int, int]:
     """修复漏译条目，返回 (修复成功数, 漏译总数)。
 
@@ -1359,7 +1349,7 @@ async def _repair_incomplete_segment_translations(
 
     context_size = 3
     index_pos = {entry.index: pos for pos, entry in enumerate(entries)}
-    sem = asyncio.Semaphore(4)
+    sem = asyncio.Semaphore(max(1, int(concurrency)))
 
     async def repair_one(entry: SubtitleEntry) -> tuple[int, str]:
         pos = index_pos[entry.index]
@@ -2717,9 +2707,11 @@ class BatchWorker(BaseWorker):
                  chunk_concurrency: int = 4,
                  transcribe_only: bool = False,
                  input_lang: str = "English", output_lang: str = "中文",
-                 source_layout: str = LAYOUT_AUTO):
+                 source_layout: str = LAYOUT_AUTO,
+                 transcription_client: Optional[MistralClient] = None):
         super().__init__()
         self.client = client
+        self.transcription_client = transcription_client or client
         self.files = files
         self.out_dir = out_dir
         self.concurrency = concurrency
@@ -2797,7 +2789,7 @@ class BatchWorker(BaseWorker):
                         if should_use_chunked_transcription(filepath):
                             self.log.emit("  Large file, using chunked transcription")
                             working_path, _ = await transcribe_chunked_to_srt(
-                                self.client,
+                                self.transcription_client,
                                 filepath,
                                 model=self.transcription_model or None,
                                 language=self.language,
@@ -2807,7 +2799,7 @@ class BatchWorker(BaseWorker):
                             )
                         else:
                             working_path, _ = await transcribe_media_to_srt(
-                                self.client,
+                                self.transcription_client,
                                 filepath,
                                 model=self.transcription_model or None,
                                 language=self.language,
@@ -2935,7 +2927,7 @@ class BatchWorker(BaseWorker):
                 if should_use_chunked_transcription(audio_path):
                     self.log.emit(f"  [{filename}] 大文件，使用分段转录")
                     srt_path, _ = await transcribe_chunked_to_srt(
-                        self.client,
+                        self.transcription_client,
                         audio_path,
                         output_path=out_path,
                         model=self.transcription_model or None,
@@ -2945,7 +2937,7 @@ class BatchWorker(BaseWorker):
                     )
                 else:
                     srt_path, _ = await transcribe_prepared_audio_to_srt(
-                        self.client,
+                        self.transcription_client,
                         audio_path,
                         filepath,
                         output_path=out_path,
